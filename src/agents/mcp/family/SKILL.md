@@ -2,33 +2,33 @@
 name: family
 description: "Use when asking what the MCP surface still lacks without deciding it by hand — every erpax.<area>.* family read as a trinity of declared legs (measure · involute · act); a family with all three closes in one turn, one missing a leg names its own next tool. erpax.family.trinities reports it from the live tool list."
 atomPath: "agents/mcp/family"
-coordinate: "agents/mcp/family · 7/descent · 11c6c412"
-contentUuid: "bbab52ac-5a4b-52bd-8121-9e594b4f25f5"
-diamondUuid: "69bf4b3a-a151-8a8c-b428-7dd7322b545d"
-uuid: "11c6c412-f9ac-8a0d-870b-4544f480fc8e"
-horo: 7
+coordinate: "agents/mcp/family · 4/weave · 0a3827be"
+contentUuid: "842f12ab-0dc7-5fa5-a56f-94ea008ed12f"
+diamondUuid: "e8f66861-09ab-853b-b4ff-27688574471f"
+uuid: "0a3827be-692a-8587-965b-5b5ee0d4286a"
+horo: 4
 typography:
   partition: agents
-  bondDegree: 39
+  bondDegree: 45
 standards: []
 bindings: []
 signatures:
-  computationUuid: "de37bf03-3cdd-86b3-9e5e-82d2bb0bcada"
+  computationUuid: "f7ebdfb0-888a-8bb1-ba28-775812dc3cf2"
   stages:
     - stage: path
       stageUuid: "606f1e52-4415-81f3-80e1-8e6f75561d90"
     - stage: trinity
       stageUuid: "99c7249d-b1d1-8fee-afee-c46f2d5e7643"
     - stage: boundary
-      stageUuid: "299c58af-b018-8fed-9ced-5acf9c04d07a"
+      stageUuid: "f9c2ad66-d4f2-8103-ab73-62f5fb4fc757"
     - stage: links
       stageUuid: "f48a2a47-5dc6-8aac-b23d-b5af05267c86"
     - stage: horo
-      stageUuid: "d8294bef-74ae-8a52-ade6-dd49ba8ce654"
+      stageUuid: "60ca0973-dc2f-816d-b029-d7db62576830"
     - stage: seal
       stageUuid: "4866013b-e261-8825-9c14-6edad2c2015b"
     - stage: uuid
-      stageUuid: "b7c340c6-7bcb-8d6c-abb2-d711b21e4a9b"
+      stageUuid: "14888be3-7bfa-8d26-9471-c6e21462b935"
 version: 2
 ---
 # agents/mcp/family — the surface read as trinity families
@@ -55,6 +55,38 @@ A role is a field on the tool (`role: 'measure' | 'involute' | 'act'`), written 
 defined. Reading it off the name — `next` is a measure, `cross` an involution — would be a guess
 about a word, the kind every gate here has paid for ([[rules]]/probe). A tool with no declared role
 is reported `undeclared`: a family that cannot yet be read, which is itself the finding.
+
+## The family's own trinity — roles (involute) · declare (act)
+
+Asked through the gateway the day the families first rode it, `erpax.family.trinities` reported
+**51 families, 2 trinities, 39 with every leg missing** — not because 39 areas lacked tools but
+because none of their tools declared a leg. Reading them by hand would be the manual pass this
+corpus refuses; reading them off their names is the guess the section above forbids. So the family
+got its own two legs:
+
+- **`erpax.family.roles`** — the involution: each tool's declared leg against the leg its handler's
+  **shape** implies. A body that calls `create` · `update` · `delete` · `writeFile…` · `applyScalpel`
+  (`WRITE_CALLS`, declared in the open) is an act; a body that only reads is a measure. The involute leg
+  is never inferred — a dual is a claim, not a shape. A measure that writes is a **lie** about the
+  surface, and on first run there was exactly one: `erpax.outward.leads` wrote the harvest behind a
+  `write: true` flag. The write moved to `erpax.outward.record`, the leg that says it writes.
+- **`erpax.family.declare`** — the act: one scalpel op per undeclared literal-named tool, the `name:`
+  line as the unique anchor and `role: <shape>` written after it; dry-run by default, `apply: true`
+  through the scalpel's ring, verified by re-parsing. A template-named family (`erpax.auto.*`, 226
+  `verify` tools among them) is declared **once, at its generator**, which is what the parser's skip
+  of template names forces.
+
+**Honest boundary.** The shape sees one direction only: a write call in the body. A tool that writes
+through a helper whose body it cannot see reads as a measure, and a measure placed by shape still has
+no involute leg until a dual is written — `missing: ['involute']` is the honest next tool for most
+families after the declaration lands. And the act paid for its own anchor rule on the first run: it
+wrote `role:` after a tool spelled on **one line** inside a `*.test.ts` fixture, landing after the
+closing brace — a parse error the Lint lane caught. A fixture is not a tool (test files are skipped
+in both spellings), and an anchor must be a `name:`-only line (`NAME_LINE`) or the tool is reported
+`unanchored` and never cut. The TypeScript lane caught the second one: an *expected-tool list* names
+`erpax.spec.getCollection` with no handler, and a `role:` written there is a property its type does
+not have. A tool **handles** — an object that only names one is a descriptor, and the parser now asks
+for the `handler` member before it reads anything else.
 
 ## Why this exists
 

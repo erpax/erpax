@@ -55,4 +55,25 @@ theorem seven_laws_fully_crossed (i j : Fin 7) (h : i ≠ j) : covered i j = tru
 theorem no_self_cross (i : Fin 7) : covered i i = false := by
   revert i; decide
 
+/-- A lead is the AXIS the rosetta turns about; each law that flags it is a SEAT. How many seats see
+    it is the whole decision: none, one, or more than one. -/
+inductive Seat where
+  | unseen
+  | single
+  | corroborated
+  deriving DecidableEq, Repr
+
+def seatOf (n : Nat) : Seat := if n = 0 then .unseen else if n = 1 then .single else .corroborated
+
+/-- No seat sees it exactly when nothing flags it — a count, not matter. -/
+theorem unseen_iff_no_seat (n : Nat) (h : n ≤ 64) : (seatOf n = .unseen ↔ n = 0) := by
+  revert n; decide
+
+/-- One seat is not corroboration: the lead rests on that law alone. -/
+theorem one_seat_is_single : seatOf 1 = .single := by decide
+
+/-- Two or more seats corroborate — laws never written to agree, agreeing. -/
+theorem two_seats_corroborate (n : Nat) (h : n ≤ 64) (h2 : 2 ≤ n) : seatOf n = .corroborated := by
+  revert n; decide
+
 end Coil

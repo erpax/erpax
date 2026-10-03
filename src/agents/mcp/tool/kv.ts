@@ -66,6 +66,7 @@ export function buildKvTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.kv.bindingUuid',
+      role: 'measure',
       description: tBinding.desc(I18N.bindingUuid!),
       parameters: {
         keyUuid: z.string().describe('Content-uuid of the key'),
@@ -84,6 +85,7 @@ export function buildKvTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.kv.resolveKey',
+      role: 'measure',
       description: tResolve.desc(I18N.resolveKey!),
       parameters: {
         slot: z.string().describe('Slot name (e.g. "currency", "locale", "plugin-access")'),
@@ -102,6 +104,7 @@ export function buildKvTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.kv.freezeRegistry',
+      role: 'measure',
       description: tFreeze.desc(I18N.freezeRegistry!),
       parameters: {
         slot: z.string().describe('Slot name used for keyUuid namespacing'),

@@ -3,7 +3,7 @@ name: billing
 description: "Use when reasoning about billing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: billing
 coordinate: "billing · 2/share · e73a8268"
-contentUuid: "f2e1b7af-1b80-50dc-8dcf-ed5532933352"
+contentUuid: "746a71ed-d61b-5d77-8099-7bc979b60924"
 diamondUuid: "0c04b35e-7bae-85dd-9683-4c8075873da3"
 uuid: "e73a8268-07d9-8d28-a94e-3069695ac5b1"
 horo: 2
@@ -14,7 +14,6 @@ standards:
   - "ISO/IEC-29119"
   - "PCI-DSS"
   - "RFC-8259"
-  - "RFC-9110"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:

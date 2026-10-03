@@ -42,6 +42,11 @@ const I18N: Record<string, LocalizedString> = {
     bg: 'Всяка двойка от измерените закони като кръстосан гейт, подредена по lift: кои са теореми при нула, кои се задействат заедно повече от независимостта, кои не са описани в прозата.',
     de: 'Jedes Paar der gemessenen Gesetze als Kreuz-Gate, nach Lift geordnet: welche Kreuze Theoreme bei null sind, welche häufiger zusammen feuern als Unabhängigkeit vorhersagt, welche nie in Prosa gezeichnet wurden.',
   },
+  ratchet: {
+    en: 'The ACT leg of the gate family: close the slack. rules/slack measures every ratcheted axis whose ceiling sits ABOVE its live value — ground the corpus may quietly lose, an under-claim. Dry by default (the under- and over-claims, counted); `apply: true` runs the down-only ratchet emitter, which can never raise a ceiling, and reports what it closed. The commit that earns a gain holds it here.',
+    bg: 'Кракът ДЕЙСТВИЕ на семейството на портата: затваря хлабината — всяка ос, чийто таван стои над живата стойност. apply: true пуска емитера на тресчотката само надолу и докладва какво е затворил.',
+    de: 'Das ACT-Bein der Gate-Familie: den Spielraum schließen — jede Achse, deren Decke über dem Live-Wert liegt. apply: true lässt den nur abwärts laufenden Ratschen-Emitter laufen und meldet, was er geschlossen hat.',
+  },
 }
 
 export interface CrossGate {
@@ -111,7 +116,7 @@ async function measured(cwd: string): Promise<{ sets: Map<string, ReadonlySet<st
  * same address form as a barrel file, so a coil–coil cross can meet them. The order is declared,
  * because the coil never reorders what it is handed; the remainder is the axis.
  */
-async function rosetta(cwd: string): Promise<{ laws: string[]; sets: Map<string, ReadonlySet<string>> }> {
+export async function rosetta(cwd: string): Promise<{ laws: string[]; sets: Map<string, ReadonlySet<string>> }> {
   const { existsSync } = await import('node:fs')
   const { join } = await import('node:path')
   const { sets } = await measured(cwd)
@@ -201,6 +206,7 @@ export function buildGateTools(): ReadonlyArray<ErpaxMcpTool> {
       parameters: {},
       async handler() {
         const { coil, coilCrosses, coins, coverage } = await import('@/quantum/coil')
+        const { coilImage } = await import('@/image/share')
         const { laws, sets } = await rosetta(process.cwd())
         const tree = coil(laws)
         const levels = coilCrosses(sets, laws)
@@ -209,11 +215,31 @@ export function buildGateTools(): ReadonlyArray<ErpaxMcpTool> {
           rosetta: laws,
           coil: tree.kind === 'coil' ? tree.children.map(coins) : [coins(tree)],
           coverage: coverage(tree),
+          // the result of the formula, drawn and turning — every node a rotation, nested so the inner
+          // turn rides the outer; crosses as edges by their measured faces (image/share)
+          svg: coilImage(laws, levels),
           populations: Object.fromEntries(laws.map((l) => [l, sets.get(l)?.size ?? 0])),
           theorems: flat.filter((c) => c.theorem && c.a.length === 1 && c.b.length === 1).map((c) => `${c.a[0]} → ${c.b[0]}`),
           levels,
           law: 'Coins coil in trinities because three is the one ring a single turn each way closes (C(n,2)=n ⇔ n=3, Coil.lean); more coins coil fractally and one turn each way at every node crosses everything — both faces, nothing enumerated.',
         })
+      },
+    },
+    {
+      name: 'erpax.gate.ratchet',
+      role: 'act',
+      description: t.desc(I18N.ratchet!),
+      parameters: { apply: z.boolean().optional().describe('emit the down-only ratchet (default false: report the slack only)') },
+      async handler(args) {
+        const { claimBalance } = await import('@/rules/slack')
+        const before = claimBalance(process.cwd())
+        if (args.apply !== true) {
+          return json({ applied: false, under: before.under, over: before.over, exact: before.exact, law: 'An under-claim is an over-claim involuted: a ceiling above its live value is ground the corpus may quietly lose. The act is the down-only emitter — apply closes every under-claim and can never raise a ceiling.' })
+        }
+        const { emitRatchet } = await import('@/law/folder/emit-ratchet')
+        emitRatchet(process.cwd())
+        const after = claimBalance(process.cwd())
+        return json({ applied: true, closed: before.under, under: after.under, over: after.over, law: 'The ratchet is emitted from the live tree and only ever descends — the gain is held in the commit that earned it (rules/slack).' })
       },
     },
   ]

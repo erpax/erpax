@@ -3,13 +3,13 @@ name: share
 description: "Use when reasoning about a portion of a whole allocated to a member who joins — horo position 2 (digit 2, the first doubling: one becomes two, the whole splits, value allocated). Its domain instance is a proportional, contingent claim on a pooled whole under shared risk: the CSA share (prepaid box of whatever the farm harvests), equity share, profit share — the inverse of a fixed order."
 atomPath: "horo/share"
 coordinate: "horo/share · 7/descent · 5365f587"
-contentUuid: "7271c4f0-c56e-5886-badc-8b0bdfd488c7"
+contentUuid: "0f102744-6a0d-5111-8c13-6c5903ad653b"
 diamondUuid: "124e3db5-a000-87d9-b6cd-a516d2167375"
 uuid: "5365f587-9e55-8005-aab2-5ac453df7fa3"
 horo: 7
 typography:
   partition: horo
-  bondDegree: 102
+  bondDegree: 108
 standards: []
 bindings: []
 signatures:

@@ -72,6 +72,7 @@ export function buildFormatTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.format.encode',
+      role: 'measure',
       description: tEncode.desc(I18N.encode!),
       parameters: {
         slot: SLOT_ENUM,
@@ -102,6 +103,7 @@ export function buildFormatTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.format.decode',
+      role: 'measure',
       description: tDecode.desc(I18N.decode!),
       parameters: {
         uuid: z.string(),
@@ -117,6 +119,7 @@ export function buildFormatTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.format.verify',
+      role: 'measure',
       description: tVerify.desc(I18N.verify!),
       parameters: {
         uuid: z.string(),

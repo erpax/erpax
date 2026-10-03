@@ -68,6 +68,7 @@ export function buildChainTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.chain.computeLeafUuid',
+      role: 'measure',
       description: tCompute.desc(I18N.computeLeafUuid!),
       parameters: {
         prevUuid: z.string().describe('Predecessor leaf-uuid (or GENESIS_PREV_UUID sentinel for the first link).'),
@@ -87,6 +88,7 @@ export function buildChainTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.chain.forgeGenesis',
+      role: 'measure',
       description: tGenesis.desc(I18N.forgeGenesis!),
       parameters: {
         payloadUuid: z.string(),
@@ -104,6 +106,7 @@ export function buildChainTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.chain.forgeLink',
+      role: 'measure',
       description: tForge.desc(I18N.forgeLink!),
       parameters: {
         prevUuid: z.string(),
@@ -125,6 +128,7 @@ export function buildChainTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.chain.verifyOne',
+      role: 'measure',
       description: tVerify.desc(I18N.verifyOne!),
       parameters: {
         leafUuid: z.string().describe('The stored leaf-uuid to verify.'),

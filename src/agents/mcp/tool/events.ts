@@ -59,6 +59,7 @@ export function buildEventsTools(registry: { all: () => ReadonlyArray<{ id: stri
   return [
     {
       name: 'erpax.events.list',
+      role: 'measure',
       description: tList.desc(I18N.list!),
       parameters: {
         tenantId: z.string().optional(),
@@ -89,6 +90,7 @@ export function buildEventsTools(registry: { all: () => ReadonlyArray<{ id: stri
     },
     {
       name: 'erpax.events.emit',
+      role: 'measure',
       description: tEmit.desc(I18N.emit!),
       parameters: {
         eventType: z.string(),
@@ -119,6 +121,7 @@ export function buildEventsTools(registry: { all: () => ReadonlyArray<{ id: stri
     },
     {
       name: 'erpax.events.subscribers',
+      role: 'measure',
       description: tSubs.desc(I18N.subscribers!),
       parameters: { eventId: z.string().optional() },
       async handler({ eventId }) {
@@ -139,6 +142,7 @@ export function buildEventsTools(registry: { all: () => ReadonlyArray<{ id: stri
     },
     {
       name: 'erpax.events.replay',
+      role: 'measure',
       description: tReplay.desc(I18N.replay!),
       parameters: { eventDocId: z.string() },
       async handler({ eventDocId }, req) {

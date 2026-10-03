@@ -649,6 +649,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "ifrs/16",
   "ifrs/16/types",
   "image",
+  "image/share",
   "imaging",
   "incoterms/2020",
   "index",
@@ -969,6 +970,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "payload/command",
   "payload/redirect",
   "payload/sdk",
+  "payload/upstream",
   "payment/methods",
   "payment/methods/hooks",
   "peace",
@@ -998,6 +1000,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "plugins/emit",
   "plugins/mcp/scopes",
   "plugins/mcp/seed",
+  "plugins/mcp/tools",
   "plugins/naming",
   "plugins/taggable",
   "plugins/versions",
@@ -1551,7 +1554,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1544 as const
+export const ATOM_LEDGER_PATH_COUNT = 1547 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -3910,6 +3913,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "image": [
     "image"
   ],
+  "image/share": [
+    "image",
+    "image/share"
+  ],
   "imaging": [
     "imaging"
   ],
@@ -5100,6 +5107,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "payload",
     "payload/sdk"
   ],
+  "payload/upstream": [
+    "payload",
+    "payload/upstream"
+  ],
   "payment/methods": [
     "payment/methods"
   ],
@@ -5194,6 +5205,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "plugins/mcp/seed": [
     "plugins",
     "plugins/mcp/seed"
+  ],
+  "plugins/mcp/tools": [
+    "plugins",
+    "plugins/mcp/tools"
   ],
   "plugins/naming": [
     "plugins",
@@ -7262,4 +7277,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 892 as const
+export const MERGED_NESTED_PATH_COUNT = 895 as const

@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import type { PayloadRequest } from 'payload'
 import { involuteLeads } from '@/self/involute'
 import type { InternalLead } from '@/self/sufficient'
-import { buildFrontierTools, developManifest, frontierDuals } from './index'
+import { buildFrontierTools, dependentSeats, developManifest, frontierDuals } from './index'
 
 const req = {} as PayloadRequest
 
@@ -132,7 +132,7 @@ describe('erpax.self tools — the factory', () => {
     expect(tools.map((t) => `${t.name}:${t.role}`)).toEqual(['erpax.frontier.next:measure', 'erpax.frontier.involute:involute', 'erpax.frontier.develop:act'])
     expect(Object.keys(tools[0]!.parameters).sort()).toEqual(['limit', 'sources'])
     expect(Object.keys(tools[1]!.parameters).sort()).toEqual(['limit', 'sources', 'tag'])
-    expect(Object.keys(tools[2]!.parameters).sort()).toEqual(['limit', 'sources', 'target', 'word'])
+    expect(Object.keys(tools[2]!.parameters).sort()).toEqual(['limit', 'rotate', 'sources', 'target', 'word'])
   })
 
   it('names the cost in its description, because every source is a full scan', () => {
@@ -198,4 +198,59 @@ describe('erpax.frontier — every lead tagged by its involution', () => {
     expect(body.leads.every((l) => l.tag === 'lie')).toBe(true)
     expect(body.leads).toHaveLength(body.tags.lie)
   }, 600_000)
+})
+
+describe('developManifest — the rosetta turned about each lead', () => {
+  const theorem = (source: string, target: string) => ({ ...lead(source, target), tag: 'theorem' as const, instrument: 'x', formula: '' })
+  const rotation = (axis: string, seen: Record<string, number>, files: number) => ({
+    axis,
+    files,
+    perspectives: ['copy', 'cycle', 'unfolded', 'unreached'].map((law) => ({ law, seen: seen[law] ?? 0, forward: files ? (seen[law] ?? 0) / files : 0, backward: (seen[law] ?? 0) / 10 })),
+    seats: Object.keys(seen).filter((l) => (seen[l] ?? 0) > 0),
+    seat: (Object.values(seen).filter((n) => n > 0).length === 0 ? 'unseen' : Object.values(seen).filter((n) => n > 0).length === 1 ? 'single' : 'corroborated') as 'unseen' | 'single' | 'corroborated',
+  })
+
+  it('every other seat that sees the lead adds its prescription; the lead\'s own law is not repeated; the seat is carried as evidence', () => {
+    const rotations = new Map([['payable', rotation('payable', { unreached: 1, unfolded: 4, cycle: 2 }, 5)]])
+    const [d] = developManifest([theorem('unreached', 'payable')], { rotations }, '/nowhere')
+    expect(d!.evidence.seat).toBe('corroborated')
+    expect(d!.evidence.seats).toEqual(['unreached', 'unfolded', 'cycle'])
+    const text = d!.steps.join('\n')
+    expect(text).toContain('from the unfolded seat (4 of 5 file(s), 40.0% of its population)')
+    expect(text).toContain('from the cycle seat')
+    expect(text).not.toContain('from the unreached seat') // its own law — the manifest above already is its step
+    expect(text).toContain('inline it, drop it, or make it reused')
+  })
+
+  it('a lead no law holds as files is named a count, not matter; a lead with no rotation is unchanged', () => {
+    const rotations = new Map([['stray-ts', rotation('stray-ts', {}, 0)]])
+    const [unseen] = developManifest([theorem('guardian', 'stray-ts')], { rotations }, '/nowhere')
+    expect(unseen!.evidence.seat).toBe('unseen')
+    expect(unseen!.steps.join('\n')).toContain('it is a count, not matter')
+    const [plain] = developManifest([theorem('unreached', 'x')], {}, '/nowhere')
+    expect(plain!.evidence).toEqual({})
+  })
+})
+
+describe('developManifest — a dependent seat corroborates nothing', () => {
+  const theorem = (source: string, target: string) => ({ ...lead(source, target), tag: 'theorem' as const, instrument: 'x', formula: '' })
+  it('unreached seen only by accounting-wave is single, not corroborated — the wave charges what unreached names', () => {
+    const rot = {
+      axis: 'biometric',
+      files: 1,
+      perspectives: [
+        { law: 'unreached', seen: 1, forward: 1, backward: 1 / 60 },
+        { law: 'accounting-wave', seen: 1, forward: 1, backward: 1 / 263 },
+      ],
+      seats: ['unreached', 'accounting-wave'],
+      seat: 'corroborated' as const,
+    }
+    const [d] = developManifest([theorem('unreached', 'biometric')], { rotations: new Map([['biometric', rot]]) }, '/nowhere')
+    expect(d!.evidence.seat).toBe('single')
+    expect(d!.evidence.independent).toEqual(['unreached'])
+    expect(d!.evidence.seats).toEqual(['unreached', 'accounting-wave'])
+    expect(d!.steps.join('\n')).toContain('a dependent seat — it sees this lead because the other law does')
+    expect([...dependentSeats('unreached')]).toEqual(['accounting-wave'])
+    expect(dependentSeats('copy').size).toBe(0)
+  })
 })

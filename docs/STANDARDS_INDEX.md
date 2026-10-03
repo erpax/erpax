@@ -307,6 +307,7 @@ src/app/(frontend)/layout.tsx:7: * @standard BCP-47 language-tag html-lang-attri
 src/app/(frontend)/next/coherence/route.ts:31: * @standard DSP rPPG green-channel pulse extraction (0.7..4 Hz)
 src/app/(frontend)/next/preview/route.ts:9: * @standard HMAC-SHA256 RFC 2104 preview-secret
 src/app/(frontend)/next/seed/route.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control admin-only
+src/app/(frontend)/next/share/route.ts:11: * @standard OGP open-graph-protocol-1.0 og:image
 src/app/(frontend)/next/system/health/route.ts:8: * @standard draft-inadarei-api-health-check health-check-response-format
 src/app/(frontend)/not-found.tsx:5: * @standard schema.org WebPage
 src/app/(frontend)/tenant-domains/[tenant]/[...slug]/page.tsx:4: * @standard schema.org WebPage
@@ -1452,6 +1453,8 @@ src/ifrs/16/types/index.ts:8: * @standard ISO-8601-1:2019 date-time
 src/ifrs/16/types/test.ts:10: * @standard ISO/IEC-29119:2022 software-testing
 src/ifrs/16/validate.ts:4: * @standard ISO/IEC-29119:2022 software-testing runtime-guards
 src/image/index.ts:15: * @standard SVG 1.1 / SMIL animation · deterministic hash-to-art (identicon family)
+src/image/share/index.ts:17: * @standard OGP open-graph-protocol-1.0 (og:image 1200×630)
+src/image/share/index.ts:18: * @standard SVG 1.1 / SMIL animation
 src/incoterms/2020/index.ts:12: * @standard ICC INCOTERMS 2020 publication-no-723E
 src/incoterms/2020/index.ts:13: * @standard ISO 6346 freight-container-code (related)
 src/inertia/index.ts:29: * @standard ISO 80000-4:2019 — quantities and units, mechanics: force, acceleration, mass
@@ -2158,10 +2161,11 @@ src/payload.config.multi-tenant-admin.test.ts:9: * @standard NIST INCITS-359-201
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:576:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:594:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:595:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:617:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:587:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:605:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:606:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:628:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload/upstream/index.ts:16: * @standard GitHub REST API — repository contents
 src/payment/methods/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/payment/methods/index.ts:15: * @standard ISO-13616-1:2020 iban bank-account-reference
 src/payment/methods/index.ts:16: * @standard ISO-9362:2022 bic bank-routing
@@ -2239,6 +2243,7 @@ src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-
 src/plugins/auth/access/predicates.ts:10: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/mcp/scopes/index.ts:31: * @standard ISO/IEC 27002 §5.15 access-control + §5.18 access-rights (per-key narrowing)
 src/plugins/mcp/scopes/index.ts:32: * @standard ISO/IEC 27001 §A.9.4.1 information access restriction
+src/plugins/mcp/tools/index.ts:6: * @standard MCP 0.6 — tools/list and tools/call are the surface a client sees
 src/plugins/naming/index.ts:28: * @standard RFC 9562 §5.8 name-based UUID (the digest source)
 src/plugins/taggable/index.ts:21: * @standard RFC-4122 §4.3 uuid
 src/plugins/versions/index.ts:29: * @standard ISO 19011:2018 §6.4.6 audit-evidence (version history is the trail)
@@ -3389,6 +3394,7 @@ src/app/(frontend)/next/preview/route.ts:6: * @rfc 9110 §15.4 redirection-3xx
 src/app/(frontend)/next/preview/route.ts:7: * @rfc 3986 uniform-resource-identifier
 src/app/(frontend)/next/preview/route.ts:8: * @rfc 6265 cookies draft-mode-cookie
 src/app/(frontend)/next/seed/route.ts:4: * @rfc 9110 http-semantics
+src/app/(frontend)/next/share/route.ts:12: * @rfc 9110 §8.3 content-type · RFC 9111 §5.2 cache-control
 src/app/(frontend)/next/system/health/route.ts:6: * @rfc 9110 http-semantics
 src/app/(frontend)/next/system/health/route.ts:7: * @rfc 9110 §15.6.4 503-service-unavailable
 src/app/(frontend)/not-found.tsx:4: * @rfc 9110 §15.5.5 404-not-found
@@ -4796,9 +4802,9 @@ src/payable/analytics/index.ts:7: * @accounting IFRS IAS-37 provisions-contingen
 src/payable/discounts/index.ts:14: * @accounting US-GAAP ASC-705 cost-of-sales-and-services discount-recognition
 src/payable/workflow/index.ts:11: * @accounting IFRS IAS-37 provisions-contingent-liabilities
 src/payable/workflow/index.ts:12: * @accounting US-GAAP ASC-405 liabilities
-src/payload.config.ts:574:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:575:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:596:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:585:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:586:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:607:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/period/end/adjustment/service/index.ts:25: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/period/end/adjustment/service/index.ts:26: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 src/period/end/adjustment/service/index.ts:27: * @accounting IFRS IAS-16 property-plant-and-equipment depreciation
@@ -6100,9 +6106,9 @@ src/path/record.ts:12: * @audit pure; never silent mutation of ledger entries
 src/payable/aging/index.ts:13: * @audit ISO-19011:2018 audit-trail
 src/payable/workflow/index.ts:13: * @audit ISO-19011:2018 audit-trail state-transitions
 src/payload.config.multi-tenant-admin.test.ts:14: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:577:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:597:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:618:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:588:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:608:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:629:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload/command/index.ts:10: * @audit the command list is the installed CLI's; each uuid and the fold are computed
 src/payment/methods/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/peppol/bis/3/types/index.ts:13: * @audit ISO-19011:2018 audit-trail

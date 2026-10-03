@@ -155,3 +155,49 @@ export function coilCrosses(sets: ReadonlyMap<string, ReadonlySet<string>>, rose
   visit(tree, 0)
   return out
 }
+
+/** One law's view of an axis: how many of the axis's files it flags, and both containment faces. */
+export interface Perspective {
+  readonly law: string
+  readonly seen: number
+  /** Forward face: the share of the axis's files this law flags. */
+  readonly forward: number
+  /** Backward face: the share of this law's population that lies at the axis. */
+  readonly backward: number
+}
+
+/** How many seats see the axis — twin of `Coil.seatOf`. */
+export type Seat = 'unseen' | 'single' | 'corroborated'
+
+export const seatOf = (seats: number): Seat => (seats === 0 ? 'unseen' : seats === 1 ? 'single' : 'corroborated')
+
+export interface Rotation {
+  /** The atom path the rosetta was turned about. */
+  readonly axis: string
+  /** Files under the axis that some law of the rosetta flags. */
+  readonly files: number
+  readonly perspectives: readonly Perspective[]
+  /** The laws that see the axis, in rosetta order. */
+  readonly seats: readonly string[]
+  readonly seat: Seat
+}
+
+/**
+ * Turn the rosetta about a LEAD: the lead's atom is the axis, every law of the rosetta is a seat,
+ * and each seat is asked both faces — how much of the axis it flags (forward) and how much of its
+ * own population the axis is (backward). A lead seen from two seats is corroborated by laws that
+ * were never written to agree; seen from one, it rests on that law alone; seen from none, no law
+ * holds it as matter and it is a count, not a thing. The rosetta's order is kept, as everywhere.
+ */
+export function rotateAbout(axis: string, sets: ReadonlyMap<string, ReadonlySet<string>>, rosetta: readonly string[]): Rotation {
+  const under = (f: string): boolean => f.startsWith(`src/${axis}/`) || f === `src/${axis}.ts` || f === `src/${axis}.tsx`
+  const files = new Set<string>()
+  for (const l of rosetta) for (const f of sets.get(l) ?? []) if (under(f)) files.add(f)
+  const perspectives = rosetta.map((law) => {
+    const pop = sets.get(law) ?? new Set<string>()
+    const seen = [...files].filter((f) => pop.has(f)).length
+    return { law, seen, forward: files.size === 0 ? 0 : seen / files.size, backward: pop.size === 0 ? 0 : seen / pop.size }
+  })
+  const seats = perspectives.filter((p) => p.seen > 0).map((p) => p.law)
+  return { axis, files: files.size, perspectives, seats, seat: seatOf(seats.length) }
+}

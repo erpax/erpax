@@ -24,7 +24,7 @@ const prose: Cross[] = [
 
 describe('mcp/tool/gate', () => {
   it('carries the erpax.gate.* prefix the barrel convention requires', () => {
-    expect(tools.map((t) => t.name).sort()).toEqual(['erpax.gate.coil', 'erpax.gate.cross', 'erpax.gate.crosses', 'erpax.gate.verdicts'])
+    expect(tools.map((t) => t.name).sort()).toEqual(['erpax.gate.coil', 'erpax.gate.cross', 'erpax.gate.crosses', 'erpax.gate.ratchet', 'erpax.gate.verdicts'])
     for (const t of tools) expect(t.description.length).toBeGreaterThan(40)
   })
 

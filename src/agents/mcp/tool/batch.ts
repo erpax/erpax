@@ -47,6 +47,7 @@ export function buildBatchTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.batch.transition',
+      role: 'act',
       description: tTransition.desc(I18N.transition!),
       parameters: {
         collection: z.string().min(1),

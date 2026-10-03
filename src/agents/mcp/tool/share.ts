@@ -77,6 +77,7 @@ export function buildShareTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.share.uuid',
+      role: 'measure',
       description: tUuid.desc(I18N.uuid!),
       parameters: {
         granteeUuid: z.string(),
@@ -97,6 +98,7 @@ export function buildShareTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.share.grant',
+      role: 'measure',
       description: tGrant.desc(I18N.grant!),
       parameters: {
         tenantId: z.string(),
@@ -124,6 +126,7 @@ export function buildShareTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.share.check',
+      role: 'measure',
       description: tCheck.desc(I18N.check!),
       parameters: {
         tenantId: z.string(),
@@ -147,6 +150,7 @@ export function buildShareTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.share.revoke',
+      role: 'measure',
       description: tRevoke.desc(I18N.revoke!),
       parameters: {
         tenantId: z.string(),
@@ -170,6 +174,7 @@ export function buildShareTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.share.list',
+      role: 'measure',
       description: tList.desc(I18N.list!),
       parameters: {
         tenantId: z.string(),

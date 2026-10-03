@@ -79,6 +79,7 @@ export function buildConsistencyTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.consistency.scan',
+      role: 'measure',
       description: tScan.desc(I18N.scan!),
       parameters: {},
       async handler(_args, req) {
@@ -101,6 +102,7 @@ export function buildConsistencyTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.consistency.status',
+      role: 'measure',
       description: tStatus.desc(I18N.status!),
       parameters: { recentApplyLimit: z.number().int().min(1).max(50).optional() },
       async handler({ recentApplyLimit }, req) {
@@ -139,6 +141,7 @@ export function buildConsistencyTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.consistency.applyAll',
+      role: 'measure',
       description: tApplyAll.desc(I18N.applyAll!),
       parameters: { dryRun: z.boolean().optional() },
       async handler({ dryRun }) {
@@ -149,6 +152,7 @@ export function buildConsistencyTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.consistency.proposeEmitterWiring',
+      role: 'measure',
       description: tEmitter.desc(I18N.proposeEmitterWiring!),
       parameters: { offenders: z.array(z.string()).optional() },
       async handler({ offenders }: { offenders?: string[] }) {
@@ -162,6 +166,7 @@ export function buildConsistencyTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.consistency.proposeSlugRebind',
+      role: 'measure',
       description: tRebind.desc(I18N.proposeSlugRebind!),
       parameters: { offenders: z.array(z.string()).optional() },
       async handler({ offenders }: { offenders?: string[] }) {

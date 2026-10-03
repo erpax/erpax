@@ -75,6 +75,7 @@ export function buildGovernanceTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.governance.establish',
+      role: 'measure',
       description: tEstablish.desc(I18N.establish!),
       parameters: {
         entity: z.unknown().describe('The entity declaring self-governance (any JCS-serialisable content).'),
@@ -105,6 +106,7 @@ export function buildGovernanceTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.governance.attest',
+      role: 'measure',
       description: tAttest.desc(I18N.attest!),
       parameters: {
         scope: z.object({
@@ -134,6 +136,7 @@ export function buildGovernanceTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.governance.verify',
+      role: 'measure',
       description: tVerify.desc(I18N.verify!),
       parameters: {
         scope: z.object({

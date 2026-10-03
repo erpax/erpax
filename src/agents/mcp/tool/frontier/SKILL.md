@@ -2,35 +2,35 @@
 name: frontier
 description: "Use when reasoning about frontier — self/sufficient's could always **order** a frontier and never **generate** one: every intent had to be typed by a person into think's store."
 atomPath: "agents/mcp/tool/frontier"
-coordinate: "agents/mcp/tool/frontier · 4/weave · 5c1965bc"
-contentUuid: "fd5dca00-a3b9-5030-bba1-cbda85bf08ee"
-diamondUuid: "ee3d5c13-b727-8a8f-8612-304c271a46dc"
-uuid: "5c1965bc-8fdd-8782-b1ae-e68021fbace8"
-horo: 4
+coordinate: "agents/mcp/tool/frontier · 1/base · bfa13844"
+contentUuid: "3fad5b70-b551-5487-81df-197fe9584604"
+diamondUuid: "54bcbc70-3d36-8f9c-aea0-6a9e328789f7"
+uuid: "bfa13844-e768-8810-b99b-cf34a1812b19"
+horo: 1
 typography:
   partition: agents
-  bondDegree: 21
+  bondDegree: 24
 standards:
   - MCP
   - "MCP 0.6 — tools/list + tools/call result shape {content:[{type,text}]}"
 bindings: []
 signatures:
-  computationUuid: "50774bee-66fb-8c5c-8ac7-0550dffb55da"
+  computationUuid: "1b642d0a-ed80-8307-8e55-7e7c50ef4a4a"
   stages:
     - stage: path
       stageUuid: "6565840d-9a9e-84a4-9443-ba0dc2baa805"
     - stage: trinity
       stageUuid: "e4796f0d-6c6f-8a25-907e-b7d4f992214e"
     - stage: boundary
-      stageUuid: "73b80ce5-714a-8a2c-be5c-7e647d037381"
+      stageUuid: "745ae594-caf2-8aec-b1e2-4cceedff0aa2"
     - stage: links
-      stageUuid: "79b57c26-2586-8b67-bbdb-155ed7830c53"
+      stageUuid: "9e0d9415-6f07-8ab6-8f42-39ab886ff2bd"
     - stage: horo
-      stageUuid: "9de6dcc0-3d05-81d7-97e1-c9918b493d38"
+      stageUuid: "1b7940f9-a847-8134-94c0-6df7494048c9"
     - stage: seal
       stageUuid: "8a8b3a1e-3a57-87af-abde-a366a64eead6"
     - stage: uuid
-      stageUuid: "4d97a2d9-ca1c-886a-aa87-d458d33d319e"
+      stageUuid: "10f11f2d-1a13-8682-877f-39dca42b2ba0"
 version: 2
 ---
 # agents/mcp/tool/frontier — the corpus's own next move, on the public surface
@@ -134,6 +134,22 @@ re-exports, the importer repoints) — a template until the one decision no theo
 refusal). For a hub, a dead export or an atom carried by a dead barrel it is a decision carrying the
 computed evidence. A lie gets no manifest — the instrument is fixed; nor does a manipulation — a dual
 is wired. Nothing is applied here: apply is the scalpel's door, ring-verified, batch by batch.
+
+**Developed by rotating.** `develop` turns the eight-law rosetta about every theorem lead
+([[quantum]]/coil `rotateAbout`): the lead's atom is the axis, each law a seat with both faces, and
+every seat that sees the lead adds its prescription to the manifest (`seatStep`). The seat count is
+evidence — `corroborated` · `single` · `unseen` (`Coil.seatOf`) — and an unseen lead is named a
+count, not matter: the instrument that counted it is the thing to develop. `rotate: false` asks the
+lead's own law alone.
+
+Asked through the gateway on 2026-10-03 (`erpax_frontier_develop`, sources populations + unreached):
+**738 theorem leads · 226 s over the wire** — the eight-law rosetta's scans are the cost, the same
+~3.5 min `erpax.gate.coil` pays. Its first reading said 370 corroborated · 368 single · 0 unseen, and
+the 370 were too many: the accounting wave charges every atom with no deployment face, which is
+exactly what `unreached` names, so the two seats agreed **by construction**. A seat whose population is
+defined by the lead's own law is a *dependent* seat (`dependentSeats`, the same pairs `frontierDuals`
+encodes, declared in the open): it still adds its prescription, marked as dependent, but it does not
+count toward corroboration. `independent` rides beside `seats` in the evidence so a reader sees both.
 
 The roles are declared on the tools and read by the `family` atom beside the [[mcp]] gateway
 (`erpax.family.trinities`), which says which families are trinities and which leg each of the others

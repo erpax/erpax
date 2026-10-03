@@ -391,6 +391,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
   const tools: ErpaxMcpTool[] = [
     {
       name: 'erpax.spec.getCollection',
+      role: 'measure',
       description: 'Return the parsed CollectionSpec (JSDoc-as-spec) for a given collection slug — title, summaries, standards cited, chain steps owned, features gated, roles, emits/subscribes, examples, invariants, use cases.',
       parameters: { slug: z.string() },
       async handler({ slug }) {
@@ -401,12 +402,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.spec.getChainRegistry',
+      role: 'measure',
       description: 'List every BusinessChain — id, title, steps (collection + action + emits + requires), feature gate, standards cited.',
       parameters: {},
       async handler() { return json(Object.values(BUSINESS_CHAINS)) },
     },
     {
       name: 'erpax.trading.list',
+      role: 'measure',
       description:
         'List the commercial trading-integration APIs in scope for a region — the commercial sibling of the official country-apis registry. Covers payment_gateway / direct_debit / payout_provider, ecommerce_platform / marketplace, shipping_carrier / shipping_aggregator, peppol_access_point / edi_network / product_data / doc_validation, banking_aggregator and fx_rates. `region` is an ISO 3166-1 alpha-2 code (or "EU" / "GLOBAL"); GLOBAL and (for EU members) EU-wide providers are always unioned in. Optional `category` filters to one taxonomy slot. Returns catalogue metadata only — endpoint, auth model, format, docs — never credentials (those resolve per-tenant). Spans PSD2 (Berlin Group) banking aggregators, Peppol BIS / EN 16931 e-invoicing access points, and ISO 4217 FX feeds.',
       parameters: { region: z.string(), category: z.string().optional() },
@@ -420,6 +423,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.matrix.query',
+      role: 'measure',
       description: 'Query the content-addressed corpus uuid matrix (content-uuids per RFC 9562 §5.8). op="digest" → the whole corpus as one 128-bit root + counts; "node" → an atom\'s content-uuid + dimension + band + horo position; "neighbors"/"backlinks" → its out/in edges; "binding" → the merge-uuid of edge atom→to. QUANTUM ops over the horo energy-ladder: "leap" → the discrete transition between atom and to (their horo rungs) — emit/absorb, gap-frequency, the photon, and the symmetric spectral line-uuid; "spectrum" → every distinct line of the seven-rung system; "collapse" → measure the corpus superposition over the seven horo bands at r∈[0,1) to one band (amplitudes ∝ √(atoms per band), the Born rule). In-memory + content-addressed: no DB, deterministic.',
       parameters: {
         op: z.enum(['digest', 'node', 'neighbors', 'backlinks', 'binding', 'leap', 'spectrum', 'collapse']),
@@ -463,6 +467,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.chain.runStep',
+      role: 'measure',
       description: 'Execute one step of a business chain end-to-end against a tenant + locale. Resolves the step\'s collection to the owning agent and processes its returned AgentEffect[]. Writes to the audit chain.',
       parameters: {
         chainId: z.string(),
@@ -477,6 +482,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.chain.runFull',
+      role: 'measure',
       description: 'Execute every step of a business chain in sequence; returns the per-step audit-evidence summary.',
       parameters: { chainId: z.string(), tenantId: z.string(), locale: localeEnum },
       async handler({ chainId }) { return text(`(stub) runFull ${chainId as string}`) },
@@ -504,6 +510,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.multimedia.render',
+      role: 'measure',
       description: 'Render the multimedia walkthrough (HTML hero + storyboard + JSON manifest + PDF/A blocks) for a given workflow + locale.',
       parameters: { workflow: z.string(), locale: localeEnum },
       async handler({ workflow, locale }) {
@@ -521,6 +528,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.marketing.generatePage',
+      role: 'measure',
       description: 'Generate the full marketing HTML page for a workflow + locale (hero + video + storyboard + standards + features + UX gaps + audit-trail evidence + CTA). Self-contained HTML5 with inline CSS + ARIA landmarks.',
       parameters: { workflow: z.string(), locale: localeEnum },
       async handler({ workflow, locale }) {
@@ -537,6 +545,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.audit.getEvidence',
+      role: 'measure',
       description: 'Return the audit-evidence Merkle pack for a chain + tenant + optional time window. ISO 19011:2018 §6.4.6 + SOX §404 conformant.',
       parameters: { chainId: z.string(), tenantId: z.string(), since: z.string().optional() },
       async handler({ chainId, tenantId, since }, req) {
@@ -554,6 +563,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.agents.list',
+      role: 'measure',
       description: 'List every registered DomainAgent — id, owned collections, subscribed events, emitted events, cron schedule.',
       parameters: {},
       async handler() {
@@ -568,6 +578,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.agents.dispatch',
+      role: 'measure',
       description: 'Dispatch a synthetic DomainEvent to every subscribed agent via agentRuntime.dispatchEvent. Returns the AgentEffect[] each agent produced. Slice MMMMMMMM (2026-05-11) — replaces the EEEEE-era stub with the real round-trip. Gated by super-admin role at the plugin layer.',
       parameters: {
         event: z.object({
@@ -600,6 +611,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.publishSelf',
+      role: 'measure',
       description: 'Conservation Laws 23 + 24 (HHHHHH): collect this ERPax instance\'s genome (spec corpus + chains + agents + roles + MCP tools + standards) as a deterministic content-addressed bundle. Returns GenomePublication with bundleUuid, scope, sourceDid, the bundle itself, and (when sign fn configured) a signature. The bundle can be ingested by any blank ERPax instance via erpax.platform.bootFromFederation to produce a verified bit-identical clone.',
       parameters: {
         sourceDid: z.string(),
@@ -618,6 +630,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.bootFromFederation',
+      role: 'measure',
       description: 'Conservation Law 24: ingest a published genome (from erpax.platform.publishSelf) into this clone instance. Verifies Law 24 checkCloneIntegrity (uuid recompute), runs all 23 invariants under the new genome, activates the erpax-platform role on the clone\'s self-tenant. Returns { cloneDid, bootedAt, divergencePoint } on success. Sandbox mode: validate the genome without mutating registries (used in tests + dry-runs).',
       parameters: {
         publication: z.record(z.unknown()),
@@ -641,6 +654,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── self/research — any actor finds where its OWN identity is used, and secures it ──
     {
       name: 'erpax.platform.selfResearch',
+      role: 'measure',
       description:
         "Self-research: find where the CALLER'S OWN identity (their email + user id) is used across the corpus. Fans the computed find-surface over every schema-derived identity-binding, each query run in the caller's PayloadRequest under overrideAccess:false — so the access scope IS the ownership boundary and no other actor's rows can be reached (no bypass of the gateway). Read-only. @standard NIST SP 800-162 ABAC; @standard OWASP ASVS V5 (IDOR-prevention).",
       parameters: {},
@@ -652,6 +666,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.selfSecure',
+      role: 'measure',
       description:
         "Self-secure: authorize + receipt the securing (reset/recover) of chosen accounts from the caller's OWN footprint. The securing grant's allowlist IS the footprint, so any accountUuid self-research did not return is BLOCKED and receipted — account-takeover is structurally unreachable. Owner-initiated, exposed-first; emits a uuid-chained receipt ledger. The per-provider credential reset is the effect this receipt authorizes (erpax holds the audit; the credential lives at the provider). @standard NIST SP 800-63B §6.1.3 owner-authorized recovery; @standard NIST SP 800-162 ABAC.",
       parameters: { accountUuids: z.array(z.string()).min(1) },
@@ -679,6 +694,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice JJJJJJ — Commerce: ERPax sells + deploys + bills itself ──
     {
       name: 'erpax.commerce.checkout',
+      role: 'measure',
       description: 'Stripe checkout — initiate a subscription for a new tenant. Reserves a tenant id; activates on payment-success webhook → erpax.commerce.provisionInstance.',
       parameters: {
         tier: z.enum(['free', 'solo', 'team', 'business', 'enterprise']),
@@ -694,6 +710,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.commerce.provisionInstance',
+      role: 'measure',
       description: 'Deploy a Cloudflare Worker for a paid tenant + ingest the canonical ERPax genome (slice HHHHHH bootFromFederation). Returns the new instance MCP endpoint + admin URL + clone DID.',
       parameters: {
         tenantId: z.string(),
@@ -708,12 +725,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.commerce.listSubscriptions',
+      role: 'measure',
       description: 'List every active subscription registered with this ERPax instance (tier + role profile + MCP endpoint + clone DID).',
       parameters: {},
       async handler() { return json(listSubscriptions()) },
     },
     {
       name: 'erpax.commerce.lifecycleAudit',
+      role: 'measure',
       description: 'Conservation Law 25 — verify every active tenant has Stripe subscription + CF deployment + audit-chain entry. Surfaces orphans (paid-no-deploy, deploy-no-pay).',
       parameters: {},
       async handler() { return json(checkCommerceLifecycle()) },
@@ -721,6 +740,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice KKKKKK — Self-accounting + filing + obligations ──
     {
       name: 'erpax.accounting.bookRevenue',
+      role: 'measure',
       description: 'Book subscription revenue per IFRS-15 §31-§39 (point-in-time / over-time recognition). Called by Stripe webhook handler on the platform tenant.',
       parameters: {
         platformTenantId: z.string(),
@@ -740,6 +760,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.accounting.bookCost',
+      role: 'measure',
       description: 'Book a cost (Cloudflare infra / payroll / supplier / tax). Auto-called by the data agent for CF billing + HR agent for payroll.',
       parameters: {
         platformTenantId: z.string(),
@@ -758,6 +779,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.accounting.scheduleFiling',
+      role: 'measure',
       description: 'Schedule a regulatory filing (FINREP/COREP/IFRS-15/IFRS-S1/IFRS-S2/CSRD/VAT/DAC8/CRS/FATCA). Gov agent files it on dueAt - 1 day.',
       parameters: {
         platformTenantId: z.string(),
@@ -774,6 +796,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.accounting.scheduleObligation',
+      role: 'measure',
       description: 'Schedule an obligation (VAT remittance / payroll / supplier invoice / regulator fee / tax prepayment). Finance + payment-provider agents settle it on dueAt via the declared payment rail.',
       parameters: {
         platformTenantId: z.string(),
@@ -792,6 +815,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.accounting.lifecycleAudit',
+      role: 'measure',
       description: 'Conservation Law 26 — verify every revenue event booked + every filing filed by dueAt + every obligation paid by dueAt for the platform tenant. Returns overdue items for the meta-agent to escalate.',
       parameters: { platformTenantId: z.string() },
       async handler({ platformTenantId }) {
@@ -801,6 +825,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Multi-currency GL — IAS-21 / ASC-830 (wire the FX service) ──
     {
       name: 'erpax.accounting.currencySetup',
+      role: 'measure',
       description: 'Establish a tenant\'s functional/reporting currency profile (base + supported + unrealized-gain account) for FX translation. Derives missing fields from the tenant country via the canonical regional defaults. IFRS IAS-21 (functional currency) + US-GAAP ASC-830 (reporting currency) + ISO-4217 currency-codes.',
       parameters: {
         tenantId: z.string(),
@@ -830,6 +855,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.accounting.currencyRevalue',
+      role: 'measure',
       description: 'Run the month-end FX gain/loss revaluation for a tenant: compute the period-end currency adjustments then post the (balanced) gain/loss journal entry to the GL via the canonical journal-entry service. IFRS IAS-21 §28-§34 (exchange differences) + US-GAAP ASC-830-20 (foreign-currency transactions) + ISO-8601 period-end date.',
       parameters: {
         tenantId: z.string(),
@@ -853,6 +879,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice DDDDDD — DID resolver ──
     {
       name: 'erpax.did.create',
+      role: 'measure',
       description: 'Create a W3C DID Core v1.0 document for a tenant or agent (did:erpax:<uuid>). Content-addressed; portable across federation.',
       parameters: {
         subject: z.record(z.unknown()),
@@ -864,12 +891,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.did.resolve',
+      role: 'measure',
       description: 'Resolve a did:erpax:<uuid> identifier to its DID document.',
       parameters: { did: z.string() },
       async handler({ did }) { const d = resolveDid(did as string); return d ? json(d) : text(`unresolved: ${did as string}`) },
     },
     {
       name: 'erpax.did.list',
+      role: 'measure',
       description: 'List every DID registered with this instance.',
       parameters: {},
       async handler() { return json(listDids()) },
@@ -877,6 +906,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice CCCCCC — Standards-as-live-objects ──
     {
       name: 'erpax.standards.publishLive',
+      role: 'measure',
       description: 'Publish a standard as a uuid-keyed live object (body / id / version / paragraph / bodyText). Tenants subscribe by uuid; supersession proposes rebinds.',
       parameters: {
         body: z.string(), id: z.string(), version: z.string(), paragraph: z.string().optional(),
@@ -888,12 +918,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.standards.resolveLive',
+      role: 'measure',
       description: 'Resolve a live-standard uuid to its content.',
       parameters: { uuid: z.string() },
       async handler({ uuid }) { const s = resolveStandard(uuid as string); return s ? json(s) : text(`unresolved: ${uuid as string}`) },
     },
     {
       name: 'erpax.standards.subscribe',
+      role: 'measure',
       description: 'Subscribe a tenant to a live-standard uuid. Future versions trigger Law 10 referential-harmony rebind proposals.',
       parameters: { tenantId: z.string(), standardUuid: z.string() },
       async handler({ tenantId, standardUuid }) {
@@ -904,6 +936,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice LLLLLL — Standards-as-vortices: citation graph + conflict + supersession ──
     {
       name: 'erpax.standards.addCitation',
+      role: 'measure',
       description: 'Slice LLLLLL: declare that standard X cites standard Y (e.g. IFRS-15 §B77 → IAS-2 §6). Builds the cross-standard coupling graph.',
       parameters: { citerUuid: z.string(), citedUuid: z.string() },
       async handler({ citerUuid, citedUuid }) {
@@ -913,12 +946,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.standards.listCitations',
+      role: 'measure',
       description: 'Return the outgoing + incoming citation edges for a standard uuid (which standards it cites; which standards cite it).',
       parameters: { uuid: z.string() },
       async handler({ uuid }) { return json(listCitations(uuid as string)) },
     },
     {
       name: 'erpax.standards.declareConflict',
+      role: 'measure',
       description: 'Slice LLLLLL: declare that two standards are mutually exclusive (e.g. UK-IFRS-15 ⨯ IFRS-EU-15 post-Brexit).',
       parameters: { uuidA: z.string(), uuidB: z.string(), reason: z.string().optional() },
       async handler({ uuidA, uuidB, reason }) {
@@ -928,6 +963,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.standards.declareSupersession',
+      role: 'measure',
       description: 'Slice LLLLLL: declare that standard X is superseded by standard Y in jurisdiction Z effective from a date (e.g. IAS-18 → IFRS-15 globally; AMLD5 → AMLD6 in EU).',
       parameters: {
         oldUuid: z.string(), newUuid: z.string(),
@@ -941,18 +977,21 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.standards.traceSupersession',
+      role: 'measure',
       description: 'Walk a standard\'s supersession chain in a jurisdiction. Returns ordered list of edges from the input uuid forward to the latest version.',
       parameters: { uuid: z.string(), jurisdiction: z.string() },
       async handler({ uuid, jurisdiction }) { return json(traceSupersession(uuid as string, jurisdiction as string)) },
     },
     {
       name: 'erpax.standards.lawConsistency',
+      role: 'measure',
       description: 'Conservation Law 27: verify a tenant\'s subscribed standards have no mutual conflicts. Surfaces pairs that the tenant must elect between.',
       parameters: { tenantId: z.string() },
       async handler({ tenantId }) { return json(checkStandardCitationsConsistent(tenantId as string)) },
     },
     {
       name: 'erpax.standards.lawSupersessions',
+      role: 'measure',
       description: 'Conservation Law 28: list every tenant subscription whose subscribed-uuid has been superseded in the tenant\'s jurisdiction. The MetaSkillAgent auto-applies safe rebinds.',
       parameters: { tenantId: z.string(), jurisdiction: z.string() },
       async handler({ tenantId, jurisdiction }) { return json(checkStandardSupersessionsResolved(tenantId as string, jurisdiction as string)) },
@@ -960,12 +999,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice MMMMMM — interactive website (Pages from e2e + spec; import/export) ──
     {
       name: 'erpax.website.seedFromE2e',
+      role: 'measure',
       description: 'Slice MMMMMM: walk marketing/*.<locale>.html (Playwright e2e multimedia output) and return PageSeed[] ready for Payload\'s pages collection. The seeds carry the full per-locale walkthrough HTML — hero + storyboard + UX-gap callouts + audit-trail footer.',
       parameters: {},
       async handler() { return json(seedFromE2e({ repoRoot: process.cwd() })) },
     },
     {
       name: 'erpax.website.seedFromSpec',
+      role: 'measure',
       description: 'Slice MMMMMM: every CollectionSpec / Chain / Agent / TenantRoleProfile / standard family becomes a PageSeed for the public website. Browseable spec corpus + try-it-via-MCP CTA on every page.',
       parameters: {
         tenantId: z.string(),
@@ -977,18 +1018,21 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.website.exportMediaBundle',
+      role: 'measure',
       description: 'Slice MMMMMM: serialise an array of PageSeed as ndjson — federation-friendly bundle that any peer ERPax instance can importMediaBundle.',
       parameters: { seeds: z.array(z.record(z.unknown())) },
       async handler({ seeds }) { return text(exportMediaBundle(seeds as never)) },
     },
     {
       name: 'erpax.marketing.strategy',
+      role: 'measure',
       description: 'Slice MMMMMM: return ERPax\'s declared marketing strategy + the 7 operationalised rules. Per user "transparency without security compromise".',
       parameters: {},
       async handler() { return json(ERPAX_MARKETING_STRATEGY) },
     },
     {
       name: 'erpax.marketing.deriveSeo',
+      role: 'measure',
       description: 'Auto-derive SEO meta (title + description + OG + Schema.org JSON-LD + keyword set) from a page title + body + axis hint.',
       parameters: {
         title: z.string(), description: z.string(),
@@ -999,6 +1043,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.marketing.channelVariants',
+      role: 'measure',
       description: 'Generate channel-specific copy (blog post / email / press release / social X / social LinkedIn) from a base hero + body + standards count.',
       parameters: {
         title: z.string(), hero: z.string(), body: z.string(),
@@ -1009,6 +1054,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.marketing.reviewBrandVoice',
+      role: 'measure',
       description: 'Brand-voice review against ERPax\'s plain-precise default voice. Flags marketing fluff (revolutionary / leverage / synergy) + sentences > 250 chars.',
       parameters: { text: z.string(), voice: z.enum(['plain-precise','bold-confident','measured-regulatory','community-warm']).optional() },
       async handler({ text, voice }) {
@@ -1017,12 +1063,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.marketing.auditSeo',
+      role: 'measure',
       description: 'SEO audit on a SeoMeta + body — title length / description length / keyword density / first-3 keywords appear in body.',
       parameters: { meta: z.record(z.unknown()), body: z.string() },
       async handler({ meta, body }) { return json(auditSeo(meta as never, body as string)) },
     },
     {
       name: 'erpax.marketing.transparencyCheck',
+      role: 'measure',
       description: 'Per "transparency without security compromise" strategy: verify a page about to publish carries no PII, sources only from erpax-platform/synthetic-* tenants, every standards claim resolves. Critical findings escalate; pages NEVER auto-publish if this fails.',
       parameters: {
         pageBody: z.string(),
@@ -1033,18 +1081,21 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.marketing.buildOnboardingDrip',
+      role: 'measure',
       description: 'Generate the 5-email post-checkout onboarding sequence for a new tenant role (welcome / first MCP call / first audit pack / standards posture / quarterly filing).',
       parameters: { roleProfileId: z.string() },
       async handler({ roleProfileId }) { return json(buildOnboardingDrip(roleProfileId as string)) },
     },
     {
       name: 'erpax.website.importMediaBundle',
+      role: 'measure',
       description: 'Slice MMMMMM: parse a federation-broadcast ndjson bundle into PageSeed[] and return it for ingestion into the local Payload pages collection.',
       parameters: { ndjson: z.string() },
       async handler({ ndjson }) { return json(importMediaBundle(ndjson as string)) },
     },
     {
       name: 'erpax.website.uploadTestArtifacts',
+      role: 'measure',
       description: 'Walk a Playwright test-results directory (manifest.json + .png/.webm), upload each screenshot/video — and a generated WebVTT subtitle track per video — to the Media collection, and return the Media id map so the product-pages seed can reference them in hero.media. Node/CI only (reads the filesystem; not edge-safe). W3C WebVTT + WCAG-2.1 §1.2.2 captions + ISO 19011 audit-evidence.',
       parameters: {
         artifactsDir: z.string(),
@@ -1067,6 +1118,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Bulk operations — unified CSV/EDI/camt.053/pain.001 import/export ──
     {
       name: 'erpax.bulk.enqueue',
+      role: 'measure',
       description: 'Enqueue a bulk import/export/reprocess/reverse operation (CSV / xlsx / json(l) / UBL / CII / camt.053-054 / pain.001-008 / EDIFACT / PDF-OCR). Writes an audit-events row immediately (operation visible before the queue consumer wakes) and returns the operationId for progress tracking. ISO 20022 + EN-16931 + RFC 4180 + SOX §404 import-completeness.',
       parameters: {
         tenantId: z.string(),
@@ -1105,6 +1157,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice NNNNNN — SEO-as-vortices (Law 29) ──
     {
       name: 'erpax.seo.registerFace',
+      role: 'measure',
       description: 'Slice NNNNNN: register a SeoVortexFace for a published page. The face carries Schema.org type + Open Graph type + content uuid + outgoing edges to related pages. Run after each PageSeed is persisted.',
       parameters: {
         url: z.string(), title: z.string(), description: z.string(),
@@ -1139,12 +1192,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.seo.crossLink',
+      role: 'measure',
       description: 'Slice NNNNNN: build the citation graph — for every face, populate its incoming edges from the outgoing edges of every other face. Required before checkCoupling / generateSitemap.',
       parameters: {},
       async handler() { return json(crossLink()) },
     },
     {
       name: 'erpax.seo.renderJsonLd',
+      role: 'measure',
       description: 'Slice NNNNNN: render the Schema.org JSON-LD <script> for a face URL. Embed this in the page <head>.',
       parameters: { url: z.string() },
       async handler({ url }) {
@@ -1155,6 +1210,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.seo.renderOgMeta',
+      role: 'measure',
       description: 'Slice NNNNNN: render the Open Graph + Twitter + alternate hreflang <meta>/<link> tags for a face URL. Embed this in the page <head>.',
       parameters: { url: z.string() },
       async handler({ url }) {
@@ -1165,24 +1221,28 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.seo.generateSitemap',
+      role: 'measure',
       description: 'Slice NNNNNN: generate sitemap.xml for every registered SEO face, with xhtml:link alternates for every locale. Serve at /sitemap.xml.',
       parameters: { siteOrigin: z.string() },
       async handler({ siteOrigin }) { return text(generateSitemap(siteOrigin as string)) },
     },
     {
       name: 'erpax.seo.generateRobots',
+      role: 'measure',
       description: 'Slice NNNNNN: generate robots.txt — exposes the audit trail + spec corpus to crawlers (transparency strategy MMMMMM); explicitly opts in ClaudeBot/GPTBot/Google-Extended for AI training.',
       parameters: { siteOrigin: z.string() },
       async handler({ siteOrigin }) { return text(generateRobots(siteOrigin as string)) },
     },
     {
       name: 'erpax.seo.checkCoupling',
+      role: 'measure',
       description: 'Conservation Law 29 — every published SEO face must have ≥minDegree inbound + outbound microdata edges. Returns under-coupled pages so the platform can refuse to publish them or mark them as scope:pending-coupling.',
       parameters: { minDegree: z.number().int().min(1).max(10).optional() },
       async handler({ minDegree }) { return json(checkSeoVortexCoupling((minDegree as number | undefined) ?? 2)) },
     },
     {
       name: 'erpax.seo.bitemporalAnchor',
+      role: 'measure',
       description: 'Slice NNNNNN: when a page content-uuid changes, register the old uuid so requests to historical URLs 301 to the canonical URL and og:updated_time is bumped.',
       parameters: { url: z.string(), oldUuid: z.string(), newUuid: z.string() },
       async handler({ url, oldUuid, newUuid }) {
@@ -1192,6 +1252,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.seo.validateMicrodata',
+      role: 'measure',
       description: 'Slice NNNNNN: validate a face — Schema.org-required fields present, BCP-47 hreflang, no orphan edges. Major issues block publish; minor issues are warnings.',
       parameters: { url: z.string() },
       async handler({ url }) {
@@ -1203,6 +1264,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── shadcn extension (slice MMMMMM cont.) ──
     {
       name: 'erpax.website.shadcnInventory',
+      role: 'measure',
       description: 'Per user "and here you can use the whole power of shadcn for anything beyond payload" — return the SHADCN_SURFACE_MAP describing every interactive surface (12 site surfaces) and which shadcn components they require, plus the union of all required components.',
       parameters: {},
       async handler() {
@@ -1215,6 +1277,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.website.shadcnSurface',
+      role: 'measure',
       description: 'Look up a single SiteSurface (e.g. "mcp-playground", "conservation-dashboard", "cloning-ui") and return its shadcn component requirements + MCP tools + Schema.org type + description.',
       parameters: {
         surface: z.enum([
@@ -1231,12 +1294,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice PPPPPP — agents-as-shadcn-blocks (Law 32) ──
     {
       name: 'erpax.blocks.list',
+      role: 'measure',
       description: 'Per user "i realize the mcp agents are like the bloocks in shadcn. blocks of types as components" — return the block catalog: every agent as a typed AgentBlockManifest with accepts/emits surfaces + category + standards.',
       parameters: {},
       async handler() { return json(buildBlockCatalog(registry)) },
     },
     {
       name: 'erpax.blocks.get',
+      role: 'measure',
       description: 'Slice PPPPPP: look up a single agent block by id (e.g. "finance", "legal", "data") — its typed surface for use as a shadcn-style composable block.',
       parameters: {
         agentId: z.enum([
@@ -1253,6 +1318,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.blocks.compose',
+      role: 'measure',
       description: 'Slice PPPPPP: compose two agent blocks — A\'s emitted events feed into B\'s subscription set. Returns the composition + the shared event types at the boundary; ok=false if no shared types (Law 32 type-incoherent).',
       parameters: {
         upstreamId: z.enum([
@@ -1276,6 +1342,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.blocks.chain',
+      role: 'measure',
       description: 'Slice PPPPPP: compose N blocks into a meta-block. Returns the composition path; on first type-incoherent boundary, returns the failure detail.',
       parameters: {
         agentIds: z.array(z.enum([
@@ -1297,6 +1364,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.blocks.checkCoupling',
+      role: 'measure',
       description: 'Conservation Law 32 — registry-wide audit: every emitted event has a consumer; every subscribed event has an emitter. Mirrors the shadcn rule "every block variant must be reachable from at least one composition example".',
       parameters: {},
       async handler() { return json(checkRegistryCoupling(registry)) },
@@ -1304,6 +1372,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice RRRRRR — quantum-stream layer (Law 33) ──
     {
       name: 'erpax.streams.probeWindow',
+      role: 'measure',
       description: 'Per user "in the quantum world it is stream" — synthetic 16-event burst through a tumbling window; returns the per-window Lamport-coherence verdict. Conservation Law 33 baseline.',
       parameters: { windowMs: z.number().int().min(1).max(60_000).optional() },
       async handler({ windowMs }) {
@@ -1324,6 +1393,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.streams.checkCoherence',
+      role: 'measure',
       description: 'Conservation Law 33 — verify a list of {event, lamport} pairs are in monotonically non-decreasing Lamport order. Out-of-order pairs are causal-coherence violations.',
       parameters: {
         events: z.array(z.object({ id: z.string(), tenantId: z.string(), lamport: z.number().int() })),
@@ -1338,6 +1408,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.streams.checkUuidChain',
+      role: 'measure',
       description: 'Conservation Law 34 — per user "uuid protects the stream from tampering": verify a list of ClockedEvent (event + lamport + streamUuid + prevStreamUuid). Any tampering — re-ordering, mutation, insertion, deletion — breaks the chain at the point of corruption and downstream.',
       parameters: {
         events: z.array(z.object({
@@ -1355,12 +1426,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice TTTTTT + UUUUUU — storage independence + replication ──
     {
       name: 'erpax.storage.listBackends',
+      role: 'measure',
       description: 'Per user "this way any object is storage independent" — list every registered storage backend (memory always present; production adds D1/R2/KV/DO/IPFS/Arweave/Filecoin/peer-erpax).',
       parameters: {},
       async handler() { return json({ backends: listBackends() }) },
     },
     {
       name: 'erpax.storage.verifyAcrossBackends',
+      role: 'measure',
       description: 'Slice TTTTTT: read an object from every registered backend; recompute its content uuid; verify all match the input. Returns per-backend verdict so missing replicas / tampered bytes are localizable.',
       parameters: { collection: z.string(), uuid: z.string(), tenantId: z.string() },
       async handler({ collection, uuid, tenantId }) {
@@ -1371,6 +1444,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.storage.planMigration',
+      role: 'measure',
       description: 'Slice TTTTTT: compute which uuids need to be copied from source to target backend (toCopy / alreadyPresent / missingFromSource). The actual byte-copy is delegated to the backend driver.',
       parameters: { source: z.string(), target: z.string(), collection: z.string(), uuids: z.array(z.string()), tenantId: z.string() },
       async handler({ source, target, collection, uuids, tenantId }) {
@@ -1382,6 +1456,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.storage.replicate',
+      role: 'measure',
       description: 'Conservation Law 36 — per user "uuid solves any replication": copy bytes from source backend to N target backends; recompute uuid at each target; report per-target ok/mismatch. No master/slave coordination.',
       parameters: { source: z.string(), targets: z.array(z.string()), collection: z.string(), uuid: z.string(), tenantId: z.string() },
       async handler({ source, targets, collection, uuid, tenantId }) {
@@ -1393,6 +1468,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.storage.consensusRead',
+      role: 'measure',
       description: 'Conservation Law 36 — Byzantine-fault-tolerant read: query up to K backends; if at least minAgreement return matching uuids, succeed. Tampered backends fail alone; consensus continues.',
       parameters: { collection: z.string(), uuid: z.string(), tenantId: z.string(), minAgreement: z.number().int().min(1) },
       async handler({ collection, uuid, tenantId, minAgreement }) {
@@ -1404,12 +1480,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.storage.checkIndependence',
+      role: 'measure',
       description: 'Conservation Law 35 — synthetic content-uuid object recomputes the same uuid across every registered backend. Boot-suite probe; raise per-tenant when production backends online.',
       parameters: { tenantId: z.string().optional() },
       async handler({ tenantId }) { return json(await checkStorageIndependence((tenantId as string | undefined) ?? 'storage-probe')) },
     },
     {
       name: 'erpax.streams.tumblingDemo',
+      role: 'measure',
       description: 'Slice RRRRRR demo: push N events through a tumblingWindow(ms) and return the per-window event counts + total. Useful for clients implementing high-throughput dashboards.',
       parameters: { events: z.number().int().min(1).max(1000), windowMs: z.number().int().min(1).max(60_000) },
       async handler({ events, windowMs }) {
@@ -1427,6 +1505,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.blocks.chainsAsCompositions',
+      role: 'measure',
       description: 'Per user "so erpax is chains of blocks" — derive every BUSINESS_CHAIN as a typed block composition path. Each step\'s owning agent is a node; consecutive steps form composeBlocks() boundaries. Returns { chainId, path, composition } for each chain so the UI can render flow diagrams and the boot suite can assert end-to-end type safety.',
       parameters: {},
       async handler() { return json(chainsAsBlockCompositions(registry)) },
@@ -1434,6 +1513,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice OOOOOO — voting/rating uuid coupling (Laws 30 + 31) ──
     {
       name: 'erpax.voting.createBallot',
+      role: 'measure',
       description: 'Slice OOOOOO: create a content-addressable ballot. Returns the ballot uuid. Subject can be any tamper-proof object uuid; periodUuid separates voting rounds (also drives the per-period pseudo-DID).',
       parameters: {
         tenantId: z.string(), subjectUuid: z.string(), periodUuid: z.string(),
@@ -1456,6 +1536,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.voting.castVote',
+      role: 'measure',
       description: 'Slice OOOOOO: cast a vote against a ballot. Vote uuid is derived from (ballotUuid, voterPseudoDid, subjectUuid, periodUuid, value); double-cast returns duplicate-vote (Law 31). Voter master DID is hashed with periodUuid to a pseudo-DID — cross-period unlinkability.',
       parameters: {
         ballotUuid: z.string(),
@@ -1476,6 +1557,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.voting.computeAggregate',
+      role: 'measure',
       description: 'Slice OOOOOO: compute and persist the ballot aggregate. Aggregate uuid = content-uuid({tenantId, ballotUuid, sorted leaf uuids, tally, weightedAverage, closedAt}). Anyone with the leaves can recompute (Law 30).',
       parameters: { ballotUuid: z.string(), closedAt: z.string().optional() },
       async handler({ ballotUuid, closedAt }) {
@@ -1484,36 +1566,42 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.voting.verifyAggregate',
+      role: 'measure',
       description: 'Conservation Law 30 — verify a published aggregate by re-deriving its uuid from leaves. Returns ok=false + issue list if any leaf is tampered (Law 8) or if the aggregate uuid does not match.',
       parameters: { ballotUuid: z.string() },
       async handler({ ballotUuid }) { return json(verifyAggregate(ballotUuid as string)) },
     },
     {
       name: 'erpax.voting.checkNoDoubleVoting',
+      role: 'measure',
       description: 'Conservation Law 31 — scan every recorded vote and report duplicate (ballot, voterPseudoDid, subjectUuid) triples. Should always return ok=true since vote uuid derivation collides at cast-time; this is the post-hoc auditor.',
       parameters: {},
       async handler() { return json(checkNoDoubleVoting()) },
     },
     {
       name: 'erpax.voting.listBallots',
+      role: 'measure',
       description: 'List all ballots for a tenant (in-memory store; production layer pages through Payload).',
       parameters: { tenantId: z.string() },
       async handler({ tenantId }) { return json(listBallots(tenantId as string)) },
     },
     {
       name: 'erpax.voting.listVotes',
+      role: 'measure',
       description: 'List all votes for a ballot (with their content uuids — verifiable individually via Law 8).',
       parameters: { ballotUuid: z.string() },
       async handler({ ballotUuid }) { return json(listVotes(ballotUuid as string)) },
     },
     {
       name: 'erpax.voting.exportBallotBundle',
+      role: 'measure',
       description: 'Slice OOOOOO: emit a JCS-canonicalised JSON bundle of {ballot, votes, aggregate} for federation broadcast (slice AAAAAA) or external audit. Receivers can re-derive every uuid.',
       parameters: { ballotUuid: z.string() },
       async handler({ ballotUuid }) { return text(exportBallotBundle(ballotUuid as string)) },
     },
     {
       name: 'erpax.voting.derivePseudoDid',
+      role: 'measure',
       description: 'Slice OOOOOO: HKDF-style derivation of a voter\'s per-period pseudo-DID. Two votes by the same master DID in two different periods are statistically unlinkable without the master DID.',
       parameters: { voterMasterDid: z.string(), ballotPeriodUuid: z.string() },
       async handler({ voterMasterDid, ballotPeriodUuid }) {
@@ -1522,6 +1610,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.standards.classify',
+      role: 'measure',
       description: 'Classify a standards body into one of the 7 standard families: ifrs-ias / iso / eu-directive / us-fed / w3c-ietf / cloudflare / un-oecd-wco. Used by the standards-as-vortices coupling matrix (§0g).',
       parameters: { body: z.string() },
       async handler({ body }) { return json({ family: familyOf(body as string) }) },
@@ -1529,6 +1618,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice BBBBBB — Blockchain anchoring ──
     {
       name: 'erpax.anchoring.anchorRoot',
+      role: 'measure',
       description: 'Anchor a Merkle audit-chain root to a public chain (default: notary-signature stub). Regulators verify by resolving the chain anchor.',
       parameters: { tenantId: z.string(), merkleRoot: z.string() },
       async handler({ tenantId, merkleRoot }) {
@@ -1540,6 +1630,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.anchoring.list',
+      role: 'measure',
       description: 'List every audit anchor for a tenant — transaction ids on whatever chains were used.',
       parameters: { tenantId: z.string() },
       async handler({ tenantId }) { return json(listAnchors(tenantId as string)) },
@@ -1547,6 +1638,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice EEEEEE — Long-term archival ──
     {
       name: 'erpax.archival.list',
+      role: 'measure',
       description: 'List long-term archive pinning receipts for a tenant (IPFS / Arweave / Filecoin / R2-Glacier).',
       parameters: { tenantId: z.string() },
       async handler({ tenantId }) { return json(tenantPins(tenantId as string)) },
@@ -1554,18 +1646,21 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice QQQQQ — Meta-automation ──
     {
       name: 'erpax.meta.listProposals',
+      role: 'measure',
       description: 'List FixProposals the MetaSkillAgent has produced from invariant WARN/FAIL signals — what was auto-applied vs escalated to the maintainer.',
       parameters: {},
       async handler() { return json(listProposals()) },
     },
     {
       name: 'erpax.agents.capabilities',
+      role: 'measure',
       description: 'List every registered DomainAgent\'s capability matrix (Law 17 — roleId + readScopes + writeScopes + mcpToolPermissions + jurisdictions).',
       parameters: {},
       async handler() { return json([...listAgentCapabilities().entries()]) },
     },
     {
       name: 'erpax.standards.cite',
+      role: 'measure',
       description: 'List the standards (IFRS / IAS / SOX / ISO / NIST / GDPR / EN / RFC / OECD / W3C) cited by a given collection or chain.',
       parameters: { target: z.string() },
       async handler({ target }) {
@@ -1576,6 +1671,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.verifyObject',
+      role: 'measure',
       description: 'Conservation Law 8: fetch a row from a tamper-proof collection, recompute its content-uuid (RFC 9562 §5.8 + RFC 8785 + SHA-256), and compare to the stored uuid. Returns {ok: true} on match or {ok: false, expected, actual} on Byzantine tamper.',
       parameters: { collection: z.string(), id: z.string() },
       async handler({ collection, id }, req) {
@@ -1591,6 +1687,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.refs.resolve',
+      role: 'measure',
       description: 'Conservation Law 10: resolve a uuid reference to its row + verify content integrity (Law 8). Returns the row when its recomputed uuid matches the pointer, or null on the harmony "disappear" case (referenced content has changed or row is missing).',
       parameters: { collection: z.string(), uuid: z.string(), tenantId: z.string() },
       async handler({ collection, uuid, tenantId }, req) {
@@ -1605,6 +1702,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.refs.findDangling',
+      role: 'measure',
       description: 'Conservation Law 10 sweep: walk every uuidRef field on every opted-in collection for a tenant; return the list of unresolved pointers ({owningCollection, owningId, fieldPath, targetCollection, uuid}). Empty list = full referential harmony for that tenant.',
       parameters: { tenantId: z.string(), sampleSize: z.number().int().min(1).max(500).optional() },
       async handler({ tenantId, sampleSize }, req) {
@@ -1618,6 +1716,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.auditTenant',
+      role: 'measure',
       description: 'Conservation Law 8 bulk audit: for a given tenant, sample N rows from every tamper-proof collection, recompute uuids, return per-collection counts of {ok, tampered}. Use to confirm storage integrity end-to-end (and, with TTTTT, across redundant backends).',
       parameters: { tenantId: z.string(), sampleSize: z.number().int().min(1).max(500).optional() },
       async handler({ tenantId, sampleSize }, req) {
@@ -1705,18 +1804,21 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
   tools.push(
     {
       name: 'erpax.platform.standardization',
+      role: 'measure',
       description: 'Conservation Law 38 (slice XXXXXX) — per user "let mcp standardize itself": audit every tool against the naming convention erpax.<area>.<verb>, validate area is in CANONICAL_AREAS, and require hand-curated tools to cite >=1 standard (auto-generated tools exempt). Returns per-tool violation report (W3C JSON-LD).',
       parameters: {},
       async handler() { return json(checkMcpToolStandardization(tools)) },
     },
     {
       name: 'erpax.platform.standardsBundle',
+      role: 'measure',
       description: 'Slice XXXXXX — emit the MCP layer\'s own standards conformance bundle as Schema.org Dataset JSON-LD (per W3C JSON-LD 1.1). Federable + content-addressable. Drives the conservation-dashboard surface.',
       parameters: {},
       async handler() { return json(buildMcpStandardsBundle(tools)) },
     },
     {
       name: 'erpax.platform.canonicalAreas',
+      role: 'measure',
       description: 'Slice XXXXXX — return the canonical area taxonomy enforced by Conservation Law 38. Adding a new area requires editing CANONICAL_AREAS explicitly (forces conscious taxonomy decisions).',
       parameters: {},
       async handler() { return json({ canonicalAreas: CANONICAL_AREAS }) },
@@ -1724,12 +1826,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice QQQQQQQQ — runtime MCP standards index ──
     {
       name: 'erpax.platform.standardsIndex',
+      role: 'measure',
       description: 'Per user "deep document related standards inline starting with mcp" — return the runtime MCP_STANDARDS_INDEX: every standard the MCP layer cites (RFC / W3C / ISO / Schema.org / MCP / topology) with its family + citing modules + governed Conservation Laws. Comprehensive doc: docs/standards/mcp.md (W3C JSON-LD 1.1 + ISO 19011:2018 §6.4.6).',
       parameters: {},
       async handler() { return json(listMcpStandards()) },
     },
     {
       name: 'erpax.platform.standardsByFamily',
+      role: 'measure',
       description: 'Slice QQQQQQQQ — filter MCP_STANDARDS_INDEX by family: mcp / rfc-ietf / w3c / iso / schema-org / topology / open-graph / other.',
       parameters: {
         family: z.enum(['mcp', 'rfc-ietf', 'w3c', 'iso', 'schema-org', 'topology', 'open-graph', 'other']),
@@ -1740,6 +1844,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.standardsForLaw',
+      role: 'measure',
       description: 'Slice QQQQQQQQ — reverse-lookup: which standards govern a given Conservation Law N? Returns the subset of MCP_STANDARDS_INDEX entries whose conservationLaws include N (per ISO 19011:2018 §6.4.6 audit-evidence traceability).',
       parameters: { num: z.number().int().min(1).max(99) },
       async handler({ num }) { return json(standardsForLaw(num as number)) },
@@ -1747,6 +1852,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice YYYYYY — let MCP present itself as microdata + OG (Law 39) ──
     {
       name: 'erpax.platform.toolAsAction',
+      role: 'measure',
       description: 'Per user "let mcp present itself as microdata open graphs" — render a single MCP tool as a Schema.org Action JSON-LD (W3C JSON-LD 1.1 + Schema.org Action vocabulary). Drives the SEO + AI-crawler discoverability of the MCP catalog.',
       parameters: { toolName: z.string(), origin: z.string() },
       async handler({ toolName, origin }) {
@@ -1757,6 +1863,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.toolAsOg',
+      role: 'measure',
       description: 'Slice YYYYYY — render Open Graph + Twitter Card meta for one MCP tool (W3C Open Graph protocol). Use to give every tool a shareable preview card.',
       parameters: { toolName: z.string(), origin: z.string() },
       async handler({ toolName, origin }) {
@@ -1767,6 +1874,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.toolHead',
+      role: 'measure',
       description: 'Slice YYYYYY — full <head> snippet for a tool detail page: JSON-LD Action + OG + Twitter Card meta combined (W3C Microdata 1.1 + Schema.org).',
       parameters: { toolName: z.string(), origin: z.string() },
       async handler({ toolName, origin }) {
@@ -1777,12 +1885,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.areaAsPage',
+      role: 'measure',
       description: 'Slice YYYYYY — render a canonical MCP area as a Schema.org CollectionPage (W3C JSON-LD 1.1) listing every tool in the area as hasPart edges. Drives the per-area browsing surface.',
       parameters: { area: z.string(), origin: z.string() },
       async handler({ area, origin }) { return json(areaAsCollectionPage(area as string, tools, origin as string)) },
     },
     {
       name: 'erpax.platform.registerAsSeoFaces',
+      role: 'measure',
       description: 'Slice YYYYYY — register every MCP tool + area + the root /mcp/ as SeoVortexFaces (slice NNNNNN). After registration, calling erpax.seo.crossLink populates the citation graph; the MCP catalog becomes a fully-coupled SEO vortex (Law 29 satisfied for the MCP layer).',
       parameters: { origin: z.string() },
       async handler({ origin }) {
@@ -1794,6 +1904,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.checkPresentationCoverage',
+      role: 'measure',
       description: 'Conservation Law 39 — every MCP tool must have a registered SeoVortexFace with schemaType Action and >=1 outbound microdata edge. Run after erpax.platform.registerAsSeoFaces.',
       parameters: { origin: z.string() },
       async handler({ origin }) { return json(checkMcpPresentationCoverage(tools, origin as string)) },
@@ -1801,6 +1912,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice ZZZZZZ — MCP rebuilds itself from the source (Law 40) ──
     {
       name: 'erpax.platform.rebuildFromSource',
+      role: 'measure',
       description: 'Per user "let mcp rebuild itself from the source" — walk the JSDoc-as-spec corpus (slice CCCCC), derive the expected MCP catalog, compare with live, return rebuild plan + skeleton tool-defs.ts (W3C JSON-LD 1.1, MCP 0.6 + JSDoc-as-spec).',
       parameters: { cwd: z.string().optional() },
       async handler({ cwd }) {
@@ -1809,6 +1921,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.rebuildExpected',
+      role: 'measure',
       description: 'Slice ZZZZZZ — derive the expected MCP catalog from the spec corpus alone (does not compare with live). Useful for clones that boot from genome (slice HHHHHH) and want to know what tools they should expose (Conservation Law 1 spec coverage).',
       parameters: { cwd: z.string().optional() },
       async handler({ cwd }) {
@@ -1818,6 +1931,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.rebuildDrift',
+      role: 'measure',
       description: 'Slice ZZZZZZ — compare an expected catalog against the live one and return per-tool drift entries (add/remove/mismatch/intact) per Conservation Law 40.',
       parameters: { cwd: z.string().optional() },
       async handler({ cwd }) {
@@ -1828,6 +1942,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.rebuildSkeleton',
+      role: 'measure',
       description: 'Slice ZZZZZZ — emit a starter tool-defs.ts skeleton from the source-derived expected tools (RFC-style code template, MCP 0.6). Use as the regeneration starting point if tool-defs.ts is corrupted or deleted.',
       parameters: { cwd: z.string().optional() },
       async handler({ cwd }) {
@@ -1839,12 +1954,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice AAAAAAA — MCP self-testing (Law 41) ──
     {
       name: 'erpax.platform.selfTestAll',
+      role: 'measure',
       description: 'Per user "mcp interacts with itself by testing" — synthetic per-tool invocation derived from each tool\'s Zod schema; verify response shape; report pass/skip/fail per Conservation Law 41. ISO/IEC/IEEE 29119-2.',
       parameters: {},
       async handler() { return json(await selfTestAll(tools)) },
     },
     {
       name: 'erpax.platform.selfTestOne',
+      role: 'measure',
       description: 'Slice AAAAAAA — smoke-test a single tool. Returns {tool, verdict, reason?, elapsedMs}. Use to debug a Law 41 boot failure (W3C Web Tracing convention).',
       parameters: { toolName: z.string() },
       async handler({ toolName }) {
@@ -1856,12 +1973,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice CCCCCCC — torus topology (Law 43) ──
     {
       name: 'erpax.platform.torusTopology',
+      role: 'measure',
       description: 'Per user "erpax and mcp are interacting to infinity within the limitations of a torus" — return the 11 torus vertices + 14 directed edges + default resource envelope. The closed-system synthesis (Topology / closed manifold; ISO/IEC 25010:2023 §5.2 performance).',
       parameters: {},
       async handler() { return json({ vertices: TORUS_VERTICES, edges: TORUS_EDGES, envelope: TORUS_DEFAULT_ENVELOPE }) },
     },
     {
       name: 'erpax.platform.torusTrace',
+      role: 'measure',
       description: 'Slice CCCCCCC — trace a round-trip around the torus from a starting vertex; verify the loop closes (Conservation Law 43 closure property). Returns the hop sequence + closedLoop boolean.',
       parameters: {
         start: z.enum(['spec-corpus', 'mcp-tools', 'agent-blocks', 'chain-of-blocks', 'event-streams', 'audit-trail', 'archival', 'federation', 'cloning', 'standards-corpus', 'website']),
@@ -1873,6 +1992,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.checkTorusBounded',
+      role: 'measure',
       description: 'Conservation Law 43 — verify the torus is closed (every vertex has incoming + outgoing edges) and current resource usage is within envelope (cost / carbon — Laws 15+16; CF Worker memory + CPU + queues — slice IIIIII; chain-step circumference soft cap 42).',
       parameters: {
         current: z.object({
@@ -1892,12 +2012,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice LLLLLLLL — 10 dimensional plugins + missing collections (Law 49) ──
     {
       name: 'erpax.platform.dimensions',
+      role: 'measure',
       description: 'Per user "start by creating the missing collections stored in 10 dimensional plugins" — return the 10 dimensional plugins (A-domain / B-substrate / C-process / D-conservation / E-tenant-role / F-integrity / G-beyond / H-clients / I-federation / J-meta-evolution per §0b vortices). Each carries its trinityLaw + canonicalCollections + newCollections (W3C JSON-LD 1.1).',
       parameters: {},
       async handler() { return json(DIMENSIONAL_PLUGINS) },
     },
     {
       name: 'erpax.platform.dimensionForCollection',
+      role: 'measure',
       description: 'Slice LLLLLLLL — look up which dimension a collection slug belongs to (or null if unassigned). Conservation Law 49 requires every collection to have exactly one dimension.',
       parameters: { slug: z.string() },
       async handler({ slug }) {
@@ -1906,30 +2028,35 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.dimensionalCounts',
+      role: 'measure',
       description: 'Slice LLLLLLLL — total collection counts: canonical + new + total across all 10 dimensions. Drives the conservation-dashboard surface\'s dimensional breakdown card (W3C JSON-LD 1.1).',
       parameters: {},
       async handler() { return json(totalCollectionCount()) },
     },
     {
       name: 'erpax.platform.dimensionalPluginFactories',
+      role: 'measure',
       description: 'Slice MMMMMMMM — return the 10 dimension plugin factory ids (BBBBB cut-prep). Each is a no-op today; slice BBBBB will fill them with collection moves on the local machine. ISO/IEC 25010:2023 §5.7 modularity.',
       parameters: {},
       async handler() { return json(Object.keys(DIMENSION_PLUGIN_FACTORIES)) },
     },
     {
       name: 'erpax.platform.allDimensionalPluginsCount',
+      role: 'measure',
       description: 'Slice MMMMMMMM — return the count of declared dimension plugin factories (should be 10, one per §0b vortex).',
       parameters: {},
       async handler() { return json({ count: allDimensionalPlugins().length }) },
     },
     {
       name: 'erpax.platform.checkDimensionalPluginScaffolded',
+      role: 'measure',
       description: 'Conservation Law 51 — every dimension declared in DIMENSIONAL_PLUGINS has a matching plugin factory in DIMENSION_PLUGIN_FACTORIES. Symmetry catches drift (dimension added without factory, or vice versa).',
       parameters: {},
       async handler() { return json(checkDimensionalPluginScaffolded()) },
     },
     {
       name: 'erpax.platform.checkDimensionalCoverage',
+      role: 'measure',
       description: 'Conservation Law 49 — verify the 10-dimension taxonomy is well-formed: 10 dimensions exist, none empty, no duplicate assignments, no orphan collections (when declaredCollections passed). ISO/IEC 25010:2023 §5.7 modularity.',
       parameters: { declaredCollections: z.array(z.string()).optional() },
       async handler({ declaredCollections }) {
@@ -1939,24 +2066,28 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice JJJJJJJJ — the Trinity of Conservation (3 generators) ──
     {
       name: 'erpax.platform.trinity',
+      role: 'measure',
       description: 'Per user "the more laws less powerfull they are. remember the trinity brought then dimensions. what are their laws?" — return the THREE foundational laws (Identity / Causality / Closure) from which all 48 prior laws derive. Each carries dimension + statement + obligations + subsumed prior-law list (W3C JSON-LD 1.1).',
       parameters: {},
       async handler() { return json(TRINITY) },
     },
     {
       name: 'erpax.platform.trinityGrouping',
+      role: 'measure',
       description: 'Slice JJJJJJJJ — concise grouping: each Trinity law → list of prior law numbers it generalises. Used by the conservation-dashboard surface to collapse the 48-law view into 3 cards.',
       parameters: {},
       async handler() { return json(trinityGrouping()) },
     },
     {
       name: 'erpax.platform.trinityForLaw',
+      role: 'measure',
       description: 'Slice JJJJJJJJ — reverse map: prior Law N → which Trinity law it derives from (Identity / Causality / Closure / null if not yet mapped).',
       parameters: { num: z.number().int().min(1).max(99) },
       async handler({ num }) { return json({ trinityLaw: trinityForPriorLaw(num as number) }) },
     },
     {
       name: 'erpax.platform.trinityRollup',
+      role: 'measure',
       description: 'Slice JJJJJJJJ — given a list of prior law numbers that currently pass, return the per-Trinity-law verdict (% of derived theorems witnessed). Used to roll the 48-verdict boot suite into a 3-card dashboard.',
       parameters: { passedPriorLawNums: z.array(z.number().int()) },
       async handler({ passedPriorLawNums }) {
@@ -1965,12 +2096,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.lawCatalog',
+      role: 'measure',
       description: 'Per user "regroup the laws for maximum agent efficiency" — return the LAW_CATALOG: every conservation law with its category + which AgentEffect kinds it governs + applicableWhen trigger (W3C JSON-LD 1.1, ISO/IEC 25010:2023 §5.4 reusability).',
       parameters: {},
       async handler() { return json(LAW_CATALOG) },
     },
     {
       name: 'erpax.platform.agentLawProfile',
+      role: 'measure',
       description: 'Slice EEEEEEE — derive a single agent\'s law profile: which laws are applicable based on its emitted AgentEffect kinds + grouped by category + skipped-laws list. Coverage ratio shows the efficiency win (W3C Web Components composition + Conservation Law 32).',
       parameters: {
         agentId: z.enum([
@@ -1987,6 +2120,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.allAgentLawProfiles',
+      role: 'measure',
       description: 'Slice EEEEEEE — agent×Conservation-Law coverage matrix. For each of the 16 DomainAgents (Finance/Consistency/etc.), reports which subset of the 52 laws it owns / observes / emits. Powers per-agent accountability breakdowns. Output: ndjson rows {agentId, ownsLaws, observesLaws, emitsLaws}.',
       parameters: {},
       async handler() { return json(buildAllAgentLawProfiles()) },
@@ -1994,6 +2128,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice FFFFFFF — short uuids per case for UI/UX + search + security (Law 46) ──
     {
       name: 'erpax.integrity.shortUuid',
+      role: 'measure',
       description: 'Per user "it is insecure to display the uuids in full. shorter version per case may significantly improve the ui/ux and search" — render a full uuid (RFC 9562 §5.8) as a short, kind-prefixed display id (e.g. aud_a1b2c3d4 for audit, vot_xy12z3 for vote). NEVER use as verification key — display-only (ISO/IEC 27001 §A.9.4.5).',
       parameters: {
         uuid: z.string(),
@@ -2007,12 +2142,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.parseShortUuid',
+      role: 'measure',
       description: 'Slice FFFFFFF — parse a short id into its kind + hex prefix (no full uuid resolution; use erpax.integrity.lookupShortUuid for resolution).',
       parameters: { short: z.string() },
       async handler({ short }) { return json(parseShortUuid(short as string) ?? { ok: false, reason: 'unparseable' }) },
     },
     {
       name: 'erpax.integrity.lookupShortUuid',
+      role: 'measure',
       description: 'Slice FFFFFFF — resolve a short id back to one of a candidate full uuid set (typically tenant-scoped). Returns found / ambiguous / not-found per Law 9 multi-tenant isolation.',
       parameters: { short: z.string(), candidates: z.array(z.string()) },
       async handler({ short, candidates }) {
@@ -2021,6 +2158,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.displayUuid',
+      role: 'measure',
       description: 'Slice FFFFFFF — return {display, full, copyable} for UI rendering. UI shows display by default; reveals full on hover/click; copyFull controls clipboard target (W3C JSON-LD 1.1).',
       parameters: {
         uuid: z.string(),
@@ -2037,6 +2175,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.uuidShortPolicy',
+      role: 'measure',
       description: 'Slice FFFFFFF — return the per-kind SHORT_UUID_POLICY (prefix + length) so external clients can render short ids consistently across surfaces.',
       parameters: {},
       async handler() { return json(SHORT_UUID_POLICY) },
@@ -2044,6 +2183,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice GGGGGGG — type-level content uuid (Law 47) ──
     {
       name: 'erpax.integrity.computeTypeUuid',
+      role: 'measure',
       description: 'Per user "any type has uuid as well as any type object" — derive a uuidv8 from a TypeDescriptor (RFC 9562 §5.8 + JSON Schema draft 2020-12 + RFC 8785 canonicalisation). Two equivalent type shapes hash to the same uuid; any structural change shifts it.',
       parameters: { descriptor: z.record(z.unknown()) },
       async handler({ descriptor }) {
@@ -2052,6 +2192,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.registerType',
+      role: 'measure',
       description: 'Slice GGGGGGG — register a TypeDescriptor under a canonical name; returns {name, uuid, descriptor, registeredAt, version?}. Subsequent verify/lookup uses the registered uuid (W3C VC Data Model 2.0 typed claims).',
       parameters: {
         name: z.string(),
@@ -2068,6 +2209,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.getType',
+      role: 'measure',
       description: 'Slice GGGGGGG — look up a registered type by canonical name. Returns full descriptor + type-uuid + registeredAt.',
       parameters: { name: z.string() },
       async handler({ name }) {
@@ -2076,6 +2218,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.getTypeByUuid',
+      role: 'measure',
       description: 'Slice GGGGGGG — reverse lookup: type-uuid → registered type. Federation peers use this after exchanging type-uuids (slice AAAAAA pre-flight).',
       parameters: { uuid: z.string() },
       async handler({ uuid }) {
@@ -2084,12 +2227,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.listTypes',
+      role: 'measure',
       description: 'Slice GGGGGGG — TypeRegistry inventory. Returns each content-addressed type definition (collection field-shape, hook signature, MCP-tool parameter schema) with its baseline uuid. Used by federation peers to verify type compatibility before exchanging rows.',
       parameters: {},
       async handler() { return json(listTypes()) },
     },
     {
       name: 'erpax.integrity.verifyType',
+      role: 'measure',
       description: 'Slice GGGGGGG — verify a candidate descriptor matches the registered type\'s uuid. On mismatch returns drifted={fieldsAdded, fieldsRemoved} so migration scripts can detect breaking changes (W3C JSON Schema draft 2020-12).',
       parameters: { name: z.string(), descriptor: z.record(z.unknown()) },
       async handler({ name, descriptor }) {
@@ -2098,6 +2243,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.ensureBaselineTypes',
+      role: 'measure',
       description: 'Slice GGGGGGG — eagerly register the platform-mandated baseline types (AgentEffect, DomainEvent, AuditLeaf, BallotKind, PageSeed, SeoVortexFace, CollectionSpec). Idempotent. Required for Law 47 to pass at boot.',
       parameters: {},
       async handler() { ensureBaselineTypesRegistered(); return json({ ok: true, registered: listTypes().length }) },
@@ -2105,12 +2251,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice IIIIIIIII — infinite-within-finite spacetime (Law 48) ──
     {
       name: 'erpax.integrity.uuidStreamSnapshot',
+      role: 'measure',
       description: 'Per user "no. much more than this. with the replication it is infinite within the finite spacetime" — snapshot every uuid from live registries (faces + types) into the unified UUID_STREAM. Returns counts added (W3C JSON-LD 1.1).',
       parameters: {},
       async handler() { return json(snapshotFromRegistries()) },
     },
     {
       name: 'erpax.integrity.uuidStreamQuery',
+      role: 'measure',
       description: 'Slice IIIIIIIII — unified query interface across every uuid source (object/type/stream/audit/vote/aggregate/page/face/standard/clone/federation/proof/did/tool-catalog/platform-genome). Filter by source + tenant + limit (RFC 9562 §5.8).',
       parameters: {
         source: z.union([
@@ -2130,6 +2278,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.uuidStreamRecord',
+      role: 'measure',
       description: 'Slice IIIIIIIII — record a uuid into the unified stream (manually push when a subsystem produces a uuid outside the auto-snapshot path). For testing + production extensions.',
       parameters: {
         uuid: z.string(),
@@ -2150,6 +2299,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.infiniteFinitenessReport',
+      role: 'measure',
       description: 'Slice IIIIIIIII — quantify infinite-within-finite: totalUuids × (backends × federationPeers × bitemporalVersions) = totalLogicalUuids; physical_bytes vs envelope; richness ratio (logical_extent / physical_bytes). Topology — torus + Hilbert-space replicas (Hatcher 2002).',
       parameters: {
         federationPeersConfigured: z.number().int().min(1).optional(),
@@ -2166,6 +2316,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.checkInfiniteFiniteness',
+      role: 'measure',
       description: 'Conservation Law 48 — physical_bytes <= envelope (Law 43 echo); logical_extent unbounded; every uuid has a known source. Returns verdict + full report (W3C VC Data Model 2.0 verifiable replicas).',
       parameters: {
         federationPeersConfigured: z.number().int().min(1).optional(),
@@ -2182,6 +2333,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.checkTypeUuidCoverage',
+      role: 'measure',
       description: 'Conservation Law 47 — every domain type in use must be registered with a uuid. Boot-suite probe verifies the baseline (extend by calling registerTypeFromZod for your own types). RFC 9562 §5.8 + RFC 8785.',
       parameters: {},
       async handler() {
@@ -2191,12 +2343,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.checkShortUuidDisplay',
+      role: 'measure',
       description: 'Conservation Law 46 — verify every kind in SHORT_UUID_POLICY produces parseable short ids (roundtrip). Production CI lints + runtime proxy logging catch UI surfaces that display full uuids in violation.',
       parameters: {},
       async handler() { return json(checkUuidShortDisplay()) },
     },
     {
       name: 'erpax.platform.checkAgentLawCoverage',
+      role: 'measure',
       description: 'Conservation Law 45 — every agent must have at least one law per emitted effect kind; average coverage ratio < 1.0 (otherwise regrouping isn\'t buying efficiency). ISO/IEC 25010:2023 §5.2 performance.',
       parameters: {},
       async handler() { return json(checkAgentLawCoverage()) },
@@ -2205,6 +2359,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice NNNNNNNN — uuid solves PWA (Law 52) ──
     {
       name: 'erpax.pwa.cacheAsset',
+      role: 'measure',
       description: 'Per user "uuid solves pwa" — cache an asset keyed by its content-uuid (W3C Cache API + W3C Service Workers). The uuid IS the cache key — no manual cache-busting hash. RFC 9562 §5.8 + RFC 8785.',
       parameters: {
         url: z.string(),
@@ -2221,24 +2376,28 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.pwa.listCachedAssets',
+      role: 'measure',
       description: 'Slice NNNNNNNN — enumerate every cached asset with its uuid + url + kind + bytes. Drives the PWA storage-quota dashboard (W3C IndexedDB 3.0).',
       parameters: {},
       async handler() { return json(listCachedAssets()) },
     },
     {
       name: 'erpax.pwa.evictAsset',
+      role: 'measure',
       description: 'Slice NNNNNNNN — evict an asset by uuid. Storage-independence (Law 35) means the asset remains recoverable from any other backend that holds it (IPFS / federation peer / etc.).',
       parameters: { uuid: z.string() },
       async handler({ uuid }) { return json({ ok: evictAsset(uuid as string) }) },
     },
     {
       name: 'erpax.pwa.totalCachedBytes',
+      role: 'measure',
       description: 'Slice NNNNNNNN — total bytes across the asset cache. Quota tracking + eviction trigger (W3C Cache API).',
       parameters: {},
       async handler() { return json({ bytes: totalCachedBytes() }) },
     },
     {
       name: 'erpax.pwa.enqueueMutation',
+      role: 'measure',
       description: 'Slice NNNNNNNN — uuid-chained background sync queue (Conservation Law 34 streamUuid echo). Each enqueue derives uuid from {tenantId, endpoint, body, prev}; replay order causally preserved + tamper-detectable.',
       parameters: { tenantId: z.string(), endpoint: z.string(), body: z.unknown() },
       async handler({ tenantId, endpoint, body }) {
@@ -2247,18 +2406,21 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.pwa.listQueuedMutations',
+      role: 'measure',
       description: 'Slice NNNNNNNN — list pending offline mutations (optionally tenant-scoped per Law 9). Each carries uuid + prevUuid + endpoint + body.',
       parameters: { tenantId: z.string().optional() },
       async handler({ tenantId }) { return json(listQueuedMutations(tenantId as string | undefined)) },
     },
     {
       name: 'erpax.pwa.dequeueMutation',
+      role: 'measure',
       description: 'Slice NNNNNNNN — dequeue a mutation by uuid (after successful replay).',
       parameters: { uuid: z.string() },
       async handler({ uuid }) { return json({ ok: dequeueMutation(uuid as string) }) },
     },
     {
       name: 'erpax.pwa.publishManifest',
+      role: 'measure',
       description: 'Slice NNNNNNNN — publish a Web App Manifest (W3C Web App Manifest) wrapped in a content-uuid envelope. Recompute on the client to verify integrity (Conservation Law 8 echo).',
       parameters: {
         manifest: z.object({
@@ -2278,6 +2440,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.pwa.verifyManifest',
+      role: 'measure',
       description: 'Slice NNNNNNNN — verify a manifest envelope by recomputing the content-uuid (RFC 9562 §5.8 + RFC 8785). Tampered manifest fails immediately.',
       parameters: {
         envelope: z.object({
@@ -2292,6 +2455,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.pwa.preparePush',
+      role: 'measure',
       description: 'Slice NNNNNNNN — derive a uuid-keyed push notification (W3C Push API + W3C Notifications API). uuid lets the SW dedup retries trivially.',
       parameters: {
         title: z.string(), body: z.string(),
@@ -2308,6 +2472,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.pwa.dedupPush',
+      role: 'measure',
       description: 'Slice NNNNNNNN — dedup-check a push notification by uuid. Returns {delivered, reason?} per W3C Push API guidance.',
       parameters: {
         notification: z.object({ uuid: z.string(), title: z.string(), body: z.string(), url: z.string().optional(), tag: z.string().optional() }),
@@ -2318,24 +2483,28 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.pwa.checkUuidIntegrity',
+      role: 'measure',
       description: 'Conservation Law 52 — verify cache map-key symmetry + queue chain integrity (Law 34 echo). Tamper-detect the SW cache + sync queue at any moment.',
       parameters: {},
       async handler() { return json(checkPwaUuidIntegrity()) },
     },
     {
       name: 'erpax.platform.dryCleanScan',
+      role: 'measure',
       description: `Per user 'mcp solves manual work by dry cleaning' — scan the catalog for description duplicates (jaccard >= ${MAX_DESCRIPTION_OVERLAP}), parameter-shape clusters (>=3 tools sharing param names), verb inconsistencies (same verb / different shapes). Returns extraction proposals (W3C JSON-LD 1.1, ISO/IEC 25010:2023 §5.4 reusability).`,
       parameters: {},
       async handler() { return json(dryCleanScan(tools)) },
     },
     {
       name: 'erpax.platform.checkDryCleanliness',
+      role: 'measure',
       description: `Conservation Law 50 — no two non-generated tools share > ${MAX_DESCRIPTION_OVERLAP * 100}% word overlap; shape clusters + verb inconsistencies are warnings (refactor opportunities). ISO/IEC 25010:2023 §5.7 modularity.`,
       parameters: {},
       async handler() { return json(checkMcpDryCleanliness(tools)) },
     },
     {
       name: 'erpax.platform.checkSelfTestable',
+      role: 'measure',
       description: 'Conservation Law 41 — every MCP tool must either pass the smoke test or be explicitly skipped (db-dependent). Returns failures list if any tool throws or returns malformed shape.',
       parameters: {},
       async handler() { return json(await checkMcpSelfTestable(tools)) },
@@ -2343,6 +2512,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice DDDDDDD — public DRY conformance proof (Law 44) ──
     {
       name: 'erpax.platform.dryProofBuild',
+      role: 'measure',
       description: 'Per user "now when al is dry clean in theory tests need to prove it and present it to the world" — run every conservation invariant + every MCP self-test; ground the tamper-cost in the LIVE corpus self-proof (collider joint convention coverage + strength + emergence, read from the tree); roll into a Schema.org Dataset JSON-LD bundle (W3C JSON-LD 1.1 + W3C VC Data Model 2.0); content-uuid the bundle (Conservation Law 8). Returns the bundle without publishing.',
       parameters: { origin: z.string() },
       async handler({ origin }, req) {
@@ -2356,6 +2526,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.dryProofPublish',
+      role: 'measure',
       description: 'Slice DDDDDDD — build the proof bundle (tamper-cost grounded in the live corpus self-proof: collider/strength/emergence) AND register it as an SeoVortexFace at /proof/ (W3C Microdata 1.1 + Open Graph). After this, anyone hitting /proof/ can verify the conformance themselves; federation peers can ingest the bundle directly (slice AAAAAA).',
       parameters: { origin: z.string() },
       async handler({ origin }, req) {
@@ -2369,12 +2540,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.dryProofGet',
+      role: 'measure',
       description: 'Slice DDDDDDD — return the most recently published proof bundle. Anyone can recompute the bundle.contentUuid to verify it has not been tampered with (Law 8).',
       parameters: {},
       async handler() { return json(getCurrentProofBundle() ?? { ok: false, reason: 'no proof published yet — call erpax.platform.dryProofPublish first' }) },
     },
     {
       name: 'erpax.platform.dryProofFederate',
+      role: 'measure',
       description: 'Slice DDDDDDD — wrap the current proof bundle as a federation envelope (slice AAAAAA, kind=erpax/dry-proof). Peer ERPax instances can ingest + verify (uuid recomputes locally) without trusting our chain.',
       parameters: { originDid: z.string() },
       async handler({ originDid }) {
@@ -2385,12 +2558,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.checkDryProofPublished',
+      role: 'measure',
       description: `Conservation Law 44 — verify the proof bundle (a) exists, (b) generatedAt within ${MAX_PROOF_AGE_HOURS}h, (c) content-uuid recomputes (Law 8 echo), (d) public face registered at /proof/. Pass for the world to depend on the proof.`,
       parameters: { origin: z.string() },
       async handler({ origin }) { return json(checkDryProofPublished(origin as string)) },
     },
     {
       name: 'erpax.platform.checkRebuildable',
+      role: 'measure',
       description: 'Conservation Law 40 — verify the live MCP catalog can be rebuilt from the spec corpus (no missing expected tools). Returns ok + missingFromLive list. Pre-push gate (FFFFFF) regenerates when this fails.',
       parameters: { cwd: z.string().optional() },
       async handler({ cwd }) {
@@ -2406,6 +2581,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
   tools.push(
     {
       name: 'erpax.audit.chainAppend',
+      role: 'measure',
       description: 'Append a uuid-linked leaf to the tenant\'s AUDIT_CHAIN_DO. Leaf carries prevLeafUuid + payloadUuid + timestamp → leafUuid; any mutation breaks the chain at the mutated index. Tenant-scoped per Slice SSSSSSSS mediator. Returns the appended UuidLinkedLeaf.',
       parameters: { payload: z.record(z.unknown()) },
       async handler({ payload }, req) {
@@ -2421,6 +2597,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.audit.chainVerify',
+      role: 'measure',
       description: 'Walk the tenant\'s AUDIT_CHAIN_DO leaves end-to-end (or a fromSeq/toSeq sub-range) and verify every uuid link. Returns ChainVerifyResult with brokenAtSeq pinpointing the first tampered leaf, or ok:true with chainLength when intact. Slice TTTTTTTT.',
       parameters: { fromSeq: z.number().int().min(0).optional(), toSeq: z.number().int().min(0).optional() },
       async handler({ fromSeq, toSeq }, req) {
@@ -2444,12 +2621,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
   tools.push(
     {
       name: 'erpax.platform.toolCatalog',
+      role: 'measure',
       description: 'Per user "mcp is ready to build and explore" — return every registered erpax.* tool with name + description + parameter names + area. Drives the shadcn mcp-playground (Cmd+K fuzzy search).',
       parameters: {},
       async handler() { return json(buildToolCatalog(tools)) },
     },
     {
       name: 'erpax.platform.toolsByArea',
+      role: 'measure',
       description: 'Slice VVVVVV: tools grouped by area (spec / chain / agents / standards / seo / blocks / streams / storage / voting / website / marketing / commerce / accounting / integrity / archival / cloning / federation / anchoring / etc.). Returns area → ordered tool names.',
       parameters: {},
       async handler() {
@@ -2461,6 +2640,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.readiness',
+      role: 'measure',
       description: 'Slice VVVVVV — single survey endpoint: counts of every primitive (agents, tools, chains, conservation laws, role profiles, locales, standards families, backends, site surfaces) + the readyToBuild capability matrix + the full tool catalog. The shadcn mcp-playground calls this on page load.',
       parameters: {},
       async handler() {

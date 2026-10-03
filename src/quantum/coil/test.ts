@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { coil, coilCrosses, coins, coverage, rotation } from './index'
+import { coil, coilCrosses, coins, coverage, rotation, rotateAbout, seatOf } from './index'
 
 const choose2 = (n: number): number => (n * (n - 1)) / 2
 
@@ -86,5 +86,51 @@ describe('coilCrosses — the two faces of every cross, over populations', () =>
     expect(coilVsAxis.lift).toBeNull()
     const inner = levels.find((l) => l.depth === 1)!
     expect(inner.forward.every((c) => c.lift !== null)).toBe(true)
+  })
+})
+
+describe('rotateAbout — a lead as the axis, every law a seat, both faces', () => {
+  const sets = new Map<string, ReadonlySet<string>>([
+    ['copy', new Set(['src/a/index.ts', 'src/a/x.ts', 'src/b/index.ts'])],
+    ['cycle', new Set(['src/a/index.ts', 'src/c/index.ts'])],
+    ['mirror', new Set(['src/d/test.ts'])],
+    ['unreached', new Set(['src/e/index.ts'])],
+  ])
+  const rosetta = ['copy', 'cycle', 'mirror', 'unreached']
+
+  it('an atom two laws flag is corroborated, and each seat carries its own two faces', () => {
+    const r = rotateAbout('a', sets, rosetta)
+    expect(r.files).toBe(2) // src/a/index.ts and src/a/x.ts — the union of what any law flags under the axis
+    expect(r.seats).toEqual(['copy', 'cycle'])
+    expect(r.seat).toBe('corroborated')
+    const copy = r.perspectives.find((p) => p.law === 'copy')!
+    expect(copy).toEqual({ law: 'copy', seen: 2, forward: 1, backward: 2 / 3 })
+    const cycle = r.perspectives.find((p) => p.law === 'cycle')!
+    expect(cycle.forward).toBe(0.5) // one of the axis's two files
+    expect(cycle.backward).toBe(0.5) // one of cycle's two files
+    expect(r.perspectives.map((p) => p.law)).toEqual(rosetta) // rosetta order, never reordered
+  })
+
+  it('one seat is single; an atom nothing flags is unseen — a count, not matter', () => {
+    expect(rotateAbout('e', sets, rosetta).seat).toBe('single')
+    const none = rotateAbout('zzz', sets, rosetta)
+    expect(none.files).toBe(0)
+    expect(none.seat).toBe('unseen')
+    expect(none.perspectives.every((p) => p.seen === 0 && p.forward === 0)).toBe(true)
+  })
+
+  it('a bare file atom (src/<axis>.ts) is an axis too, and a prefix that merely shares letters is not', () => {
+    const s = new Map<string, ReadonlySet<string>>([['copy', new Set(['src/ab.ts', 'src/a.ts'])]])
+    expect(rotateAbout('a', s, ['copy']).files).toBe(1)
+    expect(seatOf(0)).toBe('unseen')
+    expect(seatOf(1)).toBe('single')
+    expect(seatOf(7)).toBe('corroborated')
+  })
+
+  it('the Lean twin decides the seat the same way, without axioms', () => {
+    const lean = readFileSync(join(process.cwd(), 'src/verify/lean/Coil.lean'), 'utf8')
+    expect(lean).toContain('def seatOf (n : Nat) : Seat := if n = 0 then .unseen else if n = 1 then .single else .corroborated')
+    for (const t of ['unseen_iff_no_seat', 'one_seat_is_single', 'two_seats_corroborate']) expect(lean).toContain(`theorem ${t}`)
+    expect(lean).not.toMatch(/\bsorry\b/)
   })
 })

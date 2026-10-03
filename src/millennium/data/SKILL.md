@@ -2,18 +2,18 @@
 name: data
 description: "Use when a Clay statement must be tested on public data rather than argued — every Millennium problem crossed with the perspectives the corpus reads it from (lens atoms, referrers and their standards) and, where a public dataset exists (LMFDB elliptic curves, Odlyzko's zeta zeros, OEIS primes), checked as a bounded witness; where none exists, refused with the reason."
 atomPath: "millennium/data"
-coordinate: "millennium/data · 8/crest · 0cc8169e"
-contentUuid: "67438576-9013-5df0-9b60-982b9a2a90e7"
-diamondUuid: "32841952-8c4d-8d12-9f7f-75a2a064fd91"
-uuid: "0cc8169e-370d-88bc-8fa7-eb411e42237a"
-horo: 8
+coordinate: "millennium/data · 5/round · 6024ae7e"
+contentUuid: "91cf2ac2-fb53-536d-9c44-a2a5c1525a74"
+diamondUuid: "19476ee3-d7fb-818f-946f-0d2544df55d7"
+uuid: "6024ae7e-4c08-8a1d-afee-97e30e9d7af8"
+horo: 5
 typography:
   partition: millennium
   bondDegree: 61
 standards: []
 bindings: []
 signatures:
-  computationUuid: "427c93ba-4c6f-8fc1-bcb6-2bbfe75a0918"
+  computationUuid: "63549fd9-d718-87e8-8700-5d765e402f82"
   stages:
     - stage: path
       stageUuid: "c399f25d-b6ec-8901-8eed-0ba5710b5260"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "125c1922-ae90-81dd-8abf-afcf958bf5a0"
     - stage: horo
-      stageUuid: "98d970bc-b4e8-876d-8ae7-a1434d900cac"
+      stageUuid: "3dc48a93-ee29-87a8-abf9-13841ee5614d"
     - stage: seal
       stageUuid: "27b75a22-50c2-81b2-b220-8659ff113ff7"
     - stage: uuid
-      stageUuid: "67fd7b22-ab1e-8da8-a586-72bd18700dcb"
+      stageUuid: "ff97c4d2-d7ea-84ab-8fe4-f7e25712cbfa"
 version: 2
 ---
 # millennium/data — the Clay statements, crossed from every perspective and tested on public data

@@ -57,6 +57,7 @@ export function buildErrorTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.error.compute',
+      role: 'measure',
       description: tCompute.desc(I18N.compute!),
       parameters: {
         code: z.string().describe('Stable error code identifying the kind of failure (e.g. TIMEOUT, AUTH_DENIED, DATA_LOSS).'),
@@ -83,6 +84,7 @@ export function buildErrorTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.error.wrap',
+      role: 'measure',
       description: tWrap.desc(I18N.wrap!),
       parameters: {
         message: z.string().describe('The raw error message or thrown value (stringified).'),
