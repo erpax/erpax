@@ -78,4 +78,4 @@ the decision no theorem computes, never the cut.**
 - **OpenAI chat-completions wire shape** — the lingua franca the open doors speak.
 - **EU AI Act 2024** — transparency: the external model is named per answer (`door`).
 
-Composes: [[ai]]/models · [[agents]]/mcp/tool/frontier · [[scalpel]] · [[family]] · [[law]].
+Composes: [[ai]]/models · [[mcp]]/tool/frontier · [[scalpel]] · [[family]] · [[law]].
