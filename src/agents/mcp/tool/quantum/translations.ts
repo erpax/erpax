@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an agent needs the exact-amplitude register over MCP — erpax.quantum.run · erpax.quantum.bell · erpax.quantum.shots expose quantum/register (integer amplitudes, halvings, determinant entanglement witness, enumerated shots) as pure tools; bigints cross the wire as decimal strings.",
-    "uuid": "c8ebb980-8a0f-8719-a407-3df3d7f58f27",
+    "uuid": "da9b271e-4c1a-8e01-bd1f-6eea27f1588d",
     "words": [
       "use",
       "when",

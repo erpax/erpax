@@ -2,11 +2,11 @@
 name: tools
 description: "Use when an agent must reach an erpax.<area>.<leg> tool THROUGH the gateway rather than by importing its factory — the corpus tool families handed to @payloadcms/plugin-mcp's mcp.tools door, wire-named (dots to underscores, Anthropic's tool grammar), gated by mode (full carries them, the lean Worker seed opts in with ERPAX_MCP_TOOLS=1), collisions refused. The live /api/mcp served 844 CRUD tools and zero families until this; the liveness test had asked the factory."
 atomPath: "plugins/mcp/tools"
-coordinate: "plugins/mcp/tools · 5/round · de877cd6"
-contentUuid: "824eb5b9-ecd5-5e6f-b138-b8b995ebe0b8"
-diamondUuid: "0b0b3adb-9763-85f3-a940-dd67598226ae"
-uuid: "de877cd6-0ee3-8f2f-be87-0043a007e862"
-horo: 5
+coordinate: "plugins/mcp/tools · 7/descent · 1a1e34bb"
+contentUuid: "6efab95a-64fa-57df-9d9a-24046c86aa80"
+diamondUuid: "c9e02abb-6e6f-84a2-bc8e-f829c95fe7ac"
+uuid: "1a1e34bb-8138-8308-bc9a-56fb8a521648"
+horo: 7
 typography:
   partition: plugins
   bondDegree: 15
@@ -14,7 +14,7 @@ standards:
   - "MCP 0.6 — tools/list and tools/call are the surface a client sees"
 bindings: []
 signatures:
-  computationUuid: "9c771110-a42c-802a-abae-1196d26d68d6"
+  computationUuid: "3a22e723-88c3-8ad4-8311-ce14777b2f49"
   stages:
     - stage: path
       stageUuid: "d0acad02-8ec6-8a02-a12d-1acb1aa2805e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "745c2538-16bf-8cce-8adb-dd300e7de5fa"
     - stage: horo
-      stageUuid: "ebf34f57-582a-8bc7-b1df-c4a8223c2a15"
+      stageUuid: "436f053a-470d-8831-80e8-a98568d6baaa"
     - stage: seal
       stageUuid: "eb79080b-6872-85ba-a981-335f411d4e8f"
     - stage: uuid
-      stageUuid: "03dae88a-d172-8be7-8084-1629de2e004a"
+      stageUuid: "905955e6-6ca4-8cdb-8510-d120fc2400e0"
 version: 2
 ---
 # plugins/mcp/tools — the families handed to the gateway, not built beside it

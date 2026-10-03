@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tools",
-    "uuid": "de877cd6-0ee3-8f2f-be87-0043a007e862",
+    "uuid": "1a1e34bb-8138-8308-bc9a-56fb8a521648",
     "words": [
       "tools"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an agent must reach an erpax.<area>.<leg> tool THROUGH the gateway rather than by importing its factory — the corpus tool families handed to @payloadcms/plugin-mcp's mcp.tools door, wire-named (dots to underscores, Anthropic's tool grammar), gated by mode (full carries them, the lean Worker seed opts in with ERPAX_MCP_TOOLS=1), collisions refused. The live /api/mcp served 844 CRUD tools and zero families until this; the liveness test had asked the factory.",
-    "uuid": "9660c4f2-623c-8248-b275-8a9b3877f439",
+    "uuid": "efa695bc-8b55-898c-9920-b7a432027e71",
     "words": [
       "use",
       "when",

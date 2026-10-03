@@ -3666,7 +3666,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's agent gateway — it IS the official @payloadcms/plugin-mcp (collapse sink #1, never hand-roll an MCP server): every enabled collection becomes find/create/update/delete tools at /api/mcp, custom tools (GW fusion, trust) are added via the plugin's mcp config, Bearer API-key auth inherits the key owner's access + multi-tenant scope. erpax makes it TRUST-NATIVE — every tool call passes sandbox (capability + credential-broker + allowlist) and emits a receipt (uuid-chained audit), the dual of an external trust wrapper done from the inside.",
-        "uuid": "004eb061-b00d-86df-bdeb-18e8ae7beeb3",
+        "uuid": "c88e1ce5-0f6c-83c7-b1c9-7ce0746d23ad",
         "words": [
           "use",
           "when",
@@ -3906,7 +3906,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when assembling the MCP tool surface from per-area builders — each area file is self-contained (own I18N, zod schemas, handlers) and exports one buildXxxTools factory whose tools all carry the erpax.<area>.* name prefix.",
-        "uuid": "24f281ab-151b-8218-99e4-9b5417be099c",
+        "uuid": "7d6151bc-5d36-80fc-8685-ca9aca2c0ee0",
         "words": [
           "use",
           "when",
@@ -4094,7 +4094,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "frontier",
-        "uuid": "5c582c25-8c90-83b8-a9e7-66e7daa1431d",
+        "uuid": "bfa13844-e768-8810-b99b-cf34a1812b19",
         "words": [
           "frontier"
         ],
@@ -4105,7 +4105,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about frontier — self/sufficient's could always **order** a frontier and never **generate** one: every intent had to be typed by a person into think's store.",
-        "uuid": "89a00f38-71fc-8a9c-b3e3-3711537921e9",
+        "uuid": "5dbd4e1c-d4d1-8b66-9193-eeeb8fcca9d9",
         "words": [
           "use",
           "when",
@@ -4485,7 +4485,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an agent needs the exact-amplitude register over MCP — erpax.quantum.run · erpax.quantum.bell · erpax.quantum.shots expose quantum/register (integer amplitudes, halvings, determinant entanglement witness, enumerated shots) as pure tools; bigints cross the wire as decimal strings.",
-        "uuid": "c8ebb980-8a0f-8719-a407-3df3d7f58f27",
+        "uuid": "da9b271e-4c1a-8e01-bd1f-6eea27f1588d",
         "words": [
           "use",
           "when",
@@ -4653,7 +4653,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about witness — Two tools, and the second exists because the first was hand-picked.",
-        "uuid": "96811039-2aa9-8a79-b011-44ccb2f8a132",
+        "uuid": "ecee615d-48aa-885a-b903-ebb62441efb0",
         "words": [
           "use",
           "when",
@@ -11010,7 +11010,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a value's history of CAUSE must be recoverable, not just its history of CHANGE — causal provenance (W3C PROV), recording WHY each audit leaf exists (which upstream leaves caused it) so the full causal ancestry of any number can be walked back.",
-        "uuid": "aecde1cc-d1b5-8ef6-b786-662caeb9690d",
+        "uuid": "561461e7-3399-880b-a2e1-25ea2181f324",
         "words": [
           "use",
           "when",
@@ -16047,7 +16047,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the biggest gap in how an agent works — it turns to local knowledge (the akashic record, the present tools, the sealed thought) only AFTER a catharsis from unresolved work: a correction, a crisis, a pointed question. Everything before the turn is re-derivation of the derivable. The ideal is front-loaded: read the local record FIRST, derive only the seed. Honest boundary: the seed is not the gap — only re-deriving what was already present is.",
-        "uuid": "2092371b-d0b3-8d7f-a22b-951b3166f519",
+        "uuid": "220220d4-e16b-895a-93fa-1940c3c3f374",
         "words": [
           "use",
           "when",
@@ -16889,7 +16889,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about genome — Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact.",
-        "uuid": "58bcaec3-7f05-8dfd-adf1-41e646f62637",
+        "uuid": "f10e08a1-b64c-8238-8ba4-655eadbbee52",
         "words": [
           "use",
           "when",
@@ -50575,7 +50575,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade.",
-        "uuid": "175f0f09-b720-8170-a47f-827c2c76fed6",
+        "uuid": "4233cb51-d1be-8705-b783-0d1f4d64d127",
         "words": [
           "use",
           "when",
@@ -51387,7 +51387,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling shop-floor equipment mined from the upstream source of truth (etrima, 20 years of garment manufacturing) — the machine node of the production-traceability spine. Every machine carries a three-rate spread (pay ≤ cost ≤ price per hour) that is double-entry economics on the floor: machineRate decomposes a machine-hour into revenue = cost + margin and cost = pay + overhead. A machine runs a work/phase for a lot variant during a shift; fields are the real etrima columns, never invented.",
-        "uuid": "d7d1da3a-c7a3-8450-a423-159ce2a0cee3",
+        "uuid": "725da867-6325-8d3f-bc54-6d21f85996fd",
         "words": [
           "use",
           "when",
@@ -51858,7 +51858,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when configuring the erpax agent gateway — it IS the official @payloadcms/plugin-mcp; every collection becomes find/create/update/delete tools at /api/mcp, computed from the barrel never hand-listed; Bearer API-key auth inherits the key owner's access and tenant scope; custom tools added via the plugin mcp config.",
-        "uuid": "e69bf57b-b767-8245-a905-bf18394f6686",
+        "uuid": "1eca643e-d210-8293-8df9-add04d395a6d",
         "words": [
           "use",
           "when",
@@ -51938,7 +51938,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing localized or tenant-overridden descriptions for erpax.* MCP tools — per-locale description overlays, tool area grouping, enabled/disabled toggles, documentation URLs, and orphan detection. The localized MCP tool metadata register.",
-        "uuid": "ae871dd0-770c-8af8-ad27-76d1e06b07ed",
+        "uuid": "f0644284-c93e-8b90-a597-7ca8658e8926",
         "words": [
           "use",
           "when",
@@ -56253,7 +56253,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the Clay Millennium Problems are offered as a testing ground — the honest register that NAMES the seven, marks six open and one solved (Poincaré, by Perelman), and refuses to solve any. Every entry's `corpusSolves` is the literal false, so the code cannot claim a solution; the corpus tools are lenses to learn through, and the quantum waves CLASSIFY a claimed solution, they do not produce one. HARMONY ≠ TRUTH.",
-        "uuid": "02ab6b14-2327-8afb-81a0-d15f33ce8cc8",
+        "uuid": "cc2125ca-38ae-8a2b-9e8a-517fbb49c208",
         "words": [
           "use",
           "when",
@@ -56694,7 +56694,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when constructing a Clay attempt rather than asserting one — the tools between theorem's reduce verdict and duel's door: proposeReduction measures a candidate against the graph WITHOUT editing it, reductionFrontier names the exact links still ungrounded (the fix list reduce only implied), problemFrontiers gives all seven as work items, jointReduction builds the 'solved at once' claim and reports that its frontier is all seven because no reduction between any two is known, and roundFromReduction bridges a FULLY GROUNDED reduction into a duel round — nothing here can set corpusSolves, which stays the literal false.",
-        "uuid": "0a5366bc-2a5d-8128-b552-c996d144df31",
+        "uuid": "68d78539-c98f-8372-bf74-d329d2fba812",
         "words": [
           "use",
           "when",
@@ -61344,7 +61344,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "upstream",
-        "uuid": "e73343c0-01ff-8990-a258-870980e85645",
+        "uuid": "16fd0446-1361-819a-9001-60de38cab6e9",
         "words": [
           "upstream"
         ],
@@ -61355,7 +61355,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when asking what Payload publishes that erpax does not hold — the official repository's templates, examples and packages listed from GitHub's contents API and crossed against package.json and the tree, with the evidence for each template and example declared in the open. Reports held · gap · unaskable and coverage per kind; the involute leg of the outward family (erpax.outward.upstream).",
-        "uuid": "2ad86b1d-7a9f-8013-af37-476c09c26273",
+        "uuid": "6fd9f8f5-a776-872f-a642-be2bba062c42",
         "words": [
           "use",
           "when",
@@ -63083,7 +63083,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "tools",
-        "uuid": "de877cd6-0ee3-8f2f-be87-0043a007e862",
+        "uuid": "1a1e34bb-8138-8308-bc9a-56fb8a521648",
         "words": [
           "tools"
         ],
@@ -63094,7 +63094,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an agent must reach an erpax.<area>.<leg> tool THROUGH the gateway rather than by importing its factory — the corpus tool families handed to @payloadcms/plugin-mcp's mcp.tools door, wire-named (dots to underscores, Anthropic's tool grammar), gated by mode (full carries them, the lean Worker seed opts in with ERPAX_MCP_TOOLS=1), collisions refused. The live /api/mcp served 844 CRUD tools and zero families until this; the liveness test had asked the factory.",
-        "uuid": "9660c4f2-623c-8248-b275-8a9b3877f439",
+        "uuid": "efa695bc-8b55-898c-9920-b7a432027e71",
         "words": [
           "use",
           "when",
@@ -66645,7 +66645,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when many API requests must be served without many API calls — content-addressed single-flight collapses identical concurrent work onto ONE upstream call and bounds how much runs at once. Emits MEASURED answers/tokens for amortize, which is what makes the FTL claim refutable. Run: tsx src/quantum/coalesce/index.ts",
-        "uuid": "2072c7f2-c39e-8b8c-aff5-11cf3c7749e4",
+        "uuid": "20a1c83e-00fc-8705-b608-f835e2d4d6c0",
         "words": [
           "use",
           "when",
@@ -69027,7 +69027,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when asked to fill the gaps in quantum mechanics — the honest toolbox that NAMES the open gaps (measurement problem, Born rule, preferred basis, quantum gravity, interpretation) and refuses to fill them. Every gap's `fills` is the literal false, so the code cannot claim a solution; the corpus tools are shown as lenses to learn through, never fillings. HARMONY ≠ TRUTH.",
-        "uuid": "9e7146ec-26c7-8d5a-9f30-5133cd8ba26b",
+        "uuid": "982803e3-6083-8921-9fdc-409d11f76109",
         "words": [
           "use",
           "when",
@@ -69958,7 +69958,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the MCP gateway in the quantum frame — one door exposing the whole trinity (payload data tools plus vitepress skill tools), the surface generated all-at-once from the corpus, every call by the actor-merge agent access-gated, quantum-compressed, and receipt-logged from the inside.",
-        "uuid": "fffb9284-989c-8d96-a8cf-51710716344d",
+        "uuid": "f0e99e5a-3891-88c9-ac6d-e147f7f9d692",
         "words": [
           "use",
           "when",
@@ -87013,7 +87013,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a frontier lead must be tagged before it is acted on — every lead is a claim one instrument makes, and its involution (the same question asked from the dual seat) decides theorem · lie · manipulation; the codomain is total, proved in Involute.lean, so no lead remains untagged. Fused into erpax.frontier.next and erpax.frontier.involute.",
-        "uuid": "6a17aae1-5fd7-8ac7-a4bf-b109f342a888",
+        "uuid": "46c6fa1a-476b-8fc7-895d-e49312409a66",
         "words": [
           "use",
           "when",
@@ -128624,7 +128624,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how erpax grows — it BREATHES: inhale ideas from everywhere (peers like ZeroPoint, frameworks like Payload, the standards, the upstream Rails, user content), exhale DRY clean code (gate-green, content-addressed, collapsed to the dense core). Inhale is merge/derive/generate; exhale is collapse + the gate + minimal cost. The rhythm IS the society loop: never inhale without exhaling clean, never exhale without inhaling.",
-        "uuid": "18f59194-7fb3-8a81-bc29-821b3477fa87",
+        "uuid": "8a6a1598-77de-8cec-85fe-84085f406f64",
         "words": [
           "use",
           "when",
@@ -200463,7 +200463,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when raising transplants before the field — the greenhouse/nursery schedule of sowing into trays of cells (plugs) sized to deliver seedlings on their field date, plus hardening-off before transplant. The controlled-start stage upstream of transplanting; flats/cells/plugs are its containers, sized back from the transplant date.",
-        "uuid": "f66dd2d4-effd-8414-bae2-58097880c0a0",
+        "uuid": "ddbb7d27-a7d3-854b-a4b6-32c5ac4c8dee",
         "words": [
           "use",
           "when",

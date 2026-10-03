@@ -3,7 +3,7 @@ name: family
 description: "Use when asking what the MCP surface still lacks without deciding it by hand — every erpax.<area>.* family read as a trinity of declared legs (measure · involute · act); a family with all three closes in one turn, one missing a leg names its own next tool. erpax.family.trinities reports it from the live tool list."
 atomPath: "agents/mcp/family"
 coordinate: "agents/mcp/family · 5/round · 494acdac"
-contentUuid: "48254498-a436-5096-b8fd-9d4081d521bf"
+contentUuid: "ddc77068-3395-50a6-bc23-183687c55027"
 diamondUuid: "bf355fa0-054f-810b-8497-e20012c63685"
 uuid: "494acdac-db8f-8091-9f9c-aec09a7f42c2"
 horo: 5
@@ -79,7 +79,11 @@ got its own two legs:
 **Honest boundary.** The shape sees one direction only: a write call in the body. A tool that writes
 through a helper whose body it cannot see reads as a measure, and a measure placed by shape still has
 no involute leg until a dual is written — `missing: ['involute']` is the honest next tool for most
-families after the declaration lands.
+families after the declaration lands. And the act paid for its own anchor rule on the first run: it
+wrote `role:` after a tool spelled on **one line** inside a `*.test.ts` fixture, landing after the
+closing brace — a parse error the Lint lane caught. A fixture is not a tool (test files are skipped
+in both spellings), and an anchor must be a `name:`-only line (`NAME_LINE`) or the tool is reported
+`unanchored` and never cut.
 
 ## Why this exists
 
