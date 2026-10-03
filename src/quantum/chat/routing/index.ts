@@ -564,4 +564,46 @@ export async function chatEndlessResearchWaves(
   return { session: next, report }
 }
 
+// ── erpax.quantum.* from the chat ────────────────────────────────────────────
+// The exact-amplitude register ([[quantum]]/register) is already an MCP area
+// (erpax.quantum.run · bell · shots). The chat is the working surface, so the same
+// three doors open here — in-process, through the area's own handlers, never a
+// second implementation — and the reply folds into the session like any other turn.
+
+export type QuantumDoor = 'run' | 'bell' | 'shots'
+
+export interface QuantumTurn {
+  readonly session: ChatSession
+  readonly tool: string
+  readonly result: Record<string, unknown>
+  /** The message folded into the session — the integers a reader checks, as one line. */
+  readonly line: string
+}
+
+/**
+ * Ask the register from the chat. Default is the Bell state; `run` and `shots` take the
+ * area's own arguments (`qubits`, `gates`, `rounds`). Amplitudes arrive as decimal strings —
+ * the wire form the MCP area chose — and the session line carries the integers a reader
+ * checks: amplitudes, halvings, `normalised`, support, or the enumerated outcome list.
+ */
+export async function chatQuantum(
+  session: ChatSession,
+  ask: { readonly door?: QuantumDoor; readonly args?: Record<string, unknown> } = {},
+): Promise<QuantumTurn> {
+  const door = ask.door ?? 'bell'
+  const name = `erpax.quantum.${door}`
+  const { buildQuantumTools } = await import('@/agents/mcp/tool/quantum')
+  const tool = buildQuantumTools().find((t) => t.name === name)
+  if (!tool) throw new Error(`chatQuantum: no door ${name}`)
+  const out = (await tool.handler(ask.args ?? {}, {} as never)) as { content: { text: string }[] }
+  const result = JSON.parse(out.content[0]!.text) as Record<string, unknown>
+  const list = (v: unknown): string => (Array.isArray(v) ? v.join(',') : String(v))
+  const line =
+    door === 'shots'
+      ? `shots=${result.shots}|enumerated=${result.enumerated}|sampled=${result.sampled}|support=${list(result.support)}|outcomes=${list(result.outcomes)}`
+      : `amplitudes=[${list(result.amplitudes)}]|halvings=${result.halvings}|normalised=${result.normalised}|support=${list(result.support)}`
+  const message = `quantum.${door}[${line}]`
+  return { session: sessionAppend(session, message), tool: name, result, line: message }
+}
+
 /** @index-cross.foldback child=quantum/chat/routing parent=quantum/chat — this cross folds back into its parent. */
