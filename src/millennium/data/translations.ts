@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a Clay statement must be tested on public data rather than argued — every Millennium problem crossed with the perspectives the corpus reads it from (lens atoms, referrers and their standards) and, where a public dataset exists (LMFDB elliptic curves, Odlyzko's zeta zeros, OEIS primes), checked as a bounded witness; where none exists, refused with the reason.",
-    "uuid": "5343a11f-c0ad-8dc8-aabb-500bcc6d1fd9",
+    "uuid": "802a0859-0a97-8aac-8750-689b6cc8757d",
     "words": [
       "use",
       "when",

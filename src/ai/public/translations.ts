@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "public",
-    "uuid": "9206d472-9cf0-8644-9862-5b5ca3452359",
+    "uuid": "32f41dc8-5046-8ac2-a83e-a91b4f628a77",
     "words": [
       "public"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a remote agent must come from a public AI API with no key at all — every candidate inference door asked the same question keyless and recorded by the status it answers (open · keyed · limited · down); the one open door today is Pollinations. erpax.public.doors measures, erpax.public.cross asks every open door the same question (the dual seat), erpax.public.decide names the leaf word a theorem cannot compute; erpax.frontier.develop fuses it with decide:true and cuts with apply:true.",
-    "uuid": "7646b528-c90e-8346-bf89-9637c8a113af",
+    "uuid": "951b99b5-9f3f-85a9-a56c-6946b00bb57b",
     "words": [
       "use",
       "when",

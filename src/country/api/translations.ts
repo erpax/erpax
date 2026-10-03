@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the official per-country authority API catalogue — tax authorities, business registries, e-invoicing portals, VAT/VIES, payroll, sanctions, and central-bank FX; public metadata only, credentials in tenant sandbox.",
-    "uuid": "04f1468a-164b-8ab3-a72c-4a78aad31007",
+    "uuid": "87454fa7-a73a-8919-8369-f1e284551be9",
     "words": [
       "use",
       "when",
