@@ -54508,7 +54508,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when operational memory must be understood as the architecture lattice itself — NOT a side store. The diamond graph, uuid/matrix bindings, typography partitions, folder SKILL statements, architecture-invariants, and sealed git tree ARE what the system remembers; session blobs sanitize to architecture content and verify against the live-tree facet.",
-        "uuid": "96ab721c-f985-8862-9d14-cd5574c9ae02",
+        "uuid": "1390781f-f4d0-8ab2-b200-bdf270985ae8",
         "words": [
           "use",
           "when",
@@ -79540,6 +79540,89 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when checking that the corpus's claims can be contradicted — an @invariant is a proposition asserted in prose, and one with no test beside it is unfalsifiable: it reads as true forever and nothing will ever say no. A lie is not found by checking truth (fiction and truth read identically); it is found by demanding refutability, because an unrefutable claim is the only place a lie is safe. Run: tsx src/rules/refutable/index.ts"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "sanitize",
+    "path": "rules/sanitize",
+    "translations": [
+      {
+        "key": "name",
+        "source": "sanitize",
+        "uuid": "fc9d2a17-a3da-8cd6-84ee-335527f4d427",
+        "words": [
+          "sanitize"
+        ],
+        "values": {
+          "en": "sanitize"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when a sanitisation defect must be measured by the corpus itself rather than found by an external scanner — one-pass tag strips, JSON.stringify into generated code, hostname substring checks, hand-rolled quote escapes, and dotted-path writers with no __proto__ refusal, parsed from the grammar; the law the 25 CodeQL JavaScript alerts showed was missing.",
+        "uuid": "862b455e-68ca-8f6d-87c2-2a8e917a52bb",
+        "words": [
+          "use",
+          "when",
+          "a",
+          "sanitisation",
+          "defect",
+          "must",
+          "be",
+          "measured",
+          "by",
+          "the",
+          "corpus",
+          "itself",
+          "rather",
+          "than",
+          "found",
+          "by",
+          "an",
+          "external",
+          "scanner",
+          "one",
+          "pass",
+          "tag",
+          "strips",
+          "json",
+          "stringify",
+          "into",
+          "generated",
+          "code",
+          "hostname",
+          "substring",
+          "checks",
+          "hand",
+          "rolled",
+          "quote",
+          "escapes",
+          "and",
+          "dotted",
+          "path",
+          "writers",
+          "with",
+          "no",
+          "proto",
+          "refusal",
+          "parsed",
+          "from",
+          "the",
+          "grammar",
+          "the",
+          "law",
+          "the",
+          "codeql",
+          "javascript",
+          "alerts",
+          "showed",
+          "was",
+          "missing"
+        ],
+        "values": {
+          "en": "Use when a sanitisation defect must be measured by the corpus itself rather than found by an external scanner — one-pass tag strips, JSON.stringify into generated code, hostname substring checks, hand-rolled quote escapes, and dotted-path writers with no __proto__ refusal, parsed from the grammar; the law the 25 CodeQL JavaScript alerts showed was missing."
         }
       }
     ]
@@ -212773,4 +212856,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3637
+export const TRANSLATIONS_COUNT = 3638

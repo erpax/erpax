@@ -2,8 +2,37 @@
 name: sanitize
 description: "Use when a sanitisation defect must be measured by the corpus itself rather than found by an external scanner — one-pass tag strips, JSON.stringify into generated code, hostname substring checks, hand-rolled quote escapes, and dotted-path writers with no __proto__ refusal, parsed from the grammar; the law the 25 CodeQL JavaScript alerts showed was missing."
 atomPath: "rules/sanitize"
+coordinate: "rules/sanitize · 5/round · fc9d2a17"
+contentUuid: "fb31566e-7a42-5baf-a861-00d3f8485695"
+diamondUuid: "f045bb08-9822-8765-9b53-7c3357c120b7"
+uuid: "fc9d2a17-a3da-8cd6-84ee-335527f4d427"
+horo: 5
+typography:
+  partition: rules
+  bondDegree: 15
+standards:
+  - "CWE-116 improper encoding or escaping of output"
+  - "CWE-1321 prototype pollution"
+bindings: []
+signatures:
+  computationUuid: "ed936881-3aa3-88fd-8689-0324c2edd955"
+  stages:
+    - stage: path
+      stageUuid: "6fa85dfa-6864-8091-bec4-1d140c61bb32"
+    - stage: trinity
+      stageUuid: "01adc434-0dc0-8d68-9292-61d2801852b3"
+    - stage: boundary
+      stageUuid: "6febfea7-32d9-8ced-992a-4f5cb2c611c6"
+    - stage: links
+      stageUuid: "a348b16c-d83e-86ed-b3ed-ae0e8e41b225"
+    - stage: horo
+      stageUuid: "9e22c751-cabe-8b3a-9828-0c4bff02df22"
+    - stage: seal
+      stageUuid: "175b0e9e-92d0-8c99-bbd6-5c7fb37f14ad"
+    - stage: uuid
+      stageUuid: "152baf4b-50cb-8e12-a896-54069ef9a7c0"
+version: 2
 ---
-
 # rules/sanitize — the check an external scanner made, read natively from the grammar
 
 CodeQL found **25** JavaScript alerts in this corpus and none of the 33 laws in the registry could
