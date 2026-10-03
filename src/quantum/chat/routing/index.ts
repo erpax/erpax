@@ -564,45 +564,71 @@ export async function chatEndlessResearchWaves(
   return { session: next, report }
 }
 
-// ── erpax.quantum.* from the chat ────────────────────────────────────────────
-// The exact-amplitude register ([[quantum]]/register) is already an MCP area
-// (erpax.quantum.run · bell · shots). The chat is the working surface, so the same
-// three doors open here — in-process, through the area's own handlers, never a
-// second implementation — and the reply folds into the session like any other turn.
+// ── MCP areas from the chat ──────────────────────────────────────────────────
+// The chat is the working surface, so an MCP area's doors open here too — in-process,
+// through the area's own handlers, never a second implementation — and the reply folds
+// into the session like any other turn. Two areas are wired: the exact-amplitude
+// register (erpax.quantum.*) and the gate registry formulated as crosses (erpax.gate.*).
 
-export type QuantumDoor = 'run' | 'bell' | 'shots'
+export type ChatArea = 'quantum' | 'gate'
 
-export interface QuantumTurn {
+export interface DoorTurn {
   readonly session: ChatSession
   readonly tool: string
   readonly result: Record<string, unknown>
-  /** The message folded into the session — the integers a reader checks, as one line. */
+  /** The message folded into the session — the figures a reader checks, as one line. */
   readonly line: string
 }
 
+const list = (v: unknown): string => (Array.isArray(v) ? v.join(',') : String(v))
+
+/** Each area: how to load its tools, its default door, and the one line the session keeps. */
+const AREAS: Record<
+  ChatArea,
+  {
+    readonly load: () => Promise<ReadonlyArray<{ name: string; handler: (a: Record<string, unknown>, extra: never) => unknown }>>
+    readonly defaultDoor: string
+    readonly line: (door: string, r: Record<string, unknown>) => string
+  }
+> = {
+  quantum: {
+    load: () => import('@/agents/mcp/tool/quantum').then((m) => m.buildQuantumTools()),
+    defaultDoor: 'bell',
+    line: (door, r) =>
+      door === 'shots'
+        ? `shots=${r.shots}|enumerated=${r.enumerated}|sampled=${r.sampled}|support=${list(r.support)}|outcomes=${list(r.outcomes)}`
+        : `amplitudes=[${list(r.amplitudes)}]|halvings=${r.halvings}|normalised=${r.normalised}|support=${list(r.support)}`,
+  },
+  gate: {
+    load: () => import('@/agents/mcp/tool/gate').then((m) => m.buildGateTools()),
+    defaultDoor: 'verdicts',
+    line: (door, r) =>
+      door === 'verdicts'
+        ? `sealed=${r.sealed}|red=${r.red}/${r.total}`
+        : door === 'cross'
+          ? `${r.a}×${r.b}|shared=${r.shared}|lift=${r.lift}|theorem=${r.theorem}`
+          : `pairs=${r.pairs}|theorems=${list(r.theorems)}`,
+  },
+}
+
 /**
- * Ask the register from the chat. Default is the Bell state; `run` and `shots` take the
- * area's own arguments (`qubits`, `gates`, `rounds`). Amplitudes arrive as decimal strings —
- * the wire form the MCP area chose — and the session line carries the integers a reader
- * checks: amplitudes, halvings, `normalised`, support, or the enumerated outcome list.
+ * Ask an MCP area from the chat: `door` is the tool's last segment (`erpax.<area>.<door>`),
+ * `args` are the area's own. The default door of `quantum` is the Bell state; of `gate`, every
+ * guardian's verdict. A refused call folds nothing into the session.
  */
-export async function chatQuantum(
+export async function chatDoor(
   session: ChatSession,
-  ask: { readonly door?: QuantumDoor; readonly args?: Record<string, unknown> } = {},
-): Promise<QuantumTurn> {
-  const door = ask.door ?? 'bell'
-  const name = `erpax.quantum.${door}`
-  const { buildQuantumTools } = await import('@/agents/mcp/tool/quantum')
-  const tool = buildQuantumTools().find((t) => t.name === name)
-  if (!tool) throw new Error(`chatQuantum: no door ${name}`)
+  ask: { readonly area?: ChatArea; readonly door?: string; readonly args?: Record<string, unknown> } = {},
+): Promise<DoorTurn> {
+  const area = ask.area ?? 'quantum'
+  const spec = AREAS[area]
+  const door = ask.door ?? spec.defaultDoor
+  const name = `erpax.${area}.${door}`
+  const tool = (await spec.load()).find((t) => t.name === name)
+  if (!tool) throw new Error(`chatDoor: no door ${name}`)
   const out = (await tool.handler(ask.args ?? {}, {} as never)) as { content: { text: string }[] }
   const result = JSON.parse(out.content[0]!.text) as Record<string, unknown>
-  const list = (v: unknown): string => (Array.isArray(v) ? v.join(',') : String(v))
-  const line =
-    door === 'shots'
-      ? `shots=${result.shots}|enumerated=${result.enumerated}|sampled=${result.sampled}|support=${list(result.support)}|outcomes=${list(result.outcomes)}`
-      : `amplitudes=[${list(result.amplitudes)}]|halvings=${result.halvings}|normalised=${result.normalised}|support=${list(result.support)}`
-  const message = `quantum.${door}[${line}]`
+  const message = `${area}.${door}[${spec.line(door, result)}]`
   return { session: sessionAppend(session, message), tool: name, result, line: message }
 }
 
