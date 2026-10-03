@@ -9,6 +9,13 @@ on:
   pull_request:
     branches: [main, master]
 
+# Every job here reads the tree and uploads an artifact; none writes to the repository, a PR, or a
+# package. The default GITHUB_TOKEN carries write scope anyway, and CodeQL
+# `actions/missing-workflow-permissions` flagged four jobs for holding a scope they never use. One
+# block at the top, read-only, covers them all; a job that ever needs more declares it on itself.
+permissions:
+  contents: read
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
