@@ -1,9 +1,11 @@
-import { existsSync, readdirSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
+import ts from 'typescript'
 import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
 import { computeDiamond, deploymentFaces } from '@/diamond'
 import { importsOf } from '@/rules/cycle'
 import { frozenCorpusInputs, schemaCollision } from '@/readme/compute'
+import { astOf, corpusFiles } from '@/syntax/cache'
 
 /**
  * rules/unreached — an atom of code that nothing reaches, from any entry the corpus has.
@@ -20,52 +22,102 @@ export interface UnreachedAtom {
 /** The tooling entries: the gate registry and the CLI. Reached from here is reached. */
 const TOOLING_ENTRIES = ['src/rules/index.ts', 'src/cli/index.ts', 'src/cli/gate.ts', 'src/cli/doctor.ts'] as const
 
-/** Every atom path reachable by imports from a set of entry files. */
-export function reachedFrom(entries: readonly string[], cwd: string = process.cwd()): ReadonlySet<string> {
-  const src = join(cwd, 'src')
-  const roots = entries.map((e) => join(cwd, e)).filter(existsSync)
-  const seen = new Set<string>(roots)
-  const queue = [...roots]
-  while (queue.length > 0) {
-    const file = queue.shift() as string
-    for (const next of importsOf(file, cwd)) {
-      if (seen.has(next)) continue
-      seen.add(next)
-      queue.push(next)
-    }
-  }
-  const atoms = new Set<string>()
-  for (const file of seen) {
-    const rel = relative(src, file)
-    if (rel.startsWith('..')) continue
-    const parts = rel.split('/')
-    for (let i = 1; i < parts.length; i++) atoms.add(parts.slice(0, i).join('/'))
-  }
-  return atoms
+/** A Payload component path: `@/admin/ui/cells/SealBadgeCell`, optionally `#export`. Lowercase atom segments, any-case leaf. */
+const PATH_STRING = /^@\/[a-z][a-zA-Z0-9/]*(#\w+)?$/
+
+/** The NAME door (the sixth): every Payload component path string, parsed never matched — SKILL § the sixth door. Memoised per tree state. */
+export function nameDoor(cwd: string = process.cwd()): ReadonlySet<string> {
+  return new Set(memoByFingerprintOnDisk('rules-unreached-name-door', cwd, () => [...nameDoorScan(cwd)].sort()))
 }
 
+function nameDoorScan(cwd: string): ReadonlySet<string> {
+  const out = new Set<string>()
+  const files: string[] = [...corpusFiles(cwd)]
+  const importMap = join(cwd, 'src/app/(payload)/admin/importMap.js')
+  if (existsSync(importMap)) files.push(importMap)
+  for (const f of files) {
+    let sf: ts.SourceFile
+    try {
+      sf = f.endsWith('.js')
+        ? ts.createSourceFile(f, readFileSync(f, 'utf8'), ts.ScriptTarget.Latest, true, ts.ScriptKind.JS)
+        : astOf(f)
+    } catch {
+      continue
+    }
+    const visit = (node: ts.Node): void => {
+      if ((ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) && PATH_STRING.test(node.text)) {
+        const p = node.parent
+        // import/export specifiers and dynamic import() are the walk's own edges, counted there
+        const specifier = (ts.isImportDeclaration(p) || ts.isExportDeclaration(p)) && p.moduleSpecifier === node
+        const dynamic = ts.isCallExpression(p) && p.expression.kind === ts.SyntaxKind.ImportKeyword
+        if (!specifier && !dynamic) out.add(node.text.slice(2).split('#')[0] as string)
+      }
+      ts.forEachChild(node, visit)
+    }
+    visit(sf)
+  }
+  return out
+}
+
+/** Does a path string reach this atom — the atom itself or anything under it? */
+export function namedBy(atomPath: string, names: ReadonlySet<string>): boolean {
+  for (const n of names) if (n === atomPath || n.startsWith(`${atomPath}/`)) return true
+  return false
+}
+
+export interface Referrer {
+  readonly atomPath: string
+  /** The file (repo-relative) or path string that reaches the atom. */
+  readonly by: string
+  readonly via: 'import' | 'name'
+  /** Reached by the forward walk itself. Live refutes the lead; dead carries it — SKILL § the involution. */
+  readonly live: boolean
+}
+
+const under = (rel: string, atom: string): boolean => rel === atom || rel.startsWith(`${atom}/`)
+const isProof = (rel: string): boolean => /(^|\/)(test|[^/]+\.(test|spec))\.tsx?$/.test(rel)
+
 /**
- * Atom paths reached by traversing at least ONE import edge from an entry.
- *
- * THE FAIL-OPEN THIS EXISTS FOR: `reachedFrom` puts its own roots in the result, and the roots
- * include every faced atom's barrel — so an atom is "reached" BY ITSELF. Measured 2026-09-20:
- * **3,046 atoms carry a deployment face**, and each one is its own door. `kyc`, minted that day
- * and imported by nothing, read as reached.
- *
- * A false negative in a gate is worse than a false positive, because it reports green over the
- * exact defect it exists for — the law this corpus learned from [[rules]]/cycle's Tarjan-free DFS,
- * restated here one gate over.
- *
- * So an atom must be reached from SOMEWHERE ELSE. Roots seed the walk and are not themselves
- * counted; only what an edge leads to is.
- *
- * **Honest boundary.** Two unreached atoms that import each other both appear reached — a mutual
- * loop satisfies "something else imports me" without either being reachable from an entry. That is
- * the [[rules]]/cycle case and is not resolved here. And an atom reached only dynamically is still
- * invisible, exactly as it is to the looser walk.
+ * The INVOLUTION of the census: who reaches each charged atom from outside the charged set, and
+ * whether that referrer is itself reached — SKILL § the involution. Tests and the atom's own files
+ * are not referrers; `excluded` defaults to the charged set so a mutual loop corroborates nothing.
  */
-export function reachedByImport(entries: readonly string[], cwd: string = process.cwd()): ReadonlySet<string> {
+export function referrersOf(
+  cwd: string,
+  atoms: readonly string[],
+  excluded: ReadonlySet<string> = new Set(atoms),
+  live: ReadonlySet<string> = reachedFiles(cwd),
+): Referrer[] {
   const src = join(cwd, 'src')
+  const out: Referrer[] = []
+  const seen = new Set<string>()
+  const push = (r: Referrer): void => {
+    const k = `${r.atomPath}\u0000${r.by}\u0000${r.via}`
+    if (!seen.has(k)) {
+      seen.add(k)
+      out.push(r)
+    }
+  }
+  for (const f of corpusFiles(cwd)) {
+    const rel = relative(src, f)
+    if (isProof(rel) || [...excluded].some((x) => under(rel, x))) continue
+    const imports = importsOf(f, cwd).map((i) => relative(src, i))
+    for (const a of atoms) {
+      if (imports.some((i) => under(i, a))) push({ atomPath: a, by: relative(cwd, f), via: 'import', live: live.has(f) })
+    }
+  }
+  const names = nameDoor(cwd)
+  for (const a of atoms) for (const n of names) if (under(n, a)) push({ atomPath: a, by: `@/${n}`, via: 'name', live: true })
+  return out.sort((x, y) => x.atomPath.localeCompare(y.atomPath) || x.by.localeCompare(y.by))
+}
+
+/** The forward walk at FILE level: every file an entry reaches (`seen`, roots included) and every file an edge leads to (`viaEdge`). */
+interface FileWalk {
+  readonly seen: ReadonlySet<string>
+  readonly viaEdge: ReadonlySet<string>
+}
+
+function walkImports(entries: readonly string[], cwd: string): FileWalk {
   const roots = entries.map((e) => join(cwd, e)).filter(existsSync)
   const seen = new Set<string>(roots)
   const viaEdge = new Set<string>()
@@ -79,14 +131,33 @@ export function reachedByImport(entries: readonly string[], cwd: string = proces
       queue.push(next)
     }
   }
+  return { seen, viaEdge }
+}
+
+/** The atom paths a set of files lies under — every prefix of each file's path. */
+function atomsUnder(files: ReadonlySet<string>, src: string): ReadonlySet<string> {
   const atoms = new Set<string>()
-  for (const file of viaEdge) {
+  for (const file of files) {
     const rel = relative(src, file)
     if (rel.startsWith('..')) continue
     const parts = rel.split('/')
     for (let i = 1; i < parts.length; i++) atoms.add(parts.slice(0, i).join('/'))
   }
   return atoms
+}
+
+/** Every atom path reachable by imports from a set of entry files. */
+export function reachedFrom(entries: readonly string[], cwd: string = process.cwd()): ReadonlySet<string> {
+  return atomsUnder(walkImports(entries, cwd).seen, join(cwd, 'src'))
+}
+
+/**
+ * Atom paths reached by at least ONE import edge from an entry — roots are not their own door.
+ * `reachedFrom` counts its roots, and with 3,046 faced barrels as roots an atom read as reached BY
+ * ITSELF (`kyc`, 2026-09-20). A mutual loop between two unreached atoms still passes here ([[rules]]/cycle).
+ */
+export function reachedByImport(entries: readonly string[], cwd: string = process.cwd()): ReadonlySet<string> {
+  return atomsUnder(walkImports(entries, cwd).viaEdge, join(cwd, 'src'))
 }
 
 /**
@@ -96,13 +167,16 @@ export function reachedByImport(entries: readonly string[], cwd: string = proces
  * number and the ratchet is down-only: restating a ceiling upward is a decision for a person, not
  * a side effect of a fix ([[rules]]/slack). Run it, read the number, then decide.
  */
-export function unreachedStrict(cwd: string = process.cwd()): UnreachedAtom[] {
+interface CodeAtom {
+  readonly dir: string
+  readonly atomPath: string
+  readonly leaf: string
+}
+
+/** Every SKILL-bearing atom with a barrel, walked once — both censuses and the exempt seeds read this. */
+function codeAtoms(cwd: string): CodeAtom[] {
   const src = join(cwd, 'src')
-  const deployed = deploymentDoor(cwd)
-  const reached = reachedByImport([...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed)], cwd)
-  const shipped = shippedAtoms(cwd)
-  const words = schemaCollision(cwd).words
-  const out: UnreachedAtom[] = []
+  const out: CodeAtom[] = []
   const walk = (dir: string): void => {
     let entries: import('node:fs').Dirent[]
     try {
@@ -116,15 +190,52 @@ export function unreachedStrict(cwd: string = process.cwd()): UnreachedAtom[] {
       const hasCode = existsSync(join(d, 'index.ts')) || existsSync(join(d, 'index.tsx'))
       if (existsSync(join(d, 'SKILL.md')) && hasCode) {
         const atomPath = relative(src, d)
-        const leaf = atomPath.slice(atomPath.lastIndexOf('/') + 1)
-        if (!reached.has(atomPath) && !shipped.has(atomPath) && !words.has(leaf)) {
-          out.push({ atomPath, reason: 'nothing imports it — the deployment face is its own door, and that door is closed here' })
-        }
+        out.push({ dir: d, atomPath, leaf: atomPath.slice(atomPath.lastIndexOf('/') + 1) })
       }
       walk(d)
     }
   }
   walk(src)
+  return out
+}
+
+/** The doors that exempt an atom WITHOUT walking it — shipped, a vocabulary word, a path string. */
+interface ExemptDoors {
+  readonly shipped: ReadonlySet<string>
+  readonly words: ReadonlySet<string>
+  readonly names: ReadonlySet<string>
+}
+
+const exemptBy = (a: CodeAtom, d: ExemptDoors): boolean =>
+  d.shipped.has(a.atomPath) || d.words.has(a.leaf) || namedBy(a.atomPath, d.names)
+
+/** Barrels of exempt atoms — reach seeds exactly as deployed barrels are (the seventh correction, SKILL § the involution). */
+function exemptEntries(cwd: string, atoms: readonly CodeAtom[], doors: ExemptDoors): string[] {
+  const out: string[] = []
+  for (const a of atoms) {
+    if (!exemptBy(a, doors)) continue
+    for (const n of ['index.ts', 'index.tsx']) {
+      const f = join(a.dir, n)
+      if (existsSync(f)) out.push(relative(cwd, f))
+    }
+  }
+  return out
+}
+
+export function unreachedStrict(cwd: string = process.cwd()): UnreachedAtom[] {
+  const deployed = deploymentDoor(cwd)
+  const atoms = codeAtoms(cwd)
+  const doors: ExemptDoors = { shipped: shippedAtoms(cwd), words: schemaCollision(cwd).words, names: nameDoor(cwd) }
+  const reached = reachedByImport(
+    [...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed), ...exemptEntries(cwd, atoms, doors)],
+    cwd,
+  )
+  const out: UnreachedAtom[] = []
+  for (const a of atoms) {
+    if (!reached.has(a.atomPath) && !exemptBy(a, doors)) {
+      out.push({ atomPath: a.atomPath, reason: 'nothing imports or names it — the deployment face is its own door, and that door is closed here' })
+    }
+  }
   return out.sort((a, b) => a.atomPath.localeCompare(b.atomPath))
 }
 
@@ -260,35 +371,30 @@ function deployedEntries(cwd: string, deployed: (dir: string) => boolean): strin
   return out
 }
 
-export function unreachedAtoms(cwd: string = process.cwd()): UnreachedAtom[] {
-  const src = join(cwd, 'src')
+/** Every FILE the forward walk reaches — the liveness a referrer is judged by, since the atom-level census cannot see a dead barrel inside a reached atom. */
+export function reachedFiles(cwd: string = process.cwd()): ReadonlySet<string> {
   const deployed = deploymentDoor(cwd)
+  const atoms = codeAtoms(cwd)
+  const doors: ExemptDoors = { shipped: shippedAtoms(cwd), words: schemaCollision(cwd).words, names: nameDoor(cwd) }
+  return walkImports([...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed), ...exemptEntries(cwd, atoms, doors)], cwd).seen
+}
+
+export function unreachedAtoms(cwd: string = process.cwd()): UnreachedAtom[] {
+  const deployed = deploymentDoor(cwd)
+  const atoms = codeAtoms(cwd)
+  const doors: ExemptDoors = { shipped: shippedAtoms(cwd), words: schemaCollision(cwd).words, names: nameDoor(cwd) }
   const tooling = reachedFrom([...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed)], cwd)
-  const shipped = shippedAtoms(cwd)
-  const words = schemaCollision(cwd).words
+  // exempt barrels seed what they IMPORT only — through `reachedFrom` their ancestors would read as reached (50 where the honest count is 60)
+  const carried = reachedByImport(exemptEntries(cwd, atoms, doors), cwd)
   const out: UnreachedAtom[] = []
-  const walk = (dir: string): void => {
-    let entries: import('node:fs').Dirent[]
-    try {
-      entries = readdirSync(dir, { withFileTypes: true })
-    } catch {
-      return
-    }
-    for (const e of entries) {
-      if (!e.isDirectory() || e.name.startsWith('.') || e.name === 'node_modules') continue
-      const p = join(dir, e.name)
-      const hasCode = existsSync(join(p, 'index.ts')) || existsSync(join(p, 'index.tsx'))
-      if (existsSync(join(p, 'SKILL.md')) && hasCode) {
-        const atomPath = relative(src, p)
-        const leaf = atomPath.slice(atomPath.lastIndexOf('/') + 1)
-        if (!deployed(p) && !tooling.has(atomPath) && !shipped.has(atomPath) && !words.has(leaf)) {
-          out.push({ atomPath, reason: 'no deployment face · not reached from the gate or CLI · not shipped · not a vocabulary word' })
-        }
-      }
-      walk(p)
+  for (const a of atoms) {
+    if (!deployed(a.dir) && !tooling.has(a.atomPath) && !carried.has(a.atomPath) && !exemptBy(a, doors)) {
+      out.push({
+        atomPath: a.atomPath,
+        reason: 'no deployment face · not reached from the gate, the CLI, a deployed, shipped, word or named atom · not shipped · not a vocabulary word · not named by a path string',
+      })
     }
   }
-  walk(src)
   return out.sort((a, b) => a.atomPath.localeCompare(b.atomPath))
 }
 

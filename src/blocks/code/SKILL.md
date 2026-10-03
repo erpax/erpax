@@ -3,13 +3,13 @@ name: code
 description: "Use when reasoning about code — exports (the Payload block) and exports (the React component). One barrel cannot offer both under one name, so the client is here."
 atomPath: "blocks/code"
 coordinate: "blocks/code · 4/weave · 4d1db0b8"
-contentUuid: "5fae84be-d0d4-549e-9434-811743fef9fc"
+contentUuid: "66a8a6f2-fbf8-59f6-97d5-7cf30289f24e"
 diamondUuid: "2261f124-f5e4-83d0-8776-1b9cc4cc390a"
 uuid: "4d1db0b8-c585-891a-8783-c8a10f588675"
 horo: 4
 typography:
   partition: blocks
-  bondDegree: 103
+  bondDegree: 107
 standards:
   - "ECMA-262"
   - "W3C-HTML5"

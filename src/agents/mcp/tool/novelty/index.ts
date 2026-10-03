@@ -43,10 +43,25 @@ for (const [k, v] of Object.entries(I18N)) {
 
 /** Each law's violating files, scanned once so every pair is free. See SKILL.md. */
 /** The laws whose violating populations are MEASURED. Module-private: an exported literal is seal-debt ([[matrix]]/crack), so `lawPopulations()` with no argument IS the shared way to ask for all of them. */
-const MEASURED_LAWS = ['copy', 'cycle', 'concentration', 'mirror', 'unfolded'] as const
+const MEASURED_LAWS = ['copy', 'cycle', 'concentration', 'mirror', 'unfolded', 'sanitize'] as const
 
 /** The laws that expose a file-addressed population — the only ones a cross can intersect. */
 export const measuredLaws = (): readonly string[] => MEASURED_LAWS
+
+/**
+ * ONE address form for every population: repo-relative, `src/…`.
+ *
+ * The laws do not agree on their own. `copy`, `mirror` and `cycle` report a file under the `src/`
+ * prefix; `concentration` reports it from the atom path down, without the prefix. Intersected raw, a
+ * concentration member could never equal anyone else's, so every `concentration ×` cross held at zero
+ * BY CONSTRUCTION and read as a theorem, and the frontier addressed its debts as `../x` — a lead no
+ * dual could cross-examine. A cross is only a cross when both sides name the same address.
+ */
+export function populationAddress(file: string, cwd: string): string {
+  if (file.startsWith(`${cwd}/`)) return file.slice(cwd.length + 1)
+  if (file.startsWith('src/') || file.startsWith('/')) return file
+  return `src/${file}`
+}
 
 export async function lawPopulations(
   laws: readonly string[] = MEASURED_LAWS,
@@ -54,26 +69,36 @@ export async function lawPopulations(
   const cwd = process.cwd()
   const out = new Map<string, ReadonlySet<string>>()
   const want = new Set(laws)
+  const set = (law: string, files: readonly string[]): void => {
+    out.set(law, new Set(files.map((f) => populationAddress(f, cwd))))
+  }
   if (want.has('copy')) {
     const m = await import('@/rules/copy')
-    out.set('copy', new Set(m.duplicateBodies(cwd).flatMap((g) => g.sites.map((s) => s.file))))
+    set('copy', m.duplicateBodies(cwd).flatMap((g) => g.sites.map((s) => s.file)))
   }
   if (want.has('cycle')) {
     const m = await import('@/rules/cycle')
-    out.set('cycle', new Set(m.importCycles(cwd).flat().map((f) => f.replace(`${cwd}/`, ''))))
+    set('cycle', m.importCycles(cwd).flat())
   }
   if (want.has('concentration')) {
     const m = await import('@/rules/concentration')
-    out.set('concentration', new Set(m.concentrationViolations(cwd).map((v) => v.file)))
+    set('concentration', m.concentrationViolations(cwd).map((v) => v.file))
   }
   if (want.has('mirror')) {
     const m = await import('@/rules/mirror')
-    out.set('mirror', new Set(m.mirroredAssertions(cwd).map((x) => x.file)))
+    set('mirror', m.mirroredAssertions(cwd).map((x) => x.file))
   }
   if (want.has('unfolded')) {
     const m = await import('@/rules/unfolded')
     const r = m.unfoldedExports(cwd)
-    out.set('unfolded', new Set([...r.dead, ...r.single].map((e) => e.file)))
+    set('unfolded', [...r.dead, ...r.single].map((e) => e.file))
+  }
+  if (want.has('sanitize')) {
+    // The native sanitiser (rules/sanitize) landed with no cross touching it — a law outside the rosetta
+    // is a law no coil turns. Its population is the files carrying a strip-once / json-into-code /
+    // host-substring / quote-escape / proto-path finding.
+    const m = await import('@/rules/sanitize')
+    set('sanitize', m.sanitizeViolations(cwd).map((v) => v.file))
   }
   return out
 }
@@ -84,6 +109,7 @@ export function buildNoveltyTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.novelty.crosses',
+      role: 'involute',
       description: tCrosses.desc(I18N.crosses!),
       parameters: {
         limit: z.number().int().min(1).max(100).optional(),
@@ -104,6 +130,7 @@ export function buildNoveltyTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.novelty.measure',
+      role: 'measure',
       description: tMeasure.desc(I18N.measure!),
       parameters: {
         laws: z.array(z.enum(MEASURED_LAWS)).min(2).optional(),

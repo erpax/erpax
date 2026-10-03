@@ -275,7 +275,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2019/2152 of the European Parliament and of the Council of 27 November 2019 on European business statistics (Intrastat intra-EU trade reporting)",
     "uuid": "5cbb6bc1-887a-8c8c-88fd-fba1a9346c71",
     "color": "hsl(339 57% 39%)",
-    "count": 355,
+    "count": 356,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -3063,7 +3063,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Date and time representation",
     "uuid": "dcc7dde3-fa6b-8409-9382-89554e4c4d2b",
     "color": "hsl(359 66% 49%)",
-    "count": 338,
+    "count": 339,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -5605,10 +5605,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Role-Based Access Control",
     "uuid": "e67e2dd4-b480-802e-be8b-990117b82dc6",
     "color": "hsl(326 65% 58%)",
-    "count": 53,
+    "count": 54,
     "modules": [
       {
         "path": "src/app/(frontend)/next/seed/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/auth/context/index.ts",
         "section": ""
       },
       {
@@ -5697,10 +5701,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/nist/incits/359/conventions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/nist/incits/359/conventions/test.ts",
         "section": ""
       }
     ]
@@ -6244,7 +6244,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "OECD Standard Audit File for Tax",
     "uuid": "3c66b577-efc9-8c9b-bd38-2df00b645605",
     "color": "hsl(342 61% 61%)",
-    "count": 63,
+    "count": 64,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -6280,6 +6280,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/fiscal/period/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/period/resolver/code/index.ts",
         "section": ""
       },
       {
@@ -6336,10 +6340,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/saf/t/types/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/saf/t/types/test.ts",
         "section": ""
       }
     ]
@@ -6792,6 +6792,72 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "XBRL",
+    "family": "other",
+    "title": "eXtensible Business Reporting Language",
+    "uuid": "603bfc46-1bf2-8188-80e8-aee229bc918a",
+    "color": "hsl(155 62% 60%)",
+    "count": 14,
+    "modules": [
+      {
+        "path": "src/beyond/explainability/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/eu/csrd/esr/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/period/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/period/resolver/code/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/fiscal/calendars/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/regulatory/reports/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/multi/currency/closing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/period/end/closing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/taxing/jurisdictions/reporting/standards/reporting/mappings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/taxing/jurisdictions/statutory/report/templates/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/taxing/jurisdictions/statutory/report/templates/statutory/field/mappings/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
     "id": "SFIA",
     "family": "other",
     "title": "Skills Framework for the Information Age",
@@ -6849,68 +6915,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/vocabulary/manufacturing/seed/standards/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "XBRL",
-    "family": "other",
-    "title": "eXtensible Business Reporting Language",
-    "uuid": "603bfc46-1bf2-8188-80e8-aee229bc918a",
-    "color": "hsl(155 62% 60%)",
-    "count": 13,
-    "modules": [
-      {
-        "path": "src/beyond/explainability/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/types/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/csrd/disclosures/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/eu/csrd/esr/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/fiscal/period/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/fiscal/periods/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/legal/entities/fiscal/calendars/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/legal/entities/regulatory/reports/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/multi/currency/closing/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/period/end/closing/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/taxing/jurisdictions/reporting/standards/reporting/mappings/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/taxing/jurisdictions/statutory/report/templates/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/taxing/jurisdictions/statutory/report/templates/statutory/field/mappings/index.ts",
         "section": ""
       }
     ]

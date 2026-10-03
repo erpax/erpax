@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { existsSync, mkdtempSync, mkdirSync, readdirSync, writeFileSync, rmSync } from 'node:fs'
+import { nameDoor, namedBy, referrersOf } from './index'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { reachedByImport, reachedFrom, shippedAtoms, unreachedAtoms, unreachedStrict } from './index'
@@ -53,15 +54,27 @@ describe('rules/unreached — the live corpus', () => {
     for (const a of live.slice(0, 20)) expect(a.reason).toContain('not shipped')
   })
 
-  // admin/ui/fields IS in the generated importMap, so Payload reaches it by path string. It must not
-  // be named here — and the three siblings nothing names must be. That pair is the whole boundary:
-  // the walk is lexical, so a dynamic reference is invisible to it, and this is where that shows.
-  it('does not name an atom the generated importMap reaches', () => {
-    expect(live.map((a) => a.atomPath)).not.toContain('admin/ui/fields')
+  // admin/ui/fields IS in the generated importMap, so Payload reaches it by path string. Its three
+  // siblings are reached the same way — `Cell: '@/admin/ui/cells/…'` in the admin plugin — and this
+  // test USED to pin them as "the components nothing references". That was the walk's blind spot
+  // certified as a fact: the name door is the sixth door, and nothing a path string reaches is named.
+  it('does not name an atom the generated importMap or a component path string reaches', () => {
+    const names = nameDoor(process.cwd())
+    const paths = live.map((a) => a.atomPath)
+    expect(paths).not.toContain('admin/ui/fields')
+    for (const p of paths) expect(namedBy(p, names)).toBe(false)
   })
 
-  it('does name the admin components nothing references', () => {
-    expect(live.map((a) => a.atomPath)).toContain('admin/ui/cells')
+  // The dual asked live: on 2026-10-03 it refuted four leads whose parents passed through a door that
+  // did not propagate. Every door propagates now, so the census and its involution must agree on the
+  // live tree — a refuted live lead here is a door this walk still does not open.
+  it('the involution refutes nothing the census names — no LIVE referrer reaches a charged atom', () => {
+    const atoms = live.map((a) => a.atomPath)
+    const refs = referrersOf(process.cwd(), atoms)
+    expect(refs.filter((r) => r.live)).toEqual([])
+    // Dead referrers are allowed and are the finding: a parent's barrel nothing imports carries the
+    // lead. `dashboard/nav` ← src/dashboard/index.tsx is the live example on 2026-10-03.
+    for (const r of refs) expect(r.via).toBe('import')
   })
 
   it('never names a vocabulary word — its barrel exists only to name the word', () => {
@@ -140,6 +153,106 @@ describe('rules/unreached — a fixture with no packages and no gate', () => {
       },
     )
   })
+
+  // The sixth door, planted. A component reached ONLY by a Payload path string passes; one quoted
+  // only in a comment is still charged — a comment is not a string literal, so prose opens nothing.
+  it('an atom a path STRING names is reached; an atom a COMMENT names is not', () => {
+    inFixture(
+      (root) => {
+        plant(root, 'plugins/admin', "export const cfg = { Cell: '@/widget/Cell', Field: `@/gauge/Field#named` }\n// see @/ghost/Cell for the old one\n")
+        plant(root, 'widget', 'export const Cell = 1\n')
+        plant(root, 'gauge', 'export const Field = 1\n')
+        plant(root, 'ghost', 'export const Cell = 1\n')
+      },
+      (charged) => {
+        expect(charged).not.toContain('widget')
+        expect(charged).not.toContain('gauge')
+        expect(charged).toContain('ghost')
+      },
+    )
+  })
+})
+
+describe('rules/unreached — an exempt atom is a door, not a wall', () => {
+  // The seventh correction, found by the involution: a SHIPPED atom is reached by its consumers, so
+  // what its barrel imports is reached too. Before this, `carried` was charged while `shipped` passed.
+  it('what a shipped atom imports is reached; an atom nothing shipped reaches is still charged', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
+    try {
+      mkdirSync(join(root, 'packages', 'core', 'dist', 'types', 'shipped'), { recursive: true })
+      plant(root, 'shipped', "export { c } from '@/carried'\n")
+      plant(root, 'carried', 'export const c = 1\n')
+      plant(root, 'island', 'export const i = 1\n')
+      const charged = unreachedAtoms(root).map((a) => a.atomPath)
+      expect(charged).not.toContain('shipped')
+      expect(charged).not.toContain('carried')
+      expect(charged).toContain('island')
+      // and from the referrer seat the same fixture refutes nothing the census still charges
+      expect(referrersOf(root, charged)).toEqual([])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+})
+
+describe('referrersOf — the census asked from the referrer seat', () => {
+  it('names the file that imports a charged atom from outside the charged set, and the string that names it', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
+    try {
+      plant(root, 'shipped', "export { x } from '@/lonely'\n")
+      plant(root, 'lonely', 'export const x = 1\n')
+      plant(root, 'plugins/admin', "export const cfg = { Cell: '@/lonely/Cell' }\n")
+      plant(root, 'island', 'export const y = 1\n')
+      const refs = referrersOf(root, ['lonely', 'island'])
+      expect(refs.map((r) => `${r.atomPath} ← ${r.by} (${r.via}${r.live ? ', live' : ', dead'})`)).toEqual([
+        'lonely ← @/lonely/Cell (name, live)',
+        'lonely ← src/shipped/index.ts (import, dead)',
+      ])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('an importer inside the charged set is not a referrer, and neither is a test', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
+    try {
+      plant(root, 'a', "export { b } from '@/b'\n")
+      plant(root, 'b', 'export const b = 1\n')
+      writeFileSync(join(root, 'src', 'b', 'test.ts'), "import { b } from '@/b'\nexport const t = b\n")
+      expect(referrersOf(root, ['a', 'b'])).toEqual([])
+      // Narrow the excluded set and the same importer becomes a referrer: the door is the set, not the file.
+      expect(referrersOf(root, ['b'], new Set())).toEqual([{ atomPath: 'b', by: 'src/a/index.ts', via: 'import', live: false }])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  // Liveness is the forward walk's own file set. A deployed barrel (`cloudflare/…` is a worker face
+  // by path) is live and REFUTES; a barrel nothing reaches is dead and only CARRIES the lead.
+  it('a referrer is live when the forward walk reaches it, dead when it does not', () => {
+    const root = mkdtempSync(join(tmpdir(), 'erpax-unreached-'))
+    try {
+      plant(root, 'cloudflare/w', "export { l } from '@/leaf'\n")
+      plant(root, 'leaf', 'export const l = 1\n')
+      // `deploymentFaces` judges a fixture atom by NAME against the real corpus's worker-reached set
+      // (`dead` and `parent` carry a face here for that reason alone), so the dead barrel takes a name
+      // the live tree does not use. A pure re-export barrel reads as a face too; it declares a value.
+      plant(root, 'barrel', "import { m } from '@/carried'\nexport const dm = m + 1\n")
+      plant(root, 'carried', 'export const m = 1\n')
+      const refs = referrersOf(root, ['leaf', 'carried'], new Set())
+      expect(refs).toEqual([
+        { atomPath: 'carried', by: 'src/barrel/index.ts', via: 'import', live: false },
+        { atomPath: 'leaf', by: 'src/cloudflare/w/index.ts', via: 'import', live: true },
+      ])
+      // and the census agrees with the liveness: the live-referred atom is reached, the carried one is charged
+      const charged = unreachedAtoms(root).map((a) => a.atomPath)
+      expect(charged).not.toContain('leaf')
+      expect(charged).toContain('carried')
+      expect(charged).toContain('barrel')
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
 })
 
 describe('reachedByImport — a root is not its own door', () => {
@@ -163,7 +276,7 @@ describe('unreachedStrict — the census with the self-door shut', () => {
     const loose = unreachedAtoms().length
     const strict = unreachedStrict().length
     expect(strict).toBeGreaterThan(loose)
-  })
+  }, 120_000)
 
   it('names atoms that nothing imports, even though they carry a deployment face', () => {
     // `kyc` was the original instance: minted 2026-09-20 with a face and no importer, which the

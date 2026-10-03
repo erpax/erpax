@@ -1,5 +1,5 @@
-import { exactCeil, exactFloor } from '@/algebra'
-import { daysBetween, daysExact } from '@/utility'
+import { exactCeil } from '@/algebra'
+import { daysBetween } from '@/utility'
 /**
  * FiscalPeriodResolver Service
  *
@@ -34,7 +34,8 @@ import { daysBetween, daysExact } from '@/utility'
  *     control (a caller passes calendarDate in), so it was never this file's claim to make.
  */
 
-import { merge } from '@/merge'
+import { chainLeaf, regulatoryCode } from './code'
+import { fiscalYearStart, isoWeek, spanOf, type PeriodSpan } from './span'
 
 export interface FiscalPeriodConfig {
   fiscalYearStartMonth: number
@@ -472,242 +473,30 @@ export class FiscalPeriodResolver {
     }
   }
 
-  // ============ Private Helpers ============
+  // ============ Private Helpers — delegated to the children `span` and `code` ============
+  // The period kinds and the two identifiers were private statics here; they depend on nothing but
+  // their arguments, so they are atoms with their own proofs now ([[rules]]/concentration named this
+  // hub). The class keeps every method name it had, so no caller moved ([[rules]]/face).
 
-  private static getFiscalYearStart(
-    year: number,
-    config: FiscalPeriodConfig,
-  ): Date {
-    return new Date(
-      Date.UTC(year, config.fiscalYearStartMonth - 1, config.fiscalYearStartDay),
-    )
+  private static getFiscalYearStart(year: number, config: FiscalPeriodConfig): Date {
+    return fiscalYearStart(year, config)
   }
 
-  private static getPeriodFromDayOffset(
-    config: FiscalPeriodConfig,
-    daysIntoFiscalYear: number,
-    fiscalYear: number,
-    date: Date,
-  ): {
-    fiscalPeriod: number
-    periodLabel: string
-    periodStartDate: string
-    periodEndDate: string
-  } {
-    switch (config.periodType) {
-      case 'monthly':
-        return this.getMonthlyPeriod(daysIntoFiscalYear, fiscalYear, config, date)
-      case 'quarterly':
-        return this.getQuarterlyPeriod(daysIntoFiscalYear, fiscalYear, config, date)
-      case 'weekly':
-        return this.getWeeklyPeriod(daysIntoFiscalYear, fiscalYear, config, date)
-      case 'iso-week':
-        return this.getISOWeekPeriod(daysIntoFiscalYear, fiscalYear, config, date)
-      case 'retail-445':
-        return this.getRetail445Period(daysIntoFiscalYear, fiscalYear, config, date)
-      case 'custom':
-        if (!config.customPeriodBoundaries) {
-          throw new Error('customPeriodBoundaries required for periodType=custom')
-        }
-        return this.getCustomPeriod(date, config.customPeriodBoundaries)
-      default:
-        throw new Error(`Unsupported periodType: ${config.periodType}`)
-    }
-  }
-
-  private static getMonthlyPeriod(
-    daysIntoFiscalYear: number,
-    fiscalYear: number,
-    config: FiscalPeriodConfig,
-    _date: Date,
-  ): {
-    fiscalPeriod: number
-    periodLabel: string
-    periodStartDate: string
-    periodEndDate: string
-  } {
-    const fyStart = this.getFiscalYearStart(fiscalYear, config)
-    const monthsIn = exactFloor(daysIntoFiscalYear / 30)
-    const fiscalPeriod = monthsIn + 1
-
-    const periodStart = new Date(fyStart)
-    periodStart.setUTCMonth(periodStart.getUTCMonth() + monthsIn)
-    const periodEnd = new Date(periodStart)
-    periodEnd.setUTCMonth(periodEnd.getUTCMonth() + 1)
-    periodEnd.setUTCDate(0)
-
-    const monthName = periodStart.toLocaleString('en-US', { month: 'long' })
-    return {
-      fiscalPeriod,
-      periodLabel: `${monthName} ${fiscalYear}`,
-      periodStartDate: periodStart.toISOString().split('T')[0],
-      periodEndDate: periodEnd.toISOString().split('T')[0],
-    }
-  }
-
-  private static getQuarterlyPeriod(
-    daysIntoFiscalYear: number,
-    fiscalYear: number,
-    _config: FiscalPeriodConfig,
-    _date: Date,
-  ): {
-    fiscalPeriod: number
-    periodLabel: string
-    periodStartDate: string
-    periodEndDate: string
-  } {
-    const fiscalPeriod = exactFloor(daysIntoFiscalYear / 91) + 1
-    const label = `Q${fiscalPeriod}`
-    return {
-      fiscalPeriod,
-      periodLabel: `${label} ${fiscalYear}`,
-      periodStartDate: '',
-      periodEndDate: '',
-    }
-  }
-
-  private static getWeeklyPeriod(
-    daysIntoFiscalYear: number,
-    fiscalYear: number,
-    _config: FiscalPeriodConfig,
-    _date: Date,
-  ): {
-    fiscalPeriod: number
-    periodLabel: string
-    periodStartDate: string
-    periodEndDate: string
-  } {
-    const fiscalPeriod = exactFloor(daysIntoFiscalYear / 7) + 1
-    return {
-      fiscalPeriod,
-      periodLabel: `W${fiscalPeriod} ${fiscalYear}`,
-      periodStartDate: '',
-      periodEndDate: '',
-    }
-  }
-
-  private static getISOWeekPeriod(
-    _daysIntoFiscalYear: number,
-    fiscalYear: number,
-    _config: FiscalPeriodConfig,
-    date: Date,
-  ): {
-    fiscalPeriod: number
-    periodLabel: string
-    periodStartDate: string
-    periodEndDate: string
-  } {
-    const week = this.getISOWeek(date)
-    return {
-      fiscalPeriod: week,
-      periodLabel: `W${week} ${fiscalYear}`,
-      periodStartDate: '',
-      periodEndDate: '',
-    }
-  }
-
-  private static getRetail445Period(
-    daysIntoFiscalYear: number,
-    fiscalYear: number,
-    _config: FiscalPeriodConfig,
-    _date: Date,
-  ): {
-    fiscalPeriod: number
-    periodLabel: string
-    periodStartDate: string
-    periodEndDate: string
-  } {
-    let fiscalPeriod = 1
-    if (daysIntoFiscalYear >= 28) {
-      fiscalPeriod = 2
-    }
-    if (daysIntoFiscalYear >= 56) {
-      fiscalPeriod = 3
-    }
-    const labels = ['P1 (4w)', 'P2 (4w)', 'P3 (5w)']
-    return {
-      fiscalPeriod,
-      periodLabel: `${labels[fiscalPeriod - 1]} ${fiscalYear}`,
-      periodStartDate: '',
-      periodEndDate: '',
-    }
-  }
-
-  private static getCustomPeriod(
-    date: Date,
-    boundaries: Array<{
-      periodNumber: number
-      periodLabel: string
-      startDate: string
-      endDate: string
-    }>,
-  ): {
-    fiscalPeriod: number
-    periodLabel: string
-    periodStartDate: string
-    periodEndDate: string
-  } {
-    const dateStr = date.toISOString().split('T')[0]
-    for (const b of boundaries) {
-      if (dateStr >= b.startDate && dateStr <= b.endDate) {
-        return {
-          fiscalPeriod: b.periodNumber,
-          periodLabel: b.periodLabel,
-          periodStartDate: b.startDate,
-          periodEndDate: b.endDate,
-        }
-      }
-    }
-    throw new Error(`Date ${dateStr} not found in custom boundaries`)
+  private static getPeriodFromDayOffset(config: FiscalPeriodConfig, daysIntoFiscalYear: number, fiscalYear: number, date: Date): PeriodSpan {
+    return spanOf(config, daysIntoFiscalYear, fiscalYear, date)
   }
 
   private static getISOWeek(date: Date): number {
-    const d = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()))
-    const dayNum = d.getUTCDay() || 7
-    d.setUTCDate(d.getUTCDate() + 4 - dayNum)
-    const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1))
-    return exactCeil((daysExact(yearStart, d) + 1) / 7)
+    return isoWeek(date)
   }
 
-  private static computeRegulatoryCode(
-    config: FiscalPeriodConfig,
-    fiscalYear: number,
-    fiscalPeriod: number,
-  ): string {
-    switch (config.regulatoryFramework) {
-      case 'saf-t':
-        return `P${String(fiscalPeriod).padStart(2, '0')}_${fiscalYear}`
-      case 'xbrl':
-        if (config.periodType === 'quarterly') {
-          return `Q${fiscalPeriod}_${fiscalYear}`
-        }
-        return `P${String(fiscalPeriod).padStart(2, '0')}_${fiscalYear}`
-      default:
-        return `P${String(fiscalPeriod).padStart(2, '0')}_${fiscalYear}`
-    }
+  private static computeRegulatoryCode(config: FiscalPeriodConfig, fiscalYear: number, fiscalPeriod: number): string {
+    return regulatoryCode(config, fiscalYear, fiscalPeriod)
   }
 
-  /**
-   * The chain leaf IS the fold — `merge(a,b) = toUuid(a ‖ b)`, the corpus's one algebra ([[merge]]).
-   *
-   * It was hand-rolled here as `Buffer.from(payload + priorLeaf).toString('base64').substring(0, 32)`,
-   * described as a "hash placeholder" and shipped into live audit paths. It was not a hash at all, and the
-   * defect was total — base64 maps 3 bytes to 4 chars, so 32 chars covered only the FIRST 24 BYTES of input:
-   *
-   *   payload  {"calendarDate":"2026-05-12","fiscalYear":2026,"fiscalPeriod":5,"regulatoryCode":"P05_2026"}
-   *   covered  {"calendarDate":"2026-05
-   *
-   * Everything after the month was invisible. 2026-05-12 and 2026-05-31 produced the SAME leaf; fiscalYear
-   * could be rewritten 2026 → 9999 without moving it; priorLeaf, appended past the window, was ignored
-   * ENTIRELY — so the chain never chained. And base64 is reversible, so the leaf decoded back to plaintext.
-   * Tamper-cost was zero under a banner claiming tamper detection, in the exact inverse of [[law]].
-   *
-   * Nothing needed inventing: a leaf over (payload, prior) is the fold's binary step, sha256 over the whole
-   * input with a ∥ delimiter that keeps merge('a','bc') ≠ merge('ab','c'). See test.ts — each sentence above
-   * is a passing assertion, so this can never quietly read as true again.
-   */
+  /** The chain leaf IS the fold — see ./code for the base64 placeholder it replaced and the test that holds it false. */
   private static computeChainLeaf(payload: string, priorLeaf: string): string {
-    return merge(payload, priorLeaf)
+    return chainLeaf(payload, priorLeaf)
   }
 }
 

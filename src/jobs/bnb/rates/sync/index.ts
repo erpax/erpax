@@ -26,6 +26,7 @@ import { exactMax } from '@/algebra'
 
 import type { Payload } from 'payload'
 import { lookupEuFallbackRate } from '@/country/api/client'
+import { persistApiAuditEvent } from '@/persist/api/audit/event'
 
 /**
  * Default currency set the job pulls when a tenant has no explicit
@@ -90,6 +91,26 @@ export async function processBnbRatesSync(payload: Payload): Promise<BnbRatesSyn
       // falls back to ECB (pan-EU). The result's `source` carries which
       // publisher answered so downstream audit-trail rows attribute correctly.
       const lookup = await lookupEuFallbackRate('BG', fromCurrency, today)
+      // One external call = one durable audit row (SOX §404 external-system traceability). The
+      // bridge existed and NOTHING called it, so every БНБ/ECB fixing the corpus ever fetched left
+      // no evidence — [[rules]]/unfolded's dead export, auditor-facing. Idempotent per
+      // (tenant, currency, day), written whether the publisher answered or not: a refusal is
+      // evidence too. A failed audit write is a failure of the sync, not a silent skip.
+      try {
+        await persistApiAuditEvent(payload, {
+          tenantId: String(tenant.id),
+          kind: 'fx_rate',
+          country: 'BG',
+          source: lookup.source,
+          resultOk: lookup.ok,
+          errorMessage: lookup.error,
+          payloadIn: { currency: fromCurrency, date: today },
+          payloadOut: lookup.data,
+          eventId: `bnb-rates-sync:${tenant.id}:${fromCurrency}:${today}`,
+        })
+      } catch (e) {
+        failures.push({ tenantId: tenant.id, currency: fromCurrency, error: `audit: ${e instanceof Error ? e.message : String(e)}` })
+      }
       if (!lookup.ok || !lookup.data) {
         failures.push({
           tenantId: tenant.id,

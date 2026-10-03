@@ -66,6 +66,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "agent/ui",
   "agents/accounting",
   "agents/mcp",
+  "agents/mcp/family",
   "agents/mcp/i18n",
   "agents/mcp/tool",
   "agents/mcp/tool/aml",
@@ -136,6 +137,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "aura/live",
   "aura/propose",
   "auth",
+  "auth/context",
   "authenticated",
   "authenticated/or/published",
   "auto/populate/created/by",
@@ -544,6 +546,8 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "fiscal/devices/sales",
   "fiscal/period",
   "fiscal/period/resolver",
+  "fiscal/period/resolver/code",
+  "fiscal/period/resolver/span",
   "fiscal/periods",
   "fiscal/periods/carbon/emissions",
   "fiscal/periods/earnings/per/shares",
@@ -1043,6 +1047,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "quantum/chat/routing",
   "quantum/clock",
   "quantum/coalesce",
+  "quantum/coil",
   "quantum/communication",
   "quantum/communication/key",
   "quantum/communication/superdense",
@@ -1274,6 +1279,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "self/improve/tip/audit",
   "self/improve/tip/model",
   "self/improve/tip/plan",
+  "self/involute",
   "self/reference",
   "self/research",
   "self/similar",
@@ -1543,7 +1549,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1536 as const
+export const ATOM_LEDGER_PATH_COUNT = 1542 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -1781,6 +1787,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "agents/mcp": [
     "agents/mcp"
+  ],
+  "agents/mcp/family": [
+    "agents/mcp",
+    "agents/mcp/family"
   ],
   "agents/mcp/i18n": [
     "agents/mcp",
@@ -2042,6 +2052,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "auth": [
     "auth"
+  ],
+  "auth/context": [
+    "auth",
+    "auth/context"
   ],
   "authenticated": [
     "authenticated"
@@ -3516,6 +3530,18 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "fiscal",
     "fiscal/period",
     "fiscal/period/resolver"
+  ],
+  "fiscal/period/resolver/code": [
+    "fiscal",
+    "fiscal/period",
+    "fiscal/period/resolver",
+    "fiscal/period/resolver/code"
+  ],
+  "fiscal/period/resolver/span": [
+    "fiscal",
+    "fiscal/period",
+    "fiscal/period/resolver",
+    "fiscal/period/resolver/span"
   ],
   "fiscal/periods": [
     "fiscal",
@@ -5348,6 +5374,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "quantum",
     "quantum/coalesce"
   ],
+  "quantum/coil": [
+    "quantum",
+    "quantum/coil"
+  ],
   "quantum/communication": [
     "quantum",
     "quantum/communication"
@@ -6246,6 +6276,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "self/improve",
     "self/improve/tip",
     "self/improve/tip/plan"
+  ],
+  "self/involute": [
+    "self",
+    "self/involute"
   ],
   "self/reference": [
     "self",
@@ -7217,4 +7251,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 884 as const
+export const MERGED_NESTED_PATH_COUNT = 890 as const

@@ -2,35 +2,35 @@
 name: frontier
 description: "Use when reasoning about frontier — self/sufficient's could always **order** a frontier and never **generate** one: every intent had to be typed by a person into think's store."
 atomPath: "agents/mcp/tool/frontier"
-coordinate: "agents/mcp/tool/frontier · 8/crest · bbe2148d"
-contentUuid: "5b04f3e8-4dbb-5bc4-a77a-e2317ef5a932"
-diamondUuid: "2d37a9e2-589e-8dc2-b2ed-7358b6d18f19"
-uuid: "bbe2148d-64c0-8a8e-974d-663d47fc9d5c"
-horo: 8
+coordinate: "agents/mcp/tool/frontier · 4/weave · 5c1965bc"
+contentUuid: "fd5dca00-a3b9-5030-bba1-cbda85bf08ee"
+diamondUuid: "ee3d5c13-b727-8a8f-8612-304c271a46dc"
+uuid: "5c1965bc-8fdd-8782-b1ae-e68021fbace8"
+horo: 4
 typography:
   partition: agents
-  bondDegree: 18
+  bondDegree: 21
 standards:
   - MCP
   - "MCP 0.6 — tools/list + tools/call result shape {content:[{type,text}]}"
 bindings: []
 signatures:
-  computationUuid: "eb082781-136e-89ea-82f0-40473b623413"
+  computationUuid: "50774bee-66fb-8c5c-8ac7-0550dffb55da"
   stages:
     - stage: path
       stageUuid: "6565840d-9a9e-84a4-9443-ba0dc2baa805"
     - stage: trinity
       stageUuid: "e4796f0d-6c6f-8a25-907e-b7d4f992214e"
     - stage: boundary
-      stageUuid: "e39e972d-6c60-8303-aa89-5d99913632ff"
+      stageUuid: "73b80ce5-714a-8a2c-be5c-7e647d037381"
     - stage: links
-      stageUuid: "8d17b44d-249a-8d8e-9d46-273fb5e9a87f"
+      stageUuid: "79b57c26-2586-8b67-bbdb-155ed7830c53"
     - stage: horo
-      stageUuid: "3569a821-6933-8d7e-904c-5607f82fc777"
+      stageUuid: "9de6dcc0-3d05-81d7-97e1-c9918b493d38"
     - stage: seal
       stageUuid: "8a8b3a1e-3a57-87af-abde-a366a64eead6"
     - stage: uuid
-      stageUuid: "70af2258-2a0a-8b46-ac0c-f758f3dc4b5f"
+      stageUuid: "4d97a2d9-ca1c-886a-aa87-d458d33d319e"
 version: 2
 ---
 # agents/mcp/tool/frontier — the corpus's own next move, on the public surface
@@ -122,4 +122,58 @@ same five scans behind one lazy promise.
 
 The crossing itself, the namespaces it refuses to compare and the lift that separates agreement from base
 rate are argued where the transform lives: [[self]]/sufficient.
+
+## The family is a trinity: measure · involute · act
+
+`erpax.frontier.next` measures, `erpax.frontier.involute` asks the dual seat, and
+`erpax.frontier.develop` **acts** — the leg that was missing while leads were developed by hand. A
+theorem lead becomes a manifest: for a two-file import tangle, the leaf extraction that dissolved
+`auth ↔ subscription/gate` (the smaller side's names move to a child of the exporter, the exporter
+re-exports, the importer repoints) — a template until the one decision no theorem makes, the leaf's
+`word`, is passed, and then a scalpel op the scalpel has already dry-run (`plan.refused` names every
+refusal). For a hub, a dead export or an atom carried by a dead barrel it is a decision carrying the
+computed evidence. A lie gets no manifest — the instrument is fixed; nor does a manipulation — a dual
+is wired. Nothing is applied here: apply is the scalpel's door, ring-verified, batch by batch.
+
+The roles are declared on the tools and read by the `family` atom beside the [[mcp]] gateway
+(`erpax.family.trinities`), which says which families are trinities and which leg each of the others
+still lacks — the next development of the surface, computed.
+
+## Every lead tagged by its involution
+
+The three highest-ranked leads this tool emitted on 2026-10-03 were lies. `unreached` named
+`admin/ui/cells` · `admin/ui/dashboard` · `admin/ui/nav` as dead weight, and Payload reaches all three
+by a path string on every admin page load. The ranker did its job — a red count outranks a debt — on a
+claim one instrument had made and nothing had cross-examined.
+
+So every lead is now **involuted** before it is ranked ([[self]]/involute): the same claim asked from the
+dual seat. `unreached` is asked backward through `referrersOf` — who imports or names the atom from
+outside the charged set; a red `guardian` is asked for its **members** — the law's population or the
+unreached list for that axis; a `cross` is asked for its **lift**. Two red counts that named no member
+got a real cross instead of a listing of themselves: **`accounting-wave` ⊗ `unreached`** — a gap path is
+explained when an unreached atom lies at or under it, which is the wave's own claim that it is the
+unreached cascade; and **`bypass-math` ⊗ slack** — the emitted ratchet's complaint about an axis agrees
+with the gate's own over/under balance ([[rules]]/slack) or is refuted by it. `frontierDuals` builds all
+of them from evidence and is pure, so each formula is planted and proved in the test without a scan.
+
+The dual caught the instrument three times on its first live run. Two `unreached` leads were refuted
+by referrers whose parents pass through the shipped or vocabulary-word doors — doors that, unlike the
+deployed one, never propagated what their barrels import (66 → 60 with what they carried, the seventh
+correction of that census). Two more had referrers that were themselves **dead** — `dashboard`'s barrel
+imports `dashboard/nav` and nothing imports the barrel — so a referrer now carries a `live` flag read
+from the forward walk's own file set, and a dead one is reported as `deadReferrers` rather than counted as a
+refutation. And two red counts, `alphanumeric-name 291 > 290` and `stray-ts 852 > 851`, were the probe
+file that ran the measurement, sitting at `src/` root: an instrument measuring itself. Probes run from
+outside the tree now. The answer tags the lead
+`theorem` (the dual agrees), `lie` (the dual refutes — fix the instrument, never the atom it accused)
+or `manipulation` (no dual could answer — one witness, speaking for itself), and the codomain is
+total: `Involute.every_lead_is_tagged` in `src/verify/lean/Involute.lean`.
+
+`erpax.frontier.next` carries `tags` · `lies` · `manipulations` and stamps every ranked entry;
+`next` is the first ranked **theorem**, so a lie never leads. `erpax.frontier.involute` returns the
+tagged leads, filtered by `tag`, with the duals it asked. Asked for `guardians` alone, every red count
+is a manipulation — correctly: a number with no addressable member cannot be asked from the other
+seat, and the description says to ask for `populations` or `unreached` when the members matter. The
+`boundary` source has no dual wired; its right one is a second route (the uuidna fanout) and is
+external.
 

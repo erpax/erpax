@@ -3,17 +3,17 @@ name: quantum
 description: "Use when an agent needs the exact-amplitude register over MCP — erpax.quantum.run · erpax.quantum.bell · erpax.quantum.shots expose quantum/register (integer amplitudes, halvings, determinant entanglement witness, enumerated shots) as pure tools; bigints cross the wire as decimal strings."
 atomPath: "agents/mcp/tool/quantum"
 coordinate: "agents/mcp/tool/quantum · 1/base · 920c9897"
-contentUuid: "288fbf1e-7889-5940-8911-d07825ddbce9"
-diamondUuid: "6a4faf7a-10f9-8d3f-9806-6f039e258a77"
+contentUuid: "66333f9e-d2bf-5d00-a50a-c2f77a2a0430"
+diamondUuid: "ab2e0caf-9dae-8510-a42d-f00e020aebde"
 uuid: "920c9897-290e-8301-9980-1f8ed79e0712"
 horo: 1
 typography:
   partition: agents
-  bondDegree: 577
+  bondDegree: 583
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1583fe9c-e650-8910-a941-35c09dfa7e94"
+  computationUuid: "b4a79c39-2379-8c0a-9458-3751e9eaa305"
   stages:
     - stage: path
       stageUuid: "24e816db-72fe-830b-9126-30b9544cdcb7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "480adc06-137c-8fde-87b4-974a17860e03"
     - stage: horo
-      stageUuid: "f2942d82-df9a-812d-8aa1-4da82e362cb0"
+      stageUuid: "14ffa567-b5dc-836f-a8ac-46e26da051c5"
     - stage: seal
       stageUuid: "38730f8e-1a87-8e77-a423-c51846ffc1e3"
     - stage: uuid
-      stageUuid: "4bed2d92-2dca-8ebc-be6a-539b286a7265"
+      stageUuid: "bb211f02-9319-85f7-ab68-0a571541b742"
 version: 2
 ---
 # agents/mcp/tool/quantum — the register, one door away from every agent

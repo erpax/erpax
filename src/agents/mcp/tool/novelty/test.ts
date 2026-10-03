@@ -36,15 +36,34 @@ describe('erpax.novelty — the cross enumerator on the public surface', () => {
     }
   }, 300_000)
 
-  it('measure intersects real populations and names the orthogonal laws', async () => {
+  it('measure intersects real populations at ONE address form', async () => {
     const r = await parse('erpax.novelty.measure', { laws: ['copy', 'concentration'] })
     const scanned = r.scanned as Record<string, number>
     expect(Object.keys(scanned).sort()).toEqual(['concentration', 'copy'])
     expect(scanned.copy).toBeGreaterThan(0)
-    // concentration meets nothing — the prose ranking's top live pick is provably empty
-    expect(r.orthogonal).toContain('concentration')
     expect(String(r.reading)).toMatch(/DIRECTIONAL/)
+    // This test used to assert "concentration meets nothing" — and it did, BY CONSTRUCTION: the
+    // concentration law reports `x/index.ts` while copy reports `src/x/index.ts`, so no member could
+    // ever equal another's. An orthogonality that an address mismatch guarantees is not a measurement.
+    const { lawPopulations } = await import('./index')
+    const { existsSync } = await import('node:fs')
+    const { join } = await import('node:path')
+    const sets = await lawPopulations(['concentration', 'copy'])
+    for (const [, files] of sets) {
+      for (const f of files) {
+        expect(f.startsWith('src/')).toBe(true)
+        expect(existsSync(join(process.cwd(), f))).toBe(true)
+      }
+    }
   }, 300_000)
+
+  it('populationAddress folds every law onto repo-relative src/ paths', async () => {
+    const { populationAddress } = await import('./index')
+    const cwd = '/repo'
+    expect(populationAddress('fiscal/period/resolver/index.ts', cwd)).toBe('src/fiscal/period/resolver/index.ts')
+    expect(populationAddress('src/rules/copy/index.ts', cwd)).toBe('src/rules/copy/index.ts')
+    expect(populationAddress('/repo/src/rules/cycle/index.ts', cwd)).toBe('src/rules/cycle/index.ts')
+  })
 })
 
 describe('novelty — the factory is not the surface', () => {

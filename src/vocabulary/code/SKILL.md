@@ -3,13 +3,13 @@ name: code
 description: "Use when master-data needs a unique short code — accounts, products, machines, teams, categories. The CodeConcern field-factory; code derived from name when absent; code is the human key, content-uuid the machine key."
 atomPath: "vocabulary/code"
 coordinate: "vocabulary/code · 4/weave · f3ade10f"
-contentUuid: "fadc76c3-6226-5e60-8895-d609832a3613"
+contentUuid: "e95a298d-b557-5056-a5c6-53e1abe5f0f0"
 diamondUuid: "9f8f1745-bed8-8949-86cb-d592f806daad"
 uuid: "f3ade10f-d2ba-8de9-b1af-8e0d384e5bb8"
 horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 103
+  bondDegree: 107
 standards: []
 bindings: []
 signatures:

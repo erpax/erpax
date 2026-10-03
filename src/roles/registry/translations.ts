@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about registry — binds each role to the standards it answers to and the chain steps it may execute.",
-    "uuid": "711795b3-96e9-8562-8c1a-83ae10e5516f",
+    "uuid": "c38ffd0b-e6c3-8a29-8502-8c3e7c733c44",
     "words": [
       "use",
       "when",

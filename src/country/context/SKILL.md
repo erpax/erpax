@@ -3,13 +3,13 @@ name: context
 description: "Use when any code needs to branch on country — resolve a single canonical CountryContext from any signal (explicit, IBAN, address, tenant, house default) instead of reading the profile, specifics, and API registries directly."
 atomPath: "country/context"
 coordinate: "country/context · 5/round · 44b0b687"
-contentUuid: "224c378a-37e8-5053-bf2b-2e83974e751f"
+contentUuid: "95ef17b9-33dd-531b-8936-edc2a5f00ade"
 diamondUuid: "515a9c66-f8ee-85ed-ae1d-79f86b3cf339"
 uuid: "44b0b687-04ca-804f-bd78-ad1c3837e58f"
 horo: 5
 typography:
   partition: country
-  bondDegree: 29
+  bondDegree: 33
 standards:
   - "EU 2014/55 b2g-e-invoicing-mandate-resolution"
   - "ISO-3166-1:2020 country-codes alpha-2 dispatch-key"

@@ -27,6 +27,7 @@ export function buildFloatTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.float.reconcile',
+      role: 'measure',
       description: t.desc(I18N.reconcile!),
       parameters: {
         opening: z.number().describe('Opening float, in MINOR units.'),

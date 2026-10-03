@@ -3,13 +3,13 @@ name: span
 description: "Use when reasoning about span — The calendar day stood at **twenty-four addresses in four notations** — (22 sites), a local in , a bare in the ISO-week calculation, and reversed in — while called itself the…"
 atomPath: "utility/span"
 coordinate: "utility/span · 8/crest · ba917aab"
-contentUuid: "7ffe5e60-0f37-588f-8dbe-011a3a4becd6"
+contentUuid: "32b0bb60-0188-5b34-b0c1-3ba390f4e95a"
 diamondUuid: "531364b1-a918-8552-a54f-15dcef1cf070"
 uuid: "ba917aab-1917-811a-8384-430f901022c5"
 horo: 8
 typography:
   partition: utility
-  bondDegree: 12
+  bondDegree: 15
 standards:
   - "ISO 80000-3 — time: the day as a unit of measure"
   - "ISO-8601-1:2019 — date-time days-between arithmetic"

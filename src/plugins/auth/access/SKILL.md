@@ -3,13 +3,13 @@ name: access
 description: "Use when reasoning about access — Its own docstring read: *\"All access control in the codebase routes through these helpers.\"* Measured 2026-09-25 across every hand-written :"
 atomPath: "plugins/auth/access"
 coordinate: "plugins/auth/access · 3/3 · 35008a3e"
-contentUuid: "5a256172-aecf-5e07-b524-370af54686bb"
-diamondUuid: "29e9a16a-f117-8779-9beb-4147da849fec"
+contentUuid: "ae910338-2d40-580d-bb87-f022b5c1799e"
+diamondUuid: "13fd1ff0-863f-831d-8e64-5dfa366586d4"
 uuid: "35008a3e-1c9b-8a26-818f-91d191cef121"
 horo: 3
 typography:
   partition: plugins
-  bondDegree: 441
+  bondDegree: 443
 standards:
   - "NIST INCITS-359-2012 role-based-access-control"
   - "NIST SP-800-162 attribute-based-access-control"
@@ -17,7 +17,7 @@ standards:
   - "SOC-2 CC6.1 logical-access-controls"
 bindings: []
 signatures:
-  computationUuid: "291b8540-4db5-861b-9424-e04842c01d29"
+  computationUuid: "1012c5ac-1263-86fc-8936-a17637f3c65e"
   stages:
     - stage: path
       stageUuid: "ab9783ec-5e25-8a0a-ba3c-1e267664bbd2"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "610b27d0-2fba-80e6-a1d7-caef28b7b1fc"
     - stage: horo
-      stageUuid: "7fb098c4-d647-830a-b9e3-34c761960ab3"
+      stageUuid: "d8c05aa2-5a13-8b74-9951-0c8df686a92b"
     - stage: seal
       stageUuid: "464bf665-0b16-84c8-8b7f-07c6b339de2e"
     - stage: uuid
-      stageUuid: "ec956ba0-94ce-8b43-bf5e-6c8a0004d50e"
+      stageUuid: "9ef24dbd-f547-8f77-ae82-419293258067"
 version: 2
 ---
 # plugins/auth/access — the file that claimed to be the single route, and was not

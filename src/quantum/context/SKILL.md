@@ -3,13 +3,13 @@ name: context
 description: "Use when reading the live quantum surface state — superposition pending paths, last collapse, bond reciprocity, and the formatted status the CLI prints. The last loose sibling in the quantum partition, now an atom. Run: tsx src/quantum/context/index.ts"
 atomPath: "quantum/context"
 coordinate: "quantum/context · 1/base · 38207cb7"
-contentUuid: "7dbedde2-599c-5bc1-9692-adc8c82bd99d"
+contentUuid: "f2dac843-1238-5c6b-87fa-580b53ad8b3d"
 diamondUuid: "42903669-97e1-8bb7-a7aa-26d996aa649c"
 uuid: "38207cb7-a4dd-8020-8e1b-eddb5cb20c55"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 29
+  bondDegree: 33
 standards: []
 bindings: []
 signatures:
@@ -47,7 +47,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "4ab8c564-9d15-8c1b-9288-fc1836b4c039"
-    contentUuid: "7dbedde2-599c-5bc1-9692-adc8c82bd99d"
+    contentUuid: "f2dac843-1238-5c6b-87fa-580b53ad8b3d"
 version: 2
 ---
 # context — the live state of the quantum surface
@@ -83,4 +83,4 @@ All four came back clean here. A move is only zero-risk once every spelling of a
 
 Composes: [[quantum]] · [[quantum]]/status · [[seal]] · [[rules]]/invisible · [[law]].
 
-<sub>content-uuid `7dbedde2-599c-5bc1-9692-adc8c82bd99d` · account `quantum/context` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `f2dac843-1238-5c6b-87fa-580b53ad8b3d` · account `quantum/context` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

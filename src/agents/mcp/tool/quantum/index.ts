@@ -92,6 +92,7 @@ export function buildQuantumTools(): ReadonlyArray<ErpaxMcpTool> {
   return [
     {
       name: 'erpax.quantum.run',
+      role: 'measure',
       description: t.desc(I18N.run!),
       parameters: {
         qubits: z.number().int().min(1).max(MAX_QUBITS),
@@ -103,6 +104,7 @@ export function buildQuantumTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.quantum.bell',
+      role: 'measure',
       description: t.desc(I18N.bell!),
       parameters: {
         qubits: z.number().int().min(2).max(MAX_QUBITS).optional().describe('2 for Bell (default); more for GHZ.'),
@@ -121,6 +123,7 @@ export function buildQuantumTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.quantum.shots',
+      role: 'measure',
       description: t.desc(I18N.shots!),
       parameters: {
         qubits: z.number().int().min(1).max(MAX_QUBITS),
@@ -134,6 +137,7 @@ export function buildQuantumTools(): ReadonlyArray<ErpaxMcpTool> {
     },
     {
       name: 'erpax.quantum.orbit',
+      role: 'involute',
       description: t.desc(I18N.orbit!),
       parameters: {
         qubits: z.number().int().min(1).max(3).optional().describe('1, 2 (default — the double torus) or 3'),

@@ -2,33 +2,33 @@
 name: unreached
 description: "Use when reasoning about unreached — The accounting wave's remaining 258 is not 258 separate defects. It is **80 leaves and their ancestors**: an atom is charged , and every folder above it is then charged for the…"
 atomPath: "rules/unreached"
-coordinate: "rules/unreached · 8/crest · 5cb7dfff"
-contentUuid: "77308a75-a2e8-52f6-8f04-776674cdd9f7"
-diamondUuid: "e14a4dcf-9b82-866f-8bdd-09e94323208e"
-uuid: "5cb7dfff-b789-8ec6-b081-5d4968a2c8e9"
-horo: 8
+coordinate: "rules/unreached · 1/base · 4f116904"
+contentUuid: "e2d2f0fd-fbd8-543d-9ad6-ce8d247862b4"
+diamondUuid: "ff47cc3e-b5e9-8c50-9ddc-226db0f43f81"
+uuid: "4f116904-449c-8818-abf9-f6def9252ce9"
+horo: 1
 typography:
   partition: rules
-  bondDegree: 13
+  bondDegree: 16
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2c5f43c8-274f-8401-b82a-8e752d015152"
+  computationUuid: "0a97a186-ebc1-8c5d-9ec8-3c9e2b2107d2"
   stages:
     - stage: path
       stageUuid: "9d6e22fb-5a8a-815c-9c16-f9d20f2c1b0f"
     - stage: trinity
       stageUuid: "94fec9b5-6dd9-8ee2-936a-2dcca248a85a"
     - stage: boundary
-      stageUuid: "430527c5-8c0a-89a1-be7b-fbe5809d8075"
+      stageUuid: "daa8eda2-5de6-825b-bd7d-a7ad470a556f"
     - stage: links
-      stageUuid: "c9a1d74f-eb07-8a80-9b1d-bde46f15ed60"
+      stageUuid: "53d41ee1-bd72-8491-8e76-3115218b338a"
     - stage: horo
-      stageUuid: "cde3f156-590d-8e29-b032-a36bb0a1c4fa"
+      stageUuid: "348da928-8a9f-8a88-a699-d53395a6a6a5"
     - stage: seal
       stageUuid: "7e48da22-6c40-8767-9cf0-31bb90b04753"
     - stage: uuid
-      stageUuid: "81a7d1a6-36f9-8097-a628-8d401c8a6b4b"
+      stageUuid: "8692aa6f-8d3c-8ea7-949a-26cdb4c20679"
 version: 2
 ---
 # rules/unreached — 80 atoms of code that nothing reaches, from any entry this corpus has
@@ -108,9 +108,50 @@ collection exists too — and **nothing imports `@/payable`**. The mentions else
 string literal. Whether that is a wire to write or capability to drop is a product call, which is
 exactly the boundary this atom already states.
 
+## The sixth door — a path string is a reach, and the census said it was not
+
+The boundary above said it plainly: *Payload reaches admin components by a path string, and
+`admin/ui/cells`, `admin/ui/dashboard` and `admin/ui/nav` are here because nothing names them.* The
+second half was false. `src/plugins/admin/ui/index.ts` names all three — `Cell: '@/admin/ui/cells/
+SealBadgeCell'`, `'@/admin/ui/dashboard/CorpusEntropyDashboard'`, `'@/admin/ui/nav/CorpusNavLinks'` —
+and a test **pinned them as unreferenced**, certifying the walk's blind spot as a fact about the tree.
+They were the three highest-ranked `unreached` leads on the frontier.
+
+`nameDoor` reads every `ts.StringLiteral` that is not an import specifier and matches a Payload
+component path, plus the generated importMap. Measured 2026-10-03: **244 literals, 150 distinct
+paths, 3 of 69 charged atoms named** — 69 → 66, and the three were exactly the ones the prose had
+already pointed at. A comment quoting a path is not a literal and opens nothing; the test plants both.
+
+## The involution — the census asked from the referrer's seat
+
+`unreachedAtoms` walks forward from entries and reports what no walk reaches. `referrersOf` walks
+**backward** from each charged atom and reports who reaches it from outside the charged set: an
+importing file, or a path string. The two are duals, not the same instrument re-run — which is why
+`unreachedStrict` is not one: it closes a door on the same forward walk and can only ever agree.
+
+A charged atom with a **live** referrer is a lead the involution **refutes**: a door the forward walk
+does not open. The frontier tags it a `lie` ([[self]]/involute) and the fix is a door in this walk,
+never a sweep of the atom. Asked live the day it was written, it refuted two — `search/engine` and
+`security/header` pass through the shipped/word doors, which had never propagated what their barrels
+import, exactly as the deployed door once had not. Propagating them released six atoms (66 → 60):
+the two children and four carried through `iso/20022` and `iso/3166/1`.
+
+The other two it reported were not refutations. `dashboard`'s barrel imports `dashboard/nav` and
+**nothing imports the barrel**; the atom-level census had marked `dashboard` reached because a
+descendant file is, so the barrel's death was invisible to it. A referrer therefore carries a `live`
+flag read from the forward walk's own FILE set (`reachedFiles`): a dead referrer does not refute the
+lead, it **carries** it, and names the address where the dead code actually starts. A charged atom
+with no live referrer holds from both seats, and that is the only kind the queue should rank.
+
+Two corrections of the instrument came out of reading its first answers. Seeding exempt barrels
+through the ancestor-marking walk exempted whole parent chains (`en/16931`, `ifrs/15`, `versions`
+read as reached with no referrer at all: 50 where the honest count is 60) — an exempt barrel seeds
+what it imports and nothing else. And the probe that ran the measurement sat at `src/` root, so two
+other axes counted it: the instrument measuring itself.
+
 **Law — [[law]]: an atom of code earns its place by being reachable. Try every door — deployed,
-gated, shipped, or a word — and what is left is code nothing runs. Name it, ratchet it, and decide
-per atom; never sweep it.**
+gated, shipped, a word, or a name — and what is left is code nothing runs. Ask the question from the
+referrer's seat before ranking it; name it, ratchet it, and decide per atom; never sweep it.**
 
 ## Standards
 
