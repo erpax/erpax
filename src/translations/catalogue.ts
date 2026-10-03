@@ -69748,6 +69748,89 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "torus",
+    "path": "quantum/register/torus",
+    "translations": [
+      {
+        "key": "name",
+        "source": "torus",
+        "uuid": "43b7d46f-1c24-8d09-843f-0a94ded8d655",
+        "words": [
+          "torus"
+        ],
+        "values": {
+          "en": "torus"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when every superposition the gate basis can reach must be enumerated rather than sampled — the finite real-Clifford orbit on exact amplitudes, the 4 × 4 double torus of two-qubit product states with the entangled states off it, and every referrer of the register asked to agree with each discovered state from its own standard's perspective.",
+        "uuid": "84848bf5-0fcc-84a9-ab64-4461501598ab",
+        "words": [
+          "use",
+          "when",
+          "every",
+          "superposition",
+          "the",
+          "gate",
+          "basis",
+          "can",
+          "reach",
+          "must",
+          "be",
+          "enumerated",
+          "rather",
+          "than",
+          "sampled",
+          "the",
+          "finite",
+          "real",
+          "clifford",
+          "orbit",
+          "on",
+          "exact",
+          "amplitudes",
+          "the",
+          "double",
+          "torus",
+          "of",
+          "two",
+          "qubit",
+          "product",
+          "states",
+          "with",
+          "the",
+          "entangled",
+          "states",
+          "off",
+          "it",
+          "and",
+          "every",
+          "referrer",
+          "of",
+          "the",
+          "register",
+          "asked",
+          "to",
+          "agree",
+          "with",
+          "each",
+          "discovered",
+          "state",
+          "from",
+          "its",
+          "own",
+          "standard",
+          "s",
+          "perspective"
+        ],
+        "values": {
+          "en": "Use when every superposition the gate basis can reach must be enumerated rather than sampled — the finite real-Clifford orbit on exact amplitudes, the 4 × 4 double torus of two-qubit product states with the entangled states off it, and every referrer of the register asked to agree with each discovered state from its own standard's perspective."
+        }
+      }
+    ]
+  },
+  {
     "atom": "request",
     "path": "quantum/request",
     "translations": [
@@ -212690,4 +212773,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3636
+export const TRANSLATIONS_COUNT = 3637
