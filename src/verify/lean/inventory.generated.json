@@ -1,10 +1,10 @@
 {
   "sealedAt": "2026-10-03",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "399680633f584f1e",
+  "sourcesHash": "7dffd35ecb7094ec",
   "census": {
-    "theorems": 218,
-    "axiomFree": 143,
+    "theorems": 223,
+    "axiomFree": 148,
     "standardAxioms": 75,
     "stubbed": 0
   },
@@ -137,6 +137,42 @@
         },
         {
           "theorem": "Automate.the_low_path_keeps_running",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Coil.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Coil.trinity_is_the_coil",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Coil.backward_is_forward_twice",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Coil.one_turn_each_way_reaches_every_coin",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Coil.seven_laws_fully_crossed",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Coil.no_self_cross",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false

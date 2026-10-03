@@ -32,6 +32,11 @@ const I18N: Record<string, LocalizedString> = {
     bg: 'Един гейт, ФОРМУЛИРАН КАТО КРЪСТОСВАНЕ на два закона: файловете, които двата закона отбелязват, lift спрямо независимост и колко забележимо двойката липсва в прозата. theorem е true при празно сечение над непразни родители.',
     de: 'Ein Gate, FORMULIERT ALS KREUZ zweier Gesetze: die Dateien, die beide Gesetze markieren, der Lift gegen Unabhängigkeit und wie auffällig das Paar in der Prosa fehlt. theorem ist true bei leerem Schnitt über nichtleeren Eltern.',
   },
+  coil: {
+    en: 'The rosetta of laws COILED instead of enumerated: coins (a law and its dual face) in trinities, each trinity turned once forward and once backward — six ordered pairs, every cross in both faces (forward = share of A inside B, backward = share of B inside A). Seven laws coil into two trinities and an axis (accounting-wave); one turn each way at each of the three nodes covers all 21 crosses — `coverage.complete` is the theorem, measured on the live structure. A coil–coil cross unions populations and withholds the lift. Same scans as erpax.gate.crosses plus the unreached and accounting-wave populations.',
+    bg: 'Розетата от закони НАВИТА вместо изброена: монети (закон и дуалното му лице) в тройки, всяка тройка завъртяна веднъж напред и веднъж назад — шест наредени двойки, всяко кръстосване в двете му лица. Седем закона се навиват в две тройки и ос; по един оборот във всяка посока на всеки възел покрива всичките 21 кръстосвания.',
+    de: 'Die Rosette der Gesetze GEWICKELT statt aufgezählt: Münzen (ein Gesetz und seine duale Seite) in Dreiheiten, jede einmal vorwärts und einmal rückwärts gedreht — sechs geordnete Paare, jedes Kreuz in beiden Seiten. Sieben Gesetze wickeln sich zu zwei Dreiheiten und einer Achse; eine Drehung je Richtung an jedem Knoten deckt alle 21 Kreuze.',
+  },
   crosses: {
     en: 'Every pair of the measured laws as a cross-formulated gate, ranked by lift (then shared files): which crosses are theorems at zero, which fire together more than independence predicts, and which have never been drawn in prose. One scan per law pays for every pair.',
     bg: 'Всяка двойка от измерените закони като кръстосан гейт, подредена по lift: кои са теореми при нула, кои се задействат заедно повече от независимостта, кои не са описани в прозата.',
@@ -100,6 +105,29 @@ async function measured(cwd: string): Promise<{ sets: Map<string, ReadonlySet<st
   return { sets, prose: proseCrosses(cwd, live) }
 }
 
+/**
+ * The seven-law rosetta the coil turns: the five file-addressed laws plus the two the frontier
+ * addresses as ATOMS — `unreached` (charged atoms) and `accounting-wave` (gap paths) — brought to the
+ * same address form as a barrel file, so a coil–coil cross can meet them. The order is declared,
+ * because the coil never reorders what it is handed; the remainder is the axis.
+ */
+async function rosetta(cwd: string): Promise<{ laws: string[]; sets: Map<string, ReadonlySet<string>> }> {
+  const { existsSync } = await import('node:fs')
+  const { join } = await import('node:path')
+  const { sets } = await measured(cwd)
+  const barrel = (atom: string): string => {
+    for (const n of ['index.ts', 'index.tsx']) if (existsSync(join(cwd, 'src', atom, n))) return `src/${atom}/${n}`
+    return `src/${atom}`
+  }
+  const { unreachedAtoms } = await import('@/rules/unreached')
+  sets.set('unreached', new Set(unreachedAtoms(cwd).map((a) => barrel(a.atomPath))))
+  const { waveAccountingGapViolations } = await import('@/accounting/gaps')
+  const wave = waveAccountingGapViolations(cwd)
+  sets.set('accounting-wave', new Set(wave.verdict.waves.flatMap((w) => [...w.paths]).map(barrel)))
+  const laws = ['copy', 'cycle', 'concentration', 'mirror', 'unfolded', 'unreached', 'accounting-wave'].filter((l) => sets.has(l))
+  return { laws, sets }
+}
+
 export function buildGateTools(): ReadonlyArray<ErpaxMcpTool> {
   const t = makeToolI18n('erpax.gate.verdicts')
   return [
@@ -160,6 +188,27 @@ export function buildGateTools(): ReadonlyArray<ErpaxMcpTool> {
           pairs: all.length,
           theorems: all.filter((c) => c.theorem).map((c) => `${c.a} × ${c.b}`),
           crosses: all.slice(0, (args.limit as number | undefined) ?? all.length),
+        })
+      },
+    },
+    {
+      name: 'erpax.gate.coil',
+      description: t.desc(I18N.coil!),
+      parameters: {},
+      async handler() {
+        const { coil, coilCrosses, coins, coverage } = await import('@/quantum/coil')
+        const { laws, sets } = await rosetta(process.cwd())
+        const tree = coil(laws)
+        const levels = coilCrosses(sets, laws)
+        const flat = levels.flatMap((l) => [...l.forward, ...l.backward])
+        return json({
+          rosetta: laws,
+          coil: tree.kind === 'coil' ? tree.children.map(coins) : [coins(tree)],
+          coverage: coverage(tree),
+          populations: Object.fromEntries(laws.map((l) => [l, sets.get(l)?.size ?? 0])),
+          theorems: flat.filter((c) => c.theorem && c.a.length === 1 && c.b.length === 1).map((c) => `${c.a[0]} → ${c.b[0]}`),
+          levels,
+          law: 'Coins coil in trinities because three is the one ring a single turn each way closes (C(n,2)=n ⇔ n=3, Coil.lean); more coins coil fractally and one turn each way at every node crosses everything — both faces, nothing enumerated.',
         })
       },
     },
