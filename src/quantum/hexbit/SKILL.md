@@ -116,6 +116,29 @@ buys speed on the operations AFTER the packing, so the honest question is never 
 faster" but "how many times will this value be touched" — and below the break-even, the fastest
 carrier is the one you never build.**
 
+## Cross formulas — the hexit loop folded into one multiply
+
+*Use cross formulas to speed up hex combinatorics.* The two hexit loops here were the combinatorics:
+32 nibbles walked one at a time for a digit sum, and a three-branch ladder per character for a hex
+value. Each has a cross that does the whole word at once, and both were measured before they landed
+(2026-10-03, min of 9 runs, 20,003 values, conversion excluded):
+
+| operation | loop | cross | agree on all 20,003 |
+| --- | ---: | ---: | --- |
+| digit sum of a packed word (`digitalRootPacked`) | 20.8 ns | **6.5 ns · 3.2×** | yes |
+| value of a hex character (`digitalRootOfHex`) | 175.1 ns | **76.1 ns · 2.3×** | yes |
+
+`nibbleSum32` folds neighbouring nibbles into bytes (each ≤ 30) and multiplies once by `0x01010101`,
+which sums the four bytes into the top byte — exact only while nothing carries out, and the two bounds
+that guarantee it (`nibble_pair_fits`, `four_bytes_fit`) are decided in `Hexbit.lean`. `hexitValue` is
+`(c & 15) + 9 · bit6(c)`: the low nibble is the digit or the letter's index, and bit 6 is set on exactly
+the letters — decided equal to the branched value for every one of the 22 hex codes (`cross_is_value`).
+
+**Honest boundary.** These are the hexit combinatorics this corpus actually runs; the collider's
+pairwise crossing is already 1 s and the coil's 28 crosses are set intersections in milliseconds, so
+neither needed a formula. A slow gateway call is still the whole-tree parse (3.2 s cold, 1.4 s warm
+for 7,925 files, ASTs not retained) multiplied by the laws that read it — not a hex cost.
+
 ## Standards
 
 - **ISO/IEC 25010:2023 §5.2** — performance efficiency: a stated figure carries its method.
