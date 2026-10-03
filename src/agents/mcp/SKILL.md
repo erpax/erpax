@@ -3,13 +3,13 @@ name: mcp
 description: "Use when reasoning about erpax's agent gateway — it IS the official @payloadcms/plugin-mcp (collapse sink #1, never hand-roll an MCP server): every enabled collection becomes find/create/update/delete tools at /api/mcp, custom tools (GW fusion, trust) are added via the plugin's mcp config, Bearer API-key auth inherits the key owner's access + multi-tenant scope. erpax makes it TRUST-NATIVE — every tool call passes sandbox (capability + credential-broker + allowlist) and emits a receipt (uuid-chained audit), the dual of an external trust wrapper done from the inside."
 atomPath: "agents/mcp"
 coordinate: "agents/mcp · 2/share · 9076e57b"
-contentUuid: "cf1d25f8-2453-5f1f-94c0-8008d9d22a29"
-diamondUuid: "26e641e1-7e7f-8153-8939-6eb686c2d1df"
+contentUuid: "7adb1ed8-9346-540c-bf3a-5f3967a244a7"
+diamondUuid: "01e2d3df-e572-8258-9463-9a73e8f43242"
 uuid: "9076e57b-f21c-8b80-8dfd-7ee7231a7155"
 horo: 2
 typography:
   partition: agents
-  bondDegree: 137
+  bondDegree: 140
 standards:
   - "BCP-47"
   - "ECMA-402"
@@ -35,22 +35,22 @@ standards:
   - schema.org
 bindings: []
 signatures:
-  computationUuid: "68ed657a-48e7-8465-914f-7feea7405f8b"
+  computationUuid: "15bdfd6c-7620-85b3-ac3e-4c745d3b1fb9"
   stages:
     - stage: path
       stageUuid: "982fead9-ea1f-8a81-909b-6fdbc9d24c96"
     - stage: trinity
       stageUuid: "ac06f3c8-14a2-8ab7-8e09-acf7fc36f6ef"
     - stage: boundary
-      stageUuid: "a30331f8-c5d2-8ba9-9cb7-fcd8a33499cf"
+      stageUuid: "f03d45af-826a-8d59-b33c-60feb21e93af"
     - stage: links
       stageUuid: "98859782-f295-824b-b1df-72b249c85837"
     - stage: horo
-      stageUuid: "047451da-9397-8d51-a7bf-4baf7b053f6d"
+      stageUuid: "493312a4-40ae-8001-bbeb-1a9cc513f296"
     - stage: seal
       stageUuid: "d7ac6b07-6c80-8db5-8c6e-8722dc2b1c91"
     - stage: uuid
-      stageUuid: "22d28528-1c12-8b25-b509-dd703c388b9c"
+      stageUuid: "e303abbd-91c8-8659-bf30-5361cb6deb78"
 version: 2
 ---
 # mcp — erpax's agent gateway is the official Payload MCP, made trust-native

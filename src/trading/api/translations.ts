@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the commercial trading-API catalogue — payment gateways, marketplaces, shipping carriers, Peppol/EDI access points, banking aggregators, and FX feeds; public metadata only, credentials in tenant sandbox.",
-    "uuid": "7c1205b6-bee4-834a-8531-1901a1e14152",
+    "uuid": "0ab07f0b-80fb-8cb5-9273-f816779c4030",
     "words": [
       "use",
       "when",

@@ -132,7 +132,7 @@ describe('erpax.self tools — the factory', () => {
     expect(tools.map((t) => `${t.name}:${t.role}`)).toEqual(['erpax.frontier.next:measure', 'erpax.frontier.involute:involute', 'erpax.frontier.develop:act'])
     expect(Object.keys(tools[0]!.parameters).sort()).toEqual(['limit', 'sources'])
     expect(Object.keys(tools[1]!.parameters).sort()).toEqual(['limit', 'sources', 'tag'])
-    expect(Object.keys(tools[2]!.parameters).sort()).toEqual(['limit', 'rotate', 'sources', 'target', 'word'])
+    expect(Object.keys(tools[2]!.parameters).sort()).toEqual(['apply', 'decide', 'limit', 'rotate', 'sources', 'target', 'word'])
   })
 
   it('names the cost in its description, because every source is a full scan', () => {
@@ -212,14 +212,14 @@ describe('developManifest — the rosetta turned about each lead', () => {
 
   it('every other seat that sees the lead adds its prescription; the lead\'s own law is not repeated; the seat is carried as evidence', () => {
     const rotations = new Map([['payable', rotation('payable', { unreached: 1, unfolded: 4, cycle: 2 }, 5)]])
-    const [d] = developManifest([theorem('unreached', 'payable')], { rotations }, '/nowhere')
+    const [d] = developManifest([theorem('unreached', 'payable')], { rotations }, process.cwd())
     expect(d!.evidence.seat).toBe('corroborated')
     expect(d!.evidence.seats).toEqual(['unreached', 'unfolded', 'cycle'])
     const text = d!.steps.join('\n')
     expect(text).toContain('from the unfolded seat (4 of 5 file(s), 40.0% of its population)')
     expect(text).toContain('from the cycle seat')
     expect(text).not.toContain('from the unreached seat') // its own law — the manifest above already is its step
-    expect(text).toContain('inline it, drop it, or make it reused')
+    expect(text).toContain('inline it, delete it, or make it reused') // the unfolded law's own sentence, read from its SKILL
   })
 
   it('a lead no law holds as files is named a count, not matter; a lead with no rotation is unchanged', () => {
@@ -252,5 +252,17 @@ describe('developManifest — a dependent seat corroborates nothing', () => {
     expect(d!.steps.join('\n')).toContain('a dependent seat — it sees this lead because the other law does')
     expect([...dependentSeats('unreached')]).toEqual(['accounting-wave'])
     expect(dependentSeats('copy').size).toBe(0)
+  })
+})
+
+describe('developManifest — a word the remote agent named', () => {
+  it('a per-target word from ev.words turns the template into planned ops, and wins over the global word', () => {
+    const edges = [{ importer: 'src/gate/index.ts', exporter: 'src/auth/index.ts', names: ['getUserContext'], statement: "import { getUserContext } from '@/auth'", specifier: '@/auth' }]
+    const tangles = new Map([['subscription/gate', { members: ['src/auth/index.ts', 'src/gate/index.ts'], edges }]])
+    const theorem = { ...lead('law:cycle', 'subscription/gate'), tag: 'theorem' as const, instrument: 'x', formula: '' }
+    const [d] = developManifest([theorem], { tangles, word: 'global', words: new Map([['subscription/gate', 'context']]) }, '/nowhere')
+    expect(d!.kind).toBe('ops')
+    expect(d!.ops[0]!.replace).toContain("from '@/auth/context'")
+    expect(d!.steps.join('\n')).not.toContain('decide: true')
   })
 })

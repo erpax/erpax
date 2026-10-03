@@ -2,18 +2,18 @@
 name: hexbit
 description: "Use when reasoning about hexbit — *\"Hexbits compute faster than all else\"* is two claims wearing one sentence, and they have **opposite** answers."
 atomPath: "quantum/hexbit"
-coordinate: "quantum/hexbit · 2/share · 8bacb70a"
-contentUuid: "245d6b9f-f8c9-52a0-bb00-1afa283db3f7"
-diamondUuid: "a31c9373-904a-8fbc-8ccf-3e75cdf13e22"
-uuid: "8bacb70a-a489-867e-a608-c7bfcf11ad99"
-horo: 2
+coordinate: "quantum/hexbit · 4/weave · 51cb853a"
+contentUuid: "7c227ea2-ab0c-5090-ad7d-a56f20caddd3"
+diamondUuid: "5bcbacba-0fd8-83fc-b3c8-c6961974f2bf"
+uuid: "51cb853a-2b3e-8c72-ac7b-66a979c5f666"
+horo: 4
 typography:
   partition: quantum
   bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6e9df477-35fb-8378-9021-876042c5cbc2"
+  computationUuid: "cf9b1b72-d7a3-8919-b753-b00df3e2c79e"
   stages:
     - stage: path
       stageUuid: "becbc2d1-8f37-8e78-a4ad-78cca666612b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d2005041-a5de-814f-8e55-78079256bdf3"
     - stage: horo
-      stageUuid: "db6d5d32-f6ab-869a-ac27-502513d2ecfe"
+      stageUuid: "c9ce54f5-5f3b-81fa-a262-5dc891ffc604"
     - stage: seal
       stageUuid: "c9ecf3a8-e9b4-8b35-bb9a-ed91ef7a0380"
     - stage: uuid
-      stageUuid: "d2b20e36-e5a5-8bd1-8c4c-8a52619cba62"
+      stageUuid: "e5662042-bc4b-8e1b-b068-096123c04047"
 quantum:
   superposition:
     - digit
@@ -49,8 +49,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "6e9df477-35fb-8378-9021-876042c5cbc2"
-    contentUuid: "245d6b9f-f8c9-52a0-bb00-1afa283db3f7"
+    computationUuid: "cf9b1b72-d7a3-8919-b753-b00df3e2c79e"
+    contentUuid: "7c227ea2-ab0c-5090-ad7d-a56f20caddd3"
 version: 2
 ---
 # quantum/hexbit — the hexit decomposition is right; the string encoding of it is the trap
@@ -116,10 +116,33 @@ buys speed on the operations AFTER the packing, so the honest question is never 
 faster" but "how many times will this value be touched" — and below the break-even, the fastest
 carrier is the one you never build.**
 
+## Cross formulas — the hexit loop folded into one multiply
+
+*Use cross formulas to speed up hex combinatorics.* The two hexit loops here were the combinatorics:
+32 nibbles walked one at a time for a digit sum, and a three-branch ladder per character for a hex
+value. Each has a cross that does the whole word at once, and both were measured before they landed
+(2026-10-03, min of 9 runs, 20,003 values, conversion excluded):
+
+| operation | loop | cross | agree on all 20,003 |
+| --- | ---: | ---: | --- |
+| digit sum of a packed word (`digitalRootPacked`) | 20.8 ns | **6.5 ns · 3.2×** | yes |
+| value of a hex character (`digitalRootOfHex`) | 175.1 ns | **76.1 ns · 2.3×** | yes |
+
+`nibbleSum32` folds neighbouring nibbles into bytes (each ≤ 30) and multiplies once by `0x01010101`,
+which sums the four bytes into the top byte — exact only while nothing carries out, and the two bounds
+that guarantee it (`nibble_pair_fits`, `four_bytes_fit`) are decided in `Hexbit.lean`. `hexitValue` is
+`(c & 15) + 9 · bit6(c)`: the low nibble is the digit or the letter's index, and bit 6 is set on exactly
+the letters — decided equal to the branched value for every one of the 22 hex codes (`cross_is_value`).
+
+**Honest boundary.** These are the hexit combinatorics this corpus actually runs; the collider's
+pairwise crossing is already 1 s and the coil's 28 crosses are set intersections in milliseconds, so
+neither needed a formula. A slow gateway call is still the whole-tree parse (3.2 s cold, 1.4 s warm
+for 7,925 files, ASTs not retained) multiplied by the laws that read it — not a hex cost.
+
 ## Standards
 
 - **ISO/IEC 25010:2023 §5.2** — performance efficiency: a stated figure carries its method.
 
 Composes: [[quantum]]/word · [[uuid]] · [[merge]] · [[law]].
 
-<sub>content-uuid `245d6b9f-f8c9-52a0-bb00-1afa283db3f7` · account `quantum/hexbit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c227ea2-ab0c-5090-ad7d-a56f20caddd3` · account `quantum/hexbit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

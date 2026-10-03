@@ -92,6 +92,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "ai/confidence",
   "ai/industry",
   "ai/models",
+  "ai/public",
   "ai/suggestions",
   "akashic",
   "algebra",
@@ -1000,7 +1001,6 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "plugins/emit",
   "plugins/mcp/scopes",
   "plugins/mcp/seed",
-  "plugins/mcp/tools",
   "plugins/naming",
   "plugins/taggable",
   "plugins/versions",
@@ -1909,6 +1909,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "ai/models": [
     "ai",
     "ai/models"
+  ],
+  "ai/public": [
+    "ai",
+    "ai/public"
   ],
   "ai/suggestions": [
     "ai",
@@ -5205,10 +5209,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "plugins/mcp/seed": [
     "plugins",
     "plugins/mcp/seed"
-  ],
-  "plugins/mcp/tools": [
-    "plugins",
-    "plugins/mcp/tools"
   ],
   "plugins/naming": [
     "plugins",

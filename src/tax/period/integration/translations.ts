@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing Phase B5: Tax Period Integration — Standards & Implementation.",
-    "uuid": "d645a9d4-93b4-894e-9a8e-97af218cabc5",
+    "uuid": "8d98a1d7-870f-86e4-9c71-9ed3d30493ab",
     "words": [
       "use",
       "when",

@@ -2,6 +2,7 @@
  * accounting/gaps — wave-batch entropy gap scan (OOM-safe horo waves).
  */
 import { existsSync, readFileSync } from 'node:fs'
+import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
 import { join } from 'node:path'
 import { bypassMathViolations } from '@/law/folder/ratchet/compute'
 import { atomPathHasLedgerHook } from '@/path'
@@ -176,9 +177,12 @@ export function p0AccountingStatus(cwd: string, derive?: (p: string) => FolderRe
   return { parentSealed: parent.sealed, parentNetEb: parent.entropy.netEntropyEb, leaves: P0_ACCOUNTING_LEAVES.map((path) => { const m = modelOf(path); return { path, sealed: m.sealed, netEb: m.entropy.netEntropyEb, gapEb: m.entropy.totalGapEb } }) }
 }
 
-export function waveAccountingGapViolations(cwd = process.cwd()) {
-  const verdict = accountingGapsInWaves(cwd, { maxWaves: 7 })
-  return { count: verdict.gapPathCount, netEb: verdict.corpusNetEb, verdict }
+/** Sealed by the corpus fingerprint: 22.5 s of readme-model folding on an unchanged tree, paid once per tree instead of once per gate. */
+export function waveAccountingGapViolations(cwd = process.cwd()): { count: number; netEb: number; verdict: GapsInWavesVerdict } {
+  return memoByFingerprintOnDisk('accounting-gaps-waves', cwd, () => {
+    const verdict = accountingGapsInWaves(cwd, { maxWaves: 7 })
+    return { count: verdict.gapPathCount, netEb: verdict.corpusNetEb, verdict }
+  })
 }
 
 export function fixGapsOnP0(cwd = process.cwd(), opts: { readonly dryRun?: boolean } = {}): FixAccountingGapsResult {
