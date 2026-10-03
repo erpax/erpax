@@ -6371,6 +6371,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "quantum/chat/coverage"
   },
   {
+    "atom": "door",
+    "name": "door",
+    "description": "Use when an MCP area must open from the chat — chatDoor(session, { area: quantum | gate, door, args }) calls the area's own handlers in-process and folds one line of figures into the session; a refused call folds nothing.",
+    "path": "quantum/chat/door"
+  },
+  {
     "atom": "merkle",
     "name": "merkle",
     "description": "Use when reasoning about merkle — Merkle chain operations — fold message-uuids into tamper-evident thread-uuids",

@@ -3,13 +3,13 @@ name: door
 description: "Use when reasoning about door as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/door"
 coordinate: "vocabulary/door · 2/share · 90e535ae"
-contentUuid: "df966595-9295-5860-967d-479523a14918"
+contentUuid: "259eb89a-ffc3-5f3d-a5df-2b521b81078f"
 diamondUuid: "4476a342-4472-8da5-942f-34f9647c4d84"
 uuid: "90e535ae-ca90-8fbe-9903-1137c6ccb931"
 horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 15
+  bondDegree: 19
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
