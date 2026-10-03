@@ -455,6 +455,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "agents/mcp/tool/kyc"
   },
   {
+    "atom": "millennium",
+    "name": "millennium",
+    "description": "Use when an agent must hold a Clay statement against public data or see how the corpus reads it — erpax.millennium.data runs the dataset witnesses (LMFDB · Odlyzko · OEIS) with receipts and refusals; erpax.millennium.perspectives crosses every problem with its lens atoms and referrers. corpusSolves stays false.",
+    "path": "agents/mcp/tool/millennium"
+  },
+  {
     "atom": "novelty",
     "name": "novelty",
     "description": "Use when reasoning about novelty — conjecture enumerates crosses between laws the corpus already holds: pairs of atoms that are each widely cited and never drawn together.",
@@ -5487,6 +5493,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "correspondence",
     "description": "Use when asked whether string theory or quantum computation bears on the Millennium Problems, or whether any of it strengthens cryptography. A physical duality can PREDICT a statement that mathematics then proves — mirror symmetry is the genuine instance — but a correspondence never proves the problem it corresponds to, so every row carries the precise gap that remains beside what is really established. bearsOnSecurity is false in every row, declared per row rather than waved away: hardness rests on module-LWE, factoring, discrete logs and hash preimage resistance, and no result here constrains any of them.",
     "path": "millennium/correspondence"
+  },
+  {
+    "atom": "data",
+    "name": "data",
+    "description": "Use when a Clay statement must be tested on public data rather than argued — every Millennium problem crossed with the perspectives the corpus reads it from (lens atoms, referrers and their standards) and, where a public dataset exists (LMFDB elliptic curves, Odlyzko's zeta zeros, OEIS primes), checked as a bounded witness; where none exists, refused with the reason.",
+    "path": "millennium/data"
   },
   {
     "atom": "reduction",

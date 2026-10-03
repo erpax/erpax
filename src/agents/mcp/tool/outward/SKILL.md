@@ -3,17 +3,17 @@ name: outward
 description: "Use when reasoning about outward — outward content-addresses every external answer and outward/leads fuses those receipts to , so the corpus can already compute *what changed* and *what to look at next*."
 atomPath: "agents/mcp/tool/outward"
 coordinate: "agents/mcp/tool/outward · 5/round · 3a9e16c3"
-contentUuid: "ecb6c837-3830-5cdb-aabb-c50489902cd7"
-diamondUuid: "f6e9d194-2a88-8f44-ac47-9c8e17487667"
+contentUuid: "92c84f9b-5cae-5100-92f2-6338127f7301"
+diamondUuid: "22805141-54d9-8961-99b0-c617e2954bf1"
 uuid: "3a9e16c3-d163-8dc3-9a8d-34b7ae4083b1"
 horo: 5
 typography:
   partition: agents
-  bondDegree: 60
+  bondDegree: 63
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8c8d06ed-2be1-8f19-b656-28e1e5fb1fa9"
+  computationUuid: "6c503a97-1cb4-8c1c-91c7-128c3d9a4b70"
   stages:
     - stage: path
       stageUuid: "080b3a72-630d-89f2-bc30-e3093a88ca12"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9dc3460c-a898-8981-b136-2929e086526e"
     - stage: horo
-      stageUuid: "7a88e326-e1b9-85bf-9750-8dfd27edea91"
+      stageUuid: "f81a02a6-241e-8300-9760-ba0837776ef7"
     - stage: seal
       stageUuid: "0093f2a9-6be4-888d-b68c-82b5a932e3af"
     - stage: uuid
-      stageUuid: "8cc74b49-aa02-865a-a26c-938b8f0854d5"
+      stageUuid: "799addd7-decf-8f30-a7e8-3bcdee53141d"
 version: 2
 ---
 # agents/mcp/tool/outward — the boundary, asked without a human in the loop

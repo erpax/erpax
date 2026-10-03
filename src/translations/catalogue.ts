@@ -4281,6 +4281,81 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "millennium",
+    "path": "agents/mcp/tool/millennium",
+    "translations": [
+      {
+        "key": "name",
+        "source": "millennium",
+        "uuid": "696b4b7d-0d3e-8159-92bb-69e68b53fd9b",
+        "words": [
+          "millennium"
+        ],
+        "values": {
+          "en": "millennium"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when an agent must hold a Clay statement against public data or see how the corpus reads it — erpax.millennium.data runs the dataset witnesses (LMFDB · Odlyzko · OEIS) with receipts and refusals; erpax.millennium.perspectives crosses every problem with its lens atoms and referrers. corpusSolves stays false.",
+        "uuid": "db020e87-92b3-88be-92bd-3b2c5ed14f22",
+        "words": [
+          "use",
+          "when",
+          "an",
+          "agent",
+          "must",
+          "hold",
+          "a",
+          "clay",
+          "statement",
+          "against",
+          "public",
+          "data",
+          "or",
+          "see",
+          "how",
+          "the",
+          "corpus",
+          "reads",
+          "it",
+          "erpax",
+          "millennium",
+          "data",
+          "runs",
+          "the",
+          "dataset",
+          "witnesses",
+          "lmfdb",
+          "odlyzko",
+          "oeis",
+          "with",
+          "receipts",
+          "and",
+          "refusals",
+          "erpax",
+          "millennium",
+          "perspectives",
+          "crosses",
+          "every",
+          "problem",
+          "with",
+          "its",
+          "lens",
+          "atoms",
+          "and",
+          "referrers",
+          "corpussolves",
+          "stays",
+          "false"
+        ],
+        "values": {
+          "en": "Use when an agent must hold a Clay statement against public data or see how the corpus reads it — erpax.millennium.data runs the dataset witnesses (LMFDB · Odlyzko · OEIS) with receipts and refusals; erpax.millennium.perspectives crosses every problem with its lens atoms and referrers. corpusSolves stays false."
+        }
+      }
+    ]
+  },
+  {
     "atom": "novelty",
     "path": "agents/mcp/tool/novelty",
     "translations": [
@@ -56412,6 +56487,92 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when asked whether string theory or quantum computation bears on the Millennium Problems, or whether any of it strengthens cryptography. A physical duality can PREDICT a statement that mathematics then proves — mirror symmetry is the genuine instance — but a correspondence never proves the problem it corresponds to, so every row carries the precise gap that remains beside what is really established. bearsOnSecurity is false in every row, declared per row rather than waved away: hardness rests on module-LWE, factoring, discrete logs and hash preimage resistance, and no result here constrains any of them."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "data",
+    "path": "millennium/data",
+    "translations": [
+      {
+        "key": "name",
+        "source": "data",
+        "uuid": "811163d7-6e20-8cac-af52-9f754220a4c3",
+        "words": [
+          "data"
+        ],
+        "values": {
+          "en": "data"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when a Clay statement must be tested on public data rather than argued — every Millennium problem crossed with the perspectives the corpus reads it from (lens atoms, referrers and their standards) and, where a public dataset exists (LMFDB elliptic curves, Odlyzko's zeta zeros, OEIS primes), checked as a bounded witness; where none exists, refused with the reason.",
+        "uuid": "a5b0bd1a-406c-8891-b0e2-45e8ade344ba",
+        "words": [
+          "use",
+          "when",
+          "a",
+          "clay",
+          "statement",
+          "must",
+          "be",
+          "tested",
+          "on",
+          "public",
+          "data",
+          "rather",
+          "than",
+          "argued",
+          "every",
+          "millennium",
+          "problem",
+          "crossed",
+          "with",
+          "the",
+          "perspectives",
+          "the",
+          "corpus",
+          "reads",
+          "it",
+          "from",
+          "lens",
+          "atoms",
+          "referrers",
+          "and",
+          "their",
+          "standards",
+          "and",
+          "where",
+          "a",
+          "public",
+          "dataset",
+          "exists",
+          "lmfdb",
+          "elliptic",
+          "curves",
+          "odlyzko",
+          "s",
+          "zeta",
+          "zeros",
+          "oeis",
+          "primes",
+          "checked",
+          "as",
+          "a",
+          "bounded",
+          "witness",
+          "where",
+          "none",
+          "exists",
+          "refused",
+          "with",
+          "the",
+          "reason"
+        ],
+        "values": {
+          "en": "Use when a Clay statement must be tested on public data rather than argued — every Millennium problem crossed with the perspectives the corpus reads it from (lens atoms, referrers and their standards) and, where a public dataset exists (LMFDB elliptic curves, Odlyzko's zeta zeros, OEIS primes), checked as a bounded witness; where none exists, refused with the reason."
         }
       }
     ]
@@ -213399,4 +213560,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3644
+export const TRANSLATIONS_COUNT = 3646
