@@ -2,10 +2,10 @@
 name: door
 description: "Use when an MCP area must open from the chat — chatDoor(session, { area: quantum | gate, door, args }) calls the area's own handlers in-process and folds one line of figures into the session; a refused call folds nothing."
 atomPath: "quantum/chat/door"
-coordinate: "quantum/chat/door · 8/crest · 56cea5b4"
-contentUuid: "5f9e87bc-5e59-5627-8076-ff88cc184223"
-diamondUuid: "b0d6881f-5e2c-8584-81f6-fcb826864681"
-uuid: "56cea5b4-7355-8547-9430-a29c7333e1b5"
+coordinate: "quantum/chat/door · 8/crest · 3ff044fa"
+contentUuid: "e1feb1c9-5db2-56ec-9083-8b2d2ff6f858"
+diamondUuid: "4f709a74-b9bc-8590-9c20-160551248b3f"
+uuid: "3ff044fa-ea52-8497-a803-6e15bc66b7fc"
 horo: 8
 typography:
   partition: quantum
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "bf867da7-22ef-85de-9b42-8c6aa925c25a"
+  computationUuid: "5674e9ad-96c1-8207-a677-3c4de59950d3"
   stages:
     - stage: path
       stageUuid: "ecbd639d-edec-836c-ad46-6eb5144a1b18"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "699497dd-76ed-8146-8662-27d5214a4285"
     - stage: horo
-      stageUuid: "02d77145-b939-8081-b8e7-9f2c3008b930"
+      stageUuid: "632ddf3d-779a-8aed-8d77-01e66303af6b"
     - stage: seal
       stageUuid: "360ee8bc-0d7b-88fa-9427-c74b23e45e0b"
     - stage: uuid
-      stageUuid: "e7dc9efd-18af-8780-99b5-6ac32af8b72b"
+      stageUuid: "ff92b6b3-cfdc-8553-8deb-778275e234fa"
 quantum:
   superposition:
     - chat
@@ -47,8 +47,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "bf867da7-22ef-85de-9b42-8c6aa925c25a"
-    contentUuid: "5f9e87bc-5e59-5627-8076-ff88cc184223"
+    computationUuid: "5674e9ad-96c1-8207-a677-3c4de59950d3"
+    contentUuid: "e1feb1c9-5db2-56ec-9083-8b2d2ff6f858"
 version: 2
 ---
 # quantum/chat/door — an MCP area's tools, opened from the chat
@@ -83,4 +83,4 @@ child atom it already was.**
 
 Composes: [[quantum]]/chat/routing · [[quantum]]/register · [[rules]]/concentration · [[mcp]] · [[law]].
 
-<sub>content-uuid `5f9e87bc-5e59-5627-8076-ff88cc184223` · account `quantum/chat/door` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e1feb1c9-5db2-56ec-9083-8b2d2ff6f858` · account `quantum/chat/door` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
