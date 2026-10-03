@@ -9,6 +9,7 @@
  * @standard schema.org CollectionPage
  */
 import type { Metadata } from 'next'
+import { jsonLdText } from '@/seo'
 import Link from 'next/link'
 import { citationGraph, publishableResults, scholarlyArticle } from '@/publish/registry'
 
@@ -34,7 +35,7 @@ export default function PublicationsPage() {
 
   return (
     <main className="container py-16">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collection) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdText(collection) }} />
       <h1 className="text-4xl font-bold">Publications</h1>
       <p className="mt-4 max-w-3xl text-lg">
         {results.length} results. Each states a law, names what it does <em>not</em> prove, and ships a gate that

@@ -19,14 +19,35 @@ export function readNested(obj: Record<string, unknown>, path: string): unknown 
   return cur
 }
 
-/** Set `path`, creating plain-object parents for any segment that is missing or not an object. */
-export function writeNested(obj: Record<string, unknown>, path: string, value: unknown): void {
+/** The segments that reach the prototype instead of a field. A path carrying one is refused, never written. */
+const PROTOTYPE_KEYS: ReadonlySet<string> = new Set(['__proto__', 'constructor', 'prototype'])
+
+/**
+ * Set `path`. By default a missing or non-object parent is created as a plain object; with
+ * `create: false` the write stops there instead (an array parent counts as "not an object" too), so a
+ * caller coercing an existing document never invents structure. Three atoms carried this body — the
+ * factory's aggregates, the media importer and this one — and all three let `__proto__` through
+ * (CodeQL `js/prototype-pollution-utility`); one body, one refusal.
+ */
+export function writeNested(
+  obj: Record<string, unknown>,
+  path: string,
+  value: unknown,
+  opts: { readonly create?: boolean } = {},
+): void {
+  const create = opts.create ?? true
   const parts = path.split('.')
+  for (const k of parts) {
+    if (PROTOTYPE_KEYS.has(k)) throw new Error(`field/nested: refusing to write through \`${k}\` in path "${path}"`)
+  }
   let cur: Record<string, unknown> = obj
   for (let i = 0; i < parts.length - 1; i++) {
     const k = parts[i]!
     const next = cur[k]
-    if (next === null || typeof next !== 'object') cur[k] = {}
+    if (next === null || typeof next !== 'object' || (!create && Array.isArray(next))) {
+      if (!create) return
+      cur[k] = {}
+    }
     cur = cur[k] as Record<string, unknown>
   }
   cur[parts[parts.length - 1]!] = value

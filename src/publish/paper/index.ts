@@ -288,12 +288,22 @@ export function paperMetadata(input: PaperInput, cwd: string = process.cwd()): R
   }
 }
 
-const escapeTex = (s: string): string =>
-  s
-    .replace(/\\/g, '\\textbackslash{}')
-    .replace(/([&%$#_{}])/g, '\\$1')
-    .replace(/~/g, '\\textasciitilde{}')
-    .replace(/\^/g, '\\textasciicircum{}')
+const TEX_ESCAPE: Readonly<Record<string, string>> = {
+  '\\': '\\textbackslash{}',
+  '&': '\\&',
+  '%': '\\%',
+  $: '\\$',
+  '#': '\\#',
+  _: '\\_',
+  '{': '\\{',
+  '}': '\\}',
+  '~': '\\textasciitilde{}',
+  '^': '\\textasciicircum{}',
+}
+
+// ONE pass over the input. Chained replaces re-escaped their own output: the `{}` that
+// `\textbackslash{}` introduced was then braced to `\textbackslash\{\}`, which is not TeX.
+const escapeTex = (s: string): string => s.replace(/[\\&%$#_{}~^]/g, (c) => TEX_ESCAPE[c] ?? c)
 
 /**
  * A lean paper: claim, the gate that enforces it, the boundary, the prior-art search verbatim.

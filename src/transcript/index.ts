@@ -23,6 +23,7 @@
  * @see ./SKILL.md -- ../local -- ../instrument -- ../handoff
  */
 import { exactMax, exactTrunc } from '@/algebra'
+import { stripTags } from '@/xml/escape'
 import { parseClock } from '@/utility'
 
 /** One cue: what was said, and when. */
@@ -76,11 +77,8 @@ export function parseCaptions(text: string): readonly Segment[] {
     const startMs = timestampMs(timing[1]!)
     const endMs = timestampMs(timing[2]!)
     if (!Number.isFinite(startMs) || !Number.isFinite(endMs)) continue
-    const body = lines
-      .slice(timingIndex + 1)
-      .join(' ')
-      // WebVTT inline markup is presentation, not speech
-      .replace(/<[^>]+>/g, '')
+    // WebVTT inline markup is presentation, not speech
+    const body = stripTags(lines.slice(timingIndex + 1).join(' '))
       .replace(/\s+/g, ' ')
       .trim()
     if (body.length === 0) continue

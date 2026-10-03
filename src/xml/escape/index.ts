@@ -7,6 +7,22 @@
  *
  * @standard XML-1.0 §2.4 predefined-entities
  */
+/**
+ * Remove every `<…>` tag from a text, to a FIXPOINT. One pass of `/<[^>]+>/g` leaves `<scr<x>ipt>`
+ * as `<script>` — CodeQL `incomplete-multi-character-sanitization`, flagged at five sites that each
+ * carried the one-pass form. This is extraction, not HTML sanitisation: it gives the text content of
+ * an XML amount, a WebVTT cue or a README cell, and a caller that needs a safe HTML string escapes
+ * with escapeXml afterwards.
+ */
+export const stripTags = (value: string): string => {
+  let s = value
+  for (;;) {
+    const next = s.replace(/<[^>]*>/g, '')
+    if (next === s) return s
+    s = next
+  }
+}
+
 export const escapeXml = (value: string | number | undefined | null): string => {
   if (value === undefined || value === null) return ''
   return String(value)

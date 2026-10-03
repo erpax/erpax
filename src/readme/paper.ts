@@ -238,12 +238,12 @@ export function scientificPaperOf(
     results = law ?? ''
   } else if (kind === 'LLM') {
     abstract = body.split('\n').slice(1, 4).join(' ').trim()
-    methods = text.match(/<!-- GENERATED[\s\S]*?-->/)?.[0]?.replace(/<!--|-->|-->/g, '').trim() ?? ''
+    methods = text.match(/<!-- GENERATED([\s\S]*?)-->/)?.[1]?.trim() ?? ''
     results = body.match(/^law\s+(.+)$/m)?.[1]?.trim() ?? law ?? ''
   } else {
     abstract = body.match(/^>\s+(.+)$/m)?.[1]?.trim() ?? firstParagraph(body)
     methods =
-      text.match(/<!-- GENERATED[\s\S]*?-->/)?.[0]?.replace(/<!--|-->|-->/g, '').trim() ??
+      text.match(/<!-- GENERATED([\s\S]*?)-->/)?.[1]?.trim() ??
       'derived from live tree'
     const balance = body.match(/\[\[balance\]\]\s+`(\d)`/)?.[1]
     const seal = body.match(/\[\[seal\]\]\s+`(\d)`/)?.[1]

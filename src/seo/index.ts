@@ -15,6 +15,10 @@
 import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { join, dirname, basename } from 'node:path'
 import { uuidOfName } from '@/name'
+import { jsonLdText } from '@/website/seo'
+
+/** The one safe `<script>` serialisation of JSON-LD, owned by the zero-import leaf and offered here too. */
+export { jsonLdText }
 
 export interface Seo {
   readonly title: string
@@ -55,7 +59,7 @@ export function headTags(s: Seo): Array<[string, Record<string, string>] | [stri
     ['meta', { property: 'og:title', content: s.title }],
     ['meta', { property: 'og:description', content: s.description }],
     ['link', { rel: 'canonical', href: s.canonical }],
-    ['script', { type: 'application/ld+json' }, JSON.stringify(s.jsonLd)],
+    ['script', { type: 'application/ld+json' }, jsonLdText(s.jsonLd)],
   ]
 }
 

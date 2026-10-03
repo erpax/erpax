@@ -37,6 +37,7 @@
  */
 
 import type { ErpaxMcpTool } from './tool-defs'
+import { jsonLdText } from '@/seo'
 import { CANONICAL_AREAS } from './standardization'
 import { registerFace, listFaces, type SeoVortexFace } from '@/website'
 
@@ -111,7 +112,7 @@ export function renderToolHead(tool: ErpaxMcpTool, origin: string): string {
   const action = mcpToolAsAction(tool, origin)
   const og = mcpToolAsOg(tool, origin)
   return [
-    `<script type="application/ld+json">${JSON.stringify(action)}</script>`,
+    `<script type="application/ld+json">${jsonLdText(action)}</script>`,
     `<meta property="og:title" content="${og.title}" />`,
     `<meta property="og:description" content="${og.description}" />`,
     `<meta property="og:url" content="${og.url}" />`,
