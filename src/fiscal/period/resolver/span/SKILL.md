@@ -2,11 +2,11 @@
 name: span
 description: "Use when a calendar date must be placed in a fiscal year as a span — monthly, quarterly, weekly, ISO-week, retail 4-4-5 or custom boundaries — as pure functions of the period config; the resolver's child, split out of its 714-line hub so the class keeps its face and the computations get their own proof."
 atomPath: "fiscal/period/resolver/span"
-coordinate: "fiscal/period/resolver/span · 2/share · 1abe9239"
-contentUuid: "d2182a5d-dffd-583a-86bc-9887fc077b05"
-diamondUuid: "c6b9013e-e26f-8727-a813-b760bab0e346"
-uuid: "1abe9239-eb42-870c-b2cd-e775fd52594f"
-horo: 2
+coordinate: "fiscal/period/resolver/span · 7/descent · 08d02b99"
+contentUuid: "184d7579-0f1f-5367-9f5f-86ef4c77411d"
+diamondUuid: "3645b9d6-adb2-81ff-aeb2-1ae3c3e4c46d"
+uuid: "08d02b99-5832-8858-8063-d3a462b4d82a"
+horo: 7
 typography:
   partition: fiscal
   bondDegree: 15
@@ -15,7 +15,7 @@ standards:
   - "ISO-8601:2019 week-numbering (the ISO week)"
 bindings: []
 signatures:
-  computationUuid: "10f44d57-fffd-86a1-a4ea-5e24059b757e"
+  computationUuid: "42d5bc26-f57d-80a1-9d4c-f2245e7a003c"
   stages:
     - stage: path
       stageUuid: "9a0aebe2-d5af-8db8-8374-3594596038f9"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "7ab5c516-42ea-8713-acbf-3eb37059d901"
     - stage: horo
-      stageUuid: "d1dd1d68-8577-8131-b350-3e88a41eeb4a"
+      stageUuid: "f51a6b91-f296-804b-9130-5b97211af5eb"
     - stage: seal
       stageUuid: "6ee89cd5-463a-8621-a540-24828314d07d"
     - stage: uuid
-      stageUuid: "fd1fb74c-6b09-89a3-8cf1-815553603630"
+      stageUuid: "24024b27-4f68-82b4-ab72-27192195dd17"
 version: 2
 ---
 # fiscal/period/resolver/span — where in the fiscal year a date falls

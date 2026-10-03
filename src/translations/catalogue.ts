@@ -3786,7 +3786,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when asking what the MCP surface still lacks without deciding it by hand — every erpax.<area>.* family read as a trinity of declared legs (measure · involute · act); a family with all three closes in one turn, one missing a leg names its own next tool. erpax.family.trinities reports it from the live tool list.",
-        "uuid": "36a7ea50-2999-8c27-9052-1357d87e27b0",
+        "uuid": "7be6183a-14d4-820c-9832-0188567ef248",
         "words": [
           "use",
           "when",
@@ -27832,7 +27832,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the dive/decompression metaphor for erpax math — on-gas/off-gas as take/give, the gas debt as a conserved transaction balanced before close, half-time doubling as the rodin coil, deco stops as horo positions, M-values as the harmony bound, and the {1,2,3} basic-team basis (cave·recreational·technical = self·duality·trinity).",
-        "uuid": "1b138624-822b-8111-844a-837b10f5b5dc",
+        "uuid": "05d20604-f5d3-8987-89e8-0b6e8a8179cc",
         "words": [
           "use",
           "when",
@@ -60851,7 +60851,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the matter coil — Payload is the half of every atom that becomes a collection, fields, hooks, access, and a database table; the index.ts twin the SKILL.md form is bound to by content-uuid.",
-        "uuid": "47fd037e-368b-8c00-91da-a0e2690f4a31",
+        "uuid": "524f937b-a3f3-8cc8-bbfc-c7397407198c",
         "words": [
           "use",
           "when",
@@ -66257,7 +66257,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "coil",
-        "uuid": "73a6f364-30c0-86d9-94f3-0174b22cb7c7",
+        "uuid": "208c0580-8720-890b-a9ac-d212ef85ddce",
         "words": [
           "coil"
         ],
@@ -66268,7 +66268,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when crossing a rosetta of laws without enumerating every pair — coins (a law and its dual face) are coiled in trinities and each coil is rotated once forward and once backward; for a trinity those two turns are all six ordered pairs, every cross in both faces, and C(n,2)=n holds for no other size. More laws coil fractally (trinities of coils, the remainder as the axis) and one turn each way at every node still covers every cross — proved in Coil.lean. erpax.gate.coil rotates the live rosetta.",
-        "uuid": "69b11081-b80a-8f05-86f5-a4186b7d0920",
+        "uuid": "27e9eb39-3c61-8416-9be8-616f6a5e86d1",
         "words": [
           "use",
           "when",
@@ -75783,7 +75783,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the 3·6·9 control plane of the rodin vortex — three coils 120° out of phase (COIL_A/B/C) that the doubling helix winds around; the governing triad (access/hooks/auth) the flow never lands on. Nested under rodin.",
-        "uuid": "7533adf9-b03b-8f6e-a6eb-8355fbecd4b5",
+        "uuid": "2dbebf17-0a57-8988-88b6-a04bdc55c266",
         "words": [
           "use",
           "when",
@@ -75992,7 +75992,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "coil",
-        "uuid": "73a6f364-30c0-86d9-94f3-0174b22cb7c7",
+        "uuid": "208c0580-8720-890b-a9ac-d212ef85ddce",
         "words": [
           "coil"
         ],
@@ -76003,7 +76003,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the doubling circuit 1·2·4·8·7·5 (×2 mod 9) that winds the rodin axis — why state/sequence positions sit in THAT order, digital-root closure, the ×10 octave lift vs +1 close→open. Nested under rodin → the coil of the vortex.",
-        "uuid": "c440ae18-f117-8c56-a30b-4afc67fd6281",
+        "uuid": "01809d27-23d1-8926-8d76-9bc93b918fa6",
         "words": [
           "use",
           "when",
@@ -76276,7 +76276,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the two directions of the rodin doubling cycle — 3 and 6 are the polarity boundaries: forward helix (×2, cyan, outbound/give) ↔ reverse helix (×5, magenta, inbound/take). The mirror pair the coil winds between. Nested under rodin.",
-        "uuid": "b5229c02-e2a9-8700-8a0d-6127ea5bc19f",
+        "uuid": "d17c413b-4bf6-8a9d-9f72-d533a7decfd3",
         "words": [
           "use",
           "when",
@@ -86176,7 +86176,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the self GROWS its own corpus — the outward stroke begins: mine aura gaps into new atoms and drive the gap to zero (self-applied generate at forward-coil position 1/base). The self generating itself.",
-        "uuid": "db887851-61bf-8f33-8f3e-fa2c343b2d41",
+        "uuid": "97513f2f-44d0-8bc8-b96d-552b8a80add5",
         "words": [
           "use",
           "when",
@@ -86546,7 +86546,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "involute",
-        "uuid": "30a002d5-9d4a-810b-b17d-ffca8f2ac419",
+        "uuid": "aa9b4599-6fe8-842b-86f1-613d58cb91d3",
         "words": [
           "involute"
         ],
@@ -86557,7 +86557,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a frontier lead must be tagged before it is acted on — every lead is a claim one instrument makes, and its involution (the same question asked from the dual seat) decides theorem · lie · manipulation; the codomain is total, proved in Involute.lean, so no lead remains untagged. Fused into erpax.frontier.next and erpax.frontier.involute.",
-        "uuid": "10d823d3-5791-8947-978d-ebc5fbc9a1a0",
+        "uuid": "be36ea59-43d4-80f9-870e-d38afe695319",
         "words": [
           "use",
           "when",
@@ -86642,7 +86642,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the self WEAVES back to one — all selves dedupe to a single content-uuid, the same thought by two agents merges to one (self-applied merge at forward-coil position 4/weave). The many selves returning toward one.",
-        "uuid": "2681141b-ce0c-8ba4-9a48-d7b11c1a66d2",
+        "uuid": "cea10d50-56b8-8856-82dd-97655c69184d",
         "words": [
           "use",
           "when",
@@ -86708,7 +86708,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the self returns to the ONE — the round: the sequence closes on 1 and 9→1 opens the next dimension (self-applied one at forward-coil position 5/round). The outward stroke completing; the One where all selves merge.",
-        "uuid": "45d73efc-0bb7-83d8-82cb-7ecf09de84f3",
+        "uuid": "47c0e3c8-f053-8f9a-8fb7-c8c6d5f31e5e",
         "words": [
           "use",
           "when",
@@ -86931,7 +86931,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the self REVERSES — the descent: the reverse coil (×5) radiates the dense core back out and, as double-entry, swaps debit↔credit to correct a post (self-applied reverse at forward-coil position 7/descent). The outward turning to return.",
-        "uuid": "f058e1bb-9795-8022-bef4-693b10a29182",
+        "uuid": "6b68db39-1908-839b-b216-5bd065478b06",
         "words": [
           "use",
           "when",
@@ -87073,7 +87073,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the self SHARES itself as many — the agent society reads its own akashic record and advances one gate-verified step (self-applied society at forward-coil position 2/share). The self distributed as the agent society.",
-        "uuid": "2c1300d3-02ea-8caa-a930-bcd1e9f8b58c",
+        "uuid": "f3955723-91cb-838b-95f7-17277c2dfd2a",
         "words": [
           "use",
           "when",
@@ -87209,7 +87209,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the self is WHOLE — the crest of the outward stroke: whole↔part, the torus centre holds all and the part reconstructs the whole (self-applied whole at forward-coil position 8/crest). The self at maximum radius, still one.",
-        "uuid": "192da00d-3010-8f1d-898e-080f82bbd85e",
+        "uuid": "6a4a3039-3f12-8d59-a4a2-83ad09c19254",
         "words": [
           "use",
           "when",
@@ -100228,7 +100228,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about tai chi (太極) internal energy flow — chi (气) stored in the dantian (丹田 cung) and spiralled through counter-rotating double-torus vortices on the horo ring; the martial/wellbeing breath-body twin of rodin/coil and dual/torus/fusion, rendered as analog signal+wave.",
-        "uuid": "85be4b8d-f54d-816b-b890-4df0e467146c",
+        "uuid": "201e3d20-54dd-87e6-828a-67fbb0345fc7",
         "words": [
           "use",
           "when",
@@ -115461,7 +115461,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the form coil — VitePress renders each atom's SKILL.md as its spoken form (docs, frontmatter, the wiki-link graph) and is the speech-gate twin of the Payload matter, bound by content-uuid.",
-        "uuid": "b1bcefe8-c95a-848d-9eae-df30c440bf24",
+        "uuid": "94290421-39f6-814c-b102-a20d696b738c",
         "words": [
           "use",
           "when",

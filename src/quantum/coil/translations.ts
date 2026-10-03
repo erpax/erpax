@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coil",
-    "uuid": "73a6f364-30c0-86d9-94f3-0174b22cb7c7",
+    "uuid": "208c0580-8720-890b-a9ac-d212ef85ddce",
     "words": [
       "coil"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when crossing a rosetta of laws without enumerating every pair — coins (a law and its dual face) are coiled in trinities and each coil is rotated once forward and once backward; for a trinity those two turns are all six ordered pairs, every cross in both faces, and C(n,2)=n holds for no other size. More laws coil fractally (trinities of coils, the remainder as the axis) and one turn each way at every node still covers every cross — proved in Coil.lean. erpax.gate.coil rotates the live rosetta.",
-    "uuid": "69b11081-b80a-8f05-86f5-a4186b7d0920",
+    "uuid": "27e9eb39-3c61-8416-9be8-616f6a5e86d1",
     "words": [
       "use",
       "when",
