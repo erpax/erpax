@@ -42,8 +42,8 @@ theorem five_moduli_cover_128 : 2 ^ 150 > 2 ^ 128 := by decide
 /-- Four do not: 2^124 < 2^128, so a fifth residue is not decoration. -/
 theorem four_moduli_do_not_cover_128 : 2 ^ 124 < 2 ^ 128 := by decide
 
-/-- Nine such moduli cover a 256-bit product: 2^270 > 2^256 (the exponent threshold is raised so the power is evaluated, not left symbolic). -/
 set_option exponentiation.threshold 300 in
+/-- Nine such moduli cover a 256-bit product: 2^270 > 2^256 (the exponent threshold is raised so the power is evaluated, not left symbolic). -/
 theorem nine_moduli_cover_256 : 2 ^ 270 > 2 ^ 256 := by decide
 
 end Hexbit
