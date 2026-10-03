@@ -50,7 +50,9 @@ is bounded by that sample and says so in `witnesses`.
 each one with every perspective that reads it, test it on every dataset that can be reached, refuse
 the rest by name — and let a failing witness be the one outcome the file exists to report.**
 
-## Standards
+## References — cited, not conformed to
+
+A paper is evidence for a formula, not a standard the corpus conforms to; proof/replaceable counts a `## Standards` row as an axiom until a gate discharges it, and no gate discharges Riemann.
 
 - **Riemann 1859 · von Mangoldt 1905** — the zero-counting formula.
 - **Birch & Swinnerton-Dyer 1965** — rank equals order of vanishing.
