@@ -4,8 +4,19 @@ import { buildOutwardTools } from './index'
 describe('agents/mcp/tool/outward — the boundary, asked over MCP', () => {
   const tools = buildOutwardTools()
 
-  it('offers exactly the two erpax.outward.* tools', () => {
-    expect(tools.map((t) => t.name)).toEqual(['erpax.outward.leads', 'erpax.outward.next'])
+  it('offers the outward trinity — measure · involute · act — and nothing else', () => {
+    expect(tools.map((t) => t.name)).toEqual(['erpax.outward.upstream', 'erpax.outward.leads', 'erpax.outward.next'])
+    expect(tools.map((t) => t.role).sort()).toEqual(['act', 'involute', 'measure'])
+  })
+
+  it('upstream is the involute leg: the boundary asked from the other seat — what Payload publishes that this tree does not hold', () => {
+    const up = tools.find((t) => t.name === 'erpax.outward.upstream')!
+    expect(up.role).toBe('involute')
+    expect(Object.keys(up.parameters)).toEqual(['kind'])
+    // the refusal that keeps a GitHub outage from reading as "nothing published"
+    expect(String(up.description)).toMatch(/refused by name/i)
+    // and the admission that a gap is not a debt
+    expect(String(up.description)).toMatch(/never a debt/i)
   })
 
   it('every description carries its own honest boundary, so a caller cannot read the number alone', () => {

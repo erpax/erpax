@@ -35,13 +35,19 @@ version: 2
 
 [[outward]] content-addresses every external answer and [[outward]]/leads fuses those receipts to
 `nextAsk`, so the corpus can already compute *what changed* and *what to look at next*. Until now
-both were reachable only from a shell. These two tools put them on the MCP surface, which is what
-makes the loop autonomous: an agent asks the boundary directly.
+both were reachable only from a shell. These tools put them on the MCP surface, which is what
+makes the loop autonomous: an agent asks the boundary directly — and the family is a trinity
+([[family]]): a measure, its involution, and the act.
 
-| tool | answers | writes |
-| --- | --- | --- |
-| `erpax.outward.leads` | the leads (`moved` + `fresh`), the unreachable rails, and the coverage | only with `write: true` |
-| `erpax.outward.next` | the single next lead nothing has answered | never |
+| tool | leg | answers | writes |
+| --- | --- | --- | --- |
+| `erpax.outward.leads` | measure | the leads (`moved` + `fresh`), the unreachable rails, and the coverage | only with `write: true` |
+| `erpax.outward.upstream` | involute | the boundary from the other seat — what Payload **publishes** (templates · examples · packages) that this tree does not hold, via [[payload]]/upstream | never |
+| `erpax.outward.next` | act | the single next lead nothing has answered | never |
+
+`leads` asks *what did the world say that we recorded differently*; `upstream` asks the dual, *what
+does the world offer that we never recorded at all*. A gap it reports is a candidate, never a debt —
+D1 over Postgres is a choice — and a directory GitHub refuses is refused by name, not read as empty.
 
 ## Two refusals the descriptions carry, not just this page
 

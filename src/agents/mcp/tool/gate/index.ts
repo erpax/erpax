@@ -201,6 +201,7 @@ export function buildGateTools(): ReadonlyArray<ErpaxMcpTool> {
       parameters: {},
       async handler() {
         const { coil, coilCrosses, coins, coverage } = await import('@/quantum/coil')
+        const { coilImage } = await import('@/image/share')
         const { laws, sets } = await rosetta(process.cwd())
         const tree = coil(laws)
         const levels = coilCrosses(sets, laws)
@@ -209,6 +210,9 @@ export function buildGateTools(): ReadonlyArray<ErpaxMcpTool> {
           rosetta: laws,
           coil: tree.kind === 'coil' ? tree.children.map(coins) : [coins(tree)],
           coverage: coverage(tree),
+          // the result of the formula, drawn and turning — every node a rotation, nested so the inner
+          // turn rides the outer; crosses as edges by their measured faces (image/share)
+          svg: coilImage(laws, levels),
           populations: Object.fromEntries(laws.map((l) => [l, sets.get(l)?.size ?? 0])),
           theorems: flat.filter((c) => c.theorem && c.a.length === 1 && c.b.length === 1).map((c) => `${c.a[0]} → ${c.b[0]}`),
           levels,

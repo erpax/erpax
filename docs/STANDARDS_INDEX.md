@@ -307,6 +307,7 @@ src/app/(frontend)/layout.tsx:7: * @standard BCP-47 language-tag html-lang-attri
 src/app/(frontend)/next/coherence/route.ts:31: * @standard DSP rPPG green-channel pulse extraction (0.7..4 Hz)
 src/app/(frontend)/next/preview/route.ts:9: * @standard HMAC-SHA256 RFC 2104 preview-secret
 src/app/(frontend)/next/seed/route.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control admin-only
+src/app/(frontend)/next/share/route.ts:11: * @standard OGP open-graph-protocol-1.0 og:image
 src/app/(frontend)/next/system/health/route.ts:8: * @standard draft-inadarei-api-health-check health-check-response-format
 src/app/(frontend)/not-found.tsx:5: * @standard schema.org WebPage
 src/app/(frontend)/tenant-domains/[tenant]/[...slug]/page.tsx:4: * @standard schema.org WebPage
@@ -1452,6 +1453,8 @@ src/ifrs/16/types/index.ts:8: * @standard ISO-8601-1:2019 date-time
 src/ifrs/16/types/test.ts:10: * @standard ISO/IEC-29119:2022 software-testing
 src/ifrs/16/validate.ts:4: * @standard ISO/IEC-29119:2022 software-testing runtime-guards
 src/image/index.ts:15: * @standard SVG 1.1 / SMIL animation · deterministic hash-to-art (identicon family)
+src/image/share/index.ts:17: * @standard OGP open-graph-protocol-1.0 (og:image 1200×630)
+src/image/share/index.ts:18: * @standard SVG 1.1 / SMIL animation
 src/incoterms/2020/index.ts:12: * @standard ICC INCOTERMS 2020 publication-no-723E
 src/incoterms/2020/index.ts:13: * @standard ISO 6346 freight-container-code (related)
 src/inertia/index.ts:29: * @standard ISO 80000-4:2019 — quantities and units, mechanics: force, acceleration, mass
@@ -2162,6 +2165,7 @@ src/payload.config.ts:576:       * @standard EN-16931:2017 §BG-3 invoice-status
 src/payload.config.ts:594:       * @standard ISO-3166-1:2020 BG country-code
 src/payload.config.ts:595:       * @standard ISO-4217:2015 currency-codes
 src/payload.config.ts:617:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload/upstream/index.ts:16: * @standard GitHub REST API — repository contents
 src/payment/methods/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/payment/methods/index.ts:15: * @standard ISO-13616-1:2020 iban bank-account-reference
 src/payment/methods/index.ts:16: * @standard ISO-9362:2022 bic bank-routing
@@ -3389,6 +3393,7 @@ src/app/(frontend)/next/preview/route.ts:6: * @rfc 9110 §15.4 redirection-3xx
 src/app/(frontend)/next/preview/route.ts:7: * @rfc 3986 uniform-resource-identifier
 src/app/(frontend)/next/preview/route.ts:8: * @rfc 6265 cookies draft-mode-cookie
 src/app/(frontend)/next/seed/route.ts:4: * @rfc 9110 http-semantics
+src/app/(frontend)/next/share/route.ts:12: * @rfc 9110 §8.3 content-type · RFC 9111 §5.2 cache-control
 src/app/(frontend)/next/system/health/route.ts:6: * @rfc 9110 http-semantics
 src/app/(frontend)/next/system/health/route.ts:7: * @rfc 9110 §15.6.4 503-service-unavailable
 src/app/(frontend)/not-found.tsx:4: * @rfc 9110 §15.5.5 404-not-found

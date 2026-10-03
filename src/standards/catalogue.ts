@@ -7609,7 +7609,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "HTTP Semantics",
     "uuid": "42b50cc1-3e1e-814f-92b8-4ce817395a16",
     "color": "hsl(157 67% 39%)",
-    "count": 78,
+    "count": 79,
     "modules": [
       {
         "path": "src/allow/public/read/tenant/index.ts",
@@ -7668,6 +7668,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/app/(frontend)/next/share/route.ts",
+        "section": "§8.3"
+      },
+      {
         "path": "src/app/(frontend)/next/system/health/route.ts",
         "section": ""
       },
@@ -7701,10 +7705,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/app/my-route/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/billing/stripeWebhookHandlers.ts",
         "section": ""
       }
     ]
