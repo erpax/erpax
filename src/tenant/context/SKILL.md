@@ -3,13 +3,13 @@ name: context
 description: Use when reasoning about tenant request context — the tenant carried through a request.
 atomPath: "tenant/context"
 coordinate: "tenant/context · 2/share · 7ed3bfdb"
-contentUuid: "de4cb963-867e-5fa2-8cc2-07258a2aab56"
+contentUuid: "3d3d6eba-8bc7-5054-891b-2e263d0eb043"
 diamondUuid: "40f07c6d-c666-83bb-bb46-4181c3bb2530"
 uuid: "7ed3bfdb-a9ee-82a9-a296-5e32a7231ff7"
 horo: 2
 typography:
   partition: tenant
-  bondDegree: 29
+  bondDegree: 33
 standards:
   - "BCP-47 language-tag locale-cascade"
   - "ECMA-402"

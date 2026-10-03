@@ -2,8 +2,35 @@
 name: family
 description: "Use when asking what the MCP surface still lacks without deciding it by hand — every erpax.<area>.* family read as a trinity of declared legs (measure · involute · act); a family with all three closes in one turn, one missing a leg names its own next tool. erpax.family.trinities reports it from the live tool list."
 atomPath: "agents/mcp/family"
+coordinate: "agents/mcp/family · 7/descent · afb7d3a3"
+contentUuid: "3964a64c-eccb-5b45-823c-118d22df52be"
+diamondUuid: "2cc668e5-2ab2-86e2-8903-e9aae1e3aaa1"
+uuid: "afb7d3a3-6190-88cb-a7a1-a2dcc9ab6511"
+horo: 7
+typography:
+  partition: agents
+  bondDegree: 39
+standards: []
+bindings: []
+signatures:
+  computationUuid: "2e1c79d4-428f-8c29-b1b2-08fe17685bed"
+  stages:
+    - stage: path
+      stageUuid: "606f1e52-4415-81f3-80e1-8e6f75561d90"
+    - stage: trinity
+      stageUuid: "99c7249d-b1d1-8fee-afee-c46f2d5e7643"
+    - stage: boundary
+      stageUuid: "299c58af-b018-8fed-9ced-5acf9c04d07a"
+    - stage: links
+      stageUuid: "f48a2a47-5dc6-8aac-b23d-b5af05267c86"
+    - stage: horo
+      stageUuid: "88548e8c-35ff-8672-81ae-b6595ac0ce78"
+    - stage: seal
+      stageUuid: "4866013b-e261-8825-9c14-6edad2c2015b"
+    - stage: uuid
+      stageUuid: "8edd231e-89f8-8345-a16a-5c59f595ba72"
+version: 2
 ---
-
 # agents/mcp/family — the surface read as trinity families
 
 The tools of this corpus come in families: `erpax.gate.*`, `erpax.frontier.*`, `erpax.quantum.*`.

@@ -3,13 +3,13 @@ name: code
 description: "Use when reasoning about code as a medical facet of medical — vocabulary pivot to @/code; nested not duplicated."
 atomPath: "medical/code"
 coordinate: "medical/code · 1/base · a6b2d880"
-contentUuid: "b5ab3834-d493-5483-b56b-faecc2fa4240"
+contentUuid: "5ba7c3b8-fbf9-5b87-b1b3-1288568f0ef2"
 diamondUuid: "a0aeccdc-c26d-89a3-95bd-828fb76433a6"
 uuid: "a6b2d880-e332-8f0c-88ed-130c6b870220"
 horo: 1
 typography:
   partition: medical
-  bondDegree: 103
+  bondDegree: 107
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

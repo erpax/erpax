@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when produce carries a certified-organic claim — the labeling status under USDA NOP (7 CFR 205) and EU 2018/848: the National List of allowed/prohibited substances, excluded methods (GMO/irradiation/sewage sludge banned), the 36-month transition, and the organic system plan verified by an accredited certifier. A standards-backed status the product carries through the chain.",
-    "uuid": "2b0f8864-b817-83f5-8b4b-7abcfc40e47d",
+    "uuid": "7296daa8-adaa-8f59-b2e2-881cca4c2166",
     "words": [
       "use",
       "when",

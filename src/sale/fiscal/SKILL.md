@@ -3,18 +3,18 @@ name: fiscal
 description: "Use when reasoning about the fiscal side of a sale — the parent atom for the СУПТО fiscalisation family: the tenant's fiscal context, the receipt it issues, the revenue it recognises, and the references that must resolve."
 atomPath: "sale/fiscal"
 coordinate: "sale/fiscal · 8/crest · 5851932e"
-contentUuid: "ba0a1c6a-e8b2-564e-9227-5e1e0cc57e51"
-diamondUuid: "621c14d9-ac28-8d9c-bb20-30792a0c16d2"
+contentUuid: "f3fbedf7-baba-5bde-beed-09830a9fb029"
+diamondUuid: "2bcf1c3b-6357-8492-a519-72601ab612dc"
 uuid: "5851932e-9c8e-8d9c-9564-f427a2798db2"
 horo: 8
 typography:
   partition: sale
-  bondDegree: 27
+  bondDegree: 33
 standards:
   - "Naredba-N-18"
 bindings: []
 signatures:
-  computationUuid: "c3ef895a-e076-817f-af63-96e821a1fca9"
+  computationUuid: "e0a28462-d450-8947-8213-ce4d3847d8d8"
   stages:
     - stage: path
       stageUuid: "3de3344d-625b-80d9-927a-b3fb9075ff5c"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "9c1c961b-e21e-8c9f-8d15-7ad2940c4366"
     - stage: horo
-      stageUuid: "c731e036-0201-857d-8edf-d20afc6372a4"
+      stageUuid: "e98d7cdf-3485-818d-a7f0-d3e20042a88d"
     - stage: seal
       stageUuid: "ddc25044-952a-8c0a-a755-e5381d2a1532"
     - stage: uuid
-      stageUuid: "a3e7703c-ea31-80a3-82af-f9209aaf34d4"
+      stageUuid: "14b588b0-505e-85b2-9aa8-d56edddfe6e7"
 version: 2
 ---
 # fiscal

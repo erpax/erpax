@@ -3,13 +3,13 @@ name: context
 description: Use when reasoning about context — createAgentContext — the ONE place an AgentContext is assembled.
 atomPath: "agent/context"
 coordinate: "agent/context · 1/base · a03e9b52"
-contentUuid: "16ba8c2e-2ec2-50d3-8c36-820172a9129a"
+contentUuid: "e4218e29-582b-51b7-be3a-c68293112b50"
 diamondUuid: "ba77c341-f156-8268-8e67-dd106e601e2d"
 uuid: "a03e9b52-b072-8ca5-ba48-aa8153d3dc0b"
 horo: 1
 typography:
   partition: agent
-  bondDegree: 29
+  bondDegree: 33
 standards:
   - "ISO/IEC 12207 software-life-cycle (one substrate seam)"
   - "ISO/IEC 25010:2023 §5.4 reusability (single-source-of-truth context)"

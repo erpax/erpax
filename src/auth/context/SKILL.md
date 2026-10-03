@@ -2,8 +2,37 @@
 name: context
 description: "Use when code needs to know WHO is acting on a request without depending on the access predicates — getUser narrows the User | API-key union, getUserContext derives id · tenant · roles. A type-only leaf, split out of @/auth so the subscription gate can read identity without closing the auth ↔ gate import loop the cycle law named."
 atomPath: "auth/context"
+coordinate: "auth/context · 6/6 · 69d5fd61"
+contentUuid: "2a4bff39-f405-51c3-81cf-e7eae3d9e340"
+diamondUuid: "e96d7248-0116-8326-b75e-bc122794236c"
+uuid: "69d5fd61-3254-8bc1-93a4-5ff0afe96366"
+horo: 6
+typography:
+  partition: auth
+  bondDegree: 33
+standards:
+  - "NIST INCITS-359-2012 role-based-access-control"
+  - "NIST-INCITS-359-2012"
+bindings: []
+signatures:
+  computationUuid: "ce885d04-4c89-8656-b2fe-8d5f33d7c273"
+  stages:
+    - stage: path
+      stageUuid: "03d4d309-0fea-88de-9e6d-c589e63a12d2"
+    - stage: trinity
+      stageUuid: "5a2052e6-82f1-868d-bcd0-c6dd62356199"
+    - stage: boundary
+      stageUuid: "509af6a5-38f5-8221-9b6b-9cedb4a19847"
+    - stage: links
+      stageUuid: "98ff75c9-7af3-8815-9983-d20740293a47"
+    - stage: horo
+      stageUuid: "82477e82-6062-84a6-b94a-3a01b6edfd78"
+    - stage: seal
+      stageUuid: "3db5d2e5-176e-83db-998b-90cbadd5c92d"
+    - stage: uuid
+      stageUuid: "4628a16d-a9fd-8e39-90e7-26cca6cd609c"
+version: 2
 ---
-
 # auth/context — who is acting, read from the request and nothing else
 
 `@/auth` is the access-control atom: tenant scoping, role predicates, the feature-gated accounting

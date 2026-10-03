@@ -3,13 +3,13 @@ name: context
 description: "Use when reasoning about context as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/context"
 coordinate: "vocabulary/context · 7/descent · 9009c9b4"
-contentUuid: "c47d46d2-6485-54e6-a9f2-c2fc801cfdee"
+contentUuid: "d4e830d4-1283-50ef-a9f6-83c760c7a411"
 diamondUuid: "d6196515-e91c-8a9c-88e9-5880a8599381"
 uuid: "9009c9b4-d8fd-81ed-8f58-173022f08091"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 29
+  bondDegree: 33
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

@@ -401,6 +401,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "agents/mcp"
   },
   {
+    "atom": "family",
+    "name": "family",
+    "description": "Use when asking what the MCP surface still lacks without deciding it by hand — every erpax.<area>.* family read as a trinity of declared legs (measure · involute · act); a family with all three closes in one turn, one missing a leg names its own next tool. erpax.family.trinities reports it from the live tool list.",
+    "path": "agents/mcp/family"
+  },
+  {
     "atom": "i18n",
     "name": "i18n",
     "description": "Use when reasoning about i18n — MCP localization layer — Slice ZZZZZZZZ (2026-05-11).",
@@ -831,6 +837,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "auth",
     "description": "Use when enabling or configuring Payload authentication on a collection — login/logout, JWT/cookies, API keys, email verification, password reset, login lockout, token expiration, or admin-panel user accounts.",
     "path": "auth"
+  },
+  {
+    "atom": "context",
+    "name": "context",
+    "description": "Use when code needs to know WHO is acting on a request without depending on the access predicates — getUser narrows the User | API-key union, getUserContext derives id · tenant · roles. A type-only leaf, split out of @/auth so the subscription gate can read identity without closing the auth ↔ gate import loop the cycle law named.",
+    "path": "auth/context"
   },
   {
     "atom": "authenticated",
@@ -3375,6 +3387,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "resolver",
     "description": "Use when resolving a calendar date to a fiscal year/period, generating a fiscal calendar, or amending a period config — monthly, quarterly, weekly, iso-week, retail-445 and custom period types, with a chainLeafUuid audit leaf. Read this before trusting any chainLeafUuid: the leaf was a reversible base64 prefix claiming tamper detection, hand-rolled identically in seven atoms, and it is now the corpus fold.",
     "path": "fiscal/period/resolver"
+  },
+  {
+    "atom": "code",
+    "name": "code",
+    "description": "Use when a resolved fiscal period needs its two identifiers — the regulatory code the framework expects (P05_2026, or Q2_2026 under XBRL for a quarterly config) and the chain leaf that binds its payload to the prior leaf through the fold's one algebra (merge). The resolver's child; the base64 'hash placeholder' that once stood here is held false by the test, sentence by sentence.",
+    "path": "fiscal/period/resolver/code"
+  },
+  {
+    "atom": "span",
+    "name": "span",
+    "description": "Use when a calendar date must be placed in a fiscal year as a span — monthly, quarterly, weekly, ISO-week, retail 4-4-5 or custom boundaries — as pure functions of the period config; the resolver's child, split out of its 714-line hub so the class keeps its face and the computations get their own proof.",
+    "path": "fiscal/period/resolver/span"
   },
   {
     "atom": "periods",
@@ -6401,6 +6425,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "quantum/coalesce"
   },
   {
+    "atom": "coil",
+    "name": "coil",
+    "description": "Use when crossing a rosetta of laws without enumerating every pair — coins (a law and its dual face) are coiled in trinities and each coil is rotated once forward and once backward; for a trinity those two turns are all six ordered pairs, every cross in both faces, and C(n,2)=n holds for no other size. More laws coil fractally (trinities of coils, the remainder as the axis) and one turn each way at every node still covers every cross — proved in Coil.lean. erpax.gate.coil rotates the live rosetta.",
+    "path": "quantum/coil"
+  },
+  {
     "atom": "communication",
     "name": "communication",
     "description": "Use when reasoning about communication on the quantum level — a message is a content-uuid (no-cloning, so a forged message has a different uuid), the channel is entanglement, and a received message is intact iff its uuid matches the original.",
@@ -8289,6 +8319,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "plan",
     "description": "Use when a scored gap must become one executable tip — planTrinity builds FORM ⊗ CODE ⊗ PROOF, and isPreciseTip refuses anything vaguer, so 'continue improving' can never be emitted.",
     "path": "self/improve/tip/plan"
+  },
+  {
+    "atom": "involute",
+    "name": "involute",
+    "description": "Use when a frontier lead must be tagged before it is acted on — every lead is a claim one instrument makes, and its involution (the same question asked from the dual seat) decides theorem · lie · manipulation; the codomain is total, proved in Involute.lean, so no lead remains untagged. Fused into erpax.frontier.next and erpax.frontier.involute.",
+    "path": "self/involute"
   },
   {
     "atom": "merge",

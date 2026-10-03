@@ -2,8 +2,57 @@
 name: coil
 description: "Use when crossing a rosetta of laws without enumerating every pair — coins (a law and its dual face) are coiled in trinities and each coil is rotated once forward and once backward; for a trinity those two turns are all six ordered pairs, every cross in both faces, and C(n,2)=n holds for no other size. More laws coil fractally (trinities of coils, the remainder as the axis) and one turn each way at every node still covers every cross — proved in Coil.lean. erpax.gate.coil rotates the live rosetta."
 atomPath: "quantum/coil"
+coordinate: "quantum/coil · 5/round · 73a6f364"
+contentUuid: "c55a6aac-42e1-5393-bcea-d9fa92a6158d"
+diamondUuid: "233e1b5f-baa1-83f4-88b1-fe868e94f6a8"
+uuid: "73a6f364-30c0-86d9-94f3-0174b22cb7c7"
+horo: 5
+typography:
+  partition: quantum
+  bondDegree: 123
+standards: []
+bindings: []
+signatures:
+  computationUuid: "4efb3dbf-80b8-8680-a286-c6b968ce6691"
+  stages:
+    - stage: path
+      stageUuid: "6aa061c6-3c3f-8f7c-a2d1-1c8caf88fa24"
+    - stage: trinity
+      stageUuid: "7c5a8c68-c058-8e05-9676-f0a736bf6fe4"
+    - stage: boundary
+      stageUuid: "165761b8-88fd-8c7e-a99a-0dd4c7b57ca5"
+    - stage: links
+      stageUuid: "3296b9f5-40ea-8860-b035-f3710317bd6e"
+    - stage: horo
+      stageUuid: "34c0fb84-9e7b-8238-8a3f-16d19ce423d6"
+    - stage: seal
+      stageUuid: "1b2ece0f-623d-837a-9455-602fc23aefe1"
+    - stage: uuid
+      stageUuid: "d8f3ffa1-9a3a-8b3c-9840-b657bd3587b6"
+quantum:
+  superposition:
+    - access
+    - axis
+    - base
+    - cmyk
+    - conjecture
+    - coordinate
+    - crest
+    - decompression
+    - superposition
+  collapse:
+    - "Use when crossing a rosetta of laws without enumerating every pair — coins (a law and its dual face) are coiled in trinities and each coil is rotated once forward and once backward; for a trinity those two turns are all six ordered pairs, every cross in both faces, and C(n,2)=n holds for no other size. More laws coil fractally (trinities of coils, the remainder as the axis) and one turn each way at every node still covers every cross — proved in Coil.lean. erpax.gate.coil rotates the live rosetta."
+  seal:
+    sandbox: false
+    receipt: false
+    pathFollow: true
+    canonicalRecord: true
+    analogResults: false
+    speechResults: false
+    computationUuid: "4efb3dbf-80b8-8680-a286-c6b968ce6691"
+    contentUuid: "c55a6aac-42e1-5393-bcea-d9fa92a6158d"
+version: 2
 ---
-
 # quantum/coil — coins in trinities; one rotation each way covers every cross
 
 A **coin** has two faces: a law and its dual — the claim and its involution ([[self]]/involute).
@@ -67,3 +116,5 @@ every node crosses everything — both faces, nothing enumerated, nothing missed
 - **ISO 19011:2018 §6.4** — audit evidence: a finding is corroborated from more than one seat (the two faces).
 
 Composes: [[conjecture]] · [[self]]/involute · [[quantum]]/cross · [[horo]] · [[law]].
+
+<sub>content-uuid `c55a6aac-42e1-5393-bcea-d9fa92a6158d` · account `quantum/coil` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

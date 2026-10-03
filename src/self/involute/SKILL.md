@@ -2,8 +2,35 @@
 name: involute
 description: "Use when a frontier lead must be tagged before it is acted on — every lead is a claim one instrument makes, and its involution (the same question asked from the dual seat) decides theorem · lie · manipulation; the codomain is total, proved in Involute.lean, so no lead remains untagged. Fused into erpax.frontier.next and erpax.frontier.involute."
 atomPath: "self/involute"
+coordinate: "self/involute · 8/crest · 30a002d5"
+contentUuid: "820f2cb2-1e0f-5d94-ac72-fed1df7d415b"
+diamondUuid: "c7689a5b-be77-89b0-b2b4-152a373ea46b"
+uuid: "30a002d5-9d4a-810b-b17d-ffca8f2ac419"
+horo: 8
+typography:
+  partition: self
+  bondDegree: 12
+standards: []
+bindings: []
+signatures:
+  computationUuid: "2fa85bcc-17ed-8d50-88f0-628d89e6f361"
+  stages:
+    - stage: path
+      stageUuid: "e3572cec-0e06-87f5-80c7-56989441272e"
+    - stage: trinity
+      stageUuid: "54a64794-5a17-8bc9-9bc7-4f3893c3b47c"
+    - stage: boundary
+      stageUuid: "3394e92c-3b71-8646-afd3-bcc353b09a37"
+    - stage: links
+      stageUuid: "6a3e9334-6ef2-8e17-b059-8365569ef650"
+    - stage: horo
+      stageUuid: "407f4e41-6e03-8417-8245-0f065710c473"
+    - stage: seal
+      stageUuid: "8ccdb1be-ba6b-8628-bef9-075fc2b85145"
+    - stage: uuid
+      stageUuid: "8b1f2633-e982-848c-96fd-11276d3d1d40"
+version: 2
 ---
-
 # self/involute — a lead that does not survive its involution is a lie, and one nothing can involute is a manipulation
 
 The frontier ([[self]]/sufficient) generates leads: *nothing reaches this atom*, *this gate is red*,

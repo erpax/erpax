@@ -3,13 +3,13 @@ name: context
 description: "Use when resolving which fiscal device, tenant and operator apply to a sale — the context every downstream fiscal step is computed against, so a wrong context silently fiscalises against the wrong device."
 atomPath: "sale/fiscal/context"
 coordinate: "sale/fiscal/context · 8/crest · 1e3f2a13"
-contentUuid: "e7ff2fe8-e038-5317-a53b-35d3a6b48e37"
+contentUuid: "ffc5f056-a210-5102-920e-efd78b2bcb90"
 diamondUuid: "4b16f5d1-0ba4-8156-abdf-7b28183fe10c"
 uuid: "1e3f2a13-54ec-8be5-8f04-3425d742224a"
 horo: 8
 typography:
   partition: sale
-  bondDegree: 29
+  bondDegree: 33
 standards:
   - "BG Наредба-Н-18 §СУПТО fiscal-device-regime"
   - "ISO-3166-1:2020 country-codes (jurisdiction) · ISO-4217:2015 currency"
