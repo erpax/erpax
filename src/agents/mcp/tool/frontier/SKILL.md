@@ -3,19 +3,19 @@ name: frontier
 description: "Use when reasoning about frontier — self/sufficient's could always **order** a frontier and never **generate** one: every intent had to be typed by a person into think's store."
 atomPath: "agents/mcp/tool/frontier"
 coordinate: "agents/mcp/tool/frontier · 1/base · bfa13844"
-contentUuid: "57a9f5a4-768a-5b4b-8c60-c7c1c0c704a2"
-diamondUuid: "7bca87a7-25f4-8395-8047-1af49c5dd60f"
+contentUuid: "e6c7fe07-e88d-5694-9a38-fd050f0d5c23"
+diamondUuid: "01962858-7e33-8465-85db-3eb1b5908667"
 uuid: "bfa13844-e768-8810-b99b-cf34a1812b19"
 horo: 1
 typography:
   partition: agents
-  bondDegree: 27
+  bondDegree: 24
 standards:
   - MCP
   - "MCP 0.6 — tools/list + tools/call result shape {content:[{type,text}]}"
 bindings: []
 signatures:
-  computationUuid: "e1d30bdd-fb5e-81e7-aa7f-a2f9eac7d5c6"
+  computationUuid: "927a34fa-bef0-8cf4-a336-ed7a13088f44"
   stages:
     - stage: path
       stageUuid: "6565840d-9a9e-84a4-9443-ba0dc2baa805"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "9e0d9415-6f07-8ab6-8f42-39ab886ff2bd"
     - stage: horo
-      stageUuid: "7b92b7c7-b7d4-8058-be9b-fd43df0a088e"
+      stageUuid: "1b7940f9-a847-8134-94c0-6df7494048c9"
     - stage: seal
       stageUuid: "8a8b3a1e-3a57-87af-abde-a366a64eead6"
     - stage: uuid
-      stageUuid: "2e8bc621-99f1-83d4-a9ab-ec8689197c45"
+      stageUuid: "f559fef4-922d-8a08-8a4d-79c1cf7e6af0"
 version: 2
 ---
 # agents/mcp/tool/frontier — the corpus's own next move, on the public surface

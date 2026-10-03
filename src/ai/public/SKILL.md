@@ -2,19 +2,19 @@
 name: public
 description: "Use when a remote agent must come from a public AI API with no key at all — every candidate inference door asked the same question keyless and recorded by the status it answers (open · keyed · limited · down); the one open door today is Pollinations. erpax.public.doors measures, erpax.public.cross asks every open door the same question (the dual seat), erpax.public.decide names the leaf word a theorem cannot compute; erpax.frontier.develop fuses it with decide:true and cuts with apply:true."
 atomPath: "ai/public"
-coordinate: "ai/public · 5/round · 32f41dc8"
-contentUuid: "65690985-694f-5889-81d0-b7bbd99607e2"
-diamondUuid: "63414625-771e-8583-9d94-ef0a4584f149"
-uuid: "32f41dc8-5046-8ac2-a83e-a91b4f628a77"
-horo: 5
+coordinate: "ai/public · 2/share · 80ff7708"
+contentUuid: "d75ac33d-c4bd-56ee-a01e-9ed0792c3af3"
+diamondUuid: "253eead5-3f95-8299-be65-207904370000"
+uuid: "80ff7708-088b-82f6-8107-3fc6c6fc76bb"
+horo: 2
 typography:
   partition: ai
-  bondDegree: 62
+  bondDegree: 65
 standards:
   - "OpenAI chat-completions wire shape — the lingua franca the open doors speak"
 bindings: []
 signatures:
-  computationUuid: "e498b077-4015-866a-b499-c43785e58cbf"
+  computationUuid: "4af91694-de0b-805c-80bd-87251051d67e"
   stages:
     - stage: path
       stageUuid: "d731c45a-fc3f-8594-98b2-39c8f8cb3d9f"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "a70609b5-1376-88aa-b7ac-df3f5c761c12"
     - stage: links
-      stageUuid: "c1d49456-2c0b-830d-ab8b-5104a18207e2"
+      stageUuid: "ae0e4edb-40b9-8026-8e6d-df20c08a665f"
     - stage: horo
-      stageUuid: "b41ce631-8ac0-8e4f-b8ba-a3c4c6707f54"
+      stageUuid: "b62f4824-f07f-8e3f-b326-1db4efee25c8"
     - stage: seal
-      stageUuid: "4828b2e0-815e-8260-9182-f37e9daf0502"
+      stageUuid: "0927894e-da25-8829-ad41-33de53fe53e2"
     - stage: uuid
-      stageUuid: "4d560f9e-8df8-86d1-ad7a-20d52922e454"
+      stageUuid: "7dcf596c-d80d-8153-88fd-e667d9039b94"
 version: 2
 ---
 # ai/public — the inference doors that answer with no key, probed not believed
@@ -78,4 +78,4 @@ the decision no theorem computes, never the cut.**
 - **OpenAI chat-completions wire shape** — the lingua franca the open doors speak.
 - **EU AI Act 2024** — transparency: the external model is named per answer (`door`).
 
-Composes: [[ai]]/models · [[mcp]]/tool/frontier · [[scalpel]] · [[family]] · [[law]].
+Composes: [[ai]]/models · [[agents]]/mcp/tool/frontier · [[scalpel]] · [[family]] · [[law]].

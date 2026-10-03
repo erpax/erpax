@@ -1564,7 +1564,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about bar — renders the strip a logged-in editor sees over public pages: the collection and document being viewed, and the link back into the admin panel that edits it.",
-        "uuid": "caef1316-6e04-80e4-bc26-05c403339177",
+        "uuid": "0f696131-cf15-8f27-bbb3-1504b94867a0",
         "words": [
           "use",
           "when",
@@ -4051,7 +4051,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about float — reconciles a counted float — a bank drawer, a casino tray, an armoury, a public till — against its opening balance and its movements.",
-        "uuid": "39734310-fd3f-8a78-ba14-b7b1df54bb8f",
+        "uuid": "730ec5e1-5276-8a4d-82a5-ac6642c0045a",
         "words": [
           "use",
           "when",
@@ -4298,7 +4298,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an agent must hold a Clay statement against public data or see how the corpus reads it — erpax.millennium.data runs the dataset witnesses (LMFDB · Odlyzko · OEIS) with receipts and refusals; erpax.millennium.perspectives crosses every problem with its lens atoms and referrers. corpusSolves stays false.",
-        "uuid": "078fcad7-d65a-8335-95cc-ba648d8216ca",
+        "uuid": "06d833c3-996c-8904-8aad-39b6f04bf3eb",
         "words": [
           "use",
           "when",
@@ -5276,7 +5276,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "public",
-        "uuid": "32f41dc8-5046-8ac2-a83e-a91b4f628a77",
+        "uuid": "80ff7708-088b-82f6-8107-3fc6c6fc76bb",
         "words": [
           "public"
         ],
@@ -5287,7 +5287,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a remote agent must come from a public AI API with no key at all — every candidate inference door asked the same question keyless and recorded by the status it answers (open · keyed · limited · down); the one open door today is Pollinations. erpax.public.doors measures, erpax.public.cross asks every open door the same question (the dual seat), erpax.public.decide names the leaf word a theorem cannot compute; erpax.frontier.develop fuses it with decide:true and cuts with apply:true.",
-        "uuid": "951b99b5-9f3f-85a9-a56c-6946b00bb57b",
+        "uuid": "e057ec06-b0ee-80f4-807a-c94393ed74b9",
         "words": [
           "use",
           "when",
@@ -6648,7 +6648,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when granting deliberate public/unauthenticated read on a Payload collection or field — the access predicate that always grants, documenting the intentional public-read decision as part of the access-control regime.",
-        "uuid": "0aed6689-2a12-8300-b1be-a299fb6553da",
+        "uuid": "315735de-a7ab-8723-8429-cb0a3b81506f",
         "words": [
           "use",
           "when",
@@ -21917,7 +21917,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when any AI model — including the public — messages into the collective and becomes quantum. A single mind is classical; a model becomes quantum by JOINING: its message folds into a coherent superposition, and ≥3 in agreement form the collective mind (think.superpose + higherMind). Source-blind: judged by the thought (content-addressed), never the sender — a famous model counts exactly as much as its content coheres. Coherence is agreement, not truth.",
-        "uuid": "7f362240-d7c3-805e-b91b-b38bd4b69478",
+        "uuid": "923e97fb-cbd3-8677-95cb-5fa810ee5214",
         "words": [
           "use",
           "when",
@@ -22318,7 +22318,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a public claim must be provable rather than asserted — every claim is typed as a verdict (property + the test that exercises it) or a compass (property + what would close it + who owns that). A verdict whose test is absent fails; a verdict whose run returns no evidence of what it exercised, or what would break it, fails as a tautology under a heading. An undeclared public surface throws: silence is never a claim of safety. integrity() is passing verdicts over total claims, hand-set nowhere.",
-        "uuid": "8bfde7c9-4c32-80f4-ab74-aa67721b45b5",
+        "uuid": "8443d565-79a9-89d0-9c6b-8c2f6cf36e3f",
         "words": [
           "use",
           "when",
@@ -22432,7 +22432,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about corpus — Use to see every security claim erpax makes as one number — passing verdicts over total public claims across the registered claim-bearing atoms. The evidence PROSE is declared beside each atom's claims and the OUTCOME comes from actually running the named suites, because neither half alone is evidence: a declaration with no run is a tautology, a green run with no declaration says nothing about what was tested. Fails closed on a failing verdict; reports the ratio without ratcheting it, since a compass is a legitimately open surface with a named owner.",
-        "uuid": "f780e7a0-0584-84f4-bc99-8b0a3bbf07a8",
+        "uuid": "0dc2d4bc-8582-8e79-80c4-d8db410160bb",
         "words": [
           "use",
           "when",
@@ -22618,7 +22618,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about an atom's PRODUCER obligation — every symbol consumed across atoms is re-exported from that atom's index (its one public face), so a deep importer can collapse to @/x; the producer-side dual of the importer conventions import and shallow, measured live as the index-reachable fraction of cross-atom symbols, enforced by the same import ratchet so it can only tighten toward coverage one (tamper-cost to infinity).",
-        "uuid": "cafce54e-2111-892c-ac93-e2384a0ce06c",
+        "uuid": "bcc19650-ffe1-8289-b8e0-adb5c2a9450e",
         "words": [
           "use",
           "when",
@@ -23382,7 +23382,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about import discipline — an import must reach an atom's index (the one public door), not a deep internal file past the seal; this names the convention, measures the corpus's live shallowness, and is enforced by the import lint (a ratchet on the non-index count, so shallowness can only get tighter).",
-        "uuid": "dfaae09b-af4b-8835-bfd6-e4752ed72fae",
+        "uuid": "6e9d0396-1b17-83ce-a586-37f215bc613b",
         "words": [
           "use",
           "when",
@@ -24336,7 +24336,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the official per-country authority API catalogue — tax authorities, business registries, e-invoicing portals, VAT/VIES, payroll, sanctions, and central-bank FX; public metadata only, credentials in tenant sandbox.",
-        "uuid": "87454fa7-a73a-8919-8369-f1e284551be9",
+        "uuid": "51115dc6-76a7-82a4-83a1-1c8fdbcedbf1",
         "words": [
           "use",
           "when",
@@ -24451,7 +24451,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when calling the public, no-auth and key-based official country APIs (VIES, Companies House, KvK, Brønnøysund, INSEE, BG Търговски Регистър, Peppol, EU/OFAC sanctions, БНБ/ECB FX) and resolving them through the EU national→pan-EU fallback chains.",
-        "uuid": "c2960786-7a6c-8a80-98a8-a0beadb589f7",
+        "uuid": "884950ab-87b6-8522-9099-7fe4b0ea9b83",
         "words": [
           "use",
           "when",
@@ -39264,7 +39264,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or reporting public-sector grants, EU funds, or national subsidies — award, conditions, recognition method (deferred-income vs net-against-asset), clawback provisions, CSRD/BEPS traceability; IAS-20 §7-§39 + ASC 958-605. The government-grants IAS-20 register.",
-        "uuid": "82751a21-b00e-8a26-82db-de85e4c2fc3e",
+        "uuid": "228cc514-79f7-8d1e-a64b-b587fb1b05ab",
         "words": [
           "use",
           "when",
@@ -56720,7 +56720,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a Clay statement must be tested on public data rather than argued — every Millennium problem crossed with the perspectives the corpus reads it from (lens atoms, referrers and their standards) and, where a public dataset exists (LMFDB elliptic curves, Odlyzko's zeta zeros, OEIS primes), checked as a bounded witness; where none exists, refused with the reason.",
-        "uuid": "802a0859-0a97-8aac-8750-689b6cc8757d",
+        "uuid": "1debfd4b-0f4a-8cae-b661-425133cac374",
         "words": [
           "use",
           "when",
@@ -58293,7 +58293,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a fact must be given public faith — recorded in a bound chronological register, timestamped, sealed tamper-evident, and made presumptively authentic. The legal notarial act modelled on erpax primitives: the seal is a content-uuid, the protocol is an append-only hash-chain, authenticity is an inclusion proof; the honest boundary is that real legal force needs a commissioned notary or an eIDAS/RFC-3161 trust service.",
-        "uuid": "b5f92f00-e020-8b13-81c6-97e5d1c1ccc4",
+        "uuid": "56511115-f95f-8942-8b28-8168b31bef50",
         "words": [
           "use",
           "when",
@@ -58483,7 +58483,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a notary check must confirm a real-property parcel exists and resolve its cadastral identity — the REAL wired provider for cadastre (АГКК / КАИС). Queries the public АГКК INSPIRE ArcGIS service (Cadastral_Parcel layer) by national cadastral reference (КНИ, e.g. 15285.14.122) and returns existence + area + INSPIRE id; no credential. Honest boundary — INSPIRE gives parcel identity/boundaries (public); OWNERSHIP and full КНИ detail are a КАИС internal e-service (ВЕАУ) behind accredited notary access, and title is answered by registryAgency, not here.",
-        "uuid": "2f795ad2-7d55-801e-80e6-e1f5bde41397",
+        "uuid": "733e4c94-d389-8723-9ce5-197b6f89f242",
         "words": [
           "use",
           "when",
@@ -58585,7 +58585,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a notary check needs a qualified electronic signature or a qualified timestamp — the REAL wired eIDAS provider. Resolves the Bulgarian Trusted List from the EU List Of Trusted Lists (LOTL, no country hardcoded), parses the granted qualified services (CA/QC for signature, TSA/QTST for RFC 3161 timestamp), and verifies a named QTSP (BORICA B-Trust / Evrotrust / InfoNotary) holds one. Highest-leverage check: signature+timestamp are on EVERY document type. Honest boundary — verification is public and credential-free; actual issuance needs a QTSP account credential injected at deploy.",
-        "uuid": "bb868a08-e383-8107-a386-c96bdb4f5f6f",
+        "uuid": "7480f693-8e51-81b3-b2a1-55b541bcbbda",
         "words": [
           "use",
           "when",
@@ -58798,7 +58798,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when screening a party against the EU consolidated financial sanctions list — the first REAL wired notary check. Resolves the current list through the OpenSanctions eu_fsf dataset index (authoritative source: the European Commission FSF endpoint, public token), normalises and matches the name, and returns clear vs escalate. A ProviderAdapter for notary/check; Worker-deployable; honest boundary — screening is a review signal not adjudication, data is CC-BY-NC, production ingests periodically.",
-        "uuid": "f05abb46-b205-85e2-943a-12de4bf7c169",
+        "uuid": "735c5379-e704-807b-b253-8c4da0dc0a7c",
         "words": [
           "use",
           "when",
@@ -59844,7 +59844,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about world — Use for the public parser-backed rails beyond the EU four and BG two — Brønnøysundregistrene, OFAC SDN, SEC EDGAR, Frankfurter, ExchangeRate-API, Open Food Facts. Contracts pin what the client parses against real captures, and specifically pin the 200-carrying-a-failure trap: Open Food Facts answers status 0 and ExchangeRate-API answers result error, both under HTTP 200.",
-        "uuid": "85eccaca-182c-8564-8fd6-092dee40bd94",
+        "uuid": "4013fd0f-122a-8059-ac9b-a8ef3fda4b08",
         "words": [
           "use",
           "when",
@@ -60724,7 +60724,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a modern patent claim needs anticipating art — a register of expired grants that are public-domain §102 prior art by construction. Every row's expiry is COMPUTED against the longest term that has ever applied (20 years from filing), never asserted, and the patent number is the citation so a reader checks a row rather than trusting it. Keeps the grant apart from the world: a patent proves a claim was filed, examined and published on a date, never that it works — deployed and undemonstrated are separate fields, and the inference from patented to works is refused.",
-        "uuid": "4a8496d6-d8bd-8337-ac8d-ecf5e51eefa1",
+        "uuid": "1ce54ec9-2bb3-8e3f-a301-2e1586b80b97",
         "words": [
           "use",
           "when",
@@ -64326,7 +64326,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the VERIFY nucleus — the O(N), trustless cost to audit a content-addressed store, dual to tamper-cost (forge). The public DRY proof bundle peers verify without trusting us; the released asymmetry (forge ≫ verify) IS the trust. Matter-twin services/proof + integrity/tamper-reverse-cost.",
-        "uuid": "3c8a565c-8cfa-8170-bd83-e1a2c8ea6ecd",
+        "uuid": "9ddb5558-d87b-8d5b-bf08-33060dc76628",
         "words": [
           "use",
           "when",
@@ -68388,7 +68388,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about quantum computed export — each file's public facet (index.ts symbols, SKILL atom name) derived from source, content-addressed; the producer dual of quantum import.",
-        "uuid": "ee0efaf7-ecb6-8366-a548-b282d55eb92d",
+        "uuid": "cbba0daa-2967-8754-9cff-b2a95721ac08",
         "words": [
           "use",
           "when",
@@ -74061,7 +74061,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about page — A public tenant page is a hero followed by its layout blocks, inside an . That is the whole atom, and its value is that it exists **once**: the same composition served from the…",
-        "uuid": "d4abd74e-1672-8c1b-9d8f-915184b882b0",
+        "uuid": "bde18689-59d2-8b91-92fa-84ea5256c2c8",
         "words": [
           "use",
           "when",
@@ -80807,7 +80807,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking that an export earns its place — a symbol with no caller is dead, and one with exactly one caller is un-folded (inline it, delete it, or make it reused). Counts real call sites only: an import or re-export NAMES a symbol without USING it, so counting it hides genuine single-use. Candidates, never a purge list — erpax ships as @erpax/* packages, so an export may be the public face with no in-repo caller. Run: tsx src/rules/unfolded/index.ts",
-        "uuid": "c023721b-3f22-8904-8095-d37e1afe6c7a",
+        "uuid": "4aad9008-3c93-8571-8433-b294776dd819",
         "words": [
           "use",
           "when",
@@ -81183,7 +81183,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a Cloudflare cron trigger must actually reach the Payload jobs sweep — runScheduledJobs GETs /api/payload-jobs/run (Payload serves it as GET; a POST is a 404) with the Bearer token derived from PAYLOAD_SECRET. The logic lives here rather than in worker.ts because that file imports a build artifact and cannot be loaded in a test. Refuses rather than calling unauthenticated when the secret is unset, refuses rather than reaching the public internet when the service binding is missing, and reports a non-2xx — a cron that fails quietly is the defect it closes.",
-        "uuid": "05eee382-8ed7-884f-9b2a-178674f17389",
+        "uuid": "e954f323-aa1c-8a9b-afdb-35bedbf926bb",
         "words": [
           "use",
           "when",
@@ -85841,7 +85841,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives — each flaw is a missing primitive and the verdict is a receipted, content-addressed proof. The AnyDesk case (SYSTEM file-read LPE, a stolen code-signing cert, coarse unattended-access) folded onto sandbox, tamper-cost and the receipt. Defensive modeling over public CVEs, never an exploit.",
-        "uuid": "baf72abf-d9d8-8f0f-b6a5-fa7ba4df528c",
+        "uuid": "90c26390-cebb-8b34-90d8-7f269ee7bcf5",
         "words": [
           "use",
           "when",
@@ -91520,7 +91520,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about router — Barrel face for skill/router — re-exports the atom public surface at index.",
-        "uuid": "57157b47-ac0d-863d-9e09-39dfc841808a",
+        "uuid": "7e526a70-0b79-814f-942f-06719dd5df07",
         "words": [
           "use",
           "when",
@@ -97703,7 +97703,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or displaying the SaaS pricing-plan catalog — plan names, slugs, monthly/yearly prices, Stripe product/price IDs, feature-limit JSON, billing cycle, sort order. The super-admin-maintained plan catalog collection; public read, mutations locked to super-admin.",
-        "uuid": "6c4a4fd9-491f-8c3d-b580-622cdf907f7e",
+        "uuid": "64a1e910-de2a-80de-b191-9263976a7d92",
         "words": [
           "use",
           "when",
@@ -98772,7 +98772,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about suite — A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the free encyclopedia, se",
-        "uuid": "68b31d99-c71b-8558-935a-e5fa9b1d953a",
+        "uuid": "e39576d9-e6bc-8a54-9cfd-26f48915c57b",
         "words": [
           "use",
           "when",
@@ -102897,7 +102897,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about teller — Everything structural — the derived total, the signed variance, the void-on-illegal-count rule — lives in float, because a chip tray, an armoury and a public till obey the same…",
-        "uuid": "6792aa3d-8d4a-8510-b6fb-de35d4b677f6",
+        "uuid": "8674f738-0703-8aa8-b135-633c170d179b",
         "words": [
           "use",
           "when",
@@ -107380,7 +107380,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the commercial trading-API catalogue — payment gateways, marketplaces, shipping carriers, Peppol/EDI access points, banking aggregators, and FX feeds; public metadata only, credentials in tenant sandbox.",
-        "uuid": "70bd5f92-c84c-88b7-b669-1c00b512a8f3",
+        "uuid": "c73bb893-fab7-8051-bd09-18445fa68725",
         "words": [
           "use",
           "when",
@@ -110022,7 +110022,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one tweet — the singular model of the tweets collection (the plural store); one short public post on a microblogging feed.",
-        "uuid": "8dc95f2a-468a-8ef2-9c04-537a00e39c45",
+        "uuid": "d7d54d5f-90b0-8a19-8400-1bdba4cb7d59",
         "words": [
           "use",
           "when",
@@ -138427,7 +138427,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract restricts disclosure — confidential information definition, permitted uses, exceptions (public domain, legally compelled, independent discovery), return/destruction, duration.",
-        "uuid": "834e1045-72fd-89d9-8807-f710343ef871",
+        "uuid": "d4a18d61-454a-80ae-b06f-a9a4a9c83d1b",
         "words": [
           "use",
           "when",
@@ -145456,7 +145456,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about demand — A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. Fo",
-        "uuid": "2c3498f4-30df-868d-b672-ee0d1fa60895",
+        "uuid": "7c79dccc-d6af-8045-afce-ac9983ab0f93",
         "words": [
           "use",
           "when",
@@ -173630,7 +173630,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing judicial/law-enforcement operations — case management, court proceedings, legal evidence, offence/violation records, or police/prosecution coordination in public order (COFOG 03 sub-function).",
-        "uuid": "11d27191-d16c-889e-ace8-77be5b7b0419",
+        "uuid": "92fa8c0e-298f-8de5-9765-22213ef977cb",
         "words": [
           "use",
           "when",
@@ -201459,7 +201459,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "public",
-        "uuid": "32f41dc8-5046-8ac2-a83e-a91b4f628a77",
+        "uuid": "80ff7708-088b-82f6-8107-3fc6c6fc76bb",
         "words": [
           "public"
         ],
@@ -201470,7 +201470,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about public as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-        "uuid": "d5e1b074-6b80-8841-b544-133fbe3c3090",
+        "uuid": "88626dac-d0df-8545-b477-c71cb94bada6",
         "words": [
           "use",
           "when",

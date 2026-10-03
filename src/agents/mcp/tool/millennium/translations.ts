@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an agent must hold a Clay statement against public data or see how the corpus reads it — erpax.millennium.data runs the dataset witnesses (LMFDB · Odlyzko · OEIS) with receipts and refusals; erpax.millennium.perspectives crosses every problem with its lens atoms and referrers. corpusSolves stays false.",
-    "uuid": "078fcad7-d65a-8335-95cc-ba648d8216ca",
+    "uuid": "06d833c3-996c-8904-8aad-39b6f04bf3eb",
     "words": [
       "use",
       "when",
