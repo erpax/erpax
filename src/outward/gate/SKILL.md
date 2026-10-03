@@ -3,13 +3,13 @@ name: gate
 description: "Use when wiring the outward contracts into CI, pre-push or the release workflow — runs all twelve OFFLINE contracts (EU four, BG two, world six) plus the coverage ratchet and the contracted-endpoint resolve check, fail-closed. Offline by construction: it imports only the frozen-capture functions, so a correct erpax can never fail its release because an authority is rebooting."
 atomPath: "outward/gate"
 coordinate: "outward/gate · 4/weave · 893e5ca4"
-contentUuid: "88766c24-f6eb-542a-aa85-5c547d36d8aa"
+contentUuid: "189d01fc-28b8-508c-be2e-e4d3537e42af"
 diamondUuid: "cfa38661-1c26-8561-be71-24eaec64314a"
 uuid: "893e5ca4-cd11-853b-a368-67dc67d60c8c"
 horo: 4
 typography:
   partition: outward
-  bondDegree: 285
+  bondDegree: 292
 standards:
   - "ISO 19011:2018 §6.4 — audit evidence: the contract IS the evidence"
 bindings: []

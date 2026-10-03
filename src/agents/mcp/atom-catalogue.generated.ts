@@ -437,6 +437,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "agents/mcp/tool/frontier"
   },
   {
+    "atom": "gate",
+    "name": "gate",
+    "description": "Use when an agent must ask the gate registry instead of waiting for the push lane — erpax.gate.verdicts reads every guardian from the same arbiter the lane runs; erpax.gate.cross and erpax.gate.crosses are the gates formulated as crosses of two laws (shared population, lift against independence, absence in prose, theorem-at-zero).",
+    "path": "agents/mcp/tool/gate"
+  },
+  {
     "atom": "kyc",
     "name": "kyc",
     "description": "Use when reasoning about kyc — answers the one question the directive actually asks: **what level of customer due diligence is owed**, given facts someone else established.",

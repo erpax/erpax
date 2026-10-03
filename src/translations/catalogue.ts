@@ -4062,6 +4062,89 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "gate",
+    "path": "agents/mcp/tool/gate",
+    "translations": [
+      {
+        "key": "name",
+        "source": "gate",
+        "uuid": "c1befecc-3f83-88f1-829b-2138de66a19c",
+        "words": [
+          "gate"
+        ],
+        "values": {
+          "en": "gate"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when an agent must ask the gate registry instead of waiting for the push lane — erpax.gate.verdicts reads every guardian from the same arbiter the lane runs; erpax.gate.cross and erpax.gate.crosses are the gates formulated as crosses of two laws (shared population, lift against independence, absence in prose, theorem-at-zero).",
+        "uuid": "258d1fe0-85a1-82ef-932f-809c033e75ee",
+        "words": [
+          "use",
+          "when",
+          "an",
+          "agent",
+          "must",
+          "ask",
+          "the",
+          "gate",
+          "registry",
+          "instead",
+          "of",
+          "waiting",
+          "for",
+          "the",
+          "push",
+          "lane",
+          "erpax",
+          "gate",
+          "verdicts",
+          "reads",
+          "every",
+          "guardian",
+          "from",
+          "the",
+          "same",
+          "arbiter",
+          "the",
+          "lane",
+          "runs",
+          "erpax",
+          "gate",
+          "cross",
+          "and",
+          "erpax",
+          "gate",
+          "crosses",
+          "are",
+          "the",
+          "gates",
+          "formulated",
+          "as",
+          "crosses",
+          "of",
+          "two",
+          "laws",
+          "shared",
+          "population",
+          "lift",
+          "against",
+          "independence",
+          "absence",
+          "in",
+          "prose",
+          "theorem",
+          "at",
+          "zero"
+        ],
+        "values": {
+          "en": "Use when an agent must ask the gate registry instead of waiting for the push lane — erpax.gate.verdicts reads every guardian from the same arbiter the lane runs; erpax.gate.cross and erpax.gate.crosses are the gates formulated as crosses of two laws (shared population, lift against independence, absence in prose, theorem-at-zero)."
+        }
+      }
+    ]
+  },
+  {
     "atom": "kyc",
     "path": "agents/mcp/tool/kyc",
     "translations": [
@@ -212541,4 +212624,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3634
+export const TRANSLATIONS_COUNT = 3635

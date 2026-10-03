@@ -3,17 +3,17 @@ name: law
 description: "Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution."
 atomPath: "vocabulary/governing/law"
 coordinate: "vocabulary/governing/law · 1/base · 1a4fd929"
-contentUuid: "3a8a4268-2845-5eab-b9ad-b86d604734c1"
-diamondUuid: "d697ca22-9c78-85c1-8908-a9ec02a0200a"
+contentUuid: "9dd2405c-5056-5ad9-9356-fdb0e5a5718a"
+diamondUuid: "cdf50daa-ba7e-8523-b210-a64ea5893c5f"
 uuid: "1a4fd929-0446-8e73-bedd-04d19242bd63"
 horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 9629
+  bondDegree: 9632
 standards: []
 bindings: []
 signatures:
-  computationUuid: "48d8bedb-e618-807c-82f4-2654820644f1"
+  computationUuid: "071115d3-116a-8f90-8d5a-f47f2eabb1f1"
   stages:
     - stage: path
       stageUuid: "f480c40b-a8ab-85c3-a593-23e1c6a1a9f6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "0b0f0823-6335-8a93-b1e4-b123dc2e6b05"
     - stage: horo
-      stageUuid: "692ced30-263a-898d-b2c2-c3392b3f4b02"
+      stageUuid: "d6c1596e-aede-8313-96ef-22c880be8279"
     - stage: seal
       stageUuid: "4ce54d45-47ee-8f37-9758-2d7d0be9c3f0"
     - stage: uuid
-      stageUuid: "77358ed4-be4a-8346-a467-313ad23099fc"
+      stageUuid: "25637308-675c-8eb6-90f9-a55d5fe4320f"
 version: 2
 ---
 # law

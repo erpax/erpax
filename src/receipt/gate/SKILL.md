@@ -3,13 +3,13 @@ name: gate
 description: "Use when reaching the content-addressed test gate from the receipt atom — the double-wire reciprocal of gate/receipt."
 atomPath: "receipt/gate"
 coordinate: "receipt/gate · 2/share · 70206ab6"
-contentUuid: "e220f135-64d3-59bb-aca1-0748fbc9a107"
+contentUuid: "b12d1de5-6280-5128-b676-86329d7bda9e"
 diamondUuid: "a1da2bf6-89a7-8543-be6a-f2efb753eb8e"
 uuid: "70206ab6-38fd-8240-bb98-ff1217f9df59"
 horo: 2
 typography:
   partition: receipt
-  bondDegree: 285
+  bondDegree: 292
 standards: []
 bindings: []
 signatures:
