@@ -3,17 +3,17 @@ name: realtime
 description: "Use when streaming the projection state as it changes — collapse, sealed update and wave emit per dimension axis, with a snapshot fingerprint so a repeated state is recognisable rather than re-sent. The realtime view of quantum/dimension, nested rather than hyphenated. Run: tsx src/quantum/dimension/realtime/index.ts"
 atomPath: "quantum/dimension/realtime"
 coordinate: "quantum/dimension/realtime · 7/descent · 8b5ec1fa"
-contentUuid: "8235dbe1-2f59-5cb7-9ba5-5d38d17f4949"
-diamondUuid: "add5e8ea-c3c3-8e8e-918f-5f0c1132f2c2"
+contentUuid: "46b049fa-9439-55a6-a456-96b0358acde0"
+diamondUuid: "9cda0988-8cd1-81b7-b2b5-aae5a1531040"
 uuid: "8b5ec1fa-202e-8e8b-8b4f-0776bd01d14b"
 horo: 7
 typography:
   partition: quantum
-  bondDegree: 71
+  bondDegree: 68
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f71a667b-205e-8e9e-ab69-7415de42aa9f"
+  computationUuid: "c9fcf1ad-5d2d-8a4e-bb26-99e3554b0005"
   stages:
     - stage: path
       stageUuid: "a100e8e7-fa5e-871d-b417-2f38b1f42aeb"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "7b256d96-f926-8918-bb85-cb8cd23fd1cc"
     - stage: horo
-      stageUuid: "563600d1-f43f-83c5-a35d-97ccf9ffd3db"
+      stageUuid: "27db93eb-7c34-8be8-9ab9-d1338d0e436d"
     - stage: seal
       stageUuid: "707a8e76-9d63-808e-bbbd-73c0f0981a50"
     - stage: uuid
-      stageUuid: "9f28d168-fd0b-8146-b6e9-05678d8c2e33"
+      stageUuid: "4d061ba5-a3e1-82cb-8ebf-cbe3ecc3e9ea"
 quantum:
   superposition:
     - access
@@ -51,8 +51,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "f71a667b-205e-8e9e-ab69-7415de42aa9f"
-    contentUuid: "8235dbe1-2f59-5cb7-9ba5-5d38d17f4949"
+    computationUuid: "c9fcf1ad-5d2d-8a4e-bb26-99e3554b0005"
+    contentUuid: "46b049fa-9439-55a6-a456-96b0358acde0"
 version: 2
 ---
 # realtime — the projection, watched
@@ -81,4 +81,4 @@ The `.tsx` consumers were missed by a first scan globbing `*.ts`, and surfaced o
 
 Composes: [[quantum]]/dimension · [[quantum]] · [[law]].
 
-<sub>content-uuid `8235dbe1-2f59-5cb7-9ba5-5d38d17f4949` · account `quantum/dimension/realtime` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `46b049fa-9439-55a6-a456-96b0358acde0` · account `quantum/dimension/realtime` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

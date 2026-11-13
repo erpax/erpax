@@ -3,18 +3,18 @@ name: one
 description: "Use when reasoning about one as a anatomical part of body — vocabulary pivot to @/one; nested not duplicated."
 atomPath: "body/one"
 coordinate: "body/one · 5/round · bcdfed55"
-contentUuid: "9b6efe4e-ea81-5657-8838-a53d7c48c9a4"
-diamondUuid: "7eca3d59-3edd-87a5-9bd6-09aa9ba7940e"
+contentUuid: "86e2a4ad-04cf-5dd7-8d73-442a8806179e"
+diamondUuid: "36c1c2cb-1f12-8b16-9377-e368b5704267"
 uuid: "bcdfed55-614e-8bcf-aefd-398fa7377721"
 horo: 5
 typography:
   partition: body
-  bondDegree: 210
+  bondDegree: 201
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "17469bbb-c8e2-8bb3-9349-9addff5aab66"
+  computationUuid: "5ea9b55c-f4ab-8ee0-b78d-cdd6600ecab4"
   stages:
     - stage: path
       stageUuid: "5bb99c98-3ccd-8cbb-a2a8-b912b53a02f5"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "aaa55282-41d0-8486-a94c-518f6e5fd9d0"
     - stage: horo
-      stageUuid: "4b0eca59-2766-81d4-8f57-566a71378571"
+      stageUuid: "86782785-57a9-892e-8a91-2491d569ad8b"
     - stage: seal
       stageUuid: "f3ce2faa-fdde-8bc2-a1df-036f625ae58a"
     - stage: uuid
-      stageUuid: "3349c168-153a-86ce-886a-ee7858dc8edf"
+      stageUuid: "9b011457-c588-8fe6-a918-1196b397257e"
 version: 2
 ---
 # body/one — anatomical part

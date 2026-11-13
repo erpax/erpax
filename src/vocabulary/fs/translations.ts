@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the filesystem as erpax sees it — the tree of paths to content where the path IS the address and the leaf word IS the atom; the matter the corpus lives on, and the thing whose every state is a snapshot.",
-    "uuid": "22024ece-6c9d-88a3-b848-f2d015b8ff3f",
+    "uuid": "846206ee-d241-850a-a615-bba5f8b81703",
     "words": [
       "use",
       "when",

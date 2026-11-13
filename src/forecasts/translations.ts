@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when forecasting on Earth's cardinal homology tips — phase-locked ±ω steps at 0°·90°·180°·270°, composed with navigation.predictNext; structural forecasts only (not weather); physical datum WGS 84.",
-    "uuid": "63cd71d8-2924-8bff-9599-2393a2f17f2f",
+    "uuid": "bec6a8b3-200d-80ed-9469-0d62b1f2f31c",
     "words": [
       "use",
       "when",

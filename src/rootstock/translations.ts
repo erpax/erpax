@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling the root-providing lower plant a scion is grafted onto — the rootstock controls vigour, size (dwarfing → high-density orchards), and disease/phylloxera resistance. The perennial-planting keystone, chosen once for the asset's multi-decade life; paired with the scion via a graft.",
-    "uuid": "3894e3ce-ff48-8a20-9901-b546e49811d8",
+    "uuid": "d348116b-a017-8f27-b236-24101e0ee953",
     "words": [
       "use",
       "when",

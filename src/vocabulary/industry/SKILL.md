@@ -3,18 +3,18 @@ name: industry
 description: Use when reasoning about industry — The industry associated with the job position.
 atomPath: "vocabulary/industry"
 coordinate: "vocabulary/industry · 7/descent · 9c789ce2"
-contentUuid: "6bb383e1-69f5-5960-8f58-3ebad5dadf68"
-diamondUuid: "3643c240-631e-8f60-b24e-f143c5fd4006"
+contentUuid: "484bbe95-c086-50a3-82d1-a7d0e35ae4ac"
+diamondUuid: "a696cc86-bf21-8e79-9091-6e6451893315"
 uuid: "9c789ce2-d10e-821e-ae8e-29f80fdd3822"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 61
+  bondDegree: 58
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ca734e5a-31fc-8a74-a4f8-4b915bc1f0cb"
+  computationUuid: "48990bf3-9f5a-8fdb-a32c-e9947c798410"
   stages:
     - stage: path
       stageUuid: "25e581a5-1ce9-8f89-8514-18b1158f7cb4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "e37797ec-2487-8365-af75-620046139bef"
     - stage: horo
-      stageUuid: "b349b90b-526b-8332-9b8e-f46d640ac085"
+      stageUuid: "6120750d-ce34-883d-879f-76d116a46ef7"
     - stage: seal
       stageUuid: "f6a4050e-7bd7-89ce-9ae0-170a93073a25"
     - stage: uuid
-      stageUuid: "5c4485e6-f8d3-8627-9f68-d472a2ece08d"
+      stageUuid: "8f4a1578-a4e5-82e7-a305-2104cfd38546"
 version: 2
 ---
 # industry

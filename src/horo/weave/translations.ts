@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the third position of the horo state ring — digit 4, \\\"four hands meeting\\\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo.",
-    "uuid": "e4f62fce-b2fa-8d08-84f6-cc766a3b9879",
+    "uuid": "7fd42780-67dd-8700-8b6a-e24fb530cf54",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about integrity attacks on the content-uuid store — the cost to forge, collide, or rewrite a record undetected, and why all-directions uuid wiring drives that cost toward infinity.",
-    "uuid": "c3421b92-a2fe-8814-bbdd-cb0e4a768270",
+    "uuid": "9daa4ce3-8a66-814f-89be-f254e5eca908",
     "words": [
       "use",
       "when",

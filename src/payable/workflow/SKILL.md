@@ -3,13 +3,13 @@ name: workflow
 description: "Use when reasoning about workflow — A bill moves through a fixed set of states, and only along edges the graph allows."
 atomPath: "payable/workflow"
 coordinate: "payable/workflow · 8/crest · 1c6b25d9"
-contentUuid: "f6cb349c-bada-5881-ad61-97e0ede28ffb"
-diamondUuid: "b6f9eb86-5e7d-84dd-8099-55b9046d0882"
+contentUuid: "1d05a4f0-ea6f-5286-97a4-eee25e936676"
+diamondUuid: "af0a625b-8cc4-8f74-8715-e30fbdc716da"
 uuid: "1c6b25d9-2757-82a0-b460-11dc38a086a5"
 horo: 8
 typography:
   partition: payable
-  bondDegree: 104
+  bondDegree: 101
 standards:
   - "EN-16931:2017 invoice-lifecycle"
   - "IFRS IAS-37 provisions-contingent-liabilities"
@@ -17,7 +17,7 @@ standards:
   - "US-GAAP ASC-405 liabilities"
 bindings: []
 signatures:
-  computationUuid: "b94b9a9a-f65e-819e-a618-b6d013e02c95"
+  computationUuid: "01b6a7ae-54ce-8a29-b9c2-e6d4633aba71"
   stages:
     - stage: path
       stageUuid: "e23d7671-e347-8a44-b885-22c03db77daa"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "59241121-f287-87d1-8876-e90a3cfee801"
     - stage: horo
-      stageUuid: "89f111ae-e58d-8710-b472-c887c7d888e7"
+      stageUuid: "4ea5af1a-1724-826e-a6f8-dd953915e919"
     - stage: seal
       stageUuid: "4c2ea20b-64f8-87ce-8a7e-764e704a1ce3"
     - stage: uuid
-      stageUuid: "ed0f6fdb-e6f9-8c25-866e-f551de280d97"
+      stageUuid: "7df8d1b1-ff17-841d-b7da-eb57d93146be"
 version: 2
 ---
 # payable/workflow — the bill lifecycle as a directed graph, not a free-text field

@@ -3,18 +3,18 @@ name: sti
 description: "Use when reasoning about sti — Payload has no class inheritance. The STI analog is **one collections collection + a flat discriminator** (Rails' default) — is the polymorphic-*association* analog, blocks the het"
 atomPath: sti
 coordinate: "sti · 1/base · 1f441634"
-contentUuid: "3d4a3c6a-2448-5163-bbed-949a15a38a48"
-diamondUuid: "60fbd2fe-7c66-8cde-9f59-5f0890948e58"
+contentUuid: "3602d8c9-6f3a-5139-a85f-214b9e383a3e"
+diamondUuid: "040fb046-0c77-8ccf-86f0-0740b9e2f5d2"
 uuid: "1f441634-bd8e-80c3-84ea-2f09d7358c6b"
 horo: 1
 typography:
   partition: sti
-  bondDegree: 4058
+  bondDegree: 3995
 standards:
   - "W3C-JSON-LD-1.1"
 bindings: []
 signatures:
-  computationUuid: "e6655998-c223-8231-b4a8-f5a97cb5ff1f"
+  computationUuid: "0bb9705f-490a-887d-8afd-30f0bf85a7fc"
   stages:
     - stage: path
       stageUuid: "658a859b-6b3c-8831-9919-2bf34f7a2de6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c25aac00-5a3b-8538-a39f-b4f6538459dc"
     - stage: horo
-      stageUuid: "b0de64e9-1297-8e1f-91ca-25608057bb2a"
+      stageUuid: "dc473b74-4188-8bf1-9893-3b72f940c6fa"
     - stage: seal
       stageUuid: "0c84fff2-81c2-8372-882f-cf36ddd0e499"
     - stage: uuid
-      stageUuid: "a8946208-e11e-8b23-bb39-62e551e4b4ca"
+      stageUuid: "cb262662-f176-8ac7-8135-058080846315"
 version: 2
 ---
 # sti — single table inheritance (one collection · `type` · TS discriminated union)

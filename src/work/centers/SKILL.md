@@ -3,13 +3,13 @@ name: centers
 description: "Use when modelling manufacturing capacity — machines, lines, cells, vats, workstations, or crews — with ISA-95 resource hierarchy, throughput rate, parallelism, and IAS-2 cost-of-conversion rates feeding routing and overhead absorption. The work-center capacity-unit collection."
 atomPath: "work/centers"
 coordinate: "work/centers · 8/crest · 577ea1b6"
-contentUuid: "47d0946b-ea33-5c56-ab1d-f2474d712eb2"
+contentUuid: "da40d211-4f67-5383-83bd-5a87d20f5dff"
 diamondUuid: "0adfb999-4272-8a35-a638-a09c036ab7ff"
 uuid: "577ea1b6-081d-8dc9-aacb-07d00b19c898"
 horo: 8
 typography:
   partition: work
-  bondDegree: 48
+  bondDegree: 47
 standards:
   - "IFRS IAS-2 §12 cost-of-conversion fixed-and-variable-production-overhead"
   - "IFRS IAS-2 §13 normal-capacity-overhead-absorption"

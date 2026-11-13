@@ -3,13 +3,13 @@ name: sectors
 description: "Use when taxonomising any part of society — SNA institutional sectors, ISIC economic activities, COFOG government functions, ICNPO civil society, SDG outcomes. The one societal coordinate system every party, connection, transaction and tenant references."
 atomPath: sectors
 coordinate: "sectors · 5/round · 92b3c29c"
-contentUuid: "a3111cdd-767a-5408-bcb0-1eb1cd6d0213"
-diamondUuid: "e4f8f315-74e0-84e2-a2ec-93d7dff210df"
+contentUuid: "4f55198b-0f08-5f71-9c2f-966bf12aa077"
+diamondUuid: "96368d7f-e903-8516-9bab-811c98e8545f"
 uuid: "92b3c29c-c855-8339-947d-a716db1ec246"
 horo: 5
 typography:
   partition: sectors
-  bondDegree: 56
+  bondDegree: 53
 standards:
   - "EU NACE Rev.2 economic-activities"
   - "EU-765/2008"
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "96d8e2c1-c7f1-89bd-984e-8d1d65643631"
+  computationUuid: "86a41f51-81ba-892c-b018-9fc55a064a5d"
   stages:
     - stage: path
       stageUuid: "ed7b4491-7f56-863a-854d-13c7c3e87730"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "c4a08bca-c303-8e67-a61e-388106673e45"
     - stage: horo
-      stageUuid: "b80755ca-a047-8695-883f-46f02cfd2035"
+      stageUuid: "b643ad4c-9d16-8b6d-87f1-1ec39876878b"
     - stage: seal
       stageUuid: "f53d982b-75d3-8b19-83d2-b8198b6ee6a4"
     - stage: uuid
-      stageUuid: "9628567c-991e-8502-8086-301884f10183"
+      stageUuid: "bca92317-f056-85e6-a4ed-f91ad3831ce6"
 version: 2
 ---
 # sectors

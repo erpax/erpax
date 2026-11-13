@@ -3,17 +3,17 @@ name: duality
 description: "Use when reasoning about erpax's pervasive two-fold law — matter↔antimatter (code↔skill), physical↔metaphysical, give↔take, flow↔balance, build↔bind, learn↔forget, whole↔part, begin↔end, open↔close. The pair that recurs at every scale."
 atomPath: duality
 coordinate: "duality · 4/weave · 34c83be5"
-contentUuid: "c0191d44-8190-5fb6-a559-a33b0032a84d"
-diamondUuid: "0c55341e-1c16-863f-9305-4522cdbc3428"
+contentUuid: "fff29ea3-48ab-5bf7-8981-bfe9d07abae7"
+diamondUuid: "1e5b5694-f722-887e-9d36-58472b3cb50c"
 uuid: "34c83be5-df4b-8027-9fd3-5dcb5420cb4c"
 horo: 4
 typography:
   partition: duality
-  bondDegree: 395
+  bondDegree: 386
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fec2cc1a-cfb0-8f07-ab4f-d7694379e45e"
+  computationUuid: "16d641cf-53b0-89a4-a495-d8719b0a662f"
   stages:
     - stage: path
       stageUuid: "13ad7e77-0876-8652-87d3-d0be6c4d050a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "f4fbe3d8-5f41-82e1-918c-ceb61241cb1b"
     - stage: horo
-      stageUuid: "2e2b076d-175c-89bf-af44-3e0712ffc0e9"
+      stageUuid: "446d51d6-8674-80e7-8ab7-52fa22fd9a9c"
     - stage: seal
       stageUuid: "3bb408b5-8181-8eb3-9e63-e43b1f397f9e"
     - stage: uuid
-      stageUuid: "c5a82c50-8852-8cb1-9f7c-6f48ca3829fc"
+      stageUuid: "18309996-3c55-8947-9fc1-251f17b16a3f"
 version: 2
 ---
 # duality

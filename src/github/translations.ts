@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the git remote as a read API onto the corpus — the same one-word atom tree the filesystem and the mcp gateway expose, served over https (raw paths, the contents API, git clone). The third face of the one corpus; a snapshot, never a separate source.",
-    "uuid": "7cc802f8-d281-8604-a35d-2d2f5ea13a98",
+    "uuid": "e5682e0a-56a2-848a-b8c4-b9143b5d9459",
     "words": [
       "use",
       "when",

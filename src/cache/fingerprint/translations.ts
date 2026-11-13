@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a whole-corpus derivation (rules snapshot, readme graph, corpus context) is computed by many callers — corpusFingerprint + memoByFingerprint reuse the one scan across siblings, the compute-tier of learn-by-shared-experience and the buildable AI-bill lever.",
-    "uuid": "bd3736b2-dedb-8bb3-a635-1403fa8a6dfd",
+    "uuid": "bef8bd54-76ca-83fe-b1b4-67666787a238",
     "words": [
       "use",
       "when",

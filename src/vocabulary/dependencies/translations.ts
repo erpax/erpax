@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about dependencies — Prerequisites needed to fulfill steps in article.",
-    "uuid": "a915e3e6-4dc1-8dd4-9df0-cfed31f03b76",
+    "uuid": "a69ec4d1-65b4-8a47-9776-8f34c75257b8",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about speed — The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by maxValue) should be the maximum speed achievable under regu",
-    "uuid": "f02a0c5b-6cc7-84fb-a2db-b67c5cd9a345",
+    "uuid": "6493cab1-42a9-8193-8488-771b7294199f",
     "words": [
       "use",
       "when",

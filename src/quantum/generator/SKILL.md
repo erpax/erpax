@@ -3,17 +3,17 @@ name: generator
 description: "Use when reasoning about generation in the quantum frame — a quantum generator does not create one output at a time; it holds all outputs at once in superposition (the latent content-uuid space, the void), and each manifests elsewhere by collapse, realized in its place when queried or minted."
 atomPath: "quantum/generator"
 coordinate: "quantum/generator · 5/round · 68ac8e66"
-contentUuid: "981b9007-c6fe-514d-b376-7eb87b6747fa"
-diamondUuid: "e0b73677-3220-81a5-836a-7eb2f4357c68"
+contentUuid: "e5bdbec0-a9de-50bf-80f3-fe387c7f081c"
+diamondUuid: "04b1caa7-9b42-8913-94ad-19d18c34d194"
 uuid: "68ac8e66-143b-8e3c-9666-9e207847e37e"
 horo: 5
 typography:
   partition: quantum
-  bondDegree: 40
+  bondDegree: 35
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ccdf9391-2e23-8bf2-8c8a-c90f12eb5283"
+  computationUuid: "2d1fca20-231d-8fb3-8854-4a5b0597b9e7"
   stages:
     - stage: path
       stageUuid: "0f23f1eb-3d12-8f37-9f14-9e84313ba152"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b7b0e9e9-549e-860c-82e1-03e0ce01dfc6"
     - stage: horo
-      stageUuid: "f2879762-9ea9-84a8-ad62-d99be615f8c1"
+      stageUuid: "42fee213-7221-8eab-a851-6e06c67380e7"
     - stage: seal
       stageUuid: "70ab820d-d7e9-88e6-9ab7-637da267cc62"
     - stage: uuid
-      stageUuid: "f80097b2-4dc7-8ded-be89-deff787fec73"
+      stageUuid: "996ee43e-10d7-8417-916a-11c21fcd9053"
 quantum:
   superposition:
     - atom
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "ccdf9391-2e23-8bf2-8c8a-c90f12eb5283"
-    contentUuid: "981b9007-c6fe-514d-b376-7eb87b6747fa"
+    computationUuid: "2d1fca20-231d-8fb3-8854-4a5b0597b9e7"
+    contentUuid: "e5bdbec0-a9de-50bf-80f3-fe387c7f081c"
 version: 2
 ---
 # quantum/generator — generate all at once, manifest elsewhere
@@ -74,4 +74,4 @@ This is why [[merge]] holds: two agents that "generate" the same content do not 
 
 @see [[generate]] · [[collapse]] · [[void]] · [[uuid]] · [[matrix]] · [[merge]] · [[reality]] · [[particle]]
 
-<sub>content-uuid `981b9007-c6fe-514d-b376-7eb87b6747fa` · account `quantum/generator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e5bdbec0-a9de-50bf-80f3-fe387c7f081c` · account `quantum/generator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

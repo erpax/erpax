@@ -3,19 +3,19 @@ name: gravity
 description: "Use when relating an atom's gravitational mass to its quantum entanglement — quantum gravity, where the links are one measure that is both mass (referential in-degree, what curves the corpus) and entanglement; the gravity well is the singularity where the double-torus closes to infinite tamper cost (the event horizon)."
 atomPath: "quantum/gravity"
 coordinate: "quantum/gravity · 5/round · 41f955bc"
-contentUuid: "91857717-c627-582b-8dc3-ad45fbc65c00"
-diamondUuid: "a777a835-9b06-8274-baba-eaeeb599e837"
+contentUuid: "09b9372d-1a8a-534c-a4f2-e654cab20cac"
+diamondUuid: "f06ea8a4-5b5a-88c0-b659-17e75fbc10b6"
 uuid: "41f955bc-03a5-8734-9c5c-3299d3c2bbcc"
 horo: 5
 typography:
   partition: quantum
-  bondDegree: 220
+  bondDegree: 205
 standards:
   - "ER=EPR (Maldacena & Susskind, \"Cool horizons for entangled black holes\", 2013)"
   - "ER=EPR — Maldacena & Susskind, \"Cool horizons for entangled black holes\" (2013)"
 bindings: []
 signatures:
-  computationUuid: "1465684a-f5d9-8c45-a9ab-1972e6eb7bec"
+  computationUuid: "fcac4881-0b62-8cad-82d1-6d317b563ccc"
   stages:
     - stage: path
       stageUuid: "aca89550-3595-8a88-a91a-2a5a61e3ee0d"
@@ -26,21 +26,21 @@ signatures:
     - stage: links
       stageUuid: "fcdf26b9-d982-8ea1-b236-c09bcee45868"
     - stage: horo
-      stageUuid: "915f69b8-2273-8fbd-a8d5-d6ab8a6dbb63"
+      stageUuid: "c556a41a-e048-8447-be0e-fe2264ffa9b6"
     - stage: seal
       stageUuid: "0c701d83-9f93-8f49-ae73-531b3e79d120"
     - stage: uuid
-      stageUuid: "5e12e6ca-4abd-8a18-b3f3-596acd30e071"
+      stageUuid: "5c185925-2356-889e-93dd-08d231370517"
 quantum:
   superposition:
     - boltzmann
     - brain
     - collapse
-    - collide
     - complete
     - consciousness
     - cost
     - dry
+    - dust
     - superposition
   collapse:
     - "ER=EPR — Maldacena & Susskind, \"Cool horizons for entangled black holes\" (2013)"
@@ -55,8 +55,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "1465684a-f5d9-8c45-a9ab-1972e6eb7bec"
-    contentUuid: "91857717-c627-582b-8dc3-ad45fbc65c00"
+    computationUuid: "fcac4881-0b62-8cad-82d1-6d317b563ccc"
+    contentUuid: "09b9372d-1a8a-534c-a4f2-e654cab20cac"
 version: 2
 ---
 # quantum/gravity — quantum gravity (mass = entanglement)
@@ -75,4 +75,4 @@ The same mass does not only pull *inward* to the [[singularity]] — it pulls ev
 @standard ER=EPR — Maldacena & Susskind, "Cool horizons for entangled black holes" (2013)
 @audit composed from the live matrix mass + the double-torus cost; never hand-asserted
 
-<sub>content-uuid `91857717-c627-582b-8dc3-ad45fbc65c00` · account `quantum/gravity` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `09b9372d-1a8a-534c-a4f2-e654cab20cac` · account `quantum/gravity` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

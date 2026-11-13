@@ -3,17 +3,17 @@ name: millennium
 description: "Use when the Clay Millennium Problems are offered as a testing ground — the honest register that NAMES the seven, marks six open and one solved (Poincaré, by Perelman), and refuses to solve any. Every entry's `corpusSolves` is the literal false, so the code cannot claim a solution; the corpus tools are lenses to learn through, and the quantum waves CLASSIFY a claimed solution, they do not produce one. HARMONY ≠ TRUTH."
 atomPath: millennium
 coordinate: "millennium · 5/round · 696b4b7d"
-contentUuid: "10bd8379-c85d-542a-b28f-640d6626ba01"
-diamondUuid: "9ac4800a-c4da-8f38-b862-903297a41293"
+contentUuid: "b8149cb2-f009-5567-8bd1-9066b039d5be"
+diamondUuid: "1dcf9f2a-1b7e-8cd0-9fbb-950dd84ee072"
 uuid: "696b4b7d-0d3e-8159-92bb-69e68b53fd9b"
 horo: 5
 typography:
   partition: millennium
-  bondDegree: 61
+  bondDegree: 52
 standards: []
 bindings: []
 signatures:
-  computationUuid: "dce42f39-3cc7-8a4c-8a58-410c8b426c9f"
+  computationUuid: "42648edb-61c5-8ef6-93c9-3b2fae8c857f"
   stages:
     - stage: path
       stageUuid: "1ea0afd8-0007-8ac8-802d-3bf04a0ced0c"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "806e9c95-34c5-824b-b1fe-c9d44612e99a"
     - stage: horo
-      stageUuid: "7eff753f-92d7-80bb-98d6-828ab29c811f"
+      stageUuid: "fab6d4f3-9be0-8810-a56f-a297927a273e"
     - stage: seal
       stageUuid: "20645fbb-d08f-8362-b087-0366b7970a44"
     - stage: uuid
-      stageUuid: "395632f1-b966-8dee-bac3-15ad7c1cd804"
+      stageUuid: "2b022627-7960-81ec-8ef3-f75b04b3fbcc"
 version: 2
 ---
 # millennium — the Clay problems as a testing ground; the waves classify, they do not solve

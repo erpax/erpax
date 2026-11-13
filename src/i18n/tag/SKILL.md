@@ -3,20 +3,20 @@ name: tag
 description: "Use when reasoning about tag — Every locale tag the corpus writes must be a **well-formed and already-canonical BCP 47 tag**: every entry in , and every or property with a string literal value."
 atomPath: "i18n/tag"
 coordinate: "i18n/tag · 4/weave · 1b10328f"
-contentUuid: "310f388a-1538-5bc7-b03b-73a45fc98777"
-diamondUuid: "6489a971-a196-8320-970d-84673f27b46f"
+contentUuid: "68a3d623-ec3a-5f15-9e07-e10436856b0c"
+diamondUuid: "97554416-6fe4-88a6-a1f6-10b62e0b0fb8"
 uuid: "1b10328f-5cdb-87ec-b221-80ab5f4e5ce5"
 horo: 4
 typography:
   partition: i18n
-  bondDegree: 40
+  bondDegree: 37
 standards:
   - BCP 47 (RFC 5646) §2.2.9 — classes of conformance
   - BCP 47 (RFC 5646) — tags for identifying languages
   - "RFC-5646"
 bindings: []
 signatures:
-  computationUuid: "acc29b79-2c08-8003-b7f0-e0e902d7c1c0"
+  computationUuid: "5cb3f69e-8e78-8597-8e79-31900221666f"
   stages:
     - stage: path
       stageUuid: "035d0baa-7809-805a-9742-642f9e32e869"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "e5fe87cb-4a09-89b4-af4e-b3d2039e3495"
     - stage: horo
-      stageUuid: "b05c7c3e-80de-8f70-a233-6ff77ca55c8a"
+      stageUuid: "5c84f275-2032-8651-bd49-a43a9ad97998"
     - stage: seal
       stageUuid: "36b4661d-5c49-8885-a923-6d42cdaafc89"
     - stage: uuid
-      stageUuid: "9c06bd7d-a812-8319-a470-36237a6c5e75"
+      stageUuid: "13a67d78-096e-82ab-a085-fac19a2465d5"
 version: 2
 ---
 # i18n/tag — a tag no registry can parse selects no language

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hook — is the header's half of the same rule the footer keeps: a global that every page renders must tell those pages when it changes, or the edit lands everywhere except where it is…",
-    "uuid": "1a9e62be-814c-886c-9eb3-209e60000c7c",
+    "uuid": "832399f9-3669-8eaa-bbd4-97033fc2e07a",
     "words": [
       "use",
       "when",

@@ -3,13 +3,13 @@ name: digit
 description: "Use when addressing an atom in digit-space — the dual of word — its horo sequence position and the digital-root of its content-uuid, the trace that completes the aura into a tamper-evident trinity."
 atomPath: digit
 coordinate: "digit · 5/round · aa8df92b"
-contentUuid: "4e904c5d-1236-51fe-a26b-9ebbd3d873fa"
+contentUuid: "c6fbad98-ce6b-5746-aea7-fc9866cb9c10"
 diamondUuid: "4378df1d-1b75-8d60-a6ca-4fa57433170e"
 uuid: "aa8df92b-37e5-8a12-ba10-15f3f9595f61"
 horo: 5
 typography:
   partition: digit
-  bondDegree: 122
+  bondDegree: 121
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []

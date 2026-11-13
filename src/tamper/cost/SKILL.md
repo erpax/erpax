@@ -3,13 +3,13 @@ name: cost
 description: "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts."
 atomPath: "tamper/cost"
 coordinate: "tamper/cost · 5/round · bb134a09"
-contentUuid: "7c500dbf-9fc0-596a-93fc-9535cb71a9ec"
-diamondUuid: "17faab80-d499-8fb4-9ed7-1370edec0734"
+contentUuid: "ae70aba4-f6a7-5341-8576-883534ae554a"
+diamondUuid: "73f27876-cbe9-8872-83ea-fdd73b22a85d"
 uuid: "bb134a09-e76a-8b03-a525-97ca0a5a1ada"
 horo: 5
 typography:
   partition: tamper
-  bondDegree: 466
+  bondDegree: 445
 standards:
   - "CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication"
   - "DeepSeek-Prover-V2 — recursive subgoal decomposition, Lean-4 kernel-checked invariants"
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "1036a636-ee6c-8408-bcaf-bd6ed40b3801"
+  computationUuid: "4a8ab454-f053-83ad-947d-7b29a1faf661"
   stages:
     - stage: path
       stageUuid: "c4a6cfbb-5715-8b93-b12d-90915c16b1bd"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "a3985697-2a2c-8078-9b61-64ec4e2ab673"
     - stage: horo
-      stageUuid: "c3d725e6-0a21-8e8a-b114-1882494eaa17"
+      stageUuid: "0afbcfe3-e635-816e-9c56-c9a6a046b948"
     - stage: seal
       stageUuid: "2c075d9f-e9ae-8985-b4ce-ca33dc25c7c9"
     - stage: uuid
-      stageUuid: "73a18c00-ad57-81b0-a183-035c44afdff3"
+      stageUuid: "b822b98f-4efa-8efa-b257-f42baadde108"
 version: 2
 ---
 # tamper-cost — what it costs to crack a zero-entropy app

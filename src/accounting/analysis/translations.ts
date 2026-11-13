@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about accounting/analysis — financial analysis engine — balance sheet, income statement, aging reports.",
-    "uuid": "4163e583-9281-855c-a314-895b37b9203b",
+    "uuid": "33187f88-ccaa-8569-8aef-c5866faee754",
     "words": [
       "use",
       "when",

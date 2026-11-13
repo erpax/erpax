@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about overdosage — Any information related to overdose on a drug, including signs or symptoms, treatments, contact information for emergency response.",
-    "uuid": "d5b3d5e1-a9ec-8f41-97b8-dce4f1c4518a",
+    "uuid": "62456a7e-8d02-8de4-9546-25e46a42b095",
     "words": [
       "use",
       "when",

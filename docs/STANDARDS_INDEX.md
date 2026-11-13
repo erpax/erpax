@@ -475,7 +475,6 @@ src/bank/statement/import/service/index.ts:6: * @standard MT940 swift-statement-
 src/bank/statement/import/service/index.ts:7: * @standard OFX-2.2 open-financial-exchange
 src/bank/statement/import/service/index.ts:8: * @standard ISO-13616-1:2020 iban
 src/bank/statement/import/service/index.ts:9: * @standard ISO-9362:2022 bic
-src/barrier/index.ts:24: * @standard CODATA-2018 ħ (via ../photon); WKB + exact rectangular-barrier transmission
 src/base/accounting/field/index.ts:115: * @standard UN/CEFACT Recommendation 20 unit-of-measure-codes
 src/base/accounting/field/index.ts:176: * @standard ISO-19011:2018 audit-trail
 src/base/accounting/field/index.ts:308: * @standard ISO 3166-1:2020 country-codes
@@ -751,7 +750,6 @@ src/compliance/frameworks/index.ts:5: * @standard COSO-2013 internal-control-int
 src/compost/index.ts:14: * @standard US Composting Council — compost maturity/stability (C:N criteria)
 src/compost/index.ts:15: * @standard SARE, Building Soils for Better Crops — organic-matter management
 src/compost/index.ts:16: * @standard USDA NOP 7 CFR §205.203 — compost and raw-manure rules
-src/conditional/index.ts:32: * @standard ISO-19011:2018 §6.4 — evidence: a conditional finding names its condition
 src/config/address/formats/index.ts:23: * @standard ISO-19160-4:2017 addressing components-and-conceptual-model
 src/config/address/formats/index.ts:24: * @standard UPU-S42 international-postal-addressing
 src/config/address/formats/index.ts:25: * @standard ISO-3166-1:2020 country-codes alpha-2
@@ -2129,8 +2127,6 @@ src/parties/index.ts:19: * @standard ISO-20022 pain.001 customer-credit-transfer
 src/parties/index.ts:20: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
 src/parties/index.ts:21: * @standard EN-16931:2017 §BG-4 seller §BG-7 buyer
 src/party/aging.service.ts:9: * @standard ISO-8601-1:2019 date-time days-between-arithmetic
-src/patent/prior/index.ts:45: * @standard 35 U.S.C. §102 — novelty; a prior public disclosure anticipates
-src/patent/prior/index.ts:46: * @standard 35 U.S.C. §154 — patent term (20 years from filing; 17 from grant pre-1995)
 src/payable/aging/index.ts:12: * @standard ISO-8601-1:2019 date-time as-of-date
 src/payable/analytics/index.ts:10: * @standard ISO-17442-1:2020 lei vendor-identification
 src/payable/analytics/index.ts:8: * @standard ISO-4217:2015 currency-codes
@@ -2291,8 +2287,6 @@ src/properties/spaces/index.ts:10: * @standard ISO-41001:2018 facility-managemen
 src/properties/spaces/index.ts:11: * @standard ISO-41011:2017 §3.3.5 facility-management space-vocabulary
 src/properties/spaces/index.ts:12: * @standard ISO-19650-1:2018 information-management-using-bim
 src/properties/spaces/index.ts:13: * @standard EN-15221-6:2011 facility-management area-and-space-measurement
-src/provenance/index.ts:4: * @standard ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
-src/provenance/index.ts:5: * @standard W3C PROV-DM — provenance as a graph of entities and derivations
 src/provider/index.tsx:6: * @standard W3C CSS-Color-4 color-contrast
 src/publish/zenodo/index.ts:16: * @standard ISO 26324 — DOI: assigned by a registration agency, never computed ([[rules]]/forge)
 src/publish/zenodo/index.ts:17: * @standard ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
@@ -2430,8 +2424,6 @@ src/roles/registry/index.ts:21: * @standard SOX §404 internal-controls + §302 
 src/roles/registry/index.ts:22: * @standard NIST INCITS-359-2012 role-based-access-control
 src/roles/user/roles/hooks/preventDuplicateAssignment.ts:12: * @standard NIST INCITS-359-2012 role-based-access-control role-assignment
 src/roles/user/roles/index.ts:10: * @standard NIST INCITS-359-2012 role-based-access-control role-assignment
-src/rolify/index.ts:10: * @standard NIST INCITS-359 RBAC (resource-scoped roles)
-src/rolify/index.ts:11: * @standard EN-16931 business-terms (the party roles BG-4 Seller / BG-7 Buyer / BG-10 Payee …)
 src/rotation/index.ts:4: * @standard ISO 1151-1 — flight dynamics, body axes and sign conventions
 src/routing/index.ts:6: * @standard NIST AI RMF (risk-proportionate controls) — map risk → control strength
 src/rules/ask/index.ts:23: * @standard ISO 9241-110:2020 §6.2 — self-descriptiveness / suitability for the task (do not ask what is known)
@@ -2507,7 +2499,6 @@ src/saf/t/types/test.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 src/saf/t/types/test.ts:9: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/saf/t/validate.ts:4: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/saf/t/validate.ts:53: * @standard OECD SAF-T 2.0 GeneralLedgerEntries
-src/safely/index.ts:14: * @standard ISO/IEC 25010 §5.5 testability + §5.8 fault-tolerance (graceful degradation)
 src/safety/mode/index.ts:42: * @standard ISO/IEC 27001 Annex A.14.2.5 secure-systems-engineering
 src/safety/mode/index.ts:43: * @standard NIST SP 800-160 §3.4.2 trustworthy secure design
 src/safety/mode/index.ts:44: * @standard OWASP ASVS V14 Configuration (hard-coded production mode)
@@ -2603,9 +2594,6 @@ src/seed/erpax-product-pages.ts:32: * @standard schema.org WebSite breadcrumb
 src/seed/erpax-product-pages.ts:33: * @standard ISO-25010 usability marketing-content
 src/seed/index.ts:8: * @standard ISO-8601-1:2019 date-time
 src/seed/index.ts:9: * @standard BCP-47 language-tag locale-bundled-fixtures
-src/seeding/seedSubscriptionPlans.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
-src/seeding/seedSubscriptionPlans.test.ts:5: * @standard ISO-4217:2015 currency-codes
-src/seeding/seedSubscriptionPlans.ts:10: * @standard ISO-4217:2015 currency-codes
 src/seeds/template/bg-nss.ts:17: * @standard ISO-3166-1:2020 BG country-code
 src/seeds/template/bg-nss.ts:18: * @standard BG-NSS national-statutory-chart-of-accounts
 src/seeds/template/compliance.ts:6: * @standard ISO-3166-1:2020 country-codes alpha-2
@@ -2799,8 +2787,6 @@ src/sustainability/index.ts:14: * @standard Verhulst logistic growth (1838) — 
 src/sustainability/index.ts:15: * @standard Prigogine dissipative structures (Nobel Chemistry, 1977) — order by dissipation
 src/sustainability/index.ts:16: * @standard Brundtland Report, Our Common Future (1987) — canonical sustainability definition
 src/sustainability/index.ts:17: * @standard Second Law of Thermodynamics — local order requires entropy export
-src/svg/hero/generator/index.ts:18: * @standard W3C SVG-1.1 scalable-vector-graphics
-src/svg/hero/generator/index.ts:19: * @standard ISO/IEC-29500 office-open-xml media-embedding-target
 src/swarm/index.ts:4: * @standard Graham (1969) — LPT list scheduling is within 4/3 − 1/(3m) of optimal makespan
 src/syntax/index.ts:23: * @standard ECMA-262 · TypeScript grammar (via ts.createSourceFile — the compiler's own scanner)
 src/tags/index.ts:21: * @standard ISO-25964-1:2011 thesauri-and-interoperability controlled-vocabulary
@@ -3033,7 +3019,6 @@ src/un/edifact/types/test.ts:5: * @standard UN-EDIFACT D.96A
 src/un/edifact/types/test.ts:6: * @standard ISO-9735:2002 edifact-syntax-rules
 src/un/edifact/validate.ts:5: * @standard UN-EDIFACT D.96A
 src/un/edifact/validate.ts:6: * @standard ISO-9735:2002 edifact-syntax-rules
-src/uncertainty/index.ts:15: * @standard SI-2019 / CODATA-2018: ħ = h/2π (via ../photon)
 src/update/fiscal/calendar/on/period/change/index.ts:28: * @standard GDPR:2016/679 (audit trail, access control)
 src/update/fiscal/calendar/on/period/change/index.ts:29: * @standard SOX:2002 (change log, access control evidence)
 src/update/fiscal/calendar/on/period/change/index.ts:30: * @standard Law 60 (immutable chain leaf)
@@ -3572,7 +3557,6 @@ src/security/header/headers/test.ts:5: * @rfc 6797 hsts http-strict-transport-se
 src/security/header/index.ts:4: * @rfc 6797 hsts
 src/seed/content/load/index.ts:17: * @rfc 9110 http-semantics authorization
 src/seed/index.ts:7: * @rfc 9110 http-semantics seed-endpoint
-src/seeding/seedSubscriptionPlans.ts:9: * @rfc 3986 uri syntax-of-slug
 src/shareds/documentPreviewAdmin.ts:14: * @rfc 3986 uri preview-url-construction
 src/spec/generator/audit.ts:14: * @rfc 8259 json
 src/spec/generator/extractor.ts:18: *   @rfc           <id> [free-text]             ← body inferred as 'RFC'
@@ -4134,7 +4118,6 @@ src/scheduled/task/runner.ts:16: * @compliance SOX §404 internal-controls autom
 src/scope/index.ts:9: * @compliance SOC-2 CC6.1 logical-access-controls
 src/security/header/headers/index.ts:17: * @compliance SOC-2 CC6.6 boundary-protection
 src/seed/erpax-product-pages.ts:34: * @compliance WCAG-2.1 level-AA accessible-marketing-pages
-src/seeding/seedSubscriptionPlans.ts:12: * @compliance SOC-2 CC8.1 change-management
 src/seeds/template/bg-nss.ts:20: * @compliance EU 2014/55 b2g-e-invoicing-mandate
 src/seeds/template/compliance.ts:9: * @compliance EU 2014/55 b2g-e-invoicing-mandate-resolution
 src/separation/index.ts:12: * @compliance Montesquieu separation-of-powers (legislative · executive · judicial)
@@ -4163,7 +4146,6 @@ src/subscription/plans/subscriptions/index.ts:18: * @compliance GDPR Art.6(1)(b)
 src/subscription/plans/subscriptions/index.ts:19: * @compliance SOX §404 internal-controls
 src/subscription/plans/subscriptions/usage/records/index.ts:21: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/subscription/plans/subscriptions/usage/records/index.ts:22: * @compliance SOC-2 CC7.4 system-monitoring-and-detection
-src/svg/hero/generator/index.ts:20: * @compliance WCAG-2.1 §1.4.3 contrast-minimum minimum-4.5-1
 src/tags/index.ts:24: * @compliance SOX §404 internal-controls
 src/tags/taggings/index.ts:33: * @compliance SOX §404 internal-controls
 src/tax/jurisdictions/deferred/tax/items/index.ts:20: * @compliance SOX §404 internal-controls TOM-TAX-02
@@ -4818,9 +4800,6 @@ src/saf/t/types/index.ts:17: * @accounting US-GAAP ASC-205 presentation
 src/sale/fiscal/revenue/index.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/sale/order-fiscalization.ts:12: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/sale/subscription-fiscalization.ts:16: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
-src/seeding/seedSubscriptionPlans.test.ts:6: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/seeding/seedSubscriptionPlans.test.ts:7: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/seeding/seedSubscriptionPlans.ts:11: * @accounting IFRS-15 revenue-from-contracts-with-customers
 src/seeds/template/bg-nss.ts:19: * @accounting IFRS IAS-1 §54 minimum-line-items
 src/seeds/template/templates/index.ts:12: * @accounting IFRS IAS-1 §54 minimum-line-items
 src/seeds/template/templates/index.ts:13: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
@@ -5632,7 +5611,6 @@ src/bank/reconciliation/service/index.ts:480:   * @audit ISO-19011:2018 audit-tr
 src/bank/reconciliation/service/index.ts:588:   * @audit ISO-19011:2018 audit-trail aging-of-reconciling-items
 src/bank/reconciliation/service/index.ts:646:   * @audit ISO-19011:2018 audit-trail adjusting-entry
 src/bank/statement/import/service/index.ts:13: * @audit ISO-19011:2018 audit-trail
-src/barrier/index.ts:25: * @audit κ from (m,V0,E); T exact + WKB; tamper-cost = −log2(T) — computed, never asserted
 src/billing/stripeWebhookHandlers.ts:433: * @audit ISO-19011:2018 audit-trail refund-cash-leg
 src/biological/assets/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-biological-assets
 src/biomass/index.ts:15: * @audit computed, never hand-asserted
@@ -5644,7 +5622,6 @@ src/book/index.ts:10: * @audit every page number derived from matrix bonds + hor
 src/bookable/resources/bookings/index.ts:21: * @audit ISO-19011:2018 audit-trail booking-lifecycle
 src/bookable/resources/index.ts:17: * @audit ISO-19011:2018 audit-trail resource-master-changes
 src/brain/index.ts:21: * @audit computed (small-world path length log(N)/log(k) · sparsity k/N · scale cross-check)
-src/brow/index.ts:14: * @audit note, colour and uuid computed from the position math, never hand-asserted
 src/budget/plannings/index.ts:32: * @audit ISO-19011:2018 audit-trail
 src/bulk/op/index.test.ts:8: * @audit ISO-19011:2018 audit-trail bulk-ops-evidence
 src/bulk/op/index.ts:16: * @audit ISO-19011:2018 audit-trail bulk-ops-evidence
@@ -5695,7 +5672,6 @@ src/coherence/index.ts:20: * @audit computed from the input trace, never hand-as
 src/collections/index.test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every registered collection node verified)
 src/collections/index.test.ts:68: * @audit computed from the live collections barrel + each node's slug, never hand-listed
 src/collections/test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every registered collection node verified)
-src/collide/index.ts:17: * @audit collide is DEFINED here and DEFERRED — never applied to the live matrix in this atom
 src/collider/index.ts:12: * @audit each check is a live computation in @/convention; the verdict is coverageCostLog2 of the product, never assumed
 src/commitments/index.ts:31: * @audit ISO-19011:2018 audit-trail authorization-evidence
 src/compliance/frameworks/compliance/requirements/compliance/gaps/index.ts:5: * @audit ISO-19011:2018 nonconformity
@@ -5746,7 +5722,6 @@ src/country/clients/bg/bank/parser/unicredit-bulbank.ts:9: * @audit ISO-19011:20
 src/country/context/index.ts:29: * @audit ISO-19011:2018 audit-trail country-decision-evidence
 src/country/fallback/index.test.ts:17: * @audit Conservation Law 54 universal-identity-element (country instance)
 src/country/fallback/index.ts:53: * @audit Conservation Law 54 universal-identity-element (country instance)
-src/crown/index.ts:11: * @audit note, colour and uuid computed from the position math, never hand-asserted
 src/csrd/disclosures/index.ts:22: * @audit ISAE 3000 limited-assurance (rises to reasonable-assurance under CSRD by 2028)
 src/currency/fallback/index.test.ts:20: * @audit Conservation Law 53 self-referential-closure (currency identity element)
 src/currency/fallback/uuid.ts:60: * @audit Conservation Law 8  content-addressable integrity
@@ -5773,9 +5748,7 @@ src/customers/sales/orders/shipments/tracking/events/index.ts:15: * @audit ISO-1
 src/dashboard/actions/index.ts:35: * @audit ISO-19011:2018 audit-trail user-action-traceability
 src/data/processing/activities/index.ts:13: * @audit ISO-19011:2018 audit-trail ropa-evidence
 src/data/subject/requests/index.ts:16: * @audit ISO-19011:2018 audit-trail dsr-evidence
-src/db/index.ts:11: * @audit the key is the content's uuid (content-addressed); dedup and the round-trip are computed
 src/decentralization/index.ts:16: * @audit computed, never hand-asserted
-src/decoherence/index.ts:17: * @audit coherence e^(−t/τ); purity ½(1+c²); von Neumann entropy of the 2-state ρ — all computed
 src/decompression/index.ts:48: * @audit ISO 19011 — pay-over-time is a deterministic, auditable curve (no discretion)
 src/default/index.ts:11: * @audit the architectural default is computed from the name (uuid → digit); nothing is assigned
 src/deploy/index.ts:11: * @audit the band is the doubling 1·2·4·8; its consonance is computed by @/harmony, the order never assumed
@@ -5833,7 +5806,6 @@ src/etsi/en/319/142/signature-dictionary.ts:23: * @audit ISO-19011:2018 audit-tr
 src/event/emitter/service/index.ts:10: * @audit ISO-19011:2018 audit-trail
 src/evidence/attestation/index.ts:25: * @audit ISO-19011:2018 audit-trail visual-evidence sox-evidence-pack
 src/evidence/attestations/index.ts:17: * @audit ISO-19011:2018 audit-trail attestation-evidence
-src/expand/index.ts:23: * @audit composed from @/entropy + @/uuid/matrix (the live-matrix readings); re-proves nothing
 src/expense/index.ts:14: * @audit entropy read live from @/entropy + @/tamper/import; billed as a balanced double-entry, never asserted
 src/export/standards/service.ts:27: * @audit ISO-19011:2018 audit-trail
 src/factory/collection/base/index.ts:190: * @audit ISO 19011:2018 §6.4.6 — backwards-compat path for collections
@@ -5854,7 +5826,6 @@ src/fixed/assets/depreciation/schedules/hooks/depreciation.ts:24: * @audit ISO-1
 src/fixed/assets/depreciation/schedules/index.ts:13: * @audit ISO-19011:2018 audit-trail depreciation-evidence
 src/fixed/assets/index.ts:29: * @audit ISO-19011:2018 audit-trail
 src/fold/index.ts:15: * @audit depth/merges are the binary-fold math; the corpus counts are read live from the matrix
-src/forge/index.ts:16: * @audit every field is read/derived from the live matrix indexes — never hand-asserted
 src/fusion/index.ts:17: * @audit computed from the live matrix, never hand-asserted
 src/fusion/reactor/index.ts:13: * @audit computed from the live matrix, never hand-asserted
 src/fx/transactions/index.ts:19: * @audit ISO-19011:2018 audit-trail fx-revaluation-evidence
@@ -5880,7 +5851,6 @@ src/gravity/index.ts:17: * @audit computed from the live matrix, never hand-asse
 src/hamiltonian/index.ts:15: * @audit eigenvalues Eₙ = h·νₙ from the rung frequencies; ⟨H⟩ a |cₙ|²-weighted average — all computed
 src/harmony/index.ts:14: * @audit harmony-checked horo bands (the horo state-ring law)
 src/held/for/sale/classifications/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-disposal-classification
-src/humandesign/index.ts:23: * @audit the combinatorics are computed; the metaphysics is named, never claimed
 src/i18n/harvest/index.ts:32: * @audit ISO 19011:2018 §6.4.6 (harvest changes audit-trailed)
 src/identification/index.ts:45: * @audit Conservation Law 10 referential-harmony (resolution = uuid-binding check)
 src/identification/index.ts:46: * @audit Conservation Law 46 uuid-short-display (short uuid kinds enumerated)
@@ -5915,8 +5885,6 @@ src/integrity/uuid-linked-chain.ts:44: * @audit ISO 19011:2018 §6.4.6 tamper-ev
 src/integrity/uuid-ref.ts:28: * @audit ISO 19011:2018 §6.4.6
 src/integrity/uuid-short.ts:43: * @audit ISO 19011:2018 §6.4.6 (UI surfaces audit-trailed for length compliance)
 src/integrity/uuid-stream.ts:57: * @audit ISO 19011:2018 §6.4.6 (every replica audit-trailed by uuid)
-src/interactive/index.ts:11: * @audit the interactive face is renderAtom over the node's content-uuid; coverage read live from the matrix
-src/interference/index.ts:20: * @audit I = a1²+a2²+2a1a2·cos φ; constructive/destructive/visibility computed, never asserted
 src/internal/controls/audit/findings/court-docket.ts:12: * @audit ISO-19011:2018 audit-trail self-assessment
 src/internal/controls/audit/findings/index.ts:10: * @audit ISO-19011:2018 audit-trail
 src/internal/controls/control/tests/audit/samples/index.ts:5: * @audit ISO-19011:2018 sampling-methodology
@@ -6057,7 +6025,6 @@ src/multi/currency/service/index.ts:20: * @audit ISO-19011:2018 audit-trail
 src/multi/search/index.ts:41: * @audit Conservation Law 53 self-referential-closure (this is the internal half)
 src/name/index.ts:11: * @audit uuidOfName is total — defined for ANY name, so every name folds; the identity is computed
 src/naredba/n/18/unp/index.ts:20: * @audit ISO-19011:2018 audit-trail (УНП ties order ↔ fiscal-receipt ↔ payment)
-src/navel/index.ts:11: * @audit note·colour·uuid computed from the position math, never hand-asserted
 src/navigation/index.ts:12: * @audit nav · group · route computed from the path only — never assigned
 src/nerve/index.ts:21: * @audit computed from first principles (threshold step · refractory window · saltatory speed)
 src/nist/incits/359/payload.ts:7: * @audit ISO-19011:2018 audit-trail role-assignment
@@ -6070,7 +6037,6 @@ src/packs/index.ts:36: * @audit ISO-19011:2018 audit-trail dispatch
 src/particle/index.ts:11: * @audit composed from the live matrix node + its mass; never hand-asserted
 src/party/aging.service.ts:14: * @audit ISO-19011:2018 audit-trail
 src/party/workflow.service.ts:7: * @audit ISO-19011:2018 audit-trail state-transitions
-src/patent/index.ts:23: * @audit anteriority is a timestamp comparison over anchor-bound digests; obviousness is a merge identity
 src/path/index.ts:11: * @audit paths computed deterministically; never hand-mapped per surface
 src/path/record.ts:12: * @audit pure; never silent mutation of ledger entries
 src/payable/aging/index.ts:13: * @audit ISO-19011:2018 audit-trail
@@ -6091,7 +6057,6 @@ src/persist/api/audit/event/index.ts:17: * @audit ISO-19011:2018 audit-trail
 src/photon/index.ts:18: * @audit energy/momentum/wavelength computed from h and c; the colour+sound render from the position math
 src/pivot/index.ts:11: * @audit every count is derived from model fields, never hand-set
 src/pixel/index.ts:14: * @audit colour computed from the uuid's digit, never painted on
-src/plasma/index.ts:17: * @audit ionization read from the live reciprocity/entropy; the cutoff is the double-torus floor
 src/platform/readiness/index.ts:18: * @audit ISO 19011:2018 §6.4.6 (readiness audit-trailed)
 src/plugin/dimensions.ts:39: * @audit ISO 19011:2018 §6.4.6 (every collection traceable to a dimension)
 src/plugins/naming/index.ts:29: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
@@ -6163,7 +6128,6 @@ src/receivable/aging/index.ts:13: * @audit ISO-19011:2018 audit-trail
 src/receivable/allowance/index.ts:10: * @audit ISO-19011:2018 audit-trail
 src/receivable/workflow/index.ts:12: * @audit ISO-19011:2018 audit-trail state-transitions
 src/recycle/index.ts:22: * @audit waste computed from entropy.orphans on the live matrix; recycling never fabricates a link
-src/redundancy/index.ts:14: * @audit R = 1 − H/log₂n from ../shannon; clamped to [0,1] -- computed
 src/regeneration/index.ts:25: * @audit computed from first principles + the live content-uuid (toUuid)
 src/regulatory/deferral/accounts/index.ts:15: * @audit ISO 19011:2018 §6.4.6 audit-evidence-regulatory-deferral
 src/relocate/index.ts:14: * @audit computed over the live uuid-matrix mass ([[gravity]]); never hand-asserted
@@ -6171,15 +6135,12 @@ src/remote/media/import/index.ts:12: * @audit ISO-19011:2018 audit-trail
 src/render/index.ts:15: * @audit colour/sound/vibration all computed from the uuid's digit (pixel · signal · rodin), never painted on
 src/report/index.ts:24: * @audit ISO-19011:2018 §6.4 — a report is read by the reader who signs it
 src/research/development/index.ts:10: * @audit the cross binding is computed (entangle over the pair); never hand-asserted
-src/reveal/index.ts:17: * @audit emergent triads are computed from the live matrix edges, never asserted
 src/rodin/coil/index.ts:22: * @audit every residue computed on (ℤ/9ℤ) via @/horo, never hand-asserted
 src/rodin/index.ts:25: * @audit every quantity computed from the residues / live matrix, never asserted
 src/roles/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/roles/registry/index.ts:23: * @audit ISO-19011:2018 §6.4.6 audit-evidence-role-traceability
 src/roles/user/roles/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/roles/user/roles/index.ts:14: * @audit ISO-19011:2018 audit-trail
-src/root/index.ts:14: * @audit note·colour·uuid computed from the position math, never hand-asserted
-src/sacral/index.ts:15: * @audit note·colour·uuid computed from the position math, never hand-asserted
 src/saf/t/export/service/index.test.ts:10: * @audit ISO-19011:2018 audit-trail
 src/saf/t/export/service/index.ts:35: * @audit ISO-19011:2018 audit-trail tax-authority-audit-file
 src/saf/t/export/service/source-documents.test.ts:6: * @audit ISO-19011:2018 audit-trail
@@ -6230,7 +6191,6 @@ src/self/closure/provider/signing.ts:58: * @audit Conservation Law 53 self-refer
 src/self/reference/erpax.profile.ts:12: * @audit ISO 19011:2018 §6.4.6 (platform observes itself)
 src/self/similar/index.ts:16: * @audit every quantity computed on (ℤ/9ℤ) via @/horo + @/rodin, never asserted
 src/seo/index.ts:12: * @audit every field derived from the atom; seoCoverage reads the live tree, the gap is computed not assumed
-src/shannon/index.ts:13: * @audit H = −Σ pᵢ log₂ pᵢ = Σ pᵢ·surprisal(pᵢ); 0 ≤ H ≤ log₂ n -- computed
 src/shared/AddressBlock.tsx:19: * @audit ISO-19011:2018 audit-trail consistent-rendering
 src/shared/AuditedTimestamp.tsx:17: * @audit ISO-19011:2018 audit-trail consistent-timestamps
 src/shared/Money.tsx:19: * @audit ISO-19011:2018 audit-trail consistent-formatting
@@ -6266,9 +6226,7 @@ src/subscription/plans/subscriptions/hooks/emitLifecycleEvents.ts:29: * @audit I
 src/subscription/plans/subscriptions/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/subscription/plans/subscriptions/usage/records/index.ts:20: * @audit ISO-19011:2018 audit-trail usage-evidence
 src/superposition/index.ts:15: * @audit probabilities are |cₙ|² normalised to sum 1; collapse is the cumulative inverse-CDF
-src/surprisal/index.ts:14: * @audit I(p) = −log₂ p; additivity from log(p·q)=log p + log q -- computed
 src/sustainability/index.ts:18: * @audit computed, never hand-asserted
-src/svg/hero/generator/index.ts:21: * @audit ISO-19011:2018 audit-trail seed-media-provenance
 src/tags/index.ts:23: * @audit ISO-19011:2018 audit-trail label-changes
 src/tags/taggings/counter.ts:15: * @audit ISO-19011:2018 audit-trail denormalised-aggregate
 src/tags/taggings/index.ts:32: * @audit ISO-19011:2018 audit-trail tagging-provenance
@@ -6296,7 +6254,6 @@ src/testing/test/seed/factory/index.ts:39: * @audit ISO-19011:2018 audit-trail s
 src/testing/test/seed/factory/index.ts:58: * @audit ISO-19011:2018 audit-trail seed-evidence-traceability
 src/testing/test/setup/index.ts:7: * @audit ISO-19011:2018 audit-trail seed-cleanup
 src/testing/witness/index.ts:14: * @audit ceccec.psg.bg/theorems — bounded-witness (55 papers) · finite-complete (410 papers)
-src/throat/index.ts:14: * @audit note·colour·uuid computed from the position math, never hand-asserted
 src/topology/torus.ts:52: * @audit ISO 19011:2018 §6.4.6 (every torus traversal audit-trailed)
 src/trading/api/client/index.ts:35: * @audit ISO-19011:2018 audit-trail external-system-evidence (the receipt chain)
 src/trading/api/client/test.ts:10: * @audit ISO-19011:2018 audit-trail (the receipt chain is the evidence)
@@ -6323,7 +6280,6 @@ src/types/period/end/index.ts:12: * @audit ISO-19011:2018 audit-trail
 src/ui/agent/index.ts:10: * @audit agentOf inverts agent/ui's route; the round-trip is the balance, computed not asserted
 src/un/edifact/types/index.ts:11: * @audit ISO-19011:2018 audit-trail
 src/un/edifact/types/test.ts:7: * @audit ISO-19011:2018 audit-trail
-src/uncertainty/index.ts:16: * @audit the bound ħ/2 is computed from Planck's h; the linewidth is the energy–time relation
 src/users/access/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/users/endpoints/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/users/hooks/firstUserSuperAdmin.ts:19: * @audit ISO-19011:2018 audit-trail genesis
