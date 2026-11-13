@@ -49,7 +49,9 @@ async function buildOne(atom) {
   const pkgDir = join(packagesDir, atom)
   const pkgJsonPath = join(pkgDir, 'package.json')
   const pkg = JSON.parse(readFileSync(pkgJsonPath, 'utf8'))
-  const entry = join(root, 'src', atom, 'index.ts')
+  /** where the package's source lives under src/ — its own name unless it says otherwise */
+  const source = pkg.erpax?.entry ?? atom
+  const entry = join(root, 'src', source, 'index.ts')
   const dist = join(pkgDir, 'dist')
   rmSync(dist, { recursive: true, force: true })
 
@@ -171,7 +173,7 @@ async function buildOne(atom) {
     encoding: 'utf8',
   })
   rmSync(tsconfigPath, { force: true })
-  const typesOk = existsSync(join(typesDir, atom, 'index.d.ts'))
+  const typesOk = existsSync(join(typesDir, source, 'index.d.ts'))
   if (typesOk) rewriteAliasInDts(typesDir)
 
   copyFileSync(join(root, 'LICENSE'), join(pkgDir, 'LICENSE'))
