@@ -16,7 +16,6 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { trainingAfterChange } from '@/agent/sync'
 import { accountingCollectionAccess } from '@/auth'
 import { currencyField, statusField, notesField, auditFields, legalEntityField } from '@/base/accounting/field'
 import { competencyLineField } from '@/competency'
@@ -125,7 +124,7 @@ const JobPositions: CollectionConfig = {
   ],
   // afterChange arms the auto-train loop: an incumbent's gap vs this role is
   // priced on the decompression curve and broadcast as a training plan ([[train]]).
-  hooks: standardCollectionHooks('job-positions', { afterChange: [trainingAfterChange()] }),
+  hooks: standardCollectionHooks('job-positions'),
   timestamps: true,
 }
 

@@ -22,7 +22,6 @@ import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import type { Payload, SanitizedConfig } from 'payload'
 import { loadPages, loadRedirects, pageRows, type LoadResult, type PageRow, type RedirectRow } from '@/seed/content'
-import { corpusCase, withCase } from '@/verify/case'
 
 /** The three REST operations the loaders use, as the SDK offers them. */
 export interface Rest {
@@ -48,17 +47,6 @@ export function overSdk(sdk: Rest, config: SanitizedConfig): Pick<Payload, 'find
     create: (args: Record<string, unknown>) => sdk.create(overHttp(args)),
     update: (args: Record<string, unknown>) => sdk.update(overHttp(args)),
   } as unknown as Pick<Payload, 'find' | 'create' | 'update' | 'config'>
-}
-
-/**
- * Reads an atom's SKILL document from a checkout, with its proof section appended — claim,
- * argument, evidence, assumptions ([[verify]]/case). Undefined when the atom has no document.
- */
-export const skillReader = (cwd: string) => (path: string): string | undefined => {
-  const file = join(cwd, 'src', path, 'SKILL.md')
-  if (!existsSync(file)) return undefined
-  const markdown = readFileSync(file, 'utf8')
-  return withCase(markdown, corpusCase(cwd, path, markdown))
 }
 
 /** `--url x --packs a,b --tenant t` → its parts; a flag with no value is absent, never guessed. */
@@ -98,23 +86,20 @@ export async function loadCorpus(
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const { url, packs, tenant, seed, documents, redirects } = parseArgs(process.argv.slice(2))
-  if (!url || (!packs && !seed && !documents && !redirects)) {
-    console.error('usage: tsx src/seed/content/load/index.ts --url <origin> (--packs <a,b> | --seed <file> | --documents <file>) [--redirects <file>] [--tenant <id>]')
+  if (!url || (!seed && !documents && !redirects)) {
+    console.error('usage: tsx src/seed/content/load/index.ts --url <origin> (--seed <file> | --documents <file> [--packs <a,b>]) [--redirects <file>] [--tenant <id>]')
     process.exit(2)
   }
   const authorization = process.env.ERPAX_AUTHORIZATION
   const { PayloadSDK } = await import('@payloadcms/sdk')
-  const { UUID_MATRIX_NODES } = await import('@/uuid/matrix')
   const config = await (await import('@/payload.config')).default
   const sdk = new PayloadSDK({ baseURL: `${url.replace(/\/$/, '')}/api`, baseInit: authorization ? { headers: { Authorization: authorization } } : {} })
   const seeded = documents ? seededDocuments(JSON.parse(readFileSync(documents, 'utf8')) as Record<string, string>) : undefined
   const result = seeded
     ? await loadCorpus(sdk as unknown as Rest, config, seeded.nodes, seeded.read, { packs, tenant })
-    : !seed && !packs
-    ? { created: 0, updated: 0, unchanged: 0, unresolved: [], rows: 0 }
     : seed
     ? await loadSeed(sdk as unknown as Rest, config, JSON.parse(readFileSync(seed, 'utf8')) as PageRow[], { tenant })
-    : await loadCorpus(sdk as unknown as Rest, config, UUID_MATRIX_NODES, skillReader(process.cwd()), { packs, tenant })
+    : { created: 0, updated: 0, unchanged: 0, unresolved: [], rows: 0 }
   console.log(JSON.stringify({ ...result, unresolved: result.unresolved.length }))
   if (redirects) {
     const rows = JSON.parse(readFileSync(redirects, 'utf8')) as RedirectRow[]

@@ -249,19 +249,7 @@ export default buildConfig({
     },
   },
   editor: defaultLexical,
-  // Slice MMMM (2026-05-10) — architecture invariants gate at boot.
-  // Runs the 5-axis self-check (standards / expansion / compression /
-  // entropy; fallback axis is advisory + skipped at boot). Default is
-  // warn-only; set `STRICT_INVARIANTS=1` to refuse boot on failure.
-  // @see src/architecture/invariant/onInit.ts
   onInit: async (payload) => {
-    try {
-      const { runInvariantsAtBoot } = await import('@/architecture/invariant/onInit')
-      await runInvariantsAtBoot(payload)
-    } catch (err) {
-      // STRICT_INVARIANTS=1 propagates to refuse boot.
-      throw err
-    }
     // Slice PPPP — declarative event → notification fan-out.
     // Idempotent; safe on hot reload.
     try {
