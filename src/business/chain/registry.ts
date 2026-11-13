@@ -281,7 +281,7 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
       { collection: 'leads',         action: 'qualify-sql',  emits: 'lead:sql',          requires: ['lead:mql'], producer: { onStatus: 'sql', aggregate: 'order' } },
       { collection: 'opportunities', action: 'create',       emits: 'opp:created',       requires: ['lead:sql'], producer: { onCreate: true, aggregate: 'order' } },
       { collection: 'opportunities', action: 'close-won',    emits: 'opp:won',           requires: ['opp:created'], producer: { onStatus: 'won', aggregate: 'order' } },
-      { collection: 'customers',     action: 'create',       emits: 'customer:created',  requires: ['opp:won'], producer: { onCreate: true, aggregate: 'order' } },
+      { collection: 'parties',     action: 'create',       emits: 'customer:created',  requires: ['opp:won'], producer: { onCreate: true, aggregate: 'order' } },
       { collection: 'contracts',     action: 'sign',         emits: 'contract:signed',   requires: ['customer:created'], producer: { onStatus: 'signed', aggregate: 'order' } },
       { collection: 'sales-commissions', action: 'book',     emits: 'commission:booked', requires: ['opp:won'], producer: { onStatus: 'booked', aggregate: 'payment' } },
     ],
@@ -340,7 +340,7 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
     standards: ['FATF R.10 R.12 R.24', 'EU AMLD5', 'EU CFSP sanctions'],
     featureGate: 'compliance_aml',
     steps: [
-      { collection: 'customers',         action: 'onboard',      emits: 'customer:onboard',     requires: [], producer: { onStatus: 'onboarded', aggregate: 'order' } },
+      { collection: 'parties',         action: 'onboard',      emits: 'customer:onboard',     requires: [], producer: { onStatus: 'onboarded', aggregate: 'order' } },
       { collection: 'kyc-checks',        action: 'initiate',     emits: 'kyc:initiated',        requires: ['customer:onboard'], producer: { onStatus: 'initiated', aggregate: 'order' } },
       { collection: 'beneficial-owners', action: 'register',     emits: 'ubo:registered',       requires: ['kyc:initiated'], producer: { onStatus: 'registered', aggregate: 'order' } },
       { collection: 'ai-suggestions',    action: 'screen',       emits: 'sanctions:screened',   requires: ['ubo:registered'], producer: { onStatus: 'screened', aggregate: 'order' } },

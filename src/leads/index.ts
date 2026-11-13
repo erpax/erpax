@@ -80,7 +80,7 @@ const Leads: CollectionConfig = {
     { name: 'assignedTo', type: 'relationship', relationTo: 'users' },
     { name: 'convertedOpportunity', type: 'relationship', relationTo: 'opportunities',
       admin: { readOnly: true } },
-    { name: 'convertedCustomer', type: 'relationship', relationTo: 'customers',
+    { name: 'convertedCustomer', type: 'relationship', relationTo: 'parties',
       admin: { readOnly: true } },
     { name: 'convertedAt', type: 'date', admin: { readOnly: true } },
     { name: 'consentRecord', type: 'relationship', relationTo: 'consent-records',

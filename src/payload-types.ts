@@ -126,7 +126,6 @@ export interface Config {
     'csrd-disclosures': CsrdDisclosure;
     'currency-rates': CurrencyRate;
     'customer-segments': CustomerSegment;
-    customers: Customer;
     'customs-declarations': CustomsDeclaration;
     'data-processing-activities': DataProcessingActivity;
     'data-subject-requests': DataSubjectRequest;
@@ -193,6 +192,7 @@ export interface Config {
     packages: Package;
     packs: Pack;
     pages: Page;
+    parties: Party;
     'payment-allocations': PaymentAllocation;
     'payment-methods': PaymentMethod;
     'payment-runs': PaymentRun;
@@ -269,7 +269,6 @@ export interface Config {
     users: User;
     'vendor-quotes': VendorQuote;
     'vendor-scorecards': VendorScorecard;
-    vendors: Vendor;
     'warehouse-locations': WarehouseLocation;
     'wip-snapshots': WipSnapshot;
     'work-centers': WorkCenter;
@@ -380,7 +379,6 @@ export interface Config {
     'csrd-disclosures': CsrdDisclosuresSelect<false> | CsrdDisclosuresSelect<true>;
     'currency-rates': CurrencyRatesSelect<false> | CurrencyRatesSelect<true>;
     'customer-segments': CustomerSegmentsSelect<false> | CustomerSegmentsSelect<true>;
-    customers: CustomersSelect<false> | CustomersSelect<true>;
     'customs-declarations': CustomsDeclarationsSelect<false> | CustomsDeclarationsSelect<true>;
     'data-processing-activities': DataProcessingActivitiesSelect<false> | DataProcessingActivitiesSelect<true>;
     'data-subject-requests': DataSubjectRequestsSelect<false> | DataSubjectRequestsSelect<true>;
@@ -447,6 +445,7 @@ export interface Config {
     packages: PackagesSelect<false> | PackagesSelect<true>;
     packs: PacksSelect<false> | PacksSelect<true>;
     pages: PagesSelect<false> | PagesSelect<true>;
+    parties: PartiesSelect<false> | PartiesSelect<true>;
     'payment-allocations': PaymentAllocationsSelect<false> | PaymentAllocationsSelect<true>;
     'payment-methods': PaymentMethodsSelect<false> | PaymentMethodsSelect<true>;
     'payment-runs': PaymentRunsSelect<false> | PaymentRunsSelect<true>;
@@ -523,7 +522,6 @@ export interface Config {
     users: UsersSelect<false> | UsersSelect<true>;
     'vendor-quotes': VendorQuotesSelect<false> | VendorQuotesSelect<true>;
     'vendor-scorecards': VendorScorecardsSelect<false> | VendorScorecardsSelect<true>;
-    vendors: VendorsSelect<false> | VendorsSelect<true>;
     'warehouse-locations': WarehouseLocationsSelect<false> | WarehouseLocationsSelect<true>;
     'wip-snapshots': WipSnapshotsSelect<false> | WipSnapshotsSelect<true>;
     'work-centers': WorkCentersSelect<false> | WorkCentersSelect<true>;
@@ -1259,7 +1257,7 @@ export interface Project {
    */
   name: string;
   description?: string | null;
-  customer?: (string | null) | Customer;
+  customer?: (string | null) | Party;
   /**
    * The award funding this project. Costs book to the project; the project carries the award.
    */
@@ -1341,9 +1339,9 @@ export interface Project {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "customers".
+ * via the `definition` "parties".
  */
-export interface Customer {
+export interface Party {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
@@ -1351,13 +1349,17 @@ export interface Customer {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   /**
-   * Unique customer code (e.g., CUST-0001)
+   * Unique party code (e.g., CUST-0001, VEND-0001)
    */
   code: string;
   /**
    * Display name
    */
   name: string;
+  /**
+   * The sides this party is on. One party may be both.
+   */
+  roles: ('customer' | 'vendor')[];
   /**
    * ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, e-invoicing).
    */
@@ -1370,7 +1372,7 @@ export interface Customer {
     /**
      * Party legal form
      */
-    customerType: 'individual' | 'company';
+    type: 'individual' | 'company' | 'government' | 'non_profit';
     /**
      * Lifecycle status
      */
@@ -1392,7 +1394,7 @@ export interface Customer {
   };
   addresses?: {
     /**
-     * All known addresses for this customer
+     * All known addresses for this party
      */
     addresses?: (string | Address)[] | null;
     /**
@@ -1403,6 +1405,10 @@ export interface Customer {
      * Default shipping address
      */
     shippingAddress?: (string | null) | Address;
+    /**
+     * Default remit-to address for payments
+     */
+    remitToAddress?: (string | null) | Address;
   };
   tax?: {
     /**
@@ -1414,7 +1420,7 @@ export interface Customer {
      */
     vatNumberType?: string | null;
     /**
-     * Tax-exempt customer (e.g., resale certificate)
+     * Tax-exempt party (e.g., resale certificate)
      */
     taxExempt?: boolean | null;
     /**
@@ -1422,9 +1428,25 @@ export interface Customer {
      */
     taxExemptionCertificate?: string | null;
     /**
-     * Default tax code applied on invoices
+     * Default tax code applied on invoices and bills
      */
     defaultTaxCode?: (string | null) | TaxCode;
+    /**
+     * US: subject to IRS Form 1099 reporting
+     */
+    vendor1099Eligible?: boolean | null;
+    /**
+     * IRS 1099 form variant
+     */
+    tax1099FormType?: ('1099_nec' | '1099_misc' | '1099_k' | '1099_int' | '1099_div') | null;
+    /**
+     * Tax ID format
+     */
+    taxIdType?: ('ein' | 'ssn' | 'itin' | 'vat' | 'other') | null;
+    /**
+     * Backup withholding / WHT rate %
+     */
+    withholdingRate?: number | null;
   };
   commercial: {
     /**
@@ -1445,7 +1467,11 @@ export interface Customer {
      */
     creditCurrency?: string | null;
     /**
-     * ISO 4217 default invoicing currency
+     * Preferred disbursement method
+     */
+    preferredPaymentMethod?: ('ach' | 'wire' | 'check' | 'credit_card' | 'sepa' | 'cash' | 'other') | null;
+    /**
+     * ISO 4217 default trading currency
      */
     defaultCurrency: string;
     /**
@@ -1456,6 +1482,36 @@ export interface Customer {
      * Price list / tier identifier
      */
     priceList?: string | null;
+  };
+  bank?: {
+    /**
+     * Account holder name
+     */
+    bankAccountName?: string | null;
+    /**
+     * Bank name
+     */
+    bankName?: string | null;
+    /**
+     * ABA routing (US) / sort code (UK)
+     */
+    bankRoutingNumber?: string | null;
+    /**
+     * Account number (last 4 visible recommended)
+     */
+    bankAccountNumber?: string | null;
+    /**
+     * IBAN (ISO 13616)
+     */
+    bankIban?: string | null;
+    /**
+     * SWIFT/BIC (ISO 9362)
+     */
+    bankSwiftBic?: string | null;
+    /**
+     * ISO 3166-1 alpha-2 country of bank
+     */
+    bankCountryCode?: string | null;
   };
   ledger?: {
     /**
@@ -1470,6 +1526,18 @@ export interface Customer {
      * Default sales-discount contra-revenue account
      */
     defaultDiscountAccount?: (string | null) | GlAccount;
+    /**
+     * Default AP control account (liability)
+     */
+    defaultPayableAccount?: (string | null) | GlAccount;
+    /**
+     * Default expense account on bills
+     */
+    defaultExpenseAccount?: (string | null) | GlAccount;
+    /**
+     * Default withholding-tax payable account
+     */
+    defaultWithholdingAccount?: (string | null) | GlAccount;
   };
   notes?: {
     /**
@@ -3453,7 +3521,7 @@ export interface FixedAsset {
   /**
    * Asset supplier/vendor (IAS-16 §16(a) — directly attributable cost source).
    */
-  supplier?: (string | null) | Vendor;
+  supplier?: (string | null) | Party;
   /**
    * Reference PO number
    */
@@ -3532,189 +3600,6 @@ export interface FixedAsset {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendors".
- */
-export interface Vendor {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Unique vendor code (e.g., VEND-0001)
-   */
-  code: string;
-  /**
-   * Display name
-   */
-  name: string;
-  /**
-   * ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, sanctions screening, e-invoicing).
-   */
-  country?: string | null;
-  identity: {
-    /**
-     * Registered legal name (EN 16931 BT-27)
-     */
-    legalName?: string | null;
-    /**
-     * Party legal form
-     */
-    vendorType: 'individual' | 'company' | 'government' | 'non_profit';
-    /**
-     * Lifecycle status
-     */
-    status: 'active' | 'on_hold' | 'inactive' | 'archived';
-  };
-  contact?: {
-    /**
-     * Primary email
-     */
-    email?: string | null;
-    /**
-     * Primary phone
-     */
-    phone?: string | null;
-    /**
-     * Web site
-     */
-    website?: string | null;
-  };
-  addresses?: {
-    /**
-     * All known addresses for this vendor
-     */
-    addresses?: (string | Address)[] | null;
-    /**
-     * Default remit-to address
-     */
-    remitToAddress?: (string | null) | Address;
-  };
-  tax?: {
-    /**
-     * VAT / Tax ID (EN 16931 BT-31). Auto-classified against the per-country regex registry on save.
-     */
-    vatNumber?: string | null;
-    /**
-     * Auto-stamped — e.g. "VAT (FR)", "EIN", "GSTIN", "EIK / Bulstat".
-     */
-    vatNumberType?: string | null;
-    /**
-     * Tax-exempt vendor
-     */
-    taxExempt?: boolean | null;
-    /**
-     * Default tax code applied on bills
-     */
-    defaultTaxCode?: (string | null) | TaxCode;
-    /**
-     * US: subject to IRS Form 1099 reporting
-     */
-    vendor1099Eligible?: boolean | null;
-    /**
-     * IRS 1099 form variant
-     */
-    tax1099FormType?: ('1099_nec' | '1099_misc' | '1099_k' | '1099_int' | '1099_div') | null;
-    /**
-     * Tax ID format
-     */
-    taxIdType?: ('ein' | 'ssn' | 'itin' | 'vat' | 'other') | null;
-    /**
-     * Backup withholding / WHT rate %
-     */
-    withholdingRate?: number | null;
-  };
-  commercial: {
-    /**
-     * Default payment terms
-     */
-    paymentTerms?:
-      ('due_on_receipt' | 'net_7' | 'net_14' | 'net_30' | 'net_45' | 'net_60' | 'net_90' | 'custom') | null;
-    /**
-     * Custom net days (used when paymentTerms = custom)
-     */
-    paymentTermsDays?: number | null;
-    /**
-     * Preferred disbursement method
-     */
-    preferredPaymentMethod?: ('ach' | 'wire' | 'check' | 'credit_card' | 'sepa' | 'cash' | 'other') | null;
-    /**
-     * ISO 4217 default purchasing currency
-     */
-    defaultCurrency: string;
-    /**
-     * BCP 47 locale
-     */
-    defaultLocale?: string | null;
-  };
-  bank?: {
-    /**
-     * Account holder name
-     */
-    bankAccountName?: string | null;
-    /**
-     * Bank name
-     */
-    bankName?: string | null;
-    /**
-     * ABA routing (US) / sort code (UK)
-     */
-    bankRoutingNumber?: string | null;
-    /**
-     * Account number (last 4 visible recommended)
-     */
-    bankAccountNumber?: string | null;
-    /**
-     * IBAN (ISO 13616)
-     */
-    bankIban?: string | null;
-    /**
-     * SWIFT/BIC (ISO 9362)
-     */
-    bankSwiftBic?: string | null;
-    /**
-     * ISO 3166-1 alpha-2 country of bank
-     */
-    bankCountryCode?: string | null;
-  };
-  ledger?: {
-    /**
-     * Default AP control account (liability)
-     */
-    defaultPayableAccount?: (string | null) | GlAccount;
-    /**
-     * Default expense account on bills
-     */
-    defaultExpenseAccount?: (string | null) | GlAccount;
-    /**
-     * Withholding tax payable account
-     */
-    defaultWithholdingAccount?: (string | null) | GlAccount;
-  };
-  notes?: {
-    /**
-     * Internal notes
-     */
-    note?: string | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "contracts".
  */
 export interface Contract {
@@ -3725,7 +3610,7 @@ export interface Contract {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   contractNumber: string;
-  customer: string | Customer;
+  customer: string | Party;
   title: string;
   effectiveFrom: string;
   effectiveTo?: string | null;
@@ -4113,8 +3998,8 @@ export interface Activity {
   relatedTo: 'lead' | 'opportunity' | 'customer' | 'vendor' | 'project';
   lead?: (string | null) | Lead;
   opportunity?: (string | null) | Opportunity;
-  customer?: (string | null) | Customer;
-  vendor?: (string | null) | Vendor;
+  customer?: (string | null) | Party;
+  vendor?: (string | null) | Party;
   project?: (string | null) | Project;
   description?: string | null;
   outcome?: ('positive' | 'neutral' | 'negative' | 'action_required') | null;
@@ -4184,7 +4069,7 @@ export interface Lead {
   estimatedCloseDate?: string | null;
   assignedTo?: (string | null) | User;
   convertedOpportunity?: (string | null) | Opportunity;
-  convertedCustomer?: (string | null) | Customer;
+  convertedCustomer?: (string | null) | Party;
   convertedAt?: string | null;
   /**
    * GDPR Art.7 marketing-consent record (if applicable).
@@ -4216,7 +4101,7 @@ export interface Opportunity {
   /**
    * Existing customer (for upsell/cross-sell). Null for net-new from lead.
    */
-  customer?: (string | null) | Customer;
+  customer?: (string | null) | Party;
   opportunityOwner: string | User;
   stage:
     | 'qualification'
@@ -6454,7 +6339,7 @@ export interface Batch {
   /**
    * Supplier of the lot (purchased origin).
    */
-  supplier?: (string | null) | Vendor;
+  supplier?: (string | null) | Party;
   /**
    * Supplier's own lot/batch number — preserves their traceability chain.
    */
@@ -7574,7 +7459,7 @@ export interface SalesOrder {
    * Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents.
    */
   orderNumber: string;
-  customer: string | Customer;
+  customer: string | Party;
   /**
    * Buyer-side PO number / reference. EN-16931 §BT-13 / Peppol cbc:BuyerReference.
    */
@@ -7698,7 +7583,7 @@ export interface Quote {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   quoteNumber: string;
-  customer: string | Customer;
+  customer: string | Party;
   issuedAt?: string | null;
   expiresAt?: string | null;
   lines: {
@@ -7845,7 +7730,7 @@ export interface KycCheck {
   tenant?: (string | null) | Tenant;
   checkId: string;
   subjectType: 'customer' | 'vendor' | 'beneficial_owner' | 'signatory';
-  subject: string | Customer;
+  subject: string | Party;
   cddLevel: 'sdd' | 'cdd' | 'edd';
   identityDocuments?:
     | {
@@ -8793,7 +8678,7 @@ export interface Booking {
   /**
    * Required when guestType = `customer`.
    */
-  customer?: (string | null) | Customer;
+  customer?: (string | null) | Party;
   /**
    * Required when guestType = `employee`.
    */
@@ -9288,12 +9173,8 @@ export interface Case {
               value: string | User;
             }
           | {
-              relationTo: 'customers';
-              value: string | Customer;
-            }
-          | {
-              relationTo: 'vendors';
-              value: string | Vendor;
+              relationTo: 'parties';
+              value: string | Party;
             }
           | {
               relationTo: 'employees';
@@ -10432,7 +10313,7 @@ export interface CreditMemo {
   /**
    * Party receiving the credit (IFRS-15 §B22 contra-revenue counterparty).
    */
-  customer?: (string | null) | Customer;
+  customer?: (string | null) | Party;
   /**
    * Original invoice being credited (optional for general write-offs).
    */
@@ -14326,7 +14207,7 @@ export interface MaintenanceWorkOrder {
   /**
    * External contractor (when outsourced).
    */
-  vendor?: (string | null) | Vendor;
+  vendor?: (string | null) | Party;
   /**
    * Planned start.
    */
@@ -14917,12 +14798,8 @@ export interface Message {
         value: string | Invoice;
       } | null)
     | ({
-        relationTo: 'customers';
-        value: string | Customer;
-      } | null)
-    | ({
-        relationTo: 'vendors';
-        value: string | Vendor;
+        relationTo: 'parties';
+        value: string | Party;
       } | null)
     | ({
         relationTo: 'sales-orders';
@@ -16240,7 +16117,7 @@ export interface PurchaseRequisition {
      */
     estimatedAmount: number;
     glAccount?: (string | null) | GlAccount;
-    preferredVendor?: (string | null) | Vendor;
+    preferredVendor?: (string | null) | Party;
     id?: string | null;
   }[];
   /**
@@ -16305,7 +16182,7 @@ export interface VendorQuote {
    * Tenant-unique vendor quote number (e.g. VQ-2026-0001).
    */
   quoteNumber: string;
-  vendor: string | Vendor;
+  vendor: string | Party;
   /**
    * Source requisition (one PR may have many vendor quotes).
    */
@@ -16959,7 +16836,7 @@ export interface Return {
   tenant?: (string | null) | Tenant;
   rmaNumber: string;
   order: string | SalesOrder;
-  customer?: (string | null) | Customer;
+  customer?: (string | null) | Party;
   reason: 'defective' | 'wrong_item' | 'customer_changed_mind' | 'damaged' | 'late' | 'other';
   lines: {
     item?: (string | null) | Item;
@@ -17249,7 +17126,7 @@ export interface SalesCommission {
    * Contract created on close-won (drives the amortisation period).
    */
   contract?: (string | null) | Contract;
-  customer?: (string | null) | Customer;
+  customer?: (string | null) | Party;
   closedWonDate: string;
   /**
    * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
@@ -18795,7 +18672,7 @@ export interface VendorScorecard {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   reference: string;
-  vendor: string | Vendor;
+  vendor: string | Party;
   /**
    * e.g. 2026-Q1, 2026-FY.
    */
@@ -20049,7 +19926,7 @@ export interface PayloadQueryPreset {
     | boolean
     | null;
   groupBy?: string | null;
-  relatedCollection: 'pages' | 'posts';
+  relatedCollection: 'pages' | 'parties' | 'posts';
   /**
    * This is a temporary field used to determine if updating the preset would remove the user's access to it. When `true`, this record will be deleted after running the preset's `validate` function.
    */
@@ -21854,73 +21731,6 @@ export interface CustomerSegmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "customers_select".
- */
-export interface CustomersSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  code?: T;
-  name?: T;
-  country?: T;
-  identity?:
-    | T
-    | {
-        legalName?: T;
-        customerType?: T;
-        status?: T;
-      };
-  contact?:
-    | T
-    | {
-        email?: T;
-        phone?: T;
-        website?: T;
-      };
-  addresses?:
-    | T
-    | {
-        addresses?: T;
-        billingAddress?: T;
-        shippingAddress?: T;
-      };
-  tax?:
-    | T
-    | {
-        vatNumber?: T;
-        vatNumberType?: T;
-        taxExempt?: T;
-        taxExemptionCertificate?: T;
-        defaultTaxCode?: T;
-      };
-  commercial?:
-    | T
-    | {
-        paymentTerms?: T;
-        paymentTermsDays?: T;
-        creditLimit?: T;
-        creditCurrency?: T;
-        defaultCurrency?: T;
-        defaultLocale?: T;
-        priceList?: T;
-      };
-  ledger?:
-    | T
-    | {
-        defaultReceivableAccount?: T;
-        defaultRevenueAccount?: T;
-        defaultDiscountAccount?: T;
-      };
-  notes?:
-    | T
-    | {
-        note?: T;
-      };
-  metadata?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24793,6 +24603,94 @@ export interface FormBlockSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "parties_select".
+ */
+export interface PartiesSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  code?: T;
+  name?: T;
+  roles?: T;
+  country?: T;
+  identity?:
+    | T
+    | {
+        legalName?: T;
+        type?: T;
+        status?: T;
+      };
+  contact?:
+    | T
+    | {
+        email?: T;
+        phone?: T;
+        website?: T;
+      };
+  addresses?:
+    | T
+    | {
+        addresses?: T;
+        billingAddress?: T;
+        shippingAddress?: T;
+        remitToAddress?: T;
+      };
+  tax?:
+    | T
+    | {
+        vatNumber?: T;
+        vatNumberType?: T;
+        taxExempt?: T;
+        taxExemptionCertificate?: T;
+        defaultTaxCode?: T;
+        vendor1099Eligible?: T;
+        tax1099FormType?: T;
+        taxIdType?: T;
+        withholdingRate?: T;
+      };
+  commercial?:
+    | T
+    | {
+        paymentTerms?: T;
+        paymentTermsDays?: T;
+        creditLimit?: T;
+        creditCurrency?: T;
+        preferredPaymentMethod?: T;
+        defaultCurrency?: T;
+        defaultLocale?: T;
+        priceList?: T;
+      };
+  bank?:
+    | T
+    | {
+        bankAccountName?: T;
+        bankName?: T;
+        bankRoutingNumber?: T;
+        bankAccountNumber?: T;
+        bankIban?: T;
+        bankSwiftBic?: T;
+        bankCountryCode?: T;
+      };
+  ledger?:
+    | T
+    | {
+        defaultReceivableAccount?: T;
+        defaultRevenueAccount?: T;
+        defaultDiscountAccount?: T;
+        defaultPayableAccount?: T;
+        defaultExpenseAccount?: T;
+        defaultWithholdingAccount?: T;
+      };
+  notes?:
+    | T
+    | {
+        note?: T;
+      };
+  metadata?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payment-allocations_select".
  */
 export interface PaymentAllocationsSelect<T extends boolean = true> {
@@ -27422,84 +27320,6 @@ export interface VendorScorecardsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendors_select".
- */
-export interface VendorsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  code?: T;
-  name?: T;
-  country?: T;
-  identity?:
-    | T
-    | {
-        legalName?: T;
-        vendorType?: T;
-        status?: T;
-      };
-  contact?:
-    | T
-    | {
-        email?: T;
-        phone?: T;
-        website?: T;
-      };
-  addresses?:
-    | T
-    | {
-        addresses?: T;
-        remitToAddress?: T;
-      };
-  tax?:
-    | T
-    | {
-        vatNumber?: T;
-        vatNumberType?: T;
-        taxExempt?: T;
-        defaultTaxCode?: T;
-        vendor1099Eligible?: T;
-        tax1099FormType?: T;
-        taxIdType?: T;
-        withholdingRate?: T;
-      };
-  commercial?:
-    | T
-    | {
-        paymentTerms?: T;
-        paymentTermsDays?: T;
-        preferredPaymentMethod?: T;
-        defaultCurrency?: T;
-        defaultLocale?: T;
-      };
-  bank?:
-    | T
-    | {
-        bankAccountName?: T;
-        bankName?: T;
-        bankRoutingNumber?: T;
-        bankAccountNumber?: T;
-        bankIban?: T;
-        bankSwiftBic?: T;
-        bankCountryCode?: T;
-      };
-  ledger?:
-    | T
-    | {
-        defaultPayableAccount?: T;
-        defaultExpenseAccount?: T;
-        defaultWithholdingAccount?: T;
-      };
-  notes?:
-    | T
-    | {
-        note?: T;
-      };
-  metadata?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "warehouse-locations_select".
  */
 export interface WarehouseLocationsSelect<T extends boolean = true> {
@@ -28810,7 +28630,6 @@ export interface TaskCreateCollectionExport {
       | 'csrd-disclosures'
       | 'currency-rates'
       | 'customer-segments'
-      | 'customers'
       | 'customs-declarations'
       | 'data-processing-activities'
       | 'data-subject-requests'
@@ -28877,6 +28696,7 @@ export interface TaskCreateCollectionExport {
       | 'packages'
       | 'packs'
       | 'pages'
+      | 'parties'
       | 'payment-allocations'
       | 'payment-methods'
       | 'payment-runs'
@@ -28953,7 +28773,6 @@ export interface TaskCreateCollectionExport {
       | 'users'
       | 'vendor-quotes'
       | 'vendor-scorecards'
-      | 'vendors'
       | 'warehouse-locations'
       | 'wip-snapshots'
       | 'work-centers'

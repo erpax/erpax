@@ -40,7 +40,7 @@ const Quotes: CollectionConfig = {
     // master — a leftover from the deleted ecommerce plugin's polymorphic
     // customer-as-address shape. EN-16931 §BG-7 (buyer) requires the buyer
     // party itself, not the address; addresses live on the customer row.
-    { name: 'customer', type: 'relationship', relationTo: 'customers', required: true },
+    { name: 'customer', type: 'relationship', relationTo: 'parties', required: true },
     { name: 'issuedAt', type: 'date', admin: { readOnly: true } },
     { name: 'expiresAt', type: 'date' },
     {

@@ -37,7 +37,7 @@ const Returns: CollectionConfig = {
     // Slice XXXXXXXX-b (2026-05-11): retargeted from 'addresses' → 'customers'.
     // Returns counterparty is the original buyer (IFRS-15 §B25 right-of-
     // return). Address can be resolved via customer.shippingAddress.
-    { name: 'customer', type: 'relationship', relationTo: 'customers' },
+    { name: 'customer', type: 'relationship', relationTo: 'parties' },
     {
       name: 'reason',
       type: 'select',

@@ -98,7 +98,7 @@ const MaintenanceWorkOrders: CollectionConfig = {
       admin: { description: 'When work targets a bookable resource (vehicle / equipment / room) — drives blocking of bookings during the window.' } },
     { name: 'assignedTo', type: 'relationship', relationTo: 'employees',
       admin: { description: 'FM technician or maintenance lead.' } },
-    { name: 'vendor', type: 'relationship', relationTo: 'vendors',
+    { name: 'vendor', type: 'relationship', relationTo: 'parties',
       admin: { description: 'External contractor (when outsourced).' } },
     { name: 'scheduledStartAt', type: 'date',
       admin: { description: 'Planned start.' } },

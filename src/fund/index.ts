@@ -244,7 +244,7 @@ export function awardBlockers(cwd: string = process.cwd()): Blocker[] {
   }
   for (const field of requiredRelationships('projects', cwd)) {
     const to = g.edges.find((e) => e.from === 'projects' && e.field === field)?.to
-    if (to === 'customers') {
+    if (to === 'parties') {
       out.push({
         kind: 'required-counterparty',
         slug: 'projects',

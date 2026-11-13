@@ -25,11 +25,14 @@ describe('collapse — what can honestly become one table', () => {
     expect(s[0]!.uuid).toHaveLength(36)
   })
 
-  // THE ONE REAL MERGE, and it is exact: not "similar", not "both are parties" — one field.
-  it('customers ⊂ vendors, differing by exactly `bank` — the only semantically real subset', () => {
-    const party = subsets().find((s) => s.slug === 'customers' && s.host === 'vendors')
-    expect(party).toBeDefined()
-    expect(party!.extra).toEqual(['bank'])
+  // THE ONE REAL MERGE WAS PAID. `customers ⊂ vendors` differed by exactly `bank`; they are now one
+  // collection, `parties`, with a role — so the subset this test used to find must be gone.
+  it('customers and vendors are merged — neither is a collection, parties is', () => {
+    const slugs = new Set(shapesOf().map((s) => s.slug))
+    expect(slugs.has('parties')).toBe(true)
+    expect(slugs.has('customers')).toBe(false)
+    expect(slugs.has('vendors')).toBe(false)
+    expect(subsets().some((s) => s.slug === 'customers' || s.host === 'vendors')).toBe(false)
   })
 
   // THE BOUNDARY, asserted rather than promised. Set inclusion is DECIDABLE and decides the WRONG question:
@@ -40,8 +43,6 @@ describe('collapse — what can honestly become one table', () => {
     const absurd = all.find((s) => s.slug === 'payload-migrations')
     expect(absurd).toBeDefined() // Payload's OWN migration table "fits" inside a manufacturing table
     expect(absurd!.extra.length).toBeGreaterThan(20) // 22 fields apart: fitting, and meaning nothing
-    // the real one sorts FIRST: fewest extra fields = closest to sameness
-    expect(all[0]!.slug).toBe('customers')
   })
 
   // THE INVERSE-POLARITY LENS — held as a conjecture ("the collections fold in inverted pairs"), then measured.
@@ -51,16 +52,12 @@ describe('collapse — what can honestly become one table', () => {
     it('the declared candidates are a transparent human judgement, never inferred', () => {
       // the map is written in the open (like rules/audience) so it can be argued with — not a measurement.
       expect(POLARITY_CANDIDATES.length).toBeGreaterThan(0)
-      expect(POLARITY_CANDIDATES.map((p) => `${p[0]}↔${p[1]}`)).toContain('customers↔vendors')
+      // the pair that proved true was merged, so it is no longer a candidate
+      expect(POLARITY_CANDIDATES.map((p) => `${p[0]}↔${p[1]}`)).not.toContain('customers↔vendors')
     })
 
-    it('customers ↔ vendors is the ONLY declared pair whose shapes collapse (verdict theorem)', () => {
-      const pairs = inversePairs()
-      const theorem = pairs.filter((p) => p.verdict === 'theorem')
-      expect(theorem).toHaveLength(1)
-      expect(theorem[0]!.a).toBe('customers')
-      expect(theorem[0]!.b).toBe('vendors')
-      expect(theorem[0]!.jaccard).toBeGreaterThanOrEqual(0.6)
+    it('no declared pair collapses by shape any more — the one that did was merged into parties', () => {
+      expect(inversePairs().filter((p) => p.verdict === 'theorem')).toHaveLength(0)
     })
 
     // THE EYE REFUTED. I named these clean inverse pairs; the shapes share almost nothing — two tables that

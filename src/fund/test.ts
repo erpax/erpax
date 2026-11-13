@@ -31,7 +31,7 @@ describe('fund — the collection graph', () => {
   // Perturbation: a zero is only worth reading once the instrument is known to find a non-zero.
   it('finds the reachable targets, so a zero is a fact rather than a broken walk', () => {
     expect(canReach('tenants', process.cwd()).size).toBeGreaterThan(100)
-    expect(canReach('customers', process.cwd()).size).toBeGreaterThan(10)
+    expect(canReach('parties', process.cwd()).size).toBeGreaterThan(10)
   })
 
   it('an orphan is a booted table with no inbound edge', () => {
@@ -70,7 +70,9 @@ describe('fund — the funded-project spine', () => {
   // signature, and a periodic filing to an external authority — entity, period, due date,
   // submission, status, feedback — is a shape this corpus already had.
   it('added no collection to close the spine', () => {
-    expect(collectionGraph(process.cwd()).ifaceOfSlug.size).toBe(231)
+    // 231 when this was written; two collections have since been REMOVED (tool metadata folded away,
+    // customers and vendors merged into parties) and none added — the count only went down.
+    expect(collectionGraph(process.cwd()).ifaceOfSlug.size).toBe(229)
     expect(fundedSpine(process.cwd()).find((s) => s.stage === 'report')!.slug).toBe('regulatory-reports')
   })
 })

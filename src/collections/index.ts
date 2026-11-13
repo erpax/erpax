@@ -82,7 +82,8 @@ export { default as FixedAssets } from '@/fixed/assets'
 export { default as DepreciationSchedules } from '@/fixed/assets/depreciation/schedules'
 
 // Master Data: Customers & Revenue
-export { Customers } from '@/customers'
+// Customers and vendors are roles of one party — see @/parties.
+export { default as Parties } from '@/parties'
 export { default as Leads } from '@/leads'
 export { default as Opportunities } from '@/leads/opportunities'
 export { default as CustomerSegments } from '@/customer/segments'
@@ -101,7 +102,6 @@ export { default as PaymentAllocations } from '@/invoices/payments/payment/alloc
 export { default as DunningCycles } from '@/invoices/dunning/cycles'
 
 // Master Data: Vendors & Procurement
-export { Vendors } from '@/vendors'
 export { default as VendorQuotes } from '@/vendors/vendor/quotes'
 export { default as VendorScorecards } from '@/vendors/vendor/scorecards'
 

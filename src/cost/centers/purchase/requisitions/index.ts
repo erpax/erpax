@@ -62,7 +62,7 @@ const PurchaseRequisitions: CollectionConfig = {
         { name: 'estimatedAmount', type: 'number', required: true,
           admin: { description: 'quantity × estimatedUnitPrice (cents).' } },
         { name: 'glAccount', type: 'relationship', relationTo: 'gl-accounts' },
-        { name: 'preferredVendor', type: 'relationship', relationTo: 'vendors' },
+        { name: 'preferredVendor', type: 'relationship', relationTo: 'parties' },
       ],
     },
     currencyField(),

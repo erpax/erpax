@@ -67,7 +67,7 @@ const CreditMemos: CollectionConfig = {
       // address-as-customer shape that never matched IFRS-15 §B22 reality.
       // EN-16931 §BG-7 buyer + IFRS-15 §B22 contra-revenue both need the
       // customer party itself.
-      relationTo: 'customers',
+      relationTo: 'parties',
       admin: { description: 'Party receiving the credit (IFRS-15 §B22 contra-revenue counterparty).' },
     },
     {

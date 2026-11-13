@@ -89,7 +89,7 @@ const Batches: CollectionConfig = {
       admin: { description: 'Producing work-order (when origin = produced).' } },
     { name: 'goodsReceipt', type: 'relationship', relationTo: 'goods-receipts',
       admin: { description: 'Goods receipt (when origin = purchased).' } },
-    { name: 'supplier', type: 'relationship', relationTo: 'vendors',
+    { name: 'supplier', type: 'relationship', relationTo: 'parties',
       admin: { description: 'Supplier of the lot (purchased origin).' } },
     { name: 'supplierBatchRef', type: 'text',
       admin: { description: "Supplier's own lot/batch number — preserves their traceability chain." } },

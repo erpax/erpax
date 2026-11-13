@@ -91,6 +91,15 @@ Held as a conjecture (*"the collections fold in inverted pairs — one concept a
 
 **Honest boundary.** Proves shapes are **distinct**, never that they *should* be. It reads `payload-types`, so a collection absent from the generated types is invisible; and it compares **field names + types**, so two tables meaning the same thing under different names are invisible to it — which is exactly the `customers`/`vendors` case, caught only because they already agree on 12 field names. The polarity map is **declared**, so it proves shape overlap for the pairs a human named — never that the named pairs are the only ones, nor that a `theorem` verdict *should* be merged.
 
+## The one real merge was paid (2026-11-13)
+
+The pair this page names — `customers ⊂ vendors`, differing by exactly `bank` — is now one
+collection, `parties`, with a `roles` field; the two lists survive as saved query presets rather
+than tables. The figures above are the measurement that found it, dated; run against today's
+config, no declared pair collapses by shape and the subset is gone. The decision was a human's, as
+this page said it would have to be: the shapes proposed it, and meaning — a customer and a vendor
+are both a party — settled it.
+
 **Law — [[law]]: a merge is proven by shape and decided by meaning. Content-addressing finds the candidates; nothing but a human decides that a customer and a vendor are one party.**
 
 Composes: [[syntax]] · [[merge]] · [[rules]] · [[law]].

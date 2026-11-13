@@ -28,9 +28,13 @@ const mockPayload = (
   fixtures: Record<string, Record<string, unknown>[]>,
 ): unknown =>
   ({
-    find: async (args: { collection: string }) => ({
-      docs: fixtures[args.collection] ?? [],
-    }),
+    // Honours the role filter the builders pass: customers and suppliers are both `parties`, told
+    // apart by role, so a mock that ignored `where` could not show the two builders differ.
+    find: async (args: { collection: string; where?: { and?: { roles?: { in?: string[] } }[] } }) => {
+      const role = args.where?.and?.find((c) => c.roles)?.roles?.in?.[0]
+      const docs = fixtures[args.collection] ?? []
+      return { docs: role === undefined ? docs : docs.filter((d) => (d.roles as string[] | undefined)?.includes(role)) }
+    },
   })
 
 describe('SAF-T export — buildHeader', () => {
@@ -121,9 +125,11 @@ describe('SAF-T export — buildCustomers / buildSuppliers', () => {
     // `tax.vatNumber`; tax country moved to top-level `country`; legal
     // name moved to `identity.legalName` (was `identity.companyName`).
     const payload = mockPayload({
-      customers: [
+      parties: [
+        { id: 'v0', code: 'VEND-0', roles: ['vendor'] },
         {
           id: 'c1',
+          roles: ['customer'],
           code: 'CUST-1',
           name: 'Customer S.A.',
           country: 'PT',
@@ -157,9 +163,11 @@ describe('SAF-T export — buildCustomers / buildSuppliers', () => {
     // assigned — that's the correct SAF-T behavior. The `supplierID`
     // comes from the vendor's `code` field (CodeConcern).
     const payload = mockPayload({
-      vendors: [
+      parties: [
+        { id: 'c0', code: 'CUST-0', roles: ['customer'] },
         {
           id: 'v1',
+          roles: ['vendor'],
           code: 'v1',
           identity: { companyName: 'Vendor SARL', taxCountry: 'FR' },
           addresses: {
@@ -290,8 +298,7 @@ describe('SAF-T export — buildAuditFile orchestrator', () => {
   it('composes Header + MasterFiles + GeneralLedgerEntries', async () => {
     const payload = mockPayload({
       'gl-accounts': [],
-      customers: [],
-      vendors: [],
+      parties: [],
       items: [],
       'tax-codes': [],
       'journal-entries': [],

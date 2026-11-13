@@ -55,7 +55,7 @@ const Projects: CollectionConfig = {
     // NOT required. A grant-funded project has a FUNDER, not a customer, and requiring one forced
     // whoever booked it to invent a counterparty — a false row, in the field an auditor reads to
     // learn who the work was for ([[fund]]).
-    { name: 'customer', type: 'relationship', relationTo: 'customers', index: true },
+    { name: 'customer', type: 'relationship', relationTo: 'parties', index: true },
     // The award this project executes against. Nothing in 231 collections could reach
     // `government-grants`: it named its tenant, entity, clawback provision and funded asset, and
     // nothing named IT — so no cost, invoice, milestone or report could be attributed to the grant

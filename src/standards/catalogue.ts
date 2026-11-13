@@ -37,7 +37,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Semantic model of the electronic invoice",
     "uuid": "b293e94d-80cc-82ce-a7c9-7006b79e5bbf",
     "color": "hsl(355 78% 43%)",
-    "count": 128,
+    "count": 129,
     "modules": [
       {
         "path": "src/ai/invoice-ocr.ts",
@@ -381,7 +381,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2020/852 on the establishment of a framework to facilitate sustainable investment (Taxonomy Regulation)",
     "uuid": "a7d2e799-e418-83ca-add4-039a74d0af59",
     "color": "hsl(122 76% 47%)",
-    "count": 211,
+    "count": 208,
     "modules": [
       {
         "path": "src/address/validation/index.ts",
@@ -3165,7 +3165,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Currency codes",
     "uuid": "2aa02578-47b5-80bf-ad53-a36e04aaccfb",
     "color": "hsl(112 57% 38%)",
-    "count": 315,
+    "count": 314,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -3377,7 +3377,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Country codes",
     "uuid": "33acc25b-1712-8bcd-88ff-6a849f536c4e",
     "color": "hsl(268 74% 57%)",
-    "count": 118,
+    "count": 117,
     "modules": [
       {
         "path": "src/address/validation/index.ts",
@@ -3801,7 +3801,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "IBAN — International Bank Account Number",
     "uuid": "7d425926-b6b5-8210-87c2-e420beb25015",
     "color": "hsl(26 74% 52%)",
-    "count": 48,
+    "count": 47,
     "modules": [
       {
         "path": "src/bank/accounts/SKILL.md",
@@ -3884,10 +3884,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/customers/index.ts",
-        "section": ""
-      },
-      {
         "path": "src/derive/country/from/iban/index.ts",
         "section": ""
       },
@@ -3897,6 +3893,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/employees/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/gl/accounts/bank/statements/SKILL.md",
         "section": ""
       }
     ]
@@ -4282,178 +4282,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "ISO-17442",
-    "family": "iso",
-    "title": "Legal Entity Identifier (LEI)",
-    "uuid": "ed22248b-5224-88d3-890d-95015a7efbfc",
-    "color": "hsl(226 56% 57%)",
-    "count": 19,
-    "modules": [
-      {
-        "path": "src/config/types/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/customers/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/customers/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/employees/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/employees/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/20022/types/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/legal/entities/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/legal/entities/beneficial/owners/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/legal/entities/beneficial/owners/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/legal/entities/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/payable/analytics/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/taxing/jurisdictions/entity/legal/structures/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/taxing/jurisdictions/entity/legal/structures/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/tenants/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/tenants/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/types/payables/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/types/tenant/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/vendors/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/vendors/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "ISO-17442-1",
-    "family": "iso",
-    "title": "LEI — Legal Entity Identifier",
-    "uuid": "816b5551-7928-8666-8db3-d65a6bac7e16",
-    "color": "hsl(11 70% 47%)",
-    "count": 19,
-    "modules": [
-      {
-        "path": "src/config/types/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/customers/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/customers/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/employees/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/employees/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/20022/types/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/legal/entities/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/legal/entities/beneficial/owners/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/legal/entities/beneficial/owners/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/legal/entities/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/payable/analytics/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/taxing/jurisdictions/entity/legal/structures/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/taxing/jurisdictions/entity/legal/structures/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/tenants/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/tenants/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/types/payables/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/types/tenant/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/vendors/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/vendors/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "ISO-22400-2",
     "family": "iso",
     "title": "Manufacturing operations KPIs",
@@ -4535,6 +4363,170 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/work/shifts/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ISO-17442",
+    "family": "iso",
+    "title": "Legal Entity Identifier (LEI)",
+    "uuid": "ed22248b-5224-88d3-890d-95015a7efbfc",
+    "color": "hsl(226 56% 57%)",
+    "count": 18,
+    "modules": [
+      {
+        "path": "src/config/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/customers/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/employees/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/employees/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/20022/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/beneficial/owners/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/beneficial/owners/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/parties/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/payable/analytics/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/taxing/jurisdictions/entity/legal/structures/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/taxing/jurisdictions/entity/legal/structures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tenants/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/tenants/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/types/payables/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/types/tenant/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/vendors/SKILL.md",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ISO-17442-1",
+    "family": "iso",
+    "title": "LEI — Legal Entity Identifier",
+    "uuid": "816b5551-7928-8666-8db3-d65a6bac7e16",
+    "color": "hsl(11 70% 47%)",
+    "count": 18,
+    "modules": [
+      {
+        "path": "src/config/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/customers/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/employees/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/employees/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/20022/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/beneficial/owners/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/beneficial/owners/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/parties/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/payable/analytics/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/taxing/jurisdictions/entity/legal/structures/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/taxing/jurisdictions/entity/legal/structures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tenants/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/tenants/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/types/payables/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/types/tenant/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/vendors/SKILL.md",
         "section": ""
       }
     ]
@@ -6461,7 +6453,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Enterprise Risk Management — Integrating with Strategy and Performance (2017)",
     "uuid": "4ff3ea84-eb9f-80d5-bc11-1a3996d0b20a",
     "color": "hsl(307 79% 50%)",
-    "count": 144,
+    "count": 145,
     "modules": [
       {
         "path": "src/address/validation/SKILL.md",

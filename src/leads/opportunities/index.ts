@@ -34,7 +34,7 @@ const Opportunities: CollectionConfig = {
   fields: [
     { name: 'name', type: 'text', localized: true, required: true, index: true },
     { name: 'lead', type: 'relationship', relationTo: 'leads' },
-    { name: 'customer', type: 'relationship', relationTo: 'customers',
+    { name: 'customer', type: 'relationship', relationTo: 'parties',
       admin: { description: 'Existing customer (for upsell/cross-sell). Null for net-new from lead.' } },
     { name: 'opportunityOwner', type: 'relationship', relationTo: 'users', required: true },
     {

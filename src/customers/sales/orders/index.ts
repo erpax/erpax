@@ -89,7 +89,7 @@ export default createAccountingCollection({
       name: 'orderNumber',
       description: 'Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents.',
     }),
-    { name: 'customer', type: 'relationship', relationTo: 'customers', required: true, index: true },
+    { name: 'customer', type: 'relationship', relationTo: 'parties', required: true, index: true },
     { name: 'customerOrderReference', type: 'text',
       admin: { description: 'Buyer-side PO number / reference. EN-16931 §BT-13 / Peppol cbc:BuyerReference.' } },
 

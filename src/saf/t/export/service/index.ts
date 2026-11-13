@@ -59,11 +59,11 @@ import type {
 import type {
   GlAccount,
   Address,
-  Customer,
-  Vendor,
+  Party,
   JournalEntry,
   InventoryMovement,
 } from '@/types'
+import { whereRole } from '@/parties'
 import { generateTrialBalance, type TrialBalanceRow } from '@/accounting'
 
 export interface SafTExportOptions {
@@ -244,12 +244,12 @@ export const buildCustomers = async (
   tenantId: string | number,
 ): Promise<SafTCustomer[]> => {
   const result = await payload.find({
-    collection: 'customers',
-    where: { tenant: { equals: tenantId } },
+    collection: 'parties',
+    where: { and: [{ tenant: { equals: tenantId } }, whereRole('customer')] },
     limit: 100_000,
     depth: 1,
   })
-  return (result.docs as Customer[]).map((d) => ({
+  return (result.docs as Party[]).map((d) => ({
     customerID: d.code,
     accountID: accountNumberOf(d.ledger?.defaultReceivableAccount) ?? '',
     selfBillingIndicator: 0,
@@ -266,12 +266,12 @@ export const buildSuppliers = async (
   tenantId: string | number,
 ): Promise<SafTSupplier[]> => {
   const result = await payload.find({
-    collection: 'vendors',
-    where: { tenant: { equals: tenantId } },
+    collection: 'parties',
+    where: { and: [{ tenant: { equals: tenantId } }, whereRole('vendor')] },
     limit: 100_000,
     depth: 1,
   })
-  return (result.docs as Vendor[]).map((d) => ({
+  return (result.docs as Party[]).map((d) => ({
     supplierID: d.code,
     accountID: accountNumberOf(d.ledger?.defaultPayableAccount) ?? '',
     selfBillingIndicator: 0,

@@ -987,11 +987,7 @@ src/customers/contracts/index.ts:32: * @standard ISO-4217:2015 currency-codes
 src/customers/contracts/index.ts:33: * @standard ISO-8601-1:2019 date-time effective-from effective-to
 src/customers/contracts/performance/obligations/index.ts:20: * @standard ISO-4217:2015 currency-codes
 src/customers/contracts/performance/obligations/index.ts:21: * @standard ISO-8601-1:2019 date-time satisfaction-date
-src/customers/index.ts:10: * @standard ISO-4217:2015 currency-codes default-currency
-src/customers/index.ts:11: * @standard ISO-3166-1:2020 country-codes via-addresses
-src/customers/index.ts:12: * @standard ISO-17442-1:2020 lei
-src/customers/index.ts:13: * @standard ISO-13616-1:2020 iban
-src/customers/index.ts:14: * @standard EN-16931:2017 §BG-7 buyer
+src/customers/index.ts:9: * @standard EN-16931:2017 §BG-7 buyer
 src/customers/kyc/checks/index.ts:4: * @standard ISO/IEC-19794 biometric-data-interchange-formats
 src/customers/kyc/checks/index.ts:5: * @standard FATF-Recommendation-10 customer-due-diligence
 src/customers/projects/index.ts:19: * @standard ISO-8601-1:2019 date-time
@@ -2135,6 +2131,14 @@ src/pagination/index.tsx:6: * @standard WAI-ARIA 1.2 navigation-landmark-role
 src/pain002/import/service/index.ts:50: * @standard ISO-20022 CustomerPaymentStatusReportV10
 src/pain002/import/service/index.ts:7: * @standard ISO-20022 pain.002 customer-payment-status-report
 src/pain002/import/service/test.ts:4: * @standard ISO-20022 pain.002 customer-payment-status-report
+src/parties/index.ts:14: * @standard ISO-4217:2015 currency-codes
+src/parties/index.ts:15: * @standard ISO-3166-1:2020 country-codes via-addresses
+src/parties/index.ts:16: * @standard ISO-13616-1:2020 iban
+src/parties/index.ts:17: * @standard ISO-9362:2022 bic
+src/parties/index.ts:18: * @standard ISO-17442-1:2020 lei
+src/parties/index.ts:19: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
+src/parties/index.ts:20: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
+src/parties/index.ts:21: * @standard EN-16931:2017 §BG-4 seller §BG-7 buyer
 src/party/aging.service.ts:9: * @standard ISO-8601-1:2019 date-time days-between-arithmetic
 src/party/identity/index.ts:32: * @standard ISO 3166-1 alpha-2 — the jurisdiction a tax id is unique within
 src/party/identity/index.ts:33: * @standard RFC 9562 §5.8 — the content-address
@@ -3129,14 +3133,7 @@ src/validate/tax/period/closing/index.ts:20: * @standard OECD Pillar Two:2023 Gl
 src/validate/tax/period/closing/index.ts:21: * @standard SAF-T:3.0.2 Multi-entity audit trail
 src/variant/index.ts:21: * @standard Commerce/product taxonomy — the open variant dimension (no cultivar/option enum)
 src/vein/index.ts:21: * @standard venous valves prevent regurgitation; veins hold ≈70% of blood volume (capacitance)
-src/vendors/index.ts:11: * @standard ISO-4217:2015 currency-codes
-src/vendors/index.ts:12: * @standard ISO-3166-1:2020 country-codes via-addresses
-src/vendors/index.ts:13: * @standard ISO-13616-1:2020 iban
-src/vendors/index.ts:14: * @standard ISO-9362:2022 bic
-src/vendors/index.ts:15: * @standard ISO-17442-1:2020 lei
-src/vendors/index.ts:16: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
-src/vendors/index.ts:17: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
-src/vendors/index.ts:18: * @standard EN-16931:2017 §BG-4 seller
+src/vendors/index.ts:9: * @standard EN-16931:2017 §BG-4 seller
 src/vendors/vendor/quotes/index.ts:10: * @standard ISO-8601-1:2019 date-time
 src/vendors/vendor/quotes/index.ts:11: * @standard ISO-4217:2015 currency-codes
 src/vendors/vendor/quotes/index.ts:14: * @standard ISO 9001:2015 §8.4 control-of-externally-provided-processes
@@ -3829,8 +3826,6 @@ src/customers/contracts/contract/signatures/index.ts:26: * @compliance GDPR Art.
 src/customers/contracts/index.ts:34: * @compliance SOX §404 internal-controls contract-approval
 src/customers/contracts/index.ts:35: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 src/customers/contracts/performance/obligations/index.ts:30: * @compliance SOX §404 internal-controls revenue-recognition
-src/customers/index.ts:17: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
-src/customers/index.ts:18: * @compliance GDPR Art.5 data-minimization
 src/customers/kyc/checks/index.ts:6: * @compliance EU-AMLD-6 Directive-2018/1673 anti-money-laundering
 src/customers/kyc/checks/index.ts:7: * @compliance USA-PATRIOT-Act §326 customer-identification-program
 src/customers/kyc/checks/index.ts:8: * @compliance EU-Regulation-2015/847 wire-transfers
@@ -4099,6 +4094,8 @@ src/notification/index.ts:20: * @compliance GDPR Art.7 transactional-email-conse
 src/notification/subscriber.ts:15: * @compliance GDPR Art.7 transactional-consent
 src/page/range/index.tsx:8: * @compliance WCAG-2.1 §1.3.1 info-and-relationships
 src/pagination/index.tsx:9: * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
+src/parties/index.ts:25: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
+src/parties/index.ts:26: * @compliance GDPR Art.5 data-minimization
 src/party/workflow.service.ts:9: * @compliance SOX §404 internal-controls
 src/payable/workflow/index.ts:15: * @compliance SOX §404 internal-controls
 src/payload.config.multi-tenant-admin.test.ts:12: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
@@ -4229,7 +4226,6 @@ src/utility/bank-reconciliation-report.test.ts:27: * @compliance SOX §404 inter
 src/utility/depreciation-methods.test.ts:17: * @compliance SOX §404 internal-controls capital-asset-register
 src/utility/period/lock/index.ts:8: * @compliance SOX §404 period-close-integrity
 src/validate/address/index.ts:26: * @compliance GDPR Art.5(1)(c) data-minimisation
-src/vendors/index.ts:21: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 src/vendors/vendor/quotes/index.ts:12: * @compliance OECD BEPS Action 13 transfer-pricing-evidence
 src/vendors/vendor/quotes/index.ts:13: * @compliance SOX §404 internal-controls vendor-selection
 src/vendors/vendor/scorecards/index.ts:13: * @compliance SOX §404 internal-controls vendor-management
@@ -4413,8 +4409,7 @@ src/customers/contracts/performance/obligations/index.ts:25: * @accounting IFRS 
 src/customers/contracts/performance/obligations/index.ts:26: * @accounting IFRS IFRS-15 §41-§43 progress-measurement
 src/customers/contracts/performance/obligations/index.ts:27: * @accounting US-GAAP ASC-606-10-25-14 distinct-goods-services
 src/customers/contracts/performance/obligations/index.ts:28: * @accounting US-GAAP ASC-606-10-25-31 progress-measurement
-src/customers/index.ts:15: * @accounting IFRS IFRS-9 financial-instruments accounts-receivable
-src/customers/index.ts:16: * @accounting US-GAAP ASC-310 receivables
+src/customers/index.ts:10: * @accounting IFRS IFRS-9 financial-instruments accounts-receivable
 src/customers/projects/index.ts:21: * @accounting IFRS IFRS-15 §35 over-time-recognition
 src/customers/projects/index.ts:22: * @accounting IFRS IFRS-15 §B14 §B15 §B16 §B17 §B18 §B19 measurement-of-progress
 src/customers/projects/index.ts:23: * @accounting IFRS IFRS-15 §126 milestone-billing
@@ -4787,6 +4782,9 @@ src/multi/currency/service/index.ts:18: * @accounting IFRS IAS-29 financial-repo
 src/multi/currency/service/index.ts:19: * @accounting US-GAAP ASC-830 foreign-currency-matters reporting-currency
 src/pack/items/index.ts:31: * @accounting IFRS IAS-2 §10 finished-goods at dispatch
 src/packs/index.ts:35: * @accounting IFRS IAS-2 §10 finished-goods carried to dispatch
+src/parties/index.ts:22: * @accounting IFRS IFRS-9 financial-instruments accounts-receivable
+src/parties/index.ts:23: * @accounting US-GAAP ASC-310 receivables ASC-405 liabilities
+src/parties/index.ts:24: * @accounting US-IRS Form-1099 information-return
 src/party/aging.service.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss aging-buckets
 src/party/aging.service.ts:11: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/party/aging.service.ts:12: * @accounting US-GAAP ASC-310 receivables
@@ -4944,8 +4942,7 @@ src/utility/depreciation-methods.test.ts:15: * @accounting US-GAAP ASC-360-10-35
 src/utility/period/lock/index.ts:5: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/utility/period/lock/index.ts:6: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 src/utility/period/lock/index.ts:7: * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
-src/vendors/index.ts:19: * @accounting US-GAAP ASC-405 liabilities
-src/vendors/index.ts:20: * @accounting US-IRS Form-1099 information-return
+src/vendors/index.ts:10: * @accounting US-GAAP ASC-405 liabilities
 src/vocabulary/marketing/CountryShowcase.tsx:10: * @accounting IFRS / US-GAAP / FRS / JGAAP / ASBE / INDAS
 src/vocabulary/marketing/PricingTable.tsx:12: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/vocabulary/marketing/PricingTable.tsx:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers

@@ -11,7 +11,8 @@ import { ownedChainStepAudit } from './step'
 
 export const OpsAgent: DomainAgent = {
   id: 'ops',
-  ownsCollections: ['vendors', 'vendor-quotes', 'vendor-scorecards', 'maintenance-requests', 'maintenance-work-orders', 'quality-inspections', 'warehouse-locations', 'carriers'],
+  // `parties` (customers and vendors merged) has one owner, the sales agent — a collection is owned once.
+  ownsCollections: ['vendor-quotes', 'vendor-scorecards', 'maintenance-requests', 'maintenance-work-orders', 'quality-inspections', 'warehouse-locations', 'carriers'],
   subscribesTo: ['vendor:onboarded', 'maintenance:scheduled', 'maintenance:completed'],
   emits: ['vendor:onboarded', 'maintenance:scheduled', 'maintenance:completed'],
   async onChainStep(ctx, step: SpecChainStep) {
