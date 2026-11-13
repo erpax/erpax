@@ -10,7 +10,7 @@ import type { SpecChainStep } from '@/spec/generator'
 
 export const SalesAgent: DomainAgent = {
   id: 'sales',
-  ownsCollections: ['parties', 'customer-segments', 'leads', 'opportunities', 'quotes'],
+  ownsCollections: ['parties', 'customer-segments', 'leads', 'opportunities', 'sales-orders'],
   subscribesTo: ['lead:qualified', 'opp:won', 'quote:sent', 'contract:signed'],
   emits: ['lead:qualified', 'opp:won', 'quote:sent'],
   async onChainStep(ctx: AgentContext, step: SpecChainStep): Promise<AgentEffect[]> {

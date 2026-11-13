@@ -313,7 +313,7 @@ export function checkChainStepsReferenceRealCollections(_ctx: InvariantContext):
     'workflow-definitions', 'workflow-instances',
     'transaction-failures',
     'leads', 'opportunities', 'activities', 'sales-commissions',
-    'quotes', 'contracts', 'shipments', 'tracking-events',
+    'sales-orders', 'contracts', 'shipments', 'tracking-events',
     'performance-obligations', 'projects', 'project-tasks', 'project-milestones',
     'audit-findings', 'provisions',
     'carbon-emissions', 'csrd-disclosures', 'evidence-attestations',

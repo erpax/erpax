@@ -217,7 +217,6 @@ export interface Config {
     'purchase-orders': PurchaseOrder;
     'purchase-requisitions': PurchaseRequisition;
     'quality-inspections': QualityInspection;
-    quotes: Quote;
     receipts: Receipt;
     'recruiting-pipeline': RecruitingPipeline;
     'recurring-journals': RecurringJournal;
@@ -470,7 +469,6 @@ export interface Config {
     'purchase-orders': PurchaseOrdersSelect<false> | PurchaseOrdersSelect<true>;
     'purchase-requisitions': PurchaseRequisitionsSelect<false> | PurchaseRequisitionsSelect<true>;
     'quality-inspections': QualityInspectionsSelect<false> | QualityInspectionsSelect<true>;
-    quotes: QuotesSelect<false> | QuotesSelect<true>;
     receipts: ReceiptsSelect<false> | ReceiptsSelect<true>;
     'recruiting-pipeline': RecruitingPipelineSelect<false> | RecruitingPipelineSelect<true>;
     'recurring-journals': RecurringJournalsSelect<false> | RecurringJournalsSelect<true>;
@@ -7443,7 +7441,7 @@ export interface Shipment {
 /**
  * Customer-side order register (O2C). Distinct from purchase-orders (P2P). UN-EDIFACT ORDERS d96a + UBL-2.1 Order + Peppol BIS-3.0 Order. IFRS-15 §10 contract-with-customer feed.
  *
- * — diamond-uuid: 154f727a-568d-8ca4-a2e5-e124b331a01a
+ * — diamond-uuid: c4131d6d-7909-8973-8a22-d79e6218e5d2
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "sales-orders".
@@ -7465,13 +7463,21 @@ export interface SalesOrder {
    */
   customerOrderReference?: string | null;
   /**
-   * Originating quote (when this order converts a quote — IFRS-15 §10 contract inception).
-   */
-  quote?: (string | null) | Quote;
-  /**
    * Parent contract (when the order draws from a master contract — IFRS-15 §17 combined contracts).
    */
   contract?: (string | null) | Contract;
+  /**
+   * When the quote was sent to the customer.
+   */
+  sentAt?: string | null;
+  /**
+   * Until when the quoted terms hold.
+   */
+  expiresAt?: string | null;
+  /**
+   * When the customer accepted — IFRS-15 §10 contract inception.
+   */
+  acceptedAt?: string | null;
   /**
    * Buyer submission / acceptance date. Drives revenue-period determination.
    */
@@ -7554,6 +7560,11 @@ export interface SalesOrder {
   status?:
     | (
         | 'draft'
+        | 'pending_approval'
+        | 'sent'
+        | 'accepted'
+        | 'rejected'
+        | 'expired'
         | 'submitted'
         | 'confirmed'
         | 'partially_fulfilled'
@@ -7564,47 +7575,6 @@ export interface SalesOrder {
         | 'on_hold'
       )
     | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "quotes".
- */
-export interface Quote {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  quoteNumber: string;
-  customer: string | Party;
-  issuedAt?: string | null;
-  expiresAt?: string | null;
-  lines: {
-    item?: (string | null) | Item;
-    description: string;
-    quantity: number;
-    unitPrice: number;
-    lineTotal?: number | null;
-    id?: string | null;
-  }[];
-  subtotal?: number | null;
-  taxAmount?: number | null;
-  totalAmount?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  status?: ('draft' | 'pending_approval' | 'sent' | 'accepted' | 'rejected' | 'expired' | 'converted') | null;
-  sentAt?: string | null;
-  acceptedAt?: string | null;
-  convertedToOrder?: (string | null) | SalesOrder;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -19926,7 +19896,7 @@ export interface PayloadQueryPreset {
     | boolean
     | null;
   groupBy?: string | null;
-  relatedCollection: 'pages' | 'parties' | 'posts';
+  relatedCollection: 'pages' | 'parties' | 'posts' | 'sales-orders';
   /**
    * This is a temporary field used to determine if updating the preset would remove the user's access to it. When `true`, this record will be deleted after running the preset's `validate` function.
    */
@@ -25563,42 +25533,6 @@ export interface QualityInspectionsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "quotes_select".
- */
-export interface QuotesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  quoteNumber?: T;
-  customer?: T;
-  issuedAt?: T;
-  expiresAt?: T;
-  lines?:
-    | T
-    | {
-        item?: T;
-        description?: T;
-        quantity?: T;
-        unitPrice?: T;
-        lineTotal?: T;
-        id?: T;
-      };
-  subtotal?: T;
-  taxAmount?: T;
-  totalAmount?: T;
-  currency?: T;
-  status?: T;
-  sentAt?: T;
-  acceptedAt?: T;
-  convertedToOrder?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "receipts_select".
  */
 export interface ReceiptsSelect<T extends boolean = true> {
@@ -26148,8 +26082,10 @@ export interface SalesOrdersSelect<T extends boolean = true> {
   orderNumber?: T;
   customer?: T;
   customerOrderReference?: T;
-  quote?: T;
   contract?: T;
+  sentAt?: T;
+  expiresAt?: T;
+  acceptedAt?: T;
   orderDate?: T;
   requestedDeliveryDate?: T;
   promisedDeliveryDate?: T;
@@ -28721,7 +28657,6 @@ export interface TaskCreateCollectionExport {
       | 'purchase-orders'
       | 'purchase-requisitions'
       | 'quality-inspections'
-      | 'quotes'
       | 'receipts'
       | 'recruiting-pipeline'
       | 'recurring-journals'

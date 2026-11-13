@@ -72,7 +72,7 @@ describe('fund — the funded-project spine', () => {
   it('added no collection to close the spine', () => {
     // 231 when this was written; two collections have since been REMOVED (tool metadata folded away,
     // customers and vendors merged into parties) and none added — the count only went down.
-    expect(collectionGraph(process.cwd()).ifaceOfSlug.size).toBe(229)
+    expect(collectionGraph(process.cwd()).ifaceOfSlug.size).toBe(228)
     expect(fundedSpine(process.cwd()).find((s) => s.stage === 'report')!.slug).toBe('regulatory-reports')
   })
 })

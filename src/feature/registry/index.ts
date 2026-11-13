@@ -94,7 +94,7 @@ export const FEATURE_REGISTRY: Readonly<Record<string, Feature>> = {
     category: 'invoicing',
     tiers: ['solo', 'team', 'business', 'enterprise'],
     standards: ['EN-16931:2017'],
-    collections: ['invoices', 'invoice-lines', 'quotes', 'credit-memos'],
+    collections: ['invoices', 'invoice-lines', 'sales-orders', 'credit-memos'],
   },
   invoicing_metered: {
     id: 'invoicing_metered',

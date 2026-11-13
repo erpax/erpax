@@ -17,10 +17,12 @@
  * acknowledgement / change / response messages). Peppol BIS-3.0 has
  * `Order` (UBL-2.1 Order schema) for the same reason.
  *
- * Lifecycle: draft → submitted → confirmed → fulfilled → invoiced →
- * closed (or cancelled). The status drives which downstream effects are
- * permitted (e.g. shipments only against confirmed; invoicing only
- * against fulfilled).
+ * Lifecycle: draft → [pending approval → sent → accepted | rejected | expired] →
+ * submitted → confirmed → fulfilled → invoiced → closed (or cancelled). The
+ * bracketed stages are the QUOTE: a quote is a sales order the customer has
+ * not yet accepted, so it is this document in an earlier stage rather than a
+ * second collection. The status drives which downstream effects are permitted
+ * (e.g. shipments only against confirmed; invoicing only against fulfilled).
  *
  * @standard UBL-2.1 Order document-schema
  * @standard UN-EDIFACT ORDERS d96a customer-order
@@ -38,10 +40,46 @@
  * @see ../factories/collection-factory.ts
  */
 
+import type { CollectionBeforeValidateHook, CollectionConfig } from 'payload'
 import { createAccountingCollection } from '@/factory'
 import { referenceField, unitOfMeasureField } from '@/base/accounting/field'
+import { autoSetTimestamp } from '@/auto/set/timestamp'
+import { enforceSegregationOfDuties } from '@/enforce/segregation/of/duty'
+import { preset, type Preset } from '@/preset'
 
-export default createAccountingCollection({
+/** The stages in which the document is still a quote: offered, not yet an order. */
+export const quoteStages = (): string[] => ['pending_approval', 'sent', 'accepted', 'rejected', 'expired']
+
+/** The stages in which it is an order the customer has placed. */
+export const orderStages = (): string[] => ['submitted', 'confirmed', 'partially_fulfilled', 'fulfilled', 'invoiced', 'closed', 'cancelled', 'on_hold']
+
+/** The two lists that stand where two collections stood. */
+export function orderPresets(): Preset[] {
+  return [
+    preset('Quotes', 'sales-orders', { status: { in: quoteStages() } }, ['orderNumber', 'customer', 'totalAmount', 'status', 'expiresAt']),
+    preset('Orders', 'sales-orders', { status: { in: orderStages() } }, ['orderNumber', 'customer', 'orderDate', 'totalAmount', 'currency', 'status']),
+  ]
+}
+
+/** One line's net: quantity × unit price, less its discount. */
+export const lineNetOf = (line: { quantity?: unknown; unitPrice?: unknown; discount?: unknown }): number =>
+  (Number(line.quantity) || 0) * (Number(line.unitPrice) || 0) - (Number(line.discount) || 0)
+
+/** The totals follow from the lines — computed, so a quote and its order can never disagree with their own lines. */
+export const totalsFromLines: CollectionBeforeValidateHook = ({ data }) => {
+  if (data?.lines && Array.isArray(data.lines)) {
+    let net = 0
+    for (const line of data.lines as Array<{ quantity?: number; unitPrice?: number; discount?: number; lineNet?: number }>) {
+      line.lineNet = lineNetOf(line)
+      net += line.lineNet
+    }
+    data.subTotalAmount = net
+    data.totalAmount = net + (Number(data.taxAmount) || 0)
+  }
+  return data
+}
+
+const base = createAccountingCollection({
   slug: 'sales-orders',
   labels: { singular: 'Sales Order', plural: 'Sales Orders' },
   useAsTitle: 'orderNumber',
@@ -64,15 +102,21 @@ export default createAccountingCollection({
   // status transitions (UN-EDIFACT ORDRSP lifecycle).
   emits: [
     { event: 'order:created',   onCreate: true,             aggregate: 'order' },
+    { event: 'quote:accepted',  onStatus: 'accepted',       aggregate: 'order' },
     { event: 'order:confirmed', onStatus: 'confirmed',      aggregate: 'order' },
     { event: 'order:fulfilled', onStatus: 'fulfilled',      aggregate: 'order' },
     { event: 'order:cancelled', onStatus: 'cancelled',      aggregate: 'order' },
   ],
-  subscribesTo: ['quote:accepted'],
 
   injectStatusField: true,
   statusOptions: [
     { label: 'Draft', value: 'draft' },
+    // The quote stages — the document offered, before the customer places it.
+    { label: 'Quote — pending approval', value: 'pending_approval' },
+    { label: 'Quote — sent', value: 'sent' },
+    { label: 'Quote — accepted', value: 'accepted' },
+    { label: 'Quote — rejected', value: 'rejected' },
+    { label: 'Quote — expired', value: 'expired' },
     { label: 'Submitted (awaiting confirmation)', value: 'submitted' },
     { label: 'Confirmed (vendor accepted)', value: 'confirmed' },
     { label: 'Partially fulfilled', value: 'partially_fulfilled' },
@@ -83,6 +127,12 @@ export default createAccountingCollection({
     { label: 'On hold', value: 'on_hold' },
   ],
   statusDefault: 'draft',
+  beforeChangeHooks: [
+    // The quote's control: whoever drafts an offer does not also approve it.
+    enforceSegregationOfDuties('approvedBy', 'createdBy'),
+    autoSetTimestamp('sentAt', (d) => (d as { status?: string }).status === 'sent'),
+    autoSetTimestamp('acceptedAt', (d) => (d as { status?: string }).status === 'accepted'),
+  ],
 
   fields: () => [
     referenceField({
@@ -94,10 +144,13 @@ export default createAccountingCollection({
       admin: { description: 'Buyer-side PO number / reference. EN-16931 §BT-13 / Peppol cbc:BuyerReference.' } },
 
     // Origin documents
-    { name: 'quote', type: 'relationship', relationTo: 'quotes',
-      admin: { description: 'Originating quote (when this order converts a quote — IFRS-15 §10 contract inception).' } },
     { name: 'contract', type: 'relationship', relationTo: 'contracts',
       admin: { description: 'Parent contract (when the order draws from a master contract — IFRS-15 §17 combined contracts).' } },
+
+    // Quote stage — when the offer went out, when it lapses, when it was accepted.
+    { name: 'sentAt', type: 'date', admin: { readOnly: true, description: 'When the quote was sent to the customer.' } },
+    { name: 'expiresAt', type: 'date', admin: { description: 'Until when the quoted terms hold.' } },
+    { name: 'acceptedAt', type: 'date', admin: { readOnly: true, description: 'When the customer accepted — IFRS-15 §10 contract inception.' } },
 
     // Dates
     { name: 'orderDate', type: 'date', required: true,
@@ -159,3 +212,11 @@ export default createAccountingCollection({
     { name: 'cancellationReason', type: 'text', localized: true },
   ],
 })
+
+const SalesOrders: CollectionConfig = {
+  ...base,
+  enableQueryPresets: true,
+  hooks: { ...base.hooks, beforeValidate: [...(base.hooks?.beforeValidate ?? []), totalsFromLines] },
+}
+
+export default SalesOrders

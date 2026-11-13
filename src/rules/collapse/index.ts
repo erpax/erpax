@@ -160,7 +160,6 @@ export function subsets(cwd: string = process.cwd()): Subset[] {
  */
 export const POLARITY_CANDIDATES: readonly (readonly [string, string, string])[] = [
   ['sales-orders', 'purchase-orders', 'order: sell ↔ buy'],
-  ['quotes', 'vendor-quotes', 'quote: outbound ↔ inbound'],
   ['shipments', 'goods-receipts', 'goods: out ↔ in'],
   ['sales', 'returns', 'flow: sale ↔ reversal'],
   ['payments', 'receipts', 'money: paid ↔ received'],

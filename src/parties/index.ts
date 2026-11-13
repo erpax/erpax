@@ -32,6 +32,7 @@ import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { classifyTaxId } from '@/classify/tax/id'
 import { deriveCountryFromIban } from '@/derive/country/from/iban'
+import { loadPresets, preset, type Preset } from '@/preset'
 
 /** The sides a party can be on. A party may hold both. */
 export type PartyRole = 'customer' | 'vendor'
@@ -261,50 +262,13 @@ export default Parties
 /** The filter that selects the parties holding a role — the whole of what the old collection was. */
 export const whereRole = (role: PartyRole) => ({ roles: { in: [role] } })
 
-/** One saved list over `parties`: a title, the role filter, and the columns that role cares about. */
-export interface PartyPreset {
-  readonly title: string
-  readonly relatedCollection: 'parties'
-  readonly isShared: true
-  readonly where: ReturnType<typeof whereRole>
-  readonly columns: readonly { readonly accessor: string; readonly active: true }[]
-  readonly access: Record<'read' | 'update' | 'delete', { readonly constraint: 'everyone' }>
-}
-
-const preset = (title: string, role: PartyRole, columns: readonly string[]): PartyPreset => ({
-  title,
-  relatedCollection: 'parties',
-  isShared: true,
-  where: whereRole(role),
-  columns: columns.map((accessor) => ({ accessor, active: true })),
-  access: { read: { constraint: 'everyone' }, update: { constraint: 'everyone' }, delete: { constraint: 'everyone' } },
-})
-
 /** The two lists that replace the two collections. Seed rows, so they are data, not schema. */
-export function partyPresets(): PartyPreset[] {
+export function partyPresets(): Preset[] {
   return [
-    preset('Customers', 'customer', ['code', 'name', 'identity.type', 'commercial.defaultCurrency', 'commercial.creditLimit', 'identity.status']),
-    preset('Vendors', 'vendor', ['code', 'name', 'identity.type', 'commercial.defaultCurrency', 'commercial.preferredPaymentMethod', 'identity.status']),
+    preset('Customers', 'parties', whereRole('customer'), ['code', 'name', 'identity.type', 'commercial.defaultCurrency', 'commercial.creditLimit', 'identity.status']),
+    preset('Vendors', 'parties', whereRole('vendor'), ['code', 'name', 'identity.type', 'commercial.defaultCurrency', 'commercial.preferredPaymentMethod', 'identity.status']),
   ]
 }
 
-/** Write the presets that are not there yet. Idempotent: a preset is identified by its title and collection. */
-export async function loadPartyPresets(payload: Pick<Payload, 'find' | 'create'>): Promise<{ created: number; unchanged: number }> {
-  let created = 0
-  let unchanged = 0
-  for (const p of partyPresets()) {
-    const found = await payload.find({
-      collection: 'payload-query-presets',
-      where: { and: [{ title: { equals: p.title } }, { relatedCollection: { equals: p.relatedCollection } }] },
-      depth: 0,
-      limit: 1,
-    })
-    if (found.docs.length > 0) {
-      unchanged++
-      continue
-    }
-    await payload.create({ collection: 'payload-query-presets', data: p as never, depth: 0 })
-    created++
-  }
-  return { created, unchanged }
-}
+/** Write the two presets that are not there yet. */
+export const loadPartyPresets = (payload: Pick<Payload, 'find' | 'create'>) => loadPresets(payload, partyPresets())

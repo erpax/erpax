@@ -997,13 +997,11 @@ src/customers/projects/project/milestones/index.ts:11: * @standard ISO-4217:2015
 src/customers/projects/project/tasks/index.ts:13: * @standard ISO-8601-1:2019 date-time
 src/customers/projects/wip/snapshots/index.ts:15: * @standard ISO-8601-1:2019 date-time
 src/customers/projects/wip/snapshots/index.ts:16: * @standard ISO-4217:2015 currency-codes
-src/customers/quotes/index.ts:8: * @standard ISO-4217:2015 currency-codes
-src/customers/quotes/index.ts:9: * @standard ISO-8601-1:2019 date-time issued-at expires-at
-src/customers/sales/orders/index.ts:25: * @standard UBL-2.1 Order document-schema
-src/customers/sales/orders/index.ts:26: * @standard UN-EDIFACT ORDERS d96a customer-order
-src/customers/sales/orders/index.ts:27: * @standard UN-EDIFACT ORDRSP d96a order-response
-src/customers/sales/orders/index.ts:28: * @standard Peppol-BIS-3.0 Order ordering-process
-src/customers/sales/orders/index.ts:29: * @standard EN-16931:2017 §BG-13 delivery-information (downstream of the order)
+src/customers/sales/orders/index.ts:27: * @standard UBL-2.1 Order document-schema
+src/customers/sales/orders/index.ts:28: * @standard UN-EDIFACT ORDERS d96a customer-order
+src/customers/sales/orders/index.ts:29: * @standard UN-EDIFACT ORDRSP d96a order-response
+src/customers/sales/orders/index.ts:30: * @standard Peppol-BIS-3.0 Order ordering-process
+src/customers/sales/orders/index.ts:31: * @standard EN-16931:2017 §BG-13 delivery-information (downstream of the order)
 src/customers/sales/orders/returns/index.ts:4: * @standard ISO-8601-1:2019 date-time
 src/customers/sales/orders/shipments/customs/declarations/index.ts:11: * @standard ISO-8601-1:2019 date-time declaration-date
 src/customers/sales/orders/shipments/customs/declarations/index.ts:12: * @standard ISO-3166-1:2020 country-codes country-of-origin
@@ -3831,8 +3829,7 @@ src/customers/kyc/checks/index.ts:7: * @compliance USA-PATRIOT-Act §326 custome
 src/customers/kyc/checks/index.ts:8: * @compliance EU-Regulation-2015/847 wire-transfers
 src/customers/projects/index.ts:27: * @compliance SOX §404 internal-controls
 src/customers/projects/wip/snapshots/index.ts:21: * @compliance SOX §404 internal-controls revenue-recognition
-src/customers/quotes/index.ts:13: * @compliance SOX §404 internal-controls quote-approval
-src/customers/sales/orders/index.ts:34: * @compliance EU-VAT-Directive 2006/112/EC supply-of-goods-or-services
+src/customers/sales/orders/index.ts:36: * @compliance EU-VAT-Directive 2006/112/EC supply-of-goods-or-services
 src/customers/sales/orders/returns/index.ts:10: * @compliance SOX §404 internal-controls return-approval
 src/customers/sales/orders/shipments/customs/declarations/index.ts:18: * @compliance EU UCC §6 customs-declaration
 src/customers/sales/orders/shipments/customs/declarations/index.ts:19: * @compliance OECD BEPS Action 13 transfer-pricing-documentation
@@ -4423,12 +4420,11 @@ src/customers/projects/project/tasks/index.ts:15: * @accounting IFRS IFRS-15 §B
 src/customers/projects/wip/snapshots/index.ts:17: * @accounting IFRS IFRS-15 §B14 §B15 §B16 §B17 §B18 §B19 measurement-of-progress
 src/customers/projects/wip/snapshots/index.ts:18: * @accounting IFRS IFRS-15 §107 §108 §109 contract-asset-contract-liability
 src/customers/projects/wip/snapshots/index.ts:19: * @accounting US-GAAP ASC-606-10-45-1 contract-asset
-src/customers/quotes/index.ts:10: * @accounting IFRS IFRS-15 §10 contract-with-customer
-src/customers/quotes/index.ts:11: * @accounting US-GAAP ASC-606-10-25 contract-existence
-src/customers/sales/orders/index.ts:30: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/customers/sales/orders/index.ts:31: * @accounting IFRS IFRS-15 §10 contract-with-customer (order = contract or modification)
-src/customers/sales/orders/index.ts:32: * @accounting IFRS IFRS-15 §31 transfer-of-control
-src/customers/sales/orders/index.ts:33: * @accounting US-GAAP ASC-606 revenue-from-contracts
+src/customers/quotes/index.ts:10: * @accounting IFRS IFRS-15 §10 contract-with-customer (acceptance is contract inception)
+src/customers/sales/orders/index.ts:32: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/customers/sales/orders/index.ts:33: * @accounting IFRS IFRS-15 §10 contract-with-customer (order = contract or modification)
+src/customers/sales/orders/index.ts:34: * @accounting IFRS IFRS-15 §31 transfer-of-control
+src/customers/sales/orders/index.ts:35: * @accounting US-GAAP ASC-606 revenue-from-contracts
 src/customers/sales/orders/returns/index.ts:5: * @accounting IFRS IFRS-15 §B22 right-of-return-revenue-reversal
 src/customers/sales/orders/returns/index.ts:6: * @accounting IFRS IAS-2 inventories return-to-stock
 src/customers/sales/orders/returns/index.ts:7: * @accounting US-GAAP ASC-606-10-32-10 variable-consideration
@@ -5141,8 +5137,7 @@ src/customers/projects/index.ts:28: * @security ISO-27001 A.5.23 cloud-service-t
 src/customers/projects/project/milestones/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/customers/projects/project/tasks/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/customers/projects/wip/snapshots/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/customers/quotes/index.ts:14: * @security ISO-27002 §5.4 segregation-of-duties
-src/customers/sales/orders/index.ts:36: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/customers/sales/orders/index.ts:38: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/customers/sales/orders/returns/index.ts:11: * @security ISO-27002 §5.4 segregation-of-duties
 src/customers/sales/orders/shipments/customs/declarations/index.ts:20: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/customers/sales/orders/shipments/tracking/events/index.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5786,8 +5781,7 @@ src/customers/projects/index.ts:26: * @audit ISO-19011:2018 audit-trail wip-evid
 src/customers/projects/project/milestones/index.ts:15: * @audit ISO-19011:2018 audit-trail milestone-evidence
 src/customers/projects/project/tasks/index.ts:16: * @audit ISO-19011:2018 audit-trail wbs-evidence
 src/customers/projects/wip/snapshots/index.ts:20: * @audit ISO-19011:2018 audit-trail wip-evidence
-src/customers/quotes/index.ts:12: * @audit ISO-19011:2018 audit-trail quote-issuance
-src/customers/sales/orders/index.ts:35: * @audit ISO-19011:2018 audit-trail
+src/customers/sales/orders/index.ts:37: * @audit ISO-19011:2018 audit-trail
 src/customers/sales/orders/returns/index.ts:9: * @audit ISO-19011:2018 audit-trail rma-evidence
 src/customers/sales/orders/shipments/customs/declarations/index.ts:17: * @audit ISO-19011:2018 audit-trail customs-evidence
 src/customers/sales/orders/shipments/index.ts:7: * @audit ISO-19011:2018 audit-trail fulfillment-evidence

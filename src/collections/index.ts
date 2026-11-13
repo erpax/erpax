@@ -87,7 +87,6 @@ export { default as Parties } from '@/parties'
 export { default as Leads } from '@/leads'
 export { default as Opportunities } from '@/leads/opportunities'
 export { default as CustomerSegments } from '@/customer/segments'
-export { default as Quotes } from '@/customers/quotes'
 export { default as SalesOrders } from '@/customers/sales/orders'
 export { default as SalesCommissions } from '@/employees/sales/commissions'
 

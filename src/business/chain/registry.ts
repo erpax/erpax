@@ -228,7 +228,7 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
     steps: [
       { collection: 'leads',                  action: 'qualify',     emits: 'lead:qualified',    requires: [], producer: { onStatus: 'qualified', aggregate: 'order' } },
       { collection: 'opportunities',          action: 'close-won',   emits: 'opp:won',           requires: ['lead:qualified'], producer: { onStatus: 'won', aggregate: 'order' } },
-      { collection: 'quotes',                 action: 'send',        emits: 'quote:sent',        requires: ['opp:won'], producer: { onStatus: 'sent', aggregate: 'order' } },
+      { collection: 'sales-orders',           action: 'send',        emits: 'quote:sent',        requires: ['opp:won'], producer: { onStatus: 'sent', aggregate: 'order' } },
       { collection: 'contracts',              action: 'sign',        emits: 'contract:signed',   requires: ['quote:sent'], producer: { onStatus: 'signed', aggregate: 'order' } },
       { collection: 'shipments',              action: 'dispatch',    emits: 'shipment:dispatched', requires: ['contract:signed'], producer: { onStatus: 'dispatched', aggregate: 'inventory_transfer' } },
       { collection: 'tracking-events',        action: 'deliver',     emits: 'shipment:delivered', requires: ['shipment:dispatched'], producer: { onStatus: 'delivered', aggregate: 'inventory_transfer' } },
