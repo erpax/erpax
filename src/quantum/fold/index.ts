@@ -1,5 +1,5 @@
 import { exactMax } from '@/algebra'
-import { STANDARDS_CATALOGUE } from '@/standards/catalogue'
+import { STANDARDS_CATALOGUE } from '@/standards/seed'
 /**
  * quantum/fold — word ⊗ digit double fold (64-bit torus halves → 128-bit combined).
  *

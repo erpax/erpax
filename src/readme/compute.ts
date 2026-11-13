@@ -42,7 +42,7 @@ import {
   parseWranglerBindings,
   type WranglerBindingEntry,
 } from '@/cloudflare'
-import { STANDARDS_CATALOGUE } from '../standards/catalogue'
+import { STANDARDS_CATALOGUE } from '../standards/seed'
 import {
   buildAnalysisTypographyGraph,
   atomTypographyContext,

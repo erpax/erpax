@@ -220,7 +220,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
       desc: 'Standards banners + catalogue verify',
       cmd: 'bash scripts/standards-citation-index.sh --check && bash scripts/standards-citation-index.sh --required && cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/standards/emit.ts --verify',
     },
-    catalogue: { desc: 'Emit standards catalogue.ts + SKILL index', cmd: `${TSX} src/standards/emit.ts` },
+    catalogue: { desc: 'Emit standards seed.ts + SKILL index', cmd: `${TSX} src/standards/emit.ts` },
   },
   corpus: {
     default: {

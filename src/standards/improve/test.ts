@@ -2,7 +2,7 @@
  * standards/improve — address-index · FTL gaps · chat heal gates.
  *
  * @standard ISO-25010:2023 systems-and-software-quality
- * @see ./index.ts · ../catalogue.ts · ../../quantum/ftl
+ * @see ./index.ts · ../seed.ts · ../../quantum/ftl
  */
 import { describe, it, expect } from 'vitest'
 import { atomAddress } from '@/atom/address'
@@ -26,7 +26,7 @@ import {
   endlessStandardsImprove,
   standardsImproveWaves,
 } from '@/standards/improve'
-import { STANDARDS_CATALOGUE } from '@/standards/catalogue'
+import { STANDARDS_CATALOGUE } from '@/standards/seed'
 
 describe('standards/improve — address index (reuse≠search)', () => {
   it('names its path (improve, not FTL core) and addresses every catalogue id deterministically', () => {

@@ -7,7 +7,7 @@ import { exactMax, exactMin } from '@/algebra'
  *
  * @see ../index · ../../quantum/ftl · ../../quantum/chat · ../../wave/feed · ./SKILL.md
  */
-import { STANDARDS_CATALOGUE, type CatalogueEntry } from '@/standards/catalogue'
+import { STANDARDS_CATALOGUE, type CatalogueEntry } from '@/standards/seed'
 import { uuid as toUuid } from '@/integrity'
 import { merge, foldToRoot } from '@/merge'
 import {

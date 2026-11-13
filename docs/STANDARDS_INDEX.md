@@ -2746,10 +2746,6 @@ src/staffing/index.ts:4: * @standard SFIA 8 — responsibility levels 1..7
 src/staffing/index.ts:5: * @standard ESCO v1.2 / ISCO-08 — occupation and competency classification
 src/staffing/index.ts:6: * @standard NIST INCITS-359 — role-based access control
 src/standard/truth/index.ts:25: * @standard ISO-19011:2018 6.4.6 audit-evidence (a citation needs evidence)
-src/standards/catalogue.test.ts:7: * @standard ISO/IEC-29119:2022 software-testing (invariant coverage)
-src/standards/catalogue.test.ts:8: * @standard ISO/IEC-25010:2023 §5.4 reusability (one join, two frontends)
-src/standards/catalogue.ts:11: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
-src/standards/catalogue.ts:12: * @standard ISO-19011:2018 §6.4 audit-evidence (the citation index)
 src/standards/emit.test.ts:2: * @standard ISO/IEC-29119:2022 software-testing (emit invariant coverage)
 src/standards/emit.ts:389: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
 src/standards/emit.ts:390: * @standard ISO-19011:2018 §6.4 audit-evidence (the citation index)
@@ -2770,6 +2766,10 @@ src/standards/registry/index.ts:17: * @standard ISO-19011:2018 audit-evidence (a
 src/standards/registry/index.ts:18: * @standard ISO/IEC-25010:2023 §5.1 functional-completeness
 src/standards/registry/test.ts:7: * @standard ISO/IEC-29119:2022 software-testing (invariant coverage)
 src/standards/registry/test.ts:8: * @standard ISO-19011:2018 §6.4 audit-evidence (no duplicate identity)
+src/standards/seed.test.ts:7: * @standard ISO/IEC-29119:2022 software-testing (invariant coverage)
+src/standards/seed.test.ts:8: * @standard ISO/IEC-25010:2023 §5.4 reusability (one join, two frontends)
+src/standards/seed.ts:11: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
+src/standards/seed.ts:12: * @standard ISO-19011:2018 §6.4 audit-evidence (the citation index)
 src/standards/test.ts:2: * @standard ISO/IEC-29119:2022 software-testing
 src/sti/schema-org.ts:19: * @standard schema.org (the universal type vocabulary; Thing + subClassOf)
 src/sti/schema-org.ts:20: * @standard JSON-LD 1.1 W3C-REC (the structured-data serialization)
@@ -3577,10 +3577,10 @@ src/spec/generator/audit.ts:14: * @rfc 8259 json
 src/spec/generator/extractor.ts:18: *   @rfc           <id> [free-text]             ← body inferred as 'RFC'
 src/spec/generator/filler.ts:11: * @rfc 8259 json
 src/spec/generator/keys.ts:33: * @rfc 8259 json
-src/standards/catalogue.test.ts:9: * @rfc 9562 content-uuid (every standard is content-addressed)
-src/standards/catalogue.ts:13: * @rfc 9562 content-uuid (each standard row is content-addressed)
 src/standards/emit.ts:10: * @rfc 9562 content-uuid (each standard is content-addressed)
 src/standards/emit.ts:391: * @rfc 9562 content-uuid (each standard row is content-addressed)
+src/standards/seed.test.ts:9: * @rfc 9562 content-uuid (every standard is content-addressed)
+src/standards/seed.ts:13: * @rfc 9562 content-uuid (each standard row is content-addressed)
 src/subscription/plans/subscriptions/hooks/encryptSensitiveFields.ts:9: * @rfc 5116 authenticated-encryption-with-associated-data
 src/tenant/service/index.ts:15: * @rfc 9110 http-semantics
 src/testing/config-discovery-advanced.test.ts:6: * @rfc 8259 json

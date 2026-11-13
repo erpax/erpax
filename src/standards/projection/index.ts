@@ -4,7 +4,7 @@
  *
  * @standard ISO/IEC-25010:2023 §5.1 functional-completeness (every standard is covered)
  */
-import { STANDARDS_CATALOGUE as CATALOGUE } from '../catalogue'
+import { STANDARDS_CATALOGUE as CATALOGUE } from '../seed'
 import { merge, foldToRoot } from '@/merge'
 import { standardsAddressIndex, standardById as standardByIdFtl } from '@/standards/improve'
 

@@ -13,7 +13,7 @@ import { tmpdir } from 'node:os'
 import { emitCatalogueFace } from './emit'
 import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
-import { STANDARDS_CATALOGUE, STANDARDS_COUNT } from './catalogue'
+import { STANDARDS_CATALOGUE, STANDARDS_COUNT } from './seed'
 import { STANDARDS_REGISTRY } from './registry'
 import collectionConfig from '@/standards'
 import { uuid } from '@/integrity'
@@ -41,7 +41,7 @@ describe('standards catalogue — the shared uuid-native index', () => {
   it('is uuid-native — each entry IS its canonical content-uuid (reproducible, tamper-evident)', () => {
     for (const e of STANDARDS_CATALOGUE) {
       // the stored uuid must equal a fresh uuid({ id, family, title }) — so a
-      // hand-edit of catalogue.ts that desyncs the uuid is caught here.
+      // hand-edit of seed.ts that desyncs the uuid is caught here.
       expect(e.uuid).toBe(uuid({ id: e.id, family: e.family, title: e.title }))
       // uuidv8 layout (RFC 9562 §5.8): version nibble 8, variant 10xx.
       expect(e.uuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/)
