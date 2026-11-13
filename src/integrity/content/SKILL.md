@@ -3,13 +3,13 @@ name: content
 description: "Use when computing or verifying a content-uuid — computeContentUuid, verifyContentUuid, jcsCanonicalize, nameUuid and stripNonContentFields. Promoted from a stray content-uuid.ts at the integrity root to a one-word sub-atom whose only imports are node:crypto and @/uuid/format, which is what makes @/integrity/content a lawful cut point: storage/independence took computeContentUuid from the @/integrity barrel and inherited the corpus's largest import component with it."
 atomPath: "integrity/content"
 coordinate: "integrity/content · 4/weave · b96f4c3c"
-contentUuid: "fc9ba95a-afd8-5187-99dd-21e6132ed806"
+contentUuid: "c1998321-a2f2-5fc3-a5a7-388acc6b1912"
 diamondUuid: "d7820f26-629c-8487-bfce-8b00516cd243"
 uuid: "b96f4c3c-8ce7-80f5-b892-b5b91f9692fb"
 horo: 4
 typography:
   partition: integrity
-  bondDegree: 116
+  bondDegree: 120
 standards:
   - "ISO/IEC 10118 hash functions"
   - "NIST FIPS 180-4 SHA-256"

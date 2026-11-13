@@ -3,13 +3,13 @@ name: consolidation
 description: Use when modelling one consolidation — the singular model of the consolidations collection (the plural store); the combination of multiple entities figures into one set.
 atomPath: consolidation
 coordinate: "consolidation · 7/descent · 8d5f2771"
-contentUuid: "5b642a22-f4cb-558d-b09f-75b89dc13c85"
+contentUuid: "9cc50652-2f0d-57d5-9d55-8364fadbfe87"
 diamondUuid: "318e18e5-2606-8190-8729-bfb550f3aded"
 uuid: "8d5f2771-6619-8dd0-bf1f-71c136fc5e12"
 horo: 7
 typography:
   partition: consolidation
-  bondDegree: 13
+  bondDegree: 12
 standards: []
 bindings: []
 signatures:

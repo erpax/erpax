@@ -10,6 +10,7 @@ export {
   loadCorpusDashboardShell,
   computeCorpusDashboardMetrics,
   loadCorpusEntropyRollup,
+  tableColumns,
   type CorpusPathJournalSample,
   type CorpusDashboardMetrics,
   type CorpusDashboardShell,

@@ -148,12 +148,13 @@ export async function createChainContext(
 
   // ─── Customer + vendor ────────────────────────────────────────────
   const customer = (await payload.create({
-    collection: 'customers',
+    collection: 'parties',
     data: {
       tenant: tenant.id,
       code: `CUST-${slug}`,
       name: `Chain Test Customer (${slug})`,
-      identity: { customerType: 'company', status: 'active' },
+      roles: ['customer'],
+      identity: { type: 'company', status: 'active' },
       commercial: { defaultCurrency: currency },
       country: countryCode,
     },
@@ -161,12 +162,13 @@ export async function createChainContext(
   })) as unknown as { id: string }
 
   const vendor = (await payload.create({
-    collection: 'vendors',
+    collection: 'parties',
     data: {
       tenant: tenant.id,
       code: `VEND-${slug}`,
       name: `Chain Test Vendor (${slug})`,
-      identity: { vendorType: 'company', status: 'active' },
+      roles: ['vendor'],
+      identity: { type: 'company', status: 'active' },
       commercial: { defaultCurrency: currency },
       country: countryCode,
     },
@@ -201,13 +203,13 @@ export async function teardownChainContext(payload: Payload, ctx: ChainContext):
     'goods-receipts', 'purchase-orders', 'vendor-quotes', 'purchase-requisitions',
     'inventory-movements', 'work-orders', 'bills-of-materials',
     'projects', 'project-tasks', 'project-milestones', 'wip-snapshots',
-    'recurring-journals', 'provisions', 'commitments-and-contingencies', 'government-grants',
+    'recurring-journals', 'provisions', 'government-grants',
     'csrd-disclosures', 'carbon-emissions', 'transfer-pricing-files',
     'lease-modifications', 'lease-period-postings', 'leases',
     'leads', 'opportunities', 'activities', 'sales-commissions',
     'fx-transactions', 'bank-reconciliations', 'account-reconciliations',
     'intercompany-transactions', 'consolidation-eliminations',
-    'gl-accounts', 'fiscal-periods', 'customers', 'vendors',
+    'gl-accounts', 'fiscal-periods', 'parties',
     'legal-entities', 'audit-events',
   ] as const) {
     try {

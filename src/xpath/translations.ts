@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about xpath — An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \\\"Web page element\\\".",
-    "uuid": "ce808ad2-5d3a-8f3f-8bd8-16c0b3b14d8b",
+    "uuid": "0eb5e3ea-81ce-8a8c-b47a-15ad93f454b7",
     "words": [
       "use",
       "when",

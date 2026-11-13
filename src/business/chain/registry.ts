@@ -228,7 +228,7 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
     steps: [
       { collection: 'leads',                  action: 'qualify',     emits: 'lead:qualified',    requires: [], producer: { onStatus: 'qualified', aggregate: 'order' } },
       { collection: 'opportunities',          action: 'close-won',   emits: 'opp:won',           requires: ['lead:qualified'], producer: { onStatus: 'won', aggregate: 'order' } },
-      { collection: 'quotes',                 action: 'send',        emits: 'quote:sent',        requires: ['opp:won'], producer: { onStatus: 'sent', aggregate: 'order' } },
+      { collection: 'sales-orders',           action: 'send',        emits: 'quote:sent',        requires: ['opp:won'], producer: { onStatus: 'sent', aggregate: 'order' } },
       { collection: 'contracts',              action: 'sign',        emits: 'contract:signed',   requires: ['quote:sent'], producer: { onStatus: 'signed', aggregate: 'order' } },
       { collection: 'shipments',              action: 'dispatch',    emits: 'shipment:dispatched', requires: ['contract:signed'], producer: { onStatus: 'dispatched', aggregate: 'inventory_transfer' } },
       { collection: 'tracking-events',        action: 'deliver',     emits: 'shipment:delivered', requires: ['shipment:dispatched'], producer: { onStatus: 'delivered', aggregate: 'inventory_transfer' } },
@@ -281,7 +281,7 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
       { collection: 'leads',         action: 'qualify-sql',  emits: 'lead:sql',          requires: ['lead:mql'], producer: { onStatus: 'sql', aggregate: 'order' } },
       { collection: 'opportunities', action: 'create',       emits: 'opp:created',       requires: ['lead:sql'], producer: { onCreate: true, aggregate: 'order' } },
       { collection: 'opportunities', action: 'close-won',    emits: 'opp:won',           requires: ['opp:created'], producer: { onStatus: 'won', aggregate: 'order' } },
-      { collection: 'customers',     action: 'create',       emits: 'customer:created',  requires: ['opp:won'], producer: { onCreate: true, aggregate: 'order' } },
+      { collection: 'parties',     action: 'create',       emits: 'customer:created',  requires: ['opp:won'], producer: { onCreate: true, aggregate: 'order' } },
       { collection: 'contracts',     action: 'sign',         emits: 'contract:signed',   requires: ['customer:created'], producer: { onStatus: 'signed', aggregate: 'order' } },
       { collection: 'sales-commissions', action: 'book',     emits: 'commission:booked', requires: ['opp:won'], producer: { onStatus: 'booked', aggregate: 'payment' } },
     ],
@@ -340,7 +340,7 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
     standards: ['FATF R.10 R.12 R.24', 'EU AMLD5', 'EU CFSP sanctions'],
     featureGate: 'compliance_aml',
     steps: [
-      { collection: 'customers',         action: 'onboard',      emits: 'customer:onboard',     requires: [], producer: { onStatus: 'onboarded', aggregate: 'order' } },
+      { collection: 'parties',         action: 'onboard',      emits: 'customer:onboard',     requires: [], producer: { onStatus: 'onboarded', aggregate: 'order' } },
       { collection: 'kyc-checks',        action: 'initiate',     emits: 'kyc:initiated',        requires: ['customer:onboard'], producer: { onStatus: 'initiated', aggregate: 'order' } },
       { collection: 'beneficial-owners', action: 'register',     emits: 'ubo:registered',       requires: ['kyc:initiated'], producer: { onStatus: 'registered', aggregate: 'order' } },
       { collection: 'ai-suggestions',    action: 'screen',       emits: 'sanctions:screened',   requires: ['ubo:registered'], producer: { onStatus: 'screened', aggregate: 'order' } },
@@ -495,8 +495,8 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
     steps: [
       { collection: 'properties',               action: 'register-property', emits: 'property:registered', requires: [], producer: { onStatus: 'registered', aggregate: 'fixed_asset' } },
       { collection: 'spaces',                   action: 'register-space',    emits: 'space:registered',    requires: ['property:registered'], producer: { onStatus: 'registered', aggregate: 'fixed_asset' } },
-      { collection: 'maintenance-requests',     action: 'raise',             emits: 'mr:raised',           requires: ['space:registered'], producer: { onStatus: 'raised', aggregate: 'order' } },
-      { collection: 'maintenance-requests',     action: 'triage',            emits: 'mr:triaged',          requires: ['mr:raised'], producer: { onStatus: 'triaged', aggregate: 'order' } },
+      { collection: 'maintenance-work-orders',  action: 'raise',             emits: 'mr:raised',           requires: ['space:registered'], producer: { onStatus: 'new', aggregate: 'order' } },
+      { collection: 'maintenance-work-orders',  action: 'triage',            emits: 'mr:triaged',          requires: ['mr:raised'], producer: { onStatus: 'triaged', aggregate: 'order' } },
       { collection: 'maintenance-work-orders',  action: 'issue',             emits: 'wo:issued',           requires: ['mr:triaged'], producer: { onStatus: 'issued', aggregate: 'order' } },
       { collection: 'inventory-movements',      action: 'issue-parts',       emits: 'inventory:issued',    requires: ['wo:issued'], producer: { onStatus: 'issued', aggregate: 'inventory_transfer' } },
       { collection: 'time-entries',             action: 'book-labour',       emits: 'time:posted',         requires: ['wo:issued'], producer: { onStatus: 'booked', aggregate: 'invoice' } },

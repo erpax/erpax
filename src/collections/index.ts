@@ -82,11 +82,11 @@ export { default as FixedAssets } from '@/fixed/assets'
 export { default as DepreciationSchedules } from '@/fixed/assets/depreciation/schedules'
 
 // Master Data: Customers & Revenue
-export { Customers } from '@/customers'
+// Customers and vendors are roles of one party — see @/parties.
+export { default as Parties } from '@/parties'
 export { default as Leads } from '@/leads'
 export { default as Opportunities } from '@/leads/opportunities'
 export { default as CustomerSegments } from '@/customer/segments'
-export { default as Quotes } from '@/customers/quotes'
 export { default as SalesOrders } from '@/customers/sales/orders'
 export { default as SalesCommissions } from '@/employees/sales/commissions'
 
@@ -94,14 +94,12 @@ export { default as SalesCommissions } from '@/employees/sales/commissions'
 export { default as CreditMemos } from '@/invoices/credit/memos'
 export { default as Returns } from '@/customers/sales/orders/returns'
 export { default as Shipments } from '@/customers/sales/orders/shipments'
-export { default as Refunds } from '@/invoices/credit/memos/refunds'
 export { default as PaymentAllocations } from '@/invoices/payments/payment/allocations'
 
 // Dunning & Collections
 export { default as DunningCycles } from '@/invoices/dunning/cycles'
 
 // Master Data: Vendors & Procurement
-export { Vendors } from '@/vendors'
 export { default as VendorQuotes } from '@/vendors/vendor/quotes'
 export { default as VendorScorecards } from '@/vendors/vendor/scorecards'
 
@@ -129,7 +127,6 @@ export { default as FxTransactions } from '@/fx/transactions'
 // Contracts & Obligations
 export { default as Contracts } from '@/customers/contracts'
 export { default as PerformanceObligations } from '@/customers/contracts/performance/obligations'
-export { default as CommitmentsAndContingencies } from '@/commitments/and/contingencies'
 
 // Leases
 export { default as Leases } from '@/leases'
@@ -197,7 +194,6 @@ export { default as Taggings } from '@/tags/taggings'
 // Facilities & Resources
 export { default as Properties } from '@/properties'
 export { default as Spaces } from '@/properties/spaces'
-export { default as MaintenanceRequests } from '@/maintenance/requests'
 export { default as MaintenanceWorkOrders } from '@/maintenance/work/orders'
 export { default as BookableResources } from '@/bookable/resources'
 export { default as Bookings } from '@/bookable/resources/bookings'
@@ -315,7 +311,6 @@ export { default as TransferPricingFiles } from '@/legal/entities/transfer/prici
 // Infrastructure: Metadata, Standards, Translations
 export { default as Standards } from '@/standards'
 export { default as Memories } from '@/memories'
-export { default as McpToolMetadata } from '@/mcp/tool/metadata'
 export { default as Translations } from '@/translations'
 
 // CRM-related (from ecommerce plugin)

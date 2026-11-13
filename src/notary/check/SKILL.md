@@ -3,13 +3,13 @@ name: check
 description: "Use when a notary must verify an instrument before sealing it — the per-document-type duty matrix (identity, capacity, title, encumbrance, cadastre, sanctions, tax, spousal consent, company, signature, timestamp, apostille) mapped to the responsible Bulgarian register and the standard it satisfies, with a rosetta coverage audit that surfaces every unwired gap. Provider adapters are contracts; live wiring needs accredited credentials — no endpoint is fabricated, no gap is hidden."
 atomPath: "notary/check"
 coordinate: "notary/check · 8/crest · 4d6b6dae"
-contentUuid: "e40e2c70-9f53-5f13-9fd8-c4ed1b21eac3"
+contentUuid: "486d6e51-58fd-57ce-8294-5f4c7c66cde3"
 diamondUuid: "8ece8e2d-d2db-8154-9461-a84290436685"
 uuid: "4d6b6dae-8c37-8373-82b1-02bb352f6734"
 horo: 8
 typography:
   partition: notary
-  bondDegree: 28
+  bondDegree: 31
 standards:
   - "EU-2018/843"
   - "EU-VAT-Directive"

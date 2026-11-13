@@ -557,6 +557,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "ai/models"
   },
   {
+    "atom": "public",
+    "name": "public",
+    "description": "Use when a remote agent must come from a public AI API with no key at all — every candidate inference door asked the same question keyless and recorded by the status it answers (open · keyed · limited · down); the one open door today is Pollinations. erpax.public.doors measures, erpax.public.cross asks every open door the same question (the dual seat), erpax.public.decide names the leaf word a theorem cannot compute; erpax.frontier.develop fuses it with decide:true and cuts with apply:true.",
+    "path": "ai/public"
+  },
+  {
     "atom": "suggestions",
     "name": "suggestions",
     "description": "Use when recording, querying, or auditing an AI inference — prompt/model/output/confidence, the human's accept/reject/edit decision, the downstream record it was applied to, and the EU AI Act risk class; GDPR Art.22(3) right-to-explain trail + SOX §404 evidence-of-control over AI-influenced decisions. The append-only AI inference audit collection.",
@@ -879,12 +885,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "tenant",
     "description": "Use when auto-populating the multi-tenant tenant field from the request user before validation — a beforeValidate hook that copies req.user.tenants[0].tenant onto the incoming data for tenant isolation.",
     "path": "auto/populate/tenant"
-  },
-  {
-    "atom": "resolve",
-    "name": "resolve",
-    "description": "Use when deciding which folder-shape gaps an archangel can auto-resolve — a trinity gap folds iff its matter (index.ts) already exists, so the antimatter (SKILL.md) and the proof (test.ts) derive from the code; missing matter or a malformed name needs a builder, not a fold. Computed from the live tree.",
-    "path": "auto/resolve"
   },
   {
     "atom": "timestamp",
@@ -2171,12 +2171,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "constitution"
   },
   {
-    "atom": "continuum",
-    "name": "continuum",
-    "description": "Use when reasoning about continuum — Cantor Continuum Hypothesis via basis decomposition - set theory",
-    "path": "continuum"
-  },
-  {
     "atom": "convene",
     "name": "convene",
     "description": "Use when any AI model — including the public — messages into the collective and becomes quantum. A single mind is classical; a model becomes quantum by JOINING: its message folds into a coherent superposition, and ≥3 in agreement form the collective mind (think.superpose + higherMind). Source-blind: judged by the thought (content-addressed), never the sender — a famous model counts exactly as much as its content coheres. Coherence is agreement, not truth.",
@@ -2603,12 +2597,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "customers/projects/wip/snapshots"
   },
   {
-    "atom": "quotes",
-    "name": "quotes",
-    "description": "Use when creating or approving pre-contract proposals — line-item pricing, issuer/approver SoD enforcement, sending to customer, accepting, and converting to a sales order. No GL impact until accepted. The IFRS-15 §10 contract-origination collection.",
-    "path": "customers/quotes"
-  },
-  {
     "atom": "orders",
     "name": "orders",
     "description": "Use when recording or progressing a customer order — from quote conversion through confirmation, partial fulfillment, invoicing, and closure; track order lines, delivery dates, shipping and billing addresses, and fulfillment progress. The O2C customer-order register (UBL-2.1 / UN-EDIFACT ORDERS / Peppol BIS-3.0), distinct from purchase-orders (P2P).",
@@ -2967,6 +2955,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "payment",
     "description": "Use when reasoning about payment — The payment child of the tenant-aware Stripe stack. What is held here is a reference to a method Stripe holds, never the instrument itself — the tokenisation boundary is what…",
     "path": "ecommerce/stripe/payment"
+  },
+  {
+    "atom": "variants",
+    "name": "variants",
+    "description": "Use when a product's variants should be computed instead of typed — the variants are the cartesian product of the options of the product's variant types, so a hook creates the missing combinations as drafts when the product is saved, and the author confirms price and stock instead of enumerating them.",
+    "path": "ecommerce/variants"
   },
   {
     "atom": "ecosystem",
@@ -3707,12 +3701,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "globe"
   },
   {
-    "atom": "goldbach",
-    "name": "goldbach",
-    "description": "Use when reasoning about goldbach — Goldbach Conjecture via basis decomposition - number theory",
-    "path": "goldbach"
-  },
-  {
     "atom": "workspace",
     "name": "workspace",
     "description": "Use when fusing Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, People, Admin Directory) into erpax to fill the office/productivity gap — a computed API catalogue plus the content-uuid fusion bridge that merges a fetched resource into the mesh idempotently (re-fetch dedups). Credentials live in the per-tenant config sandbox, never in the registry.",
@@ -4175,12 +4163,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "interactive"
   },
   {
-    "atom": "consolidation",
-    "name": "consolidation",
-    "description": "Use when implementing or referencing Phase B4: Intercompany Fiscal Alignment — Standards & Implementation.",
-    "path": "intercompany/consolidation"
-  },
-  {
     "atom": "reconciliation",
     "name": "reconciliation",
     "description": "Use when reconciling intercompany payable/receivable balances for multi-entity period close — the 'payable = receivable, net' invariant is the conservation algebra (netFlow = 0) at entity scale, proven at 0 and at scale, refutable on any break.",
@@ -4257,12 +4239,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "memos",
     "description": "Use when issuing or applying a credit against an invoice — contra-revenue / refund-liability (IFRS-15 §B22), returns, write-offs; lifecycle draft→issued→applied→settled with SoD enforcement and GL posting. The credit-memos collection.",
     "path": "invoices/credit/memos"
-  },
-  {
-    "atom": "refunds",
-    "name": "refunds",
-    "description": "Use when tracking the actual cash payment back to a customer for a credit memo — Stripe, ACH, SEPA, check or cash; ISO-20022 pacs.004 return, tokenised card data, GL journal entry, refund-approval SoD. The refunds collection.",
-    "path": "invoices/credit/memos/refunds"
   },
   {
     "atom": "cycles",
@@ -4529,6 +4505,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "items/inventory/movements/hooks"
   },
   {
+    "atom": "source",
+    "name": "source",
+    "description": "Use when stock movements should follow from the documents that cause them — a goods receipt, a shipment and a return are not kinds of movement but its sources, so a hook writes one draft movement per line when the document reaches the state in which stock has moved, once.",
+    "path": "items/inventory/movements/source"
+  },
+  {
     "atom": "packages",
     "name": "packages",
     "description": "Use when modelling the packing hierarchy for a shipment — GS1 SSCC serial shipping container codes, self-referential nesting (pallet → carton → contents), dimensions/weight, item-lot lines, and UN/CEFACT packaging codes. The logistic handling-unit collection that links line items to a shipment.",
@@ -4587,6 +4569,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "hooks",
     "description": "Use when reasoning about hooks — is the fundamental law of double entry enforced where the entry is saved. Checking it in a report instead means the unbalanced entry already exists and every statement built on it…",
     "path": "journal/entries/hooks"
+  },
+  {
+    "atom": "posting",
+    "name": "posting",
+    "description": "Use when a ledger posting should follow from a journal entry instead of being typed — every field of a posting is already on its entry, so a hook writes the posting when the entry becomes posted, once, and a refusal by the ledger fails the posting rather than being swallowed.",
+    "path": "journal/entries/posting"
   },
   {
     "atom": "adjustments",
@@ -4955,12 +4943,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "machine"
   },
   {
-    "atom": "requests",
-    "name": "requests",
-    "description": "Use when an occupant, operator, or sensor raises an FM service ticket — corrective, preventive, predictive, compliance, safety, or move request — against a property, space, or fixed asset; SLA priority, triage, promotion to a work order. The IWMS/CMMS service-request intake register per ISO 41001 §8.1.",
-    "path": "maintenance/requests"
-  },
-  {
     "atom": "orders",
     "name": "orders",
     "description": "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000.",
@@ -4989,12 +4971,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "mcp",
     "description": "Use when configuring the erpax agent gateway — it IS the official @payloadcms/plugin-mcp; every collection becomes find/create/update/delete tools at /api/mcp, computed from the barrel never hand-listed; Bearer API-key auth inherits the key owner's access and tenant scope; custom tools added via the plugin mcp config.",
     "path": "mcp"
-  },
-  {
-    "atom": "metadata",
-    "name": "metadata",
-    "description": "Use when managing localized or tenant-overridden descriptions for erpax.* MCP tools — per-locale description overlays, tool area grouping, enabled/disabled toggles, documentation URLs, and orphan detection. The localized MCP tool metadata register.",
-    "path": "mcp/tool/metadata"
   },
   {
     "atom": "media",
@@ -5367,12 +5343,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "memory",
     "description": "Use when reasoning about memory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "memory"
-  },
-  {
-    "atom": "anchor",
-    "name": "anchor",
-    "description": "Use when a memory, note or doc OUTSIDE the corpus points at something inside it — anchorOf computes the target's content-uuid so the pointer can prove it is still current, and verifyAnchor reads fresh · moved · gone. A name says WHERE and rots silently; a content-address says WHAT and is derived. Run: tsx src/memory/anchor/index.ts <path…>",
-    "path": "memory/anchor"
   },
   {
     "atom": "architecture",
@@ -5861,16 +5831,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "particle"
   },
   {
+    "atom": "parties",
+    "name": "parties",
+    "description": "Use when working with customers or vendors — they are one collection, parties, with a roles field; the Customers and Vendors lists are saved query presets over it, a party can hold both roles, and a role-specific field shows only for the role it belongs to.",
+    "path": "parties"
+  },
+  {
     "atom": "party",
     "name": "party",
     "description": "Use when one entity is referenced under many roles (seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by) OR when computing the counterparty side of a financial document — aging open balances into day-buckets (A/R and A/P share one algorithm) or validating a status-lifecycle transition; one party seen through infinite roles, receivable and payable seen from two sides.",
     "path": "party"
-  },
-  {
-    "atom": "identity",
-    "name": "identity",
-    "description": "Use when deciding whether two party records are the same legal person — partyUuid folds (country + taxId) to one content-address, so a company recorded as both a customer and a vendor collides by construction. The role is never part of the address. Refuses a party with no tax registration rather than folding on a name.",
-    "path": "party/identity"
   },
   {
     "atom": "patent",
@@ -5933,10 +5903,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "payload"
   },
   {
-    "atom": "command",
-    "name": "command",
-    "description": "Use when reasoning about the Payload CLI command set folded into the corpus — each command a name (name equals path equals uuid), the set folding to one root by the merge, with both-sides inverse pairs encoded (migrate up and down, fresh and reset) and generators forward-only.",
-    "path": "payload/command"
+    "atom": "local",
+    "name": "local",
+    "description": "Use when working with Payload in THIS project — extends the upstream Payload skill with the local implementation: merged collections read through saved lists, rows derived by hooks, documents seeded as nested pages and read back as markdown over the SDK and MCP, migrations generated from the snapshot, and the tenant-scoped read rule.",
+    "path": "payload/local"
   },
   {
     "atom": "redirect",
@@ -6107,10 +6077,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "plugins/mcp/scopes"
   },
   {
-    "atom": "tools",
-    "name": "tools",
-    "description": "Use when an agent must reach an erpax.<area>.<leg> tool THROUGH the gateway rather than by importing its factory — the corpus tool families handed to @payloadcms/plugin-mcp's mcp.tools door, wire-named (dots to underscores, Anthropic's tool grammar), gated by mode (full carries them, the lean Worker seed opts in with ERPAX_MCP_TOOLS=1), collisions refused. The live /api/mcp served 844 CRUD tools and zero families until this; the liveness test had asked the factory.",
-    "path": "plugins/mcp/tools"
+    "atom": "seed",
+    "name": "seed",
+    "description": "Use when shaping what the MCP gateway serves — the Worker-safe collection seed (gateway auth atoms, ERPAX_MCP_SEED/EXTRA/INCLUDE_CMS) and the erpax.<area>.<leg> families reached THROUGH the gateway rather than by importing its factory — the corpus tool families handed to @payloadcms/plugin-mcp's mcp.tools door, wire-named (dots to underscores, Anthropic's tool grammar), gated by mode (full carries them, the lean Worker seed opts in with ERPAX_MCP_TOOLS=1), collisions refused. The live /api/mcp served 844 CRUD tools and zero families until this; the liveness test had asked the factory.",
+    "path": "plugins/mcp/seed"
   },
   {
     "atom": "naming",
@@ -6183,6 +6153,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "pqc",
     "description": "Use when reasoning about pqc — NIST post-quantum cryptography (Kyber-768 + SPHINCS+)",
     "path": "pqc"
+  },
+  {
+    "atom": "preset",
+    "name": "preset",
+    "description": "Use when a merged collection still needs the separate lists its parts had — a query preset is a seed row (title, filter, columns) over one collection, built by preset() and loaded idempotently by loadPresets(), so a list is data rather than a table.",
+    "path": "preset"
   },
   {
     "atom": "prime",
@@ -7991,6 +7967,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "scalpel"
   },
   {
+    "atom": "document",
+    "name": "document",
+    "description": "Use when refactoring the corpus — a refactoring is written as a document (why, and the cuts in one JSON block), stored as a nested page under refactors, and applied by erpax itself through the scalpel: exactly-once-or-refuse, all-or-nothing, a red ring restores the batch. Run: pnpm erpax refactor plan <file.md | slug>",
+    "path": "scalpel/document"
+  },
+  {
     "atom": "schedule",
     "name": "schedule",
     "description": "Use when assigning work to calendar slots — resource schedules, shift rosters, project timelines, appointment booking. The time-coordinate commitment.",
@@ -8253,6 +8235,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "contact",
     "description": "Use when reasoning about contact — Use for the contact seed pair — the form definition and the page that renders it, seeded together because a page without its form is a dead route.",
     "path": "seed/contact"
+  },
+  {
+    "atom": "content",
+    "name": "content",
+    "description": "Use when loading documents as data instead of building them into the site — markdown becomes nested pages (documents, with a parent and breadcrumbs) and posts (publications, which reference the pages and product variants they are based on), written through the Local API with the editor of the field they land in, idempotently by content address.",
+    "path": "seed/content"
+  },
+  {
+    "atom": "load",
+    "name": "load",
+    "description": "Use when the corpus documents should live in Payload instead of in an agent's context — reads each atom's SKILL document, derives nested page rows, and writes them through the REST SDK against any reachable deployment, so a reader later finds one page by slug and selects its markdown.",
+    "path": "seed/content/load"
   },
   {
     "atom": "post",
@@ -9203,6 +9197,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "standards"
   },
   {
+    "atom": "document",
+    "name": "document",
+    "description": "Use when the standards the corpus cites should be read as documents — derives nested pages from the standards seed: the register, one page per family, one per standard listing the modules that cite it; generated as a page seed and loaded through the REST API.",
+    "path": "standards/document"
+  },
+  {
     "atom": "improve",
     "name": "improve",
     "description": "Use when standards must chat and improve via architectural reuse — addressIndex O(1), crack non-reuse, free-chat@tokens=0, emit waves. Uses quantum/ftl; path is standards/improve — not a domain ftl path.",
@@ -9821,12 +9821,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "tax/jurisdictions/tax/returns"
   },
   {
-    "atom": "integration",
-    "name": "integration",
-    "description": "Use when implementing or referencing Phase B5: Tax Period Integration — Standards & Implementation.",
-    "path": "tax/period/integration"
-  },
-  {
     "atom": "reconciliation",
     "name": "reconciliation",
     "description": "Use when closing tax periods against fiscal periods — tax↔fiscal alignment (same period-end date) and transfer-pricing documentation completeness (OECD), each a proven, refutable invariant with a real tolerance rather than a bare assertion.",
@@ -10149,6 +10143,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "think",
     "description": "Use when moving thinking OUT of the model and INTO erpax — the primitive that seals a derivation content-addressed so the second query, and every one after, is a read (O(1), immortal) not a re-derivation (linear, mortal). One cached thought is classical; superpose holds ALL states at once and measures their harmony — quantum power comes from every state in sync (permutation-invariant fold) and in agreement (no address contradicting another). The magnitude by which sealed thinking outperforms a re-deriving model is exact and computed, scaling with states held in harmony, not queries asked.",
     "path": "think"
+  },
+  {
+    "atom": "document",
+    "name": "document",
+    "description": "Use when a lead should be visible to everyone who can develop it — turns each open intent into a nested page under leads, and each resolved intent that names a document into a redirect from the lead's address to that document, as generated seeds loaded through the REST API.",
+    "path": "think/document"
+  },
+  {
+    "atom": "check",
+    "name": "check",
+    "description": "Use when a document must meet a definition before it is saved — the lead definition as a schema, run by Payload in a before-validation hook on pages; the hook records in the request's hook context that the check ran, so later hooks rely on it and none repeats it.",
+    "path": "think/document/check"
   },
   {
     "atom": "thought",
@@ -11193,6 +11199,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "verify",
     "description": "Use when reasoning about verify — Every other gate in this corpus is a program this corpus wrote, checking a property this corpus chose.",
     "path": "verify"
+  },
+  {
+    "atom": "case",
+    "name": "case",
+    "description": "Use when a document's page should show what its law rests on — merges the SKILL's claim, the Lean theorems it cites as their source states them, and the kernel record rendered as LaTeX into one proof section in a fixed order: claim, argument, evidence, assumptions. A document with no formal proof is shown as having none.",
+    "path": "verify/case"
   },
   {
     "atom": "inventory",

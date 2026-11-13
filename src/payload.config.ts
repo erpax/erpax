@@ -11,6 +11,8 @@ import { mcpPlugin } from '@payloadcms/plugin-mcp'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { searchPlugin } from '@payloadcms/plugin-search'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
+import { seoPlugin } from '@payloadcms/plugin-seo'
+import { documentMarkdown, summaryOf } from '@/seed/content'
 import { importExportPlugin } from '@payloadcms/plugin-import-export'
 import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs'
 import { r2Storage } from '@payloadcms/storage-r2'
@@ -18,8 +20,7 @@ import { uuidPlugin } from '@/uuid'
 import { taggablePlugin } from '@/plugins/taggable'
 import { uuidNamesPlugin } from '@/plugins/naming'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
-import { mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
-import { gatewayTools } from '@/plugins/mcp/tools'
+import { gatewayTools, mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
 import { erpaxMcpTools } from '@/agent/mcp-surface'
 import { versionsPlugin } from '@/plugins/versions'
 import { trelloClientFromEnv } from '@/trello'
@@ -361,6 +362,15 @@ export default buildConfig({
     }),
     // Official content-surface plugins (see the `redirects` + `search` skills).
     // Registering them is what makes `'redirects'`/`'search'` real CollectionSlugs.
+    // SEO — the fields are placed by each collection (pages, posts, products); the plugin is
+    // registered for its generate endpoints, which the "Auto-generate" buttons in those fields
+    // call. A document describes itself: the title is its own, the description its first
+    // paragraph of prose. That one line is what the search index carries and what a reader —
+    // a person or a model choosing which document to open — sees before opening anything.
+    seoPlugin({
+      generateTitle: ({ doc }) => String((doc as { title?: unknown })?.title ?? ''),
+      generateDescription: ({ doc }) => summaryOf(documentMarkdown((doc ?? {}) as Record<string, unknown>)),
+    }),
     redirectsPlugin({
       collections: ['pages', 'posts'],
       overrides: { fields: ({ defaultFields }) => defaultFields },
@@ -455,7 +465,7 @@ export default buildConfig({
       // The erpax tool families (erpax.<area>.<leg> trinities) ride the gateway through the
       // plugin's own custom-tool door — wire-named, mode-gated. A GETTER, because the plugin
       // reads `mcp.tools` when it runs inside buildConfig, after every module has initialised;
-      // building them in this literal would run inside the import cycle. See @/plugins/mcp/tools.
+      // building them in this literal would run inside the import cycle. See @/plugins/mcp/seed.
       mcp: {
         get tools() {
           return gatewayTools(erpaxMcpTools())

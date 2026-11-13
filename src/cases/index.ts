@@ -85,7 +85,7 @@ export const Cases: CollectionConfig = {
     // Parties under roles — multi-party by construction (the polymorphic party array).
     partyRefField(['complainant', 'defendant', 'prosecutor', 'judge', 'counsel', 'witness'], {
       name: 'parties',
-      relationTo: ['users', 'customers', 'vendors', 'employees', 'legal-entities'],
+      relationTo: ['users', 'parties', 'employees', 'legal-entities'],
       description: 'Parties under roles — the same polymorphic form a transaction-bearing collection uses.',
     }),
 

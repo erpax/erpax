@@ -166,11 +166,9 @@ export async function resolveTranslation(args: {
  * `resolveTranslation({ scope: 'mcp-tool', key: toolName, ... })`.
  * Used by the catalog builder to overlay descriptions at request time.
  *
- * @deprecated The McpToolMetadata.description field (Slice ZZZZZZZZ)
- *   is now superseded — keep that collection for non-localized metadata
- *   (area, tags, enabled flag, documentationUrl); descriptions live in
- *   `translations` with scope='mcp-tool'. Existing description rows
- *   should be migrated by `applyI18nHarvest`.
+ * Descriptions live in `translations` with scope='mcp-tool'. The separate tool-metadata
+ *   collection that once held them was removed: a tool's documentation is a nested
+ *   page like any other document.
  */
 export async function overlayLocalizedFromPayload(
   payload: {

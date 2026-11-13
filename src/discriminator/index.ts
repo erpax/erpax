@@ -78,7 +78,7 @@ export const partyRefField = (
       name: 'party',
       type: 'relationship',
       required: true,
-      relationTo: opts.relationTo ?? ['addresses', 'customers', 'vendors', 'carriers'],
+      relationTo: opts.relationTo ?? ['addresses', 'parties', 'carriers'],
     },
   ],
 })

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling a legal matter as a docket — case lifecycle, parties under roles, append-only evidence, judgments, offences and dispute resolution; the harmony-checked Payload realization of the justice docket.",
-    "uuid": "c520081c-343d-8106-95b1-b31060e96a8b",
+    "uuid": "c76c9d8f-1f20-8c0a-b0ed-9c2e0bfb05ed",
     "words": [
       "use",
       "when",

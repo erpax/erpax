@@ -297,7 +297,7 @@ export function checkChainStepsReferenceRealCollections(_ctx: InvariantContext):
   // Some core slugs are not feature-gated; whitelist the ones chains use.
   for (const s of [
     'audit-events', 'gl-accounts', 'journal-entries', 'gl-postings',
-    'fiscal-periods', 'invoices', 'payments', 'payment-allocations', 'customers', 'vendors',
+    'fiscal-periods', 'invoices', 'payments', 'payment-allocations', 'parties',
     'subscriptions', 'usage-records',
     'purchase-requisitions', 'vendor-quotes', 'purchase-orders', 'goods-receipts',
     'leases', 'lease-period-postings', 'lease-modifications',
@@ -313,7 +313,7 @@ export function checkChainStepsReferenceRealCollections(_ctx: InvariantContext):
     'workflow-definitions', 'workflow-instances',
     'transaction-failures',
     'leads', 'opportunities', 'activities', 'sales-commissions',
-    'quotes', 'contracts', 'shipments', 'tracking-events',
+    'sales-orders', 'contracts', 'shipments', 'tracking-events',
     'performance-obligations', 'projects', 'project-tasks', 'project-milestones',
     'audit-findings', 'provisions',
     'carbon-emissions', 'csrd-disclosures', 'evidence-attestations',

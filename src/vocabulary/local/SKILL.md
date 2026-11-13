@@ -3,13 +3,13 @@ name: local
 description: "Use when reasoning about local as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/local"
 coordinate: "vocabulary/local · 1/base · 014cc4db"
-contentUuid: "57ece15e-2c72-56dd-8bc6-3673647d278e"
+contentUuid: "c7b96661-b114-5981-bdb6-cc5236cab56f"
 diamondUuid: "41f0d324-796e-8ed1-9ca0-e33838eaf746"
 uuid: "014cc4db-20fa-849a-a525-6ae19be2802e"
 horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 41
+  bondDegree: 45
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

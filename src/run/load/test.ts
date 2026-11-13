@@ -15,7 +15,7 @@ describe('run/load — the app under full load', () => {
     const slugs = (cfg.collections ?? []).map((c: any) => c.slug)
     expect(slugs.length).toBeGreaterThan(200)
     // the atoms today's work touched, proving this is the REAL config and not a stub
-    for (const s of ['gl-postings', 'invoices', 'fixed-assets', 'customers', 'vendors', 'period-locks'])
+    for (const s of ['gl-postings', 'invoices', 'fixed-assets', 'parties', 'period-locks'])
       expect(slugs, `${s} missing from the booted config`).toContain(s)
   }, 120_000)
 

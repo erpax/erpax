@@ -52,6 +52,8 @@ export async function POST(request: Request) {
       collection: 'subscription-plans',
       where: { slug: { equals: planSlug } },
       limit: 1,
+      depth: 0,
+      select: { monthlyPrice: true, stripePriceId: true },
       req,
       overrideAccess: true,
     })
@@ -69,6 +71,8 @@ export async function POST(request: Request) {
         collection: 'subscriptions',
         where: { tenant: { equals: tenantId } },
         limit: 1,
+        depth: 0,
+        select: { stripeSubscriptionId: true },
         req,
         overrideAccess: true,
       })
@@ -117,6 +121,8 @@ export async function POST(request: Request) {
     const tenant = await payload.findByID({
       collection: 'tenants',
       id: tenantId,
+      depth: 0,
+      select: { stripeSecretKey: true },
       req,
       overrideAccess: true,
     })
@@ -155,6 +161,8 @@ export async function POST(request: Request) {
       collection: 'subscriptions',
       where: { tenant: { equals: tenantId } },
       limit: 1,
+      depth: 0,
+      select: { stripeSubscriptionId: true },
       req,
       overrideAccess: true,
     })

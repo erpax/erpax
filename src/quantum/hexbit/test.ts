@@ -1,6 +1,10 @@
 import { describe, expect, it } from 'vitest'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { digitalRootOfUuid } from '@/digit'
 import {
+  nibbleSum32,
+  hexitValue,
   benchmarkCarriers,
   carrierBreakEven,
   packingLosesAtOne,
@@ -98,5 +102,58 @@ describe('hexbit — the packed carrier, and what it actually buys', () => {
   // same trap the carrier ranking above is worded to avoid. The measured k lives in the CLI face.
   it('does not pay for a single operation — the carrier advantage is amortised, not intrinsic', () => {
     expect(packingLosesAtOne(4_000)).toBe(true)
+  })
+})
+
+describe('hexbit — the cross formulas: the hexit sum by one multiply, the hex char by one expression', () => {
+  // the two loops the crosses replaced, kept here as the REFERENCE the crosses must agree with
+  const nibbleLoop = (w: Uint32Array): number => {
+    let n = 0
+    for (let i = 0; i < 4; i++) {
+      let v = w[i]!
+      for (let k = 0; k < 8; k++) {
+        n += v & 0xf
+        v >>>= 4
+      }
+    }
+    return n === 0 ? 0 : ((n - 1) % 9) + 1
+  }
+  const branched = (c: number): number => (c >= 48 && c <= 57 ? c - 48 : c >= 97 && c <= 102 ? c - 87 : c >= 65 && c <= 70 ? c - 55 : 0)
+  const samples = Array.from({ length: 20_000 }, (_, i) => sampleHex(i)).concat(['0'.repeat(32), 'f'.repeat(32), 'ABCDEF0123456789abcdef0123456789'])
+
+  it('agrees with the nibble loop and the three-branch value on every sample, both alphabets, and the two edges', () => {
+    for (const h of samples) {
+      expect(digitalRootPacked(toU32x4(h))).toBe(nibbleLoop(toU32x4(h)))
+      for (const ch of h) expect(hexitValue(ch.charCodeAt(0))).toBe(branched(ch.charCodeAt(0)))
+    }
+    expect(nibbleSum32(0xffffffff)).toBe(120) // the bound the multiply rests on: four bytes of 30
+    expect(nibbleSum32(0)).toBe(0)
+  })
+
+  it('the cross is faster than the loop it replaced — the ranking, not the timing', () => {
+    const packed = samples.map(toU32x4)
+    const timeMin = (f: () => void): number => {
+      f()
+      let best = Number.POSITIVE_INFINITY
+      for (let r = 0; r < 5; r++) {
+        const t0 = process.hrtime.bigint()
+        f()
+        const dt = Number(process.hrtime.bigint() - t0)
+        if (dt < best) best = dt
+      }
+      return best
+    }
+    let sink = 0
+    const cross = timeMin(() => { for (const w of packed) sink += digitalRootPacked(w) })
+    const loop = timeMin(() => { for (const w of packed) sink += nibbleLoop(w) })
+    expect(sink).toBeGreaterThan(0)
+    expect(cross).toBeLessThan(loop)
+  })
+
+  it('the Lean twin decides the two bounds and the character cross, without axioms', () => {
+    const lean = readFileSync(join(process.cwd(), 'src/verify/lean/Hexbit.lean'), 'utf8')
+    for (const t of ['nibble_pair_fits', 'four_bytes_fit', 'cross_is_value']) expect(lean).toContain(`theorem ${t}`)
+    expect(lean).toContain('def hexCross (c : Nat) : Nat := (c % 16) + 9 * ((c / 64) % 2)')
+    expect(lean).not.toMatch(/\bsorry\b/)
   })
 })

@@ -3,13 +3,13 @@ name: assets
 description: "Use when managing capitalized PP&E — registering assets (land, buildings, equipment, vehicles, software, intangibles), configuring depreciation method and useful life, computing depreciable base and book value, tracking disposals and maintenance, mapping GL accounts for asset/accumulated-depreciation/expense lines. The IAS-16 asset-master node."
 atomPath: "fixed/assets"
 coordinate: "fixed/assets · 1/base · 702b0403"
-contentUuid: "b947fa1e-868e-5f22-b000-5da1c0fce251"
+contentUuid: "0d20a0d0-5ba4-5980-8935-bd90ba3c9143"
 diamondUuid: "23d556d4-2a5f-8ad4-9a57-6efac346d211"
 uuid: "702b0403-4336-8c77-bb61-3c4ae5fdcad2"
 horo: 1
 typography:
   partition: fixed
-  bondDegree: 120
+  bondDegree: 119
 standards:
   - "IFRS IAS-16 property-plant-and-equipment"
   - "IFRS IAS-36 impairment-of-assets"

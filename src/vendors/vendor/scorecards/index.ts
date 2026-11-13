@@ -33,7 +33,7 @@ const VendorScorecards: CollectionConfig = {
   access: accountingCollectionAccess(),
   fields: [
     referenceField(),
-    { name: 'vendor', type: 'relationship', relationTo: 'vendors', required: true, index: true },
+    { name: 'vendor', type: 'relationship', relationTo: 'parties', required: true, index: true },
     { name: 'periodLabel', type: 'text', required: true,
       admin: { description: 'e.g. 2026-Q1, 2026-FY.' } },
     { name: 'periodStartDate', type: 'date', required: true },

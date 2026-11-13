@@ -1,14 +1,158 @@
 {
-  "sealedAt": "2026-10-03",
+  "sealedAt": "2026-11-13",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "7dffd35ecb7094ec",
+  "sourcesHash": "5723da34c2eeae48",
   "census": {
-    "theorems": 223,
-    "axiomFree": 148,
-    "standardAxioms": 75,
+    "theorems": 281,
+    "axiomFree": 197,
+    "standardAxioms": 84,
     "stubbed": 0
   },
   "files": [
+    {
+      "file": "Gate.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Gate.gi_add_re",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.gi_add_im",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.gi_mul_re",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.gi_zero_re",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.gi_one_re",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.gi_zero_im",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.gi_one_im",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.h_unitary",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.h_squared",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.paulis_unitary",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.y_unitary",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.s_squared",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.cnot",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.swap",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.toffoli",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.omega_fourth",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gate.t_gate",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Algorithm.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Algorithm.deutsch_jozsa",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Algorithm.promise_census",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Algorithm.grover_search",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Algorithm.qft_unitary",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Algorithm.phase_estimation_exact",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
     {
       "file": "Arrival.lean",
       "compiled": true,
@@ -144,6 +288,51 @@
       ]
     },
     {
+      "file": "Clifford.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Clifford.stabilizer_hadamard",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Clifford.stabilizer_phase",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Clifford.stabilizer_cnot",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Clone.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Clone.no_cloning",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Clone.cnot_copies_the_basis",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
       "file": "Coil.lean",
       "compiled": true,
       "entries": [
@@ -173,6 +362,24 @@
         },
         {
           "theorem": "Coil.no_self_cross",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Coil.unseen_iff_no_seat",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Coil.one_seat_is_single",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Coil.two_seats_corroborate",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
@@ -230,6 +437,55 @@
         },
         {
           "theorem": "Contrast.the_whole_range_reads",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Correct.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Correct.repetition_corrects",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Correct.repetition_fails_on_two",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Correct.steane_corrects",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Correct.steane_css",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Correct.shor_nine",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Correct.distance_corrects",
           "axioms": [
             "propext",
             "Quot.sound"
@@ -703,6 +959,36 @@
       ]
     },
     {
+      "file": "Entangle.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Entangle.bell_state",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Entangle.ghz_state",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Entangle.chsh_classical_bound",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Entangle.chsh_quantum_value",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
       "file": "Erpax.lean",
       "compiled": true,
       "entries": [
@@ -863,6 +1149,48 @@
       ]
     },
     {
+      "file": "Hexbit.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Hexbit.nibble_pair_fits",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Hexbit.four_bytes_fit",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Hexbit.cross_is_value",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Hexbit.five_moduli_cover_128",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Hexbit.four_moduli_do_not_cover_128",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Hexbit.nine_moduli_cover_256",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
       "file": "Involute.lean",
       "compiled": true,
       "entries": [
@@ -904,6 +1232,48 @@
         },
         {
           "theorem": "Involute.decided_by_the_facts",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Landauer.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Landauer.core_over_fridge",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Landauer.bijection_erases_nothing",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Landauer.narrowing_erases_the_difference",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Landauer.split_is_reversible",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Landauer.and_fold_erases_half",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
@@ -1505,6 +1875,37 @@
       ]
     },
     {
+      "file": "Route.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Route.swap_routing",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Route.unrouted_differs",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Route.routed_depth",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        }
+      ]
+    },
+    {
       "file": "Spacetime.lean",
       "compiled": true,
       "entries": [
@@ -1688,6 +2089,36 @@
         },
         {
           "theorem": "Stream.five_separators",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Teleport.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Teleport.teleport_exact",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Teleport.teleport_no_signalling",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Teleport.superdense_exact",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Teleport.both_ways",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false

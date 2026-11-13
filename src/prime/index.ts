@@ -36,6 +36,8 @@
  */
 
 /** Canonical atom path. */
+import { piHex } from '@/pi'
+
 export const atomPath = 'prime' as const
 
 /** The first primes — the smallest generators of the multiplicative basis. */
@@ -106,6 +108,57 @@ export function factor(n: number): number[] {
   }
   if (m > 1) out.push(m)
   return out
+}
+
+// ─── the split: an astronomical value as small residues, moduli drawn from π, recomposed by CRT ────
+
+/**
+ * Prime moduli nobody chose: 31-bit windows read off the hex digits of π ([[pi]], BBP — computed, not
+ * stored), bit 30 forced so every modulus exceeds 2^30, kept when Miller–Rabin proves them prime. A
+ * modulus set derived from a public constant is the "nothing up my sleeve" discipline the ciphers
+ * use for their tables; here it makes the split reproducible by anyone with π.
+ */
+export function piPrimes(count: number): bigint[] {
+  const out: bigint[] = []
+  for (let at = 0; out.length < count && at < 4096; at += 8) {
+    const digits = piHex(at + 8).slice(at)
+    let w = 0
+    for (const d of digits) w = (w * 16 + d) >>> 0
+    const cand = (w & 0x7fffffff) | 0x40000000
+    if (isPrime(cand) && !out.includes(BigInt(cand))) out.push(BigInt(cand))
+  }
+  return out
+}
+
+/** Do the moduli cover `bits` — is their product above 2^bits, so the split loses nothing? */
+export const coversBits = (moduli: readonly bigint[], bits: number): boolean => moduli.reduce((p, m) => p * m, 1n) > 1n << BigInt(bits)
+
+/** The value as its residue in every modulus — a ring homomorphism, so sums and products split with it. */
+export const split = (x: bigint, moduli: readonly bigint[]): bigint[] => moduli.map((m) => ((x % m) + m) % m)
+
+const inverse = (a: bigint, m: bigint): bigint => {
+  // extended Euclid — the crypto tool under every CRT
+  let [old_r, r, old_s, s] = [((a % m) + m) % m, m, 1n, 0n]
+  while (r !== 0n) {
+    const q = old_r / r
+    ;[old_r, r] = [r, old_r - q * r]
+    ;[old_s, s] = [s, old_s - q * s]
+  }
+  return ((old_s % m) + m) % m
+}
+
+/** The Chinese Remainder recomposition — exact when `coversBits` held for the value's width. */
+export function join(residues: readonly bigint[], moduli: readonly bigint[]): bigint {
+  let x = 0n
+  let step = 1n
+  for (let i = 0; i < moduli.length; i++) {
+    const m = moduli[i] as bigint
+    const r = residues[i] as bigint
+    const t = ((((r - x) % m) + m) % m) * inverse(step % m, m)
+    x += step * (((t % m) + m) % m)
+    step *= m
+  }
+  return x
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {

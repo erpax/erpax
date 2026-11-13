@@ -15,7 +15,8 @@
  * @see @/seed/slugs — CMS fixture identity
  * @see ./test.ts
  */
-import type { CollectionSlug, GlobalSlug } from 'payload'
+import type { CollectionSlug, GlobalSlug, PayloadRequest } from 'payload'
+import type { z } from 'zod'
 
 import { SEED_COLLECTION_SLUGS, SEED_GLOBAL_SLUGS } from '@/seed/slugs'
 
@@ -30,6 +31,14 @@ export const MCP_GATEWAY_SEED_SLUGS = [
   'roles',
   'payload-mcp-api-keys',
 ] as const satisfies readonly CollectionSlug[]
+
+/**
+ * The document collections: pages are the nested documents, posts the publications based on them.
+ * `search` is the fast route to both: one flat row per document carrying its title, slug and
+ * body as markdown. Always on the surface, because an agent that can find a document by slug and
+ * select its `markdown` does not need that document loaded into its context beforehand.
+ */
+export const mcpDocumentSlugs = (): readonly CollectionSlug[] => ['search', 'pages', 'posts', 'categories', 'redirects']
 
 export type McpSeedMode = 'seed' | 'full'
 
@@ -60,7 +69,7 @@ export function mcpExtraSlugs(env: McpEnv = process.env): readonly string[] {
 
 /**
  * Ordered unique seed slugs for MCP enablement.
- * Production seed = gateway auth atoms only (CMS fixtures stay on `/next/seed`).
+ * Production seed = gateway auth atoms + the document collections (other CMS fixtures stay on `/next/seed`).
  * Opt into CMS MCP surface via `ERPAX_MCP_EXTRA` or `ERPAX_MCP_INCLUDE_CMS=1`.
  */
 export function mcpSeedCollectionSlugs(
@@ -73,6 +82,7 @@ export function mcpSeedCollectionSlugs(
   for (const slug of [
     ...(includeCms ? SEED_COLLECTION_SLUGS : []),
     ...MCP_GATEWAY_SEED_SLUGS,
+    ...mcpDocumentSlugs(),
     ...mcpExtraSlugs(env),
   ]) {
     if (seen.has(slug)) continue
@@ -112,4 +122,54 @@ export function mcpGlobalsConfig(
   return Object.fromEntries(
     mcpSeedGlobalSlugs().map((slug) => [slug, { enabled: true } as const]),
   ) as Partial<Record<GlobalSlug, { enabled: true }>>
+}
+
+// ─── the custom tools: the erpax families handed through the plugin's own `mcp.tools` door ───────
+// The live /api/mcp served 844 CRUD tools and no erpax.* family until this; the liveness test had
+// asked the factory. Wire-named (Anthropic's tool grammar has no dot), mode-gated, collisions refused.
+
+/** The plugin's own custom-tool shape (`mcp.tools[]` in @payloadcms/plugin-mcp). */
+export interface GatewayTool {
+  readonly name: string
+  readonly description: string
+  readonly parameters: z.ZodRawShape
+  handler(args: Record<string, unknown>, req: PayloadRequest, _extra: unknown): Promise<{ content: Array<{ text: string; type: 'text' }> }>
+}
+
+/** What the corpus builds: the same contract, named by its dotted address. */
+export interface CorpusTool {
+  readonly name: string
+  readonly description: string
+  readonly parameters: z.ZodRawShape
+  handler(args: Record<string, unknown>, req: PayloadRequest): Promise<{ content: Array<{ text: string; type: 'text' }> }>
+}
+
+/** The grammar a tool name must satisfy on the wire. */
+export const WIRE_NAME = /^[A-Za-z0-9_-]{1,128}$/
+
+/** `erpax.gate.coil` → `erpax_gate_coil`; refuses a name the wire grammar would still reject. */
+export function wireName(name: string): string {
+  const wire = name.replace(/\./g, '_')
+  if (!WIRE_NAME.test(wire)) throw new Error(`tool name not expressible on the wire: ${name}`)
+  return wire
+}
+
+/** Whether the families ride the gateway here — full mode yes; the lean seed only by `ERPAX_MCP_TOOLS=1`. */
+export function customToolsEnabled(env: McpEnv = process.env): boolean {
+  if (env.ERPAX_MCP_TOOLS === '0' || env.ERPAX_MCP_TOOLS === 'false') return false
+  if (env.ERPAX_MCP_TOOLS === '1' || env.ERPAX_MCP_TOOLS === 'true') return true
+  return mcpSeedMode(env) === 'full'
+}
+
+/** The corpus tools as the plugin wants them; two addresses collapsing to one wire name are refused, never shadowed. */
+export function gatewayTools(tools: readonly CorpusTool[], env: McpEnv = process.env): GatewayTool[] {
+  if (!customToolsEnabled(env)) return []
+  const seen = new Map<string, string>()
+  return tools.map((t) => {
+    const name = wireName(t.name)
+    const prior = seen.get(name)
+    if (prior !== undefined && prior !== t.name) throw new Error(`wire-name collision: ${prior} and ${t.name} both cross as ${name}`)
+    seen.set(name, t.name)
+    return { name, description: `[${t.name}] ${t.description}`, parameters: t.parameters, handler: (args, req) => t.handler(args, req) }
+  })
 }

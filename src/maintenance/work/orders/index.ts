@@ -32,6 +32,21 @@ import { standardCollectionHooks } from '@/standard/collection/hook'
 import { autoSetTimestamp } from '@/auto/set/timestamp'
 import { accountingCollectionAccess } from '@/auth'
 import { currencyField, statusField, notesField, auditFields, referenceField, unitOfMeasureField } from '@/base/accounting/field'
+import { preset, type Preset } from '@/preset'
+
+/** The stages in which the document is still a request: reported, not yet work someone has planned. */
+export const requestStages = (): string[] => ['new', 'triaged', 'on_hold', 'rejected', 'duplicate']
+
+/** The stages in which it is work being carried out. */
+export const workStages = (): string[] => ['planned', 'scheduled', 'dispatched', 'in_progress', 'awaiting_parts', 'awaiting_inspection', 'completed', 'cancelled', 'closed']
+
+/** The two lists that stand where two collections stood. */
+export function maintenancePresets(): Preset[] {
+  return [
+    preset('Requests', 'maintenance-work-orders', { status: { in: requestStages() } }, ['reference', 'subject', 'priority', 'space', 'reportedAt', 'status']),
+    preset('Work orders', 'maintenance-work-orders', { status: { in: workStages() } }, ['reference', 'workType', 'priority', 'property', 'scheduledStartAt', 'totalCost', 'status']),
+  ]
+}
 
 const MaintenanceWorkOrders: CollectionConfig = {
   slug: 'maintenance-work-orders',
@@ -42,11 +57,38 @@ const MaintenanceWorkOrders: CollectionConfig = {
     description:
       'CMMS execution row per ISO 55000 work-management. Consumes parts (inventory-movements) + labour (time-entries) and posts cost as expense or capex.',
   },
+  enableQueryPresets: true,
   access: accountingCollectionAccess({ feature: 'facility_management' }),
   fields: [
     referenceField({ description: 'Sequential work-order reference (e.g. `WO-2026-04-001`).' }),
-    { name: 'request', type: 'relationship', relationTo: 'maintenance-requests', index: true,
-      admin: { description: 'Source request (when promoted from a ticket).' } },
+    // The request stage — who reported it, when, and what triage decided. A maintenance request is
+    // this document before anyone has planned the work, not a second collection.
+    { name: 'reportedBy', type: 'relationship', relationTo: 'users',
+      admin: { description: 'User who raised the request (occupant / FM operator / sensor-fed system user).' } },
+    { name: 'reportedByName', type: 'text',
+      admin: { description: 'Free-text name (for anonymous portal submissions).' } },
+    { name: 'reportedByEmail', type: 'email',
+      admin: { description: 'Email for status notifications.' } },
+    { name: 'reportedAt', type: 'date', index: true,
+      admin: { description: 'When the request was raised.' } },
+    { name: 'targetResolutionAt', type: 'date',
+      admin: { description: 'SLA target resolution time — derived from priority + service-catalog rule.' } },
+    {
+      name: 'photos',
+      type: 'array',
+      labels: { singular: 'Photo', plural: 'Photos' },
+      admin: { description: 'Optional photo evidence (URLs in R2 / object storage).' },
+      fields: [
+        { name: 'url', type: 'text', required: true },
+        { name: 'caption', type: 'text', localized: true },
+      ],
+    },
+    { name: 'triagedBy', type: 'relationship', relationTo: 'users',
+      admin: { description: 'FM operator who triaged the request.' } },
+    { name: 'triagedAt', type: 'date', admin: { readOnly: true } },
+    { name: 'closedAt', type: 'date', admin: { readOnly: true } },
+    { name: 'closureNote', type: 'textarea',
+      admin: { description: 'Why closed (resolved / duplicate / not actionable / out of scope).' } },
     { name: 'subject', type: 'text', localized: true, required: true },
     { name: 'description', type: 'textarea', localized: true },
     {
@@ -64,6 +106,8 @@ const MaintenanceWorkOrders: CollectionConfig = {
         { label: 'Refurbishment / Major Overhaul (capex)', value: 'refurbishment' },
         { label: 'Cleaning / Janitorial', value: 'cleaning' },
         { label: 'Move / Setup', value: 'move' },
+        { label: 'Health & Safety', value: 'safety' },
+        { label: 'Other', value: 'other' },
       ],
     },
     {
@@ -98,7 +142,7 @@ const MaintenanceWorkOrders: CollectionConfig = {
       admin: { description: 'When work targets a bookable resource (vehicle / equipment / room) — drives blocking of bookings during the window.' } },
     { name: 'assignedTo', type: 'relationship', relationTo: 'employees',
       admin: { description: 'FM technician or maintenance lead.' } },
-    { name: 'vendor', type: 'relationship', relationTo: 'vendors',
+    { name: 'vendor', type: 'relationship', relationTo: 'parties',
       admin: { description: 'External contractor (when outsourced).' } },
     { name: 'scheduledStartAt', type: 'date',
       admin: { description: 'Planned start.' } },
@@ -163,6 +207,12 @@ const MaintenanceWorkOrders: CollectionConfig = {
       admin: { readOnly: true, description: 'JE posted on completion (Dr Maintenance Expense / Cr Inventory + Accruals; or Dr PPE for capitalised).' } },
     statusField(
       [
+        // The request stages — reported, before the work is planned.
+        { label: 'Request — new', value: 'new' },
+        { label: 'Request — triaged', value: 'triaged' },
+        { label: 'Request — on hold', value: 'on_hold' },
+        { label: 'Request — rejected', value: 'rejected' },
+        { label: 'Request — duplicate', value: 'duplicate' },
         { label: 'Planned', value: 'planned' },
         { label: 'Scheduled', value: 'scheduled' },
         { label: 'Dispatched', value: 'dispatched' },
@@ -181,6 +231,9 @@ const MaintenanceWorkOrders: CollectionConfig = {
   hooks: standardCollectionHooks('maintenance-work-orders', { beforeChange: [autoSetTimestamp('actualStartAt', (d) => (d as { status?: string }).status === 'in_progress'), autoSetTimestamp('actualEndAt', (d) => {
         const s = (d as { status?: string }).status
         return s === 'completed' || s === 'closed'
+      }), autoSetTimestamp('triagedAt', (d) => (d as { status?: string }).status === 'triaged'), autoSetTimestamp('closedAt', (d) => {
+        const s = (d as { status?: string }).status
+        return s === 'rejected' || s === 'duplicate' || s === 'closed'
       })] }),
   timestamps: true,
 }

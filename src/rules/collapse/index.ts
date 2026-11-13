@@ -159,9 +159,7 @@ export function subsets(cwd: string = process.cwd()): Subset[] {
  * the SHAPE verdict beside it is the theorem the config decides.
  */
 export const POLARITY_CANDIDATES: readonly (readonly [string, string, string])[] = [
-  ['customers', 'vendors', 'party: seller ↔ buyer'],
   ['sales-orders', 'purchase-orders', 'order: sell ↔ buy'],
-  ['quotes', 'vendor-quotes', 'quote: outbound ↔ inbound'],
   ['shipments', 'goods-receipts', 'goods: out ↔ in'],
   ['sales', 'returns', 'flow: sale ↔ reversal'],
   ['payments', 'receipts', 'money: paid ↔ received'],
@@ -187,7 +185,7 @@ export interface InversePair {
  * (`payments ↔ receipts` 0.04) — two tables that rhyme, not one table seen twice. The theorem refutes the eye:
  * naming a pair by meaning does NOT make it a merge; the shapes say which reads are real.
  *
- * @invariant `customers ↔ vendors` is the only declared pair whose shapes collapse (verdict 'theorem')
+ * @invariant no declared pair's shapes collapse any more — the one that did, customers ↔ vendors, was merged into `parties`
  * @invariant a declared pair is never asserted a merge — the verdict is computed from shape, never from the name
  */
 export function inversePairs(cwd: string = process.cwd()): InversePair[] {

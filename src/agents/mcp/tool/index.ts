@@ -81,6 +81,8 @@ export { buildQuantumTools } from './quantum'
 export { buildGateTools } from './gate'
 /** The surface read as trinity families — measure · involute · act — and the leg each still lacks. */
 export { buildFamilyTools } from '@/agents/mcp/family'
+/** The keyless public inference doors — measure · cross · decide; the remote agent the frontier fuses. */
+export { buildPublicTools } from '@/ai/public'
 export { buildMillenniumTools } from './millennium'
 
 /** @index-cross.foldback child=agents/mcp/tool parent=agents/mcp — this cross folds back into its parent. */

@@ -37,12 +37,7 @@ async function fetchAuditCount(
   const where: Where = { createdAt: { greater_than: since.toISOString() } }
   if (tenantId !== undefined) where.tenant = { equals: tenantId }
   try {
-    const result = await payload.find({
-      collection: 'journal-entries',
-      where,
-      limit: 0,
-      overrideAccess: true,
-    })
+    const result = await payload.count({ collection: 'journal-entries', where, overrideAccess: true })
     return result.totalDocs
   } catch {
     return 0

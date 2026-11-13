@@ -5,7 +5,7 @@ import { paperMetadata } from '@/publish/paper'
 import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { assertResultsUnique, citationGraph, duplicateResults, foreignCollisions, normaliseStatement, paperInputs, publishableResults, relatedIdentifiers, resultManifest, resultUuid, slugOf, statementAddress, statementFixture, type PublishableResult } from '@/publish/registry'
+import { assertResultsUnique, citationGraph, duplicateResults, foreignCollisions, normaliseStatement, paperInputs, publicationPosts, publicationsCategory, publishableResults, relatedIdentifiers, resultManifest, resultUuid, slugOf, statementAddress, statementFixture, type PublishableResult } from '@/publish/registry'
 
 const atom = (law: string | null, boundary: string | null, gate: boolean, extra = ''): Record<string, string> => ({
   'SKILL.md': [
@@ -266,5 +266,37 @@ describe('publish/registry — the shared key must be shared, not merely named',
     const first = publishableResults(process.cwd())[0]!
     expect(first.slug).toBe('access-standard')
     expect(statementAddress(first.claim)).toBe('9b7cc563-1d97-8dc2-b439-32322d3b9987')
+  })
+})
+
+describe('publish/registry — every result is a post, not a page built into the bundle', () => {
+  const result = (slug: string, composes: string[] = []): PublishableResult => ({
+    atomPath: `rules/${slug}`, uuid: `u-${slug}`, title: slug.toUpperCase(), slug, claim: `**claim** of ${slug}`,
+    boundary: `boundary of ${slug}`, method: `tsx ${slug}`, standards: ['ISO 1'], composes, proof: null,
+    links: [{ rel: 'source', url: 'https://example.org/x' }],
+  })
+  const posts = publicationPosts([result('b', ['a', 'missing']), result('a')])
+
+  it('one post per result, each based on the nested page of its atom', () => {
+    expect(posts.map((p) => p.slug)).toEqual(['a', 'b'])
+    expect(posts.find((p) => p.slug === 'b')!.pages).toEqual(['rules-b'])
+  })
+
+  it('cites only results that are themselves published, and describes itself in plain text', () => {
+    const b = posts.find((p) => p.slug === 'b')!
+    expect(b.related).toEqual(['a'])
+    expect(b.description).toBe('claim of b')
+    expect(b.markdown).toContain('## What this does not prove')
+  })
+
+  it('addresses a post by content — an amended claim moves it, an unchanged one does not', () => {
+    const again = publicationPosts([result('b', ['a', 'missing']), result('a')])
+    const amended = publicationPosts([{ ...result('a'), claim: 'amended' }])
+    expect(again.map((p) => p.content)).toEqual(posts.map((p) => p.content))
+    expect(amended[0]!.content).not.toBe(posts.find((p) => p.slug === 'a')!.content)
+  })
+
+  it('files them under one named category', () => {
+    expect(publicationsCategory()).toBe('Publications')
   })
 })

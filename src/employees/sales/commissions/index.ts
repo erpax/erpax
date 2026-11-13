@@ -42,7 +42,7 @@ const SalesCommissions: CollectionConfig = {
     { name: 'opportunity', type: 'relationship', relationTo: 'opportunities', required: true, index: true },
     { name: 'contract', type: 'relationship', relationTo: 'contracts', index: true,
       admin: { description: 'Contract created on close-won (drives the amortisation period).' } },
-    { name: 'customer', type: 'relationship', relationTo: 'customers' },
+    { name: 'customer', type: 'relationship', relationTo: 'parties' },
     { name: 'closedWonDate', type: 'date', required: true },
     currencyField(),
     {

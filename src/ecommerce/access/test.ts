@@ -15,3 +15,18 @@ describe('ecommerce/access — the canonical entry point', () => {
     expect(Object.keys(barrel).sort()).toEqual(['adminOnlyFieldAccess', 'adminOrPublishedStatus', 'commerceHasCustomerRole', 'commerceHasStaffRole', 'commerceHasTenantAdminRole', 'customerOnlyFieldAccess', 'isAdmin', 'isCustomer', 'isDocumentOwner'])
   })
 })
+
+// The products read rule: an anonymous list is a list. A refusal here became a 500 on the page.
+describe('ecommerce/access — an anonymous products read is a filter, never a refusal', () => {
+  it('scopes to published rows of public tenants, and matches nothing when there are none', async () => {
+    const { vi } = await import('vitest')
+    const ids: number[][] = [[], [7]]
+    vi.doMock('@/allow/public/read/tenant', () => ({ getAllowPublicReadTenantIds: async () => ids.shift() }))
+    vi.resetModules()
+    const { adminOrPublishedStatus } = await import('@/ecommerce/access/adminOrPublishedStatus')
+    const req = { user: null, payload: {} } as never
+    expect(await adminOrPublishedStatus({ req } as never)).toEqual({ and: [{ _status: { equals: 'published' } }, { tenant: { in: [] } }] })
+    expect(await adminOrPublishedStatus({ req } as never)).toEqual({ and: [{ _status: { equals: 'published' } }, { tenant: { in: [7] } }] })
+    vi.doUnmock('@/allow/public/read/tenant')
+  })
+})

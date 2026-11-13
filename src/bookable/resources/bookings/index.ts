@@ -57,7 +57,7 @@ const Bookings: CollectionConfig = {
         { label: 'Address (anonymous walk-in)', value: 'address' },
       ],
     },
-    { name: 'customer', type: 'relationship', relationTo: 'customers',
+    { name: 'customer', type: 'relationship', relationTo: 'parties',
       admin: { description: 'Required when guestType = `customer`.', condition: (d) => (d as { guestType?: string })?.guestType === 'customer' } },
     { name: 'employee', type: 'relationship', relationTo: 'employees',
       admin: { description: 'Required when guestType = `employee`.', condition: (d) => (d as { guestType?: string })?.guestType === 'employee' } },

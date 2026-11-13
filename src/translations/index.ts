@@ -12,10 +12,9 @@
  * Resolution order at request time (highest → lowest priority):
  *
  *   1. `translations` row scoped to (tenant, scope, key) — TENANT OVERRIDE
- *   2. `mcp-tool-metadata` row (Slice ZZZZZZZZ) — PLATFORM-DEFAULT TRANSLATION
- *   3. Code's English fallback (LocalizedString in tools/<area>.ts) — STATIC
+ *   2. Code's English fallback (LocalizedString in tools/<area>.ts) — STATIC
  *
- * Both 1 and 2 use Payload's `localized: true` field — the request's
+ * Layer 1 uses Payload's `localized: true` field — the request's
  * `Accept-Language` selects the locale; the layer that matches first
  * wins. No code rebuild required to add a translation at any layer.
  *
@@ -41,7 +40,6 @@
  * @audit Conservation Law 8 content-uuid
  * @audit Conservation Law 10 referential-harmony (relatedTo back to the source row)
  * @audit ISO 19011:2018 §6.4.6 (translation changes audit-trailed)
- * @see ./McpToolMetadata.ts (platform-default translation layer)
  * @see ../../services/agents/mcp/i18n.ts (runtime resolution order)
  */
 import { createAccountingCollection } from '@/factory'
@@ -53,7 +51,7 @@ export default createAccountingCollection({
   useAsTitle: 'translationKey',
   defaultColumns: ['translationKey', 'scope', 'enabled', 'updatedAt'],
   description:
-    'Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > mcp-tool-metadata > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).',
+    'Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).',
 
   standards: [
     'W3C-HTTP-Content-Language',
@@ -132,7 +130,7 @@ export default createAccountingCollection({
       admin: { description: 'Which platform-layer row this overrides. Optional — populated by the resolver when an override is created from the admin UI.' },
       fields: [
         { name: 'collection', type: 'text',
-          admin: { description: 'e.g. "mcp-tool-metadata" or "_static" when overriding a code default.' } },
+          admin: { description: 'e.g. "_static" when overriding a code default.' } },
         { name: 'docId', type: 'text',
           admin: { description: 'Document id of the platform-default row, when applicable.' } },
         { name: 'platformDefault', type: 'textarea', localized: true,

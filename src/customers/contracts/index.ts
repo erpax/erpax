@@ -121,7 +121,7 @@ const Contracts: CollectionConfig = {
     // Slice XXXXXXXX-b (2026-05-11): retargeted from 'addresses' → 'customers'.
     // IFRS-15 §10 contract-with-customer requires the customer party itself.
     // The address sits on the customer row (billingAddress / shippingAddress).
-    { name: 'customer', type: 'relationship', relationTo: 'customers', required: true },
+    { name: 'customer', type: 'relationship', relationTo: 'parties', required: true },
     { name: 'title', type: 'text', localized: true, required: true },
     { name: 'effectiveFrom', type: 'date', required: true },
     { name: 'effectiveTo', type: 'date' },

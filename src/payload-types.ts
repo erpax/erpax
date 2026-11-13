@@ -105,7 +105,6 @@ export interface Config {
     categories: Category;
     chat: Chat;
     'closing-entries': ClosingEntry;
-    'commitments-and-contingencies': CommitmentsAndContingency;
     'compliance-deadlines': ComplianceDeadline;
     'compliance-frameworks': ComplianceFramework;
     'compliance-gaps': ComplianceGap;
@@ -126,7 +125,6 @@ export interface Config {
     'csrd-disclosures': CsrdDisclosure;
     'currency-rates': CurrencyRate;
     'customer-segments': CustomerSegment;
-    customers: Customer;
     'customs-declarations': CustomsDeclaration;
     'data-processing-activities': DataProcessingActivity;
     'data-subject-requests': DataSubjectRequest;
@@ -177,11 +175,9 @@ export interface Config {
     'lot-variants': LotVariant;
     'lot-work-phases': LotWorkPhase;
     lots: Lot;
-    'maintenance-requests': MaintenanceRequest;
     'maintenance-work-orders': MaintenanceWorkOrder;
     'management-assessment-icfr': ManagementAssessmentIcfr;
     'management-certifications': ManagementCertification;
-    'mcp-tool-metadata': McpToolMetadatum;
     media: Media;
     memories: Memory;
     messages: Message;
@@ -194,6 +190,7 @@ export interface Config {
     packages: Package;
     packs: Pack;
     pages: Page;
+    parties: Party;
     'payment-allocations': PaymentAllocation;
     'payment-methods': PaymentMethod;
     'payment-runs': PaymentRun;
@@ -218,11 +215,9 @@ export interface Config {
     'purchase-orders': PurchaseOrder;
     'purchase-requisitions': PurchaseRequisition;
     'quality-inspections': QualityInspection;
-    quotes: Quote;
     receipts: Receipt;
     'recruiting-pipeline': RecruitingPipeline;
     'recurring-journals': RecurringJournal;
-    refunds: Refund;
     'regulatory-deferral-accounts': RegulatoryDeferralAccount;
     'regulatory-reports': RegulatoryReport;
     'related-party-transactions': RelatedPartyTransaction;
@@ -270,7 +265,6 @@ export interface Config {
     users: User;
     'vendor-quotes': VendorQuote;
     'vendor-scorecards': VendorScorecard;
-    vendors: Vendor;
     'warehouse-locations': WarehouseLocation;
     'wip-snapshots': WipSnapshot;
     'work-centers': WorkCenter;
@@ -360,7 +354,6 @@ export interface Config {
     categories: CategoriesSelect<false> | CategoriesSelect<true>;
     chat: ChatSelect<false> | ChatSelect<true>;
     'closing-entries': ClosingEntriesSelect<false> | ClosingEntriesSelect<true>;
-    'commitments-and-contingencies': CommitmentsAndContingenciesSelect<false> | CommitmentsAndContingenciesSelect<true>;
     'compliance-deadlines': ComplianceDeadlinesSelect<false> | ComplianceDeadlinesSelect<true>;
     'compliance-frameworks': ComplianceFrameworksSelect<false> | ComplianceFrameworksSelect<true>;
     'compliance-gaps': ComplianceGapsSelect<false> | ComplianceGapsSelect<true>;
@@ -381,7 +374,6 @@ export interface Config {
     'csrd-disclosures': CsrdDisclosuresSelect<false> | CsrdDisclosuresSelect<true>;
     'currency-rates': CurrencyRatesSelect<false> | CurrencyRatesSelect<true>;
     'customer-segments': CustomerSegmentsSelect<false> | CustomerSegmentsSelect<true>;
-    customers: CustomersSelect<false> | CustomersSelect<true>;
     'customs-declarations': CustomsDeclarationsSelect<false> | CustomsDeclarationsSelect<true>;
     'data-processing-activities': DataProcessingActivitiesSelect<false> | DataProcessingActivitiesSelect<true>;
     'data-subject-requests': DataSubjectRequestsSelect<false> | DataSubjectRequestsSelect<true>;
@@ -432,11 +424,9 @@ export interface Config {
     'lot-variants': LotVariantsSelect<false> | LotVariantsSelect<true>;
     'lot-work-phases': LotWorkPhasesSelect<false> | LotWorkPhasesSelect<true>;
     lots: LotsSelect<false> | LotsSelect<true>;
-    'maintenance-requests': MaintenanceRequestsSelect<false> | MaintenanceRequestsSelect<true>;
     'maintenance-work-orders': MaintenanceWorkOrdersSelect<false> | MaintenanceWorkOrdersSelect<true>;
     'management-assessment-icfr': ManagementAssessmentIcfrSelect<false> | ManagementAssessmentIcfrSelect<true>;
     'management-certifications': ManagementCertificationsSelect<false> | ManagementCertificationsSelect<true>;
-    'mcp-tool-metadata': McpToolMetadataSelect<false> | McpToolMetadataSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     memories: MemoriesSelect<false> | MemoriesSelect<true>;
     messages: MessagesSelect<false> | MessagesSelect<true>;
@@ -449,6 +439,7 @@ export interface Config {
     packages: PackagesSelect<false> | PackagesSelect<true>;
     packs: PacksSelect<false> | PacksSelect<true>;
     pages: PagesSelect<false> | PagesSelect<true>;
+    parties: PartiesSelect<false> | PartiesSelect<true>;
     'payment-allocations': PaymentAllocationsSelect<false> | PaymentAllocationsSelect<true>;
     'payment-methods': PaymentMethodsSelect<false> | PaymentMethodsSelect<true>;
     'payment-runs': PaymentRunsSelect<false> | PaymentRunsSelect<true>;
@@ -473,11 +464,9 @@ export interface Config {
     'purchase-orders': PurchaseOrdersSelect<false> | PurchaseOrdersSelect<true>;
     'purchase-requisitions': PurchaseRequisitionsSelect<false> | PurchaseRequisitionsSelect<true>;
     'quality-inspections': QualityInspectionsSelect<false> | QualityInspectionsSelect<true>;
-    quotes: QuotesSelect<false> | QuotesSelect<true>;
     receipts: ReceiptsSelect<false> | ReceiptsSelect<true>;
     'recruiting-pipeline': RecruitingPipelineSelect<false> | RecruitingPipelineSelect<true>;
     'recurring-journals': RecurringJournalsSelect<false> | RecurringJournalsSelect<true>;
-    refunds: RefundsSelect<false> | RefundsSelect<true>;
     'regulatory-deferral-accounts': RegulatoryDeferralAccountsSelect<false> | RegulatoryDeferralAccountsSelect<true>;
     'regulatory-reports': RegulatoryReportsSelect<false> | RegulatoryReportsSelect<true>;
     'related-party-transactions': RelatedPartyTransactionsSelect<false> | RelatedPartyTransactionsSelect<true>;
@@ -525,7 +514,6 @@ export interface Config {
     users: UsersSelect<false> | UsersSelect<true>;
     'vendor-quotes': VendorQuotesSelect<false> | VendorQuotesSelect<true>;
     'vendor-scorecards': VendorScorecardsSelect<false> | VendorScorecardsSelect<true>;
-    vendors: VendorsSelect<false> | VendorsSelect<true>;
     'warehouse-locations': WarehouseLocationsSelect<false> | WarehouseLocationsSelect<true>;
     'wip-snapshots': WipSnapshotsSelect<false> | WipSnapshotsSelect<true>;
     'work-centers': WorkCentersSelect<false> | WorkCentersSelect<true>;
@@ -1261,7 +1249,7 @@ export interface Project {
    */
   name: string;
   description?: string | null;
-  customer?: (string | null) | Customer;
+  customer?: (string | null) | Party;
   /**
    * The award funding this project. Costs book to the project; the project carries the award.
    */
@@ -1343,9 +1331,9 @@ export interface Project {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "customers".
+ * via the `definition` "parties".
  */
-export interface Customer {
+export interface Party {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
@@ -1353,13 +1341,17 @@ export interface Customer {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   /**
-   * Unique customer code (e.g., CUST-0001)
+   * Unique party code (e.g., CUST-0001, VEND-0001)
    */
   code: string;
   /**
    * Display name
    */
   name: string;
+  /**
+   * The sides this party is on. One party may be both.
+   */
+  roles: ('customer' | 'vendor')[];
   /**
    * ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, e-invoicing).
    */
@@ -1372,7 +1364,7 @@ export interface Customer {
     /**
      * Party legal form
      */
-    customerType: 'individual' | 'company';
+    type: 'individual' | 'company' | 'government' | 'non_profit';
     /**
      * Lifecycle status
      */
@@ -1394,7 +1386,7 @@ export interface Customer {
   };
   addresses?: {
     /**
-     * All known addresses for this customer
+     * All known addresses for this party
      */
     addresses?: (string | Address)[] | null;
     /**
@@ -1405,6 +1397,10 @@ export interface Customer {
      * Default shipping address
      */
     shippingAddress?: (string | null) | Address;
+    /**
+     * Default remit-to address for payments
+     */
+    remitToAddress?: (string | null) | Address;
   };
   tax?: {
     /**
@@ -1416,7 +1412,7 @@ export interface Customer {
      */
     vatNumberType?: string | null;
     /**
-     * Tax-exempt customer (e.g., resale certificate)
+     * Tax-exempt party (e.g., resale certificate)
      */
     taxExempt?: boolean | null;
     /**
@@ -1424,9 +1420,25 @@ export interface Customer {
      */
     taxExemptionCertificate?: string | null;
     /**
-     * Default tax code applied on invoices
+     * Default tax code applied on invoices and bills
      */
     defaultTaxCode?: (string | null) | TaxCode;
+    /**
+     * US: subject to IRS Form 1099 reporting
+     */
+    vendor1099Eligible?: boolean | null;
+    /**
+     * IRS 1099 form variant
+     */
+    tax1099FormType?: ('1099_nec' | '1099_misc' | '1099_k' | '1099_int' | '1099_div') | null;
+    /**
+     * Tax ID format
+     */
+    taxIdType?: ('ein' | 'ssn' | 'itin' | 'vat' | 'other') | null;
+    /**
+     * Backup withholding / WHT rate %
+     */
+    withholdingRate?: number | null;
   };
   commercial: {
     /**
@@ -1447,7 +1459,11 @@ export interface Customer {
      */
     creditCurrency?: string | null;
     /**
-     * ISO 4217 default invoicing currency
+     * Preferred disbursement method
+     */
+    preferredPaymentMethod?: ('ach' | 'wire' | 'check' | 'credit_card' | 'sepa' | 'cash' | 'other') | null;
+    /**
+     * ISO 4217 default trading currency
      */
     defaultCurrency: string;
     /**
@@ -1458,6 +1474,36 @@ export interface Customer {
      * Price list / tier identifier
      */
     priceList?: string | null;
+  };
+  bank?: {
+    /**
+     * Account holder name
+     */
+    bankAccountName?: string | null;
+    /**
+     * Bank name
+     */
+    bankName?: string | null;
+    /**
+     * ABA routing (US) / sort code (UK)
+     */
+    bankRoutingNumber?: string | null;
+    /**
+     * Account number (last 4 visible recommended)
+     */
+    bankAccountNumber?: string | null;
+    /**
+     * IBAN (ISO 13616)
+     */
+    bankIban?: string | null;
+    /**
+     * SWIFT/BIC (ISO 9362)
+     */
+    bankSwiftBic?: string | null;
+    /**
+     * ISO 3166-1 alpha-2 country of bank
+     */
+    bankCountryCode?: string | null;
   };
   ledger?: {
     /**
@@ -1472,6 +1518,18 @@ export interface Customer {
      * Default sales-discount contra-revenue account
      */
     defaultDiscountAccount?: (string | null) | GlAccount;
+    /**
+     * Default AP control account (liability)
+     */
+    defaultPayableAccount?: (string | null) | GlAccount;
+    /**
+     * Default expense account on bills
+     */
+    defaultExpenseAccount?: (string | null) | GlAccount;
+    /**
+     * Default withholding-tax payable account
+     */
+    defaultWithholdingAccount?: (string | null) | GlAccount;
   };
   notes?: {
     /**
@@ -2113,6 +2171,10 @@ export interface Page {
     image?: (string | null) | Media;
     description?: string | null;
   };
+  /**
+   * Content address of the seed row this document was loaded from — an unchanged row is not rewritten.
+   */
+  seed?: string | null;
   publishedAt?: string | null;
   /**
    * When enabled, the slug will auto-generate from the title field on save and autosave.
@@ -2160,8 +2222,20 @@ export interface Post {
     };
     [k: string]: unknown;
   };
+  /**
+   * The content field as markdown — computed on read, never stored.
+   */
+  markdown?: string | null;
   relatedPosts?: (string | Post)[] | null;
   categories?: (string | Category)[] | null;
+  /**
+   * The nested pages (documents) this publication is based on.
+   */
+  pages?: (string | Page)[] | null;
+  /**
+   * The product variants this publication is based on.
+   */
+  variants?: (string | Variant)[] | null;
   meta?: {
     title?: string | null;
     /**
@@ -2170,6 +2244,10 @@ export interface Post {
     image?: (string | null) | Media;
     description?: string | null;
   };
+  /**
+   * Content address of the seed row this document was loaded from — an unchanged row is not rewritten.
+   */
+  seed?: string | null;
   publishedAt?: string | null;
   authors?: (string | User)[] | null;
   populatedAuthors?:
@@ -2218,6 +2296,31 @@ export interface Category {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "variants".
+ */
+export interface Variant {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Used for administrative purposes, not shown to customers. This is populated by default.
+   */
+  title?: string | null;
+  product: string | Product;
+  options: (string | VariantOption)[];
+  inventory?: number | null;
+  priceInEUREnabled?: boolean | null;
+  priceInEUR?: number | null;
+  updatedAt: string;
+  createdAt: string;
+  deletedAt?: string | null;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "ContentBlock".
  */
 export interface ContentBlock {
@@ -2239,6 +2342,10 @@ export interface ContentBlock {
           };
           [k: string]: unknown;
         } | null;
+        /**
+         * The richText field as markdown — computed on read, never stored.
+         */
+        markdown?: string | null;
         enableLink?: boolean | null;
         link?: {
           type?: ('reference' | 'custom') | null;
@@ -2513,31 +2620,6 @@ export interface Form {
     | null;
   updatedAt: string;
   createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "variants".
- */
-export interface Variant {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Used for administrative purposes, not shown to customers. This is populated by default.
-   */
-  title?: string | null;
-  product: string | Product;
-  options: (string | VariantOption)[];
-  inventory?: number | null;
-  priceInEUREnabled?: boolean | null;
-  priceInEUR?: number | null;
-  updatedAt: string;
-  createdAt: string;
-  deletedAt?: string | null;
-  _status?: ('draft' | 'published') | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -3065,25 +3147,76 @@ export interface Provision {
    * Nature of the obligation (IAS-37 §85(a) disclosure).
    */
   description: string;
-  provisionType:
-    | 'warranty'
-    | 'restructuring'
-    | 'onerous_contract'
-    | 'environmental'
-    | 'decommissioning'
-    | 'litigation'
-    | 'refund'
-    | 'restoration'
-    | 'other';
+  kind: 'provision' | 'commitment' | 'contingent_liability' | 'contingent_asset' | 'guarantee';
+  /**
+   * What the commitment or contingency arises from (IAS-37 §86 class).
+   */
+  category?:
+    | (
+        | 'capex'
+        | 'purchase'
+        | 'op_lease'
+        | 'litigation'
+        | 'performance_bond'
+        | 'bank_guarantee'
+        | 'pension'
+        | 'environmental'
+        | 'tax_dispute'
+        | 'insurance_recovery'
+        | 'other'
+      )
+    | null;
+  /**
+   * Name of supplier / claimant / beneficiary.
+   */
+  counterparty?: string | null;
+  /**
+   * When the commitment was entered into or the contingency arose.
+   */
+  inceptionDate?: string | null;
+  expectedResolutionDate?: string | null;
+  /**
+   * IAS-37 §23 likelihood scale. A contingent liability that turns probable is owed recognition.
+   */
+  likelihood?: ('remote' | 'possible' | 'probable' | 'virtually_certain') | null;
+  /**
+   * Maximum possible cash outflow if the contingency materialises (IAS-37 §86(a) disclosure).
+   */
+  maximumExposure?: number | null;
+  /**
+   * Probability-weighted expected outflow (cents).
+   */
+  expectedOutflow?: number | null;
+  /**
+   * IFRS-15 §B50 onerous-contract disclosure flag.
+   */
+  isOnerousContractRelated?: boolean | null;
+  /**
+   * IAS-37 §86 disclosure narrative — copy-pasteable into financial-statement notes.
+   */
+  noteText?: string | null;
+  provisionType?:
+    | (
+        | 'warranty'
+        | 'restructuring'
+        | 'onerous_contract'
+        | 'environmental'
+        | 'decommissioning'
+        | 'litigation'
+        | 'refund'
+        | 'restoration'
+        | 'other'
+      )
+    | null;
   /**
    * Reporting entity that recognises this provision.
    */
   legalEntity?: (string | null) | LegalEntity;
   /**
-   * Date the obligation was first recognised on the balance sheet.
+   * Date the obligation was first recognised on the balance sheet — set when it is recognised.
    */
-  recognitionDate: string;
-  period: string | FiscalPeriod;
+  recognitionDate?: string | null;
+  period?: (string | null) | FiscalPeriod;
   /**
    * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
    */
@@ -3091,7 +3224,7 @@ export interface Provision {
   /**
    * IAS-37 §36 best-estimate of expenditure required to settle (cents).
    */
-  bestEstimate: number;
+  bestEstimate?: number | null;
   /**
    * Sum of undiscounted future cash outflows (when timing extends beyond a year).
    */
@@ -3137,7 +3270,8 @@ export interface Provision {
    */
   sourceFinding?: (string | null) | AuditFinding;
   requiresLegalReview?: boolean | null;
-  status?: ('draft' | 'recognised' | 'used' | 'reversed' | 'reclassified') | null;
+  status?:
+    ('disclosed' | 'settled' | 'released' | 'draft' | 'recognised' | 'used' | 'reversed' | 'reclassified') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -3439,7 +3573,7 @@ export interface FixedAsset {
   /**
    * Asset supplier/vendor (IAS-16 §16(a) — directly attributable cost source).
    */
-  supplier?: (string | null) | Vendor;
+  supplier?: (string | null) | Party;
   /**
    * Reference PO number
    */
@@ -3518,189 +3652,6 @@ export interface FixedAsset {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendors".
- */
-export interface Vendor {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Unique vendor code (e.g., VEND-0001)
-   */
-  code: string;
-  /**
-   * Display name
-   */
-  name: string;
-  /**
-   * ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, sanctions screening, e-invoicing).
-   */
-  country?: string | null;
-  identity: {
-    /**
-     * Registered legal name (EN 16931 BT-27)
-     */
-    legalName?: string | null;
-    /**
-     * Party legal form
-     */
-    vendorType: 'individual' | 'company' | 'government' | 'non_profit';
-    /**
-     * Lifecycle status
-     */
-    status: 'active' | 'on_hold' | 'inactive' | 'archived';
-  };
-  contact?: {
-    /**
-     * Primary email
-     */
-    email?: string | null;
-    /**
-     * Primary phone
-     */
-    phone?: string | null;
-    /**
-     * Web site
-     */
-    website?: string | null;
-  };
-  addresses?: {
-    /**
-     * All known addresses for this vendor
-     */
-    addresses?: (string | Address)[] | null;
-    /**
-     * Default remit-to address
-     */
-    remitToAddress?: (string | null) | Address;
-  };
-  tax?: {
-    /**
-     * VAT / Tax ID (EN 16931 BT-31). Auto-classified against the per-country regex registry on save.
-     */
-    vatNumber?: string | null;
-    /**
-     * Auto-stamped — e.g. "VAT (FR)", "EIN", "GSTIN", "EIK / Bulstat".
-     */
-    vatNumberType?: string | null;
-    /**
-     * Tax-exempt vendor
-     */
-    taxExempt?: boolean | null;
-    /**
-     * Default tax code applied on bills
-     */
-    defaultTaxCode?: (string | null) | TaxCode;
-    /**
-     * US: subject to IRS Form 1099 reporting
-     */
-    vendor1099Eligible?: boolean | null;
-    /**
-     * IRS 1099 form variant
-     */
-    tax1099FormType?: ('1099_nec' | '1099_misc' | '1099_k' | '1099_int' | '1099_div') | null;
-    /**
-     * Tax ID format
-     */
-    taxIdType?: ('ein' | 'ssn' | 'itin' | 'vat' | 'other') | null;
-    /**
-     * Backup withholding / WHT rate %
-     */
-    withholdingRate?: number | null;
-  };
-  commercial: {
-    /**
-     * Default payment terms
-     */
-    paymentTerms?:
-      ('due_on_receipt' | 'net_7' | 'net_14' | 'net_30' | 'net_45' | 'net_60' | 'net_90' | 'custom') | null;
-    /**
-     * Custom net days (used when paymentTerms = custom)
-     */
-    paymentTermsDays?: number | null;
-    /**
-     * Preferred disbursement method
-     */
-    preferredPaymentMethod?: ('ach' | 'wire' | 'check' | 'credit_card' | 'sepa' | 'cash' | 'other') | null;
-    /**
-     * ISO 4217 default purchasing currency
-     */
-    defaultCurrency: string;
-    /**
-     * BCP 47 locale
-     */
-    defaultLocale?: string | null;
-  };
-  bank?: {
-    /**
-     * Account holder name
-     */
-    bankAccountName?: string | null;
-    /**
-     * Bank name
-     */
-    bankName?: string | null;
-    /**
-     * ABA routing (US) / sort code (UK)
-     */
-    bankRoutingNumber?: string | null;
-    /**
-     * Account number (last 4 visible recommended)
-     */
-    bankAccountNumber?: string | null;
-    /**
-     * IBAN (ISO 13616)
-     */
-    bankIban?: string | null;
-    /**
-     * SWIFT/BIC (ISO 9362)
-     */
-    bankSwiftBic?: string | null;
-    /**
-     * ISO 3166-1 alpha-2 country of bank
-     */
-    bankCountryCode?: string | null;
-  };
-  ledger?: {
-    /**
-     * Default AP control account (liability)
-     */
-    defaultPayableAccount?: (string | null) | GlAccount;
-    /**
-     * Default expense account on bills
-     */
-    defaultExpenseAccount?: (string | null) | GlAccount;
-    /**
-     * Withholding tax payable account
-     */
-    defaultWithholdingAccount?: (string | null) | GlAccount;
-  };
-  notes?: {
-    /**
-     * Internal notes
-     */
-    note?: string | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "contracts".
  */
 export interface Contract {
@@ -3711,7 +3662,7 @@ export interface Contract {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   contractNumber: string;
-  customer: string | Customer;
+  customer: string | Party;
   title: string;
   effectiveFrom: string;
   effectiveTo?: string | null;
@@ -4099,8 +4050,8 @@ export interface Activity {
   relatedTo: 'lead' | 'opportunity' | 'customer' | 'vendor' | 'project';
   lead?: (string | null) | Lead;
   opportunity?: (string | null) | Opportunity;
-  customer?: (string | null) | Customer;
-  vendor?: (string | null) | Vendor;
+  customer?: (string | null) | Party;
+  vendor?: (string | null) | Party;
   project?: (string | null) | Project;
   description?: string | null;
   outcome?: ('positive' | 'neutral' | 'negative' | 'action_required') | null;
@@ -4170,7 +4121,7 @@ export interface Lead {
   estimatedCloseDate?: string | null;
   assignedTo?: (string | null) | User;
   convertedOpportunity?: (string | null) | Opportunity;
-  convertedCustomer?: (string | null) | Customer;
+  convertedCustomer?: (string | null) | Party;
   convertedAt?: string | null;
   /**
    * GDPR Art.7 marketing-consent record (if applicable).
@@ -4202,7 +4153,7 @@ export interface Opportunity {
   /**
    * Existing customer (for upsell/cross-sell). Null for net-new from lead.
    */
-  customer?: (string | null) | Customer;
+  customer?: (string | null) | Party;
   opportunityOwner: string | User;
   stage:
     | 'qualification'
@@ -6440,7 +6391,7 @@ export interface Batch {
   /**
    * Supplier of the lot (purchased origin).
    */
-  supplier?: (string | null) | Vendor;
+  supplier?: (string | null) | Party;
   /**
    * Supplier's own lot/batch number — preserves their traceability chain.
    */
@@ -7544,7 +7495,7 @@ export interface Shipment {
 /**
  * Customer-side order register (O2C). Distinct from purchase-orders (P2P). UN-EDIFACT ORDERS d96a + UBL-2.1 Order + Peppol BIS-3.0 Order. IFRS-15 §10 contract-with-customer feed.
  *
- * — diamond-uuid: 154f727a-568d-8ca4-a2e5-e124b331a01a
+ * — diamond-uuid: c4131d6d-7909-8973-8a22-d79e6218e5d2
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "sales-orders".
@@ -7560,19 +7511,27 @@ export interface SalesOrder {
    * Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents.
    */
   orderNumber: string;
-  customer: string | Customer;
+  customer: string | Party;
   /**
    * Buyer-side PO number / reference. EN-16931 §BT-13 / Peppol cbc:BuyerReference.
    */
   customerOrderReference?: string | null;
   /**
-   * Originating quote (when this order converts a quote — IFRS-15 §10 contract inception).
-   */
-  quote?: (string | null) | Quote;
-  /**
    * Parent contract (when the order draws from a master contract — IFRS-15 §17 combined contracts).
    */
   contract?: (string | null) | Contract;
+  /**
+   * When the quote was sent to the customer.
+   */
+  sentAt?: string | null;
+  /**
+   * Until when the quoted terms hold.
+   */
+  expiresAt?: string | null;
+  /**
+   * When the customer accepted — IFRS-15 §10 contract inception.
+   */
+  acceptedAt?: string | null;
   /**
    * Buyer submission / acceptance date. Drives revenue-period determination.
    */
@@ -7655,6 +7614,11 @@ export interface SalesOrder {
   status?:
     | (
         | 'draft'
+        | 'pending_approval'
+        | 'sent'
+        | 'accepted'
+        | 'rejected'
+        | 'expired'
         | 'submitted'
         | 'confirmed'
         | 'partially_fulfilled'
@@ -7665,47 +7629,6 @@ export interface SalesOrder {
         | 'on_hold'
       )
     | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "quotes".
- */
-export interface Quote {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  quoteNumber: string;
-  customer: string | Customer;
-  issuedAt?: string | null;
-  expiresAt?: string | null;
-  lines: {
-    item?: (string | null) | Item;
-    description: string;
-    quantity: number;
-    unitPrice: number;
-    lineTotal?: number | null;
-    id?: string | null;
-  }[];
-  subtotal?: number | null;
-  taxAmount?: number | null;
-  totalAmount?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  status?: ('draft' | 'pending_approval' | 'sent' | 'accepted' | 'rejected' | 'expired' | 'converted') | null;
-  sentAt?: string | null;
-  acceptedAt?: string | null;
-  convertedToOrder?: (string | null) | SalesOrder;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -7831,7 +7754,7 @@ export interface KycCheck {
   tenant?: (string | null) | Tenant;
   checkId: string;
   subjectType: 'customer' | 'vendor' | 'beneficial_owner' | 'signatory';
-  subject: string | Customer;
+  subject: string | Party;
   cddLevel: 'sdd' | 'cdd' | 'edd';
   identityDocuments?:
     | {
@@ -8779,7 +8702,7 @@ export interface Booking {
   /**
    * Required when guestType = `customer`.
    */
-  customer?: (string | null) | Customer;
+  customer?: (string | null) | Party;
   /**
    * Required when guestType = `employee`.
    */
@@ -9274,12 +9197,8 @@ export interface Case {
               value: string | User;
             }
           | {
-              relationTo: 'customers';
-              value: string | Customer;
-            }
-          | {
-              relationTo: 'vendors';
-              value: string | Vendor;
+              relationTo: 'parties';
+              value: string | Party;
             }
           | {
               relationTo: 'employees';
@@ -9656,84 +9575,6 @@ export interface PeriodLock {
   /**
    * Additional notes for this period
    */
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IAS-37 §86-92 + IFRS-15 §B50 off-balance-sheet disclosure register. Commitments (capex, purchase, lease) + contingent liabilities (lawsuits, guarantees) + contingent assets (insurance recoveries).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "commitments-and-contingencies".
- */
-export interface CommitmentsAndContingency {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  reference: string;
-  description: string;
-  kind: 'commitment' | 'contingent_liability' | 'contingent_asset' | 'guarantee';
-  category:
-    | 'capex'
-    | 'purchase'
-    | 'op_lease'
-    | 'litigation'
-    | 'performance_bond'
-    | 'bank_guarantee'
-    | 'pension'
-    | 'environmental'
-    | 'tax_dispute'
-    | 'insurance_recovery'
-    | 'other';
-  /**
-   * Reporting legal entity per IFRS-10 §B86 (distinct from `tenants` DB partition).
-   */
-  legalEntity?: (string | null) | LegalEntity;
-  /**
-   * Name of supplier / claimant / beneficiary.
-   */
-  counterparty?: string | null;
-  inceptionDate: string;
-  expectedResolutionDate?: string | null;
-  /**
-   * IAS-37 §23 likelihood scale. Probable triggers reclassification to `provisions`.
-   */
-  likelihood?: ('remote' | 'possible' | 'probable' | 'virtually_certain') | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Maximum possible cash outflow if the contingency materialises (IAS-37 §86(a) disclosure).
-   */
-  maximumExposure: number;
-  /**
-   * Probability-weighted expected outflow (cents).
-   */
-  expectedOutflow?: number | null;
-  /**
-   * IAS-37 §86(b) reimbursement disclosure.
-   */
-  reimbursementExpected?: number | null;
-  /**
-   * IFRS-15 §B50 onerous-contract disclosure flag.
-   */
-  isOnerousContractRelated?: boolean | null;
-  /**
-   * Set when likelihood reaches probable and a provision is booked.
-   */
-  recognisedAsProvision?: (string | null) | Provision;
-  /**
-   * IAS-37 §86 disclosure narrative — copy-pasteable into financial-statement notes.
-   */
-  noteText?: string | null;
-  status?: ('active' | 'settled' | 'released' | 'reclassified') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -10418,7 +10259,7 @@ export interface CreditMemo {
   /**
    * Party receiving the credit (IFRS-15 §B22 contra-revenue counterparty).
    */
-  customer?: (string | null) | Customer;
+  customer?: (string | null) | Party;
   /**
    * Original invoice being credited (optional for general write-offs).
    */
@@ -10432,6 +10273,10 @@ export interface CreditMemo {
     | 'tax_adjustment'
     | 'other';
   reasonDetail?: string | null;
+  /**
+   * Originating sales order, when the credit skips the invoice (ISO-20022 pacs.004 end-to-end trace).
+   */
+  order?: (string | null) | SalesOrder;
   /**
    * Credit amount in cents.
    */
@@ -10453,6 +10298,31 @@ export interface CreditMemo {
    * When cash refund was paid.
    */
   settledAt?: string | null;
+  /**
+   * Cash paid back against this memo — one line per payment, so a partial refund is one more line.
+   */
+  refunds?:
+    | {
+        /**
+         * Amount paid back, in cents.
+         */
+        amount: number;
+        method: 'stripe' | 'ach' | 'sepa' | 'check' | 'cash' | 'store_credit';
+        /**
+         * Stripe refund ID for cross-system traceability.
+         */
+        stripeRefundId?: string | null;
+        status: 'pending' | 'issued' | 'settled' | 'failed' | 'voided';
+        refundedAt?: string | null;
+        settledAt?: string | null;
+        failureReason?: string | null;
+        /**
+         * GL posting of the cash leaving (Dr Refunds Payable / Cr Cash).
+         */
+        journalEntry?: (string | null) | JournalEntry;
+        id?: string | null;
+      }[]
+    | null;
   /**
    * GL posting that booked this credit.
    */
@@ -14157,107 +14027,6 @@ export interface WorkPhase {
   createdAt: string;
 }
 /**
- * IWMS / CMMS service request per ISO 41001 §8.1. Occupant-raised tickets that may become maintenance work orders.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "maintenance-requests".
- */
-export interface MaintenanceRequest {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Sequential request reference (e.g. `MR-2026-04-001`).
-   */
-  reference: string;
-  /**
-   * Short summary (e.g. "Leaking tap room 201").
-   */
-  subject: string;
-  description: string;
-  requestType:
-    | 'corrective'
-    | 'preventive'
-    | 'predictive'
-    | 'improvement'
-    | 'compliance'
-    | 'safety'
-    | 'cleaning'
-    | 'move'
-    | 'other';
-  priority: 'p1' | 'p2' | 'p3' | 'p4';
-  /**
-   * Property the issue is at.
-   */
-  property?: (string | null) | Property;
-  /**
-   * Specific space (room / desk / zone), if known.
-   */
-  space?: (string | null) | Space;
-  /**
-   * Specific asset (HVAC, lift, machinery) the issue concerns.
-   */
-  fixedAsset?: (string | null) | FixedAsset;
-  /**
-   * When a bookable resource is impacted (vehicle / equipment / room).
-   */
-  bookableResource?: (string | null) | BookableResource;
-  /**
-   * User who raised the request (occupant / FM operator / sensor-fed system user).
-   */
-  reportedBy?: (string | null) | User;
-  /**
-   * Free-text name (for anonymous portal submissions).
-   */
-  reportedByName?: string | null;
-  /**
-   * Email for status notifications.
-   */
-  reportedByEmail?: string | null;
-  /**
-   * When the request was raised.
-   */
-  reportedAt: string;
-  /**
-   * SLA target resolution time — derived from priority + service-catalog rule.
-   */
-  targetResolutionAt?: string | null;
-  /**
-   * Optional photo evidence (URLs in R2 / object storage).
-   */
-  photos?:
-    | {
-        url: string;
-        caption?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Work order this request was promoted to (set by triage).
-   */
-  workOrder?: (string | null) | MaintenanceWorkOrder;
-  /**
-   * FM operator who triaged the request.
-   */
-  triagedBy?: (string | null) | User;
-  triagedAt?: string | null;
-  closedAt?: string | null;
-  /**
-   * Why closed (resolved / duplicate / not actionable / out of scope).
-   */
-  closureNote?: string | null;
-  status?: ('new' | 'triaged' | 'assigned' | 'on_hold' | 'resolved' | 'rejected' | 'duplicate' | 'closed') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * CMMS execution row per ISO 55000 work-management. Consumes parts (inventory-movements) + labour (time-entries) and posts cost as expense or capex.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -14275,9 +14044,45 @@ export interface MaintenanceWorkOrder {
    */
   reference: string;
   /**
-   * Source request (when promoted from a ticket).
+   * User who raised the request (occupant / FM operator / sensor-fed system user).
    */
-  request?: (string | null) | MaintenanceRequest;
+  reportedBy?: (string | null) | User;
+  /**
+   * Free-text name (for anonymous portal submissions).
+   */
+  reportedByName?: string | null;
+  /**
+   * Email for status notifications.
+   */
+  reportedByEmail?: string | null;
+  /**
+   * When the request was raised.
+   */
+  reportedAt?: string | null;
+  /**
+   * SLA target resolution time — derived from priority + service-catalog rule.
+   */
+  targetResolutionAt?: string | null;
+  /**
+   * Optional photo evidence (URLs in R2 / object storage).
+   */
+  photos?:
+    | {
+        url: string;
+        caption?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * FM operator who triaged the request.
+   */
+  triagedBy?: (string | null) | User;
+  triagedAt?: string | null;
+  closedAt?: string | null;
+  /**
+   * Why closed (resolved / duplicate / not actionable / out of scope).
+   */
+  closureNote?: string | null;
   subject: string;
   description?: string | null;
   workType:
@@ -14289,7 +14094,9 @@ export interface MaintenanceWorkOrder {
     | 'compliance'
     | 'refurbishment'
     | 'cleaning'
-    | 'move';
+    | 'move'
+    | 'safety'
+    | 'other';
   priority: 'p1' | 'p2' | 'p3' | 'p4';
   /**
    * IAS-16 §12 vs §13 — drives whether cost hits OPEX or CAPEX (and thus depreciation schedule).
@@ -14312,7 +14119,7 @@ export interface MaintenanceWorkOrder {
   /**
    * External contractor (when outsourced).
    */
-  vendor?: (string | null) | Vendor;
+  vendor?: (string | null) | Party;
   /**
    * Planned start.
    */
@@ -14389,6 +14196,11 @@ export interface MaintenanceWorkOrder {
   journalEntry?: (string | null) | JournalEntry;
   status?:
     | (
+        | 'new'
+        | 'triaged'
+        | 'on_hold'
+        | 'rejected'
+        | 'duplicate'
         | 'planned'
         | 'scheduled'
         | 'dispatched'
@@ -14750,94 +14562,6 @@ export interface ManagementCertification {
   createdAt: string;
 }
 /**
- * Localized + tenant-extensible metadata overlay for every registered erpax.* MCP tool. Translators fill description.<locale> via the admin UI; the catalog overlays the row's values at request time.
- *
- * — diamond-uuid: 207df9ef-db52-82ab-aeeb-5e6c859697a9
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "mcp-tool-metadata".
- */
-export interface McpToolMetadatum {
-  id: string;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid: string;
-  /**
-   * Canonical MCP tool id — e.g. "erpax.consistency.scan". Must match a registered tool in the catalog; orphan rows are flagged by the checkMcpToolMetadataOrphans invariant.
-   */
-  toolName: string;
-  /**
-   * Tool family — derived from the second segment of the toolName. Used for grouping in the admin UI.
-   */
-  area:
-    | 'accounting'
-    | 'agents'
-    | 'anchoring'
-    | 'archival'
-    | 'audit'
-    | 'blocks'
-    | 'chain'
-    | 'cloudflare'
-    | 'commerce'
-    | 'consistency'
-    | 'did'
-    | 'events'
-    | 'i18n'
-    | 'integrity'
-    | 'marketing'
-    | 'meta'
-    | 'multimedia'
-    | 'platform'
-    | 'pwa'
-    | 'refs'
-    | 'seo'
-    | 'spec'
-    | 'standards'
-    | 'storage'
-    | 'streams'
-    | 'voting'
-    | 'website'
-    | 'other';
-  /**
-   * Tool description; localizable. The MCP catalog overlays this on the code default at request time.
-   */
-  description: string;
-  /**
-   * Optional friendly name for admin UI panels (e.g. "Run consistency check" vs. "erpax.consistency.scan").
-   */
-  displayName?: string | null;
-  /**
-   * Free-form tags for grouping / filtering — "observability", "tamper-evident", "experimental", etc.
-   */
-  tags?:
-    | {
-        tag: string;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Optional URL to a per-locale documentation page that expands on the description.
-   */
-  documentationUrl?: string | null;
-  /**
-   * When false, the catalog falls back to the code default; the tool itself is NOT disabled (that's the feature-registry job — see access/feature-registry.ts).
-   */
-  enabled?: boolean | null;
-  /**
-   * Timestamp the row was last reconciled against the live tool catalog (by erpax.i18n.audit). Stale rows surface in the orphan-check.
-   */
-  lastSyncedFromCatalogAt?: string | null;
-  status?: ('enabled' | 'disabled' | 'pending_review') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * Generic persistence layer for MCP tools + DomainAgent in-memory state: fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps. Every row is content-uuid'd (Law 8) and can declare relatedTo edges (Law 10).
  *
  * — diamond-uuid: 50693d52-8ccc-813f-bd9f-ea2bc65b0ed0
@@ -14991,12 +14715,8 @@ export interface Message {
         value: string | Invoice;
       } | null)
     | ({
-        relationTo: 'customers';
-        value: string | Customer;
-      } | null)
-    | ({
-        relationTo: 'vendors';
-        value: string | Vendor;
+        relationTo: 'parties';
+        value: string | Party;
       } | null)
     | ({
         relationTo: 'sales-orders';
@@ -16314,7 +16034,7 @@ export interface PurchaseRequisition {
      */
     estimatedAmount: number;
     glAccount?: (string | null) | GlAccount;
-    preferredVendor?: (string | null) | Vendor;
+    preferredVendor?: (string | null) | Party;
     id?: string | null;
   }[];
   /**
@@ -16379,7 +16099,7 @@ export interface VendorQuote {
    * Tenant-unique vendor quote number (e.g. VQ-2026-0001).
    */
   quoteNumber: string;
-  vendor: string | Vendor;
+  vendor: string | Party;
   /**
    * Source requisition (one PR may have many vendor quotes).
    */
@@ -16627,43 +16347,6 @@ export interface RecurringJournal {
    */
   autoPost?: boolean | null;
   status?: ('active' | 'paused' | 'completed' | 'cancelled') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "refunds".
- */
-export interface Refund {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  refundNumber: string;
-  creditMemo: string | CreditMemo;
-  invoice?: (string | null) | Invoice;
-  order?: (string | null) | SalesOrder;
-  amount: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  method: 'stripe' | 'ach' | 'sepa' | 'check' | 'cash' | 'store_credit';
-  /**
-   * Stripe refund ID for cross-system traceability.
-   */
-  stripeRefundId?: string | null;
-  status?: ('draft' | 'pending' | 'issued' | 'settled' | 'failed' | 'voided') | null;
-  refundedAt?: string | null;
-  settledAt?: string | null;
-  failureReason?: string | null;
-  journalEntry?: (string | null) | JournalEntry;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -17033,7 +16716,7 @@ export interface Return {
   tenant?: (string | null) | Tenant;
   rmaNumber: string;
   order: string | SalesOrder;
-  customer?: (string | null) | Customer;
+  customer?: (string | null) | Party;
   reason: 'defective' | 'wrong_item' | 'customer_changed_mind' | 'damaged' | 'late' | 'other';
   lines: {
     item?: (string | null) | Item;
@@ -17323,7 +17006,7 @@ export interface SalesCommission {
    * Contract created on close-won (drives the amortisation period).
    */
   contract?: (string | null) | Contract;
-  customer?: (string | null) | Customer;
+  customer?: (string | null) | Party;
   closedWonDate: string;
   /**
    * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
@@ -17859,7 +17542,7 @@ export interface Share {
 /**
  * Live registry of every cited published standard (IFRS / ISO / W3C / RFC / Directive / etc.) + per-tenant citation graph. Backs the erpax.standards.* MCP family with persistent storage. Standards-as-vortices (Law 27) + supersession trail (Law 28).
  *
- * — diamond-uuid: ea7a6238-6f0c-8465-858b-32c9da305ed7
+ * — diamond-uuid: 4fa7ec86-4750-8cf8-b011-44a04bdd3073
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "standards".
@@ -18757,7 +18440,7 @@ export interface TransferPricingFile {
   createdAt: string;
 }
 /**
- * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > mcp-tool-metadata > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
+ * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
  *
  * — diamond-uuid: 3143469c-94d2-848c-a4df-7d6fc2f40a6e
  *
@@ -18797,7 +18480,7 @@ export interface Translation {
    */
   overrides?: {
     /**
-     * e.g. "mcp-tool-metadata" or "_static" when overriding a code default.
+     * e.g. "_static" when overriding a code default.
      */
     collection?: string | null;
     /**
@@ -18869,7 +18552,7 @@ export interface VendorScorecard {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   reference: string;
-  vendor: string | Vendor;
+  vendor: string | Party;
   /**
    * e.g. 2026-Q1, 2026-FY.
    */
@@ -19663,6 +19346,10 @@ export interface Search {
     relationTo: string;
     value: string;
   };
+  /**
+   * The document body as markdown, synced from its rich text — what a reader selects to get the document as text.
+   */
+  markdown?: string | null;
   slug?: string | null;
   meta?: {
     title?: string | null;
@@ -20123,7 +19810,8 @@ export interface PayloadQueryPreset {
     | boolean
     | null;
   groupBy?: string | null;
-  relatedCollection: 'pages' | 'posts';
+  relatedCollection:
+    'credit-memos' | 'maintenance-work-orders' | 'pages' | 'parties' | 'posts' | 'provisions' | 'sales-orders';
   /**
    * This is a temporary field used to determine if updating the preset would remove the user's access to it. When `true`, this record will be deleted after running the preset's `validate` function.
    */
@@ -21323,37 +21011,6 @@ export interface ClosingEntriesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "commitments-and-contingencies_select".
- */
-export interface CommitmentsAndContingenciesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  description?: T;
-  kind?: T;
-  category?: T;
-  legalEntity?: T;
-  counterparty?: T;
-  inceptionDate?: T;
-  expectedResolutionDate?: T;
-  likelihood?: T;
-  currency?: T;
-  maximumExposure?: T;
-  expectedOutflow?: T;
-  reimbursementExpected?: T;
-  isOnerousContractRelated?: T;
-  recognisedAsProvision?: T;
-  noteText?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "compliance-deadlines_select".
  */
 export interface ComplianceDeadlinesSelect<T extends boolean = true> {
@@ -21825,12 +21482,26 @@ export interface CreditMemosSelect<T extends boolean = true> {
   invoice?: T;
   reason?: T;
   reasonDetail?: T;
+  order?: T;
   amount?: T;
   currency?: T;
   status?: T;
   issuedAt?: T;
   appliedAt?: T;
   settledAt?: T;
+  refunds?:
+    | T
+    | {
+        amount?: T;
+        method?: T;
+        stripeRefundId?: T;
+        status?: T;
+        refundedAt?: T;
+        settledAt?: T;
+        failureReason?: T;
+        journalEntry?: T;
+        id?: T;
+      };
   journalEntry?: T;
   createdBy?: T;
   approvedBy?: T;
@@ -21928,73 +21599,6 @@ export interface CustomerSegmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "customers_select".
- */
-export interface CustomersSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  code?: T;
-  name?: T;
-  country?: T;
-  identity?:
-    | T
-    | {
-        legalName?: T;
-        customerType?: T;
-        status?: T;
-      };
-  contact?:
-    | T
-    | {
-        email?: T;
-        phone?: T;
-        website?: T;
-      };
-  addresses?:
-    | T
-    | {
-        addresses?: T;
-        billingAddress?: T;
-        shippingAddress?: T;
-      };
-  tax?:
-    | T
-    | {
-        vatNumber?: T;
-        vatNumberType?: T;
-        taxExempt?: T;
-        taxExemptionCertificate?: T;
-        defaultTaxCode?: T;
-      };
-  commercial?:
-    | T
-    | {
-        paymentTerms?: T;
-        paymentTermsDays?: T;
-        creditLimit?: T;
-        creditCurrency?: T;
-        defaultCurrency?: T;
-        defaultLocale?: T;
-        priceList?: T;
-      };
-  ledger?:
-    | T
-    | {
-        defaultReceivableAccount?: T;
-        defaultRevenueAccount?: T;
-        defaultDiscountAccount?: T;
-      };
-  notes?:
-    | T
-    | {
-        note?: T;
-      };
-  metadata?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24146,20 +23750,12 @@ export interface LotsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "maintenance-requests_select".
+ * via the `definition` "maintenance-work-orders_select".
  */
-export interface MaintenanceRequestsSelect<T extends boolean = true> {
+export interface MaintenanceWorkOrdersSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
   reference?: T;
-  subject?: T;
-  description?: T;
-  requestType?: T;
-  priority?: T;
-  property?: T;
-  space?: T;
-  fixedAsset?: T;
-  bookableResource?: T;
   reportedBy?: T;
   reportedByName?: T;
   reportedByEmail?: T;
@@ -24172,28 +23768,10 @@ export interface MaintenanceRequestsSelect<T extends boolean = true> {
         caption?: T;
         id?: T;
       };
-  workOrder?: T;
   triagedBy?: T;
   triagedAt?: T;
   closedAt?: T;
   closureNote?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "maintenance-work-orders_select".
- */
-export interface MaintenanceWorkOrdersSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  request?: T;
   subject?: T;
   description?: T;
   workType?: T;
@@ -24318,34 +23896,6 @@ export interface ManagementCertificationsSelect<T extends boolean = true> {
   relatedFindings?: T;
   signedDocument?: T;
   status?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "mcp-tool-metadata_select".
- */
-export interface McpToolMetadataSelect<T extends boolean = true> {
-  tenant?: T;
-  uuid?: T;
-  toolName?: T;
-  area?: T;
-  description?: T;
-  displayName?: T;
-  tags?:
-    | T
-    | {
-        tag?: T;
-        id?: T;
-      };
-  documentationUrl?: T;
-  enabled?: T;
-  lastSyncedFromCatalogAt?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24792,6 +24342,7 @@ export interface PagesSelect<T extends boolean = true> {
         image?: T;
         description?: T;
       };
+  seed?: T;
   publishedAt?: T;
   generateSlug?: T;
   slug?: T;
@@ -24842,6 +24393,7 @@ export interface ContentBlockSelect<T extends boolean = true> {
     | {
         size?: T;
         richText?: T;
+        markdown?: T;
         enableLink?: T;
         link?:
           | T
@@ -24891,6 +24443,94 @@ export interface FormBlockSelect<T extends boolean = true> {
   introContent?: T;
   id?: T;
   blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "parties_select".
+ */
+export interface PartiesSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  code?: T;
+  name?: T;
+  roles?: T;
+  country?: T;
+  identity?:
+    | T
+    | {
+        legalName?: T;
+        type?: T;
+        status?: T;
+      };
+  contact?:
+    | T
+    | {
+        email?: T;
+        phone?: T;
+        website?: T;
+      };
+  addresses?:
+    | T
+    | {
+        addresses?: T;
+        billingAddress?: T;
+        shippingAddress?: T;
+        remitToAddress?: T;
+      };
+  tax?:
+    | T
+    | {
+        vatNumber?: T;
+        vatNumberType?: T;
+        taxExempt?: T;
+        taxExemptionCertificate?: T;
+        defaultTaxCode?: T;
+        vendor1099Eligible?: T;
+        tax1099FormType?: T;
+        taxIdType?: T;
+        withholdingRate?: T;
+      };
+  commercial?:
+    | T
+    | {
+        paymentTerms?: T;
+        paymentTermsDays?: T;
+        creditLimit?: T;
+        creditCurrency?: T;
+        preferredPaymentMethod?: T;
+        defaultCurrency?: T;
+        defaultLocale?: T;
+        priceList?: T;
+      };
+  bank?:
+    | T
+    | {
+        bankAccountName?: T;
+        bankName?: T;
+        bankRoutingNumber?: T;
+        bankAccountNumber?: T;
+        bankIban?: T;
+        bankSwiftBic?: T;
+        bankCountryCode?: T;
+      };
+  ledger?:
+    | T
+    | {
+        defaultReceivableAccount?: T;
+        defaultRevenueAccount?: T;
+        defaultDiscountAccount?: T;
+        defaultPayableAccount?: T;
+        defaultExpenseAccount?: T;
+        defaultWithholdingAccount?: T;
+      };
+  notes?:
+    | T
+    | {
+        note?: T;
+      };
+  metadata?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -25343,8 +24983,11 @@ export interface PostsSelect<T extends boolean = true> {
   title?: T;
   heroImage?: T;
   content?: T;
+  markdown?: T;
   relatedPosts?: T;
   categories?: T;
+  pages?: T;
+  variants?: T;
   meta?:
     | T
     | {
@@ -25352,6 +24995,7 @@ export interface PostsSelect<T extends boolean = true> {
         image?: T;
         description?: T;
       };
+  seed?: T;
   publishedAt?: T;
   authors?: T;
   populatedAuthors?:
@@ -25593,6 +25237,16 @@ export interface ProvisionsSelect<T extends boolean = true> {
   tenant?: T;
   reference?: T;
   description?: T;
+  kind?: T;
+  category?: T;
+  counterparty?: T;
+  inceptionDate?: T;
+  expectedResolutionDate?: T;
+  likelihood?: T;
+  maximumExposure?: T;
+  expectedOutflow?: T;
+  isOnerousContractRelated?: T;
+  noteText?: T;
   provisionType?: T;
   legalEntity?: T;
   recognitionDate?: T;
@@ -25763,42 +25417,6 @@ export interface QualityInspectionsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "quotes_select".
- */
-export interface QuotesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  quoteNumber?: T;
-  customer?: T;
-  issuedAt?: T;
-  expiresAt?: T;
-  lines?:
-    | T
-    | {
-        item?: T;
-        description?: T;
-        quantity?: T;
-        unitPrice?: T;
-        lineTotal?: T;
-        id?: T;
-      };
-  subtotal?: T;
-  taxAmount?: T;
-  totalAmount?: T;
-  currency?: T;
-  status?: T;
-  sentAt?: T;
-  acceptedAt?: T;
-  convertedToOrder?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "receipts_select".
  */
 export interface ReceiptsSelect<T extends boolean = true> {
@@ -25930,33 +25548,6 @@ export interface RecurringJournalsSelect<T extends boolean = true> {
       };
   autoPost?: T;
   status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "refunds_select".
- */
-export interface RefundsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  refundNumber?: T;
-  creditMemo?: T;
-  invoice?: T;
-  order?: T;
-  amount?: T;
-  currency?: T;
-  method?: T;
-  stripeRefundId?: T;
-  status?: T;
-  refundedAt?: T;
-  settledAt?: T;
-  failureReason?: T;
-  journalEntry?: T;
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
@@ -26348,8 +25939,10 @@ export interface SalesOrdersSelect<T extends boolean = true> {
   orderNumber?: T;
   customer?: T;
   customerOrderReference?: T;
-  quote?: T;
   contract?: T;
+  sentAt?: T;
+  expiresAt?: T;
+  acceptedAt?: T;
   orderDate?: T;
   requestedDeliveryDate?: T;
   promisedDeliveryDate?: T;
@@ -27520,84 +27113,6 @@ export interface VendorScorecardsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendors_select".
- */
-export interface VendorsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  code?: T;
-  name?: T;
-  country?: T;
-  identity?:
-    | T
-    | {
-        legalName?: T;
-        vendorType?: T;
-        status?: T;
-      };
-  contact?:
-    | T
-    | {
-        email?: T;
-        phone?: T;
-        website?: T;
-      };
-  addresses?:
-    | T
-    | {
-        addresses?: T;
-        remitToAddress?: T;
-      };
-  tax?:
-    | T
-    | {
-        vatNumber?: T;
-        vatNumberType?: T;
-        taxExempt?: T;
-        defaultTaxCode?: T;
-        vendor1099Eligible?: T;
-        tax1099FormType?: T;
-        taxIdType?: T;
-        withholdingRate?: T;
-      };
-  commercial?:
-    | T
-    | {
-        paymentTerms?: T;
-        paymentTermsDays?: T;
-        preferredPaymentMethod?: T;
-        defaultCurrency?: T;
-        defaultLocale?: T;
-      };
-  bank?:
-    | T
-    | {
-        bankAccountName?: T;
-        bankName?: T;
-        bankRoutingNumber?: T;
-        bankAccountNumber?: T;
-        bankIban?: T;
-        bankSwiftBic?: T;
-        bankCountryCode?: T;
-      };
-  ledger?:
-    | T
-    | {
-        defaultPayableAccount?: T;
-        defaultExpenseAccount?: T;
-        defaultWithholdingAccount?: T;
-      };
-  notes?:
-    | T
-    | {
-        note?: T;
-      };
-  metadata?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "warehouse-locations_select".
  */
 export interface WarehouseLocationsSelect<T extends boolean = true> {
@@ -28475,6 +27990,7 @@ export interface SearchSelect<T extends boolean = true> {
         relationTo?: T;
         value?: T;
       };
+  markdown?: T;
   slug?: T;
   meta?:
     | T
@@ -28887,7 +28403,6 @@ export interface TaskCreateCollectionExport {
       | 'categories'
       | 'chat'
       | 'closing-entries'
-      | 'commitments-and-contingencies'
       | 'compliance-deadlines'
       | 'compliance-frameworks'
       | 'compliance-gaps'
@@ -28908,7 +28423,6 @@ export interface TaskCreateCollectionExport {
       | 'csrd-disclosures'
       | 'currency-rates'
       | 'customer-segments'
-      | 'customers'
       | 'customs-declarations'
       | 'data-processing-activities'
       | 'data-subject-requests'
@@ -28959,11 +28473,9 @@ export interface TaskCreateCollectionExport {
       | 'lot-variants'
       | 'lot-work-phases'
       | 'lots'
-      | 'maintenance-requests'
       | 'maintenance-work-orders'
       | 'management-assessment-icfr'
       | 'management-certifications'
-      | 'mcp-tool-metadata'
       | 'media'
       | 'memories'
       | 'messages'
@@ -28976,6 +28488,7 @@ export interface TaskCreateCollectionExport {
       | 'packages'
       | 'packs'
       | 'pages'
+      | 'parties'
       | 'payment-allocations'
       | 'payment-methods'
       | 'payment-runs'
@@ -29000,11 +28513,9 @@ export interface TaskCreateCollectionExport {
       | 'purchase-orders'
       | 'purchase-requisitions'
       | 'quality-inspections'
-      | 'quotes'
       | 'receipts'
       | 'recruiting-pipeline'
       | 'recurring-journals'
-      | 'refunds'
       | 'regulatory-deferral-accounts'
       | 'regulatory-reports'
       | 'related-party-transactions'
@@ -29052,7 +28563,6 @@ export interface TaskCreateCollectionExport {
       | 'users'
       | 'vendor-quotes'
       | 'vendor-scorecards'
-      | 'vendors'
       | 'warehouse-locations'
       | 'wip-snapshots'
       | 'work-centers'

@@ -76,8 +76,8 @@ const Activities: CollectionConfig = {
     },
     { name: 'lead', type: 'relationship', relationTo: 'leads' },
     { name: 'opportunity', type: 'relationship', relationTo: 'opportunities' },
-    { name: 'customer', type: 'relationship', relationTo: 'customers' },
-    { name: 'vendor', type: 'relationship', relationTo: 'vendors' },
+    { name: 'customer', type: 'relationship', relationTo: 'parties' },
+    { name: 'vendor', type: 'relationship', relationTo: 'parties' },
     { name: 'project', type: 'relationship', relationTo: 'projects' },
     { name: 'description', type: 'textarea', localized: true },
     { name: 'outcome', type: 'select', options: [

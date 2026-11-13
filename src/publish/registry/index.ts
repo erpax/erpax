@@ -4,6 +4,7 @@ import { ERPAX_DOI, ERPAX_VERSION_DOI, SOURCE_URL } from '@/algebra'
 import { paperMetadata, paperTex } from '@/publish/paper'
 import { createHash } from 'node:crypto'
 import { chainLeaf } from '@/merge'
+import { postRow, slugOf as documentSlug, type PostRow } from '@/seed/content'
 
 /**
  * publish/registry — which results this corpus can honestly publish, computed from the corpus.
@@ -219,6 +220,33 @@ export function publishableResults(cwd: string = process.cwd()): PublishableResu
 export function citationGraph(results: readonly PublishableResult[]): Map<string, string[]> {
   const published = new Set(results.map((r) => r.slug))
   return new Map(results.map((r) => [r.slug, r.composes.filter((c) => published.has(c) && c !== r.slug)]))
+}
+
+/** The category every publication post is filed under. */
+export const publicationsCategory = (): string => 'Publications'
+
+/**
+ * Every result as a POST — the seed that replaces a page rendered into the build. A publication
+ * is based on a document, so each post names the nested page of the atom it reports on, and cites
+ * its sibling results as related posts.
+ */
+export function publicationPosts(results: readonly PublishableResult[]): PostRow[] {
+  const graph = citationGraph(results)
+  return results
+    .map((r) => {
+      const cites = graph.get(r.slug) ?? []
+      const markdown = [
+        '## Claim', '', r.claim, '', '## What this does not prove', '', r.boundary,
+        '', '## Method', '', `Recompute it: \`${r.method}\``,
+        ...(r.standards.length ? ['', '## Standards', '', ...r.standards.map((s) => `- ${s}`)] : []),
+        ...(r.links.length ? ['', '## Availability', '', ...r.links.map((l) => `- ${l.rel}: [${l.url}](${l.url})`)] : []),
+      ].join('\n')
+      return postRow({
+        slug: r.slug, title: r.title, description: plain(r.claim), markdown,
+        pages: [documentSlug(r.atomPath)], related: cites,
+      })
+    })
+    .sort((a, b) => a.slug.localeCompare(b.slug))
 }
 
 /**

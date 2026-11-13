@@ -3,13 +3,13 @@ name: posting
 description: "Use when reasoning about posting — Lease Period Posting Hook — fires on `LeasePeriodPostings.status → 'posted'` and books the canonical IAS 16 / ASC 842 period entry."
 atomPath: "leases/lease/period/postings/hooks/posting"
 coordinate: "leases/lease/period/postings/hooks/posting · 2/share · 3e44932a"
-contentUuid: "ec5e92ca-28b2-5a92-8d9c-a06d4ca8e054"
+contentUuid: "cf355f1c-0334-5085-8ddb-e8bef794d5d0"
 diamondUuid: "e372871a-8e4a-80f0-b4b3-7152dcf36c58"
 uuid: "3e44932a-e3b5-8826-b66d-1caf3f367e0d"
 horo: 2
 typography:
   partition: leases
-  bondDegree: 44
+  bondDegree: 48
 standards:
   - "IFRS IFRS-16 §29-§31 rou-asset-subsequent-measurement"
   - "IFRS IFRS-16 §36-§38 lease-liability-amortised-cost"

@@ -2,6 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 import {
   BlocksFeature,
+  CodeBlock,
   FixedToolbarFeature,
   HeadingFeature,
   HorizontalRuleFeature,
@@ -13,6 +14,7 @@ import { createMembershipAdminMutateAccess } from '@/membership/admin/mutate/acc
 import { tenantScopedPostsReadAccess } from '@/tenant/scoped/read'
 import { documentPreviewAdmin } from '@/shareds'
 import { defaultVersionedDrafts } from '@/shareds'
+import { codeLanguages, documentFeatures } from '@/default/lexical'
 import { Banner, Code, MediaBlock } from '@/blocks/config'
 import { ensureUniqueSlugWithinTenant } from '@/ensure/unique/slug/within/tenant'
 import { postsBeforeChange } from '@/posts/hooks'
@@ -28,6 +30,7 @@ import {
 } from '@payloadcms/plugin-seo/fields'
 import { slugField } from 'payload'
 import { localeRecord } from '@/i18n'
+import { fillSeo, markdownField, publishedStates } from '@/seed/content'
 
 /**
  * Posts — CMS articles with versioned drafts and tenant-scoped read.
@@ -100,7 +103,8 @@ export const Posts: CollectionConfig = {
                   return [
                     ...rootFeatures,
                     HeadingFeature({ enabledHeadingSizes: ['h1', 'h2', 'h3', 'h4'] }),
-                    BlocksFeature({ blocks: [Banner, Code, MediaBlock] }),
+                    ...documentFeatures(),
+                    BlocksFeature({ blocks: [Banner, Code, MediaBlock, CodeBlock({ slug: 'Fence', languages: codeLanguages(), defaultLanguage: 'plaintext' })] }),
                     FixedToolbarFeature(),
                     InlineToolbarFeature(),
                     HorizontalRuleFeature(),
@@ -110,6 +114,7 @@ export const Posts: CollectionConfig = {
               label: false,
               required: true,
             },
+            markdownField('content'),
           ],
           label: localeRecord('tab.content'),
         },
@@ -142,6 +147,26 @@ export const Posts: CollectionConfig = {
               hasMany: true,
               relationTo: 'categories',
             },
+            {
+              name: 'pages',
+              type: 'relationship',
+              admin: {
+                position: 'sidebar',
+                description: 'The nested pages (documents) this publication is based on.',
+              },
+              hasMany: true,
+              relationTo: 'pages',
+            },
+            {
+              name: 'variants',
+              type: 'relationship',
+              admin: {
+                position: 'sidebar',
+                description: 'The product variants this publication is based on.',
+              },
+              hasMany: true,
+              relationTo: 'variants',
+            },
           ],
           label: localeRecord('tab.meta'),
         },
@@ -156,12 +181,13 @@ export const Posts: CollectionConfig = {
             }),
             MetaTitleField({
               hasGenerateFn: true,
+              overrides: { validate: publishedStates('title') },
             }),
             MetaImageField({
               relationTo: 'media',
             }),
 
-            MetaDescriptionField({}),
+            MetaDescriptionField({ overrides: { validate: publishedStates('description') } }),
             PreviewField({
               // if the `generateUrl` function is configured
               hasGenerateFn: true,
@@ -173,6 +199,16 @@ export const Posts: CollectionConfig = {
           ],
         },
       ],
+    },
+    {
+      name: 'seed',
+      type: 'text',
+      index: true,
+      admin: {
+        position: 'sidebar',
+        readOnly: true,
+        description: 'Content address of the seed row this document was loaded from — an unchanged row is not rewritten.',
+      },
     },
     {
       name: 'publishedAt',
@@ -251,6 +287,7 @@ export const Posts: CollectionConfig = {
     }),
   ],
   hooks: {
+    beforeValidate: [fillSeo],
     beforeChange: postsBeforeChange,
     afterChange: [revalidatePost],
     afterRead: [populateAuthors],

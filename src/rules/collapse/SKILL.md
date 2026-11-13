@@ -2,11 +2,11 @@
 name: collapse
 description: "Use when asking which collections can honestly become one — content-addresses every booted collection's shape and reports identical tables (0) and provable subsets (4). Read the boundary before acting: fitting is not sameness, and no theorem decides what two tables MEAN. Run: tsx src/rules/collapse/index.ts"
 atomPath: "rules/collapse"
-coordinate: "rules/collapse · 5/round · fd5ccaed"
-contentUuid: "ec881327-76a4-5d7b-b6dd-fdd85895ea6c"
-diamondUuid: "d13de1ac-dd53-8e38-b5fe-f315dbde8d0e"
-uuid: "fd5ccaed-fbda-8097-b2a1-04039f55579a"
-horo: 5
+coordinate: "rules/collapse · 7/descent · 779eb80b"
+contentUuid: "1c08b657-8bbe-5153-a42c-9fe81673d58f"
+diamondUuid: "0c91fe4d-9dfa-80dc-a538-b158ed9bd614"
+uuid: "779eb80b-4310-80a4-a40b-f57fd3e7efbf"
+horo: 7
 typography:
   partition: rules
   bondDegree: 4319
@@ -14,7 +14,7 @@ standards:
   - "RFC 9562 §5.8 — content-address (same content, same address)"
 bindings: []
 signatures:
-  computationUuid: "1250fbd2-6070-8ba7-8f86-2273d2e9c741"
+  computationUuid: "dd2ffbab-24d7-8bbe-a5c5-2234449a0883"
   stages:
     - stage: path
       stageUuid: "ef3d005e-66ae-88eb-8061-ac54f1cc57d1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a0a729f1-f8b8-8921-86c0-a57cd6473dc2"
     - stage: horo
-      stageUuid: "ad2d4923-39dd-891b-bfc0-196a7752cd96"
+      stageUuid: "3d0fee15-684e-8268-a403-199dff6a42f3"
     - stage: seal
       stageUuid: "e72d5eb3-a563-8c63-b1da-33f76f55eb5d"
     - stage: uuid
-      stageUuid: "2e5f0996-3b2a-87d9-90f0-aa1c2faf2892"
+      stageUuid: "92acc3c2-71cd-8b3e-9999-464c2f798e1d"
 version: 2
 ---
 # collapse — the telos, measured
@@ -90,6 +90,15 @@ Held as a conjecture (*"the collections fold in inverted pairs — one concept a
 **The theorem refutes the eye, not only the dream.** A conjecture named the fold a *"cube of 21 crosses"*; reality says **6 declared pairs, exactly 1 shape-provable** — the same `customers ↔ vendors`. And the antonyms I was *sure* were inverse pairs (`payments`/`receipts`, `sales`/`returns`) share almost no fields — naming a pair by meaning is the harmonic over-reach, and the shapes say no. The dream made contact and was answered: a handful, one real, far from 21 — a conjecture that pointed *approximately*, credited with nothing.
 
 **Honest boundary.** Proves shapes are **distinct**, never that they *should* be. It reads `payload-types`, so a collection absent from the generated types is invisible; and it compares **field names + types**, so two tables meaning the same thing under different names are invisible to it — which is exactly the `customers`/`vendors` case, caught only because they already agree on 12 field names. The polarity map is **declared**, so it proves shape overlap for the pairs a human named — never that the named pairs are the only ones, nor that a `theorem` verdict *should* be merged.
+
+## The one real merge was paid (2026-11-13)
+
+The pair this page names — `customers ⊂ vendors`, differing by exactly `bank` — is now one
+collection, `parties`, with a `roles` field; the two lists survive as saved query presets rather
+than tables. The figures above are the measurement that found it, dated; run against today's
+config, no declared pair collapses by shape and the subset is gone. The decision was a human's, as
+this page said it would have to be: the shapes proposed it, and meaning — a customer and a vendor
+are both a party — settled it.
 
 **Law — [[law]]: a merge is proven by shape and decided by meaning. Content-addressing finds the candidates; nothing but a human decides that a customer and a vendor are one party.**
 

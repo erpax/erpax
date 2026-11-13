@@ -8,6 +8,7 @@
  * @compliance SOX §404 internal-controls dispatch-controls
  */
 
+import { deriveMovements } from '@/items/inventory/movements/source'
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { autoSetTimestamp } from '@/auto/set/timestamp'
@@ -77,7 +78,7 @@ const Shipments: CollectionConfig = {
     ...auditFields(),
     notesField(),
   ],
-  hooks: standardCollectionHooks('shipments', { beforeChange: [autoSetTimestamp('shippedAt', (d) => (d as { status?: string }).status === 'shipped'), autoSetTimestamp('deliveredAt', (d) => (d as { status?: string }).status === 'delivered')] }),
+  hooks: standardCollectionHooks('shipments', { afterChange: [deriveMovements('shipments')], beforeChange: [autoSetTimestamp('shippedAt', (d) => (d as { status?: string }).status === 'shipped'), autoSetTimestamp('deliveredAt', (d) => (d as { status?: string }).status === 'delivered')] }),
   timestamps: true,
 }
 

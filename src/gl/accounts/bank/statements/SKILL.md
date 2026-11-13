@@ -3,7 +3,7 @@ name: statements
 description: "Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection."
 atomPath: "gl/accounts/bank/statements"
 coordinate: "gl/accounts/bank/statements · 7/descent · dbe17683"
-contentUuid: "1c50b8a0-32bc-5f9a-bbeb-083b46d736cc"
+contentUuid: "dd0d7ec3-a96c-5789-95e4-39358d7f2e88"
 diamondUuid: "52ea2d93-4426-8ccc-a2fa-990ab8f055ef"
 uuid: "dbe17683-a26f-85b5-94b3-faf37d84b4dd"
 horo: 7
@@ -12,6 +12,7 @@ typography:
   bondDegree: 53
 standards:
   - "IFRS IAS-7 statement-of-cash-flows"
+  - "ISO-13616-1"
   - "ISO-13616-1:2020 iban"
   - "ISO-13616-1:2020 iban`"
   - "ISO-20022 camt.053 bank-to-customer-statement"

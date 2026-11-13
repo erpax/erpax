@@ -10,6 +10,7 @@
  * @see docs/STANDARDS.md §3
  */
 
+import { codeLanguages, documentFeatures } from '@/default/lexical'
 import type { Block, Field } from 'payload'
 
 import {
@@ -21,6 +22,8 @@ import {
 
 import { link } from '@/link/field'
 import { localeRecord } from '@/i18n'
+import { markdownField } from '@/seed/content'
+import { BlocksFeature, CodeBlock } from '@payloadcms/richtext-lexical'
 
 const columnFields: Field[] = [
   {
@@ -54,6 +57,8 @@ const columnFields: Field[] = [
         return [
           ...rootFeatures,
           HeadingFeature({ enabledHeadingSizes: ['h2', 'h3', 'h4'] }),
+          ...documentFeatures(),
+          BlocksFeature({ blocks: [CodeBlock({ languages: codeLanguages(), defaultLanguage: 'plaintext' })] }),
           FixedToolbarFeature(),
           InlineToolbarFeature(),
         ]
@@ -61,6 +66,7 @@ const columnFields: Field[] = [
     }),
     label: false,
   },
+  markdownField('richText'),
   {
     name: 'enableLink',
     type: 'checkbox',

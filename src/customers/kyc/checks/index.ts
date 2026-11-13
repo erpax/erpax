@@ -47,7 +47,7 @@ const KycChecks: CollectionConfig = {
     // plugin masked this. Vendor / beneficial-owner / signatory screening
     // happens via separate KycCheck rows (subjectType select drives
     // join-time interpretation).
-    { name: 'subject', type: 'relationship', relationTo: 'customers', required: true },
+    { name: 'subject', type: 'relationship', relationTo: 'parties', required: true },
     {
       name: 'cddLevel',
       type: 'select',

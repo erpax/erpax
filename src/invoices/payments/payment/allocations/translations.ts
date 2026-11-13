@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when allocating a single payment across one or more invoices, bills or credit memos — FIFO or manual split, FX gain/loss, fully-settling flag, SOX §404 TOM-AR-02 cash-receipt audit evidence. The payment-allocations collection.",
-    "uuid": "c0782a02-070a-89c0-9d1c-5e55bcd1b40e",
+    "uuid": "8a2559a0-45be-889f-85fa-bf8bfe5e33d9",
     "words": [
       "use",
       "when",

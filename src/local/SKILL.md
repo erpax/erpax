@@ -3,13 +3,13 @@ name: local
 description: "Use when reasoning about local — Use before fetching anything — a remote read returns a rendering, a local read returns bytes. Measured four times in one session: a web fetch runs a small model over a page and returns its prose, which was then quoted as verbatim and used to contradict a human, while a local clone sat on disk; the free AI lanes returned 402 and 405 while the local seal book answered at tokens 0; every corpus frontier computed locally in one pass; sixteen defects caught by local gates and none by anything remote. localFirst resolves to the local copy whenever it exists, and a remote read whose local counterpart is present is named as a downgrade."
 atomPath: local
 coordinate: "local · 1/base · 2731a82d"
-contentUuid: "521b5f5a-0878-5474-9f14-7fe803194220"
+contentUuid: "1a3249d1-5831-5896-bb29-3f84d0bb0b38"
 diamondUuid: "41f0d324-796e-8ed1-9ca0-e33838eaf746"
 uuid: "2731a82d-359f-8e0d-925c-6a6ba8a14b13"
 horo: 1
 typography:
   partition: local
-  bondDegree: 41
+  bondDegree: 45
 standards: []
 bindings: []
 signatures:

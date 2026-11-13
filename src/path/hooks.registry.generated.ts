@@ -92,6 +92,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "ai/confidence",
   "ai/industry",
   "ai/models",
+  "ai/public",
   "ai/suggestions",
   "akashic",
   "algebra",
@@ -143,7 +144,6 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "authenticated/or/published",
   "auto/populate/created/by",
   "auto/populate/tenant",
-  "auto/resolve",
   "auto/set/timestamp",
   "automate",
   "average/calculator",
@@ -344,7 +344,6 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "consolidation",
   "consolidation/eliminations",
   "constitution",
-  "continuum",
   "convene",
   "convention",
   "convention/addressed",
@@ -413,7 +412,6 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "customers/projects/project/milestones",
   "customers/projects/project/tasks",
   "customers/projects/wip/snapshots",
-  "customers/quotes",
   "customers/sales/orders",
   "customers/sales/orders/returns",
   "customers/sales/orders/shipments",
@@ -472,6 +470,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "ecommerce/product/validation",
   "ecommerce/stripe",
   "ecommerce/stripe/payment",
+  "ecommerce/variants",
   "ecosystem",
   "edifact/export/service",
   "element",
@@ -604,7 +603,6 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "gl/posting/rules",
   "gl/posting/service",
   "globe",
-  "goldbach",
   "google/workspace",
   "google/workspace/fusion",
   "google/workspace/registry",
@@ -665,7 +663,6 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "integrity/envelope",
   "integrity/signatures",
   "interactive",
-  "intercompany/consolidation",
   "intercompany/reconciliation",
   "interference",
   "internal/controls",
@@ -678,7 +675,6 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "internal/policies/policy/versions",
   "invoices",
   "invoices/credit/memos",
-  "invoices/credit/memos/refunds",
   "invoices/dunning/cycles",
   "invoices/hooks",
   "invoices/hooks/transition",
@@ -724,6 +720,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "items/hooks",
   "items/inventory/movements",
   "items/inventory/movements/hooks",
+  "items/inventory/movements/source",
   "items/packages",
   "items/purchase/orders",
   "items/purchase/orders/goods/receipts",
@@ -736,6 +733,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "journal/entries",
   "journal/entries/gl/postings",
   "journal/entries/hooks",
+  "journal/entries/posting",
   "journal/entries/rounding/adjustments",
   "journal/entry/service",
   "karma",
@@ -800,13 +798,11 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "lots",
   "lung",
   "machine",
-  "maintenance/requests",
   "maintenance/work/orders",
   "mala",
   "match",
   "matrix",
   "mcp",
-  "mcp/tool/metadata",
   "media",
   "media/audit/evidences",
   "media/hooks",
@@ -870,7 +866,6 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "medical/web",
   "membership/admin/mutate/access",
   "memories",
-  "memory/anchor",
   "memory/architecture",
   "memory/drift",
   "memory/quantum",
@@ -955,8 +950,8 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "pain002",
   "pain002/import/service",
   "particle",
+  "parties",
   "party",
-  "party/identity",
   "patent",
   "patent/prior",
   "path",
@@ -967,7 +962,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "payable/discounts",
   "payable/workflow",
   "payload",
-  "payload/command",
+  "payload/local",
   "payload/redirect",
   "payload/sdk",
   "payload/upstream",
@@ -1000,7 +995,6 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "plugins/emit",
   "plugins/mcp/scopes",
   "plugins/mcp/seed",
-  "plugins/mcp/tools",
   "plugins/naming",
   "plugins/taggable",
   "plugins/versions",
@@ -1012,6 +1006,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "posts/hooks",
   "power",
   "pqc",
+  "preset",
   "prime",
   "principal",
   "product/price",
@@ -1253,6 +1248,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "sandbox",
   "sandbox/experiment",
   "scalpel",
+  "scalpel/document",
   "scheduled/task",
   "schema/test",
   "scope",
@@ -1270,6 +1266,8 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "security/remote/access",
   "seed",
   "seed/contact",
+  "seed/content",
+  "seed/content/load",
   "seed/post",
   "seed/row",
   "seeds/template",
@@ -1334,6 +1332,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "standard/collection/hook",
   "standard/truth",
   "standards",
+  "standards/document",
   "standards/improve",
   "standards/projection",
   "standards/registry",
@@ -1367,7 +1366,6 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "tax/jurisdictions/deferred/tax/items",
   "tax/jurisdictions/tax/codes",
   "tax/jurisdictions/tax/returns",
-  "tax/period/integration",
   "tax/period/reconciliation",
   "taxing/jurisdictions",
   "taxing/jurisdictions/entity/legal/structures",
@@ -1401,6 +1399,8 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "theorem",
   "thing",
   "think",
+  "think/document",
+  "think/document/check",
   "threat",
   "throat",
   "timeout",
@@ -1487,6 +1487,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "vendors/vendor/scorecards",
   "verification",
   "verify",
+  "verify/case",
   "verify/inventory",
   "verify/latex",
   "version",
@@ -1554,7 +1555,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1547 as const
+export const ATOM_LEDGER_PATH_COUNT = 1548 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -1910,6 +1911,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "ai",
     "ai/models"
   ],
+  "ai/public": [
+    "ai",
+    "ai/public"
+  ],
   "ai/suggestions": [
     "ai",
     "ai/suggestions"
@@ -2079,9 +2084,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "auto/populate/tenant": [
     "auto/populate/tenant"
-  ],
-  "auto/resolve": [
-    "auto/resolve"
   ],
   "auto/set/timestamp": [
     "auto/set/timestamp"
@@ -2809,9 +2811,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "constitution": [
     "constitution"
   ],
-  "continuum": [
-    "continuum"
-  ],
   "convene": [
     "convene"
   ],
@@ -3073,10 +3072,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "customers/projects",
     "customers/projects/wip/snapshots"
   ],
-  "customers/quotes": [
-    "customers",
-    "customers/quotes"
-  ],
   "customers/sales/orders": [
     "customers",
     "customers/sales/orders"
@@ -3278,6 +3273,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "ecommerce",
     "ecommerce/stripe",
     "ecommerce/stripe/payment"
+  ],
+  "ecommerce/variants": [
+    "ecommerce",
+    "ecommerce/variants"
   ],
   "ecosystem": [
     "ecosystem"
@@ -3759,9 +3758,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "globe": [
     "globe"
   ],
-  "goldbach": [
-    "goldbach"
-  ],
   "google/workspace": [
     "google/workspace"
   ],
@@ -3967,9 +3963,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "interactive": [
     "interactive"
   ],
-  "intercompany/consolidation": [
-    "intercompany/consolidation"
-  ],
   "intercompany/reconciliation": [
     "intercompany/reconciliation"
   ],
@@ -4014,11 +4007,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "invoices/credit/memos": [
     "invoices",
     "invoices/credit/memos"
-  ],
-  "invoices/credit/memos/refunds": [
-    "invoices",
-    "invoices/credit/memos",
-    "invoices/credit/memos/refunds"
   ],
   "invoices/dunning/cycles": [
     "invoices",
@@ -4195,6 +4183,11 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "items/inventory/movements",
     "items/inventory/movements/hooks"
   ],
+  "items/inventory/movements/source": [
+    "items",
+    "items/inventory/movements",
+    "items/inventory/movements/source"
+  ],
   "items/packages": [
     "items",
     "items/packages"
@@ -4243,6 +4236,11 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "journal",
     "journal/entries",
     "journal/entries/hooks"
+  ],
+  "journal/entries/posting": [
+    "journal",
+    "journal/entries",
+    "journal/entries/posting"
   ],
   "journal/entries/rounding/adjustments": [
     "journal",
@@ -4485,9 +4483,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "machine": [
     "machine"
   ],
-  "maintenance/requests": [
-    "maintenance/requests"
-  ],
   "maintenance/work/orders": [
     "maintenance/work/orders"
   ],
@@ -4502,10 +4497,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "mcp": [
     "mcp"
-  ],
-  "mcp/tool/metadata": [
-    "mcp",
-    "mcp/tool/metadata"
   ],
   "media": [
     "media"
@@ -4755,9 +4746,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "memories": [
     "memories"
-  ],
-  "memory/anchor": [
-    "memory/anchor"
   ],
   "memory/architecture": [
     "memory/architecture"
@@ -5052,12 +5040,11 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "particle": [
     "particle"
   ],
+  "parties": [
+    "parties"
+  ],
   "party": [
     "party"
-  ],
-  "party/identity": [
-    "party",
-    "party/identity"
   ],
   "patent": [
     "patent"
@@ -5095,9 +5082,9 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "payload": [
     "payload"
   ],
-  "payload/command": [
+  "payload/local": [
     "payload",
-    "payload/command"
+    "payload/local"
   ],
   "payload/redirect": [
     "payload",
@@ -5206,10 +5193,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "plugins",
     "plugins/mcp/seed"
   ],
-  "plugins/mcp/tools": [
-    "plugins",
-    "plugins/mcp/tools"
-  ],
   "plugins/naming": [
     "plugins",
     "plugins/naming"
@@ -5246,6 +5229,9 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "pqc": [
     "pqc"
+  ],
+  "preset": [
+    "preset"
   ],
   "prime": [
     "prime"
@@ -6184,6 +6170,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "scalpel": [
     "scalpel"
   ],
+  "scalpel/document": [
+    "scalpel",
+    "scalpel/document"
+  ],
   "scheduled/task": [
     "scheduled/task"
   ],
@@ -6241,6 +6231,15 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "seed/contact": [
     "seed",
     "seed/contact"
+  ],
+  "seed/content": [
+    "seed",
+    "seed/content"
+  ],
+  "seed/content/load": [
+    "seed",
+    "seed/content",
+    "seed/content/load"
   ],
   "seed/post": [
     "seed",
@@ -6491,6 +6490,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "standards": [
     "standards"
   ],
+  "standards/document": [
+    "standards",
+    "standards/document"
+  ],
   "standards/improve": [
     "standards",
     "standards/improve"
@@ -6606,9 +6609,6 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "tax/jurisdictions/tax/returns": [
     "tax/jurisdictions",
     "tax/jurisdictions/tax/returns"
-  ],
-  "tax/period/integration": [
-    "tax/period/integration"
   ],
   "tax/period/reconciliation": [
     "tax/period/reconciliation"
@@ -6729,6 +6729,15 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ],
   "think": [
     "think"
+  ],
+  "think/document": [
+    "think",
+    "think/document"
+  ],
+  "think/document/check": [
+    "think",
+    "think/document",
+    "think/document/check"
   ],
   "threat": [
     "threat"
@@ -7035,6 +7044,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "verify": [
     "verify"
   ],
+  "verify/case": [
+    "verify",
+    "verify/case"
+  ],
   "verify/inventory": [
     "verify",
     "verify/inventory"
@@ -7277,4 +7290,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 895 as const
+export const MERGED_NESTED_PATH_COUNT = 901 as const

@@ -43,7 +43,7 @@ healed=()
 # ── Artefact 1 (docs/STANDARDS_INDEX.md) REMOVED ─────────────────────
 # The loose generated md violated md-purity (only SKILL.md is allowed) and was
 # superseded by the standards catalogue: src/standards/emit.ts →
-# src/standards/catalogue.ts → src/standards/SKILL.md. No artefact to heal here.
+# src/standards/seed.ts → src/standards/SKILL.md. No artefact to heal here.
 
 # ── Artefact 1.5: consistency-apply (Slice IIIIIIII 2026-05-11) ──────
 #
@@ -167,15 +167,15 @@ fi
 # heal for the catalogue. So the superseding artefact was the only derived file with no cure.
 #
 # It drifted on 2026-09-21 the moment statutory citations were attached to constants, and
-# `standards/emit — verify passes when catalogue.ts is fresh` turned an integration shard RED. The
+# `standards/emit — verify passes when seed.ts is fresh` turned an integration shard RED. The
 # pre-commit hook regenerates the index it no longer needs and not the catalogue it does.
 #
-# src/standards/emit.ts writes catalogue.ts AND the SKILL index, so both are staged together.
+# src/standards/emit.ts writes seed.ts AND the SKILL index, so both are staged together.
 if [ "$DRY_RUN" = 0 ]; then
   if ./node_modules/.bin/tsx src/standards/emit.ts >/tmp/erpax-catalogue.log 2>&1; then
-    if ! git diff --quiet -- src/standards/catalogue.ts src/standards/SKILL.md; then
+    if ! git diff --quiet -- src/standards/seed.ts src/standards/SKILL.md; then
       echo "auto-heal: standards catalogue drifted — regenerated"
-      git add src/standards/catalogue.ts src/standards/SKILL.md 2>/dev/null || true
+      git add src/standards/seed.ts src/standards/SKILL.md 2>/dev/null || true
       healed+=("standards catalogue")
     fi
   else

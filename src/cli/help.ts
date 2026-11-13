@@ -27,6 +27,7 @@ export const DOMAIN_META: Record<string, DomainMeta> = {
   build: { summary: 'Uuid build lane', example: 'pnpm erpax build uuid' },
   translations: { summary: 'i18n catalogue collect/verify', example: 'pnpm erpax translations verify' },
   spec: { summary: 'Spec generator', example: 'pnpm erpax spec gen' },
+  refactor: { summary: 'Apply a refactoring document through the scalpel', example: 'pnpm erpax refactor plan <file.md | slug>' },
   payload: { summary: 'Payload types verify + jobs', example: 'pnpm erpax payload verify-types' },
   deploy: { summary: 'D1 migrate + Cloudflare deploy', example: 'pnpm erpax deploy db' },
   plugin: { summary: 'Claude Code plugin manifests', example: 'pnpm erpax plugin claude' },

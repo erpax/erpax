@@ -49,7 +49,7 @@ export const FORMAT_LAW: Readonly<Record<ReportFormat, { readonly standards: rea
   'balance-sheet': { standards: ['IFRS-1', 'IFRS', 'US-GAAP'], atoms: ['accounting', 'accounts', 'assets'] },
   'income-statement': { standards: ['IFRS-15', 'IFRS'], atoms: ['accounting', 'invoices', 'revenue'] },
   'cash-flow': { standards: ['IFRS-7', 'SOX:2002 §302'], atoms: ['accounting', 'payments', 'receipts'] },
-  aging: { standards: ['IFRS-9'], atoms: ['invoices', 'customers', 'vendors'] },
+  aging: { standards: ['IFRS-9'], atoms: ['invoices', 'parties'] },
   'saf-t': { standards: ['BG Наредба Н-18', 'СУПТО'], atoms: ['accounting', 'invoices', 'ledger'] },
   'vat-return': { standards: ['ЗДДС', 'BG Наредба Н-18'], atoms: ['invoices', 'accounting'] },
   'audit-file': { standards: ['BG Наредба Н-18 §СУПТО', 'ISO-19011'], atoms: ['audit', 'ledger', 'accounting'] },

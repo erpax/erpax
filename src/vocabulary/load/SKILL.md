@@ -3,13 +3,13 @@ name: load
 description: "Use when reasoning about load as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/load"
 coordinate: "vocabulary/load · 8/crest · 3d9ea721"
-contentUuid: "e043d858-b68b-5096-af8d-3c67326810c2"
+contentUuid: "954f580f-9ef0-50c7-9497-50a087accce0"
 diamondUuid: "7ded2d50-eeb4-8d2f-b7d1-a972f4308c72"
 uuid: "3d9ea721-4108-83bb-802b-13034655729f"
 horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 19
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

@@ -116,6 +116,7 @@ import {
   buildNoveltyTools,
   buildOutwardTools,
   buildFamilyTools,
+  buildPublicTools,
   buildFrontierTools,
   buildWitnessTools,
   buildQuantumTools,
@@ -1764,6 +1765,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
   for (const t of buildOutwardTools()) tools.push(t)
   for (const t of buildFrontierTools()) tools.push(t)
   for (const t of buildFamilyTools()) tools.push(t)
+  for (const t of buildPublicTools()) tools.push(t)
   for (const t of buildWitnessTools()) tools.push(t)
   for (const t of buildQuantumTools()) tools.push(t)
   for (const t of buildGateTools()) tools.push(t)

@@ -1,7 +1,7 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import ts from 'typescript'
-import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
+import { memoByFingerprint, memoByFingerprintOnDisk } from '@/cache/fingerprint'
 import { computeDiamond, deploymentFaces } from '@/diamond'
 import { importsOf } from '@/rules/cycle'
 import { frozenCorpusInputs, schemaCollision } from '@/readme/compute'
@@ -373,13 +373,26 @@ function deployedEntries(cwd: string, deployed: (dir: string) => boolean): strin
 
 /** Every FILE the forward walk reaches — the liveness a referrer is judged by, since the atom-level census cannot see a dead barrel inside a reached atom. */
 export function reachedFiles(cwd: string = process.cwd()): ReadonlySet<string> {
-  const deployed = deploymentDoor(cwd)
-  const atoms = codeAtoms(cwd)
-  const doors: ExemptDoors = { shipped: shippedAtoms(cwd), words: schemaCollision(cwd).words, names: nameDoor(cwd) }
-  return walkImports([...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed), ...exemptEntries(cwd, atoms, doors)], cwd).seen
+  // a Set does not round-trip through JSON, so this seal is in-process only; the census below is sealed to disk
+  return memoByFingerprint('rules-unreached-reached-files', cwd, () => {
+    const deployed = deploymentDoor(cwd)
+    const atoms = codeAtoms(cwd)
+    const doors: ExemptDoors = { shipped: shippedAtoms(cwd), words: schemaCollision(cwd).words, names: nameDoor(cwd) }
+    return walkImports([...TOOLING_ENTRIES, ...deployedEntries(cwd, deployed), ...exemptEntries(cwd, atoms, doors)], cwd).seen
+  })
 }
 
+/**
+ * The census, sealed by the corpus fingerprint: 42.7 s of import walking on an unchanged tree was paid
+ * on every coil and every develop, twice per develop (the rosetta and the frontier's sources each asked).
+ * Same fingerprint ⇒ same tree ⇒ same census — the first caller computes, every sibling and every later
+ * process reads it in milliseconds; any edit bumps the fingerprint and recomputes.
+ */
 export function unreachedAtoms(cwd: string = process.cwd()): UnreachedAtom[] {
+  return memoByFingerprintOnDisk('rules-unreached-atoms', cwd, () => unreachedCensus(cwd))
+}
+
+function unreachedCensus(cwd: string): UnreachedAtom[] {
   const deployed = deploymentDoor(cwd)
   const atoms = codeAtoms(cwd)
   const doors: ExemptDoors = { shipped: shippedAtoms(cwd), words: schemaCollision(cwd).words, names: nameDoor(cwd) }

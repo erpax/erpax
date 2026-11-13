@@ -2,18 +2,18 @@
 name: unreached
 description: "Use when reasoning about unreached — The accounting wave's remaining 258 is not 258 separate defects. It is **80 leaves and their ancestors**: an atom is charged , and every folder above it is then charged for the…"
 atomPath: "rules/unreached"
-coordinate: "rules/unreached · 1/base · 4f116904"
-contentUuid: "e2d2f0fd-fbd8-543d-9ad6-ce8d247862b4"
-diamondUuid: "ff47cc3e-b5e9-8c50-9ddc-226db0f43f81"
-uuid: "4f116904-449c-8818-abf9-f6def9252ce9"
-horo: 1
+coordinate: "rules/unreached · 7/descent · 01b807ce"
+contentUuid: "d23f1a9f-6794-58e3-9804-bb4c1ac7b421"
+diamondUuid: "57194f5e-d5df-8ea0-9643-a3eb8e6f4c2d"
+uuid: "01b807ce-24af-8d73-baa6-dac43cc2974a"
+horo: 7
 typography:
   partition: rules
-  bondDegree: 16
+  bondDegree: 19
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0a97a186-ebc1-8c5d-9ec8-3c9e2b2107d2"
+  computationUuid: "de936590-0fad-8ff4-a30d-d5c5d8e7babe"
   stages:
     - stage: path
       stageUuid: "9d6e22fb-5a8a-815c-9c16-f9d20f2c1b0f"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "daa8eda2-5de6-825b-bd7d-a7ad470a556f"
     - stage: links
-      stageUuid: "53d41ee1-bd72-8491-8e76-3115218b338a"
+      stageUuid: "720e16f5-0f59-85e7-9eeb-8fa65a613331"
     - stage: horo
-      stageUuid: "348da928-8a9f-8a88-a699-d53395a6a6a5"
+      stageUuid: "29c5c49f-b7ae-880b-89ef-a42484cb67d7"
     - stage: seal
       stageUuid: "7e48da22-6c40-8767-9cf0-31bb90b04753"
     - stage: uuid
-      stageUuid: "8692aa6f-8d3c-8ea7-949a-26cdb4c20679"
+      stageUuid: "19f63e7a-03d1-89a0-bfbf-ea2a7423488b"
 version: 2
 ---
 # rules/unreached — 80 atoms of code that nothing reaches, from any entry this corpus has
@@ -152,6 +152,16 @@ other axes counted it: the instrument measuring itself.
 **Law — [[law]]: an atom of code earns its place by being reachable. Try every door — deployed,
 gated, shipped, a word, or a name — and what is left is code nothing runs. Ask the question from the
 referrer's seat before ranking it; name it, ratchet it, and decide per atom; never sweep it.**
+
+## Sealed — the walk is paid once per tree
+
+Measured 2026-10-03 in a fresh process with the law populations already sealed: `unreachedAtoms` cost
+**42.7–54.8 s** of import walking, and every coil and every develop paid it — the develop twice, once
+for the rosetta and once for the frontier's sources. The census is a pure function of the tree, so it
+is now sealed by the corpus fingerprint ([[cache]]/fingerprint, on disk): the first caller computes,
+every later caller and every later process reads it — **1.2 s** on the hit, and any edit bumps the
+fingerprint and recomputes. `reachedFiles` is sealed in-process only, because a Set does not round-trip
+through JSON and this corpus never seals what it cannot read back.
 
 ## Standards
 

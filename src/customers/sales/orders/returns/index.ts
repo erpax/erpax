@@ -11,6 +11,7 @@
  * @security ISO-27002 §5.4 segregation-of-duties
  */
 
+import { deriveMovements } from '@/items/inventory/movements/source'
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { autoSetTimestamp } from '@/auto/set/timestamp'
@@ -37,7 +38,7 @@ const Returns: CollectionConfig = {
     // Slice XXXXXXXX-b (2026-05-11): retargeted from 'addresses' → 'customers'.
     // Returns counterparty is the original buyer (IFRS-15 §B25 right-of-
     // return). Address can be resolved via customer.shippingAddress.
-    { name: 'customer', type: 'relationship', relationTo: 'customers' },
+    { name: 'customer', type: 'relationship', relationTo: 'parties' },
     {
       name: 'reason',
       type: 'select',
@@ -82,7 +83,7 @@ const Returns: CollectionConfig = {
     ...auditFields(),
     notesField(),
   ],
-  hooks: standardCollectionHooks('returns', { beforeChange: [enforceSegregationOfDuties('approvedBy', 'createdBy'), autoSetTimestamp('authorisedAt', (d) => (d as { status?: string }).status === 'authorised'), autoSetTimestamp('receivedAt', (d) => (d as { status?: string }).status === 'received'), autoSetTimestamp('restockedAt', (d) => (d as { status?: string }).status === 'restocked')] }),
+  hooks: standardCollectionHooks('returns', { afterChange: [deriveMovements('returns')], beforeChange: [enforceSegregationOfDuties('approvedBy', 'createdBy'), autoSetTimestamp('authorisedAt', (d) => (d as { status?: string }).status === 'authorised'), autoSetTimestamp('receivedAt', (d) => (d as { status?: string }).status === 'received'), autoSetTimestamp('restockedAt', (d) => (d as { status?: string }).status === 'restocked')] }),
   timestamps: true,
 }
 

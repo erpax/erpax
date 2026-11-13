@@ -62,6 +62,7 @@ export default async function LocaleLayout({ children, params }: Args) {
   )
 }
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }))
-}
+// Rendered on demand, from the Payload API. Enumerating the locales here made the build render
+// every page once per language (1,874 documents, 1,680 of them one registry repeated 30 times);
+// the content is rows, so a change to it is a write to the collection rather than a rebuild.
+export const dynamic = 'force-dynamic'

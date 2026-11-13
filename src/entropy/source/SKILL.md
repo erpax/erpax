@@ -3,13 +3,13 @@ name: source
 description: "Use when a key must be born from randomness you can prove — seed quality is established at the source and across the fleet, never by inspecting the seed. A CSPRNG on a weak seed is indistinguishable from one on a strong seed, so no per-seed statistical test appears here by design. attest is an HMAC under a key only genuine hardware holds; admit refuses a forged tag, a short seed, and the same seed arriving from a second device (the deterministic-RNG fingerprint no single device can see). No key derives from an un-admitted seed."
 atomPath: "entropy/source"
 coordinate: "entropy/source · 2/share · f9fb6137"
-contentUuid: "8d021d5f-9b8e-539d-90e4-4cd5c0cc6681"
+contentUuid: "8f2e33e2-b0f6-507a-a881-737740c2f9c5"
 diamondUuid: "85a8a410-1aec-84f1-9b19-b33b2948132a"
 uuid: "f9fb6137-d6eb-880c-9ec9-f347d28f3a6e"
 horo: 2
 typography:
   partition: entropy
-  bondDegree: 67
+  bondDegree: 71
 standards:
   - "CoE-108+"
   - "NIST SP 800-108 — key derivation in counter mode"

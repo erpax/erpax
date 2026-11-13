@@ -11,6 +11,8 @@ import { ensureUniqueSlugWithinTenant } from '@/ensure/unique/slug/within/tenant
 import { pagesBeforeChange } from '@/cmspage/hooks'
 import { revalidateDelete, revalidatePage } from '@/cmspage/hooks'
 import { localeRecord } from '@/i18n'
+import { fillSeo, publishedStates } from '@/seed/content'
+import { checkLeadPage } from '@/think/document/check'
 
 import {
   MetaDescriptionField,
@@ -98,12 +100,13 @@ export const Pages: CollectionConfig = {
             }),
             MetaTitleField({
               hasGenerateFn: true,
+              overrides: { validate: publishedStates('title') },
             }),
             MetaImageField({
               relationTo: 'media',
             }),
 
-            MetaDescriptionField({}),
+            MetaDescriptionField({ overrides: { validate: publishedStates('description') } }),
             PreviewField({
               // if the `generateUrl` function is configured
               hasGenerateFn: true,
@@ -115,6 +118,16 @@ export const Pages: CollectionConfig = {
           ],
         },
       ],
+    },
+    {
+      name: 'seed',
+      type: 'text',
+      index: true,
+      admin: {
+        position: 'sidebar',
+        readOnly: true,
+        description: 'Content address of the seed row this document was loaded from — an unchanged row is not rewritten.',
+      },
     },
     {
       name: 'publishedAt',
@@ -176,6 +189,7 @@ export const Pages: CollectionConfig = {
   ],
   hooks: {
     afterChange: [revalidatePage],
+    beforeValidate: [fillSeo, checkLeadPage],
     beforeChange: pagesBeforeChange,
     afterDelete: [revalidateDelete],
   },

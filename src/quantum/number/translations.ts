@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about a number as a stream rather than a magnitude — the decimal point is the measurement that collapses an infinite digit-stream to a fixed value; remove it (compose, not dot) and the number is its uncollapsed sequence, pi the purest case that never resolves, its conjectured normality the even line.",
-    "uuid": "c5bcbdd2-9dfd-8ae5-916b-07142c45cf52",
+    "uuid": "2c601ff6-0ba7-844e-8bf7-7d2882d56e1f",
     "words": [
       "use",
       "when",

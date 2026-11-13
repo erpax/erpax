@@ -37,7 +37,7 @@ const VendorQuotes: CollectionConfig = {
   access: accountingCollectionAccess(),
   fields: [
     referenceField({ name: 'quoteNumber', description: 'Tenant-unique vendor quote number (e.g. VQ-2026-0001).' }),
-    { name: 'vendor', type: 'relationship', relationTo: 'vendors', required: true, index: true },
+    { name: 'vendor', type: 'relationship', relationTo: 'parties', required: true, index: true },
     { name: 'requisition', type: 'relationship', relationTo: 'purchase-requisitions', index: true,
       admin: { description: 'Source requisition (one PR may have many vendor quotes).' } },
     { name: 'rfqIssuedDate', type: 'date' },

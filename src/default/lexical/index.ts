@@ -12,6 +12,11 @@
 
 import type { TextFieldSingleValidation } from 'payload'
 import {
+  BlockquoteFeature,
+  EXPERIMENTAL_TableFeature,
+  InlineCodeFeature,
+  OrderedListFeature,
+  UnorderedListFeature,
   BoldFeature,
   ItalicFeature,
   LinkFeature,
@@ -20,6 +25,33 @@ import {
   UnderlineFeature,
   type LinkFields,
 } from '@payloadcms/richtext-lexical'
+
+/**
+ * What a DOCUMENT needs beyond a marketing paragraph: lists, tables, inline code and quotes. The
+ * nested pages and the posts hold seeded documents written in markdown, and a feature the editor
+ * does not carry is a construct the markdown converter leaves as raw text.
+ */
+/**
+ * The fence languages a document may carry, keyed as authors write them (`ts`, not `typescript`):
+ * a fence whose language is not listed here fails validation, so the list is the short names
+ * markdown actually uses. A fence with no language is plain text.
+ */
+export const codeLanguages = (): Record<string, string> => ({
+  plaintext: 'Plain text', txt: 'Text', ts: 'TypeScript', tsx: 'TSX', js: 'JavaScript', jsx: 'JSX',
+  typescript: 'TypeScript', javascript: 'JavaScript', json: 'JSON', jsonc: 'JSON with comments',
+  bash: 'Shell', sh: 'Shell', shell: 'Shell', zsh: 'Shell', sql: 'SQL', graphql: 'GraphQL',
+  yaml: 'YAML', yml: 'YAML', toml: 'TOML', css: 'CSS', scss: 'SCSS', html: 'HTML', xml: 'XML',
+  md: 'Markdown', markdown: 'Markdown', mdx: 'MDX', diff: 'Diff', lean: 'Lean', latex: 'LaTeX', tex: 'TeX', python: 'Python',
+  ruby: 'Ruby', rust: 'Rust', go: 'Go', dockerfile: 'Dockerfile', ini: 'INI', text: 'Text',
+})
+
+export const documentFeatures = () => [
+  UnorderedListFeature(),
+  OrderedListFeature(),
+  InlineCodeFeature(),
+  BlockquoteFeature(),
+  EXPERIMENTAL_TableFeature(),
+]
 
 export const defaultLexical = lexicalEditor({
   features: [

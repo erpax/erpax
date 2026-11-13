@@ -3,13 +3,13 @@ name: anchor
 description: "Use when reasoning about the external anchor — the one drop of borrowed entropy that makes a zero-entropy content-addressed store tamper-proof. RFC-3161/eIDAS TSA or a blockchain leaf pins the chain root to a time no party can rewrite; tamper-cost is min(digest, anchor), so the anchor must be ≥ the digest or it is the weak link. Matter-twin anchor/index.ts."
 atomPath: anchor
 coordinate: "anchor · 5/round · e1cc91d6"
-contentUuid: "6474d2e2-1c29-5eb1-a717-ddd457ad3da4"
+contentUuid: "b18dd43e-8b1f-5b17-9265-783d89a4614b"
 diamondUuid: "8bbeb9f2-b57e-8d88-b8ed-b54d76ec828b"
 uuid: "e1cc91d6-f068-81ca-8c52-9fce7626b8e7"
 horo: 5
 typography:
   partition: anchor
-  bondDegree: 142
+  bondDegree: 138
 standards:
   - "EU-537/2014"
   - "EU-910/2014"

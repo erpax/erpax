@@ -35,6 +35,7 @@
  * @see src/plugins/accounting/collections/PurchaseOrders.ts
  */
 
+import { deriveMovements } from '@/items/inventory/movements/source'
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { autoSetTimestamp } from '@/auto/set/timestamp'
@@ -90,7 +91,7 @@ const GoodsReceipts: CollectionConfig = {
     ...auditFields(),
     notesField(),
   ],
-  hooks: standardCollectionHooks('goods-receipts', { beforeChange: [enforceSegregationOfDuties('inspectedBy', 'createdBy'), autoSetTimestamp('inspectedAt', (d) => Boolean((d as { inspectedBy?: unknown }).inspectedBy))], afterChange: [emitGrPosted] }),
+  hooks: standardCollectionHooks('goods-receipts', { beforeChange: [enforceSegregationOfDuties('inspectedBy', 'createdBy'), autoSetTimestamp('inspectedAt', (d) => Boolean((d as { inspectedBy?: unknown }).inspectedBy))], afterChange: [emitGrPosted, deriveMovements('goods-receipts')] }),
   timestamps: true,
 }
 
