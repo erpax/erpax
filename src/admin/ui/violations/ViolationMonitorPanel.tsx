@@ -3,9 +3,9 @@
 import React, { useMemo } from 'react'
 
 import { tableColumns, useViolationMonitor, type ViolationEvent } from '@/admin/ui'
-import { Banner, Button, Collapsible, Gutter, Pill, Table, type PillProps } from '@payloadcms/ui'
+import { Banner, Button, Collapsible, Gutter, Pill, Table } from '@payloadcms/ui'
 
-const severityStyle = (severity: ViolationEvent['severity']): PillProps['pillStyle'] =>
+const severityStyle = (severity: ViolationEvent['severity']): React.ComponentProps<typeof Pill>['pillStyle'] =>
   severity === 'error' ? 'error' : severity === 'warning' ? 'warning' : 'light'
 
 /** Payload afterDashboard — live violation monitor, built from the admin panel's own components. */
@@ -43,7 +43,7 @@ const ViolationMonitorPanel: React.FC = () => {
 
       {education ? (
         <Collapsible
-          actions={<Button buttonStyle="secondary" margin={false} onClick={() => dismissCrossEducation()} size="small">Dismiss</Button>}
+          actions={<Button buttonStyle="secondary" margin={false} onClick={() => dismissCrossEducation()} size="medium">Dismiss</Button>}
           collapsibleStyle="error"
           header="Cross education — axis uncrossed"
         >
@@ -61,7 +61,7 @@ const ViolationMonitorPanel: React.FC = () => {
         {lastApplied.length > 0 ? <Pill pillStyle="success">{lastApplied.length} improved</Pill> : null}{' '}
         {lastQueued.length > 0 ? <Pill pillStyle="warning">{lastQueued.length} gated</Pill> : null}{' '}
         {crossEducationEvents.length > 0 ? <Pill pillStyle="error">{crossEducationEvents.length} cross</Pill> : null}{' '}
-        <Button buttonStyle="secondary" onClick={() => refresh()} size="small">Refresh scan</Button>
+        <Button buttonStyle="secondary" onClick={() => refresh()} size="medium">Refresh scan</Button>
       </div>
 
       {sources.length > 0 ? (

@@ -97,7 +97,7 @@ function fakeApi() {
     create: async ({ collection, data }: { collection: string; data: Record<string, unknown> }) => { const doc = { ...data, id: `${collection}-${tables[collection]!.length + 1}` }; tables[collection]!.push(doc); return doc },
     update: async ({ collection, id, data }: { collection: string; id: string; data: Record<string, unknown> }) => Object.assign(tables[collection]!.find((d) => d.id === id)!, data),
   }
-  return { api: api as never, tables }
+  return { api: api as never, raw: api, tables }
 }
 const convert = (() => ({ root: {} })) as never
 
@@ -118,9 +118,9 @@ describe('think/document — a lead is recorded, listed and closed through the A
   })
 
   it('closing a lead redirects its address to the page that resolved it and takes it off the list', async () => {
-    const { api, tables } = fakeApi()
+    const { api, raw, tables } = fakeApi()
     await recordLeads(api, [A, B], { convert })
-    await api.create({ collection: 'pages', data: { slug: 'search', title: 'search', _status: 'published' } })
+    await raw.create({ collection: 'pages', data: { slug: 'search', title: 'search', _status: 'published' } })
     const [first] = await openLeads(api)
     expect(await closeLead(api, first!.slug, 'search')).toMatchObject({ created: 1 })
     expect(tables.redirects![0]).toMatchObject({ from: `/${first!.slug}` })

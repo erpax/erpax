@@ -32,7 +32,7 @@ test.describe('SDK — documents are rows, read as text', () => {
 
   test('the search collection answers "which document" with title, slug and description only', async () => {
     const res = await sdk.find({ collection: 'search', limit: 5, depth: 0, select: { title: true, slug: true, meta: { description: true } } } as never)
-    for (const doc of res.docs as Record<string, unknown>[]) {
+    for (const doc of res.docs as unknown as Record<string, unknown>[]) {
       expect(Object.keys(doc).filter((k) => !['id', 'title', 'slug', 'meta'].includes(k)), JSON.stringify(doc)).toEqual([])
     }
   })

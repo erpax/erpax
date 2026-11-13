@@ -4,6 +4,7 @@ import { authenticated } from '@/authenticated'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { superAdminOnly, fieldAccess } from '@/is/super/admin'
 import { localeRecord } from '@/i18n'
+import { seedPresets } from '@/preset'
 import { updateAndDeleteAccess } from '@/tenants/access'
 import { normalizeTenantDomain, normalizeTenantSlug } from '@/tenants/hooks'
 
@@ -327,7 +328,7 @@ export const Tenants: CollectionConfig = {
     },
   ],
   hooks: {
-    afterChange: [auditTrailAfterChange('tenants')],
+    afterChange: [seedPresets, auditTrailAfterChange('tenants')],
   },
   timestamps: true,
 }

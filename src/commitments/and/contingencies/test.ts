@@ -52,8 +52,9 @@ describe('commitments/and/contingencies — the disclosed stage of provisions', 
   })
 
   it('dates a row the first time it is recognised, and never a disclosed one', () => {
-    expect(withRecognitionDate({ status: 'recognised' }, 'now').recognitionDate).toBe('now')
-    expect(withRecognitionDate({ status: 'recognised', recognitionDate: 'then' }, 'now').recognitionDate).toBe('then')
-    expect(withRecognitionDate({ status: 'disclosed' }, 'now').recognitionDate).toBeUndefined()
+    const row = (status: string, recognitionDate?: string): { status: string; recognitionDate?: string } => ({ status, recognitionDate })
+    expect(withRecognitionDate(row('recognised'), 'now').recognitionDate).toBe('now')
+    expect(withRecognitionDate(row('recognised', 'then'), 'now').recognitionDate).toBe('then')
+    expect(withRecognitionDate(row('disclosed'), 'now').recognitionDate).toBeUndefined()
   })
 })

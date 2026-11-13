@@ -11,7 +11,7 @@ describe('credit-memos collection node', () => {
 // A refund is no longer a collection: it is a line on the memo it pays out.
 describe('credit-memos — a refund is the cash-out stage of the memo', () => {
   const NOW = '2026-11-13T00:00:00.000Z'
-  const line = (amount: number, status: string) => ({ amount, status })
+  const line = (amount: number, status: string): { amount: number; status: string; refundedAt?: string | null; settledAt?: string | null } => ({ amount, status })
 
   it('counts only the lines that reached the customer', () => {
     expect(refunded({ refunds: [line(300, 'settled'), line(200, 'issued'), line(900, 'pending'), line(900, 'failed'), line(900, 'voided')] })).toBe(500)

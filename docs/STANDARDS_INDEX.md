@@ -2888,14 +2888,14 @@ src/tenant/roles/profile/payment-provider.profile.ts:10: * @standard PSD2 + PSD3
 src/tenant/scoped/read/index.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/tenant/scoped/read/index.test.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control
 src/tenants/access/updateAndDelete.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
-src/tenants/index.ts:114:     * @standard ISO-3166-1:2020 country-codes alpha-2 identity.country
-src/tenants/index.ts:115:     * @standard ISO-4217:2015 currency-codes alphabetic currency.reportingCurrency
-src/tenants/index.ts:116:     * @standard BCP-47 language-tag localization.defaultLocale
-src/tenants/index.ts:117:     * @standard ECMA-402 internationalization-api locale-cascade
-src/tenants/index.ts:20: * @standard ISO-17442-1:2020 lei legal-entity-identifier
-src/tenants/index.ts:21: * @standard ISO-3166-1:2020 country-codes alpha-2
-src/tenants/index.ts:22: * @standard ISO-4217:2015 currency-codes default-currency
-src/tenants/index.ts:23: * @standard BCP-47 language-tag default-locale
+src/tenants/index.ts:115:     * @standard ISO-3166-1:2020 country-codes alpha-2 identity.country
+src/tenants/index.ts:116:     * @standard ISO-4217:2015 currency-codes alphabetic currency.reportingCurrency
+src/tenants/index.ts:117:     * @standard BCP-47 language-tag localization.defaultLocale
+src/tenants/index.ts:118:     * @standard ECMA-402 internationalization-api locale-cascade
+src/tenants/index.ts:21: * @standard ISO-17442-1:2020 lei legal-entity-identifier
+src/tenants/index.ts:22: * @standard ISO-3166-1:2020 country-codes alpha-2
+src/tenants/index.ts:23: * @standard ISO-4217:2015 currency-codes default-currency
+src/tenants/index.ts:24: * @standard BCP-47 language-tag default-locale
 src/terminals/index.ts:13: * @standard BG Наредба-Н-18 §алтернативен-режим virtual-POS-terminal
 src/test/hooks/index.ts:10: * @standard A432 tuning; green = whole aura (a passing test)
 src/testing/config-discovery-advanced.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
@@ -4185,9 +4185,9 @@ src/tenant/service/index.ts:13: * @compliance GDPR Art.28 processor
 src/tenant/service/index.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
 src/tenants/access/updateAndDelete.ts:12: * @compliance GDPR Art.28 processor-controls
 src/tenants/access/updateAndDelete.ts:13: * @compliance SOC-2 CC6.1 logical-access-controls
-src/tenants/index.ts:24: * @compliance GDPR Art.4(7) data-controller
-src/tenants/index.ts:25: * @compliance GDPR Art.30 records-of-processing-activities
-src/tenants/index.ts:28: * @compliance SOC-2 CC6.1 logical-access-controls
+src/tenants/index.ts:25: * @compliance GDPR Art.4(7) data-controller
+src/tenants/index.ts:26: * @compliance GDPR Art.30 records-of-processing-activities
+src/tenants/index.ts:29: * @compliance SOC-2 CC6.1 logical-access-controls
 src/trading/api/client/index.ts:33: * @compliance PSD2 EU-2015/2366 open-banking-aggregators (Berlin Group NextGenPSD2)
 src/trading/api/client/index.ts:34: * @compliance EN-16931 Peppol-BIS-3 e-invoicing access-points (AS4)
 src/trading/api/index.ts:43: * @compliance PSD2 EU-2015/2366 open-banking-aggregators (Berlin Group NextGenPSD2)
@@ -4868,7 +4868,7 @@ src/taxing/jurisdictions/reporting/standards/index.ts:4: * @accounting IFRS repo
 src/taxing/jurisdictions/reporting/standards/index.ts:5: * @accounting US-GAAP reporting-framework
 src/tenant/context/index.ts:41: * @accounting IFRS IAS-1 presentation-of-financial-statements per-tenant-framework
 src/tenant/context/index.ts:42: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
-src/tenants/index.ts:118:     * @accounting IFRS IAS-1 presentation-of-financial-statements per-tenant-framework
+src/tenants/index.ts:119:     * @accounting IFRS IAS-1 presentation-of-financial-statements per-tenant-framework
 src/types/bank/reconciliation/index.ts:161: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank/reconciliation/index.ts:239: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank/reconciliation/index.ts:240: * @accounting US-GAAP ASC-310 receivables returned-checks
@@ -5429,9 +5429,9 @@ src/tenant/service/index.ts:12: * @security ISO-27002 §8.30 outsourced-developm
 src/tenants/access/updateAndDelete.ts:10: * @security ISO-27001 A.5.23 information-security-for-cloud-services tenant-isolation
 src/tenants/access/updateAndDelete.ts:11: * @security ISO-27002 §5.15 access-control
 src/tenants/hooks/normalizeRouting.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/tenants/index.ts:119:     * @security ISO-27001 A.5.23 cloud-service-tenant-isolation per-tenant-sandbox-config
-src/tenants/index.ts:26: * @security ISO-27001 A.5.23 information-security-for-cloud-services
-src/tenants/index.ts:27: * @security ISO-27002 §5.15 access-control
+src/tenants/index.ts:120:     * @security ISO-27001 A.5.23 cloud-service-tenant-isolation per-tenant-sandbox-config
+src/tenants/index.ts:27: * @security ISO-27001 A.5.23 information-security-for-cloud-services
+src/tenants/index.ts:28: * @security ISO-27002 §5.15 access-control
 src/terminals/index.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/transaction/failures/index.ts:18: * @security ISO-27001 A.5.24 incident-management-planning
 src/transaction/failures/index.ts:19: * @security ISO-27002 §5.27 information-security-event-correction
@@ -6294,7 +6294,7 @@ src/tenant/roles/profile/country.ts:56: * @audit ISO 19011:2018 §6.4.6 (treaty 
 src/tenants/access/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/tenants/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/tenants/hooks/normalizeRouting.ts:5: * @audit ISO-19011:2018 audit-trail routing-identity
-src/tenants/index.ts:120:     * @audit ISO-19011:2018 audit-trail config-change
+src/tenants/index.ts:121:     * @audit ISO-19011:2018 audit-trail config-change
 src/terminals/index.ts:14: * @audit ISO-19011:2018 audit-trail
 src/testing/config/discovery/index.ts:11: * @audit ISO-19011:2018 audit-trail config-discovery
 src/testing/index.ts:13: * @audit ISO-19011:2018 audit-trail seed-cleanup
