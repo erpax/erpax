@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when creating Payload collections from declarative metadata — createAccountingCollection injects audit fields, tamper-proof uuid, horo state ring, standards citations, and chain-event hooks so collection files carry only domain intent.",
-    "uuid": "3ed3d20b-3e2d-81e1-8839-3873cdf9a103",
+    "uuid": "1208c843-406c-8fe8-b747-b44043824ccd",
     "words": [
       "use",
       "when",
