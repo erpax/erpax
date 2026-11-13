@@ -1,20 +1,7 @@
 name: Setup erpax
-description: Node 22 + pnpm install + empty skills.index stub (fits Worker limits; skips 80MB emit). skill-index=none · registry-url · npm-latest serve the publish lane.
+description: Node 22 + pnpm install
 
 inputs:
-  skill-index:
-    description: 'stub (default, CI/deploy) or full (local research only)'
-    required: false
-    default: stub
-  ripgrep:
-    # NOTHING IN THE TREE CALLS `rg` ANY MORE. src/standards/emit was the one consumer and it now
-    # walks the tree in-process — which is faster, works in a temp directory, and finds the 5
-    # bannered files rg missed. The input stays for a caller that still asks, and defaults off:
-    # `apt-get install` cost 9.2s a job and took a shard down when an unrelated Microsoft repo
-    # returned 403. A gate must not depend on someone else's package server.
-    description: 'Install ripgrep — nothing in the tree needs it; kept for ad-hoc use'
-    required: false
-    default: 'false'
   registry-url:
     description: 'npm registry to authenticate against (publish jobs only; empty = no registry auth)'
     required: false
@@ -24,13 +11,6 @@ inputs:
     required: false
     default: 'false'
   cache:
-    # A `workflow_run` job runs with default-branch cache scope, so a job that checks out the SHA
-    # that TRIGGERED it must not restore a cache that run could have written — CodeQL
-    # `actions/cache-poisoning/poisonable-step`. Disabling the cache did NOT clear those alerts
-    # (every `run:` step after an untrusted checkout is poisonable, cache or not); cloudflare.yml
-    # now checks out the trusted ref instead and keeps the cache. The input stays for a caller
-    # that genuinely must execute a triggering SHA under write scope: pass 'false' there, and
-    # know that the checkout, not the cache, is what the rule is about.
     description: "Restore the pnpm cache — pass 'false' only from a job that checks out an untrusted SHA"
     required: false
     default: 'true'
@@ -53,28 +33,6 @@ runs:
       shell: bash
       run: npm install -g npm@latest
 
-    - name: Install ripgrep
-      if: inputs.ripgrep == 'true'
-      shell: bash
-      run: |
-        if ! command -v rg >/dev/null 2>&1; then
-          sudo apt-get update -qq && sudo apt-get install -y -qq ripgrep
-        fi
-
     - name: Install dependencies
       shell: bash
       run: pnpm install --frozen-lockfile
-
-    # The STUB is 265 fixed bytes and goes straight at the module that writes them — the erpax CLI
-    # boot alone was ~3s on top of the emitter's own [[aura]]/[[navigation]] graph, for a file whose
-    # content never varies. 6.3s → ~1s, in every job. The FULL emit keeps the CLI: it is local
-    # skill-router research, and its cost is paid once and knowingly.
-    - name: Emit skills.index
-      if: inputs.skill-index != 'none'
-      shell: bash
-      run: |
-        if [ "${{ inputs.skill-index }}" = "full" ]; then
-          pnpm erpax corpus skill
-        else
-          pnpm exec tsx src/skill/router/build/void/index.ts
-        fi

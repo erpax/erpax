@@ -20,8 +20,7 @@ import { uuidPlugin } from '@/uuid'
 import { taggablePlugin } from '@/plugins/taggable'
 import { uuidNamesPlugin } from '@/plugins/naming'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
-import { gatewayTools, mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
-import { erpaxMcpTools } from '@/agent/mcp-surface'
+import { mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
 import { versionsPlugin } from '@/plugins/versions'
 import { trelloClientFromEnv } from '@/trello'
 import { trelloPlugin, TRELLO_SYNC } from '@/trello/plugin'
@@ -462,15 +461,7 @@ export default buildConfig({
         Object.values(allCollections) as Array<{ slug: string }>,
       ),
       globals: mcpGlobalsConfig(),
-      // The erpax tool families (erpax.<area>.<leg> trinities) ride the gateway through the
-      // plugin's own custom-tool door — wire-named, mode-gated. A GETTER, because the plugin
-      // reads `mcp.tools` when it runs inside buildConfig, after every module has initialised;
-      // building them in this literal would run inside the import cycle. See @/plugins/mcp/seed.
-      mcp: {
-        get tools() {
-          return gatewayTools(erpaxMcpTools())
-        },
-      },
+      // The gateway serves Payload's collections and globals — nothing else.
       // Collapse the 824-column capability matrix (over D1's 100-col cap) to a
       // compact `scopes` field + virtual afterRead capabilities — the same
       // matrix→cross collapse as access. See src/plugins/mcp/scopes.

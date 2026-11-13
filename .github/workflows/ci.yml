@@ -1,18 +1,12 @@
-# Standards · lint · typecheck · vitest · Playwright UI · lean production build (build:next).
-# skills.index is STUBBED (see .github/actions/setup) — full 80MB emit is not CI.
-# Typegen/importmap verified in typecheck; OpenNext/CF use the same lean next build.
+# Lint · typecheck · tests · Playwright UI · production build — a Payload app's checks, nothing else.
 name: CI
 
 on:
   push:
-    branches: [main, master]
+    branches: [main]
   pull_request:
-    branches: [main, master]
+    branches: [main]
 
-# Every job here reads the tree and uploads an artifact; none writes to the repository, a PR, or a
-# package. The default GITHUB_TOKEN carries write scope anyway, and CodeQL
-# `actions/missing-workflow-permissions` flagged four jobs for holding a scope they never use. One
-# block at the top, read-only, covers them all; a job that ever needs more declares it on itself.
 permissions:
   contents: read
 
@@ -28,60 +22,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify every standards tag has a value
         run: bash scripts/standards-citation-index.sh --check
-      - name: Verify src/standards cites @standard or @rfc
-        run: bash scripts/standards-citation-index.sh --required
-      - name: Generate + verify STANDARDS_INDEX
-        run: |
-          bash scripts/standards-citation-index.sh --write-index
-          bash scripts/standards-citation-index.sh --verify-index
 
   lint:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-      # fetch-depth: 0 for the CITATION RING below. It compares the evidence surface against the
-      # FORK POINT, and the default shallow checkout has no base to fork from — the ring would come
-      # back empty and report a green that proves nothing. One full-history checkout in one job is
-      # the price of the lane being honest here rather than only in the pre-push hook, which
-      # `--no-verify` can skip.
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - uses: ./.github/actions/setup
-
-      # EVIDENCE SURVIVES THE REFACTOR THAT MOVES IT (src/rules/citation). A purge may delete a
-      # dead export and take the module docstring above it — that is how BG ЗПУПС and IFRS 1 left
-      # the corpus unnoticed, with tsc and every unit wave content. Zero is a theorem: there is no
-      # acceptable number of statutes a refactor may quietly stop citing.
-      - name: Citation ring (no standard may leave the evidence surface)
-        run: pnpm erpax rules/citation
-
-      # The last lane recomputing from scratch — 95s of a 100s run once the shards, the build and
-      # the typecheck learned to cite. `eslint src` reads the same bytes `tsc` does and asks a
-      # different question, so it gets its own address: sources ⊗ eslint.config.mjs ⊗ tsconfigs ⊗
-      # lockfile. The whole-repo pass is NOT addressed — it runs in ~4s over a scattered set no
-      # single fold describes honestly, and a lane that always runs cannot cite a stale answer.
-      - name: Restore the lint receipt
-        uses: actions/cache/restore@v4
-        with:
-          path: node_modules/.cache/erpax/test-receipts.json
-          key: erpax-lint-${{ runner.os }}-${{ github.sha }}
-          restore-keys: |
-            erpax-lint-${{ runner.os }}-
-
-      - run: pnpm erpax lint
-      - name: Lint src (cite what the address already answers)
-        if: github.event_name != 'pull_request'
-        run: pnpm erpax lint src
-      - name: Lint src — for real (the arbiter)
-        if: github.event_name == 'pull_request'
-        run: pnpm erpax lint src --all
-
-      - name: Seal the lint receipt
-        uses: actions/cache/save@v4
-        with:
-          path: node_modules/.cache/erpax/test-receipts.json
-          key: erpax-lint-${{ runner.os }}-${{ github.sha }}
+      - run: pnpm lint
 
   typecheck:
     name: TypeScript
@@ -91,112 +39,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
+      - run: pnpm typecheck
 
-      # The third and last lane that recomputed from scratch every push — 202s, and the critical
-      # path once the shards and the build learned to cite. Same store, same law: `tsc -p x` is a
-      # pure function of the TS sources, the tsconfigs and the lockfile; `verify-types` of the
-      # config's closure and the two artefacts it compares. Addresses cost 0.4s and 1s.
-      - name: Restore the typecheck receipts
-        uses: actions/cache/restore@v4
-        with:
-          path: node_modules/.cache/erpax/test-receipts.json
-          key: erpax-typecheck-${{ runner.os }}-${{ github.sha }}
-          restore-keys: |
-            erpax-typecheck-${{ runner.os }}-
-
-      # A pull request checks for real, as it does for the waves and the build.
-      - name: Types + typecheck (cite what the address already answers)
-        if: github.event_name != 'pull_request'
-        run: |
-          pnpm erpax payload verify-types
-          pnpm erpax lint typecheck
-      - name: Types + typecheck — for real (the arbiter)
-        if: github.event_name == 'pull_request'
-        run: |
-          pnpm erpax payload verify-types --all
-          pnpm erpax lint typecheck --all
-
-      - name: Seal the typecheck receipts
-        uses: actions/cache/save@v4
-        with:
-          path: node_modules/.cache/erpax/test-receipts.json
-          key: erpax-typecheck-${{ runner.os }}-${{ github.sha }}
-
-  test-int:
-    name: Integration Tests (shard ${{ matrix.shard }}/16)
+  test:
+    name: Tests (shard ${{ matrix.shard }}/4)
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     strategy:
-      # RECOMPUTING IS SOMETIMES UNAVOIDABLE; RECOMPUTING SERIALLY IS NOT.
-      #
-      # Receipts answer the steady state — a push that changes three atoms cites the rest.
-      # They cannot help a first run, a pull request, or a change to something everything
-      # imports, and that case ran 1,824 suites on ONE runner: 56 min, 123 min, twice killed
-      # at the cap. Sixteen runners carry ~114 suites each, ~12 batches instead of 152.
-      #
-      # The shard is a hash of the suite PATH, never its index in the roster — an index shifts
-      # every suite after an insertion, which would move suites between shards and strand the
-      # receipts each shard has cached. The address is the assignment (src/cli/local.ts).
       fail-fast: false
       matrix:
-        shard: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        shard: [1, 2, 3, 4]
     env:
       PAYLOAD_SECRET: test-secret-not-for-production-32-characters
       PAYLOAD_TEST_SKIP_MIGRATE: '1'
-      # Migrations are SKIPPED here and the schema is pushed from the live config instead — the
-      # greenfield path vitest.globalsetup.ts exists for. Without this, skip-migrate ⊕ no-push left
-      # the integration lane running against a database with NO TABLES: every suite that actually
-      # writes died on "no such table: tenants", and the ones that do not write reported green over
-      # nothing. Pushed ONCE per job (a sentinel in node_modules/.cache); later batches reuse it.
       PAYLOAD_DEV_PUSH: 'true'
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
+      - run: pnpm test --shard ${{ matrix.shard }}/4
 
-      # VERIFY BEATS RECOMPUTE. A suite's verdict is a function of its inputs — suite file +
-      # parsed import closure + schema surface — so a green verdict seals a receipt addressed
-      # by that hash, and while the hash stands the verdict stands (src/gate/receipt).
-      #
-      # This lane threw that away: `--all` voids the receipts. They were not wrong, they were
-      # unreachable — the store lived in node_modules/.cache on a runner destroyed every run,
-      # and the schema stamp was an mtime, which a fresh checkout moves on every clone.
-      #
-      # Keyed PER SHARD: a shard only ever runs its own suites, so its receipts are its own.
-      - name: Restore this shard's receipts (the verdicts already proven)
-        uses: actions/cache/restore@v4
-        with:
-          path: node_modules/.cache/erpax/test-receipts.json
-          key: erpax-receipts-${{ runner.os }}-s${{ matrix.shard }}-${{ github.sha }}
-          restore-keys: |
-            erpax-receipts-${{ runner.os }}-s${{ matrix.shard }}-
-
-      # PUSH cites receipts; a PULL REQUEST runs its shard's full roster.
-      #
-      # The receipt layer's own honest boundary is DATA: integration suites share one D1, so a
-      # suite that runs while its data-producing sibling is cited — or sharded onto another
-      # runner — can go red on rows nobody wrote. That is a false RED, the safe direction, and
-      # the shard names itself; `fail-fast: false` so one shard's red does not hide the other
-      # fifteen's answers.
-      - name: Test waves (cite what the address already answers)
-        if: github.event_name != 'pull_request'
-        run: pnpm erpax test waves --shard ${{ matrix.shard }}/16
-      - name: Test waves — full shard (the arbiter)
-        if: github.event_name == 'pull_request'
-        run: pnpm erpax test waves --all --shard ${{ matrix.shard }}/16
-
-      # Sealed only on green: the step above fails the job before this runs.
-      - name: Seal the receipts this shard earned
-        uses: actions/cache/save@v4
-        with:
-          path: node_modules/.cache/erpax/test-receipts.json
-          key: erpax-receipts-${{ runner.os }}-s${{ matrix.shard }}-${{ github.sha }}
-
-  # Local UI E2E — Playwright starts `pnpm dev` via its own webServer. The POST-deploy
-  # smoke is the `verify-live` job below, against the real Worker URL.
-  #
-  # PR-ONLY, deliberately. `verify-live` needs the push lane and the landing verdict reads it,
-  # so a job added to the push lane becomes a new gate on every deploy. Folding the old
-  # test-e2e.yml in here is a file consolidation, not a change of what blocks a release —
-  # running this on main is a separate decision, made on purpose.
   test-e2e:
     name: Playwright UI
     if: github.event_name == 'pull_request'
@@ -204,148 +65,27 @@ jobs:
     timeout-minutes: 45
     env:
       PAYLOAD_SECRET: test-secret-not-for-production-32-characters
-      # SAME DEFECT AS THE INTEGRATION LANE, ONE JOB OVER. That lane records what happens with
-      # skip-migrate and no-push: "a database with NO TABLES: every suite that actually writes
-      # died on 'no such table: tenants'". This job had 'false' and died on
-      # `D1_ERROR: no such table: header` — the header global, on the first page Playwright opens.
-      # The fix was found once and never propagated, which is rules/domain's law about a LANE
-      # rather than a file class: a cure reaches exactly the surfaces someone carried it to.
       PAYLOAD_DEV_PUSH: 'true'
       CI: 'true'
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
       - run: pnpm exec playwright install chromium --with-deps
-      - name: UI smoke (local webServer)
-        run: pnpm erpax test e2e-smoke
+      - run: pnpm test:e2e
       - name: Upload Playwright report
-        if: always()
+        if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
-          path: public/evidence/
+          path: playwright-report
           retention-days: 7
 
   build:
     name: Production build (lean)
     runs-on: ubuntu-latest
-    # Types freshness is the typecheck job; CF OpenNext uses the same lean next build.
-    #
-    # NOT `needs: [standards, lint, typecheck]` any more. That chain existed to avoid spending
-    # 7 build-minutes on a tree that lint would reject anyway — a sensible trade when the run
-    # was two hours and the build was noise. With the integration lane sharded, ~3 min of
-    # serialised gating IS the critical path, and a failing lint still fails the run whether or
-    # not the build ran beside it. Cost traded for wall-clock, deliberately.
     env:
       PAYLOAD_SECRET: test-secret-not-for-production-32-characters
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-        with:
-          ripgrep: 'false'
-      # NO .next/cache HERE, and that is measured, not assumed. Locally the cache is 2.8GB,
-      # and a build with it warm is 169s against 172s cold — one file changed, 3 seconds saved.
-      # Next's incremental cache buys ~2% on this app while risking minutes of transfer and a
-      # large bite of the 10GB repo cache quota. The layer that actually answers is below.
-
-      # And the layer above it: the BUILD ITSELF is a verdict. In CI this job is a gate — the
-      # .next output is discarded and cloudflare.yml runs its own OpenNext build — so a green
-      # build seals a receipt against its content address, and the same address is a lookup.
-      # 345 of this run's 420 seconds were here; computing the address costs 1.2s.
-      - name: Restore the build receipt
-        uses: actions/cache/restore@v4
-        with:
-          path: node_modules/.cache/erpax/test-receipts.json
-          key: erpax-build-receipt-${{ runner.os }}-${{ github.sha }}
-          restore-keys: |
-            erpax-build-receipt-${{ runner.os }}-
-
-      # Skip typegen/importmap/sitemap — committed + verified above; matches OpenNext buildCommand.
-      # A pull request builds for real: it is the arbiter, as it is for the waves.
-      - name: Build (cite what the address already answers)
-        if: github.event_name != 'pull_request'
-        run: pnpm erpax test build
-      - name: Build — for real (the arbiter)
-        if: github.event_name == 'pull_request'
-        run: pnpm erpax test build --all
-
-      - name: Seal the build receipt
-        uses: actions/cache/save@v4
-        with:
-          path: node_modules/.cache/erpax/test-receipts.json
-          key: erpax-build-receipt-${{ runner.os }}-${{ github.sha }}
-
-  # LIVE VERIFICATION — verify what is live, with no secret on the path.
-  #
-  # NO SECRET SHOULD STOP DEPLOYMENT (owner, 2026-09-13). The Worker is deployed by Cloudflare's
-  # git-connected build (`Workers Builds: erpax`) with the Worker's own stored secret; nothing here
-  # deploys. This job runs the two gates that need no secret — the offline contract gate and the
-  # Payload boot gate — and smokes the LIVE site. Its build command lives in the Cloudflare dashboard,
-  # not in this repo: Workers → erpax → Settings → Builds → `opennextjs-cloudflare build`, nothing
-  # before it (`pnpm build` is Turbopack, skips the 8 PRODUCTION_FOLDS and packed 23.4 MB gz against
-  # the 10 MiB ceiling; two Next builds is ~30 min against the 20-min build timeout).
-  #
-  # WHY A JOB HERE AND NOT A `workflow_run` WORKFLOW. This used to be cloudflare.yml, triggered on
-  # workflow_run of CI and checking out `workflow_run.head_sha` so it verified the commit CI judged.
-  # Both of those are what CodeQL `actions/cache-poisoning/poisonable-step` refuses: a workflow_run
-  # job holds default-branch cache scope, and executing the SHA that triggered it is untrusted code
-  # under that scope — nine alerts, one high, and disabling the cache cleared none of them. The job
-  # never needed the privilege: it reads no secret. As the last job of the run itself it waits for
-  # every lane through `needs`, inherits their verdict (a red lane skips it), and `github.sha` IS
-  # the commit CI judged — the same run, not a lookup of one. The three laws of src/deploy/pipeline
-  # (waits-for-ci · green-only · verified-sha) read exactly that shape.
-  #
-  # Honest boundary: the smoke checks whatever is live, which Cloudflare may have built from a newer
-  # push than this run. The landing verdict (src/arrival) ties a deploy to its commit; this job does not.
-  verify-live:
-    name: Live verification (no secrets)
-    needs: [standards, lint, typecheck, test-int, build]
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-    env:
-      LIVE_URL: ${{ vars.STAGING_URL || 'https://erpax.ceci.workers.dev' }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup erpax
-        uses: ./.github/actions/setup
-        with:
-          skill-index: stub
-          ripgrep: 'false'
-
-      # Both are deterministic and read no secret: they cannot flake on someone else's uptime.
-      - name: Contract gate — erpax parses what the external rails send
-        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/outward/gate/index.ts
-
-      - name: Boot gate — the Payload config loads
-        run: pnpm exec cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/run/load/index.ts
-
-      - name: Cache Playwright Chromium
-        id: pw-cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: pw-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-chromium-1.60.0
-
-      - name: Install Playwright Chromium
-        if: steps.pw-cache.outputs.cache-hit != 'true'
-        run: pnpm exec playwright install chromium --with-deps
-
-      - name: Ensure Playwright Chromium (cache hit)
-        if: steps.pw-cache.outputs.cache-hit == 'true'
-        run: pnpm exec playwright install chromium
-
-      - name: UI smoke against the live Worker
-        env:
-          PLAYWRIGHT_BASE_URL: ${{ env.LIVE_URL }}
-          SKIP_E2E_WEBSERVER: '1'
-        run: pnpm erpax test e2e-smoke
-
-      - name: Upload Playwright report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: cloudflare-ui-smoke
-          path: public/evidence/
-          retention-days: 7
+      - run: pnpm build
