@@ -1338,40 +1338,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "EU-1958",
-    "family": "eu",
-    "title": "Official languages of the EU",
-    "uuid": "1f3111fb-27b4-8405-b4cd-1f57aef4b539",
-    "color": "hsl(65 72% 49%)",
-    "count": 6,
-    "modules": [
-      {
-        "path": "src/agents/mcp/i18n/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ecosystem/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/i18n/localization/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/localize/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/mcp/tool/metadata/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/translations/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "NACE",
     "family": "eu",
     "title": "EU NACE Rev.2 economic-activity classification",
@@ -1401,6 +1367,36 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/vocabulary/manufacturing/seed/standards/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-1958",
+    "family": "eu",
+    "title": "Official languages of the EU",
+    "uuid": "1f3111fb-27b4-8405-b4cd-1f57aef4b539",
+    "color": "hsl(65 72% 49%)",
+    "count": 5,
+    "modules": [
+      {
+        "path": "src/agents/mcp/i18n/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ecosystem/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/i18n/localization/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/localize/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/translations/index.ts",
         "section": ""
       }
     ]
@@ -2046,7 +2042,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 201,
+    "count": 202,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -7715,7 +7711,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Language tags",
     "uuid": "766b2cca-d72d-8f02-86bb-6cb2c79717ce",
     "color": "hsl(75 64% 48%)",
-    "count": 75,
+    "count": 74,
     "modules": [
       {
         "path": "src/agents/mcp/i18n/index.ts",
@@ -8218,56 +8214,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "RFC-7231",
-    "family": "rfc",
-    "title": "HTTP/1.1 semantics",
-    "uuid": "87973b1c-65eb-86ba-8ae3-dad7710a10ed",
-    "color": "hsl(151 79% 42%)",
-    "count": 10,
-    "modules": [
-      {
-        "path": "src/agents/mcp/i18n/index.ts",
-        "section": "§3.1.3.2"
-      },
-      {
-        "path": "src/agents/mcp/i18n/test.ts",
-        "section": "§3.1.3.2"
-      },
-      {
-        "path": "src/i18n/harvest/index.ts",
-        "section": "§3.1.3.2"
-      },
-      {
-        "path": "src/locale/fallback/index.ts",
-        "section": "§3.1.3.2"
-      },
-      {
-        "path": "src/mcp/tool/metadata/SKILL.md",
-        "section": "§3.1.3.2"
-      },
-      {
-        "path": "src/mcp/tool/metadata/index.ts",
-        "section": "§3.1.3.2"
-      },
-      {
-        "path": "src/translate/SKILL.md",
-        "section": "§3.1.3.2"
-      },
-      {
-        "path": "src/translate/index.ts",
-        "section": "§3.1.3.2"
-      },
-      {
-        "path": "src/translations/SKILL.md",
-        "section": "§3.1.3.2"
-      },
-      {
-        "path": "src/translations/index.ts",
-        "section": "§3.1.3.2"
-      }
-    ]
-  },
-  {
     "id": "RFC-5545",
     "family": "rfc",
     "title": "iCalendar",
@@ -8306,6 +8252,48 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/scheduled/task/types.ts",
         "section": ""
+      }
+    ]
+  },
+  {
+    "id": "RFC-7231",
+    "family": "rfc",
+    "title": "HTTP/1.1 semantics",
+    "uuid": "87973b1c-65eb-86ba-8ae3-dad7710a10ed",
+    "color": "hsl(151 79% 42%)",
+    "count": 8,
+    "modules": [
+      {
+        "path": "src/agents/mcp/i18n/index.ts",
+        "section": "§3.1.3.2"
+      },
+      {
+        "path": "src/agents/mcp/i18n/test.ts",
+        "section": "§3.1.3.2"
+      },
+      {
+        "path": "src/i18n/harvest/index.ts",
+        "section": "§3.1.3.2"
+      },
+      {
+        "path": "src/locale/fallback/index.ts",
+        "section": "§3.1.3.2"
+      },
+      {
+        "path": "src/translate/SKILL.md",
+        "section": "§3.1.3.2"
+      },
+      {
+        "path": "src/translate/index.ts",
+        "section": "§3.1.3.2"
+      },
+      {
+        "path": "src/translations/SKILL.md",
+        "section": "§3.1.3.2"
+      },
+      {
+        "path": "src/translations/index.ts",
+        "section": "§3.1.3.2"
       }
     ]
   },

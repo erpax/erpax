@@ -147,6 +147,8 @@ export { default as PayrollRuns } from '@/bank/accounts/payroll/runs'
 export { default as Employees } from '@/employees'
 export { default as Connections } from '@/connections'
 export { default as Sectors } from '@/sectors'
+// The corpus as nested docs — one row per atom, loaded per tenant from a seed pack.
+export { default as Atoms } from '@/atoms'
 export { default as JobPositions } from '@/cost/centers/job/positions'
 export { default as TimeEntries } from '@/employees/time/entries'
 export { default as LeaveRequests } from '@/employees/leave/requests'
@@ -315,7 +317,6 @@ export { default as TransferPricingFiles } from '@/legal/entities/transfer/prici
 // Infrastructure: Metadata, Standards, Translations
 export { default as Standards } from '@/standards'
 export { default as Memories } from '@/memories'
-export { default as McpToolMetadata } from '@/mcp/tool/metadata'
 export { default as Translations } from '@/translations'
 
 // CRM-related (from ecommerce plugin)

@@ -77,6 +77,7 @@ export interface Config {
     activities: Activity;
     'ai-suggestions': AiSuggestion;
     'api-audit-events': ApiAuditEvent;
+    atoms: Atom;
     'audit-committee-members': AuditCommitteeMember;
     'audit-committee-minutes': AuditCommitteeMinute;
     'audit-committees': AuditCommittee;
@@ -181,7 +182,6 @@ export interface Config {
     'maintenance-work-orders': MaintenanceWorkOrder;
     'management-assessment-icfr': ManagementAssessmentIcfr;
     'management-certifications': ManagementCertification;
-    'mcp-tool-metadata': McpToolMetadatum;
     media: Media;
     memories: Memory;
     messages: Message;
@@ -332,6 +332,7 @@ export interface Config {
     activities: ActivitiesSelect<false> | ActivitiesSelect<true>;
     'ai-suggestions': AiSuggestionsSelect<false> | AiSuggestionsSelect<true>;
     'api-audit-events': ApiAuditEventsSelect<false> | ApiAuditEventsSelect<true>;
+    atoms: AtomsSelect<false> | AtomsSelect<true>;
     'audit-committee-members': AuditCommitteeMembersSelect<false> | AuditCommitteeMembersSelect<true>;
     'audit-committee-minutes': AuditCommitteeMinutesSelect<false> | AuditCommitteeMinutesSelect<true>;
     'audit-committees': AuditCommitteesSelect<false> | AuditCommitteesSelect<true>;
@@ -436,7 +437,6 @@ export interface Config {
     'maintenance-work-orders': MaintenanceWorkOrdersSelect<false> | MaintenanceWorkOrdersSelect<true>;
     'management-assessment-icfr': ManagementAssessmentIcfrSelect<false> | ManagementAssessmentIcfrSelect<true>;
     'management-certifications': ManagementCertificationsSelect<false> | ManagementCertificationsSelect<true>;
-    'mcp-tool-metadata': McpToolMetadataSelect<false> | McpToolMetadataSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     memories: MemoriesSelect<false> | MemoriesSelect<true>;
     messages: MessagesSelect<false> | MessagesSelect<true>;
@@ -5278,6 +5278,81 @@ export interface ApiAuditEvent {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * The corpus as nested docs — one row per atom, loaded per tenant from a seed pack.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "atoms".
+ */
+export interface Atom {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * The atom path — the account code (e.g. rules/copy).
+   */
+  path: string;
+  /**
+   * The leaf word of the path.
+   */
+  name: string;
+  /**
+   * Parent atom (self-referential — nested docs).
+   */
+  parent?: (string | null) | Atom;
+  /**
+   * The seed pack this row was loaded from (the first path segment).
+   */
+  pack?: string | null;
+  /**
+   * prose: the row is the whole atom. code: a package implements it.
+   */
+  kind?: ('prose' | 'code') | null;
+  /**
+   * The atom content-uuid in the corpus matrix.
+   */
+  address?: string | null;
+  /**
+   * Content address of the seed row — an unchanged row is not rewritten.
+   */
+  content?: string | null;
+  body?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * The body as markdown — write it to set the body, read it to get the body.
+   */
+  markdown?: string | null;
+  /**
+   * Atoms this body links to — resolved from its [[wikilinks]].
+   */
+  links?: (string | Atom)[] | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | Atom;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14750,94 +14825,6 @@ export interface ManagementCertification {
   createdAt: string;
 }
 /**
- * Localized + tenant-extensible metadata overlay for every registered erpax.* MCP tool. Translators fill description.<locale> via the admin UI; the catalog overlays the row's values at request time.
- *
- * — diamond-uuid: 207df9ef-db52-82ab-aeeb-5e6c859697a9
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "mcp-tool-metadata".
- */
-export interface McpToolMetadatum {
-  id: string;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid: string;
-  /**
-   * Canonical MCP tool id — e.g. "erpax.consistency.scan". Must match a registered tool in the catalog; orphan rows are flagged by the checkMcpToolMetadataOrphans invariant.
-   */
-  toolName: string;
-  /**
-   * Tool family — derived from the second segment of the toolName. Used for grouping in the admin UI.
-   */
-  area:
-    | 'accounting'
-    | 'agents'
-    | 'anchoring'
-    | 'archival'
-    | 'audit'
-    | 'blocks'
-    | 'chain'
-    | 'cloudflare'
-    | 'commerce'
-    | 'consistency'
-    | 'did'
-    | 'events'
-    | 'i18n'
-    | 'integrity'
-    | 'marketing'
-    | 'meta'
-    | 'multimedia'
-    | 'platform'
-    | 'pwa'
-    | 'refs'
-    | 'seo'
-    | 'spec'
-    | 'standards'
-    | 'storage'
-    | 'streams'
-    | 'voting'
-    | 'website'
-    | 'other';
-  /**
-   * Tool description; localizable. The MCP catalog overlays this on the code default at request time.
-   */
-  description: string;
-  /**
-   * Optional friendly name for admin UI panels (e.g. "Run consistency check" vs. "erpax.consistency.scan").
-   */
-  displayName?: string | null;
-  /**
-   * Free-form tags for grouping / filtering — "observability", "tamper-evident", "experimental", etc.
-   */
-  tags?:
-    | {
-        tag: string;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Optional URL to a per-locale documentation page that expands on the description.
-   */
-  documentationUrl?: string | null;
-  /**
-   * When false, the catalog falls back to the code default; the tool itself is NOT disabled (that's the feature-registry job — see access/feature-registry.ts).
-   */
-  enabled?: boolean | null;
-  /**
-   * Timestamp the row was last reconciled against the live tool catalog (by erpax.i18n.audit). Stale rows surface in the orphan-check.
-   */
-  lastSyncedFromCatalogAt?: string | null;
-  status?: ('enabled' | 'disabled' | 'pending_review') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * Generic persistence layer for MCP tools + DomainAgent in-memory state: fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps. Every row is content-uuid'd (Law 8) and can declare relatedTo edges (Law 10).
  *
  * — diamond-uuid: 50693d52-8ccc-813f-bd9f-ea2bc65b0ed0
@@ -18757,7 +18744,7 @@ export interface TransferPricingFile {
   createdAt: string;
 }
 /**
- * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > mcp-tool-metadata > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
+ * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
  *
  * — diamond-uuid: 3143469c-94d2-848c-a4df-7d6fc2f40a6e
  *
@@ -18797,7 +18784,7 @@ export interface Translation {
    */
   overrides?: {
     /**
-     * e.g. "mcp-tool-metadata" or "_static" when overriding a code default.
+     * e.g. "_static" when overriding a code default.
      */
     collection?: string | null;
     /**
@@ -20278,6 +20265,34 @@ export interface ApiAuditEventsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "atoms_select".
+ */
+export interface AtomsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  path?: T;
+  name?: T;
+  parent?: T;
+  pack?: T;
+  kind?: T;
+  address?: T;
+  content?: T;
+  body?: T;
+  markdown?: T;
+  links?: T;
+  breadcrumbs?:
+    | T
+    | {
+        doc?: T;
+        url?: T;
+        label?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24318,34 +24333,6 @@ export interface ManagementCertificationsSelect<T extends boolean = true> {
   relatedFindings?: T;
   signedDocument?: T;
   status?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "mcp-tool-metadata_select".
- */
-export interface McpToolMetadataSelect<T extends boolean = true> {
-  tenant?: T;
-  uuid?: T;
-  toolName?: T;
-  area?: T;
-  description?: T;
-  displayName?: T;
-  tags?:
-    | T
-    | {
-        tag?: T;
-        id?: T;
-      };
-  documentationUrl?: T;
-  enabled?: T;
-  lastSyncedFromCatalogAt?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -28859,6 +28846,7 @@ export interface TaskCreateCollectionExport {
       | 'activities'
       | 'ai-suggestions'
       | 'api-audit-events'
+      | 'atoms'
       | 'audit-committee-members'
       | 'audit-committee-minutes'
       | 'audit-committees'
@@ -28963,7 +28951,6 @@ export interface TaskCreateCollectionExport {
       | 'maintenance-work-orders'
       | 'management-assessment-icfr'
       | 'management-certifications'
-      | 'mcp-tool-metadata'
       | 'media'
       | 'memories'
       | 'messages'

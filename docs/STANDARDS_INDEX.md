@@ -378,6 +378,8 @@ src/armory/index.ts:14: * @standard ISA 501 — physical count as audit evidence
 src/armory/index.ts:15: * @standard ISO/IEC 27001 A.5.9 — inventory of assets; A.7.9 — assets off-premises
 src/arrival/index.ts:19: * @standard ISO-19011:2018 §6.4 — audit evidence: a check that did not run produced none
 src/artery/index.ts:23: * @standard Frank's Windkessel model; aortic elastic storage smooths cardiac output
+src/atoms/index.ts:13: * @standard CommonMark 0.31 markdown wire-form
+src/atoms/index.ts:14: * @standard ISO/IEC 25010:2023 §5.6 maintainability — one collection, standard API, no per-area tools
 src/audit/agent/index.ts:29: * @standard ISO-19011:2018 §6.4 — audit evidence: a finding traces to objective evidence
 src/audit/compliance/reporting/index.ts:13: * @standard SAF-T:3.0.2 Standard Audit File (Tax)
 src/audit/compliance/reporting/index.ts:14: * @standard OECD Transfer Pricing Guidelines:2022 Documentation
@@ -1964,9 +1966,6 @@ src/maintenance/work/orders/index.ts:16: * @standard EN-13306:2017 maintenance-t
 src/maintenance/work/orders/index.ts:17: * @standard ISO-8601-1:2019 date-time scheduled-actual
 src/match/index.ts:24: * @standard schema.org Offer / Demand / PriceSpecification / QuantitativeValue
 src/match/index.ts:25: * @standard GS1 GTIN — product identity when both sides declare it
-src/mcp/tool/metadata/index.ts:29: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
-src/mcp/tool/metadata/index.ts:30: * @standard BCP-47 language tags
-src/mcp/tool/metadata/index.ts:31: * @standard EU 1958/1 official-languages-of-the-european-union
 src/media/Component.tsx:4: * @standard schema.org ImageObject
 src/media/Component.tsx:5: * @standard schema.org VideoObject
 src/media/Component.tsx:7: * @standard ISO/IEC-14496 mpeg-4 video
@@ -2964,9 +2963,9 @@ src/translation/index.ts:21: * @standard schema.org translationOfWork / workTran
 src/translation/source/index.ts:20: * @standard Wikidata (CC0) · Wikimedia MediaWiki API · BCP-47 locale tags
 src/translation/source/verified/index.ts:20: * @standard Wikidata (CC0) · Wikimedia MediaWiki API · BCP-47 locale tags · RFC 9562 §5.8 content-uuid
 src/translations/collect/index.ts:28: * @standard BCP-47 language tags · RFC 9562 §5.8 content-uuid (messaging-uuid)
-src/translations/index.ts:38: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
-src/translations/index.ts:39: * @standard BCP-47 language tags
-src/translations/index.ts:40: * @standard EU 1958/1 official-languages-of-the-european-union
+src/translations/index.ts:37: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
+src/translations/index.ts:38: * @standard BCP-47 language tags
+src/translations/index.ts:39: * @standard EU 1958/1 official-languages-of-the-european-union
 src/translator/index.ts:15: * @standard Johnson et al., "Google's Multilingual NMT System: Enabling Zero-Shot Translation," TACL (2017), arXiv:1611.04558
 src/treasury/index.ts:13: * @standard IPSAS 1 — presentation; IPSAS 2 — cash flow statements
 src/treasury/index.ts:14: * @standard INTOSAI GOV 9100 — internal control for the public sector
@@ -5063,6 +5062,7 @@ src/app/(frontend)/tenant-slugs/[tenant]/login/page.tsx:8: * @security ISO-27001
 src/app/(frontend)/tenant-slugs/[tenant]/login/page.tsx:9: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/app/(frontend)/tenant-slugs/[tenant]/page.tsx:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/app/(frontend)/tenant-slugs/layout.tsx:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/atoms/index.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/audit/events/index.ts:49: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/audit/events/index.ts:50: * @security ISO-27002 §8.15 logging
 src/audit/submissions/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -6061,7 +6061,6 @@ src/lung/index.ts:28: * @audit computed from first principles (Fick's law · dic
 src/maintenance/requests/index.ts:14: * @audit ISO-19011:2018 audit-trail maintenance-request-evidence
 src/maintenance/work/orders/index.ts:21: * @audit ISO-19011:2018 audit-trail work-order-evidence
 src/mala/index.ts:18: * @audit the 108 identities + digital root are computed; the dualities-on-round read live from @/duality
-src/mcp/tool/metadata/index.ts:32: * @audit Conservation Law 38 mcp-tool-standardization (per-tool metadata)
 src/media/audit/evidences/index.ts:6: * @audit ISO-19011:2018 evidence
 src/media/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/media/products/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
@@ -6334,9 +6333,9 @@ src/train/index.ts:27: * @audit ISO 19011 — efficiency, debt and pay are deter
 src/transaction/failures/index.ts:14: * @audit ISO-19011:2018 audit-trail failure-evidence
 src/translations/collect/index.ts:29: * @audit aura gap parity — a non-atom word here is a mint-queue word there
 src/translations/collect/test.ts:15: * @audit the matrix is never broken — green by construction, recomputed not trusted
-src/translations/index.ts:41: * @audit Conservation Law 8 content-uuid
-src/translations/index.ts:42: * @audit Conservation Law 10 referential-harmony (relatedTo back to the source row)
-src/translations/index.ts:43: * @audit ISO 19011:2018 §6.4.6 (translation changes audit-trailed)
+src/translations/index.ts:40: * @audit Conservation Law 8 content-uuid
+src/translations/index.ts:41: * @audit Conservation Law 10 referential-harmony (relatedTo back to the source row)
+src/translations/index.ts:42: * @audit ISO 19011:2018 §6.4.6 (translation changes audit-trailed)
 src/translator/index.ts:16: * @audit the interlingua is the content-uuid; computed from the live matrix, never hand-asserted
 src/types/bank/reconciliation/index.ts:10: * @audit ISO-19011:2018 audit-trail
 src/types/bank/reconciliation/index.ts:162: * @audit ISO-19011:2018 audit-trail bank-reconciliation
