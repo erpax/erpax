@@ -116,3 +116,6 @@ src/**/diamond.json
 # Another party's file, swept into a commit three times by `git add -A`. Untracked in
 # 47424bdd92 and re-added twice since — ignored so the sweep cannot happen a fourth time.
 RECURSION.md
+
+# Third-party agent skills, fetched from the source pinned in skills-lock.json (not redistributed here).
+.agents/

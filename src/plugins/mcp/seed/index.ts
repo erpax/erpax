@@ -30,9 +30,6 @@ export const MCP_GATEWAY_SEED_SLUGS = [
   'tenants',
   'roles',
   'payload-mcp-api-keys',
-  // The corpus as nested docs: one collection, so the standard find/create/update/delete tools
-  // serve every atom and the production surface stays inside the isolate's budget.
-  'atoms',
 ] as const satisfies readonly CollectionSlug[]
 
 export type McpSeedMode = 'seed' | 'full'

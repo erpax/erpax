@@ -13,6 +13,7 @@ import { createMembershipAdminMutateAccess } from '@/membership/admin/mutate/acc
 import { tenantScopedPostsReadAccess } from '@/tenant/scoped/read'
 import { documentPreviewAdmin } from '@/shareds'
 import { defaultVersionedDrafts } from '@/shareds'
+import { documentFeatures } from '@/default/lexical'
 import { Banner, Code, MediaBlock } from '@/blocks/config'
 import { ensureUniqueSlugWithinTenant } from '@/ensure/unique/slug/within/tenant'
 import { postsBeforeChange } from '@/posts/hooks'
@@ -100,6 +101,7 @@ export const Posts: CollectionConfig = {
                   return [
                     ...rootFeatures,
                     HeadingFeature({ enabledHeadingSizes: ['h1', 'h2', 'h3', 'h4'] }),
+                    ...documentFeatures(),
                     BlocksFeature({ blocks: [Banner, Code, MediaBlock] }),
                     FixedToolbarFeature(),
                     InlineToolbarFeature(),
@@ -142,6 +144,26 @@ export const Posts: CollectionConfig = {
               hasMany: true,
               relationTo: 'categories',
             },
+            {
+              name: 'pages',
+              type: 'relationship',
+              admin: {
+                position: 'sidebar',
+                description: 'The nested pages (documents) this publication is based on.',
+              },
+              hasMany: true,
+              relationTo: 'pages',
+            },
+            {
+              name: 'variants',
+              type: 'relationship',
+              admin: {
+                position: 'sidebar',
+                description: 'The product variants this publication is based on.',
+              },
+              hasMany: true,
+              relationTo: 'variants',
+            },
           ],
           label: localeRecord('tab.meta'),
         },
@@ -173,6 +195,16 @@ export const Posts: CollectionConfig = {
           ],
         },
       ],
+    },
+    {
+      name: 'seed',
+      type: 'text',
+      index: true,
+      admin: {
+        position: 'sidebar',
+        readOnly: true,
+        description: 'Content address of the seed row this document was loaded from — an unchanged row is not rewritten.',
+      },
     },
     {
       name: 'publishedAt',

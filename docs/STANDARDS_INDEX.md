@@ -296,9 +296,6 @@ src/app/(frontend)/[locale]/products/page.tsx:4: * @standard schema.org Product
 src/app/(frontend)/[locale]/products/page.tsx:5: * @standard schema.org ItemList
 src/app/(frontend)/[locale]/products/page.tsx:6: * @standard ISO-4217:2015 currency-codes price
 src/app/(frontend)/[locale]/products/page.tsx:7: * @standard GS1 GTIN global-trade-item-number
-src/app/(frontend)/[locale]/publications/[slug]/page.tsx:7: * @standard schema.org ScholarlyArticle
-src/app/(frontend)/[locale]/publications/page.tsx:8: * @standard schema.org ScholarlyArticle
-src/app/(frontend)/[locale]/publications/page.tsx:9: * @standard schema.org CollectionPage
 src/app/(frontend)/[locale]/search/page.tsx:4: * @standard schema.org SearchResultsPage
 src/app/(frontend)/[locale]/search/page.tsx:5: * @standard schema.org SearchAction
 src/app/(frontend)/layout.tsx:4: * @standard W3C HTML5 Living Standard
@@ -378,8 +375,6 @@ src/armory/index.ts:14: * @standard ISA 501 — physical count as audit evidence
 src/armory/index.ts:15: * @standard ISO/IEC 27001 A.5.9 — inventory of assets; A.7.9 — assets off-premises
 src/arrival/index.ts:19: * @standard ISO-19011:2018 §6.4 — audit evidence: a check that did not run produced none
 src/artery/index.ts:23: * @standard Frank's Windkessel model; aortic elastic storage smooths cardiac output
-src/atoms/index.ts:13: * @standard CommonMark 0.31 markdown wire-form
-src/atoms/index.ts:14: * @standard ISO/IEC 25010:2023 §5.6 maintainability — one collection, standard API, no per-area tools
 src/audit/agent/index.ts:29: * @standard ISO-19011:2018 §6.4 — audit evidence: a finding traces to objective evidence
 src/audit/compliance/reporting/index.ts:13: * @standard SAF-T:3.0.2 Standard Audit File (Tax)
 src/audit/compliance/reporting/index.ts:14: * @standard OECD Transfer Pricing Guidelines:2022 Documentation
@@ -1978,11 +1973,11 @@ src/media/index.ts:20: * @standard W3C PNG image
 src/media/index.ts:21: * @standard W3C SVG
 src/media/products/hooks/beforeChange.ts:11: * @standard ISO-4217:2015 currency-codes
 src/media/products/hooks/beforeChange.ts:8: * @standard schema.org Product
-src/media/products/index.ts:28: * @standard schema.org Product
-src/media/products/index.ts:29: * @standard GS1 GTIN global-trade-item-number
-src/media/products/index.ts:30: * @standard UN-CEFACT UNSPSC product-classification
-src/media/products/index.ts:31: * @standard ISO-4217:2015 currency-codes
-src/media/products/index.ts:32: * @standard BCP-47 language-tag i18n
+src/media/products/index.ts:29: * @standard schema.org Product
+src/media/products/index.ts:30: * @standard GS1 GTIN global-trade-item-number
+src/media/products/index.ts:31: * @standard UN-CEFACT UNSPSC product-classification
+src/media/products/index.ts:32: * @standard ISO-4217:2015 currency-codes
+src/media/products/index.ts:33: * @standard BCP-47 language-tag i18n
 src/media/sepa/mandates/index.ts:14: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
 src/media/sepa/mandates/index.ts:15: * @standard ISO-13616-1:2020 iban
 src/media/sepa/mandates/index.ts:16: * @standard ISO-9362:2022 bic
@@ -2259,11 +2254,11 @@ src/post/close/analytics/service.ts:19: * @standard GAAP VRE (Variance Reporting
 src/posts/hooks/populateAuthors.ts:12: * @standard schema.org Person author
 src/posts/hooks/populateAuthors.ts:13: * @standard schema.org Article author
 src/posts/hooks/revalidatePost.ts:10: * @standard W3C HTML5 Living Standard
-src/posts/index.ts:36: * @standard schema.org Article
-src/posts/index.ts:37: * @standard schema.org BlogPosting
-src/posts/index.ts:38: * @standard W3C HTML5 Living Standard
-src/posts/index.ts:39: * @standard BCP-47 language-tag i18n-routing
-src/posts/index.ts:40: * @standard ECMA-402 internationalization-api
+src/posts/index.ts:37: * @standard schema.org Article
+src/posts/index.ts:38: * @standard schema.org BlogPosting
+src/posts/index.ts:39: * @standard W3C HTML5 Living Standard
+src/posts/index.ts:40: * @standard BCP-47 language-tag i18n-routing
+src/posts/index.ts:41: * @standard ECMA-402 internationalization-api
 src/power/index.ts:32: * @standard NIST SP 800-107r1 §5.1 (hash strengths) · NIST SP 800-57 Part 1 r5 §5.6
 src/prime/index.ts:32: * @standard Fundamental Theorem of Arithmetic — unique prime factorisation (Euclid; Gauss)
 src/prime/index.ts:33: * @standard Shor 1994 — integer factorisation by quantum period-finding (proven, not claimed)
@@ -2611,6 +2606,7 @@ src/security/header/headers/test.ts:9: * @standard OWASP-ASVS V14 configuration
 src/security/header/index.ts:5: * @standard W3C CSP-3
 src/security/header/index.ts:6: * @standard W3C Permissions-Policy
 src/security/remote/access/index.ts:19: * @standard NIST SP 800-162 ABAC · NIST SP 800-107r1 §5.1 · CWE-59
+src/seed/content/index.ts:17: * @standard CommonMark 0.31 markdown wire-form
 src/seed/erpax-product-pages.ts:31: * @standard schema.org Product
 src/seed/erpax-product-pages.ts:32: * @standard schema.org WebSite breadcrumb
 src/seed/erpax-product-pages.ts:33: * @standard ISO-25010 usability marketing-content
@@ -3383,6 +3379,8 @@ src/app/(frontend)/[locale]/not-found.tsx:4: * @rfc 9110 §15.5.5 404-not-found
 src/app/(frontend)/[locale]/posts/page.tsx:7: * @rfc 5005 web-feed-paging-and-archiving
 src/app/(frontend)/[locale]/posts/page/[pageNumber]/page.tsx:5: * @rfc 5005 web-feed-paging-and-archiving
 src/app/(frontend)/[locale]/posts/page/[pageNumber]/page.tsx:6: * @rfc 3986 uniform-resource-identifier page-number-segment
+src/app/(frontend)/[locale]/publications/[slug]/page.tsx:7: * @rfc 9110 http-semantics permanent-redirect
+src/app/(frontend)/[locale]/publications/page.tsx:8: * @rfc 9110 http-semantics permanent-redirect
 src/app/(frontend)/[locale]/search/page.tsx:6: * @rfc 3986 uniform-resource-identifier query-component
 src/app/(frontend)/layout.tsx:10: * @rfc 9110 http-semantics
 src/app/(frontend)/next/coherence/route.ts:30: * @rfc 9110 http-semantics  @rfc 8259 json
@@ -3511,7 +3509,7 @@ src/media/hooks/beforeChange.ts:6: * @rfc 6838 mime-type media-type
 src/media/index.ts:17: * @rfc 6838 mime-type media-type
 src/media/products/hooks/beforeChange.ts:10: * @rfc 6838 mime-type media-type
 src/media/products/hooks/beforeChange.ts:9: * @rfc 3986 uri remote-media-source
-src/media/products/index.ts:33: * @rfc 3986 uri slug-to-url
+src/media/products/index.ts:34: * @rfc 3986 uri slug-to-url
 src/merge/open/graph/index.ts:6: * @rfc 3986 §5.3 reference-resolution
 src/nist/sp/800/108/derive-secret.test.ts:8: * @rfc 2104 hmac
 src/nist/sp/800/108/derive-secret.test.ts:9: * @rfc 5869 hkdf
@@ -3539,7 +3537,7 @@ src/payment/methods/index.ts:23: * @rfc 5116 authenticated-encryption-with-assoc
 src/posts/hooks/beforeChange.ts:8: * @rfc 3986 uri remote-media-source
 src/posts/hooks/revalidatePost.ts:8: * @rfc 9110 §13 caching
 src/posts/hooks/revalidatePost.ts:9: * @rfc 9111 http-caching
-src/posts/index.ts:35: * @rfc 3986 uri slug-to-url
+src/posts/index.ts:36: * @rfc 3986 uri slug-to-url
 src/remote/media/import/index.ts:5: * @rfc 3986 uniform-resource-identifier remote-source
 src/remote/media/import/index.ts:6: * @rfc 6838 mime-type media-type
 src/remote/media/import/index.ts:7: * @rfc 9110 http-semantics fetch
@@ -4081,7 +4079,7 @@ src/media/Component.tsx:9: * @compliance WCAG-2.1 §1.1.1 non-text-content alt-t
 src/media/hooks/beforeChange.ts:8: * @compliance GDPR Art.5(1)(c) data-minimization
 src/media/index.ts:22: * @compliance GDPR Art.5(1)(c) data-minimization no-pii-in-filenames
 src/media/index.ts:23: * @compliance GDPR Art.32 security-of-processing
-src/media/products/index.ts:34: * @compliance WCAG-2.1 level-AA accessibility
+src/media/products/index.ts:35: * @compliance WCAG-2.1 level-AA accessibility
 src/media/sepa/mandates/index.ts:21: * @compliance SOX §404 internal-controls
 src/media/sepa/mandates/index.ts:22: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 src/media/sepa/mandates/index.ts:23: * @compliance EPC130-08 sepa-direct-debit-rulebook
@@ -4123,7 +4121,7 @@ src/plugins/auth/access/index.ts:16: * @compliance SOC-2 CC6.1 logical-access-co
 src/plugins/versions/index.ts:30: * @compliance SOX §404 internal-controls record-retention
 src/posts/hooks/populateAuthors.ts:14: * @compliance GDPR Art.5(1)(c) data-minimization
 src/posts/hooks/populateAuthors.ts:15: * @compliance GDPR Art.32 security-of-processing
-src/posts/index.ts:41: * @compliance WCAG-2.1 level-AA accessibility
+src/posts/index.ts:42: * @compliance WCAG-2.1 level-AA accessibility
 src/properties/index.ts:23: * @compliance SOX §404 internal-controls real-estate-portfolio
 src/properties/investment/properties/index.ts:22: * @compliance SOX §404 internal-controls
 src/properties/spaces/index.ts:15: * @compliance SOX §404 internal-controls space-allocation
@@ -5062,7 +5060,6 @@ src/app/(frontend)/tenant-slugs/[tenant]/login/page.tsx:8: * @security ISO-27001
 src/app/(frontend)/tenant-slugs/[tenant]/login/page.tsx:9: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/app/(frontend)/tenant-slugs/[tenant]/page.tsx:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/app/(frontend)/tenant-slugs/layout.tsx:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/atoms/index.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/audit/events/index.ts:49: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/audit/events/index.ts:50: * @security ISO-27002 §8.15 logging
 src/audit/submissions/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation

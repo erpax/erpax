@@ -77,7 +77,6 @@ export interface Config {
     activities: Activity;
     'ai-suggestions': AiSuggestion;
     'api-audit-events': ApiAuditEvent;
-    atoms: Atom;
     'audit-committee-members': AuditCommitteeMember;
     'audit-committee-minutes': AuditCommitteeMinute;
     'audit-committees': AuditCommittee;
@@ -332,7 +331,6 @@ export interface Config {
     activities: ActivitiesSelect<false> | ActivitiesSelect<true>;
     'ai-suggestions': AiSuggestionsSelect<false> | AiSuggestionsSelect<true>;
     'api-audit-events': ApiAuditEventsSelect<false> | ApiAuditEventsSelect<true>;
-    atoms: AtomsSelect<false> | AtomsSelect<true>;
     'audit-committee-members': AuditCommitteeMembersSelect<false> | AuditCommitteeMembersSelect<true>;
     'audit-committee-minutes': AuditCommitteeMinutesSelect<false> | AuditCommitteeMinutesSelect<true>;
     'audit-committees': AuditCommitteesSelect<false> | AuditCommitteesSelect<true>;
@@ -2113,6 +2111,10 @@ export interface Page {
     image?: (string | null) | Media;
     description?: string | null;
   };
+  /**
+   * Content address of the seed row this document was loaded from — an unchanged row is not rewritten.
+   */
+  seed?: string | null;
   publishedAt?: string | null;
   /**
    * When enabled, the slug will auto-generate from the title field on save and autosave.
@@ -2162,6 +2164,14 @@ export interface Post {
   };
   relatedPosts?: (string | Post)[] | null;
   categories?: (string | Category)[] | null;
+  /**
+   * The nested pages (documents) this publication is based on.
+   */
+  pages?: (string | Page)[] | null;
+  /**
+   * The product variants this publication is based on.
+   */
+  variants?: (string | Variant)[] | null;
   meta?: {
     title?: string | null;
     /**
@@ -2170,6 +2180,10 @@ export interface Post {
     image?: (string | null) | Media;
     description?: string | null;
   };
+  /**
+   * Content address of the seed row this document was loaded from — an unchanged row is not rewritten.
+   */
+  seed?: string | null;
   publishedAt?: string | null;
   authors?: (string | User)[] | null;
   populatedAuthors?:
@@ -2215,6 +2229,31 @@ export interface Category {
     | null;
   updatedAt: string;
   createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "variants".
+ */
+export interface Variant {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Used for administrative purposes, not shown to customers. This is populated by default.
+   */
+  title?: string | null;
+  product: string | Product;
+  options: (string | VariantOption)[];
+  inventory?: number | null;
+  priceInEUREnabled?: boolean | null;
+  priceInEUR?: number | null;
+  updatedAt: string;
+  createdAt: string;
+  deletedAt?: string | null;
+  _status?: ('draft' | 'published') | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -2513,31 +2552,6 @@ export interface Form {
     | null;
   updatedAt: string;
   createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "variants".
- */
-export interface Variant {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Used for administrative purposes, not shown to customers. This is populated by default.
-   */
-  title?: string | null;
-  product: string | Product;
-  options: (string | VariantOption)[];
-  inventory?: number | null;
-  priceInEUREnabled?: boolean | null;
-  priceInEUR?: number | null;
-  updatedAt: string;
-  createdAt: string;
-  deletedAt?: string | null;
-  _status?: ('draft' | 'published') | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -5278,81 +5292,6 @@ export interface ApiAuditEvent {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * The corpus as nested docs — one row per atom, loaded per tenant from a seed pack.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "atoms".
- */
-export interface Atom {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * The atom path — the account code (e.g. rules/copy).
-   */
-  path: string;
-  /**
-   * The leaf word of the path.
-   */
-  name: string;
-  /**
-   * Parent atom (self-referential — nested docs).
-   */
-  parent?: (string | null) | Atom;
-  /**
-   * The seed pack this row was loaded from (the first path segment).
-   */
-  pack?: string | null;
-  /**
-   * prose: the row is the whole atom. code: a package implements it.
-   */
-  kind?: ('prose' | 'code') | null;
-  /**
-   * The atom content-uuid in the corpus matrix.
-   */
-  address?: string | null;
-  /**
-   * Content address of the seed row — an unchanged row is not rewritten.
-   */
-  content?: string | null;
-  body?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  /**
-   * The body as markdown — write it to set the body, read it to get the body.
-   */
-  markdown?: string | null;
-  /**
-   * Atoms this body links to — resolved from its [[wikilinks]].
-   */
-  links?: (string | Atom)[] | null;
-  breadcrumbs?:
-    | {
-        doc?: (string | null) | Atom;
-        url?: string | null;
-        label?: string | null;
-        id?: string | null;
-      }[]
-    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -20270,34 +20209,6 @@ export interface ApiAuditEventsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "atoms_select".
- */
-export interface AtomsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  path?: T;
-  name?: T;
-  parent?: T;
-  pack?: T;
-  kind?: T;
-  address?: T;
-  content?: T;
-  body?: T;
-  markdown?: T;
-  links?: T;
-  breadcrumbs?:
-    | T
-    | {
-        doc?: T;
-        url?: T;
-        label?: T;
-        id?: T;
-      };
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "audit-committee-members_select".
  */
 export interface AuditCommitteeMembersSelect<T extends boolean = true> {
@@ -24779,6 +24690,7 @@ export interface PagesSelect<T extends boolean = true> {
         image?: T;
         description?: T;
       };
+  seed?: T;
   publishedAt?: T;
   generateSlug?: T;
   slug?: T;
@@ -25332,6 +25244,8 @@ export interface PostsSelect<T extends boolean = true> {
   content?: T;
   relatedPosts?: T;
   categories?: T;
+  pages?: T;
+  variants?: T;
   meta?:
     | T
     | {
@@ -25339,6 +25253,7 @@ export interface PostsSelect<T extends boolean = true> {
         image?: T;
         description?: T;
       };
+  seed?: T;
   publishedAt?: T;
   authors?: T;
   populatedAuthors?:
@@ -28846,7 +28761,6 @@ export interface TaskCreateCollectionExport {
       | 'activities'
       | 'ai-suggestions'
       | 'api-audit-events'
-      | 'atoms'
       | 'audit-committee-members'
       | 'audit-committee-minutes'
       | 'audit-committees'

@@ -147,8 +147,6 @@ export { default as PayrollRuns } from '@/bank/accounts/payroll/runs'
 export { default as Employees } from '@/employees'
 export { default as Connections } from '@/connections'
 export { default as Sectors } from '@/sectors'
-// The corpus as nested docs — one row per atom, loaded per tenant from a seed pack.
-export { default as Atoms } from '@/atoms'
 export { default as JobPositions } from '@/cost/centers/job/positions'
 export { default as TimeEntries } from '@/employees/time/entries'
 export { default as LeaveRequests } from '@/employees/leave/requests'

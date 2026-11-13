@@ -2042,7 +2042,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 202,
+    "count": 201,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -7605,7 +7605,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "HTTP Semantics",
     "uuid": "42b50cc1-3e1e-814f-92b8-4ce817395a16",
     "color": "hsl(157 67% 39%)",
-    "count": 79,
+    "count": 81,
     "modules": [
       {
         "path": "src/allow/public/read/tenant/index.ts",
@@ -7642,6 +7642,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/app/(frontend)/[locale]/not-found.tsx",
         "section": "§15.5.5"
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/publications/[slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/publications/page.tsx",
+        "section": ""
       },
       {
         "path": "src/app/(frontend)/layout.tsx",
@@ -7693,14 +7701,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/app/(frontend)/tenant-slugs/[tenant]/login/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/tenant-slugs/layout.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/app/my-route/route.ts",
         "section": ""
       }
     ]
@@ -9117,7 +9117,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Linked-data type vocabulary",
     "uuid": "9cff4f7f-f5d5-8924-99c4-0d564a3735fb",
     "color": "hsl(231 64% 45%)",
-    "count": 1986,
+    "count": 1983,
     "modules": [
       {
         "path": "src/abdomen/SKILL.md",
@@ -9208,11 +9208,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/[locale]/publications/[slug]/page.tsx",
+        "path": "src/app/(frontend)/[locale]/search/page.tsx",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/[locale]/publications/page.tsx",
+        "path": "src/app/(frontend)/layout.tsx",
         "section": ""
       }
     ]

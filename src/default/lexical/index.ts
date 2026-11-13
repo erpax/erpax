@@ -12,6 +12,11 @@
 
 import type { TextFieldSingleValidation } from 'payload'
 import {
+  BlockquoteFeature,
+  EXPERIMENTAL_TableFeature,
+  InlineCodeFeature,
+  OrderedListFeature,
+  UnorderedListFeature,
   BoldFeature,
   ItalicFeature,
   LinkFeature,
@@ -20,6 +25,19 @@ import {
   UnderlineFeature,
   type LinkFields,
 } from '@payloadcms/richtext-lexical'
+
+/**
+ * What a DOCUMENT needs beyond a marketing paragraph: lists, tables, inline code and quotes. The
+ * nested pages and the posts hold seeded documents written in markdown, and a feature the editor
+ * does not carry is a construct the markdown converter leaves as raw text.
+ */
+export const documentFeatures = () => [
+  UnorderedListFeature(),
+  OrderedListFeature(),
+  InlineCodeFeature(),
+  BlockquoteFeature(),
+  EXPERIMENTAL_TableFeature(),
+]
 
 export const defaultLexical = lexicalEditor({
   features: [

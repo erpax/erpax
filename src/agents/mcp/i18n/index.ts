@@ -167,8 +167,8 @@ export async function resolveTranslation(args: {
  * Used by the catalog builder to overlay descriptions at request time.
  *
  * Descriptions live in `translations` with scope='mcp-tool'. The separate tool-metadata
- *   collection that once held them was folded into `atoms`: a tool's documentation is a nested
- *   doc like any other atom.
+ *   collection that once held them was removed: a tool's documentation is a nested
+ *   page like any other document.
  */
 export async function overlayLocalizedFromPayload(
   payload: {

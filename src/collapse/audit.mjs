@@ -31,7 +31,7 @@ const SURVIVORS = new Set([
   'employees', 'projects', 'items', 'invoices', 'gl-posting-rules', 'cost-centers',
   'warehouse-locations', 'work-centers', 'work-orders', 'inventory-movements',
   'compliance-frameworks', 'fiscal-devices', 'budget-planning', 'job-positions',
-  'atoms', 'pages', 'posts', 'media', 'categories',
+  'pages', 'posts', 'media', 'categories',
 ])
 
 // ── the four sinks, as scientific rules. Each rule: a target node + the skill

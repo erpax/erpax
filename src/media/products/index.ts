@@ -21,6 +21,7 @@ import type { DefaultDocumentIDType, Where } from 'payload'
 import { localeRecord } from '@/i18n'
 
 import { productsBeforeChange } from '@/media/products/hooks'
+import { deriveVariants } from '@/ecommerce/variants'
 
 /**
  * Products — ecommerce-plugin product override (variants, pricing, SEO).
@@ -229,6 +230,8 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
   ],
   hooks: {
     ...defaultCollection.hooks,
+    // A product's variants are the cartesian product of its options — derived, not typed.
+    afterChange: [...(defaultCollection.hooks?.afterChange ?? []), deriveVariants],
     beforeChange: productsBeforeChange(defaultCollection),
   },
 })

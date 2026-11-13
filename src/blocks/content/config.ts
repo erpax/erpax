@@ -10,6 +10,7 @@
  * @see docs/STANDARDS.md §3
  */
 
+import { documentFeatures } from '@/default/lexical'
 import type { Block, Field } from 'payload'
 
 import {
@@ -54,6 +55,7 @@ const columnFields: Field[] = [
         return [
           ...rootFeatures,
           HeadingFeature({ enabledHeadingSizes: ['h2', 'h3', 'h4'] }),
+          ...documentFeatures(),
           FixedToolbarFeature(),
           InlineToolbarFeature(),
         ]

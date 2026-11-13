@@ -117,6 +117,16 @@ export const Pages: CollectionConfig = {
       ],
     },
     {
+      name: 'seed',
+      type: 'text',
+      index: true,
+      admin: {
+        position: 'sidebar',
+        readOnly: true,
+        description: 'Content address of the seed row this document was loaded from — an unchanged row is not rewritten.',
+      },
+    },
+    {
       name: 'publishedAt',
       type: 'date',
       label: localeRecord('pages.publishedAt'),
