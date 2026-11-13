@@ -20,10 +20,8 @@ export const adminOrPublishedStatus: Access = async ({ req }) => {
     return true
   }
 
+  // No public tenant → an empty `in`, which matches nothing: the list is empty, never a refusal.
   const ids = await getAllowPublicReadTenantIds(req.payload)
-  if (ids.length === 0) {
-    return false
-  }
 
   const where: Where = {
     and: [{ _status: { equals: 'published' } }, { tenant: { in: ids } }],
