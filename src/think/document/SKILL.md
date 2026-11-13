@@ -1,6 +1,35 @@
 ---
 name: document
 description: "Use when a lead should be visible to everyone who can develop it — turns each open intent into a nested page under leads, and each resolved intent that names a document into a redirect from the lead's address to that document, as generated seeds loaded through the REST API."
+atomPath: "think/document"
+coordinate: "think/document · 5/round · 9f29c2e2"
+contentUuid: "68881ac9-a03c-5383-94da-f41f017aa57f"
+diamondUuid: "50eaba1f-982a-84ea-8d80-c9739475f850"
+uuid: "9f29c2e2-385c-8636-b8bd-b3749f7634c8"
+horo: 5
+typography:
+  partition: think
+  bondDegree: 63
+standards: []
+bindings: []
+signatures:
+  computationUuid: "c7956022-da5d-8751-945c-f2655390b9a4"
+  stages:
+    - stage: path
+      stageUuid: "b3944934-df70-882e-9e82-f2d2d5f1c0be"
+    - stage: trinity
+      stageUuid: "4e86e374-08c0-8f79-8aa7-8c664bdc827f"
+    - stage: boundary
+      stageUuid: "acc00a38-a26d-8185-b888-a92348e15884"
+    - stage: links
+      stageUuid: "d8f82b95-b8bf-8c92-aa59-017ebd3f927d"
+    - stage: horo
+      stageUuid: "6a4957b9-a188-88ae-8f0f-f6cd577ab3ad"
+    - stage: seal
+      stageUuid: "2d7a10d6-1a36-8a94-9cc6-b64e49e3e2e7"
+    - stage: uuid
+      stageUuid: "b2a07a99-c54a-8595-9939-3de2936561a4"
+version: 2
 ---
 # think/document — a lead is a page; a resolved lead is a redirect
 

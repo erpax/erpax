@@ -1,6 +1,36 @@
 ---
 name: load
 description: "Use when the corpus documents should live in Payload instead of in an agent's context — reads each atom's SKILL document, derives nested page rows, and writes them through the REST SDK against any reachable deployment, so a reader later finds one page by slug and selects its markdown."
+atomPath: "seed/content/load"
+coordinate: "seed/content/load · 4/weave · 43c236e6"
+contentUuid: "bc39b1b4-b544-562f-badf-463b143cfd7d"
+diamondUuid: "f35d021a-83a7-8b5e-848f-35fd351a9189"
+uuid: "43c236e6-1598-8bc3-9551-813c032049eb"
+horo: 4
+typography:
+  partition: seed
+  bondDegree: 22
+standards:
+  - "9110 http-semantics authorization"
+bindings: []
+signatures:
+  computationUuid: "51752a78-0f09-8485-b466-5d59f159c268"
+  stages:
+    - stage: path
+      stageUuid: "55675506-9d66-8d12-be50-5189ac06b312"
+    - stage: trinity
+      stageUuid: "04b09630-b6a6-8235-b33d-f1ba4b2eec2e"
+    - stage: boundary
+      stageUuid: "e5a0a876-870e-8b9d-b0be-9c1d9b4cff82"
+    - stage: links
+      stageUuid: "0f017edb-ab29-8f67-8c9a-9dcc05fcc7d4"
+    - stage: horo
+      stageUuid: "be459974-a320-85f3-9481-15202e43b3b3"
+    - stage: seal
+      stageUuid: "5756b2c3-63bf-80fc-9344-bb2b806eef26"
+    - stage: uuid
+      stageUuid: "3b81970d-b748-8bee-b36f-26e172159437"
+version: 2
 ---
 # seed/content/load — the documents go where they can be asked for
 

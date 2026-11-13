@@ -1,8 +1,38 @@
 ---
 name: content
 description: "Use when loading documents as data instead of building them into the site — markdown becomes nested pages (documents, with a parent and breadcrumbs) and posts (publications, which reference the pages and product variants they are based on), written through the Local API with the editor of the field they land in, idempotently by content address."
+atomPath: "seed/content"
+coordinate: "seed/content · 7/descent · 3d516ed3"
+contentUuid: "6e2f11ed-8c3f-5fc8-9117-e299e68b0836"
+diamondUuid: "658b036e-77f2-8652-8732-343f614cc46e"
+uuid: "3d516ed3-9d8e-847c-bb9a-dddf83d66733"
+horo: 7
+typography:
+  partition: seed
+  bondDegree: 120
+standards:
+  - "CommonMark 0.31 markdown wire-form"
+  - "ISO-15836-1:2017 dublin-core title description"
+bindings: []
+signatures:
+  computationUuid: "b7c7ce17-f95c-833b-88db-b3a8113d4d52"
+  stages:
+    - stage: path
+      stageUuid: "85deb229-97a1-822d-8a3f-28b499b79036"
+    - stage: trinity
+      stageUuid: "8c1122cd-efe1-8b6e-b231-089970ee6bd7"
+    - stage: boundary
+      stageUuid: "631e7ac1-a451-8a84-9043-b958df49d72d"
+    - stage: links
+      stageUuid: "1aa7f8ab-db2f-80c7-a35c-a9789dc4c6fd"
+    - stage: horo
+      stageUuid: "c7e76179-d610-8229-9916-bfa19d53bc3d"
+    - stage: seal
+      stageUuid: "086e6c7a-c6fc-80a8-b16c-83b1ad2a15c1"
+    - stage: uuid
+      stageUuid: "ecf31409-16e4-8950-b28f-b856c1c1d84a"
+version: 2
 ---
-
 # seed/content — documents are nested pages, publications are posts
 
 A page that is rendered into the build is content frozen at deploy time. This atom moves it the

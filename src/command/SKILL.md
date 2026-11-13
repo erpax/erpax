@@ -3,13 +3,13 @@ name: command
 description: "Use when classifying or executing the imperative-verb role of an autonomous workflow — the atom a loop runs as a step's command, paired with a question gate and a computed answer; the C-set of corpus verbs."
 atomPath: command
 coordinate: "command · 8/crest · 1320ddbe"
-contentUuid: "8c9e86a4-de78-5f40-b05e-17450d4fe74a"
+contentUuid: "9516fa97-0d56-5096-8da0-6481659560c7"
 diamondUuid: "02bfe7df-e2d2-8c16-b4fb-82c55eb23c87"
 uuid: "1320ddbe-0c6e-8e63-9e2f-3a6c8f5af842"
 horo: 8
 typography:
   partition: command
-  bondDegree: 62
+  bondDegree: 55
 standards:
   - "schema.org Action — the imperative move (here, the workflow step's verb)"
 bindings: []

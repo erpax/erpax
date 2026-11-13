@@ -1,8 +1,37 @@
 ---
 name: posting
 description: "Use when a ledger posting should follow from a journal entry instead of being typed — every field of a posting is already on its entry, so a hook writes the posting when the entry becomes posted, once, and a refusal by the ledger fails the posting rather than being swallowed."
+atomPath: "journal/entries/posting"
+coordinate: "journal/entries/posting · 7/descent · c0924670"
+contentUuid: "879c3197-5661-5f8f-bfd8-1b0d03e05624"
+diamondUuid: "c198dcac-e0c4-81a3-bc09-543a2546c08c"
+uuid: "c0924670-37b1-8b1d-acc0-d6b236de72b0"
+horo: 7
+typography:
+  partition: journal
+  bondDegree: 48
+standards:
+  - "double-entry bookkeeping — the posting inherits the entry's balance, it cannot break it"
+bindings: []
+signatures:
+  computationUuid: "fec19539-1228-86b6-87a6-6ca67cdc1b53"
+  stages:
+    - stage: path
+      stageUuid: "81765565-8096-88c1-a330-10183639eb84"
+    - stage: trinity
+      stageUuid: "f6d10f69-1193-8f9b-a441-a8dd90de412a"
+    - stage: boundary
+      stageUuid: "1470ff79-f600-8c43-b810-6efa63d980e0"
+    - stage: links
+      stageUuid: "018abd4e-8e40-85af-aed2-0767ba580d7c"
+    - stage: horo
+      stageUuid: "4c12cca7-a26a-83e5-89fd-b17a4500c48e"
+    - stage: seal
+      stageUuid: "79777772-1a06-894f-b584-1d8157c8ae87"
+    - stage: uuid
+      stageUuid: "9647bfbd-12e3-8e90-9219-8c5bb4df2983"
+version: 2
 ---
-
 # journal/entries/posting — the ledger posting is derived from the entry
 
 `gl-postings` restates `journal-entries`: the date, the source, and one line per account with its

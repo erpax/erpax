@@ -3,13 +3,13 @@ name: source
 description: "Use when the translation intelligence must be trained with REAL renderings, not fabricated ones — fetches a word's community-maintained labels in every language from Wikidata (CC0), the zero-cost self-training source. Returns the concept id + description so the sense is verified before registering; returns null when no concept exists. Same pattern as the live sanctions check: a real authoritative endpoint, actually fetched, never invented."
 atomPath: "translation/source"
 coordinate: "translation/source · 7/descent · e2ddb5d0"
-contentUuid: "ba7dc672-40b6-5b49-81ad-9234810e6234"
+contentUuid: "3cb7db84-0332-54ce-b0d8-8b22d48b8cf8"
 diamondUuid: "fce845c5-f60a-8872-9620-52b8665c4610"
 uuid: "e2ddb5d0-bdbe-82ac-898c-ebf14b92b475"
 horo: 7
 typography:
   partition: translation
-  bondDegree: 67
+  bondDegree: 71
 standards:
   - "Wikidata (CC0) · Wikimedia MediaWiki API · BCP-47 locale tags"
 bindings: []

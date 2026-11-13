@@ -3,13 +3,13 @@ name: assets
 description: "Use when measuring, re-measuring, or disclosing IAS 41 biological assets — livestock, aquaculture, annual/perennial crops, forestry, vineyard produce — at fair-value-less-costs-to-sell; biological-transformation vs. price-change P&L split; bearer-plant IAS-16 carve-out; harvest-event transformation lifecycle. The IAS-41 biological-asset measurement collection."
 atomPath: "biological/assets"
 coordinate: "biological/assets · 2/share · 5375324a"
-contentUuid: "f2704928-5927-5868-9efb-3ff59d8357ed"
+contentUuid: "dff7066f-649a-5010-bffd-17b9ae86a5c4"
 diamondUuid: "966a1fae-85be-8788-8601-6f21c8124864"
 uuid: "5375324a-631c-8ad6-ae2e-a8953087c3dd"
 horo: 2
 typography:
   partition: biological
-  bondDegree: 120
+  bondDegree: 119
 standards:
   - "IAS-41"
   - "IFRS IAS-41 §10 recognition-criteria"

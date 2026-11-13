@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "standards",
-    "uuid": "b8bd3ae3-943d-8562-9ab1-15c698dd1aa7",
+    "uuid": "d59a5010-343c-8c5a-ad8f-dba514e85b35",
     "words": [
       "standards"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about standards — standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it).",
-    "uuid": "cdf08110-3114-8a64-91a8-5f9b40b0d126",
+    "uuid": "8dd5d00b-d5da-8cf4-bbbc-c13a51a2934c",
     "words": [
       "use",
       "when",

@@ -3,13 +3,13 @@ name: local
 description: "Use when reasoning about which safeguards a local-only message fabric can and cannot avoid — the send gate binds to EFFECT (one off-machine consumer makes the first local write the outward send), the injection boundary binds to CHANNEL (message content is data on any wire), and the content verdict binds to DECODED MEANING (invariant under glagolitic, cipher, or a quantum superposition of encodings — fails closed over branches)."
 atomPath: "message/local"
 coordinate: "message/local · 5/round · 918efe34"
-contentUuid: "ff9a87aa-2be8-5d26-818c-c25649f14315"
+contentUuid: "0de036e4-77ee-5e33-956d-397e3e1c0c45"
 diamondUuid: "cb6ee40e-1e5b-8a6e-8714-697ef26bc6b0"
 uuid: "918efe34-4fa8-87ac-9092-3697ac1e837c"
 horo: 5
 typography:
   partition: message
-  bondDegree: 41
+  bondDegree: 45
 standards: []
 bindings: []
 signatures:

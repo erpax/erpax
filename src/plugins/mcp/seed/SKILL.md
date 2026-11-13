@@ -3,17 +3,17 @@ name: seed
 description: "Use when shaping what the MCP gateway serves — the Worker-safe collection seed (gateway auth atoms, ERPAX_MCP_SEED/EXTRA/INCLUDE_CMS) and the erpax.<area>.<leg> families reached THROUGH the gateway rather than by importing its factory — the corpus tool families handed to @payloadcms/plugin-mcp's mcp.tools door, wire-named (dots to underscores, Anthropic's tool grammar), gated by mode (full carries them, the lean Worker seed opts in with ERPAX_MCP_TOOLS=1), collisions refused. The live /api/mcp served 844 CRUD tools and zero families until this; the liveness test had asked the factory."
 atomPath: "plugins/mcp/seed"
 coordinate: "plugins/mcp/seed · 8/crest · 3b44653f"
-contentUuid: "3ad4ff56-bcf1-55a2-9047-8d261e99993d"
-diamondUuid: "e4e0fbe8-5ee8-8605-a392-ca4d980ccc43"
+contentUuid: "a6abec46-4a3e-5d43-9438-f20532755f6c"
+diamondUuid: "c9289d06-5a2e-8dba-bba4-54951d88ac33"
 uuid: "3b44653f-4c73-82ae-b63e-a7d0f1702f04"
 horo: 8
 typography:
   partition: plugins
-  bondDegree: 121
+  bondDegree: 145
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5f7efd74-306f-80ad-ac43-00e3b385a584"
+  computationUuid: "1aae6d12-376a-800f-a3fd-2b16a28aa63b"
   stages:
     - stage: path
       stageUuid: "49528684-6204-8206-8231-b62213712c51"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9fbbde32-2118-808d-81c8-ce8e703615d1"
     - stage: horo
-      stageUuid: "5582448e-667f-8b96-9bab-c1734cc96f01"
+      stageUuid: "7d0dfc47-118b-8b66-ac71-ad36918c35bf"
     - stage: seal
       stageUuid: "351aad37-9138-8acc-bd6c-fe92de5cfef1"
     - stage: uuid
-      stageUuid: "c1bb9a92-335d-85b8-b48a-cacac4b4f015"
+      stageUuid: "b3563d20-4805-85f6-a16e-77bd815c2a6c"
 version: 2
 ---
 # plugins/mcp/seed — the gateway surface, derived not listed: the collection seed and the families handed through the plugin door

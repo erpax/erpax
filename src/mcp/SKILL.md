@@ -3,16 +3,14 @@ name: mcp
 description: "Use when configuring the erpax agent gateway — it IS the official @payloadcms/plugin-mcp; every collection becomes find/create/update/delete tools at /api/mcp, computed from the barrel never hand-listed; Bearer API-key auth inherits the key owner's access and tenant scope; custom tools added via the plugin mcp config."
 atomPath: mcp
 coordinate: "mcp · 2/share · 0c577e7e"
-contentUuid: "02a0e98a-79ea-5b93-9174-8070ab36e9cb"
+contentUuid: "15525b64-0eaa-537f-bf8f-1c9a674c8f95"
 diamondUuid: "35df84e5-12bf-80fd-9236-541d6ddd66d2"
 uuid: "0c577e7e-032e-8c92-b055-f3d6e79a58f8"
 horo: 2
 typography:
   partition: mcp
-  bondDegree: 140
-standards:
-  - "EU-1958"
-  - "RFC-7231"
+  bondDegree: 145
+standards: []
 bindings: []
 signatures:
   computationUuid: "73bc23d0-5ef5-8abc-bd0a-74fd4c142b9d"

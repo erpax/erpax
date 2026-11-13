@@ -3,13 +3,13 @@ name: posting
 description: "Use when reasoning about posting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: posting
 coordinate: "posting · 2/share · 5605e28a"
-contentUuid: "b48e633f-c43a-55ef-b0ec-8dddf36bc3fd"
+contentUuid: "a6f64b04-d62b-5203-90bb-abeba2009a29"
 diamondUuid: "2905428e-c7c6-8fb3-aae7-23354607607d"
 uuid: "5605e28a-39d2-862d-ad4c-51dd96684160"
 horo: 2
 typography:
   partition: posting
-  bondDegree: 44
+  bondDegree: 48
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

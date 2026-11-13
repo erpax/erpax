@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about operations — operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards.",
-    "uuid": "89dff324-f6cd-8668-adb7-a0088e76f330",
+    "uuid": "109f3a88-6ec7-8ed9-9df1-bc034c950d95",
     "words": [
       "use",
       "when",

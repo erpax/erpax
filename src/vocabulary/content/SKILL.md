@@ -3,13 +3,13 @@ name: content
 description: "Use when reasoning about content as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/content"
 coordinate: "vocabulary/content · 8/crest · 023c2fb8"
-contentUuid: "9ebf163e-6ab1-5c9f-8b86-1e08cf8fb914"
+contentUuid: "6021659c-b041-5d9f-beba-6297ffea44a0"
 diamondUuid: "19740d5e-cb46-80ae-a9f5-5b513a6fbc85"
 uuid: "023c2fb8-1316-8b16-a0cf-5ee6ec1b7470"
 horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 116
+  bondDegree: 120
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

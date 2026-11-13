@@ -1,6 +1,37 @@
 ---
 name: case
 description: "Use when a document's page should show what its law rests on — merges the SKILL's claim, the Lean theorems it cites as their source states them, and the kernel record rendered as LaTeX into one proof section in a fixed order: claim, argument, evidence, assumptions. A document with no formal proof is shown as having none."
+atomPath: "verify/case"
+coordinate: "verify/case · 5/round · 3b172ac7"
+contentUuid: "a07bea45-e0fe-59e3-aeeb-7a3694cc15a5"
+diamondUuid: "2bd9f50f-4268-8e89-bfee-3b74bef8884f"
+uuid: "3b172ac7-faf8-8ea5-88fb-bea518209314"
+horo: 5
+typography:
+  partition: verify
+  bondDegree: 13
+standards:
+  - "ISO-80000-2:2019 mathematical-signs-and-symbols"
+  - "ISO/IEC/IEEE-15026-2:2022 assurance-case claim argument evidence assumptions"
+bindings: []
+signatures:
+  computationUuid: "956a74c5-f7f3-8b31-823b-fceb02b86cd4"
+  stages:
+    - stage: path
+      stageUuid: "32245b27-300e-8bd2-915d-b18bd91517ef"
+    - stage: trinity
+      stageUuid: "90bf1db6-16ab-8930-bae8-260cb8f21830"
+    - stage: boundary
+      stageUuid: "096ead17-3986-8834-9e7a-0e782c0010c1"
+    - stage: links
+      stageUuid: "7b7ebe75-a57b-85db-87ca-a0be22112e96"
+    - stage: horo
+      stageUuid: "1b536333-e5ed-8efd-ae72-3dded9dfb03c"
+    - stage: seal
+      stageUuid: "128ad480-5073-8e24-8d6a-4c65595840b2"
+    - stage: uuid
+      stageUuid: "a30ca8ea-4cb0-8ac1-b183-16dc09f17fdb"
+version: 2
 ---
 # verify/case — every page shows its proof the same way
 

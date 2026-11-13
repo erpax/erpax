@@ -1,8 +1,36 @@
 ---
 name: variants
 description: "Use when a product's variants should be computed instead of typed — the variants are the cartesian product of the options of the product's variant types, so a hook creates the missing combinations as drafts when the product is saved, and the author confirms price and stock instead of enumerating them."
+atomPath: "ecommerce/variants"
+coordinate: "ecommerce/variants · 2/share · 7af78fe4"
+contentUuid: "38fa36ec-0f79-5277-8b91-8d3fd0e65245"
+diamondUuid: "c5a2766b-9d14-842a-abda-e40d444a71ce"
+uuid: "7af78fe4-ec3e-80fc-98ba-a1a0d97cfe11"
+horo: 2
+typography:
+  partition: ecommerce
+  bondDegree: 19
+standards: []
+bindings: []
+signatures:
+  computationUuid: "97572176-96bf-8764-bba8-4b8eedc785ff"
+  stages:
+    - stage: path
+      stageUuid: "fad1781f-b308-8489-95f9-5d24209bc95a"
+    - stage: trinity
+      stageUuid: "1360f288-b1d6-87f3-8588-da8c05adf16d"
+    - stage: boundary
+      stageUuid: "6778cbcd-ddd3-8eca-aa9a-5e3c25cc9b9e"
+    - stage: links
+      stageUuid: "e1b93f35-d224-84c8-8c38-61df0e3218ed"
+    - stage: horo
+      stageUuid: "0a6664e2-e912-81c7-82d2-a47805a5aba3"
+    - stage: seal
+      stageUuid: "aecbd070-c686-88b8-8be6-b0bcaa867ad6"
+    - stage: uuid
+      stageUuid: "d15fdccb-3401-85e1-911f-a1b6d1f8b241"
+version: 2
 ---
-
 # ecommerce/variants — a variant is the result of a hook
 
 The ecommerce plugin stores what varies (the variant types on a product) and the values each can

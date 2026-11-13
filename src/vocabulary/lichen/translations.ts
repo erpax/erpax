@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when one 'organism' is really a committee — a lichen is a fungus plus a photosynthetic partner (and often a yeast) living as a single composite body, the textbook case that the INDIVIDUAL is a question, not a given. Symbiosis incarnate; the natural twin of erpax's actor-merge (one identity, many partners).",
-    "uuid": "3c837042-7230-8215-9a83-85227fb7d701",
+    "uuid": "c2e3ee7d-b55d-8395-a8e4-6bde692428cc",
     "words": [
       "use",
       "when",

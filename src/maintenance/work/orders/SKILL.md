@@ -2,14 +2,14 @@
 name: orders
 description: "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000."
 atomPath: "maintenance/work/orders"
-coordinate: "maintenance/work/orders · 4/weave · 112a3c32"
-contentUuid: "4cd7c450-bc57-52ab-aa8f-a054ee2a852e"
-diamondUuid: "a43b8a13-0157-8645-995a-7bf2af843e2d"
-uuid: "112a3c32-a9c6-835d-bb2f-c882f9ea6649"
+coordinate: "maintenance/work/orders · 4/weave · b7948d99"
+contentUuid: "cff8d64e-1d84-503d-85f3-9f2106732a68"
+diamondUuid: "2b0c5bea-c805-85bd-8268-ea9c9a89d649"
+uuid: "b7948d99-e2f6-8afe-b20b-67b9889b0d3c"
 horo: 4
 typography:
   partition: maintenance
-  bondDegree: 96
+  bondDegree: 93
 standards:
   - "EN-13306:2017 maintenance-terminology"
   - "EN-13306:2017 maintenance-terminology`"
@@ -32,22 +32,22 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5b947b8f-dc5a-8045-b259-15ae9043ff84"
+  computationUuid: "7d5762ff-dbbb-871b-afc9-56730d32dfd0"
   stages:
     - stage: path
       stageUuid: "c6a956bb-34cd-84a7-b807-39badf6e89da"
     - stage: trinity
       stageUuid: "75a83c7c-d08c-8e9f-9852-5a6a33b581b8"
     - stage: boundary
-      stageUuid: "7d14719f-571c-8ece-8308-3d03f6901764"
+      stageUuid: "fdcb47ca-7624-85f7-a8c8-b3725173bd2d"
     - stage: links
-      stageUuid: "afa49f3d-cc19-8e84-99cd-a1f133da0d11"
+      stageUuid: "3e485c3d-323d-8757-9b82-6036b2e598b1"
     - stage: horo
-      stageUuid: "2cefbaca-3305-8e38-bf88-d4d2e9ca61f9"
+      stageUuid: "341f66b7-bfe0-8ee3-ad6f-a9c3a928d2ca"
     - stage: seal
       stageUuid: "fd8140a2-dc6f-82f2-ae3f-e9d01a693246"
     - stage: uuid
-      stageUuid: "7887ec57-d78c-8719-acbf-f8f93e4676f3"
+      stageUuid: "b36bcf51-6e5c-8f9a-aa45-2f83a691b0ce"
 version: 2
 ---
 # maintenance-work-orders

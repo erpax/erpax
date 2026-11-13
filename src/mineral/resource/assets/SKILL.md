@@ -3,13 +3,13 @@ name: assets
 description: "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register."
 atomPath: "mineral/resource/assets"
 coordinate: "mineral/resource/assets · 1/base · 517f3dce"
-contentUuid: "a75922c3-aa47-54eb-87bf-da67e4fe70c2"
+contentUuid: "1af95909-3dd0-58f8-83cd-2ca52edb4d65"
 diamondUuid: "7400290a-f31a-8622-905c-74a389c3253e"
 uuid: "517f3dce-af2c-8236-9a4f-aeb0fff4c5ff"
 horo: 1
 typography:
   partition: mineral
-  bondDegree: 120
+  bondDegree: 119
 standards:
   - "IFRS IFRS-6 §17 reclassification-to-PPE-or-intangibles"
   - "IFRS IFRS-6 §17 reclassification-to-PPE-or-intangibles`"

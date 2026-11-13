@@ -1,6 +1,35 @@
 ---
 name: local
 description: "Use when working with Payload in THIS project — extends the upstream Payload skill with the local implementation: merged collections read through saved lists, rows derived by hooks, documents seeded as nested pages and read back as markdown over the SDK and MCP, migrations generated from the snapshot, and the tenant-scoped read rule."
+atomPath: "payload/local"
+coordinate: "payload/local · 2/share · e0a2e483"
+contentUuid: "2cfab68c-01c2-5325-9f6e-d93a16b184f7"
+diamondUuid: "ff7ec48a-414a-843d-a28c-8358615f1cd5"
+uuid: "e0a2e483-cc5b-8e86-98f0-bbc336b8fbda"
+horo: 2
+typography:
+  partition: payload
+  bondDegree: 45
+standards: []
+bindings: []
+signatures:
+  computationUuid: "50b1bedc-5cdb-8465-a290-ae0a1a104a41"
+  stages:
+    - stage: path
+      stageUuid: "6665874d-2536-8fd6-a1f0-168e3db05825"
+    - stage: trinity
+      stageUuid: "df7081fe-4bf4-89b4-9b09-0174cd107eed"
+    - stage: boundary
+      stageUuid: "c167acc8-db3e-8d7d-928d-84527149482e"
+    - stage: links
+      stageUuid: "1ee811f3-6aa0-8d21-86b9-bb96b60dbcc3"
+    - stage: horo
+      stageUuid: "0367d075-d49b-8bd3-b8cf-a466a19ab435"
+    - stage: seal
+      stageUuid: "88940d1f-953e-894e-891c-234858731f56"
+    - stage: uuid
+      stageUuid: "98fc7de8-2fc2-8024-b121-18bfda3a2262"
+version: 2
 ---
 # Payload here — the local extension of the upstream skill
 

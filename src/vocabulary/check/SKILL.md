@@ -3,13 +3,13 @@ name: check
 description: "Use when reasoning about check as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/check"
 coordinate: "vocabulary/check · 4/weave · 3c177202"
-contentUuid: "8ac98af2-d5e4-559d-945e-b940347ff0d3"
+contentUuid: "89e7d09b-315e-5433-ad6a-25dd2ffd208b"
 diamondUuid: "2760455b-f644-8f0f-bad9-9ac97b681bbb"
 uuid: "3c177202-296c-8989-bbd7-7de03b660d15"
 horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 28
+  bondDegree: 31
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

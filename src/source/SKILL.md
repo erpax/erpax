@@ -3,13 +3,13 @@ name: source
 description: "Use when tracking the origin of data — source document (purchase order for invoice), source system (ERP, spreadsheet), source bank account (for transfer), data-import source. Metadata for audit and reconciliation."
 atomPath: source
 coordinate: "source · 1/base · 502b02d2"
-contentUuid: "d8484ac8-a539-50b1-b21a-8cfd4311d3da"
+contentUuid: "9a1179d2-ca0b-56de-ae2f-f76df5ab056e"
 diamondUuid: "d8f24c8e-49b4-81cd-8040-6d062716d761"
 uuid: "502b02d2-03a9-806b-a83e-39b069488dc7"
 horo: 1
 typography:
   partition: source
-  bondDegree: 67
+  bondDegree: 71
 standards: []
 bindings: []
 signatures:

@@ -3,13 +3,13 @@ name: document
 description: "Use when reasoning about document as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: document
 coordinate: "document · 2/share · 752079ac"
-contentUuid: "555a7992-93df-57cb-8464-93fc87ae935f"
+contentUuid: "3ab7136b-74a3-5b87-8351-f8f20e018df4"
 diamondUuid: "c1b713db-316d-829e-918a-5255495d2042"
 uuid: "752079ac-ca46-8865-9a75-3dc5f4fd0cd0"
 horo: 2
 typography:
   partition: document
-  bondDegree: 56
+  bondDegree: 63
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

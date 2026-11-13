@@ -3,7 +3,7 @@ name: accounts
 description: "Use when maintaining the Chart of Accounts — creating or deactivating GL accounts, assigning accountType (asset/liability/equity/revenue/expense/gain-loss), tagging canonical roles (cash, ar, ap, revenue, IFRS-16 lease accounts) for the gl-account-resolver, tracking balances, and auditing account changes. The SAF-T §2 chart-of-accounts node."
 atomPath: "gl/accounts"
 coordinate: "gl/accounts · 7/descent · 75d7cab7"
-contentUuid: "c5cdc8f0-b015-5c96-9f77-306a4fbd000d"
+contentUuid: "26faec6f-1189-5f2c-9568-fb08b5824a9d"
 diamondUuid: "a49add48-d3fc-8474-b1e6-88cb67699ed2"
 uuid: "75d7cab7-3c24-8748-85ad-836e20c5dded"
 horo: 7
@@ -12,6 +12,7 @@ typography:
   bondDegree: 44
 standards:
   - "IFRS IAS-1 presentation-of-financial-statements"
+  - "ISO-13616-1"
   - "ISO-3166-2"
   - "ISO-4217:2015 currency-codes account-currency"
   - "ISO-4217:2015 currency-codes account-currency`"

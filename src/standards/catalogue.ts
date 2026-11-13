@@ -275,7 +275,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2019/2152 of the European Parliament and of the Council of 27 November 2019 on European business statistics (Intrastat intra-EU trade reporting)",
     "uuid": "5cbb6bc1-887a-8c8c-88fd-fba1a9346c71",
     "color": "hsl(339 57% 39%)",
-    "count": 352,
+    "count": 350,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -487,7 +487,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) No 537/2014 on specific requirements regarding statutory audit of public-interest entities",
     "uuid": "de157160-3a44-8b84-bac9-39c9c4f7b02e",
     "color": "hsl(333 63% 38%)",
-    "count": 55,
+    "count": 54,
     "modules": [
       {
         "path": "src/anchor/SKILL.md",
@@ -593,7 +593,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) No 910/2014 (eIDAS) — electronic identification and trust services for electronic transactions in the internal market, repealing Directive 1999/93/EC",
     "uuid": "018b582b-22ae-83d8-a596-9333dd35d691",
     "color": "hsl(35 73% 57%)",
-    "count": 55,
+    "count": 54,
     "modules": [
       {
         "path": "src/anchor/SKILL.md",
@@ -3059,7 +3059,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Date and time representation",
     "uuid": "dcc7dde3-fa6b-8409-9382-89554e4c4d2b",
     "color": "hsl(359 66% 49%)",
-    "count": 334,
+    "count": 332,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -3165,7 +3165,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Currency codes",
     "uuid": "2aa02578-47b5-80bf-ad53-a36e04aaccfb",
     "color": "hsl(112 57% 38%)",
-    "count": 310,
+    "count": 309,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -3377,7 +3377,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Country codes",
     "uuid": "33acc25b-1712-8bcd-88ff-6a849f536c4e",
     "color": "hsl(268 74% 57%)",
-    "count": 117,
+    "count": 116,
     "modules": [
       {
         "path": "src/address/validation/index.ts",
@@ -4786,60 +4786,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "ISO-41001",
-    "family": "iso",
-    "title": "Facility management",
-    "uuid": "fbbd366a-15f9-8ced-b3d5-c1fbe224344b",
-    "color": "hsl(5 74% 48%)",
-    "count": 11,
-    "modules": [
-      {
-        "path": "src/agents/registered/ops.agent.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/maintenance/requests/SKILL.md",
-        "section": "§8.1"
-      },
-      {
-        "path": "src/maintenance/requests/index.ts",
-        "section": "§8.1"
-      },
-      {
-        "path": "src/maintenance/work/orders/SKILL.md",
-        "section": "§8.1"
-      },
-      {
-        "path": "src/maintenance/work/orders/index.ts",
-        "section": "§8.1"
-      },
-      {
-        "path": "src/properties/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/properties/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/properties/spaces/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/properties/spaces/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "ISO-7064",
     "family": "iso",
     "title": "Check character systems",
@@ -4931,6 +4877,52 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/legislation/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ISO-41001",
+    "family": "iso",
+    "title": "Facility management",
+    "uuid": "fbbd366a-15f9-8ced-b3d5-c1fbe224344b",
+    "color": "hsl(5 74% 48%)",
+    "count": 9,
+    "modules": [
+      {
+        "path": "src/agents/registered/ops.agent.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/maintenance/work/orders/SKILL.md",
+        "section": "§8.1"
+      },
+      {
+        "path": "src/maintenance/work/orders/index.ts",
+        "section": "§8.1"
+      },
+      {
+        "path": "src/properties/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/properties/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/properties/spaces/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/properties/spaces/index.ts",
         "section": ""
       }
     ]
@@ -5088,48 +5080,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "ISO-55000",
-    "family": "iso",
-    "title": "Asset management",
-    "uuid": "69bdd54e-f5e9-8d00-a43a-c5b043eb812b",
-    "color": "hsl(69 58% 44%)",
-    "count": 8,
-    "modules": [
-      {
-        "path": "src/agents/registered/ops.agent.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/maintenance/requests/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/maintenance/work/orders/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/maintenance/work/orders/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/properties/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/properties/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "ISO-19160-4",
     "family": "iso",
     "title": "Addressing — components & conceptual model",
@@ -5163,6 +5113,44 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/validate/address/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ISO-55000",
+    "family": "iso",
+    "title": "Asset management",
+    "uuid": "69bdd54e-f5e9-8d00-a43a-c5b043eb812b",
+    "color": "hsl(69 58% 44%)",
+    "count": 7,
+    "modules": [
+      {
+        "path": "src/agents/registered/ops.agent.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/maintenance/work/orders/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/maintenance/work/orders/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/properties/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/properties/index.ts",
         "section": ""
       }
     ]
@@ -6449,7 +6437,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Enterprise Risk Management — Integrating with Strategy and Performance (2017)",
     "uuid": "4ff3ea84-eb9f-80d5-bc11-1a3996d0b20a",
     "color": "hsl(307 79% 50%)",
-    "count": 145,
+    "count": 144,
     "modules": [
       {
         "path": "src/address/validation/SKILL.md",
@@ -7487,7 +7475,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (revised — content/event uuid)",
     "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
     "color": "hsl(29 70% 49%)",
-    "count": 159,
+    "count": 157,
     "modules": [
       {
         "path": "src/agent/SKILL.md",

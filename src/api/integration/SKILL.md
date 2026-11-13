@@ -3,13 +3,13 @@ name: integration
 description: "Use when calling any external HTTP API — the outbound face of the one api atom, where a vendor is DATA (base URL, declared auth style, published limits with their source, credentials) and the machinery is shared: a continuous-refill token bucket over every published limit at once so a burst queues rather than drops, credentials that fail closed naming every missing variable, errors that propagate as IntegrationError with the vendor named, and a reuse fold that measures the same IntegrationFtl for every vendor — safe methods only, because deduping a write would drop it."
 atomPath: "api/integration"
 coordinate: "api/integration · 8/crest · 2503f6cf"
-contentUuid: "c8c62bc8-e040-5d81-a6c8-8aea9ccb4107"
+contentUuid: "c3f4f42d-1581-5f3d-9a51-15f58e177dbc"
 diamondUuid: "5f8dd1dc-b22b-8846-93fc-7d6e8d51fa3e"
 uuid: "2503f6cf-70b2-8327-96d9-1c9fc9b44baa"
 horo: 8
 typography:
   partition: api
-  bondDegree: 23
+  bondDegree: 21
 standards:
   - "ISO/IEC 25010:2023 §5.7.2 fault-tolerance — a rate-limited burst queues; it does not drop"
   - "RFC 6749 §1.4 bearer-credential — the token is the whole authority, env-only"

@@ -1,6 +1,35 @@
 ---
 name: document
 description: "Use when refactoring the corpus — a refactoring is written as a document (why, and the cuts in one JSON block), stored as a nested page under refactors, and applied by erpax itself through the scalpel: exactly-once-or-refuse, all-or-nothing, a red ring restores the batch. Run: pnpm erpax refactor plan <file.md | slug>"
+atomPath: "scalpel/document"
+coordinate: "scalpel/document · 7/descent · 41addc19"
+contentUuid: "1b84a7b6-3f34-5a80-811d-5d747a37a90c"
+diamondUuid: "ad9d3efe-ccd9-8355-bcca-539e7a082186"
+uuid: "41addc19-3ca4-8926-be56-3d22f5bd204f"
+horo: 7
+typography:
+  partition: scalpel
+  bondDegree: 63
+standards: []
+bindings: []
+signatures:
+  computationUuid: "c08de01c-4f36-8d8e-96d5-b6e688bc6cca"
+  stages:
+    - stage: path
+      stageUuid: "91c33a39-18f7-8851-88d0-1951b49819b9"
+    - stage: trinity
+      stageUuid: "e24a1c01-3d21-8b55-937a-5afe86f9e2ec"
+    - stage: boundary
+      stageUuid: "07dc9bc4-98fc-8d1a-b73f-f723449f225d"
+    - stage: links
+      stageUuid: "3e5852ac-3381-8895-9b0e-1b643d723247"
+    - stage: horo
+      stageUuid: "cf016a2d-f702-8706-99e9-d221bf55af87"
+    - stage: seal
+      stageUuid: "fc914bed-caf7-806b-9c0c-8480ce0d5a0f"
+    - stage: uuid
+      stageUuid: "db200748-21f6-89e5-9f1e-38224c024896"
+version: 2
 ---
 # scalpel/document — a refactoring is a document, and erpax applies it
 

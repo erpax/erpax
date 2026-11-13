@@ -1,8 +1,51 @@
 ---
 name: parties
 description: "Use when working with customers or vendors — they are one collection, parties, with a roles field; the Customers and Vendors lists are saved query presets over it, a party can hold both roles, and a role-specific field shows only for the role it belongs to."
+atomPath: parties
+coordinate: "parties · 4/weave · 0351e27d"
+contentUuid: "30852b32-b001-5b33-a93c-ce646ed3d23e"
+diamondUuid: "cf28480f-2c36-87d3-878c-5b821a08581c"
+uuid: "0351e27d-ecf0-8111-9145-385d481429cf"
+horo: 4
+typography:
+  partition: parties
+  bondDegree: 16
+standards:
+  - "EN-16931:2017 §BG-4 seller §BG-7 buyer"
+  - "GDPR Art.5 data-minimization"
+  - "GDPR Art.6(1)(b) lawful-basis-contract"
+  - "IFRS IFRS-9 financial-instruments accounts-receivable"
+  - "ISO-13616-1:2020 iban"
+  - "ISO-17442"
+  - "ISO-17442-1"
+  - "ISO-17442-1:2020 lei"
+  - "ISO-20022 pain.001 customer-credit-transfer-initiation"
+  - "ISO-20022 pain.008 customer-direct-debit-initiation"
+  - "ISO-3166-1:2020 country-codes via-addresses"
+  - "ISO-4217:2015 currency-codes"
+  - "ISO-9362:2022 bic"
+  - "US-GAAP ASC-310 receivables ASC-405 liabilities"
+  - "US-IRS Form-1099 information-return"
+bindings: []
+signatures:
+  computationUuid: "ffb3c3ed-1daa-84d6-b899-63bf03b6c93f"
+  stages:
+    - stage: path
+      stageUuid: "da7428cb-6076-8e1b-8cae-fbed57e84930"
+    - stage: trinity
+      stageUuid: "7e2550b8-28d7-8dfb-a5d8-de03ecbfde8c"
+    - stage: boundary
+      stageUuid: "d39d7b9e-504f-883f-9d0f-bcda5cc14bcf"
+    - stage: links
+      stageUuid: "63dfb49b-713c-8350-b9e4-fa86579e6d22"
+    - stage: horo
+      stageUuid: "c421de53-2b5e-8d1c-a42a-a9dae0a1e3a9"
+    - stage: seal
+      stageUuid: "fea01e56-b765-8885-bb20-40a5effacaca"
+    - stage: uuid
+      stageUuid: "291c5f99-ed59-8d58-9d67-85ba8baa061e"
+version: 2
 ---
-
 # parties — one master; customer and vendor are roles
 
 `customers` and `vendors` were the only two collections the shape measurement could prove were one

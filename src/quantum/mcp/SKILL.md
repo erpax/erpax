@@ -3,13 +3,13 @@ name: mcp
 description: "Use when reasoning about the MCP gateway in the quantum frame — one door exposing the whole trinity (payload data tools plus vitepress skill tools), the surface generated all-at-once from the corpus, every call by the actor-merge agent access-gated, quantum-compressed, and receipt-logged from the inside."
 atomPath: "quantum/mcp"
 coordinate: "quantum/mcp · 2/share · 6f52fcb6"
-contentUuid: "0ea7ed11-ec0c-52a4-b508-a2c4b1a6f0af"
+contentUuid: "a661b1ec-8b6e-56af-be25-2ec2622a701c"
 diamondUuid: "cd9ae3f7-117e-8d79-a174-6936ad198c45"
 uuid: "6f52fcb6-d01a-806f-85a8-4992f243a5fd"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 140
+  bondDegree: 145
 standards: []
 bindings: []
 signatures:
@@ -61,7 +61,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "75545fc9-96b0-8173-840f-c3eee84564ed"
-    contentUuid: "0ea7ed11-ec0c-52a4-b508-a2c4b1a6f0af"
+    contentUuid: "a661b1ec-8b6e-56af-be25-2ec2622a701c"
 version: 2
 ---
 # quantum/mcp — the trinity as one tool surface
@@ -76,4 +76,4 @@ The surface is a **projection of the corpus**, generated all-at-once ([[quantum/
 
 @see [[mcp]] · [[payload]] · [[vitepress]] · [[skills]] · [[agent]] · [[access]] · [[sandbox]] · [[receipt]] · [[quantum/log]] · [[quantum/request]]
 
-<sub>content-uuid `0ea7ed11-ec0c-52a4-b508-a2c4b1a6f0af` · account `quantum/mcp` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `a661b1ec-8b6e-56af-be25-2ec2622a701c` · account `quantum/mcp` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

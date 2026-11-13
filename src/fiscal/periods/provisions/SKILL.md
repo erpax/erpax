@@ -2,45 +2,51 @@
 name: provisions
 description: "Use when recognising or measuring uncertain liabilities — warranty, restructuring, onerous contracts, environmental remediation, decommissioning/ARO, litigation; tracking best-estimate vs discounted amount, reimbursement recovery, movement history (additions/reversals/unwinds), and §85 disclosure text. The IAS-37 provision register."
 atomPath: "fiscal/periods/provisions"
-coordinate: "fiscal/periods/provisions · 7/descent · 225db189"
-contentUuid: "a1075bbc-fcb0-5fff-b763-3b7eef0a344a"
-diamondUuid: "9e25efa9-5f89-8d0c-83d6-abbb2062c5b8"
-uuid: "225db189-933e-8045-8127-3a48ba34fefb"
-horo: 7
+coordinate: "fiscal/periods/provisions · 8/crest · 36bd5a8d"
+contentUuid: "7d55fd2d-d7a0-532e-b7e0-4bf7d6525c8a"
+diamondUuid: "0f76af45-15ca-86a5-b457-a8d745ab8c2a"
+uuid: "36bd5a8d-c1a3-8933-80ec-9b994ff9bcdd"
+horo: 8
 typography:
   partition: fiscal
   bondDegree: 22
 standards:
+  - "IFRS IAS-37 §10 contingent-liability-definition"
   - "IFRS IAS-37 §14 recognition-of-provisions"
+  - "IFRS IAS-37 §27-30 recognition-prohibition"
   - "IFRS IAS-37 §36 §37 §39 measurement-best-estimate"
   - "IFRS IAS-37 §66 §67 onerous-contracts"
   - "IFRS IAS-37 §70 §83 disclosure-requirements"
+  - "IFRS IAS-37 §86-92 disclosure-requirements"
+  - "IFRS IFRS-15 §B50 onerous-contract-disclosure"
   - "ISO-4217:2015 currency-codes"
   - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
   - "ISO-8601-1:2019 date-time`"
   - "SOX §404 internal-controls liability-completeness"
   - "US-GAAP ASC-410 asset-retirement-obligations"
+  - "US-GAAP ASC-440 commitments"
   - "US-GAAP ASC-450-20-25 loss-contingencies"
+  - "US-GAAP ASC-450-20-50 loss-contingency-disclosure"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c709c904-c4fb-88a4-9ad2-0c4c52efa7a3"
+  computationUuid: "1f9bfd92-4e9e-8641-bc6b-2b1a14e88923"
   stages:
     - stage: path
       stageUuid: "f2aac0b4-6e02-8568-8500-cb93b2c469a2"
     - stage: trinity
       stageUuid: "fe9f23c7-21ab-8129-b76b-0f7ca763316a"
     - stage: boundary
-      stageUuid: "c7a5c738-5d78-8f32-a69c-85f123a4210f"
+      stageUuid: "85bdec58-06be-8aae-ba69-f621db651151"
     - stage: links
       stageUuid: "8e04cf04-80a8-84c9-b786-82c82119f96a"
     - stage: horo
-      stageUuid: "b8ab80af-0823-81eb-becd-33d520d2d46a"
+      stageUuid: "92e59527-cdb0-801d-b310-581e78265cf2"
     - stage: seal
       stageUuid: "8f7090c4-3197-8f3a-9239-5f7be130c51f"
     - stage: uuid
-      stageUuid: "395714e5-e6d1-821e-93db-5e04cd5a9c0c"
+      stageUuid: "d0858176-c591-8484-a94e-547cba55b293"
 version: 2
 ---
 # provisions

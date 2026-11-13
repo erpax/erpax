@@ -3,17 +3,17 @@ name: merge
 description: "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \"all agents one erpax\"."
 atomPath: merge
 coordinate: "merge · 1/base · 1491147f"
-contentUuid: "b425dd2c-6d15-52be-a80a-59cef37a3f3a"
-diamondUuid: "d7221fe8-d60a-824d-b130-d6fc61328c32"
+contentUuid: "fda2a3ea-fc4b-5baa-b62f-6b71a741a040"
+diamondUuid: "a680fe7c-b849-89a8-b98b-84001ac8b104"
 uuid: "1491147f-6f32-82a5-b38c-28e50922d403"
 horo: 1
 typography:
   partition: merge
-  bondDegree: 5329
+  bondDegree: 5317
 standards: []
 bindings: []
 signatures:
-  computationUuid: "764d5f28-814e-8570-929a-fdf702d49f4e"
+  computationUuid: "c30c0697-49cb-8aec-b93e-d145d3bf970a"
   stages:
     - stage: path
       stageUuid: "bf7a2e27-7733-8682-8bf0-574609b4317a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "98cf7725-4cec-848e-bbae-01cc08448e59"
     - stage: horo
-      stageUuid: "4696738b-933d-8b14-a968-c179a5c8114b"
+      stageUuid: "85818c89-b75b-8fd6-b1a1-05f2694049e4"
     - stage: seal
       stageUuid: "5ea67542-ea14-81f3-ba3e-276b70ef0cf2"
     - stage: uuid
-      stageUuid: "1cd008c2-c34c-81f4-abf8-663696a8619f"
+      stageUuid: "c679fbf3-a59a-84fb-8ec7-192c5115018b"
 version: 2
 ---
 # merge
