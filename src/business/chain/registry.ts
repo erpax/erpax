@@ -495,8 +495,8 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
     steps: [
       { collection: 'properties',               action: 'register-property', emits: 'property:registered', requires: [], producer: { onStatus: 'registered', aggregate: 'fixed_asset' } },
       { collection: 'spaces',                   action: 'register-space',    emits: 'space:registered',    requires: ['property:registered'], producer: { onStatus: 'registered', aggregate: 'fixed_asset' } },
-      { collection: 'maintenance-requests',     action: 'raise',             emits: 'mr:raised',           requires: ['space:registered'], producer: { onStatus: 'raised', aggregate: 'order' } },
-      { collection: 'maintenance-requests',     action: 'triage',            emits: 'mr:triaged',          requires: ['mr:raised'], producer: { onStatus: 'triaged', aggregate: 'order' } },
+      { collection: 'maintenance-work-orders',  action: 'raise',             emits: 'mr:raised',           requires: ['space:registered'], producer: { onStatus: 'new', aggregate: 'order' } },
+      { collection: 'maintenance-work-orders',  action: 'triage',            emits: 'mr:triaged',          requires: ['mr:raised'], producer: { onStatus: 'triaged', aggregate: 'order' } },
       { collection: 'maintenance-work-orders',  action: 'issue',             emits: 'wo:issued',           requires: ['mr:triaged'], producer: { onStatus: 'issued', aggregate: 'order' } },
       { collection: 'inventory-movements',      action: 'issue-parts',       emits: 'inventory:issued',    requires: ['wo:issued'], producer: { onStatus: 'issued', aggregate: 'inventory_transfer' } },
       { collection: 'time-entries',             action: 'book-labour',       emits: 'time:posted',         requires: ['wo:issued'], producer: { onStatus: 'booked', aggregate: 'invoice' } },

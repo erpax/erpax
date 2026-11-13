@@ -199,7 +199,6 @@ const COLLECTION_AGG: Record<string, string> = {
   // aggregates surfaced by the previous applyAll dry-run.
   'leave-requests': 'order',
   'cost-variances': 'invoice',
-  'maintenance-requests': 'order',
   'ai-suggestions': 'order',
 }
 

@@ -72,7 +72,7 @@ Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
 <!-- CATALOGUE:START -->
 
-## Catalogue — 159 standards, 6686 citations
+## Catalogue — 159 standards, 6680 citations
 
 <!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->
 
@@ -88,15 +88,15 @@ inline HTML that renders as a coloured dot.
 | --- | ---: | ---: | --- |
 | en | 1 | 129 | `EN-16931` · 129 |
 | etsi | 2 | 32 | `eIDAS` · 20 |
-| eu | 26 | 900 | `EU-Intrastat-Reg-2019/2152` · 355 |
+| eu | 26 | 897 | `EU-Intrastat-Reg-2019/2152` · 354 |
 | gdpr | 1 | 31 | `EU-2016/679` · 31 |
 | iec | 6 | 323 | `ISO/IEC-25010` · 201 |
 | ifrs | 20 | 206 | `IFRS-15` · 38 |
-| iso | 32 | 1508 | `ISO-8601-1` · 338 |
+| iso | 32 | 1506 | `ISO-8601-1` · 337 |
 | national | 2 | 47 | `Naredba-N-18` · 43 |
 | nist | 10 | 278 | `NIST-SP-800-63` · 97 |
 | oecd | 4 | 87 | `SAF-T` · 64 |
-| other | 15 | 269 | `COSO-ERM-2017` · 145 |
+| other | 15 | 268 | `COSO-ERM-2017` · 144 |
 | rfc | 11 | 461 | `RFC-9562` · 159 |
 | sox | 6 | 38 | `SOX` · 25 |
 | un | 6 | 95 | `ISO-9735` · 42 |
@@ -104,7 +104,7 @@ inline HTML that renders as a coloured dot.
 | us_gaap | 3 | 61 | `US-CTA-2021` · 38 |
 | w3c | 11 | 2151 | `schema.org` · 1983 |
 | wcag | 2 | 63 | `W3C-WAI-ARIA-1.2` · 33 |
-| **Σ** | **159** | **6686** | |
+| **Σ** | **159** | **6680** | |
 
 **Registered, awaiting citation: 104.** Known canonical standards the registry holds and
 no code cites yet — they seed as `proposed` and become cited as a domain grows. Listed in

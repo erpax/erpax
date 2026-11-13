@@ -805,10 +805,10 @@ src/conservation/index.ts:13: * @standard Noether's theorem (E. Noether, 1918) �
 src/conservation/index.ts:14: * @standard First Law of Thermodynamics — energy is conserved in an isolated system
 src/conservation/index.ts:15: * @standard Double-entry bookkeeping (Pacioli, 1494) — Σdebit = Σcredit
 src/consistency/apply/index.ts:21: * @standard ISO/IEC 25010:2023 §5.7 modifiability — single deterministic path
-src/consistency/apply/index.ts:390: * @standard ISO/IEC-29119:2022 software-testing system-test-level
-src/consistency/apply/index.ts:452: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
-src/consistency/apply/index.ts:453: * @standard WCAG-2.1-AA contrast text-spacing
-src/consistency/apply/index.ts:559: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/consistency/apply/index.ts:389: * @standard ISO/IEC-29119:2022 software-testing system-test-level
+src/consistency/apply/index.ts:451: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/consistency/apply/index.ts:452: * @standard WCAG-2.1-AA contrast text-spacing
+src/consistency/apply/index.ts:558: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
 src/consistency/apply/loop.test.ts:19: * @standard ISO/IEC 25010:2023 §5.5 testability — round-trip the agent loop
 src/consolidation/eliminations/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/consolidation/eliminations/index.ts:13: * @standard ISO-8601-1:2019 date-time consolidation-date
@@ -1943,10 +1943,7 @@ src/lots/index.ts:25: * @standard ISA-95:2013 / IEC-62264-1 §B.3 production-sch
 src/lots/index.ts:26: * @standard ISO-22400-2:2014 manufacturing-operations throughput
 src/lung/index.ts:29: * @standard West, Respiratory Physiology (Fick's law) · Weibel, the 23-generation lung tree
 src/machine/index.ts:15: * @standard mined from etrima (Rails source-of-truth) · the machine rate spread as double-entry
-src/maintenance/requests/index.ts:10: * @standard ISO-41001:2018 §8.1 facility-management operational-control
-src/maintenance/requests/index.ts:11: * @standard ISO-41011:2017 facility-management vocabulary
-src/maintenance/requests/index.ts:12: * @standard ISO-55000:2014 asset-management corrective-maintenance
-src/maintenance/requests/index.ts:13: * @standard ISO-8601-1:2019 date-time reported-at sla
+src/maintenance/requests/index.ts:10: * @standard ISO-41001:2018 §8.1 facility-management operational-planning
 src/maintenance/work/orders/index.ts:12: * @standard ISO-41001:2018 §8.1 facility-management operational-control
 src/maintenance/work/orders/index.ts:13: * @standard ISO-55000:2014 asset-management work-management
 src/maintenance/work/orders/index.ts:14: * @standard ISO-55001:2014 asset-management management-systems
@@ -4065,7 +4062,6 @@ src/link/index.ts:12: * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
 src/link/index.ts:13: * @compliance WCAG-2.1 §2.4.9 link-purpose-link-only
 src/lot/work/phases/index.ts:28: * @compliance SOX §404 internal-controls production-control
 src/lots/index.ts:30: * @compliance SOX §404 internal-controls production-control
-src/maintenance/requests/index.ts:15: * @compliance SOX §404 internal-controls fm-service-delivery
 src/maintenance/work/orders/index.ts:22: * @compliance SOX §404 internal-controls capex-vs-opex-classification
 src/media/Component.tsx:9: * @compliance WCAG-2.1 §1.1.1 non-text-content alt-text
 src/media/hooks/beforeChange.ts:8: * @compliance GDPR Art.5(1)(c) data-minimization
@@ -5285,7 +5281,6 @@ src/legal/entities/transfer/pricing/files/index.ts:23: * @security ISO-27001 A.5
 src/lot/variants/index.ts:27: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/lot/work/phases/index.ts:29: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/lots/index.ts:31: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/maintenance/requests/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/maintenance/work/orders/index.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/media/audit/evidences/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/media/hooks/beforeChange.ts:7: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
@@ -5727,9 +5722,9 @@ src/consciousness/index.ts:19: * @audit computed from the live matrix, never han
 src/consent/records/index.ts:13: * @audit ISO-19011:2018 audit-trail consent-evidence
 src/conservation/index.ts:16: * @audit computed, never hand-asserted
 src/consistency/apply/index.ts:20: * @audit ISO 19011:2018 §6.4.6 — applied-by-mcp transformations audited
-src/consistency/apply/index.ts:391: * @audit ISO-19011:2018 audit-trail visual-evidence ux-gap-finding
-src/consistency/apply/index.ts:454: * @audit ISO 9241-210:2019 human-centred-design
-src/consistency/apply/index.ts:560: * @audit Slice PPPPPPPP-cont CREATE_GAP emergence
+src/consistency/apply/index.ts:390: * @audit ISO-19011:2018 audit-trail visual-evidence ux-gap-finding
+src/consistency/apply/index.ts:453: * @audit ISO 9241-210:2019 human-centred-design
+src/consistency/apply/index.ts:559: * @audit Slice PPPPPPPP-cont CREATE_GAP emergence
 src/consistency/apply/loop.test.ts:20: * @audit ISO 19011:2018 §6.4.6 — synthetic drift + recovery audit-trailable
 src/consolidation/eliminations/index.ts:18: * @audit ISO-19011:2018 audit-trail consolidation-evidence
 src/convention/fresh/index.ts:27: * @audit imports + existence scanned LIVE from src/scripts/.vitepress; coverage never hand-asserted
@@ -6047,7 +6042,6 @@ src/lot/variants/index.ts:26: * @audit ISO-19011:2018 audit-trail variant-counte
 src/lot/work/phases/index.ts:27: * @audit ISO-19011:2018 audit-trail routing-step-changes
 src/lots/index.ts:29: * @audit ISO-19011:2018 audit-trail lot-lifecycle confirmed·started·finished·closed
 src/lung/index.ts:28: * @audit computed from first principles (Fick's law · dichotomous branching · conservation)
-src/maintenance/requests/index.ts:14: * @audit ISO-19011:2018 audit-trail maintenance-request-evidence
 src/maintenance/work/orders/index.ts:21: * @audit ISO-19011:2018 audit-trail work-order-evidence
 src/mala/index.ts:18: * @audit the 108 identities + digital root are computed; the dualities-on-round read live from @/duality
 src/media/audit/evidences/index.ts:6: * @audit ISO-19011:2018 evidence

@@ -176,7 +176,6 @@ export interface Config {
     'lot-variants': LotVariant;
     'lot-work-phases': LotWorkPhase;
     lots: Lot;
-    'maintenance-requests': MaintenanceRequest;
     'maintenance-work-orders': MaintenanceWorkOrder;
     'management-assessment-icfr': ManagementAssessmentIcfr;
     'management-certifications': ManagementCertification;
@@ -428,7 +427,6 @@ export interface Config {
     'lot-variants': LotVariantsSelect<false> | LotVariantsSelect<true>;
     'lot-work-phases': LotWorkPhasesSelect<false> | LotWorkPhasesSelect<true>;
     lots: LotsSelect<false> | LotsSelect<true>;
-    'maintenance-requests': MaintenanceRequestsSelect<false> | MaintenanceRequestsSelect<true>;
     'maintenance-work-orders': MaintenanceWorkOrdersSelect<false> | MaintenanceWorkOrdersSelect<true>;
     'management-assessment-icfr': ManagementAssessmentIcfrSelect<false> | ManagementAssessmentIcfrSelect<true>;
     'management-certifications': ManagementCertificationsSelect<false> | ManagementCertificationsSelect<true>;
@@ -14022,107 +14020,6 @@ export interface WorkPhase {
   createdAt: string;
 }
 /**
- * IWMS / CMMS service request per ISO 41001 §8.1. Occupant-raised tickets that may become maintenance work orders.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "maintenance-requests".
- */
-export interface MaintenanceRequest {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Sequential request reference (e.g. `MR-2026-04-001`).
-   */
-  reference: string;
-  /**
-   * Short summary (e.g. "Leaking tap room 201").
-   */
-  subject: string;
-  description: string;
-  requestType:
-    | 'corrective'
-    | 'preventive'
-    | 'predictive'
-    | 'improvement'
-    | 'compliance'
-    | 'safety'
-    | 'cleaning'
-    | 'move'
-    | 'other';
-  priority: 'p1' | 'p2' | 'p3' | 'p4';
-  /**
-   * Property the issue is at.
-   */
-  property?: (string | null) | Property;
-  /**
-   * Specific space (room / desk / zone), if known.
-   */
-  space?: (string | null) | Space;
-  /**
-   * Specific asset (HVAC, lift, machinery) the issue concerns.
-   */
-  fixedAsset?: (string | null) | FixedAsset;
-  /**
-   * When a bookable resource is impacted (vehicle / equipment / room).
-   */
-  bookableResource?: (string | null) | BookableResource;
-  /**
-   * User who raised the request (occupant / FM operator / sensor-fed system user).
-   */
-  reportedBy?: (string | null) | User;
-  /**
-   * Free-text name (for anonymous portal submissions).
-   */
-  reportedByName?: string | null;
-  /**
-   * Email for status notifications.
-   */
-  reportedByEmail?: string | null;
-  /**
-   * When the request was raised.
-   */
-  reportedAt: string;
-  /**
-   * SLA target resolution time — derived from priority + service-catalog rule.
-   */
-  targetResolutionAt?: string | null;
-  /**
-   * Optional photo evidence (URLs in R2 / object storage).
-   */
-  photos?:
-    | {
-        url: string;
-        caption?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Work order this request was promoted to (set by triage).
-   */
-  workOrder?: (string | null) | MaintenanceWorkOrder;
-  /**
-   * FM operator who triaged the request.
-   */
-  triagedBy?: (string | null) | User;
-  triagedAt?: string | null;
-  closedAt?: string | null;
-  /**
-   * Why closed (resolved / duplicate / not actionable / out of scope).
-   */
-  closureNote?: string | null;
-  status?: ('new' | 'triaged' | 'assigned' | 'on_hold' | 'resolved' | 'rejected' | 'duplicate' | 'closed') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * CMMS execution row per ISO 55000 work-management. Consumes parts (inventory-movements) + labour (time-entries) and posts cost as expense or capex.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -14140,9 +14037,45 @@ export interface MaintenanceWorkOrder {
    */
   reference: string;
   /**
-   * Source request (when promoted from a ticket).
+   * User who raised the request (occupant / FM operator / sensor-fed system user).
    */
-  request?: (string | null) | MaintenanceRequest;
+  reportedBy?: (string | null) | User;
+  /**
+   * Free-text name (for anonymous portal submissions).
+   */
+  reportedByName?: string | null;
+  /**
+   * Email for status notifications.
+   */
+  reportedByEmail?: string | null;
+  /**
+   * When the request was raised.
+   */
+  reportedAt?: string | null;
+  /**
+   * SLA target resolution time — derived from priority + service-catalog rule.
+   */
+  targetResolutionAt?: string | null;
+  /**
+   * Optional photo evidence (URLs in R2 / object storage).
+   */
+  photos?:
+    | {
+        url: string;
+        caption?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * FM operator who triaged the request.
+   */
+  triagedBy?: (string | null) | User;
+  triagedAt?: string | null;
+  closedAt?: string | null;
+  /**
+   * Why closed (resolved / duplicate / not actionable / out of scope).
+   */
+  closureNote?: string | null;
   subject: string;
   description?: string | null;
   workType:
@@ -14154,7 +14087,9 @@ export interface MaintenanceWorkOrder {
     | 'compliance'
     | 'refurbishment'
     | 'cleaning'
-    | 'move';
+    | 'move'
+    | 'safety'
+    | 'other';
   priority: 'p1' | 'p2' | 'p3' | 'p4';
   /**
    * IAS-16 §12 vs §13 — drives whether cost hits OPEX or CAPEX (and thus depreciation schedule).
@@ -14254,6 +14189,11 @@ export interface MaintenanceWorkOrder {
   journalEntry?: (string | null) | JournalEntry;
   status?:
     | (
+        | 'new'
+        | 'triaged'
+        | 'on_hold'
+        | 'rejected'
+        | 'duplicate'
         | 'planned'
         | 'scheduled'
         | 'dispatched'
@@ -19896,7 +19836,7 @@ export interface PayloadQueryPreset {
     | boolean
     | null;
   groupBy?: string | null;
-  relatedCollection: 'pages' | 'parties' | 'posts' | 'sales-orders';
+  relatedCollection: 'maintenance-work-orders' | 'pages' | 'parties' | 'posts' | 'sales-orders';
   /**
    * This is a temporary field used to determine if updating the preset would remove the user's access to it. When `true`, this record will be deleted after running the preset's `validate` function.
    */
@@ -23852,20 +23792,12 @@ export interface LotsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "maintenance-requests_select".
+ * via the `definition` "maintenance-work-orders_select".
  */
-export interface MaintenanceRequestsSelect<T extends boolean = true> {
+export interface MaintenanceWorkOrdersSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
   reference?: T;
-  subject?: T;
-  description?: T;
-  requestType?: T;
-  priority?: T;
-  property?: T;
-  space?: T;
-  fixedAsset?: T;
-  bookableResource?: T;
   reportedBy?: T;
   reportedByName?: T;
   reportedByEmail?: T;
@@ -23878,28 +23810,10 @@ export interface MaintenanceRequestsSelect<T extends boolean = true> {
         caption?: T;
         id?: T;
       };
-  workOrder?: T;
   triagedBy?: T;
   triagedAt?: T;
   closedAt?: T;
   closureNote?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "maintenance-work-orders_select".
- */
-export interface MaintenanceWorkOrdersSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  request?: T;
   subject?: T;
   description?: T;
   workType?: T;
@@ -28616,7 +28530,6 @@ export interface TaskCreateCollectionExport {
       | 'lot-variants'
       | 'lot-work-phases'
       | 'lots'
-      | 'maintenance-requests'
       | 'maintenance-work-orders'
       | 'management-assessment-icfr'
       | 'management-certifications'

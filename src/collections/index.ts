@@ -196,7 +196,6 @@ export { default as Taggings } from '@/tags/taggings'
 // Facilities & Resources
 export { default as Properties } from '@/properties'
 export { default as Spaces } from '@/properties/spaces'
-export { default as MaintenanceRequests } from '@/maintenance/requests'
 export { default as MaintenanceWorkOrders } from '@/maintenance/work/orders'
 export { default as BookableResources } from '@/bookable/resources'
 export { default as Bookings } from '@/bookable/resources/bookings'
