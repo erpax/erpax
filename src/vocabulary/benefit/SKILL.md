@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from TierBenefitEnumeration · hasTierBenefit ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[tier]] · [[enumeration]] · [[has]]
+Entangled with — tier · [[enumeration]] · [[has]]
 
 Attested in schema.org — TierBenefitEnumeration · hasTierBenefit
 

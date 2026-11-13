@@ -37,7 +37,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from UpdateAction · liveBlogUpdate ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[action]] · [[live]] · [[blog]]
+Entangled with — action · [[live]] · [[blog]]
 
 Attested in schema.org — UpdateAction · liveBlogUpdate
 

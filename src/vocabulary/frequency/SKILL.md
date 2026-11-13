@@ -36,7 +36,7 @@ version: 2
 
 How often the dose is taken, e.g. 'daily'.
 
-Entangled with — [[broadcast]] · [[specification]] · [[activity]] · [[value]] · [[loan]] · [[payment]] · [[repeat]]
+Entangled with — [[broadcast]] · specification · [[activity]] · value · [[loan]] · [[payment]] · [[repeat]]
 
 Attested in schema.org — BroadcastFrequencySpecification · activityFrequency · broadcastFrequency · broadcastFrequencyValue · frequency · loanPaymentFrequency · repeatFrequency
 

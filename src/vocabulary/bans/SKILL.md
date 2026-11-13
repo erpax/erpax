@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from travelBans ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[travel]]
+Entangled with — travel
 
 Attested in schema.org — travelBans
 

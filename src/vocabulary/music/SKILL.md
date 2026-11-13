@@ -36,7 +36,7 @@ version: 2
 
 The composer of the soundtrack.
 
-Entangled with — [[album]] · [[production]] · [[type]] · [[release]] · [[composition]] · [[event]] · [[group]] · [[playlist]] · [[recording]] · [[format]] · [[store]] · [[venue]] · [[video]] · [[object]] · [[sheet]] · [[arrangement]] · [[form]] · [[member]]
+Entangled with — [[album]] · [[production]] · [[type]] · [[release]] · [[composition]] · [[event]] · [[group]] · [[playlist]] · [[recording]] · [[format]] · [[store]] · venue · video · [[object]] · sheet · [[arrangement]] · [[form]] · [[member]]
 
 Attested in schema.org — MusicAlbum · MusicAlbumProductionType · MusicAlbumReleaseType · MusicComposition · MusicEvent · MusicGroup · MusicPlaylist · MusicRecording · MusicRelease · MusicReleaseFormatType · MusicStore · MusicVenue · MusicVideoObject · SheetMusic · musicArrangement · musicBy · musicCompositionForm · musicGroupMember · musicReleaseFormat
 

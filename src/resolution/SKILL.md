@@ -35,7 +35,7 @@ version: 2
 
 Use when closing or resolving a ticket, issue, or complaint — root-cause analysis, solution implementation, confirmation, closure. The endpoint of a support lifecycle.
 
-Composes: [[ticket]] · [[comment]] · [[status]] · [[workflow/definitions/workflow/instances]] · [[escalation]].
+Composes: ticket · [[comment]] · [[status]] · [[workflow/definitions/workflow/instances]] · [[escalation]].
 
 ## Standards
 - ITIL problem management

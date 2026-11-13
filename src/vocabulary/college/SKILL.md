@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from CollegeOrUniversity ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[university]]
+Entangled with — university
 
 Attested in schema.org — CollegeOrUniversity
 

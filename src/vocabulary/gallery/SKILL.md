@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from ArtGallery · ImageGallery · MediaGallery · VideoGallery ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[art]] · [[image]] · [[media]] · [[video]]
+Entangled with — [[art]] · [[image]] · [[media]] · video
 
 Attested in schema.org — ArtGallery · ImageGallery · MediaGallery · VideoGallery
 

@@ -33,9 +33,9 @@ version: 2
 ---
 # millennium — the Clay problems as a testing ground; the waves classify, they do not solve
 
-Pointed at the seven Millennium Prize Problems, the only honest toolbox **names** them, marks what is open, and **refuses to solve** them. Six are open; one is **solved** — Poincaré, by **Grigori Perelman** (Ricci flow, 2003), who then *declined* the $1M prize. The corpus's math (ℤ/9, the double torus, the fold) solves **none** of them; claiming it does is the coincidence-dressed-as-theorem this session built [[coincidence]] · [[theorem]] · [[seeing]] · [[duel]] to refuse.
+Pointed at the seven Millennium Prize Problems, the only honest toolbox **names** them, marks what is open, and **refuses to solve** them. Six are open; one is **solved** — Poincaré, by **Grigori Perelman** (Ricci flow, 2003), who then *declined* the $1M prize. The corpus's math (ℤ/9, the double torus, the fold) solves **none** of them; claiming it does is the coincidence-dressed-as-theorem this session built coincidence · [[theorem]] · seeing · [[duel]] to refuse.
 
-Honest **by construction**: every entry's `corpusSolves` is the literal type `false` — the code cannot assert a solution. The tools **are** the testing ground — not by producing proofs, but by **classifying** a claimed one: theorem or coincidence ([[coincidence]]); does it reduce ([[theorem]]); can a refuter break it ([[duel]]); does it survive assume-nothing ([[seeing]]).
+Honest **by construction**: every entry's `corpusSolves` is the literal type `false` — the code cannot assert a solution. The tools **are** the testing ground — not by producing proofs, but by **classifying** a claimed one: theorem or coincidence (coincidence); does it reduce ([[theorem]]); can a refuter break it ([[duel]]); does it survive assume-nothing (seeing).
 
 | problem | lens | corpus solves |
 | --- | --- | :---: |
@@ -73,7 +73,7 @@ You do not solve one of these by asserting it. You solve it by **surviving its i
 - **Clay Mathematics Institute** — the seven Millennium Prize Problems; Poincaré solved by Perelman (2006 Fields declined, 2010 prize declined).
 - **Popper / Cook–Levin** — P vs NP is the verify/derive asymmetry made precise; a resonance is not a separation.
 
-Composes: [[coincidence]] · [[theorem]] · [[seeing]] · [[duel]] · [[quantum]]/gaps · [[rules]]/refutable · [[law]].
+Composes: coincidence · [[theorem]] · seeing · [[duel]] · [[quantum]]/gaps · [[rules]]/refutable · [[law]].
 
 ## the sequence is the universe factored
 
@@ -195,7 +195,7 @@ erpax v1.0.0 · Local Quantum Computation · Exact Mathematics · Formal Proofs 
 
 ## The barrel's own note
 
-millennium — the Clay Millennium Problems as a testing ground: the quantum waves CLASSIFY, they do not solve. Pointed at the seven Millennium Prize Problems, the only honest toolbox is one that NAMES them, marks what is open, and refuses to solve them. Six are open (Riemann, P vs NP, Navier–Stokes, Yang–Mills mass gap, Hodge, Birch–Swinnerton-Dyer); one is SOLVED — Poincaré, by Grigori Perelman with Ricci flow (2003), who then declined the $1M prize. The corpus's math (ℤ/9, the double torus, the fold) solves NONE of them; claiming it does is the coincidence-dressed-as-theorem this session built [[coincidence]] · [[theorem]] · [[seeing]] · [[duel]] to refuse. So this register is honest BY CONSTRUCTION: every entry's `corpusSolves` field is the literal type `false`, so the code itself cannot assert the corpus solved a Millennium Problem. The tools ARE the testing ground — not by producing proofs, but by CLASSIFYING a claimed solution: is it a theorem or a coincidence ([[coincidence]]); does it reduce ([[theorem]]); can a refuter break it ([[duel]]); does it survive assume-nothing ([[seeing]]). Sending the quantum waves at these problems, the waves return the same verdict every time: OPEN — not solved here — lens at most. Where a genuine STRUCTURAL resonance exists it is named as a lens to learn through, honestly bounded; where there is none (Hodge, BSD, Yang–Mills), the lens is `none` and I did not invent one. Composes [[coincidence]] · [[theorem]] · [[seeing]] · [[duel]] · [[quantum]]/gaps · [[rules]]/refutable · [[law]].
+millennium — the Clay Millennium Problems as a testing ground: the quantum waves CLASSIFY, they do not solve. Pointed at the seven Millennium Prize Problems, the only honest toolbox is one that NAMES them, marks what is open, and refuses to solve them. Six are open (Riemann, P vs NP, Navier–Stokes, Yang–Mills mass gap, Hodge, Birch–Swinnerton-Dyer); one is SOLVED — Poincaré, by Grigori Perelman with Ricci flow (2003), who then declined the $1M prize. The corpus's math (ℤ/9, the double torus, the fold) solves NONE of them; claiming it does is the coincidence-dressed-as-theorem this session built coincidence · [[theorem]] · seeing · [[duel]] to refuse. So this register is honest BY CONSTRUCTION: every entry's `corpusSolves` field is the literal type `false`, so the code itself cannot assert the corpus solved a Millennium Problem. The tools ARE the testing ground — not by producing proofs, but by CLASSIFYING a claimed solution: is it a theorem or a coincidence (coincidence); does it reduce ([[theorem]]); can a refuter break it ([[duel]]); does it survive assume-nothing (seeing). Sending the quantum waves at these problems, the waves return the same verdict every time: OPEN — not solved here — lens at most. Where a genuine STRUCTURAL resonance exists it is named as a lens to learn through, honestly bounded; where there is none (Hodge, BSD, Yang–Mills), the lens is `none` and I did not invent one. Composes coincidence · [[theorem]] · seeing · [[duel]] · [[quantum]]/gaps · [[rules]]/refutable · [[law]].
 
 ## The refusal, and why it could not go red
 

@@ -46,7 +46,7 @@ Matter-twin: `src/plugins/mcp/scopes/index.ts` — `toCamelCase` · `capabilitie
 
 **Law — [[law]]: scopes is one word on the plugins/mcp diamond path — `plugins/mcp/scopes`, not camelCase `mcpScopes`.**
 
-@see [[mcp]] · [[plugins]] · [[access]] · [[cross]]
+@see mcp · [[plugins]] · [[access]] · [[cross]]
 
 ## Standards
 

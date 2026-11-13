@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from ComicCoverArt · ComicIssue · ComicSeries · ComicStory ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[cover]] · [[art]] · [[issue]] · [[series]] · [[story]]
+Entangled with — cover · [[art]] · [[issue]] · series · story
 
 Attested in schema.org — ComicCoverArt · ComicIssue · ComicSeries · ComicStory
 

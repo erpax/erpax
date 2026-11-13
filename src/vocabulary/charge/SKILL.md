@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from DeliveryChargeSpecification · PaymentChargeSpecification ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[delivery]] · [[specification]] · [[payment]]
+Entangled with — [[delivery]] · specification · [[payment]]
 
 Attested in schema.org — DeliveryChargeSpecification · PaymentChargeSpecification
 

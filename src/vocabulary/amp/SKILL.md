@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from AmpStory ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[story]]
+Entangled with — story
 
 Attested in schema.org — AmpStory
 

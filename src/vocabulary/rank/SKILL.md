@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from taxonRank ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[taxon]]
+Entangled with — taxon
 
 Attested in schema.org — taxonRank
 

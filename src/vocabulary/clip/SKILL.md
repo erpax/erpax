@@ -36,7 +36,7 @@ version: 2
 
 A short TV or radio program or a segment/part of a program.
 
-Entangled with — [[movie]] · [[radio]] · [[tv]] · [[video]] · [[game]] · [[number]]
+Entangled with — [[movie]] · [[radio]] · tv · video · [[game]] · [[number]]
 
 Attested in schema.org — Clip · MovieClip · RadioClip · TVClip · VideoGameClip · clipNumber
 

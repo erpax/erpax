@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from AdvertiserContentArticle · HealthTopicContent · WebContent · carbohydrateContent · cholesterolContent · contentLocation · contentRating · contentReferenceTime · contentSize · contentType · contentUrl · fatContent · fiberContent · mainContentOfPage · proteinContent · saturatedFatContent · sharedContent · sodiumContent · sugarContent · transFatContent · unsaturatedFatContent ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[advertiser]] · [[article]] · [[health]] · [[topic]] · [[web]] · [[carbohydrate]] · [[cholesterol]] · [[location]] · [[rating]] · [[reference]] · [[time]] · [[size]] · [[type]] · [[url]] · [[fat]] · [[fiber]] · [[main]] · [[page]] · [[protein]] · [[saturated]] · [[shared]] · [[sodium]] · [[sugar]] · [[trans]] · [[unsaturated]]
+Entangled with — [[advertiser]] · [[article]] · health · topic · [[web]] · [[carbohydrate]] · [[cholesterol]] · [[location]] · [[rating]] · [[reference]] · time · size · [[type]] · url · [[fat]] · [[fiber]] · [[main]] · [[page]] · [[protein]] · saturated · [[shared]] · sodium · sugar · trans · unsaturated
 
 Attested in schema.org — AdvertiserContentArticle · HealthTopicContent · WebContent · carbohydrateContent · cholesterolContent · contentLocation · contentRating · contentReferenceTime · contentSize · contentType · contentUrl · fatContent · fiberContent · mainContentOfPage · proteinContent · saturatedFatContent · sharedContent · sodiumContent · sugarContent · transFatContent · unsaturatedFatContent
 

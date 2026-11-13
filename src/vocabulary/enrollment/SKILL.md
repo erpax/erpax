@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from maximumEnrollment · totalHistoricalEnrollment ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[maximum]] · [[total]] · [[historical]]
+Entangled with — [[maximum]] · total · [[historical]]
 
 Attested in schema.org — maximumEnrollment · totalHistoricalEnrollment
 

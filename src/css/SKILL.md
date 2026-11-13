@@ -62,6 +62,6 @@ Both are complete [[diamond]]s; both are told three ways where the [[trinity]] a
 | admin | `ComputedCssAdminRoot` via admin-ui `providers` | `admin/ui` path · horo 7 |
 | widgets/blocks | shadcn semantic classes (`bg-card`, `text-muted-foreground`) | inherit injected vars |
 
-Composes: [[diamond]] · [[atom]] · [[dimension]] · [[typography]] · [[primitive]] · [[component]] · [[seal]] · [[purity]] · [[gate]] · [[pixel]] · [[signal]] · [[design]]
+Composes: [[diamond]] · [[atom]] · [[dimension]] · [[typography]] · [[primitive]] · [[component]] · [[seal]] · [[purity]] · [[gate]] · [[pixel]] · [[signal]] · design
 
 @see [[diamond]] · [[typography]] · [[primitive]] · [[component]] · [[dimension]]

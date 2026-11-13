@@ -35,7 +35,7 @@ version: 2
 
 Use when identifying or tracking the limiting factor in a flow — the slowest operation in a sequence, the resource with lowest capacity. The theory-of-constraints node.
 
-Composes: [[work/centers]] · [[throughput]] · [[capacity]] · [[flow]].
+Composes: [[work/centers]] · throughput · [[capacity]] · [[flow]].
 
 ## Standards
 - Theory of Constraints (Goldratt)

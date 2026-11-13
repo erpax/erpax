@@ -45,7 +45,7 @@ version: 2
 | `access` | create/read/update/delete/readVersions/unlock (see [[access]]). |
 | `hooks` | Lifecycle [[hooks]]. |
 | `auth` | Enable authentication (see [[auth]]). |
-| `upload` | Make it an upload collection (see [[upload]]). |
+| `upload` | Make it an upload collection (see upload). |
 | `versions` | `{ drafts, maxPerDoc }` — drafts/autosave/history (see [[versions]]). |
 | `timestamps` | createdAt/updatedAt (default true). |
 | `labels` | `{ singular, plural }`. |

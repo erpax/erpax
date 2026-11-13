@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from dateModified · modifiedTime ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[date]] · [[time]]
+Entangled with — [[date]] · time
 
 Attested in schema.org — dateModified · modifiedTime
 

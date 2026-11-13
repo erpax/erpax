@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from CompleteDataFeed · timeToComplete ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[data]] · [[feed]] · [[time]]
+Entangled with — [[data]] · [[feed]] · time
 
 Attested in schema.org — CompleteDataFeed · timeToComplete
 

@@ -36,7 +36,7 @@ version: 2
 
 A competitor in a sports event.
 
-Entangled with — [[sport]] · [[thing]]
+Entangled with — sport · [[thing]]
 
 Attested in schema.org — competitor
 

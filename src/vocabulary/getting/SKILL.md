@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from gettingTestedInfo ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[tested]] · [[info]]
+Entangled with — tested · [[info]]
 
 Attested in schema.org — gettingTestedInfo
 

@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from copyrightHolder · copyrightNotice · copyrightYear ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[holder]] · [[notice]] · [[year]]
+Entangled with — [[holder]] · [[notice]] · year
 
 Attested in schema.org — copyrightHolder · copyrightNotice · copyrightYear
 

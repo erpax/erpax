@@ -61,4 +61,4 @@ round → refuter  refuted — one counterexample falls the claim, whatever the 
 - **Popper — falsifiability** — the asymmetry of confirmation and refutation; one counterexample decides.
 - **Red-team / property-based testing** — the adversary attacks the exact claim; a build untested by its dual is unbalanced.
 
-Composes: [[horo]]/antimatter · [[claim]] · [[argument]] · [[rules]]/refutable · [[double]]/entry · [[law]].
+Composes: [[horo]]/antimatter · claim · argument · [[rules]]/refutable · [[double]]/entry · [[law]].

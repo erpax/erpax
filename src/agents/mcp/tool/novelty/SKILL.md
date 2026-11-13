@@ -57,4 +57,4 @@ that ranks high is a *candidate for a human*, and neither tool asserts that the 
 It was nested here from a barrel sibling `novelty.ts` — a matter file at an atom root is a stray
 ([[rules]]/concentration), and the lawful form is the child atom it already was.
 
-Composes: [[conjecture]] · [[mcp]]/tool · [[rules]]/refutable.
+Composes: [[conjecture]] · mcp/tool · [[rules]]/refutable.

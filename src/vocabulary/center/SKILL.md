@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from RecyclingCenter · ShoppingCenter · TouristInformationCenter ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[recycling]] · [[shopping]] · [[tourist]] · [[information]]
+Entangled with — [[recycling]] · shopping · tourist · [[information]]
 
 Attested in schema.org — RecyclingCenter · ShoppingCenter · TouristInformationCenter
 

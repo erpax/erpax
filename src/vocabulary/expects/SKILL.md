@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from expectsAcceptanceOf ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[acceptance]]
+Entangled with — acceptance
 
 Attested in schema.org — expectsAcceptanceOf
 

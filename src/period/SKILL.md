@@ -43,7 +43,7 @@ version: 2
 
 Use when a value is tied to a fiscal/calendar period — revenue recognized in period, expense recorded in month, cutoff rules. A date-range [start, end] or a fiscal-period code. Twins with date (point) to establish time-based accounting cutoffs and versioning.
 
-Composes: [[date]] · [[field]] · [[versions]] · [[accounting]] · [[start]].
+Composes: [[date]] · [[field]] · [[versions]] · [[accounting]] · start.
 
 ## Standards
 
@@ -52,4 +52,4 @@ Composes: [[date]] · [[field]] · [[versions]] · [[accounting]] · [[start]].
 
 - ISO-8601-1:2019
 
-**Law — [[law]]: a period is a date-range from [[start]] to end (or a fiscal-period code) that fixes the time-based [[accounting]] cutoff — which period a value falls in — and drives [[versions]] over that span.**
+**Law — [[law]]: a period is a date-range from start to end (or a fiscal-period code) that fixes the time-based [[accounting]] cutoff — which period a value falls in — and drives [[versions]] over that span.**

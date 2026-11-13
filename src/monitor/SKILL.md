@@ -43,4 +43,4 @@ Hospital **patient monitor** modality — HR, SpO₂, and systolic BP captured a
 
 **Law — [[law]]: bedside monitor capture collapses at the device edge — scalars and LOINC codes only cross into the EMR chain; raw waveforms stay local. Violation monitor: path is the account code on every gate event. Realtime improve: every safe violation closes with seal credit eb and a chained receipt — never loosen ratchet baselines.**
 
-@see [[medical/device]] · [[medical]] · [[vital]] · [[readings]] · [[quantum/emr]]
+@see [[medical/device]] · [[medical]] · vital · [[readings]] · [[quantum/emr]]

@@ -35,7 +35,7 @@ version: 2
 
 Use when collecting, structuring, and acting on input from users, employees, or customers — surveys, reviews, suggestions, 360-degree feedback. The structured loop of input → analysis → action.
 
-Composes: [[comment]] · [[employees/performance/reviews]] · [[satisfaction]] · [[research]] · [[interview]].
+Composes: [[comment]] · [[employees/performance/reviews]] · satisfaction · [[research]] · [[interview]].
 
 ## Standards
 - formative vs summative assessment

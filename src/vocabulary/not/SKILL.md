@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from countriesNotSupported · doesNotShip ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[countries]] · [[supported]] · [[does]] · [[ship]]
+Entangled with — [[countries]] · supported · [[does]] · ship
 
 Attested in schema.org — countriesNotSupported · doesNotShip
 

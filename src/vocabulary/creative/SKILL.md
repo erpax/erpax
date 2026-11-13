@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from CreativeWork · CreativeWorkSeason · CreativeWorkSeries · creativeWorkStatus · encodesCreativeWork ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[work]] · [[season]] · [[series]] · [[status]] · [[encodes]]
+Entangled with — [[work]] · season · series · [[status]] · [[encodes]]
 
 Attested in schema.org — CreativeWork · CreativeWorkSeason · CreativeWorkSeries · creativeWorkStatus · encodesCreativeWork
 

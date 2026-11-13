@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from codeSampleType · sampleType · tissueSample ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[code]] · [[type]] · [[tissue]]
+Entangled with — [[code]] · [[type]] · tissue
 
 Attested in schema.org — codeSampleType · sampleType · tissueSample
 

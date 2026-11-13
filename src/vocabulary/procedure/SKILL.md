@@ -36,7 +36,7 @@ version: 2
 
 A description of the procedure involved in setting up, using, and/or installing the device.
 
-Entangled with — [[diagnostic]] · [[medical]] · [[type]] · [[palliative]] · [[surgical]] · [[therapeutic]]
+Entangled with — [[diagnostic]] · [[medical]] · [[type]] · [[palliative]] · surgical · therapeutic
 
 Attested in schema.org — DiagnosticProcedure · MedicalProcedure · MedicalProcedureType · PalliativeProcedure · SurgicalProcedure · TherapeuticProcedure · procedure · procedureType
 

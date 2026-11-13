@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from missionCoveragePrioritiesPolicy ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[mission]] · [[coverage]] · [[policy]]
+Entangled with — [[mission]] · coverage · [[policy]]
 
 Attested in schema.org — missionCoveragePrioritiesPolicy
 

@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from CivicStructure ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[structure]]
+Entangled with — structure
 
 Attested in schema.org — CivicStructure
 

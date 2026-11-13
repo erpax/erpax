@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from salaryUponCompletion ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[salary]] · [[upon]]
+Entangled with — salary · upon
 
 Attested in schema.org — salaryUponCompletion
 

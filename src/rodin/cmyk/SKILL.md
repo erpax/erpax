@@ -39,7 +39,7 @@ version: 2
 |---|---|---|---|
 | `0` | **K** key/black | origin / substrate | the record itself ([[identity]], [[config]]) |
 | `3` | **C** cyan | forward [[polarity]] (×2) | outbound links / [[give]] |
-| `6` | **M** magenta | reverse [[polarity]] (×5) | inbound links / [[take]] |
+| `6` | **M** magenta | reverse [[polarity]] (×5) | inbound links / take |
 | `9` | **Y** yellow | [[axis]] close (triad) | categorical / [[tags]] |
 
 The doubling helix (`1·2·4·8·7·5`) carries **no native channel** — it winds as tonal/saturation steps *within* this four-primary gamut ([[coil]]).

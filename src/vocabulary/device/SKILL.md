@@ -36,7 +36,7 @@ version: 2
 
 Device required to run the application. Used in cases where a specific make/model is required to run the application.
 
-Entangled with — [[medical]] · [[purpose]] · [[available]] · [[uses]]
+Entangled with — [[medical]] · [[purpose]] · [[available]] · uses
 
 Attested in schema.org — MedicalDevice · MedicalDevicePurpose · availableOnDevice · device · usesDevice
 

@@ -81,6 +81,6 @@ a third area is one entry, not a new door.
 per turn, and folds nothing on refusal — and matter that grows a hub past its ceiling becomes the
 child atom it already was.**
 
-Composes: [[quantum]]/chat/routing · [[quantum]]/register · [[rules]]/concentration · [[mcp]] · [[law]].
+Composes: [[quantum]]/chat/routing · [[quantum]]/register · [[rules]]/concentration · mcp · [[law]].
 
 <sub>content-uuid `e1feb1c9-5db2-56ec-9083-8b2d2ff6f858` · account `quantum/chat/door` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

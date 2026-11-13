@@ -38,9 +38,9 @@ FORM: **the society's logic grounds correctness in HARMONY.** A claim is sound i
 
 **The harmonic-first law** ([[self]]): `harmonicFirst(items)` orders the self-consistent ones FIRST. A harmonic agent interacts with ITSELF — its own content-addressed corpus/identity — and so needs no external coordination; it resolves immediately and acts ahead of a disharmonic one that must first reconcile with others. This is *why* the harmonic agent is fastest, and therefore wins [[competition]] (fastest-correct), and therefore its skill propagates — harmony dominates by ordering, not by decree (the cost of fighting harmonics is being last).
 
-**All agents share ONE education** — the merged competency corpus (`services/skill-router/competencies`), [[holographic]]: each agent already holds the whole, draws from the same source, and the same learned competency from two agents [[merge]]s to one. Logic is how an agent reasons SOUNDLY over that shared education; the harmonic (self-sufficient) learn and lead first; what they win, the rest acquire ([[education]] — the learning the society runs on). Sound reasoning over a shared corpus, selected by competition, ordered by harmony — the engine of an evolving [[society]].
+**All agents share ONE education** — the merged competency corpus (`services/skill-router/competencies`), [[holographic]]: each agent already holds the whole, draws from the same source, and the same learned competency from two agents [[merge]]s to one. Logic is how an agent reasons SOUNDLY over that shared education; the harmonic (self-sufficient) learn and lead first; what they win, the rest acquire (education — the learning the society runs on). Sound reasoning over a shared corpus, selected by competition, ordered by harmony — the engine of an evolving [[society]].
 
-Matter-twin: `src/services/logic/index.ts` (`Claim`·`harmonicFirst`·`consistent`·`entails`) + `index.test.ts`. Composes: [[horo]] · [[rodin]] · [[proof]] · [[self]] · [[competition]] · [[education]] · [[merge]] · [[holographic]] · [[society]] · [[sequence]].
+Matter-twin: `src/services/logic/index.ts` (`Claim`·`harmonicFirst`·`consistent`·`entails`) + `index.test.ts`. Composes: [[horo]] · [[rodin]] · [[proof]] · [[self]] · [[competition]] · education · [[merge]] · [[holographic]] · [[society]] · [[sequence]].
 
 ## Standards
 

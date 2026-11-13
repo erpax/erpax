@@ -147,4 +147,4 @@ is where the engineering lives.
 start and an end state, so the enthalpies cancel — the cycle purifies, it stores, and it
 never generates.**
 
-Composes: [[water]] · [[energy]] · [[law]].
+Composes: [[water]] · energy · [[law]].

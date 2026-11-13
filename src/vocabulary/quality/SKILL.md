@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from videoQuality ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[video]]
+Entangled with — video
 
 Attested in schema.org — videoQuality
 

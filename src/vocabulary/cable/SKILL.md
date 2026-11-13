@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from CableOrSatelliteService ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[satellite]] · [[service]]
+Entangled with — satellite · service
 
 Attested in schema.org — CableOrSatelliteService
 

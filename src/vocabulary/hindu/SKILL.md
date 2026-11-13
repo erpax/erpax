@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from HinduTemple ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[temple]]
+Entangled with — temple
 
 Attested in schema.org — HinduTemple
 

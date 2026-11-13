@@ -36,7 +36,7 @@ version: 2
 
 The training set of the translation intelligence, folded correctly: **store the judgment, compute the projection.**
 
-- **`VERIFIED_PROVENANCE`** — the **seed**, the only thing stored: for each of 58 unambiguous single-word concept atoms (anatomy · nature · matter · plants · animals · food · metals), the CC0 Wikidata `qid` its sense-gate run admitted ([[source]] `harvestVerified`, senseScore ≥ 0.14), with the matched `description` and `score`. This is the irreducible human/agent judgment — which sense is *the* sense.
+- **`VERIFIED_PROVENANCE`** — the **seed**, the only thing stored: for each of 58 unambiguous single-word concept atoms (anatomy · nature · matter · plants · animals · food · metals), the CC0 Wikidata `qid` its sense-gate run admitted (source `harvestVerified`, senseScore ≥ 0.14), with the matched `description` and `score`. This is the irreducible human/agent judgment — which sense is *the* sense.
 - **`verifiedRenderings()`** — the **computed face**: the per-locale labels are a projection of each Qid (`fetchEntityLabels`), harvested once and **sealed content-addressed by the seed's fold** (`provenanceKey` = `foldToRoot(qids)`, gitignored cache). Unchanged seed ⇒ a **read**, zero network; changed seed ⇒ re-harvest. `en` is never harvested — the atom word stays the source. An unreachable source with no seal **throws**: a rendering is never fabricated.
 
 This replaced a hardcoded wall of ~1620 label literals — stored derivable content, the exact entropy the law forbids. Label drift inside a verified Qid is Wikidata improving, not poisoning: the *sense* lives in the Qid, and the Qid is what the seed holds.
@@ -53,4 +53,4 @@ Consumed by [[translations]]/seed, which registers the computed table into the `
 - **BCP-47** — the locale tags of the supported locales.
 - **RFC 9562 §5.8** — the content-uuid each rendering is addressed by.
 
-Composes: [[source]] · [[translation]] · [[translations]] · [[merge]] · [[law]].
+Composes: source · [[translation]] · [[translations]] · [[merge]] · [[law]].

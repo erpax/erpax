@@ -36,7 +36,7 @@ version: 2
 
 A media episode (e.g. TV, radio, video game) which can be part of a series or season.
 
-Entangled with — [[podcast]] · [[radio]] · [[tv]] · [[number]] · [[part]]
+Entangled with — [[podcast]] · [[radio]] · tv · [[number]] · [[part]]
 
 Attested in schema.org — Episode · PodcastEpisode · RadioEpisode · TVEpisode · episode · episodeNumber · partOfEpisode
 

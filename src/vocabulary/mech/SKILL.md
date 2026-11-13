@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from cvdNumC19MechVentPats · cvdNumC19OFMechVentPats ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[cvd]] · [[num]] · [[vent]] · [[pats]]
+Entangled with — [[cvd]] · [[num]] · vent · [[pats]]
 
 Attested in schema.org — cvdNumC19MechVentPats · cvdNumC19OFMechVentPats
 

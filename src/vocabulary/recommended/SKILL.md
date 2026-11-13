@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from RecommendedDoseSchedule · recommendedIntake ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[dose]] · [[schedule]] · [[intake]]
+Entangled with — [[dose]] · schedule · [[intake]]
 
 Attested in schema.org — RecommendedDoseSchedule · recommendedIntake
 

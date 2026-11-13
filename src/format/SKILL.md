@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from BookFormatType · MusicReleaseFormatType · bookFormat · encodingFormat · fileFormat · musicReleaseFormat · videoFormat ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[book]] · [[type]] · [[music]] · [[release]] · [[encoding]] · [[file]] · [[video]]
+Entangled with — [[book]] · [[type]] · [[music]] · [[release]] · [[encoding]] · [[file]] · video
 
 Attested in schema.org — BookFormatType · MusicReleaseFormatType · bookFormat · encodingFormat · fileFormat · musicReleaseFormat · videoFormat
 

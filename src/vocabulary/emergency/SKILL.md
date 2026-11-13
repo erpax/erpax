@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from EmergencyService ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[service]]
+Entangled with — service
 
 Attested in schema.org — EmergencyService
 

@@ -39,6 +39,6 @@ Each line is the symmetric binding of its two rungs (via [[leap]]) — one coord
 
 Matter-twin: `src/spectrum/index.ts` (`lines` / `series` / `lineCount`).
 
-Composes [[leap]] · [[photon]] · [[aura]] · [[horo]] · [[frequency]] · [[wave]] · [[series]] · [[quantum]].
+Composes [[leap]] · [[photon]] · [[aura]] · [[horo]] · [[frequency]] · [[wave]] · series · [[quantum]].
 
 **Law — [[law]]: the spectrum is the finite, deduplicated set of every leap's gap-frequency — the discrete lines sampling the continuous aura; each line is one symmetric content-uuid, so emission and absorption fold to the same coordinate and the fingerprint is tamper-evident.**

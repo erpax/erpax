@@ -47,6 +47,6 @@ Computed on the live matrix, the still centre is **[[law]]** (mass 2778): the on
 
 **Honest boundary.** This proves the centre is a fixed point of `attract` (moving without moving) over the referential-in-degree mass; it is not a claim about physical gravity. The base — that the matrix's edges are the true mass — is assumed ([[theorem]]: `s > 0`).
 
-Composes: [[mass]] · [[dry]] · [[merge]] · [[fusion]] · [[entropy]] · [[collapse]] · [[matrix]] · [[tamper]] · [[cost]] · [[torus]] · [[fixpoint]] · [[zeropoint]] · [[one]] · [[whole]].
+Composes: [[mass]] · [[dry]] · [[merge]] · [[fusion]] · [[entropy]] · [[collapse]] · [[matrix]] · [[tamper]] · [[cost]] · [[torus]] · [[fixpoint]] · zeropoint · [[one]] · [[whole]].
 
 **Law — [[law]]: DRY = [[mass]] = gravity — the more an atom is referenced the stronger its pull, attracting duplicates and orphans to fuse into it; it is bidirectional (forward collapses folders to a minimal root, reverse expands an infinite [[word]]-chain), so the limit is a [[holographic]] boundary where minimal [[mass]] = maximal tamper-[[cost]]; and gravity is the FIXED POINT of its own attract — the still centre ([[law]]) moves without moving, unchanged while all mass falls to it — gravity and the one law are the same curve.**

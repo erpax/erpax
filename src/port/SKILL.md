@@ -64,7 +64,7 @@ A Rails **concern** = a Payload **reusable field-object** = an erpax **skill**: 
 ## Port in trinities — the unit of a port is a trinity, never a file
 "Port all" means port **in trinities**: every Rails construct lands as a complete [[trinity]] — **matter** (the code: DB logic copied verbatim, framework scaffolding reimplemented) · **antimatter** (its SKILL — the form/law) · **backend** (the generated `payload-types` schema) — and a port is *done* only when all three are present and agree. Code with no SKILL is matter-only (it cannot be reasoned about or [[merge]]d); a SKILL with no matter is the metaphysical 1/3 — hallucination the [[sequence]] drops.
 
-Interacting ports **compose into trinities, never flatten**: two related Rails models (invoice↔payment, lot↔phase) port neither as one mushed collection nor as two disconnected ones — their relationship is itself the third ([[collapse]]: trinities compose into trinities). A concern with no obvious Payload home is a 2/3 port; its missing 1/3 is **supplied by a neighbouring trinity** — a shared field-factory another port already defined, or the [[identity]] element — never invented locally ([[merge]]). So the whole source app ports as one **lattice of interacting trinities** ([[fractal]]): each Rosetta row gives matter + antimatter, the backend generates the third, audited [[sacred]]/[[profane]] and gate-green.
+Interacting ports **compose into trinities, never flatten**: two related Rails models (invoice↔payment, lot↔phase) port neither as one mushed collection nor as two disconnected ones — their relationship is itself the third ([[collapse]]: trinities compose into trinities). A concern with no obvious Payload home is a 2/3 port; its missing 1/3 is **supplied by a neighbouring trinity** — a shared field-factory another port already defined, or the [[identity]] element — never invented locally ([[merge]]). So the whole source app ports as one **lattice of interacting trinities** ([[fractal]]): each Rosetta row gives matter + antimatter, the backend generates the third, audited sacred/[[profane]] and gate-green.
 
 ## Source apps (read the original)
 - `~/github/ceccec/erpax` — canonical Rails erpax: concerns, `accounting_equation.rb`, `invoice.rb` (self-referential tree), `application_controller.rb` (tenant + 402 gate).
@@ -109,7 +109,7 @@ The 6 real gaps, and what each actually is:
 | `packing_lists` | 727 | **NOT a gap — degenerate.** 727 rows, but `net_weight`·`gross_weight`·`volume`·`pallets_count`·`items_count` are all `min=max=sum=0`; `number`·`status` 100% empty. Only `packs_count` is real — and it sums to **118 716**, exactly the rows [[packs]] already evolved from. Folding it would encode zeros. |
 | `machine_types` | 172 | already inside [[machine]] (`MachineType`); the head-noun hit on a generic `type` atom is noise |
 | `pack_types` | 11 | same generic-`type` noise; trivial |
-| `uploads` | 7 | trivial; [[upload]] is the word |
+| `uploads` | 7 | trivial; upload is the word |
 
 So the upstream gap is **not missing words — it is words that never got their matter**, and only where the upstream actually has data. The fold is to give the existing atom its `index.ts` mined from real columns (like [[machine]], like [[variant]]), completing its [[trinity]] — **never mint a duplicate word, never port an empty table**.
 

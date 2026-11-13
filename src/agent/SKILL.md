@@ -122,7 +122,7 @@ Matter-twin: `src/agent/index.ts` (the strict-apply gates — `StrictApplyViolat
 
 **skills.index — Worker-only debt.** The 77MB `skills.index.ts` bundle remains imported only by Cloudflare Workers / build-time catalogue generation (`atom-catalogue-lazy` defers until first MCP lookup). Agent dispatch, strict-apply, and IDE skill realisation never import it — runtime loads sealed SKILL.md excerpts from disk via `loadSealedSkill`. Removing the Worker import path is tracked debt ([[convention/baked]] · `skill/router/build`).
 
-Matter-twin: `src/agent/cost-policy.ts` · `src/agent/cheap-dispatch.ts` · `src/agent/skill-context.ts` · `src/skill/router/lazy-load.ts` · `src/agents/mcp/atom-catalogue-lazy.ts`. Composes: [[cost]] · [[wave]] · [[path]] · [[accounting]] · [[seal]] · [[rules]] · [[navigation]] · [[mcp]] · [[chat]] · [[convention/baked]].
+Matter-twin: `src/agent/cost-policy.ts` · `src/agent/cheap-dispatch.ts` · `src/agent/skill-context.ts` · `src/skill/router/lazy-load.ts` · `src/agents/mcp/atom-catalogue-lazy.ts`. Composes: [[cost]] · [[wave]] · [[path]] · [[accounting]] · [[seal]] · [[rules]] · [[navigation]] · mcp · [[chat]] · [[convention/baked]].
 
 **Law — [[law]]: any agent opening any part of the code must immediately realise all needed skills — ancestors, bonds, quantum env, entanglement, rules — via `realiseSkillsForPath` / `skillContextForDispatch`; lazy disk load only, never `skills.index`.**
 
@@ -143,5 +143,5 @@ Matter-twin: `src/agent/cost-policy.ts` · `src/agent/cheap-dispatch.ts` · `src
 
 ## Self-improve intelligence — quantum in thinking
 
-**Self-improve intelligence: measure, fold, seal, balance — quantum in thinking.** `selfImproveCycle({ batch, axes? })` in `agent/intelligence` runs one coordinated wave when the apply/wave lock is free: payload gate → bond scan + gate axes (violations = entropy) → rank gaps by `interact64` entanglement → bounded seal/fix → measure again → receipt UUID chain. `quantumIntelligenceOf(scope)` is the pure metric (violation count × bond-degree fold). `learnSciencesOnTheWay()` maps science → module → proof on the path. `pnpm erpax agent improve` · `pnpm erpax intelligence cycle --batch 10`. Wired into `apply/automate` when wave lock free. Composes: [[quantum/fold]] · [[apply]]/wave · [[science]] · [[receipt]] · [[payload]].
+**Self-improve intelligence: measure, fold, seal, balance — quantum in thinking.** `selfImproveCycle({ batch, axes? })` in `agent/intelligence` runs one coordinated wave when the apply/wave lock is free: payload gate → bond scan + gate axes (violations = entropy) → rank gaps by `interact64` entanglement → bounded seal/fix → measure again → receipt UUID chain. `quantumIntelligenceOf(scope)` is the pure metric (violation count × bond-degree fold). `learnSciencesOnTheWay()` maps science → module → proof on the path. `pnpm erpax agent improve` · `pnpm erpax intelligence cycle --batch 10`. Wired into `apply/automate` when wave lock free. Composes: [[quantum/fold]] · [[apply]]/wave · science · [[receipt]] · [[payload]].
 

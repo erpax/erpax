@@ -36,7 +36,7 @@ version: 2
 
 An embedded audio object.
 
-Entangled with — [[object]] · [[snapshot]]
+Entangled with — [[object]] · snapshot
 
 Attested in schema.org — AudioObject · AudioObjectSnapshot · audio
 

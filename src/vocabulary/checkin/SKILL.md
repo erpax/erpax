@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from checkinTime · webCheckinTime ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[time]] · [[web]]
+Entangled with — time · [[web]]
 
 Attested in schema.org — checkinTime · webCheckinTime
 

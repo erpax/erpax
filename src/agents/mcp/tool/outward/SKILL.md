@@ -78,4 +78,4 @@ from them through any surface, MCP included. A harvest does live network I/O, so
 seconds and can return `unreachable` for reasons that have nothing to do with erpax. And coverage
 records that a lead was **answered**, never that the answer was right.
 
-Composes: [[outward]]/leads · [[mcp]]/tool · [[quantum]]/chat.
+Composes: [[outward]]/leads · mcp/tool · [[quantum]]/chat.

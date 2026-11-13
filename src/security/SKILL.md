@@ -38,7 +38,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from securityClearanceRequirement · securityScreening ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[clearance]] · [[requirement]] · [[screening]]
+Entangled with — [[clearance]] · [[requirement]] · screening
 
 Attested in schema.org — securityClearanceRequirement · securityScreening
 

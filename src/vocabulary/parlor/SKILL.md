@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from TattooParlor ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[tattoo]]
+Entangled with — tattoo
 
 Attested in schema.org — TattooParlor
 

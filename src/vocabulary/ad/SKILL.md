@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from WPAdBlock ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[wp]] · [[block]]
+Entangled with — wp · [[block]]
 
 Attested in schema.org — WPAdBlock
 

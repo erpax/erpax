@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from reservedTicket ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[ticket]]
+Entangled with — ticket
 
 Attested in schema.org — reservedTicket
 

@@ -45,7 +45,7 @@ Matter-twin: `src/default/index.ts` (`architecturalDefault` · `isByArchitecture
 
 **Law — [[law]]: nothing defines a default — the default is by architecture. A defined default (a hardcoded fallback — `|| x`, `?? x`, `= literal`) is an assumption, hence entropy; the architecture (the content-uuid, the path, the computed structure) already determines the value, so derive it, never assign it. The collider has no default for exactly this reason — computed-not-hardcoded at every scale.**
 
-Entangled with — [[value]]
+Entangled with — value
 
 Attested in schema.org — defaultValue
 

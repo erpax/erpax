@@ -36,7 +36,7 @@ version: 2
 
 The kind of aircraft (e.g., "Boeing 747").
 
-Entangled with — [[vehicle]] · [[thing]]
+Entangled with — vehicle · [[thing]]
 
 Attested in schema.org — aircraft
 

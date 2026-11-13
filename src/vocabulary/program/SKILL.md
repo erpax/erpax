@@ -36,7 +36,7 @@ version: 2
 
 The MemberProgram associated with a ProgramMembership.
 
-Entangled with — [[educational]] · [[occupational]] · [[member]] · [[tier]] · [[membership]] · [[work]] · [[based]] · [[mode]] · [[has]] · [[used]] · [[name]] · [[prerequisites]] · [[type]]
+Entangled with — [[educational]] · [[occupational]] · [[member]] · tier · [[membership]] · [[work]] · [[based]] · [[mode]] · [[has]] · used · [[name]] · [[prerequisites]] · [[type]]
 
 Attested in schema.org — EducationalOccupationalProgram · MemberProgram · MemberProgramTier · ProgramMembership · WorkBasedProgram · educationalProgramMode · hasMemberProgram · program · programMembershipUsed · programName · programPrerequisites · programType
 

@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from RepaymentSpecification · loanRepaymentForm · monthlyMinimumRepaymentAmount ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[specification]] · [[loan]] · [[form]] · [[monthly]] · [[minimum]] · [[amount]]
+Entangled with — specification · [[loan]] · [[form]] · [[monthly]] · [[minimum]] · [[amount]]
 
 Attested in schema.org — RepaymentSpecification · loanRepaymentForm · monthlyMinimumRepaymentAmount
 

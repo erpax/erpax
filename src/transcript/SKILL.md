@@ -38,7 +38,7 @@ This atom existed as **prose only** — `SKILL.md`, `README.md`, `LLM.md`, and n
 
 ## Why captions, and not the video
 
-An agent cannot watch or hear. What it *can* do is read captions as **bytes** — locally, with no consent wall, no JS rendering, and no model standing between the source and the reader ([[local]]). A `.vtt` on disk is a primary source; a summary of a video is not.
+An agent cannot watch or hear. What it *can* do is read captions as **bytes** — locally, with no consent wall, no JS rendering, and no model standing between the source and the reader (local). A `.vtt` on disk is a primary source; a summary of a video is not.
 
 ```
 pnpm erpax transcript captions.vtt ratchet void
@@ -74,4 +74,4 @@ Four research lanes beside it need **no credential at all** — Crossref, OpenAl
 - **W3C WebVTT** — The Web Video Text Tracks Format.
 - **ISO-19011:2018 §6.4** — audit evidence: the citation must lead to the evidence, and a timestamp is the citation.
 
-Composes: [[local]] · [[instrument]] · [[api]] · [[handoff]] · [[law]].
+Composes: local · [[instrument]] · [[api]] · handoff · [[law]].

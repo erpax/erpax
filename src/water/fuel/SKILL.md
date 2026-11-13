@@ -88,4 +88,4 @@ never how clean the water is, but how much reduced carbon is dissolved in it.**
 
 - **ISO/IEC 25010:2023 §5.5** — testability: the witness that generates is refutable, and so is the one that does not.
 
-Composes: [[water]]/cycle · [[water]] · [[energy]] · [[law]].
+Composes: [[water]]/cycle · [[water]] · energy · [[law]].

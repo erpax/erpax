@@ -36,7 +36,7 @@ version: 2
 
 A park.
 
-Entangled with — [[amusement]] · [[rv]]
+Entangled with — [[amusement]] · rv
 
 Attested in schema.org — AmusementPark · Park · RVPark
 

@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from jobImmediateStart ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[job]] · [[start]]
+Entangled with — [[job]] · start
 
 Attested in schema.org — jobImmediateStart
 

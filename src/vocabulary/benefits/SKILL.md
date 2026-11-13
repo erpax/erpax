@@ -36,7 +36,7 @@ version: 2
 
 Description of benefits associated with the job.
 
-Entangled with — [[government]] · [[type]] · [[summary]] · [[url]] · [[info]] · [[job]] · [[physiological]]
+Entangled with — [[government]] · [[type]] · summary · url · [[info]] · [[job]] · [[physiological]]
 
 Attested in schema.org — GovernmentBenefitsType · benefits · benefitsSummaryUrl · governmentBenefitsInfo · jobBenefits · physiologicalBenefits
 

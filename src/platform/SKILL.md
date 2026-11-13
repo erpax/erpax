@@ -37,7 +37,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from DigitalPlatformEnumeration · RuntimePlatform · actionPlatform · arrivalPlatform · departurePlatform · gamePlatform · runtimePlatform · targetPlatform ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[digital]] · [[enumeration]] · [[runtime]] · [[action]] · [[arrival]] · [[departure]] · [[game]] · [[target]]
+Entangled with — [[digital]] · [[enumeration]] · runtime · action · [[arrival]] · [[departure]] · [[game]] · target
 
 Attested in schema.org — DigitalPlatformEnumeration · RuntimePlatform · actionPlatform · arrivalPlatform · departurePlatform · gamePlatform · runtimePlatform · targetPlatform
 

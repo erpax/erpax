@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from InteractionCounter · UserInteraction · agentInteractionStatistic · bioChemInteraction · interactionCount · interactionService · interactionStatistic · interactionType · userInteractionCount ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[counter]] · [[user]] · [[agent]] · [[statistic]] · [[bio]] · [[chem]] · [[count]] · [[service]] · [[type]]
+Entangled with — [[counter]] · user · [[agent]] · statistic · [[bio]] · [[chem]] · [[count]] · service · [[type]]
 
 Attested in schema.org — InteractionCounter · UserInteraction · agentInteractionStatistic · bioChemInteraction · interactionCount · interactionService · interactionStatistic · interactionType · userInteractionCount
 

@@ -36,7 +36,7 @@ version: 2
 
 A body of structured information describing some topic(s) of interest.
 
-Entangled with — [[time]] · [[interval]]
+Entangled with — time · [[interval]]
 
 Attested in schema.org — Dataset · dataset · datasetTimeInterval
 

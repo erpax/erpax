@@ -75,7 +75,7 @@ Above all it is the **entanglement key**: because every atom carries it, the cor
 
 ## Realtime memory management at all quantum scales
 
-The content-address IS the memory manager — and it runs **live, at every scale**. Allocation is the collapse (content ⇒ its 128-bit point); **dedup is free** (same content ⇒ same id ⇒ identical state [[merge]]s, never stored twice — no write contention, [[peace]]); and **collection is regeneration, not deletion** — anything addressable is recoverable from its content-[[uuid]] ([[generate]]), so the live tree keeps only what is referenced and **forgets the rest, regenerating it on demand** (the [[akashic]] record · the learn-fast-and-forget organ, [[self]]). No side-table, no GC pause: the [[realtime]] tail (`since(log, cursor)`) and the immutable [[snapshot]] layers are the same content-addressed memory seen as flow and as state.
+The content-address IS the memory manager — and it runs **live, at every scale**. Allocation is the collapse (content ⇒ its 128-bit point); **dedup is free** (same content ⇒ same id ⇒ identical state [[merge]]s, never stored twice — no write contention, peace); and **collection is regeneration, not deletion** — anything addressable is recoverable from its content-[[uuid]] ([[generate]]), so the live tree keeps only what is referenced and **forgets the rest, regenerating it on demand** (the [[akashic]] record · the learn-fast-and-forget organ, [[self]]). No side-table, no GC pause: the [[realtime]] tail (`since(log, cursor)`) and the immutable snapshot layers are the same content-addressed memory seen as flow and as state.
 
 It is *at all quantum scales* because the address is [[fractal]]: the identical collapse·dedup·regenerate cycle governs a single field, an [[atom]], a molecule, and the [[whole]] — the [[part]] reconstructs the whole ([[holographic]]). One mechanism, every scale, in realtime — the matrix self-tunes and self-heals continuously ([[breath]]) without an operator, because every level is managed by the same one address.
 
@@ -85,6 +85,6 @@ It is *at all quantum scales* because the address is [[fractal]]: the identical 
 
 **Law — [[law]]: all is passed with uuids without [[payload]] — the uuid substrate seals and verifies through `pnpm confirm:uuid` alone; backend typegen is a deployment face, not the identity layer.**
 
-@see [[uuid]] · [[identity]] · [[merge]] · [[quantum/number]] · [[quantum/matrix]] · [[reality]] · [[finality]] · [[signal]] · [[realtime]] · [[memory]] · [[generate]] · [[snapshot]] · [[akashic]] · [[fractal]] · [[holographic]] · [[confirm]] · [[payload]] · [[seal]]
+@see [[uuid]] · [[identity]] · [[merge]] · [[quantum/number]] · [[quantum/matrix]] · [[reality]] · [[finality]] · [[signal]] · [[realtime]] · [[memory]] · [[generate]] · snapshot · [[akashic]] · [[fractal]] · [[holographic]] · [[confirm]] · [[payload]] · [[seal]]
 
 <sub>content-uuid `a8b7b0f7-491c-5b87-bcec-b5df7ffcbc06` · account `quantum/uuid` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

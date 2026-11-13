@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from isAcceptingNewPatients ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[accepting]] · [[new]]
+Entangled with — accepting · [[new]]
 
 Attested in schema.org — isAcceptingNewPatients
 

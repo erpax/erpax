@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from TouristAttraction · includesAttraction ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[tourist]] · [[includes]]
+Entangled with — tourist · [[includes]]
 
 Attested in schema.org — TouristAttraction · includesAttraction
 

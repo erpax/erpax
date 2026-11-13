@@ -36,7 +36,7 @@ version: 2
 
 A car is a wheeled, self-powered motor vehicle used for transportation.
 
-Entangled with — [[usage]] · [[type]] · [[rental]] · [[reservation]]
+Entangled with — usage · [[type]] · [[rental]] · [[reservation]]
 
 Attested in schema.org — Car · CarUsageType · RentalCarReservation
 

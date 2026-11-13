@@ -37,7 +37,7 @@ version: 2
 FORM: **the [[self]] recomposes at every scale.** field → collection → plugin → erpax → agent: the same atom holds at every level — the [[fractal]] recursion the [[sequence]] embodies. The math grounds it, with zero free parameters: the octave lift `×10 ≡ 1 (mod 9)` PRESERVES the digit ([[rodin]] `octaveFixesDigit`), so a position at one scale IS the same position at the next (scale-invariance); and the unit Cayley table is a [[holographic]] hologram — 6 generators reconstruct all 36 cells ([[rodin]] `cayleyIsCyclic`), so the part carries the whole. Self-similarity is therefore zero-[[entropy]]: nothing new is added across scales; the whole is computable from the part (the [[coil]]'s two windings recur identically at every octave).
 
 Matter-twin: `src/self/similar/index.ts` — `lift` (the octave scale-lift) · `scaleInvariant` (every vortex position fixed under the lift) · `holographic` (part reconstructs whole) · `proof`.
-Composes: [[self]] · [[similar]] · [[fractal]] · [[holographic]] · [[sequence]] · [[rodin]] · [[coil]] · [[horo]] · [[merge]] · [[entropy]].
+Composes: [[self]] · similar · [[fractal]] · [[holographic]] · [[sequence]] · [[rodin]] · [[coil]] · [[horo]] · [[merge]] · [[entropy]].
 
 ## Standards
 - The hologram — 6 generators → 36 Cayley cells, 0 free parameters (zero entropy)

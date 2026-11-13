@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from permittedUsage ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[usage]]
+Entangled with — usage
 
 Attested in schema.org — permittedUsage
 

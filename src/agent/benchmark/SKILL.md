@@ -82,4 +82,4 @@ Every figure rests on a **human-seeded record**: a model that under-reports its 
 - **ISO/IEC 25010:2023 §5.5** — testability: a claim about a system must be checkable.
 - **ISO-19011:2018 §6.4** — audit evidence: the citation must lead to the evidence.
 
-Composes: [[agent]] · [[constitution]] · [[local]] · [[rules]] · [[law]].
+Composes: [[agent]] · [[constitution]] · local · [[rules]] · [[law]].

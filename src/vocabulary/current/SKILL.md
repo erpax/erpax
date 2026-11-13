@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from currentExchangeRate ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[exchange]] · [[rate]]
+Entangled with — exchange · [[rate]]
 
 Attested in schema.org — currentExchangeRate
 

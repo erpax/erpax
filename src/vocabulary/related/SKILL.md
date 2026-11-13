@@ -36,7 +36,7 @@ version: 2
 
 A pointer to another, somehow related product (or multiple products).
 
-Entangled with — [[exercise]] · [[diet]] · [[anatomy]] · [[condition]] · [[drug]] · [[link]] · [[structure]] · [[therapy]]
+Entangled with — [[exercise]] · [[diet]] · [[anatomy]] · [[condition]] · [[drug]] · [[link]] · structure · [[therapy]]
 
 Attested in schema.org — exerciseRelatedDiet · isRelatedTo · relatedAnatomy · relatedCondition · relatedDrug · relatedLink · relatedStructure · relatedTherapy · relatedTo
 

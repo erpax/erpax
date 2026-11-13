@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from MedicalImagingTechnique · imagingTechnique · measurementTechnique ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[medical]] · [[imaging]] · [[measurement]]
+Entangled with — [[medical]] · imaging · [[measurement]]
 
 Attested in schema.org — MedicalImagingTechnique · imagingTechnique · measurementTechnique
 

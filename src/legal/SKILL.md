@@ -50,7 +50,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from DrugLegalStatus · LegalForceStatus · LegalService · LegalValueLevel · legalAddress · legalName · legalRepresentative · legalStatus · legislationLegalForce · legislationLegalValue ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[drug]] · [[status]] · [[force]] · [[service]] · [[value]] · [[level]] · [[address]] · [[name]] · [[representative]] · [[legislation]]
+Entangled with — [[drug]] · [[status]] · [[force]] · service · value · [[level]] · [[address]] · [[name]] · [[representative]] · [[legislation]]
 
 Attested in schema.org — DrugLegalStatus · LegalForceStatus · LegalService · LegalValueLevel · legalAddress · legalName · legalRepresentative · legalStatus · legislationLegalForce · legislationLegalValue
 

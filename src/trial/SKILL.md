@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from MedicalTrial · MedicalTrialDesign · trialDesign ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[medical]] · [[design]]
+Entangled with — [[medical]] · design
 
 Attested in schema.org — MedicalTrial · MedicalTrialDesign · trialDesign
 

@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from ControlAction · accessibilityControl ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[action]] · [[accessibility]]
+Entangled with — action · [[accessibility]]
 
 Attested in schema.org — ControlAction · accessibilityControl
 

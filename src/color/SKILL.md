@@ -37,7 +37,7 @@ version: 2
 
 The color of the product.
 
-Entangled with — [[swatch]] · [[vehicle]] · [[interior]]
+Entangled with — swatch · vehicle · [[interior]]
 
 Attested in schema.org — color · colorSwatch · vehicleInteriorColor
 

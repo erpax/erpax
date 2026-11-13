@@ -44,7 +44,7 @@ Every mis-measurement in this corpus was this shape — not a wrong answer, a **
 | is this artifact the thing that ships? | `.open-next/worker.js` — *an INPUT to the wrangler entry* | follow `main` in `wrangler.jsonc`, then bundle that |
 | is this symbol used? | the lint report — *said unused; both were called* | the compiler, `tsc --noEmit` |
 | does prose cite real code? | a regex — *wrong in 115 of 6,203 files* | `@/syntax` over `ts.createSourceFile` |
-| what does that page say? | a web fetch — *returns a rendering* | the local clone's bytes ([[local]]) |
+| what does that page say? | a web fetch — *returns a rendering* | the local clone's bytes (local) |
 | how many atoms? | a count in a document — *568 commits stale* | count the tree, now |
 | is this standard cited? | the catalogue count — *`/001/i` matched `ISO 27001`* | open the module, read the banner |
 | did the suite pass? | a green summary — *the setup swallowed the boot* | assert the precondition and let it throw |
@@ -72,4 +72,4 @@ Which instrument answers which question is **declared** — no theorem derives i
 - **ISO-19011:2018 §6.4** — audit evidence: sufficient and appropriate, not merely available.
 - **ISO/IEC 25010:2023 §5.5** — testability: a claim is only as good as what could contradict it.
 
-Composes: [[local]] · [[seeing]] · [[rules]]/cycle · [[readme]] · [[law]].
+Composes: local · seeing · [[rules]]/cycle · [[readme]] · [[law]].

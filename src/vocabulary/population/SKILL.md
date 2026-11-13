@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from StatisticalPopulation · populationType · targetPopulation ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[statistical]] · [[type]] · [[target]]
+Entangled with — statistical · [[type]] · target
 
 Attested in schema.org — StatisticalPopulation · populationType · targetPopulation
 

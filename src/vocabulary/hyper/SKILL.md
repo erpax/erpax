@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from HyperToc · HyperTocEntry ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[toc]] · [[entry]]
+Entangled with — toc · [[entry]]
 
 Attested in schema.org — HyperToc · HyperTocEntry
 

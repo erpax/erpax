@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from DrugPregnancyCategory · pregnancyCategory · pregnancyWarning ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[drug]] · [[category]] · [[warning]]
+Entangled with — [[drug]] · [[category]] · warning
 
 Attested in schema.org — DrugPregnancyCategory · pregnancyCategory · pregnancyWarning
 

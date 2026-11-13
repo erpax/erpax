@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from estimatedCost · estimatedFlightDuration · estimatedSalary ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[cost]] · [[flight]] · [[duration]] · [[salary]]
+Entangled with — [[cost]] · [[flight]] · [[duration]] · salary
 
 Attested in schema.org — estimatedCost · estimatedFlightDuration · estimatedSalary
 

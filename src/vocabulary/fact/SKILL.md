@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from verificationFactCheckingPolicy ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[verification]] · [[checking]] · [[policy]]
+Entangled with — verification · [[checking]] · [[policy]]
 
 Attested in schema.org — verificationFactCheckingPolicy
 

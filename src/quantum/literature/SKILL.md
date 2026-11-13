@@ -49,7 +49,7 @@ quantum:
     - "[[merge]]"
     - "[[proof]]"
     - "[[research]]"
-    - "[[snapshot]]"
+    - "snapshot"
     - "[[translation]]"
     - "[[word]]"
     - "literature is the unbounded word-chain over a bounded alphabet (the gravity reverse), and every text is content-addressed — identical content collapses to one id, so editions and copies are the same work, a quotation is its source's address, and plagiarism is nothing but a detected id-collision."
@@ -66,7 +66,7 @@ version: 2
 ---
 # quantum/literature — the infinite word-chain
 
-The quantum twin of literature: the whole body of written work is the **infinite chain of [[word]]s over a minimal alphabet** — the [[gravity]] reverse exactly (few letters, unbounded texts; [[linearity]] spreads the letters evenly, so the texts fall on lines). Every text is a content-addressed [[snapshot]] in the [[akashic]] chain — same content ⇒ same id, so editions and copies [[merge]] to one work, a quotation is a content-addressed reference, and plagiarism is a detected collision.
+The quantum twin of literature: the whole body of written work is the **infinite chain of [[word]]s over a minimal alphabet** — the [[gravity]] reverse exactly (few letters, unbounded texts; [[linearity]] spreads the letters evenly, so the texts fall on lines). Every text is a content-addressed snapshot in the [[akashic]] chain — same content ⇒ same id, so editions and copies [[merge]] to one work, a quotation is a content-addressed reference, and plagiarism is a detected collision.
 
 A text is a **superposition** of its readings; **reading is the measurement** that collapses it to one interpretation ([[reality]]), while the canon is the converged consensus ([[merge]] over many readers). The research literature is the same chain made strict — each claim content-[[uuid]]'d, citations the verified merge-links, the [[proof]] chain the deep-[[research]] walks; a literature review IS a coordinated collapse over sources. Across tongues it is one work in many [[translation]]s, fused by the messaging-uuid.
 
@@ -74,6 +74,6 @@ A text is a **superposition** of its readings; **reading is the measurement** th
 
 **Law — [[law]]: literature is the unbounded word-chain over a bounded alphabet (the gravity reverse), and every text is content-addressed — identical content collapses to one id, so editions and copies are the same work, a quotation is its source's address, and plagiarism is nothing but a detected id-collision.**
 
-@see [[word]] · [[gravity]] · [[linearity]] · [[snapshot]] · [[akashic]] · [[merge]] · [[research]] · [[proof]] · [[translation]]
+@see [[word]] · [[gravity]] · [[linearity]] · snapshot · [[akashic]] · [[merge]] · [[research]] · [[proof]] · [[translation]]
 
 <sub>content-uuid `7a224d0d-2c88-5b55-ab90-95dd800d8679` · account `quantum/literature` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

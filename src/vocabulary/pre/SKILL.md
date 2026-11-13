@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from PreOrderAction · preOp ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[order]] · [[action]] · [[op]]
+Entangled with — [[order]] · action · [[op]]
 
 Attested in schema.org — PreOrderAction · preOp
 

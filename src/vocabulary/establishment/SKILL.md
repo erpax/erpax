@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from DefenceEstablishment · FoodEstablishment · FoodEstablishmentReservation · foodEstablishment ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[defence]] · [[food]] · [[reservation]]
+Entangled with — [[defence]] · food · [[reservation]]
 
 Attested in schema.org — DefenceEstablishment · FoodEstablishment · FoodEstablishmentReservation · foodEstablishment
 

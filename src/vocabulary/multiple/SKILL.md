@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from multipleValues ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[values]]
+Entangled with — values
 
 Attested in schema.org — multipleValues
 

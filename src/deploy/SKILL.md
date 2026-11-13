@@ -55,7 +55,7 @@ Never use ephemeral filesystems. Use a cloud storage adapter (S3, R2, Azure, GCS
 - `next start` in prod, never `next dev`.
 - `output: 'standalone'` for Docker; `NODE_ENV=production`; serve with `HOSTNAME=0.0.0.0 node server.js`.
 
-Composes: [[config]] · [[database]] · [[upload]] · [[bindings]] · [[harden]].
+Composes: [[config]] · [[database]] · upload · [[bindings]] · [[harden]].
 
 ## Harmonized — the gate-green order is the consonant one
 

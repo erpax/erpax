@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from FinancialIncentive · IncentiveQualifiedExpenseType · IncentiveStatus · IncentiveType · incentiveAmount · incentiveCompensation · incentiveStatus · incentiveType ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[financial]] · [[qualified]] · [[expense]] · [[type]] · [[status]] · [[amount]] · [[compensation]]
+Entangled with — [[financial]] · [[qualified]] · expense · [[type]] · [[status]] · [[amount]] · [[compensation]]
 
 Attested in schema.org — FinancialIncentive · IncentiveQualifiedExpenseType · IncentiveStatus · IncentiveType · incentiveAmount · incentiveCompensation · incentiveStatus · incentiveType
 

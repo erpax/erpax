@@ -63,7 +63,7 @@ version: 2
 
 The quantum facet of the [[translator]]: translation **through the content-uuid interlingua** is quantum on three counts.
 
-- **Collapse** — many surface forms (languages, spellings, [[sensory]] modalities) collapse to **one meaning-uuid**, the eigenstate / interlingua. That collapse IS the [[merge]] law: synonyms and cross-language forms fuse to the shared identity.
+- **Collapse** — many surface forms (languages, spellings, sensory modalities) collapse to **one meaning-uuid**, the eigenstate / interlingua. That collapse IS the [[merge]] law: synonyms and cross-language forms fuse to the shared identity.
 - **No-cloning** — each meaning has exactly one uuid; a concept can't be forked into two identities ([[entanglement]] no-cloning, Wootters–Zurek 1982). Translation **preserves** meaning, never clones it.
 - **Entanglement** — the modalities (colour, sound, identity, capability) are **entangled** in the 128 bits: the uuid IS the whole message, self-decoding ([[quantum]], the multi-modal uuid).
 

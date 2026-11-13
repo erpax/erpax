@@ -36,7 +36,7 @@ version: 2
 
 The date and time of obtaining the product.
 
-Entangled with — [[through]]
+Entangled with — through
 
 Attested in schema.org — ownedFrom · ownedThrough
 

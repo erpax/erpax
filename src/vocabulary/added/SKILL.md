@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from valueAddedTaxIncluded ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[value]] · [[tax]] · [[included]]
+Entangled with — value · [[tax]] · [[included]]
 
 Attested in schema.org — valueAddedTaxIncluded
 

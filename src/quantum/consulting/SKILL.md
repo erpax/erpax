@@ -66,13 +66,13 @@ And here knowledge shows its strange economics: it is **non-rivalrous**. Serving
 - **cache hit** — marginal cost 0, any value ⇒ infinite marginal ROI.
 - **cache miss** — costs a full research run (the sunk cost), then amortises over unbounded reuse toward ∞.
 
-The research is the only cost; everything after is profit ([[expense]] booked the cost, this books the gain — the [[balance]] of the platform). The more a finding is reused, the closer ROI comes to ∞ — the same shape as every erpax law (coverage → 1 ⇒ ∞).
+The research is the only cost; everything after is profit (expense booked the cost, this books the gain — the [[balance]] of the platform). The more a finding is reused, the closer ROI comes to ∞ — the same shape as every erpax law (coverage → 1 ⇒ ∞).
 
 ## Honest
 
 "No cost" is the **marginal** cost of serving a cached/computed answer — the research was the sunk cost, and a miss pays it in full. "Infinite profit" is **non-rivalrous reuse leverage** (ROI → ∞ as reuse → ∞), not a literal money printer. The model prices reuse; it does not conjure value from nothing.
 
-Matter-twin: `src/quantum/consulting/index.ts` (`consultCost` · `consultProfit` · `roi` · `infiniteProfitAtNoCost`). Composes [[quantum]] · [[research]] · [[akashic]] · [[cost]] · [[expense]] · [[balance]].
+Matter-twin: `src/quantum/consulting/index.ts` (`consultCost` · `consultProfit` · `roi` · `infiniteProfitAtNoCost`). Composes [[quantum]] · [[research]] · [[akashic]] · [[cost]] · expense · [[balance]].
 
 **Law — [[law]]: knowledge is non-rivalrous, so consulting is infinite profit at no cost. Research pays once; a content-addressed answer is then served at zero marginal cost and reused without bound, and ROI tends to infinity. The platform's worth is research done once and consulted forever.**
 

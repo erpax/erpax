@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from MathSolver · SolveMathAction · mathExpression ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[solver]] · [[solve]] · [[action]] · [[expression]]
+Entangled with — solver · solve · action · [[expression]]
 
 Attested in schema.org — MathSolver · SolveMathAction · mathExpression
 

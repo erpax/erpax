@@ -51,7 +51,7 @@ quantum:
     - "[[payload]]"
     - "[[quantum/serverless]]"
     - "[[reality]]"
-    - "[[snapshot]]"
+    - "snapshot"
     - "[[worker]]"
   seal:
     sandbox: false
@@ -72,15 +72,15 @@ The quantum twin of [[deploy]]: deployment is the **collapse of the codebase int
 
 1. **[[gate]] first** — only a gate-green tree may collapse ([[confirm]] · [[proof]]). Shipping un-verified is forging reality.
 2. **[[migrate]] the [[database]]** — `payload migrate` against remote D1 (never dev-push in prod); the schema is generated, migrations committed.
-3. **build the artifact** — `opennextjs-cloudflare build`: a content-addressed [[snapshot]] (the [[quantum/fs]] law — immutable, deduped), the matter ([[payload]]) compiled for the Worker.
+3. **build the artifact** — `opennextjs-cloudflare build`: a content-addressed snapshot (the [[quantum/fs]] law — immutable, deduped), the matter ([[payload]]) compiled for the Worker.
 4. **push** — `opennextjs-cloudflare deploy`. The release is [[finality]] one way; rollback is the *reverse* — re-collapse a prior [[versions]] snapshot, never mutate the live one.
 
 A deploy is a [[measurement]]: the superposed branch becomes the one running world, [[anchor]]ed by the gate that let it through.
 
-**Law — [[law]]: only a gate-green tree may collapse into reality — deployment is ordered (gate → migrate → build → push) and shipping an unverified tree forges reality, so the gate is the precondition of the release. The release is finality one way: the live world is never mutated in place; recovery is re-collapsing a prior immutable [[snapshot]], so every running state is one a gate once let through.**
+**Law — [[law]]: only a gate-green tree may collapse into reality — deployment is ordered (gate → migrate → build → push) and shipping an unverified tree forges reality, so the gate is the precondition of the release. The release is finality one way: the live world is never mutated in place; recovery is re-collapsing a prior immutable snapshot, so every running state is one a gate once let through.**
 
 **Existence proof:** erpax deployed serverless on Cloudflare IS the proof — `proveServerlessQuantum()` ([[quantum/serverless]]) derives sealed diamonds from live `wrangler.jsonc` bindings ⊕ [[quantum]] laws.
 
-@see [[deploy]] · [[reality]] · [[gate]] · [[migrate]] · [[bindings]] · [[snapshot]] · [[finality]] · [[payload]] · [[worker]] · [[quantum/serverless]] · [[cloudflare]]
+@see [[deploy]] · [[reality]] · [[gate]] · [[migrate]] · [[bindings]] · snapshot · [[finality]] · [[payload]] · [[worker]] · [[quantum/serverless]] · [[cloudflare]]
 
 <sub>content-uuid `b4654b0f-1b41-5964-884c-5f38e6f853ae` · account `quantum/deploy` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

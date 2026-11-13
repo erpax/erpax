@@ -36,7 +36,7 @@ version: 2
 
 The stage of the condition, if applicable.
 
-Entangled with — [[medical]] · [[condition]] · [[number]] · [[sub]] · [[suffix]]
+Entangled with — [[medical]] · [[condition]] · [[number]] · sub · suffix
 
 Attested in schema.org — MedicalConditionStage · stage · stageAsNumber · subStageSuffix
 

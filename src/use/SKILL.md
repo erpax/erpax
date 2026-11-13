@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from UseAction · cvdNumVentUse · educationalUse · potentialUse ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[action]] · [[cvd]] · [[num]] · [[vent]] · [[educational]] · [[potential]]
+Entangled with — action · [[cvd]] · [[num]] · vent · [[educational]] · [[potential]]
 
 Attested in schema.org — UseAction · cvdNumVentUse · educationalUse · potentialUse
 

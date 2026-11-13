@@ -50,7 +50,7 @@ Biomass is to the [[aquaculture]]/[[forestry]] stock what the counted [[herd]] i
 - IFRS IAS-41 (fair-value-less-costs-to-sell on biomass; biological-transformation vs price-change split)
 - FAO (aquaculture/forestry biomass); forest growth-and-yield models (MAI)
 
-Composes [[biological/assets]] · [[measure]] · [[rate]] · [[aquaculture]] · [[forestry]] · [[apiculture]] · [[mortality]] · [[harvest]] · [[capacity]] · [[forecast]] · [[items]] · [[yield]] · [[sustainability]] · [[ecosystem]].
+Composes [[biological/assets]] · [[measure]] · [[rate]] · [[aquaculture]] · [[forestry]] · [[apiculture]] · [[mortality]] · [[harvest]] · [[capacity]] · [[forecast]] · [[items]] · yield · [[sustainability]] · [[ecosystem]].
 
 ## Matter-twin
 

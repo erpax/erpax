@@ -37,7 +37,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from WPFooter ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[wp]]
+Entangled with — wp
 
 Attested in schema.org — WPFooter
 

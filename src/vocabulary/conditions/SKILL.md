@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from ShippingConditions · conditionsOfAccess · shippingConditions ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[shipping]] · [[access]]
+Entangled with — shipping · [[access]]
 
 Attested in schema.org — ShippingConditions · conditionsOfAccess · shippingConditions
 

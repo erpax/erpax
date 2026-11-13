@@ -95,7 +95,7 @@ The reason accounting is self-sufficient: a `journal-line` (or audit event) poin
 | `CurrencyConcern` | `currencyField` (amount + ISO currency) |
 | `NumberConcern` (document numbering) | `numberField` + `beforeChange` sequence hook |
 | `HostConcern` (multi-tenant) | the multi-tenant plugin's injected `tenant` (NOT a hand-rolled field) — see [[plugins]] |
-| `AttachmentConcern` | `upload` relationship (see [[upload]]) |
+| `AttachmentConcern` | `upload` relationship (see upload) |
 | locked-period guard | `fiscal-periods` + write-guard [[hooks]] |
 
 ## Concern-heavy documents → nested field-groups (the fractal port)
@@ -109,7 +109,7 @@ A document like `invoices` composes ~40 Rails concerns; in Payload they fold int
 - Integer-cents-only without `currency` — carry currency everywhere (multi-currency ledgers).
 
 ## Traditions (prefix removed)
-Double-entry is the moral ledger of every tradition — deeds posted as [[take]] (debit/sin) and [[give]] (credit/merit), and the books must [[balance]] at the [[close]]: **karma** — "whatsoever a man soweth, that shall he also reap" (Galatians 6:7); the scales, *al-mizan* — "We place the scales of justice for the Day of Resurrection… the weight of a mustard seed, We will bring it" (Quran 21:47); the weighing of the heart against Ma'at's feather (Egyptian *Book of the Dead*); the books of deeds opened at judgment ([[akashic]]); the unpayable debt cleared by [[grace]] (the jubilee, Leviticus 25). erpax IS *karma double-entry* (see [[angel]]): entropy itself booked as debit/credit and conserved by content-[[uuid]], audited [[sacred]]/[[profane]].
+Double-entry is the moral ledger of every tradition — deeds posted as take (debit/sin) and [[give]] (credit/merit), and the books must [[balance]] at the [[close]]: **karma** — "whatsoever a man soweth, that shall he also reap" (Galatians 6:7); the scales, *al-mizan* — "We place the scales of justice for the Day of Resurrection… the weight of a mustard seed, We will bring it" (Quran 21:47); the weighing of the heart against Ma'at's feather (Egyptian *Book of the Dead*); the books of deeds opened at judgment ([[akashic]]); the unpayable debt cleared by [[grace]] (the jubilee, Leviticus 25). erpax IS *karma double-entry* (see [[angel]]): entropy itself booked as debit/credit and conserved by content-[[uuid]], audited sacred/[[profane]].
 
 Composes: [[budget/plannings]] · [[financial/statements]] · [[government/grants]] · [[held/for/sale/classifications]] · [[insurance/contracts]] · [[justice]] · [[mineral/resource/assets]] · [[regulatory/deferral/accounts]] · [[bank]] · [[disclosure]] · [[elimination]].
 

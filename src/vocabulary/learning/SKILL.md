@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from LearningResource · learningResourceType ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[resource]] · [[type]]
+Entangled with — resource · [[type]]
 
 Attested in schema.org — LearningResource · learningResourceType
 

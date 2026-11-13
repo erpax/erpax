@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from departureAirport · departureBoatTerminal · departureBusStop · departureGate · departurePlatform · departureStation · departureTerminal · departureTime ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[airport]] · [[boat]] · [[terminal]] · [[bus]] · [[stop]] · [[gate]] · [[platform]] · [[station]] · [[time]]
+Entangled with — [[airport]] · [[boat]] · terminal · [[bus]] · stop · [[gate]] · [[platform]] · station · time
 
 Attested in schema.org — departureAirport · departureBoatTerminal · departureBusStop · departureGate · departurePlatform · departureStation · departureTerminal · departureTime
 

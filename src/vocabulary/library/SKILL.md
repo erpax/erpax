@@ -36,7 +36,7 @@ version: 2
 
 A library.
 
-Entangled with — [[system]] · [[executable]] · [[name]]
+Entangled with — system · [[executable]] · [[name]]
 
 Attested in schema.org — Library · LibrarySystem · executableLibraryName
 

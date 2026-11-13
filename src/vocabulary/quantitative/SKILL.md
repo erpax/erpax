@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from QuantitativeValue · QuantitativeValueDistribution ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[value]] · [[distribution]]
+Entangled with — value · [[distribution]]
 
 Attested in schema.org — QuantitativeValue · QuantitativeValueDistribution
 

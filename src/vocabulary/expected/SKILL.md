@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from expectedArrivalFrom · expectedArrivalUntil · expectedPrognosis ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[arrival]] · [[until]] · [[prognosis]]
+Entangled with — [[arrival]] · until · [[prognosis]]
 
 Attested in schema.org — expectedArrivalFrom · expectedArrivalUntil · expectedPrognosis
 

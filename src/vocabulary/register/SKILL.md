@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from RegisterAction · UnRegisterAction ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[action]] · [[un]]
+Entangled with — action · [[un]]
 
 Attested in schema.org — RegisterAction · UnRegisterAction
 

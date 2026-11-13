@@ -36,7 +36,7 @@ version: 2
 
 Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, restaurant reservations, flights, or rental cars, use Offer.
 
-Entangled with — [[boat]] · [[bus]] · [[event]] · [[flight]] · [[food]] · [[establishment]] · [[lodging]] · [[rental]] · [[car]] · [[package]] · [[status]] · [[type]] · [[taxi]] · [[train]] · [[id]] · [[sub]]
+Entangled with — [[boat]] · [[bus]] · [[event]] · [[flight]] · food · [[establishment]] · [[lodging]] · [[rental]] · [[car]] · [[package]] · [[status]] · [[type]] · taxi · [[train]] · [[id]] · sub
 
 Attested in schema.org — BoatReservation · BusReservation · EventReservation · FlightReservation · FoodEstablishmentReservation · LodgingReservation · RentalCarReservation · Reservation · ReservationPackage · ReservationStatusType · TaxiReservation · TrainReservation · reservationFor · reservationId · reservationStatus · subReservation
 

@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from EmploymentAgency · FundingAgency · InsuranceAgency · TravelAgency ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[employment]] · [[funding]] · [[insurance]] · [[travel]]
+Entangled with — [[employment]] · [[funding]] · [[insurance]] · travel
 
 Attested in schema.org — EmploymentAgency · FundingAgency · InsuranceAgency · TravelAgency
 

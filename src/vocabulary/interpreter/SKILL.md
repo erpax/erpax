@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from claimInterpreter ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[claim]]
+Entangled with — claim
 
 Attested in schema.org — claimInterpreter
 

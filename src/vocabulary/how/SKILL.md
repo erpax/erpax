@@ -36,7 +36,7 @@ version: 2
 
 Instructions that explain how to achieve a result by performing a sequence of steps.
 
-Entangled with — [[direction]] · [[item]] · [[section]] · [[step]] · [[supply]] · [[tip]] · [[tool]] · [[performed]]
+Entangled with — [[direction]] · [[item]] · section · step · supply · tip · [[tool]] · [[performed]]
 
 Attested in schema.org — HowTo · HowToDirection · HowToItem · HowToSection · HowToStep · HowToSupply · HowToTip · HowToTool · howPerformed
 

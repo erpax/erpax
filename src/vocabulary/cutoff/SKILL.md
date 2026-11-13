@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from cutoffTime ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[time]]
+Entangled with — time
 
 Attested in schema.org — cutoffTime
 

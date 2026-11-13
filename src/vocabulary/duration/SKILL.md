@@ -36,7 +36,7 @@ version: 2
 
 Quantity: Duration (use ISO 8601 duration format).
 
-Entangled with — [[activity]] · [[billing]] · [[warranty]] · [[eligible]] · [[estimated]] · [[flight]] · [[job]] · [[term]]
+Entangled with — [[activity]] · [[billing]] · warranty · [[eligible]] · [[estimated]] · [[flight]] · [[job]] · term
 
 Attested in schema.org — Duration · activityDuration · billingDuration · duration · durationOfWarranty · eligibleDuration · estimatedFlightDuration · jobDuration · termDuration
 

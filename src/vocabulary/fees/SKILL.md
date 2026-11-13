@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from ReturnFeesEnumeration · customerRemorseReturnFees · customerRemorseReturnShippingFeesAmount · feesAndCommissionsSpecification · itemDefectReturnFees · itemDefectReturnShippingFeesAmount · returnFees · returnShippingFeesAmount ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[return]] · [[enumeration]] · [[customer]] · [[remorse]] · [[shipping]] · [[amount]] · [[commissions]] · [[specification]] · [[item]] · [[defect]]
+Entangled with — return · [[enumeration]] · [[customer]] · [[remorse]] · shipping · [[amount]] · [[commissions]] · specification · [[item]] · [[defect]]
 
 Attested in schema.org — ReturnFeesEnumeration · customerRemorseReturnFees · customerRemorseReturnShippingFeesAmount · feesAndCommissionsSpecification · itemDefectReturnFees · itemDefectReturnShippingFeesAmount · returnFees · returnShippingFeesAmount
 

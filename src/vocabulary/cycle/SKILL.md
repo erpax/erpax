@@ -35,4 +35,4 @@ version: 2
 
 One recurrence of a repeating process or period. The singular model whose plural store is the [[cycles]] collection ([[balance]]: every collection has its model).
 
-Composes [[cycles]] · [[time]] · [[balance]].
+Composes [[cycles]] · time · [[balance]].

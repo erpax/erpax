@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from dateVehicleFirstRegistered ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[date]] · [[vehicle]] · [[first]]
+Entangled with — [[date]] · vehicle · [[first]]
 
 Attested in schema.org — dateVehicleFirstRegistered
 

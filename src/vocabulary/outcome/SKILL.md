@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from adverseOutcome · seriousAdverseOutcome ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[adverse]] · [[serious]]
+Entangled with — [[adverse]] · serious
 
 Attested in schema.org — adverseOutcome · seriousAdverseOutcome
 

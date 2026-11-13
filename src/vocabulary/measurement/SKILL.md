@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from BodyMeasurementTypeEnumeration · MeasurementMethodEnum · MeasurementTypeEnumeration · WearableMeasurementTypeEnumeration · hasMeasurement · measurementDenominator · measurementMethod · measurementQualifier · measurementTechnique · suggestedMeasurement ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[body]] · [[type]] · [[enumeration]] · [[method]] · [[enum]] · [[wearable]] · [[has]] · [[denominator]] · [[qualifier]] · [[technique]] · [[suggested]]
+Entangled with — [[body]] · [[type]] · [[enumeration]] · [[method]] · [[enum]] · wearable · [[has]] · [[denominator]] · [[qualifier]] · [[technique]] · suggested
 
 Attested in schema.org — BodyMeasurementTypeEnumeration · MeasurementMethodEnum · MeasurementTypeEnumeration · WearableMeasurementTypeEnumeration · hasMeasurement · measurementDenominator · measurementMethod · measurementQualifier · measurementTechnique · suggestedMeasurement
 

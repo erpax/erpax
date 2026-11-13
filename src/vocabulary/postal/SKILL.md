@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from PostalAddress · PostalCodeRangeSpecification · postalCode · postalCodeBegin · postalCodeEnd · postalCodePrefix · postalCodeRange · servicePostalAddress ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[address]] · [[code]] · [[range]] · [[specification]] · [[begin]] · [[end]] · [[prefix]] · [[service]]
+Entangled with — [[address]] · [[code]] · [[range]] · specification · [[begin]] · [[end]] · [[prefix]] · service
 
 Attested in schema.org — PostalAddress · PostalCodeRangeSpecification · postalCode · postalCodeBegin · postalCodeEnd · postalCodePrefix · postalCodeRange · servicePostalAddress
 

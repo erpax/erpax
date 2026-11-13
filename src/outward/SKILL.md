@@ -109,4 +109,4 @@ Adapted from uuidna's outward pass. The prose above lived as a 32-line docblock 
 folded to a content-uuid once; later passes compare. Only a moved address costs
 attention, and a boundary that is down keeps its last receipt.**
 
-Composes: [[identity]] · [[country]] · [[standards]] · [[match]] · [[audit]].
+Composes: [[identity]] · [[country]] · [[standards]] · match · [[audit]].

@@ -46,7 +46,7 @@ A path is not navigated one way. The sidebar trie only **descends** (root → le
 
 That descend spin, **labelled**, IS the breadcrumb: `breadcrumbTrail(atomPath)` gives the crumbs `src/ui/breadcrumb.tsx` renders (the primitive components shipped with no source deciding *which* crumbs). One geometry, read root→leaf as the trail, leaf→root as the fold-to-law. This is the merkaba integrated into real navigation, not a picture beside it.
 
-Earth realises the same counter-rotation as **bothEarths** shells ([[earth]].`bothEarths` · `earthNavigate`) — four cardinal tips phase-locked at 0°·90°·180°·270° with alternating ±ω; forecasts live in [[forecasts]].
+Earth realises the same counter-rotation as **bothEarths** shells ([[earth]].`bothEarths` · `earthNavigate`) — four cardinal tips phase-locked at 0°·90°·180°·270° with alternating ±ω; forecasts live in forecasts.
 
 The **spin** is [[horo]]'s two flow trinities — the hexagram the star tetrahedron shadows. Doubling (the ⟨2⟩ east flow) SWAPS `{1,4,7} ↔ {2,5,8}` about the fixed axis `{3,6,9}`: two triangles counter-rotating. Proven in `horo/trinities` and **reused** here, never re-derived — the fold law, one theorem, one home.
 

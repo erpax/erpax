@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from datasetTimeInterval ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[dataset]] · [[time]]
+Entangled with — [[dataset]] · time
 
 Attested in schema.org — datasetTimeInterval
 

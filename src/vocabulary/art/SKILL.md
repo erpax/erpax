@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from ArtGallery · ComicCoverArt · CoverArt · SequentialArt · artEdition · artMedium ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[gallery]] · [[comic]] · [[cover]] · [[sequential]] · [[edition]] · [[medium]]
+Entangled with — [[gallery]] · [[comic]] · cover · sequential · [[edition]] · [[medium]]
 
 Attested in schema.org — ArtGallery · ComicCoverArt · CoverArt · SequentialArt · artEdition · artMedium
 

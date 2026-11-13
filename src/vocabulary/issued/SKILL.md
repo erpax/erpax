@@ -36,7 +36,7 @@ version: 2
 
 The organization issuing the item, for example a Permit, Ticket, or Certification.
 
-Entangled with — [[date]] · [[through]]
+Entangled with — [[date]] · through
 
 Attested in schema.org — dateIssued · issuedBy · issuedThrough
 

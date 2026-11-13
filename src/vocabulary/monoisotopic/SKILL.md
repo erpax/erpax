@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from monoisotopicMolecularWeight ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[molecular]] · [[weight]]
+Entangled with — [[molecular]] · weight
 
 Attested in schema.org — monoisotopicMolecularWeight
 

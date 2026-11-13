@@ -35,4 +35,4 @@ version: 2
 
 A sink that draws down a resource or stock. The singular model whose plural store is the [[drains]] collection ([[balance]]: every collection has its model).
 
-Composes [[drains]] · [[resource]] · [[balance]].
+Composes [[drains]] · resource · [[balance]].

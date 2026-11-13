@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from DietarySupplement ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[supplement]]
+Entangled with — supplement
 
 Attested in schema.org — DietarySupplement
 

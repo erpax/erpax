@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from MerchantReturnPolicySeasonalOverride · returnPolicySeasonalOverride · seasonalOverride ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[merchant]] · [[return]] · [[policy]] · [[seasonal]]
+Entangled with — [[merchant]] · return · [[policy]] · seasonal
 
 Attested in schema.org — MerchantReturnPolicySeasonalOverride · returnPolicySeasonalOverride · seasonalOverride
 

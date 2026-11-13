@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from OpeningHoursSpecification · openingHours · openingHoursSpecification · specialOpeningHoursSpecification ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[hours]] · [[specification]] · [[special]]
+Entangled with — [[hours]] · specification · special
 
 Attested in schema.org — OpeningHoursSpecification · openingHours · openingHoursSpecification · specialOpeningHoursSpecification
 

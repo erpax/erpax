@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from ReplyAction · replyToUrl ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[action]] · [[url]]
+Entangled with — action · url
 
 Attested in schema.org — ReplyAction · replyToUrl
 

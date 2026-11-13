@@ -36,7 +36,7 @@ version: 2
 
 A person who reads (performs) the audiobook.
 
-Entangled with — [[action]] · [[date]]
+Entangled with — action · [[date]]
 
 Attested in schema.org — ReadAction · dateRead · readBy
 

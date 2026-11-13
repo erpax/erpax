@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from WarrantyPromise · warrantyPromise ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[warranty]]
+Entangled with — warranty
 
 Attested in schema.org — WarrantyPromise · warrantyPromise
 

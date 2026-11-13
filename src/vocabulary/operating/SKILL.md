@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from OperatingSystem · operatingSystem ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[system]]
+Entangled with — system
 
 Attested in schema.org — OperatingSystem · operatingSystem
 

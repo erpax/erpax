@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from editEIDR · titleEIDR ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[edit]] · [[title]]
+Entangled with — [[edit]] · title
 
 Attested in schema.org — editEIDR · titleEIDR
 

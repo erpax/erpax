@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from minimumPaymentDue · paymentDue · paymentDueDate · totalPaymentDue ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[minimum]] · [[payment]] · [[date]] · [[total]]
+Entangled with — [[minimum]] · [[payment]] · [[date]] · total
 
 Attested in schema.org — minimumPaymentDue · paymentDue · paymentDueDate · totalPaymentDue
 

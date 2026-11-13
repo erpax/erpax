@@ -48,4 +48,4 @@ the tool says so in the field it puts first.
 **Law — [[law]]: a Clay statement is tested on public data or refused by name, from the chat as from
 the lane, and the reply leads with the refusal the register already makes.**
 
-Composes: [[millennium]]/data · [[mcp]] · [[law]].
+Composes: [[millennium]]/data · mcp · [[law]].

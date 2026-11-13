@@ -33,7 +33,7 @@ version: 2
 ---
 # metric — quantomize: the corpus measured as one quantum metric
 
-The session's measurements are **classical** — one number each, read one at a time: [[session]] build/heal, [[gravity]] concentration, [[leftover]] residual, [[rosetta]] gravityPools. `quantomize` makes them **quantum** in the corpus's sense ([[think]]`.superpose`): every reading held **at once**, folded to one address, and **coherent** iff no two readings of the same name contradict. The whole state of the corpus reads as one.
+The session's measurements are **classical** — one number each, read one at a time: session build/heal, [[gravity]] concentration, [[leftover]] residual, [[rosetta]] gravityPools. `quantomize` makes them **quantum** in the corpus's sense ([[think]]`.superpose`): every reading held **at once**, folded to one address, and **coherent** iff no two readings of the same name contradict. The whole state of the corpus reads as one.
 
 ```
  0.598  gravity.concentration

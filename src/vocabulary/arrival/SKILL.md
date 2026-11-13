@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from arrivalAirport · arrivalBoatTerminal · arrivalBusStop · arrivalGate · arrivalPlatform · arrivalStation · arrivalTerminal · arrivalTime · expectedArrivalFrom · expectedArrivalUntil ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[airport]] · [[boat]] · [[terminal]] · [[bus]] · [[stop]] · [[gate]] · [[platform]] · [[station]] · [[time]] · [[expected]] · [[until]]
+Entangled with — [[airport]] · [[boat]] · terminal · [[bus]] · stop · [[gate]] · [[platform]] · station · time · [[expected]] · until
 
 Attested in schema.org — arrivalAirport · arrivalBoatTerminal · arrivalBusStop · arrivalGate · arrivalPlatform · arrivalStation · arrivalTerminal · arrivalTime · expectedArrivalFrom · expectedArrivalUntil
 

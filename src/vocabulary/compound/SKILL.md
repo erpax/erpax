@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from CompoundPriceSpecification ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[price]] · [[specification]]
+Entangled with — [[price]] · specification
 
 Attested in schema.org — CompoundPriceSpecification
 

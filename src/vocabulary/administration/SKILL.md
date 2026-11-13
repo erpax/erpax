@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from administrationRoute ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[route]]
+Entangled with — route
 
 Attested in schema.org — administrationRoute
 

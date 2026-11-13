@@ -39,7 +39,7 @@ Session claim (2026-07-16): *"you could never ever hit claude safeguards if usin
 
 ## Law 1 — the send gate binds to EFFECT (the true third)
 
-An outward [[send]] is confirmed because it is irreversible and reaches another person. A message whose **every consumer stays on this machine** — an agent bus, a repo file, a local queue — is a reversible local write; the send gate has **nothing to fire on**. A local-only fabric genuinely never trips it. But the gate binds to effect, not [[transport]]: the moment ONE consumer relays off-machine (webhook · SMTP bridge · MCP connector), the **first local write IS the outward send**, and the [[gate]] applies there. `effectOf` · `sendGate`.
+An outward send is confirmed because it is irreversible and reaches another person. A message whose **every consumer stays on this machine** — an agent bus, a repo file, a local queue — is a reversible local write; the send gate has **nothing to fire on**. A local-only fabric genuinely never trips it. But the gate binds to effect, not transport: the moment ONE consumer relays off-machine (webhook · SMTP bridge · MCP connector), the **first local write IS the outward send**, and the [[gate]] applies there. `effectOf` · `sendGate`.
 
 ## Law 2 — authority binds to CHANNEL (false)
 
@@ -55,4 +55,4 @@ This atom is a **MODEL of the safeguard geometry** — what binds to what (effec
 
 **Law — [[law]]: a local-only message fabric eliminates the outward-send gate and nothing else — the send gate binds to effect, authority binds to channel, and the content verdict binds to decoded meaning, invariant under re-encoding and failing closed over superposition.**
 
-Composes: [[message]] · [[send]] · [[transport]] · [[gate]] · [[confirm]] · [[superposition]] · [[quantum]] · [[law]]
+Composes: [[message]] · send · transport · [[gate]] · [[confirm]] · [[superposition]] · [[quantum]] · [[law]]

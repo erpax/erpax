@@ -47,7 +47,7 @@ version: 2
 | a **claim** (`@invariant`/`@standard`/`@compliance`/`@audit`) | a **DEBIT** — an obligation the corpus takes on |
 | a **proof** (a `test.ts` beside the claim) | the **CREDIT** — the settlement of that obligation |
 
-The ledger **balances iff every claim is credited by a proof.** The residual — debits with no credit — **is** the unproven surface ([[rules]]/refutable · [[rules]]/audience · [[coverage]] measure the same gap; this is its double-entry view).
+The ledger **balances iff every claim is credited by a proof.** The residual — debits with no credit — **is** the unproven surface ([[rules]]/refutable · [[rules]]/audience · coverage measure the same gap; this is its double-entry view).
 
 ## The measured state
 

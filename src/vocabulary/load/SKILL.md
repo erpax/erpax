@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from roofLoad ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[roof]]
+Entangled with — roof
 
 Attested in schema.org — roofLoad
 

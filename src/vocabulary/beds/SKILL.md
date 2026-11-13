@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from cvdNumBeds · cvdNumBedsOcc · cvdNumICUBeds · cvdNumICUBedsOcc · cvdNumTotBeds · numberOfBeds ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[cvd]] · [[num]] · [[occ]] · [[icu]] · [[tot]] · [[number]]
+Entangled with — [[cvd]] · [[num]] · [[occ]] · [[icu]] · tot · [[number]]
 
 Attested in schema.org — cvdNumBeds · cvdNumBedsOcc · cvdNumICUBeds · cvdNumICUBedsOcc · cvdNumTotBeds · numberOfBeds
 

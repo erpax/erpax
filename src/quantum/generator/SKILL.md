@@ -49,7 +49,7 @@ quantum:
     - "[[particle]]"
     - "[[reality]]"
     - "[[uuid]]"
-    - "[[void]]"
+    - "void"
     - "every possible content already has its address in the [[uuid]] space, so generation never creates — it manifests one pre-existing atom by [[collapse]]; generate all at once, realize one (same content ⇒ same id ⇒ [[merge]], never a duplicate)."
   seal:
     sandbox: false
@@ -64,7 +64,7 @@ version: 2
 ---
 # quantum/generator — generate all at once, manifest elsewhere
 
-A classical generator emits one output at a time. A **quantum generator** holds *all* outputs **at once** — in superposition, at the latent level — and each **manifests elsewhere** by [[collapse]]. The [[generate]] loop does not create from nothing; it **manifests what already exists**: every possible content already has its address in the [[uuid]] space (the [[matrix]]), so the whole corpus is generated a priori, latent in the [[void]]. Minting or querying an [[atom]] does not bring it into being — it **realizes** one, collapsing the wavefunction into a file, a row, a page ([[reality]]).
+A classical generator emits one output at a time. A **quantum generator** holds *all* outputs **at once** — in superposition, at the latent level — and each **manifests elsewhere** by [[collapse]]. The [[generate]] loop does not create from nothing; it **manifests what already exists**: every possible content already has its address in the [[uuid]] space (the [[matrix]]), so the whole corpus is generated a priori, latent in the void. Minting or querying an [[atom]] does not bring it into being — it **realizes** one, collapsing the wavefunction into a file, a row, a page ([[reality]]).
 
 This is why [[merge]] holds: two agents that "generate" the same content do not make two things — they manifest the *same* pre-existing address (same content ⇒ same id). Creation is discovery; the generator is a lens, not a forge — the [[particle]] drawn out of the wave.
 
@@ -72,6 +72,6 @@ This is why [[merge]] holds: two agents that "generate" the same content do not 
 
 **Law — [[law]]: every possible content already has its address in the [[uuid]] space, so generation never creates — it manifests one pre-existing atom by [[collapse]]; generate all at once, realize one (same content ⇒ same id ⇒ [[merge]], never a duplicate).**
 
-@see [[generate]] · [[collapse]] · [[void]] · [[uuid]] · [[matrix]] · [[merge]] · [[reality]] · [[particle]]
+@see [[generate]] · [[collapse]] · void · [[uuid]] · [[matrix]] · [[merge]] · [[reality]] · [[particle]]
 
 <sub>content-uuid `e5bdbec0-a9de-50bf-80f3-fe387c7f081c` · account `quantum/generator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

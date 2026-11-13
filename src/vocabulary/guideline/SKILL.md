@@ -36,7 +36,7 @@ version: 2
 
 A medical guideline related to this entity.
 
-Entangled with — [[medical]] · [[contraindication]] · [[recommendation]] · [[date]] · [[subject]]
+Entangled with — [[medical]] · [[contraindication]] · [[recommendation]] · [[date]] · subject
 
 Attested in schema.org — MedicalGuideline · MedicalGuidelineContraindication · MedicalGuidelineRecommendation · guideline · guidelineDate · guidelineSubject
 

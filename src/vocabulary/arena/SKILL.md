@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from StadiumOrArena ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[stadium]]
+Entangled with — stadium
 
 Attested in schema.org — StadiumOrArena
 

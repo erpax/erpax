@@ -36,7 +36,7 @@ version: 2
 
 A Grant that directly or indirectly provide funding or sponsorship for this item. See also ownershipFundingInfo.
 
-Entangled with — [[agency]] · [[scheme]] · [[ownership]] · [[info]]
+Entangled with — [[agency]] · scheme · [[ownership]] · [[info]]
 
 Attested in schema.org — FundingAgency · FundingScheme · funding · ownershipFundingInfo
 

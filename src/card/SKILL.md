@@ -43,7 +43,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from CreditCard · PaymentCard ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[credit]] · [[payment]]
+Entangled with — credit · [[payment]]
 
 Attested in schema.org — CreditCard · PaymentCard
 

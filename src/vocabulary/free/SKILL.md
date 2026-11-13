@@ -36,7 +36,7 @@ version: 2
 
 A flag to signal that the item, event, or place is accessible for free.
 
-Entangled with — [[shipping]] · [[threshold]] · [[accessible]]
+Entangled with — shipping · [[threshold]] · [[accessible]]
 
 Attested in schema.org — free · freeShippingThreshold · isAccessibleForFree
 

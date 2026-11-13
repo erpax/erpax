@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from BedAndBreakfast ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[bed]]
+Entangled with — bed
 
 Attested in schema.org — BedAndBreakfast
 

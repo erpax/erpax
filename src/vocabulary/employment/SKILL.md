@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from EmploymentAgency · employmentType · employmentUnit ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[agency]] · [[type]] · [[unit]]
+Entangled with — [[agency]] · [[type]] · unit
 
 Attested in schema.org — EmploymentAgency · employmentType · employmentUnit
 

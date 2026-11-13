@@ -76,4 +76,4 @@ name it as the wire allows, and let the test read the array the gateway reads.**
 
 - **MCP 0.6** — `tools/list` and `tools/call` are the surface a client sees.
 
-Composes: [[plugins]]/mcp/seed · [[mcp]] · [[family]] · [[rules]]/mirror · [[law]].
+Composes: [[plugins]]/mcp/seed · mcp · [[family]] · [[rules]]/mirror · [[law]].

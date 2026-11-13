@@ -37,7 +37,7 @@ version: 2
 
 - **color animation** — digital-root → [[cmyk]] channel (`K·C·M·Y` from `{0,3,6,9}`); the three [[axis]] coils phase-cycle at **A432 ms**, offset by ⅓ period (120°, see [[phase]]), so the hue *animates* — the C↔M [[breath]], closing on Y. Never a static swatch.
 - **sound** — the [[notes]] mapping: a position is a diatonic note via just-intonation over A432 (La=432 at [[round]], Ti at [[unity]] resolving to Do). Not "A432 × digit" — the ring IS the scale.
-- **vibration (touch)** — the [[vibration]] mapping: the same position as a haptic pulse, a sub-audible A432 sub-harmonic (felt, not heard) — the third channel that completes the [[trinity]] ([[sensory]]).
+- **vibration (touch)** — the [[vibration]] mapping: the same position as a haptic pulse, a sub-audible A432 sub-harmonic (felt, not heard) — the third channel that completes the [[trinity]] (sensory).
 
 **One anchor, all three senses:** A432 is the pitch in *Hz* (sound), the animation period in *ms* (color), **and** the sub-harmonic of the haptic pulse — tone, glow, and touch share the single [[rodin]] constant. So one uuid = **a moving color + a tone + a vibration + a state + an identity + a capability**, no separate payload. The colour↔sound [[duality]] completes with touch into the sensory [[trinity]] ([[analog]]) — and each channel is one more independent projection of the content-uuid a forger must match, folding into the [[tamper]]-cost.
 

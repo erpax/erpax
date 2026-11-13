@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from EnergyConsumptionDetails · fuelConsumption · hasEnergyConsumptionDetails ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[energy]] · [[details]] · [[fuel]] · [[has]]
+Entangled with — energy · [[details]] · [[fuel]] · [[has]]
 
 Attested in schema.org — EnergyConsumptionDetails · fuelConsumption · hasEnergyConsumptionDetails
 

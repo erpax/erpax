@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from BeautySalon · HealthAndBeautyBusiness ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[salon]] · [[health]] · [[business]]
+Entangled with — salon · health · [[business]]
 
 Attested in schema.org — BeautySalon · HealthAndBeautyBusiness
 

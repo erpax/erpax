@@ -66,4 +66,4 @@ make the gateway allocate a 2³⁰ vector by accident.
 it answers with a tolerance and a draw. Put the exact one on the wire, as text if the wire cannot carry
 it, and let the Float be the thing a caller must ask for.**
 
-Composes: [[quantum]]/register · [[mcp]] · [[law]].
+Composes: [[quantum]]/register · mcp · [[law]].

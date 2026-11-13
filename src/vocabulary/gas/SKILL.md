@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from GasStation ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[station]]
+Entangled with — station
 
 Attested in schema.org — GasStation
 

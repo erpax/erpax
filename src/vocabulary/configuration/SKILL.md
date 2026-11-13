@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from DriveWheelConfigurationValue · driveWheelConfiguration · vehicleConfiguration ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[drive]] · [[wheel]] · [[value]] · [[vehicle]]
+Entangled with — [[drive]] · wheel · value · vehicle
 
 Attested in schema.org — DriveWheelConfigurationValue · driveWheelConfiguration · vehicleConfiguration
 

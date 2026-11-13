@@ -36,7 +36,7 @@ version: 2
 
 Fictional person connected with a creative work.
 
-Entangled with — [[attribute]] · [[name]] · [[spoken]]
+Entangled with — [[attribute]] · [[name]] · spoken
 
 Attested in schema.org — character · characterAttribute · characterName · spokenByCharacter
 

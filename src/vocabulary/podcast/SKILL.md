@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from PodcastEpisode · PodcastSeason · PodcastSeries ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[episode]] · [[season]] · [[series]]
+Entangled with — [[episode]] · season · series
 
 Attested in schema.org — PodcastEpisode · PodcastSeason · PodcastSeries
 

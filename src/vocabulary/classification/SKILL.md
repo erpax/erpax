@@ -35,6 +35,6 @@ version: 2
 
 The assignment of a thing to a category within a scheme. The singular model whose plural store is the [[classifications]] collection ([[balance]]: every collection has its model).
 
-Composes [[classifications]] · [[taxonomy]] · [[balance]].
+Composes [[classifications]] · taxonomy · [[balance]].
 
 **Law — [[law]]: a classification assigns a thing to a category within one scheme — the scheme is named, so the same thing may hold many classifications without any of them claiming to be the only truth.**

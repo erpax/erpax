@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from breastfeedingWarning ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[warning]]
+Entangled with — warning
 
 Attested in schema.org — breastfeedingWarning
 

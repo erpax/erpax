@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from dropoffLocation · dropoffTime ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[location]] · [[time]]
+Entangled with — [[location]] · time
 
 Attested in schema.org — dropoffLocation · dropoffTime
 

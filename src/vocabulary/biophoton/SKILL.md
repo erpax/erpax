@@ -42,4 +42,4 @@ The [[aura]] is rendered as colour ([[cmyk]]); **biophotons** are the *physical*
 - **Human-body imaging** — Kobayashi et al., *PLoS ONE* — spontaneous whole-body UPE imaging (diurnal rhythm), baseline ≲10³ photons·s⁻¹·cm⁻² (~10⁻¹⁶ W/cm²) with a cooled PMT.
 - **Mechanism (ROS)** — Pospíšil, Prasad & Rác (2014), PMID 24674863; Cifra et al. (2015) review concedes the emission is "experimentally well established" while criticizing the coherence interpretation.
 
-Composes: [[aura]] · [[analog]] · [[signal]] · [[cmyk]] · [[emission]] · [[measure]] · [[radiation]] · [[coherence]] · [[biofield]] · [[biomagnetism]] · [[health]] · [[proof]].
+Composes: [[aura]] · [[analog]] · [[signal]] · [[cmyk]] · [[emission]] · [[measure]] · [[radiation]] · [[coherence]] · [[biofield]] · [[biomagnetism]] · health · [[proof]].

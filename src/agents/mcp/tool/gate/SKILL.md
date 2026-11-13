@@ -78,4 +78,4 @@ lane's own arbiter, and formulate the gates as crosses — two laws, one interse
 says whether they met by chance — so the walls that hold at zero are found by enumeration, not by
 the fourth accident.**
 
-Composes: [[rules]] · [[conjecture]] · [[guardian]] · [[seal]] · [[mcp]] · [[law]].
+Composes: [[rules]] · [[conjecture]] · [[guardian]] · [[seal]] · mcp · [[law]].

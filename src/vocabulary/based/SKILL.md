@@ -36,7 +36,7 @@ version: 2
 
 A resource from which this work is derived or from which it is a modification or adaptation.
 
-Entangled with — [[work]] · [[program]] · [[url]]
+Entangled with — [[work]] · [[program]] · url
 
 Attested in schema.org — WorkBasedProgram · isBasedOn · isBasedOnUrl
 

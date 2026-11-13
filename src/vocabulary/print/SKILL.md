@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from printColumn · printEdition · printPage · printSection ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[column]] · [[edition]] · [[page]] · [[section]]
+Entangled with — [[column]] · [[edition]] · [[page]] · section
 
 Attested in schema.org — printColumn · printEdition · printPage · printSection
 

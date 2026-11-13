@@ -56,7 +56,7 @@ version: 2
 
 Tenants — multi-tenant root entity (post-Slice-HHH the legacy "host" alias is fully retired).
 
-Each tenant is a [[domain]]-scoped GDPR [[identity|controller]] and the access-boundary for all resource scoping. The collection defines the tenant's legal entity, localization cascades, accounting framework, currency, and integration secrets.
+Each tenant is a domain-scoped GDPR [[identity|controller]] and the access-boundary for all resource scoping. The collection defines the tenant's legal entity, localization cascades, accounting framework, currency, and integration secrets.
 
 ## Multi-tenant sandbox configuration
 
@@ -90,4 +90,4 @@ Per-tenant Payload config (scoped via `config.*`) mirrors the deployment-level s
 - ISO-19011:2018 (audit-trail for config-change)
 - SOC-2 CC6.1 (logical-access-controls)
 
-Composes [[domain]] · [[identity]] · [[proof]].
+Composes domain · [[identity]] · [[proof]].

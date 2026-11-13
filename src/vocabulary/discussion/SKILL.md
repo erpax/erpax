@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from DiscussionForumPosting · discussionUrl ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[forum]] · [[posting]] · [[url]]
+Entangled with — [[forum]] · posting · url
 
 Attested in schema.org — DiscussionForumPosting · discussionUrl
 

@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from netWorth ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[worth]]
+Entangled with — worth
 
 Attested in schema.org — netWorth
 

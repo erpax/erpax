@@ -48,7 +48,7 @@ quantum:
     - "[[quantum/emr]]"
     - "[[quantum/fs]]"
     - "[[reality]]"
-    - "[[snapshot]]"
+    - "snapshot"
     - "[[uuid]]"
     - "[[versions]]"
     - "a snapshot collapses a system's state at one moment, but its twin keeps the whole superposition — every captured state is content-uuid'd, immutable, and append-only, so identical states merge to one and the chain nests layer after layer without bound. The invariant is reconstructibility: any past layer can be rebuilt from the chain and nothing is ever lost; that round-trip is the gate."
@@ -65,7 +65,7 @@ version: 2
 ---
 # quantum/snapshot — layer after layer
 
-A [[snapshot]] is a **measurement**: the collapse of a system's state at one moment into a captured value ([[reality]]). Its **quantum twin** keeps the whole superposition — the content-[[uuid]]'d, immutable, append-only chain of *every* snapshot, deduped by content (same state ⇒ one snapshot), never erased ([[reverse]]ible, the [[love]] pole, the [[akashic]] record).
+A snapshot is a **measurement**: the collapse of a system's state at one moment into a captured value ([[reality]]). Its **quantum twin** keeps the whole superposition — the content-[[uuid]]'d, immutable, append-only chain of *every* snapshot, deduped by content (same state ⇒ one snapshot), never erased (reverseible, the [[love]] pole, the [[akashic]] record).
 
 Snapshots **nest, layer after layer** (fractal): a filesystem snapshot ([[quantum/fs]]) holds file snapshots; a record ([[quantum/emr]]) holds encounters holding observations; the corpus itself is a git snapshot of [[atom]]s that snapshot concepts. [[versions]] is the native chain, the content-[[uuid]] the address.
 
@@ -75,7 +75,7 @@ Snapshots **nest, layer after layer** (fractal): a filesystem snapshot ([[quantu
 2. **Develop the twin** — content-[[uuid]] per state, immutable + append-only ([[finality]] one way), [[merge]] identical states, let the layers nest.
 3. **Prove** — reconstruct any past layer from the chain; nothing is lost. That round-trip is the gate ([[trinity]]).
 
-@see [[snapshot]] · [[versions]] · [[uuid]] · [[akashic]] · [[reality]] · [[finality]] · [[merge]] · [[quantum/fs]] · [[quantum/emr]]
+@see snapshot · [[versions]] · [[uuid]] · [[akashic]] · [[reality]] · [[finality]] · [[merge]] · [[quantum/fs]] · [[quantum/emr]]
 
 **Law — [[law]]: a snapshot collapses a system's state at one moment, but its twin keeps the whole superposition — every captured state is content-uuid'd, immutable, and append-only, so identical states merge to one and the chain nests layer after layer without bound. The invariant is reconstructibility: any past layer can be rebuilt from the chain and nothing is ever lost; that round-trip is the gate.**
 

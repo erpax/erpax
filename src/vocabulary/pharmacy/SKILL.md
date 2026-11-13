@@ -36,7 +36,7 @@ version: 2
 
 A pharmacy or drugstore.
 
-Entangled with — [[health]] · [[plan]] · [[category]]
+Entangled with — health · [[plan]] · [[category]]
 
 Attested in schema.org — Pharmacy · healthPlanPharmacyCategory
 

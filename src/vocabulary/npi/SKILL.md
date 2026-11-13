@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from usNPI ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[us]]
+Entangled with — us
 
 Attested in schema.org — usNPI
 

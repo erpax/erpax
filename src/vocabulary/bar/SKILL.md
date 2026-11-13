@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from BarOrPub · WPSideBar ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[pub]] · [[wp]] · [[side]]
+Entangled with — [[pub]] · wp · side
 
 Attested in schema.org — BarOrPub · WPSideBar
 

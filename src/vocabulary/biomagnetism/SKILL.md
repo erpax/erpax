@@ -41,6 +41,6 @@ The [[aura]] is rendered as a [[signal]] field; **biomagnetism** is the *physica
 - **MCG / MEG field strengths & SQUID** — clinical biomagnetism (heart ~10⁻¹⁰–10⁻¹¹ T; brain ~10⁻¹³–10⁻¹⁵ T; shielded-room SQUID magnetometry). *Textbook magnitudes; in the source pass behind this atom they were not independently re-confirmed (the only surfaced figure appeared inside a refuted claim), so treat the numbers as established-elsewhere, not verified here.*
 - **Refuted extension** — HeartMath *Science of the Heart* "energetic communication" (heart field ~3 ft; one body's ECG R-wave in another's EEG): no validated detection above chance.
 
-Composes: [[aura]] · [[analog]] · [[signal]] · [[biophoton]] · [[biofield]] · [[measure]] · [[radiation]] · [[proof]] · [[coherence]] · [[health]] · [[matrix]].
+Composes: [[aura]] · [[analog]] · [[signal]] · [[biophoton]] · [[biofield]] · [[measure]] · [[radiation]] · [[proof]] · [[coherence]] · health · [[matrix]].
 
 **Law — [[law]]: the body's magnetic field is real but contained — it decays into noise within centimetres of the skin and reads only under heroic shielding, so any claim it reaches out as an aura must be refused until it survives adversarial proof.**

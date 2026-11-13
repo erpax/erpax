@@ -45,4 +45,4 @@ version: 2
 | bothEarths | `bothEarths` ← [[navigation]].merkaba |
 | realise 7/7 | `realiseEarth` · `earthNavigate` |
 
-Composes [[pyramid]] · [[navigation]] · [[quantum]] · [[globe]] · [[horo]] · [[forecasts]].
+Composes [[pyramid]] · [[navigation]] · [[quantum]] · [[globe]] · [[horo]] · forecasts.

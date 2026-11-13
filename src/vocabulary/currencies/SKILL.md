@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from currenciesAccepted ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[accepted]]
+Entangled with — accepted
 
 Attested in schema.org — currenciesAccepted
 

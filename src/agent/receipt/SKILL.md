@@ -79,4 +79,4 @@ The record is **human-seeded**. An agent that under-reports its own corrections 
 
 **Law — [[law]]: an agent publishes its own error record — corrections, laws broken, rework — beside what it delivered, or its output is unaudited.**
 
-Composes: [[agent]] · [[constitution]] · [[rules]] · [[local]] · [[law]].
+Composes: [[agent]] · [[constitution]] · [[rules]] · local · [[law]].

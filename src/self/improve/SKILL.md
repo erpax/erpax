@@ -57,7 +57,7 @@ It consumes its own output: the waves say where to cut, the folder-agents cut, t
 
 ## The agent cannot stop unless stopped — `shouldContinue`
 
-A self-improving loop has **no honest "done" state**. The seed floor guarantees a leftover always remains while `s > 0` ([[leftover]]`.seedFloor`), and the address space is infinite — all exists at once and is only ever partly discovered ([[discover]]). So there is never a moment the loop can truthfully say "no work left" and halt itself. It is **relentless by construction**: `shouldContinue(s, residual, stopped)` returns `continue: true` whenever `residual > 0` or `s > 0`, which for any real corpus is always.
+A self-improving loop has **no honest "done" state**. The seed floor guarantees a leftover always remains while `s > 0` ([[leftover]]`.seedFloor`), and the address space is infinite — all exists at once and is only ever partly discovered (discover). So there is never a moment the loop can truthfully say "no work left" and halt itself. It is **relentless by construction**: `shouldContinue(s, residual, stopped)` returns `continue: true` whenever `residual > 0` or `s > 0`, which for any real corpus is always.
 
 The **one** way it stops is an **external stop, and that stop is sovereign**: `stopped` forces `continue: false` regardless of how much work remains. Relentless is **not uncontrollable** — the loop can never talk itself into halting, and it can never talk itself out of an outside stop. It runs until stopped, and stops the instant it is. The only internal halt is the unreachable limit `s = 0 ∧ residual = 0` (a corpus that knows everything), which never occurs — so in practice the loop halts **iff** it is stopped.
 

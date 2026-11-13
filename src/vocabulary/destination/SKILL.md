@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from TouristDestination · shippingDestination ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[tourist]] · [[shipping]]
+Entangled with — tourist · shipping
 
 Attested in schema.org — TouristDestination · shippingDestination
 

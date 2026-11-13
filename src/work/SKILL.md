@@ -39,7 +39,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from CreativeWork · CreativeWorkSeason · CreativeWorkSeries · WorkBasedProgram · creativeWorkStatus · eligibilityToWorkRequirement · encodesCreativeWork · exampleOfWork · translationOfWork · workExample · workFeatured · workHours · workLocation · workPerformed · workPresented · workTranslation ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[creative]] · [[season]] · [[series]] · [[based]] · [[program]] · [[status]] · [[eligibility]] · [[requirement]] · [[encodes]] · [[example]] · [[translation]] · [[featured]] · [[hours]] · [[location]] · [[performed]] · [[presented]]
+Entangled with — [[creative]] · season · series · [[based]] · [[program]] · [[status]] · [[eligibility]] · [[requirement]] · [[encodes]] · [[example]] · [[translation]] · [[featured]] · [[hours]] · [[location]] · [[performed]] · [[presented]]
 
 Attested in schema.org — CreativeWork · CreativeWorkSeason · CreativeWorkSeries · WorkBasedProgram · creativeWorkStatus · eligibilityToWorkRequirement · encodesCreativeWork · exampleOfWork · translationOfWork · workExample · workFeatured · workHours · workLocation · workPerformed · workPresented · workTranslation
 

@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from isLocatedInSubcellularLocation ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[subcellular]] · [[location]]
+Entangled with — subcellular · [[location]]
 
 Attested in schema.org — isLocatedInSubcellularLocation
 

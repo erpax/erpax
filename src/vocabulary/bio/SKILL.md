@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from BioChemEntity · bioChemInteraction · bioChemSimilarity · encodesBioChemEntity · hasBioChemEntityPart · hasBioPolymerSequence · isEncodedByBioChemEntity · isPartOfBioChemEntity ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[chem]] · [[entity]] · [[interaction]] · [[similarity]] · [[encodes]] · [[has]] · [[part]] · [[polymer]] · [[sequence]] · [[encoded]]
+Entangled with — [[chem]] · [[entity]] · [[interaction]] · similarity · [[encodes]] · [[has]] · [[part]] · [[polymer]] · [[sequence]] · [[encoded]]
 
 Attested in schema.org — BioChemEntity · bioChemInteraction · bioChemSimilarity · encodesBioChemEntity · hasBioChemEntityPart · hasBioPolymerSequence · isEncodedByBioChemEntity · isPartOfBioChemEntity
 

@@ -36,7 +36,7 @@ version: 2
 
 The area within which users can expect to reach the broadcast service.
 
-Entangled with — [[administrative]] · [[served]] · [[geographic]] · [[service]]
+Entangled with — [[administrative]] · served · [[geographic]] · service
 
 Attested in schema.org — AdministrativeArea · area · areaServed · geographicArea · serviceArea
 

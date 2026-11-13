@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from PreventionIndication · diseasePreventionInfo · primaryPrevention · secondaryPrevention ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[indication]] · [[disease]] · [[info]] · [[primary]] · [[secondary]]
+Entangled with — [[indication]] · [[disease]] · [[info]] · [[primary]] · secondary
 
 Attested in schema.org — PreventionIndication · diseasePreventionInfo · primaryPrevention · secondaryPrevention
 

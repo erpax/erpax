@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from CheckAction · CheckInAction · CheckOutAction ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[action]] · [[out]]
+Entangled with — action · [[out]]
 
 Attested in schema.org — CheckAction · CheckInAction · CheckOutAction
 

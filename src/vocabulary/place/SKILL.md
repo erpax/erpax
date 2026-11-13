@@ -36,7 +36,7 @@ version: 2
 
 Entities that have a somewhat fixed, physical extension.
 
-Entangled with — [[worship]] · [[birth]] · [[contained]] · [[contains]] · [[death]] · [[experience]] · [[education]]
+Entangled with — worship · [[birth]] · [[contained]] · [[contains]] · [[death]] · [[experience]] · education
 
 Attested in schema.org — Place · PlaceOfWorship · birthPlace · containedInPlace · containsPlace · deathPlace · experienceInPlaceOfEducation
 

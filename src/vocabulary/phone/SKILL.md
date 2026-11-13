@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from MobilePhoneStore · servicePhone ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[mobile]] · [[store]] · [[service]]
+Entangled with — [[mobile]] · [[store]] · service
 
 Attested in schema.org — MobilePhoneStore · servicePhone
 

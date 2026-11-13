@@ -36,7 +36,7 @@ version: 2
 
 A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property.
 
-Entangled with — [[value]] · [[specification]] · [[additional]] · [[constraint]] · [[measured]] · [[id]] · [[stupid]]
+Entangled with — value · specification · [[additional]] · [[constraint]] · [[measured]] · [[id]] · stupid
 
 Attested in schema.org — Property · PropertyValue · PropertyValueSpecification · additionalProperty · constraintProperty · measuredProperty · propertyID · stupidProperty
 

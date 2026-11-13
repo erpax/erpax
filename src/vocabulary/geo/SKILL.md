@@ -36,7 +36,7 @@ version: 2
 
 The geo coordinates of the place.
 
-Entangled with — [[circle]] · [[coordinates]] · [[shape]] · [[contains]] · [[covered]] · [[covers]] · [[crosses]] · [[disjoint]] · [[equals]] · [[intersects]] · [[midpoint]] · [[overlaps]] · [[radius]] · [[touches]] · [[within]]
+Entangled with — [[circle]] · [[coordinates]] · shape · [[contains]] · covered · covers · [[crosses]] · [[disjoint]] · [[equals]] · [[intersects]] · [[midpoint]] · [[overlaps]] · [[radius]] · touches · within
 
 Attested in schema.org — GeoCircle · GeoCoordinates · GeoShape · geo · geoContains · geoCoveredBy · geoCovers · geoCrosses · geoDisjoint · geoEquals · geoIntersects · geoMidpoint · geoOverlaps · geoRadius · geoTouches · geoWithin
 

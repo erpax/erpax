@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from DENonprofitType · ITNonprofitType · NLNonprofitType · NonprofitType · UKNonprofitType · USNonprofitType · nonprofitStatus ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[de]] · [[type]] · [[it]] · [[nl]] · [[uk]] · [[us]] · [[status]]
+Entangled with — [[de]] · [[type]] · [[it]] · [[nl]] · uk · us · [[status]]
 
 Attested in schema.org — DENonprofitType · ITNonprofitType · NLNonprofitType · NonprofitType · UKNonprofitType · USNonprofitType · nonprofitStatus
 

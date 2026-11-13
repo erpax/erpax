@@ -36,7 +36,7 @@ version: 2
 
 A photograph.
 
-Entangled with — [[action]]
+Entangled with — action
 
 Attested in schema.org — Photograph · PhotographAction
 

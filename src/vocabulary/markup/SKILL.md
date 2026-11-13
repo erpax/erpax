@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from speechToTextMarkup ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[speech]] · [[text]]
+Entangled with — speech · text
 
 Attested in schema.org — speechToTextMarkup
 

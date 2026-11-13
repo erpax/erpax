@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from SpecialAnnouncement · announcementLocation ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[special]] · [[location]]
+Entangled with — special · [[location]]
 
 Attested in schema.org — SpecialAnnouncement · announcementLocation
 

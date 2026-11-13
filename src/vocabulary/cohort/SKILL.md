@@ -35,7 +35,7 @@ version: 2
 
 Use when analyzing or tracking groups of customers/users/items by shared trait — acquisition cohort, product cohort, geographic cohort. The segmentation for lifecycle or comparative analysis.
 
-Composes: [[customer/segments]] · [[measure]] · [[schedule]] · [[aggregation]] · [[segment]].
+Composes: [[customer/segments]] · [[measure]] · schedule · [[aggregation]] · segment.
 
 ## Standards
 - Cohort analysis (product analytics)

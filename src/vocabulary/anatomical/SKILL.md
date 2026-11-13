@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from AnatomicalStructure · AnatomicalSystem ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[structure]] · [[system]]
+Entangled with — structure · system
 
 Attested in schema.org — AnatomicalStructure · AnatomicalSystem
 

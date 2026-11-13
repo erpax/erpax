@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from GatedResidenceCommunity ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[gated]] · [[residence]]
+Entangled with — [[gated]] · residence
 
 Attested in schema.org — GatedResidenceCommunity
 

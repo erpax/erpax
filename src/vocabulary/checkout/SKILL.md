@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from CheckoutPage · checkoutPageURLTemplate · checkoutTime ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[page]] · [[url]] · [[template]] · [[time]]
+Entangled with — [[page]] · url · template · time
 
 Attested in schema.org — CheckoutPage · checkoutPageURLTemplate · checkoutTime
 

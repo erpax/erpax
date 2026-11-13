@@ -37,7 +37,7 @@ version: 2
 
 A collection of items, e.g. creative works or products.
 
-Entangled with — [[page]] · [[product]] · [[size]] · [[cvd]] · [[date]] · [[target]]
+Entangled with — [[page]] · [[product]] · size · [[cvd]] · [[date]] · target
 
 Attested in schema.org — Collection · CollectionPage · ProductCollection · collection · collectionSize · cvdCollectionDate · targetCollection
 

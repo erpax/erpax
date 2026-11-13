@@ -85,7 +85,7 @@ import { remedyFor, groundToolCall, trustBoundaryVerdict, workflowCorrelationUui
 
 **Law — [[law]]: every AI industry failure mode maps to a content-[[uuid]] diamond facet — seal before save, sandbox+receipt every tool call, merge sessions by uuid, cap broadcast depth, human-gate high-risk — and the gaps (workflow correlation, grounded tool calls, cascade guard) are pure fns here, tested, never hand-listed.**
 
-@see [[diamond]] · [[thought]] · [[sandbox]] · [[receipt]] · [[memory/architecture]] · [[memory/session]] · [[agents/mcp]] · [[confirm]] · [[horo]] · [[merge]] · [[identity]] · [[ai]] · [[ai/suggestions]] · [[chat]] · [[seal]]
+@see [[diamond]] · thought · [[sandbox]] · [[receipt]] · [[memory/architecture]] · [[memory/session]] · [[agents/mcp]] · [[confirm]] · [[horo]] · [[merge]] · [[identity]] · [[ai]] · [[ai/suggestions]] · [[chat]] · [[seal]]
 
 ## Standards
 

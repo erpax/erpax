@@ -33,14 +33,14 @@ version: 2
 ---
 # mortality — death-loss of living stock; the negative biological transformation
 
-**mortality** is the death-loss of living stock — the rate and the event by which [[animal]]s, fish, trees, or bee colonies die. It is the **negative [[biological/assets|biological transformation]]**: under IAS-41 it writes the biological asset down through P&L, kept distinct from price change. It is shared across every living-production domain — [[livestock]] death loss, [[aquaculture]] pen mortality, [[forestry]] tree mortality, [[apiculture]] colony loss (overwinter) — one atom, the loss twin of [[yield]].
+**mortality** is the death-loss of living stock — the rate and the event by which [[animal]]s, fish, trees, or bee colonies die. It is the **negative [[biological/assets|biological transformation]]**: under IAS-41 it writes the biological asset down through P&L, kept distinct from price change. It is shared across every living-production domain — [[livestock]] death loss, [[aquaculture]] pen mortality, [[forestry]] tree mortality, [[apiculture]] colony loss (overwinter) — one atom, the loss twin of yield.
 
-Mortality is the living-asset form of shrink/[[risk]]: planned-for as a buffer (the overplant/overstock margin), measured as a [[rate]], and de-recognized via an [[entry]] (the asset removed, the loss posted). Its causes route to [[health]] (disease/[[scouting]]) and the environment.
+Mortality is the living-asset form of shrink/[[risk]]: planned-for as a buffer (the overplant/overstock margin), measured as a [[rate]], and de-recognized via an [[entry]] (the asset removed, the loss posted). Its causes route to health (disease/scouting) and the environment.
 
 ## Standards
 - IFRS IAS-41 (death as biological transformation, P&L decrement); WOAH (mortality/morbidity)
 - FAO (aquaculture/livestock mortality); forest mortality & MAI models
 
-Composes [[biological/assets]] · [[animal]] · [[livestock]] · [[aquaculture]] · [[forestry]] · [[apiculture]] · [[biomass]] · [[yield]] · [[risk]] · [[rate]] · [[entry]] · [[health]].
+Composes [[biological/assets]] · [[animal]] · [[livestock]] · [[aquaculture]] · [[forestry]] · [[apiculture]] · [[biomass]] · yield · [[risk]] · [[rate]] · [[entry]] · health.
 
-**Law — [[law]]: death-loss is the negative biological transformation — it writes the living asset down through P&L (distinct from price change) and de-recognizes it via a balanced [[entry]]; the loss twin of [[yield]], one atom across every living-production domain.**
+**Law — [[law]]: death-loss is the negative biological transformation — it writes the living asset down through P&L (distinct from price change) and de-recognizes it via a balanced [[entry]]; the loss twin of yield, one atom across every living-production domain.**

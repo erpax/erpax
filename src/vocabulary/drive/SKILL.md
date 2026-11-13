@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from DriveWheelConfigurationValue · driveWheelConfiguration · hasDriveThroughService ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[wheel]] · [[configuration]] · [[value]] · [[has]] · [[through]] · [[service]]
+Entangled with — wheel · [[configuration]] · value · [[has]] · through · service
 
 Attested in schema.org — DriveWheelConfigurationValue · driveWheelConfiguration · hasDriveThroughService
 

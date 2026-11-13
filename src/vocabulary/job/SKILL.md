@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from JobPosting · jobBenefits · jobDuration · jobImmediateStart · jobLocation · jobLocationType · jobStartDate · jobTitle · totalJobOpenings ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[posting]] · [[benefits]] · [[duration]] · [[immediate]] · [[start]] · [[location]] · [[type]] · [[date]] · [[title]] · [[total]] · [[openings]]
+Entangled with — posting · [[benefits]] · [[duration]] · [[immediate]] · start · [[location]] · [[type]] · [[date]] · title · total · [[openings]]
 
 Attested in schema.org — JobPosting · jobBenefits · jobDuration · jobImmediateStart · jobLocation · jobLocationType · jobStartDate · jobTitle · totalJobOpenings
 

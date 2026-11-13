@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from answerCount · commentCount · downvoteCount · interactionCount · offerCount · ratingCount · repeatCount · reviewCount · screenCount · upvoteCount · userInteractionCount · wordCount ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[answer]] · [[comment]] · [[downvote]] · [[interaction]] · [[offer]] · [[rating]] · [[repeat]] · [[review]] · [[screen]] · [[upvote]] · [[user]] · [[word]]
+Entangled with — [[answer]] · [[comment]] · [[downvote]] · [[interaction]] · [[offer]] · [[rating]] · [[repeat]] · [[review]] · [[screen]] · upvote · user · [[word]]
 
 Attested in schema.org — answerCount · commentCount · downvoteCount · interactionCount · offerCount · ratingCount · repeatCount · reviewCount · screenCount · upvoteCount · userInteractionCount · wordCount
 

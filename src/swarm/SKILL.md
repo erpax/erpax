@@ -38,10 +38,10 @@ version: 2
 A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of
 tasks and produces an assignment across N agents. Both respect a per-actuator limit, both
 **conserve**, and both must survive losing an actuator — a hex re-mixes onto five motors
-([[rotation]]), a swarm re-assigns onto the survivors.
+(rotation), a swarm re-assigns onto the survivors.
 
 This corpus has now written that fold in five vocabularies: a till ([[float]]), a power bus
-([[energy]]), a position ([[staffing]]), a rotor ring, and here. The shape does not change.
+(energy), a position ([[staffing]]), a rotor ring, and here. The shape does not change.
 
 ## This repository already runs one
 
@@ -103,4 +103,4 @@ about itself, not about the work.**
 
 - **Graham (1969)** — LPT list scheduling is within 4/3 − 1/(3m) of optimal makespan.
 
-Composes: [[float]] · [[energy]] · [[rotation]] · [[law]].
+Composes: [[float]] · energy · rotation · [[law]].

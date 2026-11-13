@@ -36,7 +36,7 @@ version: 2
 
 An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc.
 
-Entangled with — [[health]] · [[enumeration]] · [[has]] · [[review]]
+Entangled with — health · [[enumeration]] · [[has]] · [[review]]
 
 Attested in schema.org — HealthAspectEnumeration · aspect · hasHealthAspect · reviewAspect
 

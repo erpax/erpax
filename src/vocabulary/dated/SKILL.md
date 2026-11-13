@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from DatedMoneySpecification ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[money]] · [[specification]]
+Entangled with — [[money]] · specification
 
 Attested in schema.org — DatedMoneySpecification
 

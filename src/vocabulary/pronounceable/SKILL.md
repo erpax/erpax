@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from PronounceableText ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[text]]
+Entangled with — text
 
 Attested in schema.org — PronounceableText
 

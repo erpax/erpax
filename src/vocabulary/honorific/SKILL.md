@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from honorificPrefix · honorificSuffix ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[prefix]] · [[suffix]]
+Entangled with — [[prefix]] · suffix
 
 Attested in schema.org — honorificPrefix · honorificSuffix
 

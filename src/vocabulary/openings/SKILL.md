@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from totalJobOpenings ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[total]] · [[job]]
+Entangled with — total · [[job]]
 
 Attested in schema.org — totalJobOpenings
 

@@ -151,7 +151,7 @@ defined by the lead's own law is a *dependent* seat (`dependentSeats`, the same 
 encodes, declared in the open): it still adds its prescription, marked as dependent, but it does not
 count toward corroboration. `independent` rides beside `seats` in the evidence so a reader sees both.
 
-The roles are declared on the tools and read by the `family` atom beside the [[mcp]] gateway
+The roles are declared on the tools and read by the `family` atom beside the mcp gateway
 (`erpax.family.trinities`), which says which families are trinities and which leg each of the others
 still lacks — the next development of the surface, computed.
 

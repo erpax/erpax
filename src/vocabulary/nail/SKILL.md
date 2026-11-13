@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from NailSalon ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[salon]]
+Entangled with — salon
 
 Attested in schema.org — NailSalon
 

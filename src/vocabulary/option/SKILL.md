@@ -36,7 +36,7 @@ version: 2
 
 A sub property of object. The options subject to this action.
 
-Entangled with — [[contact]] · [[point]] · [[action]] · [[health]] · [[plan]] · [[coinsurance]] · [[copay]] · [[drug]]
+Entangled with — [[contact]] · [[point]] · action · health · [[plan]] · [[coinsurance]] · [[copay]] · [[drug]]
 
 Attested in schema.org — ContactPointOption · actionOption · contactOption · healthPlanCoinsuranceOption · healthPlanCopayOption · healthPlanDrugOption · option
 

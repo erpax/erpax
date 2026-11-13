@@ -36,7 +36,7 @@ version: 2
 
 A movie.
 
-Entangled with — [[clip]] · [[rental]] · [[store]] · [[series]] · [[theater]]
+Entangled with — [[clip]] · [[rental]] · [[store]] · series · theater
 
 Attested in schema.org — Movie · MovieClip · MovieRentalStore · MovieSeries · MovieTheater
 

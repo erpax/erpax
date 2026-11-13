@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from numberOfBathroomsTotal · numberOfFullBathrooms · numberOfPartialBathrooms ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[number]] · [[total]] · [[full]] · [[partial]]
+Entangled with — [[number]] · total · [[full]] · [[partial]]
 
 Attested in schema.org — numberOfBathroomsTotal · numberOfFullBathrooms · numberOfPartialBathrooms
 

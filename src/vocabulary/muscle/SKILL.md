@@ -36,7 +36,7 @@ version: 2
 
 A muscle is an anatomical structure consisting of a contractile form of tissue that animals use to effect movement.
 
-Entangled with — [[action]]
+Entangled with — action
 
 Attested in schema.org — Muscle · muscleAction
 

@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from domainIncludes · includesAttraction · includesHealthPlanFormulary · includesHealthPlanNetwork · includesObject · rangeIncludes ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[domain]] · [[attraction]] · [[health]] · [[plan]] · [[formulary]] · [[network]] · [[object]] · [[range]]
+Entangled with — domain · [[attraction]] · health · [[plan]] · [[formulary]] · [[network]] · [[object]] · [[range]]
 
 Attested in schema.org — domainIncludes · includesAttraction · includesHealthPlanFormulary · includesHealthPlanNetwork · includesObject · rangeIncludes
 

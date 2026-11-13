@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from providesBroadcastService · providesService ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[broadcast]] · [[service]]
+Entangled with — [[broadcast]] · service
 
 Attested in schema.org — providesBroadcastService · providesService
 

@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from LodgingBusiness · LodgingReservation · lodgingUnitDescription · lodgingUnitType ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[business]] · [[reservation]] · [[unit]] · [[description]] · [[type]]
+Entangled with — [[business]] · [[reservation]] · unit · [[description]] · [[type]]
 
 Attested in schema.org — LodgingBusiness · LodgingReservation · lodgingUnitDescription · lodgingUnitType
 

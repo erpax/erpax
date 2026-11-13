@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from embedUrl ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[url]]
+Entangled with — url
 
 Attested in schema.org — embedUrl
 

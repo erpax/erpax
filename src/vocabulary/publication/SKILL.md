@@ -36,7 +36,7 @@ version: 2
 
 A publication event associated with the item.
 
-Entangled with — [[event]] · [[issue]] · [[volume]] · [[type]]
+Entangled with — [[event]] · [[issue]] · volume · [[type]]
 
 Attested in schema.org — PublicationEvent · PublicationIssue · PublicationVolume · publication · publicationType
 

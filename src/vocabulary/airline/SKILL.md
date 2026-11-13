@@ -36,7 +36,7 @@ version: 2
 
 An organization that provides flights for passengers.
 
-Entangled with — [[transport]] · [[thing]]
+Entangled with — transport · [[thing]]
 
 Attested in schema.org — Airline
 

@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from annualPercentageRate · orderPercentage · weightPercentage ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[annual]] · [[rate]] · [[order]] · [[weight]]
+Entangled with — [[annual]] · [[rate]] · [[order]] · weight
 
 Attested in schema.org — annualPercentageRate · orderPercentage · weightPercentage
 

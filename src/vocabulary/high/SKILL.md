@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from HighSchool · highPrice ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[school]] · [[price]]
+Entangled with — school · [[price]]
 
 Attested in schema.org — HighSchool · highPrice
 

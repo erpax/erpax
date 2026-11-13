@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from IPTCDigitalSourceEnumeration ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[digital]] · [[source]] · [[enumeration]]
+Entangled with — [[digital]] · source · [[enumeration]]
 
 Attested in schema.org — IPTCDigitalSourceEnumeration
 

@@ -37,7 +37,7 @@ version: 2
 The third of the trio, in the dynamic dimension:
 
 - [[pi]] — a finite **seed** unfolding to an infinite computable tail (`3 . …`)
-- [[phi]] — the fixed point of the **fold**: content equal to its own transform (`φ = 1 + 1/φ`)
+- phi — the fixed point of the **fold**: content equal to its own transform (`φ = 1 + 1/φ`)
 - **e** — the fixed point of **change**: growth equal to its own state (`d/dx eˣ = eˣ`)
 
 At every point, how fast eˣ grows is exactly what it is. Nothing external drives it — it is **its own driver**. That is self-address in motion: where φ holds still under the fold, e *moves* and the movement is itself.
@@ -57,4 +57,4 @@ Matter-twin: `src/e/index.ts` — `eBySeries` · `eByCompounding` · `selfDeriva
 
 - **Euler's number** e = Σ 1/k! = lim (1+1/n)ⁿ — the base of the natural exponential; d/dx eˣ = eˣ.
 
-Composes: [[pi]] · [[phi]] · [[fold]] · [[law]].
+Composes: [[pi]] · phi · [[fold]] · [[law]].

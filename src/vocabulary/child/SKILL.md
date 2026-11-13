@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from ChildCare · childMaxAge · childMinAge · childTaxon ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[care]] · [[max]] · [[age]] · [[min]] · [[taxon]]
+Entangled with — [[care]] · [[max]] · [[age]] · [[min]] · taxon
 
 Attested in schema.org — ChildCare · childMaxAge · childMinAge · childTaxon
 

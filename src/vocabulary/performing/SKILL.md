@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from PerformingArtsEvent · PerformingArtsTheater · PerformingGroup ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[arts]] · [[event]] · [[theater]] · [[group]]
+Entangled with — [[arts]] · [[event]] · theater · [[group]]
 
 Attested in schema.org — PerformingArtsEvent · PerformingArtsTheater · PerformingGroup
 

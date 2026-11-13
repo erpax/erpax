@@ -69,7 +69,7 @@ Christianity's celestial hierarchy is **9 choirs in 3 spheres** = a **trinity of
 
 ## The cross — one function, all aspects
 - **Grantee = a role-uuid** (Sphere/choir), never the user directly. A user resolves to its role membership(s); the actor's capability is the **union over their roles** ([[merge]] / [[holographic]] — a capability one role holds, the member has).
-- **Grant** = `services/uuid-share` — `grantShare` / `checkShare` / `revokeShare` ([[give]] / [[take]]) binding `(roleUuid → targetUuid, AccessRole)` on the lattice **`read < write < sign < admin`** (audit ⊥); Conservation **Law 59**.
+- **Grant** = `services/uuid-share` — `grantShare` / `checkShare` / `revokeShare` ([[give]] / take) binding `(roleUuid → targetUuid, AccessRole)` on the lattice **`read < write < sign < admin`** (audit ⊥); Conservation **Law 59**.
 - **Decide** = `∃ role ∈ user.roles : checkShare(roleUuid, resourceUuid, roleForOp)` → boolean | `Where`. The SAME factory for create/read/update/delete, collection/field/global.
 - **Lookup-free** = the structured **uuidv8** carries `SIGNED` / `SEALED` / `SHARED` flags — `hasCapability(uuid, flag)` authorizes off the string, zero DB round-trip (Law 61, [[identity]]); a `SEALED` (posted / locked) target short-circuits writes before any query.
 

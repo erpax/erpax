@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from newsUpdatesAndGuidelines · quarantineGuidelines ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[news]] · [[updates]] · [[quarantine]]
+Entangled with — [[news]] · updates · [[quarantine]]
 
 Attested in schema.org — newsUpdatesAndGuidelines · quarantineGuidelines
 

@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from FastFoodRestaurant ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[food]] · [[restaurant]]
+Entangled with — food · restaurant
 
 Attested in schema.org — FastFoodRestaurant
 

@@ -33,7 +33,7 @@ version: 2
 ---
 # organic — the certified production status the produce carries
 
-**organic** is a certified production-and-handling status: a [[crop]] grown without prohibited synthetic inputs, verified by an accredited [[certification|certifier]] against a public rule. The core mechanics: the **National List** (substances allowed-by-exception, naturals prohibited), **excluded methods** (GMO/genetic engineering, ionizing radiation, sewage sludge — barred), a **transition / conversion** period (USDA 36 months, EU 2–3 years — a [[conversion]] state over a [[period]] before land qualifies), and an **organic system plan** the operation follows. It mandates [[rotation]], [[covercrop]], [[compost]], and biological pest control as practices.
+**organic** is a certified production-and-handling status: a [[crop]] grown without prohibited synthetic inputs, verified by an accredited [[certification|certifier]] against a public rule. The core mechanics: the **National List** (substances allowed-by-exception, naturals prohibited), **excluded methods** (GMO/genetic engineering, ionizing radiation, sewage sludge — barred), a **transition / conversion** period (USDA 36 months, EU 2–3 years — a conversion state over a [[period]] before land qualifies), and an **organic system plan** the operation follows. It mandates rotation, [[covercrop]], [[compost]], and biological pest control as practices.
 
 Organic is a [[standards]]-backed label the product carries through the supply chain — tracked by [[lineage]]/[[lots]] (segregation, no commingling) and [[audit]] records (5-year retention). It is one scheme on the regenerative spectrum (see [[certification]] for biodynamic/ROC/GLOBALG.A.P.); the claim is only as good as the unforgeable record behind it ([[proof]]/[[integrity]]).
 
@@ -42,6 +42,6 @@ Organic is a [[standards]]-backed label the product carries through the supply c
 - EU Organic Regulation 2018/848 (in-conversion labeling, Art. 10); IFOAM Norms / Basic Standards
 - Codex Alimentarius CAC/GL 32 — organically produced foods
 
-Composes [[agriculture]] · [[crop]] · [[certification]] · [[standards]] · [[conversion]] · [[period]] · [[rotation]] · [[covercrop]] · [[compost]] · [[lineage]] · [[lots]] · [[audit]] · [[proof]] · [[integrity]].
+Composes [[agriculture]] · [[crop]] · [[certification]] · [[standards]] · conversion · [[period]] · rotation · [[covercrop]] · [[compost]] · [[lineage]] · [[lots]] · [[audit]] · [[proof]] · [[integrity]].
 
 **Law — [[law]]: organic is a [[standard]]-backed production status the [[crop]] carries through the chain — the claim is only as good as the unforgeable [[proof]] behind it.**

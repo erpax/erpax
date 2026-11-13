@@ -36,7 +36,7 @@ version: 2
 
 The publisher of the article in question.
 
-Entangled with — [[imprint]] · [[sd]]
+Entangled with — [[imprint]] · sd
 
 Attested in schema.org — publisher · publisherImprint · sdPublisher
 

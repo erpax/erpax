@@ -36,7 +36,7 @@ version: 2
 
 A parent of this person.
 
-Entangled with — [[audience]] · [[item]] · [[organization]] · [[service]] · [[taxon]]
+Entangled with — [[audience]] · [[item]] · [[organization]] · service · taxon
 
 Attested in schema.org — ParentAudience · parent · parentItem · parentOrganization · parentService · parentTaxon
 

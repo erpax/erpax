@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from BedDetails · EnergyConsumptionDetails · OfferShippingDetails · hasEnergyConsumptionDetails · labelDetails · shippingDetails ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[bed]] · [[energy]] · [[consumption]] · [[offer]] · [[shipping]] · [[has]] · [[label]]
+Entangled with — bed · energy · [[consumption]] · [[offer]] · shipping · [[has]] · [[label]]
 
 Attested in schema.org — BedDetails · EnergyConsumptionDetails · OfferShippingDetails · hasEnergyConsumptionDetails · labelDetails · shippingDetails
 

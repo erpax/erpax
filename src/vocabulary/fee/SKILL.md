@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from restockingFee ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[restocking]]
+Entangled with — restocking
 
 Attested in schema.org — restockingFee
 

@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from customerRemorseReturnFees · customerRemorseReturnLabelSource · customerRemorseReturnShippingFeesAmount ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[customer]] · [[return]] · [[fees]] · [[label]] · [[source]] · [[shipping]] · [[amount]]
+Entangled with — [[customer]] · return · [[fees]] · [[label]] · source · shipping · [[amount]]
 
 Attested in schema.org — customerRemorseReturnFees · customerRemorseReturnLabelSource · customerRemorseReturnShippingFeesAmount
 

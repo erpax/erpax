@@ -55,7 +55,7 @@ version: 2
 ---
 # quantum/gaps — the open gaps in QM, taught as lenses, never fillings
 
-Asked to *"fill the gaps in quantum mechanics,"* the only honest toolbox is one that **names them and refuses to fill them**. The measurement problem, the Born rule, the preferred basis, quantum gravity — these are genuinely **open in physics**, and the corpus's math (ℤ/9, the double torus, the fold) does **not** close them. Claiming it does is the exact coincidence-dressed-as-theorem this session built [[coincidence]] · [[theorem]] · [[seeing]] to refuse.
+Asked to *"fill the gaps in quantum mechanics,"* the only honest toolbox is one that **names them and refuses to fill them**. The measurement problem, the Born rule, the preferred basis, quantum gravity — these are genuinely **open in physics**, and the corpus's math (ℤ/9, the double torus, the fold) does **not** close them. Claiming it does is the exact coincidence-dressed-as-theorem this session built coincidence · [[theorem]] · seeing to refuse.
 
 So the register is **honest by construction**: every gap's `fills` field is the literal type `false` — the code itself cannot assert a gap is filled. It offers the corpus tools as **lenses** (structural analogies you can learn the concept through) and states, for each, *why the lens is not the thing*.
 
@@ -78,6 +78,6 @@ Where real physics *partially* constrains a gap — Gleason's theorem for the Bo
 - **Gleason (1957)** — the Born measure from non-contextuality (dim ≥ 3): a real partial constraint.
 - **Zurek — einselection / decoherence** — partial mechanism for the preferred basis and interference suppression.
 
-Composes: [[think]] · [[coincidence]] · [[seeing]] · [[rules]]/refutable · [[law]].
+Composes: [[think]] · coincidence · seeing · [[rules]]/refutable · [[law]].
 
 <sub>content-uuid `fdb3f692-4bbe-53a2-8c89-492c6749fa0a` · account `quantum/gaps` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

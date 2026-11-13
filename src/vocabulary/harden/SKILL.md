@@ -71,7 +71,7 @@ Applying this skill *is* implementing these standards: every knob above is the e
 | GDPR | Regulation (EU) 2016/679 (applicable since 25 May 2018), substantively unamended | Every PII field/operation carries a recorded lawful basis with the Art. 5/6/30/32 duties enforced — purpose limitation, data minimisation, storage limitation, security of processing, records of processing. The substantive instrument is 2016/679; do **not** conflate it with the procedural Regulation (EU) 2025/2518 (enforcement procedure only). |
 | eIDAS | Regulation (EU) 910/2014 **as amended by** Regulation (EU) 2024/1183 ("eIDAS 2.0", in force 20 May 2024) | Every legally-binding signature/seal produced or verified is an eIDAS AdES/QES backed by a qualified trust-service certificate, preserving signer identity, signing time, and tamper-evidence. Cite the amended form ("910/2014 as amended by 2024/1183") — the number/year is **910/2014**, not "2014/910". |
 
-Composes: [[config]] · [[auth]] · [[access]] · [[upload]] · [[optimize]] · [[deploy]].
+Composes: [[config]] · [[auth]] · [[access]] · upload · [[optimize]] · [[deploy]].
 
 ## Common mistakes
 - Leaving GraphQL + introspection enabled when unused.

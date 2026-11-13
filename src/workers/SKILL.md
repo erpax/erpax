@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from WorkersUnion ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[union]]
+Entangled with — union
 
 Attested in schema.org — WorkersUnion
 

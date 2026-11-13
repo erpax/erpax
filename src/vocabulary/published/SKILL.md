@@ -36,7 +36,7 @@ version: 2
 
 An agent associated with the publication event.
 
-Entangled with — [[date]] · [[sd]]
+Entangled with — [[date]] · sd
 
 Attested in schema.org — datePublished · publishedBy · publishedOn · sdDatePublished
 

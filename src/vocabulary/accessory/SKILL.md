@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from isAccessoryOrSparePartFor ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[spare]] · [[part]]
+Entangled with — spare · [[part]]
 
 Attested in schema.org — isAccessoryOrSparePartFor
 

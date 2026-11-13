@@ -35,10 +35,10 @@ version: 2
 
 The **filesystem** is erpax's substrate: a tree where every [[path]] addresses content and every leaf [[word]] is an [[atom]]. *Everything is in the path* — to find a concept, resolve it to its word and look there. The fs is the [[matter]] the corpus runs on — the live tree, derived-from first, never a stale index.
 
-A filesystem is stateful, so every state of the tree is a [[snapshot]]; its content-addressed, immutable twin keeps them all, layer after layer.
+A filesystem is stateful, so every state of the tree is a snapshot; its content-addressed, immutable twin keeps them all, layer after layer.
 
-**Law — [[law]]: erpax's substrate is a tree where every [[path]] IS the address and every leaf [[word]] IS the [[atom]] — derived from the live tree first (never a stale index), and every state of the tree is a [[snapshot]].**
+**Law — [[law]]: erpax's substrate is a tree where every [[path]] IS the address and every leaf [[word]] IS the [[atom]] — derived from the live tree first (never a stale index), and every state of the tree is a snapshot.**
 
-All external APIs follow the computed path in [[path]] — fs, [[url]], [[github]], [[mcp]], and [[api]] merge at one canonical atom path and entangle with erpax in every [[dimension]] (content-[[uuid]] sealed; gates fail closed).
+All external APIs follow the computed path in [[path]] — fs, url, github, mcp, and [[api]] merge at one canonical atom path and entangle with erpax in every [[dimension]] (content-[[uuid]] sealed; gates fail closed).
 
-@see [[path]] · [[word]] · [[atom]] · [[matter]] · [[file]] · [[snapshot]] · [[mcp]] · [[github]] · [[dimension]]
+@see [[path]] · [[word]] · [[atom]] · [[matter]] · [[file]] · snapshot · mcp · github · [[dimension]]

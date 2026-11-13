@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from APIReference · contentReferenceTime · referenceQuantity · valueReference ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[api]] · [[content]] · [[time]] · [[quantity]] · [[value]]
+Entangled with — [[api]] · [[content]] · time · [[quantity]] · value
 
 Attested in schema.org — APIReference · contentReferenceTime · referenceQuantity · valueReference
 

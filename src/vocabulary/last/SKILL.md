@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from countryOfLastProcessing · lastReviewed ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[country]] · [[processing]] · [[reviewed]]
+Entangled with — [[country]] · [[processing]] · reviewed
 
 Attested in schema.org — countryOfLastProcessing · lastReviewed
 

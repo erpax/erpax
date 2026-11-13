@@ -39,7 +39,7 @@ Rounding is **UoM-class-aware** (the etrima rule via [[port]]): discrete/piece-l
 
 Pervasive across the substance surface: BOM `unitConsumption`, stock/inventory levels, production-order make-quantity, work-shift labor-minutes, invoice/order line `quantity` (etrima `item.unit`, erpax `invoice_line.set_unit`/`billing_unit`). One UoM-aware quantity everywhere — the [[manufacturing]] "Unit of Measure everywhere" lever and the [[commerce]] line `qty`.
 
-Composes: [[currency]] (sibling — value-of-trade ↔ value-of-substance), [[number]], [[calculate]] (EOQ/variances are quantity math), [[manufacturing]] (BOM/routing/production), [[commerce]] (line quantities/inventory), [[field]], [[standard]] (UN/CEFACT Rec 20 common code), [[identity]] (`C62` element) · [[value]] · [[agriculture]] (produce sale units — bunch/head/quart — the mixed-unit CSA box) · [[crop]].
+Composes: [[currency]] (sibling — value-of-trade ↔ value-of-substance), [[number]], [[calculate]] (EOQ/variances are quantity math), [[manufacturing]] (BOM/routing/production), [[commerce]] (line quantities/inventory), [[field]], [[standard]] (UN/CEFACT Rec 20 common code), [[identity]] (`C62` element) · value · [[agriculture]] (produce sale units — bunch/head/quart — the mixed-unit CSA box) · [[crop]].
 
 **Law — [[law]]: a measured quantity is a `value` + a Rec-20 `unit` of measure, NEVER a unit-baked field name — blanks route to the `C62` identity element ([[identity]]) and quantities sum only within a [[dimension]]; the substance twin of [[currency]].**
 
