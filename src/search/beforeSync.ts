@@ -1,4 +1,5 @@
 import { BeforeSync, DocToSync } from '@payloadcms/plugin-search/types'
+import { documentMarkdown } from '@/seed/content'
 
 export const beforeSyncWithSearch: BeforeSync = async ({ req, originalDoc, searchDoc }) => {
   const {
@@ -43,6 +44,7 @@ export const beforeSyncWithSearch: BeforeSync = async ({ req, originalDoc, searc
     ...searchDoc,
     title: (searchDoc as { title?: string }).title || resolvedTitle,
     slug,
+    markdown: documentMarkdown(src),
     meta: {
       ...meta,
       title: meta?.title || resolvedTitle,

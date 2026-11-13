@@ -11,6 +11,7 @@ import { ensureUniqueSlugWithinTenant } from '@/ensure/unique/slug/within/tenant
 import { pagesBeforeChange } from '@/cmspage/hooks'
 import { revalidateDelete, revalidatePage } from '@/cmspage/hooks'
 import { localeRecord } from '@/i18n'
+import { fillSeo, publishedStates } from '@/seed/content'
 
 import {
   MetaDescriptionField,
@@ -98,12 +99,13 @@ export const Pages: CollectionConfig = {
             }),
             MetaTitleField({
               hasGenerateFn: true,
+              overrides: { validate: publishedStates('title') },
             }),
             MetaImageField({
               relationTo: 'media',
             }),
 
-            MetaDescriptionField({}),
+            MetaDescriptionField({ overrides: { validate: publishedStates('description') } }),
             PreviewField({
               // if the `generateUrl` function is configured
               hasGenerateFn: true,
@@ -186,6 +188,7 @@ export const Pages: CollectionConfig = {
   ],
   hooks: {
     afterChange: [revalidatePage],
+    beforeValidate: [fillSeo],
     beforeChange: pagesBeforeChange,
     afterDelete: [revalidateDelete],
   },

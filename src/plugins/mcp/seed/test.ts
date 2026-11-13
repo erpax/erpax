@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
 import {
+  MCP_DOCUMENT_SLUGS,
   MCP_GATEWAY_SEED_SLUGS,
   mcpCollectionsConfig,
   mcpExtraSlugs,
@@ -23,7 +24,8 @@ describe('plugins/mcp/seed — self-computable Worker surface', () => {
   it('seed slugs = gateway atoms by default (CMS opt-in)', () => {
     const slugs = mcpSeedCollectionSlugs({})
     for (const s of MCP_GATEWAY_SEED_SLUGS) expect(slugs).toContain(s)
-    expect(slugs).not.toContain('pages')
+    for (const s of MCP_DOCUMENT_SLUGS) expect(slugs).toContain(s)
+    expect(slugs).not.toContain('media')
     const withCms = mcpSeedCollectionSlugs({ ERPAX_MCP_INCLUDE_CMS: '1' })
     for (const s of SEED_COLLECTION_SLUGS) expect(withCms).toContain(s)
     expect(new Set(withCms).size).toBe(withCms.length)
@@ -35,12 +37,14 @@ describe('plugins/mcp/seed — self-computable Worker surface', () => {
       'orders',
     ])
     const cfg = mcpCollectionsConfig(
-      [{ slug: 'users' }, { slug: 'invoices' }, { slug: 'pages' }],
+      [{ slug: 'users' }, { slug: 'invoices' }, { slug: 'pages' }, { slug: 'media' }],
       { NODE_ENV: 'production', ERPAX_MCP_EXTRA: 'invoices,missing' },
     )
     expect(cfg.invoices).toEqual({ enabled: true })
     expect(cfg.users).toEqual({ enabled: true })
-    expect(cfg.pages).toBeUndefined()
+    // a document collection is always on the surface; an unlisted one is not
+    expect(cfg.pages).toEqual({ enabled: true })
+    expect(cfg.media).toBeUndefined()
     // 'missing' is deliberately NOT a CollectionSlug — the point of the assertion is that an
     // unregistered slug never appears, so it must be read off the record, not off the type.
     expect((cfg as Record<string, unknown>).missing).toBeUndefined()

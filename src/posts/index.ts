@@ -29,6 +29,7 @@ import {
 } from '@payloadcms/plugin-seo/fields'
 import { slugField } from 'payload'
 import { localeRecord } from '@/i18n'
+import { fillSeo, markdownField, publishedStates } from '@/seed/content'
 
 /**
  * Posts — CMS articles with versioned drafts and tenant-scoped read.
@@ -112,6 +113,7 @@ export const Posts: CollectionConfig = {
               label: false,
               required: true,
             },
+            markdownField('content'),
           ],
           label: localeRecord('tab.content'),
         },
@@ -178,12 +180,13 @@ export const Posts: CollectionConfig = {
             }),
             MetaTitleField({
               hasGenerateFn: true,
+              overrides: { validate: publishedStates('title') },
             }),
             MetaImageField({
               relationTo: 'media',
             }),
 
-            MetaDescriptionField({}),
+            MetaDescriptionField({ overrides: { validate: publishedStates('description') } }),
             PreviewField({
               // if the `generateUrl` function is configured
               hasGenerateFn: true,
@@ -283,6 +286,7 @@ export const Posts: CollectionConfig = {
     }),
   ],
   hooks: {
+    beforeValidate: [fillSeo],
     beforeChange: postsBeforeChange,
     afterChange: [revalidatePost],
     afterRead: [populateAuthors],

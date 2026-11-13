@@ -119,3 +119,6 @@ RECURSION.md
 
 # Third-party agent skills, fetched from the source pinned in skills-lock.json (not redistributed here).
 .agents/
+
+# Generated page seeds — derived from installed skills, regenerated on demand (tsx src/payload/local/index.ts)
+src/**/seed.generated.json

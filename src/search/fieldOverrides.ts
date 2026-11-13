@@ -4,6 +4,14 @@ import { localeRecord } from '@/i18n'
 
 export const searchFields: Field[] = [
   {
+    name: 'markdown',
+    type: 'textarea',
+    admin: {
+      readOnly: true,
+      description: 'The document body as markdown, synced from its rich text — what a reader selects to get the document as text.',
+    },
+  },
+  {
     name: 'slug',
     type: 'text',
     label: localeRecord('search.slug'),

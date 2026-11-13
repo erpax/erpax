@@ -2222,6 +2222,10 @@ export interface Post {
     };
     [k: string]: unknown;
   };
+  /**
+   * The content field as markdown — computed on read, never stored.
+   */
+  markdown?: string | null;
   relatedPosts?: (string | Post)[] | null;
   categories?: (string | Category)[] | null;
   /**
@@ -2338,6 +2342,10 @@ export interface ContentBlock {
           };
           [k: string]: unknown;
         } | null;
+        /**
+         * The richText field as markdown — computed on read, never stored.
+         */
+        markdown?: string | null;
         enableLink?: boolean | null;
         link?: {
           type?: ('reference' | 'custom') | null;
@@ -19338,6 +19346,10 @@ export interface Search {
     relationTo: string;
     value: string;
   };
+  /**
+   * The document body as markdown, synced from its rich text — what a reader selects to get the document as text.
+   */
+  markdown?: string | null;
   slug?: string | null;
   meta?: {
     title?: string | null;
@@ -24381,6 +24393,7 @@ export interface ContentBlockSelect<T extends boolean = true> {
     | {
         size?: T;
         richText?: T;
+        markdown?: T;
         enableLink?: T;
         link?:
           | T
@@ -24970,6 +24983,7 @@ export interface PostsSelect<T extends boolean = true> {
   title?: T;
   heroImage?: T;
   content?: T;
+  markdown?: T;
   relatedPosts?: T;
   categories?: T;
   pages?: T;
@@ -27976,6 +27990,7 @@ export interface SearchSelect<T extends boolean = true> {
         relationTo?: T;
         value?: T;
       };
+  markdown?: T;
   slug?: T;
   meta?:
     | T

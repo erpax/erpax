@@ -11048,6 +11048,9 @@
         "layout[].columns.richText": {
           "localized": false
         },
+        "layout[].columns.markdown": {
+          "localized": false
+        },
         "layout[].columns.enableLink": {
           "localized": false
         },
@@ -12442,6 +12445,9 @@
         },
         "content": {
           "localized": true
+        },
+        "markdown": {
+          "localized": false
         },
         "relatedPosts": {
           "localized": false
@@ -19032,6 +19038,9 @@
         "layout[].columns.richText": {
           "localized": false
         },
+        "layout[].columns.markdown": {
+          "localized": false
+        },
         "layout[].columns.enableLink": {
           "localized": false
         },
@@ -19551,6 +19560,9 @@
           "localized": false
         },
         "docUrl": {
+          "localized": false
+        },
+        "markdown": {
           "localized": false
         },
         "slug": {

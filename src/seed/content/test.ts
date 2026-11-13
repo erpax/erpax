@@ -2,6 +2,16 @@ import { describe, it, expect } from 'vitest'
 import type { Field } from 'payload'
 import {
   type Convert,
+  fillSeo,
+  owedDescription,
+  publishedStates,
+  savedMarkdown,
+  summaryOf,
+  describedAs,
+  blockFields,
+  documentMarkdown,
+  markdownField,
+  toLexical,
   linkedSlugs,
   loadPages,
   loadPosts,
@@ -39,6 +49,21 @@ describe('seed/content — page rows derived from the tree', () => {
     expect(stripFrontmatter('# t\n---\nnot frontmatter')).toBe('# t\n---\nnot frontmatter')
   })
 
+  it('reads a skill description from frontmatter — quoted or bare — and nothing from a body', () => {
+    expect(describedAs('---\nname: x\ndescription: "Use when a: b \\"c\\""\n---\n# t')).toBe('Use when a: b "c"')
+    expect(describedAs('---\ndescription: Use when bare\n---\n')).toBe('Use when bare')
+    expect(describedAs('# t\ndescription: not frontmatter')).toBe('')
+    expect(pageRows([{ path: 'rules' }], () => '---\ndescription: "Use when gating"\n---\n# rules')[0]!.description).toBe('Use when gating')
+  })
+
+  it('summarises a document by its first paragraph of prose, skipping headings, code, tables and lists', () => {
+    const md = '# Title\n\n```ts\nconst a = 1\n\nconst b = 2\n```\n\n| a | b |\n| - | - |\n\n- item\n\nThe **first** [real](https://x.y) line,\nwrapped.\n\nSecond.'
+    expect(summaryOf(md)).toBe('The first real line, wrapped.')
+    expect(summaryOf('# only a heading')).toBe('')
+    expect(summaryOf('word '.repeat(100), 20)).toHaveLength(20)
+    expect(pageRows([{ path: 'law' }], () => '# law\n\nOne law for all.')[0]!.description).toBe('One law for all.')
+  })
+
   it('sorts parents first and skips a node the reader does not know', () => {
     const rows = pageRows(nodes, read)
     expect(rows.map((r) => r.slug)).toEqual(['law', 'rules', 'rules-copy', 'wine-cellar-barrel'])
@@ -74,6 +99,15 @@ describe('seed/content — the editor is found where the field actually is', () 
 
   it('walks tabs, blocks and arrays', () => {
     expect(richTextField(fields, 'richText')?.name).toBe('richText')
+  })
+
+  it('finds a block by slug, so a hero field of the same name is not mistaken for the body', () => {
+    const hero = { name: 'hero', type: 'group', fields: [rich('richText')] } as unknown as Field
+    const withHero = [hero, ...fields]
+    expect(richTextField(withHero, 'richText')).toBe((hero as { fields: Field[] }).fields[0])
+    expect(blockFields(withHero, 'content')).toBeDefined()
+    expect(blockFields(withHero, 'absent')).toBeUndefined()
+    expect(() => toLexical({ config: { collections: [{ slug: 'pages', fields: [hero] }] } } as never, 'pages', 'richText', '# x')).toThrow(/no rich-text field/)
   })
 
   it('returns nothing rather than a field of another name', () => {
@@ -120,6 +154,7 @@ describe('seed/content — rows loaded as nested pages', () => {
     const copy = p.tables.pages!.find((d) => d.slug === 'rules-copy')!
     expect(copy.parent).toBe(id('rules'))
     expect(copy._status).toBe('published')
+    expect(copy.meta).toEqual({ title: 'rules/copy — one truth' })
     expect(result.unresolved).toEqual(['nowhere'])
   })
 
@@ -165,5 +200,56 @@ describe('seed/content — rows loaded as posts based on pages', () => {
     const before = p.writes()
     expect(await loadPosts(p.api, posts, { category: 'Publications', convert })).toMatchObject({ created: 0, updated: 0, unchanged: 2 })
     expect(p.writes()).toBe(before)
+  })
+})
+
+describe('seed/content — the body read back as markdown', () => {
+  it('the markdown field is virtual: computed on read from its sibling, never stored', () => {
+    const field = markdownField('content')
+    expect(field).toMatchObject({ name: 'markdown', type: 'textarea', virtual: true, admin: { hidden: true } })
+    const read = field.hooks!.afterRead![0]!
+    expect(read({ siblingData: {}, siblingFields: [] } as never)).toBe('')
+    expect(read({ siblingData: { content: { root: {} } }, siblingFields: [{ name: 'content', type: 'text' }] } as never)).toBe('')
+  })
+
+  it('collects a document body: its own markdown, then each content column, skipping the empty', () => {
+    expect(documentMarkdown({ markdown: ' # post ' })).toBe('# post')
+    expect(documentMarkdown({ layout: [{ columns: [{ markdown: 'A' }, { markdown: '' }, {}] }, { blockType: 'cta' }, { columns: [{ markdown: 'B' }] }] })).toBe('A\n\nB')
+    expect(documentMarkdown({ title: 'no body' })).toBe('')
+  })
+})
+
+describe('seed/content — SEO is filled before validation, then validation requires it', () => {
+  const collection = { slug: 'tags', fields: [] }
+
+  it('owes a description: what is stated, else the first paragraph, else the title', () => {
+    expect(owedDescription('stated', '# h\n\nbody line', 'T')).toBe('stated')
+    expect(owedDescription('  ', '# h\n\nbody line', 'T')).toBe('body line')
+    expect(owedDescription(undefined, '# only heading', 'T')).toBe('T')
+    expect(owedDescription(undefined, '', undefined)).toBe('')
+  })
+
+  it('a collection with no declared body has no markdown to read', () => {
+    expect(savedMarkdown(collection, { content: {} })).toBe('')
+  })
+
+  it('fills what is missing and never replaces what an author wrote', async () => {
+    const filled = (await fillSeo({ data: { title: 'T' }, collection } as never)) as { meta: Record<string, unknown> }
+    expect(filled.meta).toEqual({ title: 'T', description: 'T' })
+    const kept = (await fillSeo({ data: { title: 'T', meta: { title: 'Mine', description: 'My words', image: 7 } }, collection } as never)) as { meta: Record<string, unknown> }
+    expect(kept.meta).toEqual({ title: 'Mine', description: 'My words', image: 7 })
+  })
+
+  it('a partial update keeps the stored description and title', async () => {
+    const out = (await fillSeo({ data: { slug: 'moved' }, originalDoc: { title: 'T', meta: { description: 'stored' } }, collection } as never)) as { meta: Record<string, unknown> }
+    expect(out.meta).toEqual({ title: 'T', description: 'stored' })
+  })
+
+  it('requires both elements on a published document, and on nothing else', () => {
+    const validate = publishedStates('description')
+    expect(validate('', { data: { _status: 'draft' } })).toBe(true)
+    expect(validate('words', { data: { _status: 'published' } })).toBe(true)
+    expect(validate('  ', { data: { _status: 'published' } })).toMatch(/states its description \(ISO 15836-1\)/)
+    expect(validate(undefined, { data: { _status: 'published' } })).toMatch(/description/)
   })
 })

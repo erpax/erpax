@@ -18,6 +18,10 @@
     "**/src/rules/**/README.md",
     "**/src/rules/**/LLM.md",
     "**/.claude/rules/**/README.md",
-    "**/.claude/rules/**/LLM.md"
+    "**/.claude/rules/**/LLM.md",
+    "**/src/rules/*/SKILL.md",
+    "**/src/rules/*/**/SKILL.md",
+    "**/.claude/rules/*/SKILL.md",
+    "**/.claude/rules/*/**/SKILL.md"
   ]
 }

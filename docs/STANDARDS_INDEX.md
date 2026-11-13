@@ -715,10 +715,10 @@ src/cloudflare/surface/index.ts:33: * @standard ISO/IEC 25010:2023 §5.3 — com
 src/cmspage/access/superAdminOrTenantAdmin.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control
 src/cmspage/hooks/beforeChange.ts:8: * @standard ISO-8601-1:2019 date-time published-at
 src/cmspage/hooks/revalidatePage.ts:10: * @standard W3C HTML5 Living Standard
-src/cmspage/index.ts:27: * @standard schema.org WebPage
-src/cmspage/index.ts:28: * @standard W3C HTML5 Living Standard
-src/cmspage/index.ts:29: * @standard BCP-47 language-tag i18n-routing
-src/cmspage/index.ts:30: * @standard ECMA-402 internationalization-api
+src/cmspage/index.ts:28: * @standard schema.org WebPage
+src/cmspage/index.ts:29: * @standard W3C HTML5 Living Standard
+src/cmspage/index.ts:30: * @standard BCP-47 language-tag i18n-routing
+src/cmspage/index.ts:31: * @standard ECMA-402 internationalization-api
 src/coherence/index.ts:19: * @standard DSP magnitude-spectrum (DFT) + the 0.7..4 Hz human-pulse band
 src/collection/archive/index.tsx:4: * @standard schema.org ItemList
 src/collection/archive/index.tsx:5: * @standard schema.org CollectionPage
@@ -2151,10 +2151,10 @@ src/payload.config.multi-tenant-admin.test.ts:9: * @standard NIST INCITS-359-201
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:586:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:604:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:605:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:627:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:597:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:615:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:616:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:638:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/payload/upstream/index.ts:16: * @standard GitHub REST API — repository contents
 src/payment/methods/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/payment/methods/index.ts:15: * @standard ISO-13616-1:2020 iban bank-account-reference
@@ -2249,11 +2249,11 @@ src/post/close/analytics/service.ts:19: * @standard GAAP VRE (Variance Reporting
 src/posts/hooks/populateAuthors.ts:12: * @standard schema.org Person author
 src/posts/hooks/populateAuthors.ts:13: * @standard schema.org Article author
 src/posts/hooks/revalidatePost.ts:10: * @standard W3C HTML5 Living Standard
-src/posts/index.ts:37: * @standard schema.org Article
-src/posts/index.ts:38: * @standard schema.org BlogPosting
-src/posts/index.ts:39: * @standard W3C HTML5 Living Standard
-src/posts/index.ts:40: * @standard BCP-47 language-tag i18n-routing
-src/posts/index.ts:41: * @standard ECMA-402 internationalization-api
+src/posts/index.ts:38: * @standard schema.org Article
+src/posts/index.ts:39: * @standard schema.org BlogPosting
+src/posts/index.ts:40: * @standard W3C HTML5 Living Standard
+src/posts/index.ts:41: * @standard BCP-47 language-tag i18n-routing
+src/posts/index.ts:42: * @standard ECMA-402 internationalization-api
 src/power/index.ts:32: * @standard NIST SP 800-107r1 §5.1 (hash strengths) · NIST SP 800-57 Part 1 r5 §5.6
 src/prime/index.ts:32: * @standard Fundamental Theorem of Arithmetic — unique prime factorisation (Euclid; Gauss)
 src/prime/index.ts:33: * @standard Shor 1994 — integer factorisation by quantum period-finding (proven, not claimed)
@@ -2601,7 +2601,8 @@ src/security/header/headers/test.ts:9: * @standard OWASP-ASVS V14 configuration
 src/security/header/index.ts:5: * @standard W3C CSP-3
 src/security/header/index.ts:6: * @standard W3C Permissions-Policy
 src/security/remote/access/index.ts:19: * @standard NIST SP 800-162 ABAC · NIST SP 800-107r1 §5.1 · CWE-59
-src/seed/content/index.ts:17: * @standard CommonMark 0.31 markdown wire-form
+src/seed/content/index.ts:21: * @standard CommonMark 0.31 markdown wire-form
+src/seed/content/index.ts:22: * @standard ISO-15836-1:2017 dublin-core title description
 src/seed/erpax-product-pages.ts:31: * @standard schema.org Product
 src/seed/erpax-product-pages.ts:32: * @standard schema.org WebSite breadcrumb
 src/seed/erpax-product-pages.ts:33: * @standard ISO-25010 usability marketing-content
@@ -3433,7 +3434,7 @@ src/categories/index.ts:14: * @rfc 3986 uri slug-to-url
 src/cmspage/hooks/beforeChange.ts:10: * @rfc 3986 uri remote-media-source
 src/cmspage/hooks/revalidatePage.ts:8: * @rfc 9110 §13 caching
 src/cmspage/hooks/revalidatePage.ts:9: * @rfc 9111 http-caching
-src/cmspage/index.ts:26: * @rfc 3986 uri slug-to-url
+src/cmspage/index.ts:27: * @rfc 3986 uri slug-to-url
 src/country/client/berlin-group-psd2.ts:16: * @rfc 6749 oauth-2.0
 src/country/client/berlin-group-psd2.ts:17: * @rfc 7519 jwt
 src/default/lexical/index.ts:6: * @rfc 3986 uniform-resource-identifier link-fields
@@ -3525,7 +3526,7 @@ src/payment/methods/index.ts:23: * @rfc 5116 authenticated-encryption-with-assoc
 src/posts/hooks/beforeChange.ts:8: * @rfc 3986 uri remote-media-source
 src/posts/hooks/revalidatePost.ts:8: * @rfc 9110 §13 caching
 src/posts/hooks/revalidatePost.ts:9: * @rfc 9111 http-caching
-src/posts/index.ts:36: * @rfc 3986 uri slug-to-url
+src/posts/index.ts:37: * @rfc 3986 uri slug-to-url
 src/remote/media/import/index.ts:5: * @rfc 3986 uniform-resource-identifier remote-source
 src/remote/media/import/index.ts:6: * @rfc 6838 mime-type media-type
 src/remote/media/import/index.ts:7: * @rfc 9110 http-semantics fetch
@@ -3572,6 +3573,7 @@ src/security/header/headers/index.ts:8: * @rfc 6797 hsts http-strict-transport-s
 src/security/header/headers/index.ts:9: * @rfc 9110 http-semantics
 src/security/header/headers/test.ts:5: * @rfc 6797 hsts http-strict-transport-security
 src/security/header/index.ts:4: * @rfc 6797 hsts
+src/seed/content/load/index.ts:17: * @rfc 9110 http-semantics authorization
 src/seed/index.ts:7: * @rfc 9110 http-semantics seed-endpoint
 src/seeding/seedSubscriptionPlans.ts:9: * @rfc 3986 uri syntax-of-slug
 src/shareds/documentPreviewAdmin.ts:14: * @rfc 3986 uri preview-url-construction
@@ -3765,7 +3767,7 @@ src/card/index.tsx:9: * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
 src/carriers/index.ts:16: * @compliance SOX §404 internal-controls carrier-master TOM-LOG-01
 src/chain/event/emitter/index.ts:15: * @compliance SOX §404 internal-controls process-evidence
 src/cmspage/access/superAdminOrTenantAdmin.ts:9: * @compliance SOC-2 CC6.1 logical-access-controls
-src/cmspage/index.ts:31: * @compliance WCAG-2.1 level-AA accessibility
+src/cmspage/index.ts:32: * @compliance WCAG-2.1 level-AA accessibility
 src/collection/archive/index.tsx:7: * @compliance WCAG-2.1 §2.4.1 bypass-blocks
 src/commitments/index.ts:30: * @compliance GDPR Art.6(1)(b) lawful-basis-contract-processing
 src/compliance/frameworks/compliance/requirements/compliance/gaps/index.ts:6: * @compliance SOX §404 deficiency
@@ -4105,7 +4107,7 @@ src/plugins/auth/access/index.ts:16: * @compliance SOC-2 CC6.1 logical-access-co
 src/plugins/versions/index.ts:30: * @compliance SOX §404 internal-controls record-retention
 src/posts/hooks/populateAuthors.ts:14: * @compliance GDPR Art.5(1)(c) data-minimization
 src/posts/hooks/populateAuthors.ts:15: * @compliance GDPR Art.32 security-of-processing
-src/posts/index.ts:42: * @compliance WCAG-2.1 level-AA accessibility
+src/posts/index.ts:43: * @compliance WCAG-2.1 level-AA accessibility
 src/properties/index.ts:23: * @compliance SOX §404 internal-controls real-estate-portfolio
 src/properties/investment/properties/index.ts:22: * @compliance SOX §404 internal-controls
 src/properties/spaces/index.ts:15: * @compliance SOX §404 internal-controls space-allocation
@@ -4783,9 +4785,9 @@ src/payable/analytics/index.ts:7: * @accounting IFRS IAS-37 provisions-contingen
 src/payable/discounts/index.ts:14: * @accounting US-GAAP ASC-705 cost-of-sales-and-services discount-recognition
 src/payable/workflow/index.ts:11: * @accounting IFRS IAS-37 provisions-contingent-liabilities
 src/payable/workflow/index.ts:12: * @accounting US-GAAP ASC-405 liabilities
-src/payload.config.ts:584:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:585:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:606:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:595:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:596:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:617:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/period/end/adjustment/service/index.ts:25: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/period/end/adjustment/service/index.ts:26: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 src/period/end/adjustment/service/index.ts:27: * @accounting IFRS IAS-16 property-plant-and-equipment depreciation
@@ -6078,9 +6080,9 @@ src/path/record.ts:12: * @audit pure; never silent mutation of ledger entries
 src/payable/aging/index.ts:13: * @audit ISO-19011:2018 audit-trail
 src/payable/workflow/index.ts:13: * @audit ISO-19011:2018 audit-trail state-transitions
 src/payload.config.multi-tenant-admin.test.ts:14: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:587:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:607:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:628:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:598:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:618:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:639:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload/command/index.ts:10: * @audit the command list is the installed CLI's; each uuid and the fold are computed
 src/payment/methods/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/peppol/bis/3/types/index.ts:13: * @audit ISO-19011:2018 audit-trail

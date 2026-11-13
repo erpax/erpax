@@ -43,6 +43,22 @@ code, quotes) were added to the page and post editors. A seeded document that an
 is overwritten by the next load of a changed row. And the rows are a projection of the tree: while
 the tree still holds the same document, the two can drift until the next load.
 
+## Reading back, and describing
+
+- `markdownField(source)` — a virtual sibling of a rich-text field, computed on read by Lexical's
+  own converter. Nothing is stored twice.
+- `documentMarkdown(doc)` — collects a read document's body; the search sync writes it into the
+  search row, which is where a reader asks for a document as text.
+- `describedAs` · `summaryOf` — a document's description: its frontmatter line, else its first
+  paragraph of prose.
+- `fillSeo` — before validation, fills the SEO title and description that were left empty;
+  `publishedStates` then requires both on a published document.
+- `toLexical` converts a page body with the CONTENT block's editor; a hero has a rich-text field
+  of the same name and a different editor, and using it dropped every code fence.
+
+**Honest boundary, added.** The description filled for a document with no prose is its title —
+present, not informative. A fence in a language the editor does not list is refused at save.
+
 **Law — [[law]]: content is rows, not build output. A document is a nested page, a publication is a
 post that references what it is based on, and a new kind of content is a seed to load rather than a
 collection to add or a page to pre-render.**

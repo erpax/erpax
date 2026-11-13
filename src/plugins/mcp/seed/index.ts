@@ -32,6 +32,14 @@ export const MCP_GATEWAY_SEED_SLUGS = [
   'payload-mcp-api-keys',
 ] as const satisfies readonly CollectionSlug[]
 
+/**
+ * The document collections: pages are the nested documents, posts the publications based on them.
+ * `search` is the fast route to both: one flat row per document carrying its title, slug and
+ * body as markdown. Always on the surface, because an agent that can find a document by slug and
+ * select its `markdown` does not need that document loaded into its context beforehand.
+ */
+export const MCP_DOCUMENT_SLUGS = ['search', 'pages', 'posts', 'categories'] as const satisfies readonly CollectionSlug[]
+
 export type McpSeedMode = 'seed' | 'full'
 
 /** The env face this atom reads — narrow and readonly, so a test may pass just the keys it sets. */
@@ -61,7 +69,7 @@ export function mcpExtraSlugs(env: McpEnv = process.env): readonly string[] {
 
 /**
  * Ordered unique seed slugs for MCP enablement.
- * Production seed = gateway auth atoms only (CMS fixtures stay on `/next/seed`).
+ * Production seed = gateway auth atoms + the document collections (other CMS fixtures stay on `/next/seed`).
  * Opt into CMS MCP surface via `ERPAX_MCP_EXTRA` or `ERPAX_MCP_INCLUDE_CMS=1`.
  */
 export function mcpSeedCollectionSlugs(
@@ -74,6 +82,7 @@ export function mcpSeedCollectionSlugs(
   for (const slug of [
     ...(includeCms ? SEED_COLLECTION_SLUGS : []),
     ...MCP_GATEWAY_SEED_SLUGS,
+    ...MCP_DOCUMENT_SLUGS,
     ...mcpExtraSlugs(env),
   ]) {
     if (seen.has(slug)) continue
