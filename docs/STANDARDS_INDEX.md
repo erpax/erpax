@@ -1939,7 +1939,6 @@ src/lots/index.ts:25: * @standard ISA-95:2013 / IEC-62264-1 §B.3 production-sch
 src/lots/index.ts:26: * @standard ISO-22400-2:2014 manufacturing-operations throughput
 src/lung/index.ts:29: * @standard West, Respiratory Physiology (Fick's law) · Weibel, the 23-generation lung tree
 src/machine/index.ts:15: * @standard mined from etrima (Rails source-of-truth) · the machine rate spread as double-entry
-src/maintenance/requests/index.ts:10: * @standard ISO-41001:2018 §8.1 facility-management operational-planning
 src/maintenance/work/orders/index.ts:12: * @standard ISO-41001:2018 §8.1 facility-management operational-control
 src/maintenance/work/orders/index.ts:13: * @standard ISO-55000:2014 asset-management work-management
 src/maintenance/work/orders/index.ts:14: * @standard ISO-55001:2014 asset-management management-systems
@@ -1974,7 +1973,6 @@ src/medical/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/membership/admin/mutate/access/index.ts:17: * @standard NIST INCITS-359-2012 role-based-access-control
 src/memories/index.ts:30: * @standard ISO/IEC 25010:2023 §5.7 modifiability — persistent memory layer
 src/memories/index.ts:31: * @standard ISO 19011:2018 §6.4.6 audit-evidence (memory history audit-trailed)
-src/memory/anchor/index.ts:30: * @standard RFC 9562 §5.8 — uuidv8 content-uuid
 src/memory/architecture/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/memory/session/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/merge/open/graph/index.ts:4: * @standard OGP open-graph-protocol-1.0
@@ -2131,8 +2129,6 @@ src/parties/index.ts:19: * @standard ISO-20022 pain.001 customer-credit-transfer
 src/parties/index.ts:20: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
 src/parties/index.ts:21: * @standard EN-16931:2017 §BG-4 seller §BG-7 buyer
 src/party/aging.service.ts:9: * @standard ISO-8601-1:2019 date-time days-between-arithmetic
-src/party/identity/index.ts:32: * @standard ISO 3166-1 alpha-2 — the jurisdiction a tax id is unique within
-src/party/identity/index.ts:33: * @standard RFC 9562 §5.8 — the content-address
 src/patent/prior/index.ts:45: * @standard 35 U.S.C. §102 — novelty; a prior public disclosure anticipates
 src/patent/prior/index.ts:46: * @standard 35 U.S.C. §154 — patent term (20 years from filing; 17 from grant pre-1995)
 src/payable/aging/index.ts:12: * @standard ISO-8601-1:2019 date-time as-of-date
@@ -4411,7 +4407,6 @@ src/customers/projects/project/tasks/index.ts:15: * @accounting IFRS IFRS-15 §B
 src/customers/projects/wip/snapshots/index.ts:17: * @accounting IFRS IFRS-15 §B14 §B15 §B16 §B17 §B18 §B19 measurement-of-progress
 src/customers/projects/wip/snapshots/index.ts:18: * @accounting IFRS IFRS-15 §107 §108 §109 contract-asset-contract-liability
 src/customers/projects/wip/snapshots/index.ts:19: * @accounting US-GAAP ASC-606-10-45-1 contract-asset
-src/customers/quotes/index.ts:10: * @accounting IFRS IFRS-15 §10 contract-with-customer (acceptance is contract inception)
 src/customers/sales/orders/index.ts:32: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/customers/sales/orders/index.ts:33: * @accounting IFRS IFRS-15 §10 contract-with-customer (order = contract or modification)
 src/customers/sales/orders/index.ts:34: * @accounting IFRS IFRS-15 §31 transfer-of-control
@@ -5623,7 +5618,6 @@ src/aura/propose/index.ts:12: * @audit no link invented -- every proposal is a c
 src/authenticated/or/published/index.ts:8: * @audit ISO-19011:2018 audit-trail draft-vs-published
 src/auto/populate/created/by/index.ts:7: * @audit ISO-19011:2018 audit-trail authorship-attribution
 src/auto/populate/tenant/index.ts:11: * @audit ISO-19011:2018 audit-trail before-validate-hooks
-src/auto/resolve/index.ts:17: * @audit computed from the live folderViolations(); the partition is a pure fn (test.ts)
 src/auto/set/timestamp/index.ts:8: * @audit ISO-19011:2018 audit-trail status-transition-timestamp
 src/balance/index.ts:26: * @audit computed on the live uuid-matrix atom names, never hand-asserted
 src/bank/accounts/bank/reconciliations/index.ts:19: * @audit ISO-19011:2018 §6.4.6 audit-evidence-bank-reconciliation
@@ -6087,7 +6081,6 @@ src/payload.config.multi-tenant-admin.test.ts:14: * @audit ISO-19011:2018 audit-
 src/payload.config.ts:598:       * @audit ISO-19011:2018 audit-trail dunning-cycle
 src/payload.config.ts:618:       * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/payload.config.ts:639:       * @audit ISO-19011:2018 §6.4 audit-evidence
-src/payload/command/index.ts:10: * @audit the command list is the installed CLI's; each uuid and the fold are computed
 src/payment/methods/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/peppol/bis/3/types/index.ts:13: * @audit ISO-19011:2018 audit-trail
 src/peppol/bis/3/types/test.ts:7: * @audit ISO-19011:2018 audit-trail
