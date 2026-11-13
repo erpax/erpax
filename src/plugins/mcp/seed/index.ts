@@ -38,7 +38,7 @@ export const MCP_GATEWAY_SEED_SLUGS = [
  * body as markdown. Always on the surface, because an agent that can find a document by slug and
  * select its `markdown` does not need that document loaded into its context beforehand.
  */
-export const MCP_DOCUMENT_SLUGS = ['search', 'pages', 'posts', 'categories', 'redirects'] as const satisfies readonly CollectionSlug[]
+export const mcpDocumentSlugs = (): readonly CollectionSlug[] => ['search', 'pages', 'posts', 'categories', 'redirects']
 
 export type McpSeedMode = 'seed' | 'full'
 
@@ -82,7 +82,7 @@ export function mcpSeedCollectionSlugs(
   for (const slug of [
     ...(includeCms ? SEED_COLLECTION_SLUGS : []),
     ...MCP_GATEWAY_SEED_SLUGS,
-    ...MCP_DOCUMENT_SLUGS,
+    ...mcpDocumentSlugs(),
     ...mcpExtraSlugs(env),
   ]) {
     if (seen.has(slug)) continue

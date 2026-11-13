@@ -18,7 +18,6 @@
  *
  * @invariant a row's parent is the nearest ancestor present in the same set, so parents sort first
  * @invariant loading the same rows twice creates nothing and updates nothing
- * @standard CommonMark 0.31 markdown wire-form
  * @standard ISO-15836-1:2017 dublin-core title description
  * @see ./SKILL.md
  */

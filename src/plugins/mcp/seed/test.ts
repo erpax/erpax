@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
 import {
-  MCP_DOCUMENT_SLUGS,
+  mcpDocumentSlugs,
   MCP_GATEWAY_SEED_SLUGS,
   mcpCollectionsConfig,
   mcpExtraSlugs,
@@ -24,7 +24,7 @@ describe('plugins/mcp/seed — self-computable Worker surface', () => {
   it('seed slugs = gateway atoms by default (CMS opt-in)', () => {
     const slugs = mcpSeedCollectionSlugs({})
     for (const s of MCP_GATEWAY_SEED_SLUGS) expect(slugs).toContain(s)
-    for (const s of MCP_DOCUMENT_SLUGS) expect(slugs).toContain(s)
+    for (const s of mcpDocumentSlugs()) expect(slugs).toContain(s)
     expect(slugs).not.toContain('media')
     const withCms = mcpSeedCollectionSlugs({ ERPAX_MCP_INCLUDE_CMS: '1' })
     for (const s of SEED_COLLECTION_SLUGS) expect(withCms).toContain(s)

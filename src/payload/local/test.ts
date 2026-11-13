@@ -2,11 +2,11 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { payloadSkillSeed, readSkill, relink, skillPath, skillRoot, skillRows } from '@/payload/local'
+import { payloadSkillSeed, readSkill, relink, skillPath, skillHome, skillRows } from '@/payload/local'
 
 describe('payload/local — an installed skill as generated page seeds', () => {
   it('addresses the skill as the parent and each reference as its child', () => {
-    expect(skillRoot('payload')).toBe('skills/payload')
+    expect(skillHome('payload')).toBe('skills/payload')
     expect(skillPath('skills/payload', 'SKILL.md')).toBe('skills/payload')
     expect(skillPath('skills/payload', 'reference/ACCESS-CONTROL.md')).toBe('skills/payload/access-control')
   })

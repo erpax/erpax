@@ -156,7 +156,9 @@ if (import.meta.url === `file://${process.argv[1]}`) {
  */
 export const nibbleSum32 = (v: number): number => {
   const bytes = (v & 0x0f0f0f0f) + ((v >>> 4) & 0x0f0f0f0f)
-  return Math.imul(bytes, 0x01010101) >>> 24
+  // A plain multiply is exact here: bytes ≤ 0x1E1E1E1E, so the product is below 2^53, and `>>> 24`
+  // reads its low 32 bits — the same bits a 32-bit integer multiply keeps. No call in the hot loop.
+  return (bytes * 0x01010101) >>> 24
 }
 
 /**

@@ -77,7 +77,7 @@ export async function declaredPresets(): Promise<Preset[]> {
 }
 
 /** The key under which the request's hook context records that the saved lists were loaded. */
-export const PRESETS_SEEDED = 'presetsSeeded'
+export const presetsSeededKey = (): string => 'presetsSeeded'
 
 /**
  * After a tenant is CREATED: load the saved lists that are not there yet. It passes `req`, so the
@@ -86,8 +86,8 @@ export const PRESETS_SEEDED = 'presetsSeeded'
  * deployment this hook exists to prevent.
  */
 export const seedPresets: CollectionAfterChangeHook = async ({ doc, operation, req, context }) => {
-  if (operation !== 'create' || context[PRESETS_SEEDED]) return doc
-  context[PRESETS_SEEDED] = true
+  if (operation !== 'create' || context[presetsSeededKey()]) return doc
+  context[presetsSeededKey()] = true
   await loadPresets(req.payload, await declaredPresets(), req)
   return doc
 }

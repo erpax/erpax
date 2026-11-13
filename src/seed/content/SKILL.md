@@ -11,7 +11,6 @@ typography:
   partition: seed
   bondDegree: 120
 standards:
-  - "CommonMark 0.31 markdown wire-form"
   - "ISO-15836-1:2017 dublin-core title description"
 bindings: []
 signatures:
@@ -95,7 +94,6 @@ collection to add or a page to pre-render.**
 
 ## Standards
 
-- **CommonMark 0.31** — the markdown wire form.
 - **ISO/IEC 25010:2023 §5.6** — maintainability: content changes without a rebuild.
 
 Composes: [[seed]] · [[rules]]/canonical · [[posts]] · [[law]].

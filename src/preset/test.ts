@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { PRESETS_SEEDED, declaredPresets, loadPresets, preset, seedPresets } from '@/preset'
+import { presetsSeededKey, declaredPresets, loadPresets, preset, seedPresets } from '@/preset'
 
 describe('preset — a saved list is a row', () => {
   const p = preset('Quotes', 'sales-orders', { status: { in: ['sent'] } }, ['orderNumber', 'status'])
@@ -53,13 +53,13 @@ describe('preset — a deployment loads its own saved lists', () => {
     expect(await seedPresets({ doc, operation: 'create', req, context } as never)).toBe(doc)
     expect(rows.length).toBe((await declaredPresets()).length)
     expect(seen.every((r) => r === req)).toBe(true)
-    expect(context[PRESETS_SEEDED]).toBe(true)
+    expect(context[presetsSeededKey()]).toBe(true)
   })
 
   it('does nothing on an update, and nothing a second time in one request', async () => {
     const { payload, rows } = fake()
     await seedPresets({ doc: {}, operation: 'update', req: { payload }, context: {} } as never)
-    await seedPresets({ doc: {}, operation: 'create', req: { payload }, context: { [PRESETS_SEEDED]: true } } as never)
+    await seedPresets({ doc: {}, operation: 'create', req: { payload }, context: { [presetsSeededKey()]: true } } as never)
     expect(rows).toHaveLength(0)
   })
 

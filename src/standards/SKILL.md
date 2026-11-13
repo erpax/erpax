@@ -72,7 +72,7 @@ Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
 <!-- CATALOGUE:START -->
 
-## Catalogue — 159 standards, 6660 citations
+## Catalogue — 159 standards, 6659 citations
 
 <!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->
 
@@ -88,7 +88,7 @@ inline HTML that renders as a coloured dot.
 | --- | ---: | ---: | --- |
 | en | 1 | 129 | `EN-16931` · 129 |
 | etsi | 2 | 32 | `eIDAS` · 20 |
-| eu | 26 | 891 | `EU-Intrastat-Reg-2019/2152` · 350 |
+| eu | 26 | 890 | `EU-Intrastat-Reg-2019/2152` · 349 |
 | gdpr | 1 | 31 | `EU-2016/679` · 31 |
 | iec | 6 | 323 | `ISO/IEC-25010` · 201 |
 | ifrs | 20 | 206 | `IFRS-15` · 38 |
@@ -104,7 +104,7 @@ inline HTML that renders as a coloured dot.
 | us_gaap | 3 | 61 | `US-CTA-2021` · 38 |
 | w3c | 11 | 2151 | `schema.org` · 1983 |
 | wcag | 2 | 63 | `W3C-WAI-ARIA-1.2` · 33 |
-| **Σ** | **159** | **6660** | |
+| **Σ** | **159** | **6659** | |
 
 **Registered, awaiting citation: 104.** Known canonical standards the registry holds and
 no code cites yet — they seed as `proposed` and become cited as a domain grows. Listed in

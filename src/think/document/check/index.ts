@@ -51,7 +51,7 @@ export function checkLead(prompt: unknown): { readonly ok: true; readonly lead: 
 }
 
 /** The key under which the request's hook context records that the lead check ran. */
-export const LEAD_CHECKED = 'leadChecked'
+export const leadCheckedKey = (): string => 'leadChecked'
 
 /** True for a page that is a lead: it lives under the `leads` page. */
 export const isLeadSlug = (slug: unknown): slug is string => typeof slug === 'string' && slug.startsWith('leads-')
@@ -63,11 +63,11 @@ export const isLeadSlug = (slug: unknown): slug is string => typeof slug === 'st
  */
 export const checkLeadPage: CollectionBeforeValidateHook = ({ data, originalDoc, context }) => {
   const before = (originalDoc ?? {}) as { slug?: unknown; title?: unknown; meta?: { description?: unknown } }
-  if (!isLeadSlug(data?.slug ?? before.slug) || context[LEAD_CHECKED]) return data
+  if (!isLeadSlug(data?.slug ?? before.slug) || context[leadCheckedKey()]) return data
   const meta = (data?.meta ?? before.meta) as { description?: unknown } | undefined
   const text = typeof meta?.description === 'string' && meta.description.trim() ? meta.description : (data?.title ?? before.title)
   const checked = checkLead(text)
   if (!checked.ok) throw new APIError(`Not a lead: ${checked.reason}.`, 400)
-  context[LEAD_CHECKED] = true
+  context[leadCheckedKey()] = true
   return data
 }

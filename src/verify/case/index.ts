@@ -14,8 +14,6 @@
  *
  * @invariant a theorem shown on a page is one the kernel reported, with the axioms it reported
  * @invariant a document citing no Lean file is shown as having no formal proof, never as proved
- * @standard ISO/IEC/IEEE-15026-2:2022 assurance-case claim argument evidence assumptions
- * @standard ISO-80000-2:2019 mathematical-signs-and-symbols
  * @see ./SKILL.md
  */
 import { existsSync, readFileSync } from 'node:fs'

@@ -2597,8 +2597,7 @@ src/security/header/headers/test.ts:9: * @standard OWASP-ASVS V14 configuration
 src/security/header/index.ts:5: * @standard W3C CSP-3
 src/security/header/index.ts:6: * @standard W3C Permissions-Policy
 src/security/remote/access/index.ts:19: * @standard NIST SP 800-162 ABAC · NIST SP 800-107r1 §5.1 · CWE-59
-src/seed/content/index.ts:21: * @standard CommonMark 0.31 markdown wire-form
-src/seed/content/index.ts:22: * @standard ISO-15836-1:2017 dublin-core title description
+src/seed/content/index.ts:21: * @standard ISO-15836-1:2017 dublin-core title description
 src/seed/erpax-product-pages.ts:31: * @standard schema.org Product
 src/seed/erpax-product-pages.ts:32: * @standard schema.org WebSite breadcrumb
 src/seed/erpax-product-pages.ts:33: * @standard ISO-25010 usability marketing-content
@@ -2861,7 +2860,7 @@ src/team/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/teller/index.ts:10: * @standard ECB — euro legal tender denominations
 src/teller/index.ts:11: * @standard ISA 501 — physical count as audit evidence
 src/teller/index.ts:9: * @standard ISO 4217 — EUR, minor units
-src/temperature/index.ts:14: * @standard SI-2019 k_B (via ../boltzmann); Maxwell–Boltzmann statistics
+src/temperature/index.ts:15: * @standard SI-2019 k_B (via ../boltzmann); Maxwell–Boltzmann statistics
 src/tenant/context/index.ts:37: * @standard ISO-3166-1:2020 country-codes alpha-2 cascade-source
 src/tenant/context/index.ts:38: * @standard ISO-4217:2015 currency-codes alphabetic cascade-source
 src/tenant/context/index.ts:39: * @standard BCP-47 language-tag locale-cascade
@@ -3129,8 +3128,6 @@ src/vendors/vendor/scorecards/index.ts:10: * @standard ISO 9001:2015 §8.4.1 eva
 src/vendors/vendor/scorecards/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/vendors/vendor/scorecards/index.ts:9: * @standard ISO 9001:2015 §8.4 control-of-externally-provided-processes
 src/verification/index.ts:13: * @standard RFC 8555 §8.4 (ACME DNS-01: the record value is a digest of the key authorization)
-src/verify/case/index.ts:17: * @standard ISO/IEC/IEEE-15026-2:2022 assurance-case claim argument evidence assumptions
-src/verify/case/index.ts:18: * @standard ISO-80000-2:2019 mathematical-signs-and-symbols
 src/verify/latex/index.ts:12: * @standard ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
 src/version/index.ts:16: * @standard SemVer 2.0.0 — `MAJOR.MINOR.PATCH+<build-metadata>` (the corpus-uuid is build metadata)
 src/versions/cross/index.ts:23: * @standard RFC 9562 §5.8 uuidv8 (the content-addressed version id)
@@ -6279,7 +6276,7 @@ src/tamper/cost/index.ts:55: * @audit Conservation Law 62 (coverage) enlarged by
 src/tamper/import/index.ts:16: * @audit imports read from source; an index import resolves to a dir carrying index.ts, a deep one to a file
 src/tax/jurisdictions/deferred/tax/items/index.ts:19: * @audit ISO 19011:2018 §6.4.6 audit-evidence-deferred-tax
 src/tax/jurisdictions/tax/returns/index.ts:9: * @audit ISO-19011:2018 audit-trail tax-filing-evidence
-src/temperature/index.ts:15: * @audit Boltzmann factor e^(−E/kT), partition Z=Σe^(−Eₙ/kT), distribution pᵢ -- computed
+src/temperature/index.ts:16: * @audit Boltzmann factor e^(−E/kT), partition Z=Σe^(−Eₙ/kT), distribution pᵢ -- computed
 src/tenant/context/index.ts:45: * @audit ISO-19011:2018 audit-trail config-cascade-resolution
 src/tenant/index.ts:10: * @audit re-exports only; the truth lives in ./remote/secret
 src/tenant/role/types.ts:16: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability

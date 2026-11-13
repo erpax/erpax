@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { LEAD_CHECKED, checkLead, checkLeadPage, conditionOf, isLeadSlug, subjectOf } from '@/think/document/check'
+import { leadCheckedKey, checkLead, checkLeadPage, conditionOf, isLeadSlug, subjectOf } from '@/think/document/check'
 
 const run = (args: Record<string, unknown>) => checkLeadPage({ context: {}, ...args } as never)
 
@@ -21,7 +21,7 @@ describe('think/document/check — Payload runs the check where the page is save
     const data = { slug: 'pricing', title: 'x' }
     const context: Record<string, unknown> = {}
     expect(await checkLeadPage({ data, context } as never)).toBe(data)
-    expect(context[LEAD_CHECKED]).toBeUndefined()
+    expect(context[leadCheckedKey()]).toBeUndefined()
     expect(isLeadSlug('leads')).toBe(false)
   })
 
@@ -29,7 +29,7 @@ describe('think/document/check — Payload runs the check where the page is save
     const context: Record<string, unknown> = {}
     const data = { slug: 'leads-drop-the-tables-1234abcd', title: 'Drop', meta: { description: 'drop the four tables left behind' } }
     expect(await checkLeadPage({ data, context } as never)).toBe(data)
-    expect(context[LEAD_CHECKED]).toBe(true)
+    expect(context[leadCheckedKey()]).toBe(true)
   })
 
   it('refuses a lead that does not, with the reason', async () => {
@@ -39,6 +39,6 @@ describe('think/document/check — Payload runs the check where the page is save
 
   it('judges a partial update by the stored document, and checks once per request', async () => {
     expect(() => run({ data: { title: 'no' }, originalDoc: { slug: 'leads-x-1', title: 'old' } })).toThrow(/Not a lead/)
-    expect(await run({ data: { title: 'no' }, originalDoc: { slug: 'leads-x-1' }, context: { [LEAD_CHECKED]: true } })).toEqual({ title: 'no' })
+    expect(await run({ data: { title: 'no' }, originalDoc: { slug: 'leads-x-1' }, context: { [leadCheckedKey()]: true } })).toEqual({ title: 'no' })
   })
 })

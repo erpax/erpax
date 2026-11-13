@@ -20,7 +20,7 @@ import { pathToFileURL } from 'node:url'
 import { pageRows, slugOf, type PageRow } from '@/seed/content'
 
 /** Where the skill tree hangs in the page tree. */
-export const skillRoot = (name: string): string => `skills/${name}`
+export const skillHome = (name: string): string => `skills/${name}`
 
 /** `reference/QUERIES.md` → `skills/payload/queries`; `SKILL.md` → `skills/payload`. */
 export function skillPath(root: string, file: string): string {
@@ -40,7 +40,7 @@ export function relink(root: string, markdown: string): string {
  * this project adds beside the references (`extra`, keyed by leaf name).
  */
 export function skillRows(name: string, files: Readonly<Record<string, string>>, extra: Readonly<Record<string, string>> = {}): PageRow[] {
-  const root = skillRoot(name)
+  const root = skillHome(name)
   const bodies = new Map<string, string>([['skills', `# Skills\n\nInstalled skills and this project's extensions of them, one page each.`]])
   for (const [file, markdown] of Object.entries(files)) bodies.set(skillPath(root, file), relink(root, markdown))
   for (const [leaf, markdown] of Object.entries(extra)) bodies.set(`${root}/${leaf}`, relink(root, markdown))
