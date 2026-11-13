@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "standards",
-    "uuid": "18b169cb-4b61-88d3-be65-dbe08acc4330",
+    "uuid": "f65c4f04-8fe6-88dd-8b06-459455a16bfc",
     "words": [
       "standards"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about standards — Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats.",
-    "uuid": "0344c565-405f-8c81-a302-d7dc7ab9f336",
+    "uuid": "29c7dbeb-bc31-8c4e-8770-007f5cfb6592",
     "words": [
       "use",
       "when",
