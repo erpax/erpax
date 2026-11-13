@@ -9,7 +9,8 @@ import { wherePublishedAnd } from '@/scope'
  *
  * Authenticated: full read subject to `@payloadcms/plugin-multi-tenant`
  * scoping. Anonymous: only rows whose tenant has `allowPublicRead = true`.
- * Blocks cross-tenant enumeration via open REST/GraphQL.
+ * Blocks cross-tenant enumeration via open REST/GraphQL. With no public tenant the filter is an
+ * empty `in`, which matches nothing: an anonymous list is EMPTY, never a refusal a page must catch.
  *
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @security ISO-27002 §5.15 access-control
@@ -37,8 +38,6 @@ export const tenantScopedCollectionReadAccess: Access = async ({ req }) => {
   }
 
   const ids = await getAllowPublicReadTenantIds(req.payload)
-  if (ids.length === 0) return false
-
   return {
     tenant: {
       in: ids,
@@ -59,8 +58,6 @@ export const tenantScopedPostsReadAccess: Access = async ({ req }) => {
   }
 
   const ids = await getAllowPublicReadTenantIds(req.payload)
-  if (ids.length === 0) return false
-
   return wherePublishedAnd({
     tenant: {
       in: ids,

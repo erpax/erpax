@@ -4179,8 +4179,8 @@ src/tenant/remote/secret/index.ts:10: * @compliance PCI-DSS-4.0 §3.2 tokenized-
 src/tenant/remote/secret/index.ts:11: * @compliance GDPR Art.32 security-of-processing
 src/tenant/scoped/read/index.test.ts:10: * @compliance SOC-2 CC6.1 logical-access-controls
 src/tenant/scoped/read/index.test.ts:9: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
-src/tenant/scoped/read/index.ts:17: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
-src/tenant/scoped/read/index.ts:18: * @compliance SOC-2 CC6.1 logical-access-controls
+src/tenant/scoped/read/index.ts:18: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
+src/tenant/scoped/read/index.ts:19: * @compliance SOC-2 CC6.1 logical-access-controls
 src/tenant/service/index.ts:13: * @compliance GDPR Art.28 processor
 src/tenant/service/index.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
 src/tenants/access/updateAndDelete.ts:12: * @compliance GDPR Art.28 processor-controls
@@ -5422,9 +5422,9 @@ src/tenant/remote/secret/index.ts:9: * @security ISO-27002 §8.24 use-of-cryptog
 src/tenant/scoped/read/index.test.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/tenant/scoped/read/index.test.ts:7: * @security ISO-27002 §5.15 access-control
 src/tenant/scoped/read/index.test.ts:8: * @security ISO-27002 §8.3 information-access-restriction
-src/tenant/scoped/read/index.ts:14: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/tenant/scoped/read/index.ts:15: * @security ISO-27002 §5.15 access-control
-src/tenant/scoped/read/index.ts:16: * @security ISO-27002 §8.3 information-access-restriction
+src/tenant/scoped/read/index.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/tenant/scoped/read/index.ts:16: * @security ISO-27002 §5.15 access-control
+src/tenant/scoped/read/index.ts:17: * @security ISO-27002 §8.3 information-access-restriction
 src/tenant/service/index.ts:10: * @security ISO-27001 A.5.23 information-security-for-cloud-services
 src/tenant/service/index.ts:11: * @security ISO-27002 §5.15 access-control
 src/tenant/service/index.ts:12: * @security ISO-27002 §8.30 outsourced-development

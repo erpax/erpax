@@ -42,9 +42,9 @@ describe('tenantScopedRead access', () => {
       await expect(tenantScopedCollectionReadAccess({ req: authReq })).resolves.toBe(true)
     })
 
-    it('denies anonymous when no public-read tenants', async () => {
+    it('matches nothing for anonymous when no public-read tenants — an empty list, not a refusal', async () => {
       getAllowPublicReadTenantIds.mockResolvedValueOnce([])
-      await expect(tenantScopedCollectionReadAccess({ req: anonReq })).resolves.toBe(false)
+      await expect(tenantScopedCollectionReadAccess({ req: anonReq })).resolves.toEqual({ tenant: { in: [] } })
     })
 
     it('scopes anonymous reads to public tenants', async () => {
@@ -60,9 +60,11 @@ describe('tenantScopedRead access', () => {
       await expect(tenantScopedPostsReadAccess({ req: authReq })).resolves.toBe(true)
     })
 
-    it('denies anonymous when no public-read tenants', async () => {
+    it('matches nothing for anonymous when no public-read tenants — an empty list, not a refusal', async () => {
       getAllowPublicReadTenantIds.mockResolvedValueOnce([])
-      await expect(tenantScopedPostsReadAccess({ req: anonReq })).resolves.toBe(false)
+      await expect(tenantScopedPostsReadAccess({ req: anonReq })).resolves.toEqual({
+        and: [wherePublished, { tenant: { in: [] } }],
+      })
     })
 
     it('requires published + tenant for anonymous', async () => {
