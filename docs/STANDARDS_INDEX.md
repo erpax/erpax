@@ -1848,7 +1848,7 @@ src/jobs/salesAuditFileJob.test.ts:5: * @standard BG Наредба-Н-18 §Пр
 src/journal/entries/gl/postings/index.ts:33: * @standard ISO-8601-1:2019 date-time posted-date
 src/journal/entries/hooks/balanced.ts:21: * @standard ECMA-262 ECMAScript-2024 baseline
 src/journal/entries/hooks/balanced.ts:22: * @standard IEEE-754-2019 binary-floating-point integer-cents-only
-src/journal/entries/index.ts:29: * @standard ISO-8601-1:2019 date-time entry-date posted-date approval-date
+src/journal/entries/index.ts:30: * @standard ISO-8601-1:2019 date-time entry-date posted-date approval-date
 src/journal/entries/rounding/adjustments/index.ts:10: * @standard ISO-4217:2015 currency-codes from-to-currency-pair
 src/journal/entries/rounding/adjustments/index.ts:11: * @standard ISO-8601-1:2019 date-time adjustment-date
 src/journal/entry/service/index.ts:12: * @standard ISO-8601-1:2019 date-time entry-date posted-date
@@ -4030,7 +4030,7 @@ src/jobs/dunning/job/index.ts:19: * @compliance GDPR Art.6(1)(b) lawful-basis-co
 src/jobs/dunningJob.test.ts:12: * @compliance SOX §404 internal-controls
 src/journal/entries/gl/postings/index.ts:37: * @compliance SOX §404 internal-controls
 src/journal/entries/hooks/balanced.ts:27: * @compliance SOX §404 internal-controls
-src/journal/entries/index.ts:34: * @compliance SOX §404 internal-controls
+src/journal/entries/index.ts:35: * @compliance SOX §404 internal-controls
 src/journal/entries/rounding/adjustments/index.ts:16: * @compliance SOX §404 internal-controls rounding-control TOM-RND-01
 src/journal/entry/service/index.ts:18: * @compliance SOX §404 internal-controls
 src/leads/index.ts:13: * @compliance GDPR Art.5 data-minimisation
@@ -4693,9 +4693,10 @@ src/journal/entries/gl/postings/index.ts:35: * @accounting OECD SAF-T §3 transa
 src/journal/entries/hooks/balanced.ts:23: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/journal/entries/hooks/balanced.ts:24: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 src/journal/entries/hooks/balanced.ts:25: * @accounting OECD SAF-T §3 journal-entries
-src/journal/entries/index.ts:30: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/journal/entries/index.ts:31: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
-src/journal/entries/index.ts:32: * @accounting OECD SAF-T §3 journal-entries
+src/journal/entries/index.ts:31: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/journal/entries/index.ts:32: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
+src/journal/entries/index.ts:33: * @accounting OECD SAF-T §3 journal-entries
+src/journal/entries/posting/index.ts:18: * @accounting double-entry bookkeeping — the posting inherits the entry's balance, it cannot break it
 src/journal/entries/rounding/adjustments/index.ts:12: * @accounting IFRS IAS-1 §51(e) level-of-rounding-disclosure
 src/journal/entries/rounding/adjustments/index.ts:13: * @accounting IFRS IAS-21 §39 foreign-currency-translation
 src/journal/entries/rounding/adjustments/index.ts:14: * @accounting US-GAAP ASC-205-10-45 presentation-rounding
@@ -5260,8 +5261,8 @@ src/items/purchase/orders/goods/receipts/index.ts:29: * @security ISO-27002 §5.
 src/items/purchase/orders/index.ts:46: * @security ISO-27002 §5.4 segregation-of-duties requester-vs-approver
 src/items/quality/inspections/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/journal/entries/gl/postings/index.ts:38: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/journal/entries/index.ts:35: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/journal/entries/index.ts:36: * @security ISO-27002 §5.4 segregation-of-duties
+src/journal/entries/index.ts:36: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/journal/entries/index.ts:37: * @security ISO-27002 §5.4 segregation-of-duties
 src/journal/entries/rounding/adjustments/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/journal/entry/service/index.ts:19: * @security ISO-27002 §5.4 segregation-of-duties
 src/leads/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -6020,7 +6021,7 @@ src/jobs/dunning/job/index.ts:17: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/journal/entries/gl/postings/index.ts:36: * @audit ISO-19011:2018 audit-trail
 src/journal/entries/hooks/balanced.ts:26: * @audit ISO-19011:2018 audit-trail double-entry-invariant
-src/journal/entries/index.ts:33: * @audit ISO-19011:2018 audit-trail
+src/journal/entries/index.ts:34: * @audit ISO-19011:2018 audit-trail
 src/journal/entries/rounding/adjustments/index.ts:15: * @audit ISO-19011:2018 audit-trail rounding-evidence
 src/journal/entry/service/index.ts:17: * @audit ISO-19011:2018 audit-trail
 src/karma/index.ts:14: * @audit composed from @/entry (the double-entry); the balance is computed, never hand-asserted

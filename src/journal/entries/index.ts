@@ -1,4 +1,5 @@
-import type { Access, CollectionBeforeChangeHook, CollectionConfig } from 'payload'
+import type { Access, CollectionAfterChangeHook, CollectionBeforeChangeHook, CollectionConfig } from 'payload'
+import { derivePosting } from '@/journal/entries/posting'
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { autoPopulateCreatedBy } from '@/auto/populate/created/by'
 import { autoSetTimestamp } from '@/auto/set/timestamp'
@@ -161,7 +162,8 @@ const JournalEntries: CollectionConfig = {
       autoSetTimestamp('postedDate', (data) => (data as { status?: string }).status === 'posted'),
       autoSetTimestamp('approvedAt', (data) => Boolean((data as { approvedBy?: unknown }).approvedBy)),
     ],
-    afterChange: [auditTrailAfterChange('journal-entries')],
+    // The ledger posting restates the entry, so the entry writes it — see ./posting.
+    afterChange: [auditTrailAfterChange('journal-entries'), derivePosting as CollectionAfterChangeHook],
   },
   timestamps: true,
 }
