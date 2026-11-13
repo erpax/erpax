@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about ligament — A short band of tough, flexible, fibrous connective tissue that functions to connect multiple bones, cartilages, and structurally support joints.",
-    "uuid": "7235039f-491d-8119-bd11-41e48609eab0",
+    "uuid": "0b9a1469-6516-8932-927e-e0756f80af21",
     "words": [
       "use",
       "when",

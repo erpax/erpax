@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when receiving finished goods from an internal manufacturing work order into inventory — absorbed cost (material/labour/overhead), lot/serial tracking, target warehouse, and IAS-2 §10 cost-of-conversion booking. The produced-inventory receipt record — distinct from vendor goods receipts.",
-    "uuid": "ddefeb7d-b6ab-829c-936e-9192a98e90d1",
+    "uuid": "eca04032-3ac9-82cc-b273-30f7c5d016a5",
     "words": [
       "use",
       "when",

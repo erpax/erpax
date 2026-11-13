@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about room — A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/w",
-    "uuid": "d232b43d-414c-8ad2-a53a-e96f198fd005",
+    "uuid": "f9a809df-dbd4-8082-b99e-ea7aa736d7e5",
     "words": [
       "use",
       "when",

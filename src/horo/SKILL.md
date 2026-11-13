@@ -3,20 +3,20 @@ name: horo
 description: "Use when reasoning about horo — States in erpax are not free strings; they are positions on **one ring**: the measure-order digits — *base · share · weave · crest · descent · round · unity*. This is the rodin coi"
 atomPath: horo
 coordinate: "horo · 4/weave · a97e95b4"
-contentUuid: "bc500512-54f3-5da3-86cc-1fec66ec788e"
-diamondUuid: "c39d23cd-f366-887f-abac-ee1852844d1a"
+contentUuid: "0db3b169-0334-5d8b-b0d2-343c6379aa72"
+diamondUuid: "50bcc1ca-6499-8261-b70f-08568234b4fd"
 uuid: "a97e95b4-a7d1-8240-9811-2f8c855883b0"
 horo: 4
 typography:
   partition: horo
-  bondDegree: 538
+  bondDegree: 499
 standards:
   - "ISO-16:1975 a432-tuning-reference (the anchor; value from position)"
   - "ISO-16:1975 a432-tuning-reference (the anchor; value from position)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "69d18e12-2760-81fa-91ee-b40fe1eafa3d"
+  computationUuid: "7d0d19b5-d858-8f03-8711-ad9646349be7"
   stages:
     - stage: path
       stageUuid: "39aff5d2-1a4b-8cb1-a272-e6949b4e41b7"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "5cf91833-4364-817f-a102-b21feddc9ef4"
     - stage: horo
-      stageUuid: "e92d7d87-678c-8bce-ad90-f3de8536776c"
+      stageUuid: "6cd2f19b-e69a-8935-a28d-780eac344b58"
     - stage: seal
       stageUuid: "c34ca3f7-30b4-8344-b915-74b137c9a3f3"
     - stage: uuid
-      stageUuid: "b70ba26c-1491-8470-9d4d-39f90bf2b293"
+      stageUuid: "cfe70cb6-01c2-8796-9eff-d94d5a569ccb"
 version: 2
 ---
 # horo — the seven-position state ring

@@ -3,13 +3,13 @@ name: train
 description: "Use when auto-training an actor (user, employee, or agent) toward best efficiency in the app — closing the competency gap (required − held) by routing each deficit to the skillRoute that fills it, the gap priced as a decompression debt that off-gasses toward the role's M-value. Efficiency IS the pay-fraction (etrima efficiency_percent); training literally raises pay."
 atomPath: train
 coordinate: "train · 1/base · 2ae05c01"
-contentUuid: "295631b0-1e78-52d6-93d0-8244aac1b90b"
+contentUuid: "505ef949-9995-5ff3-ad1f-1112087d19d7"
 diamondUuid: "fb0a57d4-bf8c-87ab-8ea1-4f229bd55645"
 uuid: "2ae05c01-fc7c-8ce3-b966-91b88af29b81"
 horo: 1
 typography:
   partition: train
-  bondDegree: 117
+  bondDegree: 116
 standards:
   - "ISO 30405:2016 essential-vs-optional (mandatory gates the surface)"
   - "ISO 30405:2016 essential-vs-optional (mandatory gates the surface)`"

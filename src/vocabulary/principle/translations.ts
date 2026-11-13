@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one principle — the singular model of the principles collection (the plural store); a foundational rule that governs conduct or design.",
-    "uuid": "ae1848b6-2489-83a2-9387-fcc04ab837be",
+    "uuid": "19085e10-5868-860b-b38f-529d8915624c",
     "words": [
       "use",
       "when",

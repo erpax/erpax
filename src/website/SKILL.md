@@ -3,7 +3,7 @@ name: website
 description: "Use when the society must be SEEN, heard, and felt — auto-seeding Payload's pages from the spec corpus, the e2e multimedia walkthroughs, and federation peers; the perceptible outward face of the content-addressed record."
 atomPath: website
 coordinate: "website · 4/weave · f5eb5c25"
-contentUuid: "b8a86519-c38e-5fb8-9a66-3f285dc30720"
+contentUuid: "9f594be8-3e84-5e2f-b841-80e38684bbaf"
 diamondUuid: "9d4fbce4-0ccc-8964-b16a-cf0816f17052"
 uuid: "f5eb5c25-0b81-8ba0-9c15-21c845fd178f"
 horo: 4
@@ -16,6 +16,8 @@ standards:
   - W3C HTML5 § sectioning + WCAG 2.2 §1.4.3
   - "W3C HTML5 § sectioning + WCAG 2.2 §1.4.3`"
   - "W3C-JSON-LD-1.1"
+  - "W3C-WAI-ARIA-1.2"
+  - "WCAG-2.1"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

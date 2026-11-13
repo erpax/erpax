@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about whether a collapsed state can be undone — finality is the conjugate of speed, the master axis the payment rails revealed; reversible holds a superposition with a compensating path (love), final posts one tamper-anchored entry whose only recourse is a governance judgment (fear).",
-    "uuid": "02eb914b-352f-8d01-a51c-84d435deec00",
+    "uuid": "aa8644f5-fac7-8e0c-8deb-fc81ac22a3fd",
     "words": [
       "use",
       "when",

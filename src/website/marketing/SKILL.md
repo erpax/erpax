@@ -3,7 +3,7 @@ name: marketing
 description: "Use when reasoning about marketing — Every other surface here answers to a gate. A published page answers to a reader who **cannot check it** — no , no wave, no ratchet — which makes it the most exposed place an…"
 atomPath: "website/marketing"
 coordinate: "website/marketing · 8/crest · 5faa8ce7"
-contentUuid: "9756fffa-0aa0-5361-ae4c-1754bb349579"
+contentUuid: "17512f9c-ba5f-51f0-a805-3b5e97305f09"
 diamondUuid: "ff894387-4812-8d67-b1ea-12a272d8aa12"
 uuid: "5faa8ce7-0566-8009-9fcf-71a8260eefdb"
 horo: 8
@@ -15,6 +15,7 @@ standards:
   - Open Graph protocol (Facebook 2010+) + Twitter Cards
   - Schema.org WebPage + Article + SoftwareApplication
   - W3C HTML5 §4 sectioning + WCAG 2.2 §1.4.3 contrast
+  - "WCAG-2.1"
   - "declarations — risks ungrounded claims',"
 bindings: []
 signatures:

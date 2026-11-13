@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring a person's body — biometric is the sharpest device measurement, serving identity (who you are) and health (your state) at once; privacy-by-design demands it stays on the edge, so the raw signal never leaves the device, only a derived uuid or a signed assertion does.",
-    "uuid": "835e33bb-0c1f-8126-b0d5-f436ae54b131",
+    "uuid": "2fcf9cc5-ce1b-8562-8ef5-a0e9e07c519f",
     "words": [
       "use",
       "when",

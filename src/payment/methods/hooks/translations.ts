@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — Every hook sibling is re-exported here, so a collection writes rather than naming each file.",
-    "uuid": "571fe751-0c4c-8d1d-89b5-89b863f9933a",
+    "uuid": "2fa4eb8d-2604-81d4-a2c1-2557604571d9",
     "words": [
       "use",
       "when",

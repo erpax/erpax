@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a two-fold pair completes to a third in the forge — expand ⊕ collide revealing their synthesis once both poles are present; the trinity emerging, computed from the poles not authored.",
-    "uuid": "ad885ba3-b357-80b8-9acd-5aef90fbc0f8",
+    "uuid": "75979bfd-3c56-81d4-9e40-3b378512b6c6",
     "words": [
       "use",
       "when",

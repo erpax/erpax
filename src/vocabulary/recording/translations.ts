@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about recording — The composition this track is a recording of.",
-    "uuid": "dbf57353-51ba-811a-a7c2-13c9694ca496",
+    "uuid": "713c57b5-3be6-8978-92a7-4ca3370722ba",
     "words": [
       "use",
       "when",

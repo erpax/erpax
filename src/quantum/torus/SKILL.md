@@ -3,18 +3,18 @@ name: torus
 description: "Use when every superposition the gate basis can reach must be enumerated rather than sampled — the finite real-Clifford orbit on exact amplitudes, the 4 × 4 double torus of two-qubit product states with the entangled states off it, and every referrer of the register asked to agree with each discovered state from its own standard's perspective."
 atomPath: "quantum/torus"
 coordinate: "quantum/torus · 1/base · 2b5ecab8"
-contentUuid: "5dc3e557-af3f-54f3-b00a-d960cd0cb761"
-diamondUuid: "a8d02949-399f-8752-932d-071f9a7ef1e6"
+contentUuid: "b6d2ab85-13bc-535d-a53e-b190aa746cff"
+diamondUuid: "48c06f1d-5fba-8384-b9ec-0fcfd8676aef"
 uuid: "2b5ecab8-193d-8924-b58d-67b2049b0e86"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 213
+  bondDegree: 210
 standards:
   - "Nielsen & Chuang §10.5 — stabilizer states; the real Clifford group is finite"
 bindings: []
 signatures:
-  computationUuid: "ad0be464-6c6f-80a7-b186-25fd1ed29239"
+  computationUuid: "4b079533-9cbd-8840-bcc0-a42ff3ff3bbf"
   stages:
     - stage: path
       stageUuid: "33b24bcd-87ae-86e9-9e94-c8c58cf8003b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "05a5743a-0328-8509-bd8c-8b14cfab8677"
     - stage: horo
-      stageUuid: "1c2ee3e5-46c2-8bd3-a35f-2458e9db2724"
+      stageUuid: "9dd0a7fe-5613-81ab-8bcf-35d6459ce7e6"
     - stage: seal
       stageUuid: "cf59efee-831b-8d75-a18c-b156346ffb3c"
     - stage: uuid
-      stageUuid: "1ba6762b-6b9d-8ad1-8a9e-6e140ae0a99f"
+      stageUuid: "cf26dff0-1420-81f9-9b1c-67ef00f23402"
 quantum:
   superposition:
     - access
@@ -50,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "ad0be464-6c6f-80a7-b186-25fd1ed29239"
-    contentUuid: "5dc3e557-af3f-54f3-b00a-d960cd0cb761"
+    computationUuid: "4b079533-9cbd-8840-bcc0-a42ff3ff3bbf"
+    contentUuid: "b6d2ab85-13bc-535d-a53e-b190aa746cff"
 version: 2
 ---
 # quantum/torus — every superposition discovered, and the double torus they live on
@@ -104,4 +104,4 @@ cites — one state no referrer disagrees with is a claim; a whole orbit none di
 
 Composes: [[quantum]]/register · [[dual/torus/fusion]] · [[rules]]/citation · [[superposition]] · [[law]].
 
-<sub>content-uuid `5dc3e557-af3f-54f3-b00a-d960cd0cb761` · account `quantum/torus` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `b6d2ab85-13bc-535d-a53e-b190aa746cff` · account `quantum/torus` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

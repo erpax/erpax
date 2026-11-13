@@ -3,20 +3,20 @@ name: post
 description: "Use when reasoning about post as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: post
 coordinate: "post · 4/weave · b66d8388"
-contentUuid: "4aa29231-ffa5-5b6e-b23b-f8999284006c"
-diamondUuid: "e58036d5-7434-819d-8cea-63eed013e943"
+contentUuid: "1fc4091f-450b-5f57-bd90-718053cfae38"
+diamondUuid: "fa23ba87-1cde-86c9-91f1-78412c135cc1"
 uuid: "b66d8388-7f63-8c91-b4ae-0280f75327ae"
 horo: 4
 typography:
   partition: post
-  bondDegree: 38
+  bondDegree: 35
 standards:
   - "IAS-1"
   - "IAS-34"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "edad0071-8cac-8a21-95d8-ebe1e68dd0be"
+  computationUuid: "5cf4e351-4209-8495-aff9-04e9c2af3319"
   stages:
     - stage: path
       stageUuid: "68b46ccf-8e11-8ada-988c-7cda11c1155c"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "b8124bba-3cc0-8b56-8f8d-5d808d501800"
     - stage: horo
-      stageUuid: "0b267c50-12f4-8ad6-8aac-32fffbda5867"
+      stageUuid: "1e4d1523-d9a1-85be-8dfa-a22f0680b5cc"
     - stage: seal
       stageUuid: "da55a60c-6833-84f8-bcac-cbee01d92541"
     - stage: uuid
-      stageUuid: "25da4d8d-8c2b-8f51-8f48-918fa7cb6a50"
+      stageUuid: "cbb4a74e-3e74-8a78-8037-9360a346f7d9"
 version: 2
 ---
 # post

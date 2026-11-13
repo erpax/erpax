@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the deliberate attunement of an atom to its source — the inward breath that tunes the self's harmony to zeropoint and merges its state toward the root. Not a request to an external operator but the alignment cycle by which a part re-references the whole.",
-    "uuid": "5ba82e23-9d7c-87f1-ba12-09849598bd01",
+    "uuid": "ffbf27dd-44a6-8b6f-a581-73c5c352a7b9",
     "words": [
       "use",
       "when",

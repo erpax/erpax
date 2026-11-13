@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about section — content-addressed the widget tree and found the same 48-node body **three times in ** and **three times in ** — a heading, a mapped list of account rows, and a total.",
-    "uuid": "1f3241a7-02a7-8bab-b4c4-957bee80282b",
+    "uuid": "e94ce189-38fa-8874-8046-beabe509dec4",
     "words": [
       "use",
       "when",

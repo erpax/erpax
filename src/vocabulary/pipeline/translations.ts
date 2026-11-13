@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking the progression of deals through sales stages — lead → qualified → proposal → negotiation → won/lost. The sales funnel state at each stage with value, probability, and close date.",
-    "uuid": "7223b202-e579-8f6b-83c0-b45518577868",
+    "uuid": "ac462c12-35df-864c-ab13-75962d5408a1",
     "words": [
       "use",
       "when",

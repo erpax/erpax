@@ -3,7 +3,7 @@ name: config
 description: "Use when reasoning about config — The Payload field configuration for a page hero: , , , ."
 atomPath: "hero/config"
 coordinate: "hero/config · 9/unity · 8565f384"
-contentUuid: "5148f094-1eaf-5e7d-95e7-638022c43394"
+contentUuid: "187f616f-4197-5af6-9f5b-a4dcfe2d213b"
 diamondUuid: "d9af515b-3feb-81b5-9c94-e25f6e194589"
 uuid: "8565f384-d69e-83c4-98ed-04d408bc09fe"
 horo: 9
@@ -13,6 +13,7 @@ typography:
 standards:
   - "W3C HTML5 section-element"
   - "W3C-HTML5"
+  - "W3C-WAI-ARIA-1.2"
   - "WAI-ARIA 1.2 region-landmark-role"
   - "WCAG-2.1 §1.4.3 contrast-minimum hero-overlay"
   - "WCAG-2.1 §2.4.6 headings-and-labels"

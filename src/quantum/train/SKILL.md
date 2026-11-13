@@ -3,13 +3,13 @@ name: train
 description: "Use when reasoning about training at the quantum scale — infinite agents train themselves yet cannot exceed the device, because content-addressing collapses identical work to one cached result; and zero-entropy reversible computation dissipates less, the 2/3 rodin working-ratio symbolic of that purification."
 atomPath: "quantum/train"
 coordinate: "quantum/train · 5/round · f1dc6305"
-contentUuid: "8575aa51-1fc8-58a9-8666-8df7f681d85a"
+contentUuid: "a7d3c5fa-f3fe-5e19-b351-e95049d1af68"
 diamondUuid: "cb11b799-6186-841b-b631-20573df28526"
 uuid: "f1dc6305-7ef5-8a8d-b5f3-147c113988a6"
 horo: 5
 typography:
   partition: quantum
-  bondDegree: 117
+  bondDegree: 116
 standards:
   - "Landauer's principle (kT·ln2 per erased bit) · Bennett reversible computing · RFC 9562 content-uuid"
 bindings: []
@@ -55,7 +55,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "4fe994d4-78ec-85d5-93c3-f2ac6646729b"
-    contentUuid: "8575aa51-1fc8-58a9-8666-8df7f681d85a"
+    contentUuid: "a7d3c5fa-f3fe-5e19-b351-e95049d1af68"
 version: 2
 ---
 # quantum/train — infinite agents, bounded device
@@ -81,4 +81,4 @@ Matter-twin: `src/quantum/train/index.ts` (`deviceCost` · `exceedsDevice` · `r
 @audit the agent-count bound is the merge/cache law (computed); the 2/3 is the rodin ratio, marked symbolic
 @standard Landauer's principle (kT·ln2 per erased bit) · Bennett reversible computing · RFC 9562 content-uuid
 
-<sub>content-uuid `8575aa51-1fc8-58a9-8666-8df7f681d85a` · account `quantum/train` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `a7d3c5fa-f3fe-5e19-b351-e95049d1af68` · account `quantum/train` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

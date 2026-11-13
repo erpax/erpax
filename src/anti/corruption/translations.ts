@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable.",
-    "uuid": "ed5c9441-75c1-84c8-89f2-a6e5e38d3ef2",
+    "uuid": "c14c8831-4256-8d10-ab85-8374cc5d08ab",
     "words": [
       "use",
       "when",

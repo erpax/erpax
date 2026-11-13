@@ -3,13 +3,13 @@ name: sourced
 description: "Use when an atom is written or reviewed — the convention is that every atom cites the external standard it realises with an @standard marker (in its SKILL.md or its sibling index.ts), never grounding itself in nothing but itself; this atom measures the corpus's live sourcing as coverage = sourced / total over the real tree."
 atomPath: "convention/sourced"
 coordinate: "convention/sourced · 8/crest · 2a024a5c"
-contentUuid: "0874ccb7-4094-5cc0-8a7c-15609d42b515"
-diamondUuid: "3c026cf2-3c8f-8d22-a1dd-868766260edd"
+contentUuid: "31e8eeb8-3fc5-5f05-8dc1-78e84cdd79dc"
+diamondUuid: "80b533d6-f9b2-8737-a42c-f0635344cf69"
 uuid: "2a024a5c-1c55-8cb9-b557-3b2038de78a4"
 horo: 8
 typography:
   partition: convention
-  bondDegree: 12
+  bondDegree: 16
 standards:
   - "<id> …` line names the external standard it"
   - "<id> …` line names the external standard it realises — schema.org, an ISO/IEC code, a W3C spec, a national regulation. The marker may live in the `SKILL.md` body or in the sibling `index.ts` JSDoc; both are the atom's public face. It states one rule and computes its own compliance, and it does not re-implement the corpus walk or the SKILL reader — it"
@@ -19,7 +19,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b6341d7d-d7ab-889a-b1be-4451f1f45a89"
+  computationUuid: "a1772430-c40c-821e-bb8a-5d358ebb83c8"
   stages:
     - stage: path
       stageUuid: "85fdf454-21fb-83b0-a747-be6ab8a21e49"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "08765c90-6dac-8a6c-8794-7520677a9850"
     - stage: horo
-      stageUuid: "1666ea75-ffd5-865e-86bc-acbfabf2037e"
+      stageUuid: "40b3e74d-776b-8231-b73c-e3286509d256"
     - stage: seal
       stageUuid: "ad3a3655-3fa7-8ee3-9806-3ee22e2e410c"
     - stage: uuid
-      stageUuid: "d72da3db-df3c-87eb-bb7a-1655aaf14d30"
+      stageUuid: "a524dbf0-052c-809b-8435-183fb919f054"
 version: 2
 ---
 # convention/sourced — every atom cites its @standard

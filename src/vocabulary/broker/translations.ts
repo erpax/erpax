@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about broker — An entity that arranges for an exchange between a buyer and a seller. In most cases a broker never acquires or releases ownership of a product or service involved in an exchange. I",
-    "uuid": "0049bf65-a8cc-8ef4-b1b6-05ed5f0db640",
+    "uuid": "c26c7fcc-b633-8f01-a1e0-a9555e4fbc48",
     "words": [
       "use",
       "when",

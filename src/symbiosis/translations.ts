@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when two unlike organisms live as one entangled system that BOTH gain from — symbiosis is mutualism as the rule of life (mycorrhizae, lichen, the holobiont), and in its mycorrhizal form a literal BIOLOGICAL MARKET: carbon traded for phosphorus at variable exchange rates, with reciprocal rewards and sanctions against cheaters. The merge made stable by accounting; nature's double-entry.",
-    "uuid": "6a3b6357-fd4d-8569-b531-8ac1cba913f2",
+    "uuid": "5f7a8a79-7cc2-8eac-8441-7586e2b55942",
     "words": [
       "use",
       "when",

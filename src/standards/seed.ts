@@ -37,7 +37,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Semantic model of the electronic invoice",
     "uuid": "b293e94d-80cc-82ce-a7c9-7006b79e5bbf",
     "color": "hsl(355 78% 43%)",
-    "count": 129,
+    "count": 128,
     "modules": [
       {
         "path": "src/ai/invoice-ocr.ts",
@@ -143,7 +143,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "EU electronic identification & trust services",
     "uuid": "29ccc17c-b37d-81fd-af35-cd6049173405",
     "color": "hsl(260 73% 42%)",
-    "count": 20,
+    "count": 19,
     "modules": [
       {
         "path": "src/agents/registered/legal/agent.ts",
@@ -196,10 +196,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/notary/index.ts",
         "section": ""
-      },
-      {
-        "path": "src/patent/SKILL.md",
-        "section": "§§101–103;"
       },
       {
         "path": "src/period/end/closing/index.ts",
@@ -275,7 +271,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2019/2152 of the European Parliament and of the Council of 27 November 2019 on European business statistics (Intrastat intra-EU trade reporting)",
     "uuid": "5cbb6bc1-887a-8c8c-88fd-fba1a9346c71",
     "color": "hsl(339 57% 39%)",
-    "count": 349,
+    "count": 348,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -2042,7 +2038,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 202,
+    "count": 201,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -3165,7 +3161,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Currency codes",
     "uuid": "2aa02578-47b5-80bf-ad53-a36e04aaccfb",
     "color": "hsl(112 57% 38%)",
-    "count": 309,
+    "count": 308,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -3483,7 +3479,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 107,
+    "count": 105,
     "modules": [
       {
         "path": "src/accounting/proof/index.ts",
@@ -4282,92 +4278,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "ISO-22400-2",
-    "family": "iso",
-    "title": "Manufacturing operations KPIs",
-    "uuid": "95952c82-6ec5-8391-a7a7-7abdf80d5b60",
-    "color": "hsl(133 64% 48%)",
-    "count": 19,
-    "modules": [
-      {
-        "path": "src/items/bills/of/materials/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/items/bills/of/materials/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/items/bills/of/materials/work/orders/operation/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/items/bills/of/materials/work/orders/operation/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/items/bills/of/materials/work/orders/routings/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/items/bills/of/materials/work/orders/routings/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/lot/work/phases/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/lot/work/phases/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/lots/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/lots/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/shift/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/work/centers/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/work/centers/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/work/centers/operations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/work/centers/operations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/work/phases/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/work/phases/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/work/shifts/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/work/shifts/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "ISO-17442",
     "family": "iso",
     "title": "Legal Entity Identifier (LEI)",
@@ -4577,6 +4487,88 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/iso/19005/profile/test.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ISO-22400-2",
+    "family": "iso",
+    "title": "Manufacturing operations KPIs",
+    "uuid": "95952c82-6ec5-8391-a7a7-7abdf80d5b60",
+    "color": "hsl(133 64% 48%)",
+    "count": 18,
+    "modules": [
+      {
+        "path": "src/items/bills/of/materials/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/work/orders/operation/runs/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/work/orders/operation/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/work/orders/routings/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/work/orders/routings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/lot/work/phases/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/lot/work/phases/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/lots/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/lots/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/work/centers/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/work/centers/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/work/centers/operations/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/work/centers/operations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/work/phases/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/work/phases/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/work/shifts/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/work/shifts/index.ts",
         "section": ""
       }
     ]
@@ -5577,7 +5569,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Role-Based Access Control",
     "uuid": "e67e2dd4-b480-802e-be8b-990117b82dc6",
     "color": "hsl(326 65% 58%)",
-    "count": 54,
+    "count": 53,
     "modules": [
       {
         "path": "src/app/(frontend)/next/seed/route.ts",
@@ -7475,7 +7467,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (revised — content/event uuid)",
     "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
     "color": "hsl(29 70% 49%)",
-    "count": 158,
+    "count": 154,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -7793,7 +7785,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Uniform Resource Identifier (URI): Generic Syntax",
     "uuid": "6538af56-2a38-8326-b7ab-261a9fd42e3d",
     "color": "hsl(352 55% 52%)",
-    "count": 45,
+    "count": 44,
     "modules": [
       {
         "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
@@ -8745,7 +8737,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Harmonized System customs nomenclature",
     "uuid": "735463b1-8b67-83a1-979e-593ca0e4e03d",
     "color": "hsl(4 84% 47%)",
-    "count": 6,
+    "count": 4,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -8757,10 +8749,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/tenant/roles/profile/country.ts",
-        "section": ""
-      },
-      {
-        "path": "src/wco/hs/index.ts",
         "section": ""
       }
     ]
@@ -9093,18 +9081,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Linked-data type vocabulary",
     "uuid": "9cff4f7f-f5d5-8924-99c4-0d564a3735fb",
     "color": "hsl(231 64% 45%)",
-    "count": 1983,
+    "count": 1909,
     "modules": [
       {
         "path": "src/abdomen/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/abstract/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/acceleration/SKILL.md",
         "section": ""
       },
       {
@@ -9189,6 +9169,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/app/(frontend)/layout.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/not-found.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/tenant-domains/[tenant]/[...slug]/page.tsx",
         "section": ""
       }
     ]
@@ -9686,48 +9674,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "W3C-PROV-O",
-    "family": "w3c",
-    "title": "Provenance Ontology",
-    "uuid": "aab6453e-ed17-8541-a227-c83eb24632af",
-    "color": "hsl(142 89% 52%)",
-    "count": 10,
-    "modules": [
-      {
-        "path": "src/beyond/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/provenance/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/provenance/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/types/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/types/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/cloning/genome/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/provenance/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "W3C-DID-1.0",
     "family": "w3c",
     "title": "Decentralized Identifiers",
@@ -9765,6 +9711,44 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/voting/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "W3C-PROV-O",
+    "family": "w3c",
+    "title": "Provenance Ontology",
+    "uuid": "aab6453e-ed17-8541-a227-c83eb24632af",
+    "color": "hsl(142 89% 52%)",
+    "count": 9,
+    "modules": [
+      {
+        "path": "src/beyond/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/provenance/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/provenance/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/types/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cloning/genome/index.ts",
         "section": ""
       }
     ]
@@ -9823,7 +9807,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Accessible Rich Internet Applications",
     "uuid": "a46dba6c-64b6-81af-b328-04d4369fa69b",
     "color": "hsl(333 66% 50%)",
-    "count": 33,
+    "count": 12,
     "modules": [
       {
         "path": "src/admin/bar/index.tsx",
@@ -9846,79 +9830,31 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/chains/bulk/import/cycle/page.tsx",
+        "path": "src/component/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/chains/consignment/cycle/page.tsx",
+        "path": "src/footer/config.ts",
         "section": ""
       },
       {
-        "path": "src/chains/crm/lead/to/cash/page.tsx",
+        "path": "src/header/config.ts",
         "section": ""
       },
       {
-        "path": "src/chains/esg/reporting/cycle/page.tsx",
+        "path": "src/hero/config/index.ts",
         "section": ""
       },
       {
-        "path": "src/chains/facility/maintenance/cycle/page.tsx",
+        "path": "src/pagination/index.tsx",
         "section": ""
       },
       {
-        "path": "src/chains/h2r/hire/to/retire/page.tsx",
+        "path": "src/spec/generator/marketing.ts",
         "section": ""
       },
       {
-        "path": "src/chains/ifrs16/lease/cycle/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/intercompany/consolidation/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/kyc/sanctions/review/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/manufacturing/cycle/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/multi/invoice/payment/allocation/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/multi/vendor/pr/split/award/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/notification/dispatch/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/o2c/good/o2c-goods-page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/o2c/services/over/time/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/procure/to/pay/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/provision/lifecycle/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/record/to/report/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/resource/booking/cycle/page.tsx",
+        "path": "src/website/shadcn/index.ts",
         "section": ""
       }
     ]
@@ -9929,7 +9865,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Web Content Accessibility Guidelines",
     "uuid": "852e7032-f08c-8685-802a-ea7d1e0db109",
     "color": "hsl(254 62% 40%)",
-    "count": 30,
+    "count": 9,
     "modules": [
       {
         "path": "src/agents/registered/design.agent.ts",
@@ -9940,92 +9876,32 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/chains/bulk/import/cycle/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/consignment/cycle/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/crm/lead/to/cash/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/esg/reporting/cycle/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/facility/maintenance/cycle/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/h2r/hire/to/retire/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/ifrs16/lease/cycle/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/intercompany/consolidation/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/kyc/sanctions/review/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/manufacturing/cycle/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/multi/invoice/payment/allocation/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/multi/vendor/pr/split/award/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/notification/dispatch/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/o2c/good/o2c-goods-page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/o2c/services/over/time/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/procure/to/pay/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/provision/lifecycle/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/record/to/report/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/resource/booking/cycle/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/subscription/billing/cycle/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/workflow/approval/cycle/page.tsx",
-        "section": ""
-      },
-      {
         "path": "src/iso/14289/profile/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/spec/generator/marketing.ts",
+        "section": "§1.4.3"
+      },
+      {
+        "path": "src/website/SKILL.md",
+        "section": "§1.4.3`"
+      },
+      {
+        "path": "src/website/index.ts",
+        "section": "§1.4.3"
+      },
+      {
+        "path": "src/website/marketing/index.ts",
+        "section": "§4"
+      },
+      {
+        "path": "src/website/shadcn/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/widget/section/index.tsx",
+        "section": "§1.3.1"
       }
     ]
   }

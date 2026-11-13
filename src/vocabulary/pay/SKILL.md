@@ -3,18 +3,18 @@ name: pay
 description: "Use when reasoning about pay as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pay"
 coordinate: "vocabulary/pay · 4/weave · 9c73bf0d"
-contentUuid: "87220518-194a-5b0d-9466-322983ea2347"
-diamondUuid: "e6567cc6-e235-818d-82d3-d381163fa754"
+contentUuid: "b1c88fbb-dbdb-599e-9f22-db6f43bd8b0f"
+diamondUuid: "e0a9559f-2d77-8823-8af9-620ac51a05ab"
 uuid: "9c73bf0d-87e9-86c0-a0d4-0577b1aa3f8d"
 horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 18
+  bondDegree: 15
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "41461677-4117-8cfd-be82-32aaf7d532e0"
+  computationUuid: "a9a50d3f-c2ff-8b41-8b01-92643d419390"
   stages:
     - stage: path
       stageUuid: "7684a989-4430-805d-ad91-ff6b64caae2f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "a4558db8-998d-84ef-8652-b7b9c55ad9d9"
     - stage: horo
-      stageUuid: "a9666339-e500-88a4-a1b4-b59ed4120e31"
+      stageUuid: "1bbecc30-984b-8912-8241-b296afedf41a"
     - stage: seal
       stageUuid: "bb10f1a8-ed29-8c9d-bc2a-e575969dab07"
     - stage: uuid
-      stageUuid: "1a039bc2-087c-8af2-bd39-f589e484fa95"
+      stageUuid: "edc208a6-d034-8dd6-a04d-47aba58704d1"
 version: 2
 ---
 # pay

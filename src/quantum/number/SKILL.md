@@ -3,17 +3,17 @@ name: number
 description: "Use when reasoning about a number as a stream rather than a magnitude — the decimal point is the measurement that collapses an infinite digit-stream to a fixed value; remove it (compose, not dot) and the number is its uncollapsed sequence, pi the purest case that never resolves, its conjectured normality the even line."
 atomPath: "quantum/number"
 coordinate: "quantum/number · 8/crest · 3b0d024b"
-contentUuid: "3a6f53b0-0686-5f62-b332-197dc21428a5"
-diamondUuid: "80ae87d5-c547-8fd7-aaaa-95ed19f76a8b"
+contentUuid: "986ac29e-9833-533c-9c42-547ebbc81d1c"
+diamondUuid: "86921798-304d-8346-92ef-dccbb9390ae7"
 uuid: "3b0d024b-c061-80af-b7d6-464c6fd4c50b"
 horo: 8
 typography:
   partition: quantum
-  bondDegree: 226
+  bondDegree: 223
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1938cdea-0637-8d18-9c37-5fb9c1727871"
+  computationUuid: "f9659236-1d0c-80d9-999d-6ca4b5c2181d"
   stages:
     - stage: path
       stageUuid: "a4a59051-7c91-876b-903c-230d3d88aa79"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "62c55f1c-81b8-896d-8db1-6a0eb81a5138"
     - stage: horo
-      stageUuid: "6080242b-cfd3-84f2-bd47-7d081cdd06fd"
+      stageUuid: "dbaf7e75-be1d-8dc3-8416-5c6d4059f533"
     - stage: seal
       stageUuid: "3f75ddee-1316-896d-acab-5906cb3d38b3"
     - stage: uuid
-      stageUuid: "90bddbc5-f882-8ed3-aad1-5aea81250117"
+      stageUuid: "03040d0d-84cd-8319-b027-55a25f4a86af"
 quantum:
   superposition:
     - accommodation
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "1938cdea-0637-8d18-9c37-5fb9c1727871"
-    contentUuid: "3a6f53b0-0686-5f62-b332-197dc21428a5"
+    computationUuid: "f9659236-1d0c-80d9-999d-6ca4b5c2181d"
+    contentUuid: "986ac29e-9833-533c-9c42-547ebbc81d1c"
 version: 2
 ---
 # quantum/number — the digit-stream behind the dot
@@ -77,4 +77,4 @@ The (conjectured) **normality** of π — every [[digit]] equally often — *is*
 
 @see [[number]] · [[digit]] · [[stream]] · [[linearity]] · [[finality]] · [[sequence]] · [[breath]] · [[harmony]]
 
-<sub>content-uuid `3a6f53b0-0686-5f62-b332-197dc21428a5` · account `quantum/number` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `986ac29e-9833-533c-9c42-547ebbc81d1c` · account `quantum/number` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

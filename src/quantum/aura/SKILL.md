@@ -3,18 +3,18 @@ name: aura
 description: "Use when reading the aura as quantum coherence — the gapless link-field as the coherent in-phase state, a dead link or orphan as decoherence; coherence is the resource the corpus maximizes toward zero entropy."
 atomPath: "quantum/aura"
 coordinate: "quantum/aura · 8/crest · 72fc042a"
-contentUuid: "fb4e842b-a4c9-5c7f-b168-35aaba92f3f4"
-diamondUuid: "540f1042-92e9-8c5a-b55f-879a85bd5526"
+contentUuid: "1ab25262-7409-594c-b5a3-d2a3644f17b8"
+diamondUuid: "7768e92d-9bfb-8c8b-8e92-c5b25097d3af"
 uuid: "72fc042a-5699-80f8-a8f8-14f4d23d4baa"
 horo: 8
 typography:
   partition: quantum
-  bondDegree: 445
+  bondDegree: 437
 standards:
   - "Baumgratz, Cramer & Plenio, \"Quantifying Coherence,\" PRL 113 140401 (2014)"
 bindings: []
 signatures:
-  computationUuid: "4f9a8fd5-b490-8df4-8602-ed591475d6bc"
+  computationUuid: "950a3790-7a2c-85a3-9eff-3ea7c83e2f99"
   stages:
     - stage: path
       stageUuid: "e979a613-00f0-8575-ad70-95e58aa7eed1"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "727d41d9-722f-87e3-b443-5b3691d40f35"
     - stage: horo
-      stageUuid: "2947121d-2965-829d-8638-f35e8e09e7e6"
+      stageUuid: "ec709b96-5c1a-859b-b0a9-df5c7f4ffa1c"
     - stage: seal
       stageUuid: "dc266054-5cf8-8c73-ac9c-25ac5208daa2"
     - stage: uuid
-      stageUuid: "7803eb9b-5f44-8686-ac4c-4a9f7acdb451"
+      stageUuid: "b4d9404a-39c2-83e5-a15f-6d0e6a7c1fb3"
 quantum:
   superposition:
     - accounting
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "4f9a8fd5-b490-8df4-8602-ed591475d6bc"
-    contentUuid: "fb4e842b-a4c9-5c7f-b168-35aaba92f3f4"
+    computationUuid: "950a3790-7a2c-85a3-9eff-3ea7c83e2f99"
+    contentUuid: "1ab25262-7409-594c-b5a3-d2a3644f17b8"
 version: 2
 ---
 # quantum/aura — the aura as coherence
@@ -78,4 +78,4 @@ Matter-twin: `src/quantum/aura/index.ts` (`coherence` · `decohered` · `coheren
 @standard Baumgratz, Cramer & Plenio, "Quantifying Coherence," PRL 113 140401 (2014)
 @audit composed from reciprocity (entanglement) + orphans (entropy); computed on the live matrix
 
-<sub>content-uuid `fb4e842b-a4c9-5c7f-b168-35aaba92f3f4` · account `quantum/aura` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `1ab25262-7409-594c-b5a3-d2a3644f17b8` · account `quantum/aura` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

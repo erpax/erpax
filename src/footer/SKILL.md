@@ -3,7 +3,7 @@ name: footer
 description: "Use when reasoning about footer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: footer
 coordinate: "footer · 7/descent · 34153f0a"
-contentUuid: "5f3ab357-20f1-5754-8128-62f83e4b356d"
+contentUuid: "0b26fe0e-d145-5f1a-8485-869cf7c9da0e"
 diamondUuid: "42c35f36-4b2b-8608-b560-2036d6537f2d"
 uuid: "34153f0a-fe11-8300-8eef-983c8320a634"
 horo: 7
@@ -12,6 +12,7 @@ typography:
   bondDegree: 16
 standards:
   - "W3C-HTML5"
+  - "W3C-WAI-ARIA-1.2"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:

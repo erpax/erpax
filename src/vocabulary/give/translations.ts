@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the outflow side of an exchange in erpax — credit, units-out, grant, send, post-out. The universal root of giving; dual of take, equilibrium is balance.",
-    "uuid": "cc206b55-ef22-8fed-a729-cd46d5b291c2",
+    "uuid": "e6368507-0e80-857f-a390-997635f78816",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when rendering a chart through the analog aura — mapping each numeric value of a series to a spectrum colour by its normalized position, so the data becomes a coherent, deterministic colour field (same data, same colours).",
-    "uuid": "54c197a5-ea3f-8bab-9c9e-6f02a55f6826",
+    "uuid": "76eedca8-524b-8c04-90a2-acfaae97c188",
     "words": [
       "use",
       "when",

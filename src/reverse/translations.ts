@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about reverse — A reversal is not a new computation; it is the **mirror of an existing balanced entry**: take the source accounting journal entry's , swap each line's and , keep the SAME . Because",
-    "uuid": "59b37657-8659-81a4-9851-e8bdcee2cf86",
+    "uuid": "c6402e6b-6138-8f2f-a6b2-d44d13e08fb7",
     "words": [
       "use",
       "when",

@@ -3,13 +3,13 @@ name: centers
 description: "Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master."
 atomPath: "cost/centers"
 coordinate: "cost/centers · 8/crest · 62cfc9b9"
-contentUuid: "35d142c4-ed87-553a-95c3-e621aa54be75"
+contentUuid: "209acece-4db2-5238-ae14-465a3c3a960b"
 diamondUuid: "aa9a6e48-0486-8bb6-a2f3-a7cde362a2dc"
 uuid: "62cfc9b9-05f5-8ed4-8941-6d7267abecad"
 horo: 8
 typography:
   partition: cost
-  bondDegree: 48
+  bondDegree: 47
 standards:
   - "IFRS IAS-1 §99 statement-of-comprehensive-income"
   - "IFRS IFRS-8 operating-segments"

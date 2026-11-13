@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking which fields collapse together — the declared map from collection field to its collapse hook, with the count derived from the registry rather than typed beside it. Promoted from a loose sibling; five importers use the alias, which survives the nesting unchanged. Run: tsx src/quantum/entanglement/registry/index.ts",
-    "uuid": "b84c580b-8d78-80dd-a408-6d85d15b9e0f",
+    "uuid": "a7af25ae-6522-80b5-b6f6-6a67a16288a8",
     "words": [
       "use",
       "when",

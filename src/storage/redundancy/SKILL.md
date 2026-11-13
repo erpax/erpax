@@ -3,18 +3,18 @@ name: redundancy
 description: Use when reasoning about redundancy — puts to every backend and prefers a copy whose recomputed uuid matches its content. repairs a stale or tampered store by pulling from a healthy peer.
 atomPath: "storage/redundancy"
 coordinate: "storage/redundancy · 2/share · ac644642"
-contentUuid: "154e9649-2db9-5be9-b036-f95cd2a018e5"
-diamondUuid: "138e4a03-261a-8231-af5d-b56991e98db2"
+contentUuid: "cc70607f-ce2d-593f-a913-4607f1110561"
+diamondUuid: "a293abd1-d894-8ace-9cbe-e95cd76d327a"
 uuid: "ac644642-e83f-8c21-a2e8-6bf92bee146c"
 horo: 2
 typography:
   partition: storage
-  bondDegree: 27
+  bondDegree: 6
 standards:
   - "ISO/IEC 9075-2:2016 §4.15.10 — when paired with bitemporal history"
 bindings: []
 signatures:
-  computationUuid: "e599b40b-149e-8b36-a477-e7a8186abbf8"
+  computationUuid: "c1c7680c-1566-8a65-bed2-7dfa338b3e30"
   stages:
     - stage: path
       stageUuid: "f9a5474b-3d47-840d-9f67-86ef242b39e9"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "0ef8ebd5-61ff-8819-ad86-a7469cebcff7"
     - stage: horo
-      stageUuid: "4794d602-609e-802a-8689-13e287a8bf58"
+      stageUuid: "b206116f-9241-8a33-a90c-9ba6782ad668"
     - stage: seal
       stageUuid: "481b6c7b-d884-821c-8792-e9734f55a283"
     - stage: uuid
-      stageUuid: "b7420574-8a0c-8167-adf2-1ce762954a71"
+      stageUuid: "2170e6c9-7f4d-835e-b0e1-9755e78a8dd3"
 version: 2
 ---
 # storage/redundancy — N stores, one address, and divergence is decided by recomputation
