@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "document",
-    "uuid": "752079ac-ca46-8865-9a75-3dc5f4fd0cd0",
+    "uuid": "21caa5b1-8fcb-894e-a5a6-89061cd14854",
     "words": [
       "document"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when refactoring the corpus — a refactoring is written as a document (why, and the cuts in one JSON block), stored as a nested page under refactors, and applied by erpax itself through the scalpel: exactly-once-or-refuse, all-or-nothing, a red ring restores the batch. Run: pnpm erpax refactor plan <file.md | slug>",
-    "uuid": "9f11a694-00ed-86dd-9e58-de78cf313c6c",
+    "uuid": "4808c83d-142d-8ae2-bf50-01e4a8410938",
     "words": [
       "use",
       "when",

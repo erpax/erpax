@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the vocabulary as the meaning singularity — every atom's words ground in the shared vocabulary, so it has infinite gravity and pulls all atoms into one shared meaning-space.",
-    "uuid": "18bff2d7-5dc3-838e-9013-5284ee29c20e",
+    "uuid": "5417b7d6-83b7-8068-83de-7a122a73b319",
     "words": [
       "use",
       "when",

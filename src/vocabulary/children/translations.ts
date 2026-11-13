@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about children — A child of the person.",
-    "uuid": "f0c5d48b-f57f-8baf-adc6-40975a4987f2",
+    "uuid": "0f27c380-8744-8dbf-bae9-3c648bd7be58",
     "words": [
       "use",
       "when",

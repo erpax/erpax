@@ -3,13 +3,13 @@ name: commerce
 description: "Use when designing or porting the erpax commerce/trade domain to Payload — parties under many roles (seller/buyer/agent/supplier/consignee/carrier), the cart→quote→order→invoice→note document chain, payments/allocations/refunds, subscriptions & metered usage, inventory/stock movement, packing & shipment, dunning/credit terms. The transactional-flow `@erpax/commerce` twin (sequence 4·8)."
 atomPath: commerce
 coordinate: "commerce · 8/crest · baae669f"
-contentUuid: "b6e8b474-1b4a-5674-8897-f3072bbb73f9"
-diamondUuid: "0d28fa11-7aca-8689-a17d-7010da03e84f"
+contentUuid: "affedf7c-3e91-58ab-905b-8168fc7f90f3"
+diamondUuid: "424fb86d-6f6c-82da-9e09-afa503316b04"
 uuid: "baae669f-0ff1-80fa-ab2d-38439671632d"
 horo: 8
 typography:
   partition: commerce
-  bondDegree: 150
+  bondDegree: 141
 standards:
   - "Cloudflare Workers API (deployments + durable-object namespaces)"
   - "Stripe API v2024-10-28-acacia"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c063c7c8-e776-873d-99e1-7dd09a796ab3"
+  computationUuid: "b34dab4e-8ac4-8146-bddf-2451b935b8c0"
   stages:
     - stage: path
       stageUuid: "eefc9b09-1e71-8151-a18f-4a4dd3a90971"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "cbe5280e-c6f0-87e1-8254-52e276fb1dd6"
     - stage: horo
-      stageUuid: "cbfd4ff1-0c68-8882-8cde-8d16b049b37d"
+      stageUuid: "ff56e543-8dba-8bc7-9c74-8ad310ee56f4"
     - stage: seal
       stageUuid: "08b5e11f-2892-8355-a41e-c87291686fa2"
     - stage: uuid
-      stageUuid: "df2a7576-0eaf-87c1-abdb-7b57b3482978"
+      stageUuid: "8888a8d8-ef90-8d39-bab2-67a34c0fd884"
 version: 2
 ---
 # commerce — the transactional-flow plugin (one party, infinite roles)

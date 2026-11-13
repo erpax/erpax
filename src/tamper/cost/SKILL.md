@@ -2,14 +2,14 @@
 name: cost
 description: "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts."
 atomPath: "tamper/cost"
-coordinate: "tamper/cost · 5/round · bb134a09"
-contentUuid: "ae70aba4-f6a7-5341-8576-883534ae554a"
-diamondUuid: "73f27876-cbe9-8872-83ea-fdd73b22a85d"
-uuid: "bb134a09-e76a-8b03-a525-97ca0a5a1ada"
-horo: 5
+coordinate: "tamper/cost · 1/base · dd52d98f"
+contentUuid: "d2c54e9d-8e78-53aa-a9e5-d47d78f91736"
+diamondUuid: "cf201f06-b503-8d4b-877d-dd0df0ccbfe7"
+uuid: "dd52d98f-65cd-8aed-9fc1-a67d9f7ffe11"
+horo: 1
 typography:
   partition: tamper
-  bondDegree: 445
+  bondDegree: 403
 standards:
   - "CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication"
   - "DeepSeek-Prover-V2 — recursive subgoal decomposition, Lean-4 kernel-checked invariants"
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4a8ab454-f053-83ad-947d-7b29a1faf661"
+  computationUuid: "18c263a2-99d4-8a52-bd90-48259756f583"
   stages:
     - stage: path
       stageUuid: "c4a6cfbb-5715-8b93-b12d-90915c16b1bd"
@@ -31,13 +31,13 @@ signatures:
     - stage: boundary
       stageUuid: "d2c970f6-248c-87f6-8dff-28e4ce4709ca"
     - stage: links
-      stageUuid: "a3985697-2a2c-8078-9b61-64ec4e2ab673"
+      stageUuid: "fc9c397e-a761-8d0c-810c-4e8687bf9cca"
     - stage: horo
-      stageUuid: "0afbcfe3-e635-816e-9c56-c9a6a046b948"
+      stageUuid: "676ce8ec-17ba-847d-aeec-de877386530d"
     - stage: seal
       stageUuid: "2c075d9f-e9ae-8985-b4ce-ca33dc25c7c9"
     - stage: uuid
-      stageUuid: "b822b98f-4efa-8efa-b257-f42baadde108"
+      stageUuid: "11ab84f0-7436-8407-93f1-cd1253b4ee3b"
 version: 2
 ---
 # tamper-cost — what it costs to crack a zero-entropy app
@@ -50,7 +50,7 @@ erpax holds **no secret**: every id is a deterministic v8 content-[[uuid]] (SHA-
 **Crack cost = min(local-forge, chosen-collision, anchor-strength) `+` coverage-cost** — two honestly distinct layers, matching `crackVerdict` (`crackCostLog2 = perRecord + coverageCost`, index.ts):
 
 - **The cryptographic floor** = `min(second-preimage, chosen-content-collision, anchor-strength)` — **real bits of security**, grounded in NIST SP 800-107r1 (2nd-preimage ≈ L bits, collision ≈ L/2) and RFC 9562 §8. This is the per-record forge cost: the digest's 2¹⁰⁶ second-preimage, **provided the anchor is at least that strong** (else the anchor binds and the floor drops to the anchor's bits). With no coverage modelled (`coverage===undefined`) the verdict collapses to exactly this floor — a hash property, not a wiring claim.
-- **The structural amplifier** (`coverageCost`) is **ADDED on top**, not part of the `min`. It is a *completeness count* — the number of independent uuid-wired checks a coherent tamper must simultaneously evade ([[coverage]] Law 62; → ∞ only at coverage **= 1**, a measured structural fraction). It is **NOT** a measured cryptographic work factor: it does not come from a hash's bit-strength, so it is "bits" only by analogy. Treat `crackCostLog2` (and the `bruteYearsLog2` derived from it) as a **MODEL** once the amplifier is included — empirically grounded only at the cryptographic floor.
+- **The structural amplifier** (`coverageCost`) is **ADDED on top**, not part of the `min`. It is a *completeness count* — the number of independent uuid-wired checks a coherent tamper must simultaneously evade (coverage Law 62; → ∞ only at coverage **= 1**, a measured structural fraction). It is **NOT** a measured cryptographic work factor: it does not come from a hash's bit-strength, so it is "bits" only by analogy. Treat `crackCostLog2` (and the `bruteYearsLog2` derived from it) as a **MODEL** once the amplifier is included — empirically grounded only at the cryptographic floor.
 
 That is your law: *the computational impossibility of changing **all** coherently is the protection*, and a zero-entropy app earns it not despite having no key but **because** it has none. The floor is real and anchor-bounded; the amplifier prices structural completeness, separately.
 

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \\\"next octave\\\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin.",
-    "uuid": "8b7b45ab-127b-8e80-b301-2fd222325c3c",
+    "uuid": "c9989c0a-2735-867b-89ad-153171703ce1",
     "words": [
       "use",
       "when",

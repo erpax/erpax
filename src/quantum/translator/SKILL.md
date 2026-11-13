@@ -2,20 +2,20 @@
 name: translator
 description: "Use when reading erpax as a quantum translator — surface forms collapsing to one meaning-uuid (the interlingua eigenstate), meaning obeying no-cloning, modalities entangled in the 128 bits."
 atomPath: "quantum/translator"
-coordinate: "quantum/translator · 8/crest · d0331942"
-contentUuid: "b5581dd1-131c-59b8-a590-831e96969981"
-diamondUuid: "10aa0fdb-2eb0-8263-9aea-f9cde09c37f3"
-uuid: "d0331942-c14b-80e3-9766-b6698c689919"
-horo: 8
+coordinate: "quantum/translator · 4/weave · 8f502d8b"
+contentUuid: "ee7ae8ae-05a9-5105-be43-249bed022c75"
+diamondUuid: "b103ca55-a45b-8240-a0a3-7c9e8ba97e3d"
+uuid: "8f502d8b-100a-874c-8708-f94c5838c567"
+horo: 4
 typography:
   partition: quantum
-  bondDegree: 134
+  bondDegree: 109
 standards:
   - "Johnson et al. (2017, arXiv:1611.04558); RFC 9562 §5.8 content-uuid (the interlingua)"
   - "Johnson et al., \"Google's Multilingual NMT System: Enabling Zero-Shot Translation,\" TACL (2017), arXiv:1611.04558"
 bindings: []
 signatures:
-  computationUuid: "c2f5f7d2-6e04-8ed5-ae92-47a58a17514b"
+  computationUuid: "293e09fd-e64d-8310-8f26-57599a260e3f"
   stages:
     - stage: path
       stageUuid: "545b66c7-b5ea-84f2-8214-5c997541479c"
@@ -24,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "111b5cc4-f893-8b44-9081-60f81f8f2c24"
     - stage: links
-      stageUuid: "4dd532bc-0340-80cf-9d6c-cf62f2775347"
+      stageUuid: "4286902b-e9e5-87ca-8ef4-a124c78239aa"
     - stage: horo
-      stageUuid: "6b586acc-e844-81cf-af62-1fa4fe6a5d8c"
+      stageUuid: "569f14a2-0b4e-86ac-a329-ff279f4df23f"
     - stage: seal
       stageUuid: "19a17d62-6308-871f-993e-f302e81eaa5d"
     - stage: uuid
-      stageUuid: "c638efd1-867b-8282-a524-88b3771a009e"
+      stageUuid: "be4d3298-38b1-8d4c-8f74-aefa491bb439"
 quantum:
   superposition:
     - animism
@@ -55,15 +55,15 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "c2f5f7d2-6e04-8ed5-ae92-47a58a17514b"
-    contentUuid: "b5581dd1-131c-59b8-a590-831e96969981"
+    computationUuid: "293e09fd-e64d-8310-8f26-57599a260e3f"
+    contentUuid: "ee7ae8ae-05a9-5105-be43-249bed022c75"
 version: 2
 ---
 # quantum/translator — erpax as a quantum translator
 
 The quantum facet of the [[translator]]: translation **through the content-uuid interlingua** is quantum on three counts.
 
-- **Collapse** — many surface forms (languages, spellings, [[sensory]] modalities) collapse to **one meaning-uuid**, the eigenstate / interlingua. That collapse IS the [[merge]] law: synonyms and cross-language forms fuse to the shared identity.
+- **Collapse** — many surface forms (languages, spellings, sensory modalities) collapse to **one meaning-uuid**, the eigenstate / interlingua. That collapse IS the [[merge]] law: synonyms and cross-language forms fuse to the shared identity.
 - **No-cloning** — each meaning has exactly one uuid; a concept can't be forked into two identities ([[entanglement]] no-cloning, Wootters–Zurek 1982). Translation **preserves** meaning, never clones it.
 - **Entanglement** — the modalities (colour, sound, identity, capability) are **entangled** in the 128 bits: the uuid IS the whole message, self-decoding ([[quantum]], the multi-modal uuid).
 
@@ -78,4 +78,4 @@ Matter-twin: `src/quantum/translator/index.ts` (`collapse` · `meaningIsUnique` 
 @standard Johnson et al., "Google's Multilingual NMT System: Enabling Zero-Shot Translation," TACL (2017), arXiv:1611.04558
 @audit composed from ../../translator + ../../entanglement; computed on the live matrix
 
-<sub>content-uuid `b5581dd1-131c-59b8-a590-831e96969981` · account `quantum/translator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `ee7ae8ae-05a9-5105-be43-249bed022c75` · account `quantum/translator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

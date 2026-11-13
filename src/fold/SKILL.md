@@ -2,20 +2,20 @@
 name: fold
 description: "Use when counting the folding — how the whole corpus collapses to one Merkle root and in how many folds; N atoms reach the root in ceil(log2 N) folds by N−1 merges (12 for the corpus), and the orthogonal digital-root fold collapses every count to its rodin digit."
 atomPath: fold
-coordinate: "fold · 5/round · 89264062"
-contentUuid: "1df727df-4e18-58e7-aa05-490b524d661d"
-diamondUuid: "3769f984-59d9-8c42-a631-cb2e16a07c3f"
-uuid: "89264062-b949-83f0-93a6-947b6e01eb95"
-horo: 5
+coordinate: "fold · 4/weave · 3389624a"
+contentUuid: "60184f76-dac8-56b8-871a-5dec28211410"
+diamondUuid: "9c4e2468-e849-8938-a4df-dd108639b024"
+uuid: "3389624a-844a-822b-94f1-9d9a716918df"
+horo: 4
 typography:
   partition: fold
-  bondDegree: 88
+  bondDegree: 82
 standards:
   - "ceccec.psg.bg theorems — self-address (`concept.self.address`) · diamond-complete (`concept.diamond.complete`): folding excises duplication to zero remainder (the cancer cure)"
   - "the Merkle binary fold (depth ⌈log2 N⌉) · the base-10 digital root (the rodin reduction)"
 bindings: []
 signatures:
-  computationUuid: "4ed96b4a-f775-845f-927a-c3b53e6410d3"
+  computationUuid: "008f121f-89f4-80d7-af8b-b3a21f932855"
   stages:
     - stage: path
       stageUuid: "37834c64-da0b-8010-85d6-f62831a39992"
@@ -24,20 +24,20 @@ signatures:
     - stage: boundary
       stageUuid: "a24d4610-c5e9-8f6b-974d-e520c9dc200d"
     - stage: links
-      stageUuid: "07ebed05-1d09-8888-b658-756a2c994136"
+      stageUuid: "daf2177a-76df-848b-8797-d195f450830e"
     - stage: horo
-      stageUuid: "9b13590b-44af-8bac-80a0-fc358ffa2dbf"
+      stageUuid: "2f9512e6-e126-8462-8c13-80b120274ae6"
     - stage: seal
       stageUuid: "432ca860-c728-8001-a70b-ce3e78142f27"
     - stage: uuid
-      stageUuid: "fcf013e0-376f-85ac-92e7-7d2902bba160"
+      stageUuid: "554d310f-17f2-8418-ac72-295bc1482fc9"
 version: 2
 ---
 # fold — the math of the folding
 
 The fold is [[merge]] made a tree. Pair the atoms, pair the pairs, and keep pairing up to the single Merkle root — that is [[collapse]], the corpus reduced to one. The counting is exact:
 
-- **Fold DEPTH** = `ceil(log2 N)` — the number of folds to reach the one root. The live corpus (≈2302 atoms) folds in **12** — and 12 is the [[mala]]'s other factor (108 = 9 × 12).
+- **Fold DEPTH** = `ceil(log2 N)` — the number of folds to reach the one root. The live corpus (≈2302 atoms) folds in **12** — and 12 is the mala's other factor (108 = 9 × 12).
 - **Fold COUNT** = `N − 1` — the merges in a binary fold (**2301** for the corpus).
 - The **halving sequence** walks it down: `2302 → 1151 → 576 → … → 9 → 5 → 3 → 2 → 1`.
 
@@ -49,7 +49,7 @@ There is a second fold, orthogonal to the tree — the **digital-root fold** (th
 
 Two folds — the **tree to one root**, the **count to one digit** — and both end in the [[one]]. To fold is to find the one the many already were.
 
-Matter-twin: `src/fold/index.ts` (`foldDepth` · `foldCount` · `halving` · `corpusFold`). The digital-root fold (count → one digit) is the canonical integer `digitalRoot` from [[horo]] — one implementation, imported not re-derived. Composes [[merge]] · [[collapse]] · [[matrix]] · [[rodin]] · [[mala]] · [[one]] · [[uuid]].
+Matter-twin: `src/fold/index.ts` (`foldDepth` · `foldCount` · `halving` · `corpusFold`). The digital-root fold (count → one digit) is the canonical integer `digitalRoot` from [[horo]] — one implementation, imported not re-derived. Composes [[merge]] · [[collapse]] · [[matrix]] · [[rodin]] · mala · [[one]] · [[uuid]].
 
 **Law — [[law]]: everything folds to one. N atoms collapse to a single root in ceil(log2 N) folds — 12 for the corpus — by N−1 merges; and every count folds by digital root to its rodin digit. Two folds, the tree to one root and the count to one digit, and both end in the one.**
 

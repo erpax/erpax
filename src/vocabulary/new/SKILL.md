@@ -2,41 +2,41 @@
 name: new
 description: "Use when reasoning about new as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/new"
-coordinate: "vocabulary/new · 4/weave · 721f2aac"
-contentUuid: "5fe3e09f-0d4a-540a-8a6f-43373f92e107"
-diamondUuid: "7c1be890-3655-8998-ac28-cc3c813712b1"
-uuid: "721f2aac-0fb9-89ac-9ef5-b4fd1eebfc07"
+coordinate: "vocabulary/new · 4/weave · a05e59b2"
+contentUuid: "65258476-ddbf-5688-bf82-53327c6f34f8"
+diamondUuid: "ba8701b9-2e3a-86c6-a8f9-f9ddacdbd391"
+uuid: "a05e59b2-d2b9-8342-b70c-1feeb87d9141"
 horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 20
+  bondDegree: 16
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ba56dd3e-51b2-8269-94aa-619107484b44"
+  computationUuid: "0d3b98bf-6e8e-83c0-bfc7-ceb91efc9d9c"
   stages:
     - stage: path
       stageUuid: "8b25f000-3714-8110-a49f-ac450c9c84c1"
     - stage: trinity
       stageUuid: "f24f521c-c28d-8a72-90ab-c049a88739ab"
     - stage: boundary
-      stageUuid: "1634ce35-f972-867a-a5a5-78fa099a3a27"
+      stageUuid: "003524c1-45fe-8b53-b6d9-bae2ff9bfb10"
     - stage: links
-      stageUuid: "b29b5685-5943-840d-a70d-7bb6a0afc6f0"
+      stageUuid: "74429a9a-db19-8075-a2a7-df64d2c2cd4e"
     - stage: horo
-      stageUuid: "4924f6e4-8450-8856-bab7-bfc78f03a325"
+      stageUuid: "c9b66635-c3d5-8833-8893-6ef720acda0d"
     - stage: seal
       stageUuid: "dfadc9f8-5481-87ba-90f8-0afa4442541e"
     - stage: uuid
-      stageUuid: "7d2978db-9b4b-89fe-bf1c-3cacdd5ba6fa"
+      stageUuid: "2d6289ee-55f6-8488-9f80-4aa1e4cfced9"
 version: 2
 ---
 # new
 
 A schema.org component word, collided out of schema.org compounds — fused from isAcceptingNewPatients ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[accepting]] · [[patients]]
+Entangled with — accepting · [[patients]]
 
 Attested in schema.org — isAcceptingNewPatients
 

@@ -3,18 +3,18 @@ name: thing
 description: Use when reasoning about thing — The most generic type of item.
 atomPath: thing
 coordinate: "thing · 7/descent · 049a5c06"
-contentUuid: "943e86ff-6ab7-5863-a0f3-77a5bd2a66c1"
-diamondUuid: "481ce8ff-072f-84aa-956a-7412edddeb1a"
+contentUuid: "2451d9d7-8a48-54a2-b2f8-080b10910f90"
+diamondUuid: "fef53406-d0b4-87fb-9792-a6b59517939a"
 uuid: "049a5c06-7d43-8a8e-9099-5198faf13b5c"
 horo: 7
 typography:
   partition: thing
-  bondDegree: 574
+  bondDegree: 556
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "85170c17-41df-8ba2-b16b-dc3bc6589c01"
+  computationUuid: "89e376f9-0a3d-8391-8009-15e33e279953"
   stages:
     - stage: path
       stageUuid: "e4ab38fd-91c5-83ff-9c25-167beb95ec8b"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "bc0be038-e28a-8b57-82cd-05d573d20b59"
     - stage: horo
-      stageUuid: "a6ed0cfc-8cd9-80c6-ac41-2661d9fb4209"
+      stageUuid: "b6ec86a5-3e6c-8c2f-af9f-41ffdce03b72"
     - stage: seal
       stageUuid: "006ad9d4-80ae-8a28-89de-cbaea5d605e3"
     - stage: uuid
-      stageUuid: "a2a27884-27d8-80ed-bbd6-bcb6f36af2a1"
+      stageUuid: "b337786c-2a4c-817f-9972-3f7d4dd44c8c"
 version: 2
 ---
 # thing

@@ -2,41 +2,41 @@
 name: dated
 description: "Use when reasoning about dated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/dated"
-coordinate: "vocabulary/dated · 8/crest · e1d267e6"
-contentUuid: "65a13366-7959-5c6b-b5ba-e524b4d9c295"
-diamondUuid: "4f0780eb-ad6e-83a7-b5ca-679e6d800f83"
-uuid: "e1d267e6-98db-8dc0-a7f1-521d5533247e"
+coordinate: "vocabulary/dated · 8/crest · ee85cf1f"
+contentUuid: "a2c8b5c5-f36d-5019-9fdd-0253c3d0e143"
+diamondUuid: "48cfeaf7-2048-8e7b-b13e-8ab96c3dc782"
+uuid: "ee85cf1f-b2a9-8d68-b4df-716e12845979"
 horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 20
+  bondDegree: 16
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1daeeb06-36c3-856c-84df-107ab3cf73b9"
+  computationUuid: "49ac85c2-e41d-8563-b36f-ea8023b65861"
   stages:
     - stage: path
       stageUuid: "8dc56ac1-e211-84d9-b573-8a52a06d1d54"
     - stage: trinity
       stageUuid: "78a5cb95-55d5-81db-bf28-ad9145fa5456"
     - stage: boundary
-      stageUuid: "51340105-e31b-852e-8a8e-3a306c13ff4f"
+      stageUuid: "d16875f8-8d7b-8b6a-8bfe-f62d9eab70f3"
     - stage: links
-      stageUuid: "d4b1eff3-2869-8ca4-bfe8-d34e314fde91"
+      stageUuid: "8c6c6037-b463-8d80-8963-3ba749589e8a"
     - stage: horo
-      stageUuid: "2934ef80-5849-8dd3-a41f-2551e7ff7477"
+      stageUuid: "10f0a084-4374-8c80-9f50-d1959155f40c"
     - stage: seal
       stageUuid: "1015d44b-1543-83bf-bf75-ddc5a90303bf"
     - stage: uuid
-      stageUuid: "22ca0c45-3dbd-85dc-898a-23c6baa42f6f"
+      stageUuid: "a2ac9164-5c1a-81e8-a342-fad0f62c68e9"
 version: 2
 ---
 # dated
 
 A schema.org component word, collided out of schema.org compounds — fused from DatedMoneySpecification ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[money]] · [[specification]]
+Entangled with — [[money]] · specification
 
 Attested in schema.org — DatedMoneySpecification
 

@@ -2,14 +2,14 @@
 name: entropy
 description: "Use when reasoning about disorder as the matrix-reciprocity slack erpax's whole ledger balances — entropy() = 1 − the reciprocal-edge fraction of the uuid-matrix, an audit/aura signal, NOT an input to crackVerdict. It is a DISTINCT measure from coverage (the [0,1] fraction that prices tamper-cost via coverageCostLog2); reciprocity=1 does NOT imply coverage=1, so zero entropy does NOT by itself yield infinite cost (the live tree is the counter-example — entropy 0, coverage under 1, cost finite). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor."
 atomPath: entropy
-coordinate: "entropy · 2/share · 0501b446"
-contentUuid: "08435c50-ef0f-5b20-965a-eb119ca0ed04"
-diamondUuid: "e391cb96-5a20-8981-8e9a-59c651383c6d"
-uuid: "0501b446-2327-81e6-a2cf-942abc65d026"
-horo: 2
+coordinate: "entropy · 5/round · ec539618"
+contentUuid: "a28afc10-7248-5e54-9349-104f09db6dd9"
+diamondUuid: "56ad19b3-8caf-8f83-8768-4bb57746d984"
+uuid: "ec539618-24d3-80f5-baa7-9af0324d94a8"
+horo: 5
 typography:
   partition: entropy
-  bondDegree: 296
+  bondDegree: 266
 standards:
   - "CoE-108+"
   - "NIST-SP-800-108"
@@ -17,7 +17,7 @@ standards:
   - "NIST-SP-800-63"
 bindings: []
 signatures:
-  computationUuid: "20f09fce-440c-88ce-9904-fe65e2859929"
+  computationUuid: "6f6ec069-ccd8-8226-9ee9-223772da7b22"
   stages:
     - stage: path
       stageUuid: "0efe9321-e9d9-88cf-b054-2bbe0937a2f6"
@@ -26,13 +26,13 @@ signatures:
     - stage: boundary
       stageUuid: "bae8959f-5c9e-8d5a-b647-7f90645f048d"
     - stage: links
-      stageUuid: "be4ae167-d380-8eb2-a7a8-8d657d71b656"
+      stageUuid: "fb6d2da1-c8c3-8be3-8398-9ff6c62888bc"
     - stage: horo
-      stageUuid: "ea4cde30-0da6-88b0-95cb-7071a5e83a88"
+      stageUuid: "e60a6ef0-260d-8c6f-baf0-59effd7409d8"
     - stage: seal
       stageUuid: "e4713d70-378f-8e73-b358-b4d0581e4959"
     - stage: uuid
-      stageUuid: "5680d815-c682-8473-993d-0528ccd510bd"
+      stageUuid: "29388059-ca32-8f30-bfe7-3de076b00d09"
 version: 2
 ---
 # entropy — the matrix-reciprocity slack the whole ledger balances
@@ -41,7 +41,7 @@ version: 2
 
 **entropy() and coverage are two DISTINCT measures — do not conflate them.** The tamper-[[cost]] is priced from **coverage** — a separate [0,1] fraction (model⊕collection balance in [[balance]], or import purity, or usage), supplied explicitly to `coverageCostLog2` — and it reaches its **+∞ limit ONLY at coverage = 1**, for that one coverage axis, under an external [[anchor]] at least as strong as the digest. Reciprocity-entropy is NOT an input to that price, and there is no automatic derivation between the two: **reciprocity = 1 does NOT imply coverage = 1.** The running tree is the counter-example — it sits at `entropy() === 0` (reciprocity 100%) yet `coverage < 1`, so the modelled tamper-cost is **finite** (`src/balance/index.ts`: ∞ printed only when `coverage >= 1`). So "zero entropy ⇒ infinite cost" is NOT an automatic chain; ∞ is the coverage→1 limit of the explicit coverage parameter, not a consequence of matrix symmetry alone.
 
-**Order is created by fusing entropy out.** Every DRY collapse, every [[merge]], every [[fusion]] removes duplication — disorder — and so *lowers* entropy while *raising* mass and [[gravity]] ([[dry]] · [[collapse]]: flatten = mass = gravity). The [[fusion]] reactor (the collider + the [[society]] self-build loop) runs this continuously, pulling the corpus toward the zero-entropy [[matrix]] — the [[torus]] collapse to [[one]] root ([[zeropoint]]).
+**Order is created by fusing entropy out.** Every DRY collapse, every [[merge]], every [[fusion]] removes duplication — disorder — and so *lowers* entropy while *raising* mass and [[gravity]] ([[dry]] · [[collapse]]: flatten = mass = gravity). The [[fusion]] reactor (the collider + the [[society]] self-build loop) runs this continuously, pulling the corpus toward the zero-entropy [[matrix]] — the [[torus]] collapse to [[one]] root (zeropoint).
 
 **A violation is borrowed entropy.** When an agent's change adds a one-way `bind` (a forward edge whose reverse is missing), it *raises* the reciprocity-slack `entropy()` measures — slack a forger could ride one way. A dead/un-wired [[aura]] link is the adjacent disorder the aura/scan gate catches. The [[gate]] detects it and debits it to that agent (prosecution — the social leg of the [[cost]]): the entropy is repaid (the reverse bind added) or carried as the agent's liability. What rebalances is fused out; what cannot is conserved damage carried forward.
 
@@ -114,4 +114,4 @@ open, for the files that define and register the check.
 
 **Law — [[law]]: entropy is the matrix-reciprocity slack (`1 − reciprocal-edge fraction`) the ledger balances — an audit/aura signal, NOT an input to `crackVerdict`. The tamper-[[cost]] is priced from a DISTINCT measure, coverage, supplied explicitly to `coverageCostLog2`, and is +∞ ONLY at coverage = 1; reciprocity = 1 does NOT imply coverage = 1 (the live tree: entropy 0, coverage < 1, cost finite). Order is created by fusing entropy out ([[merge]]/DRY); a violation is borrowed entropy debited to the agent.**
 
-Composes: [[angel]] · [[balance]] · [[tamper]] · [[cost]] · [[anchor]] · [[mass]] · [[gravity]] · [[fusion]] · [[merge]] · [[dry]] · [[collapse]] · [[matrix]] · [[zeropoint]] · [[whole]] · [[one]] · [[proof]] · [[aura]] · [[gate]].
+Composes: [[angel]] · [[balance]] · [[tamper]] · [[cost]] · [[anchor]] · [[mass]] · [[gravity]] · [[fusion]] · [[merge]] · [[dry]] · [[collapse]] · [[matrix]] · zeropoint · [[whole]] · [[one]] · [[proof]] · [[aura]] · [[gate]].

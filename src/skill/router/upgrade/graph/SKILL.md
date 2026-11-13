@@ -3,13 +3,13 @@ name: graph
 description: "Use when building or verifying the corpus frontmatter connection graph — derive descriptions, compare diamond signature chains, build the undirected leaf graph, and check it spans the corpus with no orphans. The leaf primitives of the skill-upgrade flow."
 atomPath: "skill/router/upgrade/graph"
 coordinate: "skill/router/upgrade/graph · 1/base · a7e2005e"
-contentUuid: "99b99b22-6f98-5fae-8163-d88cb64c634a"
+contentUuid: "dca21e98-28d2-5be7-852d-77bfac9e7a11"
 diamondUuid: "b28e73c9-49c2-8960-9eaf-b9a731e9ab53"
 uuid: "a7e2005e-6da8-88ca-aa56-0178be061a57"
 horo: 1
 typography:
   partition: skill
-  bondDegree: 42
+  bondDegree: 41
 standards: []
 bindings: []
 signatures:

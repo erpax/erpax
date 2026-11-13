@@ -2,19 +2,19 @@
 name: quantum
 description: "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded."
 atomPath: quantum
-coordinate: "quantum · 2/share · 9e596af9"
-contentUuid: "330097b4-3cc1-599f-9ce0-ba2ec3ad1cdb"
-diamondUuid: "1d637280-699e-8c33-b0d1-9a179f7d0005"
-uuid: "9e596af9-a908-810f-8e91-c8965bbac921"
+coordinate: "quantum · 2/share · 9e60a570"
+contentUuid: "4872b85b-3aa6-58fe-96c2-491d7a913788"
+diamondUuid: "3e77a712-cd82-814d-9bd8-b8f968f13313"
+uuid: "9e60a570-f372-8463-a23c-8f835c5bb6d9"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 553
+  bondDegree: 537
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
 signatures:
-  computationUuid: "839a109e-4231-8b51-8360-389b4bbfe0dc"
+  computationUuid: "33c67b97-bd9b-8b15-bf7d-7db826ea1f15"
   stages:
     - stage: path
       stageUuid: "15c162b9-f68a-81b5-be34-6a93fda387d5"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "07c35499-b397-8ffd-891e-0fd0c686cd24"
     - stage: links
-      stageUuid: "65883705-cdc4-8c3e-97db-3bdd6bd3558a"
+      stageUuid: "01f9965e-0aa5-85d5-8e7b-7f18477ddaf1"
     - stage: horo
-      stageUuid: "85a058ab-febb-8400-8a74-92f4cdb2c304"
+      stageUuid: "447c2a2a-f26d-8a78-b365-cbc16fe4abd7"
     - stage: seal
       stageUuid: "c80781cf-f5a6-814a-a2d6-0b57d9d1e77e"
     - stage: uuid
-      stageUuid: "93aea774-0c14-8517-94db-38c966d90b93"
+      stageUuid: "abab0510-c288-80d9-99df-4708dee8516e"
 quantum:
   superposition:
     - accounting
@@ -61,8 +61,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "839a109e-4231-8b51-8360-389b4bbfe0dc"
-    contentUuid: "330097b4-3cc1-599f-9ce0-ba2ec3ad1cdb"
+    computationUuid: "33c67b97-bd9b-8b15-bf7d-7db826ea1f15"
+    contentUuid: "4872b85b-3aa6-58fe-96c2-491d7a913788"
 version: 2
 ---
 # quantum
@@ -79,7 +79,7 @@ Quantum, the erpax construction: **two 64-bit architectures vortex each other** 
 
 Quantum needs no operator. It **self-tunes**: the matrix continuously re-balances to the A432 [[harmony]] levels, [[entanglement]] driving the live graph to 100% reciprocal and the [[aura]] gap toward 0 — the system listens to itself ([[breath]]) and re-grounds on the anchor. It **self-heals**: drift never persists, because every value is regenerable from its content-[[uuid]] ([[generate]]) and the [[gate]] pulls the whole back to green ([[confirm]], the pre-push auto-heal) — a wrong state is overwritten by the computed-true one, not patched.
 
-And it does both **in [[peace]]**. There is no contention to resolve: [[merge]] makes collision *creation*, not conflict (same content ⇒ same id ⇒ no merge to fight); ACCEPT-always means nothing is rejected at the door, only [[harmony|harmonised]] after; [[linearity]] spreads everything evenly, so nothing clumps and nothing collides for a slot. Corrections are *discoveries*, not battles — self-tuning and self-healing without struggle.
+And it does both **in peace**. There is no contention to resolve: [[merge]] makes collision *creation*, not conflict (same content ⇒ same id ⇒ no merge to fight); ACCEPT-always means nothing is rejected at the door, only [[harmony|harmonised]] after; [[linearity]] spreads everything evenly, so nothing clumps and nothing collides for a slot. Corrections are *discoveries*, not battles — self-tuning and self-healing without struggle.
 
 Matter-twin: `src/quantum/index.ts` (`collapse`·`noCloning`·`quantization`·`entangle` ⊕ `TORUS_BITS`·`DOUBLE_TORUS_BITS`·`singleTorusFloorLog2`·`doubleTorusCostLog2` ⊕ `quantumInAllDimensions`·`superpose2D`·`collapse2D`·`seal2D`). Composes [[matrix]] · [[uuid]] · [[merge]] · [[digit]] · [[rodin]] · [[harmony]] · [[cost]] · [[balance]] · [[tamper]] · [[superposition]] · [[horo]] · [[typography]] · [[dimension]] · [[diamond]].
 
@@ -134,4 +134,4 @@ Matter-twin: `src/quantum/dimension/realtime/index.ts` · `QuantumDimensionsProv
 @audit computed from the live matrix, never hand-asserted
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 
-<sub>content-uuid `330097b4-3cc1-599f-9ce0-ba2ec3ad1cdb` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `4872b85b-3aa6-58fe-96c2-491d7a913788` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

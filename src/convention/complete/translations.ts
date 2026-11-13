@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking whether the corpus stays whole — the computed convention that every atom is the full trinity {SKILL.md, index.ts, test.ts}, measured live as coverage = complete / total over the real tree.",
-    "uuid": "44817777-8c74-8bb7-8674-d0ec819d4d2d",
+    "uuid": "f5c0e5e2-6622-8722-ba3f-fad3f2b2b95f",
     "words": [
       "use",
       "when",

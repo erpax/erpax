@@ -2,41 +2,41 @@
 name: enrollment
 description: "Use when reasoning about enrollment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/enrollment"
-coordinate: "vocabulary/enrollment · 1/base · 86076d1d"
-contentUuid: "33c40bf0-f8e1-58ab-b766-cfced7790646"
-diamondUuid: "0140a6df-1b74-8865-96a5-963b91709b8d"
-uuid: "86076d1d-b5c5-8332-a07d-eb1aa10bf430"
-horo: 1
+coordinate: "vocabulary/enrollment · 7/descent · f6b4fe3b"
+contentUuid: "ce3ebd91-76cb-5b42-b3b0-43311a00c121"
+diamondUuid: "73e80d95-ee25-82d1-a620-8ffa555a3fb3"
+uuid: "f6b4fe3b-690f-8294-8c6f-5963a6c79049"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 23
+  bondDegree: 20
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "86b6a7f6-6640-88c3-90cb-440a72cfde32"
+  computationUuid: "91bc68b6-4caf-801e-8b12-33fa0f862de6"
   stages:
     - stage: path
       stageUuid: "2a621542-6236-8c9b-a8f7-d0f897cbc159"
     - stage: trinity
       stageUuid: "3aeae367-96f1-8f42-9ba3-3ee4ddd26694"
     - stage: boundary
-      stageUuid: "aa8f466c-fd03-8f0b-a01d-feb0c4fda722"
+      stageUuid: "5d3566c2-3b90-8fcc-b724-637a0cf1d75a"
     - stage: links
-      stageUuid: "09852b6e-3673-89c9-927c-d9586cbddd39"
+      stageUuid: "35f6a74b-7a2f-84af-ba4c-a99c45912b2b"
     - stage: horo
-      stageUuid: "0d4fccb9-6ad3-820e-9573-44a2b682dea8"
+      stageUuid: "780b13bd-99c0-8b33-adb5-63b96bc52844"
     - stage: seal
       stageUuid: "921dc1f7-afcc-8383-ba05-2bf28a055417"
     - stage: uuid
-      stageUuid: "829eed52-5c90-8318-a967-a5a96409b190"
+      stageUuid: "0cdde390-218a-8d97-940d-18cc040160a5"
 version: 2
 ---
 # enrollment
 
 A schema.org component word, collided out of schema.org compounds — fused from maximumEnrollment · totalHistoricalEnrollment ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[maximum]] · [[total]] · [[historical]]
+Entangled with — [[maximum]] · total · [[historical]]
 
 Attested in schema.org — maximumEnrollment · totalHistoricalEnrollment
 

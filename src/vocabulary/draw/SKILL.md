@@ -2,41 +2,41 @@
 name: draw
 description: "Use when reasoning about draw as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/draw"
-coordinate: "vocabulary/draw · 1/base · 1c9fe6d4"
-contentUuid: "b9a47a24-068b-5f03-8742-672533a567b0"
-diamondUuid: "557e9698-669d-87ac-af2b-e2b060fa668a"
-uuid: "1c9fe6d4-eddb-808e-b47e-b9ea4b5289ec"
-horo: 1
+coordinate: "vocabulary/draw · 7/descent · 0a627830"
+contentUuid: "0b453a16-834f-5706-9e52-0776facb0679"
+diamondUuid: "2453654a-8b93-84a4-b85c-1f9b2652846d"
+uuid: "0a627830-0d37-8696-bac1-251f61b0bf01"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 15
+  bondDegree: 12
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "19472a0e-8ff9-8fc2-a210-dfe99436eadb"
+  computationUuid: "1ec98821-199a-855c-9382-f97ee4f523a4"
   stages:
     - stage: path
       stageUuid: "a0997cb6-d3b0-8cf3-ad80-60f71df6594d"
     - stage: trinity
       stageUuid: "90a0097a-efdd-8887-830c-58e9056f1313"
     - stage: boundary
-      stageUuid: "d9abc27b-f466-8a73-be31-bedeee00cff9"
+      stageUuid: "377d0b65-6556-82df-bdd5-93e08fe30d33"
     - stage: links
-      stageUuid: "b7bb3ab6-d5d8-8f0b-8812-78d7be4cab44"
+      stageUuid: "f9d84af4-cea1-805d-8692-c3f2cddb514f"
     - stage: horo
-      stageUuid: "14b11ac3-1ca0-8f03-a01d-7db58706c4b2"
+      stageUuid: "1e6597ba-c507-8877-9af8-384727ef6be7"
     - stage: seal
       stageUuid: "ad39bf0b-04b4-83c9-9531-d7fce3e4e5cc"
     - stage: uuid
-      stageUuid: "f0dd0609-8254-83c7-a2ff-c2d03f2aa08f"
+      stageUuid: "caf72ff8-63fe-8eeb-bed5-d98a14c09b3b"
 version: 2
 ---
 # draw
 
 A schema.org component word, collided out of schema.org compounds — fused from DrawAction ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[action]]
+Entangled with — action
 
 Attested in schema.org — DrawAction
 

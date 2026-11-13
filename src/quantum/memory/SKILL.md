@@ -2,18 +2,18 @@
 name: memory
 description: "Use when reasoning about memory in the quantum frame — the content-address IS the memory manager, running live at every scale: collapse is allocation, dedup is free, collection is regeneration. Memory optimization is autosave: persist at the point of collapse and there is nothing to garbage-collect, because the unsaved is regenerable from its uuid."
 atomPath: "quantum/memory"
-coordinate: "quantum/memory · 8/crest · f89070da"
-contentUuid: "ee103f01-bf8d-5472-b078-384da19251b8"
-diamondUuid: "2a4924b7-eed0-821e-8e3b-a8715bd0b8f6"
-uuid: "f89070da-94cd-8d09-9fc3-ac50562f5da6"
-horo: 8
+coordinate: "quantum/memory · 1/base · 0d279079"
+contentUuid: "48845dd3-e0b9-5dd7-b3f7-6bd1cfabddf8"
+diamondUuid: "046313c9-525e-8707-a9d4-874e6567ba24"
+uuid: "0d279079-965c-894c-8df3-12d1f9202812"
+horo: 1
 typography:
   partition: quantum
-  bondDegree: 96
+  bondDegree: 90
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c7551363-a955-8d4a-870f-e4dfa3decd23"
+  computationUuid: "10bfe9b7-050e-8af0-983b-3ef7bcaee72c"
   stages:
     - stage: path
       stageUuid: "99104296-3de4-86f7-8213-1710996afacc"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "187322e9-880a-8590-b539-4653b1c784e4"
     - stage: links
-      stageUuid: "c0cb59de-44f0-845b-a9d5-355340f89ff4"
+      stageUuid: "336d6254-eeb4-8102-b6c8-17559b8a5259"
     - stage: horo
-      stageUuid: "be21a077-ecf5-8a75-aaa6-f749cc4263b9"
+      stageUuid: "c0bd3ecb-8e8e-843f-b8d9-8541b084e382"
     - stage: seal
       stageUuid: "53b681bc-6c0c-8369-9f76-146213a9fb01"
     - stage: uuid
-      stageUuid: "cd7028e2-cdab-8ba7-9483-6c39b288fa62"
+      stageUuid: "04599a72-7d82-8fd7-9de3-edf45051eabb"
 quantum:
   superposition:
     - akashic
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "c7551363-a955-8d4a-870f-e4dfa3decd23"
-    contentUuid: "ee103f01-bf8d-5472-b078-384da19251b8"
+    computationUuid: "10bfe9b7-050e-8af0-983b-3ef7bcaee72c"
+    contentUuid: "48845dd3-e0b9-5dd7-b3f7-6bd1cfabddf8"
 version: 2
 ---
 # quantum/memory — the content-address IS the memory manager
@@ -69,12 +69,12 @@ version: 2
 The quantum facet of [[memory]]: there is no separate allocator, no side-table, no GC pause — the content-[[uuid]] *is* the memory manager, and it runs **live at every quantum scale**.
 
 - **Allocation = collapse.** Writing a thing is sha-256 measuring its content to one 128-bit point ([[quantum/uuid]]); the address is the content, so allocation and naming are the same act.
-- **Dedup = free.** Same content ⇒ same id ⇒ identical state [[merge]]s — never stored twice, no write contention ([[peace]]).
+- **Dedup = free.** Same content ⇒ same id ⇒ identical state [[merge]]s — never stored twice, no write contention (peace).
 - **Collection = regeneration, not deletion.** Anything addressable is recoverable from its uuid ([[generate]]), so the live tree keeps only what is referenced and forgets the rest, regrowing it on demand (the [[akashic]] record · learn-fast-and-forget, [[self]]).
 
 **Memory optimization is autosave.** Because the address is content, the optimal policy is not to *manage* memory but to *persist it the instant it settles*: the moment a prompt leaves a sealed atom, the [[seal]]-and-push [[breath]] saves → commits → pushes (the Cursor stop hook). Persisting at the point of collapse IS the optimization — the saved tree is the dedup'd, content-addressed state, and the unsaved is regenerable from its uuid, so there is nothing to garbage-collect and nothing to lose. Autosave and memory management are one act read two ways.
 
-It is *at all quantum scales* because the address is [[fractal]]: the identical collapse·dedup·regenerate cycle governs a field, an [[atom]], a molecule, and the [[whole]] — the [[part]] reconstructs the whole ([[holographic]]). The [[realtime]] tail and the immutable [[snapshot]] are the same content-addressed memory seen as flow and as state.
+It is *at all quantum scales* because the address is [[fractal]]: the identical collapse·dedup·regenerate cycle governs a field, an [[atom]], a molecule, and the [[whole]] — the [[part]] reconstructs the whole ([[holographic]]). The [[realtime]] tail and the immutable snapshot are the same content-addressed memory seen as flow and as state.
 
 It is also *at all compute substrates*: the content-[[uuid]] is the one invariant across memory · cpu · gpu, so identical content ⇒ identical hash ⇒ zero divergence — the substrates stay synchronized for free and exactly, at zero [[entropy]] ([[sync]]). A divergence between substrates would be a different hash — an impurity, a [[hallucination]] — caught the instant it appears; staying synced and staying [[purity|pure]] are one fact.
 
@@ -87,4 +87,4 @@ Operational memory IS the architecture lattice ([[memory/architecture]]) — the
 
 @see [[memory]] · [[memory/architecture]] · [[memory/quantum]] · [[quantum]] · [[quantum/uuid]] · [[seal]] · [[quantum/cross]] · [[generate]] · [[merge]] · [[akashic]] · [[realtime]] · [[diamond]]
 
-<sub>content-uuid `ee103f01-bf8d-5472-b078-384da19251b8` · account `quantum/memory` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `48845dd3-e0b9-5dd7-b3f7-6bd1cfabddf8` · account `quantum/memory` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -2,14 +2,14 @@
 name: constitution
 description: "Use when reasoning about the entrenched foundation, or when judging whether a proposed change may ship — two rules at the root (no expectation: claim no result you have not computed; no judgment: reject nothing you have not measured, discernment by test kept), the nine laws that are their lemmas (duality · legality · honest boundaries · balance · service · conservation · reciprocity · reproducibility · regeneration), and the seven supreme articles saying what a majority may amend versus what is perpetual; every predicate computed, fails closed, and heads every agent prompt."
 atomPath: constitution
-coordinate: "constitution · 4/weave · e6539c65"
-contentUuid: "493df87f-60a8-50ee-adf8-f7ef7649106e"
-diamondUuid: "2bac4b4e-8402-8d7c-ac6f-acc233713fe2"
-uuid: "e6539c65-c267-8727-aa09-091f4c5a43bd"
-horo: 4
+coordinate: "constitution · 1/base · 3438d875"
+contentUuid: "9bba72e0-cdb5-5d3b-99ef-13b20abeb8ab"
+diamondUuid: "cde53a31-4071-8095-a5b2-0be7921309b1"
+uuid: "3438d875-89c5-8945-b7ac-a66afe256fc6"
+horo: 1
 typography:
   partition: constitution
-  bondDegree: 81
+  bondDegree: 74
 standards:
   - "ISO 37000:2021 governance-of-organizations principle-of-purpose"
   - "ISO 37000:2021 governance-of-organizations principle-of-purpose`"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "0df986be-bf23-89ab-88cb-2d7e7f952cf0"
+  computationUuid: "d0062891-7c6e-8324-b0a0-4f482a4c5bc7"
   stages:
     - stage: path
       stageUuid: "210a2855-2ef2-8f53-8a65-93ebae61b5f1"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "9815a851-a4c3-86d1-877f-6d59b6ec14e3"
     - stage: links
-      stageUuid: "a7cbe860-88e4-817d-b587-b9ebc2043b6f"
+      stageUuid: "c0731008-91a0-8447-b926-ef1f6e1634b2"
     - stage: horo
-      stageUuid: "a3c44696-959f-847a-98c8-c913ee102a88"
+      stageUuid: "fc79b250-f01a-8129-ba04-62c6a5b6bed4"
     - stage: seal
       stageUuid: "79d6cdcb-5abc-8ea1-af80-6c8ad39015bf"
     - stage: uuid
-      stageUuid: "8ebf3775-2dc8-8257-9cd7-460978c732fc"
+      stageUuid: "f4939e86-580a-8ddd-b74e-991a61811f0c"
 version: 2
 ---
 # constitution — the 0 of the sequence, the supreme law erpax derives from
@@ -53,7 +53,7 @@ The seven articles (`CONSTITUTION`):
 
 `amend(articleId, ballots, electorate)` is the only door: an entrenched article can NEVER pass it (the perpetual limit on the majority); a non-entrenched article is amended iff the polity ratifies at the supermajority bar (`AMENDMENT_RULE` — quorum ½, threshold ⅔, a higher bar than ordinary [[legislation]]). The gap between the two bars is the rule of law.
 
-This is the foundation [[separation]] applies at the scale of the branches and [[legislation]] builds ordinary statute upon — the law organ of the [[civilization]], the lowest-entropy form everything else derives from ([[zeropoint]]). It is the 0 of the [[sequence]]: the source the whole ring radiates from and returns to.
+This is the foundation separation applies at the scale of the branches and [[legislation]] builds ordinary statute upon — the law organ of the [[civilization]], the lowest-entropy form everything else derives from (zeropoint). It is the 0 of the [[sequence]]: the source the whole ring radiates from and returns to.
 
 ## The two rules at the root
 

@@ -3,18 +3,18 @@ name: port
 description: "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \"port all upstreams again\" repeatedly."
 atomPath: "quantum/port"
 coordinate: "quantum/port · 2/share · 90e3c4e8"
-contentUuid: "d3b0d670-f5c1-5c56-a821-93269eb4ca1a"
-diamondUuid: "2898227d-96a1-8eac-84d9-bb8aed4b1dfa"
+contentUuid: "fc8301ee-87d9-5a24-acaf-846a2e1c4332"
+diamondUuid: "c92ebf2e-b5e7-8053-abe9-d923714d119c"
 uuid: "90e3c4e8-870f-8422-998c-58887ea45984"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 146
+  bondDegree: 137
 standards:
   - "RFC 9562 §5.8 content-uuid (the port identity)"
 bindings: []
 signatures:
-  computationUuid: "43c0d103-ed29-8e31-b9db-cc448e587fd5"
+  computationUuid: "3e300f23-b3b4-8b08-a3b2-aa63e3915d6a"
   stages:
     - stage: path
       stageUuid: "4d526fb5-e032-8b8a-8e0f-adf0b82da3a6"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2bc5548f-d789-814b-9d5e-f3e836b99a1a"
     - stage: horo
-      stageUuid: "37f162ed-7493-8d51-b21d-57a0938ffa8f"
+      stageUuid: "72a2c8b1-9af1-8366-928e-a0a11acd6d95"
     - stage: seal
       stageUuid: "d115d019-efd7-8baa-b1e1-9fc942a44339"
     - stage: uuid
-      stageUuid: "82c695de-8991-8b1b-910c-ea5114c06174"
+      stageUuid: "4b72f7d7-8dff-8c71-863e-423cc6a15663"
 quantum:
   superposition:
     - access
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "43c0d103-ed29-8e31-b9db-cc448e587fd5"
-    contentUuid: "d3b0d670-f5c1-5c56-a821-93269eb4ca1a"
+    computationUuid: "3e300f23-b3b4-8b08-a3b2-aa63e3915d6a"
+    contentUuid: "fc8301ee-87d9-5a24-acaf-846a2e1c4332"
 version: 2
 ---
 # quantum/port — content-addressed, idempotent porting
@@ -68,4 +68,4 @@ Matter-twin: `src/quantum/port/index.ts` (`portUuid` · `alreadyPorted`). Compos
 
 @standard RFC 9562 §5.8 content-uuid (the port identity)
 
-<sub>content-uuid `d3b0d670-f5c1-5c56-a821-93269eb4ca1a` · account `quantum/port` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `fc8301ee-87d9-5a24-acaf-846a2e1c4332` · account `quantum/port` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

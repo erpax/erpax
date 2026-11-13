@@ -2,41 +2,41 @@
 name: photograph
 description: Use when reasoning about photograph — A photograph.
 atomPath: "vocabulary/photograph"
-coordinate: "vocabulary/photograph · 7/descent · 05e772ad"
-contentUuid: "cf7870d6-70dc-5d64-8c46-2a8ae4db8c6a"
-diamondUuid: "be7527c5-d734-83b9-9f81-760e1c91f2e8"
-uuid: "05e772ad-6128-8839-8dae-d4b10d9ea5f1"
-horo: 7
+coordinate: "vocabulary/photograph · 4/weave · 54f8acae"
+contentUuid: "a818f9fa-b453-5b20-9fa0-b0c15acf884f"
+diamondUuid: "b0fc8ab0-5784-8e9a-9b67-fb9016aa6cd3"
+uuid: "54f8acae-e4d9-8553-b45f-fa45c9e3205d"
+horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 6
+  bondDegree: 3
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "58a2d04c-56ac-81b9-91ca-481aae2c030b"
+  computationUuid: "de8051b2-2ce9-8793-ad5a-b0ffd96b33f4"
   stages:
     - stage: path
       stageUuid: "731c3819-9c7a-8fff-889a-b3038d3504e9"
     - stage: trinity
       stageUuid: "f968f427-dd49-8abc-95d8-8f60bf115ff1"
     - stage: boundary
-      stageUuid: "d291075f-8f74-8822-89b9-11d38e141cff"
+      stageUuid: "916028d1-400c-8e8b-8a7c-952696fa723c"
     - stage: links
-      stageUuid: "4431eed9-7b2c-8a8c-82b1-3a4cc7bfa4d3"
+      stageUuid: "8d68f933-52fd-892c-9f5d-34ca7522bb1c"
     - stage: horo
-      stageUuid: "a7ad7ee2-202d-8c6e-bb3b-b13a2feda306"
+      stageUuid: "37f8a5c2-9b1d-83d0-8c7e-9ee665bee128"
     - stage: seal
       stageUuid: "7ba84a56-c45e-8645-b65f-afb5324a88c1"
     - stage: uuid
-      stageUuid: "8d763bd6-00e4-8bf5-bd83-c70d7616cfdf"
+      stageUuid: "2537c99f-1850-872b-b7ed-16a33dc01836"
 version: 2
 ---
 # photograph
 
 A photograph.
 
-Entangled with — [[action]]
+Entangled with — action
 
 Attested in schema.org — Photograph · PhotographAction
 

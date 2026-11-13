@@ -3,17 +3,17 @@ name: live
 description: "Use when reasoning about live — records a version and a content-uuid per package. records a DOI. Both are *claims made locally*, and until now nothing asked the registries whether either was true."
 atomPath: "publish/live"
 coordinate: "publish/live · 5/round · d892ceec"
-contentUuid: "9a4ddba0-6e6d-5823-949c-8d7d73776b16"
-diamondUuid: "d7a4b344-1203-801e-97aa-e6cee726a09d"
+contentUuid: "e0e1f7bb-b9b8-522d-b2a9-ee49eb3e5f5f"
+diamondUuid: "51af1661-987e-8db3-88aa-669a8b8dfd78"
 uuid: "d892ceec-39c2-8f3a-8e67-26cfb73b79aa"
 horo: 5
 typography:
   partition: publish
-  bondDegree: 41
+  bondDegree: 37
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6e38d64b-fab3-87a5-bb73-2c73d79aff9d"
+  computationUuid: "67ba53c8-c97f-85f4-ad99-f5a7027fd409"
   stages:
     - stage: path
       stageUuid: "32f2b94a-ec93-802b-b22e-af589a4b8c95"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "9b9f9d4e-29eb-8306-9cb6-7687f3d31677"
     - stage: horo
-      stageUuid: "59e3cdda-af1c-8f9c-a979-e91dfeea91d0"
+      stageUuid: "ce9bc929-48cd-8145-be39-95d0e8b3574e"
     - stage: seal
       stageUuid: "250d9a11-c873-89b4-b190-1377176a9961"
     - stage: uuid
-      stageUuid: "4775f162-f5e5-8898-be44-0ce73e2ec61a"
+      stageUuid: "840e3bea-a2d3-83f8-8068-50e34ad885af"
 version: 2
 ---
 # publish/live — a release is not what the manifest says, it is what the registry answers

@@ -3,19 +3,19 @@ name: audit
 description: "Use when reasoning about audit — builds each tenant's standardised monthly audit file for the month that has closed — is what decides which — and submits it where an mTLS submitter is wired."
 atomPath: "jobs/audit"
 coordinate: "jobs/audit · 5/round · faa512de"
-contentUuid: "0c5b04d3-13a5-55de-be28-d3e38811791d"
-diamondUuid: "0f170773-a466-8d25-94a4-9e7cf489988d"
+contentUuid: "d4c2562e-25a4-5a82-b419-927862dd69c1"
+diamondUuid: "f31aa2e7-9d23-886a-9b96-cf5890f33a8a"
 uuid: "faa512de-5f68-85cf-ac1a-114a8c691358"
 horo: 5
 typography:
   partition: jobs
-  bondDegree: 138
+  bondDegree: 129
 standards:
   - "BG Наредба-Н-18 §Приложение-38 monthly-audit-file"
   - "Naredba-N-18"
 bindings: []
 signatures:
-  computationUuid: "3be6f4e1-7b63-8a56-a47f-8a85f415545b"
+  computationUuid: "4532de24-a25a-8366-8183-0394e8422874"
   stages:
     - stage: path
       stageUuid: "ec61f366-3cfe-82d1-a06d-50dce9a012ae"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "df42c74a-9ad6-8de1-90a4-f03477c987f7"
     - stage: horo
-      stageUuid: "925a0ba7-7726-8b70-93a1-2235efaed41a"
+      stageUuid: "d5e449cc-f9af-8577-8682-b41f515f4035"
     - stage: seal
       stageUuid: "0c1bef98-6bde-8325-833f-db7dec038455"
     - stage: uuid
-      stageUuid: "ada54f1e-146a-87b9-9ed2-aa4654a0a2af"
+      stageUuid: "d1bf5e43-0a67-803e-b5be-78aca96d74b1"
 version: 2
 ---
 # jobs/audit — Приложение-38 is due by the 15th, so the job builds the PRIOR month

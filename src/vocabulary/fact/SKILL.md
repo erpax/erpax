@@ -2,41 +2,41 @@
 name: fact
 description: "Use when reasoning about fact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fact"
-coordinate: "vocabulary/fact · 5/round · b4196cef"
-contentUuid: "d568d4c6-a921-543f-a97f-3e3bdba2ca91"
-diamondUuid: "2aef471d-3f12-8a90-bb3f-d64f4f1666b6"
-uuid: "b4196cef-f6a4-8e5c-8a5b-b6bb7a2fead0"
+coordinate: "vocabulary/fact · 5/round · 733c2895"
+contentUuid: "652d5889-72af-548c-b571-9f298786b1dc"
+diamondUuid: "985c8760-f098-8f21-b478-31784bbac654"
+uuid: "733c2895-335b-8bc1-a735-a405c554379e"
 horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 24
+  bondDegree: 20
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a932084f-1d3b-85cf-9b58-023c0e6c91ef"
+  computationUuid: "c355e569-cee0-8d02-8cc0-6c6f15dd9436"
   stages:
     - stage: path
       stageUuid: "428f1d95-f2e4-8038-b8f8-28c1f1cd56da"
     - stage: trinity
       stageUuid: "7359bdbd-e1a3-81c0-9887-b2db9d52b880"
     - stage: boundary
-      stageUuid: "1a2d629c-9240-8013-972f-c89a1f235f11"
+      stageUuid: "7f8a8968-6588-8e6e-ab55-e3eba3808169"
     - stage: links
-      stageUuid: "30554583-ba41-88fb-8574-72fb535ca56d"
+      stageUuid: "1bbd2582-1c4a-8dc8-9118-2bde19dfc803"
     - stage: horo
-      stageUuid: "884d666a-3015-8f0c-9ced-d106b15016f8"
+      stageUuid: "6e85a5ed-eabd-86be-85e7-4bc2b13c9b5a"
     - stage: seal
       stageUuid: "1eb559ee-84e4-890f-be3a-b5c6f0e45044"
     - stage: uuid
-      stageUuid: "85f0c7b1-ed32-8ef0-aa77-5ccb0ad6c3ee"
+      stageUuid: "ce11ea7e-214a-804e-bbc1-ddc5f85f58cd"
 version: 2
 ---
 # fact
 
 A schema.org component word, collided out of schema.org compounds — fused from verificationFactCheckingPolicy ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[verification]] · [[checking]] · [[policy]]
+Entangled with — verification · [[checking]] · [[policy]]
 
 Attested in schema.org — verificationFactCheckingPolicy
 

@@ -2,41 +2,41 @@
 name: shop
 description: "Use when reasoning about shop as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: shop
-coordinate: "shop · 7/descent · c3f53135"
-contentUuid: "5e080f04-a725-5cfd-bc91-74e1fdceb59a"
-diamondUuid: "6c6aadc1-89be-8aaa-8b45-2042787260aa"
-uuid: "c3f53135-f4e5-8b8f-ad68-571760fe2509"
-horo: 7
+coordinate: "shop · 5/round · d3463751"
+contentUuid: "eb84d351-56f3-5a4e-99df-0081bc039275"
+diamondUuid: "f921a828-892b-8b69-b56b-7c9743049a68"
+uuid: "d3463751-47e5-8d8f-af29-80ec26365d45"
+horo: 5
 typography:
   partition: shop
-  bondDegree: 54
+  bondDegree: 50
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "254053e7-e34b-87ad-8ffd-d7bafe2b6bb9"
+  computationUuid: "78e9216b-deea-8ead-abfa-ab231cf669a3"
   stages:
     - stage: path
       stageUuid: "0d86ce93-d2b3-8d7d-b3d1-6530a0746d02"
     - stage: trinity
       stageUuid: "7a053905-c19a-898b-a51c-ff174524c88d"
     - stage: boundary
-      stageUuid: "749eb668-b1b4-83e3-8c02-077e30ef8e5f"
+      stageUuid: "df829cb5-857c-8529-bcaa-055cf60de0dd"
     - stage: links
-      stageUuid: "a3e13d48-e82f-8f07-a291-432c462c2835"
+      stageUuid: "22139818-6eb9-873b-8206-ef6961ce47e5"
     - stage: horo
-      stageUuid: "f2575eb4-8e83-8e37-a1fb-0b4fec9974d8"
+      stageUuid: "fcc9e741-6d92-87d2-99df-4d71825cc9ae"
     - stage: seal
       stageUuid: "648faab1-847d-893a-b4e6-a1bfaa28dc86"
     - stage: uuid
-      stageUuid: "de0d62ca-87ae-8800-b977-d05cff431ac8"
+      stageUuid: "5dd0fe67-6e0d-82b2-9293-abe8501c56d5"
 version: 2
 ---
 # shop
 
 A schema.org component word, collided out of schema.org compounds — fused from AutoBodyShop · CafeOrCoffeeShop · HobbyShop · IceCreamShop · PawnShop · TireShop ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[auto]] · [[body]] · [[cafe]] · [[coffee]] · [[hobby]] · [[ice]] · [[cream]] · [[pawn]] · [[tire]]
+Entangled with — [[auto]] · [[body]] · [[cafe]] · [[coffee]] · [[hobby]] · [[ice]] · [[cream]] · [[pawn]] · tire
 
 Attested in schema.org — AutoBodyShop · CafeOrCoffeeShop · HobbyShop · IceCreamShop · PawnShop · TireShop
 

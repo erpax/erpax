@@ -3,17 +3,17 @@ name: cipher
 description: "Use when reasoning about cipher — Ciphertext-only receipts that seal plaintext boundaries"
 atomPath: "quantum/fold/cipher"
 coordinate: "quantum/fold/cipher · 8/crest · 89d1b476"
-contentUuid: "24c8fc4e-9250-5cd0-9825-2ae2d59db28f"
-diamondUuid: "30257564-b280-8b06-80c1-d08f26de0cc6"
+contentUuid: "a685763a-8065-5f08-b36a-be90309909e0"
+diamondUuid: "f518f1b1-ad11-8ee0-b3a6-19b8005242b4"
 uuid: "89d1b476-0f6d-87d7-bbf5-f1d4e9ef4050"
 horo: 8
 typography:
   partition: quantum
-  bondDegree: 15
+  bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fdb8c512-306f-8779-877e-dd69cb7f1601"
+  computationUuid: "d616a963-b012-85dd-9d5b-4a5eae421299"
   stages:
     - stage: path
       stageUuid: "30b4519c-efbf-8aac-9fa0-63b6d6ca5b12"
@@ -24,16 +24,15 @@ signatures:
     - stage: links
       stageUuid: "c0cbd541-1ba1-8ee8-bf5f-2314528efe5d"
     - stage: horo
-      stageUuid: "cea2c304-0e8d-8926-b6d9-cf78d2a469d2"
+      stageUuid: "099f452e-8dad-8f28-818f-02b2eb5e6d47"
     - stage: seal
       stageUuid: "22df6bd3-7788-8985-bfef-a25d6a4d2f16"
     - stage: uuid
-      stageUuid: "deb0283e-a116-8aec-bdb2-0205917476fd"
+      stageUuid: "4bc02a3b-96c4-8acc-87a0-ba8cf7fa3dc8"
 quantum:
   superposition:
     - fold
     - law
-    - publication
     - quantum
     - seal
     - trinity
@@ -47,8 +46,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "fdb8c512-306f-8779-877e-dd69cb7f1601"
-    contentUuid: "24c8fc4e-9250-5cd0-9825-2ae2d59db28f"
+    computationUuid: "d616a963-b012-85dd-9d5b-4a5eae421299"
+    contentUuid: "a685763a-8065-5f08-b36a-be90309909e0"
 version: 2
 ---
 # cipher — ciphertext-only receipts, plaintext sealed
@@ -125,4 +124,4 @@ imports @/algebra
 
 Composes: [[seal]] · [[quantum]] · [[law]]
 
-<sub>content-uuid `24c8fc4e-9250-5cd0-9825-2ae2d59db28f` · account `quantum/fold/cipher` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `a685763a-8065-5f08-b36a-be90309909e0` · account `quantum/fold/cipher` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

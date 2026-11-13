@@ -2,42 +2,42 @@
 name: license
 description: "Use when a contract grants a right to use IP/goods — licensor, licensee, scope (exclusive vs. non-exclusive, sublicense rights), term, fees, restrictions, termination."
 atomPath: "vocabulary/license"
-coordinate: "vocabulary/license · 4/weave · ab1c26ba"
-contentUuid: "d8d46504-c417-5730-be0b-187e65cbc342"
-diamondUuid: "544a4f51-67c0-851f-bc78-bd86f2c1a29f"
-uuid: "ab1c26ba-98ab-8fa1-bda1-88ad867f332d"
-horo: 4
+coordinate: "vocabulary/license · 5/round · 20c217b6"
+contentUuid: "4115b156-0146-529c-aecb-d17f62133ee2"
+diamondUuid: "4f5e140c-7063-8477-b3bf-8930deca9c55"
+uuid: "20c217b6-e0f2-8752-9e79-b45ce8717ca3"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 29
+  bondDegree: 21
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c53c0d99-f804-8dcd-94b9-09230ca4c1c8"
+  computationUuid: "cfc74c90-724e-8b93-9cdc-d785c0d6475d"
   stages:
     - stage: path
       stageUuid: "48b2a27b-8437-8144-95a8-1079e87928a5"
     - stage: trinity
       stageUuid: "7eb99acc-5f9b-85c6-9bb2-d7fbdea9b6b6"
     - stage: boundary
-      stageUuid: "e741f4dc-b8bc-8d92-bbff-e581938ab5a9"
+      stageUuid: "c00bf8ab-71cf-8693-abf3-a049ef19035e"
     - stage: links
-      stageUuid: "9621bea8-b663-8c8c-80af-b9122373271a"
+      stageUuid: "15fdd999-1488-8b8a-a578-849cc618e2ec"
     - stage: horo
-      stageUuid: "f2a40052-4619-8fc4-b407-8cb29cc7cab4"
+      stageUuid: "4712365e-33a0-88b9-aa23-8d817dc663d8"
     - stage: seal
       stageUuid: "a36d242b-3c92-87c4-bb47-d726d9e2ced5"
     - stage: uuid
-      stageUuid: "08e94a60-ab0c-8195-a3bb-df58e1e99aaa"
+      stageUuid: "b50afee3-1f18-8930-862c-716e78878993"
 version: 2
 ---
 # license
 
 Use when a contract grants a right to use IP/goods — licensor, licensee, scope (exclusive vs. non-exclusive, sublicense rights), term, fees, restrictions, termination.
 
-Composes: [[Contracts]] · [[matter]] · [[restriction]] · [[termination]].
+Composes: [[Contracts]] · [[matter]] · restriction · termination.
 
-**Law — [[law]]: a license is a contract granting a right to use IP/goods — licensor to licensee, scoped (exclusive vs non-exclusive, sublicense) and bounded by term, fees, [[restriction]], and [[termination]].**
+**Law — [[law]]: a license is a contract granting a right to use IP/goods — licensor to licensee, scoped (exclusive vs non-exclusive, sublicense) and bounded by term, fees, restriction, and termination.**
 
 ## Standards
 - UCC-2-103

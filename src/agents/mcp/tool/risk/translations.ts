@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about risk — measures large exposures against Tier 1 capital (CRR Art. 392/395).",
-    "uuid": "85f299cb-ab70-801b-9fdf-e00c48a8b7ba",
+    "uuid": "6ea3250e-4ff1-89e6-b524-7fb5f8fe0c55",
     "words": [
       "use",
       "when",

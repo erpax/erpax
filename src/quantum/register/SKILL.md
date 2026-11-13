@@ -3,13 +3,13 @@ name: register
 description: "Use when a quantum state must be DECIDED rather than approximated — an exact-amplitude register (integer amplitudes, halvings instead of division) with H · X · Z · CNOT · SWAP, the Bell and GHZ states, a determinant entanglement witness, enumerated shots, and the one Float Born normaliser the three Float copies fold onto; kernel-checked twin in Register.lean."
 atomPath: "quantum/register"
 coordinate: "quantum/register · 7/descent · 376eb7ab"
-contentUuid: "dad892fb-9b26-55c5-b836-cfe6729fa356"
+contentUuid: "16e12708-0c67-531a-a47a-f59d3363d811"
 diamondUuid: "25d80b62-20f8-86de-94a7-3558951c422a"
 uuid: "376eb7ab-1e28-8dea-b6ff-db1f89f819eb"
 horo: 7
 typography:
   partition: quantum
-  bondDegree: 26
+  bondDegree: 25
 standards:
   - "Nielsen & Chuang §1.3.6 — the Bell state as H then CNOT"
 bindings: []
@@ -49,7 +49,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "8d365cac-2490-8d12-87e2-741b91ff15ad"
-    contentUuid: "dad892fb-9b26-55c5-b836-cfe6729fa356"
+    contentUuid: "16e12708-0c67-531a-a47a-f59d3363d811"
 version: 2
 ---
 # quantum/register — the Bell state is an integer identity, or it is a Float that proves nothing
@@ -137,4 +137,4 @@ where a Float must remain, give it one address so the seam between approximate a
 
 Composes: [[quantum]] · [[superposition]] · [[qubit]] · [[rules]]/copy · [[law]].
 
-<sub>content-uuid `dad892fb-9b26-55c5-b836-cfe6729fa356` · account `quantum/register` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `16e12708-0c67-531a-a47a-f59d3363d811` · account `quantum/register` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

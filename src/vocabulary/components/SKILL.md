@@ -2,33 +2,33 @@
 name: components
 description: "Use when building or debugging the erpax React UI — server-component-first Next.js App Router views, Lexical/Payload block renderers, admin panels, dashboards, widgets, and shared primitives — the society's FACE, the rendered surface where matter meets the eye."
 atomPath: "vocabulary/components"
-coordinate: "vocabulary/components · 8/crest · ca5feb7e"
-contentUuid: "daf49206-289f-54a7-bb3d-cb118e82541b"
-diamondUuid: "317b4fd1-0b28-8854-bf8e-edd7b033b544"
-uuid: "ca5feb7e-e670-87d4-8f50-30aa6ccbc991"
-horo: 8
+coordinate: "vocabulary/components · 2/share · a3db288a"
+contentUuid: "d2d525a0-745f-56d5-bbce-cbf08de6aa82"
+diamondUuid: "94d3101d-5404-82fb-b61f-24d2a9711a3c"
+uuid: "a3db288a-b516-8c7b-81ae-36b05e7957c6"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 36
+  bondDegree: 30
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6887bd8e-08e9-81a7-92a5-3b3c15cf294b"
+  computationUuid: "778745d5-1899-8c76-95d1-c974b4b2acbd"
   stages:
     - stage: path
       stageUuid: "3c13ab03-94be-8703-acd3-9b39b2a94b38"
     - stage: trinity
       stageUuid: "c2eaaf64-06f8-8f89-8cce-b44fddcb8a7e"
     - stage: boundary
-      stageUuid: "b0d86a90-4e2e-8963-a343-7239ccf3eb8e"
+      stageUuid: "5333a23e-cdbb-8cfe-912f-4c2b11477b72"
     - stage: links
-      stageUuid: "4fa8c4da-6762-8de2-9673-676da5a0a55c"
+      stageUuid: "1cd07145-a16c-8f82-98ff-2ed51b8ac5b0"
     - stage: horo
-      stageUuid: "cd4e2dab-eaee-8843-8487-4359485c6d9a"
+      stageUuid: "4de9c0c3-c25a-8131-8c75-78ffef15afb0"
     - stage: seal
       stageUuid: "cfdb073d-ebc5-8ca4-a865-58bca7c71359"
     - stage: uuid
-      stageUuid: "2b6cbdd7-d069-8bd4-97c4-b89802b2811c"
+      stageUuid: "0a3d6564-0d66-8adc-843f-811a8d195190"
 version: 2
 ---
 # components — the rendered face of the society
@@ -38,4 +38,4 @@ Components is the React library that renders erpax to the eye. **Server-componen
 **The law is the README, not per-file repetition.** `src/components/README.md` is this organ's constitution: the cross-cutting standards (W3C HTML5, WAI-ARIA 1.2, schema.org, BCP-47, WCAG 2.1 AA, EN 301 549, EAA) apply to **every** file in the tree; a `@standard`/`@compliance` JSDoc banner appears ONLY at an entry point (a block `config.ts`, a component root) and ONLY when it carries a standard *beyond* that list (78 files do). A leaf inherits the tree's standards silently — this is [[collapse]] at the doc scale: one declaration governs the whole. Naming is fixed (`Foo/config.ts` block def · `Foo/index.tsx` server · `Foo/Component.client.tsx` client boundary).
 
 Matter-twin: `src/components/README.md` (the law) · `blocks/*/config.ts` + `RenderBlocks.tsx` (the [[lexical]] block renderers) · `Dashboard.tsx` + `widgets/*` (the admin face) · `shared/index.ts` + `ui/*` (the primitives).
-Composes [[component]] · [[lexical]] · [[admin]] · [[config]] · [[design]] · [[accessibility]] · [[theme]] · [[standard]] · [[trinity]] · [[fractal]] · [[collapse]].
+Composes [[component]] · [[lexical]] · [[admin]] · [[config]] · design · [[accessibility]] · theme · [[standard]] · [[trinity]] · [[fractal]] · [[collapse]].

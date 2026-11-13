@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "swarm",
-    "uuid": "710eb9f4-e01b-8ddf-bd00-30c2e48aa659",
+    "uuid": "67a618b3-7205-850e-b75d-71cb857e8afb",
     "words": [
       "swarm"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about swarm — A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of tasks and produces an assignment across N agents.",
-    "uuid": "8903e2cb-989c-8bf0-affa-c494ef997157",
+    "uuid": "700bf449-b26f-8814-933f-644fcfa9a351",
     "words": [
       "use",
       "when",

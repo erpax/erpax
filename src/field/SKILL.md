@@ -3,17 +3,17 @@ name: field
 description: "Use when defining or debugging Payload fields — choosing a field type, shared field props (name, required, index, unique, defaultValue, validate, access, hooks, admin), relationships, arrays/blocks/groups/tabs, selects, or virtual/join fields."
 atomPath: field
 coordinate: "field · 4/weave · 0893b414"
-contentUuid: "1074b5e9-97dd-5b5a-84b6-2833d806efe7"
-diamondUuid: "90fcf46b-dabe-846c-96a3-54aa4c806d9b"
+contentUuid: "8e0ae0dd-e155-5fc1-a977-91ebad5d2d97"
+diamondUuid: "f2062279-0f16-84d9-84ea-d33f98519f38"
 uuid: "0893b414-e3bd-8780-b6c4-92f0c92e83a0"
 horo: 4
 typography:
   partition: field
-  bondDegree: 355
+  bondDegree: 334
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0f5d25e2-3555-80c0-8fb3-68f68afb18ef"
+  computationUuid: "25e61523-8f09-8509-8a8b-c3eccde3c746"
   stages:
     - stage: path
       stageUuid: "63942086-e203-880a-9c04-a767a049c834"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "b60ade56-b0d6-8a76-92f5-773e54b48b17"
     - stage: horo
-      stageUuid: "8752a1f2-2cca-8b8d-b3db-dec8190d19d9"
+      stageUuid: "0bc8bf08-19d5-8875-8cfb-ed96a7bad261"
     - stage: seal
       stageUuid: "11d912a1-7f7c-8b03-96d7-3935b81a1c47"
     - stage: uuid
-      stageUuid: "a5b80f54-d0da-8b34-a170-e816e8f8d78f"
+      stageUuid: "89a024d5-e918-86af-bd60-518465f49283"
 version: 2
 ---
 # fields — Payload field building blocks (position 1, start of the material cycle)

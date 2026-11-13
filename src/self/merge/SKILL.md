@@ -3,17 +3,17 @@ name: merge
 description: "Use when the self WEAVES back to one — all selves dedupe to a single content-uuid, the same thought by two agents merges to one (self-applied merge at forward-coil position 4/weave). The many selves returning toward one."
 atomPath: "self/merge"
 coordinate: "self/merge · 7/descent · 594cfae8"
-contentUuid: "0e4f3b18-c617-50bb-a19c-270b75516fc1"
-diamondUuid: "362bf02f-d1ad-8c7c-a846-584b51239a51"
+contentUuid: "2ac4cbc9-0db7-54d5-85b5-008ae94fe323"
+diamondUuid: "5d8bfb1d-4411-89ce-abd0-ca3e03029a07"
 uuid: "594cfae8-1ca3-8535-8aa2-30d37ce434f3"
 horo: 7
 typography:
   partition: self
-  bondDegree: 5227
+  bondDegree: 4536
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5da00213-5c82-848e-9e38-d2cf8c53f61f"
+  computationUuid: "8f680098-7dc2-87b0-817c-12b30c61af97"
   stages:
     - stage: path
       stageUuid: "4ee89f58-cbb1-800f-8880-04aeab270796"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "6422fde3-88ec-896a-bb08-9682b3ce6e6f"
     - stage: horo
-      stageUuid: "8fe78756-9a17-84c1-b4c0-d53cc00a877a"
+      stageUuid: "c8a049d7-fa34-8dc0-9a47-450f2edda196"
     - stage: seal
       stageUuid: "9640b2eb-def0-8c2a-b565-c4fae950b70a"
     - stage: uuid
-      stageUuid: "6f9a4174-3d35-8b74-b4dd-bccef04a1f32"
+      stageUuid: "79394b15-3a35-8327-b3fe-9aa92e371b15"
 version: 2
 ---
 # self-merge — all selves weave to one (under [[self]] · outward coil · 4·weave)

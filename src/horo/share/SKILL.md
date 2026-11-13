@@ -2,40 +2,40 @@
 name: share
 description: "Use when reasoning about a portion of a whole allocated to a member who joins — horo position 2 (digit 2, the first doubling: one becomes two, the whole splits, value allocated). Its domain instance is a proportional, contingent claim on a pooled whole under shared risk: the CSA share (prepaid box of whatever the farm harvests), equity share, profit share — the inverse of a fixed order."
 atomPath: "horo/share"
-coordinate: "horo/share · 7/descent · 5365f587"
-contentUuid: "0f102744-6a0d-5111-8c13-6c5903ad653b"
-diamondUuid: "124e3db5-a000-87d9-b6cd-a516d2167375"
-uuid: "5365f587-9e55-8005-aab2-5ac453df7fa3"
-horo: 7
+coordinate: "horo/share · 5/round · 6663b38a"
+contentUuid: "c1c75743-3d18-5aa5-947f-5e391fa5df65"
+diamondUuid: "a7e59187-2266-8250-95ce-9f6ee918ce79"
+uuid: "6663b38a-3d2c-855d-8a49-fc6b9edb3da4"
+horo: 5
 typography:
   partition: horo
-  bondDegree: 108
+  bondDegree: 102
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c34d18a1-18b3-8394-b263-0f906641f109"
+  computationUuid: "c7c1619f-aa2b-8dbc-aeb2-fa862a452562"
   stages:
     - stage: path
       stageUuid: "342dad34-4df1-8ac5-a0c9-166a472e3f65"
     - stage: trinity
       stageUuid: "948f88b6-f3cb-891c-a4f0-7ed486359990"
     - stage: boundary
-      stageUuid: "8e712d7d-1c6d-8c6c-a23d-44f268bea398"
+      stageUuid: "509b260c-99f4-8a83-a333-354799311c4b"
     - stage: links
-      stageUuid: "29a75327-1d79-8567-b856-29d00b08529c"
+      stageUuid: "68d5239e-bfb1-8e0c-a821-62eb6b3745b8"
     - stage: horo
-      stageUuid: "8556f5ab-3ef6-80e8-8f2f-87512d591a18"
+      stageUuid: "a7728dbf-728b-8846-b84d-00d3817c57d2"
     - stage: seal
       stageUuid: "835c8bbe-ee81-83ff-b3b7-2f64eafff525"
     - stage: uuid
-      stageUuid: "13bb4d6d-c61d-8fba-810b-e02555d70024"
+      stageUuid: "efc23f3d-ca42-82e3-889d-28f6ed4ee33d"
 version: 2
 ---
 # share — horo position 2: the whole splits, a member joins, a portion is allocated
 
 `share` is the **second** step of the [[horo]] ring — digit `2`, the first doubling of the [[coil]] (`1 → 2`): one becomes two, a partner joins the dance. The flow has committed but not yet built: inventory *ordered*, value *allocated*, a counterparty engaged. It is the [[duality]]/[[part]] step — the [[whole]] first splitting into members — and the [[sequence]] anchor `2` ([[collections]]). Between [[base]] and [[weave]] on the **ascent** arc (`1·2·4·8`).
 
-**The domain instance (same atom, [[fractal]] one scale down): a share is a proportional, contingent claim on a pooled whole under shared [[risk]].** When the whole splitting into members becomes economic, "a partner joins" *is* buying a share — a [[part]] of a pool, settled in proportion, contingent on what the pool yields. The defining case is the **CSA share** ([[agriculture]]): a member **[[prepaid|prepays]]** at [[season]] start and receives a recurring **box of whatever the farm [[harvest|harvests]] that week** — not a fixed order. Risk transfers via prepayment: weather, pests, and glut flow to the *member*; the farmer gets working capital up front. The instrument is a **membership / pledge**, not a sales contract.
+**The domain instance (same atom, [[fractal]] one scale down): a share is a proportional, contingent claim on a pooled whole under shared [[risk]].** When the whole splitting into members becomes economic, "a partner joins" *is* buying a share — a [[part]] of a pool, settled in proportion, contingent on what the pool yields. The defining case is the **CSA share** ([[agriculture]]): a member **[[prepaid|prepays]]** at season start and receives a recurring **box of whatever the farm [[harvest|harvests]] that week** — not a fixed order. Risk transfers via prepayment: weather, pests, and glut flow to the *member*; the farmer gets working capital up front. The instrument is a **membership / pledge**, not a sales contract.
 
 That makes a share the **inverse of an [[customers/sales/orders|order]]** (fixed quantity, risk on the seller): a share is *proportional, contingent, pooled, in-kind*. The same atom recurs — **equity share** (claim on a firm, with control), **profit share** (claim on outcome, no ownership), **risk pooling** (variance spread across members) — each "a partner joins, the whole splits, value allocated."
 
@@ -47,6 +47,6 @@ That makes a share the **inverse of an [[customers/sales/orders|order]]** (fixed
 - Lineage: Van En / Indian Line Farm (1986); Teikei / JOAA (1971); AMAP / URGENCI
 - Galt et al. (2018) — retention & the customization paradox; IFRS 15 (deferred-revenue recognition)
 
-Composes [[horo]] · [[coil]] · [[duality]] · [[part]] · [[whole]] · [[sequence]] · [[collections]] · [[base]] · [[weave]] · [[risk]] · [[prepaid]] · [[deferral]] · [[deferredrevenue]] · [[recognition]] · [[balance]] · [[agriculture]] · [[harvest]] · [[season]] · [[market]] · [[customers/sales/orders]].
+Composes [[horo]] · [[coil]] · [[duality]] · [[part]] · [[whole]] · [[sequence]] · [[collections]] · [[base]] · [[weave]] · [[risk]] · [[prepaid]] · [[deferral]] · [[deferredrevenue]] · [[recognition]] · [[balance]] · [[agriculture]] · [[harvest]] · season · [[market]] · [[customers/sales/orders]].
 
 **Law — [[law]]: [[horo]] position 2 — the [[whole]] splits and a member joins; its domain instance is a proportional, contingent, pooled claim under shared [[risk]] (the CSA share), the inverse of a fixed order.**

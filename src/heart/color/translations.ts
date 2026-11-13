@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "color",
-    "uuid": "6f2555f5-ccba-879c-af22-7daa7f77508c",
+    "uuid": "2a09d6aa-48a8-8e06-a710-e9c42e396981",
     "words": [
       "color"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading the heart chakra's colour — green, the A432-anchored colour of coherence and of a passing test (a whole aura); the heart's facet of the spectrum.",
-    "uuid": "18af2dbe-d11b-89f3-9a0c-2a095cd1c627",
+    "uuid": "45a28307-8297-842c-bc94-0c9adca468eb",
     "words": [
       "use",
       "when",

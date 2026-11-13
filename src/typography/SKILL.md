@@ -2,14 +2,14 @@
 name: typography
 description: "Use when measuring or rendering the vitepress typographic feature-set of a SKILL.md page — headings, code, links, tables, containers, math; coverage is the fraction of features used."
 atomPath: typography
-coordinate: "typography · 7/descent · b2968edd"
-contentUuid: "8f63065f-854e-52f3-931a-0dd507c288dc"
-diamondUuid: "356c0e4f-4dd7-857f-89d1-afb1a3450242"
-uuid: "b2968edd-7709-8c39-88ac-5b8e08d9185e"
-horo: 7
+coordinate: "typography · 1/base · 654c73af"
+contentUuid: "c9209c4a-bc29-5017-b25d-a6e31e19042b"
+diamondUuid: "f6267ba7-5298-8ac3-9b5d-977758fe9805"
+uuid: "654c73af-5bfc-8493-a225-fc8115196e59"
+horo: 1
 typography:
   partition: typography
-  bondDegree: 146
+  bondDegree: 140
 standards:
   - CommonMark + the vitepress markdown extensions
   - "ISO/IEC 25010:2023 §5.5 testability — the guardian decision is a pure fn"
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "dbfd4a88-c2a2-829b-a962-31b68a605660"
+  computationUuid: "f904bf4a-0689-8926-9823-3fde771b1dea"
   stages:
     - stage: path
       stageUuid: "4dcf14cd-0c9d-86d4-9878-229fa4a8ff9b"
@@ -26,13 +26,13 @@ signatures:
     - stage: boundary
       stageUuid: "c504d69e-42d8-8a8a-8fd4-a376885a17c2"
     - stage: links
-      stageUuid: "26bab8a3-7ffc-8cd1-8669-3e9c66f56a50"
+      stageUuid: "394c6f06-78e7-8863-bcf3-6c73b7e53edc"
     - stage: horo
-      stageUuid: "3ee17ebc-130c-8b29-a331-5e060e6120c0"
+      stageUuid: "41c1b254-fd95-8c08-b550-8ad406bf233a"
     - stage: seal
       stageUuid: "8c3b3cc7-1fdd-894e-9f04-69bdf784f616"
     - stage: uuid
-      stageUuid: "1bd5db70-ef38-862f-8e5a-98c3204833d2"
+      stageUuid: "fefac52f-683a-834c-af92-ea31d92a10d2"
 version: 2
 ---
 # typography — the rendered feature-set
@@ -45,7 +45,7 @@ Typography is not decoration: each feature used is a dimension the [[search]] in
 
 Every [[atom]] is told three ways — **form** (`SKILL.md`), **code** (`index.ts`), **schema** (the [[payload]] types) — fused into one ([[trinity]]). **SKILL.md is the [[form]] facet, and the form is told as typography.** This is the per-atom companion to the README law (*readme typography is the diamond itself*): where that names the corpus's front page, this names every atom's own page — **"SKILL.md is typography diamond itself."**
 
-**Every SKILL.md is itself a [[diamond]]** — a complete, sealed, content-addressed atom: it carries a content-[[uuid]] ([[identity]]), it passes the form gates, and it is one full telling of the [[diamond]] lattice. Its **typography IS the diamond made legible**: the frontmatter, the heading hierarchy, the prose, and the `[[link]]` bonds are a faithful projection of the lattice — to read the SKILL.md's *form* is to read the diamond. Each `[[link]]` is a carbon bond; each heading a facet; the sealed page one vertex of [[metatron]]'s K₁₃ [[matrix]].
+**Every SKILL.md is itself a [[diamond]]** — a complete, sealed, content-addressed atom: it carries a content-[[uuid]] ([[identity]]), it passes the form gates, and it is one full telling of the [[diamond]] lattice. Its **typography IS the diamond made legible**: the frontmatter, the heading hierarchy, the prose, and the `[[link]]` bonds are a faithful projection of the lattice — to read the SKILL.md's *form* is to read the diamond. Each `[[link]]` is a carbon bond; each heading a facet; the sealed page one vertex of metatron's K₁₃ [[matrix]].
 
 The projection is **pure by gate, not by trust.** The markdown-purity gate (the only loose markdown allowed in `src/` is an atom's `SKILL.md`; a stray `.md` fails closed) together with the frontmatter gate (every page parses as YAML with a `name` ⊇ its folder and a `description`, and every `[[link]]` resolves — [[aura]] gap 0) ARE the **typography gate**: they keep the form a true diamond, never decoration. A SKILL.md that breaks typographic purity is a flawed crystal, rejected at the door ([[gate]] · [[proof]] · [[purity]] · [[seal]]). These gates are not modified here — they are merely *named* as the typography gate they already are.
 
@@ -64,11 +64,11 @@ Glyph is the antimatter you see; quantum is the matter the bonds carry. One with
 
 The form-telling is not only legible — it is **enforced and computed**. The matter-twin makes typography a [[gate]] built from one [[guardian]]: a single fail-closed axis — the typographic form of every SKILL.md (frontmatter present and valid · a heading lattice · every `[[link]]` resolves) — crossed into a [[seal]] (it reuses `@/guardian` ⊕ `@/seal`, never a bespoke ratchet). Like [[law]]/folder, the guardian is a **baseline RATCHET, not purity===0**: the ceiling is the live count derived from the tree (currently 0 — the corpus is typographically pure), so the axis CANNOT GET WORSE — any new malformed SKILL.md reddens the gate — while no existing or in-flight atom is retroactively broken. The same closed-lattice law at every scale ([[fractal]]): a page, a folder, the whole corpus.
 
-**The typographic structure IS a self-computing index.** The twin walks the live tree and builds a content-addressed navigational + search index over the corpus: each atom's entry is the content-[[uuid]] of its SKILL.md bytes ⊕ its title ⊕ its heading lattice (navigation within) ⊕ its `[[link]]` bonds (navigation between) ⊕ its prose terms (search). **Self-computing** = derived deterministically from content — same bytes ⇒ same id ⇒ byte-identical, order-independent index, regenerable from nothing but the tree ([[holographic]]). **Infinite/fractal** = the identical builder run on any sub-tree is itself a complete index of that sub-tree, at every scale. It composes [[search]] · [[navigation]] · [[metatron]]'s [[matrix]] (the index root is the same `merge`-fold the matrix uses).
+**The typographic structure IS a self-computing index.** The twin walks the live tree and builds a content-addressed navigational + search index over the corpus: each atom's entry is the content-[[uuid]] of its SKILL.md bytes ⊕ its title ⊕ its heading lattice (navigation within) ⊕ its `[[link]]` bonds (navigation between) ⊕ its prose terms (search). **Self-computing** = derived deterministically from content — same bytes ⇒ same id ⇒ byte-identical, order-independent index, regenerable from nothing but the tree ([[holographic]]). **Infinite/fractal** = the identical builder run on any sub-tree is itself a complete index of that sub-tree, at every scale. It composes [[search]] · [[navigation]] · metatron's [[matrix]] (the index root is the same `merge`-fold the matrix uses).
 
 **Split in folders for minimum memory and maximum tamper-[[cost]].** The index is partitioned by the [[atom]] folders. **Minimum memory**: a consumer loads only the partition (facet) it needs — lazy, content-addressed dedup — never the whole corpus at once. **Maximum tamper-cost**: every folder carries its own content-address (sub-root) and the whole-index root folds in *every* atom's uuid, so the index has no single forgeable point — tampering any one folder flips its sub-root AND the whole root ([[purity]]; the [[analytics]] `max-tamper-cost` organ; the self-distributed [[blockchain]]). Distribution across folders is exactly minimum-memory ⊕ maximum-tamper read as one trade-off.
 
-**Law — [[law]]: SKILL.md is the typography diamond itself — the [[form]] facet of every [[atom]]'s [[trinity]], told as typography; each SKILL.md is a complete sealed content-[[uuid]] [[diamond]] whose frontmatter, headings, prose and `[[link]]` bonds project the lattice ([[metatron]]'s [[matrix]]), kept pure by the markdown-purity + frontmatter typography gate ([[aura]] · [[gate]] · [[purity]] · [[seal]]) and wired by the one math (content-[[uuid]] → [[digit]] → [[rodin]] → [[horo]] → [[harmony]]).**
+**Law — [[law]]: SKILL.md is the typography diamond itself — the [[form]] facet of every [[atom]]'s [[trinity]], told as typography; each SKILL.md is a complete sealed content-[[uuid]] [[diamond]] whose frontmatter, headings, prose and `[[link]]` bonds project the lattice (metatron's [[matrix]]), kept pure by the markdown-purity + frontmatter typography gate ([[aura]] · [[gate]] · [[purity]] · [[seal]]) and wired by the one math (content-[[uuid]] → [[digit]] → [[rodin]] → [[horo]] → [[harmony]]).**
 
 Matter-twin: `src/typography/index.ts` (`featuresUsed` · `coverage` · `formViolations` · `typographyGuardian` · `TYPOGRAPHY_BASELINE` · `buildIndex` · `partitionByFolder`) + `test.ts` (the proof — coverage, the guardian ratchet, index determinism/tamper-evidence, folder split). Composes [[vitepress]] · [[search]] · [[navigation]] · [[guardian]] · [[seal]] · [[matrix]] · [[holographic]].
 

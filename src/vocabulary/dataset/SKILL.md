@@ -2,41 +2,41 @@
 name: dataset
 description: Use when reasoning about dataset — A body of structured information describing some topic(s) of interest.
 atomPath: "vocabulary/dataset"
-coordinate: "vocabulary/dataset · 7/descent · 36c93535"
-contentUuid: "9755d116-afa9-5cd2-b63b-ef6e7d3c8b86"
-diamondUuid: "392b3286-0583-8bdb-88a3-5acb43d593e6"
-uuid: "36c93535-49b3-8124-8ae1-5e93401f290a"
-horo: 7
+coordinate: "vocabulary/dataset · 1/base · a57769ba"
+contentUuid: "e652bed6-2423-5b99-a1f7-6bebdeb0fa24"
+diamondUuid: "a8c61ec2-07b6-8586-bcbc-7deeb6898fb7"
+uuid: "a57769ba-8511-8243-8bd2-ac439c9cb6f6"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 12
+  bondDegree: 9
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ed3b3ae4-3e2a-8186-80a8-8aa94d2caec1"
+  computationUuid: "50f47769-1ed0-8996-b313-08db13326c7b"
   stages:
     - stage: path
       stageUuid: "c9458dec-6423-828c-8868-6d2a801560af"
     - stage: trinity
       stageUuid: "4b6528c0-2bfb-86d0-a474-4d9aff1cd9ef"
     - stage: boundary
-      stageUuid: "e5147c9b-6f4b-8911-9282-2394ecf5c276"
+      stageUuid: "f1db4754-3da8-889a-aeb7-c04ff150d898"
     - stage: links
-      stageUuid: "602bfbe8-3f6a-8892-b53e-ed4fbc0c0da6"
+      stageUuid: "38f1db62-8f9a-82f8-a996-88d80bf7fefc"
     - stage: horo
-      stageUuid: "188f734f-5cac-8bb8-b16a-3e1a18f30153"
+      stageUuid: "566a64d5-6272-8296-819d-827ff568043c"
     - stage: seal
       stageUuid: "54328a34-7da6-8a8a-85f9-ce1f6daaf13d"
     - stage: uuid
-      stageUuid: "f34bfae7-e531-8a6b-ae72-a86bea332ec4"
+      stageUuid: "6bdf91c2-2a56-81f4-aa29-e22106e908e1"
 version: 2
 ---
 # dataset
 
 A body of structured information describing some topic(s) of interest.
 
-Entangled with — [[time]] · [[interval]]
+Entangled with — time · [[interval]]
 
 Attested in schema.org — Dataset · dataset · datasetTimeInterval
 

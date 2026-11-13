@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring or disclosing fair value of assets and liabilities — financial instruments, investment property, biological assets, share-based payments, PPA items — capturing IFRS 13 Level-1/2/3 hierarchy, valuation technique, unobservable inputs, and P&L / OCI recognition route. The IFRS 13 fair-value measurement register.",
-    "uuid": "58acb729-5f5d-8638-8d67-907111248cd8",
+    "uuid": "11e0c84f-c09b-870c-bc71-13ec158dd249",
     "words": [
       "use",
       "when",

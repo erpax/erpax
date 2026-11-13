@@ -3,13 +3,13 @@ name: gaps
 description: "Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register."
 atomPath: "compliance/frameworks/compliance/requirements/compliance/gaps"
 coordinate: "compliance/frameworks/compliance/requirements/compliance/gaps · 4/weave · 862fec14"
-contentUuid: "f5440085-5554-51d6-ac7a-cc6928910391"
+contentUuid: "a21ba971-aeef-54eb-8959-fa5b44e34b17"
 diamondUuid: "ddbb0d8f-e6c5-8ca5-b09c-c31b55f99215"
 uuid: "862fec14-80a7-860b-b99a-d5ce18635999"
 horo: 4
 typography:
   partition: compliance
-  bondDegree: 25
+  bondDegree: 23
 standards:
   - "ISO-37301"
   - "ISO-37301:2021 compliance-management"

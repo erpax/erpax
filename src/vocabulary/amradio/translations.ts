@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about amradio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "5da197f4-4411-874b-96ba-96ffa5b796ee",
+    "uuid": "4f0fc7cd-6bdc-8d3d-84b4-27fb35612edd",
     "words": [
       "use",
       "when",

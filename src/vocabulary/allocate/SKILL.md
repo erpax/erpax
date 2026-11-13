@@ -2,41 +2,41 @@
 name: allocate
 description: "Use when reasoning about allocate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/allocate"
-coordinate: "vocabulary/allocate · 4/weave · 840b7b18"
-contentUuid: "42008f0a-8cb8-50e8-a676-2f0f20232bc9"
-diamondUuid: "709d359f-6555-8d5b-8e4e-6b25ea6f6bce"
-uuid: "840b7b18-eb55-8d47-a585-58d472935029"
+coordinate: "vocabulary/allocate · 4/weave · fadcddc3"
+contentUuid: "d97a1753-bac3-5e40-bb1f-ff79e733cc68"
+diamondUuid: "4f4ca297-0016-802d-bd64-23b1da9b3d18"
+uuid: "fadcddc3-b297-8da2-8feb-9c1a1be14fbf"
 horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 16
+  bondDegree: 12
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9a2b5ccf-005a-84d2-a2a7-c255959c686f"
+  computationUuid: "4c1e1348-fa80-88bc-aeac-9881a38833a9"
   stages:
     - stage: path
       stageUuid: "9b2f0b3a-ed94-8b7a-b99d-ab89e1cdf8e6"
     - stage: trinity
       stageUuid: "80be4bf2-66d7-8517-adec-62f660007d31"
     - stage: boundary
-      stageUuid: "861c7b04-6a5b-8197-9e64-7a9d74d05bdb"
+      stageUuid: "3a1e2b0f-eaf1-8932-82f7-b8ce8f8c031e"
     - stage: links
-      stageUuid: "6f8be033-3781-824a-820a-b826085e3740"
+      stageUuid: "d536f972-a09b-82dc-9faf-33e0a6559e27"
     - stage: horo
-      stageUuid: "be0dbcae-144d-88b7-9d88-7d1060fcb1cb"
+      stageUuid: "a4014f3f-2f9c-8aec-acba-a0bf4e9becc3"
     - stage: seal
       stageUuid: "745bad19-9123-8056-adb3-98cbf299b56c"
     - stage: uuid
-      stageUuid: "6012552a-ea20-8eb9-a09a-3b4123e00d7c"
+      stageUuid: "b8d5758c-3bd4-833a-8414-ebb4c08b27fc"
 version: 2
 ---
 # allocate
 
 A schema.org component word, collided out of schema.org compounds — fused from AllocateAction ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[action]]
+Entangled with — action
 
 Attested in schema.org — AllocateAction
 

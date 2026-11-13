@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about funder — A person or organization that supports (sponsors) something through some kind of financial contribution.",
-    "uuid": "16f8d195-11ef-83ab-b43c-3a2eb5603ffa",
+    "uuid": "ed14e5db-31ba-8500-8529-7b61e0999b52",
     "words": [
       "use",
       "when",

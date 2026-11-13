@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about probe — For a React atom the answer is **yes** and this returns **no**. Its barrel is , because JSX does not parse from a file — that is not a stylistic variant, it is the only spelling…",
-    "uuid": "94a2f64d-3d20-872b-92e0-acf9e9476edd",
+    "uuid": "14232d1c-24f5-8c07-9eac-80b3e381fbf0",
     "words": [
       "use",
       "when",

@@ -2,42 +2,42 @@
 name: crisis
 description: "Use when reasoning about complex crises as the conditions a society lives under — комплексни кризи — multiple simultaneous interacting shocks (financial · pandemic · war · energy · demographic) whose effects compound rather than add. A crisis is an entropy spike on the society ledger; because wellbeing has non-compensatory floors, a polycrisis hits hardest where a dimension is already near the floor, and exposure is stratified by age and career. Resilience and recovery are the rebalancing breath."
 atomPath: "vocabulary/crisis"
-coordinate: "vocabulary/crisis · 8/crest · 9ebee05b"
-contentUuid: "a1cf8459-04fa-5f90-8bae-86789b628f4b"
-diamondUuid: "61cde2f0-676e-8f7f-93e2-d71710e67ce3"
-uuid: "9ebee05b-2a7f-8cb7-a316-ac58b87c6972"
-horo: 8
+coordinate: "vocabulary/crisis · 4/weave · 52d7ce53"
+contentUuid: "e1d19150-347a-5d82-9f8f-91bcf2aab907"
+diamondUuid: "4f470f4b-1430-8a0b-8a20-88e7039dc195"
+uuid: "52d7ce53-58e6-8192-b8b0-882ad0f05f70"
+horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 36
+  bondDegree: 29
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7afc9a15-039a-8aee-be1e-8c448dc43c79"
+  computationUuid: "71baa187-94e6-8fbd-9edc-12a6b1115823"
   stages:
     - stage: path
       stageUuid: "e6d9c57b-92db-8b3e-b2c1-a417edb20e87"
     - stage: trinity
       stageUuid: "e2415210-b0e5-83a3-969f-d9f226ab02b2"
     - stage: boundary
-      stageUuid: "cf261de1-294b-85be-aab2-75c10fe36a9e"
+      stageUuid: "2d740829-432a-8652-8ee1-54d10681f9d5"
     - stage: links
-      stageUuid: "59f28125-e04a-87f0-840e-1e002e720f93"
+      stageUuid: "1f086289-0b56-83cd-ac65-b0542e754f10"
     - stage: horo
-      stageUuid: "e242c4c0-97c6-8d85-b6d5-ea1383bde419"
+      stageUuid: "8173449e-2bf0-8c14-bfe2-4065f00068a3"
     - stage: seal
       stageUuid: "48dddbe0-07cd-8116-8256-8fd6f9291426"
     - stage: uuid
-      stageUuid: "b35033bc-9a7c-8e70-b377-0389ff49b525"
+      stageUuid: "4c62eab5-e5c3-82f9-a4ab-10d032882349"
 version: 2
 ---
 # crisis — the complex/poly-crisis conditions, an entropy spike on the society ledger (комплексни кризи)
 
 A **crisis** is a shock to [[society]] — in erpax terms an **entropy spike**, the archangel pole of the [[angel]] dynamic (fear · destroy · ↑entropy). The word in the topic is *комплексни кризи* — **complex / poly-crisis**: not one crisis but **many at once that interact** — financial, pandemic, war, energy, inflation, climate, and demographic ageing — so their effects **compound rather than add** (a product of hazards, not a sum). The whole exceeds the sum of the shocks: a pandemic *during* an energy shock *during* an inflation is qualitatively worse than any alone. (Beck's *risk society* — modernity manufactures its own risks; Tooze's *polycrisis*; the journalists' *permacrisis*.)
 
-**Why it bites unevenly — it meets the floor.** Because [[wellbeing]] is a composite with **non-compensatory floors** ([[dimension]]s), a complex crisis does its worst damage **where a dimension is already near the floor** — it interacts with the [[bottleneck]], deepening existing deprivation rather than spreading evenly. Exposure is therefore **stratified**: late-career workers ([[career]], [[age]]) are especially exposed — re-employment after a shock is slower for older workers, pension-timing risk bites if markets fall near retirement, and health recovery is slower. Precarity and vulnerability are not randomly distributed; the crisis finds the thin places.
+**Why it bites unevenly — it meets the floor.** Because wellbeing is a composite with **non-compensatory floors** ([[dimension]]s), a complex crisis does its worst damage **where a dimension is already near the floor** — it interacts with the [[bottleneck]], deepening existing deprivation rather than spreading evenly. Exposure is therefore **stratified**: late-career workers ([[career]], [[age]]) are especially exposed — re-employment after a shock is slower for older workers, pension-timing risk bites if markets fall near retirement, and health recovery is slower. Precarity and vulnerability are not randomly distributed; the crisis finds the thin places.
 
-**The answer is rebalancing, not absence.** erpax keeps double-entry on entropy ([[angel]] · [[balance]]): a crisis is **borrowed entropy that must be repaid**. Resilience — the capacity to absorb and recover — and recovery itself are the **inhale that answers the crisis exhale**, the [[breath]] run at society scale ([[balance]]). What rebalances is repaid; what cannot is the conserved damage carried forward. So the analytic move is: **trace where the compounding shock lands on the wellbeing floor, identify who absorbs it and who recovers** ([[cohort]] over [[time]]), and price recovery as the rebalancing entry.
+**The answer is rebalancing, not absence.** erpax keeps double-entry on entropy ([[angel]] · [[balance]]): a crisis is **borrowed entropy that must be repaid**. Resilience — the capacity to absorb and recover — and recovery itself are the **inhale that answers the crisis exhale**, the [[breath]] run at society scale ([[balance]]). What rebalances is repaid; what cannot is the conserved damage carried forward. So the analytic move is: **trace where the compounding shock lands on the wellbeing floor, identify who absorbs it and who recovers** ([[cohort]] over time), and price recovery as the rebalancing entry.
 
 ## Standards
 - **Risk Society** — Ulrich Beck (manufactured risk; reflexive modernization).
@@ -45,4 +45,4 @@ A **crisis** is a shock to [[society]] — in erpax terms an **entropy spike**, 
 - **Resilience** — UNDRR Sendai Framework; social-ecological resilience (absorb · adapt · transform).
 - **Health-system shocks** — WHO/European Observatory resilience-of-systems framing.
 
-Composes: [[society]] · [[angel]] · [[balance]] · [[breath]] · [[wellbeing]] · [[dimension]] · [[bottleneck]] · [[career]] · [[age]] · [[cohort]] · [[time]].
+Composes: [[society]] · [[angel]] · [[balance]] · [[breath]] · wellbeing · [[dimension]] · [[bottleneck]] · [[career]] · [[age]] · [[cohort]] · time.

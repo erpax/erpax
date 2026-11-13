@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the society must be SEEN, heard, and felt — auto-seeding Payload's pages from the spec corpus, the e2e multimedia walkthroughs, and federation peers; the perceptible outward face of the content-addressed record.",
-    "uuid": "42febc6e-a0da-8a42-a1e5-cc769fcfbdd8",
+    "uuid": "54760ccb-4889-8836-894b-c135db31f4cf",
     "words": [
       "use",
       "when",

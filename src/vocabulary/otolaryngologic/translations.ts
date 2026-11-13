@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about otolaryngologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "6c7836f4-c107-8040-9e7f-facd9e106e26",
+    "uuid": "f27317a8-7e4d-80da-a133-4e2c3abd2085",
     "words": [
       "use",
       "when",

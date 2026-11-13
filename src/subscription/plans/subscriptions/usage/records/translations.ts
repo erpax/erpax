@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording or aggregating metered-billing events — per-tenant per-feature countable occurrences (invoices issued, signed PAdES attestations, country-bundle calls) with quantity, rate snapshot, billing-period bucket and idempotency key, rolled into IFRS-15 §B16 usage-based invoice lines. The metered-billing event-log collection.",
-    "uuid": "94f33ff0-22ed-8d8c-bdb5-d75111a05022",
+    "uuid": "a853b081-b8f8-8fb2-9271-462cbcff71f1",
     "words": [
       "use",
       "when",

@@ -3,13 +3,13 @@ name: risk
 description: "Use when reasoning about risk — Nothing here predicts a default. Credit risk is a **forecast**, and a function returning one would be a number a bank could point at with nothing behind it — the same refusal kyc…"
 atomPath: risk
 coordinate: "risk · 8/crest · fbd9eb2e"
-contentUuid: "fbb5e56a-0a00-5545-8a8f-f2b5a9294831"
-diamondUuid: "f3a4f169-bfdf-8dff-8a38-78b1d7cda8a6"
+contentUuid: "00a84e3f-3c0a-55c0-bd91-b022eabc7608"
+diamondUuid: "85eb7b4e-4dab-8215-aa6a-989b2a1dbec5"
 uuid: "fbd9eb2e-831d-88ff-bdef-d0cd4f893583"
 horo: 8
 typography:
   partition: risk
-  bondDegree: 73
+  bondDegree: 67
 standards:
   - "EU 575/2013 (CRR) Art. 392 — definition of a large exposure"
   - "EU 575/2013 (CRR) Art. 395 — limits to large exposures"
@@ -17,7 +17,7 @@ standards:
   - "EU 575/2013 (CRR) Art. 4(1)(39) — group of connected clients"
 bindings: []
 signatures:
-  computationUuid: "6cdd6a06-d4ea-82af-b2cc-97c17fc547df"
+  computationUuid: "02fdb964-70c9-8609-8d44-de41990ea87f"
   stages:
     - stage: path
       stageUuid: "5c07745a-1a0a-8b95-b142-94fb7960898c"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "8574b340-4aac-8581-8a71-ffff67ffca59"
     - stage: horo
-      stageUuid: "edc9a0b8-fb1c-8fa1-a8a2-754f905968a2"
+      stageUuid: "2c731df7-c806-851f-a2e0-104263e0dee5"
     - stage: seal
       stageUuid: "c39f455c-d760-8792-9f54-72bc110ce582"
     - stage: uuid
-      stageUuid: "a3f64b69-d0cc-8250-805f-bb81dcf8b3de"
+      stageUuid: "77dd5af1-9e7d-8a9c-989e-e406fa45f77d"
 version: 2
 ---
 # risk — the one risk question with a decidable answer

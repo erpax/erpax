@@ -2,21 +2,21 @@
 name: conservation
 description: "Use when reasoning about what is conserved across a flow — nothing is created or destroyed, only transformed (mass-energy; Noether — every continuous symmetry yields a conserved quantity), which in erpax IS double-entry — Σdebit=Σcredit, every config a balanced gateway, the pot conserved. The physics root of the accounting law; an open system conserves by accounting for what crosses its boundary (the borrowed anchor)."
 atomPath: conservation
-coordinate: "conservation · 2/share · 5bf71057"
-contentUuid: "a0230b0f-5100-5a68-8493-00e6bc9ab5e9"
-diamondUuid: "469c24b8-9bcb-895c-aba5-f40d60b4cee3"
-uuid: "5bf71057-6e78-8131-8dcb-8cd1266d983e"
-horo: 2
+coordinate: "conservation · 7/descent · 2ac14132"
+contentUuid: "0d503521-e374-562d-ba01-222451040407"
+diamondUuid: "ffb994b3-a0a1-8e20-89d5-afb5847467db"
+uuid: "2ac14132-aaa9-8ef1-ab58-2c2dea4fb417"
+horo: 7
 typography:
   partition: conservation
-  bondDegree: 99
+  bondDegree: 93
 standards:
   - "Double-entry bookkeeping (Pacioli, 1494) — Σdebit = Σcredit"
   - First Law of Thermodynamics — energy is conserved in an isolated system
   - "Noether's theorem (E. Noether, 1918) — continuous symmetry ⇔ conserved quantity"
 bindings: []
 signatures:
-  computationUuid: "63405d60-f8df-884a-a682-7e18afc2b6bd"
+  computationUuid: "f5c441ba-b38a-8676-9c43-e14abded4729"
   stages:
     - stage: path
       stageUuid: "4da50aaf-bca0-808d-a7b5-181ad11c2a01"
@@ -25,18 +25,18 @@ signatures:
     - stage: boundary
       stageUuid: "8b6b9fc1-9632-8871-a4bf-e38d842115f3"
     - stage: links
-      stageUuid: "a40f802a-4d15-872b-ab9e-685b84c57294"
+      stageUuid: "75860daa-e966-8f43-b6c6-52d1c1aea6f2"
     - stage: horo
-      stageUuid: "54646f46-e849-8d64-b65b-145a15eef313"
+      stageUuid: "523d9c45-fbeb-834a-bd52-49eec30858be"
     - stage: seal
       stageUuid: "d44e2523-c79e-8d62-aac8-8d1127c3641c"
     - stage: uuid
-      stageUuid: "0b7ad5d5-711f-8055-9f4c-4a91840f05f5"
+      stageUuid: "afcf61a4-1053-8dad-8483-781e1bd04986"
 version: 2
 ---
 # conservation — nothing is lost, only transformed (the root of double-entry)
 
-**Conservation** is the law that across any boundary a quantity is **neither created nor destroyed, only transformed** — the running total holds. In physics it is the First Law (mass-energy is conserved) and, underneath it, **Noether's theorem**: every continuous symmetry of a system yields one conserved quantity (time-translation symmetry ⇒ energy, space ⇒ momentum, rotation ⇒ angular momentum). Nature *cycles* its matter — carbon, nitrogen and water move through the biogeochemical loops and the same atoms are used again without end; only [[energy]] is ultimately spent.
+**Conservation** is the law that across any boundary a quantity is **neither created nor destroyed, only transformed** — the running total holds. In physics it is the First Law (mass-energy is conserved) and, underneath it, **Noether's theorem**: every continuous symmetry of a system yields one conserved quantity (time-translation symmetry ⇒ energy, space ⇒ momentum, rotation ⇒ angular momentum). Nature *cycles* its matter — carbon, nitrogen and water move through the biogeochemical loops and the same atoms are used again without end; only energy is ultimately spent.
 
 This IS the accounting law. A balanced [[entry]] — Σdebit = Σcredit ([[balance]]) — is conservation written as bookkeeping: value changes hands, it never vanishes; the imbalance is the bug the [[hooks]] surface, never store. Every erpax config is a [[gate]]way that posts a balanced post, so the books carry **zero net [[entropy]]** and the pot is conserved.
 
@@ -49,7 +49,7 @@ This IS the accounting law. A balanced [[entry]] — Σdebit = Σcredit ([[balan
 
 **Law — [[law]]: across any boundary a quantity is neither created nor destroyed, only transformed (Noether: every continuous symmetry yields a conserved quantity) — which IS double-entry, Σdebit=Σcredit ([[balance]]); an open system stays honest by [[accounting]] for what crosses the boundary (the borrowed [[anchor]]), so an unbalanced post is the bug the [[proof]] catches, never stores.**
 
-Composes [[balance]] · [[entry]] · [[entropy]] · [[energy]] · [[biomass]] · [[accounting]] · [[reconcile]] · [[anchor]] · [[proof]] · [[uuid]] · [[sustainability]] · [[ecosystem]] · [[law]].
+Composes [[balance]] · [[entry]] · [[entropy]] · energy · [[biomass]] · [[accounting]] · [[reconcile]] · [[anchor]] · [[proof]] · [[uuid]] · [[sustainability]] · [[ecosystem]] · [[law]].
 
 ## Matter-twin
 

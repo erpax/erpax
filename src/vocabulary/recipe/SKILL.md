@@ -2,41 +2,41 @@
 name: recipe
 description: "Use when reasoning about recipe — A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via suitableForDiet. The keywords property can also be used to add more detail."
 atomPath: "vocabulary/recipe"
-coordinate: "vocabulary/recipe · 2/share · 557d3b8d"
-contentUuid: "ef3ecec2-4d6b-55d2-bde4-2520b3e972ca"
-diamondUuid: "9be533b8-41fe-8f9c-bb75-74908f743049"
-uuid: "557d3b8d-08f8-87d6-b22f-b19fe9f69d63"
-horo: 2
+coordinate: "vocabulary/recipe · 1/base · 78247340"
+contentUuid: "9b07f33a-cd79-5fe5-bdb3-f8f11dacc7ce"
+diamondUuid: "33d983b9-08ab-84a7-87c3-b16aa3b8ce69"
+uuid: "78247340-d042-8dc3-984a-1096121d35e7"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 22
+  bondDegree: 19
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "055c8f64-1f9f-8171-8452-ab9ab04121a9"
+  computationUuid: "f57443f5-8cfe-861a-b755-5098826f773c"
   stages:
     - stage: path
       stageUuid: "67a8f2b7-dd06-82eb-8f34-411dc7bd3b5d"
     - stage: trinity
       stageUuid: "0b162c84-2a93-809a-8681-e693f6f328a7"
     - stage: boundary
-      stageUuid: "e2d39394-04d7-8ef7-ac87-cb82908712a0"
+      stageUuid: "feebfabd-c7da-842f-bd0e-1b0be0ab8048"
     - stage: links
-      stageUuid: "2f161531-a0cc-8cb4-8c94-9ebd627d4b7f"
+      stageUuid: "44553b33-c386-86f8-9840-185a59066bf6"
     - stage: horo
-      stageUuid: "5bf8e537-082d-80f2-9566-b79e9c87bba4"
+      stageUuid: "3c3c2d24-ae10-86c9-8d7b-49455316399a"
     - stage: seal
       stageUuid: "67150327-62a4-84e0-8664-6813903bef94"
     - stage: uuid
-      stageUuid: "c7baa648-d507-80ad-8e50-e5239d8f5294"
+      stageUuid: "fb06507d-21c5-8b8a-b88e-f383f1b0cc37"
 version: 2
 ---
 # recipe
 
 A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via suitableForDiet. The keywords property can also be used to add more detail.
 
-Entangled with — [[category]] · [[cuisine]] · [[ingredient]] · [[instructions]] · [[yield]]
+Entangled with — [[category]] · [[cuisine]] · [[ingredient]] · [[instructions]] · yield
 
 Attested in schema.org — Recipe · recipe · recipeCategory · recipeCuisine · recipeIngredient · recipeInstructions · recipeYield
 

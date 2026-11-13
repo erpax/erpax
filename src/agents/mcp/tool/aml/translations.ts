@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about aml — classifies a set of movements as **suspicious · threshold · none** (EU 2015/849 Art. 33).",
-    "uuid": "42d410a7-586a-88b4-80ea-ec72c0c8cfc8",
+    "uuid": "4572afd2-0c6d-85be-8a86-dbe9a8b51ea7",
     "words": [
       "use",
       "when",

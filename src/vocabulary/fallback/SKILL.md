@@ -2,41 +2,41 @@
 name: fallback
 description: "Use when reasoning about fallback as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fallback"
-coordinate: "vocabulary/fallback · 8/crest · 0f070529"
-contentUuid: "ce0d8efe-0550-55ed-8bf8-0eb38de3d886"
-diamondUuid: "fd8d4fa8-b0f5-8cb4-a7f0-862547ddd63d"
-uuid: "0f070529-548b-87eb-be37-30d2f83e3c8f"
-horo: 8
+coordinate: "vocabulary/fallback · 5/round · e81fb424"
+contentUuid: "c22e4472-8aa1-5279-a398-473ecd9871dc"
+diamondUuid: "9872d8e9-54ad-8c3b-b52a-71d1cb3cfa9a"
+uuid: "e81fb424-b960-801d-84eb-b87f806abf0d"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 24
+  bondDegree: 17
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "ac636123-4252-8e72-b7d6-025b23ea25d0"
+  computationUuid: "6914b0a2-855f-8694-8951-5ce6f8fa2a36"
   stages:
     - stage: path
       stageUuid: "6f88c06a-b29c-8584-a6b6-30b78dc49942"
     - stage: trinity
       stageUuid: "f9e03cb9-9ff9-8fb1-8e5b-007d36edebf2"
     - stage: boundary
-      stageUuid: "dcc523f2-20af-8dad-a906-34847aae2581"
+      stageUuid: "c45f2695-cecf-8d54-9065-d701479058c3"
     - stage: links
-      stageUuid: "81a32db7-b3de-812c-b244-60a064f23dea"
+      stageUuid: "4a1f150b-83f3-8806-991f-e0612d8e5378"
     - stage: horo
-      stageUuid: "50a9b3a0-045c-8603-8c31-aba282601200"
+      stageUuid: "5c5dcfd8-c016-8af4-a460-d985230e9ec9"
     - stage: seal
       stageUuid: "c9d2b760-54b2-87c4-8a48-b6338d40054b"
     - stage: uuid
-      stageUuid: "973a64df-1272-8005-b122-c2c69f4a26c8"
+      stageUuid: "187c9246-eb9e-8919-b3d7-75883e6df02a"
 version: 2
 ---
 # fallback
 
 A schema.org component word, collided out of schema.org compounds — fused from isUnlabelledFallback ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[unlabelled]]
+Entangled with — unlabelled
 
 Attested in schema.org — isUnlabelledFallback
 

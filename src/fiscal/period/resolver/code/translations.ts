@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a resolved fiscal period needs its two identifiers — the regulatory code the framework expects (P05_2026, or Q2_2026 under XBRL for a quarterly config) and the chain leaf that binds its payload to the prior leaf through the fold's one algebra (merge). The resolver's child; the base64 'hash placeholder' that once stood here is held false by the test, sentence by sentence.",
-    "uuid": "29489a75-fc96-8dea-8dfd-4588852cb748",
+    "uuid": "9411eb1c-748a-836e-bec1-02cfd9969a37",
     "words": [
       "use",
       "when",

@@ -2,21 +2,21 @@
 name: treasury
 description: "Use when reasoning about treasury — A government cash office reconciles exactly as a bank drawer does, so it mounts float unchanged."
 atomPath: treasury
-coordinate: "treasury · 5/round · ca7cb4b5"
-contentUuid: "e54e876d-4b36-5783-af92-37b2e60f24af"
-diamondUuid: "f3c3dabc-b4b7-8587-a293-f99495507ecc"
-uuid: "ca7cb4b5-abec-80f7-b87f-2a1dccd0148c"
-horo: 5
+coordinate: "treasury · 7/descent · 5d63c02a"
+contentUuid: "35294add-e805-5639-8ce8-f972f49787d2"
+diamondUuid: "243c2b27-5533-8539-9e18-e457ff31ee9a"
+uuid: "5d63c02a-e096-8e09-8cd4-1953bb3017e1"
+horo: 7
 typography:
   partition: treasury
-  bondDegree: 10
+  bondDegree: 7
 standards:
   - INTOSAI GOV 9100 — internal control for the public sector
   - IPSAS 1 — presentation; IPSAS 2 — cash flow statements
   - ISA 501 — physical count as audit evidence
 bindings: []
 signatures:
-  computationUuid: "5f9e1bc1-a57c-8525-ac71-811c28e53dd6"
+  computationUuid: "8c94c473-6b3b-897c-ab5a-8052148347f7"
   stages:
     - stage: path
       stageUuid: "c10b5e40-2a9b-84e6-9674-b0d40ae55ce7"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "39bacbb0-daa2-8500-ad92-fea3e84b023e"
     - stage: links
-      stageUuid: "97cefde0-bfec-8738-9b4a-66a5f43def8a"
+      stageUuid: "1348e52b-482f-87e7-99c1-17d5e65fce72"
     - stage: horo
-      stageUuid: "8b5ad884-e02a-8110-b960-1b0e07a76c89"
+      stageUuid: "923fef3e-b970-8328-b948-37cbbaf9b8f3"
     - stage: seal
       stageUuid: "f981df18-6a95-8166-bddf-ae0e3cf25762"
     - stage: uuid
-      stageUuid: "85edcfbb-6a3c-8030-9462-8eb47603dbac"
+      stageUuid: "4ab57654-26b1-8ba6-8335-5ac43d437e06"
 version: 2
 ---
 # treasury — a public till, where the variance has nowhere to go
@@ -53,7 +53,7 @@ forward**, and the money has quietly become the office's. There is deliberately 
 meaning *carry forward* and none meaning *silence* — a pinned test asserts that every non-zero
 variance names an action.
 
-Tolerance is zero for the same reason [[armory]]'s is: there is no one with standing to absorb a
+Tolerance is zero for the same reason armory's is: there is no one with standing to absorb a
 difference in public money.
 
 **Honest boundary.** This names what is owed on a counted difference. It does not perform the
@@ -71,4 +71,4 @@ absorb it and no one will have decided anything.**
 - **INTOSAI GOV 9100** — internal control for the public sector.
 - **ISA 501** — physical count as audit evidence.
 
-Composes: [[float]] · [[armory]] · [[law]].
+Composes: [[float]] · armory · [[law]].

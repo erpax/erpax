@@ -2,41 +2,41 @@
 name: enumeration
 description: "Use when reasoning about enumeration — Lists or enumerations—for example, a list of cuisines or music genres, etc."
 atomPath: "vocabulary/enumeration"
-coordinate: "vocabulary/enumeration · 7/descent · 16193dd5"
-contentUuid: "ffe10119-7776-575b-b56e-18b98ef6abeb"
-diamondUuid: "542af94b-a414-8dcf-ae1b-1baab4960974"
-uuid: "16193dd5-4f78-89dc-94e7-b31d5f6e4dd6"
-horo: 7
+coordinate: "vocabulary/enumeration · 8/crest · 377b2b3f"
+contentUuid: "b1057e7d-5803-58b3-aaba-c888bacd8bc9"
+diamondUuid: "d3347a58-d36e-89ee-a59e-fc503e34fd87"
+uuid: "377b2b3f-ccf8-813b-8c31-dd3c9eeb859f"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 145
+  bondDegree: 119
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d74b2611-0ec3-8846-8737-026db1cd4d12"
+  computationUuid: "b551d708-d292-8baf-8438-26d0022f5151"
   stages:
     - stage: path
       stageUuid: "a159bfdf-79ab-895e-893f-57b1c7972e2f"
     - stage: trinity
       stageUuid: "d8509226-d6c9-833f-8c20-16d6ee506167"
     - stage: boundary
-      stageUuid: "ed890e0b-bafc-8951-ace7-a72b3770d443"
+      stageUuid: "4a0f2934-9b26-8a71-9768-b267a3a11b8a"
     - stage: links
-      stageUuid: "140c3f74-3998-8c0c-a5ae-cf226f3fb1ef"
+      stageUuid: "d4078b85-a8ce-8cd5-8b7b-8fbf11948c51"
     - stage: horo
-      stageUuid: "afb089a6-27f4-82e2-9193-3b45a2ccc458"
+      stageUuid: "5e217588-db19-842c-8ad9-142e7c867751"
     - stage: seal
       stageUuid: "39c62c28-eb70-8b64-b765-4c8da6ad4fad"
     - stage: uuid
-      stageUuid: "f5918e96-847f-8a5c-bfb7-ad505a95f9a4"
+      stageUuid: "3971f65d-f1d5-8081-824a-6e2fa03b9096"
 version: 2
 ---
 # enumeration
 
 Lists or enumerations—for example, a list of cuisines or music genres, etc.
 
-Entangled with — [[adult]] · [[oriented]] · [[body]] · [[measurement]] · [[type]] · [[certification]] · [[status]] · [[digital]] · [[platform]] · [[eu]] · [[energy]] · [[efficiency]] · [[star]] · [[event]] · [[attendance]] · [[mode]] · [[fulfillment]] · [[game]] · [[availability]] · [[health]] · [[aspect]] · [[iptc]] · [[source]] · [[media]] · [[manipulation]] · [[rating]] · [[medical]] · [[merchant]] · [[return]] · [[price]] · [[component]] · [[product]] · [[refund]] · [[fees]] · [[label]] · [[method]] · [[size]] · [[group]] · [[system]] · [[tier]]
+Entangled with — [[adult]] · [[oriented]] · [[body]] · [[measurement]] · [[type]] · [[certification]] · [[status]] · [[digital]] · [[platform]] · [[eu]] · energy · [[efficiency]] · star · [[event]] · [[attendance]] · [[mode]] · [[fulfillment]] · [[game]] · [[availability]] · health · [[aspect]] · [[iptc]] · source · [[media]] · [[manipulation]] · [[rating]] · [[medical]] · [[merchant]] · return · [[price]] · [[component]] · [[product]] · [[refund]] · [[fees]] · [[label]] · [[method]] · size · [[group]] · system · tier
 
 Attested in schema.org — AdultOrientedEnumeration · BodyMeasurementTypeEnumeration · CertificationStatusEnumeration · DigitalPlatformEnumeration · EUEnergyEfficiencyEnumeration · EnergyEfficiencyEnumeration · EnergyStarEnergyEfficiencyEnumeration · Enumeration · EventAttendanceModeEnumeration · FulfillmentTypeEnumeration · GameAvailabilityEnumeration · HealthAspectEnumeration · IPTCDigitalSourceEnumeration · MeasurementTypeEnumeration · MediaEnumeration · MediaManipulationRatingEnumeration · MedicalEnumeration · MerchantReturnEnumeration · PriceComponentTypeEnumeration · PriceTypeEnumeration · ProductReturnEnumeration · RefundTypeEnumeration · ReturnFeesEnumeration · ReturnLabelSourceEnumeration
 

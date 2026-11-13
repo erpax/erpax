@@ -2,41 +2,41 @@
 name: estimated
 description: "Use when reasoning about estimated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/estimated"
-coordinate: "vocabulary/estimated · 2/share · 08467aca"
-contentUuid: "fd1713c5-e71a-5c32-a47c-a7c9dbf5d1cc"
-diamondUuid: "bedab85a-75b0-8e8f-a671-f6989ef84330"
-uuid: "08467aca-edc6-839b-bc2d-cba3f1c24909"
-horo: 2
+coordinate: "vocabulary/estimated · 1/base · 5d973c4a"
+contentUuid: "83a51e23-67fd-5859-b3d2-9962e924bf7e"
+diamondUuid: "54bb4b2a-f6a0-829a-a83c-fec35bfb3837"
+uuid: "5d973c4a-6bd8-8d3f-be40-6d4d1518370d"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 27
+  bondDegree: 23
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0b009b76-bf1c-82ae-8fb6-077eb112bb48"
+  computationUuid: "d35c05ca-1d3a-8353-84bd-2d3eda9c138f"
   stages:
     - stage: path
       stageUuid: "d573d827-f2c2-8a0e-a117-1315d14d63c7"
     - stage: trinity
       stageUuid: "a769b549-94ea-8726-9632-b47d0126f8f3"
     - stage: boundary
-      stageUuid: "0ed2d99c-6f78-89b8-a47d-9772fdbd55f6"
+      stageUuid: "fdea6980-eaba-8833-bae1-be9790bb24cc"
     - stage: links
-      stageUuid: "65703031-707c-80c8-b56d-687e6b7fe199"
+      stageUuid: "c3b9913f-abc8-8798-ad89-feb3aa03eef6"
     - stage: horo
-      stageUuid: "d0bb3f23-ed6c-824e-baa7-84b1a2fb5b44"
+      stageUuid: "2542a074-b778-81c5-888b-9afa943cc7e9"
     - stage: seal
       stageUuid: "0bbab016-61c0-8b48-98c9-d0f772e531bc"
     - stage: uuid
-      stageUuid: "51255374-179a-8543-b322-e9d3d9889c81"
+      stageUuid: "4b358935-9cf4-8c36-a03c-43773dd1c442"
 version: 2
 ---
 # estimated
 
 A schema.org component word, collided out of schema.org compounds — fused from estimatedCost · estimatedFlightDuration · estimatedSalary ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[cost]] · [[flight]] · [[duration]] · [[salary]]
+Entangled with — [[cost]] · [[flight]] · [[duration]] · salary
 
 Attested in schema.org — estimatedCost · estimatedFlightDuration · estimatedSalary
 

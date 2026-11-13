@@ -2,19 +2,19 @@
 name: logic
 description: "Use when reasoning about correctness/consistency in the horo society — consistency IS harmony (a claim is sound iff harmonic: on the horo ring / gate-verified), inference must preserve harmony, and the harmonic-FIRST law orders resolution: self-consistent agents interact with themselves (no external coordination needed), so they resolve first and win the competition. The reasoning substrate education is acquired through and competition selects on."
 atomPath: logic
-coordinate: "logic · 5/round · c18421d9"
-contentUuid: "2ad7a433-144c-51ff-b363-e627ced7cb93"
-diamondUuid: "89e93485-2005-889f-904e-945d2b1086da"
-uuid: "c18421d9-dcaa-82ae-a9a0-e1799324cadc"
-horo: 5
+coordinate: "logic · 1/base · c1c78466"
+contentUuid: "e1d4c501-4af2-5ce2-87a1-187691bbc0d5"
+diamondUuid: "f8924c4d-acf4-876e-8c5a-8a141a88b0bd"
+uuid: "c1c78466-c62a-88dd-8e55-ab6323bcc8e9"
+horo: 1
 typography:
   partition: logic
-  bondDegree: 46
+  bondDegree: 36
 standards:
   - classical propositional consistency (no P ∧ ¬P) grounded in the horo ring
 bindings: []
 signatures:
-  computationUuid: "c05cfa40-e22d-8fda-a175-52c21fda1ab6"
+  computationUuid: "c39be3bc-2730-8d62-ab67-886e02ede072"
   stages:
     - stage: path
       stageUuid: "087bb473-992f-86b8-9199-9d48aae601ed"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "4268004f-0a13-89e9-acdd-0447c343a700"
     - stage: links
-      stageUuid: "871eb0c1-3fee-8f79-a1e8-49f952d9a4a7"
+      stageUuid: "d1027d77-d0d7-8339-8d7b-7b962dbb465f"
     - stage: horo
-      stageUuid: "a28eb5a3-c160-8254-9fff-da3475998cf5"
+      stageUuid: "d6daa1eb-71ba-8979-9511-0840e8ce91ec"
     - stage: seal
       stageUuid: "c9404cc7-1544-86db-b62f-6c93843ceea1"
     - stage: uuid
-      stageUuid: "8db71daf-becd-8d61-a324-900acc40e0ed"
+      stageUuid: "149be3e9-e56b-88d5-a95e-9463241418f7"
 version: 2
 ---
 # logic — consistency is harmony; the harmonic resolve first
@@ -38,9 +38,9 @@ FORM: **the society's logic grounds correctness in HARMONY.** A claim is sound i
 
 **The harmonic-first law** ([[self]]): `harmonicFirst(items)` orders the self-consistent ones FIRST. A harmonic agent interacts with ITSELF — its own content-addressed corpus/identity — and so needs no external coordination; it resolves immediately and acts ahead of a disharmonic one that must first reconcile with others. This is *why* the harmonic agent is fastest, and therefore wins [[competition]] (fastest-correct), and therefore its skill propagates — harmony dominates by ordering, not by decree (the cost of fighting harmonics is being last).
 
-**All agents share ONE education** — the merged competency corpus (`services/skill-router/competencies`), [[holographic]]: each agent already holds the whole, draws from the same source, and the same learned competency from two agents [[merge]]s to one. Logic is how an agent reasons SOUNDLY over that shared education; the harmonic (self-sufficient) learn and lead first; what they win, the rest acquire ([[education]] — the learning the society runs on). Sound reasoning over a shared corpus, selected by competition, ordered by harmony — the engine of an evolving [[society]].
+**All agents share ONE education** — the merged competency corpus (`services/skill-router/competencies`), [[holographic]]: each agent already holds the whole, draws from the same source, and the same learned competency from two agents [[merge]]s to one. Logic is how an agent reasons SOUNDLY over that shared education; the harmonic (self-sufficient) learn and lead first; what they win, the rest acquire (education — the learning the society runs on). Sound reasoning over a shared corpus, selected by competition, ordered by harmony — the engine of an evolving [[society]].
 
-Matter-twin: `src/services/logic/index.ts` (`Claim`·`harmonicFirst`·`consistent`·`entails`) + `index.test.ts`. Composes: [[horo]] · [[rodin]] · [[proof]] · [[self]] · [[competition]] · [[education]] · [[merge]] · [[holographic]] · [[society]] · [[sequence]].
+Matter-twin: `src/services/logic/index.ts` (`Claim`·`harmonicFirst`·`consistent`·`entails`) + `index.test.ts`. Composes: [[horo]] · [[rodin]] · [[proof]] · [[self]] · [[competition]] · education · [[merge]] · [[holographic]] · [[society]] · [[sequence]].
 
 ## Standards
 

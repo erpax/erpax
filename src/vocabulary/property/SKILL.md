@@ -2,41 +2,41 @@
 name: property
 description: "Use when reasoning about property — A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property."
 atomPath: "vocabulary/property"
-coordinate: "vocabulary/property · 4/weave · f5f071fc"
-contentUuid: "d0a817cb-4bc5-555f-b147-fc6a5ac25dec"
-diamondUuid: "5ea83200-2fd0-8f3c-a5ee-72c6df8b369c"
-uuid: "f5f071fc-5545-8f9b-9182-55a2fd15eb3f"
-horo: 4
+coordinate: "vocabulary/property · 2/share · 02442feb"
+contentUuid: "8a065e9a-1dc2-5387-9748-cbf9d1e0c837"
+diamondUuid: "cd419e50-c43f-8e5f-bff0-cc9e998f0987"
+uuid: "02442feb-6f62-8304-b8b0-312584960e5d"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 28
+  bondDegree: 17
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "12826f8c-4029-8a3a-8a7a-31356849609d"
+  computationUuid: "5a45a959-ffef-82b5-940a-98175c18cd11"
   stages:
     - stage: path
       stageUuid: "0a776b12-3a66-8c8a-98a9-9e1799242422"
     - stage: trinity
       stageUuid: "fc187c92-5c14-844a-bed0-0c24b4f39be7"
     - stage: boundary
-      stageUuid: "a45ce313-e49a-8a56-b2ff-283f44c7f12d"
+      stageUuid: "c66e29e9-990c-86c8-a271-b31bb63bd73c"
     - stage: links
-      stageUuid: "12a2fcf4-60e5-880a-a324-e844a9859680"
+      stageUuid: "c16fc458-fb71-861f-9117-40ed61427f05"
     - stage: horo
-      stageUuid: "caf3787f-20e5-87a5-a656-f1d96929b824"
+      stageUuid: "3f546d94-1fbe-8bf2-aa43-50644747d567"
     - stage: seal
       stageUuid: "3e402e05-9e23-84dd-9a0f-2c1d07486b36"
     - stage: uuid
-      stageUuid: "66a4beca-f107-8b69-b877-3a10d5a93ba6"
+      stageUuid: "1fed43ab-0776-8a35-a5cf-53c82ff28129"
 version: 2
 ---
 # property
 
 A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property.
 
-Entangled with — [[value]] · [[specification]] · [[additional]] · [[constraint]] · [[measured]] · [[id]] · [[stupid]]
+Entangled with — value · specification · [[additional]] · [[constraint]] · [[measured]] · [[id]] · stupid
 
 Attested in schema.org — Property · PropertyValue · PropertyValueSpecification · additionalProperty · constraintProperty · measuredProperty · propertyID · stupidProperty
 

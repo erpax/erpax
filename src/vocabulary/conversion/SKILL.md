@@ -2,33 +2,33 @@
 name: conversion
 description: "Use when a measured thing is re-expressed on another basis through a rate — unit conversion (kg↔g, acre↔decare), currency conversion (USD↔BGN↔EUR), and funnel-stage conversion (lead→deal) are one atom: a change of basis via a rate, pinned at a point, that conserves substance and accounts by double-entry. Automatic, never the spreadsheet's hand-typed 2.00 лв text that breaks the arithmetic."
 atomPath: "vocabulary/conversion"
-coordinate: "vocabulary/conversion · 8/crest · d402134a"
-contentUuid: "1960b17b-56d9-5db5-afb1-a642fa6abe75"
-diamondUuid: "9b2a5e8b-1509-81bb-aed4-2b6446f45d7d"
-uuid: "d402134a-682a-8cd2-a452-83ad1bc99d5f"
-horo: 8
+coordinate: "vocabulary/conversion · 1/base · 99c2cc6a"
+contentUuid: "a7a8e639-69a0-52d6-a19a-2ddf0b32346f"
+diamondUuid: "ead23829-b724-8a71-951d-d95f9ac03a4f"
+uuid: "99c2cc6a-0913-868b-a065-7df44cf4a680"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 81
+  bondDegree: 51
 standards: []
 bindings: []
 signatures:
-  computationUuid: "13b60357-5620-87cf-890f-a68e7ac1f22a"
+  computationUuid: "f3bad7f6-450a-8585-a5ad-b314bc03a9cd"
   stages:
     - stage: path
       stageUuid: "959c2df7-b6c4-8982-b04a-d48b9c0272a9"
     - stage: trinity
       stageUuid: "28018b41-67df-8965-8a85-0cf463fd2e92"
     - stage: boundary
-      stageUuid: "afd45b98-3fd4-8fa9-84bd-9df8efa4234b"
+      stageUuid: "ebc46d50-fac7-825e-9c03-cdced66c5248"
     - stage: links
-      stageUuid: "ab280a77-ec3b-8077-8eb9-a37ef301ba79"
+      stageUuid: "c3990323-69cc-8c9c-8247-1319927540bd"
     - stage: horo
-      stageUuid: "520bb1bf-f741-84f7-b9a5-85aae75cc71a"
+      stageUuid: "dc05c8a9-c195-8c2d-a5ec-2285a941a6b6"
     - stage: seal
       stageUuid: "0f5591f0-1d3a-8e5d-89e3-878da7353aa2"
     - stage: uuid
-      stageUuid: "fa01cf83-0c99-8fe1-a3b0-59f725bab374"
+      stageUuid: "ab17ff23-1cd2-8e4b-9810-763a4d538830"
 version: 2
 ---
 # conversion — re-expressing a quantity on another basis, automatically and accounted
@@ -41,7 +41,7 @@ A **conversion** re-expresses a measured thing on another **basis** through a [[
 
 **The law the source artifact breaks.** The CSA spreadsheet stores a price as the text `2.00 лв` and a yield in a separate imperial sheet — so totals throw `#VALUE!` and the two unit systems drift. The atom's fix: a quantity is **value + unit** ([[measure]]) and money is **amount + ISO-4217** ([[currency]]), **never a unit-/currency-baked string**; conversion is then **automatic** — applied by a [[hooks|hook]] at write or computed at read, blanks routing to the no-op identity (`×1`), one canonical substance beneath the locale's preferred unit ([[localize]]).
 
-**Conversion accounts by double-entry.** A change of basis must **[[balance]]** ([[entry]]): a unit conversion *conserves substance* (the same physical quantity, two labels — content-[[identity|identical]]); a currency conversion at a moved [[rate]] **books an FX gain/loss** to keep the ledger balanced ([[accounting]]). So "convert" is never a lossy display trick — it is a posted, reversible, content-addressed operation: the [[give]] / [[take]] of one basis for another that nets to zero in substance and reconciles in value.
+**Conversion accounts by double-entry.** A change of basis must **[[balance]]** ([[entry]]): a unit conversion *conserves substance* (the same physical quantity, two labels — content-[[identity|identical]]); a currency conversion at a moved [[rate]] **books an FX gain/loss** to keep the ledger balanced ([[accounting]]). So "convert" is never a lossy display trick — it is a posted, reversible, content-addressed operation: the [[give]] / take of one basis for another that nets to zero in substance and reconciles in value.
 
 ## Standards
 - UN/CEFACT Rec 20 (unit codes & dimensions); ISO 4217:2015 (currency codes, minor units)
@@ -54,6 +54,6 @@ A **conversion** re-expresses a measured thing on another **basis** through a [[
 - Summing across dimensions (kg + L, USD + BGN) — convert through a [[rate]] at a point first; only sum within a [[dimension]].
 - A conversion that loses value silently — at a moved rate it must book an FX gain/loss to [[balance]]; substance is conserved, value reconciled.
 
-Composes [[rate]] · [[measure]] · [[currency]] · [[amount]] · [[dimension]] · [[balance]] · [[entry]] · [[accounting]] · [[identity]] · [[versions]] · [[hooks]] · [[localize]] · [[give]] · [[take]] · [[funnel]] · [[attribution]] · [[customers/sales/orders]].
+Composes [[rate]] · [[measure]] · [[currency]] · [[amount]] · [[dimension]] · [[balance]] · [[entry]] · [[accounting]] · [[identity]] · [[versions]] · [[hooks]] · [[localize]] · [[give]] · take · [[funnel]] · [[attribution]] · [[customers/sales/orders]].
 
 **Law — [[law]]: a conversion re-expresses a quantity on another basis through a [[rate]] pinned at a point — automatic, never a unit-baked string — conserving substance and accounting by double-entry ([[balance]]) so it nets to zero in substance and reconciles in value.**

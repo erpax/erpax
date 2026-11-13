@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "object",
-    "uuid": "bf582ef8-9bfa-8a6c-ab65-bf11004f375e",
+    "uuid": "10a7d46f-acca-8b6b-9200-fa91f7d9a543",
     "words": [
       "object"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about object — The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) o",
-    "uuid": "559e1f5d-c668-8ca6-ac40-58adffeede99",
+    "uuid": "a4422942-1895-820b-a425-ea4888ff34c0",
     "words": [
       "use",
       "when",

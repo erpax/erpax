@@ -2,41 +2,41 @@
 name: known
 description: "Use when reasoning about known as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/known"
-coordinate: "vocabulary/known · 1/base · 08e45641"
-contentUuid: "2ed17921-fa04-55f7-81be-53098877974a"
-diamondUuid: "9b90a94a-1415-8907-83e6-b7cb3c89df93"
-uuid: "08e45641-fa6e-8d32-b923-ff9dad81470d"
-horo: 1
+coordinate: "vocabulary/known · 8/crest · 4fc6b3a5"
+contentUuid: "b4795ef0-3d61-53fa-8e4c-04a25f301264"
+diamondUuid: "de917a1e-09d6-893f-9b7d-2a845f30b2eb"
+uuid: "4fc6b3a5-f316-8f41-a324-1d57fb4925a5"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 20
+  bondDegree: 16
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d1273f8c-92e0-8f28-909c-16a803c167ac"
+  computationUuid: "30ac394c-26a9-8d9b-9cba-88cd72c2ded9"
   stages:
     - stage: path
       stageUuid: "53ae9960-ec7b-8004-992d-9c4322d520d6"
     - stage: trinity
       stageUuid: "7b406fa6-a2c4-84a3-9c59-f82c827c7093"
     - stage: boundary
-      stageUuid: "a63050db-e64e-81a5-b0fe-824996df6fb9"
+      stageUuid: "601b8025-4446-879e-bb4f-28b5ff3ffa6d"
     - stage: links
-      stageUuid: "2a64ceac-7e7e-84c9-9720-5fe5a3a8acc3"
+      stageUuid: "f53a8540-5a11-81ab-826e-def2283b726a"
     - stage: horo
-      stageUuid: "48dd65d2-6d7e-8d79-b92b-d482a6a3924c"
+      stageUuid: "7cc8013e-9a57-8a39-8973-2df174d4e9c8"
     - stage: seal
       stageUuid: "b06a71ce-2b6d-8704-809e-aa347639fb5d"
     - stage: uuid
-      stageUuid: "374fe82a-eb44-8707-8109-9b1cf98ab405"
+      stageUuid: "823bb506-edb5-8daf-aa85-924ca14fc3bd"
 version: 2
 ---
 # known
 
 A schema.org component word, collided out of schema.org compounds — fused from knownVehicleDamages ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[vehicle]] · [[damages]]
+Entangled with — vehicle · [[damages]]
 
 Attested in schema.org — knownVehicleDamages
 

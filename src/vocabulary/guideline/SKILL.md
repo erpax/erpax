@@ -2,41 +2,41 @@
 name: guideline
 description: Use when reasoning about guideline — A medical guideline related to this entity.
 atomPath: "vocabulary/guideline"
-coordinate: "vocabulary/guideline · 7/descent · 8d839acb"
-contentUuid: "fae3d42d-2649-5ec5-b9b1-ab930f34282d"
-diamondUuid: "eb1ede24-a378-832a-a6bb-bdb10dc178b0"
-uuid: "8d839acb-6069-8161-8fa8-8b53aa5e6065"
+coordinate: "vocabulary/guideline · 7/descent · 0d16c759"
+contentUuid: "e4c27cb6-8128-585b-a820-0c8a37d8d97b"
+diamondUuid: "d11ec215-70c5-8780-9085-cec80bb6f075"
+uuid: "0d16c759-e870-8609-b3ac-ab3f34735fb7"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 29
+  bondDegree: 25
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a65ec7d7-dcde-8b3d-94e4-f32e87fcd326"
+  computationUuid: "877f107c-a9d4-8a15-8a9f-580288a33385"
   stages:
     - stage: path
       stageUuid: "5a0eb423-27a5-8057-b7ca-de9d0c5b0d8e"
     - stage: trinity
       stageUuid: "bc284cac-6b92-85e0-916f-97313b699acf"
     - stage: boundary
-      stageUuid: "aa6741e8-62e7-824b-af79-adcf90602251"
+      stageUuid: "980a704d-6a69-85cf-ba4c-52161f92fd30"
     - stage: links
-      stageUuid: "623f2a8d-271d-8f5b-98d9-e8415b2e485e"
+      stageUuid: "b639557e-295f-85d5-b12c-8402b198ed73"
     - stage: horo
-      stageUuid: "26db9c51-fda6-851e-8943-3fbf8952141c"
+      stageUuid: "df2439da-d40d-836c-8092-7b0bb7691ecd"
     - stage: seal
       stageUuid: "ff410424-ca0f-8d65-9089-6694a0b91707"
     - stage: uuid
-      stageUuid: "d6c64a2a-5573-8b8b-9b52-98021d48e0fd"
+      stageUuid: "4abc14b8-2549-8e0a-8b90-7842df578b40"
 version: 2
 ---
 # guideline
 
 A medical guideline related to this entity.
 
-Entangled with — [[medical]] · [[contraindication]] · [[recommendation]] · [[date]] · [[subject]]
+Entangled with — [[medical]] · [[contraindication]] · [[recommendation]] · [[date]] · subject
 
 Attested in schema.org — MedicalGuideline · MedicalGuidelineContraindication · MedicalGuidelineRecommendation · guideline · guidelineDate · guidelineSubject
 

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about dev — erpax is a multi-tenant accounting platform: **Payload 4 CMS + Next.js 16**, backed by **Cloudflare D1** (SQLite) and R2, served in prod via OpenNext/workerd. Locally there is no r",
-    "uuid": "741b8de7-4bc7-81bb-b589-316b9d862cde",
+    "uuid": "4b5f6442-4c0e-88b4-9e9d-208c029ea80a",
     "words": [
       "use",
       "when",

@@ -3,13 +3,13 @@ name: complete
 description: "Use when checking whether the corpus stays whole — the computed convention that every atom is the full trinity {SKILL.md, index.ts, test.ts}, measured live as coverage = complete / total over the real tree."
 atomPath: "convention/complete"
 coordinate: "convention/complete · 2/share · b483a56c"
-contentUuid: "cf3fbcd6-a9b2-525d-9844-5bd1cbff156a"
+contentUuid: "3760c2da-7aec-573e-a2be-8717f17158ef"
 diamondUuid: "23f8b2d8-8f01-85c1-82aa-f296d0438a5f"
 uuid: "b483a56c-7c3e-8218-97b3-7bd6bf3301f9"
 horo: 2
 typography:
   partition: convention
-  bondDegree: 59
+  bondDegree: 58
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

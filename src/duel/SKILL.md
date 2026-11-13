@@ -2,18 +2,18 @@
 name: duel
 description: "Use when testing through pairs of inverted development teams — a prover that asserts and builds, and a refuter that takes the exact opposite side and attacks it. They are duals (the anti-claim is the claim's negation), always opposed, and the verdict manifests realtime per round. Popper asymmetry: one refutation falls the claim, no amount of proof verifies it — a claim STANDS as not-yet-refuted, never as proven true."
 atomPath: duel
-coordinate: "duel · 1/base · 35763af5"
-contentUuid: "534839ad-956c-5dbc-8bab-3a869e0c954b"
-diamondUuid: "4bf613a5-b390-8266-9b58-19cd8d61166d"
-uuid: "35763af5-a8c1-83b1-a7cb-45a5dead5901"
-horo: 1
+coordinate: "duel · 4/weave · c0714743"
+contentUuid: "8a98efe1-d0b3-501c-95d8-c644f00e2b1b"
+diamondUuid: "3fcb73e9-339f-8140-87e6-26e4f29edf16"
+uuid: "c0714743-78f0-838f-895a-5a427c9e3375"
+horo: 4
 typography:
   partition: duel
-  bondDegree: 27
+  bondDegree: 21
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fecf7599-18ac-810f-a632-89ec6e2e9efc"
+  computationUuid: "23687aad-b447-8eb4-8850-13195c0f14af"
   stages:
     - stage: path
       stageUuid: "03bb6adc-8a46-8305-9452-bee3c72e4ee8"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "2dd6f134-0ec1-8148-bf25-8f067132bc05"
     - stage: links
-      stageUuid: "723eb80c-8729-8068-9a64-13803b244c4c"
+      stageUuid: "67e88dda-bc45-8cf0-bd8b-f0dd5184e7c7"
     - stage: horo
-      stageUuid: "f83b4ce2-0dde-8d9f-8f63-6494e314ebc8"
+      stageUuid: "b97f6b49-36a0-8835-8993-c8b2b2314841"
     - stage: seal
       stageUuid: "e3f8c36f-4e40-8e59-a750-ca97362ee051"
     - stage: uuid
-      stageUuid: "c8773e00-6a98-8a44-a477-055c043a19b0"
+      stageUuid: "c9b0cd2e-8dc5-87dc-903d-bb2cae7cd0af"
 version: 2
 ---
 # duel — inverted teams, opposite sides, manifesting realtime
@@ -61,4 +61,4 @@ round → refuter  refuted — one counterexample falls the claim, whatever the 
 - **Popper — falsifiability** — the asymmetry of confirmation and refutation; one counterexample decides.
 - **Red-team / property-based testing** — the adversary attacks the exact claim; a build untested by its dual is unbalanced.
 
-Composes: [[horo]]/antimatter · [[claim]] · [[argument]] · [[rules]]/refutable · [[double]]/entry · [[law]].
+Composes: [[horo]]/antimatter · claim · argument · [[rules]]/refutable · [[double]]/entry · [[law]].

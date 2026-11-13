@@ -3,13 +3,13 @@ name: complete
 description: "Use when reasoning about complete — Completeness is **required**, and it is not what a single listing reports."
 atomPath: "publish/complete"
 coordinate: "publish/complete · 2/share · 49f023ad"
-contentUuid: "f2f5e775-a750-5c41-ba1b-05621abafca8"
+contentUuid: "ad120f91-0420-58d2-856e-43c1426e8453"
 diamondUuid: "58832ade-776c-8162-bb08-d0d930d0a5c5"
 uuid: "49f023ad-4db2-8f67-bcfa-d5c80c4f9b2a"
 horo: 2
 typography:
   partition: publish
-  bondDegree: 59
+  bondDegree: 58
 standards: []
 bindings: []
 signatures:

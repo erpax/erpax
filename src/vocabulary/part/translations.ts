@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about membership in erpax — a field of a collection, a line of an entry, a component of a BOM, a plugin of erpax. The universal root of membership; dual of whole.",
-    "uuid": "d963d363-9f18-86cf-8f94-fcf4c453a430",
+    "uuid": "6c212940-7743-8abd-b193-76efe85d2359",
     "words": [
       "use",
       "when",

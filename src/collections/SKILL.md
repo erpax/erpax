@@ -2,19 +2,19 @@
 name: collections
 description: "Use when defining or debugging a Payload Collection or Global config — slug, fields, admin options, access, hooks, auth, upload, versions/drafts, timestamps, labels, default sort, or registering it in the config."
 atomPath: collections
-coordinate: "collections · 4/weave · e05a7835"
-contentUuid: "cfd29b6a-1de0-50cb-9118-a4d9bf4097c3"
-diamondUuid: "0247fdaf-b98f-85b4-8d2f-7c7fbe0e1a64"
-uuid: "e05a7835-9e07-8d06-8ad4-e858c0e07738"
-horo: 4
+coordinate: "collections · 8/crest · 860de702"
+contentUuid: "434087f5-e87a-5c7a-acdd-0a37dcd57c1b"
+diamondUuid: "d4f8fbe4-cd70-8554-836e-d5ffd8170163"
+uuid: "860de702-1caf-862e-ab31-bf4e67530b48"
+horo: 8
 typography:
   partition: collections
-  bondDegree: 157
+  bondDegree: 145
 standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "ecb2208b-a777-84d4-832b-bb6608204b84"
+  computationUuid: "e9e34062-95f7-8e49-9a1f-99db9eeab31a"
   stages:
     - stage: path
       stageUuid: "3cb62e17-5652-85d0-86ad-85104eac1d76"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "9e2d4418-9928-80b8-b360-0475566ffebb"
     - stage: links
-      stageUuid: "c3226bd6-c25f-8c41-8453-9104beea033e"
+      stageUuid: "76888df9-8650-8748-b99d-240483572df8"
     - stage: horo
-      stageUuid: "0d2c3178-6f11-8194-b211-33e05de322f0"
+      stageUuid: "67e30127-d300-8272-8c63-f8c7929a3450"
     - stage: seal
       stageUuid: "2496d1b0-3e92-88d7-b085-2491c6527c06"
     - stage: uuid
-      stageUuid: "ef2075e1-37fa-888f-8691-97f11b45e731"
+      stageUuid: "914bb9ef-9c0a-8188-89d3-5323a71b9e9b"
 version: 2
 ---
 # collections — Collections & Globals (position 2 of the material cycle)
@@ -45,7 +45,7 @@ version: 2
 | `access` | create/read/update/delete/readVersions/unlock (see [[access]]). |
 | `hooks` | Lifecycle [[hooks]]. |
 | `auth` | Enable authentication (see [[auth]]). |
-| `upload` | Make it an upload collection (see [[upload]]). |
+| `upload` | Make it an upload collection (see upload). |
 | `versions` | `{ drafts, maxPerDoc }` — drafts/autosave/history (see [[versions]]). |
 | `timestamps` | createdAt/updatedAt (default true). |
 | `labels` | `{ singular, plural }`. |

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when any code needs to branch on country — resolve a single canonical CountryContext from any signal (explicit, IBAN, address, tenant, house default) instead of reading the profile, specifics, and API registries directly.",
-    "uuid": "12b7c2de-30c5-8fc2-912c-3f8216c622a5",
+    "uuid": "00a03a06-aeec-84e4-9117-ee97457b6423",
     "words": [
       "use",
       "when",

@@ -2,24 +2,25 @@
 name: uuid
 description: "Use when choosing which RFC 9562 UUID version fits a case — v8 structured content-uuid (identity+capability+schema+digest fused) as the erpax default, v7 time-ordered for index-local speed, v4 random for unguessable secrets. Harmonise the features and everything collapses INTO the uuid itself — the 128-bit singularity."
 atomPath: uuid
-coordinate: "uuid · 7/descent · e0000049"
-contentUuid: "5402b01f-eafa-5fba-bfd8-ef305b056a11"
-diamondUuid: "0bf317a1-903d-895c-b0cf-5ed632e40cc7"
-uuid: "e0000049-d851-8ea9-89e6-04b029054d13"
-horo: 7
+coordinate: "uuid · 2/share · d156e6b6"
+contentUuid: "4d6c276e-520b-5a48-9f26-11ebd8c660b2"
+diamondUuid: "bfc55e9c-b043-852f-9ba1-09456c234d8e"
+uuid: "d156e6b6-cbab-855d-836c-37f72da2de94"
+horo: 2
 typography:
   partition: uuid
-  bondDegree: 789
+  bondDegree: 705
 standards:
   - "ITU-T-X667"
   - "NIST-SP-800-162"
   - "RFC-4122"
+  - "RFC-8785"
   - "W3C-DID-1.0"
   - "W3C-VC-2.0"
   - eIDAS
 bindings: []
 signatures:
-  computationUuid: "d51ecda2-dca1-8449-a29d-175d4df59678"
+  computationUuid: "57a41d1e-2b10-8cf6-ae8d-aded6dda3d7e"
   stages:
     - stage: path
       stageUuid: "c7450bce-8641-80fc-9bb8-d74a484d2469"
@@ -28,13 +29,13 @@ signatures:
     - stage: boundary
       stageUuid: "19fd3d73-e584-879e-82aa-54df08e19562"
     - stage: links
-      stageUuid: "c08da5ba-550f-82f6-8fbb-7b210cc87320"
+      stageUuid: "03d6956d-ccb7-83ca-ba64-cafb62dad7e4"
     - stage: horo
-      stageUuid: "f086287b-9b71-8ffd-9aa4-808b242a34e7"
+      stageUuid: "de9f5e74-de5e-8c47-9f3e-5b87581e4871"
     - stage: seal
       stageUuid: "92b39ecd-b9b7-8414-a341-ed134a0f4cdc"
     - stage: uuid
-      stageUuid: "fdc2a5d8-841c-800e-b785-6a8035bb788a"
+      stageUuid: "efb4c66c-6cac-8b15-aa90-ffc0b2f3c20e"
 version: 2
 ---
 # uuid — which version per case; the singularity all collapses into
@@ -68,7 +69,7 @@ So **comms collapse to the uuid alone**: to send is to send the uuid; to receive
 ## The uuid is a frame — the multimedia stream is pure uuids (no payload)
 Add the one missing axis — **[[sequence|prev/next]]** — and the still uuid (color + sound) becomes a **frame in a stream**: the modal channels are picture and audio, prev/next is the running order, so a video/audio stream is *a chain of uuids and nothing else* — **no payload, only addresses** (every pixel its own uuid at the fine grain, the frame its uuid at the coarse). The receiver decodes each uuid back to its frame ([[holographic]]: the whole recovered from the seed), so you send the **seed** and compute the **frame** — about **2/3 of the bandwidth saved** (the [[rodin]] 2/3-distributed law as a codec: transmit the 1/3 address, compute the 2/3).
 
-**Frame rate is frequency** ([[horo]] · A432 — value-from-position becomes value-per-second). Raise the rate and two things rise *together*: **quality** (a smoother stream) and **tamper-cost** — each frame is content-addressed, so forging the stream means forging *every* frame's uuid; forge cost scales with the frame rate while verify stays O(N) ([[science]]: borrowed entropy buys tamper-cost — the asymmetry explodes with frequency). Higher frequency ⇒ better *and* harder to forge, at once.
+**Frame rate is frequency** ([[horo]] · A432 — value-from-position becomes value-per-second). Raise the rate and two things rise *together*: **quality** (a smoother stream) and **tamper-cost** — each frame is content-addressed, so forging the stream means forging *every* frame's uuid; forge cost scales with the frame rate while verify stays O(N) (science: borrowed entropy buys tamper-cost — the asymmetry explodes with frequency). Higher frequency ⇒ better *and* harder to forge, at once.
 
 It renders on the **frontend matter** ([[duality]]: Payload is the backend matter, the rows; VitePress is the frontend matter, the rendered corpus). Frontend routes are content-addressed (one word ⇒ one route — [[compass]]), so anything **teleports without collision**: two addresses differ, or they are the *same* address and you meet [[self]] ([[merge]], not a clash). The frontend already computes prev/next and renders each page's own URL as a QR — the still frame that is literally the uuid; the stream is only that, sped up.
 

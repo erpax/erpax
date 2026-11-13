@@ -2,41 +2,41 @@
 name: create
 description: "Use when reasoning about create as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/create"
-coordinate: "vocabulary/create · 7/descent · 3808c28f"
-contentUuid: "14d6454e-5507-51e6-848e-9783ee1d844a"
-diamondUuid: "8753f7b3-3e25-8672-bc25-bbf626d25b3d"
-uuid: "3808c28f-5478-8827-85e5-7fd26feec426"
-horo: 7
+coordinate: "vocabulary/create · 5/round · f31734f9"
+contentUuid: "c5d420f6-d945-51d5-b23d-ecd7ed0cbc45"
+diamondUuid: "9d30b679-2dd2-8269-bc4e-a4332d029cca"
+uuid: "f31734f9-5339-848d-b53f-29484d871a4a"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 16
+  bondDegree: 12
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "14a9d56c-6a37-861d-8ef4-a74ec7ce4134"
+  computationUuid: "621bffae-9148-8f27-a859-d57f92f8d7a5"
   stages:
     - stage: path
       stageUuid: "f1108232-5348-8f15-b2fc-213dfed1b8bf"
     - stage: trinity
       stageUuid: "caacc228-e994-80e8-8856-6a8baf6c1e00"
     - stage: boundary
-      stageUuid: "5b674502-b194-807c-ae1b-32503dee3f07"
+      stageUuid: "e9cc8d1e-54d6-85dd-8454-06efaeafbd47"
     - stage: links
-      stageUuid: "a43a4723-3b27-80ef-8c6e-075f692eb9e5"
+      stageUuid: "9f5220c9-3b47-89cf-aa82-4d793e861300"
     - stage: horo
-      stageUuid: "291cb985-b866-8d5e-9e9e-cf4f32be7df1"
+      stageUuid: "a2024483-0e41-8b3b-ac58-16103e8a3b93"
     - stage: seal
       stageUuid: "1d72b4e3-a1bd-826b-9731-d7b7fe922433"
     - stage: uuid
-      stageUuid: "3b8c7f32-3b53-85af-a3f9-08eea9c53e89"
+      stageUuid: "890e1f0e-622f-8995-a6d7-c1e0608253fc"
 version: 2
 ---
 # create
 
 A schema.org component word, collided out of schema.org compounds — fused from CreateAction ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[action]]
+Entangled with — action
 
 Attested in schema.org — CreateAction
 

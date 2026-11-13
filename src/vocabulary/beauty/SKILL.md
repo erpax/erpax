@@ -2,41 +2,41 @@
 name: beauty
 description: "Use when reasoning about beauty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/beauty"
-coordinate: "vocabulary/beauty · 7/descent · 85717979"
-contentUuid: "546cbb72-7bf3-579b-a008-b7f7424e21d8"
-diamondUuid: "c3a3aff0-c8ca-8ec1-bbb8-404765c64149"
-uuid: "85717979-97c6-8118-843a-8c74c95a51e0"
-horo: 7
+coordinate: "vocabulary/beauty · 4/weave · 8570a107"
+contentUuid: "e71833b5-ac74-5735-9c9a-32e8d0d8a4fe"
+diamondUuid: "cff7cd29-48c7-8bf9-9423-b083d923fb0d"
+uuid: "8570a107-a254-8640-8a52-ba23ec539986"
+horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 23
+  bondDegree: 16
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "eeb49d07-3032-8ac9-a27a-8da0cc96801d"
+  computationUuid: "890605c1-9c02-8552-b5ce-9fdd1a082378"
   stages:
     - stage: path
       stageUuid: "f384bf69-091b-8035-b15d-421be0a03111"
     - stage: trinity
       stageUuid: "fe20e6cb-40ef-875f-85d0-196bc33abc18"
     - stage: boundary
-      stageUuid: "afcdfbdc-165c-8c06-bacd-7505ec60e094"
+      stageUuid: "aa60e294-cde8-8026-afee-2c6d85e83d53"
     - stage: links
-      stageUuid: "383c0baa-ea3e-8b00-8269-aa13f924a4c3"
+      stageUuid: "c6231dba-da7b-8641-a7e1-0bfe4d4601b2"
     - stage: horo
-      stageUuid: "3e5ad9e7-afd9-8f02-b1a9-a203fc5dcf51"
+      stageUuid: "0383d555-62cd-824a-85ec-2ad770ac4fd3"
     - stage: seal
       stageUuid: "122f9b49-0c3d-8fd9-8ce6-5eb56af083b4"
     - stage: uuid
-      stageUuid: "66bc5db4-a478-8816-8ceb-5c0f76e6eb65"
+      stageUuid: "81c80df5-a231-8525-809c-16d88e3995be"
 version: 2
 ---
 # beauty
 
 A schema.org component word, collided out of schema.org compounds — fused from BeautySalon · HealthAndBeautyBusiness ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[salon]] · [[health]] · [[business]]
+Entangled with — salon · health · [[business]]
 
 Attested in schema.org — BeautySalon · HealthAndBeautyBusiness
 

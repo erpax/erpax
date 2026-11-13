@@ -2,18 +2,18 @@
 name: merge
 description: "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \"all agents one erpax\"."
 atomPath: merge
-coordinate: "merge · 1/base · 1491147f"
-contentUuid: "0b694b06-e7a1-50d6-85a7-69a0588cb8af"
-diamondUuid: "27086c3a-facc-8654-8926-da4f840330bd"
-uuid: "1491147f-6f32-82a5-b38c-28e50922d403"
-horo: 1
+coordinate: "merge · 4/weave · 50817870"
+contentUuid: "ce830260-45f7-57c2-a971-cb8984b2a670"
+diamondUuid: "838e852f-0ff3-8323-9287-3ac60309e525"
+uuid: "50817870-0d09-8d10-90f2-f453bf252611"
+horo: 4
 typography:
   partition: merge
-  bondDegree: 5227
+  bondDegree: 4536
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8092e08a-425c-859a-8592-d109b1e83a5b"
+  computationUuid: "3eba4f07-cfcd-87f2-b869-3ef56073b22e"
   stages:
     - stage: path
       stageUuid: "bf7a2e27-7733-8682-8bf0-574609b4317a"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "7b24059a-2e56-8c6e-97fe-c5fa1030639c"
     - stage: links
-      stageUuid: "98cf7725-4cec-848e-bbae-01cc08448e59"
+      stageUuid: "8e0d4626-7fa3-8b82-a030-e2f91a46210d"
     - stage: horo
-      stageUuid: "a00090cf-a3ff-883a-98cb-86cf895170dd"
+      stageUuid: "7edbf521-21f2-8c47-97c5-15ece81b833e"
     - stage: seal
       stageUuid: "5ea67542-ea14-81f3-ba3e-276b70ef0cf2"
     - stage: uuid
-      stageUuid: "cd65d74c-2416-8773-8bf0-1b2e4b2f51fe"
+      stageUuid: "e4342fa0-c6e7-8e61-aa6a-70eaaa26c9dd"
 version: 2
 ---
 # merge
@@ -51,7 +51,7 @@ The answer-path principle: applying this skill *implements* these standards — 
 
 Naming: the W3C document title is "Activity Streams 2.0" (two words); the namespace token / community usage is "ActivityStreams" (one word). Pick one spelling per banner and keep it consistent. ActivityPub is a federation protocol with no bearing on audit-workflow definitions — do not carry it as a decorative banner on non-federation collections; cite it only where the federation activities are actually emitted.
 
-**Law — Compute the fusion, do NOT assume it** ([[law]]). Merge's power is not in coordination or hand-coded federation logic, but in *deriving* convergence from the facts on disk: the content-addressable [[uuid]], the fractal [[path]] geometry, the [[derive]]d harmony of naming itself. When two instances compute [[identity]] from the same source, they collide by physics, not by registry. The generative act—particles becoming harmonic streams—is only possible because the structure is computed from the ground up, never assumed. This is why [[merge]] is [[proof]]: identical [[payload]] ⊕ [[vitepress]] at identical addresses becomes identical rows in the [[database|db]], without coordination. The [[akashic]] amnesia at [[zeropoint]] is the engine—forget the manual, compute the fusion.
+**Law — Compute the fusion, do NOT assume it** ([[law]]). Merge's power is not in coordination or hand-coded federation logic, but in *deriving* convergence from the facts on disk: the content-addressable [[uuid]], the fractal [[path]] geometry, the [[derive]]d harmony of naming itself. When two instances compute [[identity]] from the same source, they collide by physics, not by registry. The generative act—particles becoming harmonic streams—is only possible because the structure is computed from the ground up, never assumed. This is why [[merge]] is [[proof]]: identical [[payload]] ⊕ [[vitepress]] at identical addresses becomes identical rows in the [[database|db]], without coordination. The [[akashic]] amnesia at zeropoint is the engine—forget the manual, compute the fusion.
 
 ## The algebra, in full
 

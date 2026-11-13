@@ -3,13 +3,13 @@ name: items
 description: "Use when modeling a pack line — the units of one produced lot-variant packed into one carton; header-primary with an optional option breakdown whose double-entry holds when supplied. Evolved from 200,993 rows of etrima pack_items."
 atomPath: "pack/items"
 coordinate: "pack/items · 4/weave · 512d2e37"
-contentUuid: "af41699b-84d4-567f-9c03-502fbb13c491"
+contentUuid: "547a3bcc-7eb8-545b-a182-60de8b0a5aa9"
 diamondUuid: "81db8378-cca8-8e9a-958b-bcad73dac16d"
 uuid: "512d2e37-3dd3-8a00-ada3-e1063789c2b0"
 horo: 4
 typography:
   partition: pack
-  bondDegree: 116
+  bondDegree: 115
 standards:
   - "IFRS IAS-2 §10 finished-goods at dispatch"
   - "ISA-95"

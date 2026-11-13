@@ -3,18 +3,18 @@ name: quantum
 description: "Use when SKILL.md frontmatter in the quantum partition needs parse · generate · upgrade — parseQuantumSkill, generateQuantumSkill, and upgradeQuantumSkillText fold superposition, collapse, seal, and path-account into quantum SKILL.md."
 atomPath: "skill/router/upgrade/quantum"
 coordinate: "skill/router/upgrade/quantum · 7/descent · 59b68c6f"
-contentUuid: "eb7e5d62-4258-5735-9239-9132c51e12bc"
-diamondUuid: "d717e1b2-ffb3-855c-bbff-e2606f75170d"
+contentUuid: "6d2e581e-fd43-5863-9a9c-6243cdc23062"
+diamondUuid: "7642c936-9a8b-85d8-8050-c56fcb7ceaf0"
 uuid: "59b68c6f-c89b-873b-8292-8b4c2cb4717f"
 horo: 7
 typography:
   partition: skill
-  bondDegree: 553
+  bondDegree: 537
 standards:
   - "${model.standard}`)"
 bindings: []
 signatures:
-  computationUuid: "f72e911a-8c7f-8cd0-a4dc-659c9d3dbb6f"
+  computationUuid: "79c1b500-a33c-8d95-9a63-b7f229d82252"
   stages:
     - stage: path
       stageUuid: "1a344836-5915-86e1-a07a-1d88d401c49f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "d9858b33-bdba-8114-ba79-62e2cef3f22b"
     - stage: horo
-      stageUuid: "3c264529-fcbc-8564-a24c-0cd3bcf91fac"
+      stageUuid: "8812bf33-f104-8729-8ac5-cd1be8fd04cc"
     - stage: seal
       stageUuid: "c3e60c41-0956-8a97-8a0b-f15fdc17e71a"
     - stage: uuid
-      stageUuid: "3fb5206e-dec5-82fb-b314-3dad09648bae"
+      stageUuid: "3e2bdb27-7f0d-8974-bfa3-e3d901dfaddf"
 version: 2
 ---
 # quantum — quantum SKILL.md parse · generate · upgrade

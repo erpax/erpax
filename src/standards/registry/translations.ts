@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a standard's canonical title, family or publisher is needed — the curated spine of facts a banner scan cannot derive, joined to fs-derived usage to build the shared catalogue.",
-    "uuid": "cae72c83-98b3-880c-ad2e-61542302025e",
+    "uuid": "96e598fa-c4b4-83c0-8f22-31cd65c541bd",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about iupac as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "ecb71a6c-9819-8614-9533-e43452142d78",
+    "uuid": "13d32440-ed30-880f-9216-85e622dd3482",
     "words": [
       "use",
       "when",

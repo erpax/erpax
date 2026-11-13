@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when determining which items require quantitative and narrative disclosure in financial statements — mandatory, recommended, and suggested per IFRS/GAAP; gate for materiality and scope",
-    "uuid": "2786e1dd-b333-8d9c-9a6d-2d8040377f0e",
+    "uuid": "ca4cff60-1e7e-830f-8283-1491810350d8",
     "words": [
       "use",
       "when",

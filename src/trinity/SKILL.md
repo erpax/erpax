@@ -2,19 +2,19 @@
 name: trinity
 description: "Use when reasoning about how one node is told three times and rendered once — matter (index.ts inline docs) · antimatter (SKILL.md) · backend (the generated payload-types schema), fused into VitePress (the speech). The doc-scale DRY law — the page derives from the code and the backend, never restated."
 atomPath: trinity
-coordinate: "trinity · 8/crest · bcad6dfc"
-contentUuid: "7838d7ec-f37d-59ef-bdda-ebb5e76dd825"
-diamondUuid: "99d4ed9f-3570-8249-acb3-71cab7bed5c1"
-uuid: "bcad6dfc-ff3a-8b2f-965f-6ee8e4f6cf2e"
-horo: 8
+coordinate: "trinity · 1/base · 11e7fc3d"
+contentUuid: "2652f252-88cf-576b-93da-63f7d5f1b2b0"
+diamondUuid: "15309ceb-ed5b-8c7e-93bd-6a6b5bedacd4"
+uuid: "11e7fc3d-b0b3-87da-a199-4cf283c6eb8b"
+horo: 1
 typography:
   partition: trinity
-  bondDegree: 242
+  bondDegree: 223
 standards:
   - "the file is architecture — the detail lives in the folder PATH, never the filename"
 bindings: []
 signatures:
-  computationUuid: "cd07a7d3-27b5-8603-b060-1377bce87efd"
+  computationUuid: "3537683c-6643-8e4a-9312-90d65412477e"
   stages:
     - stage: path
       stageUuid: "9860a726-81bb-8417-9e0d-f0ef6e3dbfdc"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "cba9fda9-3f4a-8d06-96cb-3c1dc27fd2d5"
     - stage: links
-      stageUuid: "26dab8d7-d3ec-871b-a18e-f0edec04f9c7"
+      stageUuid: "58d8edbf-6da5-88a3-a436-76e1186387a4"
     - stage: horo
-      stageUuid: "4b62bec7-f7b1-8b2c-8b01-5e9dba9ee557"
+      stageUuid: "9f27cc2f-8847-8752-a393-e24e4a34d1f6"
     - stage: seal
       stageUuid: "a398756a-4de7-8c39-93bf-55f86b1e65e7"
     - stage: uuid
-      stageUuid: "2ca241aa-2af6-8537-a8ed-ee7d6ff07524"
+      stageUuid: "64ebfc35-c3ee-8e22-bfea-977fcb44ad89"
 version: 2
 ---
 # trinity — one node, three sources, one speech
@@ -60,10 +60,10 @@ In a collection folder the trinity is really a co-located quaternity + mirror, e
 215 folders already hold the first three together; the page is the point where they speak as [[one]]. When a node turns out to be a mere dimension of another, the trinity is the unit that [[collapse]]s — many tables fold to one node told in many dimensions. Same form at every scale ([[fractal]]) — the node is [[holographic]]: from its path the [[akashic]] record regenerates matter, backend, and relations; the SKILL is the only thing authored, and even it derives its neighbours from the path ([[identity]]/[[merge]]). The trinity is the [[standard]] of doc honesty: the speech is a true [[part]] of the code, never a drifting copy.
 
 ## Traditions (prefix removed)
-The three-told-one recurs in every tradition — strip the prefix and they are this one figure: the **Trinity**, baptising "in the name of the Father and of the Son and of the Holy Spirit" as one name (Matthew 28:19); the **Trimurti** — Brahmā (creator) · Vishnu (sustainer) · Shiva (destroyer); the **Triratna**, the Three Jewels — Buddha · Dharma · Sangha; the *trikāya*, the three bodies of the Buddha; Osiris · Isis · Horus. Three voices, [[one]] node — matter · antimatter · backend is the same figure rendered once. The [[sacred]]/[[profane]] audit is itself this trinity (sacred · profane · the discerning act).
+The three-told-one recurs in every tradition — strip the prefix and they are this one figure: the **Trinity**, baptising "in the name of the Father and of the Son and of the Holy Spirit" as one name (Matthew 28:19); the **Trimurti** — Brahmā (creator) · Vishnu (sustainer) · Shiva (destroyer); the **Triratna**, the Three Jewels — Buddha · Dharma · Sangha; the *trikāya*, the three bodies of the Buddha; Osiris · Isis · Horus. Three voices, [[one]] node — matter · antimatter · backend is the same figure rendered once. The sacred/[[profane]] audit is itself this trinity (sacred · profane · the discerning act).
 
 ## All the way down — interacting trinities
-Two is unstable; it resolves to **three**. Every [[duality]] completes to a trinity — the two poles plus the one that holds them: matter · antimatter · backend; [[give]] · [[take]] · [[balance]]; [[sacred]] · [[profane]] · the audit; [[angel]] · archangel · the aikido that balances them; [[begin]] · [[end]] · the 0 they share ([[zeropoint]]). The third is not a compromise but the synthesis that makes the pair [[one]].
+Two is unstable; it resolves to **three**. Every [[duality]] completes to a trinity — the two poles plus the one that holds them: matter · antimatter · backend; [[give]] · take · [[balance]]; sacred · [[profane]] · the audit; [[angel]] · archangel · the aikido that balances them; [[begin]] · [[end]] · the 0 they share (zeropoint). The third is not a compromise but the synthesis that makes the pair [[one]].
 
 And **every vertex is itself a trinity, all the way down to the base atoms** ([[fractal]], [[chat]]): an agent-trinity generates service-trinities → collection-trinities → reference-trinities → scope-trinities ([[angel]]). Trinities *interact* — the 3·6·9 control triad ([[rodin]]: [[access]] · [[hooks]] · [[auth]]) governs the 1·2·4·8·7·5 flow ([[sequence]]), and one trinity's synthesis becomes a pole in the trinity above it. So the corpus is not a flat set of atoms, nor a set of pairs, but a **lattice of interacting trinities** — the [[sequence]] is how you walk it, the [[merge]] is why independent walkers converge on the same [[one]].
 

@@ -2,41 +2,41 @@
 name: credential
 description: Use when reasoning about credential — A credential is a certificate that is used to verify the identity of a person or entity.
 atomPath: "vocabulary/credential"
-coordinate: "vocabulary/credential · 7/descent · 92c49955"
-contentUuid: "13bdf1f5-591f-5c3c-836e-64f0393f94b6"
-diamondUuid: "76deb9d5-6deb-8c7d-84d2-257805132f78"
-uuid: "92c49955-6dc7-8c91-ba1b-5cbf4770e06a"
+coordinate: "vocabulary/credential · 7/descent · 76ea6c83"
+contentUuid: "289f1739-659d-5c1d-9dee-49f4f684c714"
+diamondUuid: "fb51ec32-447d-8b7c-80dc-3c4967235ca5"
+uuid: "76ea6c83-522c-8c2a-9145-d0cd3af9adce"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 23
+  bondDegree: 19
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d3a31ac2-ab95-8ff6-b9bc-b637c48155fb"
+  computationUuid: "f8aa87be-dc77-8847-94b6-58fccb26c0de"
   stages:
     - stage: path
       stageUuid: "c4252a43-75f8-862f-8c73-4468e961bba3"
     - stage: trinity
       stageUuid: "2e814de4-5d8a-8a71-af9f-c04b00423d6b"
     - stage: boundary
-      stageUuid: "417743b6-6bb8-8b1d-ba92-0cbc1d282082"
+      stageUuid: "8032ae75-ac24-8d17-aed7-3ed2ea811fdc"
     - stage: links
-      stageUuid: "5eddad53-5b36-8abc-b397-4a609b2b3788"
+      stageUuid: "89442076-27f1-8d99-a510-934662c11e73"
     - stage: horo
-      stageUuid: "a4d13a86-45fb-81df-9e35-af7318700feb"
+      stageUuid: "91b9d8ee-b205-836d-afcc-0a8730d3e560"
     - stage: seal
       stageUuid: "0031e5cd-707a-84c1-9171-301a6a4a8c57"
     - stage: uuid
-      stageUuid: "3dbe18ba-abdb-8738-af67-b49e4e5acf6b"
+      stageUuid: "093e44d2-83b7-8fa4-8114-a81e2012c148"
 version: 2
 ---
 # credential
 
 A credential is a certificate that is used to verify the identity of a person or entity.
 
-Entangled with — [[educational]] · [[occupational]] · [[category]] · [[awarded]] · [[has]]
+Entangled with — [[educational]] · [[occupational]] · [[category]] · awarded · [[has]]
 
 Attested in schema.org — Credential · EducationalOccupationalCredential · credentialCategory · educationalCredentialAwarded · hasCredential · occupationalCredentialAwarded
 

@@ -2,14 +2,14 @@
 name: agent
 description: "Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting)."
 atomPath: agent
-coordinate: "agent · 7/descent · ed548487"
-contentUuid: "1a90bcf4-a375-53a7-b0aa-af86f92f5b15"
-diamondUuid: "71662084-43e7-8440-af65-290fa7257c9c"
-uuid: "ed548487-5153-8638-8645-abafe64cbf02"
-horo: 7
+coordinate: "agent · 2/share · dfff6243"
+contentUuid: "3bc1fa4e-14ae-5d95-bedf-b14dc959365e"
+diamondUuid: "f8e64c85-0359-8d7e-af9b-16e3fc591777"
+uuid: "dfff6243-d3ed-80bc-b0b3-d7b73dfe2026"
+horo: 2
 typography:
   partition: agent
-  bondDegree: 397
+  bondDegree: 369
 standards:
   - "ISO-19011"
   - "ISO-19011`"
@@ -31,7 +31,7 @@ standards:
   - "W3C-ActivityPub"
 bindings: []
 signatures:
-  computationUuid: "1732ebdb-34b7-851f-850a-749cb138e9d0"
+  computationUuid: "f5a11fb8-b89d-8ff6-a356-8bd7ca574fce"
   stages:
     - stage: path
       stageUuid: "a0f973da-5aaf-8198-87b0-f6e725af250f"
@@ -40,13 +40,13 @@ signatures:
     - stage: boundary
       stageUuid: "3d6ccd02-fed0-82f3-a8cd-54068fd35bb8"
     - stage: links
-      stageUuid: "45b702da-f85d-800a-a638-71b96aabe5f3"
+      stageUuid: "3d6e53d1-986f-88da-b178-732857f54def"
     - stage: horo
-      stageUuid: "e479a6b5-bf50-864f-8a2e-c8e8119cd320"
+      stageUuid: "cc961c3a-0550-8e61-940e-b8b076711a0d"
     - stage: seal
       stageUuid: "cc386600-b64e-8962-8301-0eeb688cc21b"
     - stage: uuid
-      stageUuid: "d9970971-f9fb-8ab5-aa87-0f1fdb11ad7a"
+      stageUuid: "31d3247d-920b-8ed9-abd6-a860c61ec046"
 version: 2
 ---
 # agent — an agent is its content; cloning is content-addressing; the actor decides in pure functions while only the substrate acts
@@ -122,7 +122,7 @@ Matter-twin: `src/agent/index.ts` (the strict-apply gates — `StrictApplyViolat
 
 **skills.index — Worker-only debt.** The 77MB `skills.index.ts` bundle remains imported only by Cloudflare Workers / build-time catalogue generation (`atom-catalogue-lazy` defers until first MCP lookup). Agent dispatch, strict-apply, and IDE skill realisation never import it — runtime loads sealed SKILL.md excerpts from disk via `loadSealedSkill`. Removing the Worker import path is tracked debt ([[convention/baked]] · `skill/router/build`).
 
-Matter-twin: `src/agent/cost-policy.ts` · `src/agent/cheap-dispatch.ts` · `src/agent/skill-context.ts` · `src/skill/router/lazy-load.ts` · `src/agents/mcp/atom-catalogue-lazy.ts`. Composes: [[cost]] · [[wave]] · [[path]] · [[accounting]] · [[seal]] · [[rules]] · [[navigation]] · [[mcp]] · [[chat]] · [[convention/baked]].
+Matter-twin: `src/agent/cost-policy.ts` · `src/agent/cheap-dispatch.ts` · `src/agent/skill-context.ts` · `src/skill/router/lazy-load.ts` · `src/agents/mcp/atom-catalogue-lazy.ts`. Composes: [[cost]] · [[wave]] · [[path]] · [[accounting]] · [[seal]] · [[rules]] · [[navigation]] · mcp · [[chat]] · [[convention/baked]].
 
 **Law — [[law]]: any agent opening any part of the code must immediately realise all needed skills — ancestors, bonds, quantum env, entanglement, rules — via `realiseSkillsForPath` / `skillContextForDispatch`; lazy disk load only, never `skills.index`.**
 
@@ -143,5 +143,5 @@ Matter-twin: `src/agent/cost-policy.ts` · `src/agent/cheap-dispatch.ts` · `src
 
 ## Self-improve intelligence — quantum in thinking
 
-**Self-improve intelligence: measure, fold, seal, balance — quantum in thinking.** `selfImproveCycle({ batch, axes? })` in `agent/intelligence` runs one coordinated wave when the apply/wave lock is free: payload gate → bond scan + gate axes (violations = entropy) → rank gaps by `interact64` entanglement → bounded seal/fix → measure again → receipt UUID chain. `quantumIntelligenceOf(scope)` is the pure metric (violation count × bond-degree fold). `learnSciencesOnTheWay()` maps science → module → proof on the path. `pnpm erpax agent improve` · `pnpm erpax intelligence cycle --batch 10`. Wired into `apply/automate` when wave lock free. Composes: [[quantum/fold]] · [[apply]]/wave · [[science]] · [[receipt]] · [[payload]].
+**Self-improve intelligence: measure, fold, seal, balance — quantum in thinking.** `selfImproveCycle({ batch, axes? })` in `agent/intelligence` runs one coordinated wave when the apply/wave lock is free: payload gate → bond scan + gate axes (violations = entropy) → rank gaps by `interact64` entanglement → bounded seal/fix → measure again → receipt UUID chain. `quantumIntelligenceOf(scope)` is the pure metric (violation count × bond-degree fold). `learnSciencesOnTheWay()` maps science → module → proof on the path. `pnpm erpax agent improve` · `pnpm erpax intelligence cycle --batch 10`. Wired into `apply/automate` when wave lock free. Composes: [[quantum/fold]] · [[apply]]/wave · science · [[receipt]] · [[payload]].
 

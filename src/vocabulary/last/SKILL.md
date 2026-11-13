@@ -2,41 +2,41 @@
 name: last
 description: "Use when reasoning about last as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/last"
-coordinate: "vocabulary/last · 1/base · ffa584a1"
-contentUuid: "141651fb-40d1-5e0c-9f88-b573d7dffa93"
-diamondUuid: "c8c82a3f-06e0-84f4-af86-990502020c21"
-uuid: "ffa584a1-799a-8544-997e-2f512f8d7eb2"
-horo: 1
+coordinate: "vocabulary/last · 7/descent · 95e6fae9"
+contentUuid: "04f156f7-7297-587a-8969-a0e514902c66"
+diamondUuid: "b77cb9ce-4a85-851f-8800-2648db7ee3ff"
+uuid: "95e6fae9-a4ee-814f-84ac-9d44e6a1d0aa"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 24
+  bondDegree: 20
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dfe9b11f-0d94-8535-b450-97c548573cd5"
+  computationUuid: "270a9f3f-69e9-8f74-9873-f59010b47a57"
   stages:
     - stage: path
       stageUuid: "2aeee6fd-5f85-81c3-a186-3ce6eacf7acc"
     - stage: trinity
       stageUuid: "fc234c19-c0ec-850f-8e3b-187823cbb698"
     - stage: boundary
-      stageUuid: "117a5bfc-b6ce-86c0-82ce-58d73f3269fa"
+      stageUuid: "08041b00-e378-8826-86b7-f7d88b7cd661"
     - stage: links
-      stageUuid: "824a8e58-697f-88ab-b25d-0cff23a86822"
+      stageUuid: "1dd77839-c3c0-8724-aebc-4e750eb7070d"
     - stage: horo
-      stageUuid: "1da758ab-531c-8703-8267-6fccc9c586ed"
+      stageUuid: "cbfb437a-fa70-8d3c-9915-472fed9dddf6"
     - stage: seal
       stageUuid: "b50372dc-802d-8570-8faf-6d5d3b1d57ba"
     - stage: uuid
-      stageUuid: "3243d887-0566-87a3-a695-228fe9ceff9a"
+      stageUuid: "c5a39f2c-339c-8a82-ac23-c38f5cecd276"
 version: 2
 ---
 # last
 
 A schema.org component word, collided out of schema.org compounds — fused from countryOfLastProcessing · lastReviewed ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[country]] · [[processing]] · [[reviewed]]
+Entangled with — [[country]] · [[processing]] · reviewed
 
 Attested in schema.org — countryOfLastProcessing · lastReviewed
 

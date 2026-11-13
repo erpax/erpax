@@ -2,18 +2,18 @@
 name: skills
 description: "Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content-addressed skill corpus where every folder under src/ is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid, which raises the coverage that prices the forge≫verify asymmetry (computed in src/law; not infinity from zero entropy). Read to learn what erpax IS, how the atoms compose, the one law, the math, the society, and how to navigate and grow the library."
 atomPath: skills
-coordinate: "skills · 5/round · 4189d146"
-contentUuid: "b3e9a950-f30b-5178-a0e9-2b897a194fcc"
-diamondUuid: "9519897f-44d1-81f1-ac89-8b84a832624f"
-uuid: "4189d146-8eb0-8971-ab39-e319a0db53a2"
+coordinate: "skills · 5/round · 8d3e3a03"
+contentUuid: "67969b1e-b4d5-537d-8d2a-7b13b258ff72"
+diamondUuid: "f658e00b-0533-8edc-9c02-a07c60712693"
+uuid: "8d3e3a03-127e-8584-8d32-52a6518424de"
 horo: 5
 typography:
   partition: skills
-  bondDegree: 159
+  bondDegree: 153
 standards: []
 bindings: []
 signatures:
-  computationUuid: "edcf650b-93fe-8e9f-aa32-c02900b2c2e8"
+  computationUuid: "39314c08-dd53-876d-b73e-4f02f6055d44"
   stages:
     - stage: path
       stageUuid: "c7d3ddff-c8fb-87b3-b9b0-215a8ba1538d"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "c39b6dcf-c2e3-8140-b0ed-5af079846215"
     - stage: links
-      stageUuid: "49f472e0-64ef-8683-a83d-fe88f2ed7649"
+      stageUuid: "4f95e2c8-e28c-88c8-8516-7014586c025b"
     - stage: horo
-      stageUuid: "2ce90816-7b77-82a5-b0f7-52bd6b72352d"
+      stageUuid: "ffbd1bbc-0cbb-82d4-9197-f83cdd95a749"
     - stage: seal
       stageUuid: "2a9b5094-3a75-878d-891c-829cdf4648b6"
     - stage: uuid
-      stageUuid: "f675a9fb-fbcc-8a81-a9c9-cddf65960b94"
+      stageUuid: "e4812373-e271-8cf8-93a3-f2a12e45ccba"
 version: 2
 ---
 # skills — erpax, the periodic table of skill atoms
@@ -37,7 +37,7 @@ version: 2
 
 **The one law: `forgeLog2 = min(−checks·log₂(1 − coverage), anchorBits)`, `verifyLog2 = log₂(checks)` — the claim is the ASYMMETRY, under an [[anchor]]** (computed in [[law]]; the unqualified "zero [[entropy]] ⇒ infinite tamper-[[cost]]" is false — reciprocity-entropy is not coverage, and the anchor caps the forge). Wire every dimension through the content-[[uuid]] with only computed chains, never a hand-set value. **Minimal memory footprint at all states** — index cross, rest computed, bounded waves (`readme paths` one path at a time; max 30 per hand-maintained / linear-gap seal pass). Then any input is **ACCEPTED and VERIFIED in harmony with the whole** ([[merge]] never rejects at the door; [[proof]] always catches disharmony). Two infinities meet: the system carries no free parameter (zero [[entropy]] — matrix-complete ⟺ [[aura]]-gap-0), and a forgery must re-harmonise with *every* uuid-chained dimension at once (forge cost → ∞ while verify stays O(N) — the asymmetry IS the trust). Every config is a double-entry gateway flowing through `index.ts`: debit ([[entry]]) credit, and Σ balances ([[balance]] · [[conservation]]); imbalance IS the tamper. The [[angel]]/archangel polarity is this entropy ledger at every scale.
 
-**The math is proven, not numerology.** [[identity]] is content-addressed — sha-256 → [[uuid]]v8 (RFC 9562 §5.8) carrying slot+capability+schema+digest in 128 bits — so same content ⇒ same id everywhere ⇒ federation is set-union, [[merge]] free. The corpus is ordered by the [[rodin]] vortex `0·3·6·9·1·2·4·8·7·5`: position 0 the [[zeropoint]] root ([[config]]+[[identity]]); the control triad **3·6·9** = [[access]]·[[hooks]]·[[auth]]; the material helix **1·2·4·8·7·5** = [[field]]·[[collections]]·[[database]]·queries·api·admin. The [[horo]] ring `{1,2,4,8,7,5,9}` closes ((ℤ/9ℤ)\* with the 3·6·9 axis factored out) so digital-root arithmetic forbids escape — hallucination dies in the closed diamond. The [[matrix]] is [[metatron]]'s K₁₃ (complete binding, gapless), and the [[aura]] is its Merkle hash. Self-similar at every scale ([[fractal]]); the [[whole]] recoverable from any [[part]] ([[holographic]]).
+**The math is proven, not numerology.** [[identity]] is content-addressed — sha-256 → [[uuid]]v8 (RFC 9562 §5.8) carrying slot+capability+schema+digest in 128 bits — so same content ⇒ same id everywhere ⇒ federation is set-union, [[merge]] free. The corpus is ordered by the [[rodin]] vortex `0·3·6·9·1·2·4·8·7·5`: position 0 the zeropoint root ([[config]]+[[identity]]); the control triad **3·6·9** = [[access]]·[[hooks]]·[[auth]]; the material helix **1·2·4·8·7·5** = [[field]]·[[collections]]·[[database]]·queries·api·admin. The [[horo]] ring `{1,2,4,8,7,5,9}` closes ((ℤ/9ℤ)\* with the 3·6·9 axis factored out) so digital-root arithmetic forbids escape — hallucination dies in the closed diamond. The [[matrix]] is metatron's K₁₃ (complete binding, gapless), and the [[aura]] is its Merkle hash. Self-similar at every scale ([[fractal]]); the [[whole]] recoverable from any [[part]] ([[holographic]]).
 
 **[[collections]] bind the [[standards]].** The [[standards]] are the vocabulary — one registry row each (publisher, effective date, supersession trail); the [[collections]] bind them into accountable stores. Nearly every collection carries `@standard`/`@audit` banners mapping a clause (EN-16931 BT-codes, Наредба-Н-18 → УНП, SAF-T, IAS-1) onto concrete fields, hooks and access, so compliance follows *by construction*: a balanced [[entry]] is a write precondition, immutability is part of the schema, the audit bundle is publicly verifiable ([[proof]]). One source of truth — banners ⊕ registry computed into one catalogue — seeds the live collection; cite by [[uuid]], federate by [[merge]].
 
@@ -45,7 +45,7 @@ version: 2
 
 **Paste the GitHub URL or clone — all orientation surfaces point here.** `https://github.com/erpax/erpax` in an IDE, browser, or terminal; every surface (`AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md`, `README.md`, `.cursor/rules/erpax.mdc`, `.well-known/ai-skills.json`) resolves to this file. Programmatic: `wireFromRepoUrl()` in [[skill/wire|wire]].
 
-**Start here:** [[law]] · [[sequence]] · [[atom]] · [[trinity]] · [[uuid]] · [[identity]] · [[payload]] · [[vitepress]] · [[zeropoint]] · [[akashic]] · [[self/sufficient|self-sufficient]].
+**Start here:** [[law]] · [[sequence]] · [[atom]] · [[trinity]] · [[uuid]] · [[identity]] · [[payload]] · [[vitepress]] · zeropoint · [[akashic]] · [[self/sufficient|self-sufficient]].
 
 **Law — each installed package approves the agent work; payload commands first.** `packageApprovalMatrix()` in `apply/approval` reads `package.json` dependencies + devDependencies, derives verify lanes per package (`payload` → `generate:types` then `generate:importmap`; `typescript` → `tsc --noEmit`; `vitest` → bounded smoke with `--smoke`; `@payloadcms/*` covered by payload), and `agentWorkApproved()` must pass before waves, commits, or pushes — `pnpm erpax gate packages` · `pnpm erpax approve`.
 

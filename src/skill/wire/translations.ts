@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a reader receives the erpax GitHub URL — wireFromRepoUrl validates github.com/erpax/erpax and returns the canonical skill entry paths (content-uuid sealed). All orientation surfaces point to .claude/skills/SKILL.md; paste or clone.",
-    "uuid": "1489ebea-ebea-8d83-bbbb-68d6ca790624",
+    "uuid": "d4c02b42-0d19-8fa3-a140-f5abc4936ba8",
     "words": [
       "use",
       "when",

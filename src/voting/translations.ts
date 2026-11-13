@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the society casts and tallies collective choice — ballots, votes, and rating series — where every gameable violation (double-voting, stuffing, post-cast tampering, aggregate fudging, anonymity collision, cross-tenant pollution) is made a uuid-mismatch any third party can detect without trusting the platform.",
-    "uuid": "d0a9cd70-06f1-89db-8671-b72af6984813",
+    "uuid": "bcc06f2e-6be4-8495-80e8-fe2569054719",
     "words": [
       "use",
       "when",

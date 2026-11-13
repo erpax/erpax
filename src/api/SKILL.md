@@ -2,14 +2,14 @@
 name: api
 description: "Use when calling Payload data operations — Local API (payload.find/create/update/delete), REST endpoints, or GraphQL — or deciding which to use, passing depth/select/where/overrideAccess, or running ops inside hooks/server components."
 atomPath: api
-coordinate: "api · 5/round · 4fbe4dad"
-contentUuid: "bc6ade49-8643-5eb3-9632-cbaa60408bac"
-diamondUuid: "03e02440-fe98-8314-8898-98b57817a40d"
-uuid: "4fbe4dad-be71-8270-b11f-d60f3a08b884"
-horo: 5
+coordinate: "api · 2/share · c47d2ca6"
+contentUuid: "41976fd2-679b-55e0-8ba0-8ebf3f4b646c"
+diamondUuid: "03e1bd70-e984-8169-aa4d-33c158e26ec3"
+uuid: "c47d2ca6-4da2-8a98-82c5-316cf9b08cfa"
+horo: 2
 typography:
   partition: api
-  bondDegree: 102
+  bondDegree: 91
 standards:
   - "EU-Taxonomy-2020/852"
   - "ISO-19011"
@@ -17,22 +17,22 @@ standards:
   - "RFC-9110"
 bindings: []
 signatures:
-  computationUuid: "e24693d3-863b-8447-bf14-f2e0213a7b67"
+  computationUuid: "de8cdc9d-1b19-85b8-8e74-a76980d09b47"
   stages:
     - stage: path
       stageUuid: "6ab3d6d5-bcae-8dbf-b4ce-e6a3e6f05d97"
     - stage: trinity
       stageUuid: "2d3dbdfb-1e04-8ee3-93fc-646195b0c2a8"
     - stage: boundary
-      stageUuid: "d27d2a6b-11b5-88bb-bb83-dbeaf6f48aa4"
+      stageUuid: "cdb2099f-64eb-8b5a-81f5-ae7cd956188f"
     - stage: links
-      stageUuid: "d9cd4e19-c697-8184-af0b-847ae0b1ade0"
+      stageUuid: "a5a0129b-ef14-82a5-ba6f-c1b0e2ef7c26"
     - stage: horo
-      stageUuid: "fc2915de-ebfc-8679-8da9-cf87875a7194"
+      stageUuid: "dcc44916-20c3-83b5-87fc-f478508d3386"
     - stage: seal
       stageUuid: "f00c0bed-597d-8b45-89ca-1743fd6d7298"
     - stage: uuid
-      stageUuid: "d98aad0e-c032-8599-ae73-501f73162538"
+      stageUuid: "55546578-4c70-8baa-aa25-c150c3b245b6"
 version: 2
 ---
 # api — Local / REST / GraphQL (position 7 of the material cycle)
@@ -66,6 +66,6 @@ At `/api/graphql` (+ playground). Mirrors collections as queries/mutations. Cap 
 
 **Law — [[law]]: three interfaces (Local/REST/GraphQL), one query syntax and one set of operations — the only divergence is that Local API skips access by default, so `overrideAccess: false` is what makes the three behave as one.**
 
-All external APIs follow THE path — REST (`/api/…`), GraphQL, Local API, and [[mcp]] gateway routes normalize through `toAtomPath` in [[path]] and merge with [[fs]], [[github]], and docs [[url]] at one canonical atom path in every [[dimension]] (content-[[uuid]] entanglement; gates fail closed).
+All external APIs follow THE path — REST (`/api/…`), GraphQL, Local API, and mcp gateway routes normalize through `toAtomPath` in [[path]] and merge with [[fs]], github, and docs url at one canonical atom path in every [[dimension]] (content-[[uuid]] entanglement; gates fail closed).
 
-@see [[path]] · [[fs]] · [[mcp]] · [[github]] · [[payload]] · [[queries]] · [[access]] · [[dimension]] · [[integrity]] · [[quantum]]
+@see [[path]] · [[fs]] · mcp · github · [[payload]] · [[queries]] · [[access]] · [[dimension]] · [[integrity]] · [[quantum]]

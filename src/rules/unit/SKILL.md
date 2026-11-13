@@ -3,19 +3,19 @@ name: unit
 description: "Use when reasoning about unit — 's own docstring calls itself *\"single source of truth for how old is this item\"*, cites ISO-8601, and party's SKILL says the day-arithmetic *\"is borrowed… not re-typed — the…"
 atomPath: "rules/unit"
 coordinate: "rules/unit · 8/crest · 7b6c48f2"
-contentUuid: "67389fda-84c2-513b-a283-ff99e853a5d9"
-diamondUuid: "395435a3-c6cd-80b9-a6c5-886c677e981d"
+contentUuid: "c65d7005-2011-5485-bd0b-cfdab5c81f98"
+diamondUuid: "b03a24a5-afba-87f2-ab80-484d6eefa3bf"
 uuid: "7b6c48f2-f9f7-80db-8720-eba196a7cde0"
 horo: 8
 typography:
   partition: rules
-  bondDegree: 67
+  bondDegree: 12
 standards:
   - "ISO 80000-3 — time: the day as a unit of measure"
   - "ISO/IEC 25010:2023 §5.6 — maintainability: a change is made once, not once per copy"
 bindings: []
 signatures:
-  computationUuid: "436c6d32-f495-85a1-9c64-8f0cd89a45fe"
+  computationUuid: "62d168f8-bcd1-88df-9d7e-36f94893de12"
   stages:
     - stage: path
       stageUuid: "df429d82-3d73-8fe8-a222-6f7fff050b3c"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "aca17140-7a54-8350-a36f-ae1769d9dcf9"
     - stage: horo
-      stageUuid: "25efe7ff-0cd6-8e09-b0d1-3dce363c9e06"
+      stageUuid: "ed410b37-a0e8-89f2-b2e5-30b824552ed0"
     - stage: seal
       stageUuid: "c8dd2aea-6f0c-83c7-b8a2-9a6f4985855b"
     - stage: uuid
-      stageUuid: "7042f12d-d3b8-8d9c-a578-ad7c9958ed14"
+      stageUuid: "cafc39c5-bb35-8bae-8238-97674b2f1a3c"
 version: 2
 ---
 # rules/unit — a constant everybody knows is the one everybody retypes

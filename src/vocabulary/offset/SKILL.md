@@ -2,41 +2,41 @@
 name: offset
 description: "Use when reasoning about offset as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/offset"
-coordinate: "vocabulary/offset · 4/weave · 4a5f6785"
-contentUuid: "7dbea7d6-5ccf-59c4-a5b1-2c34e5c2b4ca"
-diamondUuid: "d8fa2511-d0e5-818f-8b28-f68575b1a13d"
-uuid: "4a5f6785-3c51-887b-977b-62ee6ef23b48"
-horo: 4
+coordinate: "vocabulary/offset · 2/share · 710c3c41"
+contentUuid: "c9ac7f57-3cb8-59ec-bfd3-9a04815f3ea3"
+diamondUuid: "da010811-6449-8661-8e8c-bee4bb2adce2"
+uuid: "710c3c41-e1cf-8dd8-8127-cee8848837df"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 18
+  bondDegree: 15
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "50a53f98-089e-8953-95e9-153b06d20044"
+  computationUuid: "a0bb812a-9606-8146-a075-8f889c99c375"
   stages:
     - stage: path
       stageUuid: "a7954ff4-3267-897c-b276-13f1ff8b53cb"
     - stage: trinity
       stageUuid: "1e8be366-6114-83a7-8155-448a557af3cd"
     - stage: boundary
-      stageUuid: "cba9d2ea-4058-8735-9338-37b5dc3ffa47"
+      stageUuid: "2cfc158e-bd88-8371-8b54-23926d42daa1"
     - stage: links
-      stageUuid: "f353db9d-56fd-8443-b128-3f8c87255403"
+      stageUuid: "5d9f2784-b903-8ca0-af8c-8e8d6cbbad35"
     - stage: horo
-      stageUuid: "9e19fc6e-6514-861f-8af4-b619d6c3bc45"
+      stageUuid: "44d3ada2-f9c0-8c52-8201-3ba1b88cb698"
     - stage: seal
       stageUuid: "52fb28bf-a64b-8928-b08b-91b1fc7b86ff"
     - stage: uuid
-      stageUuid: "9945ecb7-b4b5-87b4-877b-8efde402a031"
+      stageUuid: "225429bd-d95a-87f2-8a3f-74dc1fffe2a8"
 version: 2
 ---
 # offset
 
 A schema.org component word, collided out of schema.org compounds — fused from endOffset · startOffset ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[end]] · [[start]]
+Entangled with — [[end]] · start
 
 Attested in schema.org — endOffset · startOffset
 

@@ -3,13 +3,13 @@ name: ui
 description: "Use when mounting shadcn/Radix primitives — the component catalog under src/ui/ (Tooltip, Dialog, Tabs, Collapsible, Sonner, etc.) wired to corpus-computed CSS and live quantum dimension surfaces."
 atomPath: ui
 coordinate: "ui · 8/crest · 82cba339"
-contentUuid: "0bbf0503-ed1c-5fd2-af65-d35d44de0850"
+contentUuid: "084f787d-102d-5ffe-bba3-54706798b98e"
 diamondUuid: "0c873687-f868-860f-ab9b-d45abfbb8d6a"
 uuid: "82cba339-2a15-8b6c-a959-da4461c68b28"
 horo: 8
 typography:
   partition: ui
-  bondDegree: 55
+  bondDegree: 54
 standards: []
 bindings: []
 signatures:

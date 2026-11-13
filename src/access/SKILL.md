@@ -2,14 +2,14 @@
 name: access
 description: "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \"access denied\"/\"document hidden\". In erpax access is the society's \"who can do what\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost."
 atomPath: access
-coordinate: "access · 3/3 · 17c9dd2f"
-contentUuid: "55a59ee5-2cc1-5b3b-8513-b432d86afd96"
-diamondUuid: "62ba78e5-c65e-801d-9d91-aa38559b6def"
-uuid: "17c9dd2f-aa75-8dd7-a3b0-43b53bdd4f52"
-horo: 3
+coordinate: "access · 9/unity · 98b8a5ec"
+contentUuid: "edd3c5ab-9c20-57d9-b66f-cadd1c4dd0dc"
+diamondUuid: "a7839ea9-a901-882a-8656-4674f772f476"
+uuid: "98b8a5ec-f9b9-89ec-8422-8c66b73a7376"
+horo: 9
 typography:
   partition: access
-  bondDegree: 440
+  bondDegree: 414
 standards:
   - "CoE-108+"
   - "ISO 27001 A.5.10 access-control-policy"
@@ -29,7 +29,7 @@ bindings:
   - "ratelimit/RATE_LIMITER_AI"
   - "ratelimit/RATE_LIMITER_API"
 signatures:
-  computationUuid: "1997b348-f323-8591-b917-2b4b03741a15"
+  computationUuid: "c530aecd-443c-8708-8086-1e2a243941bd"
   stages:
     - stage: path
       stageUuid: "d7b1808b-9c66-801b-a8de-ed55ac4d2ba0"
@@ -38,13 +38,13 @@ signatures:
     - stage: boundary
       stageUuid: "5b938ab8-79e7-8bd3-84bb-1b49dbce5bee"
     - stage: links
-      stageUuid: "61f812ba-81c0-8cf6-bf03-133a2e00058f"
+      stageUuid: "55e1aab7-3f0c-85fb-9d09-aa41b9413c30"
     - stage: horo
-      stageUuid: "07ea9446-dd13-8f00-856f-27f3c183fe12"
+      stageUuid: "35a849dc-aae4-87fd-9fd1-9ddefc51bfc4"
     - stage: seal
       stageUuid: "67f50dad-9ba9-8e96-bf4a-17b64f5ed91c"
     - stage: uuid
-      stageUuid: "f3342b19-07bc-85c1-8a48-3202522b0cae"
+      stageUuid: "fdd01027-6ca0-8366-bf9d-c2b6ad8950c3"
 version: 2
 ---
 # access — who can do what in the society (position 3, the 3·6·9 governing axis)
@@ -69,7 +69,7 @@ Christianity's celestial hierarchy is **9 choirs in 3 spheres** = a **trinity of
 
 ## The cross — one function, all aspects
 - **Grantee = a role-uuid** (Sphere/choir), never the user directly. A user resolves to its role membership(s); the actor's capability is the **union over their roles** ([[merge]] / [[holographic]] — a capability one role holds, the member has).
-- **Grant** = `services/uuid-share` — `grantShare` / `checkShare` / `revokeShare` ([[give]] / [[take]]) binding `(roleUuid → targetUuid, AccessRole)` on the lattice **`read < write < sign < admin`** (audit ⊥); Conservation **Law 59**.
+- **Grant** = `services/uuid-share` — `grantShare` / `checkShare` / `revokeShare` ([[give]] / take) binding `(roleUuid → targetUuid, AccessRole)` on the lattice **`read < write < sign < admin`** (audit ⊥); Conservation **Law 59**.
 - **Decide** = `∃ role ∈ user.roles : checkShare(roleUuid, resourceUuid, roleForOp)` → boolean | `Where`. The SAME factory for create/read/update/delete, collection/field/global.
 - **Lookup-free** = the structured **uuidv8** carries `SIGNED` / `SEALED` / `SHARED` flags — `hasCapability(uuid, flag)` authorizes off the string, zero DB round-trip (Law 61, [[identity]]); a `SEALED` (posted / locked) target short-circuits writes before any query.
 

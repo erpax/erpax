@@ -3,13 +3,13 @@ name: graph
 description: "Use when reaching the diamond as a GRAPH — atoms and the bonds between them — through its own namespace; the face re-exports the diamond barrel while the matter is still being lifted out of the hub."
 atomPath: "diamond/graph"
 coordinate: "diamond/graph · 8/crest · 49a6f599"
-contentUuid: "98bc099a-df1c-57cd-abdc-326474273189"
+contentUuid: "361bf03a-66df-5f43-91d1-bbb458089010"
 diamondUuid: "38888083-08d2-85b9-82e8-ed32b7e070e9"
 uuid: "49a6f599-876a-8bdb-a835-6d13ad948966"
 horo: 8
 typography:
   partition: diamond
-  bondDegree: 42
+  bondDegree: 41
 standards: []
 bindings: []
 signatures:

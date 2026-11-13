@@ -2,18 +2,18 @@
 name: quantum
 description: "Use when an agent needs the exact-amplitude register over MCP — erpax.quantum.run · erpax.quantum.bell · erpax.quantum.shots expose quantum/register (integer amplitudes, halvings, determinant entanglement witness, enumerated shots) as pure tools; bigints cross the wire as decimal strings."
 atomPath: "agents/mcp/tool/quantum"
-coordinate: "agents/mcp/tool/quantum · 1/base · 920c9897"
-contentUuid: "9008456a-2932-5e42-8a65-1bfacc9edc51"
-diamondUuid: "252bbefb-f218-8d0a-88db-ce7e782a2f50"
-uuid: "920c9897-290e-8301-9980-1f8ed79e0712"
-horo: 1
+coordinate: "agents/mcp/tool/quantum · 4/weave · cf1dd01e"
+contentUuid: "ab84d283-0e59-546b-a937-8a6992919156"
+diamondUuid: "a5278bc6-b351-8430-916d-2e8bc997a65a"
+uuid: "cf1dd01e-b34c-875e-a2ba-520c8c8ad474"
+horo: 4
 typography:
   partition: agents
-  bondDegree: 553
+  bondDegree: 537
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2c821b99-cf57-8b8d-b620-17f71efbaeae"
+  computationUuid: "c046cf36-1536-8b51-91eb-ec628fcb3946"
   stages:
     - stage: path
       stageUuid: "24e816db-72fe-830b-9126-30b9544cdcb7"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "6d034b71-5fa9-820d-81cc-1eecd5df3a4b"
     - stage: links
-      stageUuid: "480adc06-137c-8fde-87b4-974a17860e03"
+      stageUuid: "9d3d2fc6-108f-89ea-8e08-8204a7622cba"
     - stage: horo
-      stageUuid: "b6aa66d1-a029-8816-b167-2a27cb7306a8"
+      stageUuid: "bd2d9520-daec-8d99-9e5b-42c7b694dab0"
     - stage: seal
       stageUuid: "38730f8e-1a87-8e77-a423-c51846ffc1e3"
     - stage: uuid
-      stageUuid: "5c0207a8-eb75-8cbc-9e62-36f03f2470d4"
+      stageUuid: "843c9fd9-7baf-8c10-b704-da2f486edbdf"
 version: 2
 ---
 # agents/mcp/tool/quantum — the register, one door away from every agent
@@ -66,4 +66,4 @@ make the gateway allocate a 2³⁰ vector by accident.
 it answers with a tolerance and a draw. Put the exact one on the wire, as text if the wire cannot carry
 it, and let the Float be the thing a caller must ask for.**
 
-Composes: [[quantum]]/register · [[mcp]] · [[law]].
+Composes: [[quantum]]/register · mcp · [[law]].

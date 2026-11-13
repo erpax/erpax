@@ -3,17 +3,17 @@ name: risk
 description: "Use when reasoning about risk — measures large exposures against Tier 1 capital (CRR Art. 392/395)."
 atomPath: "agents/mcp/tool/risk"
 coordinate: "agents/mcp/tool/risk · 4/weave · f5b0ebac"
-contentUuid: "b743832f-3032-5f78-84fe-d56d9daccd5a"
-diamondUuid: "f2e40df9-ec06-8b99-814e-0239b6279cd2"
+contentUuid: "318541b7-7561-51b4-a4a9-818a3d6ee2a1"
+diamondUuid: "6115080b-9e94-88ef-bb27-e1c065e73473"
 uuid: "f5b0ebac-1400-8562-b5ab-f6376a17e0fb"
 horo: 4
 typography:
   partition: agents
-  bondDegree: 73
+  bondDegree: 67
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c349697e-895e-8e8a-9e26-4371465aead4"
+  computationUuid: "c01e5642-1d34-8577-a9d2-8be1ad0034bf"
   stages:
     - stage: path
       stageUuid: "b02c8749-6320-8ea9-8e7a-af0f39d4c5f4"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3654fc63-2e94-8da0-a03c-ec00e1e2d46a"
     - stage: horo
-      stageUuid: "80800df7-884b-8a14-b5f0-becdc9302ab1"
+      stageUuid: "606e149e-c919-8065-9c6d-f4c4a46d8690"
     - stage: seal
       stageUuid: "02bc03f9-49a9-84e1-b48d-427b173f55b6"
     - stage: uuid
-      stageUuid: "6d2fcc60-6a83-8f85-9e44-2036817ffe66"
+      stageUuid: "d53a9189-07c7-8fa3-9a5a-5486ef0e4804"
 version: 2
 ---
 # agents/mcp/tool/risk — aggregated by connected client BEFORE the limit is tested

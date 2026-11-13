@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the payments collection's Payload hooks — before/after change and validate logic for payments.",
-    "uuid": "159a1c3d-cd36-8e3f-9e05-fbd01b489b58",
+    "uuid": "153984aa-2806-8eb5-9783-73d54ed0ca12",
     "words": [
       "use",
       "when",

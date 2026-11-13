@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "torus",
-    "uuid": "43b7d46f-1c24-8d09-843f-0a94ded8d655",
+    "uuid": "e66e4132-5db4-8aec-88e7-a960eda441be",
     "words": [
       "torus"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when every superposition the gate basis can reach must be enumerated rather than sampled — the finite real-Clifford orbit on exact amplitudes, the 4 × 4 double torus of two-qubit product states with the entangled states off it, and every referrer of the register asked to agree with each discovered state from its own standard's perspective.",
-    "uuid": "f2d23cac-83da-8bf2-ae70-ab9da7098bd9",
+    "uuid": "097ca3f5-981c-8fa9-a2bf-e4777eb93279",
     "words": [
       "use",
       "when",

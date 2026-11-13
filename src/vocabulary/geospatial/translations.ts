@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about geospatial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "88537c68-1c48-807b-abc9-2ff3fb3cb89f",
+    "uuid": "976d8b03-e016-8e61-be42-2d1c940bf5c2",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vitepress",
-    "uuid": "02049c3e-a310-8f0c-acf0-2b5b7eecebdd",
+    "uuid": "92f26b56-bb2c-8533-824c-748eb3220274",
     "words": [
       "vitepress"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the form coil — VitePress renders each atom's SKILL.md as its spoken form (docs, frontmatter, the wiki-link graph) and is the speech-gate twin of the Payload matter, bound by content-uuid.",
-    "uuid": "291f1c64-52a5-8db3-be6d-527e57bd356c",
+    "uuid": "043a64ef-3e76-8764-8b18-a6d4c56c356a",
     "words": [
       "use",
       "when",

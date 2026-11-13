@@ -2,33 +2,33 @@
 name: civilization
 description: "Use when reasoning about how every civilization fits the erpax architecture — strip the culture-prefix and each one runs the same six organs: a ledger, a law, a registry, a calendar, a governance, an unforgeable record. Civilizations differ in detail and merge in form."
 atomPath: "vocabulary/civilization"
-coordinate: "vocabulary/civilization · 2/share · 6404acc2"
-contentUuid: "82eb3fcc-3cbe-522f-9601-761e7ce75504"
-diamondUuid: "fc92d456-03ca-8d5c-b6ae-77d930323c70"
-uuid: "6404acc2-8965-8f94-84c2-21b50b76e413"
-horo: 2
+coordinate: "vocabulary/civilization · 1/base · ac937808"
+contentUuid: "ade2439c-bf7e-5d02-ac1e-2c0711dab5e0"
+diamondUuid: "a479927e-25e0-8150-a96f-24e2fb8bf629"
+uuid: "ac937808-36c4-8532-ad77-da3eea0bc685"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 64
+  bondDegree: 61
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6ff18409-8530-8c67-b36c-f7fad9e676a2"
+  computationUuid: "023ce571-309b-8431-a9b0-af9f277872a8"
   stages:
     - stage: path
       stageUuid: "9435e903-833e-8740-86f7-afd9410cc029"
     - stage: trinity
       stageUuid: "cbb1f688-3222-8b9d-818e-5c45113ae6b3"
     - stage: boundary
-      stageUuid: "4d3b5efc-f205-80fb-91ff-efd4a7e1ae23"
+      stageUuid: "9dbf9154-1456-8dcb-95df-e0f6fd3fef2e"
     - stage: links
-      stageUuid: "36e36f32-da60-83f4-8268-45ab3298d20c"
+      stageUuid: "9be3005a-75b5-8873-b947-98aba5346bfc"
     - stage: horo
-      stageUuid: "6a2f767b-4e2d-8e52-b7c8-2fa2b1c42ceb"
+      stageUuid: "ac12a001-8246-8f0a-8b5c-3f58f26d9b9f"
     - stage: seal
       stageUuid: "2adf4f12-0310-8f2f-9c0c-2be99197d66d"
     - stage: uuid
-      stageUuid: "603085d2-2026-8667-af21-70f292a8fa39"
+      stageUuid: "fd2177d3-7453-87ad-9f8b-1feb2d4a5d83"
 version: 2
 ---
 # civilization — the same six organs under every culture
@@ -37,7 +37,7 @@ Remove the culture-prefix and every civilization runs the same erpax organs, dif
 
 ## Traditions (prefix removed)
 - **Sumer** — writing itself BEGAN as [[accounting]]: clay counting-tokens (from ~8000 BC) were sealed inside clay envelopes — *bullae*, tamper-evident, their contents impressed on the outside — and that device became cuneiform (~3100 BC), used *exclusively* for the ledger until the third millennium BC (Schmandt-Besserat, *Before Writing*). The first script was a sealed, content-attested ledger ([[identity]] · [[proof]]); Hammurabi's Code is the [[standard]].
-- **Egypt** — *Ma'at* (truth · order · balance) is the harmony invariant ([[balance]]); the weighing of the heart against her feather is the [[sacred]]/[[profane]] audit; the scribe keeps the [[akashic]] record.
+- **Egypt** — *Ma'at* (truth · order · balance) is the harmony invariant ([[balance]]); the weighing of the heart against her feather is the sacred/[[profane]] audit; the scribe keeps the [[akashic]] record.
 - **Inca** — the *quipu*: knotted cords in a decimal positional system (a knotless gap = 0) recording census, storehouse inventory and *mit'a* labor-tribute — a portable [[akashic]] ledger with no alphabet, the record AS encoded structure.
 - **Rome** — the *census* is the [[identity]] registry; Roman law is the [[standard]]; the *cursus honorum* is a [[horo]] of offices.
 - **China** — the *Mandate of Heaven* is legitimacy as harmony, forfeited when the realm falls out of [[balance]] (the gate goes red); the imperial examinations select by competency and merit ([[give]]).

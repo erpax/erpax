@@ -3,18 +3,18 @@ name: memory
 description: "Use when reasoning about memory as a part of computer — pivot to canonical @/memory/quantum; nested not duplicated."
 atomPath: "computer/memory"
 coordinate: "computer/memory · 1/base · 20b65a06"
-contentUuid: "4bff478b-99da-5e80-8c08-3df5d43e7d90"
-diamondUuid: "95713c37-341e-8c82-853d-b3422dc43053"
+contentUuid: "13e36a9a-ce7a-5f0f-b00c-4a742fbf30bb"
+diamondUuid: "bb6df7af-4249-84af-899c-9d90162febd3"
 uuid: "20b65a06-0384-8947-b306-085d2d7b3156"
 horo: 1
 typography:
   partition: computer
-  bondDegree: 96
+  bondDegree: 90
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2461cf56-ed40-8d14-acde-4f934cbbc73c"
+  computationUuid: "37f59e5c-c61a-8306-94d3-60b270d91550"
   stages:
     - stage: path
       stageUuid: "3285e7a3-7afc-883c-b040-91e6202537e8"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "83dc96d8-59ad-8fc4-9255-7a24db022e3a"
     - stage: horo
-      stageUuid: "9603f335-52e0-800b-9b48-55508aaaa5fd"
+      stageUuid: "dfae5700-43aa-84fd-954e-18f40d8b1950"
     - stage: seal
       stageUuid: "5e53a1d1-cf42-8321-bb55-a014c99fa08b"
     - stage: uuid
-      stageUuid: "e73427da-a456-867d-9ea0-086e57b7f895"
+      stageUuid: "22f23565-7e44-8631-bf4a-51cfc3a83048"
 version: 2
 ---
 # computer/memory — holds working state

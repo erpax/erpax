@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about floors — A digest of bits has four security floors, and they are **one formula** over the first three harmonics.",
-    "uuid": "1d0bfe7a-cdc1-8eca-84c2-b4a78bdc6314",
+    "uuid": "9acd257d-1edb-8aca-bb1c-e24abcf8d220",
     "words": [
       "use",
       "when",

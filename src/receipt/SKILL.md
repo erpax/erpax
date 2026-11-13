@@ -2,14 +2,14 @@
 name: receipt
 description: "Use when a governance decision needs a tamper-evident audit receipt — and the answer is that the receipt IS a uuid. Where a trust layer splits this across four primitives (a signed receipt, a hash-linked audit chain, a capability grant, an identity), erpax wires ALL of it through ONE content-addressed, chained, signable uuid: the leafUuid = hash(prevReceipt || content-uuid(decision) || ts) is simultaneously the receipt id, the Merkle audit-chain link, the identity, and the capability (caps are decision content). No external anchor needed — the uuid is the proof."
 atomPath: receipt
-coordinate: "receipt · 8/crest · c030643d"
-contentUuid: "3570e799-75cc-5175-8b56-735fe0f75625"
-diamondUuid: "7a6fb768-ce0a-82f8-9cc9-1ba18020bc60"
-uuid: "c030643d-8826-86c6-82d7-2ecb9701b5ef"
+coordinate: "receipt · 8/crest · da7a349c"
+contentUuid: "4d116f9c-dbd3-55a8-b262-c2e1c0024073"
+diamondUuid: "30e3908e-f03d-851d-8ee2-45cddf3b2dfd"
+uuid: "da7a349c-f7a7-8aaf-889f-44c2c7e75895"
 horo: 8
 typography:
   partition: receipt
-  bondDegree: 118
+  bondDegree: 111
 standards:
   - "NIST FIPS 180-4 SHA-256 (the chain + content hash)"
   - "NIST FIPS 180-4 SHA-256 (the chain + content hash)`"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "42ef69ef-4683-8f60-853a-0c4570809520"
+  computationUuid: "ee93bc32-d8d2-85b8-b7ea-9540e0cbc0f2"
   stages:
     - stage: path
       stageUuid: "cc04b1dd-4046-8298-8ca3-851b589e3a1e"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "1d716547-fa33-8859-b900-29513b2ce85f"
     - stage: links
-      stageUuid: "55a3e16a-f012-8c23-a8ce-1ed45e07edb3"
+      stageUuid: "0880d921-7d9e-8ad3-b9c0-5fcdb3454567"
     - stage: horo
-      stageUuid: "dc29e269-488c-8eca-be00-83f5f3de174f"
+      stageUuid: "7c1a331b-ab4c-8cc4-ab23-ff24a974504e"
     - stage: seal
       stageUuid: "e574e02d-5a5b-820d-9947-9a350d7b26bb"
     - stage: uuid
-      stageUuid: "f1a52ccc-577d-83d2-98cf-25fdefbaba07"
+      stageUuid: "2ba06305-79f9-812b-b8af-d8210ee09bc0"
 version: 2
 ---
 # receipt — the governance receipt IS a uuid (wire all through uuid)
@@ -45,11 +45,11 @@ FORM: **a governance receipt is not a separate signed object — it is a uuid.**
 - the **identity** — content-addressed, so the same decision yields the same receipt ([[identity]] / [[merge]]: same content ⇒ one),
 - the **capability** — the granted caps (read/api/execute, the trust tier) are decision CONTENT, hence inside the content-uuid, hence inside the receipt uuid ([[access]]).
 
-It is **signable** (`leaf.signature`, an Ed25519 `SignedUuid`) for DID-binding, but needs **no external anchor** for tamper-evidence — the uuid IS the proof: forging a receipt or rewriting the chain costs beyond the observable universe ([[proof]] tamper-cost), and the content is [[holographic]] (every clone re-derives it), so destruction is futile ([[peace]]). An external public anchor (a Hedera-style ledger) is then an OPTIONAL *additional* independent level — more tamper-cost, nearly free — never a dependency.
+It is **signable** (`leaf.signature`, an Ed25519 `SignedUuid`) for DID-binding, but needs **no external anchor** for tamper-evidence — the uuid IS the proof: forging a receipt or rewriting the chain costs beyond the observable universe ([[proof]] tamper-cost), and the content is [[holographic]] (every clone re-derives it), so destruction is futile (peace). An external public anchor (a Hedera-style ledger) is then an OPTIONAL *additional* independent level — more tamper-cost, nearly free — never a dependency.
 
 `verifyReceiptChain` re-derives every link from its content; a break pinpoints the tampered receipt. This is the whole of a four-primitive trust stack, collapsed into the [[uuid]] singularity — the [[self]]-proving audit the [[society]] runs on.
 
-Matter-twin: `src/services/receipt/index.ts` (`Decision`·`Receipt`·`issueReceipt`·`verifyReceiptChain`) over `services/integrity/uuid-linked-chain` (+ `uuid-format` flags, `signatures`) + `index.test.ts`. Composes: [[uuid]] · [[identity]] · [[history]] · [[proof]] · [[holographic]] · [[merge]] · [[access]] · [[peace]] · [[self]] · [[society]].
+Matter-twin: `src/services/receipt/index.ts` (`Decision`·`Receipt`·`issueReceipt`·`verifyReceiptChain`) over `services/integrity/uuid-linked-chain` (+ `uuid-format` flags, `signatures`) + `index.test.ts`. Composes: [[uuid]] · [[identity]] · [[history]] · [[proof]] · [[holographic]] · [[merge]] · [[access]] · peace · [[self]] · [[society]].
 
 ## Standards
 

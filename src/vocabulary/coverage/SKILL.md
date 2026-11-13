@@ -2,41 +2,41 @@
 name: coverage
 description: "Use when reasoning about coverage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/coverage"
-coordinate: "vocabulary/coverage · 1/base · 76028d08"
-contentUuid: "1451878b-f90a-523b-9253-71b0b701de22"
-diamondUuid: "2993b64a-98cd-8847-8784-4e64eae021df"
-uuid: "76028d08-17bc-8964-95c6-55f101227a19"
-horo: 1
+coordinate: "vocabulary/coverage · 7/descent · 18d0c1ef"
+contentUuid: "8da13c63-0d9f-51ee-9a8e-66442ec7ecca"
+diamondUuid: "29f0ece8-5d51-8efe-889f-656dd1ba2201"
+uuid: "18d0c1ef-b00b-81dd-8b9b-71d3b059da84"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 78
+  bondDegree: 23
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "54f2b993-301d-8495-b41d-8be5abfecc3d"
+  computationUuid: "7681abd4-f36b-82ac-b9e0-8704591ad8d0"
   stages:
     - stage: path
       stageUuid: "de7260d4-fd6e-8dd1-a3c7-ff29e1f9c64a"
     - stage: trinity
       stageUuid: "21e87c4c-fc01-8d91-87ad-004358c05a18"
     - stage: boundary
-      stageUuid: "c896a96f-9f0e-8995-95c5-f20c32af9c61"
+      stageUuid: "d40f7064-a911-82e7-b3f9-97a6cd2fb9a6"
     - stage: links
-      stageUuid: "d64789f2-fbe3-8a5a-b03a-1b838279294c"
+      stageUuid: "8657a3da-352b-860d-9e13-52d9c9c4e626"
     - stage: horo
-      stageUuid: "30740e1d-b2d0-837a-8e20-976e8411f0fa"
+      stageUuid: "5006ec20-8e5a-87df-be96-db52d816455f"
     - stage: seal
       stageUuid: "4354aa29-8db6-8dc6-9f19-37b0d313f02a"
     - stage: uuid
-      stageUuid: "52a32080-fe98-89df-9d62-2c506e7dd244"
+      stageUuid: "3790ef20-e661-8e5b-aaca-31326196e597"
 version: 2
 ---
 # coverage
 
 A schema.org component word, collided out of schema.org compounds — fused from coverageEndTime · coverageStartTime · missionCoveragePrioritiesPolicy · spatialCoverage · temporalCoverage ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[end]] · [[time]] · [[start]] · [[mission]] · [[priorities]] · [[policy]] · [[spatial]] · [[temporal]]
+Entangled with — [[end]] · time · start · [[mission]] · [[priorities]] · [[policy]] · spatial · temporal
 
 Attested in schema.org — coverageEndTime · coverageStartTime · missionCoveragePrioritiesPolicy · spatialCoverage · temporalCoverage
 

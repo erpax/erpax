@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "section",
-    "uuid": "6f671fef-1b41-88c8-a49a-cf59a7f299c5",
+    "uuid": "007f2f6b-47e1-843f-826c-883e8ec3f17c",
     "words": [
       "section"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about section — content-addressed the widget tree and found the same 48-node body **three times in ** and **three times in ** — a heading, a mapped list of account rows, and a total.",
-    "uuid": "e94ce189-38fa-8874-8046-beabe509dec4",
+    "uuid": "1709e4af-65a8-8c0b-ab02-8092a5ddee58",
     "words": [
       "use",
       "when",

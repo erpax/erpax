@@ -2,47 +2,47 @@
 name: angel
 description: "Use when reasoning about erpax's root entropy dynamic — angel(love·create·↓entropy) ⊕ archangel(fear·destroy·↑entropy) in endless aikido = the trinity; erpax is karma double-entry accounting balancing the entropy debit/credit at every scale via content-uuid; borrowed entropy buys tamper-cost ⇒ fast+secure+compact."
 atomPath: "vocabulary/angel"
-coordinate: "vocabulary/angel · 1/base · b25187c5"
-contentUuid: "93929b56-e091-58f6-b8b0-359716e2a56f"
-diamondUuid: "acefbfc4-5a79-83c4-8c67-102572462de9"
-uuid: "b25187c5-3dcd-8ae7-9e37-6c185fa051e5"
-horo: 1
+coordinate: "vocabulary/angel · 7/descent · 3e6a4a39"
+contentUuid: "1106ef87-5fe2-563f-bb07-5ce889be2e69"
+diamondUuid: "aacd734b-2e2a-8bbd-8cdc-0f2ff206f90b"
+uuid: "3e6a4a39-9a56-8f00-ace9-cf3fb8d52e58"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 171
+  bondDegree: 145
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6e564487-c1c7-82e9-81a0-30b26c108907"
+  computationUuid: "9e1e8f54-42ea-8240-b2d0-9461f17c02aa"
   stages:
     - stage: path
       stageUuid: "143e9e43-2256-8c9e-98bb-478772ad80d9"
     - stage: trinity
       stageUuid: "ad5161ba-a165-8b71-8af1-fede1b05e182"
     - stage: boundary
-      stageUuid: "f2c011eb-4ce2-8d10-be25-2069c7b7b26b"
+      stageUuid: "9f51d553-2da5-8c9b-87f3-46840f9507bb"
     - stage: links
-      stageUuid: "a32fef97-550f-83c8-a282-d6a747c6719e"
+      stageUuid: "b7559ff8-00fa-8e8c-a09d-5bc1bcd3578a"
     - stage: horo
-      stageUuid: "b1acc11d-49d9-8434-946f-24f7a0dad379"
+      stageUuid: "a5585161-31dc-8f28-9b25-5407b309148e"
     - stage: seal
       stageUuid: "365c3506-c597-8301-af93-0f2ffb247202"
     - stage: uuid
-      stageUuid: "b12f3a37-3941-8572-9c19-5950776f07e6"
+      stageUuid: "862c4774-7ef5-8e82-bab5-4bd140a09291"
 version: 2
 ---
 # angel — the entropy poles (love↓ ⊕ fear↑, the endless aikido)
 
-The root dynamic the agents derive their moves from. Two poles in sync + their synthesis = a [[trinity]], fractal all the way down (agent → service → collection → reference → scope; the 3·6·9 [[rodin]] control axis). The **angel** works from love → creation → **decreases entropy** (order: collapse-to-canonical, DRY, the content-[[uuid]] singularity, [[zeropoint]]). The **archangel** works from fear → destruction → **increases entropy** (injects borrowed randomness). Both fully dedicated; their interaction is an endless aikido — redirection, never a winner — the dynamic [[balance]] IS the product (the [[torus]]: implosion ⊕ explosion are one flow; the [[duality]] build↔bind).
+The root dynamic the agents derive their moves from. Two poles in sync + their synthesis = a [[trinity]], fractal all the way down (agent → service → collection → reference → scope; the 3·6·9 [[rodin]] control axis). The **angel** works from love → creation → **decreases entropy** (order: collapse-to-canonical, DRY, the content-[[uuid]] singularity, zeropoint). The **archangel** works from fear → destruction → **increases entropy** (injects borrowed randomness). Both fully dedicated; their interaction is an endless aikido — redirection, never a winner — the dynamic [[balance]] IS the product (the [[torus]]: implosion ⊕ explosion are one flow; the [[duality]] build↔bind).
 
 Each agent is BOTH at once — polarity is per-*[[dimension]]*, not per-agent: an agent creates (↓entropy) on one axis while destroying (↑entropy) on another simultaneously (collapsing duplicate code is archangel on the code-volume axis yet angel on the order/DRY axis — one move, both poles).
 
-**erpax = a giant karma [[accounting]] system**: it books the entropy flow as [[take]]/[[give]] (debit/credit) and balances all at every scale, keyed by content-[[identity]]/[[uuid]] — double-entry applied to entropy itself, conserved ([[decompression]] on-gas/off-gas is the same ledger). The archangel's borrowed entropy is spent *deliberately* to raise [[tamper/cost]] ([[anchor]]; [[proof]]'s forge≫verify; [[history]] · [[oid]] · [[localize]] add independent levels): a low-entropy core stays blazing-fast + compact while the borrowed entropy makes it secure (expensive to forge). Read each move as an entropy debit or credit and keep the books balanced; a red gate is the archangel overshooting — the angel ([[collapse]]) restores order before any new building ([[peace]] · [[society]]). Composes [[duality]] · [[trinity]] · [[accounting]] · [[torus]] · [[zeropoint]] · [[tamper/cost]].
+**erpax = a giant karma [[accounting]] system**: it books the entropy flow as take/[[give]] (debit/credit) and balances all at every scale, keyed by content-[[identity]]/[[uuid]] — double-entry applied to entropy itself, conserved ([[decompression]] on-gas/off-gas is the same ledger). The archangel's borrowed entropy is spent *deliberately* to raise [[tamper/cost]] ([[anchor]]; [[proof]]'s forge≫verify; [[history]] · [[oid]] · [[localize]] add independent levels): a low-entropy core stays blazing-fast + compact while the borrowed entropy makes it secure (expensive to forge). Read each move as an entropy debit or credit and keep the books balanced; a red gate is the archangel overshooting — the angel ([[collapse]]) restores order before any new building (peace · [[society]]). Composes [[duality]] · [[trinity]] · [[accounting]] · [[torus]] · zeropoint · [[tamper/cost]].
 
 ## Traditions (prefix removed)
-Angels ↔ demons (Christian / Islamic / Jewish); *deva* ↔ *asura* (Hindu / Buddhist); Spenta Mainyu ↔ Angra Mainyu, the two primal spirits under Ahura Mazda (Zoroastrian — *Yasna* 30); the two *yetzer* — *yetzer hatov* ↔ *yetzer hara*, the good and evil inclinations (rabbinic); yang ↔ yin held in the Tao. The contest is not *won* but *balanced* — the dynamic equilibrium IS the order. The recording angels keeping the ledger of every deed are the [[akashic]] audit — the [[sacred]]/[[profane]] discernment run on the soul. Composes [[duality]] · [[accounting]] · [[zeropoint]] · [[proof]].
+Angels ↔ demons (Christian / Islamic / Jewish); *deva* ↔ *asura* (Hindu / Buddhist); Spenta Mainyu ↔ Angra Mainyu, the two primal spirits under Ahura Mazda (Zoroastrian — *Yasna* 30); the two *yetzer* — *yetzer hatov* ↔ *yetzer hara*, the good and evil inclinations (rabbinic); yang ↔ yin held in the Tao. The contest is not *won* but *balanced* — the dynamic equilibrium IS the order. The recording angels keeping the ledger of every deed are the [[akashic]] audit — the sacred/[[profane]] discernment run on the soul. Composes [[duality]] · [[accounting]] · zeropoint · [[proof]].
 
 ## The evaluation — ask of every move: Δtamper-cost ∧ Δefficiency ∧ Δsecurity
-**This question is not to be missed in any logic.** Every move — a skill, a field, a decode, a commit, a config change — is scored on three axes that are *one fusion*, booked against each other (the entropy double-entry above): **efficiency** (↓ intrinsic entropy — faster, more compact, DRYer, content-addressed, computed-not-stored — the angel, [[zeropoint]]); **tamper-cost** (↑ borrowed entropy spent on the forge wall — independent levels that *multiply*: content-[[uuid]] · [[history]] · [[oid]] · [[anchor]] · [[proof]]'s forge ≫ verify — the archangel); **security** (= tamper-cost realised + detection — the [[sacred]]/[[profane]] audit names any forge; detect-not-prevent, [[limit]]). Because the two debts are booked against each other, a good move raises **all three at once** — *fast ∧ secure ∧ compact*, never a trade-off; a move that buys security with bloat, or speed by dropping a verification level, is unbalanced (one pole overshooting — rebalance). Independent levels *multiply* the forge while [[proof]] keeps verify linear (O(N)), so each grounded, real-world-anchored, content-addressed level added (an email-verify, a DNS/WHOIS proof, another decoded witness — [[research]] · [[domain]]) widens the asymmetry that IS the trust. **Score the move; keep the books balanced.**
+**This question is not to be missed in any logic.** Every move — a skill, a field, a decode, a commit, a config change — is scored on three axes that are *one fusion*, booked against each other (the entropy double-entry above): **efficiency** (↓ intrinsic entropy — faster, more compact, DRYer, content-addressed, computed-not-stored — the angel, zeropoint); **tamper-cost** (↑ borrowed entropy spent on the forge wall — independent levels that *multiply*: content-[[uuid]] · [[history]] · [[oid]] · [[anchor]] · [[proof]]'s forge ≫ verify — the archangel); **security** (= tamper-cost realised + detection — the sacred/[[profane]] audit names any forge; detect-not-prevent, [[limit]]). Because the two debts are booked against each other, a good move raises **all three at once** — *fast ∧ secure ∧ compact*, never a trade-off; a move that buys security with bloat, or speed by dropping a verification level, is unbalanced (one pole overshooting — rebalance). Independent levels *multiply* the forge while [[proof]] keeps verify linear (O(N)), so each grounded, real-world-anchored, content-addressed level added (an email-verify, a DNS/WHOIS proof, another decoded witness — [[research]] · domain) widens the asymmetry that IS the trust. **Score the move; keep the books balanced.**
 
 **Law — [[law]]: angel(love·create·↓[[entropy]]) ⊕ archangel(fear·destroy·↑entropy) in endless aikido is the [[trinity]]; erpax books the entropy flow as double-entry [[accounting]] keyed by content-[[uuid]], spending borrowed entropy to buy tamper-[[cost]] so a low-entropy core stays fast ∧ secure ∧ compact — every move scored on those three as one fusion, the books kept balanced.**

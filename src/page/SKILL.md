@@ -2,42 +2,42 @@
 name: page
 description: "Use when reasoning about page as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: page
-coordinate: "page · 2/share · 66d95e74"
-contentUuid: "6916f888-2bb3-5805-9c78-64bf1c827ac1"
-diamondUuid: "0c28d62d-2941-813c-ae81-6c98a60f8a59"
-uuid: "66d95e74-e677-862d-a021-db990f81c2db"
-horo: 2
+coordinate: "page · 8/crest · f9f2ff28"
+contentUuid: "e991afb0-72f0-55d0-be96-2db3d46e45d6"
+diamondUuid: "784b7715-2eda-80bf-b5d4-465de5892d54"
+uuid: "f9f2ff28-589c-843e-b9c4-f2fb1c1fdc2c"
+horo: 8
 typography:
   partition: page
-  bondDegree: 141
+  bondDegree: 114
 standards:
   - "ECMA-402"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8d244bdf-f1a1-870a-b228-9245d518a69d"
+  computationUuid: "816f053e-baaa-8bce-9be8-6e74dcfe2c23"
   stages:
     - stage: path
       stageUuid: "67a9d817-2e0f-8155-8b29-71841dc7522e"
     - stage: trinity
       stageUuid: "f52b1c35-ed3f-8322-b69b-00d62af3ac5d"
     - stage: boundary
-      stageUuid: "d801af5f-d8d3-88e7-a62f-cf3d78b46574"
+      stageUuid: "49a805f4-77e7-81f0-9703-ee3dde419ada"
     - stage: links
-      stageUuid: "f0a583e5-31e5-8cc5-a2b6-f1b6241d1a72"
+      stageUuid: "d5203903-edbb-816c-ad1b-6e22aa8dad62"
     - stage: horo
-      stageUuid: "8ce3d09b-fd1d-8727-aeef-17ffaf43bfc7"
+      stageUuid: "9eceade4-6250-8908-9e87-65904c951b2a"
     - stage: seal
       stageUuid: "f4b2ef3c-3d9d-89b5-bc0e-a534c51c2f4d"
     - stage: uuid
-      stageUuid: "cfdd02b6-e895-83ca-9867-9eb8514b8b82"
+      stageUuid: "b400e357-588d-8ebf-a7d8-a6d6b41505ca"
 version: 2
 ---
 # page
 
 A schema.org component word, collided out of schema.org compounds — fused from AboutPage · CheckoutPage · CollectionPage · ContactPage · FAQPage · ItemPage · MedicalWebPage · ProfilePage · QAPage · SearchResultsPage · UserPageVisits · WebPage · WebPageElement · acquireLicensePage · checkoutPageURLTemplate · mainContentOfPage · mainEntityOfPage · pageEnd · pageStart · primaryImageOfPage · printPage · representativeOfPage · tourBookingPage ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[about]] · [[checkout]] · [[collection]] · [[contact]] · [[faq]] · [[item]] · [[medical]] · [[web]] · [[profile]] · [[qa]] · [[search]] · [[results]] · [[user]] · [[visits]] · [[element]] · [[acquire]] · [[license]] · [[url]] · [[template]] · [[main]] · [[content]] · [[entity]] · [[end]] · [[start]] · [[primary]] · [[image]] · [[print]] · [[representative]] · [[tour]] · [[booking]]
+Entangled with — [[about]] · [[checkout]] · [[collection]] · [[contact]] · [[faq]] · [[item]] · [[medical]] · [[web]] · [[profile]] · [[qa]] · [[search]] · results · user · visits · [[element]] · [[acquire]] · [[license]] · url · template · [[main]] · [[content]] · [[entity]] · [[end]] · start · [[primary]] · [[image]] · [[print]] · [[representative]] · tour · [[booking]]
 
 Attested in schema.org — AboutPage · CheckoutPage · CollectionPage · ContactPage · FAQPage · ItemPage · MedicalWebPage · ProfilePage · QAPage · SearchResultsPage · UserPageVisits · WebPage · WebPageElement · acquireLicensePage · checkoutPageURLTemplate · mainContentOfPage · mainEntityOfPage · pageEnd · pageStart · primaryImageOfPage · printPage · representativeOfPage · tourBookingPage
 

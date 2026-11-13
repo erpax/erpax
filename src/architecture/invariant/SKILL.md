@@ -3,7 +3,7 @@ name: invariant
 description: "Use when enforcing the architecture laws in code — the executable checks (single-word atoms, no prefixes, every file payload⊕vitepress or junk, locality, the ≥2-cross balance, the naming matrix) that are the matter-twin of the gate."
 atomPath: "architecture/invariant"
 coordinate: "architecture/invariant · 5/round · 09f5be9d"
-contentUuid: "cb82646c-2f49-51e5-9f91-74f8e8761226"
+contentUuid: "68fb176a-99b2-5980-988b-ffd3c6dcf32d"
 diamondUuid: "60334134-4a01-8b2d-8a84-4739e1d860c4"
 uuid: "09f5be9d-784f-8513-ac4b-df0b8f8be4f0"
 horo: 5
@@ -32,6 +32,7 @@ standards:
   - "RFC-9562"
   - "US-CTA-2021"
   - "W3C-JSON-LD-1.1"
+  - schema.org
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:

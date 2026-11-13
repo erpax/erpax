@@ -2,18 +2,18 @@
 name: outward
 description: "Use when reasoning about outward — outward content-addresses every external answer and outward/leads fuses those receipts to , so the corpus can already compute *what changed* and *what to look at next*."
 atomPath: "agents/mcp/tool/outward"
-coordinate: "agents/mcp/tool/outward · 2/share · f62ba6fb"
-contentUuid: "99d2ffca-722c-540a-b349-b534b70cf669"
-diamondUuid: "08b918b4-a383-8f26-93b3-beb393edffee"
-uuid: "f62ba6fb-3d85-883d-90ab-a79d86c40f98"
-horo: 2
+coordinate: "agents/mcp/tool/outward · 1/base · 77b9d8b7"
+contentUuid: "f3364c5a-8adb-5ecc-af9b-843666fd831b"
+diamondUuid: "5bde12e1-de0c-848a-b575-363e47c344d3"
+uuid: "77b9d8b7-ee18-8185-99b3-785449fd1a8d"
+horo: 1
 typography:
   partition: agents
-  bondDegree: 68
+  bondDegree: 64
 standards: []
 bindings: []
 signatures:
-  computationUuid: "323df517-f0e0-8af1-aa90-0e5d3429ba74"
+  computationUuid: "1aaff20f-625f-8151-b477-54c9eeefc40e"
   stages:
     - stage: path
       stageUuid: "080b3a72-630d-89f2-bc30-e3093a88ca12"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "f4d6501d-96dc-8676-9596-0ecd61e2a6aa"
     - stage: links
-      stageUuid: "40f5fa21-22ba-834d-9e0c-0aa03bdcffde"
+      stageUuid: "6160f62f-8cf2-84ac-8cbd-d584ebdc0532"
     - stage: horo
-      stageUuid: "8b035661-3650-8a10-938f-33ca06d82c31"
+      stageUuid: "4ee685fb-e1e7-8bbc-9ec9-70a18dcc25b5"
     - stage: seal
       stageUuid: "0093f2a9-6be4-888d-b68c-82b5a932e3af"
     - stage: uuid
-      stageUuid: "ea0be5a1-05cd-88b0-bda3-bfe6525a1e96"
+      stageUuid: "229649b9-91ad-88c2-84d5-79309625e351"
 version: 2
 ---
 # agents/mcp/tool/outward — the boundary, asked without a human in the loop
@@ -78,4 +78,4 @@ from them through any surface, MCP included. A harvest does live network I/O, so
 seconds and can return `unreachable` for reasons that have nothing to do with erpax. And coverage
 records that a lead was **answered**, never that the answer was right.
 
-Composes: [[outward]]/leads · [[mcp]]/tool · [[quantum]]/chat.
+Composes: [[outward]]/leads · mcp/tool · [[quantum]]/chat.

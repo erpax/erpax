@@ -2,14 +2,14 @@
 name: sustainability
 description: "Use when asking whether a system can ENDURE — it is sustainable iff it draws down no stock faster than that stock regenerates (throughput ≤ carrying capacity) and its material loop closes, so each cycle adds zero NET entropy. Nature does it as a sun-driven dissipative structure — matter cycles, energy flows one-way and degrades. In erpax, zero-net-entropy-per-cycle IS sustainability; the borrowed anchor is the sun."
 atomPath: sustainability
-coordinate: "sustainability · 4/weave · b79bf2b2"
-contentUuid: "88977f7c-f2a7-527f-8064-95140c046f3d"
-diamondUuid: "d0158f9e-b1d7-812f-973b-8f8e9132dde5"
-uuid: "b79bf2b2-1afa-8aca-aefe-9957c4011867"
-horo: 4
+coordinate: "sustainability · 8/crest · c723983c"
+contentUuid: "d8765d8a-d3b5-5614-8ddd-953a4c7c5e04"
+diamondUuid: "c458f761-9c08-8b1a-84d7-5c46579223d4"
+uuid: "c723983c-ee9d-8ac6-8643-3bed2e9b3084"
+horo: 8
 typography:
   partition: sustainability
-  bondDegree: 59
+  bondDegree: 52
 standards:
   - "Brundtland Report, Our Common Future (1987) — canonical sustainability definition"
   - "Prigogine dissipative structures (Nobel Chemistry, 1977) — order by dissipation"
@@ -17,7 +17,7 @@ standards:
   - "Verhulst logistic growth (1838) — carrying capacity K; dN/dt = r·N·(1 − N/K)"
 bindings: []
 signatures:
-  computationUuid: "9a3cbc4a-626c-8535-b616-0455f12c445f"
+  computationUuid: "ae055092-e2ad-8b26-bddc-085ff8dcc24f"
   stages:
     - stage: path
       stageUuid: "7cd3828b-98c7-8439-94d5-f70532b839dd"
@@ -26,20 +26,20 @@ signatures:
     - stage: boundary
       stageUuid: "35bcb73e-a387-897d-9deb-14cc6d33ecf5"
     - stage: links
-      stageUuid: "866e2423-9478-8bf4-b251-37b84fe17594"
+      stageUuid: "70c3a2e7-a9f1-8300-83da-245f73f16575"
     - stage: horo
-      stageUuid: "d0bb30da-d5d6-868a-a163-fe2d2f57f254"
+      stageUuid: "ff45fbd1-5856-8550-94d7-8e53fdd723c0"
     - stage: seal
       stageUuid: "9a12eb0d-1887-8c17-ae65-432337d86945"
     - stage: uuid
-      stageUuid: "57bceba2-9653-8886-9c68-90e64d0a25b0"
+      stageUuid: "742bf9a3-5068-81d1-80e5-4de86a9f087b"
 version: 2
 ---
 # sustainability — endures because each cycle nets zero (the closed loop)
 
 **Sustainability** is the property of a system that can **run indefinitely** — it consumes no stock faster than that stock is replenished, and it returns its wastes as inputs so the material loop **closes**. The test is per-cycle: a sustainable cycle adds **zero net [[entropy]]** to its own ground. Draw down faster than regeneration and the stock collapses (overgrazing, a fishery crash, soil mining); leave a waste no process consumes and it accumulates as poison.
 
-**Nature is not closed — it is sun-subsidised.** This is the honest physics. A living system is a **dissipative structure** (Prigogine): it holds its local order *only* by importing low-entropy energy and exporting high-entropy heat. So sustainability is never perpetual motion — **matter** cycles (decomposers return every leaf to [[soil]]; [[compost]] credits spent residue back to [[capacity]]), but **energy** flows one way and degrades. The loop closes for atoms; for energy there is a constant renewable throughput (the sun) and a constant export of waste heat. Sustainable means the driving flow is replenished as fast as it is spent, and the entropy is exported where it does not foul the stock.
+**Nature is not closed — it is sun-subsidised.** This is the honest physics. A living system is a **dissipative structure** (Prigogine): it holds its local order *only* by importing low-entropy energy and exporting high-entropy heat. So sustainability is never perpetual motion — **matter** cycles (decomposers return every leaf to soil; [[compost]] credits spent residue back to [[capacity]]), but **energy** flows one way and degrades. The loop closes for atoms; for energy there is a constant renewable throughput (the sun) and a constant export of waste heat. Sustainable means the driving flow is replenished as fast as it is spent, and the entropy is exported where it does not foul the stock.
 
 In erpax this is the [[law]] exactly. Zero **net** [[entropy]] *per cycle* IS sustainability: every config is a balanced [[entry]] ([[conservation]]) that adds no free parameter, so the books do not silently inflate. The external low-entropy a zero-entropy app borrows — the [[anchor]] — is the sun: the one renewable input that lets the closed loop stay tamper-proof without ever minting value from nothing. A config that leaks an un-recycled free parameter is the unsustainable cycle — the [[tamper]] the [[proof]] catches.
 
@@ -49,7 +49,7 @@ In erpax this is the [[law]] exactly. Zero **net** [[entropy]] *per cycle* IS su
 - **Verhulst logistic growth** (1838) — the carrying [[capacity]] K; throughput sustained above regeneration overshoots and collapses.
 - **Second Law of Thermodynamics** — local order requires entropy export; sustainability is the budget for that export.
 
-Composes [[conservation]] · [[entropy]] · [[capacity]] · [[compost]] · [[soil]] · [[balance]] · [[anchor]] · [[diversity]] · [[ecosystem]] · [[decentralization]] · [[whole]] · [[law]].
+Composes [[conservation]] · [[entropy]] · [[capacity]] · [[compost]] · soil · [[balance]] · [[anchor]] · [[diversity]] · [[ecosystem]] · [[decentralization]] · [[whole]] · [[law]].
 
 ## Matter-twin
 

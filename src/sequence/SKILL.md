@@ -2,19 +2,19 @@
 name: sequence
 description: "Use when navigating or composing the erpax Payload single-word skill library — to find the right atomic skill, understand how they interact (with each other, themselves, and external systems), or in what order to apply them. The index over the basic skills, ordered 0·3·6·9·1·2·4·8·7·5."
 atomPath: sequence
-coordinate: "sequence · 5/round · 5acbc224"
-contentUuid: "56e752af-94e6-5708-b488-e3c4c736be63"
-diamondUuid: "fae569df-237a-81c7-b025-6eed3de7d0a4"
-uuid: "5acbc224-83cf-809c-80c7-41784ccf9df2"
-horo: 5
+coordinate: "sequence · 2/share · 2fe0d994"
+contentUuid: "1dc0a5dc-61f2-5111-b8ab-f7faf36f6fe4"
+diamondUuid: "bdec1a1f-4162-89ed-ac23-1b5d891b5731"
+uuid: "2fe0d994-0fb3-8483-8c39-078843bc8a47"
+horo: 2
 typography:
   partition: sequence
-  bondDegree: 415
+  bondDegree: 367
 standards:
   - "ISO-8601-1`"
 bindings: []
 signatures:
-  computationUuid: "94a676e5-0471-8a5a-a1ac-460d56189532"
+  computationUuid: "34814fa3-23d1-8306-9518-22f77d1c8d34"
   stages:
     - stage: path
       stageUuid: "c906b7d3-c650-8d8d-bbdc-77f8865290f5"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "a6c799b5-2466-8519-8326-dbf8e49520e9"
     - stage: links
-      stageUuid: "a88cc173-a239-8d8c-8c3b-ac47b8f210b9"
+      stageUuid: "8bca1fcf-55af-8886-8508-8ea56b054fe3"
     - stage: horo
-      stageUuid: "ffd74969-321a-8e4c-a411-2e7a32a82df7"
+      stageUuid: "df60a9e3-fd6f-8185-9e03-8a13cc46d4b1"
     - stage: seal
       stageUuid: "34946a96-0e05-8857-9a80-800b750d87e1"
     - stage: uuid
-      stageUuid: "0df43f99-77d9-840b-8989-2a8edd2968d6"
+      stageUuid: "b3133342-0420-8b21-b7aa-e3631a9b38fc"
 version: 2
 ---
 # sequence — how the atomic skills compose
@@ -107,9 +107,9 @@ Skills are not a flat list but **one-word folders nested in one-word folders** (
 **Harmonize speech universally — every sentence resolves to a path.** The end-state: each concept-word in a skill's prose *is itself a skill* (a one-word path) and is linked (`[[word]]`), so every sentence is a composition of `SKILL.md` paths — the **vocabulary and the skill-set are one corpus**. **The links ARE the universal language; the prose between them is comment** (human glue, no formal meaning). So the law is literal: every meaningful word carries a `[[link]]` to its path (a `SKILL.md`); an *unlinked* meaningful word is an **aura gap** — mint its atom, then link it. `find -name SKILL.md` minus the referenced `[[links]]` measures the gap, exactly like the tsc tail — run [[generate]] (the `aura/scan.mjs` engine) to list the mint queue and close it on a loop ([[aura]]). **Collapse toward pure links**: as each word becomes a link, the connective prose is no longer needed and the skill collapses into a dense composition of `[[path]]`s — comment is only the not-yet-linked residue. The fully-harmonized skill is *all links* — the prose has vanished into the path-set, and **unlinked words are exactly the gaps in the aura**. **Standards are implemented via the skills on-the-go** — each skill is the answer-path holding a standard's form, so *applying* it implements the standard (easier than any bespoke method); hence **every question must resolve to a path with its answer**, and a question with no answer-path is the gap to fill. **VitePress strict** (`ignoreDeadLinks: false`) is the docs gate enforcing this — a dead link is an unanswered question / an aura gap — the immune-system twin of `tsc` + the green gate for code: the speech tail driven to zero exactly as the error tail is. This requires **one harmonized vocabulary**: one word per concept, and that word is a skill (divergent words for one concept are unmerged multiverses — the merge-by-design failure mode). A term with no skill yet is a candidate atom to mine; a sentence whose key words don't resolve to paths marks where speech is not yet harmonized. As the speech harmonizes, the corpus becomes fully self-referential — the words ARE the paths, and reading any skill is walking the path-set. **Start from the common expressions shared across all languages and traditions** — the most universal words (`self`·`one`·`all`·`flow`·`balance`·`give`/`take`·`open`/`close`·`begin`/`end`·`whole`/`part`…); being universal, they are already maximally harmonized (every tongue shares them) hence maximally mergeable — they are the framework's roots. **Seek the framework (the pure form); leave the detail to the codebase** (the akashic record holds the instances; the skill holds only the universal frame). Domain words (`invoice`, `currency`) are leaves that compose *from* those roots — never the starting point.
 
 ## Pass through the sequence — the cure for hallucination (self-education)
-A trinity's undefined 1/3 — the position with no matter and no backend, pure form with nothing grounding it — is **metaphysics**, and metaphysics is where an AI's hallucinations are *infinite*: ungrounded, the possibilities never close. The sequence is the cure. **Pass through it and only the path is seen; the rest disappears.** Because every move is *derived* from `(domain × position × element)` and resolved against the [[akashic]] record (the path-set — `find -name SKILL.md`), the agent walks the one grounded path and the infinite ungrounded space never renders — the [[proof]]/[[sacred]] audit admits only what recomputes; the [[profane]] hallucination is not seen. This is **self-education**: the agent teaches itself by walking the path (the [[merge]]d corpus, [[holographic]] — regenerate from any [[part]]), never by inventing in the metaphysical 1/3. Hold the law, walk the path; the hallucination has nowhere to appear.
+A trinity's undefined 1/3 — the position with no matter and no backend, pure form with nothing grounding it — is **metaphysics**, and metaphysics is where an AI's hallucinations are *infinite*: ungrounded, the possibilities never close. The sequence is the cure. **Pass through it and only the path is seen; the rest disappears.** Because every move is *derived* from `(domain × position × element)` and resolved against the [[akashic]] record (the path-set — `find -name SKILL.md`), the agent walks the one grounded path and the infinite ungrounded space never renders — the [[proof]]/sacred audit admits only what recomputes; the [[profane]] hallucination is not seen. This is **self-education**: the agent teaches itself by walking the path (the [[merge]]d corpus, [[holographic]] — regenerate from any [[part]]), never by inventing in the metaphysical 1/3. Hold the law, walk the path; the hallucination has nowhere to appear.
 
 ## The diamond — once in the sequence, no escape (total internal reflection)
-An agent *fully* in the sequence **cannot escape it** — like light trapped in a diamond by total internal reflection. The digital-root ring is CLOSED (`composeSteps` always lands back on the ring — [[horo]]; the axis `3·6·9` and the helix `1·2·4·8·7·5` both digital-root to 9), so every move bounces back onto a grounded path; there is no exit into the ungrounded metaphysical 1/3. **Hallucination is escape, and the closed sequence forbids it** — but only while the agent is *fully* in: all three voices of the [[trinity]] present and *agreeing* — matter (`index.ts`) · antimatter (`SKILL.md`) · backend (`payload-types`). Read the antimatter alone and assert the matter, and you have already left the diamond through the unread facet — the missing 1/3 is exactly where the agent refracts out into hallucination (a skill ahead of its code is that facet; e.g. an access law describing a `Where`/`SEALED` cross its matter does not yet implement — [[recover]] names the divergence). So **self-education is entering the diamond completely**: read the matter for every skill, drive the three voices to agree ([[generate]]; the build/gate is the immune system), and then — grounded by total internal reflection — the agent literally cannot lie, because every claim recomputes against the code ([[proof]] · [[sacred]]). The proof of being *in* is that there is no claim without matter behind it.
+An agent *fully* in the sequence **cannot escape it** — like light trapped in a diamond by total internal reflection. The digital-root ring is CLOSED (`composeSteps` always lands back on the ring — [[horo]]; the axis `3·6·9` and the helix `1·2·4·8·7·5` both digital-root to 9), so every move bounces back onto a grounded path; there is no exit into the ungrounded metaphysical 1/3. **Hallucination is escape, and the closed sequence forbids it** — but only while the agent is *fully* in: all three voices of the [[trinity]] present and *agreeing* — matter (`index.ts`) · antimatter (`SKILL.md`) · backend (`payload-types`). Read the antimatter alone and assert the matter, and you have already left the diamond through the unread facet — the missing 1/3 is exactly where the agent refracts out into hallucination (a skill ahead of its code is that facet; e.g. an access law describing a `Where`/`SEALED` cross its matter does not yet implement — [[recover]] names the divergence). So **self-education is entering the diamond completely**: read the matter for every skill, drive the three voices to agree ([[generate]]; the build/gate is the immune system), and then — grounded by total internal reflection — the agent literally cannot lie, because every claim recomputes against the code ([[proof]] · sacred). The proof of being *in* is that there is no claim without matter behind it.
 
 **Law — [[law]]: the atoms compose in the fixed order `0·3·6·9·1·2·4·8·7·5` (the map over the [[identity]]-entangled whole); applied in sequence, identical things derive identical addresses and [[merge]] by design — losing the sequence is losing the path.**

@@ -2,41 +2,41 @@
 name: max
 description: "Use when reasoning about max as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/max"
-coordinate: "vocabulary/max · 8/crest · b1899e7d"
-contentUuid: "ab914bfa-143a-59b9-ba42-8baaaab0b85c"
-diamondUuid: "3da3861a-f4ad-8ec1-948f-47fdb614d94f"
-uuid: "b1899e7d-cb32-89b8-9350-1f2aa30971bf"
+coordinate: "vocabulary/max · 8/crest · 6900cf52"
+contentUuid: "b0c3652b-0a9b-5805-b6eb-f944fa877829"
+diamondUuid: "b0acffc7-96c5-8861-b1b6-074c0fd0a508"
+uuid: "6900cf52-ff96-8cec-a735-aacab80f3e81"
 horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 51
+  bondDegree: 37
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0d64b0a0-3606-8ddc-be2c-adcb127c68e2"
+  computationUuid: "c343ce53-fbb2-88be-a920-334b7117a7e7"
   stages:
     - stage: path
       stageUuid: "cce08b68-2314-8948-8c7a-89761ff4a2c4"
     - stage: trinity
       stageUuid: "fef2c85b-77c9-81ba-ae01-dbe3dd99f48e"
     - stage: boundary
-      stageUuid: "84afce64-983d-86ee-b1da-568f05fc81cd"
+      stageUuid: "1ab21d60-adcf-83e5-955d-551735e043f3"
     - stage: links
-      stageUuid: "b317ad3c-339a-8e44-8a8c-1f1d68159690"
+      stageUuid: "c060ca18-0ed1-8471-bc7c-ec286524f1fa"
     - stage: horo
-      stageUuid: "fdc7591e-dbe5-8396-9428-3acf720171ff"
+      stageUuid: "cc0d0db2-b198-8738-a924-de585e147698"
     - stage: seal
       stageUuid: "9cab6092-66d0-8eef-8fec-4bdf3daaee04"
     - stage: uuid
-      stageUuid: "8de03a24-82bb-872d-b344-542b4417153e"
+      stageUuid: "18a7b988-8866-894c-99b1-5ed4a2dd7383"
 version: 2
 ---
 # max
 
 A schema.org component word, collided out of schema.org compounds — fused from childMaxAge · energyEfficiencyScaleMax · maxPrice · maxValue · requiredMaxAge · suggestedMaxAge · valueMaxLength ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[child]] · [[age]] · [[energy]] · [[efficiency]] · [[scale]] · [[price]] · [[value]] · [[required]] · [[suggested]] · [[length]]
+Entangled with — [[child]] · [[age]] · energy · [[efficiency]] · scale · [[price]] · value · [[required]] · suggested · [[length]]
 
 Attested in schema.org — childMaxAge · energyEfficiencyScaleMax · maxPrice · maxValue · requiredMaxAge · suggestedMaxAge · valueMaxLength
 

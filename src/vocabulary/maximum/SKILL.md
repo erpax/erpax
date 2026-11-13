@@ -2,41 +2,41 @@
 name: maximum
 description: "Use when reasoning about maximum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/maximum"
-coordinate: "vocabulary/maximum · 1/base · 9136518f"
-contentUuid: "9e9cc11f-76dc-50a0-88b2-3652ba9ddb41"
-diamondUuid: "3b110a1a-017f-8e4c-95c2-e102ebef4534"
-uuid: "9136518f-7bc4-8613-8035-625457dabdd8"
-horo: 1
+coordinate: "vocabulary/maximum · 5/round · 4a561a4c"
+contentUuid: "f4251d82-74f6-57b1-9d3e-384ee519dd5f"
+diamondUuid: "b22156b9-9bbe-812d-a6c8-02f55b14bdde"
+uuid: "4a561a4c-b583-86be-941b-e1c2187a49fa"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 42
+  bondDegree: 35
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2d7d1ae9-7b46-8993-9212-d175b232b66e"
+  computationUuid: "a49ee9bb-f842-8362-b7e0-5d0c8b83439a"
   stages:
     - stage: path
       stageUuid: "aaab8d22-255d-86ff-9ba0-8cf54ce38c9f"
     - stage: trinity
       stageUuid: "047e6b82-31f9-85dd-a997-d6e7d1f228ab"
     - stage: boundary
-      stageUuid: "1cf70254-6a57-89ab-b428-9446adc2319f"
+      stageUuid: "4ad286e1-0fec-8819-8ecb-b3cecd8fb170"
     - stage: links
-      stageUuid: "62ab240c-ddcf-89b0-94c1-ee3906041283"
+      stageUuid: "1ad64362-1ee2-8c1e-a127-4997bc1c0a2c"
     - stage: horo
-      stageUuid: "653b9280-9f90-82f1-9478-c6792dc2c708"
+      stageUuid: "40969481-48ac-8c4b-ab28-2f7fd4c97e29"
     - stage: seal
       stageUuid: "99540c0a-6037-840a-8c48-b569238434ef"
     - stage: uuid
-      stageUuid: "5b8f796d-ef86-8388-b042-f157c84d1223"
+      stageUuid: "6d17b1ee-dd7d-8ada-ba63-b93765e5b832"
 version: 2
 ---
 # maximum
 
 A schema.org component word, collided out of schema.org compounds — fused from MaximumDoseSchedule · maximumAttendeeCapacity · maximumEnrollment · maximumIntake · maximumPhysicalAttendeeCapacity · maximumVirtualAttendeeCapacity ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[dose]] · [[schedule]] · [[attendee]] · [[capacity]] · [[enrollment]] · [[intake]] · [[physical]] · [[virtual]]
+Entangled with — [[dose]] · schedule · [[attendee]] · [[capacity]] · [[enrollment]] · [[intake]] · [[physical]] · virtual
 
 Attested in schema.org — MaximumDoseSchedule · maximumAttendeeCapacity · maximumEnrollment · maximumIntake · maximumPhysicalAttendeeCapacity · maximumVirtualAttendeeCapacity
 

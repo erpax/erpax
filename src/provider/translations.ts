@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when wiring the app-wide React context tree — the one place theme, computed-CSS and header-theme providers wrap the frontend. A client provider is imported from its own module, never through a barrel that also exports Node fs matter: the @/css barrel exports computeCssDiamond, and pulling it into the browser chunk 500s the Worker homepage.",
-    "uuid": "f3b47d12-4f6a-8e63-9591-cf722acf95c4",
+    "uuid": "59c5d371-49f4-8363-aa89-7b07fbc5f205",
     "words": [
       "use",
       "when",

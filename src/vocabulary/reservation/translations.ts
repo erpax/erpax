@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reservation",
-    "uuid": "f3fc9d13-b791-82c9-9790-ba8f8a030e43",
+    "uuid": "eb3ab490-22eb-87c1-bdd3-ef6d59e94e7d",
     "words": [
       "reservation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about reservation — Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails",
-    "uuid": "dc963c43-d0f5-8f7f-bf4e-526c8b5f4e81",
+    "uuid": "dbf56b1c-daa5-81d2-a5f4-279d2262a0e1",
     "words": [
       "use",
       "when",

@@ -2,19 +2,19 @@
 name: variant
 description: "Use when modeling product options, SKU expansion, or feature flags — sizes, colors, configurations, market-specific variants without a fixed grid. The unbounded product dimension."
 atomPath: variant
-coordinate: "variant · 1/base · 6c73bd42"
-contentUuid: "f6e7287c-2be8-5046-a5a0-e8c258f75608"
-diamondUuid: "1cc7d030-d25a-833b-9be6-42f4df006956"
-uuid: "6c73bd42-fd39-8d62-979c-010d21990737"
-horo: 1
+coordinate: "variant · 7/descent · 976deaf7"
+contentUuid: "2ed5f5a4-ac77-5a6f-b57c-9ff7100860f4"
+diamondUuid: "8f077705-1957-857b-b9d6-4c85c89b77c0"
+uuid: "976deaf7-8d6f-8b3e-bb1e-851586062ab1"
+horo: 7
 typography:
   partition: variant
-  bondDegree: 63
+  bondDegree: 50
 standards:
   - "Commerce/product taxonomy — the open variant dimension (no cultivar/option enum)"
 bindings: []
 signatures:
-  computationUuid: "0579cc30-6c04-817a-8fe3-d155be852883"
+  computationUuid: "b3ee912a-17bb-889f-820c-5b17a3a570fd"
   stages:
     - stage: path
       stageUuid: "8e4f7495-cd46-8efa-916a-3671849f13d2"
@@ -23,22 +23,22 @@ signatures:
     - stage: boundary
       stageUuid: "b2af01c7-3a5c-8c03-8a8c-c1442abe5d62"
     - stage: links
-      stageUuid: "fae8f567-9197-8009-89eb-263d247026aa"
+      stageUuid: "d3269421-b41f-8bff-bf47-94190b46c784"
     - stage: horo
-      stageUuid: "fab5b6ff-2b7a-827c-8a1d-ec889b0e4ae9"
+      stageUuid: "ff5e3eb1-b6f8-8685-8f84-3a3dd46dba9d"
     - stage: seal
       stageUuid: "2a91f0bd-8ec8-8a12-b806-ff5ee2db1b49"
     - stage: uuid
-      stageUuid: "c7fd782d-35f7-83fe-8a80-f27af428ce42"
+      stageUuid: "02309c93-a7ba-8abf-a174-9fbd8f3f8d27"
 version: 2
 ---
 # variant
 
 Use when modeling product options, SKU expansion, or feature flags — sizes, colors, configurations, market-specific variants without a fixed grid. The unbounded product dimension.
 
-**A crop cultivar is the agricultural variant.** A [[crop]] species expands into named varieties the same unbounded way a garment expands into sizes/colors — **open-pollinated** (breeds true, seed-saveable), **F1 hybrid** (vigorous, doesn't breed true), **heirloom** (old stable OP), **landrace** (locally-adapted, diverse). Each is a variant of the species on the [[taxonomy]] ladder (family → genus → species → *cultivar*), carrying its own [[maturity]] (days-to-maturity), [[hardiness]], disease resistance, and [[yield]] — selected in the [[cropplan]] and ordered as [[seed]]. Same no-fixed-grid law: never a cultivar enum, an open dimension.
+**A crop cultivar is the agricultural variant.** A [[crop]] species expands into named varieties the same unbounded way a garment expands into sizes/colors — **open-pollinated** (breeds true, seed-saveable), **F1 hybrid** (vigorous, doesn't breed true), **heirloom** (old stable OP), **landrace** (locally-adapted, diverse). Each is a variant of the species on the taxonomy ladder (family → genus → species → *cultivar*), carrying its own [[maturity]] (days-to-maturity), [[hardiness]], disease resistance, and yield — selected in the [[cropplan]] and ordered as [[seed]]. Same no-fixed-grid law: never a cultivar enum, an open dimension.
 
-Composes: [[Items]] · [[commerce]] · [[tags]] · [[crop]] · [[taxonomy]] · [[seed]] · [[maturity]] · [[hardiness]] · [[cropplan]] · [[yield]] · [[agriculture]].
+Composes: [[Items]] · [[commerce]] · [[tags]] · [[crop]] · taxonomy · [[seed]] · [[maturity]] · [[hardiness]] · [[cropplan]] · yield · [[agriculture]].
 
 ## The matter — the generator, not the rows
 

@@ -3,13 +3,13 @@ name: runtime
 description: Use when reasoning about runtime — AgentRuntime — dispatches chain steps + events + scheduled ticks to the owning DomainAgent and processes its returned effects.
 atomPath: "agent/runtime"
 coordinate: "agent/runtime · 8/crest · 6f1ecae7"
-contentUuid: "82b9ea29-a8a5-5172-ad04-afdd900d8fa8"
+contentUuid: "e3dae95d-70aa-5a3d-b840-04b3b5402137"
 diamondUuid: "83865a8e-62d1-8594-acc7-b48a1659f1ac"
 uuid: "6f1ecae7-26b7-8d22-a2f3-7f131ae5f297"
 horo: 8
 typography:
   partition: agent
-  bondDegree: 10
+  bondDegree: 7
 standards:
   - "ISO/IEC 25010:2023 §5.4 reusability"
   - "ISO/IEC-25010"

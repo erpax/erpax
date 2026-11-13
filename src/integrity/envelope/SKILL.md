@@ -3,7 +3,7 @@ name: envelope
 description: "Use when reasoning about envelope — Envelope encryption keyed by content-uuid — the at-rest companion to `SignedUuid<T>`."
 atomPath: "integrity/envelope"
 coordinate: "integrity/envelope · 7/descent · a8e2914b"
-contentUuid: "98039ed2-32f0-5707-b0c3-58ecb71d90af"
+contentUuid: "b17e6c6b-7ebe-5912-ab66-77a6c8ab09d0"
 diamondUuid: "4ba680e7-c91f-8a41-ae5d-bca55494f415"
 uuid: "a8e2914b-ec63-87bd-8b15-a7948f082ec3"
 horo: 7
@@ -14,8 +14,10 @@ standards:
   - "EU-2016/679"
   - GDPR Article 32(1)(a) encryption of personal data
   - HIPAA §164.312(a)(2)(iv) encryption of ePHI
+  - "ISO-27001"
   - "ISO/IEC 27001 Annex A.10.1.1 cryptographic-controls policy"
   - "ISO/IEC 27040 §6.7 storage security"
+  - "ISO/IEC-27001:2022"
   - "NIST SP 800-38D AES-GCM"
   - "NIST SP 800-57 §5.6 key-management lifecycles"
   - "NIST-SP-800-38D"

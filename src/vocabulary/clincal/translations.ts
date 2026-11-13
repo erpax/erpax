@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about clincal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "ffe478a4-654d-856d-87df-900f7b993a6b",
+    "uuid": "ca124249-c72b-8a89-b42d-3c57e55c4ee2",
     "words": [
       "use",
       "when",

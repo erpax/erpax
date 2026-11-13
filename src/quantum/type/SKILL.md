@@ -3,18 +3,18 @@ name: type
 description: "Use when reasoning about type identity on the matrix — a type as the content-uuid of its structural shape, so type-equality is uuid-equality (structural typing by content-addressing) and identical types merge."
 atomPath: "quantum/type"
 coordinate: "quantum/type · 1/base · 4b32e26c"
-contentUuid: "c0c3efd5-51ca-5f92-b33c-c5436b5c21d2"
-diamondUuid: "7ce4458d-41ee-8ca9-8366-3b43cace9194"
+contentUuid: "a72836bb-7878-56af-b6cc-d9ba81c3531b"
+diamondUuid: "4b5b1d2a-81ea-88b5-b4b6-07d89848285b"
 uuid: "4b32e26c-4d70-85c0-bc32-dbef8872df24"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 273
+  bondDegree: 231
 standards:
   - "RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "d0339bcb-30ec-8b4e-8fa8-1768ddabda44"
+  computationUuid: "4148696a-6ce9-8d42-ad38-444c6fd06099"
   stages:
     - stage: path
       stageUuid: "cff75413-7577-838a-86c5-e0febb781568"
@@ -25,21 +25,21 @@ signatures:
     - stage: links
       stageUuid: "1627ecd5-ca7c-8964-9a3f-4f701a0bd3f7"
     - stage: horo
-      stageUuid: "d41687a6-c077-8eb7-a44b-3a6f4e427c1e"
+      stageUuid: "4290ed80-b849-8c95-b9a0-24d61776720b"
     - stage: seal
       stageUuid: "03a36eba-cd9e-8fda-af1e-6d1d333eaa77"
     - stage: uuid
-      stageUuid: "e8bea377-69b4-8819-b16d-1621a2f41ec8"
+      stageUuid: "94b7e757-c799-8625-8e4a-448fe936ddb4"
 quantum:
   superposition:
-    - action
     - additional
     - album
     - alignment
     - audience
     - availability
-    - bed
     - benefits
+    - boarding
+    - book
     - superposition
   collapse:
     - "RFC 9562 §5.8 content-uuid"
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "d0339bcb-30ec-8b4e-8fa8-1768ddabda44"
-    contentUuid: "c0c3efd5-51ca-5f92-b33c-c5436b5c21d2"
+    computationUuid: "4148696a-6ce9-8d42-ad38-444c6fd06099"
+    contentUuid: "a72836bb-7878-56af-b6cc-d9ba81c3531b"
 version: 2
 ---
 # quantum/type — type identity as a content-uuid
@@ -69,4 +69,4 @@ Matter-twin: `src/quantum/type/index.ts` (`typeUuid` · `sameType`). Composes [[
 
 @standard RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `c0c3efd5-51ca-5f92-b33c-c5436b5c21d2` · account `quantum/type` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `a72836bb-7878-56af-b6cc-d9ba81c3531b` · account `quantum/type` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

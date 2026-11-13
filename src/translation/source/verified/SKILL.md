@@ -2,19 +2,19 @@
 name: verified
 description: "Use when you need the sense-verified translation seed and its computed renderings — only the concept→Qid judgment is stored (58 unambiguous concept atoms, each admitted because a candidate's description sense-matched the atom's meaning); the per-locale labels are a computed projection of each Qid, sealed content-addressed in the gitignored cache. Theorems replace hardcoded values: the seed is data, the renderings are a read. Nothing fabricated; unsure senses stay gaps."
 atomPath: "translation/source/verified"
-coordinate: "translation/source/verified · 8/crest · 3cc4eb04"
-contentUuid: "f4cee8ae-fc3a-57a2-81c5-bd0dc42cf23c"
-diamondUuid: "4d48890d-049e-8805-9385-b328f1889859"
-uuid: "3cc4eb04-e0c6-8ffd-aa9a-0bebebe58cae"
-horo: 8
+coordinate: "translation/source/verified · 5/round · ebee3b78"
+contentUuid: "eac23583-c92e-5c98-9354-b5071ccd831a"
+diamondUuid: "426e15b0-ca6b-8ce8-b102-42b85fa9bea2"
+uuid: "ebee3b78-282f-8b22-ba47-a32bd793ad39"
+horo: 5
 typography:
   partition: translation
-  bondDegree: 18
+  bondDegree: 15
 standards:
   - "Wikidata (CC0) · Wikimedia MediaWiki API · BCP-47 locale tags · RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "ea6e39e8-a20f-8dfe-9be9-8037f8032e5d"
+  computationUuid: "87ffb15f-a74e-8eae-9836-908034fd3aec"
   stages:
     - stage: path
       stageUuid: "3b872430-984f-8879-a285-fdc86e1662b7"
@@ -23,20 +23,20 @@ signatures:
     - stage: boundary
       stageUuid: "547d4b61-53dc-8861-8829-6080750aea30"
     - stage: links
-      stageUuid: "db6df6ef-f1ee-8a2a-be90-c366acc9afae"
+      stageUuid: "e02293d9-4586-8fe1-8374-0b3a2f0c688f"
     - stage: horo
-      stageUuid: "e1edfbb9-3a19-86a8-b400-6f8a3f26024c"
+      stageUuid: "385e4bf1-5c79-8e4c-b6e1-fd45681b9219"
     - stage: seal
       stageUuid: "d33e06a6-fa58-8448-bfb3-5c72f4c6f5c5"
     - stage: uuid
-      stageUuid: "b52aab30-93a1-86af-97a8-680a9242570a"
+      stageUuid: "e943d269-a8b4-8da0-9f53-0f7562201455"
 version: 2
 ---
 # verified — the seed is stored, the renderings are computed
 
 The training set of the translation intelligence, folded correctly: **store the judgment, compute the projection.**
 
-- **`VERIFIED_PROVENANCE`** — the **seed**, the only thing stored: for each of 58 unambiguous single-word concept atoms (anatomy · nature · matter · plants · animals · food · metals), the CC0 Wikidata `qid` its sense-gate run admitted ([[source]] `harvestVerified`, senseScore ≥ 0.14), with the matched `description` and `score`. This is the irreducible human/agent judgment — which sense is *the* sense.
+- **`VERIFIED_PROVENANCE`** — the **seed**, the only thing stored: for each of 58 unambiguous single-word concept atoms (anatomy · nature · matter · plants · animals · food · metals), the CC0 Wikidata `qid` its sense-gate run admitted (source `harvestVerified`, senseScore ≥ 0.14), with the matched `description` and `score`. This is the irreducible human/agent judgment — which sense is *the* sense.
 - **`verifiedRenderings()`** — the **computed face**: the per-locale labels are a projection of each Qid (`fetchEntityLabels`), harvested once and **sealed content-addressed by the seed's fold** (`provenanceKey` = `foldToRoot(qids)`, gitignored cache). Unchanged seed ⇒ a **read**, zero network; changed seed ⇒ re-harvest. `en` is never harvested — the atom word stays the source. An unreachable source with no seal **throws**: a rendering is never fabricated.
 
 This replaced a hardcoded wall of ~1620 label literals — stored derivable content, the exact entropy the law forbids. Label drift inside a verified Qid is Wikidata improving, not poisoning: the *sense* lives in the Qid, and the Qid is what the seed holds.
@@ -53,4 +53,4 @@ Consumed by [[translations]]/seed, which registers the computed table into the `
 - **BCP-47** — the locale tags of the supported locales.
 - **RFC 9562 §5.8** — the content-uuid each rendering is addressed by.
 
-Composes: [[source]] · [[translation]] · [[translations]] · [[merge]] · [[law]].
+Composes: source · [[translation]] · [[translations]] · [[merge]] · [[law]].

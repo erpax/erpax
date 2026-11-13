@@ -2,41 +2,41 @@
 name: qualitative
 description: "Use when reasoning about qualitative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/qualitative"
-coordinate: "vocabulary/qualitative · 7/descent · 0ed451d9"
-contentUuid: "6f3a6fbd-a512-58f6-aecc-8f66eb1f5a4d"
-diamondUuid: "880f0d98-cfde-876c-a804-01a74609532f"
-uuid: "0ed451d9-0acc-803c-ae8f-0b8f34b60461"
-horo: 7
+coordinate: "vocabulary/qualitative · 5/round · ca846fa5"
+contentUuid: "ed75674f-761e-5ea8-9cc6-774e8b05b439"
+diamondUuid: "ec163c85-262c-80da-abaa-5ff5cc8a50a2"
+uuid: "ca846fa5-fa05-8313-97e3-9ea10ee6fc65"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 15
+  bondDegree: 12
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "05ecb23e-d011-8493-ae5a-f5d0327591d7"
+  computationUuid: "e2731dc2-e1bd-8331-af87-9990bd6d6da2"
   stages:
     - stage: path
       stageUuid: "ae637f02-8fd1-87ee-b59a-ff0ef7f426c6"
     - stage: trinity
       stageUuid: "ff7d87ae-5881-88cb-a851-9e917cd1f6da"
     - stage: boundary
-      stageUuid: "dc976423-3655-86aa-8b8e-34afc5c04dd1"
+      stageUuid: "01004e16-872a-895f-9af1-5b6401ba6294"
     - stage: links
-      stageUuid: "6fa1d975-da80-8bac-804c-4992d8272db4"
+      stageUuid: "19caf040-0ded-87de-9624-2b85c8647829"
     - stage: horo
-      stageUuid: "a6883a9c-254a-8e44-afe2-dd2488bad83f"
+      stageUuid: "af04be18-4c89-8252-8ee0-3c2677f3df0a"
     - stage: seal
       stageUuid: "d03833e2-cb05-817f-bcc9-449063229532"
     - stage: uuid
-      stageUuid: "76de7ff8-2f76-851c-bd93-2a72771a9491"
+      stageUuid: "d80690cf-f95f-851b-b3f7-3db94a796268"
 version: 2
 ---
 # qualitative
 
 A schema.org component word, collided out of schema.org compounds — fused from QualitativeValue ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[value]]
+Entangled with — value
 
 Attested in schema.org — QualitativeValue
 

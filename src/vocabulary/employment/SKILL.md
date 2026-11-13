@@ -2,41 +2,41 @@
 name: employment
 description: "Use when reasoning about employment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/employment"
-coordinate: "vocabulary/employment · 5/round · 10e0a9c9"
-contentUuid: "5b6a476d-85fd-579d-ae19-671fe349a45b"
-diamondUuid: "aa2cfe52-a22d-84d0-bf56-d4b38dabc797"
-uuid: "10e0a9c9-4962-8272-8293-492e1f5adf10"
-horo: 5
+coordinate: "vocabulary/employment · 2/share · 8eb4506e"
+contentUuid: "b16d75ca-944f-585b-9f9f-6fbb850c3073"
+diamondUuid: "6b0fdb62-1479-81a8-9c9d-78afd4a58c3b"
+uuid: "8eb4506e-2168-8123-882f-c5d21377deda"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 23
+  bondDegree: 19
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "28f47ad1-22a0-8bf5-8df3-2ed950b1dde4"
+  computationUuid: "82250d58-f943-8316-8d33-0ff04ca85752"
   stages:
     - stage: path
       stageUuid: "a9dca80a-41d8-812f-b839-9f1a5f1c732a"
     - stage: trinity
       stageUuid: "2a5879b9-3a86-82d6-adff-bdcdb69ec900"
     - stage: boundary
-      stageUuid: "570066af-4414-8b50-bc81-c480c64fc747"
+      stageUuid: "6c07faf6-ef8d-8df2-9b88-85cce5927405"
     - stage: links
-      stageUuid: "46f29057-9afe-8aa6-9a02-8d446f5cd1c2"
+      stageUuid: "20a45b6b-5483-840c-bce3-97dd57664649"
     - stage: horo
-      stageUuid: "3222f4fa-c1e1-8d54-b31d-26a3f6052e22"
+      stageUuid: "2ace0be2-d70d-8f2f-b9c3-4221e7bdaf95"
     - stage: seal
       stageUuid: "b3d13d36-8b4b-8f63-a7ee-62ac3abf35b6"
     - stage: uuid
-      stageUuid: "dd630f05-63e0-8c9b-aaaf-1fb15943543d"
+      stageUuid: "6c58b5ed-a420-80ab-ba9d-5c68e4cc6d93"
 version: 2
 ---
 # employment
 
 A schema.org component word, collided out of schema.org compounds — fused from EmploymentAgency · employmentType · employmentUnit ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[agency]] · [[type]] · [[unit]]
+Entangled with — [[agency]] · [[type]] · unit
 
 Attested in schema.org — EmploymentAgency · employmentType · employmentUnit
 

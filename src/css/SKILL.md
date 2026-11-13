@@ -2,18 +2,18 @@
 name: css
 description: "Use when a stylesheet is imported, stubbed, or reasoned about in build or typegen — CSS is the form facet of the styling/visual dimension (glyph ⊕ style), a complete diamond atom: each file content-addressed and sealed; Node must recognize .css as a valid diamond surface, never ERR_UNKNOWN_FILE_EXTENSION off-ring escape."
 atomPath: css
-coordinate: "css · 7/descent · a434b0a4"
-contentUuid: "e47145b3-5b58-56e3-8490-1679469dc9e5"
-diamondUuid: "1f4ab032-e551-82d0-991f-20b21d8b0ced"
-uuid: "a434b0a4-13fc-8b27-b2bc-b5f737b4950b"
-horo: 7
+coordinate: "css · 1/base · 835132e5"
+contentUuid: "3ee13317-79ae-5a8b-8fc3-ae63d7e6c6de"
+diamondUuid: "33b139f3-7e51-81b7-8260-dbf253b401a3"
+uuid: "835132e5-8cfa-8522-aa61-50fd14fe40f6"
+horo: 1
 typography:
   partition: css
-  bondDegree: 56
+  bondDegree: 50
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8b4392b6-a72f-8c0a-b8e8-22891e8e03f8"
+  computationUuid: "a30aed83-59fe-89ef-8f18-3019b4fee573"
   stages:
     - stage: path
       stageUuid: "c84b68a7-f352-88aa-bacb-a0c834de568c"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "e227086b-821a-832d-b4a6-734f67894e89"
     - stage: links
-      stageUuid: "8f5c87a9-f1b4-8d89-ac21-7b7528baed7a"
+      stageUuid: "bb94faea-6437-8f9f-a30d-eb8f29244b29"
     - stage: horo
-      stageUuid: "be1acee5-cc2e-8a69-85de-95fd2ebc829e"
+      stageUuid: "f6e043f2-ea2e-8ca7-81cc-81b5bcaea324"
     - stage: seal
       stageUuid: "d67e65d6-3536-8509-a221-4d4cf5586dd5"
     - stage: uuid
-      stageUuid: "847b2b63-4528-8c4a-9649-6a8a6a3937c1"
+      stageUuid: "756ba5eb-7b9c-8b82-8938-9ab92c0a8ffb"
 version: 2
 ---
 # css — the styling diamond (glyph ⊕ style)
@@ -62,6 +62,6 @@ Both are complete [[diamond]]s; both are told three ways where the [[trinity]] a
 | admin | `ComputedCssAdminRoot` via admin-ui `providers` | `admin/ui` path · horo 7 |
 | widgets/blocks | shadcn semantic classes (`bg-card`, `text-muted-foreground`) | inherit injected vars |
 
-Composes: [[diamond]] · [[atom]] · [[dimension]] · [[typography]] · [[primitive]] · [[component]] · [[seal]] · [[purity]] · [[gate]] · [[pixel]] · [[signal]] · [[design]]
+Composes: [[diamond]] · [[atom]] · [[dimension]] · [[typography]] · [[primitive]] · [[component]] · [[seal]] · [[purity]] · [[gate]] · [[pixel]] · [[signal]] · design
 
 @see [[diamond]] · [[typography]] · [[primitive]] · [[component]] · [[dimension]]

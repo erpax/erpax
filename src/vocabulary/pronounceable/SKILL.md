@@ -2,41 +2,41 @@
 name: pronounceable
 description: "Use when reasoning about pronounceable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pronounceable"
-coordinate: "vocabulary/pronounceable · 5/round · 595b7254"
-contentUuid: "149e010c-b791-5728-a0f4-5190b5913129"
-diamondUuid: "6e6bdada-d51c-8023-9c86-3fa430fd7b83"
-uuid: "595b7254-39aa-8ff5-8112-e4d65056cc45"
-horo: 5
+coordinate: "vocabulary/pronounceable · 7/descent · 59c8d300"
+contentUuid: "f08f91c4-7207-528c-bd1e-f67c82c546ed"
+diamondUuid: "6129a39e-f5ec-8240-b4a7-45c339fd8450"
+uuid: "59c8d300-f209-830b-b0cb-6a1e5bb79ec6"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 16
+  bondDegree: 12
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "8f3c6e1c-5e32-84fb-a10f-0fae3f940301"
+  computationUuid: "bf256a24-e11c-8ada-8bec-025e60d5e33c"
   stages:
     - stage: path
       stageUuid: "f0bc31e4-405c-8415-9aec-44db4bd2ad73"
     - stage: trinity
       stageUuid: "19c839ba-995f-8338-a3d0-8250167608d1"
     - stage: boundary
-      stageUuid: "31711cef-5049-8302-87dd-eb2f2d08cc27"
+      stageUuid: "ecf4716a-d30c-8c4c-9000-20a9313ed3cd"
     - stage: links
-      stageUuid: "3bd63c4b-88f7-83e9-bd7b-dbbe244c3375"
+      stageUuid: "b0cc863f-93f0-86ec-be9a-3b56765728b4"
     - stage: horo
-      stageUuid: "c8de58a1-4741-867e-9652-6218f9998da4"
+      stageUuid: "008ec4a3-42e7-83a0-b18c-c503c94bca7d"
     - stage: seal
       stageUuid: "7f1a4cfc-d1d0-883f-8c3f-ff30851244b8"
     - stage: uuid
-      stageUuid: "89e62698-98e2-8784-bb3b-4c93d888b1c0"
+      stageUuid: "a39f0627-28d4-8bef-809c-6d9bc729766f"
 version: 2
 ---
 # pronounceable
 
 A schema.org component word, collided out of schema.org compounds — fused from PronounceableText ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[text]]
+Entangled with — text
 
 Attested in schema.org — PronounceableText
 

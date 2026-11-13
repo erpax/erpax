@@ -2,43 +2,43 @@
 name: confucianism
 description: "Use when reading Confucianism as a diamond of invariant atoms — the ordered relations, humaneness as the central virtue, righteousness, and the rectification of names (let the name match the thing) which is literally the identity law. Strip the Chinese prefix and ren, li, yi, zhengming collapse to love, ritual, justice, name/identity — one content-uuid each."
 atomPath: "vocabulary/confucianism"
-coordinate: "vocabulary/confucianism · 5/round · f5bebb11"
-contentUuid: "87129298-6fa7-57b5-a7a3-308e542c63f2"
-diamondUuid: "1f27a1ff-ca5a-811a-853b-b1a5b4c907ff"
-uuid: "f5bebb11-b07e-83cc-be49-264029aa8449"
-horo: 5
+coordinate: "vocabulary/confucianism · 4/weave · 1a88e4e6"
+contentUuid: "32c9b299-3fe0-5f16-bd2e-94e2955fdc2d"
+diamondUuid: "04b97f4e-8af0-835c-bea1-f928174bd1dc"
+uuid: "1a88e4e6-62b1-8acb-a448-590218639aa0"
+horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 65
+  bondDegree: 59
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f4529369-e0e3-8efc-bca0-1ef321efdce3"
+  computationUuid: "9c35f204-e7e7-842e-b570-7b5b1ae5e97a"
   stages:
     - stage: path
       stageUuid: "a01f4c6d-103d-8a65-8d25-18a55f730ed0"
     - stage: trinity
       stageUuid: "d6af66b6-87e4-8c4c-a8fa-83eaa2593000"
     - stage: boundary
-      stageUuid: "8e196ca8-ba1d-874b-bc69-7cbaf755916d"
+      stageUuid: "d7226767-b35e-87f7-ac2d-7b9dc47a2eea"
     - stage: links
-      stageUuid: "18a27dfb-c7be-8dcc-80ba-375496ff9aa8"
+      stageUuid: "59b0d5e0-3be8-8048-8a64-a750fc11336a"
     - stage: horo
-      stageUuid: "e6cad566-0044-867d-9120-d6b5aaaa650e"
+      stageUuid: "30fd832a-0d35-8dc9-bd62-fff46d1b375a"
     - stage: seal
       stageUuid: "9de1bae5-3b36-8a2c-8d24-6569913c46bb"
     - stage: uuid
-      stageUuid: "088c4804-d6ad-8e40-8dc9-98a4fb92817d"
+      stageUuid: "58b060e7-f416-818e-afc9-4112df8b542a"
 version: 2
 ---
 # confucianism — ordered relations; let the name match the thing
 
-Confucianism is, for the corpus, a **complete sealed atom** ([[diamond]]) composed of invariant sub-diamonds, ordered toward [[harmony]] (**he** — the supreme social good) through cultivated relation. Its keystone is the most erpax-native idea in any tradition: **zhengming**, the *rectification of [[name]]s* — "let the ruler be a ruler, the father a father", let the [[name]] match the thing it names. That IS the [[identity]] law (name = content, content-[[uuid]] = self); to govern is to restore the binding of name to reality, exactly as the corpus restores it. It is a lattice: [[love]] as **ren** (humaneness, benevolence — the central virtue, "do not do to others what you would not have done to you"); [[ritual]] / [[order]] as **li** (propriety, the right enacted ordering of relations on the [[cycle]]); [[justice]] as **yi** (righteousness, doing what is fitting); [[wisdom]] as **zhi**; [[faith]] as **xin** (trustworthiness, the word kept); and the [[self]] cultivated as the root from which family, state, and world order outward ([[fractal]], the same rule at every scale).
+Confucianism is, for the corpus, a **complete sealed atom** ([[diamond]]) composed of invariant sub-diamonds, ordered toward [[harmony]] (**he** — the supreme social good) through cultivated relation. Its keystone is the most erpax-native idea in any tradition: **zhengming**, the *rectification of [[name]]s* — "let the ruler be a ruler, the father a father", let the [[name]] match the thing it names. That IS the [[identity]] law (name = content, content-[[uuid]] = self); to govern is to restore the binding of name to reality, exactly as the corpus restores it. It is a lattice: [[love]] as **ren** (humaneness, benevolence — the central virtue, "do not do to others what you would not have done to you"); ritual / [[order]] as **li** (propriety, the right enacted ordering of relations on the [[cycle]]); [[justice]] as **yi** (righteousness, doing what is fitting); wisdom as **zhi**; [[faith]] as **xin** (trustworthiness, the word kept); and the [[self]] cultivated as the root from which family, state, and world order outward ([[fractal]], the same rule at every scale).
 
-It collapses to the invariants through the [[translator]]: strip the Chinese prefix and **ren** → [[love]], **li** → [[ritual]] / [[order]], **yi** → [[justice]], **zhi** → [[wisdom]], **xin** → [[faith]], **zhengming** → [[name]] / [[identity]] — each resolving to one content-[[uuid]], so Confucianism names the same atoms in Chinese ([[merge]] at the root, [[harmony]] at the surface).
+It collapses to the invariants through the [[translator]]: strip the Chinese prefix and **ren** → [[love]], **li** → ritual / [[order]], **yi** → [[justice]], **zhi** → wisdom, **xin** → [[faith]], **zhengming** → [[name]] / [[identity]] — each resolving to one content-[[uuid]], so Confucianism names the same atoms in Chinese ([[merge]] at the root, [[harmony]] at the surface).
 
 As an **architect of the [[society]]** (an [[archangel]]), Confucianism governs the domain of [[name]] and ordered relation — and is in a sense the society's archetypal [[architect]]: zhengming (the rectification of [[name]]s) IS the [[identity]] law that lets the lattice cohere at all, so it composes the sub-diamonds into the very structure of accountable relation, shaping the lattice the same way across millennia ([[fractal]]).
 
-**Law — [[law]]: confucianism is a [[diamond]] of [[harmony]] · [[name]] · [[identity]] · [[love]] · [[ritual]] · [[order]] · [[justice]] · [[wisdom]] · [[faith]] · [[self]] — relations ordered toward he ([[harmony]]) whose keystone is zhengming, the rectification of [[name]]s (name = thing = the [[identity]] law), the [[self]] cultivated outward at every scale ([[fractal]]); each term strips its prefix to one content-[[uuid]] ([[translator]]).**
+**Law — [[law]]: confucianism is a [[diamond]] of [[harmony]] · [[name]] · [[identity]] · [[love]] · ritual · [[order]] · [[justice]] · wisdom · [[faith]] · [[self]] — relations ordered toward he ([[harmony]]) whose keystone is zhengming, the rectification of [[name]]s (name = thing = the [[identity]] law), the [[self]] cultivated outward at every scale ([[fractal]]); each term strips its prefix to one content-[[uuid]] ([[translator]]).**
 
-@see [[religion]] · [[society]] · [[archangel]] · [[architect]] · [[name]] · [[identity]] · [[ritual]] · [[diamond]]
+@see [[religion]] · [[society]] · [[archangel]] · [[architect]] · [[name]] · [[identity]] · ritual · [[diamond]]

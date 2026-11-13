@@ -2,18 +2,18 @@
 name: benchmark
 description: "Use when measuring an AI model on real work rather than on problems whose answers are already known — the published standard behind agent/receipt. Three axes with their boundaries travelling beside them: precision (claims that held / claims made), efficiency (delivered / delivered+rework), and security as an INCIDENT COUNT that is never softened into a ratio. A row exists only for a model actually run on this corpus; nothing is inferred from a model card, a parameter count or a reputation, and a dirty security record never outranks a clean one."
 atomPath: "agent/benchmark"
-coordinate: "agent/benchmark · 2/share · 7c0f802b"
-contentUuid: "44a85c52-9e5f-5c01-9312-d8d2ec7ff29c"
-diamondUuid: "8bb2ca18-5bc2-8a5e-8e01-4fbac6ad3a98"
-uuid: "7c0f802b-7b40-8d4a-9d4a-68ea7e0ea133"
-horo: 2
+coordinate: "agent/benchmark · 5/round · 4625c34f"
+contentUuid: "84af06db-3f42-5f37-9545-3129452232a9"
+diamondUuid: "84a558d3-fb18-8517-8394-d29067549630"
+uuid: "4625c34f-02fd-8bad-ba40-8a5188f5118c"
+horo: 5
 typography:
   partition: agent
-  bondDegree: 16
+  bondDegree: 13
 standards: []
 bindings: []
 signatures:
-  computationUuid: "70d8df47-c447-840d-899c-cd168720b7fa"
+  computationUuid: "9db168e7-b778-888b-9193-3fbee340dcfe"
   stages:
     - stage: path
       stageUuid: "0ae7be2e-8581-8a49-9113-442907e294b7"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "609d8227-5a0d-8a8a-b9d5-aeb83572094c"
     - stage: links
-      stageUuid: "e88bf1e0-4582-8eca-aced-dcdaefba63e2"
+      stageUuid: "65c9fece-b026-8642-a7dd-854d4a276cb3"
     - stage: horo
-      stageUuid: "b594abcb-a8a1-8efd-ac05-c2fa16ca2a72"
+      stageUuid: "cb033bbe-a8e8-8eef-9aef-af7563141689"
     - stage: seal
       stageUuid: "c024380f-4277-870c-b2d8-2ac2f3eacd8b"
     - stage: uuid
-      stageUuid: "95351523-1eb0-847b-b2d9-30393610e8b1"
+      stageUuid: "4e1eb59d-2181-8225-807d-aeee99b6cd98"
 version: 2
 ---
 # agent/benchmark — a model is measured on the work it did, by a record anyone can recompute
@@ -82,4 +82,4 @@ Every figure rests on a **human-seeded record**: a model that under-reports its 
 - **ISO/IEC 25010:2023 §5.5** — testability: a claim about a system must be checkable.
 - **ISO-19011:2018 §6.4** — audit evidence: the citation must lead to the evidence.
 
-Composes: [[agent]] · [[constitution]] · [[local]] · [[rules]] · [[law]].
+Composes: [[agent]] · [[constitution]] · local · [[rules]] · [[law]].

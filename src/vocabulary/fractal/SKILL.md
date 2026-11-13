@@ -3,17 +3,17 @@ name: fractal
 description: "Use when reasoning about self-similarity in erpax — the same form at every scale (fields→collections→plugins→erpax→agents), the path-as-address law, whole↔part recursion, nested one-word skill folders. Self-similar by design."
 atomPath: "vocabulary/fractal"
 coordinate: "vocabulary/fractal · 4/weave · 68fa4da8"
-contentUuid: "5819b16a-3e78-5882-ab01-684ef58ade1e"
-diamondUuid: "48e1203a-23b9-847e-93f6-1611bab7507d"
+contentUuid: "0e8cc0db-f68b-5a40-8419-cb6538882b9f"
+diamondUuid: "11bff7c3-d2e4-861a-8196-8bc9540ac070"
 uuid: "68fa4da8-d9aa-83e4-8074-2531625bf27a"
 horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 338
+  bondDegree: 311
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8d1844af-0ebb-8680-abbb-1d460c138aca"
+  computationUuid: "39aaedeb-4c91-896a-ada4-415b1ac6f822"
   stages:
     - stage: path
       stageUuid: "4b38b4de-6275-8ba5-ab6f-027db90f7697"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "12927218-7da1-8d14-9ad9-61d9c7651744"
     - stage: horo
-      stageUuid: "151302c3-2bc4-8d63-b8b5-14e8d4f1c06a"
+      stageUuid: "06736011-d1c9-8af1-91cd-b6f853de7ce3"
     - stage: seal
       stageUuid: "8c1adf72-936c-8a38-b371-cd5ffdbb2b10"
     - stage: uuid
-      stageUuid: "4d4ffd2a-9628-8ae2-b39c-ecc3d88ccf0a"
+      stageUuid: "a74021b9-f219-8038-b338-5288c27536ab"
 version: 2
 ---
 # fractal

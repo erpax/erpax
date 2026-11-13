@@ -3,13 +3,13 @@ name: pqc
 description: "Use when reasoning about pqc — returned a whose read , carrying a real algorithm name and a real ISO-8601 timestamp — **and it did not throw**. A caller checking that a signature came back proceeded."
 atomPath: "beyond/pqc"
 coordinate: "beyond/pqc · 2/share · 969e564a"
-contentUuid: "a4c30afd-10ed-5d69-b07f-0279729442c6"
-diamondUuid: "a5615bca-ae11-8aac-b546-a28bde3e6ef4"
+contentUuid: "bc747036-f462-58a9-8b1b-b7d89adbf5a7"
+diamondUuid: "7b51ddfe-973e-8b84-968b-b07ac0a8f99f"
 uuid: "969e564a-9fdb-8fbe-aad3-543043e7ab12"
 horo: 2
 typography:
   partition: beyond
-  bondDegree: 8
+  bondDegree: 15
 standards:
   - "NIST FIPS 203 ML-KEM — Tables 2 and 3, values received verbatim"
   - "NIST FIPS 203 §8 Table 2 (parameters) · Table 3 (sizes) · §7 (categories 1, 3, 5)"
@@ -18,7 +18,7 @@ standards:
   - "NIST-SP-800-63"
 bindings: []
 signatures:
-  computationUuid: "caee6bee-2a77-8680-a6c1-bdf73b99418d"
+  computationUuid: "5bb2c422-3557-84e3-a392-a48c41e1d1f7"
   stages:
     - stage: path
       stageUuid: "f85f7d6a-4941-80ff-a861-f7d878cf2dcf"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "ca5016f1-9691-8a25-ab2f-067d30cdc33b"
     - stage: horo
-      stageUuid: "3c51fabf-7998-8d01-8d9c-6414ee3950d2"
+      stageUuid: "aae116ae-d9cd-841a-abd2-370bfd1c14b7"
     - stage: seal
       stageUuid: "71ae10f2-0dca-8d23-b6e5-b6abc8dfca03"
     - stage: uuid
-      stageUuid: "229df3dc-903a-8870-b2d0-1934d6a14b15"
+      stageUuid: "6d1b1bd3-661a-8526-9f6c-5554887fb065"
 version: 2
 ---
 # beyond/pqc — it returned a signature it had not made

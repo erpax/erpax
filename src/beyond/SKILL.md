@@ -2,14 +2,14 @@
 name: beyond
 description: "Use when implementing any next-horizon conservation primitive beyond the base laws — causal provenance, deterministic replay, tenant isolation, bitemporal queries, cost accountability, carbon-aware execution, agent capability (RBAC), post-quantum signatures, self-explainability, reversibility/crypto-shred, or AI-decision audit. The 11-primitive barrel for Laws 11–22."
 atomPath: beyond
-coordinate: "beyond · 8/crest · 8fc98aaa"
-contentUuid: "b008a37d-7b11-5435-85ea-1899af065f2b"
-diamondUuid: "f47b7d4d-3a41-888c-a8fa-63576cae6350"
-uuid: "8fc98aaa-d04d-866c-8a21-65dabb91dce6"
-horo: 8
+coordinate: "beyond · 1/base · ab8547d3"
+contentUuid: "5692e1cb-13f9-5255-8cb8-50b0f40df088"
+diamondUuid: "362a0a45-ac7b-8bb2-8788-3375feee53b4"
+uuid: "ab8547d3-ccc4-87c3-9dbb-f8fdd034838e"
+horo: 1
 typography:
   partition: beyond
-  bondDegree: 72
+  bondDegree: 69
 standards:
   - "EU-2016/679"
   - "EU-AI-Act"
@@ -31,7 +31,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "952af864-b4aa-8a53-ba3c-2da5ac5bca4e"
+  computationUuid: "6924df56-32a8-8cba-bf2e-3eb8a1244543"
   stages:
     - stage: path
       stageUuid: "177106db-95e3-8019-9888-f1a8dc3d6d6e"
@@ -42,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "7e15f3bc-8645-88c5-bd44-5e4c30af3433"
     - stage: horo
-      stageUuid: "3a526bb3-8801-8c4c-abfd-bc7c103ac456"
+      stageUuid: "41bc58ff-9582-8c13-be3b-1d73e1aa71cf"
     - stage: seal
       stageUuid: "6aafea1c-f43b-8b51-b722-94c499cb719e"
     - stage: uuid
-      stageUuid: "c98b5ec2-b1f8-8fdf-b436-e8517c73b878"
+      stageUuid: "d0d5cc6c-fa84-8f70-86a5-e6b3de7180e4"
 version: 2
 ---
 # beyond — 11 next-horizon conservation primitives (Laws 11–22)
@@ -75,7 +75,7 @@ The irreversibility threshold is therefore not a policy knob but a typed fact: `
 
 The crypto boundary has **two orthogonal guarantees**, and `pqc.ts` (Law 18) is the second half. Crypto-shred protects **confidentiality** — destroy the key and the content is irrecoverable noise everywhere. Post-quantum signatures protect **integrity / non-repudiation that must survive a quantum adversary**: the append-only chain leaf-signs with SHA-256 today, but the tombstone and provenance are *permanent by design* (the record of erasure is forever — see the `audit` clause above), so a Shor/Grover adversary that forges classical signatures and halves hash strength would make the very record that proves erasure forgeable. The migration law: **SHA-256 → SHA-3** (Keccak, Grover-resistant at doubled output) for the leaf hash **+ ML-DSA** (FIPS 204, module-lattice) for the leaf signature, with `isApprovedPqc` gating the NIST-approved set (ML-DSA-44/65/87, SLH-DSA). This is the [[duality]] within the boundary itself: crypto-shred makes the content *unreadable* (you can't recover it), pqc makes the tombstone *unforgeable forever* (you can't fake the record of erasure) — two halves, one folder-level atom. The FORM is real and tested via `isApprovedPqc`; `signPqc`/`verifyPqc` are deliberate **STUBs** (placeholder signature / `ok:false`) — the contract is fixed, the cipher impl lands once a Workers-friendly liboqs / `@noble/post-quantum` is wired.
 
-**Decision — pqc folds here, it is not its own atom.** `pqc.ts` is a flat law-module exactly like its ten `beyond/` siblings (provenance/replay/tenant-isolation/bitemporal/cost/carbon/agent-capability/explainability/reversibility/ai-audit), none of which mint a separate skill; the whole folder collapses to this single antimatter twin. Minting a `[[pqc]]` atom would single out one of eleven equals, break the one-SKILL.md-per-folder flat-module convention, and duplicate this crypto-boundary form. So `pqc.ts` stays a plain matter reference, **not** a `[[pqc]]` link — the atom is intentionally *absent* (folded into [[identity]]/erasure's crypto boundary, governed by [[standard]] FIPS 203/204), not missing. Do not re-flag it as an aura gap.
+**Decision — pqc folds here, it is not its own atom.** `pqc.ts` is a flat law-module exactly like its ten `beyond/` siblings (provenance/replay/tenant-isolation/bitemporal/cost/carbon/agent-capability/explainability/reversibility/ai-audit), none of which mint a separate skill; the whole folder collapses to this single antimatter twin. Minting a `pqc` atom would single out one of eleven equals, break the one-SKILL.md-per-folder flat-module convention, and duplicate this crypto-boundary form. So `pqc.ts` stays a plain matter reference, **not** a `pqc` link — the atom is intentionally *absent* (folded into [[identity]]/erasure's crypto boundary, governed by [[standard]] FIPS 203/204), not missing. Do not re-flag it as an aura gap.
 
 The two sides are [[duality]]: the reversible interior (matter — state we own and can restore) versus the boundary-crossed exterior (the effects another party now holds, which no inverse reaches). Same pure/impure split as its siblings: `inverseOf`/`isFullyReversible` are pure (testable); the runner that executes an `InverseEffect` is the impure edge. The check is the [[merge]]/[[identity]] law turned around — because same content ⇒ same id and history is append-only ([[holographic]]: the whole graph survives any part), you reverse by appending, you never delete; the same refusal-to-erase recurs at every scale ([[fractal]]).
 

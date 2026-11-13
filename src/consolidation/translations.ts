@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one consolidation — the singular model of the consolidations collection (the plural store); the combination of multiple entities figures into one set.",
-    "uuid": "2f936fa7-9a03-8a0b-892e-8a0c7340c38c",
+    "uuid": "194a8617-d0d9-8ca0-a989-f46440e52327",
     "words": [
       "use",
       "when",

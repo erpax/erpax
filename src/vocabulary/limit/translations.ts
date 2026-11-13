@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "limit",
-    "uuid": "330ff85e-831c-8c08-bd52-09f4ea0e7869",
+    "uuid": "7b671754-b792-8a2d-a607-19b8ba4eb890",
     "words": [
       "limit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when mapping the boundary of erpax — what it CAN do (the provable: addressable, balanced, conserved FORM) vs what it CANNOT do from within (truth, judgment, finality, true-erasure, prevention, the subjective — the Gödel boundary). The live finder is services/architecture-invariants; the hard limits are filled by proving the unprovable — supplying the missing 1/3 from OUTSIDE the formalism.",
-    "uuid": "3fd85924-a1c9-88ab-b41b-e07cbe3228a4",
+    "uuid": "03e57ee8-3d60-80a1-82fe-6676a69a0bd4",
     "words": [
       "use",
       "when",

@@ -2,41 +2,41 @@
 name: reservation
 description: "Use when reasoning about reservation — Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails"
 atomPath: "vocabulary/reservation"
-coordinate: "vocabulary/reservation · 7/descent · f3fc9d13"
-contentUuid: "a82fe66f-7bab-5add-b98c-1e55ea9f67ef"
-diamondUuid: "e0d8e754-f01d-8908-a0f9-17fd79dbb72a"
-uuid: "f3fc9d13-b791-82c9-9790-ba8f8a030e43"
-horo: 7
+coordinate: "vocabulary/reservation · 8/crest · eb3ab490"
+contentUuid: "6ef7f948-630c-5eb5-b619-5d0b5fa29452"
+diamondUuid: "2d5f0d74-b51a-893c-9700-e6b7fb4a8c8d"
+uuid: "eb3ab490-22eb-87c1-bdd3-ef6d59e94e7d"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 62
+  bondDegree: 50
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "04736fb6-3279-8ab5-8fc5-ad7802ac2552"
+  computationUuid: "9e5fab2f-2fb3-8fb9-8cf1-62f60860d6b5"
   stages:
     - stage: path
       stageUuid: "9f52e93a-9e6c-89fa-becd-3d63fbf7d60e"
     - stage: trinity
       stageUuid: "6fdd5414-9496-8fc3-8467-fc604528151f"
     - stage: boundary
-      stageUuid: "806f91e1-94b1-83c2-adf9-1dc7e260ecb0"
+      stageUuid: "ea369a60-db74-8c13-8931-9d5b18769246"
     - stage: links
-      stageUuid: "17ce8ae8-7dc9-8937-8848-ac15d2c8facf"
+      stageUuid: "18701172-1945-83b9-82aa-ba27cad7ba2d"
     - stage: horo
-      stageUuid: "e2bbc866-9024-840d-996a-b16e9babaee7"
+      stageUuid: "e2213a85-7918-8a47-8128-04dc8065bab6"
     - stage: seal
       stageUuid: "7dadd38e-1cc7-8203-b962-d32c0f94ff04"
     - stage: uuid
-      stageUuid: "8d1ac59a-42f9-8163-958d-b895580ef844"
+      stageUuid: "19482583-643b-8c82-85e8-0538ad7fc6ac"
 version: 2
 ---
 # reservation
 
 Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, restaurant reservations, flights, or rental cars, use Offer.
 
-Entangled with — [[boat]] · [[bus]] · [[event]] · [[flight]] · [[food]] · [[establishment]] · [[lodging]] · [[rental]] · [[car]] · [[package]] · [[status]] · [[type]] · [[taxi]] · [[train]] · [[id]] · [[sub]]
+Entangled with — [[boat]] · [[bus]] · [[event]] · [[flight]] · food · [[establishment]] · [[lodging]] · [[rental]] · [[car]] · [[package]] · [[status]] · [[type]] · taxi · [[train]] · [[id]] · sub
 
 Attested in schema.org — BoatReservation · BusReservation · EventReservation · FlightReservation · FoodEstablishmentReservation · LodgingReservation · RentalCarReservation · Reservation · ReservationPackage · ReservationStatusType · TaxiReservation · TrainReservation · reservationFor · reservationId · reservationStatus · subReservation
 

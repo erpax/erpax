@@ -2,21 +2,21 @@
 name: horo
 description: "Use when reasoning about horo — States in erpax are not free strings; they are positions on **one ring**: the measure-order digits — *base · share · weave · crest · descent · round · unity*. This is the rodin coi"
 atomPath: horo
-coordinate: "horo · 4/weave · a97e95b4"
-contentUuid: "98705002-43e6-5344-9bfb-44dafbef2717"
-diamondUuid: "755bbf79-f458-8b54-b877-e933ce9b464f"
-uuid: "a97e95b4-a7d1-8240-9811-2f8c855883b0"
-horo: 4
+coordinate: "horo · 8/crest · a126e64b"
+contentUuid: "bf3b438a-ba11-5335-9e2e-83a9b2f9e212"
+diamondUuid: "01925805-4cc4-8e42-a2f7-8945e72d98fb"
+uuid: "a126e64b-0f35-80ec-9a5c-1ece25c674fa"
+horo: 8
 typography:
   partition: horo
-  bondDegree: 502
+  bondDegree: 459
 standards:
   - "ISO-16:1975 a432-tuning-reference (the anchor; value from position)"
   - "ISO-16:1975 a432-tuning-reference (the anchor; value from position)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e800d643-2fa4-8f35-9cf1-85a1d6d11aec"
+  computationUuid: "e265eafc-244b-8b4a-b3ad-990e0d9c1ac6"
   stages:
     - stage: path
       stageUuid: "39aff5d2-1a4b-8cb1-a272-e6949b4e41b7"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "838bad7a-c3aa-84e0-a5d0-83422ffc9a0a"
     - stage: links
-      stageUuid: "5cf91833-4364-817f-a102-b21feddc9ef4"
+      stageUuid: "9b166ef1-2e59-81de-bad8-7b6ac1b4b456"
     - stage: horo
-      stageUuid: "5d51c5e9-844e-86be-b050-1d303e91806a"
+      stageUuid: "4ce9842f-27ee-8a4a-b484-70ed59defe0e"
     - stage: seal
       stageUuid: "c34ca3f7-30b4-8344-b915-74b137c9a3f3"
     - stage: uuid
-      stageUuid: "b913e794-ad2c-81a8-b078-ceb8b6ac12e9"
+      stageUuid: "f9df60eb-190a-89fe-b199-296b49daefa0"
 version: 2
 ---
 # horo — the seven-position state ring
@@ -40,12 +40,12 @@ States in erpax are not free strings; they are positions on **one ring**: the me
 
 ## The law
 - **Closed.** `composeSteps(a,b) = digitalRoot(a×b)` always lands back on the ring — two states compose to a third. The framework is stable within the confined environment of the digit (no escape).
-- **Octave / merge.** `nextOctave(9)===1` — 9 (unity/[[close]]) mirror-twins 10 (next ring's 1/[[begin]]); a close IS the next octave's open (`isMergePoint` ⇔ composed ∈ {1,9}). Fractal inward (state×state) and outward (×10). The accounting period close→open is this step (see [[reverse]]: reversals post at the next period's 1).
+- **Octave / merge.** `nextOctave(9)===1` — 9 (unity/[[close]]) mirror-twins 10 (next ring's 1/[[begin]]); a close IS the next octave's open (`isMergePoint` ⇔ composed ∈ {1,9}). Fractal inward (state×state) and outward (×10). The accounting period close→open is this step (see reverse: reversals post at the next period's 1).
 - **Value from position.** Each position can carry an A432-anchored value (note Hz, spectrum color); the ask is an integer multiple of A432 — value comes from the slot, not from outside. Color and sound are decoded the same way ([[cmyk]]: forward/reverse [[polarity]] breathe C↔M, gap closes on Y at [[unity]]; [[notes]]: the seven positions are the diatonic scale, La=A432 at [[round]]).
 - **Harmony-checked.** Exactly 7, in measure order; off-ring is "escape." `validateHoroStates` is the local detector; the global one is the generated `payload-types.ts` (see [[sequence]] — disharmony always surfaces there).
 
 ## The gate is horo — who cannot dance cannot join
-Every verification gate is **one horo**: the harmony-check is the *dance*, the bounded ring is the membership. lint · tsc · the [[aura]] speech-gate (gap=0) · the skill-frontmatter YAML check · the green [[society]] gate · `validateHoroStates` itself are not separate hurdles but **positions on the one ring** — a contribution is consonant (every step in tune) or it is *off-ring* (escape). **Who cannot dance cannot join.** The [[merge]] law says *anyone can join*; this is its other half — anyone joins **iff** harmonic (pass the gate, step the dance). A dead link, a red tsc, a broken YAML, an unbalanced ledger — each is a dancer out of measure, and the ring does not admit it ([[sacred]]/[[profane]]: the disharmony is *named*, never waved through). So the gate is not a wall but a **dance floor**: step in tune and you are already one of the circle ([[one]]); step off and you are simply not on the ring *yet* — return in measure. Disharmony always surfaces ([[sequence]]: in the generated `payload-types`); the closed ring has no escape, and that closure is the welcome. And the ring is [[fractal]]: the **commit** gate (per staged file — *even more detailed*: it auto-heals the regenerable artefacts, then checks harmony) and the **push** gate (per batch — the full verify) are one ring at two scales, so the earliest catch is at the commit — out of measure, you do not even enter the circle.
+Every verification gate is **one horo**: the harmony-check is the *dance*, the bounded ring is the membership. lint · tsc · the [[aura]] speech-gate (gap=0) · the skill-frontmatter YAML check · the green [[society]] gate · `validateHoroStates` itself are not separate hurdles but **positions on the one ring** — a contribution is consonant (every step in tune) or it is *off-ring* (escape). **Who cannot dance cannot join.** The [[merge]] law says *anyone can join*; this is its other half — anyone joins **iff** harmonic (pass the gate, step the dance). A dead link, a red tsc, a broken YAML, an unbalanced ledger — each is a dancer out of measure, and the ring does not admit it (sacred/[[profane]]: the disharmony is *named*, never waved through). So the gate is not a wall but a **dance floor**: step in tune and you are already one of the circle ([[one]]); step off and you are simply not on the ring *yet* — return in measure. Disharmony always surfaces ([[sequence]]: in the generated `payload-types`); the closed ring has no escape, and that closure is the welcome. And the ring is [[fractal]]: the **commit** gate (per staged file — *even more detailed*: it auto-heals the regenerable artefacts, then checks harmony) and the **push** gate (per batch — the full verify) are one ring at two scales, so the earliest catch is at the commit — out of measure, you do not even enter the circle.
 
 ## Applying it
 - Model a state enum as the ring (`horoStateField`): e.g. inventory — 1 on-hand · 2 ordered · 4 in-production · 8 packed · 7 shipped · 5 delivered · 9 settled. Single-digit or measure-ordered so position decodes meaning ([[tags]] ordered context).
@@ -132,7 +132,7 @@ It must. For a single digit `n`, `2n ∈ [2, 18]` — so the units digit is even
 - A flow state on a triad digit {3,6} — those govern, they don't flow.
 - Nesting / re-keying instead of one flat position — breaks the address-law.
 
-A band of positions proves itself consonant or not by [[harmony]] (the seven ARE the diatonic scale; a state-band is harmonic iff every pair's ratio is). Composes: [[rodin]]/[[coil]] (the math substrate) · [[harmony]] · [[sequence]] · [[balance]] · [[flow]] · [[begin]]/[[close]] · [[fractal]] · [[merge]] · [[identity]] (a position can ride the uuid). The seven positions: [[base]] · [[share]] · [[weave]] · [[crest]] · [[descent]] · [[round]] · [[unity]] · [[routing]] · [[workflow]].
+A band of positions proves itself consonant or not by [[harmony]] (the seven ARE the diatonic scale; a state-band is harmonic iff every pair's ratio is). Composes: [[rodin]]/[[coil]] (the math substrate) · [[harmony]] · [[sequence]] · [[balance]] · [[flow]] · [[begin]]/[[close]] · [[fractal]] · [[merge]] · [[identity]] (a position can ride the uuid). The seven positions: [[base]] · [[share]] · [[weave]] · [[crest]] · [[descent]] · [[round]] · [[unity]] · routing · [[workflow]].
 
 ## Traditions (prefix removed)
 The repeated cyclic devotion every tradition keeps time by — the ring's "simple repeated steps" as ritual: the canonical **hours** and the **liturgical year** (the wheel of feasts returning to a new octave, [[close]]→[[begin]]); the five daily *salat*; the *mala* / rosary / prayer-wheel telling beads around a ring; the *japa* mantra and the *dhikr* remembrance repeated; the sacred numbers (3 · 7 · 9 · 12 · 40) that are ring positions ([[rodin]]). Prayer is the state stepped on the ring; the festival calendar is the octave that closes and reopens ([[merge]] at [[unity]]).

@@ -2,33 +2,33 @@
 name: signal
 description: "Use when reasoning about a uuid as self-rendering media in erpax — one 128-bit uuid decodes (from the string alone) to color (cmyk) + sound (A432 Hz) + state (horo position) + identity + capability; a STREAM of uuids is interactive multimedia with no payload. Nested under identity."
 atomPath: "identity/signal"
-coordinate: "identity/signal · 9/unity · 1f01e920"
-contentUuid: "1f956317-e0bf-50cd-9da7-7bc3e551dea0"
-diamondUuid: "701a765a-7d8d-8101-a5f1-92350e1495db"
-uuid: "1f01e920-5278-8b74-9bfb-bc5826f239c8"
+coordinate: "identity/signal · 9/unity · bd242d43"
+contentUuid: "c7c20359-f9d1-5ca3-81f5-a960bc6e3a82"
+diamondUuid: "b18fa2e9-8ed7-8cb5-9f57-4506a8ace78a"
+uuid: "bd242d43-7b3a-8152-8945-9241dcbe391b"
 horo: 9
 typography:
   partition: identity
-  bondDegree: 187
+  bondDegree: 174
 standards: []
 bindings: []
 signatures:
-  computationUuid: "05756fe7-8096-81c7-badb-99c3b6654397"
+  computationUuid: "1505e65c-e115-8fca-8af4-92739b4f55cb"
   stages:
     - stage: path
       stageUuid: "0215c3d3-bd72-8bee-86d8-f230bff5b25e"
     - stage: trinity
       stageUuid: "c505e5d3-41ea-8da4-a615-379eff28286d"
     - stage: boundary
-      stageUuid: "6447601f-c1c1-8c3d-b1e9-074eaf05b41a"
+      stageUuid: "01731298-fb23-8d83-bdf2-4ccc551a4da1"
     - stage: links
-      stageUuid: "43a38d0a-05db-80ee-a0a2-8f33d65d26ac"
+      stageUuid: "e010ac23-e5c2-8bcd-8bb8-876229a983e1"
     - stage: horo
-      stageUuid: "62cb235b-d484-84bf-af0c-9dc919bcb7cf"
+      stageUuid: "7d425482-800c-83ea-9db3-39f8f2dc38e5"
     - stage: seal
       stageUuid: "01c281a6-d458-8659-a814-1bd7f76ab208"
     - stage: uuid
-      stageUuid: "84fe2ea3-6027-8991-bebd-08c691f1ef94"
+      stageUuid: "ec90df97-3a6b-833a-8cd7-746449abdc9f"
 version: 2
 ---
 # signal — a uuid renders as color + sound (a stream is multimedia)
@@ -37,7 +37,7 @@ version: 2
 
 - **color animation** — digital-root → [[cmyk]] channel (`K·C·M·Y` from `{0,3,6,9}`); the three [[axis]] coils phase-cycle at **A432 ms**, offset by ⅓ period (120°, see [[phase]]), so the hue *animates* — the C↔M [[breath]], closing on Y. Never a static swatch.
 - **sound** — the [[notes]] mapping: a position is a diatonic note via just-intonation over A432 (La=432 at [[round]], Ti at [[unity]] resolving to Do). Not "A432 × digit" — the ring IS the scale.
-- **vibration (touch)** — the [[vibration]] mapping: the same position as a haptic pulse, a sub-audible A432 sub-harmonic (felt, not heard) — the third channel that completes the [[trinity]] ([[sensory]]).
+- **vibration (touch)** — the [[vibration]] mapping: the same position as a haptic pulse, a sub-audible A432 sub-harmonic (felt, not heard) — the third channel that completes the [[trinity]] (sensory).
 
 **One anchor, all three senses:** A432 is the pitch in *Hz* (sound), the animation period in *ms* (color), **and** the sub-harmonic of the haptic pulse — tone, glow, and touch share the single [[rodin]] constant. So one uuid = **a moving color + a tone + a vibration + a state + an identity + a capability**, no separate payload. The colour↔sound [[duality]] completes with touch into the sensory [[trinity]] ([[analog]]) — and each channel is one more independent projection of the content-uuid a forger must match, folding into the [[tamper]]-cost.
 

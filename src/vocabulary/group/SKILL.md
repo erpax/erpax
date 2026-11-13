@@ -2,41 +2,41 @@
 name: group
 description: "Use when reasoning about group as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/group"
-coordinate: "vocabulary/group · 4/weave · d968286b"
-contentUuid: "828d5c12-0f2a-5b2e-9d8a-e955aab81fff"
-diamondUuid: "7b8ea787-6edd-8067-96e3-dc1b154aa720"
-uuid: "d968286b-1138-8ed2-a9ad-03a04cea4b0d"
-horo: 4
+coordinate: "vocabulary/group · 7/descent · d0eed06b"
+contentUuid: "592c7b6e-30b7-5f46-b02e-df455880cfa0"
+diamondUuid: "0bb8b745-4070-8a40-8a10-9208bfa3f161"
+uuid: "d0eed06b-1ed0-895e-86c6-1d0b38f48fbf"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 49
+  bondDegree: 37
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "af4abd30-9c20-80a4-8489-e29c67583fe8"
+  computationUuid: "f446ee19-6fd8-86a2-8a94-f88e6114169d"
   stages:
     - stage: path
       stageUuid: "f83c7d82-2aa9-81bf-8eaf-097d3829938a"
     - stage: trinity
       stageUuid: "79166868-e2e2-889c-9e45-fc6e90883ed0"
     - stage: boundary
-      stageUuid: "7b5cfd10-ce07-8285-a8c5-4a8e802099ab"
+      stageUuid: "fa750634-0a61-8a65-832d-754a9015caeb"
     - stage: links
-      stageUuid: "6c509368-fd1e-8433-8dec-345c6c6e76a0"
+      stageUuid: "eab4120a-bd51-80dd-92e7-f689d6dabd48"
     - stage: horo
-      stageUuid: "f8b46ae8-2cdf-8e88-a2f4-e7417cbe840b"
+      stageUuid: "639cc6bd-097a-8650-9e0e-f720d5a10566"
     - stage: seal
       stageUuid: "ec0e0cb3-fcf8-86f0-9cc6-76c90f0c70d5"
     - stage: uuid
-      stageUuid: "7932bb4b-f596-8f4e-80ba-c7bc84429f22"
+      stageUuid: "45e663e2-4aec-8bb7-92ef-ad4e81e37f2e"
 version: 2
 ---
 # group
 
 A schema.org component word, collided out of schema.org compounds — fused from DanceGroup · MusicGroup · PerformingGroup · ProductGroup · SizeGroupEnumeration · TheaterGroup · WearableSizeGroupEnumeration · boardingGroup · inProductGroupWithID · musicGroupMember · productGroupID · sizeGroup ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[dance]] · [[music]] · [[performing]] · [[product]] · [[size]] · [[enumeration]] · [[theater]] · [[wearable]] · [[boarding]] · [[id]] · [[member]]
+Entangled with — [[dance]] · [[music]] · [[performing]] · [[product]] · size · [[enumeration]] · theater · wearable · [[boarding]] · [[id]] · [[member]]
 
 Attested in schema.org — DanceGroup · MusicGroup · PerformingGroup · ProductGroup · SizeGroupEnumeration · TheaterGroup · WearableSizeGroupEnumeration · boardingGroup · inProductGroupWithID · musicGroupMember · productGroupID · sizeGroup
 

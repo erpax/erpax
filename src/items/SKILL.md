@@ -3,13 +3,13 @@ name: items
 description: "Use when managing the product/service catalogue — code, SKU, GTIN barcode, pricing, VAT rate, inventory quantity, GL posting; EN-16931 BG-31 item-information, UNSPSC classification. The items collection."
 atomPath: items
 coordinate: "items · 7/descent · 4b76b806"
-contentUuid: "46dca911-c291-5685-a3b4-c3592fdce549"
+contentUuid: "7430523c-6912-59bb-aea7-c38bd9aa0f3c"
 diamondUuid: "e0f2d3df-fd1d-8212-a4b7-144a49fb3832"
 uuid: "4b76b806-d01e-8c7f-90d7-138284f4cee4"
 horo: 7
 typography:
   partition: items
-  bondDegree: 116
+  bondDegree: 115
 standards:
   - "EN-16931:2017 §BG-31 item-information"
   - "EN-16931:2017 §BG-31 item-information`"

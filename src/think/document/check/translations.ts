@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a document must meet a definition before it is saved — the lead definition as a schema, run by Payload in a before-validation hook on pages; the hook records in the request's hook context that the check ran, so later hooks rely on it and none repeats it.",
-    "uuid": "677ffa15-4246-8a8d-a7fa-8c5bdfe8eede",
+    "uuid": "67ab6d4f-c192-896d-9f01-65fa33a1b352",
     "words": [
       "use",
       "when",

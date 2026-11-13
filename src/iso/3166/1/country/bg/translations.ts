@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about bg — Bulgaria (BG) — canonical country bundle.",
-    "uuid": "f04d584e-b4c9-8b1c-a7bc-4998c56f90f0",
+    "uuid": "408b600a-20a7-8ebb-b393-063bf8cdf168",
     "words": [
       "use",
       "when",

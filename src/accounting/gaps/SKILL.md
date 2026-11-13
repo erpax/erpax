@@ -3,13 +3,13 @@ name: gaps
 description: "Use when scanning the corpus's own accounting for entropy gaps — waveAccountingGapViolations walks the README model in OOM-safe horo waves; fixGapsOnP0 applies P0 fixes. Corpus SELF-accounting dev tooling, nested off the mountable @erpax/accounting face."
 atomPath: "accounting/gaps"
 coordinate: "accounting/gaps · 7/descent · e134102b"
-contentUuid: "8533bb95-d8cb-5294-bc58-b5213c11c5a5"
+contentUuid: "a61541ed-7902-5459-9e08-2ae3f4c7e2b8"
 diamondUuid: "5c85ecd5-7b2e-8149-ac30-8dae68f4a8a2"
 uuid: "e134102b-5e36-8f40-b89f-964af1e4c7ca"
 horo: 7
 typography:
   partition: accounting
-  bondDegree: 25
+  bondDegree: 23
 standards: []
 bindings: []
 signatures:

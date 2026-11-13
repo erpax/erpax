@@ -2,41 +2,41 @@
 name: civic
 description: "Use when reasoning about civic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/civic"
-coordinate: "vocabulary/civic · 8/crest · 51406a93"
-contentUuid: "61f82d54-598e-59ae-b472-a34fca73ffa3"
-diamondUuid: "90c8585b-6243-83b2-a7ed-b885dbbc88b8"
-uuid: "51406a93-db1e-8f81-b7e0-a6409d43b5dc"
-horo: 8
+coordinate: "vocabulary/civic · 5/round · 8a442aa4"
+contentUuid: "6d08eaca-b398-5f74-8e07-ba89de098dd9"
+diamondUuid: "90bfc41f-d83d-8d1c-9467-def0a769c7f0"
+uuid: "8a442aa4-becb-8d2f-94a1-62ce2ed9bd9b"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 16
+  bondDegree: 12
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d1dc096e-f485-8ef7-a39d-a41d8fc7b9a7"
+  computationUuid: "7fa921bd-a2f0-8632-a09d-fea27570aed2"
   stages:
     - stage: path
       stageUuid: "749ce941-31dc-817c-a52c-0d42c4b80c84"
     - stage: trinity
       stageUuid: "46e4bcc1-3add-847c-b1a5-181873e43d13"
     - stage: boundary
-      stageUuid: "5b4e2523-2375-8712-b0f9-a91d2779b8e2"
+      stageUuid: "e10a09d3-cbd3-8054-a71e-ee9dc98b0d4c"
     - stage: links
-      stageUuid: "4d020b5a-4e29-8c24-8da7-2e247da0e19a"
+      stageUuid: "f703911d-226d-8a93-8736-204b5ce2e71c"
     - stage: horo
-      stageUuid: "b8fb2630-24fc-8b54-8585-9a35972893b0"
+      stageUuid: "7324108b-52b3-8c7f-a9a7-cb47d31593ff"
     - stage: seal
       stageUuid: "d699ec37-5ad2-84a7-b3bf-9cfaad8b978a"
     - stage: uuid
-      stageUuid: "604b1059-229c-8288-b6c2-c72b6739c7b8"
+      stageUuid: "58ed2dac-4c64-8cab-9212-148c28980e26"
 version: 2
 ---
 # civic
 
 A schema.org component word, collided out of schema.org compounds — fused from CivicStructure ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[structure]]
+Entangled with — structure
 
 Attested in schema.org — CivicStructure
 

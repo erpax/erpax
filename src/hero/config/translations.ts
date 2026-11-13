@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about config — The Payload field configuration for a page hero: , , , .",
-    "uuid": "20a4cfee-4004-88d5-a25e-ba51470c9b88",
+    "uuid": "7b9a4d45-d6c6-8243-a768-383531874207",
     "words": [
       "use",
       "when",

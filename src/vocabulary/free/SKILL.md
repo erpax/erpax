@@ -2,41 +2,41 @@
 name: free
 description: "Use when reasoning about free — A flag to signal that the item, event, or place is accessible for free."
 atomPath: "vocabulary/free"
-coordinate: "vocabulary/free · 8/crest · 1f81cfb3"
-contentUuid: "2fec6329-3d90-5e18-acf9-c174240010f0"
-diamondUuid: "a621707a-b85b-8732-a69c-cea43e4e2be6"
-uuid: "1f81cfb3-38e8-8b9c-ad41-66e4967f9354"
-horo: 8
+coordinate: "vocabulary/free · 1/base · 19f8ee18"
+contentUuid: "3c1aed51-a3cd-5994-ae45-077fb037a1bb"
+diamondUuid: "5d063397-1da6-8fb5-a4ad-5033a6874874"
+uuid: "19f8ee18-c7eb-8a92-8a76-f67f77efcc16"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 15
+  bondDegree: 11
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1a57bcaf-5ee4-8ff0-8e17-a9fd2f5a4fa7"
+  computationUuid: "cce0681a-985f-873c-9544-690c878a59e1"
   stages:
     - stage: path
       stageUuid: "bc2a2724-2942-8000-889a-6b4cf84abf9c"
     - stage: trinity
       stageUuid: "fde5ffc2-2209-8ba8-9f0c-8ccceaedaf96"
     - stage: boundary
-      stageUuid: "6e85b621-6584-84f1-a0f7-7c631553e03c"
+      stageUuid: "0cd51d74-e57e-867a-b18d-7d6fb3959c67"
     - stage: links
-      stageUuid: "6cb6af44-edec-834e-81fd-06c5f5177574"
+      stageUuid: "48fad027-5f15-83c9-80a5-5c943ca3b3ff"
     - stage: horo
-      stageUuid: "30329ec8-00a1-8e26-a64d-8d47964e53d4"
+      stageUuid: "38e03053-8899-861f-a972-c70f6a2e0b6d"
     - stage: seal
       stageUuid: "76a67911-aa48-8294-8d18-b9c23adb33af"
     - stage: uuid
-      stageUuid: "f3ebd6b0-493f-8d5b-9743-bbb82c6a4916"
+      stageUuid: "6e2bf719-8232-83c2-92c3-c38c993274c5"
 version: 2
 ---
 # free
 
 A flag to signal that the item, event, or place is accessible for free.
 
-Entangled with — [[shipping]] · [[threshold]] · [[accessible]]
+Entangled with — shipping · [[threshold]] · [[accessible]]
 
 Attested in schema.org — free · freeShippingThreshold · isAccessibleForFree
 

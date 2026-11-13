@@ -2,39 +2,39 @@
 name: classification
 description: Use when modelling one classification — the singular model of the classifications collection (the plural store); the assignment of a thing to a category within a scheme.
 atomPath: "vocabulary/classification"
-coordinate: "vocabulary/classification · 7/descent · f0cb7f35"
-contentUuid: "115b939c-a7ff-5567-b30e-8de772cc9536"
-diamondUuid: "05d97144-7416-81f5-90b1-4b1334246e5b"
-uuid: "f0cb7f35-3193-8df2-8f97-f66117305c54"
-horo: 7
+coordinate: "vocabulary/classification · 8/crest · f5636791"
+contentUuid: "3e751ad5-6e45-5868-84c1-590d226fe92f"
+diamondUuid: "2498917a-b348-87f9-b4a8-c6b1786c499f"
+uuid: "f5636791-40a5-89db-b317-721a230541f5"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 12
+  bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "943395ff-9bf6-8121-96cb-1b930bc4d6a1"
+  computationUuid: "000abba3-89d9-86f0-87fe-345f7d49ed96"
   stages:
     - stage: path
       stageUuid: "691a7e21-2ea4-8817-bcd6-17872b9aa6e5"
     - stage: trinity
       stageUuid: "f786e82b-37c5-8b79-a79f-429a4a207fa0"
     - stage: boundary
-      stageUuid: "39512899-7c24-8117-a3d7-bac1edf7e6fd"
+      stageUuid: "1ac84f1f-be79-8317-b6b4-5faacd291a22"
     - stage: links
-      stageUuid: "8be8fe6b-24b1-80a5-8712-25edfe819d8e"
+      stageUuid: "32a80800-9230-8f32-aa8a-d8006c5f197e"
     - stage: horo
-      stageUuid: "5bd2211d-6744-8024-b341-37d1698b9301"
+      stageUuid: "385a79a0-8e6a-8326-9d49-8f290adf873c"
     - stage: seal
       stageUuid: "4829c1b2-54ec-85c2-a0c5-4c522035637a"
     - stage: uuid
-      stageUuid: "77147c6c-86b3-8ee0-bbb4-f35a1d234bd7"
+      stageUuid: "50466b23-8e66-8224-bb46-b900ff118520"
 version: 2
 ---
 # classification — the model of one [[classifications]] row
 
 The assignment of a thing to a category within a scheme. The singular model whose plural store is the [[classifications]] collection ([[balance]]: every collection has its model).
 
-Composes [[classifications]] · [[taxonomy]] · [[balance]].
+Composes [[classifications]] · taxonomy · [[balance]].
 
 **Law — [[law]]: a classification assigns a thing to a category within one scheme — the scheme is named, so the same thing may hold many classifications without any of them claiming to be the only truth.**

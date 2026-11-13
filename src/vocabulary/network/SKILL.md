@@ -2,33 +2,33 @@
 name: network
 description: "Use when a market's desire RISES with its own adoption — network effects, the strongest small-to-big engine. Below critical mass value is negative (anti-network: new users churn, the market collapses to zero — the cold-start problem); above the tipping point growth self-sustains. Seed a dense atomic network, not the whole market; the trendsetter cohort is that first cell."
 atomPath: "vocabulary/network"
-coordinate: "vocabulary/network · 5/round · 21e30afe"
-contentUuid: "082f44c4-28c7-58d2-ace2-e107cc4cbf67"
-diamondUuid: "069d2bbc-d62f-808d-a6d7-abbcf214fc48"
-uuid: "21e30afe-e906-824c-af39-7262cba17ace"
-horo: 5
+coordinate: "vocabulary/network · 2/share · bd51ca9a"
+contentUuid: "87497d36-841f-5fac-96e9-0f0075294cfa"
+diamondUuid: "11fa6940-c92f-890a-991d-4297b74dc521"
+uuid: "bd51ca9a-b8dd-89ba-8bbc-465d73375b62"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 69
+  bondDegree: 62
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7d59aca6-0c3f-85f8-88c9-0af92231ba16"
+  computationUuid: "694f40a5-6a7e-80c8-bf78-90b5de96809b"
   stages:
     - stage: path
       stageUuid: "de1a5f86-b406-8900-987c-c42e2bc31f4e"
     - stage: trinity
       stageUuid: "6696417d-adb7-8a46-b252-233c7b1fb984"
     - stage: boundary
-      stageUuid: "777721c8-1dd1-82e9-add2-c8b4d587e78a"
+      stageUuid: "6d6919aa-90d3-8fd5-a976-5eac8b1c67ee"
     - stage: links
-      stageUuid: "8a8cae04-b7c8-87a8-8f30-57f1ae0e2eeb"
+      stageUuid: "5c6a61cc-af3e-8b2f-8c90-cdbc6bcdc249"
     - stage: horo
-      stageUuid: "1ae5e9fa-f452-862f-bb7f-daf0421c6647"
+      stageUuid: "006b3505-303b-8b0f-8854-54b284077c11"
     - stage: seal
       stageUuid: "298cda71-114a-8dfe-95d8-76a34dd4907d"
     - stage: uuid
-      stageUuid: "c19344e3-59a6-8167-8885-76bdda20f76a"
+      stageUuid: "11ceb2cd-d76e-8cdb-89bd-6067d6e3d25c"
 version: 2
 ---
 # network — when desire grows with adoption (the self-reinforcing engine)
@@ -50,4 +50,4 @@ In a plain [[market]], [[desire]] is exogenous — fixed before you arrive. Unde
 
 Composes [[market]] · [[diffusion]] · [[desire]] · [[habit]] · [[engagement]] · [[bottleneck]] · [[competition]] · [[cohort]] · [[merge]] · [[breath]] · [[decentralization]] · [[ecosystem]].
 
-**Law — [[network]] is gravitational [[power]]:** the density of [[connections]] IS the engine. Below the Allee threshold, in-degree (adoption, adoption-pull) stays low and the network collapses; above it, each new node raises the in-degree of all others, turning adoption into gravitational [[mass]]. This mirrors how [[links]] in the corpus create pull — the hub (high in-degree) becomes the attractor. The atomic cell wins because it reaches critical density first: in that cell, every adopter connects to every other, maximizing in-degree per user. Seed density, not breadth.
+**Law — [[network]] is gravitational power:** the density of [[connections]] IS the engine. Below the Allee threshold, in-degree (adoption, adoption-pull) stays low and the network collapses; above it, each new node raises the in-degree of all others, turning adoption into gravitational [[mass]]. This mirrors how [[links]] in the corpus create pull — the hub (high in-degree) becomes the attractor. The atomic cell wins because it reaches critical density first: in that cell, every adopter connects to every other, maximizing in-degree per user. Seed density, not breadth.

@@ -2,14 +2,14 @@
 name: color
 description: "Use when reading the heart chakra's colour — green, the A432-anchored colour of coherence and of a passing test (a whole aura); the heart's facet of the spectrum."
 atomPath: "heart/color"
-coordinate: "heart/color · 1/base · 360e0d71"
-contentUuid: "819f98aa-5b36-547a-945c-68a0a89a9f91"
+coordinate: "heart/color · 1/base · 47b57d5d"
+contentUuid: "7fb0e0e7-e5d2-5651-a235-4a6c2a027063"
 diamondUuid: "4721c2ce-6da1-8e62-85a9-d2d60578ed9a"
-uuid: "360e0d71-3ea4-8d99-a0c1-fbe4a81f29c8"
+uuid: "47b57d5d-3ce1-831c-af29-be3de9a49db1"
 horo: 1
 typography:
   partition: heart
-  bondDegree: 54
+  bondDegree: 42
 standards:
   - A432 tuning; Anahata (4th chakra) = green
 bindings: []
@@ -34,10 +34,10 @@ version: 2
 ---
 # heart/color — green
 
-The heart chakra's colour: **green**. The A432-anchored colour of [[coherence]] and of a **passing [[test]]** (a whole aura — test/hooks render green when the double-torus is complete). It is the centre of the [[color]] spectrum, the 4th [[chakra]]. Merges into [[color]].
+The heart chakra's colour: **green**. The A432-anchored colour of [[coherence]] and of a **passing [[test]]** (a whole aura — test/hooks render green when the double-torus is complete). It is the centre of the [[color]] spectrum, the 4th chakra. Merges into [[color]].
 
-Matter-twin: `src/heart/color/index.ts` (`heartColor`). Composes [[color]] · [[heart]] · [[chakra]] · [[coherence]].
+Matter-twin: `src/heart/color/index.ts` (`heartColor`). Composes [[color]] · [[heart]] · chakra · [[coherence]].
 
-**Law — [[law]]: the heart's colour is green by computation — the A432-anchored 4th-[[chakra]] hue that renders only when the aura is whole (a passing test); it is read from the position, never hand-set.**
+**Law — [[law]]: the heart's colour is green by computation — the A432-anchored 4th-chakra hue that renders only when the aura is whole (a passing test); it is read from the position, never hand-set.**
 
 @standard A432 tuning; Anahata (4th chakra) = green

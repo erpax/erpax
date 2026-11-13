@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the fifth position of the horo state ring — digit 7, \\\"the wave returns\\\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo.",
-    "uuid": "9c212522-88a7-841e-b082-4be00e507373",
+    "uuid": "ac8dffe3-45c8-876b-9980-98a867c82cac",
     "words": [
       "use",
       "when",

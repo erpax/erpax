@@ -2,33 +2,33 @@
 name: diffusion
 description: "Use when reasoning about HOW a small market becomes big over time — the time-axis the static market product is missing. Adoption spreads as a contagion (Bass: rate = (p + q·F)·(1−F)·m; word-of-mouth q≈0.38 far exceeds advertising p≈0.03), filling the adopter sequence innovators → early-adopters → majority → laggards. Trendsetters are the seed the imitation engine amplifies; the chasm is where that engine stalls and most small markets stay small."
 atomPath: "vocabulary/diffusion"
-coordinate: "vocabulary/diffusion · 2/share · 1712d506"
-contentUuid: "0282ff1b-733e-5199-b3cb-a476c8ce85c1"
-diamondUuid: "1f00b8a6-5a72-801f-8398-1f385ee260c9"
-uuid: "1712d506-2303-89f2-b8b7-194ff9cf644f"
-horo: 2
+coordinate: "vocabulary/diffusion · 8/crest · 88613bbb"
+contentUuid: "98dbaf8f-0420-570a-a77f-c3ced8e5fcc6"
+diamondUuid: "193597f7-6e02-8b33-8d87-ddca21ddd084"
+uuid: "88613bbb-7ac1-89ea-ae69-b6e3fc4ed783"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 52
+  bondDegree: 43
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2665ff69-7ed7-87c1-9551-d3dce65642d7"
+  computationUuid: "3c92e474-9530-82f7-abfd-a82561b549f4"
   stages:
     - stage: path
       stageUuid: "1ac3d2f6-6ca6-83ac-9f02-e5a326723178"
     - stage: trinity
       stageUuid: "64700774-47fd-855d-ad0f-faa1854b347b"
     - stage: boundary
-      stageUuid: "e1784c12-0ee3-8d38-971c-651f40166288"
+      stageUuid: "5cb7d64c-6488-88be-9e76-7ad7d43cb960"
     - stage: links
-      stageUuid: "9702f09a-9167-8309-82c9-79d3eb00d2a6"
+      stageUuid: "36bd92ac-3cb8-8b0f-83a3-c71700041230"
     - stage: horo
-      stageUuid: "fd498063-ba3f-800c-934e-0f5f0a32bcd7"
+      stageUuid: "0bff7d69-8bcd-88b4-9168-f44c4433442f"
     - stage: seal
       stageUuid: "b98c3ff1-6d6b-8094-832c-1d9280d75d93"
     - stage: uuid
-      stageUuid: "d31555f9-c8ee-84ad-a6a4-1dbcc2b26a4c"
+      stageUuid: "d1469a78-d7d7-81d1-a55e-bac271c0fe2f"
 version: 2
 ---
 # diffusion — how a market fills over time (the dynamic the product law is missing)
@@ -43,9 +43,9 @@ adoption_rate(t) = ( p + q·F(t) ) · ( 1 − F(t) ) · m
 
 `F(t)` = fraction already adopted, `m` = market potential, **`p`** = the *innovation* coefficient (external push: advertising, [[distribution]]), **`q`** = the *imitation* coefficient (internal pull: word-of-mouth, [[signal]]). Empirically **`q ≈ 0.38` far exceeds `p ≈ 0.03`** — imitation dwarfs advertising, so adoption traces an **S-curve** (cumulative) and a **bell** (rate). *Word of mouth is the engine; advertising only lights the match.*
 
-**The adopter sequence** ([[cohort]]s on the curve, [[segment]]s by psychology — Rogers): innovators `2.5%` → early adopters `13.5%` → early majority `34%` → late majority `34%` → laggards `16%`. The first two — **the 16% "trendsetters"** ([[trend]] · [[power]]) — are the `p`-seed *and* the first carriers of `q`. This is *why* "make it accessible to those who lead trends" works: they ignite the imitation engine the other 84% run on. It is also why it is not enough — the seed is not the crossing.
+**The adopter sequence** ([[cohort]]s on the curve, segments by psychology — Rogers): innovators `2.5%` → early adopters `13.5%` → early majority `34%` → late majority `34%` → laggards `16%`. The first two — **the 16% "trendsetters"** (trend · power) — are the `p`-seed *and* the first carriers of `q`. This is *why* "make it accessible to those who lead trends" works: they ignite the imitation engine the other 84% run on. It is also why it is not enough — the seed is not the crossing.
 
-**The chasm — the [[bottleneck]] of diffusion** (Moore). The `q`-engine **stalls** between early adopters and the early majority, because the two value different things: early adopters buy the *vision* and pay to be first ([[status]]⁺); the majority is **reference-oriented** — it adopts only on [[proof]] from peers *it* recognizes, and early-adopter word-of-mouth **does not transfer across the gap** (different reference group, different value domain). The chasm is where most small markets *stay* small. Crossing it needs a **beachhead [[segment]]** + the **whole product** for that one segment + proof from inside the majority's own reference group — not louder `p`. (Oatly crossed it baristas → Starbucks; Google Glass and Clubhouse died in it.)
+**The chasm — the [[bottleneck]] of diffusion** (Moore). The `q`-engine **stalls** between early adopters and the early majority, because the two value different things: early adopters buy the *vision* and pay to be first ([[status]]⁺); the majority is **reference-oriented** — it adopts only on [[proof]] from peers *it* recognizes, and early-adopter word-of-mouth **does not transfer across the gap** (different reference group, different value domain). The chasm is where most small markets *stay* small. Crossing it needs a **beachhead segment** + the **whole product** for that one segment + proof from inside the majority's own reference group — not louder `p`. (Oatly crossed it baristas → Starbucks; Google Glass and Clubhouse died in it.)
 
 **Saturation.** As `F → 1` the `(1 − F)` term → 0: every market stops growing (laggards last). Growth is borrowed from the unconverted, and it runs out — which is why the curve is bounded and why durable revenue must come from [[habit]], not fresh adoption.
 
@@ -59,4 +59,4 @@ adoption_rate(t) = ( p + q·F(t) ) · ( 1 − F(t) ) · m
 - **Rogers, Everett M. (1962)** — *Diffusion of Innovations.* The five adopter categories and the `2.5 / 13.5 / 34 / 34 / 16` split.
 - **Moore, Geoffrey A. (1991)** — *Crossing the Chasm.* The discontinuity between early adopters and the pragmatist majority; the beachhead + whole-product + reference mechanism for crossing.
 
-Composes [[market]] · [[trend]] · [[cohort]] · [[segment]] · [[awareness]] · [[proof]] · [[friction]] · [[status]] · [[habit]] · [[bottleneck]] · [[breath]] · [[network]] · [[signal]] · [[power]] · [[distribution]] · [[desire]].
+Composes [[market]] · trend · [[cohort]] · segment · [[awareness]] · [[proof]] · [[friction]] · [[status]] · [[habit]] · [[bottleneck]] · [[breath]] · [[network]] · [[signal]] · power · [[distribution]] · [[desire]].

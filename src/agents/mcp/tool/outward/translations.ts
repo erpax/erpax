@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "outward",
-    "uuid": "c5534f48-650c-873a-bd43-95246e04215f",
+    "uuid": "33dcef75-2140-8524-afbe-09e52913ae65",
     "words": [
       "outward"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about outward — outward content-addresses every external answer and outward/leads fuses those receipts to , so the corpus can already compute *what changed* and *what to look at next*.",
-    "uuid": "6f915e3b-c21f-8b10-bcc2-b0ea078c8ce3",
+    "uuid": "01c36d37-c5c4-8399-885b-a2b21e4659d5",
     "words": [
       "use",
       "when",

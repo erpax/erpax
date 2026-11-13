@@ -2,21 +2,21 @@
 name: rodin
 description: "Use when reasoning about the number substrate under erpax's state/sequence math — the Rodin vortex sequence 0·3·6·9·1·2·4·8·7·5 over the A432 anchor, digital-root (mod-9) arithmetic, the 3·6·9 triad axis vs the 1·2·4·8·7·5 doubling helix. The root the horo ring and the sequence both express."
 atomPath: rodin
-coordinate: "rodin · 1/base · 1cfdc677"
-contentUuid: "5d06b3bc-a25f-55fb-b147-eb7a88ab0892"
-diamondUuid: "ebae3cb7-1382-875a-800c-061806c540c9"
-uuid: "1cfdc677-c8f4-81fb-bf6d-29949faafc70"
-horo: 1
+coordinate: "rodin · 7/descent · 2f57a46b"
+contentUuid: "cb82521c-f65b-5446-be38-eec16ff4b427"
+diamondUuid: "6074816e-a473-86a1-9189-05f7709bfe63"
+uuid: "2f57a46b-3437-87ee-b4a5-ad8cd3173eeb"
+horo: 7
 typography:
   partition: rodin
-  bondDegree: 287
+  bondDegree: 258
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)"
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e2825ddf-348b-8aad-be96-6341b4b30aa6"
+  computationUuid: "760fa91f-4265-8e2d-8d55-6d62ef0fd2d4"
   stages:
     - stage: path
       stageUuid: "0cd2e29f-fd6c-835b-b528-bd3a2fbce4e8"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "23c990da-be9e-8b4b-97cc-a62a6e7e8903"
     - stage: links
-      stageUuid: "934fc64b-312c-80e3-9032-c77135b1b958"
+      stageUuid: "d2c212cc-98c7-80d0-b301-16c3a956ef79"
     - stage: horo
-      stageUuid: "60484a41-37fe-88e7-8e35-803a4221ea9b"
+      stageUuid: "0b6214ef-b330-89ad-a85f-b4742bc8c460"
     - stage: seal
       stageUuid: "5d638fef-cc7e-86af-acd3-5e023edee363"
     - stage: uuid
-      stageUuid: "94d3d630-1460-8bc0-97bd-1a8369271eae"
+      stageUuid: "238b506b-ca92-854f-ac10-145504dd6d13"
 version: 2
 ---
 # rodin — the vortex sequence (0·3·6·9·1·2·4·8·7·5 over A432)
@@ -55,7 +55,7 @@ Conventional arithmetic leaves `n/0` undefined; `zeroDivision(n)` **totalizes** 
 
 The anchor renders **three** ways from one position: **colour** ([[cmyk]], A432 ms), **sound** ([[notes]], A432 Hz) and **touch** ([[vibration]], an A432 sub-harmonic) — the [[signal]] sensory [[trinity]] (the colour↔sound [[duality]] completed by the third), oscillating as [[breath]] over [[phase]], lifting by [[octave]] on the [[torus]].
 
-Composes: [[coil]] · [[axis]] · [[polarity]] · [[cmyk]] · [[notes]] · [[vibration]] · [[breath]] · [[phase]] · [[octave]] · [[torus]] · [[horo]] · [[sequence]] · [[identity]] · [[signal]] · [[trinity]] · [[fractal]] · [[balance]] · [[duality]] · [[metatron]] · [[chakra]].
+Composes: [[coil]] · [[axis]] · [[polarity]] · [[cmyk]] · [[notes]] · [[vibration]] · [[breath]] · [[phase]] · [[octave]] · [[torus]] · [[horo]] · [[sequence]] · [[identity]] · [[signal]] · [[trinity]] · [[fractal]] · [[balance]] · [[duality]] · metatron · chakra.
 
 ## Standards
 

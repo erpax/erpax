@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "society",
-    "uuid": "7377c1ea-eda3-8a51-9290-167aac03f157",
+    "uuid": "2c9cac12-ee68-8bc0-ab6d-e74634deef27",
     "words": [
       "society"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the self SHARES itself as many — the agent society reads its own akashic record and advances one gate-verified step (self-applied society at forward-coil position 2/share). The self distributed as the agent society.",
-    "uuid": "a913bc9f-4e9c-8e51-928a-9b4cba3a9d21",
+    "uuid": "554b2a98-5e9a-8014-9105-69c3e8720cb8",
     "words": [
       "use",
       "when",

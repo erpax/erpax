@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about order — An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.",
-    "uuid": "fd5da30b-0c51-8bbf-afe9-d4cd6dba44e4",
+    "uuid": "5e523503-4017-86ab-9939-918cb136dd5f",
     "words": [
       "use",
       "when",

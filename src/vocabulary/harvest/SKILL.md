@@ -2,33 +2,33 @@
 name: harvest
 description: "Use when modelling the gathering of matured output from a growth process — the IAS-41 transformation event where a biological asset becomes inventory, and the per-week harvest window (the produce calendar) over which a crop yields. Harvest is the realization point: value created by living growth crosses into sellable stock; the window is non-uniform — a 1 in the calendar marks presence, not constant volume."
 atomPath: "vocabulary/harvest"
-coordinate: "vocabulary/harvest · 2/share · 703ee77f"
-contentUuid: "6719ede3-e5a5-5cf4-98fe-34cc9f1dcc60"
-diamondUuid: "11d1c25c-0f1a-89d1-a4c6-5adb78301609"
-uuid: "703ee77f-a951-8e01-885f-d2627a47b559"
-horo: 2
+coordinate: "vocabulary/harvest · 5/round · 7ad641df"
+contentUuid: "d346a931-e6bf-55d4-8465-597b177e2c68"
+diamondUuid: "636b99a5-1853-8137-be5d-8a8cde982348"
+uuid: "7ad641df-9fb7-86b9-97e7-cfb32c22e39b"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 103
+  bondDegree: 89
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7e739675-e42e-8aba-8f47-61f2d6157206"
+  computationUuid: "68c17742-7efb-8aa3-883e-6e4e51932b8a"
   stages:
     - stage: path
       stageUuid: "9f1f2fad-d288-8aa1-a4f9-c4e121468e1a"
     - stage: trinity
       stageUuid: "a826e2a7-3c9c-883e-90dd-e58493fa1866"
     - stage: boundary
-      stageUuid: "7c142fba-4f0a-894b-b087-b910521254b1"
+      stageUuid: "da0665cc-ffde-8e95-a34e-ef3e49e1d76f"
     - stage: links
-      stageUuid: "d779cede-6b7b-8931-82e2-02898b95ac76"
+      stageUuid: "351025fe-5337-8b66-b9e5-c793b1e44cf6"
     - stage: horo
-      stageUuid: "28e6a562-9cd7-84a9-bb94-acbcfbd5a98d"
+      stageUuid: "197db5e0-98d9-8c72-9ed7-12d9a37487d9"
     - stage: seal
       stageUuid: "d31cc2c0-5e50-87f4-a091-cc49a3fd5223"
     - stage: uuid
-      stageUuid: "e58559bf-74e1-856f-99b6-94ba571d9f1a"
+      stageUuid: "979cba32-21ab-81c2-91f9-6f62b5f879f8"
 version: 2
 ---
 # harvest — the gathering event, and the window over which a crop yields
@@ -37,9 +37,9 @@ version: 2
 
 **The event.** At harvest a [[biological/assets|biological asset]] transforms into [[items|inventory]] — the IAS-41 §13 biological-transformation point the [[biological/assets]] atom forward-references as its `harvest-events` pairing. It is a **[[recognition]] moment**: value created by the asset *living* (growth, not price change) is realized and crosses the standards boundary into stock that [[commerce]] can sell. The matching [[journal/entries|journal entry]] keeps the [[balance]] — the asset de-recognized, inventory recognized at fair-value-less-costs-to-sell.
 
-**The window.** A **harvest calendar** is a matrix of week-of-year × [[crop]] marking the weeks each crop is *projected available* — the spring and fall waves of cool-season crops, the summer wave of warm-season ones ([[season]]). Each crop has a **number of harvests** (pickings across the window) — the demand-spreading twin of its number of [[planting]]s. The window is **regional**: built from local frost dates and heat accumulation, never a copied calendar.
+**The window.** A **harvest calendar** is a matrix of week-of-year × [[crop]] marking the weeks each crop is *projected available* — the spring and fall waves of cool-season crops, the summer wave of warm-season ones (season). Each crop has a **number of harvests** (pickings across the window) — the demand-spreading twin of its number of [[planting]]s. The window is **regional**: built from local frost dates and heat accumulation, never a copied calendar.
 
-**The trap: the window is not flat.** A `1` in the calendar marks *presence*, not constant volume — real [[yield]] ramps up, peaks, and tails off. Distributing a season's total yield evenly across the window (as the source spreadsheet itself warns it does) mis-sizes both the [[share]] box at the shoulders and the labor peak in the middle.
+**The trap: the window is not flat.** A `1` in the calendar marks *presence*, not constant volume — real yield ramps up, peaks, and tails off. Distributing a season's total yield evenly across the window (as the source spreadsheet itself warns it does) mis-sizes both the [[share]] box at the shoulders and the labor peak in the middle.
 
 ## Standards
 - IFRS IAS-41 §13 (biological-transformation / harvest event), §12 (fair-value-less-costs-to-sell)
@@ -50,6 +50,6 @@ version: 2
 ## Common mistakes
 - Carrying harvested produce still at biological-asset fair value — at harvest it transfers to [[items|inventory]] (IAS-41 §13); the status flips and a [[journal/entries|journal entry]] posts.
 - Reading the availability `1` as constant weekly volume — it is presence, not quantity; yield is front/back-loaded across the window.
-- Copying another farm's harvest calendar — windows are local to frost dates and [[season]] heat accumulation.
+- Copying another farm's harvest calendar — windows are local to frost dates and season heat accumulation.
 
-Composes [[agriculture]] · [[biological/assets]] · [[crop]] · [[season]] · [[planting]] · [[yield]] · [[recognition]] · [[journal/entries]] · [[balance]] · [[items]] · [[commerce]].
+Composes [[agriculture]] · [[biological/assets]] · [[crop]] · season · [[planting]] · yield · [[recognition]] · [[journal/entries]] · [[balance]] · [[items]] · [[commerce]].

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about polygon — A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited po",
-    "uuid": "6320f48f-7801-8916-876e-f89a388a154c",
+    "uuid": "55d5f68e-4a98-888b-ac8b-2fc74a0ff63a",
     "words": [
       "use",
       "when",

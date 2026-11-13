@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about renegotiable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "8f79156f-af4d-8f2e-97b0-3242832cf05a",
+    "uuid": "e28b081d-37c3-8100-92fb-4ff193b3905d",
     "words": [
       "use",
       "when",

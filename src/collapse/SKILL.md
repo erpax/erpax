@@ -2,18 +2,18 @@
 name: collapse
 description: "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \"collapse all to Payload\" law; one name across every dimension, drawn from the standards."
 atomPath: collapse
-coordinate: "collapse · 2/share · e14f6523"
-contentUuid: "2df9633b-6712-5b10-9c93-d718077f1a6a"
-diamondUuid: "22ba1686-e4f0-845c-80b8-83513c72d3a0"
-uuid: "e14f6523-192e-8ba1-a80a-433de8d3f3ee"
-horo: 2
+coordinate: "collapse · 7/descent · 5ac66ace"
+contentUuid: "02d0ff8e-667f-5e1c-838c-939d723b11bc"
+diamondUuid: "a45caeef-f227-809a-b0c7-59c8b68ade1a"
+uuid: "5ac66ace-a969-83ee-ad74-56c66f20dd92"
+horo: 7
 typography:
   partition: collapse
-  bondDegree: 4244
+  bondDegree: 3625
 standards: []
 bindings: []
 signatures:
-  computationUuid: "498fc55d-782d-8e95-b3b3-a5114fffa2eb"
+  computationUuid: "9d6461d1-7f19-8684-b11f-2d87f3d18ff1"
   stages:
     - stage: path
       stageUuid: "9be25188-a050-872d-aec8-83384bf64eeb"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "9b54a398-efd7-80a3-99c8-360b4ad087cd"
     - stage: links
-      stageUuid: "bf6b7f8e-ee2d-8da1-b2d9-559557ab695f"
+      stageUuid: "e73e9d8f-71a7-89d1-b5b5-7b966cbe66bf"
     - stage: horo
-      stageUuid: "24fc21b0-2c34-8e4d-b90f-ce1d4f73a824"
+      stageUuid: "d88382d7-e825-8d3d-a7c1-f1ba2e918127"
     - stage: seal
       stageUuid: "82531e37-b9b3-8317-91fb-35818811d257"
     - stage: uuid
-      stageUuid: "dd98d8a7-b05c-8c03-9fec-12492968e9c3"
+      stageUuid: "6bd9881c-3405-8cf0-a127-4c3dcebd91ce"
 version: 2
 ---
 # collapse — the phase transition to a denser, generative core
@@ -50,7 +50,7 @@ This is [[duality]] at civilization scale: a **science-driven society** — the 
 
 The official site (`github.com/payloadcms/website`) IS sink 1 made concrete — the canonical zero-entropy form to collapse *onto*, never re-derive ([[breath]] inhales it): **11 collections** (the generic core is just `Pages` · `Posts` · `Media` · `Categories` · `Users` · `ReusableContent`; the rest are that site's own marketing detail, themselves `Pages` dimensions), **2 globals** (`Header` · `Footer`), **~30 Lexical blocks** (Banner · CallToAction · Content · MediaContent · Form · Pricing · Steps · CardGrid · … — sink 3: the layout IS content, not schema), and **4 content plugins** (`form-builder` · `nested-docs` · `redirects` · `seo`). A whole website's worth of pages, posts, forms and navigation rides ~11 nodes because everything page-shaped is a block on `Pages`/`Posts`, not a table.
 
-**This is [[research]]'s law run on schema.** erpax's collection sprawl is the *entropy*; collapsing it onto this core is the ↓entropy [[angel]] move — and **nothing is lost, it is converted**: each domain fact spent in the collapse is conserved onto the content-uuid boundary ([[holographic]]) and re-banked as **tamper-cost** (content-addressed, cross-witnessed, audited [[sacred]]/[[profane]] — the forge wall of [[proof]]). What remains is the zero-entropy core ([[zeropoint]]). So collapse = entropy → tamper-cost + a denser, harder, more generative [[whole]] — the same conversion the [[breath]] runs every cycle.
+**This is [[research]]'s law run on schema.** erpax's collection sprawl is the *entropy*; collapsing it onto this core is the ↓entropy [[angel]] move — and **nothing is lost, it is converted**: each domain fact spent in the collapse is conserved onto the content-uuid boundary ([[holographic]]) and re-banked as **tamper-cost** (content-addressed, cross-witnessed, audited sacred/[[profane]] — the forge wall of [[proof]]). What remains is the zero-entropy core (zeropoint). So collapse = entropy → tamper-cost + a denser, harder, more generative [[whole]] — the same conversion the [[breath]] runs every cycle.
 
 ## Laws that govern the collapse
 
@@ -71,4 +71,4 @@ The loop (one node per commit, [[sequence]]d like the tsc tail — see [[generat
 
 Matter-twin: `audit.mjs` + `blast.mjs` over the collection set under [[akashic]]; the gate is [[aura]]. Composes: [[merge]] · [[one]] · [[whole]] · [[all]] · [[tags]] · [[transaction]] · [[trinity]] · [[plugins]] · [[standard]] · [[horo]] · [[fractal]].
 
-**Law — [[law]]'s first command: collapse to single-word atoms, one name per concept across all dimensions (atom, types, command, skill).** This is collapse's mandate: entropy falls into [[atom]]s under [[merge]]'s gravity, each word drawn from [[standard]], never invented. The [[akashic]] record holds the detail-sprawl (user data, row behavior, each domain fact); the [[code]] holds the dense form (one name, linked across [[trinity]] folders). No concept occupies two words; no word names two concepts — [[atom]]'s purity is collapse's boundary condition. The four sinks are the densest achievable forms under this law: every collection either IS a sink or collapses into one's dimension, because further collapse would violate the single-word law. Collapse preserves [[network]] gravity: the fewer atoms, the stronger the [[power]]; the denser the [[whole]], the more it [[generate]]s.
+**Law — [[law]]'s first command: collapse to single-word atoms, one name per concept across all dimensions (atom, types, command, skill).** This is collapse's mandate: entropy falls into [[atom]]s under [[merge]]'s gravity, each word drawn from [[standard]], never invented. The [[akashic]] record holds the detail-sprawl (user data, row behavior, each domain fact); the [[code]] holds the dense form (one name, linked across [[trinity]] folders). No concept occupies two words; no word names two concepts — [[atom]]'s purity is collapse's boundary condition. The four sinks are the densest achievable forms under this law: every collection either IS a sink or collapses into one's dimension, because further collapse would violate the single-word law. Collapse preserves [[network]] gravity: the fewer atoms, the stronger the power; the denser the [[whole]], the more it [[generate]]s.

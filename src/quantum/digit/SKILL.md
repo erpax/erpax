@@ -3,17 +3,17 @@ name: digit
 description: "Use when storing numeric or realtime data the way words are stored — one folder per digit (0-9), crosslinked exactly like the word atoms; the numeric corpus is the twin of the word corpus, the word and digit duality, and a stream of digits is realtime data addressed by position."
 atomPath: "quantum/digit"
 coordinate: "quantum/digit · 8/crest · f5dfb731"
-contentUuid: "e1cb1e39-ea26-564b-8df9-b0bab52379b5"
-diamondUuid: "c6257116-f62b-8109-9906-6517517ba51c"
+contentUuid: "b4ea0ed9-14d6-50c5-b62c-93aa88f33d57"
+diamondUuid: "c18da61c-f91d-8b80-a7a3-31adef436ddc"
 uuid: "f5dfb731-2786-8029-aad5-c7730e27380f"
 horo: 8
 typography:
   partition: quantum
-  bondDegree: 121
+  bondDegree: 111
 standards: []
 bindings: []
 signatures:
-  computationUuid: "057a82e4-f6ae-8975-9f17-245313cf19f2"
+  computationUuid: "ec25d811-4ded-8c87-8311-fc3edded0578"
   stages:
     - stage: path
       stageUuid: "f06c9941-f2ab-8c8a-9812-f185dbe1b169"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3833dce9-e851-8d6d-a09c-2a728b8137da"
     - stage: horo
-      stageUuid: "1977602a-475e-8ab9-853b-d172d2430671"
+      stageUuid: "0105799e-f13d-89cb-ad1a-478405ecbe6e"
     - stage: seal
       stageUuid: "b476b9c2-1da7-898f-9e44-daa502db1bf4"
     - stage: uuid
-      stageUuid: "80f63b0a-8077-8bcd-b0e9-81b44d180871"
+      stageUuid: "aba1ee5e-f9cd-8482-a2d8-5d8f73e74c62"
 quantum:
   superposition:
     - atom
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "057a82e4-f6ae-8975-9f17-245313cf19f2"
-    contentUuid: "e1cb1e39-ea26-564b-8df9-b0bab52379b5"
+    computationUuid: "ec25d811-4ded-8c87-8311-fc3edded0578"
+    contentUuid: "b4ea0ed9-14d6-50c5-b62c-93aa88f33d57"
 version: 2
 ---
 # quantum/digit — the digit corpus (word ⊕ digit)
@@ -72,4 +72,4 @@ Where a [[word]] is discrete and named, a digit is continuous and counted — th
 
 @see [[digit]] · [[word]] · [[quantum/number]] · [[sequence]] · [[stream]] · [[uuid]] · [[matrix]] · [[analog]]
 
-<sub>content-uuid `e1cb1e39-ea26-564b-8df9-b0bab52379b5` · account `quantum/digit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `b4ea0ed9-14d6-50c5-b62c-93aa88f33d57` · account `quantum/digit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

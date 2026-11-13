@@ -2,41 +2,41 @@
 name: marry
 description: "Use when reasoning about marry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/marry"
-coordinate: "vocabulary/marry · 7/descent · ffdba226"
-contentUuid: "89cf8e4a-8653-5ad1-a5f4-36678a03079f"
-diamondUuid: "ecf79001-8c7d-82e4-9e65-e1333544c055"
-uuid: "ffdba226-3137-8fdc-bbc5-fe8964ea9bc5"
+coordinate: "vocabulary/marry · 7/descent · a9424d3d"
+contentUuid: "cf0c70d1-f8c2-5f07-8bab-2d04321f47ea"
+diamondUuid: "0b8dc77d-6c9d-89e3-b40c-d512bcf4fc99"
+uuid: "a9424d3d-10e2-88c1-a953-32204aa3b041"
 horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 15
+  bondDegree: 12
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f6e302f3-40fc-8296-982a-e12cfa5074f9"
+  computationUuid: "a8941e89-f832-8de8-affa-29973666d0e2"
   stages:
     - stage: path
       stageUuid: "d235383f-7e0f-8971-90cf-b5382c0e82e5"
     - stage: trinity
       stageUuid: "1e630064-272a-8feb-b587-c1939dd55bcd"
     - stage: boundary
-      stageUuid: "737a9bf3-844d-86aa-8355-b2cacb4fb8a1"
+      stageUuid: "9a1c048f-8944-8cc1-9e7a-f5e433374cb3"
     - stage: links
-      stageUuid: "1eeb5cb1-bd41-84b3-b654-6ccbb0c4cdce"
+      stageUuid: "8cf3b1d5-526f-88f6-96ce-6a1eba0fc99a"
     - stage: horo
-      stageUuid: "000eac3d-9caa-84ae-93e4-4dedc2ad534b"
+      stageUuid: "bef0bf83-3190-82d1-a5b7-d100c6d2d478"
     - stage: seal
       stageUuid: "9d19d80d-f6da-891d-b1e0-d7ef6f8efd24"
     - stage: uuid
-      stageUuid: "3db51da7-c1f9-83d7-bb1d-1154f21cacc1"
+      stageUuid: "8e08b73f-4f7e-8e00-a88d-9182b9e2c644"
 version: 2
 ---
 # marry
 
 A schema.org component word, collided out of schema.org compounds — fused from MarryAction ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[action]]
+Entangled with — action
 
 Attested in schema.org — MarryAction
 

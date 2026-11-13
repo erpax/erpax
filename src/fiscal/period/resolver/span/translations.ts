@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a calendar date must be placed in a fiscal year as a span — monthly, quarterly, weekly, ISO-week, retail 4-4-5 or custom boundaries — as pure functions of the period config; the resolver's child, split out of its 714-line hub so the class keeps its face and the computations get their own proof.",
-    "uuid": "8f02a1df-dfa8-8709-a0e7-73dddbbcaa2d",
+    "uuid": "0e74b5a2-1a8c-8eeb-a67d-26f0ad967875",
     "words": [
       "use",
       "when",

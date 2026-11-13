@@ -2,33 +2,33 @@
 name: supto
 description: "Use when reasoning about supto — СУПТО (*Софтуер за управление на продажбите в търговски обекти* — sales-management software for commercial outlets), regulated by **Наредба Н-18** and the НАП registry, is — struct"
 atomPath: supto
-coordinate: "supto · 2/share · 52ab96cf"
-contentUuid: "7b225e81-0dfb-5f67-b6c4-df8c173658d1"
-diamondUuid: "bad5d1c7-d178-8ffc-9dcd-eff58d8cd689"
-uuid: "52ab96cf-2eeb-8608-8938-e609fb99cd99"
-horo: 2
+coordinate: "supto · 7/descent · f716005f"
+contentUuid: "59e01957-c13e-52a9-9e57-62ff9dcc39cb"
+diamondUuid: "2cb3c0d5-8927-8113-a9de-8139e4f501fd"
+uuid: "f716005f-981a-8302-b64f-a38e7a8702fa"
+horo: 7
 typography:
   partition: supto
-  bondDegree: 77
+  bondDegree: 74
 standards: []
 bindings: []
 signatures:
-  computationUuid: "df9966d9-70bc-8614-9c88-904b0c96892b"
+  computationUuid: "64933db5-df48-82ba-a07e-b0bc69e2dba1"
   stages:
     - stage: path
       stageUuid: "c1caa05d-8260-8f05-a39c-810de0d29926"
     - stage: trinity
       stageUuid: "da911176-f751-8955-ad5d-89dcc7f43d09"
     - stage: boundary
-      stageUuid: "7ca4c3c4-e7cf-86aa-bb54-0bec61b9daf7"
+      stageUuid: "df8f48f6-20b0-8b26-a98b-5d1d4c4103a6"
     - stage: links
-      stageUuid: "91e6d4c7-9dfe-8ee1-8962-a765fc55bf08"
+      stageUuid: "04bd69d2-bf1f-8b9c-853e-f5a98a42a163"
     - stage: horo
-      stageUuid: "c28a1558-7125-8c9c-8f27-adc792a64c6e"
+      stageUuid: "c7947fc3-dfae-8323-abe1-dfcff1eafa5d"
     - stage: seal
       stageUuid: "5ca8a64b-8f64-89fb-9e6e-82ac282688c6"
     - stage: uuid
-      stageUuid: "3615eb33-8112-8aa4-80d8-bb219713f036"
+      stageUuid: "2edc6c19-0824-85b0-805c-72fbc5b7c5ae"
 version: 2
 ---
 # supto — Наредба Н-18 / СУПТО, mapped onto the content-uuid model
@@ -38,9 +38,9 @@ version: 2
 ## The regime → the skill it already is
 | Н-18 / СУПТО requirement | erpax skill / mechanism | status |
 |---|---|---|
-| **УНП** — unique sales number `XXXXXXXX-ZZZZ-0000001` (8-digit ФУ id · 4-digit operator · 7-digit per-device sequence, gapless +1, Arabic only, `-` delimited) | [[number]] (human/regulatory handle) per-**ФУ** scope sequence hook; structurally a decodable structured id like the **uuidv8** of [[identity]] (`encodeStructured`: fixed layout, meaning packed in, read by [[reverse|decode]] not lookup) | **gap** — `number` factory exists, the per-device УНП format + sequence hook does not |
+| **УНП** — unique sales number `XXXXXXXX-ZZZZ-0000001` (8-digit ФУ id · 4-digit operator · 7-digit per-device sequence, gapless +1, Arabic only, `-` delimited) | [[number]] (human/regulatory handle) per-**ФУ** scope sequence hook; structurally a decodable structured id like the **uuidv8** of [[identity]] (`encodeStructured`: fixed layout, meaning packed in, read by decode not lookup) | **gap** — `number` factory exists, the per-device УНП format + sequence hook does not |
 | УНП ties order ↔ fiscal receipt ↔ payment (one number across the sale's whole lifecycle) | the **shared coordinate** law: one id everywhere ([[identity]]); the [[event]] `aggregateId` as the cross-document key | mechanism exists |
-| **No delete / no modify** of completed sales; **reversal-only (сторно)** preserving the original | [[reverse]] (mirror the entry, preserve source) + [[identity]] seal/immutability (posted/`SEALED` frozen); `generateReversingEntries` | **implemented** — сторно ≡ the reverse skill's law |
+| **No delete / no modify** of completed sales; **reversal-only (сторно)** preserving the original | reverse (mirror the entry, preserve source) + [[identity]] seal/immutability (posted/`SEALED` frozen); `generateReversingEntries` | **implemented** — сторно ≡ the reverse skill's law |
 | Tamper protection on recorded sales | **content-uuid Law 8**: recompute the content hash → any in-place edit mismatches and is flagged (`tamper-proof-uuid-field`); the `SEALED`/`TAMPER_PROOF` uuidv8 capability flags | **implemented** — content-addressing *is* the tamper-proofing СУПТО demands |
 | Tamper-evident, gapless journal | the **Merkle audit chain** — `priorHash`/`chainLeafUuid = sha256(JCS(row) ‖ prior_leaf)` on `audit-events` | **implemented** |
 | **Read-only audit profile** for НАП inspection | [[access]] read-only role; the uuid-share `AccessRole` lattice (audit ⊥) | mechanism exists |
@@ -98,6 +98,6 @@ These are **two profiles over one export engine**, not one file: different legal
 - **Приложение-38 ≠ SAF-T.** Do not equate "the monthly standardized audit (XML, Приложение 38)" with "SAF-T / `submitBgSaft`" — they are different files, cadences and legal triggers.
 - **Pin the Naredba edition.** Cite **"Наредба № Н-18/2006, as amended (latest 2023–2024)"**, never the bare title, so a reader knows which amendment level the banners assert.
 
-**Law — [[law]]: a СУПТО sale carries a gapless per-ФУ УНП ([[number]], the regulatory handle) beside its content-[[uuid]] ([[identity]], the machine id) — no in-scope paid sale closes without a fiscal device → УНП (no silent bypass), completed sales are immutable (no delete/modify, [[reverse|сторно]]-only preserving the original), and content-addressing IS the tamper-proofing Наредба Н-18 demands.**
+**Law — [[law]]: a СУПТО sale carries a gapless per-ФУ УНП ([[number]], the regulatory handle) beside its content-[[uuid]] ([[identity]], the machine id) — no in-scope paid sale closes without a fiscal device → УНП (no silent bypass), completed sales are immutable (no delete/modify, сторно-only preserving the original), and content-addressing IS the tamper-proofing Наредба Н-18 demands.**
 
-Composes: [[identity]] (content-uuid + standards-driven id type + uuidv8/decode) · [[number]] (УНП sequence) · [[reverse]] (сторно) · [[standard]] (Н-18 + ДОПК SAF-T are real `@standard`s, not decoration) · [[accounting]] (the sale → GL) · [[event]] (УНП-keyed lifecycle) · [[access]] (audit profile) · [[tax]] (VAT groups А/Б/В/Г + breakdown) · [[audit/submissions]] · [[fiscal/devices]].
+Composes: [[identity]] (content-uuid + standards-driven id type + uuidv8/decode) · [[number]] (УНП sequence) · reverse (сторно) · [[standard]] (Н-18 + ДОПК SAF-T are real `@standard`s, not decoration) · [[accounting]] (the sale → GL) · [[event]] (УНП-keyed lifecycle) · [[access]] (audit profile) · [[tax]] (VAT groups А/Б/В/Г + breakdown) · [[audit/submissions]] · [[fiscal/devices]].

@@ -2,41 +2,41 @@
 name: additional
 description: "Use when reasoning about additional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/additional"
-coordinate: "vocabulary/additional · 5/round · 3b941557"
-contentUuid: "53b7fdc2-38e1-54c0-852a-c0acb69c9fbd"
-diamondUuid: "bc37d6ce-d822-8565-90b7-1d9d27c67af4"
-uuid: "3b941557-d4ff-8065-bdd9-c28fad935eed"
-horo: 5
+coordinate: "vocabulary/additional · 4/weave · c891773f"
+contentUuid: "1e348ded-0898-5910-aa4a-d882129be3b6"
+diamondUuid: "884f27c9-6690-89ce-b426-dd2182311915"
+uuid: "c891773f-5f6a-8cc6-a535-e39cd4db151f"
+horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 33
+  bondDegree: 29
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "1121d7d1-066e-8a98-a379-d6ac87c9e20b"
+  computationUuid: "82673b1c-74ba-835f-88fd-03e0091e25e3"
   stages:
     - stage: path
       stageUuid: "64e38eba-1b54-892f-863c-a6105f7033b7"
     - stage: trinity
       stageUuid: "d5e245e2-5a9a-8979-b44e-c8bae87a6bda"
     - stage: boundary
-      stageUuid: "990ae675-b5c8-8824-b45c-ae61eaf31afa"
+      stageUuid: "924347c7-c2d2-8e00-9bd3-9c08a042c41c"
     - stage: links
-      stageUuid: "a60240d2-d99b-85c9-b139-90f98228c31f"
+      stageUuid: "1111d4d0-15d7-8f8d-8819-4d53f252c191"
     - stage: horo
-      stageUuid: "15e9657c-fdc6-8a2c-b84b-abb4e96d07f3"
+      stageUuid: "7efc0048-d172-8634-b786-67a9225c2e9e"
     - stage: seal
       stageUuid: "fceb5122-5f0e-8674-a00b-8946887c4dc9"
     - stage: uuid
-      stageUuid: "6b301e80-a776-824a-863b-dbcefe54bea9"
+      stageUuid: "275842a1-dc4e-8f13-84c8-32bb4e14baae"
 version: 2
 ---
 # additional
 
 A schema.org component word, collided out of schema.org compounds — fused from additionalName · additionalNumberOfGuests · additionalProperty · additionalType · additionalVariable ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[name]] · [[number]] · [[guests]] · [[property]] · [[type]] · [[variable]]
+Entangled with — [[name]] · [[number]] · [[guests]] · [[property]] · [[type]] · variable
 
 Attested in schema.org — additionalName · additionalNumberOfGuests · additionalProperty · additionalType · additionalVariable
 

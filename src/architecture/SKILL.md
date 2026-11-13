@@ -3,13 +3,13 @@ name: architecture
 description: "Use when checking that the corpus obeys its own structural laws — the executable invariants (single-word atoms, no prefixes, locality, the cross balance, the naming matrix) that are the matter-twin of the architecture gate, reached through one face."
 atomPath: architecture
 coordinate: "architecture · 1/base · a0986a1f"
-contentUuid: "45ef75b9-3e50-5770-ab93-75a1d4a95f11"
+contentUuid: "470c777b-ed0f-51d8-8b5f-bd042ac61f52"
 diamondUuid: "c9b581b5-062c-8185-82e4-2e6fda3f950d"
 uuid: "a0986a1f-1dbe-838f-a89b-e2b628e8d8b9"
 horo: 1
 typography:
   partition: architecture
-  bondDegree: 35
+  bondDegree: 33
 standards:
   - "BCP-47"
   - "COSO-ERM-2017"
@@ -30,6 +30,7 @@ standards:
   - "RFC-9562"
   - "US-CTA-2021"
   - "W3C-JSON-LD-1.1"
+  - schema.org
 bindings: []
 signatures:
   computationUuid: "3ba536e6-603f-891d-b228-566a455e1d73"

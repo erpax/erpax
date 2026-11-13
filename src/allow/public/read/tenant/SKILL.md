@@ -3,13 +3,13 @@ name: tenant
 description: "Use when resolving which tenants expose published content to anonymous callers — the TTL-cached lookup of tenant ids flagged `allowPublicRead = true`, minimizing D1 row-reads on cold anonymous paths."
 atomPath: "allow/public/read/tenant"
 coordinate: "allow/public/read/tenant · 1/base · afe6285e"
-contentUuid: "b3fe6c9a-c8fa-5315-bf10-ae0381235f35"
+contentUuid: "bad91223-e345-5ad1-88bd-a152642c2d33"
 diamondUuid: "40759e28-785a-8f08-a352-2551c1230147"
 uuid: "afe6285e-0b3d-8186-b50a-dae47dc68d29"
 horo: 1
 typography:
   partition: allow
-  bondDegree: 59
+  bondDegree: 58
 standards:
   - "9110 §13 caching"
   - "GDPR Art.5(1)(c) data-minimization"

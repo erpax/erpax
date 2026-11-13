@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about multicellular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "a758015b-882f-84af-978f-8d2303695bc4",
+    "uuid": "843db1f7-8c49-86a3-b989-0fab22e5f5c2",
     "words": [
       "use",
       "when",

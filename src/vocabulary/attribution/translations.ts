@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "attribution",
-    "uuid": "eff1552f-7efd-8f7c-9630-77b56c37e90a",
+    "uuid": "8b2dfde7-9a03-8ab3-a87e-9a9389ba60e5",
     "words": [
       "attribution"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking which touchpoint/channel caused a conversion — first-touch, last-touch, multi-touch models; credit value allocation across channels.",
-    "uuid": "cc7da8e8-b320-8868-a84e-21e6154e3e62",
+    "uuid": "09fe96ee-ab1d-8161-b813-5e8ddd6b077a",
     "words": [
       "use",
       "when",

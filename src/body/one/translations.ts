@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about one as a anatomical part of body — vocabulary pivot to @/one; nested not duplicated.",
-    "uuid": "2a5bc2bb-1095-8e9b-a90e-13004226df1b",
+    "uuid": "761bd4f7-622c-8565-8f4d-3b5ac09b5dd5",
     "words": [
       "use",
       "when",

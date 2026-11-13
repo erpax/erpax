@@ -2,40 +2,40 @@
 name: budgetvariance
 description: "Use when reasoning about budgetvariance — Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan"
 atomPath: "vocabulary/budgetvariance"
-coordinate: "vocabulary/budgetvariance · 7/descent · 80a070d6"
-contentUuid: "bbf5b73a-daec-57e9-9d26-918a19d79825"
-diamondUuid: "67cb5d26-268f-89b0-a075-8a00477c36ac"
-uuid: "80a070d6-81f2-839c-9a22-e596082e8443"
-horo: 7
+coordinate: "vocabulary/budgetvariance · 5/round · 1fd267f0"
+contentUuid: "465a01e5-2aea-50eb-bfcf-65ba4d7054c8"
+diamondUuid: "81bf3312-5afc-89f4-b0b2-22bd4e3f6f59"
+uuid: "1fd267f0-1c23-802d-980f-fb511507048e"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 28
+  bondDegree: 24
 standards: []
 bindings: []
 signatures:
-  computationUuid: "053b73f3-6e47-8b4c-9ca1-350a412cbd4d"
+  computationUuid: "83dc9213-a8dd-8360-a9de-9d543e4e1408"
   stages:
     - stage: path
       stageUuid: "9305e59b-15ba-8128-bcad-194bcfb483d1"
     - stage: trinity
       stageUuid: "49e4d624-493c-80d4-986a-7cfe127f47fb"
     - stage: boundary
-      stageUuid: "3bdab1b2-16f6-8fe8-b238-c69e978059bd"
+      stageUuid: "2fa4015f-6faf-85fb-afda-ba07614184e4"
     - stage: links
-      stageUuid: "f1722d1d-a567-8a2d-afc4-2793785291b0"
+      stageUuid: "27fa7c8a-f4c4-85cb-ad9f-3b0fefff205d"
     - stage: horo
-      stageUuid: "539fdaaa-a92e-8b61-a5ae-9bd9b8aa7a8b"
+      stageUuid: "0c1c180f-a68d-8341-b1f7-b6e422e032a7"
     - stage: seal
       stageUuid: "9bcdc4b9-13e2-887b-920b-ec5921f4216c"
     - stage: uuid
-      stageUuid: "01a27d29-e890-84ad-b359-554ac9fdd083"
+      stageUuid: "f63f535b-8978-859b-8abf-5cdf23fb9f82"
 version: 2
 ---
 # budgetvariance
 
 Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan
 
-Composes: [[variance]] · [[budget/plannings]] · [[cost/centers]] · [[financial/statements]] · [[decide]] · [[forecast]] · [[accounting]] · [[transaction]].
+Composes: variance · [[budget/plannings]] · [[cost/centers]] · [[financial/statements]] · [[decide]] · [[forecast]] · [[accounting]] · [[transaction]].
 
 **Law — [[law]]: variance is actual minus budget decomposed into its drivers — favorable/unfavorable, price split from quantity — so performance against plan is explained, never just a single delta.**
 

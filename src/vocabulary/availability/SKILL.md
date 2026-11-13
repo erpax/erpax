@@ -2,41 +2,41 @@
 name: availability
 description: "Use when reasoning about availability — The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc."
 atomPath: "vocabulary/availability"
-coordinate: "vocabulary/availability · 7/descent · 283eed4d"
-contentUuid: "f6205269-23c3-59a8-8e15-4de4729d4b18"
-diamondUuid: "c3766ccf-c78b-8a80-89f1-2dc304ede08b"
-uuid: "283eed4d-5ba7-8262-85e3-4c3d179c0a84"
-horo: 7
+coordinate: "vocabulary/availability · 5/round · be766b22"
+contentUuid: "50a6bd62-a666-5b13-ba61-f2e8fc960b69"
+diamondUuid: "0f802533-d9c5-8048-9d03-dba4f12d24e4"
+uuid: "be766b22-5547-80bc-a630-a20710157aba"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 28
+  bondDegree: 24
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "03490d75-cf1b-865a-b826-961b2c3e06b8"
+  computationUuid: "23587330-bb79-8688-bb19-db59b1f4c3ee"
   stages:
     - stage: path
       stageUuid: "0e990616-b7a9-8915-a057-d28fb4e029fd"
     - stage: trinity
       stageUuid: "2954f0a1-f84d-867c-acaf-ccba2f45b512"
     - stage: boundary
-      stageUuid: "a023e464-bc1c-8187-a37b-aa1b895de89f"
+      stageUuid: "eed7c05e-4112-8ba3-8f6b-6100923831a5"
     - stage: links
-      stageUuid: "2d04573e-4c35-8199-b8c2-65adb657c7bf"
+      stageUuid: "4e32ea61-e515-853e-b06e-d7b9bff05116"
     - stage: horo
-      stageUuid: "758c60ab-c40f-8871-9031-dc431b2e7227"
+      stageUuid: "d6ec12ce-d89e-866e-9230-a10394bc0967"
     - stage: seal
       stageUuid: "7cac9a76-f639-8233-a021-8631ee06045e"
     - stage: uuid
-      stageUuid: "b2cda4d3-3548-8bca-9c51-083e5443e9d6"
+      stageUuid: "145fe749-14da-8461-b3b4-936f434119d9"
 version: 2
 ---
 # availability
 
 The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc.
 
-Entangled with — [[game]] · [[enumeration]] · [[item]] · [[ends]] · [[starts]] · [[type]]
+Entangled with — [[game]] · [[enumeration]] · [[item]] · [[ends]] · starts · [[type]]
 
 Attested in schema.org — GameAvailabilityEnumeration · ItemAvailability · availability · availabilityEnds · availabilityStarts · gameAvailabilityType
 

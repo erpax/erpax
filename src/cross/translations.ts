@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when authorising \\\"who can do what\\\" — the agnostic Payload Access factory that attaches capability to roles (not users), merges role reach by lattice max, and decides an operation iff the merged capability reaches the op's required role.",
-    "uuid": "440eeceb-58c9-8f60-a5c0-d9178aba9038",
+    "uuid": "057c1ec0-1e17-8b01-82c1-b9f127b6d6c7",
     "words": [
       "use",
       "when",

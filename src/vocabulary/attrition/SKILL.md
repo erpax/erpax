@@ -2,40 +2,40 @@
 name: attrition
 description: "Use when measuring workforce loss — headcount change, turnover rate, voluntary/involuntary separation, retention metrics. The observed flow of people leaving vs staying."
 atomPath: "vocabulary/attrition"
-coordinate: "vocabulary/attrition · 4/weave · ff4e3a8f"
-contentUuid: "5ba34a48-3d98-529e-9509-de54b31e278a"
-diamondUuid: "042442d0-1ee1-804c-aa79-8d50e7b59b48"
-uuid: "ff4e3a8f-973e-80b8-8808-2b5831604d2a"
-horo: 4
+coordinate: "vocabulary/attrition · 5/round · 907a4881"
+contentUuid: "e50f45c0-e213-5341-a5cb-5f676c5ffa48"
+diamondUuid: "3f3a7400-bc95-80aa-8a86-5944a4f6a444"
+uuid: "907a4881-3622-86d3-b0d6-d502340e8709"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 18
+  bondDegree: 9
 standards: []
 bindings: []
 signatures:
-  computationUuid: "92945fe8-82ef-81a1-bc06-e70229f251e9"
+  computationUuid: "12d97dac-3d54-8156-891d-1606e6ae8ed1"
   stages:
     - stage: path
       stageUuid: "043e78fe-d2a7-8afc-8852-b44fa098364e"
     - stage: trinity
       stageUuid: "4ca1f69f-8dbf-88ab-9a07-4c3549469780"
     - stage: boundary
-      stageUuid: "e7879b47-4803-80d5-803c-b75d1b3106a3"
+      stageUuid: "60b0dee6-721f-8ac1-910b-be1aa2b68f32"
     - stage: links
-      stageUuid: "b5637890-fd61-8b00-8237-a032ced11f80"
+      stageUuid: "f39af1cf-db8a-8b20-8689-1306be2b3b9a"
     - stage: horo
-      stageUuid: "2377f472-915a-89fc-b9b3-847dd0312f5e"
+      stageUuid: "b03ae199-e5eb-85b9-a475-d5cc9be1c944"
     - stage: seal
       stageUuid: "38d0c694-e488-8a83-b8b1-2657e7d8ed6a"
     - stage: uuid
-      stageUuid: "48ef1cc2-d87e-8da7-bf80-fb7eee21907a"
+      stageUuid: "7909d274-e1f5-897f-87ca-1bbe4492c351"
 version: 2
 ---
 # attrition
 
 Use when measuring workforce loss — headcount change, turnover rate, voluntary/involuntary separation, retention metrics. The observed flow of people leaving vs staying.
 
-Composes: [[Employees]] · [[time]] · [[status]] · [[tenure]] · [[satisfaction]] · [[metric]].
+Composes: [[Employees]] · time · [[status]] · tenure · satisfaction · [[metric]].
 
 ## Standards
 - SHRM metrics

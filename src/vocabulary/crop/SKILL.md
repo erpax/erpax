@@ -2,42 +2,42 @@
 name: crop
 description: "Use when modelling a cultivated plant type as the agricultural SKU — the produce-catalogue row carrying its sale unit (1 bunch, 100 g, 1 head), unit price, and the agronomic constants (yield per area, plant spacing, N·K₂O need, plantings & harvests per season) that explode a demand quantity into land, seed, and fertility. The crop is the bill-of-materials line of a farm; its heterogeneous sale unit is why automatic unit conversion is non-negotiable."
 atomPath: "vocabulary/crop"
-coordinate: "vocabulary/crop · 4/weave · aac0ea02"
-contentUuid: "ea43d287-9ccf-5c7c-bb8f-b97464c36502"
-diamondUuid: "77df5640-3923-88e7-8689-56cba9f43718"
-uuid: "aac0ea02-f3a9-8f38-84e4-bb73c68b7d6f"
-horo: 4
+coordinate: "vocabulary/crop · 8/crest · 41411452"
+contentUuid: "446d1af6-0c74-5ea8-b197-143742fc79e2"
+diamondUuid: "10fc523c-64ae-8725-b0fd-2a7e6e54ab54"
+uuid: "41411452-16d2-877a-a846-f0c86a7e96b8"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 147
+  bondDegree: 115
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8ab25d29-9138-89db-9197-62f39403d9d4"
+  computationUuid: "8f241bc1-753f-8965-a14c-816c3fd7ff1a"
   stages:
     - stage: path
       stageUuid: "7fe674bd-5b67-816b-9451-b967b0971bea"
     - stage: trinity
       stageUuid: "0e14683b-bee4-848a-92b5-43a068a1a5d1"
     - stage: boundary
-      stageUuid: "ca9dda40-d3aa-8217-a004-d29cb58d2494"
+      stageUuid: "bf698f0b-cc82-86a2-a07b-f1b5fbd9be7c"
     - stage: links
-      stageUuid: "60eb8dbb-bb44-851a-b8d3-00d36b59c91d"
+      stageUuid: "d459b11c-a8f1-869c-a17e-2e28007eaa1d"
     - stage: horo
-      stageUuid: "bc0b63be-5280-87da-afa5-af2be01b1882"
+      stageUuid: "fd39bd6d-f13e-83a6-b88e-416c1ddf9b5a"
     - stage: seal
       stageUuid: "9f4d70d7-1022-84d0-a6f1-abdb4e54a4f4"
     - stage: uuid
-      stageUuid: "b2c65bbc-9f7c-8f64-b542-442e98e394ec"
+      stageUuid: "40f60fd0-124f-80f6-a183-b44e5014a48d"
 version: 2
 ---
 # crop — the cultivated plant as the agricultural SKU
 
-A **crop** is one cultivated plant type treated as a sellable line — the agricultural [[items|item]]/SKU. It is where the living [[biological/assets|biological asset]] meets [[commerce]]: each crop carries a **sale unit** (the [[measure]]: *1 bunch · 100 g · 1 head · 1 quart · 2 lbs*) and a **unit price** (the [[currency]] [[amount]]), plus the agronomic constants that make it plannable — **[[yield]] per area**, **plant spacing** (within-row, between-row, rows-per-bed), **seed rate** (per 100 ft / per area), **nitrogen & potassium need** ([[fertility]]), and the scheduling pair **number of [[planting]]s** (successions) × **number of [[harvest]]s** (pickings).
+A **crop** is one cultivated plant type treated as a sellable line — the agricultural [[items|item]]/SKU. It is where the living [[biological/assets|biological asset]] meets [[commerce]]: each crop carries a **sale unit** (the [[measure]]: *1 bunch · 100 g · 1 head · 1 quart · 2 lbs*) and a **unit price** (the [[currency]] [[amount]]), plus the agronomic constants that make it plannable — **yield per area**, **plant spacing** (within-row, between-row, rows-per-bed), **seed rate** (per 100 ft / per area), **nitrogen & potassium need** ([[fertility]]), and the scheduling pair **number of [[planting]]s** (successions) × **number of [[harvest]]s** (pickings).
 
-These constants are exactly the bill-of-materials line of [[agriculture]]'s backward plan: a demanded quantity of crop units explodes — via unit weight, yield, spacing, and fertility rate — into row-length, land, seed, and fertilizer. The crop's **heterogeneous sale unit** is the reason **automatic [[conversion]] is non-negotiable**: a [[share]] box mixes *grams of arugula, bunches of beets, heads of lettuce, pounds of potato*, and the only way to total or cost them is to carry each as a [[measure]] (value + UN/CEFACT unit) and a [[currency]] amount and let them **[[rate|convert]] and [[balance|sum within their dimension]]** — never as the text `"2.00 лв"` that breaks the arithmetic.
+These constants are exactly the bill-of-materials line of [[agriculture]]'s backward plan: a demanded quantity of crop units explodes — via unit weight, yield, spacing, and fertility rate — into row-length, land, seed, and fertilizer. The crop's **heterogeneous sale unit** is the reason **automatic conversion is non-negotiable**: a [[share]] box mixes *grams of arugula, bunches of beets, heads of lettuce, pounds of potato*, and the only way to total or cost them is to carry each as a [[measure]] (value + UN/CEFACT unit) and a [[currency]] amount and let them **[[rate|convert]] and [[balance|sum within their dimension]]** — never as the text `"2.00 лв"` that breaks the arithmetic.
 
-A crop is **cool-season or warm-season** (its [[season]] band), a **heavy or light feeder** (its [[fertility]] class), and **legume or not** (nitrogen-fixing ⇒ N ≈ 0); a **fruiting** crop sets its harvest only with [[pollination]]. Ranked by **net return per bed-foot** (the [[enterprisebudget|crop enterprise budget]]: `units × price − seed − inputs − labor`), it is also the unit of the drop-the-unprofitable decision.
+A crop is **cool-season or warm-season** (its season band), a **heavy or light feeder** (its [[fertility]] class), and **legume or not** (nitrogen-fixing ⇒ N ≈ 0); a **fruiting** crop sets its harvest only with [[pollination]]. Ranked by **net return per bed-foot** (the [[enterprisebudget|crop enterprise budget]]: `units × price − seed − inputs − labor`), it is also the unit of the drop-the-unprofitable decision.
 
 ## Standards
 - Johnny's Selected Seeds — Grower's Library crop charts (yield/100 ft, seeds/ft, spacing)
@@ -50,6 +50,6 @@ A crop is **cool-season or warm-season** (its [[season]] band), a **heavy or lig
 - Treating all units as countable pieces — a box mixes weight, count, and volume units; sum only within a [[dimension]].
 - Ranking crops by gross revenue, not net return per bed-foot — the latter is what frees the binding land × season [[bottleneck]].
 
-**Law — [[law]]: a crop is the agricultural SKU carrying agronomic constants ([[yield]]/area, spacing, N·K need, plantings × harvests) that explode a demand quantity into land·seed·[[fertility]]; its heterogeneous sale unit makes automatic [[conversion]] non-negotiable — sum only within a [[dimension]].**
+**Law — [[law]]: a crop is the agricultural SKU carrying agronomic constants (yield/area, spacing, N·K need, plantings × harvests) that explode a demand quantity into land·seed·[[fertility]]; its heterogeneous sale unit makes automatic conversion non-negotiable — sum only within a [[dimension]].**
 
-Composes [[agriculture]] · [[items]] · [[biological/assets]] · [[measure]] · [[currency]] · [[yield]] · [[fertility]] · [[planting]] · [[harvest]] · [[season]] · [[conversion]] · [[commerce]].
+Composes [[agriculture]] · [[items]] · [[biological/assets]] · [[measure]] · [[currency]] · yield · [[fertility]] · [[planting]] · [[harvest]] · season · conversion · [[commerce]].

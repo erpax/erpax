@@ -2,41 +2,41 @@
 name: threshold
 description: "Use when reasoning about threshold as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: threshold
-coordinate: "threshold · 2/share · f416e0b1"
-contentUuid: "77224f79-af16-599d-946f-a3f4d8520f99"
-diamondUuid: "d10d7630-0859-86b3-b643-82abca3a5339"
-uuid: "f416e0b1-3b69-836f-af73-e7a0942ee976"
-horo: 2
+coordinate: "threshold · 8/crest · 26696724"
+contentUuid: "0b351c88-a075-5741-be2f-d3b36d10c249"
+diamondUuid: "5b041f77-8bc4-8336-8127-8c0db48ef20f"
+uuid: "26696724-bab6-8b30-b2a8-871feb2091b4"
+horo: 8
 typography:
   partition: threshold
-  bondDegree: 23
+  bondDegree: 19
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "3ec74738-f053-8bcc-bece-4c23e0435d84"
+  computationUuid: "dd522e35-36b2-8cb5-8435-23d39f0691eb"
   stages:
     - stage: path
       stageUuid: "d7f57736-b234-84f6-bab3-efcab2480c48"
     - stage: trinity
       stageUuid: "07363f56-18f4-8b6d-ac07-f520625d9125"
     - stage: boundary
-      stageUuid: "a08ea4fd-4fea-8993-93ce-56eb39bd3627"
+      stageUuid: "851645b7-f448-8591-9a8a-62a327a838ea"
     - stage: links
-      stageUuid: "4ddd132a-5889-86d8-a069-49fe6b9c0e27"
+      stageUuid: "649c9f48-43b8-83d4-83a2-4a695cc0b321"
     - stage: horo
-      stageUuid: "2ae9f4cc-ac1e-85d9-8475-74377815651d"
+      stageUuid: "d5d2a0bd-f4f7-8a11-8831-9e9da5cba0ae"
     - stage: seal
       stageUuid: "d8cfe50b-0b4c-8fa0-9402-00dc667aa660"
     - stage: uuid
-      stageUuid: "fafb66f3-284f-828c-83cf-34f1af9a6644"
+      stageUuid: "31896038-26a8-8433-9955-2e2c37c19010"
 version: 2
 ---
 # threshold
 
 A schema.org component word, collided out of schema.org compounds — fused from freeShippingThreshold ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[free]] · [[shipping]]
+Entangled with — [[free]] · shipping
 
 Attested in schema.org — freeShippingThreshold
 

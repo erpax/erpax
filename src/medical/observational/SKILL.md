@@ -3,13 +3,13 @@ name: observational
 description: "Use when reasoning about observational as a medical facet of medical — vocabulary pivot to @/observational; nested not duplicated."
 atomPath: "medical/observational"
 coordinate: "medical/observational · 2/share · 5a3757e5"
-contentUuid: "4da26df0-fb73-5388-ac32-f82714e3e72e"
+contentUuid: "cf114e66-7463-5b4b-8ab2-85172542d10f"
 diamondUuid: "5c242769-019a-856f-a981-1298087d52ad"
 uuid: "5a3757e5-81d0-831d-b15c-3074ebc3271f"
 horo: 2
 typography:
   partition: medical
-  bondDegree: 24
+  bondDegree: 23
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

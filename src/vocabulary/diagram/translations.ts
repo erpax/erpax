@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about diagram — An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures.",
-    "uuid": "8be1ce31-c0cc-8aca-91ec-a8c53c0868d0",
+    "uuid": "3f279fa3-8d60-876f-b69a-871ff01f5027",
     "words": [
       "use",
       "when",

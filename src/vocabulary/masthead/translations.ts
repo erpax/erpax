@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about masthead — For a NewsMediaOrganization, a link to the masthead page or a page listing top editorial management.",
-    "uuid": "548b74e4-42af-8b2a-ae4b-b396e39196f2",
+    "uuid": "2f249b9c-cb73-8f34-8f6d-e6f98f165f36",
     "words": [
       "use",
       "when",

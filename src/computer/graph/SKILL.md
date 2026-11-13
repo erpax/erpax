@@ -3,13 +3,13 @@ name: graph
 description: Use when traversing corpus bonds as a directed graph — matrix adjacency under computer; executable not glossary.
 atomPath: "computer/graph"
 coordinate: "computer/graph · 4/weave · 5c9b47fc"
-contentUuid: "55a67b73-8d71-5e0a-99d1-ce56314dcba0"
+contentUuid: "8af2cc8e-7556-5f68-be3d-d9c383cdb275"
 diamondUuid: "e5711e0c-078c-8fd9-9918-5c61890b9117"
 uuid: "5c9b47fc-cb0f-81df-b384-8f006c0e7757"
 horo: 4
 typography:
   partition: computer
-  bondDegree: 42
+  bondDegree: 41
 standards:
   - directed graph (nodes + edges)
 bindings: []

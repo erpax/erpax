@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about bic — ISO 9362 BIC / SWIFT validator.",
-    "uuid": "66d8f287-07c7-8ca6-b409-242a07997d53",
+    "uuid": "7629b3b9-1b7f-85d1-867a-442f51bf5c40",
     "words": [
       "use",
       "when",

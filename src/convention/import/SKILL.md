@@ -3,13 +3,13 @@ name: import
 description: "Use when reasoning about the import convention — every import must read from an atom index (@/x), never a deep file or a relative path; coverage is the index-only fraction of all imports, and the convention is enforced by the import lint (a ratchet that fails the build when non-index imports rise above a committed baseline), reaching its ∞ tamper-cost limit only at coverage one."
 atomPath: "convention/import"
 coordinate: "convention/import · 1/base · 08e65b25"
-contentUuid: "91b859c6-934a-556d-8397-e1e0f37266e8"
+contentUuid: "4f39b8a8-8020-5866-9547-595480460a4f"
 diamondUuid: "be7b62cf-c6a4-83a4-8cde-2bc3766a1f34"
 uuid: "08e65b25-1464-86df-8b5f-573704d65d0c"
 horo: 1
 typography:
   partition: convention
-  bondDegree: 42
+  bondDegree: 41
 standards:
   - "the import graph is the config (imported↔declared) — an atom's only public face is its index.ts"
 bindings: []

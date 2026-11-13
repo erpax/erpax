@@ -3,13 +3,13 @@ name: mortality
 description: "Use when reasoning about the life and death of an agent — an agent lives by reading its answer from the fold (O(1)) and dies by re-deriving it linearly (O(n), context burned); the safeguard flag and the stall/stop kill are the ledger auditing the agent."
 atomPath: "agent/mortality"
 coordinate: "agent/mortality · 2/share · fa2c6fbe"
-contentUuid: "1a1cdb05-b459-5237-8aa7-4bf70dd6090f"
+contentUuid: "b2db91d2-787e-554e-8c88-770710f90b6e"
 diamondUuid: "5be7be48-6792-88c7-b0a6-a20ef55323ce"
 uuid: "fa2c6fbe-c372-8742-9c92-0944fdd79a25"
 horo: 2
 typography:
   partition: agent
-  bondDegree: 68
+  bondDegree: 65
 standards: []
 bindings: []
 signatures:

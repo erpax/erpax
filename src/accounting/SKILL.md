@@ -2,14 +2,14 @@
 name: accounting
 description: "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype."
 atomPath: accounting
-coordinate: "accounting · 7/descent · 47e13977"
-contentUuid: "9b3e975c-4f9d-5886-ab4d-ae315a1bd0cd"
-diamondUuid: "58dee222-1e0a-893f-a23b-5efb7e9fa165"
-uuid: "47e13977-113b-809a-9f64-2d26ba33df3a"
-horo: 7
+coordinate: "accounting · 5/round · 3a77e1b7"
+contentUuid: "990c7e7d-996c-5fda-a9ba-db5ff6af3c30"
+diamondUuid: "dd08e260-724d-8c4c-bc63-1dff8c248d9e"
+uuid: "3a77e1b7-ca00-81b3-afea-f1ea5fd3fa68"
+horo: 5
 typography:
   partition: accounting
-  bondDegree: 817
+  bondDegree: 781
 standards:
   - "EU-Intrastat-Reg-2019/2152"
   - "IAS-1"
@@ -19,7 +19,7 @@ standards:
   - "ISO-8601-1"
 bindings: []
 signatures:
-  computationUuid: "bb0e96e1-7c03-8cbe-a56f-88b912c91b8d"
+  computationUuid: "9029c33e-d920-8f46-bcbd-28c94d06f896"
   stages:
     - stage: path
       stageUuid: "23dc1848-55e7-8512-9c47-52c510777a82"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "00d1e814-a6cc-8f77-b4cc-c408d5872591"
     - stage: links
-      stageUuid: "86165bc5-8a02-852d-928e-632ab6a5c33e"
+      stageUuid: "4a07d593-47d2-8ebb-b596-5dc6a33dd678"
     - stage: horo
-      stageUuid: "29d18415-f335-8157-9154-69c3e4211744"
+      stageUuid: "c970bb10-809f-8573-bb70-e6019cb2311f"
     - stage: seal
       stageUuid: "c3103fdd-ed65-8eb6-89d0-e6cb44152940"
     - stage: uuid
-      stageUuid: "b46f7237-efed-89a9-a1cf-e7039041f561"
+      stageUuid: "513af6b9-ad27-8054-b1b8-760baaa03d01"
 version: 2
 ---
 # accounting — the universal ledger plugin (anything is accountable)
@@ -95,7 +95,7 @@ The reason accounting is self-sufficient: a `journal-line` (or audit event) poin
 | `CurrencyConcern` | `currencyField` (amount + ISO currency) |
 | `NumberConcern` (document numbering) | `numberField` + `beforeChange` sequence hook |
 | `HostConcern` (multi-tenant) | the multi-tenant plugin's injected `tenant` (NOT a hand-rolled field) — see [[plugins]] |
-| `AttachmentConcern` | `upload` relationship (see [[upload]]) |
+| `AttachmentConcern` | `upload` relationship (see upload) |
 | locked-period guard | `fiscal-periods` + write-guard [[hooks]] |
 
 ## Concern-heavy documents → nested field-groups (the fractal port)
@@ -109,7 +109,7 @@ A document like `invoices` composes ~40 Rails concerns; in Payload they fold int
 - Integer-cents-only without `currency` — carry currency everywhere (multi-currency ledgers).
 
 ## Traditions (prefix removed)
-Double-entry is the moral ledger of every tradition — deeds posted as [[take]] (debit/sin) and [[give]] (credit/merit), and the books must [[balance]] at the [[close]]: **karma** — "whatsoever a man soweth, that shall he also reap" (Galatians 6:7); the scales, *al-mizan* — "We place the scales of justice for the Day of Resurrection… the weight of a mustard seed, We will bring it" (Quran 21:47); the weighing of the heart against Ma'at's feather (Egyptian *Book of the Dead*); the books of deeds opened at judgment ([[akashic]]); the unpayable debt cleared by [[grace]] (the jubilee, Leviticus 25). erpax IS *karma double-entry* (see [[angel]]): entropy itself booked as debit/credit and conserved by content-[[uuid]], audited [[sacred]]/[[profane]].
+Double-entry is the moral ledger of every tradition — deeds posted as take (debit/sin) and [[give]] (credit/merit), and the books must [[balance]] at the [[close]]: **karma** — "whatsoever a man soweth, that shall he also reap" (Galatians 6:7); the scales, *al-mizan* — "We place the scales of justice for the Day of Resurrection… the weight of a mustard seed, We will bring it" (Quran 21:47); the weighing of the heart against Ma'at's feather (Egyptian *Book of the Dead*); the books of deeds opened at judgment ([[akashic]]); the unpayable debt cleared by [[grace]] (the jubilee, Leviticus 25). erpax IS *karma double-entry* (see [[angel]]): entropy itself booked as debit/credit and conserved by content-[[uuid]], audited sacred/[[profane]].
 
 Composes: [[budget/plannings]] · [[financial/statements]] · [[government/grants]] · [[held/for/sale/classifications]] · [[insurance/contracts]] · [[justice]] · [[mineral/resource/assets]] · [[regulatory/deferral/accounts]] · [[bank]] · [[disclosure]] · [[elimination]].
 

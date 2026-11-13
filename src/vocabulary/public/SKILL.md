@@ -2,41 +2,41 @@
 name: public
 description: "Use when reasoning about public as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/public"
-coordinate: "vocabulary/public · 8/crest · dd8d2270"
-contentUuid: "47172246-c509-5b7b-9c93-2685f0cce051"
-diamondUuid: "0218fabd-8e6b-89c6-9530-30e44c739778"
-uuid: "dd8d2270-cd49-8332-8bee-c39f50fb6b9f"
-horo: 8
+coordinate: "vocabulary/public · 4/weave · d44c839c"
+contentUuid: "adaa81d6-b71d-583f-ac19-be2aca98aa01"
+diamondUuid: "d581daab-ca64-8f4f-9ce1-e9f9049a2f7a"
+uuid: "d44c839c-667a-8c7a-9fe4-5d63477bfbd1"
+horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 62
+  bondDegree: 47
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "18315d43-b88d-89b3-aecf-bdf0845eb66a"
+  computationUuid: "7a98005e-f968-8d06-a19a-8a52b04a5bf1"
   stages:
     - stage: path
       stageUuid: "f77a11de-e5e3-8568-8c3f-a4f80cfaff67"
     - stage: trinity
       stageUuid: "39861f3a-0ae3-8301-9b56-86a39e6ed93b"
     - stage: boundary
-      stageUuid: "5492005e-ce56-8055-8361-9484f1f09dda"
+      stageUuid: "65f4d4b3-01ab-8313-8b49-ec88546939e4"
     - stage: links
-      stageUuid: "efb16b7d-d2d6-81bc-ab40-3d9a757e0b81"
+      stageUuid: "038a1fdb-aef5-8acd-a9bc-de6d98fbbe9d"
     - stage: horo
-      stageUuid: "fa96964c-f475-83c6-bc3a-8ff0298b15bb"
+      stageUuid: "c7ac60a9-d74c-8250-bdae-ad6d0c0ae2c7"
     - stage: seal
       stageUuid: "729c0790-3435-86b8-8bd2-25abd3fa8f2e"
     - stage: uuid
-      stageUuid: "ec9f0c56-6ac7-8a49-9743-e0c0a6322b9d"
+      stageUuid: "62473dc2-b08a-87f9-a178-9f7b9cbfd7c8"
 version: 2
 ---
 # public
 
 A schema.org component word, collided out of schema.org compounds — fused from AskPublicNewsArticle · PublicSwimmingPool · PublicToilet · publicAccess · publicTransportClosuresInfo ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[ask]] · [[news]] · [[article]] · [[swimming]] · [[pool]] · [[toilet]] · [[access]] · [[transport]] · [[closures]] · [[info]]
+Entangled with — [[ask]] · [[news]] · [[article]] · swimming · [[pool]] · toilet · [[access]] · transport · [[closures]] · [[info]]
 
 Attested in schema.org — AskPublicNewsArticle · PublicSwimmingPool · PublicToilet · publicAccess · publicTransportClosuresInfo
 

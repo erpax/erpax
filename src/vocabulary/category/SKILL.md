@@ -2,41 +2,41 @@
 name: category
 description: Use when reasoning about category — A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
 atomPath: "vocabulary/category"
-coordinate: "vocabulary/category · 7/descent · 4fdde888"
-contentUuid: "18fdaf00-0ecd-5a1d-892b-8a3040bddd73"
-diamondUuid: "e1e366f4-236b-8121-ac3e-f52dbc3cd69a"
-uuid: "4fdde888-4a9a-88b3-9e6b-7e3ac77a7acd"
-horo: 7
+coordinate: "vocabulary/category · 8/crest · b64587a8"
+contentUuid: "a0f67ab2-1f2c-586d-913f-716fbebce424"
+diamondUuid: "70c80ddc-acfd-87d8-8936-381baabe03c2"
+uuid: "b64587a8-85c2-8e94-a78f-b2af5a0aacb7"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 99
+  bondDegree: 77
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "540cf0ae-19e5-867a-a828-efca9ee87536"
+  computationUuid: "da841318-22c5-8611-86d8-9f9dd3fccdaf"
   stages:
     - stage: path
       stageUuid: "7d619975-0ca9-8d39-8b29-ea73a44ed23b"
     - stage: trinity
       stageUuid: "31fead7f-2b91-8077-b814-5887dcdfc055"
     - stage: boundary
-      stageUuid: "4aae74d4-9cf0-8cc0-85d8-e1e34099aaec"
+      stageUuid: "dfb9af84-e1ba-8683-a35c-6a6a6b44f526"
     - stage: links
-      stageUuid: "d8aab23a-af40-8fa6-9f99-ca8d346734c8"
+      stageUuid: "90f41571-1c4e-8ce9-8eac-84fc25b158c8"
     - stage: horo
-      stageUuid: "320823dc-589a-899e-beb8-4776f51fc089"
+      stageUuid: "5027efca-5993-865c-8f80-8925ea9d371f"
     - stage: seal
       stageUuid: "b0d1a987-9bcf-874f-8be4-11d6ce84ff2c"
     - stage: uuid
-      stageUuid: "ef6c3d8c-6cea-8009-9937-f927a16671d3"
+      stageUuid: "649d6e75-39bc-8740-91e3-8363703480bf"
 version: 2
 ---
 # category
 
 A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
 
-Entangled with — [[code]] · [[set]] · [[drug]] · [[cost]] · [[pregnancy]] · [[map]] · [[type]] · [[physical]] · [[activity]] · [[accommodation]] · [[application]] · [[sub]] · [[credential]] · [[has]] · [[energy]] · [[efficiency]] · [[health]] · [[plan]] · [[pharmacy]] · [[media]] · [[authenticity]] · [[occupational]] · [[recipe]] · [[return]] · [[policy]]
+Entangled with — [[code]] · set · [[drug]] · [[cost]] · [[pregnancy]] · [[map]] · [[type]] · [[physical]] · [[activity]] · accommodation · [[application]] · sub · [[credential]] · [[has]] · energy · [[efficiency]] · health · [[plan]] · [[pharmacy]] · [[media]] · [[authenticity]] · [[occupational]] · [[recipe]] · return · [[policy]]
 
 Attested in schema.org — CategoryCode · CategoryCodeSet · DrugCostCategory · DrugPregnancyCategory · MapCategoryType · PhysicalActivityCategory · accommodationCategory · applicationCategory · applicationSubCategory · category · costCategory · credentialCategory · hasCategoryCode · hasEnergyEfficiencyCategory · healthPlanPharmacyCategory · mediaAuthenticityCategory · occupationalCategory · pregnancyCategory · recipeCategory · returnPolicyCategory
 

@@ -2,41 +2,41 @@
 name: pregnancy
 description: "Use when reasoning about pregnancy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/pregnancy"
-coordinate: "vocabulary/pregnancy · 1/base · fc705cb6"
-contentUuid: "1da4984c-448d-5c29-b53d-d16aab85cb32"
-diamondUuid: "b08abe33-9718-8a1c-b70d-5a03c3aff2dd"
-uuid: "fc705cb6-88ca-8e93-bdcf-b169c4d78107"
-horo: 1
+coordinate: "vocabulary/pregnancy · 2/share · 2d79da91"
+contentUuid: "3db73a3b-96de-5213-be43-08ef9614aa45"
+diamondUuid: "09f4f087-3f59-8254-bf59-ebdeeb425f23"
+uuid: "2d79da91-646b-8b7d-b8a3-af7437560efe"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 26
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "20b94809-0264-82df-bf07-9cdc3b645a84"
+  computationUuid: "cad3326f-db53-855e-97c8-84827b5eabe4"
   stages:
     - stage: path
       stageUuid: "3469e18c-9150-8632-ab7f-37d068297842"
     - stage: trinity
       stageUuid: "aaa24cfb-10de-8a8f-8709-d856a23386e7"
     - stage: boundary
-      stageUuid: "97fb354d-7f8e-8f1f-adae-47421d367ffd"
+      stageUuid: "02facfeb-20c8-89ff-b3c8-d072435e7694"
     - stage: links
-      stageUuid: "2e8118b1-369d-8ea9-b71b-266e7d9c9550"
+      stageUuid: "64b1b5cd-c01f-8659-b2de-89c7b6711ff7"
     - stage: horo
-      stageUuid: "6b404059-eed7-8f7d-a4c1-a5bc7d0e48d8"
+      stageUuid: "1a8a1f34-17e2-8c10-85e5-c183336aa5b5"
     - stage: seal
       stageUuid: "0ee4473d-bb6f-899b-8f41-42c03cd2ec08"
     - stage: uuid
-      stageUuid: "c7491338-f81a-89dc-9201-edc6dfb67173"
+      stageUuid: "a7995ba3-7516-8670-b27e-3025c3f8be80"
 version: 2
 ---
 # pregnancy
 
 A schema.org component word, collided out of schema.org compounds — fused from DrugPregnancyCategory · pregnancyCategory · pregnancyWarning ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[drug]] · [[category]] · [[warning]]
+Entangled with — [[drug]] · [[category]] · warning
 
 Attested in schema.org — DrugPregnancyCategory · pregnancyCategory · pregnancyWarning
 

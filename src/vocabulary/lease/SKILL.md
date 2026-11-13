@@ -3,13 +3,13 @@ name: lease
 description: "Use when reasoning about lease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/lease"
 coordinate: "vocabulary/lease · 4/weave · be045b2b"
-contentUuid: "019eb0a6-cb9b-5f9b-af6e-d271950f63aa"
+contentUuid: "501ca511-3c11-5784-89de-c6b305c45735"
 diamondUuid: "9afd67e4-a1d1-8ad9-87ab-e70c46ab96bb"
 uuid: "be045b2b-962d-85fe-b215-23133d64e719"
 horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 20
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

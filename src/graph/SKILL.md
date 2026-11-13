@@ -3,13 +3,13 @@ name: graph
 description: "Use when modeling a directed graph of nodes and edges — neighbors and breadth-first reachability over an edge list; the shape of the corpus itself, atoms as nodes and links as edges."
 atomPath: graph
 coordinate: "graph · 5/round · ca6852f6"
-contentUuid: "6c15b20e-5495-5ec6-bb98-58a9ede2a05a"
+contentUuid: "c723f442-da46-5fa6-9518-5a2f6a1018a8"
 diamondUuid: "15d54a41-a82f-80d2-bb45-4c956f287b68"
 uuid: "ca6852f6-9c59-89ed-8957-018604de4c9b"
 horo: 5
 typography:
   partition: graph
-  bondDegree: 42
+  bondDegree: 41
 standards:
   - "directed graph (nodes + edges), breadth-first reachability"
 bindings: []

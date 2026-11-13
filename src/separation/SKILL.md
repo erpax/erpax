@@ -3,13 +3,13 @@ name: separation
 description: "Use when checking the separation of powers — that no single actor holds two of the legislative, executive, or judicial branches; the anti-corruption segregation-of-duties invariant applied at the scale of the state."
 atomPath: separation
 coordinate: "separation · 5/round · 2b739745"
-contentUuid: "e73800bd-94ba-5073-bb8e-c0c1269a4562"
+contentUuid: "42a835dd-c891-5eb4-9c44-95dbd7218859"
 diamondUuid: "138e37d9-2cbd-86af-8f0a-0b2926c97794"
 uuid: "2b739745-b328-8ef8-a6f9-da8ea31754df"
 horo: 5
 typography:
   partition: separation
-  bondDegree: 29
+  bondDegree: 27
 standards:
   - "Montesquieu separation-of-powers (legislative · executive · judicial)"
   - "SOX §404 segregation-of-duties (the same invariant, public-office scale)"

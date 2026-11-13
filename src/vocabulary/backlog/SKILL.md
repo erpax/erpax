@@ -2,40 +2,40 @@
 name: backlog
 description: "Use when managing a prioritized list of pending work — features to build, bugs to fix, support tickets, maintenance requests. The work-capture system."
 atomPath: "vocabulary/backlog"
-coordinate: "vocabulary/backlog · 2/share · 0476334e"
-contentUuid: "24f36602-1323-510d-a015-e5d0bc3a272f"
-diamondUuid: "a1936d99-bcab-8af7-8f98-288df5b3c2e0"
-uuid: "0476334e-1eae-89f6-bf56-57f94cb90857"
-horo: 2
+coordinate: "vocabulary/backlog · 5/round · b812713b"
+contentUuid: "24d5fb59-c1e5-54bb-b79d-2775473f65b9"
+diamondUuid: "1b7f0a86-8102-8c2f-9421-20365206b736"
+uuid: "b812713b-88b4-8f9d-b855-3cb6bca62080"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 18
+  bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a7361ead-6bf6-8c22-b859-93890be9e4a3"
+  computationUuid: "1180f5f9-a28f-827f-971a-49528f5a68bf"
   stages:
     - stage: path
       stageUuid: "473661f8-9c4c-8cc6-81b3-b2bdae6f1106"
     - stage: trinity
       stageUuid: "470f2425-accd-8728-8550-3eca23965ad4"
     - stage: boundary
-      stageUuid: "89495637-4191-8437-b68e-24b6f3054781"
+      stageUuid: "f91500fa-3d3d-853f-9b7a-c76b31f4215e"
     - stage: links
-      stageUuid: "bbd06a5a-4216-8693-85fa-85c04af9f93e"
+      stageUuid: "03971a8a-54ae-8083-b33f-ab1412bc6e7c"
     - stage: horo
-      stageUuid: "98103849-56de-8168-b9d2-26982251036f"
+      stageUuid: "6ad383b5-8388-8d7f-b42e-37724e99c0c9"
     - stage: seal
       stageUuid: "1574b545-8dac-8961-b424-5bc8a90e48e1"
     - stage: uuid
-      stageUuid: "4b78274e-3e9b-88e8-bb72-e5fcb288148b"
+      stageUuid: "2c1a04d0-6dae-80ef-90cd-ae4f12422811"
 version: 2
 ---
 # backlog
 
 Use when managing a prioritized list of pending work — features to build, bugs to fix, support tickets, maintenance requests. The work-capture system.
 
-Composes: [[customers/projects/project/tasks]] · [[workflow/definitions]] · [[schedule]] · [[priority]] · [[ticket]].
+Composes: [[customers/projects/project/tasks]] · [[workflow/definitions]] · schedule · [[priority]] · ticket.
 
 ## Standards
 - Agile methodology (product backlog)

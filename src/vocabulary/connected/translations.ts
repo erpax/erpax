@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about connected — Other anatomical structures to which this structure is connected.",
-    "uuid": "e1e26f7e-47e2-8389-adb7-845b73d22987",
+    "uuid": "f8192f6e-07d5-8a82-8a67-d9b06287c72a",
     "words": [
       "use",
       "when",

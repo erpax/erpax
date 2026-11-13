@@ -2,41 +2,41 @@
 name: efficiency
 description: "Use when reasoning about efficiency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/efficiency"
-coordinate: "vocabulary/efficiency · 2/share · d0576edf"
-contentUuid: "73b69dd0-1b3d-5b35-8286-b6d3888619f4"
-diamondUuid: "9c43a24e-6514-820c-ac57-79eba902cd2a"
-uuid: "d0576edf-eb8b-8bb0-bf71-5898f51e522d"
-horo: 2
+coordinate: "vocabulary/efficiency · 5/round · 9999111f"
+contentUuid: "41531e57-ba2d-54cc-a3cd-6af4dce0d639"
+diamondUuid: "c73d9343-77ac-8df9-ad96-fd46e51f1262"
+uuid: "9999111f-429f-80e8-badc-834297556504"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 62
+  bondDegree: 51
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c50a48cf-0974-8910-b122-43978bae6984"
+  computationUuid: "63d4e8ef-9b4e-8037-83b5-51ae1ebf5c56"
   stages:
     - stage: path
       stageUuid: "bada7275-8061-8f4e-a6d7-228eee47f24e"
     - stage: trinity
       stageUuid: "a652afb0-ea88-824b-9f6d-32080502d9de"
     - stage: boundary
-      stageUuid: "88183e2e-658d-85bc-afda-3909409620f6"
+      stageUuid: "7e2258f6-f38d-87d5-99e7-eb5806f7db93"
     - stage: links
-      stageUuid: "822392f5-733d-8b6b-a2be-0db940f1dfc9"
+      stageUuid: "946e21d4-1ff2-87c0-bfb7-61fda2c8fa05"
     - stage: horo
-      stageUuid: "12d7ab38-64db-852d-b234-c3425b34617f"
+      stageUuid: "739efce8-2529-8f06-8d56-56d46dd63b5f"
     - stage: seal
       stageUuid: "5f0fc1db-7742-843e-a4a8-18c32b232f8b"
     - stage: uuid
-      stageUuid: "eeca3953-cc7d-8ed7-aab5-aeb5c333e3a0"
+      stageUuid: "8e8572f6-ade3-8513-bd01-7f23047aad1a"
 version: 2
 ---
 # efficiency
 
 A schema.org component word, collided out of schema.org compounds — fused from EUEnergyEfficiencyEnumeration · EnergyEfficiencyEnumeration · EnergyStarEnergyEfficiencyEnumeration · energyEfficiencyScaleMax · energyEfficiencyScaleMin · fuelEfficiency · hasEnergyEfficiencyCategory ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[eu]] · [[energy]] · [[enumeration]] · [[star]] · [[scale]] · [[max]] · [[min]] · [[fuel]] · [[has]] · [[category]]
+Entangled with — [[eu]] · energy · [[enumeration]] · star · scale · [[max]] · [[min]] · [[fuel]] · [[has]] · [[category]]
 
 Attested in schema.org — EUEnergyEfficiencyEnumeration · EnergyEfficiencyEnumeration · EnergyStarEnergyEfficiencyEnumeration · energyEfficiencyScaleMax · energyEfficiencyScaleMin · fuelEfficiency · hasEnergyEfficiencyCategory
 

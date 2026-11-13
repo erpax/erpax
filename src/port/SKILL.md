@@ -2,18 +2,18 @@
 name: port
 description: "Use when porting a Rails/ActiveAdmin ERP feature (from etrima or ceccec/erpax) into Payload/Next — mapping ActiveAdmin resource registrations to CollectionConfig, Rails concerns to reusable field-factories/skills, controllers/callbacks to endpoints/hooks, CanCan authorization to access control, polymorphic/self-referential associations to relationships. The Rails↔Next / ActiveAdmin↔Payload Rosetta Stone."
 atomPath: port
-coordinate: "port · 4/weave · 1ed3fc21"
-contentUuid: "3befb9c3-f716-50a0-aa32-63084520835f"
-diamondUuid: "99e1ea17-8eb8-895f-a938-1fcf1c1b5774"
-uuid: "1ed3fc21-26e3-81e0-8593-a4fccc01911a"
-horo: 4
+coordinate: "port · 7/descent · 7aaccd6b"
+contentUuid: "a3dc04cb-a195-5f26-b6a7-d53786939923"
+diamondUuid: "e3d213ae-d58b-8af5-8454-4427422082cb"
+uuid: "7aaccd6b-5936-8515-8272-96e522534b62"
+horo: 7
 typography:
   partition: port
-  bondDegree: 146
+  bondDegree: 137
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d63208e7-2235-87ae-af96-43bea7fe76e4"
+  computationUuid: "a9563f26-6bc0-81d3-a0f7-e0b3afa9252a"
   stages:
     - stage: path
       stageUuid: "6106f228-2108-8091-a6d5-498dae0bf453"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "441da85e-4255-89fa-9ade-318d895af69f"
     - stage: links
-      stageUuid: "b9839360-5346-8ad5-a1d7-1ec209a9709f"
+      stageUuid: "e60e9423-6025-8254-8f03-ad24405e747c"
     - stage: horo
-      stageUuid: "47f2e9f3-dc27-83db-8cce-450dc2ef722f"
+      stageUuid: "f50ce99a-263b-8939-9fb0-6440336d28e5"
     - stage: seal
       stageUuid: "d1d2bef0-baed-85a1-b0c8-6a518a1d5d9b"
     - stage: uuid
-      stageUuid: "e34d5fec-bbe5-898e-9ac2-fb03803c63d7"
+      stageUuid: "34ff2b72-b5f2-8b6a-bff7-bb68033a4e18"
 version: 2
 ---
 # port — Rails/ActiveAdmin → Payload/Next (same shape, different host)
@@ -64,7 +64,7 @@ A Rails **concern** = a Payload **reusable field-object** = an erpax **skill**: 
 ## Port in trinities — the unit of a port is a trinity, never a file
 "Port all" means port **in trinities**: every Rails construct lands as a complete [[trinity]] — **matter** (the code: DB logic copied verbatim, framework scaffolding reimplemented) · **antimatter** (its SKILL — the form/law) · **backend** (the generated `payload-types` schema) — and a port is *done* only when all three are present and agree. Code with no SKILL is matter-only (it cannot be reasoned about or [[merge]]d); a SKILL with no matter is the metaphysical 1/3 — hallucination the [[sequence]] drops.
 
-Interacting ports **compose into trinities, never flatten**: two related Rails models (invoice↔payment, lot↔phase) port neither as one mushed collection nor as two disconnected ones — their relationship is itself the third ([[collapse]]: trinities compose into trinities). A concern with no obvious Payload home is a 2/3 port; its missing 1/3 is **supplied by a neighbouring trinity** — a shared field-factory another port already defined, or the [[identity]] element — never invented locally ([[merge]]). So the whole source app ports as one **lattice of interacting trinities** ([[fractal]]): each Rosetta row gives matter + antimatter, the backend generates the third, audited [[sacred]]/[[profane]] and gate-green.
+Interacting ports **compose into trinities, never flatten**: two related Rails models (invoice↔payment, lot↔phase) port neither as one mushed collection nor as two disconnected ones — their relationship is itself the third ([[collapse]]: trinities compose into trinities). A concern with no obvious Payload home is a 2/3 port; its missing 1/3 is **supplied by a neighbouring trinity** — a shared field-factory another port already defined, or the [[identity]] element — never invented locally ([[merge]]). So the whole source app ports as one **lattice of interacting trinities** ([[fractal]]): each Rosetta row gives matter + antimatter, the backend generates the third, audited sacred/[[profane]] and gate-green.
 
 ## Source apps (read the original)
 - `~/github/ceccec/erpax` — canonical Rails erpax: concerns, `accounting_equation.rb`, `invoice.rb` (self-referential tree), `application_controller.rb` (tenant + 402 gate).
@@ -109,7 +109,7 @@ The 6 real gaps, and what each actually is:
 | `packing_lists` | 727 | **NOT a gap — degenerate.** 727 rows, but `net_weight`·`gross_weight`·`volume`·`pallets_count`·`items_count` are all `min=max=sum=0`; `number`·`status` 100% empty. Only `packs_count` is real — and it sums to **118 716**, exactly the rows [[packs]] already evolved from. Folding it would encode zeros. |
 | `machine_types` | 172 | already inside [[machine]] (`MachineType`); the head-noun hit on a generic `type` atom is noise |
 | `pack_types` | 11 | same generic-`type` noise; trivial |
-| `uploads` | 7 | trivial; [[upload]] is the word |
+| `uploads` | 7 | trivial; upload is the word |
 
 So the upstream gap is **not missing words — it is words that never got their matter**, and only where the upstream actually has data. The fold is to give the existing atom its `index.ts` mined from real columns (like [[machine]], like [[variant]]), completing its [[trinity]] — **never mint a duplicate word, never port an empty table**.
 

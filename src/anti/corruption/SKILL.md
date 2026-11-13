@@ -2,14 +2,14 @@
 name: corruption
 description: "Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable."
 atomPath: "anti/corruption"
-coordinate: "anti/corruption · 8/crest · ada3793e"
-contentUuid: "c3b05518-89ab-51aa-ae7e-48c002e7f87d"
-diamondUuid: "2f2dc2b6-8d88-8cd4-b384-38d44bd0bc05"
-uuid: "ada3793e-dd15-82f0-9de9-e0a8fce087ad"
-horo: 8
+coordinate: "anti/corruption · 4/weave · 1a247019"
+contentUuid: "55a19e93-ef4a-5e5c-89f6-19a246960b26"
+diamondUuid: "7ac1b081-1c97-8993-b544-e68b068c2c10"
+uuid: "1a247019-f9fe-8485-baf8-dcd9c1a615dc"
+horo: 4
 typography:
   partition: anti
-  bondDegree: 72
+  bondDegree: 69
 standards:
   - "ISO-19011"
   - "ISO-19011`"
@@ -19,7 +19,7 @@ standards:
   - "SOX §404 segregation-of-duties internal-controls"
 bindings: []
 signatures:
-  computationUuid: "c333ac1c-7b66-8762-996d-b9bbde2e62ba"
+  computationUuid: "4c33cbe5-ab41-8c25-b9d7-bcb55f15ea3e"
   stages:
     - stage: path
       stageUuid: "29d53fec-2df7-8ef3-b27b-76fdbd140708"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "64d37a2e-2809-81d5-9905-ddd70eddd780"
     - stage: links
-      stageUuid: "95c594ce-539f-84a9-8062-deea5da92d05"
+      stageUuid: "0fb37050-1a1b-8491-b1fc-466d894ce031"
     - stage: horo
-      stageUuid: "da4156eb-2f9c-8353-825a-f020ef338904"
+      stageUuid: "f7993b93-06d1-87bf-abda-6da3e2d01d5b"
     - stage: seal
       stageUuid: "e21c760a-79f7-8a0b-baad-c61cfdef37a5"
     - stage: uuid
-      stageUuid: "c5b3ac02-681d-8ebd-ade6-9e9d347d3974"
+      stageUuid: "c8497f4e-cdb9-81cb-9719-45341dffa53b"
 version: 2
 ---
 # anti-corruption — corruption foreclosed by construction, not policed by policy
@@ -44,7 +44,7 @@ FORM: **a ledger is corruption-free iff four invariants hold at once, each a dif
 1. **content-uuid immutability** — the record's id IS the SHA of its content ([[identity]]); recompute ≠ stored ⇒ tamper detected, not believed. `detectTamper`.
 2. **segregation of duties** — creator ≠ approver ≠ payer (four-eyes); no single actor completes a value transfer ([[access]], SOX §404). `detectSodViolation`.
 3. **double-entry balance** — Σdebit = Σcredit; value cannot be fabricated from nothing ([[balance]], [[accounting]]). `detectImbalance`.
-4. **no-delete / reversal-only** — history is append-only; correct by a reversing entry, never erase a posted row ([[reverse]], [[supto]] Наредба Н-18). `detectIllegalErasure`.
+4. **no-delete / reversal-only** — history is append-only; correct by a reversing entry, never erase a posted row (reverse, [[supto]] Наредба Н-18). `detectIllegalErasure`.
 
 `scanTransaction` runs all four; any finding is a corruption signal. All pure (no I/O) ⇒ testable. A document `afterChange` [[hooks]] hook + a scheduled audit job consume it over the live ledger, each pass emitting an audit [[event]].
 

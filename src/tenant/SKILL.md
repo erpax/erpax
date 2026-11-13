@@ -3,13 +3,13 @@ name: tenant
 description: "Use when modelling one tenant — the singular model of the tenants collection (the plural store); one isolated organization within the multi-tenant platform."
 atomPath: tenant
 coordinate: "tenant · 7/descent · 4b77a70e"
-contentUuid: "2d3c0d1f-c9a5-5e0c-bc12-4447d7e29394"
+contentUuid: "3ffd8bfb-d5b4-509a-973f-8a2e540695bd"
 diamondUuid: "0010058c-9a8e-8265-8dbc-915828abf59c"
 uuid: "4b77a70e-0ac0-8bef-890d-cf3825df1e7a"
 horo: 7
 typography:
   partition: tenant
-  bondDegree: 59
+  bondDegree: 58
 standards:
   - BEPS
   - "Berlin-Group-PSD2"

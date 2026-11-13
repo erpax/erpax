@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking what each USER is being told that nothing can contradict — projects every unproven @invariant and confessed stub onto the reader it is addressed to (director, auditor, compliance-officer, accountant …), because a claim citing SOX §302 is addressed to whoever signs it. The readers are computed from the config; the role→standard map is declared in the open. Run: tsx src/rules/audience/index.ts",
-    "uuid": "eaa7eb7a-7e4e-81eb-b72b-ee1a1f9e971d",
+    "uuid": "2abe1137-6195-86d4-a3d8-4f5267e25505",
     "words": [
       "use",
       "when",

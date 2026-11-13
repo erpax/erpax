@@ -2,41 +2,41 @@
 name: min
 description: "Use when reasoning about min as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/min"
-coordinate: "vocabulary/min · 5/round · 96ddc740"
-contentUuid: "b6d4682d-75cd-5ae7-95d7-107a1e78889f"
-diamondUuid: "eb783eac-a2b6-80e5-86f4-2b5ab50e8324"
-uuid: "96ddc740-98c7-8320-8f01-0d418e15028a"
-horo: 5
+coordinate: "vocabulary/min · 7/descent · f63cb977"
+contentUuid: "521aeefb-3e1d-55f4-bf50-e3abb0291f20"
+diamondUuid: "3de93ff7-72e9-8718-83be-b7176dd17b6c"
+uuid: "f63cb977-c80c-80c7-b5f2-d14daa0850c0"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 51
+  bondDegree: 37
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "67abb8d2-52be-8688-bd0c-97ce62fff6e5"
+  computationUuid: "c8523353-db9d-8068-a82b-21a1fd28c96e"
   stages:
     - stage: path
       stageUuid: "7ca7fb29-111f-8ec9-b80e-d49221556cc5"
     - stage: trinity
       stageUuid: "e39bbc03-da1f-88a5-9116-52294d428d9d"
     - stage: boundary
-      stageUuid: "ddf0a065-7dbb-834b-98f4-f945a0f44168"
+      stageUuid: "a33a43e2-68a8-8291-9a31-7906638d65ee"
     - stage: links
-      stageUuid: "84e87513-e569-8772-aac7-4137ad92e298"
+      stageUuid: "4836575f-1f3c-8ab4-8ccc-213eee3388b0"
     - stage: horo
-      stageUuid: "833ef675-04db-85ae-ba17-459491434e84"
+      stageUuid: "83349644-ba02-8c86-a287-fd4493e6ffe8"
     - stage: seal
       stageUuid: "16d077bc-35ec-8aea-b976-a507e0a20e48"
     - stage: uuid
-      stageUuid: "d2c55cbc-5608-8aeb-9a95-d191df6da6ed"
+      stageUuid: "4eb0b44b-7fa6-81bf-8901-a2e85cf11ed3"
 version: 2
 ---
 # min
 
 A schema.org component word, collided out of schema.org compounds — fused from childMinAge · energyEfficiencyScaleMin · minPrice · minValue · requiredMinAge · suggestedMinAge · valueMinLength ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[child]] · [[age]] · [[energy]] · [[efficiency]] · [[scale]] · [[price]] · [[value]] · [[required]] · [[suggested]] · [[length]]
+Entangled with — [[child]] · [[age]] · energy · [[efficiency]] · scale · [[price]] · value · [[required]] · suggested · [[length]]
 
 Attested in schema.org — childMinAge · energyEfficiencyScaleMin · minPrice · minValue · requiredMinAge · suggestedMinAge · valueMinLength
 

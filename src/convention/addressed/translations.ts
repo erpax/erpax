@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an atom needs an identity — the convention is that identity is content-addressed as a v8 uuid derived from what the atom IS, never an arbitrary external name; this atom measures the corpus's live content-address coverage = addressed / total over the real tree.",
-    "uuid": "f5d9b063-f48a-8bda-a9c4-24c8e6a20152",
+    "uuid": "6f9c5734-080b-80de-9d57-e418150a38f2",
     "words": [
       "use",
       "when",

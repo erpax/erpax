@@ -3,13 +3,13 @@ name: payments
 description: "Use when recording employee equity grants — stock options, RSUs, RSAs, PSUs, ESPP, SARs — under IFRS 2, tracking equity-settled vs cash-settled treatment, vesting tranches with service/performance/market conditions, cumulative expense recognition, exercises and forfeitures. The IFRS 2 share-based-payment grant register."
 atomPath: "employees/share/based/payments"
 coordinate: "employees/share/based/payments · 7/descent · 82713e4f"
-contentUuid: "d50e0b0c-721a-57f1-a59d-ccb331bc6cf8"
+contentUuid: "27221158-3d6b-501b-9576-1eac7af9c438"
 diamondUuid: "d3c8a7b1-f05c-87dc-8867-df7b67f1ce88"
 uuid: "82713e4f-9c45-8915-9b77-460df5c02340"
 horo: 7
 typography:
   partition: employees
-  bondDegree: 40
+  bondDegree: 39
 standards:
   - "IFRS IFRS-2 §10-§13 equity-settled-share-based-payment"
   - "IFRS IFRS-2 §10-§13 equity-settled-share-based-payment`"

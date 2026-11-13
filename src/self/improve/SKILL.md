@@ -2,18 +2,18 @@
 name: improve
 description: "Use when reasoning about the corpus improving itself with NO external tool — the development-time twin of self/closure's Law 53. Every stage of the improvement loop (leftover · rosetta · decide · publish · think) is a local atom; selfImproves proves the external-tool count is zero and loopResolves proves the loop is real matter on disk, not fabricated prose."
 atomPath: "self/improve"
-coordinate: "self/improve · 4/weave · 2d180b02"
-contentUuid: "113617ef-10b7-5b91-a51e-879a23af9ede"
-diamondUuid: "06163861-fbc0-8fdd-b075-bc3d543d9034"
-uuid: "2d180b02-a473-8ebd-a944-887b4d0a30f5"
-horo: 4
+coordinate: "self/improve · 7/descent · 8fe6a6f6"
+contentUuid: "1cd9c1c4-a9cc-5a18-9159-504f04db0d62"
+diamondUuid: "bb18a56e-3403-8349-8705-04c3d240d2e9"
+uuid: "8fe6a6f6-c638-875c-953d-3d7b8cdc6363"
+horo: 7
 typography:
   partition: self
-  bondDegree: 40
+  bondDegree: 37
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0057f50e-8765-8c63-b0e3-304e6db9733a"
+  computationUuid: "d9aee8f8-373c-8cb6-9aa5-8525f7a6d331"
   stages:
     - stage: path
       stageUuid: "ef6959ec-23b7-8f68-85aa-586b4be5302e"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "fabfefd0-ef07-85f5-8ced-68b4ad81a3ff"
     - stage: links
-      stageUuid: "0f8ff962-5608-81c3-92b2-321aca424a99"
+      stageUuid: "181b8696-b134-8b17-942e-cbee754351d0"
     - stage: horo
-      stageUuid: "6a26759d-4700-85e9-8770-e565a07547e3"
+      stageUuid: "92318a49-9ff2-846b-a2fb-419a081caa03"
     - stage: seal
       stageUuid: "849700c0-4916-8ca7-a447-74b0b1b0b226"
     - stage: uuid
-      stageUuid: "b6a858a4-c5ab-848c-b7af-c5af6a29d10e"
+      stageUuid: "c47a86e7-bc96-86d1-a72c-fd989855c7e7"
 version: 2
 ---
 # self/improve — the corpus improves itself with no external tool
@@ -57,7 +57,7 @@ It consumes its own output: the waves say where to cut, the folder-agents cut, t
 
 ## The agent cannot stop unless stopped — `shouldContinue`
 
-A self-improving loop has **no honest "done" state**. The seed floor guarantees a leftover always remains while `s > 0` ([[leftover]]`.seedFloor`), and the address space is infinite — all exists at once and is only ever partly discovered ([[discover]]). So there is never a moment the loop can truthfully say "no work left" and halt itself. It is **relentless by construction**: `shouldContinue(s, residual, stopped)` returns `continue: true` whenever `residual > 0` or `s > 0`, which for any real corpus is always.
+A self-improving loop has **no honest "done" state**. The seed floor guarantees a leftover always remains while `s > 0` ([[leftover]]`.seedFloor`), and the address space is infinite — all exists at once and is only ever partly discovered (discover). So there is never a moment the loop can truthfully say "no work left" and halt itself. It is **relentless by construction**: `shouldContinue(s, residual, stopped)` returns `continue: true` whenever `residual > 0` or `s > 0`, which for any real corpus is always.
 
 The **one** way it stops is an **external stop, and that stop is sovereign**: `stopped` forces `continue: false` regardless of how much work remains. Relentless is **not uncontrollable** — the loop can never talk itself into halting, and it can never talk itself out of an outside stop. It runs until stopped, and stops the instant it is. The only internal halt is the unreachable limit `s = 0 ∧ residual = 0` (a corpus that knows everything), which never occurs — so in practice the loop halts **iff** it is stopped.
 

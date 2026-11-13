@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract grants audit rights — auditor identity, audit scope (books, records, systems), frequency, notice requirement, cost allocation, remedies for non-access.",
-    "uuid": "d14f7613-294f-8f1d-8ce5-c631f819d479",
+    "uuid": "12721520-5fc7-8804-b47f-5eb627265d9b",
     "words": [
       "use",
       "when",

@@ -3,18 +3,18 @@ name: water
 description: "Use when reasoning about water as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: water
 coordinate: "water · 4/weave · 28f69357"
-contentUuid: "bfd7f1a6-eb20-5da6-840d-0bfa7d3e9176"
-diamondUuid: "aa091afe-d14f-8167-99c9-1541b05ce1ab"
+contentUuid: "c308e7a9-d163-5bf0-849a-91c961fb0585"
+diamondUuid: "42f871ca-338e-8b06-9a41-7b0c1b7cbbb6"
 uuid: "28f69357-8422-8a94-a6a4-7be94498c10d"
 horo: 4
 typography:
   partition: water
-  bondDegree: 57
+  bondDegree: 51
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5cb35499-33b8-8bf3-8664-0752601dcd73"
+  computationUuid: "2b3f6efc-5e94-8e19-95e6-a9027ded3615"
   stages:
     - stage: path
       stageUuid: "7608a835-4bf8-80bc-ae6d-8f33c2653fac"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c3273c62-888f-828d-a325-3b2e5c484ab1"
     - stage: horo
-      stageUuid: "bca77d77-8acd-831d-81d3-08d202cec8c4"
+      stageUuid: "54d76541-d8ba-81ea-9737-7048abe7e3f5"
     - stage: seal
       stageUuid: "e5e5dd5b-4443-800c-971a-0d9ba9888c74"
     - stage: uuid
-      stageUuid: "073ea976-5d98-81a3-9885-e993bb057f5d"
+      stageUuid: "4902fa59-2ab8-8154-841f-91c2571d5d3b"
 version: 2
 ---
 # water

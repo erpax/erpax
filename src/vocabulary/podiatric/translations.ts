@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about podiatric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "a709cf06-6bf6-8f36-a575-b7491c95afdc",
+    "uuid": "1fb8d117-a1c1-885e-a501-3057ce0a693d",
     "words": [
       "use",
       "when",

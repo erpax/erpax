@@ -2,41 +2,41 @@
 name: reported
 description: "Use when reasoning about reported as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/reported"
-coordinate: "vocabulary/reported · 7/descent · 1e253081"
-contentUuid: "1a2c2b42-8bca-57c2-bb8e-50e33d03b816"
-diamondUuid: "a3cf17b3-2b6f-8956-831e-8d22e033c3c5"
-uuid: "1e253081-e720-8410-bce7-edfcfbf075fb"
-horo: 7
+coordinate: "vocabulary/reported · 1/base · a9cf8383"
+contentUuid: "32021c6e-5d33-50a5-bf57-b2b48a653383"
+diamondUuid: "c0481110-dcc0-8500-9599-e3ea0c48737b"
+uuid: "a9cf8383-adc4-8967-bc40-0a5dcdc2dfe6"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 19
+  bondDegree: 16
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "94693fbc-30f9-8cbb-b4ee-82774103f5b5"
+  computationUuid: "8a102bf1-fec7-8e15-8665-850b34eefece"
   stages:
     - stage: path
       stageUuid: "22194dc6-9bc8-86d9-a66b-ed76fb2cc1b7"
     - stage: trinity
       stageUuid: "7eb9d97a-fe9f-8a53-8bbe-cfe8333ca809"
     - stage: boundary
-      stageUuid: "915dc3d4-79f4-86e1-8aef-9bdbbc20f041"
+      stageUuid: "e41d77d0-fed7-8a7d-9785-59773e70763f"
     - stage: links
-      stageUuid: "91e91730-6881-8bee-b543-1e5c0a0d4b0d"
+      stageUuid: "84e3427a-b437-8acc-876d-2b8d838a97eb"
     - stage: horo
-      stageUuid: "faaf74aa-e85e-8fc5-a4ff-8bd2b0b9a67a"
+      stageUuid: "23d30eac-6756-8671-a0e5-f61d0dd51417"
     - stage: seal
       stageUuid: "bb6a5c0b-7fc1-8fb7-a5aa-7e4de399e7b5"
     - stage: uuid
-      stageUuid: "09222960-f3cb-8e5e-824d-09e14b50f6ea"
+      stageUuid: "fadfb7b6-b92f-8c14-af8b-a028436c4b83"
 version: 2
 ---
 # reported
 
 A schema.org component word, collided out of schema.org compounds — fused from ReportedDoseSchedule ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[dose]] · [[schedule]]
+Entangled with — [[dose]] · schedule
 
 Attested in schema.org — ReportedDoseSchedule
 

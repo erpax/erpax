@@ -2,18 +2,18 @@
 name: decide
 description: "Use when the society must pick a winner among candidate solutions — the composed decision wiring the three selection laws into one: gate-CORRECT (competition, the referee is the gate not a vote), HARMONIC-preferred (logic, the self-consistent resolve first), MOST-EFFICIENT (cost, max output per spend), cheapest, deterministic by content-uuid. decide(candidates) is the single function the agent society runs to choose; the runtime dispatch it drives is the boundary."
 atomPath: decide
-coordinate: "decide · 2/share · 8e95a37a"
-contentUuid: "d19ed770-64e4-54fc-b53e-addd5de01aac"
-diamondUuid: "dab7570d-ae55-8492-bba2-3c8007db9d86"
-uuid: "8e95a37a-d3c3-8ce3-8b90-f79ea717c8be"
-horo: 2
+coordinate: "decide · 5/round · a15033e1"
+contentUuid: "347e9181-ce60-5a63-8442-da724081b814"
+diamondUuid: "8fdb8a7a-e1fe-8501-af15-2aaf53dbedb7"
+uuid: "a15033e1-d47c-84d1-afab-529d552fb1b3"
+horo: 5
 typography:
   partition: decide
-  bondDegree: 75
+  bondDegree: 66
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8a547938-fc6e-805b-886b-2f5385429303"
+  computationUuid: "2975f13c-425b-841a-a789-22fe37c27b37"
   stages:
     - stage: path
       stageUuid: "e30bdc24-cda7-8b6c-b830-b96a3a530e7b"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "5c31db99-0602-8c9c-a684-8f2428156c44"
     - stage: links
-      stageUuid: "15472826-9719-8d8e-8f47-76d5796100cc"
+      stageUuid: "1bf89b29-e1d2-8790-a761-005849e1f980"
     - stage: horo
-      stageUuid: "c667741e-ed79-81b3-b8be-e4192060d94e"
+      stageUuid: "4b3e443e-5fd6-8f09-8327-b864f133bf67"
     - stage: seal
       stageUuid: "71809d7e-cb14-892b-bc6d-d05fa2ad062e"
     - stage: uuid
-      stageUuid: "8a920ae9-d22b-8eec-9cf5-22bc65cedb38"
+      stageUuid: "72d8e21e-4de4-8e36-97ce-215c674e2c90"
 version: 2
 ---
 # decide — the society's composed decision (correct · harmonic · efficient)
@@ -38,9 +38,9 @@ FORM: **the society decides by composing its three selection laws into ONE winne
 2. prefers the **HARMONIC** ones ([[logic]]: the self-consistent resolve first — they need no external coordination), falling back to all-correct only if none are harmonic;
 3. among those, takes the **MOST EFFICIENT** ([[cost]]: max output per spend), breaking ties by lowest cost (the fastest, [[competition]]) then content-uuid (deterministic — same field, same choice everywhere, [[merge]]).
 
-So the run's three laws are not three separate checks an operator juggles — they are one function the society runs to pick what advances: correctness gates, harmony orders, efficiency selects. This is the decision the agent society makes every time it convenes; the actual runtime — spawning the candidates, applying the winner's effect, paying it ([[decompression]]) — is the boundary `decide` drives. Building dominates, and `decide` is how the society chooses the best build ([[peace]] / [[society]]).
+So the run's three laws are not three separate checks an operator juggles — they are one function the society runs to pick what advances: correctness gates, harmony orders, efficiency selects. This is the decision the agent society makes every time it convenes; the actual runtime — spawning the candidates, applying the winner's effect, paying it ([[decompression]]) — is the boundary `decide` drives. Building dominates, and `decide` is how the society chooses the best build (peace / [[society]]).
 
-Matter co-located in `src/decide/index.ts` (`SocietyCandidate`·`decide`) over [[competition]] + [[cost]] + [[logic]]. Composes: [[competition]] · [[logic]] · [[cost]] · [[proof]] · [[decompression]] · [[merge]] · [[peace]] · [[society]] · [[self]].
+Matter co-located in `src/decide/index.ts` (`SocietyCandidate`·`decide`) over [[competition]] + [[cost]] + [[logic]]. Composes: [[competition]] · [[logic]] · [[cost]] · [[proof]] · [[decompression]] · [[merge]] · peace · [[society]] · [[self]].
 
 ## Who decides commit and push is computable — `commitDecision` · `pushDecision`
 

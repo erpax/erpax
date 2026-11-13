@@ -2,33 +2,33 @@
 name: rate
 description: "Use when a value is a ratio of two dimensions pinned at a point in time — exchange rate, VAT/tax rate, interest rate, unit price (currency per quantity), wage (currency per hour), throughput/capacity (quantity per hour), run-time-per-unit. The RateConcern; a rate is value-per-unit, pinned at a point; blanks route to the no-op identity (cascade-resolved), never a magic literal."
 atomPath: "vocabulary/rate"
-coordinate: "vocabulary/rate · 5/round · 40bf6bdf"
-contentUuid: "97bd037e-c16b-5c0e-8ba8-5c869f5adc86"
-diamondUuid: "cba5be74-954f-8b6a-994d-f670df306a41"
-uuid: "40bf6bdf-e755-8f1a-921a-233399e64e04"
-horo: 5
+coordinate: "vocabulary/rate · 4/weave · 99353225"
+contentUuid: "0e71958b-c2f3-57d7-9ce6-429b526fda55"
+diamondUuid: "aca07ca3-a7d5-8edf-b2e5-df1ec51fc768"
+uuid: "99353225-3162-8883-b169-c4b57c13df0a"
+horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 139
+  bondDegree: 114
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9e4a1a9c-65c7-8e85-944f-c42d395ee3d9"
+  computationUuid: "32dde5e6-e77a-8539-8fa4-fe317383823d"
   stages:
     - stage: path
       stageUuid: "1af333b5-5c66-8c5c-bfcd-9a049f406852"
     - stage: trinity
       stageUuid: "5b7bb722-1ba5-89de-b6f5-fa77535a2290"
     - stage: boundary
-      stageUuid: "ad1df305-5aac-8765-b8d5-1571409b096e"
+      stageUuid: "bd7c550c-026d-849a-a8ed-a7fa393e2044"
     - stage: links
-      stageUuid: "736c3b75-97a1-8395-8e41-bba4e97caa67"
+      stageUuid: "911d3551-0cb7-80b8-9948-d567235c615e"
     - stage: horo
-      stageUuid: "88264cec-38fb-8d19-9451-c29618e6fbe3"
+      stageUuid: "8fb0eb8a-ccfe-82ce-8fa2-d08d761eaa54"
     - stage: seal
       stageUuid: "7aa441f3-7271-825d-a239-7a64a8cf5cbb"
     - stage: uuid
-      stageUuid: "d5b8816b-3f70-818a-a612-29ea3a9e57db"
+      stageUuid: "e3e4ec5d-1b9d-8602-819b-7102b420c578"
 version: 2
 ---
 # rate — a value per unit, pinned at a point in time
@@ -39,7 +39,7 @@ A rate is **always pinned at a point in time** ([[versions]]) — the БНБ→E
 
 Pervasive across both twins: [[currency]] `exchangeRate`, [[measure]] conversion factors, the [[manufacturing]] per-minute rates (`costPerMinute`·`pricePerMinute`·`payPerHour`·`capacityPerHour`·`runTimePerUnit`), VAT/tax rates, [[calculate]] present-value/depreciation/standard-costing variances. Where a [[hooks]] hook resolves the rate at write-time, the read needs no fallback at all.
 
-Composes: [[currency]] · [[measure]] (the two dimensions a rate relates), [[number]], [[calculate]] (rates drive PV/variances), [[versions]] (point-in-time), [[identity]] (no-op element + cascade fallback), [[standard]], [[field]] · [[currency/rates]] · [[value]].
+Composes: [[currency]] · [[measure]] (the two dimensions a rate relates), [[number]], [[calculate]] (rates drive PV/variances), [[versions]] (point-in-time), [[identity]] (no-op element + cascade fallback), [[standard]], [[field]] · [[currency/rates]] · value.
 
 ## Common mistakes
 - A magic-literal rate default (`?? 0.21`) — resolve via the cascade; blank routes to the no-op identity (`×1` / `+0%`).

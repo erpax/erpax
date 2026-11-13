@@ -2,14 +2,14 @@
 name: sectors
 description: "Use when taxonomising any part of society — SNA institutional sectors, ISIC economic activities, COFOG government functions, ICNPO civil society, SDG outcomes. The one societal coordinate system every party, connection, transaction and tenant references."
 atomPath: sectors
-coordinate: "sectors · 5/round · 92b3c29c"
-contentUuid: "4f55198b-0f08-5f71-9c2f-966bf12aa077"
-diamondUuid: "96368d7f-e903-8516-9bab-811c98e8545f"
-uuid: "92b3c29c-c855-8339-947d-a716db1ec246"
-horo: 5
+coordinate: "sectors · 2/share · 5bfcc5e8"
+contentUuid: "53c41d73-23a2-59b7-8095-0391bc0edc0e"
+diamondUuid: "fee2391f-ed10-8b55-90fb-2c467c191183"
+uuid: "5bfcc5e8-cb7b-8406-880c-aa986fd83488"
+horo: 2
 typography:
   partition: sectors
-  bondDegree: 53
+  bondDegree: 50
 standards:
   - "EU NACE Rev.2 economic-activities"
   - "EU-765/2008"
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "86a41f51-81ba-892c-b018-9fc55a064a5d"
+  computationUuid: "69f69d86-9f2a-88e6-95bb-99dcb3eda250"
   stages:
     - stage: path
       stageUuid: "ed7b4491-7f56-863a-854d-13c7c3e87730"
@@ -34,13 +34,13 @@ signatures:
     - stage: boundary
       stageUuid: "da0e2b2f-5160-8ea7-820a-fc6fea7cd08f"
     - stage: links
-      stageUuid: "c4a08bca-c303-8e67-a61e-388106673e45"
+      stageUuid: "8c307af5-a466-8e65-8f44-6f92f0b5b211"
     - stage: horo
-      stageUuid: "b643ad4c-9d16-8b6d-87f1-1ec39876878b"
+      stageUuid: "1400bdb8-70d2-89f8-b81f-0e546160984f"
     - stage: seal
       stageUuid: "f53d982b-75d3-8b19-83d2-b8198b6ee6a4"
     - stage: uuid
-      stageUuid: "bca92317-f056-85e6-a4ed-f91ad3831ce6"
+      stageUuid: "5012fcde-fd95-88cf-b610-c3d8c5cd4cc5"
 version: 2
 ---
 # sectors
@@ -69,6 +69,6 @@ The answer-path principle: applying this skill *implements* these standards — 
 - **ISO 19011:2018** — audit-trail; the transparent societal ledger over status transitions.
 - **ISO 27001 A.5.23** — cloud-service tenant isolation; sector data is gated per tenant ([[access]]).
 
-Composes: [[defence]] · [[health]].
+Composes: [[defence]] · health.
 
 **Law — [[law]]: every part of society is not a new collection but a coordinate on ONE self-referential taxonomy (the [[merge]] law on the naming axis); a ministry, hospital, farm, union or household is a `sector` code that every party, connection, transaction and tenant references — sequence position 0, the root coordinate and societal [[identity]] element.**

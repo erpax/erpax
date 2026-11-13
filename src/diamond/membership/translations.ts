@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "membership",
-    "uuid": "c07fce5d-84bf-810f-b99b-cf0e14d2177d",
+    "uuid": "2b724d30-7085-8762-b8b5-4c715eec2fe5",
     "words": [
       "membership"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about membership — diamond/membership — stray-file membership audit (no readme dependency).",
-    "uuid": "879762a9-2b3a-8acf-9171-878c02ccffb6",
+    "uuid": "1f46df1e-e42c-81b7-a0ce-d0ddc0e96d79",
     "words": [
       "use",
       "when",

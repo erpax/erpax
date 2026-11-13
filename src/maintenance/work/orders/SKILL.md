@@ -3,13 +3,13 @@ name: orders
 description: "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000."
 atomPath: "maintenance/work/orders"
 coordinate: "maintenance/work/orders · 4/weave · b7948d99"
-contentUuid: "5a9ef445-7c97-561b-b560-98b88a805f0e"
+contentUuid: "315eced2-fd79-5769-894e-f198bae54636"
 diamondUuid: "baa881be-db5a-8ef0-aba2-0b0a503411b4"
 uuid: "b7948d99-e2f6-8afe-b20b-67b9889b0d3c"
 horo: 4
 typography:
   partition: maintenance
-  bondDegree: 89
+  bondDegree: 88
 standards:
   - "EN-13306:2017 maintenance-terminology"
   - "EN-13306:2017 maintenance-terminology`"

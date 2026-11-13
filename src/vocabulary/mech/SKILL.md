@@ -2,41 +2,41 @@
 name: mech
 description: "Use when reasoning about mech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mech"
-coordinate: "vocabulary/mech · 2/share · 6cf3d38c"
-contentUuid: "83d27849-d738-5380-a9c6-a6928f568c07"
-diamondUuid: "1302d3e5-3517-8a8a-8f2c-503be37b0feb"
-uuid: "6cf3d38c-8051-8ebf-ada4-0dd81c8da6b2"
-horo: 2
+coordinate: "vocabulary/mech · 8/crest · 7f3502d2"
+contentUuid: "290c1bda-41b1-551b-afcf-defbc320dc96"
+diamondUuid: "aa91c23d-3e49-8fb5-9a55-524e8f0d53f2"
+uuid: "7f3502d2-d1c3-8a34-b581-af2f8de903f4"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 28
+  bondDegree: 24
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f96239f4-ee80-8677-8bdb-348967adb14d"
+  computationUuid: "bff44ff5-0f79-8662-9077-cb3d5657c016"
   stages:
     - stage: path
       stageUuid: "5f5cf1e9-fb0f-8b70-843f-99e53802b7c6"
     - stage: trinity
       stageUuid: "2266a074-6e26-8e86-b6f5-abfb9f0e6c70"
     - stage: boundary
-      stageUuid: "e23ad6b4-4610-8286-87c2-cfd50da8cf9a"
+      stageUuid: "2ff60ad9-223f-8ecc-8782-2480e64723f7"
     - stage: links
-      stageUuid: "a846236a-804e-8f2f-b228-82f5ae006df5"
+      stageUuid: "5a1e9ad2-25b4-8479-a277-f3384fbf673c"
     - stage: horo
-      stageUuid: "993a28da-3ab8-8a57-be02-33576823d76e"
+      stageUuid: "70a22b2a-f377-8232-9e69-aacbb96ade9b"
     - stage: seal
       stageUuid: "582d259b-2065-8401-b979-c0d97c95d490"
     - stage: uuid
-      stageUuid: "886797ea-3477-8443-bb75-f630e8e12467"
+      stageUuid: "c12036d4-4781-8122-9bb3-669e9c90a6c6"
 version: 2
 ---
 # mech
 
 A schema.org component word, collided out of schema.org compounds — fused from cvdNumC19MechVentPats · cvdNumC19OFMechVentPats ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[cvd]] · [[num]] · [[vent]] · [[pats]]
+Entangled with — [[cvd]] · [[num]] · vent · [[pats]]
 
 Attested in schema.org — cvdNumC19MechVentPats · cvdNumC19OFMechVentPats
 

@@ -2,14 +2,14 @@
 name: path
 description: "Use when normalizing addresses across every surface — fs, url, github, mcp, api, and http all collapse to one canonical atom path; the merge point where external APIs entangle with erpax in all quantum dimensions."
 atomPath: path
-coordinate: "path · 4/weave · 1d0a4137"
-contentUuid: "f6d590f1-6842-5d7e-91d2-bf649d40a0e4"
-diamondUuid: "1e2f6347-3983-8aad-ba89-4af17b289f94"
-uuid: "1d0a4137-6c7c-8c0f-a0ee-2bf5785c3307"
-horo: 4
+coordinate: "path · 8/crest · 39771bb2"
+contentUuid: "a837c26c-d033-5566-9e50-6c832911d01d"
+diamondUuid: "8c40828f-2ad2-8ff2-8d4c-bfacc8ef5712"
+uuid: "39771bb2-70ed-80c4-bb90-37c09d32a8e4"
+horo: 8
 typography:
   partition: path
-  bondDegree: 180
+  bondDegree: 169
 standards:
   - "schema.org — XPathType vocabulary word (collided via [[sti]])"
 bindings:
@@ -18,7 +18,7 @@ bindings:
   - "r2_buckets/NEXT_INC_CACHE_R2_BUCKET"
   - "r2_buckets/R2"
 signatures:
-  computationUuid: "931cfaa4-8688-85b4-8624-a7ad6e6c7bfe"
+  computationUuid: "ddead87e-8a9c-8aa2-bb46-cca809fcc3e9"
   stages:
     - stage: path
       stageUuid: "702b9111-e70d-8fe7-bd92-35925a245571"
@@ -27,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "01d21162-1de9-8782-9c21-9a2594c8bbc8"
     - stage: links
-      stageUuid: "aa946392-de93-8642-9ad7-b909e78b7740"
+      stageUuid: "0d155ab1-ceb1-8ab1-8161-f9e1b87a8afc"
     - stage: horo
-      stageUuid: "b97d4108-4f09-84be-b4f0-981795c5a3ff"
+      stageUuid: "811ffaa5-ac16-8ee5-8dca-f8c6803bc0b2"
     - stage: seal
       stageUuid: "483c3953-6066-8789-bf80-9934c1047eef"
     - stage: uuid
-      stageUuid: "42bc0906-c075-8978-a500-e5e9718a9925"
+      stageUuid: "36ceedcf-25fd-8dab-85af-51dd69adf4f5"
 version: 2
 ---
 # path — all meet computationally in THE path
@@ -70,7 +70,7 @@ Rules (pure, deterministic, no runtime fs):
 
 Serverless quantum proof: [[quantum/serverless]] (`proveServerlessQuantum`) — path resolution via `toAtomPath` / `atomPathFromUrl` is the collapse step; [[quantum/fs]] is the content-addressed twin where path addresses an immutable moment, not a mutable file.
 
-Entangled with — [[fs]] · [[github]] · [[mcp]] · [[api]] · [[cloudflare]] · [[vitepress]] · [[dimension]] · [[method]] · [[atom]] · [[law/folder]] · [[matrix]] · [[quantum/serverless]] · [[quantum/fs]]
+Entangled with — [[fs]] · github · mcp · [[api]] · [[cloudflare]] · [[vitepress]] · [[dimension]] · [[method]] · [[atom]] · [[law/folder]] · [[matrix]] · [[quantum/serverless]] · [[quantum/fs]]
 
 Matter-twin: `src/path/index.ts` (`PATH_SURFACES` · `toAtomPath` · `urlForAtomPath` · `atomPathFromUrl` · `revealPathFromSurroundings` · `extendAtomPath` · `ancestorPaths` · `infinitePathFold` · `followEveryPath` · `pathWalkCoverage` · `assertEveryPathFollowed` · `recordOnPath` · `canonicalPathLedger` · `assertEverythingOnPathRecorded` · `ledgerFromPathWalk` · `pathsMeet` · `pathsMeetAll` · `atomPathUuid`) · `src/path/merge.ts` (`mergePathIndices` · `canonicalPathIndex` · `recordOnPathMerged` · `assertPathIndicesMerged`) · `src/path/record.ts` (canonical envelope).
 
@@ -83,4 +83,4 @@ Matter-twin: `src/path/index.ts` (`PATH_SURFACES` · `toAtomPath` · `urlForAtom
 **Law — [[law]]: path-in-path merges at the index face.** Nested atom barrels (`accounting/coa`, `body/heart`, `law/folder`) MUST compose parent exports with child matter through `mergePathIndices` · `canonicalPathIndex` — one `recordOnPathMerged` chain records every index-bearing prefix (parent hooks before child); `assertPathIndicesMerged` gates zero unmerged parent segments; `MERGED_LEDGER_CHAINS` (from `node src/path/hooks.registry.mjs`) is the generated merge registry. Phantom intermediate folders (no `index.ts`) are skipped; index-bearing parents are never skipped.
 
 @standard schema.org — XPathType vocabulary word (collided via [[sti]])
-@see [[fs]] · [[github]] · [[mcp]] · [[api]] · [[dimension]] · [[integrity]] · [[quantum]] · [[merge]] · [[identity]] · [[accounting]]
+@see [[fs]] · github · mcp · [[api]] · [[dimension]] · [[integrity]] · [[quantum]] · [[merge]] · [[identity]] · [[accounting]]

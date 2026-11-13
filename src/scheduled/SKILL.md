@@ -2,42 +2,42 @@
 name: scheduled
 description: "Use when reasoning about scheduled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: scheduled
-coordinate: "scheduled · 7/descent · 831fe150"
-contentUuid: "fa750761-06d6-55fb-a340-05b9398ddb8a"
-diamondUuid: "ac4a3c33-5371-8d88-9315-e39f13093404"
-uuid: "831fe150-aabb-88ce-a1f8-b291ce8194ef"
-horo: 7
+coordinate: "scheduled · 4/weave · 9ac066a7"
+contentUuid: "0fc9f4a6-8ab0-5ae0-bfa4-c16f0b59e2d4"
+diamondUuid: "1b3348b1-521c-8b26-a9aa-b0990fc58294"
+uuid: "9ac066a7-0307-8b26-bfd7-5af650c39d12"
+horo: 4
 typography:
   partition: scheduled
-  bondDegree: 21
+  bondDegree: 18
 standards:
   - "RFC-5545"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "35e42be4-d469-8a35-b0bd-264c7b68f93b"
+  computationUuid: "dc24253c-421f-8e03-983f-683b8be851b2"
   stages:
     - stage: path
       stageUuid: "3fd24a8f-cda0-893f-a4ca-861e8f528e3e"
     - stage: trinity
       stageUuid: "32e467ea-b56d-8adf-b088-2b1d5ce2baf7"
     - stage: boundary
-      stageUuid: "ca061f59-1289-86e7-9d98-150342f4bdd9"
+      stageUuid: "8c68f488-c47f-81c5-8c38-6192f09cc688"
     - stage: links
-      stageUuid: "ee56c5c4-f0a2-85cc-9284-29815316695e"
+      stageUuid: "4c14d129-0bab-8a34-9a78-8dbaa1b61b4b"
     - stage: horo
-      stageUuid: "0e2e47ef-b1d8-8201-9751-6a3cd9d2c245"
+      stageUuid: "5ff141a3-a4a3-8740-9c7d-f89d1081364d"
     - stage: seal
       stageUuid: "2ce6a390-5565-8dbb-b77e-a8a52dba0d5e"
     - stage: uuid
-      stageUuid: "c1001c97-d215-86c7-b914-72acb3385ca7"
+      stageUuid: "ff5f8a66-e428-8f7e-8cc3-d80119c62b4b"
 version: 2
 ---
 # scheduled
 
 A schema.org component word, collided out of schema.org compounds — fused from scheduledPaymentDate · scheduledTime ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[payment]] · [[date]] · [[time]]
+Entangled with — [[payment]] · [[date]] · time
 
 Attested in schema.org — scheduledPaymentDate · scheduledTime
 

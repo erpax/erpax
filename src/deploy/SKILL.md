@@ -2,18 +2,18 @@
 name: deploy
 description: "Use when deploying a Payload app to production or fixing build/migration/env issues — required secrets, running migrations vs dev push, building without a DB connection, file storage, or Cloudflare/Next/Docker specifics."
 atomPath: deploy
-coordinate: "deploy · 4/weave · bfa2f6bc"
-contentUuid: "aab36ced-a71f-585c-bcda-6dbf2692e21b"
-diamondUuid: "f94adc71-069e-882a-b69e-9a8baab379db"
-uuid: "bfa2f6bc-9a0b-8b2e-bb69-cdfaf0f68573"
-horo: 4
+coordinate: "deploy · 7/descent · db353580"
+contentUuid: "1e077b22-fcbe-5f9c-a2d6-36eef1886c40"
+diamondUuid: "e2a9d3f4-68a6-8526-8a5b-fbb7dbc5199b"
+uuid: "db353580-3b9f-8b35-adc4-73ed9eb48975"
+horo: 7
 typography:
   partition: deploy
-  bondDegree: 96
+  bondDegree: 91
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a5eeabd1-6d88-8422-9d3a-376197910dc2"
+  computationUuid: "452ea3ed-35d4-824f-bde4-06cf9af423d6"
   stages:
     - stage: path
       stageUuid: "b2dec97d-58be-8973-929d-1384ec4ddcf8"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "a6be035f-89e5-84b6-abe3-d9b2b5510ee9"
     - stage: links
-      stageUuid: "d3db1d99-7bf0-8094-9885-10212d437084"
+      stageUuid: "23c3e6c5-8187-8432-9492-2ca15f98c724"
     - stage: horo
-      stageUuid: "cceb0687-fb9e-837f-9cd5-5fddbc88c311"
+      stageUuid: "7543407a-4ef5-899b-829e-5ee579a97b65"
     - stage: seal
       stageUuid: "846600a4-d368-8e6e-bb3d-2e82c706994c"
     - stage: uuid
-      stageUuid: "eb344889-0997-82e4-9689-9bb3b0b24ed0"
+      stageUuid: "ce494c9d-3522-8068-9e34-710c17945a85"
 version: 2
 ---
 # deploy — Payload production deployment
@@ -55,7 +55,7 @@ Never use ephemeral filesystems. Use a cloud storage adapter (S3, R2, Azure, GCS
 - `next start` in prod, never `next dev`.
 - `output: 'standalone'` for Docker; `NODE_ENV=production`; serve with `HOSTNAME=0.0.0.0 node server.js`.
 
-Composes: [[config]] · [[database]] · [[upload]] · [[bindings]] · [[harden]].
+Composes: [[config]] · [[database]] · upload · [[bindings]] · [[harden]].
 
 ## Harmonized — the gate-green order is the consonant one
 

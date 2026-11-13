@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about letterer — The individual who adds lettering, including speech balloons and sound effects, to artwork.",
-    "uuid": "f744a26e-9b9b-8020-8fd2-417f22717a4f",
+    "uuid": "45f47ebc-7341-81e7-a8a5-4578845e7e94",
     "words": [
       "use",
       "when",

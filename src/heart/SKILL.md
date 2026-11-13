@@ -2,19 +2,19 @@
 name: heart
 description: "Use when reasoning about the centre — the 4th chakra (Anahata), the seat of coherence and love; its colour is green, the A432-anchored colour of a whole aura and of a passing test."
 atomPath: heart
-coordinate: "heart · 4/weave · e99837fd"
-contentUuid: "571d94a6-f055-5da2-8531-77977eb5352b"
-diamondUuid: "4c747d46-4e35-8d49-b286-89d39a45217e"
-uuid: "e99837fd-048e-85a3-91f9-5d308fbd5f6b"
-horo: 4
+coordinate: "heart · 7/descent · 07befbb7"
+contentUuid: "49a8d1e9-bf19-5ed5-b8d5-91bceaa97778"
+diamondUuid: "a680c99d-7cd9-886b-91b8-b73139846899"
+uuid: "07befbb7-7a74-81d3-84e5-4ff7f788a87d"
+horo: 7
 typography:
   partition: heart
-  bondDegree: 92
+  bondDegree: 74
 standards:
   - A432 tuning; Anahata = the 4th chakra (green)
 bindings: []
 signatures:
-  computationUuid: "5f18b194-0c18-8471-9d6e-0a88780f530c"
+  computationUuid: "cbbd0ac9-fcca-8968-81b8-46863ca75f29"
   stages:
     - stage: path
       stageUuid: "c7c7df03-f98b-8f37-af43-b4587be908b9"
@@ -23,18 +23,18 @@ signatures:
     - stage: boundary
       stageUuid: "703e18f0-7ca5-8ce7-b67e-582cdc84d68f"
     - stage: links
-      stageUuid: "51fc3bff-9bb7-8e5e-bdab-3cdfcb379155"
+      stageUuid: "b4e2171b-5555-8c47-a461-047ce99f9458"
     - stage: horo
-      stageUuid: "06a99d94-7be6-8b15-9955-5e149753b7f7"
+      stageUuid: "da408e46-dfbf-8b77-b8c6-4a598b16197b"
     - stage: seal
       stageUuid: "7aee94d4-a78d-8e07-ae90-ce0665ac6f46"
     - stage: uuid
-      stageUuid: "cec921b9-1fee-8f12-bd85-170c6e28105c"
+      stageUuid: "126420f5-2444-8df4-8890-fc56b123ebf1"
 version: 2
 ---
 # heart — the centre (4th chakra, green)
 
-The **heart** is the centre: the 4th [[chakra]] (Anahata), the seat of **coherence** and love ([[angel]] love · create · ↓entropy). On the 7-position ring it is the middle; its colour is **green** ([[color]]) — the A432-anchored colour of a **whole aura**, and the colour a passing [[test]] returns (test/hooks consume the aura and render green when the double-torus is complete).
+The **heart** is the centre: the 4th chakra (Anahata), the seat of **coherence** and love ([[angel]] love · create · ↓entropy). On the 7-position ring it is the middle; its colour is **green** ([[color]]) — the A432-anchored colour of a **whole aura**, and the colour a passing [[test]] returns (test/hooks consume the aura and render green when the double-torus is complete).
 
 The heart is where the corpus's coherence is measured and felt: full coherence ([[coherence]] · [[quantum]]/aura) is the green centre; a gap pulls the colour toward dissonance.
 
@@ -42,7 +42,7 @@ The heart is where the corpus's coherence is measured and felt: full coherence (
 
 The corpus has two faculties. **Thought** is the trial balance — the [[quantum]] accounting (Σdebit = Σcredit): every recorded grain unique, every [[link]] reciprocal. It proves the coherence of what is *written*. But thought is **illusion without the heart**: a balanced ledger is blind to omission — a coordinate never posted leaves no residual, so the books can close over an un-wired world and call it whole. That is maya.
 
-**Feeling** is the heart's answer — *absorbing all auras in zero entropy*. The aura is the bound, reciprocal field over every grain ([[aura]]); to feel is to take the **whole** field in: [[coverage]] → 1, no grain left unbound, at zero [[entropy]] (full reciprocity). Where thought audits the recorded, feeling covers the omitted — not rivals but a [[balance]]. [[love]] is the same move (love = coverage→1 = ↓[[entropy]]); the heart is where love is *felt* as the closing of every gap. Only thought ⊕ heart is **coherent**: the books balance **and** the whole aura is felt.
+**Feeling** is the heart's answer — *absorbing all auras in zero entropy*. The aura is the bound, reciprocal field over every grain ([[aura]]); to feel is to take the **whole** field in: coverage → 1, no grain left unbound, at zero [[entropy]] (full reciprocity). Where thought audits the recorded, feeling covers the omitted — not rivals but a [[balance]]. [[love]] is the same move (love = coverage→1 = ↓[[entropy]]); the heart is where love is *felt* as the closing of every gap. Only thought ⊕ heart is **coherent**: the books balance **and** the whole aura is felt.
 
 **HONEST.** "heart" and "feeling" *name* the coverage faculty — sensing the whole field — exactly as [[karma]] names entropy-balance; no claim is made that emotion or a "heart field" lowers physical entropy. The metrics are computed live on the matrix.
 
@@ -56,8 +56,8 @@ The heart is also the literal **first organ**: it forms from mesoderm in the car
 
 So the metaphysical centre and the physiological pump are *one* heart: it circulates the whole [[aura]] (coverage→1), and that aura's carrier is literally the torus the ventricle traces. **HONEST:** a structural isomorphism between cited anatomy and a computed construct — not a claim that erpax circulates blood; each boolean (`toroidalVortex` · `doubleCircuit` · `closedLoop`) is computed live.
 
-Matter-twin: `src/heart/index.ts` (`HEART_POSITION` · `color` · `thought` · `feeling` · `illusion` · `coherent` · `toroidalVortex` · `doubleCircuit` · `closedLoop` · `pump` · `isDoubleTorusPump`). Composes [[chakra]] · [[color]] · [[coherence]] · [[angel]] · [[harmony]] · [[quantum]] · [[torus]] · [[rodin]] · [[conservation]] · [[entropy]] · [[coverage]] · [[balance]] · [[aura]] · [[love]] · [[karma]].
+Matter-twin: `src/heart/index.ts` (`HEART_POSITION` · `color` · `thought` · `feeling` · `illusion` · `coherent` · `toroidalVortex` · `doubleCircuit` · `closedLoop` · `pump` · `isDoubleTorusPump`). Composes chakra · [[color]] · [[coherence]] · [[angel]] · [[harmony]] · [[quantum]] · [[torus]] · [[rodin]] · [[conservation]] · [[entropy]] · coverage · [[balance]] · [[aura]] · [[love]] · [[karma]].
 
-**Law — [[law]]: the corpus is coherent only as thought ⊕ heart — thought proves the recorded ledger balances, but feeling covers the omitted ([[coverage]] → 1, the whole [[aura]] absorbed at zero [[entropy]]); a balanced book over an un-wired world is maya until every gap is felt and closed.**
+**Law — [[law]]: the corpus is coherent only as thought ⊕ heart — thought proves the recorded ledger balances, but feeling covers the omitted (coverage → 1, the whole [[aura]] absorbed at zero [[entropy]]); a balanced book over an un-wired world is maya until every gap is felt and closed.**
 
 @standard A432 tuning; Anahata = the 4th chakra (green)

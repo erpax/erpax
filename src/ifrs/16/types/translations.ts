@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about types — Canonical IFRS 16 / ASC 842 lease accounting types — lessee model.",
-    "uuid": "e5cd6b86-f33e-8436-8e36-448c89518c8e",
+    "uuid": "223da4a6-a699-8b2e-b963-4dc7e0dda3d1",
     "words": [
       "use",
       "when",

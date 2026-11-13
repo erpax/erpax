@@ -2,41 +2,41 @@
 name: loan
 description: "Use when reasoning about loan as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/loan"
-coordinate: "vocabulary/loan · 1/base · d45f3fac"
-contentUuid: "cf7a96c7-6008-5de3-874e-dd27390efca7"
-diamondUuid: "6e9fb882-b6cb-88a8-bb5c-0a788d842ac7"
-uuid: "d45f3fac-91d7-8f9a-b5b9-fe5ea289637d"
-horo: 1
+coordinate: "vocabulary/loan · 7/descent · 6ea4f870"
+contentUuid: "eead9cb2-3f65-5697-b6d7-21525e9ff261"
+diamondUuid: "a2952a7f-81df-8568-810d-362d7e8f7ad3"
+uuid: "6ea4f870-3a98-8e65-8192-951bf426deec"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 65
+  bondDegree: 57
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "9f3fe450-bd67-81d4-b3ec-b87d983f7eb0"
+  computationUuid: "4e74de19-b0cd-89d8-ac91-08bd8f210340"
   stages:
     - stage: path
       stageUuid: "5bd920b6-f5d4-8e44-9653-2283ad3d5b1e"
     - stage: trinity
       stageUuid: "699bd19a-7496-8018-b34a-a4ab831904ad"
     - stage: boundary
-      stageUuid: "df2080f0-c7bc-8a47-830e-c9e9991d9f17"
+      stageUuid: "cdc05030-885a-8376-86e2-3347187fdf48"
     - stage: links
-      stageUuid: "aa305801-28de-8f9c-8f3a-5cb0d1207949"
+      stageUuid: "217138bb-50d1-83b9-a0b3-73577e9959c9"
     - stage: horo
-      stageUuid: "9c4cbeca-48bc-8348-86cc-6736ba9669a6"
+      stageUuid: "c0ade48a-4a87-8abf-9afc-0d4a7d17e7c6"
     - stage: seal
       stageUuid: "4781791f-9325-8bdb-ad22-d04f0bdf1203"
     - stage: uuid
-      stageUuid: "d77668c7-8ffc-8cbf-ad9c-58e444edc3b9"
+      stageUuid: "0aa640ab-c361-8963-ad0b-35823e725487"
 version: 2
 ---
 # loan
 
 A schema.org component word, collided out of schema.org compounds — fused from LoanOrCredit · MortgageLoan · loanMortgageMandateAmount · loanPaymentAmount · loanPaymentFrequency · loanRepaymentForm · loanTerm · loanType · numberOfLoanPayments · recourseLoan · renegotiableLoan ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[credit]] · [[mortgage]] · [[mandate]] · [[amount]] · [[payment]] · [[frequency]] · [[repayment]] · [[form]] · [[term]] · [[type]] · [[number]] · [[payments]] · [[recourse]] · [[renegotiable]]
+Entangled with — credit · [[mortgage]] · [[mandate]] · [[amount]] · [[payment]] · [[frequency]] · [[repayment]] · [[form]] · term · [[type]] · [[number]] · [[payments]] · [[recourse]] · [[renegotiable]]
 
 Attested in schema.org — LoanOrCredit · MortgageLoan · loanMortgageMandateAmount · loanPaymentAmount · loanPaymentFrequency · loanRepaymentForm · loanTerm · loanType · numberOfLoanPayments · recourseLoan · renegotiableLoan
 

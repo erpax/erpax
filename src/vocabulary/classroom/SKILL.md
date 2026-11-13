@@ -2,42 +2,42 @@
 name: classroom
 description: "Use when modelling a multi-agent learning session — a team of agents in pedagogical roles (teacher delivers, peer debates, examiner gates, debater brings viewpoints) teaches a competency to a learner (human or agent — the actor-merge). The examiner IS the gate, the debate IS competition (viewpoints → harmonic-first → decide), the learner acquires the competency's skillRoute. Generative friction, not passive delivery; the learner owns their record (sovereign, content-addressed)."
 atomPath: "vocabulary/classroom"
-coordinate: "vocabulary/classroom · 8/crest · 370850dd"
-contentUuid: "5b1f5745-87b9-5511-b59f-54172ba10685"
-diamondUuid: "6809da18-a1ce-851f-932b-bfec6f641a02"
-uuid: "370850dd-6184-87d2-be1c-aa107c48b653"
-horo: 8
+coordinate: "vocabulary/classroom · 5/round · 0ff4fb7d"
+contentUuid: "b938891e-a86e-5d6e-a185-e41a422692cc"
+diamondUuid: "d2efc0fc-edad-8f30-8887-11a9edd71853"
+uuid: "0ff4fb7d-fb82-8de7-8aeb-5cd69835ed1c"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 51
+  bondDegree: 42
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ae33e3cf-9073-8983-a4d0-c9fdf29539cb"
+  computationUuid: "7f7f5529-47eb-8fe4-9682-ce7280726b6a"
   stages:
     - stage: path
       stageUuid: "77a18f36-3e64-88d8-9c8a-e45315f34c3c"
     - stage: trinity
       stageUuid: "5eef6030-1b14-8805-ae9c-afec28c8d40a"
     - stage: boundary
-      stageUuid: "72cd7814-fdda-86bd-a5cd-e23027f4ada2"
+      stageUuid: "c9917794-5f04-80aa-b259-56ce87cd408d"
     - stage: links
-      stageUuid: "c0acd919-265e-8baa-a193-3d6de304208a"
+      stageUuid: "9df20b78-e398-8131-9511-9c4fecb01734"
     - stage: horo
-      stageUuid: "ac5e32cc-8dc2-88d1-a8a6-15dd3f1a706d"
+      stageUuid: "4855be1b-903b-8517-83b7-d6e04812eeea"
     - stage: seal
       stageUuid: "20d75ba6-6fd2-8c7e-a779-a119a1f05130"
     - stage: uuid
-      stageUuid: "f7416efa-8c52-8819-9f44-91c4ad4533b7"
+      stageUuid: "a55d3652-8ed9-8e48-a3a1-4707a9361f1a"
 version: 2
 ---
 # classroom — a team of agents teaching, generative friction not delivery
 
-FORM: **a learning session is a [[team]] of agents in pedagogical roles, run as a turn-taking graph.** The roles: a **teacher** delivers the competency, **peers** discuss, a **debater** brings opposing viewpoints, an **examiner** assesses. erpax does not invent these as new machinery — each maps to an atom it already has: the **examiner IS the gate** ([[proof]]: assessment is verified, fastest-correct, never a vote); the **debate IS [[competition]]** (multiple viewpoints compete, the [[decide]] selects correct·harmonic·efficient); the team's competence is the union of its skills ([[team]] / [[merge]]). The learner — human OR agent, the same actor ([[education]]'s actor-merge) — acquires the competency's content-addressed `skillRoute` ([[train]] routes the gap required−held; [[derive]] mints a skill the curriculum lacks). The curriculum is the corpus itself (computed competencies, not a stored syllabus).
+FORM: **a learning session is a [[team]] of agents in pedagogical roles, run as a turn-taking graph.** The roles: a **teacher** delivers the competency, **peers** discuss, a **debater** brings opposing viewpoints, an **examiner** assesses. erpax does not invent these as new machinery — each maps to an atom it already has: the **examiner IS the gate** ([[proof]]: assessment is verified, fastest-correct, never a vote); the **debate IS [[competition]]** (multiple viewpoints compete, the [[decide]] selects correct·harmonic·efficient); the team's competence is the union of its skills ([[team]] / [[merge]]). The learner — human OR agent, the same actor (education's actor-merge) — acquires the competency's content-addressed `skillRoute` ([[train]] routes the gap required−held; [[derive]] mints a skill the curriculum lacks). The curriculum is the corpus itself (computed competencies, not a stored syllabus).
 
-The PEDAGOGY is **generative friction**, not consumption: the learner is an intellect to engage, not a profile to optimise — understanding requires WORK (the gap is real, the examiner-gate is honest), there is no single answer where the material has many (the debate keeps contradictions live until [[competition]] resolves them by harmony). And it is **sovereign**: the learning is the learner's own, content-addressed and [[holographic]] (recoverable from any part, owned not harvested) — erpax is the harmonic example, the learner decides. So OpenMAIC's classroom and ember's friction breathe in ([[breath]]) and exhale as one composition: [[team]] + [[education]] + [[competition]] + [[decide]] + [[train]] over the shared corpus, the [[society]] teaching itself.
+The PEDAGOGY is **generative friction**, not consumption: the learner is an intellect to engage, not a profile to optimise — understanding requires WORK (the gap is real, the examiner-gate is honest), there is no single answer where the material has many (the debate keeps contradictions live until [[competition]] resolves them by harmony). And it is **sovereign**: the learning is the learner's own, content-addressed and [[holographic]] (recoverable from any part, owned not harvested) — erpax is the harmonic example, the learner decides. So OpenMAIC's classroom and ember's friction breathe in ([[breath]]) and exhale as one composition: [[team]] + education + [[competition]] + [[decide]] + [[train]] over the shared corpus, the [[society]] teaching itself.
 
-Matter-twin: the session is the composition `services/agent/team` (the role set) + `services/competition`/`decide` (debate + examine) + `services/skill-router/competencies` (curriculum) + `services/derive`/`train` (acquire), convened at [[chat]]. Composes: [[team]] · [[education]] · [[competition]] · [[decide]] · [[proof]] · [[train]] · [[derive]] · [[holographic]] · [[breath]] · [[society]] · [[self]].
+Matter-twin: the session is the composition `services/agent/team` (the role set) + `services/competition`/`decide` (debate + examine) + `services/skill-router/competencies` (curriculum) + `services/derive`/`train` (acquire), convened at [[chat]]. Composes: [[team]] · education · [[competition]] · [[decide]] · [[proof]] · [[train]] · [[derive]] · [[holographic]] · [[breath]] · [[society]] · [[self]].
 
 ## Common mistakes
 - Building a passive content-delivery pipeline — the classroom is dialogical (the learner jumps in, gets called on); model it as agent turns ([[team]]), not slides.

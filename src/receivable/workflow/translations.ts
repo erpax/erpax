@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "workflow",
-    "uuid": "58d66584-a16b-8084-98cb-3b731cc6b04e",
+    "uuid": "98f6ee15-0229-83c3-9d54-46ab989ffe18",
     "words": [
       "workflow"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about workflow — An invoice moves through a fixed set of states, and only along edges the graph allows.",
-    "uuid": "eb994b33-0e6c-83bb-8228-f0d43158431b",
+    "uuid": "2e6d74c9-afd3-8759-a775-58fd6061929e",
     "words": [
       "use",
       "when",

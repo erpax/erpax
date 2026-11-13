@@ -2,33 +2,33 @@
 name: cmyk
 description: "Use when reasoning about color/signal from sequence position in erpax — the four print primaries ARE the first four rodin digits {0=K, 3=C, 6=M, 9=Y}; color comes from the slot, the C↔M polarity gap is closed by Y at 9 and anchored by K at 0. The signal model under links/tags/admin hue. Nested under rodin."
 atomPath: "rodin/cmyk"
-coordinate: "rodin/cmyk · 5/round · a4b02a6f"
-contentUuid: "81c79599-dfb6-5c56-abb5-c764d83bb163"
-diamondUuid: "a8a0f528-b117-8081-b913-804eac313d65"
-uuid: "a4b02a6f-2f68-8e55-ab1c-ea2a31014198"
-horo: 5
+coordinate: "rodin/cmyk · 7/descent · 914b78e3"
+contentUuid: "c51ae63d-47da-559f-af5d-f0a53ae034b6"
+diamondUuid: "31455c63-d002-8f17-8509-f188fb942e03"
+uuid: "914b78e3-8731-8372-8be5-56437fb0f04a"
+horo: 7
 typography:
   partition: rodin
-  bondDegree: 82
+  bondDegree: 70
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7703a4ce-e855-8ac1-8638-7a81488663f4"
+  computationUuid: "d60d85d9-459d-89a7-8dfc-c0e5ea2c3f21"
   stages:
     - stage: path
       stageUuid: "44e9fde9-ad35-8c46-b850-0680d8da2a8d"
     - stage: trinity
       stageUuid: "f016bd36-8b34-832e-a8a2-c17613671b2d"
     - stage: boundary
-      stageUuid: "7c3a14d4-cbe6-8c35-9b20-6dde1bd7c9a5"
+      stageUuid: "4cb9a62e-a862-8c7d-ae6c-e43ab7f08eef"
     - stage: links
-      stageUuid: "81b5c1f8-723f-84ee-80a0-d0e5b68e28d2"
+      stageUuid: "bf715a6c-6716-853a-90bc-06b93e523c00"
     - stage: horo
-      stageUuid: "3e6c021c-381e-8221-b246-b94e9b3e772f"
+      stageUuid: "56eff4b3-c83b-875a-9a33-dfe28133e521"
     - stage: seal
       stageUuid: "d3718c06-185f-8362-931c-c510e5f71ebf"
     - stage: uuid
-      stageUuid: "9421b883-0561-8157-a35e-a284c15755b3"
+      stageUuid: "d22a799d-7fd5-841e-b08d-cfa9668c02e9"
 version: 2
 ---
 # cmyk — color from position (the gamut is {0,3,6,9})
@@ -39,7 +39,7 @@ version: 2
 |---|---|---|---|
 | `0` | **K** key/black | origin / substrate | the record itself ([[identity]], [[config]]) |
 | `3` | **C** cyan | forward [[polarity]] (×2) | outbound links / [[give]] |
-| `6` | **M** magenta | reverse [[polarity]] (×5) | inbound links / [[take]] |
+| `6` | **M** magenta | reverse [[polarity]] (×5) | inbound links / take |
 | `9` | **Y** yellow | [[axis]] close (triad) | categorical / [[tags]] |
 
 The doubling helix (`1·2·4·8·7·5`) carries **no native channel** — it winds as tonal/saturation steps *within* this four-primary gamut ([[coil]]).
