@@ -154,8 +154,9 @@ const hasChildCodeAtoms = (dir: string): boolean => {
     if (e.startsWith('.') || e === 'node_modules') continue
     const p = join(dir, e)
     if (!isDir(p)) continue
-    // `.tsx` is a barrel too — see the note on `barrelIn` below.
-    if (barrelIn(p)) return true
+    // `.tsx` is a barrel too — see the note on `barrelIn` below. Code held deeper
+    // (`auto/populate/tenant`) is still the atom's code: descend, do not stop one level down.
+    if (barrelIn(p) || hasChildCodeAtoms(p)) return true
   }
   return false
 }
