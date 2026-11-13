@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "versions",
-    "uuid": "531b8f5e-a9ea-832c-92bb-937a52850fdd",
+    "uuid": "d6c87cc9-590d-8d17-9e83-f0ba31606cf5",
     "words": [
       "versions"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing the version history of an internal policy — release date, version number, change log, document upload, lifecycle draft→final→superseded; ISO 9001 documented-information control per policy. The policy-versions collection.",
-    "uuid": "6b4f729b-4d39-8a69-b9bf-b971eb3d66c3",
+    "uuid": "9fa56027-cd55-8b7b-bb2b-08551b506975",
     "words": [
       "use",
       "when",

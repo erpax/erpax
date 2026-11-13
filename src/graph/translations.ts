@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "graph",
-    "uuid": "ca6852f6-9c59-89ed-8957-018604de4c9b",
+    "uuid": "8b21ad53-c9b6-87e4-bc21-1811e83791b4",
     "words": [
       "graph"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling a directed graph of nodes and edges — neighbors and breadth-first reachability over an edge list; the shape of the corpus itself, atoms as nodes and links as edges.",
-    "uuid": "ef931966-8f84-8723-a91a-663e3d85387f",
+    "uuid": "38dbdfcc-e6a6-808f-bb37-c97372626468",
     "words": [
       "use",
       "when",

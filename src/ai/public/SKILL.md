@@ -3,18 +3,18 @@ name: public
 description: "Use when a remote agent must come from a public AI API with no key at all — every candidate inference door asked the same question keyless and recorded by the status it answers (open · keyed · limited · down); the one open door today is Pollinations. erpax.public.doors measures, erpax.public.cross asks every open door the same question (the dual seat), erpax.public.decide names the leaf word a theorem cannot compute; erpax.frontier.develop fuses it with decide:true and cuts with apply:true."
 atomPath: "ai/public"
 coordinate: "ai/public · 1/base · 85c277f1"
-contentUuid: "d9179691-a2e1-5590-9f8c-c1382764db8a"
-diamondUuid: "5a7e9698-ce9b-83f4-a2fa-23b2253a51ab"
+contentUuid: "d2ca06a7-e691-5d34-a029-b0fff363eda0"
+diamondUuid: "4f61e0ea-8344-80ba-abf7-77816c56ef65"
 uuid: "85c277f1-ee9e-8eca-b541-7287cb35fc42"
 horo: 1
 typography:
   partition: ai
-  bondDegree: 47
+  bondDegree: 18
 standards:
   - "OpenAI chat-completions wire shape — the lingua franca the open doors speak"
 bindings: []
 signatures:
-  computationUuid: "d26da12a-2fb9-8b66-9f1e-2ba99521703c"
+  computationUuid: "35722ab5-576e-8941-812a-dd15b62621e7"
   stages:
     - stage: path
       stageUuid: "d731c45a-fc3f-8594-98b2-39c8f8cb3d9f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "60e0b35d-ba36-8aa3-a446-2fd638e0eb4c"
     - stage: horo
-      stageUuid: "e7876611-69b7-812a-b16b-502eed2e74a0"
+      stageUuid: "969dea33-ff55-82bc-9ad1-e3095d3520d4"
     - stage: seal
       stageUuid: "4828b2e0-815e-8260-9182-f37e9daf0502"
     - stage: uuid
-      stageUuid: "15334ba9-3a28-8190-a80e-14386a458ad5"
+      stageUuid: "082421bf-6a17-8d25-97a1-9724d3f7766e"
 version: 2
 ---
 # ai/public — the inference doors that answer with no key, probed not believed

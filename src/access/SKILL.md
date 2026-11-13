@@ -2,14 +2,14 @@
 name: access
 description: "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \"access denied\"/\"document hidden\". In erpax access is the society's \"who can do what\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost."
 atomPath: access
-coordinate: "access · 9/unity · 98b8a5ec"
-contentUuid: "edd3c5ab-9c20-57d9-b66f-cadd1c4dd0dc"
-diamondUuid: "a7839ea9-a901-882a-8656-4674f772f476"
-uuid: "98b8a5ec-f9b9-89ec-8422-8c66b73a7376"
-horo: 9
+coordinate: "access · 3/3 · 3bb8da3c"
+contentUuid: "6fd1c529-6701-584b-9a47-76123fd98a93"
+diamondUuid: "5e4693ec-1de7-81dc-8ade-2702c661e7b0"
+uuid: "3bb8da3c-474e-8b96-88b6-19bf77635b5e"
+horo: 3
 typography:
   partition: access
-  bondDegree: 414
+  bondDegree: 361
 standards:
   - "CoE-108+"
   - "ISO 27001 A.5.10 access-control-policy"
@@ -29,7 +29,7 @@ bindings:
   - "ratelimit/RATE_LIMITER_AI"
   - "ratelimit/RATE_LIMITER_API"
 signatures:
-  computationUuid: "c530aecd-443c-8708-8086-1e2a243941bd"
+  computationUuid: "3a01fb05-3acc-89c1-82e0-90ad72b09ff0"
   stages:
     - stage: path
       stageUuid: "d7b1808b-9c66-801b-a8de-ed55ac4d2ba0"
@@ -38,13 +38,13 @@ signatures:
     - stage: boundary
       stageUuid: "5b938ab8-79e7-8bd3-84bb-1b49dbce5bee"
     - stage: links
-      stageUuid: "55e1aab7-3f0c-85fb-9d09-aa41b9413c30"
+      stageUuid: "b8fcf90e-ef30-834c-9623-e031e98a054e"
     - stage: horo
-      stageUuid: "35a849dc-aae4-87fd-9fd1-9ddefc51bfc4"
+      stageUuid: "5ed798bf-ef71-84a7-876d-7b3d80e4156e"
     - stage: seal
       stageUuid: "67f50dad-9ba9-8e96-bf4a-17b64f5ed91c"
     - stage: uuid
-      stageUuid: "fdd01027-6ca0-8366-bf9d-c2b6ad8950c3"
+      stageUuid: "05338c54-093b-858b-8f41-c27f9dc1b887"
 version: 2
 ---
 # access — who can do what in the society (position 3, the 3·6·9 governing axis)

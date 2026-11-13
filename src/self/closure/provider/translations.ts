@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about provider — Each provider file registers itself at its own bottom. Importing this barrel runs those side-effects, so the set of available providers is the set of files present — there is no…",
-    "uuid": "51d60244-f099-8435-b380-2a85dccfc2f6",
+    "uuid": "8937dd69-33e9-8557-8d93-23dbeca6ed6a",
     "words": [
       "use",
       "when",

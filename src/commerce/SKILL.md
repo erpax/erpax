@@ -2,14 +2,14 @@
 name: commerce
 description: "Use when designing or porting the erpax commerce/trade domain to Payload — parties under many roles (seller/buyer/agent/supplier/consignee/carrier), the cart→quote→order→invoice→note document chain, payments/allocations/refunds, subscriptions & metered usage, inventory/stock movement, packing & shipment, dunning/credit terms. The transactional-flow `@erpax/commerce` twin (sequence 4·8)."
 atomPath: commerce
-coordinate: "commerce · 8/crest · baae669f"
-contentUuid: "affedf7c-3e91-58ab-905b-8168fc7f90f3"
-diamondUuid: "424fb86d-6f6c-82da-9e09-afa503316b04"
-uuid: "baae669f-0ff1-80fa-ab2d-38439671632d"
-horo: 8
+coordinate: "commerce · 7/descent · d582277a"
+contentUuid: "96898656-6cc4-5fb3-824e-6e8760ae3d5d"
+diamondUuid: "3f27c95a-eff7-8ffc-a7ba-f41ef052de63"
+uuid: "d582277a-5a71-85a1-9959-5557d1dbcb76"
+horo: 7
 typography:
   partition: commerce
-  bondDegree: 141
+  bondDegree: 95
 standards:
   - "Cloudflare Workers API (deployments + durable-object namespaces)"
   - "Stripe API v2024-10-28-acacia"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b34dab4e-8ac4-8146-bddf-2451b935b8c0"
+  computationUuid: "4799e771-007c-8f50-b5d0-a177ee3b11b6"
   stages:
     - stage: path
       stageUuid: "eefc9b09-1e71-8151-a18f-4a4dd3a90971"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "4e7c555b-76b2-8ae9-8acd-37fe0d6aa7dd"
     - stage: links
-      stageUuid: "cbe5280e-c6f0-87e1-8254-52e276fb1dd6"
+      stageUuid: "0b682b86-80ea-8b9a-b55b-d5a9a28cb7e7"
     - stage: horo
-      stageUuid: "ff56e543-8dba-8bc7-9c74-8ad310ee56f4"
+      stageUuid: "f27d4103-8a58-8fb4-a3b5-fc626de820e8"
     - stage: seal
       stageUuid: "08b5e11f-2892-8355-a41e-c87291686fa2"
     - stage: uuid
-      stageUuid: "8888a8d8-ef90-8d39-bab2-67a34c0fd884"
+      stageUuid: "59db4b42-63d2-89a8-ad80-db32a99ceced"
 version: 2
 ---
 # commerce — the transactional-flow plugin (one party, infinite roles)

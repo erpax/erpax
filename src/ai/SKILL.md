@@ -3,13 +3,13 @@ name: ai
 description: "Use when invoking any AI inference in erpax — invoice OCR, bank-transaction matching, sanctions screening, anomaly detection, tax classification, HS-code suggestion, document classification, vector embedding, semantic search, or audit summarisation. Every AI call goes through the single `callWorkersAi` gate (entitlement, audit row, tenant scope, risk class, metering); the AI services barrel."
 atomPath: ai
 coordinate: "ai · 2/share · 2b3ec860"
-contentUuid: "a28e425d-8164-5104-aed1-b2279d504c59"
+contentUuid: "d14c5841-ebf6-5214-bc7e-18602704504f"
 diamondUuid: "4ab03cd4-ae29-82f3-b68f-b16f58a94db5"
 uuid: "2b3ec860-a3b5-80f8-b56b-a8383ac2df71"
 horo: 2
 typography:
   partition: ai
-  bondDegree: 40
+  bondDegree: 38
 standards:
   - "COSO-ERM-2017"
   - "EN-16931"

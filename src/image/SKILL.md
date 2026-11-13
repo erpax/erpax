@@ -3,33 +3,33 @@ name: image
 description: "Use when a content-uuid needs a visual — its deterministic identity sigil (and animation). One more projection of the self-decoding uuid, beside color (the wave), signal (colour+sound), translation (meaning). uuidImage renders a mandala whose colours, radii and angles ARE the uuid's bytes; uuidAnimation adds byte-seeded SMIL rotation. Same uuid ⇒ same image — the visual IS the address. Honest: this renders the address, not the meaning; semantic text-to-image is a generative model (the seed)."
 atomPath: image
 coordinate: "image · 2/share · b0292d2b"
-contentUuid: "bfb30ef8-1c95-5e60-b653-c0cade3e2d2b"
-diamondUuid: "c1659381-dad6-8032-afd0-ef18204563f9"
+contentUuid: "38fdde9c-8c2a-5a96-a8c0-b175af673127"
+diamondUuid: "13f9eadc-e10a-8894-8cca-17ca60627937"
 uuid: "b0292d2b-29d9-8784-b251-d5a171649d88"
 horo: 2
 typography:
   partition: image
-  bondDegree: 45
+  bondDegree: 21
 standards:
   - "SVG 1.1 / SMIL animation · deterministic hash-to-art (identicon family)"
 bindings: []
 signatures:
-  computationUuid: "190eed79-ce47-8c80-8e65-07b06c9ef04b"
+  computationUuid: "59dc0268-d473-8ec4-8371-f1b62fd760cd"
   stages:
     - stage: path
       stageUuid: "21846f15-7792-891d-8152-f563f2f030a6"
     - stage: trinity
-      stageUuid: "1438abfa-d6b7-8084-96a2-658f5300d09c"
+      stageUuid: "e94a1db6-ac8a-8695-97b1-e03f16db3a6a"
     - stage: boundary
-      stageUuid: "638e1239-dcf8-83ce-8aae-55e75f745f4a"
+      stageUuid: "077396c5-d6ba-8f62-91fc-d51f6415675d"
     - stage: links
-      stageUuid: "f418e630-6182-870d-b9f1-87382fb8875c"
+      stageUuid: "91b15cc1-0288-8d92-acca-cc23e5db670e"
     - stage: horo
-      stageUuid: "488465bc-2d21-8f25-8bf5-132d3ff31e23"
+      stageUuid: "d7e2469b-a88d-8116-aacd-74065a783a00"
     - stage: seal
-      stageUuid: "5d3f5ccd-0da5-85bb-b929-39b6ef310289"
+      stageUuid: "617972f6-bbd9-83f3-b9c8-bea1970b3e55"
     - stage: uuid
-      stageUuid: "17612ca4-e658-8b77-983b-b7aec1d80118"
+      stageUuid: "da11fc22-50ef-8b17-95c0-2259b926bca6"
 version: 2
 ---
 # image — the visual face of the uuid

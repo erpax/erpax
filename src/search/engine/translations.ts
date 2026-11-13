@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "engine",
-    "uuid": "8ccba622-109d-8ed3-b732-32cc4da877f3",
+    "uuid": "e7c87828-3f3f-8cf0-991b-21f900ec6461",
     "words": [
       "engine"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when querying the corpus — the search engine that resolves a query to matching atoms, ranked by closeness; a pure read over the live matrix node set.",
-    "uuid": "8b4e7e4a-0485-80c7-81f3-9a90e591b4b2",
+    "uuid": "2a1c9e7a-101b-8aca-9b77-6f4d25d94211",
     "words": [
       "use",
       "when",

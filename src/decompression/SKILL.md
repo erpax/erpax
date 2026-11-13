@@ -2,14 +2,14 @@
 name: decompression
 description: "Use when reasoning about the dive/decompression metaphor for erpax math — on-gas/off-gas as take/give, the gas debt as a conserved transaction balanced before close, half-time doubling as the rodin coil, deco stops as horo positions, M-values as the harmony bound, and the {1,2,3} basic-team basis (cave·recreational·technical = self·duality·trinity)."
 atomPath: decompression
-coordinate: "decompression · 7/descent · d015d13a"
-contentUuid: "fd156d13-7f49-5d8c-bc71-753d62a41608"
-diamondUuid: "63e9b008-4154-80f6-bb52-1a59e874c092"
-uuid: "d015d13a-3042-8f06-9ddf-3414c1103d2f"
-horo: 7
+coordinate: "decompression · 2/share · 86cce7ad"
+contentUuid: "adc3fa82-fd2c-5eb2-98bd-e1034a128d31"
+diamondUuid: "e36a704a-29c0-83f3-8813-f7b3ac327cf3"
+uuid: "86cce7ad-6886-839f-9d30-23b4ff8ec785"
+horo: 2
 typography:
   partition: decompression
-  bondDegree: 131
+  bondDegree: 98
 standards:
   - "Bühlmann ZH-L16 — 16 compartments, gradient-factor / M-value theory"
   - "Haldane half-time model (idealised compartments double 5·10·20·40)"
@@ -17,7 +17,7 @@ standards:
   - "SFIA 8 responsibility-levels (1..7) — the M-value depth axis"
 bindings: []
 signatures:
-  computationUuid: "976a3a20-fe35-87c1-91c5-a91654d34ac6"
+  computationUuid: "e4fa2c10-9c1e-84f1-a481-92b203136829"
   stages:
     - stage: path
       stageUuid: "3f4cb9b3-3893-8d1c-9684-0dedc4988a2e"
@@ -26,13 +26,13 @@ signatures:
     - stage: boundary
       stageUuid: "22814f44-6712-8c84-9064-3f8d2058edc7"
     - stage: links
-      stageUuid: "6c51c428-01be-846d-95ca-e5f453cbc438"
+      stageUuid: "062db2ee-6521-84ff-9151-97b454739d09"
     - stage: horo
-      stageUuid: "2f40f574-d6ef-8eb6-b4a1-da38b7fc3aed"
+      stageUuid: "d8182698-c8eb-839b-bd3f-345842b1d23e"
     - stage: seal
       stageUuid: "061b3594-ad8f-8e62-9b87-1c3fd1720310"
     - stage: uuid
-      stageUuid: "26f200f2-cf18-8ff8-b064-5ad67e183a06"
+      stageUuid: "0fc8c9d5-9f46-88f6-a07a-05543ab6c6a2"
 version: 2
 ---
 # decompression — the dive IS the erpax ledger (one extreme sport, three aspects)

@@ -3,13 +3,13 @@ name: development
 description: "Use when planning what to build next — a feasibility-ranked roadmap of capabilities driven by the self-building loop; nextMove picks the highest-feasibility development for the society to advance."
 atomPath: development
 coordinate: "development · 7/descent · b6e1ce43"
-contentUuid: "ccd66802-9f90-583a-a7d3-feb9b4e07596"
+contentUuid: "b37090ce-e94c-5d17-a0f1-4834c5f2c42d"
 diamondUuid: "89f9efde-a3fc-8edb-9144-636fd9f6438a"
 uuid: "b6e1ce43-f3ab-8e81-be3e-3241e5c533b1"
 horo: 7
 typography:
   partition: development
-  bondDegree: 56
+  bondDegree: 54
 standards: []
 bindings: []
 signatures:

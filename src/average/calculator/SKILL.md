@@ -3,13 +3,13 @@ name: calculator
 description: "Use when taking the arithmetic mean of a number array anywhere in the corpus — the zero-guarded collapse of the repeated `sum/length` reduce across receivables, payables, and multi-currency analytics, where an empty array yields 0 (never NaN)."
 atomPath: "average/calculator"
 coordinate: "average/calculator · 4/weave · 77640221"
-contentUuid: "f763e0dd-e056-5fc0-8efc-d64a53d10b27"
+contentUuid: "149e09cd-1cde-5ef8-b42e-279c673bae42"
 diamondUuid: "4ee36ddd-bd46-8f91-afaf-42d5f628f9f8"
 uuid: "77640221-b80a-88a2-b16d-dd1bbc3dbe53"
 horo: 4
 typography:
   partition: average
-  bondDegree: 30
+  bondDegree: 24
 standards: []
 bindings: []
 signatures:

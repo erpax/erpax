@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cloudflare",
-    "uuid": "b000aee9-bc06-85dc-ae88-2217893ae9a6",
+    "uuid": "2002a7d8-5653-8355-9397-0e1185743b44",
     "words": [
       "cloudflare"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when touching Cloudflare — Workers AI first-class, uuid-sealed credentials, binding diamonds for every Wrangler section, path-merge on the 7th surface, mediated binding access fail-closed.",
-    "uuid": "e67a1c91-5d44-8b42-baf7-e7e394ae5f1b",
+    "uuid": "dec60c86-d889-87a9-97d3-d4ff9daf3c18",
     "words": [
       "use",
       "when",

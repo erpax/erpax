@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "device",
-    "uuid": "9fef751b-c4eb-8f2e-a284-20892199d2c2",
+    "uuid": "90d62f19-bdf8-8a12-ae15-4ee1bd458131",
     "words": [
       "device"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about a device as a measurement instrument — the boundary where the continuous analog world collapses into discrete digital snapshots; capture on the edge, compute pure, every reading a content-addressed measurement in the snapshot chain.",
-    "uuid": "1b5f7184-8ba2-8269-a627-04466ec0a2ec",
+    "uuid": "3abbac09-7c09-88a0-bef2-bd9803112f61",
     "words": [
       "use",
       "when",

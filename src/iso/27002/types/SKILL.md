@@ -3,13 +3,13 @@ name: types
 description: "Use when reasoning about types — Canonical ISO 27002:2022 security control catalog — id ↔ title ↔ theme lookup tables for the controls cited across the codebase."
 atomPath: "iso/27002/types"
 coordinate: "iso/27002/types · 4/weave · 0af61145"
-contentUuid: "05b054a1-84ca-51ec-8bf6-51d08f4ad4d2"
-diamondUuid: "cd6a1b75-28b2-8912-90d8-35ecf4023568"
+contentUuid: "a682531e-935a-5c53-aa07-78a00d92bd6c"
+diamondUuid: "17e46039-a988-8cb8-a8db-e389eb0e442b"
 uuid: "0af61145-1f96-8119-9f20-3e59e3636ba4"
 horo: 4
 typography:
   partition: iso
-  bondDegree: 85
+  bondDegree: 75
 standards:
   - "ISO-27001:2022 isms-annex-a-controls"
   - "ISO-27002"
@@ -20,7 +20,7 @@ standards:
   - "SOC-2 trust-services-criteria"
 bindings: []
 signatures:
-  computationUuid: "a4f0e710-1f01-8ef7-93c8-9f70b64fa963"
+  computationUuid: "8b484d1f-ef65-8a2d-9455-0238f95e0d06"
   stages:
     - stage: path
       stageUuid: "43805a9c-c02d-88f7-88f9-69386e369fa6"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "089ba978-4561-8fba-a551-52d1e27e00f4"
     - stage: horo
-      stageUuid: "7f000cff-572c-800c-b31d-94ede21a3c6c"
+      stageUuid: "fc919418-a0dc-8a00-b8c3-f2d82c609c7e"
     - stage: seal
       stageUuid: "e43f96d0-000e-8fb8-8b95-cb5ebe9ce47b"
     - stage: uuid
-      stageUuid: "ff29d7e5-ee1f-8956-881c-7f3b282e565a"
+      stageUuid: "4db5929b-a8a9-83cb-8f5d-fe3fb67c9ac1"
 version: 2
 ---
 # iso/27002/types

@@ -3,13 +3,13 @@ name: foot
 description: "Use when reasoning about foot as an anatomical part of body — vocabulary pivot to @/foot; nested not duplicated."
 atomPath: "body/foot"
 coordinate: "body/foot · 5/round · 7746e903"
-contentUuid: "0643ad54-ea4e-585e-bc17-d8889819a28c"
+contentUuid: "6303c94c-4e04-56c3-b07f-dda771f69ba3"
 diamondUuid: "5437186f-9790-8f5c-918f-dbbce4c75566"
 uuid: "7746e903-dcea-8607-8b5e-4468667fe4b5"
 horo: 5
 typography:
   partition: body
-  bondDegree: 21
+  bondDegree: 17
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

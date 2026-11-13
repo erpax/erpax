@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "evidence",
-    "uuid": "28389187-7484-8362-a35e-aac48b04c2a2",
+    "uuid": "db7181f5-9717-8aed-95d4-812033bf359b",
     "words": [
       "evidence"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when external research must be held at its real epistemic status — each claim stated agnostically with a verdict (theorem · measured · contested · open · error · metaphor · unfalsifiable) and the observation that would refute it. Empirical claims with no refutation condition fail closed. Run: tsx src/quantum/evidence/index.ts",
-    "uuid": "b1c42861-4d71-8831-9bb3-e796929e0fe5",
+    "uuid": "4cd7ccdc-2893-8b55-8f19-bbaf5c903eec",
     "words": [
       "use",
       "when",

@@ -3,13 +3,13 @@ name: types
 description: "Use when you need the shared type vocabulary for the next-horizon conservation primitives (Laws 11-20+22) — causal provenance, deterministic replay, tenant-isolation proof, bitemporal coordinates, cost and carbon metrics, post-quantum signatures, self-explainability, reversible inverse-effects, and AI-decision provenance — what no current standard fully demands yet every regulator will within five years."
 atomPath: "beyond/types"
 coordinate: "beyond/types · 2/share · c2b53bd3"
-contentUuid: "26cf16d1-2121-52a7-8bde-6c580fd26257"
-diamondUuid: "c2cb04a7-8471-8075-a666-53f3fd39797d"
+contentUuid: "896b7375-49f4-5276-93a3-0bd7e8ece19c"
+diamondUuid: "2edf20e6-bd2d-806a-9e1f-34eedfdaf268"
 uuid: "c2b53bd3-46d1-80e7-92b6-6876aa39c5ba"
 horo: 2
 typography:
   partition: beyond
-  bondDegree: 85
+  bondDegree: 75
 standards:
   - ESRS E1 (climate change disclosures — gCO2e per activity)
   - "EU AI Act 2024/1689 (Annex IV — technical documentation)"
@@ -32,7 +32,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "23f2cec8-d3a0-88d2-9920-ab492140f9d0"
+  computationUuid: "184f5b29-24d1-883b-ae20-6edfccf3523d"
   stages:
     - stage: path
       stageUuid: "9ff56465-1a02-8cc2-ab50-4c860c468098"
@@ -43,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "2bb91e74-9495-85da-989e-f5637b25639d"
     - stage: horo
-      stageUuid: "6c3f4e5f-01bd-8578-8497-34ff3bd8b5a2"
+      stageUuid: "cb60aca5-e192-821b-a97c-376547cf7a88"
     - stage: seal
       stageUuid: "8e94cffe-7f5a-8bcb-b904-27a8be669fe6"
     - stage: uuid
-      stageUuid: "041efc5c-e067-8d20-b1f7-68ce4c645814"
+      stageUuid: "9c7e574b-6567-87aa-b51f-9d3fd994c39b"
 version: 2
 ---
 # beyond/types — beyond-current-standards type vocabulary

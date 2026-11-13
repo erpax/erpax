@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling the reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing) a lot is produced through, a self-referential tree with standard time.",
-    "uuid": "3eff3a58-02de-8183-bc9e-5f8c60602877",
+    "uuid": "cf962923-ecfd-8a11-b566-8c5dc5fcdda4",
     "words": [
       "use",
       "when",

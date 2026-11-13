@@ -3,13 +3,13 @@ name: register
 description: "Use when reasoning about register — A theorem is only as strong as what it assumes. This asks the kernel, per declaration, and writes the answer down — is the arbiter, and it is **asked, never restated**."
 atomPath: "proof/register"
 coordinate: "proof/register · 1/base · 1262a4de"
-contentUuid: "725be5ca-a1dd-549e-9417-a9f28992189d"
+contentUuid: "d9be6513-a3f3-5d56-89d2-621928856b00"
 diamondUuid: "5ef902bc-e6dd-845b-9751-1915f197fb3f"
 uuid: "1262a4de-24d0-8b3c-a14c-dd6679ef3e9b"
 horo: 1
 typography:
   partition: proof
-  bondDegree: 25
+  bondDegree: 20
 standards: []
 bindings: []
 signatures:

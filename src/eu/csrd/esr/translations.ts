@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing EU CSRD / ESRS.",
-    "uuid": "7c889167-b19f-8158-8a69-b0cefd002482",
+    "uuid": "c1b451c8-4d56-8abe-bb60-808db71a5251",
     "words": [
       "use",
       "when",

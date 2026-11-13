@@ -3,13 +3,13 @@ name: reporting
 description: "Use when implementing or referencing Phase B6: Audit & Compliance Reporting."
 atomPath: "audit/compliance/reporting"
 coordinate: "audit/compliance/reporting · 7/descent · 0fe5bc64"
-contentUuid: "d5735650-b157-5485-82fc-b841ec77c4a7"
-diamondUuid: "4dd42ead-e018-8d2d-bba6-fda169d15a65"
+contentUuid: "acc9de87-0f3a-5314-8972-f2b1067e1720"
+diamondUuid: "9b7cc1f3-2963-8ac8-bd5d-39ccfd6c5949"
 uuid: "0fe5bc64-47ec-8f68-8826-e70363d60bdc"
 horo: 7
 typography:
   partition: audit
-  bondDegree: 20
+  bondDegree: 3
 standards:
   - BEPS
   - "BEPS Action 13:2021 Transfer Pricing Documentation"
@@ -33,7 +33,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "5461c0d0-41cc-84cd-8aec-7d14e7d2ae57"
+  computationUuid: "ac024e6d-88d3-8437-9a48-350897befaba"
   stages:
     - stage: path
       stageUuid: "ff906584-7cd3-86ed-822c-d5619e136f2c"
@@ -44,11 +44,11 @@ signatures:
     - stage: links
       stageUuid: "a33cf334-e2ab-8c33-998d-ff03bbe35f68"
     - stage: horo
-      stageUuid: "a54bea7f-a0c0-8b96-a32f-48195b56c098"
+      stageUuid: "f03a6575-ee68-88f6-a8f7-3def284526d7"
     - stage: seal
       stageUuid: "c4da9bb5-a0ac-8412-8b35-c0699d4468f0"
     - stage: uuid
-      stageUuid: "57ce5956-3363-896c-8f7b-47e8d787db65"
+      stageUuid: "7abe8f1c-09a0-8268-a070-043d5ef66853"
 version: 2
 ---
 # Phase B6: Audit & Compliance Reporting

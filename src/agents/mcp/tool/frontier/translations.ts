@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about frontier — self/sufficient's could always **order** a frontier and never **generate** one: every intent had to be typed by a person into think's store.",
-    "uuid": "db614701-fcdc-8978-8f57-8a0d91fb1679",
+    "uuid": "1080be74-d475-8b27-82c0-324d120dda51",
     "words": [
       "use",
       "when",

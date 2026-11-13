@@ -3,13 +3,13 @@ name: messages
 description: "Use when sending or querying internal addressed messages between users — subject/body, priority (high/normal/low), multi-recipient addressing, threaded replies via parentMessage, optional attachment to invoices/customers/vendors/orders, and read-at tracking. The internal user-to-user messaging collection."
 atomPath: messages
 coordinate: "messages · 7/descent · 11ca70f5"
-contentUuid: "f29e08b8-abf4-5a97-ab71-3d008657c9be"
-diamondUuid: "6757209a-c798-852f-bd86-30660a20d668"
+contentUuid: "77be7770-7f99-5b7f-a771-427401389610"
+diamondUuid: "623ea64b-b39b-89d5-b039-4f9e462c9a6c"
 uuid: "11ca70f5-918c-80ef-82a1-fb28703315aa"
 horo: 7
 typography:
   partition: messages
-  bondDegree: 24
+  bondDegree: 21
 standards:
   - "GDPR Art 5(1)(e) storage-limitation retention"
   - "ISO-27001 A.5.23 cloud-service-tenant-isolation"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a2adc4fa-1e58-8002-b0db-e3592401f722"
+  computationUuid: "ed26f8a7-3b33-801b-9370-5e6ddbbabebe"
   stages:
     - stage: path
       stageUuid: "7dcb5e4e-8eba-8ae3-be38-2ff774a0d95d"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "4e80a849-7615-806b-a10a-9292af7364bb"
     - stage: horo
-      stageUuid: "ed205282-268d-8e1c-89c1-4367fcc72327"
+      stageUuid: "239a6054-1ef5-8a70-a211-f2e8d385f105"
     - stage: seal
       stageUuid: "e9039ea4-d0ed-8786-8fed-317fd0bf9e30"
     - stage: uuid
-      stageUuid: "50f1d1e2-748b-8251-bbab-54635cf1aa97"
+      stageUuid: "1e25a94f-9e8c-8737-9615-94609cd5f4ee"
 version: 2
 ---
 # messages

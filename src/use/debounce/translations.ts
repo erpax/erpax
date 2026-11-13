@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about debounce — holds a changing value still for a delay before releasing it, so a search field issues one request when typing stops instead of one per character.",
-    "uuid": "d0d35691-162d-8247-9c0a-9bf2523d6468",
+    "uuid": "82fba510-89d0-86f9-9ec2-e35d79bb010a",
     "words": [
       "use",
       "when",

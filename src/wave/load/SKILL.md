@@ -3,13 +3,13 @@ name: load
 description: "Use when partitioning work into balanced waves — self-balancing load distribution across the seven horo phases, weighted by comparable units, with the lane-cost and tamper-cost arithmetic the scheduler and session build on."
 atomPath: "wave/load"
 coordinate: "wave/load · 8/crest · 06154a97"
-contentUuid: "be702ef2-5883-577d-84c9-baaab81bda00"
+contentUuid: "b3da05da-a35d-55f8-999a-ae547e4fd039"
 diamondUuid: "f4211f41-c435-880d-9613-0261ac28e6ab"
 uuid: "06154a97-32e1-88f0-a6b9-eab4e6f65c71"
 horo: 8
 typography:
   partition: wave
-  bondDegree: 18
+  bondDegree: 14
 standards: []
 bindings: []
 signatures:

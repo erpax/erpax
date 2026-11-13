@@ -3,13 +3,13 @@ name: tag
 description: "Use when reasoning about tag — Every locale tag the corpus writes must be a **well-formed and already-canonical BCP 47 tag**: every entry in , and every or property with a string literal value."
 atomPath: "i18n/tag"
 coordinate: "i18n/tag · 4/weave · 1b10328f"
-contentUuid: "68a3d623-ec3a-5f15-9e07-e10436856b0c"
+contentUuid: "2b125046-0cf9-52f2-8f4f-92c4e2b391d6"
 diamondUuid: "97554416-6fe4-88a6-a1f6-10b62e0b0fb8"
 uuid: "1b10328f-5cdb-87ec-b221-80ab5f4e5ce5"
 horo: 4
 typography:
   partition: i18n
-  bondDegree: 37
+  bondDegree: 35
 standards:
   - BCP 47 (RFC 5646) §2.2.9 — classes of conformance
   - BCP 47 (RFC 5646) — tags for identifying languages

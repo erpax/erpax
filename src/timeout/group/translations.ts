@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a laddered command must end as a whole — spawnSync's timeout kills only the shell it started, so the command under it is reparented to init and keeps running. spawnGroupSync runs the command as the leader of its own process group under a tiny supervisor that kills the whole group on timeout or on Ctrl-C, then dies by the same signal, so every verdict that reads r.signal is unchanged.",
-    "uuid": "8b2b6377-4808-86df-89ac-ee591bb6f806",
+    "uuid": "bcdbdf2e-e13c-8304-956e-07578310b1d9",
     "words": [
       "use",
       "when",

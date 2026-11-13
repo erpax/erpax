@@ -3,13 +3,13 @@ name: coverage
 description: Use when reasoning about coverage — Coverage calculation — measure answered question fraction
 atomPath: "quantum/chat/coverage"
 coordinate: "quantum/chat/coverage · 5/round · 3ffaf78d"
-contentUuid: "cb3d9672-c7e2-5585-a086-78258264d0cc"
+contentUuid: "8226b6f2-6606-5292-a4d3-9f7b5adda8df"
 diamondUuid: "31dcb672-4746-8334-bb26-cd9d898bec64"
 uuid: "3ffaf78d-b911-8fb6-be39-7659823d6925"
 horo: 5
 typography:
   partition: quantum
-  bondDegree: 23
+  bondDegree: 15
 standards: []
 bindings: []
 signatures:
@@ -48,11 +48,11 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "c2a1701c-67dd-8a0b-868d-8e5b52e99038"
-    contentUuid: "cb3d9672-c7e2-5585-a086-78258264d0cc"
+    contentUuid: "8226b6f2-6606-5292-a4d3-9f7b5adda8df"
 version: 2
 ---
 # quantum/chat/coverage
 
 Coverage calculation for chat threads — measure answered question fraction.
 
-<sub>content-uuid `cb3d9672-c7e2-5585-a086-78258264d0cc` · account `quantum/chat/coverage` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `8226b6f2-6606-5292-a4d3-9f7b5adda8df` · account `quantum/chat/coverage` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

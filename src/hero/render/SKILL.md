@@ -3,17 +3,17 @@ name: render
 description: "Use when reasoning about render — A dispatcher over three heroes, and the interesting half is everything that is **not** one of them."
 atomPath: "hero/render"
 coordinate: "hero/render · 2/share · dbca1661"
-contentUuid: "0684544f-402b-5038-876b-c1f8e0483376"
-diamondUuid: "3d4e687f-a3cc-80cf-ac5c-a4eb783c7230"
+contentUuid: "da651177-fa68-54a4-bcf4-120519817f01"
+diamondUuid: "c49e4050-ae12-8799-a35e-9a170f2109c6"
 uuid: "dbca1661-aaf8-8f50-b888-286ac92a6403"
 horo: 2
 typography:
   partition: hero
-  bondDegree: 42
+  bondDegree: 39
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cdd3ce0c-c7f1-8412-8546-283bd4d271ae"
+  computationUuid: "a9a0a472-5efd-8245-9c14-308e6c117256"
   stages:
     - stage: path
       stageUuid: "15474d4a-163d-8595-8a18-d31548b35b5a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "aca1a405-7c16-8a51-a171-c888b7a03dfc"
     - stage: horo
-      stageUuid: "955c76ac-b097-843b-b372-bda06fc74378"
+      stageUuid: "60229276-0c5a-85f8-910d-1c4ae1372e55"
     - stage: seal
       stageUuid: "eed1b1b2-d1f7-861c-a701-8d6e58d22eba"
     - stage: uuid
-      stageUuid: "43eb7164-732a-8347-aa93-28f01d043367"
+      stageUuid: "635e1be7-0735-8013-856a-5e91b3ee15ad"
 version: 2
 ---
 # hero/render — an unknown hero renders nothing, never a crash

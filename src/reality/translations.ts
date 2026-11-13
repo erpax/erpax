@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the live shipped state versus the model — reality is what is actually on main / deployed; the live matrix root is its fingerprint, and a claim is real iff it matches that root.",
-    "uuid": "47105847-1b34-8783-90c1-1e60e855b079",
+    "uuid": "573948e4-7ff5-83b7-9e0a-d80ec83d88a4",
     "words": [
       "use",
       "when",

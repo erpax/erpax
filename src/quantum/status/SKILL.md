@@ -3,17 +3,17 @@ name: status
 description: "Use when reading the quantum surface state from the CLI — superposition pending paths, last collapse, bond reciprocity. Promoted from a loose sibling to an atom because it is dispatched by PATH, which no lexical reference scan can see. Run: tsx src/quantum/status/index.ts"
 atomPath: "quantum/status"
 coordinate: "quantum/status · 1/base · 3600268d"
-contentUuid: "f06c770b-5f9a-5b33-84b5-81b940f364d4"
-diamondUuid: "8deef4ae-5aec-8ac1-b86e-1eb2a209fa8f"
+contentUuid: "68db21c3-cbe4-5ab4-b550-7b0e5955e4d6"
+diamondUuid: "3a479079-abc5-88bf-82ff-d9bdb98f1023"
 uuid: "3600268d-fc70-8b4a-bc5c-24d1bb94c57d"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 98
+  bondDegree: 32
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f94ea44a-21b2-89e7-85ff-77bd2cba8ff7"
+  computationUuid: "41b31d8a-ed1f-860c-b13b-14f59fa6801d"
   stages:
     - stage: path
       stageUuid: "17e4090b-f037-8d1e-bedb-2c9bfcbb8c39"
@@ -24,21 +24,22 @@ signatures:
     - stage: links
       stageUuid: "ec2847f2-6f46-8946-93eb-52f61c1dad96"
     - stage: horo
-      stageUuid: "55adaf0e-fea5-8002-97c8-737dd87ec958"
+      stageUuid: "ec2242fe-2f4a-8c9e-a964-d6dd23165bec"
     - stage: seal
       stageUuid: "ab3be850-b093-88e7-8c6a-de9fb39b138a"
     - stage: uuid
-      stageUuid: "2294fcd0-9e82-8144-908e-f659b0d0da31"
+      stageUuid: "f07a879d-21f0-882f-9ed9-82dc9ce232c1"
 quantum:
   superposition:
-    - active
-    - age
-    - approved
-    - attrition
-    - career
-    - creative
-    - delivery
-    - diffusion
+    - field
+    - force
+    - legal
+    - medical
+    - quantum
+    - resolution
+    - status
+    - study
+    - work
     - superposition
   collapse:
     - "Use when reading the quantum surface state from the CLI — superposition pending paths, last collapse, bond reciprocity. Promoted from a loose sibling to an atom because it is dispatched by PATH, which no lexical reference scan can see. Run: tsx src/quantum/status/index.ts"
@@ -50,8 +51,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "f94ea44a-21b2-89e7-85ff-77bd2cba8ff7"
-    contentUuid: "f06c770b-5f9a-5b33-84b5-81b940f364d4"
+    computationUuid: "41b31d8a-ed1f-860c-b13b-14f59fa6801d"
+    contentUuid: "68db21c3-cbe4-5ab4-b550-7b0e5955e4d6"
 version: 2
 ---
 # status — the entry point a reference scan cannot see
@@ -78,4 +79,4 @@ The test pins both directions: every quantum dispatch target resolves, and the t
 
 Composes: [[quantum]]/context · [[cli]] · [[rules]]/unfolded · [[law]].
 
-<sub>content-uuid `f06c770b-5f9a-5b33-84b5-81b940f364d4` · account `quantum/status` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `68db21c3-cbe4-5ab4-b550-7b0e5955e4d6` · account `quantum/status` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -3,17 +3,17 @@ name: interval
 description: "Use when reasoning about interval — Special relativity's decidable core, proved for **all integers** rather than checked on a carrier, and carrying one consequence this corpus actually needs."
 atomPath: "quantum/interval"
 coordinate: "quantum/interval · 5/round · 0eccd9e6"
-contentUuid: "34130898-189d-5d48-b90c-f90d4f7a2498"
-diamondUuid: "dd403c0e-58fe-8e1a-af44-b16891009a97"
+contentUuid: "aab8e0d5-d3e6-595f-b12c-1ef15fe95496"
+diamondUuid: "17f5fcda-d361-8614-be49-13757a66d1f6"
 uuid: "0eccd9e6-7471-88cd-8aa1-c2c3b3f690a5"
 horo: 5
 typography:
   partition: quantum
-  bondDegree: 20
+  bondDegree: 12
 standards: []
 bindings: []
 signatures:
-  computationUuid: "07b7f42c-1045-8c6c-8b5e-28214655b394"
+  computationUuid: "931cdf6c-1344-89d1-9e2f-69e8d75803a9"
   stages:
     - stage: path
       stageUuid: "c140b5f2-b1bc-8b06-9204-9bf10f085b71"
@@ -24,14 +24,13 @@ signatures:
     - stage: links
       stageUuid: "afd6a590-43c8-8363-abd3-e5fd5bb78f4e"
     - stage: horo
-      stageUuid: "7908c48b-c660-849d-bcfb-fb6dae97df5e"
+      stageUuid: "495e6a3d-26e4-8783-b800-60b17ad90cc8"
     - stage: seal
       stageUuid: "98adf98f-b215-8aab-bd18-eee8f1c9ce34"
     - stage: uuid
-      stageUuid: "49692e6c-3782-8a1b-a0b8-f68b6c680a9d"
+      stageUuid: "9c73b3cd-e8b7-8b72-a8be-2501f133c8ef"
 quantum:
   superposition:
-    - dataset
     - law
     - merge
     - quantum
@@ -47,8 +46,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "07b7f42c-1045-8c6c-8b5e-28214655b394"
-    contentUuid: "34130898-189d-5d48-b90c-f90d4f7a2498"
+    computationUuid: "931cdf6c-1344-89d1-9e2f-69e8d75803a9"
+    contentUuid: "aab8e0d5-d3e6-595f-b12c-1ef15fe95496"
 version: 2
 ---
 # quantum/interval — the light cone is not a matter of opinion, and that is what a ledger seals on
@@ -94,4 +93,4 @@ A `theorem` verdict **names** a Lean theorem, and `phenomena()` **reads the file
 
 Composes: [[quantum]] · [[merge]] · [[rules]]/prose · [[law]].
 
-<sub>content-uuid `34130898-189d-5d48-b90c-f90d4f7a2498` · account `quantum/interval` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `aab8e0d5-d3e6-595f-b12c-1ef15fe95496` · account `quantum/interval` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

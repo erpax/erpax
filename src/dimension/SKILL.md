@@ -2,14 +2,14 @@
 name: dimension
 description: "Use when one concept is split across many prefixed collections/fields that should coexist at one coordinate — bank-/fx-/trade-/intercompany-transactions → transactions; customers/vendors/addresses → parties. A prefix is a dimension not yet collapsed (kind/context/role/perspective/unit/time); remove it and the variants merge into the shared coordinate, the prefix becoming a field/tag/type. erpax is multi-dimensional: all coexist at one coordinate, in unity."
 atomPath: dimension
-coordinate: "dimension · 7/descent · 4f2d9b82"
-contentUuid: "800c734b-77d0-5c18-9f94-b61d5386d267"
-diamondUuid: "0b25a944-3696-8c3d-937a-fd4bf3d00a2a"
-uuid: "4f2d9b82-28ed-8288-8e27-b558326f609d"
-horo: 7
+coordinate: "dimension · 1/base · 3f6d202d"
+contentUuid: "32c13128-968a-5aad-8b12-512665208b98"
+diamondUuid: "35243f38-b820-8087-9266-211080fbb716"
+uuid: "3f6d202d-695e-8766-bcd1-a3c385a0f31c"
+horo: 1
 typography:
   partition: dimension
-  bondDegree: 161
+  bondDegree: 104
 standards:
   - "ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries"
   - "ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries`"
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4242aa65-f2d3-8ff5-b53a-6daacbe0cbd1"
+  computationUuid: "bf73a3c3-952f-80b5-848a-2d989e232b54"
   stages:
     - stage: path
       stageUuid: "92fc2a3b-9d95-8c5e-b3e1-db1b571310fe"
@@ -27,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "e523fdcc-fc1c-8e6c-a563-15be7bbdc40b"
     - stage: links
-      stageUuid: "b317888f-df46-827e-9350-e51dd556bb08"
+      stageUuid: "9796b087-d584-8fe4-ae52-33fd3bc36599"
     - stage: horo
-      stageUuid: "3ee01d2b-a5e4-8b43-8600-3eea870673d2"
+      stageUuid: "ec3bf41c-678d-867d-bb25-8a89a211a4b7"
     - stage: seal
       stageUuid: "37ba233e-727e-87d6-9763-c5748e33db94"
     - stage: uuid
-      stageUuid: "7f13bb16-e028-8dd1-bd73-4c909d7fa128"
+      stageUuid: "cfa2cde4-46a9-87bf-bdd4-059ac2073a7b"
 version: 2
 ---
 # dimension — the axis along which entities coexist at one coordinate

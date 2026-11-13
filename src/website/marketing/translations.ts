@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about marketing — Every other surface here answers to a gate. A published page answers to a reader who **cannot check it** — no , no wave, no ratchet — which makes it the most exposed place an…",
-    "uuid": "5e069093-e70b-8e42-8a92-7af642f8bce8",
+    "uuid": "1d92a083-ff91-8913-ba9d-056f20b4cfce",
     "words": [
       "use",
       "when",

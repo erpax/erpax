@@ -2,18 +2,18 @@
 name: particle
 description: "Use when reading an atom as a particle in the matrix field — a content-uuid is the particle's identity, links are the forces it interacts through, and mass is its in-degree charge."
 atomPath: particle
-coordinate: "particle · 5/round · 87afa869"
-contentUuid: "3e554ebf-8975-58fc-8812-59d8677a3345"
-diamondUuid: "43cb02c5-e55d-84ca-96fe-55dfd4a5666a"
-uuid: "87afa869-e0f3-8cf7-a188-6478dd6fbda4"
-horo: 5
+coordinate: "particle · 2/share · c2b21db0"
+contentUuid: "2048bd8a-d66a-5ebe-a18b-4f24b545cb84"
+diamondUuid: "b75c2d89-6b34-886a-87d3-0f2dde33558a"
+uuid: "c2b21db0-050a-8de5-a89a-60a5b9638711"
+horo: 2
 typography:
   partition: particle
-  bondDegree: 37
+  bondDegree: 34
 standards: []
 bindings: []
 signatures:
-  computationUuid: "bc262d57-d56c-8890-896c-2f35471ef962"
+  computationUuid: "7bf3813f-2899-89ea-983f-e810056dd7cc"
   stages:
     - stage: path
       stageUuid: "94d707bf-3bf0-86f9-8a6a-d308957b3dd2"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "fabb4361-10bc-8de1-8cdb-922cc69726f9"
     - stage: links
-      stageUuid: "cde842ae-f8c7-81a4-8715-a570b598072c"
+      stageUuid: "7345e7df-bd56-8a02-b142-f3fe6742f029"
     - stage: horo
-      stageUuid: "5dd028f4-575f-81e1-b5c6-586796556d0a"
+      stageUuid: "7b33ae6a-96c2-806b-94cb-7a6b40eb29bb"
     - stage: seal
       stageUuid: "d9803831-159a-8fb2-a7da-ad0736da7fba"
     - stage: uuid
-      stageUuid: "773a185e-1b3b-8240-a5e1-d1659b84ede1"
+      stageUuid: "c4f88a2c-2fa7-8d42-9987-695bcbebd528"
 version: 2
 ---
 # particle — an atom is a particle

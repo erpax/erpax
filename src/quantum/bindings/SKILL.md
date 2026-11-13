@@ -2,18 +2,18 @@
 name: bindings
 description: "Use when attaching every Cloudflare binding to the edge Worker — each binding is a sense the pure-compute Worker is granted to reach the world (D1, R2, AI, Vectorize, KV, Queues, Durable Objects, Browser, Analytics, Email), the platform-level measurement boundary; attach all, gate each through access, emit a receipt."
 atomPath: "quantum/bindings"
-coordinate: "quantum/bindings · 1/base · d9beea3d"
-contentUuid: "1a6bab9d-d69a-5ba8-a003-8d6f271ce873"
-diamondUuid: "e73a7bc8-a3b9-8b00-867b-0af8abcefdc5"
-uuid: "d9beea3d-45f5-80a9-80b9-8c4dba0aab0a"
-horo: 1
+coordinate: "quantum/bindings · 4/weave · 4f09f413"
+contentUuid: "d9659f53-5b33-5ff7-a810-e0b3522393c2"
+diamondUuid: "4e4c97db-f770-8cfe-a852-2592b1fd8bbc"
+uuid: "4f09f413-3658-82c6-8cfd-8e36baf1d1b0"
+horo: 4
 typography:
   partition: quantum
-  bondDegree: 95
+  bondDegree: 76
 standards: []
 bindings: []
 signatures:
-  computationUuid: "867b794f-7291-824c-afd7-a79fe7bf77d8"
+  computationUuid: "576daea3-1d05-8123-a69f-56b75494bcfa"
   stages:
     - stage: path
       stageUuid: "6afb2d1c-7bbf-824c-babb-b9e1df553e05"
@@ -22,36 +22,36 @@ signatures:
     - stage: boundary
       stageUuid: "97b3b94a-3bf9-82bf-bb69-79f1c8e07df7"
     - stage: links
-      stageUuid: "c6bf8e50-dad7-8046-b7f4-2472538c13fa"
+      stageUuid: "14403cf2-502c-874f-b60d-ff71ed4b34bf"
     - stage: horo
-      stageUuid: "f518c503-c08d-87c7-acc7-097b681dffa4"
+      stageUuid: "71519437-8204-869b-9881-cc406b84fcce"
     - stage: seal
       stageUuid: "12a8a4a2-3333-8969-a944-0675f5ed5e3e"
     - stage: uuid
-      stageUuid: "4a36ad12-ef3f-8478-aecd-efb0818c84da"
+      stageUuid: "3a5b2a4b-9161-890d-990a-cf9859a15171"
 quantum:
   superposition:
     - access
     - ai
     - analytics
-    - binding
     - bindings
-    - broker
     - cache
     - currency
+    - deploy
+    - dev
     - superposition
   collapse:
     - "Use when attaching every Cloudflare binding to the edge Worker — each binding is a sense the pure-compute Worker is granted to reach the world (D1, R2, AI, Vectorize, KV, Queues, Durable Objects, Browser, Analytics, Email), the platform-level measurement boundary; attach all, gate each through access, emit a receipt."
     - "[[access]]"
     - "[[bindings]]"
-    - "broker"
     - "[[deploy]]"
     - "[[quantum/device]]"
     - "[[receipt]]"
     - "[[sandbox]]"
     - "[[uuid]]"
-    - "worker"
     - "attach-all is safe only because each call is gated — a binding is a capability grant, not a free reach, so widening the door to all 26 senses is bounded by the invariant that every use passes [[access]] in the caller's request, draws its credential from the broker, and emits a [[receipt]]; it is the gate per call, never the length of the binding list, that holds, and a Durable-Object class reaches the Worker at all only as a named export of the OpenNext `main` entry."
+    - broker
+    - worker
   seal:
     sandbox: false
     receipt: false
@@ -59,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "867b794f-7291-824c-afd7-a79fe7bf77d8"
-    contentUuid: "1a6bab9d-d69a-5ba8-a003-8d6f271ce873"
+    computationUuid: "576daea3-1d05-8123-a69f-56b75494bcfa"
+    contentUuid: "d9659f53-5b33-5ff7-a810-e0b3522393c2"
 version: 2
 ---
 # quantum/bindings — the Worker's senses
@@ -83,4 +83,4 @@ A binding is a capability grant, so every call passes the trust sandbox — [[ac
 
 @see [[bindings]] · worker · [[quantum/device]] · [[access]] · [[sandbox]] · broker · [[receipt]] · [[uuid]] · [[deploy]]
 
-<sub>content-uuid `1a6bab9d-d69a-5ba8-a003-8d6f271ce873` · account `quantum/bindings` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `d9659f53-5b33-5ff7-a810-e0b3522393c2` · account `quantum/bindings` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

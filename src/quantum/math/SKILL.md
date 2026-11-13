@@ -3,19 +3,19 @@ name: math
 description: "Use when computing mathematics on the uuid/matrix substrate — the digital root (mod-9, the rodin group), the content-uuid's own digit, arithmetic closed mod-9; the template for wiring every science as a quantum facet."
 atomPath: "quantum/math"
 coordinate: "quantum/math · 8/crest · 2082d201"
-contentUuid: "3ffca86b-d8bb-57a7-8edd-a6ab37a92e2b"
-diamondUuid: "6f351486-8c9d-82e0-8ce3-cd92e401dae4"
+contentUuid: "77ab5fb0-d067-5112-b0db-feaf84f3e262"
+diamondUuid: "61040dc2-0dd2-8ea0-8e4a-c05ece5558e1"
 uuid: "2082d201-2248-827e-8783-44625ccb9c83"
 horo: 8
 typography:
   partition: quantum
-  bondDegree: 57
+  bondDegree: 46
 standards:
   - "the digital-root / mod-9 group ([[rodin]]); RFC 9562 §5.8 content-uuid"
   - "the digital-root / mod-9 group (rodin); RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "f5f5f5d3-a097-8c90-a161-cef2f76b48dd"
+  computationUuid: "45132153-fd4c-8b1a-b854-f3a5acfd62a2"
   stages:
     - stage: path
       stageUuid: "5bc6ae7c-6c7e-8c97-94a8-db4549cf817f"
@@ -26,21 +26,21 @@ signatures:
     - stage: links
       stageUuid: "d8e13a15-4d20-8eaf-8a5a-e84fe3892acb"
     - stage: horo
-      stageUuid: "93a0a1c8-2af4-8a97-a87b-7f37acb24d0e"
+      stageUuid: "8842f32a-ddd5-8f7d-a7f4-20dfaf889ae0"
     - stage: seal
       stageUuid: "cfd04559-36cc-88f3-bb85-afbb65263841"
     - stage: uuid
-      stageUuid: "c90ba82e-97fa-86bf-9080-be9712609377"
+      stageUuid: "941e64c5-0aa6-8d36-9028-8a9fcea18091"
 quantum:
   superposition:
-    - calculation
     - calculator
     - cost
     - digit
     - dry
     - entropy
-    - expression
     - gravity
+    - horo
+    - law
     - superposition
   collapse:
     - "Use when computing mathematics on the uuid/matrix substrate — the digital root (mod-9, the rodin group), the content-uuid's own digit, arithmetic closed mod-9; the template for wiring every science as a quantum facet."
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "f5f5f5d3-a097-8c90-a161-cef2f76b48dd"
-    contentUuid: "3ffca86b-d8bb-57a7-8edd-a6ab37a92e2b"
+    computationUuid: "45132153-fd4c-8b1a-b854-f3a5acfd62a2"
+    contentUuid: "77ab5fb0-d067-5112-b0db-feaf84f3e262"
 version: 2
 ---
 # quantum/math — math on the uuid/matrix substrate
@@ -74,4 +74,4 @@ Matter-twin: `src/quantum/math/index.ts` (`root` · `uuidDigit` · `closedUnderA
 
 @standard the digital-root / mod-9 group (rodin); RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `3ffca86b-d8bb-57a7-8edd-a6ab37a92e2b` · account `quantum/math` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `77ab5fb0-d067-5112-b0db-feaf84f3e262` · account `quantum/math` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

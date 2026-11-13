@@ -2,14 +2,14 @@
 name: constitution
 description: "Use when reasoning about the entrenched foundation, or when judging whether a proposed change may ship — two rules at the root (no expectation: claim no result you have not computed; no judgment: reject nothing you have not measured, discernment by test kept), the nine laws that are their lemmas (duality · legality · honest boundaries · balance · service · conservation · reciprocity · reproducibility · regeneration), and the seven supreme articles saying what a majority may amend versus what is perpetual; every predicate computed, fails closed, and heads every agent prompt."
 atomPath: constitution
-coordinate: "constitution · 1/base · 3438d875"
-contentUuid: "9bba72e0-cdb5-5d3b-99ef-13b20abeb8ab"
-diamondUuid: "cde53a31-4071-8095-a5b2-0be7921309b1"
-uuid: "3438d875-89c5-8945-b7ac-a66afe256fc6"
+coordinate: "constitution · 1/base · 9d1bd684"
+contentUuid: "0895c74b-67a2-57f9-8e3a-195a0f7cdf86"
+diamondUuid: "a9212b79-377b-883f-b7f3-3c137fce3f0e"
+uuid: "9d1bd684-0164-81af-b3dc-559ddfa74874"
 horo: 1
 typography:
   partition: constitution
-  bondDegree: 74
+  bondDegree: 71
 standards:
   - "ISO 37000:2021 governance-of-organizations principle-of-purpose"
   - "ISO 37000:2021 governance-of-organizations principle-of-purpose`"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "d0062891-7c6e-8324-b0a0-4f482a4c5bc7"
+  computationUuid: "21214b46-bf68-8b6a-ba61-a6bf8f4880be"
   stages:
     - stage: path
       stageUuid: "210a2855-2ef2-8f53-8a65-93ebae61b5f1"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "9815a851-a4c3-86d1-877f-6d59b6ec14e3"
     - stage: links
-      stageUuid: "c0731008-91a0-8447-b926-ef1f6e1634b2"
+      stageUuid: "0ad915dd-260b-826e-9392-0afaa601efb1"
     - stage: horo
-      stageUuid: "fc79b250-f01a-8129-ba04-62c6a5b6bed4"
+      stageUuid: "f79e5073-906f-8545-8969-a37aaf00f2f4"
     - stage: seal
       stageUuid: "79d6cdcb-5abc-8ea1-af80-6c8ad39015bf"
     - stage: uuid
-      stageUuid: "f4939e86-580a-8ddd-b74e-991a61811f0c"
+      stageUuid: "0fd60e1f-52df-823d-9c98-c0ae2c7aa57f"
 version: 2
 ---
 # constitution — the 0 of the sequence, the supreme law erpax derives from

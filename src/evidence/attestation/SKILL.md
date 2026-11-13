@@ -3,13 +3,13 @@ name: attestation
 description: "Use when reasoning about attestation — produces a PDF declaring which run captured this evidence, when, and against which tenant; applies a PAdES signature where a signer is configured."
 atomPath: "evidence/attestation"
 coordinate: "evidence/attestation · 2/share · 5e706bca"
-contentUuid: "2cc4c4eb-4d80-5a67-bb45-6d4d712d42e8"
+contentUuid: "2fcd1de1-940a-51a1-89cd-01b1a52300cd"
 diamondUuid: "797ca7bc-23fc-8c89-aa77-aa41ccd01d2a"
 uuid: "5e706bca-0bcb-8cff-909f-79d4dbe8abc1"
 horo: 2
 typography:
   partition: evidence
-  bondDegree: 7
+  bondDegree: 3
 standards:
   - "ETSI-EN-319-142"
   - "ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile"

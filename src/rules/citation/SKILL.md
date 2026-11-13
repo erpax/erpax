@@ -3,13 +3,13 @@ name: citation
 description: "Use when reasoning about citation — rules/face closed one door: an atom may never quietly stop **offering a name**. This is the same door on the other wall — an atom may never quietly stop **citing an authority**."
 atomPath: "rules/citation"
 coordinate: "rules/citation · 5/round · 77fe217d"
-contentUuid: "0c4e69a0-91c8-5521-ba03-d75246a83dff"
+contentUuid: "e5aa2cd6-cab6-50a0-9672-e53f4056199f"
 diamondUuid: "27710e92-5b9d-809f-a703-f366aa987e7a"
 uuid: "77fe217d-2209-8c9a-9b67-671e42ca121a"
 horo: 5
 typography:
   partition: rules
-  bondDegree: 21
+  bondDegree: 18
 standards:
   - "AMLD5` removed, cited in"
   - "EU 2015/849` removed, cited in 13 others | refused — it MOVED, evidence still reachable |"

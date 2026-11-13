@@ -3,13 +3,13 @@ name: products
 description: "Use when reasoning about products — is the Payload definition: the product's fields, its access rules, and the hooks beside it that manage the images a product carries."
 atomPath: "media/products"
 coordinate: "media/products · 8/crest · 3c7d72c0"
-contentUuid: "34662aa1-5b69-5f8b-8a84-a12b4445b167"
+contentUuid: "8b82d50b-b5a1-5379-866e-dcdadcf1d00a"
 diamondUuid: "4e106642-f1cc-8989-adee-c09b1d031332"
 uuid: "3c7d72c0-50ef-8868-a442-b5d8b3728275"
 horo: 8
 typography:
   partition: media
-  bondDegree: 7
+  bondDegree: 3
 standards:
   - "3986 uri slug-to-url"
   - "BCP-47 language-tag i18n"

@@ -3,13 +3,13 @@ name: arm
 description: "Use when reasoning about arm as an anatomical part of body — vocabulary pivot to @/arm; nested not duplicated."
 atomPath: "body/arm"
 coordinate: "body/arm · 8/crest · 5cdac428"
-contentUuid: "bf11ed0c-f438-5471-95f9-a4d7b89861c8"
+contentUuid: "4b098c25-3fd6-5301-8a95-99ad9958f594"
 diamondUuid: "cdbafcfb-b434-8421-94ae-6975706872b7"
 uuid: "5cdac428-f987-8a90-9fc8-1e2df4846fde"
 horo: 8
 typography:
   partition: body
-  bondDegree: 21
+  bondDegree: 17
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

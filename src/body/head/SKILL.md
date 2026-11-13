@@ -3,13 +3,13 @@ name: head
 description: "Use when reasoning about head as an anatomical part of body — vocabulary pivot to @/head; nested not duplicated."
 atomPath: "body/head"
 coordinate: "body/head · 2/share · 68e00674"
-contentUuid: "fc9c1e74-241f-57a4-a599-9071e2a8014b"
+contentUuid: "a9b74664-96e0-56a8-8cda-785f62cf2683"
 diamondUuid: "07bb8cc6-2d8b-85d3-82e6-09e106bbdf78"
 uuid: "68e00674-0e8d-8ebf-bed0-12454f842372"
 horo: 2
 typography:
   partition: body
-  bondDegree: 21
+  bondDegree: 17
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

@@ -3,13 +3,13 @@ name: fallback
 description: "Use when a country slot is blank or unknown — CLDR ZZ (\"Unknown Region\") is the country identity element, the universal value that is compatible with every real country and resolves any nullish input to a non-null code."
 atomPath: "country/fallback"
 coordinate: "country/fallback · 2/share · 556440cd"
-contentUuid: "c8831a9f-c4f0-513f-b70f-b0202ec2b3d8"
+contentUuid: "2c975f7e-f42d-59ef-abc4-316cdef27c59"
 diamondUuid: "ce8ca818-adce-8518-a588-c2a6fa7ee4ce"
 uuid: "556440cd-2878-857f-a93f-7387c31bb36e"
 horo: 2
 typography:
   partition: country
-  bondDegree: 17
+  bondDegree: 13
 standards:
   - CLDR ZZ Unknown Region
   - "EU VIES — alpha-2 country code element"

@@ -3,33 +3,33 @@ name: instrument
 description: "Use when reasoning about instrument — Use before taking any measurement of this corpus — which tool answers which question, and how each one lies. Every wrong number here was a wrong instrument, or a right one trusted past its limit: a name-grep over a minified bundle, a lint report contradicted by the compiler, a web fetch returning a model's rendering, a count copied from a stale document. The pattern is that the wrong instrument does not error, it answers. instrumentFor names the settling tool; assertInstrument fails closed on a known-wrong pairing; an unregistered question passes, because pretending the register were complete would be the same error."
 atomPath: instrument
 coordinate: "instrument · 4/weave · 29aece7c"
-contentUuid: "68e375f7-7720-59ce-b466-1f5a3042f8cb"
-diamondUuid: "cb7426da-dd22-80e8-a7a8-aa9a7e79dc97"
+contentUuid: "f85e9e51-809b-57fc-aba4-11fb7e7440ff"
+diamondUuid: "fd0c0ace-ba7b-8ff8-a4c1-e3b997a61ebb"
 uuid: "29aece7c-edf2-8e84-99fe-24ac5d65f82f"
 horo: 4
 typography:
   partition: instrument
-  bondDegree: 17
+  bondDegree: 15
 standards:
   - "ISO-19011:2018 §6.4 — audit evidence: sufficient and appropriate, not merely available"
 bindings: []
 signatures:
-  computationUuid: "3bd5e8ed-47c9-8629-8be0-5d24d2e355b9"
+  computationUuid: "dbc06c92-6aa1-83e7-b172-8dee10967329"
   stages:
     - stage: path
       stageUuid: "de8f2c5b-2dd4-8bb6-892a-d11ab378992d"
     - stage: trinity
-      stageUuid: "d2aa07ff-b522-8bc5-a8cd-00b3c051993a"
+      stageUuid: "ff9683bb-ab43-8ac8-93b1-0efd42c4adc3"
     - stage: boundary
-      stageUuid: "3a7d1e7f-9198-8671-8bfc-1f9473413fd9"
+      stageUuid: "480a97a1-173c-8461-86bf-9c506950f4b8"
     - stage: links
-      stageUuid: "5ae35c98-91d4-8480-aa53-f8949b1a0b4d"
+      stageUuid: "b3f92532-826c-8d6d-9845-489ad294c7a6"
     - stage: horo
-      stageUuid: "7d6ba3d6-a605-8c55-82ee-e4855b52b7fc"
+      stageUuid: "c1938b75-658f-8c24-b4ff-3689266ad865"
     - stage: seal
-      stageUuid: "46d545ec-c98e-8ed6-a4d5-879a7af9b2a3"
+      stageUuid: "7ba00cde-6a51-84f5-ab11-92765048a049"
     - stage: uuid
-      stageUuid: "f996dcec-714a-8ed3-b4d3-1c6e177c69e3"
+      stageUuid: "b4dd92f2-d24f-887a-9215-9fd494a4a1eb"
 version: 2
 ---
 # instrument — the wrong instrument does not error, it answers

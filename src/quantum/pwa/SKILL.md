@@ -3,18 +3,18 @@ name: pwa
 description: "Use when reasoning about erpax as a PWA of quantum apps — a device whose every folder is an installable quantum app, cached offline by content-address (the uuid is the cache key); installable because every folder is a quantum app."
 atomPath: "quantum/pwa"
 coordinate: "quantum/pwa · 4/weave · 9e71772c"
-contentUuid: "8bca5819-6f90-5053-8c6c-b4d66b938fe4"
-diamondUuid: "22d942d2-b071-8738-96b5-d381b0f96ebb"
+contentUuid: "e8aac710-01a4-5e00-aa13-6613cc931123"
+diamondUuid: "6365af68-b99e-8e3c-8440-0fa77ca76de0"
 uuid: "9e71772c-76fe-8d98-9952-b9cc6d468888"
 horo: 4
 typography:
   partition: quantum
-  bondDegree: 65
+  bondDegree: 58
 standards:
   - "W3C Web App Manifest + Service Worker (content-addressed cache)"
 bindings: []
 signatures:
-  computationUuid: "67fdbf86-f633-83aa-8dd0-8d4e517fb1bc"
+  computationUuid: "8a53955e-4de7-8d33-bf6c-e677e8cfc900"
   stages:
     - stage: path
       stageUuid: "917cba2b-8267-846e-84f5-3aa6ff5a6a2f"
@@ -25,21 +25,21 @@ signatures:
     - stage: links
       stageUuid: "d8f953f7-4a9b-8794-8393-ee07e1d2b13f"
     - stage: horo
-      stageUuid: "2d6d9914-e15b-8470-87d2-5fc75ac66aaa"
+      stageUuid: "81db1bd0-488c-8cd2-8052-f1f7c7995f0f"
     - stage: seal
       stageUuid: "e1e2bb73-f3f9-8a1b-a762-44fc0394e88b"
     - stage: uuid
-      stageUuid: "a5e5f826-676d-8f34-a3ed-367ecfdc2db3"
+      stageUuid: "1013dc2a-b88c-83a8-a7f8-8ab2b1ecf4d8"
 quantum:
   superposition:
     - cache
     - cost
     - diamond
     - duality
-    - fractal
     - identity
     - law
     - merge
+    - plugin
     - superposition
   collapse:
     - "Use when reasoning about erpax as a PWA of quantum apps — a device whose every folder is an installable quantum app, cached offline by content-address (the uuid is the cache key); installable because every folder is a quantum app."
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "67fdbf86-f633-83aa-8dd0-8d4e517fb1bc"
-    contentUuid: "8bca5819-6f90-5053-8c6c-b4d66b938fe4"
+    computationUuid: "8a53955e-4de7-8d33-bf6c-e677e8cfc900"
+    contentUuid: "e8aac710-01a4-5e00-aa13-6613cc931123"
 version: 2
 ---
 # quantum/pwa — the corpus as a PWA of quantum apps
@@ -74,4 +74,4 @@ Matter-twin: `src/quantum/pwa/index.ts` (`appCount` · `installable` · `offline
 
 @standard W3C Web App Manifest + Service Worker (content-addressed cache)
 
-<sub>content-uuid `8bca5819-6f90-5053-8c6c-b4d66b938fe4` · account `quantum/pwa` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e8aac710-01a4-5e00-aa13-6613cc931123` · account `quantum/pwa` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

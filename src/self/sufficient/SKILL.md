@@ -2,14 +2,14 @@
 name: sufficient
 description: "Use when deciding whether to act from internal knowledge vs. ask externally — totality/completeness, the identity-element guarantee that every case is defined, the bounded form holding the unbounded answer. Nested under self → self-sufficiency: derive the next move, don't break flow with questions."
 atomPath: "self/sufficient"
-coordinate: "self/sufficient · 1/base · 91549beb"
-contentUuid: "89f20b99-4aa2-57ce-9b1c-9186f5a18690"
-diamondUuid: "44a8fa09-1044-8e90-9937-6b878ccdf521"
-uuid: "91549beb-d6de-8b13-a0fa-35e09d8fd2e0"
-horo: 1
+coordinate: "self/sufficient · 2/share · a967113d"
+contentUuid: "d4316fdf-9b57-5396-8ae6-8c648fa53e6c"
+diamondUuid: "128f1145-69a9-88dd-87cc-1c8c7fa38d6e"
+uuid: "a967113d-e626-8778-99ff-3e3989e8c923"
+horo: 2
 typography:
   partition: self
-  bondDegree: 65
+  bondDegree: 50
 standards:
   - "NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)"
   - "NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)`"
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "3527e315-4515-8c65-b5b7-ee2a24c55def"
+  computationUuid: "0f1ecfee-fc36-8186-bac6-0dcb739873f6"
   stages:
     - stage: path
       stageUuid: "5db7871f-da5f-8343-8c1c-8b88b4cd6beb"
@@ -27,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "80e60e2c-e355-89a9-8410-4201cd89c830"
     - stage: links
-      stageUuid: "2f0657e8-0bdf-884d-8b11-b35042cfd55b"
+      stageUuid: "abe2e8c8-5e17-84fc-a3dc-3098ad39057a"
     - stage: horo
-      stageUuid: "9614b8b5-98e0-87b5-a706-8b69eb232436"
+      stageUuid: "ef57629a-81f7-867d-a315-7d819b4b2eb2"
     - stage: seal
       stageUuid: "f47ae58c-28f2-8701-9937-a5c3a43cfdba"
     - stage: uuid
-      stageUuid: "8c2b3976-6f56-8e1d-905e-251783e92db2"
+      stageUuid: "e283db1d-f168-8eb3-b4bb-9be68077f825"
 version: 2
 ---
 # sufficient — totality (every case is already defined)

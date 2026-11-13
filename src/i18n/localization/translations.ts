@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about localization — The corpus ships 24 EU official languages plus , , , , and . That list is DECLARED here in the open — no theorem derives which languages a business serves — and everything else…",
-    "uuid": "b543b866-6220-8af4-96b1-1610750436d6",
+    "uuid": "7f50abae-2451-8e11-bed6-f1b236612f51",
     "words": [
       "use",
       "when",

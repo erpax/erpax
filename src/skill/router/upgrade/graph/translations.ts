@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "graph",
-    "uuid": "ca6852f6-9c59-89ed-8957-018604de4c9b",
+    "uuid": "8b21ad53-c9b6-87e4-bc21-1811e83791b4",
     "words": [
       "graph"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when building or verifying the corpus frontmatter connection graph — derive descriptions, compare diamond signature chains, build the undirected leaf graph, and check it spans the corpus with no orphans. The leaf primitives of the skill-upgrade flow.",
-    "uuid": "77a64bb6-8bae-8913-b12a-7c53e3c9bf88",
+    "uuid": "c476f774-3229-83a1-a394-63444d2600e8",
     "words": [
       "use",
       "when",

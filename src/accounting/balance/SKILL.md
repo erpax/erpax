@@ -3,18 +3,18 @@ name: balance
 description: Use when reasoning about balance — Debit and credit meet in balance; every fold meets the same law at seal.
 atomPath: "accounting/balance"
 coordinate: "accounting/balance · 5/round · 3ae06e20"
-contentUuid: "d9c5ff1b-ecf3-5281-8c70-32ba9079ae94"
-diamondUuid: "2f11d1bd-f5ec-89b1-a420-ed078d6fcb0d"
+contentUuid: "b7bdc61a-3353-5e46-bb0c-9f33d458bbfd"
+diamondUuid: "807b9c36-0154-8922-804b-010e71367ad6"
 uuid: "3ae06e20-6d02-881e-b09a-c3fb9085a590"
 horo: 5
 typography:
   partition: accounting
-  bondDegree: 620
+  bondDegree: 342
 standards:
   - "IAS-1 §27 — the accrual basis: every posting carries its contra, so the"
 bindings: []
 signatures:
-  computationUuid: "4ee70d8a-1642-802d-be15-f5af0979ae0c"
+  computationUuid: "aa33afb8-c737-82c4-b5c4-7fa1431367aa"
   stages:
     - stage: path
       stageUuid: "67d376fa-76d2-86cc-9e6a-91663d7d0d7a"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "c15f90b8-0277-8fc0-b31a-af8321177416"
     - stage: horo
-      stageUuid: "39cf57dd-dbc4-8073-bfab-8323f59c2a2c"
+      stageUuid: "b20a609c-fcbd-8e02-903f-201acc5ddca5"
     - stage: seal
       stageUuid: "d112f573-762f-8a00-a6d2-f7fc0c1514ac"
     - stage: uuid
-      stageUuid: "aa509b3c-6516-8e41-9206-cddb4bf68a36"
+      stageUuid: "f0a29136-b2aa-8442-9aeb-ab24ab6c0c48"
 version: 2
 ---
 # accounting/balance

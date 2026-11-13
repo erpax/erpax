@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gravity",
-    "uuid": "c42f970c-a499-813b-b999-dab8ea29d6d1",
+    "uuid": "5326938c-f089-8026-aa9d-ed358180b206",
     "words": [
       "gravity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; but it is BIDIRECTIONAL — forward it collapses folders to a minimal root, reverse it expands an infinite word-chain along the sequence path, a holographic boundary (not a dead point) where minimal mass means maximal tampering cost.",
-    "uuid": "dcaf575a-f01f-80da-91f8-5635b3349f51",
+    "uuid": "2191148c-b386-8e52-ad62-0d452f744d7a",
     "words": [
       "use",
       "when",

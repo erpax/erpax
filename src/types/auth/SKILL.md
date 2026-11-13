@@ -3,18 +3,18 @@ name: auth
 description: Use when reasoning about auth type definitions — authentication and session shapes.
 atomPath: "types/auth"
 coordinate: "types/auth · 6/6 · 9c67aa8c"
-contentUuid: "f88ad247-a542-5bdb-9bd2-7ac668281b53"
-diamondUuid: "4459a8e1-6004-889f-b31e-eee275630207"
+contentUuid: "e84206bf-f692-55cb-b0a2-d5df56c65d22"
+diamondUuid: "27f7a7a2-fd69-85ad-9153-116ed8ce9fc3"
 uuid: "9c67aa8c-9842-8b57-b855-8b317a92e409"
 horo: 6
 typography:
   partition: types
-  bondDegree: 105
+  bondDegree: 98
 standards:
   - "NIST INCITS-359-2012 role-based-access-control"
 bindings: []
 signatures:
-  computationUuid: "74a1fccf-cc77-8de5-b3ac-ef108fb666fc"
+  computationUuid: "39c9f918-b6ae-8be4-8d8f-bbe76fc9c363"
   stages:
     - stage: path
       stageUuid: "73e07060-d387-82e4-952d-732d1a0f9b33"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "8785aae4-e06e-8b00-bda6-118e07858856"
     - stage: horo
-      stageUuid: "d1ef27f2-3d62-8b0a-8e08-c3361556e23a"
+      stageUuid: "b5453124-0ab9-8c3d-91e5-298a7051847f"
     - stage: seal
       stageUuid: "bc8e6d52-a44c-8ba0-ac27-ce1cc21f51b7"
     - stage: uuid
-      stageUuid: "db8a66cc-cf6b-823b-b230-085bbb171a19"
+      stageUuid: "f1680f0b-b565-8fdc-9cb8-8b5a54c7efe0"
 version: 2
 ---
 # types/auth

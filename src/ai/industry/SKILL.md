@@ -3,13 +3,13 @@ name: industry
 description: "Use when mapping AI industry failure modes to erpax diamond remedies — hallucination, memory loss, multi-agent collision, prompt injection, audit fragmentation, cost runaway, model drift, PII leakage, human-in-the-loop, vendor lock-in. Pure fns in index.ts bind each problem to existing atoms (thought, diamond, sandbox, receipt, memory, confirm) and extend gaps: workflow correlation receipts, grounded tool calls, cascade depth guard."
 atomPath: "ai/industry"
 coordinate: "ai/industry · 1/base · 7c2fa133"
-contentUuid: "9fe34f27-742a-5496-bd70-c34579ae7717"
+contentUuid: "02a525f8-442d-5ff7-85da-3e88b5bea048"
 diamondUuid: "0180b33a-4de3-850f-a671-e2b4bf2205cb"
 uuid: "7c2fa133-930d-843c-b913-da7f781b5f0a"
 horo: 1
 typography:
   partition: ai
-  bondDegree: 55
+  bondDegree: 53
 standards:
   - "GDPR Art.22(3) right-to-human-intervention"
   - "ISO/IEC 42001:2023 ai-management-system"

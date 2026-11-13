@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when querying a row AS OF two clocks at once — system-time (when the value was recorded) crossed with valid-time (when it was true in the world) — under SQL:2011 temporal tables; isHistoricalQuery gates whether a request looks back in time, asOf is the pending temporal-table read.",
-    "uuid": "5a0c10a1-ba6e-869a-aefc-7d50eadd80e6",
+    "uuid": "f75140e2-d38d-8a58-880a-8da87e98bcc4",
     "words": [
       "use",
       "when",

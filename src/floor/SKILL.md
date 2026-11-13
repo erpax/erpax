@@ -3,35 +3,35 @@ name: floor
 description: "Use when reasoning about floor — The corpus's security claims rested on the word **infeasible**, and infeasible is an opinion about hardware."
 atomPath: floor
 coordinate: "floor · 8/crest · ca455df8"
-contentUuid: "8651b9b0-7ed0-5d5f-9491-a3fa2958ccdd"
-diamondUuid: "12853cee-798c-887d-88bf-13be1b520737"
+contentUuid: "0729c392-0aa1-5aba-9391-34305f421c63"
+diamondUuid: "e9de7dcc-626e-8996-9a9e-fda70c1cf87b"
 uuid: "ca455df8-e6ee-8eee-9563-07b7e1bef1d7"
 horo: 8
 typography:
   partition: floor
-  bondDegree: 25
+  bondDegree: 12
 standards:
   - "Bekenstein (1981) · 't Hooft (1993) · Susskind (1995) — the holographic bound"
   - "CODATA 2022 — Boltzmann constant, Planck length"
   - "Landauer (1961) · Bérut et al., Nature 483:187 (2012)"
 bindings: []
 signatures:
-  computationUuid: "b0f963a3-10b7-8615-a815-cf6a1769f404"
+  computationUuid: "7db34885-58d3-89b1-a36b-45c99840b899"
   stages:
     - stage: path
       stageUuid: "76aaa1bc-81d9-808f-ac29-a42d897b4563"
     - stage: trinity
-      stageUuid: "91d25432-e7a1-8f8b-8d71-2486efdf16ca"
+      stageUuid: "60a9f60a-e615-8eae-b1b6-a71e50b5bbfd"
     - stage: boundary
-      stageUuid: "fe294adc-9155-891a-8311-8a07eb14adb4"
+      stageUuid: "f754d8ef-0508-89e5-86ce-8a37b18681d0"
     - stage: links
-      stageUuid: "3b785fba-bb2d-811e-821f-f80164d5f32d"
+      stageUuid: "6a1823d6-6914-8eb9-be7d-a49ed8f8bdfe"
     - stage: horo
-      stageUuid: "04de23d6-b565-8834-920c-91355ba404a2"
+      stageUuid: "b15563d6-603b-860a-948d-760429236829"
     - stage: seal
-      stageUuid: "66cb0627-47fb-819a-bec6-6523abadf3fd"
+      stageUuid: "564c7582-91b9-8eea-836a-fd449c2c8aec"
     - stage: uuid
-      stageUuid: "7ecf9fe0-e876-8d73-a87a-553b2811fffc"
+      stageUuid: "4a2306c3-721d-8b5c-8900-be0468c6c5a2"
 version: 2
 ---
 # floor — what the universe charges, at minimum, to search a space

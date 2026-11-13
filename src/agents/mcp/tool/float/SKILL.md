@@ -3,13 +3,13 @@ name: float
 description: "Use when reasoning about float — reconciles a counted float — a bank drawer, a casino tray, an armoury, a public till — against its opening balance and its movements."
 atomPath: "agents/mcp/tool/float"
 coordinate: "agents/mcp/tool/float · 4/weave · 43f653af"
-contentUuid: "5d2339c6-6e21-500f-9547-e11ccb1f9414"
+contentUuid: "b065a9b1-c9b1-592c-ba5a-ae2aca8344d7"
 diamondUuid: "8cf5d12b-8118-80ea-bf76-ac8ab8f93c19"
 uuid: "43f653af-2101-8e3a-b345-7099e409aaf5"
 horo: 4
 typography:
   partition: agents
-  bondDegree: 28
+  bondDegree: 26
 standards: []
 bindings: []
 signatures:

@@ -2,14 +2,14 @@
 name: dashboard
 description: "Use when each model needs a computed Payload admin view — its related links partitioned into the collections (plural) and models (singular) it composes, rendered via reusable component-atoms. Computed from the link graph, not hardcoded; each atom is Open Graph + schema.org compatible in all dimensions."
 atomPath: dashboard
-coordinate: "dashboard · 1/base · ed5b7676"
-contentUuid: "75b39d47-4c16-54e9-b5b5-922084e4c9a8"
-diamondUuid: "74214e2a-2583-8aad-a1bc-ea53873534cd"
-uuid: "ed5b7676-48e1-87b2-a67a-a78bb36098eb"
+coordinate: "dashboard · 1/base · 51529931"
+contentUuid: "135e77ca-5f86-57a3-bf18-e6a59c3b1779"
+diamondUuid: "ffd9bd00-9084-81db-b498-c4cb35821fc0"
+uuid: "51529931-af91-824e-9591-051bf4935890"
 horo: 1
 typography:
   partition: dashboard
-  bondDegree: 49
+  bondDegree: 43
 standards:
   - "ECMA-262"
   - "ECMA-262 ECMAScript-2024 baseline"
@@ -22,22 +22,22 @@ standards:
   - "NIST-INCITS-359-2012"
 bindings: []
 signatures:
-  computationUuid: "32598eb1-f151-8ba3-a7e8-073ca9bb80d6"
+  computationUuid: "b098a896-7b25-80a0-88d8-ffa25fd92d6c"
   stages:
     - stage: path
       stageUuid: "deb8c079-da08-8019-9459-9f3a08003bb9"
     - stage: trinity
       stageUuid: "c3701f30-0dda-85bb-8852-6387a594db13"
     - stage: boundary
-      stageUuid: "776f5dee-ff2e-8403-915c-10ea22985932"
+      stageUuid: "b7270fd4-8d8e-8bc3-ab06-de293e362a57"
     - stage: links
-      stageUuid: "857c3683-4dab-8201-b18b-5b0df077442b"
+      stageUuid: "e6727677-7d49-8278-af3a-63db06a33267"
     - stage: horo
-      stageUuid: "6ff92eec-513d-825a-a932-20bb2033ec0c"
+      stageUuid: "bb08817e-158c-8057-8a5d-38a07840ccaf"
     - stage: seal
       stageUuid: "6a638cb4-aab4-8b1d-a1a8-f30d233345fa"
     - stage: uuid
-      stageUuid: "ad6fca28-42ec-8e07-9207-33d04d2cf4ec"
+      stageUuid: "bdc880bd-2d9a-83db-be2c-fdc90a1b8506"
 version: 2
 ---
 # dashboard — each model's computed admin view (under [[before]])

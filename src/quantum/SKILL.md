@@ -2,19 +2,19 @@
 name: quantum
 description: "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded."
 atomPath: quantum
-coordinate: "quantum · 2/share · 9e60a570"
-contentUuid: "4872b85b-3aa6-58fe-96c2-491d7a913788"
-diamondUuid: "3e77a712-cd82-814d-9bd8-b8f968f13313"
-uuid: "9e60a570-f372-8463-a23c-8f835c5bb6d9"
+coordinate: "quantum · 2/share · db6e73bc"
+contentUuid: "6f9c1f28-ce72-5978-9e32-d6c6c1b346be"
+diamondUuid: "6632b9f5-fcf7-8c44-8d03-bb3b69f8eb40"
+uuid: "db6e73bc-2a93-813d-b537-bcac5aab8de0"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 537
+  bondDegree: 511
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
 signatures:
-  computationUuid: "33c67b97-bd9b-8b15-bf7d-7db826ea1f15"
+  computationUuid: "3750d37a-271e-85b7-9d53-9d97a61b0784"
   stages:
     - stage: path
       stageUuid: "15c162b9-f68a-81b5-be34-6a93fda387d5"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "07c35499-b397-8ffd-891e-0fd0c686cd24"
     - stage: links
-      stageUuid: "01f9965e-0aa5-85d5-8e7b-7f18477ddaf1"
+      stageUuid: "ed05b75d-5a22-8340-8673-59dceec0194c"
     - stage: horo
-      stageUuid: "447c2a2a-f26d-8a78-b365-cbc16fe4abd7"
+      stageUuid: "d8981410-1130-8388-b1eb-2a5a6648746f"
     - stage: seal
       stageUuid: "c80781cf-f5a6-814a-a2d6-0b57d9d1e77e"
     - stage: uuid
-      stageUuid: "abab0510-c288-80d9-99df-4708dee8516e"
+      stageUuid: "ed9e2191-b8d5-84d7-ab10-f45bd884b68b"
 quantum:
   superposition:
     - accounting
@@ -49,11 +49,11 @@ quantum:
     - "[[quantum/deploy]]"
     - "[[quantum/serverless]]"
     - "[[superposition]]"
-    - "worker"
     - "computed from the live matrix, never hand-asserted"
     - "each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — coverage = 1 ⇒ unbounded [[tamper]]-cost, which the anchor caps."
     - "matter-twin:src/quantum/index.ts"
     - "quantum SKILL.md parse/generate runs in the quantum environment — `parseQuantumSkill` extracts law · bonds · collapse triggers · hook-less entangled fields · path account code; `generateQuantumSkill` emits stage signatures · horo · `quantum:` block (superposition | collapse | seal) · content-uuid footer; materialize via `pnpm skill:upgrade` on the quantum partition."
+    - "quantum in all dimensions — superposition, collapse, entanglement, and content-[[uuid]] seals apply on every projection axis including the 2D typography/partition × horo plane (`quantumInAllDimensions` · `quantum2dHolds`); the 1D horo basis alone is not sufficient."
   seal:
     sandbox: false
     receipt: false
@@ -61,8 +61,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "33c67b97-bd9b-8b15-bf7d-7db826ea1f15"
-    contentUuid: "4872b85b-3aa6-58fe-96c2-491d7a913788"
+    computationUuid: "3750d37a-271e-85b7-9d53-9d97a61b0784"
+    contentUuid: "6f9c1f28-ce72-5978-9e32-d6c6c1b346be"
 version: 2
 ---
 # quantum
@@ -134,4 +134,4 @@ Matter-twin: `src/quantum/dimension/realtime/index.ts` · `QuantumDimensionsProv
 @audit computed from the live matrix, never hand-asserted
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 
-<sub>content-uuid `4872b85b-3aa6-58fe-96c2-491d7a913788` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `6f9c1f28-ce72-5978-9e32-d6c6c1b346be` · account `quantum` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

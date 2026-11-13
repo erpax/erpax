@@ -3,13 +3,13 @@ name: calculator
 description: "Use when reasoning about calculator as a medical facet of medical — vocabulary pivot to @/calculator; nested not duplicated."
 atomPath: "medical/calculator"
 coordinate: "medical/calculator · 5/round · e6072e7e"
-contentUuid: "29cace29-be48-523c-a4a1-36de6a0dfb39"
+contentUuid: "2d22935e-2f62-5530-895d-3e7c527167c9"
 diamondUuid: "9c14d181-0153-84b8-85a9-c8f7040c68d4"
 uuid: "e6072e7e-e66a-8325-8c93-09389c40250d"
 horo: 5
 typography:
   partition: medical
-  bondDegree: 30
+  bondDegree: 24
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

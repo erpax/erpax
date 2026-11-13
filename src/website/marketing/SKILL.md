@@ -3,13 +3,13 @@ name: marketing
 description: "Use when reasoning about marketing — Every other surface here answers to a gate. A published page answers to a reader who **cannot check it** — no , no wave, no ratchet — which makes it the most exposed place an…"
 atomPath: "website/marketing"
 coordinate: "website/marketing · 8/crest · 5faa8ce7"
-contentUuid: "a0d5ecb6-547f-5e7d-a5a1-b38138ba3845"
+contentUuid: "e460da57-b960-523f-be30-90bd8ab97171"
 diamondUuid: "2041c2e4-133e-86cb-a447-8cc8de19d7a3"
 uuid: "5faa8ce7-0566-8009-9fcf-71a8260eefdb"
 horo: 8
 typography:
   partition: website
-  bondDegree: 23
+  bondDegree: 22
 standards:
   - "EU-Admin-Coop-Reg-904/2010"
   - Open Graph protocol (Facebook 2010+) + Twitter Cards

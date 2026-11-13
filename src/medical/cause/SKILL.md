@@ -3,13 +3,13 @@ name: cause
 description: "Use when reasoning about cause as a medical facet of medical — vocabulary pivot to @/cause; nested not duplicated."
 atomPath: "medical/cause"
 coordinate: "medical/cause · 1/base · ba575820"
-contentUuid: "5be3647b-acb7-5aa2-8481-09a713b0a0e7"
+contentUuid: "3f703a98-590f-5b52-a52a-0ed75b7a089d"
 diamondUuid: "e6975fcc-bfbd-8f9a-b6a3-4ef8eb1fd868"
 uuid: "ba575820-57ff-8f1d-9551-962bfb56fc25"
 horo: 1
 typography:
   partition: medical
-  bondDegree: 19
+  bondDegree: 17
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

@@ -3,13 +3,13 @@ name: hold
 description: "Use when reasoning about hold — EU 2015/849 **Art. 33(1)** obliges a firm to report promptly and, where possible, to **refrain from carrying out** a transaction it knows or suspects to be related to criminal…"
 atomPath: "rules/hold"
 coordinate: "rules/hold · 1/base · 3dc05098"
-contentUuid: "f5abd6f1-fc1b-5ee3-8b0b-b7f25506d3df"
+contentUuid: "b17d34cf-45a9-54ce-91c4-5be0faa2f159"
 diamondUuid: "43fd6c5f-4f74-82a5-abc3-d40c070a50f8"
 uuid: "3dc05098-5fbe-89b1-900c-b9f081813702"
 horo: 1
 typography:
   partition: rules
-  bondDegree: 19
+  bondDegree: 15
 standards:
   - "EU 2015/849 Art. 33(1) — refrain from carrying out a SUSPECTED transaction"
   - "EU-2015/849"

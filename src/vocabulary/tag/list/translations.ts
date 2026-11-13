@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "list",
-    "uuid": "4926f10f-6d8d-8c05-9d12-703807ce2478",
+    "uuid": "37a9bf4b-9277-8994-93ce-6ab6f54909b1",
     "words": [
       "list"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about list — tag/list — port of acts_as_taggable_on's `TagList` + `DefaultParser`, the TEXT↔TAGS bridge.",
-    "uuid": "96c070b4-6557-82a2-ae51-4f726cff4b1b",
+    "uuid": "b2ccc321-2ecc-829e-b57c-14d805178c7e",
     "words": [
       "use",
       "when",

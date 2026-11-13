@@ -3,17 +3,17 @@ name: context
 description: "Use when reading the live quantum surface state — superposition pending paths, last collapse, bond reciprocity, and the formatted status the CLI prints. The last loose sibling in the quantum partition, now an atom. Run: tsx src/quantum/context/index.ts"
 atomPath: "quantum/context"
 coordinate: "quantum/context · 1/base · 38207cb7"
-contentUuid: "f2dac843-1238-5c6b-87fa-580b53ad8b3d"
-diamondUuid: "42903669-97e1-8bb7-a7aa-26d996aa649c"
+contentUuid: "90decae5-9e08-5dcb-9d6c-c602d06170df"
+diamondUuid: "3d731700-70b8-8990-a058-f30d1f65d348"
 uuid: "38207cb7-a4dd-8020-8e1b-eddb5cb20c55"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 33
+  bondDegree: 23
 standards: []
 bindings: []
 signatures:
-  computationUuid: "4ab8c564-9d15-8c1b-9288-fc1836b4c039"
+  computationUuid: "ee080b1b-40e9-8f7e-af31-0812292950af"
   stages:
     - stage: path
       stageUuid: "cb94b71d-6f3e-85cc-a409-b6cf5219885f"
@@ -24,15 +24,14 @@ signatures:
     - stage: links
       stageUuid: "7c427e0e-d06d-80b0-af66-6d4f96fba950"
     - stage: horo
-      stageUuid: "68455659-9f98-8824-a2df-d8275d586cfb"
+      stageUuid: "f1c1e2dd-def7-832f-ba43-944af6d26896"
     - stage: seal
       stageUuid: "e79cfabb-0871-84b0-a4b2-ce10b3faf65b"
     - stage: uuid
-      stageUuid: "ca882f83-f2c3-82ce-9e26-67f773829912"
+      stageUuid: "048572c2-fdc8-8cd6-8ea4-7ef6a205ba7b"
 quantum:
   superposition:
     - agent
-    - original
     - quantum
     - rules
     - superposition
@@ -46,8 +45,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "4ab8c564-9d15-8c1b-9288-fc1836b4c039"
-    contentUuid: "f2dac843-1238-5c6b-87fa-580b53ad8b3d"
+    computationUuid: "ee080b1b-40e9-8f7e-af31-0812292950af"
+    contentUuid: "90decae5-9e08-5dcb-9d6c-c602d06170df"
 version: 2
 ---
 # context — the live state of the quantum surface
@@ -83,4 +82,4 @@ All four came back clean here. A move is only zero-risk once every spelling of a
 
 Composes: [[quantum]] · [[quantum]]/status · [[seal]] · [[rules]]/invisible · [[law]].
 
-<sub>content-uuid `f2dac843-1238-5c6b-87fa-580b53ad8b3d` · account `quantum/context` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `90decae5-9e08-5dcb-9d6c-c602d06170df` · account `quantum/context` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

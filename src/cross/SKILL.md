@@ -3,13 +3,13 @@ name: cross
 description: "Use when authorising \"who can do what\" — the agnostic Payload Access factory that attaches capability to roles (not users), merges role reach by lattice max, and decides an operation iff the merged capability reaches the op's required role."
 atomPath: cross
 coordinate: "cross · 4/weave · b7ed4d4c"
-contentUuid: "712ee613-892a-545a-9c06-33ee0591be5e"
-diamondUuid: "7ed324ec-c93a-8464-adc4-c98cc2f0fed9"
+contentUuid: "1e342aad-3c29-5cf5-85f9-8dd822689055"
+diamondUuid: "d94fc52b-6a3b-8c4d-84b1-8d322c987707"
 uuid: "b7ed4d4c-26fa-8e7e-abcb-50933edb3370"
 horo: 4
 typography:
   partition: cross
-  bondDegree: 68
+  bondDegree: 62
 standards:
   - "ISO 27002 §5.15 access-control + §5.3 segregation-of-duties"
   - "ISO-27002"
@@ -18,7 +18,7 @@ standards:
   - "NIST-INCITS-359-2012"
 bindings: []
 signatures:
-  computationUuid: "a3ec211e-652f-8622-9e39-278fd14e6eca"
+  computationUuid: "ec0b08dc-4388-86f1-81e5-388cb74f4de6"
   stages:
     - stage: path
       stageUuid: "83564b20-9d2e-8449-a9be-5e389526d96f"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "abbf30ac-176d-8eb0-bb7d-e2d4dd24d301"
     - stage: horo
-      stageUuid: "407f1a8e-381f-8c2a-aa9b-34865675c43b"
+      stageUuid: "69aee28d-cc69-8ceb-9d44-46bb2b725787"
     - stage: seal
       stageUuid: "7d29c4f8-f242-8a42-b0d8-fadfcb5abd6d"
     - stage: uuid
-      stageUuid: "567545d1-d1a0-8e64-aadd-8155bd908417"
+      stageUuid: "bf5710a4-b092-885b-b0e4-bef417f101bc"
 version: 2
 ---
 # cross — the agnostic access factory (the 3·6·9 governing axis)

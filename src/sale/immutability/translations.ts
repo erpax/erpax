@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when enforcing that a fiscalised sale cannot be edited or deleted — under Наредба Н-18 a closed fiscal sale is corrected by a reversal, never by mutation.",
-    "uuid": "546bd4f8-7a5c-80d0-8993-7787fcd4cc32",
+    "uuid": "7c30cae0-8408-84d7-aabb-0b9a1c59694b",
     "words": [
       "use",
       "when",

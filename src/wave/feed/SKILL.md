@@ -3,13 +3,13 @@ name: feed
 description: "Use when feeding research/develop waves into themselves for endless R&D — each generation's waves become the next asks; corpus may grow; shouldContinue until external stop; maxGenerations bounds one call."
 atomPath: "wave/feed"
 coordinate: "wave/feed · 8/crest · 077ba74e"
-contentUuid: "1bd411e2-ff43-589a-8c43-83f7207bfd49"
+contentUuid: "322b9e09-783e-5832-83b0-f5b1b6cdbc76"
 diamondUuid: "2936cf28-4cde-8147-8cc5-e1ab7e80ebd9"
 uuid: "077ba74e-dbf2-82aa-aef6-1c51dda84f42"
 horo: 8
 typography:
   partition: wave
-  bondDegree: 41
+  bondDegree: 30
 standards: []
 bindings: []
 signatures:

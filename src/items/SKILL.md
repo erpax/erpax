@@ -2,14 +2,14 @@
 name: items
 description: "Use when managing the product/service catalogue — code, SKU, GTIN barcode, pricing, VAT rate, inventory quantity, GL posting; EN-16931 BG-31 item-information, UNSPSC classification. The items collection."
 atomPath: items
-coordinate: "items · 7/descent · 4b76b806"
-contentUuid: "7430523c-6912-59bb-aea7-c38bd9aa0f3c"
-diamondUuid: "e0f2d3df-fd1d-8212-a4b7-144a49fb3832"
-uuid: "4b76b806-d01e-8c7f-90d7-138284f4cee4"
-horo: 7
+coordinate: "items · 5/round · e7df27bd"
+contentUuid: "c102f63c-44f2-5446-855c-0b51e45c3f30"
+diamondUuid: "f406b7d3-fc0d-8c31-a0fe-657f40d412ab"
+uuid: "e7df27bd-3b6b-8c34-bacb-02f4a36f3426"
+horo: 5
 typography:
   partition: items
-  bondDegree: 115
+  bondDegree: 77
 standards:
   - "EN-16931:2017 §BG-31 item-information"
   - "EN-16931:2017 §BG-31 item-information`"
@@ -34,7 +34,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "dbc09a35-0bdb-8e4d-a35f-e1124f59568e"
+  computationUuid: "4025e99d-b983-8b95-a9f0-71236500bd2c"
   stages:
     - stage: path
       stageUuid: "966285a0-056b-8fe0-94b4-9ced326c71b1"
@@ -43,13 +43,13 @@ signatures:
     - stage: boundary
       stageUuid: "4935a89f-7556-87f7-8a0f-4b2675ff4d3a"
     - stage: links
-      stageUuid: "31c384c8-dc3b-8450-828d-f1e9bbe391aa"
+      stageUuid: "dbc03c39-0cbc-8527-bf55-7223b203032c"
     - stage: horo
-      stageUuid: "9432aa05-cf8d-8c35-9071-898f24e6e686"
+      stageUuid: "fec0c38f-91e1-8f91-b275-841559e283af"
     - stage: seal
       stageUuid: "c34453bf-ba64-8732-9b91-e44427d4dba1"
     - stage: uuid
-      stageUuid: "00173484-f6b6-8a05-a714-db9103ed774c"
+      stageUuid: "abda63a8-c5aa-87d8-be0d-167edeaf8739"
 version: 2
 ---
 # items

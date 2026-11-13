@@ -3,13 +3,13 @@ name: marketing
 description: "Use when reasoning about marketing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/marketing"
 coordinate: "vocabulary/marketing · 8/crest · 07bbda61"
-contentUuid: "07b1b5ef-9b69-516f-b410-366c8fbfc152"
+contentUuid: "0cfa37fb-1750-564b-8eb3-5c8131708e97"
 diamondUuid: "0f11e4ab-29ba-8907-99ed-14d221e94618"
 uuid: "07bbda61-3397-8f0b-82b1-318f47ad3e91"
 horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 23
+  bondDegree: 22
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

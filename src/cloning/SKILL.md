@@ -2,14 +2,14 @@
 name: cloning
 description: "Use when the platform reproduces itself — collecting its own structural genome, publishing it as a verifiable federation envelope, and booting a bit-identical instance from that bundle alone; mitosis as federation, gated by content-uuid recompute."
 atomPath: cloning
-coordinate: "cloning · 4/weave · e249b7e1"
-contentUuid: "955540d1-82e7-5c24-8e55-493372540ebc"
-diamondUuid: "67885f3d-cdea-8368-b76c-e8aae7c062d9"
-uuid: "e249b7e1-fac1-81d3-8305-591e876d06b9"
+coordinate: "cloning · 4/weave · b2d42373"
+contentUuid: "8a3ae46c-e691-5b73-82ee-89e905290ddc"
+diamondUuid: "a78fa30e-6eae-8cc2-a251-87c9a3ce21e5"
+uuid: "b2d42373-d2fe-81ff-8a11-ac000c2be07e"
 horo: 4
 typography:
   partition: cloning
-  bondDegree: 66
+  bondDegree: 54
 standards:
   - "RFC-8785"
   - W3C Verifiable Credentials Data Model 2.0
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "1ab017e1-8be5-83dc-a05d-e5832becf92c"
+  computationUuid: "a98bd680-1459-81fa-a623-1b62c71354f5"
   stages:
     - stage: path
       stageUuid: "8a1be77c-0b0b-8bb9-95c2-e018b105819b"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "1f480012-203c-883f-a23e-432f431ccd01"
     - stage: links
-      stageUuid: "d8778ca5-f5ce-8d7e-a383-b2da1c2537f8"
+      stageUuid: "03d35e81-4e44-8e8d-b337-cf9aef5300d8"
     - stage: horo
-      stageUuid: "5e4d72dc-9ce5-82a5-af29-80a5a0541e9c"
+      stageUuid: "8d480d06-a618-8885-9448-e54cb302410c"
     - stage: seal
       stageUuid: "29d08a4c-2338-8f57-aa24-efca5435b2f9"
     - stage: uuid
-      stageUuid: "94a82179-06fe-82db-95d0-1a3302822fd9"
+      stageUuid: "da778d80-0836-8e1b-ab2e-2a1f88e88e5d"
 version: 2
 ---
 # cloning — the platform reproduces itself, bit-identical by construction

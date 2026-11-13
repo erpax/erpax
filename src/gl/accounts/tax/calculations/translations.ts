@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when computing or reviewing tax-liability snapshots per period and jurisdiction — VAT, GST, income tax, payroll tax — with rate, gross/taxable/net amounts, GL payable account, and filing/payment deadlines; lifecycle from calculated to filed/paid. The tax-calculations period-snapshot collection.",
-    "uuid": "6d04ef4b-7900-8d99-9ad9-3b78ff61e5cf",
+    "uuid": "534f8e97-09c5-8917-8554-4d28ace53280",
     "words": [
       "use",
       "when",

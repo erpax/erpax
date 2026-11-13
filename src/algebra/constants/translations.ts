@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about constants — Algebra constants — theorems and Algebra interface",
-    "uuid": "d66511fa-7308-8ff7-8de3-3cc6e324a9d0",
+    "uuid": "a295f3b3-91db-8861-bfc9-01533b82bc95",
     "words": [
       "use",
       "when",

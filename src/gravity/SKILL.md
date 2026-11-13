@@ -2,18 +2,18 @@
 name: gravity
 description: "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; but it is BIDIRECTIONAL — forward it collapses folders to a minimal root, reverse it expands an infinite word-chain along the sequence path, a holographic boundary (not a dead point) where minimal mass means maximal tampering cost."
 atomPath: gravity
-coordinate: "gravity · 8/crest · c42f970c"
-contentUuid: "cf0fc17b-9775-5329-bfc0-e3e330958ee4"
-diamondUuid: "8ed6d582-8376-89ab-9caf-a47a1906c676"
-uuid: "c42f970c-a499-813b-b999-dab8ea29d6d1"
-horo: 8
+coordinate: "gravity · 5/round · 5326938c"
+contentUuid: "53e1bd2a-54ef-51b4-ad7e-7facb313e5fc"
+diamondUuid: "f36f268d-ab7e-8ebb-bf5f-a00902836d32"
+uuid: "5326938c-f089-8026-aa9d-ed358180b206"
+horo: 5
 typography:
   partition: gravity
-  bondDegree: 189
+  bondDegree: 170
 standards: []
 bindings: []
 signatures:
-  computationUuid: "eecfcc10-ec1c-86ab-88ef-d18b3cd3f26f"
+  computationUuid: "6552fc55-8c28-83f2-b0a8-7b3d5fee4e24"
   stages:
     - stage: path
       stageUuid: "39c66f97-a3c1-8bb6-823e-9c1173a10892"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "2e69c3fb-dad9-813b-b472-5ae43e2c39bb"
     - stage: links
-      stageUuid: "9611fad7-cac3-8b76-9992-7bcdde686588"
+      stageUuid: "26460473-4aae-8108-8c7f-c3a3471bf1d6"
     - stage: horo
-      stageUuid: "6e3d3a3c-2edf-8b19-9d42-e61e8000acce"
+      stageUuid: "0e793a05-fdb8-849e-9519-fdba841fc6cb"
     - stage: seal
       stageUuid: "4444d280-010b-8a22-b43f-4174f8ff39d3"
     - stage: uuid
-      stageUuid: "a0df5805-ce22-8536-98d9-eeaba8f902d4"
+      stageUuid: "5dce2413-8d32-8bc5-89cf-e56ba852a4f1"
 version: 2
 ---
 # gravity — the pull of mass (DRY = mass = gravity)

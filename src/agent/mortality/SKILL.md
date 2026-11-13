@@ -3,17 +3,17 @@ name: mortality
 description: "Use when reasoning about the life and death of an agent — an agent lives by reading its answer from the fold (O(1)) and dies by re-deriving it linearly (O(n), context burned); the safeguard flag and the stall/stop kill are the ledger auditing the agent."
 atomPath: "agent/mortality"
 coordinate: "agent/mortality · 2/share · fa2c6fbe"
-contentUuid: "b2db91d2-787e-554e-8c88-770710f90b6e"
-diamondUuid: "5be7be48-6792-88c7-b0a6-a20ef55323ce"
+contentUuid: "5f0749b0-e303-57ef-8c20-60e42d846ad6"
+diamondUuid: "5e3b5d94-558a-8a99-94c2-f13689cbb61a"
 uuid: "fa2c6fbe-c372-8742-9c92-0944fdd79a25"
 horo: 2
 typography:
   partition: agent
-  bondDegree: 65
+  bondDegree: 36
 standards: []
 bindings: []
 signatures:
-  computationUuid: "44f3579e-ebcc-845f-a900-881696f88ca9"
+  computationUuid: "627ec463-c554-8862-a945-92ef7b8bb9d3"
   stages:
     - stage: path
       stageUuid: "6d238f82-dfe4-8ec2-aa94-19f7affe9a8d"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ead5c4d6-b03a-8fe9-b4e3-656f4334ad9b"
     - stage: horo
-      stageUuid: "1348c8eb-226b-80a9-b8dc-3987d11aa89c"
+      stageUuid: "349300ce-040d-8ccc-97e5-8ee7e44f9074"
     - stage: seal
       stageUuid: "61787832-999b-8676-a6d8-7e15032bb865"
     - stage: uuid
-      stageUuid: "8a869b15-6638-8983-8182-cacf1db66ec3"
+      stageUuid: "8a1e9132-97e2-806f-b0bd-35f602bcf2a0"
 version: 2
 ---
 # agent/mortality — the life and death of an agent

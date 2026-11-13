@@ -3,13 +3,13 @@ name: queue
 description: "Use when ordering work FIFO under the machine model — executable queue nested under computer; distinct from top-level @/queue vocabulary."
 atomPath: "computer/queue"
 coordinate: "computer/queue · 8/crest · 8d7af825"
-contentUuid: "8ee1f0e3-3b60-50de-8a8d-67ef0e5f26b7"
+contentUuid: "9e85ba1d-a6fb-5276-a5b2-a12562e15411"
 diamondUuid: "a9fda8ad-5f85-8eb7-a840-cc133358e30a"
 uuid: "8d7af825-ba11-8636-9fcb-7cfb0cd12d23"
 horo: 8
 typography:
   partition: computer
-  bondDegree: 28
+  bondDegree: 20
 standards: []
 bindings: []
 signatures:

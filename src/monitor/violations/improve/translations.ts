@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about improve — monitor/violations/improve — map violation → deterministic improve action.",
-    "uuid": "5ff5a514-2c69-8690-a244-5c45b9bac6cb",
+    "uuid": "90a41f47-be4f-8b12-b381-257801f5d71b",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about float — Four institutions, four vocabularies, **one structure**: something opens with a float, signed movements pass through it, and at close somebody **counts it in discrete units**.",
-    "uuid": "4e2f5d8c-2de5-8004-8667-3680a25cd60c",
+    "uuid": "f0b37ab6-8968-844a-9986-c219003d0ef9",
     "words": [
       "use",
       "when",

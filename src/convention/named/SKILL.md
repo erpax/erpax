@@ -3,13 +3,13 @@ name: named
 description: "Use when reasoning about how an atom is addressed — the convention that every SKILL.md frontmatter name equals its folder leaf word (the name IS the path), measured live as coverage = matching / total over the real corpus tree."
 atomPath: "convention/named"
 coordinate: "convention/named · 5/round · 17fd96a6"
-contentUuid: "7fdd9d49-04a6-50a4-894b-41ccd51165fe"
+contentUuid: "747e4fea-a39b-5ab2-82ba-104593650bd1"
 diamondUuid: "316774d2-f440-87b8-9864-3e8a411dcfff"
 uuid: "17fd96a6-6251-8675-a836-a7cc19254ab4"
 horo: 5
 typography:
   partition: convention
-  bondDegree: 36
+  bondDegree: 31
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

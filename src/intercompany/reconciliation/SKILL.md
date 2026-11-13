@@ -3,13 +3,13 @@ name: reconciliation
 description: "Use when reconciling intercompany payable/receivable balances for multi-entity period close — the 'payable = receivable, net' invariant is the conservation algebra (netFlow = 0) at entity scale, proven at 0 and at scale, refutable on any break."
 atomPath: "intercompany/reconciliation"
 coordinate: "intercompany/reconciliation · 1/base · 4b245ef0"
-contentUuid: "ddb5f252-a66e-50fa-a3ac-685d848d1363"
+contentUuid: "3d170c9d-44b0-5084-b40f-c0a3cb376771"
 diamondUuid: "6b21adc0-0090-8f52-aa68-d12ec76de58f"
 uuid: "4b245ef0-f283-8862-8dff-40a5d182af65"
 horo: 1
 typography:
   partition: intercompany
-  bondDegree: 35
+  bondDegree: 30
 standards:
   - "IAS-27:2023 (consolidated and separate financial statements)"
   - "IAS-28:2023 (associates and joint ventures)"

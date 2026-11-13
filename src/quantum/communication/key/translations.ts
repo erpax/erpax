@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "key",
-    "uuid": "36211363-afe4-8768-ba96-c4b63b945cd5",
+    "uuid": "3bdcac5b-255f-8864-83bf-5600b76b011d",
     "words": [
       "key"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about quantum key distribution (BB84 / E91) on the matrix — two peers derive a shared secret from their symmetric entangled binding so both compute the same key order-independently, and eavesdropping is detectable because no-cloning makes an intercept-resend yield a different content-uuid.",
-    "uuid": "97eb808b-812f-8248-be8f-bb49a9d24b3b",
+    "uuid": "b1b15536-ea03-870c-b0bb-d63ccc4822c4",
     "words": [
       "use",
       "when",

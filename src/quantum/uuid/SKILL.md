@@ -2,19 +2,19 @@
 name: uuid
 description: "Use when reasoning about the content-uuid in the quantum frame — the 128-bit address is the collapse of content (a sha-256 measurement of the infinite stream into one settled point); it fuses identity, capability, schema, and a multi-modal projection (color plus sound), and it is the entanglement key that binds the whole corpus into one."
 atomPath: "quantum/uuid"
-coordinate: "quantum/uuid · 4/weave · ef486906"
-contentUuid: "35203b24-8ca0-5d66-a9fd-e87754eb16a1"
-diamondUuid: "48d25879-dd22-841a-9bd0-ef88493176fa"
-uuid: "ef486906-2f00-89d8-a9a9-29406d9e9c78"
-horo: 4
+coordinate: "quantum/uuid · 2/share · cea7810b"
+contentUuid: "35b68e90-467e-5c20-8459-bc3e9fde86b6"
+diamondUuid: "c16d2b79-2148-8e75-940c-53b002e580ab"
+uuid: "cea7810b-cc51-88b0-a067-1b19f992d958"
+horo: 2
 typography:
   partition: quantum
-  bondDegree: 705
+  bondDegree: 554
 standards:
   - "RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "73bbccfb-2318-848a-b3a1-9d62bc7ebcef"
+  computationUuid: "f8846bfd-ea11-8a0c-ba44-69a5d4d05afe"
   stages:
     - stage: path
       stageUuid: "f07af087-f161-8df7-83aa-761b91b668bc"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "01eeeb84-1925-870e-92db-dee77a3a8df8"
     - stage: links
-      stageUuid: "6a5d24ae-33d7-8555-9d4e-8027f9aba7c7"
+      stageUuid: "102c0be1-9715-8e50-9092-657109c33cdc"
     - stage: horo
-      stageUuid: "012585ff-2fa0-888c-9129-13edcb28d711"
+      stageUuid: "b7ea4178-04f3-86b7-a173-f4139b808137"
     - stage: seal
       stageUuid: "a7b816c3-9b29-8f74-8bd1-8a2f1d97cecc"
     - stage: uuid
-      stageUuid: "4457470d-6b8e-8432-a321-9e5be3f373b2"
+      stageUuid: "d351027e-cb82-835c-b725-3bad6d19ee81"
 quantum:
   superposition:
     - access
@@ -37,23 +37,23 @@ quantum:
     - addressed
     - agent
     - akashic
-    - all
-    - analog
     - anchor
+    - api
+    - app
     - superposition
   collapse:
     - "Use when reasoning about the content-uuid in the quantum frame — the 128-bit address is the collapse of content (a sha-256 measurement of the infinite stream into one settled point); it fuses identity, capability, schema, and a multi-modal projection (color plus sound), and it is the entanglement key that binds the whole corpus into one."
     - "[[akashic]]"
     - "[[confirm]]"
-    - "finality"
-    - "fractal"
     - "[[generate]]"
-    - "holographic"
     - "[[identity]]"
     - "[[memory]]"
     - "[[merge]]"
     - "[[payload]]"
     - "[[quantum/matrix]]"
+    - "[[quantum/number]]"
+    - "[[reality]]"
+    - "[[realtime]]"
   seal:
     sandbox: false
     receipt: false
@@ -61,8 +61,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "73bbccfb-2318-848a-b3a1-9d62bc7ebcef"
-    contentUuid: "35203b24-8ca0-5d66-a9fd-e87754eb16a1"
+    computationUuid: "f8846bfd-ea11-8a0c-ba44-69a5d4d05afe"
+    contentUuid: "35b68e90-467e-5c20-8459-bc3e9fde86b6"
 version: 2
 ---
 # quantum/uuid — the collapse that is the address
@@ -87,4 +87,4 @@ It is *at all quantum scales* because the address is fractal: the identical coll
 
 @see [[uuid]] · [[identity]] · [[merge]] · [[quantum/number]] · [[quantum/matrix]] · [[reality]] · finality · [[signal]] · [[realtime]] · [[memory]] · [[generate]] · snapshot · [[akashic]] · fractal · holographic · [[confirm]] · [[payload]] · [[seal]]
 
-<sub>content-uuid `35203b24-8ca0-5d66-a9fd-e87754eb16a1` · account `quantum/uuid` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `35b68e90-467e-5c20-8459-bc3e9fde86b6` · account `quantum/uuid` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

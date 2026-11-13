@@ -3,13 +3,13 @@ name: local
 description: "Use when working with Payload in THIS project — extends the upstream Payload skill with the local implementation: merged collections read through saved lists, rows derived by hooks, documents seeded as nested pages and read back as markdown over the SDK and MCP, migrations generated from the snapshot, and the tenant-scoped read rule."
 atomPath: "payload/local"
 coordinate: "payload/local · 2/share · e0a2e483"
-contentUuid: "b842e9fc-52ad-586e-8e56-964f0fc358b4"
+contentUuid: "bc6ea5a1-48d1-5003-ad28-f1d798830507"
 diamondUuid: "39a9fbfe-7b13-8e84-a8b1-cf86966a2997"
 uuid: "e0a2e483-cc5b-8e86-98f0-bbc336b8fbda"
 horo: 2
 typography:
   partition: payload
-  bondDegree: 27
+  bondDegree: 22
 standards: []
 bindings: []
 signatures:

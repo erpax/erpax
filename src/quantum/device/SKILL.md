@@ -2,18 +2,18 @@
 name: device
 description: "Use when reasoning about a device as a measurement instrument — the boundary where the continuous analog world collapses into discrete digital snapshots; capture on the edge, compute pure, every reading a content-addressed measurement in the snapshot chain."
 atomPath: "quantum/device"
-coordinate: "quantum/device · 1/base · d1be12fd"
-contentUuid: "91b64ff7-a4fe-5900-9751-bd4cdd383622"
-diamondUuid: "8618adae-283b-82e0-a969-fadb5a957015"
-uuid: "d1be12fd-000e-8e5a-94a4-de2d6984514d"
-horo: 1
+coordinate: "quantum/device · 5/round · 87672004"
+contentUuid: "30e699fe-1984-5caa-bd96-4f3703d8d760"
+diamondUuid: "53b020eb-656e-8ede-84f9-5ae0706c3b7a"
+uuid: "87672004-d65a-8347-81cc-bd6365cc9069"
+horo: 5
 typography:
   partition: quantum
-  bondDegree: 57
+  bondDegree: 38
 standards: []
 bindings: []
 signatures:
-  computationUuid: "271dfb8e-e593-8441-b88c-f15202992ca8"
+  computationUuid: "e791b2f5-5487-8d5d-88f8-6d08bf35bb26"
   stages:
     - stage: path
       stageUuid: "225454fc-327d-859d-bf56-45cec052be2b"
@@ -22,34 +22,35 @@ signatures:
     - stage: boundary
       stageUuid: "51f197ec-9c25-86c4-99da-472d54556b5d"
     - stage: links
-      stageUuid: "f4836196-a4ed-85e9-875d-6824f46fc80d"
+      stageUuid: "758fd95e-6a22-8489-b607-3b6845631288"
     - stage: horo
-      stageUuid: "8b6432f2-46c2-86a6-a9d0-9d67c181293f"
+      stageUuid: "59538821-a54b-8678-8856-9464757e262d"
     - stage: seal
       stageUuid: "cbd3726a-b32c-851f-9de4-8b730f12369a"
     - stage: uuid
-      stageUuid: "f4966140-5c82-8090-b290-3ec851b8e310"
+      stageUuid: "32f2c15e-2eee-8788-b2a7-b4b948fc72c5"
 quantum:
   superposition:
-    - analog
-    - available
     - device
     - emr
     - law
     - medical
     - merge
     - monitor
+    - quantum
+    - readings
+    - stack
     - superposition
   collapse:
     - "Use when reasoning about a device as a measurement instrument — the boundary where the continuous analog world collapses into discrete digital snapshots; capture on the edge, compute pure, every reading a content-addressed measurement in the snapshot chain."
-    - "analog"
     - "[[coherence]]"
     - "[[device]]"
-    - "finality"
     - "[[measurement]]"
     - "[[reality]]"
     - "a device may only collapse what is physically real — the continuous analog field is measurable (rPPG/HRV), the biofield is not, so a device must never report a reading it cannot sense. Capture stays on the edge and only numbers cross the boundary (the raw stream never leaves the device); each reading is an append-only content-addressed snapshot, final the moment it is taken."
+    - analog
     - biometric
+    - finality
     - sensory
     - snapshot
   seal:
@@ -59,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: true
     speechResults: false
-    computationUuid: "271dfb8e-e593-8441-b88c-f15202992ca8"
-    contentUuid: "91b64ff7-a4fe-5900-9751-bd4cdd383622"
+    computationUuid: "e791b2f5-5487-8d5d-88f8-6d08bf35bb26"
+    contentUuid: "30e699fe-1984-5caa-bd96-4f3703d8d760"
 version: 2
 ---
 # quantum/device — the measurement instrument
@@ -75,4 +76,4 @@ Edge law: **capture on the device, compute pure on the Worker** — `getUserMedi
 
 @see [[device]] · [[measurement]] · [[reality]] · analog · sensory · snapshot · biometric · [[coherence]] · finality
 
-<sub>content-uuid `91b64ff7-a4fe-5900-9751-bd4cdd383622` · account `quantum/device` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `30e699fe-1984-5caa-bd96-4f3703d8d760` · account `quantum/device` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

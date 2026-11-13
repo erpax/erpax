@@ -2,14 +2,14 @@
 name: standards
 description: "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family."
 atomPath: standards
-coordinate: "standards · 5/round · 9ea9ec03"
-contentUuid: "0b917a75-446c-575b-ba40-9326b1b3e052"
-diamondUuid: "40a10f49-8a02-8ff2-8920-22e01f421ab6"
-uuid: "9ea9ec03-00d7-81b3-ad1d-86772794456b"
-horo: 5
+coordinate: "standards · 2/share · 79679b62"
+contentUuid: "a38a4635-46e7-5d3c-8e48-3c9fc171ae25"
+diamondUuid: "8bfdd6e4-8187-8b62-9afd-f17fd7e5c3f6"
+uuid: "79679b62-0eea-88bb-987d-5217c06cedf2"
+horo: 2
 typography:
   partition: standards
-  bondDegree: 197
+  bondDegree: 188
 standards:
   - "ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)"
   - "ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)`"
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "2577f279-0c23-8235-b879-ce55f89e5b24"
+  computationUuid: "7a977895-7f03-829b-8a33-67fb57eb6296"
   stages:
     - stage: path
       stageUuid: "e4d21269-1c37-8fe4-85da-1900af3645f0"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "ce14a10d-8dd0-8830-b2ef-cf5cffbeec8e"
     - stage: horo
-      stageUuid: "02fc7da1-2205-8167-90d0-ff37fb570942"
+      stageUuid: "e9cc4b42-efe8-8361-a1dc-fbfe7f02f751"
     - stage: seal
       stageUuid: "47197e8b-0e61-8144-80ca-7730bd2eb282"
     - stage: uuid
-      stageUuid: "e4209057-fe31-8a43-93b2-e9aa262ac58b"
+      stageUuid: "220e5b6b-5769-821c-978e-1eb3a61eed3c"
 version: 2
 ---
 # standards
@@ -72,7 +72,7 @@ Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
 <!-- CATALOGUE:START -->
 
-## Catalogue — 159 standards, 6283 citations
+## Catalogue — 159 standards, 4915 citations
 
 <!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->
 
@@ -102,9 +102,9 @@ inline HTML that renders as a coloured dot.
 | un | 6 | 94 | `ISO-9735` · 42 |
 | upu | 1 | 7 | `UPU-S42` · 7 |
 | us_gaap | 3 | 61 | `US-CTA-2021` · 38 |
-| w3c | 11 | 1825 | `schema.org` · 1660 |
+| w3c | 11 | 457 | `schema.org` · 292 |
 | wcag | 2 | 63 | `W3C-WAI-ARIA-1.2` · 33 |
-| **Σ** | **159** | **6283** | |
+| **Σ** | **159** | **4915** | |
 
 **Registered, awaiting citation: 104.** Known canonical standards the registry holds and
 no code cites yet — they seed as `proposed` and become cited as a domain grows. Listed in

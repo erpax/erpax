@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dry",
-    "uuid": "d9fac995-deb9-86f0-8d9a-44a285ead437",
+    "uuid": "4eaf3489-8d2c-8d5d-8337-66738847b30c",
     "words": [
       "dry"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking whether the corpus stays DRY — the computed convention that no reference is duplicated, every one folded to a single source, measured live as coverage = atoms / (atoms + residue) over the real tree.",
-    "uuid": "28daf122-47cc-89a7-bb09-f53ee1655fcc",
+    "uuid": "f5660683-de3d-886b-8c17-205ad127e79f",
     "words": [
       "use",
       "when",

@@ -2,14 +2,14 @@
 name: ecosystem
 description: "Use when sustainability and decentralisation must be seen as ONE — a food web is a coordinator-free network (decentralised) that wastes nothing (sustainable) for the SAME reason: local agents posting balanced metabolic exchanges, every output another's input, so global conservation and global order both emerge from local balance. erpax IS an ecosystem; nature is the empirical proof of the law."
 atomPath: ecosystem
-coordinate: "ecosystem · 1/base · 18d962d0"
-contentUuid: "c1b2aab8-0059-5b23-b2b1-f72a4a25e580"
-diamondUuid: "2be51851-43ef-8035-8ac0-bbab663bf112"
-uuid: "18d962d0-870f-8b65-b3d0-0cd20598d1e6"
+coordinate: "ecosystem · 1/base · 9e26204f"
+contentUuid: "6bc2fd6e-90d8-516e-83ff-fe41521725f1"
+diamondUuid: "ca06f9c3-de8f-809d-9ed0-dd2dc3aa2922"
+uuid: "9e26204f-0297-84a3-b388-6db88fc13acd"
 horo: 1
 typography:
   partition: ecosystem
-  bondDegree: 76
+  bondDegree: 64
 standards:
   - "EU-1958"
   - "Elton (1958) vs May, Will a Large Complex System be Stable? (1972) — diversity–stability debate"
@@ -17,7 +17,7 @@ standards:
   - "Tansley (1935) — coined \"ecosystem\": organisms plus environment as one system"
 bindings: []
 signatures:
-  computationUuid: "8715cd1a-1f19-8c7a-9461-9231dc5310e5"
+  computationUuid: "fa0239dd-1bb6-8945-bc48-1f9fdfbf9838"
   stages:
     - stage: path
       stageUuid: "a45bd5cc-b586-84b5-9859-e0f78950a89c"
@@ -26,13 +26,13 @@ signatures:
     - stage: boundary
       stageUuid: "c1c22109-a193-8428-ba7b-0390ca49c64d"
     - stage: links
-      stageUuid: "98ecb32e-3d92-8d71-9dd1-aa01bf283214"
+      stageUuid: "2686247f-cf11-880c-851d-2f775a4e81d4"
     - stage: horo
-      stageUuid: "16413b1a-edcc-813c-83aa-e8d7fb75a39b"
+      stageUuid: "d7517aff-0a49-85f1-a45e-9e944f8e3b16"
     - stage: seal
       stageUuid: "fea007df-fa7d-8066-880a-129771a399a6"
     - stage: uuid
-      stageUuid: "ba83c097-7506-854a-9421-32b2863d3f90"
+      stageUuid: "f9441d13-ca7a-8fd4-8ae7-fd9871c15474"
 version: 2
 ---
 # ecosystem — where decentralization and sustainability are one phenomenon

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about floor — The corpus's security claims rested on the word **infeasible**, and infeasible is an opinion about hardware.",
-    "uuid": "1840481d-23dd-8c81-933d-33441d8e3816",
+    "uuid": "08b6b323-5d27-8fc2-b6ff-b9bbc6d7a32b",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bank",
-    "uuid": "360bd4b5-a461-8a24-ae22-0067849104f2",
+    "uuid": "5c87a6fc-a06d-891a-ac75-eacaf62df989",
     "words": [
       "bank"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a transaction or account references banking infrastructure — bank account, bank statement, bank transfer, bank reconciliation. A financial institution context; relationTo: 'bank-accounts' or similar.",
-    "uuid": "5ec77cbf-f385-8eea-839e-5c85ac7c9428",
+    "uuid": "c3a3f4a2-d4d9-87b7-a02d-5636bff23a75",
     "words": [
       "use",
       "when",

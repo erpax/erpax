@@ -3,18 +3,18 @@ name: communication
 description: "Use when reasoning about communication on the quantum level — a message is a content-uuid (no-cloning, so a forged message has a different uuid), the channel is entanglement, and a received message is intact iff its uuid matches the original."
 atomPath: "quantum/communication"
 coordinate: "quantum/communication · 4/weave · c2b46ffe"
-contentUuid: "5f2c2d5d-62f1-5770-801c-5bb04f2fd699"
-diamondUuid: "79a0854b-d1ea-83ef-98d8-8777b2c45b24"
+contentUuid: "54b18833-9258-57ff-afb5-5ce9acce7b74"
+diamondUuid: "465ee556-02cf-8d4b-a95a-319237254a13"
 uuid: "c2b46ffe-49ad-8816-8608-4fc01f38e6fd"
 horo: 4
 typography:
   partition: quantum
-  bondDegree: 55
+  bondDegree: 52
 standards:
   - "no-cloning (Wootters–Zurek 1982); RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "314138a8-89c2-8981-8cd4-dd9e50cbfcb9"
+  computationUuid: "3e0c1ed2-0305-8136-bf0e-4e8846b72239"
   stages:
     - stage: path
       stageUuid: "4fbb8785-7def-8c9c-8c5c-a1673ef47f67"
@@ -25,14 +25,13 @@ signatures:
     - stage: links
       stageUuid: "bf34309c-824c-855c-a14a-145614754384"
     - stage: horo
-      stageUuid: "ab9f460b-f071-8e92-bc93-b68aa0bcc821"
+      stageUuid: "921db276-6de4-8304-aebb-eb3652213140"
     - stage: seal
       stageUuid: "eefb7b25-f62d-802a-99c5-e6a60a7722ed"
     - stage: uuid
-      stageUuid: "9c61d5fb-f9e8-846f-98a1-b7e8864ad0a4"
+      stageUuid: "3de1efc7-6b04-843a-a3a0-95b147af4f4b"
 quantum:
   superposition:
-    - channel
     - chat
     - communication
     - key
@@ -40,6 +39,7 @@ quantum:
     - merge
     - message
     - quantum
+    - superdense
     - superposition
   collapse:
     - "Use when reasoning about communication on the quantum level — a message is a content-uuid (no-cloning, so a forged message has a different uuid), the channel is entanglement, and a received message is intact iff its uuid matches the original."
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "314138a8-89c2-8981-8cd4-dd9e50cbfcb9"
-    contentUuid: "5f2c2d5d-62f1-5770-801c-5bb04f2fd699"
+    computationUuid: "3e0c1ed2-0305-8136-bf0e-4e8846b72239"
+    contentUuid: "54b18833-9258-57ff-afb5-5ce9acce7b74"
 version: 2
 ---
 # quantum/communication — no-cloning + tamper-evidence
@@ -67,4 +67,4 @@ Matter-twin: `src/quantum/communication/index.ts` (`intact` · `noCloningHolds`)
 
 @standard no-cloning (Wootters–Zurek 1982); RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `5f2c2d5d-62f1-5770-801c-5bb04f2fd699` · account `quantum/communication` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `54b18833-9258-57ff-afb5-5ce9acce7b74` · account `quantum/communication` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

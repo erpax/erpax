@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when structuring EU mandatory sustainability reporting — one row per ESRS datapoint per reporting year (E1–E5 environmental, S1–S4 social, G1 governance) with narrative, quantitative KPIs, IRO classification, and assurance evidence for XBRL filing. The CSRD/ESRS disclosure register.",
-    "uuid": "c7b3372e-0f2b-82a4-b3b4-7414a4745522",
+    "uuid": "2258f6ef-da9f-8bc3-aabc-796761aff316",
     "words": [
       "use",
       "when",

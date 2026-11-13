@@ -3,13 +3,13 @@ name: allergies
 description: "Use when reasoning about allergies as a medical facet of medical — vocabulary pivot to @/allergies; nested not duplicated."
 atomPath: "medical/allergies"
 coordinate: "medical/allergies · 5/round · 7f93c8b4"
-contentUuid: "2c1ff4f8-7c13-513e-b212-262134d0b75c"
+contentUuid: "da36fc85-2177-5d41-aa8f-20e845a23384"
 diamondUuid: "603d1fe5-6f4b-82f0-bd71-cc3b78a32b90"
 uuid: "7f93c8b4-5e12-87b1-9aeb-1056ef15aadc"
 horo: 5
 typography:
   partition: medical
-  bondDegree: 17
+  bondDegree: 13
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

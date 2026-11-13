@@ -2,14 +2,14 @@
 name: cost
 description: "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts."
 atomPath: "tamper/cost"
-coordinate: "tamper/cost · 1/base · dd52d98f"
-contentUuid: "d2c54e9d-8e78-53aa-a9e5-d47d78f91736"
-diamondUuid: "cf201f06-b503-8d4b-877d-dd0df0ccbfe7"
-uuid: "dd52d98f-65cd-8aed-9fc1-a67d9f7ffe11"
+coordinate: "tamper/cost · 1/base · e9a253c3"
+contentUuid: "0e0d05f6-3264-5dfc-9850-237159b3895a"
+diamondUuid: "8238ee83-761b-82bb-b24d-40fa434a8dad"
+uuid: "e9a253c3-408c-85ea-bf63-0c200bfaff0c"
 horo: 1
 typography:
   partition: tamper
-  bondDegree: 403
+  bondDegree: 327
 standards:
   - "CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication"
   - "DeepSeek-Prover-V2 — recursive subgoal decomposition, Lean-4 kernel-checked invariants"
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "18c263a2-99d4-8a52-bd90-48259756f583"
+  computationUuid: "ea5b8242-ab61-8427-8768-f46a0877ed27"
   stages:
     - stage: path
       stageUuid: "c4a6cfbb-5715-8b93-b12d-90915c16b1bd"
@@ -31,13 +31,13 @@ signatures:
     - stage: boundary
       stageUuid: "d2c970f6-248c-87f6-8dff-28e4ce4709ca"
     - stage: links
-      stageUuid: "fc9c397e-a761-8d0c-810c-4e8687bf9cca"
+      stageUuid: "5af8dad1-16dc-87a2-afc0-cd49005248ad"
     - stage: horo
-      stageUuid: "676ce8ec-17ba-847d-aeec-de877386530d"
+      stageUuid: "b6aa8238-7072-8ba1-bba6-f8b1f6235100"
     - stage: seal
       stageUuid: "2c075d9f-e9ae-8985-b4ce-ca33dc25c7c9"
     - stage: uuid
-      stageUuid: "11ab84f0-7436-8407-93f1-cd1253b4ee3b"
+      stageUuid: "09dd38ea-99b3-8265-81a9-f568045dff71"
 version: 2
 ---
 # tamper-cost — what it costs to crack a zero-entropy app

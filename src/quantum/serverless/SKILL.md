@@ -2,18 +2,18 @@
 name: serverless
 description: "Use when proving that serverless infrastructure (Cloudflare Workers + wrangler bindings) provides quantum semantics — superposition, collapse, entanglement, holographic recovery — and that erpax itself is the existence proof, deployed serverless via OpenNext."
 atomPath: "quantum/serverless"
-coordinate: "quantum/serverless · 4/weave · 9113e1c8"
-contentUuid: "ff09db6a-06bf-57aa-a2df-af25eeefe3fb"
-diamondUuid: "54325ef8-b5e2-81b3-9d7d-00354744813b"
-uuid: "9113e1c8-f947-8102-89f2-ca854ec2f961"
-horo: 4
+coordinate: "quantum/serverless · 2/share · 3854f5ea"
+contentUuid: "9840283f-9b6a-5bba-a5ba-2184c9f371df"
+diamondUuid: "97e3561a-ef6a-81a4-8a1b-e3cdc365497c"
+uuid: "3854f5ea-26a6-8cc7-981c-357433d48958"
+horo: 2
 typography:
   partition: quantum
-  bondDegree: 51
+  bondDegree: 47
 standards: []
 bindings: []
 signatures:
-  computationUuid: "db4dede8-1f7b-896a-bff4-7518845f3093"
+  computationUuid: "e4197d21-1bb9-8f76-80fc-1ea83e4f4c83"
   stages:
     - stage: path
       stageUuid: "ec2fa4ce-5164-820b-8f4e-f283f5bfcae6"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "d7272ea2-c6f0-8ecf-b03d-ebd1e062701a"
     - stage: links
-      stageUuid: "45a1e565-c099-8e08-9b2f-1ab040b2ec6b"
+      stageUuid: "058c70b0-aee8-85aa-8f42-d3ea66f30a9d"
     - stage: horo
-      stageUuid: "3cb15a1d-b0fc-85c8-9bb6-38c63488b550"
+      stageUuid: "8ae5e4a5-0b39-818f-8a82-0debcf8d5f3a"
     - stage: seal
       stageUuid: "7096cd8b-cd8c-88aa-a85f-399fb0e7be49"
     - stage: uuid
-      stageUuid: "6a416191-0aff-866b-b653-9689ceb61452"
+      stageUuid: "00a1e25f-b6f4-8b7f-8ad2-abf39496d55f"
 quantum:
   superposition:
     - ai
@@ -51,8 +51,8 @@ quantum:
     - "[[entanglement]]"
     - "[[quantum/deploy]]"
     - "[[superposition]]"
-    - "worker"
     - "matter-twin:src/quantum/serverless/index.ts"
+    - "serverless IS the quantum host — Cloudflare Workers bindings are the superposed facet, each invocation collapses to a content-uuid, path+seal+binding entangle symmetrically, and the live tree recovers sealed diamonds for cloudflare ⊕ quantum; erpax deployed on Cloudflare IS the existence proof, and `proveServerlessQuantum()` folds both facets to one deterministic uuid."
   seal:
     sandbox: false
     receipt: false
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "db4dede8-1f7b-896a-bff4-7518845f3093"
-    contentUuid: "ff09db6a-06bf-57aa-a2df-af25eeefe3fb"
+    computationUuid: "e4197d21-1bb9-8f76-80fc-1ea83e4f4c83"
+    contentUuid: "9840283f-9b6a-5bba-a5ba-2184c9f371df"
 version: 2
 ---
 # quantum/serverless — serverless IS the quantum host; erpax IS the proof
@@ -99,4 +99,4 @@ Matter-twin: `src/quantum/serverless/index.ts` (`proveServerlessQuantum` · `isS
 
 @see [[cloudflare]] · [[cloudflare/ai]] · worker · [[superposition]] · [[collapse]] · [[entanglement]] · [[quantum/deploy]] · [[deploy]] · [[diamond]] · [[confirm]]
 
-<sub>content-uuid `ff09db6a-06bf-57aa-a2df-af25eeefe3fb` · account `quantum/serverless` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `9840283f-9b6a-5bba-a5ba-2184c9f371df` · account `quantum/serverless` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

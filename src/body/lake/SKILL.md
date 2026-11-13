@@ -3,13 +3,13 @@ name: lake
 description: "Use when reasoning about lake as a anatomical part of body — vocabulary pivot to @/lake; nested not duplicated."
 atomPath: "body/lake"
 coordinate: "body/lake · 5/round · 3571e19d"
-contentUuid: "94c23044-b147-5333-a2a6-27ab00c9d364"
+contentUuid: "adef9d04-57d2-586c-b20b-de69e181b3e6"
 diamondUuid: "b9363a70-53fd-8f5d-9bb5-5ca8491b36c3"
 uuid: "3571e19d-41c0-8c8a-b071-6b56b1c442b9"
 horo: 5
 typography:
   partition: body
-  bondDegree: 22
+  bondDegree: 16
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

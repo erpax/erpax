@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "access",
-    "uuid": "98b8a5ec-f9b9-89ec-8422-8c66b73a7376",
+    "uuid": "3bb8da3c-474e-8b96-88b6-19bf77635b5e",
     "words": [
       "access"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about access — , and answer the access question; the field-level pair narrows it to particular fields; the role helpers are what they all ask.",
-    "uuid": "2f469d8c-9032-8c2f-b482-245b98ac8ac5",
+    "uuid": "7d2a74c5-094d-8ba5-b697-e407b3a7b820",
     "words": [
       "use",
       "when",

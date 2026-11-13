@@ -3,13 +3,13 @@ name: hook
 description: "Use when reasoning about hook — is the header's half of the same rule the footer keeps: a global that every page renders must tell those pages when it changes, or the edit lands everywhere except where it is…"
 atomPath: "header/hook"
 coordinate: "header/hook · 4/weave · 5941331b"
-contentUuid: "201e1947-1693-5402-9b3a-a672bff7b80a"
+contentUuid: "dda71cb0-0433-5c74-a174-6fef5454e539"
 diamondUuid: "16ae5965-57c8-80c6-81d0-8d428d0a40a8"
 uuid: "5941331b-f6ae-805a-b4eb-1dc62117e187"
 horo: 4
 typography:
   partition: header
-  bondDegree: 12
+  bondDegree: 8
 standards: []
 bindings: []
 signatures:

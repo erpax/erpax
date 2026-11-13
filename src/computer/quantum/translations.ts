@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quantum",
-    "uuid": "9e60a570-f372-8463-a23c-8f835c5bb6d9",
+    "uuid": "db6e73bc-2a93-813d-b537-bcac5aab8de0",
     "words": [
       "quantum"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reaching the quantum machine from the computer atom — the double-wire reciprocal of quantum/computer.",
-    "uuid": "29722351-b5d8-8748-8725-63b5f90234eb",
+    "uuid": "a1d4bc99-5f5a-8b16-a162-611545af5bdf",
     "words": [
       "use",
       "when",

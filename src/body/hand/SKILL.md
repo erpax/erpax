@@ -3,13 +3,13 @@ name: hand
 description: "Use when reasoning about hand as an anatomical part of body — vocabulary pivot to @/hand; nested not duplicated."
 atomPath: "body/hand"
 coordinate: "body/hand · 2/share · 66a75caa"
-contentUuid: "f140c767-0ef7-54b9-8826-df8020b4d020"
+contentUuid: "955c916c-01d6-587c-8e7f-67bec273a546"
 diamondUuid: "fbbd3026-7a70-819f-b4b8-b491cb6d1924"
 uuid: "66a75caa-8fb4-880a-9bcf-79e9f8c01fd6"
 horo: 2
 typography:
   partition: body
-  bondDegree: 21
+  bondDegree: 17
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hexbit — *\\\"Hexbits compute faster than all else\\\"* is two claims wearing one sentence, and they have **opposite** answers.",
-    "uuid": "bf3efdfd-2e28-87f0-b3fe-8e181bc15777",
+    "uuid": "2ad6d5ff-dd79-8ae6-95f4-09185527cec3",
     "words": [
       "use",
       "when",

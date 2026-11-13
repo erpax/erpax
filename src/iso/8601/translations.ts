@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing ISO 8601 — Date and time.",
-    "uuid": "711c3929-9033-887e-9680-7c620566e593",
+    "uuid": "89345c19-4d3a-8c35-99fd-0d40c1840a87",
     "words": [
       "use",
       "when",

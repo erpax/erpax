@@ -2,19 +2,19 @@
 name: typography
 description: "Use when treating typographic richness as tamper-cost — each vitepress feature a page uses is a dimension a forger must reproduce, so fuller (gapless) typography costs more to forge."
 atomPath: "quantum/typography"
-coordinate: "quantum/typography · 1/base · a1794155"
-contentUuid: "596d8546-45a9-57e5-8afd-853ac47f314f"
-diamondUuid: "7f93e6e0-cf1b-8477-aa84-0310b0b76c6b"
-uuid: "a1794155-b9f6-8fe9-9140-1f9e40f4e8bb"
+coordinate: "quantum/typography · 1/base · cdf60ffb"
+contentUuid: "10a61be8-c317-5eb1-9227-5e564b73fa50"
+diamondUuid: "8364e869-8bb1-8977-be00-9e73681b3aaf"
+uuid: "cdf60ffb-a6ed-82cd-9e46-4974711bb9dd"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 140
+  bondDegree: 126
 standards:
   - "tamper-cost = entangled dimensions (the holographic principle)"
 bindings: []
 signatures:
-  computationUuid: "55017105-21dc-8301-bdc1-1be398ce2a33"
+  computationUuid: "851d6422-6117-8bac-ab88-4b2a2e801f1f"
   stages:
     - stage: path
       stageUuid: "30ecee3c-6545-881c-a317-cbfe41a76616"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "d9867677-27be-8f91-ad3a-a85138e4b829"
     - stage: links
-      stageUuid: "155685ca-8c1f-849a-9060-e5e6dbb10934"
+      stageUuid: "b6c74991-c335-84e8-9d57-86a1e08fd63e"
     - stage: horo
-      stageUuid: "4840f3f2-be46-838e-baef-b667a7575689"
+      stageUuid: "36ba8c98-d292-8f78-8d69-3b0dc5034646"
     - stage: seal
       stageUuid: "b1b017df-7a0f-881c-bb85-e3256aa048cd"
     - stage: uuid
-      stageUuid: "8d0915e5-5ab3-8b03-99b2-217081f7648c"
+      stageUuid: "d8ff6e94-5991-82a9-84e5-0f3292a5cc97"
 quantum:
   superposition:
     - analytics
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "55017105-21dc-8301-bdc1-1be398ce2a33"
-    contentUuid: "596d8546-45a9-57e5-8afd-853ac47f314f"
+    computationUuid: "851d6422-6117-8bac-ab88-4b2a2e801f1f"
+    contentUuid: "10a61be8-c317-5eb1-9227-5e564b73fa50"
 version: 2
 ---
 # quantum/typography — typography is holographic
@@ -67,4 +67,4 @@ Matter-twin: `src/quantum/typography/index.ts` (`depth` · `tamperBits` · `isGa
 
 @standard tamper-cost = entangled dimensions (the holographic principle)
 
-<sub>content-uuid `596d8546-45a9-57e5-8afd-853ac47f314f` · account `quantum/typography` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `10a61be8-c317-5eb1-9227-5e564b73fa50` · account `quantum/typography` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

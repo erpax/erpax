@@ -2,14 +2,14 @@
 name: invariant
 description: "Use when enforcing the architecture laws in code — the executable checks (single-word atoms, no prefixes, every file payload⊕vitepress or junk, locality, the ≥2-cross balance, the naming matrix) that are the matter-twin of the gate."
 atomPath: "architecture/invariant"
-coordinate: "architecture/invariant · 5/round · 09f5be9d"
-contentUuid: "68fb176a-99b2-5980-988b-ffd3c6dcf32d"
-diamondUuid: "60334134-4a01-8b2d-8a84-4739e1d860c4"
-uuid: "09f5be9d-784f-8513-ac4b-df0b8f8be4f0"
+coordinate: "architecture/invariant · 5/round · 231f7479"
+contentUuid: "424586d1-a842-5e24-8a50-109585994457"
+diamondUuid: "eff84213-1d22-8d9b-83af-bbef720c4bfc"
+uuid: "231f7479-9772-8171-a28b-9b4bd496f6cc"
 horo: 5
 typography:
   partition: architecture
-  bondDegree: 44
+  bondDegree: 41
 standards:
   - "BCP-47"
   - "COSO-ERM-2017"
@@ -36,7 +36,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "31202553-b958-8d14-aed8-4f4c16dbd476"
+  computationUuid: "8d9ee1e8-2d75-8385-a1b8-d13b3cda85cf"
   stages:
     - stage: path
       stageUuid: "6e3a3b2e-4d9c-8bfd-8918-645115fc9912"
@@ -45,13 +45,13 @@ signatures:
     - stage: boundary
       stageUuid: "3de53cc8-1836-8e74-a8aa-585a23a7e171"
     - stage: links
-      stageUuid: "3badd720-b4ab-8995-83b3-91b6c454e19a"
+      stageUuid: "930303fe-2995-81bc-84a3-335ecfbc2292"
     - stage: horo
-      stageUuid: "85d5c464-2642-8228-93a7-44b8f4a9e2e9"
+      stageUuid: "cfccebde-ab06-89e9-9343-af9fe969ab3b"
     - stage: seal
       stageUuid: "b36e6e32-67e1-8087-9681-3e68d6e0cf7e"
     - stage: uuid
-      stageUuid: "b562d87c-989f-8a0b-b7bd-aa2179fda95d"
+      stageUuid: "e3696dc7-f50e-8b7e-9e1e-b86ab11c2836"
 version: 2
 ---
 # invariant — the architecture, enforced

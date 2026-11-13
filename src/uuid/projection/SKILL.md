@@ -2,14 +2,14 @@
 name: projection
 description: "Use when content, search, locale, version, or CSS colour must agree about what a record IS — they all DRY-derive from ONE content projection through the content-uuid. The uuid singularity realised: project(record) returns identity (uuid), searchable text (multi-search), and a deterministic colour (CSS) from the same bytes; per-locale content gives the per-locale uuid, and a version is the uuid in time."
 atomPath: "uuid/projection"
-coordinate: "uuid/projection · 5/round · def5f0f3"
-contentUuid: "6241199e-66b2-564b-a329-ab2a6a434b4a"
-diamondUuid: "b834b187-e40e-841c-86a9-7e1099684da9"
-uuid: "def5f0f3-1dfd-8800-90d9-259442b279d8"
-horo: 5
+coordinate: "uuid/projection · 1/base · bb1fe760"
+contentUuid: "fcd84e4e-a504-5517-ae55-e19db16999b5"
+diamondUuid: "aa1cc473-3e30-81d9-bb44-8d4f3494558d"
+uuid: "bb1fe760-adc3-8683-954a-89eedbd39638"
+horo: 1
 typography:
   partition: uuid
-  bondDegree: 51
+  bondDegree: 45
 standards:
   - CSS Color 4 hsl() (the colour facet)
   - "RFC 9562 §5.8 content-addressed uuidv8 (the identity the facets hang on)"
@@ -17,7 +17,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "784ea699-dcc9-8932-8d8c-94ff9a9fb81c"
+  computationUuid: "ae91e69e-793b-8454-93d1-2d9f5153563c"
   stages:
     - stage: path
       stageUuid: "ab1a67b6-5f8b-8120-b6d8-f2186cc21de3"
@@ -26,13 +26,13 @@ signatures:
     - stage: boundary
       stageUuid: "24a06026-a34c-8ffa-afc1-a55e5bf72bc7"
     - stage: links
-      stageUuid: "0a9b733b-5d09-8f39-ac71-bc3eda121248"
+      stageUuid: "b0eb36e6-cdc2-81e9-9be0-a8a2c276a4f7"
     - stage: horo
-      stageUuid: "c8eb1361-baba-842b-9bea-7ea7bc2b76ae"
+      stageUuid: "0789c4e2-9268-8da8-9fd0-e98b9991a128"
     - stage: seal
       stageUuid: "24b0f730-6d39-8814-a4a3-99c1e3954ca0"
     - stage: uuid
-      stageUuid: "796122a7-91e7-8a7f-a9b0-36a0e73423fe"
+      stageUuid: "3313613b-2a0b-8e69-8c95-3e99f5b0180e"
 version: 2
 ---
 # projection — the uuid singularity (content → uuid → search · locale · version · css)

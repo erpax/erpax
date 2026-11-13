@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about scope — Every slow cycle in the session that produced this atom had one shape: **the whole corpus measured to answer a question about a changeset.**",
-    "uuid": "96114d6f-e3b8-8566-bef2-e67f5fca68a0",
+    "uuid": "f93aa839-6954-80b4-9da2-55494e0f99a2",
     "words": [
       "use",
       "when",

@@ -3,13 +3,13 @@ name: reconciliation
 description: "Use when closing a multi-currency period — verify each currency's closed revenues equal its closed expenses within tolerance, revalue non-reporting currencies at the period-end rate for unrealized gain/loss, and fold it all into one reporting currency with a chain-linked audit leaf."
 atomPath: "currency/reconciliation"
 coordinate: "currency/reconciliation · 5/round · 0a8d3feb"
-contentUuid: "1099ea13-7974-5b89-95e0-16ca1e25dc17"
+contentUuid: "d0f31d97-e710-5114-8cf8-1d918d9f0222"
 diamondUuid: "fe890564-b94d-80c2-8fa8-bae86163e418"
 uuid: "0a8d3feb-adc8-8859-bcd5-2602f7004252"
 horo: 5
 typography:
   partition: currency
-  bondDegree: 35
+  bondDegree: 30
 standards:
   - "IAS 21 §38 presentation-currency translation · IFRS 9 FX gains/losses · ISO 4217"
   - "IFRS-21:2023 (translation of foreign operations)"

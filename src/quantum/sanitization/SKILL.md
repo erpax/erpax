@@ -2,18 +2,18 @@
 name: sanitization
 description: "Use when cleaning data at a boundary — input, output, or disposal — in the content-addressed model where nothing mutates in place; accept untrusted input but collapse it through the gate, redact by projecting a sanitized view (no spoon for the unauthorized), and purge by crypto-shredding to the void."
 atomPath: "quantum/sanitization"
-coordinate: "quantum/sanitization · 2/share · 793d3abb"
-contentUuid: "72421142-1f39-5763-916e-a4059582b3a2"
-diamondUuid: "16f8581b-5ed6-82bc-ba23-bf40de87f5bb"
-uuid: "793d3abb-b73c-8d42-907a-1c367092edc9"
-horo: 2
+coordinate: "quantum/sanitization · 5/round · e7d32d7b"
+contentUuid: "bd82af27-93bc-5cc8-8376-67daf4d57ec4"
+diamondUuid: "cd477099-330a-847c-92a0-cf6e44d9a6f3"
+uuid: "e7d32d7b-27e7-8599-9b23-b5b0c30bd4e2"
+horo: 5
 typography:
   partition: quantum
-  bondDegree: 36
+  bondDegree: 30
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fdb4eaec-631e-83ab-bef1-615d7ae6edd6"
+  computationUuid: "1a3eb756-697b-89e9-be5e-de5f4850c1b1"
   stages:
     - stage: path
       stageUuid: "cd37ecbb-4ee1-817f-a7a8-e4a5ada8f20b"
@@ -22,34 +22,34 @@ signatures:
     - stage: boundary
       stageUuid: "91809071-9ef3-8a29-8e92-88ebae94527c"
     - stage: links
-      stageUuid: "5c5e0f6c-253a-8a58-885a-88887ccfadb0"
+      stageUuid: "541886ef-8340-8301-8276-a9e04b942092"
     - stage: horo
-      stageUuid: "b1300d3f-4372-855f-8ce8-ca5488cc2f52"
+      stageUuid: "b4f061b8-626c-8b2e-83fa-77ba12c3d46c"
     - stage: seal
       stageUuid: "419aa895-a0c0-8bee-8e79-56077b93618a"
     - stage: uuid
-      stageUuid: "9ca8ab7b-e1f3-85bf-9bec-46a1791ee96c"
+      stageUuid: "57573cc0-7997-8777-acaf-404294fe650e"
 quantum:
   superposition:
     - access
     - collapse
-    - finality
     - law
     - merge
     - proof
-    - protection
     - quantum
     - receipt
+    - sandbox
+    - shred
     - superposition
   collapse:
     - "Use when cleaning data at a boundary — input, output, or disposal — in the content-addressed model where nothing mutates in place; accept untrusted input but collapse it through the gate, redact by projecting a sanitized view (no spoon for the unauthorized), and purge by crypto-shredding to the void."
     - "[[access]]"
-    - "finality"
     - "[[merge]]"
     - "[[receipt]]"
     - "[[sandbox]]"
     - "[[shred]]"
-    - "data"
+    - data
+    - finality
     - "sanitization never mutates in place — it collapses through the gate. Dirty input cannot act until it resolves clean; the unauthorized reader gets a redacted projection while the content-addressed original stays whole; and the only true erasure is shredding the key into the void. Because every scrub emits a receipt, removing data is itself provable — sanitization is authorized and audited, never a silent edit (it is not tamper)."
     - void
   seal:
@@ -59,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "fdb4eaec-631e-83ab-bef1-615d7ae6edd6"
-    contentUuid: "72421142-1f39-5763-916e-a4059582b3a2"
+    computationUuid: "1a3eb756-697b-89e9-be5e-de5f4850c1b1"
+    contentUuid: "bd82af27-93bc-5cc8-8376-67daf4d57ec4"
 version: 2
 ---
 # quantum/sanitization — clean at the boundary, three ways
@@ -77,4 +77,4 @@ Sanitization is **not [[tamper]]** — it is authorized, content-addressed, and 
 
 **Law — [[law]]: sanitization never mutates in place — it collapses through the gate. Dirty input cannot act until it resolves clean; the unauthorized reader gets a redacted projection while the content-addressed original stays whole; and the only true erasure is shredding the key into the void. Because every scrub emits a receipt, removing data is itself provable — sanitization is authorized and audited, never a silent edit (it is not tamper).**
 
-<sub>content-uuid `72421142-1f39-5763-916e-a4059582b3a2` · account `quantum/sanitization` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `bd82af27-93bc-5cc8-8376-67daf4d57ec4` · account `quantum/sanitization` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

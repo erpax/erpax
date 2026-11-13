@@ -3,13 +3,13 @@ name: properties
 description: "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register."
 atomPath: "properties/investment/properties"
 coordinate: "properties/investment/properties · 5/round · a852e121"
-contentUuid: "cdb5f904-e0f3-5213-ba31-a54e2d34f763"
+contentUuid: "b56e50b9-1ab9-500e-82e3-57422a555a67"
 diamondUuid: "32367676-abe6-89ca-bf0b-eccde82f16b6"
 uuid: "a852e121-252e-8649-a118-31a10847b0f9"
 horo: 5
 typography:
   partition: properties
-  bondDegree: 20
+  bondDegree: 19
 standards:
   - "IAS-40"
   - "IFRS IAS-40 §30 measurement-model-election"

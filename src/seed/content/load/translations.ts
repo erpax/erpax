@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the corpus documents should live in Payload instead of in an agent's context — reads each atom's SKILL document, derives nested page rows, and writes them through the REST SDK against any reachable deployment, so a reader later finds one page by slug and selects its markdown.",
-    "uuid": "41d722e6-f578-81dc-94f9-2cd42a547289",
+    "uuid": "86fdb093-4f4a-857e-b2b8-6c154cfbf0bd",
     "words": [
       "use",
       "when",

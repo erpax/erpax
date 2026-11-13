@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "field",
-    "uuid": "0893b414-e3bd-8780-b6c4-92f0c92e83a0",
+    "uuid": "dce1e551-dcc6-8e6c-aa1b-3903d34ead9f",
     "words": [
       "field"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a Payload collection needs a shared accounting field — currency, unit-of-measure, measured quantity, status, reference, GL account, country/legal-entity/NACE, audit/timestamp/notes — built from one factory instead of an inlined field literal.",
-    "uuid": "04de9cfe-0223-8439-9abd-d5633ab178b5",
+    "uuid": "3bb99a1d-0fe1-8082-abd2-80eea8719539",
     "words": [
       "use",
       "when",

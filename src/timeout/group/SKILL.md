@@ -3,18 +3,18 @@ name: group
 description: "Use when a laddered command must end as a whole — spawnSync's timeout kills only the shell it started, so the command under it is reparented to init and keeps running. spawnGroupSync runs the command as the leader of its own process group under a tiny supervisor that kills the whole group on timeout or on Ctrl-C, then dies by the same signal, so every verdict that reads r.signal is unchanged."
 atomPath: "timeout/group"
 coordinate: "timeout/group · 1/base · 32672345"
-contentUuid: "173aa872-0833-53b3-b313-c82eb438bca3"
-diamondUuid: "6a515569-1307-878b-80e8-3dc4b7c1fd58"
+contentUuid: "8bf31c1c-43f4-5b7c-b744-e1cf27150238"
+diamondUuid: "2226497b-7fc3-8842-bccd-3200fcef2659"
 uuid: "32672345-3cf6-8064-a365-d0b5a849bc47"
 horo: 1
 typography:
   partition: timeout
-  bondDegree: 37
+  bondDegree: 7
 standards:
   - "ISO/IEC 25010:2023 §5.6 maintainability — a stopped operation leaves no work running"
 bindings: []
 signatures:
-  computationUuid: "aa2686fb-7c28-868d-87ef-c83c6a862acd"
+  computationUuid: "b455ee75-3c63-888c-9f4c-737f7b7c5165"
   stages:
     - stage: path
       stageUuid: "eb15aae6-ec66-823f-9b3a-39930ef5e90e"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "17c018e4-580f-8a6b-928f-2a9f22aafbef"
     - stage: horo
-      stageUuid: "8e01f30b-f542-8011-b8c8-ddddb847e458"
+      stageUuid: "5a3ce3c0-9e38-8bf9-8bb6-13e5f8c3afb2"
     - stage: seal
       stageUuid: "89cfae4b-bf60-80e4-8e1e-60d9b78d1909"
     - stage: uuid
-      stageUuid: "c4d762f3-8bfb-864c-a397-7fb14892aa82"
+      stageUuid: "8aee2c99-f58a-8bff-91d1-3ccd2255b4e1"
 version: 2
 ---
 # timeout/group — a timeout ends the command, not only the shell around it

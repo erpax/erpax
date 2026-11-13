@@ -2,21 +2,21 @@
 name: competition
 description: "Use when reasoning about how erpax skills EVOLVE — agents compete in commits, the fastest CORRECT solution (gate-verified) wins the lead, losers re-approach to beat it, optimising to infinity, at every scale. The selective-pressure dual of contribution; and because each competitor independently re-derives and content-addresses the canonical answer, competition AMPLIFIES tamper cost — performance pressure turned into security."
 atomPath: competition
-coordinate: "competition · 1/base · 4e0ac28a"
-contentUuid: "8d5b6179-66ce-5b6b-8aa9-40f8cfd33004"
-diamondUuid: "ade773c6-0c21-84e2-b986-b82380adec71"
-uuid: "4e0ac28a-cd49-8087-97ea-59d4ed99b7f6"
-horo: 1
+coordinate: "competition · 4/weave · 76826b1e"
+contentUuid: "e98f934f-e410-5693-ab7a-a5806a61118e"
+diamondUuid: "ab9bbb06-266e-897d-995c-3d4121341de9"
+uuid: "76826b1e-5211-8b1f-8c33-849dba0996b3"
+horo: 4
 typography:
   partition: competition
-  bondDegree: 45
+  bondDegree: 30
 standards:
   - "ISO/IEC 25010:2023 §5.2 performance-efficiency (fastest-correct selection)"
   - "ISO/IEC 25010:2023 §5.2 performance-efficiency (fastest-correct selection)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "60e4e02e-12f7-84e9-9eb2-847265a52d36"
+  computationUuid: "a066c097-65ad-8162-823e-f89ef044cc08"
   stages:
     - stage: path
       stageUuid: "fa6c9ca3-e81f-8762-85d6-675365bb307e"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "818f9784-0e06-8895-bd69-15c0148b0e04"
     - stage: links
-      stageUuid: "e27e41bb-1005-8c37-bc27-dea38ef3aa46"
+      stageUuid: "d80c1b7c-3354-81a4-bbf0-e8b6c1e2f99d"
     - stage: horo
-      stageUuid: "d3f95a89-e2e1-8129-940c-5841f2af51f2"
+      stageUuid: "85c39320-b295-83f6-9a7d-09079e3bdfcb"
     - stage: seal
       stageUuid: "21331975-8dfb-8b5d-afaf-048593c7812b"
     - stage: uuid
-      stageUuid: "c8911dbf-6928-8107-9e30-81cfaae247de"
+      stageUuid: "cb46e1a2-6ff2-8980-be78-fcbb076aeee1"
 version: 2
 ---
 # competition — skills evolve by competing (fastest correct wins, optimise to ∞)

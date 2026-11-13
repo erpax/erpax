@@ -2,19 +2,19 @@
 name: graph
 description: "Use when modeling a directed graph of nodes and edges — neighbors and breadth-first reachability over an edge list; the shape of the corpus itself, atoms as nodes and links as edges."
 atomPath: graph
-coordinate: "graph · 5/round · ca6852f6"
-contentUuid: "c723f442-da46-5fa6-9518-5a2f6a1018a8"
-diamondUuid: "15d54a41-a82f-80d2-bb45-4c956f287b68"
-uuid: "ca6852f6-9c59-89ed-8957-018604de4c9b"
-horo: 5
+coordinate: "graph · 4/weave · 8b21ad53"
+contentUuid: "85f9753a-8ace-5d1c-853f-d7b2ca48de79"
+diamondUuid: "1eaeea6e-9032-8a97-8d3e-f712429703d9"
+uuid: "8b21ad53-c9b6-87e4-bc21-1811e83791b4"
+horo: 4
 typography:
   partition: graph
-  bondDegree: 41
+  bondDegree: 35
 standards:
   - "directed graph (nodes + edges), breadth-first reachability"
 bindings: []
 signatures:
-  computationUuid: "8f6086d1-172d-89b9-a59d-911ca4c0ef0e"
+  computationUuid: "39ca8259-aba2-85f0-beef-6384953eefb5"
   stages:
     - stage: path
       stageUuid: "ab1058b9-2637-8838-af3b-b7feacc34c17"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "04aab8d6-b23b-86d9-99ef-08165746d431"
     - stage: links
-      stageUuid: "27a611f2-bd84-8c6a-9c00-ed373492741d"
+      stageUuid: "537aea56-c48c-807a-b5eb-235b1a8e4c87"
     - stage: horo
-      stageUuid: "66ec5565-b3cb-8973-ba0b-42f1bb4bffe7"
+      stageUuid: "4aa61ef7-c30f-88e1-8048-3e02af9b40e5"
     - stage: seal
       stageUuid: "d150bff1-de31-8132-9a63-e6f530a0bd27"
     - stage: uuid
-      stageUuid: "ce2ab8e7-3a55-8832-800a-8fda95040f3f"
+      stageUuid: "1ce5e55c-73f8-8532-a39f-3137e2f2f487"
 version: 2
 ---
 # graph — nodes and edges

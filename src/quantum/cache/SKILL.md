@@ -3,18 +3,18 @@ name: cache
 description: "Use when caching by content — the content is its own key (its content-uuid), so the same content is always a hit and a changed input is auto-invalidated; dedup by design with no stale-cache bug."
 atomPath: "quantum/cache"
 coordinate: "quantum/cache · 7/descent · ae52a2ff"
-contentUuid: "23b4bc8f-334d-5886-be14-9ef3b60c6cbc"
-diamondUuid: "c2125868-86f2-880d-9cbd-e9795e45ceed"
+contentUuid: "1958b34f-5a78-5ea0-8d13-f68088b5ff1d"
+diamondUuid: "91bba9e6-707d-840d-9268-2b02092ba176"
 uuid: "ae52a2ff-dee3-8fe8-b217-869e63cab702"
 horo: 7
 typography:
   partition: quantum
-  bondDegree: 57
+  bondDegree: 45
 standards:
   - "RFC 9562 §5.8 content-uuid (the cache key)"
 bindings: []
 signatures:
-  computationUuid: "10703bbe-0485-8e76-938b-22b6b1a1b5cd"
+  computationUuid: "8faea4bf-d35a-8732-8948-200e5f178d9a"
   stages:
     - stage: path
       stageUuid: "50d48c49-a49d-8bc0-86b4-617a429e2d87"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "93df9750-1f4c-8c07-81a5-1d8450858663"
     - stage: horo
-      stageUuid: "7c655355-49be-85c1-9a08-3bc8a31ea8cf"
+      stageUuid: "898df1a7-af6c-8fe4-bf9d-59dd96ccb1c4"
     - stage: seal
       stageUuid: "abccbfd8-710b-8146-8454-7275d7eb382c"
     - stage: uuid
-      stageUuid: "e73ec8f9-2350-8410-a4a7-d6e812f8304c"
+      stageUuid: "ca22af31-d0ba-82d8-83ee-0fb0bdc84991"
 quantum:
   superposition:
     - artery
@@ -38,8 +38,8 @@ quantum:
     - diamond
     - fingerprint
     - gaps
-    - holographic
     - law
+    - pwa
     - superposition
   collapse:
     - "RFC 9562 §5.8 content-uuid (the cache key)"
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "10703bbe-0485-8e76-938b-22b6b1a1b5cd"
-    contentUuid: "23b4bc8f-334d-5886-be14-9ef3b60c6cbc"
+    computationUuid: "8faea4bf-d35a-8732-8948-200e5f178d9a"
+    contentUuid: "1958b34f-5a78-5ea0-8d13-f68088b5ff1d"
 version: 2
 ---
 # quantum/cache — the content-addressed cache
@@ -67,4 +67,4 @@ Matter-twin: `src/quantum/cache/index.ts` (`key` · `sameKey`). Composes [[cache
 
 @standard RFC 9562 §5.8 content-uuid (the cache key)
 
-<sub>content-uuid `23b4bc8f-334d-5886-be14-9ef3b60c6cbc` · account `quantum/cache` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `1958b34f-5a78-5ea0-8d13-f68088b5ff1d` · account `quantum/cache` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

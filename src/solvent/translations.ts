@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about solvent — Zenodo record **10.5281/zenodo.22934883** analyses a \\\"Dry Cleaning Multimodal Algebra Framework\\\". Its own §3 names the limitation and its §4 names the cure:",
-    "uuid": "105f488a-9c25-8f16-ab37-ba1a1b36e6c5",
+    "uuid": "5ca49b27-8ced-8a50-abc7-5e5a255d4b6f",
     "words": [
       "use",
       "when",

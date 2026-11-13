@@ -2,14 +2,14 @@
 name: entropy
 description: "Use when reasoning about disorder as the matrix-reciprocity slack erpax's whole ledger balances — entropy() = 1 − the reciprocal-edge fraction of the uuid-matrix, an audit/aura signal, NOT an input to crackVerdict. It is a DISTINCT measure from coverage (the [0,1] fraction that prices tamper-cost via coverageCostLog2); reciprocity=1 does NOT imply coverage=1, so zero entropy does NOT by itself yield infinite cost (the live tree is the counter-example — entropy 0, coverage under 1, cost finite). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor."
 atomPath: entropy
-coordinate: "entropy · 5/round · ec539618"
-contentUuid: "a28afc10-7248-5e54-9349-104f09db6dd9"
-diamondUuid: "56ad19b3-8caf-8f83-8768-4bb57746d984"
-uuid: "ec539618-24d3-80f5-baa7-9af0324d94a8"
-horo: 5
+coordinate: "entropy · 4/weave · eca55a35"
+contentUuid: "eceba165-a91e-5708-987f-852271378aff"
+diamondUuid: "7aee570c-d55e-8c13-b79e-aef09f33d7a4"
+uuid: "eca55a35-909f-8682-8448-c320664884b6"
+horo: 4
 typography:
   partition: entropy
-  bondDegree: 266
+  bondDegree: 229
 standards:
   - "CoE-108+"
   - "NIST-SP-800-108"
@@ -17,7 +17,7 @@ standards:
   - "NIST-SP-800-63"
 bindings: []
 signatures:
-  computationUuid: "6f6ec069-ccd8-8226-9ee9-223772da7b22"
+  computationUuid: "a30c643c-c3ff-8674-9a9f-7d1f896acb77"
   stages:
     - stage: path
       stageUuid: "0efe9321-e9d9-88cf-b054-2bbe0937a2f6"
@@ -26,13 +26,13 @@ signatures:
     - stage: boundary
       stageUuid: "bae8959f-5c9e-8d5a-b647-7f90645f048d"
     - stage: links
-      stageUuid: "fb6d2da1-c8c3-8be3-8398-9ff6c62888bc"
+      stageUuid: "2e5a99bd-afcb-8f6b-90ed-575f64f14975"
     - stage: horo
-      stageUuid: "e60a6ef0-260d-8c6f-baf0-59effd7409d8"
+      stageUuid: "ef1ba8a5-3c91-870e-b5f9-18cd2e7c19f1"
     - stage: seal
       stageUuid: "e4713d70-378f-8e73-b358-b4d0581e4959"
     - stage: uuid
-      stageUuid: "29388059-ca32-8f30-bfe7-3de076b00d09"
+      stageUuid: "f07fa834-6c62-8be4-b54b-1566dd3df760"
 version: 2
 ---
 # entropy — the matrix-reciprocity slack the whole ledger balances

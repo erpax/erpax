@@ -3,13 +3,13 @@ name: runs
 description: "Use when recording actual production at one operation × work-center — quantities ordered/produced/scrapped/backordered, variant attribute axes, shift, start/completion timestamps, and ISA-95 KPIs (yield, scrap). The per-routing-step execution record within a work order."
 atomPath: "items/bills/of/materials/work/orders/operation/runs"
 coordinate: "items/bills/of/materials/work/orders/operation/runs · 4/weave · 2f5d03f0"
-contentUuid: "dba1a172-81c7-5888-9262-32191e4461ab"
+contentUuid: "b55cc8c0-1528-53b3-a969-070bbc261c99"
 diamondUuid: "faa3cd6f-eef4-8a63-844f-b642ed803d34"
 uuid: "2f5d03f0-7b71-8b29-a0f9-f331e2fdcd08"
 horo: 4
 typography:
   partition: items
-  bondDegree: 42
+  bondDegree: 38
 standards:
   - "EU-537/2014"
   - "EU-910/2014"

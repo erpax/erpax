@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reading the one canonical content-addressed index of every atom's ported SKILL.md — the mass the collector emits and the coverage guard verifies.",
-    "uuid": "6ef33d4c-ba19-8cd9-940a-7f63f1fe813c",
+    "uuid": "0b692ef7-d97a-809b-8a68-bf23c793649d",
     "words": [
       "use",
       "when",

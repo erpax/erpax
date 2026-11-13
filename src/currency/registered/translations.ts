@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about registered — Every currency code the corpus writes must be a **registered ISO 4217 alpha-3**: the codes in , and every or property whose value is a string literal.",
-    "uuid": "a3aa2d9e-4093-8334-b209-256c5f0433b8",
+    "uuid": "2905f7f0-8383-8459-8266-5c8e59d6c975",
     "words": [
       "use",
       "when",
