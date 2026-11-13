@@ -13,5 +13,11 @@
         ]
       }
     ]
-  }
+  },
+  "claudeMdExcludes": [
+    "**/src/rules/**/README.md",
+    "**/src/rules/**/LLM.md",
+    "**/.claude/rules/**/README.md",
+    "**/.claude/rules/**/LLM.md"
+  ]
 }
