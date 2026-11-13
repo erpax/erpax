@@ -2,14 +2,14 @@
 name: cmspage
 description: "Use when creating or managing CMS pages — hero blocks, content blocks, forms, SEO meta — with per-tenant unique slugs, versioned drafts, breadcrumb hierarchy, and i18n routing. The Payload CMS page collection."
 atomPath: cmspage
-coordinate: "cmspage · 4/weave · 55dfc9d4"
-contentUuid: "3c11205b-157c-5027-8d37-7ae58e43a209"
-diamondUuid: "04427a56-f5d5-82bc-af91-b784f569b955"
-uuid: "55dfc9d4-0bbb-8365-86a2-d57e732e6722"
+coordinate: "cmspage · 4/weave · 886751f8"
+contentUuid: "9017bb5c-941f-55e7-9ad3-defd20d41408"
+diamondUuid: "da7f3e26-9336-83d7-910e-5ce0c99bca42"
+uuid: "886751f8-709c-8a55-b856-a9ca86f356e3"
 horo: 4
 typography:
   partition: cmspage
-  bondDegree: 18
+  bondDegree: 12
 standards:
   - "3986 uri slug-to-url"
   - "BCP-47"
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "6f9fc975-21b9-8ab3-8b90-61b9f1e7b549"
+  computationUuid: "b95cf2b5-b254-8d18-ae16-cff3db111edf"
   stages:
     - stage: path
       stageUuid: "92bc216a-c0cb-8198-8fd5-bad8486018cd"
@@ -35,13 +35,13 @@ signatures:
     - stage: boundary
       stageUuid: "e993cc6f-e09d-8d1e-9125-f98bba67df47"
     - stage: links
-      stageUuid: "7de51d3e-208f-8086-b014-43a61b50fbd5"
+      stageUuid: "ea1cc0da-3cd5-8d64-83a9-cf6f79b70d37"
     - stage: horo
-      stageUuid: "39fb7275-9ca0-8dee-96aa-13ea38605e4b"
+      stageUuid: "1a051f08-da89-8271-bc63-7af0b6f5a5b3"
     - stage: seal
       stageUuid: "513d1eda-4757-8047-8dc6-8cb82e2851f4"
     - stage: uuid
-      stageUuid: "b8531d7e-ce17-8206-9beb-292596756843"
+      stageUuid: "f540457f-50af-8b83-9728-88353e341320"
 version: 2
 ---
 # pages
@@ -59,7 +59,7 @@ This collection composes:
 - [[access]] — for role-based access control (superAdminOrTenantAdmin, authenticatedOrPublished)
 - [[versions]] — for versioned drafts and document lifecycle
 - [[identity]] — for slug uniqueness within tenant scope
-- [[queries]] — for query presets and default population
+- queries — for query presets and default population
 
 ## Standards
 

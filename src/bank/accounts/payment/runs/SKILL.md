@@ -3,13 +3,13 @@ name: runs
 description: "Use when assembling, authorising, exporting, or reconciling an ISO 20022 batch payment — pain.001 AP credit-transfer or pain.008 AR direct-debit; draft → pending-review → approved → exported → submitted → settled lifecycle; SOX §404 preparer-authoriser segregation of duties. The treasury batch-payment initiation collection."
 atomPath: "bank/accounts/payment/runs"
 coordinate: "bank/accounts/payment/runs · 4/weave · d0e83dd4"
-contentUuid: "0cfe8a71-b696-506a-abc7-f1295639831b"
+contentUuid: "e819b509-b08a-59eb-ba81-9f04f28372b6"
 diamondUuid: "53c2c166-5138-8ed9-a978-ef3fefbeb215"
 uuid: "d0e83dd4-7091-8239-82a1-9f9057c2ffcd"
 horo: 4
 typography:
   partition: bank
-  bondDegree: 42
+  bondDegree: 38
 standards:
   - "EU-Intrastat-Reg-2019/2152"
   - "EU-Taxonomy-2020/852"

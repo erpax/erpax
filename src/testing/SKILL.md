@@ -2,14 +2,14 @@
 name: testing
 description: "Use when writing or debugging erpax's own tests — discovering the live config to assert against, seeding isolated fixtures by level (unit/integration/e2e), transactional cleanup, parallel runners, or snapshot/restore — the society's self-test infrastructure that validates the running app against its own generated schema."
 atomPath: testing
-coordinate: "testing · 4/weave · ff6f6690"
-contentUuid: "7ee262a4-7fc2-5f74-a172-b944b5c1b407"
-diamondUuid: "c3a58c02-2bff-875c-935e-a03f2dcecbac"
-uuid: "ff6f6690-a03c-8d13-8d46-7ebad701a805"
+coordinate: "testing · 4/weave · ae2005b2"
+contentUuid: "0b47a1f5-035a-51ef-91e8-b90d757a29ce"
+diamondUuid: "fa2e7a3f-71a0-84ba-9e04-23a032284e45"
+uuid: "ae2005b2-b658-8e9c-8ed4-b27797d3e802"
 horo: 4
 typography:
   partition: testing
-  bondDegree: 78
+  bondDegree: 69
 standards:
   - "8259 json"
   - "ISO/IEC-29119:2022 software-testing"
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a7b373ee-2de1-83f1-a635-df8d23deca2d"
+  computationUuid: "1cbe7e15-20ee-8874-ae3e-69d03dec6aef"
   stages:
     - stage: path
       stageUuid: "b045970f-6ba3-8082-a1a6-e3d6082d4602"
@@ -34,27 +34,27 @@ signatures:
     - stage: boundary
       stageUuid: "35f81b66-95af-830d-8238-d7ec27d175c3"
     - stage: links
-      stageUuid: "9162c46f-8982-844d-bcc7-fc372f96506c"
+      stageUuid: "8a6bc912-ecc1-862f-a121-d89d4a735546"
     - stage: horo
-      stageUuid: "51830563-1001-82a9-82e0-ac0ac61a4ea1"
+      stageUuid: "6ff24966-9a9e-8e5f-9717-27e061334bcc"
     - stage: seal
       stageUuid: "8986dcda-83ae-8d42-84c4-eddba02a65bd"
     - stage: uuid
-      stageUuid: "2535f973-2790-8b19-9fd2-34d7bff9367c"
+      stageUuid: "14eff624-4a0c-8eea-b693-20f7f5502d64"
 version: 2
 ---
 # testing — the society proving itself against its own schema
 
 Testing is how erpax **verifies itself**: it reads the live [[config]] at runtime (`PayloadConfigDiscovery` — every collection, field, relationship, enum, access rule) and asserts the running app against the schema it *generated from itself* ([[schema]] · [[akashic]]). No hand-kept fixture list to drift: the test introspects the same source of truth the app boots from, so what the test knows IS what the app is. This is [[proof]] turned inward — the trustless O(N) audit, run against your own store before anyone else runs it against you.
 
-It composes three organs. **Discovery** introspects + coerces/validates field values against the discovered types ([[config]]). **The seed factory** mints fixtures at three levels — unit (<500ms), integration (realistic business data), e2e (full cycles) — each validated against `SEED_VALIDATION_REGISTRY`, a per-[[collections]] required-field contract that needs no live Payload (a `MockPayload` yields the same `<Label>: <field> is required` error contract integration tests assert), so the seed law holds at every scale ([[fractal]] · [[seed]]). **Setup** wraps a seed in an `IsolatedTestEnvironment` / `ParallelTestRunner` with `SeedSnapshot` restore + transactional cleanup — same isolation form whether one test or many run in parallel.
+It composes three organs. **Discovery** introspects + coerces/validates field values against the discovered types ([[config]]). **The seed factory** mints fixtures at three levels — unit (<500ms), integration (realistic business data), e2e (full cycles) — each validated against `SEED_VALIDATION_REGISTRY`, a per-[[collections]] required-field contract that needs no live Payload (a `MockPayload` yields the same `<Label>: <field> is required` error contract integration tests assert), so the seed law holds at every scale (fractal · [[seed]]). **Setup** wraps a seed in an `IsolatedTestEnvironment` / `ParallelTestRunner` with `SeedSnapshot` restore + transactional cleanup — same isolation form whether one test or many run in parallel.
 
 Seeds are identified by content — same input ⇒ same fixture, so two runners that seed the same data converge instead of colliding ([[identity]] · [[merge]]). One workflow definition generates many materializations (e2e test, help tip, evidence) from one source — see [[spec]].
 
 Matter-twin: `src/testing/config/discovery` (runtime introspection + coercion/validation), `src/testing/test/seed/factory` (3-level seeds + `SEED_VALIDATION_REGISTRY` + transactional cleanup), `src/testing/test/setup` (`IsolatedTestEnvironment` · `ParallelTestRunner` · `SeedSnapshot`).
-Composes: [[config]] · [[schema]] · [[collections]] · [[seed]] · [[spec]] · [[proof]] · [[akashic]] · [[identity]] · [[merge]] · [[fractal]] · [[society]].
+Composes: [[config]] · [[schema]] · [[collections]] · [[seed]] · [[spec]] · [[proof]] · [[akashic]] · [[identity]] · [[merge]] · fractal · [[society]].
 
-**Law — [[gate]]** Testing enforces one consistency-invariant: the instant any field type, access rule, enum, or [[schema]]-to-[[config]] alignment breaks, the test fails. Rather than asserting the happy path (what *should* work), each test is a [[consistency]] tripwire — config-driven, so new fields auto-add to `SEED_VALIDATION_REGISTRY` without hand-kept boilerplate ([[collapse]]). The invariant runs at every [[seed]] level ([[fractal]]), ensuring the moment [[akashic]] diverges from runtime, the gate snaps shut.
+**Law — [[gate]]** Testing enforces one consistency-invariant: the instant any field type, access rule, enum, or [[schema]]-to-[[config]] alignment breaks, the test fails. Rather than asserting the happy path (what *should* work), each test is a [[consistency]] tripwire — config-driven, so new fields auto-add to `SEED_VALIDATION_REGISTRY` without hand-kept boilerplate ([[collapse]]). The invariant runs at every [[seed]] level (fractal), ensuring the moment [[akashic]] diverges from runtime, the gate snaps shut.
 
 ## Warn wide, fail narrow
 

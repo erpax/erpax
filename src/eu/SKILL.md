@@ -2,14 +2,14 @@
 name: eu
 description: "Use when reasoning about eu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: eu
-coordinate: "eu · 8/crest · e06ab48a"
-contentUuid: "f6dcb0d9-bfae-5201-a55b-7421ce0cbf96"
-diamondUuid: "0523a201-be68-8be4-ba14-82bc31bc1021"
-uuid: "e06ab48a-a94b-87b2-8f30-24e8b92644ee"
-horo: 8
+coordinate: "eu · 7/descent · b863b2f4"
+contentUuid: "7e84212f-80d8-5b0a-bbbe-70a7496b6d58"
+diamondUuid: "5c758c9f-7e89-8821-b96d-c44b9af19d2f"
+uuid: "b863b2f4-20d2-8311-a21f-cafeabc29748"
+horo: 7
 typography:
   partition: eu
-  bondDegree: 33
+  bondDegree: 26
 standards:
   - "EU-AI-Act"
   - "EU-CSDDD-2024/1760"
@@ -25,7 +25,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2f54f02b-0fe0-8cfd-9fe9-a5e17f14bb5a"
+  computationUuid: "2b8526e9-1ab7-86a3-8600-4c5d13ed50df"
   stages:
     - stage: path
       stageUuid: "6f95362c-8d2d-88c2-9f43-4cd282e9d92b"
@@ -34,20 +34,20 @@ signatures:
     - stage: boundary
       stageUuid: "373353f1-8db9-8206-b325-69ae4a7027e5"
     - stage: links
-      stageUuid: "a94be465-d602-8fc4-a5c3-9943f7083df3"
+      stageUuid: "57092492-3494-8171-be24-f0322d3e57ec"
     - stage: horo
-      stageUuid: "d16362ef-ea81-8bf4-aad1-661201f40648"
+      stageUuid: "259be3ad-12e3-84aa-9e13-1ad8b00d470a"
     - stage: seal
       stageUuid: "80628101-a5f3-8097-9c4c-b7b37f177afa"
     - stage: uuid
-      stageUuid: "ac471f4d-beee-8b65-af20-a9fa319f090a"
+      stageUuid: "b8e3fccc-b7b8-8a83-a654-fe9e7d43a3eb"
 version: 2
 ---
 # eu
 
 A schema.org component word, collided out of schema.org compounds — fused from EUEnergyEfficiencyEnumeration ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — energy · [[efficiency]] · [[enumeration]]
+Entangled with — energy · efficiency · [[enumeration]]
 
 Attested in schema.org — EUEnergyEfficiencyEnumeration
 

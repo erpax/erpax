@@ -2,14 +2,14 @@
 name: compost
 description: "Use when organic residues are decomposed into a soil amendment — compost and manure as the organic-matter/microbial input that rebuilds soil rather than just feeding the crop. The literal entropy→soil recycling node: spent residue, decomposed, credited back to the soil's capacity (the regenerative balance)."
 atomPath: compost
-coordinate: "compost · 2/share · 2274318c"
-contentUuid: "2d4c4727-c317-5f9a-9dc4-b589166d5410"
-diamondUuid: "fe9afee8-9e05-8877-9a36-be958ae7e302"
-uuid: "2274318c-cff4-8602-ad23-65d389d82537"
-horo: 2
+coordinate: "compost · 5/round · d0db3253"
+contentUuid: "0ab6d46a-4628-5ef2-b551-6b545361fe70"
+diamondUuid: "7706605c-a3f5-85e0-9a0b-1d3a08a4598c"
+uuid: "d0db3253-0556-872b-8b98-12f51fe83cc3"
+horo: 5
 typography:
   partition: compost
-  bondDegree: 49
+  bondDegree: 33
 standards:
   - "SARE, Building Soils for Better Crops — organic-matter management"
   - "US Composting Council — compost maturity/stability (C:N criteria)"
@@ -17,7 +17,7 @@ standards:
   - "USDA-NOP"
 bindings: []
 signatures:
-  computationUuid: "4e953dd7-0184-883f-b1ed-0a55e556359f"
+  computationUuid: "673ff7ff-f7c7-87ac-a5ad-cb7ab4563be8"
   stages:
     - stage: path
       stageUuid: "f6bf7fde-93ab-8a11-b344-939400cb706f"
@@ -26,26 +26,26 @@ signatures:
     - stage: boundary
       stageUuid: "02507683-56f9-8f4a-a555-06b11c0d0cf0"
     - stage: links
-      stageUuid: "937467d3-eb6e-8630-b5a4-d867d66c3c21"
+      stageUuid: "ec3f0608-3a91-8f97-a689-1e99310934f0"
     - stage: horo
-      stageUuid: "d4d9b24a-453b-830b-9efd-ee1dd0d41ddc"
+      stageUuid: "d8087a65-e723-8012-a330-78e3e5f59b40"
     - stage: seal
       stageUuid: "b8b04192-5a91-85d4-a84c-128a5bb227df"
     - stage: uuid
-      stageUuid: "ba3958a3-a6a1-8537-aec3-d772ab517c12"
+      stageUuid: "49e277fb-c9bc-8ce7-a087-9e1245bbd3c0"
 version: 2
 ---
 # compost — decomposed residue returned to the soil
 
-**compost** is decomposed organic residue added to soil — an **organic-matter and microbial** amendment more than an N-P-K source (that distinction matters: it rebuilds soil structure, [[fertility|CEC]], water-holding, and biology rather than simply feeding the crop). **Manure** (animal excreta, raw or composted) is the kin input — under organic rules raw manure carries a 90/120-day pre-harvest interval. **Biochar** (pyrolyzed biomass) is the long-lived carbon variant that raises CEC and locks carbon in the soil.
+**compost** is decomposed organic residue added to soil — an **organic-matter and microbial** amendment more than an N-P-K source (that distinction matters: it rebuilds soil structure, CEC, water-holding, and biology rather than simply feeding the crop). **Manure** (animal excreta, raw or composted) is the kin input — under organic rules raw manure carries a 90/120-day pre-harvest interval. **Biochar** (pyrolyzed biomass) is the long-lived carbon variant that raises CEC and locks carbon in the soil.
 
-Compost is the literal **entropy → soil recycling** node: spent residue (the farm's waste) decomposed and **credited back** into soil [[capacity]] — the regenerative [[balance]] that offsets the removal a [[harvest]] debits. The cycle closes ([[breath]]: residue out, [[fertility]] in).
+Compost is the literal **entropy → soil recycling** node: spent residue (the farm's waste) decomposed and **credited back** into soil [[capacity]] — the regenerative [[balance]] that offsets the removal a [[harvest]] debits. The cycle closes ([[breath]]: residue out, fertility in).
 
 ## Standards
 - SARE *Building Soils for Better Crops* (organic-matter management); USDA NOP 7 CFR §205.203 (compost & raw-manure rules)
 - US Composting Council — compost maturity/quality (the C:N and stability criteria)
 
-Composes [[agriculture]] · soil · [[fertility]] · [[balance]] · [[capacity]] · [[harvest]] · [[breath]] · [[covercrop]] · [[conservation]] · [[sustainability]] · [[ecosystem]] · [[emission]].
+Composes [[agriculture]] · soil · fertility · [[balance]] · [[capacity]] · [[harvest]] · [[breath]] · covercrop · [[conservation]] · [[sustainability]] · [[ecosystem]] · [[emission]].
 
 ## Matter-twin
 

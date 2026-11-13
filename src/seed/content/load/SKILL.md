@@ -3,13 +3,13 @@ name: load
 description: "Use when the corpus documents should live in Payload instead of in an agent's context — reads each atom's SKILL document, derives nested page rows, and writes them through the REST SDK against any reachable deployment, so a reader later finds one page by slug and selects its markdown."
 atomPath: "seed/content/load"
 coordinate: "seed/content/load · 4/weave · 43c236e6"
-contentUuid: "1e2d7c70-b394-51eb-bb02-dc428d5ff5b0"
+contentUuid: "8247d337-a064-56e0-8cc1-7fbd3b13e75b"
 diamondUuid: "6e233e7f-d149-8436-8043-37ace50935ba"
 uuid: "43c236e6-1598-8bc3-9551-813c032049eb"
 horo: 4
 typography:
   partition: seed
-  bondDegree: 18
+  bondDegree: 14
 standards:
   - "9110 http-semantics authorization"
 bindings: []

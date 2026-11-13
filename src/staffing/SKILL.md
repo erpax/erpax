@@ -3,13 +3,13 @@ name: staffing
 description: "Use when reasoning about staffing — Six atoms already computed the five faces of a position. **Nothing joined them.**"
 atomPath: staffing
 coordinate: "staffing · 2/share · 1d6af325"
-contentUuid: "eef2cdde-92c5-55fa-9e36-4c3ad2182ffd"
-diamondUuid: "75140d27-0ce5-8318-9729-5bb2158fbb5a"
+contentUuid: "2d1d3e14-8f49-58f4-974e-d8af8415035a"
+diamondUuid: "34ccca7b-be38-80bb-8420-d41b9aaa88d4"
 uuid: "1d6af325-a3c8-84dd-9430-174518f34a89"
 horo: 2
 typography:
   partition: staffing
-  bondDegree: 36
+  bondDegree: 33
 standards:
   - ESCO
   - "ESCO v1.2 / ISCO-08 — occupation and competency classification"
@@ -20,7 +20,7 @@ standards:
   - SFIA 8 — responsibility levels 1..7
 bindings: []
 signatures:
-  computationUuid: "5fdb1f38-dd48-80da-b8a0-8b1324b5d1e0"
+  computationUuid: "8f5a217c-da34-8019-ac05-f5e4533c70a2"
   stages:
     - stage: path
       stageUuid: "e021809f-7038-8884-93a1-2aeb641cae1c"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "3aa3f958-04f2-8fe3-9298-f120c4e3188c"
     - stage: horo
-      stageUuid: "e7cd2ead-787f-8f63-a60d-72e2220a76b7"
+      stageUuid: "81dc3884-214b-8b8f-b4b9-5b1067860855"
     - stage: seal
       stageUuid: "80b88db1-5335-8ed3-b891-1ea1a852e34f"
     - stage: uuid
-      stageUuid: "e884f73f-a352-81a3-88e8-f02288e632b4"
+      stageUuid: "91e47c67-fab4-824b-a728-316394e97e5c"
 version: 2
 ---
 # staffing — a position is declared once, and everything a bank needs from it is derived

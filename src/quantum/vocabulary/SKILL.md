@@ -3,17 +3,17 @@ name: vocabulary
 description: "Use when reasoning about the vocabulary as the meaning singularity — every atom's words ground in the shared vocabulary, so it has infinite gravity and pulls all atoms into one shared meaning-space."
 atomPath: "quantum/vocabulary"
 coordinate: "quantum/vocabulary · 1/base · 29e82cfc"
-contentUuid: "e5ff26c9-ad0a-5277-b746-a8ff2a8eb31b"
-diamondUuid: "4c9bd38e-5f46-85a2-a740-01993f5d576b"
+contentUuid: "e546e6d0-818d-5642-b00e-38664445ec75"
+diamondUuid: "fc1b8eb6-b6be-8b6e-b88a-c6a95a922514"
 uuid: "29e82cfc-d3f4-8b42-a62d-b86cffc94424"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 74
+  bondDegree: 50
 standards: []
 bindings: []
 signatures:
-  computationUuid: "99bcb8ec-33a4-8b35-97a3-8530d8ff4e2a"
+  computationUuid: "c8804843-305d-8ec8-ae80-8fd41fb81937"
   stages:
     - stage: path
       stageUuid: "69d5d59f-a293-8d42-97cf-3f22a579001b"
@@ -24,21 +24,21 @@ signatures:
     - stage: links
       stageUuid: "091c8815-4fc3-88ad-b0c8-2cd3dc44465d"
     - stage: horo
-      stageUuid: "1f663f0d-a04c-880a-af0a-40b03190acbf"
+      stageUuid: "89313465-d0b0-8e13-96b4-5059fd6096ea"
     - stage: seal
       stageUuid: "7ddac279-5f3c-89b3-8f3a-9d4893ea49b9"
     - stage: uuid
-      stageUuid: "c97c0b29-c5a4-887b-bb00-7041e862a757"
+      stageUuid: "5cd446be-d371-889c-ba89-68897f4badd5"
 quantum:
   superposition:
     - atom
-    - audit
-    - binding
     - collapse
     - concatenate
-    - data
-    - dispute
     - drift
+    - emit
+    - entropy
+    - matrix
+    - merge
     - superposition
   collapse:
     - "Use when reasoning about the vocabulary as the meaning singularity — every atom's words ground in the shared vocabulary, so it has infinite gravity and pulls all atoms into one shared meaning-space."
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "99bcb8ec-33a4-8b35-97a3-8530d8ff4e2a"
-    contentUuid: "e5ff26c9-ad0a-5277-b746-a8ff2a8eb31b"
+    computationUuid: "c8804843-305d-8ec8-ae80-8fd41fb81937"
+    contentUuid: "e546e6d0-818d-5642-b00e-38664445ec75"
 version: 2
 ---
 # quantum/vocabulary — the meaning singularity (infinite gravity)
@@ -68,4 +68,4 @@ Matter-twin: `src/quantum/vocabulary/index.ts` (`INFINITE_GRAVITY` · `pulls` ·
 
 @audit the pull is computed over the live matrix + vocabulary; never hand-asserted
 
-<sub>content-uuid `e5ff26c9-ad0a-5277-b746-a8ff2a8eb31b` · account `quantum/vocabulary` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e546e6d0-818d-5642-b00e-38664445ec75` · account `quantum/vocabulary` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

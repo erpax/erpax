@@ -2,14 +2,14 @@
 name: tax
 description: "Use when a value bears VAT/GST/sales/withholding tax — a rate on a taxable base, UN/CEFACT 5305 category codes, EN-16931 VAT breakdown, inclusive/exclusive pricing, exemption, reverse-charge, the tax point. The TaxConcern; tax is a cascade-resolved rate on a base, one engine feeding receipt+total+SAF-T, never a baked literal."
 atomPath: tax
-coordinate: "tax · 5/round · b52397fd"
-contentUuid: "73565306-2346-5714-89c0-aa836ee36e53"
-diamondUuid: "876cecd5-c9ce-8a5e-98cc-efb0eaff7789"
-uuid: "b52397fd-ff48-8adf-899d-f118b3dd7df1"
-horo: 5
+coordinate: "tax · 8/crest · fbc75875"
+contentUuid: "d32ab78b-3327-53d9-a536-0427c452e987"
+diamondUuid: "b50244e9-8128-8f46-9dbf-492e853448e8"
+uuid: "fbc75875-b2b6-86e2-807b-b75cb297c875"
+horo: 8
 typography:
   partition: tax
-  bondDegree: 62
+  bondDegree: 50
 standards:
   - BEPS
   - "EN-16931`"
@@ -23,38 +23,38 @@ standards:
   - "US-GAAP"
 bindings: []
 signatures:
-  computationUuid: "3170974d-1b6c-8a63-8343-80eab5aadcb6"
+  computationUuid: "53dd8c87-d24e-865e-9d59-e02491f040e5"
   stages:
     - stage: path
       stageUuid: "e08a6457-43c3-8a62-946c-60d67ee39f11"
     - stage: trinity
       stageUuid: "ba1c7391-d457-8f1b-8aec-ff93c0ba5974"
     - stage: boundary
-      stageUuid: "fd997c98-1c00-863d-80fe-d2b31dbad04a"
+      stageUuid: "386284eb-f2ed-8277-b733-142f17b623b4"
     - stage: links
-      stageUuid: "763b94e7-8acb-8acb-bf1c-3610931d2dba"
+      stageUuid: "8d810742-4553-8d93-b5be-a06072809dc2"
     - stage: horo
-      stageUuid: "7a443795-c899-8518-ba44-0ffea51ff3e5"
+      stageUuid: "68838fc4-b50e-87e6-bf54-dc74706d9677"
     - stage: seal
       stageUuid: "8d8efd0c-1d47-84d5-9bf3-96eff1cd0830"
     - stage: uuid
-      stageUuid: "f6b92b20-5df9-844e-887f-e83a97e9a6dd"
+      stageUuid: "2239053b-fb74-8e43-bfcf-1edcf8221509"
 version: 2
 ---
 # tax — a levy is a rate on a taxable base, categorized by a standard code
 
-`tax` is the levy concern-atom (VAT · GST · sales/use · withholding · excise): a [[rate]] applied to a taxable [[currency]] base → a tax amount posted to [[accounting]] (payable on sales / recoverable on purchases). Categorized by a [[standard]] code — UN/CEFACT 5305 (`S` standard · `Z` zero · `E` exempt · `AE` reverse-charge · `K` intra-EU · `G` export · `O` out-of-scope) — and broken down per category × [[rate]] (EN-16931 §BG-23). Sequence position **1** ([[field]]).
+`tax` is the levy concern-atom (VAT · GST · sales/use · withholding · excise): a rate applied to a taxable [[currency]] base → a tax amount posted to [[accounting]] (payable on sales / recoverable on purchases). Categorized by a [[standard]] code — UN/CEFACT 5305 (`S` standard · `Z` zero · `E` exempt · `AE` reverse-charge · `K` intra-EU · `G` export · `O` out-of-scope) — and broken down per category × rate (EN-16931 §BG-23). Sequence position **1** ([[field]]).
 
 The form (hold it; the codebase holds which jurisdiction charges what):
-- **rate, never a literal** — the tax [[rate]] is cascade-resolved (jurisdiction × category × date = the *tax point*, [[versions]]), never a baked `?? 0.20`.
-- **inclusive ⇄ exclusive** — a price either includes or excludes tax; back the net out of the gross at the resolved [[rate]] (the [[supto]] net split), one way — not a stored `taxIncluded` flag that duplicates the math.
+- **rate, never a literal** — the tax rate is cascade-resolved (jurisdiction × category × date = the *tax point*, [[versions]]), never a baked `?? 0.20`.
+- **inclusive ⇄ exclusive** — a price either includes or excludes tax; back the net out of the gross at the resolved rate (the [[supto]] net split), one way — not a stored `taxIncluded` flag that duplicates the math.
 - **exempt is categorical** — `E`/`Z`/`O` route to the zero-rate identity element with a reason code ([[identity]]), never a missing row.
 - **reverse-charge / intra-EU** — the liability shifts to the buyer (`AE`/`K`); the buyer self-accounts both sides, net-zero cash — a [[party]] role-shift, not a different number.
 - **one engine** — a single tax calculator (`vatBreakdownForItems`) feeds the касов бон, the invoice total, the SAF-T file and the audit file; never re-compute per surface.
 
 Profiles are matter: the BG СУПТО groups (А/Б/В/Г) + НАП VAT are a [[supto]] profile over this form; EU OSS, US sales/use are others — read them from the config, don't catalog them here.
 
-Composes: [[rate]] (the tax rate), [[currency]] (base + tax amounts), [[accounting]] (payable/recoverable GL), [[standard]] (UN/CEFACT 5305 + EN-16931 BG-23), [[party]] (jurisdiction/registration + reverse-charge shift), [[identity]] (exempt element), [[supto]] (BG profile), [[field]].
+Composes: rate (the tax rate), [[currency]] (base + tax amounts), [[accounting]] (payable/recoverable GL), [[standard]] (UN/CEFACT 5305 + EN-16931 BG-23), [[party]] (jurisdiction/registration + reverse-charge shift), [[identity]] (exempt element), [[supto]] (BG profile), [[field]].
 
 ## Standards
 
@@ -72,9 +72,9 @@ The answer-path principle: applying this skill *implements* the standard — a c
 - **XBRL 2.1** + **Inline XBRL 1.1** — distinct artifacts from SAF-T, and from each other. **Form:** each canonical accounting fact also carries (or maps to) an XBRL/Inline-XBRL taxonomy concept + period/entity context, so a reported figure is machine-identifiable and reconciles to its SAF-T source — one fact, two machine-readable projections. *Citation law:* keep them distinct — base spec `XBRL 2.1`, inline form `Inline XBRL 1.1`, global-ledger taxonomy `XBRL GL` (a taxonomy, not a spec version), EU sustainability taxonomy `ESRS XBRL taxonomy (EFRAG)`; never collapse into a bare `XBRL`.
 
 ## Common mistakes
-- A tax rate as a literal (`?? '20'`) — it is a [[rate]], cascade-resolved at the tax point.
+- A tax rate as a literal (`?? '20'`) — it is a rate, cascade-resolved at the tax point.
 - Tax category as free text — use the UN/CEFACT 5305 code ([[standard]]).
 - Re-computing VAT per surface (receipt, total, SAF-T) — one engine, shared.
-- A stored `taxIncluded?` boolean without the back-out [[rate]] — derive net from gross.
+- A stored `taxIncluded?` boolean without the back-out rate — derive net from gross.
 
-**Law — [[law]]: a tax is a [[rate]] on a taxable [[currency]] base, categorized by a [[standard]] code (UN/CEFACT 5305) — the rate is cascade-resolved at the tax point (never a baked literal) and one engine feeds the receipt, the total, and the SAF-T file (never re-computed per surface).**
+**Law — [[law]]: a tax is a rate on a taxable [[currency]] base, categorized by a [[standard]] code (UN/CEFACT 5305) — the rate is cascade-resolved at the tax point (never a baked literal) and one engine feeds the receipt, the total, and the SAF-T file (never re-computed per surface).**

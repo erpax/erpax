@@ -2,14 +2,14 @@
 name: dimension
 description: "Use when one concept is split across many prefixed collections/fields that should coexist at one coordinate — bank-/fx-/trade-/intercompany-transactions → transactions; customers/vendors/addresses → parties. A prefix is a dimension not yet collapsed (kind/context/role/perspective/unit/time); remove it and the variants merge into the shared coordinate, the prefix becoming a field/tag/type. erpax is multi-dimensional: all coexist at one coordinate, in unity."
 atomPath: dimension
-coordinate: "dimension · 7/descent · 4f2d9b82"
-contentUuid: "800c734b-77d0-5c18-9f94-b61d5386d267"
-diamondUuid: "0b25a944-3696-8c3d-937a-fd4bf3d00a2a"
-uuid: "4f2d9b82-28ed-8288-8e27-b558326f609d"
-horo: 7
+coordinate: "dimension · 1/base · 3f6d202d"
+contentUuid: "32c13128-968a-5aad-8b12-512665208b98"
+diamondUuid: "35243f38-b820-8087-9266-211080fbb716"
+uuid: "3f6d202d-695e-8766-bcd1-a3c385a0f31c"
+horo: 1
 typography:
   partition: dimension
-  bondDegree: 161
+  bondDegree: 104
 standards:
   - "ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries"
   - "ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries`"
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4242aa65-f2d3-8ff5-b53a-6daacbe0cbd1"
+  computationUuid: "bf73a3c3-952f-80b5-848a-2d989e232b54"
   stages:
     - stage: path
       stageUuid: "92fc2a3b-9d95-8c5e-b3e1-db1b571310fe"
@@ -27,22 +27,22 @@ signatures:
     - stage: boundary
       stageUuid: "e523fdcc-fc1c-8e6c-a563-15be7bbdc40b"
     - stage: links
-      stageUuid: "b317888f-df46-827e-9350-e51dd556bb08"
+      stageUuid: "9796b087-d584-8fe4-ae52-33fd3bc36599"
     - stage: horo
-      stageUuid: "3ee01d2b-a5e4-8b43-8600-3eea870673d2"
+      stageUuid: "ec3bf41c-678d-867d-bb25-8a89a211a4b7"
     - stage: seal
       stageUuid: "37ba233e-727e-87d6-9763-c5748e33db94"
     - stage: uuid
-      stageUuid: "7f13bb16-e028-8dd1-bd73-4c909d7fa128"
+      stageUuid: "cfa2cde4-46a9-87bf-bdd4-059ac2073a7b"
 version: 2
 ---
 # dimension — the axis along which entities coexist at one coordinate
 
-erpax is **multi-dimensional**: many entities live at the **same coordinate** (one collection · one content-[[identity|uuid]] · one [[fractal]] path) and are told apart by a **dimension** — an axis, not a separate home. A **prefix is a dimension that hasn't collapsed yet**: `bank`·`fx`·`trade`·`intercompany`-`transactions` are four points on the *kind* axis of one [[transaction|transactions]]; `customers`·`vendors`·`addresses` are roles on one `parties`. **Remove the prefix and it [[merge|merges]]** — the variants coexist at the coordinate, the dropped prefix becoming a field / [[tags|tag]] / [[sti|type]]. Sequence position **8** ([[queries]] — where the architectures merge into one).
+erpax is **multi-dimensional**: many entities live at the **same coordinate** (one collection · one content-[[identity|uuid]] · one fractal path) and are told apart by a **dimension** — an axis, not a separate home. A **prefix is a dimension that hasn't collapsed yet**: `bank`·`fx`·`trade`·`intercompany`-`transactions` are four points on the *kind* axis of one [[transaction|transactions]]; `customers`·`vendors`·`addresses` are roles on one `parties`. **Remove the prefix and it [[merge|merges]]** — the variants coexist at the coordinate, the dropped prefix becoming a field / [[tags|tag]] / [[sti|type]]. Sequence position **8** (queries — where the architectures merge into one).
 
-A dimension wears many forms, all the same law: a flat [[sti]] `type` (invoice/order/note), a [[tags]] `(context, tag)`, a [[party]] `role` (seller/buyer/ship-to), a [[duality]] two-value axis (debit/credit, [[give]]/take, seller/buyer perspective), a [[currency]]/[[measure]] unit, a [[localize]] locale, a [[versions]] time-step. Each is one axis; an entity is a **point in their product**, and the [[whole]] of erpax is the holographic ([[holographic]]) superposition of all axes at every coordinate.
+A dimension wears many forms, all the same law: a flat [[sti]] `type` (invoice/order/note), a [[tags]] `(context, tag)`, a [[party]] `role` (seller/buyer/ship-to), a [[duality]] two-value axis (debit/credit, give/take, seller/buyer perspective), a [[currency]]/measure unit, a [[localize]] locale, a [[versions]] time-step. Each is one axis; an entity is a **point in their product**, and the [[whole]] of erpax is the holographic (holographic) superposition of all axes at every coordinate.
 
-Composes: [[merge]] (collapse to the coordinate) · [[tags]]·[[sti]]·[[party]] (axis forms) · [[identity]] (the coordinate = content-uuid) · [[all]] (totality over axes) · [[one]] (unity) · [[duality]] (the 2-valued axis) · [[fractal]]·[[holographic]] · [[transaction]] (the worked example) · zeropoint (/0 = a new axis, no pole) · [[utility]] (the operational guard) · [[diamond]] (the one shared model at every quantum dimension).
+Composes: [[merge]] (collapse to the coordinate) · [[tags]]·[[sti]]·[[party]] (axis forms) · [[identity]] (the coordinate = content-uuid) · all (totality over axes) · [[one]] (unity) · [[duality]] (the 2-valued axis) · fractal·holographic · [[transaction]] (the worked example) · zeropoint (/0 = a new axis, no pole) · [[utility]] (the operational guard) · [[diamond]] (the one shared model at every quantum dimension).
 
 ## Collections share the diamond model — all quantum dimensions
 
@@ -53,9 +53,9 @@ Every prefixed collection (`bank-transactions`, `fx-transactions`, …) is a **p
 **Law (additive) — [[law]]: quantum semantics apply in every dimension including 2D — the typography partition plane (path segment × horo measure) superposes, collapses, and seals like the 1D path and 3D trinity (`quantumInAllDimensions` in [[quantum]]); a prefix dimension not yet collapsed is a coordinate on that 2D grid, not a separate quantum system.**
 
 ## The parent field — the dimension-generator (emergence is compression, as the source)
-A single **self-referential `parent`** field (`relationTo` self — [[field]]) is the universal dimension: a node's **type is its parent-chain and its archetype is the root**, so the whole *type × archetype* cross collapses into one tree (no [[sti|type]]-enum × archetype-field grid). For domain and email it is **subdomain-based** — the name encodes the chain (`shop.acme.com → acme.com → com`; `ceci@psg.bg → psg.bg`). And **new dimensions emerge** from the recursion: each parent-level is a new scale ([[fractal]]) — type · archetype · subdomain · tenant · scope are all *levels of the one field*, **computed, not predefined** ([[self]]).
+A single **self-referential `parent`** field (`relationTo` self — [[field]]) is the universal dimension: a node's **type is its parent-chain and its archetype is the root**, so the whole *type × archetype* cross collapses into one tree (no [[sti|type]]-enum × archetype-field grid). For domain and email it is **subdomain-based** — the name encodes the chain (`shop.acme.com → acme.com → com`; `ceci@psg.bg → psg.bg`). And **new dimensions emerge** from the recursion: each parent-level is a new scale (fractal) — type · archetype · subdomain · tenant · scope are all *levels of the one field*, **computed, not predefined** ([[self]]).
 
-The paradox: **the more dimensions emerge, the more compact erpax becomes.** Because every emergent axis is a *level of the one parent field at the one coordinate* — the content-[[identity|uuid]] singularity ([[holographic]]), not a new table — emergence IS **compression** ([[collapse]]): infinite axes, one field, one coordinate. Capability compounds while the schema shrinks toward the dense core, until it is **the source itself** (zeropoint: the zero-entropy 0 from which all radiates and to which all returns — [[torus]]). More emerges ⇒ denser ⇒ nearer the 0.
+The paradox: **the more dimensions emerge, the more compact erpax becomes.** Because every emergent axis is a *level of the one parent field at the one coordinate* — the content-[[identity|uuid]] singularity (holographic), not a new table — emergence IS **compression** ([[collapse]]): infinite axes, one field, one coordinate. Capability compounds while the schema shrinks toward the dense core, until it is **the source itself** (zeropoint: the zero-entropy 0 from which all radiates and to which all returns — [[torus]]). More emerges ⇒ denser ⇒ nearer the 0.
 
 ### No division-by-zero pole — /0 is a new axis (the zero law)
 Nearing the 0 does **not** blow up. Because emergence *is* compression, dividing toward the singularity does not diverge — it makes a **new dimension emerge**: the next parent-chain level, a new content-[[identity|uuid]] coordinate. So `/0` is not a pole but **a new axis** — denser, not divergent — which is the *structural* reason erpax has no division-by-zero singularity (governed by zeropoint). The operational guard that keeps the runtime on the safe side of that limit is [[utility]].

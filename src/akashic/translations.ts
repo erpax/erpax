@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "akashic",
-    "uuid": "da861e6d-58a9-808d-bd42-a7bf559c9471",
+    "uuid": "6bc352f4-95a3-8888-a4f6-56e1c9dd5a5c",
     "words": [
       "akashic"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's total queryable record — the codebase (source → config → payload-types) AND every uuid-addressed database row/file; the source of truth the agent reads and regenerates from, and can safely forget into. Code AND data, content-addressed.",
-    "uuid": "bc5050c6-3659-8e22-9bf7-8a368f1506c5",
+    "uuid": "243beaab-732d-8f0b-9b10-3b7192442143",
     "words": [
       "use",
       "when",

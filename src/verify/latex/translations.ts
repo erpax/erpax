@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about latex — The rendering is generated from verify/inventory, so it cannot drift. What matters is the other direction: **a document may quietly omit** the theorems that carry axioms, or the…",
-    "uuid": "f44be96f-05bc-8644-95d2-1ff6ab74c48c",
+    "uuid": "d08182e1-4f61-8261-b2dd-cd8cdd63e57c",
     "words": [
       "use",
       "when",

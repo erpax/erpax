@@ -2,14 +2,14 @@
 name: assets
 description: "Use when measuring, re-measuring, or disclosing IAS 41 biological assets — livestock, aquaculture, annual/perennial crops, forestry, vineyard produce — at fair-value-less-costs-to-sell; biological-transformation vs. price-change P&L split; bearer-plant IAS-16 carve-out; harvest-event transformation lifecycle. The IAS-41 biological-asset measurement collection."
 atomPath: "biological/assets"
-coordinate: "biological/assets · 2/share · 5375324a"
-contentUuid: "7b123388-82f4-56de-a5f1-425c94566ec7"
-diamondUuid: "f989dbc1-a26d-8f16-8989-076702e1c287"
-uuid: "5375324a-631c-8ad6-ae2e-a8953087c3dd"
+coordinate: "biological/assets · 2/share · 947c05fd"
+contentUuid: "1eca71c2-0de0-57eb-b855-f903d41a6e80"
+diamondUuid: "76e49fcb-d68e-8974-82e9-5fa991c655c8"
+uuid: "947c05fd-660c-868d-9e05-662624c1f3ef"
 horo: 2
 typography:
   partition: biological
-  bondDegree: 113
+  bondDegree: 56
 standards:
   - "IAS-41"
   - "IFRS IAS-41 §10 recognition-criteria"
@@ -35,7 +35,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "57577656-81ae-8c6b-b71f-8e7ad8c0d1b5"
+  computationUuid: "14a4c3c9-6f71-8cc9-8f3e-da9f63531166"
   stages:
     - stage: path
       stageUuid: "78a30e64-5ab4-848b-8d59-1078f20f0656"
@@ -44,13 +44,13 @@ signatures:
     - stage: boundary
       stageUuid: "71e52ffc-ac61-8a97-8463-245dffe70934"
     - stage: links
-      stageUuid: "e5c5ea89-6960-8184-b985-28d0dec16a26"
+      stageUuid: "22a7d6ec-ac5f-8583-9bd2-063c0a2c5213"
     - stage: horo
-      stageUuid: "a29f32a2-2881-8bd3-9371-e4538244760c"
+      stageUuid: "a1a285ad-978b-88b7-b480-7537e35dc1aa"
     - stage: seal
       stageUuid: "3db92f29-073f-82ee-9982-e9e81fa80aad"
     - stage: uuid
-      stageUuid: "745ab58e-84f8-8e0a-af16-f7f99b152d4d"
+      stageUuid: "a9f6f3b1-7445-84a2-a584-e2f88af30bd1"
 version: 2
 ---
 # biological-assets
@@ -61,7 +61,7 @@ This is an [[accounting|accountable]] [[collections|collection]] node — shared
 
 **The bearer-plant carve-out is the trap.** Since the 2016 IAS-41 amendment, **bearer plants** (the vine, the apple tree — the productive plant itself) are NOT biological assets; they moved to IAS 16 (PP&E) and are *not* re-measured to fair value. Only the **produce** growing on them (the grapes, the fruit before harvest) stays in IAS 41. That is why `classKind` carries a distinct *vineyard/orchard PRODUCE* option flagged `bearer plant ⇒ IAS 16` — the plant and its produce part on the standards boundary, and miscoding the plant as a biological asset is the classic restatement error. At the point of harvest (the IAS 41 §13 transformation event — birth/death/growth/harvest, the forward `harvest-events` pairing the code comment notes) the asset transfers to inventory; the status flips to `harvested`.
 
-This is the [[fractal]] same form one scale down from the [[fair/value/measurements]] register it points at — a measured balance that re-prices against a hierarchy of inputs.
+This is the fractal same form one scale down from the [[fair/value/measurements]] register it points at — a measured balance that re-prices against a hierarchy of inputs.
 
 **Law — [[law]]: a living class is carried at fair-value-less-costs-to-sell (never cost), re-measured each reporting date, with the change split into biological-transformation vs price-change; bearer plants are carved out to IAS-16.**
 

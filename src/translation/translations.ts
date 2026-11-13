@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when porting a translatable message into code — the model (type + defineTranslation) of one content-addressed, per-locale translation entry that the translations collector emits into every folder.",
-    "uuid": "6e13cb7f-5d94-8e59-ac37-b7f0f2787a4d",
+    "uuid": "8438f956-bdde-8290-92e2-2d201b73dd13",
     "words": [
       "use",
       "when",

@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing ISO 13616 — IBAN.",
-    "uuid": "2318ec5b-adc2-881c-891e-d3435fb74ca2",
+    "uuid": "0b53246e-f3af-80c6-b287-ecac0ac0d3df",
     "words": [
       "use",
       "when",

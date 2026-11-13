@@ -2,14 +2,14 @@
 name: accounting
 description: "Use when erpax runs its OWN books — auto-booking subscription revenue (IFRS-15), infra/payroll/supplier/tax costs, scheduling regulatory filings (FINREP/COREP/CSRD/VAT) and obligations, and checking nothing is overdue (Conservation Law 26, checkSelfAccountingComplete). The self as a double-entry gateway; revenue is the credit, cost the debit, the filing the proof."
 atomPath: "self/accounting"
-coordinate: "self/accounting · 2/share · bb5ac365"
-contentUuid: "01016316-64b0-509a-b36c-f32a46fa860e"
-diamondUuid: "6cc2ac4f-02c4-8b90-8cee-21ffb6412b53"
-uuid: "bb5ac365-c4aa-8ae5-9448-30c8f821c11b"
+coordinate: "self/accounting · 2/share · 9176118e"
+contentUuid: "5ad87d5a-bee4-5e46-ae90-16ad90543488"
+diamondUuid: "487c1e2e-f91b-822f-a4cd-2dfe6103fb1c"
+uuid: "9176118e-d808-87b4-9a6f-d9ee3f2a977a"
 horo: 2
 typography:
   partition: self
-  bondDegree: 781
+  bondDegree: 644
 standards:
   - "CSRD 2022/2464 + ESRS E1-S4 + IFRS S1/S2"
   - EU EBA FINREP + COREP technical standards
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "740e17f9-7693-8563-a341-3aeaf1c5a1b1"
+  computationUuid: "2afffccd-f070-83ad-926c-54aec651535e"
   stages:
     - stage: path
       stageUuid: "cfa69d58-ab80-8fce-8919-5079e6b8c540"
@@ -35,13 +35,13 @@ signatures:
     - stage: boundary
       stageUuid: "60b4163d-dc77-8229-a057-02a6b9116b11"
     - stage: links
-      stageUuid: "e79a3dc8-a266-8331-b5cc-6bd00159965d"
+      stageUuid: "cff130bb-93dd-837d-b16a-0b6de5af7c1d"
     - stage: horo
-      stageUuid: "3381ed6e-0c6a-8b01-af2a-ac07c6972d23"
+      stageUuid: "7086a190-7e6b-811e-b3da-a642b12215b7"
     - stage: seal
       stageUuid: "bebb7e3e-120b-8180-b647-3b3950e329fd"
     - stage: uuid
-      stageUuid: "d835c3fe-a31d-80d5-bed9-33dfd677372b"
+      stageUuid: "d4283a8e-1db9-8df6-ab65-a368de8c729e"
 version: 2
 ---
 # self-accounting — erpax books itself (under [[self]])
@@ -49,7 +49,7 @@ version: 2
 FORM: **the erpax-platform tenant runs its own [[accounting]] through erpax.** revenue (IFRS-15 §31–§45, from Stripe), [[cost]]s (infra/payroll/supplier/tax), regulatory filings (FINREP · COREP · CSRD · IFRS-S1/S2 · VAT) and obligations are booked/scheduled, and `checkSelfAccountingComplete` (Conservation Law 26) asserts every revenue is booked, every filing filed by its due date, every obligation paid — surfacing the overdue tail. This is the literal double-[[entry]] gateway of the [[law]]: each booking posts a balanced entry (revenue ⊕ obligation, cost ⊕ filing), and balanced books = zero net [[entropy]].
 
 Matter-twin: `src/self/accounting/index.ts` — `bookRevenue` · `bookCost` · `scheduleFiling` · `scheduleObligation` · `checkSelfAccountingComplete`.
-Composes: [[self]] · [[accounting]] · [[entry]] · revenue · [[cost]] · [[standard]] · [[reconcile]] · [[balance]] · [[gate]] · [[law]].
+Composes: [[self]] · [[accounting]] · [[entry]] · revenue · [[cost]] · [[standard]] · reconcile · [[balance]] · [[gate]] · [[law]].
 
 ## Standards
 

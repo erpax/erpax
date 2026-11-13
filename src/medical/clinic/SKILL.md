@@ -3,13 +3,13 @@ name: clinic
 description: "Use when reasoning about clinic as a medical facet of medical — vocabulary pivot to @/clinic; nested not duplicated."
 atomPath: "medical/clinic"
 coordinate: "medical/clinic · 5/round · 44a4fc26"
-contentUuid: "689bccdd-d342-5b55-8cf9-0fa315eac180"
+contentUuid: "663b6d6a-74d5-5d4f-afb5-736b5d82529c"
 diamondUuid: "61e91cfd-18d5-883b-b683-12a86107e4c6"
 uuid: "44a4fc26-ec3d-843a-8f89-c11d8b4cd813"
 horo: 5
 typography:
   partition: medical
-  bondDegree: 19
+  bondDegree: 14
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

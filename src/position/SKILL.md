@@ -2,14 +2,14 @@
 name: position
 description: "Use when defining job positions, the rate ladder, or government/society role structure. Each position is a rung on the harmonic ladder; its job description is computed; its conditions are content-addressed on the uuid chain (blockchain); government and society share one ladder."
 atomPath: position
-coordinate: "position · 4/weave · 882c646e"
-contentUuid: "ba2f6fe5-541f-54a7-b44b-4ae1d9ce73b4"
-diamondUuid: "4d9d2d8d-ff0c-8c49-a16c-2e1c82b3ea2c"
-uuid: "882c646e-212a-83bc-9ecf-f954ffa8ec6f"
-horo: 4
+coordinate: "position · 7/descent · b68adaf1"
+contentUuid: "977c5ecd-ef4b-5a2c-b100-9281c3363f7c"
+diamondUuid: "de7d025a-1550-86be-ac4d-981f82a40fff"
+uuid: "b68adaf1-9dd7-854a-a054-67905bcf2336"
+horo: 7
 typography:
   partition: position
-  bondDegree: 42
+  bondDegree: 33
 standards:
   - ESCO
   - "ESCO / ISCO-08 occupational classification"
@@ -19,7 +19,7 @@ standards:
   - "UN COFOG (Classification of the Functions of Government) — the `function` code"
 bindings: []
 signatures:
-  computationUuid: "ff265ce8-3f18-8584-933b-50d69a7f9554"
+  computationUuid: "c6b3c5bd-0653-8703-bcb4-4d875e57caa4"
   stages:
     - stage: path
       stageUuid: "a83cbf2d-83e1-8233-a8fb-88f785b66b9f"
@@ -28,20 +28,20 @@ signatures:
     - stage: boundary
       stageUuid: "1fca314c-b970-83f3-be2a-fbda3f68415e"
     - stage: links
-      stageUuid: "45e1d1a1-1750-827a-a65a-796ecaa6c366"
+      stageUuid: "e95cd98e-3cbb-8566-bd1b-4a84ce70799f"
     - stage: horo
-      stageUuid: "de32dc24-68b0-8787-a2a8-fb07fda63a7a"
+      stageUuid: "43072519-cddc-8fcd-97a5-187896b7a64e"
     - stage: seal
       stageUuid: "8fb4e8d2-01a7-8ca5-9e88-310a0b0234a7"
     - stage: uuid
-      stageUuid: "b72f25bb-d4b6-8c43-a129-239d2540ba77"
+      stageUuid: "b8afa564-f844-82d8-bcfd-3f1524d48970"
 version: 2
 ---
 # positions — the harmonic ladder, filled, where government and society are one
 
 FORM: **define the hourly rates as harmonics, fill the rungs with positions, and price government and society on the one ladder.** A position is a rung on the [[allocation]] harmonic ladder: tier `harmonic` earns `anchor × harmonic` per hour, tier 1 being the fundamental (work that saves no one else's time — see [[allocation]] for why the scale is harmonic). `index.test.ts` proves the laws.
 
-**Government IS society, mathematically.** A public role is just a position whose `function` is a COFOG code; it is not a separate, privileged pay class. Two positions at the same harmonic earn the same hourly rate whether the function is `07` (public health) or a market sector — `oneLadder` returns the violations, and an honest roster has none. The integration is not a policy promise but an invariant: the same rate law prices both, so there is no parallel bureaucratic scale, and using the rungs efficiently spans the public and the civic with one structure ([[fractal]]: one shape at every scale).
+**Government IS society, mathematically.** A public role is just a position whose `function` is a COFOG code; it is not a separate, privileged pay class. Two positions at the same harmonic earn the same hourly rate whether the function is `07` (public health) or a market sector — `oneLadder` returns the violations, and an honest roster has none. The integration is not a policy promise but an invariant: the same rate law prices both, so there is no parallel bureaucratic scale, and using the rungs efficiently spans the public and the civic with one structure (fractal: one shape at every scale).
 
 **Job descriptions are computed, conditions are on-chain.** `jobDescription` derives every field — responsibility (the SFIA level verb), hourly rate (harmonic × anchor), leverage (others' hours saved per own hour) — from the position's coordinates; nothing is hand-written ([[self]]/[[sufficient]]: derive, don't invent). `conditionsOf` normalises the terms; `conditionsUuid` is their content-uuid ([[identity]]: same terms ⇒ same uuid everywhere — the [[merge]] law makes a position's contract its identity); `chainPositions` seals a roster into an append-only integrity chain (`buildNextLeaf`) — the labour constitution "on blockchain": each leaf binds the prior, tampering with any position's terms breaks the hash.
 
@@ -49,7 +49,7 @@ FORM: **define the hourly rates as harmonics, fill the rungs with positions, and
 
 The matter is consumed by the `JobPositions` and `Competencies` [[collections]] — the full roster lives there (the akashic record), this organ holds only the law (`hold the law, not the list`). Pure (timestamps passed in) ⇒ testable; a [[hooks]] hook stamps `conditionsUuid` and chains the roster on write. This skill is the answer-path holding SFIA-8 / ESCO / ISCO-08 / UN-COFOG forms — see [[standard]] for version pins.
 
-Sequence position: **2** ([[collections]] — positions aggregate the [[allocation]] rate at position 1 into the role structure), governed by the [[identity]]/[[merge]] conservation laws on the chain. Composes: [[allocation]] · [[identity]] · [[merge]] · integrity · [[collections]] · [[hooks]] · [[fractal]] · [[duality]] · [[self]] · [[sufficient]] · [[standard]].
+Sequence position: **2** ([[collections]] — positions aggregate the [[allocation]] rate at position 1 into the role structure), governed by the [[identity]]/[[merge]] conservation laws on the chain. Composes: [[allocation]] · [[identity]] · [[merge]] · integrity · [[collections]] · [[hooks]] · fractal · [[duality]] · [[self]] · [[sufficient]] · [[standard]].
 
 ## Standards
 

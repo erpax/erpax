@@ -2,14 +2,14 @@
 name: entry
 description: "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \"all accounted in all directions ⇒ the wiring is complete\"."
 atomPath: entry
-coordinate: "entry · 1/base · 154f4596"
-contentUuid: "e1202b5f-2b6c-5a20-b519-70c638cd5748"
-diamondUuid: "539994fe-a4dd-88f4-acb9-e8dd5a4f0211"
-uuid: "154f4596-fe8e-83f0-b369-c9a92ee2119b"
-horo: 1
+coordinate: "entry · 8/crest · 3857abb4"
+contentUuid: "4f4a15bc-a93f-5792-b455-ad34cc8db597"
+diamondUuid: "acc39efa-910d-8818-a9aa-69d775341980"
+uuid: "3857abb4-d76e-8e88-87e0-f409ce4b3437"
+horo: 8
 typography:
   partition: entry
-  bondDegree: 167
+  bondDegree: 128
 standards:
   - "FASB ASC 810-10-45: intercompany balances eliminate to net zero on consolidation"
   - "IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "cf8ac855-71d8-8396-8914-4bb9a1bb9710"
+  computationUuid: "27c38593-9675-828f-b590-87d7c12eab9d"
   stages:
     - stage: path
       stageUuid: "68fb5705-4683-8f65-8d52-83706909b8c7"
@@ -28,26 +28,26 @@ signatures:
     - stage: boundary
       stageUuid: "f462e745-b4da-881f-bc20-ec0a95110f40"
     - stage: links
-      stageUuid: "3b4d4aec-e512-8984-9eb5-807678a9904e"
+      stageUuid: "d616a05c-e71f-82a9-bf55-096cbf3c966b"
     - stage: horo
-      stageUuid: "ae716200-af48-8da8-96d7-7d2556d380d8"
+      stageUuid: "db315738-cbae-808d-83b7-c1ac0fcafa62"
     - stage: seal
       stageUuid: "f0a543a8-0236-8428-ac2d-f94a5c49e51f"
     - stage: uuid
-      stageUuid: "a015680e-8126-8509-842e-84aaad1bce69"
+      stageUuid: "891c61e6-daea-84dc-8a8a-e1612b40a7f3"
 version: 2
 ---
 # entry — the universal double-entry (all based on debit/credit)
 
 FORM: **every value movement is a balanced pair — debit one side, credit the other, `Σ(credit−debit)=0`.** That single law makes [[accounting]] the agnostic substrate the whole mesh rides on: time, leverage, pay, skills, verification all move as postings. `toDoubleEntry(flow)` turns ANY flow into a balanced entry, agnostic to who the parties are — each line's `accountable` points OUT at any entity (polymorphic; nothing points in). `index.test.ts` proves the laws.
 
-**The reverse is inherent — the reverse skill, free.** A debit IS a credit from the other vantage (`services/perspective` `viewTransferFrom`: the payer [[give]]s/credits, the payee takes/debits). `reverse` swaps debit↔credit; `reverse∘reverse = id`. The undo is the [[duality]] of the do — no second implementation; mount↔unmount and post↔reverse fall out of it.
+**The reverse is inherent — the reverse skill, free.** A debit IS a credit from the other vantage (`services/perspective` `viewTransferFrom`: the payer gives/credits, the payee takes/debits). `reverse` swaps debit↔credit; `reverse∘reverse = id`. The undo is the [[duality]] of the do — no second implementation; mount↔unmount and post↔reverse fall out of it.
 
 **Mounting erpax N times consolidates.** `consolidate([…])` unions N ledgers (N plugin mounts) into one book; every intercompany pair already nets to zero (ASC 810-10-45 elimination), so the accounting equation holds across mounts with no coordination ([[merge]]). `accountableBalances` is the per-entity position.
 
-**The wiring is complete when all is accounted for in all directions.** `accountedFor(flows)`: every flow is a valid, conserved transfer that balances, and the consolidated book nets to zero — there is no edge the ledger does not close. Accounting is not a domain; it is the closure operator over the [[whole]] mesh ([[all]] is accountable).
+**The wiring is complete when all is accounted for in all directions.** `accountedFor(flows)`: every flow is a valid, conserved transfer that balances, and the consolidated book nets to zero — there is no edge the ledger does not close. Accounting is not a domain; it is the closure operator over the [[whole]] mesh (all is accountable).
 
-Matter-twin: `src/services/entry/index.ts` (`toDoubleEntry`·`net`·`isBalanced`·`reverse`·`consolidate`·`accountableBalances`·`accountedFor`) over `services/perspective` + `index.test.ts`. Composes: [[accounting]] · [[transaction]] · [[give]] · take · [[duality]] · [[merge]] · [[whole]] · [[all]] · [[begin]] · [[legal/entities/intercompany/transactions]] · [[perspective]].
+Matter-twin: `src/services/entry/index.ts` (`toDoubleEntry`·`net`·`isBalanced`·`reverse`·`consolidate`·`accountableBalances`·`accountedFor`) over `services/perspective` + `index.test.ts`. Composes: [[accounting]] · [[transaction]] · give · take · [[duality]] · [[merge]] · [[whole]] · all · begin · [[legal/entities/intercompany/transactions]] · [[perspective]].
 
 **The reverse (erpax surplus).** A compute-org has no analog for this: the universal double-entry closure — every movement a balanced (debit, credit) pair, `Σ(credit−debit)=0` across the whole mesh. The R&D society flagged `entry` as erpax **surplus** over the DeepSeek twins — the conservation law a pure-compute org never needed to grow. Ratified by the R&D society (`agent/research`, reverse seq 9).
 

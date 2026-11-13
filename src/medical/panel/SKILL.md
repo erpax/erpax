@@ -3,13 +3,13 @@ name: panel
 description: "Use when reasoning about panel as a medical facet of medical — vocabulary pivot to @/panel; nested not duplicated."
 atomPath: "medical/panel"
 coordinate: "medical/panel · 7/descent · 1f4a3c97"
-contentUuid: "218ed5e3-d963-5b12-87d5-fbbc9ce76602"
+contentUuid: "75b2d9d5-fc4e-59f2-8e08-145c3cf783be"
 diamondUuid: "a1ed090c-5b1e-8dc1-8a75-e75df4795031"
 uuid: "1f4a3c97-881f-8c96-be38-dcb8b49acee7"
 horo: 7
 typography:
   partition: medical
-  bondDegree: 23
+  bondDegree: 17
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when working with Payload in THIS project — extends the upstream Payload skill with the local implementation: merged collections read through saved lists, rows derived by hooks, documents seeded as nested pages and read back as markdown over the SDK and MCP, migrations generated from the snapshot, and the tenant-scoped read rule.",
-    "uuid": "dcb2eb68-4d5b-82e6-b3ad-f2b866e667ed",
+    "uuid": "acee5bd6-ccfa-8e20-b671-31ab9862e237",
     "words": [
       "use",
       "when",

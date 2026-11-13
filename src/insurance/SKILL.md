@@ -2,43 +2,43 @@
 name: insurance
 description: "Use when reasoning about insurance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: insurance
-coordinate: "insurance · 1/base · b8df9d2b"
-contentUuid: "5561989d-683a-5fbb-8a65-a414e4713e8e"
-diamondUuid: "fe00673b-9609-88be-82ea-5d1af312f2c1"
-uuid: "b8df9d2b-af14-8cfd-9cdc-553eb366454a"
-horo: 1
+coordinate: "insurance · 4/weave · b48fa537"
+contentUuid: "5f97bbea-3d4a-5399-9c04-d66d85f86a6c"
+diamondUuid: "261e20e0-9443-8feb-a262-6584a7e5eda9"
+uuid: "b48fa537-a654-8d98-8d1c-eb192f2d6069"
+horo: 4
 typography:
   partition: insurance
-  bondDegree: 24
+  bondDegree: 15
 standards:
   - "IFRS-13"
   - "IFRS-17"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "24970a38-397a-8893-852d-c36b30f972aa"
+  computationUuid: "b14c774e-063d-8a3a-9be1-e081591032e5"
   stages:
     - stage: path
       stageUuid: "74bd54f6-6cd9-85dc-a711-372d13a5136e"
     - stage: trinity
       stageUuid: "f099d7df-31b3-891b-8dbc-baa1605bb977"
     - stage: boundary
-      stageUuid: "a4a8e6c5-cdc8-810e-ac3e-db3bf70d4fbf"
+      stageUuid: "ca484562-4ea0-8ee9-8c40-abb9e7d3a6d9"
     - stage: links
-      stageUuid: "ca9300b1-bc5d-8cbf-bf61-fe7af1e6bb77"
+      stageUuid: "2d13ea93-913f-8205-b8c9-480600dd13e1"
     - stage: horo
-      stageUuid: "9406275a-e9aa-82a8-bac3-7c02474547ac"
+      stageUuid: "8942ebfe-9e87-8a72-8cc8-476f40a6c47d"
     - stage: seal
       stageUuid: "86b33dd0-5f10-85aa-8179-290ec6f30095"
     - stage: uuid
-      stageUuid: "d016acac-2447-860d-a137-24c948783807"
+      stageUuid: "1e470215-810f-8fe0-8c36-e9f2a0b76b9c"
 version: 2
 ---
 # insurance
 
 A schema.org component word, collided out of schema.org compounds — fused from HealthInsurancePlan · InsuranceAgency · includedInHealthInsurancePlan ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — health · [[plan]] · [[agency]] · [[included]]
+Entangled with — health · [[plan]] · agency · included
 
 Attested in schema.org — HealthInsurancePlan · InsuranceAgency · includedInHealthInsurancePlan
 

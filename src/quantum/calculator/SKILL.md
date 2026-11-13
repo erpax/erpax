@@ -3,13 +3,13 @@ name: calculator
 description: "Use when computing in the digital-root substrate — a calculator that folds arithmetic to mod-9 (the rodin group), so every result is a single digit; deterministic and content-addressable."
 atomPath: "quantum/calculator"
 coordinate: "quantum/calculator · 5/round · 91503624"
-contentUuid: "132c0e0a-4a94-5e02-81ec-b9e40b00a22f"
+contentUuid: "ad0144f0-9269-5ff5-904a-60866202c6b2"
 diamondUuid: "5d69e696-2f95-8104-ba6b-e332b36baafd"
 uuid: "91503624-0cc4-83aa-81b1-53dfd8b98218"
 horo: 5
 typography:
   partition: quantum
-  bondDegree: 30
+  bondDegree: 24
 standards:
   - "the digital-root / mod-9 group ([[rodin]])"
   - "the digital-root / mod-9 group (rodin)"
@@ -52,7 +52,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "e04a0d4a-97ff-8e0c-97e4-d0f7a8eb2f91"
-    contentUuid: "132c0e0a-4a94-5e02-81ec-b9e40b00a22f"
+    contentUuid: "ad0144f0-9269-5ff5-904a-60866202c6b2"
 version: 2
 ---
 # quantum/calculator — the mod-9 calculator
@@ -65,4 +65,4 @@ Matter-twin: `src/quantum/calculator/index.ts` (`add` · `mul` · `fold`). Compo
 
 @standard the digital-root / mod-9 group (rodin)
 
-<sub>content-uuid `132c0e0a-4a94-5e02-81ec-b9e40b00a22f` · account `quantum/calculator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `ad0144f0-9269-5ff5-904a-60866202c6b2` · account `quantum/calculator` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

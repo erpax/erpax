@@ -2,41 +2,41 @@
 name: boat
 description: "Use when reasoning about boat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/boat"
-coordinate: "vocabulary/boat · 2/share · 9a78637e"
-contentUuid: "a0aa7b55-b9bd-5425-a7a6-6623b69757a5"
-diamondUuid: "2ce02bab-8105-8a3a-a942-ec6fff795698"
-uuid: "9a78637e-be23-8aee-9e0b-bfdda4b0851f"
-horo: 2
+coordinate: "vocabulary/boat · 8/crest · 131169ad"
+contentUuid: "f3ff1ac0-5cfd-515f-970e-3f5975f24d70"
+diamondUuid: "9cc974e9-f610-822e-96be-62831a7f571b"
+uuid: "131169ad-d766-88d2-82cc-9c312f972fea"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 26
+  bondDegree: 15
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "0425376c-6040-8d06-ad7b-befc49db5be7"
+  computationUuid: "a85981dd-fc8f-8430-af3c-e37ab414dc5f"
   stages:
     - stage: path
       stageUuid: "1f93f544-9761-86dd-8293-38ef5dcc857f"
     - stage: trinity
       stageUuid: "49ecbd15-3339-849f-bfef-a9b9e77bbadc"
     - stage: boundary
-      stageUuid: "5f484c34-73ff-8dc4-abcf-33c37fd65638"
+      stageUuid: "10e613d3-628d-82b3-aede-7c5afb99e2bb"
     - stage: links
-      stageUuid: "667607dd-4878-8167-88c1-bc01681d201b"
+      stageUuid: "34447f47-82b7-8fc9-88fd-28a1412fcd18"
     - stage: horo
-      stageUuid: "6adae10d-6a22-81c5-82a1-3913adb0b173"
+      stageUuid: "aa1c1bbd-7fcd-80d4-904c-7dc2692f3cac"
     - stage: seal
       stageUuid: "1c129d89-67bf-8bb6-8740-c7a1fb326c67"
     - stage: uuid
-      stageUuid: "f68d8ef0-6b37-8928-ae3c-49ea4e59ed7b"
+      stageUuid: "107d19f5-cc57-8912-aa53-f298b0e9ec6f"
 version: 2
 ---
 # boat
 
 A schema.org component word, collided out of schema.org compounds — fused from BoatReservation · BoatTerminal · BoatTrip · arrivalBoatTerminal · departureBoatTerminal ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[reservation]] · terminal · trip · [[arrival]] · [[departure]]
+Entangled with — reservation · terminal · trip · [[arrival]] · departure
 
 Attested in schema.org — BoatReservation · BoatTerminal · BoatTrip · arrivalBoatTerminal · departureBoatTerminal
 

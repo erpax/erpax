@@ -2,19 +2,19 @@
 name: sti
 description: "Use when reasoning about sti — Payload has no class inheritance. The STI analog is **one collections collection + a flat discriminator** (Rails' default) — is the polymorphic-*association* analog, blocks the het"
 atomPath: sti
-coordinate: "sti · 1/base · 1f441634"
-contentUuid: "cb539514-cb45-56ea-a08a-1356c4aa0046"
-diamondUuid: "b8dbc424-fe25-8044-8ad6-965009dab4fa"
-uuid: "1f441634-bd8e-80c3-84ea-2f09d7358c6b"
-horo: 1
+coordinate: "sti · 8/crest · a0bef7d0"
+contentUuid: "5ad85322-9872-522b-b427-d2e0abb1dbd1"
+diamondUuid: "b93f703d-cb77-86c3-a144-ac70acac036e"
+uuid: "a0bef7d0-b333-88e1-8086-7d23acc5dd4f"
+horo: 8
 typography:
   partition: sti
-  bondDegree: 3398
+  bondDegree: 302
 standards:
   - "W3C-JSON-LD-1.1"
 bindings: []
 signatures:
-  computationUuid: "a7901fbd-e0e5-88ea-94ca-f49b02a77669"
+  computationUuid: "1d4bd9e3-98b2-8260-bfd7-494af14c9869"
   stages:
     - stage: path
       stageUuid: "658a859b-6b3c-8831-9919-2bf34f7a2de6"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "75c2e332-3891-87c5-985d-401ad0a191e7"
     - stage: links
-      stageUuid: "c25aac00-5a3b-8538-a39f-b4f6538459dc"
+      stageUuid: "701d5fd5-e986-8966-82aa-e4b721c81fbb"
     - stage: horo
-      stageUuid: "9b4e016d-49e8-8f6a-9a04-bdf4443a9c99"
+      stageUuid: "47841aec-6144-84aa-b74b-adfde3092ea9"
     - stage: seal
       stageUuid: "0c84fff2-81c2-8372-882f-cf36ddd0e499"
     - stage: uuid
-      stageUuid: "f0b6b4f0-bddd-8899-ac00-7a7f7ba8e7d1"
+      stageUuid: "910de044-2859-8d35-969e-f7274956a78c"
 version: 2
 ---
 # sti — single table inheritance (one collection · `type` · TS discriminated union)
@@ -54,4 +54,4 @@ Branch on `doc.type` in [[hooks]]/[[access]] — `matchStiType` for exhaustive d
 ## Composition
 `config`→[[collections]] (the one table) · [[field]] (`type` + conditional fields) · [[types]] (the union overlay) · [[hooks]]/[[access]] (per-type behavior) · [[identity]] (content-uuid still spans subtypes) · ported from Rails STI via [[port]].
 
-**Law — [[schema]]** architecture collapses multiword schema patterns into single-word atoms. STI is not merely a Rails port but a fractal cell: the discriminated union (type + subtype-fields + narrowing) replicates at every level — [[collections]], [[hooks]], [[access]], [[types]] — each encoding the same schema-free branching logic without a `schema` prefix. This is why schema.org's type hierarchies dissolve into [[harmony]] here: one concept → one atom, typed at [[fractal]] depth.
+**Law — [[schema]]** architecture collapses multiword schema patterns into single-word atoms. STI is not merely a Rails port but a fractal cell: the discriminated union (type + subtype-fields + narrowing) replicates at every level — [[collections]], [[hooks]], [[access]], [[types]] — each encoding the same schema-free branching logic without a `schema` prefix. This is why schema.org's type hierarchies dissolve into [[harmony]] here: one concept → one atom, typed at fractal depth.

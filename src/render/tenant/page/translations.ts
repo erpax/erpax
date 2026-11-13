@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "page",
-    "uuid": "f9f2ff28-589c-843e-b9c4-f2fb1c1fdc2c",
+    "uuid": "9b283d7a-5ff5-8e12-aed2-f82c3815941d",
     "words": [
       "page"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about page — A public tenant page is a hero followed by its layout blocks, inside an . That is the whole atom, and its value is that it exists **once**: the same composition served from the…",
-    "uuid": "6d137a06-3859-85aa-b36d-7c54f4df1ad0",
+    "uuid": "48ba2e6b-f2cf-89be-8f74-c033d89bce76",
     "words": [
       "use",
       "when",

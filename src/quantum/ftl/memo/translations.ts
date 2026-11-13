@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "memo",
-    "uuid": "1daa857a-ef50-8b2f-8a77-4176ee3482c4",
+    "uuid": "0be90fb7-d601-85f2-a25a-ea0280d1178e",
     "words": [
       "memo"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about memo — models cost as ** ** — it falls as reuses grow, and that falling is what lets reach ∞ and the FTL claim hold.",
-    "uuid": "1d01050a-54ce-867a-b9fa-7ec391b27141",
+    "uuid": "6550c364-f322-8573-b4e2-de4b14d4a3e2",
     "words": [
       "use",
       "when",

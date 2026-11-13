@@ -3,13 +3,13 @@ name: pi
 description: "Use when π must be read as a theorem, not a hardcoded constant — the purest rosetta: a finite seed (3), a fold (the point), and an infinite tail computed at every step. The Bailey–Borwein–Plouffe formula computes the n-th hex digit directly, no prior digits — answered within, read not stored. Even the infinite is a fold of the finite; theorems replace hardcoded values, all the way to π."
 atomPath: pi
 coordinate: "pi · 2/share · 1a748579"
-contentUuid: "0264d3b9-f389-5f5a-b023-f644baadce24"
+contentUuid: "0afd5b28-4d04-5f93-8c71-a8d24c268985"
 diamondUuid: "6e06ffbc-d2e3-8831-b3fa-d7d8b8086340"
 uuid: "1a748579-834e-8fb6-8f5a-f745af336c36"
 horo: 2
 typography:
   partition: pi
-  bondDegree: 29
+  bondDegree: 27
 standards:
   - "Bailey–Borwein–Plouffe (1997) — the base-16 digit-extraction formula for π"
 bindings: []

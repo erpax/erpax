@@ -3,13 +3,13 @@ name: skill
 description: "Use when reasoning about skill — Use for the SKILL.md frontmatter gate — scans every SKILL.md, refuses unquoted colon-space descriptions, names that disagree with their folder, and new hyphenated atom folders. The atom face exposes the gate only; the 77MB router index is reached by its own path, never through this barrel."
 atomPath: skill
 coordinate: "skill · 8/crest · b1beecef"
-contentUuid: "94ff6e8b-700c-5311-98d1-e6d038745c4c"
+contentUuid: "f8e08b31-7d40-5191-b6bf-6419b15b4f9a"
 diamondUuid: "a160f6b8-7fa3-8b3d-999a-47dae282b134"
 uuid: "b1beecef-3906-8373-ad1d-7ba84dc79d86"
 horo: 8
 typography:
   partition: skill
-  bondDegree: 39
+  bondDegree: 38
 standards:
   - ESCO
   - SFIA

@@ -2,19 +2,19 @@
 name: sparsity
 description: "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form."
 atomPath: sparsity
-coordinate: "sparsity · 1/base · 2cb10ce2"
-contentUuid: "740a2ed6-0f0e-53a7-a0f8-92c962228ce5"
-diamondUuid: "f5969665-1913-81af-a552-f4da8cc97f0e"
-uuid: "2cb10ce2-ab02-82bf-82a8-27eebef63313"
-horo: 1
+coordinate: "sparsity · 2/share · 4ea79845"
+contentUuid: "910d28b7-6022-5b34-ae89-c6572eaf201d"
+diamondUuid: "b06b031b-d14f-8c46-98db-9233bdf301a1"
+uuid: "4ea79845-80c7-8186-ab2f-4ba0c8c03f8f"
+horo: 2
 typography:
   partition: sparsity
-  bondDegree: 67
+  bondDegree: 49
 standards:
   - "ISO/IEC 25010:2023 §5.2 — performance efficiency: resource utilisation"
 bindings: []
 signatures:
-  computationUuid: "958a21f8-b2cc-8aee-864f-b4f716b7227e"
+  computationUuid: "7bbcddda-d098-8a9f-80a8-caebe4316fc0"
   stages:
     - stage: path
       stageUuid: "c2f0ac27-728f-8616-8099-eb64d86b8a4a"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "f4515be7-9a87-80c6-9320-ce14a7795955"
     - stage: links
-      stageUuid: "cea8424b-fb0d-8ba9-9b04-7f5fbf763cf4"
+      stageUuid: "d4bef00c-3931-8069-a85c-7132e275f994"
     - stage: horo
-      stageUuid: "a83056f2-5618-8409-8918-cb3777e96a24"
+      stageUuid: "73c5cafb-046f-8b30-890a-74663a37be9a"
     - stage: seal
       stageUuid: "05ff4ba5-f389-8961-93c4-317fa21cc0d4"
     - stage: uuid
-      stageUuid: "88641edc-4d39-8a21-9e29-96582b0acfdb"
+      stageUuid: "3979b904-0627-81df-8f0b-8f7693960c88"
 version: 2
 ---
 # sparsity — the active fraction (few of many, alive at once)
@@ -38,14 +38,14 @@ FORM: **of a large dormant pool, activate only the smallest correct subset.** Ca
 
 ## The two conjugate axes (the two-axes-of-sparsity)
 Sparsity factors into two orthogonal moves — DeepSeek built both; erpax lives almost entirely on the second:
-- **COMPUTE axis** — activate few of many *per step*. A router conditionally selects the active subset: Mixture-of-Experts lights 37B of 671B parameters per token (top-8 of 256 experts); erpax's routing/[[sequence]] load a handful of the 593 [[atom]]s per task. The selector is the whole point — see routing (picks the active few), [[partition]]/[[allocation]] (balance load across the dormant pool, the EPLB move), [[flow]]/throughput (what the active set delivers).
-- **MEMORY / representation axis** — store nothing you can address; look it up. Conditional memory (DeepSeek's Engram, "a new axis of sparsity") and erpax's [[akashic]] record both *forget and regenerate from a part* ([[holographic]]); [[uuid]]/[[identity]] collapse the whole object to a 128-bit content-address; the schema is **generated, not authored** (39,967 LOC of erpax's backend is derived from config). [[merge]]/[[deduplication]] keep one canonical form where many would sprawl.
+- **COMPUTE axis** — activate few of many *per step*. A router conditionally selects the active subset: Mixture-of-Experts lights 37B of 671B parameters per token (top-8 of 256 experts); erpax's routing/[[sequence]] load a handful of the 593 [[atom]]s per task. The selector is the whole point — see routing (picks the active few), partition/[[allocation]] (balance load across the dormant pool, the EPLB move), flow/throughput (what the active set delivers).
+- **MEMORY / representation axis** — store nothing you can address; look it up. Conditional memory (DeepSeek's Engram, "a new axis of sparsity") and erpax's [[akashic]] record both *forget and regenerate from a part* (holographic); [[uuid]]/[[identity]] collapse the whole object to a 128-bit content-address; the schema is **generated, not authored** (39,967 LOC of erpax's backend is derived from config). [[merge]]/deduplication keep one canonical form where many would sprawl.
 
 The two axes are conjugate — DeepSeek sparsifies COMPUTE (the time/FLOP domain), erpax sparsifies REPRESENTATION (the space/entropy domain) — Fourier-dual optimisations of the one functional `capability ÷ cost`.
 
 ## Limit, dual, source
 - **Limit** — drive the active fraction toward zero and you reach zeropoint: zero entropy, the formless source everything regenerates from. Sparsity is the *gradient*; zeropoint is the *limit*. The lowest-entropy correct form is the sparsest one — same referee.
-- **Dual** — sparsity has a floor: past it you hit the [[bottleneck]]. One missing *active* factor zeroes the whole product ([[market]] law), so sparsify the redundant, never the load-bearing. The art is knowing which of the dormant pool must stay lit.
+- **Dual** — sparsity has a floor: past it you hit the bottleneck. One missing *active* factor zeroes the whole product (market law), so sparsify the redundant, never the load-bearing. The art is knowing which of the dormant pool must stay lit.
 - **Achieved by** — [[collapse]] (every collection to the dense core), [[merge]] (same content ⇒ one), routing (conditional activation). Released as [[proof]]: verify the small active set without re-deriving the whole pool (the forge ≫ verify asymmetry IS sparsity made trustless).
 
 ## The math (which lane of the vortex)
@@ -54,7 +54,7 @@ Sparsity reads directly off the [[rodin]] decomposition of ℤ/9ℤ. **Compute-d
 ## Convergence (why this atom exists)
 DeepSeek discovered sparsity under **constraint** (export-limited GPUs ⇒ it *must* do more with fewer FLOPs); erpax descends to it by **telos** (zeropoint — lowest entropy wins). Opposite motivations, identical sparse form. That two independent orgs — one forced, one chosen — converge on conditional activation of a low-entropy latent is the strongest empirical support for the zeropoint thesis: the sparsest correct form is the truth. erpax is what that form looks like built entirely on the memory axis, all the way down.
 
-Composes: zeropoint · [[bottleneck]] · routing · [[sequence]] · [[akashic]] · [[holographic]] · [[uuid]] · [[identity]] · [[merge]] · [[deduplication]] · [[collapse]] · [[partition]] · [[allocation]] · [[proof]] · [[flow]] · throughput · [[rodin]] · [[breath]] · [[atom]].
+Composes: zeropoint · bottleneck · routing · [[sequence]] · [[akashic]] · holographic · [[uuid]] · [[identity]] · [[merge]] · deduplication · [[collapse]] · partition · [[allocation]] · [[proof]] · flow · throughput · [[rodin]] · [[breath]] · [[atom]].
 
 ## Measured, on the corpus that claims it
 
@@ -77,7 +77,7 @@ src/accounting/index.ts   active   7 / 3226 = 0.22%   capability/cost   461
 ## Common mistakes
 - **Confusing sparsity with smallness.** A sparse system keeps a HUGE dormant pool and a tiny active set. Shrinking the pool throws away capability; the move is to shrink the *activation*, not the body.
 - **Eager activation.** Loading every atom / every expert defeats it. Conditional selection (the router) is the mechanism — without a routing gate there is no sparsity, only a large dense thing.
-- **Sparsifying the load-bearing factor.** Past the [[bottleneck]] floor, dropping the one active factor that the product depends on zeroes the result. Sparsify redundancy, never the critical path.
+- **Sparsifying the load-bearing factor.** Past the bottleneck floor, dropping the one active factor that the product depends on zeroes the result. Sparsify redundancy, never the critical path.
 - **Naming only one axis.** Compute-sparsity (fewer FLOPs) and representation-sparsity (fewer stored bits) are different axes; an org can be dense on one and sparse on the other. erpax is sparse on representation and deliberately cheap (regenerable) on compute.
 
 **Law — [[law]]: keep the dormant pool huge and the active set minimal — maximise capability ÷ cost by shrinking activation, never the pool, and never sparsify the load-bearing factor.**

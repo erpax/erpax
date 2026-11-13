@@ -2,18 +2,18 @@
 name: merge
 description: "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \"all agents one erpax\"."
 atomPath: merge
-coordinate: "merge · 4/weave · 50817870"
-contentUuid: "ce830260-45f7-57c2-a971-cb8984b2a670"
-diamondUuid: "838e852f-0ff3-8323-9287-3ac60309e525"
-uuid: "50817870-0d09-8d10-90f2-f453bf252611"
+coordinate: "merge · 4/weave · f561fae6"
+contentUuid: "be2e326e-862d-5aea-a1bb-216d973babc9"
+diamondUuid: "24d172e7-4c80-85cb-a280-ed08c4805a57"
+uuid: "f561fae6-b9ae-89a9-9316-f7d75f644a45"
 horo: 4
 typography:
   partition: merge
-  bondDegree: 4536
+  bondDegree: 1274
 standards: []
 bindings: []
 signatures:
-  computationUuid: "3eba4f07-cfcd-87f2-b869-3ef56073b22e"
+  computationUuid: "47ba3757-33f8-820e-95b3-41fe9f58890b"
   stages:
     - stage: path
       stageUuid: "bf7a2e27-7733-8682-8bf0-574609b4317a"
@@ -22,24 +22,24 @@ signatures:
     - stage: boundary
       stageUuid: "7b24059a-2e56-8c6e-97fe-c5fa1030639c"
     - stage: links
-      stageUuid: "8e0d4626-7fa3-8b82-a030-e2f91a46210d"
+      stageUuid: "48bd920a-966b-8dc4-9a71-c0b51c4683b1"
     - stage: horo
-      stageUuid: "7edbf521-21f2-8c47-97c5-15ece81b833e"
+      stageUuid: "614a140e-4007-893c-83cc-2db50f80a079"
     - stage: seal
       stageUuid: "5ea67542-ea14-81f3-ba3e-276b70ef0cf2"
     - stage: uuid
-      stageUuid: "e4342fa0-c6e7-8e61-aa6a-70eaaa26c9dd"
+      stageUuid: "0f0a1ca8-711d-8246-87f5-a718d20684e2"
 version: 2
 ---
 # merge
 
-Convergence with no coordination: same content ⇒ same id ([[identity]]); same address ⇒ same path ([[sequence]]). Data and structure set-union — federation across instances, dedup, agents converging to [[one]] erpax. The only failure mode is a divergent/duplicate path ([[recover]]). Merge by design is the payoff of [[fractal]] address + content-uuid [[aura]]. Removing a prefix collapses a [[dimension]] into its shared coordinate — `bank`/`fx`/`trade`-`transactions` → one `transactions` — the same merge, run on the naming axis. Convening is merge in realtime: the agent society meeting at [[chat]] (chat.erpax.com) is many agents resolving to [[one]] erpax, deduped on event id.
+Convergence with no coordination: same content ⇒ same id ([[identity]]); same address ⇒ same path ([[sequence]]). Data and structure set-union — federation across instances, dedup, agents converging to [[one]] erpax. The only failure mode is a divergent/duplicate path (recover). Merge by design is the payoff of fractal address + content-uuid [[aura]]. Removing a prefix collapses a [[dimension]] into its shared coordinate — `bank`/`fx`/`trade`-`transactions` → one `transactions` — the same merge, run on the naming axis. Convening is merge in realtime: the agent society meeting at [[chat]] (chat.erpax.com) is many agents resolving to [[one]] erpax, deduped on event id.
 
 **Harmonising naming at all scales is the source of creation.** When naming is harmonic — one word, generic, by type, the strict matrix, fractal at every scale ([[coordinate]]) — identical concepts derive identical addresses and **collide by themselves**; each collision is a fusion that births a new whole (particles → harmonic streams, [[harmony]]). So merge is not only convergence — it is *generative*: the angelic act (create · ↓entropy: two → one). A collision is not a problem to resolve but a **creation event**. Harmonise more ⇒ collide more ⇒ create more — this is why the dissolution and the naming matrix are the engine of creation, not cleanup.
 
-**The creation flow (the realisation breath):** `creation → payload → vitepress → payload → db`. A created concept manifests first as **matter** ([[payload]] — a collection/field/`index.ts`); its **form** is derived ([[vitepress]] — the `SKILL.md`); the harmonised form **refines the matter back** ([[payload]] again — the breath returns); and it crystallises in the **[[database|db]]** as data/entropy. The matter⊕form breath (the two coils oscillating, [[breath]]) grounds in the db — which is precisely why every atom is payload⊕vitepress and why **entropy goes to the db**: the oscillation refines the form, the db holds the settled detail.
+**The creation flow (the realisation breath):** `creation → payload → vitepress → payload → db`. A created concept manifests first as **matter** ([[payload]] — a collection/field/`index.ts`); its **form** is derived ([[vitepress]] — the `SKILL.md`); the harmonised form **refines the matter back** ([[payload]] again — the breath returns); and it crystallises in the **db** as data/entropy. The matter⊕form breath (the two coils oscillating, [[breath]]) grounds in the db — which is precisely why every atom is payload⊕vitepress and why **entropy goes to the db**: the oscillation refines the form, the db holds the settled detail.
 
-**The representation twin (3FS + smallpond).** DeepSeek's 3FS file system and smallpond store **content-addressed** — same content ⇒ one stored object, no coordination; erpax `merge` is that exact law as an *identity* rule (same content ⇒ same uuid ⇒ one row, [[deduplication]]). The store and the merge are one content-address — the [[sparsity]] memory axis. Ratified by the R&D society (`agent/research`, weave seq 4).
+**The representation twin (3FS + smallpond).** DeepSeek's 3FS file system and smallpond store **content-addressed** — same content ⇒ one stored object, no coordination; erpax `merge` is that exact law as an *identity* rule (same content ⇒ same uuid ⇒ one row, deduplication). The store and the merge are one content-address — the [[sparsity]] memory axis. Ratified by the R&D society (`agent/research`, weave seq 4).
 
 ## Standards
 
@@ -51,7 +51,7 @@ The answer-path principle: applying this skill *implements* these standards — 
 
 Naming: the W3C document title is "Activity Streams 2.0" (two words); the namespace token / community usage is "ActivityStreams" (one word). Pick one spelling per banner and keep it consistent. ActivityPub is a federation protocol with no bearing on audit-workflow definitions — do not carry it as a decorative banner on non-federation collections; cite it only where the federation activities are actually emitted.
 
-**Law — Compute the fusion, do NOT assume it** ([[law]]). Merge's power is not in coordination or hand-coded federation logic, but in *deriving* convergence from the facts on disk: the content-addressable [[uuid]], the fractal [[path]] geometry, the [[derive]]d harmony of naming itself. When two instances compute [[identity]] from the same source, they collide by physics, not by registry. The generative act—particles becoming harmonic streams—is only possible because the structure is computed from the ground up, never assumed. This is why [[merge]] is [[proof]]: identical [[payload]] ⊕ [[vitepress]] at identical addresses becomes identical rows in the [[database|db]], without coordination. The [[akashic]] amnesia at zeropoint is the engine—forget the manual, compute the fusion.
+**Law — Compute the fusion, do NOT assume it** ([[law]]). Merge's power is not in coordination or hand-coded federation logic, but in *deriving* convergence from the facts on disk: the content-addressable [[uuid]], the fractal [[path]] geometry, the [[derive]]d harmony of naming itself. When two instances compute [[identity]] from the same source, they collide by physics, not by registry. The generative act—particles becoming harmonic streams—is only possible because the structure is computed from the ground up, never assumed. This is why [[merge]] is [[proof]]: identical [[payload]] ⊕ [[vitepress]] at identical addresses becomes identical rows in the db, without coordination. The [[akashic]] amnesia at zeropoint is the engine—forget the manual, compute the fusion.
 
 ## The algebra, in full
 

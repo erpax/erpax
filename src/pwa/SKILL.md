@@ -2,14 +2,14 @@
 name: pwa
 description: "Use when the offline web surface must stay trustworthy — service-worker cache keys, background-sync queue durability, manifest integrity, push dedup; every Progressive Web App pain point collapsed to a content-uuid problem."
 atomPath: pwa
-coordinate: "pwa · 2/share · 728103f0"
-contentUuid: "b2d24ea6-eda6-55a3-9c0c-f2d2aee57d16"
-diamondUuid: "8b28524c-57f9-82ed-8d7f-866733adbd0b"
-uuid: "728103f0-5777-8a84-be8e-6ee39d70517e"
-horo: 2
+coordinate: "pwa · 7/descent · e2179369"
+contentUuid: "54117049-063f-5594-8249-072d39635981"
+diamondUuid: "4c77f878-7a26-8bdd-a4f8-7581a6d851b1"
+uuid: "e2179369-4ce9-802e-ae60-600d483eef2c"
+horo: 7
 typography:
   partition: pwa
-  bondDegree: 65
+  bondDegree: 58
 standards:
   - RFC 9562 §5.8 + RFC 8785 (uuid composition)
   - "RFC 9562 §5.8 + RFC 8785 (uuid composition)`"
@@ -30,7 +30,7 @@ bindings:
   - "r2_buckets/NEXT_INC_CACHE_R2_BUCKET"
   - "r2_buckets/R2"
 signatures:
-  computationUuid: "2c32c628-ffbc-835b-a6cd-4cb1ec9063e0"
+  computationUuid: "ecb4deaf-e1ba-8d29-8f99-84a529d4d32d"
   stages:
     - stage: path
       stageUuid: "676397c4-de7a-80f0-a0ed-b7ebbf44bd01"
@@ -39,13 +39,13 @@ signatures:
     - stage: boundary
       stageUuid: "1c0228f1-27d0-88b8-b2ee-0e9f8208364c"
     - stage: links
-      stageUuid: "3ebf72d4-ca43-84f7-bbf1-614f5dde77db"
+      stageUuid: "caeb88ea-0b88-82f1-85b4-57e6bbdde9d9"
     - stage: horo
-      stageUuid: "fbaa6c5c-8408-85bb-8921-d052716032b5"
+      stageUuid: "5da6a2cd-ae0f-813b-b33e-edd3bf912699"
     - stage: seal
       stageUuid: "5bbab41d-c2cb-8eab-b456-5c2d964fe8c9"
     - stage: uuid
-      stageUuid: "73e763f1-5156-80a4-aa98-b36bf862e5e5"
+      stageUuid: "6aac8866-1be5-8479-b44f-92cc0a7675ac"
 version: 2
 ---
 # pwa — every offline pain point collapses to a content-uuid
@@ -57,7 +57,7 @@ FORM: **the Progressive Web App surface is made trustworthy by content-addressin
 - **manifest integrity** — the Web App Manifest is content-addressed; recompute the uuid to verify it was not tampered ([[proof]]). `publishManifest`, `verifyManifest`.
 - **push dedup** — a notification delivered twice (send + retry) collides on its content-uuid, so the duplicate never reaches the user. `preparePush`, `dedupPush`.
 
-The conservation check `checkPwaUuidIntegrity` runs all three invariants at once — cache map-key equals `asset.uuid`, the queue chain is unbroken, the manifest recomputes — the same architectural impossibility the in-ledger checks enforce, now at the edge, one law at every scale ([[fractal]]). A tampered asset, a forged queue link, or an altered manifest is simply a different id, so forging the offline window costs as much as forging the ledger ([[tamper/cost]]).
+The conservation check `checkPwaUuidIntegrity` runs all three invariants at once — cache map-key equals `asset.uuid`, the queue chain is unbroken, the manifest recomputes — the same architectural impossibility the in-ledger checks enforce, now at the edge, one law at every scale (fractal). A tampered asset, a forged queue link, or an altered manifest is simply a different id, so forging the offline window costs as much as forging the ledger ([[tamper/cost]]).
 
 The two sides are [[duality]]: the offline replica (the device cache + queue) and the canonical server, reconciled by content alone — the same uuid'd state lives on desktop and mobile, no coordination. This is the offline-edge organ of the society; the standards it cites are the W3C web platform incorporated by reference (see [[standard]]).
 
@@ -66,7 +66,7 @@ Sequence position: **5** (round — the offline excursion that returns and recon
 **Law — [[law]]: the offline web surface is made trustworthy by content-addressing, not the network — every PWA pain (cache invalidation, sync conflict, push dedup, manifest tamper) is one [[uuid]] problem, so forging the offline window costs as much as forging the ledger ([[tamper/cost]]).**
 
 ## Deployment face — every [[diamond]] can surface offline
-Alongside the uuid-driven offline layer, **pwa** is one of three deployment faces every sealed [[diamond]] projects ([[diamond]] · [[worker]] · [[plugin]]). The **PWA face** is the installable, offline-capable shell: service worker, Web App Manifest, content-addressed [[cache]] in `public/`. Example: [[public]] static assets as the PWA shell. `deploymentFaces` in `@/diamond` marks when this face materialises for a given `DiamondModel`.
+Alongside the uuid-driven offline layer, **pwa** is one of three deployment faces every sealed [[diamond]] projects ([[diamond]] · worker · [[plugin]]). The **PWA face** is the installable, offline-capable shell: service worker, Web App Manifest, content-addressed [[cache]] in `public/`. Example: [[public]] static assets as the PWA shell. `deploymentFaces` in `@/diamond` marks when this face materialises for a given `DiamondModel`.
 
 **Law — [[law]]: the PWA deployment face is the offline installable shell of a [[diamond]] — service worker, manifest, and content-addressed cache that survives disconnect from the canonical server.**
 

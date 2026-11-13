@@ -2,18 +2,18 @@
 name: dev
 description: "Use when reasoning about dev — erpax is a multi-tenant accounting platform: **Payload 4 CMS + Next.js 16**, backed by **Cloudflare D1** (SQLite) and R2, served in prod via OpenNext/workerd. Locally there is no r"
 atomPath: "run/dev"
-coordinate: "run/dev · 1/base · d13ffdc7"
-contentUuid: "0c8d2047-d8a3-51da-a00f-53a48d42089c"
-diamondUuid: "135108d8-e25d-8442-855a-68992af93876"
-uuid: "d13ffdc7-1ac7-8bf0-9ca3-c93e53dab7ba"
-horo: 1
+coordinate: "run/dev · 5/round · cd7b1311"
+contentUuid: "e43af296-8547-5aa6-9d03-79bf70b3a1c3"
+diamondUuid: "be357ad1-b488-86dc-9e5b-8a934f81d1e4"
+uuid: "cd7b1311-d236-8b62-b72e-081a7cd4a982"
+horo: 5
 typography:
   partition: run
-  bondDegree: 18
+  bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b047a968-026f-8885-b918-bf096cde5572"
+  computationUuid: "67fd1181-8717-8844-92c7-f9c6dd7bf743"
   stages:
     - stage: path
       stageUuid: "df9eef96-8448-8d48-ac42-bf649026aafd"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "b3688d1d-55f8-8a8e-a2a1-9ad1ad26990a"
     - stage: links
-      stageUuid: "3178a008-71f7-8ff5-bbe0-9532f40650f5"
+      stageUuid: "f07baece-b38d-81b0-9bca-9c3224c08600"
     - stage: horo
-      stageUuid: "819508ce-e690-8331-967f-4cccee353adb"
+      stageUuid: "8c9de601-fce9-8a23-abfb-6692cd7d4cc3"
     - stage: seal
       stageUuid: "942e3de2-7c1c-8a60-9475-a2f80c762017"
     - stage: uuid
-      stageUuid: "26e63f16-dff5-83a6-8ca6-1aa622e64677"
+      stageUuid: "e6d29969-d743-8466-acf9-1e23882f5ac7"
 version: 2
 ---
 # run/dev — launch & drive the app locally
@@ -197,7 +197,7 @@ broken-in-dev admin, see Gotchas).
   `all`. Env: `BASE_URL`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`, `SHOT_DIR`, `HEADED=1`.
 - `smoke.ts` — Local API headless boot + read smoke. Adapt it to call any service/fn.
 
-Related: [[deploy]] (the prod sibling — `payload migrate`, no dev-push) · [[database]]
+Related: [[deploy]] (the prod sibling — `payload migrate`, no dev-push) · database
 (adapter, migrations, the dev-push behaviour) · [[bindings]] (D1/R2/Durable Objects — the
 `no such Durable Object class` warnings) · [[api]] (the Local API ops `smoke.ts` calls).
 

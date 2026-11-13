@@ -2,14 +2,14 @@
 name: corruption
 description: "Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable."
 atomPath: "anti/corruption"
-coordinate: "anti/corruption · 4/weave · 1a247019"
-contentUuid: "55a19e93-ef4a-5e5c-89f6-19a246960b26"
-diamondUuid: "7ac1b081-1c97-8993-b544-e68b068c2c10"
-uuid: "1a247019-f9fe-8485-baf8-dcd9c1a615dc"
-horo: 4
+coordinate: "anti/corruption · 5/round · 27429ec0"
+contentUuid: "81fa64c1-1754-5338-933a-40cf80536768"
+diamondUuid: "dbd65dea-ae02-8a0a-9e06-24c67fc4db63"
+uuid: "27429ec0-06b2-832c-abba-6f801acb6400"
+horo: 5
 typography:
   partition: anti
-  bondDegree: 69
+  bondDegree: 63
 standards:
   - "ISO-19011"
   - "ISO-19011`"
@@ -19,7 +19,7 @@ standards:
   - "SOX §404 segregation-of-duties internal-controls"
 bindings: []
 signatures:
-  computationUuid: "4c33cbe5-ab41-8c25-b9d7-bcb55f15ea3e"
+  computationUuid: "a3d66e56-5eff-8eb7-88d6-d3c4a3d79457"
   stages:
     - stage: path
       stageUuid: "29d53fec-2df7-8ef3-b27b-76fdbd140708"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "64d37a2e-2809-81d5-9905-ddd70eddd780"
     - stage: links
-      stageUuid: "0fb37050-1a1b-8491-b1fc-466d894ce031"
+      stageUuid: "3b1fc270-d1a3-8b73-965f-177d82565d05"
     - stage: horo
-      stageUuid: "f7993b93-06d1-87bf-abda-6da3e2d01d5b"
+      stageUuid: "59044d09-ad6c-82be-85a3-7efb978cb7b2"
     - stage: seal
       stageUuid: "e21c760a-79f7-8a0b-baad-c61cfdef37a5"
     - stage: uuid
-      stageUuid: "c8497f4e-cdb9-81cb-9719-45341dffa53b"
+      stageUuid: "86be13fc-324b-8930-b440-7e174cf40679"
 version: 2
 ---
 # anti-corruption — corruption foreclosed by construction, not policed by policy
@@ -48,7 +48,7 @@ FORM: **a ledger is corruption-free iff four invariants hold at once, each a dif
 
 `scanTransaction` runs all four; any finding is a corruption signal. All pure (no I/O) ⇒ testable. A document `afterChange` [[hooks]] hook + a scheduled audit job consume it over the live ledger, each pass emitting an audit [[event]].
 
-The costliest schemes are invisible to single-record checks — they live in the join across entities and across institutions (`cross-entity.ts`): self-dealing (approver is a beneficial owner of the payee), shell/ghost vendors, multiple-invoicing, bid-rotation rings, split purchases. The [[merge]] law itself is the multiple-invoicing detector: same content ⇒ same id, so one invoice claimed twice is a collision ([[holographic]]: the whole graph is recoverable, the [[fractal]] check runs at every scale — line, document, institution, federation).
+The costliest schemes are invisible to single-record checks — they live in the join across entities and across institutions (`cross-entity.ts`): self-dealing (approver is a beneficial owner of the payee), shell/ghost vendors, multiple-invoicing, bid-rotation rings, split purchases. The [[merge]] law itself is the multiple-invoicing detector: same content ⇒ same id, so one invoice claimed twice is a collision (holographic: the whole graph is recoverable, the fractal check runs at every scale — line, document, institution, federation).
 
 The two sides are [[duality]]: the in-ledger invariants (matter) and the cross-entity graph checks (the schemes immutability cannot see). This skill is the answer-path holding SOX §404 / COSO-2013 / ISO-27001 A.8.15–8.16 / FATF R.24 / ACFE forms — see [[standard]] for version pins.
 

@@ -2,21 +2,21 @@
 name: conservation
 description: "Use when reasoning about what is conserved across a flow — nothing is created or destroyed, only transformed (mass-energy; Noether — every continuous symmetry yields a conserved quantity), which in erpax IS double-entry — Σdebit=Σcredit, every config a balanced gateway, the pot conserved. The physics root of the accounting law; an open system conserves by accounting for what crosses its boundary (the borrowed anchor)."
 atomPath: conservation
-coordinate: "conservation · 7/descent · 2ac14132"
-contentUuid: "0d503521-e374-562d-ba01-222451040407"
-diamondUuid: "ffb994b3-a0a1-8e20-89d5-afb5847467db"
-uuid: "2ac14132-aaa9-8ef1-ab58-2c2dea4fb417"
-horo: 7
+coordinate: "conservation · 8/crest · 00a3a823"
+contentUuid: "48fdd128-14ff-56f6-a8d6-1af923c3c7a2"
+diamondUuid: "4dec9cac-6977-8727-9a99-f5b360a7ecff"
+uuid: "00a3a823-2f79-8b65-95be-25b15f4c1f7c"
+horo: 8
 typography:
   partition: conservation
-  bondDegree: 93
+  bondDegree: 81
 standards:
   - "Double-entry bookkeeping (Pacioli, 1494) — Σdebit = Σcredit"
   - First Law of Thermodynamics — energy is conserved in an isolated system
   - "Noether's theorem (E. Noether, 1918) — continuous symmetry ⇔ conserved quantity"
 bindings: []
 signatures:
-  computationUuid: "f5c441ba-b38a-8676-9c43-e14abded4729"
+  computationUuid: "863b450d-cbc1-885d-a6c5-9b95a65d3e7d"
   stages:
     - stage: path
       stageUuid: "4da50aaf-bca0-808d-a7b5-181ad11c2a01"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "8b6b9fc1-9632-8871-a4bf-e38d842115f3"
     - stage: links
-      stageUuid: "75860daa-e966-8f43-b6c6-52d1c1aea6f2"
+      stageUuid: "7a327f44-7deb-8a8a-9ad0-50e99891f741"
     - stage: horo
-      stageUuid: "523d9c45-fbeb-834a-bd52-49eec30858be"
+      stageUuid: "b25fba93-4725-838a-808c-80f64ec86553"
     - stage: seal
       stageUuid: "d44e2523-c79e-8d62-aac8-8d1127c3641c"
     - stage: uuid
-      stageUuid: "afcf61a4-1053-8dad-8483-781e1bd04986"
+      stageUuid: "67369c3f-d941-8730-9fcd-f2f1a9d38085"
 version: 2
 ---
 # conservation — nothing is lost, only transformed (the root of double-entry)
@@ -49,7 +49,7 @@ This IS the accounting law. A balanced [[entry]] — Σdebit = Σcredit ([[balan
 
 **Law — [[law]]: across any boundary a quantity is neither created nor destroyed, only transformed (Noether: every continuous symmetry yields a conserved quantity) — which IS double-entry, Σdebit=Σcredit ([[balance]]); an open system stays honest by [[accounting]] for what crosses the boundary (the borrowed [[anchor]]), so an unbalanced post is the bug the [[proof]] catches, never stores.**
 
-Composes [[balance]] · [[entry]] · [[entropy]] · energy · [[biomass]] · [[accounting]] · [[reconcile]] · [[anchor]] · [[proof]] · [[uuid]] · [[sustainability]] · [[ecosystem]] · [[law]].
+Composes [[balance]] · [[entry]] · [[entropy]] · energy · [[biomass]] · [[accounting]] · reconcile · [[anchor]] · [[proof]] · [[uuid]] · [[sustainability]] · [[ecosystem]] · [[law]].
 
 ## Matter-twin
 

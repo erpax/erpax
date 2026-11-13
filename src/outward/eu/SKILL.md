@@ -3,18 +3,18 @@ name: eu
 description: "Use when checking whether the pan-EU authorities erpax depends on have moved — VIES (the VAT-validation contract), the ECB currency set, the Peppol directory envelope, and the EU sanctions schema. Each probe asks a STABLE question so a moved address is real news, never the daily churn. CLI lane: erpax outward eu [--write]."
 atomPath: "outward/eu"
 coordinate: "outward/eu · 1/base · 40a3762c"
-contentUuid: "9c9505d9-bacb-5f79-9828-a88b048a153e"
-diamondUuid: "829d07be-636a-8c91-82fc-98718c1724bd"
+contentUuid: "0ad18528-cdf6-552f-8dff-4784a6f26bb7"
+diamondUuid: "b9f3b6cf-e4e6-89b8-a61c-b71e9ab6a55d"
 uuid: "40a3762c-4a7d-8c23-8ebb-8e018802801d"
 horo: 1
 typography:
   partition: outward
-  bondDegree: 33
+  bondDegree: 26
 standards:
   - "ISO 19011:2018 §6.4 — audit evidence: the receipt IS the evidence"
 bindings: []
 signatures:
-  computationUuid: "432605b7-4dda-8f28-8912-cce50d8514c4"
+  computationUuid: "ce195ef9-6de1-89f2-99fe-031068b9dc9b"
   stages:
     - stage: path
       stageUuid: "04e58abe-20e7-8273-9576-a9645d43c475"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "25d978cb-52e2-8c61-82af-75ecd2885785"
     - stage: horo
-      stageUuid: "862ab3d5-6185-8fa1-9311-7be55002ae97"
+      stageUuid: "d09578ff-035e-8749-b592-1259bc0fc5db"
     - stage: seal
       stageUuid: "5bd2941d-cd9f-8c13-8c83-767a51c3d7a6"
     - stage: uuid
-      stageUuid: "382423ce-d3f3-8d38-94c2-a7997a2208ed"
+      stageUuid: "5188cb4c-5377-8d53-8c01-14338b1b0313"
 version: 2
 ---
 # outward/eu — the four authorities erpax stands on, receipted

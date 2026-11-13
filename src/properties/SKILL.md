@@ -3,13 +3,13 @@ name: properties
 description: "Use when registering or querying the real-estate portfolio — owned, leased (IFRS-16 ROU), managed, or sublet buildings, sites, and land parcels — with area measurements (IPMS), occupancy, EPC energy rating, BIM reference, and links to spaces, fixed-assets, and leases. The IWMS property master collection."
 atomPath: properties
 coordinate: "properties · 7/descent · 75cb2ed7"
-contentUuid: "fa172923-8b0b-5b8c-8127-509f21b0c214"
+contentUuid: "840e7307-6653-5d5c-a75d-50620154654e"
 diamondUuid: "472a54aa-e01f-894c-9a4b-7f39ca366acf"
 uuid: "75cb2ed7-ff77-852f-8acd-5473e0c3172d"
 horo: 7
 typography:
   partition: properties
-  bondDegree: 20
+  bondDegree: 19
 standards:
   - "EN-15978:2011 sustainability-of-construction-works (when ESG-tracked)"
   - "EN-15978:2011 sustainability-of-construction-works (when ESG-tracked)`"

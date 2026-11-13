@@ -2,14 +2,14 @@
 name: requisitions
 description: "Use when capturing spend requests before a purchase order is issued — SOX §404 four-eyes gate (requisitioner ≠ approver), multi-line item costing, GL account, preferred vendor, and auditor-traceable PO→requisition→approval chain. The pre-PO approval-gate collection."
 atomPath: "cost/centers/purchase/requisitions"
-coordinate: "cost/centers/purchase/requisitions · 5/round · ba31fd67"
-contentUuid: "2e8b4e47-8cce-5810-ae58-c15e1941bfe4"
-diamondUuid: "5a8c99f7-ff22-80f9-bdb8-be073ab74329"
-uuid: "ba31fd67-e4d5-8329-9f76-c66e54147ad8"
-horo: 5
+coordinate: "cost/centers/purchase/requisitions · 8/crest · 3a9cd5c3"
+contentUuid: "ad7ee154-11db-56fe-b751-720d7b0f005e"
+diamondUuid: "137369b2-748a-8a0e-b9db-2f811c7dcec0"
+uuid: "3a9cd5c3-e85c-8772-af85-bcd0debf42e5"
+horo: 8
 typography:
   partition: cost
-  bondDegree: 27
+  bondDegree: 21
 standards:
   - "ISO-4217:2015 currency-codes"
   - "ISO-4217:2015 currency-codes`"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "4968a08d-caff-8e0e-92c3-bfbfe1c5113c"
+  computationUuid: "3519956a-febe-8faf-9411-b6f5459bdfcc"
   stages:
     - stage: path
       stageUuid: "c2e89d2a-b5e8-81cb-9429-458353f2337d"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "6afe717f-b505-8e74-acda-49833922441c"
     - stage: links
-      stageUuid: "dde586d1-1224-8a90-b83e-bfb6f3ce82f2"
+      stageUuid: "b82ef407-11ea-85ab-8291-637cc5c59b4c"
     - stage: horo
-      stageUuid: "7cb5b2c2-a6cf-8ca4-b85f-4e8d1f7d5738"
+      stageUuid: "934be2ed-4197-8290-931f-d0aef33db8be"
     - stage: seal
       stageUuid: "1d544be2-e1da-86bd-b8a3-901d65272e17"
     - stage: uuid
-      stageUuid: "5662819d-4a19-845c-ab31-c5b78129338d"
+      stageUuid: "b922b68f-017f-8fca-9430-38f030d611ba"
 version: 2
 ---
 # purchase-requisitions
@@ -60,4 +60,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 **Law — [[law]]: a requisition is the pre-PO approval gate — requisitioner ≠ approver (SOX §404 four-eyes / segregation-of-duties), and the PO→requisition→approval chain stays auditor-traceable.**
 
-Composes: [[accounting]] · [[transaction]] · [[identity]] · [[standard]] · [[proof]] · [[privilege]].
+Composes: [[accounting]] · [[transaction]] · [[identity]] · [[standard]] · [[proof]] · privilege.

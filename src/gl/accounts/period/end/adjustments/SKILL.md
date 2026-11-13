@@ -3,13 +3,13 @@ name: adjustments
 description: "Use when posting or reviewing period-end adjusting entries — depreciation, interest accrual, salary accrual, deferred income, allowance — with segregation-of-duties approval and automatic GL posting on status change. The period-end-adjustments accrual collection."
 atomPath: "gl/accounts/period/end/adjustments"
 coordinate: "gl/accounts/period/end/adjustments · 1/base · 0b5f25ce"
-contentUuid: "4cabc741-aa3a-5058-81d2-dc320c2f3f52"
-diamondUuid: "73e84d0d-35b0-8c54-ba54-d9ef64e238dd"
+contentUuid: "2d708a64-5504-598f-a6f5-582b06331015"
+diamondUuid: "6bd0d747-2ce2-8884-83bd-27bff18b64b0"
 uuid: "0b5f25ce-5f4d-8c03-8c73-2444584a87b4"
 horo: 1
 typography:
   partition: gl
-  bondDegree: 42
+  bondDegree: 36
 standards:
   - "IFRS IAS-1 presentation-of-financial-statements"
   - "IFRS IAS-8 accounting-policies-changes-and-errors"
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "49da0244-a034-8eed-8936-2db888b6661b"
+  computationUuid: "8ea10e4e-f974-8dd4-928a-dd2f212441c2"
   stages:
     - stage: path
       stageUuid: "85d4671a-1d9c-8734-80e6-f340dbb31d53"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "339d4042-9243-88d4-8f46-fe23a36a3ae1"
     - stage: horo
-      stageUuid: "4544ef27-524c-86d7-ae98-8b3d9ddd59a5"
+      stageUuid: "443108b9-bb8b-8b14-a9f8-de0c5e4fdd28"
     - stage: seal
       stageUuid: "6ec68967-5307-8fa5-ae43-92ff6f95e25b"
     - stage: uuid
-      stageUuid: "992390cd-671a-8389-bbe4-3050fca6cf2f"
+      stageUuid: "5d71bbc7-3c95-8296-88c1-e8548f69e57b"
 version: 2
 ---
 # period-end-adjustments

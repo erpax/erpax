@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a product's variants should be computed instead of typed — the variants are the cartesian product of the options of the product's variant types, so a hook creates the missing combinations as drafts when the product is saved, and the author confirms price and stock instead of enumerating them.",
-    "uuid": "86899129-3d24-8f77-b003-206c13a1b2a4",
+    "uuid": "e9f57f5f-e8c6-8044-9760-e10fa13e3daa",
     "words": [
       "use",
       "when",

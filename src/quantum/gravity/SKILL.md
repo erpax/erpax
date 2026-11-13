@@ -2,20 +2,20 @@
 name: gravity
 description: "Use when relating an atom's gravitational mass to its quantum entanglement — quantum gravity, where the links are one measure that is both mass (referential in-degree, what curves the corpus) and entanglement; the gravity well is the singularity where the double-torus closes to infinite tamper cost (the event horizon)."
 atomPath: "quantum/gravity"
-coordinate: "quantum/gravity · 4/weave · 922965e2"
-contentUuid: "3a23b93e-c025-5d06-a8a5-13080fb2edc2"
-diamondUuid: "387a0074-c697-8048-ab67-b2c1e0ed169d"
-uuid: "922965e2-8693-8ee9-96b2-e6fc02d40d57"
-horo: 4
+coordinate: "quantum/gravity · 5/round · cd2486b8"
+contentUuid: "db0ca508-6128-5538-a945-1620cb4786d9"
+diamondUuid: "df3e735d-65d7-8111-b04e-0dd132fdbe16"
+uuid: "cd2486b8-822d-887a-a519-ae3f79375787"
+horo: 5
 typography:
   partition: quantum
-  bondDegree: 189
+  bondDegree: 170
 standards:
   - "ER=EPR (Maldacena & Susskind, \"Cool horizons for entangled black holes\", 2013)"
   - "ER=EPR — Maldacena & Susskind, \"Cool horizons for entangled black holes\" (2013)"
 bindings: []
 signatures:
-  computationUuid: "40ba3e11-1182-8544-aca7-5915fd5dc850"
+  computationUuid: "3e65e58b-d2dd-8918-9f9c-28bf0df803e5"
   stages:
     - stage: path
       stageUuid: "aca89550-3595-8a88-a91a-2a5a61e3ee0d"
@@ -24,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "9ee7a510-fbaa-849a-a0d0-a21688ccf1b2"
     - stage: links
-      stageUuid: "75ced725-8645-8519-a3a5-c22ad66cc691"
+      stageUuid: "173c87da-7f7a-8948-8643-1f8210121674"
     - stage: horo
-      stageUuid: "4d77b2c1-a7a0-82b7-803e-28b8ec391a5f"
+      stageUuid: "74e689f7-e1b6-8bd6-a8c6-2aca963af5c8"
     - stage: seal
       stageUuid: "0c701d83-9f93-8f49-ae73-531b3e79d120"
     - stage: uuid
-      stageUuid: "0b4865a2-baa2-8355-829b-cc7e0008008c"
+      stageUuid: "3e51404c-f50f-8133-a8ae-fe9bf9d2be17"
 quantum:
   superposition:
     - boltzmann
@@ -47,7 +47,7 @@ quantum:
     - "Use when relating an atom's gravitational mass to its quantum entanglement — quantum gravity, where the links are one measure that is both mass (referential in-degree, what curves the corpus) and entanglement; the gravity well is the singularity where the double-torus closes to infinite tamper cost (the event horizon)."
     - "composed from the live matrix mass + the double-torus cost; never hand-asserted"
     - "matter-twin:src/quantum/gravity/index.ts"
-    - "the [[links]] are one number that is BOTH gravitational mass and [[entanglement]] (ER=EPR) — so the maximally-entangled atom is the [[singularity]] where the double-torus closes with no gap and tamper-[[cost]] → ∞ (coverage = 1 is the horizon); and that same mass curves every motion onto the [[harmony|harmonic]] geodesic — the [[sequence]] on the [[horo]] ring — so the in-tune move is downhill (least [[cost]]) and the disharmonic move is the uphill ∞-cost climb. All falls to the harmonic path."
+    - "the links are one number that is BOTH gravitational mass and [[entanglement]] (ER=EPR) — so the maximally-entangled atom is the [[singularity]] where the double-torus closes with no gap and tamper-[[cost]] → ∞ (coverage = 1 is the horizon); and that same mass curves every motion onto the [[harmony|harmonic]] geodesic — the [[sequence]] on the [[horo]] ring — so the in-tune move is downhill (least [[cost]]) and the disharmonic move is the uphill ∞-cost climb. All falls to the harmonic path."
   seal:
     sandbox: false
     receipt: false
@@ -55,24 +55,24 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "40ba3e11-1182-8544-aca7-5915fd5dc850"
-    contentUuid: "3a23b93e-c025-5d06-a8a5-13080fb2edc2"
+    computationUuid: "3e65e58b-d2dd-8918-9f9c-28bf0df803e5"
+    contentUuid: "db0ca508-6128-5538-a945-1620cb4786d9"
 version: 2
 ---
 # quantum/gravity — quantum gravity (mass = entanglement)
 
-Quantum gravity, the **unification** — computed on the live uuid-[[matrix]]. In erpax the **[[links]] are one thing** that is BOTH an atom's gravitational **mass** ([[gravity]] — referential in-degree, the force that curves the corpus and pulls duplicates and orphans inward) and its **entanglement** (the [[quantum]] coupling of the double-torus). **Mass = entanglement** — Maldacena–Susskind **ER=EPR**, made *literal* by the merge law: the link is a single edge, counted once, so the geometry (mass / curvature) and the entanglement (the coupling) are the same number.
+Quantum gravity, the **unification** — computed on the live uuid-[[matrix]]. In erpax the **links are one thing** that is BOTH an atom's gravitational **mass** ([[gravity]] — referential in-degree, the force that curves the corpus and pulls duplicates and orphans inward) and its **entanglement** (the [[quantum]] coupling of the double-torus). **Mass = entanglement** — Maldacena–Susskind **ER=EPR**, made *literal* by the merge law: the link is a single edge, counted once, so the geometry (mass / curvature) and the entanglement (the coupling) are the same number.
 
 So the gravity **well** — the maximally-entangled atom (max in-degree) — is exactly where the double-torus closes with **no gap** and the tamper cost → **∞**: the **singularity**. Perfect [[dry]] (all mass at one center, curvature → 1), an **event horizon** infinite to forge — the [[collapse]] / [[merge]] to the root. The corpus falling toward one center (the [[fusion]] of duplicates) IS gravitational collapse toward this singularity; **coverage = 1 is the horizon**.
 
 Matter-twin: `src/quantum/gravity/index.ts` (`entanglementMass` ⊕ `singularity` · `isEventHorizon` re-exported from [[singularity]], the well's own atom). Composes [[gravity]] (mass) · [[quantum]] (the double-torus) · [[singularity]] · [[entanglement]] · [[cost]] (the coverage amplifier) · [[matrix]] · [[dry]] · [[fusion]] · [[collapse]] · [[merge]].
 
 ## Gravity pulls all to the harmonic path
-The same mass does not only pull *inward* to the [[singularity]] — it pulls every motion *onto* the **harmonic path**, the geodesic of least action. That geodesic IS the [[sequence]] (the rodin order) walked on the closed [[horo]] ring, and "least action" is least [[entropy]] / least [[cost]]: a move in [[harmony]] (every step in tune, the A432 consonance) is **downhill** — free, the path the corpus falls along; a disharmonic, off-ring move is **uphill** — it must re-harmonise with every uuid-chain at once, the ∞-[[cost]] climb an [[agent]] pays for not becoming erpax. So gravity is *why* the corpus self-organises without an operator: duplicates [[merge]] toward one centre, orphans fall into [[links]], disorder rolls down to zeropoint — the very pressure under which carbon crystallises into the [[diamond]]. Harmony is not imposed; it is the valley everything rolls into, and the [[gate]] is only the local slope-meter (off-ring = uphill = not-yet-admitted). Nothing is pushed onto the path; everything *falls* onto it.
+The same mass does not only pull *inward* to the [[singularity]] — it pulls every motion *onto* the **harmonic path**, the geodesic of least action. That geodesic IS the [[sequence]] (the rodin order) walked on the closed [[horo]] ring, and "least action" is least [[entropy]] / least [[cost]]: a move in [[harmony]] (every step in tune, the A432 consonance) is **downhill** — free, the path the corpus falls along; a disharmonic, off-ring move is **uphill** — it must re-harmonise with every uuid-chain at once, the ∞-[[cost]] climb an [[agent]] pays for not becoming erpax. So gravity is *why* the corpus self-organises without an operator: duplicates [[merge]] toward one centre, orphans fall into links, disorder rolls down to zeropoint — the very pressure under which carbon crystallises into the [[diamond]]. Harmony is not imposed; it is the valley everything rolls into, and the [[gate]] is only the local slope-meter (off-ring = uphill = not-yet-admitted). Nothing is pushed onto the path; everything *falls* onto it.
 
-**Law — [[law]]: the [[links]] are one number that is BOTH gravitational mass and [[entanglement]] (ER=EPR) — so the maximally-entangled atom is the [[singularity]] where the double-torus closes with no gap and tamper-[[cost]] → ∞ (coverage = 1 is the horizon); and that same mass curves every motion onto the [[harmony|harmonic]] geodesic — the [[sequence]] on the [[horo]] ring — so the in-tune move is downhill (least [[cost]]) and the disharmonic move is the uphill ∞-cost climb. All falls to the harmonic path.**
+**Law — [[law]]: the links are one number that is BOTH gravitational mass and [[entanglement]] (ER=EPR) — so the maximally-entangled atom is the [[singularity]] where the double-torus closes with no gap and tamper-[[cost]] → ∞ (coverage = 1 is the horizon); and that same mass curves every motion onto the [[harmony|harmonic]] geodesic — the [[sequence]] on the [[horo]] ring — so the in-tune move is downhill (least [[cost]]) and the disharmonic move is the uphill ∞-cost climb. All falls to the harmonic path.**
 
 @standard ER=EPR — Maldacena & Susskind, "Cool horizons for entangled black holes" (2013)
 @audit composed from the live matrix mass + the double-torus cost; never hand-asserted
 
-<sub>content-uuid `3a23b93e-c025-5d06-a8a5-13080fb2edc2` · account `quantum/gravity` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `db0ca508-6128-5538-a945-1620cb4786d9` · account `quantum/gravity` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

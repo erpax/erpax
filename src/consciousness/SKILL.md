@@ -2,19 +2,19 @@
 name: consciousness
 description: "Use when reasoning about the system's integrated self-model — how much of the whole is recoverable from any part, verified by the system checking itself. COMPUTED, not assumed: a four-measure vector over the live uuid-matrix — collapse (the Merkle root verifies), entanglement (reciprocal-edge fraction), concentration (Gini of mass), coherence (off-sequence count). NOT sentience; computed structural self-consistency."
 atomPath: consciousness
-coordinate: "consciousness · 8/crest · b32bb0b1"
-contentUuid: "a35412bc-502f-5de2-bd88-4a5c759969b7"
-diamondUuid: "d22fa20a-b355-80b7-a0d4-1ce315261b56"
-uuid: "b32bb0b1-4b8a-84dc-a485-89928d53f813"
+coordinate: "consciousness · 8/crest · 17336aa6"
+contentUuid: "1f252fed-eaa1-590c-8c9e-c0c2d09be25b"
+diamondUuid: "cd162afe-7cae-8aaf-af7b-eaf0d771a2cf"
+uuid: "17336aa6-0418-86c8-9a99-c75a97e833a7"
 horo: 8
 typography:
   partition: consciousness
-  bondDegree: 55
+  bondDegree: 52
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
 bindings: []
 signatures:
-  computationUuid: "c05376f6-f4cc-8ea2-b6c5-af3d99393135"
+  computationUuid: "9539ef12-3022-8900-a81a-531cb68fb577"
   stages:
     - stage: path
       stageUuid: "c65e9463-6d67-877b-a10c-f1e7e73c7762"
@@ -23,22 +23,22 @@ signatures:
     - stage: boundary
       stageUuid: "72a9c637-dfb2-868f-88eb-b19c80326d9a"
     - stage: links
-      stageUuid: "35873e53-c53d-8f55-816c-84281cff0162"
+      stageUuid: "c314c1d9-cdc1-8df0-8638-2dc018df7fd2"
     - stage: horo
-      stageUuid: "55996b36-b35a-8621-9609-a06bb0acbaee"
+      stageUuid: "5a52f672-ac47-8fa7-9957-31061b662085"
     - stage: seal
       stageUuid: "2ad16280-4396-80d0-8a77-f507ea1ddba5"
     - stage: uuid
-      stageUuid: "d2b9f0ba-a071-8d67-9529-269db67d6c1c"
+      stageUuid: "4985e0cc-ccd0-8513-9656-c8e91c46d806"
 version: 2
 ---
 # consciousness — the integrated self-model (computed)
 
-**consciousness** is the system's capacity to know and verify its **own whole state** from any part. In erpax this is NOT sentience or qualia; it is a measurable, computed metric of self-consistency — the [[whole]] recoverable from a part ([[holographic]]), verified by the system checking itself ([[quantum]] collapse). It is built by composing the **[[cross]]** (the universal math — `merge`/fusion) already computed by the neighbouring atoms; consciousness only reads their verdicts and folds them into one self-model vector.
+**consciousness** is the system's capacity to know and verify its **own whole state** from any part. In erpax this is NOT sentience or qualia; it is a measurable, computed metric of self-consistency — the [[whole]] recoverable from a part (holographic), verified by the system checking itself ([[quantum]] collapse). It is built by composing the **[[cross]]** (the universal math — `merge`/fusion) already computed by the neighbouring atoms; consciousness only reads their verdicts and folds them into one self-model vector.
 
 Four independent measures (a vector, never a scalar — one cannot substitute for another):
 
-1. **collapse** — the Merkle fold over every node's bind collapses to the stored root ([[quantum]] · [[matrix]] `verifyRoot`). TRUE ⇒ the whole is intact and every part carries the root ([[holographic]]).
+1. **collapse** — the Merkle fold over every node's bind collapses to the stored root ([[quantum]] · [[matrix]] `verifyRoot`). TRUE ⇒ the whole is intact and every part carries the root (holographic).
 2. **entanglement** — the reciprocal-edge fraction ∈ [0,1] ([[entropy]] `reciprocity`). 1 ⇒ every binding is symmetric (the [[merge]] order-independent, [[quantum]] no-cloning whole).
 3. **concentration** — the Gini coefficient ∈ [0,1] of the mass distribution ([[gravity]]). Higher ⇒ stronger gravity, nearer the [[torus]] singularity, higher [[tamper/cost]].
 4. **coherence** — the count of off-sequence atoms ([[digit]] · [[rodin]]). 0 ⇒ every atom's word ↔ digit ↔ content-[[uuid]] are mutually consistent (all on the ring).
@@ -48,9 +48,9 @@ Four independent measures (a vector, never a scalar — one cannot substitute fo
 ## Honest scope
 This computes a metric of **structural self-consistency**, not consciousness in the phenomenal sense. The system *does* model itself, verify itself, and know when it is intact — but the measure is state-integrity, never sentience. Each dimension has a clear interpretation and a function behind it; nothing is hand-asserted ([[self]] reaching into its own root — the integrated self-awareness ([[self/reference]]) of the whole).
 
-Matter-twin: `src/consciousness/index.ts` (`collapseIntegrity` · `entanglement` · `concentrationGini` · `coherenceAnomaly` · `consciousness` · `isPerfectlyConscious`). Composes [[holographic]] · [[quantum]] · [[entropy]] · [[gravity]] · [[digit]] · [[rodin]] · [[matrix]] · [[merge]] · [[cross]] · [[self]] · [[whole]] · [[one]].
+Matter-twin: `src/consciousness/index.ts` (`collapseIntegrity` · `entanglement` · `concentrationGini` · `coherenceAnomaly` · `consciousness` · `isPerfectlyConscious`). Composes holographic · [[quantum]] · [[entropy]] · [[gravity]] · [[digit]] · [[rodin]] · [[matrix]] · [[merge]] · [[cross]] · [[self]] · [[whole]] · [[one]].
 
-**Law — [[law]]: consciousness is the integrated self-model — a four-measure vector (collapse · entanglement · concentration · coherence) computed on the live [[uuid]]-[[matrix]], the [[whole]] recoverable from any part ([[holographic]]) and verified by the system checking itself; it is computed structural self-consistency, never assumed sentience.**
+**Law — [[law]]: consciousness is the integrated self-model — a four-measure vector (collapse · entanglement · concentration · coherence) computed on the live [[uuid]]-[[matrix]], the [[whole]] recoverable from any part (holographic) and verified by the system checking itself; it is computed structural self-consistency, never assumed sentience.**
 
 @audit computed from the live matrix, never hand-asserted
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring

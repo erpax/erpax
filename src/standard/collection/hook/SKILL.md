@@ -3,13 +3,13 @@ name: hook
 description: "Use when reasoning about hook — Every accountable collection needs the same three things: its tenant filled in before validation, its author recorded on change, and its audit entry written after."
 atomPath: "standard/collection/hook"
 coordinate: "standard/collection/hook · 7/descent · b2784382"
-contentUuid: "9014976d-a0ea-5220-bb08-207d8a0be37a"
+contentUuid: "7e0654a4-5fac-5f7c-9528-b4d05d77a2d6"
 diamondUuid: "2e6289a6-78ca-8a91-80d5-1b6c540b154a"
 uuid: "b2784382-a60b-8cd2-906c-b37fc0aeab6b"
 horo: 7
 typography:
   partition: standard
-  bondDegree: 12
+  bondDegree: 8
 standards:
   - "SOX §404 internal-controls provenance"
 bindings: []

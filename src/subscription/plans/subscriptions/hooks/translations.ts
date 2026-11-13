@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hooks",
-    "uuid": "4601eb82-984c-856d-9da4-e9b9679a1982",
+    "uuid": "9ea3ffcd-0ed1-855c-b21a-0e82c1e583cd",
     "words": [
       "hooks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — publishes the subscription's transitions and protects its credentials on the way in.",
-    "uuid": "d5cb1798-3185-8b53-ba6b-712307d9e2fe",
+    "uuid": "51539b91-2846-81e7-910e-dff11867a42c",
     "words": [
       "use",
       "when",

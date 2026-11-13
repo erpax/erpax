@@ -2,18 +2,18 @@
 name: consistency
 description: "Use when enforcing or auditing data consistency — ACID properties, eventual consistency vs strong consistency, consistency models (read-after-write, causal), constraint enforcement, synchronization guarantees across replicas or shards."
 atomPath: consistency
-coordinate: "consistency · 4/weave · 95fc253f"
-contentUuid: "8f005611-1b0f-5002-b329-bee91fc7e0b5"
-diamondUuid: "0ba8f2c7-7024-879f-a9bb-6e7df104ab01"
-uuid: "95fc253f-2967-864a-9855-db3e973970f9"
-horo: 4
+coordinate: "consistency · 8/crest · 795f989c"
+contentUuid: "46a92546-04eb-5d57-a77d-a822a93478c7"
+diamondUuid: "09e6922e-c26a-8600-b1bb-5275a0a3a0bd"
+uuid: "795f989c-3987-849a-a799-6043476a077a"
+horo: 8
 typography:
   partition: consistency
-  bondDegree: 33
+  bondDegree: 21
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6f814631-89ff-805e-9d92-df254f73e6a7"
+  computationUuid: "1cf2a46c-8201-8d90-b500-fdb222273a81"
   stages:
     - stage: path
       stageUuid: "5a173b75-283c-8e8e-b372-6f955f1fa6ea"
@@ -22,20 +22,20 @@ signatures:
     - stage: boundary
       stageUuid: "1a46d5e3-b567-8203-a34e-dcb1e5a62b05"
     - stage: links
-      stageUuid: "db809132-84c8-8992-9b57-7a4bc35ac1c6"
+      stageUuid: "3313fab7-2bf9-888c-85ca-8ddaca70e35b"
     - stage: horo
-      stageUuid: "dab6b652-7683-8455-87b5-18e295f230c4"
+      stageUuid: "e95d5022-4039-872c-ac5b-dd51af49e1b6"
     - stage: seal
       stageUuid: "675e26be-78a1-8589-8c73-6740f640795a"
     - stage: uuid
-      stageUuid: "830f477a-b03c-84e2-be3c-298c201d38df"
+      stageUuid: "3d2b109b-07ee-84ec-98d9-2023cd299efe"
 version: 2
 ---
 # consistency
 
 Use when enforcing or auditing data consistency — ACID properties, eventual consistency vs strong consistency, consistency models (read-after-write, causal), constraint enforcement, synchronization guarantees across replicas or shards.
 
-Composes: [[database]] · [[identity]] · [[reconcile]] · [[anti/corruption]] · [[constraint]].
+Composes: database · [[identity]] · reconcile · [[anti/corruption]] · constraint.
 
 ## Standards
 - ACID (ISO/IEC 10026)

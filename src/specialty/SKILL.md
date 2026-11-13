@@ -2,41 +2,41 @@
 name: specialty
 description: "Use when reasoning about specialty — Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort."
 atomPath: specialty
-coordinate: "specialty · 4/weave · 6ffde919"
-contentUuid: "b9af794c-cba4-58f4-9645-1bbfb8f64589"
-diamondUuid: "74401ed0-0838-824a-b88c-ab878e329f69"
-uuid: "6ffde919-418b-8cb4-a3ba-7ad7d7e95fe7"
+coordinate: "specialty · 4/weave · 37fa62e1"
+contentUuid: "d0d3019e-4b19-58e5-839f-4c492be13303"
+diamondUuid: "8506230e-e103-8a15-bc55-4255e025ea3f"
+uuid: "37fa62e1-28a1-88d2-919d-f497c9b4ccd7"
 horo: 4
 typography:
   partition: specialty
-  bondDegree: 18
+  bondDegree: 14
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b0619590-1201-8120-8956-225c6e14c809"
+  computationUuid: "91437ab2-4f33-8e54-8b26-4663fd3f335f"
   stages:
     - stage: path
       stageUuid: "6af5e168-0f99-8301-9565-26b6db0c118d"
     - stage: trinity
       stageUuid: "dc309afa-f97c-8055-ad79-bf029aaa020d"
     - stage: boundary
-      stageUuid: "a3c24398-8655-8797-aefe-c112033b3ba0"
+      stageUuid: "45237644-6c9c-8a0a-a37f-5b43348d2237"
     - stage: links
-      stageUuid: "40d04c3e-5be2-89e9-a8f4-522fbe2bef1e"
+      stageUuid: "1be72073-1fe2-8b54-87f0-009e18e86e69"
     - stage: horo
-      stageUuid: "5d24fa5c-1c45-822e-9b2e-a235ecca17ec"
+      stageUuid: "ddc7e4bd-a776-8243-94f6-7374bef10071"
     - stage: seal
       stageUuid: "d510d9ae-838b-871a-852f-efc10064787f"
     - stage: uuid
-      stageUuid: "b78a0f8a-49d8-8bf8-8450-f4a0340513aa"
+      stageUuid: "ff9bf97b-a656-8a99-bde3-df35477a8d91"
 version: 2
 ---
 # specialty
 
 Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort.
 
-Entangled with — [[medical]] · [[relevant]]
+Entangled with — [[medical]] · relevant
 
 Attested in schema.org — MedicalSpecialty · Specialty · medicalSpecialty · relevantSpecialty · specialty
 

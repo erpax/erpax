@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "uuid",
-    "uuid": "d156e6b6-cbab-855d-836c-37f72da2de94",
+    "uuid": "e872f9ee-b4f2-88a1-9be0-4809e70fa185",
     "words": [
       "uuid"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about uuid — content-addresses a failure and gives it a typed shape, so the same failure raised twice has the same address and can be counted, grouped and traced.",
-    "uuid": "7ff3e624-4e30-8e7c-80f0-9543f3df5954",
+    "uuid": "6505b1f5-0e70-8d28-ae6b-36709c63fef7",
     "words": [
       "use",
       "when",

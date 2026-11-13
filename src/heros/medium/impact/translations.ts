@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about impact — The mid-weight hero: rich text, an optional set of links, and an optional image below.",
-    "uuid": "a8150cfc-6c4c-8baf-9762-6f4dc1ccafa0",
+    "uuid": "91b33595-377e-8296-a50e-02ce35a17e6e",
     "words": [
       "use",
       "when",

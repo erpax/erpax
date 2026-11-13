@@ -2,18 +2,18 @@
 name: fs
 description: "Use when reasoning about the content-addressed filesystem — the quantum twin of fs where every state is an immutable content-uuid snapshot (git, IPFS, copy-on-write), append-only, deduped, reversible; the path no longer locates a mutable file but addresses an immutable moment."
 atomPath: "quantum/fs"
-coordinate: "quantum/fs · 4/weave · ccc6b71a"
-contentUuid: "840b9f6c-056c-5a4e-8d86-874d0ad457ca"
-diamondUuid: "e6c0d0a7-8618-8f11-9118-7dafd3f2b7d1"
-uuid: "ccc6b71a-5dec-81df-9165-bcd43ece26da"
-horo: 4
+coordinate: "quantum/fs · 7/descent · 550961dc"
+contentUuid: "198ab81d-ae91-5952-bfcd-d06edda1ea70"
+diamondUuid: "71c1a468-91d8-8c81-8759-f097b5c9bb7d"
+uuid: "550961dc-d9e7-8190-abe0-c812b27e2da0"
+horo: 7
 typography:
   partition: quantum
-  bondDegree: 66
+  bondDegree: 51
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ea030f11-1ab1-85ee-844c-ffbdc9b9ec2f"
+  computationUuid: "db3409cc-b43e-8e0f-ba51-75fcc4c5049b"
   stages:
     - stage: path
       stageUuid: "14b3d443-a31c-8210-9a3e-4ac990a849a2"
@@ -22,33 +22,33 @@ signatures:
     - stage: boundary
       stageUuid: "17baa33e-19c8-840c-acb8-94b4e51b74c7"
     - stage: links
-      stageUuid: "a20b4583-189f-844e-8595-c77dd925721f"
+      stageUuid: "010a37dc-242e-872a-969b-dd0498692e58"
     - stage: horo
-      stageUuid: "e9ccfe0a-bdb1-886f-b4d8-3c0d794a30c7"
+      stageUuid: "698514ca-b05d-8055-b37f-58a9643fdc7f"
     - stage: seal
       stageUuid: "454f8cae-34d2-8660-b333-f02a9220cd1f"
     - stage: uuid
-      stageUuid: "ce2239c3-bb5d-8291-9c75-07cb0bee7710"
+      stageUuid: "02652fac-fbdb-88b3-80d6-d17ef4c20b7c"
 quantum:
   superposition:
     - akashic
     - api
     - deploy
-    - file
-    - finality
     - fs
     - generate
     - law
+    - love
+    - merge
     - superposition
   collapse:
     - "Use when reasoning about the content-addressed filesystem — the quantum twin of fs where every state is an immutable content-uuid snapshot (git, IPFS, copy-on-write), append-only, deduped, reversible; the path no longer locates a mutable file but addresses an immutable moment."
     - "[[akashic]]"
-    - "[[finality]]"
     - "[[fs]]"
     - "[[merge]]"
     - "[[reality]]"
     - "[[uuid]]"
     - "[[versions]]"
+    - finality
     - "in the content-addressed filesystem you never overwrite — you snapshot; every state is an immutable content-[[uuid]] (identical content [[merge]]s to one, nothing is erased), so the store is [[tamper]]-evident by construction and any past moment is reconstructable."
     - snapshot
   seal:
@@ -58,18 +58,18 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "ea030f11-1ab1-85ee-844c-ffbdc9b9ec2f"
-    contentUuid: "840b9f6c-056c-5a4e-8d86-874d0ad457ca"
+    computationUuid: "db3409cc-b43e-8e0f-ba51-75fcc4c5049b"
+    contentUuid: "198ab81d-ae91-5952-bfcd-d06edda1ea70"
 version: 2
 ---
 # quantum/fs — the content-addressed filesystem
 
-The quantum twin of [[fs]]: a filesystem where you never overwrite, you **snapshot**. Every state of every [[file]] is content-addressed by its [[uuid]] (git's blob/tree/commit, IPFS, ZFS copy-on-write), immutable and append-only — identical content [[merge]]s to one object (dedup), nothing is erased (reverseible, the [[love]] pole). The [[path]] stops naming a mutable file and starts addressing an immutable **moment**; history is the [[akashic]] chain, and any past layer is reconstructable.
+The quantum twin of [[fs]]: a filesystem where you never overwrite, you **snapshot**. Every state of every file is content-addressed by its [[uuid]] (git's blob/tree/commit, IPFS, ZFS copy-on-write), immutable and append-only — identical content [[merge]]s to one object (dedup), nothing is erased (reverseible, the [[love]] pole). The [[path]] stops naming a mutable file and starts addressing an immutable **moment**; history is the [[akashic]] chain, and any past layer is reconstructable.
 
-This is [[finality]] applied to storage: a written snapshot is final — you add a new one, never mutate the old — so the store is [[tamper]]-evident by construction.
+This is finality applied to storage: a written snapshot is final — you add a new one, never mutate the old — so the store is [[tamper]]-evident by construction.
 
 **Law — [[law]]: in the content-addressed filesystem you never overwrite — you snapshot; every state is an immutable content-[[uuid]] (identical content [[merge]]s to one, nothing is erased), so the store is [[tamper]]-evident by construction and any past moment is reconstructable.**
 
-@see [[fs]] · snapshot · [[uuid]] · [[merge]] · [[akashic]] · [[finality]] · [[versions]] · [[reality]]
+@see [[fs]] · snapshot · [[uuid]] · [[merge]] · [[akashic]] · finality · [[versions]] · [[reality]]
 
-<sub>content-uuid `840b9f6c-056c-5a4e-8d86-874d0ad457ca` · account `quantum/fs` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `198ab81d-ae91-5952-bfcd-d06edda1ea70` · account `quantum/fs` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

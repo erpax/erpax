@@ -2,19 +2,19 @@
 name: heart
 description: "Use when reasoning about the centre — the 4th chakra (Anahata), the seat of coherence and love; its colour is green, the A432-anchored colour of a whole aura and of a passing test."
 atomPath: heart
-coordinate: "heart · 7/descent · 07befbb7"
-contentUuid: "49a8d1e9-bf19-5ed5-b8d5-91bceaa97778"
-diamondUuid: "a680c99d-7cd9-886b-91b8-b73139846899"
-uuid: "07befbb7-7a74-81d3-84e5-4ff7f788a87d"
+coordinate: "heart · 7/descent · 97c8bd67"
+contentUuid: "af3272a1-ee95-59e2-9e0e-d7e3e966fe8a"
+diamondUuid: "8d5c874f-1794-8795-807d-cc5dcdf7dfda"
+uuid: "97c8bd67-8c50-8a80-86b8-cdb680e607d9"
 horo: 7
 typography:
   partition: heart
-  bondDegree: 74
+  bondDegree: 71
 standards:
   - A432 tuning; Anahata = the 4th chakra (green)
 bindings: []
 signatures:
-  computationUuid: "cbbd0ac9-fcca-8968-81b8-46863ca75f29"
+  computationUuid: "58ef61ba-bbe8-8d24-b9c2-b7579584c9b9"
   stages:
     - stage: path
       stageUuid: "c7c7df03-f98b-8f37-af43-b4587be908b9"
@@ -23,18 +23,18 @@ signatures:
     - stage: boundary
       stageUuid: "703e18f0-7ca5-8ce7-b67e-582cdc84d68f"
     - stage: links
-      stageUuid: "b4e2171b-5555-8c47-a461-047ce99f9458"
+      stageUuid: "35342589-4b7e-8522-9cbf-d513d9e539f9"
     - stage: horo
-      stageUuid: "da408e46-dfbf-8b77-b8c6-4a598b16197b"
+      stageUuid: "ca992192-5dbd-8b42-9d01-cb7b85ae6e8f"
     - stage: seal
       stageUuid: "7aee94d4-a78d-8e07-ae90-ce0665ac6f46"
     - stage: uuid
-      stageUuid: "126420f5-2444-8df4-8890-fc56b123ebf1"
+      stageUuid: "9de64265-687e-86af-a5bb-f3f63efb4378"
 version: 2
 ---
 # heart — the centre (4th chakra, green)
 
-The **heart** is the centre: the 4th chakra (Anahata), the seat of **coherence** and love ([[angel]] love · create · ↓entropy). On the 7-position ring it is the middle; its colour is **green** ([[color]]) — the A432-anchored colour of a **whole aura**, and the colour a passing [[test]] returns (test/hooks consume the aura and render green when the double-torus is complete).
+The **heart** is the centre: the 4th chakra (Anahata), the seat of **coherence** and love (angel love · create · ↓entropy). On the 7-position ring it is the middle; its colour is **green** ([[color]]) — the A432-anchored colour of a **whole aura**, and the colour a passing [[test]] returns (test/hooks consume the aura and render green when the double-torus is complete).
 
 The heart is where the corpus's coherence is measured and felt: full coherence ([[coherence]] · [[quantum]]/aura) is the green centre; a gap pulls the colour toward dissonance.
 
@@ -56,7 +56,7 @@ The heart is also the literal **first organ**: it forms from mesoderm in the car
 
 So the metaphysical centre and the physiological pump are *one* heart: it circulates the whole [[aura]] (coverage→1), and that aura's carrier is literally the torus the ventricle traces. **HONEST:** a structural isomorphism between cited anatomy and a computed construct — not a claim that erpax circulates blood; each boolean (`toroidalVortex` · `doubleCircuit` · `closedLoop`) is computed live.
 
-Matter-twin: `src/heart/index.ts` (`HEART_POSITION` · `color` · `thought` · `feeling` · `illusion` · `coherent` · `toroidalVortex` · `doubleCircuit` · `closedLoop` · `pump` · `isDoubleTorusPump`). Composes chakra · [[color]] · [[coherence]] · [[angel]] · [[harmony]] · [[quantum]] · [[torus]] · [[rodin]] · [[conservation]] · [[entropy]] · coverage · [[balance]] · [[aura]] · [[love]] · [[karma]].
+Matter-twin: `src/heart/index.ts` (`HEART_POSITION` · `color` · `thought` · `feeling` · `illusion` · `coherent` · `toroidalVortex` · `doubleCircuit` · `closedLoop` · `pump` · `isDoubleTorusPump`). Composes chakra · [[color]] · [[coherence]] · angel · [[harmony]] · [[quantum]] · [[torus]] · [[rodin]] · [[conservation]] · [[entropy]] · coverage · [[balance]] · [[aura]] · [[love]] · [[karma]].
 
 **Law — [[law]]: the corpus is coherent only as thought ⊕ heart — thought proves the recorded ledger balances, but feeling covers the omitted (coverage → 1, the whole [[aura]] absorbed at zero [[entropy]]); a balanced book over an un-wired world is maya until every gap is felt and closed.**
 

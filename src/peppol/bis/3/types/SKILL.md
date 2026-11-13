@@ -3,13 +3,13 @@ name: types
 description: "Use when reasoning about types — Canonical Peppol BIS Billing 3.0 types — envelope around EN-16931."
 atomPath: "peppol/bis/3/types"
 coordinate: "peppol/bis/3/types · 1/base · d58d1580"
-contentUuid: "c6268a10-a4a0-5e02-a120-66202c8faaa9"
-diamondUuid: "b085210b-eacc-8e7f-b697-7fcf7cff7f6e"
+contentUuid: "16036b8b-d86c-55c4-8842-295d8147154e"
+diamondUuid: "d543606a-2c48-8601-b90b-6e2d3965ffa7"
 uuid: "d58d1580-2f07-8548-b058-d4fe7671be55"
 horo: 1
 typography:
   partition: peppol
-  bondDegree: 85
+  bondDegree: 75
 standards:
   - "EN-16931:2017 semantic-model-electronic-invoice"
   - "EN-16931:2017+A1:2019 semantic-model-electronic-invoice"
@@ -28,7 +28,7 @@ standards:
   - "UBL-2.1 universal-business-language"
 bindings: []
 signatures:
-  computationUuid: "91d32977-a09e-8d56-9a14-af16721e58a2"
+  computationUuid: "ec5c53f1-92be-84b9-8bfb-f11ecdf78abb"
   stages:
     - stage: path
       stageUuid: "ed04d832-59e0-8050-a6da-081da1379506"
@@ -39,11 +39,11 @@ signatures:
     - stage: links
       stageUuid: "fad191c4-63d9-8143-a7bf-400dfd5c0a78"
     - stage: horo
-      stageUuid: "884ffee0-ae71-811f-a1e4-439f4edccd81"
+      stageUuid: "e8fa8095-4fe3-89fb-99bc-4cc41ce6d658"
     - stage: seal
       stageUuid: "545241a4-8e16-8d51-a7e3-8bcb1a12fbfe"
     - stage: uuid
-      stageUuid: "6ebfabfd-e902-8599-b331-197e84b66b0c"
+      stageUuid: "ba9e8f1c-80ce-819e-b5d8-6f874e83c4a4"
 version: 2
 ---
 # peppol/bis/3/types

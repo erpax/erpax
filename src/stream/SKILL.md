@@ -2,14 +2,14 @@
 name: stream
 description: "Use when events must move as one continuous tamper-proof current rather than discrete steps — turning the event bus into a typed AsyncIterable, windowing it (tumbling/sliding/session), composing blocks stream-to-stream, and verifying causal Lamport order plus the streamUuid hash-chain."
 atomPath: stream
-coordinate: "stream · 7/descent · 42c0799a"
-contentUuid: "7e5209a0-a970-5415-a819-6ba8194d7622"
-diamondUuid: "2dcbbcb4-4e17-8360-b48e-d0a976514919"
-uuid: "42c0799a-34d4-8127-89d9-55c996b39026"
-horo: 7
+coordinate: "stream · 4/weave · 2c509661"
+contentUuid: "9fdf9406-6420-51eb-b06d-e6905c024db8"
+diamondUuid: "ae395325-3ae7-8e02-b28a-42c615b02153"
+uuid: "2c509661-46ac-8cc6-bc47-667423520221"
+horo: 4
 typography:
   partition: stream
-  bondDegree: 82
+  bondDegree: 70
 standards:
   - "ISO/IEC 25010:2023 §5.2 performance — throughput"
   - "ISO/IEC 25010:2023 §5.2 performance — throughput`"
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "8874f71a-5850-8ce2-b932-f3ab90fd807e"
+  computationUuid: "8f107f4b-a5d8-89db-ab6d-77b2e1b22113"
   stages:
     - stage: path
       stageUuid: "51d134f1-3abd-8c47-9170-1321d632d4a4"
@@ -27,23 +27,23 @@ signatures:
     - stage: boundary
       stageUuid: "473e8e1a-a875-84fe-9a31-9f331c638811"
     - stage: links
-      stageUuid: "466d58a6-99bb-8f5a-8f5c-c70ecab9f39d"
+      stageUuid: "6e7d6aeb-0454-8a8f-97e5-79307c87b3cb"
     - stage: horo
-      stageUuid: "233f59aa-7a5d-86db-8fa4-c744ef146b6a"
+      stageUuid: "ca1f54be-8114-894a-9d1a-ceee27526a76"
     - stage: seal
       stageUuid: "d488909d-306a-8ff0-8467-13acf6de2810"
     - stage: uuid
-      stageUuid: "f5306373-d2d2-8f41-b23a-9342f6302e3e"
+      stageUuid: "eb330e69-fbcd-8a30-b708-1380cd34878f"
 version: 2
 ---
 # streams — the quantum, continuous dual of discrete events
 
-FORM: **events are one continuous current, not a sequence of steps.** The discrete chain-of-blocks is the classical view — agents fire in turn, [[event]]s hop step-by-step. The stream is the quantum view: every event flows through every surface in superposition, and a step boundary is just an observation that collapses the current into a definite next state. Both views co-exist; this is the [[duality]] — the discrete chain for orchestration, the continuous stream for high-throughput, partial-failure-tolerant [[flow]] (CDC, telemetry, agent-to-agent dialog, federation broadcast). Proven pure.
+FORM: **events are one continuous current, not a sequence of steps.** The discrete chain-of-blocks is the classical view — agents fire in turn, [[event]]s hop step-by-step. The stream is the quantum view: every event flows through every surface in superposition, and a step boundary is just an observation that collapses the current into a definite next state. Both views co-exist; this is the [[duality]] — the discrete chain for orchestration, the continuous stream for high-throughput, partial-failure-tolerant flow (CDC, telemetry, agent-to-agent dialog, federation broadcast). Proven pure.
 
 - **bus → stream** — `makeStream` builds a hot, typed `EventStream` (an `AsyncIterable` of `ClockedEvent`) callers `push` into and consumers `for await` over; the bridge from the push-based bus to the pull-based current, filtered by subject and tenant.
 - **operators** — `mapStream`, `filterStream` transform the current without materializing it.
 - **windows** — `tumblingWindow` (fixed non-overlapping buckets), `slidingWindow` (last *sizeMs* every *stepMs*), `sessionWindow` (closes after *gapMs* of silence) cut the unbounded current into bounded, audit-trailed bands.
-- **stream-of-blocks** — `pipeBlocks` wires an upstream block's emitted events as the stream a downstream block subscribes to: the continuous analogue of block composition, the same [[fractal]] wiring at every scale.
+- **stream-of-blocks** — `pipeBlocks` wires an upstream block's emitted events as the stream a downstream block subscribes to: the continuous analogue of block composition, the same fractal wiring at every scale.
 
 Coherence is conserved twice. Each `ClockedEvent` carries a **Lamport** clock — `checkWindowCoherence` (Law 33) holds that a closed window's events are monotonically non-decreasing in Lamport order; out-of-order delivery is a causal violation. And each event's `streamUuid` is a content-[[uuid]] over `{event, lamport, prev}`, making the stream a Merkle hash-chain — `checkStreamUuidChain` (Law 34) recomputes every leaf, so any re-ordering, mutation, insertion, or deletion breaks the chain at the corruption and downstream ([[tamper/cost]], [[proof]]). The genesis `prev` is the one canonical Nil UUID shared with the uuid-chain ([[identity]]); the same content ⇒ the same leaf, so two federated streams of the same events hold ONE chain ([[merge]]).
 
@@ -57,7 +57,7 @@ Because every save is content-addressed and `prev`-chained, **the stream of save
 
 ## The stream is a blockchain (self-distributed, zero-entropy across substrates)
 
-Because the `streamUuid` chain links each event to its parent by hash and addresses each by content, **the stream of saves IS a [[blockchain]]** — a Merkle DAG, the time-axis dual of the cross-[[seal]]. It is self-verifying (verify is O(N), recompute-and-compare — [[proof]] · [[integrity]]) and therefore **self-distributed**: any node reconstructs and verifies the whole from content alone, and two peers holding the same saves hold ONE chain ([[merge]] federation is set-union, [[holographic]] · [[distribution]]). And because identity is content, the same content-[[uuid]] keeps every compute substrate bit-identical — memory · cpu · gpu collapse to the same address, zero divergence ([[sync]]), so the self-distributed chain stays coherent at zero [[entropy]].
+Because the `streamUuid` chain links each event to its parent by hash and addresses each by content, **the stream of saves IS a [[blockchain]]** — a Merkle DAG, the time-axis dual of the cross-[[seal]]. It is self-verifying (verify is O(N), recompute-and-compare — [[proof]] · [[integrity]]) and therefore **self-distributed**: any node reconstructs and verifies the whole from content alone, and two peers holding the same saves hold ONE chain ([[merge]] federation is set-union, holographic · distribution). And because identity is content, the same content-[[uuid]] keeps every compute substrate bit-identical — memory · cpu · gpu collapse to the same address, zero divergence ([[sync]]), so the self-distributed chain stays coherent at zero [[entropy]].
 
 ## Standards
 

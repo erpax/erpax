@@ -2,19 +2,19 @@
 name: event
 description: "Use when reasoning about event — A domain **event** is the matter that crosses the hooks seam: a collection's hook detects a state transition and emits an envelope; subscribers (the GL-posting handler, audit, noti"
 atomPath: event
-coordinate: "event · 4/weave · 819b3dfa"
-contentUuid: "148b0091-b3ff-5158-b606-3371c8b18cba"
-diamondUuid: "7f6c65b8-bfb1-8859-a793-58846373aca5"
-uuid: "819b3dfa-a314-865b-a49f-2016f154a25b"
-horo: 4
+coordinate: "event · 5/round · 4647d54b"
+contentUuid: "4568c522-1853-539d-943b-8f90dbeb0cb9"
+diamondUuid: "7c7e681a-0261-8649-9ea1-b4023f8f404e"
+uuid: "4647d54b-c7bd-8ac8-8f72-e23e871c3e54"
+horo: 5
 typography:
   partition: event
-  bondDegree: 129
+  bondDegree: 60
 standards:
   - "ISO/IEC-29119"
 bindings: []
 signatures:
-  computationUuid: "5dacd6ef-0723-8d11-90b7-d678f027eacb"
+  computationUuid: "9230a41f-7b76-8790-a798-83a14978f618"
   stages:
     - stage: path
       stageUuid: "0e27f2e5-b2cd-8864-bfb3-cd85b8e484e3"
@@ -23,18 +23,18 @@ signatures:
     - stage: boundary
       stageUuid: "8a0c406d-949f-834f-b42d-d88cab6a49ce"
     - stage: links
-      stageUuid: "53d1601d-fb16-8e8a-8a1e-20606f84b737"
+      stageUuid: "5f365712-b77e-8f62-a95a-33dab552c590"
     - stage: horo
-      stageUuid: "ce2858cf-3571-89e0-8796-38af5778dad6"
+      stageUuid: "9d29729a-1155-8f68-bbf0-de27a37aa269"
     - stage: seal
       stageUuid: "c3baa5c0-4275-889a-a370-17c7d074822c"
     - stage: uuid
-      stageUuid: "acd717fb-f8a6-8cab-8000-5e5f5c3ae2e6"
+      stageUuid: "4a001427-e501-86f6-9efc-17c0ce8d3793"
 version: 2
 ---
 # event — the content-uuid-keyed domain event (the membrane payload)
 
-A domain **event** is the matter that crosses the [[hooks]] seam: a collection's `afterChange` hook detects a state transition and emits an envelope; subscribers (the GL-posting handler, audit, notifications) AND **other erpax instances** (federation peers) consume it. The event is how universes connect (see [[hooks]] "Hooks are where multiverses connect", [[flow]] event streams).
+A domain **event** is the matter that crosses the [[hooks]] seam: a collection's `afterChange` hook detects a state transition and emits an envelope; subscribers (the GL-posting handler, audit, notifications) AND **other erpax instances** (federation peers) consume it. The event is how universes connect (see [[hooks]] "Hooks are where multiverses connect", flow event streams).
 
 ## Envelope shape
 `{ eventId, eventType, tenantId, aggregateId, aggregateType, timestamp, userId?, payload }`.
@@ -54,4 +54,4 @@ A domain **event** is the matter that crosses the [[hooks]] seam: a collection's
 - Re-deriving identity off the integer/local id anywhere a federation peer will read it.
 - Doing the GL post inline in the hook instead of emitting and letting the subscriber post (see `chainEventEmitters` + the GL-posting subscriber).
 
-Composes: [[hooks]] (the emit seam) · [[identity]] (the content-uuid aggregate key) · [[merge]] (federation reconciliation/dedup) · [[flow]] (event streams) · [[accounting]] (GL-posting subscriber).
+Composes: [[hooks]] (the emit seam) · [[identity]] (the content-uuid aggregate key) · [[merge]] (federation reconciliation/dedup) · flow (event streams) · [[accounting]] (GL-posting subscriber).

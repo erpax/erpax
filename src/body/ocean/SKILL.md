@@ -3,13 +3,13 @@ name: ocean
 description: "Use when reasoning about ocean as a anatomical part of body — vocabulary pivot to @/ocean; nested not duplicated."
 atomPath: "body/ocean"
 coordinate: "body/ocean · 8/crest · 3abce132"
-contentUuid: "4ca8eb77-0839-5727-a5a3-4f2112ce9945"
+contentUuid: "7be6afa2-fc5a-55d5-9abf-6f83d7d01fe4"
 diamondUuid: "d869fac4-690b-80ab-897a-8a54704053cb"
 uuid: "3abce132-7b25-8a73-8f78-3aaa236fc985"
 horo: 8
 typography:
   partition: body
-  bondDegree: 22
+  bondDegree: 16
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

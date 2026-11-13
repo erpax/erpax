@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when resolving a calendar date to a fiscal year/period, generating a fiscal calendar, or amending a period config — monthly, quarterly, weekly, iso-week, retail-445 and custom period types, with a chainLeafUuid audit leaf. Read this before trusting any chainLeafUuid: the leaf was a reversible base64 prefix claiming tamper detection, hand-rolled identically in seven atoms, and it is now the corpus fold.",
-    "uuid": "8993ec02-9ee8-8fb7-af36-21799d67b1bb",
+    "uuid": "c4d02bee-a8f4-8c9b-8dab-1b31af2edbb6",
     "words": [
       "use",
       "when",

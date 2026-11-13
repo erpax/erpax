@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "feed",
-    "uuid": "7513b0cc-d4f3-8b1e-95d4-15e3e95d0edc",
+    "uuid": "077ba74e-dbf2-82aa-aef6-1c51dda84f42",
     "words": [
       "feed"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when feeding research/develop waves into themselves for endless R&D — each generation's waves become the next asks; corpus may grow; shouldContinue until external stop; maxGenerations bounds one call.",
-    "uuid": "e178f103-3427-8079-b3ae-72394d16203e",
+    "uuid": "d5838fc9-ddaf-8a0f-901f-b482892cf522",
     "words": [
       "use",
       "when",

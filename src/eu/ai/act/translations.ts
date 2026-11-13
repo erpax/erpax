@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing EU AI Act 2024.",
-    "uuid": "4ffc195b-2441-8248-b137-47cd508c5375",
+    "uuid": "d92dafd7-550e-8fde-b7b1-8863e1442864",
     "words": [
       "use",
       "when",

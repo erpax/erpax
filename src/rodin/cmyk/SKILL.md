@@ -2,33 +2,33 @@
 name: cmyk
 description: "Use when reasoning about color/signal from sequence position in erpax — the four print primaries ARE the first four rodin digits {0=K, 3=C, 6=M, 9=Y}; color comes from the slot, the C↔M polarity gap is closed by Y at 9 and anchored by K at 0. The signal model under links/tags/admin hue. Nested under rodin."
 atomPath: "rodin/cmyk"
-coordinate: "rodin/cmyk · 7/descent · 914b78e3"
-contentUuid: "c51ae63d-47da-559f-af5d-f0a53ae034b6"
-diamondUuid: "31455c63-d002-8f17-8509-f188fb942e03"
-uuid: "914b78e3-8731-8372-8be5-56437fb0f04a"
-horo: 7
+coordinate: "rodin/cmyk · 4/weave · 689c9c28"
+contentUuid: "a8ebc880-f219-51b9-96cc-c963527d45ac"
+diamondUuid: "7bad7921-6a9d-818e-b75c-5b96c07d5e75"
+uuid: "689c9c28-fee5-8e07-8793-e3e961d2a645"
+horo: 4
 typography:
   partition: rodin
-  bondDegree: 70
+  bondDegree: 58
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d60d85d9-459d-89a7-8dfc-c0e5ea2c3f21"
+  computationUuid: "54e18387-d69c-8729-89ee-6fba2bb5383c"
   stages:
     - stage: path
       stageUuid: "44e9fde9-ad35-8c46-b850-0680d8da2a8d"
     - stage: trinity
       stageUuid: "f016bd36-8b34-832e-a8a2-c17613671b2d"
     - stage: boundary
-      stageUuid: "4cb9a62e-a862-8c7d-ae6c-e43ab7f08eef"
+      stageUuid: "26a9d35b-9d5d-8d89-a052-6287a7c01b25"
     - stage: links
-      stageUuid: "bf715a6c-6716-853a-90bc-06b93e523c00"
+      stageUuid: "cdb356fd-17ad-8de1-bd92-b69160e35476"
     - stage: horo
-      stageUuid: "56eff4b3-c83b-875a-9a33-dfe28133e521"
+      stageUuid: "e3e0ff38-4eab-87c0-98ee-ed36ed3f66ca"
     - stage: seal
       stageUuid: "d3718c06-185f-8362-931c-c510e5f71ebf"
     - stage: uuid
-      stageUuid: "d22a799d-7fd5-841e-b08d-cfa9668c02e9"
+      stageUuid: "9b0812ec-8a35-8014-a084-a9f4f583e8b4"
 version: 2
 ---
 # cmyk — color from position (the gamut is {0,3,6,9})
@@ -38,7 +38,7 @@ version: 2
 | digit | channel | role | erpax signal |
 |---|---|---|---|
 | `0` | **K** key/black | origin / substrate | the record itself ([[identity]], [[config]]) |
-| `3` | **C** cyan | forward [[polarity]] (×2) | outbound links / [[give]] |
+| `3` | **C** cyan | forward [[polarity]] (×2) | outbound links / give |
 | `6` | **M** magenta | reverse [[polarity]] (×5) | inbound links / take |
 | `9` | **Y** yellow | [[axis]] close (triad) | categorical / [[tags]] |
 

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when storing numeric or realtime data the way words are stored — one folder per digit (0-9), crosslinked exactly like the word atoms; the numeric corpus is the twin of the word corpus, the word and digit duality, and a stream of digits is realtime data addressed by position.",
-    "uuid": "18bffefc-35f3-8e03-8612-522ffd468e82",
+    "uuid": "c3708794-f24e-8aa7-924f-4bb2aaea28b4",
     "words": [
       "use",
       "when",

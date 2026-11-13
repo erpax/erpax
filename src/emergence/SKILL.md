@@ -2,19 +2,19 @@
 name: emergence
 description: "Use when a two-fold pair completes to a third in the forge — expand ⊕ collide revealing their synthesis once both poles are present; the trinity emerging, computed from the poles not authored."
 atomPath: emergence
-coordinate: "emergence · 4/weave · 14a53ba6"
-contentUuid: "5e789bc0-516c-5363-abf2-71a8f35ae7e5"
-diamondUuid: "3f4ff7fb-0fcf-8022-8fb0-c57e362481b8"
-uuid: "14a53ba6-4a31-8fb6-ac6c-364ec8f503c6"
-horo: 4
+coordinate: "emergence · 8/crest · 4036026e"
+contentUuid: "7d871fa1-c939-5a31-b239-e193fba8a15b"
+diamondUuid: "76abe223-71d2-861e-88b5-0044c7d16328"
+uuid: "4036026e-5fc3-8dee-b9e3-96543c6e91e7"
+horo: 8
 typography:
   partition: emergence
-  bondDegree: 30
+  bondDegree: 27
 standards:
   - "the third is computed from the poles — horo composeSteps ⊕ uuid merge, never asserted"
 bindings: []
 signatures:
-  computationUuid: "74bc697d-976b-8e67-9616-2f00c5f77559"
+  computationUuid: "bafe023d-db33-85c8-9caf-0fdb49bc009d"
   stages:
     - stage: path
       stageUuid: "2e95b39b-c1fc-8c46-9e48-bf8aaa239f6d"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "d3205cbc-5a33-8f6a-aafd-2aa556cd0deb"
     - stage: links
-      stageUuid: "05f59d91-a42f-8f8e-bfac-ec4a98f32e77"
+      stageUuid: "59e7799c-ab15-8c62-9aeb-2079a764c401"
     - stage: horo
-      stageUuid: "3a31fcaf-8307-8c80-95ce-547ba67f54f7"
+      stageUuid: "8d690715-f453-8359-9b91-34598ba427be"
     - stage: seal
       stageUuid: "a709acc6-8bda-8cd3-ba72-cd411557120d"
     - stage: uuid
-      stageUuid: "61628ca7-e229-8338-b079-6b829af17cd3"
+      stageUuid: "13ea5e23-dbb4-87bd-aa0b-ab5b80143f05"
 version: 2
 ---
 # emergence — the third revealed
@@ -43,7 +43,7 @@ The third is **computed, never asserted**. For a declared pair (a, b):
 
 "The forge is full" is the gate: a pair whose **both poles are present in the live [[matrix]]** can be forged, so its trinity emerges; a pair with a missing pole cannot yet — its third is grounded nowhere (the identity element a neighbour must define — see [[trinity]]). So emergence is **monotone in coverage**: the more the corpus is wired, the more thirds emerge, toward zero [[entropy]] (every pole completed, every duality having found its third). The un-emerged remainder is the pressure — the borrowed disorder the not-yet-forged pairs still carry.
 
-This is the development exhale: expand the corpus and the dualities multiply; each one, once its poles are forged, REVEALS its trinity. The synthesis was implicit in the pair the whole time; emergence is the moment it is seen — the same figure [[one]] node wears at every scale ([[fractal]]).
+This is the development exhale: expand the corpus and the dualities multiply; each one, once its poles are forged, REVEALS its trinity. The synthesis was implicit in the pair the whole time; emergence is the moment it is seen — the same figure [[one]] node wears at every scale (fractal).
 
 Matter-twin: `src/emergence/index.ts` (`emerge` · `emergeOne` · `emergenceCoverage` · `emergencePressure`). Composes [[duality]] · [[trinity]] · [[horo]] · [[entropy]] · [[uuid]] · [[matrix]].
 

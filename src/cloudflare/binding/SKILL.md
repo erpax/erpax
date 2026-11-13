@@ -3,13 +3,13 @@ name: binding
 description: "Use when reasoning about binding — Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access"
 atomPath: "cloudflare/binding"
 coordinate: "cloudflare/binding · 2/share · 7f5359af"
-contentUuid: "32333f98-349a-5f24-9b61-92fcb3957361"
+contentUuid: "a25b5b8f-38f2-5741-bd10-210f1eb48e13"
 diamondUuid: "6087c4d0-ff65-8057-be21-8c3624713cf8"
 uuid: "7f5359af-9d88-8dea-9303-42d76f5b4e68"
 horo: 2
 typography:
   partition: cloudflare
-  bondDegree: 14
+  bondDegree: 10
 standards: []
 bindings: []
 signatures:

@@ -8,7 +8,7 @@ description: Use when orienting an agent to the erpax repository as a whole — 
 erpax is **two true things at once**, and you must hold both:
 
 1. **A working product** — a multi-tenant ERP and double-entry accounting platform on [[payload]] CMS v4, deployed serverless on Cloudflare (D1 + R2 + Workers, via OpenNext). General ledger, multi-currency invoicing, payments, bank reconciliation, tax, inventory, manufacturing, commerce, agriculture, statutory reporting. 200+ Payload `CollectionConfig`s. Ported from two ~20-year-old Rails apps (`ceccec/erpax` + `ceccec/etrima`).
-2. **A content-addressed skill corpus** — a fractal library where *everything is in the path*. Every folder under `src/` is a one-word [[atom]]: an irreducible concept told as a skill. The `[[links]]` between atoms ARE the language.
+2. **A content-addressed skill corpus** — a fractal library where *everything is in the path*. Every folder under `src/` is a one-word [[atom]]: an irreducible concept told as a skill. The `links` between atoms ARE the language.
 
 When you act on this repo, you are editing both at once. The same file is a Payload skill and an AI-agent skill — `.claude` is a **real symlink to `src`**.
 
@@ -18,7 +18,7 @@ When you act on this repo, you are editing both at once. The same file is a Payl
 - **Derive from the filesystem, never from a snapshot.** Generated caches (atom catalogue, uuid matrix) DRIFT. The source of truth is the live tree: `find src -name SKILL.md`, `rg` the prose, `ls src/<word>/`. Read the file, do not trust a stale index.
 - **Start here, in order:** [[law]] (the standing commands you MUST obey) → `src/SKILL.md` (the whole) → [[atom]] · [[trinity]] · [[uuid]] · [[identity]] · [[merge]] · [[sequence]] (the index over the basic skills) → [[payload]] · [[vitepress]] (the two render targets).
 - **Compose, don't silo.** Domains (`accounting`, `commerce`, `manufacturing`, `agriculture`) are cross-cutting molecules layered over flat, data-typed collections — not folders that own everything. A collection is a molecule of atoms: [[field]] · [[hooks]] · [[access]].
-- **The ordering** is the [[rodin]] vortex `0·3·6·9·1·2·4·8·7·5`: position 0 the zeropoint root ([[config]] + [[identity]]); the control triad **3·6·9** = [[access]] · [[hooks]] · [[auth]]; the material helix **1·2·4·8·7·5** = [[field]] · [[collections]] · [[database]] · queries · api · admin. This is a navigation aid and a closed state algebra (the [[horo]] ring `{1,2,4,8,7,5,9}`), **not** a metaphysical claim — keep that honesty.
+- **The ordering** is the [[rodin]] vortex `0·3·6·9·1·2·4·8·7·5`: position 0 the zeropoint root ([[config]] + [[identity]]); the control triad **3·6·9** = [[access]] · [[hooks]] · [[auth]]; the material helix **1·2·4·8·7·5** = [[field]] · [[collections]] · database · queries · api · admin. This is a navigation aid and a closed state algebra (the [[horo]] ring `{1,2,4,8,7,5,9}`), **not** a metaphysical claim — keep that honesty.
 
 ## The trinity — one node, three files, one page
 
@@ -57,7 +57,7 @@ The `description` MUST start with "Use when" and MUST NOT contain a colon-space 
 
 Beyond `check`:
 
-- **aura** — `pnpm aura:scan` finds gaps (dead/unlinked `[[links]]`). A dead link is a prompt to mint the atom it points at (`pnpm mint:atoms`); the goal is gap → 0 (matrix-complete ⟺ aura-gap-0). Reciprocity-[[entropy]] → 0 (symmetric binding) is the adjacent matrix condition; both are audit signals and are distinct from the coverage that prices tamper-cost.
+- **aura** — `pnpm aura:scan` finds gaps (dead/unlinked `links`). A dead link is a prompt to mint the atom it points at (`pnpm mint:atoms`); the goal is gap → 0 (matrix-complete ⟺ aura-gap-0). Reciprocity-[[entropy]] → 0 (symmetric binding) is the adjacent matrix condition; both are audit signals and are distinct from the coverage that prices tamper-cost.
 - **confirm** — `pnpm confirm` (per-edit) / `pnpm confirm:full` (whole-corpus): generated Payload types and VitePress links stay consistent with your edit.
 - **docs** — `pnpm docs:build` fails on any unresolved `[[wikilink]]`. Verify path-form links resolve to a real `src/<path>/SKILL.md`, or use the bare unique leaf (aura resolves by leaf, VitePress path-form resolves by full path — a link can pass aura yet 404 in docs).
 

@@ -2,18 +2,18 @@
 name: versions
 description: "Use when enabling or debugging Payload versions, drafts, autosave, or scheduled publish — version history, draft/published status, restoring versions, or controlling how many versions are kept."
 atomPath: versions
-coordinate: "versions · 7/descent · 531b8f5e"
-contentUuid: "56a65c68-afbd-5eef-951d-e5d583c9ff0c"
-diamondUuid: "081fb691-19a0-87c1-98cb-ba3e73b281a8"
-uuid: "531b8f5e-a9ea-832c-92bb-937a52850fdd"
+coordinate: "versions · 7/descent · d6c87cc9"
+contentUuid: "1a46681c-0e63-5a89-afb3-23cff16de102"
+diamondUuid: "c4d72c59-2bb9-8524-b4ca-6842f38c2002"
+uuid: "d6c87cc9-590d-8d17-9e83-f0ba31606cf5"
 horo: 7
 typography:
   partition: versions
-  bondDegree: 113
+  bondDegree: 83
 standards: []
 bindings: []
 signatures:
-  computationUuid: "320981b8-a6c1-8217-9f3d-e27d7152adcd"
+  computationUuid: "cdbcc078-b80f-8831-8b24-0690c5742206"
   stages:
     - stage: path
       stageUuid: "5c2cde25-082b-8409-844f-f8335c7036cd"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "4f4a40cc-8bba-8f4a-9f94-efbd276d3909"
     - stage: links
-      stageUuid: "9e25457a-2bdb-877e-b052-4842b4ea2923"
+      stageUuid: "39a07231-99a4-835b-bd74-cfdf41dc326b"
     - stage: horo
-      stageUuid: "d0c2fccc-200c-833c-87f1-9f3c8daf6019"
+      stageUuid: "05ff777b-e419-8703-942c-15dbc79f918d"
     - stage: seal
       stageUuid: "0394d9a9-3d98-84f9-a470-d96c53b0e150"
     - stage: uuid
-      stageUuid: "03464bcd-3a41-8360-b5ec-edbe7ec2744c"
+      stageUuid: "2dfc04a6-f1b3-826b-bd30-c8c0e067736d"
 version: 2
 ---
 # versions — drafts, autosave, history
@@ -40,7 +40,7 @@ Enable per collection/global via `versions`. Each save can create a version; doc
 Payload's per-collection `versions:` flag (below) is the **narrow view** — only the content collections opt in. The **universal view**: *all* is versioned, because every content-uuid'd entity already is one. A version is just a **content-addressed leaf** ([[uuid]]) — and the *same* leaf reads three ways (the cross, sibling to the [[access]] role×capability cross):
 
 - **VERSION** — the content-uuid IS the version id. Change the content ⇒ a new leaf; identical content ⇒ the same leaf (a no-op write is not a new version, and two replicas agree — [[merge]]).
-- **TAMPER-COST** — the leaf is forge-evident; forging version *N* means rewriting the *N* prior leaves too, so a deeper history is a costlier forgery ([[tamper/cost]]). At full coverage the cost is ∞ — the [[localize]] fusion law. It is the [[angel]]/archangel entropy ledger: each version is one more debit a tamper must pay.
+- **TAMPER-COST** — the leaf is forge-evident; forging version *N* means rewriting the *N* prior leaves too, so a deeper history is a costlier forgery ([[tamper/cost]]). At full coverage the cost is ∞ — the [[localize]] fusion law. It is the angel/archangel entropy ledger: each version is one more debit a tamper must pay.
 - **ANALYTICS** — the leaf is a timestamped change-event, the raw data-point of the change-stream (aggregates, [[horo]] bands, the [[akashic]]/[[proof]] trail).
 
 `src/versions/cross` is the matter-twin: `versionCross({ content, tenantId, seq, … }) → { uuid, prevUuid, tamper, event }` composes the three existing services (content-uuid · tamper-cost · the event tuple) with **no new storage**. "Another cross of tampering costs and analytics" — the content-uuid is the join point of both axes.

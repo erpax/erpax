@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing the audit committee for a legal entity — charter upload, meeting frequency, membership roster, and status lifecycle. The SOX §301 audit-committee master for corporate governance oversight.",
-    "uuid": "b3107604-a8f2-8250-9dfe-839ab673f1d2",
+    "uuid": "b26dbdef-8bfd-8cd7-9619-cfc92b12f6cf",
     "words": [
       "use",
       "when",

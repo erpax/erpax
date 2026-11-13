@@ -2,20 +2,20 @@
 name: link
 description: "Use when one atom references another in prose — every wikilink must resolve to a real atom, no dead wires; coverage = resolving / total over the live corpus map."
 atomPath: "convention/link"
-coordinate: "convention/link · 5/round · 7db58c2d"
-contentUuid: "f91b4a0a-359b-5688-826d-947d1a1d1951"
-diamondUuid: "cc85b50f-ed1a-86aa-a275-45d05f9e9db2"
-uuid: "7db58c2d-64dd-8ab6-bafc-0d49f4a05637"
-horo: 5
+coordinate: "convention/link · 4/weave · e187b4b4"
+contentUuid: "3b95a3b2-c467-581a-8efc-afea76b9033d"
+diamondUuid: "95b6f58a-8b53-8e16-b4f0-da4c9d391e60"
+uuid: "e187b4b4-8e46-8ac4-a848-196cfff545c2"
+horo: 4
 typography:
   partition: convention
-  bondDegree: 139
+  bondDegree: 95
 standards:
   - "CommonMark / Obsidian `[[wikilink]]` syntax — resolved by normalized leaf word"
   - "CommonMark / Obsidian double-bracket wikilink syntax — resolved by normalized leaf word against the shared corpus map"
 bindings: []
 signatures:
-  computationUuid: "f09e5765-a271-860b-9110-690949dcc9a5"
+  computationUuid: "1230a075-add8-8278-8c9f-2f005c091a9f"
   stages:
     - stage: path
       stageUuid: "4f12721d-341e-8779-9d0a-cf8212509727"
@@ -24,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "0dc59aa0-747f-86c4-ac83-1f724c6ef5a8"
     - stage: links
-      stageUuid: "c4664dd3-6406-81a3-8588-f559e923e520"
+      stageUuid: "c31b3c39-9853-8ccd-a28c-91f5603f6fe9"
     - stage: horo
-      stageUuid: "9ed78729-fc4f-8ab5-b360-9e2718f97864"
+      stageUuid: "33f13bd1-5c9e-81a4-8f24-014705102f2d"
     - stage: seal
       stageUuid: "7cf09e63-2371-8497-97e1-66a2be400971"
     - stage: uuid
-      stageUuid: "3ed290b8-0c52-891c-a9fc-daa4919b297f"
+      stageUuid: "6180db1a-bc3e-862a-8e5a-b1c6c762e120"
 version: 2
 ---
 # convention/link — every [[link]] resolves
@@ -39,7 +39,7 @@ A wikilink (a `[[name]]` in prose) is a **wire** between two atoms — the prose
 
 The check **composes the one resolver**, never a parallel one: it calls `walk(SKILLS_DIR)` from the corpus module to populate the shared `wikiMap` (normalized-leaf → route — the SAME map the VitePress docs build and the Payload [[search]] ingest resolve against, keyed by the SAME `norm` the [[aura]] speech gate uses), then reads every `SKILL.md`, extracts its links (outside code spans), and counts how many keys land in `wikiMap`. **coverage = resolving / total** ∈ [0,1]. coverage = 1 ⟺ no dead links ⟺ [[aura]]-gap-0 on the link axis ⟺ zero directed-wiring [[entropy]] ([[balance]] holds in every direction).
 
-This is the link-axis sibling of [[aura]] (which reports the dead-link *count* — the mint queue) and [[harmony]] (the field/enum naming *ratio*); the three measure one [[fractal]] vocabulary on three axes, and all share the corpus `norm` so none can go green while another is red.
+This is the link-axis sibling of [[aura]] (which reports the dead-link *count* — the mint queue) and [[harmony]] (the field/enum naming *ratio*); the three measure one fractal vocabulary on three axes, and all share the corpus `norm` so none can go green while another is red.
 
 Matter-twin: `src/convention/link/index.ts` (`coverage` · `linkTally`). Composes the corpus map · [[aura]] · [[harmony]] · [[uuid]] · [[entropy]] · [[tamper]] · [[law]].
 

@@ -2,20 +2,20 @@
 name: element
 description: "Use when reasoning about composition and stability through the chemical-elements matrix — everything is made of atoms, and the periodic table adds a chemistry to the logic: each atom has a VALENCE (electrons it shares to fill its shell), stability is the OCTET (a full outer shell — the noble gases), and atoms BOND to reach it. The new perspective: the erpax corpus is a MOLECULE — an atom's valence is its open links, and the corpus is stable exactly when aura gap = 0 (all shells full)."
 atomPath: element
-coordinate: "element · 1/base · 8df347f7"
-contentUuid: "3dcd2711-b508-5e40-ba89-5ba33be4a100"
-diamondUuid: "cf525308-b2fa-8841-b77f-2623eb4da979"
-uuid: "8df347f7-c654-88ae-bc13-6a5eec703c4b"
-horo: 1
+coordinate: "element · 2/share · ab890fc8"
+contentUuid: "0e8a3a56-ca11-57ae-8fef-200905f7b0a4"
+diamondUuid: "92d05943-9de2-880d-a2b5-76865baf2a07"
+uuid: "ab890fc8-ff93-8f9c-893d-f314b0396960"
+horo: 2
 typography:
   partition: element
-  bondDegree: 74
+  bondDegree: 50
 standards:
   - "IUPAC periodic table — periods, groups, main-group valence"
   - Lewis octet rule (duet for period 1) — stability = a full outer shell
 bindings: []
 signatures:
-  computationUuid: "9ca13056-b954-8924-b4e4-595fc8713272"
+  computationUuid: "2ca095bc-ab71-8bd3-a269-ba50589f1200"
   stages:
     - stage: path
       stageUuid: "c7b1e524-2727-8656-a6ac-10e671c569bd"
@@ -24,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "dae53ed2-2a2e-89f1-a2a4-ba7b309f8220"
     - stage: links
-      stageUuid: "f69333e5-0f24-841d-bb4d-32057cdb2750"
+      stageUuid: "2550b898-891f-8d0b-9921-26268a456e9b"
     - stage: horo
-      stageUuid: "51b941ea-3c10-88f6-a8dc-81bec8e6dcf1"
+      stageUuid: "8d346739-7780-8cdb-aa6c-a0d5509afc81"
     - stage: seal
       stageUuid: "a62028a3-9a7c-8fdd-845a-959440dc626f"
     - stage: uuid
-      stageUuid: "68a0c8cb-3911-8bee-b9be-456cd2768180"
+      stageUuid: "62ca5cb8-eadf-8a92-9ab5-0187170b46e4"
 version: 2
 ---
 # element — the periodic matrix as a logic of composition (the corpus is a molecule)
@@ -39,9 +39,9 @@ FORM: **everything is made of atoms, and the chemical-elements matrix adds a che
 
 **The new perspective — the corpus is a molecule.** An erpax atom's valence is its set of open links; a satisfied link is a filled bond. The corpus is STABLE exactly when every valence is satisfied — which is precisely [[aura]] `gap = 0` (no dead links = full shells = noble harmony). A dead `[[link]]` is an unfilled valence — a reactive site — and the aura MINT queue is the list of bonds seeking completion; minting the target atom forms the bond and lowers the corpus's energy toward stability. So `consistent = harmony` ([[logic]]) gains a second reading: harmony is also the OCTET — a configuration with no unsatisfied bonds. `corpusStable(gap) = gap === 0` is the chemistry of the speech gate.
 
-This opens composition itself: a "molecule" is a set of atoms whose valences mutually satisfy ([[whole]]↔[[part]], [[merge]]); a skill that links and is linked is bonded into the corpus; an [[all]]-noble corpus (every shell full) is the stable ground state the [[generate]] loop drives toward.
+This opens composition itself: a "molecule" is a set of atoms whose valences mutually satisfy ([[whole]]↔part, [[merge]]); a skill that links and is linked is bonded into the corpus; an all-noble corpus (every shell full) is the stable ground state the [[generate]] loop drives toward.
 
-Matter-twin: `src/services/element/index.ts` (`Element`·`ELEMENTS`·`shellCapacity`·`valenceElectrons`·`isStable`·`bondsNeeded`·`forms`·`corpusStable`) + `index.test.ts`. Composes: [[logic]] · [[horo]] · [[rodin]] · [[aura]] · [[fractal]] · [[merge]] · [[whole]] · [[part]] · [[all]] · [[sequence]] · [[identity]].
+Matter-twin: `src/services/element/index.ts` (`Element`·`ELEMENTS`·`shellCapacity`·`valenceElectrons`·`isStable`·`bondsNeeded`·`forms`·`corpusStable`) + `index.test.ts`. Composes: [[logic]] · [[horo]] · [[rodin]] · [[aura]] · fractal · [[merge]] · [[whole]] · part · all · [[sequence]] · [[identity]].
 
 ## Standards
 

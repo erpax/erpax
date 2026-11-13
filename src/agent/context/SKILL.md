@@ -3,13 +3,13 @@ name: context
 description: Use when reasoning about context — createAgentContext — the ONE place an AgentContext is assembled.
 atomPath: "agent/context"
 coordinate: "agent/context · 1/base · a03e9b52"
-contentUuid: "e4218e29-582b-51b7-be3a-c68293112b50"
-diamondUuid: "ba77c341-f156-8268-8e67-dd106e601e2d"
+contentUuid: "5def4a9d-b170-540d-a16c-0d9ad3e7e661"
+diamondUuid: "fb02ce6c-6175-8d94-a518-7f76c556b4b6"
 uuid: "a03e9b52-b072-8ca5-ba48-aa8153d3dc0b"
 horo: 1
 typography:
   partition: agent
-  bondDegree: 33
+  bondDegree: 23
 standards:
   - "ISO/IEC 12207 software-life-cycle (one substrate seam)"
   - "ISO/IEC 25010:2023 §5.4 reusability (single-source-of-truth context)"
@@ -17,7 +17,7 @@ standards:
   - "ISO/IEC-25010"
 bindings: []
 signatures:
-  computationUuid: "320dd8ed-2585-8d76-9079-8a570d2bdb33"
+  computationUuid: "2bba5c1b-e23e-8952-b37e-578474138250"
   stages:
     - stage: path
       stageUuid: "8b3c709d-b6e0-88ca-8c52-b574922b2ff0"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "01837e2d-4a3a-8606-a8d3-7945994c06e3"
     - stage: horo
-      stageUuid: "3a4082a0-a41f-8711-a95b-960c2aaca766"
+      stageUuid: "5ff94f19-fa09-8451-9fa8-c945c6475e7b"
     - stage: seal
       stageUuid: "313862e8-b468-8239-8ebc-3180fbef7352"
     - stage: uuid
-      stageUuid: "eeabecf3-e13c-8668-a0ed-94d10cdcc5d3"
+      stageUuid: "ba1c3f32-f678-8a66-a7bb-05f9a63c5b51"
 version: 2
 ---
 # agent/context

@@ -3,17 +3,17 @@ name: particle
 description: "Use when reading a content-uuid as wave-particle duality — the same uuid is both a particle (a discrete identity, no-cloning) and a wave (its digit, the position on the harmonic ring)."
 atomPath: "quantum/particle"
 coordinate: "quantum/particle · 1/base · 885d6fc2"
-contentUuid: "1ed870e1-3671-5524-8f34-7876c3756d11"
-diamondUuid: "5a115531-8dbd-887e-877d-a22de1f6858d"
+contentUuid: "ae16c777-efde-5323-80bf-01a19fc9254f"
+diamondUuid: "418188ce-4445-825d-a03a-a41374a0d702"
 uuid: "885d6fc2-0797-87f5-8502-75361cd2e698"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 37
+  bondDegree: 34
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6299fbdd-9e9b-804b-aaad-4ed5620b77f2"
+  computationUuid: "ace90236-3710-8264-a3a5-e19aa0fffe1e"
   stages:
     - stage: path
       stageUuid: "9c939ea0-bef4-8f89-8bbe-1ae5489fe881"
@@ -24,21 +24,21 @@ signatures:
     - stage: links
       stageUuid: "74433739-7d49-85b6-aee5-1ce5846bac8b"
     - stage: horo
-      stageUuid: "498beafc-daed-8989-9b6c-ed07bfd6ed9c"
+      stageUuid: "dfe8416c-8a28-807a-818a-fbc05d96322c"
     - stage: seal
       stageUuid: "1ffc70e2-a5ec-89c5-b48e-c33da3b7a978"
     - stage: uuid
-      stageUuid: "bde6dd3c-df18-89fc-9a80-293439274de7"
+      stageUuid: "29e8d79d-d9ed-8750-bc82-6770ba1dc89e"
 quantum:
   superposition:
     - atom
     - entanglement
     - generator
     - gravity
-    - links
     - matrix
     - particle
     - photon
+    - quantum
     - superposition
   collapse:
     - "Use when reading a content-uuid as wave-particle duality — the same uuid is both a particle (a discrete identity, no-cloning) and a wave (its digit, the position on the harmonic ring)."
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "6299fbdd-9e9b-804b-aaad-4ed5620b77f2"
-    contentUuid: "1ed870e1-3671-5524-8f34-7876c3756d11"
+    computationUuid: "ace90236-3710-8264-a3a5-e19aa0fffe1e"
+    contentUuid: "ae16c777-efde-5323-80bf-01a19fc9254f"
 version: 2
 ---
 # quantum/particle — wave-particle duality
@@ -68,4 +68,4 @@ Matter-twin: `src/quantum/particle/index.ts` (`asParticle` · `asWave` · `isDua
 
 @audit composed from @/particle (uuid) + @/digit (the ring digit); computed
 
-<sub>content-uuid `1ed870e1-3671-5524-8f34-7876c3756d11` · account `quantum/particle` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `ae16c777-efde-5323-80bf-01a19fc9254f` · account `quantum/particle` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

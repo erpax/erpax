@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "emr",
-    "uuid": "4b82e652-7a1a-804b-a1b7-0e7d714a90c8",
+    "uuid": "82dc4c1c-fe90-843f-8c24-cfb22f6b2671",
     "words": [
       "emr"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the electronic medical record as a quantum snapshot chain — a patient's health state captured as content-addressed, immutable, append-only encounters and observations, nesting layer after layer, never erased so the full history stays reversible and tamper-evident.",
-    "uuid": "1faf886b-97ba-85cb-93a4-37923de5cdbf",
+    "uuid": "6f3198cb-1780-8bb4-b1b0-51fbc99fdb37",
     "words": [
       "use",
       "when",

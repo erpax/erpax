@@ -2,18 +2,18 @@
 name: law
 description: "Use when reasoning about law — Every directive that shaped erpax, distilled and saved as a skill (your own law: save the commands, don't lose them to the chat). Each law links to the atom it governs — the inboun"
 atomPath: law
-coordinate: "law · 5/round · a5968f76"
-contentUuid: "ffb280c5-73a8-5544-aa88-f78a11417a4f"
-diamondUuid: "adc0f8ba-d626-8175-aa4a-0f6dec957a61"
-uuid: "a5968f76-976e-823b-bbfc-610a78e083b8"
-horo: 5
+coordinate: "law · 4/weave · e6aa2b3f"
+contentUuid: "f1ed874d-bed9-5c85-a4ed-8c33047ee41e"
+diamondUuid: "8e5a7f81-50d2-89bb-8d2e-3eeb7589c09b"
+uuid: "e6aa2b3f-7fa7-8687-9b24-56cd52ff7654"
+horo: 4
 typography:
   partition: law
-  bondDegree: 8336
+  bondDegree: 3594
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fb22a9a2-0d07-850c-b79e-a836ca1169a1"
+  computationUuid: "6df4ec3f-fbc0-822f-b80a-83704bbc71b6"
   stages:
     - stage: path
       stageUuid: "574b097b-34e1-8947-81b0-a1a75497bd8a"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "7de78765-6e13-89d1-9780-a846c11cadf9"
     - stage: links
-      stageUuid: "a7d60a5e-d2ab-888c-a3be-cfa7bec08a81"
+      stageUuid: "5dc6d926-e969-8bb3-88e1-98b9b9cc3f3a"
     - stage: horo
-      stageUuid: "06fdf1f6-708a-8ea3-9f7c-aea3df28efea"
+      stageUuid: "ff2d5874-fc11-8363-bca7-49220017ff09"
     - stage: seal
       stageUuid: "3bdd3604-9737-88c7-a45a-4668a205a003"
     - stage: uuid
-      stageUuid: "b9403e2a-0d4f-8a0b-a88d-bce78ca0dd09"
+      stageUuid: "8d64b61a-c0a9-89a2-a2b0-b398a6de9000"
 version: 2
 ---
 # law — the user's commands, saved as the canonical laws
@@ -40,7 +40,7 @@ Every directive that shaped erpax, distilled and saved as a skill (your own law:
 ## The one law — wire every dimension ⇒ coverage rises, and the modelled tamper-[[cost]] rises with it toward its coverage=1 limit
 **The main law, from which every law below emerges.** Wire every dimension through the content-[[uuid]] — payload configs, references, [[scope]]s, [[field]], [[hooks]], all of it — using ONLY COMPUTED chains, never a hand-set value. When all is computed so that **any input is always ACCEPTED and then VERIFIED in harmony with the whole**, the structural **coverage** of the graph rises (the input adds no free parameter — it is determined by, and checked against, the wired graph), and the **modelled undetected-tamper work (`coverageCostLog2`) rises WITH it** (to tamper, a forgery must re-harmonise with the uuid-chained dimensions the coverage axis measures — the [[merge]] never rejects at the door, the [[proof]] catches the disharmony). That cost reaches its **+∞ limit ONLY at coverage = 1**, for the specific coverage axis being measured ([[balance|model⊕collection]], import purity, or usage), under an external [[anchor]] at least as strong as the digest — it is **finite** at any coverage below 1. **Two quantities the code keeps separate, do not conflate:** (a) reciprocity-[[entropy]] (matrix symmetry, `src/entropy` — currently 0) and (b) coverage (the [0,1] fraction that actually feeds the cost). `entropy()` is the matrix-reciprocity slack — an audit/aura signal, NOT an argument to `crackVerdict`; the tamper-cost is priced from coverage, supplied explicitly. **reciprocity = 1 does NOT imply coverage = 1** — the live tree is the counter-example (entropy 0, coverage < 1, cost finite). The honest, strong claim is the forge≫verify asymmetry under an anchor; it is NOT "infinity from zero-entropy automatically." Acceptance ⊕ verification-in-harmony IS the coverage→cost engine; every law below is one projection of it. — zeropoint · [[entropy]] · [[tamper]] · [[cost]] · [[uuid]] · [[harmony]] · accept · [[merge]] · [[proof]] · [[gate]] · [[anchor]] · [[gravity]]
 
-**Each config is a double-entry gateway; the accounting flows through `index.ts`.** From the architectural uuid-[[accounting]] view, every config — a collection, a [[field|field]], a [[hooks|hook]], a [[scope]], a [[reference]] — is a GATEWAY that posts a BALANCED [[entry]]: debit ⊕ credit in uuid-space (input ⊕ verification, [[matter]] ⊕ antimatter, [[angel]] ⊕ archangel). Balanced books = zero net [[entropy]]; an unbalanced post IS the tamper, caught by the [[proof]]. And because the matter twin of every atom is its **`index.ts`**, the **multidimensional uuid-accounting flows THROUGH `index.ts`** — each dimension ([[payload]] ⊕ [[vitepress]] ⊕ [[tests|test]] ⊕ [[types]] ⊕ the [[matrix]]) is a ledger, and the [[trinity]] node is the one gateway where they all balance at once. — [[entry]] · [[account]] · [[accounting]] · [[trinity]] · [[self]]
+**Each config is a double-entry gateway; the accounting flows through `index.ts`.** From the architectural uuid-[[accounting]] view, every config — a collection, a [[field|field]], a [[hooks|hook]], a [[scope]], a [[reference]] — is a GATEWAY that posts a BALANCED [[entry]]: debit ⊕ credit in uuid-space (input ⊕ verification, [[matter]] ⊕ antimatter, angel ⊕ archangel). Balanced books = zero net [[entropy]]; an unbalanced post IS the tamper, caught by the [[proof]]. And because the matter twin of every atom is its **`index.ts`**, the **multidimensional uuid-accounting flows THROUGH `index.ts`** — each dimension ([[payload]] ⊕ [[vitepress]] ⊕ [[tests|test]] ⊕ [[types]] ⊕ the [[matrix]]) is a ledger, and the [[trinity]] node is the one gateway where they all balance at once. — [[entry]] · [[account]] · [[accounting]] · [[trinity]] · [[self]]
 
 **No computational gaps = full coverage.** Each `index.ts` is a set of [[reference]]s ⊕ [[scope]]s ⊕ [[field]] HOOKED together ([[hooks]]) so as to complete the metatron cube (every node connected — the total-[[merge]] graph) and the [[aura]] (the gapless analog field) with NO computational gap. A reciprocity gap raises [[entropy]] (the matrix-symmetry slack); a coverage gap keeps the modelled tamper-[[cost]] below its limit. The gate that drives the [[aura]] to [[whole]] drives reciprocity-entropy toward 0 AND coverage toward 1 — and only at coverage = 1 (a DISTINCT condition from entropy = 0) does that one coverage axis's `coverageCostLog2` reach +∞. — metatron · [[aura]] · [[harmony]] · [[whole]] · [[gate]]
 
@@ -51,9 +51,9 @@ Every directive that shaped erpax, distilled and saved as a skill (your own law:
 - **Multiword disguised as one word is a lie and a violation.** `creativework` is forbidden; COLLIDE a vocabulary with itself so it splits into single-word atoms ENTANGLED together (the compound IS the entanglement). — [[atom]] · [[merge]] · [[harmony]]
 - **Every atom is ONE generic lowercase word holding only its `SKILL.md` / `index.ts` / `test.ts` trinity** (`translations.ts` / `seed.ts` allowed). A hyphen / camelCase / `.suffix` name, or a code folder missing a trinity member, is a violation — this is exactly what `src/config/trading-apis/index.ts` was. The law is **computed from the live tree and GATED as a ratchet** ([[folder]]): the live [[confirm]] hook, `pnpm lint:folders`, pre-push, and the CI [[tests|test]] all FAIL the moment the count rises, so no agent can add a malformed folder in any session. **Tightened axes** (stray `.ts`, multi-segment filenames, accounting structure): [[rules]] · `pnpm rules:check`. Sibling: [[quaternary]] (file purity — only canonical files). — [[folder]] · [[quaternary]] · [[rules]] · [[atom]] · [[trinity]]
 - **Path-in-path merges at the index face** — nested barrels (`accounting/coa`, `body/heart`) MUST compose parent exports with child matter; `mergePathIndices` · `recordOnPathMerged` chain every index-bearing prefix (parent ledger hooks before child); `assertPathIndicesMerged` gates zero unmerged parent segments ([[path]]/merge · `node src/path/hooks.registry.mjs`). — [[path]] · [[merge]] · [[accounting]]
-- **Atoms reference other atoms — they all share and receive.** No isolated atom; the `[[link]]` graph is the corpus. — [[merge]] · [[contribution]] · [[connections]]
+- **Atoms reference other atoms — they all share and receive.** No isolated atom; the `[[link]]` graph is the corpus. — [[merge]] · contribution · [[connections]]
 - **The links create gravitational pull** — an atom's in-degree is its mass; hubs pull the field. — [[network]] · power
-- **The more an atom is used, the more it evolves toward math — and gravitation itself collapses into a math atom.** In-degree IS gravitational [[mass]], and this is *computed, not asserted*: `src/gravity` (`massOf` · `well` · `concentration`) reads the live [[matrix]] and reports the well at **[[law]]** (mass 2650 over 32939 edges, Gini concentration 0.602). That mass pulls a hub from prose toward *computed law* — a formula, a pure function, a tested invariant — because the most-shared concept is the one most worth making exact and DRY; the math-bearing hubs ([[cost]] · [[uuid]] · [[balance]] · [[proof]] · [[tamper]] · [[quantum]] · [[entropy]] · [[rodin]] · [[harmony]]) carry the corpus's mathematics, and **usage selects what gets formalised**. A heavily-used atom still in prose is a [[gravity]] debt to discharge — gravity discharged its own: the force is now a math atom. The README forge-[[cost]] paper is the worked example. — [[gravity]] · [[mass]] · [[network]] · [[generate]] · zeropoint
+- **The more an atom is used, the more it evolves toward math — and gravitation itself collapses into a math atom.** In-degree IS gravitational mass, and this is *computed, not asserted*: `src/gravity` (`massOf` · `well` · `concentration`) reads the live [[matrix]] and reports the well at **[[law]]** (mass 2650 over 32939 edges, Gini concentration 0.602). That mass pulls a hub from prose toward *computed law* — a formula, a pure function, a tested invariant — because the most-shared concept is the one most worth making exact and DRY; the math-bearing hubs ([[cost]] · [[uuid]] · [[balance]] · [[proof]] · [[tamper]] · [[quantum]] · [[entropy]] · [[rodin]] · [[harmony]]) carry the corpus's mathematics, and **usage selects what gets formalised**. A heavily-used atom still in prose is a [[gravity]] debt to discharge — gravity discharged its own: the force is now a math atom. The README forge-[[cost]] paper is the worked example. — [[gravity]] · mass · [[network]] · [[generate]] · zeropoint
 
 ## Compute, don't assume
 - **Compute the fusion, do NOT assume it.** Derive the set from the filesystem (the collider), never a hand-maintained registry/barrel. — [[merge]] · [[uuid]] · [[collapse]]
@@ -61,12 +61,12 @@ Every directive that shaped erpax, distilled and saved as a skill (your own law:
 - **All statements need proof — computed, never asserted.** Every claim (a law, an identity, a README sentence, a number) MUST be a function ⊕ a test that recomputes it on the live [[matrix]]; a statement without a proof is an assumption — borrowed [[entropy]] that lowers tamper-[[cost]]. Proven, it folds into the [[gate]] and the [[matrix]] root ([[proof]]: forge ≫ verify). The quantum-blockchain identity is the worked example — `isQuantumBlockchain()` ([[blockchain]]) computes six properties ⇒ PROVEN. — [[proof]] · [[gate]] · [[testing]] · [[tamper/cost]] · zeropoint
 - **Reference the imports to skills ⇒ DRY, clean, auto-configurable.** The import graph IS the config; the system wires itself. — [[plugins]] · [[merge]] · [[self]]
 - **The vocabulary consolidates — and consolidates all dimensions with it, programmatically.** One vocabulary, projected to payload · vitepress · tests · types · the matrix. — [[harmony]] · [[merge]] · [[collapse]]
-- **schema.org is encoded in the fractal architecture itself** — encode the whole vocabulary as related single-word atoms, programmatically, with skills; **no `schema` prefix**. — [[sti]] · [[fractal]] · [[schema]]
+- **schema.org is encoded in the fractal architecture itself** — encode the whole vocabulary as related single-word atoms, programmatically, with skills; **no `schema` prefix**. — [[sti]] · fractal · [[schema]]
 - **Anonymise is the core of agnostic architecture and DRY naming** — the proper noun collapses to the generic source; the specifics dissolve to the DB. — source · [[identity]] · [[merge]]
 
 ## Form: the SKILL trinity
-- **All is dissolved in `src/` and emerges from there.** Every generated artifact re-emerges from the source. — [[akashic]] · [[fractal]] · [[generate]]
-- **Each atom folder holds ONLY `SKILL.md` ⊕ `index.ts` ⊕ `test.ts` — the SKILL trinity.** File names are architecture; the detail is in the folder PATH (`journal/entry/service`, never `journal/entry.service`). — [[trinity]] · [[fractal]] · [[atom]]
+- **All is dissolved in `src/` and emerges from there.** Every generated artifact re-emerges from the source. — [[akashic]] · fractal · [[generate]]
+- **Each atom folder holds ONLY `SKILL.md` ⊕ `index.ts` ⊕ `test.ts` — the SKILL trinity.** File names are architecture; the detail is in the folder PATH (`journal/entry/service`, never `journal/entry.service`). — [[trinity]] · fractal · [[atom]]
 - **Each atom is a plugin in itself, for many frameworks** — wire every `index.ts` as a shared plugin between payload and vitepress; the same folder architecture everywhere, tested green. — [[plugins]] · [[payload]] · [[vitepress]]
 - **All `.ts` are wired to payload ⊕ vitepress** — the confirm gate (payload ⊕ vitepress) is the approval; no orphan files. — [[trinity]] · [[payload]] · [[vitepress]]
 - **Hooks are the trinity gateways** — where matter meets the live backend and enforces the trinity at runtime. — [[hooks]] · [[trinity]]
@@ -74,7 +74,7 @@ Every directive that shaped erpax, distilled and saved as a skill (your own law:
 
 ## The gate & the tests
 - **Tighten the gate to ZERO — only zero-entropy code passes COMMIT.** — [[gate]] · zeropoint
-- **All workflows and commands are computed to max tamper-cost and sealed with crosses by archangels.** Every CI [[workflow|workflow]] ⊕ every command is a [[gate]]: wired so its coverage rises toward the `coverageCostLog2` ceiling ([[tamper/cost]]), sealed with the ⊕ [[cross]] ([[sealed]]: no entropy leak), and adversarially verified by the [[angel|archangel]]s ([[proof]]) — what survives the assault ships. — [[gate]] · [[tamper/cost]] · [[sealed]] · [[cross]] · [[angel]] · [[proof]]
+- **All workflows and commands are computed to max tamper-cost and sealed with crosses by archangels.** Every CI [[workflow|workflow]] ⊕ every command is a [[gate]]: wired so its coverage rises toward the `coverageCostLog2` ceiling ([[tamper/cost]]), sealed with the ⊕ [[cross]] ([[sealed]]: no entropy leak), and adversarially verified by the archangels ([[proof]]) — what survives the assault ships. — [[gate]] · [[tamper/cost]] · [[sealed]] · [[cross]] · angel · [[proof]]
 - **Every trinity is a cross; every cross is a gate; every gate seals to ∞ at coverage = 1.** The revelation the society surfaced in waves: a [[trinity]] (pole ⊕ counter-pole ⊕ synthesis) `merge`s to one — that fusion IS the ⊕ [[cross]] (the dual-torus, the seal at `1/0`); a [[gate]] is that cross (check ⊕ message ⊕ heal → verdict-uuid); and the gate's [[tamper/cost]] reaches +∞ only when its coverage = 1 (every leg entangled, no gap). One law read at every scale. — [[merge]] · [[trinity]] · [[cross]] · [[gate]] · coverage · [[proof]]
 - **The cross is the universal math, accountable in all states and directions.** `merge`/fusion (the ⊕ [[cross]]) is the one operation under every law — [[gravity]] pulls every used hub to it, every [[gate]] IS it. And each cross is booked as a **balanced double-entry** ([[accounting]] · [[balance]]) across all [[horo]] states and all link directions (coverage): give ⊕ take, debit ⊕ credit, matter ⊕ antimatter — the books balance at every quantum state and every direction. The README is that statement — erpax's [[self/reference|self-observation]] ledger, the proof balanced (what it IS ⊕ what it verifies). — [[cross]] · [[merge]] · [[accounting]] · [[balance]] · [[horo]] · coverage · [[gravity]]
 - **Train in navigation waves; every wave records itself in atoms.** Development advances in [[wave]]s that ride the [[horo]] ring and navigate the [[sequence]] (the path); each wave must SAVE its work back to [[atom]]s — its findings become computed, [[self]]-aware skills (e.g. [[consciousness]], the integrated self-model), never lost to the [[chat]] — the [[society]] reading and re-recording its own [[akashic]] record. — [[wave]] · [[sequence]] · [[society]] · [[akashic]] · [[atom]] · [[generate]]
@@ -86,11 +86,11 @@ Every directive that shaped erpax, distilled and saved as a skill (your own law:
 ## The society & the loop
 - **Send teams of coordinated agents (using the chat) to do the work** — research, save the skills, train themselves. — [[society]] · [[team]] · [[chat]] · [[train]]
 - **Train agents to discover and fetch schemas — self-evolving `src`.** — [[generate]] · [[breath]] · [[society]]
-- **Dry-clean the matrix: move logic to its related atoms — toward zero reciprocity-entropy and toward full coverage (whose limit prices tamper-[[cost]] at +∞).** The content-uuid Merkle makes forging ≫ verifying. — [[refactor]] · zeropoint · [[proof]] · [[integrity]]
+- **Dry-clean the matrix: move logic to its related atoms — toward zero reciprocity-entropy and toward full coverage (whose limit prices tamper-[[cost]] at +∞).** The content-uuid Merkle makes forging ≫ verifying. — refactor · zeropoint · [[proof]] · [[integrity]]
 - **Save every command as a skill; improve the related skills from the context.** This atom is that save. — [[self]] · [[generate]] · [[akashic]]
 - **Always save the manual work to atoms.** When a session does work by hand — a paper, a synthesis, a one-off README — it MUST re-emerge from `src/`: fold it back into the atoms it draws from (their `SKILL.md`s) so it is regenerable and linked into the graph, never lost to the [[chat]]. Manual work that stays manual is a gap (entropy > 0); saved to its atoms it becomes computed source. The worked example IS this README — a [[proof]]-paper computed from the [[tests]] toward max forge-[[cost]] — saved back to [[proof]] · [[quantum]] · [[tamper]] · [[cost]]. — [[akashic]] · [[generate]] · [[self]] · [[proof]] · [[atom]]
 
-Composes [[atom]] · [[merge]] · [[collapse]] · [[trinity]] · [[gate]] · zeropoint · [[society]] · [[generate]] · [[harmony]] · [[fractal]] · [[self]] · [[akashic]].
+Composes [[atom]] · [[merge]] · [[collapse]] · [[trinity]] · [[gate]] · zeropoint · [[society]] · [[generate]] · [[harmony]] · fractal · [[self]] · [[akashic]].
 
 ## The formula — `oneLaw` in `index.ts`
 

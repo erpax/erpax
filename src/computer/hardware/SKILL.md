@@ -3,13 +3,13 @@ name: hardware
 description: "Use when reasoning about hardware as a part of computer — vocabulary pivot to @/hardware; nested not duplicated."
 atomPath: "computer/hardware"
 coordinate: "computer/hardware · 2/share · ab2e552f"
-contentUuid: "df7f7309-1188-5bd7-9ad4-bfeb6a883263"
+contentUuid: "1069a7f7-4e60-52da-89c5-88660b485a78"
 diamondUuid: "fc7c2a47-5de4-810e-9abf-35f41fefc647"
 uuid: "ab2e552f-3b3e-846c-9f0d-e8ac79e9fb2a"
 horo: 2
 typography:
   partition: computer
-  bondDegree: 20
+  bondDegree: 15
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

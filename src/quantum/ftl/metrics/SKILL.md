@@ -2,18 +2,18 @@
 name: metrics
 description: Use when reasoning about metrics — Quantum FTL metrics — reuse and amortization calculations
 atomPath: "quantum/ftl/metrics"
-coordinate: "quantum/ftl/metrics · 5/round · 89f55484"
-contentUuid: "f6d3c413-b3ca-5bea-b807-4997ec8f75cf"
-diamondUuid: "b32ad097-2bfd-8db6-b52a-0afc820680ef"
-uuid: "89f55484-9bda-8f10-814f-df0ce2db3e67"
-horo: 5
+coordinate: "quantum/ftl/metrics · 2/share · e31bb41c"
+contentUuid: "6bd3ef33-5d1a-590a-9e29-799db01dc67e"
+diamondUuid: "51fc303e-c1cb-824c-a512-d81db38a4d56"
+uuid: "e31bb41c-23b9-880e-bd26-543647e79266"
+horo: 2
 typography:
   partition: quantum
-  bondDegree: 9
+  bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "796981f9-6e78-8ccb-a16a-1f945edd74fa"
+  computationUuid: "c67b52d8-1110-848c-83c3-42a6b9ef6b43"
   stages:
     - stage: path
       stageUuid: "93b36dc6-4718-8efa-b3cc-6503e65664c9"
@@ -22,16 +22,15 @@ signatures:
     - stage: boundary
       stageUuid: "745bada1-5cc8-831c-8925-9604645f213b"
     - stage: links
-      stageUuid: "c4a92d5d-58e2-8c20-8359-5fcee67dc374"
+      stageUuid: "38e979f9-b819-864d-9593-7f259c50700b"
     - stage: horo
-      stageUuid: "6b53a491-b498-852c-bd1f-6c82a032de37"
+      stageUuid: "a2a8fef6-db5b-8a28-8f47-406a4c738055"
     - stage: seal
       stageUuid: "05f7fb98-adac-82f2-8da4-2d26befcf105"
     - stage: uuid
-      stageUuid: "d6356865-7289-8de9-bd4d-9ad293a5d3e7"
+      stageUuid: "c650bf61-a716-81b4-95b3-5a26f2ba4457"
 quantum:
   superposition:
-    - efficiency
     - ftl
     - quantum
     - superposition
@@ -44,14 +43,14 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "796981f9-6e78-8ccb-a16a-1f945edd74fa"
-    contentUuid: "f6d3c413-b3ca-5bea-b807-4997ec8f75cf"
+    computationUuid: "c67b52d8-1110-848c-83c3-42a6b9ef6b43"
+    contentUuid: "6bd3ef33-5d1a-590a-9e29-799db01dc67e"
 version: 2
 ---
 # quantum/ftl/metrics
 
 Quantum FTL metrics — reuse and amortization calculations.
 
-Composes: [[quantum/ftl]] · [[quantum]] · [[vocabulary/efficiency]].
+Composes: [[quantum/ftl]] · [[quantum]] · efficiency.
 
-<sub>content-uuid `f6d3c413-b3ca-5bea-b807-4997ec8f75cf` · account `quantum/ftl/metrics` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `6bd3ef33-5d1a-590a-9e29-799db01dc67e` · account `quantum/ftl/metrics` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -3,13 +3,13 @@ name: chart
 description: "Use when specifying a chart as pure data — a numeric series with its range and a deterministic normalizer to [0,1]; rendering is the quantum facet (colour per value via the analog aura)."
 atomPath: chart
 coordinate: "chart · 8/crest · 1b355d4d"
-contentUuid: "c3449efe-9401-5425-8f2e-2f2e97c80c89"
+contentUuid: "39665136-cb2f-52a8-a7b1-765a31e443c8"
 diamondUuid: "fbd2183a-0628-8d63-a8e9-3336eed62a06"
 uuid: "1b355d4d-329f-8006-a549-93b642b2ba4b"
 horo: 8
 typography:
   partition: chart
-  bondDegree: 21
+  bondDegree: 20
 standards: []
 bindings: []
 signatures:

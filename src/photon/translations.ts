@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "photon",
-    "uuid": "17709ed2-5593-85cb-bf8d-41320beafc2a",
+    "uuid": "c4f7d644-06a5-8508-994b-6148b0396d94",
     "words": [
       "photon"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the photon — the indivisible quantum a leap emits or absorbs, its energy locked to its frequency by Planck's relation E = hν (massless, so E = pc). In erpax the photon IS the multi-modal uuid-message (colour + sound rendered from one frequency, downstream of the content-uuid); Planck's h is the quantum of action that makes the world discrete and is the source of every leap.",
-    "uuid": "b2d4c39a-bd43-8bfd-8832-166b773fd29a",
+    "uuid": "42418317-c475-8257-9558-d3409cbc13f8",
     "words": [
       "use",
       "when",

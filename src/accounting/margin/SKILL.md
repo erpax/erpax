@@ -3,13 +3,13 @@ name: margin
 description: "Use when reasoning about accounting/margin — margin analysis — gross margin and contribution calculations."
 atomPath: "accounting/margin"
 coordinate: "accounting/margin · 4/weave · 807e3502"
-contentUuid: "fe61a298-723e-54eb-b0b4-0eda49c732b1"
+contentUuid: "57e3df0e-b543-5279-bd75-0b11b88364cf"
 diamondUuid: "c7454bb0-1ca0-8b96-871e-5a59b4e4305d"
 uuid: "807e3502-d36e-8cb4-b8e0-201e212ce1f2"
 horo: 4
 typography:
   partition: accounting
-  bondDegree: 23
+  bondDegree: 18
 standards:
   - "IFRS IAS-2 inventories (cost) + IAS-1 (gross margin presentation)"
 bindings: []

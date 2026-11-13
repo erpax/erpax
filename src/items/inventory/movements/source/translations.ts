@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when stock movements should follow from the documents that cause them — a goods receipt, a shipment and a return are not kinds of movement but its sources, so a hook writes one draft movement per line when the document reaches the state in which stock has moved, once.",
-    "uuid": "7775dbec-ab46-8b57-a917-bda7b6c0b1f1",
+    "uuid": "947a2706-a849-85b7-aa96-919f4a0a8dc6",
     "words": [
       "use",
       "when",

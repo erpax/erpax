@@ -2,14 +2,14 @@
 name: projection
 description: "Use when proving the projection leg — that the FORWARD project (content → uuid) is free and deterministic while its INVERSE (recover the analog negative without the held key) costs the maximum, unbounded at the biggest blockchain — and you must tag the ∞ instead of letting a raw Infinity leak into the bundle."
 atomPath: "proof/projection"
-coordinate: "proof/projection · 5/round · 9ae13e53"
-contentUuid: "69c90fa2-83e2-5af4-aa60-cf7f873a7910"
-diamondUuid: "25d178cf-d982-8550-9429-76d383264422"
-uuid: "9ae13e53-dbe6-8d73-a3fe-67f0b24274ec"
-horo: 5
+coordinate: "proof/projection · 1/base · d6461b7c"
+contentUuid: "e20ee92b-7591-5808-b966-06870733dca7"
+diamondUuid: "21478563-3b69-828d-89c4-369a461c434c"
+uuid: "d6461b7c-eca5-8766-8085-86245644f88c"
+horo: 1
 typography:
   partition: proof
-  bondDegree: 51
+  bondDegree: 45
 standards:
   - "NIST SP 800-57 Part 1 r5 §5.6.1 (anchor key strengths)"
   - "NIST SP 800-57 Part 1 r5 §5.6.1 (anchor key strengths)`"
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "2f3fc895-c1f4-8a38-8d3f-e9e8c6d86b6f"
+  computationUuid: "6bb9cd19-f17e-80e3-94bb-54951bcd2b88"
   stages:
     - stage: path
       stageUuid: "d6eb7272-a5f9-853e-9fd6-6ad1e3123267"
@@ -30,13 +30,13 @@ signatures:
     - stage: boundary
       stageUuid: "9e284b92-22f6-898d-a5bd-4159ab8373ac"
     - stage: links
-      stageUuid: "08591d31-def5-8f87-991c-e4d015d688f7"
+      stageUuid: "837a0847-b28a-8b0a-b71c-2406f9927bbb"
     - stage: horo
-      stageUuid: "64682d7e-725c-81c3-8584-1498b1dd1ba6"
+      stageUuid: "40fb80af-7683-850e-8fa4-283a164b7ee1"
     - stage: seal
       stageUuid: "764fb305-a825-8f36-96a5-f6e76104c2a9"
     - stage: uuid
-      stageUuid: "f1c2e0ce-f179-8e60-b6db-d9e46639716d"
+      stageUuid: "26047e11-adde-8639-be0f-a2601b499a17"
 version: 2
 ---
 # proof-projection — the bounded-infinity organ
@@ -49,11 +49,11 @@ The INVERSE — recover the analog NEGATIVE (the private key / pre-image) from t
 
 KEY POINT — **no Infinity leaks**. ∞ is never serialized as a number. The unbounded case is represented as `decryptKeyLog2: null` + `unbounded: true` (`index.ts:21-22, 56-59, 90-91`; `index.test.ts:30-31`). erpax embraces ∞ as a real answer but TAGS it rather than letting a raw `Infinity` into the JCS-serializable bundle. The honest overall forge floor stays finite: `cheapestForgeLog2 = min(digest, anchor)` (`index.ts:60-61, 92`).
 
-This is the double-entry of order created vs entropy spent — balanced ([[entry]]; `index.ts:95-96`). The bounded envelope it lives inside is [[torus]] / [[beyond]]; the source it returns to is zeropoint. The forward direction is [[give]] (mint, cheap); recovering the negative is what a forger must take, and the matrix that holds both is the [[uuid]] / [[localize]] space.
+This is the double-entry of order created vs entropy spent — balanced ([[entry]]; `index.ts:95-96`). The bounded envelope it lives inside is [[torus]] / [[beyond]]; the source it returns to is zeropoint. The forward direction is give (mint, cheap); recovering the negative is what a forger must take, and the matrix that holds both is the [[uuid]] / [[localize]] space.
 
 Matter-twin: `src/proof/projection/index.ts` (+ index.test.ts).
 
-Composes: [[proof]] · [[anchor]] · [[tamper/cost]] · [[entry]] · [[torus]] · [[beyond]] · zeropoint · [[identity]] · [[merge]] · [[uuid]] · [[localize]] · [[give]] · take
+Composes: [[proof]] · [[anchor]] · [[tamper/cost]] · [[entry]] · [[torus]] · [[beyond]] · zeropoint · [[identity]] · [[merge]] · [[uuid]] · [[localize]] · give · take
 
 ## Common mistakes
 - Treating the 122-bit digest second-preimage as the maximum. It is the CHEAPER hash-collision path, not the max — the anchor is (`index.ts:18-20, 60-61`; `index.test.ts:32-33`).

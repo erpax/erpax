@@ -3,13 +3,13 @@ name: load
 description: "Use when asking the only question no other gate asks — does the app actually LOAD? Boots payload.config for real and asserts every collection registers. It now PASSES — load — OK from esm, 229 collections — after the tool-defs → collections edge was cut and the `pages` collection was renamed. The SCC is still ~225 files: entangled is not fatal. The harness that swallowed the boot fails closed now, and the sentinel is stamped only by a run that verified the schema."
 atomPath: "run/load"
 coordinate: "run/load · 5/round · c642e409"
-contentUuid: "0e2ea11d-9902-5afa-910d-c2fdea8d8f8d"
+contentUuid: "b87d035b-0451-5ab9-a1d8-f62392cb4f17"
 diamondUuid: "54e696c3-30e9-8ae5-a6c6-e3f923081d62"
 uuid: "c642e409-3589-8941-bcf4-3086071461b4"
 horo: 5
 typography:
   partition: run
-  bondDegree: 18
+  bondDegree: 14
 standards: []
 bindings: []
 signatures:

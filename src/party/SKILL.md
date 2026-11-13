@@ -2,14 +2,14 @@
 name: party
 description: "Use when one entity is referenced under many roles (seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by) OR when computing the counterparty side of a financial document — aging open balances into day-buckets (A/R and A/P share one algorithm) or validating a status-lifecycle transition; one party seen through infinite roles, receivable and payable seen from two sides."
 atomPath: party
-coordinate: "party · 1/base · 2fb1166d"
-contentUuid: "7e9f2826-5771-5ae0-a056-816a33d61052"
-diamondUuid: "7e4596db-08dd-84b5-b100-a44952407dc6"
-uuid: "2fb1166d-0bf1-8635-892d-25dcc812cc1f"
-horo: 1
+coordinate: "party · 8/crest · 5cfbb81a"
+contentUuid: "37970016-fa4e-5db5-8fc2-ae289eac0877"
+diamondUuid: "e451419a-c33c-8195-a6c8-896037a0741f"
+uuid: "5cfbb81a-6a0c-89c5-83fa-651277ed1f31"
+horo: 8
 typography:
   partition: party
-  bondDegree: 134
+  bondDegree: 116
 standards:
   - "EN-16931`"
   - "ISO-19011`"
@@ -19,7 +19,7 @@ standards:
   - "ISO/IEC-27002:2022`"
 bindings: []
 signatures:
-  computationUuid: "afa1a385-768c-8a81-82eb-f3731f9c21f0"
+  computationUuid: "faf80a03-0efb-8a9b-be24-9a52d61a177d"
   stages:
     - stage: path
       stageUuid: "0ef76c9e-8206-8572-a3b4-828ca52c220a"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "42bd6e05-dca0-874f-8670-68986bc540ff"
     - stage: links
-      stageUuid: "9ef1cca1-940f-8581-8829-f81b2299a139"
+      stageUuid: "288e5c10-cb0d-85d6-baab-a4973ac195e2"
     - stage: horo
-      stageUuid: "72ba4455-ea70-804f-9965-6a3f3cc31f72"
+      stageUuid: "f5259534-2aff-8a49-9db7-ca6d3fd9071c"
     - stage: seal
       stageUuid: "9ab5dcde-f654-8f13-b628-e78032c820a3"
     - stage: uuid
-      stageUuid: "361e235c-4b1e-8372-8f9f-11d431ec03cc"
+      stageUuid: "eff14424-2dc6-8097-9bbd-242145dc9441"
 version: 2
 ---
 # party — one party, infinite roles; two sides of the same debt
@@ -58,7 +58,7 @@ FORM: **receivable and payable are the SAME document seen from opposite ends of 
 - **aging** — bucketize open balances by days-past-due against an as-of date; same buckets for both sides (`current | aging | overdue | stale`). The day-thresholds are the bands every outstanding item ages along, a closed [[horo]] ring of staleness. `computeAgingBuckets`, `filterOpenDocuments`, `DEFAULT_AGING_BUCKETS`.
 - **workflow** — a directed graph of legal status transitions; assert legality before applying a status change, or throw with the allowed set. `canTransition`, `transitionOrThrow`, `reachableStates`, `terminalStates`.
 
-The aging math is shared with bank-reconciliation via the canonical `AgingBucketKey`; the day-arithmetic (`daysBetween`) is borrowed from [[accounting]], not re-typed — the filesystem is the only source ([[akashic]]). The workflow validator is the same impossibility [[anti/corruption]] enforces (no illegal jump, terminal states final), one law at every scale ([[fractal]]). Value moving between [[party]] is the universal document chain ([[flow]]).
+The aging math is shared with bank-reconciliation via the canonical `AgingBucketKey`; the day-arithmetic (`daysBetween`) is borrowed from [[accounting]], not re-typed — the filesystem is the only source ([[akashic]]). The workflow validator is the same impossibility [[anti/corruption]] enforces (no illegal jump, terminal states final), one law at every scale (fractal). Value moving between [[party]] is the universal document chain (flow).
 
 This is the counterparty organ of the [[society]] — the shape both sides of every relationship share; the standards a document cites are external law incorporated by reference (see [[standard]]).
 

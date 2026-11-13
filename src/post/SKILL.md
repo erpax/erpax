@@ -2,43 +2,43 @@
 name: post
 description: "Use when reasoning about post as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: post
-coordinate: "post · 4/weave · b66d8388"
-contentUuid: "1fc4091f-450b-5f57-bd90-718053cfae38"
-diamondUuid: "fa23ba87-1cde-86c9-91f1-78412c135cc1"
-uuid: "b66d8388-7f63-8c91-b4ae-0280f75327ae"
-horo: 4
+coordinate: "post · 5/round · dbb4d91a"
+contentUuid: "46ce5cbf-619e-5278-b1d1-924c625c6a54"
+diamondUuid: "8aca1960-af1e-8c35-892f-6471c3a216d7"
+uuid: "dbb4d91a-078d-8a04-97e1-410ec7a175f7"
+horo: 5
 typography:
   partition: post
-  bondDegree: 35
+  bondDegree: 20
 standards:
   - "IAS-1"
   - "IAS-34"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "5cf4e351-4209-8495-aff9-04e9c2af3319"
+  computationUuid: "704c29b6-1706-847b-b253-4be28dc61660"
   stages:
     - stage: path
       stageUuid: "68b46ccf-8e11-8ada-988c-7cda11c1155c"
     - stage: trinity
       stageUuid: "21251128-0e9f-8bb6-8b9e-41dedab77d18"
     - stage: boundary
-      stageUuid: "f6ecbdd1-50a4-8b16-a256-fb0dd02306e6"
+      stageUuid: "71533b8f-ce48-8e1b-94be-129b1d69f191"
     - stage: links
-      stageUuid: "b8124bba-3cc0-8b56-8f8d-5d808d501800"
+      stageUuid: "1c32bf38-16d3-860f-b77f-743fd6dae6c9"
     - stage: horo
-      stageUuid: "1e4d1523-d9a1-85be-8dfa-a22f0680b5cc"
+      stageUuid: "5857ebcd-e771-80fb-a9f6-0258efd9d5a0"
     - stage: seal
       stageUuid: "da55a60c-6833-84f8-bcac-cbee01d92541"
     - stage: uuid
-      stageUuid: "cbb4a74e-3e74-8a78-8037-9360a346f7d9"
+      stageUuid: "cb6c9c38-abf6-8611-b1a9-b1ff7778a702"
 version: 2
 ---
 # post
 
 A schema.org component word, collided out of schema.org compounds — fused from PostOffice · blogPost · postOfficeBoxNumber · postOp ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[office]] · [[blog]] · [[box]] · [[number]] · [[op]]
+Entangled with — office · blog · box · [[number]] · [[op]]
 
 Attested in schema.org — PostOffice · blogPost · postOfficeBoxNumber · postOp
 

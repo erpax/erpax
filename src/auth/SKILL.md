@@ -2,14 +2,14 @@
 name: auth
 description: "Use when enabling or configuring Payload authentication on a collection — login/logout, JWT/cookies, API keys, email verification, password reset, login lockout, token expiration, or admin-panel user accounts."
 atomPath: auth
-coordinate: "auth · 9/unity · 6159cca7"
-contentUuid: "11765827-7d0d-5e48-ab77-bc3146ce4598"
-diamondUuid: "cd48afe5-8bcf-8d9e-a83d-343b15daddc2"
-uuid: "6159cca7-2935-84b6-948f-36416cca3b1f"
+coordinate: "auth · 9/unity · 7e3c1282"
+contentUuid: "cb6f256b-d131-5048-a8fc-e0774555b71c"
+diamondUuid: "ddca9674-1369-8cfc-b6f0-6a2dc268b328"
+uuid: "7e3c1282-0d5f-8072-b2ea-1dadd302b2ad"
 horo: 9
 typography:
   partition: auth
-  bondDegree: 105
+  bondDegree: 98
 standards:
   - "NIST INCITS-359-2012 rbac object-scoped-role-assignment"
   - "NIST INCITS-359-2012 role-based-access-control"
@@ -22,7 +22,7 @@ standards:
   - "SOC-2 CC6.1 logical-access-controls"
 bindings: []
 signatures:
-  computationUuid: "2f12240c-275c-80f0-8572-bd70523f162a"
+  computationUuid: "e6619b92-ca5d-83da-8c26-c21d4a7eadc9"
   stages:
     - stage: path
       stageUuid: "b7524e53-dec3-83e8-aabc-a84f5ebd1222"
@@ -31,13 +31,13 @@ signatures:
     - stage: boundary
       stageUuid: "6fb3f2dd-7255-8072-b87f-d7141428a40f"
     - stage: links
-      stageUuid: "ffbe9a38-c94f-88c6-acd5-960d8cdb882c"
+      stageUuid: "5018cbd1-94ff-840a-97f5-85146d856b83"
     - stage: horo
-      stageUuid: "c1f20060-34fa-8185-b0c3-30192b10a4e7"
+      stageUuid: "9006092d-aef6-887d-af10-c47a55eecdff"
     - stage: seal
       stageUuid: "59b92b17-6478-81f2-ba2f-db85cafe564c"
     - stage: uuid
-      stageUuid: "cd6ae21b-e69c-81b5-ad58-061b1a304251"
+      stageUuid: "b1dbc553-2f63-80e3-bfe0-3f50720769fd"
 version: 2
 ---
 # auth — Payload authentication (position 9, the control triad)
@@ -49,7 +49,7 @@ Enable on any collection via the `auth` property; each doc becomes a "user" with
 |---|---|
 | `tokenExpiration` | Seconds the login stays valid. |
 | `verify` | Require email verification before login (`true` or `{ generateEmailHTML, generateEmailSubject }`). |
-| `maxLoginAttempts` | Failed logins before lockout (0 = disabled). See [[harden]]. |
+| `maxLoginAttempts` | Failed logins before lockout (0 = disabled). See harden. |
 | `lockTime` | ms locked after exceeding attempts. |
 | `useAPIKey` | Enable per-user API keys. |
 | `cookies` | `{ secure, sameSite, domain }` — secure cookies in prod. |
@@ -68,13 +68,13 @@ Enable on any collection via the `auth` property; each doc becomes a "user" with
 Multi-tenancy is layered on top via the multi-tenant plugin (users hold a `tenants` array, not a singular `tenant`); don't add a manual `tenant` to the users collection. See [[config]], [[access]].
 
 ## Authentication is the link to the real world (email — and emails have domains)
-Authentication is the **bridge between the form and the world** — the [[limit]] oracle ("is this a real party?") resolved by **measurement**: prove you control an **email** (the `verify` flow — a token sent and returned) and the form has *measured* a real-world identity, the very move that proving you control a **domain** (DNS/WHOIS) is one scale up. Email is to a person's [[identity]] what the domain is to a tenant's — the real-world link, content-addressed once proved ([[proof]]).
+Authentication is the **bridge between the form and the world** — the limit oracle ("is this a real party?") resolved by **measurement**: prove you control an **email** (the `verify` flow — a token sent and returned) and the form has *measured* a real-world identity, the very move that proving you control a **domain** (DNS/WHOIS) is one scale up. Email is to a person's [[identity]] what the domain is to a tenant's — the real-world link, content-addressed once proved ([[proof]]).
 
 **And emails have domains.** `ceci@psg.bg` carries the domain `psg.bg`, so the email's domain *ties the user to the tenant*: **email : user :: domain : tenant**, and `email@domain` is the join. The local-part authenticates the person; the domain places them in their tenant — and an email *at* the domain (or the domain's WHOIS registrant email) is itself proof toward owning that tenant (domain: prove ownership and the tenant is yours). So a user's tenant is **derived from their verified email domain** (the genesis computed `psg.bg` → tenant `PSG` exactly this way), never hand-assigned. One verification, two facts: who you are, and whose tenant you are in.
 
 ## Common mistakes
 - Non-secure cookies in production (set `cookies.secure: true` behind SSL).
-- No `maxLoginAttempts`/`lockTime` → brute-force exposure (see [[harden]]).
+- No `maxLoginAttempts`/`lockTime` → brute-force exposure (see harden).
 - Adding a singular `tenant` to the auth/users collection (use the plugin's `tenants` array).
 
 Composes: [[Users]] · [[api/audit/events]].

@@ -3,13 +3,13 @@ name: reconciliation
 description: "Use when closing tax periods against fiscal periods — tax↔fiscal alignment (same period-end date) and transfer-pricing documentation completeness (OECD), each a proven, refutable invariant with a real tolerance rather than a bare assertion."
 atomPath: "tax/period/reconciliation"
 coordinate: "tax/period/reconciliation · 4/weave · e822d293"
-contentUuid: "3679fd02-8603-5816-9228-95fdca748723"
+contentUuid: "949d5fa9-4906-5074-ba93-182f86d0a0c3"
 diamondUuid: "997d3aff-cee9-8844-a891-bcb6b755dcbf"
 uuid: "e822d293-3cdd-81b1-bf2a-b03f97b29e95"
 horo: 4
 typography:
   partition: tax
-  bondDegree: 35
+  bondDegree: 30
 standards:
   - BEPS
   - "BEPS Action 13:2021 (transfer pricing documentation)"

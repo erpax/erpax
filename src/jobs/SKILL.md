@@ -2,19 +2,19 @@
 name: jobs
 description: "Use when offloading work to Payload's jobs queue — defining tasks/workflows, queuing jobs, scheduling/cron, retries, or moving slow hook logic to background processing."
 atomPath: jobs
-coordinate: "jobs · 8/crest · f652551e"
-contentUuid: "693a1c91-2237-5a6b-ab1c-a4696ea0ef1b"
-diamondUuid: "c116a647-28aa-8d15-a746-d3ebb389d03c"
-uuid: "f652551e-ced7-8f7d-84b1-dc7b2167dc65"
+coordinate: "jobs · 8/crest · 504096ff"
+contentUuid: "eb3bc158-d52e-5425-9406-9e363b926acf"
+diamondUuid: "98a037a9-227e-8add-9d83-7b6bf176df2c"
+uuid: "504096ff-b66e-80f9-9063-a461181e0dda"
 horo: 8
 typography:
   partition: jobs
-  bondDegree: 49
+  bondDegree: 28
 standards:
   - "Naredba-N-18"
 bindings: []
 signatures:
-  computationUuid: "0bd1727e-be9a-8f93-add4-d65a4f87794b"
+  computationUuid: "470f56fd-e654-8fc6-864a-1c6b852e2a98"
   stages:
     - stage: path
       stageUuid: "2219ff37-c700-8086-99fd-8affa98b0a2b"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "b3d85d0e-870d-8214-bcb5-9b949ac11ee4"
     - stage: links
-      stageUuid: "e5de92d1-2a09-89d8-9376-144538b7fc48"
+      stageUuid: "9e7c66a8-7a50-82f6-86db-b4c5044019c7"
     - stage: horo
-      stageUuid: "03b1bc3a-8456-82e7-8b59-dd4c58b6e11e"
+      stageUuid: "a3da0d87-ecd4-83ce-bcc5-e6d1d835d0a3"
     - stage: seal
       stageUuid: "ef2274f9-5edb-88de-9f9c-457dcb9e8a76"
     - stage: uuid
-      stageUuid: "798a180c-d47b-8605-ba6e-f38b4a0b1775"
+      stageUuid: "ad591560-06db-8190-ac8a-574d2c6f114e"
 version: 2
 ---
 # jobs — the jobs queue (background work)
@@ -52,7 +52,7 @@ jobs: {
 - Tasks have `retries`, idempotency, and typed input/output; workflows chain tasks with restart-safety.
 
 ## Rules
-- Prefer jobs over heavy [[hooks]] (keep hooks lightweight — see [[optimize]]).
+- Prefer jobs over heavy [[hooks]] (keep hooks lightweight — see optimize).
 - On serverless/Cloudflare, trigger the runner via cron/scheduled worker rather than a long-lived process.
 
 ## Common mistakes

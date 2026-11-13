@@ -14,9 +14,10 @@ import { audit, isGrounded, decompose, suggest } from '@/vocabulary'
 
 describe('vocabulary — every word from the shared vocabulary (0 entropy)', () => {
   it('grounds a root, a plural, and a composition; rejects a stray', () => {
-    expect(isGrounded('invoice')).toBe(true)
-    expect(isGrounded('invoices')).toBe(true) // plural of a root
-    expect(decompose('budgetvariance')).toEqual(['budget', 'variance']) // composes from roots
+    // the vocabulary is the words the corpus USES, so the examples are atoms that exist
+    expect(isGrounded('payment')).toBe(true)
+    expect(isGrounded('payments')).toBe(true) // plural of a root
+    expect(decompose('budgetaccount')).toEqual(['budget', 'account']) // composes from roots
     expect(isGrounded('zxqwk')).toBe(false)
   })
 

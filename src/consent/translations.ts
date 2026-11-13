@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract or compliance regime requires explicit consent — who must consent, form (written/electronic/oral), revocation, withdrawal, withdrawal timeline, conditions.",
-    "uuid": "33608b34-bcd9-8644-9e78-b011674cfb2b",
+    "uuid": "97e2245a-1390-8851-86ad-d25e0d139d4e",
     "words": [
       "use",
       "when",

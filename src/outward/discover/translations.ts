@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about discover — outward/witness crosses five domains and every one of them was **hand-picked**.",
-    "uuid": "97d2d91f-76b7-8627-9db6-9277d513f985",
+    "uuid": "4ca1f82c-7333-804e-85b0-1080fe1023ea",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about energy — Two things live here, and the second is the reason the atom exists.",
-    "uuid": "ae679aab-e467-87a4-8da7-0f1c825e1476",
+    "uuid": "7c3cf763-a65d-8b2f-97fc-dc9b6d84bda2",
     "words": [
       "use",
       "when",

@@ -3,13 +3,13 @@ name: code
 description: "Use when a resolved fiscal period needs its two identifiers — the regulatory code the framework expects (P05_2026, or Q2_2026 under XBRL for a quarterly config) and the chain leaf that binds its payload to the prior leaf through the fold's one algebra (merge). The resolver's child; the base64 'hash placeholder' that once stood here is held false by the test, sentence by sentence."
 atomPath: "fiscal/period/resolver/code"
 coordinate: "fiscal/period/resolver/code · 7/descent · 79aaeade"
-contentUuid: "0978b2a1-5a27-5a71-aa54-e12a6360b2a2"
-diamondUuid: "78e49cf2-cd73-8625-b299-0f7004b1489f"
+contentUuid: "7cba242d-8b70-557d-8c1a-8545b2e7a735"
+diamondUuid: "1b6956fc-16b6-88bd-bef8-4b703929864d"
 uuid: "79aaeade-de6d-85ee-9010-4a30c4671478"
 horo: 7
 typography:
   partition: fiscal
-  bondDegree: 95
+  bondDegree: 42
 standards:
   - "SAF-T"
   - "SAF-T period coding"
@@ -17,7 +17,7 @@ standards:
   - XBRL period identifiers
 bindings: []
 signatures:
-  computationUuid: "5f388104-e4e9-808f-a57a-cec6c4281472"
+  computationUuid: "ac1edfd4-8048-875c-b40d-d41556f67ece"
   stages:
     - stage: path
       stageUuid: "d13c04c0-e462-8268-817c-0443877d7774"
@@ -28,11 +28,11 @@ signatures:
     - stage: links
       stageUuid: "cbc74935-6045-826d-bc23-7a308a8d13ec"
     - stage: horo
-      stageUuid: "b4a527d4-5dd4-83c1-bfc6-da3d6d3c2bb6"
+      stageUuid: "2decf862-f68b-8757-a3ce-cd47910a42f5"
     - stage: seal
       stageUuid: "ddc9485d-f542-82fa-a7a2-f2eebd3844cf"
     - stage: uuid
-      stageUuid: "22cb0b09-2371-8e26-8161-1e8aa12b9677"
+      stageUuid: "2ebfbbba-5ccd-8266-a081-2178e92e7408"
 version: 2
 ---
 # fiscal/period/resolver/code — the two identifiers a period carries

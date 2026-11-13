@@ -3,13 +3,13 @@ name: processor
 description: "Use when reasoning about processor as a part of computer — vocabulary pivot to @/processor; nested not duplicated."
 atomPath: "computer/processor"
 coordinate: "computer/processor · 8/crest · c158517f"
-contentUuid: "9aaca857-ecf7-5356-9739-714034f888c7"
+contentUuid: "ef1e2e8e-5bcd-5b82-8172-ed2c47716586"
 diamondUuid: "9f5a611c-56cf-8a2f-971e-ee8e54418efb"
 uuid: "c158517f-67ef-808d-b555-05f0eddfa658"
 horo: 8
 typography:
   partition: computer
-  bondDegree: 20
+  bondDegree: 15
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

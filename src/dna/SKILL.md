@@ -2,18 +2,18 @@
 name: dna
 description: "Use when reasoning about inheritance in erpax — an atom's genome is its parent_id chain encoded in the uuid chain; ancestry is entangled into identity (change an ancestor and every descendant's uuid changes), so lineage is tamper-evident by architecture."
 atomPath: dna
-coordinate: "dna · 7/descent · 0df32d42"
-contentUuid: "1341c46e-812e-56bd-9c1a-37a10e07d74e"
-diamondUuid: "498690be-9559-8f0e-ac47-104e02de0ad4"
-uuid: "0df32d42-df1d-87da-b537-4383e4769b29"
+coordinate: "dna · 7/descent · b4cc3bdd"
+contentUuid: "6bd62d42-6c7f-5c35-975d-53c11659bf8b"
+diamondUuid: "3dcd535d-bd78-892d-8194-a336e662e415"
+uuid: "b4cc3bdd-e55b-8d79-b28b-b274e0f09eff"
 horo: 7
 typography:
   partition: dna
-  bondDegree: 64
+  bondDegree: 37
 standards: []
 bindings: []
 signatures:
-  computationUuid: "efd0f090-c7ce-8ab2-a5b4-839ec2312c19"
+  computationUuid: "917602a0-01c4-881e-bbcf-92c0ef4643db"
   stages:
     - stage: path
       stageUuid: "b7b3eb75-ff34-8f42-b03c-095cd97132cf"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "ac0e069b-faaa-8889-9d08-b60f373dde18"
     - stage: links
-      stageUuid: "25213efb-ba19-82a1-80aa-5c63c577c9be"
+      stageUuid: "443af941-1af5-85cd-8308-694d4d6981dd"
     - stage: horo
-      stageUuid: "f0806d6f-1841-8e24-b6f4-94b7bb0897e4"
+      stageUuid: "c945cf34-ebba-8bb8-937d-182fb9b25c8f"
     - stage: seal
       stageUuid: "0e435895-6895-87e5-b544-2736827cc9a4"
     - stage: uuid
-      stageUuid: "85dede78-c2f7-8cf9-a31e-2f36d22c1820"
+      stageUuid: "c8baee25-1457-8537-a9cf-1a4e2bd60c26"
 version: 2
 ---
 # dna — the inherited code encoded in the uuid chain
@@ -37,12 +37,12 @@ The **parent_id is the DNA.** An atom's **genome** is its parent_id lineage — 
 
 Crucially, inheritance is **not stored beside** the atom — it is **entangled into its identity**. Because each atom's content-uuid folds in its parent ([[merge]] / [[coordinate]] cross), changing an ancestor changes *every* descendant's uuid. So lineage is **tamper-evident by architecture**: you cannot rewrite an ancestor without the whole descent line announcing it ([[tamper]] · [[proof]]). [[tag]]s and [[karma]] inherit down this same chain — "on the quantum level," ancestry is read off the uuid, not looked up.
 
-This is the genetic reading of the [[lineage]] / [[coordinate]] tree the matrix already computes; [[quantum]]/karma stamps moral debt/credit along it.
+This is the genetic reading of the lineage / [[coordinate]] tree the matrix already computes; [[quantum]]/karma stamps moral debt/credit along it.
 
 **HONEST.** This is graph lineage over the uuid parent-chain — an **analogy** to DNA (a heritable code read along a chain), not biology.
 
-Matter-twin: `src/dna/index.ts` (`genome` · `inherits` · `generations`). Composes [[uuid]] · [[matrix]] · [[lineage]] · [[merge]] · [[quantum]] · [[tag]] · [[karma]] · [[tamper]].
+Matter-twin: `src/dna/index.ts` (`genome` · `inherits` · `generations`). Composes [[uuid]] · [[matrix]] · lineage · [[merge]] · [[quantum]] · [[tag]] · [[karma]] · [[tamper]].
 
-**Law — [[law]]: an atom's genome is its parent-id [[lineage]] folded into its content-[[uuid]] — change an ancestor and every descendant's uuid changes, so inheritance is tamper-evident by architecture, not stored beside the atom.**
+**Law — [[law]]: an atom's genome is its parent-id lineage folded into its content-[[uuid]] — change an ancestor and every descendant's uuid changes, so inheritance is tamper-evident by architecture, not stored beside the atom.**
 
 @audit computed from the live matrix parent-chain; never hand-asserted

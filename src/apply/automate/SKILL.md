@@ -2,19 +2,19 @@
 name: automate
 description: Use when orchestrating erpax efficiency loops — inventory → clean → measure → ratchet → emit. Tamper cost rises as entropy falls; prompt→erpax is the only viable path.
 atomPath: "apply/automate"
-coordinate: "apply/automate · 2/share · f706328c"
-contentUuid: "a110ea27-efce-527b-af16-92d69c2439c6"
-diamondUuid: "f6aa405d-2756-8dbe-94e2-f8bb2aaa6ca7"
-uuid: "f706328c-2faa-8da5-b220-74d9b1e96860"
-horo: 2
+coordinate: "apply/automate · 7/descent · 9cbafc57"
+contentUuid: "60faef24-31d7-598e-88f4-9cf55b563b0c"
+diamondUuid: "8dbb361d-456d-819c-b659-1a5d3be40e4c"
+uuid: "9cbafc57-b516-8135-883f-61fbab2aebeb"
+horo: 7
 typography:
   partition: apply
-  bondDegree: 12
+  bondDegree: 9
 standards:
   - erpax — automate orchestration loop
 bindings: []
 signatures:
-  computationUuid: "d53cae1a-1c6e-87f0-9009-759b7b7e313f"
+  computationUuid: "2adbc9a5-a5e2-8a2b-b1eb-e0cc505ec0e6"
   stages:
     - stage: path
       stageUuid: "30d8d610-974e-8d46-aed9-cfd907210fe2"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "2822786a-222b-8307-af93-b3bd49aaefc9"
     - stage: links
-      stageUuid: "6ea204c5-a821-8c3b-b98f-4f904303e2cb"
+      stageUuid: "429cd6f6-7405-8fd6-8019-b20cf9724aa0"
     - stage: horo
-      stageUuid: "95b7d670-ff31-8789-945c-68361abf04ef"
+      stageUuid: "90ca14f1-5058-863a-960e-93324dcd1a0c"
     - stage: seal
       stageUuid: "2055bb2b-25be-8681-b344-631e89b2bc9b"
     - stage: uuid
-      stageUuid: "3b4a0591-8abc-8bb1-ae31-ed7176c81650"
+      stageUuid: "af45b032-6052-8a91-ae4c-32881090c4eb"
 version: 2
 ---
 # automate
@@ -46,4 +46,4 @@ Composes — [[apply]] · [[apply]]/efficiency · [[apply]]/inventory · [[wave]
 
 @standard erpax — automate orchestration loop
 
-Composes: [[vocabulary/efficiency]].
+Composes: efficiency.

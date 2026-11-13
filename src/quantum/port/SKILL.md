@@ -3,18 +3,18 @@ name: port
 description: "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \"port all upstreams again\" repeatedly."
 atomPath: "quantum/port"
 coordinate: "quantum/port · 2/share · 90e3c4e8"
-contentUuid: "fc8301ee-87d9-5a24-acaf-846a2e1c4332"
-diamondUuid: "c92ebf2e-b5e7-8053-abe9-d923714d119c"
+contentUuid: "dfeca832-cc6e-5d0b-9770-9409ac9906a2"
+diamondUuid: "b277dfac-d3c0-8817-8cea-9e0323004a94"
 uuid: "90e3c4e8-870f-8422-998c-58887ea45984"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 137
+  bondDegree: 101
 standards:
   - "RFC 9562 §5.8 content-uuid (the port identity)"
 bindings: []
 signatures:
-  computationUuid: "3e300f23-b3b4-8b08-a3b2-aa63e3915d6a"
+  computationUuid: "ba19ea3b-37a3-8952-b995-8486448e0edf"
   stages:
     - stage: path
       stageUuid: "4d526fb5-e032-8b8a-8e0f-adf0b82da3a6"
@@ -25,21 +25,21 @@ signatures:
     - stage: links
       stageUuid: "2bc5548f-d789-814b-9d5e-f3e836b99a1a"
     - stage: horo
-      stageUuid: "72a2c8b1-9af1-8366-928e-a0a11acd6d95"
+      stageUuid: "28e1d0de-bd56-89f5-8bfc-ed4ed6113218"
     - stage: seal
       stageUuid: "d115d019-efd7-8baa-b1e1-9fc942a44339"
     - stage: uuid
-      stageUuid: "4b72f7d7-8dff-8c71-863e-423cc6a15663"
+      stageUuid: "02eb224b-3640-8d90-9519-78014765784e"
 quantum:
   superposition:
     - access
     - accounting
     - admin
-    - amortize
     - api
-    - calculate
-    - chat
     - collapse
+    - collections
+    - commerce
+    - config
     - superposition
   collapse:
     - "RFC 9562 §5.8 content-uuid (the port identity)"
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "3e300f23-b3b4-8b08-a3b2-aa63e3915d6a"
-    contentUuid: "fc8301ee-87d9-5a24-acaf-846a2e1c4332"
+    computationUuid: "ba19ea3b-37a3-8952-b995-8486448e0edf"
+    contentUuid: "dfeca832-cc6e-5d0b-9770-9409ac9906a2"
 version: 2
 ---
 # quantum/port — content-addressed, idempotent porting
@@ -68,4 +68,4 @@ Matter-twin: `src/quantum/port/index.ts` (`portUuid` · `alreadyPorted`). Compos
 
 @standard RFC 9562 §5.8 content-uuid (the port identity)
 
-<sub>content-uuid `fc8301ee-87d9-5a24-acaf-846a2e1c4332` · account `quantum/port` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `dfeca832-cc6e-5d0b-9770-9409ac9906a2` · account `quantum/port` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

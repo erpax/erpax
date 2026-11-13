@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about outward — outward content-addresses every external answer and outward/leads fuses those receipts to , so the corpus can already compute *what changed* and *what to look at next*.",
-    "uuid": "01c36d37-c5c4-8399-885b-a2b21e4659d5",
+    "uuid": "a3426a72-c244-8175-ae1f-26d58c34f471",
     "words": [
       "use",
       "when",

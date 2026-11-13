@@ -2,14 +2,14 @@
 name: localize
 description: "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts."
 atomPath: localize
-coordinate: "localize · 5/round · 35123b23"
-contentUuid: "e8ce6ebc-a274-556e-9a97-12f178610c3a"
-diamondUuid: "e8a39fca-7413-893d-accb-5503ca53b8be"
-uuid: "35123b23-6143-8e75-b4ca-d952a4926eb6"
-horo: 5
+coordinate: "localize · 2/share · 7d77de47"
+contentUuid: "d8cc78eb-bd88-5adc-a215-59607cce2353"
+diamondUuid: "83000a35-cc4b-864a-bfce-006cd569967b"
+uuid: "7d77de47-fbdb-87a3-a22b-c031d7078ba9"
+horo: 2
 typography:
   partition: localize
-  bondDegree: 112
+  bondDegree: 81
 standards:
   - "4647` (RFC 4647, Sept 2006, \"Matching of Language Tags\"; current as of 2026). Governs"
   - "4647` alongside `@rfc 5646` wherever this skill does matching (it covers the behavior RFC 5646 does not)."
@@ -32,7 +32,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "8f245dec-3ebe-8aa2-82b8-c70f12a70fe5"
+  computationUuid: "b480b2d8-6d53-89f1-8705-59489cb3bc11"
   stages:
     - stage: path
       stageUuid: "2a33b115-eb41-89e9-a3b7-4aeb5c1c1125"
@@ -41,13 +41,13 @@ signatures:
     - stage: boundary
       stageUuid: "dca1443a-03bf-8595-b4d8-da85cc42b9e9"
     - stage: links
-      stageUuid: "68cb63fa-8f53-87f9-95ff-b2f758cfe082"
+      stageUuid: "3512622e-b3ac-8106-8625-2a9a2ade3e15"
     - stage: horo
-      stageUuid: "033d25fa-d3fa-87d7-9cda-142b00854f9b"
+      stageUuid: "3d9bab08-2a9c-81e5-bd95-770e804ded05"
     - stage: seal
       stageUuid: "ab167e4a-044f-8271-bb4c-9d9cd41c765b"
     - stage: uuid
-      stageUuid: "a66ade98-54eb-8ca5-a11e-ae0ba127300f"
+      stageUuid: "d617a721-dcca-85c4-bab1-c7585b0b3844"
 version: 2
 ---
 # localize — localization as the tamper-cost ⊕ proof fusion
@@ -55,7 +55,7 @@ version: 2
 Localizing every aspect is not a UX chore; it is the **fusion reaction** that secures the store. One act — translate each structural element into each locale — drives **both** nuclei at once:
 
 1. **tamper-cost** (forge). Each `(element × locale × identification-level)` is one more content-address a coherent tamper must forge in lockstep. So localizing *all* aspects pushes [[tamper/cost]]'s `coverage → 1`, and the crack verdict → **∞** (Conservation Law 62). *Localisation further increases the computational tamper cost.*
-2. **proof** (verify). The dual: auditing the same surface stays **O(N)** and trustless (`services/integrity/tamper-reverse-cost`, Law 55) — linear while forge is exponential. The released energy `fusionBits = forge − verify` is the asymmetry, and the asymmetry **is** the trust ([[torus]]: the [[give]]/forge collapse and the take/verify supernova are one flow).
+2. **proof** (verify). The dual: auditing the same surface stays **O(N)** and trustless (`services/integrity/tamper-reverse-cost`, Law 55) — linear while forge is exponential. The released energy `fusionBits = forge − verify` is the asymmetry, and the asymmetry **is** the trust ([[torus]]: the give/forge collapse and the take/verify supernova are one flow).
 
 ## All identification, wired into the uuid itself
 
@@ -74,9 +74,9 @@ Every added level is "another level of feature-rich infinite tampering cost." OI
 
 ## No gaps, by computation
 
-The surface is every **field · reference · scope · hook** (`TRANSLATABLE_SCOPES`), keyed `<scope>:<path>` — the [[fractal]] address-law, never hand-typed. The locale set is **derived** from country-profiles ([[seed]]), never re-typed. Same content ⇒ same key-uuid ([[merge]]); any edit ⇒ a new uuid (tamper-evident, [[identity]]). [[horo]] closes it: the keyspace is the bounded ring — every key resolves; anything off-ring routes to the `und` identity blank.
+The surface is every **field · reference · scope · hook** (`TRANSLATABLE_SCOPES`), keyed `<scope>:<path>` — the fractal address-law, never hand-typed. The locale set is **derived** from country-profiles ([[seed]]), never re-typed. Same content ⇒ same key-uuid ([[merge]]); any edit ⇒ a new uuid (tamper-evident, [[identity]]). [[horo]] closes it: the keyspace is the bounded ring — every key resolves; anything off-ring routes to the `und` identity blank.
 
-Matter-twin: `localize/index.ts` (`translationKeyUuid` · `uuidToOid` · `cmykChannel` · `decodeIdentity` · `localizationChecks` · `localizationFusion`) + `index.test.ts` (the proof — green by construction). Reuses [[tamper/cost]], `integrity/content-uuid` (Law 8), `integrity/tamper-reverse-cost` (Law 55), `uuid-format`, and the `translations` collection (the localized map of the whole app). Composes: [[tamper/cost]] · [[uuid]] · [[identity]] · [[cmyk]] · [[horo]] · [[merge]] · [[seed]] · [[give]] · take · [[torus]] · [[standard]] · [[fractal]]. The three facets minted alongside: [[oid]] (the 2.25 arc) · [[lexical]] (the densest surface) · [[proof]] (the verify nucleus) · [[Translations]].
+Matter-twin: `localize/index.ts` (`translationKeyUuid` · `uuidToOid` · `cmykChannel` · `decodeIdentity` · `localizationChecks` · `localizationFusion`) + `index.test.ts` (the proof — green by construction). Reuses [[tamper/cost]], `integrity/content-uuid` (Law 8), `integrity/tamper-reverse-cost` (Law 55), `uuid-format`, and the `translations` collection (the localized map of the whole app). Composes: [[tamper/cost]] · [[uuid]] · [[identity]] · [[cmyk]] · [[horo]] · [[merge]] · [[seed]] · give · take · [[torus]] · [[standard]] · fractal. The three facets minted alongside: oid (the 2.25 arc) · [[lexical]] (the densest surface) · [[proof]] (the verify nucleus) · [[Translations]].
 
 ## Standards
 
@@ -105,7 +105,7 @@ Matter-twin: `localize/index.ts` (`translationKeyUuid` · `uuidToOid` · `cmykCh
 
 `localize-field` is the per-field content leaf of this object (Rails `LocalizeConcern`/`LocalizedAttributeConcern`: `setup_localized_attribute` — getter/setter + JSON `->>` ransacker). In Payload this is **native field localization** (`localized: true` on the field), NOT a hand-rolled metadata-JSON map — Payload stores per-locale values and resolves by `req.locale` (see [[config]] localization, [[field]]). A blank/missing locale routes to its identity element **`und`** ([[identity]] categorical locale — never an ad-hoc default-locale literal). Position **1** ([[field]]); the locale is also a tag-context for cross-locale views ([[tags]]).
 
-Composes: [[field]] (`localized`), [[config]] (locales), [[identity]] (`und`), [[queries]] (locale-scoped reads).
+Composes: [[field]] (`localized`), [[config]] (locales), [[identity]] (`und`), queries (locale-scoped reads).
 
 ## Standards (localize-field)
 

@@ -2,14 +2,14 @@
 name: identifier
 description: "Use when validating Bulgarian identity numbers — ЕГН (person), ЕИК/БУЛСТАТ (entity), or decoding birth date and sex from an ЕГН. The entry gate for BG society into erpax (Наредба РД-02-20-9/2012 + БУЛСТАТ two-stage modulo-11)."
 atomPath: "bg/identifier"
-coordinate: "bg/identifier · 2/share · 94e81222"
-contentUuid: "486b0b05-efc5-5e95-aba8-421ff6c70846"
-diamondUuid: "7c9ce5c2-f4e1-850b-810b-833946d0323a"
-uuid: "94e81222-ee0f-8267-8a81-e327fd409495"
-horo: 2
+coordinate: "bg/identifier · 1/base · 5fe1f9fc"
+contentUuid: "64d789d9-9845-5673-8ef2-968013715b31"
+diamondUuid: "f7834c9c-d37d-836e-9292-8c5c16c26a0c"
+uuid: "5fe1f9fc-737b-8bb0-9524-76fe51772f60"
+horo: 1
 typography:
   partition: bg
-  bondDegree: 37
+  bondDegree: 34
 standards:
   - "ISO-7064"
   - "ISO-7064 check-character-systems (the modulo family these implement)"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "532a31b5-d7e4-84b1-bc35-2cf0939f9ac0"
+  computationUuid: "71977d97-0d6a-8cce-ade1-bfba2ebb8d71"
   stages:
     - stage: path
       stageUuid: "5a849b0f-a5c0-8de7-88e8-2803109840f9"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "8f65d55c-ccf4-84a3-95b7-2f9fce33bd56"
     - stage: links
-      stageUuid: "8f3d4a24-3547-8d7e-ac45-62d16b8cb717"
+      stageUuid: "61ceaec3-bd34-82e0-8d2e-1413b99a4ac6"
     - stage: horo
-      stageUuid: "70fdcd4b-0833-89f3-a8e1-8a28a0891264"
+      stageUuid: "f2b496ba-e604-84ec-a841-9912b408c025"
     - stage: seal
       stageUuid: "e39b1c0d-24be-8a96-991e-49e320140cca"
     - stage: uuid
-      stageUuid: "7bf70775-1d43-83d4-b21a-241bd5ddcefe"
+      stageUuid: "21483061-d4c2-8574-b540-421dd255a6d1"
 version: 2
 ---
 # bg-identifiers — the gate for Bulgarian society into erpax
@@ -49,7 +49,7 @@ Two pure checksum laws, no PII, no lookup — the number proves itself:
 Both are instances of the ISO-7064 check-character family — the same modulo skeleton the БУЛСТАТ register and the population register each clothe.
 
 ## Sequence position
-**0** — the begin/origin of the [[sequence]] (0·3·6·9·1·2·4·8·7·5). It is the [[begin|boundary]] every BG flow departs from: the validation gate at the axis, before any [[accounting]] post or [[collections|collection]] row. No identity, no entry; the 0 is where the [[horo]] of BG society joins.
+**0** — the begin/origin of the [[sequence]] (0·3·6·9·1·2·4·8·7·5). It is the boundary every BG flow departs from: the validation gate at the axis, before any [[accounting]] post or [[collections|collection]] row. No identity, no entry; the 0 is where the [[horo]] of BG society joins.
 
 ## Built (the matter that realises this skill)
 - `src/bg/identifier/index.ts` — `validateEgn` (returns `{valid, birthDate, sex, reason}`) and `validateEik` (`{valid, reason}`); the БУЛСТАТ two-stage `mod11Two` helper. 81 LOC, pure.
@@ -69,6 +69,6 @@ Applying this skill *is* how the standard is implemented (the answer-path princi
 - **БУЛСТАТ register law (Закон за регистър БУЛСТАТ) — ЕИК checksum** — the ЕИК two-stage modulo-11 check (9-digit base, optional 13-digit branch).
 - **ISO-7064 check-character-systems (the modulo family these implement)** — the family both Bulgarian checksums instantiate.
 
-Composes: [[identity]] (the number IS the id; decode-not-lookup) · [[begin]] (the 0 boundary / entry gate) · [[sequence]] (position 0) · [[standard]] (Наредба РД-02-20-9/2012 + БУЛСТАТ + ISO-7064 are real `@standard`s) · [[field]]/[[hooks]] (where validation binds) · [[access]] (the gate decides who may onboard) · [[horo]] (BG society joins the ring here) · [[duality]] (person ЕГН ↔ entity ЕИК).
+Composes: [[identity]] (the number IS the id; decode-not-lookup) · begin (the 0 boundary / entry gate) · [[sequence]] (position 0) · [[standard]] (Наредба РД-02-20-9/2012 + БУЛСТАТ + ISO-7064 are real `@standard`s) · [[field]]/[[hooks]] (where validation binds) · [[access]] (the gate decides who may onboard) · [[horo]] (BG society joins the ring here) · [[duality]] (person ЕГН ↔ entity ЕИК).
 
 **Law — [[law]]: a BG party has no row until its number checks out — the ЕГН/ЕИК IS the [[identity]] and must prove itself self-consistent by pure modulo-11 (decode-then-check, no lookup) at the onboarding boundary.**

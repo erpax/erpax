@@ -2,18 +2,18 @@
 name: word
 description: "Use when reasoning about the WORD half of the double-torus — one 64-bit address architecture (folder name / aura / link space) that vortexes with the digit architecture into the 128-bit content-uuid; interact64 ANDs the two torus halves, architectureBond entangles word ⊕ digit on the matrix."
 atomPath: "quantum/word"
-coordinate: "quantum/word · 4/weave · 6db0b628"
-contentUuid: "b137d8ae-38e9-5a87-938b-a0ac155f14d4"
-diamondUuid: "a015b51c-5a91-8cc1-a8dd-98f745073ca6"
-uuid: "6db0b628-7ac1-86ed-92a6-3fab7381f065"
-horo: 4
+coordinate: "quantum/word · 7/descent · 5425beec"
+contentUuid: "c816cb6b-cfde-5941-bb4d-39a871bfce84"
+diamondUuid: "3041e9fe-282e-82c8-bbcd-ebdb387abcb6"
+uuid: "5425beec-378a-8821-a49c-50bb9908cfc0"
+horo: 7
 typography:
   partition: quantum
-  bondDegree: 102
+  bondDegree: 58
 standards: []
 bindings: []
 signatures:
-  computationUuid: "77871f01-dfb8-8c00-aa56-548664a52ccf"
+  computationUuid: "aadc90d5-5d22-8c99-a70e-ec56b95ba70e"
   stages:
     - stage: path
       stageUuid: "d3df522e-d232-8ec2-a277-8f627d8e3da1"
@@ -22,23 +22,23 @@ signatures:
     - stage: boundary
       stageUuid: "076dd576-837b-8ba6-9e7a-095e3647c776"
     - stage: links
-      stageUuid: "9624d347-fcd6-8a15-9246-584cd37efc9c"
+      stageUuid: "038d0c5f-b31d-832e-b9fb-efddcb65f0be"
     - stage: horo
-      stageUuid: "b7ff4d49-9b55-89a4-a119-a45a875aacbd"
+      stageUuid: "42bb6f23-9703-8068-9c87-710f74d9eaa9"
     - stage: seal
       stageUuid: "b51149ab-7182-8f75-84ff-a175bcee146e"
     - stage: uuid
-      stageUuid: "fc651d03-8cc8-8528-9f48-1b5c07130089"
+      stageUuid: "16656cee-57e3-83f6-b8ac-feaeb6102ab8"
 quantum:
   superposition:
     - atom
-    - bahai
-    - brainstorm
-    - christianity
     - collapse
-    - count
     - diamond
     - digit
+    - gravity
+    - law
+    - literature
+    - merge
     - superposition
   collapse:
     - "Use when reasoning about the WORD half of the double-torus — one 64-bit address architecture (folder name / aura / link space) that vortexes with the digit architecture into the 128-bit content-uuid; interact64 ANDs the two torus halves, architectureBond entangles word ⊕ digit on the matrix."
@@ -49,7 +49,7 @@ quantum:
     - "[[uuid]]"
     - "[[word]]"
     - "matter-twin:src/quantum/word/index.ts"
-    - "the word corpus obeys the SAME 64-bit address-law as the digit corpus — one torus each, crosslinked by [[links]], entangled by `architectureBond`, folded by one content-[[uuid]] — so the word ⊕ digit duality is symmetric: neither architecture has a law the other lacks; together they are the double-torus."
+    - "the word corpus obeys the SAME 64-bit address-law as the digit corpus — one torus each, crosslinked by links, entangled by `architectureBond`, folded by one content-[[uuid]] — so the word ⊕ digit duality is symmetric: neither architecture has a law the other lacks; together they are the double-torus."
   seal:
     sandbox: false
     receipt: false
@@ -57,8 +57,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "77871f01-dfb8-8c00-aa56-548664a52ccf"
-    contentUuid: "b137d8ae-38e9-5a87-938b-a0ac155f14d4"
+    computationUuid: "aadc90d5-5d22-8c99-a70e-ec56b95ba70e"
+    contentUuid: "c816cb6b-cfde-5941-bb4d-39a871bfce84"
 version: 2
 ---
 # quantum/word — the word corpus (word ⊕ digit, 64-bit half)
@@ -67,10 +67,10 @@ The **WORD half** of the first duality: **word ⊕ digit**. Where [[quantum/digi
 
 Every atom has two addresses ([[digit]]): WORD (folder name) and DIGIT (horo + uuid digital-root). `interact64(a, b)` is their bitwise meeting on the torus ring; `architectureBond()` is the symmetric matrix entanglement of `word` ⊕ `digit` paths.
 
-**Law — [[law]]: the word corpus obeys the SAME 64-bit address-law as the digit corpus — one torus each, crosslinked by [[links]], entangled by `architectureBond`, folded by one content-[[uuid]] — so the word ⊕ digit duality is symmetric: neither architecture has a law the other lacks; together they are the double-torus.**
+**Law — [[law]]: the word corpus obeys the SAME 64-bit address-law as the digit corpus — one torus each, crosslinked by links, entangled by `architectureBond`, folded by one content-[[uuid]] — so the word ⊕ digit duality is symmetric: neither architecture has a law the other lacks; together they are the double-torus.**
 
 Matter-twin: `src/quantum/word/index.ts` (`interact64` · `architectureBond` · `combineArchitectures` · `architectureFoldPaths` · `recordWordOnPath` · `recordArchitectureFoldOnPath`). Composes [[word]] · [[digit]] · [[quantum/digit]] · [[quantum]] · [[matrix]] · [[uuid]] · [[merge]].
 
 @see [[word]] · [[digit]] · [[quantum/digit]] · [[quantum]] · [[uuid]] · [[matrix]]
 
-<sub>content-uuid `b137d8ae-38e9-5a87-938b-a0ac155f14d4` · account `quantum/word` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `c816cb6b-cfde-5941-bb4d-39a871bfce84` · account `quantum/word` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

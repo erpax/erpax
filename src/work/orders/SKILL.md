@@ -2,14 +2,14 @@
 name: orders
 description: "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger."
 atomPath: "work/orders"
-coordinate: "work/orders · 5/round · 95477c3a"
-contentUuid: "c41bc7fd-b170-5c56-8ac2-01cb1989b124"
-diamondUuid: "10a6243a-ab77-865f-b54b-b7cbf8e99fac"
-uuid: "95477c3a-ce73-85ed-b436-3fde06a8ba91"
-horo: 5
+coordinate: "work/orders · 7/descent · 0194d38f"
+contentUuid: "cf0ad828-2cab-5d2d-95e0-52d2eca7b6f1"
+diamondUuid: "7f303af9-7894-8cdd-813d-65a36bd44bc6"
+uuid: "0194d38f-8ef2-8a3c-a6db-032799c583e7"
+horo: 7
 typography:
   partition: work
-  bondDegree: 88
+  bondDegree: 77
 standards:
   - "IFRS IAS-19 §11 short-term-employee-benefits piece-rate"
   - "IFRS IAS-2 §10 §12 cost-of-conversion (the piece-rate wage = direct labour)"
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "7e5320b7-85fc-89f2-9209-5cf1b544e925"
+  computationUuid: "260f799b-a380-8c4f-8a24-bca58bdd4b2b"
   stages:
     - stage: path
       stageUuid: "e8875264-a571-8b60-aa3b-db8856a5a8c6"
@@ -30,13 +30,13 @@ signatures:
     - stage: boundary
       stageUuid: "1abd6fea-80bc-8baa-8b21-3b40bdfa85cc"
     - stage: links
-      stageUuid: "8cf50482-b4bc-8d71-b02d-f06c231527eb"
+      stageUuid: "f8806172-e60d-8a68-8d8b-1eefe23135e1"
     - stage: horo
-      stageUuid: "c4a4e3d6-c6f2-82b8-a497-d39bd917ee5b"
+      stageUuid: "a8f7d02b-891a-8fc9-aeb9-565d75c8e960"
     - stage: seal
       stageUuid: "35dd18e8-55e7-8642-b892-3c98ce797fc9"
     - stage: uuid
-      stageUuid: "9b0f7e3b-0a93-8778-b6e9-bd9d74414fc4"
+      stageUuid: "fbed78cf-d6aa-8d1b-ac2e-da97e5900bbe"
 version: 2
 ---
 # Workorders
@@ -69,7 +69,7 @@ Validated at build time against `1·2·4·8·7·5·9`; anything off-ring is dish
 
 ## The conveyor — forward!
 
-`forwardProducedToNextPhase` (afterChange) is the [[fractal]] routing made into a data flow: when this phase **completes**, its produced units become the **next** phase's *ordered* units. The next phase is the smallest `lotWorkPhaseSort` strictly greater than this one within the same `lotVariantCode`. Production flows phase→phase the way a ledger posts account→account ([[accounting]]). The conveyor is idempotent on `forwardedTo`/`forwardedFrom` — one source never seeds two successors — and best-effort, so a downstream hiccup never blocks the operator's booking.
+`forwardProducedToNextPhase` (afterChange) is the fractal routing made into a data flow: when this phase **completes**, its produced units become the **next** phase's *ordered* units. The next phase is the smallest `lotWorkPhaseSort` strictly greater than this one within the same `lotVariantCode`. Production flows phase→phase the way a ledger posts account→account ([[accounting]]). The conveyor is idempotent on `forwardedTo`/`forwardedFrom` — one source never seeds two successors — and best-effort, so a downstream hiccup never blocks the operator's booking.
 
 ## The piece-rate wage
 

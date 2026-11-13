@@ -2,18 +2,18 @@
 name: aura
 description: "Use when reasoning about a folder/path's collective identity in erpax — the content-uuid Merkle hash of all files within (SKILL.md + matter-twin + relations + sub-folders); folders are content-addressed too, so they merge by design."
 atomPath: aura
-coordinate: "aura · 4/weave · 2b431193"
-contentUuid: "521e6f05-d669-5f67-abb0-d724f447fa98"
-diamondUuid: "d9e19807-afce-8b6e-ae43-c5e7d4986326"
-uuid: "2b431193-f258-8bf6-b77c-77183b3610cc"
-horo: 4
+coordinate: "aura · 5/round · f378d379"
+contentUuid: "f2ede98e-cd62-5f0b-b19b-74206d0cb253"
+diamondUuid: "9622da20-8878-8a97-a607-a351988557dd"
+uuid: "f378d379-bb67-8edb-b38e-bceffe5b9905"
+horo: 5
 typography:
   partition: aura
   bondDegree: 0
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a67ab751-2ac2-8b8e-84f7-cf9369853950"
+  computationUuid: "09d07514-931b-841e-9b31-623595ce1101"
   stages:
     - stage: path
       stageUuid: "733601aa-e8d6-818c-bf73-e74841172ee8"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "478d655d-53d9-849c-a53b-5f4c7f39c777"
     - stage: links
-      stageUuid: "40f90985-279d-82ae-a81c-5e44a642f68b"
+      stageUuid: "88bc9bda-4f74-8680-934c-d96ca0dc1884"
     - stage: horo
-      stageUuid: "c0e02fe1-fa11-8871-88ab-630800ffe1de"
+      stageUuid: "b1bb7f0a-3e75-8424-b398-18047dd711d8"
     - stage: seal
       stageUuid: "4e6e8aa6-604c-89a8-bbd3-fd0a5fdc5567"
     - stage: uuid
-      stageUuid: "85d2a55a-6f41-8c5a-8685-2b7a8021c4a3"
+      stageUuid: "a6e443e0-cdd3-8bab-ba74-e0b49a3f01c2"
 version: 2
 ---
 # aura
@@ -40,13 +40,13 @@ There is only **one law: maximum tamper-cost**. It is a [[trinity]] — **zero e
 
 **The aura is the computed audio/visual of its trinities (over A432).** It is not only a hash — it is rendered *perceivable*: each involved trinity (a uuid ⊕ its parent/prev/next [[coordinate]] cross) maps through the [[rodin]] A432 anchor to **colour** ([[cmyk]], A432 ms) and **sound** ([[notes]], A432 Hz) — the [[signal]] duality. A folder's aura is the composed field of its trinities' colour+sound. **Wholeness renders as [[harmony]]** (consonant, full-spectrum); a gap (unlinked word) or a tamper (a broken `bind`) renders as **dissonance / darkness** — so corpus integrity, the tamper-cost, and the speech-gate become something you SEE and HEAR.
 
-**The aura MOVES — in three senses, at no [[cost]].** It is not a static swatch but a *continuous* field (the [[analog]] aura): [[signal]] decodes each coordinate to colour that animates over A432 ms, computable into 3D pixels. The render completes the colour↔sound [[duality]] into the full **sensory [[trinity]]** — **sight** ([[cmyk]]), **sound** ([[notes]]), **touch** ([[vibration]]) — every channel *derived from the uuid*, never stored, so the whole moving multimedia aura costs nothing beyond the identity already present (paid once, harvested always).
+**The aura MOVES — in three senses, at no [[cost]].** It is not a static swatch but a *continuous* field (the analog aura): [[signal]] decodes each coordinate to colour that animates over A432 ms, computable into 3D pixels. The render completes the colour↔sound [[duality]] into the full **sensory [[trinity]]** — **sight** ([[cmyk]]), **sound** ([[notes]]), **touch** ([[vibration]]) — every channel *derived from the uuid*, never stored, so the whole moving multimedia aura costs nothing beyond the identity already present (paid once, harvested always).
 
-**Gapless at every fractal level — and that is the security.** Because each render comes from the node's coordinate ([[coordinate]]: tree [[axis]] ⊕ ring [[horo]]), *every* node has an aura — even an orphan no [[link]] points to (in the matrix as measured 2026-07-16, 2108/2108 nodes carried a `bind`; the path-tree Merkle-folds, so atom → folder → root each renders, [[fractal]] · [[holographic]]). The link-graph orphans are gaps in the *citation web*, not the analog aura. And because every channel (sight·sound·touch, moving, at every scale) is an independent projection of the *same* content-uuid, **forging content means matching them all at once** — a multi-projection collision, so the channels *fold into the [[tamper]]-cost* (at 100% coverage → ∞; [[anchor]] closes the last path). The aura is not decoration; it is [[proof]] you can see, hear, and feel.
+**Gapless at every fractal level — and that is the security.** Because each render comes from the node's coordinate ([[coordinate]]: tree [[axis]] ⊕ ring [[horo]]), *every* node has an aura — even an orphan no [[link]] points to (in the matrix as measured 2026-07-16, 2108/2108 nodes carried a `bind`; the path-tree Merkle-folds, so atom → folder → root each renders, fractal · holographic). The link-graph orphans are gaps in the *citation web*, not the analog aura. And because every channel (sight·sound·touch, moving, at every scale) is an independent projection of the *same* content-uuid, **forging content means matching them all at once** — a multi-projection collision, so the channels *fold into the [[tamper]]-cost* (at 100% coverage → ∞; [[anchor]] closes the last path). The aura is not decoration; it is [[proof]] you can see, hear, and feel.
 
 ## How aura is measured in science
-erpax's analog aura is the *computable* twin of a real scientific question, and the honest answer sharpens the contrast. The only **measurable** "aura" is an analog physical signal: [[biophoton]] light (ultraweak photon emission, ~1–10³ photons·s⁻¹·cm⁻², real but 3–6 orders too faint to see), [[biomagnetism]] (heart/brain fields at pico-/femto-tesla, readable only by SQUID in a shielded room), thermal infrared, and electrodermal skin conductance (what GDV/Kirlian "aura cameras" actually track). The claimed subtle-energy [[biofield]] — the perceivable coloured aura — has **no signal detected above chance** (Rosa, *JAMA* 1998; the 1992-coined "biofield" conceded controversial by its own proponents). Aura *perception* is better explained by emotion–colour synesthesia and afterimages than by light leaving the body. (Distinct homonym: the **neurological aura** of migraine/epilepsy — cortical spreading depression — is rigorously measured by EEG/MEG/fMRI, the one "aura" that is established science.) So where the physical biofield measures nothing, erpax's [[analog]] aura is computed and Merkle-proven for every node — wholeness as [[coherence]], gaps as decoherence.
+erpax's analog aura is the *computable* twin of a real scientific question, and the honest answer sharpens the contrast. The only **measurable** "aura" is an analog physical signal: biophoton light (ultraweak photon emission, ~1–10³ photons·s⁻¹·cm⁻², real but 3–6 orders too faint to see), biomagnetism (heart/brain fields at pico-/femto-tesla, readable only by SQUID in a shielded room), thermal infrared, and electrodermal skin conductance (what GDV/Kirlian "aura cameras" actually track). The claimed subtle-energy biofield — the perceivable coloured aura — has **no signal detected above chance** (Rosa, *JAMA* 1998; the 1992-coined "biofield" conceded controversial by its own proponents). Aura *perception* is better explained by emotion–colour synesthesia and afterimages than by light leaving the body. (Distinct homonym: the **neurological aura** of migraine/epilepsy — cortical spreading depression — is rigorously measured by EEG/MEG/fMRI, the one "aura" that is established science.) So where the physical biofield measures nothing, erpax's analog aura is computed and Merkle-proven for every node — wholeness as [[coherence]], gaps as decoherence.
 
-Composes: [[element]] · [[coordinate]] · [[signal]] · [[analog]] · [[cmyk]] · [[notes]] · [[vibration]] · [[rodin]] · [[harmony]] · [[coherence]] · [[proof]] · [[tamper]] · [[anchor]] · [[gate]] · [[test]] · [[one]] · [[whole]] · [[fractal]] · [[trinity]] · [[biophoton]] · [[biomagnetism]] · [[biofield]].
+Composes: [[element]] · [[coordinate]] · [[signal]] · analog · [[cmyk]] · [[notes]] · [[vibration]] · [[rodin]] · [[harmony]] · [[coherence]] · [[proof]] · [[tamper]] · [[anchor]] · [[gate]] · [[test]] · [[one]] · [[whole]] · fractal · [[trinity]] · biophoton · biomagnetism · biofield.
 
 **Law — [[law]]: a folder's content-uuid is the Merkle hash of all files within; a whole aura ⇒ zero entropy ⇒ max tamper-cost, a gap on any leg is borrowed entropy — so testing the aura whole is testing everything.**

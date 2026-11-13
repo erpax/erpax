@@ -3,18 +3,18 @@ name: physician
 description: "Use when reasoning about physician as a medical facet of medical — vocabulary pivot to @/physician; nested not duplicated."
 atomPath: "medical/physician"
 coordinate: "medical/physician · 2/share · e246e963"
-contentUuid: "86d07b1f-65af-5b09-8d70-56dfc197ee7a"
-diamondUuid: "cc03fd3d-8c61-82a6-bf8b-6176fe461378"
+contentUuid: "7d5e0713-2c52-5b5e-869b-6c646c0c1ca0"
+diamondUuid: "09c65ca0-17d7-8146-9ac5-65f07d7808fb"
 uuid: "e246e963-7eab-80a4-9865-20766c02e702"
 horo: 2
 typography:
   partition: medical
-  bondDegree: 18
+  bondDegree: 13
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "59df3ceb-d555-8003-acc8-877234fede94"
+  computationUuid: "01981dfa-f9ab-8fa4-b05f-d3e51872e144"
   stages:
     - stage: path
       stageUuid: "6874c668-994e-8e98-823c-9df4dde1fd1f"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "03c20ce0-74b7-8617-ade6-e15c549e5f40"
     - stage: horo
-      stageUuid: "a8e3935e-22db-82ea-9ba2-17f9e501a67b"
+      stageUuid: "fd39b40d-f33c-824a-907a-4b2062482eb5"
     - stage: seal
       stageUuid: "78de58c0-ef19-8657-a77f-7f2595e16975"
     - stage: uuid
-      stageUuid: "68ada58a-4c4d-862e-b4d1-f4623e97fc25"
+      stageUuid: "8dc91ab7-578e-8efd-9c21-d616dad7d327"
 version: 2
 ---
 # medical/physician — medical facet

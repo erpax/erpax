@@ -2,14 +2,14 @@
 name: currency
 description: "Use when a value carries money — amount + ISO-4217 currency, exchange rates, rounding, multi-currency ledgers/totals. The CurrencyConcern/AmountConcern field-factory; money is amount+currency, never a currency-baked field name."
 atomPath: currency
-coordinate: "currency · 4/weave · 3c7b898a"
-contentUuid: "684db0d2-320d-5b03-acc3-02b4b40c3d4c"
-diamondUuid: "958e3615-be8a-8b4d-82a2-dc64965c3284"
-uuid: "3c7b898a-f0dc-86ed-a701-b1a1963ded51"
+coordinate: "currency · 4/weave · 3a864f17"
+contentUuid: "da54f953-9dac-5758-8a20-51e72363da87"
+diamondUuid: "8ac7a4c6-c77e-88ff-9733-288d1a4f23bd"
+uuid: "3a864f17-7a4d-8ee2-87e7-6748aa72cc62"
 horo: 4
 typography:
   partition: currency
-  bondDegree: 130
+  bondDegree: 83
 standards:
   - "EN-16931"
   - "IFRS-9"
@@ -25,7 +25,7 @@ standards:
   - "SAF-T"
 bindings: []
 signatures:
-  computationUuid: "35aee507-eceb-8247-b04d-0b409e482e4b"
+  computationUuid: "cf069bb7-8105-81da-99d9-881330a64570"
   stages:
     - stage: path
       stageUuid: "88086f14-e2e7-866a-8bde-e04e3b3e732a"
@@ -34,20 +34,20 @@ signatures:
     - stage: boundary
       stageUuid: "073e76e1-7359-8297-8ab1-c32a9cf23e8b"
     - stage: links
-      stageUuid: "3a104531-9b42-85dc-9292-d7398b11c252"
+      stageUuid: "01baddfa-6154-8a1a-8c03-e83796260ee6"
     - stage: horo
-      stageUuid: "70aad6bd-80a3-832e-810d-b80afe2e4333"
+      stageUuid: "407c78c4-3b1e-88d2-922c-386b441023b9"
     - stage: seal
       stageUuid: "b3024b56-3245-8e63-8c3d-aa51dde15274"
     - stage: uuid
-      stageUuid: "1ebd8a1e-9ac1-8bf1-89ce-08248d0a9751"
+      stageUuid: "f5335af0-fcef-83e0-8a26-4be2df08b5a0"
 version: 2
 ---
 # currency — money is amount + ISO-4217 code (never baked into the name)
 
-`currency` is the money field-factory atom (Rails `CurrencyConcern`/`AmountConcern`, Money gem `monetize`), sequence position **1** ([[field]]). Law: a monetary value is a **minor-unit integer `amount` + an ISO-4217 `currency`** — NEVER a currency-baked name (`monthlyUSD` → `price` + `currency`). Multi-currency everywhere: each amount keeps its own currency; an `exchangeRate` (a [[rate]]) converts to the entity's functional currency *at a point in time* ([[versions]]). A blank currency routes to its identity element **`XXX`** ([[identity]] categorical currency — never an ad-hoc `?? 'EUR'` default). Rates fall back along the jurisdiction cascade **БНБ → ECB** (matter = the rate-fetch via [[hooks]]/[[jobs]]; antimatter = the cascade fallback).
+`currency` is the money field-factory atom (Rails `CurrencyConcern`/`AmountConcern`, Money gem `monetize`), sequence position **1** ([[field]]). Law: a monetary value is a **minor-unit integer `amount` + an ISO-4217 `currency`** — NEVER a currency-baked name (`monthlyUSD` → `price` + `currency`). Multi-currency everywhere: each amount keeps its own currency; an `exchangeRate` (a rate) converts to the entity's functional currency *at a point in time* ([[versions]]). A blank currency routes to its identity element **`XXX`** ([[identity]] categorical currency — never an ad-hoc `?? 'EUR'` default). Rates fall back along the jurisdiction cascade **БНБ → ECB** (matter = the rate-fetch via [[hooks]]/[[jobs]]; antimatter = the cascade fallback).
 
-Composes: [[accounting]] (multi-currency journals), [[commerce]] (totals), [[identity]] (`XXX` element + rates), [[field]], [[bindings]] (rate-sync job), [[measure]] (the substance twin — quantity+unit).
+Composes: [[accounting]] (multi-currency journals), [[commerce]] (totals), [[identity]] (`XXX` element + rates), [[field]], [[bindings]] (rate-sync job), measure (the substance twin — quantity+unit).
 
 ## Standards
 

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when putting a wallet on the quantum substrate — when you need its state to be a content-uuid (tamper-evident, any balance change yields a new state-uuid) and every transfer to be a balanced double-entry (payer credited, payee debited) over a history that is a chain of state-uuids.",
-    "uuid": "93005843-03e4-8583-8d27-6d57befe1740",
+    "uuid": "f3203308-ba4c-8761-8d50-64864b11616f",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when folder README models need cross-tab state statistics — axis × count tables and before/after comparisons for seal, balance, gravity, folder law, horo ring, and typography partitions; pure markdown projection for readme.",
-    "uuid": "922828ed-52a9-8e47-8d53-05cf3b0b922e",
+    "uuid": "35dfe8bf-6ae8-8656-82ec-285cfc42c1c9",
     "words": [
       "use",
       "when",

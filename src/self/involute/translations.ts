@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a frontier lead must be tagged before it is acted on — every lead is a claim one instrument makes, and its involution (the same question asked from the dual seat) decides theorem · lie · manipulation; the codomain is total, proved in Involute.lean, so no lead remains untagged. Fused into erpax.frontier.next and erpax.frontier.involute.",
-    "uuid": "a66e850d-0dac-8997-bda2-6617a8b71c25",
+    "uuid": "2a0ef3d0-db57-8f3c-aa72-bf2fcb743efc",
     "words": [
       "use",
       "when",

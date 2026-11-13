@@ -2,41 +2,41 @@
 name: data
 description: "Use when reasoning about data — Data associated with the event, like for instance a log message."
 atomPath: data
-coordinate: "data · 1/base · 478f03ca"
-contentUuid: "8725ad6a-b56d-547b-940f-9e9d33bd1ad1"
-diamondUuid: "0586c602-e2ff-837a-9130-a4855a0a4ba6"
-uuid: "478f03ca-ec58-8f02-82fe-4065c3a2fb61"
-horo: 1
+coordinate: "data · 5/round · 2324aa48"
+contentUuid: "b143ad51-a1d5-5bb4-9cd1-c15573cadfb6"
+diamondUuid: "56cba679-fa19-871b-a1f1-39cba7e89526"
+uuid: "2324aa48-8fa8-8a4b-9958-2b7cc0e84876"
+horo: 5
 typography:
   partition: data
-  bondDegree: 57
+  bondDegree: 25
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2809f062-c21a-89d0-8660-8ab07f07b21f"
+  computationUuid: "8878da90-5f1d-8279-b088-d233c834e554"
   stages:
     - stage: path
       stageUuid: "f80a32fc-bb02-8350-bc78-1bf4fafdf349"
     - stage: trinity
       stageUuid: "a4ddc285-6980-8283-b5de-3331cdc43229"
     - stage: boundary
-      stageUuid: "ef2fa56a-1f4c-89e3-b8f8-23429a7502ac"
+      stageUuid: "14c6961b-adc9-8d2c-aaf0-a98b3178baed"
     - stage: links
-      stageUuid: "41d9d66b-837d-85aa-b76a-c76c464bd708"
+      stageUuid: "5505faf9-50aa-8f00-9884-b119a28f64db"
     - stage: horo
-      stageUuid: "7d238227-96dd-8e01-a4c2-67a5c3c50ad7"
+      stageUuid: "08151f3f-cd77-8df8-af44-619d91b82e32"
     - stage: seal
       stageUuid: "74338e2c-6734-8a08-8887-99d528211843"
     - stage: uuid
-      stageUuid: "75c5b360-e63d-8c14-a041-97ea36a7b0f3"
+      stageUuid: "3e75e19d-51f7-8eeb-a39f-133210a6fc7c"
 version: 2
 ---
 # data
 
 Data associated with the event, like for instance a log message.
 
-Entangled with — [[complete]] · [[feed]] · [[catalog]] · [[download]] · [[item]] · [[type]] · [[element]] · [[exif]] · [[healthcare]] · [[reporting]] · [[included]] · supporting
+Entangled with — [[complete]] · [[feed]] · catalog · download · item · [[type]] · [[element]] · exif · healthcare · [[reporting]] · included · supporting
 
 Attested in schema.org — CompleteDataFeed · DataCatalog · DataDownload · DataFeed · DataFeedItem · DataType · data · dataFeedElement · exifData · healthcareReportingData · includedDataCatalog · includedInDataCatalog · supportingData
 

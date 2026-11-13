@@ -2,20 +2,20 @@
 name: block
 description: "Use when reasoning about block as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: block
-coordinate: "block · 5/round · 21b9e741"
-contentUuid: "d991740e-307e-5a79-b332-2e68a254bf8c"
-diamondUuid: "e30e7de7-5881-84ca-93ff-c1ee05e6d1d8"
-uuid: "21b9e741-9ccf-8aa9-a3f1-69c16cd0024b"
+coordinate: "block · 5/round · 1772edb4"
+contentUuid: "cb8f2ea5-5ba5-5fdc-bf34-d2da432b566e"
+diamondUuid: "09946fd9-a886-81f7-a21f-af441a7fe389"
+uuid: "1772edb4-17d4-88d8-a0a0-0fcefa244130"
 horo: 5
 typography:
   partition: block
-  bondDegree: 22
+  bondDegree: 15
 standards:
   - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a5cce341-d26c-8379-962b-f73951384dcd"
+  computationUuid: "c6cb30eb-e094-896c-b6b7-d4297ba0dc68"
   stages:
     - stage: path
       stageUuid: "e581da96-cb31-82b1-bcfb-2ddebcec694d"
@@ -24,20 +24,20 @@ signatures:
     - stage: boundary
       stageUuid: "52252538-d67c-854d-affd-ee5c96d54045"
     - stage: links
-      stageUuid: "7a6a3377-e4f6-8f15-abe6-10d7ba56a6b2"
+      stageUuid: "45713f62-9ee5-8b03-928e-1c04d89a911a"
     - stage: horo
-      stageUuid: "081a519d-ec8e-83f3-8b94-c1cffb50bd09"
+      stageUuid: "e97c9377-2524-82a2-9b61-d8b613cc4bf1"
     - stage: seal
       stageUuid: "bd3b709b-952e-804a-92a0-35e9c1535bde"
     - stage: uuid
-      stageUuid: "67b753c8-d6f5-8843-8536-ce69db6725dc"
+      stageUuid: "b701fa3a-d388-8f15-acec-a7c3ffc0341c"
 version: 2
 ---
 # block
 
 A schema.org component word, collided out of schema.org compounds — fused from WPAdBlock ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — wp · [[ad]]
+Entangled with — wp · ad
 
 Attested in schema.org — WPAdBlock
 

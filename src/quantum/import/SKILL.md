@@ -2,11 +2,11 @@
 name: import
 description: "Use when reasoning about quantum computed import — barrel entanglement derived from each file's live import/wikilink set, never hand-annotated; deep paths are escapes that collapse to @/x."
 atomPath: "quantum/import"
-coordinate: "quantum/import · 1/base · 64bf38d7"
-contentUuid: "1c0f8c61-be82-52db-a1d6-de1bdd0a5ae7"
-diamondUuid: "22bd43f9-d5a5-82d5-a744-bed8f2b335e0"
-uuid: "64bf38d7-6973-87be-bf44-2d8bd01b873c"
-horo: 1
+coordinate: "quantum/import · 7/descent · a15b7fbd"
+contentUuid: "2f6a3298-70e2-55dc-aa19-0f5c4a09a0f6"
+diamondUuid: "55dc1971-474d-88ee-b40f-86852b4967f2"
+uuid: "a15b7fbd-f729-8767-89dc-56d673407b27"
+horo: 7
 typography:
   partition: quantum
   bondDegree: 41
@@ -14,7 +14,7 @@ standards:
   - the import graph is the config — barrels are the only public faces
 bindings: []
 signatures:
-  computationUuid: "12bc75db-24d9-8a29-9383-ab3bbd2737aa"
+  computationUuid: "73d5fb46-d8cd-800a-84b1-f93a068e168c"
   stages:
     - stage: path
       stageUuid: "a3cf8055-9cf4-8ed4-8537-61238f0800fd"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1fecd6c9-6520-841a-b1be-2d88a5b3abf5"
     - stage: horo
-      stageUuid: "ccd9efc3-36c1-8a91-a6d9-95d60b221158"
+      stageUuid: "ecda6c95-b3e3-85ba-8185-861dfd90054a"
     - stage: seal
       stageUuid: "71e7a4b7-c645-85ca-bdf0-400ffa8928a6"
     - stage: uuid
-      stageUuid: "e12922c6-c6d8-86b1-b9a0-ee153225df6b"
+      stageUuid: "bc736a8a-cbef-8bd0-9a85-bf13bea92642"
 quantum:
   superposition:
     - cost
@@ -54,15 +54,15 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "12bc75db-24d9-8a29-9383-ab3bbd2737aa"
-    contentUuid: "1c0f8c61-be82-52db-a1d6-de1bdd0a5ae7"
+    computationUuid: "73d5fb46-d8cd-800a-84b1-f93a068e168c"
+    contentUuid: "2f6a3298-70e2-55dc-aa19-0f5c4a09a0f6"
 version: 2
 ---
 # quantum/import — quantum **computed** import
 
 The quantum twin of [[import]] ([[convention]]/import · [[tamper]]/import): **import is entanglement with another diamond's public face** — the atom barrel `@/x` — never deep-file penetration ([[convention]]/shallow).
 
-**Computed, never authored:** for each TS file, `parseTsImports` derives the `@/` spec set; index-only specs are barrel entanglements; deep specs are escapes. For each SKILL.md, `[[wikilink]]` extraction ([[aura]]) derives outgoing entanglements. No manual `// @quantum-import` annotations — the boundary organ reads bytes.
+**Computed, never authored:** for each TS file, `parseTsImports` derives the `@/` spec set; index-only specs are barrel entanglements; deep specs are escapes. For each SKILL.md, `wikilink` extraction ([[aura]]) derives outgoing entanglements. No manual `// @quantum-import` annotations — the boundary organ reads bytes.
 
 Mass rewrite serves computation: collapsing deep imports → barrels purifies the computed import graph and raises [[tamper]]-cost (coverage → 1 ⇒ ∞).
 
@@ -73,4 +73,4 @@ Composes [[quantum/boundary]] · [[convention]]/import · [[tamper]]/import · [
 @audit import set = parseTsImports / parseSkillImports — computed live
 @standard the import graph is the config — barrels are the only public faces
 
-<sub>content-uuid `1c0f8c61-be82-52db-a1d6-de1bdd0a5ae7` · account `quantum/import` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `2f6a3298-70e2-55dc-aa19-0f5c4a09a0f6` · account `quantum/import` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

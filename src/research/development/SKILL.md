@@ -3,13 +3,13 @@ name: development
 description: "Use when reasoning about development from the research side — building the tooling and systems that enable inquiry; the other direction of the symmetric research↔development cross, which is one entangled binding."
 atomPath: "research/development"
 coordinate: "research/development · 4/weave · 12370b79"
-contentUuid: "11bb45be-5522-5a56-8c38-b99654cfbf93"
+contentUuid: "8a43cbf2-1113-52f4-88f2-f43ccf49e90d"
 diamondUuid: "ca629253-185d-8952-a1cb-573930dee5b4"
 uuid: "12370b79-4451-8eca-ad99-189deeb79779"
 horo: 4
 typography:
   partition: research
-  bondDegree: 56
+  bondDegree: 54
 standards: []
 bindings: []
 signatures:

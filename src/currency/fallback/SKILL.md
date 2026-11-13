@@ -3,13 +3,13 @@ name: fallback
 description: "Use when a currency value is missing, blank, or unknown — the blank currency XXX (ISO 4217 §6.5 \"No currency\") is the identity element of the currency category, so every row, hook, formatter, and conversion resolves cleanly to it instead of crashing."
 atomPath: "currency/fallback"
 coordinate: "currency/fallback · 2/share · 76ff4860"
-contentUuid: "616ea413-603f-5217-abbe-c0a762cafde7"
+contentUuid: "d67f0a23-9592-5c0b-90ec-13501aecd71d"
 diamondUuid: "a7ac89d5-8632-8165-a28d-f9bd2c9242ad"
 uuid: "76ff4860-7145-8864-b91b-7140f905ad3e"
 horo: 2
 typography:
   partition: currency
-  bondDegree: 17
+  bondDegree: 13
 standards:
   - "EN 16931 §BG-7 currency-code element (XXX accepted)"
   - "EN-16931"

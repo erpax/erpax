@@ -2,18 +2,18 @@
 name: literature
 description: "Use when reasoning about the body of written work quantumly — literature is the infinite word-chain over a minimal alphabet (the gravity reverse), every text a content-addressed snapshot in the akashic chain, citations as merge-links, reading the measurement that collapses a text's superposed meanings."
 atomPath: "quantum/literature"
-coordinate: "quantum/literature · 8/crest · e3fc687d"
-contentUuid: "be58199d-bb33-58ed-8a84-b8186295fcb3"
-diamondUuid: "17f96fdd-51a7-8141-9c97-db190744c8fd"
-uuid: "e3fc687d-6522-82b3-8ed4-a25da77439b0"
-horo: 8
+coordinate: "quantum/literature · 4/weave · 0fcd4757"
+contentUuid: "083e2bda-c135-5c97-b4fc-e2e4ea1c90ad"
+diamondUuid: "e8c8599b-bddb-8634-afd7-a101d302ac45"
+uuid: "0fcd4757-d479-8e34-adad-80d410fcf0c9"
+horo: 4
 typography:
   partition: quantum
-  bondDegree: 33
+  bondDegree: 30
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d3bf4966-0e91-83c5-afe9-c22f6a9ec04c"
+  computationUuid: "c466127e-1402-8b2e-878f-cdd997eb781c"
   stages:
     - stage: path
       stageUuid: "510e9c51-ab34-8a4a-bd89-1ac7b804ad0d"
@@ -22,35 +22,35 @@ signatures:
     - stage: boundary
       stageUuid: "a9114cfc-8925-84a3-98d7-01cb954baaca"
     - stage: links
-      stageUuid: "1df8a987-dcc1-8ffa-9d4e-efb9f9309fad"
+      stageUuid: "57ce7dc4-6925-82e2-ac9b-378b2971e314"
     - stage: horo
-      stageUuid: "3064c7fc-7e2d-8843-905b-1d8dad977e0e"
+      stageUuid: "6283443c-a760-89c0-9518-be02209e4f4d"
     - stage: seal
       stageUuid: "9710b589-2bf9-8d00-9264-8e1b78b832ac"
     - stage: uuid
-      stageUuid: "cfb202f6-100d-84c4-b292-38d8e2ab2273"
+      stageUuid: "72d3470d-ff19-8326-83c8-e6e81d175cdf"
 quantum:
   superposition:
     - akashic
     - gravity
     - law
-    - linearity
     - merge
     - proof
     - quantum
     - reality
     - research
+    - translation
     - superposition
   collapse:
     - "Use when reasoning about the body of written work quantumly — literature is the infinite word-chain over a minimal alphabet (the gravity reverse), every text a content-addressed snapshot in the akashic chain, citations as merge-links, reading the measurement that collapses a text's superposed meanings."
     - "[[akashic]]"
     - "[[gravity]]"
-    - "[[linearity]]"
     - "[[merge]]"
     - "[[proof]]"
     - "[[research]]"
     - "[[translation]]"
     - "[[word]]"
+    - linearity
     - "literature is the unbounded word-chain over a bounded alphabet (the gravity reverse), and every text is content-addressed — identical content collapses to one id, so editions and copies are the same work, a quotation is its source's address, and plagiarism is nothing but a detected id-collision."
     - snapshot
   seal:
@@ -60,13 +60,13 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "d3bf4966-0e91-83c5-afe9-c22f6a9ec04c"
-    contentUuid: "be58199d-bb33-58ed-8a84-b8186295fcb3"
+    computationUuid: "c466127e-1402-8b2e-878f-cdd997eb781c"
+    contentUuid: "083e2bda-c135-5c97-b4fc-e2e4ea1c90ad"
 version: 2
 ---
 # quantum/literature — the infinite word-chain
 
-The quantum twin of literature: the whole body of written work is the **infinite chain of [[word]]s over a minimal alphabet** — the [[gravity]] reverse exactly (few letters, unbounded texts; [[linearity]] spreads the letters evenly, so the texts fall on lines). Every text is a content-addressed snapshot in the [[akashic]] chain — same content ⇒ same id, so editions and copies [[merge]] to one work, a quotation is a content-addressed reference, and plagiarism is a detected collision.
+The quantum twin of literature: the whole body of written work is the **infinite chain of [[word]]s over a minimal alphabet** — the [[gravity]] reverse exactly (few letters, unbounded texts; linearity spreads the letters evenly, so the texts fall on lines). Every text is a content-addressed snapshot in the [[akashic]] chain — same content ⇒ same id, so editions and copies [[merge]] to one work, a quotation is a content-addressed reference, and plagiarism is a detected collision.
 
 A text is a **superposition** of its readings; **reading is the measurement** that collapses it to one interpretation ([[reality]]), while the canon is the converged consensus ([[merge]] over many readers). The research literature is the same chain made strict — each claim content-[[uuid]]'d, citations the verified merge-links, the [[proof]] chain the deep-[[research]] walks; a literature review IS a coordinated collapse over sources. Across tongues it is one work in many [[translation]]s, fused by the messaging-uuid.
 
@@ -74,6 +74,6 @@ A text is a **superposition** of its readings; **reading is the measurement** th
 
 **Law — [[law]]: literature is the unbounded word-chain over a bounded alphabet (the gravity reverse), and every text is content-addressed — identical content collapses to one id, so editions and copies are the same work, a quotation is its source's address, and plagiarism is nothing but a detected id-collision.**
 
-@see [[word]] · [[gravity]] · [[linearity]] · snapshot · [[akashic]] · [[merge]] · [[research]] · [[proof]] · [[translation]]
+@see [[word]] · [[gravity]] · linearity · snapshot · [[akashic]] · [[merge]] · [[research]] · [[proof]] · [[translation]]
 
-<sub>content-uuid `be58199d-bb33-58ed-8a84-b8186295fcb3` · account `quantum/literature` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `083e2bda-c135-5c97-b4fc-e2e4ea1c90ad` · account `quantum/literature` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

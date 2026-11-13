@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when parsing pacs.004 payment-return import parser.",
-    "uuid": "3a657014-c984-8a68-ab30-b04aa4aad30b",
+    "uuid": "4bbe4100-7af5-8319-a7ca-c78aae52ea4c",
     "words": [
       "use",
       "when",

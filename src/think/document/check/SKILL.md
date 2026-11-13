@@ -3,17 +3,17 @@ name: check
 description: "Use when a document must meet a definition before it is saved — the lead definition as a schema, run by Payload in a before-validation hook on pages; the hook records in the request's hook context that the check ran, so later hooks rely on it and none repeats it."
 atomPath: "think/document/check"
 coordinate: "think/document/check · 7/descent · 87d3b401"
-contentUuid: "69db97a7-00f0-5f67-ab72-c13be6375d78"
-diamondUuid: "c48b3d63-4a4b-86b7-b6af-be4c3507d9b8"
+contentUuid: "3e004f9c-d05f-538d-a4bb-6e81bd208e7f"
+diamondUuid: "0739ce74-aa78-8760-90ee-7c55cda27db9"
 uuid: "87d3b401-1b57-82d9-9103-49b1925f55ce"
 horo: 7
 typography:
   partition: think
-  bondDegree: 27
+  bondDegree: 19
 standards: []
 bindings: []
 signatures:
-  computationUuid: "86ae9913-1a84-87ae-b036-9f3ee69ad811"
+  computationUuid: "4bb9f222-8a69-8429-b9d0-0e58724656f5"
   stages:
     - stage: path
       stageUuid: "03dbf0c0-4359-8a46-84d9-a79ce7f57961"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "57a1eade-f416-8358-a4a4-40d157c14560"
     - stage: horo
-      stageUuid: "f0b8efbf-a1d5-8e4b-86f1-39b1487f1ea4"
+      stageUuid: "4562496e-cd75-82ba-862b-efbe75ef2e50"
     - stage: seal
       stageUuid: "1b4e6b60-4702-8973-82be-94eb7e97002d"
     - stage: uuid
-      stageUuid: "07fc5604-9082-8fa7-96ec-7aee759f12bb"
+      stageUuid: "3c395af3-16d6-8b57-8ea5-2ab10ec54c26"
 version: 2
 ---
 # think/document/check — the definition is checked where the document is saved

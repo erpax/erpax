@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "door",
-    "uuid": "2c775094-34d4-8c1d-89ee-e5fe7f7ee860",
+    "uuid": "529068c4-f53f-8898-8ecb-a92553f949cd",
     "words": [
       "door"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an MCP area must open from the chat — chatDoor(session, { area: quantum | gate, door, args }) calls the area's own handlers in-process and folds one line of figures into the session; a refused call folds nothing.",
-    "uuid": "3f94a346-7906-8271-82ba-f46d16524b86",
+    "uuid": "9d792fa9-12fe-8690-8f83-1ef45d86a5b6",
     "words": [
       "use",
       "when",

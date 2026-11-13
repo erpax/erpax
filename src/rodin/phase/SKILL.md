@@ -2,19 +2,19 @@
 name: phase
 description: "Use when reasoning about WHERE on the cycle something sits in erpax — the 120° offset of the three axis coils (0°/120°/240°), the ⅓-period animation tick at A432 ms, the moment a version captures. The time-position of a state. Nested under rodin."
 atomPath: "rodin/phase"
-coordinate: "rodin/phase · 2/share · d1442133"
-contentUuid: "c0706419-953b-5775-9488-2b168cdea32c"
-diamondUuid: "1a9d486e-3a55-8585-98f5-981d2ec1653a"
-uuid: "d1442133-de27-8c3d-b526-5d7c44b3b6f5"
-horo: 2
+coordinate: "rodin/phase · 5/round · 87253ab0"
+contentUuid: "3d32c38c-f76c-5d3f-ab6c-2a90a2ec56e0"
+diamondUuid: "8864a5cf-2955-8801-8b02-42423910c758"
+uuid: "87253ab0-64cc-8134-89c3-1635764f66b8"
+horo: 5
 typography:
   partition: rodin
-  bondDegree: 45
+  bondDegree: 42
 standards:
   - "ISO 80000-2 — mathematical signs and symbols"
 bindings: []
 signatures:
-  computationUuid: "f732bb8b-3d61-84f6-aa14-7799a736f9b9"
+  computationUuid: "74ff6802-b8fb-86f5-9d36-1b790cc20017"
   stages:
     - stage: path
       stageUuid: "896bbf00-4089-8161-91ce-b6648e3f8ca2"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "d44eded4-4b33-8f66-bf50-9c03a4c4cfae"
     - stage: links
-      stageUuid: "8f346ffd-c3dc-8885-8a91-2007e27e7433"
+      stageUuid: "dfbd474f-d42e-8bcc-841d-cc7bef7840a6"
     - stage: horo
-      stageUuid: "a3e7531b-2731-8b63-9acf-d181112eaee7"
+      stageUuid: "4f9fbf76-5560-8c24-b70b-a5ad70af10ae"
     - stage: seal
       stageUuid: "da335eb5-a601-845f-8e52-1b94f852b47b"
     - stage: uuid
-      stageUuid: "859a881a-ff1b-8fe6-a145-a995c854a5dd"
+      stageUuid: "68e8a175-a75d-8d67-956f-f21c973ceb56"
 version: 2
 ---
 # phase — position-in-the-cycle (the 120° offset, the A432-ms tick)
@@ -37,7 +37,7 @@ version: 2
 `phase` is **where on the cycle** a thing currently sits. The three [[axis]] coils run the same triad `120°` out of phase (`0° · 120° · 240°`) — together they cover every (cell, phase) pair once; that coexistence IS the interaction. Phase is the time-coordinate of the ring:
 
 - **animation tick** — the [[cmyk]] coils advance one phase every **A432 ms**, offset by ⅓ period, so color *breathes* in time ([[breath]], [[signal]]); A432 is the period in ms exactly as it is the pitch in Hz ([[notes]]).
-- **the moment** — a [[versions]] snapshot grasps a partner's state *at a chosen phase* (point-in-time); the audit chain is a phase-stamped [[flow]].
+- **the moment** — a [[versions]] snapshot grasps a partner's state *at a chosen phase* (point-in-time); the audit chain is a phase-stamped flow.
 - under [[duality]] the coil's self-interaction halves `120°→60°` (the [[coil]] hexagon).
 
 A [[horo]] position says *which* state; phase says *how far through the turn* it is. Source: `~/github/ceccec/svilena-me/.vitepress/rodin.js` (`COIL_A/B/C`, `TIMING.slow = a432 ms`).
@@ -71,4 +71,4 @@ The six points of norm 1 are the unit group, and that count **is** the hexagonal
 
 **Law — [[law]]: the 60° turn closes over the Eisenstein integers and nowhere else. In the ω-basis it is exact; in the Cartesian basis it produces √3, and a claim of exactness that does not name its basis is not a theorem.**
 
-Composes: [[rodin]] · [[axis]] · [[coil]] · [[cmyk]] · [[breath]] · [[signal]] · [[versions]] · [[flow]] · [[rules]]/refutable.
+Composes: [[rodin]] · [[axis]] · [[coil]] · [[cmyk]] · [[breath]] · [[signal]] · [[versions]] · flow · [[rules]]/refutable.

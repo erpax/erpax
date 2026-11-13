@@ -3,17 +3,17 @@ name: quantum
 description: "Use when reasoning about memory read from the quantum ring — the other diagonal of the memory-quantum cross. One node at two names with quantum/memory: this path re-points to the canonical rather than restating it, the merge law at path scale, so the four crossed paths fuse into one seal."
 atomPath: "memory/quantum"
 coordinate: "memory/quantum · 2/share · c9790c81"
-contentUuid: "4c21f5d2-bb6a-5533-adaf-882c838cfb66"
-diamondUuid: "5aa53fbf-c65c-851b-b89c-2ca9ff3d3148"
+contentUuid: "101cb4e8-0271-5b0e-8e39-8dad86dda685"
+diamondUuid: "48ab6391-3d36-81e9-876c-9236aedca4d6"
 uuid: "c9790c81-dd75-8c4f-bacd-906466390f26"
 horo: 2
 typography:
   partition: memory
-  bondDegree: 537
+  bondDegree: 511
 standards: []
 bindings: []
 signatures:
-  computationUuid: "18ea97eb-fe90-80a3-a405-91595f0cf5ca"
+  computationUuid: "62e8368e-1122-81f3-9692-375e41af4227"
   stages:
     - stage: path
       stageUuid: "7eb39de1-4185-8946-b679-d15f926873e6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "c73e0cdc-287c-8659-8289-49a9e1847b88"
     - stage: horo
-      stageUuid: "5722b944-f668-860d-9c3e-7219ed176fda"
+      stageUuid: "b0e69ce8-9a61-8a29-9449-05fcf08cd9a2"
     - stage: seal
       stageUuid: "1787fa5a-8149-8365-ba23-96ce9bbe5749"
     - stage: uuid
-      stageUuid: "f4ccfb4b-5580-8ee3-984d-bd1d0cbc0dce"
+      stageUuid: "0da53e7a-1108-8210-95e5-d8e5b01eb4f7"
 version: 2
 ---
 # memory/quantum — the same crossing, read from memory's ring

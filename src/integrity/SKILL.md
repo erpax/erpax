@@ -2,14 +2,14 @@
 name: integrity
 description: "Use when verifying that a row's CURRENT bytes are the ones committed — content-uuid as a tamper detector (recompute ≠ stored ⇒ flagged), and the same canonical hash extended into signature, envelope encryption, and reference resolution."
 atomPath: integrity
-coordinate: "integrity · 2/share · a9e45d52"
-contentUuid: "586f611b-e211-57e6-b018-644dd11349d5"
-diamondUuid: "16eb408b-bb9d-8b40-b154-270eec5bb6cf"
-uuid: "a9e45d52-8f6a-8005-909f-bf530f52bfc6"
-horo: 2
+coordinate: "integrity · 7/descent · dea1bf50"
+contentUuid: "03eef13d-1365-5beb-8a27-f64ec875b200"
+diamondUuid: "65de1106-ab36-8e08-a22a-4f64127f917d"
+uuid: "dea1bf50-83aa-8009-a1f9-c83ca46d4e15"
+horo: 7
 typography:
   partition: integrity
-  bondDegree: 140
+  bondDegree: 116
 standards:
   - "EU-2016/679"
   - "EU-537/2014"
@@ -37,7 +37,7 @@ bindings:
   - "durable_objects/RATE_LIMITER"
   - "durable_objects/TENANT_QUOTA"
 signatures:
-  computationUuid: "c659f1b7-762b-867d-a594-23b4c1263fdc"
+  computationUuid: "527d2898-cdd3-8bbe-87b1-7f4e0437dc44"
   stages:
     - stage: path
       stageUuid: "d31b91cc-db18-84dd-8dcf-af4ca97c1b81"
@@ -46,13 +46,13 @@ signatures:
     - stage: boundary
       stageUuid: "51845b67-fb54-884e-8bf0-a87d1199de69"
     - stage: links
-      stageUuid: "2521ee77-76e2-8d79-9c25-dfc67aa01dc7"
+      stageUuid: "da92d5c5-ce23-8d17-b474-104caef25983"
     - stage: horo
-      stageUuid: "a1c38086-e22c-8411-b3a6-222c8967be96"
+      stageUuid: "3db9ee23-e939-8596-bf09-464405b24103"
     - stage: seal
       stageUuid: "b79ede1e-8141-8956-ab9d-c4576b43bfc3"
     - stage: uuid
-      stageUuid: "89494d3e-f4ec-89e5-aa8d-603a1c333fff"
+      stageUuid: "2720fa09-64ff-8718-919a-5ed426e831a5"
 version: 2
 ---
 # integrity — the uuid is the witness; the bytes cannot lie
@@ -63,7 +63,7 @@ FORM: **an object's id IS the SHA of its content, so any in-place edit recompute
 - **lock a collection** — opt a collection in so every write recomputes its uuid; a mismatch fails the write at the [[hooks]] boundary. `tamperProofUuidField`, `tamperProofBeforeChangeHook`, `registerTamperProofCollection`.
 - **reference by uuid** — relations point at the content-uuid, so a dangling or tampered target is a different id and surfaces, no cascade rules (Law 10). `resolveByUuid`, `findDanglingRefs`.
 
-One canonical form yields one signable artefact: the signature attaches to the contentUuid (the hash), never to raw payload, so there is exactly one verification path (`signContentUuid`, `verifyContentUuidSignature`). The same hash keys envelope encryption — DEK = HKDF(tenantKEK, salt=contentUuid) — making confidentiality convergent and tamper-bound: any plaintext mutation changes the uuid, the DEK, and the AEAD tag at once (`encryptEnvelope`, `decryptEnvelope`). Because same content ⇒ same id, two instances holding the same row hold ONE row ([[merge]]); the check runs identically at line, document, and federation scale ([[fractal]]).
+One canonical form yields one signable artefact: the signature attaches to the contentUuid (the hash), never to raw payload, so there is exactly one verification path (`signContentUuid`, `verifyContentUuidSignature`). The same hash keys envelope encryption — DEK = HKDF(tenantKEK, salt=contentUuid) — making confidentiality convergent and tamper-bound: any plaintext mutation changes the uuid, the DEK, and the AEAD tag at once (`encryptEnvelope`, `decryptEnvelope`). Because same content ⇒ same id, two instances holding the same row hold ONE row ([[merge]]); the check runs identically at line, document, and federation scale (fractal).
 
 This is the CURRENT-STATE half of trust, [[duality]] to [[proof]] (the O(N) cost to audit) and to [[tamper/cost]] (the cost to forge): cheap to verify, ruinous to falsify. It is the executable spine under [[identity]] and the structural witness the [[society]] uses to lock its records, reading and recomputing from the filesystem alone ([[akashic]]). The standards it cites are external cryptography incorporated by reference (see [[standard]]).
 
@@ -83,7 +83,7 @@ This is the CURRENT-STATE half of trust, [[duality]] to [[proof]] (the O(N) cost
 - **RFC 8032 EdDSA, RFC 7515 JWS, ETSI EN 319 132/142, eIDAS 910/2014** — the signature attaches to the contentUuid, one signable artefact, one verification path.
 - **NIST SP 800-38D AES-GCM, RFC 5869 HKDF, ISO/IEC 27040, GDPR §32** — envelope encryption keyed by the contentUuid; convergent and tamper-bound.
 
-**Law — Dry-clean the matrix toward coverage = 1 and unbounded tamper-cost:** integrity encodes the cost asymmetry that [[proof]] measures. Because the content-uuid IS the SHA of the bytes, verifying is O(1) and recomputation-free, while forging requires second-preimage inversion (cost ∞). This is why the matrix dissolves to zeropoint — every atom's identity is non-negotiable, every reference immutable by construction. The uuid rooted in [[standard]] cryptography (FIPS 180-4) makes [[akashic]] audits deterministic and tamper-detection Byzantine-hard: the same canonical form at line, [[fractal]], and [[society]] scale ensures no entropy leaks into the record.
+**Law — Dry-clean the matrix toward coverage = 1 and unbounded tamper-cost:** integrity encodes the cost asymmetry that [[proof]] measures. Because the content-uuid IS the SHA of the bytes, verifying is O(1) and recomputation-free, while forging requires second-preimage inversion (cost ∞). This is why the matrix dissolves to zeropoint — every atom's identity is non-negotiable, every reference immutable by construction. The uuid rooted in [[standard]] cryptography (FIPS 180-4) makes [[akashic]] audits deterministic and tamper-detection Byzantine-hard: the same canonical form at line, fractal, and [[society]] scale ensures no entropy leaks into the record.
 
 **Law — [[law]]: all is passed with uuids without [[payload]] — integrity verification is content-address first; [[payload]] is optional backend matter, not a prerequisite for the seal (`pnpm confirm:uuid`).**
 

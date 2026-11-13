@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when working with customers or vendors — they are one collection, parties, with a roles field; the Customers and Vendors lists are saved query presets over it, a party can hold both roles, and a role-specific field shows only for the role it belongs to.",
-    "uuid": "735b67a2-7d30-8796-9937-d8f1121d94e9",
+    "uuid": "197089e9-510b-82c2-895e-8c8dbe58d5cc",
     "words": [
       "use",
       "when",

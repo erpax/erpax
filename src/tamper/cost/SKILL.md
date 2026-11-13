@@ -2,14 +2,14 @@
 name: cost
 description: "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts."
 atomPath: "tamper/cost"
-coordinate: "tamper/cost · 1/base · dd52d98f"
-contentUuid: "d2c54e9d-8e78-53aa-a9e5-d47d78f91736"
-diamondUuid: "cf201f06-b503-8d4b-877d-dd0df0ccbfe7"
-uuid: "dd52d98f-65cd-8aed-9fc1-a67d9f7ffe11"
+coordinate: "tamper/cost · 1/base · e9a253c3"
+contentUuid: "0e0d05f6-3264-5dfc-9850-237159b3895a"
+diamondUuid: "8238ee83-761b-82bb-b24d-40fa434a8dad"
+uuid: "e9a253c3-408c-85ea-bf63-0c200bfaff0c"
 horo: 1
 typography:
   partition: tamper
-  bondDegree: 403
+  bondDegree: 327
 standards:
   - "CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication"
   - "DeepSeek-Prover-V2 — recursive subgoal decomposition, Lean-4 kernel-checked invariants"
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "18c263a2-99d4-8a52-bd90-48259756f583"
+  computationUuid: "ea5b8242-ab61-8427-8768-f46a0877ed27"
   stages:
     - stage: path
       stageUuid: "c4a6cfbb-5715-8b93-b12d-90915c16b1bd"
@@ -31,13 +31,13 @@ signatures:
     - stage: boundary
       stageUuid: "d2c970f6-248c-87f6-8dff-28e4ce4709ca"
     - stage: links
-      stageUuid: "fc9c397e-a761-8d0c-810c-4e8687bf9cca"
+      stageUuid: "5af8dad1-16dc-87a2-afc0-cd49005248ad"
     - stage: horo
-      stageUuid: "676ce8ec-17ba-847d-aeec-de877386530d"
+      stageUuid: "b6aa8238-7072-8ba1-bba6-f8b1f6235100"
     - stage: seal
       stageUuid: "2c075d9f-e9ae-8985-b4ce-ca33dc25c7c9"
     - stage: uuid
-      stageUuid: "11ab84f0-7436-8407-93f1-cd1253b4ee3b"
+      stageUuid: "09dd38ea-99b3-8265-81a9-f568045dff71"
 version: 2
 ---
 # tamper-cost — what it costs to crack a zero-entropy app
@@ -45,7 +45,7 @@ version: 2
 erpax holds **no secret**: every id is a deterministic v8 content-[[uuid]] (SHA-256, 106 binding bits — [[identity]]). So the security property is **integrity, not confidentiality** — there is nothing to *steal* or *guess*; the only attack is to **out-compute the whole**. Two paths, and the cheaper one binds:
 
 1. **Local forge (collision).** Change one record but keep its uuid so verification passes untouched → a SHA-256 **second-preimage** on the digest: **~2¹⁰⁶ ops**. The entire Bitcoin network (~2⁹⁴ hashes/yr) needs **~4000 years** for *one* record.
-2. **Global rewrite (recompute).** Cheap per node — until the wiring counts. Because every relation is a crafted uuid **wired in all directions**, one change cascades to the transitive closure = the **whole** store ([[merge]]/[[aura]]: the Merkle-weave; [[holographic]]). And the root is externally **anchored** (`services/anchoring` → RFC-3161/eIDAS TSA or a blockchain leaf). To finish you must also forge that anchor.
+2. **Global rewrite (recompute).** Cheap per node — until the wiring counts. Because every relation is a crafted uuid **wired in all directions**, one change cascades to the transitive closure = the **whole** store ([[merge]]/[[aura]]: the Merkle-weave; holographic). And the root is externally **anchored** (`services/anchoring` → RFC-3161/eIDAS TSA or a blockchain leaf). To finish you must also forge that anchor.
 
 **Crack cost = min(local-forge, chosen-collision, anchor-strength) `+` coverage-cost** — two honestly distinct layers, matching `crackVerdict` (`crackCostLog2 = perRecord + coverageCost`, index.ts):
 
@@ -60,10 +60,10 @@ The README front page is this verdict made public — the rungs computed live fr
 
 - **No anchor ⇒ no protection.** A keyless deterministic store with no external anchor is rewritable *for free* by anyone with write access — the cascade is cheap when you own every row. The external anchor is the single drop of borrowed entropy that makes the zero-entropy whole tamper-evident. It is mandatory, and must be ≥ the digest in strength or it is the weak link.
 - **Birthday vs. scale.** 106 bits gives 2¹⁰⁶ second-preimage but only **2⁵³** birthday-collision resistance. Past ~2⁵³ uuids *in one namespace* accidental collisions appear; the per-tenant salt partitions the space, but the digest width vs. the largest-tenant lifetime count wants a real recompute (see the flagged `uuid-format` claim).
-- **Replication amplifies the cascade — only under strong consistency (3FS/CRAQ inhale).** Under CRAQ ([[replication]]/[[consistency]] — the protocol behind deepseek-ai/3FS), R independently-anchored replicas each re-derive every content-uuid, so an undetected tamper must evade the all-directions coverage check on *all R at once* — the independent-check count is **×R**, widening forge while verify stays O(N) (any one replica suffices to audit). **Eventual** consistency leaves a stale-read window — one tampered replica can serve the bad version before reconciliation — so the multiplier is honest only with CRAQ. The same Law 62 coverage law run across the replica axis: `replicationChecks` feeds the one `coverageCostLog2`, never a parallel term ([[merge]]: same content ⇒ same uuid on every peer).
+- **Replication amplifies the cascade — only under strong consistency (3FS/CRAQ inhale).** Under CRAQ (replication/[[consistency]] — the protocol behind deepseek-ai/3FS), R independently-anchored replicas each re-derive every content-uuid, so an undetected tamper must evade the all-directions coverage check on *all R at once* — the independent-check count is **×R**, widening forge while verify stays O(N) (any one replica suffices to audit). **Eventual** consistency leaves a stale-read window — one tampered replica can serve the bad version before reconciliation — so the multiplier is honest only with CRAQ. The same Law 62 coverage law run across the replica axis: `replicationChecks` feeds the one `coverageCostLog2`, never a parallel term ([[merge]]: same content ⇒ same uuid on every peer).
 - **Invariants enlarge the coherent-rewrite set — only if the audit runs them (DeepSeek-Prover inhale).** The uuid cascade forces a tamper to rewrite the *structural* closure; machine-checked conservation invariants ([[proof]] — balance, period-lock, chain-verify) force the *semantic* closure too: a uuid-consistent state that breaks balance is still caught. Each constraining invariant is one more independent gate — gates **add** (a distinct set) where replicas **multiply** (copies of the set). DeepSeek-Prover's recursive, kernel-checked proofs make these gates real while keeping the verifier O(N) ([[proof]]: green by construction). An invariant nobody checks is no gate — `invariantChecks` counts only the ones the `dry-proof` bundle actually evaluates.
 
-Matter-twin: `tamper-cost/index.ts` (`crackVerdict`/`secondPreimageLog2`/`birthdayMarginBits`/`replicationChecks`/`invariantChecks`) + `index.test.ts` (the proof — green by construction). The cited strengths must be true ([[standard]] NIST SP 800-107, RFC 9562 §8, CRAQ USENIX ATC 2009, DeepSeek-Prover-V2). Where this makes the record un-forgeable, [[shred]] makes the content un-recoverable — the same content-addressing, the [[duality]] of transparency↔confidentiality. **Manual development** composes here via [[cost]] `manualDevelopmentPrice` — hand-forge ≫ verify computed diamonds. **Improve receipts** amplify via [[wave]]/policy `tamperCostForImproveReceipt` — prev-chained path ledger + wave receipts compound `doubleTorusCostLog2` + `coverageCostLog2` toward ∞ at full session coverage. Composes: [[uuid]] · [[anchor]] · [[shred]] · [[identity]] · [[merge]] · [[replication]] · [[consistency]] · [[proof]] · [[aura]] · [[holographic]] · [[whole]] · [[one]] · [[collapse]] · [[standard]] · [[cost]] · [[society]] · [[seal]] · [[generate]] · [[wave]].
+Matter-twin: `tamper-cost/index.ts` (`crackVerdict`/`secondPreimageLog2`/`birthdayMarginBits`/`replicationChecks`/`invariantChecks`) + `index.test.ts` (the proof — green by construction). The cited strengths must be true ([[standard]] NIST SP 800-107, RFC 9562 §8, CRAQ USENIX ATC 2009, DeepSeek-Prover-V2). Where this makes the record un-forgeable, [[shred]] makes the content un-recoverable — the same content-addressing, the [[duality]] of transparency↔confidentiality. **Manual development** composes here via [[cost]] `manualDevelopmentPrice` — hand-forge ≫ verify computed diamonds. **Improve receipts** amplify via [[wave]]/policy `tamperCostForImproveReceipt` — prev-chained path ledger + wave receipts compound `doubleTorusCostLog2` + `coverageCostLog2` toward ∞ at full session coverage. Composes: [[uuid]] · [[anchor]] · [[shred]] · [[identity]] · [[merge]] · replication · [[consistency]] · [[proof]] · [[aura]] · holographic · [[whole]] · [[one]] · [[collapse]] · [[standard]] · [[cost]] · [[society]] · [[seal]] · [[generate]] · [[wave]].
 
 ## Standards
 

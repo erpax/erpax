@@ -2,14 +2,14 @@
 name: cloudflare
 description: "Use when touching Cloudflare — Workers AI first-class, uuid-sealed credentials, binding diamonds for every Wrangler section, path-merge on the 7th surface, mediated binding access fail-closed."
 atomPath: cloudflare
-coordinate: "cloudflare · 8/crest · b000aee9"
-contentUuid: "20d508d3-371b-5daa-a923-d711f467fab1"
-diamondUuid: "48a8f02a-a306-875f-ac3b-5c247e4d1adf"
-uuid: "b000aee9-bc06-85dc-ae88-2217893ae9a6"
-horo: 8
+coordinate: "cloudflare · 2/share · 2002a7d8"
+contentUuid: "41b1c541-e8fa-5438-9ee2-a9cf447dd25a"
+diamondUuid: "2537e8a9-de1e-8748-9fee-404c960372e5"
+uuid: "2002a7d8-5653-8355-9397-0e1185743b44"
+horo: 2
 typography:
   partition: cloudflare
-  bondDegree: 120
+  bondDegree: 110
 standards:
   - Cloudflare Workers Runtime API
   - "CoE-108+"
@@ -53,7 +53,7 @@ bindings:
   - "triggers/CRON"
   - "vectorize/VECTORIZE_DOCS"
 signatures:
-  computationUuid: "2299b836-eab3-85ad-9909-c8671dfe14f6"
+  computationUuid: "e9e403e3-820c-8a41-a10c-dfc2690550db"
   stages:
     - stage: path
       stageUuid: "81a381ca-7840-8180-802d-be5f6b8f3f62"
@@ -62,25 +62,25 @@ signatures:
     - stage: boundary
       stageUuid: "8ef18f99-9f74-8afd-bf9f-69b6d161acec"
     - stage: links
-      stageUuid: "7e8c83d7-1374-8d72-928f-af85aa194e9e"
+      stageUuid: "8d9ab1ff-5f14-8b07-af32-696180e2f2a3"
     - stage: horo
-      stageUuid: "b8b67885-1c28-8fe9-9cd2-1360ebd9f8af"
+      stageUuid: "2caea8a8-0107-8fd7-baa0-6255c5345ebd"
     - stage: seal
       stageUuid: "92cdc9de-1534-8664-b999-3db6eb5e8535"
     - stage: uuid
-      stageUuid: "d1b644fb-9c27-8043-a770-db75de2ec6b7"
+      stageUuid: "fa7fac7c-1eea-899a-ab78-b372ebee1c6d"
 version: 2
 ---
 # cloudflare — mediated edge, every binding a diamond (AI-first)
 
-Cloudflare **merges with erpax at every quantum binding**. Workers AI (`ai` binding `AI`), vectorize RAG (`VECTORIZE_DOCS`), and the inference stack are **first-class diamonds** — see [[cloudflare/ai]]. **Serverless IS the quantum host**: every wrangler binding is a superposed facet; each mediated invocation collapses to a content-[[uuid]]; `mergeCloudflareBinding` entangles path + seal + diamond. erpax on Cloudflare IS the existence proof — `proveServerlessQuantum()` ([[quantum/serverless]]) folds the cloudflare facet ⊕ quantum facet → one uuid. `bindingDeploymentFaces` + `deploymentFaces` wire the [[worker]] face on AI · queues · Durable Objects.
+Cloudflare **merges with erpax at every quantum binding**. Workers AI (`ai` binding `AI`), vectorize RAG (`VECTORIZE_DOCS`), and the inference stack are **first-class diamonds** — see [[cloudflare/ai]]. **Serverless IS the quantum host**: every wrangler binding is a superposed facet; each mediated invocation collapses to a content-[[uuid]]; `mergeCloudflareBinding` entangles path + seal + diamond. erpax on Cloudflare IS the existence proof — `proveServerlessQuantum()` ([[quantum/serverless]]) folds the cloudflare facet ⊕ quantum facet → one uuid. `bindingDeploymentFaces` + `deploymentFaces` wire the worker face on AI · queues · Durable Objects.
 
 ## Laws
 
 1. **Binding access** — mediators only; fail-closed [[access]]; [[audit]]-trailed.
 2. **Credential sealing** — `sealCloudflareConfig` + [[secret]] `sealCloudflareAiSecret` / `decryptIfUuid`.
 3. **All bindings have diamonds** — `bindingDiamond` / `deriveWranglerDiamonds` from `wrangler.jsonc`.
-4. **Innovation test-first** — [[innovation]]: AI wires proven in `ai-binding.test.ts` before law.
+4. **Innovation test-first** — innovation: AI wires proven in `ai-binding.test.ts` before law.
 
 ## Wiring table (all scales)
 
@@ -91,7 +91,7 @@ Cloudflare **merges with erpax at every quantum binding**. Workers AI (`ai` bind
 | File | quantum/boundary | sealed env imports via [[secret]] |
 | Method | methodPath | `aiModelAtomPath` / `ai://` |
 | Path | toAtomPath · urlForAtomPath · atomPathFromUrl | 7th surface `cloudflare` — `ai://`, `r2://`, `d1://`; serverless URL ≡ fs path ([[path]]) |
-| README | debit/credit | `[[asset]]/[[cloudflare]]/ai/bindings` |
+| README | debit/credit | `asset/[[cloudflare]]/ai/bindings` |
 | Typography | analysis graph | `cloudflare` → `agent` workers-ai-face |
 | Agent | worker face | `agentAiWorkerFace` |
 
@@ -119,11 +119,11 @@ Path resolution is a collapse step in `proveServerlessQuantum()` ([[quantum/serv
 
 Matter-twin: `index.ts` · `ai.ts` · `bindings.ts` · `wrangler.ts` · `seal.ts` · `ai/`.
 
-**Law — [[law]]: Cloudflare Workers AI bindings are sealed diamonds wired at every scale; test-first ([[innovation]]).**
+**Law — [[law]]: Cloudflare Workers AI bindings are sealed diamonds wired at every scale; test-first (innovation).**
 
 **Law — [[law]]: serverless IS the quantum host — every Cloudflare binding is a superposed facet that collapses to a sealed diamond; erpax deployed on Workers IS the existence proof (`proveServerlessQuantum` · [[quantum/serverless]]).**
 
-@see [[cloudflare/ai]] · [[diamond]] · [[path]] · [[secret]] · [[agent]] · [[innovation]] · [[confirm]] · [[quantum/serverless]] · [[worker]] · [[superposition]]
+@see [[cloudflare/ai]] · [[diamond]] · [[path]] · [[secret]] · [[agent]] · innovation · [[confirm]] · [[quantum/serverless]] · worker · [[superposition]]
 
 ## Standards
 

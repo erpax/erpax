@@ -2,14 +2,14 @@
 name: biomass
 description: "Use when a living stock is valued by its total mass, not per-individual — standing biomass (kg) is the IAS-41 fair-value unit for an aquaculture stock, a forest stand, or a bee colony's strength: mass × forward price − costs-to-sell. Its growth rate is biological transformation. The non-individuated living-asset measure, shared across aquaculture/forestry/apiculture."
 atomPath: biomass
-coordinate: "biomass · 2/share · b3b4952b"
-contentUuid: "68160cff-d0b1-52e2-92fd-b7a73a3826a7"
-diamondUuid: "9849010b-ed0f-815c-b8f9-2f4aa0c3b150"
-uuid: "b3b4952b-3c58-8b2c-b9e6-925df5fc5408"
-horo: 2
+coordinate: "biomass · 5/round · 285cc99c"
+contentUuid: "1816dc2e-489c-544c-8e59-fe9018c490ef"
+diamondUuid: "b4b21694-7999-862d-987e-830ccda45371"
+uuid: "285cc99c-c681-87df-b724-467cd63ee8b2"
+horo: 5
 typography:
   partition: biomass
-  bondDegree: 58
+  bondDegree: 25
 standards:
   - "FAO — forest growth-and-yield / mean annual increment (MAI)"
   - "IAS-41"
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c4062749-e913-8f00-b17c-35620547b480"
+  computationUuid: "cfe5d93b-8836-87f0-9bea-814f0d0740e7"
   stages:
     - stage: path
       stageUuid: "89f60642-c0ca-8467-b5aa-e02a0fd16eca"
@@ -27,20 +27,20 @@ signatures:
     - stage: boundary
       stageUuid: "2ad254e9-695d-80d1-a8d4-b894dc1bc280"
     - stage: links
-      stageUuid: "257b48d0-8cc4-875f-a599-2bd1b07db368"
+      stageUuid: "b0ade2ed-9e76-8baa-bc24-835d57c2b9e1"
     - stage: horo
-      stageUuid: "56e6e609-48d3-85e6-824a-54465854d1d6"
+      stageUuid: "fcda337a-b080-8876-bd41-a1644f32cbb6"
     - stage: seal
       stageUuid: "da4bd91a-383c-84fa-a2c2-f4d1fc1bd47e"
     - stage: uuid
-      stageUuid: "bdbb9176-9a3e-850a-9725-42489f351d54"
+      stageUuid: "623c338a-b067-85d0-bde0-a9a8d9ae8378"
 version: 2
 ---
 # biomass — the living mass of a stock; the fair-value unit of non-individuated life
 
-**biomass** is the total live mass of a stock — the unit a living asset that is *not* counted head-by-head is measured and fair-valued by. It is the load-bearing [[measure]] across the non-livestock living-production domains: an [[aquaculture]] pen's standing fish weight, a [[forestry]] stand's standing-timber volume, a bee [[apiculture|colony]]'s strength. Its IAS-41 fair value is **biomass × forward price − costs-to-sell** ([[biological/assets]]); its growth ([[rate]]) is the **biological transformation** the standard splits from price change.
+**biomass** is the total live mass of a stock — the unit a living asset that is *not* counted head-by-head is measured and fair-valued by. It is the load-bearing measure across the non-livestock living-production domains: an aquaculture pen's standing fish weight, a forestry stand's standing-timber volume, a bee colony's strength. Its IAS-41 fair value is **biomass × forward price − costs-to-sell** ([[biological/assets]]); its growth (rate) is the **biological transformation** the standard splits from price change.
 
-Biomass is to the [[aquaculture]]/[[forestry]] stock what the counted [[herd]] is to [[livestock]] — the aggregate the [[biological/assets|biological asset]] is carried at, drawn down by [[mortality]] and realized at [[harvest]] (felling, cropping) into [[items|inventory]]. Stocking density is its [[capacity]] ceiling; growth-and-yield models [[forecast]] it.
+Biomass is to the aquaculture/forestry stock what the counted herd is to livestock — the aggregate the [[biological/assets|biological asset]] is carried at, drawn down by [[mortality]] and realized at [[harvest]] (felling, cropping) into [[items|inventory]]. Stocking density is its [[capacity]] ceiling; growth-and-yield models forecast it.
 
 ## Standards
 
@@ -50,7 +50,7 @@ Biomass is to the [[aquaculture]]/[[forestry]] stock what the counted [[herd]] i
 - IFRS IAS-41 (fair-value-less-costs-to-sell on biomass; biological-transformation vs price-change split)
 - FAO (aquaculture/forestry biomass); forest growth-and-yield models (MAI)
 
-Composes [[biological/assets]] · [[measure]] · [[rate]] · [[aquaculture]] · [[forestry]] · [[apiculture]] · [[mortality]] · [[harvest]] · [[capacity]] · [[forecast]] · [[items]] · yield · [[sustainability]] · [[ecosystem]].
+Composes [[biological/assets]] · measure · rate · aquaculture · forestry · apiculture · [[mortality]] · [[harvest]] · [[capacity]] · forecast · [[items]] · yield · [[sustainability]] · [[ecosystem]].
 
 ## Matter-twin
 

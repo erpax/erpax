@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when enqueueing or processing a bulk import or export (CSV, Excel, JSON/JSONL, UBL/CII XML, camt.053/054, pain.001/008, EDIFACT, OCR) — the single bulk-operations contract that writes an audit row up front, dispatches to the queue, and lands each failed row in transaction-failures for operator review.",
-    "uuid": "63da6695-5422-8f24-be91-479c255ddcb8",
+    "uuid": "c7966931-008a-8aa2-a63d-2a11b9a13478",
     "words": [
       "use",
       "when",

@@ -2,14 +2,14 @@
 name: sectors
 description: "Use when taxonomising any part of society — SNA institutional sectors, ISIC economic activities, COFOG government functions, ICNPO civil society, SDG outcomes. The one societal coordinate system every party, connection, transaction and tenant references."
 atomPath: sectors
-coordinate: "sectors · 2/share · 5bfcc5e8"
-contentUuid: "53c41d73-23a2-59b7-8095-0391bc0edc0e"
-diamondUuid: "fee2391f-ed10-8b55-90fb-2c467c191183"
-uuid: "5bfcc5e8-cb7b-8406-880c-aa986fd83488"
-horo: 2
+coordinate: "sectors · 1/base · 53241bfd"
+contentUuid: "ae6d784f-89f7-509e-b889-6f1c1b52dd75"
+diamondUuid: "b718e8dc-b182-8239-a169-44742fc9d7ee"
+uuid: "53241bfd-4cec-8f68-96e3-db258f30c7f5"
+horo: 1
 typography:
   partition: sectors
-  bondDegree: 50
+  bondDegree: 40
 standards:
   - "EU NACE Rev.2 economic-activities"
   - "EU-765/2008"
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "69f69d86-9f2a-88e6-95bb-99dcb3eda250"
+  computationUuid: "ffb7e0ac-0bb5-8950-91a1-f2cecbf83784"
   stages:
     - stage: path
       stageUuid: "ed7b4491-7f56-863a-854d-13c7c3e87730"
@@ -34,20 +34,20 @@ signatures:
     - stage: boundary
       stageUuid: "da0e2b2f-5160-8ea7-820a-fc6fea7cd08f"
     - stage: links
-      stageUuid: "8c307af5-a466-8e65-8f44-6f92f0b5b211"
+      stageUuid: "e7d9b445-db65-8ea3-bb74-3de6169126cd"
     - stage: horo
-      stageUuid: "1400bdb8-70d2-89f8-b81f-0e546160984f"
+      stageUuid: "1a33808f-57ae-85ab-9b12-b34fb76ef8c5"
     - stage: seal
       stageUuid: "f53d982b-75d3-8b19-83d2-b8198b6ee6a4"
     - stage: uuid
-      stageUuid: "5012fcde-fd95-88cf-b610-c3d8c5cd4cc5"
+      stageUuid: "67949533-4e1c-8520-87e1-35470c8338b0"
 version: 2
 ---
 # sectors
 
-The one societal coordinate system: every part of society — a ministry, hospital, school, farm, court, union, church, NGO, household, firm — is NOT a new collection but a coordinate on ONE self-referential taxonomy. This is the [[merge]] law run on the naming axis — a per-part prefix collapses into a `sector` code, not a table — so the whole society sits on one graph. A party, a connection, a [[transaction]], a tenant all reference their `sector`; that reference is the [[field]] relationship that makes the graph whole ([[whole]]). The taxonomy is complete-in-itself while empty: all parts are defined through the [[identity]] element (the blank coordinate) even when no row exists yet ([[holographic]] — the whole recoverable from the standards stack alone).
+The one societal coordinate system: every part of society — a ministry, hospital, school, farm, court, union, church, NGO, household, firm — is NOT a new collection but a coordinate on ONE self-referential taxonomy. This is the [[merge]] law run on the naming axis — a per-part prefix collapses into a `sector` code, not a table — so the whole society sits on one graph. A party, a connection, a [[transaction]], a tenant all reference their `sector`; that reference is the [[field]] relationship that makes the graph whole ([[whole]]). The taxonomy is complete-in-itself while empty: all parts are defined through the [[identity]] element (the blank coordinate) even when no row exists yet (holographic — the whole recoverable from the standards stack alone).
 
-The parts are NAMED and ENCODED, never invented, by the canonical UN/EU classification stack (the [[standard]] answer-path): SNA-2008 institutional sectors (S.11–S.15), ISIC Rev.4 / NACE Rev.2 economic activity, COFOG government functions, ICNPO civil society, COICOP household consumption, SDG outcomes, ISO-3166 geography. Apply the standard and the coordinate follows. The hierarchy is self-referential (`parent` → `sectors`) — the same [[fractal]] form at every depth (division → group → class). Status transitions (active → merged → retired) ride the [[event]] audit chain via [[hooks]] and the collection is gated by [[access]] for tenant isolation; it lives as a Payload collection ([[collections]]).
+The parts are NAMED and ENCODED, never invented, by the canonical UN/EU classification stack (the [[standard]] answer-path): SNA-2008 institutional sectors (S.11–S.15), ISIC Rev.4 / NACE Rev.2 economic activity, COFOG government functions, ICNPO civil society, COICOP household consumption, SDG outcomes, ISO-3166 geography. Apply the standard and the coordinate follows. The hierarchy is self-referential (`parent` → `sectors`) — the same fractal form at every depth (division → group → class). Status transitions (active → merged → retired) ride the [[event]] audit chain via [[hooks]] and the collection is gated by [[access]] for tenant isolation; it lives as a Payload collection ([[collections]]).
 
 Sequence position **0** — the root coordinate. Sectors is the societal [[identity]] element on the `0·3·6·9·1·2·4·8·7·5` ring: the 0 every party departs from and every flow returns to ([[duality]]: code↔society). Everything else in erpax is a use of this frame against the [[accounting]] ledger; sectors is the frame itself.
 
@@ -69,6 +69,6 @@ The answer-path principle: applying this skill *implements* these standards — 
 - **ISO 19011:2018** — audit-trail; the transparent societal ledger over status transitions.
 - **ISO 27001 A.5.23** — cloud-service tenant isolation; sector data is gated per tenant ([[access]]).
 
-Composes: [[defence]] · health.
+Composes: defence · health.
 
 **Law — [[law]]: every part of society is not a new collection but a coordinate on ONE self-referential taxonomy (the [[merge]] law on the naming axis); a ministry, hospital, farm, union or household is a `sector` code that every party, connection, transaction and tenant references — sequence position 0, the root coordinate and societal [[identity]] element.**

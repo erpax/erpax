@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about float — reconciles a counted float — a bank drawer, a casino tray, an armoury, a public till — against its opening balance and its movements.",
-    "uuid": "ef57c263-c212-8939-b0d2-29ff079d0516",
+    "uuid": "8c426fd9-bdf3-8d31-bced-115f06c23d1e",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about service — is the client for tenant administration — create, update, batch actions — and is the instance callers use.",
-    "uuid": "8f18f6bc-f57c-861b-9917-efc29ef519b5",
+    "uuid": "894fdce3-7490-836d-a308-b4841e1fcb26",
     "words": [
       "use",
       "when",

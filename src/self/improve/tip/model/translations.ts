@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "model",
-    "uuid": "afd955d4-0c33-8da5-b2be-ca63fb4345f4",
+    "uuid": "40f4c874-5c53-8eb2-a4f9-16f36b701c5d",
     "words": [
       "model"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the tip loop needs its vocabulary — the gap kinds, the admin-TTFB thresholds, the shapes an audit and a trinity tip take, and the three patterns that separate a precise tip from a vague one.",
-    "uuid": "04b4e581-204c-8e6e-9127-b42626ccd5dc",
+    "uuid": "7c6ac685-7780-81ad-b4cb-3057e05e3f03",
     "words": [
       "use",
       "when",

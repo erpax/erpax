@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a state transition needs a typed undo — reversibility computes the inverse of an AgentEffect (undo-create, undo-update, undo-emit, undo-audit) or reports cannot-invert with a reason, powering GDPR right-to-erasure, regulatory reversal and undo workflows without per-collection unwind code.",
-    "uuid": "f429a0d3-981c-85d0-a82a-16373edb33af",
+    "uuid": "f00008a0-4621-8cd8-8bc5-3153a85fde9b",
     "words": [
       "use",
       "when",

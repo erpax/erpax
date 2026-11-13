@@ -3,13 +3,13 @@ name: events
 description: "Use when ingesting or querying carrier shipment-status events — webhook pushes, API polls, or EDI IFTSTA messages — to update a shipment's in-transit state and trigger IFRS-15 §38 point-in-time revenue recognition on the `delivered` event under DDP/DAP/DPU INCOTERMS. The append-only carrier-tracking event log."
 atomPath: "customers/sales/orders/shipments/tracking/events"
 coordinate: "customers/sales/orders/shipments/tracking/events · 5/round · dbd00d30"
-contentUuid: "93a73191-1d98-577c-98bc-e39d4ff6fe95"
-diamondUuid: "dfecf7d9-dabb-8bf5-ae6a-6381fbb2beca"
+contentUuid: "99fc62fc-566a-51bb-b278-d4d5fe521796"
+diamondUuid: "4606e668-9598-83fb-884e-a637caa2f061"
 uuid: "dbd00d30-936c-8209-8f38-37808e8f1d71"
 horo: 5
 typography:
   partition: customers
-  bondDegree: 51
+  bondDegree: 36
 standards:
   - "EDIFACT IFTSTA international-multimodal-status-message"
   - "IFRS IFRS-15 §38 point-in-time-revenue-recognition"
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "0430d400-a070-8ce7-aef0-d6e4f7af871f"
+  computationUuid: "384fbc61-1df7-8625-9364-f1bc1569d71d"
   stages:
     - stage: path
       stageUuid: "e9e73587-5102-8618-835d-55c621eaca3b"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "98460ea8-61fb-8114-b1ab-a012e7936d9f"
     - stage: horo
-      stageUuid: "b5f9609b-67ad-864e-9b59-688e11cd605d"
+      stageUuid: "e58c5b15-9fbc-8619-bb2b-9998d696985b"
     - stage: seal
       stageUuid: "3e035edc-35fe-8d38-806a-fa3ee4f9989f"
     - stage: uuid
-      stageUuid: "95e0277f-cfbe-8348-8870-9ec0f9a3c3f8"
+      stageUuid: "efc3e57b-78ed-846e-834a-cf06295c6b23"
 version: 2
 ---
 # tracking-events

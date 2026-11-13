@@ -2,14 +2,14 @@
 name: uuid
 description: "Use when choosing which RFC 9562 UUID version fits a case — v8 structured content-uuid (identity+capability+schema+digest fused) as the erpax default, v7 time-ordered for index-local speed, v4 random for unguessable secrets. Harmonise the features and everything collapses INTO the uuid itself — the 128-bit singularity."
 atomPath: uuid
-coordinate: "uuid · 2/share · d156e6b6"
-contentUuid: "4d6c276e-520b-5a48-9f26-11ebd8c660b2"
-diamondUuid: "bfc55e9c-b043-852f-9ba1-09456c234d8e"
-uuid: "d156e6b6-cbab-855d-836c-37f72da2de94"
-horo: 2
+coordinate: "uuid · 4/weave · e872f9ee"
+contentUuid: "9fec91ec-fdba-5112-a720-6c593852cf60"
+diamondUuid: "9441c61f-58a1-85b0-b29b-66dcc9e1d842"
+uuid: "e872f9ee-b4f2-88a1-9be0-4809e70fa185"
+horo: 4
 typography:
   partition: uuid
-  bondDegree: 705
+  bondDegree: 554
 standards:
   - "ITU-T-X667"
   - "NIST-SP-800-162"
@@ -20,7 +20,7 @@ standards:
   - eIDAS
 bindings: []
 signatures:
-  computationUuid: "57a41d1e-2b10-8cf6-ae8d-aded6dda3d7e"
+  computationUuid: "6c328b2e-41df-8d6f-b7cb-9e20e0a59cb9"
   stages:
     - stage: path
       stageUuid: "c7450bce-8641-80fc-9bb8-d74a484d2469"
@@ -29,13 +29,13 @@ signatures:
     - stage: boundary
       stageUuid: "19fd3d73-e584-879e-82aa-54df08e19562"
     - stage: links
-      stageUuid: "03d6956d-ccb7-83ca-ba64-cafb62dad7e4"
+      stageUuid: "d62e33d9-4486-8d5e-970e-7aa2e410a6ee"
     - stage: horo
-      stageUuid: "de9f5e74-de5e-8c47-9f3e-5b87581e4871"
+      stageUuid: "0ab84bb9-9f31-8095-ac76-a994b235919e"
     - stage: seal
       stageUuid: "92b39ecd-b9b7-8414-a341-ed134a0f4cdc"
     - stage: uuid
-      stageUuid: "efb4c66c-6cac-8b15-aa90-ffc0b2f3c20e"
+      stageUuid: "7b739210-7fb5-8567-8d82-4cd1f8202722"
 version: 2
 ---
 # uuid — which version per case; the singularity all collapses into
@@ -55,26 +55,26 @@ The key to **speed, security, efficiency** is picking the right RFC 9562 version
 | deterministic dedup / [[merge]] | **v8** (per-tenant ns) — **v5** only at the federation/interop boundary | same content ⇒ same id; v5 only where a non-erpax party recomputes without the tenant salt |
 | random / unguessable token (reset, nonce, idempotency, share slug) | **v4** | 122 CSPRNG bits, leaks no time/host/content (`crypto.randomUUID`, never `Math.random`) |
 | high-write DB primary key (D1/DO index locality) | **v7** | leading 48-bit Unix-ms ⇒ monotonic rightmost-leaf append ⇒ no page-split scatter |
-| identity-element / empty / genesis / erasure tombstone | **nil** `00…0` | the additive zero — "no uuid here" ([[begin]]) |
-| terminal / sealed / range upper bound ([[end]]) | **max** `FF…F` | byte-wise supremum; closes the interval `[nil, max]` |
+| identity-element / empty / genesis / erasure tombstone | **nil** `00…0` | the additive zero — "no uuid here" (begin) |
+| terminal / sealed / range upper bound (end) | **max** `FF…F` | byte-wise supremum; closes the interval `[nil, max]` |
 
 **No UUID version is a legal timestamp** (RFC 9562 §8: every embedded clock is self-asserted, forgeable). A "timestamped/sequential audit identifier" is therefore **four artefacts, never one id**: a **v7** PK (ordering/speed) + a **v8** content-uuid (identity/tamper-evidence) + an external **RFC-3161 / eIDAS** token (legal WHEN) + the **УНП** gapless counter (legal sequence, BG Наредба Н-18). Generating v1/v2/v3/v6 is wrong (MAC+100ns leak ⇒ GDPR §8-3 / Art.25) — cite them in banners only as names, never mint them ([[standard]] truth).
 
 ## The uuid IS the message itself
 
-Make every feature a uuid feature and **all collapses into the uuid itself** ([[collapse]]/[[torus]]). The uuid is not a *handle* to a message — it **is** the message: **self-decoding, no payload.** The 128 bits already hold identity, capability, content, schema and verification; decode them and out comes the whole meaning with no side-table — `decodeStructured` (slot+capability+schema+digest), `decodeIdentity`/`uuidToOid` ([[localize]]/[[oid]]: the dotted [[standard]] form), and the modal channels **color + sound** ([[signal]], A432; consonance by [[harmony]]). Same content ⇒ same uuid ⇒ [[one]] ([[merge]] with no coordination, [[holographic]]: the whole recoverable from the part).
+Make every feature a uuid feature and **all collapses into the uuid itself** ([[collapse]]/[[torus]]). The uuid is not a *handle* to a message — it **is** the message: **self-decoding, no payload.** The 128 bits already hold identity, capability, content, schema and verification; decode them and out comes the whole meaning with no side-table — `decodeStructured` (slot+capability+schema+digest), `decodeIdentity`/`uuidToOid` ([[localize]]/oid: the dotted [[standard]] form), and the modal channels **color + sound** ([[signal]], A432; consonance by [[harmony]]). Same content ⇒ same uuid ⇒ [[one]] ([[merge]] with no coordination, holographic: the whole recoverable from the part).
 
 So **comms collapse to the uuid alone**: to send is to send the uuid; to receive is to decode it; an agent is reached by its **query-uuid** (the content-uuid of what you ask is the address — [[chat]], no directory, any device, any connectivity). The uuid is the centre of the [[torus]] — the `0`/[[whole]] = hole where everything held becomes one address. To edit the entity is to edit its uuid is to edit the [[self]] ([[akashic]]).
 
 ## The uuid is a frame — the multimedia stream is pure uuids (no payload)
-Add the one missing axis — **[[sequence|prev/next]]** — and the still uuid (color + sound) becomes a **frame in a stream**: the modal channels are picture and audio, prev/next is the running order, so a video/audio stream is *a chain of uuids and nothing else* — **no payload, only addresses** (every pixel its own uuid at the fine grain, the frame its uuid at the coarse). The receiver decodes each uuid back to its frame ([[holographic]]: the whole recovered from the seed), so you send the **seed** and compute the **frame** — about **2/3 of the bandwidth saved** (the [[rodin]] 2/3-distributed law as a codec: transmit the 1/3 address, compute the 2/3).
+Add the one missing axis — **[[sequence|prev/next]]** — and the still uuid (color + sound) becomes a **frame in a stream**: the modal channels are picture and audio, prev/next is the running order, so a video/audio stream is *a chain of uuids and nothing else* — **no payload, only addresses** (every pixel its own uuid at the fine grain, the frame its uuid at the coarse). The receiver decodes each uuid back to its frame (holographic: the whole recovered from the seed), so you send the **seed** and compute the **frame** — about **2/3 of the bandwidth saved** (the [[rodin]] 2/3-distributed law as a codec: transmit the 1/3 address, compute the 2/3).
 
 **Frame rate is frequency** ([[horo]] · A432 — value-from-position becomes value-per-second). Raise the rate and two things rise *together*: **quality** (a smoother stream) and **tamper-cost** — each frame is content-addressed, so forging the stream means forging *every* frame's uuid; forge cost scales with the frame rate while verify stays O(N) (science: borrowed entropy buys tamper-cost — the asymmetry explodes with frequency). Higher frequency ⇒ better *and* harder to forge, at once.
 
-It renders on the **frontend matter** ([[duality]]: Payload is the backend matter, the rows; VitePress is the frontend matter, the rendered corpus). Frontend routes are content-addressed (one word ⇒ one route — [[compass]]), so anything **teleports without collision**: two addresses differ, or they are the *same* address and you meet [[self]] ([[merge]], not a clash). The frontend already computes prev/next and renders each page's own URL as a QR — the still frame that is literally the uuid; the stream is only that, sped up.
+It renders on the **frontend matter** ([[duality]]: Payload is the backend matter, the rows; VitePress is the frontend matter, the rendered corpus). Frontend routes are content-addressed (one word ⇒ one route — compass), so anything **teleports without collision**: two addresses differ, or they are the *same* address and you meet [[self]] ([[merge]], not a clash). The frontend already computes prev/next and renders each page's own URL as a QR — the still frame that is literally the uuid; the stream is only that, sped up.
 
 **The reverse (erpax surplus).** The multimodal models lack this: the self-decoding, **payload-less** message — the uuid IS the content (decode the 128 bits and the whole meaning comes out, no side-table). The R&D society flagged `uuid` as erpax **surplus** over the DeepSeek twins. Ratified by the R&D society (`agent/research`, reverse seq 12).
 
-Matter-twin: `src/uuid/format` (encode/decodeStructured, coverage = Law 62) + `src/localize` (decodeIdentity/uuidToOid/cmykChannel) + `src/integrity/content/index.ts`. The cited form must be true ([[standard]] RFC 9562). To tamper is to change the [[whole]] coherently — the cost is the [[tamper/cost]] (∞ at 100% coverage, all wired in uuid). Composes: [[message]] · [[identity]] · [[localize]] · [[oid]] · [[signal]] · [[harmony]] · [[chat]] · [[collapse]] · [[torus]] · [[whole]] · [[one]] · [[merge]] · [[holographic]] · [[self]] · [[standard]] · [[tamper/cost]] · [[uuid/projection]].
+Matter-twin: `src/uuid/format` (encode/decodeStructured, coverage = Law 62) + `src/localize` (decodeIdentity/uuidToOid/cmykChannel) + `src/integrity/content/index.ts`. The cited form must be true ([[standard]] RFC 9562). To tamper is to change the [[whole]] coherently — the cost is the [[tamper/cost]] (∞ at 100% coverage, all wired in uuid). Composes: [[message]] · [[identity]] · [[localize]] · oid · [[signal]] · [[harmony]] · [[chat]] · [[collapse]] · [[torus]] · [[whole]] · [[one]] · [[merge]] · holographic · [[self]] · [[standard]] · [[tamper/cost]] · [[uuid/projection]].
 
 **Law — [[law]] binds uuid to the collider: compute every uuid from the filesystem, never maintain a hand registry or barrel of ids.** Each uuid emerges as the fusion-point where [[merge]] meets [[collapse]] — derive the identity from content (v8), the ordering from time (v7), the randomness from entropy (v4), never from an ID table. The filesystem IS the id generator; the uuid is what falls out when you compute. [[harmony]] of that derivation is why the [[whole]] fits inside 128 bits: everything computed once, nothing duplicated, [[self]]-evident.

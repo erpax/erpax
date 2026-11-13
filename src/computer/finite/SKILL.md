@@ -3,13 +3,13 @@ name: finite
 description: "Use when modeling finite-state machines — seal check FSM linking seal guardians to automata theory under computer."
 atomPath: "computer/finite"
 coordinate: "computer/finite · 7/descent · cd65de0e"
-contentUuid: "90ffa27b-bfb1-5170-b021-e5971a2f1b40"
+contentUuid: "b80e0220-5c20-5835-aea8-4b8b771e0685"
 diamondUuid: "8c27d0fa-adba-88b2-95c1-409c9ad4463b"
 uuid: "cd65de0e-4207-88d0-b16a-4598e3249fd5"
 horo: 7
 typography:
   partition: computer
-  bondDegree: 11
+  bondDegree: 7
 standards:
   - "finite-state machine (deterministic transitions)"
 bindings: []

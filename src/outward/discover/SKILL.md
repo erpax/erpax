@@ -3,13 +3,13 @@ name: discover
 description: "Use when reasoning about discover — outward/witness crosses five domains and every one of them was **hand-picked**."
 atomPath: "outward/discover"
 coordinate: "outward/discover · 5/round · 8f7455b4"
-contentUuid: "51fb9b0d-61ee-57dd-8b8e-98f59f279252"
+contentUuid: "79fbb0ad-2472-5fc9-994e-dc836d49a03f"
 diamondUuid: "20be8d36-0d81-8ae2-8906-8dd489a1faf9"
 uuid: "8f7455b4-fff7-8b3c-b5d0-6f7831eb4b2d"
 horo: 5
 typography:
   partition: outward
-  bondDegree: 16
+  bondDegree: 12
 standards:
   - "ISO 19011:2018 §6.4 — audit evidence: a candidate cross must name the fields it rests on"
   - "OpenAPI 3 / Swagger 2 — the machine-readable surface being read"

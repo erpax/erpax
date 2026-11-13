@@ -3,13 +3,13 @@ name: queue
 description: "Use when a declared Cloudflare queue consumer must actually reach a handler — consumeQueueBatch runs the payload jobs sweep (the queue message is a nudge; the database holds the work) and acks the whole batch on a green sweep, retries the whole batch otherwise, so max_retries moves a misconfigured batch to erpax-dlq where it is visible. Found because wrangler deploy FAILS CLOSED on a consumer with no queue() export — code 11001 — the deploy-blocking form of an unraised case."
 atomPath: "run/queue"
 coordinate: "run/queue · 8/crest · 1849ce05"
-contentUuid: "430983d3-d21c-5645-bdd8-0a15e0499b00"
+contentUuid: "4578882a-1ef3-533a-ad3c-29518c29a4d6"
 diamondUuid: "08b4deb6-a3f1-8b57-ad98-38cd9e74bb1f"
 uuid: "1849ce05-d109-8fff-aef5-f922723e02dd"
 horo: 8
 typography:
   partition: run
-  bondDegree: 28
+  bondDegree: 20
 standards: []
 bindings: []
 signatures:

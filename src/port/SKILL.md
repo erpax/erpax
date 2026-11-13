@@ -2,18 +2,18 @@
 name: port
 description: "Use when porting a Rails/ActiveAdmin ERP feature (from etrima or ceccec/erpax) into Payload/Next — mapping ActiveAdmin resource registrations to CollectionConfig, Rails concerns to reusable field-factories/skills, controllers/callbacks to endpoints/hooks, CanCan authorization to access control, polymorphic/self-referential associations to relationships. The Rails↔Next / ActiveAdmin↔Payload Rosetta Stone."
 atomPath: port
-coordinate: "port · 7/descent · 7aaccd6b"
-contentUuid: "a3dc04cb-a195-5f26-b6a7-d53786939923"
-diamondUuid: "e3d213ae-d58b-8af5-8454-4427422082cb"
-uuid: "7aaccd6b-5936-8515-8272-96e522534b62"
-horo: 7
+coordinate: "port · 2/share · 1fa76340"
+contentUuid: "96ea2c5f-f125-596f-989a-c139e8b4a842"
+diamondUuid: "a6ab101d-2fad-8f15-b611-0626df914c2e"
+uuid: "1fa76340-2da0-8c1f-a2ff-fe8efe90c16e"
+horo: 2
 typography:
   partition: port
-  bondDegree: 137
+  bondDegree: 101
 standards: []
 bindings: []
 signatures:
-  computationUuid: "a9563f26-6bc0-81d3-a0f7-e0b3afa9252a"
+  computationUuid: "a04918e7-4a17-8a5e-8e76-a05d62587e17"
   stages:
     - stage: path
       stageUuid: "6106f228-2108-8091-a6d5-498dae0bf453"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "441da85e-4255-89fa-9ade-318d895af69f"
     - stage: links
-      stageUuid: "e60e9423-6025-8254-8f03-ad24405e747c"
+      stageUuid: "85b933a8-1b3f-8781-b6ef-5469163206e8"
     - stage: horo
-      stageUuid: "f50ce99a-263b-8939-9fb0-6440336d28e5"
+      stageUuid: "7285c059-7277-82ca-afa1-a97a202d9a6c"
     - stage: seal
       stageUuid: "d1d2bef0-baed-85a1-b0c8-6a518a1d5d9b"
     - stage: uuid
-      stageUuid: "34ff2b72-b5f2-8b6a-bff7-bb68033a4e18"
+      stageUuid: "c8f2d7c0-1d37-82b7-b95c-ab448f89cf08"
 version: 2
 ---
 # port — Rails/ActiveAdmin → Payload/Next (same shape, different host)
@@ -43,7 +43,7 @@ ActiveAdmin is to Rails what Payload is to Next: a declarative layer where ONE r
 | **concern** (mixin: Host/Accountable/Currency/Number…) | **reusable field-factory / field-object** (composable atom) | [[field]] · [[accounting]] |
 | `index do; column …end` | `admin.defaultColumns` + cell components | [[admin]] |
 | `form do; f.input …end` (formtastic) | field types (text/select/relationship/array/blocks…) | [[field]] |
-| `filter :x` / `scope :balanced` | list `where` filters / query presets | [[queries]] |
+| `filter :x` / `scope :balanced` | list `where` filters / query presets | queries |
 | `member_action` / `collection_action` | custom `endpoints[]` | [[api]] |
 | `controller do; before_action…end`, `before_save`/`after_create` | collection `hooks` (beforeChange/afterChange…) | [[hooks]] |
 | CanCan/Pundit `authorize_resource` / `can?` | `access` (read/create/update/delete → bool or Where) | [[access]] |
@@ -52,7 +52,7 @@ ActiveAdmin is to Rails what Payload is to Next: a declarative layer where ONE r
 | self-referential `has_many :children` (Account/Invoice trees) | relationship-to-self (`relationTo: <own slug>`) | [[accounting]] |
 | `permit_params` | field-level `access` + validation | [[access]] |
 | ActiveJob / ActionMailer | Payload jobs queue / email | [[jobs]] · [[config]] |
-| hand-written migrations | Payload-**generated** migrations (never hand-edited) | [[database]] |
+| hand-written migrations | Payload-**generated** migrations (never hand-edited) | database |
 | `application_controller` (tenant + 402 payment gate) | access + subscription gates + multi-tenant plugin | [[access]] |
 | Rails initializers / `config/` | `payload.config.ts` / `next.config` | [[config]] |
 | ERB views / partials | React Server Components / blocks | [[admin]] |
@@ -64,7 +64,7 @@ A Rails **concern** = a Payload **reusable field-object** = an erpax **skill**: 
 ## Port in trinities — the unit of a port is a trinity, never a file
 "Port all" means port **in trinities**: every Rails construct lands as a complete [[trinity]] — **matter** (the code: DB logic copied verbatim, framework scaffolding reimplemented) · **antimatter** (its SKILL — the form/law) · **backend** (the generated `payload-types` schema) — and a port is *done* only when all three are present and agree. Code with no SKILL is matter-only (it cannot be reasoned about or [[merge]]d); a SKILL with no matter is the metaphysical 1/3 — hallucination the [[sequence]] drops.
 
-Interacting ports **compose into trinities, never flatten**: two related Rails models (invoice↔payment, lot↔phase) port neither as one mushed collection nor as two disconnected ones — their relationship is itself the third ([[collapse]]: trinities compose into trinities). A concern with no obvious Payload home is a 2/3 port; its missing 1/3 is **supplied by a neighbouring trinity** — a shared field-factory another port already defined, or the [[identity]] element — never invented locally ([[merge]]). So the whole source app ports as one **lattice of interacting trinities** ([[fractal]]): each Rosetta row gives matter + antimatter, the backend generates the third, audited sacred/[[profane]] and gate-green.
+Interacting ports **compose into trinities, never flatten**: two related Rails models (invoice↔payment, lot↔phase) port neither as one mushed collection nor as two disconnected ones — their relationship is itself the third ([[collapse]]: trinities compose into trinities). A concern with no obvious Payload home is a 2/3 port; its missing 1/3 is **supplied by a neighbouring trinity** — a shared field-factory another port already defined, or the [[identity]] element — never invented locally ([[merge]]). So the whole source app ports as one **lattice of interacting trinities** (fractal): each Rosetta row gives matter + antimatter, the backend generates the third, audited sacred/profane and gate-green.
 
 ## Source apps (read the original)
 - `~/github/ceccec/erpax` — canonical Rails erpax: concerns, `accounting_equation.rb`, `invoice.rb` (self-referential tree), `application_controller.rb` (tenant + 402 gate).

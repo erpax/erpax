@@ -2,14 +2,14 @@
 name: config
 description: "Use when authoring or modifying the root Payload config (payload.config.ts / buildConfig) — wiring db, collections, globals, plugins, editor, secret, cors/csrf, localization, i18n, admin, graphQL, email, typescript output, depth defaults, or custom endpoints."
 atomPath: config
-coordinate: "config · 9/unity · 24282c70"
-contentUuid: "34aa18e3-1968-539a-9218-247b2e505ced"
-diamondUuid: "c3d7a976-c8d0-8742-919c-0b9dc0e078f5"
-uuid: "24282c70-e804-8fda-a2ff-ce0aa2107911"
-horo: 9
+coordinate: "config · 3/3 · 68748349"
+contentUuid: "826ba0f4-2605-5d14-9dba-53b1481feeb9"
+diamondUuid: "9f90ea09-c190-864d-b1aa-b6cd6184acc7"
+uuid: "68748349-a9be-89cc-96d4-a56d0531fbe3"
+horo: 3
 typography:
   partition: config
-  bondDegree: 165
+  bondDegree: 123
 standards:
   - "BCP-47"
   - "Berlin-Group-PSD2"
@@ -27,7 +27,7 @@ standards:
   - "UPU-S42"
 bindings: []
 signatures:
-  computationUuid: "b55c410c-70e4-827e-95f0-f75ecb70d394"
+  computationUuid: "786c5f09-b59b-8e96-bc28-e46461a8a111"
   stages:
     - stage: path
       stageUuid: "3ea2c96b-64d2-8e0c-b61e-db0ac10ea1f1"
@@ -36,13 +36,13 @@ signatures:
     - stage: boundary
       stageUuid: "bf4e95ae-4331-8244-a245-2959b07bdf0a"
     - stage: links
-      stageUuid: "6936ccc4-f826-8824-8772-a6ad7df4491f"
+      stageUuid: "57ca6f2e-5bad-8add-8ba7-b1c5088824fc"
     - stage: horo
-      stageUuid: "74a48b51-c4f7-8f35-a91c-79c90bc3320e"
+      stageUuid: "1a56d094-1535-8cc3-a7d5-3cf7c49bba35"
     - stage: seal
       stageUuid: "f41f4f33-00a0-8b7f-be19-5f854aa0a0b5"
     - stage: uuid
-      stageUuid: "1f5536f4-bc05-88e9-8fbe-4407accf562c"
+      stageUuid: "3f413c29-85b0-8c96-8b45-0789fb763dd2"
 version: 2
 ---
 # config — the root Payload config (buildConfig)
@@ -50,7 +50,7 @@ version: 2
 The config is the single source everything extends: a fully-typed object passed to `buildConfig`. A plugin is a function `(config) => config` that mutates/returns it. Position 0 — every other concern hangs off this.
 
 ## Every index IS a shared config — payload ⊕ vitepress, merged
-An atom's `index.ts` is not only Payload matter: it is the **shared config both [[payload]] and [[vitepress]] derive from** — payload makes the collection + [[types]] + [[database]] from it; vitepress makes the doc + frontmatter from it. One config, two consumers — the [[duality]] bound by content-[[identity]] (the uuid, the `0`). So a SKILL.md **frontmatter and its index are the same config**: harmonising the frontmatter to the index architecture (one-word name, the trigger description, no redundant fields) makes them **merge** — identical config content ⇒ one merged config ([[merge]]). The registry barrels (the prefix indices) are configs too; identical configs consolidate by design. The schema trinity — config · [[types]] · [[database]] — told once, read twice.
+An atom's `index.ts` is not only Payload matter: it is the **shared config both [[payload]] and [[vitepress]] derive from** — payload makes the collection + [[types]] + database from it; vitepress makes the doc + frontmatter from it. One config, two consumers — the [[duality]] bound by content-[[identity]] (the uuid, the `0`). So a SKILL.md **frontmatter and its index are the same config**: harmonising the frontmatter to the index architecture (one-word name, the trigger description, no redundant fields) makes them **merge** — identical config content ⇒ one merged config ([[merge]]). The registry barrels (the prefix indices) are configs too; identical configs consolidate by design. The schema trinity — config · [[types]] · database — told once, read twice.
 
 **If not a collection, a dashboard/page.** Payload reads the shared config as exactly one of two kinds: a **[[collections]]** (a `CollectionConfig` — data, plural per the naming law) or a **dashboard/page** (a custom admin/frontend view — singular). Every atom is one or the other, so the chart of accounts is **collections (data accounts) ⊕ dashboards/pages (view accounts)**. The kind is declared by the config and inflected by the name (plural ⇒ collection, singular ⇒ page/model); the [[gate]] checks a non-collection atom is a valid page. The dissolved components (`dashboard`, `navigation`, `shell`, admin views) are pages; the entities (`invoices`, `payments`) are collections.
 
@@ -77,10 +77,10 @@ export default buildConfig({
 | `editor` | richText editor (lexical). |
 | `plugins` | Array of `(config)=>config` plugins (official ones too, e.g. [[redirects]]). **erpax itself is a plugin.** |
 | `admin` | Admin Panel config (components, live preview, routes). |
-| `graphQL` | `disable`, `maxComplexity`, custom queries (see [[harden]]). |
+| `graphQL` | `disable`, `maxComplexity`, custom queries (see harden). |
 | `cors` / `csrf` / `cookiePrefix` | Cross-origin + cookie security. |
 | `localization` / `i18n` | Content locales / admin UI languages. |
-| `defaultDepth` / `maxDepth` | Relationship population depth (default max 10) (see [[optimize]],[[harden]]). |
+| `defaultDepth` / `maxDepth` | Relationship population depth (default max 10) (see optimize,harden). |
 | `indexSortableFields` | Auto-index sortable top-level fields. |
 | `email` / `sharp` / `endpoints` / `hooks` / `onInit` | Email adapter / image lib / custom REST routes / root hooks / startup fn. |
 | `typescript.outputFile` | Where `generate:types` writes `payload-types.ts`. |
@@ -89,7 +89,7 @@ export default buildConfig({
 ## Common mistakes
 - Forgetting `secret` or `db` (both required).
 - Putting tenant/multi-tenancy as manual fields instead of the multi-tenant plugin (the plugin owns `tenant`).
-- Inlining repeated blocks instead of top-level `blocks` + `blockReferences` (see [[optimize]]).
+- Inlining repeated blocks instead of top-level `blocks` + `blockReferences` (see optimize).
 - Editing `payload-types.ts` by hand — it's generated; re-run `generate:types`.
 
 **Law — [[law]]: every atom's `index.ts` IS the one shared config both [[payload]] and [[vitepress]] derive from — self-describing (kind, fields, relations, position all declared by it + its [[name]] + content-[[uuid]]); `find src` is the registry, so identical configs [[merge]] and nothing outside classifies an atom.**

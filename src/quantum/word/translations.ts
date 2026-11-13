@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "word",
-    "uuid": "d6a8d205-53e9-8735-9696-a45c062a311b",
+    "uuid": "50bf9047-6e36-8754-82c5-9f8a23e0ed4d",
     "words": [
       "word"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the WORD half of the double-torus — one 64-bit address architecture (folder name / aura / link space) that vortexes with the digit architecture into the 128-bit content-uuid; interact64 ANDs the two torus halves, architectureBond entangles word ⊕ digit on the matrix.",
-    "uuid": "577889c8-2b8e-83b3-8f28-e03281fe9955",
+    "uuid": "faecb0e5-916b-8303-b2ea-760943b23bfd",
     "words": [
       "use",
       "when",

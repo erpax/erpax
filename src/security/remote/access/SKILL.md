@@ -2,20 +2,20 @@
 name: access
 description: "Use when proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives — each flaw is a missing primitive and the verdict is a receipted, content-addressed proof. The AnyDesk case (SYSTEM file-read LPE, a stolen code-signing cert, coarse unattended-access) folded onto sandbox, tamper-cost and the receipt. Defensive modeling over public CVEs, never an exploit."
 atomPath: "security/remote/access"
-coordinate: "security/remote/access · 6/6 · ad2013fe"
-contentUuid: "4a17cc4a-add2-5a31-9be3-f326a986e761"
-diamondUuid: "01ef18ed-c3f0-8c1f-8b78-5c7a0d2f8967"
-uuid: "ad2013fe-793f-84ba-bbcb-4eb553c182b1"
+coordinate: "security/remote/access · 6/6 · 8e1e289e"
+contentUuid: "ba26a85d-1449-524c-84f3-8aebc7620947"
+diamondUuid: "81192c30-c268-8406-83ab-2ee5f9cd9353"
+uuid: "8e1e289e-15f5-8164-9337-422d4abcd1d7"
 horo: 6
 typography:
   partition: security
-  bondDegree: 414
+  bondDegree: 361
 standards:
   - "NIST SP 800-162 ABAC · NIST SP 800-107r1 §5.1 · CWE-59"
   - "NIST-SP-800-162"
 bindings: []
 signatures:
-  computationUuid: "bcd71b87-4d64-861e-8f73-c9a6a81b085f"
+  computationUuid: "353f9fc0-6487-8b9c-9be6-bd5768ec1e9c"
   stages:
     - stage: path
       stageUuid: "cef53b55-378a-85f0-a121-73d0c2db3cf3"
@@ -24,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "c7297ca0-dce9-89ee-bc5c-46ae047940cd"
     - stage: links
-      stageUuid: "6d63a13d-430b-801e-bbff-94d39017933d"
+      stageUuid: "296312b6-79ab-8aa7-909c-7b4c5adc9771"
     - stage: horo
-      stageUuid: "a4d507ae-fb04-83f0-8ebe-bbb4aa861edd"
+      stageUuid: "60dd5bf3-21e8-8f5e-b93f-93d8c27ca319"
     - stage: seal
       stageUuid: "344ae025-fbfe-8eae-98e9-66766085d4e7"
     - stage: uuid
-      stageUuid: "5731ce40-1c76-868d-be9f-212e654cb477"
+      stageUuid: "ac36182c-2bcc-8d00-a53d-78baff7ce79c"
 version: 2
 ---
 # remote-access — proving a vendor's trust-model gaps with erpax (under [[security]])
@@ -39,12 +39,12 @@ FORM: **a remote-access product's PUBLISHED vulnerability classes, each run thro
 
 Each AnyDesk flaw is a missing erpax primitive:
 
-- **Unscoped SYSTEM file read** (CVE-2024-12754, CWE-59, patched v9.0.1) — the privileged background-image copy binds no resource, so a filesystem junction redirects it to the `SAM` hive and reads it as SYSTEM. erpax names every resource and checks it against a least-privilege allowlist ([[allowed]]): [[sandbox]] `permits` / `evaluate` BLOCKS the read and emits a [[receipt]].
+- **Unscoped SYSTEM file read** (CVE-2024-12754, CWE-59, patched v9.0.1) — the privileged background-image copy binds no resource, so a filesystem junction redirects it to the `SAM` hive and reads it as SYSTEM. erpax names every resource and checks it against a least-privilege allowlist (allowed): [[sandbox]] `permits` / `evaluate` BLOCKS the read and emits a [[receipt]].
 - **Trust rooted in a stealable secret** (the Feb-2024 production breach) — binary authenticity rests on a code-signing key; stolen, it forges "authentic" binaries for free. erpax stores no secret — a binary IS its content-uuid ([[identity]] · [[uuid]]) — and externally [[anchor]]s the chain root, so forgery must beat the digest AND the anchor (≥ 2^106). `crackVerdict({ anchored: false })` is exactly the stolen-key world: `free-rewrite`, not tamper-evident ([[tamper]] · [[proof]]).
-- **Coarse unattended access** (~18k credentials sold post-breach for tech-support scams) — one "Accept" grants every verb to every host with no per-action authority and no victim-controlled audit. erpax authorizes EACH action under a least-privilege grant and chains every decision into a [[receipt]] (trust split into capability + audit, wired through one uuid); and a session credential is held by handle and injected by the [[broker]] only for a granted handle, so a hijacked session can never exceed its grant.
+- **Coarse unattended access** (~18k credentials sold post-breach for tech-support scams) — one "Accept" grants every verb to every host with no per-action authority and no victim-controlled audit. erpax authorizes EACH action under a least-privilege grant and chains every decision into a [[receipt]] (trust split into capability + audit, wired through one uuid); and a session credential is held by handle and injected by the broker only for a granted handle, so a hijacked session can never exceed its grant.
 
 Matter-twin: `src/security/remote/access/index.ts` — `proveScopeGap` (over [[sandbox]]) · `proveAuthenticityGap` (over [[tamper]] + [[anchor]]) · `test.ts` (the AnyDesk proof — a verified [[receipt]] chain that pinpoints any doctored verdict at its seq).
-Composes: [[security]] · [[access]] · [[sandbox]] · [[allowed]] · [[broker]] · [[tamper]] · [[receipt]] · [[anchor]] · [[proof]] · [[identity]] · [[uuid]] · trust.
+Composes: [[security]] · [[access]] · [[sandbox]] · allowed · broker · [[tamper]] · [[receipt]] · [[anchor]] · [[proof]] · [[identity]] · [[uuid]] · trust.
 
 ## Standards
 - NIST SP 800-162 ABAC (capability-scoped authorization)

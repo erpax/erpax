@@ -2,14 +2,14 @@
 name: classifications
 description: "Use when classifying a non-current asset, disposal group, or discontinued operation as held-for-sale under IFRS 5 §6 — triggers §15 remeasurement to lower of carrying amount and fair-value-less-costs-to-sell, depreciation suspended, separate balance-sheet presentation, gain/loss on disposal. The held-for-sale-classifications IFRS 5 event collection."
 atomPath: "held/for/sale/classifications"
-coordinate: "held/for/sale/classifications · 8/crest · c642157d"
-contentUuid: "4b7b198d-66be-5ff3-bd05-661164c7a282"
-diamondUuid: "8a023cad-5e71-8e2a-8cc1-04f7aa9f3a48"
-uuid: "c642157d-d2c0-8a10-8121-6f0a80213ae3"
-horo: 8
+coordinate: "held/for/sale/classifications · 2/share · f7df419b"
+contentUuid: "69fb7888-b826-5089-a18d-2cdd57c66895"
+diamondUuid: "2593bfa6-d6ba-835c-8a71-e47129ab951f"
+uuid: "f7df419b-cf51-83e8-a895-5c99310d24a6"
+horo: 2
 typography:
   partition: held
-  bondDegree: 40
+  bondDegree: 34
 standards:
   - "IFRS IFRS-13 fair-value-input-hierarchy"
   - "IFRS IFRS-13 fair-value-input-hierarchy`"
@@ -34,7 +34,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a8d7c1ce-b526-84c9-80cd-240fc0de2e27"
+  computationUuid: "71efc06d-92d2-80ad-b6fd-704ce9048273"
   stages:
     - stage: path
       stageUuid: "1b0570b4-f274-852d-9e14-b7abf8d5f56f"
@@ -43,13 +43,13 @@ signatures:
     - stage: boundary
       stageUuid: "f89db9ae-d689-890e-843e-ba290e74b5c3"
     - stage: links
-      stageUuid: "e6ab29a7-a182-8e86-a98f-293006aebcfe"
+      stageUuid: "cd33c84d-37a8-8328-953c-cb24b33a7516"
     - stage: horo
-      stageUuid: "1522956a-1bb1-804e-b1bd-707e09a10211"
+      stageUuid: "b2bc1861-342c-8ef0-b5a4-a4a49a2fca50"
     - stage: seal
       stageUuid: "45323345-85b7-8528-84de-71bb6249f3d5"
     - stage: uuid
-      stageUuid: "1fa999c0-ec08-8e06-ae7a-153942e4f5f9"
+      stageUuid: "5fb800ca-7267-86a0-9b13-5a63545eece2"
 version: 2
 ---
 # held-for-sale-classifications
@@ -64,7 +64,7 @@ highly probable within 12 months (§8) at fair value less costs to sell. That tr
 a separate balance-sheet line (§38); a discontinued operation (§32) is a separate major
 line of business or geography. The impairment / disposal gain-loss posts a [[journal/entries]]
 [[entry]] that keeps the [[accounting]] [[balance]]; the lifecycle (classified → remeasured →
-sale_pending → sold → reclassified) is a [[horo]] ring whose disposal terminus [[close]]s the
+sale_pending → sold → reclassified) is a [[horo]] ring whose disposal terminus closes the
 asset. Standards (IFRS 5, IFRS 13, ASC 205-20 / 360-10) and tenant-isolation posture are the
 [[standard]] banners in `index.ts`, fused below.
 

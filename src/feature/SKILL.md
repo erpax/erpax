@@ -2,42 +2,42 @@
 name: feature
 description: "Use when reasoning about feature as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: feature
-coordinate: "feature · 7/descent · d594c098"
-contentUuid: "4b0796ef-5d4f-5a5f-8703-03996c52775e"
-diamondUuid: "bd1a7740-56a8-8f8c-992c-d4b40cc58170"
-uuid: "d594c098-3e1a-83da-ab95-4c4a9ad591a0"
-horo: 7
+coordinate: "feature · 1/base · 6fe00a34"
+contentUuid: "ecfd22e3-8b24-5470-aebb-1e0a2582eb04"
+diamondUuid: "cbf0cb48-fa94-8239-9e6d-8234832d31a4"
+uuid: "6fe00a34-3c00-8f39-9caa-a576e4d9aec5"
+horo: 1
 typography:
   partition: feature
-  bondDegree: 29
+  bondDegree: 18
 standards:
   - "NIST-INCITS-359-2012"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "4daf0a87-caf7-887f-91f0-cf7c10474f86"
+  computationUuid: "3b05179a-e62f-8cff-b660-040d60ac1be7"
   stages:
     - stage: path
       stageUuid: "e5533c3e-aa27-8730-a690-c10fbb1f212f"
     - stage: trinity
       stageUuid: "524d4871-6425-89bf-9439-7eb2eb30a5c3"
     - stage: boundary
-      stageUuid: "2335274b-9458-8904-b14f-c42a1f58f560"
+      stageUuid: "7e80474c-ba37-8981-a981-35f0b2f4660e"
     - stage: links
-      stageUuid: "6034fc33-8261-88dd-8592-8c8aa1b4d6b1"
+      stageUuid: "6f3982a8-7050-80ba-8f6f-0b13160809fa"
     - stage: horo
-      stageUuid: "37036fe7-c7ab-8ba8-9467-2a6ad8da8a90"
+      stageUuid: "affec527-df94-8224-bc4c-3036871fe205"
     - stage: seal
       stageUuid: "0d289e4e-e4b1-8fca-8b01-9950fbbc739c"
     - stage: uuid
-      stageUuid: "c1dc65ac-7d32-8830-875d-84ad938362bd"
+      stageUuid: "0f20f9b1-ca27-87fc-ae81-b70c2c3eb679"
 version: 2
 ---
 # feature
 
 A schema.org component word, collided out of schema.org compounds — fused from LocationFeatureSpecification · accessibilityFeature · amenityFeature · featureList ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[location]] · specification · [[accessibility]] · [[amenity]] · [[list]]
+Entangled with — [[location]] · specification · accessibility · amenity · [[list]]
 
 Attested in schema.org — LocationFeatureSpecification · accessibilityFeature · amenityFeature · featureList
 

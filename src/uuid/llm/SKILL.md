@@ -2,14 +2,14 @@
 name: llm
 description: "Use when a uuid must expand back into an LLM prompt — the inhale of the breath, decoding identity plus the wired color+sound frame plus the corpus neighbourhood straight out of the 128 bits; the uuid IS the prompt, self-decoding, no payload."
 atomPath: "uuid/llm"
-coordinate: "uuid/llm · 2/share · 8139ff6b"
-contentUuid: "086b2420-9b43-5942-9afa-e5abcbe09270"
-diamondUuid: "f609dbef-6c79-8f9b-a7bc-3f92d8791845"
-uuid: "8139ff6b-ac78-8f5c-9a2f-91d42f103744"
-horo: 2
+coordinate: "uuid/llm · 8/crest · a56ab5d9"
+contentUuid: "996223c7-ff64-5be6-a370-87d7580d29ff"
+diamondUuid: "e3c62657-ef2a-8229-9010-61b50b811dfe"
+uuid: "a56ab5d9-9d05-8fde-beae-08d57335adbf"
+horo: 8
 typography:
   partition: uuid
-  bondDegree: 64
+  bondDegree: 56
 standards:
   - "ISO-16:1975 a432 (the signal anchor — color+sound from position)"
   - "ISO-16:1975 a432 (the signal anchor — color+sound from position)`"
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "67223ce6-e95e-89ca-802a-043560f074c3"
+  computationUuid: "c5ff4d80-829e-82c9-8b66-9ac52d6c4c04"
   stages:
     - stage: path
       stageUuid: "3306117f-5959-818c-879b-07997b414fc3"
@@ -29,13 +29,13 @@ signatures:
     - stage: boundary
       stageUuid: "c7a6f547-77b8-8c3e-88e1-c2d901fc8f09"
     - stage: links
-      stageUuid: "6755e222-b024-8769-9485-722ecf10c062"
+      stageUuid: "d41e9ecd-9cf7-8f83-92ac-f7a1572c8eda"
     - stage: horo
-      stageUuid: "5cab3ae3-467c-89fd-8543-54b0ba48e842"
+      stageUuid: "6cfaf9ac-b0ff-8a01-bec2-1f4a9ae7d310"
     - stage: seal
       stageUuid: "e9913d41-a98b-8880-b7e7-2c1fa344e943"
     - stage: uuid
-      stageUuid: "4233f946-6f2c-82f0-aff0-75a0a0c6787a"
+      stageUuid: "2955bde2-0503-8e43-80d8-9f0116055b4b"
 version: 2
 ---
 # uuid/llm — the INHALE: a uuid IS the prompt
@@ -45,9 +45,9 @@ The in-stroke of the [[breath]]. Given the 128-bit singularity, decode the WHOLE
 - **`expand(uuid)`** → a `PromptFrame`: every identification level from [[localize]] (`decodeIdentity` — slot, capability, schema, OID, cmyk), the renderable **color+sound** frame from [[signal]], and — when the uuid addresses a corpus atom — its neighbours and backlinks ([[matrix]]). A novel uuid still yields full identity + color+sound but an empty neighbourhood: a uuid is a pointer/commitment, never a decompressor of unseen payload (the honest floor).
 - **`horoStepOf(uuid)`** closes a gap the [[signal]] twin documents but never wired: `signalForStep(decodeStructured(uuid).step)` — `decodeStructured` carries no `step`, so a bare uuid's channel was unreachable. The 128 bits mod 7 index the measure ring `[1,2,4,8,7,5,9]`, always on-ring (no 3/6 governing escape), so **every uuid now sounds**.
 
-The dual stroke is the EXHALE (`src/llm/uuid`) — the LLM speaks and its turn is content-addressed. The two **balance**: what the exhale seals (the contentDigest), this inhale reads ([[entry]], double-entry; the tests close the loop). The uuid is a frame; a stream of uuids is multimedia, no payload ([[holographic]]: the whole recovered from the seed).
+The dual stroke is the EXHALE (`src/llm/uuid`) — the LLM speaks and its turn is content-addressed. The two **balance**: what the exhale seals (the contentDigest), this inhale reads ([[entry]], double-entry; the tests close the loop). The uuid is a frame; a stream of uuids is multimedia, no payload (holographic: the whole recovered from the seed).
 
-Matter: `src/uuid/llm/index.ts` (composes [[localize]] · [[signal]] · [[matrix]] — adds only the uuid→step bridge + the prompt rendering). Composes: [[llm]] · [[uuid]] · [[localize]] · [[signal]] · [[matrix]] · [[identity]] · [[oid]] · [[breath]] · [[entry]] · [[holographic]].
+Matter: `src/uuid/llm/index.ts` (composes [[localize]] · [[signal]] · [[matrix]] — adds only the uuid→step bridge + the prompt rendering). Composes: [[llm]] · [[uuid]] · [[localize]] · [[signal]] · [[matrix]] · [[identity]] · oid · [[breath]] · [[entry]] · holographic.
 
 ## Standards
 

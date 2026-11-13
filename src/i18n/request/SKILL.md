@@ -3,13 +3,13 @@ name: request
 description: Use when reasoning about the i18n request — locale and message resolution.
 atomPath: "i18n/request"
 coordinate: "i18n/request · 8/crest · 2293a8b3"
-contentUuid: "7146152b-0c28-54e4-87d1-2efccb863116"
+contentUuid: "819a6ce9-dd97-5f54-88fc-cafe961f12c9"
 diamondUuid: "60558644-aa80-80e4-b92c-0eb73f178ec6"
 uuid: "2293a8b3-ea28-84da-b5b6-a94982136ba2"
 horo: 8
 typography:
   partition: i18n
-  bondDegree: 24
+  bondDegree: 17
 standards:
   - "5646 tags-for-identifying-languages"
   - "9110 http-semantics accept-language-fallback"

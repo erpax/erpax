@@ -3,13 +3,13 @@ name: hook
 description: "Use when reasoning about hook — clears the cached pages when the global changes, so an edit is visible without a deploy. A cache with no invalidation is a copy of an answer, and copies go stale."
 atomPath: "footer/hook"
 coordinate: "footer/hook · 2/share · f4970fad"
-contentUuid: "81d7e4a2-fb33-5841-945f-80e724bbde2e"
+contentUuid: "682ab6f9-4c25-5aa4-aaf2-d91ef46605ad"
 diamondUuid: "6e7587bd-a98e-8181-bc56-116c1072aceb"
 uuid: "f4970fad-3bd8-8b61-a9cb-d376a0afbd22"
 horo: 2
 typography:
   partition: footer
-  bondDegree: 12
+  bondDegree: 8
 standards: []
 bindings: []
 signatures:

@@ -3,13 +3,13 @@ name: case
 description: "Use when a document's page should show what its law rests on — merges the SKILL's claim, the Lean theorems it cites as their source states them, and the kernel record rendered as LaTeX into one proof section in a fixed order: claim, argument, evidence, assumptions. A document with no formal proof is shown as having none."
 atomPath: "verify/case"
 coordinate: "verify/case · 5/round · 3b172ac7"
-contentUuid: "f1b2097a-44d4-58f7-98b2-ec5d012ca6a1"
+contentUuid: "bfcfc4a3-936c-5e01-9387-f8827807ec65"
 diamondUuid: "2bd9f50f-4268-8e89-bfee-3b74bef8884f"
 uuid: "3b172ac7-faf8-8ea5-88fb-bea518209314"
 horo: 5
 typography:
   partition: verify
-  bondDegree: 13
+  bondDegree: 9
 standards: []
 bindings: []
 signatures:

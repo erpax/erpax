@@ -3,18 +3,18 @@ name: memo
 description: "Use when reasoning about memo — models cost as ** ** — it falls as reuses grow, and that falling is what lets reach ∞ and the FTL claim hold."
 atomPath: "quantum/ftl/memo"
 coordinate: "quantum/ftl/memo · 1/base · 0be90fb7"
-contentUuid: "73425fbf-bb24-5489-88fd-542f6164a4d2"
-diamondUuid: "59f27021-52ce-8578-89f3-0aea7cf605c0"
+contentUuid: "ea004bc5-4730-542d-81bb-970fd428518a"
+diamondUuid: "7191aefb-61fd-8368-aadc-61027f665d5a"
 uuid: "0be90fb7-d601-85f2-a25a-ea0280d1178e"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 15
+  bondDegree: 9
 standards:
   - "ISO/IEC 25010:2023 §5.2 — performance efficiency: time behaviour under repetition"
 bindings: []
 signatures:
-  computationUuid: "e288ad5f-a3a9-86ec-943e-c502ac660d7d"
+  computationUuid: "ccfcd7ad-d8c4-8083-899c-a30dd96829d4"
   stages:
     - stage: path
       stageUuid: "35eae484-936e-8b84-a62f-2a3dadb2b511"
@@ -25,18 +25,17 @@ signatures:
     - stage: links
       stageUuid: "e0830fa9-8363-86fd-9478-c95203fa77c1"
     - stage: horo
-      stageUuid: "da889301-41b1-8626-a9cb-bc2b9335a2ce"
+      stageUuid: "646f69da-0898-87a0-a9f3-28a826d05d0f"
     - stage: seal
       stageUuid: "ab7a57ac-6380-8feb-9899-cfe2e4b5932b"
     - stage: uuid
-      stageUuid: "572a8dee-7dfb-8107-ac94-3484dc1f72de"
+      stageUuid: "7adcf67f-b279-8f09-9fe1-0883092c9035"
 quantum:
   superposition:
-    - balance
+    - algebra
     - ftl
     - law
-    - memos
-    - message
+    - quantum
     - superposition
   collapse:
     - "Use when reasoning about memo — models cost as ** ** — it falls as reuses grow, and that falling is what lets reach ∞ and the FTL claim hold."
@@ -47,8 +46,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "e288ad5f-a3a9-86ec-943e-c502ac660d7d"
-    contentUuid: "73425fbf-bb24-5489-88fd-542f6164a4d2"
+    computationUuid: "ccfcd7ad-d8c4-8083-899c-a30dd96829d4"
+    contentUuid: "ea004bc5-4730-542d-81bb-970fd428518a"
 version: 2
 ---
 # quantum/ftl/memo — does asking twice cost twice?
@@ -156,4 +155,4 @@ often it is asked. Measure the second ask — the first one tells you nothing ab
 
 Composes: [[quantum]]/ftl · [[quantum]]/ftl/metrics · [[algebra]] · [[law]].
 
-<sub>content-uuid `73425fbf-bb24-5489-88fd-542f6164a4d2` · account `quantum/ftl/memo` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `ea004bc5-4730-542d-81bb-970fd428518a` · account `quantum/ftl/memo` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

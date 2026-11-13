@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about kyc — There is a function this atom refuses to contain, and naming the refusal is the point: **nothing here decides whether a customer is laundering money.** That is not decidable, and…",
-    "uuid": "4c94c8b3-4b6e-8dd2-91c2-66bef6d9d6cf",
+    "uuid": "02a45498-22d5-890c-a3da-4551781519dc",
     "words": [
       "use",
       "when",

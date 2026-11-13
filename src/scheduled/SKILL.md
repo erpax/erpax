@@ -2,42 +2,42 @@
 name: scheduled
 description: "Use when reasoning about scheduled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: scheduled
-coordinate: "scheduled · 4/weave · 9ac066a7"
-contentUuid: "0fc9f4a6-8ab0-5ae0-bfa4-c16f0b59e2d4"
-diamondUuid: "1b3348b1-521c-8b26-a9aa-b0990fc58294"
-uuid: "9ac066a7-0307-8b26-bfd7-5af650c39d12"
-horo: 4
+coordinate: "scheduled · 2/share · 0060d01f"
+contentUuid: "cd02d6f0-f81d-5093-b72d-5e894b0397e0"
+diamondUuid: "85ae47a0-d612-88ab-ba9c-3de9843652de"
+uuid: "0060d01f-e408-8195-aed6-6ac9b49c1493"
+horo: 2
 typography:
   partition: scheduled
-  bondDegree: 18
+  bondDegree: 15
 standards:
   - "RFC-5545"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dc24253c-421f-8e03-983f-683b8be851b2"
+  computationUuid: "a2b12df6-2b9c-8d13-b107-7b00c62b0fe9"
   stages:
     - stage: path
       stageUuid: "3fd24a8f-cda0-893f-a4ca-861e8f528e3e"
     - stage: trinity
       stageUuid: "32e467ea-b56d-8adf-b088-2b1d5ce2baf7"
     - stage: boundary
-      stageUuid: "8c68f488-c47f-81c5-8c38-6192f09cc688"
+      stageUuid: "13eca38d-233e-84df-ba8e-fd5f78cb8398"
     - stage: links
-      stageUuid: "4c14d129-0bab-8a34-9a78-8dbaa1b61b4b"
+      stageUuid: "630fa67f-7d52-869d-a7ce-7c017ebf3e57"
     - stage: horo
-      stageUuid: "5ff141a3-a4a3-8740-9c7d-f89d1081364d"
+      stageUuid: "d83b6c0d-901b-86a5-a7ed-2c615ff2fff1"
     - stage: seal
       stageUuid: "2ce6a390-5565-8dbb-b77e-a8a52dba0d5e"
     - stage: uuid
-      stageUuid: "ff5f8a66-e428-8f7e-8cc3-d80119c62b4b"
+      stageUuid: "e724c888-cac1-8747-86b4-1d522be9980b"
 version: 2
 ---
 # scheduled
 
 A schema.org component word, collided out of schema.org compounds — fused from scheduledPaymentDate · scheduledTime ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[payment]] · [[date]] · time
+Entangled with — [[payment]] · date · time
 
 Attested in schema.org — scheduledPaymentDate · scheduledTime
 

@@ -3,13 +3,13 @@ name: profile
 description: "Use when reasoning about profile — ISO 14289 PDF/UA — PDF Universal Accessibility."
 atomPath: "iso/14289/profile"
 coordinate: "iso/14289/profile · 4/weave · 1cc34165"
-contentUuid: "2f6ad854-057e-50ca-86aa-c7a2126ace8d"
-diamondUuid: "4aa677ef-c40e-8040-9c1d-d4fd16b989da"
+contentUuid: "d7cfca8b-7159-58fc-a5c7-bb7a2b78a39f"
+diamondUuid: "0c75811b-6596-8be0-a59f-d3efee881d6d"
 uuid: "1cc34165-287b-8223-bf79-5daa82965252"
 horo: 4
 typography:
   partition: iso
-  bondDegree: 20
+  bondDegree: 11
 standards:
   - "EU 2014/55 b2g-procurement-accessibility"
   - "EU 2019/882 european-accessibility-act"
@@ -23,7 +23,7 @@ standards:
   - "WCAG-2.1"
 bindings: []
 signatures:
-  computationUuid: "42ad5cf7-00a1-8c46-89a1-3c23ef8fdba4"
+  computationUuid: "eec9e7fa-7681-8f49-8052-7b6529e4d6b9"
   stages:
     - stage: path
       stageUuid: "5712e091-ed35-86b9-9d2c-5fcd4d306902"
@@ -34,11 +34,11 @@ signatures:
     - stage: links
       stageUuid: "63fc5db9-0178-8625-bd3e-0e0b57197389"
     - stage: horo
-      stageUuid: "dbbfc04b-ab77-87af-9c3b-2abf5f925536"
+      stageUuid: "5d1cd7d8-81f2-82e9-8f15-fe528d16b5a3"
     - stage: seal
       stageUuid: "27c80f7c-c963-833a-9ec8-0ea39429a762"
     - stage: uuid
-      stageUuid: "a09f44c9-1847-8175-a008-da89ae4825dd"
+      stageUuid: "bde15b04-0926-85d4-8360-0126a942f188"
 version: 2
 ---
 # iso/14289/profile

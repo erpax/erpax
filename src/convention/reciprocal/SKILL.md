@@ -2,10 +2,10 @@
 name: reciprocal
 description: "Use when checking whether the corpus stays symmetrically entangled — the computed convention that every directed edge is reciprocated, measured live as coverage = reciprocal / total over the real uuid-matrix."
 atomPath: "convention/reciprocal"
-coordinate: "convention/reciprocal · 7/descent · 15f1f5f4"
-contentUuid: "10e52573-3a4f-5d2f-9c69-f5c530d19ee4"
-diamondUuid: "8de129d7-b398-8bc1-93f4-9792e584f4e4"
-uuid: "15f1f5f4-07cd-8bc6-b67a-dcab3428a58c"
+coordinate: "convention/reciprocal · 7/descent · 7b4bb521"
+contentUuid: "631ddd4e-358a-5c76-8618-25a86c19cbd8"
+diamondUuid: "9dec9bc2-0f00-8a86-8fbf-1810a73165fd"
+uuid: "7b4bb521-b2dc-8d32-8c9e-485eb241119d"
 horo: 7
 typography:
   partition: convention
@@ -14,7 +14,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "715d5742-d14e-85af-bc2a-9312591f072a"
+  computationUuid: "6e84e9bc-0e0a-85f1-9766-2a64400b5980"
   stages:
     - stage: path
       stageUuid: "a02cd22c-756b-889f-81e6-f1eee32f6dc2"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "66c09ab0-f99a-8672-95ad-d15e48262d40"
     - stage: horo
-      stageUuid: "8aabe3d1-1bdf-8923-9b38-2969fb1c13bb"
+      stageUuid: "c01666b9-88f1-8ed6-8b4e-f4bd27d1f1df"
     - stage: seal
       stageUuid: "8b2d7d83-d61f-88f7-a44a-88cda25373d5"
     - stage: uuid
-      stageUuid: "66b4c3fd-9926-8bf1-a330-3880570e88ad"
+      stageUuid: "f96023ce-5ee1-88c2-acb5-f1bb46d2666f"
 version: 2
 ---
 # convention/reciprocal — every directed edge is reciprocated (symmetric entanglement)
@@ -42,7 +42,7 @@ The symmetric-entanglement convention, written as a self-measuring atom. It stat
 
 The wiring law demands NO gap in entanglement in ANY direction. A one-way edge is a directed-link gap — entropy that raises no tamper-[[cost]]. The collider already enforces this (`collide.mjs` §2b: for every forward f→t it adds the reverse t→f if absent; `merge()` is order-independent, so the binding-uuid is identical both ways, and the Merkle root — folded over the NODES — does not move). So reciprocation completes the [[entanglement]] without disturbing the root, and a one-way residue edge is the only thing that pulls coverage below 1.
 
-Pure math, no default: the corpus is non-empty by architecture (every atom carries `[[links]]`, so the matrix always has edges), and `reciprocal` is a subset count of the very same edge set, so the ratio never needs a clamp or a fallback. coverage → 1 ⟺ an undirected, fully-entangled corpus ⟺ zero directed-wiring entropy ⟺ infinite tamper-cost ([[merge]] · [[gravity]] · [[entropy]]).
+Pure math, no default: the corpus is non-empty by architecture (every atom carries `links`, so the matrix always has edges), and `reciprocal` is a subset count of the very same edge set, so the ratio never needs a clamp or a fallback. coverage → 1 ⟺ an undirected, fully-entangled corpus ⟺ zero directed-wiring entropy ⟺ infinite tamper-cost ([[merge]] · [[gravity]] · [[entropy]]).
 
 Entangled with — [[uuid]] · [[link]] · [[merge]] · [[entropy]] · [[gravity]]
 

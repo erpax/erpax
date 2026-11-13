@@ -2,14 +2,14 @@
 name: methods
 description: "Use when storing or querying billing instruments — Stripe-tokenized cards (brand, last4, expiry) and bank accounts — with PCI-DSS scope minimized via tokenization and AES-GCM encryption of sensitive fields. The payment-method vault collection."
 atomPath: "payment/methods"
-coordinate: "payment/methods · 1/base · baa38eca"
-contentUuid: "654927dd-f7a4-5a6a-a9c3-a481a1cc1b4e"
-diamondUuid: "d7a001fe-5996-8cb6-a298-c5fa34401add"
-uuid: "baa38eca-99c9-856a-aef9-c9cc81802eaf"
-horo: 1
+coordinate: "payment/methods · 4/weave · 9b9eb2ef"
+contentUuid: "3d811039-82ef-5165-91a1-a854f488bcc0"
+diamondUuid: "610cc8fd-f53a-8841-bd1c-cb883792874f"
+uuid: "9b9eb2ef-cead-8af9-bb65-f61f3c1904e4"
+horo: 4
 typography:
   partition: payment
-  bondDegree: 22
+  bondDegree: 19
 standards:
   - "5116 authenticated-encryption-with-associated-data"
   - "GDPR Art.32 security-of-processing"
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f3cc2887-739a-8012-8b33-cd8a1182d195"
+  computationUuid: "43180825-cb7d-882c-aab8-1093a81f7ebd"
   stages:
     - stage: path
       stageUuid: "548df8db-e8a3-8dfe-81e9-542ca18be909"
@@ -36,13 +36,13 @@ signatures:
     - stage: boundary
       stageUuid: "fbbb38a3-eeaa-812b-a3d8-74ab990ce8a6"
     - stage: links
-      stageUuid: "b04ea126-6da9-8937-80d9-796fa512023e"
+      stageUuid: "fe318e1f-fd09-8022-b06b-c8584b1d6499"
     - stage: horo
-      stageUuid: "f00f6921-0b31-8204-962b-692983e2e134"
+      stageUuid: "7f7a0d6e-7d24-8aa9-a83a-c7b2370a17dc"
     - stage: seal
       stageUuid: "7c8031b8-2fe0-81e2-a8e1-e58e928b7f9f"
     - stage: uuid
-      stageUuid: "5d5c8cbf-cf25-8e1b-8ae6-2ec62e06634d"
+      stageUuid: "f31d9ae9-093b-84a7-97cd-49cee6eed0b0"
 version: 2
 ---
 # payment-methods
@@ -70,6 +70,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27002 §8.24 use-of-cryptography
 - NIST SP-800-38D aes-gcm
 
-Composes: [[access]] · [[commerce]] · [[defence]] · [[proof]] · [[standard]] · [[identity]].
+Composes: [[access]] · [[commerce]] · defence · [[proof]] · [[standard]] · [[identity]].
 
 **Law — [[law]]: a payment-method is a tokenized billing-instrument vault — Stripe tokens and AES-GCM encryption minimize PCI-DSS scope so sensitive card/bank data is never stored raw.**

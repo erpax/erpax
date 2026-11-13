@@ -3,13 +3,13 @@ name: estimator
 description: "Use when reasoning about estimator as a medical facet of medical — vocabulary pivot to @/estimator; nested not duplicated."
 atomPath: "medical/estimator"
 coordinate: "medical/estimator · 4/weave · f671b3b1"
-contentUuid: "16f9eef3-f172-55fa-b6b2-e3aa7bc8cfac"
+contentUuid: "5174b7a8-33c4-5710-9b7a-3598f47b7cd9"
 diamondUuid: "8b3dbc9e-ace7-8155-a8ff-2991e4e46997"
 uuid: "f671b3b1-6767-8284-8e39-4443f40a0a4b"
 horo: 4
 typography:
   partition: medical
-  bondDegree: 20
+  bondDegree: 14
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

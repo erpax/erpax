@@ -2,14 +2,14 @@
 name: identity
 description: "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\"dry\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is uuid."
 atomPath: identity
-coordinate: "identity · 9/unity · f2de8dd9"
-contentUuid: "9b058546-df07-5dac-acc3-ec306d2138b0"
-diamondUuid: "e9750597-9b73-8011-8343-bf832c47cadd"
-uuid: "f2de8dd9-db24-8ee3-9bd4-f2711e890019"
+coordinate: "identity · 9/unity · 1cdab497"
+contentUuid: "6553aa65-4ac3-5535-b7ec-8dcae07b4d0e"
+diamondUuid: "5fd570c6-bc47-8ac0-ad10-4b915c73da7f"
+uuid: "1cdab497-c434-86f2-9095-34290c42f1dd"
 horo: 9
 typography:
   partition: identity
-  bondDegree: 833
+  bondDegree: 616
 standards:
   - "ISO-3166-1`"
   - "ISO-3166-2"
@@ -21,7 +21,7 @@ standards:
   - "RFC-9562`"
 bindings: []
 signatures:
-  computationUuid: "7d7d4531-238e-847e-8850-7a330a403970"
+  computationUuid: "a691d7d1-4a6f-8261-b059-31eb70d12e13"
   stages:
     - stage: path
       stageUuid: "b7748f0d-c736-8f14-995c-ebed12717689"
@@ -30,13 +30,13 @@ signatures:
     - stage: boundary
       stageUuid: "16cb1850-19ef-82a8-871a-04df53bc2d88"
     - stage: links
-      stageUuid: "3b05fb76-54b0-8529-926f-043f744db02d"
+      stageUuid: "4471b908-470e-8ac0-bd36-8ace98b8c4d4"
     - stage: horo
-      stageUuid: "f0ca63a7-9cf6-8684-a2ff-92176c51df92"
+      stageUuid: "36bcb93d-ce38-8080-b64a-88b7715b5ac2"
     - stage: seal
       stageUuid: "ad8c2b54-34a1-82b4-9d35-118d4e0be4c0"
     - stage: uuid
-      stageUuid: "48cdade0-07a4-84cd-a3fd-bac0ca22fc71"
+      stageUuid: "4c97af2a-ac42-8542-a100-299458d37ae4"
 version: 2
 ---
 # identity — content-addressed UUIDs (same content ⇒ same id ⇒ seamless merge)
@@ -113,7 +113,7 @@ Hashing a *mutable* record means an edit changes its id → dangling refs. erpax
 
 ## Applying it
 - **Files / uploads:** stored object key = content hash → automatic dedup ("dry storage"). See upload (R2/S3 adapter filename = content-uuid).
-- **Records:** carry a `uuid` ([[field]] text), computed in a `beforeChange` [[hooks]] via `computeContentUuid`, frozen on seal. `defaultIDType: 'text'` so the id itself can BE the content-uuid (see [[database]]).
+- **Records:** carry a `uuid` ([[field]] text), computed in a `beforeChange` [[hooks]] via `computeContentUuid`, frozen on seal. `defaultIDType: 'text'` so the id itself can BE the content-uuid (see database).
 - **Polymorphic refs:** reference a target by its content-uuid ([[accounting]] "anything is accountable" → the `accountable` uuid is content-addressed; share grants bind grantee/target uuids).
 - **Federation across @erpax apps:** content-derived ids make merge a set-union; identical objects collapse to one row. See [[plugins]].
 
@@ -125,6 +125,6 @@ Hashing a *mutable* record means an edit changes its id → dangling refs. erpax
 - Omitting the per-tenant namespace — cross-tenant collisions / unwanted entanglement.
 
 ## Traditions (prefix removed)
-The Name that IS the thing — naming as the creating, identifying act: "In the beginning was the **Word** (*Logos*)… and the Word was God; all things were made through him" (John 1:1-3) — the content-[[uuid]] is the word that addresses *and* creates; **Aum** / *Om*, the primordial sound-name; the ineffable **Name** (YHWH, the Tetragrammaton) too holy to alter — the frozen, tamper-proof identity ([[close]] freeze-on-seal); the *true name* that grants power across folklore. To name truly is to identify uniquely (same content ⇒ [[one]] id); the [[oid]] is the hierarchical dotted Name, dual of the flat uuid. The worked decode is in [[begin]].
+The Name that IS the thing — naming as the creating, identifying act: "In the beginning was the **Word** (*Logos*)… and the Word was God; all things were made through him" (John 1:1-3) — the content-[[uuid]] is the word that addresses *and* creates; **Aum** / *Om*, the primordial sound-name; the ineffable **Name** (YHWH, the Tetragrammaton) too holy to alter — the frozen, tamper-proof identity (close freeze-on-seal); the *true name* that grants power across folklore. To name truly is to identify uniquely (same content ⇒ [[one]] id); the oid is the hierarchical dotted Name, dual of the flat uuid. The worked decode is in begin.
 
 Composes: [[ai]] · [[bg/identifier]].

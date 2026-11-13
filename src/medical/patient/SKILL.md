@@ -3,13 +3,13 @@ name: patient
 description: "Use when reasoning about patient as a medical facet of medical — vocabulary pivot to @/patient; nested not duplicated."
 atomPath: "medical/patient"
 coordinate: "medical/patient · 7/descent · 823d7cba"
-contentUuid: "8659ce63-59ec-5335-b1a4-069a2b75564e"
+contentUuid: "4ab3a133-f0ae-58c9-a308-3f42b509675b"
 diamondUuid: "d685a369-2dbe-8123-bac3-938626bf7239"
 uuid: "823d7cba-ee85-8f15-b7ea-93817d07923d"
 horo: 7
 typography:
   partition: medical
-  bondDegree: 18
+  bondDegree: 16
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

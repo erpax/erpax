@@ -3,13 +3,13 @@ name: algorithm
 description: "Use when running search/sort primitives under the machine — executable algorithms nested under computer."
 atomPath: "computer/algorithm"
 coordinate: "computer/algorithm · 1/base · b62b827b"
-contentUuid: "3293594b-cb21-5085-b849-f8b667df2951"
+contentUuid: "bfc88ee1-2af7-5be9-b142-8d9b6c86f74d"
 diamondUuid: "f5f30b86-1fea-8e88-874a-93755b5b73b8"
 uuid: "b62b827b-c914-8c41-b405-14e1584e99b7"
 horo: 1
 typography:
   partition: computer
-  bondDegree: 9
+  bondDegree: 7
 standards: []
 bindings: []
 signatures:

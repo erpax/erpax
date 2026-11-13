@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about exiting the 128-bit uuid limit — pi is the infinite digit-stream, a universal address space where any data lives at an offset and length; the train you jump into and out of, when wired the static hash becomes a living realtime position. Honest — infinite address, no free compression.",
-    "uuid": "a95455aa-02f0-8f49-8e20-4fd65eabaad5",
+    "uuid": "c7379a16-eeab-8780-a624-95d263ced045",
     "words": [
       "use",
       "when",

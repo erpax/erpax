@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about error — A field that rejects input and explains nothing is a dead end: the user knows the form will not submit and has no way to learn what to change.",
-    "uuid": "0285d37e-f9de-89aa-afed-2dc81884c128",
+    "uuid": "40995f3e-4b3d-8bcf-8020-1596032ea248",
     "words": [
       "use",
       "when",

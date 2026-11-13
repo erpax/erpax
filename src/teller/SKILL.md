@@ -3,20 +3,20 @@ name: teller
 description: "Use when reasoning about teller — Everything structural — the derived total, the signed variance, the void-on-illegal-count rule — lives in float, because a chip tray, an armoury and a public till obey the same…"
 atomPath: teller
 coordinate: "teller · 5/round · 8b530bc1"
-contentUuid: "73ba489b-006b-5473-acb9-5903479cb579"
-diamondUuid: "2cfd367a-2fbc-8709-b333-a6c37ac159c5"
+contentUuid: "67469455-47c2-5628-ae13-402bb2a375f7"
+diamondUuid: "74aaecf4-fdcb-869f-97ce-28fdb578920d"
 uuid: "8b530bc1-c8e8-84d2-b840-77a262cd7f9c"
 horo: 5
 typography:
   partition: teller
-  bondDegree: 13
+  bondDegree: 10
 standards:
   - ECB — euro legal tender denominations
   - ISA 501 — physical count as audit evidence
   - "ISO 4217 — EUR, minor units"
 bindings: []
 signatures:
-  computationUuid: "b421d6f9-2d2a-8de8-9733-dc837f2d3d42"
+  computationUuid: "79eb377e-57bb-8269-a011-66d6b446829e"
   stages:
     - stage: path
       stageUuid: "0d8dd8b3-7a34-841c-888f-805332b5a53a"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "4d283354-3ba5-8af3-9222-4bcb71ebc258"
     - stage: horo
-      stageUuid: "c3a9ae7b-829e-825d-9282-9c6520f82547"
+      stageUuid: "9d7e2246-517b-87e3-b20f-4e36fea3882e"
     - stage: seal
       stageUuid: "efaa610c-459f-8c7e-b952-0ecabd4cf294"
     - stage: uuid
-      stageUuid: "e2767860-2f2c-88e2-bed0-19a2457c61bd"
+      stageUuid: "0fefaa66-7e82-81da-ab45-96acfbdf6b9d"
 version: 2
 ---
 # teller — the branch counter, mounted on [[float]]

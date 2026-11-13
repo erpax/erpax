@@ -3,17 +3,17 @@ name: field
 description: "Use when reasoning about field — entanglement/field — party-field entanglement warnings for admin UI."
 atomPath: "entanglement/field"
 coordinate: "entanglement/field · 2/share · 3f976e59"
-contentUuid: "1e388357-832d-53c0-a7fb-3223290e9870"
-diamondUuid: "d96105e8-a423-82d3-a207-3332bbc8e39b"
+contentUuid: "f4fbc648-94a6-5469-a1a8-19f18b92870d"
+diamondUuid: "1d8f4d19-d1e0-8c12-aad9-5209dde44cbb"
 uuid: "3f976e59-56e3-85b7-97cc-747e026eaf6d"
 horo: 2
 typography:
   partition: entanglement
-  bondDegree: 334
+  bondDegree: 243
 standards: []
 bindings: []
 signatures:
-  computationUuid: "bf723b57-7fb9-8d5c-b588-5397af3804ac"
+  computationUuid: "8762c39f-6021-8d4c-9a3f-7de833e8c58e"
   stages:
     - stage: path
       stageUuid: "474cca43-b688-8b10-9356-936a83ec9495"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5cd86401-772d-85af-a459-149bd475db2d"
     - stage: horo
-      stageUuid: "b72d4f0b-7abf-87c1-86f1-6d662fe9ea67"
+      stageUuid: "ba2a1ae5-8407-84e4-8290-09da2ae3a2c9"
     - stage: seal
       stageUuid: "b59d78f1-edbb-8576-b185-a52628d624d4"
     - stage: uuid
-      stageUuid: "948c1e35-0f9c-8cd8-809d-8b2c6a0eb46b"
+      stageUuid: "7e26e33b-225d-89a7-9029-ba0eeb28c3a0"
 version: 2
 ---
 # entanglement/field

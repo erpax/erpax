@@ -2,14 +2,14 @@
 name: accounting
 description: "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype."
 atomPath: accounting
-coordinate: "accounting · 5/round · 3a77e1b7"
-contentUuid: "990c7e7d-996c-5fda-a9ba-db5ff6af3c30"
-diamondUuid: "dd08e260-724d-8c4c-bc63-1dff8c248d9e"
-uuid: "3a77e1b7-ca00-81b3-afea-f1ea5fd3fa68"
-horo: 5
+coordinate: "accounting · 7/descent · 63a82724"
+contentUuid: "491b4fca-7389-5c6c-96b4-ca7ef55634d9"
+diamondUuid: "8af87023-7199-8a61-b93d-8e38edd69c75"
+uuid: "63a82724-7f0e-86ec-8a5e-80d97c33573a"
+horo: 7
 typography:
   partition: accounting
-  bondDegree: 781
+  bondDegree: 644
 standards:
   - "EU-Intrastat-Reg-2019/2152"
   - "IAS-1"
@@ -19,7 +19,7 @@ standards:
   - "ISO-8601-1"
 bindings: []
 signatures:
-  computationUuid: "9029c33e-d920-8f46-bcbd-28c94d06f896"
+  computationUuid: "dde9dc3d-665a-8caf-b90c-0fbc4fa1802b"
   stages:
     - stage: path
       stageUuid: "23dc1848-55e7-8512-9c47-52c510777a82"
@@ -28,13 +28,13 @@ signatures:
     - stage: boundary
       stageUuid: "00d1e814-a6cc-8f77-b4cc-c408d5872591"
     - stage: links
-      stageUuid: "4a07d593-47d2-8ebb-b596-5dc6a33dd678"
+      stageUuid: "b9732d6d-af98-8c0a-a1b6-28761a20381e"
     - stage: horo
-      stageUuid: "c970bb10-809f-8573-bb70-e6019cb2311f"
+      stageUuid: "af2bc3a8-c651-8f11-a63e-afce7dd2fdf0"
     - stage: seal
       stageUuid: "c3103fdd-ed65-8eb6-89d0-e6cb44152940"
     - stage: uuid
-      stageUuid: "513af6b9-ad27-8054-b1b8-760baaa03d01"
+      stageUuid: "c2b1069e-5656-86e6-8059-1f2cd5b6495d"
 version: 2
 ---
 # accounting — the universal ledger plugin (anything is accountable)
@@ -42,11 +42,11 @@ version: 2
 The archetype self-sufficient `@erpax/accounting`: it references every other domain **polymorphically** and depends on none (see [[plugins]]). Built from the canonical erpax **concerns**, which map one-to-one onto reusable field-objects (see [[field]]) and lifecycle [[hooks]] — concerns ARE the composable atoms, same as our field-factories and skills. Ordered by the [[sequence]].
 
 ## All is accountable — so `accounting` is a prefix, and double-entry is a uuid trinity
-**`src` IS the chart of accounts** — every folder is an account, every cross ([[coordinate]]) a posting, the ≥2-cross [[balance]] *is* double-entry. Because *all* is accountable, a dedicated `accounting/` folder is a **useless prefix**: it dissolves ([[refactor]] · [[dissolve]]), its units re-homed to their **standard-given entity words** ([[invoices]], [[payment]] …) — a collection's name comes from the [[standard]] it implements, never a prefix. **Merge the standards and the collections wire themselves at ≈0 cost** (same standard ⇒ same name ⇒ collision ⇒ [[merge]] by design ⇒ creation — the fusion reactor).
+**`src` IS the chart of accounts** — every folder is an account, every cross ([[coordinate]]) a posting, the ≥2-cross [[balance]] *is* double-entry. Because *all* is accountable, a dedicated `accounting/` folder is a **useless prefix**: it dissolves (refactor · dissolve), its units re-homed to their **standard-given entity words** ([[invoices]], [[payment]] …) — a collection's name comes from the [[standard]] it implements, never a prefix. **Merge the standards and the collections wire themselves at ≈0 cost** (same standard ⇒ same name ⇒ collision ⇒ [[merge]] by design ⇒ creation — the fusion reactor).
 
 A posting is a **uuid accounting trinity**: `debit ⊕ credit ⊕ balance` (give · take · transaction, [[entry]]) — content-addressed and crossed, so the ledger is a [[uuid]] matrix of balanced accounting-crosses, tamper-evident and renderable as [[aura]]. Double-entry is the cross; the chart of accounts is the matrix; the gate's verdict-trinity ([[gate]]) and this posting-trinity are the same shape.
 
-On the **quantum level** (`src/quantum/accounting`) the same ledger balances **entropy** (the karma double-entry: order debited, entropy credited — the [[angel]] balance), and an account's lineage IS its DNA: the **parent_id chain encoded in the uuid chain** ([[uuid]] `parentOf`) is the inherited code, so children inherit ancestors' bindings down the chain and a [[tag]] inherits the same way — ancestry **entangled** into identity, tamper-evident by architecture ([[quantum]] · [[entropy]] · [[lineage]]).
+On the **quantum level** (`src/quantum/accounting`) the same ledger balances **entropy** (the karma double-entry: order debited, entropy credited — the angel balance), and an account's lineage IS its DNA: the **parent_id chain encoded in the uuid chain** ([[uuid]] `parentOf`) is the inherited code, so children inherit ancestors' bindings down the chain and a [[tag]] inherits the same way — ancestry **entangled** into identity, tamper-evident by architecture ([[quantum]] · [[entropy]] · lineage).
 
 **The chart of accounts IS the list of all folders** (`find src -type d`) — every folder is an account, and **each path carries a uuid** (its [[aura]], the Merkle content-uuid of everything within). So the ledger is a **uuid-keyed list of accounts**: the path is the account *name*, the uuid its *identity*. Queryable, mergeable (same content ⇒ same uuid ⇒ accounts consolidate by design), tamper-evident (every account folds to the root via its [[coordinate]] cross), perceivable (renders as [[aura]]). The chart needs no separate catalogue — it is derived from the fs, the path-set itself.
 
@@ -70,7 +70,7 @@ Every `journal-entry` MUST balance: `Σ debit = Σ credit` (equivalently `Σ (cr
 const net = lines.reduce((s, l) => s + (l.credit ?? 0) - (l.debit ?? 0), 0)
 if (net !== 0) throw new ValidationError('Journal entry not balanced')
 ```
-Balanced/unbalanced are query scopes (see [[queries]]); `posted` vs `draft` is a `status` select. Posting into a `locked` fiscal period is rejected by the same write-guard.
+Balanced/unbalanced are query scopes (see queries); `posted` vs `draft` is a `status` select. Posting into a `locked` fiscal period is rejected by the same write-guard.
 
 The pure-service generalization of this invariant is [[entry]] — the same `(debit, credit)` balance lifted OFF the `journal-entries` collection into a closure operator over the WHOLE mesh: time, leverage, pay, skills, verification all post as balanced entries, `reverse` is inherent (`reverse∘reverse = id`), and N plugin mounts consolidate to zero (intercompany nets out, ASC 810-10-45). The collection is one materialization; [[entry]] is the law itself — "all accounted for in all directions ⇒ the wiring is complete".
 
@@ -109,9 +109,9 @@ A document like `invoices` composes ~40 Rails concerns; in Payload they fold int
 - Integer-cents-only without `currency` — carry currency everywhere (multi-currency ledgers).
 
 ## Traditions (prefix removed)
-Double-entry is the moral ledger of every tradition — deeds posted as take (debit/sin) and [[give]] (credit/merit), and the books must [[balance]] at the [[close]]: **karma** — "whatsoever a man soweth, that shall he also reap" (Galatians 6:7); the scales, *al-mizan* — "We place the scales of justice for the Day of Resurrection… the weight of a mustard seed, We will bring it" (Quran 21:47); the weighing of the heart against Ma'at's feather (Egyptian *Book of the Dead*); the books of deeds opened at judgment ([[akashic]]); the unpayable debt cleared by [[grace]] (the jubilee, Leviticus 25). erpax IS *karma double-entry* (see [[angel]]): entropy itself booked as debit/credit and conserved by content-[[uuid]], audited sacred/[[profane]].
+Double-entry is the moral ledger of every tradition — deeds posted as take (debit/sin) and give (credit/merit), and the books must [[balance]] at the close: **karma** — "whatsoever a man soweth, that shall he also reap" (Galatians 6:7); the scales, *al-mizan* — "We place the scales of justice for the Day of Resurrection… the weight of a mustard seed, We will bring it" (Quran 21:47); the weighing of the heart against Ma'at's feather (Egyptian *Book of the Dead*); the books of deeds opened at judgment ([[akashic]]); the unpayable debt cleared by grace (the jubilee, Leviticus 25). erpax IS *karma double-entry* (see angel): entropy itself booked as debit/credit and conserved by content-[[uuid]], audited sacred/profane.
 
-Composes: [[budget/plannings]] · [[financial/statements]] · [[government/grants]] · [[held/for/sale/classifications]] · [[insurance/contracts]] · [[justice]] · [[mineral/resource/assets]] · [[regulatory/deferral/accounts]] · [[bank]] · [[disclosure]] · [[elimination]].
+Composes: [[budget/plannings]] · [[financial/statements]] · [[government/grants]] · [[held/for/sale/classifications]] · [[insurance/contracts]] · justice · [[mineral/resource/assets]] · [[regulatory/deferral/accounts]] · [[bank]] · disclosure · elimination.
 
 **Law — [[law]]: every posting is a debit⊕credit⊕balance trinity and no entry writes unless Σdebit = Σcredit, so the whole content-addressed ledger nets to zero in all directions.**
 

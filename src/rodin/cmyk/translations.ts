@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cmyk",
-    "uuid": "914b78e3-8731-8372-8be5-56437fb0f04a",
+    "uuid": "689c9c28-fee5-8e07-8793-e3e961d2a645",
     "words": [
       "cmyk"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about color/signal from sequence position in erpax — the four print primaries ARE the first four rodin digits {0=K, 3=C, 6=M, 9=Y}; color comes from the slot, the C↔M polarity gap is closed by Y at 9 and anchored by K at 0. The signal model under links/tags/admin hue. Nested under rodin.",
-    "uuid": "2c8185d2-1781-87ac-8f60-70bbedf01cdb",
+    "uuid": "37aac5bf-16c7-8ecd-b298-d4e2dc7e573e",
     "words": [
       "use",
       "when",

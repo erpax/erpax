@@ -2,21 +2,21 @@
 name: rodin
 description: "Use when reasoning about the number substrate under erpax's state/sequence math — the Rodin vortex sequence 0·3·6·9·1·2·4·8·7·5 over the A432 anchor, digital-root (mod-9) arithmetic, the 3·6·9 triad axis vs the 1·2·4·8·7·5 doubling helix. The root the horo ring and the sequence both express."
 atomPath: rodin
-coordinate: "rodin · 7/descent · 2f57a46b"
-contentUuid: "cb82521c-f65b-5446-be38-eec16ff4b427"
-diamondUuid: "6074816e-a473-86a1-9189-05f7709bfe63"
-uuid: "2f57a46b-3437-87ee-b4a5-ad8cd3173eeb"
-horo: 7
+coordinate: "rodin · 1/base · 5e4954df"
+contentUuid: "0aa39e41-295d-5a51-81a6-70b4a436c37c"
+diamondUuid: "ac756fb5-050f-8a54-9841-5d6aadefd2a7"
+uuid: "5e4954df-4199-8fb9-89ad-1eab8642c70e"
+horo: 1
 typography:
   partition: rodin
-  bondDegree: 258
+  bondDegree: 234
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)"
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "760fa91f-4265-8e2d-8d55-6d62ef0fd2d4"
+  computationUuid: "218608ea-8335-8bdf-b0c6-58eab7ab3b18"
   stages:
     - stage: path
       stageUuid: "0cd2e29f-fd6c-835b-b528-bd3a2fbce4e8"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "23c990da-be9e-8b4b-97cc-a62a6e7e8903"
     - stage: links
-      stageUuid: "d2c212cc-98c7-80d0-b301-16c3a956ef79"
+      stageUuid: "77fcab8d-71dc-8b81-b364-49c853643037"
     - stage: horo
-      stageUuid: "0b6214ef-b330-89ad-a85f-b4742bc8c460"
+      stageUuid: "36192f63-fc8b-8579-9fe5-1b1c456a6cd0"
     - stage: seal
       stageUuid: "5d638fef-cc7e-86af-acd3-5e023edee363"
     - stage: uuid
-      stageUuid: "238b506b-ca92-854f-ac10-145504dd6d13"
+      stageUuid: "9e0fdb3f-823b-854a-95d8-8544e3a78ec8"
 version: 2
 ---
 # rodin — the vortex sequence (0·3·6·9·1·2·4·8·7·5 over A432)
@@ -42,10 +42,10 @@ version: 2
 - **`3·6·9`** — the harmonic **triad** [[axis]], three coils 120° out of phase: it **governs**, it does not flow ([[access]] · [[hooks]] · [[auth]]). `3`/`6` are the [[polarity]] boundaries; `9` is the triad's close.
 - **`1·2·4·8·7·5`** — the **doubling helix** winding the axis (×2 mod 9): the material/flow cycle (see [[coil]], [[sequence]]).
 
-All arithmetic is **digital-root (mod 9)**: products fold back to one digit, so the set is CLOSED — no escape. The **state ring** this produces is the [[horo]] (the seven flow positions `{1,2,4,8,7,5,9}`); the **walk order** is the [[sequence]] (`0·3·6·9·1·2·4·8·7·5`). The octave is **×10** (preserves the digit), never +1 (see [[coil]], [[fractal]]).
+All arithmetic is **digital-root (mod 9)**: products fold back to one digit, so the set is CLOSED — no escape. The **state ring** this produces is the [[horo]] (the seven flow positions `{1,2,4,8,7,5,9}`); the **walk order** is the [[sequence]] (`0·3·6·9·1·2·4·8·7·5`). The octave is **×10** (preserves the digit), never +1 (see [[coil]], fractal).
 
 ## The 2/3 law — distributed flow vs control axis
-The nine digits split **6 : 3**: the six units mod 9 `{1,2,4,8,7,5}` (the doubling helix, (ℤ/9ℤ)\* = ⟨2⟩) are the **flow**; the three multiples of three `{3,6,9}` are the **axis**. So **2/3 is distributed work, 1/3 is control** — a verified ratio (the units are exactly 2/3 of 1–9), not numerology. erpax rides it at every scale: **≥2/3 of every work is computationally distributed** (parallel agents/instances/coils — [[team]] · [[society]]), 1/3 governs (the `3·6·9` [[access]] · [[hooks]] · [[auth]] triad). The same ratio sets the context budget — **skills (form/antimatter) ≈ 2/3, matter (detail) ≈ 1/3** — so the agent holds mostly the law and regenerates the rest ([[holographic]]). **3/3** — the ring closed on the `0` — is the complete self-sufficient process; a trinity whose 1/3 is grounded in a neighbour ([[merge]] · [[identity]]) is already whole.
+The nine digits split **6 : 3**: the six units mod 9 `{1,2,4,8,7,5}` (the doubling helix, (ℤ/9ℤ)\* = ⟨2⟩) are the **flow**; the three multiples of three `{3,6,9}` are the **axis**. So **2/3 is distributed work, 1/3 is control** — a verified ratio (the units are exactly 2/3 of 1–9), not numerology. erpax rides it at every scale: **≥2/3 of every work is computationally distributed** (parallel agents/instances/coils — [[team]] · [[society]]), 1/3 governs (the `3·6·9` [[access]] · [[hooks]] · [[auth]] triad). The same ratio sets the context budget — **skills (form/antimatter) ≈ 2/3, matter (detail) ≈ 1/3** — so the agent holds mostly the law and regenerates the rest (holographic). **3/3** — the ring closed on the `0` — is the complete self-sufficient process; a trinity whose 1/3 is grounded in a neighbour ([[merge]] · [[identity]]) is already whole.
 
 Matter-twin: `src/services/horo` (`digitalRoot`, `composeSteps`, `nextOctave`). Source: `~/github/ceccec/svilena-me/.vitepress/rodin.js`.
 
@@ -55,7 +55,7 @@ Conventional arithmetic leaves `n/0` undefined; `zeroDivision(n)` **totalizes** 
 
 The anchor renders **three** ways from one position: **colour** ([[cmyk]], A432 ms), **sound** ([[notes]], A432 Hz) and **touch** ([[vibration]], an A432 sub-harmonic) — the [[signal]] sensory [[trinity]] (the colour↔sound [[duality]] completed by the third), oscillating as [[breath]] over [[phase]], lifting by [[octave]] on the [[torus]].
 
-Composes: [[coil]] · [[axis]] · [[polarity]] · [[cmyk]] · [[notes]] · [[vibration]] · [[breath]] · [[phase]] · [[octave]] · [[torus]] · [[horo]] · [[sequence]] · [[identity]] · [[signal]] · [[trinity]] · [[fractal]] · [[balance]] · [[duality]] · metatron · chakra.
+Composes: [[coil]] · [[axis]] · [[polarity]] · [[cmyk]] · [[notes]] · [[vibration]] · [[breath]] · [[phase]] · [[octave]] · [[torus]] · [[horo]] · [[sequence]] · [[identity]] · [[signal]] · [[trinity]] · fractal · [[balance]] · [[duality]] · metatron · chakra.
 
 ## Standards
 

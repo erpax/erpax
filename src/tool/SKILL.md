@@ -2,41 +2,41 @@
 name: tool
 description: Use when reasoning about tool — A sub property of instrument. An object used (but not consumed) when performing instructions or a direction.
 atomPath: tool
-coordinate: "tool · 4/weave · 7a72b285"
-contentUuid: "3a8af9f9-0764-58e5-a538-fd167a983acf"
-diamondUuid: "04c8e696-8193-8b8c-857d-ed2f11492ae1"
-uuid: "7a72b285-e116-8dd1-af03-0f292259ecc5"
-horo: 4
+coordinate: "tool · 5/round · 3e8cd278"
+contentUuid: "83252fb2-e92c-5023-ae32-3dab0226cbba"
+diamondUuid: "f60e09b0-b148-831b-babd-5d7f40b8c6c4"
+uuid: "3e8cd278-f92c-846c-8980-6dc83e5afe66"
+horo: 5
 typography:
   partition: tool
-  bondDegree: 19
+  bondDegree: 15
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d44c748a-8b4c-86b3-8509-9c69d99ce23f"
+  computationUuid: "8bae30aa-f4e8-8662-b171-03328c50a5a9"
   stages:
     - stage: path
       stageUuid: "068534dd-d460-8a41-87b5-c9d7912e9d50"
     - stage: trinity
       stageUuid: "baed3662-8f38-8a3b-8939-49edf324a57a"
     - stage: boundary
-      stageUuid: "126417f6-26c9-8e27-b1c8-212dd9ef1dc1"
+      stageUuid: "c75182c4-4701-80aa-b38c-f83b7adcd33d"
     - stage: links
-      stageUuid: "e1d75789-af28-894b-837f-eb0466f45c5b"
+      stageUuid: "b4c75d8c-b4a4-8e98-998c-77b51eb706b9"
     - stage: horo
-      stageUuid: "55373363-1362-87af-9f06-ab17b28ae5d6"
+      stageUuid: "daa251db-6430-83e8-85e8-e5634e0aacc5"
     - stage: seal
       stageUuid: "730ffc4b-6deb-8485-a8d7-f70af58f4256"
     - stage: uuid
-      stageUuid: "86b240a0-c64a-8437-b5e2-da1c250c19ae"
+      stageUuid: "36851e8c-2b90-8c40-8fbc-89cf0c70b4a8"
 version: 2
 ---
 # tool
 
 A sub property of instrument. An object used (but not consumed) when performing instructions or a direction.
 
-Entangled with — [[how]]
+Entangled with — how
 
 Attested in schema.org — HowToTool · tool
 

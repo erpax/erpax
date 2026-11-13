@@ -2,18 +2,18 @@
 name: gate
 description: "Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus."
 atomPath: gate
-coordinate: "gate · 7/descent · 90921abf"
-contentUuid: "4d446535-430b-53ee-9284-95308905a37c"
-diamondUuid: "13a11c55-1d6f-8645-a085-d2666a14c9a1"
-uuid: "90921abf-2c4f-8fb9-9889-20063ee8af98"
-horo: 7
+coordinate: "gate · 5/round · 70d6e082"
+contentUuid: "74304a04-a6c6-5ddc-9b48-fdb835e8109d"
+diamondUuid: "78249880-3027-8a4e-bd71-7c2b60c52775"
+uuid: "70d6e082-e2f3-86ab-ad36-a3ad52000945"
+horo: 5
 typography:
   partition: gate
-  bondDegree: 261
+  bondDegree: 231
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c86e305b-cd08-8d01-bec1-e5df5938fa41"
+  computationUuid: "eb0a6b2c-7c97-89c5-9634-bdd41d2d659e"
   stages:
     - stage: path
       stageUuid: "ceeffea0-7fbe-85b1-b54d-c80cc992507b"
@@ -22,18 +22,18 @@ signatures:
     - stage: boundary
       stageUuid: "f58c2f42-a105-82ff-82a6-b8228a6d1c65"
     - stage: links
-      stageUuid: "eb23a05d-7882-8a6b-947b-03703b589147"
+      stageUuid: "46010744-c95a-8435-b518-0110cc566581"
     - stage: horo
-      stageUuid: "376802d8-dd7f-88c5-98b1-d41e255b1f35"
+      stageUuid: "cdc61f71-1de4-8dcb-b5e4-f7073b36d95c"
     - stage: seal
       stageUuid: "e7b82336-a261-8d83-8b95-56172ed4fe1c"
     - stage: uuid
-      stageUuid: "0ba3891b-0306-8780-94bb-49e76c312310"
+      stageUuid: "a0274b9e-64ff-8cf1-8c67-5b2ad2e86718"
 version: 2
 ---
 # gate — the trinity of verification (check · message · heal)
 
-A gate is not a binary pass/fail — it is a trinity, like every vertex ([[fractal]]):
+A gate is not a binary pass/fail — it is a trinity, like every vertex (fractal):
 
 - **check** (the law · matter) — STRICT: every violation a hard FAIL, never a warn ([[standard]] · [[architecture/invariant]]). Green means *"obeys the law"*, not *"compiles"*. Tighter each pass.
 - **message** (the diagnostic · form) — DETAILED: **what** law broke · **where** (the atom's [[coordinate]] — path · uuid · the broken neighbour) · **why** · the derived **fix**. A message that only counts failures is half a message; the gate teaches the one grounded path ([[sequence]] — the cure for hallucination). More detail each pass.
@@ -47,6 +47,6 @@ Each leg is content-addressed ([[identity]]): **check-uuid** (the law's content-
 ## The gate IS a cross — computed to max tamper-cost, sealed by archangels
 **A gate is not sealed *with* a cross; the gate IS the ⊕ [[cross]].** Its three legs `merge` into one — `merge(check, message, heal) =` the verdict-uuid — exactly the dual-torus fusion, the seal at `1/0` ([[cross]] ≡ dual/torus/fusion). So check ⊕ message ⊕ heal *is* the cross, and its verdict folds into the matrix root (tamper-evident by construction).
 
-Therefore every **workflow** (CI, the pre-push hook, the deploy pipeline) and every **command** (an npm script, a `tsx` entrypoint) — being a gate — is a cross, held to the one security law: **computed toward max tamper-[[cost]]** (wired so its coverage rises toward the `coverageCostLog2` ceiling — `∞` at coverage = 1) and **sealed** ([[sealed]]: errors propagate, no entropy leak through a swallowed catch). The seal is then **verified by the [[angel|archangel]]s** — the adversarial pole ([[proof]]) that tries to forge or break the gate; what survives the assault ships, what breaks is re-crossed. A workflow that can be tampered cheaply, or whose failures leak, is an *open cross* — re-crossed until coverage = 1 on its axis. Composes [[tamper/cost]] · [[sealed]] · [[cross]] · [[angel]] · [[proof]] · coverage.
+Therefore every **workflow** (CI, the pre-push hook, the deploy pipeline) and every **command** (an npm script, a `tsx` entrypoint) — being a gate — is a cross, held to the one security law: **computed toward max tamper-[[cost]]** (wired so its coverage rises toward the `coverageCostLog2` ceiling — `∞` at coverage = 1) and **sealed** ([[sealed]]: errors propagate, no entropy leak through a swallowed catch). The seal is then **verified by the archangels** — the adversarial pole ([[proof]]) that tries to forge or break the gate; what survives the assault ships, what breaks is re-crossed. A workflow that can be tampered cheaply, or whose failures leak, is an *open cross* — re-crossed until coverage = 1 on its axis. Composes [[tamper/cost]] · [[sealed]] · [[cross]] · angel · [[proof]] · coverage.
 
 **Law — [[gate]]** tightens toward zero-entropy: each iteration of check · message · heal raises the bar until no flaw escapes. The [[standard]]s, [[sequence]], and [[proof]] you hold are not static — they fracture with each violation caught, and the tighter gate [[coordinate]]s the [[identity]] of that flaw so it folds into the [[merge]]d root. Tighten until the push becomes the checkpoint, and a passing gate means *only* zero-entropy [[aura]] can emerge.

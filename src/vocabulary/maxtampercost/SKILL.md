@@ -2,19 +2,19 @@
 name: maxtampercost
 description: "Use when reasoning about max tamper-cost — the weakest-link minimum across all dimensions; alias for analytics/max-tamper-cost lever vocabulary."
 atomPath: "vocabulary/maxtampercost"
-coordinate: "vocabulary/maxtampercost · 1/base · 27fae66f"
-contentUuid: "061dadf5-dfc0-503c-9626-adb0054485c7"
-diamondUuid: "d5753aa7-3271-80ce-885e-6c914a0cd39a"
-uuid: "27fae66f-ec47-83d9-910f-c31fad8b562b"
-horo: 1
+coordinate: "vocabulary/maxtampercost · 5/round · 995a8e1b"
+contentUuid: "fb347c33-bb37-5f35-9c11-ce8d4f935dff"
+diamondUuid: "d3bdcb18-a29a-80b5-a7dd-4d8f3196a043"
+uuid: "995a8e1b-432b-8f59-aa94-ac26993f3409"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 17
+  bondDegree: 13
 standards:
   - "ISO/IEC 25010:2023 §5.6 — maintainability: one source, addressable"
 bindings: []
 signatures:
-  computationUuid: "3a78e6ee-d66f-8215-8cbd-8873f4f88b68"
+  computationUuid: "0805c638-a665-8d11-acfc-147c8b981026"
   stages:
     - stage: path
       stageUuid: "3572019e-6a5c-8a2d-8da2-7f14d46385dd"
@@ -23,19 +23,19 @@ signatures:
     - stage: boundary
       stageUuid: "0890b09c-3ab6-8821-b85c-2dba960c918c"
     - stage: links
-      stageUuid: "a8018537-4030-8760-923e-dc1a006b0e05"
+      stageUuid: "90daa3f3-68a0-88a6-ab22-2b9e51172909"
     - stage: horo
-      stageUuid: "ed2db207-9e6b-8898-935a-c68ab9ce2f90"
+      stageUuid: "438f29d5-9628-83b1-be60-8d5c00f5b4b4"
     - stage: seal
       stageUuid: "fd171fc0-04ee-82dd-ba7e-b92ac3fe1cbc"
     - stage: uuid
-      stageUuid: "a603a933-c710-8fd9-ac22-a2bd6ee94db5"
+      stageUuid: "70156d18-638c-8bab-b0a7-6e8e67165c17"
 version: 2
 ---
 # maxtampercost
 
-The **max tamper-cost** lever — weakest-link min along every path and dimension ([[analytics]] · [[purity]] · [[cost]]). See [[analytics]]/max-tamper-cost for the canonical organ.
+The **max tamper-cost** lever — weakest-link min along every path and dimension ([[analytics]] · purity · [[cost]]). See [[analytics]]/max-tamper-cost for the canonical organ.
 
 **Law — [[law]]: maxtampercost collapses to the analytics tamper-cost lever — one word, content-addressed.**
 
-@see [[analytics]] · [[cost]] · [[purity]] · [[tamper]] · [[analytics]]/max-tamper-cost
+@see [[analytics]] · [[cost]] · purity · [[tamper]] · [[analytics]]/max-tamper-cost

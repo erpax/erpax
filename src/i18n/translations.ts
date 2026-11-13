@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about i18n — A message bundle per locale is the easy half. The half that rots is the **tag**: , , , are four spellings a human will type and one thing BCP-47 means.",
-    "uuid": "1a30cfc5-e2ca-8c3b-b754-a3431ec5ff4b",
+    "uuid": "e9c9753a-5f4f-87fc-8c29-77b655146247",
     "words": [
       "use",
       "when",

@@ -2,14 +2,14 @@
 name: auto
 description: "Use when reasoning about auto as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: auto
-coordinate: "auto · 4/weave · fceea3da"
-contentUuid: "d51c4dcd-605a-5ee4-9fef-9ace52b74e3e"
-diamondUuid: "f67185eb-ea8f-8cbb-befa-aba85134d48f"
-uuid: "fceea3da-f657-8534-8476-372629c2a6ef"
-horo: 4
+coordinate: "auto · 7/descent · ef47607b"
+contentUuid: "ababe311-dba4-5c30-bd7c-1185ec7c6056"
+diamondUuid: "8994ba52-e0ad-8548-85c4-05039dfe2fab"
+uuid: "ef47607b-6cbb-8d5a-adec-db5b20eb4479"
+horo: 7
 typography:
   partition: auto
-  bondDegree: 55
+  bondDegree: 39
 standards:
   - "EU-Intrastat-Reg-2019/2152"
   - "ISO-8601-1"
@@ -17,29 +17,29 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c3290342-28da-8970-aac0-c39f3a3e8939"
+  computationUuid: "61b58d57-5a04-8944-94aa-eecba3c4face"
   stages:
     - stage: path
       stageUuid: "a13d9345-25ea-8563-9b86-f77001c4f408"
     - stage: trinity
       stageUuid: "01d21dd3-5771-88e8-b475-42fc0601f29b"
     - stage: boundary
-      stageUuid: "677846f2-9b44-80c6-8085-03c0a6661c69"
+      stageUuid: "72777f41-71e9-8690-8e91-2977c542e781"
     - stage: links
-      stageUuid: "ae680d59-3180-8998-a371-33758f56dfd4"
+      stageUuid: "162d3813-59dc-8e99-9d16-55655f37ac1c"
     - stage: horo
-      stageUuid: "0e45c271-bc7f-8822-8e50-a2cd470a0cb5"
+      stageUuid: "6f977b24-6cff-844e-bf1c-cd93a4d8ee0b"
     - stage: seal
       stageUuid: "db3fa53e-2d37-8741-bf96-cf59c2c69cdf"
     - stage: uuid
-      stageUuid: "8a67e20d-7e6f-84e7-a77c-4921ac2e9b98"
+      stageUuid: "838cf3a3-f59a-8c49-9623-1480977fbf3a"
 version: 2
 ---
 # auto
 
 A schema.org component word, collided out of schema.org compounds — fused from AutoBodyShop · AutoDealer · AutoPartsStore · AutoRental · AutoRepair · AutoWash ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[body]] · [[shop]] · [[dealer]] · [[parts]] · [[store]] · [[rental]] · [[repair]] · wash
+Entangled with — [[body]] · [[shop]] · dealer · parts · [[store]] · rental · repair · wash
 
 Attested in schema.org — AutoBodyShop · AutoDealer · AutoPartsStore · AutoRental · AutoRepair · AutoWash
 

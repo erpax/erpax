@@ -2,14 +2,14 @@
 name: workflow
 description: "Use when spawning, advancing, or escalating a workflow instance bound to a document — evaluating trigger conditions against a definition, routing step decisions (approve/reject/delegate/return), running service-task handlers, or firing SLA escalation on overdue steps; SOX-compliant approval chain execution. The BPMN-2.0 workflow orchestration service."
 atomPath: workflow
-coordinate: "workflow · 8/crest · 98f6ee15"
-contentUuid: "de28671d-295f-5544-9e9c-b6cc24a09c8e"
-diamondUuid: "f2ef969b-9214-8b0e-83b8-786b1ec1e04d"
-uuid: "98f6ee15-0229-83c3-9d54-46ab989ffe18"
-horo: 8
+coordinate: "workflow · 1/base · dba237e9"
+contentUuid: "bf94bc7e-e51c-5052-938f-01b65a0fb2da"
+diamondUuid: "7dc8eee2-4f0d-8905-b210-07ada8da967c"
+uuid: "dba237e9-82bd-88f4-a21d-30fbc17a78e9"
+horo: 1
 typography:
   partition: workflow
-  bondDegree: 88
+  bondDegree: 55
 standards:
   - "ISO/IEC 19510:2013 BPMN-2.0"
   - "ISO/IEC 19510:2013 BPMN-2.0`"
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "2fd170aa-17a6-8f9b-95c0-5285caf9a5d7"
+  computationUuid: "901e6aac-3cfc-81bd-8128-9caf06507b68"
   stages:
     - stage: path
       stageUuid: "94f4098e-fbfa-80dd-a103-8e647ab5c24d"
@@ -27,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "2ec5b64d-89f5-8472-9319-6f058c1092e4"
     - stage: links
-      stageUuid: "152f29ae-5e41-843d-8cb8-aa70e4c60859"
+      stageUuid: "36fb4c2d-a47d-8305-8289-b716f80c0031"
     - stage: horo
-      stageUuid: "ed6539c2-b0bd-8d74-b037-c11979cc9c85"
+      stageUuid: "df9d981a-adb5-8959-92e5-fb83188aa380"
     - stage: seal
       stageUuid: "46c9e25b-b9a6-8512-a7e7-0c913d1cd3a6"
     - stage: uuid
-      stageUuid: "726a55eb-195e-807b-81f2-0718ad1caddc"
+      stageUuid: "92a93015-8cd4-8dd5-af3f-c2f9d445cc74"
 version: 2
 ---
 # process — the running approval chain, BPMN execution made live
@@ -48,9 +48,9 @@ This service is the *orchestration twin* of the pure gate: it decides **when and
 
 ## Sequence position — 8 (crest)
 
-On the ring 0·3·6·9·1·2·4·8·7·5 this is **8 (crest)**: the doubling helix carried to its peak, where the connected states woven at 4 are driven forward to a terminal outcome — the process reaches its decision. Its dual face is **7 (descent)** — escalation and timeout, the fall back into the loop when a crest is not reached in time. Spawning is the [[begin]] of the run, the final decision its [[end]]; each step's open/closed gate is an [[open]]/[[close]] boundary on the bounded decision set ([[horo]] ring). The instance keys on a content-`uuid` so two runners of one definition reconcile by [[merge]] ([[identity]]); routing decisions are guarded by row-level [[access]]; the spawn/advance seams are collection [[hooks]] firing an [[event]] envelope.
+On the ring 0·3·6·9·1·2·4·8·7·5 this is **8 (crest)**: the doubling helix carried to its peak, where the connected states woven at 4 are driven forward to a terminal outcome — the process reaches its decision. Its dual face is **7 (descent)** — escalation and timeout, the fall back into the loop when a crest is not reached in time. Spawning is the begin of the run, the final decision its end; each step's open/closed gate is an open/close boundary on the bounded decision set ([[horo]] ring). The instance keys on a content-`uuid` so two runners of one definition reconcile by [[merge]] ([[identity]]); routing decisions are guarded by row-level [[access]]; the spawn/advance seams are collection [[hooks]] firing an [[event]] envelope.
 
-Composes: [[workflow/engine]] (the legality gate it drives) · [[flow]] (value/decision moved through steps) · [[hooks]] (spawn/advance seam) · [[event]] (emitted decision envelope) · [[access]] (who may decide a step) · [[standard]] (BPMN 2.0) · [[horo]] (bounded decision set) · [[begin]]/[[end]] (spawn/terminate) · [[merge]] (cross-instance reconciliation) · [[identity]] (instance uuid key) · [[workflow/definitions]] · [[workflow/definitions/workflow/instances]] · [[approved]] · [[concatenate]] (the generic autonomous concatenator over the atom corpus — command · [[question]] · [[answer]] steps, no human; the self-build dual of this human-approval BPMN service).
+Composes: [[workflow/engine]] (the legality gate it drives) · flow (value/decision moved through steps) · [[hooks]] (spawn/advance seam) · [[event]] (emitted decision envelope) · [[access]] (who may decide a step) · [[standard]] (BPMN 2.0) · [[horo]] (bounded decision set) · begin/end (spawn/terminate) · [[merge]] (cross-instance reconciliation) · [[identity]] (instance uuid key) · [[workflow/definitions]] · [[workflow/definitions/workflow/instances]] · approved · [[concatenate]] (the generic autonomous concatenator over the atom corpus — command · question · answer steps, no human; the self-build dual of this human-approval BPMN service).
 
 **Law — [[law]]: a process is the execution of an inert definition over people and time — it decides WHEN and TO WHOM a transition is offered (spawn on trigger, advance on each step decision, escalate on SLA lapse, delegate service-tasks), appending every decision IMMUTABLY to stepHistory; it is the orchestration twin of [[workflow/engine]], which decides WHETHER an offered transition is legal.**
 

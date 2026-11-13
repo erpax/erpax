@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about scene — render already projects one content-uuid to **colour · sound · vibration**.",
-    "uuid": "d0344016-c6ec-8eb8-9fef-304b6b865373",
+    "uuid": "30e49d36-70f4-89d6-9f40-878a597ea6cc",
     "words": [
       "use",
       "when",

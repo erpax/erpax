@@ -2,18 +2,18 @@
 name: deploy
 description: "Use when deploying a Payload app to production or fixing build/migration/env issues — required secrets, running migrations vs dev push, building without a DB connection, file storage, or Cloudflare/Next/Docker specifics."
 atomPath: deploy
-coordinate: "deploy · 7/descent · db353580"
-contentUuid: "1e077b22-fcbe-5f9c-a2d6-36eef1886c40"
-diamondUuid: "e2a9d3f4-68a6-8526-8a5b-fbb7dbc5199b"
-uuid: "db353580-3b9f-8b35-adc4-73ed9eb48975"
-horo: 7
+coordinate: "deploy · 1/base · f7e64180"
+contentUuid: "545dc2a9-47ad-5be2-947f-0e3c46f67153"
+diamondUuid: "2cf05f19-7cb2-88f7-8320-5e47deeab25c"
+uuid: "f7e64180-defd-8e97-b805-619fe6a791ef"
+horo: 1
 typography:
   partition: deploy
-  bondDegree: 91
+  bondDegree: 68
 standards: []
 bindings: []
 signatures:
-  computationUuid: "452ea3ed-35d4-824f-bde4-06cf9af423d6"
+  computationUuid: "b97a0e73-4c39-8258-aa75-628733066109"
   stages:
     - stage: path
       stageUuid: "b2dec97d-58be-8973-929d-1384ec4ddcf8"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "a6be035f-89e5-84b6-abe3-d9b2b5510ee9"
     - stage: links
-      stageUuid: "23c3e6c5-8187-8432-9492-2ca15f98c724"
+      stageUuid: "45715480-50a3-8052-8a35-e2214dc9310c"
     - stage: horo
-      stageUuid: "7543407a-4ef5-899b-829e-5ee579a97b65"
+      stageUuid: "f4341174-6cfe-81cc-87f3-2d63bca5cf98"
     - stage: seal
       stageUuid: "846600a4-d368-8e6e-bb3d-2e82c706994c"
     - stage: uuid
-      stageUuid: "ce494c9d-3522-8068-9e34-710c17945a85"
+      stageUuid: "e04dc83c-1b8e-8625-bc3c-a66c2cc0f8e4"
 version: 2
 ---
 # deploy — Payload production deployment
@@ -55,7 +55,7 @@ Never use ephemeral filesystems. Use a cloud storage adapter (S3, R2, Azure, GCS
 - `next start` in prod, never `next dev`.
 - `output: 'standalone'` for Docker; `NODE_ENV=production`; serve with `HOSTNAME=0.0.0.0 node server.js`.
 
-Composes: [[config]] · [[database]] · upload · [[bindings]] · [[harden]].
+Composes: [[config]] · database · upload · [[bindings]] · harden.
 
 ## Harmonized — the gate-green order is the consonant one
 

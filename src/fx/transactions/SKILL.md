@@ -2,14 +2,14 @@
 name: transactions
 description: "Use when logging or auditing IAS-21 FX events — spot conversions, period-end monetary-item revaluations, hedge settlements, or consolidation translation adjustments; tracing exchangeRate to the currency-rates master; booking the resulting FX gain/loss journal entry. The IAS-21 FX conversion and revaluation event register."
 atomPath: "fx/transactions"
-coordinate: "fx/transactions · 7/descent · 7b7819fb"
-contentUuid: "a0b52a68-8dec-50ee-b429-0813325a15e7"
-diamondUuid: "4351e1ad-ec70-87c4-bf4f-cad2862152b9"
-uuid: "7b7819fb-b802-88c4-add1-cebe1a24d76c"
+coordinate: "fx/transactions · 7/descent · 2f0355e5"
+contentUuid: "1b8d8a33-b915-5445-9739-3360239d1a79"
+diamondUuid: "dcc7977f-e9bb-8537-9247-2c2a6e7a8682"
+uuid: "2f0355e5-fd05-84d4-b219-457ace41b3fc"
 horo: 7
 typography:
   partition: fx
-  bondDegree: 54
+  bondDegree: 46
 standards:
   - "IFRS IAS-21 §21 §23 §28 §29 effects-of-changes-in-foreign-exchange-rates"
   - "IFRS IAS-21 §39 foreign-currency-translation"
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c77e2699-74ad-8c7c-b1cf-e1bda3d9afa0"
+  computationUuid: "c4705987-748c-8a08-92d2-138b5930205f"
   stages:
     - stage: path
       stageUuid: "f4e0d4d1-e66c-8343-bb9c-44d5c6c8fd88"
@@ -34,20 +34,20 @@ signatures:
     - stage: boundary
       stageUuid: "4b813ccc-4ebd-8ab6-884a-a4db16157557"
     - stage: links
-      stageUuid: "de806bbc-35a1-8166-8d14-29aa9b2c1742"
+      stageUuid: "cda24410-7756-836d-8f2f-d1667436e432"
     - stage: horo
-      stageUuid: "8fb0e3bb-746f-8ef7-8db5-9ad094d0c902"
+      stageUuid: "b9e3f8bb-2e02-8d2c-9b3d-ff5f0ce3992a"
     - stage: seal
       stageUuid: "64793975-f9ff-82f3-8d9b-6ac2d532036e"
     - stage: uuid
-      stageUuid: "7bc1cd2f-252f-8604-9cd1-e33f4e5ec903"
+      stageUuid: "08699812-76d0-8aef-b712-0bfffe562c9b"
 version: 2
 ---
 # fx-transactions
 
 FX Transactions — IAS-21 §28-29 monetary-item re-translation entries.
 
-A [[trinity]] node — schema, `seed.ts`, `index.test.ts` co-located, one folder, [[fractal]]-addressed; the panel renders `index.ts`, so the schema is not restated here.
+A [[trinity]] node — schema, `seed.ts`, `index.test.ts` co-located, one folder, fractal-addressed; the panel renders `index.ts`, so the schema is not restated here.
 
 Each row is one durable FX conversion / revaluation event (`transactionKind`: spot · period-end revaluation · hedge settlement · consolidation translation) — the audit evidence for the FX gain/loss P&L line. Distinct from [[currency/rates]], the rate-table master: this records the events, that holds the rates a row's `exchangeRate` is sourced from.
 

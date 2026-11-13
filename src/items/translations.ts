@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "items",
-    "uuid": "4b76b806-d01e-8c7f-90d7-138284f4cee4",
+    "uuid": "e7df27bd-3b6b-8c34-bacb-02f4a36f3426",
     "words": [
       "items"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing the product/service catalogue — code, SKU, GTIN barcode, pricing, VAT rate, inventory quantity, GL posting; EN-16931 BG-31 item-information, UNSPSC classification. The items collection.",
-    "uuid": "5a0a5882-f61e-8f3b-8740-75eac54d4695",
+    "uuid": "d9bdacb3-1ba6-8a15-83bb-c1abaf9fc33c",
     "words": [
       "use",
       "when",

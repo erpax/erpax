@@ -3,17 +3,17 @@ name: leads
 description: "Use when reasoning about leads — outward already holds the machinery: an answer is content-addressed, a remembers the last address, and returns **fresh · unchanged · moved · unreachable**."
 atomPath: "outward/leads"
 coordinate: "outward/leads · 1/base · 5189a648"
-contentUuid: "d3a7e83b-e3bc-54cf-b609-e3823ceef4c6"
-diamondUuid: "7c7854cc-2a05-8663-a64f-4122cf05314c"
+contentUuid: "1e2b3add-65b8-5018-8992-8e505af039b2"
+diamondUuid: "d66ba55d-b534-83aa-ab76-0d40b4ecd9af"
 uuid: "5189a648-5844-87e2-8123-e19e1b5a9142"
 horo: 1
 typography:
   partition: outward
-  bondDegree: 40
+  bondDegree: 28
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cfe613ae-d90f-899e-bb25-c53eeb723fce"
+  computationUuid: "0bebcbf4-5a7c-82a8-81f4-86289b68d75d"
   stages:
     - stage: path
       stageUuid: "b864253c-03bc-8cb3-8fe3-75f4dadcd26e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "235ac3a7-4c1b-8730-95b7-8934d4c21c47"
     - stage: horo
-      stageUuid: "fd8ae89b-e7c2-801b-9c6c-2132111f7a0b"
+      stageUuid: "efc6370a-352d-8d41-84a4-1b7f8dff53e6"
     - stage: seal
       stageUuid: "62b87651-1782-8128-9316-0ed4c329919f"
     - stage: uuid
-      stageUuid: "ae6e6a4b-ec6d-83e1-b668-8462bc24d79d"
+      stageUuid: "dc6529b3-ff10-847c-9286-0aa79ebb615b"
 version: 2
 ---
 # outward/leads — every API is a lead source, and the boundary had two shapes

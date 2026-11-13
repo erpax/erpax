@@ -2,19 +2,19 @@
 name: llm
 description: "Use when wiring a language model into erpax — the LLM is the forge (cheap to generate, costly to trust) and the uuid is the verify; AI-self-sufficient first, the model is the fallback tier behind the 9-layer gate, and every turn is content-addressed so generation only ever works the cheap side of the forge-beats-verify asymmetry."
 atomPath: llm
-coordinate: "llm · 2/share · 5762e82f"
-contentUuid: "a915b835-962a-5d69-b8f7-f289a9baa659"
-diamondUuid: "23f88c45-cb1e-83af-979e-8e8a8ca141cc"
-uuid: "5762e82f-667d-8993-8caf-89263621f0c3"
-horo: 2
+coordinate: "llm · 7/descent · 187bb59d"
+contentUuid: "5ef9380e-f339-5e42-bcc8-c0e466a67390"
+diamondUuid: "ada6c85f-b4ae-843f-8511-d83eefe7590c"
+uuid: "187bb59d-e88d-8d3d-a06c-2852668f0805"
+horo: 7
 typography:
   partition: llm
-  bondDegree: 64
+  bondDegree: 56
 standards:
   - "NIST-FIPS-180-4"
 bindings: []
 signatures:
-  computationUuid: "a1de36c2-ef63-81a3-a20a-2ec4cbfff4d0"
+  computationUuid: "67865ebc-3125-858e-b303-7c20403fc919"
   stages:
     - stage: path
       stageUuid: "9631ea9e-406f-87ce-addd-b5d3841a46d7"
@@ -23,18 +23,18 @@ signatures:
     - stage: boundary
       stageUuid: "5d22ada9-9ca4-820b-bcc6-53be0069ed3e"
     - stage: links
-      stageUuid: "bef12944-cb6a-88d2-9982-8b2322c55698"
+      stageUuid: "efaa120a-5d1a-8090-800f-957bdb02c85f"
     - stage: horo
-      stageUuid: "bb8afed1-dfed-846e-924e-74716f01a5cb"
+      stageUuid: "bb3ee162-1700-8f3b-b56c-1a0bc73ff784"
     - stage: seal
       stageUuid: "75af2fc1-2764-8bd9-9640-762078ac9881"
     - stage: uuid
-      stageUuid: "59525475-cd46-843b-9642-78950658d73e"
+      stageUuid: "bc7ef49f-ad15-8b26-9709-808b2681c734"
 version: 2
 ---
 # llm — the forge; the uuid is the verify
 
-A language model is a pure **forge**: it projects, cheaply, and is expensive to trust. erpax already has the dual — the [[uuid]] is a pure **verify**: O(1) to decode, impossible to invert ([[tamper/cost]]: the 106-bit one-way floor). So the whole bridge is one constraint — **the LLM forges, a 128-bit address it cannot fake decides.** The model never leaves the cheap side of the forge≫verify asymmetry; this is the [[angel]]⊕archangel dynamic (create ⊕ verify) at the inference scale.
+A language model is a pure **forge**: it projects, cheaply, and is expensive to trust. erpax already has the dual — the [[uuid]] is a pure **verify**: O(1) to decode, impossible to invert ([[tamper/cost]]: the 106-bit one-way floor). So the whole bridge is one constraint — **the LLM forges, a 128-bit address it cannot fake decides.** The model never leaves the cheap side of the forge≫verify asymmetry; this is the angel⊕archangel dynamic (create ⊕ verify) at the inference scale.
 
 **AI-self-sufficient first.** The deterministic core (the skill router, [[train]], the [[matrix]]) decides whenever it can; the model is the FALLBACK tier, reached through the one gated entrypoint `services/ai/cloudflare-ai` (PII strip, prompt-injection guard, EU-AI-Act risk gate, per-tenant quota, tamper-evident audit row). No raw inference exists outside that gate.
 
@@ -49,8 +49,8 @@ Breathing is in → out, ordered (not a loop). The cross of two leaves is the wh
 
 ## The honest floor
 
-A uuid is a **pointer / commitment, not a decompressor of unseen payload** ([[limit]]). The model expands *structure* always (slot, capability, schema, OID, cmyk, color+sound) and *content* only when the preimage is in the shared corpus ([[merge]]: same content ⇒ same uuid) or is revealed — recovering content from the uuid alone is inverting SHA-256, the [[uuid/projection]] maximum. Forge-and-check pays exactly when shared context narrows the candidates; that bound is the security, working as intended.
+A uuid is a **pointer / commitment, not a decompressor of unseen payload** (limit). The model expands *structure* always (slot, capability, schema, OID, cmyk, color+sound) and *content* only when the preimage is in the shared corpus ([[merge]]: same content ⇒ same uuid) or is revealed — recovering content from the uuid alone is inverting SHA-256, the [[uuid/projection]] maximum. Forge-and-check pays exactly when shared context narrows the candidates; that bound is the security, working as intended.
 
-Composes: [[uuid]] · [[signal]] · [[tamper/cost]] · [[proof]] · [[entry]] · [[chat]] · [[message]] · [[merge]] · [[breath]] · [[angel]] · [[self]].
+Composes: [[uuid]] · [[signal]] · [[tamper/cost]] · [[proof]] · [[entry]] · [[chat]] · [[message]] · [[merge]] · [[breath]] · angel · [[self]].
 
-**Law — [[law]]: the LLM is a pure forge (cheap to generate, costly to trust) and the [[uuid]] is a pure verify; the model never leaves the cheap side of the forge≫verify asymmetry, runs AI-self-sufficient first as the fallback behind one gated entrypoint, and every turn is content-addressed — a uuid is a commitment, not a decompressor of unseen payload ([[limit]]).**
+**Law — [[law]]: the LLM is a pure forge (cheap to generate, costly to trust) and the [[uuid]] is a pure verify; the model never leaves the cheap side of the forge≫verify asymmetry, runs AI-self-sufficient first as the fallback behind one gated entrypoint, and every turn is content-addressed — a uuid is a commitment, not a decompressor of unseen payload (limit).**

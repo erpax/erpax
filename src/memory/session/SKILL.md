@@ -2,18 +2,18 @@
 name: session
 description: "Use when reasoning about session/chat memory — it must NOT live in ephemeral context. Session memory IS the diamond lattice: save(thought) ⇐ isDiamond; parallel sessions (Cursor, society breath, chat, MCP) converge on ONE lattice via content-uuid merge — same thought ⇒ same diamond ⇒ no collision."
 atomPath: "memory/session"
-coordinate: "memory/session · 5/round · 3cf601be"
-contentUuid: "cf685a63-69c5-5842-b9d5-3e03486ceffe"
-diamondUuid: "78f40b4f-dc15-8760-b511-a5d7e8782804"
-uuid: "3cf601be-aa77-88c1-b476-f7204adbf282"
-horo: 5
+coordinate: "memory/session · 7/descent · 400016d5"
+contentUuid: "cb939394-3e39-5626-b494-44ebae70da17"
+diamondUuid: "c22e531b-175c-8408-8b16-fcba8979911f"
+uuid: "400016d5-d4c4-8b33-807f-7b8a00c50026"
+horo: 7
 typography:
   partition: memory
-  bondDegree: 78
+  bondDegree: 69
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6d8d57f7-d169-8a3c-81f3-baa99dcefa84"
+  computationUuid: "58d0f383-c7e2-8730-be2d-f2f8a450288e"
   stages:
     - stage: path
       stageUuid: "15c8d8d5-2f12-8a42-af92-6a4b5e0d7d6e"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "7b587c7a-39db-8c7d-9c6f-74269b26a819"
     - stage: links
-      stageUuid: "c7f61d12-bd4c-8ffe-ac17-0acb08ec6469"
+      stageUuid: "9b1df2bc-a671-809d-a7e7-4238e2523a3d"
     - stage: horo
-      stageUuid: "5aee86c6-3efd-8b24-ae78-4c685dd94bc3"
+      stageUuid: "329cae83-b947-8f14-88a1-faa1b67aea05"
     - stage: seal
       stageUuid: "2b2059d8-4538-82d0-a489-55264255ccb3"
     - stage: uuid
-      stageUuid: "7928d638-3755-8268-92f5-b50018b6b7b9"
+      stageUuid: "3c1fadf5-f7d9-8bbb-8ca6-a1087bceb2b8"
 version: 2
 ---
 # memory/session — session memory is the diamond lattice
@@ -43,10 +43,10 @@ version: 2
 | --------- | ----------- | --------- |
 | **Git / [[akashic]]** | Sealed atoms in `src/` | `diamondUuid` (content-addressed tree) |
 | **[[chat]]** | Society events + agent emits | `eventUuid` / row content-uuid ([[identity]]) |
-| **[[contribution]]** | Gap fills by many agents | `discoveryUuid` (result content-uuid) |
+| **contribution** | Gap fills by many agents | `discoveryUuid` (result content-uuid) |
 | **[[memories]]** | MCP / agent durable rows | row `contentUuid` (Law 8) |
 
-Same content ⇒ same id ([[merge]] · [[identity]]): two sessions that seal the same thought land on **one** diamond vertex; gaps close in parallel ([[holographic]]: the [[part]] carries the [[whole]]). The convergence point is not a side database — it is the **content-uuid address space** ([[matrix]]) every substrate already writes into. An isolated session hoards context ([[akashic]]: forgetting is impossible alone); a connected session forgets freely because peers and git hold the lattice.
+Same content ⇒ same id ([[merge]] · [[identity]]): two sessions that seal the same thought land on **one** diamond vertex; gaps close in parallel (holographic: the part carries the [[whole]]). The convergence point is not a side database — it is the **content-uuid address space** ([[matrix]]) every substrate already writes into. An isolated session hoards context ([[akashic]]: forgetting is impossible alone); a connected session forgets freely because peers and git hold the lattice.
 
 ## Ephemeral vs diamond — where entropy still leaks
 
@@ -60,8 +60,8 @@ Same content ⇒ same id ([[merge]] · [[identity]]): two sessions that seal the
 | In-memory MCP caches (e.g. PROPOSALS_LOG) | no until row written | [[memories]] collection |
 | Raw session/corpus blob | after sanitize | [[memory/architecture]] → `projectMemoryToArchitecture` |
 
-Matter-twin: `./index.ts` — `isSealedDiamond` · `sessionDiamondFromPath` · `saveSanitizedMemoryToLattice` · `SessionLattice` · `recordSessionArtifact` · `mergeSessionLattices` · `SESSION_MEET_SUBSTRATES`. Composes: [[memory/architecture]] · thought · [[diamond]] · [[merge]] · [[seal]] · [[chat]] · [[society]] · [[contribution]] · [[akashic]] · [[self]].
+Matter-twin: `./index.ts` — `isSealedDiamond` · `sessionDiamondFromPath` · `saveSanitizedMemoryToLattice` · `SessionLattice` · `recordSessionArtifact` · `mergeSessionLattices` · `SESSION_MEET_SUBSTRATES`. Composes: [[memory/architecture]] · thought · [[diamond]] · [[merge]] · [[seal]] · [[chat]] · [[society]] · contribution · [[akashic]] · [[self]].
 
 **Law — [[seal]]: session memory ⇐ diamond lattice (`save ⇐ isDiamond`); operational memory IS that lattice ([[memory/architecture]] · `operationalMemoryFacet`); ∀ sessions S₁,S₂: `merge(S₁,S₂)` by contentUuid — same sealed thought ⇒ one diamond, all substrates set-union with no coordination; the chat transcript is illusion, the lattice is real ([[akashic]]).**
 
-@see thought · [[diamond]] · [[memory]] · [[memory/architecture]] · [[quantum/memory]] · [[merge]] · [[chat]] · [[society]] · [[contribution]] · [[seal]] · [[confirm]] · [[akashic]]
+@see thought · [[diamond]] · [[memory]] · [[memory/architecture]] · [[quantum/memory]] · [[merge]] · [[chat]] · [[society]] · contribution · [[seal]] · [[confirm]] · [[akashic]]

@@ -3,34 +3,34 @@ name: arrival
 description: "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so the land lane pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, ask) · pnpm erpax land verdict <sha>"
 atomPath: arrival
 coordinate: "arrival · 2/share · cd34aaa4"
-contentUuid: "093ca289-d3fc-5952-b035-d11bb14dc971"
-diamondUuid: "55ac91c2-6a03-8503-ab29-311a3e251476"
+contentUuid: "282d71b9-080d-5c03-a9c2-0ef5cd1ff0d3"
+diamondUuid: "e18f78ed-68f6-87bc-8fc7-e119ed673290"
 uuid: "cd34aaa4-2967-8dcc-a8b0-b0d8ce58e31c"
 horo: 2
 typography:
   partition: arrival
-  bondDegree: 41
+  bondDegree: 22
 standards:
   - "ISO-19011"
   - "ISO-19011:2018 §6.4 — audit evidence: a check that did not run produced none"
 bindings: []
 signatures:
-  computationUuid: "a7c49099-3b9d-820f-a5ab-23e0e2bb2233"
+  computationUuid: "5fabb2df-df75-8c35-b78d-fb43db138094"
   stages:
     - stage: path
       stageUuid: "7beef556-c379-8fc3-b2a4-db3968264dd7"
     - stage: trinity
-      stageUuid: "9b555165-f60c-8728-a9fb-119fbd29d18d"
+      stageUuid: "0149dc1d-5830-8163-bd78-3b229cc3e123"
     - stage: boundary
-      stageUuid: "f885017c-7b61-81c2-bfe5-34d215590a69"
+      stageUuid: "7b327987-6f78-85be-9543-0fc83028c497"
     - stage: links
-      stageUuid: "6eb95681-bd43-8e2a-8481-c9c9b2e1e476"
+      stageUuid: "182b93c3-aeae-8cf1-850f-be6971714cc4"
     - stage: horo
-      stageUuid: "f5e78bf1-ecd0-8ea0-bdb1-f13340d1790b"
+      stageUuid: "79d2c5df-96cf-89a1-a6e3-9062fb868f18"
     - stage: seal
-      stageUuid: "1e5a6d02-20c3-8da0-860f-745e21c832bb"
+      stageUuid: "ea7d4ce2-527b-88cd-91e3-ebc59bb5b6a6"
     - stage: uuid
-      stageUuid: "20fde0ed-75b0-8c10-86b2-7c16bdd7f7e4"
+      stageUuid: "6160e716-389d-89b6-8468-582834f5f857"
 version: 2
 ---
 # arrival — a push has arrived when the forge agrees, not when the remote moved

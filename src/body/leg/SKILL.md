@@ -3,13 +3,13 @@ name: leg
 description: "Use when reasoning about leg as an anatomical part of body — vocabulary pivot to @/leg; nested not duplicated."
 atomPath: "body/leg"
 coordinate: "body/leg · 1/base · 6ed60211"
-contentUuid: "4177492c-3b97-5aaf-bb62-c070e5410aca"
+contentUuid: "2ac8b0b7-3c96-5fdd-afc2-29a18e53727b"
 diamondUuid: "2939224e-1369-8f8b-a92a-f50e41a7c095"
 uuid: "6ed60211-fbaf-8b69-b7a0-9c0d3839b373"
 horo: 1
 typography:
   partition: body
-  bondDegree: 21
+  bondDegree: 17
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

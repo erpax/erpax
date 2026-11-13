@@ -2,14 +2,14 @@
 name: website
 description: "Use when the society must be SEEN, heard, and felt — auto-seeding Payload's pages from the spec corpus, the e2e multimedia walkthroughs, and federation peers; the perceptible outward face of the content-addressed record."
 atomPath: website
-coordinate: "website · 4/weave · f5eb5c25"
-contentUuid: "b8a86519-c38e-5fb8-9a66-3f285dc30720"
-diamondUuid: "9d4fbce4-0ccc-8964-b16a-cf0816f17052"
-uuid: "f5eb5c25-0b81-8ba0-9c15-21c845fd178f"
-horo: 4
+coordinate: "website · 2/share · 0016a775"
+contentUuid: "0403a6ab-31c9-5bf8-9640-9da81e64c5d9"
+diamondUuid: "cd4f28cf-ca91-83c4-be38-d72f2b0a3301"
+uuid: "0016a775-594c-8efa-942a-79b9e4d83058"
+horo: 2
 typography:
   partition: website
-  bondDegree: 51
+  bondDegree: 39
 standards:
   - "EU-Admin-Coop-Reg-904/2010"
   - Schema.org Article + WebSite + SoftwareApplication
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "fedf1b86-9556-8c02-9fac-3ab6880fbad4"
+  computationUuid: "c24c7d8d-1213-8784-87c5-0014c65fa7a5"
   stages:
     - stage: path
       stageUuid: "68045f16-4ea4-865c-b7e6-fa0f280a2b5a"
@@ -28,26 +28,26 @@ signatures:
     - stage: boundary
       stageUuid: "1959d26d-f943-8b26-969c-8aafeba47911"
     - stage: links
-      stageUuid: "61e87225-28b3-812b-926d-427b2019d0bb"
+      stageUuid: "f643c055-8d44-8760-b663-5a84674f8b7e"
     - stage: horo
-      stageUuid: "93d5c645-2326-8006-a48d-7264ca66a00a"
+      stageUuid: "7825a8f2-0045-8c33-901e-4e926fc0d34d"
     - stage: seal
       stageUuid: "b8cd2559-8e44-8bc5-ae05-ef3742b2cf36"
     - stage: uuid
-      stageUuid: "d2e5f40a-0db6-8129-81db-cc59314ebd5d"
+      stageUuid: "4a4d41b8-93b3-8d45-9310-ca8045078cc7"
 version: 2
 ---
 # website — the record made perceptible
 
 FORM: **the society's whole record rendered into a surface a human can browse.** The codebase is queryable but mute; the website is its face — every CollectionSpec, Chain, Agent, Role, and Standard becomes a Page, so the [[akashic]] record is not just read by agents but seen, heard, and felt by people. Nothing is authored; every Page is DERIVED ([[generate]]) from the live corpus, the filesystem the only source.
 
-The capability seeds Payload's `pages` collection from three sources, one [[flow]] of HTML into the surface:
+The capability seeds Payload's `pages` collection from three sources, one flow of HTML into the surface:
 
 1. **e2e multimedia** — `seedFromE2e` walks `marketing/<workflow>.<locale>.html` (Playwright-recording output) into one `PageSeed` per locale.
 2. **spec corpus** — `seedFromSpec` renders one Page per collection / chain / agent / role / standard-family, each body carrying the citation graph + MCP try-it actions.
 3. **federation** — `importMediaBundle` / `exportMediaBundle` round-trip the seeds as an `.ndjson` bundle peers broadcast and ingest.
 
-Because each seed is content-addressed, the same Page authored by two instances is ONE Page ([[merge]], [[holographic]]: the whole graph is recoverable from any seed). The website is the perceptible twin of the queryable record — the [[duality]] of read (agents) and seen (people) — and the [[civilization]]-scale outward organ of the [[society]]: every culture publishes its own record the same way. SEO is itself a coupled vortex (`seo-vortex.ts`): every published Page carries ≥2 inbound + ≥2 outbound Schema.org edges, so discovery is a [[fractal]] citation graph, not flat metadata.
+Because each seed is content-addressed, the same Page authored by two instances is ONE Page ([[merge]], holographic: the whole graph is recoverable from any seed). The website is the perceptible twin of the queryable record — the [[duality]] of read (agents) and seen (people) — and the civilization-scale outward organ of the [[society]]: every culture publishes its own record the same way. SEO is itself a coupled vortex (`seo-vortex.ts`): every published Page carries ≥2 inbound + ≥2 outbound Schema.org edges, so discovery is a fractal citation graph, not flat metadata.
 
 Sequence position: **8** (crest — the inward record manifested outward), on the ring 0·3·6·9·1·2·4·8·7·5 (see [[sequence]]).
 

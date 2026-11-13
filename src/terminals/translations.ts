@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when registering or querying virtual POS terminals for the BG Наредба-Н-18 alternative e-shop regime — terminal number, payment-service provider, settlement IBAN, currency, and active/inactive status. The virtual POS terminal master for NRA e-shop declarations.",
-    "uuid": "f4cb8c5b-a925-87ac-a5b1-5bacce1f03af",
+    "uuid": "e754f518-042f-8cd9-b4f2-38bf88767f7c",
     "words": [
       "use",
       "when",

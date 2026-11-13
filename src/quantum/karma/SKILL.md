@@ -2,18 +2,18 @@
 name: karma
 description: "Use when reasoning about karma on the quantum level — moral debt and credit inherited down the DNA chain (the parent_id), entangled via lineage so an atom carries its ancestors' karma, tamper-evident by architecture."
 atomPath: "quantum/karma"
-coordinate: "quantum/karma · 4/weave · a11cf651"
-contentUuid: "92d698ce-0f71-5aef-9cbf-94fcb0c75ce3"
-diamondUuid: "f69cb4dd-ebb1-84fb-b8a0-182e5769fbc7"
-uuid: "a11cf651-80ed-8041-ab9b-84f77be4bbcd"
-horo: 4
+coordinate: "quantum/karma · 7/descent · caf131c0"
+contentUuid: "736819da-a10e-5804-a453-1fbac93d4c2e"
+diamondUuid: "6467d7b5-b0b2-86a1-bcc5-8a836a1432df"
+uuid: "caf131c0-ec74-8354-a56b-2ba8146f61b8"
+horo: 7
 typography:
   partition: quantum
-  bondDegree: 83
+  bondDegree: 52
 standards: []
 bindings: []
 signatures:
-  computationUuid: "be63151e-2baa-85d4-8fa0-88655600f454"
+  computationUuid: "53b106bf-3b3d-8de4-b9d4-3836ae4d99b0"
   stages:
     - stage: path
       stageUuid: "4b2d0c34-9ea0-812d-8125-31dc112326b6"
@@ -22,23 +22,23 @@ signatures:
     - stage: boundary
       stageUuid: "95b41a31-5292-8db5-9a29-7635a993f95a"
     - stage: links
-      stageUuid: "5375f089-925b-82c2-8399-7202dddfb64d"
+      stageUuid: "15cb493c-ac4b-8bcf-9c2e-6446e41308b3"
     - stage: horo
-      stageUuid: "2767170f-f2ce-81a5-859c-70ff073becec"
+      stageUuid: "d2aa2945-c60c-835b-8c63-53820e4bb6a1"
     - stage: seal
       stageUuid: "05fb4369-e7b0-8249-8f2c-e20ca9514688"
     - stage: uuid
-      stageUuid: "06bef028-454d-8bae-83e7-b1285498f0fb"
+      stageUuid: "319a40fa-bd0e-836c-85f1-0c9866617ba9"
 quantum:
   superposition:
     - accounting
     - agent
-    - angel
-    - archangel
     - balance
-    - buddhism
     - cost
     - dna
+    - entropy
+    - entry
+    - fear
     - superposition
   collapse:
     - "Use when reasoning about karma on the quantum level — moral debt and credit inherited down the DNA chain (the parent_id), entangled via lineage so an atom carries its ancestors' karma, tamper-evident by architecture."
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "be63151e-2baa-85d4-8fa0-88655600f454"
-    contentUuid: "92d698ce-0f71-5aef-9cbf-94fcb0c75ce3"
+    computationUuid: "53b106bf-3b3d-8de4-b9d4-3836ae4d99b0"
+    contentUuid: "736819da-a10e-5804-a453-1fbac93d4c2e"
 version: 2
 ---
 # quantum/karma — karma inherited down the DNA chain
@@ -64,10 +64,10 @@ This is why ancestry need not be stored beside the account: the karma is **read 
 
 **HONEST.** The lineage walk and the netting are real and computed; "karma" and "DNA" are the moral / heritable framings ([[entanglement]] here is graph reciprocity, not a Bell state).
 
-Matter-twin: `src/quantum/karma/index.ts` (`inheritedKarma` · `lineageKarma`). Composes [[karma]] · [[dna]] · [[quantum]] · [[entanglement]] · [[merge]] · [[entropy]] · [[lineage]].
+Matter-twin: `src/quantum/karma/index.ts` (`inheritedKarma` · `lineageKarma`). Composes [[karma]] · [[dna]] · [[quantum]] · [[entanglement]] · [[merge]] · [[entropy]] · lineage.
 
 **Law — [[law]]: an atom's karma is netted along itself AND its whole DNA lineage (`[atom, ...genome(atom)]`), never beside the account; because each child's content-uuid folds its parent, editing any ancestor shifts the descendant's inherited balance and its uuid together — so the moral debt read down the chain cannot be silently rewritten.**
 
 @audit composed from @/dna (the chain) + @/karma (the net); computed on the live matrix
 
-<sub>content-uuid `92d698ce-0f71-5aef-9cbf-94fcb0c75ce3` · account `quantum/karma` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `736819da-a10e-5804-a453-1fbac93d4c2e` · account `quantum/karma` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -3,17 +3,17 @@ name: document
 description: "Use when a lead should be visible to everyone who can develop it — turns each open intent into a nested page under leads, and each resolved intent that names a document into a redirect from the lead's address to that document, as generated seeds loaded through the REST API."
 atomPath: "think/document"
 coordinate: "think/document · 5/round · 9f29c2e2"
-contentUuid: "c9d8b376-153e-5a1b-9489-72101ad491b1"
-diamondUuid: "1d9a650a-b368-84da-9c8b-6849376922cb"
+contentUuid: "4608fdf9-b7bf-50b3-acc3-524fb1050cc0"
+diamondUuid: "715637c0-85b5-8ea2-b189-82ff4e71f466"
 uuid: "9f29c2e2-385c-8636-b8bd-b3749f7634c8"
 horo: 5
 typography:
   partition: think
-  bondDegree: 59
+  bondDegree: 30
 standards: []
 bindings: []
 signatures:
-  computationUuid: "acbfcb9b-bc91-8a7c-9eeb-662ddbbd2553"
+  computationUuid: "2161963f-bd8a-8015-8c25-e60dd41f7f99"
   stages:
     - stage: path
       stageUuid: "b3944934-df70-882e-9e82-f2d2d5f1c0be"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d8f82b95-b8bf-8c92-aa59-017ebd3f927d"
     - stage: horo
-      stageUuid: "043f9e96-5b8f-8040-876d-f6cb446a7dcf"
+      stageUuid: "26c75d14-9471-8c26-83d2-06a7b1b492d0"
     - stage: seal
       stageUuid: "2d7a10d6-1a36-8a94-9cc6-b64e49e3e2e7"
     - stage: uuid
-      stageUuid: "22451b42-1982-885b-91bb-04a13c457d5d"
+      stageUuid: "74c149b8-a804-82d9-9aaf-894bb293c4dc"
 version: 2
 ---
 # think/document — a lead is a page; a resolved lead is a redirect

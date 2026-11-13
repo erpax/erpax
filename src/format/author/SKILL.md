@@ -3,13 +3,13 @@ name: author
 description: "Use when reasoning about author — turns populated authors into the sentence a reader expects: one is itself, two become \"A and B\", and three or more become \"A, B and C\" — no serial comma, decided once here rather…"
 atomPath: "format/author"
 coordinate: "format/author · 5/round · dd692163"
-contentUuid: "347304cc-5540-561c-bac2-03db17bbebad"
+contentUuid: "5731b83c-ef9a-5784-9ad6-48c654efd648"
 diamondUuid: "cfa63f4f-978a-898d-827c-faaa4acd56e8"
 uuid: "dd692163-d055-8b3e-9343-73bef4db8f58"
 horo: 5
 typography:
   partition: format
-  bondDegree: 6
+  bondDegree: 3
 standards: []
 bindings: []
 signatures:

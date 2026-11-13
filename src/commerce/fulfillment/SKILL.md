@@ -3,17 +3,17 @@ name: fulfillment
 description: "Use when reaching the fulfillment side of commerce — provisioning and delivering what a checkout bought — through its own namespace; the face re-exports the commerce barrel while the matter is still being lifted out of the hub."
 atomPath: "commerce/fulfillment"
 coordinate: "commerce/fulfillment · 7/descent · 4782d323"
-contentUuid: "21f7014a-1203-504e-bf1a-a29515b58abe"
-diamondUuid: "48cd19c1-40ac-8eb7-8997-e4f91e8fc327"
+contentUuid: "d6afc048-ea66-5dbe-9fac-aa1f9400db7e"
+diamondUuid: "17541f26-1de0-8876-b044-00740b1cb73a"
 uuid: "4782d323-c14d-8b29-b8ea-1fb47038582e"
 horo: 7
 typography:
   partition: commerce
-  bondDegree: 15
+  bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c87ba279-6116-8227-bd24-8bd14321da53"
+  computationUuid: "c197c755-f480-8675-8bae-ecf6e887750c"
   stages:
     - stage: path
       stageUuid: "1cc990e5-9210-88db-8803-a059f73b6630"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "75b206da-2d01-82dd-8064-a04a6be3b314"
     - stage: horo
-      stageUuid: "4a8acb94-0916-8e2d-ab4a-c70d243043fc"
+      stageUuid: "48279546-8861-8826-9a77-deba5479aa68"
     - stage: seal
       stageUuid: "b5cec49a-5b2d-8a5c-a073-020c621ae26b"
     - stage: uuid
-      stageUuid: "26b03e5b-c20e-861b-994e-41c9a17b495f"
+      stageUuid: "7e9e69fc-9831-819d-813f-df91146cd991"
 version: 2
 ---
 # commerce/fulfillment — the fulfillment face of [[commerce]]

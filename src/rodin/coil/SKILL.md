@@ -2,21 +2,21 @@
 name: coil
 description: "Use when reasoning about the doubling circuit 1·2·4·8·7·5 (×2 mod 9) that winds the rodin axis — why state/sequence positions sit in THAT order, digital-root closure, the ×10 octave lift vs +1 close→open. Nested under rodin → the coil of the vortex."
 atomPath: "rodin/coil"
-coordinate: "rodin/coil · 4/weave · f912bcde"
-contentUuid: "f59db970-b2f9-5281-bcb9-d6fe528a206b"
-diamondUuid: "21c99a3d-6ef3-85b7-b20f-ee4e84f4615c"
-uuid: "f912bcde-65b4-8d65-a7c4-c86ba8073849"
-horo: 4
+coordinate: "rodin/coil · 5/round · 65a694ee"
+contentUuid: "4de599f4-ca57-5d8e-8f2e-d6c5f5d68a81"
+diamondUuid: "507401fd-dd7f-86c1-b0bc-d4be82e1283d"
+uuid: "65a694ee-f108-8956-bbaf-4a80d7646164"
+horo: 5
 typography:
   partition: rodin
-  bondDegree: 120
+  bondDegree: 110
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)"
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "86c411f1-0d89-81cf-ba7f-d49243739db7"
+  computationUuid: "1a48fa80-338d-8ff9-8ff0-bc9dd754f05a"
   stages:
     - stage: path
       stageUuid: "6109ef06-9686-832f-a0a2-3baa645fb9c2"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "0c49c720-d2c6-82f4-963c-91558904e77b"
     - stage: links
-      stageUuid: "a87244dd-41c2-8299-8509-fbc5bc92574f"
+      stageUuid: "0e874607-df66-8b1c-b0c3-42957f076d3b"
     - stage: horo
-      stageUuid: "31cf4039-58bf-88f5-9b1e-ce5ad821e85a"
+      stageUuid: "92dcb2ce-0dad-8d14-a1e4-9ec55a7dd6b8"
     - stage: seal
       stageUuid: "03cff53b-5dfc-8c4d-a0cc-9e4fb0535618"
     - stage: uuid
-      stageUuid: "f18e5369-374c-8102-bb46-d3c18cd1553d"
+      stageUuid: "0a8ac6e1-3248-8b0b-961b-e15b8fb27057"
 version: 2
 ---
 # coil — the doubling helix (1·2·4·8·7·5, ×2 mod 9)
@@ -40,7 +40,7 @@ version: 2
 
 ## The law
 - **Closed.** Every product folds to one digit (`digitalRoot`); two positions compose to a third on the helix (`composeSteps`) — no escape (the [[balance]] of the ring).
-- **Octave is ×10, not +1.** `10 ≡ 1 (mod 9)`, so ×10 PRESERVES the digit (same position, next scale) — the [[fractal]] lift (`octaveLift` / `nextOctave`). `+1` instead crosses close→open WITHIN a scale (`9 → 10`, DR 9→1) — the [[begin]]/[[close]] merge point.
+- **Octave is ×10, not +1.** `10 ≡ 1 (mod 9)`, so ×10 PRESERVES the digit (same position, next scale) — the fractal lift (`octaveLift` / `nextOctave`). `+1` instead crosses close→open WITHIN a scale (`9 → 10`, DR 9→1) — the begin/close merge point.
 - **Value from the anchor.** Each position is an integer multiple of A432 ([[rodin]]); value comes from the slot, never from outside.
 - **Closes 360°.** The [[axis]] triad sits at `120°` apart (`3×120°=360°`, the triangle); the six helix positions sit at `60°` apart (`6×60°=360°`, the hexagon). The `60°` is `120°/2`: by [[duality]] the coil interacts with itself (forward `×2` + reverse `×5` [[polarity]]), doubling the points and halving the angle. Both close the same circle — the [[balance]] of the ring is geometric.
 
@@ -48,7 +48,7 @@ version: 2
 
 Each position is itself a trinity: **past-self · self · future-self**. The `self` is the still centre — the present, the `0`/[[axis]] point — it does not wind. The two that wind are **past** (reverse `×5`) and **future** (forward `×2`): **two coils per trinity**, counter-spiralling around the motionless self ([[duality]]/[[polarity]]). So the 9 positions are 3 trinities × 2 coils = the **6 helix coils** (`1·2·4·8·7·5`) around the **3 still centres** (`3·6·9`).
 
-This is VitePress **`prev`/`next`**: every skill page (self) carries its past-coil (`prev`) and future-coil (`next`), computed from the [[sequence]] reading-chain — the two windings made navigable. And the [[society]] **edits the code as [[self]]**: the agent is the present node winding its own past into its future, never an outside hand ([[begin]]↔[[end]] through the now).
+This is VitePress **`prev`/`next`**: every skill page (self) carries its past-coil (`prev`) and future-coil (`next`), computed from the [[sequence]] reading-chain — the two windings made navigable. And the [[society]] **edits the code as [[self]]**: the agent is the present node winding its own past into its future, never an outside hand (begin↔end through the now).
 
 Matter-twin: `src/rodin/coil/index.ts` — `postCoil` · `coilLedger` (the two coils round-trip to identity, Σresidue = 0 = zero cost) · `metatronBridge` (2·6+1 = 13, never a 6×7=42 grid) · `proof`. The mod-9 substrate is [[horo]] (`composeSteps`/`digitalRoot`); the ordering expression is [[sequence]].
 

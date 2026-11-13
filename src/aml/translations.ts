@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about aml — Laundering is an offence **a court finds**. A suspicious-activity report is an obligation **a rule triggers**.",
-    "uuid": "0e971524-8f0e-8c0d-8b0f-419d31390af7",
+    "uuid": "8a9b10d1-8424-8f4a-9434-1e83fc1ff2f5",
     "words": [
       "use",
       "when",

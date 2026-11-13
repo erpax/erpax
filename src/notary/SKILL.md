@@ -3,13 +3,13 @@ name: notary
 description: "Use when a fact must be given public faith — recorded in a bound chronological register, timestamped, sealed tamper-evident, and made presumptively authentic. The legal notarial act modelled on erpax primitives: the seal is a content-uuid, the protocol is an append-only hash-chain, authenticity is an inclusion proof; the honest boundary is that real legal force needs a commissioned notary or an eIDAS/RFC-3161 trust service."
 atomPath: notary
 coordinate: "notary · 1/base · c6359228"
-contentUuid: "f1b38cfc-1e32-586f-854f-8f0e2248a89a"
-diamondUuid: "8abd83d1-cc86-862e-a7a8-763b5d78d05a"
+contentUuid: "d96f9b6b-6fdb-5f82-8dc6-2300cd4de685"
+diamondUuid: "58651b05-7353-8f68-9435-f5e4ce7c8af8"
 uuid: "c6359228-0d9f-8c78-ab97-da50f1a7893c"
 horo: 1
 typography:
   partition: notary
-  bondDegree: 47
+  bondDegree: 45
 standards:
   - "EU-2018/843"
   - "EU-VAT-Directive"
@@ -20,22 +20,22 @@ standards:
   - "eIDAS — Regulation (EU) No 910/2014 — qualified electronic signatures, seals, timestamps"
 bindings: []
 signatures:
-  computationUuid: "ef1c9d59-7e99-88bc-b0c7-3a7a8315abec"
+  computationUuid: "914e025a-90fc-8b5e-a522-4644f3dcbf81"
   stages:
     - stage: path
       stageUuid: "e666b797-a70b-81c6-a7cd-a3a6696e39cd"
     - stage: trinity
-      stageUuid: "74c7e781-8c4a-8ac8-9abb-79122d7a48cf"
+      stageUuid: "e417a013-f00f-8fda-b43b-2f12e1fa7989"
     - stage: boundary
-      stageUuid: "1fcfcb2b-fe73-82b2-b276-e4425d7f57f6"
+      stageUuid: "a1f7c7f8-953b-8c78-b892-404e2e0a7c40"
     - stage: links
-      stageUuid: "6bf2f23d-d22d-8419-a021-1941f4885440"
+      stageUuid: "bd6ebe8e-9fa7-8ccb-8595-76b81f199a71"
     - stage: horo
-      stageUuid: "64a67825-55f7-8f51-99ce-f1ecb7a470ad"
+      stageUuid: "2190dc0d-4415-86b2-b826-f8daa1916a68"
     - stage: seal
-      stageUuid: "2147bdd1-bd20-8276-a3bb-5800a4a6c36a"
+      stageUuid: "067679ba-4ae9-8e87-a35b-edf3d216cc0d"
     - stage: uuid
-      stageUuid: "fdbaa0d0-4d1a-82ff-a693-4eca5ee4afc1"
+      stageUuid: "dd191a1e-1957-864c-9eb3-548faeae5b5e"
 version: 2
 ---
 # notary — the notarial act

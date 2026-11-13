@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the agent audit trail — every agent action is strictly logged as an append-only digit-entry in the digit folders, and each entry adds an order of magnitude to the tamper-cost; the log's length is the forging difficulty, the realtime stream that hardens as it grows.",
-    "uuid": "acf9b618-4ad2-88b0-be76-e5f6c00801e2",
+    "uuid": "845912d6-182f-8424-92c6-f5aecc08025f",
     "words": [
       "use",
       "when",

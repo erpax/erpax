@@ -2,14 +2,14 @@
 name: mcp
 description: "Use when reasoning about erpax's agent gateway — it IS the official @payloadcms/plugin-mcp (collapse sink #1, never hand-roll an MCP server): every enabled collection becomes find/create/update/delete tools at /api/mcp, custom tools (GW fusion, trust) are added via the plugin's mcp config, Bearer API-key auth inherits the key owner's access + multi-tenant scope. erpax makes it TRUST-NATIVE — every tool call passes sandbox (capability + credential-broker + allowlist) and emits a receipt (uuid-chained audit), the dual of an external trust wrapper done from the inside."
 atomPath: "agents/mcp"
-coordinate: "agents/mcp · 5/round · 49aaecab"
-contentUuid: "50c64d78-52e9-58f3-93b9-7ed1828f3f55"
-diamondUuid: "045cad5c-9985-8019-a523-dfc377c92be5"
-uuid: "49aaecab-d520-8428-84ca-abc56bab8c9e"
-horo: 5
+coordinate: "agents/mcp · 1/base · b8f3c3f9"
+contentUuid: "90defdbf-7b9f-5f23-9933-ca14be37f45d"
+diamondUuid: "11fb4c73-3da6-8cf1-9c6a-218623d26e95"
+uuid: "b8f3c3f9-4058-8412-b6be-60f7b9580431"
+horo: 1
 typography:
   partition: agents
-  bondDegree: 74
+  bondDegree: 67
 standards:
   - "BCP-47"
   - "ECMA-402"
@@ -35,7 +35,7 @@ standards:
   - schema.org
 bindings: []
 signatures:
-  computationUuid: "1aafc40b-ce98-857e-baf9-b1f5ab2efb76"
+  computationUuid: "d5884571-b460-848a-9777-2c64b2e958ef"
   stages:
     - stage: path
       stageUuid: "982fead9-ea1f-8a81-909b-6fdbc9d24c96"
@@ -44,13 +44,13 @@ signatures:
     - stage: boundary
       stageUuid: "f03d45af-826a-8d59-b33c-60feb21e93af"
     - stage: links
-      stageUuid: "d1293b67-88a3-8c16-b28b-4002624ff101"
+      stageUuid: "d74e7104-822c-8660-8abe-717e68e3d03e"
     - stage: horo
-      stageUuid: "80599c7c-373f-83ff-a05e-45a657164f11"
+      stageUuid: "d7f2775d-71b9-8067-a34b-c9c17d62a917"
     - stage: seal
       stageUuid: "d7ac6b07-6c80-8db5-8c6e-8722dc2b1c91"
     - stage: uuid
-      stageUuid: "5b81e036-0eff-8e57-8cfe-b7cc80c0cc68"
+      stageUuid: "013f5923-da41-8808-a89f-7c03561d267f"
 version: 2
 ---
 # mcp — erpax's agent gateway is the official Payload MCP, made trust-native
@@ -62,12 +62,12 @@ FORM: **erpax does not build an MCP server — it adopts `@payloadcms/plugin-mcp
 Matter-twin: `src/services/agents/mcp/` (`tool-defs`·`in-process-client`·`auto-generated`·`i18n`) over `@payloadcms/plugin-mcp` (registered in `payload.config`), composing `services/sandbox` + `services/receipt`. Composes: [[collapse]] · [[plugins]] · [[access]] · [[sandbox]] · [[receipt]] · [[google/workspace]] · [[cost]] · [[identity]] · [[chat]] · [[society]] · [[self]] · [[Memories]] · mcp/tool/metadata.
 
 ## Becoming a Claude connector (the gap, named)
-The gateway *exists and works* (Bearer API-key, all collections enabled) — but it is not yet a one-click **Claude connector** "like the many others" (HubSpot · Linear · Notion…). Three matter-level gaps separate a working MCP endpoint from a directory connector — the [[limit]] audit, named honestly:
+The gateway *exists and works* (Bearer API-key, all collections enabled) — but it is not yet a one-click **Claude connector** "like the many others" (HubSpot · Linear · Notion…). Three matter-level gaps separate a working MCP endpoint from a directory connector — the limit audit, named honestly:
 1. **OAuth, not Bearer.** The directory connectors authenticate by **OAuth 2.1** — the user clicks *Connect* and authorizes; the server publishes `/.well-known/oauth-authorization-server` + `oauth-protected-resource` metadata and supports dynamic client registration (the MCP auth spec). `plugin-mcp` is **Bearer-API-key only** (paste a token). So erpax can be **added manually today** in a developer harness (`claude mcp add --transport http <url>/api/mcp --header "Authorization: Bearer <key>"`, the key minted per domain ownership) but cannot yet do the one-click OAuth flow. Closing it is a Payload-native build: an OAuth authorization-server endpoint + the `.well-known` metadata, bridging Payload [[auth]] and minting a scoped key — a higher-security link than a long-lived pasted token.
 2. **Deploy.** A connector needs a stable public HTTPS endpoint; the gateway runs at `localhost:3000/api/mcp` in dev. erpax is deployable to Cloudflare ([[bindings]] · [[deploy]], `wrangler.jsonc`) — the public URL is the tenant's domain.
 3. **Register.** The directory lists submitted servers; a custom MCP server is not auto-discovered (a registry is the discovery layer).
 
-The capability is built; the connector is **deploy + OAuth + register** away. Scored ([[angel]]): OAuth raises security (no long-lived secret) and reach (one-click), deploy raises reach, register raises discoverability — all atop the existing trust-native receipts.
+The capability is built; the connector is **deploy + OAuth + register** away. Scored (angel): OAuth raises security (no long-lived secret) and reach (one-click), deploy raises reach, register raises discoverability — all atop the existing trust-native receipts.
 
 ## Common mistakes
 - Hand-rolling an MCP server or transport — adopt `@payloadcms/plugin-mcp`; only ADD custom tools via its `mcp` config ([[collapse]]).

@@ -3,13 +3,13 @@ name: coverage
 description: "Use when asking which external rails erpax can PROVE it speaks. 178 catalogued rails (97 country/bank + 81 trading); a rail declaring clientImplemented is a promise erpax parses its answers, and a promise with no contract check is a claim nothing can contradict. Ratchets the claimed-but-unproven count down; never counts catalogue-only rails as covered."
 atomPath: "outward/coverage"
 coordinate: "outward/coverage · 7/descent · 81a07bcb"
-contentUuid: "60a74395-ab50-582f-bf2e-5fcc9ec56ddb"
+contentUuid: "63682ba5-d674-5850-96ff-27273d984759"
 diamondUuid: "5105e9ef-75dd-8cca-a67d-d4067447c668"
 uuid: "81a07bcb-eb69-8aef-b4c9-6e07d6d4ccee"
 horo: 7
 typography:
   partition: outward
-  bondDegree: 23
+  bondDegree: 15
 standards: []
 bindings: []
 signatures:
