@@ -17,6 +17,8 @@ export const atomPath = 'verify/latex' as const
 
 export interface Entry {
   readonly theorem: string
+  /** the axioms the kernel reported for it; absent in a record written before they were kept */
+  readonly axioms?: readonly string[]
   readonly axiomFree: boolean
   readonly stubbed: boolean
 }

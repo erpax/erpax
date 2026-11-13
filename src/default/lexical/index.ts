@@ -41,7 +41,7 @@ export const codeLanguages = (): Record<string, string> => ({
   typescript: 'TypeScript', javascript: 'JavaScript', json: 'JSON', jsonc: 'JSON with comments',
   bash: 'Shell', sh: 'Shell', shell: 'Shell', zsh: 'Shell', sql: 'SQL', graphql: 'GraphQL',
   yaml: 'YAML', yml: 'YAML', toml: 'TOML', css: 'CSS', scss: 'SCSS', html: 'HTML', xml: 'XML',
-  md: 'Markdown', markdown: 'Markdown', mdx: 'MDX', diff: 'Diff', lean: 'Lean', python: 'Python',
+  md: 'Markdown', markdown: 'Markdown', mdx: 'MDX', diff: 'Diff', lean: 'Lean', latex: 'LaTeX', tex: 'TeX', python: 'Python',
   ruby: 'Ruby', rust: 'Rust', go: 'Go', dockerfile: 'Dockerfile', ini: 'INI', text: 'Text',
 })
 

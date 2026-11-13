@@ -3133,6 +3133,8 @@ src/vendors/vendor/scorecards/index.ts:10: * @standard ISO 9001:2015 §8.4.1 eva
 src/vendors/vendor/scorecards/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/vendors/vendor/scorecards/index.ts:9: * @standard ISO 9001:2015 §8.4 control-of-externally-provided-processes
 src/verification/index.ts:13: * @standard RFC 8555 §8.4 (ACME DNS-01: the record value is a digest of the key authorization)
+src/verify/case/index.ts:17: * @standard ISO/IEC/IEEE-15026-2:2022 assurance-case claim argument evidence assumptions
+src/verify/case/index.ts:18: * @standard ISO-80000-2:2019 mathematical-signs-and-symbols
 src/verify/latex/index.ts:12: * @standard ISO 19011:2018 §6.4 — audit evidence: the citation must lead to the evidence
 src/version/index.ts:16: * @standard SemVer 2.0.0 — `MAJOR.MINOR.PATCH+<build-metadata>` (the corpus-uuid is build metadata)
 src/versions/cross/index.ts:23: * @standard RFC 9562 §5.8 uuidv8 (the content-addressed version id)

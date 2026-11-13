@@ -33,7 +33,10 @@ describe('seed/content/load — the SDK seen as the Local API slice the loaders 
     mkdirSync(join(cwd, 'src', 'law'), { recursive: true })
     writeFileSync(join(cwd, 'src', 'law', 'SKILL.md'), '# law — one law')
     const read = skillReader(cwd)
+    // no law sentence, no cited proof, no tests: nothing to show, so nothing is appended
     expect(read('law')).toBe('# law — one law')
+    writeFileSync(join(cwd, 'src', 'law', 'test.ts'), "it('a', () => {})\nit('b', () => {})\n")
+    expect(read('law')).toMatch(/## Proof[\s\S]*No formal proof is cited[\s\S]*2 test case\(s\)/)
     expect(read('ghost')).toBeUndefined()
   })
 

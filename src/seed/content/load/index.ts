@@ -22,6 +22,7 @@ import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import type { Payload, SanitizedConfig } from 'payload'
 import { loadPages, pageRows, type LoadResult, type PageRow } from '@/seed/content'
+import { corpusCase, withCase } from '@/verify/case'
 
 /** The three REST operations the loaders use, as the SDK offers them. */
 export interface Rest {
@@ -49,10 +50,15 @@ export function overSdk(sdk: Rest, config: SanitizedConfig): Pick<Payload, 'find
   } as unknown as Pick<Payload, 'find' | 'create' | 'update' | 'config'>
 }
 
-/** Reads an atom's SKILL document from a checkout; undefined when the atom has none. */
+/**
+ * Reads an atom's SKILL document from a checkout, with its proof section appended — claim,
+ * argument, evidence, assumptions ([[verify]]/case). Undefined when the atom has no document.
+ */
 export const skillReader = (cwd: string) => (path: string): string | undefined => {
   const file = join(cwd, 'src', path, 'SKILL.md')
-  return existsSync(file) ? readFileSync(file, 'utf8') : undefined
+  if (!existsSync(file)) return undefined
+  const markdown = readFileSync(file, 'utf8')
+  return withCase(markdown, corpusCase(cwd, path, markdown))
 }
 
 /** `--url x --packs a,b --tenant t` → its parts; a flag with no value is absent, never guessed. */
