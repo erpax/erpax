@@ -30,6 +30,20 @@ tsx src/seed/content/load/index.ts --url <origin> \
 [[seed]]/content's `loadRedirects` writes each redirect once, refuses one whose target page is not
 loaded, and unpublishes the page that used to sit at the redirected address.
 
+## A whole site as leads
+
+A task like "implement this documentation site" is too large to be one request. `sitemapUrls`
+reads a sitemap and `sectionLeads` turns it into one lead per section — the first path segment
+under the documentation root — naming its pages and saying it has not been read:
+
+```
+tsx src/think/document/index.ts --sitemap https://payloadcms.com/sitemap.xml
+```
+
+Run on the Payload sitemap on 2026-11-13: 1,213 URLs became 33 section leads. Each section is
+then read, measured against the corpus, and closed with a redirect to the document that did the
+work.
+
 ## Reading
 
 Through the search collection, like any document: `where` `{"slug":{"like":"leads-"}}`, `select`

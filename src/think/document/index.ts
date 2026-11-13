@@ -11,6 +11,13 @@
  *      (writes seed.generated.json and redirects.generated.json beside this file; load them with
  *       tsx src/seed/content/load/index.ts --url <origin> --seed <pages> --redirects <redirects>)
  *
+ * A task as large as "implement this documentation site" is handled the same way: `sectionLeads`
+ * turns the site's sitemap into one lead per section, so the work is a list of documents to read
+ * and measure against, not one request nobody can finish.
+ *
+ * Run: tsx src/think/document/index.ts --sitemap https://example.org/sitemap.xml [--under /docs/]
+ *      (records one lead per section; then generate and load the pages as above)
+ *
  * @invariant an open lead is exactly one page; a resolved lead is exactly one redirect, never both
  * @invariant a lead's address is a function of its text alone, so the same lead is the same page everywhere
  * @see ./SKILL.md
@@ -58,6 +65,36 @@ export function leadMarkdown(intent: string): string {
   return [`# ${title.charAt(0).toUpperCase()}${title.slice(1)}`, '', subject, ...(condition ? ['', `**Develop when** ${condition}.`] : [])].join('\n')
 }
 
+/** Every `<loc>` in a sitemap or sitemap index, in order. */
+export function sitemapUrls(xml: string): string[] {
+  return [...xml.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)].map((m) => m[1]!)
+}
+
+/**
+ * A site's pages as one lead per section. `under` is the path the documentation lives beneath;
+ * a section is the first segment after it, and its pages are the rest. Pages outside `under` are
+ * not leads. The lead says what to do with the section and that it has not been read.
+ */
+export function sectionLeads(urls: readonly string[], under = '/docs/'): string[] {
+  const sections = new Map<string, { origin: string; pages: Set<string> }>()
+  for (const url of urls) {
+    let parsed: URL
+    try {
+      parsed = new URL(url)
+    } catch {
+      continue
+    }
+    if (!parsed.pathname.startsWith(under)) continue
+    const [section, ...rest] = parsed.pathname.slice(under.length).split('/').filter(Boolean)
+    if (!section) continue
+    const entry = sections.get(section) ?? { origin: parsed.host, pages: new Set<string>() }
+    entry.pages.add(rest.join('/') || 'index')
+    sections.set(section, entry)
+  }
+  return [...sections].sort(([a], [b]) => a.localeCompare(b)).map(([section, { origin, pages }]) =>
+    `read the ${section} section of ${origin}${under}${section} (${pages.size} page(s): ${[...pages].sort().slice(0, 30).join(', ')}) and measure erpax against it, replacing what erpax hand-rolls with what the section documents — listed from the sitemap; not read when this was recorded`)
+}
+
 /** The page a resolved lead points at: `outcome.page`, when the outcome names one. */
 export function resolvedBy(outcome: unknown): string | undefined {
   const page = (outcome as { page?: unknown } | null | undefined)?.page
@@ -88,6 +125,16 @@ export function leadRedirects(leads: readonly Lead[]): RedirectRow[] {
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const { readFileSync, existsSync } = await import('node:fs')
   const { intend } = await import('@/think')
+  const arg = (name: string): string | undefined => { const i = process.argv.indexOf(name); return i >= 0 ? process.argv[i + 1] : undefined }
+  const sitemap = arg('--sitemap')
+  if (sitemap) {
+    const read = async (at: string): Promise<string> => (existsSync(at) ? readFileSync(at, 'utf8') : await (await fetch(at, { headers: { 'user-agent': 'Mozilla/5.0 (compatible; sitemap-reader)' } })).text())
+    const top = sitemapUrls(await read(sitemap))
+    const urls = top.every((u) => u.endsWith('.xml')) ? (await Promise.all(top.map(async (u) => sitemapUrls(await read(u))))).flat() : top
+    const recorded = sectionLeads(urls, arg('--under') ?? '/docs/')
+    for (const lead of recorded) intend(lead)
+    console.log(`think/document — ${recorded.length} section lead(s) recorded from ${urls.length} url(s)`)
+  }
   const store = join(process.cwd(), 'node_modules', '.cache', 'erpax', 'thought.json')
   const raw = existsSync(store) ? (JSON.parse(readFileSync(store, 'utf8')) as Record<string, unknown>) : {}
   const leads: Lead[] = Object.entries(raw)

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { conditionOf, leadMarkdown, leadPath, leadRedirects, leadRows, resolvedBy, subjectOf, type Lead } from '@/think/document'
+import { conditionOf, sectionLeads, sitemapUrls, leadMarkdown, leadPath, leadRedirects, leadRows, resolvedBy, subjectOf, type Lead } from '@/think/document'
 
 const A = 'serve the sitemap from the search collection so one row answers every read — develop when Payload is improved (search carrying the url)'
 const B = 'drop the four tables left by the merge: empty and unread'
@@ -58,5 +58,28 @@ describe('think/document — open is a page, resolved is a redirect, never both'
   it('no lead is both a page and a redirect', () => {
     const pages = new Set(leadRows(leads).map((r) => `/${r.slug}`))
     expect(leadRedirects(leads).filter((r) => pages.has(r.from))).toEqual([])
+  })
+})
+
+describe('think/document — a whole site becomes one lead per section', () => {
+  const xml = '<urlset><url><loc>https://x.org/docs/fields/overview</loc></url><url><loc> https://x.org/docs/fields/array </loc></url><url><loc>https://x.org/docs/hooks/overview</loc></url><url><loc>https://x.org/blog/post</loc></url><url><loc>https://x.org/docs/</loc></url><url><loc>not a url</loc></url></urlset>'
+
+  it('reads every location from a sitemap', () => {
+    // a location that is not one token is not a url, so it is not read
+    expect(sitemapUrls(xml)).toHaveLength(5)
+    expect(sitemapUrls('<sitemapindex><sitemap><loc>https://x.org/sitemap-0.xml</loc></sitemap></sitemapindex>')).toEqual(['https://x.org/sitemap-0.xml'])
+  })
+
+  it('groups pages under the documentation path by section, sorted, and ignores the rest', () => {
+    const leads = sectionLeads(sitemapUrls(xml))
+    expect(leads).toHaveLength(2)
+    expect(leads[0]).toContain('the fields section of x.org/docs/fields (2 page(s): array, overview)')
+    expect(leads[1]).toContain('the hooks section of x.org/docs/hooks (1 page(s): overview)')
+    expect(leads.every((l) => l.includes('not read when this was recorded'))).toBe(true)
+  })
+
+  it('takes another documentation path, and yields nothing for a site with none', () => {
+    expect(sectionLeads(['https://x.org/guide/start/install'], '/guide/')).toHaveLength(1)
+    expect(sectionLeads(['https://x.org/blog/post'])).toEqual([])
   })
 })
