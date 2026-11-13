@@ -3,13 +3,13 @@ name: score
 description: "Use when reasoning about score as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: score
 coordinate: "score · 2/share · a7bc5db3"
-contentUuid: "43fa5bea-1bdd-5490-b304-c114d445c90c"
+contentUuid: "33a7d47c-c9f4-50f0-8390-3cee5826a29b"
 diamondUuid: "ebee31d5-f74f-8330-804d-8c37afed667e"
 uuid: "a7bc5db3-fcf8-8e21-880e-72d825ac247a"
 horo: 2
 typography:
   partition: score
-  bondDegree: 33
+  bondDegree: 32
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

@@ -3,8 +3,8 @@ name: row
 description: "Use when a seed must stay addressable — the entanglement continued one scale down, from atom into seed: a seed row is content-addressed by its canonical key-order-independent bytes and folded with its atom's uuid, so the same content yields the same uuid in every corpus (federation is set-union, re-seeding is idempotent by construction rather than by a remembered upsert), a re-parented or tampered row is caught because its uuid must recompute, and rows are DERIVED from the atom's own exports — never a re-typed constant that forks the truth on the next edit."
 atomPath: "seed/row"
 coordinate: "seed/row · 1/base · fc540933"
-contentUuid: "8feeb7ab-09b4-578f-a92a-fa15cdfcdac2"
-diamondUuid: "b8901137-44bb-8fac-9852-44dc430a1188"
+contentUuid: "53664fe4-481e-54e1-b640-6374bcebb93e"
+diamondUuid: "ea313c3e-a345-82a1-9cc8-bf89d32f9cca"
 uuid: "fc540933-0acb-8469-b8d1-375e765fdbb2"
 horo: 1
 typography:
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1d23a1dd-52d8-8091-b460-2efc1722e35f"
+  computationUuid: "084d2b70-f1fb-83ff-ba44-9120dd230cfc"
   stages:
     - stage: path
       stageUuid: "0a1db11d-3295-87bd-832a-a155e0a41710"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "dd8dd87f-dee1-8a99-882b-eb73cbf548f7"
     - stage: horo
-      stageUuid: "936b0313-8a3f-821c-a3d0-eedce1ab532b"
+      stageUuid: "8da112eb-9942-8b39-9fc9-a07a616cb4a2"
     - stage: seal
       stageUuid: "2df6c1c0-e3e8-8bd5-aae5-27c1dfa0d4d9"
     - stage: uuid
-      stageUuid: "62dd8a56-603d-831e-9bf9-e4a42d78f5c4"
+      stageUuid: "7760d901-1f76-8518-859b-28106915b02b"
 version: 2
 ---
 # seed/row — the entanglement continued one scale down

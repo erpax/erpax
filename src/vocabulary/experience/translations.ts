@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "experience",
-    "uuid": "4f84ab9f-e4f4-810d-839f-57987402cd39",
+    "uuid": "dc996876-f9fe-8afb-8bef-7b6502295918",
     "words": [
       "experience"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about experience — A schema.org component word, collided out of schema.org compounds — fused from OccupationalExperienceRequirements · experienceInPlaceOfEducation · experienceRequirements · monthsOf",
-    "uuid": "f527019a-bd13-8132-ab45-0a070e4b6612",
+    "uuid": "506ae5bf-4f29-883d-9c62-293fd18809ef",
     "words": [
       "use",
       "when",

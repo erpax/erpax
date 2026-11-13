@@ -3,13 +3,13 @@ name: schema
 description: "Use when defining, auditing, or evolving the logical data model — entity relationship diagrams, normalization, column definitions, table structure, field types, cardinality declarations. The canonical blueprint of the data structure."
 atomPath: schema
 coordinate: "schema · 7/descent · 96d8c1ea"
-contentUuid: "1fda8439-126c-5fb1-9a1b-9acb3a71d947"
+contentUuid: "ba763615-48f4-5d88-a52a-8025ff63d7d6"
 diamondUuid: "fc02728e-cd1d-86d0-b2fc-3fc075c10a53"
 uuid: "96d8c1ea-4c9e-8df9-9fc2-5168bb2d2893"
 horo: 7
 typography:
   partition: schema
-  bondDegree: 57
+  bondDegree: 56
 standards: []
 bindings: []
 signatures:

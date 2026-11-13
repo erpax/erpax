@@ -2,20 +2,20 @@
 name: float
 description: "Use when reasoning about float — Four institutions, four vocabularies, **one structure**: something opens with a float, signed movements pass through it, and at close somebody **counts it in discrete units**."
 atomPath: float
-coordinate: "float · 7/descent · a840f565"
-contentUuid: "f3b32295-c59b-5fcd-8f01-9cb86aa5cc1d"
-diamondUuid: "5e0ac1ea-72cf-8282-bb9c-b2a3e7d63ffb"
-uuid: "a840f565-5668-85a8-93ce-dfaa12810e6e"
-horo: 7
+coordinate: "float · 5/round · 366415de"
+contentUuid: "72d074a2-ffde-5261-957c-732bae83f0e3"
+diamondUuid: "24520dac-25ca-8d07-81db-ca4d4cf11fcb"
+uuid: "366415de-06dd-8e38-a399-3d59dac3c7cd"
+horo: 5
 typography:
   partition: float
-  bondDegree: 36
+  bondDegree: 28
 standards:
   - ISA 501 — physical count as audit evidence
   - ISO 4217 — currency and minor units
 bindings: []
 signatures:
-  computationUuid: "911951a8-edcf-8c33-84ed-92f62358635d"
+  computationUuid: "fe13b8a7-e047-8941-a77b-f0156aa0e999"
   stages:
     - stage: path
       stageUuid: "3401c4d4-a486-88d7-8bcd-9fec1e26e0f1"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "5772c4ef-61c5-8df5-a90f-7c44dc74f79a"
     - stage: horo
-      stageUuid: "1a37fa34-0981-8535-8101-0792ab0d375f"
+      stageUuid: "d786cca4-15ac-83b2-a021-3e7ab4640cac"
     - stage: seal
       stageUuid: "f4233c7b-9f73-8321-8a4a-0a4e07cdb46a"
     - stage: uuid
-      stageUuid: "1428b431-2efd-82d7-8c79-5897fc3a9156"
+      stageUuid: "ab49d039-02ee-8bf2-a482-0131e728153f"
 version: 2
 ---
 # float — a drawer, a chip tray, an armoury and a public till are one control

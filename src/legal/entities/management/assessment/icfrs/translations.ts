@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when performing or documenting management's SOX §404(a) assessment of internal controls over financial reporting — COSO-2013 framework evaluation across control environment, risk assessment, control activities, information, and monitoring per SOX §404(a) / COSO-2013 / PCAOB AS 2201. The management ICFR assessment collection.",
-    "uuid": "5548f56b-63e9-8b3b-b45c-5d24d592a673",
+    "uuid": "de03ca9b-62e2-85f9-9502-c6b00e2f773e",
     "words": [
       "use",
       "when",

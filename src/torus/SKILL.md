@@ -2,18 +2,18 @@
 name: torus
 description: "Use when reasoning about the two-directional collapse that closes into a donut — erpax falls into Payload (collections → canonical core) AND Payload falls into erpax (primitives are atoms; domains extract as @erpax/* plugins). The implosion (collapse) and the explosion (supernova) are one toroidal flow — the Rodin vortex. The shape of the whole."
 atomPath: torus
-coordinate: "torus · 5/round · 43b7d46f"
-contentUuid: "f420f442-ed42-5959-afd3-e12c5bde6b6a"
-diamondUuid: "2b30c766-1fa9-8b9a-8971-2826c14c3f54"
-uuid: "43b7d46f-1c24-8d09-843f-0a94ded8d655"
-horo: 5
+coordinate: "torus · 4/weave · e66e4132"
+contentUuid: "b928230c-f80e-58db-977a-edfb67352e0a"
+diamondUuid: "e2b47515-8782-8df6-9844-9e100b16ec51"
+uuid: "e66e4132-5db4-8aec-88e7-a960eda441be"
+horo: 4
 typography:
   partition: torus
-  bondDegree: 210
+  bondDegree: 190
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e2d668d9-7a21-8cae-9ea9-e9b2ddf044e8"
+  computationUuid: "a8716f0d-e41d-8c9d-8830-5950c3d2044a"
   stages:
     - stage: path
       stageUuid: "f22f8ed5-a793-83b7-a402-51439d258a6c"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "47696037-4a3c-853e-a1b3-b856393298ee"
     - stage: links
-      stageUuid: "7afba6b9-d774-8d45-b12e-8c96b8bec8b8"
+      stageUuid: "a418c6a1-08ab-88e3-9152-8feaca44d222"
     - stage: horo
-      stageUuid: "0bbf29f3-b4fb-841b-a15d-ab6441e7d657"
+      stageUuid: "a13be5fb-5917-8013-a854-57c363c6023c"
     - stage: seal
       stageUuid: "e288be7b-d7c4-8f3d-91fa-801115f80892"
     - stage: uuid
-      stageUuid: "0c02f655-bd75-8a4b-9279-5680f62e6301"
+      stageUuid: "4ec81287-8b41-86ff-b6e2-476a9d28ef0f"
 version: 2
 ---
 # torus — the two-way collapse, closed into a vortex

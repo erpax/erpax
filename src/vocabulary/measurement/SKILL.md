@@ -2,34 +2,34 @@
 name: measurement
 description: "Use when reasoning about measurement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/measurement"
-coordinate: "vocabulary/measurement · 5/round · 08378be2"
-contentUuid: "ce18c4ec-39d8-5de8-ae40-2307b952cf42"
-diamondUuid: "8627f066-c70e-8c2b-b09f-eeafcb8eca92"
-uuid: "08378be2-2731-8916-875f-ff600e43b913"
-horo: 5
+coordinate: "vocabulary/measurement · 7/descent · 876f8765"
+contentUuid: "c9c83308-6266-5dc5-969b-d0d082b9e0bd"
+diamondUuid: "a29254ee-e4ca-8a66-8582-46e250536e96"
+uuid: "876f8765-2298-8003-9643-9cab7f6b78cb"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 61
+  bondDegree: 50
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6a7f0d4a-98af-872d-a4b7-8684902e5c51"
+  computationUuid: "a3d4feb3-2a4e-865d-bba9-079cbee4b8cf"
   stages:
     - stage: path
       stageUuid: "11733a73-9716-8af7-a3c2-5f23b2bb760c"
     - stage: trinity
       stageUuid: "a2132c1b-fa90-8307-a429-1636fa7cbbb4"
     - stage: boundary
-      stageUuid: "1fa94a69-5683-823f-a136-4900a772bae1"
+      stageUuid: "54e6fae4-06ec-8e6d-96b7-0ac36a558090"
     - stage: links
-      stageUuid: "f9eee1b9-4c77-8185-a0e4-47d60e387105"
+      stageUuid: "a74716f1-6b95-8626-aeda-81ecb5238e8e"
     - stage: horo
-      stageUuid: "17ad9392-85de-8ea1-be3d-39646301a6ee"
+      stageUuid: "e783ac68-67e9-841c-9934-79a1fe2b0e65"
     - stage: seal
       stageUuid: "14a0d0b3-31b5-8119-9f48-8b51ac7af99e"
     - stage: uuid
-      stageUuid: "cacc6c85-134d-84ee-9a07-0172d8e80a2e"
+      stageUuid: "384af8cf-7fa8-8356-9d8e-62926286e3d4"
 version: 2
 ---
 # measurement

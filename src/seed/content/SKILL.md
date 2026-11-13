@@ -3,18 +3,18 @@ name: content
 description: "Use when loading documents as data instead of building them into the site — markdown becomes nested pages (documents, with a parent and breadcrumbs) and posts (publications, which reference the pages and product variants they are based on), written through the Local API with the editor of the field they land in, idempotently by content address."
 atomPath: "seed/content"
 coordinate: "seed/content · 4/weave · c0ed2cf1"
-contentUuid: "f047cd29-d309-5400-bfeb-f8dcbfea0be8"
-diamondUuid: "5b6fb4b8-c3e6-8e9a-a28d-da15a3e841cd"
+contentUuid: "356c32e0-097a-5909-b0ab-b0f6fddcd227"
+diamondUuid: "5e08e273-271b-84ca-89c1-814989f7d159"
 uuid: "c0ed2cf1-f74c-8238-9225-c028e2dfc09f"
 horo: 4
 typography:
   partition: seed
-  bondDegree: 120
+  bondDegree: 86
 standards:
   - "ISO-15836-1:2017 dublin-core title description"
 bindings: []
 signatures:
-  computationUuid: "8a94da29-6469-885a-a9a3-6607e3fe6840"
+  computationUuid: "294f0a9d-0ebb-8f8f-88ce-a8d612516c01"
   stages:
     - stage: path
       stageUuid: "85deb229-97a1-822d-8a3f-28b499b79036"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1aa7f8ab-db2f-80c7-a35c-a9789dc4c6fd"
     - stage: horo
-      stageUuid: "f37873ac-fac1-84b0-8efd-45fd1cb7955e"
+      stageUuid: "2e9dee69-a695-83dc-97eb-f7cd39bbfc13"
     - stage: seal
       stageUuid: "086e6c7a-c6fc-80a8-b16c-83b1ad2a15c1"
     - stage: uuid
-      stageUuid: "57a4b22a-57c6-87b0-b7e5-23b19d9c4539"
+      stageUuid: "f0f22c7b-b586-81b1-b80f-bb9d00faaa7e"
 version: 2
 ---
 # seed/content — documents are nested pages, publications are posts

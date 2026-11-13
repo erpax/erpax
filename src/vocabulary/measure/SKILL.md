@@ -2,33 +2,33 @@
 name: measure
 description: "Use when a value carries a physical quantity — a number + a unit of measure (UN/CEFACT Rec 20: KGM/MTR/LTR/HUR/H87…), UoM-aware rounding, unit conversion, BOM/stock/production/line quantities. The MeasureConcern/quantity field-factory; a quantity is value+unit, never a unit-baked field name — the substance twin of currency (value+ISO-4217)."
 atomPath: "vocabulary/measure"
-coordinate: "vocabulary/measure · 4/weave · 8fbe092d"
-contentUuid: "45bdd0f9-617e-5aec-8c76-60526852a7e8"
-diamondUuid: "6dd369e6-ef3a-8954-882d-79137e913192"
-uuid: "8fbe092d-029f-8fe1-a1d6-f2b7651680a5"
-horo: 4
+coordinate: "vocabulary/measure · 5/round · f9096c07"
+contentUuid: "afe1ec77-5d5f-57b2-aa37-c18d627d4bfc"
+diamondUuid: "da3bf4ba-b05e-8da5-97b7-6f7d51578a2f"
+uuid: "f9096c07-1605-8efe-b75d-7ee55f6b6719"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 156
+  bondDegree: 122
 standards: []
 bindings: []
 signatures:
-  computationUuid: "57dbe74b-9469-855a-86ee-460cc6042404"
+  computationUuid: "1697e4e8-08ce-88f7-ab1e-ff67bf270480"
   stages:
     - stage: path
       stageUuid: "d4c065a9-c7e7-8fb3-93ba-2b2822c9dba2"
     - stage: trinity
       stageUuid: "e3f5b6d5-fd87-8c28-9c68-c962deb565bd"
     - stage: boundary
-      stageUuid: "09e8b063-1bdd-8ab5-8bc2-44f52b7d1a25"
+      stageUuid: "29910bef-ddd2-8c4c-ad41-5a285ef2e3ea"
     - stage: links
-      stageUuid: "c34320b2-dc1b-8bd9-8ab4-ad7fccc02c8a"
+      stageUuid: "b534e759-142e-8db3-b7fc-94bb73c35e4b"
     - stage: horo
-      stageUuid: "b72ce1a6-0e3f-818c-81bf-8ae56b4ad637"
+      stageUuid: "1049798e-8643-8810-acd7-bafa82cd539e"
     - stage: seal
       stageUuid: "6ae3f999-d337-82d9-a780-ef2ebb491e33"
     - stage: uuid
-      stageUuid: "51cfd83f-c502-88dd-948c-de91121ec084"
+      stageUuid: "977ab94f-0b0a-8cd0-8464-2433524aa561"
 version: 2
 ---
 # measure — a quantity is value + unit of measure (never baked into the name)

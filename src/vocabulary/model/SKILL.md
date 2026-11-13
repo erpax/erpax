@@ -2,34 +2,34 @@
 name: model
 description: "Use when reasoning about model — A 3D model represents some kind of 3D content, which may have encodings in one or more MediaObjects. Many 3D formats are available (e.g. see Wikipedia); specific encoding formats c"
 atomPath: "vocabulary/model"
-coordinate: "vocabulary/model · 7/descent · 92a1134b"
-contentUuid: "7449f9e5-d035-5a98-8ce2-4ea7539e34a0"
-diamondUuid: "64c5c5b9-1327-845b-a2f5-79b75990ba0f"
-uuid: "92a1134b-f2db-8c07-8c24-3ff7ba504a11"
-horo: 7
+coordinate: "vocabulary/model · 1/base · afd955d4"
+contentUuid: "ca267616-9e38-575f-b807-66060bcbcd24"
+diamondUuid: "2ced6516-b65d-8e2f-9117-50862c907b1c"
+uuid: "afd955d4-0c33-8da5-b2be-ca63fb4345f4"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 32
+  bondDegree: 28
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "244562b7-fbf7-8b11-a9fa-972ea0be6577"
+  computationUuid: "0bf86556-4a25-83a1-a669-e261733560ff"
   stages:
     - stage: path
       stageUuid: "5e782d3e-3467-8950-8bee-977e175cd85c"
     - stage: trinity
       stageUuid: "1016fd35-3399-84ca-b895-93b2a8ec09b6"
     - stage: boundary
-      stageUuid: "46843ae3-d52f-8028-b8d9-004e277c74d9"
+      stageUuid: "60e2f95d-f2df-8c90-bb34-e5f1bf2d3a95"
     - stage: links
-      stageUuid: "9a56dc47-f263-80ce-9d06-2af128a972a6"
+      stageUuid: "4645b546-fbb6-8461-bd0f-dcfd12b87a7d"
     - stage: horo
-      stageUuid: "18635724-6283-8d13-9e98-4d96e4e48325"
+      stageUuid: "c7d25021-8e37-8188-9de7-f91185349a29"
     - stage: seal
       stageUuid: "d455d048-d48b-8fbd-aa96-9d56176bc629"
     - stage: uuid
-      stageUuid: "f1fcd047-4c61-8078-b25a-fda6c120bd9d"
+      stageUuid: "b7b61f75-36fd-8261-bc04-b59d74171c79"
 version: 2
 ---
 # model

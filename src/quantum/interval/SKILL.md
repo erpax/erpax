@@ -3,13 +3,13 @@ name: interval
 description: "Use when reasoning about interval — Special relativity's decidable core, proved for **all integers** rather than checked on a carrier, and carrying one consequence this corpus actually needs."
 atomPath: "quantum/interval"
 coordinate: "quantum/interval · 5/round · 0eccd9e6"
-contentUuid: "77ee5632-6c80-51ca-94ec-c349db10bb45"
+contentUuid: "34130898-189d-5d48-b90c-f90d4f7a2498"
 diamondUuid: "dd403c0e-58fe-8e1a-af44-b16891009a97"
 uuid: "0eccd9e6-7471-88cd-8aa1-c2c3b3f690a5"
 horo: 5
 typography:
   partition: quantum
-  bondDegree: 21
+  bondDegree: 20
 standards: []
 bindings: []
 signatures:
@@ -48,7 +48,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "07b7f42c-1045-8c6c-8b5e-28214655b394"
-    contentUuid: "77ee5632-6c80-51ca-94ec-c349db10bb45"
+    contentUuid: "34130898-189d-5d48-b90c-f90d4f7a2498"
 version: 2
 ---
 # quantum/interval — the light cone is not a matter of opinion, and that is what a ledger seals on
@@ -94,4 +94,4 @@ A `theorem` verdict **names** a Lean theorem, and `phenomena()` **reads the file
 
 Composes: [[quantum]] · [[merge]] · [[rules]]/prose · [[law]].
 
-<sub>content-uuid `77ee5632-6c80-51ca-94ec-c349db10bb45` · account `quantum/interval` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `34130898-189d-5d48-b90c-f90d4f7a2498` · account `quantum/interval` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

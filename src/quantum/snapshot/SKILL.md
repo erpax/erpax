@@ -2,18 +2,18 @@
 name: snapshot
 description: "Use when finding and developing digital quantum snapshots — any stateful thing has a snapshot (the collapse of its state at a moment), and its quantum twin is the content-addressed, immutable, append-only chain that nests layer after layer. The skill that finds a domain's snapshots and develops their twins."
 atomPath: "quantum/snapshot"
-coordinate: "quantum/snapshot · 2/share · 4edbff0c"
-contentUuid: "91b0c68b-6c79-51e1-8e95-490925289039"
-diamondUuid: "cdb9e01a-4399-8508-bfd8-310ecc5be6fc"
-uuid: "4edbff0c-d577-8d90-9a64-45ab6078dfd1"
-horo: 2
+coordinate: "quantum/snapshot · 7/descent · 1f639e36"
+contentUuid: "e5641aea-b1f1-54bb-8835-1d51a3525ab0"
+diamondUuid: "a478dd4d-8f1d-8f93-8291-34cc18fa5a53"
+uuid: "1f639e36-7f0b-8911-b3ae-f6e7a0db9603"
+horo: 7
 typography:
   partition: quantum
-  bondDegree: 94
+  bondDegree: 45
 standards: []
 bindings: []
 signatures:
-  computationUuid: "19bb2989-b307-8fd5-a36c-c88cc7d9be4e"
+  computationUuid: "e4ea4d75-75c6-8c52-af8e-40d4e78b565f"
   stages:
     - stage: path
       stageUuid: "c27ce020-93f5-845a-9d3c-9d73201a1a86"
@@ -22,23 +22,23 @@ signatures:
     - stage: boundary
       stageUuid: "3495d293-3e3f-8271-9e4a-518042fdc8ce"
     - stage: links
-      stageUuid: "6eb17dbb-25f8-85e3-8627-583095386d24"
+      stageUuid: "54df65bc-f5ad-88a3-8d12-b5cb9880bd10"
     - stage: horo
-      stageUuid: "0f8e733c-c1da-844a-8d40-3751ba3b7828"
+      stageUuid: "ebd08c63-1efe-8932-aab8-960aa6d213ea"
     - stage: seal
       stageUuid: "22faa2dc-db4d-82c5-8b26-066d3267d0b4"
     - stage: uuid
-      stageUuid: "c6b46057-6471-83b9-bbbe-267c87fd15c6"
+      stageUuid: "4a001fbe-cd9a-8e13-a104-123d099e7e73"
 quantum:
   superposition:
-    - audio
-    - biometric
-    - collapse
-    - deploy
+    - akashic
+    - atom
     - device
     - emr
-    - folded
+    - file
+    - finality
     - fs
+    - law
     - superposition
   collapse:
     - "Use when finding and developing digital quantum snapshots — any stateful thing has a snapshot (the collapse of its state at a moment), and its quantum twin is the content-addressed, immutable, append-only chain that nests layer after layer. The skill that finds a domain's snapshots and develops their twins."
@@ -48,10 +48,10 @@ quantum:
     - "[[quantum/emr]]"
     - "[[quantum/fs]]"
     - "[[reality]]"
-    - "snapshot"
     - "[[uuid]]"
     - "[[versions]]"
     - "a snapshot collapses a system's state at one moment, but its twin keeps the whole superposition — every captured state is content-uuid'd, immutable, and append-only, so identical states merge to one and the chain nests layer after layer without bound. The invariant is reconstructibility: any past layer can be rebuilt from the chain and nothing is ever lost; that round-trip is the gate."
+    - snapshot
   seal:
     sandbox: false
     receipt: false
@@ -59,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "19bb2989-b307-8fd5-a36c-c88cc7d9be4e"
-    contentUuid: "91b0c68b-6c79-51e1-8e95-490925289039"
+    computationUuid: "e4ea4d75-75c6-8c52-af8e-40d4e78b565f"
+    contentUuid: "e5641aea-b1f1-54bb-8835-1d51a3525ab0"
 version: 2
 ---
 # quantum/snapshot — layer after layer
@@ -79,4 +79,4 @@ Snapshots **nest, layer after layer** (fractal): a filesystem snapshot ([[quantu
 
 **Law — [[law]]: a snapshot collapses a system's state at one moment, but its twin keeps the whole superposition — every captured state is content-uuid'd, immutable, and append-only, so identical states merge to one and the chain nests layer after layer without bound. The invariant is reconstructibility: any past layer can be rebuilt from the chain and nothing is ever lost; that round-trip is the gate.**
 
-<sub>content-uuid `91b0c68b-6c79-51e1-8e95-490925289039` · account `quantum/snapshot` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e5641aea-b1f1-54bb-8835-1d51a3525ab0` · account `quantum/snapshot` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -2,21 +2,21 @@
 name: access
 description: "Use when reasoning about how an agent acts — it does everything both through the MCP gateway (trust-native, sandboxed and receipted) and through the filesystem (direct), the two equivalent because content-addressed, the modality the choice of trust not of truth."
 atomPath: "agent/access"
-coordinate: "agent/access · 3/3 · 846ea4b1"
-contentUuid: "2e63ad1f-b522-57a1-97f7-5b79b2da5023"
-diamondUuid: "731e3ed9-6f2d-8a81-be75-ccd82f148793"
-uuid: "846ea4b1-ea52-8442-8e6e-4fd063b659be"
-horo: 3
+coordinate: "agent/access · 6/6 · cfba9772"
+contentUuid: "e6424bd8-90cc-5ed7-b8ba-a8c567e4b420"
+diamondUuid: "e1f8762a-3628-8301-b84a-4166f61093d1"
+uuid: "cfba9772-5721-8227-a6e2-93c0d11aae3b"
+horo: 6
 typography:
   partition: agent
-  bondDegree: 440
+  bondDegree: 414
 standards:
   - MCP
   - "RFC-9562"
   - "the official @payloadcms/plugin-mcp gateway · content-addressed identity (RFC 9562) · trust-native sandbox+receipt"
 bindings: []
 signatures:
-  computationUuid: "8dcd6668-ce7d-887f-93a6-c7f720a65e2d"
+  computationUuid: "585fd369-9554-8d0a-ac26-48c4698681e2"
   stages:
     - stage: path
       stageUuid: "3fb4d3c2-4714-8964-bbe5-4467000d9a59"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "0f117bae-7425-86eb-b68e-04da74c6ac07"
     - stage: links
-      stageUuid: "0b08e120-ebe7-838c-b72f-8da20dd1f389"
+      stageUuid: "611fee29-5ca4-8380-bb70-af004d03c6fe"
     - stage: horo
-      stageUuid: "e3e71841-22dc-88a7-9ec8-f3a5665fdced"
+      stageUuid: "90a27e45-5313-8115-8ece-27926b260d59"
     - stage: seal
       stageUuid: "8fa2b28a-5feb-84cf-b496-50504bdaff63"
     - stage: uuid
-      stageUuid: "b51c0e62-e58e-8ddc-9db2-21992209f1a5"
+      stageUuid: "038cce85-8185-8b89-9503-949e87b32dbe"
 version: 2
 ---
 # agent/access — both doors: MCP and fs

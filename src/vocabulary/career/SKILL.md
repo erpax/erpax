@@ -2,33 +2,33 @@
 name: career
 description: "Use when modelling a work career as a life-course trajectory — трудова кариера — a sequence of positions on the harmonic allocation ladder walked over time. Late career is a late band on that ring (the maintenance→disengagement stage before decompression/retirement) where accumulated experience peaks against skill obsolescence and the status sign can flip with age. Derive the stage from the sequence and time; never store it."
 atomPath: "vocabulary/career"
-coordinate: "vocabulary/career · 8/crest · a0626dae"
-contentUuid: "f83607bb-7c2f-5296-91a5-83876ca096fb"
-diamondUuid: "d35eb312-dcd5-8907-a3b5-2613b7fe8b20"
-uuid: "a0626dae-7631-81b0-b2c7-f0fbeacc67f5"
-horo: 8
+coordinate: "vocabulary/career · 5/round · a3b986f8"
+contentUuid: "f5a15eb6-ea83-5442-a8d9-c8a122ffce0b"
+diamondUuid: "cd8f2392-e593-85a9-b103-0f635d9059cd"
+uuid: "a3b986f8-9bcd-8c94-9151-9fc66b02d649"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 45
+  bondDegree: 35
 standards: []
 bindings: []
 signatures:
-  computationUuid: "88a98085-8698-8008-bf6e-e6e52f07edee"
+  computationUuid: "4d0cab82-763b-804e-92fc-36782000b866"
   stages:
     - stage: path
       stageUuid: "adcfe4be-b41d-80f7-ac09-ba010b6c9b02"
     - stage: trinity
       stageUuid: "76021817-3bbf-89f4-8a8c-41fecb10d347"
     - stage: boundary
-      stageUuid: "22c332f9-8c63-83a7-91d1-e965619004bd"
+      stageUuid: "ae96e86a-2f7c-89a5-b34b-25a91da38451"
     - stage: links
-      stageUuid: "20e25282-1d3e-849e-a94a-9f0953d20194"
+      stageUuid: "d5350ef4-5c13-84f4-aa40-c811263e9b19"
     - stage: horo
-      stageUuid: "c4267caa-362c-8ad0-9022-2e6a8f50982a"
+      stageUuid: "69604ab2-93e3-800a-8e69-20322c3ba86e"
     - stage: seal
       stageUuid: "3a624c56-2377-8f88-b163-52a69ffb2ec5"
     - stage: uuid
-      stageUuid: "567798c2-48e4-8324-8b4a-b08f9c166a2b"
+      stageUuid: "8856f677-beff-8a3f-a365-cffe88369dc6"
 version: 2
 ---
 # career — the life-course work trajectory, a sequence of positions (трудова кариера)

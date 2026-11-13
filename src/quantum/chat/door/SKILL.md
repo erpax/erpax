@@ -2,18 +2,18 @@
 name: door
 description: "Use when an MCP area must open from the chat — chatDoor(session, { area: quantum | gate, door, args }) calls the area's own handlers in-process and folds one line of figures into the session; a refused call folds nothing."
 atomPath: "quantum/chat/door"
-coordinate: "quantum/chat/door · 8/crest · 3ff044fa"
-contentUuid: "e1feb1c9-5db2-56ec-9083-8b2d2ff6f858"
-diamondUuid: "4f709a74-b9bc-8590-9c20-160551248b3f"
-uuid: "3ff044fa-ea52-8497-a803-6e15bc66b7fc"
+coordinate: "quantum/chat/door · 8/crest · 529068c4"
+contentUuid: "9a445eb1-a697-54cf-9033-2c57ff661773"
+diamondUuid: "9edcfda7-79fb-8191-86a9-80e9ba415ec8"
+uuid: "529068c4-f53f-8898-8ecb-a92553f949cd"
 horo: 8
 typography:
   partition: quantum
-  bondDegree: 19
+  bondDegree: 15
 standards: []
 bindings: []
 signatures:
-  computationUuid: "5674e9ad-96c1-8207-a677-3c4de59950d3"
+  computationUuid: "353ceca9-5f21-8317-8f39-230c8f0b7da6"
   stages:
     - stage: path
       stageUuid: "ecbd639d-edec-836c-ad46-6eb5144a1b18"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "dd512fc1-bcb1-8f4b-81d4-c4d635b0815e"
     - stage: links
-      stageUuid: "699497dd-76ed-8146-8662-27d5214a4285"
+      stageUuid: "80f3961c-ceb8-8dc0-a338-ed81c155a913"
     - stage: horo
-      stageUuid: "632ddf3d-779a-8aed-8d77-01e66303af6b"
+      stageUuid: "9fd66594-bf28-8940-86c0-abd2a1d54256"
     - stage: seal
       stageUuid: "360ee8bc-0d7b-88fa-9427-c74b23e45e0b"
     - stage: uuid
-      stageUuid: "ff92b6b3-cfdc-8553-8deb-778275e234fa"
+      stageUuid: "e7f81477-f885-8c90-9b53-0a622a53f76c"
 quantum:
   superposition:
     - chat
@@ -36,7 +36,6 @@ quantum:
     - law
     - merge
     - sti
-    - time
     - superposition
   collapse:
     - "Use when an MCP area must open from the chat — chatDoor(session, { area: quantum | gate, door, args }) calls the area's own handlers in-process and folds one line of figures into the session; a refused call folds nothing."
@@ -47,8 +46,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "5674e9ad-96c1-8207-a677-3c4de59950d3"
-    contentUuid: "e1feb1c9-5db2-56ec-9083-8b2d2ff6f858"
+    computationUuid: "353ceca9-5f21-8317-8f39-230c8f0b7da6"
+    contentUuid: "9a445eb1-a697-54cf-9033-2c57ff661773"
 version: 2
 ---
 # quantum/chat/door — an MCP area's tools, opened from the chat
@@ -83,4 +82,4 @@ child atom it already was.**
 
 Composes: [[quantum]]/chat/routing · [[quantum]]/register · [[rules]]/concentration · mcp · [[law]].
 
-<sub>content-uuid `e1feb1c9-5db2-56ec-9083-8b2d2ff6f858` · account `quantum/chat/door` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `9a445eb1-a697-54cf-9033-2c57ff661773` · account `quantum/chat/door` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

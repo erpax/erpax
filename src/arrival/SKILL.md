@@ -3,34 +3,34 @@ name: arrival
 description: "Use when a push must be judged where it lands — the pre-push hook runs before the push and cannot see a workflow that fails after it, so the land lane pushes main and then asks the forge for every workflow run and check run on that exact sha. Silence is UNMEASURED and never a pass, only a push judges a push, a cancelled scan is not a clean scan, and an unrostered foreign check is judged and named. Ported from uuidna's post-push arm. Run: pnpm erpax land (push, cure, ask) · pnpm erpax land verdict <sha>"
 atomPath: arrival
 coordinate: "arrival · 2/share · cd34aaa4"
-contentUuid: "b1fc678f-d41c-5b8a-91e6-8156b3c87242"
-diamondUuid: "449fb74d-aa7e-8b6c-bca4-1dc518255e32"
+contentUuid: "093ca289-d3fc-5952-b035-d11bb14dc971"
+diamondUuid: "55ac91c2-6a03-8503-ab29-311a3e251476"
 uuid: "cd34aaa4-2967-8dcc-a8b0-b0d8ce58e31c"
 horo: 2
 typography:
   partition: arrival
-  bondDegree: 58
+  bondDegree: 41
 standards:
   - "ISO-19011"
   - "ISO-19011:2018 §6.4 — audit evidence: a check that did not run produced none"
 bindings: []
 signatures:
-  computationUuid: "900f5eb3-3205-807a-a24c-ea2a7f50335b"
+  computationUuid: "a7c49099-3b9d-820f-a5ab-23e0e2bb2233"
   stages:
     - stage: path
       stageUuid: "7beef556-c379-8fc3-b2a4-db3968264dd7"
     - stage: trinity
       stageUuid: "9b555165-f60c-8728-a9fb-119fbd29d18d"
     - stage: boundary
-      stageUuid: "8908bad8-e3aa-82d8-a8a1-7e80d9162fa4"
+      stageUuid: "f885017c-7b61-81c2-bfe5-34d215590a69"
     - stage: links
-      stageUuid: "2de31c23-4de8-855c-9d98-48d2bf72d9a2"
+      stageUuid: "6eb95681-bd43-8e2a-8481-c9c9b2e1e476"
     - stage: horo
-      stageUuid: "a46bb31c-178b-81b3-94a9-92ae64c83186"
+      stageUuid: "f5e78bf1-ecd0-8ea0-bdb1-f13340d1790b"
     - stage: seal
       stageUuid: "1e5a6d02-20c3-8da0-860f-745e21c832bb"
     - stage: uuid
-      stageUuid: "60159b84-be7c-8620-9166-4379a03d938d"
+      stageUuid: "20fde0ed-75b0-8c10-86b2-7c16bdd7f7e4"
 version: 2
 ---
 # arrival — a push has arrived when the forge agrees, not when the remote moved

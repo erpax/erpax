@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vibration",
-    "uuid": "bf4b974a-b9e4-8062-9144-4502c0fc0786",
+    "uuid": "c913697f-ae6d-8dd5-aab2-687fb04d63bc",
     "words": [
       "vibration"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about touch/haptics from sequence position in erpax — the third A432 render channel that completes colour (cmyk) + sound (notes) into the sight·sound·touch sensory trinity. A horo position decodes to a haptic pulse (a sub-audible A432 sub-harmonic); the body's own measurable vibration (physiological tremor, ballistocardiographic micro-motion) is the analog twin. Nested under rodin.",
-    "uuid": "4a3e7e57-6786-8ef4-bd59-252e30e3edfa",
+    "uuid": "f9bcae7f-2db8-8308-82ae-d704d0eae2a7",
     "words": [
       "use",
       "when",

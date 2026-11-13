@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reaching the pricing side of commerce — tiers, subscriptions, metered usage — through its own namespace; the face re-exports the commerce barrel while the matter is still being lifted out of the hub.",
-    "uuid": "df07e7cf-06ab-8274-a70c-537ac85cda2b",
+    "uuid": "86019648-e3f5-8868-921a-e59ef2101d13",
     "words": [
       "use",
       "when",

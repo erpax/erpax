@@ -3,13 +3,13 @@ name: fuel
 description: "Use when reasoning about fuel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/fuel"
 coordinate: "vocabulary/fuel · 5/round · 379bbac2"
-contentUuid: "a4e4fc0b-41e7-5a76-bf67-19def19c200e"
+contentUuid: "d99be344-693b-5897-bf03-7569a91b6997"
 diamondUuid: "eb6e8fff-e70b-8fbc-882c-9891ce1c24da"
 uuid: "379bbac2-1a31-8452-bc2c-4acd95e0ccf6"
 horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 29
+  bondDegree: 28
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

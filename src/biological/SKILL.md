@@ -3,7 +3,7 @@ name: biological
 description: "Use when reasoning about biological as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: biological
 coordinate: "biological · 2/share · b5945a53"
-contentUuid: "80b7de3a-b5cd-51ea-a1b8-f0db427a6453"
+contentUuid: "a2650575-81d1-5420-9899-39797d8b598e"
 diamondUuid: "791b0394-c3b0-8535-8bc6-d7e7850cb256"
 uuid: "b5945a53-33ab-8bd8-b6a0-d2f9ab2a2cba"
 horo: 2
@@ -13,6 +13,7 @@ typography:
 standards:
   - "IAS-41"
   - "IFRS-13"
+  - schema.org
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:

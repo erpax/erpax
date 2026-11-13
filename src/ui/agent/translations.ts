@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "agent",
-    "uuid": "ed548487-5153-8638-8645-abafe64cbf02",
+    "uuid": "dfff6243-d3ed-80bc-b0b3-d7b73dfe2026",
     "words": [
       "agent"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the other side of agent/ui — ui/agent recovers the atom from its UI route (the inverse of the render), so the rendering path is a balanced double-entry; always encode both sides of a path for karmic balance.",
-    "uuid": "47af7be0-a37a-842e-9ba0-d7abbd156a88",
+    "uuid": "21bc7837-b1be-89c6-83cc-9c8cc73871ac",
     "words": [
       "use",
       "when",

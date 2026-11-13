@@ -3,7 +3,7 @@ name: chain
 description: "Use when reasoning about chain — starts a chain at and extends it: addresses the pair (previous, content), so each link's identity depends on everything before it. walks the and reports where the walk breaks."
 atomPath: "uuid/chain"
 coordinate: "uuid/chain · 1/base · e615f063"
-contentUuid: "affbe8d9-8e97-5ad9-9de8-afc969f8ed5f"
+contentUuid: "20b87954-69a5-5106-9833-056cab56aafd"
 diamondUuid: "2fb26628-fe77-8bf5-baca-29b3b3a249d9"
 uuid: "e615f063-2455-8fe5-a5cd-e97d2fbcd692"
 horo: 1
@@ -16,6 +16,7 @@ standards:
   - "NIST FIPS 180-4 SHA-256"
   - RFC 8785 JSON Canonicalization Scheme
   - RFC 9562 §5.8 uuidv8
+  - "RFC-8785"
 bindings: []
 signatures:
   computationUuid: "cdcc6151-252c-8de4-b551-5a22679c4ddb"

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the self returns to the ONE — the round: the sequence closes on 1 and 9→1 opens the next dimension (self-applied one at forward-coil position 5/round). The outward stroke completing; the One where all selves merge.",
-    "uuid": "d1508d9c-8a45-8c60-ad6e-6d808b3cbdd3",
+    "uuid": "ee27aca2-d5a3-8c5d-bbde-8e2360bed436",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about teller — Everything structural — the derived total, the signed variance, the void-on-illegal-count rule — lives in float, because a chip tray, an armoury and a public till obey the same…",
-    "uuid": "2c003ae2-18aa-8185-9f9a-666d6f9d9e15",
+    "uuid": "546c7c4f-b7dd-8d87-8e41-83963972f9e8",
     "words": [
       "use",
       "when",

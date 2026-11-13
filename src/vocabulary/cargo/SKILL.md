@@ -2,34 +2,34 @@
 name: cargo
 description: "Use when reasoning about cargo as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/cargo"
-coordinate: "vocabulary/cargo · 8/crest · 150c1e7a"
-contentUuid: "5a167f2c-ac5b-5e0c-824c-b03442a89939"
-diamondUuid: "11fd8e10-ef88-8e5e-ae8f-6e8d0c54811d"
-uuid: "150c1e7a-1173-8c6a-bd47-3901c6782020"
-horo: 8
+coordinate: "vocabulary/cargo · 7/descent · a0e6429a"
+contentUuid: "f5986158-94a5-5695-a27f-4ca47aa452e1"
+diamondUuid: "3fe1e6fd-46d8-80a6-af53-691d3e510732"
+uuid: "a0e6429a-313a-8846-bb84-065a150a07aa"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 19
+  bondDegree: 15
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "da0af7af-eacb-87fc-85b0-1f925552e605"
+  computationUuid: "5a11e7cd-7b0b-8aa3-821f-ca3932f8491e"
   stages:
     - stage: path
       stageUuid: "ca4f8b46-e41f-8c45-9da0-0e7ba13e34b1"
     - stage: trinity
       stageUuid: "05d60413-67aa-8372-9487-2b4b1a3974c2"
     - stage: boundary
-      stageUuid: "6cf6ab33-d0b1-8b88-a634-1f52771eeba6"
+      stageUuid: "e0994af9-4f05-8b43-a0fa-74148dcd7d47"
     - stage: links
-      stageUuid: "7f5d0f27-db48-8a9d-8104-ea899fc341f2"
+      stageUuid: "28bd48d3-71a1-883e-9b77-c61f42c0199d"
     - stage: horo
-      stageUuid: "977e224f-f15e-8e77-9775-c569e5079d8a"
+      stageUuid: "46a30876-a886-834e-abca-98cb8a23ce85"
     - stage: seal
       stageUuid: "4fd033b9-d102-80ed-936b-1e1dbf9a7287"
     - stage: uuid
-      stageUuid: "d58fe497-198f-8657-874f-0d922e5ab3b5"
+      stageUuid: "e5daf718-951c-8d20-9f3a-f25476c9815f"
 version: 2
 ---
 # cargo

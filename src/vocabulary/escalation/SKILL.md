@@ -2,33 +2,33 @@
 name: escalation
 description: "Use when a ticket, issue, or complaint requires urgency upgrade — SLA breach, priority elevation, management review, or handoff to higher authority. The action of moving a matter up the hierarchy by severity/urgency."
 atomPath: "vocabulary/escalation"
-coordinate: "vocabulary/escalation · 1/base · 97677069"
-contentUuid: "72d83bfd-ce16-5c7e-9f57-3837f5f17aa6"
-diamondUuid: "5e618f7f-aae1-8838-a9ba-7f7e229ae56d"
-uuid: "97677069-c550-8505-bf63-d199e939f353"
-horo: 1
+coordinate: "vocabulary/escalation · 5/round · 2317835d"
+contentUuid: "dff339e0-2949-5c8e-9fd1-cd0c9096f21a"
+diamondUuid: "64f63582-b450-8585-8e5b-0ea7aaba2d75"
+uuid: "2317835d-d181-8db9-b2de-1b71173c2b3d"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 28
+  bondDegree: 18
 standards: []
 bindings: []
 signatures:
-  computationUuid: "db528b9e-4039-856f-8e81-72e0b55014c4"
+  computationUuid: "837433a3-d258-8cbe-9017-6dfdc70b206f"
   stages:
     - stage: path
       stageUuid: "0924fbc0-50c1-8724-a514-734dcd63d71e"
     - stage: trinity
       stageUuid: "c57e096f-39e1-880a-9a18-70f43d20d0d0"
     - stage: boundary
-      stageUuid: "ded359bf-6534-89d3-ad19-23c73a6fd66c"
+      stageUuid: "8688edea-fb2c-8e59-baab-885772567fcf"
     - stage: links
-      stageUuid: "6b48f50e-5e17-8d09-bf97-2143095cab55"
+      stageUuid: "cdde48f5-1170-85a2-85af-aa0218ad4437"
     - stage: horo
-      stageUuid: "964bd648-a311-8bfd-9ae7-8f0e15444ed2"
+      stageUuid: "8449a4db-be1d-8a15-a6de-f575c0824086"
     - stage: seal
       stageUuid: "ad27a179-e4e5-88e4-a588-061f4c6f8906"
     - stage: uuid
-      stageUuid: "9322854f-7e88-8d5e-8e5a-b1d7e1dbc5e7"
+      stageUuid: "4e9b49be-f7bc-80b5-bf6f-c1ad72cc5167"
 version: 2
 ---
 # escalation

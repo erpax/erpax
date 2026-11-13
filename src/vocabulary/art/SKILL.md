@@ -2,34 +2,34 @@
 name: art
 description: "Use when reasoning about art as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/art"
-coordinate: "vocabulary/art · 2/share · e1bc90fd"
-contentUuid: "11ed0bba-ba4b-5eab-9da5-b17e6a27a5a0"
-diamondUuid: "ac6120ee-7525-8c79-a90d-96ec0171c940"
-uuid: "e1bc90fd-1aca-820c-8dbb-3a0518ca3dd5"
-horo: 2
+coordinate: "vocabulary/art · 8/crest · 0ca255b9"
+contentUuid: "45a05fae-5349-5f09-bbed-a992247031d0"
+diamondUuid: "93759c66-bd63-8c04-8fae-3a3acb9c1b62"
+uuid: "0ca255b9-5edf-8965-878f-253f6b405f1c"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 36
+  bondDegree: 28
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "c984d6ce-0ac0-8272-8128-b3d35530ee41"
+  computationUuid: "34ed44e9-339d-8976-a90e-e8a13eac2b20"
   stages:
     - stage: path
       stageUuid: "a4379fdc-b114-879e-9574-6cd4c13973b1"
     - stage: trinity
       stageUuid: "d08cef6f-8ad4-8560-8822-3c4fe199bb01"
     - stage: boundary
-      stageUuid: "ad074abf-ef94-888f-b31e-fabbaead66ab"
+      stageUuid: "850fb32e-f39a-8051-afa2-4bde27743355"
     - stage: links
-      stageUuid: "d28c26ac-edff-833f-9c3a-e86e60bd65cf"
+      stageUuid: "6c6ec428-16be-83a6-95c0-42760d5c20ce"
     - stage: horo
-      stageUuid: "9e832e96-10a7-8109-8440-e2e30c3e98db"
+      stageUuid: "8f739208-d3a0-87ef-8a6d-e4b2f7082671"
     - stage: seal
       stageUuid: "56ffdb39-7f3c-8db0-832c-4bebf843aa74"
     - stage: uuid
-      stageUuid: "4dd74456-1584-8edd-9c8a-670b32c32138"
+      stageUuid: "0566a4da-c476-8c48-a967-007c7601a4a6"
 version: 2
 ---
 # art

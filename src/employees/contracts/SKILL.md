@@ -3,19 +3,19 @@ name: contracts
 description: "Use when modelling the employment contract — the labour anchor a work shift is worked under (etrima work_shifts reference it, 376 780 rows). A homonym of the IFRS-15 customer contract, deliberately distinct by path: this is the labour-law agreement with an employee (Bulgarian Кодекс на труда чл.67/68/70), not the revenue agreement with a customer. legalGround is open text because one article is written four ways in real data; an absent endDate IS the indefinite contract."
 atomPath: "employees/contracts"
 coordinate: "employees/contracts · 1/base · 6d366828"
-contentUuid: "216868f8-435c-5a51-b5c4-d09aafd8b2e4"
-diamondUuid: "25776e07-584b-8d6f-973b-2a111c381f40"
+contentUuid: "9249712d-6ca7-5617-b3f1-6ea668ef3b8c"
+diamondUuid: "845a1e92-5b2f-8b56-b828-14351b835c99"
 uuid: "6d366828-0a0c-8994-9935-1013d6933c98"
 horo: 1
 typography:
   partition: employees
-  bondDegree: 97
+  bondDegree: 85
 standards:
   - "Bulgarian Labour Code (Кодекс на труда) — чл.67 indefinite · чл.68 fixed-term · чл.70 probationary"
   - "ISO-8601 — contract term dates"
 bindings: []
 signatures:
-  computationUuid: "250f179c-1471-8077-a9be-90717f74fd86"
+  computationUuid: "c6eb62c1-5918-8b1c-a7b7-b41b10bbbd4a"
   stages:
     - stage: path
       stageUuid: "71dc0324-bddb-8a5a-b98b-662836a47aee"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "8c343738-2bd0-87cc-95c8-0b9e59fbafdb"
     - stage: horo
-      stageUuid: "b92c6c3e-9e45-8de1-920f-bf8a24084c1f"
+      stageUuid: "73cb777b-2525-80a2-ac51-796c644bcfee"
     - stage: seal
       stageUuid: "9628d650-7d6b-8ca5-938c-990b52b254ab"
     - stage: uuid
-      stageUuid: "21721c7c-faa7-8f03-a23f-ba96a5ae47ba"
+      stageUuid: "2e5d69cc-66e6-826c-99f4-bd0bad0518a3"
 version: 2
 ---
 # contracts — the employment contract (the labour anchor)

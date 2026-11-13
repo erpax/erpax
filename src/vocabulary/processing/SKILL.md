@@ -2,34 +2,34 @@
 name: processing
 description: "Use when reasoning about processing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/processing"
-coordinate: "vocabulary/processing · 4/weave · 14e64f35"
-contentUuid: "29d9261b-813c-5d65-b4c9-7e89a25fab3e"
-diamondUuid: "2f753a51-e696-8682-8659-2a3ebdb75310"
-uuid: "14e64f35-5e63-8984-869e-bfb8267f826e"
-horo: 4
+coordinate: "vocabulary/processing · 1/base · 491e10cc"
+contentUuid: "0614ca92-e190-5703-9976-261dc70b20d0"
+diamondUuid: "308d3f52-d731-8edb-8ba1-fba6709e76ce"
+uuid: "491e10cc-7ae0-8555-a079-96a34526d571"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 23
+  bondDegree: 20
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "96347240-3dd0-8c77-b55b-56bc38c0fdfc"
+  computationUuid: "3ebd9400-3385-8a62-922d-6318b894ca89"
   stages:
     - stage: path
       stageUuid: "1e43d8b5-0164-8953-959e-b4b7c14b2bfc"
     - stage: trinity
       stageUuid: "108e3b95-3dfe-88ea-9345-17325fdfdb47"
     - stage: boundary
-      stageUuid: "a24dd12f-6a5e-862d-a0be-6a43b6effadd"
+      stageUuid: "36750642-db97-8e15-a141-9e43bdc83c85"
     - stage: links
-      stageUuid: "2bd319c8-d510-86dd-b908-dca961fa26e4"
+      stageUuid: "0ecf622f-617a-85ca-a9be-88a9ef88fb49"
     - stage: horo
-      stageUuid: "f2369887-5ada-8e44-a473-254b8d082b92"
+      stageUuid: "893408b1-bfc6-8dbd-883e-da2deeff11d3"
     - stage: seal
       stageUuid: "b4f63021-7a73-8837-af5a-e58016059d53"
     - stage: uuid
-      stageUuid: "a479ef19-43db-8463-8d9e-4740d6e8172f"
+      stageUuid: "54ef5206-fe7f-8131-a8b9-9009a11640da"
 version: 2
 ---
 # processing

@@ -2,36 +2,36 @@
 name: insurance
 description: "Use when reasoning about insurance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: insurance
-coordinate: "insurance · 5/round · e57fddd1"
-contentUuid: "be1c2dcc-2521-5506-bba3-82cfa258074f"
-diamondUuid: "0ab49145-3368-88e5-93c5-ef5981aaf7e4"
-uuid: "e57fddd1-a415-8e63-a450-8817d1504d4c"
-horo: 5
+coordinate: "insurance · 1/base · b8df9d2b"
+contentUuid: "5561989d-683a-5fbb-8a65-a414e4713e8e"
+diamondUuid: "fe00673b-9609-88be-82ea-5d1af312f2c1"
+uuid: "b8df9d2b-af14-8cfd-9cdc-553eb366454a"
+horo: 1
 typography:
   partition: insurance
-  bondDegree: 27
+  bondDegree: 24
 standards:
   - "IFRS-13"
   - "IFRS-17"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "00357191-6fdd-8e26-914b-2850d5d3ba05"
+  computationUuid: "24970a38-397a-8893-852d-c36b30f972aa"
   stages:
     - stage: path
       stageUuid: "74bd54f6-6cd9-85dc-a711-372d13a5136e"
     - stage: trinity
       stageUuid: "f099d7df-31b3-891b-8dbc-baa1605bb977"
     - stage: boundary
-      stageUuid: "79095fc4-a8da-8588-8b51-da61caa78963"
+      stageUuid: "a4a8e6c5-cdc8-810e-ac3e-db3bf70d4fbf"
     - stage: links
-      stageUuid: "ee4f2a9e-bc9e-8895-a05e-0c4c2accdf80"
+      stageUuid: "ca9300b1-bc5d-8cbf-bf61-fe7af1e6bb77"
     - stage: horo
-      stageUuid: "1acde03e-5b9b-899c-8b98-be2d91c74c8e"
+      stageUuid: "9406275a-e9aa-82a8-bac3-7c02474547ac"
     - stage: seal
       stageUuid: "86b33dd0-5f10-85aa-8179-290ec6f30095"
     - stage: uuid
-      stageUuid: "9c5b7cad-1389-877f-b307-737f87ce8e46"
+      stageUuid: "d016acac-2447-860d-a137-24c948783807"
 version: 2
 ---
 # insurance

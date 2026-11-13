@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one dependency — the singular model of the dependencies collection (the plural store); a relationship where one item requires another.",
-    "uuid": "26da498c-52ee-80de-bffa-08c457b0a9cd",
+    "uuid": "70d9d003-0851-8cd4-a6b9-dd5e210a1ec3",
     "words": [
       "use",
       "when",

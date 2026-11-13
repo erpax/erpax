@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about zenodo — carried hand-typed counts, and they drifted:",
-    "uuid": "e3cd9d40-3c0d-8fbf-8a07-3daf2dede464",
+    "uuid": "deceab0a-4469-873f-b901-9e51ae504bc9",
     "words": [
       "use",
       "when",

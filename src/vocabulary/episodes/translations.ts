@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about episodes — An episode of a TV/radio series or season.",
-    "uuid": "0b17ba90-7e35-84ba-b0ff-de31640082c5",
+    "uuid": "12adfd88-7755-8525-a695-d5263137a8b1",
     "words": [
       "use",
       "when",

@@ -3,13 +3,13 @@ name: condition
 description: "Use when reasoning about condition as a medical facet of medical — vocabulary pivot to @/condition; nested not duplicated."
 atomPath: "medical/condition"
 coordinate: "medical/condition · 4/weave · 9ca29f2f"
-contentUuid: "a30ea5df-a65d-543c-9fc5-be0d696abad7"
+contentUuid: "2ff21517-4cba-53be-ae96-83395675a6af"
 diamondUuid: "6187ab48-4578-8585-9f4a-135a8e53f71d"
 uuid: "9ca29f2f-c14f-8166-a2d0-28577efcfd07"
 horo: 4
 typography:
   partition: medical
-  bondDegree: 36
+  bondDegree: 35
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

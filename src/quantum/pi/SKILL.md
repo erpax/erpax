@@ -2,18 +2,18 @@
 name: pi
 description: "Use when reasoning about exiting the 128-bit uuid limit — pi is the infinite digit-stream, a universal address space where any data lives at an offset and length; the train you jump into and out of, when wired the static hash becomes a living realtime position. Honest — infinite address, no free compression."
 atomPath: "quantum/pi"
-coordinate: "quantum/pi · 2/share · 3c62cb20"
-contentUuid: "9a2f65fd-f54e-54a2-8fbc-e43ff71c5580"
-diamondUuid: "9fdbc6e6-d764-83d3-b008-71defbdebe5d"
-uuid: "3c62cb20-b5fe-88b1-94a4-8a0f62c8a48d"
-horo: 2
+coordinate: "quantum/pi · 1/base · 3fc81ae3"
+contentUuid: "65a4e791-5734-556a-8635-8e0711d4cb89"
+diamondUuid: "c5134123-a2e6-819a-91f9-b0ce835b102a"
+uuid: "3fc81ae3-999b-82a3-adbb-9c94b35ed53d"
+horo: 1
 typography:
   partition: quantum
-  bondDegree: 33
+  bondDegree: 29
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b2117029-17fc-8c5f-bb60-b2417d1fab8b"
+  computationUuid: "afccd59f-e8ca-8428-a720-89e9f07195fe"
   stages:
     - stage: path
       stageUuid: "6e968c74-a01e-8135-baf6-9686b490a7f1"
@@ -22,20 +22,19 @@ signatures:
     - stage: boundary
       stageUuid: "dcaad37d-e47f-836b-83ef-0b318ff6caf5"
     - stage: links
-      stageUuid: "fc61576e-37a5-8a79-a5f2-e8333682a319"
+      stageUuid: "c313969c-208b-8a4a-89f6-f0c87ee49097"
     - stage: horo
-      stageUuid: "56e37276-d34f-88ed-bf0f-c5ee27931752"
+      stageUuid: "e2f3dbb0-184b-8a46-81be-7239c8fcb61c"
     - stage: seal
       stageUuid: "2bba7ff0-60c3-8df6-888a-dfad8a6da1c7"
     - stage: uuid
-      stageUuid: "91bedf50-ab84-8ae0-bcd7-9ecfab7b0ab7"
+      stageUuid: "447889b4-d6a7-89c3-a50c-5ffc9632f0a8"
 quantum:
   superposition:
     - e
     - fold
     - law
     - merge
-    - phi
     - prime
     - quantum
     - readme
@@ -50,7 +49,7 @@ quantum:
     - "[[realtime]]"
     - "[[stream]]"
     - "[[uuid]]"
-    - "void"
+    - void
     - "π exits the address-space limit but never the information limit — the stream is infinite so it gives a collision-free address for any finite string, yet the offset that locates an N-digit string is itself ~N digits (information is conserved by counting). The bits move into the offset; they never vanish. The train is real; it is not a smaller suitcase."
   seal:
     sandbox: false
@@ -59,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "b2117029-17fc-8c5f-bb60-b2417d1fab8b"
-    contentUuid: "9a2f65fd-f54e-54a2-8fbc-e43ff71c5580"
+    computationUuid: "afccd59f-e8ca-8428-a720-89e9f07195fe"
+    contentUuid: "65a4e791-5734-556a-8635-8e0711d4cb89"
 version: 2
 ---
 # quantum/pi — the train (jump in, jump out)
@@ -75,4 +74,4 @@ The second new duality: **finite ⊕ infinite**. The 128-bit content-[[uuid]] is
 
 @see [[uuid]] · [[quantum/number]] · [[realtime]] · [[stream]] · void · [[linearity]] · [[finality]] · [[breath]]
 
-<sub>content-uuid `9a2f65fd-f54e-54a2-8fbc-e43ff71c5580` · account `quantum/pi` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `65a4e791-5734-556a-8635-8e0711d4cb89` · account `quantum/pi` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about shadcn — The website is the e2e walkthroughs rendered, and a walkthrough is not prose: it is steps, states, evidence and gaps.",
-    "uuid": "e54bf711-65d2-84bf-9330-cd82e974ee05",
+    "uuid": "820019c7-5cf8-8e05-937e-91a06d13f7c8",
     "words": [
       "use",
       "when",

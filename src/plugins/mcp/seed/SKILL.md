@@ -2,18 +2,18 @@
 name: seed
 description: "Use when shaping what the MCP gateway serves — the Worker-safe collection seed (gateway auth atoms, ERPAX_MCP_SEED/EXTRA/INCLUDE_CMS) and the erpax.<area>.<leg> families reached THROUGH the gateway rather than by importing its factory — the corpus tool families handed to @payloadcms/plugin-mcp's mcp.tools door, wire-named (dots to underscores, Anthropic's tool grammar), gated by mode (full carries them, the lean Worker seed opts in with ERPAX_MCP_TOOLS=1), collisions refused. The live /api/mcp served 844 CRUD tools and zero families until this; the liveness test had asked the factory."
 atomPath: "plugins/mcp/seed"
-coordinate: "plugins/mcp/seed · 8/crest · 3b44653f"
-contentUuid: "73c6ecbb-e1ac-59c4-883f-01024df40bfa"
-diamondUuid: "09d3a96c-ea4a-87b6-8d74-44b7d744778e"
-uuid: "3b44653f-4c73-82ae-b63e-a7d0f1702f04"
+coordinate: "plugins/mcp/seed · 8/crest · a0eb0afd"
+contentUuid: "5335a184-6bbd-5560-bf1a-2aa1376f9cde"
+diamondUuid: "7b2263e4-dce5-85dd-becf-4fde03ba78c8"
+uuid: "a0eb0afd-448e-89d8-b581-4005db48c0b6"
 horo: 8
 typography:
   partition: plugins
-  bondDegree: 148
+  bondDegree: 137
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c1949eed-6817-82a7-b4de-2ecebe9e324d"
+  computationUuid: "1aef1ffc-3b92-8ce8-9490-1bea4e6c562a"
   stages:
     - stage: path
       stageUuid: "49528684-6204-8206-8231-b62213712c51"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "93f2790b-5c7a-8a92-8df2-a5ac9d498213"
     - stage: links
-      stageUuid: "9fbbde32-2118-808d-81c8-ce8e703615d1"
+      stageUuid: "8a509097-5b32-87f6-b35a-05884e1f74a5"
     - stage: horo
-      stageUuid: "b47998de-3dad-820a-828a-91448170989e"
+      stageUuid: "249c57bf-2154-8d49-82c1-f7a9e9c95620"
     - stage: seal
       stageUuid: "351aad37-9138-8acc-bd6c-fe92de5cfef1"
     - stage: uuid
-      stageUuid: "f06b7ba5-d85d-871d-8257-b66fa2d74ed8"
+      stageUuid: "7123747a-6a39-8ef7-9461-e8d41a778a9e"
 version: 2
 ---
 # plugins/mcp/seed — the gateway surface, derived not listed: the collection seed and the families handed through the plugin door

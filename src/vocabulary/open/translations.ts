@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the permitting boundary state in erpax — fiscal period open (postable), draft editable, session/stream open. The universal root of the open state; dual of close.",
-    "uuid": "9809f2f1-0ad1-8e9b-8bcb-879b275a7c8a",
+    "uuid": "5e55a4e7-60e5-89b9-aa7f-662b902703dc",
     "words": [
       "use",
       "when",

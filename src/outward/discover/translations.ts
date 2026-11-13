@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "discover",
-    "uuid": "05b7065f-c144-81fb-b0c0-6f43622fcbd7",
+    "uuid": "8f7455b4-fff7-8b3c-b5d0-6f7831eb4b2d",
     "words": [
       "discover"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about discover — outward/witness crosses five domains and every one of them was **hand-picked**.",
-    "uuid": "e344e5fe-2cff-8e3d-a725-35b5a0015ab2",
+    "uuid": "97d2d91f-76b7-8627-9db6-9277d513f985",
     "words": [
       "use",
       "when",

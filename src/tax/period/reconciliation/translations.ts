@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when closing tax periods against fiscal periods — tax↔fiscal alignment (same period-end date) and transfer-pricing documentation completeness (OECD), each a proven, refutable invariant with a real tolerance rather than a bare assertion.",
-    "uuid": "5b58e71c-418b-839f-af49-0affbb183ce4",
+    "uuid": "f2b2b894-5a04-839b-bad2-948b66fb9658",
     "words": [
       "use",
       "when",

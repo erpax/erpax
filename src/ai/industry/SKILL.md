@@ -2,14 +2,14 @@
 name: industry
 description: "Use when mapping AI industry failure modes to erpax diamond remedies — hallucination, memory loss, multi-agent collision, prompt injection, audit fragmentation, cost runaway, model drift, PII leakage, human-in-the-loop, vendor lock-in. Pure fns in index.ts bind each problem to existing atoms (thought, diamond, sandbox, receipt, memory, confirm) and extend gaps: workflow correlation receipts, grounded tool calls, cascade depth guard."
 atomPath: "ai/industry"
-coordinate: "ai/industry · 8/crest · 84c3a4b9"
-contentUuid: "17afcf3d-efe2-5b12-98f0-9be409585add"
-diamondUuid: "4c3cbc11-d90f-8d18-ad24-2523e353aec1"
-uuid: "84c3a4b9-56a5-892d-a706-067fd600f579"
-horo: 8
+coordinate: "ai/industry · 1/base · 7c2fa133"
+contentUuid: "9fe34f27-742a-5496-bd70-c34579ae7717"
+diamondUuid: "0180b33a-4de3-850f-a671-e2b4bf2205cb"
+uuid: "7c2fa133-930d-843c-b913-da7f781b5f0a"
+horo: 1
 typography:
   partition: ai
-  bondDegree: 58
+  bondDegree: 55
 standards:
   - "GDPR Art.22(3) right-to-human-intervention"
   - "ISO/IEC 42001:2023 ai-management-system"
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "f662ae7e-d624-8bfd-b3e4-d7004d6e510f"
+  computationUuid: "d1ccc256-421d-8def-a583-9489aa5056a2"
   stages:
     - stage: path
       stageUuid: "bf8c81db-dabb-81a4-9ea7-d9b8b7a0a33b"
@@ -29,13 +29,13 @@ signatures:
     - stage: boundary
       stageUuid: "b76db58f-1465-80e5-9023-6077d4a2872c"
     - stage: links
-      stageUuid: "b67af4e5-f8b5-8d87-a510-8cce184250ee"
+      stageUuid: "f9fd2727-1fab-8d31-939b-f6efebc7552c"
     - stage: horo
-      stageUuid: "3858a591-cb0f-8b25-8f5f-8303fb90747c"
+      stageUuid: "4849bd84-7ea1-83f4-a97b-529f7effc813"
     - stage: seal
       stageUuid: "59a3b14f-c480-8bdc-a793-86411c4bae5e"
     - stage: uuid
-      stageUuid: "aae9a189-66e3-8717-b7c6-b97a969f02d8"
+      stageUuid: "c395d168-3bd8-8c41-a248-f121d6e58a2e"
 version: 2
 ---
 # ai/industry — AI industry problems → erpax diamond remedies

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when code needs to know WHO is acting on a request without depending on the access predicates — getUser narrows the User | API-key union, getUserContext derives id · tenant · roles. A type-only leaf, split out of @/auth so the subscription gate can read identity without closing the auth ↔ gate import loop the cycle law named.",
-    "uuid": "3c78e80b-4353-8fc4-b0e5-a6bbbdb03ad4",
+    "uuid": "03edcaee-33c7-8c27-8dc9-0d37b5bba529",
     "words": [
       "use",
       "when",

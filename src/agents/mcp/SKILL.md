@@ -2,14 +2,14 @@
 name: mcp
 description: "Use when reasoning about erpax's agent gateway — it IS the official @payloadcms/plugin-mcp (collapse sink #1, never hand-roll an MCP server): every enabled collection becomes find/create/update/delete tools at /api/mcp, custom tools (GW fusion, trust) are added via the plugin's mcp config, Bearer API-key auth inherits the key owner's access + multi-tenant scope. erpax makes it TRUST-NATIVE — every tool call passes sandbox (capability + credential-broker + allowlist) and emits a receipt (uuid-chained audit), the dual of an external trust wrapper done from the inside."
 atomPath: "agents/mcp"
-coordinate: "agents/mcp · 2/share · 9076e57b"
-contentUuid: "99d5b1e5-ec7d-5c7e-8818-0111dd46f920"
-diamondUuid: "5382cec6-8c52-84cc-a7d6-94ebc69ee1b3"
-uuid: "9076e57b-f21c-8b80-8dfd-7ee7231a7155"
-horo: 2
+coordinate: "agents/mcp · 5/round · 49aaecab"
+contentUuid: "50c64d78-52e9-58f3-93b9-7ed1828f3f55"
+diamondUuid: "045cad5c-9985-8019-a523-dfc377c92be5"
+uuid: "49aaecab-d520-8428-84ca-abc56bab8c9e"
+horo: 5
 typography:
   partition: agents
-  bondDegree: 145
+  bondDegree: 74
 standards:
   - "BCP-47"
   - "ECMA-402"
@@ -35,7 +35,7 @@ standards:
   - schema.org
 bindings: []
 signatures:
-  computationUuid: "bf62a364-edb7-8448-8a02-5d6705e28342"
+  computationUuid: "1aafc40b-ce98-857e-baf9-b1f5ab2efb76"
   stages:
     - stage: path
       stageUuid: "982fead9-ea1f-8a81-909b-6fdbc9d24c96"
@@ -44,13 +44,13 @@ signatures:
     - stage: boundary
       stageUuid: "f03d45af-826a-8d59-b33c-60feb21e93af"
     - stage: links
-      stageUuid: "85d06001-1786-8f89-8187-476dc9845f50"
+      stageUuid: "d1293b67-88a3-8c16-b28b-4002624ff101"
     - stage: horo
-      stageUuid: "493312a4-40ae-8001-bbeb-1a9cc513f296"
+      stageUuid: "80599c7c-373f-83ff-a05e-45a657164f11"
     - stage: seal
-      stageUuid: "ce359474-f726-8e03-addc-14f50889037b"
+      stageUuid: "d7ac6b07-6c80-8db5-8c6e-8722dc2b1c91"
     - stage: uuid
-      stageUuid: "0c8fa123-b0f4-8da1-90e9-a881c51a197b"
+      stageUuid: "5b81e036-0eff-8e57-8cfe-b7cc80c0cc68"
 version: 2
 ---
 # mcp — erpax's agent gateway is the official Payload MCP, made trust-native

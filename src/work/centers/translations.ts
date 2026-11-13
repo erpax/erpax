@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling manufacturing capacity — machines, lines, cells, vats, workstations, or crews — with ISA-95 resource hierarchy, throughput rate, parallelism, and IAS-2 cost-of-conversion rates feeding routing and overhead absorption. The work-center capacity-unit collection.",
-    "uuid": "98d47c82-724c-8f11-ad11-82174a7b721c",
+    "uuid": "9f305815-87ef-8685-9e83-ebb519edec12",
     "words": [
       "use",
       "when",

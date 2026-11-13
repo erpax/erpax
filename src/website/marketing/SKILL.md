@@ -3,13 +3,13 @@ name: marketing
 description: "Use when reasoning about marketing — Every other surface here answers to a gate. A published page answers to a reader who **cannot check it** — no , no wave, no ratchet — which makes it the most exposed place an…"
 atomPath: "website/marketing"
 coordinate: "website/marketing · 8/crest · 5faa8ce7"
-contentUuid: "9756fffa-0aa0-5361-ae4c-1754bb349579"
-diamondUuid: "ff894387-4812-8d67-b1ea-12a272d8aa12"
+contentUuid: "a0d5ecb6-547f-5e7d-a5a1-b38138ba3845"
+diamondUuid: "2041c2e4-133e-86cb-a447-8cc8de19d7a3"
 uuid: "5faa8ce7-0566-8009-9fcf-71a8260eefdb"
 horo: 8
 typography:
   partition: website
-  bondDegree: 30
+  bondDegree: 23
 standards:
   - "EU-Admin-Coop-Reg-904/2010"
   - Open Graph protocol (Facebook 2010+) + Twitter Cards
@@ -18,7 +18,7 @@ standards:
   - "declarations — risks ungrounded claims',"
 bindings: []
 signatures:
-  computationUuid: "9cb8163a-6cf4-8204-b6cb-5f227fbbb673"
+  computationUuid: "00bf3cbc-728f-80be-ba43-d68003b85776"
   stages:
     - stage: path
       stageUuid: "f5e927a8-b674-8bdd-9d64-e99e3b4b0448"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "23a7f79a-8c6d-891c-9ff0-cd63aa9d0972"
     - stage: horo
-      stageUuid: "83ace091-5292-8576-b4a5-3f9d1d0e69e2"
+      stageUuid: "52512f47-5a01-859d-a89c-cdb6be07a5db"
     - stage: seal
       stageUuid: "a6719fb2-5019-8230-89a4-e23a40dd78a9"
     - stage: uuid
-      stageUuid: "70da8ef5-36b1-8f29-86d1-b0e9b1f23634"
+      stageUuid: "30b38db7-9562-8c0a-809d-c0478427a3af"
 version: 2
 ---
 # website/marketing — the page a prospect reads is the least checkable claim in the corpus

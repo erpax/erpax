@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about drawing — A picture or diagram made with a pencil, pen, or crayon rather than paint.",
-    "uuid": "0548146b-63a9-8320-94bc-95689dc28e87",
+    "uuid": "8abcf304-5fd2-81e6-9b6c-34cc0c9e1304",
     "words": [
       "use",
       "when",

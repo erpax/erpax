@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about provider — The browser half of the ecommerce plugin. Two values decide what it can do, and both may be absent: the tenant's Stripe publishable key and the server URL.",
-    "uuid": "67585b09-9903-8fa4-ad5b-d77e22704c89",
+    "uuid": "5618f007-315c-81bc-a8a4-969778389549",
     "words": [
       "use",
       "when",

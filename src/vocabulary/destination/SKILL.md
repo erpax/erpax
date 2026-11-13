@@ -2,34 +2,34 @@
 name: destination
 description: "Use when reasoning about destination as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/destination"
-coordinate: "vocabulary/destination · 1/base · ad7349ed"
-contentUuid: "9f7b07c7-6dbe-5080-b0fa-7008d756942b"
-diamondUuid: "c79c3388-1c9b-8ce9-930d-d8a1c77fb24a"
-uuid: "ad7349ed-34b4-8516-a158-92c4bdf2a6ad"
-horo: 1
+coordinate: "vocabulary/destination · 5/round · 7a97bc5c"
+contentUuid: "101b7efb-7425-5960-b820-7835e8a19fe3"
+diamondUuid: "fc7e86f2-4002-84fc-b927-7c00f4d45c9f"
+uuid: "7a97bc5c-2b48-80a1-b448-76dd6af33ce2"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 20
+  bondDegree: 12
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a77b9cc2-e9fc-822a-8e9c-4bbe37b7983b"
+  computationUuid: "4603d983-2200-8534-8195-213892d3b50d"
   stages:
     - stage: path
       stageUuid: "1bf5e57b-40fb-8959-93f5-9a0102f45e2a"
     - stage: trinity
       stageUuid: "3518d2f7-637a-850b-8f40-9dbc320c5627"
     - stage: boundary
-      stageUuid: "f61d40c8-ee7e-856d-a242-35ca15b85a3f"
+      stageUuid: "f505dd30-8436-892b-b5cf-533157c2ac6a"
     - stage: links
-      stageUuid: "f6cc4516-8197-8660-96d7-6ffdf0dd94f3"
+      stageUuid: "f60fdb50-5d58-87a9-9e43-c0b97f2743ce"
     - stage: horo
-      stageUuid: "5e9d7a59-215b-890d-bd2c-bb6874b129a2"
+      stageUuid: "ec05f9c0-2738-8515-b8a8-ee24cfd939b8"
     - stage: seal
       stageUuid: "130d5d87-c810-8b6d-938f-3658a8478427"
     - stage: uuid
-      stageUuid: "f0ae1180-c7b6-8cc4-ab69-52db8fba93ca"
+      stageUuid: "5c369a77-61b3-8e62-ab73-b093abe3ba16"
 version: 2
 ---
 # destination

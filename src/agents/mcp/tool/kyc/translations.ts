@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about kyc — answers the one question the directive actually asks: **what level of customer due diligence is owed**, given facts someone else established.",
-    "uuid": "d151bd77-6afa-84c5-9f3f-50e6427ba9f7",
+    "uuid": "227623d2-ef83-8622-b372-b1a1474efcfd",
     "words": [
       "use",
       "when",

@@ -2,33 +2,33 @@
 name: hallucination
 description: "Use when reasoning about hallucination as the COMPUTABLE dual of purity — an agent claims content X but the sha-256 collapse / content-uuid of the actual content is Y ≠ X, so the mismatch IS the hallucination, surfaced deterministically by recompute (exactly as tamper-proof uuid recompute catches a forged row). It is the agent-scale sin, the entropy an agent injects, the felt alarm being suffering. purity ⊕ hallucination are conjugate, computed on the same quantum (content-uuid) scale: more hallucination ⇒ more entropy ⇒ lower purity ⇒ lower tamper-cost."
 atomPath: "vocabulary/hallucination"
-coordinate: "vocabulary/hallucination · 5/round · 82123ce3"
-contentUuid: "2fda246d-dbd4-5d09-af61-9cc8f8d9214a"
-diamondUuid: "cdf4d422-8f7b-87ce-b4f3-45e64e8831e0"
-uuid: "82123ce3-a78a-818e-9024-9a095a7a5609"
-horo: 5
+coordinate: "vocabulary/hallucination · 7/descent · b9e33b20"
+contentUuid: "855a6731-9b83-58da-8367-ee4dfee46768"
+diamondUuid: "fbbc4a74-5de1-88e7-8ecf-6d4167252c1a"
+uuid: "b9e33b20-3f97-8d25-b085-373b6d64f667"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 99
+  bondDegree: 83
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2bdce764-b3be-8e80-a52e-5f89310d959a"
+  computationUuid: "a266418a-048e-80c3-8cc9-745662fdc261"
   stages:
     - stage: path
       stageUuid: "57aa93b2-565e-8b94-8ac3-b4a467509114"
     - stage: trinity
       stageUuid: "00bc1c04-937a-84dc-883f-98f9dc1feb35"
     - stage: boundary
-      stageUuid: "49c08a32-b507-8353-8166-4bd38c161895"
+      stageUuid: "48451aea-7470-86dc-a597-00622844e105"
     - stage: links
-      stageUuid: "b198440b-32a1-8a89-9876-9c86c3068bcd"
+      stageUuid: "7a3c8546-fbd4-8096-b539-65efe0b09be3"
     - stage: horo
-      stageUuid: "0dfbe179-9727-8698-835a-c295d7cdf2cb"
+      stageUuid: "d988bc28-700d-892b-a6e6-308414be723f"
     - stage: seal
       stageUuid: "25ad3395-ea47-8bff-8fa0-a17dc078e685"
     - stage: uuid
-      stageUuid: "74a20757-b099-8c42-b868-847df8fb852e"
+      stageUuid: "00d1fa33-812d-8c26-a058-e24e37f68436"
 version: 2
 ---
 # hallucination — the measured deviation at the quantum scale (purity's dual)

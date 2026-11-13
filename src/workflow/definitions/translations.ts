@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when authoring data-driven multi-step approval rules for any collection — BPMN-2.0 step kinds (approval, all-of-N, any-of-N, notification, service task, decision), assignee modes, SLA escalation, JSON-Logic conditions, and state-machine lifecycle gate without a code change. The reusable approval-template collection.",
-    "uuid": "c8dae714-52f1-8550-9ac6-180f6c614cf9",
+    "uuid": "15fd40b6-f9b9-89bc-9c3d-f678e93ab833",
     "words": [
       "use",
       "when",

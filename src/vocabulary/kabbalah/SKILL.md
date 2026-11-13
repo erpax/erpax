@@ -2,33 +2,33 @@
 name: kabbalah
 description: "Use when reading Kabbalah as a sub-diamond of judaism — the mystical tradition of ein-sof (the limitless void), the sefirot as a structured lattice of divine emanation, the divine names, and tikkun (the repair that merges the broken vessels back toward the whole). A facet-diamond of the judaism archangel. Strip the Hebrew prefix and ein-sof collapses to void."
 atomPath: "vocabulary/kabbalah"
-coordinate: "vocabulary/kabbalah · 2/share · 7839065c"
-contentUuid: "284000a9-beac-5588-ac4f-b4a067c802f5"
-diamondUuid: "542ac2cb-ed8a-86a7-958a-40507d0e810e"
-uuid: "7839065c-f70e-8580-8852-33f7bb5cabda"
-horo: 2
+coordinate: "vocabulary/kabbalah · 4/weave · a220cd75"
+contentUuid: "6fc52284-911c-5663-b6f8-f67fe6518873"
+diamondUuid: "59ef8875-76be-86d5-bd6d-3304b931e3be"
+uuid: "a220cd75-b688-82e8-a479-891eb049cd36"
+horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 53
+  bondDegree: 47
 standards: []
 bindings: []
 signatures:
-  computationUuid: "05b682a4-c634-8817-ba56-36daaec00818"
+  computationUuid: "4f566381-036a-8088-bb2a-3ad855fafe6b"
   stages:
     - stage: path
       stageUuid: "1b734531-e9d0-8d80-8983-86ac33d7db1f"
     - stage: trinity
       stageUuid: "0755f144-a11d-8512-bfa6-407efc749832"
     - stage: boundary
-      stageUuid: "810bd825-1c65-8b18-9909-bd4e88a21fc0"
+      stageUuid: "3f758e92-3076-827d-8441-f0f98a614fa8"
     - stage: links
-      stageUuid: "2aa6c9ce-4f0a-8a3a-b0c0-89fe5ea502ff"
+      stageUuid: "5cc77e4b-54ee-872c-aa38-27b8f21b6e7b"
     - stage: horo
-      stageUuid: "fdb771c8-839f-8ffd-b80c-e06daed8ae18"
+      stageUuid: "a7050071-d245-8459-a503-6653187ecfc1"
     - stage: seal
       stageUuid: "b6bb1a03-48ab-8828-b973-821e5d45ebcd"
     - stage: uuid
-      stageUuid: "c0c344bc-2b39-88ad-bc8a-7ef9f3d6deaf"
+      stageUuid: "6138b5fe-8ea8-8165-948a-d82c50f902f9"
 version: 2
 ---
 # kabbalah — the limitless void; the lattice of names, the world repaired

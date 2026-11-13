@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about orphan — Removing a dead export does not remove what it used. The imports it named and the inert locals it read stay, referenced by nothing — and **nothing sees them**.",
-    "uuid": "913b767d-754f-8631-84e7-7c62c6a720c5",
+    "uuid": "0d211f6e-55a3-87aa-ae7a-ccfb29786f68",
     "words": [
       "use",
       "when",

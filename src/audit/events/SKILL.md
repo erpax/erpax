@@ -3,13 +3,13 @@ name: events
 description: "Use when persisting or querying the durable ISO 19011 / SOX §404 evidence trail — every canonical write (orders, invoices, payments, journal entries, period locks) lands one append-only row queryable by tenant/collection/operation/user/timestamp; Merkle hash chain for tamper-evidence; no log-scraping required for auditors. The canonical audit-evidence collection."
 atomPath: "audit/events"
 coordinate: "audit/events · 5/round · 8d8a6a10"
-contentUuid: "a685da2d-4417-5e1a-903f-47754b4bf071"
-diamondUuid: "243421c5-5b81-859f-8ab1-c8663ed0c402"
+contentUuid: "9562118f-6b28-5697-a6ce-e9d3c7d22b99"
+diamondUuid: "9ef50230-8533-846a-b121-0ea4b4de0fe7"
 uuid: "8d8a6a10-1a93-8585-877d-ace8d6f1dcac"
 horo: 5
 typography:
   partition: audit
-  bondDegree: 54
+  bondDegree: 51
 standards:
   - "5424 §6.2.1 syslog-severity-levels"
   - "GDPR Art.30 records-of-processing-activities"
@@ -36,7 +36,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "7c465d34-1dd2-8078-af21-3d78e28a50ed"
+  computationUuid: "1c161276-2430-8a52-9036-22fe1d133d3e"
   stages:
     - stage: path
       stageUuid: "f934e69e-3f08-8563-bbd9-ba5342f878ad"
@@ -47,11 +47,11 @@ signatures:
     - stage: links
       stageUuid: "76a23ae0-664d-8828-99a0-f95e91e22b86"
     - stage: horo
-      stageUuid: "44448617-0b28-8870-8e75-65f52eee6898"
+      stageUuid: "61cf4931-2152-89ac-b4cb-9d94253eb661"
     - stage: seal
       stageUuid: "fc06ff95-8bdd-804f-9ad6-e36082a87bac"
     - stage: uuid
-      stageUuid: "d54e7e3c-8a70-83b8-a2f7-a331674af4b0"
+      stageUuid: "f5132b9b-032e-8396-a02a-77ea9b059109"
 version: 2
 ---
 # audit-events

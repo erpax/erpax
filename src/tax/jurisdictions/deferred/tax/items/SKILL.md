@@ -3,13 +3,13 @@ name: items
 description: "Use when originating or reversing IAS-12 deferred-tax positions — deductible/taxable temporary differences, tax-loss/credit carry-forwards, realisation probability, expected reversal date, substantively-enacted rate measurement and linking to the journal-entry booking. The IAS-12 deferred-tax register collection."
 atomPath: "tax/jurisdictions/deferred/tax/items"
 coordinate: "tax/jurisdictions/deferred/tax/items · 8/crest · 8e2bafab"
-contentUuid: "659f41b1-73be-5251-a437-7befa5098682"
+contentUuid: "38776be3-24c4-5bf8-9091-3437840c7d42"
 diamondUuid: "b4305040-7355-8458-9bb3-53dc90ba46d1"
 uuid: "8e2bafab-6a44-8625-a661-2db52dfad112"
 horo: 8
 typography:
   partition: tax
-  bondDegree: 116
+  bondDegree: 115
 standards:
   - "IAS-12"
   - "IFRS IAS-12 §15-§68 income-taxes"

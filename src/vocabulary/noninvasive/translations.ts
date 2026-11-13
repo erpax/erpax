@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about noninvasive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "64770f63-d029-8fd9-8480-4d552de7223a",
+    "uuid": "7b3a329c-8771-8e96-a146-f58f3aae91e1",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when running search/sort primitives under the machine — executable algorithms nested under computer.",
-    "uuid": "0d9248a7-a0ed-8d08-ad37-d57d94feec5e",
+    "uuid": "5ea9dd57-b3c0-8c49-bfd4-402fe64c1e82",
     "words": [
       "use",
       "when",

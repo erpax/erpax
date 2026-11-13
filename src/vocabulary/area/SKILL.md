@@ -2,34 +2,34 @@
 name: area
 description: Use when reasoning about area — The area within which users can expect to reach the broadcast service.
 atomPath: "vocabulary/area"
-coordinate: "vocabulary/area · 5/round · 8efc522c"
-contentUuid: "12428bec-e19d-5496-a048-0e64d274d660"
-diamondUuid: "1d799887-db20-8ed2-b5fb-564998e38141"
-uuid: "8efc522c-1b34-859c-83fa-06255dd7a47b"
-horo: 5
+coordinate: "vocabulary/area · 4/weave · 8f6311f2"
+contentUuid: "8aa6154f-bfa5-51fc-bf72-867f34128512"
+diamondUuid: "89158c96-8974-8372-828d-922b1d398972"
+uuid: "8f6311f2-e4fb-8bf0-bd53-1246265c3b32"
+horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 19
+  bondDegree: 11
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "d5a9d6a3-7134-8f47-aa7a-8afef7cd35bd"
+  computationUuid: "c080e210-ed2f-8892-8852-096ffed0fc1b"
   stages:
     - stage: path
       stageUuid: "78e10b62-5ed3-8284-99c2-d68275458db0"
     - stage: trinity
       stageUuid: "cc7be656-de2f-849f-927c-1dadb8a2f543"
     - stage: boundary
-      stageUuid: "bb63fb16-1924-8de2-943f-0d65cb93c0ac"
+      stageUuid: "b7738337-3120-8f61-be43-b754e79a9d1a"
     - stage: links
-      stageUuid: "68b98ec7-d3ad-8ffe-8b2d-c507a7584669"
+      stageUuid: "826530bb-540e-844e-b3e7-84959415027c"
     - stage: horo
-      stageUuid: "60b28366-a503-800b-99fa-8c19367de10b"
+      stageUuid: "03636c9a-bea2-84a5-b684-078e90621cfa"
     - stage: seal
       stageUuid: "66bc7691-4113-8d77-b964-ab6c4c864b2a"
     - stage: uuid
-      stageUuid: "d5398b75-481b-8b00-ad12-060a89c06c0e"
+      stageUuid: "cf352bbf-1c67-85a2-abae-396decb01e75"
 version: 2
 ---
 # area

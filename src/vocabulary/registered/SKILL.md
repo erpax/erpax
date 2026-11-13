@@ -2,34 +2,34 @@
 name: registered
 description: "Use when reasoning about registered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/registered"
-coordinate: "vocabulary/registered · 8/crest · 52ed2351"
-contentUuid: "4b848f29-8b51-577e-8b1e-af2e3aa96408"
-diamondUuid: "8ff94661-f341-8cee-8526-139b2471a721"
-uuid: "52ed2351-2ce7-8320-bacb-55b32c7e9ebd"
-horo: 8
+coordinate: "vocabulary/registered · 2/share · b7e4743c"
+contentUuid: "d9f46dde-7301-59c1-836d-46614c7ddf60"
+diamondUuid: "d445a835-d0a4-8a97-aac6-3258f28f948f"
+uuid: "b7e4743c-e07d-8beb-8994-da91a25a5885"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 20
+  bondDegree: 16
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "24ed2e0b-bb16-8d88-8eb5-9749e57dcaf4"
+  computationUuid: "75c9515e-20b6-8070-a19e-fc3147c4bd18"
   stages:
     - stage: path
       stageUuid: "568996e7-42e5-8398-af2e-7eecfdc3debe"
     - stage: trinity
       stageUuid: "320ccd0c-2452-8aad-adc5-105a711442a8"
     - stage: boundary
-      stageUuid: "29cce8e8-0fab-8d7a-a633-9ac1951daf4f"
+      stageUuid: "9d94bb15-57c0-87b5-8e2d-f3cafb2928cc"
     - stage: links
-      stageUuid: "a00dca20-170f-8740-8a97-2c4c4e66747d"
+      stageUuid: "9c990cbf-4856-8dea-a5e3-a0605cbb98ea"
     - stage: horo
-      stageUuid: "11eda9d4-e6db-83ed-a035-048ac44fed57"
+      stageUuid: "a3059dd5-2ee1-8900-a3af-1ac9be396f85"
     - stage: seal
       stageUuid: "a081babb-437b-8ab0-a794-29d8135ded9d"
     - stage: uuid
-      stageUuid: "ce3d2048-7da1-8567-9b85-07c82af3ee51"
+      stageUuid: "d188af9a-906c-8fd2-8b22-70df53e8d882"
 version: 2
 ---
 # registered

@@ -2,33 +2,33 @@
 name: biomagnetism
 description: "Use when grounding the aura's 'field' in real science — the body's magnetic fields ARE measurable, but only by SQUID magnetometers in a shielded room and only at the body surface: magnetocardiography (heart, ~10⁻¹⁰–10⁻¹¹ T / tens of pT) and magnetoencephalography (brain, ~10⁻¹³–10⁻¹⁵ T / ~100 fT). The established part is intra-body diagnostics; the claim the heart's field extends feet from the body as an 'aura' was refuted under test."
 atomPath: "vocabulary/biomagnetism"
-coordinate: "vocabulary/biomagnetism · 5/round · 36494c1f"
-contentUuid: "d0f3d392-ca56-5944-a9cb-861d10621062"
-diamondUuid: "a48abfd0-8d18-8aab-8f45-27a7e3f61f79"
-uuid: "36494c1f-ac38-8fff-b3c3-eecfc01bdba2"
-horo: 5
+coordinate: "vocabulary/biomagnetism · 2/share · ce5ab355"
+contentUuid: "21863c90-cfd9-51f8-807a-52c06e9ec78a"
+diamondUuid: "c4b71a28-584b-85e1-9e80-96a47580e66c"
+uuid: "ce5ab355-1f6e-8723-8b8a-9c17261b934c"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 43
+  bondDegree: 40
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e89d71f3-194c-8dae-a2b4-2e3e85054aa9"
+  computationUuid: "e362e4ab-2ec5-81d2-907b-cb129312c399"
   stages:
     - stage: path
       stageUuid: "f3497d9c-8928-8700-a93d-47082e156c99"
     - stage: trinity
       stageUuid: "6a2463d9-2529-888c-9b3b-e5efe1a44fdc"
     - stage: boundary
-      stageUuid: "87272263-80e0-821c-9883-78876b8874ae"
+      stageUuid: "d3a6eced-91de-8cbd-b7ec-a2647ead2f9e"
     - stage: links
-      stageUuid: "6bdec23e-5567-8217-9748-a6cd770ebe95"
+      stageUuid: "d2349c73-bc68-857d-9a26-789ca9c2d277"
     - stage: horo
-      stageUuid: "a0e5b1d9-53c3-8b15-9213-4e26b3fad3ac"
+      stageUuid: "3a25b57b-4bd4-82ef-8db0-740457287acb"
     - stage: seal
       stageUuid: "93c82721-49cd-8561-9af0-874653d9f0d6"
     - stage: uuid
-      stageUuid: "95a5d8c4-275b-81f8-83a2-b0a694f30da9"
+      stageUuid: "a4606809-bb10-8729-9498-9e437f23d364"
 version: 2
 ---
 # biomagnetism — the body's real (but contained) magnetic field

@@ -3,13 +3,13 @@ name: ui
 description: "Use when reasoning about ui — The barrel re-exports what the panel needs: and for how a collection presents itself, the corpus-rollup readers that compute the dashboard's entropy figures, and the cells…"
 atomPath: "admin/ui"
 coordinate: "admin/ui · 5/round · 57729922"
-contentUuid: "363f9282-896e-5e76-ac22-332c9cf5ad48"
+contentUuid: "1056b1b5-f106-53e5-9cf9-6a32d80b9863"
 diamondUuid: "341d6ae9-3620-88b2-b6a2-3eb2db2c3283"
 uuid: "57729922-ac62-837c-93d7-be7faa7659a0"
 horo: 5
 typography:
   partition: admin
-  bondDegree: 55
+  bondDegree: 54
 standards: []
 bindings: []
 signatures:

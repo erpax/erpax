@@ -3,17 +3,17 @@ name: book
 description: "Use when a question should be ANSWERED from what is already folded rather than recomputed — the sealed book, its search, and the researcher that reads it."
 atomPath: "quantum/ftl/book"
 coordinate: "quantum/ftl/book · 2/share · df942278"
-contentUuid: "b53f7991-7541-55ea-b1c7-4e0ff0c89ea9"
-diamondUuid: "33f0941e-8d75-8876-a244-b304f4575975"
+contentUuid: "4baa9974-7a76-5205-a8fb-f13e2213760c"
+diamondUuid: "3c149349-fb2a-86b8-8eb0-f22e4c836607"
 uuid: "df942278-fef6-885f-806b-87c787498561"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 25
+  bondDegree: 21
 standards: []
 bindings: []
 signatures:
-  computationUuid: "84a77fe3-1100-8610-8f2f-dcd41c30afca"
+  computationUuid: "fbed2d50-1c80-8a11-be8f-3ec67075a986"
   stages:
     - stage: path
       stageUuid: "80a5dcaa-972e-8c68-b757-fb1251abf0c9"
@@ -24,18 +24,17 @@ signatures:
     - stage: links
       stageUuid: "41a7ae21-603c-8fa5-a24a-43ab0f97991f"
     - stage: horo
-      stageUuid: "0f7115a7-9527-8b07-a974-eb2839309d8e"
+      stageUuid: "5fd81555-4271-8a1b-84c3-4dd814520cb5"
     - stage: seal
       stageUuid: "0cd24cfb-5fe5-8e57-83a9-9579d50e25ac"
     - stage: uuid
-      stageUuid: "add9d89d-add8-8eab-bbb8-12a6da07254a"
+      stageUuid: "c09e4fb2-5144-8940-9cbb-5497dfa93a3c"
 quantum:
   superposition:
     - edition
     - format
     - ftl
     - law
-    - series
     - store
     - type
     - superposition
@@ -48,8 +47,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "84a77fe3-1100-8610-8f2f-dcd41c30afca"
-    contentUuid: "b53f7991-7541-55ea-b1c7-4e0ff0c89ea9"
+    computationUuid: "fbed2d50-1c80-8a11-be8f-3ec67075a986"
+    contentUuid: "4baa9974-7a76-5205-a8fb-f13e2213760c"
 version: 2
 ---
 # quantum/ftl/book — the answer was already folded
@@ -62,4 +61,4 @@ They lived in the ftl hub — a predicate and a search engine in one scroll, whi
 
 Composes: [[quantum]]/ftl · [[integrity]] · [[rules]]/concentration.
 
-<sub>content-uuid `b53f7991-7541-55ea-b1c7-4e0ff0c89ea9` · account `quantum/ftl/book` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `4baa9974-7a76-5205-a8fb-f13e2213760c` · account `quantum/ftl/book` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

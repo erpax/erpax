@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when authorizing and tracking pre-contract spending commitments — SOX §302 authorization matrix, spending-authority validation, budget reservation (reserved/committed/spent/available), segregation-of-duties enforcement, PO or contract linkage, and Bulgaria ZKOD notarization. The commitment-ledger collection.",
-    "uuid": "538395b3-a7c5-8a36-bb5f-88bb58f07fa9",
+    "uuid": "df6ecdd1-bc45-822a-bb76-27a9196b6842",
     "words": [
       "use",
       "when",

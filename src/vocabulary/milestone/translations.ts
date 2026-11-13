@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one milestone — the singular model of the milestones collection (the plural store); a marked checkpoint in a plan or project.",
-    "uuid": "a79c64d9-ff80-8ea1-be53-789a5ca372c0",
+    "uuid": "00a5b72b-53c3-8960-bc15-2829a311e78a",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking what Payload publishes that erpax does not hold — the official repository's templates, examples and packages listed from GitHub's contents API and crossed against package.json and the tree, with the evidence for each template and example declared in the open. Reports held · gap · unaskable and coverage per kind; the involute leg of the outward family (erpax.outward.upstream).",
-    "uuid": "6fd9f8f5-a776-872f-a642-be2bba062c42",
+    "uuid": "dae5e53e-87f4-8916-b6e7-294318eade92",
     "words": [
       "use",
       "when",

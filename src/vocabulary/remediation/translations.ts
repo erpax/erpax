@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "remediation",
-    "uuid": "7225e94e-32f9-85f0-916c-d740df375a7a",
+    "uuid": "b899444b-9387-84fd-b90e-267ae80688ee",
     "words": [
       "remediation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract specifies the remedy for breach — payment, replacement, repair, specific performance, cure period, calculation (liquidated damages, penalties, attorney fees).",
-    "uuid": "4de3ee06-ee4e-87d8-b268-2e201e66285c",
+    "uuid": "f5891b44-0f96-836b-bc23-f870ed565dfa",
     "words": [
       "use",
       "when",

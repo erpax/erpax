@@ -3,13 +3,13 @@ name: level
 description: "Use when reasoning about level as a medical facet of medical — vocabulary pivot to @/level; nested not duplicated."
 atomPath: "medical/level"
 coordinate: "medical/level · 7/descent · 6acfabfc"
-contentUuid: "039e384e-6e5a-58a1-b161-6772abbbf6df"
+contentUuid: "64ee6e63-22cb-5e5a-9743-6c59c98b4fb0"
 diamondUuid: "0f944de8-d578-8c53-9c3e-02f5593cc4b4"
 uuid: "6acfabfc-0b5b-8885-99e4-b51dc908efc0"
 horo: 7
 typography:
   partition: medical
-  bondDegree: 53
+  bondDegree: 52
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

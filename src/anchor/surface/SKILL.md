@@ -3,20 +3,20 @@ name: surface
 description: "Use when declaring or auditing the whole cryptographic surface an atom exposes — the judgment guard that makes a silently omitted surface fail the build: every reachable surface (root-signing · channel-keying · storage-at-rest · re-exchange) must be registered sealed (naming the standard AND the test) or open (naming the gap AND the owner), a channel sealed without FIPS 203 ML-KEM is channel-unsealed because harvest-now-decrypt-later reads the transport not the root, and a root sealed by anything but FIPS 205 SLH-DSA or FIPS 204 ML-DSA is root-unsealed because Shor breaks a classical root outright."
 atomPath: "anchor/surface"
 coordinate: "anchor/surface · 1/base · b17480f9"
-contentUuid: "9d9aeef1-c183-5cef-bcb5-2b388050895e"
-diamondUuid: "f7d5fb84-726e-8583-8f57-b894538d48e7"
+contentUuid: "4130acb3-5d88-58b4-90c7-8a0eb482ceb5"
+diamondUuid: "6c08502c-eb2d-88b3-8442-3589d407b4ce"
 uuid: "b17480f9-9c45-87f9-95f6-79f662faac49"
 horo: 1
 typography:
   partition: anchor
-  bondDegree: 20
+  bondDegree: 23
 standards:
   - "FIPS 203 (ML-KEM) — key establishment; mandatory on every channel that exchanges state"
   - "FIPS 204 (ML-DSA) — lattice signature, a distinct assumption from the digest"
   - "FIPS 205 (SLH-DSA) — hash-based signature; the primary root, no new assumption"
 bindings: []
 signatures:
-  computationUuid: "9ed9cb78-f22a-8f9f-a8ae-f134fe76c123"
+  computationUuid: "17d03e70-eb85-8956-8790-439702d5c765"
   stages:
     - stage: path
       stageUuid: "7445b50e-7694-8eac-8c5e-8b0c465ea9b9"
@@ -27,11 +27,11 @@ signatures:
     - stage: links
       stageUuid: "9b106329-658c-8365-a69b-067ef1bd9a3e"
     - stage: horo
-      stageUuid: "e94b64d0-560a-8582-8c60-50361fe75ee6"
+      stageUuid: "d7a97595-022e-8d4a-a52d-d1559e2d1061"
     - stage: seal
       stageUuid: "1c3458f6-d0c0-8582-a603-8d5d13a63045"
     - stage: uuid
-      stageUuid: "4c5725e2-053b-8aa3-bfac-fa8183114c96"
+      stageUuid: "981eb699-c974-8e43-9994-84532c58ea6c"
 version: 2
 ---
 # anchor/surface — a surface you did not declare is a surface you dismissed

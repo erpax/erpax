@@ -2,20 +2,20 @@
 name: swarm
 description: Use when reasoning about swarm — A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of tasks and produces an assignment across N agents.
 atomPath: swarm
-coordinate: "swarm · 8/crest · 710eb9f4"
-contentUuid: "1b1e25cd-12ac-5501-aaf0-78ac9d19090b"
-diamondUuid: "404cdbf5-3fad-8815-9a17-f7bec76afa25"
-uuid: "710eb9f4-e01b-8ddf-bd00-30c2e48aa659"
-horo: 8
+coordinate: "swarm · 7/descent · 67a618b3"
+contentUuid: "83080c0e-7f9a-5b7e-87f1-20d6aea443d8"
+diamondUuid: "39be7991-e5a1-80a1-a1de-620775dacfee"
+uuid: "67a618b3-7205-850e-b75d-71cb857e8afb"
+horo: 7
 typography:
   partition: swarm
-  bondDegree: 21
+  bondDegree: 15
 standards:
   - "Graham (1969) — LPT list scheduling is within 4/3 − 1/(3m) of optimal makespan"
   - "Graham (1969)` sat in the docstring, the SKILL and the README with nothing computing it —"
 bindings: []
 signatures:
-  computationUuid: "00a12904-4f83-808e-8705-a8ebb7093cf5"
+  computationUuid: "6d160446-d59d-8672-8431-f733dc9ce190"
   stages:
     - stage: path
       stageUuid: "fd00e325-ca88-80a0-a0d6-17cc57f6d28d"
@@ -24,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "2bda39a4-3861-8fd2-aa0b-ca6538ad4a74"
     - stage: links
-      stageUuid: "0a8826b6-8788-89ee-b60b-c0e350a4e9e8"
+      stageUuid: "5998aeaa-bcd2-8103-bbe3-e90fc02c9da6"
     - stage: horo
-      stageUuid: "ba254227-00ed-8610-9a17-a044166c9512"
+      stageUuid: "1ea67520-1906-8119-adb7-41df85da49a9"
     - stage: seal
       stageUuid: "91a85422-f1cb-8084-b5d4-b07f0c2d05e5"
     - stage: uuid
-      stageUuid: "8d91d23b-e29a-8b51-9687-c39db26b8f67"
+      stageUuid: "05964a28-8d4c-80dc-a704-c18667cbba93"
 version: 2
 ---
 # swarm — one mixer, one level up: work over agents, and what happens when one dies

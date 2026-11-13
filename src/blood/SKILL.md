@@ -2,20 +2,20 @@
 name: blood
 description: "Use when reasoning about erpax's carrier — the courier organ that delivers accounted value to every node and carries entropy away. Blood is the receipt flow through the closed loop the heart drives and the lung charges: three properties of living blood (cooperative Hill binding · steady-state turnover by Little's law · conserved delivery) are computed and mapped — a structural isomorphism — onto erpax's coverage, regeneration, and double-entry."
 atomPath: blood
-coordinate: "blood · 5/round · 438064c4"
-contentUuid: "5512d0ae-4cd7-5131-aff4-dac7cb36a8df"
-diamondUuid: "fb927478-785b-8e89-9ce3-6dcb93e2efb6"
-uuid: "438064c4-17cd-8b56-8fe7-564e8aae6764"
-horo: 5
+coordinate: "blood · 4/weave · 93ec6c61"
+contentUuid: "8e145fac-edff-5919-bed2-0fadecd0c446"
+diamondUuid: "b8d8eded-30d0-80dd-8fc5-e572a1c27a2c"
+uuid: "93ec6c61-a23e-8469-8106-ca6d89b3ffb4"
+horo: 4
 typography:
   partition: blood
-  bondDegree: 37
+  bondDegree: 31
 standards:
   - "A. V. Hill,"
   - "Hill, J. Physiol. 1910 (cooperativity) · erythropoiesis (≈2M RBC/s, ≈120 d)"
 bindings: []
 signatures:
-  computationUuid: "f2cb3089-aa49-84a2-bfc3-b43cde25cbb3"
+  computationUuid: "a4766fb3-81e4-8980-8a58-db048aa1a763"
   stages:
     - stage: path
       stageUuid: "2cdf2439-8f4a-8dd6-8571-6697ceba1894"
@@ -24,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "2ca8e915-7941-8806-b409-0b2a82a4b486"
     - stage: links
-      stageUuid: "5bfa5375-0785-85f9-bde0-1cfb8bb4268d"
+      stageUuid: "84a348ac-81a3-8640-ba39-6c7f15f7bc21"
     - stage: horo
-      stageUuid: "7e02bbf0-b9e1-8c8f-82e2-4c10bd8fc108"
+      stageUuid: "471de479-9dd8-8811-811b-e0784e19ace3"
     - stage: seal
       stageUuid: "f0894d76-5fc3-8cd7-9199-445aae280848"
     - stage: uuid
-      stageUuid: "ee9008e7-0a55-8678-97a6-5bd52db80d0e"
+      stageUuid: "58789b44-9150-8c26-8b49-ce18ca2f579e"
 version: 2
 ---
 # blood — the courier (cooperative delivery · regenerated · conserved)

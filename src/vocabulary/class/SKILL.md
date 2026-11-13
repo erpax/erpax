@@ -2,34 +2,34 @@
 name: class
 description: "Use when reasoning about class — A class, also often called a 'Type'; equivalent to rdfs:Class."
 atomPath: "vocabulary/class"
-coordinate: "vocabulary/class · 1/base · 670d7190"
-contentUuid: "dd1b2355-bb9d-52d1-9c4b-20bbd2076ba0"
-diamondUuid: "b5610daa-7b1e-81a0-ad79-b72adc6913dc"
-uuid: "670d7190-0d3e-8b5d-961b-dc3d6bc6ecbb"
-horo: 1
+coordinate: "vocabulary/class · 7/descent · ebb186cc"
+contentUuid: "2b2058e1-5e6e-5318-9289-916ec16c7387"
+diamondUuid: "3db24c1c-26da-8632-9088-712e687663cb"
+uuid: "ebb186cc-fd98-87a6-9814-df2de2e36b38"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 35
+  bondDegree: 31
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "86c4c8c5-0285-8afa-bf83-0967cf146374"
+  computationUuid: "15e93c60-9dac-8b66-8f62-86d22f9fff06"
   stages:
     - stage: path
       stageUuid: "9626b9fc-71d5-84bb-801d-4378544e9102"
     - stage: trinity
       stageUuid: "31c8cbb8-636b-8dbd-8371-9ddc956d5563"
     - stage: boundary
-      stageUuid: "62f51002-d7d6-8f21-b9d6-12f5172305e2"
+      stageUuid: "25096f7a-6aca-8bed-bb2f-73f71c48c0b3"
     - stage: links
-      stageUuid: "9ed4d5e3-0568-8266-bbd3-7be70c657c22"
+      stageUuid: "9a7a71e5-6856-8d65-a953-c2ccf11e98ca"
     - stage: horo
-      stageUuid: "1568ee9a-917c-870e-8988-8865f712f249"
+      stageUuid: "f04a8be9-ee40-885c-864a-9347a0d36281"
     - stage: seal
       stageUuid: "d99d41b6-52c8-852c-b2b5-1e3804634d85"
     - stage: uuid
-      stageUuid: "41a2db18-e41b-8314-ab42-2c9838228254"
+      stageUuid: "955136fe-fbb2-8e27-828f-7ec1406e64b6"
 version: 2
 ---
 # class

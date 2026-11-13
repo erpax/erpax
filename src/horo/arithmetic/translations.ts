@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when performing mathematical operations on horo digits — digital roots, composition, ratios, void mechanics, inverse orbits, and affine transformations. All functions are pure and side-effect-free.",
-    "uuid": "11f9b4f4-6e38-8c0f-904d-3b5e1cddbd53",
+    "uuid": "6e23fe21-5500-85cc-b250-f20dba451304",
     "words": [
       "use",
       "when",

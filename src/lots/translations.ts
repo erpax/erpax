@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain.",
-    "uuid": "edf4e24f-0856-8bfa-99ed-6896dcb5834b",
+    "uuid": "956884aa-4fe4-858e-a755-40c227dcf93b",
     "words": [
       "use",
       "when",

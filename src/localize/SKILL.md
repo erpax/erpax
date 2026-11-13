@@ -2,14 +2,14 @@
 name: localize
 description: "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts."
 atomPath: localize
-coordinate: "localize · 5/round · 9bb0c21b"
-contentUuid: "3eec6a8d-78b0-5d19-aafd-53f38eaa490d"
-diamondUuid: "45c2538e-cfb9-8264-9606-221f8f18a98d"
-uuid: "9bb0c21b-ecc3-8d15-88d1-aeeab6c7f07e"
+coordinate: "localize · 5/round · 35123b23"
+contentUuid: "e8ce6ebc-a274-556e-9a97-12f178610c3a"
+diamondUuid: "e8a39fca-7413-893d-accb-5503ca53b8be"
+uuid: "35123b23-6143-8e75-b4ca-d952a4926eb6"
 horo: 5
 typography:
   partition: localize
-  bondDegree: 115
+  bondDegree: 112
 standards:
   - "4647` (RFC 4647, Sept 2006, \"Matching of Language Tags\"; current as of 2026). Governs"
   - "4647` alongside `@rfc 5646` wherever this skill does matching (it covers the behavior RFC 5646 does not)."
@@ -32,7 +32,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e132476d-6a9f-8071-9777-bf77a3b674e5"
+  computationUuid: "8f245dec-3ebe-8aa2-82b8-c70f12a70fe5"
   stages:
     - stage: path
       stageUuid: "2a33b115-eb41-89e9-a3b7-4aeb5c1c1125"
@@ -41,13 +41,13 @@ signatures:
     - stage: boundary
       stageUuid: "dca1443a-03bf-8595-b4d8-da85cc42b9e9"
     - stage: links
-      stageUuid: "7282828b-8b76-8baa-9ccd-2fceddc45b82"
+      stageUuid: "68cb63fa-8f53-87f9-95ff-b2f758cfe082"
     - stage: horo
-      stageUuid: "6250b905-4aa5-86c3-a898-b912cfb1abf1"
+      stageUuid: "033d25fa-d3fa-87d7-9cda-142b00854f9b"
     - stage: seal
       stageUuid: "ab167e4a-044f-8271-bb4c-9d9cd41c765b"
     - stage: uuid
-      stageUuid: "6d3c2b40-1b7e-8390-87a8-980c2df83d9a"
+      stageUuid: "a66ade98-54eb-8ca5-a11e-ae0ba127300f"
 version: 2
 ---
 # localize — localization as the tamper-cost ⊕ proof fusion

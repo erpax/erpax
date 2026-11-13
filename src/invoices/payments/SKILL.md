@@ -3,13 +3,13 @@ name: payments
 description: "Use when recording or auditing cash received or sent against an invoice — AR/AP GL posting, ISO-20022 pain/pacs message types, IBAN/BIC, period-lock guard, cash-flow classification (IAS-7 / ASC-230). The payments collection."
 atomPath: "invoices/payments"
 coordinate: "invoices/payments · 8/crest · 7a68160a"
-contentUuid: "1204c249-7ee2-551e-946a-7b1ba178c0d6"
+contentUuid: "ffbf7ebf-40a3-571a-a312-63b7a5b81f49"
 diamondUuid: "9525896c-72c8-8b50-8465-3114d4c71299"
 uuid: "7a68160a-a086-88e0-b22a-88cca4361d24"
 horo: 8
 typography:
   partition: invoices
-  bondDegree: 40
+  bondDegree: 39
 standards:
   - "IFRS IAS-7 statement-of-cash-flows"
   - "ISO-13616-1:2020 iban"

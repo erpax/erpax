@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about predecessor — A pointer from a previous, often discontinued variant of the product to its newer variant.",
-    "uuid": "b07882ac-5f15-86ee-b66d-0aff5250c1a0",
+    "uuid": "0550f6dc-d38b-84e6-849f-9696cf18d5c6",
     "words": [
       "use",
       "when",

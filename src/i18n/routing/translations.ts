@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "routing",
-    "uuid": "8dbcd9be-4724-86f6-a859-339d4d22921a",
+    "uuid": "c997c791-f8f2-8aec-bb3e-d8e79f9ea704",
     "words": [
       "routing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about routing — is the whole claim. Every URL carries its locale — , — so the language a page renders in is a fact of the address, not a negotiation between a cookie, an header and a pathname…",
-    "uuid": "59e3e8ee-5539-87e4-9296-74973876378e",
+    "uuid": "2a50060c-aa6d-8b6c-a515-3a3138e33bbb",
     "words": [
       "use",
       "when",

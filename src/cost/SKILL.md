@@ -2,14 +2,14 @@
 name: cost
 description: "Use when optimising ANY cost in the society against output — one efficiency law for every cost (ai tokens, money, energy, time, labor, entropy), measured against productivity AND creativity. efficiency = output / cost, where output = productivity (verified, committed, repeatable work) + creativity (novel atoms/solutions, which compound because they're reused). The society and the agent maximise output-per-cost for every kind; competition selects the most efficient, decompression pays for it; waste (spend that produced nothing) drives to 0."
 atomPath: cost
-coordinate: "cost · 4/weave · c2d5249a"
-contentUuid: "6ac1f08c-7bda-5cee-afc8-da0669800f4d"
-diamondUuid: "f3cb6873-5c26-885e-90c9-9ece2d8ef924"
-uuid: "c2d5249a-1739-8814-b568-031b42d9cde2"
+coordinate: "cost · 4/weave · 90296806"
+contentUuid: "c095d875-18f2-51b1-9282-51b74111c7ba"
+diamondUuid: "805a2c16-3a50-8407-89b4-ee7ab25ffe78"
+uuid: "90296806-8e84-8665-b7b2-0d1a870874bd"
 horo: 4
 typography:
   partition: cost
-  bondDegree: 445
+  bondDegree: 403
 standards:
   - "ISO-3166-1"
   - "ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)"
@@ -20,7 +20,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "93e7ceb4-baab-8558-a9e6-14ab4ad9fdb6"
+  computationUuid: "76010b34-d2f1-8e76-a626-4837e323a62d"
   stages:
     - stage: path
       stageUuid: "9fa475f3-9812-8558-842d-9484e1e18cbf"
@@ -29,13 +29,13 @@ signatures:
     - stage: boundary
       stageUuid: "e7ac691f-6fa5-8b35-862e-5ad3aa8e7962"
     - stage: links
-      stageUuid: "80d796b0-c126-8d82-8364-68b10131c80e"
+      stageUuid: "f2aab514-0860-86e4-a104-9328d4825cd4"
     - stage: horo
-      stageUuid: "d0d1f0da-abed-8fc1-857f-c0feb8f2aabb"
+      stageUuid: "fe1cd115-5581-8815-801a-67f4e8b746d9"
     - stage: seal
       stageUuid: "341ef0da-5cc1-887c-94d7-1dfb1c5b415d"
     - stage: uuid
-      stageUuid: "bd627100-357f-883e-a067-4a6a4d871556"
+      stageUuid: "dbb30efc-0759-8c9b-8e66-04d4eda74423"
 version: 2
 ---
 # cost — one efficiency law for every society cost (vs productivity + creativity)

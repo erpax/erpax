@@ -3,17 +3,17 @@ name: search
 description: "Use when an entity needs quick free-text find across a few key columns — code/name/barcode/number lookup. The SearchConcern/quick_search (ransack) pattern → a Payload where/like query or a search index."
 atomPath: search
 coordinate: "search · 1/base · f3dc2338"
-contentUuid: "9a2260aa-1ef9-5d01-ab5b-29d70272d709"
-diamondUuid: "42f1f9c6-5b44-8d6f-b3ba-ed08a745d99d"
+contentUuid: "b85c8ba3-398f-516a-bafc-abd4920f94b3"
+diamondUuid: "57ea1b44-f21f-83d7-88f1-a544a0eea8a9"
 uuid: "f3dc2338-37ac-8a02-9814-fca2c4b821a2"
 horo: 1
 typography:
   partition: search
-  bondDegree: 50
+  bondDegree: 47
 standards: []
 bindings: []
 signatures:
-  computationUuid: "569a5b51-a567-839f-939f-56b8d38297d1"
+  computationUuid: "bde9a0f2-950b-8d83-9bf7-7c7e6ec52607"
   stages:
     - stage: path
       stageUuid: "580e84d5-399c-893b-abbe-4f8aeec17b5b"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "26ef1193-4848-8f60-9010-01895b96251f"
     - stage: horo
-      stageUuid: "5581c530-35dd-87ae-95aa-27c1495a04d5"
+      stageUuid: "85eff889-53c0-8273-a16d-15ef728e70e6"
     - stage: seal
       stageUuid: "0800a8c6-e681-8ebf-975b-b8867f2be387"
     - stage: uuid
-      stageUuid: "328980db-363a-883e-b453-0aeff53a3615"
+      stageUuid: "710bb491-14bd-80b6-a347-71dcaa20688e"
 version: 2
 ---
 # search — typed find vs. free-text find

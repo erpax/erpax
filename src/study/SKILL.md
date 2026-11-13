@@ -2,34 +2,34 @@
 name: study
 description: Use when reasoning about study — A medical study or trial related to this entity.
 atomPath: study
-coordinate: "study · 1/base · 20da76ce"
-contentUuid: "03395bdb-da24-5033-8566-f32c889be172"
-diamondUuid: "96dad3cb-5050-85a2-a6c5-208c66788794"
-uuid: "20da76ce-0101-8fce-a98c-2af37c84fa93"
-horo: 1
+coordinate: "study · 2/share · 0aa1c03e"
+contentUuid: "42024ced-b2b2-54aa-97f7-dbea520f044b"
+diamondUuid: "4c171316-949e-8133-84ff-c3345c65c416"
+uuid: "0aa1c03e-602a-8404-952e-3bbde553d0eb"
+horo: 2
 typography:
   partition: study
-  bondDegree: 36
+  bondDegree: 29
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "6adcd782-1159-8ed5-bc15-38d8f2b534b6"
+  computationUuid: "06d043be-db9e-85ea-950e-3bbf14f2d457"
   stages:
     - stage: path
       stageUuid: "efbfa5d6-192f-856f-ab0c-541382ce18b4"
     - stage: trinity
       stageUuid: "732e2936-da67-8f57-b7f8-c3153e74b97e"
     - stage: boundary
-      stageUuid: "1e308495-a77c-8792-bde7-aafc5fe06686"
+      stageUuid: "08a271c6-533d-8d5a-bfdb-44a613c8f92a"
     - stage: links
-      stageUuid: "fb908fbe-7c79-8688-be9a-b4bfb6f75bfd"
+      stageUuid: "443de7f8-9b6c-8dea-ab4e-910d531425bd"
     - stage: horo
-      stageUuid: "db9414c6-c9c6-80d1-96d4-cc2f83336879"
+      stageUuid: "525f5b11-ed53-83a6-8701-9ede02c8adb5"
     - stage: seal
       stageUuid: "60a051e4-c6fe-8e84-9683-84522b14868f"
     - stage: uuid
-      stageUuid: "e9cf8687-46bc-8702-ad7c-0da55acf5abc"
+      stageUuid: "6470b206-0b20-838a-836d-49976f9a9551"
 version: 2
 ---
 # study

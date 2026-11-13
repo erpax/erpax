@@ -2,34 +2,34 @@
 name: observational
 description: "Use when reasoning about observational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/observational"
-coordinate: "vocabulary/observational · 2/share · cd8a95cd"
-contentUuid: "9b2f2077-7ef0-5ed3-9614-e5594eb72751"
-diamondUuid: "5d9444ac-073a-826d-bc31-2f189fdb444d"
-uuid: "cd8a95cd-87e6-8bce-a17a-9b02d6da05f9"
-horo: 2
+coordinate: "vocabulary/observational · 1/base · 1cbc0f61"
+contentUuid: "0c59462f-fd67-55c8-a2e9-c784f47ab7cd"
+diamondUuid: "0cf431b7-cffa-84b6-a33d-6c3310bfe632"
+uuid: "1cbc0f61-c986-8048-92e5-09d961d27a51"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 24
+  bondDegree: 23
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "05d54021-97c6-8003-a699-252579d90d69"
+  computationUuid: "d615d468-6c66-8937-9421-9ee9aa2610bf"
   stages:
     - stage: path
       stageUuid: "2a974c22-caa0-8356-8f6e-39bba7626c9f"
     - stage: trinity
       stageUuid: "dc73f18c-a036-849a-bca6-48af16d5f994"
     - stage: boundary
-      stageUuid: "098d9a6f-a95f-8eea-b373-6c166fb2528e"
+      stageUuid: "9fe5b0db-f2fe-865c-a857-f4f652e2bcc1"
     - stage: links
-      stageUuid: "f734c821-bd59-8ebd-9bbe-3b5d47375f8c"
+      stageUuid: "def2a5da-e4bc-8bc7-baa1-75b05481c6a4"
     - stage: horo
-      stageUuid: "1e37035e-0ba7-83da-9bf7-6583b2984f6b"
+      stageUuid: "3083e356-6f16-83d6-ab64-9018da2733b4"
     - stage: seal
       stageUuid: "813846e0-046f-865d-afc8-4e7c4d1e509e"
     - stage: uuid
-      stageUuid: "855df6bd-78ac-8e29-8f0d-9f3f872321a0"
+      stageUuid: "a2f0e3db-87f1-8284-8753-15cd81729c96"
 version: 2
 ---
 # observational

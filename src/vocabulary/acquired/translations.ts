@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about acquired — The organization or person from which the product was acquired.",
-    "uuid": "2cf9835d-af06-8185-aa8f-5c1b37bc4132",
+    "uuid": "416db3b6-fcb6-82ac-a2e6-fb46528d9b1e",
     "words": [
       "use",
       "when",

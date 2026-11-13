@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "supto",
-    "uuid": "52ab96cf-2eeb-8608-8938-e609fb99cd99",
+    "uuid": "f716005f-981a-8302-b64f-a38e7a8702fa",
     "words": [
       "supto"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about supto — СУПТО (*Софтуер за управление на продажбите в търговски обекти* — sales-management software for commercial outlets), regulated by **Наредба Н-18** and the НАП registry, is — struct",
-    "uuid": "6d73c54f-2fe7-8dd7-9c34-e3bc2c07dfe2",
+    "uuid": "04ed9660-d655-87af-ad1e-0970056a41fb",
     "words": [
       "use",
       "when",

@@ -3,13 +3,13 @@ name: anchor
 description: "Use when reasoning about the external anchor — the one drop of borrowed entropy that makes a zero-entropy content-addressed store tamper-proof. RFC-3161/eIDAS TSA or a blockchain leaf pins the chain root to a time no party can rewrite; tamper-cost is min(digest, anchor), so the anchor must be ≥ the digest or it is the weak link. Matter-twin anchor/index.ts."
 atomPath: anchor
 coordinate: "anchor · 5/round · e1cc91d6"
-contentUuid: "981e086e-bf60-5636-b93c-80c8aafaec20"
-diamondUuid: "ec759595-9ff1-8ef0-9966-b1f6fed109ca"
+contentUuid: "bf7ffa97-b8fd-53c3-aa69-e6fe77fa2342"
+diamondUuid: "55e4425c-bf70-812a-b602-a73f5f9ae66f"
 uuid: "e1cc91d6-f068-81ca-8c52-9fce7626b8e7"
 horo: 5
 typography:
   partition: anchor
-  bondDegree: 126
+  bondDegree: 117
 standards:
   - "EU-537/2014"
   - "EU-910/2014"
@@ -27,7 +27,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "59b17e3c-772b-8ba7-a3e2-cfb65ae87d8a"
+  computationUuid: "8f4821a1-aff7-8bb6-b7b0-a88a5d0dfd97"
   stages:
     - stage: path
       stageUuid: "a67b8c67-2555-82a4-bf4a-6851baaa82ca"
@@ -38,11 +38,11 @@ signatures:
     - stage: links
       stageUuid: "95d22f77-8c2c-8c74-804b-0d08cc27bf7c"
     - stage: horo
-      stageUuid: "31071307-b3c2-8d14-b914-c8dad83efe69"
+      stageUuid: "46f5f1b9-e64f-8de9-abd9-1d7e4011c64a"
     - stage: seal
       stageUuid: "05f9e206-43bb-8ebe-8bbb-46d89406277d"
     - stage: uuid
-      stageUuid: "be1b3fce-57a1-866e-a59d-67287c344e3a"
+      stageUuid: "d6702ad0-7f83-8865-ac5b-fe9ed888d1ca"
 version: 2
 ---
 # anchor — the borrowed entropy

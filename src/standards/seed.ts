@@ -1056,56 +1056,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "CoE-108+",
-    "family": "eu",
-    "title": "Council of Europe Convention 108+ (CETS No. 108, as modernised by the 2018 amending Protocol CETS No. 223) for the Protection of Individuals with regard to Automatic Processing of Personal Data",
-    "uuid": "5d03ac11-664b-8a33-981b-2c8f73edf65a",
-    "color": "hsl(51 87% 55%)",
-    "count": 10,
-    "modules": [
-      {
-        "path": "src/access/standard/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/cloudflare/seal/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/entropy/source/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/get/preview/secret/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/mala/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/nist/sp/800/108/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/nist/sp/800/108/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/nist/sp/800/108/kdf.ts",
-        "section": ""
-      },
-      {
-        "path": "src/tenant/remote/secret/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/types/events/index.ts",
-        "section": "§107"
-      }
-    ]
-  },
-  {
     "id": "Berlin-Group-PSD2",
     "family": "eu",
     "title": "Berlin Group NextGenPSD2 open-banking API",
@@ -1128,6 +1078,52 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/tenant/roles/profile/payment-provider.profile.ts",
         "section": ""
+      }
+    ]
+  },
+  {
+    "id": "CoE-108+",
+    "family": "eu",
+    "title": "Council of Europe Convention 108+ (CETS No. 108, as modernised by the 2018 amending Protocol CETS No. 223) for the Protection of Individuals with regard to Automatic Processing of Personal Data",
+    "uuid": "5d03ac11-664b-8a33-981b-2c8f73edf65a",
+    "color": "hsl(51 87% 55%)",
+    "count": 9,
+    "modules": [
+      {
+        "path": "src/access/standard/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cloudflare/seal/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/entropy/source/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/get/preview/secret/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/nist/sp/800/108/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/nist/sp/800/108/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/nist/sp/800/108/kdf.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tenant/remote/secret/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/types/events/index.ts",
+        "section": "§107"
       }
     ]
   },
@@ -1914,7 +1910,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2016/679 — General Data Protection Regulation (GDPR), on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, repealing Directive 95/46/EC (incl. Art. 22 automated individual decision-making / profiling; consolidated text CELEX:02016R0679)",
     "uuid": "6833586b-b3ed-88e1-92e8-f083d952ad45",
     "color": "hsl(35 73% 49%)",
-    "count": 31,
+    "count": 29,
     "modules": [
       {
         "path": "src/agents/registered/legal/agent.ts",
@@ -1955,14 +1951,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/beyond/tenant-isolation.ts",
         "section": ""
-      },
-      {
-        "path": "src/exchange/SKILL.md",
-        "section": "Art.5(1"
-      },
-      {
-        "path": "src/exchange/index.ts",
-        "section": "Art.5(1"
       },
       {
         "path": "src/fiscal/period/SKILL.md",
@@ -2011,6 +1999,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/period/end/closing/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/self/closure/provider/notification.ts",
+        "section": ""
+      },
+      {
+        "path": "src/shred/SKILL.md",
+        "section": "Art.17"
       }
     ]
   },
@@ -2038,7 +2034,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 201,
+    "count": 199,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -3055,7 +3051,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Date and time representation",
     "uuid": "dcc7dde3-fa6b-8409-9382-89554e4c4d2b",
     "color": "hsl(359 66% 49%)",
-    "count": 332,
+    "count": 331,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -3161,7 +3157,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Currency codes",
     "uuid": "2aa02578-47b5-80bf-ad53-a36e04aaccfb",
     "color": "hsl(112 57% 38%)",
-    "count": 308,
+    "count": 306,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -3479,7 +3475,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 105,
+    "count": 101,
     "modules": [
       {
         "path": "src/accounting/proof/index.ts",
@@ -3585,7 +3581,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Information security management system",
     "uuid": "55e0dd80-ff9d-877e-926f-f0e8e91c9254",
     "color": "hsl(24 66% 46%)",
-    "count": 64,
+    "count": 61,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -3644,10 +3640,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/armory/index.ts",
-        "section": ""
-      },
-      {
         "path": "src/audit/submissions/SKILL.md",
         "section": ""
       },
@@ -3672,16 +3664,20 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/exchange/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/exchange/index.ts",
-        "section": ""
-      },
-      {
         "path": "src/fiscal/devices/SKILL.md",
         "section": ""
+      },
+      {
+        "path": "src/fiscal/devices/sales/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/envelope/index.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/integrity/signatures/index.ts",
+        "section": "Annex A"
       }
     ]
   },
@@ -3691,7 +3687,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "ISO/IEC 27001:2022 — Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
     "uuid": "1f8df678-adff-8feb-9e78-aaa58e7b0fb4",
     "color": "hsl(157 56% 38%)",
-    "count": 64,
+    "count": 61,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -3750,10 +3746,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/armory/index.ts",
-        "section": ""
-      },
-      {
         "path": "src/audit/submissions/SKILL.md",
         "section": ""
       },
@@ -3778,16 +3770,20 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/exchange/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/exchange/index.ts",
-        "section": ""
-      },
-      {
         "path": "src/fiscal/devices/SKILL.md",
         "section": ""
+      },
+      {
+        "path": "src/fiscal/devices/sales/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/envelope/index.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/integrity/signatures/index.ts",
+        "section": "Annex A"
       }
     ]
   },
@@ -5463,7 +5459,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Digital Identity Guidelines (identity proofing, authentication & federation assurance levels)",
     "uuid": "46ed5dc6-a768-8f13-b03e-8a581002bba6",
     "color": "hsl(157 78% 44%)",
-    "count": 97,
+    "count": 95,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -5675,7 +5671,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Secure Hash Standard (SHA-2)",
     "uuid": "6a25a77c-19fb-8d7f-85f3-a4a0fda1fbc4",
     "color": "hsl(173 82% 42%)",
-    "count": 37,
+    "count": 35,
     "modules": [
       {
         "path": "src/agent/harmonics/index.ts",
@@ -6065,7 +6061,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Key management lifecycles",
     "uuid": "03b4df35-67f2-8fa4-a7a6-445d7b0df5dd",
     "color": "hsl(228 68% 43%)",
-    "count": 13,
+    "count": 11,
     "modules": [
       {
         "path": "src/access/standard/index.ts",
@@ -6102,14 +6098,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/integrity/tenant-key-registry.ts",
         "section": "§5.6"
-      },
-      {
-        "path": "src/power/SKILL.md",
-        "section": "§5.1"
-      },
-      {
-        "path": "src/power/index.ts",
-        "section": "§5.1"
       },
       {
         "path": "src/proof/projection/SKILL.md",
@@ -6208,7 +6196,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "OECD Standard Audit File for Tax",
     "uuid": "3c66b577-efc9-8c9b-bd38-2df00b645605",
     "color": "hsl(342 61% 61%)",
-    "count": 64,
+    "count": 62,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -6291,10 +6279,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§СУПТО"
       },
       {
-        "path": "src/reverse/SKILL.md",
-        "section": "§3"
-      },
-      {
         "path": "src/saf/t/export/service/index.ts",
         "section": ""
       },
@@ -6304,6 +6288,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/saf/t/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/saf/t/types/test.ts",
         "section": ""
       }
     ]
@@ -7467,7 +7455,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (revised — content/event uuid)",
     "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
     "color": "hsl(29 70% 49%)",
-    "count": 154,
+    "count": 145,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -7891,7 +7879,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "JSON Canonicalization Scheme",
     "uuid": "67e3e4b1-0c62-8840-bab2-fa9bba6e4c0c",
     "color": "hsl(315 73% 47%)",
-    "count": 34,
+    "count": 32,
     "modules": [
       {
         "path": "src/ai/durable-objects.ts",
@@ -7982,12 +7970,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§5.8"
       },
       {
-        "path": "src/text/SKILL.md",
-        "section": "§5.8"
+        "path": "src/uuid/chain/index.ts",
+        "section": ""
       },
       {
-        "path": "src/text/index.ts",
-        "section": "§5.8"
+        "path": "src/uuid/kv/index.ts",
+        "section": ""
       }
     ]
   },
@@ -8305,7 +8293,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Sarbanes-Oxley Act §302/404/906",
     "uuid": "a6e18810-badd-8876-9ebc-72c9bc14aa6c",
     "color": "hsl(241 86% 54%)",
-    "count": 25,
+    "count": 23,
     "modules": [
       {
         "path": "src/access/standard/index.ts",
@@ -8370,10 +8358,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/period/end/closing/index.ts",
         "section": ""
-      },
-      {
-        "path": "src/reverse/SKILL.md",
-        "section": "§3"
       },
       {
         "path": "src/roles/registry/index.ts",
@@ -8699,7 +8683,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Global Trade Item Number",
     "uuid": "74c424f5-91d7-89f4-a01e-b807d14807da",
     "color": "hsl(12 56% 43%)",
-    "count": 7,
+    "count": 6,
     "modules": [
       {
         "path": "src/app/(frontend)/[locale]/products/[slug]/page.tsx",
@@ -8719,10 +8703,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/items/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/match/index.ts",
         "section": ""
       },
       {
@@ -9085,38 +9065,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Linked-data type vocabulary",
     "uuid": "9cff4f7f-f5d5-8924-99c4-0d564a3735fb",
     "color": "hsl(231 64% 45%)",
-    "count": 1909,
+    "count": 1660,
     "modules": [
       {
         "path": "src/abdomen/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accept/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/acceptance/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accepted/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accepting/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accepts/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accommodation/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/action/SKILL.md",
         "section": ""
       },
       {
@@ -9125,10 +9077,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/agents/mcp/presentation.ts",
-        "section": ""
-      },
-      {
-        "path": "src/anesthesia/SKILL.md",
         "section": ""
       },
       {
@@ -9181,6 +9129,38 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/app/(frontend)/tenant-domains/[tenant]/[...slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/tenant-slugs/[tenant]/[...slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/apply/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": ""
+      },
+      {
+        "path": "src/auto/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/before/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/billing/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/biological/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/block/SKILL.md",
         "section": ""
       }
     ]
@@ -9678,48 +9658,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "W3C-DID-1.0",
-    "family": "w3c",
-    "title": "Decentralized Identifiers",
-    "uuid": "23ae3478-a989-847b-889c-313d841dc631",
-    "color": "hsl(134 72% 38%)",
-    "count": 9,
-    "modules": [
-      {
-        "path": "src/agents/mcp/tool/governance.ts",
-        "section": ""
-      },
-      {
-        "path": "src/did/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/identification/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/identification/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/tenant/roles/profile/country.ts",
-        "section": ""
-      },
-      {
-        "path": "src/uuid/governance/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/voting/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/voting/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "W3C-PROV-O",
     "family": "w3c",
     "title": "Provenance Ontology",
@@ -9753,6 +9691,40 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/cloning/genome/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "W3C-DID-1.0",
+    "family": "w3c",
+    "title": "Decentralized Identifiers",
+    "uuid": "23ae3478-a989-847b-889c-313d841dc631",
+    "color": "hsl(134 72% 38%)",
+    "count": 7,
+    "modules": [
+      {
+        "path": "src/agents/mcp/tool/governance.ts",
+        "section": ""
+      },
+      {
+        "path": "src/did/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tenant/roles/profile/country.ts",
+        "section": ""
+      },
+      {
+        "path": "src/uuid/governance/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/voting/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/voting/index.ts",
         "section": ""
       }
     ]

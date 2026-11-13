@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a sanitisation defect must be measured by the corpus itself rather than found by an external scanner — one-pass tag strips, JSON.stringify into generated code, hostname substring checks, hand-rolled quote escapes, and dotted-path writers with no __proto__ refusal, parsed from the grammar; the law the 25 CodeQL JavaScript alerts showed was missing.",
-    "uuid": "862b455e-68ca-8f6d-87c2-2a8e917a52bb",
+    "uuid": "2b603688-0e9c-852a-8d91-db4d037a9055",
     "words": [
       "use",
       "when",

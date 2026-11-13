@@ -2,14 +2,14 @@
 name: research
 description: "Use when an actor must find where its own identity (an email) is used across the corpus and secure those accounts — self-research over the COMPUTED Payload MCP find-surface, scoped to the caller's own access so there is no bypass, with each reset/recover sandbox-gated and receipted. Agnostic — collections and services live in the DB, never hardcoded."
 atomPath: "self/research"
-coordinate: "self/research · 8/crest · 4371e3a2"
-contentUuid: "8b715034-2112-52e4-a575-a14f4c33624b"
-diamondUuid: "c726ef36-1604-8b6c-a1fa-94b3ad3da02d"
-uuid: "4371e3a2-f0cb-86fb-9748-53c6eeb81a90"
-horo: 8
+coordinate: "self/research · 4/weave · 0740a2d8"
+contentUuid: "83bb1bd2-1095-577e-9075-73d95eb7b3c0"
+diamondUuid: "467b5c32-4d57-8724-95d1-721aa3612f66"
+uuid: "0740a2d8-4232-8ca6-86d8-40751497127f"
+horo: 4
 typography:
   partition: self
-  bondDegree: 160
+  bondDegree: 138
 standards:
   - "NIST SP 800-162 ABAC — the access scope is the ownership boundary"
   - "NIST SP 800-162 ABAC — the access scope is the ownership boundary`"
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "948d98eb-5d0a-8608-9089-d7331b7d31f9"
+  computationUuid: "9d4869d8-b3a0-8893-b4b7-4655ca9fa307"
   stages:
     - stage: path
       stageUuid: "81cc84ac-f2f5-85e2-b9ed-0e66364b833b"
@@ -30,13 +30,13 @@ signatures:
     - stage: boundary
       stageUuid: "f4f0a450-8a86-89c0-b19e-f50e0c943555"
     - stage: links
-      stageUuid: "beb763c0-e731-870a-943d-a5491b766541"
+      stageUuid: "81c4d89b-511b-8de0-9fd7-f92899e3e412"
     - stage: horo
-      stageUuid: "72268701-58fb-87c4-a0cb-4246290c489b"
+      stageUuid: "dbe25282-cb9f-8882-8429-783058d9ac96"
     - stage: seal
       stageUuid: "628d8c27-e253-8712-ad66-b74cb4c8e04f"
     - stage: uuid
-      stageUuid: "5bdae5d4-36a6-8033-8991-285cd456311d"
+      stageUuid: "3e081f4d-21c7-800d-be49-888a310a7759"
 version: 2
 ---
 # self-research — find where your identity is used, and secure it (under [[self]])

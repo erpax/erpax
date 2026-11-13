@@ -3,13 +3,13 @@ name: tenant
 description: "Use when reasoning about tenant — carries what differs between instances: , the it reports under, and its . The request types — create, update, batch — are the only shapes the management API accepts."
 atomPath: "types/tenant"
 coordinate: "types/tenant · 2/share · 5a2b93cd"
-contentUuid: "6e4be3b4-2300-5d1f-bde2-9eee7274c799"
+contentUuid: "2da48ad1-d99d-547d-a9a7-649397062296"
 diamondUuid: "82d99472-c0ad-8ae0-a248-1dc94b8b664c"
 uuid: "5a2b93cd-c560-897f-828a-8a6950945444"
 horo: 2
 typography:
   partition: types
-  bondDegree: 59
+  bondDegree: 58
 standards:
   - "BCP-47 language-tag"
   - "CN-ASBE Chinese-Accounting-Standards-for-Business-Enterprises"

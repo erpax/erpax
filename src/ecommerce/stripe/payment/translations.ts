@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about payment — The payment child of the tenant-aware Stripe stack. What is held here is a reference to a method Stripe holds, never the instrument itself — the tokenisation boundary is what…",
-    "uuid": "2130e71a-aca7-8b19-b6eb-bbb37af828e0",
+    "uuid": "a9b914eb-09d7-8ed5-bcde-2173a576c608",
     "words": [
       "use",
       "when",

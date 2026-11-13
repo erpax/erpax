@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reaching the fulfillment side of commerce — provisioning and delivering what a checkout bought — through its own namespace; the face re-exports the commerce barrel while the matter is still being lifted out of the hub.",
-    "uuid": "b675e2a4-d736-83e0-acf8-6cbd92c5aacc",
+    "uuid": "28413775-22d5-8b11-bf5e-61e80f8a66af",
     "words": [
       "use",
       "when",

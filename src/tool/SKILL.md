@@ -3,13 +3,13 @@ name: tool
 description: Use when reasoning about tool — A sub property of instrument. An object used (but not consumed) when performing instructions or a direction.
 atomPath: tool
 coordinate: "tool · 4/weave · 7a72b285"
-contentUuid: "d4594bc9-57b2-573b-a0f8-7411d7d8788b"
+contentUuid: "3a8af9f9-0764-58e5-a538-fd167a983acf"
 diamondUuid: "04c8e696-8193-8b8c-857d-ed2f11492ae1"
 uuid: "7a72b285-e116-8dd1-af03-0f292259ecc5"
 horo: 4
 typography:
   partition: tool
-  bondDegree: 20
+  bondDegree: 19
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

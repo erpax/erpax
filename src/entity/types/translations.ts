@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when classifying legal entities — Corporation, LLC, Partnership, Nonprofit, Trust, Government, Individual — to determine applicable compliance frameworks, audit scope, and jurisdiction applicability. The read-only entity-type reference table.",
-    "uuid": "887817f9-be77-8355-81e5-5553118922f4",
+    "uuid": "ee6ed8ed-5658-89f5-b00e-e6be00dd9ebd",
     "words": [
       "use",
       "when",

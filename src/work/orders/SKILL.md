@@ -3,13 +3,13 @@ name: orders
 description: "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger."
 atomPath: "work/orders"
 coordinate: "work/orders · 5/round · 95477c3a"
-contentUuid: "2a8a6ef1-3766-59f9-9692-9a490597a642"
+contentUuid: "c41bc7fd-b170-5c56-8ac2-01cb1989b124"
 diamondUuid: "10a6243a-ab77-865f-b54b-b7cbf8e99fac"
 uuid: "95477c3a-ce73-85ed-b436-3fde06a8ba91"
 horo: 5
 typography:
   partition: work
-  bondDegree: 89
+  bondDegree: 88
 standards:
   - "IFRS IAS-19 §11 short-term-employee-benefits piece-rate"
   - "IFRS IAS-2 §10 §12 cost-of-conversion (the piece-rate wage = direct labour)"

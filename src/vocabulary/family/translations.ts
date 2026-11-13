@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "family",
-    "uuid": "46d3c43a-ce67-8ac1-ac15-70d351fe5bd4",
+    "uuid": "71d3392e-8c76-84d8-b1bf-f582f2a150a5",
     "words": [
       "family"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when grouping crops by botanical family — the rank (Brassicaceae, Solanaceae, Cucurbitaceae, Apiaceae, Fabaceae, Asteraceae, Amaranthaceae, Alliaceae, Poaceae) that shares pests, diseases, and nutrient demands, making it the practical unit of crop rotation. The taxonomy rank that carries pest/fertility inheritance; same family ⇒ must not follow itself in a bed.",
-    "uuid": "5032802c-c671-8de7-acc5-4fc690a0f375",
+    "uuid": "4f11a9d4-e11f-89c7-95db-4b123d340a14",
     "words": [
       "use",
       "when",

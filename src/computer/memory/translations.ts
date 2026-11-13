@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "memory",
-    "uuid": "bcbb1df1-57f3-81f6-9601-cc99d90df37b",
+    "uuid": "a454a813-0292-8ea8-b351-1b998ed61662",
     "words": [
       "memory"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about memory as a part of computer — pivot to canonical @/memory/quantum; nested not duplicated.",
-    "uuid": "70befb7d-7f65-8728-883e-f2d1f2cef051",
+    "uuid": "bac20a02-3f3e-8027-ba5e-4341048b7003",
     "words": [
       "use",
       "when",

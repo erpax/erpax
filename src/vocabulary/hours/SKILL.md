@@ -2,34 +2,34 @@
 name: hours
 description: "Use when reasoning about hours as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/hours"
-coordinate: "vocabulary/hours · 4/weave · ab4b4dcd"
-contentUuid: "3609ba3f-1ae9-572a-8973-3a8ad43d37d5"
-diamondUuid: "2b7f5c32-e768-8688-aa5c-fb800cb4a4dd"
-uuid: "ab4b4dcd-b55e-819c-b9ca-f2472fc4c8b1"
-horo: 4
+coordinate: "vocabulary/hours · 8/crest · 689a9b65"
+contentUuid: "0ce56b10-7318-51fd-8ebe-deb8e7ab00fb"
+diamondUuid: "d253f048-c2db-8fc2-98e0-98d016701263"
+uuid: "689a9b65-a9b8-8631-a733-cd88eafc4535"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 32
+  bondDegree: 24
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "23b080d3-af97-84f4-a950-f296b38f7894"
+  computationUuid: "c05b59d6-2620-865b-b21b-fef980b88d4d"
   stages:
     - stage: path
       stageUuid: "3196dcfb-83c4-8b13-8bd5-3ee0c3fd335e"
     - stage: trinity
       stageUuid: "86ed3dad-2b2f-8f77-af5a-a8ca29175aa9"
     - stage: boundary
-      stageUuid: "57423b17-5d4f-8331-af91-65d561b72218"
+      stageUuid: "ae6581d9-6c17-8ff8-a203-2b12a37a1a40"
     - stage: links
-      stageUuid: "4a12a416-eb45-8db9-b70b-2d166d3007a0"
+      stageUuid: "32359402-32bd-8a9c-9807-bfc7da92460f"
     - stage: horo
-      stageUuid: "eb2efb7c-d310-869f-854f-8ee8bb528484"
+      stageUuid: "ab7351b9-2c6d-8187-b96b-e9eceb3d4410"
     - stage: seal
       stageUuid: "1dcbd239-2b09-8b5c-a14c-a3ac300e8f45"
     - stage: uuid
-      stageUuid: "ee2b0251-b7a7-885f-90fc-1f1eec43acc4"
+      stageUuid: "fdf96a70-1204-8060-8bd6-eb84bfbe989f"
 version: 2
 ---
 # hours

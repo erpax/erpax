@@ -2,33 +2,33 @@
 name: family
 description: "Use when grouping crops by botanical family — the rank (Brassicaceae, Solanaceae, Cucurbitaceae, Apiaceae, Fabaceae, Asteraceae, Amaranthaceae, Alliaceae, Poaceae) that shares pests, diseases, and nutrient demands, making it the practical unit of crop rotation. The taxonomy rank that carries pest/fertility inheritance; same family ⇒ must not follow itself in a bed."
 atomPath: "vocabulary/family"
-coordinate: "vocabulary/family · 2/share · 46d3c43a"
-contentUuid: "dfdbf328-7441-5db6-a912-d85a89aef8f6"
-diamondUuid: "f4121160-c5c8-86ee-82b9-e81391bbf2b2"
-uuid: "46d3c43a-ce67-8ac1-ac15-70d351fe5bd4"
-horo: 2
+coordinate: "vocabulary/family · 1/base · 71d3392e"
+contentUuid: "81a29650-ad7f-585a-94d5-52e47a7d9b59"
+diamondUuid: "8d294a40-dceb-827b-9a45-563694813787"
+uuid: "71d3392e-8c76-84d8-b1bf-f582f2a150a5"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 48
+  bondDegree: 35
 standards: []
 bindings: []
 signatures:
-  computationUuid: "64019078-14c4-85ab-bd01-47dae98c5265"
+  computationUuid: "500d4a18-7d90-818d-8855-01d633cf69ab"
   stages:
     - stage: path
       stageUuid: "f192569f-b5c0-8875-a382-3d9ddf254ad5"
     - stage: trinity
       stageUuid: "df356834-6ac0-8d96-a8ea-efe5c4051371"
     - stage: boundary
-      stageUuid: "e9ff5cc7-b788-8b07-b756-2d7a71a04bd1"
+      stageUuid: "24574462-5b91-8928-ac8e-30558dd5fcfc"
     - stage: links
-      stageUuid: "d17e6a99-f8c1-8a8f-8445-5d0f5346034d"
+      stageUuid: "25a8f146-d4f1-83e3-8e14-7ab75605c4d7"
     - stage: horo
-      stageUuid: "f3310469-5c15-8a57-81b3-764d0f74b558"
+      stageUuid: "16d795b9-9d29-8a37-8685-70707ee87c6f"
     - stage: seal
       stageUuid: "1c3f1d16-8906-816a-a65d-ad4a64ef08a3"
     - stage: uuid
-      stageUuid: "fb2014a9-a960-8d76-828a-f04e1520fa33"
+      stageUuid: "83553472-d112-8b45-9555-5566e2b2fbb8"
 version: 2
 ---
 # family — the botanical group that shares pests; the rotation unit

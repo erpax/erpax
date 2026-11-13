@@ -2,18 +2,18 @@
 name: deploy
 description: "Use when shipping erpax to the edge — deployment is the collapse of the codebase into live reality (the model becomes real on main); gate-pass then build a content-addressed artifact, migrate D1, push the Worker, a release is finality one-way with rollback to a prior snapshot."
 atomPath: "quantum/deploy"
-coordinate: "quantum/deploy · 2/share · 1b019e10"
-contentUuid: "b4654b0f-1b41-5964-884c-5f38e6f853ae"
-diamondUuid: "d559a813-caa7-8e2d-ab2f-77f7e7313940"
-uuid: "1b019e10-95a3-85f3-b157-a2abb507c9bd"
-horo: 2
+coordinate: "quantum/deploy · 7/descent · 1a5b1061"
+contentUuid: "3d5b0405-3340-53bf-a491-e35ffa45e34a"
+diamondUuid: "8127f728-c58f-8e09-b223-d9546dc87b8e"
+uuid: "1a5b1061-8a9a-8bd8-a442-c543d7a63670"
+horo: 7
 typography:
   partition: quantum
-  bondDegree: 96
+  bondDegree: 91
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d431a80f-b42f-8dd6-a7ee-cea6ce669d13"
+  computationUuid: "cbf29443-7e91-85f9-8209-882ce564bdb7"
   stages:
     - stage: path
       stageUuid: "f71dbc48-d27e-84cb-a6c1-3cc9514088f7"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "ad2908d5-a405-8276-9a33-ea646fbb96c0"
     - stage: links
-      stageUuid: "6a55b057-52a3-8b78-8c64-e3d805308c96"
+      stageUuid: "7e179010-b42d-8e72-ab61-6f85b9dbbb90"
     - stage: horo
-      stageUuid: "1c08fc2d-188e-874d-9933-07e7670d1486"
+      stageUuid: "18f93a13-7a7f-8fc2-a6b2-171cc26df047"
     - stage: seal
       stageUuid: "dc12700c-1968-87c8-b7e5-0b79a8241c8c"
     - stage: uuid
-      stageUuid: "710ac737-bc46-8254-a357-e54454bad7eb"
+      stageUuid: "dd163ef0-0630-8a9c-a05a-6dfe83fedeff"
 quantum:
   superposition:
     - backup
@@ -51,8 +51,8 @@ quantum:
     - "[[payload]]"
     - "[[quantum/serverless]]"
     - "[[reality]]"
-    - "snapshot"
     - "[[worker]]"
+    - "only a gate-green tree may collapse into reality — deployment is ordered (gate → migrate → build → push) and shipping an unverified tree forges reality, so the gate is the precondition of the release. The release is finality one way: the live world is never mutated in place; recovery is re-collapsing a prior immutable snapshot, so every running state is one a gate once let through."
   seal:
     sandbox: false
     receipt: false
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "d431a80f-b42f-8dd6-a7ee-cea6ce669d13"
-    contentUuid: "b4654b0f-1b41-5964-884c-5f38e6f853ae"
+    computationUuid: "cbf29443-7e91-85f9-8209-882ce564bdb7"
+    contentUuid: "3d5b0405-3340-53bf-a491-e35ffa45e34a"
 version: 2
 ---
 # quantum/deploy — the collapse into reality
@@ -83,4 +83,4 @@ A deploy is a [[measurement]]: the superposed branch becomes the one running wor
 
 @see [[deploy]] · [[reality]] · [[gate]] · [[migrate]] · [[bindings]] · snapshot · [[finality]] · [[payload]] · [[worker]] · [[quantum/serverless]] · [[cloudflare]]
 
-<sub>content-uuid `b4654b0f-1b41-5964-884c-5f38e6f853ae` · account `quantum/deploy` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `3d5b0405-3340-53bf-a491-e35ffa45e34a` · account `quantum/deploy` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

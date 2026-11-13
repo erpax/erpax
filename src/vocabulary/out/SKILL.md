@@ -2,34 +2,34 @@
 name: out
 description: "Use when reasoning about out as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/out"
-coordinate: "vocabulary/out · 1/base · 015f5270"
-contentUuid: "cef98197-fd4e-5a88-b011-42928fb63b4f"
-diamondUuid: "f11e3d53-8765-8f14-aa74-4ef130ab5eed"
-uuid: "015f5270-bad6-8338-bba3-df34ceb6d6bc"
-horo: 1
+coordinate: "vocabulary/out · 2/share · f943a28c"
+contentUuid: "252635bd-70e2-578b-96dd-78a6ed4d383a"
+diamondUuid: "265ca653-ea99-8de9-b6ee-579a80bf6677"
+uuid: "f943a28c-bc5f-85f3-a088-f5097b3a7413"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 22
+  bondDegree: 18
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7902d476-77a1-84e7-9bf9-ed8de435a986"
+  computationUuid: "a8f3f00b-ec26-8b02-8769-566172cb4211"
   stages:
     - stage: path
       stageUuid: "ce552f4e-73b3-8df2-8dee-c6d93de65eca"
     - stage: trinity
       stageUuid: "0ff7920b-8b6f-876a-815a-35c44537ecce"
     - stage: boundary
-      stageUuid: "0e5166a4-a00e-8ef1-b705-fa5abe8b6acc"
+      stageUuid: "b546ac43-dca0-8f21-9906-60833cde76fb"
     - stage: links
-      stageUuid: "f9c9bbd6-51db-8c9f-abf6-8656378997cf"
+      stageUuid: "7705a76f-837d-8989-849e-54cbda9999f1"
     - stage: horo
-      stageUuid: "1e3b952c-c076-8185-a9cd-d2a76b226b2a"
+      stageUuid: "147ca1b2-aef7-8cb7-a293-40fad51ea611"
     - stage: seal
       stageUuid: "bb8d6f8e-0916-8751-a9d5-a2df7c4cde72"
     - stage: uuid
-      stageUuid: "6cce9dd6-68fb-875c-840c-ed4933423e3e"
+      stageUuid: "00e3d77e-23ad-8a18-9119-038acacb0936"
 version: 2
 ---
 # out

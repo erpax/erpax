@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about city — A city or town.",
-    "uuid": "53ba7bf4-efee-880c-aadd-31fb136f5d90",
+    "uuid": "80f16144-ac78-89ce-8285-88e8b64303db",
     "words": [
       "use",
       "when",

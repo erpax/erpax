@@ -2,33 +2,33 @@
 name: empirical
 description: "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as source, dissolve the row-level specifics into the akashic DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming."
 atomPath: "vocabulary/empirical"
-coordinate: "vocabulary/empirical · 4/weave · 356e992e"
-contentUuid: "b2b723c3-8d77-5c3e-aeaf-13612806c593"
-diamondUuid: "b48d8c88-6b95-8f15-b6fa-d5fa60cc88c1"
-uuid: "356e992e-21f2-83c8-8fe2-6bc5eebf5b85"
-horo: 4
+coordinate: "vocabulary/empirical · 7/descent · 2bcf9fd0"
+contentUuid: "c4262cea-8bc5-59d4-a06e-40e387a91234"
+diamondUuid: "5c6bcbcc-c326-87f1-8d5a-c3a5e7fc1236"
+uuid: "2bcf9fd0-58a1-8865-88cd-145783735170"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 46
+  bondDegree: 37
 standards: []
 bindings: []
 signatures:
-  computationUuid: "0e7edb4a-367e-81f9-a812-1bdf578d737e"
+  computationUuid: "58f733d9-d8c4-855e-b113-c9bf89e9cc4f"
   stages:
     - stage: path
       stageUuid: "96533b46-fe27-860d-b20d-bf6c1d68ac50"
     - stage: trinity
       stageUuid: "dd14d057-d8c2-81bc-8108-e127ef5064fb"
     - stage: boundary
-      stageUuid: "4602fbb6-0467-8b9b-8f47-43b6f94c67cc"
+      stageUuid: "dea0d6e0-8915-83f5-b3af-41a4c595b881"
     - stage: links
-      stageUuid: "eef3c1cb-1aa8-87b0-8765-ee851173463d"
+      stageUuid: "730cb841-d07b-8fef-99e9-719f505ff660"
     - stage: horo
-      stageUuid: "6076c2f3-6d4a-8248-b9d6-757b2a9797ef"
+      stageUuid: "baa24bd7-85a8-83a5-adcb-f6abe0aad986"
     - stage: seal
       stageUuid: "33a52fb9-fd43-8709-a6a0-ac984b518029"
     - stage: uuid
-      stageUuid: "7ca30ca7-a40b-888f-8a53-ca9915b27174"
+      stageUuid: "b7336c07-5c31-86aa-82ef-41780fea996a"
 version: 2
 ---
 # empirical — derived from the data, not invented

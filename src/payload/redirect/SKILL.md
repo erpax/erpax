@@ -3,13 +3,13 @@ name: redirect
 description: Use when reasoning about redirect — resolves a requested path against the redirects collection and sends the reader on.
 atomPath: "payload/redirect"
 coordinate: "payload/redirect · 5/round · fd74d4c1"
-contentUuid: "8c5f73e8-293c-5f0c-8e22-6bf690d9bf9f"
+contentUuid: "be3ea1ee-6d17-5596-8eb1-e2e219377fab"
 diamondUuid: "d9562d87-2df9-8fd0-a5dd-324598435e44"
 uuid: "fd74d4c1-259d-8707-ba95-a1400dd46741"
 horo: 5
 typography:
   partition: payload
-  bondDegree: 7
+  bondDegree: 6
 standards:
   - "3986 uniform-resource-identifier"
   - "9110 §15.4 redirection-3xx"

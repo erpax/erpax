@@ -3,17 +3,17 @@ name: source
 description: "Use when stock movements should follow from the documents that cause them — a goods receipt, a shipment and a return are not kinds of movement but its sources, so a hook writes one draft movement per line when the document reaches the state in which stock has moved, once."
 atomPath: "items/inventory/movements/source"
 coordinate: "items/inventory/movements/source · 1/base · 8e924197"
-contentUuid: "149905d1-76d2-53ee-a1e8-0580b6d97f63"
-diamondUuid: "0c328a1e-d397-8399-b9f6-834f82307a62"
+contentUuid: "89e171a9-3df2-550e-b20f-c6c559e94a85"
+diamondUuid: "437c8a00-1284-85c2-afa3-f927912af47f"
 uuid: "8e924197-7d88-8a6e-92fb-ebd0790409dd"
 horo: 1
 typography:
   partition: items
-  bondDegree: 71
+  bondDegree: 21
 standards: []
 bindings: []
 signatures:
-  computationUuid: "fba3926f-1a02-8901-8063-8ce3b50ff0d6"
+  computationUuid: "8cec4a5c-53d2-87ee-8a13-1967ebe567b7"
   stages:
     - stage: path
       stageUuid: "7709a727-91f0-8d5c-a9f7-8e3c342ee397"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "a4769b61-8233-825e-9d9f-4b869823e31a"
     - stage: horo
-      stageUuid: "8822085c-7cb1-8a55-86ee-ffb8a8ae4e70"
+      stageUuid: "6f6e3a5c-eeb8-874e-bd3e-b184daff7f0c"
     - stage: seal
       stageUuid: "8ae9fec6-7a62-8402-811c-47b4418b6686"
     - stage: uuid
-      stageUuid: "3a921ae0-2da7-8667-92cf-165df3a54584"
+      stageUuid: "38d68f1a-2cdf-8f74-9592-d3a93f550bb0"
 version: 2
 ---
 # movements/source — a stock movement is the consequence of a document

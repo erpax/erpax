@@ -2,33 +2,33 @@
 name: compass
 description: "Use when reasoning about how you navigate erpax — navigation is SELF-GENERATING (sidebar · prev/next · ancestors · siblings · children · related · search all computed from the parent+prev/next trinity + the fractal path + the body links, never hand-listed) and it points like an alethiometer: ask any question and it points to the answer-path. The golden compass — the path IS the answer; the needle settles on the lowest-entropy form."
 atomPath: "vocabulary/compass"
-coordinate: "vocabulary/compass · 5/round · d9c7be3e"
-contentUuid: "7f3025a1-cbca-508f-9338-541dc907de49"
-diamondUuid: "bb961de3-2042-88f2-ab89-2ca6ebb6a5b6"
-uuid: "d9c7be3e-1993-8a5e-b2a7-71a64db89b59"
-horo: 5
+coordinate: "vocabulary/compass · 8/crest · 343413a7"
+contentUuid: "52d53da8-38cc-53cf-ae34-38342ee61a37"
+diamondUuid: "88b25b0d-32e7-85bb-ba14-a0dd34e4ee1f"
+uuid: "343413a7-e4d4-83ed-9d8c-8249940e3dde"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 40
+  bondDegree: 34
 standards: []
 bindings: []
 signatures:
-  computationUuid: "b10bf353-42a3-8880-8adf-600ae710db38"
+  computationUuid: "9c3e4507-cd45-8f13-a6ea-dd6ccc06db44"
   stages:
     - stage: path
       stageUuid: "0d947836-b2c5-84a1-8d0f-55d4b10c7462"
     - stage: trinity
       stageUuid: "2d352857-7481-8e82-964b-0c2d6aa5152c"
     - stage: boundary
-      stageUuid: "57f42bef-84fd-8bbe-83a4-2b4d8fe25c81"
+      stageUuid: "0dbc7a2a-b505-8ab7-ac42-5d4c3f6e110d"
     - stage: links
-      stageUuid: "dad76b54-0bf4-8a92-9ef7-8c789dd73687"
+      stageUuid: "26179706-f5c4-8800-847d-cab41064dab2"
     - stage: horo
-      stageUuid: "379c8145-3551-866c-b270-8ca292b961bb"
+      stageUuid: "d76267c2-6c67-8b41-9242-3438039b7916"
     - stage: seal
       stageUuid: "73da705a-b7ba-8bf8-9c71-e9e50c793c35"
     - stage: uuid
-      stageUuid: "cfab9e3e-2abc-8180-8d28-7897f81ae0ff"
+      stageUuid: "a04f16d1-3d87-88bc-b97e-301a908ad34a"
 version: 2
 ---
 # compass — the self-generating navigation (ask, and it points to the answer)

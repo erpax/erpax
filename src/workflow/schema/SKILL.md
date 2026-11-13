@@ -3,13 +3,13 @@ name: schema
 description: "Use when reaching the workflow SCHEMA — the shape a definition must take before the engine can read it — through its own namespace; the face re-exports the workflow barrel while the matter is still being lifted out of the hub."
 atomPath: "workflow/schema"
 coordinate: "workflow/schema · 4/weave · c65320f0"
-contentUuid: "382426b9-a165-5c3e-a0ab-7a5378a5cbc7"
+contentUuid: "db1346b4-07d3-511c-90f1-8d668f63631d"
 diamondUuid: "ea37ff06-2a0f-8940-b685-4d3e34e11810"
 uuid: "c65320f0-202c-8160-9ea3-c6efa85be247"
 horo: 4
 typography:
   partition: workflow
-  bondDegree: 57
+  bondDegree: 56
 standards: []
 bindings: []
 signatures:

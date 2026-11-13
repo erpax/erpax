@@ -2,34 +2,34 @@
 name: molecular
 description: "Use when reasoning about molecular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/molecular"
-coordinate: "vocabulary/molecular · 7/descent · 04efad75"
-contentUuid: "4c41913e-0feb-5eac-aaca-1637232110bc"
-diamondUuid: "dce8ae98-81f0-8b98-b138-0ea5390470fa"
-uuid: "04efad75-b19d-8e9d-8c2f-f643f4fd2bea"
-horo: 7
+coordinate: "vocabulary/molecular · 4/weave · 80fe848e"
+contentUuid: "d65a7500-21b0-56d9-a14d-f58ff9d3e693"
+diamondUuid: "84f45c75-9624-8667-bdc7-2165ea1947e3"
+uuid: "80fe848e-6d40-8c4a-8814-e92e4e2d9ef1"
+horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 35
+  bondDegree: 31
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "2beaaadf-cbf1-8a27-a2c0-517c1051d91b"
+  computationUuid: "099c198e-a1f0-848a-b5c2-ed556348c9f0"
   stages:
     - stage: path
       stageUuid: "e75c6a68-6cab-82e2-82ea-26a535d0ea0d"
     - stage: trinity
       stageUuid: "e203830b-de28-8387-8415-1e94085c802b"
     - stage: boundary
-      stageUuid: "18431654-a363-8d2f-bd80-3b2ce4c3c7cd"
+      stageUuid: "f5fd7d3d-6844-852b-9504-d84ee40147b6"
     - stage: links
-      stageUuid: "3c11a75e-2f09-8db7-a211-e3db69dd10a7"
+      stageUuid: "317d2e54-689c-83ac-a793-93bec2a40675"
     - stage: horo
-      stageUuid: "fa2e2ffe-4d4e-8913-aa22-2654e5fceed3"
+      stageUuid: "06e8e183-3045-8d4c-86ac-a6e20d291afe"
     - stage: seal
       stageUuid: "0a4273ad-11dd-8c56-83b6-edcec774b572"
     - stage: uuid
-      stageUuid: "3720750e-f727-8986-9c40-5b9127cba5ec"
+      stageUuid: "f288d2c7-60d0-8457-9753-1047b7da30b6"
 version: 2
 ---
 # molecular

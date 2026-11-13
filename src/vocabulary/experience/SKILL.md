@@ -2,34 +2,34 @@
 name: experience
 description: "Use when reasoning about experience — A schema.org component word, collided out of schema.org compounds — fused from OccupationalExperienceRequirements · experienceInPlaceOfEducation · experienceRequirements · monthsOf"
 atomPath: "vocabulary/experience"
-coordinate: "vocabulary/experience · 1/base · 4f84ab9f"
-contentUuid: "0af9ff28-856a-52a6-b05a-4eb03095dcc7"
-diamondUuid: "29340525-18e6-8ca3-a43b-2f4bb9d4d13a"
-uuid: "4f84ab9f-e4f4-810d-839f-57987402cd39"
-horo: 1
+coordinate: "vocabulary/experience · 2/share · dc996876"
+contentUuid: "0f10622c-7804-5f1a-a39c-d772b9fbbb8c"
+diamondUuid: "aeed0eaa-fc6d-8588-bd0f-14dddd335e9e"
+uuid: "dc996876-f9fe-8afb-8bef-7b6502295918"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 30
+  bondDegree: 27
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "328e9b5e-7d99-89f2-990d-3c0d4569e356"
+  computationUuid: "8867881f-a531-897b-ad4d-e243d196db92"
   stages:
     - stage: path
       stageUuid: "69926336-1f74-85ae-9a97-9965ec5531fd"
     - stage: trinity
       stageUuid: "89a78e22-1b99-83fe-a58b-7a87ef457bda"
     - stage: boundary
-      stageUuid: "f30f9de8-efdf-8329-b923-7c643be8ff1c"
+      stageUuid: "b597bdda-0e41-818b-b9ba-27549eec5d45"
     - stage: links
-      stageUuid: "d7773bb0-a172-879a-a4e4-7b2de8a0c43a"
+      stageUuid: "cd09c824-827f-8e56-b560-568cf7aa7def"
     - stage: horo
-      stageUuid: "e0aacc0d-7ed8-8c2e-b95b-c3ce5397c2bc"
+      stageUuid: "8a60ddb5-3001-8f07-9ed2-89ff33d9488c"
     - stage: seal
       stageUuid: "fb2e790a-3c06-82d2-bf02-f7f389a92bb3"
     - stage: uuid
-      stageUuid: "930daa1d-d11d-8de3-aaad-157d978c4820"
+      stageUuid: "f2d4740d-dde0-8804-b3c7-d3f54078a1a1"
 version: 2
 ---
 # experience

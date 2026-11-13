@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about field — entanglement/field — party-field entanglement warnings for admin UI.",
-    "uuid": "29c6c20c-25b6-81ed-98d5-d0b445f61b97",
+    "uuid": "444640ca-9215-85b5-9668-e7417c6a5c29",
     "words": [
       "use",
       "when",

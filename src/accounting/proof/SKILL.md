@@ -2,14 +2,14 @@
 name: proof
 description: "Use when reasoning about proof — Use to see the corpus accounting itself in realtime — every claim (@invariant · @standard · @compliance · @audit) is a DEBIT, every proof (a test beside it) the CREDIT, and the ledger balances iff all is proven. The residual is the unproven surface, computed at read. Run: tsx src/accounting/proof/index.ts"
 atomPath: "accounting/proof"
-coordinate: "accounting/proof · 2/share · 5a9740bf"
-contentUuid: "a0470f43-86d8-5512-8c4e-7d3b2d861b53"
-diamondUuid: "4d3d2fb9-8611-83ea-98b8-5dceb5899bfe"
-uuid: "5a9740bf-0a7c-88c1-a1a6-b2ed95689ac5"
-horo: 2
+coordinate: "accounting/proof · 4/weave · ed39e26a"
+contentUuid: "120ce85b-90dc-5f90-9d89-4a2d72c2f9d6"
+diamondUuid: "f5a88d43-b74e-8341-b707-edb427a68031"
+uuid: "ed39e26a-296e-85fb-b5a6-60740cbedcb0"
+horo: 4
 typography:
   partition: accounting
-  bondDegree: 634
+  bondDegree: 589
 standards:
   - IAS 1 — a balanced set of accounts; every debit has its credit
   - "IAS-1"
@@ -20,7 +20,7 @@ standards:
   - "· @compliance · @audit) is a DEBIT, every proof (a test beside it) the CREDIT, and the ledger balances iff all is proven. The residual is the unproven surface, computed at read. Run: tsx src/accounting/proof/index.ts\""
 bindings: []
 signatures:
-  computationUuid: "bd3bae11-7ff6-89d6-b879-909087f97f16"
+  computationUuid: "8ce24611-5b0b-86a1-9cac-40a52d518a5e"
   stages:
     - stage: path
       stageUuid: "2ce85a5a-7225-8570-b871-756a01b64294"
@@ -29,13 +29,13 @@ signatures:
     - stage: boundary
       stageUuid: "8e44d00f-6d97-8517-b0f4-6c322519abff"
     - stage: links
-      stageUuid: "0a343537-e0eb-891f-9ff6-6b03367d66cb"
+      stageUuid: "6784c5db-7019-8859-bd17-02964cecbcd2"
     - stage: horo
-      stageUuid: "83f26bff-71b9-8c1b-b0ec-a2e5e40eb061"
+      stageUuid: "1ab59bfa-57aa-8b7c-89a7-725f1f97b023"
     - stage: seal
       stageUuid: "26af9697-41e9-87b9-b519-a4c6a6a4a644"
     - stage: uuid
-      stageUuid: "876a4e74-6a5b-86cc-880e-7ca5581aace8"
+      stageUuid: "57ca2882-90d4-8948-94fa-3c568243e5d8"
 version: 2
 ---
 # proof — realtime double-entry of what the corpus CLAIMS against what it PROVES

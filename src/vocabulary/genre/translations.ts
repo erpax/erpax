@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about genre — Genre of the creative work, broadcast channel or group.",
-    "uuid": "4d2883ff-baf6-8091-89bf-496fc98760b9",
+    "uuid": "b617a985-80cc-87f0-adae-e409b53092a8",
     "words": [
       "use",
       "when",

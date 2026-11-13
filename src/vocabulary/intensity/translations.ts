@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about intensity — Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement.",
-    "uuid": "232f3c77-ec01-81e0-a123-98373dfd4a03",
+    "uuid": "c41fe85a-c8f0-8589-a8c8-107840337afb",
     "words": [
       "use",
       "when",

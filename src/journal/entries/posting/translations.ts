@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "posting",
-    "uuid": "5605e28a-39d2-862d-ad4c-51dd96684160",
+    "uuid": "47538044-5ac5-86cd-af88-cbbbabace78b",
     "words": [
       "posting"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a ledger posting should follow from a journal entry instead of being typed — every field of a posting is already on its entry, so a hook writes the posting when the entry becomes posted, once, and a refusal by the ledger fails the posting rather than being swallowed.",
-    "uuid": "695961f4-8243-8300-a065-12a4b73b8e02",
+    "uuid": "9ec405f1-17f2-88d6-ab6e-c4a64264b12a",
     "words": [
       "use",
       "when",

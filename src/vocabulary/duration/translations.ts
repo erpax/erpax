@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "duration",
-    "uuid": "ce0cafbd-ead7-8cb8-bddf-b772aa752c8a",
+    "uuid": "560eaef3-b660-88bb-b9f0-6615ebae5a6a",
     "words": [
       "duration"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about duration — Quantity: Duration (use ISO 8601 duration format).",
-    "uuid": "1e74e7dc-7cf1-851a-af9d-b7a2bc1d0e53",
+    "uuid": "bacf3ff8-2fbc-8b8c-ba9c-c97fa8cbee90",
     "words": [
       "use",
       "when",

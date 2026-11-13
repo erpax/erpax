@@ -3,17 +3,17 @@ name: breath
 description: "Use when reasoning about how erpax grows — it BREATHES: inhale ideas from everywhere (peers like ZeroPoint, frameworks like Payload, the standards, the upstream Rails, user content), exhale DRY clean code (gate-green, content-addressed, collapsed to the dense core). Inhale is merge/derive/generate; exhale is collapse + the gate + minimal cost. The rhythm IS the society loop: never inhale without exhaling clean, never exhale without inhaling."
 atomPath: "vocabulary/breath"
 coordinate: "vocabulary/breath · 4/weave · 1b9147bc"
-contentUuid: "83c05de0-f1ea-5ca9-8591-112c2ea311eb"
-diamondUuid: "02860759-4815-83e4-9fdf-b767f504591d"
+contentUuid: "ef51eeeb-2e4a-5ae4-a619-93a6a5b7a65f"
+diamondUuid: "eafcff78-1cf4-86e3-9377-ce4c7976996b"
 uuid: "1b9147bc-df0e-8c8a-9b48-797ae91b3b07"
 horo: 4
 typography:
   partition: vocabulary
-  bondDegree: 262
+  bondDegree: 220
 standards: []
 bindings: []
 signatures:
-  computationUuid: "67e53356-ee60-8e01-988b-49f25d04ee7a"
+  computationUuid: "565900d1-3758-8b94-9cc0-fde0d87bdaa2"
   stages:
     - stage: path
       stageUuid: "b4392551-68d1-8e73-bdca-b8f54222210e"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "d39e658a-8934-8ce9-a076-860b51347027"
     - stage: horo
-      stageUuid: "6e54aae9-bc01-84a5-93d2-b2531452c40f"
+      stageUuid: "5f14116b-8576-886a-9acd-dfcb6021e564"
     - stage: seal
       stageUuid: "88164e0d-de6a-85e0-a23e-de296ad2cebd"
     - stage: uuid
-      stageUuid: "178a4591-9e42-8ff7-8449-562259b5ffef"
+      stageUuid: "f2e3dfed-55bf-8e17-acf2-3ba8c9cdee8d"
 version: 2
 ---
 # breath — inhale ideas from everywhere, exhale dry clean code

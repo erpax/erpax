@@ -3,17 +3,17 @@ name: order
 description: "Use when reasoning about order — erpax folds content-uuids to a root in two different ways, and both are correct for what they answer:"
 atomPath: "merge/order"
 coordinate: "merge/order · 1/base · 3b809762"
-contentUuid: "e7bf67c7-1a9d-5a31-85c2-6d8317cc900e"
-diamondUuid: "1dc6d637-a26e-8ec5-a186-1e462fa89019"
+contentUuid: "075ca058-b2b8-5eb1-9bb9-b48c4bfe42ec"
+diamondUuid: "431502a9-5533-8978-b93e-8c40ce103a78"
 uuid: "3b809762-b79a-87de-8713-f2610248e1c4"
 horo: 1
 typography:
   partition: merge
-  bondDegree: 66
+  bondDegree: 61
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cfadc01d-cb63-8601-a411-64cecc8ec38c"
+  computationUuid: "f885f9b8-6516-8e86-ae52-486b705a3201"
   stages:
     - stage: path
       stageUuid: "fc5613e5-63d4-8c3e-9f61-95c29fd5fa66"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ea60428b-240d-8842-ab5b-e1dd707f86f0"
     - stage: horo
-      stageUuid: "1cbb77df-230e-8ccc-8270-bb3325da8513"
+      stageUuid: "c0b9e88b-899f-8599-912e-2253a0e1ca4e"
     - stage: seal
       stageUuid: "be0a3fe8-9231-8f0c-8fe9-a5dc2d1ca7d3"
     - stage: uuid
-      stageUuid: "eb85a680-04c6-8089-bbd1-7da3b8751487"
+      stageUuid: "6cd7336b-6e48-8676-bbeb-a0e0d6fe666f"
 version: 2
 ---
 # merge/order — a root addresses a SET or a SEQUENCE, and the two are never interchangeable

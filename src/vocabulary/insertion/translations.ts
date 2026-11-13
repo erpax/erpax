@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about insertion — The place of attachment of a muscle, or what the muscle moves.",
-    "uuid": "39773f1b-046f-8e8f-bcd1-569bf5f86194",
+    "uuid": "05c119c8-a5a0-8156-9be6-6a5e15a8bc02",
     "words": [
       "use",
       "when",

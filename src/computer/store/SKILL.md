@@ -3,18 +3,18 @@ name: store
 description: "Use when reasoning about store as a hardware facet of computer — vocabulary pivot to @/store; nested not duplicated."
 atomPath: "computer/store"
 coordinate: "computer/store · 7/descent · fba0445d"
-contentUuid: "7831a7be-3ebd-55c4-9a8a-b020995ea3c6"
-diamondUuid: "576aa86e-1e36-8906-9c29-6cd0ba8a1543"
+contentUuid: "e072f38f-ebee-57fc-9e76-de2351d6f155"
+diamondUuid: "4c03d77f-6d79-8488-a111-c94137f9e9a8"
 uuid: "fba0445d-c7b0-8f91-9f72-a05f6f4dd437"
 horo: 7
 typography:
   partition: computer
-  bondDegree: 150
+  bondDegree: 134
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "7a7d993e-6116-8e56-a071-1e08c1dccf95"
+  computationUuid: "53c74297-17cb-8041-8c01-60cc494bdd00"
   stages:
     - stage: path
       stageUuid: "4c1c2e21-dcee-819f-b2b3-3dc4dc1e9afa"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "fffd9b70-33d5-8860-8a4a-cba6cf26427f"
     - stage: horo
-      stageUuid: "a4c174ca-26b5-8ad6-9545-bad7a98ce24a"
+      stageUuid: "996d573d-28e6-8967-9e35-280b8938909c"
     - stage: seal
       stageUuid: "a412e88d-05cf-8e59-b4f2-5992b0fe4014"
     - stage: uuid
-      stageUuid: "9e384fd4-6730-8578-a4c7-ae15e608c406"
+      stageUuid: "60b464c0-2cf1-86ee-a8e7-9f15593a47fb"
 version: 2
 ---
 # computer/store — hardware facet

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when offloading work to Payload's jobs queue — defining tasks/workflows, queuing jobs, scheduling/cron, retries, or moving slow hook logic to background processing.",
-    "uuid": "bbe86ebe-5d18-8c8f-bbbe-6f2678256d01",
+    "uuid": "bfac1159-5e44-85ef-af33-c241f537b2e5",
     "words": [
       "use",
       "when",

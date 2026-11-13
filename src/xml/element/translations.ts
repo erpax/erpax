@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about element — was already the one shared escaper — its own docstring says *\\\"one definition, not three\\\"*.",
-    "uuid": "2b8cbcaa-2b4c-8a48-b267-45dff54771c7",
+    "uuid": "9b991b95-fe08-8748-a5bb-9a6a97e0d92f",
     "words": [
       "use",
       "when",

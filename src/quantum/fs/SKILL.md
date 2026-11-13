@@ -2,18 +2,18 @@
 name: fs
 description: "Use when reasoning about the content-addressed filesystem — the quantum twin of fs where every state is an immutable content-uuid snapshot (git, IPFS, copy-on-write), append-only, deduped, reversible; the path no longer locates a mutable file but addresses an immutable moment."
 atomPath: "quantum/fs"
-coordinate: "quantum/fs · 1/base · 18a2e3dd"
-contentUuid: "b6809894-4249-5bd9-9833-fe720e124c9a"
-diamondUuid: "95fccbbd-2569-8319-a6a1-a5241c4202ae"
-uuid: "18a2e3dd-35a6-8d78-bd33-f4a67e914a8d"
-horo: 1
+coordinate: "quantum/fs · 4/weave · ccc6b71a"
+contentUuid: "840b9f6c-056c-5a4e-8d86-874d0ad457ca"
+diamondUuid: "e6c0d0a7-8618-8f11-9118-7dafd3f2b7d1"
+uuid: "ccc6b71a-5dec-81df-9165-bcd43ece26da"
+horo: 4
 typography:
   partition: quantum
-  bondDegree: 82
+  bondDegree: 66
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ceed1855-fe10-8cca-a029-0c3771f97c41"
+  computationUuid: "ea030f11-1ab1-85ee-844c-ffbdc9b9ec2f"
   stages:
     - stage: path
       stageUuid: "14b3d443-a31c-8210-9a3e-4ac990a849a2"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "17baa33e-19c8-840c-acb8-94b4e51b74c7"
     - stage: links
-      stageUuid: "595820eb-bc3b-8ee3-ae8e-b2861ed19830"
+      stageUuid: "a20b4583-189f-844e-8595-c77dd925721f"
     - stage: horo
-      stageUuid: "38273d7b-6f67-851f-ab71-f1ab4ada3c0f"
+      stageUuid: "e9ccfe0a-bdb1-886f-b4d8-3c0d794a30c7"
     - stage: seal
       stageUuid: "454f8cae-34d2-8660-b333-f02a9220cd1f"
     - stage: uuid
-      stageUuid: "3123fd7a-7391-8865-8cc1-5da396fcc602"
+      stageUuid: "ce2239c3-bb5d-8291-9c75-07cb0bee7710"
 quantum:
   superposition:
     - akashic
@@ -38,7 +38,7 @@ quantum:
     - finality
     - fs
     - generate
-    - github
+    - law
     - superposition
   collapse:
     - "Use when reasoning about the content-addressed filesystem — the quantum twin of fs where every state is an immutable content-uuid snapshot (git, IPFS, copy-on-write), append-only, deduped, reversible; the path no longer locates a mutable file but addresses an immutable moment."
@@ -47,10 +47,10 @@ quantum:
     - "[[fs]]"
     - "[[merge]]"
     - "[[reality]]"
-    - "snapshot"
     - "[[uuid]]"
     - "[[versions]]"
     - "in the content-addressed filesystem you never overwrite — you snapshot; every state is an immutable content-[[uuid]] (identical content [[merge]]s to one, nothing is erased), so the store is [[tamper]]-evident by construction and any past moment is reconstructable."
+    - snapshot
   seal:
     sandbox: false
     receipt: false
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "ceed1855-fe10-8cca-a029-0c3771f97c41"
-    contentUuid: "b6809894-4249-5bd9-9833-fe720e124c9a"
+    computationUuid: "ea030f11-1ab1-85ee-844c-ffbdc9b9ec2f"
+    contentUuid: "840b9f6c-056c-5a4e-8d86-874d0ad457ca"
 version: 2
 ---
 # quantum/fs — the content-addressed filesystem
@@ -72,4 +72,4 @@ This is [[finality]] applied to storage: a written snapshot is final — you add
 
 @see [[fs]] · snapshot · [[uuid]] · [[merge]] · [[akashic]] · [[finality]] · [[versions]] · [[reality]]
 
-<sub>content-uuid `b6809894-4249-5bd9-9833-fe720e124c9a` · account `quantum/fs` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `840b9f6c-056c-5a4e-8d86-874d0ad457ca` · account `quantum/fs` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

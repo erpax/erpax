@@ -2,34 +2,34 @@
 name: place
 description: "Use when reasoning about place — Entities that have a somewhat fixed, physical extension."
 atomPath: "vocabulary/place"
-coordinate: "vocabulary/place · 8/crest · 18491af3"
-contentUuid: "7c6af828-9dbe-549e-8b4a-bd6c2e8285dc"
-diamondUuid: "b1ca3078-0150-885e-8f1f-db3f4d11ca6c"
-uuid: "18491af3-027c-853d-a2d8-c5642fc01c79"
-horo: 8
+coordinate: "vocabulary/place · 5/round · a8372f72"
+contentUuid: "bcecfb75-2d56-584d-8f1a-29e2dafecfde"
+diamondUuid: "0e765f4b-56de-8568-8323-677f91eebb36"
+uuid: "a8372f72-0843-83cd-8686-cdc78299dfe4"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 87
+  bondDegree: 77
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "b2db55e1-67af-81b8-85dc-2aeedb782fe9"
+  computationUuid: "160151c3-71e1-8f0e-ae11-fdd1e65c3810"
   stages:
     - stage: path
       stageUuid: "c65814d0-2464-8fdb-83da-031324a807ad"
     - stage: trinity
       stageUuid: "1fd6a06a-7de1-8272-86f1-34c031e679d3"
     - stage: boundary
-      stageUuid: "ec219f36-827f-802a-96e2-c9f8727acd71"
+      stageUuid: "d1a5a2fe-1071-8ad1-bae9-2f98975c6f77"
     - stage: links
-      stageUuid: "233e7c44-c571-8b82-aead-8da3ca7f6a95"
+      stageUuid: "5525e9cf-8be7-808d-80b1-75dfada7fa40"
     - stage: horo
-      stageUuid: "0e298e5e-43f1-8e22-8592-274cb474d012"
+      stageUuid: "fedaab54-5588-8c7a-a3ea-03f9db6d5177"
     - stage: seal
       stageUuid: "1ef15683-2fc3-8a93-8326-a128d9bf772c"
     - stage: uuid
-      stageUuid: "80066101-a232-888b-b68a-19e79db2b297"
+      stageUuid: "fc2dedcf-14e2-88e2-b1c1-d6391da20afa"
 version: 2
 ---
 # place

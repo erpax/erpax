@@ -2,33 +2,33 @@
 name: zoroastrianism
 description: "Use when reading Zoroastrianism as a diamond of invariant atoms — the cosmic contest of truth/order (asha) against the lie (druj), the sacred fire as witness, good thoughts-words-deeds, the final renovation as return to perfected zero. The source of erpax's angel/archangel polarity (Spenta Mainyu vs Angra Mainyu). Strip the Avestan prefix and asha, druj, frashokereti collapse to order/law, profane, zeropoint."
 atomPath: "vocabulary/zoroastrianism"
-coordinate: "vocabulary/zoroastrianism · 7/descent · 2473db33"
-contentUuid: "fa3b6ad2-9417-5a1d-9148-3704cac65d95"
-diamondUuid: "3b228e34-9864-8cb8-8182-8b9466ca0fc3"
-uuid: "2473db33-496f-8f17-a003-89fba01f7a97"
-horo: 7
+coordinate: "vocabulary/zoroastrianism · 1/base · 73dc029d"
+contentUuid: "91c63bad-101a-57ff-9a67-e95761d0e10d"
+diamondUuid: "76bd8c7c-6eb9-8291-bc84-ff54d1149e80"
+uuid: "73dc029d-a3c5-8252-9860-a6542b29533f"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 69
+  bondDegree: 63
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2b611169-3af1-8a43-8fec-f0d194d56204"
+  computationUuid: "d5c349d8-d936-88f8-927c-43e9d02c4850"
   stages:
     - stage: path
       stageUuid: "f65b69b2-1977-8cf2-b4a6-229252c8d76d"
     - stage: trinity
       stageUuid: "106d5b2b-8abb-8392-9d61-5d1b7b6f28dc"
     - stage: boundary
-      stageUuid: "12c32add-6504-8c80-8795-ace12934fbcf"
+      stageUuid: "2a90446f-90b1-8e24-8018-5c1d115b1407"
     - stage: links
-      stageUuid: "1c3d706c-04a5-80ee-85ab-f4d5d7476740"
+      stageUuid: "e609eed3-cc45-808b-adea-e77e50840f2e"
     - stage: horo
-      stageUuid: "5fd81a80-d6c9-8d41-b09c-b8c7477668a2"
+      stageUuid: "c5e7124c-7e65-8dde-95cd-cb32a8969f98"
     - stage: seal
       stageUuid: "c2952cfb-85b0-8f2c-ab79-df451d926aff"
     - stage: uuid
-      stageUuid: "da6e028b-f1d5-8164-ba0b-7da89187f2a9"
+      stageUuid: "2af17956-60b9-8065-a2ee-1e07fa44cdad"
 version: 2
 ---
 # zoroastrianism — the cosmic choice; truth against the lie, fire the witness

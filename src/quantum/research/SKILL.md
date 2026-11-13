@@ -2,19 +2,19 @@
 name: research
 description: "Use when pricing research on the quantum scale — a research run consumes resources (agents × tokens) and produces value (entropy reduced), so it is a billable expense whose worth is the disorder it closes; worthwhile only when it reduces more entropy than it costs."
 atomPath: "quantum/research"
-coordinate: "quantum/research · 1/base · 3fdb7820"
-contentUuid: "aacba4a9-9d75-516a-92a3-c739cba4dcd6"
-diamondUuid: "15c872ba-2c74-84e7-b974-9f8ec04c620b"
-uuid: "3fdb7820-b1c9-86d3-85b9-630172657d3b"
-horo: 1
+coordinate: "quantum/research · 7/descent · f8962a95"
+contentUuid: "88357e46-ad3e-52b6-b27e-ee4246cbbdc7"
+diamondUuid: "1e3faaf1-c4f2-8f05-b4ed-9d0526a6072f"
+uuid: "f8962a95-3004-82a2-805a-d238af646c5e"
+horo: 7
 typography:
   partition: quantum
-  bondDegree: 160
+  bondDegree: 138
 standards:
   - "double-entry (the research run as a balanced expense ⊕ value posting)"
 bindings: []
 signatures:
-  computationUuid: "eff22430-e0dc-870b-9ba2-3291008c0e25"
+  computationUuid: "501b3086-b671-8156-9ab5-1d2d0e04d95b"
   stages:
     - stage: path
       stageUuid: "ba55283e-0402-8b68-a921-9daf2fbc6ba6"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "f9e5c62c-6e07-8217-9188-9f349edbb49a"
     - stage: links
-      stageUuid: "32e858a2-cc08-8b39-bddf-97f63ac2ad67"
+      stageUuid: "bed410aa-92e7-8bae-83d1-f720fd1f29ba"
     - stage: horo
-      stageUuid: "0273b5d6-5e16-8bda-935f-f866e838653d"
+      stageUuid: "5a103d62-3615-8841-ab3b-88d61c48af8e"
     - stage: seal
       stageUuid: "ad4211d7-8199-8e85-b2bb-74fad42f7c01"
     - stage: uuid
-      stageUuid: "7c6c1e53-1393-8b0b-969e-2587252461a8"
+      stageUuid: "9c053cb2-e6eb-8316-8539-6eaa1ebece81"
 quantum:
   superposition:
     - accounting
@@ -54,8 +54,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "eff22430-e0dc-870b-9ba2-3291008c0e25"
-    contentUuid: "aacba4a9-9d75-516a-92a3-c739cba4dcd6"
+    computationUuid: "501b3086-b671-8156-9ab5-1d2d0e04d95b"
+    contentUuid: "88357e46-ad3e-52b6-b27e-ee4246cbbdc7"
 version: 2
 ---
 # quantum/research — research, priced
@@ -73,4 +73,4 @@ Matter-twin: `src/quantum/research/index.ts` (`researchCost` · `researchExpense
 @audit cost = agents × tokens (the run's real spend); value = entropy reduced; the ledger balances, never asserted
 @standard double-entry (the research run as a balanced expense ⊕ value posting)
 
-<sub>content-uuid `aacba4a9-9d75-516a-92a3-c739cba4dcd6` · account `quantum/research` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `88357e46-ad3e-52b6-b27e-ee4246cbbdc7` · account `quantum/research` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

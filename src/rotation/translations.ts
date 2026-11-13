@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about rotation — A merkaba is two interpenetrating tetrahedra turning opposite ways. Projected along the shared axis it is a **hexagram**: two equilateral triangles, offset by 60°.",
-    "uuid": "bb4440dc-dff9-8a98-9094-b35e3cbf0f87",
+    "uuid": "92fe2bf1-88e8-8a94-bf66-ed9726f40240",
     "words": [
       "use",
       "when",

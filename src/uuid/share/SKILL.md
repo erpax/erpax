@@ -3,13 +3,13 @@ name: share
 description: Use when reasoning about uuid sharing — exposing a uuid across boundaries.
 atomPath: "uuid/share"
 coordinate: "uuid/share · 7/descent · 6f202fcd"
-contentUuid: "f70fc740-bf7e-516f-a08f-f87e82e193d8"
-diamondUuid: "5c286532-b0d8-8330-bf8b-cf6861f3d1a4"
+contentUuid: "b0f390a3-3452-57dc-9ac6-f6f996980e57"
+diamondUuid: "4f90742d-b180-8731-bb77-657ac76e34b2"
 uuid: "6f202fcd-f413-80ec-b6b2-a293b92ddf56"
 horo: 7
 typography:
   partition: uuid
-  bondDegree: 108
+  bondDegree: 102
 standards:
   - GDPR Article 32(1)(b)
   - "ISO/IEC 27001 Annex A.9.2.3 + A.9.4.1"
@@ -19,7 +19,7 @@ standards:
   - eIDAS §3 (sealed grants)
 bindings: []
 signatures:
-  computationUuid: "081d5df0-5060-8df9-820f-fbee355777c5"
+  computationUuid: "84aa4725-f859-8015-9d79-a747540700de"
   stages:
     - stage: path
       stageUuid: "77d09678-95c7-8847-be23-cc9d12ec9850"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "fb41916b-300a-8c37-84eb-875f37532479"
     - stage: horo
-      stageUuid: "bed04767-3414-8112-a3e2-7b9e0019a078"
+      stageUuid: "86d13e5d-5255-88c5-90c1-0e16cbbc1bd2"
     - stage: seal
       stageUuid: "cd3188bc-5638-82ac-8daf-89301679f253"
     - stage: uuid
-      stageUuid: "cae63309-3a1b-8cff-b147-df107eca47ce"
+      stageUuid: "f4f2b8dd-a2eb-8230-81bd-cf3a58df993d"
 version: 2
 ---
 # uuid/share

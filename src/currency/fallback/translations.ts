@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a currency value is missing, blank, or unknown — the blank currency XXX (ISO 4217 §6.5 \\\"No currency\\\") is the identity element of the currency category, so every row, hook, formatter, and conversion resolves cleanly to it instead of crashing.",
-    "uuid": "c1af89ec-e3cc-8054-80b1-13e03dabb143",
+    "uuid": "cf60307a-1078-80cc-96a0-ce3529ba7564",
     "words": [
       "use",
       "when",

@@ -2,34 +2,34 @@
 name: handling
 description: "Use when reasoning about handling as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/handling"
-coordinate: "vocabulary/handling · 8/crest · 2bc25c9c"
-contentUuid: "4a62e138-56e1-5bb0-892c-66b7051c72f7"
-diamondUuid: "6ed45a7f-a6c6-8999-bd48-0ff371219ec6"
-uuid: "2bc25c9c-f129-81da-b6d3-e91d0394be2f"
-horo: 8
+coordinate: "vocabulary/handling · 5/round · 966a9124"
+contentUuid: "aaec9728-3037-5606-b0a0-8ed7cb38117d"
+diamondUuid: "a488c6f4-dc8f-87b1-b5c5-947896d05522"
+uuid: "966a9124-4781-87b4-bb69-50af9b9e8d74"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 15
+  bondDegree: 12
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "e6abb39b-60b8-8498-a2e2-9e77a3ff2ad0"
+  computationUuid: "d08eef0e-5ed9-8e2d-8cc8-1fa2dadfd8d2"
   stages:
     - stage: path
       stageUuid: "b96c05b6-7306-8df2-bdda-598b1cede60e"
     - stage: trinity
       stageUuid: "ef949729-10ff-89cc-98d4-1cee3d2c619e"
     - stage: boundary
-      stageUuid: "5faa128f-d9b3-8c58-90fd-e87dbc962545"
+      stageUuid: "d6a96fb4-0652-8ba1-939c-65dc0cff0900"
     - stage: links
-      stageUuid: "4db1b154-5195-8c0e-8108-ddf6787b8942"
+      stageUuid: "1f3cf4a1-d948-801d-9dc5-fbc14fc8b9fa"
     - stage: horo
-      stageUuid: "03b4f327-2d48-8266-9fe3-f982a2a3185d"
+      stageUuid: "5d630239-1009-8284-8393-fc99881f5ce6"
     - stage: seal
       stageUuid: "140bade6-86e7-83a5-b180-d7453be2a243"
     - stage: uuid
-      stageUuid: "0bcc469b-0b33-81b5-8e23-19fbf57f2163"
+      stageUuid: "febfaeb1-b5bf-8085-abc6-de2c0dab7e73"
 version: 2
 ---
 # handling

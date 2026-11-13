@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about citation — rules/face closed one door: an atom may never quietly stop **offering a name**. This is the same door on the other wall — an atom may never quietly stop **citing an authority**.",
-    "uuid": "6060a446-14f1-8dc0-88df-609ca940c27e",
+    "uuid": "be06a073-cc58-8c72-b5f1-3f1319dfca8e",
     "words": [
       "use",
       "when",

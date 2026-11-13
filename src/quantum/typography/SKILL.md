@@ -3,18 +3,18 @@ name: typography
 description: "Use when treating typographic richness as tamper-cost — each vitepress feature a page uses is a dimension a forger must reproduce, so fuller (gapless) typography costs more to forge."
 atomPath: "quantum/typography"
 coordinate: "quantum/typography · 1/base · a1794155"
-contentUuid: "7447440a-abae-5bfb-a582-af4f0f93d905"
-diamondUuid: "77db52d3-7bb4-83e1-b360-e348ad17102b"
+contentUuid: "596d8546-45a9-57e5-8afd-853ac47f314f"
+diamondUuid: "7f93e6e0-cf1b-8477-aa84-0310b0b76c6b"
 uuid: "a1794155-b9f6-8fe9-9140-1f9e40f4e8bb"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 146
+  bondDegree: 140
 standards:
   - "tamper-cost = entangled dimensions (the holographic principle)"
 bindings: []
 signatures:
-  computationUuid: "5fea6336-bee5-8599-9eb2-906f14e74b17"
+  computationUuid: "55017105-21dc-8301-bdc1-1be398ce2a33"
   stages:
     - stage: path
       stageUuid: "30ecee3c-6545-881c-a317-cbfe41a76616"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "155685ca-8c1f-849a-9060-e5e6dbb10934"
     - stage: horo
-      stageUuid: "7e169e1e-778a-89b8-9744-e89e9f8f6143"
+      stageUuid: "4840f3f2-be46-838e-baef-b667a7575689"
     - stage: seal
       stageUuid: "b1b017df-7a0f-881c-bb85-e3256aa048cd"
     - stage: uuid
-      stageUuid: "4da32450-d7fd-8cf8-82d9-aa4070ee1a2d"
+      stageUuid: "8d0915e5-5ab3-8b03-99b2-217081f7648c"
 quantum:
   superposition:
     - analytics
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "5fea6336-bee5-8599-9eb2-906f14e74b17"
-    contentUuid: "7447440a-abae-5bfb-a582-af4f0f93d905"
+    computationUuid: "55017105-21dc-8301-bdc1-1be398ce2a33"
+    contentUuid: "596d8546-45a9-57e5-8afd-853ac47f314f"
 version: 2
 ---
 # quantum/typography — typography is holographic
@@ -67,4 +67,4 @@ Matter-twin: `src/quantum/typography/index.ts` (`depth` · `tamperBits` · `isGa
 
 @standard tamper-cost = entangled dimensions (the holographic principle)
 
-<sub>content-uuid `7447440a-abae-5bfb-a582-af4f0f93d905` · account `quantum/typography` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `596d8546-45a9-57e5-8afd-853ac47f314f` · account `quantum/typography` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

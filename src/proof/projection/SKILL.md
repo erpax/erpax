@@ -2,14 +2,14 @@
 name: projection
 description: "Use when proving the projection leg — that the FORWARD project (content → uuid) is free and deterministic while its INVERSE (recover the analog negative without the held key) costs the maximum, unbounded at the biggest blockchain — and you must tag the ∞ instead of letting a raw Infinity leak into the bundle."
 atomPath: "proof/projection"
-coordinate: "proof/projection · 5/round · bca6a09c"
-contentUuid: "cda88101-4db5-53f2-9b5a-45030b351ad9"
-diamondUuid: "973f6740-633b-8592-95fa-baed36979356"
-uuid: "bca6a09c-7a51-834e-9cdd-2bab9696dbff"
+coordinate: "proof/projection · 5/round · 9ae13e53"
+contentUuid: "69c90fa2-83e2-5af4-aa60-cf7f873a7910"
+diamondUuid: "25d178cf-d982-8550-9429-76d383264422"
+uuid: "9ae13e53-dbe6-8d73-a3fe-67f0b24274ec"
 horo: 5
 typography:
   partition: proof
-  bondDegree: 57
+  bondDegree: 51
 standards:
   - "NIST SP 800-57 Part 1 r5 §5.6.1 (anchor key strengths)"
   - "NIST SP 800-57 Part 1 r5 §5.6.1 (anchor key strengths)`"
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "c30dcd1c-55d4-83a9-8585-71a89981b620"
+  computationUuid: "2f3fc895-c1f4-8a38-8d3f-e9e8c6d86b6f"
   stages:
     - stage: path
       stageUuid: "d6eb7272-a5f9-853e-9fd6-6ad1e3123267"
@@ -30,13 +30,13 @@ signatures:
     - stage: boundary
       stageUuid: "9e284b92-22f6-898d-a5bd-4159ab8373ac"
     - stage: links
-      stageUuid: "39217772-f251-879a-8a2e-f9a452dd05ab"
+      stageUuid: "08591d31-def5-8f87-991c-e4d015d688f7"
     - stage: horo
-      stageUuid: "a110830c-72a1-8387-9faa-526112c68ed4"
+      stageUuid: "64682d7e-725c-81c3-8584-1498b1dd1ba6"
     - stage: seal
       stageUuid: "764fb305-a825-8f36-96a5-f6e76104c2a9"
     - stage: uuid
-      stageUuid: "a71c8b5e-2237-85b1-8ab2-a7af7b035f18"
+      stageUuid: "f1c2e0ce-f179-8e60-b6db-d9e46639716d"
 version: 2
 ---
 # proof-projection — the bounded-infinity organ

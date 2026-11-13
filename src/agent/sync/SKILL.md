@@ -3,13 +3,13 @@ name: sync
 description: "Use when synchronizing real-time events across agents in a tenant — pub/sub on content-uuid events, idempotent consumption, and a federation-safe room protocol so every agent sees every peer's work the instant it happens."
 atomPath: "agent/sync"
 coordinate: "agent/sync · 5/round · c670862b"
-contentUuid: "6b7c70d9-531f-5000-9419-4193a94f7672"
+contentUuid: "6b409ecf-f648-5a76-937c-d3aae9ac1737"
 diamondUuid: "95b32147-6dfe-816a-9a15-a0af01dd0aec"
 uuid: "c670862b-4a96-82c0-b860-1589d35a3792"
 horo: 5
 typography:
   partition: agent
-  bondDegree: 63
+  bondDegree: 61
 standards:
   - "ISO-27001"
   - "ISO/IEC-27001:2022"

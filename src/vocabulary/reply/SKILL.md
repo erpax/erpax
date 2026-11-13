@@ -2,34 +2,34 @@
 name: reply
 description: "Use when reasoning about reply as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/reply"
-coordinate: "vocabulary/reply · 7/descent · 8aa68137"
-contentUuid: "0b388e68-ef37-5b2c-97c2-db35090f111e"
-diamondUuid: "fab93167-d741-83b5-b6d1-eeb49562dff2"
-uuid: "8aa68137-da43-8939-adb8-f60f23b43484"
-horo: 7
+coordinate: "vocabulary/reply · 2/share · 19dc90ef"
+contentUuid: "91dd3962-4f7f-55ad-a475-f478941e1dec"
+diamondUuid: "96aa7fa0-d733-8769-8c19-20d9d809bd1d"
+uuid: "19dc90ef-6020-8e83-a649-14cca60723dd"
+horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 19
+  bondDegree: 12
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "57c3f0a9-9369-85ff-9945-c6372b61e301"
+  computationUuid: "2c842b03-cca8-8a88-b871-89322058a71d"
   stages:
     - stage: path
       stageUuid: "2462fe50-0d6f-8694-8e18-7cb7b64dcf47"
     - stage: trinity
       stageUuid: "3a7d5d1e-5c97-892b-965a-26322691846c"
     - stage: boundary
-      stageUuid: "bf326d67-141b-8c6e-a2a6-454fea1f1abe"
+      stageUuid: "6dd54f20-9478-860a-bd0c-3859d051049a"
     - stage: links
-      stageUuid: "03f52923-d6e4-85b6-b39a-04c7a8ddbb80"
+      stageUuid: "691fd988-0768-8191-9e3b-270cf63d6912"
     - stage: horo
-      stageUuid: "e805ca1e-8f21-86ed-bc8b-46991392ffab"
+      stageUuid: "bcbb089e-c192-8689-9803-1f9b4e6dc66e"
     - stage: seal
       stageUuid: "23f40eed-23fb-8635-8693-139ef638debe"
     - stage: uuid
-      stageUuid: "62ccc9cd-54fb-8ddf-a250-9fb004eb702a"
+      stageUuid: "374d0334-6f42-8e1b-81a5-7d40818261a4"
 version: 2
 ---
 # reply

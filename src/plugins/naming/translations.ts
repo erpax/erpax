@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about naming — names every internal table and column by content-addressing the path it sits at.",
-    "uuid": "654ac5d9-4b7a-8271-ab12-d372408a66a2",
+    "uuid": "a192fc23-5d5b-8ee5-9697-470e1b1af300",
     "words": [
       "use",
       "when",

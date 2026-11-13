@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "standard",
-    "uuid": "b0b1d9a0-f7b2-82aa-b5db-ff26db39a212",
+    "uuid": "01eab095-6209-8107-b67b-4907628f938f",
     "words": [
       "standard"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or auditing a compliance standard in erpax — IFRS/US-GAAP/SAF-T/ISO/SOX/EN-16931/NIST. Standards are implemented via the skills (each skill is the answer-path holding a standard's form); @standard banners must be true, not decoration.",
-    "uuid": "b1de2aa6-34a9-829a-bcef-54f92eef9483",
+    "uuid": "d1cdcc0e-493c-8766-8926-9e79e290e17e",
     "words": [
       "use",
       "when",

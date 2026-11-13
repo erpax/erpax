@@ -2,18 +2,18 @@
 name: receipt
 description: "Use when an agent must publish its own error record — the ledger every atom carries except the thing that writes them. Computes honesty (claims that held / claims made), efficiency (delivered / delivered+rework), self-caught defects, and lapses repeated after acknowledgement; withoutCorpus gives the counterfactual (what ships when the gates are stripped), trainingRules turns each correction into an imperative naming the instrument that already existed, and compareAgents refuses to call one row a comparison. Harness is tracked apart from model, and any harness can emit a receipt — the shape is plain data."
 atomPath: "agent/receipt"
-coordinate: "agent/receipt · 4/weave · 4e1860fc"
-contentUuid: "e2f7bb34-be52-5165-8801-db40bfcc5fbd"
-diamondUuid: "1f52a5fb-6a0a-837e-86f2-e737817c470d"
-uuid: "4e1860fc-a797-86dd-b874-6da95b9b569f"
-horo: 4
+coordinate: "agent/receipt · 2/share · 859465cf"
+contentUuid: "b2b5fe41-a4f7-5635-b2b2-71aee0f6e10c"
+diamondUuid: "ef5db9ad-a3d9-864d-9916-6d644f57a837"
+uuid: "859465cf-c97f-8402-818d-b620c7784b6a"
+horo: 2
 typography:
   partition: agent
-  bondDegree: 118
+  bondDegree: 111
 standards: []
 bindings: []
 signatures:
-  computationUuid: "304ca69a-be20-8d3a-bdc2-b974d407d207"
+  computationUuid: "31377867-be3b-86e0-9664-0b8111dd7d40"
   stages:
     - stage: path
       stageUuid: "4abe2be3-15b1-86a5-8a0d-6e56706b249f"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "952475f1-cb88-8787-9aa2-eb134c5b424b"
     - stage: links
-      stageUuid: "3749b154-6aa7-8a31-b27b-06f3e7a8a402"
+      stageUuid: "928412e2-75d7-8eac-83b5-f8eb8cca1139"
     - stage: horo
-      stageUuid: "cf6db147-f379-868a-be4d-e808b881e063"
+      stageUuid: "222bc0ef-719d-8727-8b1b-6f8362dd9fa2"
     - stage: seal
       stageUuid: "96fe2f58-2990-8e5e-b62a-8f5c825b423c"
     - stage: uuid
-      stageUuid: "d30578f4-9b62-83ce-ba9c-c0d15b6b376a"
+      stageUuid: "2c57214d-7071-8578-ab93-9a36bef76168"
 version: 2
 ---
 # agent/receipt — an agent publishes its own error record, or its output is unaudited

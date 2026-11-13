@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when decomposing a contract into its distinct promises for IFRS-15 §22 revenue allocation — kind (distinct or series), recognition timing (point-in-time §38 or over-time §35), progress measurement method, standalone selling price, and allocated amount. The IFRS-15 performance-obligation collection.",
-    "uuid": "b35b85e6-5391-8393-88cd-fae8ca1d7269",
+    "uuid": "7178adc9-7520-8c34-a31f-984afe4ba3f0",
     "words": [
       "use",
       "when",

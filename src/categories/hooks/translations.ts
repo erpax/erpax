@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when wiring the Categories collection's lifecycle — the beforeChange barrel that pins every category row to the active tenant so multi-tenant isolation holds at the collection boundary.",
-    "uuid": "5d9f07c8-ddd1-810b-b36a-53ad7f3b8e33",
+    "uuid": "d404aa24-c7cf-89cd-89bf-487646cf3474",
     "words": [
       "use",
       "when",

@@ -3,13 +3,13 @@ name: standard
 description: "Use when the Payload API's access must derive from and be gated by its legal surface — the strictest tier a collection's standards demand, and the endpoints that fall below it."
 atomPath: "access/standard"
 coordinate: "access/standard · 9/unity · a39cce09"
-contentUuid: "a3cee6f4-99c3-577c-b3bb-44c3a95c98b1"
-diamondUuid: "5ec5d259-30fa-8e87-a263-8321dea6b587"
+contentUuid: "ae3d241f-1451-578b-90b2-54ad35c14b0b"
+diamondUuid: "b84471de-2f61-8539-a43d-3095b6e8b719"
 uuid: "a39cce09-6117-869d-9294-01f6da8bc394"
 horo: 9
 typography:
   partition: access
-  bondDegree: 561
+  bondDegree: 530
 standards:
   - "BG Наредба Н-18 §СУПТО — fiscal writes are inspector-auditable, no delete on posted"
   - "CoE-108+"
@@ -33,7 +33,7 @@ standards:
   - "SOX:2002 §404 internal-controls — you cannot post to a closed period"
 bindings: []
 signatures:
-  computationUuid: "08dbe18e-325a-811c-ac1f-bef225061232"
+  computationUuid: "978bf450-cc95-890b-bc73-9b8a89461e6f"
   stages:
     - stage: path
       stageUuid: "5bb5aee6-276c-82c9-94ac-83e3349361cb"
@@ -44,11 +44,11 @@ signatures:
     - stage: links
       stageUuid: "8f95aa80-74bf-8c3d-9a60-aab99e8165fa"
     - stage: horo
-      stageUuid: "7cadccbb-242d-8720-9f29-f58f7d8f7aa5"
+      stageUuid: "1f3875c1-497e-842d-9fbf-29cc574fb906"
     - stage: seal
       stageUuid: "6d3b6308-0ee5-8196-a23b-c1128ce4f9a2"
     - stage: uuid
-      stageUuid: "eb68eb89-f072-86ed-a9ab-1b37354338d1"
+      stageUuid: "42ae2581-0db5-8f68-9810-702b048848d2"
 version: 2
 ---
 # access/standard — the API access derived from its law

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "covenant",
-    "uuid": "fcc24580-e918-8101-ac59-cd516313ef16",
+    "uuid": "ac0daeb5-8dbe-8766-a69a-896f139c2f5e",
     "words": [
       "covenant"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the binding mutual bond sealed between the part and the source — a two-way agreement entered into, balance pledged on both sides, content-addressed so it cannot be forged or forgotten and inherits down the lineage. Distinct from grace (one-way credit) and from law (the standing rule): covenant is the rule entered into and sealed.",
-    "uuid": "eaa90f76-2f34-898c-840c-6c0c791b2106",
+    "uuid": "bfbd77de-9b61-8fb3-9d03-233295ee455a",
     "words": [
       "use",
       "when",

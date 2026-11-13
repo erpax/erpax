@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about implication — *\\\"Zero entropy ⇒ infinite tamper-cost\\\"* is false in **both** directions, and law says so in code: reciprocity-entropy is not coverage — it is 0 on the live tree and prices nothing…",
-    "uuid": "09a49670-478a-8d3a-86a0-8e65e1d0adb5",
+    "uuid": "999918fe-ae37-868e-95ae-e7a1332e8c68",
     "words": [
       "use",
       "when",

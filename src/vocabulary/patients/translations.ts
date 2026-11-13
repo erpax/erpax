@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "patients",
-    "uuid": "dd680135-6c42-8440-ac71-caefd7fd6368",
+    "uuid": "056305d1-9e31-8ead-bc64-ebe25ec52bf2",
     "words": [
       "patients"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about patients — A schema.org component word, collided out of schema.org compounds — fused from isAcceptingNewPatients (sti · collapse · merge).",
-    "uuid": "9df8915a-fc9a-8077-9ecb-954b80cb507a",
+    "uuid": "e76e5a0a-500e-8056-b7d5-6a21c10b998e",
     "words": [
       "use",
       "when",

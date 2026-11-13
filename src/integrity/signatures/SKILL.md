@@ -3,7 +3,7 @@ name: signatures
 description: "Use when reasoning about signatures — Signed content-uuid — digital signatures fold into the uuid family."
 atomPath: "integrity/signatures"
 coordinate: "integrity/signatures · 7/descent · 40bdf069"
-contentUuid: "1675bbeb-5bd3-5384-ace5-cb3b44e3a68a"
+contentUuid: "7a7ed4cf-c44e-52c8-8af0-ad0ad6c3b1f2"
 diamondUuid: "21f8ba38-7f0d-8e12-81ef-1dd449c73025"
 uuid: "40bdf069-2314-8402-aaf9-bd8608554a3c"
 horo: 7
@@ -15,7 +15,9 @@ standards:
   - "ETSI EN 319 142-1 PAdES"
   - "EU-537/2014"
   - "EU-910/2014"
+  - "ISO-27001"
   - "ISO/IEC 27001 Annex A.10 cryptographic controls"
+  - "ISO/IEC-27001:2022"
   - "NIST SP 800-57 §5.6 key-management lifecycles"
   - "NIST-SP-800-57"
   - RFC 7515 JSON Web Signature (alg names)

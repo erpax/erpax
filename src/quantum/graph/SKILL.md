@@ -3,13 +3,13 @@ name: graph
 description: "Use when reading a graph as entanglement — an edge is an entangled pair, entanglement is symmetric, so a coherent corpus reciprocates every edge; entangled is the connected component."
 atomPath: "quantum/graph"
 coordinate: "quantum/graph · 2/share · 59c9977f"
-contentUuid: "883e660b-0e7d-5af9-8d8d-573a935e9be1"
+contentUuid: "e2e3ffee-7813-5694-8de3-84d1ca7442a8"
 diamondUuid: "2a215f53-deb8-8703-a6d8-bb423c569332"
 uuid: "59c9977f-0018-8674-896e-d890bec909e4"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 42
+  bondDegree: 41
 standards:
   - "symmetric (reciprocal) entanglement — directed-link entropy → 0"
 bindings: []
@@ -54,7 +54,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "58ff111c-c4f8-8950-9b87-69895ad3df71"
-    contentUuid: "883e660b-0e7d-5af9-8d8d-573a935e9be1"
+    contentUuid: "e2e3ffee-7813-5694-8de3-84d1ca7442a8"
 version: 2
 ---
 # quantum/graph — the graph as entanglement
@@ -67,4 +67,4 @@ Matter-twin: `src/quantum/graph/index.ts` (`isReciprocal` · `reciprocate` · `e
 
 @standard symmetric (reciprocal) entanglement — directed-link entropy → 0
 
-<sub>content-uuid `883e660b-0e7d-5af9-8d8d-573a935e9be1` · account `quantum/graph` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e2e3ffee-7813-5694-8de3-84d1ca7442a8` · account `quantum/graph` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

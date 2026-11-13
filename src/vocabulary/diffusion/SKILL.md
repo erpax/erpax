@@ -2,33 +2,33 @@
 name: diffusion
 description: "Use when reasoning about HOW a small market becomes big over time — the time-axis the static market product is missing. Adoption spreads as a contagion (Bass: rate = (p + q·F)·(1−F)·m; word-of-mouth q≈0.38 far exceeds advertising p≈0.03), filling the adopter sequence innovators → early-adopters → majority → laggards. Trendsetters are the seed the imitation engine amplifies; the chasm is where that engine stalls and most small markets stay small."
 atomPath: "vocabulary/diffusion"
-coordinate: "vocabulary/diffusion · 2/share · 1712d506"
-contentUuid: "0282ff1b-733e-5199-b3cb-a476c8ce85c1"
-diamondUuid: "1f00b8a6-5a72-801f-8398-1f385ee260c9"
-uuid: "1712d506-2303-89f2-b8b7-194ff9cf644f"
-horo: 2
+coordinate: "vocabulary/diffusion · 8/crest · 88613bbb"
+contentUuid: "98dbaf8f-0420-570a-a77f-c3ced8e5fcc6"
+diamondUuid: "193597f7-6e02-8b33-8d87-ddca21ddd084"
+uuid: "88613bbb-7ac1-89ea-ae69-b6e3fc4ed783"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 52
+  bondDegree: 43
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2665ff69-7ed7-87c1-9551-d3dce65642d7"
+  computationUuid: "3c92e474-9530-82f7-abfd-a82561b549f4"
   stages:
     - stage: path
       stageUuid: "1ac3d2f6-6ca6-83ac-9f02-e5a326723178"
     - stage: trinity
       stageUuid: "64700774-47fd-855d-ad0f-faa1854b347b"
     - stage: boundary
-      stageUuid: "e1784c12-0ee3-8d38-971c-651f40166288"
+      stageUuid: "5cb7d64c-6488-88be-9e76-7ad7d43cb960"
     - stage: links
-      stageUuid: "9702f09a-9167-8309-82c9-79d3eb00d2a6"
+      stageUuid: "36bd92ac-3cb8-8b0f-83a3-c71700041230"
     - stage: horo
-      stageUuid: "fd498063-ba3f-800c-934e-0f5f0a32bcd7"
+      stageUuid: "0bff7d69-8bcd-88b4-9168-f44c4433442f"
     - stage: seal
       stageUuid: "b98c3ff1-6d6b-8094-832c-1d9280d75d93"
     - stage: uuid
-      stageUuid: "d31555f9-c8ee-84ad-a6a4-1dbcc2b26a4c"
+      stageUuid: "d1469a78-d7d7-81d1-a55e-bac271c0fe2f"
 version: 2
 ---
 # diffusion — how a market fills over time (the dynamic the product law is missing)

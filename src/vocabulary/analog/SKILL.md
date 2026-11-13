@@ -2,33 +2,33 @@
 name: analog
 description: "Use when reasoning about the aura as a CONTINUOUS computed signal — the uuid matrix renders every node's coordinate cross to an analog colour+sound+vibration field animated over A432, gaplessly at every fractal level and at no cost (derived from the uuid, never stored). The analog twin of the discrete content-fingerprint, and the verifiable answer to science's 'aura', whose only measurable form is an analog physical signal (biophoton flux, electrodermal conductance) — never a detectable subtle-energy field."
 atomPath: "vocabulary/analog"
-coordinate: "vocabulary/analog · 5/round · 796d0cc6"
-contentUuid: "02721bad-3992-592f-8924-93ed9817dd60"
-diamondUuid: "b83fe1ac-fda7-82aa-92f5-9f90b203d7fe"
-uuid: "796d0cc6-297e-8ef9-a4de-f077ec9313ce"
-horo: 5
+coordinate: "vocabulary/analog · 8/crest · cd817605"
+contentUuid: "0ebe97ab-97cb-5af8-bad0-15654dd4477f"
+diamondUuid: "79295b03-5467-8032-a9af-fe91dbf0744b"
+uuid: "cd817605-1ed3-8f39-bba0-c3808c5e2b36"
+horo: 8
 typography:
   partition: vocabulary
-  bondDegree: 121
+  bondDegree: 111
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8b5f69ed-5ecb-82a2-b3ec-78dbb9326794"
+  computationUuid: "202d2ea7-1e94-80fd-8cf0-9b64538b23e5"
   stages:
     - stage: path
       stageUuid: "7e1d0ce1-f72f-8593-9d1b-f2c53cfac1ab"
     - stage: trinity
       stageUuid: "23d80f03-38f3-84fd-bee7-4f23f4db8c0c"
     - stage: boundary
-      stageUuid: "edcfee7b-5d3b-88d4-ba18-fc8a829bf962"
+      stageUuid: "18b2bc10-f4ca-8665-9287-721b42d4f46c"
     - stage: links
-      stageUuid: "88e348c2-b91d-8661-bc02-473ad4f6e0bc"
+      stageUuid: "e5ee9a56-aabb-851c-b2ee-8b9a865f8e67"
     - stage: horo
-      stageUuid: "402cd380-5131-8c1f-98ff-99994c6b6875"
+      stageUuid: "3e2b182d-f70e-8bdf-b98b-7b863a43b96d"
     - stage: seal
       stageUuid: "ebbee0f1-046f-8405-b6c5-0f0606e80acb"
     - stage: uuid
-      stageUuid: "9f08650f-860b-8f1c-a724-7020c70a4802"
+      stageUuid: "220ab85b-d33d-8e4b-ab8c-34a386b01105"
 version: 2
 ---
 # analog — the continuous computed aura (gapless at every scale, at no cost)

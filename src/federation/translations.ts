@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when designing inter-tenant content exchange, activity distribution, or federation protocols following ActivityPub / W3C Activity Streams — content-addressed row exchange between erpax tenants with independent peer verification, trust boundaries, and content-delivery semantics.",
-    "uuid": "1727be8e-815a-8958-8455-ec804cacd291",
+    "uuid": "f0d807e8-1b9d-810f-a09d-cf8f49d515d8",
     "words": [
       "use",
       "when",

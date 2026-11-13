@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about musical — A schema.org component word, collided out of schema.org compounds — fused from musicalKey (sti · collapse · merge).",
-    "uuid": "d6f10c55-9d62-8efe-9c39-b5ac1a2a593f",
+    "uuid": "6c2bc8c0-ac15-816d-a3be-28a8b46a9665",
     "words": [
       "use",
       "when",

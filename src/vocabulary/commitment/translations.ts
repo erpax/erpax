@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one commitment — the singular model of the commitments collection (the plural store); a binding promise to perform or provide.",
-    "uuid": "3a688ce3-e6e4-8961-a7b0-8a08c90ff937",
+    "uuid": "319e4666-0f2d-880e-9acf-e19260a82877",
     "words": [
       "use",
       "when",

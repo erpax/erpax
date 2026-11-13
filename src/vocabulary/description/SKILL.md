@@ -3,17 +3,17 @@ name: description
 description: "Use when capturing free-form explanatory text — line item description, finding description, audit observation, notes. Rich or plain text; never a metadata bag (prefer explicit fields + tags for structured data)."
 atomPath: "vocabulary/description"
 coordinate: "vocabulary/description · 1/base · 86f182e7"
-contentUuid: "d4c895bc-d322-5e9a-bbaf-29c9b7ab5a0d"
-diamondUuid: "5d9dd4a8-a06f-8b97-8b98-0fa118efce1e"
+contentUuid: "0dcd83be-ad5f-5c1f-b809-5eb626bea4d3"
+diamondUuid: "a6f695fd-8e6a-87d0-9666-f032ef224e2b"
 uuid: "86f182e7-2d01-82f5-92c6-fb696a834f11"
 horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 25
+  bondDegree: 19
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f240a5bc-4d47-8213-94ac-13b91d25be08"
+  computationUuid: "e8b3b125-61ea-89aa-93eb-e724d1bbac96"
   stages:
     - stage: path
       stageUuid: "d51fb99c-abd9-82f2-afaa-0e53321435d7"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "3a99c3cc-3d80-8a7e-a538-6524c37779df"
     - stage: horo
-      stageUuid: "fe1b879d-08cf-8c80-8deb-ff9e9be3764c"
+      stageUuid: "59a47019-ba6e-8ee6-ba20-4e6227cc4eb3"
     - stage: seal
       stageUuid: "b5eefcc8-2a67-8aed-86e2-7d99d216224d"
     - stage: uuid
-      stageUuid: "9fac0cba-3152-84a8-a062-27592860cd48"
+      stageUuid: "2c6a5702-bba2-85b7-ab78-eca015898784"
 version: 2
 ---
 # description

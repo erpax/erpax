@@ -2,11 +2,11 @@
 name: standards
 description: "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family."
 atomPath: standards
-coordinate: "standards · 1/base · f65c4f04"
-contentUuid: "9b1be8b5-e5e3-5eef-9506-cfe521aeb6a7"
-diamondUuid: "1d5d28e0-175b-822f-9a9d-0d085cc71598"
-uuid: "f65c4f04-8fe6-88dd-8b06-459455a16bfc"
-horo: 1
+coordinate: "standards · 5/round · 9ea9ec03"
+contentUuid: "0b917a75-446c-575b-ba40-9326b1b3e052"
+diamondUuid: "40a10f49-8a02-8ff2-8920-22e01f421ab6"
+uuid: "9ea9ec03-00d7-81b3-ad1d-86772794456b"
+horo: 5
 typography:
   partition: standards
   bondDegree: 197
@@ -26,7 +26,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "b3309358-196c-8dae-8b1f-80f1b188561a"
+  computationUuid: "2577f279-0c23-8235-b879-ce55f89e5b24"
   stages:
     - stage: path
       stageUuid: "e4d21269-1c37-8fe4-85da-1900af3645f0"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "ce14a10d-8dd0-8830-b2ef-cf5cffbeec8e"
     - stage: horo
-      stageUuid: "8dbfeeed-2ffa-8a94-81fe-bddba60fe959"
+      stageUuid: "02fc7da1-2205-8167-90d0-ff37fb570942"
     - stage: seal
       stageUuid: "47197e8b-0e61-8144-80ca-7730bd2eb282"
     - stage: uuid
-      stageUuid: "c3a798e8-eb12-8446-87e8-aba26131ebd1"
+      stageUuid: "e4209057-fe31-8a43-93b2-e9aa262ac58b"
 version: 2
 ---
 # standards
@@ -72,7 +72,7 @@ Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
 <!-- CATALOGUE:START -->
 
-## Catalogue — 159 standards, 6574 citations
+## Catalogue — 159 standards, 6283 citations
 
 <!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->
 
@@ -88,23 +88,23 @@ inline HTML that renders as a coloured dot.
 | --- | ---: | ---: | --- |
 | en | 1 | 128 | `EN-16931` · 128 |
 | etsi | 2 | 31 | `eIDAS` · 19 |
-| eu | 26 | 889 | `EU-Intrastat-Reg-2019/2152` · 348 |
-| gdpr | 1 | 31 | `EU-2016/679` · 31 |
-| iec | 6 | 324 | `ISO/IEC-25010` · 201 |
+| eu | 26 | 888 | `EU-Intrastat-Reg-2019/2152` · 348 |
+| gdpr | 1 | 29 | `EU-2016/679` · 29 |
+| iec | 6 | 322 | `ISO/IEC-25010` · 199 |
 | ifrs | 20 | 206 | `IFRS-15` · 38 |
-| iso | 32 | 1490 | `ISO-8601-1` · 332 |
+| iso | 32 | 1477 | `ISO-8601-1` · 331 |
 | national | 2 | 47 | `Naredba-N-18` · 43 |
-| nist | 10 | 277 | `NIST-SP-800-63` · 97 |
-| oecd | 4 | 87 | `SAF-T` · 64 |
+| nist | 10 | 271 | `NIST-SP-800-63` · 95 |
+| oecd | 4 | 85 | `SAF-T` · 62 |
 | other | 15 | 268 | `COSO-ERM-2017` · 144 |
-| rfc | 11 | 456 | `RFC-9562` · 154 |
-| sox | 6 | 38 | `SOX` · 25 |
-| un | 6 | 95 | `ISO-9735` · 42 |
+| rfc | 11 | 445 | `RFC-9562` · 145 |
+| sox | 6 | 36 | `SOX` · 23 |
+| un | 6 | 94 | `ISO-9735` · 42 |
 | upu | 1 | 7 | `UPU-S42` · 7 |
 | us_gaap | 3 | 61 | `US-CTA-2021` · 38 |
-| w3c | 11 | 2076 | `schema.org` · 1909 |
+| w3c | 11 | 1825 | `schema.org` · 1660 |
 | wcag | 2 | 63 | `W3C-WAI-ARIA-1.2` · 33 |
-| **Σ** | **159** | **6574** | |
+| **Σ** | **159** | **6283** | |
 
 **Registered, awaiting citation: 104.** Known canonical standards the registry holds and
 no code cites yet — they seed as `proposed` and become cited as a domain grows. Listed in

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about acriss — A schema.org component word, collided out of schema.org compounds — fused from acrissCode (sti · collapse · merge).",
-    "uuid": "d2ccee85-66c7-8361-a668-5a644a8c4666",
+    "uuid": "8f770338-0271-8dd5-a914-a2c416113da1",
     "words": [
       "use",
       "when",

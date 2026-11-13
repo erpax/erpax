@@ -2,34 +2,34 @@
 name: prepend
 description: "Use when reasoning about prepend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/prepend"
-coordinate: "vocabulary/prepend · 4/weave · dc22f941"
-contentUuid: "fc96da9f-aa13-5822-90f0-b8df6fdd1d5e"
-diamondUuid: "2b52f62a-f71f-8f4c-a6ce-2a8b50f17360"
-uuid: "dc22f941-5386-8955-bede-4988142e940e"
-horo: 4
+coordinate: "vocabulary/prepend · 1/base · cd9dc63c"
+contentUuid: "ec80ff9d-3ef1-5f34-b679-2fdb7d8a863a"
+diamondUuid: "fb1d943c-3876-8910-879f-e7fee5cc84fe"
+uuid: "cd9dc63c-eed3-8b66-aa51-93f840f46c64"
+horo: 1
 typography:
   partition: vocabulary
-  bondDegree: 15
+  bondDegree: 12
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "028823d6-0b77-8916-860e-b704e41450df"
+  computationUuid: "29a12ab1-dafb-8817-9328-c2a7b6f827ba"
   stages:
     - stage: path
       stageUuid: "a8131e89-3b0f-85fa-9376-d45c2473b07b"
     - stage: trinity
       stageUuid: "cf3b8754-089b-8a9d-92b6-b162a263fc86"
     - stage: boundary
-      stageUuid: "72e91a5a-b5d9-81c4-bbff-8b3d8eb0984a"
+      stageUuid: "d445b6bd-845d-8b01-8c0f-2295d146abc7"
     - stage: links
-      stageUuid: "10744e29-f28c-8d43-8001-65f5e3ceff0d"
+      stageUuid: "7e12ab9c-a538-8810-b337-ba20eb2a347c"
     - stage: horo
-      stageUuid: "9273e485-8896-8698-8f68-28cce498e952"
+      stageUuid: "bdecad8a-718f-80ca-ac0a-14afd78f90e0"
     - stage: seal
       stageUuid: "fd594b2e-5c49-89a3-9ed4-cc6369433d47"
     - stage: uuid
-      stageUuid: "f8baceab-47a5-87d1-9af8-504c14789ecc"
+      stageUuid: "150bacae-c2d1-8915-b56b-04722805f369"
 version: 2
 ---
 # prepend

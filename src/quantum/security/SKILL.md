@@ -2,18 +2,18 @@
 name: security
 description: "Use when auditing or hardening erpax — security is bidirectional, the love and fear duality on the trust layer; the quantum twin runs both lenses at once (blue verifies the control holds, red prices forging past it) so a finding is a balanced attack-and-defense pair and audit coverage is the metric."
 atomPath: "quantum/security"
-coordinate: "quantum/security · 5/round · 1b412a8d"
-contentUuid: "02fdfe6d-b3db-5064-be9e-88ce19cd7457"
-diamondUuid: "7221eeea-e4ae-8bcf-9ee2-57c0ba328740"
-uuid: "1b412a8d-8ef8-826e-ba0b-808cce4b6a1e"
-horo: 5
+coordinate: "quantum/security · 7/descent · 7a22d476"
+contentUuid: "cd805ce5-cfb6-516f-9825-73204ea29de4"
+diamondUuid: "6157c2ff-1b40-8902-bff4-a27f6037711c"
+uuid: "7a22d476-26b1-8458-b541-b2e5412b8a9e"
+horo: 7
 typography:
   partition: quantum
-  bondDegree: 59
+  bondDegree: 48
 standards: []
 bindings: []
 signatures:
-  computationUuid: "13bae037-16ca-8cae-8cc6-3eeb9c077df0"
+  computationUuid: "395c8fc6-189a-81eb-b992-fcc55e4e9b35"
   stages:
     - stage: path
       stageUuid: "8baa47ec-23f3-80d0-ade1-09402670d0f9"
@@ -22,23 +22,24 @@ signatures:
     - stage: boundary
       stageUuid: "bf024d0b-1866-8403-b1ac-11965d4eed78"
     - stage: links
-      stageUuid: "5625c1f7-0ff8-8c8c-b5bf-942be6e35959"
+      stageUuid: "f5b56ba8-8d56-8092-b819-cc931098af47"
     - stage: horo
-      stageUuid: "c765c99d-15ab-8a70-9ae4-dadff13da664"
+      stageUuid: "87421e76-dfa0-8c35-9131-a72943a45ad7"
     - stage: seal
       stageUuid: "3738957d-c73c-8888-a59d-83fdd254f533"
     - stage: uuid
-      stageUuid: "c7a27dd2-c85d-8e4e-9830-1134d6fb7ced"
+      stageUuid: "25f00b16-aa12-8c36-b383-d1c211b66bfe"
 quantum:
   superposition:
     - access
-    - biometric
     - clearance
     - collapse
-    - engineering
     - law
     - merge
     - publish
+    - quantum
+    - requirement
+    - research
     - superposition
   collapse:
     - "Use when auditing or hardening erpax — security is bidirectional, the love and fear duality on the trust layer; the quantum twin runs both lenses at once (blue verifies the control holds, red prices forging past it) so a finding is a balanced attack-and-defense pair and audit coverage is the metric."
@@ -50,8 +51,8 @@ quantum:
     - "[[sandbox]]"
     - "[[security]]"
     - "[[tamper]]"
-    - "trust"
     - "security is bidirectional, so a finding is never one-sided — every control is read both ways at once and reported as the balanced blue/red pair (verify it holds ⊕ price forging past it), the same double-entry as everything else. The conjugate law binds the two: the cost to forge past a control equals its compression — squeeze it to the 128-bit uuid and the forging temperature rises, depth being tamper-cost. Red prices the attack but never ships it; coverage (proven vs assumed) is the metric."
+    - trust
   seal:
     sandbox: false
     receipt: false
@@ -59,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "13bae037-16ca-8cae-8cc6-3eeb9c077df0"
-    contentUuid: "02fdfe6d-b3db-5064-be9e-88ce19cd7457"
+    computationUuid: "395c8fc6-189a-81eb-b992-fcc55e4e9b35"
+    contentUuid: "cd805ce5-cfb6-516f-9825-73204ea29de4"
 version: 2
 ---
 # quantum/security — bidirectional security
@@ -71,4 +72,4 @@ The quantum twin of [[security]]: a [[duality]], not a wall. Every control is re
 
 **Law — [[law]]: security is bidirectional, so a finding is never one-sided — every control is read both ways at once and reported as the balanced blue/red pair (verify it holds ⊕ price forging past it), the same double-entry as everything else. The conjugate law binds the two: the cost to forge past a control equals its compression — squeeze it to the 128-bit uuid and the forging temperature rises, depth being tamper-cost. Red prices the attack but never ships it; coverage (proven vs assumed) is the metric.**
 
-<sub>content-uuid `02fdfe6d-b3db-5064-be9e-88ce19cd7457` · account `quantum/security` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `cd805ce5-cfb6-516f-9825-73204ea29de4` · account `quantum/security` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

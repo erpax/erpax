@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about accounting/reports — financial reports service — trial balance, statements, aging.",
-    "uuid": "3cfc2c8c-0abf-85f8-8dbf-d67e1b9dce83",
+    "uuid": "e5db7874-00d0-8ca4-8497-9d7cc38d1293",
     "words": [
       "use",
       "when",

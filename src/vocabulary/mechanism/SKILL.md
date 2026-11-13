@@ -2,34 +2,34 @@
 name: mechanism
 description: "Use when reasoning about mechanism as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: "vocabulary/mechanism"
-coordinate: "vocabulary/mechanism · 1/base · 14160fc1"
-contentUuid: "f5ebf8e7-0fc5-5066-9726-c9997a188768"
-diamondUuid: "75656c4c-d4b3-8ab3-9058-9e64531bcd45"
-uuid: "14160fc1-3d37-8be5-8692-5d424beb9eed"
-horo: 1
+coordinate: "vocabulary/mechanism · 5/round · 4f65884f"
+contentUuid: "71c08329-699e-5fef-a266-d3b6398dd9da"
+diamondUuid: "56c30820-b689-8d0f-bec2-053bd61a0a07"
+uuid: "4f65884f-44fe-8f25-8094-b8b994a761bb"
+horo: 5
 typography:
   partition: vocabulary
-  bondDegree: 15
+  bondDegree: 12
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "a7dbd11a-3150-8712-aa63-1a4a3638c7ed"
+  computationUuid: "324b7d56-8511-88b8-ad53-13f497720265"
   stages:
     - stage: path
       stageUuid: "40bee92e-b920-8ec7-8941-3e50192f76d8"
     - stage: trinity
       stageUuid: "d8d5c4d4-be3e-858e-8102-aaee0c5225ad"
     - stage: boundary
-      stageUuid: "98e2ea71-aae4-8131-a220-a558955417a2"
+      stageUuid: "551fd54a-c0e7-8704-8be1-baf6292c46a5"
     - stage: links
-      stageUuid: "c296d151-f73f-8485-a086-84040a10ce4a"
+      stageUuid: "48443158-6ff4-87a0-8b5c-93fc3474f181"
     - stage: horo
-      stageUuid: "48e2da3d-47ef-812c-bc29-f269cd8bce46"
+      stageUuid: "a8988b90-cb25-8787-b546-883e50c70204"
     - stage: seal
       stageUuid: "9343abef-eab4-8660-9f0c-3bde820ba404"
     - stage: uuid
-      stageUuid: "17cf09a6-527f-8e1f-b0aa-3ac727618a75"
+      stageUuid: "059c0758-ab18-8255-b58c-f63ee07df6bf"
 version: 2
 ---
 # mechanism

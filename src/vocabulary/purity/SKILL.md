@@ -2,33 +2,33 @@
 name: purity
 description: "Use when reasoning about purity as the fully-sealed / zero-impurity state that maximises tamper-cost in EVERY dimension — purity = zero entropy = every gate green = no escape. A single impurity (an unsealed cross, an off-ring state, a dangling link, a hallucination) is a 0-bit weakest-link path that collapses the cost; purity removes every weakest link, so the floor is maximal along all paths and all dimensions. The conjugate of hallucination; the generalisation of import-purity, file-purity, and md-purity into one law."
 atomPath: "vocabulary/purity"
-coordinate: "vocabulary/purity · 8/crest · 47b9c0ce"
-contentUuid: "060d00b1-09f4-5304-b471-9da332ec4f29"
-diamondUuid: "16ba2ea5-522e-87f5-aaf6-56e5e3daa549"
-uuid: "47b9c0ce-77fe-88d7-a832-8d80bbd2afb6"
-horo: 8
+coordinate: "vocabulary/purity · 7/descent · 7d942354"
+contentUuid: "1b3463f7-be98-5a96-bdae-b1a562425e6d"
+diamondUuid: "9a303047-76da-8b56-b3a3-27fd8112529c"
+uuid: "7d942354-ae52-8eed-83f7-25835d92cb53"
+horo: 7
 typography:
   partition: vocabulary
-  bondDegree: 133
+  bondDegree: 123
 standards: []
 bindings: []
 signatures:
-  computationUuid: "ffb275f6-ada8-8a50-8669-b7957a98c53d"
+  computationUuid: "27432c32-0e03-8188-b8f8-3e30cea77c84"
   stages:
     - stage: path
       stageUuid: "2f0d4358-7f92-8346-a454-35cfd19130c7"
     - stage: trinity
       stageUuid: "32849e12-13be-8124-adfd-4fe310cbb40b"
     - stage: boundary
-      stageUuid: "2dc7f5cf-8c6c-88f6-aded-bff5815a4a44"
+      stageUuid: "f4548456-8e81-8026-b74a-3c08434fe506"
     - stage: links
-      stageUuid: "e075d9d5-8ca1-84e1-8c50-dde3c063d4c1"
+      stageUuid: "6c0d204d-fd51-853b-a2a7-a36fed2c0bb6"
     - stage: horo
-      stageUuid: "a6ed292e-2a5d-81b5-8f18-68c5391c5fd6"
+      stageUuid: "e55aeb65-84ee-8c9b-bec7-2d592c23fab1"
     - stage: seal
       stageUuid: "b98d1cd1-ada9-88cc-91d2-4cdb5ea0ced5"
     - stage: uuid
-      stageUuid: "2a24c868-52c7-8160-ad6e-8224bdb7049d"
+      stageUuid: "4d0a95ce-4c60-8147-b113-9fff2dc22612"
 version: 2
 ---
 # purity — fully sealed, zero impurity, max tamper-cost in every dimension

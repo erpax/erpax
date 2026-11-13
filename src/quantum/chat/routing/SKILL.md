@@ -3,17 +3,17 @@ name: routing
 description: "Use when reasoning about routing — Session routing — improve, append, seal chat sessions"
 atomPath: "quantum/chat/routing"
 coordinate: "quantum/chat/routing · 8/crest · 628dee77"
-contentUuid: "38cfa2ac-98eb-5f67-9955-946904216d9a"
-diamondUuid: "9f1407dc-a444-8ba8-914e-b5e75d87bb91"
+contentUuid: "d3a63636-73cb-569c-adc3-b01e4197c98c"
+diamondUuid: "d48fa840-0e80-8629-b3d1-0e15c519cb4d"
 uuid: "628dee77-eef8-89ae-914e-732b2a1d1dc1"
 horo: 8
 typography:
   partition: quantum
-  bondDegree: 31
+  bondDegree: 6
 standards: []
 bindings: []
 signatures:
-  computationUuid: "8711370d-915a-8f89-a0e3-35b882651445"
+  computationUuid: "c91c04e2-46c9-8448-9fb1-b84e35b6a287"
   stages:
     - stage: path
       stageUuid: "445e21b5-e5d2-8660-9d6e-7e1ab33587eb"
@@ -24,22 +24,16 @@ signatures:
     - stage: links
       stageUuid: "3fab593b-605a-8bcc-b4f6-7e4f6b2ba7f4"
     - stage: horo
-      stageUuid: "db0382ba-bd79-80e7-b2bf-3ee7c478df54"
+      stageUuid: "12f3b3cc-e6c0-89c6-958e-6c268b9a32ca"
     - stage: seal
       stageUuid: "2a73c24c-a736-8c46-ba14-bd165fff7c80"
     - stage: uuid
-      stageUuid: "89e2f381-c1d3-80cd-8f06-9ab982b6c7fa"
+      stageUuid: "f08f8057-2d15-86d2-b4ad-581500ae06b0"
 quantum:
   superposition:
     - chat
-    - competition
-    - horo
+    - i18n
     - law
-    - peace
-    - sandbox
-    - self
-    - society
-    - sparsity
     - superposition
   collapse:
     - "Use when reasoning about routing — Session routing — improve, append, seal chat sessions"
@@ -50,12 +44,12 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "8711370d-915a-8f89-a0e3-35b882651445"
-    contentUuid: "38cfa2ac-98eb-5f67-9955-946904216d9a"
+    computationUuid: "c91c04e2-46c9-8448-9fb1-b84e35b6a287"
+    contentUuid: "d3a63636-73cb-569c-adc3-b01e4197c98c"
 version: 2
 ---
 # quantum/chat/routing
 
 Session routing for chat — improve, append, and seal chat sessions.
 
-<sub>content-uuid `38cfa2ac-98eb-5f67-9955-946904216d9a` · account `quantum/chat/routing` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `d3a63636-73cb-569c-adc3-b01e4197c98c` · account `quantum/chat/routing` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -3,13 +3,13 @@ name: reference
 description: "Use when validating that a sale's fiscal references resolve — a citation that leads nowhere makes the sale unreviewable, which is a legal defect rather than a cosmetic one."
 atomPath: "sale/fiscal/reference"
 coordinate: "sale/fiscal/reference · 1/base · b42f0988"
-contentUuid: "cc16cc8f-fc1a-500c-98fd-8668d62f8cd2"
+contentUuid: "5ac57b4e-4722-52a8-9fd5-c68df16ddb05"
 diamondUuid: "7291e67e-9519-863e-8b4d-7924d7f3b317"
 uuid: "b42f0988-ec55-829f-9e05-39fcccdef541"
 horo: 1
 typography:
   partition: sale
-  bondDegree: 85
+  bondDegree: 79
 standards:
   - "BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature"
 bindings: []

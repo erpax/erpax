@@ -3,13 +3,13 @@ name: fallback
 description: "Use when a country slot is blank or unknown — CLDR ZZ (\"Unknown Region\") is the country identity element, the universal value that is compatible with every real country and resolves any nullish input to a non-null code."
 atomPath: "country/fallback"
 coordinate: "country/fallback · 2/share · 556440cd"
-contentUuid: "e9fa0474-72bb-513f-8625-229382f01d98"
-diamondUuid: "79b170af-3eb9-8fa7-9a1c-71669ca13292"
+contentUuid: "c8831a9f-c4f0-513f-b70f-b0202ec2b3d8"
+diamondUuid: "ce8ca818-adce-8518-a588-c2a6fa7ee4ce"
 uuid: "556440cd-2878-857f-a93f-7387c31bb36e"
 horo: 2
 typography:
   partition: country
-  bondDegree: 24
+  bondDegree: 17
 standards:
   - CLDR ZZ Unknown Region
   - "EU VIES — alpha-2 country code element"
@@ -25,7 +25,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "64246a90-fb55-898e-9186-9e4f3f4f94cd"
+  computationUuid: "63a7822b-7bd9-8eec-b6f7-4576a34fa073"
   stages:
     - stage: path
       stageUuid: "251c0471-960d-88a5-bf6a-eae7851ebd42"
@@ -36,11 +36,11 @@ signatures:
     - stage: links
       stageUuid: "51f26416-8b69-812d-91e0-cad4e6f33876"
     - stage: horo
-      stageUuid: "acf56daf-da4a-8e23-9bd9-0a7e1636771d"
+      stageUuid: "f8a7be61-a1c5-8dcf-bd41-60a0851574d1"
     - stage: seal
       stageUuid: "63b9e659-b763-8c13-9e44-9e0968317243"
     - stage: uuid
-      stageUuid: "7fd9d322-cc27-80b5-87e0-b1f9bec71485"
+      stageUuid: "5c4ee14c-7477-8a2e-8551-e4db229c11c8"
 version: 2
 ---
 # country/fallback — CLDR ZZ, the country identity element

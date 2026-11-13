@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "benchmark",
-    "uuid": "7c0f802b-7b40-8d4a-9d4a-68ea7e0ea133",
+    "uuid": "4625c34f-02fd-8bad-ba40-8a5188f5118c",
     "words": [
       "benchmark"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring an AI model on real work rather than on problems whose answers are already known — the published standard behind agent/receipt. Three axes with their boundaries travelling beside them: precision (claims that held / claims made), efficiency (delivered / delivered+rework), and security as an INCIDENT COUNT that is never softened into a ratio. A row exists only for a model actually run on this corpus; nothing is inferred from a model card, a parameter count or a reputation, and a dirty security record never outranks a clean one.",
-    "uuid": "e43e5186-b207-8b04-a0e0-f72cc0dad8dd",
+    "uuid": "fd4e5f51-509e-87f8-988f-fa9940d2be44",
     "words": [
       "use",
       "when",

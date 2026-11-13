@@ -3,13 +3,13 @@ name: engineering
 description: "Use when an engineering standard (ISO/IEC 25010 quality model) must move from cited to enforced — maps each quality concern to the erpax gate that enforces it, and names the cited-but-ungated concerns as the solutions to reverse-engineer next."
 atomPath: engineering
 coordinate: "engineering · 2/share · 73a0f651"
-contentUuid: "66c0f936-ce11-5cf0-9078-c1bbf1491402"
+contentUuid: "2e148938-8879-5119-a876-c946dbf4f985"
 diamondUuid: "aa4ef4cf-e160-807f-8351-ffe74abadcda"
 uuid: "73a0f651-cf04-8912-8401-cff97a9fde0b"
 horo: 2
 typography:
   partition: engineering
-  bondDegree: 37
+  bondDegree: 19
 standards:
   - "ISO/IEC 25010:2023 §5 — product quality model (functional suitability … maintainability)"
 bindings: []

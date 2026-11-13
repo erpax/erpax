@@ -3,14 +3,15 @@ name: shred
 description: "Use when reconciling GDPR erasure with content-addressing — a content-uuid is f(content) and the chain needs the row, so you cannot delete. Crypto-shred = encrypt erasable fields per subject, and erasure = destroy the key (not the row). The row+uuid persist (chain/tamper-evidence intact), the plaintext is unrecoverable. Matter-twin shred/index.ts."
 atomPath: shred
 coordinate: "shred · 2/share · d7f4cb32"
-contentUuid: "fc4a0e66-5b39-5a43-ab71-567befefae21"
-diamondUuid: "f6f0acbc-52c8-882b-8e0a-d33514d233af"
+contentUuid: "d3137917-1ba0-5afe-a6f7-431508b0e1d1"
+diamondUuid: "060dc397-74cd-84df-aee6-8356d59a38d6"
 uuid: "d7f4cb32-5979-8988-9764-ad1b7e5ced00"
 horo: 2
 typography:
   partition: shred
-  bondDegree: 43
+  bondDegree: 40
 standards:
+  - "EU-2016/679"
   - "GDPR (EU 2016/679) Art.17 (erasure) · Art.5(1)(c) (minimisation) · Art.25 (by design)"
   - "GDPR (EU 2016/679) Art.17 (erasure) · Art.5(1)(c) (minimisation) · Art.25 (by design)`"
   - "NIST SP 800-88 r1 §2.5 (cryptographic erase as sanitisation)"
@@ -18,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "79407863-1bb7-8136-b0df-2563bdcd530e"
+  computationUuid: "b6cce30c-e951-87fb-b210-0f54e3a7d6b9"
   stages:
     - stage: path
       stageUuid: "398f15aa-e355-871e-8460-26a85d01aaeb"
@@ -29,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "402c223d-a295-8d2d-9290-eaaaf12454bf"
     - stage: horo
-      stageUuid: "611f784b-0def-8728-894a-05acb429f187"
+      stageUuid: "4ec2008e-4392-8d2b-8c96-538243fead0d"
     - stage: seal
       stageUuid: "5c0109b8-0d9c-8ac0-b71d-6226a0911dc6"
     - stage: uuid
-      stageUuid: "e5143339-6565-8dfd-a554-2b1cda46caf4"
+      stageUuid: "e7a20446-b7f3-8cea-8dd3-cb1bccddc771"
 version: 2
 ---
 # shred — erase the content, never the record

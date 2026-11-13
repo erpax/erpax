@@ -3,13 +3,13 @@ name: import
 description: "Use when reasoning about quantum computed import — barrel entanglement derived from each file's live import/wikilink set, never hand-annotated; deep paths are escapes that collapse to @/x."
 atomPath: "quantum/import"
 coordinate: "quantum/import · 1/base · 64bf38d7"
-contentUuid: "fe145647-4450-548a-b0c8-cc0ef623817a"
+contentUuid: "1c0f8c61-be82-52db-a1d6-de1bdd0a5ae7"
 diamondUuid: "22bd43f9-d5a5-82d5-a744-bed8f2b335e0"
 uuid: "64bf38d7-6973-87be-bf44-2d8bd01b873c"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 42
+  bondDegree: 41
 standards:
   - the import graph is the config — barrels are the only public faces
 bindings: []
@@ -55,7 +55,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "12bc75db-24d9-8a29-9383-ab3bbd2737aa"
-    contentUuid: "fe145647-4450-548a-b0c8-cc0ef623817a"
+    contentUuid: "1c0f8c61-be82-52db-a1d6-de1bdd0a5ae7"
 version: 2
 ---
 # quantum/import — quantum **computed** import
@@ -73,4 +73,4 @@ Composes [[quantum/boundary]] · [[convention]]/import · [[tamper]]/import · [
 @audit import set = parseTsImports / parseSkillImports — computed live
 @standard the import graph is the config — barrels are the only public faces
 
-<sub>content-uuid `fe145647-4450-548a-b0c8-cc0ef623817a` · account `quantum/import` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `1c0f8c61-be82-52db-a1d6-de1bdd0a5ae7` · account `quantum/import` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

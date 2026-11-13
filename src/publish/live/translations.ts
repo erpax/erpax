@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "live",
-    "uuid": "cc45aa3d-9bb8-8cc3-8d2e-a10ae6db9ccc",
+    "uuid": "b522cc16-80fc-84e2-a717-950072698b0f",
     "words": [
       "live"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about live — records a version and a content-uuid per package. records a DOI. Both are *claims made locally*, and until now nothing asked the registries whether either was true.",
-    "uuid": "b191d5ec-06b6-89d1-9a8f-c7e07d59ddf8",
+    "uuid": "711ec29f-3351-81cb-a98b-91a1d5148175",
     "words": [
       "use",
       "when",

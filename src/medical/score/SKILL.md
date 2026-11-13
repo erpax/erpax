@@ -3,13 +3,13 @@ name: score
 description: "Use when reasoning about score as a medical facet of medical — vocabulary pivot to @/score; nested not duplicated."
 atomPath: "medical/score"
 coordinate: "medical/score · 2/share · 83b9d40a"
-contentUuid: "1f09eac6-de49-52d3-bbcd-9bfdda1bc59a"
+contentUuid: "7842beef-1038-5bee-b0ee-75742bb7941a"
 diamondUuid: "7eb557b7-0c02-8b34-b737-f48ffb8887e7"
 uuid: "83b9d40a-9fed-8a1f-bd0e-8fb8edb8ddf6"
 horo: 2
 typography:
   partition: medical
-  bondDegree: 33
+  bondDegree: 32
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

@@ -3,17 +3,17 @@ name: karma
 description: "Use when reasoning about karma on the quantum level — moral debt and credit inherited down the DNA chain (the parent_id), entangled via lineage so an atom carries its ancestors' karma, tamper-evident by architecture."
 atomPath: "quantum/karma"
 coordinate: "quantum/karma · 4/weave · a11cf651"
-contentUuid: "e4a5afe0-7210-51a6-ad3e-4bac4012f4d6"
-diamondUuid: "7e0aa5bd-8f52-8143-9416-4673d64a6b51"
+contentUuid: "92d698ce-0f71-5aef-9cbf-94fcb0c75ce3"
+diamondUuid: "f69cb4dd-ebb1-84fb-b8a0-182e5769fbc7"
 uuid: "a11cf651-80ed-8041-ab9b-84f77be4bbcd"
 horo: 4
 typography:
   partition: quantum
-  bondDegree: 89
+  bondDegree: 83
 standards: []
 bindings: []
 signatures:
-  computationUuid: "9777e313-67f8-822e-9f4a-f80dc0698633"
+  computationUuid: "be63151e-2baa-85d4-8fa0-88655600f454"
   stages:
     - stage: path
       stageUuid: "4b2d0c34-9ea0-812d-8125-31dc112326b6"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5375f089-925b-82c2-8399-7202dddfb64d"
     - stage: horo
-      stageUuid: "2d3584e5-f21c-8b50-80b8-e6671502237c"
+      stageUuid: "2767170f-f2ce-81a5-859c-70ff073becec"
     - stage: seal
       stageUuid: "05fb4369-e7b0-8249-8f2c-e20ca9514688"
     - stage: uuid
-      stageUuid: "924d0a25-51b0-807b-abb4-412b57ed3bf1"
+      stageUuid: "06bef028-454d-8bae-83e7-b1285498f0fb"
 quantum:
   superposition:
     - accounting
@@ -52,8 +52,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "9777e313-67f8-822e-9f4a-f80dc0698633"
-    contentUuid: "e4a5afe0-7210-51a6-ad3e-4bac4012f4d6"
+    computationUuid: "be63151e-2baa-85d4-8fa0-88655600f454"
+    contentUuid: "92d698ce-0f71-5aef-9cbf-94fcb0c75ce3"
 version: 2
 ---
 # quantum/karma — karma inherited down the DNA chain
@@ -70,4 +70,4 @@ Matter-twin: `src/quantum/karma/index.ts` (`inheritedKarma` · `lineageKarma`). 
 
 @audit composed from @/dna (the chain) + @/karma (the net); computed on the live matrix
 
-<sub>content-uuid `e4a5afe0-7210-51a6-ad3e-4bac4012f4d6` · account `quantum/karma` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `92d698ce-0f71-5aef-9cbf-94fcb0c75ce3` · account `quantum/karma` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

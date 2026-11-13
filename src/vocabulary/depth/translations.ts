@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about depth — The depth of the item.",
-    "uuid": "00cc3729-1024-84be-880e-fcb82d5ab9b2",
+    "uuid": "28fb4469-de3e-895a-9256-26f8208b12fa",
     "words": [
       "use",
       "when",
