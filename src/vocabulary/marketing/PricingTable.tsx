@@ -52,6 +52,7 @@ export default async function PricingTable({
     collection: 'subscription-plans',
     where,
     limit: 12,
+    depth: 0,
     overrideAccess: true,
   })
 

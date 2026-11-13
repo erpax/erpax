@@ -41,6 +41,7 @@ export default async function ProductsIndexPage({
     collection: 'products',
     draft: false,
     limit: 500,
+    depth: 0,
     overrideAccess: false,
     pagination: false,
     locale,
