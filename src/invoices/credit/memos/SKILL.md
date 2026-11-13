@@ -68,8 +68,8 @@ timestamps, the failure reason and the journal entry, per payment.
   stands where the collection's own list stood.
 
 **Honest boundary.** A partial refund leaves the memo open, and nothing here decides what happens
-to the remainder. The sum of lines is not capped at the memo's amount — an over-refund is recorded
-as typed, not refused. The Refunds list filters on the line field through the query API; it is
+to the remainder. `withinAmount` refuses lines that promise more than the memo credits (a failed or
+voided line promises nothing), so an over-refund cannot be saved. The Refunds list filters on the line field through the query API; it is
 declared here and not yet loaded into any tenant.
 
 ## Standards

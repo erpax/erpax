@@ -2,6 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 import {
   BlocksFeature,
+  CodeBlock,
   FixedToolbarFeature,
   HeadingFeature,
   HorizontalRuleFeature,
@@ -13,7 +14,7 @@ import { createMembershipAdminMutateAccess } from '@/membership/admin/mutate/acc
 import { tenantScopedPostsReadAccess } from '@/tenant/scoped/read'
 import { documentPreviewAdmin } from '@/shareds'
 import { defaultVersionedDrafts } from '@/shareds'
-import { documentFeatures } from '@/default/lexical'
+import { codeLanguages, documentFeatures } from '@/default/lexical'
 import { Banner, Code, MediaBlock } from '@/blocks/config'
 import { ensureUniqueSlugWithinTenant } from '@/ensure/unique/slug/within/tenant'
 import { postsBeforeChange } from '@/posts/hooks'
@@ -103,7 +104,7 @@ export const Posts: CollectionConfig = {
                     ...rootFeatures,
                     HeadingFeature({ enabledHeadingSizes: ['h1', 'h2', 'h3', 'h4'] }),
                     ...documentFeatures(),
-                    BlocksFeature({ blocks: [Banner, Code, MediaBlock] }),
+                    BlocksFeature({ blocks: [Banner, Code, MediaBlock, CodeBlock({ slug: 'Fence', languages: codeLanguages(), defaultLanguage: 'plaintext' })] }),
                     FixedToolbarFeature(),
                     InlineToolbarFeature(),
                     HorizontalRuleFeature(),

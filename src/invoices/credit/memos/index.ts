@@ -16,6 +16,7 @@
  *
  * @invariant refunded(memo) is the sum of its issued and settled refund lines, never more than is recorded
  * @invariant a memo whose refund lines cover its amount is settled; a failed or voided line pays nothing
+ * @invariant the lines still in play never promise more than the memo's amount — an over-refund is refused
  *
  * Relations:
  *   tenant      → tenants
@@ -68,6 +69,18 @@ export const paidStages = (): string[] => ['issued', 'settled']
 /** Cash paid back against a memo: the sum of its lines that reached the customer. */
 export function refunded(memo: { refunds?: readonly RefundLine[] | null }): number {
   return (memo.refunds ?? []).filter((r) => paidStages().includes(r.status ?? '')).reduce((sum, r) => sum + (r.amount ?? 0), 0)
+}
+
+/** What the lines still in play promise to pay back: every line that has not failed or been voided. */
+export function committed(memo: { refunds?: readonly RefundLine[] | null }): number {
+  return (memo.refunds ?? []).filter((r) => r.status !== 'failed' && r.status !== 'voided').reduce((sum, r) => sum + (r.amount ?? 0), 0)
+}
+
+/** A memo cannot pay back more than it credits: the lines in play must fit within its amount. */
+export const withinAmount = (value: unknown, { siblingData }: { siblingData?: { amount?: number | null } }): true | string => {
+  const promised = committed({ refunds: Array.isArray(value) ? (value as RefundLine[]) : [] })
+  const amount = siblingData?.amount ?? 0
+  return promised <= amount || `Refund lines promise ${promised}, more than the memo's ${amount}.`
 }
 
 /** True when the memo's settled refund lines cover its whole amount — the memo itself is settled. */
@@ -173,6 +186,7 @@ const CreditMemos: CollectionConfig = {
       name: 'refunds',
       type: 'array',
       labels: { singular: 'Refund', plural: 'Refunds' },
+      validate: withinAmount,
       admin: { description: 'Cash paid back against this memo — one line per payment, so a partial refund is one more line.' },
       fields: [
         { name: 'amount', type: 'number', required: true, min: 0, admin: { description: 'Amount paid back, in cents.' } },

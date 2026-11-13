@@ -1529,10 +1529,10 @@ src/internal/controls/index.ts:4: * @standard COSO-2013 internal-control-integra
 src/internal/controls/index.ts:6: * @standard PCAOB AS 2201 ICFR-audit
 src/internal/policies/index.ts:5: * @standard ISO-37301:2021 compliance-policy
 src/internal/policies/policy/versions/index.ts:5: * @standard ISO-9001:2015 §7.5 documented-information-control
-src/invoices/credit/memos/index.ts:26: * @standard ISO-4217:2015 currency-codes
-src/invoices/credit/memos/index.ts:27: * @standard ISO-8601-1:2019 date-time issued-at applied-at settled-at
-src/invoices/credit/memos/index.ts:28: * @standard EN-16931:2017 credit-note-semantic-model
-src/invoices/credit/memos/index.ts:29: * @standard ISO-20022 pacs.004 payment-return
+src/invoices/credit/memos/index.ts:27: * @standard ISO-4217:2015 currency-codes
+src/invoices/credit/memos/index.ts:28: * @standard ISO-8601-1:2019 date-time issued-at applied-at settled-at
+src/invoices/credit/memos/index.ts:29: * @standard EN-16931:2017 credit-note-semantic-model
+src/invoices/credit/memos/index.ts:30: * @standard ISO-20022 pacs.004 payment-return
 src/invoices/dunning/cycles/index.ts:21: * @standard ISO-8601-1:2019 date-time stage-due-date
 src/invoices/dunning/cycles/index.ts:22: * @standard ISO-4217:2015 currency-codes
 src/invoices/hooks/deriveNumber.test.ts:4: * @standard EN-16931:2017 BT-1 invoice-number
@@ -2249,11 +2249,11 @@ src/post/close/analytics/service.ts:19: * @standard GAAP VRE (Variance Reporting
 src/posts/hooks/populateAuthors.ts:12: * @standard schema.org Person author
 src/posts/hooks/populateAuthors.ts:13: * @standard schema.org Article author
 src/posts/hooks/revalidatePost.ts:10: * @standard W3C HTML5 Living Standard
-src/posts/index.ts:38: * @standard schema.org Article
-src/posts/index.ts:39: * @standard schema.org BlogPosting
-src/posts/index.ts:40: * @standard W3C HTML5 Living Standard
-src/posts/index.ts:41: * @standard BCP-47 language-tag i18n-routing
-src/posts/index.ts:42: * @standard ECMA-402 internationalization-api
+src/posts/index.ts:39: * @standard schema.org Article
+src/posts/index.ts:40: * @standard schema.org BlogPosting
+src/posts/index.ts:41: * @standard W3C HTML5 Living Standard
+src/posts/index.ts:42: * @standard BCP-47 language-tag i18n-routing
+src/posts/index.ts:43: * @standard ECMA-402 internationalization-api
 src/power/index.ts:32: * @standard NIST SP 800-107r1 §5.1 (hash strengths) · NIST SP 800-57 Part 1 r5 §5.6
 src/prime/index.ts:32: * @standard Fundamental Theorem of Arithmetic — unique prime factorisation (Euclid; Gauss)
 src/prime/index.ts:33: * @standard Shor 1994 — integer factorisation by quantum period-finding (proven, not claimed)
@@ -3529,7 +3529,7 @@ src/payment/methods/index.ts:23: * @rfc 5116 authenticated-encryption-with-assoc
 src/posts/hooks/beforeChange.ts:8: * @rfc 3986 uri remote-media-source
 src/posts/hooks/revalidatePost.ts:8: * @rfc 9110 §13 caching
 src/posts/hooks/revalidatePost.ts:9: * @rfc 9111 http-caching
-src/posts/index.ts:37: * @rfc 3986 uri slug-to-url
+src/posts/index.ts:38: * @rfc 3986 uri slug-to-url
 src/remote/media/import/index.ts:5: * @rfc 3986 uniform-resource-identifier remote-source
 src/remote/media/import/index.ts:6: * @rfc 6838 mime-type media-type
 src/remote/media/import/index.ts:7: * @rfc 9110 http-semantics fetch
@@ -3961,8 +3961,8 @@ src/internal/controls/audit/findings/remediation/plans/index.ts:5: * @compliance
 src/internal/controls/control/tests/index.ts:8: * @compliance SOX §404 internal-controls testing-evidence
 src/internal/controls/index.ts:5: * @compliance SOX §404 internal-controls
 src/internal/policies/policy/acknowledgments/index.ts:5: * @compliance SOX §404 control-attestation
-src/invoices/credit/memos/index.ts:34: * @compliance SOX §404 internal-controls credit-memo-approval
-src/invoices/credit/memos/index.ts:35: * @compliance PCI-DSS-4.0 §3.2 tokenized-card-data via-stripe
+src/invoices/credit/memos/index.ts:35: * @compliance SOX §404 internal-controls credit-memo-approval
+src/invoices/credit/memos/index.ts:36: * @compliance PCI-DSS-4.0 §3.2 tokenized-card-data via-stripe
 src/invoices/dunning/cycles/index.ts:27: * @compliance SOX §404 internal-controls bad-debt-evidence
 src/invoices/dunning/cycles/index.ts:28: * @compliance GDPR Art.6(1)(f) lawful-basis-legitimate-interest collections
 src/invoices/hooks/bill.ts:21: * @compliance SOX §404 internal-controls
@@ -4111,7 +4111,7 @@ src/plugins/auth/access/index.ts:16: * @compliance SOC-2 CC6.1 logical-access-co
 src/plugins/versions/index.ts:30: * @compliance SOX §404 internal-controls record-retention
 src/posts/hooks/populateAuthors.ts:14: * @compliance GDPR Art.5(1)(c) data-minimization
 src/posts/hooks/populateAuthors.ts:15: * @compliance GDPR Art.32 security-of-processing
-src/posts/index.ts:43: * @compliance WCAG-2.1 level-AA accessibility
+src/posts/index.ts:44: * @compliance WCAG-2.1 level-AA accessibility
 src/properties/index.ts:23: * @compliance SOX §404 internal-controls real-estate-portfolio
 src/properties/investment/properties/index.ts:22: * @compliance SOX §404 internal-controls
 src/properties/spaces/index.ts:15: * @compliance SOX §404 internal-controls space-allocation
@@ -4596,9 +4596,9 @@ src/ifrs/16/types/test.ts:11: * @accounting IFRS IFRS-16 leases
 src/ifrs/16/types/test.ts:12: * @accounting US-GAAP ASC-842-20 lessee-accounting
 src/ifrs/16/validate.ts:5: * @accounting IFRS IFRS-16 leases
 src/ifrs/16/validate.ts:6: * @accounting US-GAAP ASC-842-20 lessee-accounting
-src/invoices/credit/memos/index.ts:30: * @accounting IFRS IFRS-15 §B22 refund-liability
-src/invoices/credit/memos/index.ts:31: * @accounting IFRS IFRS-15 §B47 contract-cancellation
-src/invoices/credit/memos/index.ts:32: * @accounting US-GAAP ASC-606-10-32-10 variable-consideration
+src/invoices/credit/memos/index.ts:31: * @accounting IFRS IFRS-15 §B22 refund-liability
+src/invoices/credit/memos/index.ts:32: * @accounting IFRS IFRS-15 §B47 contract-cancellation
+src/invoices/credit/memos/index.ts:33: * @accounting US-GAAP ASC-606-10-32-10 variable-consideration
 src/invoices/dunning/cycles/index.ts:23: * @accounting IFRS IFRS-9 §5.5 expected-credit-loss simplified-approach
 src/invoices/dunning/cycles/index.ts:24: * @accounting US-GAAP ASC-326-20 cecl-credit-losses
 src/invoices/dunning/cycles/index.ts:25: * @accounting US-GAAP ASC-310 receivables
@@ -5222,7 +5222,7 @@ src/internal/policies/policy/acknowledgments/index.ts:4: * @security ISO-27001 A
 src/internal/policies/policy/acknowledgments/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/internal/policies/policy/versions/index.ts:4: * @security ISO-27001 A.5.1 policies
 src/internal/policies/policy/versions/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/invoices/credit/memos/index.ts:36: * @security ISO-27002 §5.4 segregation-of-duties issuer-vs-approver
+src/invoices/credit/memos/index.ts:37: * @security ISO-27002 §5.4 segregation-of-duties issuer-vs-approver
 src/invoices/dunning/cycles/index.ts:29: * @security ISO-27002 §5.4 segregation-of-duties write-off-approval
 src/invoices/hooks/bill.ts:22: * @security ISO-27002 §5.4 segregation-of-duties
 src/invoices/invoice/lines/hooks/beforeValidate.ts:11: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5929,7 +5929,7 @@ src/internal/controls/audit/findings/court-docket.ts:12: * @audit ISO-19011:2018
 src/internal/controls/audit/findings/index.ts:10: * @audit ISO-19011:2018 audit-trail
 src/internal/controls/control/tests/audit/samples/index.ts:5: * @audit ISO-19011:2018 sampling-methodology
 src/internal/controls/control/tests/index.ts:9: * @audit ISO-19011:2018 audit-trail
-src/invoices/credit/memos/index.ts:33: * @audit ISO-19011:2018 audit-trail
+src/invoices/credit/memos/index.ts:34: * @audit ISO-19011:2018 audit-trail
 src/invoices/dunning/cycles/index.ts:26: * @audit ISO-19011:2018 audit-trail collections-evidence
 src/invoices/hooks/bill.ts:20: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/invoices/hooks/deriveNumber.ts:9: * @audit ISO-19011:2018 audit-trail document-identity

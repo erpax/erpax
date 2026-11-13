@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import CreditMemos, { coveredByRefunds, memoPresets, paidStages, refunded, withRefundStages } from '@/invoices/credit/memos'
+import CreditMemos, { committed, coveredByRefunds, withinAmount, memoPresets, paidStages, refunded, withRefundStages } from '@/invoices/credit/memos'
 
 describe('credit-memos collection node', () => {
   it('exports a valid collection config', () => {
@@ -45,6 +45,16 @@ describe('credit-memos — a refund is the cash-out stage of the memo', () => {
     expect(pending!.refundedAt).toBeUndefined()
     const kept = withRefundStages({ amount: 9, status: 'draft', refunds: [{ amount: 1, status: 'settled', refundedAt: 'then', settledAt: 'then' }] }, NOW).refunds![0]
     expect(kept).toMatchObject({ refundedAt: 'then', settledAt: 'then' })
+  })
+
+  it('refuses lines that promise more than the memo credits; a failed or voided line promises nothing', () => {
+    expect(committed({ refunds: [line(600, 'pending'), line(300, 'settled'), line(900, 'failed'), line(900, 'voided')] })).toBe(900)
+    expect(withinAmount([line(600, 'pending'), line(400, 'settled')], { siblingData: { amount: 1000 } })).toBe(true)
+    expect(withinAmount([line(600, 'pending'), line(401, 'issued')], { siblingData: { amount: 1000 } })).toMatch(/promise 1001, more than the memo's 1000/)
+    expect(withinAmount([line(600, 'settled'), line(900, 'failed')], { siblingData: { amount: 1000 } })).toBe(true)
+    expect(withinAmount(undefined, { siblingData: { amount: 0 } })).toBe(true)
+    const refunds = CreditMemos.fields.find((x) => 'name' in x && x.name === 'refunds') as { validate?: unknown }
+    expect(refunds.validate).toBe(withinAmount)
   })
 
   it('keeps every refund fact on the line, and the saved list stands where the collection stood', () => {
