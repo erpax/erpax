@@ -3,13 +3,13 @@ name: document
 description: Use when reasoning about document — RFC 9110 §13 cached document fetcher (single doc by collection + slug).
 atomPath: "rfc/9110/get/document"
 coordinate: "rfc/9110/get/document · 8/crest · 93e693a1"
-contentUuid: "9e9c9dae-182d-5f36-a13c-748c1497f3ef"
+contentUuid: "da833ca6-84ab-518f-b033-1c104f51ed8d"
 diamondUuid: "81abdf21-7ff0-8b2f-9e81-c5f4a7d718f0"
 uuid: "93e693a1-e97f-85c3-a33c-7f6da136ce1e"
 horo: 8
 typography:
   partition: rfc
-  bondDegree: 63
+  bondDegree: 67
 standards:
   - "9110 §13 caching"
   - "9111 http-caching"

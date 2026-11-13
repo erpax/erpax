@@ -3,13 +3,13 @@ name: document
 description: "Use when refactoring the corpus — a refactoring is written as a document (why, and the cuts in one JSON block), stored as a nested page under refactors, and applied by erpax itself through the scalpel: exactly-once-or-refuse, all-or-nothing, a red ring restores the batch. Run: pnpm erpax refactor plan <file.md | slug>"
 atomPath: "scalpel/document"
 coordinate: "scalpel/document · 7/descent · 41addc19"
-contentUuid: "1b84a7b6-3f34-5a80-811d-5d747a37a90c"
+contentUuid: "238af044-c415-50c1-9628-842d90f5a46a"
 diamondUuid: "ad9d3efe-ccd9-8355-bcca-539e7a082186"
 uuid: "41addc19-3ca4-8926-be56-3d22f5bd204f"
 horo: 7
 typography:
   partition: scalpel
-  bondDegree: 63
+  bondDegree: 67
 standards: []
 bindings: []
 signatures:

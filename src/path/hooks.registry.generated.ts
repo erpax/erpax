@@ -1332,6 +1332,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "standard/collection/hook",
   "standard/truth",
   "standards",
+  "standards/document",
   "standards/improve",
   "standards/projection",
   "standards/registry",
@@ -1554,7 +1555,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1547 as const
+export const ATOM_LEDGER_PATH_COUNT = 1548 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -6489,6 +6490,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "standards": [
     "standards"
   ],
+  "standards/document": [
+    "standards",
+    "standards/document"
+  ],
   "standards/improve": [
     "standards",
     "standards/improve"
@@ -7285,4 +7290,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 900 as const
+export const MERGED_NESTED_PATH_COUNT = 901 as const

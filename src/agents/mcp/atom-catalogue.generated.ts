@@ -9197,6 +9197,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "standards"
   },
   {
+    "atom": "document",
+    "name": "document",
+    "description": "Use when the standards the corpus cites should be read as documents — derives nested pages from the standards seed: the register, one page per family, one per standard listing the modules that cite it; generated as a page seed and loaded through the REST API.",
+    "path": "standards/document"
+  },
+  {
     "atom": "improve",
     "name": "improve",
     "description": "Use when standards must chat and improve via architectural reuse — addressIndex O(1), crack non-reuse, free-chat@tokens=0, emit waves. Uses quantum/ftl; path is standards/improve — not a domain ftl path.",

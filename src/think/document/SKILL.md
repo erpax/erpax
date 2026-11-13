@@ -3,13 +3,13 @@ name: document
 description: "Use when a lead should be visible to everyone who can develop it — turns each open intent into a nested page under leads, and each resolved intent that names a document into a redirect from the lead's address to that document, as generated seeds loaded through the REST API."
 atomPath: "think/document"
 coordinate: "think/document · 5/round · 9f29c2e2"
-contentUuid: "68881ac9-a03c-5383-94da-f41f017aa57f"
+contentUuid: "158b4150-76cd-5077-b066-9e0f4fc0f999"
 diamondUuid: "50eaba1f-982a-84ea-8d80-c9739475f850"
 uuid: "9f29c2e2-385c-8636-b8bd-b3749f7634c8"
 horo: 5
 typography:
   partition: think
-  bondDegree: 63
+  bondDegree: 67
 standards: []
 bindings: []
 signatures:

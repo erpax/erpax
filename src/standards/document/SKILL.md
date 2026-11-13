@@ -1,6 +1,35 @@
 ---
 name: document
 description: "Use when the standards the corpus cites should be read as documents — derives nested pages from the standards seed: the register, one page per family, one per standard listing the modules that cite it; generated as a page seed and loaded through the REST API."
+atomPath: "standards/document"
+coordinate: "standards/document · 4/weave · c76c4e03"
+contentUuid: "a470ed16-b329-5c2a-96a2-a3d9fdbeac24"
+diamondUuid: "bc8d5fea-9dc3-807d-b89d-307ba3bf311a"
+uuid: "c76c4e03-2897-861e-925a-921b12cbbaa5"
+horo: 4
+typography:
+  partition: standards
+  bondDegree: 67
+standards: []
+bindings: []
+signatures:
+  computationUuid: "9be2d3e2-314c-83a1-9320-ba7f09104805"
+  stages:
+    - stage: path
+      stageUuid: "b2eff851-cc93-83bb-a95a-80748ea058e0"
+    - stage: trinity
+      stageUuid: "dffd313b-a5f3-8790-ab3b-e14deffe01b4"
+    - stage: boundary
+      stageUuid: "62686114-e4b2-8deb-a4c1-82ca8d2e9e7b"
+    - stage: links
+      stageUuid: "887f84a0-01a0-8de3-9f87-84de93e1b10c"
+    - stage: horo
+      stageUuid: "161f089f-0b58-8332-871c-b709a94dcbf0"
+    - stage: seal
+      stageUuid: "a54a216b-c688-84b6-b118-42d70c9cb26a"
+    - stage: uuid
+      stageUuid: "e4403e18-b67f-8f6c-aff9-cdde2155d543"
+version: 2
 ---
 # standards/document — the standards seed as nested pages
 
