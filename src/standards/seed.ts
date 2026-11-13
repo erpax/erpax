@@ -2148,7 +2148,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Software testing",
     "uuid": "e69bd662-b3ef-8ba7-ac6c-ff5c05fd3db2",
     "color": "hsl(355 59% 40%)",
-    "count": 83,
+    "count": 84,
     "modules": [
       {
         "path": "src/agents/mcp/self-test.ts",

@@ -2746,6 +2746,7 @@ src/staffing/index.ts:4: * @standard SFIA 8 — responsibility levels 1..7
 src/staffing/index.ts:5: * @standard ESCO v1.2 / ISCO-08 — occupation and competency classification
 src/staffing/index.ts:6: * @standard NIST INCITS-359 — role-based access control
 src/standard/truth/index.ts:25: * @standard ISO-19011:2018 6.4.6 audit-evidence (a citation needs evidence)
+src/standards/document/test.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 src/standards/emit.test.ts:2: * @standard ISO/IEC-29119:2022 software-testing (emit invariant coverage)
 src/standards/emit.ts:389: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
 src/standards/emit.ts:390: * @standard ISO-19011:2018 §6.4 audit-evidence (the citation index)
@@ -6253,6 +6254,7 @@ src/spectrum/index.ts:17: * @audit lines computed from every horo rung-pair via 
 src/stack/index.ts:17: * @audit the path is a verified palindrome; the new state is the input folded through every hop, computed
 src/standard/collection/hook/index.ts:13: * @audit ISO-19011:2018 audit-trail
 src/standard/truth/index.ts:26: * @audit the banner law is computed from the live tree, never hand-maintained
+src/standards/document/test.ts:9: * @audit ISO-19011:2018 §6.4 audit-evidence — a page leads to the modules that cite the standard
 src/standards/index.ts:29: * @audit Conservation Law 27 standards-as-live-objects
 src/standards/index.ts:30: * @audit Conservation Law 28 standards-supersession-tracking
 src/standards/index.ts:31: * @audit Conservation Law 38 mcp-tool-standardization

@@ -2,6 +2,12 @@ import { describe, it, expect } from 'vitest'
 import { STANDARDS_CATALOGUE } from '@/standards/seed'
 import { standardMarkdown, standardPath, standardRows, standardSlug, type StandardEntry } from '@/standards/document'
 
+/**
+ * standards/document — the page derivation, proved on fixtures and on the live seed.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing
+ * @audit ISO-19011:2018 §6.4 audit-evidence — a page leads to the modules that cite the standard
+ */
 const entry = (id: string, family: string, modules: StandardEntry['modules'] = []): StandardEntry => ({ id, family, title: `Title of ${id}`, count: modules.length, modules })
 const A = entry('EN-16931', 'en', [{ path: 'src/a.ts', section: '§BT-151' }, { path: 'src/b.ts', section: '' }])
 const B = entry('ISO/IEC 25010:2023', 'iso')
