@@ -41,8 +41,8 @@ describe('seed/content/load — the SDK seen as the Local API slice the loaders 
   })
 
   it('parses its flags, and treats a flag with no value as absent', () => {
-    expect(parseArgs(['--url', 'https://h', '--packs', 'rules, law', '--tenant', 't1'])).toEqual({ url: 'https://h', packs: new Set(['rules', 'law']), tenant: 't1', seed: undefined })
-    expect(parseArgs(['--url', '--packs', 'rules'])).toEqual({ url: undefined, packs: new Set(['rules']), tenant: undefined, seed: undefined })
+    expect(parseArgs(['--url', 'https://h', '--packs', 'rules, law', '--tenant', 't1'])).toEqual({ url: 'https://h', packs: new Set(['rules', 'law']), tenant: 't1', seed: undefined, redirects: undefined })
+    expect(parseArgs(['--url', '--packs', 'rules'])).toEqual({ url: undefined, packs: new Set(['rules']), tenant: undefined, seed: undefined, redirects: undefined })
   })
 })
 

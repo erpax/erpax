@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import type { Field } from 'payload'
 import {
   type Convert,
+  loadRedirects,
   fillSeo,
   owedDescription,
   publishedStates,
@@ -120,7 +121,7 @@ const convert = ((_p: unknown, collection: string, field: string, markdown: stri
 
 /** An in-memory stand-in for the Local API operations the loaders use, with two rich-text fields. */
 function fakePayload() {
-  const tables: Record<string, Array<Record<string, unknown> & { id: string }>> = { pages: [], posts: [], categories: [] }
+  const tables: Record<string, Array<Record<string, unknown> & { id: string }>> = { pages: [], posts: [], categories: [], redirects: [] }
   let writes = 0
   const api = {
     config: {
@@ -251,5 +252,20 @@ describe('seed/content — SEO is filled before validation, then validation requ
     expect(validate('words', { data: { _status: 'published' } })).toBe(true)
     expect(validate('  ', { data: { _status: 'published' } })).toMatch(/states its description \(ISO 15836-1\)/)
     expect(validate(undefined, { data: { _status: 'published' } })).toMatch(/description/)
+  })
+})
+
+describe('seed/content — a redirect points at a page, and an address is never both', () => {
+  it('redirects by reference, retires the page that sat at the address, and is idempotent', async () => {
+    const p = fakePayload()
+    await loadPages(p.api, pageRows(nodes, read), { convert })
+    const rows = [{ from: '/law', page: 'rules' }, { from: '/old', page: 'ghost-page' }]
+    expect(await loadRedirects(p.api, rows)).toMatchObject({ created: 1, unchanged: 0, unresolved: ['ghost-page'] })
+    const rules = p.tables.pages!.find((d) => d.slug === 'rules')!
+    expect(p.tables.redirects![0]).toMatchObject({ from: '/law', to: { type: 'reference', reference: { relationTo: 'pages', value: rules.id } } })
+    expect(p.tables.pages!.find((d) => d.slug === 'law')!._status).toBe('draft')
+    const before = p.writes()
+    expect(await loadRedirects(p.api, rows)).toMatchObject({ created: 0, unchanged: 1 })
+    expect(p.writes()).toBe(before)
   })
 })

@@ -122,3 +122,4 @@ RECURSION.md
 
 # Generated page seeds — derived from installed skills, regenerated on demand (tsx src/payload/local/index.ts)
 src/**/seed.generated.json
+src/**/redirects.generated.json

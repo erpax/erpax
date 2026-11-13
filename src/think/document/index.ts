@@ -1,0 +1,102 @@
+/**
+ * think/document — every lead is a document; a lead that is resolved is a redirect.
+ *
+ * An intent used to live in a cache file on one machine. A lead that only one checkout can see is
+ * not a lead anyone else can develop. So each intent becomes a nested page under `leads`: its
+ * title is what is to be done, its body says what it waits for. When a lead is resolved it stops
+ * being a page: its address redirects to the document that resolved it, so a link to the lead
+ * still lands somewhere true and nothing has to remember that it was done.
+ *
+ * Run: tsx src/think/document/index.ts
+ *      (writes seed.generated.json and redirects.generated.json beside this file; load them with
+ *       tsx src/seed/content/load/index.ts --url <origin> --seed <pages> --redirects <redirects>)
+ *
+ * @invariant an open lead is exactly one page; a resolved lead is exactly one redirect, never both
+ * @invariant a lead's address is a function of its text alone, so the same lead is the same page everywhere
+ * @see ./SKILL.md
+ */
+import { writeFileSync } from 'node:fs'
+import { join } from 'node:path'
+import { pathToFileURL } from 'node:url'
+import { pageRows, slugOf, type PageRow } from '@/seed/content'
+import { thoughtAddress } from '@/think'
+
+/** One lead as the store holds it. A resolved lead may name the document that resolved it. */
+export interface Lead {
+  readonly intent: string
+  readonly state: 'open' | 'resolved'
+  readonly outcome?: unknown
+}
+
+/** A redirect to load: from a lead's address to the page that resolved it. */
+export interface RedirectRow {
+  readonly from: string
+  /** slug of the page to redirect to */
+  readonly page: string
+}
+
+const CONDITION = /\s+—\s+develop when\s+(.+)$/
+
+/** What the lead is, without the condition it waits on. */
+export const subjectOf = (intent: string): string => intent.replace(CONDITION, '').trim()
+
+/** What the lead waits for, or nothing when it states no condition. */
+export const conditionOf = (intent: string): string | undefined => CONDITION.exec(intent)?.[1]?.trim()
+
+/** `leads/<first words>-<address>`: readable, and unique because the address is of the whole text. */
+export function leadPath(intent: string): string {
+  const words = subjectOf(intent).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().split(' ').slice(0, 6).join('-')
+  return `leads/${words || 'lead'}-${thoughtAddress(`intent:${intent}`).slice(0, 8)}`
+}
+
+/** A lead as a markdown document: the subject as its heading, the rest as its description. */
+export function leadMarkdown(intent: string): string {
+  const subject = subjectOf(intent)
+  const cut = subject.search(/[:(]/)
+  const title = (cut > 12 ? subject.slice(0, cut) : subject).trim()
+  const condition = conditionOf(intent)
+  return [`# ${title.charAt(0).toUpperCase()}${title.slice(1)}`, '', subject, ...(condition ? ['', `**Develop when** ${condition}.`] : [])].join('\n')
+}
+
+/** The page a resolved lead points at: `outcome.page`, when the outcome names one. */
+export function resolvedBy(outcome: unknown): string | undefined {
+  const page = (outcome as { page?: unknown } | null | undefined)?.page
+  return typeof page === 'string' && page.trim() ? slugOf(page.trim()) : undefined
+}
+
+/**
+ * Open leads as nested page rows under one `leads` page. A resolved lead is left out of the pages:
+ * it is a redirect, or — when its outcome names no document — it is simply closed.
+ */
+export function leadRows(leads: readonly Lead[]): PageRow[] {
+  const open = leads.filter((l) => l.state === 'open')
+  const bodies = new Map<string, string>([
+    ['leads', `# Leads\n\nWhat is still to be developed, one page each. ${open.length} open.`],
+    ...open.map((l): [string, string] => [leadPath(l.intent), leadMarkdown(l.intent)]),
+  ])
+  return pageRows([...bodies.keys()].map((path) => ({ path })), (path) => bodies.get(path))
+}
+
+/** Resolved leads whose outcome names a document, as redirects from the lead's address to it. */
+export function leadRedirects(leads: readonly Lead[]): RedirectRow[] {
+  return leads.flatMap((l) => {
+    const page = l.state === 'resolved' ? resolvedBy(l.outcome) : undefined
+    return page ? [{ from: `/${slugOf(leadPath(l.intent))}`, page }] : []
+  })
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  const { readFileSync, existsSync } = await import('node:fs')
+  const { intend } = await import('@/think')
+  const store = join(process.cwd(), 'node_modules', '.cache', 'erpax', 'thought.json')
+  const raw = existsSync(store) ? (JSON.parse(readFileSync(store, 'utf8')) as Record<string, unknown>) : {}
+  const leads: Lead[] = Object.entries(raw)
+    .filter(([addr, v]) => typeof v === 'string' && addr === thoughtAddress(`intent:${v}`))
+    .map(([, v]) => intend(v as string))
+  const here = join(process.cwd(), 'src', 'think', 'document')
+  const pages = leadRows(leads)
+  const redirects = leadRedirects(leads)
+  writeFileSync(join(here, 'seed.generated.json'), JSON.stringify(pages, null, 1) + '\n')
+  writeFileSync(join(here, 'redirects.generated.json'), JSON.stringify(redirects, null, 1) + '\n')
+  console.log(`think/document — ${pages.length - 1} open lead page(s), ${redirects.length} redirect(s) from ${leads.length} lead(s)`)
+}

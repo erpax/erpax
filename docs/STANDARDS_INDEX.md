@@ -3256,6 +3256,7 @@ tests/e2e/admin.e2e.spec.ts:12: * @standard W3C WebDriver-BiDi browser-automatio
 tests/e2e/adminPayloadUiEmailLabels.ts:10: * @standard ECMA-402 internationalization-api
 tests/e2e/adminPayloadUiEmailLabels.ts:7: * @standard ISO/IEC-29119:2022 software-testing test-fixture
 tests/e2e/adminPayloadUiEmailLabels.ts:8: * @standard BCP-47 language-tag
+tests/e2e/api.e2e.spec.ts:13: * @standard ISO/IEC-29119:2022 software-testing system-test-level
 tests/e2e/categories/admin-data.e2e.spec.ts:10: * @standard ISO/IEC-29119-3:2021 test-documentation
 tests/e2e/categories/admin-data.e2e.spec.ts:9: * @standard ISO/IEC-29119:2022 software-testing system-test-level
 tests/e2e/categories/compliance-evidence.e2e.spec.ts:10: * @standard ISO/IEC-29119:2022 software-testing system-test-level
@@ -3608,6 +3609,7 @@ src/users/index.ts:54: * @rfc 6532 internationalized-email-addresses
 tests/e2e/admin.e2e.spec.ts:13: * @rfc 6265 cookies session
 tests/e2e/admin.e2e.spec.ts:14: * @rfc 7519 jwt session-token
 tests/e2e/adminPayloadUiEmailLabels.ts:9: * @rfc 5646 tags-for-identifying-languages
+tests/e2e/api.e2e.spec.ts:14: * @rfc 9110 http-semantics status-codes
 tests/e2e/form.e2e.spec.ts:9: * @rfc 5322 internet-message-format email-field
 tests/e2e/i18n.e2e.spec.ts:13: * @rfc 5646 tags-for-identifying-languages
 tests/e2e/i18n.e2e.spec.ts:14: * @rfc 4647 matching-of-language-tags

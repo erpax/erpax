@@ -453,3 +453,41 @@ export async function loadPosts(
   }
   return { created, updated, unchanged, unresolved: [...unresolved].sort() }
 }
+
+/** A redirect to load: `from` an address, to the page with this slug. */
+export interface RedirectRow {
+  readonly from: string
+  readonly page: string
+}
+
+/**
+ * Load redirects, each to a page by reference so it follows the page if its address changes. A
+ * redirect already present for that address is left alone; one whose page is not loaded is
+ * reported and not written — a redirect to nowhere is worse than none. The page that used to sit
+ * at the address is unpublished, so an address is a document or a redirect, never both.
+ */
+export async function loadRedirects(payload: Local, rows: readonly RedirectRow[], opts: LoadOptions = {}): Promise<LoadResult> {
+  const { req } = opts
+  const pages = await existingBySlug(payload, 'pages', opts)
+  const found = await payload.find({ collection: 'redirects', depth: 0, pagination: false, req, select: { from: true } })
+  const present = new Set(found.docs.map((d) => d.from))
+  let created = 0
+  let unchanged = 0
+  const unresolved: string[] = []
+  for (const row of rows) {
+    if (present.has(row.from)) {
+      unchanged++
+      continue
+    }
+    const target = pages.idOf.get(row.page)
+    if (target === undefined) {
+      unresolved.push(row.page)
+      continue
+    }
+    await payload.create({ collection: 'redirects', data: { from: row.from, to: { type: 'reference', reference: { relationTo: 'pages', value: target } } }, depth: 0, req })
+    const retired = pages.idOf.get(row.from.replace(/^\//, ''))
+    if (retired !== undefined) await payload.update({ collection: 'pages', id: retired, data: { _status: 'draft' }, depth: 0, req, context: QUIET })
+    created++
+  }
+  return { created, updated: 0, unchanged, unresolved: [...new Set(unresolved)].sort() }
+}

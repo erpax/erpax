@@ -9,7 +9,7 @@
  * deployment it can reach, with the caller's own credentials.
  *
  * Run: tsx src/seed/content/load/index.ts --url https://host --packs rules,law [--tenant <id>]
- *      tsx src/seed/content/load/index.ts --url https://host --seed <generated seed file>
+ *      tsx src/seed/content/load/index.ts --url https://host --seed <generated seed file> --redirects <generated redirects file>
  *      (credentials: ERPAX_AUTHORIZATION, the full Authorization header value)
  *
  * @invariant the SDK adapter forwards only what REST understands — a request object never crosses
@@ -21,7 +21,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import type { Payload, SanitizedConfig } from 'payload'
-import { loadPages, pageRows, type LoadResult, type PageRow } from '@/seed/content'
+import { loadPages, loadRedirects, pageRows, type LoadResult, type PageRow, type RedirectRow } from '@/seed/content'
 import { corpusCase, withCase } from '@/verify/case'
 
 /** The three REST operations the loaders use, as the SDK offers them. */
@@ -62,14 +62,14 @@ export const skillReader = (cwd: string) => (path: string): string | undefined =
 }
 
 /** `--url x --packs a,b --tenant t` → its parts; a flag with no value is absent, never guessed. */
-export function parseArgs(argv: readonly string[]): { url?: string; packs?: Set<string>; tenant?: string; seed?: string } {
+export function parseArgs(argv: readonly string[]): { url?: string; packs?: Set<string>; tenant?: string; seed?: string; redirects?: string } {
   const value = (flag: string): string | undefined => {
     const i = argv.indexOf(flag)
     const v = i >= 0 ? argv[i + 1] : undefined
     return v && !v.startsWith('--') ? v : undefined
   }
   const packs = value('--packs')
-  return { url: value('--url'), packs: packs ? new Set(packs.split(',').map((p) => p.trim()).filter(Boolean)) : undefined, tenant: value('--tenant'), seed: value('--seed') }
+  return { url: value('--url'), packs: packs ? new Set(packs.split(',').map((p) => p.trim()).filter(Boolean)) : undefined, tenant: value('--tenant'), seed: value('--seed'), redirects: value('--redirects') }
 }
 
 /** Load rows that were generated earlier — a seed file needs no checkout and no installed skill. */
@@ -92,9 +92,9 @@ export async function loadCorpus(
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const { url, packs, tenant, seed } = parseArgs(process.argv.slice(2))
-  if (!url || (!packs && !seed)) {
-    console.error('usage: tsx src/seed/content/load/index.ts --url <origin> (--packs <a,b> | --seed <file>) [--tenant <id>]')
+  const { url, packs, tenant, seed, redirects } = parseArgs(process.argv.slice(2))
+  if (!url || (!packs && !seed && !redirects)) {
+    console.error('usage: tsx src/seed/content/load/index.ts --url <origin> (--packs <a,b> | --seed <file>) [--redirects <file>] [--tenant <id>]')
     process.exit(2)
   }
   const authorization = process.env.ERPAX_AUTHORIZATION
@@ -102,9 +102,15 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   const { UUID_MATRIX_NODES } = await import('@/uuid/matrix')
   const config = await (await import('@/payload.config')).default
   const sdk = new PayloadSDK({ baseURL: `${url.replace(/\/$/, '')}/api`, baseInit: authorization ? { headers: { Authorization: authorization } } : {} })
-  const result = seed
+  const result = !seed && !packs
+    ? { created: 0, updated: 0, unchanged: 0, unresolved: [], rows: 0 }
+    : seed
     ? await loadSeed(sdk as unknown as Rest, config, JSON.parse(readFileSync(seed, 'utf8')) as PageRow[], { tenant })
     : await loadCorpus(sdk as unknown as Rest, config, UUID_MATRIX_NODES, skillReader(process.cwd()), { packs, tenant })
   console.log(JSON.stringify({ ...result, unresolved: result.unresolved.length }))
+  if (redirects) {
+    const rows = JSON.parse(readFileSync(redirects, 'utf8')) as RedirectRow[]
+    console.log(JSON.stringify({ redirects: await loadRedirects(overSdk(sdk as unknown as Rest, config), rows, { tenant }) }))
+  }
   process.exit(0)
 }
