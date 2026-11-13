@@ -1,22 +1,16 @@
 'use client'
 
-import { Badge } from '@/ui'
+import { Pill } from '@payloadcms/ui'
 import type { DefaultCellComponentProps } from 'payload'
 import React from 'react'
 
-import '../erpax-computed.scss'
-
-const baseClass = 'erpax-cell erpax-cell--seal'
-
+/** Sealed or gap — the admin's own success and warning pills. */
 const SealBadgeCell: React.FC<DefaultCellComponentProps> = ({ customCellProps }) => {
   const sealed = customCellProps?.sealed === true
   return (
-    <Badge
-      className={`${baseClass} erpax-computed--${sealed ? 'seal-ok' : 'seal-gap'}`}
-      variant={sealed ? 'secondary' : 'outline'}
-    >
+    <Pill pillStyle={sealed ? 'success' : 'warning'} size="small">
       {sealed ? 'sealed' : 'gap'}
-    </Badge>
+    </Pill>
   )
 }
 

@@ -1,8 +1,8 @@
 'use client'
 
+import { Banner, Pill } from '@payloadcms/ui'
 import type { UIFieldClientComponent } from 'payload'
 import React from 'react'
-import { Badge, Card, CardContent } from '@/ui'
 
 import '../erpax-computed.scss'
 
@@ -13,20 +13,13 @@ const ErpaxMetaField: UIFieldClientComponent = ({ field }) => {
   const sealed = custom.sealed === true
 
   return (
-    <Card className="erpax-computed--meta">
-      <CardContent className="space-y-2 pt-4 text-sm">
-        <div>
-          <strong>account</strong> {accountCode}
-        </div>
-        <div>
-          <strong>horo</strong> {typeof horo === 'number' ? horo : '—'}
-        </div>
-        <div className="flex items-center gap-2">
-          <strong>seal</strong>
-          <Badge variant={sealed ? 'secondary' : 'outline'}>{sealed ? 'sealed' : 'gap'}</Badge>
-        </div>
-      </CardContent>
-    </Card>
+    <Banner>
+      <strong>account</strong> <code>{accountCode}</code> · <strong>horo</strong> {typeof horo === 'number' ? horo : '—'} ·{' '}
+      <strong>seal</strong>{' '}
+      <Pill pillStyle={sealed ? 'success' : 'warning'} size="small">
+        {sealed ? 'sealed' : 'gap'}
+      </Pill>
+    </Banner>
   )
 }
 

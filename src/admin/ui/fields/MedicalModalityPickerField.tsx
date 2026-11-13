@@ -1,8 +1,7 @@
 'use client'
 
 import { MODALITIES, deviceSpec, type MedicalDeviceModality } from '@/medical/device'
-import { Card, CardContent } from '@/ui'
-import { SelectInput, useField, FieldLabel, FieldDescription } from '@payloadcms/ui'
+import { Banner, FieldDescription, FieldLabel, SelectInput, useField } from '@payloadcms/ui'
 import type { SelectFieldClientComponent } from 'payload'
 import React, { useMemo } from 'react'
 
@@ -45,11 +44,7 @@ const MedicalModalityPickerField: SelectFieldClientComponent = ({ field, path })
         readOnly={field.admin?.readOnly}
       />
       {spec ? (
-        <Card className="mt-2">
-          <CardContent className="pt-4 text-xs">
-            LOINC outputs: {spec.outputs.map((o) => o.code).join(', ')}
-          </CardContent>
-        </Card>
+        <Banner>LOINC outputs: {spec.outputs.map((o) => o.code).join(', ')}</Banner>
       ) : null}
     </div>
   )

@@ -1,8 +1,7 @@
 'use client'
 
 import { bidirectionalCrossOf } from '@/uuid/matrix'
-import { Card, CardContent, CardHeader, CardTitle } from '@/ui'
-import { RelationshipField } from '@payloadcms/ui'
+import { Collapsible, RelationshipField } from '@payloadcms/ui'
 import type { RelationshipFieldClientComponent } from 'payload'
 import React, { useMemo } from 'react'
 
@@ -23,22 +22,17 @@ const MatrixBondField: RelationshipFieldClientComponent = ({ field, path }) => {
     <div className={baseClass}>
       <RelationshipField field={field} path={path} />
       {cross ? (
-        <Card className="mt-2">
-          <CardHeader className="py-3">
-            <CardTitle className="text-sm">matrix bonds</CardTitle>
-          </CardHeader>
-          <CardContent className="text-xs">
-            <ul className="list-disc space-y-1 pl-4">
-              <li>parent: {cross.parent?.path ?? '∅'}</li>
-              <li>children: {cross.children.map((c) => c.path).join(', ') || '∅'}</li>
-              <li>
-                prev → next: {cross.prev?.path ?? '∅'} → {cross.next?.path ?? '∅'}
-              </li>
-              <li>neighbors: {cross.neighbors.map((n) => n.path).join(', ') || '∅'}</li>
-              <li>backlinks: {cross.backlinks.map((b) => b.path).join(', ') || '∅'}</li>
-            </ul>
-          </CardContent>
-        </Card>
+        <Collapsible header="matrix bonds" initCollapsed>
+          <ul>
+            <li>parent: {cross.parent?.path ?? '∅'}</li>
+            <li>children: {cross.children.map((c) => c.path).join(', ') || '∅'}</li>
+            <li>
+              prev → next: {cross.prev?.path ?? '∅'} → {cross.next?.path ?? '∅'}
+            </li>
+            <li>neighbors: {cross.neighbors.map((n) => n.path).join(', ') || '∅'}</li>
+            <li>backlinks: {cross.backlinks.map((b) => b.path).join(', ') || '∅'}</li>
+          </ul>
+        </Collapsible>
       ) : null}
     </div>
   )

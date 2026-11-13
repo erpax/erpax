@@ -1,17 +1,16 @@
 'use client'
 
-import { Badge } from '@/ui'
+import { Pill } from '@payloadcms/ui'
 import type { DefaultCellComponentProps } from 'payload'
 import React from 'react'
 
-const baseClass = 'erpax-cell erpax-cell--account'
-
+/** The atom's path as its account code. */
 const PathAccountCodeCell: React.FC<DefaultCellComponentProps> = ({ customCellProps }) => {
   const code = typeof customCellProps?.accountCode === 'string' ? customCellProps.accountCode : '—'
   return (
-    <Badge variant="secondary" className={`${baseClass} font-mono`} title={code}>
-      {code}
-    </Badge>
+    <Pill pillStyle="light-gray" size="small">
+      <code>{code}</code>
+    </Pill>
   )
 }
 

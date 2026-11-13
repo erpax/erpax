@@ -1,3 +1,5 @@
+import type { Column } from 'payload'
+import type { ReactNode } from 'react'
 import { exactRound } from '@/algebra'
 /**
  * admin/ui/rollup — corpus entropy/seal metrics for the admin dashboard.
@@ -169,4 +171,18 @@ export function loadCorpusEntropyRollup(
     metrics,
   }
   return metrics
+}
+
+/**
+ * Columns for the admin panel's own `Table`: one per heading, each cell taken from the row by the
+ * heading's key. `Table` wants every column to carry its rendered cells in data order.
+ */
+export function tableColumns(headings: Readonly<Record<string, string>>, rows: ReadonlyArray<Readonly<Record<string, ReactNode>>>): Column[] {
+  return Object.entries(headings).map(([accessor, Heading]) => ({
+    accessor,
+    active: true,
+    field: { name: accessor, type: 'text' } as Column['field'],
+    Heading,
+    renderedCells: rows.map((row) => row[accessor] ?? '—'),
+  }))
 }

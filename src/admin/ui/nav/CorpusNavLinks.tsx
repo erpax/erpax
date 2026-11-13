@@ -2,7 +2,6 @@
 
 import { navigationGroupsFromPaths } from '@/navigation'
 import { COLLECTION_DIAMOND_KEY } from '@/factory/collection'
-import { Separator } from '@/ui'
 import { useConfig, Link } from '@payloadcms/ui'
 import React, { useMemo } from 'react'
 
@@ -37,7 +36,7 @@ const CorpusNavLinks: React.FC = () => {
       <p className="text-muted-foreground mb-2 text-[11px] tracking-wider uppercase">
         Corpus map
       </p>
-      <Separator className="mb-2" />
+      <hr />
       <ul className="m-0 list-none p-0">
         {tree.map((group) => {
           const href = group.link

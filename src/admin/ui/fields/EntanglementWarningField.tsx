@@ -2,8 +2,7 @@
 
 import { fieldEntanglementOf as partyEntanglementOf } from '@/entanglement/field'
 import { fieldEntanglementOf as registryEntanglementOf } from '@/quantum/entanglement'
-import { Alert, AlertDescription, AlertTitle } from '@/ui'
-import { useFormFields, RelationshipField, useDocumentInfo } from '@payloadcms/ui'
+import { Banner, RelationshipField, useDocumentInfo, useFormFields } from '@payloadcms/ui'
 import type { RelationshipFieldClientComponent } from 'payload'
 import React, { useMemo } from 'react'
 
@@ -34,21 +33,16 @@ const EntanglementWarningField: RelationshipFieldClientComponent = ({ field, pat
     <div className={baseClass}>
       <RelationshipField field={field} path={path} />
       {registry ? (
-        <Alert className="mt-1.5 border-amber-200 bg-amber-50">
-          <AlertTitle className="text-amber-700">superposition</AlertTitle>
-          <AlertDescription className="text-amber-800">{registry.superposition}</AlertDescription>
-          <AlertTitle className="mt-1.5 text-foreground">collapse</AlertTitle>
-          <AlertDescription>{registry.collapse.join(' · ')}</AlertDescription>
-        </Alert>
+        <Banner type="info">
+          <strong>superposition</strong> — {registry.superposition}
+          <br />
+          <strong>collapse</strong> — {registry.collapse.join(' · ')}
+        </Banner>
       ) : null}
       {partyWarnings.map((w) => (
-        <Alert
-          key={w.field}
-          variant={w.severity === 'error' ? 'destructive' : 'default'}
-          className="mt-1.5"
-        >
-          <AlertDescription>{w.message}</AlertDescription>
-        </Alert>
+        <Banner key={w.field} type={w.severity === 'error' ? 'error' : 'default'}>
+          {w.message}
+        </Banner>
       ))}
     </div>
   )
