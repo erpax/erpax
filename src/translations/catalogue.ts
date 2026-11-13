@@ -546,7 +546,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the Payload API's access must derive from and be gated by its legal surface — the strictest tier a collection's standards demand, and the endpoints that fall below it.",
-        "uuid": "07e28d7b-27e3-866d-b13e-9367226a44fe",
+        "uuid": "d9549dfa-8c81-81d6-b14e-4e78c6ef1092",
         "words": [
           "use",
           "when",
@@ -6127,7 +6127,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when stating what erpax's post-quantum posture actually proves — the anchor surfaces typed by discern into verdicts (what the corpus computes: the manifest gate, the channel and root rules, the pinning, the threat calibration) and compasses (the primitives, because nothing here signs: no PQC implementation is installed). Standards are pinned to their revision because FIPS 203 and 204 carry errata, and a bare citation names a document that differs from the one in force. FIPS 206 and HQC are the honest open rows. Integrity reads 5 of 9 — lower and true.",
-        "uuid": "53fd7ea3-9018-8083-93df-4d4cd9d68146",
+        "uuid": "ddf11cb5-086c-8214-adfd-6e2a3a67672d",
         "words": [
           "use",
           "when",
@@ -10917,7 +10917,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a business outcome must ship its own natural-language explanation citing standards, sources and chain steps — autoExplain composes the narrative deterministically with no LLM in the path (preserving replay), isExplanationComplete verifies it is non-trivial.",
-        "uuid": "10c9157f-123e-80f5-a5c1-daa0ff704172",
+        "uuid": "a57a62dd-294c-8911-ad3e-394b4bf592ea",
         "words": [
           "use",
           "when",
@@ -14972,7 +14972,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when you need the canonical business-chain barrel — the 15+ registered (collection, action, emitted-event) workflows that map to published process standards (SOX P2P, IFRS-15 over-time, IFRS-16 lease cycle), each encoded ONCE with its Socratic check, plus the runner, context, and producer auto-wiring.",
-        "uuid": "4d5e68ba-2b7a-8817-8a08-d68b3cab117e",
+        "uuid": "6b02f13f-703a-850a-9343-ae2de43516a1",
         "words": [
           "use",
           "when",
@@ -15706,7 +15706,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling a legal matter as a docket — case lifecycle, parties under roles, append-only evidence, judgments, offences and dispute resolution; the harmony-checked Payload realization of the justice docket.",
-        "uuid": "d39fbc86-e83d-863a-a96c-948416ec2152",
+        "uuid": "c76c9d8f-1f20-8c0a-b0ed-9c2e0bfb05ed",
         "words": [
           "use",
           "when",
@@ -16920,7 +16920,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about genome — Genome bundle — the platform's structural surface (spec + chains + agents + roles + MCP tools + standards) collected as one verifiable artifact.",
-        "uuid": "d88f6659-e230-8c9e-8dc3-ae2f602a3e8a",
+        "uuid": "36d3e904-2559-8732-8d93-56625f59fa05",
         "words": [
           "use",
           "when",
@@ -18160,7 +18160,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \\\"collapse all to Payload\\\" law; one name across every dimension, drawn from the standards.",
-        "uuid": "acd9b80b-b414-8a94-9859-e7c7a7af6957",
+        "uuid": "0caeb52b-f9a9-8b6c-ae5e-9df2eedc21ce",
         "words": [
           "use",
           "when",
@@ -18653,7 +18653,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing or porting the erpax commerce/trade domain to Payload — parties under many roles (seller/buyer/agent/supplier/consignee/carrier), the cart→quote→order→invoice→note document chain, payments/allocations/refunds, subscriptions & metered usage, inventory/stock movement, packing & shipment, dunning/credit terms. The transactional-flow `@erpax/commerce` twin (sequence 4·8).",
-        "uuid": "46e5bcdd-481d-87b4-a62b-2bb99c8a6a32",
+        "uuid": "f10576ac-ca7f-81a8-815e-119540533c90",
         "words": [
           "use",
           "when",
@@ -24759,7 +24759,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about coverage — Use to see the development plan as a computed matrix — participants (14 roles) × standards (their concerns), each cell a theorem, each uncovered cell a wave. A cell is covered iff a control cites its standard WITH a test beside it. 100% = every standard, faced by every participant it concerns, is proven. Run: tsx src/coverage/index.ts",
-        "uuid": "a413e546-0808-8e1b-ace5-fafc28671628",
+        "uuid": "0dddd950-1ccf-838f-957a-2cb2aa70f01d",
         "words": [
           "use",
           "when",
@@ -29017,7 +29017,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when one concept is split across many prefixed collections/fields that should coexist at one coordinate — bank-/fx-/trade-/intercompany-transactions → transactions; customers/vendors/addresses → parties. A prefix is a dimension not yet collapsed (kind/context/role/perspective/unit/time); remove it and the variants merge into the shared coordinate, the prefix becoming a field/tag/type. erpax is multi-dimensional: all coexist at one coordinate, in unity.",
-        "uuid": "57db9eda-b673-85e5-aaef-101b18d6e5d1",
+        "uuid": "3623e785-b1ec-82ea-b8b2-266f8c7eebea",
         "words": [
           "use",
           "when",
@@ -30810,7 +30810,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "variants",
-        "uuid": "7af78fe4-ec3e-80fc-98ba-a1a0d97cfe11",
+        "uuid": "901a7f4a-ed4a-8b85-a557-03141f2ec14f",
         "words": [
           "variants"
         ],
@@ -30821,7 +30821,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a product's variants should be computed instead of typed — the variants are the cartesian product of the options of the product's variant types, so a hook creates the missing combinations as drafts when the product is saved, and the author confirms price and stock instead of enumerating them.",
-        "uuid": "0e5845a5-a16f-8537-b886-c746b9d38ef4",
+        "uuid": "e7ed532c-f16f-84e3-8826-724832899206",
         "words": [
           "use",
           "when",
@@ -32976,7 +32976,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \\\"all accounted in all directions ⇒ the wiring is complete\\\".",
-        "uuid": "b4f9ad7b-5715-82cd-8b8e-f6ec1bf0486b",
+        "uuid": "08363685-6577-833b-bdfc-35bc65446e15",
         "words": [
           "use",
           "when",
@@ -33061,7 +33061,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about equilibrium as detailed balance — every forward transition exactly matched by its reverse (rate(i→j)·pᵢ = rate(j→i)·pⱼ), no net flow, entropy maximal and stationary. It is the thermodynamic twin of erpax's symmetric-merge binding: the collider reciprocates every forward link a→b with b→a, so the matrix sits at detailed balance (reciprocity = 1, directed-link entropy = 0). The balance the engine relaxes toward, where the temperature Boltzmann distribution makes every rate-pair cancel.",
-        "uuid": "30276461-9c38-8f78-880b-c5b25975857e",
+        "uuid": "930fb031-4ddc-8919-b999-df51e8fc225d",
         "words": [
           "use",
           "when",
@@ -34166,7 +34166,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "standards",
-        "uuid": "d59a5010-343c-8c5a-ad8f-dba514e85b35",
+        "uuid": "c29b78cf-927c-874c-9670-436df6ecc173",
         "words": [
           "standards"
         ],
@@ -34177,7 +34177,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about standards — Use for the standards wire-format boundary — the outbound service that emits documents and the inbound parser that ingests them, the give and take of the same formats.",
-        "uuid": "45e01fad-30fa-863f-92bd-89787f896ebf",
+        "uuid": "8b729bbb-4af2-8b9a-96dd-6109d6022d13",
         "words": [
           "use",
           "when",
@@ -34237,7 +34237,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating Payload collections from declarative metadata — createAccountingCollection injects audit fields, tamper-proof uuid, horo state ring, standards citations, and chain-event hooks so collection files carry only domain intent.",
-        "uuid": "83d06366-c112-8dc8-bd5c-552be9b156b0",
+        "uuid": "6c687cb4-d8ea-839c-a8af-7dec8884f6eb",
         "words": [
           "use",
           "when",
@@ -51114,7 +51114,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "variants",
-        "uuid": "7af78fe4-ec3e-80fc-98ba-a1a0d97cfe11",
+        "uuid": "901a7f4a-ed4a-8b85-a557-03141f2ec14f",
         "words": [
           "variants"
         ],
@@ -51244,7 +51244,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain.",
-        "uuid": "68d485b7-6e62-8a3d-8a79-6f1f42a3af26",
+        "uuid": "92988de1-36d4-8445-b701-97e217ed826d",
         "words": [
           "use",
           "when",
@@ -51887,7 +51887,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when uploading or retrieving files — images, video, documents — stored in Cloudflare R2 with multi-size image variants (thumbnail/square/small/medium/large/xlarge/og), alt text, captions, and GDPR-safe filenames. The tenant-scoped media upload collection.",
-        "uuid": "56b81967-b64b-876b-bd45-a414ba1f1bc3",
+        "uuid": "9cc9847e-31b7-897e-ba86-c6a606ae31ad",
         "words": [
           "use",
           "when",
@@ -55285,7 +55285,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when querying the whole ERP as one graph — atoms ⊕ parsed import edges ⊕ standards citations, wave-schedulable; the clause→code trace as a query.",
-        "uuid": "0e69ef8c-3d9a-8e31-a19d-b8152085d59e",
+        "uuid": "74027899-511e-8bb5-bf43-4963ec897a60",
         "words": [
           "use",
           "when",
@@ -56410,7 +56410,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a Clay statement must be tested on public data rather than argued — every Millennium problem crossed with the perspectives the corpus reads it from (lens atoms, referrers and their standards) and, where a public dataset exists (LMFDB elliptic curves, Odlyzko's zeta zeros, OEIS primes), checked as a bounded witness; where none exists, refused with the reason.",
-        "uuid": "2a006f6f-f29d-870a-8764-c36fe6181843",
+        "uuid": "7984e616-37ec-8f20-a2b7-a1654cab13c9",
         "words": [
           "use",
           "when",
@@ -58942,7 +58942,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when erpax depends on an answer it does not own — VIES, ECB rates, the Peppol directory, a standards clause, a harvested page. Fetch once, fold the answer to a content-uuid, and verify the ADDRESS on every later pass instead of re-reading the world. Only a moved address is news; an unreachable boundary keeps its last receipt and is never a failure.",
-        "uuid": "68eb3249-784a-8945-a0b1-e9a6565f5950",
+        "uuid": "2f85044b-faac-8f65-bbc5-a8e1d3df6503",
         "words": [
           "use",
           "when",
@@ -60164,7 +60164,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "parties",
-        "uuid": "0351e27d-ecf0-8111-9145-385d481429cf",
+        "uuid": "11412665-ce61-8863-acd1-7e739665875e",
         "words": [
           "parties"
         ],
@@ -60175,7 +60175,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when working with customers or vendors — they are one collection, parties, with a roles field; the Customers and Vendors lists are saved query presets over it, a party can hold both roles, and a role-specific field shows only for the role it belongs to.",
-        "uuid": "ab07d34b-d766-8467-aaed-09d379cce1fb",
+        "uuid": "5cc1a519-5861-8394-896e-04ec3e7c37f0",
         "words": [
           "use",
           "when",
@@ -63696,7 +63696,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "preset",
-        "uuid": "4357dcdc-161d-8ce4-91c1-496dad59f4d8",
+        "uuid": "535d818c-0c14-8b33-9881-57b800602924",
         "words": [
           "preset"
         ],
@@ -63707,7 +63707,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a merged collection still needs the separate lists its parts had — a query preset is a seed row (title, filter, columns) over one collection, built by preset() and loaded idempotently by loadPresets(), so a list is data rather than a table.",
-        "uuid": "83e0d958-7a08-8460-a08d-501f5ab1334c",
+        "uuid": "c989bb8e-7387-8ac1-88c1-d6c66c944fb7",
         "words": [
           "use",
           "when",
@@ -65019,7 +65019,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when automating commit and push — the local agent that performs the git action, but ONLY through the computed decision (decide), trained on quantum security (tamper · quantum) and the standards, fail-closed, with a tamper-evident uuid-chained receipt. It pushes because the gates said yes, never because it was told to.",
-        "uuid": "8ca82f8d-fea7-898d-8e91-0a5527a1505c",
+        "uuid": "94e3ad93-d296-893d-9d98-2a3c99ce2b2b",
         "words": [
           "use",
           "when",
@@ -73882,7 +73882,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a document (balance sheet, SAF-T, VAT return, audit file) must be produced — a report is a standards×format×data superposition collapsed on request, computed not hand-templated, and legislation floors it stricter than any standard.",
-        "uuid": "2600e87b-695e-802f-8504-59087c7a0f73",
+        "uuid": "90913ad9-ab07-8a60-89ae-cdb7c6dc4ad9",
         "words": [
           "use",
           "when",
@@ -77061,7 +77061,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about registry — binds each role to the standards it answers to and the chain steps it may execute.",
-        "uuid": "31503151-45ca-85fe-80bc-eeca253610bb",
+        "uuid": "97e7e92f-4cf5-81c9-b94e-8bd7b4323c4e",
         "words": [
           "use",
           "when",
@@ -77555,7 +77555,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the gated commit/push must be achieved BY THE ROSETTA — every folder is an agent (a form·code·proof trinity that declares its @standard banners and either proves them or not), and the security/standards lanes for publish are DERIVED from that incidence, never hand-typed. The moving rosetta: poles come from what the folders declare, so a new atom joins a lane with no edit.",
-        "uuid": "dddf2432-2927-8bda-903d-85ae35e6c634",
+        "uuid": "132937f2-2129-8982-811c-7ea2519b8f33",
         "words": [
           "use",
           "when",
@@ -80146,7 +80146,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the statute→code trace must resolve — the gate that a `src/…` path cited in prose or comments actually exists. The corpus fails closed on dead atom links but left dead FILE-PATH pointers ungated, and they rotted: the Наредба Н-18 law pointed at a standards path long after the matter moved. A citation that leads nowhere is unreviewable (ISO-19011 §6.4), so a legally usable ERP cannot have one. Zero tolerance on the statutory surface; a down-only ratchet elsewhere. Run: tsx src/rules/reference/index.ts",
-        "uuid": "d8081871-f0ee-811c-80dc-26c3da3cb9e2",
+        "uuid": "f11ade9d-ef9c-8298-8bc2-2590ce77c812",
         "words": [
           "use",
           "when",
@@ -85893,7 +85893,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when loading documents as data instead of building them into the site — markdown becomes nested pages (documents, with a parent and breadcrumbs) and posts (publications, which reference the pages and product variants they are based on), written through the Local API with the editor of the field they land in, idempotently by content address.",
-        "uuid": "f9dbdf2d-9fab-88bc-9ce7-b054c4eb6957",
+        "uuid": "9ef25f0c-285b-8a13-993c-63a21fbecdda",
         "words": [
           "use",
           "when",
@@ -89390,7 +89390,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about shared — One accountable object, two coexisting facets. Every standards rule the codebase declares about money / dates / addresses / common columns lives in one of these shared atoms; highe",
-        "uuid": "a8cb20a9-c96d-893b-9b96-8b211d8c642b",
+        "uuid": "f347842b-aa80-8c47-a04e-d47c8829fd8b",
         "words": [
           "use",
           "when",
@@ -91812,7 +91812,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when SKILL.md frontmatter must self-upgrade from live corpus state — connectFrontmatter folds diamond, matrix, typography, standards, bonds, and per-stage signatures into one connected graph.",
-        "uuid": "7ab918aa-bbb4-8793-877a-2aa0458a33e0",
+        "uuid": "ecdb1d14-5e21-84c6-8e42-e614dc6f6138",
         "words": [
           "use",
           "when",
@@ -95397,7 +95397,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when implementing or auditing a compliance standard in erpax — IFRS/US-GAAP/SAF-T/ISO/SOX/EN-16931/NIST. Standards are implemented via the skills (each skill is the answer-path holding a standard's form); @standard banners must be true, not decoration.",
-        "uuid": "0023519e-c164-8296-b420-b2f24a6af72a",
+        "uuid": "f4e84fff-e70b-8c2b-a6bf-34b205aee83d",
         "words": [
           "use",
           "when",
@@ -95622,7 +95622,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "standards",
-        "uuid": "d59a5010-343c-8c5a-ad8f-dba514e85b35",
+        "uuid": "c29b78cf-927c-874c-9670-436df6ecc173",
         "words": [
           "standards"
         ],
@@ -95633,7 +95633,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family.",
-        "uuid": "d6a7d6f5-03d6-8dcc-8f90-9fd356d635dc",
+        "uuid": "19deedff-c297-8c6c-b262-0619df4e945b",
         "words": [
           "use",
           "when",
@@ -95704,7 +95704,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when standards must chat and improve via architectural reuse — addressIndex O(1), crack non-reuse, free-chat@tokens=0, emit waves. Uses quantum/ftl; path is standards/improve — not a domain ftl path.",
-        "uuid": "86b903b2-ea1a-8e66-abbb-28a9866f0f98",
+        "uuid": "c1874da2-b8de-83ed-a049-a68be9984f3c",
         "words": [
           "use",
           "when",
@@ -95763,7 +95763,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the standards catalogue must be read rather than changed — coverage by schema, UI improvement waves, and O(1) address lookup, each memoized on the catalogue's own content-address.",
-        "uuid": "2b47d71e-d7b1-8612-acba-5f5e1e2e3f93",
+        "uuid": "41db6586-85df-89f9-b984-4bd6af924e0b",
         "words": [
           "use",
           "when",
@@ -102028,7 +102028,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "standards",
-        "uuid": "d59a5010-343c-8c5a-ad8f-dba514e85b35",
+        "uuid": "c29b78cf-927c-874c-9670-436df6ecc173",
         "words": [
           "standards"
         ],
@@ -102907,7 +102907,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "temperature",
-        "uuid": "9508e464-361b-88d9-af28-488d1ac6e6bf",
+        "uuid": "35724c8b-95fc-8a65-bde9-8048e6480b1c",
         "words": [
           "temperature"
         ],
@@ -102918,7 +102918,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about temperature as the exchange rate between energy and order (1/T = ∂S/∂E). It sets level populations via the Boltzmann factor e^(−E/kT), normalised by the partition function Z = Σ e^(−Eₙ/kT). Cold (T→0) falls to the ground state; hot (T→∞) makes every level equally likely (maximum entropy). The equilibrium distribution pᵢ = e^(−Eᵢ/kT)/Z is the max-entropy distribution at fixed average energy — the balance the ledger settles to.",
-        "uuid": "6a4e6712-f031-8dff-8389-8b701e0d32ff",
+        "uuid": "28790f45-291e-85ee-b6a9-3abfbc012a29",
         "words": [
           "use",
           "when",
@@ -108004,7 +108004,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about transaction — A **transaction** is the atom of business: a balance|balanced flow of value between party|parties — two sides (give/take, debit/credit, seller/buyer) that sum to zero. It is the pr",
-        "uuid": "cc737074-cd4c-8790-a059-7ee10a3c8619",
+        "uuid": "3de44dc2-d545-8799-b6c2-19641ec152d7",
         "words": [
           "use",
           "when",
@@ -110531,7 +110531,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "parties",
-        "uuid": "0351e27d-ecf0-8111-9145-385d481429cf",
+        "uuid": "11412665-ce61-8863-acd1-7e739665875e",
         "words": [
           "parties"
         ],
@@ -110542,7 +110542,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about parties — Both are a dated, line-itemised financial document with a status lifecycle, a balance and an aging profile. is that shape, the lifecycle it may walk, and the set both age into.",
-        "uuid": "8517e031-a4dc-847c-818e-67108f9a74d7",
+        "uuid": "3ae41504-8bb4-8d44-963d-7f327a7f06ba",
         "words": [
           "use",
           "when",
@@ -114562,7 +114562,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling product options, SKU expansion, or feature flags — sizes, colors, configurations, market-specific variants without a fixed grid. The unbounded product dimension.",
-        "uuid": "68e3a119-e473-8e54-bf72-2557f46ed87f",
+        "uuid": "d0ca77aa-9aac-8328-a5c5-5c8e85265ff3",
         "words": [
           "use",
           "when",
@@ -114613,7 +114613,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about varies — Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \\\"col",
-        "uuid": "0efae6d1-6fdb-8027-8637-ccfa960ca504",
+        "uuid": "ebca8565-8a67-85e9-a455-cd0dc65c07e1",
         "words": [
           "use",
           "when",
@@ -116311,7 +116311,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking that every word in the corpus comes from the shared standards-grounded vocabulary — the dictionary, schema.org, standard codes, and established domain terms. Whatever the language, words are written only from this one scheme; an ungrounded word is entropy, and the audit computes its zero-entropy solution.",
-        "uuid": "f66a601e-4f62-85db-bc51-5d7a87025841",
+        "uuid": "5ee3a118-990f-8f50-8488-0414f79f3110",
         "words": [
           "use",
           "when",
@@ -128953,7 +128953,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how erpax grows — it BREATHES: inhale ideas from everywhere (peers like ZeroPoint, frameworks like Payload, the standards, the upstream Rails, user content), exhale DRY clean code (gate-green, content-addressed, collapsed to the dense core). Inhale is merge/derive/generate; exhale is collapse + the gate + minimal cost. The rhythm IS the society loop: never inhale without exhaling clean, never exhale without inhaling.",
-        "uuid": "a46b4b21-3039-8e51-8ecf-d92a6a62808f",
+        "uuid": "84edda34-42a8-8eb4-b8f1-0962b8a686fe",
         "words": [
           "use",
           "when",
@@ -130395,7 +130395,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about calculate — is the computation atom: ceccec/erpax's ~25 are **form-objects** (ActiveModel, ) — validate inputs → compute a standards-cited formula → format; **no persistence, no collection**.",
-        "uuid": "d581b9a9-5244-8399-b4fa-cfd316a15514",
+        "uuid": "a2d347fa-7836-8d87-a660-aa8dd2b97f7d",
         "words": [
           "use",
           "when",
@@ -131884,7 +131884,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one case — the singular model of the cases collection (the plural store); one matter under adjudication or handling, with its parties and lifecycle.",
-        "uuid": "291978a1-2a4d-8399-8f1f-9074081ab8f9",
+        "uuid": "06095b74-dc93-83e7-96b2-0cf7e993abfc",
         "words": [
           "use",
           "when",
@@ -140245,7 +140245,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one contract — the singular model of the contracts collection (the plural store); a legally binding agreement between parties.",
-        "uuid": "bcb3383f-b005-839c-939e-52bef258cb00",
+        "uuid": "05adafc7-e5b9-87e7-92e1-1aae8d64a6f2",
         "words": [
           "use",
           "when",
@@ -148646,7 +148646,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when naming a disagreement between parties that a contract or forum must settle — the parent term, including the mechanism that settles it.",
-        "uuid": "e247f8fb-945e-87f9-bb86-e0c545f16b76",
+        "uuid": "6166ec29-487b-8dd2-9d4c-a0de1fe51bcc",
         "words": [
           "use",
           "when",
@@ -158647,7 +158647,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about movement in erpax — value between parties (document chain), data in→out (material cycle), event streams, production through routing. The universal root of movement.",
-        "uuid": "2be8528b-f239-859e-8540-021df5b63be1",
+        "uuid": "2cd41fbd-c3b4-8cca-9e42-4e9df721c74e",
         "words": [
           "use",
           "when",
@@ -163109,7 +163109,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution.",
-        "uuid": "14a8d7a4-abf6-8aff-b956-4738822d3467",
+        "uuid": "f8e668f3-959f-85fe-a103-482ce509b097",
         "words": [
           "use",
           "when",
@@ -163286,7 +163286,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when produce is sorted into quality classes — grading against uniform standards (USDA US No. 1, Fancy), with culling (discarding unmarketable units) and the packout (the marketable fraction packed from a harvested lot). Grade sets price and the gross-vs-marketable yield gap; °Brix, size, color, and defects are the criteria.",
-        "uuid": "29919bfe-e93f-8361-886c-1590d39c1e10",
+        "uuid": "b63d8e87-90f6-87a9-904d-bdabb10a7bc4",
         "words": [
           "use",
           "when",
@@ -165206,7 +165206,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when classifying a crop by cold tolerance — hardiness ranks crops hardy / half-hardy / tender / very-tender by the frost they survive, and the USDA hardiness zone places a site by its average annual minimum temperature. The biological cold-tolerance trait (the crop's) paired with the zone (the place's); together they decide what can overwinter or be planted when.",
-        "uuid": "ff67f398-33d1-8470-a17b-8016a16ce69d",
+        "uuid": "c7a02529-923a-8431-b642-f35a5316bd2d",
         "words": [
           "use",
           "when",
@@ -179327,7 +179327,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing or porting the erpax manufacturing domain to Payload — production orders, routings/operations, work centers, BOMs, work shifts/labor, or modelling product variants without a fixed option grid. The all-industries `@erpax/manufacturing` pattern.",
-        "uuid": "e8ecb0ff-758a-8003-a699-8846f9226aff",
+        "uuid": "57a3c723-a6cb-808a-81f4-d26ac27fbdf7",
         "words": [
           "use",
           "when",
@@ -179390,7 +179390,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about seed — Operations, positions and standards are each their own atom; this is the address that offers all three.",
-        "uuid": "cf9e981e-2579-837f-a877-e1794c856196",
+        "uuid": "c386839e-ecc4-8247-8d97-8629e19ae286",
         "words": [
           "use",
           "when",
@@ -179439,7 +179439,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about operations — operations — the garment/textile manufacturing operation vocabulary, SEEDED from etrima's 20-year production record (host-leon1103, 2015–2019) and harmonised with the standards.",
-        "uuid": "109f3a88-6ec7-8ed9-9df1-bc034c950d95",
+        "uuid": "6be03f27-1a92-8d53-806a-af38be804a79",
         "words": [
           "use",
           "when",
@@ -179492,7 +179492,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about positions — positions — the harmonic job ladder, SEEDED from etrima's real positions and harmonised with the occupation standards.",
-        "uuid": "30941160-1f32-842f-9654-5a80ec8cb22e",
+        "uuid": "4f1cd7b2-2228-83c0-b513-d87eb2eb0d68",
         "words": [
           "use",
           "when",
@@ -179530,7 +179530,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "standards",
-        "uuid": "d59a5010-343c-8c5a-ad8f-dba514e85b35",
+        "uuid": "c29b78cf-927c-874c-9670-436df6ecc173",
         "words": [
           "standards"
         ],
@@ -179541,7 +179541,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about standards — standards — every standard the manufacturing/HR seeds are harmonised with, each pinned to its in-force version AND its related official API (the live endpoint that validates or resolves it).",
-        "uuid": "8dd5d00b-d5da-8cf4-bbbc-c13a51a2934c",
+        "uuid": "bdfc80f3-00ff-8d05-91b5-6f2b3f909084",
         "words": [
           "use",
           "when",
@@ -184468,7 +184468,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the soil surface is covered to suppress weeds and moderate temperature/moisture — plastic film (warms soil + blocks weeds), woven landscape fabric (reusable, burn-holed for transplants), and organic straw/leaf mulch. The smother alternative to cultivation; a soil-surface cover with weed, water, and heat functions.",
-        "uuid": "ed92bada-88fa-8060-938e-f1f460b801f3",
+        "uuid": "c777404d-5084-8f64-9565-82829d009f49",
         "words": [
           "use",
           "when",
@@ -189822,7 +189822,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when produce carries a certified-organic claim — the labeling status under USDA NOP (7 CFR 205) and EU 2018/848: the National List of allowed/prohibited substances, excluded methods (GMO/irradiation/sewage sludge banned), the 36-month transition, and the organic system plan verified by an accredited certifier. A standards-backed status the product carries through the chain.",
-        "uuid": "2e131202-fccb-8fa9-882f-21509bdc8798",
+        "uuid": "a35e42f6-58f2-86e9-b122-76ab000beae8",
         "words": [
           "use",
           "when",

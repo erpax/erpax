@@ -3,16 +3,14 @@ name: case
 description: "Use when a document's page should show what its law rests on — merges the SKILL's claim, the Lean theorems it cites as their source states them, and the kernel record rendered as LaTeX into one proof section in a fixed order: claim, argument, evidence, assumptions. A document with no formal proof is shown as having none."
 atomPath: "verify/case"
 coordinate: "verify/case · 5/round · 3b172ac7"
-contentUuid: "a07bea45-e0fe-59e3-aeeb-7a3694cc15a5"
+contentUuid: "f1b2097a-44d4-58f7-98b2-ec5d012ca6a1"
 diamondUuid: "2bd9f50f-4268-8e89-bfee-3b74bef8884f"
 uuid: "3b172ac7-faf8-8ea5-88fb-bea518209314"
 horo: 5
 typography:
   partition: verify
   bondDegree: 13
-standards:
-  - "ISO-80000-2:2019 mathematical-signs-and-symbols"
-  - "ISO/IEC/IEEE-15026-2:2022 assurance-case claim argument evidence assumptions"
+standards: []
 bindings: []
 signatures:
   computationUuid: "956a74c5-f7f3-8b31-823b-fceb02b86cd4"

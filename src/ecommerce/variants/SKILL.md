@@ -2,18 +2,18 @@
 name: variants
 description: "Use when a product's variants should be computed instead of typed — the variants are the cartesian product of the options of the product's variant types, so a hook creates the missing combinations as drafts when the product is saved, and the author confirms price and stock instead of enumerating them."
 atomPath: "ecommerce/variants"
-coordinate: "ecommerce/variants · 2/share · 7af78fe4"
-contentUuid: "38fa36ec-0f79-5277-8b91-8d3fd0e65245"
-diamondUuid: "c5a2766b-9d14-842a-abda-e40d444a71ce"
-uuid: "7af78fe4-ec3e-80fc-98ba-a1a0d97cfe11"
-horo: 2
+coordinate: "ecommerce/variants · 1/base · 901a7f4a"
+contentUuid: "264f7bd0-2778-5b58-9a73-cff6c7cd781c"
+diamondUuid: "b344d99e-1259-83e4-bf73-4fe425ea2769"
+uuid: "901a7f4a-ed4a-8b85-a557-03141f2ec14f"
+horo: 1
 typography:
   partition: ecommerce
   bondDegree: 19
 standards: []
 bindings: []
 signatures:
-  computationUuid: "97572176-96bf-8764-bba8-4b8eedc785ff"
+  computationUuid: "fb0e8496-ed42-87ef-ae7a-32f9bf1153b9"
   stages:
     - stage: path
       stageUuid: "fad1781f-b308-8489-95f9-5d24209bc95a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "e1b93f35-d224-84c8-8c38-61df0e3218ed"
     - stage: horo
-      stageUuid: "0a6664e2-e912-81c7-82d2-a47805a5aba3"
+      stageUuid: "7c7291af-6a9b-83c9-8f69-aae805fe5f9b"
     - stage: seal
       stageUuid: "aecbd070-c686-88b8-8be6-b0bcaa867ad6"
     - stage: uuid
-      stageUuid: "d15fdccb-3401-85e1-911f-a1b6d1f8b241"
+      stageUuid: "34936b88-15a4-86c8-af25-b00f59976207"
 version: 2
 ---
 # ecommerce/variants — a variant is the result of a hook

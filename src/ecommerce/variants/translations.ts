@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "variants",
-    "uuid": "7af78fe4-ec3e-80fc-98ba-a1a0d97cfe11",
+    "uuid": "901a7f4a-ed4a-8b85-a557-03141f2ec14f",
     "words": [
       "variants"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a product's variants should be computed instead of typed — the variants are the cartesian product of the options of the product's variant types, so a hook creates the missing combinations as drafts when the product is saved, and the author confirms price and stock instead of enumerating them.",
-    "uuid": "0e5845a5-a16f-8537-b886-c746b9d38ef4",
+    "uuid": "e7ed532c-f16f-84e3-8826-724832899206",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "preset",
-    "uuid": "4357dcdc-161d-8ce4-91c1-496dad59f4d8",
+    "uuid": "535d818c-0c14-8b33-9881-57b800602924",
     "words": [
       "preset"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a merged collection still needs the separate lists its parts had — a query preset is a seed row (title, filter, columns) over one collection, built by preset() and loaded idempotently by loadPresets(), so a list is data rather than a table.",
-    "uuid": "83e0d958-7a08-8460-a08d-501f5ab1334c",
+    "uuid": "c989bb8e-7387-8ac1-88c1-d6c66c944fb7",
     "words": [
       "use",
       "when",

@@ -2,11 +2,11 @@
 name: parties
 description: "Use when working with customers or vendors — they are one collection, parties, with a roles field; the Customers and Vendors lists are saved query presets over it, a party can hold both roles, and a role-specific field shows only for the role it belongs to."
 atomPath: parties
-coordinate: "parties · 4/weave · 0351e27d"
-contentUuid: "30852b32-b001-5b33-a93c-ce646ed3d23e"
-diamondUuid: "cf28480f-2c36-87d3-878c-5b821a08581c"
-uuid: "0351e27d-ecf0-8111-9145-385d481429cf"
-horo: 4
+coordinate: "parties · 2/share · 11412665"
+contentUuid: "f454732f-8793-5875-9859-dd9fbb408582"
+diamondUuid: "5fd72015-d3ac-864c-94d4-d7b5445f15e3"
+uuid: "11412665-ce61-8863-acd1-7e739665875e"
+horo: 2
 typography:
   partition: parties
   bondDegree: 16
@@ -28,7 +28,7 @@ standards:
   - "US-IRS Form-1099 information-return"
 bindings: []
 signatures:
-  computationUuid: "ffb3c3ed-1daa-84d6-b899-63bf03b6c93f"
+  computationUuid: "627904b7-a90a-87ac-960e-6b94341b7007"
   stages:
     - stage: path
       stageUuid: "da7428cb-6076-8e1b-8cae-fbed57e84930"
@@ -39,11 +39,11 @@ signatures:
     - stage: links
       stageUuid: "63dfb49b-713c-8350-b9e4-fa86579e6d22"
     - stage: horo
-      stageUuid: "c421de53-2b5e-8d1c-a42a-a9dae0a1e3a9"
+      stageUuid: "01550e26-e86e-8643-b0ac-c6b6a9ac9e12"
     - stage: seal
       stageUuid: "fea01e56-b765-8885-bb20-40a5effacaca"
     - stage: uuid
-      stageUuid: "291c5f99-ed59-8d58-9d67-85ba8baa061e"
+      stageUuid: "500d6ba9-8f1c-8106-b47b-f129dc1f6ca1"
 version: 2
 ---
 # parties — one master; customer and vendor are roles

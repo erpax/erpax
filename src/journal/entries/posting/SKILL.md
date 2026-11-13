@@ -2,11 +2,11 @@
 name: posting
 description: "Use when a ledger posting should follow from a journal entry instead of being typed — every field of a posting is already on its entry, so a hook writes the posting when the entry becomes posted, once, and a refusal by the ledger fails the posting rather than being swallowed."
 atomPath: "journal/entries/posting"
-coordinate: "journal/entries/posting · 7/descent · c0924670"
-contentUuid: "879c3197-5661-5f8f-bfd8-1b0d03e05624"
-diamondUuid: "c198dcac-e0c4-81a3-bc09-543a2546c08c"
-uuid: "c0924670-37b1-8b1d-acc0-d6b236de72b0"
-horo: 7
+coordinate: "journal/entries/posting · 4/weave · 47538044"
+contentUuid: "071f39ad-4b26-522d-bf9c-735e104f15c9"
+diamondUuid: "6954d480-f324-8178-919d-13c8e729f9d5"
+uuid: "47538044-5ac5-86cd-af88-cbbbabace78b"
+horo: 4
 typography:
   partition: journal
   bondDegree: 48
@@ -14,7 +14,7 @@ standards:
   - "double-entry bookkeeping — the posting inherits the entry's balance, it cannot break it"
 bindings: []
 signatures:
-  computationUuid: "fec19539-1228-86b6-87a6-6ca67cdc1b53"
+  computationUuid: "8edd233a-5374-8cd5-88e8-a25a2bcdc7ab"
   stages:
     - stage: path
       stageUuid: "81765565-8096-88c1-a330-10183639eb84"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "018abd4e-8e40-85af-aed2-0767ba580d7c"
     - stage: horo
-      stageUuid: "4c12cca7-a26a-83e5-89fd-b17a4500c48e"
+      stageUuid: "22d0d857-e57d-8f77-ac2b-3b8755a97b72"
     - stage: seal
       stageUuid: "79777772-1a06-894f-b584-1d8157c8ae87"
     - stage: uuid
-      stageUuid: "9647bfbd-12e3-8e90-9219-8c5bb4df2983"
+      stageUuid: "b824a9ab-4917-88c9-af42-d1dd20b57e82"
 version: 2
 ---
 # journal/entries/posting — the ledger posting is derived from the entry
