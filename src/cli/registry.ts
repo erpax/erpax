@@ -270,6 +270,10 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
   spec: {
     gen: { desc: 'Spec generator', cmd: `${TSX} src/spec/gen.ts` },
   },
+  refactor: {
+    plan: { desc: 'Dry-run a refactoring document: every refusal named, nothing written', cmd: `${TSX} src/scalpel/document/index.ts` },
+    apply: { desc: 'Apply a refactoring document through the scalpel; a red ring restores the batch', cmd: `${TSX} src/scalpel/document/index.ts --apply` },
+  },
   payload: {
     'verify-types': { desc: 'Verify payload-types.ts fresh', cmd: 'bash scripts/payload-verify-types.sh' },
     jobs: {
