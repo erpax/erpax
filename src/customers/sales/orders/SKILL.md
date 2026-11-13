@@ -3,13 +3,13 @@ name: orders
 description: "Use when recording or progressing a customer order — from quote conversion through confirmation, partial fulfillment, invoicing, and closure; track order lines, delivery dates, shipping and billing addresses, and fulfillment progress. The O2C customer-order register (UBL-2.1 / UN-EDIFACT ORDERS / Peppol BIS-3.0), distinct from purchase-orders (P2P)."
 atomPath: "customers/sales/orders"
 coordinate: "customers/sales/orders · 2/share · 9564d826"
-contentUuid: "d8ece9bb-3ee5-575b-a2b7-2773c3521810"
+contentUuid: "3816c0b5-65e0-5a20-ab2c-ed2bfb84aa28"
 diamondUuid: "f12a01d2-af53-84ec-bcb4-5b879f2dd26c"
 uuid: "9564d826-f397-88f3-9643-4d42fbec10b2"
 horo: 2
 typography:
   partition: customers
-  bondDegree: 77
+  bondDegree: 76
 standards:
   - "ASC-606"
   - "COSO-ERM-2017"

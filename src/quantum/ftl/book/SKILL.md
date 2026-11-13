@@ -3,13 +3,13 @@ name: book
 description: "Use when a question should be ANSWERED from what is already folded rather than recomputed — the sealed book, its search, and the researcher that reads it."
 atomPath: "quantum/ftl/book"
 coordinate: "quantum/ftl/book · 2/share · df942278"
-contentUuid: "738330fe-f090-581e-86ac-af891788fa27"
+contentUuid: "dba48333-7e96-5671-a7dd-8d8fd571844b"
 diamondUuid: "ee2725ef-f2e2-8e3e-8706-9cf44253a92e"
 uuid: "df942278-fef6-885f-806b-87c787498561"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 17
+  bondDegree: 16
 standards: []
 bindings: []
 signatures:
@@ -47,7 +47,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "2ca65ed5-254f-85aa-9c15-6f874ffbc035"
-    contentUuid: "738330fe-f090-581e-86ac-af891788fa27"
+    contentUuid: "dba48333-7e96-5671-a7dd-8d8fd571844b"
 version: 2
 ---
 # quantum/ftl/book — the answer was already folded
@@ -60,4 +60,4 @@ They lived in the ftl hub — a predicate and a search engine in one scroll, whi
 
 Composes: [[quantum]]/ftl · [[integrity]] · [[rules]]/concentration.
 
-<sub>content-uuid `738330fe-f090-581e-86ac-af891788fa27` · account `quantum/ftl/book` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `dba48333-7e96-5671-a7dd-8d8fd571844b` · account `quantum/ftl/book` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -3,17 +3,17 @@ name: status
 description: "Use when reading the quantum surface state from the CLI — superposition pending paths, last collapse, bond reciprocity. Promoted from a loose sibling to an atom because it is dispatched by PATH, which no lexical reference scan can see. Run: tsx src/quantum/status/index.ts"
 atomPath: "quantum/status"
 coordinate: "quantum/status · 1/base · 3600268d"
-contentUuid: "68db21c3-cbe4-5ab4-b550-7b0e5955e4d6"
-diamondUuid: "3a479079-abc5-88bf-82ff-d9bdb98f1023"
+contentUuid: "e563cdd3-4e55-5717-821d-bca11d81f607"
+diamondUuid: "64035883-e38f-8c7d-af6e-fe72c016537d"
 uuid: "3600268d-fc70-8b4a-bc5c-24d1bb94c57d"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 32
+  bondDegree: 27
 standards: []
 bindings: []
 signatures:
-  computationUuid: "41b31d8a-ed1f-860c-b13b-14f59fa6801d"
+  computationUuid: "1c92db1b-c025-89bf-96a5-03e1eeea71ff"
   stages:
     - stage: path
       stageUuid: "17e4090b-f037-8d1e-bedb-2c9bfcbb8c39"
@@ -24,21 +24,20 @@ signatures:
     - stage: links
       stageUuid: "ec2847f2-6f46-8946-93eb-52f61c1dad96"
     - stage: horo
-      stageUuid: "ec2242fe-2f4a-8c9e-a964-d6dd23165bec"
+      stageUuid: "03237757-0c1b-84ea-ac11-bac8a2d7456d"
     - stage: seal
       stageUuid: "ab3be850-b093-88e7-8c6a-de9fb39b138a"
     - stage: uuid
-      stageUuid: "f07a879d-21f0-882f-9ed9-82dc9ce232c1"
+      stageUuid: "003d9e7c-f361-836e-9a3e-e38e4afe2602"
 quantum:
   superposition:
-    - field
     - force
+    - law
     - legal
     - medical
+    - merge
     - quantum
-    - resolution
     - status
-    - study
     - work
     - superposition
   collapse:
@@ -51,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "41b31d8a-ed1f-860c-b13b-14f59fa6801d"
-    contentUuid: "68db21c3-cbe4-5ab4-b550-7b0e5955e4d6"
+    computationUuid: "1c92db1b-c025-89bf-96a5-03e1eeea71ff"
+    contentUuid: "e563cdd3-4e55-5717-821d-bca11d81f607"
 version: 2
 ---
 # status — the entry point a reference scan cannot see
@@ -79,4 +78,4 @@ The test pins both directions: every quantum dispatch target resolves, and the t
 
 Composes: [[quantum]]/context · [[cli]] · [[rules]]/unfolded · [[law]].
 
-<sub>content-uuid `68db21c3-cbe4-5ab4-b550-7b0e5955e4d6` · account `quantum/status` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e563cdd3-4e55-5717-821d-bca11d81f607` · account `quantum/status` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

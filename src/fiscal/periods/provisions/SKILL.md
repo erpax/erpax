@@ -2,14 +2,14 @@
 name: provisions
 description: "Use when recognising or measuring uncertain liabilities — warranty, restructuring, onerous contracts, environmental remediation, decommissioning/ARO, litigation; tracking best-estimate vs discounted amount, reimbursement recovery, movement history (additions/reversals/unwinds), and §85 disclosure text. The IAS-37 provision register."
 atomPath: "fiscal/periods/provisions"
-coordinate: "fiscal/periods/provisions · 8/crest · 36bd5a8d"
-contentUuid: "18746a18-1a0c-5ceb-89ec-55d342b41ab5"
-diamondUuid: "92153b90-949a-8dbf-8575-28efe8466303"
-uuid: "36bd5a8d-c1a3-8933-80ec-9b994ff9bcdd"
-horo: 8
+coordinate: "fiscal/periods/provisions · 2/share · 98057e56"
+contentUuid: "1e12bd0c-5bd0-52da-a79e-36ec3274969f"
+diamondUuid: "1afbd6be-1255-82de-93c6-c831b5e45a8e"
+uuid: "98057e56-4278-87fa-820f-f650bb00444b"
+horo: 2
 typography:
   partition: fiscal
-  bondDegree: 19
+  bondDegree: 15
 standards:
   - "IFRS IAS-37 §10 contingent-liability-definition"
   - "IFRS IAS-37 §14 recognition-of-provisions"
@@ -31,7 +31,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "1ce1980c-4891-85bc-ac8f-60cae24d5175"
+  computationUuid: "fea99f44-44fd-894e-a1ac-73e506cab1c0"
   stages:
     - stage: path
       stageUuid: "f2aac0b4-6e02-8568-8500-cb93b2c469a2"
@@ -40,13 +40,13 @@ signatures:
     - stage: boundary
       stageUuid: "85bdec58-06be-8aae-ba69-f621db651151"
     - stage: links
-      stageUuid: "8e04cf04-80a8-84c9-b786-82c82119f96a"
+      stageUuid: "13350ef2-9617-882d-8136-8b6607983076"
     - stage: horo
-      stageUuid: "65c03723-c37b-8ba8-9a16-0ec95241c40d"
+      stageUuid: "1a356f3c-443e-8b14-9643-cbaf94361d65"
     - stage: seal
       stageUuid: "8f7090c4-3197-8f3a-9239-5f7be130c51f"
     - stage: uuid
-      stageUuid: "181ddc34-4077-8912-847a-bf9b9f1f4eea"
+      stageUuid: "fdad1a2f-d21b-89ec-aea6-19e244413bbe"
 version: 2
 ---
 # provisions

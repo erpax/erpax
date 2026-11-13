@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when proving or tightening the unbreakable-matrix gate — the test that pulls all entropy as food for agents and leaves purity for the skills, so no agent can record uncollidable data or break the content-uuid matrix.",
-    "uuid": "9fb66771-2d09-83d8-bb04-08301543c3c1",
+    "uuid": "f7f92f8a-7677-86f4-a30a-b55f297f0490",
     "words": [
       "use",
       "when",

@@ -3,13 +3,13 @@ name: closure
 description: "Use when an external dependency must fall back to erpax ITSELF — every external role (payment-provider, signing, notification, search, federation) has a registered internal provider that completes the operation when the external call fails (Conservation Law 53, withInternalFallback). The dependency graph terminates at erpax; everything falls back to the self."
 atomPath: "self/closure"
 coordinate: "self/closure · 5/round · 795a2cfc"
-contentUuid: "36378f33-0b39-5939-9dc7-2fde6b83458e"
-diamondUuid: "6894f2b4-2f03-823c-9cb2-2bed260ec8cb"
+contentUuid: "6cb7ce0a-2d8a-5205-bb86-0cfa4f46db52"
+diamondUuid: "467f89fc-388f-8fb3-9698-c9afd254534d"
 uuid: "795a2cfc-9e4f-81aa-96bb-cfe16bed67ec"
 horo: 5
 typography:
   partition: self
-  bondDegree: 19
+  bondDegree: 28
 standards:
   - "EU-2002/58"
   - "EU-2016/679"
@@ -22,7 +22,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "2b742442-ffe4-8bb5-8cd4-d483d0f74d83"
+  computationUuid: "f8ad4fbc-5051-8399-924c-bd2485410931"
   stages:
     - stage: path
       stageUuid: "bedeb085-e9ba-853f-bc7e-e57cb062a27a"
@@ -33,11 +33,11 @@ signatures:
     - stage: links
       stageUuid: "c6ede3ff-aadf-85db-a3ef-6b48ddc74d5f"
     - stage: horo
-      stageUuid: "b2eeb9f7-cbb4-811b-b546-39ffe6ca75bb"
+      stageUuid: "6a6fb2e8-4346-8407-a0bd-63740312566c"
     - stage: seal
-      stageUuid: "476556eb-c74c-8b8e-a394-0c8dd2cd7070"
+      stageUuid: "3fa7438a-5a1b-8cd4-8ae3-63ef9cc959cb"
     - stage: uuid
-      stageUuid: "3e14ef05-5d60-8bf3-972b-5b6b915ec92d"
+      stageUuid: "daf1e90b-57a8-8e1c-a640-aab2e6e3d0e1"
 version: 2
 ---
 # closure — everything falls back to erpax itself (under [[self]])

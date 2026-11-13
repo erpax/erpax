@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring or rendering the vitepress typographic feature-set of a SKILL.md page — headings, code, links, tables, containers, math; coverage is the fraction of features used.",
-    "uuid": "0ddc099f-4581-8dee-86bd-341d094c7ba4",
+    "uuid": "66b20bc3-d110-8fb6-940a-a9fc88d02a2a",
     "words": [
       "use",
       "when",

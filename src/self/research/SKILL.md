@@ -3,13 +3,13 @@ name: research
 description: "Use when an actor must find where its own identity (an email) is used across the corpus and secure those accounts — self-research over the COMPUTED Payload MCP find-surface, scoped to the caller's own access so there is no bypass, with each reset/recover sandbox-gated and receipted. Agnostic — collections and services live in the DB, never hardcoded."
 atomPath: "self/research"
 coordinate: "self/research · 8/crest · 697903aa"
-contentUuid: "cd1a93bf-ef52-5c9e-acdb-9e1f52b9efbd"
-diamondUuid: "ffa7e53a-6f78-8d15-aed2-2afba39e3bed"
+contentUuid: "f50deb11-c263-5640-92e0-94b3998d2d28"
+diamondUuid: "c7ac3315-83e2-88b5-ac40-de4bc1031671"
 uuid: "697903aa-cb1d-84d6-91c4-064232bff862"
 horo: 8
 typography:
   partition: self
-  bondDegree: 107
+  bondDegree: 104
 standards:
   - "NIST SP 800-162 ABAC — the access scope is the ownership boundary"
   - "NIST SP 800-162 ABAC — the access scope is the ownership boundary`"
@@ -21,7 +21,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "e77e0513-449e-8c3e-b175-03e6584d215e"
+  computationUuid: "66f75c35-67f7-82e3-a016-ed05471e485f"
   stages:
     - stage: path
       stageUuid: "81cc84ac-f2f5-85e2-b9ed-0e66364b833b"
@@ -32,11 +32,11 @@ signatures:
     - stage: links
       stageUuid: "433dfb2e-e85a-8d98-a831-63bbc0db5b6f"
     - stage: horo
-      stageUuid: "0975a526-836e-82cd-9d75-e4390b1cea8b"
+      stageUuid: "e7310eb3-6b73-8b0b-90c4-7b5d7150e2e9"
     - stage: seal
-      stageUuid: "628d8c27-e253-8712-ad66-b74cb4c8e04f"
+      stageUuid: "12b22568-903a-881f-8644-479291fef1d8"
     - stage: uuid
-      stageUuid: "e0051c19-bd14-81a3-83cd-e1a67120c062"
+      stageUuid: "400c6375-161a-8a36-847d-a934d6654fa9"
 version: 2
 ---
 # self-research — find where your identity is used, and secure it (under [[self]])

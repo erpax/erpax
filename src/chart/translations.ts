@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when specifying a chart as pure data — a numeric series with its range and a deterministic normalizer to [0,1]; rendering is the quantum facet (colour per value via the analog aura).",
-    "uuid": "c2e6f217-4483-8602-ac4d-d502f27470bc",
+    "uuid": "ede15ebe-7c54-8d31-917a-52da920ba89b",
     "words": [
       "use",
       "when",

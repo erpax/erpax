@@ -3,13 +3,13 @@ name: agriculture
 description: "Use when reasoning about growing living produce to a market — agriculture is the domain molecule whose production is planned BACKWARD: from a sales plan (CSA shares + market channels) through per-crop demand to the land, seed, and fertility the season requires. The agricultural twin of manufacturing; every quantity carries a unit and a currency that convert automatically and account by double-entry."
 atomPath: "vocabulary/agriculture"
 coordinate: "vocabulary/agriculture · 2/share · b1df5e11"
-contentUuid: "73ea67ff-3ea8-59b8-84df-7d5888624e53"
+contentUuid: "131f1d5a-7a4a-56ed-bb56-965a758a94f0"
 diamondUuid: "55e52980-787f-8d8c-9f98-f7ff1cef6184"
 uuid: "b1df5e11-ce35-8985-a098-9a79f2a0b472"
 horo: 2
 typography:
   partition: vocabulary
-  bondDegree: 64
+  bondDegree: 63
 standards:
   - "IAS-41"
   - "IFRS-15"

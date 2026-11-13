@@ -3,17 +3,17 @@ name: skill
 description: "Use when an agent loads a capability — the agent's competence is the union of its loaded skills (a skill one agent loads, the team has); loading is idempotent."
 atomPath: "agent/skill"
 coordinate: "agent/skill · 1/base · 7b900c80"
-contentUuid: "dce81973-6925-5c4a-ad2e-63a089ea4017"
-diamondUuid: "440263be-4536-8ac6-89ed-20ade5be1724"
+contentUuid: "cb91fea9-e8aa-5f31-afae-639f4888bf06"
+diamondUuid: "bf275eed-4f71-8c22-969b-35d785c201f6"
 uuid: "7b900c80-59df-8f9c-8c1d-7b2bc5cd7572"
 horo: 1
 typography:
   partition: agent
-  bondDegree: 38
+  bondDegree: 35
 standards: []
 bindings: []
 signatures:
-  computationUuid: "6adcaab3-87d5-8c3a-bfa9-91ab771d3dc7"
+  computationUuid: "df4ac09c-f8a2-829a-9de0-a54d193941ad"
   stages:
     - stage: path
       stageUuid: "a0a5cef4-9ccd-80d8-b657-cfa59b62e915"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "3d6ccd02-fed0-82f3-a8cd-54068fd35bb8"
     - stage: links
-      stageUuid: "34988d2a-855a-8abd-9819-93cd4ec61a34"
+      stageUuid: "5dd9132d-121b-8584-b006-84d66aab6b87"
     - stage: horo
-      stageUuid: "056456aa-9da0-8026-bc7c-bc3bf79ea432"
+      stageUuid: "5687cb28-f092-83ec-83c5-07f70a8f8765"
     - stage: seal
       stageUuid: "cc386600-b64e-8962-8301-0eeb688cc21b"
     - stage: uuid
-      stageUuid: "203c82f1-3624-8ebf-b684-0f2cb9f1dd9a"
+      stageUuid: "06bf44c9-2cec-8a85-855a-4b4017b5efc0"
 version: 2
 ---
 # agent/skill — an agent loads a capability

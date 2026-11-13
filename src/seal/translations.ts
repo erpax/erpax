@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the whole-corpus green verdict — a seal is the cross of every guardian; it is SEALED only when all guardians hold, fails closed on an empty set, and is exactly what the auto-commit/push waves gate on. The state in which the tree may be saved, committed, and pushed.",
-    "uuid": "c2b7ba9d-db21-8096-ad34-35e332f8e627",
+    "uuid": "84928ada-e111-84af-b8b8-c281da7b177d",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cache — *\\\"Reuse the computed answer, never re-derive\\\"* is the first agent law in this corpus.",
-    "uuid": "f6ce8c70-ef37-8c89-abbb-f17bb6eeda32",
+    "uuid": "8324384b-8dd4-840a-80d3-3e1320c30c72",
     "words": [
       "use",
       "when",

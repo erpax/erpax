@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about how an agent acts — it does everything both through the MCP gateway (trust-native, sandboxed and receipted) and through the filesystem (direct), the two equivalent because content-addressed, the modality the choice of trust not of truth.",
-    "uuid": "77918646-745e-8e2d-9e1a-a27de843ba35",
+    "uuid": "5fed9aa6-bb56-8d88-a501-e8242192222b",
     "words": [
       "use",
       "when",

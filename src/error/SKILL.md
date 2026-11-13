@@ -2,14 +2,14 @@
 name: error
 description: Use when reasoning about error — Representation of an Error.
 atomPath: error
-coordinate: "error · 5/round · 05d1d0a8"
-contentUuid: "c8e6e462-dabf-5390-b65d-c1c69bb202e7"
-diamondUuid: "9cc69970-dfa5-8f35-9232-f6bd0b521576"
-uuid: "05d1d0a8-c14f-8006-9e0c-de49e214d832"
-horo: 5
+coordinate: "error · 2/share · 5d50000b"
+contentUuid: "c0524259-f559-5c3a-baca-4ee79ac1e85f"
+diamondUuid: "d55eee0b-7695-8b2d-8126-45a4605257d2"
+uuid: "5d50000b-555e-8113-91cf-2603ca191f4b"
+horo: 2
 typography:
   partition: error
-  bondDegree: 14
+  bondDegree: 11
 standards:
   - "7807 problem-details-for-http-apis"
   - "9110 §10.3 error-responses"
@@ -22,7 +22,7 @@ standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "01bec840-e0e6-8a46-91b8-206a0ad83e95"
+  computationUuid: "3aca312f-9d29-8a84-92d5-14784fef98b7"
   stages:
     - stage: path
       stageUuid: "059b2d4e-0017-857e-9938-cc8fe5dd15b0"
@@ -31,13 +31,13 @@ signatures:
     - stage: boundary
       stageUuid: "439631f8-3c88-8953-bea1-e929a2f62c1b"
     - stage: links
-      stageUuid: "8fd5bc9e-5d1e-8e2e-85db-6016aa13106c"
+      stageUuid: "123b2e29-bfeb-8ff9-a0c9-71facc80f5a9"
     - stage: horo
-      stageUuid: "7e8feb33-50f3-81d9-b97b-6366791196cc"
+      stageUuid: "910199a5-2d9b-895c-bcea-8b45ec2c795d"
     - stage: seal
       stageUuid: "a55ad6c7-2921-8ee5-a94b-b166b8a36dea"
     - stage: uuid
-      stageUuid: "a75e6dfc-b099-871a-8427-ba9c67a3c6c7"
+      stageUuid: "e5a6bcb5-e7f6-87eb-b9b3-6b22488b8ba8"
 version: 2
 ---
 # error

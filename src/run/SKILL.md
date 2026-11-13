@@ -3,19 +3,19 @@ name: run
 description: "Use when modeling one execution of a batch process — a payment run, payroll run, or scheduled job run — the singular of the runs collection; one bounded pass that gathers a set, authorises it, executes, and reconciles on a lifecycle."
 atomPath: run
 coordinate: "run · 4/weave · d7857fe2"
-contentUuid: "81dadb67-f703-51d8-babd-4348bc9c36ef"
-diamondUuid: "8873ab03-75b3-875d-845b-1664bdda8730"
+contentUuid: "2f6c227e-3541-50e3-b728-2149e732f9c3"
+diamondUuid: "0dda8a7f-3393-8b4f-9416-58039ea3323e"
 uuid: "d7857fe2-dbfd-87f8-a8cc-d2161d39d8de"
 horo: 4
 typography:
   partition: run
-  bondDegree: 45
+  bondDegree: 42
 standards:
   - "ISO-20022`"
   - "RFC-6750"
 bindings: []
 signatures:
-  computationUuid: "54907ea7-cd71-86b0-8779-8ca6a9bb1f2a"
+  computationUuid: "2f7c21e7-552c-8056-b8ac-4a7aef0490af"
   stages:
     - stage: path
       stageUuid: "8e364e5e-81f5-8938-96d6-4f9e482cd0bd"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "78cf3a47-db2a-8e2a-aef0-b4eb66097b9b"
     - stage: horo
-      stageUuid: "4cc95cc8-cc02-8082-aa15-65418246473d"
+      stageUuid: "c361f291-1773-8d6e-b69e-396b5b9ca1dd"
     - stage: seal
       stageUuid: "9935d688-d989-80db-83ca-4db6555c1032"
     - stage: uuid
-      stageUuid: "c3852250-0092-8678-8a2f-e1f2ecb15f6d"
+      stageUuid: "1f3d0641-bb5b-8c1c-8cd2-00e8fd88c26a"
 version: 2
 ---
 # run

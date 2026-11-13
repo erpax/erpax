@@ -3,13 +3,13 @@ name: book
 description: Use when reasoning about book — A book.
 atomPath: book
 coordinate: "book · 4/weave · 239bb186"
-contentUuid: "8f699cff-bd92-5d16-8089-3104935e6dd2"
+contentUuid: "ca582365-f071-5d27-873c-dd48e9a2cd6e"
 diamondUuid: "2b448945-f09a-8e02-b0e3-33d0bbcc9a78"
 uuid: "239bb186-3c82-824b-9860-f0eaef679bd7"
 horo: 4
 typography:
   partition: book
-  bondDegree: 17
+  bondDegree: 16
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

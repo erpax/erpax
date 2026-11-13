@@ -3,13 +3,13 @@ name: orders
 description: "Use when raising or reviewing a vendor purchase commitment — line items, Incoterms 2020 delivery terms and location (FOB/CIF/DDP/EXW), order/due dates, currency, and SOX three-way-match (PO → goods receipt → invoice). The procure-to-pay header that gates GL posting timing by FOB point per IFRS-15 §38-42."
 atomPath: "items/purchase/orders"
 coordinate: "items/purchase/orders · 7/descent · bcdc9c2c"
-contentUuid: "089a00f5-e703-5b41-a04c-87a821ffb570"
+contentUuid: "d32d31ac-530e-5247-b1fa-2bf2381fc385"
 diamondUuid: "d2c8ddaf-0f1e-8ca5-abdb-9d34122bad24"
 uuid: "bcdc9c2c-18eb-80cf-b55b-15d65ace06c3"
 horo: 7
 typography:
   partition: items
-  bondDegree: 77
+  bondDegree: 76
 standards:
   - "EN-16931:2017 §BG-13 buyer-reference"
   - "EN-16931:2017 §BG-13 buyer-reference`"

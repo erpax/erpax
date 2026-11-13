@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about product — Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.",
-    "uuid": "5d09c457-468d-8367-a24a-5997ba83f8c0",
+    "uuid": "92d2fe55-47e1-8158-b660-4309d62af6b3",
     "words": [
       "use",
       "when",

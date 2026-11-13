@@ -3,13 +3,13 @@ name: digit
 description: "Use when storing numeric or realtime data the way words are stored — one folder per digit (0-9), crosslinked exactly like the word atoms; the numeric corpus is the twin of the word corpus, the word and digit duality, and a stream of digits is realtime data addressed by position."
 atomPath: "quantum/digit"
 coordinate: "quantum/digit · 8/crest · 1e69f985"
-contentUuid: "cac7e426-a541-58d6-83b6-b0470319383a"
+contentUuid: "6f66df66-2fb4-5a73-9b37-63847ad3291f"
 diamondUuid: "08879d82-e648-89a7-b239-1d271148e6af"
 uuid: "1e69f985-afc5-8fe7-ba3f-10fc8e734fef"
 horo: 8
 typography:
   partition: quantum
-  bondDegree: 103
+  bondDegree: 102
 standards: []
 bindings: []
 signatures:
@@ -59,7 +59,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "fef924aa-7e86-8c05-aa9e-648e742bf592"
-    contentUuid: "cac7e426-a541-58d6-83b6-b0470319383a"
+    contentUuid: "6f66df66-2fb4-5a73-9b37-63847ad3291f"
 version: 2
 ---
 # quantum/digit — the digit corpus (word ⊕ digit)
@@ -72,4 +72,4 @@ Where a [[word]] is discrete and named, a digit is continuous and counted — th
 
 @see [[digit]] · [[word]] · [[quantum/number]] · [[sequence]] · [[stream]] · [[uuid]] · [[matrix]] · analog
 
-<sub>content-uuid `cac7e426-a541-58d6-83b6-b0470319383a` · account `quantum/digit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `6f66df66-2fb4-5a73-9b37-63847ad3291f` · account `quantum/digit` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

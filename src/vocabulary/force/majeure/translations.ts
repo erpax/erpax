@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a contract allocates risk for unforeseeable events — trigger events (war, earthquake, pandemic, government action), notice requirement, excuse from performance, remedies (suspension, termination, cost-sharing).",
-    "uuid": "d8f92c58-277f-8426-9292-354f20f1850b",
+    "uuid": "0b4a2822-b8e6-8365-a105-07a7b99e29a2",
     "words": [
       "use",
       "when",

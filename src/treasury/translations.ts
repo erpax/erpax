@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about treasury — A government cash office reconciles exactly as a bank drawer does, so it mounts float unchanged.",
-    "uuid": "a80f5f7d-d0ec-8e4f-aec3-8dfd3a66cc1e",
+    "uuid": "72723f80-9d5a-8843-8223-720e636649ad",
     "words": [
       "use",
       "when",

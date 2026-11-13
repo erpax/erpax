@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking that the agent memory index still matches its files — MEMORY.md is the load surface, so a memory absent from it is written but never loaded, and an index line with no file is a citation leading nowhere. Fails closed on both directions; zero is a theorem, not a ratchet.",
-    "uuid": "03268d54-5835-8d7c-810d-5e7a541453f6",
+    "uuid": "075f7a63-af8f-8daf-9f6e-475ea0387fd7",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about budget — The corpus declares an agent-context ceiling: is **50,000**, and enforces it inside — the lazy loader the orientation tells every agent to use.",
-    "uuid": "39540b6f-6620-8ce7-a6bd-98b75848c7a9",
+    "uuid": "8ad02efa-8f9f-82cc-946f-6c2b48963022",
     "words": [
       "use",
       "when",

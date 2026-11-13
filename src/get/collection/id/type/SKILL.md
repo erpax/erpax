@@ -3,13 +3,13 @@ name: type
 description: "Use when reasoning about type — A Payload id is a number in Postgres and a string in Mongo, and a collection may override the database-wide default with ."
 atomPath: "get/collection/id/type"
 coordinate: "get/collection/id/type · 5/round · 47b37ce9"
-contentUuid: "b433029c-2f27-5ea5-9f2e-9c36dffead55"
+contentUuid: "0ec92d02-6111-56f9-bdaa-56f7267f778a"
 diamondUuid: "62fba016-69c5-80ce-8a75-8e1826b1c5c8"
 uuid: "47b37ce9-f2a2-8eaf-b6b3-e8438322a4ee"
 horo: 5
 typography:
   partition: get
-  bondDegree: 54
+  bondDegree: 52
 standards: []
 bindings: []
 signatures:

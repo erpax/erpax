@@ -3,17 +3,17 @@ name: serverless
 description: "Use when proving that serverless infrastructure (Cloudflare Workers + wrangler bindings) provides quantum semantics — superposition, collapse, entanglement, holographic recovery — and that erpax itself is the existence proof, deployed serverless via OpenNext."
 atomPath: "quantum/serverless"
 coordinate: "quantum/serverless · 2/share · 3854f5ea"
-contentUuid: "9840283f-9b6a-5bba-a5ba-2184c9f371df"
-diamondUuid: "97e3561a-ef6a-81a4-8a1b-e3cdc365497c"
+contentUuid: "7aa78b31-b267-50c2-8475-aa4a9ea3c338"
+diamondUuid: "d6c9b296-edad-8ba1-aeea-eb82133384fb"
 uuid: "3854f5ea-26a6-8cc7-981c-357433d48958"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 47
+  bondDegree: 52
 standards: []
 bindings: []
 signatures:
-  computationUuid: "e4197d21-1bb9-8f76-80fc-1ea83e4f4c83"
+  computationUuid: "e9668165-6b9b-853b-b808-7e6f93f01b01"
   stages:
     - stage: path
       stageUuid: "ec2fa4ce-5164-820b-8f4e-f283f5bfcae6"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "d7272ea2-c6f0-8ecf-b03d-ebd1e062701a"
     - stage: links
-      stageUuid: "058c70b0-aee8-85aa-8f42-d3ea66f30a9d"
+      stageUuid: "9922c6a1-4867-8b59-a8b0-27176542a5b5"
     - stage: horo
       stageUuid: "8ae5e4a5-0b39-818f-8a82-0debcf8d5f3a"
     - stage: seal
-      stageUuid: "7096cd8b-cd8c-88aa-a85f-399fb0e7be49"
+      stageUuid: "d8794b14-ce23-835c-8e46-80d825858086"
     - stage: uuid
-      stageUuid: "00a1e25f-b6f4-8b7f-8ad2-abf39496d55f"
+      stageUuid: "822251d1-b6f7-899b-9e27-4fd9422714e2"
 quantum:
   superposition:
     - ai
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "e4197d21-1bb9-8f76-80fc-1ea83e4f4c83"
-    contentUuid: "9840283f-9b6a-5bba-a5ba-2184c9f371df"
+    computationUuid: "e9668165-6b9b-853b-b808-7e6f93f01b01"
+    contentUuid: "7aa78b31-b267-50c2-8475-aa4a9ea3c338"
 version: 2
 ---
 # quantum/serverless — serverless IS the quantum host; erpax IS the proof
@@ -99,4 +99,4 @@ Matter-twin: `src/quantum/serverless/index.ts` (`proveServerlessQuantum` · `isS
 
 @see [[cloudflare]] · [[cloudflare/ai]] · worker · [[superposition]] · [[collapse]] · [[entanglement]] · [[quantum/deploy]] · [[deploy]] · [[diamond]] · [[confirm]]
 
-<sub>content-uuid `9840283f-9b6a-5bba-a5ba-2184c9f371df` · account `quantum/serverless` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `7aa78b31-b267-50c2-8475-aa4a9ea3c338` · account `quantum/serverless` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

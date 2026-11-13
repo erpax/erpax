@@ -3,7 +3,7 @@ name: tip
 description: "Use when the loop must say what to do next — the feed scanner that finds real gaps, scores them unblock / (cost × risk), and emits ONE executable trinity tip or refuses as vague."
 atomPath: "self/improve/tip"
 coordinate: "self/improve/tip · 7/descent · 83682286"
-contentUuid: "331d0eed-f5fc-5028-93ce-b33206f0cd53"
+contentUuid: "130b7efd-44c1-5534-8634-ee8aa07db065"
 diamondUuid: "4cedc2a8-0fca-8b74-afbe-91178a1dd7ed"
 uuid: "83682286-4776-8dac-81e7-93791efc063d"
 horo: 7
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "2ce4e4dd-6460-8a6d-b49b-d6e346f8c304"
+  computationUuid: "2db325ba-8e97-8f0f-a032-6141956fd4e8"
   stages:
     - stage: path
       stageUuid: "b6b3a707-3ac0-8315-840f-df6302d5df71"
@@ -26,7 +26,7 @@ signatures:
     - stage: horo
       stageUuid: "7c88be7a-76d9-8f2a-9875-7a7398513cde"
     - stage: seal
-      stageUuid: "8fecf9ea-376c-861c-9f20-f4672ef4d636"
+      stageUuid: "02869fe3-796c-8177-8b25-ae201a037d02"
     - stage: uuid
       stageUuid: "d0cae524-e8a8-86e4-8469-a1f63b8298a4"
 version: 2

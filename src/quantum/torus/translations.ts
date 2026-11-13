@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when every superposition the gate basis can reach must be enumerated rather than sampled — the finite real-Clifford orbit on exact amplitudes, the 4 × 4 double torus of two-qubit product states with the entangled states off it, and every referrer of the register asked to agree with each discovered state from its own standard's perspective.",
-    "uuid": "8cf509f4-c285-87f2-8711-4fe833b32434",
+    "uuid": "5d7b6c11-279d-84d0-8e85-34ab7aa4d6bc",
     "words": [
       "use",
       "when",

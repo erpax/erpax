@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about swarm — A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of tasks and produces an assignment across N agents.",
-    "uuid": "34525bd2-0e53-80e2-8212-4c3617da5b50",
+    "uuid": "be01b3cb-df15-84d9-b494-934216b6dc97",
     "words": [
       "use",
       "when",

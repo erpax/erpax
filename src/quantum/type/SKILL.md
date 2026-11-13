@@ -3,13 +3,13 @@ name: type
 description: "Use when reasoning about type identity on the matrix — a type as the content-uuid of its structural shape, so type-equality is uuid-equality (structural typing by content-addressing) and identical types merge."
 atomPath: "quantum/type"
 coordinate: "quantum/type · 1/base · 4b32e26c"
-contentUuid: "86d92be3-c947-53aa-b2be-8b218399fd47"
+contentUuid: "fa228ba8-9feb-5e6d-8179-3ec4ff6077eb"
 diamondUuid: "f58ac0d4-dd54-8663-b05e-aa3b28052804"
 uuid: "4b32e26c-4d70-85c0-bc32-dbef8872df24"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 54
+  bondDegree: 52
 standards:
   - "RFC 9562 §5.8 content-uuid"
 bindings: []
@@ -38,8 +38,8 @@ quantum:
     - data
     - document
     - entity
-    - field
     - format
+    - government
     - superposition
   collapse:
     - "RFC 9562 §5.8 content-uuid"
@@ -54,7 +54,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "a8138aec-252b-857c-90b1-0a384b16d064"
-    contentUuid: "86d92be3-c947-53aa-b2be-8b218399fd47"
+    contentUuid: "fa228ba8-9feb-5e6d-8179-3ec4ff6077eb"
 version: 2
 ---
 # quantum/type — type identity as a content-uuid
@@ -69,4 +69,4 @@ Matter-twin: `src/quantum/type/index.ts` (`typeUuid` · `sameType`). Composes [[
 
 @standard RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `86d92be3-c947-53aa-b2be-8b218399fd47` · account `quantum/type` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `fa228ba8-9feb-5e6d-8179-3ec4ff6077eb` · account `quantum/type` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

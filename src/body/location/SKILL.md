@@ -3,18 +3,18 @@ name: location
 description: "Use when reasoning about location as a anatomical part of body — vocabulary pivot to @/location; nested not duplicated."
 atomPath: "body/location"
 coordinate: "body/location · 7/descent · a4ba4f69"
-contentUuid: "af5f0f65-5d4e-5cb3-9f30-0da9adce3c35"
-diamondUuid: "f2b7aeb0-bf76-8ff7-9130-2d37f7b6b839"
+contentUuid: "3db26578-9e9e-5b76-9ae3-a2b1e0b76bcb"
+diamondUuid: "77fc0b68-56ee-81ee-b7d0-793b1f084e87"
 uuid: "a4ba4f69-98c8-894d-9d13-5cee16de5e7c"
 horo: 7
 typography:
   partition: body
-  bondDegree: 22
+  bondDegree: 19
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "dbfedce8-6df7-8c15-9ddf-4506d0756a26"
+  computationUuid: "7320b638-c7d5-844f-b731-a094a1f0e517"
   stages:
     - stage: path
       stageUuid: "50f4b786-823b-8cd5-a456-79797c7829bc"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "696a4ec5-ed6c-885d-9ff4-bf8f457fc2bb"
     - stage: horo
-      stageUuid: "08305639-326d-8c28-8b0b-81cb37259667"
+      stageUuid: "b98f130f-f409-8584-bb61-d2b86906fc17"
     - stage: seal
       stageUuid: "cf2efc0a-f729-84f8-ba85-9f2eab73a132"
     - stage: uuid
-      stageUuid: "3b80e7ec-f07d-813c-85d1-11242618a5d8"
+      stageUuid: "1d969dd3-f6c5-8ec3-a426-aea85bdb8c04"
 version: 2
 ---
 # body/location — anatomical part

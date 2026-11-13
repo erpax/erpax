@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modeling a cash inflow/outflow — payment received from customer, payment to vendor, expense reimbursement, salary payment. A transaction linking a GL account (cash), amount, date, and counterparty. Part of the accounting/commerce cycle.",
-    "uuid": "d00bbe39-8eb1-80fb-a487-edc87b0a45de",
+    "uuid": "5114ffc6-30d6-8b6e-8fdb-e621cf3be972",
     "words": [
       "use",
       "when",

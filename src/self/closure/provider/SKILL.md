@@ -3,7 +3,7 @@ name: provider
 description: "Use when reasoning about provider — Each provider file registers itself at its own bottom. Importing this barrel runs those side-effects, so the set of available providers is the set of files present — there is no…"
 atomPath: "self/closure/provider"
 coordinate: "self/closure/provider · 4/weave · bbb499a8"
-contentUuid: "0866c79b-1aa3-5a23-b32d-8854c464eb91"
+contentUuid: "79e4f29a-8e31-59c9-a198-dea99987a225"
 diamondUuid: "8e9d656d-3044-80c8-96c6-5f7cbc75ae92"
 uuid: "bbb499a8-f07c-853b-adee-4e0a3d072aff"
 horo: 4
@@ -16,7 +16,7 @@ standards:
   - eIDAS
 bindings: []
 signatures:
-  computationUuid: "533a27cb-e9fe-8669-98f0-793b6f981864"
+  computationUuid: "273fd0ba-ba7c-804c-aeed-6e8480c5edc2"
   stages:
     - stage: path
       stageUuid: "e1de80df-d8c6-8fde-ba0e-5939f36db404"
@@ -29,7 +29,7 @@ signatures:
     - stage: horo
       stageUuid: "ef749fa7-2534-8850-9f5d-62effc0aef5b"
     - stage: seal
-      stageUuid: "764050b8-09db-8c3a-94cd-028384057fed"
+      stageUuid: "6b339393-11c8-8df8-8d5c-631c4200c8b5"
     - stage: uuid
       stageUuid: "b12e8677-150f-8288-acaf-e08e94a12217"
 version: 2

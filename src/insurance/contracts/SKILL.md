@@ -3,13 +3,13 @@ name: contracts
 description: "Use when recognising or measuring insurance contract groups under IFRS 17 — GMM (building blocks — future cash flows, risk adjustment, CSM), PAA (short coverage), or VFA (direct participation); annual cohort grouping, profitability tiers, reinsurance link, loss-component, and disclosure (§93). The insurance-contracts IFRS 17 register."
 atomPath: "insurance/contracts"
 coordinate: "insurance/contracts · 7/descent · 1f7463f3"
-contentUuid: "6abb8b86-2aa8-5bcb-a59f-6ceab317173c"
+contentUuid: "17bb0ad6-d41b-5d37-9798-3366de6f5286"
 diamondUuid: "d6c409af-ccab-816e-9826-756d0eb12e2e"
 uuid: "1f7463f3-c1da-878d-aa69-e47849a0ea7e"
 horo: 7
 typography:
   partition: insurance
-  bondDegree: 43
+  bondDegree: 35
 standards:
   - "IFRS IFRS-13 fair-value-input-hierarchy"
   - "IFRS IFRS-13 fair-value-input-hierarchy`"

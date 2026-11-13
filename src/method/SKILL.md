@@ -2,19 +2,19 @@
 name: method
 description: "Use when reasoning about exported symbols as method-diamonds — every method name has a path of diamonds (the atom chain from corpus root to its index.ts barrel, plus the symbol at the leaf); compute methodPath/scanMethodPaths for addresses and boundary uuids; schema.org 'method' vocabulary is the collided homonym."
 atomPath: method
-coordinate: "method · 5/round · a51684bd"
-contentUuid: "0e0fadaa-6dab-50fa-b613-9a735dcf78ee"
-diamondUuid: "e914e4d5-999f-87a9-941e-4934aaf54d47"
-uuid: "a51684bd-0bbd-88c0-a94a-dffb6d5ec6fb"
-horo: 5
+coordinate: "method · 4/weave · 921de886"
+contentUuid: "5a65aa16-87ed-5a64-92f1-6d80d4f58a64"
+diamondUuid: "42922dac-05bb-81ad-86be-5e8c4c431ea6"
+uuid: "921de886-c234-8ab0-b718-43df0032c604"
+horo: 4
 typography:
   partition: method
-  bondDegree: 59
+  bondDegree: 56
 standards:
   - "schema.org — method vocabulary (collided homonym); ISO/IEC 25010:2023 §5.5 testability — pure path functions regression-locked"
 bindings: []
 signatures:
-  computationUuid: "11d20113-81f6-88e4-8ffa-741e4a780bd0"
+  computationUuid: "aa063f27-b8b9-8a3d-a0e9-0d23dfb0968f"
   stages:
     - stage: path
       stageUuid: "5283a66e-0757-869d-a9c8-238cd5dae366"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "d6879675-f8f1-855e-8563-66a5ecd9e6e5"
     - stage: links
-      stageUuid: "a18c7ceb-827f-8e8b-a90e-8b9f07a653ea"
+      stageUuid: "d217a8ab-61a8-8bc6-bd8f-014e897501b8"
     - stage: horo
-      stageUuid: "ba1ca456-e866-87f7-8935-a320684728d7"
+      stageUuid: "197c4ae9-05b3-8529-870c-a84701b86384"
     - stage: seal
       stageUuid: "8232d1bf-73a8-86a2-8585-2b94a20cbd71"
     - stage: uuid
-      stageUuid: "d7f567d9-d4d8-8a9f-94c2-2f1c8882a821"
+      stageUuid: "9bb1b906-daec-8d7e-a1f2-5e36a8fdfac0"
 version: 2
 ---
 # method — every method name has a path of diamonds

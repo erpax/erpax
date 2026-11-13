@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about inject — **3,597 SKILL.md and 3,595 LLM.md files are loaded into an agent's context**, and LLM.md is *generated* from SKILL.md — so a line written once propagates into every future agent's…",
-    "uuid": "b4b5f2e0-e564-8908-aa67-d5af82163bb3",
+    "uuid": "14e9cf14-b81d-8c04-8138-0dc5e04f6f82",
     "words": [
       "use",
       "when",

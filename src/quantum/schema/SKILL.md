@@ -3,13 +3,13 @@ name: schema
 description: "Use when reasoning about schema identity and drift on the matrix — a schema as the content-uuid of its canonical form, so identical schemas merge and any change yields a new uuid forcing re-verification by architecture."
 atomPath: "quantum/schema"
 coordinate: "quantum/schema · 7/descent · 0ab75e83"
-contentUuid: "f4ec04ff-f00e-52f2-8dca-dcf24b12f874"
+contentUuid: "e9de9085-c9b7-502d-9a7d-6967970c640b"
 diamondUuid: "79c730ac-fc56-889d-9ce9-13333c08ff38"
 uuid: "0ab75e83-35dd-87c2-a578-993e8f7b8843"
 horo: 7
 typography:
   partition: quantum
-  bondDegree: 40
+  bondDegree: 38
 standards:
   - "RFC 9562 §5.8 content-uuid; schema.org"
 bindings: []
@@ -55,7 +55,7 @@ quantum:
     analogResults: false
     speechResults: false
     computationUuid: "ab2b0e80-3449-8fd5-bd07-77c0fdb6342a"
-    contentUuid: "f4ec04ff-f00e-52f2-8dca-dcf24b12f874"
+    contentUuid: "e9de9085-c9b7-502d-9a7d-6967970c640b"
 version: 2
 ---
 # quantum/schema — schema identity + drift as a content-uuid
@@ -70,4 +70,4 @@ Matter-twin: `src/quantum/schema/index.ts` (`schemaUuid` · `sameSchema` · `dri
 
 @standard RFC 9562 §5.8 content-uuid; schema.org
 
-<sub>content-uuid `f4ec04ff-f00e-52f2-8dca-dcf24b12f874` · account `quantum/schema` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `e9de9085-c9b7-502d-9a7d-6967970c640b` · account `quantum/schema` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

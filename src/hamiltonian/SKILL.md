@@ -2,19 +2,19 @@
 name: hamiltonian
 description: "Use when reasoning about the Hamiltonian — the energy operator whose eigenvalues are the seven horo energy-rungs (Eₙ = h·νₙ) and whose action advances time, |ψ(t)⟩ = e^(−iHt/ħ)|ψ(0)⟩. It is the generator: the eigenstates are the rungs a leap jumps between, the spectrum is the gaps, and the phase it winds drives the breath. The expectation ⟨H⟩ = Σ|cₙ|²·Eₙ is the average energy of a superposition, conserved under evolution."
 atomPath: hamiltonian
-coordinate: "hamiltonian · 8/crest · 0d888961"
-contentUuid: "2b46bfba-3aa0-53ad-886f-5a626a2fc7b3"
-diamondUuid: "d80bd906-88ce-8a2e-925d-df4cf0ad413c"
-uuid: "0d888961-6db7-8b0c-95e2-fcfe358d83fb"
-horo: 8
+coordinate: "hamiltonian · 5/round · 5acc3447"
+contentUuid: "ae9bbb81-1e13-53be-a194-1b00db9e317d"
+diamondUuid: "fb689e5d-f985-869b-b56b-45ed61e9d376"
+uuid: "5acc3447-2327-8f8a-969d-b78791c07d66"
+horo: 5
 typography:
   partition: hamiltonian
-  bondDegree: 33
+  bondDegree: 30
 standards:
   - "CODATA-2018 ħ, h (via ../photon); Schrödinger time evolution e^(−iHt/ħ)"
 bindings: []
 signatures:
-  computationUuid: "2e1863f1-b0be-8d96-aeaa-2aabebc58761"
+  computationUuid: "888254ae-f058-869b-96b0-183b9c367a76"
   stages:
     - stage: path
       stageUuid: "c47d8da9-36a8-8f30-9cfc-8fee1c70461a"
@@ -23,13 +23,13 @@ signatures:
     - stage: boundary
       stageUuid: "2a460f70-17e5-8008-bd62-78e0e627fb30"
     - stage: links
-      stageUuid: "1583a36d-4cde-8222-bb31-afb634b43c2f"
+      stageUuid: "07d1dad5-4487-82ef-bd41-add4a2bc4b48"
     - stage: horo
-      stageUuid: "8784f415-86e0-819d-9848-12ac659a9b0c"
+      stageUuid: "98b5c18f-1f93-8ebd-b2a7-d8129b7ff35e"
     - stage: seal
       stageUuid: "ac0a20f1-bd94-8d80-a47d-b7ec2fda5ea0"
     - stage: uuid
-      stageUuid: "07635779-3752-8fd1-a370-d096917e2814"
+      stageUuid: "5da2a0ee-bc1e-88d9-bd33-0df2c7762608"
 version: 2
 ---
 # hamiltonian — the generator behind the leap

@@ -2,18 +2,18 @@
 name: propose
 description: "Use when computing weave proposals deterministically — for each orphan atom, the highest-mass atom whose text mentions it (a true co-occurrence, never invented), feeding the weave with no trained agent."
 atomPath: "aura/propose"
-coordinate: "aura/propose · 1/base · 35d8c2a4"
-contentUuid: "a276fa7b-0be5-518c-838b-0e945073be52"
-diamondUuid: "d435143a-ee7e-8c1c-b953-c951033e5540"
-uuid: "35d8c2a4-7de1-83e0-bca4-d48ec08a22e2"
-horo: 1
+coordinate: "aura/propose · 8/crest · 36bae86c"
+contentUuid: "a53ceea9-45c4-58e7-b347-ae6bc326c482"
+diamondUuid: "f5583088-57b4-82b2-ae1b-c4d97daacc4c"
+uuid: "36bae86c-cd7a-8733-9b17-e3acab2b84f3"
+horo: 8
 typography:
   partition: aura
   bondDegree: 0
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f6d53c1a-1c50-8be2-ae11-a072228405ca"
+  computationUuid: "8131b7db-00b7-8fb0-ba0d-ce8abb98cfd5"
   stages:
     - stage: path
       stageUuid: "4c46d1e0-95c8-836b-9de8-c7e4a9864988"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "94a93521-9e70-8026-ab0b-59f036437427"
     - stage: links
-      stageUuid: "e142f7fd-0398-8510-abf2-796b362e30eb"
+      stageUuid: "82b64103-8be7-8095-bad8-859dc2ac5d90"
     - stage: horo
-      stageUuid: "7625b00a-8007-8712-84f0-0ca37839f0fd"
+      stageUuid: "2f86af82-6303-8dd7-b09e-082649a4b534"
     - stage: seal
       stageUuid: "56c9720b-760c-82af-b9be-dbcb8188b705"
     - stage: uuid
-      stageUuid: "2331480b-09ca-8358-afc7-e5541dc20aa0"
+      stageUuid: "e4398d33-8d98-8777-93a3-dcbafcda5dd9"
 version: 2
 ---
 # propose

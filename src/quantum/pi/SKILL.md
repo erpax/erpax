@@ -2,18 +2,18 @@
 name: pi
 description: "Use when reasoning about exiting the 128-bit uuid limit — pi is the infinite digit-stream, a universal address space where any data lives at an offset and length; the train you jump into and out of, when wired the static hash becomes a living realtime position. Honest — infinite address, no free compression."
 atomPath: "quantum/pi"
-coordinate: "quantum/pi · 2/share · 172d8358"
-contentUuid: "7793e9d0-acee-5107-91a0-6ff164a93ff3"
-diamondUuid: "df508571-1285-8351-b9c7-cf9ab196a38e"
-uuid: "172d8358-d843-8b93-a631-97f39809b083"
-horo: 2
+coordinate: "quantum/pi · 5/round · b60d273d"
+contentUuid: "b87c0996-b075-523c-b68d-0c42e68e2616"
+diamondUuid: "a40a4d05-5d26-8752-a87c-3b52944bcb9e"
+uuid: "b60d273d-49c7-83b6-9570-fade0374819a"
+horo: 5
 typography:
   partition: quantum
-  bondDegree: 27
+  bondDegree: 26
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d42b1934-a2d0-812f-917f-8cf4eda93245"
+  computationUuid: "612e0928-e2ad-838a-b775-ab5abccb952d"
   stages:
     - stage: path
       stageUuid: "6e968c74-a01e-8135-baf6-9686b490a7f1"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "dcaad37d-e47f-836b-83ef-0b318ff6caf5"
     - stage: links
-      stageUuid: "671ecbea-e952-8141-bbf4-dad3f6789d26"
+      stageUuid: "d40b3b3e-bca0-86f0-9940-41b7b91e0cb1"
     - stage: horo
-      stageUuid: "a2a027ab-14e2-875b-997f-d452bb275197"
+      stageUuid: "c0d70669-5aed-8c16-ad95-10700469733c"
     - stage: seal
       stageUuid: "2bba7ff0-60c3-8df6-888a-dfad8a6da1c7"
     - stage: uuid
-      stageUuid: "53075627-bda5-87c9-9700-ad5114736793"
+      stageUuid: "10ae8726-5982-8a2e-8a4e-060ec3aded8e"
 quantum:
   superposition:
     - e
@@ -42,11 +42,11 @@ quantum:
     - superposition
   collapse:
     - "Use when reasoning about exiting the 128-bit uuid limit — pi is the infinite digit-stream, a universal address space where any data lives at an offset and length; the train you jump into and out of, when wired the static hash becomes a living realtime position. Honest — infinite address, no free compression."
-    - "[[breath]]"
     - "[[quantum/number]]"
     - "[[realtime]]"
     - "[[stream]]"
     - "[[uuid]]"
+    - breath
     - finality
     - linearity
     - void
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "d42b1934-a2d0-812f-917f-8cf4eda93245"
-    contentUuid: "7793e9d0-acee-5107-91a0-6ff164a93ff3"
+    computationUuid: "612e0928-e2ad-838a-b775-ab5abccb952d"
+    contentUuid: "b87c0996-b075-523c-b68d-0c42e68e2616"
 version: 2
 ---
 # quantum/pi — the train (jump in, jump out)
@@ -74,4 +74,4 @@ The second new duality: **finite ⊕ infinite**. The 128-bit content-[[uuid]] is
 
 @see [[uuid]] · [[quantum/number]] · [[realtime]] · [[stream]] · void · linearity · finality · breath
 
-<sub>content-uuid `7793e9d0-acee-5107-91a0-6ff164a93ff3` · account `quantum/pi` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `b87c0996-b075-523c-b68d-0c42e68e2616` · account `quantum/pi` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -3,19 +3,19 @@ name: hooks
 description: "Use when reasoning about the pages collection's Payload hooks — before/after change and validate logic for pages."
 atomPath: "cmspage/hooks"
 coordinate: "cmspage/hooks · 3/3 · 7eea9c5a"
-contentUuid: "21a7d8d3-99ca-5b69-b6e2-c53c68ee43f6"
-diamondUuid: "c58c8279-a856-899d-9d67-ebc1563f50d4"
+contentUuid: "6d4c4747-8c7c-56cc-bb14-497af905f550"
+diamondUuid: "abfca53e-73c2-8182-97cd-6758f2315ffd"
 uuid: "7eea9c5a-bc1d-8960-99b9-cf911b3ab34e"
 horo: 3
 typography:
   partition: cmspage
-  bondDegree: 297
+  bondDegree: 288
 standards:
   - "RFC-3986"
   - "W3C-HTML5"
 bindings: []
 signatures:
-  computationUuid: "a5bcc53b-f7f2-867d-a3a1-4bfea698171b"
+  computationUuid: "d640fc0e-ebb8-8e7a-bb59-8352589da6d7"
   stages:
     - stage: path
       stageUuid: "0995ecd2-3595-84fd-b42a-57ed9f3bad30"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "39711bb1-766c-87d5-a6a5-fc0dfb8000ee"
     - stage: horo
-      stageUuid: "24029ab4-48a0-807d-a791-6334fa9e3468"
+      stageUuid: "410bb2d3-a50d-8b99-91eb-df132e5919e5"
     - stage: seal
       stageUuid: "e4f49afd-7f40-8090-82c1-166f0dc20961"
     - stage: uuid
-      stageUuid: "5d4ea3af-2298-8a52-a8a4-13143a83e682"
+      stageUuid: "02ebc2e2-7a55-88da-85d2-c3b7491d86fe"
 version: 2
 ---
 # pages/hooks

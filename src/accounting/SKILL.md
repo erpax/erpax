@@ -3,13 +3,13 @@ name: accounting
 description: "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype."
 atomPath: accounting
 coordinate: "accounting · 7/descent · 63a82724"
-contentUuid: "491b4fca-7389-5c6c-96b4-ca7ef55634d9"
-diamondUuid: "8af87023-7199-8a61-b93d-8e38edd69c75"
+contentUuid: "c09abcc5-70e2-5f98-8bbf-404cc7a5c342"
+diamondUuid: "7467ef4d-a809-8c4c-a50b-e34482cdf7e4"
 uuid: "63a82724-7f0e-86ec-8a5e-80d97c33573a"
 horo: 7
 typography:
   partition: accounting
-  bondDegree: 644
+  bondDegree: 635
 standards:
   - "EU-Intrastat-Reg-2019/2152"
   - "IAS-1"
@@ -19,7 +19,7 @@ standards:
   - "ISO-8601-1"
 bindings: []
 signatures:
-  computationUuid: "dde9dc3d-665a-8caf-b90c-0fbc4fa1802b"
+  computationUuid: "69a0cb27-74f0-8224-959a-49d032d54e68"
   stages:
     - stage: path
       stageUuid: "23dc1848-55e7-8512-9c47-52c510777a82"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "b9732d6d-af98-8c0a-a1b6-28761a20381e"
     - stage: horo
-      stageUuid: "af2bc3a8-c651-8f11-a63e-afce7dd2fdf0"
+      stageUuid: "703e2a6a-7375-8248-b85d-b5bf2562274a"
     - stage: seal
       stageUuid: "c3103fdd-ed65-8eb6-89d0-e6cb44152940"
     - stage: uuid
-      stageUuid: "c2b1069e-5656-86e6-8059-1f2cd5b6495d"
+      stageUuid: "71391c58-3724-86c5-97ce-a125ff2ccd9e"
 version: 2
 ---
 # accounting — the universal ledger plugin (anything is accountable)

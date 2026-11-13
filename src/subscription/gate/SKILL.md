@@ -3,13 +3,13 @@ name: gate
 description: "Use when reasoning about gate — , and answer from the tenant's subscription; and encode what a lapsed account may still do — read its own history, write nothing new."
 atomPath: "subscription/gate"
 coordinate: "subscription/gate · 2/share · c1c2a08b"
-contentUuid: "20fdf66d-49c5-5c07-b705-66131aa77168"
-diamondUuid: "9a26aad1-477f-8d38-9bfe-0d1816f7a7bc"
+contentUuid: "fadeca3d-edc0-56c1-b874-68abc7af3581"
+diamondUuid: "3e1b7fa2-8f71-86a2-a709-60bf65758425"
 uuid: "c1c2a08b-e468-822a-8b8a-5c92b0f74122"
 horo: 2
 typography:
   partition: subscription
-  bondDegree: 231
+  bondDegree: 213
 standards:
   - "IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation"
   - "NIST INCITS-359-2012 role-based-access-control"
@@ -18,7 +18,7 @@ standards:
   - "US-GAAP ASC-606 revenue-from-contracts-with-customers"
 bindings: []
 signatures:
-  computationUuid: "63837a9e-d0ad-8568-9034-436f3a54f71f"
+  computationUuid: "4f0a0915-c3aa-80fd-bd76-8bc15c8431c4"
   stages:
     - stage: path
       stageUuid: "a6e9db23-c990-831b-b7ea-02c31b1479be"
@@ -29,11 +29,11 @@ signatures:
     - stage: links
       stageUuid: "72f54a82-b6f3-8153-a09e-ded862ef8cde"
     - stage: horo
-      stageUuid: "4a846dbb-e500-8af3-90b0-220331996461"
+      stageUuid: "2d48d3e9-8219-87ab-93a1-241cdcec7113"
     - stage: seal
       stageUuid: "b0dd1769-72a9-8fac-8a13-f42b113bb9f6"
     - stage: uuid
-      stageUuid: "45af67df-84d2-85e5-8766-1744927c40a3"
+      stageUuid: "add60a96-7887-8292-875d-457561478643"
 version: 2
 ---
 # subscription/gate — the plan decides access at the collection, not in the page that renders it

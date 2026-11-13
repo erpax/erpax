@@ -3,17 +3,17 @@ name: society
 description: "Use when reasoning about erpax as a social-engineering platform in the civic sense — society run on the quantum substrate (content-uuid, double-entry, tamper-evident) so coordination is legible and accountable, not covert; the quantum twin of society."
 atomPath: "quantum/society"
 coordinate: "quantum/society · 4/weave · 5c238bd1"
-contentUuid: "ba9d4ee7-fae1-579f-b382-737cff07b6de"
-diamondUuid: "e2ecf6d3-04ab-8a3a-90b1-c7828e371f94"
+contentUuid: "855daddd-685b-55b9-b90a-a2de4da43a05"
+diamondUuid: "b341a0c2-170c-8481-84eb-1ac34534f365"
 uuid: "5c238bd1-1796-82d4-98c2-5596b8e7f1d3"
 horo: 4
 typography:
   partition: quantum
-  bondDegree: 247
+  bondDegree: 228
 standards: []
 bindings: []
 signatures:
-  computationUuid: "34cb62e5-0145-822b-abee-439d387ceec6"
+  computationUuid: "f97e91da-3484-8675-939d-4569a23a94d6"
   stages:
     - stage: path
       stageUuid: "ed316fbe-1033-8754-b9a1-a5ea11b8a400"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "5d888003-eacd-8ad8-8f0f-7cb068a2407d"
     - stage: horo
-      stageUuid: "aeaba661-0bac-89e8-bf66-27bb98047f93"
+      stageUuid: "e5749af5-48d9-8dda-a300-bbbe61a0756c"
     - stage: seal
       stageUuid: "62a8d7e5-377e-8b99-9ab3-145ad3e860ca"
     - stage: uuid
-      stageUuid: "68c21fc8-bc05-8305-85dc-8efb7abea5bf"
+      stageUuid: "8dd6325c-f07f-802b-9555-ac60c1c540cd"
 quantum:
   superposition:
     - access
@@ -57,8 +57,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "34cb62e5-0145-822b-abee-439d387ceec6"
-    contentUuid: "ba9d4ee7-fae1-579f-b382-737cff07b6de"
+    computationUuid: "f97e91da-3484-8675-939d-4569a23a94d6"
+    contentUuid: "855daddd-685b-55b9-b90a-a2de4da43a05"
 version: 2
 ---
 # quantum/society — quantum civics
@@ -69,4 +69,4 @@ The quantum twin of [[society]]: every social fact — [[identity]], vote, value
 
 **Law — [[law]]: every social fact — identity, vote, value, consensus, role — is content-uuid'd, double-entry-balanced, and tamper-evident, so social order can only be lowered reversibly and by consent: legible, proof-carried, accountable. The same governance and market levers that could manipulate are pointed at detecting manipulation (forged consensus, sybil identity, manufactured value); coordination here is a trust ledger, never a phishing kit — never fear.**
 
-<sub>content-uuid `ba9d4ee7-fae1-579f-b382-737cff07b6de` · account `quantum/society` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `855daddd-685b-55b9-b90a-a2de4da43a05` · account `quantum/society` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -3,13 +3,13 @@ name: scope
 description: "Use when reasoning about scope — Every slow cycle in the session that produced this atom had one shape: **the whole corpus measured to answer a question about a changeset.**"
 atomPath: "rules/scope"
 coordinate: "rules/scope · 5/round · fb869c50"
-contentUuid: "9c3ae260-c3f1-5777-8864-e1655d271e10"
+contentUuid: "1f608685-b429-55d8-b7db-82445e992e98"
 diamondUuid: "23b8431a-9ca7-8dc0-9370-b8c349125bad"
 uuid: "fb869c50-d3ac-8ca9-89ad-4f42f6985996"
 horo: 5
 typography:
   partition: rules
-  bondDegree: 25
+  bondDegree: 24
 standards:
   - "ISO 19011:2018 §6.4 — audit evidence: a finding must name the files it rests on"
   - "ISO/IEC 25010:2023 §5.5 — analysability: a measurement must be affordable where it is read"

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about horo — horo — a whole tribe (a `team`) joins the society circle.",
-    "uuid": "a117bf04-80ed-8456-97eb-ba5bc90a2855",
+    "uuid": "cab0c70c-2190-893f-8234-ac46beec6f84",
     "words": [
       "use",
       "when",

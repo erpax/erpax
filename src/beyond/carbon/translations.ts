@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when accounting the gCO2e of a chain step for ESRS E1 / CSRD reporting — estimateCarbon converts CPU-ms and egress-bytes into grams via grid intensity, recordCarbon accumulates per tenant, getTenantCarbon reads the running total; the carbon dual of cost.",
-    "uuid": "9c3485b6-366d-8205-9cc7-4947423a43a0",
+    "uuid": "7419ef68-4a0e-8c9f-bc2c-7dae6d6efcfd",
     "words": [
       "use",
       "when",

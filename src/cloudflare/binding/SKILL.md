@@ -3,7 +3,7 @@ name: binding
 description: "Use when reasoning about binding — Tenant-scoped, RBAC-gated, audit-trailed Cloudflare binding access"
 atomPath: "cloudflare/binding"
 coordinate: "cloudflare/binding · 2/share · 7f5359af"
-contentUuid: "a25b5b8f-38f2-5741-bd10-210f1eb48e13"
+contentUuid: "98e711e3-a3f1-5fc9-bec6-ea38eefa6595"
 diamondUuid: "6087c4d0-ff65-8057-be21-8c3624713cf8"
 uuid: "7f5359af-9d88-8dea-9303-42d76f5b4e68"
 horo: 2
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "90479c19-8bd2-839c-8477-8690c39baf60"
+  computationUuid: "a745f087-35df-89df-817f-08d605693dfe"
   stages:
     - stage: path
       stageUuid: "109130fa-9842-85f6-9269-9ea49ff3d607"
@@ -26,7 +26,7 @@ signatures:
     - stage: horo
       stageUuid: "23e0e4d9-ef75-88bc-a516-a61b881a9e82"
     - stage: seal
-      stageUuid: "047bcba8-fb2b-8128-83c6-d21684cd3cbc"
+      stageUuid: "dfbabc77-f21d-8c7c-a5e9-f85635ce23df"
     - stage: uuid
       stageUuid: "8dc236e4-da3a-8a6f-8e40-8624dccbaae7"
 version: 2

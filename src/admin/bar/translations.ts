@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about bar — renders the strip a logged-in editor sees over public pages: the collection and document being viewed, and the link back into the admin panel that edits it.",
-    "uuid": "6d712be8-3530-81b2-9376-f8e22ac815f2",
+    "uuid": "9b7bf912-b761-8f95-9184-8d1ad8841d50",
     "words": [
       "use",
       "when",

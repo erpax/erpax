@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about leads — outward already holds the machinery: an answer is content-addressed, a remembers the last address, and returns **fresh · unchanged · moved · unreachable**.",
-    "uuid": "8ad8c0e7-0599-8f3e-80ea-35f6d9b24e1e",
+    "uuid": "2de560de-bd50-8acb-92c0-bf4c86990818",
     "words": [
       "use",
       "when",

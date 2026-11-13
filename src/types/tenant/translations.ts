@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about tenant — carries what differs between instances: , the it reports under, and its . The request types — create, update, batch — are the only shapes the management API accepts.",
-    "uuid": "5d0896d5-2f6d-8eac-8fee-d046db67bc48",
+    "uuid": "746d5680-82c0-8f58-8776-5e11444504f4",
     "words": [
       "use",
       "when",

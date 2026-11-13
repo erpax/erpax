@@ -3,7 +3,7 @@ name: locks
 description: "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection."
 atomPath: "period/locks"
 coordinate: "period/locks · 5/round · e02f15be"
-contentUuid: "1dec15ac-98e9-5162-9521-ad76dcc00010"
+contentUuid: "05084afe-cad4-5540-9cd9-dd48f6917e1e"
 diamondUuid: "f29a40b3-92b7-80c8-b710-347819493c3b"
 uuid: "e02f15be-20bf-87c5-86e8-3cf15227883c"
 horo: 5
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "d1f484d2-39ae-89a3-9c94-f70fd38f2446"
+  computationUuid: "7b66c3b7-a12e-8b83-849c-460749b30499"
   stages:
     - stage: path
       stageUuid: "cc1e9d80-676b-8778-8069-f436d1fe284c"
@@ -31,7 +31,7 @@ signatures:
     - stage: horo
       stageUuid: "2aa92084-8aef-8977-97c8-b7f6426f91ec"
     - stage: seal
-      stageUuid: "af212e82-93c4-83da-9683-6e0fb9a204b2"
+      stageUuid: "15d25a2e-525c-8d97-b59a-e37528f39a80"
     - stage: uuid
       stageUuid: "e7489a78-8388-80eb-8158-efd844fc6852"
 version: 2

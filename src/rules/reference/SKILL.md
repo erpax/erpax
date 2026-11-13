@@ -2,14 +2,14 @@
 name: reference
 description: "Use when the statute→code trace must resolve — the gate that a `src/…` path cited in prose or comments actually exists. The corpus fails closed on dead atom links but left dead FILE-PATH pointers ungated, and they rotted: the Наредба Н-18 law pointed at a standards path long after the matter moved. A citation that leads nowhere is unreviewable (ISO-19011 §6.4), so a legally usable ERP cannot have one. Zero tolerance on the statutory surface; a down-only ratchet elsewhere. Run: tsx src/rules/reference/index.ts"
 atomPath: "rules/reference"
-coordinate: "rules/reference · 5/round · a887a439"
-contentUuid: "0666650d-1a6a-56b0-acc4-cf83ad95e6b9"
-diamondUuid: "aae0eaa5-785d-8dca-aff0-f9e09c5c0eec"
-uuid: "a887a439-cb3d-85b0-b2fe-488fd4140342"
-horo: 5
+coordinate: "rules/reference · 4/weave · 079fc78a"
+contentUuid: "0f050062-0cba-54f6-90ef-e8c5c307dd8b"
+diamondUuid: "7443ed3c-5b75-8de3-be42-0c1e15995bfe"
+uuid: "079fc78a-2cf7-86bb-989b-12d9c08512d2"
+horo: 4
 typography:
   partition: rules
-  bondDegree: 49
+  bondDegree: 51
 standards:
   - "BG |Наредба|СУПТО|ЗДДС|ЗСч/.test(text)"
   - "BG Наредба-Н-18 §СУПТО — the software must be documented and inspectable"
@@ -20,7 +20,7 @@ standards:
   - "ZDDS — BG Value Added Tax Act; statute→code traces for fiscal citations fail closed here (not prose-only under rules/)"
 bindings: []
 signatures:
-  computationUuid: "cb1146e7-24ea-8470-92db-5fb4c5276579"
+  computationUuid: "1ba4a1d1-9136-8177-8309-a2fd3b6a80e1"
   stages:
     - stage: path
       stageUuid: "86832b64-e6a5-86a1-ace5-29376412f4d1"
@@ -29,13 +29,13 @@ signatures:
     - stage: boundary
       stageUuid: "d323fd78-939d-8f92-bf00-f7313e739514"
     - stage: links
-      stageUuid: "fc98578e-f12a-85ad-90d2-1b6dcd4188ef"
+      stageUuid: "91ad2af4-9103-85e8-b14a-33326000bdc6"
     - stage: horo
-      stageUuid: "5495eadb-49ad-89d0-8467-61e21f981f07"
+      stageUuid: "cac9c235-2822-8eb8-8173-eb7dc8779065"
     - stage: seal
       stageUuid: "ac1e0d49-543a-8fa9-a0d7-82885f0e7986"
     - stage: uuid
-      stageUuid: "ff94a884-05d1-8056-b46c-4c6158ccac2c"
+      stageUuid: "e3e86a6b-c8eb-8036-b222-b9abe4482f73"
 version: 2
 ---
 # reference — the citation must lead to the evidence

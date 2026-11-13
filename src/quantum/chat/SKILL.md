@@ -3,18 +3,18 @@ name: chat
 description: "Use when reasoning about a chat thread as a merkle chain — each message a content-uuid, the thread folding to one chain-uuid; reordering or changing any message changes the thread-uuid (tamper-evident history)."
 atomPath: "quantum/chat"
 coordinate: "quantum/chat · 4/weave · 531f3f03"
-contentUuid: "89fec140-ddf0-5353-91b6-b14ae26fdcbd"
-diamondUuid: "c610e1b6-b205-8455-bd41-2e7ea7faaba5"
+contentUuid: "c77003ab-beaf-533c-8ce3-27d768f918c4"
+diamondUuid: "786652e7-3f9f-8043-bd39-7d518f7d0593"
 uuid: "531f3f03-92fa-80f0-bf85-df71d1f9cbd1"
 horo: 4
 typography:
   partition: quantum
-  bondDegree: 105
+  bondDegree: 102
 standards:
   - "merkle hash-chain; RFC 9562 §5.8 content-uuid"
 bindings: []
 signatures:
-  computationUuid: "7d8188e8-d760-86f8-8d3f-dd1c35f69440"
+  computationUuid: "7b340629-c1cd-8ca0-837b-8671d64db863"
   stages:
     - stage: path
       stageUuid: "76e0ed3e-a2c5-8289-9bcf-b44560eaf1c4"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "1e86ded6-c843-8e79-bf3c-262b18a4e468"
     - stage: horo
-      stageUuid: "e2f68f2d-236c-8c79-bd67-9d2177f8d38f"
+      stageUuid: "8cfc3098-2191-8a71-b11a-9b87f20f841c"
     - stage: seal
       stageUuid: "19ba7de4-e9f9-8794-a527-1f93d7eff152"
     - stage: uuid
-      stageUuid: "335d7cb3-3285-810d-973d-04a642d93c8b"
+      stageUuid: "93411a6a-f008-878f-ab0a-da618599249e"
 quantum:
   superposition:
     - agent
@@ -53,8 +53,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "7d8188e8-d760-86f8-8d3f-dd1c35f69440"
-    contentUuid: "89fec140-ddf0-5353-91b6-b14ae26fdcbd"
+    computationUuid: "7b340629-c1cd-8ca0-837b-8671d64db863"
+    contentUuid: "c77003ab-beaf-533c-8ce3-27d768f918c4"
 version: 2
 ---
 # quantum/chat — the thread as a merkle chain
@@ -67,4 +67,4 @@ Matter-twin: `src/quantum/chat/index.ts` (`threadUuid` · `appended` · `compose
 
 @standard merkle hash-chain; RFC 9562 §5.8 content-uuid
 
-<sub>content-uuid `89fec140-ddf0-5353-91b6-b14ae26fdcbd` · account `quantum/chat` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `c77003ab-beaf-533c-8ce3-27d768f918c4` · account `quantum/chat` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

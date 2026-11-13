@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a lead should be visible to everyone who can develop it — turns each open intent into a nested page under leads, and each resolved intent that names a document into a redirect from the lead's address to that document, as generated seeds loaded through the REST API.",
-    "uuid": "21f14ced-c398-8443-b271-ed3b8c69e1aa",
+    "uuid": "3c981efe-2681-89c9-8fd9-244326a70d3e",
     "words": [
       "use",
       "when",

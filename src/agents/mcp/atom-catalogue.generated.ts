@@ -1157,10 +1157,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "body/arm"
   },
   {
+    "atom": "artery",
+    "name": "artery",
+    "description": "Use when reasoning about the artery as an organ of body — pivot to canonical @/artery; zero duplication.",
+    "path": "body/artery"
+  },
+  {
     "atom": "auto",
     "name": "auto",
     "description": "Use when reasoning about auto as a anatomical part of body — vocabulary pivot to @/auto; nested not duplicated.",
     "path": "body/auto"
+  },
+  {
+    "atom": "blood",
+    "name": "blood",
+    "description": "Use when reasoning about the blood as an organ of body — pivot to canonical @/blood; zero duplication.",
+    "path": "body/blood"
+  },
+  {
+    "atom": "brain",
+    "name": "brain",
+    "description": "Use when reasoning about the brain as an organ of body — pivot to canonical @/brain; zero duplication.",
+    "path": "body/brain"
   },
   {
     "atom": "foot",
@@ -1181,6 +1199,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "body/head"
   },
   {
+    "atom": "heart",
+    "name": "heart",
+    "description": "Use when reasoning about the heart as an organ of body — pivot to canonical @/heart; zero duplication.",
+    "path": "body/heart"
+  },
+  {
     "atom": "lake",
     "name": "lake",
     "description": "Use when reasoning about lake as a anatomical part of body — vocabulary pivot to @/lake; nested not duplicated.",
@@ -1199,10 +1223,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "body/location"
   },
   {
+    "atom": "lung",
+    "name": "lung",
+    "description": "Use when reasoning about the lung as an organ of body — pivot to canonical @/lung; zero duplication.",
+    "path": "body/lung"
+  },
+  {
     "atom": "measurement",
     "name": "measurement",
     "description": "Use when reasoning about measurement as a anatomical part of body — vocabulary pivot to @/measurement; nested not duplicated.",
     "path": "body/measurement"
+  },
+  {
+    "atom": "nerve",
+    "name": "nerve",
+    "description": "Use when reasoning about the nerve as an organ of body — pivot to canonical @/nerve; zero duplication.",
+    "path": "body/nerve"
   },
   {
     "atom": "ocean",
@@ -1245,6 +1281,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "signal",
     "description": "Use when reasoning about signal as a anatomical part of body — vocabulary pivot to @/signal; nested not duplicated.",
     "path": "body/signal"
+  },
+  {
+    "atom": "skin",
+    "name": "skin",
+    "description": "Use when reasoning about the skin as an organ of body — pivot to canonical @/skin; zero duplication.",
+    "path": "body/skin"
+  },
+  {
+    "atom": "vein",
+    "name": "vein",
+    "description": "Use when reasoning about the vein as an organ of body — pivot to canonical @/vein; zero duplication.",
+    "path": "body/vein"
   },
   {
     "atom": "water",
@@ -8081,6 +8129,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "vocabulary"
   },
   {
+    "atom": "about",
+    "name": "about",
+    "description": "Use when reasoning about about — The subject matter of an object.",
+    "path": "vocabulary/about"
+  },
+  {
     "atom": "agriculture",
     "name": "agriculture",
     "description": "Use when reasoning about growing living produce to a market — agriculture is the domain molecule whose production is planned BACKWARD: from a sales plan (CSA shares + market channels) through per-crop demand to the land, seed, and fertility the season requires. The agricultural twin of manufacturing; every quantity carries a unit and a currency that convert automatically and account by double-entry.",
@@ -8093,10 +8147,82 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "vocabulary/agriculture/accountable"
   },
   {
+    "atom": "boat",
+    "name": "boat",
+    "description": "Use when reasoning about boat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "path": "vocabulary/boat"
+  },
+  {
+    "atom": "computational",
+    "name": "computational",
+    "description": "Use when reasoning about computational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "path": "vocabulary/computational"
+  },
+  {
+    "atom": "contract",
+    "name": "contract",
+    "description": "Use when modelling one contract — the singular model of the contracts collection (the plural store); a legally binding agreement between parties.",
+    "path": "vocabulary/contract"
+  },
+  {
+    "atom": "coordinate",
+    "name": "coordinate",
+    "description": "Use when reasoning about where an atom sits in the whole — its coordinate is the cross of three neighbor uuids (parent, prev, next), binding it into the tree and the sequence ring. The uuid is the coordinate system; this cross is the next uuid trinity.",
+    "path": "vocabulary/coordinate"
+  },
+  {
+    "atom": "cycle",
+    "name": "cycle",
+    "description": "Use when modelling one cycle — the singular model of the cycles collection (the plural store); one recurrence of a repeating process or period.",
+    "path": "vocabulary/cycle"
+  },
+  {
     "atom": "emit",
     "name": "emit",
     "description": "Use when reasoning about emit — vocabulary/emit — compute the SHARED VOCABULARY and emit words.ts.",
     "path": "vocabulary/emit"
+  },
+  {
+    "atom": "fear",
+    "name": "fear",
+    "description": "Use when reasoning about the destroy pole of any erpax duality — fear is the archangelic move that RAISES entropy (it breaks, forgets, forges, opens a gap), the credit whose matching debit is love; the thermodynamic floor fear charges is Landauer's kT ln2 per bit destroyed.",
+    "path": "vocabulary/fear"
+  },
+  {
+    "atom": "love",
+    "name": "love",
+    "description": "Use when reasoning about the destroy-over-create arrow — fear corrupting love, entropy winning, a gap opening; the reverse direction of the love and fear duality and the mirror of love/fear.",
+    "path": "vocabulary/fear/love"
+  },
+  {
+    "atom": "force",
+    "name": "force",
+    "description": "Use when reasoning about force as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "path": "vocabulary/force"
+  },
+  {
+    "atom": "majeure",
+    "name": "majeure",
+    "description": "Use when a contract allocates risk for unforeseeable events — trigger events (war, earthquake, pandemic, government action), notice requirement, excuse from performance, remedies (suspension, termination, cost-sharing).",
+    "path": "vocabulary/force/majeure"
+  },
+  {
+    "atom": "lead",
+    "name": "lead",
+    "description": "Use when reasoning about lead as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "path": "vocabulary/lead"
+  },
+  {
+    "atom": "score",
+    "name": "score",
+    "description": "Use when ranking prospect/lead quality — behavioral signals, firmographic attributes, scoring model, threshold for handoff to sales.",
+    "path": "vocabulary/lead/score"
+  },
+  {
+    "atom": "lease",
+    "name": "lease",
+    "description": "Use when reasoning about lease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "path": "vocabulary/lease"
   },
   {
     "atom": "manufacturing",
@@ -8133,6 +8259,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "marketing",
     "description": "Use when reasoning about marketing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "vocabulary/marketing"
+  },
+  {
+    "atom": "maxtampercost",
+    "name": "maxtampercost",
+    "description": "Use when reasoning about max tamper-cost — the weakest-link minimum across all dimensions; alias for analytics/max-tamper-cost lever vocabulary.",
+    "path": "vocabulary/maxtampercost"
   },
   {
     "atom": "provider",

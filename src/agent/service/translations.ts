@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an agent's identity is in question — an agent IS its content (name ⊗ skills ⊗ purpose), so its uuid is the content-address of that definition and an identical clone is the SAME agent, not a copy.",
-    "uuid": "2da7fdc2-6aac-8b12-9662-db58c7d2e51e",
+    "uuid": "6ac6a23b-a79c-8293-9b99-1153de29afbe",
     "words": [
       "use",
       "when",

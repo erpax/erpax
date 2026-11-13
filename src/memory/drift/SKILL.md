@@ -3,13 +3,13 @@ name: drift
 description: "Use when checking that the agent memory index still matches its files — MEMORY.md is the load surface, so a memory absent from it is written but never loaded, and an index line with no file is a citation leading nowhere. Fails closed on both directions; zero is a theorem, not a ratchet."
 atomPath: "memory/drift"
 coordinate: "memory/drift · 1/base · e26136c3"
-contentUuid: "3a7c2916-7ae8-50af-9409-73c839668838"
+contentUuid: "f550f2fb-0e6b-5d65-92c0-0d04ff97f363"
 diamondUuid: "94536446-ab1e-8dcd-875e-3a10e9cd074e"
 uuid: "e26136c3-3579-8fe2-ab47-fdc347bc89fd"
 horo: 1
 typography:
   partition: memory
-  bondDegree: 14
+  bondDegree: 13
 standards: []
 bindings: []
 signatures:

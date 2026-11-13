@@ -2,14 +2,14 @@
 name: scope
 description: "Use when reasoning about scope — Наредба Н-18 чл."
 atomPath: "naredba/n/18/scope"
-coordinate: "naredba/n/18/scope · 8/crest · 595e8daf"
-contentUuid: "3521fa0c-54cf-54ee-af51-904cecca62ed"
-diamondUuid: "ce3129ee-b0e2-886a-8479-3737cd78e88d"
-uuid: "595e8daf-74fe-8696-b1aa-f8cc857a3f3d"
-horo: 8
+coordinate: "naredba/n/18/scope · 2/share · a5a5a1cb"
+contentUuid: "0eb3efa7-eeae-54e1-b482-9a8e6cce396b"
+diamondUuid: "9f27c0d4-df83-8ee2-94bc-de30182ff640"
+uuid: "a5a5a1cb-31c6-831e-8782-a6cd1e137b0b"
+horo: 2
 typography:
   partition: naredba
-  bondDegree: 25
+  bondDegree: 24
 standards:
   - "BG ЗДДС §118 fiscal-receipt-obligation"
   - "BG ЗПУПС payment-services (PSP transfers)"
@@ -18,7 +18,7 @@ standards:
   - ZDDS
 bindings: []
 signatures:
-  computationUuid: "759dd4d0-8282-86b6-8e7a-3c3e39a5a558"
+  computationUuid: "7ac15292-e819-80bb-8eba-4f4e67933866"
   stages:
     - stage: path
       stageUuid: "9556fbea-f8ef-86c5-89d8-8cba67167fa4"
@@ -27,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "a59eab50-6bf9-8e36-bed1-c1d6d6e27cd4"
     - stage: links
-      stageUuid: "ffbe55fa-193a-8383-b6f7-c6fbb454f389"
+      stageUuid: "22926473-1572-8fb0-bf3c-a6b66bb6fb12"
     - stage: horo
-      stageUuid: "e61e27a4-5d0e-8920-a069-1d7b7cc27a15"
+      stageUuid: "59648af5-57d6-8c2e-aded-c903ec061b16"
     - stage: seal
       stageUuid: "c65231d3-8411-884a-925b-57cdf255889a"
     - stage: uuid
-      stageUuid: "2ebe0c98-b23f-8bc0-b9ff-c6fd3e076b29"
+      stageUuid: "b21e2c7d-dcc8-8b1b-87fa-0618df6a5091"
 version: 2
 ---
 # naredba/n/18/scope

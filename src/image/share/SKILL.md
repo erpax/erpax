@@ -3,19 +3,19 @@ name: share
 description: "Use when a page needs an Open Graph image without uploading one, or a formula needs to show its own result — shareImage draws a document's SEO-plugin title and description over its content-uuid's identity animation (1200×630, pure SMIL, no Media row, no R2 object, no Payload request), and coilImage draws the coiled rosetta turning: trinities rotating inside a parent turning the other way, crosses as edges by their measured faces."
 atomPath: "image/share"
 coordinate: "image/share · 4/weave · 230a59fd"
-contentUuid: "986f9afb-4d4c-5f27-83f7-c787750929f0"
-diamondUuid: "4f0382e8-4893-8f18-ad84-7606db093877"
+contentUuid: "5e12af6b-d401-5b66-ae3a-a7991e4cb6d8"
+diamondUuid: "e5051931-ae7a-872a-a0a8-5925bd811c3f"
 uuid: "230a59fd-f4e1-87ba-86b4-e2609b8c8d1b"
 horo: 4
 typography:
   partition: image
-  bondDegree: 61
+  bondDegree: 30
 standards:
   - "OGP open-graph-protocol-1.0 (og:image 1200×630)"
   - "SVG 1.1 / SMIL animation"
 bindings: []
 signatures:
-  computationUuid: "2b643fa1-d4a9-8fb4-8bb2-b7f235ae9285"
+  computationUuid: "08263070-21b5-80f1-97ea-daf331f8cf6d"
   stages:
     - stage: path
       stageUuid: "5d878f33-bd51-84d0-bbb0-51ba33737773"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "ae3f95d7-eac1-8c99-89d4-cff71b72689f"
     - stage: horo
-      stageUuid: "8c683cdf-24b7-858b-90a7-ef7981489516"
+      stageUuid: "5a92fd44-95db-8a9a-94ad-f89aa7435887"
     - stage: seal
       stageUuid: "8328fd8e-6116-85ba-b45c-1dd5fca1f7f5"
     - stage: uuid
-      stageUuid: "79f301a6-b101-8776-a63b-821fed625d0c"
+      stageUuid: "63413e08-cec9-8322-b901-20f5410ba0c9"
 version: 2
 ---
 # image/share — the picture a page shares, and the picture a formula makes of itself

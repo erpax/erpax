@@ -3,7 +3,7 @@ name: standards
 description: "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family."
 atomPath: standards
 coordinate: "standards · 2/share · 9e3ce2b9"
-contentUuid: "3c962d62-3b73-5876-a8e0-5d25ae8f47e3"
+contentUuid: "e4d29888-4ad7-5924-98d0-1111787c5bfb"
 diamondUuid: "05daa48b-6fe6-81c3-97af-60fd1f84c750"
 uuid: "9e3ce2b9-7795-893d-b262-6b87ac49cc0f"
 horo: 2
@@ -72,7 +72,7 @@ Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
 <!-- CATALOGUE:START -->
 
-## Catalogue — 159 standards, 4915 citations
+## Catalogue — 159 standards, 4880 citations
 
 <!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->
 
@@ -88,11 +88,11 @@ inline HTML that renders as a coloured dot.
 | --- | ---: | ---: | --- |
 | en | 1 | 128 | `EN-16931` · 128 |
 | etsi | 2 | 31 | `eIDAS` · 19 |
-| eu | 26 | 888 | `EU-Intrastat-Reg-2019/2152` · 348 |
+| eu | 26 | 887 | `EU-Intrastat-Reg-2019/2152` · 347 |
 | gdpr | 1 | 29 | `EU-2016/679` · 29 |
-| iec | 6 | 322 | `ISO/IEC-25010` · 199 |
+| iec | 6 | 318 | `ISO/IEC-25010` · 195 |
 | ifrs | 20 | 206 | `IFRS-15` · 38 |
-| iso | 32 | 1477 | `ISO-8601-1` · 331 |
+| iso | 32 | 1471 | `ISO-8601-1` · 329 |
 | national | 2 | 47 | `Naredba-N-18` · 43 |
 | nist | 10 | 271 | `NIST-SP-800-63` · 95 |
 | oecd | 4 | 85 | `SAF-T` · 62 |
@@ -102,9 +102,9 @@ inline HTML that renders as a coloured dot.
 | un | 6 | 94 | `ISO-9735` · 42 |
 | upu | 1 | 7 | `UPU-S42` · 7 |
 | us_gaap | 3 | 61 | `US-CTA-2021` · 38 |
-| w3c | 11 | 457 | `schema.org` · 292 |
+| w3c | 11 | 433 | `schema.org` · 268 |
 | wcag | 2 | 63 | `W3C-WAI-ARIA-1.2` · 33 |
-| **Σ** | **159** | **4915** | |
+| **Σ** | **159** | **4880** | |
 
 **Registered, awaiting citation: 104.** Known canonical standards the registry holds and
 no code cites yet — they seed as `proposed` and become cited as a domain grows. Listed in

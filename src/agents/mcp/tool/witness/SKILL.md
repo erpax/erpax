@@ -3,13 +3,13 @@ name: witness
 description: "Use when reasoning about witness — Two tools, and the second exists because the first was hand-picked."
 atomPath: "agents/mcp/tool/witness"
 coordinate: "agents/mcp/tool/witness · 7/descent · 5c1d3fc1"
-contentUuid: "f161b621-f557-5142-a1d6-7aa7a7fc542e"
+contentUuid: "4042b40d-8888-5b78-8443-e91cc7664898"
 diamondUuid: "20e80374-a4e8-8f2f-b60e-23f170bbe949"
 uuid: "5c1d3fc1-2847-860b-a394-f049935576ef"
 horo: 7
 typography:
   partition: agents
-  bondDegree: 17
+  bondDegree: 14
 standards:
   - MCP
   - "MCP 0.6 — tools/list + tools/call result shape {content:[{type,text}]}"

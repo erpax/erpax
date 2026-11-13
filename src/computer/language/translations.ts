@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about language as a hardware facet of computer — vocabulary pivot to @/language; nested not duplicated.",
-    "uuid": "1917dc1c-5695-8526-afd4-7657064cc0cf",
+    "uuid": "8f6cec38-f647-8cf8-8038-723224fd44b8",
     "words": [
       "use",
       "when",

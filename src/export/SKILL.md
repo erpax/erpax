@@ -3,13 +3,13 @@ name: export
 description: "Use when reasoning about export — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: export
 coordinate: "export · 4/weave · 5fd7a9ed"
-contentUuid: "c0b87b05-2b9f-5f55-a144-e26377aba4ee"
+contentUuid: "f697f17d-e001-5b99-accb-2b5a63d8b644"
 diamondUuid: "5c5a70b0-a55b-8b23-be07-3622f3abba8f"
 uuid: "5fd7a9ed-bcdb-8228-9a30-0d1acb44ecf1"
 horo: 4
 typography:
   partition: export
-  bondDegree: 12
+  bondDegree: 11
 standards:
   - "EU-537/2014"
   - "EU-910/2014"

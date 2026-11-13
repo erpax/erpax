@@ -3,17 +3,17 @@ name: base
 description: "Use when a collection is declared — createAccountingCollection takes declarative metadata (emits, horoStates, access, audit) and wires every cross-cutting concern, so a collection says what it IS and never how it is plumbed."
 atomPath: "factory/collection/base"
 coordinate: "factory/collection/base · 4/weave · 33e38e01"
-contentUuid: "b428a3d4-2b7f-52bc-8d39-d60657e63142"
-diamondUuid: "1db3de09-505f-8dd9-bea2-b37dc401c510"
+contentUuid: "a600f230-314c-58e5-8c7f-f8ef9ade7a38"
+diamondUuid: "0bd6ff0e-754e-86fe-af38-a8343b49e95c"
 uuid: "33e38e01-7b70-89ca-ba4d-bef5a2f0a8c7"
 horo: 4
 typography:
   partition: factory
-  bondDegree: 40
+  bondDegree: 23
 standards: []
 bindings: []
 signatures:
-  computationUuid: "73960387-7cea-8999-a467-f55781bda75c"
+  computationUuid: "558fea97-0ea1-8ad0-99a3-ea02374e228d"
   stages:
     - stage: path
       stageUuid: "83199b72-4b8d-81c1-9344-ff3cb4733d91"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "18f5bc2a-aba2-8c83-91d3-7c48e26b13ae"
     - stage: horo
-      stageUuid: "4ef1843c-1665-8a68-ae27-eb985e724c93"
+      stageUuid: "e224ae97-fe96-8515-8c5d-ed2b9ac4579c"
     - stage: seal
       stageUuid: "49a14bc1-f53e-8287-92ed-065e8d208131"
     - stage: uuid
-      stageUuid: "787e3305-a5fe-8121-9d63-50dff56b5cb1"
+      stageUuid: "2ad2cf61-3486-812e-9e30-2288275c94a1"
 version: 2
 ---
 # factory/collection/base — the collection every accounting table is

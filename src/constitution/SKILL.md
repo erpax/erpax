@@ -3,13 +3,13 @@ name: constitution
 description: "Use when reasoning about the entrenched foundation, or when judging whether a proposed change may ship — two rules at the root (no expectation: claim no result you have not computed; no judgment: reject nothing you have not measured, discernment by test kept), the nine laws that are their lemmas (duality · legality · honest boundaries · balance · service · conservation · reciprocity · reproducibility · regeneration), and the seven supreme articles saying what a majority may amend versus what is perpetual; every predicate computed, fails closed, and heads every agent prompt."
 atomPath: constitution
 coordinate: "constitution · 1/base · 9d1bd684"
-contentUuid: "0895c74b-67a2-57f9-8e3a-195a0f7cdf86"
-diamondUuid: "a9212b79-377b-883f-b7f3-3c137fce3f0e"
+contentUuid: "2397a5b5-e9a8-5738-a943-a90353076816"
+diamondUuid: "b9d8d8b2-b8ea-85d8-8ecc-ad358e06254d"
 uuid: "9d1bd684-0164-81af-b3dc-559ddfa74874"
 horo: 1
 typography:
   partition: constitution
-  bondDegree: 71
+  bondDegree: 62
 standards:
   - "ISO 37000:2021 governance-of-organizations principle-of-purpose"
   - "ISO 37000:2021 governance-of-organizations principle-of-purpose`"
@@ -19,7 +19,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "21214b46-bf68-8b6a-ba61-a6bf8f4880be"
+  computationUuid: "dbdf1f7e-6265-8efd-8b46-16f490215d96"
   stages:
     - stage: path
       stageUuid: "210a2855-2ef2-8f53-8a65-93ebae61b5f1"
@@ -30,11 +30,11 @@ signatures:
     - stage: links
       stageUuid: "0ad915dd-260b-826e-9392-0afaa601efb1"
     - stage: horo
-      stageUuid: "f79e5073-906f-8545-8969-a37aaf00f2f4"
+      stageUuid: "c72dda78-5b66-8b4f-999c-1ac5b6fdadb7"
     - stage: seal
       stageUuid: "79d6cdcb-5abc-8ea1-af80-6c8ad39015bf"
     - stage: uuid
-      stageUuid: "0fd60e1f-52df-823d-9c98-c0ae2c7aa57f"
+      stageUuid: "72febbb4-4932-8d64-a7eb-b0dd57bfdced"
 version: 2
 ---
 # constitution — the 0 of the sequence, the supreme law erpax derives from

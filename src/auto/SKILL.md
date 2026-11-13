@@ -3,13 +3,13 @@ name: auto
 description: "Use when reasoning about auto as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: auto
 coordinate: "auto · 7/descent · ef47607b"
-contentUuid: "ababe311-dba4-5c30-bd7c-1185ec7c6056"
+contentUuid: "5c08f080-49b5-5876-af33-a2f4738a4446"
 diamondUuid: "8994ba52-e0ad-8548-85c4-05039dfe2fab"
 uuid: "ef47607b-6cbb-8d5a-adec-db5b20eb4479"
 horo: 7
 typography:
   partition: auto
-  bondDegree: 39
+  bondDegree: 37
 standards:
   - "EU-Intrastat-Reg-2019/2152"
   - "ISO-8601-1"

@@ -2,14 +2,14 @@
 name: train
 description: "Use when auto-training an actor (user, employee, or agent) toward best efficiency in the app — closing the competency gap (required − held) by routing each deficit to the skillRoute that fills it, the gap priced as a decompression debt that off-gasses toward the role's M-value. Efficiency IS the pay-fraction (etrima efficiency_percent); training literally raises pay."
 atomPath: train
-coordinate: "train · 1/base · 2ae05c01"
-contentUuid: "123bd04a-dbe5-51d2-b5dc-e3aa852c817b"
-diamondUuid: "8f074d53-abec-8ca8-a230-36b1462f42c2"
-uuid: "2ae05c01-fc7c-8ce3-b966-91b88af29b81"
-horo: 1
+coordinate: "train · 4/weave · 99f076ff"
+contentUuid: "2b174c8c-86ab-5c83-9cbe-a6dee986bc0d"
+diamondUuid: "386db610-eab5-80b6-9bef-0db9e8355fe5"
+uuid: "99f076ff-f176-82dc-bc14-04d694fc04c1"
+horo: 4
 typography:
   partition: train
-  bondDegree: 83
+  bondDegree: 80
 standards:
   - "ISO 30405:2016 essential-vs-optional (mandatory gates the surface)"
   - "ISO 30405:2016 essential-vs-optional (mandatory gates the surface)`"
@@ -18,7 +18,7 @@ standards:
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "08dded10-76c5-8e6f-92b7-3f0a3ef31a98"
+  computationUuid: "4c1348d2-109a-8a0a-b29d-f4596383024e"
   stages:
     - stage: path
       stageUuid: "a67248fb-3e0d-87f5-a3e2-ec84b3e1290e"
@@ -27,13 +27,13 @@ signatures:
     - stage: boundary
       stageUuid: "3667f008-d9c8-8e04-941a-4805a5bfbb26"
     - stage: links
-      stageUuid: "13392687-7c2f-8146-be8b-ee858fb75212"
+      stageUuid: "abc05d6b-072b-82f3-832b-fe81aa6622ad"
     - stage: horo
-      stageUuid: "577c3f83-9123-8da8-9035-ca980ece5dc6"
+      stageUuid: "3dd24f4e-0e6b-8223-bd62-85d0c1cbeab8"
     - stage: seal
       stageUuid: "d3ee79bb-827b-8f01-a69d-14db001a86ad"
     - stage: uuid
-      stageUuid: "27427534-8e9a-841b-9208-70985001f250"
+      stageUuid: "85d099d9-756a-8e28-864c-8e148564103c"
 version: 2
 ---
 # train — close the competency gap, off-gas the debt, climb the pay curve

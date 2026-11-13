@@ -175,14 +175,20 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "body/abdomen",
   "body/anatomy",
   "body/arm",
+  "body/artery",
   "body/auto",
+  "body/blood",
+  "body/brain",
   "body/foot",
   "body/hand",
   "body/head",
+  "body/heart",
   "body/lake",
   "body/leg",
   "body/location",
+  "body/lung",
   "body/measurement",
+  "body/nerve",
   "body/ocean",
   "body/one",
   "body/review",
@@ -190,6 +196,8 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "body/sea",
   "body/shop",
   "body/signal",
+  "body/skin",
+  "body/vein",
   "body/water",
   "boltzmann",
   "book",
@@ -1353,6 +1361,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "vocabulary/manufacturing/seed/positions",
   "vocabulary/manufacturing/seed/standards",
   "vocabulary/marketing",
+  "vocabulary/maxtampercost",
   "vocabulary/tag",
   "vocabulary/tag/list",
   "voting",
@@ -1396,7 +1405,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "xml/escape"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1389 as const
+export const ATOM_LEDGER_PATH_COUNT = 1398 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -2055,9 +2064,21 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "body",
     "body/arm"
   ],
+  "body/artery": [
+    "body",
+    "body/artery"
+  ],
   "body/auto": [
     "body",
     "body/auto"
+  ],
+  "body/blood": [
+    "body",
+    "body/blood"
+  ],
+  "body/brain": [
+    "body",
+    "body/brain"
   ],
   "body/foot": [
     "body",
@@ -2071,6 +2092,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "body",
     "body/head"
   ],
+  "body/heart": [
+    "body",
+    "body/heart"
+  ],
   "body/lake": [
     "body",
     "body/lake"
@@ -2083,9 +2108,17 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "body",
     "body/location"
   ],
+  "body/lung": [
+    "body",
+    "body/lung"
+  ],
   "body/measurement": [
     "body",
     "body/measurement"
+  ],
+  "body/nerve": [
+    "body",
+    "body/nerve"
   ],
   "body/ocean": [
     "body",
@@ -2114,6 +2147,14 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "body/signal": [
     "body",
     "body/signal"
+  ],
+  "body/skin": [
+    "body",
+    "body/skin"
+  ],
+  "body/vein": [
+    "body",
+    "body/vein"
   ],
   "body/water": [
     "body",
@@ -6463,6 +6504,10 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
     "vocabulary",
     "vocabulary/marketing"
   ],
+  "vocabulary/maxtampercost": [
+    "vocabulary",
+    "vocabulary/maxtampercost"
+  ],
   "vocabulary/tag": [
     "vocabulary",
     "vocabulary/tag"
@@ -6616,4 +6661,4 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   ]
 } as const
 
-export const MERGED_NESTED_PATH_COUNT = 864 as const
+export const MERGED_NESTED_PATH_COUNT = 873 as const

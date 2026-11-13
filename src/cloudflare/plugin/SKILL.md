@@ -3,7 +3,7 @@ name: plugin
 description: "Use when a plugin needs a narrowed Cloudflare access surface — the typed PluginAccess<K> face plus its helper, so a plugin receives only the bindings it declares."
 atomPath: "cloudflare/plugin"
 coordinate: "cloudflare/plugin · 1/base · fd137818"
-contentUuid: "4312d5ef-4d97-5077-afc4-14552fedf612"
+contentUuid: "74147c69-b781-5edf-99c9-48e7eb7eccda"
 diamondUuid: "2b0f2f1c-fd25-828a-9904-5bde70088f45"
 uuid: "fd137818-1fe1-8de9-a2dd-70fc9b8018de"
 horo: 1
@@ -15,7 +15,7 @@ standards:
   - "ISO/IEC-27001:2022"
 bindings: []
 signatures:
-  computationUuid: "af937217-3743-8130-9b60-684af5c4d07a"
+  computationUuid: "26b2b3a3-fb46-8efd-b7a4-702fd7ca9c42"
   stages:
     - stage: path
       stageUuid: "4e348906-8276-8c5c-bf0c-1d683508e818"
@@ -28,7 +28,7 @@ signatures:
     - stage: horo
       stageUuid: "88f7f483-7ad0-8084-bd24-22d80dbe6653"
     - stage: seal
-      stageUuid: "19e0a7d6-14e4-8a8f-9d67-1300f4aa07a8"
+      stageUuid: "60af4bc1-f64c-8cc0-9658-217c4508e936"
     - stage: uuid
       stageUuid: "398c5deb-4cf9-8bc0-b451-79c509440307"
 version: 2

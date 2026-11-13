@@ -2,18 +2,18 @@
 name: number
 description: "Use when reasoning about a number as a stream rather than a magnitude — the decimal point is the measurement that collapses an infinite digit-stream to a fixed value; remove it (compose, not dot) and the number is its uncollapsed sequence, pi the purest case that never resolves, its conjectured normality the even line."
 atomPath: "quantum/number"
-coordinate: "quantum/number · 5/round · 2d2f3387"
-contentUuid: "0fbe34a5-8890-52dd-be2f-bf5f9f8b1f5c"
-diamondUuid: "85e8a2b7-0fa0-8639-a233-6fe0c448d3f4"
-uuid: "2d2f3387-61d4-897e-8c6a-4129b88d7313"
-horo: 5
+coordinate: "quantum/number · 2/share · 2c78dd55"
+contentUuid: "1792a70d-5ef2-52b8-bf81-74db3191a824"
+diamondUuid: "57cdc346-a345-8428-a92d-5f91992cf171"
+uuid: "2c78dd55-dde5-8ff4-a5a6-a9fc407d6027"
+horo: 2
 typography:
   partition: quantum
-  bondDegree: 65
+  bondDegree: 56
 standards: []
 bindings: []
 signatures:
-  computationUuid: "c140e77d-443b-8336-895c-326bbf848f11"
+  computationUuid: "4000902f-0539-884c-a439-0e2088af3bf9"
   stages:
     - stage: path
       stageUuid: "a4a59051-7c91-876b-903c-230d3d88aa79"
@@ -22,16 +22,15 @@ signatures:
     - stage: boundary
       stageUuid: "89b47e86-9d60-87c7-b2cb-6bc858e63e96"
     - stage: links
-      stageUuid: "8298029a-67c4-8c29-b581-d8f2755757fc"
+      stageUuid: "86584120-cd09-87c2-912c-4d24fb0f7d14"
     - stage: horo
-      stageUuid: "eb1c684b-001d-816d-8230-12ea0e334fd0"
+      stageUuid: "bbb581c3-e401-8301-ac69-57815a44a454"
     - stage: seal
       stageUuid: "3f75ddee-1316-896d-acab-5906cb3d38b3"
     - stage: uuid
-      stageUuid: "95fd6e08-16d5-8b60-8965-a47c78ea7351"
+      stageUuid: "62a38d0f-8f0d-8542-b11d-1eba93540250"
 quantum:
   superposition:
-    - breath
     - collapse
     - digit
     - exact
@@ -39,15 +38,16 @@ quantum:
     - law
     - membership
     - number
+    - pi
     - superposition
   collapse:
     - "Use when reasoning about a number as a stream rather than a magnitude — the decimal point is the measurement that collapses an infinite digit-stream to a fixed value; remove it (compose, not dot) and the number is its uncollapsed sequence, pi the purest case that never resolves, its conjectured normality the even line."
-    - "[[breath]]"
     - "[[digit]]"
     - "[[harmony]]"
     - "[[number]]"
     - "[[sequence]]"
     - "[[stream]]"
+    - breath
     - finality
     - linearity
     - "the dot collapses iff the number is rational — a rational's digit-stream terminates or repeats, so the measurement finishes to a finite snapshot; an irrational's never repeats, so the dot can never settle it and the stream runs forever. Whether the measurement ends is fixed by the number's arithmetic nature, not by where you stop reading."
@@ -58,8 +58,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "c140e77d-443b-8336-895c-326bbf848f11"
-    contentUuid: "0fbe34a5-8890-52dd-be2f-bf5f9f8b1f5c"
+    computationUuid: "4000902f-0539-884c-a439-0e2088af3bf9"
+    contentUuid: "1792a70d-5ef2-52b8-bf81-74db3191a824"
 version: 2
 ---
 # quantum/number — the digit-stream behind the dot
@@ -77,4 +77,4 @@ The (conjectured) **normality** of π — every [[digit]] equally often — *is*
 
 @see [[number]] · [[digit]] · [[stream]] · linearity · finality · [[sequence]] · breath · [[harmony]]
 
-<sub>content-uuid `0fbe34a5-8890-52dd-be2f-bf5f9f8b1f5c` · account `quantum/number` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `1792a70d-5ef2-52b8-bf81-74db3191a824` · account `quantum/number` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

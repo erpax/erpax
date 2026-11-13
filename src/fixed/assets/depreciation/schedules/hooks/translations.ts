@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — books the period's charge when the schedule row is posted. The schedule is the record of what SHOULD be charged and when; letting the hook post it is what keeps the two from…",
-    "uuid": "592313f5-30d3-889d-bb89-b453c64269ab",
+    "uuid": "22e6b52f-6fc3-8435-9563-34cdc6be44c8",
     "words": [
       "use",
       "when",

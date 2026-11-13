@@ -3,13 +3,13 @@ name: memory
 description: "Use when reasoning about memory as a part of computer — pivot to canonical @/memory/quantum; nested not duplicated."
 atomPath: "computer/memory"
 coordinate: "computer/memory · 1/base · 20b65a06"
-contentUuid: "c8179f89-fbd3-5c15-be5b-ff7dfd636ea1"
+contentUuid: "e1803063-c895-5622-a96e-824302888177"
 diamondUuid: "fe661f32-0d9f-8d93-81c0-3e1ca7760551"
 uuid: "20b65a06-0384-8947-b306-085d2d7b3156"
 horo: 1
 typography:
   partition: computer
-  bondDegree: 80
+  bondDegree: 84
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

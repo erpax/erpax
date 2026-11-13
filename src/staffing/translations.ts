@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about staffing — Six atoms already computed the five faces of a position. **Nothing joined them.**",
-    "uuid": "4f04a75b-f40c-8423-bf83-d38c11e57dd6",
+    "uuid": "9c49d0ce-4b10-81d7-a4b5-80333f2a7617",
     "words": [
       "use",
       "when",

@@ -3,7 +3,7 @@ name: membership
 description: "Use when reasoning about membership — diamond/membership — stray-file membership audit (no readme dependency)."
 atomPath: "diamond/membership"
 coordinate: "diamond/membership · 5/round · ec69cfa5"
-contentUuid: "3f678d1d-3fc7-5502-89ae-2521001b2078"
+contentUuid: "9814c4c4-5326-5a69-82e3-85fb674bc4cf"
 diamondUuid: "df5f3d91-95d2-8367-b740-0954cf174967"
 uuid: "ec69cfa5-ab95-8a6a-8c68-4d46c71c9258"
 horo: 5
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "cdbac49f-6c6b-8e5b-b225-f1833b4b9cec"
+  computationUuid: "ec986bec-acf4-8ab8-9c42-1f20b2ed989c"
   stages:
     - stage: path
       stageUuid: "e4e3729b-ecdc-80ae-9372-12256de0190f"
@@ -26,7 +26,7 @@ signatures:
     - stage: horo
       stageUuid: "1e51fc15-5068-8a65-bea5-55ee8d273d47"
     - stage: seal
-      stageUuid: "302266cb-1f77-83a2-8745-0c7800f5713a"
+      stageUuid: "e64405d4-ff82-8a77-821c-f368ba95f96b"
     - stage: uuid
       stageUuid: "f1862f2a-e2f1-80b4-bbed-e5bd9d55bc2a"
 version: 2

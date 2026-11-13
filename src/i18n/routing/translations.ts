@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about routing — is the whole claim. Every URL carries its locale — , — so the language a page renders in is a fact of the address, not a negotiation between a cookie, an header and a pathname…",
-    "uuid": "dbdb9a9d-ae50-8425-a0bd-affed937a60f",
+    "uuid": "1f6bb58a-b492-8a24-a126-d161ba1d9d13",
     "words": [
       "use",
       "when",

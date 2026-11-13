@@ -3,19 +3,19 @@ name: skill
 description: "Use when reasoning about skill — Use for the SKILL.md frontmatter gate — scans every SKILL.md, refuses unquoted colon-space descriptions, names that disagree with their folder, and new hyphenated atom folders. The atom face exposes the gate only; the 77MB router index is reached by its own path, never through this barrel."
 atomPath: skill
 coordinate: "skill · 8/crest · b1beecef"
-contentUuid: "f8e08b31-7d40-5191-b6bf-6419b15b4f9a"
-diamondUuid: "a160f6b8-7fa3-8b3d-999a-47dae282b134"
+contentUuid: "4fb138f0-b279-5105-9a5d-0bd4cff90d08"
+diamondUuid: "50236e62-dee2-82ec-a4c2-7a1edcac1aa7"
 uuid: "b1beecef-3906-8373-ad1d-7ba84dc79d86"
 horo: 8
 typography:
   partition: skill
-  bondDegree: 38
+  bondDegree: 35
 standards:
   - ESCO
   - SFIA
 bindings: []
 signatures:
-  computationUuid: "f74e65c0-00e1-8782-8af3-74c52c5b9ec8"
+  computationUuid: "c720311c-98e7-8ac2-883f-f5fa3d650857"
   stages:
     - stage: path
       stageUuid: "5e247c75-db64-8db4-8e65-1dd06c983552"
@@ -26,11 +26,11 @@ signatures:
     - stage: links
       stageUuid: "33937247-e76a-8de3-a17b-0990f8c5a917"
     - stage: horo
-      stageUuid: "3b078b76-e259-895f-86ca-88daeea46f54"
+      stageUuid: "61ea25ed-67b7-8a01-bee8-30d043053bef"
     - stage: seal
       stageUuid: "29c61e06-70a3-8bd7-9f18-a5e4d6db8e1a"
     - stage: uuid
-      stageUuid: "62841214-3fb9-8715-b891-3c479d9f0fa9"
+      stageUuid: "3d74f005-4e00-87de-b77c-ec8c1dfb2fa3"
 version: 2
 ---
 # skill

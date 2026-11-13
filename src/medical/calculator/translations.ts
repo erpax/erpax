@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about calculator as a medical facet of medical — vocabulary pivot to @/calculator; nested not duplicated.",
-    "uuid": "30d5b10e-52b6-8717-8039-a93106e7e40d",
+    "uuid": "73e2b11a-f922-80c1-b1bf-ddbcc3cb8658",
     "words": [
       "use",
       "when",

@@ -2,14 +2,14 @@
 name: agent
 description: "Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting)."
 atomPath: agent
-coordinate: "agent · 4/weave · 446edbcb"
-contentUuid: "e178dbae-924c-56f8-8420-e05e48648dfb"
-diamondUuid: "440263be-4536-8ac6-89ed-20ade5be1724"
-uuid: "446edbcb-8f13-8f55-b0eb-2e82e8bfa00e"
-horo: 4
+coordinate: "agent · 5/round · 4bc06823"
+contentUuid: "78d108fc-6eff-5e98-8555-9aa0767f6385"
+diamondUuid: "bf275eed-4f71-8c22-969b-35d785c201f6"
+uuid: "4bc06823-c80c-894b-8c9b-121092569048"
+horo: 5
 typography:
   partition: agent
-  bondDegree: 320
+  bondDegree: 306
 standards:
   - "ISO-19011"
   - "ISO-19011`"
@@ -31,7 +31,7 @@ standards:
   - "W3C-ActivityPub"
 bindings: []
 signatures:
-  computationUuid: "673b1663-ed67-8f77-8101-097ff462e400"
+  computationUuid: "94da0a77-5caa-803a-a1d1-8c68ee4be6ef"
   stages:
     - stage: path
       stageUuid: "a0f973da-5aaf-8198-87b0-f6e725af250f"
@@ -40,13 +40,13 @@ signatures:
     - stage: boundary
       stageUuid: "3d6ccd02-fed0-82f3-a8cd-54068fd35bb8"
     - stage: links
-      stageUuid: "34988d2a-855a-8abd-9819-93cd4ec61a34"
+      stageUuid: "5dd9132d-121b-8584-b006-84d66aab6b87"
     - stage: horo
-      stageUuid: "056456aa-9da0-8026-bc7c-bc3bf79ea432"
+      stageUuid: "5687cb28-f092-83ec-83c5-07f70a8f8765"
     - stage: seal
       stageUuid: "cc386600-b64e-8962-8301-0eeb688cc21b"
     - stage: uuid
-      stageUuid: "203c82f1-3624-8ebf-b684-0f2cb9f1dd9a"
+      stageUuid: "06bf44c9-2cec-8a85-855a-4b4017b5efc0"
 version: 2
 ---
 # agent — an agent is its content; cloning is content-addressing; the actor decides in pure functions while only the substrate acts

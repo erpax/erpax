@@ -3,13 +3,13 @@ name: contracts
 description: "Use when recording, approving, or recognizing revenue from customer contracts — IFRS-15 §10 master record with transaction price decomposition (fixed, variable, financing), performance obligations, contract combination, amendments, and SOX-gated approval. The canonical revenue-contract collection."
 atomPath: "customers/contracts"
 coordinate: "customers/contracts · 2/share · 2ea868e2"
-contentUuid: "fc758230-99ad-55b9-a628-2bc7d580eb5f"
+contentUuid: "114ae418-db9c-5804-a5cc-09bded21671a"
 diamondUuid: "c8b3c8f4-9b21-839e-af71-d65b9522ae30"
 uuid: "2ea868e2-d136-81c2-9b85-0ddd202a646b"
 horo: 2
 typography:
   partition: customers
-  bondDegree: 43
+  bondDegree: 35
 standards:
   - "ASC-606"
   - "EU-537/2014"

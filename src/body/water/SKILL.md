@@ -3,13 +3,13 @@ name: water
 description: "Use when reasoning about water as a anatomical part of body — vocabulary pivot to @/water; nested not duplicated."
 atomPath: "body/water"
 coordinate: "body/water · 5/round · 14d411f7"
-contentUuid: "eb7966c1-c5f8-57a7-aba1-116fc0d00846"
+contentUuid: "5a74b288-1865-55bd-9655-3597e2792dc3"
 diamondUuid: "4d234df7-d3b0-8563-a3c7-c1b664249da7"
 uuid: "14d411f7-cf05-8c0b-9067-c668c71fe2a9"
 horo: 5
 typography:
   partition: body
-  bondDegree: 42
+  bondDegree: 40
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

@@ -3,13 +3,13 @@ name: surface
 description: "Use when declaring or auditing the whole cryptographic surface an atom exposes — the judgment guard that makes a silently omitted surface fail the build: every reachable surface (root-signing · channel-keying · storage-at-rest · re-exchange) must be registered sealed (naming the standard AND the test) or open (naming the gap AND the owner), a channel sealed without FIPS 203 ML-KEM is channel-unsealed because harvest-now-decrypt-later reads the transport not the root, and a root sealed by anything but FIPS 205 SLH-DSA or FIPS 204 ML-DSA is root-unsealed because Shor breaks a classical root outright."
 atomPath: "anchor/surface"
 coordinate: "anchor/surface · 1/base · b17480f9"
-contentUuid: "4130acb3-5d88-58b4-90c7-8a0eb482ceb5"
+contentUuid: "6d9b8c9f-132e-5364-a3fd-556051d09e35"
 diamondUuid: "6c08502c-eb2d-88b3-8442-3589d407b4ce"
 uuid: "b17480f9-9c45-87f9-95f6-79f662faac49"
 horo: 1
 typography:
   partition: anchor
-  bondDegree: 23
+  bondDegree: 17
 standards:
   - "FIPS 203 (ML-KEM) — key establishment; mandatory on every channel that exchanges state"
   - "FIPS 204 (ML-DSA) — lattice signature, a distinct assumption from the digest"

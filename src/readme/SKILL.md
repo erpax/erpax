@@ -3,20 +3,20 @@ name: readme
 description: "Use when the repository README is generated, verified, or reasoned about — the README is a diamond (a content-addressed projection of the live tree, regenerable with zero entropy, drift fails closed) and its typography IS the diamond projected (facets = the closed horo ring laid out in measure-walk order, so reading the README is reading the crystal). Derived from the tree (matrix · fs walk · package.json), never hand-typed."
 atomPath: readme
 coordinate: "readme · 4/weave · 2177b52a"
-contentUuid: "6ef5ee5c-f3ec-58e9-af78-7f98e8954e96"
-diamondUuid: "c0b237ea-e169-827a-9228-49e6a3dc87d6"
+contentUuid: "b314af3c-d464-5b26-85c9-dd2dae862c88"
+diamondUuid: "4c55fcf4-7d3a-8b8f-914c-f01e843fcf39"
 uuid: "2177b52a-20ac-8d93-ba95-83890c04144a"
 horo: 4
 typography:
   partition: readme
-  bondDegree: 126
+  bondDegree: 127
 standards:
   - "RFC 9562 §5.8 (the README's own content-uuid is a v8 content-uuid)"
   - "RFC 9562 §5.8 (the README's own content-uuid is a v8 content-uuid)`"
   - "— the instrument reads SKILL.md) -->"
 bindings: []
 signatures:
-  computationUuid: "a7ca0ac0-132b-87d2-ad1b-171aeee14d1c"
+  computationUuid: "c73eab81-1598-86bb-b387-3af36befe35f"
   stages:
     - stage: path
       stageUuid: "dc681a92-56b1-8f59-b232-67e611a4affd"
@@ -25,13 +25,13 @@ signatures:
     - stage: boundary
       stageUuid: "8a678cf7-d196-80e2-aed3-da0c1ad71d5e"
     - stage: links
-      stageUuid: "9fdbf550-fda6-82ef-b301-8040a1ab221f"
+      stageUuid: "5fd9f290-d4d2-8f59-8e84-9bc4f14b3f0a"
     - stage: horo
-      stageUuid: "b423dbab-072e-87c6-928f-9d0a2c01faac"
+      stageUuid: "4a6a7f4f-c8bb-83f4-82d2-198f676cdce0"
     - stage: seal
-      stageUuid: "164c37b8-34fa-8582-861b-07bd004fd6ce"
+      stageUuid: "771afb9d-e5bb-833e-af92-aa623d05fb71"
     - stage: uuid
-      stageUuid: "fe2020ab-523e-8e54-a1d3-c80ee28d4102"
+      stageUuid: "be9dfb02-25e8-8f2b-9777-e20ddd448707"
 version: 2
 ---
 # readme — the README is a diamond; its typography is the diamond projected (under [[self/generate]] · outward coil)

@@ -3,17 +3,17 @@ name: hooks
 description: "Use when wiring the Categories collection's lifecycle — the beforeChange barrel that pins every category row to the active tenant so multi-tenant isolation holds at the collection boundary."
 atomPath: "categories/hooks"
 coordinate: "categories/hooks · 6/6 · e818f2f8"
-contentUuid: "03fce7d1-f737-5795-907e-a34ac74ab9c1"
-diamondUuid: "fa136c71-ce96-842d-abce-b5838c255b90"
+contentUuid: "f2b71316-75ce-5e85-854d-69f48f006475"
+diamondUuid: "61dbed7a-2e95-8932-a3d8-e55bf260dc74"
 uuid: "e818f2f8-ea30-80ac-9cb5-e3eff05d302a"
 horo: 6
 typography:
   partition: categories
-  bondDegree: 297
+  bondDegree: 288
 standards: []
 bindings: []
 signatures:
-  computationUuid: "57eb8aca-599c-8b9d-9c9c-e7fad5fc5d06"
+  computationUuid: "c2fcd737-c535-8476-bd99-c44d98ce7333"
   stages:
     - stage: path
       stageUuid: "1f271df0-1d7e-8f9e-be37-3ea495462722"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "71e08471-92a0-85b4-b926-d21affcbf63f"
     - stage: horo
-      stageUuid: "66362797-6c74-87be-8cb7-8a94ad9f4105"
+      stageUuid: "b7ce4bd2-f194-8a9b-a7e4-66a9b4f1a6f5"
     - stage: seal
       stageUuid: "ce80498c-9c3c-8914-905b-b6e0708955ca"
     - stage: uuid
-      stageUuid: "fd52e01a-c39f-87fb-aa7e-6ce5032276e6"
+      stageUuid: "99c83bed-7cfa-8ffc-8909-68e567a05af5"
 version: 2
 ---
 # categories/hooks — the category collection-module boundary

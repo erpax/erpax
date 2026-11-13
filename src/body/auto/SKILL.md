@@ -3,13 +3,13 @@ name: auto
 description: "Use when reasoning about auto as a anatomical part of body — vocabulary pivot to @/auto; nested not duplicated."
 atomPath: "body/auto"
 coordinate: "body/auto · 7/descent · f1c0402f"
-contentUuid: "1f1b595d-2133-5758-bc9d-e1231e8263ac"
+contentUuid: "f3309149-dbb5-50fe-b9fd-a9d2377002eb"
 diamondUuid: "eac4435d-f5b2-89c6-8d30-1cacc6c50fb5"
 uuid: "f1c0402f-20ad-8c75-816f-d4b465d48364"
 horo: 7
 typography:
   partition: body
-  bondDegree: 39
+  bondDegree: 37
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

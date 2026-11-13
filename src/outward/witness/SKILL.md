@@ -3,13 +3,13 @@ name: witness
 description: "Use when reasoning about witness — A cross-check is only worth the independence of its legs. already treats an unreachable boundary as an **unanswered question** rather than a failure; this atom asks the sharper…"
 atomPath: "outward/witness"
 coordinate: "outward/witness · 5/round · 4749c368"
-contentUuid: "3208fd48-5d65-5e67-a6fc-840ab89e3c5f"
+contentUuid: "ef59ea57-d991-50f4-b144-3e7e435288b1"
 diamondUuid: "0bf64b0a-4b63-8288-8d27-46e509eb0d87"
 uuid: "4749c368-dbed-8284-8692-613239da82a0"
 horo: 5
 typography:
   partition: outward
-  bondDegree: 17
+  bondDegree: 14
 standards:
   - "ISO 19011:2018 §6.4 — audit evidence: two sources agreeing is evidence; one is a claim"
   - "WGS 84 — geodetic latitude/longitude"

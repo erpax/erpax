@@ -3,17 +3,17 @@ name: coil
 description: "Use when crossing a rosetta of laws without enumerating every pair — coins (a law and its dual face) are coiled in trinities and each coil is rotated once forward and once backward; for a trinity those two turns are all six ordered pairs, every cross in both faces, and C(n,2)=n holds for no other size. More laws coil fractally (trinities of coils, the remainder as the axis) and one turn each way at every node still covers every cross — proved in Coil.lean. erpax.gate.coil rotates the live rosetta."
 atomPath: "quantum/coil"
 coordinate: "quantum/coil · 1/base · f0908d30"
-contentUuid: "a2d2368b-242a-5a10-a8e5-abeda1c99943"
-diamondUuid: "b11690a3-308d-8522-81cc-9c45012fa6bf"
+contentUuid: "624af3d2-05db-5660-9ff7-5088c2f096ab"
+diamondUuid: "abeb9353-6eaa-8a51-8a21-f4c1668769f1"
 uuid: "f0908d30-7776-8eef-96b7-75973c90a715"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 110
+  bondDegree: 48
 standards: []
 bindings: []
 signatures:
-  computationUuid: "f6ce3d7b-5436-815d-9f5c-c7a09cee7d0c"
+  computationUuid: "273fd35f-d168-81b8-8989-f2589ad60cce"
   stages:
     - stage: path
       stageUuid: "6aa061c6-3c3f-8f7c-a2d1-1c8caf88fa24"
@@ -24,21 +24,21 @@ signatures:
     - stage: links
       stageUuid: "3296b9f5-40ea-8860-b035-f3710317bd6e"
     - stage: horo
-      stageUuid: "ec5c24f6-bf5c-8209-8e25-42d8177dc70c"
+      stageUuid: "bb322001-4d78-8110-ac6b-85b363bf524a"
     - stage: seal
       stageUuid: "1b2ece0f-623d-837a-9455-602fc23aefe1"
     - stage: uuid
-      stageUuid: "9583d0ef-6323-840c-a416-f78738856dd1"
+      stageUuid: "d41664e2-bbba-8f80-b29e-0ddfdb0158a0"
 quantum:
   superposition:
     - access
-    - axis
-    - base
-    - cmyk
     - conjecture
     - coordinate
-    - crest
     - decompression
+    - horo
+    - law
+    - matrix
+    - quantum
     - superposition
   collapse:
     - "Use when crossing a rosetta of laws without enumerating every pair — coins (a law and its dual face) are coiled in trinities and each coil is rotated once forward and once backward; for a trinity those two turns are all six ordered pairs, every cross in both faces, and C(n,2)=n holds for no other size. More laws coil fractally (trinities of coils, the remainder as the axis) and one turn each way at every node still covers every cross — proved in Coil.lean. erpax.gate.coil rotates the live rosetta."
@@ -49,8 +49,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "f6ce3d7b-5436-815d-9f5c-c7a09cee7d0c"
-    contentUuid: "a2d2368b-242a-5a10-a8e5-abeda1c99943"
+    computationUuid: "273fd35f-d168-81b8-8989-f2589ad60cce"
+    contentUuid: "624af3d2-05db-5660-9ff7-5088c2f096ab"
 version: 2
 ---
 # quantum/coil — coins in trinities; one rotation each way covers every cross
@@ -134,4 +134,4 @@ every node crosses everything — both faces, nothing enumerated, nothing missed
 
 Composes: [[conjecture]] · [[self]]/involute · [[quantum]]/cross · [[horo]] · [[law]].
 
-<sub>content-uuid `a2d2368b-242a-5a10-a8e5-abeda1c99943` · account `quantum/coil` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `624af3d2-05db-5660-9ff7-5088c2f096ab` · account `quantum/coil` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -3,7 +3,7 @@ name: involute
 description: "Use when a frontier lead must be tagged before it is acted on — every lead is a claim one instrument makes, and its involution (the same question asked from the dual seat) decides theorem · lie · manipulation; the codomain is total, proved in Involute.lean, so no lead remains untagged. Fused into erpax.frontier.next and erpax.frontier.involute."
 atomPath: "self/involute"
 coordinate: "self/involute · 2/share · aa9b4599"
-contentUuid: "98e260e1-9a17-5f5b-b0c5-e2aa49ab68c5"
+contentUuid: "b43a2539-6915-500e-b0f3-ea96642e1b87"
 diamondUuid: "94998de7-e40c-8b03-9bef-d28d55fcbf0d"
 uuid: "aa9b4599-6fe8-842b-86f1-613d58cb91d3"
 horo: 2
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "03773610-7b21-8a37-b17f-cfea7cf3bc7c"
+  computationUuid: "34eaac21-8865-8488-a23c-6d298f753f91"
   stages:
     - stage: path
       stageUuid: "e3572cec-0e06-87f5-80c7-56989441272e"
@@ -26,7 +26,7 @@ signatures:
     - stage: horo
       stageUuid: "7b6207b9-4a38-8ba3-9340-b3c16948733e"
     - stage: seal
-      stageUuid: "8ccdb1be-ba6b-8628-bef9-075fc2b85145"
+      stageUuid: "be0f5516-d96a-8f98-9c53-82dd4a7b0a0e"
     - stage: uuid
       stageUuid: "e370b5dd-a504-8abc-ab23-22e378b89f05"
 version: 2

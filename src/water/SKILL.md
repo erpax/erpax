@@ -3,13 +3,13 @@ name: water
 description: "Use when reasoning about water as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: water
 coordinate: "water · 4/weave · 28f69357"
-contentUuid: "d563fe47-fe8d-5aab-9bea-8b217fce1c9d"
+contentUuid: "67b772ef-f71f-5ca0-9cbe-14779e4a017f"
 diamondUuid: "c2a70f75-3d09-870c-bfb9-79bc000455cb"
 uuid: "28f69357-8422-8a94-a6a4-7be94498c10d"
 horo: 4
 typography:
   partition: water
-  bondDegree: 42
+  bondDegree: 40
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

@@ -3,13 +3,13 @@ name: checker
 description: "Use when validating whether a fiscal period may be closed — pure, no-mutation checks that the period is in range and not already closed, that the closing entries balance, that a state transition is legal, and that reversals can post to the next period."
 atomPath: "closing/period/checker"
 coordinate: "closing/period/checker · 4/weave · 7c0c114a"
-contentUuid: "85078dd4-b66b-5ab0-8842-b30b0e5c537b"
+contentUuid: "8507a722-72d2-58e2-bd42-9cc4f54e2acf"
 diamondUuid: "38121a5e-2f3a-8834-9614-672acff6174c"
 uuid: "7c0c114a-b960-8d60-a05e-ded0419dc073"
 horo: 4
 typography:
   partition: closing
-  bondDegree: 18
+  bondDegree: 15
 standards:
   - "IAS-34"
   - "IAS-34:2023 (period structure, interim closing requirements)"

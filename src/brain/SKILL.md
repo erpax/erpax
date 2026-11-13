@@ -2,20 +2,20 @@
 name: brain
 description: "Use when reasoning about erpax's matrix as the connectome organ — a small-world network where any node reaches any other in a handful of hops, wired sparsely yet integrated. ~86 billion neurons, ~150 trillion synapses; high clustering, short path length. Three properties (small-world path length · sparse efficient wiring · connectome-scale cross-check) are computed and mapped — a structural isomorphism — onto erpax's link graph and integrated self-model."
 atomPath: brain
-coordinate: "brain · 7/descent · 818c2403"
-contentUuid: "168c0451-fa1d-56e7-8ec7-3728f394cff7"
-diamondUuid: "08d8baff-e1b1-887a-b324-017e55ce7225"
-uuid: "818c2403-2c83-8f72-b6fb-afb1284572ce"
-horo: 7
+coordinate: "brain · 4/weave · 27c81e8f"
+contentUuid: "2ba1d56e-ad9b-5c95-b278-c1ea4197b566"
+diamondUuid: "67a81af6-9a55-8025-b101-cc792e1690f0"
+uuid: "27c81e8f-9b0e-8eaf-a667-1bad4752323a"
+horo: 4
 typography:
   partition: brain
-  bondDegree: 31
+  bondDegree: 28
 standards:
   - "≈86×10⁹ neurons, ≈1.5×10¹⁴ synapses; brain networks are small-world (Bassett & Bullmore, 2006)"
   - "≈86×10⁹ neurons, ≈1.5×10¹⁴ synapses; brain networks are small-world (Bassett, Bullmore)"
 bindings: []
 signatures:
-  computationUuid: "5cd3366b-f63f-8bef-8c04-77eb982566d0"
+  computationUuid: "5d111080-55f6-8e93-bdc7-55aa7fa7b89b"
   stages:
     - stage: path
       stageUuid: "1ce92240-d9ae-8c67-8d43-fe65e783d44d"
@@ -24,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "ae72c0be-0b18-8c98-81a4-136c14e83305"
     - stage: links
-      stageUuid: "ca9365b0-b01d-8d08-a696-be1ef56449fb"
+      stageUuid: "40cc6441-5813-8dd8-b04e-76befb6f7708"
     - stage: horo
-      stageUuid: "5a6ca953-bdaa-8b35-8a25-c7c8ad79a0c7"
+      stageUuid: "0963f837-d523-8c5d-9ff9-cbedabdeb8d4"
     - stage: seal
       stageUuid: "2fc162b7-51ab-826d-804c-38140fd92f53"
     - stage: uuid
-      stageUuid: "b2260220-1869-8eab-a76c-62c4f4e1e733"
+      stageUuid: "737be8e7-fac6-8b66-ab36-7a7718ce90e6"
 version: 2
 ---
 # brain — the small-world connectome (the matrix)

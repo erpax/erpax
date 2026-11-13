@@ -3,17 +3,17 @@ name: gate
 description: "Use when an agent must ask the gate registry instead of waiting for the push lane — erpax.gate.verdicts reads every guardian from the same arbiter the lane runs; erpax.gate.cross and erpax.gate.crosses are the gates formulated as crosses of two laws (shared population, lift against independence, absence in prose, theorem-at-zero)."
 atomPath: "agents/mcp/tool/gate"
 coordinate: "agents/mcp/tool/gate · 7/descent · 72b44944"
-contentUuid: "03b6f09e-9caf-58dd-845c-79fee4f3eae3"
-diamondUuid: "c058cdb8-ffc1-8a7f-8e15-bea06c717325"
+contentUuid: "caa1e084-5562-5b5d-bd9b-eefee54215f5"
+diamondUuid: "f7941fcb-0379-8672-bd0c-c46fd2cd1c92"
 uuid: "72b44944-db18-8ec2-a43c-c9531a2e18ea"
 horo: 7
 typography:
   partition: agents
-  bondDegree: 231
+  bondDegree: 213
 standards: []
 bindings: []
 signatures:
-  computationUuid: "1d24738e-1072-8b04-9ef4-b4d9ec299078"
+  computationUuid: "393e4a1b-834d-8889-b7aa-95e3bbd26991"
   stages:
     - stage: path
       stageUuid: "73d10a30-3482-8f23-ba31-dc026c7d687a"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "96427091-2f32-8ed6-b6fc-a205b55c9c29"
     - stage: horo
-      stageUuid: "f993d269-17dc-83d3-9246-4df0071e2257"
+      stageUuid: "60bd22e3-d248-8b1f-9320-341761168320"
     - stage: seal
       stageUuid: "3ac03b26-9326-8c93-96b5-f2ca0074d1f4"
     - stage: uuid
-      stageUuid: "a0c3498e-0626-8bb2-8227-c3951915a433"
+      stageUuid: "5524866e-8914-8d12-8b88-883eadcbdf7e"
 version: 2
 ---
 # agents/mcp/tool/gate — the gates, asked over MCP and formulated as crosses

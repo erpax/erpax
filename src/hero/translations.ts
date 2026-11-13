@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hero — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
-    "uuid": "fb5a8412-b3f7-8ede-b523-537047346cac",
+    "uuid": "0b01cb90-1d0b-8d88-b49b-adc8eabf67c5",
     "words": [
       "use",
       "when",

@@ -3,17 +3,17 @@ name: bindings
 description: "Use when attaching every Cloudflare binding to the edge Worker — each binding is a sense the pure-compute Worker is granted to reach the world (D1, R2, AI, Vectorize, KV, Queues, Durable Objects, Browser, Analytics, Email), the platform-level measurement boundary; attach all, gate each through access, emit a receipt."
 atomPath: "quantum/bindings"
 coordinate: "quantum/bindings · 4/weave · 4f09f413"
-contentUuid: "d9659f53-5b33-5ff7-a810-e0b3522393c2"
-diamondUuid: "4e4c97db-f770-8cfe-a852-2592b1fd8bbc"
+contentUuid: "5d9b86ec-f486-503d-8890-525f3743f173"
+diamondUuid: "c325c286-56e0-89e2-bac4-87bb12f306dc"
 uuid: "4f09f413-3658-82c6-8cfd-8e36baf1d1b0"
 horo: 4
 typography:
   partition: quantum
-  bondDegree: 76
+  bondDegree: 70
 standards: []
 bindings: []
 signatures:
-  computationUuid: "576daea3-1d05-8123-a69f-56b75494bcfa"
+  computationUuid: "e0b9fd72-0744-8ef4-be9d-14804a332453"
   stages:
     - stage: path
       stageUuid: "6afb2d1c-7bbf-824c-babb-b9e1df553e05"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "14403cf2-502c-874f-b60d-ff71ed4b34bf"
     - stage: horo
-      stageUuid: "71519437-8204-869b-9881-cc406b84fcce"
+      stageUuid: "90669836-7279-8c5e-a7ae-54a8322f8880"
     - stage: seal
       stageUuid: "12a8a4a2-3333-8969-a944-0675f5ed5e3e"
     - stage: uuid
-      stageUuid: "3a5b2a4b-9161-890d-990a-cf9859a15171"
+      stageUuid: "8b4cb86d-9d85-83a6-877e-c7541618d15a"
 quantum:
   superposition:
     - access
@@ -59,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "576daea3-1d05-8123-a69f-56b75494bcfa"
-    contentUuid: "d9659f53-5b33-5ff7-a810-e0b3522393c2"
+    computationUuid: "e0b9fd72-0744-8ef4-be9d-14804a332453"
+    contentUuid: "5d9b86ec-f486-503d-8890-525f3743f173"
 version: 2
 ---
 # quantum/bindings — the Worker's senses
@@ -83,4 +83,4 @@ A binding is a capability grant, so every call passes the trust sandbox — [[ac
 
 @see [[bindings]] · worker · [[quantum/device]] · [[access]] · [[sandbox]] · broker · [[receipt]] · [[uuid]] · [[deploy]]
 
-<sub>content-uuid `d9659f53-5b33-5ff7-a810-e0b3522393c2` · account `quantum/bindings` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `5d9b86ec-f486-503d-8890-525f3743f173` · account `quantum/bindings` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

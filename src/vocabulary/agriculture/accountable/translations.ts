@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about accountable — agriculture/accountable — the agriculture domain's value & substance movements as balanced double-entries over the universal entry engine.",
-    "uuid": "9d3e53d0-70a6-8be5-907a-bb3f673de2ec",
+    "uuid": "be898bac-3f60-8e38-b500-669277eb02b5",
     "words": [
       "use",
       "when",

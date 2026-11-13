@@ -3,13 +3,13 @@ name: type
 description: "Use when reasoning about type as a medical facet of medical — vocabulary pivot to @/type; nested not duplicated."
 atomPath: "medical/type"
 coordinate: "medical/type · 4/weave · c0299945"
-contentUuid: "cce9f572-909e-5557-9852-aeab6e93eee4"
+contentUuid: "4c0a74bc-bc93-569c-9aeb-253cdacf4af8"
 diamondUuid: "3c0a4cdd-9ca9-8775-9a50-fc41f0168d8f"
 uuid: "c0299945-f3dc-86ce-ada4-e6f0b3ca1fff"
 horo: 4
 typography:
   partition: medical
-  bondDegree: 54
+  bondDegree: 52
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

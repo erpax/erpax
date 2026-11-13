@@ -3,7 +3,7 @@ name: plan
 description: "Use when a scored gap must become one executable tip — planTrinity builds FORM ⊗ CODE ⊗ PROOF, and isPreciseTip refuses anything vaguer, so 'continue improving' can never be emitted."
 atomPath: "self/improve/tip/plan"
 coordinate: "self/improve/tip/plan · 8/crest · ace92601"
-contentUuid: "e114d589-c209-5f80-8f40-f6bdf2b854b1"
+contentUuid: "d31db612-ccad-5c6d-be86-c112b87ccf1e"
 diamondUuid: "ed173fa6-e2d4-8a0c-a962-c5b73aa14b4c"
 uuid: "ace92601-7020-8a43-960c-096b31336284"
 horo: 8
@@ -13,7 +13,7 @@ typography:
 standards: []
 bindings: []
 signatures:
-  computationUuid: "357a6341-07b5-8744-82f5-47eadc7a4857"
+  computationUuid: "a4e74383-76ec-8065-9d3f-a07458022bc9"
   stages:
     - stage: path
       stageUuid: "51153109-f4a6-88ff-b6b4-2fbac640b4d1"
@@ -26,7 +26,7 @@ signatures:
     - stage: horo
       stageUuid: "f800ed1c-720a-837c-b376-8577cbd2941d"
     - stage: seal
-      stageUuid: "2c8317ad-a78d-8153-8792-06053566087b"
+      stageUuid: "87f138d8-3135-8643-9e6e-bfb2b05bb781"
     - stage: uuid
       stageUuid: "227c7174-bf7c-8f28-8454-f7d40970b306"
 version: 2

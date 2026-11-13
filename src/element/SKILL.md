@@ -2,20 +2,20 @@
 name: element
 description: "Use when reasoning about composition and stability through the chemical-elements matrix — everything is made of atoms, and the periodic table adds a chemistry to the logic: each atom has a VALENCE (electrons it shares to fill its shell), stability is the OCTET (a full outer shell — the noble gases), and atoms BOND to reach it. The new perspective: the erpax corpus is a MOLECULE — an atom's valence is its open links, and the corpus is stable exactly when aura gap = 0 (all shells full)."
 atomPath: element
-coordinate: "element · 2/share · ab890fc8"
-contentUuid: "0e8a3a56-ca11-57ae-8fef-200905f7b0a4"
-diamondUuid: "92d05943-9de2-880d-a2b5-76865baf2a07"
-uuid: "ab890fc8-ff93-8f9c-893d-f314b0396960"
-horo: 2
+coordinate: "element · 1/base · 2974bf98"
+contentUuid: "38cc3498-a72b-5eef-8b1e-3d2e1a4dc4bf"
+diamondUuid: "b846b73d-5d97-8017-afc1-6ebf7a3fd1af"
+uuid: "2974bf98-b36d-8182-b29d-724eac91c485"
+horo: 1
 typography:
   partition: element
-  bondDegree: 50
+  bondDegree: 47
 standards:
   - "IUPAC periodic table — periods, groups, main-group valence"
   - Lewis octet rule (duet for period 1) — stability = a full outer shell
 bindings: []
 signatures:
-  computationUuid: "2ca095bc-ab71-8bd3-a269-ba50589f1200"
+  computationUuid: "69fd3ec5-a412-8571-83ea-177af703303a"
   stages:
     - stage: path
       stageUuid: "c7b1e524-2727-8656-a6ac-10e671c569bd"
@@ -24,13 +24,13 @@ signatures:
     - stage: boundary
       stageUuid: "dae53ed2-2a2e-89f1-a2a4-ba7b309f8220"
     - stage: links
-      stageUuid: "2550b898-891f-8d0b-9921-26268a456e9b"
+      stageUuid: "f5adba24-f68a-8761-a62e-8cb89cf4db0f"
     - stage: horo
-      stageUuid: "8d346739-7780-8cdb-aa6c-a0d5509afc81"
+      stageUuid: "7a4ea0d0-2704-818a-bfee-c4edf18fa89f"
     - stage: seal
       stageUuid: "a62028a3-9a7c-8fdd-845a-959440dc626f"
     - stage: uuid
-      stageUuid: "62ca5cb8-eadf-8a92-9ab5-0187170b46e4"
+      stageUuid: "6f1f5d8d-4c70-8015-b098-9aae4750b375"
 version: 2
 ---
 # element — the periodic matrix as a logic of composition (the corpus is a molecule)

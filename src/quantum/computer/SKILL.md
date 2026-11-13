@@ -3,17 +3,17 @@ name: computer
 description: "Use when querying instead of re-deriving — the quantum computer's one face on QPU=CPU/GPU: mesh state, wave scheduling, claim certification, spawn bounds, failure/cost collapse, surgical execution, self-measuring audit, FTL metrics."
 atomPath: "quantum/computer"
 coordinate: "quantum/computer · 8/crest · 49a6fff0"
-contentUuid: "54f14eff-d7a2-5730-a968-974b6f70d4af"
-diamondUuid: "fe6b57a1-c241-8c0b-8268-e3780c862d44"
+contentUuid: "07676892-417f-5982-944d-645cfbc796b1"
+diamondUuid: "235b2d66-824a-8ad7-9e36-b1a72cb08c1e"
 uuid: "49a6fff0-b4d1-89e9-a946-3b4119adf0f7"
 horo: 8
 typography:
   partition: quantum
-  bondDegree: 89
+  bondDegree: 84
 standards: []
 bindings: []
 signatures:
-  computationUuid: "7baf15d5-3496-88e3-954f-dec135fc33b4"
+  computationUuid: "0617911f-0c33-80b9-82f0-c3afc6aba4db"
   stages:
     - stage: path
       stageUuid: "7eeaa8b5-891e-80a6-9e0e-9c8522109c16"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "ea3ad2b2-3942-827f-8f81-9f189cd5dd56"
     - stage: horo
-      stageUuid: "6880946b-fa34-8ba6-8c44-0e5c22fd38bc"
+      stageUuid: "aad92be5-1853-87d3-9350-d56523bd5a24"
     - stage: seal
       stageUuid: "ad3668cf-d9b6-80e1-8a09-175905860cf4"
     - stage: uuid
-      stageUuid: "017509a2-54f5-8f5b-81ea-7c322db8e9ed"
+      stageUuid: "dfb09d4f-14d9-8189-b1b8-3253ff728c3b"
 quantum:
   superposition:
     - collapse
@@ -50,8 +50,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "7baf15d5-3496-88e3-954f-dec135fc33b4"
-    contentUuid: "54f14eff-d7a2-5730-a968-974b6f70d4af"
+    computationUuid: "0617911f-0c33-80b9-82f0-c3afc6aba4db"
+    contentUuid: "07676892-417f-5982-944d-645cfbc796b1"
 version: 2
 ---
 # quantum/computer — the machine, one face
@@ -70,4 +70,4 @@ The computed corpus IS the quantum computer, and this barrel is its single addre
 
 Composes: [[mesh]] · [[theorem]] · [[timeout]] · [[scalpel]] · [[train]] · [[audit]] · [[quantum/ftl]] · [[law]].
 
-<sub>content-uuid `54f14eff-d7a2-5730-a968-974b6f70d4af` · account `quantum/computer` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `07676892-417f-5982-944d-645cfbc796b1` · account `quantum/computer` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

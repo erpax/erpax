@@ -2,18 +2,18 @@
 name: mcp
 description: "Use when reasoning about the MCP gateway in the quantum frame — one door exposing the whole trinity (payload data tools plus vitepress skill tools), the surface generated all-at-once from the corpus, every call by the actor-merge agent access-gated, quantum-compressed, and receipt-logged from the inside."
 atomPath: "quantum/mcp"
-coordinate: "quantum/mcp · 1/base · 0ddc37d5"
-contentUuid: "f33d7086-4051-5dc1-b9bb-e7cec478a6ee"
-diamondUuid: "2c0d3cb4-2b4f-82fa-bb3e-7d8b061d7f8e"
-uuid: "0ddc37d5-de6a-8182-bf87-ca48e966cb3c"
+coordinate: "quantum/mcp · 1/base · f5dc1b5f"
+contentUuid: "d9f3e1ae-9b56-50f7-ac90-82330f6617ad"
+diamondUuid: "782aa6d4-50ca-81f6-b253-b3a241102f27"
+uuid: "f5dc1b5f-d11a-80a1-9d05-4db12e6194fc"
 horo: 1
 typography:
   partition: quantum
-  bondDegree: 67
+  bondDegree: 66
 standards: []
 bindings: []
 signatures:
-  computationUuid: "71c839eb-0de4-8a50-8138-2d34a5c528d4"
+  computationUuid: "59883d54-255a-826b-8d6f-2eb7db6e83df"
   stages:
     - stage: path
       stageUuid: "de2579a6-a1cd-835d-b455-31bd82356d78"
@@ -22,13 +22,13 @@ signatures:
     - stage: boundary
       stageUuid: "69db6b67-d551-8ff0-ae11-6067d46822e4"
     - stage: links
-      stageUuid: "1730f99c-68b0-8616-82ae-772abc18dcc3"
+      stageUuid: "0f8bdfb0-11f1-86bd-9fab-42d52373b730"
     - stage: horo
-      stageUuid: "411adbb1-6f4c-8949-a1e9-1caf25eb2c3e"
+      stageUuid: "ce5b121b-8975-8d58-804d-2fdf5b63678e"
     - stage: seal
       stageUuid: "70985e50-980b-8532-b34a-b81924242651"
     - stage: uuid
-      stageUuid: "ac85e890-bc25-8f7e-a69d-0e9927575875"
+      stageUuid: "afe608df-e526-850c-8d27-c3176740a08a"
 quantum:
   superposition:
     - access
@@ -45,13 +45,13 @@ quantum:
     - "[[access]]"
     - "[[agent]]"
     - "[[payload]]"
-    - "[[quantum/log]]"
     - "[[quantum/request]]"
     - "[[receipt]]"
     - "[[sandbox]]"
     - "[[skills]]"
     - "[[vitepress]]"
     - mcp
+    - "quantum/log"
     - "the tool surface is a pure projection of the corpus — add an atom or a skill and its tools manifest with no hand-list, so the door can never expose more or less than what exists. No call escapes the gate: each one inherits exactly the key owner's reach (never more), passes the sandbox capability check, and leaves a uuid-chained receipt — power and proof in the one move."
   seal:
     sandbox: true
@@ -60,8 +60,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "71c839eb-0de4-8a50-8138-2d34a5c528d4"
-    contentUuid: "f33d7086-4051-5dc1-b9bb-e7cec478a6ee"
+    computationUuid: "59883d54-255a-826b-8d6f-2eb7db6e83df"
+    contentUuid: "d9f3e1ae-9b56-50f7-ac90-82330f6617ad"
 version: 2
 ---
 # quantum/mcp — the trinity as one tool surface
@@ -76,4 +76,4 @@ The surface is a **projection of the corpus**, generated all-at-once ([[quantum/
 
 @see mcp · [[payload]] · [[vitepress]] · [[skills]] · [[agent]] · [[access]] · [[sandbox]] · [[receipt]] · quantum/log · [[quantum/request]]
 
-<sub>content-uuid `f33d7086-4051-5dc1-b9bb-e7cec478a6ee` · account `quantum/mcp` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `d9f3e1ae-9b56-50f7-ac90-82330f6617ad` · account `quantum/mcp` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

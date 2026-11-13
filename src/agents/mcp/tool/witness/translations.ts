@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about witness — Two tools, and the second exists because the first was hand-picked.",
-    "uuid": "dadc43f7-e11d-8dae-a7a9-9ccb269ce2e5",
+    "uuid": "5288d8e2-8773-87df-863e-ef8267de0a50",
     "words": [
       "use",
       "when",

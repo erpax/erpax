@@ -3,13 +3,13 @@ name: memory
 description: "Use when reasoning about memory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: memory
 coordinate: "memory · 8/crest · a454a813"
-contentUuid: "b9e4a16a-04a1-5498-814e-08e2a8275aec"
+contentUuid: "db0695bd-7953-500e-b46f-0d7747f333ed"
 diamondUuid: "1079f108-1cdc-83c4-90af-95d75dbae664"
 uuid: "a454a813-0292-8ea8-b351-1b998ed61662"
 horo: 8
 typography:
   partition: memory
-  bondDegree: 80
+  bondDegree: 84
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []

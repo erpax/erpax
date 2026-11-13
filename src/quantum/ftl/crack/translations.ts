@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about crack — Quantum FTL crack detection — boundaries, crack patterns, discovery",
-    "uuid": "a95d283c-8414-83f5-bccc-cf38dec7cf4b",
+    "uuid": "fe259344-4d03-815f-9181-16d735e658c9",
     "words": [
       "use",
       "when",

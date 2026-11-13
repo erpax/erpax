@@ -3,13 +3,13 @@ name: allocation
 description: "Use when defining how value/pay is distributed among contributors — reward for work, splitting a fixed pot, mechanism design. Reward is a pure function of verified time leveraged; the rate scale is harmonic; the pot is conserved."
 atomPath: allocation
 coordinate: "allocation · 5/round · c957e6aa"
-contentUuid: "d59b7b90-590b-56c1-8470-d61df1913e03"
-diamondUuid: "1eec6a2c-b46b-8155-9fcd-1701a07662f2"
+contentUuid: "23cdacf4-0716-55e6-a20d-36bd96b44008"
+diamondUuid: "41e4be5d-09eb-83bc-abf2-6a069858c836"
 uuid: "c957e6aa-cc04-8050-9f2b-dfd7edf1f693"
 horo: 5
 typography:
   partition: allocation
-  bondDegree: 63
+  bondDegree: 57
 standards:
   - ESCO
   - "ESCO / ISCO-08 competency framework (skill level)"
@@ -20,7 +20,7 @@ standards:
   - "SFIA 8 responsibility-levels (1..7) — job-type categorisation"
 bindings: []
 signatures:
-  computationUuid: "04c2d597-72db-8796-afb2-54ab0a935c7d"
+  computationUuid: "c0199c15-a291-85e9-ab2a-5421d6dbf067"
   stages:
     - stage: path
       stageUuid: "a8d4fa01-9e09-8419-9189-556f00da4903"
@@ -31,11 +31,11 @@ signatures:
     - stage: links
       stageUuid: "3ff53458-8c18-8e7e-b0f8-4a428c144bb4"
     - stage: horo
-      stageUuid: "9e978a5b-db3b-8513-8d6b-f62b3f8c3d94"
+      stageUuid: "b8f86de0-61e1-801b-a7b4-e9f1fca20799"
     - stage: seal
       stageUuid: "5eb8fbae-151e-81e9-89a8-9ce6cce8ccb5"
     - stage: uuid
-      stageUuid: "d466f076-0943-8225-bae1-a3143cffd235"
+      stageUuid: "cf7fa117-7a85-87f4-a8a4-641f3be990d9"
 version: 2
 ---
 # allocation — who gets what, for what, as math

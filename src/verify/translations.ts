@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about verify — Every other gate in this corpus is a program this corpus wrote, checking a property this corpus chose.",
-    "uuid": "824658b1-34b2-821f-818e-4a2622ab8679",
+    "uuid": "40a3bbe0-cc23-8ddd-a766-6fdd93f9d0c9",
     "words": [
       "use",
       "when",

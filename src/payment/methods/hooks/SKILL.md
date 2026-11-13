@@ -3,18 +3,18 @@ name: hooks
 description: "Use when reasoning about hooks — Every hook sibling is re-exported here, so a collection writes rather than naming each file."
 atomPath: "payment/methods/hooks"
 coordinate: "payment/methods/hooks · 9/unity · 8c60d6e9"
-contentUuid: "55ef3564-ad8c-570f-903d-dcedcd17d596"
-diamondUuid: "58728378-27f4-8659-aae2-5794a1381355"
+contentUuid: "a4183830-502b-576d-a4f6-e68aed9dc109"
+diamondUuid: "a85a02fd-71b7-831f-9968-4028785d5b90"
 uuid: "8c60d6e9-d37b-89f8-bb2b-4d6128259465"
 horo: 9
 typography:
   partition: payment
-  bondDegree: 297
+  bondDegree: 288
 standards:
   - "NIST-SP-800-38D"
 bindings: []
 signatures:
-  computationUuid: "4435a215-1542-8c13-bb1f-1871d8f69714"
+  computationUuid: "fcc954fb-8e6d-8778-a1ae-4b7023255850"
   stages:
     - stage: path
       stageUuid: "c4732e26-c9bd-8014-8335-4f269bd3fe4d"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "ba1fdb40-701e-8a0c-ba8b-5ffe1db9d28e"
     - stage: horo
-      stageUuid: "eb1d5dcc-7f90-8b0d-949f-92e808f039b9"
+      stageUuid: "7036cc6d-8e7f-833b-bb5a-40b515ab77a9"
     - stage: seal
       stageUuid: "d5c2fc87-3bab-8c33-b9c6-0035e4c30478"
     - stage: uuid
-      stageUuid: "483362a1-b32f-8afb-a22d-1ab348886262"
+      stageUuid: "4e199aa7-5a18-87f6-bca4-b992602ffb60"
 version: 2
 ---
 # payment/methods/hooks — the barrel that keeps a collection's imports one segment deep

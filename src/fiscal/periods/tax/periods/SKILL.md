@@ -3,13 +3,13 @@ name: periods
 description: "Use when managing the tax-period workflow per jurisdiction — aligning tax filing deadlines with fiscal periods, documenting transfer-pricing adjustment counts, tracking readiness (pending-closing → adjustment-posted → tax-closed), and maintaining a tamper-proof audit chain for tax-authority compliance. The per-jurisdiction tax-period workflow node."
 atomPath: "fiscal/periods/tax/periods"
 coordinate: "fiscal/periods/tax/periods · 4/weave · 62d16921"
-contentUuid: "d0afaef9-74b6-5024-a50b-7d4705cd45fd"
+contentUuid: "3c42d35c-b1a9-5129-9b31-bb496f9913b4"
 diamondUuid: "f18b843d-b084-8ac9-8651-08c13ba1814f"
 uuid: "62d16921-b44f-8fe3-a6ac-e3aefd3a5e7c"
 horo: 4
 typography:
   partition: fiscal
-  bondDegree: 33
+  bondDegree: 38
 standards:
   - "ISO-8601-1:2019 period-dates"
   - "ISO-8601-1:2019 period-dates`"

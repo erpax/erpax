@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about render — A dispatcher over three heroes, and the interesting half is everything that is **not** one of them.",
-    "uuid": "eb18c3d2-c17b-807f-88f1-3db7e716bc4d",
+    "uuid": "04f2b767-0886-8e1f-9d17-0596a4dab054",
     "words": [
       "use",
       "when",

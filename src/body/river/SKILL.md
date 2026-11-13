@@ -3,18 +3,18 @@ name: river
 description: "Use when reasoning about river as a anatomical part of body — vocabulary pivot to @/river; nested not duplicated."
 atomPath: "body/river"
 coordinate: "body/river · 7/descent · cdff45fc"
-contentUuid: "3ef58fde-3dd7-5660-b2fd-d0517b5792af"
-diamondUuid: "f8ce62f0-ea84-837d-a755-0ff2b48534df"
+contentUuid: "7921d404-43a0-5af2-a103-71511167536e"
+diamondUuid: "b8426849-c8bb-8102-bcbd-941e7ed1941d"
 uuid: "cdff45fc-5067-8657-a8eb-1f9a5be979f0"
 horo: 7
 typography:
   partition: body
-  bondDegree: 26
+  bondDegree: 16
 standards:
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:
-  computationUuid: "f44bc198-d55f-8842-aab6-68a4c2701af0"
+  computationUuid: "68651b22-90b8-8f94-bc9e-37a32f4e3993"
   stages:
     - stage: path
       stageUuid: "45749f60-60a0-830d-bf07-8041934d3504"
@@ -25,11 +25,11 @@ signatures:
     - stage: links
       stageUuid: "2d65f81f-f990-8423-b59d-17f13f2ef942"
     - stage: horo
-      stageUuid: "3f099289-2450-840a-b300-5edf027936b8"
+      stageUuid: "10f13e98-2e3a-80ac-a88f-6dfcd88c8d48"
     - stage: seal
       stageUuid: "6b3dad95-1789-8941-84c5-4cfc2a92d55e"
     - stage: uuid
-      stageUuid: "88d3145f-4d1d-8ead-ac49-2c2b77a2dedd"
+      stageUuid: "f18cdb38-3482-848a-af7e-f93543772cee"
 version: 2
 ---
 # body/river — anatomical part
