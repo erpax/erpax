@@ -1,6 +1,6 @@
 {
   "name": "@erpax/access",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Access control for a multi-tenant ERP — RBAC verdicts, actor resolution from a request, and agent/MCP scoping. Part of erpax. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
@@ -37,9 +37,10 @@
   },
   "erpax": {
     "closureCeiling": 23,
-    "sizeCeilingKb": 31
+    "sizeCeilingKb": 33
   },
   "dependencies": {
+    "typescript": "5.9.3",
     "zod": "3.25.76"
   },
   "keywords": [
