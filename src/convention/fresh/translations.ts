@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fresh",
-    "uuid": "ba1d434e-bb00-8337-ac7a-007a8b839dea",
+    "uuid": "bbd08fc3-4220-83d3-980f-d5de24a3d185",
     "words": [
       "fresh"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about stale references as entropy — an import whose target does not exist on disk is a dead wire that lowers tamper-cost; this scans every `@/` import across src/scripts/.vitepress and reports the live fraction that resolves to a real file.",
-    "uuid": "29c01f2e-1bac-8e99-ac01-11205e402664",
+    "uuid": "e0d7a849-61e6-8f90-a563-1891a54bf550",
     "words": [
       "use",
       "when",

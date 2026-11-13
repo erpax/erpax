@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a sealed tree should land by itself — the stop-hook body that runs the full seal, then commits and pushes, detached and lock-guarded, and touches nothing when the seal is red.",
-    "uuid": "12468f37-6866-89b8-84d3-9150a559d637",
+    "uuid": "a7c49ee3-4443-8f60-bb77-f651925e598c",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a quantum state must be DECIDED rather than approximated — an exact-amplitude register (integer amplitudes, halvings instead of division) with H · X · Z · CNOT · SWAP, the Bell and GHZ states, a determinant entanglement witness, enumerated shots, and the one Float Born normaliser the three Float copies fold onto; kernel-checked twin in Register.lean.",
-    "uuid": "9d87393b-fdc1-88d5-adfe-b22c5670d56d",
+    "uuid": "ec63a0f8-9027-8c4a-9bd9-b63cf23b8133",
     "words": [
       "use",
       "when",

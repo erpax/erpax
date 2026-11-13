@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a document's page should show what its law rests on — merges the SKILL's claim, the Lean theorems it cites as their source states them, and the kernel record rendered as LaTeX into one proof section in a fixed order: claim, argument, evidence, assumptions. A document with no formal proof is shown as having none.",
-    "uuid": "66104a2f-895d-83c5-98d1-9b75660e99c2",
+    "uuid": "b2922db5-0a25-8b2d-83f9-1f00da37d0d5",
     "words": [
       "use",
       "when",

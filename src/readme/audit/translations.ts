@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about audit — The root README carries a header saying *do not edit by hand, drift fails closed*.",
-    "uuid": "8dd34fae-fdf9-8a51-a3f0-e7e37035720a",
+    "uuid": "604bfb83-dc6e-8879-8d1f-8bb630af08d1",
     "words": [
       "use",
       "when",

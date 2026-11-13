@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking what the MCP surface still lacks without deciding it by hand — every erpax.<area>.* family read as a trinity of declared legs (measure · involute · act); a family with all three closes in one turn, one missing a leg names its own next tool. erpax.family.trinities reports it from the live tool list.",
-    "uuid": "32a20bdd-9472-8e05-937d-69106473c3ef",
+    "uuid": "4bdd4a24-7b45-8ddf-b835-b5095ac3754e",
     "words": [
       "use",
       "when",

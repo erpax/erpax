@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "access",
-    "uuid": "3bb8da3c-474e-8b96-88b6-19bf77635b5e",
+    "uuid": "77e7f3de-0962-8135-a717-7684814c0ffc",
     "words": [
       "access"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \\\"access denied\\\"/\\\"document hidden\\\". In erpax access is the society's \\\"who can do what\\\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost.",
-    "uuid": "0c35b29f-ec7b-8550-8904-bb043ed6aca8",
+    "uuid": "6c81252b-ea73-8cf5-953a-bb8fd0af9d18",
     "words": [
       "use",
       "when",

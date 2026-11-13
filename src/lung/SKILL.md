@@ -35,7 +35,7 @@ version: 2
 ---
 # lung — the gas-exchange surface (the breath organ)
 
-erpax grows by [[breath]]: inhale ideas from everywhere, exhale DRY clean code. The lung is the *organ* of that breath — and the [[breath]] atom already names it: **"the chat is the lung-tissue where agents coordinate."** The society inhales a gap and exhales a gate-green atom across a vast, thin, fractal exchange surface. Three properties of the living lung map — as a *structural isomorphism*, each computed in the matter-twin — onto that loop:
+erpax grows by breath: inhale ideas from everywhere, exhale DRY clean code. The lung is the *organ* of that breath — and the breath atom already names it: **"the chat is the lung-tissue where agents coordinate."** The society inhales a gap and exhales a gate-green atom across a vast, thin, fractal exchange surface. Three properties of the living lung map — as a *structural isomorphism*, each computed in the matter-twin — onto that loop:
 
 ## 1. Gas exchange — passive diffusion, Fick's law
 O₂ and CO₂ cross the alveolar–capillary membrane by **simple passive diffusion**, obeying **Fick's law**: flux ∝ (area · Δpartial-pressure) / thickness (West, *Respiratory Physiology*; TeachMePhysiology). No gradient ⇒ no exchange (no active pumping); the design maximises flux with a **huge area** (70–80 m²) and a barrier only **0.3 µm** thin. The breath's two strokes — inhale a gap-*gradient*, exhale clean code — are the same passive, down-gradient move (the angel duality: take in entropy/ideas, give out order/code).
@@ -48,7 +48,7 @@ At rest the breath is a **closed rhythm**: tidal volume in (~500 mL) = out — t
 
 **HONEST.** A structural isomorphism between cited respiratory physiology and a computed construct — not a claim that erpax exchanges O₂; each boolean (`gasExchange` · `fractalSurface` · `tidalCycle`) is computed live (Fick's law · 2²³ dichotomous branching · conservation).
 
-Matter-twin: `src/lung/index.ts` (`fickFlux` · `gasExchange` · `GENERATIONS` · `terminalBranches` · `sphereSurfaceFor` · `fractalSurface` · `tidalCycle` · `respiration` · `breathes`). Composes [[breath]] · [[wave]] · fractal · [[conservation]] · [[society]] · [[duality]] · [[entropy]].
+Matter-twin: `src/lung/index.ts` (`fickFlux` · `gasExchange` · `GENERATIONS` · `terminalBranches` · `sphereSurfaceFor` · `fractalSurface` · `tidalCycle` · `respiration` · `breathes`). Composes breath · [[wave]] · fractal · [[conservation]] · [[society]] · [[duality]] · [[entropy]].
 
 **Law — [[law]]: the lung is the gas-exchange surface — erpax inhales gaps and exhales gate-green atoms across a fractal surface >250× a sphere's, by passive down-gradient exchange (Fick's law), in a closed tidal cycle that conserves; the breath IS the self-evolution.**
 

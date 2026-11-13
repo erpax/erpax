@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing Period-End Closing Standard.",
-    "uuid": "39dce826-1af0-8409-9bbb-a896154aef83",
+    "uuid": "830bb686-a772-84a2-9202-f32425bdeaa9",
     "words": [
       "use",
       "when",

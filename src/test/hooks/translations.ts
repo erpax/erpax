@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tests consume the aura projection to render a colour — green (the A432 heart colour) when the aura is whole (the double-torus complete), else red; tests return coherence as colour, not just pass/fail.",
-    "uuid": "623577da-5525-8436-9044-f396b1ee7f52",
+    "uuid": "a1835cdf-b225-8e59-bb4a-0756da20ece0",
     "words": [
       "use",
       "when",

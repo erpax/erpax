@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register.",
-    "uuid": "f34e5e4e-c5f0-8312-a2da-897c7c6a3401",
+    "uuid": "82166521-d42d-8f32-9a25-879319c2b518",
     "words": [
       "use",
       "when",

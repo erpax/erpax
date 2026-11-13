@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an entity needs quick free-text find across a few key columns — code/name/barcode/number lookup. The SearchConcern/quick_search (ransack) pattern → a Payload where/like query or a search index.",
-    "uuid": "7d0002ea-45dc-8234-9b93-55e59c1221bf",
+    "uuid": "b59474a7-2ca9-8226-ac2d-f6aa9c96cabc",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when asking the only question no other gate asks — does the app actually LOAD? Boots payload.config for real and asserts every collection registers. It now PASSES — load — OK from esm, 229 collections — after the tool-defs → collections edge was cut and the `pages` collection was renamed. The SCC is still ~225 files: entangled is not fatal. The harness that swallowed the boot fails closed now, and the sentinel is stamped only by a run that verified the schema.",
-    "uuid": "51b64bcb-047e-8bd9-aa60-638205a6d69e",
+    "uuid": "dd69c069-cb49-86e3-8ded-1b2a905ebc55",
     "words": [
       "use",
       "when",

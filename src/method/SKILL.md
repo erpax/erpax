@@ -34,7 +34,7 @@ version: 2
 ---
 # method — every method name has a path of diamonds
 
-The standing command, made compute: **all method names have a path of diamonds**. In erpax every folder, file, and exported symbol is a [[diamond]] (fractal closed-lattice law at every scale). A **method** is the leaf diamond on an atom's public face — its `index.ts` barrel ([[convention/exported]] · [[convention/import]]). Its identity is not a free-floating global; it is the **chain of [[atom]] folders** from `src/` to the barrel, plus the exported symbol name:
+The standing command, made compute: **all method names have a path of diamonds**. In erpax every folder, file, and exported symbol is a [[diamond]] (fractal closed-lattice law at every scale). A **method** is the leaf diamond on an atom's public face — its `index.ts` barrel (convention/exported · [[convention/import]]). Its identity is not a free-floating global; it is the **chain of [[atom]] folders** from `src/` to the barrel, plus the exported symbol name:
 
 ```
 law/folder/folderGuardians
@@ -71,6 +71,6 @@ The method boundary uses the same content-[[uuid]] primitive as file boundaries 
 
 **Law — [[law]]: every method name has a path of diamonds — the atom chain from corpus root to its `index.ts` barrel plus the exported symbol at the leaf; the path is the method's address in the lattice, content-uuid sealed at `{ atomPath, symbol }`; computed by `methodPath`/`scanMethodPaths`, never hand-listed.**
 
-@see [[diamond]] · [[atom]] · [[quantum/boundary]] · [[convention/exported]] · [[convention/import]] · [[identity]] · [[sequence]] · [[name]] · [[path]]
+@see [[diamond]] · [[atom]] · [[quantum/boundary]] · convention/exported · [[convention/import]] · [[identity]] · [[sequence]] · [[name]] · [[path]]
 @audit paths computed from live index.ts exports via parseMethodExports
 @standard schema.org — method vocabulary (collided homonym); ISO/IEC 25010:2023 §5.5 testability — pure path functions regression-locked

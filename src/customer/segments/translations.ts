@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when grouping customers for differentiated pricing tiers, volume discounts, targeted campaigns, or IFRS-15 §4 portfolio-of-contracts disclosures — segment type, pricing tier, payment terms, credit limit, and priority rank. The CRM customer-segmentation collection.",
-    "uuid": "dd73aa2e-67a1-8f6a-b7c7-fabd8bdbd34d",
+    "uuid": "f2aa10e4-87b2-89b6-81d5-8d3aa5dbb7f6",
     "words": [
       "use",
       "when",

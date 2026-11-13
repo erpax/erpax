@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about document — RFC 9110 §13 cached document fetcher (single doc by collection + slug).",
-    "uuid": "f7729261-0af4-817f-961b-06c35deb2c51",
+    "uuid": "791cdc8f-efa8-8253-aab9-83177c3ec0c6",
     "words": [
       "use",
       "when",

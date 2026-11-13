@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the offline web surface must stay trustworthy — service-worker cache keys, background-sync queue durability, manifest integrity, push dedup; every Progressive Web App pain point collapsed to a content-uuid problem.",
-    "uuid": "e0b91623-c362-8e1f-b6e3-86e34d9acedd",
+    "uuid": "a85f14ab-b94e-8539-b24b-2d611e91c8f6",
     "words": [
       "use",
       "when",

@@ -77,7 +77,7 @@ it in the commit that earned it ([[rules]]/slack).
 
 Two corrections came first, in this order, because moving an axis onto a classification before the
 classification is right would hide debt rather than measure it: four PHANTOMS (a `###` subsection
-inside `## Standards` in [[supto]], whose bullets about how to *write* banners were read as cited
+inside `## Standards` in supto, whose bullets about how to *write* banners were read as cited
 standards — the section reader stops at the next `##`), and four STATUTES rescued from literature
 (`Кодекс на труда`, `ЗКИР`, `Търговски регистър`, the БУЛСТАТ register law — obligations written by
 name rather than number). `ISSUING_BODIES` and `NAMED_STANDARDS` are DECLARED, and the failure direction that

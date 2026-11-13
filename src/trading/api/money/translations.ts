@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about money — Use for the money-movement trading APIs — payment gateways/PSPs, direct-debit/payout, open-banking aggregators, FX/market-data feeds, and Peppol/EDI e-invoicing networks. The money slice of the trading-API registry.",
-    "uuid": "8632d83c-ed97-83ec-ad77-a12f80eed3ed",
+    "uuid": "6effef17-ef4f-86cf-9914-6f40b194d8fc",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about witness — A cross-check is only worth the independence of its legs. already treats an unreachable boundary as an **unanswered question** rather than a failure; this atom asks the sharper…",
-    "uuid": "3443b922-a435-8f82-a1ca-d7752e0a7375",
+    "uuid": "d5d1de53-5886-8971-b0e1-87b6878dc03c",
     "words": [
       "use",
       "when",

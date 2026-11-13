@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "access",
-    "uuid": "3bb8da3c-474e-8b96-88b6-19bf77635b5e",
+    "uuid": "77e7f3de-0962-8135-a717-7684814c0ffc",
     "words": [
       "access"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reaching access enforcement from the standard side — the double-wire reciprocal of access/standard, the API-access-derived-from-law cross.",
-    "uuid": "eb7068df-f18d-838f-acf6-f236c1b0d739",
+    "uuid": "3d468213-ef30-8ad5-9874-d1fd5bdbb14c",
     "words": [
       "use",
       "when",

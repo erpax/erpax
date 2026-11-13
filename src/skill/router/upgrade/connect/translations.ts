@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when materialising or verifying SKILL.md frontmatter against live corpus state — build the upgrade context, fold atomPath/diamond/coordinate/bonds/neighbours into one connected frontmatter block, and verify drift. The connect/materialise/verify flow of the skill-upgrade hub.",
-    "uuid": "c93cdce8-9d07-8bd0-9181-f809c35a2e6c",
+    "uuid": "91f38e59-8d28-8983-8695-d1b4cc8adb91",
     "words": [
       "use",
       "when",

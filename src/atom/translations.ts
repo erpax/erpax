@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's irreducible unit — the one-word, content-addressed skill atom everything is composed of. Every entity, collection, agent, interaction, frame, and datum is made of atoms; the corpus is the periodic table, reality its molecules. The ontology beneath every other law.",
-    "uuid": "ca9220a4-da98-802c-8118-da959d62b7df",
+    "uuid": "b760ed35-3a1d-83b1-852b-3a497a5ee488",
     "words": [
       "use",
       "when",

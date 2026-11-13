@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — fires when a statement lands, which is the event reconciliation waits on. Polling for new statements instead would make the delay a property of the poll interval rather than of…",
-    "uuid": "c6f5d1de-80b5-8c20-a6b4-4bb06852d30b",
+    "uuid": "1a57a239-baf1-8528-87b2-1820f98ce76a",
     "words": [
       "use",
       "when",

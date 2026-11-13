@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about domain — Four cracks in one session, and the same gap behind three of them:",
-    "uuid": "2900048a-a140-8778-9afc-c93bee391e0a",
+    "uuid": "d6565ec3-005f-87f2-af19-cc3ccf1a36a7",
     "words": [
       "use",
       "when",

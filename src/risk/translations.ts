@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about risk — Nothing here predicts a default. Credit risk is a **forecast**, and a function returning one would be a number a bank could point at with nothing behind it — the same refusal kyc…",
-    "uuid": "a2d2d89f-2363-8134-aaba-16668c4d86aa",
+    "uuid": "2e2713a7-f22f-8434-bd51-6405c969ee64",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about unit — 's own docstring calls itself *\\\"single source of truth for how old is this item\\\"*, cites ISO-8601, and party's SKILL says the day-arithmetic *\\\"is borrowed… not re-typed — the…",
-    "uuid": "70799818-f523-8b50-b01b-4bbf959dbc27",
+    "uuid": "1dd13bf9-cf53-8aaf-9586-340b593a7b43",
     "words": [
       "use",
       "when",

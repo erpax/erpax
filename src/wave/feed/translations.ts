@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when feeding research/develop waves into themselves for endless R&D — each generation's waves become the next asks; corpus may grow; shouldContinue until external stop; maxGenerations bounds one call.",
-    "uuid": "d5838fc9-ddaf-8a0f-901f-b482892cf522",
+    "uuid": "92e3cd66-19ba-8fad-bccb-5da725662d46",
     "words": [
       "use",
       "when",

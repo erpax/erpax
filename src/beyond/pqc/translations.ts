@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about pqc — returned a whose read , carrying a real algorithm name and a real ISO-8601 timestamp — **and it did not throw**. A caller checking that a signature came back proceeded.",
-    "uuid": "493ad0c0-2aff-8ebd-a014-b2f5d1944b70",
+    "uuid": "20a66d3d-8474-8c16-8d50-1e23ef201e5f",
     "words": [
       "use",
       "when",

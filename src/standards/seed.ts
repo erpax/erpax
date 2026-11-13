@@ -271,7 +271,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2019/2152 of the European Parliament and of the Council of 27 November 2019 on European business statistics (Intrastat intra-EU trade reporting)",
     "uuid": "5cbb6bc1-887a-8c8c-88fd-fba1a9346c71",
     "color": "hsl(339 57% 39%)",
-    "count": 348,
+    "count": 347,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -2034,7 +2034,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 199,
+    "count": 194,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -3051,7 +3051,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Date and time representation",
     "uuid": "dcc7dde3-fa6b-8409-9382-89554e4c4d2b",
     "color": "hsl(359 66% 49%)",
-    "count": 331,
+    "count": 329,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -3157,7 +3157,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Currency codes",
     "uuid": "2aa02578-47b5-80bf-ad53-a36e04aaccfb",
     "color": "hsl(112 57% 38%)",
-    "count": 306,
+    "count": 302,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -9065,7 +9065,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Linked-data type vocabulary",
     "uuid": "9cff4f7f-f5d5-8924-99c4-0d564a3735fb",
     "color": "hsl(231 64% 45%)",
-    "count": 292,
+    "count": 254,
     "modules": [
       {
         "path": "src/abdomen/SKILL.md",

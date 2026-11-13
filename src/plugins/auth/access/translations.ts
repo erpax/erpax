@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "access",
-    "uuid": "3bb8da3c-474e-8b96-88b6-19bf77635b5e",
+    "uuid": "77e7f3de-0962-8135-a717-7684814c0ffc",
     "words": [
       "access"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about access — Its own docstring read: *\\\"All access control in the codebase routes through these helpers.\\\"* Measured 2026-09-25 across every hand-written :",
-    "uuid": "5a531db1-4521-8f37-9c6d-b79517506f3a",
+    "uuid": "d4f083c4-2a80-87b3-94d6-b5e44be6340d",
     "words": [
       "use",
       "when",

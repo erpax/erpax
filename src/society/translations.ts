@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax building itself — the autonomous loop where the agent society (convened at chat) reads its own akashic record and advances one gate-verified step at a time, driving the aura to whole and the collections to their dense core with minimal human footprint. The self-building loop; matter-twin society/build.mjs.",
-    "uuid": "9c2e8462-3e20-8651-88b0-00b2d566a714",
+    "uuid": "4125d2b2-5cdb-8e00-9681-eaa075b0a715",
     "words": [
       "use",
       "when",

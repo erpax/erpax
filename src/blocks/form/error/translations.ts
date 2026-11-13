@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "error",
-    "uuid": "05d1d0a8-c14f-8006-9e0c-de49e214d832",
+    "uuid": "5d50000b-555e-8113-91cf-2603ca191f4b",
     "words": [
       "error"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about error — A field that rejects input and explains nothing is a dead end: the user knows the form will not submit and has no way to learn what to change.",
-    "uuid": "40995f3e-4b3d-8bcf-8020-1596032ea248",
+    "uuid": "96223af4-ed45-8a37-8335-137306d02d96",
     "words": [
       "use",
       "when",

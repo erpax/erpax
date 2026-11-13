@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about inventory — erpax proves its decisions in Lean. Until this atom, the only way to SEE that was to install Lean 4.33.1 and run it — so every reader who did not met the claim as a sentence…",
-    "uuid": "e9d145c3-5a58-85b4-8f8a-6dfd7da0f055",
+    "uuid": "3851ea79-475c-86b5-a260-806bd9d810b6",
     "words": [
       "use",
       "when",

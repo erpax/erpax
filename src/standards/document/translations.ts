@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the standards the corpus cites should be read as documents — derives nested pages from the standards seed: the register, one page per family, one per standard listing the modules that cite it; generated as a page seed and loaded through the REST API.",
-    "uuid": "995ff9d8-39a4-8ec5-a138-24d8df206456",
+    "uuid": "af4c21ba-4327-89c3-b3df-7e8aef327bf5",
     "words": [
       "use",
       "when",

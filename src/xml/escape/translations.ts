@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about escape — must be replaced before any text or attribute value is embedded in generated XML (**XML 1.0 §2.4**).",
-    "uuid": "0e3514ac-799a-8d1f-ad6c-98471db84530",
+    "uuid": "d44f1f84-1ce7-8017-96e7-979d80bd916b",
     "words": [
       "use",
       "when",

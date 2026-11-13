@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when attaching every Cloudflare binding to the edge Worker — each binding is a sense the pure-compute Worker is granted to reach the world (D1, R2, AI, Vectorize, KV, Queues, Durable Objects, Browser, Analytics, Email), the platform-level measurement boundary; attach all, gate each through access, emit a receipt.",
-    "uuid": "5c918bd7-48e0-80d0-bf6f-e0f47172f1df",
+    "uuid": "f9518043-dbe1-8ad3-bca1-4dc939220aa7",
     "words": [
       "use",
       "when",

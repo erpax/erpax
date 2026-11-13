@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hooks — books the run when it reaches posted, so the ledger entry is made by the row that caused it rather than by whichever screen happened to save it.",
-    "uuid": "9f95c23f-49c4-865a-b8a2-55fa88eca6e6",
+    "uuid": "d964a8a1-7868-8100-b02d-0fa17780e78b",
     "words": [
       "use",
       "when",

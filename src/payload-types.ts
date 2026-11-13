@@ -18442,7 +18442,7 @@ export interface TransferPricingFile {
 /**
  * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
  *
- * — diamond-uuid: 3143469c-94d2-848c-a4df-7d6fc2f40a6e
+ * — diamond-uuid: 6cfb8010-cc2a-8b27-8d3d-fee6c48fb887
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "translations".

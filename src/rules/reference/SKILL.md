@@ -40,7 +40,7 @@ version: 2
 ---
 # reference — the citation must lead to the evidence
 
-The corpus already fails closed on a dead atom link ([[confirm]]). A dead **file-path** reference was ungated — and it rotted. [[supto]] stated the Наредба Н-18 law and pointed at a `standards/` path; the matter had moved under the naredba atom in the folder-law restructuring, and **ten files** kept the stale pointer. Anyone tracing the statute to its implementation followed a 404.
+The corpus already fails closed on a dead atom link ([[confirm]]). A dead **file-path** reference was ungated — and it rotted. supto stated the Наредба Н-18 law and pointed at a `standards/` path; the matter had moved under the naredba atom in the folder-law restructuring, and **ten files** kept the stale pointer. Anyone tracing the statute to its implementation followed a 404.
 
 > The literal stale paths are NOT quoted here — a dead path in prose fails this gate, exactly as it should. They live in this atom's test on hermetic fixtures, and the live list is computed by the CLI face. The examples belong in the code, not the prose.
 
@@ -63,7 +63,7 @@ That is a **legal** defect, not a cosmetic one. Наредба Н-18 requires th
 
 **Saying erpax is legally usable while 97 statutory citations lead nowhere would be exactly the claim this gate exists to prevent.** The path to zero is per-case research (each stale target needs its *right* new home), not a blind rewrite — a pointer to the wrong existing file passes the gate and is worse than a dead one.
 
-**Honest boundary.** This proves a reference **resolves**, never that it is the **right** reference — misattribution passes. It closes rot, not correctness. And a resolving trace is a precondition of legal review, never a substitute for it: Наредба Н-18 compliance requires НАП registration and declaration of the СУПТО, and legal counsel — no gate confers that ([[supto]]).
+**Honest boundary.** This proves a reference **resolves**, never that it is the **right** reference — misattribution passes. It closes rot, not correctness. And a resolving trace is a precondition of legal review, never a substitute for it: Наредба Н-18 compliance requires НАП registration and declaration of the СУПТО, and legal counsel — no gate confers that (supto).
 
 **Law — [[law]]: a citation must lead to its evidence. Every `src/…` path a law points at must exist, and on the statutory surface the ceiling is zero — a moved file carries its references in the same diff, or the law it implements becomes unreviewable.**
 
@@ -72,4 +72,4 @@ That is a **legal** defect, not a cosmetic one. Наредба Н-18 requires th
 - **ISO-19011:2018 §6.4** — audit evidence: the citation must lead to the evidence.
 - **BG Наредба Н-18 §СУПТО** — the software must be documented and inspectable.
 
-Composes: [[rules]] · [[confirm]] · [[supto]] · [[law]].
+Composes: [[rules]] · [[confirm]] · supto · [[law]].

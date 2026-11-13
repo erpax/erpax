@@ -71,7 +71,7 @@ atom in the corpus"* cannot go stale, because it says the invariant instead of t
 
 The first pass matched across newlines and reported `3000\nnode` — a **dev-server port** — as a
 claim about matrix nodes. Same-line matching took 16 → 8; reading each sentence excluded two
-scoped illustrations ([[sparsity]] *"593 atoms"* beside *"671B parameters"*, [[vocabulary]]
+scoped illustrations (sparsity *"593 atoms"* beside *"671B parameters"*, [[vocabulary]]
 *"2241 atoms grounded"* against its own arbiter) and took 8 → 7. **Default to not changing when
 the signal is ambiguous** — a wrong correction is worse than a stale one, because it reads as
 freshly verified.

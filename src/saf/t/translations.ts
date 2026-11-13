@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing OECD SAF-T — Standard Audit File for Tax.",
-    "uuid": "dfaee123-525c-8408-b1b7-ea18495acf9a",
+    "uuid": "73151e4e-f624-89c7-86b4-87a0b09ee03e",
     "words": [
       "use",
       "when",

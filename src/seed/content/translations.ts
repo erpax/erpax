@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when loading documents as data instead of building them into the site — markdown becomes nested pages (documents, with a parent and breadcrumbs) and posts (publications, which reference the pages and product variants they are based on), written through the Local API with the editor of the field they land in, idempotently by content address.",
-    "uuid": "7c18d2e2-0062-8981-a9ae-23ac2f7ba98a",
+    "uuid": "3bd84ecd-a528-80e4-b13f-76cde33ed7d6",
     "words": [
       "use",
       "when",

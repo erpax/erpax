@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about widget — Every widget here is over an analytics view-model. The tile receives what it draws and computes nothing about where it came from — the fetch belongs to dashboard/spec, which owns…",
-    "uuid": "8be39734-99cc-818b-a2aa-286fca108f35",
+    "uuid": "f38619df-0e23-8fca-bcaa-8320c65b1147",
     "words": [
       "use",
       "when",

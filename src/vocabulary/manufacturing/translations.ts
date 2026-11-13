@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when designing or porting the erpax manufacturing domain to Payload — production orders, routings/operations, work centers, BOMs, work shifts/labor, or modelling product variants without a fixed option grid. The all-industries `@erpax/manufacturing` pattern.",
-    "uuid": "f295b156-3ba9-842e-9315-acd009004c89",
+    "uuid": "e09e66ac-f583-8632-b27d-19cf8a08987b",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when writing or debugging erpax's own tests — discovering the live config to assert against, seeding isolated fixtures by level (unit/integration/e2e), transactional cleanup, parallel runners, or snapshot/restore — the society's self-test infrastructure that validates the running app against its own generated schema.",
-    "uuid": "5613e3d0-84de-8c19-a59b-cbbf0df274f6",
+    "uuid": "e4a26473-d3de-8001-a836-b10269d56b71",
     "words": [
       "use",
       "when",

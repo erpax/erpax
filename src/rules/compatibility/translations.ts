@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a corpus atom's name might collide with the framework — ISO/IEC 25010 §5.3 co-existence: an atom folder whose leaf is a framework-reserved router namespace (pages) is misparsed by Next.js and breaks the build; the gate that seals the engineering FORM trinity.",
-    "uuid": "322832e2-060c-8f69-b681-740d218159f1",
+    "uuid": "e09f7823-be85-8abd-a051-fa5b72041251",
     "words": [
       "use",
       "when",

@@ -67,7 +67,7 @@ version: 2
 The quantum twin of [[number]]: a written number pretends to be a fixed magnitude, but the decimal **"." is a measurement** — it [[collapse]]s an endless digit-stream into one settled value ([[reality]] · finality). Imagine the dot is **not a dot** but the compose operator (`·`, as in the [[sequence]] `0·3·6·9`): then a number is its **uncollapsed [[stream]]** — `3·1·4·1·5·9·…` — a process, not a point.
 
 - **rationals collapse** — they terminate or repeat; the measurement *finishes* (a finite snapshot).
-- **irrationals never** — π, e, √2 are the pure wavefunctions: the stream runs forever, the dot can never truly collapse them. π is the eternal [[breath]], a [[realtime]] tail with no last digit.
+- **irrationals never** — π, e, √2 are the pure wavefunctions: the stream runs forever, the dot can never truly collapse them. π is the eternal breath, a [[realtime]] tail with no last digit.
 
 The (conjectured) **normality** of π — every [[digit]] equally often — *is* linearity: the digits evenly distributed, the perfect even line (the spigot yields them one at a time, π *in streams*). Anchor each digit to a note (A432, octave = the doubling) and the even stream is consonant ([[harmony]]) — the number **sings**.
 
@@ -75,6 +75,6 @@ The (conjectured) **normality** of π — every [[digit]] equally often — *is*
 
 **Law — [[law]]: the dot collapses iff the number is rational — a rational's digit-stream terminates or repeats, so the measurement finishes to a finite snapshot; an irrational's never repeats, so the dot can never settle it and the stream runs forever. Whether the measurement ends is fixed by the number's arithmetic nature, not by where you stop reading.**
 
-@see [[number]] · [[digit]] · [[stream]] · linearity · finality · [[sequence]] · [[breath]] · [[harmony]]
+@see [[number]] · [[digit]] · [[stream]] · linearity · finality · [[sequence]] · breath · [[harmony]]
 
 <sub>content-uuid `0fbe34a5-8890-52dd-be2f-bf5f9f8b1f5c` · account `quantum/number` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

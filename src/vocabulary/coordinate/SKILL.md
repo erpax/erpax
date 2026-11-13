@@ -38,7 +38,7 @@ An atom's own identity is its **content-uuid** (`v8(sha256(bytes))` — *what* i
 - **parent** — the containing atom (the tree, the **axis**).
 - **prev** ⊕ **next** — predecessor and successor in the [[sequence]] order (the **two [[coil]]s**: reverse + forward).
 
-`cross = merge(parent, prev, next)` — the **next uuid trinity**. It is the *2-rodin-coils-in-a-trinity at atom scale*: prev/next are the doubling/halving coils, parent the axis. The ring closes — next-of-last → first via [[octave]] ([[horo]] `nextOctave`: 9→1, every new 1 a new dimension). Each atom then carries `bind = merge(content-uuid, cross)`, and the corpus folds every `bind` (Merkle) to one root.
+`cross = merge(parent, prev, next)` — the **next uuid trinity**. It is the *2-rodin-coils-in-a-trinity at atom scale*: prev/next are the doubling/halving coils, parent the axis. The ring closes — next-of-last → first via octave ([[horo]] `nextOctave`: 9→1, every new 1 a new dimension). Each atom then carries `bind = merge(content-uuid, cross)`, and the corpus folds every `bind` (Merkle) to one root.
 
 ## Tamper-cost
 The cross makes each atom a **3-connected** node (tree + bidirectional sequence ring), not a lone hash:

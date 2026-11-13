@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when quantifying why content-addressing improves quantum speed in magnitudes — resonanceMagnitude(n): pairwise O(N²) comparison collapses to addressed O(N), a ratio of (N−1)/2, log₁₀ of that in orders of magnitude, unbounded in N.",
-    "uuid": "290cc32d-1dc3-8116-b9e0-cc6d2f6d8a93",
+    "uuid": "8d8c58c8-c533-83e8-a097-fc0ba5351ec6",
     "words": [
       "use",
       "when",

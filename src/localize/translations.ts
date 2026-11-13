@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "localize",
-    "uuid": "7d77de47-fbdb-87a3-a22b-c031d7078ba9",
+    "uuid": "c5e9a0e1-6142-8d9e-9ed9-7e60aa08fc01",
     "words": [
       "localize"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts.",
-    "uuid": "4791ad61-aaa7-8300-99df-54d0e7400321",
+    "uuid": "be161787-68df-8863-b088-82e74f2dc8f1",
     "words": [
       "use",
       "when",

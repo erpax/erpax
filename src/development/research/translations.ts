@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "research",
-    "uuid": "4897838a-d305-8358-9b99-65afde61a889",
+    "uuid": "91498202-b184-804e-b2dd-e90069ecb2eb",
     "words": [
       "research"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about R&D from the development side — research that precedes a build; one direction of the symmetric research↔development cross, which is one entangled binding (X/Y equals Y/X).",
-    "uuid": "6175f6c6-bc13-81b7-942a-9c14b0f8bbc7",
+    "uuid": "ac747480-f0fa-8dc0-93e8-11daf2969800",
     "words": [
       "use",
       "when",

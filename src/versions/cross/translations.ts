@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about cross — Every entity change content-addresses to a leaf. That same leaf is simultaneously the VERSION (a new content-uuid), a TAMPER-COST increment (one more link a forger must rewrite)…",
-    "uuid": "ec753bbc-1614-805a-8485-beb523b3c0e7",
+    "uuid": "3a9f525b-ff97-818b-90ea-5725dc815796",
     "words": [
       "use",
       "when",

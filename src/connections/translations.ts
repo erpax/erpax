@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub.",
-    "uuid": "d6132ba1-8856-8d42-b676-41666a3a6ba1",
+    "uuid": "7fda69ac-c9a6-8242-8fce-4dff962e54fa",
     "words": [
       "use",
       "when",

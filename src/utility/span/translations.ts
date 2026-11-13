@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about span — The calendar day stood at **twenty-four addresses in four notations** — (22 sites), a local in , a bare in the ISO-week calculation, and reversed in — while called itself the…",
-    "uuid": "d34b822b-bc9b-8828-8a45-78f7010ec2cb",
+    "uuid": "eb541492-59f7-8da5-bdd7-e8cde18096fc",
     "words": [
       "use",
       "when",

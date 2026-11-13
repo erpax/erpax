@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when collapsing the corpus's conventions into one tamper-cost verdict — pure math, no default; joint coverage is the product of each convention-check's computed coverage, and the tamper-cost is coverageCostLog2 of it, infinite only when every convention is computed clean (zero entropy).",
-    "uuid": "cd174302-edc6-8ab7-9df0-df6b4f44d357",
+    "uuid": "b50e7d96-6555-8b23-ba6b-e1d55f17054c",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accounting",
-    "uuid": "63a82724-7f0e-86ec-8a5e-80d97c33573a",
+    "uuid": "27cd8bc7-27e5-8187-af33-cc40538ba5e6",
     "words": [
       "accounting"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when erpax runs its OWN books — auto-booking subscription revenue (IFRS-15), infra/payroll/supplier/tax costs, scheduling regulatory filings (FINREP/COREP/CSRD/VAT) and obligations, and checking nothing is overdue (Conservation Law 26, checkSelfAccountingComplete). The self as a double-entry gateway; revenue is the credit, cost the debit, the filing the proof.",
-    "uuid": "64121d15-bd94-8451-8a31-c5be639e56f2",
+    "uuid": "c6c574dd-c023-8f76-94b4-88cd3c020a28",
     "words": [
       "use",
       "when",

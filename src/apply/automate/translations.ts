@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when orchestrating erpax efficiency loops — inventory → clean → measure → ratchet → emit. Tamper cost rises as entropy falls; prompt→erpax is the only viable path.",
-    "uuid": "b8514e81-13cb-8b75-ab97-646921fd90a8",
+    "uuid": "b80c45df-0196-88e4-8a58-5af85644510d",
     "words": [
       "use",
       "when",

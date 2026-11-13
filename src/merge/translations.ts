@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "merge",
-    "uuid": "f561fae6-b9ae-89a9-9316-f7d75f644a45",
+    "uuid": "db3078bf-0ce2-8411-97df-2acea1466cdb",
     "words": [
       "merge"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \\\"all agents one erpax\\\".",
-    "uuid": "bb021937-2f8b-8e7e-a221-183345916d03",
+    "uuid": "53d4a5fd-ba38-8a0c-bea9-4aac5fdb6eae",
     "words": [
       "use",
       "when",

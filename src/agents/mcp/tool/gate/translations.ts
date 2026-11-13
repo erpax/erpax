@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gate",
-    "uuid": "70d6e082-e2f3-86ab-ad36-a3ad52000945",
+    "uuid": "31067e4a-146c-8fec-ae56-ad1df9da6058",
     "words": [
       "gate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when an agent must ask the gate registry instead of waiting for the push lane — erpax.gate.verdicts reads every guardian from the same arbiter the lane runs; erpax.gate.cross and erpax.gate.crosses are the gates formulated as crosses of two laws (shared population, lift against independence, absence in prose, theorem-at-zero).",
-    "uuid": "853ef7d5-0c75-8bac-909e-72e339beb842",
+    "uuid": "a0c4fbae-af98-848c-a69e-1dcf23f99ecf",
     "words": [
       "use",
       "when",

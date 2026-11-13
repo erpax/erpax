@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when matter lives at a path that cannot be addressed — a folder whose name is not one lowercase word has no lawful path, so no content-uuid, so no matrix node, so the fold never deduplicates it. This is NOT the alphanumeric-name axis restated: that counts NAMES and reads as cosmetic; this counts MATTER the corpus cannot see, which is where a second implementation grows unnoticed. Run: tsx src/rules/invisible/index.ts",
-    "uuid": "48c873e3-60c5-89ae-96f4-000da0281b4e",
+    "uuid": "c3d71366-5af8-8095-8877-4f90b1b0a7ba",
     "words": [
       "use",
       "when",

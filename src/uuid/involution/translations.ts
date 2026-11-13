@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about involution — The Clay deposit's structure is a universal self-inverse involution, sealed over 25 balances on the mirror : applied twice every balance returns, every balance moves except one…",
-    "uuid": "63788c36-87e2-8457-9028-e5f081dcb81f",
+    "uuid": "455a4c92-692d-8e49-a3a7-2b0bd3ddefbf",
     "words": [
       "use",
       "when",

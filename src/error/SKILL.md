@@ -44,7 +44,7 @@ version: 2
 
 Representation of an Error.
 
-Entangled with — [[code]] · [[margin]]
+Entangled with — [[code]] · margin
 
 Attested in schema.org — Error · error · errorCode · marginOfError
 

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about globals — RFC 9110 §13 cached global fetcher (per-locale).",
-    "uuid": "f8a8961b-277d-80bf-b88f-012ef4d533e8",
+    "uuid": "48beab52-1da0-80b6-b00f-a93964d01f3b",
     "words": [
       "use",
       "when",

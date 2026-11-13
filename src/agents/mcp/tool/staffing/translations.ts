@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about staffing — folds a declared position into everything it already implied: the job description, the competency gap, the training plan **in the order it must run**, the access capability, and…",
-    "uuid": "34bd7993-842e-81c4-aa21-879cfdba0be9",
+    "uuid": "653efeeb-2eed-8e8a-ab2a-434d189c09f1",
     "words": [
       "use",
       "when",

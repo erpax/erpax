@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the seal must pass without Payload — the substrate-independent gate stack (aura, folders, imports, typecheck, readme, boundary, diamond, typography, cloudflare-ai) crossed into one fail-closed verdict.",
-    "uuid": "4a0d5fa3-6960-8ca4-9efc-66fe855653f6",
+    "uuid": "2e173b3c-6bce-8d4f-b122-e71ec51f3886",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about erpax's total queryable record — the codebase (source → config → payload-types) AND every uuid-addressed database row/file; the source of truth the agent reads and regenerates from, and can safely forget into. Code AND data, content-addressed.",
-    "uuid": "243beaab-732d-8f0b-9b10-3b7192442143",
+    "uuid": "727f211b-51ea-8cf8-954d-3ea9cf8c6cd2",
     "words": [
       "use",
       "when",

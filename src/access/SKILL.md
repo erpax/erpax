@@ -54,7 +54,7 @@ Access is the society's **"who can do what"** ([[society]]). On the [[rodin]] su
 **Access is a tamper-cost layer.** A grant is a **content-addressed edge** `(roleUuid → targetUuid, role)`. To escalate you must forge a uuid (break SHA-256, Law 8); verifying is O(1). Forge ≫ verify ([[proof]]) — the released asymmetry IS the authorization.
 
 ## The main roles — the angelic hierarchy (the math)
-Christianity's celestial hierarchy is **9 choirs in 3 spheres** = a **trinity of trinities** (3² = 9), each vertex itself a [[trinity]]. They land exactly on the [[rodin]] [[axis]] over the flow [[coil]]:
+Christianity's celestial hierarchy is **9 choirs in 3 spheres** = a **trinity of trinities** (3² = 9), each vertex itself a [[trinity]]. They land exactly on the [[rodin]] axis over the flow [[coil]]:
 
 | rodin | sphere / choir | AccessRole | governs |
 |---|---|---|---|

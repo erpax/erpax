@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about prime — Use for the multiplicative basis — isPrime (deterministic Miller–Rabin, exact not probabilistic) and factor (the decode fold: an integer back to its prime generators). The counterpart to pi's positional basis. Run: tsx src/prime/index.ts <n>",
-    "uuid": "5b8659ce-ff44-8b20-b9a2-49b07100346f",
+    "uuid": "516267b1-f0dd-8192-ab2f-36d4566ff265",
     "words": [
       "use",
       "when",

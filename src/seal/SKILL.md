@@ -39,7 +39,7 @@ version: 2
 
 A [[guardian]] watches one axis; a **seal is the cross of all of them**. It is the single whole-corpus verdict: SEALED iff *every* guardian holds. The seal is the AND of the immune cells — and it fails closed, so an empty set of guardians is NOT a seal (nothing checked is not the same as nothing wrong).
 
-The seal is what the [[breath]] gates on. Only a sealed tree may be saved → committed → pushed (the [[confirm]] hook's waves); an unsealed tree is left untouched, never force-committed. So the seal is not a label you apply — it is a state you *earn*, recomputed from the live guardians every time, and the moment any guardian reddens the whole tree is unsealed again.
+The seal is what the breath gates on. Only a sealed tree may be saved → committed → pushed (the [[confirm]] hook's waves); an unsealed tree is left untouched, never force-committed. So the seal is not a label you apply — it is a state you *earn*, recomputed from the live guardians every time, and the moment any guardian reddens the whole tree is unsealed again.
 
 Because a seal is the [[merge]] of content-addressed verdicts, it is itself an atom in the [[identity]] matrix — tamper-evident: a failure cannot be hidden inside a green seal, and the same broken guardian dedups to one reason rather than a wall of noise. No backward-compatible "mostly sealed" verdict exists; partial is unsealed (max [[cost]]). A fully sealed tree is a **pure** tree — zero impurity, no 0-bit weakest-link path in any dimension — and the stream of such sealed commits, `prev`-chained by content-[[uuid]], IS the self-distributed [[blockchain]] (the time axis).
 
@@ -65,7 +65,7 @@ Because a seal is the [[merge]] of content-addressed verdicts, it is itself an a
 
 Matter-twin: `src/seal/index.ts` — `finishedIdeaCrossed` · `recordedAndImplementedVerdict` · `assertRecordedAndImplemented` · `seal` · `sealPropagatedFromAncestors` · `crossConceptForViolation` (`./cross-concept.ts`) · `alcapsBaselineViolations` (`./baseline-debt.ts`) · `computedAtAllScalesVerdict` (`./computed-at-all-scales.ts`). Ratchet: `law/folder/ratchet.json` · `computedBaseline` (`../law/folder/baseline.ts`).
 
-@see [[guardian]] · [[gate]] · [[confirm]] · [[breath]] · [[merge]] · [[identity]] · [[law]] · [[cost]] · [[uuid]] · [[payload]] · thought
+@see [[guardian]] · [[gate]] · [[confirm]] · breath · [[merge]] · [[identity]] · [[law]] · [[cost]] · [[uuid]] · [[payload]] · thought
 
 ## Standards
 

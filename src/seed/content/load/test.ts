@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest'
-import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdtempSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import type { SanitizedConfig } from 'payload'
-import { loadCorpus, overSdk, parseArgs, skillReader, type Rest } from '@/seed/content/load'
+import { pageRows } from '@/seed/content'
+import { loadCorpus, overSdk, parseArgs, seededDocuments, skillReader, type Rest } from '@/seed/content/load'
 
 /** An in-memory REST stand-in that records what crossed the wire. */
 function fakeSdk() {
@@ -58,5 +59,32 @@ describe('seed/content/load — a pack loaded over REST', () => {
     const { sdk, calls } = fakeSdk()
     await loadCorpus(sdk, config, nodes, read, { packs: new Set(['nothing']) })
     expect(calls.map((c) => c.op)).toEqual(['find'])
+  })
+})
+
+describe('seed/content/load — the committed document seed', () => {
+  const documents = JSON.parse(readFileSync(join(process.cwd(), 'src', 'seed', 'content', 'fixtures', 'documents.json'), 'utf8')) as Record<string, string>
+
+  it('is read as nodes and a reader, and an unknown path has no document', () => {
+    const { nodes, read } = seededDocuments({ a: '# a', 'a/b': '# b' })
+    expect(nodes).toEqual([{ path: 'a' }, { path: 'a/b' }])
+    expect(read('a/b')).toBe('# b')
+    expect(read('ghost')).toBeUndefined()
+  })
+
+  it('every seeded document becomes a page row with a body, a title and a unique slug', () => {
+    const { nodes, read } = seededDocuments(documents)
+    const rows = pageRows(nodes, read)
+    expect(rows.length).toBe(Object.keys(documents).length)
+    expect(rows.length).toBeGreaterThan(0)
+    expect(new Set(rows.map((r) => r.slug)).size).toBe(rows.length)
+    for (const r of rows) {
+      expect(r.markdown.length).toBeGreaterThan(0)
+      expect(r.title.length).toBeGreaterThan(0)
+    }
+  })
+
+  it('no seeded path is still a folder in the tree — a document has one home', () => {
+    for (const path of Object.keys(documents)) expect(existsSync(join(process.cwd(), 'src', path, 'SKILL.md'))).toBe(false)
   })
 })

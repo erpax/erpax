@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "team",
-    "uuid": "e56366c9-b521-81c8-9754-22535ac777d5",
+    "uuid": "9b530b5d-e6e8-856f-8de0-73e2410cfe59",
     "words": [
       "team"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when agents must cover a gap together — a team's competence is the UNION of its members' skills, shared into every member, while each keeps its distinct purpose.",
-    "uuid": "58f92c2c-fdec-8171-ab75-1ca03f170f4d",
+    "uuid": "d5c0a52a-a906-8b26-b049-86fbb3246ee7",
     "words": [
       "use",
       "when",

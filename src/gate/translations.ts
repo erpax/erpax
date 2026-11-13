@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gate",
-    "uuid": "70d6e082-e2f3-86ab-ad36-a3ad52000945",
+    "uuid": "31067e4a-146c-8fec-ae56-ad1df9da6058",
     "words": [
       "gate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus.",
-    "uuid": "0c63b0de-2993-85ba-b7e5-7602883e34d7",
+    "uuid": "bb85dff2-f42c-8e01-bdbf-d272c1b4d721",
     "words": [
       "use",
       "when",

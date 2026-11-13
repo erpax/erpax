@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about hold — EU 2015/849 **Art. 33(1)** obliges a firm to report promptly and, where possible, to **refrain from carrying out** a transaction it knows or suspects to be related to criminal…",
-    "uuid": "45ee1983-a641-82d3-be77-10575400b867",
+    "uuid": "aff80bae-189e-802b-9ced-4d291fc0fbf3",
     "words": [
       "use",
       "when",

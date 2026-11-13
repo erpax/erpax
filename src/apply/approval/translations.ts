@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about approval — apply/approval — package.json-derived agent work approval matrix.",
-    "uuid": "93a89834-4d6d-8d0c-b667-86870efe5e87",
+    "uuid": "3f35d8ab-3441-8575-b9e9-b08f48ca7057",
     "words": [
       "use",
       "when",

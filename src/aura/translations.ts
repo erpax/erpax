@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "aura",
-    "uuid": "f378d379-bb67-8edb-b38e-bceffe5b9905",
+    "uuid": "f81edd66-d9db-891e-91f1-4af94f7e8884",
     "words": [
       "aura"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about a folder/path's collective identity in erpax — the content-uuid Merkle hash of all files within (SKILL.md + matter-twin + relations + sub-folders); folders are content-addressed too, so they merge by design.",
-    "uuid": "c0d3e2e7-ed49-8de8-be2b-5accc6d508d7",
+    "uuid": "10db1d48-12e2-8ce3-a5ea-5c93c41e26db",
     "words": [
       "use",
       "when",

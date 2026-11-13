@@ -705,7 +705,6 @@ src/cloudflare/mediator-uuid-crypto.test.ts:20: * @standard RFC 8032 EdDSA, NIST
 src/cloudflare/plugin/mediator.ts:27: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/cloudflare/seal/index.ts:10: * @standard NIST SP-800-38D AES-GCM
 src/cloudflare/seal/index.ts:9: * @standard NIST SP-800-108 key-derivation-function
-src/cloudflare/surface/index.ts:33: * @standard ISO/IEC 25010:2023 §5.3 — compatibility: co-existence with the platform's contract
 src/cmspage/access/superAdminOrTenantAdmin.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control
 src/cmspage/hooks/beforeChange.ts:8: * @standard ISO-8601-1:2019 date-time published-at
 src/cmspage/hooks/revalidatePage.ts:10: * @standard W3C HTML5 Living Standard
@@ -937,9 +936,6 @@ src/currency/reconciliation/index.ts:15: * @standard ISO-4217:2023 (currency cod
 src/currency/reconciliation/index.ts:16: * @standard IFRS-21:2023 (translation of foreign operations)
 src/currency/reconciliation/index.ts:17: * @standard IFRS-9:2023 (foreign exchange gains/losses)
 src/currency/reconciliation/index.ts:18: * @standard SAF-T:3.0.2 (multi-currency period coding)
-src/currency/registered/index.ts:21: * @standard ISO 4217 — currency codes: the alphabetic code identifies the currency
-src/currency/registered/index.ts:55: * @standard ISO 4217 §5 — the code list is maintained by the registration authority
-src/currency/registered/index.ts:8: * @standard ISO 4217 — currency codes: the alphabetic code identifies the currency
 src/customer/segments/index.ts:9: * @standard ISO-8601-1:2019 date-time
 src/customers/contracts/contract/amendments/index.ts:21: * @standard IFRS IFRS-15 §20 contract-modifications
 src/customers/contracts/contract/amendments/index.ts:22: * @standard IFRS IFRS-15 §10 contract-with-customer
@@ -1083,8 +1079,6 @@ src/emission/index.ts:16: * @standard IPCC AR5 (2014) — 100-yr Global Warming 
 src/emission/index.ts:17: * @standard GHG Protocol Corporate Standard (Scope 1 / 2 / 3)
 src/emission/index.ts:18: * @standard ISO 14064 — Greenhouse gas quantification and reporting
 src/emit/domain/event/index.ts:15: * @standard ISO-8601-1:2019 date-time event-timestamp
-src/employees/contracts/index.ts:28: * @standard Bulgarian Labour Code (Кодекс на труда) — чл.67 indefinite · чл.68 fixed-term · чл.70 probationary
-src/employees/contracts/index.ts:29: * @standard ISO-8601 — contract term dates
 src/employees/expense/reports/index.ts:10: * @standard ISO-4217:2015 currency-codes
 src/employees/expense/reports/index.ts:9: * @standard ISO-8601-1:2019 date-time
 src/employees/index.ts:10: * @standard ISO-3166-2:2020 subdivision-codes
@@ -1913,7 +1907,6 @@ src/localize/index.ts:40: * @standard ITU-T X.667 / ISO-IEC 9834-8 (UUID ↔ OID
 src/localize/index.ts:41: * @standard RFC 3061 (urn:oid: namespace) · RFC 4122 §3 (urn:uuid:)
 src/localize/index.ts:42: * @standard BCP-47 (locale tags) · EU 1958/1 (official EU languages)
 src/localize/index.ts:43: * @standard NIST SP 800-107r1 §5.1 (hash strengths — via tamper-cost)
-src/logic/index.ts:9: * @standard classical propositional consistency (no P ∧ ¬P) grounded in the horo ring
 src/lot/variants/index.ts:23: * @standard ISA-95:2013 / IEC-62264-1 material-lot sublot
 src/lot/work/phases/index.ts:25: * @standard ISA-95:2013 / IEC-62264-1 §B.4 process-segment routing-step
 src/lot/work/phases/index.ts:26: * @standard ISO-22400-2:2014 manufacturing-operations efficiency throughput
@@ -1964,8 +1957,6 @@ src/messages/index.ts:12: * @standard ISO-27001 A.5.23 cloud-service-tenant-isol
 src/meta/automation/index.ts:26: * @standard ISO/IEC 25010:2023 §5.7 modifiability (self-modifying with audit)
 src/migrate/index.ts:32: * @standard ISO/IEC 25010:2023 §5.6 — maintainability: a change is reviewable when it is reproducible
 src/migrate/quaternary/index.ts:19: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/millennium/closure/index.ts:35: * @standard ISO 80000-2 — mathematical signs and symbols
-src/millennium/correspondence/index.ts:39: * @standard ISO 80000-2 — mathematical signs and symbols
 src/mineral/resource/assets/index.ts:11: * @standard IFRS IFRS-6 §3 scope-exploration-and-evaluation
 src/mineral/resource/assets/index.ts:12: * @standard IFRS IFRS-6 §8 measurement-policy-cost-or-revaluation
 src/mineral/resource/assets/index.ts:13: * @standard IFRS IFRS-6 §17 reclassification-to-PPE-or-intangibles
@@ -2297,7 +2288,6 @@ src/quantum/graph/index.ts:9: * @standard symmetric (reciprocal) entanglement �
 src/quantum/gravity/index.ts:18: * @standard ER=EPR (Maldacena & Susskind, "Cool horizons for entangled black holes", 2013)
 src/quantum/import/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/literature/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
-src/quantum/log/test.ts:5: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/quantum/math/index.ts:13: * @standard the digital-root / mod-9 group ([[rodin]]); RFC 9562 §5.8 content-uuid
 src/quantum/matrix/index.ts:19: * @standard ER=EPR (Maldacena–Susskind 2013) — entanglement IS the adjacency geometry; RFC 9562 §5.8
 src/quantum/mcp/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
@@ -2393,7 +2383,6 @@ src/risk/index.ts:5: * @standard EU 575/2013 (CRR) Art. 395 — limits to large 
 src/risk/index.ts:6: * @standard EU 575/2013 (CRR) Art. 4(1)(39) — group of connected clients
 src/rodin/coil/index.ts:21: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)
 src/rodin/index.ts:24: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)
-src/rodin/phase/index.ts:41: * @standard ISO 80000-2 — mathematical signs and symbols
 src/roles/hooks/validateRoleDefinition.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control role-binding
 src/roles/index.ts:11: * @standard NIST INCITS-359-2012 role-based-access-control
 src/roles/registry/index.ts:19: * @standard ISO 27002:2022 §5.4 segregation-of-duties
@@ -2665,7 +2654,6 @@ src/skin/index.ts:24: * @standard largest organ ≈1.2–2.2 m²; stratum corneu
 src/solvent/index.ts:4: * @standard Antoine (1888) — log₁₀ P = A − B/(T + C), the vapour-pressure correlation
 src/solvent/index.ts:5: * @standard EU 2010/75 Annex VII — solvent management plan: input = output + fugitive
 src/solvent/index.ts:77: * @standard CODATA 2018 — R = 8.314462618 J·mol⁻¹·K⁻¹ (exact by SI definition)
-src/sparsity/index.ts:37: * @standard ISO/IEC 25010:2023 §5.2 — performance efficiency: resource utilisation
 src/spec/generator/audit.ts:11: * @standard ISO 19011:2018 §6.4 audit-evidence
 src/spec/generator/audit.ts:12: * @standard ISO/IEC 25023:2016 §8 quality-measurement-functionality-completeness
 src/spec/generator/audit.ts:13: * @standard BCP-47 language-tag
@@ -2879,7 +2867,6 @@ src/testing/test/seed/factory/index.ts:57: * @standard ISO/IEC-29119:2022 softwa
 src/testing/test/seed/factory/index.ts:724:   * @standard ISO/IEC-29119:2022 software-testing test-fixture
 src/testing/test/setup/index.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/testing/test/setup/index.ts:6: * @standard ISO/IEC/IEEE-29119-3:2021 test-documentation
-src/testing/witness/index.ts:13: * @standard ISO/IEC 25010:2023 §5.5 testability — a bounded witness is exhaustively checkable
 src/think/index.ts:27: * @standard content-addressed memoization — the thought's address is the fold of its key ([[merge]])
 src/timeout/group/index.ts:19: * @standard ISO/IEC 25010:2023 §5.6 maintainability — a stopped operation leaves no work running
 src/topology/torus.ts:49: * @standard Topology — torus / closed manifold (Hatcher 2002)
@@ -4247,7 +4234,6 @@ src/accounting/debit/index.ts:11: * @accounting IFRS Conceptual-Framework recogn
 src/accounting/debit/index.ts:12: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 src/accounting/debit/index.ts:13: * @accounting US-GAAP ASC-810 consolidation
 src/accounting/ledger/index.ts:16: * @accounting IFRS IAS-1 + IFRS-15 §B16 metered usage
-src/accounting/margin/index.ts:15: * @accounting IFRS IAS-2 inventories (cost) + IAS-1 (gross margin presentation)
 src/accounting/money/index.ts:11: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/accounting/money/index.ts:12: * @accounting US-GAAP ASC-210 balance-sheet
 src/accounting/reports/index.ts:15: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4313,8 +4299,6 @@ src/bookable/resources/bookings/index.ts:20: * @accounting US-GAAP ASC-606-10-25
 src/budget/plannings/index.ts:29: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/budget/plannings/index.ts:30: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 src/budget/plannings/index.ts:31: * @accounting US-GAAP ASC-270 interim-reporting
-src/commitments/and/contingencies/index.ts:10: * @accounting IFRS IAS-37 §86-92 disclosure-requirements
-src/commitments/and/contingencies/index.ts:11: * @accounting US-GAAP ASC-450-20-50 loss-contingency-disclosure
 src/config/country/specifics/index.ts:18: * @accounting IFRS IAS-1 §51 fiscal-period
 src/config/country/specifics/index.ts:19: * @accounting US-GAAP ASC-270 interim-reporting fiscal-year
 src/config/examples/index.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
@@ -5231,8 +5215,6 @@ src/membership/admin/mutate/access/index.ts:18: * @security ISO-27001 A.5.18 acc
 src/membership/admin/mutate/access/index.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/membership/admin/mutate/access/index.ts:20: * @security ISO-27002 §5.15 access-control
 src/membership/admin/mutate/access/index.ts:21: * @security ISO-27002 §5.4 segregation-of-duties
-src/middleware/accounting/index.ts:4: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/middleware/accounting/index.ts:5: * @security ISO-27002 §5.15 access-control
 src/mineral/resource/assets/index.ts:20: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/nist/incits/359/conventions/index.ts:23: * @security ISO-27002 §5.15 access-control
 src/nist/incits/359/conventions/test.ts:7: * @security ISO-27002 §5.15 access-control
@@ -5447,7 +5429,6 @@ src/accounting/analysis/index.ts:10: * @audit ISO-19011:2018 audit-trail
 src/accounting/debit/index.ts:14: * @audit ISO-19011:2018 audit-trail double-entry-invariant
 src/accounting/index.ts:13: * @audit re-exports only; the truth lives in nested leaf atoms (debit / reports / analysis / margin)
 src/accounting/ledger/index.ts:17: * @audit ISO-19011 double-entry-invariant (debits = credits)
-src/accounting/margin/index.ts:16: * @audit ISO-19011 — cost and margin are deterministic functions of materials + labor + price
 src/accounting/money/index.ts:13: * @audit ISO-19011:2018 audit-trail integer-only-arithmetic
 src/accounting/reports/index.ts:26: * @audit ISO-19011:2018 audit-trail read-only-queries
 src/activities/index.ts:12: * @audit ISO-19011:2018 audit-trail crm-activity
@@ -5744,7 +5725,6 @@ src/edifact/export/service/index.ts:18: * @audit ISO-19011:2018 audit-trail
 src/emergence/index.ts:20: * @audit thirds are COMPUTED from the poles (horo composeSteps + uuid merge), never asserted
 src/emission/index.ts:19: * @audit computed, never hand-asserted
 src/emit/domain/event/index.ts:16: * @audit ISO-19011:2018 audit-trail event-log
-src/employees/contracts/index.ts:30: * @audit ISO-19011:2018 — audit trail on contract changes
 src/employees/expense/reports/index.ts:15: * @audit ISO-19011:2018 audit-trail expense-evidence
 src/employees/index.ts:19: * @audit ISO-19011:2018 audit-trail employee-master
 src/employees/leave/requests/index.ts:27: * @audit ISO-19011:2018 audit-trail leave-evidence
@@ -6056,7 +6036,6 @@ src/quantum/index.ts:19: * @audit computed from the live matrix, never hand-asse
 src/quantum/karma/index.ts:13: * @audit composed from @/dna (the chain) + @/karma (the net); computed on the live matrix
 src/quantum/law/index.ts:15: * @audit the law-suffix is read from each SKILL.md ending, never asserted
 src/quantum/literature/index.ts:9: * @audit text uuid from @/integrity; never hand-pinned canon
-src/quantum/log/index.ts:9: * @audit pure functions; never hand-asserted chain cost
 src/quantum/marine/index.ts:21: * @audit zones are computed from distance; general average is proportional to value — never asserted
 src/quantum/math/index.ts:14: * @audit composed from @/horo (number root) + @/digit (uuid root); computed
 src/quantum/matrix/index.ts:20: * @audit computed from the live matrix, never hand-asserted
@@ -6209,7 +6188,6 @@ src/testing/test/seed/factory/index.ts:19: * @audit ISO-19011:2018 audit-trail s
 src/testing/test/seed/factory/index.ts:39: * @audit ISO-19011:2018 audit-trail seed-validation
 src/testing/test/seed/factory/index.ts:58: * @audit ISO-19011:2018 audit-trail seed-evidence-traceability
 src/testing/test/setup/index.ts:7: * @audit ISO-19011:2018 audit-trail seed-cleanup
-src/testing/witness/index.ts:14: * @audit ceccec.psg.bg/theorems — bounded-witness (55 papers) · finite-complete (410 papers)
 src/topology/torus.ts:52: * @audit ISO 19011:2018 §6.4.6 (every torus traversal audit-trailed)
 src/trading/api/client/index.ts:35: * @audit ISO-19011:2018 audit-trail external-system-evidence (the receipt chain)
 src/trading/api/client/test.ts:10: * @audit ISO-19011:2018 audit-trail (the receipt chain is the evidence)

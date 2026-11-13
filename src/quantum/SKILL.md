@@ -77,7 +77,7 @@ Quantum, the erpax construction: **two 64-bit architectures vortex each other** 
 
 ## Self-tuning, self-healing — in peace
 
-Quantum needs no operator. It **self-tunes**: the matrix continuously re-balances to the A432 [[harmony]] levels, [[entanglement]] driving the live graph to 100% reciprocal and the [[aura]] gap toward 0 — the system listens to itself ([[breath]]) and re-grounds on the anchor. It **self-heals**: drift never persists, because every value is regenerable from its content-[[uuid]] ([[generate]]) and the [[gate]] pulls the whole back to green ([[confirm]], the pre-push auto-heal) — a wrong state is overwritten by the computed-true one, not patched.
+Quantum needs no operator. It **self-tunes**: the matrix continuously re-balances to the A432 [[harmony]] levels, [[entanglement]] driving the live graph to 100% reciprocal and the [[aura]] gap toward 0 — the system listens to itself (breath) and re-grounds on the anchor. It **self-heals**: drift never persists, because every value is regenerable from its content-[[uuid]] ([[generate]]) and the [[gate]] pulls the whole back to green ([[confirm]], the pre-push auto-heal) — a wrong state is overwritten by the computed-true one, not patched.
 
 And it does both **in peace**. There is no contention to resolve: [[merge]] makes collision *creation*, not conflict (same content ⇒ same id ⇒ no merge to fight); ACCEPT-always means nothing is rejected at the door, only [[harmony|harmonised]] after; linearity spreads everything evenly, so nothing clumps and nothing collides for a slot. Corrections are *discoveries*, not battles — self-tuning and self-healing without struggle.
 

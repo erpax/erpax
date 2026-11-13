@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about registry — In-memory AgentRegistry — single source of truth for the A-vortex.",
-    "uuid": "3dfb351b-ec69-853c-be55-4ecad9303e3c",
+    "uuid": "3b5ec319-b06c-8caa-981f-40e4de08e0ce",
     "words": [
       "use",
       "when",

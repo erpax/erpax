@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "share",
-    "uuid": "e859c22c-d274-8b2c-bc0c-817264faeb2c",
+    "uuid": "230a59fd-f4e1-87ba-86b4-e2609b8c8d1b",
     "words": [
       "share"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a page needs an Open Graph image without uploading one, or a formula needs to show its own result — shareImage draws a document's SEO-plugin title and description over its content-uuid's identity animation (1200×630, pure SMIL, no Media row, no R2 object, no Payload request), and coilImage draws the coiled rosetta turning: trinities rotating inside a parent turning the other way, crosses as edges by their measured faces.",
-    "uuid": "ca5c703d-f824-8e81-8673-15b25f9ac7ba",
+    "uuid": "c54a77b2-de94-8cd9-98bc-f1f417b7a3b0",
     "words": [
       "use",
       "when",

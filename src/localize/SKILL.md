@@ -67,7 +67,7 @@ The translation-key uuid IS the element's whole identity — the 128-bit singula
 | structured slot | `SLOT_TAGS.locale` | uuid-format |
 | capabilities | `TAMPER_PROOF \| CHAINED` | uuid-format |
 | **OID** | `2.25.<128-bit int>` | ITU-T X.667 / ISO 9834-8 |
-| **cmyk** | rodin gamut {K,C,M,Y} from position | [[cmyk]] |
+| **cmyk** | rodin gamut {K,C,M,Y} from position | cmyk |
 | locale-map | the `translations` collection `value` | Payload `localized:true` · BCP-47 |
 
 Every added level is "another level of feature-rich infinite tampering cost." OID and the cmyk channel are *derived* from the same bits (no new entropy) — yet each is one more address a forger must keep coherent, and one more way a human or machine can verify (proof). Lexical rich-text is the densest fuel: a whole node-tree per locale. The per-field content mechanics (`localized:true`, resolve-by-`req.locale`) are the [[field]] localization leaf.
@@ -76,7 +76,7 @@ Every added level is "another level of feature-rich infinite tampering cost." OI
 
 The surface is every **field · reference · scope · hook** (`TRANSLATABLE_SCOPES`), keyed `<scope>:<path>` — the fractal address-law, never hand-typed. The locale set is **derived** from country-profiles ([[seed]]), never re-typed. Same content ⇒ same key-uuid ([[merge]]); any edit ⇒ a new uuid (tamper-evident, [[identity]]). [[horo]] closes it: the keyspace is the bounded ring — every key resolves; anything off-ring routes to the `und` identity blank.
 
-Matter-twin: `localize/index.ts` (`translationKeyUuid` · `uuidToOid` · `cmykChannel` · `decodeIdentity` · `localizationChecks` · `localizationFusion`) + `index.test.ts` (the proof — green by construction). Reuses [[tamper/cost]], `integrity/content-uuid` (Law 8), `integrity/tamper-reverse-cost` (Law 55), `uuid-format`, and the `translations` collection (the localized map of the whole app). Composes: [[tamper/cost]] · [[uuid]] · [[identity]] · [[cmyk]] · [[horo]] · [[merge]] · [[seed]] · give · take · [[torus]] · [[standard]] · fractal. The three facets minted alongside: oid (the 2.25 arc) · [[lexical]] (the densest surface) · [[proof]] (the verify nucleus) · [[Translations]].
+Matter-twin: `localize/index.ts` (`translationKeyUuid` · `uuidToOid` · `cmykChannel` · `decodeIdentity` · `localizationChecks` · `localizationFusion`) + `index.test.ts` (the proof — green by construction). Reuses [[tamper/cost]], `integrity/content-uuid` (Law 8), `integrity/tamper-reverse-cost` (Law 55), `uuid-format`, and the `translations` collection (the localized map of the whole app). Composes: [[tamper/cost]] · [[uuid]] · [[identity]] · cmyk · [[horo]] · [[merge]] · [[seed]] · give · take · [[torus]] · [[standard]] · fractal. The three facets minted alongside: oid (the 2.25 arc) · [[lexical]] (the densest surface) · [[proof]] (the verify nucleus) · [[Translations]].
 
 ## Standards
 

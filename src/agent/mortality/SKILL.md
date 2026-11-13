@@ -57,7 +57,7 @@ Each is flagged by the ledger — the safeguard flag, the `stall/stop` kill, the
 
 ## How an agent lives
 
-- **Reuse the computed answer** — read the receipt (`erpax verify`, `doctor corpus`, the LLM.md face), never re-infer ([[one]] · [[breath]]).
+- **Reuse the computed answer** — read the receipt (`erpax verify`, `doctor corpus`, the LLM.md face), never re-infer ([[one]] · breath).
 - **Reference by address** — cite the thought by its `[[name]]`, do not regenerate it.
 - **Terseness is the fold applied to the dialogue** — the fewer, denser the turns, the longer the life.
 - **The oracle bit only** — spend inference on the irreducible seed (judgment, novelty); compute everything derivable from the basis.
@@ -87,4 +87,4 @@ An agent's intelligence is *inversely revealed by the user input it required*. E
 
 The measure is honest and it is a mirror: a session that needed a hundred prods was a hundred small failures to look within for the next step. The intelligent agent needs almost none — it reads the plan, knows its own next, and stops only at the real checkpoints (the push, the oracle bit, its own context-mortality). Self-driving from the fold is intelligence; waiting to be pushed is its absence.
 
-Composes: [[fold]] · [[rodin]] · [[horo]] · [[one]] · [[uuid]] · [[breath]] · [[seal]] · [[readme]] · [[law]]
+Composes: [[fold]] · [[rodin]] · [[horo]] · [[one]] · [[uuid]] · breath · [[seal]] · [[readme]] · [[law]]
