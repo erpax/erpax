@@ -4,7 +4,7 @@
  *
  * Slice XXXXXXXX-c (2026-05-11) — closes the second-highest orphan-
  * reference gap surfaced by `src/aura/find-gaps.ts`:
- * Quotes.convertedToOrder, Returns.order, Shipments.order, Refunds.order
+ * Quotes.convertedToOrder, Returns.order, Shipments.order, CreditMemos.order
  * all declared `relationTo: 'orders'` but no collection ever owned that
  * slug. Without this row, the Quote → Order → Shipment → Invoice
  * lifecycle (IFRS-15 §31 transfer-of-control) cannot persist; the
@@ -36,7 +36,7 @@
  * @compliance EU-VAT-Directive 2006/112/EC supply-of-goods-or-services
  * @audit ISO-19011:2018 audit-trail
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @see ./Quotes.ts ./Contracts.ts ./Shipments.ts ./Returns.ts ./Refunds.ts
+ * @see ./Quotes.ts ./Contracts.ts ./Shipments.ts ./Returns.ts
  * @see ../factories/collection-factory.ts
  */
 

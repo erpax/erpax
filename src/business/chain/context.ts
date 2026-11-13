@@ -203,7 +203,7 @@ export async function teardownChainContext(payload: Payload, ctx: ChainContext):
     'goods-receipts', 'purchase-orders', 'vendor-quotes', 'purchase-requisitions',
     'inventory-movements', 'work-orders', 'bills-of-materials',
     'projects', 'project-tasks', 'project-milestones', 'wip-snapshots',
-    'recurring-journals', 'provisions', 'commitments-and-contingencies', 'government-grants',
+    'recurring-journals', 'provisions', 'government-grants',
     'csrd-disclosures', 'carbon-emissions', 'transfer-pricing-files',
     'lease-modifications', 'lease-period-postings', 'leases',
     'leads', 'opportunities', 'activities', 'sales-commissions',

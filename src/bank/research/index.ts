@@ -198,7 +198,7 @@ const RELATED_SPEC: readonly {
     atoms: [
       'src/iso/20022/types/index.ts',
       'src/pacs004/import/service/index.ts',
-      'src/invoices/credit/memos/refunds',
+      'src/invoices/credit/memos',
     ],
   },
   {
@@ -416,7 +416,7 @@ export function bankResearchWaves(
     if (!r.present) return `land missing atoms: ${r.missing.join(', ')}`
     if (d === 'iso-20022-pain') return 'pain.002 parse+apply landed (pain002/import); PaymentRuns bankResponse* + status patch'
     if (d === 'iso-20022-camt') return 'camt.052/053/054 parse landed (camt052|053|054/import); statement path unchanged'
-    if (d === 'iso-20022-pacs') return 'pacs.008 types + pacs.004 parse landed (pacs004/import); Refunds keep pacs.004 face'
+    if (d === 'iso-20022-pacs') return 'pacs.008 types + pacs.004 parse landed (pacs004/import); credit-memo refund lines keep the pacs.004 face'
     return `deepen ${r.title} — present; extend proof/tests`
   }
   return [...by.entries()]

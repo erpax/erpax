@@ -48,9 +48,19 @@ version: 2
 
 Commitments & Contingencies — IAS-37 §27-92 + IFRS-15 §B50 mandatory.
 
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+## The disclosed stage of a provision
+
+This used to be a collection with a read-only pointer at the provision a row became. IAS-37 covers
+both because they are one obligation at two stages, so the row now lives in `provisions` and its
+status says which stage it is at: `disclosed`, `settled` or `released` here; drafted and
+recognised there. What this atom keeps is the view:
+
+- `contingenciesWhere()` — the filter selecting the rows still off the balance sheet.
+- `contingenciesPreset()` — the saved list that stands where the collection's list stood.
+
+**Honest boundary.** The list is declared and not yet loaded into any tenant. Nothing moves a row
+from disclosed to recognised by itself: `recognitionOwed` in the provisions atom says when IAS-37
+§14 requires it, and a person makes the move.
 
 ## Standards
 

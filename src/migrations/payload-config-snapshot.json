@@ -2908,89 +2908,6 @@
       "localizeStatus": false,
       "versions": true
     },
-    "commitments-and-contingencies": {
-      "autosave": false,
-      "drafts": false,
-      "fields": {
-        "uuid": {
-          "localized": false
-        },
-        "tenant": {
-          "localized": false
-        },
-        "reference": {
-          "localized": false
-        },
-        "description": {
-          "localized": true
-        },
-        "kind": {
-          "localized": false
-        },
-        "category": {
-          "localized": false
-        },
-        "legalEntity": {
-          "localized": false
-        },
-        "counterparty": {
-          "localized": false
-        },
-        "inceptionDate": {
-          "localized": false
-        },
-        "expectedResolutionDate": {
-          "localized": false
-        },
-        "likelihood": {
-          "localized": false
-        },
-        "currency": {
-          "localized": false
-        },
-        "maximumExposure": {
-          "localized": false
-        },
-        "expectedOutflow": {
-          "localized": false
-        },
-        "reimbursementExpected": {
-          "localized": false
-        },
-        "isOnerousContractRelated": {
-          "localized": false
-        },
-        "recognisedAsProvision": {
-          "localized": false
-        },
-        "noteText": {
-          "localized": false
-        },
-        "status": {
-          "localized": false
-        },
-        "createdBy": {
-          "localized": false
-        },
-        "approvedBy": {
-          "localized": false
-        },
-        "approvedAt": {
-          "localized": false
-        },
-        "notes": {
-          "localized": false
-        },
-        "updatedAt": {
-          "localized": false
-        },
-        "createdAt": {
-          "localized": false
-        }
-      },
-      "localizeStatus": false,
-      "versions": true
-    },
     "compliance-deadlines": {
       "autosave": false,
       "drafts": false,
@@ -4167,6 +4084,9 @@
         "reasonDetail": {
           "localized": false
         },
+        "order": {
+          "localized": false
+        },
         "amount": {
           "localized": false
         },
@@ -4183,6 +4103,36 @@
           "localized": false
         },
         "settledAt": {
+          "localized": false
+        },
+        "refunds": {
+          "localized": false
+        },
+        "refunds.amount": {
+          "localized": false
+        },
+        "refunds.method": {
+          "localized": false
+        },
+        "refunds.stripeRefundId": {
+          "localized": false
+        },
+        "refunds.status": {
+          "localized": false
+        },
+        "refunds.refundedAt": {
+          "localized": false
+        },
+        "refunds.settledAt": {
+          "localized": false
+        },
+        "refunds.failureReason": {
+          "localized": false
+        },
+        "refunds.journalEntry": {
+          "localized": false
+        },
+        "refunds.id": {
           "localized": false
         },
         "journalEntry": {
@@ -13119,6 +13069,36 @@
         "description": {
           "localized": false
         },
+        "kind": {
+          "localized": false
+        },
+        "category": {
+          "localized": false
+        },
+        "counterparty": {
+          "localized": false
+        },
+        "inceptionDate": {
+          "localized": false
+        },
+        "expectedResolutionDate": {
+          "localized": false
+        },
+        "likelihood": {
+          "localized": false
+        },
+        "maximumExposure": {
+          "localized": false
+        },
+        "expectedOutflow": {
+          "localized": false
+        },
+        "isOnerousContractRelated": {
+          "localized": false
+        },
+        "noteText": {
+          "localized": false
+        },
         "provisionType": {
           "localized": false
         },
@@ -13870,77 +13850,6 @@
           "localized": false
         },
         "status": {
-          "localized": false
-        },
-        "createdBy": {
-          "localized": false
-        },
-        "approvedBy": {
-          "localized": false
-        },
-        "approvedAt": {
-          "localized": false
-        },
-        "notes": {
-          "localized": false
-        },
-        "updatedAt": {
-          "localized": false
-        },
-        "createdAt": {
-          "localized": false
-        }
-      },
-      "localizeStatus": false,
-      "versions": true
-    },
-    "refunds": {
-      "autosave": false,
-      "drafts": false,
-      "fields": {
-        "uuid": {
-          "localized": false
-        },
-        "tenant": {
-          "localized": false
-        },
-        "refundNumber": {
-          "localized": false
-        },
-        "creditMemo": {
-          "localized": false
-        },
-        "invoice": {
-          "localized": false
-        },
-        "order": {
-          "localized": false
-        },
-        "amount": {
-          "localized": false
-        },
-        "currency": {
-          "localized": false
-        },
-        "method": {
-          "localized": false
-        },
-        "stripeRefundId": {
-          "localized": false
-        },
-        "status": {
-          "localized": false
-        },
-        "refundedAt": {
-          "localized": false
-        },
-        "settledAt": {
-          "localized": false
-        },
-        "failureReason": {
-          "localized": false
-        },
-        "journalEntry": {
           "localized": false
         },
         "createdBy": {

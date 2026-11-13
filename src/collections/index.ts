@@ -94,7 +94,6 @@ export { default as SalesCommissions } from '@/employees/sales/commissions'
 export { default as CreditMemos } from '@/invoices/credit/memos'
 export { default as Returns } from '@/customers/sales/orders/returns'
 export { default as Shipments } from '@/customers/sales/orders/shipments'
-export { default as Refunds } from '@/invoices/credit/memos/refunds'
 export { default as PaymentAllocations } from '@/invoices/payments/payment/allocations'
 
 // Dunning & Collections
@@ -128,7 +127,6 @@ export { default as FxTransactions } from '@/fx/transactions'
 // Contracts & Obligations
 export { default as Contracts } from '@/customers/contracts'
 export { default as PerformanceObligations } from '@/customers/contracts/performance/obligations'
-export { default as CommitmentsAndContingencies } from '@/commitments/and/contingencies'
 
 // Leases
 export { default as Leases } from '@/leases'

@@ -105,7 +105,6 @@ export interface Config {
     categories: Category;
     chat: Chat;
     'closing-entries': ClosingEntry;
-    'commitments-and-contingencies': CommitmentsAndContingency;
     'compliance-deadlines': ComplianceDeadline;
     'compliance-frameworks': ComplianceFramework;
     'compliance-gaps': ComplianceGap;
@@ -219,7 +218,6 @@ export interface Config {
     receipts: Receipt;
     'recruiting-pipeline': RecruitingPipeline;
     'recurring-journals': RecurringJournal;
-    refunds: Refund;
     'regulatory-deferral-accounts': RegulatoryDeferralAccount;
     'regulatory-reports': RegulatoryReport;
     'related-party-transactions': RelatedPartyTransaction;
@@ -356,7 +354,6 @@ export interface Config {
     categories: CategoriesSelect<false> | CategoriesSelect<true>;
     chat: ChatSelect<false> | ChatSelect<true>;
     'closing-entries': ClosingEntriesSelect<false> | ClosingEntriesSelect<true>;
-    'commitments-and-contingencies': CommitmentsAndContingenciesSelect<false> | CommitmentsAndContingenciesSelect<true>;
     'compliance-deadlines': ComplianceDeadlinesSelect<false> | ComplianceDeadlinesSelect<true>;
     'compliance-frameworks': ComplianceFrameworksSelect<false> | ComplianceFrameworksSelect<true>;
     'compliance-gaps': ComplianceGapsSelect<false> | ComplianceGapsSelect<true>;
@@ -470,7 +467,6 @@ export interface Config {
     receipts: ReceiptsSelect<false> | ReceiptsSelect<true>;
     'recruiting-pipeline': RecruitingPipelineSelect<false> | RecruitingPipelineSelect<true>;
     'recurring-journals': RecurringJournalsSelect<false> | RecurringJournalsSelect<true>;
-    refunds: RefundsSelect<false> | RefundsSelect<true>;
     'regulatory-deferral-accounts': RegulatoryDeferralAccountsSelect<false> | RegulatoryDeferralAccountsSelect<true>;
     'regulatory-reports': RegulatoryReportsSelect<false> | RegulatoryReportsSelect<true>;
     'related-party-transactions': RelatedPartyTransactionsSelect<false> | RelatedPartyTransactionsSelect<true>;
@@ -3143,25 +3139,76 @@ export interface Provision {
    * Nature of the obligation (IAS-37 §85(a) disclosure).
    */
   description: string;
-  provisionType:
-    | 'warranty'
-    | 'restructuring'
-    | 'onerous_contract'
-    | 'environmental'
-    | 'decommissioning'
-    | 'litigation'
-    | 'refund'
-    | 'restoration'
-    | 'other';
+  kind: 'provision' | 'commitment' | 'contingent_liability' | 'contingent_asset' | 'guarantee';
+  /**
+   * What the commitment or contingency arises from (IAS-37 §86 class).
+   */
+  category?:
+    | (
+        | 'capex'
+        | 'purchase'
+        | 'op_lease'
+        | 'litigation'
+        | 'performance_bond'
+        | 'bank_guarantee'
+        | 'pension'
+        | 'environmental'
+        | 'tax_dispute'
+        | 'insurance_recovery'
+        | 'other'
+      )
+    | null;
+  /**
+   * Name of supplier / claimant / beneficiary.
+   */
+  counterparty?: string | null;
+  /**
+   * When the commitment was entered into or the contingency arose.
+   */
+  inceptionDate?: string | null;
+  expectedResolutionDate?: string | null;
+  /**
+   * IAS-37 §23 likelihood scale. A contingent liability that turns probable is owed recognition.
+   */
+  likelihood?: ('remote' | 'possible' | 'probable' | 'virtually_certain') | null;
+  /**
+   * Maximum possible cash outflow if the contingency materialises (IAS-37 §86(a) disclosure).
+   */
+  maximumExposure?: number | null;
+  /**
+   * Probability-weighted expected outflow (cents).
+   */
+  expectedOutflow?: number | null;
+  /**
+   * IFRS-15 §B50 onerous-contract disclosure flag.
+   */
+  isOnerousContractRelated?: boolean | null;
+  /**
+   * IAS-37 §86 disclosure narrative — copy-pasteable into financial-statement notes.
+   */
+  noteText?: string | null;
+  provisionType?:
+    | (
+        | 'warranty'
+        | 'restructuring'
+        | 'onerous_contract'
+        | 'environmental'
+        | 'decommissioning'
+        | 'litigation'
+        | 'refund'
+        | 'restoration'
+        | 'other'
+      )
+    | null;
   /**
    * Reporting entity that recognises this provision.
    */
   legalEntity?: (string | null) | LegalEntity;
   /**
-   * Date the obligation was first recognised on the balance sheet.
+   * Date the obligation was first recognised on the balance sheet — set when it is recognised.
    */
-  recognitionDate: string;
-  period: string | FiscalPeriod;
+  recognitionDate?: string | null;
+  period?: (string | null) | FiscalPeriod;
   /**
    * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
    */
@@ -3169,7 +3216,7 @@ export interface Provision {
   /**
    * IAS-37 §36 best-estimate of expenditure required to settle (cents).
    */
-  bestEstimate: number;
+  bestEstimate?: number | null;
   /**
    * Sum of undiscounted future cash outflows (when timing extends beyond a year).
    */
@@ -3215,7 +3262,8 @@ export interface Provision {
    */
   sourceFinding?: (string | null) | AuditFinding;
   requiresLegalReview?: boolean | null;
-  status?: ('draft' | 'recognised' | 'used' | 'reversed' | 'reclassified') | null;
+  status?:
+    ('disclosed' | 'settled' | 'released' | 'draft' | 'recognised' | 'used' | 'reversed' | 'reclassified') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -9524,84 +9572,6 @@ export interface PeriodLock {
   createdAt: string;
 }
 /**
- * IAS-37 §86-92 + IFRS-15 §B50 off-balance-sheet disclosure register. Commitments (capex, purchase, lease) + contingent liabilities (lawsuits, guarantees) + contingent assets (insurance recoveries).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "commitments-and-contingencies".
- */
-export interface CommitmentsAndContingency {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  reference: string;
-  description: string;
-  kind: 'commitment' | 'contingent_liability' | 'contingent_asset' | 'guarantee';
-  category:
-    | 'capex'
-    | 'purchase'
-    | 'op_lease'
-    | 'litigation'
-    | 'performance_bond'
-    | 'bank_guarantee'
-    | 'pension'
-    | 'environmental'
-    | 'tax_dispute'
-    | 'insurance_recovery'
-    | 'other';
-  /**
-   * Reporting legal entity per IFRS-10 §B86 (distinct from `tenants` DB partition).
-   */
-  legalEntity?: (string | null) | LegalEntity;
-  /**
-   * Name of supplier / claimant / beneficiary.
-   */
-  counterparty?: string | null;
-  inceptionDate: string;
-  expectedResolutionDate?: string | null;
-  /**
-   * IAS-37 §23 likelihood scale. Probable triggers reclassification to `provisions`.
-   */
-  likelihood?: ('remote' | 'possible' | 'probable' | 'virtually_certain') | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Maximum possible cash outflow if the contingency materialises (IAS-37 §86(a) disclosure).
-   */
-  maximumExposure: number;
-  /**
-   * Probability-weighted expected outflow (cents).
-   */
-  expectedOutflow?: number | null;
-  /**
-   * IAS-37 §86(b) reimbursement disclosure.
-   */
-  reimbursementExpected?: number | null;
-  /**
-   * IFRS-15 §B50 onerous-contract disclosure flag.
-   */
-  isOnerousContractRelated?: boolean | null;
-  /**
-   * Set when likelihood reaches probable and a provision is booked.
-   */
-  recognisedAsProvision?: (string | null) | Provision;
-  /**
-   * IAS-37 §86 disclosure narrative — copy-pasteable into financial-statement notes.
-   */
-  noteText?: string | null;
-  status?: ('active' | 'settled' | 'released' | 'reclassified') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "compliance-deadlines".
  */
@@ -10296,6 +10266,10 @@ export interface CreditMemo {
     | 'other';
   reasonDetail?: string | null;
   /**
+   * Originating sales order, when the credit skips the invoice (ISO-20022 pacs.004 end-to-end trace).
+   */
+  order?: (string | null) | SalesOrder;
+  /**
    * Credit amount in cents.
    */
   amount: number;
@@ -10316,6 +10290,31 @@ export interface CreditMemo {
    * When cash refund was paid.
    */
   settledAt?: string | null;
+  /**
+   * Cash paid back against this memo — one line per payment, so a partial refund is one more line.
+   */
+  refunds?:
+    | {
+        /**
+         * Amount paid back, in cents.
+         */
+        amount: number;
+        method: 'stripe' | 'ach' | 'sepa' | 'check' | 'cash' | 'store_credit';
+        /**
+         * Stripe refund ID for cross-system traceability.
+         */
+        stripeRefundId?: string | null;
+        status: 'pending' | 'issued' | 'settled' | 'failed' | 'voided';
+        refundedAt?: string | null;
+        settledAt?: string | null;
+        failureReason?: string | null;
+        /**
+         * GL posting of the cash leaving (Dr Refunds Payable / Cr Cash).
+         */
+        journalEntry?: (string | null) | JournalEntry;
+        id?: string | null;
+      }[]
+    | null;
   /**
    * GL posting that booked this credit.
    */
@@ -16348,43 +16347,6 @@ export interface RecurringJournal {
   createdAt: string;
 }
 /**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "refunds".
- */
-export interface Refund {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  refundNumber: string;
-  creditMemo: string | CreditMemo;
-  invoice?: (string | null) | Invoice;
-  order?: (string | null) | SalesOrder;
-  amount: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  method: 'stripe' | 'ach' | 'sepa' | 'check' | 'cash' | 'store_credit';
-  /**
-   * Stripe refund ID for cross-system traceability.
-   */
-  stripeRefundId?: string | null;
-  status?: ('draft' | 'pending' | 'issued' | 'settled' | 'failed' | 'voided') | null;
-  refundedAt?: string | null;
-  settledAt?: string | null;
-  failureReason?: string | null;
-  journalEntry?: (string | null) | JournalEntry;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * IFRS 14 — rate-regulated balances carried forward by first-time IFRS adopters (utilities, telcos under price-cap regimes).
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -19836,7 +19798,8 @@ export interface PayloadQueryPreset {
     | boolean
     | null;
   groupBy?: string | null;
-  relatedCollection: 'maintenance-work-orders' | 'pages' | 'parties' | 'posts' | 'sales-orders';
+  relatedCollection:
+    'credit-memos' | 'maintenance-work-orders' | 'pages' | 'parties' | 'posts' | 'provisions' | 'sales-orders';
   /**
    * This is a temporary field used to determine if updating the preset would remove the user's access to it. When `true`, this record will be deleted after running the preset's `validate` function.
    */
@@ -21036,37 +20999,6 @@ export interface ClosingEntriesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "commitments-and-contingencies_select".
- */
-export interface CommitmentsAndContingenciesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  description?: T;
-  kind?: T;
-  category?: T;
-  legalEntity?: T;
-  counterparty?: T;
-  inceptionDate?: T;
-  expectedResolutionDate?: T;
-  likelihood?: T;
-  currency?: T;
-  maximumExposure?: T;
-  expectedOutflow?: T;
-  reimbursementExpected?: T;
-  isOnerousContractRelated?: T;
-  recognisedAsProvision?: T;
-  noteText?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "compliance-deadlines_select".
  */
 export interface ComplianceDeadlinesSelect<T extends boolean = true> {
@@ -21538,12 +21470,26 @@ export interface CreditMemosSelect<T extends boolean = true> {
   invoice?: T;
   reason?: T;
   reasonDetail?: T;
+  order?: T;
   amount?: T;
   currency?: T;
   status?: T;
   issuedAt?: T;
   appliedAt?: T;
   settledAt?: T;
+  refunds?:
+    | T
+    | {
+        amount?: T;
+        method?: T;
+        stripeRefundId?: T;
+        status?: T;
+        refundedAt?: T;
+        settledAt?: T;
+        failureReason?: T;
+        journalEntry?: T;
+        id?: T;
+      };
   journalEntry?: T;
   createdBy?: T;
   approvedBy?: T;
@@ -25277,6 +25223,16 @@ export interface ProvisionsSelect<T extends boolean = true> {
   tenant?: T;
   reference?: T;
   description?: T;
+  kind?: T;
+  category?: T;
+  counterparty?: T;
+  inceptionDate?: T;
+  expectedResolutionDate?: T;
+  likelihood?: T;
+  maximumExposure?: T;
+  expectedOutflow?: T;
+  isOnerousContractRelated?: T;
+  noteText?: T;
   provisionType?: T;
   legalEntity?: T;
   recognitionDate?: T;
@@ -25578,33 +25534,6 @@ export interface RecurringJournalsSelect<T extends boolean = true> {
       };
   autoPost?: T;
   status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "refunds_select".
- */
-export interface RefundsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  refundNumber?: T;
-  creditMemo?: T;
-  invoice?: T;
-  order?: T;
-  amount?: T;
-  currency?: T;
-  method?: T;
-  stripeRefundId?: T;
-  status?: T;
-  refundedAt?: T;
-  settledAt?: T;
-  failureReason?: T;
-  journalEntry?: T;
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
@@ -28459,7 +28388,6 @@ export interface TaskCreateCollectionExport {
       | 'categories'
       | 'chat'
       | 'closing-entries'
-      | 'commitments-and-contingencies'
       | 'compliance-deadlines'
       | 'compliance-frameworks'
       | 'compliance-gaps'
@@ -28573,7 +28501,6 @@ export interface TaskCreateCollectionExport {
       | 'receipts'
       | 'recruiting-pipeline'
       | 'recurring-journals'
-      | 'refunds'
       | 'regulatory-deferral-accounts'
       | 'regulatory-reports'
       | 'related-party-transactions'

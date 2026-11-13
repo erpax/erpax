@@ -51,6 +51,27 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
+## One register, two stages
+
+A commitment or contingency is the same obligation before it is recognised, so it is a status of
+this row instead of a second collection: `disclosedStages()` are off the balance sheet,
+`recognisedStages()` are on it, and the two lists never share a status.
+
+- `kind` says what the row is — provision, commitment, contingent liability, contingent asset or
+  guarantee — and the disclosure facts (category, counterparty, likelihood, maximum exposure,
+  expected outflow, note text) sit beside the measurement facts.
+- A disclosed row may leave `provisionType`, `period` and `bestEstimate` empty; a recognised
+  one may not. That is a validation on the three fields, keyed on the status.
+- `recognitionOwed(row)` — IAS-37 §14: true exactly for a disclosed contingent liability whose
+  likelihood is probable or virtually certain. A commitment or a contingent asset is never owed
+  recognition by likelihood.
+- `withRecognitionDate(row, now)` — dates the row the first time it is recognised.
+- `provisionPresets()` — the two saved lists.
+
+**Honest boundary.** `recognitionOwed` reports the duty; it does not perform the move, and
+nothing yet raises it to a reviewer. A contingency's single reimbursement figure now lives in the
+`reimbursementExpected` group's amount.
+
 ## Standards
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->

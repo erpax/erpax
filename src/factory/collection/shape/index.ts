@@ -87,7 +87,7 @@ export function shapeRatchetVerdict(
  * so both ceilings ratchet DOWN over time, never up. `erpax doctor corpus` fails closed
  * on any growth. Lower these numbers in the same diff that folds a collection away.
  */
-export const ROSETTA_BASELINE = { collections: 206, signatures: 38 } as const
+export const ROSETTA_BASELINE = { collections: 204, signatures: 38 } as const
 
 export interface CollapseCluster {
   readonly signature: string

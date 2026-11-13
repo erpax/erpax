@@ -731,8 +731,6 @@ src/command/index.ts:13: * @standard schema.org Action — the imperative move (
 src/commerce/index.ts:21: * @standard Stripe API v2024-10-28-acacia
 src/commerce/index.ts:22: * @standard Cloudflare Workers API (deployments + durable-object namespaces)
 src/commerce/index.ts:23: * @standard W3C Verifiable Credentials Data Model 2.0 (subscription receipts)
-src/commitments/and/contingencies/index.ts:13: * @standard ISO-8601-1:2019 date-time
-src/commitments/and/contingencies/index.ts:14: * @standard ISO-4217:2015 currency-codes
 src/commitments/index.ts:23: * @standard SOX §302 management-certification internal-controls
 src/commitments/index.ts:24: * @standard SOX §404 internal-controls spending-authority
 src/commitments/index.ts:25: * @standard COSO Internal-Control-Integrated-Framework 2013 authorization
@@ -1306,8 +1304,8 @@ src/fiscal/periods/post/balance/sheet/events/index.ts:15: * @standard ISO-4217:2
 src/fiscal/periods/post/balance/sheet/events/index.ts:16: * @standard ISO-8601-1:2019 date-time event-date authorisation-date
 src/fiscal/periods/prior/period/adjustments/index.ts:11: * @standard ISO-4217:2015 currency-codes
 src/fiscal/periods/prior/period/adjustments/index.ts:12: * @standard ISO-8601-1:2019 date-time adjustment-date post-date
-src/fiscal/periods/provisions/index.ts:14: * @standard ISO-8601-1:2019 date-time
-src/fiscal/periods/provisions/index.ts:15: * @standard ISO-4217:2015 currency-codes
+src/fiscal/periods/provisions/index.ts:20: * @standard ISO-8601-1:2019 date-time
+src/fiscal/periods/provisions/index.ts:21: * @standard ISO-4217:2015 currency-codes
 src/fiscal/periods/tax/periods/index.ts:14:  * @standard OECD tax-period-coding
 src/fiscal/periods/tax/periods/index.ts:15: * @standard SAF-T OECD reporting-period
 src/fiscal/periods/tax/periods/index.ts:16: * @standard ISO-8601-1:2019 period-dates
@@ -1531,12 +1529,10 @@ src/internal/controls/index.ts:4: * @standard COSO-2013 internal-control-integra
 src/internal/controls/index.ts:6: * @standard PCAOB AS 2201 ICFR-audit
 src/internal/policies/index.ts:5: * @standard ISO-37301:2021 compliance-policy
 src/internal/policies/policy/versions/index.ts:5: * @standard ISO-9001:2015 §7.5 documented-information-control
-src/invoices/credit/memos/index.ts:18: * @standard ISO-4217:2015 currency-codes
-src/invoices/credit/memos/index.ts:19: * @standard ISO-8601-1:2019 date-time issued-at applied-at settled-at
-src/invoices/credit/memos/index.ts:20: * @standard EN-16931:2017 credit-note-semantic-model
-src/invoices/credit/memos/refunds/index.ts:10: * @standard ISO-20022 pacs.004 payment-return
-src/invoices/credit/memos/refunds/index.ts:8: * @standard ISO-4217:2015 currency-codes
-src/invoices/credit/memos/refunds/index.ts:9: * @standard ISO-8601-1:2019 date-time refunded-at
+src/invoices/credit/memos/index.ts:26: * @standard ISO-4217:2015 currency-codes
+src/invoices/credit/memos/index.ts:27: * @standard ISO-8601-1:2019 date-time issued-at applied-at settled-at
+src/invoices/credit/memos/index.ts:28: * @standard EN-16931:2017 credit-note-semantic-model
+src/invoices/credit/memos/index.ts:29: * @standard ISO-20022 pacs.004 payment-return
 src/invoices/dunning/cycles/index.ts:21: * @standard ISO-8601-1:2019 date-time stage-due-date
 src/invoices/dunning/cycles/index.ts:22: * @standard ISO-4217:2015 currency-codes
 src/invoices/hooks/deriveNumber.test.ts:4: * @standard EN-16931:2017 BT-1 invoice-number
@@ -3771,7 +3767,6 @@ src/chain/event/emitter/index.ts:15: * @compliance SOX §404 internal-controls p
 src/cmspage/access/superAdminOrTenantAdmin.ts:9: * @compliance SOC-2 CC6.1 logical-access-controls
 src/cmspage/index.ts:31: * @compliance WCAG-2.1 level-AA accessibility
 src/collection/archive/index.tsx:7: * @compliance WCAG-2.1 §2.4.1 bypass-blocks
-src/commitments/and/contingencies/index.ts:23: * @compliance SOX §404 internal-controls disclosure-completeness
 src/commitments/index.ts:30: * @compliance GDPR Art.6(1)(b) lawful-basis-contract-processing
 src/compliance/frameworks/compliance/requirements/compliance/gaps/index.ts:6: * @compliance SOX §404 deficiency
 src/compliance/frameworks/compliance/requirements/index.ts:5: * @compliance SOX §404 control-objective
@@ -3923,7 +3918,7 @@ src/fiscal/periods/index.ts:29: * @compliance eIDAS Regulation 910/2014 qualifie
 src/fiscal/periods/post/balance/sheet/events/index.ts:18: * @compliance SOX §404 internal-controls TOM-CL-03
 src/fiscal/periods/prior/period/adjustments/index.ts:17: * @compliance SOX §404 internal-controls restatement-control TOM-PPA-01
 src/fiscal/periods/prior/period/adjustments/index.ts:18: * @compliance SOX §906 ceo-cfo-certification material-misstatement
-src/fiscal/periods/provisions/index.ts:23: * @compliance SOX §404 internal-controls liability-completeness
+src/fiscal/periods/provisions/index.ts:35: * @compliance SOX §404 internal-controls liability-completeness
 src/fiscal/periods/tax/periods/transfer/pricing/adjustments/index.ts:14: * @compliance OECD BEPS Action-13 country-by-country
 src/fixed/assets/depreciation/schedules/hooks/depreciation.ts:25: * @compliance SOX §404 internal-controls capital-asset-register
 src/fixed/assets/depreciation/schedules/index.ts:14: * @compliance SOX §404 internal-controls
@@ -3960,9 +3955,8 @@ src/internal/controls/audit/findings/remediation/plans/index.ts:5: * @compliance
 src/internal/controls/control/tests/index.ts:8: * @compliance SOX §404 internal-controls testing-evidence
 src/internal/controls/index.ts:5: * @compliance SOX §404 internal-controls
 src/internal/policies/policy/acknowledgments/index.ts:5: * @compliance SOX §404 control-attestation
-src/invoices/credit/memos/index.ts:25: * @compliance SOX §404 internal-controls credit-memo-approval
-src/invoices/credit/memos/refunds/index.ts:14: * @compliance SOX §404 internal-controls refund-approval
-src/invoices/credit/memos/refunds/index.ts:15: * @compliance PCI-DSS-4.0 §3.2 tokenized-card-data via-stripe
+src/invoices/credit/memos/index.ts:34: * @compliance SOX §404 internal-controls credit-memo-approval
+src/invoices/credit/memos/index.ts:35: * @compliance PCI-DSS-4.0 §3.2 tokenized-card-data via-stripe
 src/invoices/dunning/cycles/index.ts:27: * @compliance SOX §404 internal-controls bad-debt-evidence
 src/invoices/dunning/cycles/index.ts:28: * @compliance GDPR Art.6(1)(f) lawful-basis-legitimate-interest collections
 src/invoices/hooks/bill.ts:21: * @compliance SOX §404 internal-controls
@@ -4365,13 +4359,8 @@ src/bookable/resources/bookings/index.ts:20: * @accounting US-GAAP ASC-606-10-25
 src/budget/plannings/index.ts:29: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/budget/plannings/index.ts:30: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 src/budget/plannings/index.ts:31: * @accounting US-GAAP ASC-270 interim-reporting
-src/commitments/and/contingencies/index.ts:15: * @accounting IFRS IAS-37 §10 contingent-liability-definition
-src/commitments/and/contingencies/index.ts:16: * @accounting IFRS IAS-37 §27-30 recognition-prohibition
-src/commitments/and/contingencies/index.ts:17: * @accounting IFRS IAS-37 §86-92 disclosure-requirements
-src/commitments/and/contingencies/index.ts:18: * @accounting IFRS IAS-1 §112(c) other-disclosures
-src/commitments/and/contingencies/index.ts:19: * @accounting IFRS IFRS-15 §B50 onerous-contract-disclosure
-src/commitments/and/contingencies/index.ts:20: * @accounting US-GAAP ASC-440 commitments
-src/commitments/and/contingencies/index.ts:21: * @accounting US-GAAP ASC-450-20-50 loss-contingency-disclosure
+src/commitments/and/contingencies/index.ts:10: * @accounting IFRS IAS-37 §86-92 disclosure-requirements
+src/commitments/and/contingencies/index.ts:11: * @accounting US-GAAP ASC-450-20-50 loss-contingency-disclosure
 src/config/country/specifics/index.ts:18: * @accounting IFRS IAS-1 §51 fiscal-period
 src/config/country/specifics/index.ts:19: * @accounting US-GAAP ASC-270 interim-reporting fiscal-year
 src/config/examples/index.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
@@ -4479,12 +4468,18 @@ src/fiscal/periods/index.ts:26: * @accounting US-GAAP ASC-210 balance-sheet
 src/fiscal/periods/prior/period/adjustments/index.ts:13: * @accounting IFRS IAS-8 §42-49 errors-of-prior-periods
 src/fiscal/periods/prior/period/adjustments/index.ts:14: * @accounting US-GAAP ASC-250-10-45 accounting-changes-and-error-corrections
 src/fiscal/periods/prior/period/adjustments/index.ts:15: * @accounting US-GAAP ASC-250-10-50 disclosure-of-prior-period-adjustments
-src/fiscal/periods/provisions/index.ts:16: * @accounting IFRS IAS-37 §14 recognition-of-provisions
-src/fiscal/periods/provisions/index.ts:17: * @accounting IFRS IAS-37 §36 §37 §39 measurement-best-estimate
-src/fiscal/periods/provisions/index.ts:18: * @accounting IFRS IAS-37 §66 §67 onerous-contracts
-src/fiscal/periods/provisions/index.ts:19: * @accounting IFRS IAS-37 §70 §83 disclosure-requirements
-src/fiscal/periods/provisions/index.ts:20: * @accounting US-GAAP ASC-450-20-25 loss-contingencies
-src/fiscal/periods/provisions/index.ts:21: * @accounting US-GAAP ASC-410 asset-retirement-obligations
+src/fiscal/periods/provisions/index.ts:22: * @accounting IFRS IAS-37 §10 contingent-liability-definition
+src/fiscal/periods/provisions/index.ts:23: * @accounting IFRS IAS-37 §14 recognition-of-provisions
+src/fiscal/periods/provisions/index.ts:24: * @accounting IFRS IAS-37 §27-30 recognition-prohibition
+src/fiscal/periods/provisions/index.ts:25: * @accounting IFRS IAS-37 §86-92 disclosure-requirements
+src/fiscal/periods/provisions/index.ts:26: * @accounting IFRS IFRS-15 §B50 onerous-contract-disclosure
+src/fiscal/periods/provisions/index.ts:27: * @accounting US-GAAP ASC-440 commitments
+src/fiscal/periods/provisions/index.ts:28: * @accounting US-GAAP ASC-450-20-50 loss-contingency-disclosure
+src/fiscal/periods/provisions/index.ts:29: * @accounting IFRS IAS-37 §36 §37 §39 measurement-best-estimate
+src/fiscal/periods/provisions/index.ts:30: * @accounting IFRS IAS-37 §66 §67 onerous-contracts
+src/fiscal/periods/provisions/index.ts:31: * @accounting IFRS IAS-37 §70 §83 disclosure-requirements
+src/fiscal/periods/provisions/index.ts:32: * @accounting US-GAAP ASC-450-20-25 loss-contingencies
+src/fiscal/periods/provisions/index.ts:33: * @accounting US-GAAP ASC-410 asset-retirement-obligations
 src/fixed/assets/depreciation/schedules/hooks/depreciation.ts:20: * @accounting IFRS IAS-16 §62 depreciation-methods
 src/fixed/assets/depreciation/schedules/hooks/depreciation.ts:21: * @accounting IFRS IAS-36 impairment-of-assets
 src/fixed/assets/depreciation/schedules/hooks/depreciation.ts:22: * @accounting US-GAAP ASC-360-10-35 depreciation
@@ -4595,11 +4590,9 @@ src/ifrs/16/types/test.ts:11: * @accounting IFRS IFRS-16 leases
 src/ifrs/16/types/test.ts:12: * @accounting US-GAAP ASC-842-20 lessee-accounting
 src/ifrs/16/validate.ts:5: * @accounting IFRS IFRS-16 leases
 src/ifrs/16/validate.ts:6: * @accounting US-GAAP ASC-842-20 lessee-accounting
-src/invoices/credit/memos/index.ts:21: * @accounting IFRS IFRS-15 §B22 refund-liability
-src/invoices/credit/memos/index.ts:22: * @accounting IFRS IFRS-15 §B47 contract-cancellation
-src/invoices/credit/memos/index.ts:23: * @accounting US-GAAP ASC-606-10-32-10 variable-consideration
-src/invoices/credit/memos/refunds/index.ts:11: * @accounting IFRS IFRS-15 §B22 refund-liability-settlement
-src/invoices/credit/memos/refunds/index.ts:12: * @accounting US-GAAP ASC-606-10-32-10 variable-consideration
+src/invoices/credit/memos/index.ts:30: * @accounting IFRS IFRS-15 §B22 refund-liability
+src/invoices/credit/memos/index.ts:31: * @accounting IFRS IFRS-15 §B47 contract-cancellation
+src/invoices/credit/memos/index.ts:32: * @accounting US-GAAP ASC-606-10-32-10 variable-consideration
 src/invoices/dunning/cycles/index.ts:23: * @accounting IFRS IFRS-9 §5.5 expected-credit-loss simplified-approach
 src/invoices/dunning/cycles/index.ts:24: * @accounting US-GAAP ASC-326-20 cecl-credit-losses
 src/invoices/dunning/cycles/index.ts:25: * @accounting US-GAAP ASC-310 receivables
@@ -5104,7 +5097,6 @@ src/categories/hooks/beforeChange.ts:6: * @security ISO-27001 A.5.23 cloud-servi
 src/cmspage/access/superAdminOrTenantAdmin.ts:7: * @security ISO-27001 A.5.18 access-rights
 src/cmspage/access/superAdminOrTenantAdmin.ts:8: * @security ISO-27002 §5.15 access-control
 src/cmspage/hooks/beforeChange.ts:9: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
-src/commitments/and/contingencies/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/compliance/frameworks/compliance/requirements/compliance/gaps/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/compliance/frameworks/compliance/requirements/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/compliance/frameworks/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5195,7 +5187,7 @@ src/fiscal/periods/earnings/per/shares/index.ts:20: * @security ISO 27001 A.5.23
 src/fiscal/periods/index.ts:30: * @security ISO-27002 §5.4 segregation-of-duties closer-vs-creator locker-vs-creator
 src/fiscal/periods/post/balance/sheet/events/index.ts:19: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/fiscal/periods/prior/period/adjustments/index.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/fiscal/periods/provisions/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/fiscal/periods/provisions/index.ts:36: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/fixed/assets/index.ts:31: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/fx/transactions/index.ts:21: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/get/preview/secret/index.ts:7: * @security ISO-27002 §5.17 authentication-information secret-management
@@ -5224,7 +5216,7 @@ src/internal/policies/policy/acknowledgments/index.ts:4: * @security ISO-27001 A
 src/internal/policies/policy/acknowledgments/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/internal/policies/policy/versions/index.ts:4: * @security ISO-27001 A.5.1 policies
 src/internal/policies/policy/versions/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/invoices/credit/memos/index.ts:26: * @security ISO-27002 §5.4 segregation-of-duties issuer-vs-approver
+src/invoices/credit/memos/index.ts:36: * @security ISO-27002 §5.4 segregation-of-duties issuer-vs-approver
 src/invoices/dunning/cycles/index.ts:29: * @security ISO-27002 §5.4 segregation-of-duties write-off-approval
 src/invoices/hooks/bill.ts:22: * @security ISO-27002 §5.4 segregation-of-duties
 src/invoices/invoice/lines/hooks/beforeValidate.ts:11: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5707,7 +5699,6 @@ src/collections/index.test.ts:68: * @audit computed from the live collections ba
 src/collections/test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every registered collection node verified)
 src/collide/index.ts:17: * @audit collide is DEFINED here and DEFERRED — never applied to the live matrix in this atom
 src/collider/index.ts:12: * @audit each check is a live computation in @/convention; the verdict is coverageCostLog2 of the product, never assumed
-src/commitments/and/contingencies/index.ts:22: * @audit ISO-19011:2018 audit-trail off-balance-sheet
 src/commitments/index.ts:31: * @audit ISO-19011:2018 audit-trail authorization-evidence
 src/compliance/frameworks/compliance/requirements/compliance/gaps/index.ts:5: * @audit ISO-19011:2018 nonconformity
 src/component/index.ts:19: * @audit a component's visible identity IS its atom-uuid pixel — computed, never hand-styled
@@ -5860,7 +5851,7 @@ src/fiscal/periods/earnings/per/shares/index.ts:18: * @audit ISO 19011:2018 §6.
 src/fiscal/periods/index.ts:31: * @audit ISO-19011:2018 audit-trail status-transition
 src/fiscal/periods/post/balance/sheet/events/index.ts:17: * @audit ISO 19011:2018 §6.4.6 audit-evidence-subsequent-events
 src/fiscal/periods/prior/period/adjustments/index.ts:16: * @audit ISO-19011:2018 audit-trail prior-period-restatement
-src/fiscal/periods/provisions/index.ts:22: * @audit ISO-19011:2018 audit-trail provision-evidence
+src/fiscal/periods/provisions/index.ts:34: * @audit ISO-19011:2018 audit-trail provision-evidence
 src/fixed/assets/depreciation/schedules/hooks/depreciation.ts:24: * @audit ISO-19011:2018 audit-trail period-expense
 src/fixed/assets/depreciation/schedules/index.ts:13: * @audit ISO-19011:2018 audit-trail depreciation-evidence
 src/fixed/assets/index.ts:29: * @audit ISO-19011:2018 audit-trail
@@ -5932,8 +5923,7 @@ src/internal/controls/audit/findings/court-docket.ts:12: * @audit ISO-19011:2018
 src/internal/controls/audit/findings/index.ts:10: * @audit ISO-19011:2018 audit-trail
 src/internal/controls/control/tests/audit/samples/index.ts:5: * @audit ISO-19011:2018 sampling-methodology
 src/internal/controls/control/tests/index.ts:9: * @audit ISO-19011:2018 audit-trail
-src/invoices/credit/memos/index.ts:24: * @audit ISO-19011:2018 audit-trail
-src/invoices/credit/memos/refunds/index.ts:13: * @audit ISO-19011:2018 audit-trail refund-evidence
+src/invoices/credit/memos/index.ts:33: * @audit ISO-19011:2018 audit-trail
 src/invoices/dunning/cycles/index.ts:26: * @audit ISO-19011:2018 audit-trail collections-evidence
 src/invoices/hooks/bill.ts:20: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/invoices/hooks/deriveNumber.ts:9: * @audit ISO-19011:2018 audit-trail document-identity

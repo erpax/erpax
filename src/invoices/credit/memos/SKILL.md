@@ -50,12 +50,35 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
+## A refund is a line on the memo
+
+A refund used to be its own collection: one row per cash payment back, each requiring exactly one
+credit memo, with a status list that nearly repeated the memo's. It is the memo's cash-out stage,
+so it is now the memo's `refunds` list — amount, method, rail reference, status, the two
+timestamps, the failure reason and the journal entry, per payment.
+
+- `refunded(memo)` — cash that has left: the issued and settled lines. A pending, failed or
+  voided line pays nothing.
+- `coveredByRefunds(memo)` — the SETTLED lines cover the amount. An issued line has left and not
+  arrived, so it does not count.
+- `withRefundStages(memo, now)` — the before-change step: stamps each line once when issued and
+  once when settled, and moves an issued or applied memo to settled when it is covered. A draft
+  or voided memo is never settled by its lines.
+- `memoPresets()` — the two saved lists; "Refunds" is the memos that have a refund line, and
+  stands where the collection's own list stood.
+
+**Honest boundary.** A partial refund leaves the memo open, and nothing here decides what happens
+to the remainder. The sum of lines is not capped at the memo's amount — an over-refund is recorded
+as typed, not refused. The Refunds list filters on the line field through the query API; it is
+declared here and not yet loaded into any tenant.
+
 ## Standards
 
 <!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
 - `@standard ISO-4217:2015 currency-codes`
 - `@standard ISO-8601-1:2019 date-time issued-at applied-at settled-at`
 - `@standard EN-16931:2017 credit-note-semantic-model`
+- `@standard ISO-20022 pacs.004 payment-return`
 
 - ISO-4217:2015 currency-codes
 - ISO-8601-1:2019 date-time issued-at applied-at settled-at
@@ -67,4 +90,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls credit-memo-approval
 - ISO-27002 §5.4 segregation-of-duties issuer-vs-approver
 
-Composes: [[Refunds]] · [[accounting]] · [[transaction]] · [[proof]] · [[Tenants]] · [[Customers]].
+Composes: [[preset]] · [[accounting]] · [[transaction]] · [[proof]] · [[Tenants]] · [[Customers]].
