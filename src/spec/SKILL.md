@@ -3,7 +3,7 @@ name: spec
 description: "Use when one workflow definition must generate many materializations — e2e test, help tip/subtitle, seed, evidence, marketing page, i18n keys — from a single source. The spec-generator over BUSINESS_CHAINS; e2e tests and help tips share one source."
 atomPath: spec
 coordinate: "spec · 5/round · 87cf53a0"
-contentUuid: "de4c7255-d060-5238-9e39-62f00e3ecdf4"
+contentUuid: "8e6e2a0c-c9c8-5ddc-86db-7a070797345c"
 diamondUuid: "60083cbb-444e-82cf-a6d0-0a09f32b88b2"
 uuid: "87cf53a0-16f4-801c-b4b7-b2b041bf75b6"
 horo: 5
@@ -13,8 +13,6 @@ typography:
 standards:
   - "ISO/IEC-12207"
   - "RFC-8259"
-  - "W3C-WAI-ARIA-1.2"
-  - "WCAG-2.1"
 bindings: []
 signatures:
   computationUuid: "09ffbfe0-d5a6-867c-980c-a597c2e22c29"

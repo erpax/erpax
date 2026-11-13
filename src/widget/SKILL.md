@@ -3,7 +3,7 @@ name: widget
 description: "Use when reasoning about widget — Every widget here is over an analytics view-model. The tile receives what it draws and computes nothing about where it came from — the fetch belongs to dashboard/spec, which owns…"
 atomPath: widget
 coordinate: "widget · 5/round · 1568b6bd"
-contentUuid: "924dcafb-45f1-54d5-9884-a6a1c3b9d0f2"
+contentUuid: "15b92f15-b815-53d3-8091-e6e8999487f9"
 diamondUuid: "e503ff5d-f485-8509-ab09-758bff9c5f14"
 uuid: "1568b6bd-1c89-890d-941a-15234fc3a5a3"
 horo: 5
@@ -12,7 +12,6 @@ typography:
   bondDegree: 23
 standards:
   - "ECMA-262"
-  - "WCAG-2.1"
 bindings: []
 signatures:
   computationUuid: "0e76bf00-fa45-8b1a-aa87-d36434d259ff"

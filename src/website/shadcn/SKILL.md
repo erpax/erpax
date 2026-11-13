@@ -3,7 +3,7 @@ name: shadcn
 description: "Use when reasoning about shadcn — The website is the e2e walkthroughs rendered, and a walkthrough is not prose: it is steps, states, evidence and gaps."
 atomPath: "website/shadcn"
 coordinate: "website/shadcn · 4/weave · 7d8cd5c3"
-contentUuid: "d1b1bb6e-3269-53a3-a2e0-16f2979f2dee"
+contentUuid: "a6246ab8-53c3-522d-aa33-6360629495b4"
 diamondUuid: "6eb2a5ae-d4b2-8836-afb3-2b88d8ed86f7"
 uuid: "7d8cd5c3-64ae-82c8-975d-17b403c35298"
 horo: 4
@@ -13,8 +13,6 @@ typography:
 standards:
   - W3C Open Graph + Schema.org (carried by surrounding pages)
   - "W3C WAI-ARIA 1.2 + WCAG 2.2 AA"
-  - "W3C-WAI-ARIA-1.2"
-  - "WCAG-2.1"
   - "shadcn/ui (Radix UI + Tailwind CSS)"
 bindings: []
 signatures:

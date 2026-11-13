@@ -3,7 +3,7 @@ name: hero
 description: "Use when reasoning about hero — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: hero
 coordinate: "hero · 2/share · 4fd0159d"
-contentUuid: "65c57c1c-edcd-5442-82cc-16ed8e1be3cf"
+contentUuid: "7b8eff0b-3758-552f-8f9f-79c4a434f02d"
 diamondUuid: "3173199c-6c1e-871b-8cd0-1f5bbc678033"
 uuid: "4fd0159d-cd27-8d82-a937-cc3ca60b1c38"
 horo: 2
@@ -12,7 +12,6 @@ typography:
   bondDegree: 13
 standards:
   - "W3C-HTML5"
-  - "W3C-WAI-ARIA-1.2"
 bindings: []
 signatures:
   computationUuid: "8717c49d-6e33-849c-870e-6144a4057aaa"

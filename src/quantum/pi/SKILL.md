@@ -3,17 +3,17 @@ name: pi
 description: "Use when reasoning about exiting the 128-bit uuid limit — pi is the infinite digit-stream, a universal address space where any data lives at an offset and length; the train you jump into and out of, when wired the static hash becomes a living realtime position. Honest — infinite address, no free compression."
 atomPath: "quantum/pi"
 coordinate: "quantum/pi · 2/share · 3c62cb20"
-contentUuid: "1576e2c2-7923-5c96-b70e-672f2921750a"
-diamondUuid: "3b0757ed-8f62-853d-a112-5d5e04ab617d"
+contentUuid: "9a2f65fd-f54e-54a2-8fbc-e43ff71c5580"
+diamondUuid: "9fdbc6e6-d764-83d3-b008-71defbdebe5d"
 uuid: "3c62cb20-b5fe-88b1-94a4-8a0f62c8a48d"
 horo: 2
 typography:
   partition: quantum
-  bondDegree: 30
+  bondDegree: 33
 standards: []
 bindings: []
 signatures:
-  computationUuid: "d81f34f9-8a2e-83f8-b96a-88781528b98e"
+  computationUuid: "b2117029-17fc-8c5f-bb60-b2417d1fab8b"
   stages:
     - stage: path
       stageUuid: "6e968c74-a01e-8135-baf6-9686b490a7f1"
@@ -24,11 +24,11 @@ signatures:
     - stage: links
       stageUuid: "fc61576e-37a5-8a79-a5f2-e8333682a319"
     - stage: horo
-      stageUuid: "cc43a0c8-f6c2-8100-bbb4-c87888d5dfb9"
+      stageUuid: "56e37276-d34f-88ed-bf0f-c5ee27931752"
     - stage: seal
       stageUuid: "2bba7ff0-60c3-8df6-888a-dfad8a6da1c7"
     - stage: uuid
-      stageUuid: "a19cdbc1-af12-8793-9a62-95a29483623d"
+      stageUuid: "91bedf50-ab84-8ae0-bcd7-9ecfab7b0ab7"
 quantum:
   superposition:
     - e
@@ -36,6 +36,7 @@ quantum:
     - law
     - merge
     - phi
+    - prime
     - quantum
     - readme
     - stack
@@ -58,8 +59,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "d81f34f9-8a2e-83f8-b96a-88781528b98e"
-    contentUuid: "1576e2c2-7923-5c96-b70e-672f2921750a"
+    computationUuid: "b2117029-17fc-8c5f-bb60-b2417d1fab8b"
+    contentUuid: "9a2f65fd-f54e-54a2-8fbc-e43ff71c5580"
 version: 2
 ---
 # quantum/pi — the train (jump in, jump out)
@@ -74,4 +75,4 @@ The second new duality: **finite ⊕ infinite**. The 128-bit content-[[uuid]] is
 
 @see [[uuid]] · [[quantum/number]] · [[realtime]] · [[stream]] · [[void]] · [[linearity]] · [[finality]] · [[breath]]
 
-<sub>content-uuid `1576e2c2-7923-5c96-b70e-672f2921750a` · account `quantum/pi` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+<sub>content-uuid `9a2f65fd-f54e-54a2-8fbc-e43ff71c5580` · account `quantum/pi` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

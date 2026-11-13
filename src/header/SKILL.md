@@ -3,7 +3,7 @@ name: header
 description: "Use when reasoning about header as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: header
 coordinate: "header · 5/round · 6c5e61aa"
-contentUuid: "6c86a708-054d-5e0d-913a-481abc8aedc6"
+contentUuid: "51691361-ca56-50fc-8e0c-91c73678c287"
 diamondUuid: "0b535032-207f-856b-aedd-dde699a0c0b5"
 uuid: "6c5e61aa-b8f5-8388-93d2-db1a02639ed3"
 horo: 5
@@ -12,7 +12,6 @@ typography:
   bondDegree: 21
 standards:
   - "W3C-HTML5"
-  - "W3C-WAI-ARIA-1.2"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 signatures:

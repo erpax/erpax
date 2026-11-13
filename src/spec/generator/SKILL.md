@@ -3,7 +3,7 @@ name: generator
 description: "Use when reasoning about generator — The extractor parses each collection's leading banner into a ; the generators beside it emit the chain registry, the test scaffolds, the marketing pages and the i18n keys from…"
 atomPath: "spec/generator"
 coordinate: "spec/generator · 4/weave · 7c9d681e"
-contentUuid: "c21ce2c7-b0c5-5657-82cf-242f683cd509"
+contentUuid: "ccb832e7-26bc-55eb-834b-73d0a9fe7cf2"
 diamondUuid: "4dd9d876-9561-8aaf-b289-79283df73780"
 uuid: "7c9d681e-6619-8984-87c1-bd786a0fd16c"
 horo: 4
@@ -14,8 +14,6 @@ standards:
   - "ISO/IEC 25010:2023 §5 modularity-and-maintainability"
   - "ISO/IEC-12207"
   - "RFC-8259"
-  - "W3C-WAI-ARIA-1.2"
-  - "WCAG-2.1"
 bindings: []
 signatures:
   computationUuid: "0c261e65-057d-8367-9b98-8dba79a3606f"

@@ -3,7 +3,7 @@ name: section
 description: "Use when reasoning about section — content-addressed the widget tree and found the same 48-node body **three times in ** and **three times in ** — a heading, a mapped list of account rows, and a total."
 atomPath: "widget/section"
 coordinate: "widget/section · 4/weave · 007f2f6b"
-contentUuid: "a8805b73-a7b9-5ac7-aa71-9a7caec0ad38"
+contentUuid: "e1b14fb8-e330-5558-b93d-20807d85094a"
 diamondUuid: "221af711-d77b-8ae0-8c45-d7d80dc8d6b2"
 uuid: "007f2f6b-47e1-843f-826c-883e8ec3f17c"
 horo: 4
@@ -13,7 +13,6 @@ typography:
 standards:
   - "IFRS IAS-1 §54 statement-of-financial-position"
   - "WCAG 2.2 §1.3.1 info-and-relationships"
-  - "WCAG-2.1"
 bindings: []
 signatures:
   computationUuid: "715c8548-5c9a-844a-b5b3-79868904c465"

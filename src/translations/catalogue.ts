@@ -4908,7 +4908,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when invoking any AI inference in erpax — invoice OCR, bank-transaction matching, sanctions screening, anomaly detection, tax classification, HS-code suggestion, document classification, vector embedding, semantic search, or audit summarisation. Every AI call goes through the single `callWorkersAi` gate (entitlement, audit row, tenant scope, risk class, metering); the AI services barrel.",
-        "uuid": "bae4ee8e-d2a1-8b79-a1a4-4c69655acb4f",
+        "uuid": "9267102a-88ae-80b7-935c-36bf113a61ba",
         "words": [
           "use",
           "when",
@@ -26021,7 +26021,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when filing export or import customs declarations for a cross-border shipment — recording HS-coded line items, declared values, duty and import VAT, INCOTERMS, country of origin, and tracking MRN issuance through to customs release. The EU UCC / WCO structured customs-declaration collection.",
-        "uuid": "c6746878-b9ea-8a7f-be19-765788c0c1ea",
+        "uuid": "846eb5f4-89f3-8674-a135-7752fdce56f9",
         "words": [
           "use",
           "when",
@@ -61786,6 +61786,76 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "prime",
+    "path": "prime",
+    "translations": [
+      {
+        "key": "name",
+        "source": "prime",
+        "uuid": "af8045d1-5e01-89d0-920b-7c05c4f846fc",
+        "words": [
+          "prime"
+        ],
+        "values": {
+          "en": "prime"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about prime — Use for the multiplicative basis — isPrime (deterministic Miller–Rabin, exact not probabilistic) and factor (the decode fold: an integer back to its prime generators). The counterpart to pi's positional basis. Run: tsx src/prime/index.ts <n>",
+        "uuid": "a9cf79ca-2535-887d-886b-47c9fc774e41",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "prime",
+          "use",
+          "for",
+          "the",
+          "multiplicative",
+          "basis",
+          "isprime",
+          "deterministic",
+          "miller",
+          "rabin",
+          "exact",
+          "not",
+          "probabilistic",
+          "and",
+          "factor",
+          "the",
+          "decode",
+          "fold",
+          "an",
+          "integer",
+          "back",
+          "to",
+          "its",
+          "prime",
+          "generators",
+          "the",
+          "counterpart",
+          "to",
+          "pi",
+          "s",
+          "positional",
+          "basis",
+          "run",
+          "tsx",
+          "src",
+          "prime",
+          "index",
+          "ts",
+          "n"
+        ],
+        "values": {
+          "en": "Use when reasoning about prime — Use for the multiplicative basis — isPrime (deterministic Miller–Rabin, exact not probabilistic) and factor (the decode fold: an integer back to its prime generators). The counterpart to pi's positional basis. Run: tsx src/prime/index.ts <n>"
+        }
+      }
+    ]
+  },
+  {
     "atom": "principal",
     "path": "principal",
     "translations": [
@@ -94680,6 +94750,63 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when asking whether a system can ENDURE — it is sustainable iff it draws down no stock faster than that stock regenerates (throughput ≤ carrying capacity) and its material loop closes, so each cycle adds zero NET entropy. Nature does it as a sun-driven dissipative structure — matter cycles, energy flows one-way and degrades. In erpax, zero-net-entropy-per-cycle IS sustainability; the borrowed anchor is the sun."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "swarm",
+    "path": "swarm",
+    "translations": [
+      {
+        "key": "name",
+        "source": "swarm",
+        "uuid": "710eb9f4-e01b-8ddf-bd00-30c2e48aa659",
+        "words": [
+          "swarm"
+        ],
+        "values": {
+          "en": "swarm"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about swarm — A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of tasks and produces an assignment across N agents.",
+        "uuid": "8903e2cb-989c-8bf0-affa-c494ef997157",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "swarm",
+          "a",
+          "hexacopter",
+          "takes",
+          "four",
+          "stick",
+          "numbers",
+          "and",
+          "produces",
+          "six",
+          "motor",
+          "commands",
+          "a",
+          "swarm",
+          "takes",
+          "a",
+          "set",
+          "of",
+          "tasks",
+          "and",
+          "produces",
+          "an",
+          "assignment",
+          "across",
+          "n",
+          "agents"
+        ],
+        "values": {
+          "en": "Use when reasoning about swarm — A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of tasks and produces an assignment across N agents."
         }
       }
     ]
@@ -203940,6 +204067,41 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "hs",
+    "path": "wco/hs",
+    "translations": [
+      {
+        "key": "name",
+        "source": "hs",
+        "uuid": "9b8a245b-ca9b-8946-8ac2-bdace97c18e4",
+        "words": [
+          "hs"
+        ],
+        "values": {
+          "en": "hs"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing WCO Harmonised System.",
+        "uuid": "c0535387-9a55-80ce-8a64-9b836509206e",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "wco",
+          "harmonised",
+          "system"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing WCO Harmonised System."
+        }
+      }
+    ]
+  },
+  {
     "atom": "wearable",
     "path": "wearable",
     "translations": [
@@ -206814,4 +206976,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 3521
+export const TRANSLATIONS_COUNT = 3524

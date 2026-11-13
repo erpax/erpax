@@ -644,6 +644,48 @@ src/casino/index.ts:12: * @standard ISO 4217 — currency and minor units
 src/casino/index.ts:13: * @standard ISA 501 — physical count as audit evidence
 src/categories/index.ts:15: * @standard schema.org Category
 src/categories/index.ts:16: * @standard schema.org DefinedTerm taxonomic-term
+src/chains/bulk/import/cycle/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/bulk/import/cycle/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/consignment/cycle/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/consignment/cycle/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/crm/lead/to/cash/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/crm/lead/to/cash/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/esg/reporting/cycle/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/esg/reporting/cycle/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/facility/maintenance/cycle/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/facility/maintenance/cycle/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/h2r/hire/to/retire/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/h2r/hire/to/retire/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/ifrs16/lease/cycle/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/ifrs16/lease/cycle/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/intercompany/consolidation/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/intercompany/consolidation/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/kyc/sanctions/review/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/kyc/sanctions/review/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/manufacturing/cycle/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/manufacturing/cycle/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/multi/invoice/payment/allocation/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/multi/invoice/payment/allocation/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/multi/vendor/pr/split/award/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/multi/vendor/pr/split/award/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/notification/dispatch/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/notification/dispatch/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/o2c/good/o2c-goods-page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/o2c/good/o2c-goods-page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/o2c/services/over/time/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/o2c/services/over/time/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/procure/to/pay/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/procure/to/pay/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/provision/lifecycle/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/provision/lifecycle/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/record/to/report/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/record/to/report/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/resource/booking/cycle/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/resource/booking/cycle/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/subscription/billing/cycle/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/subscription/billing/cycle/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chains/workflow/approval/cycle/page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/chains/workflow/approval/cycle/page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
 src/chakra/index.ts:15: * @standard ISO-16:1975 a432-tuning-reference (pitch from position)
 src/chats/index.ts:15: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
 src/chats/index.ts:16: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
@@ -2205,6 +2247,8 @@ src/posts/index.ts:41: * @standard W3C HTML5 Living Standard
 src/posts/index.ts:42: * @standard BCP-47 language-tag i18n-routing
 src/posts/index.ts:43: * @standard ECMA-402 internationalization-api
 src/power/index.ts:32: * @standard NIST SP 800-107r1 §5.1 (hash strengths) · NIST SP 800-57 Part 1 r5 §5.6
+src/prime/index.ts:32: * @standard Fundamental Theorem of Arithmetic — unique prime factorisation (Euclid; Gauss)
+src/prime/index.ts:33: * @standard Shor 1994 — integer factorisation by quantum period-finding (proven, not claimed)
 src/principal/index.ts:31: * @standard ISO/IEC 27001 A.5.15 — access control: least privilege
 src/principal/index.ts:32: * @standard ISO/IEC 27001 A.8.2 — privileged access rights
 src/product/price/index.ts:20: * @standard ISO-4217:2015 currency-codes
@@ -2743,6 +2787,7 @@ src/sustainability/index.ts:14: * @standard Verhulst logistic growth (1838) — 
 src/sustainability/index.ts:15: * @standard Prigogine dissipative structures (Nobel Chemistry, 1977) — order by dissipation
 src/sustainability/index.ts:16: * @standard Brundtland Report, Our Common Future (1987) — canonical sustainability definition
 src/sustainability/index.ts:17: * @standard Second Law of Thermodynamics — local order requires entropy export
+src/swarm/index.ts:4: * @standard Graham (1969) — LPT list scheduling is within 4/3 − 1/(3m) of optimal makespan
 src/syntax/index.ts:23: * @standard ECMA-262 · TypeScript grammar (via ts.createSourceFile — the compiler's own scanner)
 src/tags/index.ts:21: * @standard ISO-25964-1:2011 thesauri-and-interoperability controlled-vocabulary
 src/tags/index.ts:22: * @standard RFC-4122 §4.3 uuid content-addressed-id
@@ -3121,6 +3166,9 @@ src/warehouse/locations/index.ts:12: * @standard EN-16931:2017 §BG-15 deliver-t
 src/warehouse/locations/index.ts:9: * @standard ISO-3166-1:2020 country-codes location-country
 src/water/cycle/index.ts:6: * @standard NIST — ΔH°f H2O(l) = −285.83 kJ/mol · H2O(g) = −241.83 kJ/mol
 src/wave/horo/index.ts:28: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
+src/wco/hs/index.ts:10: * @standard EU CN Code (Combined Nomenclature) Regulation (EEC) 2658/87
+src/wco/hs/index.ts:11: * @standard US HTS (Harmonized Tariff Schedule)
+src/wco/hs/index.ts:9: * @standard WCO Harmonised System Convention (effective 1988, latest revision 2022)
 src/website/index.ts:25: * @standard W3C HTML5 § sectioning + WCAG 2.2 §1.4.3
 src/website/index.ts:26: * @standard Schema.org Article + WebSite + SoftwareApplication
 src/website/marketing/index.ts:18: * @standard Schema.org WebPage + Article + SoftwareApplication
@@ -5590,6 +5638,27 @@ src/carriers/index.ts:15: * @audit ISO-19011:2018 audit-trail carrier-master
 src/cases/index.ts:19: * @audit ISO-19011:2018 audit-trail file·hear·rule·seal
 src/categories/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/chain/event/emitter/index.ts:14: * @audit ISO-19011:2018 audit-trail event-emit
+src/chains/bulk/import/cycle/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/consignment/cycle/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/crm/lead/to/cash/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/esg/reporting/cycle/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/facility/maintenance/cycle/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/h2r/hire/to/retire/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/ifrs16/lease/cycle/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/intercompany/consolidation/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/kyc/sanctions/review/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/manufacturing/cycle/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/multi/invoice/payment/allocation/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/multi/vendor/pr/split/award/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/notification/dispatch/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/o2c/good/o2c-goods-page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/o2c/services/over/time/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/procure/to/pay/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/provision/lifecycle/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/record/to/report/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/resource/booking/cycle/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/subscription/billing/cycle/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chains/workflow/approval/cycle/page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
 src/chakra/index.ts:16: * @audit note, colour and uuid computed from the position math, never hand-asserted
 src/classify/tax/id/index.ts:13: * @audit ISO-19011:2018 audit-trail tax-id-classification-evidence
 src/cloning/boot/index.ts:21: * @audit ISO 19011:2018 §6.4.6 (clone provenance preserved)

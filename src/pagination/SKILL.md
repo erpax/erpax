@@ -3,7 +3,7 @@ name: pagination
 description: "Use when reasoning about pagination — Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\"."
 atomPath: pagination
 coordinate: "pagination · 4/weave · 4b25a1db"
-contentUuid: "17e3ebba-2cce-5491-92aa-a385849e8027"
+contentUuid: "7a7af3cb-a3f0-5ee4-9983-596409274311"
 diamondUuid: "f4b1cfcc-c955-8513-89d7-dc0ce9036b6d"
 uuid: "4b25a1db-f84a-8e36-a8f7-86c120bf42af"
 horo: 4
@@ -14,7 +14,6 @@ standards:
   - "3986 uniform-resource-identifier page-number-query"
   - "5005 web-feed-paging-and-archiving"
   - "W3C HTML5 nav-element"
-  - "W3C-WAI-ARIA-1.2"
   - "WAI-ARIA 1.2 navigation-landmark-role"
   - "WCAG-2.1 §2.4.4 link-purpose-in-context"
   - "schema.org — the type vocabulary, collided to single words"

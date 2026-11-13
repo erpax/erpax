@@ -3,7 +3,7 @@ name: standards
 description: "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family."
 atomPath: standards
 coordinate: "standards · 1/base · f65c4f04"
-contentUuid: "6f67c0f9-660e-528b-a888-22c8ebbd7619"
+contentUuid: "9b1be8b5-e5e3-5eef-9506-cfe521aeb6a7"
 diamondUuid: "1d5d28e0-175b-822f-9a9d-0d085cc71598"
 uuid: "f65c4f04-8fe6-88dd-8b06-459455a16bfc"
 horo: 1
@@ -72,7 +72,7 @@ Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
 <!-- CATALOGUE:START -->
 
-## Catalogue — 159 standards, 6530 citations
+## Catalogue — 159 standards, 6574 citations
 
 <!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->
 
@@ -99,12 +99,12 @@ inline HTML that renders as a coloured dot.
 | other | 15 | 268 | `COSO-ERM-2017` · 144 |
 | rfc | 11 | 456 | `RFC-9562` · 154 |
 | sox | 6 | 38 | `SOX` · 25 |
-| un | 6 | 93 | `ISO-9735` · 42 |
+| un | 6 | 95 | `ISO-9735` · 42 |
 | upu | 1 | 7 | `UPU-S42` · 7 |
 | us_gaap | 3 | 61 | `US-CTA-2021` · 38 |
 | w3c | 11 | 2076 | `schema.org` · 1909 |
-| wcag | 2 | 21 | `W3C-WAI-ARIA-1.2` · 12 |
-| **Σ** | **159** | **6530** | |
+| wcag | 2 | 63 | `W3C-WAI-ARIA-1.2` · 33 |
+| **Σ** | **159** | **6574** | |
 
 **Registered, awaiting citation: 104.** Known canonical standards the registry holds and
 no code cites yet — they seed as `proposed` and become cited as a domain grows. Listed in

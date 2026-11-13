@@ -5993,6 +5993,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "preset"
   },
   {
+    "atom": "prime",
+    "name": "prime",
+    "description": "Use when reasoning about prime — Use for the multiplicative basis — isPrime (deterministic Miller–Rabin, exact not probabilistic) and factor (the decode fold: an integer back to its prime generators). The counterpart to pi's positional basis. Run: tsx src/prime/index.ts <n>",
+    "path": "prime"
+  },
+  {
     "atom": "principal",
     "name": "principal",
     "description": "Use when code must act without a human — a scoped system identity instead of overrideAccess:true. Payload's Local API defaults to skipping access control, and the corpus did so at 138 sites, now 132; a principal makes the check RUN and pass, because the identity is authorised for its subsystem and nothing else. Five declared principals (seed, hook, job, migration, import), none holding admin, each tenant-bound. Reads exactly like a person to the access layer — a principal needing its own code path would be a second door.",
@@ -9117,6 +9123,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "sustainability",
     "description": "Use when asking whether a system can ENDURE — it is sustainable iff it draws down no stock faster than that stock regenerates (throughput ≤ carrying capacity) and its material loop closes, so each cycle adds zero NET entropy. Nature does it as a sun-driven dissipative structure — matter cycles, energy flows one-way and degrades. In erpax, zero-net-entropy-per-cycle IS sustainability; the borrowed anchor is the sun.",
     "path": "sustainability"
+  },
+  {
+    "atom": "swarm",
+    "name": "swarm",
+    "description": "Use when reasoning about swarm — A hexacopter takes four stick numbers and produces six motor commands. A swarm takes a set of tasks and produces an assignment across N agents.",
+    "path": "swarm"
   },
   {
     "atom": "swatch",
@@ -20871,6 +20883,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "session",
     "description": "Use when walking a wave plan hop by hop with receipts — opens a session over a plan, emits a uuid-chained receipt per completed wave, and refuses to report ready until every wave is actually done. The actor is folded into the receipt's address, never stored in clear.",
     "path": "wave/session"
+  },
+  {
+    "atom": "hs",
+    "name": "hs",
+    "description": "Use when implementing or referencing WCO Harmonised System.",
+    "path": "wco/hs"
   },
   {
     "atom": "wearable",

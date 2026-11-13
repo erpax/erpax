@@ -3,7 +3,7 @@ name: component
 description: "Use when defining a reusable UI building block — button, card, modal, form field, input. The atomic UI element with consistent design, behavior, and accessibility."
 atomPath: component
 coordinate: "component · 1/base · 76289b34"
-contentUuid: "365881e3-b2f8-5847-b1e0-fcb3826dac99"
+contentUuid: "d3bf5df6-9223-54d2-b6de-ff4bc7a0d6d8"
 diamondUuid: "64b4ff90-6ee2-8181-9a00-161ff6af008c"
 uuid: "76289b34-da6d-8af1-ba82-bffb814d1c61"
 horo: 1
@@ -11,7 +11,6 @@ typography:
   partition: component
   bondDegree: 67
 standards:
-  - "W3C-WAI-ARIA-1.2"
   - "WAI-ARIA semantics on a render whose identity is the content-uuid"
 bindings: []
 signatures:

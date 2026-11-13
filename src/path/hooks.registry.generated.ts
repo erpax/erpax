@@ -979,6 +979,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "power",
   "pqc",
   "preset",
+  "prime",
   "principal",
   "product/price",
   "proof",
@@ -1311,6 +1312,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "subscription/plans/subscriptions/usage/records",
   "superposition",
   "sustainability",
+  "swarm",
   "syntax",
   "syntax/cache",
   "tags",
@@ -1481,6 +1483,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "wave/policy",
   "wave/scheduler",
   "wave/session",
+  "wco/hs",
   "website",
   "website/marketing",
   "website/seo",
@@ -1509,7 +1512,7 @@ export const ATOM_LEDGER_PATHS: readonly string[] = [
   "zeropoint"
 ] as const
 
-export const ATOM_LEDGER_PATH_COUNT = 1502 as const
+export const ATOM_LEDGER_PATH_COUNT = 1505 as const
 
 /** Index-bearing prefix chain per atom path — parent barrels precede child. */
 export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> = {
@@ -5102,6 +5105,9 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "preset": [
     "preset"
   ],
+  "prime": [
+    "prime"
+  ],
   "principal": [
     "principal"
   ],
@@ -6391,6 +6397,9 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "sustainability": [
     "sustainability"
   ],
+  "swarm": [
+    "swarm"
+  ],
   "syntax": [
     "syntax"
   ],
@@ -7011,6 +7020,9 @@ export const MERGED_LEDGER_CHAINS: Readonly<Record<string, readonly string[]>> =
   "wave/session": [
     "wave",
     "wave/session"
+  ],
+  "wco/hs": [
+    "wco/hs"
   ],
   "website": [
     "website"

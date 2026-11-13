@@ -8737,7 +8737,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Harmonized System customs nomenclature",
     "uuid": "735463b1-8b67-83a1-979e-593ca0e4e03d",
     "color": "hsl(4 84% 47%)",
-    "count": 4,
+    "count": 6,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -8749,6 +8749,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/tenant/roles/profile/country.ts",
+        "section": ""
+      },
+      {
+        "path": "src/wco/hs/index.ts",
         "section": ""
       }
     ]
@@ -9807,7 +9811,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Accessible Rich Internet Applications",
     "uuid": "a46dba6c-64b6-81af-b328-04d4369fa69b",
     "color": "hsl(333 66% 50%)",
-    "count": 12,
+    "count": 33,
     "modules": [
       {
         "path": "src/admin/bar/index.tsx",
@@ -9830,31 +9834,79 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/component/SKILL.md",
+        "path": "src/chains/bulk/import/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/footer/config.ts",
+        "path": "src/chains/consignment/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/header/config.ts",
+        "path": "src/chains/crm/lead/to/cash/page.tsx",
         "section": ""
       },
       {
-        "path": "src/hero/config/index.ts",
+        "path": "src/chains/esg/reporting/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/pagination/index.tsx",
+        "path": "src/chains/facility/maintenance/cycle/page.tsx",
         "section": ""
       },
       {
-        "path": "src/spec/generator/marketing.ts",
+        "path": "src/chains/h2r/hire/to/retire/page.tsx",
         "section": ""
       },
       {
-        "path": "src/website/shadcn/index.ts",
+        "path": "src/chains/ifrs16/lease/cycle/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/intercompany/consolidation/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/kyc/sanctions/review/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/manufacturing/cycle/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/multi/invoice/payment/allocation/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/multi/vendor/pr/split/award/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/notification/dispatch/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/o2c/good/o2c-goods-page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/o2c/services/over/time/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/procure/to/pay/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/provision/lifecycle/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/record/to/report/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/resource/booking/cycle/page.tsx",
         "section": ""
       }
     ]
@@ -9865,7 +9917,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Web Content Accessibility Guidelines",
     "uuid": "852e7032-f08c-8685-802a-ea7d1e0db109",
     "color": "hsl(254 62% 40%)",
-    "count": 9,
+    "count": 30,
     "modules": [
       {
         "path": "src/agents/registered/design.agent.ts",
@@ -9876,32 +9928,92 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/chains/bulk/import/cycle/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/consignment/cycle/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/crm/lead/to/cash/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/esg/reporting/cycle/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/facility/maintenance/cycle/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/h2r/hire/to/retire/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/ifrs16/lease/cycle/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/intercompany/consolidation/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/kyc/sanctions/review/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/manufacturing/cycle/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/multi/invoice/payment/allocation/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/multi/vendor/pr/split/award/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/notification/dispatch/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/o2c/good/o2c-goods-page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/o2c/services/over/time/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/procure/to/pay/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/provision/lifecycle/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/record/to/report/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/resource/booking/cycle/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/subscription/billing/cycle/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/chains/workflow/approval/cycle/page.tsx",
+        "section": ""
+      },
+      {
         "path": "src/iso/14289/profile/index.ts",
         "section": ""
-      },
-      {
-        "path": "src/spec/generator/marketing.ts",
-        "section": "§1.4.3"
-      },
-      {
-        "path": "src/website/SKILL.md",
-        "section": "§1.4.3`"
-      },
-      {
-        "path": "src/website/index.ts",
-        "section": "§1.4.3"
-      },
-      {
-        "path": "src/website/marketing/index.ts",
-        "section": "§4"
-      },
-      {
-        "path": "src/website/shadcn/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/widget/section/index.tsx",
-        "section": "§1.3.1"
       }
     ]
   }
