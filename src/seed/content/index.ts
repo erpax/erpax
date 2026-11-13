@@ -341,7 +341,9 @@ const existingBySlug = async (payload: Local, collection: 'pages' | 'posts', { r
 }
 
 /** The seed never triggers a site revalidation: there is no request to revalidate for. */
-const QUIET = { disableRevalidate: true }
+// A FRESH object per call: hook context is per request, and a hook may write to it. One shared
+// object carried a flag set while saving the first document into every later save.
+const quiet = (): { disableRevalidate: true } => ({ disableRevalidate: true })
 
 /**
  * Load rows as nested pages: one content block holding the document, parents first so every
@@ -375,11 +377,11 @@ export async function loadPages(payload: Local, rows: readonly PageRow[], opts: 
       ...(tenant === undefined ? {} : { tenant }),
     }
     if (id === undefined) {
-      const doc = await payload.create({ collection: 'pages', data: { ...data, publishedAt: new Date().toISOString() }, depth: 0, req, context: QUIET })
+      const doc = await payload.create({ collection: 'pages', data: { ...data, publishedAt: new Date().toISOString() }, depth: 0, req, context: quiet() })
       idOf.set(row.slug, doc.id)
       created++
     } else {
-      await payload.update({ collection: 'pages', id, data, depth: 0, req, context: QUIET })
+      await payload.update({ collection: 'pages', id, data, depth: 0, req, context: quiet() })
       updated++
     }
   }
@@ -401,7 +403,7 @@ export async function loadPosts(
   const categories = await payload.find({ collection: 'categories', where: { slug: { equals: slugOf(category.toLowerCase()) } }, depth: 0, limit: 1, req })
   const categoryId =
     categories.docs[0]?.id ??
-    (await payload.create({ collection: 'categories', data: { title: category, slug: slugOf(category.toLowerCase()), ...scope }, depth: 0, req, context: QUIET })).id
+    (await payload.create({ collection: 'categories', data: { title: category, slug: slugOf(category.toLowerCase()), ...scope }, depth: 0, req, context: quiet() })).id
   const pages = await existingBySlug(payload, 'pages', opts)
   const { idOf, seedOf } = await existingBySlug(payload, 'posts', opts)
 
@@ -435,11 +437,11 @@ export async function loadPosts(
       ...scope,
     }
     if (id === undefined) {
-      const doc = await payload.create({ collection: 'posts', data: { ...data, publishedAt: new Date().toISOString() }, depth: 0, req, context: QUIET })
+      const doc = await payload.create({ collection: 'posts', data: { ...data, publishedAt: new Date().toISOString() }, depth: 0, req, context: quiet() })
       idOf.set(row.slug, doc.id)
       created++
     } else {
-      await payload.update({ collection: 'posts', id, data, depth: 0, req, context: QUIET })
+      await payload.update({ collection: 'posts', id, data, depth: 0, req, context: quiet() })
       updated++
     }
     touched.push(row)
@@ -448,7 +450,7 @@ export async function loadPosts(
     const related = row.related.map((s) => idOf.get(s)).filter((x): x is string => x !== undefined)
     for (const s of row.related) if (!idOf.has(s)) unresolved.add(s)
     if (related.length) {
-      await payload.update({ collection: 'posts', id: idOf.get(row.slug)!, data: { relatedPosts: related }, depth: 0, req, context: QUIET })
+      await payload.update({ collection: 'posts', id: idOf.get(row.slug)!, data: { relatedPosts: related }, depth: 0, req, context: quiet() })
     }
   }
   return { created, updated, unchanged, unresolved: [...unresolved].sort() }
@@ -486,7 +488,7 @@ export async function loadRedirects(payload: Local, rows: readonly RedirectRow[]
     }
     await payload.create({ collection: 'redirects', data: { from: row.from, to: { type: 'reference', reference: { relationTo: 'pages', value: target } } }, depth: 0, req })
     const retired = pages.idOf.get(row.from.replace(/^\//, ''))
-    if (retired !== undefined) await payload.update({ collection: 'pages', id: retired, data: { _status: 'draft' }, depth: 0, req, context: QUIET })
+    if (retired !== undefined) await payload.update({ collection: 'pages', id: retired, data: { _status: 'draft' }, depth: 0, req, context: quiet() })
     created++
   }
   return { created, updated: 0, unchanged, unresolved: [...new Set(unresolved)].sort() }

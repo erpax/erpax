@@ -25,7 +25,11 @@
 import { writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
-import { pageRows, slugOf, type PageRow } from '@/seed/content'
+import { loadPages, loadRedirects, pageRows, slugOf, type LoadOptions, type LoadResult, type PageRow } from '@/seed/content'
+import type { Payload } from 'payload'
+import { checkLead, subjectOf, conditionOf } from '@/think/document/check'
+
+export { checkLead, checkLeadPage, conditionOf, leadSchema, subjectOf } from '@/think/document/check'
 import { thoughtAddress } from '@/think'
 
 /** One lead as the store holds it. A resolved lead may name the document that resolved it. */
@@ -41,14 +45,6 @@ export interface RedirectRow {
   /** slug of the page to redirect to */
   readonly page: string
 }
-
-const CONDITION = /\s+—\s+develop when\s+(.+)$/
-
-/** What the lead is, without the condition it waits on. */
-export const subjectOf = (intent: string): string => intent.replace(CONDITION, '').trim()
-
-/** What the lead waits for, or nothing when it states no condition. */
-export const conditionOf = (intent: string): string | undefined => CONDITION.exec(intent)?.[1]?.trim()
 
 /** `leads/<first words>-<address>`: readable, and unique because the address is of the whole text. */
 export function leadPath(intent: string): string {
@@ -120,6 +116,56 @@ export function leadRedirects(leads: readonly Lead[]): RedirectRow[] {
     const page = l.state === 'resolved' ? resolvedBy(l.outcome) : undefined
     return page ? [{ from: `/${slugOf(leadPath(l.intent))}`, page }] : []
   })
+}
+
+// ── a lead's life through the Payload API ───────────────────────────────────────────────────────
+// The three steps below take the slice of the API the loaders use, so the same call works on the
+// Local API inside the app and on the REST SDK from a client or a worker ([[seed]]/content/load's
+// `overSdk`). Whoever calls is whoever Payload's access rules judge: nothing here overrides them.
+
+type Api = Pick<Payload, 'find' | 'create' | 'update' | 'config'>
+
+/** Record prompts as open leads: each becomes a page under `leads`. A lead already there is left alone. */
+export async function recordLeads(
+  api: Api,
+  prompts: readonly unknown[],
+  opts: LoadOptions = {},
+): Promise<LoadResult & { readonly refused: readonly { readonly prompt: string; readonly reason: string }[] }> {
+  const checked = prompts.map(checkLead)
+  const refused = checked.flatMap((c) => (c.ok ? [] : [{ prompt: c.prompt, reason: c.reason }]))
+  const accepted = checked.flatMap((c) => (c.ok ? [c.lead] : []))
+  if (accepted.length === 0) return { created: 0, updated: 0, unchanged: 0, unresolved: [], refused }
+  const rows = leadRows(accepted.map((intent): Lead => ({ intent, state: 'open' })))
+  // the index page restates a count; it is written once and then left to whoever maintains it
+  const found = await api.find({ collection: 'pages', where: { slug: { equals: 'leads' } }, depth: 0, limit: 1, draft: true, req: opts.req, select: { slug: true } })
+  return { ...(await loadPages(api, found.docs.length > 0 ? rows.filter((r) => r.slug !== 'leads') : rows, opts)), refused }
+}
+
+/** One open lead as the search collection lists it. */
+export interface OpenLead {
+  readonly slug: string
+  readonly title: string
+  readonly description: string
+}
+
+/** The open leads, oldest first, read from the search collection: title, slug and description only. */
+export async function openLeads(api: Pick<Payload, 'find'>, limit = 50): Promise<OpenLead[]> {
+  const found = await api.find({
+    collection: 'search',
+    where: { slug: { like: 'leads-' } },
+    select: { title: true, slug: true, meta: { description: true } },
+    sort: 'createdAt',
+    depth: 0,
+    limit,
+  } as never)
+  return (found.docs as { slug?: string | null; title?: string | null; meta?: { description?: string | null } }[])
+    .filter((d): d is { slug: string; title?: string | null; meta?: { description?: string | null } } => typeof d.slug === 'string')
+    .map((d) => ({ slug: d.slug, title: d.title ?? d.slug, description: d.meta?.description ?? '' }))
+}
+
+/** Close a lead: its address redirects to the page that resolved it, and its own page is unpublished. */
+export async function closeLead(api: Api, slug: string, page: string, opts: LoadOptions = {}): Promise<LoadResult> {
+  return loadRedirects(api, [{ from: `/${slug}`, page: slugOf(page) }], opts)
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

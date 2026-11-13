@@ -715,10 +715,10 @@ src/cloudflare/surface/index.ts:33: * @standard ISO/IEC 25010:2023 §5.3 — com
 src/cmspage/access/superAdminOrTenantAdmin.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control
 src/cmspage/hooks/beforeChange.ts:8: * @standard ISO-8601-1:2019 date-time published-at
 src/cmspage/hooks/revalidatePage.ts:10: * @standard W3C HTML5 Living Standard
-src/cmspage/index.ts:28: * @standard schema.org WebPage
-src/cmspage/index.ts:29: * @standard W3C HTML5 Living Standard
-src/cmspage/index.ts:30: * @standard BCP-47 language-tag i18n-routing
-src/cmspage/index.ts:31: * @standard ECMA-402 internationalization-api
+src/cmspage/index.ts:29: * @standard schema.org WebPage
+src/cmspage/index.ts:30: * @standard W3C HTML5 Living Standard
+src/cmspage/index.ts:31: * @standard BCP-47 language-tag i18n-routing
+src/cmspage/index.ts:32: * @standard ECMA-402 internationalization-api
 src/coherence/index.ts:19: * @standard DSP magnitude-spectrum (DFT) + the 0.7..4 Hz human-pulse band
 src/collection/archive/index.tsx:4: * @standard schema.org ItemList
 src/collection/archive/index.tsx:5: * @standard schema.org CollectionPage
@@ -3437,7 +3437,7 @@ src/categories/index.ts:14: * @rfc 3986 uri slug-to-url
 src/cmspage/hooks/beforeChange.ts:10: * @rfc 3986 uri remote-media-source
 src/cmspage/hooks/revalidatePage.ts:8: * @rfc 9110 §13 caching
 src/cmspage/hooks/revalidatePage.ts:9: * @rfc 9111 http-caching
-src/cmspage/index.ts:27: * @rfc 3986 uri slug-to-url
+src/cmspage/index.ts:28: * @rfc 3986 uri slug-to-url
 src/country/client/berlin-group-psd2.ts:16: * @rfc 6749 oauth-2.0
 src/country/client/berlin-group-psd2.ts:17: * @rfc 7519 jwt
 src/default/lexical/index.ts:6: * @rfc 3986 uniform-resource-identifier link-fields
@@ -3771,7 +3771,7 @@ src/card/index.tsx:9: * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
 src/carriers/index.ts:16: * @compliance SOX §404 internal-controls carrier-master TOM-LOG-01
 src/chain/event/emitter/index.ts:15: * @compliance SOX §404 internal-controls process-evidence
 src/cmspage/access/superAdminOrTenantAdmin.ts:9: * @compliance SOC-2 CC6.1 logical-access-controls
-src/cmspage/index.ts:32: * @compliance WCAG-2.1 level-AA accessibility
+src/cmspage/index.ts:33: * @compliance WCAG-2.1 level-AA accessibility
 src/collection/archive/index.tsx:7: * @compliance WCAG-2.1 §2.4.1 bypass-blocks
 src/commitments/index.ts:30: * @compliance GDPR Art.6(1)(b) lawful-basis-contract-processing
 src/compliance/frameworks/compliance/requirements/compliance/gaps/index.ts:6: * @compliance SOX §404 deficiency

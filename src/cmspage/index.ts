@@ -12,6 +12,7 @@ import { pagesBeforeChange } from '@/cmspage/hooks'
 import { revalidateDelete, revalidatePage } from '@/cmspage/hooks'
 import { localeRecord } from '@/i18n'
 import { fillSeo, publishedStates } from '@/seed/content'
+import { checkLeadPage } from '@/think/document/check'
 
 import {
   MetaDescriptionField,
@@ -188,7 +189,7 @@ export const Pages: CollectionConfig = {
   ],
   hooks: {
     afterChange: [revalidatePage],
-    beforeValidate: [fillSeo],
+    beforeValidate: [fillSeo, checkLeadPage],
     beforeChange: pagesBeforeChange,
     afterDelete: [revalidateDelete],
   },
