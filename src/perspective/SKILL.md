@@ -38,7 +38,7 @@ version: 2
 
 One content ⇒ one id ([[identity]]), but it READS differently from each party's
 vantage. The view is the inverse map of a relation/transfer, computed not stored
-([[duality]] · [[merge]]): the payer sees outflow ([[give]]), the payee inflow
+([[duality]] · [[merge]]): the payer sees outflow (give), the payee inflow
 (take); a `supplier` edge ([[connections]]) reads `customer` from the other
 end; a neutral observer (the auditor) sees BOTH sides — the transparency POV the
 [[anti/corruption]] invariants stand on. The two party-views always net to zero
@@ -46,9 +46,9 @@ end; a neutral observer (the auditor) sees BOTH sides — the transparency POV t
 (round/bind — the surface where one node is presented infinitely).
 
 Matter-twin: `src/services/perspective/index.ts` (viewEdgeFrom · viewTransferFrom
-· isConserved). Composes [[flow]], [[accounting]] (debit↔credit duals), [[field]].
+· isConserved). Composes flow, [[accounting]] (debit↔credit duals), [[field]].
 
-**Law — [[law]]: one content ⇒ one [[identity]], but it READS differently per party (payer's [[give]] is payee's take, seller's AR is buyer's AP) — the view is the inverse map computed not stored, and the two party-views always net to zero ([[balance]]).**
+**Law — [[law]]: one content ⇒ one [[identity]], but it READS differently per party (payer's give is payee's take, seller's AR is buyer's AP) — the view is the inverse map computed not stored, and the two party-views always net to zero ([[balance]]).**
 
 ## Standards
 

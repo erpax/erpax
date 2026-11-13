@@ -39,7 +39,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from biologicalRole · isInvolvedInBiologicalProcess ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[role]] · [[involved]] · [[process]]
+Entangled with — [[role]] · involved · process
 
 Attested in schema.org — biologicalRole · isInvolvedInBiologicalProcess
 

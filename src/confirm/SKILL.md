@@ -64,7 +64,7 @@ Attested in schema.org — ConfirmAction
 **Law — [[law]]: confirm is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words
-@see [[seal]] · [[integrity]] · [[purity]] · [[quantum/uuid]] · [[payload]] · [[uuid]]
+@see [[seal]] · [[integrity]] · purity · [[quantum/uuid]] · [[payload]] · [[uuid]]
 
 ## Standards
 

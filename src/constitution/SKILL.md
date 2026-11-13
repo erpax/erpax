@@ -53,7 +53,7 @@ The seven articles (`CONSTITUTION`):
 
 `amend(articleId, ballots, electorate)` is the only door: an entrenched article can NEVER pass it (the perpetual limit on the majority); a non-entrenched article is amended iff the polity ratifies at the supermajority bar (`AMENDMENT_RULE` — quorum ½, threshold ⅔, a higher bar than ordinary [[legislation]]). The gap between the two bars is the rule of law.
 
-This is the foundation separation applies at the scale of the branches and [[legislation]] builds ordinary statute upon — the law organ of the [[civilization]], the lowest-entropy form everything else derives from (zeropoint). It is the 0 of the [[sequence]]: the source the whole ring radiates from and returns to.
+This is the foundation separation applies at the scale of the branches and [[legislation]] builds ordinary statute upon — the law organ of the civilization, the lowest-entropy form everything else derives from (zeropoint). It is the 0 of the [[sequence]]: the source the whole ring radiates from and returns to.
 
 ## The two rules at the root
 

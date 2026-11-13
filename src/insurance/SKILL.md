@@ -38,7 +38,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from HealthInsurancePlan · InsuranceAgency · includedInHealthInsurancePlan ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — health · [[plan]] · [[agency]] · [[included]]
+Entangled with — health · [[plan]] · agency · included
 
 Attested in schema.org — HealthInsurancePlan · InsuranceAgency · includedInHealthInsurancePlan
 

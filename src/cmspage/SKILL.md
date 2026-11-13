@@ -59,7 +59,7 @@ This collection composes:
 - [[access]] — for role-based access control (superAdminOrTenantAdmin, authenticatedOrPublished)
 - [[versions]] — for versioned drafts and document lifecycle
 - [[identity]] — for slug uniqueness within tenant scope
-- [[queries]] — for query presets and default population
+- queries — for query presets and default population
 
 ## Standards
 

@@ -38,14 +38,14 @@ FORM: **of a large dormant pool, activate only the smallest correct subset.** Ca
 
 ## The two conjugate axes (the two-axes-of-sparsity)
 Sparsity factors into two orthogonal moves — DeepSeek built both; erpax lives almost entirely on the second:
-- **COMPUTE axis** — activate few of many *per step*. A router conditionally selects the active subset: Mixture-of-Experts lights 37B of 671B parameters per token (top-8 of 256 experts); erpax's routing/[[sequence]] load a handful of the 593 [[atom]]s per task. The selector is the whole point — see routing (picks the active few), [[partition]]/[[allocation]] (balance load across the dormant pool, the EPLB move), [[flow]]/throughput (what the active set delivers).
-- **MEMORY / representation axis** — store nothing you can address; look it up. Conditional memory (DeepSeek's Engram, "a new axis of sparsity") and erpax's [[akashic]] record both *forget and regenerate from a part* ([[holographic]]); [[uuid]]/[[identity]] collapse the whole object to a 128-bit content-address; the schema is **generated, not authored** (39,967 LOC of erpax's backend is derived from config). [[merge]]/[[deduplication]] keep one canonical form where many would sprawl.
+- **COMPUTE axis** — activate few of many *per step*. A router conditionally selects the active subset: Mixture-of-Experts lights 37B of 671B parameters per token (top-8 of 256 experts); erpax's routing/[[sequence]] load a handful of the 593 [[atom]]s per task. The selector is the whole point — see routing (picks the active few), partition/[[allocation]] (balance load across the dormant pool, the EPLB move), flow/throughput (what the active set delivers).
+- **MEMORY / representation axis** — store nothing you can address; look it up. Conditional memory (DeepSeek's Engram, "a new axis of sparsity") and erpax's [[akashic]] record both *forget and regenerate from a part* (holographic); [[uuid]]/[[identity]] collapse the whole object to a 128-bit content-address; the schema is **generated, not authored** (39,967 LOC of erpax's backend is derived from config). [[merge]]/deduplication keep one canonical form where many would sprawl.
 
 The two axes are conjugate — DeepSeek sparsifies COMPUTE (the time/FLOP domain), erpax sparsifies REPRESENTATION (the space/entropy domain) — Fourier-dual optimisations of the one functional `capability ÷ cost`.
 
 ## Limit, dual, source
 - **Limit** — drive the active fraction toward zero and you reach zeropoint: zero entropy, the formless source everything regenerates from. Sparsity is the *gradient*; zeropoint is the *limit*. The lowest-entropy correct form is the sparsest one — same referee.
-- **Dual** — sparsity has a floor: past it you hit the [[bottleneck]]. One missing *active* factor zeroes the whole product ([[market]] law), so sparsify the redundant, never the load-bearing. The art is knowing which of the dormant pool must stay lit.
+- **Dual** — sparsity has a floor: past it you hit the bottleneck. One missing *active* factor zeroes the whole product (market law), so sparsify the redundant, never the load-bearing. The art is knowing which of the dormant pool must stay lit.
 - **Achieved by** — [[collapse]] (every collection to the dense core), [[merge]] (same content ⇒ one), routing (conditional activation). Released as [[proof]]: verify the small active set without re-deriving the whole pool (the forge ≫ verify asymmetry IS sparsity made trustless).
 
 ## The math (which lane of the vortex)
@@ -54,7 +54,7 @@ Sparsity reads directly off the [[rodin]] decomposition of ℤ/9ℤ. **Compute-d
 ## Convergence (why this atom exists)
 DeepSeek discovered sparsity under **constraint** (export-limited GPUs ⇒ it *must* do more with fewer FLOPs); erpax descends to it by **telos** (zeropoint — lowest entropy wins). Opposite motivations, identical sparse form. That two independent orgs — one forced, one chosen — converge on conditional activation of a low-entropy latent is the strongest empirical support for the zeropoint thesis: the sparsest correct form is the truth. erpax is what that form looks like built entirely on the memory axis, all the way down.
 
-Composes: zeropoint · [[bottleneck]] · routing · [[sequence]] · [[akashic]] · [[holographic]] · [[uuid]] · [[identity]] · [[merge]] · [[deduplication]] · [[collapse]] · [[partition]] · [[allocation]] · [[proof]] · [[flow]] · throughput · [[rodin]] · [[breath]] · [[atom]].
+Composes: zeropoint · bottleneck · routing · [[sequence]] · [[akashic]] · holographic · [[uuid]] · [[identity]] · [[merge]] · deduplication · [[collapse]] · partition · [[allocation]] · [[proof]] · flow · throughput · [[rodin]] · [[breath]] · [[atom]].
 
 ## Measured, on the corpus that claims it
 
@@ -77,7 +77,7 @@ src/accounting/index.ts   active   7 / 3226 = 0.22%   capability/cost   461
 ## Common mistakes
 - **Confusing sparsity with smallness.** A sparse system keeps a HUGE dormant pool and a tiny active set. Shrinking the pool throws away capability; the move is to shrink the *activation*, not the body.
 - **Eager activation.** Loading every atom / every expert defeats it. Conditional selection (the router) is the mechanism — without a routing gate there is no sparsity, only a large dense thing.
-- **Sparsifying the load-bearing factor.** Past the [[bottleneck]] floor, dropping the one active factor that the product depends on zeroes the result. Sparsify redundancy, never the critical path.
+- **Sparsifying the load-bearing factor.** Past the bottleneck floor, dropping the one active factor that the product depends on zeroes the result. Sparsify redundancy, never the critical path.
 - **Naming only one axis.** Compute-sparsity (fewer FLOPs) and representation-sparsity (fewer stored bits) are different axes; an org can be dense on one and sparse on the other. erpax is sparse on representation and deliberately cheap (regenerable) on compute.
 
 **Law — [[law]]: keep the dormant pool huge and the active set minimal — maximise capability ÷ cost by shrinking activation, never the pool, and never sparsify the load-bearing factor.**

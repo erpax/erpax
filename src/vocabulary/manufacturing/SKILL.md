@@ -44,8 +44,8 @@ Generalizes the etrima (garment) production engine into an industry-agnostic, se
 The same engine runs the agent [[society]]: an agent is a **worker**, and its work transforms inputs into outputs exactly as etrima's workers turn **yarn into sweaters** — one aspect of the infinity. Each agent move is a *work-phase*, and its **token spend IS the labor cost**: `cost = anchor × tokens` is etrima's `cost_per_minute × minutes` ([[allocation]]; the token-[[accounting]] ledger), `price_per_minute − cost_per_minute` is the margin, `minutes_produced / minutes` is the efficiency ([[train]] · [[decompression]]), and `confirmed_at` is the [[horo|gate-first]] release. So **every token spent between agents is a work-phase posting** — the factory's labor ledger, the app ledger complete ([[balance]]).
 
 Three unifications make it one model:
-- **Products and services merge into one typeless catalog** — a service is an item whose transformation yields no physical good; product = service = item ([[merge]]), and every variation is a variant ([[all]]: etrima's 1.7M `work_variants` accounted for).
-- **All is packed, even the virtual** — a `pack` carries products + variants + items toward an order ([[transaction]]); a delivered service is a pack with no weight; a model is *a pack of logic*. The pack is the universal fulfilment unit ([[whole]]/[[part]]).
+- **Products and services merge into one typeless catalog** — a service is an item whose transformation yields no physical good; product = service = item ([[merge]]), and every variation is a variant (all: etrima's 1.7M `work_variants` accounted for).
+- **All is packed, even the virtual** — a `pack` carries products + variants + items toward an order ([[transaction]]); a delivered service is a pack with no weight; a model is *a pack of logic*. The pack is the universal fulfilment unit ([[whole]]/part).
 - **The transformation is the [[torus]]** — yarn (the raw zeropoint) → work (the agents' bounded labor) → sweater (the finished [[identity]]) → packed → billed → composted into the next make; cost accumulates up the tree (run → operation → order), conserved ([[balance]]).
 
 Grounded in `etrima_production` — the 20-year factory (167,563 items · 11,759 lots · 291,011 work-phases · 1,728,306 work-variants): the model is empirical, not invented.
@@ -72,16 +72,16 @@ A few atomic dimensions generate an unbounded variant space — the same generat
 **Don't duplicate the realized layer — diff the config first (hold the law, not the list).** The laws: variant axes ARE `@payloadcms/plugin-ecommerce` `variantTypes`/`variantOptions` → generated `variants` — never build a custom `Products.dimensions` field; BOM `components[]` live on the realized BOM collection (etrima `unit_consumption` ≈ per-unit `quantity`; sub-assembly = a component whose item has its own BOM); the production-side variant grid is `operation-runs.variants[].attributes` (open json), NOT columns on products. *Which* collections exist and their exact fields are matter — they live in the config / `payload-types.ts` (the akashic record), regenerable on demand; don't catalog them here.
 
 ## Universal levers (why it fits every industry)
-- **Unit of Measure everywhere** ([[measure]]) → process/continuous, not just piece-count.
+- **Unit of Measure everywhere** (measure) → process/continuous, not just piece-count.
 - **Composable dimensions** → any variation scheme.
 - **BOM + Routing** = the two primitives every industry shares ("consume materials through process steps at capacity").
 - **Polymorphic outward refs**; accounting/audit consume wage/efficiency/events via `relationTo:[...]`.
 
 ## Strategies mined from etrima models (port the useful)
 The etrima Rails models (`lot`, `lot_work_phase`, `consumption`, `work_variant`) encode reusable patterns — see [[port]]:
-- **Stage-quantity counters + DERIVED status** — track `qty` and monotonic `qty{Ordered,Produced,Packed,Shipped,Delivered}`; don't store status, derive it by comparing (`qty ≤ qtyDelivered` → delivered). "remaining = qty − max(downstream)". Every workable/pending/producing list is a `where` filter, not a state machine ([[queries]]).
+- **Stage-quantity counters + DERIVED status** — track `qty` and monotonic `qty{Ordered,Produced,Packed,Shipped,Delivered}`; don't store status, derive it by comparing (`qty ≤ qtyDelivered` → delivered). "remaining = qty − max(downstream)". Every workable/pending/producing list is a `where` filter, not a state machine (queries).
 - **Timestamp-driven lifecycle** — nullable `startedAt`/`completedAt`/`confirmedAt` mark transitions; startable/completable derive from them.
-- **Labor-minute economics** — `runTimePerUnit(s)` → `minutesRequired = qty·s/60`; three per-minute [[rate]]s (`costPerMinute`, `pricePerMinute`, `payPerHour`); `wage = s/3600·payPerHour / machinesPerWorker` (UoM- + parallelism-aware). `unitCost = max(wage,cost,price) + materialsCost/qty`.
+- **Labor-minute economics** — `runTimePerUnit(s)` → `minutesRequired = qty·s/60`; three per-minute rates (`costPerMinute`, `pricePerMinute`, `payPerHour`); `wage = s/3600·payPerHour / machinesPerWorker` (UoM- + parallelism-aware). `unitCost = max(wage,cost,price) + materialsCost/qty`.
 - **BOM `unitConsumption`** (per-unit material qty) with UoM-aware rounding — piece-like (`pc/box/nr`) → ceil, continuous → round(3); bidirectional required↔consumption. Vendor is an accounting `Account` ([[accounting]]).
 - **Denormalized rollups up the tree** (run → operation → order), recomputed in a `beforeChange`/`afterChange` [[hooks]] — but via Payload hooks/[[jobs]], NOT `save(validate:false)`. Cache derived collections (etrima's 5-min TTL) in the KV `AI_CACHE` binding ([[bindings]]).
 - **Generative creation** — operation × orderable variants → operation-runs.

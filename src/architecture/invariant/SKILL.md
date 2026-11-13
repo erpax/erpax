@@ -60,7 +60,7 @@ The architecture invariants are the **executable form of the laws** — the matt
 
 What it enforces (the [[sequence]] made strict):
 
-- **single-word atoms, no grouping prefixes** — location is the derived word-path, not a `collections/`/`services/` container ([[dissolve]]).
+- **single-word atoms, no grouping prefixes** — location is the derived word-path, not a `collections/`/`services/` container (dissolve).
 - **every file is an atom or junk** — matter (`index.*`) ⊕ form (`SKILL.md`); what fits neither [[payload]] nor [[vitepress]] is purged.
 - **locality + the ≥2-cross [[balance]]** — a folder communicates only through its [[coordinate]] cross (parent · prev · next); a non-neighbour link is a violation, and a folder with fewer than two crosses is unbalanced.
 - **the naming matrix** — strict file names inside each folder (`index.ts` matter · `SKILL.md` form · reference fields · hook files); an off-matrix name is junk.
@@ -69,7 +69,7 @@ Each violation is content-addressed: its **message names the failing [[coordinat
 
 Operational memory IS these invariants enforced on the live tree ([[memory/architecture]]) — the executable checks are what the lattice remembers, not a side store.
 
-Composes [[gate]] · [[standard]] · [[coordinate]] · [[balance]] · [[dissolve]] · [[merge]] · [[identity]] · [[sequence]] · [[memory/architecture]] · [[diamond]].
+Composes [[gate]] · [[standard]] · [[coordinate]] · [[balance]] · dissolve · [[merge]] · [[identity]] · [[sequence]] · [[memory/architecture]] · [[diamond]].
 
 ## Standards
 

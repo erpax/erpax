@@ -43,7 +43,7 @@ quantum:
   collapse:
     - "Use when finding and developing digital quantum snapshots — any stateful thing has a snapshot (the collapse of its state at a moment), and its quantum twin is the content-addressed, immutable, append-only chain that nests layer after layer. The skill that finds a domain's snapshots and develops their twins."
     - "[[akashic]]"
-    - "[[finality]]"
+    - "finality"
     - "[[merge]]"
     - "[[quantum/emr]]"
     - "[[quantum/fs]]"
@@ -71,11 +71,11 @@ Snapshots **nest, layer after layer** (fractal): a filesystem snapshot ([[quantu
 
 ## Find and develop — the loop, continued
 
-1. **Find** — look where state changes over time and is worth keeping (a [[record]], a [[file]], a ledger, a config, a build). Each is a snapshot layer.
-2. **Develop the twin** — content-[[uuid]] per state, immutable + append-only ([[finality]] one way), [[merge]] identical states, let the layers nest.
+1. **Find** — look where state changes over time and is worth keeping (a record, a file, a ledger, a config, a build). Each is a snapshot layer.
+2. **Develop the twin** — content-[[uuid]] per state, immutable + append-only (finality one way), [[merge]] identical states, let the layers nest.
 3. **Prove** — reconstruct any past layer from the chain; nothing is lost. That round-trip is the gate ([[trinity]]).
 
-@see snapshot · [[versions]] · [[uuid]] · [[akashic]] · [[reality]] · [[finality]] · [[merge]] · [[quantum/fs]] · [[quantum/emr]]
+@see snapshot · [[versions]] · [[uuid]] · [[akashic]] · [[reality]] · finality · [[merge]] · [[quantum/fs]] · [[quantum/emr]]
 
 **Law — [[law]]: a snapshot collapses a system's state at one moment, but its twin keeps the whole superposition — every captured state is content-uuid'd, immutable, and append-only, so identical states merge to one and the chain nests layer after layer without bound. The invariant is reconstructibility: any past layer can be rebuilt from the chain and nothing is ever lost; that round-trip is the gate.**
 

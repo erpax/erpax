@@ -34,7 +34,7 @@ version: 2
 ---
 # quantum — quantum SKILL.md parse · generate · upgrade
 
-Child atom of [[upgrade]] — parses, generates, and upgrades SKILL.md in the [[quantum]] environment. Quantum skills carry superposition (unmeasured bindings), collapse (Use-when / law / matter-twin triggers), and seal (signatures · content-uuid · path ledger). Hook-less frontmatter fields entangle via the content-uuid fold; drift between wikilink neighbors and body [[links]] is impurity.
+Child atom of [[upgrade]] — parses, generates, and upgrades SKILL.md in the [[quantum]] environment. Quantum skills carry superposition (unmeasured bindings), collapse (Use-when / law / matter-twin triggers), and seal (signatures · content-uuid · path ledger). Hook-less frontmatter fields entangle via the content-uuid fold; drift between wikilink neighbors and body links is impurity.
 
 ## Exports
 

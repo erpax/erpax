@@ -49,7 +49,7 @@ Two pure checksum laws, no PII, no lookup — the number proves itself:
 Both are instances of the ISO-7064 check-character family — the same modulo skeleton the БУЛСТАТ register and the population register each clothe.
 
 ## Sequence position
-**0** — the begin/origin of the [[sequence]] (0·3·6·9·1·2·4·8·7·5). It is the [[begin|boundary]] every BG flow departs from: the validation gate at the axis, before any [[accounting]] post or [[collections|collection]] row. No identity, no entry; the 0 is where the [[horo]] of BG society joins.
+**0** — the begin/origin of the [[sequence]] (0·3·6·9·1·2·4·8·7·5). It is the boundary every BG flow departs from: the validation gate at the axis, before any [[accounting]] post or [[collections|collection]] row. No identity, no entry; the 0 is where the [[horo]] of BG society joins.
 
 ## Built (the matter that realises this skill)
 - `src/bg/identifier/index.ts` — `validateEgn` (returns `{valid, birthDate, sex, reason}`) and `validateEik` (`{valid, reason}`); the БУЛСТАТ two-stage `mod11Two` helper. 81 LOC, pure.
@@ -69,6 +69,6 @@ Applying this skill *is* how the standard is implemented (the answer-path princi
 - **БУЛСТАТ register law (Закон за регистър БУЛСТАТ) — ЕИК checksum** — the ЕИК two-stage modulo-11 check (9-digit base, optional 13-digit branch).
 - **ISO-7064 check-character-systems (the modulo family these implement)** — the family both Bulgarian checksums instantiate.
 
-Composes: [[identity]] (the number IS the id; decode-not-lookup) · [[begin]] (the 0 boundary / entry gate) · [[sequence]] (position 0) · [[standard]] (Наредба РД-02-20-9/2012 + БУЛСТАТ + ISO-7064 are real `@standard`s) · [[field]]/[[hooks]] (where validation binds) · [[access]] (the gate decides who may onboard) · [[horo]] (BG society joins the ring here) · [[duality]] (person ЕГН ↔ entity ЕИК).
+Composes: [[identity]] (the number IS the id; decode-not-lookup) · begin (the 0 boundary / entry gate) · [[sequence]] (position 0) · [[standard]] (Наредба РД-02-20-9/2012 + БУЛСТАТ + ISO-7064 are real `@standard`s) · [[field]]/[[hooks]] (where validation binds) · [[access]] (the gate decides who may onboard) · [[horo]] (BG society joins the ring here) · [[duality]] (person ЕГН ↔ entity ЕИК).
 
 **Law — [[law]]: a BG party has no row until its number checks out — the ЕГН/ЕИК IS the [[identity]] and must prove itself self-consistent by pure modulo-11 (decode-then-check, no lookup) at the onboarding boundary.**

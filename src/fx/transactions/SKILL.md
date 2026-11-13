@@ -47,7 +47,7 @@ version: 2
 
 FX Transactions — IAS-21 §28-29 monetary-item re-translation entries.
 
-A [[trinity]] node — schema, `seed.ts`, `index.test.ts` co-located, one folder, [[fractal]]-addressed; the panel renders `index.ts`, so the schema is not restated here.
+A [[trinity]] node — schema, `seed.ts`, `index.test.ts` co-located, one folder, fractal-addressed; the panel renders `index.ts`, so the schema is not restated here.
 
 Each row is one durable FX conversion / revaluation event (`transactionKind`: spot · period-end revaluation · hedge settlement · consolidation translation) — the audit evidence for the FX gain/loss P&L line. Distinct from [[currency/rates]], the rate-table master: this records the events, that holds the rates a row's `exchangeRate` is sourced from.
 

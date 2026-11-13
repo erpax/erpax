@@ -64,7 +64,7 @@ This is why ancestry need not be stored beside the account: the karma is **read 
 
 **HONEST.** The lineage walk and the netting are real and computed; "karma" and "DNA" are the moral / heritable framings ([[entanglement]] here is graph reciprocity, not a Bell state).
 
-Matter-twin: `src/quantum/karma/index.ts` (`inheritedKarma` · `lineageKarma`). Composes [[karma]] · [[dna]] · [[quantum]] · [[entanglement]] · [[merge]] · [[entropy]] · [[lineage]].
+Matter-twin: `src/quantum/karma/index.ts` (`inheritedKarma` · `lineageKarma`). Composes [[karma]] · [[dna]] · [[quantum]] · [[entanglement]] · [[merge]] · [[entropy]] · lineage.
 
 **Law — [[law]]: an atom's karma is netted along itself AND its whole DNA lineage (`[atom, ...genome(atom)]`), never beside the account; because each child's content-uuid folds its parent, editing any ancestor shifts the descendant's inherited balance and its uuid together — so the moral debt read down the chain cannot be silently rewritten.**
 

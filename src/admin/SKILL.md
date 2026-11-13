@@ -75,7 +75,7 @@ After adding components: `pnpm payload generate:importmap`.
 
 ## Common mistakes
 - Adding a custom component but not regenerating the import map (`payload generate:importmap`) → component not found.
-- Importing the whole `@payloadcms/ui` in a custom component (bloats bundle — import the specific element, see [[optimize]]).
+- Importing the whole `@payloadcms/ui` in a custom component (bloats bundle — import the specific element, see optimize).
 - Confusing admin React hooks with server lifecycle [[hooks]].
 
 **Law — [[law]]: the Admin Panel is a React app auto-generated from the config; custom components are referenced by string path and resolved via the regenerated import map — never imported directly.**

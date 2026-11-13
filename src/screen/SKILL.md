@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from screenCount ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[count]]
+Entangled with — count
 
 Attested in schema.org — screenCount
 

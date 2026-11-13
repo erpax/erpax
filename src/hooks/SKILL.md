@@ -56,7 +56,7 @@ Hooks run side effects/mutations at precise points in the document lifecycle. Fo
 
 ## Rules
 - `beforeChange`/field `beforeChange` MUST return `data`/`value` (return value is used).
-- Keep hooks lightweight — heavy work belongs in the [[jobs]] queue (see [[optimize]]).
+- Keep hooks lightweight — heavy work belongs in the [[jobs]] queue (see optimize).
 - Encryption/decryption pattern: encrypt in `beforeChange`, decrypt in `afterRead`.
 - `req.context` carries data between hooks within one request.
 

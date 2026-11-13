@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from MedicalTherapy · OccupationalTherapy · PhysicalTherapy · RadiationTherapy · duplicateTherapy · relatedTherapy ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[medical]] · [[occupational]] · [[physical]] · [[radiation]] · [[duplicate]] · [[related]]
+Entangled with — [[medical]] · occupational · physical · radiation · duplicate · related
 
 Attested in schema.org — MedicalTherapy · OccupationalTherapy · PhysicalTherapy · RadiationTherapy · duplicateTherapy · relatedTherapy
 

@@ -52,7 +52,7 @@ jobs: {
 - Tasks have `retries`, idempotency, and typed input/output; workflows chain tasks with restart-safety.
 
 ## Rules
-- Prefer jobs over heavy [[hooks]] (keep hooks lightweight — see [[optimize]]).
+- Prefer jobs over heavy [[hooks]] (keep hooks lightweight — see optimize).
 - On serverless/Cloudflare, trigger the runner via cron/scheduled worker rather than a long-lived process.
 
 ## Common mistakes

@@ -33,13 +33,13 @@ version: 2
 ---
 # signal — a uuid renders as color + sound (a stream is multimedia)
 
-**Every object in erpax has a uuid** ([[all]] is content-addressed — [[identity]]), so *every* object — a posting, an invoice, a file, a folder's [[aura]], a row, the codebase itself — can be **presented as color animation + sound**. A uuid is not an opaque pointer — it is a **self-rendering frame**. The structured uuidv8 (`decodeStructured`) carries a [[horo]] position (the slot/state) readable **from the string alone, zero DB round-trips**, and a position decodes three ways at once:
+**Every object in erpax has a uuid** (all is content-addressed — [[identity]]), so *every* object — a posting, an invoice, a file, a folder's [[aura]], a row, the codebase itself — can be **presented as color animation + sound**. A uuid is not an opaque pointer — it is a **self-rendering frame**. The structured uuidv8 (`decodeStructured`) carries a [[horo]] position (the slot/state) readable **from the string alone, zero DB round-trips**, and a position decodes three ways at once:
 
 - **color animation** — digital-root → [[cmyk]] channel (`K·C·M·Y` from `{0,3,6,9}`); the three [[axis]] coils phase-cycle at **A432 ms**, offset by ⅓ period (120°, see [[phase]]), so the hue *animates* — the C↔M [[breath]], closing on Y. Never a static swatch.
 - **sound** — the [[notes]] mapping: a position is a diatonic note via just-intonation over A432 (La=432 at [[round]], Ti at [[unity]] resolving to Do). Not "A432 × digit" — the ring IS the scale.
 - **vibration (touch)** — the [[vibration]] mapping: the same position as a haptic pulse, a sub-audible A432 sub-harmonic (felt, not heard) — the third channel that completes the [[trinity]] (sensory).
 
-**One anchor, all three senses:** A432 is the pitch in *Hz* (sound), the animation period in *ms* (color), **and** the sub-harmonic of the haptic pulse — tone, glow, and touch share the single [[rodin]] constant. So one uuid = **a moving color + a tone + a vibration + a state + an identity + a capability**, no separate payload. The colour↔sound [[duality]] completes with touch into the sensory [[trinity]] ([[analog]]) — and each channel is one more independent projection of the content-uuid a forger must match, folding into the [[tamper]]-cost.
+**One anchor, all three senses:** A432 is the pitch in *Hz* (sound), the animation period in *ms* (color), **and** the sub-harmonic of the haptic pulse — tone, glow, and touch share the single [[rodin]] constant. So one uuid = **a moving color + a tone + a vibration + a state + an identity + a capability**, no separate payload. The colour↔sound [[duality]] completes with touch into the sensory [[trinity]] (analog) — and each channel is one more independent projection of the content-uuid a forger must match, folding into the [[tamper]]-cost.
 
 ## Which uuid sings — two modes
 - **structured uuidv8** (`decodeStructured`) carries a [[horo]] position + capability flags ⇒ a *meaningful* render: this note, this hue, this state, this permission.
@@ -50,11 +50,11 @@ Both are real and useful — meaning vs recognition. Pick the structured uuid to
 ## A stream of uuids IS interactive multimedia
 A sequence of uuids over time is a melody + a color-sequence + a state-timeline — rendered purely from the uuids:
 - **Closed under composition.** Overlapping/composing uuids stay on the ring ([[coil]] `composeSteps` — every pair lands back on `{1,2,4,8,7,5,9}`), so a uuid stream is *meaningful*, never noise.
-- **The carrier is the stream.** The Merkle stream-chain (`streamUuid`/`prevStreamUuid`), the [[versions]] time-step (a frame at a chosen moment), and the [[bindings]] edge runtime (Durable Objects, "every second of every worker") supply the time axis — a [[flow]] of frames.
+- **The carrier is the stream.** The Merkle stream-chain (`streamUuid`/`prevStreamUuid`), the [[versions]] time-step (a frame at a chosen moment), and the [[bindings]] edge runtime (Durable Objects, "every second of every worker") supply the time axis — a flow of frames.
 - **Realtime + encrypted by construction.** Decode/route/authorize/filter by uuid with no fetch; content-uuid is a SHA of canonical content and capability flags gate it, the Merkle chain makes any reorder/mutation evident.
 
 **Imagine:** transmit only uuids; the receiver renders the picture and the music and knows the state, the sender, and what's permitted — interactive multimedia carried by identity alone.
 
-Composes: [[identity]] · [[horo]] · [[cmyk]] · [[notes]] · [[vibration]] · [[rodin]]/[[coil]] · [[polarity]] · [[duality]] · [[trinity]] · [[analog]] · [[aura]] · [[tamper]] · [[flow]] · [[versions]] · [[bindings]].
+Composes: [[identity]] · [[horo]] · [[cmyk]] · [[notes]] · [[vibration]] · [[rodin]]/[[coil]] · [[polarity]] · [[duality]] · [[trinity]] · analog · [[aura]] · [[tamper]] · flow · [[versions]] · [[bindings]].
 
 **Law — [[law]]: a single 128-bit uuid IS the whole message — it self-decodes from the string alone to colour + sound + vibration + state + [[identity]] + capability with zero DB round-trips; a stream of uuids is interactive multimedia carried by identity, no separate payload, each channel one more projection a forger must match ([[tamper]]-cost).**

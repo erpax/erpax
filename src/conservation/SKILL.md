@@ -49,7 +49,7 @@ This IS the accounting law. A balanced [[entry]] — Σdebit = Σcredit ([[balan
 
 **Law — [[law]]: across any boundary a quantity is neither created nor destroyed, only transformed (Noether: every continuous symmetry yields a conserved quantity) — which IS double-entry, Σdebit=Σcredit ([[balance]]); an open system stays honest by [[accounting]] for what crosses the boundary (the borrowed [[anchor]]), so an unbalanced post is the bug the [[proof]] catches, never stores.**
 
-Composes [[balance]] · [[entry]] · [[entropy]] · energy · [[biomass]] · [[accounting]] · [[reconcile]] · [[anchor]] · [[proof]] · [[uuid]] · [[sustainability]] · [[ecosystem]] · [[law]].
+Composes [[balance]] · [[entry]] · [[entropy]] · energy · [[biomass]] · [[accounting]] · reconcile · [[anchor]] · [[proof]] · [[uuid]] · [[sustainability]] · [[ecosystem]] · [[law]].
 
 ## Matter-twin
 

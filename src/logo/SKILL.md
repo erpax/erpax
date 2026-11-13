@@ -36,7 +36,7 @@ version: 2
 
 An associated logo.
 
-Entangled with — [[creative]] · [[thing]]
+Entangled with — creative · [[thing]]
 
 Attested in schema.org — logo
 

@@ -71,7 +71,7 @@ One run per (tenant, period × paySchedule): the close-job aggregates approved
 [[employees/time/entries]] + [[Employees]] compensation, computes per-line gross → deductions →
 employer accruals → net, then posts the IAS-19 / ASC-710 wages [[transaction]] (a
 [[journal/entries]] back-link) and emits the pain.001 [[bank/accounts/payment/runs]] sibling on the
-`paymentDate`. Posted runs [[close|period-lock]]; reversals are a separate run.
+`paymentDate`. Posted runs period-lock; reversals are a separate run.
 
 ## Standards
 
@@ -104,8 +104,8 @@ employer accruals → net, then posts the IAS-19 / ASC-710 wages [[transaction]]
 
 GDPR-classified personal data ⇒ access tighter than the accounting default
 (read: admin · payroll-officer · hr; write: admin · payroll-officer): the
-[[privilege]] / segregation-of-duties posture, with SOX §404 four-eyes (preparer ≠
+privilege / segregation-of-duties posture, with SOX §404 four-eyes (preparer ≠
 authoriser) enforced via the same `enforceSegregationOfDuties` hook as
 [[gl/accounts/period/end/adjustments]].
 
-Composes: [[accounting]] · [[transaction]] · [[entry]] · [[balance]] · [[party]] · [[give]] · [[horo]] · [[close]] · [[identity]] · [[proof]] · [[privilege]] · [[journal/entries]] · [[bank/accounts/payment/runs]] · [[Employees]] · [[employees/time/entries]] · [[cost/centers]].
+Composes: [[accounting]] · [[transaction]] · [[entry]] · [[balance]] · [[party]] · give · [[horo]] · close · [[identity]] · [[proof]] · privilege · [[journal/entries]] · [[bank/accounts/payment/runs]] · [[Employees]] · [[employees/time/entries]] · [[cost/centers]].

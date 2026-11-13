@@ -197,7 +197,7 @@ broken-in-dev admin, see Gotchas).
   `all`. Env: `BASE_URL`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`, `SHOT_DIR`, `HEADED=1`.
 - `smoke.ts` — Local API headless boot + read smoke. Adapt it to call any service/fn.
 
-Related: [[deploy]] (the prod sibling — `payload migrate`, no dev-push) · [[database]]
+Related: [[deploy]] (the prod sibling — `payload migrate`, no dev-push) · database
 (adapter, migrations, the dev-push behaviour) · [[bindings]] (D1/R2/Durable Objects — the
 `no such Durable Object class` warnings) · [[api]] (the Local API ops `smoke.ts` calls).
 

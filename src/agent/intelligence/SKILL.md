@@ -35,4 +35,4 @@ version: 2
 
 Wave-coordinated improve cycles — see `./index.ts`.
 
-Composes: [[agent]] · [[seal]] · [[vocabulary/efficiency]].
+Composes: [[agent]] · [[seal]] · efficiency.

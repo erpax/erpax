@@ -57,7 +57,7 @@ version: 2
 
 A country.
 
-Entangled with — [[address]] · [[applicable]] · [[assembly]] · [[last]] · [[processing]] · [[origin]] · return · [[policy]]
+Entangled with — [[address]] · applicable · assembly · last · processing · origin · return · [[policy]]
 
 Attested in schema.org — Country · addressCountry · applicableCountry · countryOfAssembly · countryOfLastProcessing · countryOfOrigin · returnPolicyCountry
 

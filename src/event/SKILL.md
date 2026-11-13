@@ -34,7 +34,7 @@ version: 2
 ---
 # event — the content-uuid-keyed domain event (the membrane payload)
 
-A domain **event** is the matter that crosses the [[hooks]] seam: a collection's `afterChange` hook detects a state transition and emits an envelope; subscribers (the GL-posting handler, audit, notifications) AND **other erpax instances** (federation peers) consume it. The event is how universes connect (see [[hooks]] "Hooks are where multiverses connect", [[flow]] event streams).
+A domain **event** is the matter that crosses the [[hooks]] seam: a collection's `afterChange` hook detects a state transition and emits an envelope; subscribers (the GL-posting handler, audit, notifications) AND **other erpax instances** (federation peers) consume it. The event is how universes connect (see [[hooks]] "Hooks are where multiverses connect", flow event streams).
 
 ## Envelope shape
 `{ eventId, eventType, tenantId, aggregateId, aggregateType, timestamp, userId?, payload }`.
@@ -54,4 +54,4 @@ A domain **event** is the matter that crosses the [[hooks]] seam: a collection's
 - Re-deriving identity off the integer/local id anywhere a federation peer will read it.
 - Doing the GL post inline in the hook instead of emitting and letting the subscriber post (see `chainEventEmitters` + the GL-posting subscriber).
 
-Composes: [[hooks]] (the emit seam) · [[identity]] (the content-uuid aggregate key) · [[merge]] (federation reconciliation/dedup) · [[flow]] (event streams) · [[accounting]] (GL-posting subscriber).
+Composes: [[hooks]] (the emit seam) · [[identity]] (the content-uuid aggregate key) · [[merge]] (federation reconciliation/dedup) · flow (event streams) · [[accounting]] (GL-posting subscriber).

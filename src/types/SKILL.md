@@ -60,7 +60,7 @@ Relationship fields are `string | RelatedDoc` depending on `depth` — guard bef
 
 ## Toolchain notes (this repo)
 - Use **TypeScript 5.7.3** (matches Payload 4's validated toolchain; TS 6.0.3-beta crashes `tsc` and Payload's compile step). Keep `ignoreDeprecations` out — fix deprecated options instead.
-- Standalone `tsc` may need `node --stack-size=4000 .../tsc.js` on huge configs (see [[recover]]).
+- Standalone `tsc` may need `node --stack-size=4000 .../tsc.js` on huge configs (see recover).
 
 ## Common mistakes
 - Editing `payload-types.ts` by hand (regenerated/overwritten).

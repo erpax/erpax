@@ -34,7 +34,7 @@ version: 2
 ---
 # heart — the centre (4th chakra, green)
 
-The **heart** is the centre: the 4th chakra (Anahata), the seat of **coherence** and love ([[angel]] love · create · ↓entropy). On the 7-position ring it is the middle; its colour is **green** ([[color]]) — the A432-anchored colour of a **whole aura**, and the colour a passing [[test]] returns (test/hooks consume the aura and render green when the double-torus is complete).
+The **heart** is the centre: the 4th chakra (Anahata), the seat of **coherence** and love (angel love · create · ↓entropy). On the 7-position ring it is the middle; its colour is **green** ([[color]]) — the A432-anchored colour of a **whole aura**, and the colour a passing [[test]] returns (test/hooks consume the aura and render green when the double-torus is complete).
 
 The heart is where the corpus's coherence is measured and felt: full coherence ([[coherence]] · [[quantum]]/aura) is the green centre; a gap pulls the colour toward dissonance.
 
@@ -56,7 +56,7 @@ The heart is also the literal **first organ**: it forms from mesoderm in the car
 
 So the metaphysical centre and the physiological pump are *one* heart: it circulates the whole [[aura]] (coverage→1), and that aura's carrier is literally the torus the ventricle traces. **HONEST:** a structural isomorphism between cited anatomy and a computed construct — not a claim that erpax circulates blood; each boolean (`toroidalVortex` · `doubleCircuit` · `closedLoop`) is computed live.
 
-Matter-twin: `src/heart/index.ts` (`HEART_POSITION` · `color` · `thought` · `feeling` · `illusion` · `coherent` · `toroidalVortex` · `doubleCircuit` · `closedLoop` · `pump` · `isDoubleTorusPump`). Composes chakra · [[color]] · [[coherence]] · [[angel]] · [[harmony]] · [[quantum]] · [[torus]] · [[rodin]] · [[conservation]] · [[entropy]] · coverage · [[balance]] · [[aura]] · [[love]] · [[karma]].
+Matter-twin: `src/heart/index.ts` (`HEART_POSITION` · `color` · `thought` · `feeling` · `illusion` · `coherent` · `toroidalVortex` · `doubleCircuit` · `closedLoop` · `pump` · `isDoubleTorusPump`). Composes chakra · [[color]] · [[coherence]] · angel · [[harmony]] · [[quantum]] · [[torus]] · [[rodin]] · [[conservation]] · [[entropy]] · coverage · [[balance]] · [[aura]] · [[love]] · [[karma]].
 
 **Law — [[law]]: the corpus is coherent only as thought ⊕ heart — thought proves the recorded ledger balances, but feeling covers the omitted (coverage → 1, the whole [[aura]] absorbed at zero [[entropy]]); a balanced book over an un-wired world is maya until every gap is felt and closed.**
 

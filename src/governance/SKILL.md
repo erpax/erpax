@@ -47,7 +47,7 @@ FORM: **a formal system cannot generate its own finality — so the judgment com
 - **public count** — the observer POV makes the tabulation transparent ([[proof]]).
 - **quorum + threshold** — turnout ≥ quorum AND approval ≥ threshold; the conservation rule of the decision ([[balance]]).
 
-The bar is a dial, not a constant: ordinary [[legislation]] passes at a simple majority, a [[constitution]] amendment at a supermajority — the rule of law is that difference. Governance is the engine the polity drives; what it ratifies, [[legislation]] records as law and the [[constitution]] bounds. It is the law organ's animate half across every [[civilization]].
+The bar is a dial, not a constant: ordinary [[legislation]] passes at a simple majority, a [[constitution]] amendment at a supermajority — the rule of law is that difference. Governance is the engine the polity drives; what it ratifies, [[legislation]] records as law and the [[constitution]] bounds. It is the law organ's animate half across every civilization.
 
 Sequence position: **6** (round — the deliberation that returns a binding result), on the ring 0·3·6·9·1·2·4·8·7·5 (see [[sequence]]).
 

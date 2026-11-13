@@ -37,7 +37,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from FinancialIncentive · FinancialProduct · FinancialService · financialAidEligible ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[incentive]] · [[product]] · service · [[aid]] · [[eligible]]
+Entangled with — incentive · [[product]] · service · aid · eligible
 
 Attested in schema.org — FinancialIncentive · FinancialProduct · FinancialService · financialAidEligible
 

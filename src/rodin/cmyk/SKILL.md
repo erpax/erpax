@@ -38,7 +38,7 @@ version: 2
 | digit | channel | role | erpax signal |
 |---|---|---|---|
 | `0` | **K** key/black | origin / substrate | the record itself ([[identity]], [[config]]) |
-| `3` | **C** cyan | forward [[polarity]] (×2) | outbound links / [[give]] |
+| `3` | **C** cyan | forward [[polarity]] (×2) | outbound links / give |
 | `6` | **M** magenta | reverse [[polarity]] (×5) | inbound links / take |
 | `9` | **Y** yellow | [[axis]] close (triad) | categorical / [[tags]] |
 

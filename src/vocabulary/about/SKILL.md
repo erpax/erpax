@@ -36,7 +36,7 @@ version: 2
 
 The subject matter of an object.
 
-Entangled with — [[page]] · [[knows]] · [[observation]]
+Entangled with — [[page]] · knows · observation
 
 Attested in schema.org — AboutPage · about · knowsAbout · observationAbout
 

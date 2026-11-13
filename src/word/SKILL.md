@@ -36,7 +36,7 @@ version: 2
 
 A **vocabulary [[diamond]]** at the prose layer: one lexical token (`hello`, `world`, …). Content-addressed as `uuid(jcs({ kind: 'word', value }))` — the [[word]] half of text's word ⊕ digit decomposition. Persisted through text/saveTextDiamonds into the computed in-memory index; distinct from schema.org vocabulary [[atom]] folders (those are corpus addresses, not prose tokens).
 
-Entangled with — text · [[digit]] · [[diamond]] · [[typography]] · [[atom]] · [[collapse]] · [[count]] · [[sti]] · [[merge]]
+Entangled with — text · [[digit]] · [[diamond]] · [[typography]] · [[atom]] · [[collapse]] · count · [[sti]] · [[merge]]
 
 Attested in schema.org — wordCount (corpus facet; prose tokens use the computed index)
 

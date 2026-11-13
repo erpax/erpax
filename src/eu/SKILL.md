@@ -47,7 +47,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from EUEnergyEfficiencyEnumeration ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — energy · [[efficiency]] · [[enumeration]]
+Entangled with — energy · efficiency · [[enumeration]]
 
 Attested in schema.org — EUEnergyEfficiencyEnumeration
 

@@ -59,6 +59,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOC-2 CC6.1 logical-access-controls
 - SOX §404 internal-controls
 
-Composes: [[access]] · [[classroom]] · [[identity]] · [[rodin]].
+Composes: [[access]] · classroom · [[identity]] · [[rodin]].
 
 **Law — [[law]]: a role is a definition (name + binding) carrying an optional capability and skill routes that users inherit on assignment — capabilities live on the role, not the user ([[access]]).**

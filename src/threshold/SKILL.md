@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from freeShippingThreshold ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[free]] · shipping
+Entangled with — free · shipping
 
 Attested in schema.org — freeShippingThreshold
 

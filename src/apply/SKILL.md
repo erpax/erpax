@@ -37,7 +37,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from ApplyAction · directApply ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — action · [[direct]]
+Entangled with — action · direct
 
 Attested in schema.org — ApplyAction · directApply
 

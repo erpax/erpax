@@ -38,7 +38,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from PostOffice · blogPost · postOfficeBoxNumber · postOp ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[office]] · [[blog]] · [[box]] · [[number]] · [[op]]
+Entangled with — office · blog · box · [[number]] · [[op]]
 
 Attested in schema.org — PostOffice · blogPost · postOfficeBoxNumber · postOp
 

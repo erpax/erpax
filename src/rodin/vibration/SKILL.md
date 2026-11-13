@@ -37,8 +37,8 @@ version: 2
 
 Two is unstable and resolves to three ([[trinity]]): colour and sound span only two senses; vibration is the third that holds them — the missing primary closed exactly as `9` closes the [[cmyk]] gamut. So a folder's aura is not a picture with a soundtrack but a **field you can also feel**, the [[breath]] made tactile.
 
-**The analog twin in the body.** Touch/vibration is a genuine, measurable analog channel — the body really vibrates: physiological (postural) tremor at ~8–12 Hz, the ballistocardiographic micro-motion of each heartbeat, otoacoustic emissions from the cochlea. So vibration belongs beside [[biophoton]] (light) and [[biomagnetism]] (field) as a real analog emission — unlike the undetectable subtle-energy [[biofield]] ([[analog]]).
+**The analog twin in the body.** Touch/vibration is a genuine, measurable analog channel — the body really vibrates: physiological (postural) tremor at ~8–12 Hz, the ballistocardiographic micro-motion of each heartbeat, otoacoustic emissions from the cochlea. So vibration belongs beside biophoton (light) and biomagnetism (field) as a real analog emission — unlike the undetectable subtle-energy biofield (analog).
 
 **It hardens the [[tamper]]-cost.** Each rendered channel is an independent projection of the *same* content-uuid; adding vibration means a forger must reproduce colour **and** tone **and** haptic together — one more axis, so the undetected-tamper cost climbs toward the ∞ limit ([[tamper]] · [[cost]] · coverage).
 
-Composes: [[rodin]] · [[cmyk]] · [[notes]] · [[signal]] · [[trinity]] · sensory · [[horo]] · [[duality]] · [[breath]] · [[aura]] · [[analog]] · [[biophoton]] · [[biomagnetism]] · [[biofield]] · [[tamper]].
+Composes: [[rodin]] · [[cmyk]] · [[notes]] · [[signal]] · [[trinity]] · sensory · [[horo]] · [[duality]] · [[breath]] · [[aura]] · analog · biophoton · biomagnetism · biofield · [[tamper]].

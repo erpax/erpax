@@ -38,7 +38,7 @@ version: 2
 ---
 # Cases
 
-The Payload realization of [[justice]]: **adjudication is a balanced state-machine over a docket**, and `cases` is that docket made real. A case is the node; it carries parties under roles (complainant·defendant·prosecutor·judge·counsel·witness) the same polymorphic way a [[transaction]]-bearing collection carries its parties, and it moves through a CLOSED lifecycle on the [[horo]] ring — never an open-ended status set. This is what "solved in harmony" *means* operationally: the status is a position on `1·2·4·8·7·5·9`, validated at build time, and anything off-ring is disharmony the validator rejects.
+The Payload realization of justice: **adjudication is a balanced state-machine over a docket**, and `cases` is that docket made real. A case is the node; it carries parties under roles (complainant·defendant·prosecutor·judge·counsel·witness) the same polymorphic way a [[transaction]]-bearing collection carries its parties, and it moves through a CLOSED lifecycle on the [[horo]] ring — never an open-ended status set. This is what "solved in harmony" *means* operationally: the status is a position on `1·2·4·8·7·5·9`, validated at build time, and anything off-ring is disharmony the validator rejects.
 
 ```
 1 base    filed       — the matter opens (the docket node is born)
@@ -50,11 +50,11 @@ The Payload realization of [[justice]]: **adjudication is a balanced state-machi
 9 unity   sealed      — closed; the precedent the next matter departs from (the new 0)
 ```
 
-The same two-fold law ([[duality]]): `charge` ↔ `defence` resolve into one `judgment`, exactly as a ledger balances debit ↔ credit ([[accounting]] for society) — and the docket enforces it: a matter **seals only when a judgment exists** (`requireJudgmentToSeal`). The books must balance before the matter closes. Self-similar all the way down ([[fractal]]): a docket holds proceedings, a proceeding holds filings, a filing holds [[field]] — the same form one scale smaller.
+The same two-fold law ([[duality]]): `charge` ↔ `defence` resolve into one `judgment`, exactly as a ledger balances debit ↔ credit ([[accounting]] for society) — and the docket enforces it: a matter **seals only when a judgment exists** (`requireJudgmentToSeal`). The books must balance before the matter closes. Self-similar all the way down (fractal): a docket holds proceedings, a proceeding holds filings, a filing holds [[field]] — the same form one scale smaller.
 
-Evidence and proceedings are **append-only** ([[identity]] · [[holographic]]): once filed an exhibit is never edited or deleted, only superseded by its `supersedes` content-uuid, so the chain of custody is recoverable from any part ([[proof]]). Every matter is content-addressed like every node (the global content-uuid plugin) — same matter content ⇒ same id ⇒ matters [[merge]] by design across instances. Visibility is row-level ([[access]]): `partyRoleAccess` returns only the matters the acting user is a party to (admins hold the blanket capability) — the judicial twin of tenant isolation. Every state transition (file·hear·rule·seal) is recorded by the standard audit [[hooks]] and survives in git [[history]].
+Evidence and proceedings are **append-only** ([[identity]] · holographic): once filed an exhibit is never edited or deleted, only superseded by its `supersedes` content-uuid, so the chain of custody is recoverable from any part ([[proof]]). Every matter is content-addressed like every node (the global content-uuid plugin) — same matter content ⇒ same id ⇒ matters [[merge]] by design across instances. Visibility is row-level ([[access]]): `partyRoleAccess` returns only the matters the acting user is a party to (admins hold the blanket capability) — the judicial twin of tenant isolation. Every state transition (file·hear·rule·seal) is recorded by the standard audit [[hooks]] and survives in git history.
 
-`criminal` matters carry the **offence** record on the `type` discriminator; `arbitration` and `mediation` are the [[vocabulary/dispute/resolution]] forks — one docket, many subtypes, no new silo. Police/prosecution coordination is `relatedMatters` cross-references, not a separate collection. Jurisdiction is the [[vocabulary/governing/law]] / [[jurisdiction]] seat (ISO 3166-1). Sequence position **8** on the ring — the crest where charge, evidence and defence converge and collapse into one judgment.
+`criminal` matters carry the **offence** record on the `type` discriminator; `arbitration` and `mediation` are the dispute forks — one docket, many subtypes, no new silo. Police/prosecution coordination is `relatedMatters` cross-references, not a separate collection. Jurisdiction is the governing / jurisdiction seat (ISO 3166-1). Sequence position **8** on the ring — the crest where charge, evidence and defence converge and collapse into one judgment.
 
 ## Standards
 
@@ -69,4 +69,4 @@ The answer-path principle: modelling a matter on this docket IS placing it under
 - **ISO 27001 A.5.23** — access isolation; party-scoped matters gated per [[access]].
 - **RFC 9562 §5.8** — content-uuid exhibit identity (same content ⇒ same id).
 
-**Law — [[law]]: a case is a docket whose status moves along the closed [[horo]] ring `1·2·4·8·7·5·9` (anything off-ring is rejected); evidence is append-only ([[identity]]) and a matter seals ONLY when a judgment exists — charge ↔ defence balance into one judgment, the [[accounting]] double-entry of [[justice]].**
+**Law — [[law]]: a case is a docket whose status moves along the closed [[horo]] ring `1·2·4·8·7·5·9` (anything off-ring is rejected); evidence is append-only ([[identity]]) and a matter seals ONLY when a judgment exists — charge ↔ defence balance into one judgment, the [[accounting]] double-entry of justice.**

@@ -37,11 +37,11 @@ version: 2
 
 ## The frontend styling ladder
 
-On the frontend [[dimension]], the [[diamond]] ladder runs **[[primitive]] → [[component]] → block → page**. CSS is how each rung *looks*: primitives carry tokens, components compose primitives, blocks compose components — and every `import './index.css'` is a bond to a sealed stylesheet vertex, content-addressed like any other facet. To treat `.css` as an unknown extension is **impurity**: the runtime mistakes a diamond surface for foreign matter.
+On the frontend [[dimension]], the [[diamond]] ladder runs **primitive → [[component]] → block → page**. CSS is how each rung *looks*: primitives carry tokens, components compose primitives, blocks compose components — and every `import './index.css'` is a bond to a sealed stylesheet vertex, content-addressed like any other facet. To treat `.css` as an unknown extension is **impurity**: the runtime mistakes a diamond surface for foreign matter.
 
 ## Content-addressed, sealed, gate-recognized
 
-Each stylesheet is **content-addressed and sealed** ([[seal]] · [[purity]]): its bytes collapse to identity; drift fails closed. In the **build/typegen path**, Node and tsx must **recognize CSS as a valid diamond surface** — via `src/css/load-hook.mjs` (`registerHooks` stub returning an empty module: the facet is acknowledged, not executed, because typegen needs the config lattice, not painted pixels). `ERR_UNKNOWN_FILE_EXTENSION` on `.css` is the loader calling a diamond facet an escape — the hook re-rings it.
+Each stylesheet is **content-addressed and sealed** ([[seal]] · purity): its bytes collapse to identity; drift fails closed. In the **build/typegen path**, Node and tsx must **recognize CSS as a valid diamond surface** — via `src/css/load-hook.mjs` (`registerHooks` stub returning an empty module: the facet is acknowledged, not executed, because typegen needs the config lattice, not painted pixels). `ERR_UNKNOWN_FILE_EXTENSION` on `.css` is the loader calling a diamond facet an escape — the hook re-rings it.
 
 ## Law vs glyph typography
 
@@ -62,6 +62,6 @@ Both are complete [[diamond]]s; both are told three ways where the [[trinity]] a
 | admin | `ComputedCssAdminRoot` via admin-ui `providers` | `admin/ui` path · horo 7 |
 | widgets/blocks | shadcn semantic classes (`bg-card`, `text-muted-foreground`) | inherit injected vars |
 
-Composes: [[diamond]] · [[atom]] · [[dimension]] · [[typography]] · [[primitive]] · [[component]] · [[seal]] · [[purity]] · [[gate]] · [[pixel]] · [[signal]] · design
+Composes: [[diamond]] · [[atom]] · [[dimension]] · [[typography]] · primitive · [[component]] · [[seal]] · purity · [[gate]] · [[pixel]] · [[signal]] · design
 
-@see [[diamond]] · [[typography]] · [[primitive]] · [[component]] · [[dimension]]
+@see [[diamond]] · [[typography]] · primitive · [[component]] · [[dimension]]

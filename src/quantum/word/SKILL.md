@@ -49,7 +49,7 @@ quantum:
     - "[[uuid]]"
     - "[[word]]"
     - "matter-twin:src/quantum/word/index.ts"
-    - "the word corpus obeys the SAME 64-bit address-law as the digit corpus — one torus each, crosslinked by [[links]], entangled by `architectureBond`, folded by one content-[[uuid]] — so the word ⊕ digit duality is symmetric: neither architecture has a law the other lacks; together they are the double-torus."
+    - "the word corpus obeys the SAME 64-bit address-law as the digit corpus — one torus each, crosslinked by links, entangled by `architectureBond`, folded by one content-[[uuid]] — so the word ⊕ digit duality is symmetric: neither architecture has a law the other lacks; together they are the double-torus."
   seal:
     sandbox: false
     receipt: false
@@ -67,7 +67,7 @@ The **WORD half** of the first duality: **word ⊕ digit**. Where [[quantum/digi
 
 Every atom has two addresses ([[digit]]): WORD (folder name) and DIGIT (horo + uuid digital-root). `interact64(a, b)` is their bitwise meeting on the torus ring; `architectureBond()` is the symmetric matrix entanglement of `word` ⊕ `digit` paths.
 
-**Law — [[law]]: the word corpus obeys the SAME 64-bit address-law as the digit corpus — one torus each, crosslinked by [[links]], entangled by `architectureBond`, folded by one content-[[uuid]] — so the word ⊕ digit duality is symmetric: neither architecture has a law the other lacks; together they are the double-torus.**
+**Law — [[law]]: the word corpus obeys the SAME 64-bit address-law as the digit corpus — one torus each, crosslinked by links, entangled by `architectureBond`, folded by one content-[[uuid]] — so the word ⊕ digit duality is symmetric: neither architecture has a law the other lacks; together they are the double-torus.**
 
 Matter-twin: `src/quantum/word/index.ts` (`interact64` · `architectureBond` · `combineArchitectures` · `architectureFoldPaths` · `recordWordOnPath` · `recordArchitectureFoldOnPath`). Composes [[word]] · [[digit]] · [[quantum/digit]] · [[quantum]] · [[matrix]] · [[uuid]] · [[merge]].
 

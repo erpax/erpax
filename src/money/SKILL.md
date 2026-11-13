@@ -41,7 +41,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from DatedMoneySpecification · MoneyTransfer ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[dated]] · specification · transfer
+Entangled with — dated · specification · transfer
 
 Attested in schema.org — DatedMoneySpecification · MoneyTransfer
 

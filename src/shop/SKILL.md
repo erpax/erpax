@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from AutoBodyShop · CafeOrCoffeeShop · HobbyShop · IceCreamShop · PawnShop · TireShop ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[auto]] · [[body]] · [[cafe]] · [[coffee]] · [[hobby]] · [[ice]] · [[cream]] · [[pawn]] · tire
+Entangled with — [[auto]] · [[body]] · cafe · coffee · hobby · ice · cream · pawn · tire
 
 Attested in schema.org — AutoBodyShop · CafeOrCoffeeShop · HobbyShop · IceCreamShop · PawnShop · TireShop
 

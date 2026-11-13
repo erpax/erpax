@@ -43,7 +43,7 @@ The third is **computed, never asserted**. For a declared pair (a, b):
 
 "The forge is full" is the gate: a pair whose **both poles are present in the live [[matrix]]** can be forged, so its trinity emerges; a pair with a missing pole cannot yet — its third is grounded nowhere (the identity element a neighbour must define — see [[trinity]]). So emergence is **monotone in coverage**: the more the corpus is wired, the more thirds emerge, toward zero [[entropy]] (every pole completed, every duality having found its third). The un-emerged remainder is the pressure — the borrowed disorder the not-yet-forged pairs still carry.
 
-This is the development exhale: expand the corpus and the dualities multiply; each one, once its poles are forged, REVEALS its trinity. The synthesis was implicit in the pair the whole time; emergence is the moment it is seen — the same figure [[one]] node wears at every scale ([[fractal]]).
+This is the development exhale: expand the corpus and the dualities multiply; each one, once its poles are forged, REVEALS its trinity. The synthesis was implicit in the pair the whole time; emergence is the moment it is seen — the same figure [[one]] node wears at every scale (fractal).
 
 Matter-twin: `src/emergence/index.ts` (`emerge` · `emergeOne` · `emergenceCoverage` · `emergencePressure`). Composes [[duality]] · [[trinity]] · [[horo]] · [[entropy]] · [[uuid]] · [[matrix]].
 

@@ -52,6 +52,6 @@ version: 2
 
 Quantum FTL metrics — reuse and amortization calculations.
 
-Composes: [[quantum/ftl]] · [[quantum]] · [[vocabulary/efficiency]].
+Composes: [[quantum/ftl]] · [[quantum]] · efficiency.
 
 <sub>content-uuid `f6d3c413-b3ca-5bea-b807-4997ec8f75cf` · account `quantum/ftl/metrics` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

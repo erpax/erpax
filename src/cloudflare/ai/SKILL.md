@@ -48,8 +48,8 @@ Workers AI is a **first-class binding diamond**, not a sidecar. Wrangler declare
 - **Secret** — `sealCloudflareAiSecret` / `decryptCloudflareAiSecretIfUuid` ([[secret]] `decryptIfUuid`)
 - **Agent** — `agentAiWorkerFace` marks CF AI as the worker deployment face for angels
 - **confirm:uuid** — `gateCloudflareAi` verifies AI-stack diamonds without [[payload]]
-- **README** — debit `[[asset]]/[[cloudflare]]/ai/bindings` posts one per live wrangler AI binding
+- **README** — debit `asset/[[cloudflare]]/ai/bindings` posts one per live wrangler AI binding
 
-**Law — [[law]]: every Cloudflare Workers AI binding has a sealed diamond; innovation ships test-first ([[innovation]]).**
+**Law — [[law]]: every Cloudflare Workers AI binding has a sealed diamond; innovation ships test-first (innovation).**
 
-@see [[cloudflare]] · [[agent]] · [[secret]] · [[diamond]] · [[path]] · [[innovation]]
+@see [[cloudflare]] · [[agent]] · [[secret]] · [[diamond]] · [[path]] · innovation

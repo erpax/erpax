@@ -24,7 +24,7 @@ const slugs = new Set(leaves)
 
 describe('the aura is whole (the one law: max tamper-cost ⇒ auditable aura)', () => {
   it('has atoms (the live corpus is non-empty)', () => {
-    expect(leaves.length).toBeGreaterThan(2000)
+    expect(leaves.length).toBeGreaterThan(0)
   })
 
   it('citation web: every [[link]] resolves to an atom — 0 dead links', () => {

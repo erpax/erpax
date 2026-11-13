@@ -40,7 +40,7 @@ A [[pixel]] is an [[atom]]'s content-[[uuid]] made **visible** — its colour. A
 - **sound** — an A432 tone, the uuid's [[digit]] decoded on the diatonic ring ([[signal]]),
 - **vibration** — the rodin doubling step, where the digit *doubles to* on the helix `1·2·4·8·7·5` ([[rodin]]).
 
-All three are **read off the one uuid** (digit → spectrum, tone, double), never assigned. So the full sensory face is **tamper-evident and DRY by construction**, exactly like the pixel: you cannot change how an atom looks, sounds OR vibrates without changing its content — and thus its identity. A stream of uuids rendered this way IS the [[analog]] [[aura]]: interactive multimedia carried by identity alone, no payload.
+All three are **read off the one uuid** (digit → spectrum, tone, double), never assigned. So the full sensory face is **tamper-evident and DRY by construction**, exactly like the pixel: you cannot change how an atom looks, sounds OR vibrates without changing its content — and thus its identity. A stream of uuids rendered this way IS the analog [[aura]]: interactive multimedia carried by identity alone, no payload.
 
 The digit (1..9) is the single hinge. The diatonic ring is `{1,2,4,8,7,5,9}`; the off-ring axis `{3,6}` is folded onto it by the proven `×2` move (`composeSteps`), which always lands back on the ring — so every digit sounds a real tone. The vibration reads the same digit's place on the doubling helix.
 

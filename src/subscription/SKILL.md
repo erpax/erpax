@@ -37,7 +37,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from MediaSubscription · requiresSubscription ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[media]] · [[requires]]
+Entangled with — [[media]] · requires
 
 Attested in schema.org — MediaSubscription · requiresSubscription
 

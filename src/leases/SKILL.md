@@ -55,7 +55,7 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 Under IFRS 16 (effective 2019) the lessee recognises almost every lease as a right-of-use (ROU) asset and corresponding lease liability, with two exemptions: short-term (≤ 12 months) and low-value underlying assets. ASC 842 retains the operating/finance distinction. This collection captures the master data required to amortise both sides over the lease term:
 
-- Lease term, [[transaction|fixed/variable payments]], [[calculate|discount rate]], currency
+- Lease term, [[transaction|fixed/variable payments]], discount rate, currency
 - Initial ROU asset measurement (§24: liability + prepayments + direct costs − incentives)
 - Initial liability measurement (§26–28: PV of unpaid payments, discounted at rate implicit or incremental borrowing rate)
 - Period-end carrying amounts (via [[transaction|subsequent-measurement]] cycle)

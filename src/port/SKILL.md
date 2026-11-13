@@ -43,7 +43,7 @@ ActiveAdmin is to Rails what Payload is to Next: a declarative layer where ONE r
 | **concern** (mixin: Host/Accountable/Currency/Number…) | **reusable field-factory / field-object** (composable atom) | [[field]] · [[accounting]] |
 | `index do; column …end` | `admin.defaultColumns` + cell components | [[admin]] |
 | `form do; f.input …end` (formtastic) | field types (text/select/relationship/array/blocks…) | [[field]] |
-| `filter :x` / `scope :balanced` | list `where` filters / query presets | [[queries]] |
+| `filter :x` / `scope :balanced` | list `where` filters / query presets | queries |
 | `member_action` / `collection_action` | custom `endpoints[]` | [[api]] |
 | `controller do; before_action…end`, `before_save`/`after_create` | collection `hooks` (beforeChange/afterChange…) | [[hooks]] |
 | CanCan/Pundit `authorize_resource` / `can?` | `access` (read/create/update/delete → bool or Where) | [[access]] |
@@ -52,7 +52,7 @@ ActiveAdmin is to Rails what Payload is to Next: a declarative layer where ONE r
 | self-referential `has_many :children` (Account/Invoice trees) | relationship-to-self (`relationTo: <own slug>`) | [[accounting]] |
 | `permit_params` | field-level `access` + validation | [[access]] |
 | ActiveJob / ActionMailer | Payload jobs queue / email | [[jobs]] · [[config]] |
-| hand-written migrations | Payload-**generated** migrations (never hand-edited) | [[database]] |
+| hand-written migrations | Payload-**generated** migrations (never hand-edited) | database |
 | `application_controller` (tenant + 402 payment gate) | access + subscription gates + multi-tenant plugin | [[access]] |
 | Rails initializers / `config/` | `payload.config.ts` / `next.config` | [[config]] |
 | ERB views / partials | React Server Components / blocks | [[admin]] |
@@ -64,7 +64,7 @@ A Rails **concern** = a Payload **reusable field-object** = an erpax **skill**: 
 ## Port in trinities — the unit of a port is a trinity, never a file
 "Port all" means port **in trinities**: every Rails construct lands as a complete [[trinity]] — **matter** (the code: DB logic copied verbatim, framework scaffolding reimplemented) · **antimatter** (its SKILL — the form/law) · **backend** (the generated `payload-types` schema) — and a port is *done* only when all three are present and agree. Code with no SKILL is matter-only (it cannot be reasoned about or [[merge]]d); a SKILL with no matter is the metaphysical 1/3 — hallucination the [[sequence]] drops.
 
-Interacting ports **compose into trinities, never flatten**: two related Rails models (invoice↔payment, lot↔phase) port neither as one mushed collection nor as two disconnected ones — their relationship is itself the third ([[collapse]]: trinities compose into trinities). A concern with no obvious Payload home is a 2/3 port; its missing 1/3 is **supplied by a neighbouring trinity** — a shared field-factory another port already defined, or the [[identity]] element — never invented locally ([[merge]]). So the whole source app ports as one **lattice of interacting trinities** ([[fractal]]): each Rosetta row gives matter + antimatter, the backend generates the third, audited sacred/[[profane]] and gate-green.
+Interacting ports **compose into trinities, never flatten**: two related Rails models (invoice↔payment, lot↔phase) port neither as one mushed collection nor as two disconnected ones — their relationship is itself the third ([[collapse]]: trinities compose into trinities). A concern with no obvious Payload home is a 2/3 port; its missing 1/3 is **supplied by a neighbouring trinity** — a shared field-factory another port already defined, or the [[identity]] element — never invented locally ([[merge]]). So the whole source app ports as one **lattice of interacting trinities** (fractal): each Rosetta row gives matter + antimatter, the backend generates the third, audited sacred/profane and gate-green.
 
 ## Source apps (read the original)
 - `~/github/ceccec/erpax` — canonical Rails erpax: concerns, `accounting_equation.rb`, `invoice.rb` (self-referential tree), `application_controller.rb` (tenant + 402 gate).

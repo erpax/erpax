@@ -49,11 +49,11 @@ The INVERSE — recover the analog NEGATIVE (the private key / pre-image) from t
 
 KEY POINT — **no Infinity leaks**. ∞ is never serialized as a number. The unbounded case is represented as `decryptKeyLog2: null` + `unbounded: true` (`index.ts:21-22, 56-59, 90-91`; `index.test.ts:30-31`). erpax embraces ∞ as a real answer but TAGS it rather than letting a raw `Infinity` into the JCS-serializable bundle. The honest overall forge floor stays finite: `cheapestForgeLog2 = min(digest, anchor)` (`index.ts:60-61, 92`).
 
-This is the double-entry of order created vs entropy spent — balanced ([[entry]]; `index.ts:95-96`). The bounded envelope it lives inside is [[torus]] / [[beyond]]; the source it returns to is zeropoint. The forward direction is [[give]] (mint, cheap); recovering the negative is what a forger must take, and the matrix that holds both is the [[uuid]] / [[localize]] space.
+This is the double-entry of order created vs entropy spent — balanced ([[entry]]; `index.ts:95-96`). The bounded envelope it lives inside is [[torus]] / [[beyond]]; the source it returns to is zeropoint. The forward direction is give (mint, cheap); recovering the negative is what a forger must take, and the matrix that holds both is the [[uuid]] / [[localize]] space.
 
 Matter-twin: `src/proof/projection/index.ts` (+ index.test.ts).
 
-Composes: [[proof]] · [[anchor]] · [[tamper/cost]] · [[entry]] · [[torus]] · [[beyond]] · zeropoint · [[identity]] · [[merge]] · [[uuid]] · [[localize]] · [[give]] · take
+Composes: [[proof]] · [[anchor]] · [[tamper/cost]] · [[entry]] · [[torus]] · [[beyond]] · zeropoint · [[identity]] · [[merge]] · [[uuid]] · [[localize]] · give · take
 
 ## Common mistakes
 - Treating the 122-bit digest second-preimage as the maximum. It is the CHEAPER hash-collision path, not the max — the anchor is (`index.ts:18-20, 60-61`; `index.test.ts:32-33`).

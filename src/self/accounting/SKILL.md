@@ -49,7 +49,7 @@ version: 2
 FORM: **the erpax-platform tenant runs its own [[accounting]] through erpax.** revenue (IFRS-15 §31–§45, from Stripe), [[cost]]s (infra/payroll/supplier/tax), regulatory filings (FINREP · COREP · CSRD · IFRS-S1/S2 · VAT) and obligations are booked/scheduled, and `checkSelfAccountingComplete` (Conservation Law 26) asserts every revenue is booked, every filing filed by its due date, every obligation paid — surfacing the overdue tail. This is the literal double-[[entry]] gateway of the [[law]]: each booking posts a balanced entry (revenue ⊕ obligation, cost ⊕ filing), and balanced books = zero net [[entropy]].
 
 Matter-twin: `src/self/accounting/index.ts` — `bookRevenue` · `bookCost` · `scheduleFiling` · `scheduleObligation` · `checkSelfAccountingComplete`.
-Composes: [[self]] · [[accounting]] · [[entry]] · revenue · [[cost]] · [[standard]] · [[reconcile]] · [[balance]] · [[gate]] · [[law]].
+Composes: [[self]] · [[accounting]] · [[entry]] · revenue · [[cost]] · [[standard]] · reconcile · [[balance]] · [[gate]] · [[law]].
 
 ## Standards
 

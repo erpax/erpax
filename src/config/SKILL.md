@@ -50,7 +50,7 @@ version: 2
 The config is the single source everything extends: a fully-typed object passed to `buildConfig`. A plugin is a function `(config) => config` that mutates/returns it. Position 0 — every other concern hangs off this.
 
 ## Every index IS a shared config — payload ⊕ vitepress, merged
-An atom's `index.ts` is not only Payload matter: it is the **shared config both [[payload]] and [[vitepress]] derive from** — payload makes the collection + [[types]] + [[database]] from it; vitepress makes the doc + frontmatter from it. One config, two consumers — the [[duality]] bound by content-[[identity]] (the uuid, the `0`). So a SKILL.md **frontmatter and its index are the same config**: harmonising the frontmatter to the index architecture (one-word name, the trigger description, no redundant fields) makes them **merge** — identical config content ⇒ one merged config ([[merge]]). The registry barrels (the prefix indices) are configs too; identical configs consolidate by design. The schema trinity — config · [[types]] · [[database]] — told once, read twice.
+An atom's `index.ts` is not only Payload matter: it is the **shared config both [[payload]] and [[vitepress]] derive from** — payload makes the collection + [[types]] + database from it; vitepress makes the doc + frontmatter from it. One config, two consumers — the [[duality]] bound by content-[[identity]] (the uuid, the `0`). So a SKILL.md **frontmatter and its index are the same config**: harmonising the frontmatter to the index architecture (one-word name, the trigger description, no redundant fields) makes them **merge** — identical config content ⇒ one merged config ([[merge]]). The registry barrels (the prefix indices) are configs too; identical configs consolidate by design. The schema trinity — config · [[types]] · database — told once, read twice.
 
 **If not a collection, a dashboard/page.** Payload reads the shared config as exactly one of two kinds: a **[[collections]]** (a `CollectionConfig` — data, plural per the naming law) or a **dashboard/page** (a custom admin/frontend view — singular). Every atom is one or the other, so the chart of accounts is **collections (data accounts) ⊕ dashboards/pages (view accounts)**. The kind is declared by the config and inflected by the name (plural ⇒ collection, singular ⇒ page/model); the [[gate]] checks a non-collection atom is a valid page. The dissolved components (`dashboard`, `navigation`, `shell`, admin views) are pages; the entities (`invoices`, `payments`) are collections.
 
@@ -77,10 +77,10 @@ export default buildConfig({
 | `editor` | richText editor (lexical). |
 | `plugins` | Array of `(config)=>config` plugins (official ones too, e.g. [[redirects]]). **erpax itself is a plugin.** |
 | `admin` | Admin Panel config (components, live preview, routes). |
-| `graphQL` | `disable`, `maxComplexity`, custom queries (see [[harden]]). |
+| `graphQL` | `disable`, `maxComplexity`, custom queries (see harden). |
 | `cors` / `csrf` / `cookiePrefix` | Cross-origin + cookie security. |
 | `localization` / `i18n` | Content locales / admin UI languages. |
-| `defaultDepth` / `maxDepth` | Relationship population depth (default max 10) (see [[optimize]],[[harden]]). |
+| `defaultDepth` / `maxDepth` | Relationship population depth (default max 10) (see optimize,harden). |
 | `indexSortableFields` | Auto-index sortable top-level fields. |
 | `email` / `sharp` / `endpoints` / `hooks` / `onInit` | Email adapter / image lib / custom REST routes / root hooks / startup fn. |
 | `typescript.outputFile` | Where `generate:types` writes `payload-types.ts`. |
@@ -89,7 +89,7 @@ export default buildConfig({
 ## Common mistakes
 - Forgetting `secret` or `db` (both required).
 - Putting tenant/multi-tenancy as manual fields instead of the multi-tenant plugin (the plugin owns `tenant`).
-- Inlining repeated blocks instead of top-level `blocks` + `blockReferences` (see [[optimize]]).
+- Inlining repeated blocks instead of top-level `blocks` + `blockReferences` (see optimize).
 - Editing `payload-types.ts` by hand — it's generated; re-run `generate:types`.
 
 **Law — [[law]]: every atom's `index.ts` IS the one shared config both [[payload]] and [[vitepress]] derive from — self-describing (kind, fields, relations, position all declared by it + its [[name]] + content-[[uuid]]); `find src` is the registry, so identical configs [[merge]] and nothing outside classifies an atom.**

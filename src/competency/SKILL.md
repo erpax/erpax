@@ -41,7 +41,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from competencyRequired ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[required]]
+Entangled with — required
 
 Attested in schema.org — competencyRequired
 

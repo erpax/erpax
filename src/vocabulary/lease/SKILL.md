@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from OfferForLease · leaseLength ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[offer]] · [[length]]
+Entangled with — offer · length
 
 Attested in schema.org — OfferForLease · leaseLength
 

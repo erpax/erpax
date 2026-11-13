@@ -36,7 +36,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from PsychologicalTreatment · TreatmentIndication · possibleTreatment ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[psychological]] · [[indication]] · [[possible]]
+Entangled with — psychological · [[indication]] · possible
 
 Attested in schema.org — PsychologicalTreatment · TreatmentIndication · possibleTreatment
 

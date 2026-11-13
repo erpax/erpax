@@ -53,7 +53,7 @@ Trust is verified, never assumed. An imported row passes a fixed gate, strictest
 5. the content-uuid recomputes under the **source** tenant namespace (sender-tamper check)
 6. the row is not already imported (idempotent — same source uuid ingested once)
 
-Only then is the content ingested, stamped with `federationProvenance`. Verification is the [[duality]] of delivery: the sender gives, the receiver independently re-derives. The envelope is content-addressed, so the same row delivered twice collapses to one ([[holographic]] — the whole row is recoverable from its uuid + body alone). This is [[fractal]]: the per-row verification gate is the same content-uuid law that holds at field, collection, and instance scale.
+Only then is the content ingested, stamped with `federationProvenance`. Verification is the [[duality]] of delivery: the sender gives, the receiver independently re-derives. The envelope is content-addressed, so the same row delivered twice collapses to one (holographic — the whole row is recoverable from its uuid + body alone). This is fractal: the per-row verification gate is the same content-uuid law that holds at field, collection, and instance scale.
 
 ## Sequence position
 
@@ -79,4 +79,4 @@ ActivityPub has no bearing on non-federation collections — cite it only where 
 
 ## Relations
 
-[[merge]] (the law federation delivers) · [[identity]] (content-uuid the peer re-derives) · [[duality]] (give↔verify) · [[holographic]] (whole row from uuid+body) · [[fractal]] (same gate at every scale) · [[sequence]] · [[standard]] · [[access]] (the trust graph is row-level access across tenants) · [[hooks]] (export/import run on lifecycle edges) · [[event]] (a federated row is a distributed activity)
+[[merge]] (the law federation delivers) · [[identity]] (content-uuid the peer re-derives) · [[duality]] (give↔verify) · holographic (whole row from uuid+body) · fractal (same gate at every scale) · [[sequence]] · [[standard]] · [[access]] (the trust graph is row-level access across tenants) · [[hooks]] (export/import run on lifecycle edges) · [[event]] (a federated row is a distributed activity)

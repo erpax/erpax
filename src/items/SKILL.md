@@ -66,7 +66,7 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
-The catalog also holds **agricultural produce**: each [[crop]] is an items row (its sale unit a [[measure]] — bunch/head/quart — its price a [[currency]] amount), and **[[seed]]** is items too (the propagule as purchasable inventory; the [[cropplan]] seed order = computed need − on-hand). The CSA [[share]] box and its [[packs|packing]] draw from this one inventory. Garments, produce, seed — strip the prefix and they [[merge]] into one catalog/inventory model.
+The catalog also holds **agricultural produce**: each crop is an items row (its sale unit a measure — bunch/head/quart — its price a [[currency]] amount), and **[[seed]]** is items too (the propagule as purchasable inventory; the cropplan seed order = computed need − on-hand). The CSA [[share]] box and its [[packs|packing]] draw from this one inventory. Garments, produce, seed — strip the prefix and they [[merge]] into one catalog/inventory model.
 
 ## Standards
 

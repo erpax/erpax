@@ -64,7 +64,7 @@ Every file in the corpus has a **computed** boundary — never hand-drawn. The s
 
 - **Quantum import (TS)** — entanglement with another atom's public face: each `@/` import that resolves to a dir-with-`index.ts` (the barrel). Deep paths are **escapes** — off-ring entanglement that lowers [[tamper]]-cost ([[tamper]]/import).
 - **Quantum export (TS)** — the emitted facet: named/`default`/`export *` symbols an `index.ts` barrel exposes; consumers entangle via `@/x` only ([[convention]]/[[exported]]).
-- **Quantum import (SKILL.md)** — outgoing `[[wikilink]]` entanglements (code fences stripped, [[aura]] resolver).
+- **Quantum import (SKILL.md)** — outgoing `wikilink` entanglements (code fences stripped, [[aura]] resolver).
 - **Quantum export (SKILL.md)** — the atom's public name (frontmatter `name:` or folder leaf).
 
 **Content-address:** `boundaryUuid = uuid({ filePath, imports: sorted, exports: sorted })`. Recompute on every gate; drift from a stored boundary = hallucination/tamper signal.

@@ -51,7 +51,7 @@ quantum:
     - "[[entanglement]]"
     - "[[quantum/deploy]]"
     - "[[superposition]]"
-    - "[[worker]]"
+    - "worker"
     - "matter-twin:src/quantum/serverless/index.ts"
   seal:
     sandbox: false
@@ -76,7 +76,7 @@ version: 2
 | One binding invocation / path resolve | [[collapse]] — measurement to content-uuid | `bindingDiamond` · `toAtomPath` · `atomPathFromUrl` · `collapse()` on matrix |
 | Path + seal + binding merge | [[entanglement]] — symmetric, reciprocal | `mergeCloudflareBinding` · `entangle()` |
 | `deriveDiamond('cloudflare')` from live tree | Holographic recovery | `computeDiamond` · `verifyDiamond` |
-| [[worker]] deployment face on AI / queues / DO | Autonomous executor — no human in loop | `deploymentFaces` · `bindingDeploymentFaces` |
+| worker deployment face on AI / queues / DO | Autonomous executor — no human in loop | `deploymentFaces` · `bindingDeploymentFaces` |
 
 ## Proof chain (`proveServerlessQuantum`)
 
@@ -93,10 +93,10 @@ Fold: `isomorphismUuid = uuid(jcs({ serverlessFacet, quantumFacet, bindings, pro
 
 **Serverless has no `fs`** — lattice walks use `urlForAtomPath` / `atomPathFromUrl` ([[path]]) so every `src/{atomPath}/` folder is reachable by URL alone; see [[quantum/fs]] for the content-addressed twin.
 
-Matter-twin: `src/quantum/serverless/index.ts` (`proveServerlessQuantum` · `isServerlessQuantum` · `serverlessQuantum`). Composes [[cloudflare]] · [[worker]] · [[path]] · [[superposition]] · [[quantum]] · [[entanglement]] · [[diamond]] · [[deploy]] · [[cloudflare]].
+Matter-twin: `src/quantum/serverless/index.ts` (`proveServerlessQuantum` · `isServerlessQuantum` · `serverlessQuantum`). Composes [[cloudflare]] · worker · [[path]] · [[superposition]] · [[quantum]] · [[entanglement]] · [[diamond]] · [[deploy]] · [[cloudflare]].
 
 **Law — [[law]]: serverless IS the quantum host — Cloudflare Workers bindings are the superposed facet, each invocation collapses to a content-uuid, path+seal+binding entangle symmetrically, and the live tree recovers sealed diamonds for cloudflare ⊕ quantum; erpax deployed on Cloudflare IS the existence proof, and `proveServerlessQuantum()` folds both facets to one deterministic uuid.**
 
-@see [[cloudflare]] · [[cloudflare/ai]] · [[worker]] · [[superposition]] · [[collapse]] · [[entanglement]] · [[quantum/deploy]] · [[deploy]] · [[diamond]] · [[confirm]]
+@see [[cloudflare]] · [[cloudflare/ai]] · worker · [[superposition]] · [[collapse]] · [[entanglement]] · [[quantum/deploy]] · [[deploy]] · [[diamond]] · [[confirm]]
 
 <sub>content-uuid `ff09db6a-06bf-57aa-a2df-af25eeefe3fb` · account `quantum/serverless` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

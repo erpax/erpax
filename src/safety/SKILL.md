@@ -37,7 +37,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from safetyConsideration ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[consideration]]
+Entangled with — consideration
 
 Attested in schema.org — safetyConsideration
 

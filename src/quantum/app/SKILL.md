@@ -61,7 +61,7 @@ version: 2
 The thesis the whole corpus is built to make true: **every atom IS a quantum app**. An atom is
 
 - **content-addressed** — a [[uuid]] identity, a quantum state that obeys no-cloning,
-- **entangled** — its [[links]] ([[entanglement]]),
+- **entangled** — its links ([[entanglement]]),
 - **collapsible** — many surface forms collapse to one eigenstate ([[merge]]),
 - **self-decoding** — the uuid IS the whole message.
 

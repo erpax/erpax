@@ -44,7 +44,7 @@ Matter-twin: `src/strength/index.ts` (`SLICES` · `strength` · `corpusStrength`
 
 **Law — [[law]]: the corpus's strength is its DRY-ness amplified by its dimensional slices — strength = coverageCostLog2(dryness, slices). Each slice (word, structural-digit, content-digit, uuid, colour, sound) is an independent check; the digit's 88.4% is one slice only. At perfect DRY — zero duplication residue, every dimension wired to one source — strength is ∞, the singularity. Any residue leaves it finite; folding repeating patterns to one raises it toward ∞.**
 
-Entangled with — [[drug]] · [[available]] · [[recommendation]] · unit · value
+Entangled with — [[drug]] · available · [[recommendation]] · unit · value
 
 Attested in schema.org — DrugStrength · availableStrength · recommendationStrength · strengthUnit · strengthValue
 

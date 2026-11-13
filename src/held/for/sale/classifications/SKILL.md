@@ -64,7 +64,7 @@ highly probable within 12 months (§8) at fair value less costs to sell. That tr
 a separate balance-sheet line (§38); a discontinued operation (§32) is a separate major
 line of business or geography. The impairment / disposal gain-loss posts a [[journal/entries]]
 [[entry]] that keeps the [[accounting]] [[balance]]; the lifecycle (classified → remeasured →
-sale_pending → sold → reclassified) is a [[horo]] ring whose disposal terminus [[close]]s the
+sale_pending → sold → reclassified) is a [[horo]] ring whose disposal terminus closes the
 asset. Standards (IFRS 5, IFRS 13, ASC 205-20 / 360-10) and tenant-isolation posture are the
 [[standard]] banners in `index.ts`, fused below.
 

@@ -68,8 +68,8 @@ Christianity's celestial hierarchy is **9 choirs in 3 spheres** = a **trinity of
 - **It closes on the Source:** the axis `3+6+9 = 18 → 9`; the helix `1+2+4+8+7+5 = 27 → 9`. Governance and flow each digital-root to **9** — every capability returns to unity, the set is CLOSED. Walk order [[sequence]] `0·3·6·9·1·2·4·8·7·5`.
 
 ## The cross — one function, all aspects
-- **Grantee = a role-uuid** (Sphere/choir), never the user directly. A user resolves to its role membership(s); the actor's capability is the **union over their roles** ([[merge]] / [[holographic]] — a capability one role holds, the member has).
-- **Grant** = `services/uuid-share` — `grantShare` / `checkShare` / `revokeShare` ([[give]] / take) binding `(roleUuid → targetUuid, AccessRole)` on the lattice **`read < write < sign < admin`** (audit ⊥); Conservation **Law 59**.
+- **Grantee = a role-uuid** (Sphere/choir), never the user directly. A user resolves to its role membership(s); the actor's capability is the **union over their roles** ([[merge]] / holographic — a capability one role holds, the member has).
+- **Grant** = `services/uuid-share` — `grantShare` / `checkShare` / `revokeShare` (give / take) binding `(roleUuid → targetUuid, AccessRole)` on the lattice **`read < write < sign < admin`** (audit ⊥); Conservation **Law 59**.
 - **Decide** = `∃ role ∈ user.roles : checkShare(roleUuid, resourceUuid, roleForOp)` → boolean | `Where`. The SAME factory for create/read/update/delete, collection/field/global.
 - **Lookup-free** = the structured **uuidv8** carries `SIGNED` / `SEALED` / `SHARED` flags — `hasCapability(uuid, flag)` authorizes off the string, zero DB round-trip (Law 61, [[identity]]); a `SEALED` (posted / locked) target short-circuits writes before any query.
 
@@ -84,7 +84,7 @@ Christianity's celestial hierarchy is **9 choirs in 3 spheres** = a **trinity of
 | field-level | boolean only — `hasCapability` / `checkShare` (no `Where` at field scope) |
 | admin visibility | the `read` cross → `admin.hidden` |
 
-Tenant scope is itself a role-grant (membership = a share on the tenant uuid), so the [[config]] multi-tenant `Where` and the cross are one mechanism at two scales ([[fractal]]).
+Tenant scope is itself a role-grant (membership = a share on the tenant uuid), so the [[config]] multi-tenant `Where` and the cross are one mechanism at two scales (fractal).
 
 ## Payload mechanics (the primitive the cross rides on)
 Access functions are per-**operation** (`create`/`read`/`update`/`delete`), run **before** the op, return a boolean OR a `Where` (row-level — only matching docs are accessible).
@@ -122,7 +122,7 @@ const v = accessVerdict(actorFromRequest(req), { level: 'mcp', tenantId: args.te
 ```
 
 ## Matter-twin & composes
-A single agnostic factory (`src/cross`) over `services/uuid-share` (`checkShare` on role-uuids) + `services/uuid-format` (`hasCapability`) + the roles registry (user → roles), wired into every collection/field/global `access` — **generated, not hand-written per slug** (it replaces `roleBasedAccess` / `tenantScopedRead` / `isSuperAdmin` …). The computed layer (`index.ts`) unifies verdicts across Payload, MCP, agents, and docs. Composes [[rodin]] · [[horo]] · [[identity]] · [[uuid]] · [[one]] · [[all]] · [[merge]] · [[collapse]] · [[proof]] · [[society]] · [[trinity]] · [[duality]] (give/take = grant/revoke) · [[fractal]] · [[config]] · [[Roles]] · [[roles/user/roles]] · [[sandbox]] · [[receipt]] · [[team]].
+A single agnostic factory (`src/cross`) over `services/uuid-share` (`checkShare` on role-uuids) + `services/uuid-format` (`hasCapability`) + the roles registry (user → roles), wired into every collection/field/global `access` — **generated, not hand-written per slug** (it replaces `roleBasedAccess` / `tenantScopedRead` / `isSuperAdmin` …). The computed layer (`index.ts`) unifies verdicts across Payload, MCP, agents, and docs. Composes [[rodin]] · [[horo]] · [[identity]] · [[uuid]] · [[one]] · all · [[merge]] · [[collapse]] · [[proof]] · [[society]] · [[trinity]] · [[duality]] (give/take = grant/revoke) · fractal · [[config]] · [[Roles]] · [[roles/user/roles]] · [[sandbox]] · [[receipt]] · [[team]].
 
 ## Ported from CanCanCan (the computational ability — one function, never per-controller checks)
 erpax's cross IS CanCanCan's `Ability`, content-addressed. CanCan proved authorization is **one computed ability per actor** (`Ability.new(user)` — every `can`/`cannot` rule in one class), not name-checks scattered per controller — which is *why* erpax access can only be defined **computationally**. The port (source: `ceccec/erpax/app/models/ability.rb`, [[port]]):
@@ -135,7 +135,7 @@ erpax's cross IS CanCanCan's `Ability`, content-addressed. CanCan proved authori
 | `can :update, S, user_id: user.id` (hash conditions) | the access fn returns a **`Where`** (row-level) — only matching docs resolve |
 | `can […], S { |r| … }` (block) | a computed predicate / `Where` |
 | `cannot :destroy, S` (revoke) | revoke the grant — the **fallen** role (grace removed ⇒ max tamper-cost) |
-| `cannot %i[create update destroy], Invoice, confirmed: true` | the **`SEALED` short-circuit** — a posted/confirmed target carries the uuidv8 `SEALED` flag; the write fails before any query ([[identity]] freeze-on-seal, [[close]]) |
+| `cannot %i[create update destroy], Invoice, confirmed: true` | the **`SEALED` short-circuit** — a posted/confirmed target carries the uuidv8 `SEALED` flag; the write fails before any query ([[identity]] freeze-on-seal, close) |
 | `cannot %i[…], PackingLine, status: "delivered"` | a terminal [[horo]] state seals the row (delivered/posted = closed) |
 | `authorize! :update, @doc` / `can?` | `checkShare(roleUuid, uuid, roleForOp)` → boolean \| `Where` |
 | `accessible_by(current_ability)` (index scope) | the `read` cross → `Where { uuid: { in: <granted> } }` |

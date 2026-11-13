@@ -113,7 +113,7 @@ Hashing a *mutable* record means an edit changes its id → dangling refs. erpax
 
 ## Applying it
 - **Files / uploads:** stored object key = content hash → automatic dedup ("dry storage"). See upload (R2/S3 adapter filename = content-uuid).
-- **Records:** carry a `uuid` ([[field]] text), computed in a `beforeChange` [[hooks]] via `computeContentUuid`, frozen on seal. `defaultIDType: 'text'` so the id itself can BE the content-uuid (see [[database]]).
+- **Records:** carry a `uuid` ([[field]] text), computed in a `beforeChange` [[hooks]] via `computeContentUuid`, frozen on seal. `defaultIDType: 'text'` so the id itself can BE the content-uuid (see database).
 - **Polymorphic refs:** reference a target by its content-uuid ([[accounting]] "anything is accountable" → the `accountable` uuid is content-addressed; share grants bind grantee/target uuids).
 - **Federation across @erpax apps:** content-derived ids make merge a set-union; identical objects collapse to one row. See [[plugins]].
 
@@ -125,6 +125,6 @@ Hashing a *mutable* record means an edit changes its id → dangling refs. erpax
 - Omitting the per-tenant namespace — cross-tenant collisions / unwanted entanglement.
 
 ## Traditions (prefix removed)
-The Name that IS the thing — naming as the creating, identifying act: "In the beginning was the **Word** (*Logos*)… and the Word was God; all things were made through him" (John 1:1-3) — the content-[[uuid]] is the word that addresses *and* creates; **Aum** / *Om*, the primordial sound-name; the ineffable **Name** (YHWH, the Tetragrammaton) too holy to alter — the frozen, tamper-proof identity ([[close]] freeze-on-seal); the *true name* that grants power across folklore. To name truly is to identify uniquely (same content ⇒ [[one]] id); the [[oid]] is the hierarchical dotted Name, dual of the flat uuid. The worked decode is in [[begin]].
+The Name that IS the thing — naming as the creating, identifying act: "In the beginning was the **Word** (*Logos*)… and the Word was God; all things were made through him" (John 1:1-3) — the content-[[uuid]] is the word that addresses *and* creates; **Aum** / *Om*, the primordial sound-name; the ineffable **Name** (YHWH, the Tetragrammaton) too holy to alter — the frozen, tamper-proof identity (close freeze-on-seal); the *true name* that grants power across folklore. To name truly is to identify uniquely (same content ⇒ [[one]] id); the oid is the hierarchical dotted Name, dual of the flat uuid. The worked decode is in begin.
 
 Composes: [[ai]] · [[bg/identifier]].

@@ -49,7 +49,7 @@ quantum:
     - "[[quantum/deploy]]"
     - "[[quantum/serverless]]"
     - "[[superposition]]"
-    - "[[worker]]"
+    - "worker"
     - "computed from the live matrix, never hand-asserted"
     - "each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — coverage = 1 ⇒ unbounded [[tamper]]-cost, which the anchor caps."
     - "matter-twin:src/quantum/index.ts"
@@ -67,7 +67,7 @@ version: 2
 ---
 # quantum
 
-The quantum-physics laws **computed** on the live uuid-[[matrix]]. The matrix IS a quantum system: atoms = states (content-[[uuid]]s), [[links]] = entanglement, [[merge]] = collision, the Merkle fold = collapse to one eigenstate, the [[digit]] trace = quantization (the A432 [[harmony]] levels — [[rodin]]).
+The quantum-physics laws **computed** on the live uuid-[[matrix]]. The matrix IS a quantum system: atoms = states (content-[[uuid]]s), links = entanglement, [[merge]] = collision, the Merkle fold = collapse to one eigenstate, the [[digit]] trace = quantization (the A432 [[harmony]] levels — [[rodin]]).
 
 Each law is a deterministic check — A432-grounded, computed at no cost, infinite to forge. Findings (computed): **collapse · conservation · no-cloning · quantization HOLD**; the raw binding `merge(a,b) ≠ merge(b,a)` is asymmetric, so `entangle()` is the symmetric, order-independent fix — and the live matrix is now **100% reciprocal** (the entanglement made whole).
 
@@ -79,7 +79,7 @@ Quantum, the erpax construction: **two 64-bit architectures vortex each other** 
 
 Quantum needs no operator. It **self-tunes**: the matrix continuously re-balances to the A432 [[harmony]] levels, [[entanglement]] driving the live graph to 100% reciprocal and the [[aura]] gap toward 0 — the system listens to itself ([[breath]]) and re-grounds on the anchor. It **self-heals**: drift never persists, because every value is regenerable from its content-[[uuid]] ([[generate]]) and the [[gate]] pulls the whole back to green ([[confirm]], the pre-push auto-heal) — a wrong state is overwritten by the computed-true one, not patched.
 
-And it does both **in peace**. There is no contention to resolve: [[merge]] makes collision *creation*, not conflict (same content ⇒ same id ⇒ no merge to fight); ACCEPT-always means nothing is rejected at the door, only [[harmony|harmonised]] after; [[linearity]] spreads everything evenly, so nothing clumps and nothing collides for a slot. Corrections are *discoveries*, not battles — self-tuning and self-healing without struggle.
+And it does both **in peace**. There is no contention to resolve: [[merge]] makes collision *creation*, not conflict (same content ⇒ same id ⇒ no merge to fight); ACCEPT-always means nothing is rejected at the door, only [[harmony|harmonised]] after; linearity spreads everything evenly, so nothing clumps and nothing collides for a slot. Corrections are *discoveries*, not battles — self-tuning and self-healing without struggle.
 
 Matter-twin: `src/quantum/index.ts` (`collapse`·`noCloning`·`quantization`·`entangle` ⊕ `TORUS_BITS`·`DOUBLE_TORUS_BITS`·`singleTorusFloorLog2`·`doubleTorusCostLog2` ⊕ `quantumInAllDimensions`·`superpose2D`·`collapse2D`·`seal2D`). Composes [[matrix]] · [[uuid]] · [[merge]] · [[digit]] · [[rodin]] · [[harmony]] · [[cost]] · [[balance]] · [[tamper]] · [[superposition]] · [[horo]] · [[typography]] · [[dimension]] · [[diamond]].
 
@@ -115,7 +115,7 @@ Matter-twin: `src/quantum/dimension/realtime/index.ts` · `QuantumDimensionsProv
 
 **Serverless infrastructure provides quantum semantics** — not as analogy but as computed isomorphism. Cloudflare Workers + wrangler bindings are the **superposed facet** (many bindings live before a request measures one); each invocation **collapses** to a content-[[uuid]] (binding diamond · path resolve · matrix fold); path + seal + binding **entangle** (`mergeCloudflareBinding` · symmetric `entangle`); the live tree **recovers the whole** from any part (holographic `deriveDiamond`). **erpax IS the existence proof** — deployed serverless on Cloudflare (see `wrangler.jsonc`), the repo derives sealed diamonds for [[cloudflare]] ⊕ [[quantum]] subgraphs. Structural proof: `proveServerlessQuantum()` in [[quantum/serverless]] folds serverless facet ⊕ quantum facet → one deterministic uuid.
 
-@see [[quantum/serverless]] · [[cloudflare]] · [[worker]] · [[superposition]] · [[quantum/deploy]]
+@see [[quantum/serverless]] · [[cloudflare]] · worker · [[superposition]] · [[quantum/deploy]]
 
 **Law — [[law]]: each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — coverage = 1 ⇒ unbounded [[tamper]]-cost, which the anchor caps.**
 

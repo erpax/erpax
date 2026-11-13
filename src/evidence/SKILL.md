@@ -45,7 +45,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from MedicalEvidenceLevel · evidenceLevel · evidenceOrigin ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[medical]] · [[level]] · [[origin]]
+Entangled with — [[medical]] · [[level]] · origin
 
 Attested in schema.org — MedicalEvidenceLevel · evidenceLevel · evidenceOrigin
 

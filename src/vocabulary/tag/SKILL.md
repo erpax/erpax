@@ -56,7 +56,7 @@ A shared, content-uuid'd tag is the **loosely-coupled alternative to `relationTo
 ## taggablePlugin (mirror of uuidPlugin — see [[plugins]])
 Adds `taggable` (`text` content-uuid) + `taggableType` (`text` slug) to the `taggings` collection — ONE pair of columns that references ANY record by its content-uuid ([[identity]]), the polymorphic-by-uuid form. Taggable collections gain **ZERO columns** (a record is tagged by writing a tagging that points at its uuid; nothing is stored on the record). Reverse lookup ("tags on this record") is the `taggedWith` query, not a stored `join` field — a Payload `join` needs a real relationship `on` target, which the content-uuid column deliberately isn't. One injector, all collections — same pattern as the uuid injector. **Do not** restore the polymorphic `relationTo:[…all]`: it puts one FK column per collection in `taggings_rels` (200+ → over D1's 100-col cap; see the GOTCHA + `pnpm d1:audit`).
 
-## tagged_with → Payload `where` (see [[queries]])
+## tagged_with → Payload `where` (see queries)
 | gem option | Payload |
 |---|---|
 | `any:` (OR) | taggings `where context, tag in[…]` → taggable ids → `id in[…]` |
@@ -70,7 +70,7 @@ Adds `taggable` (`text` content-uuid) + `taggableType` (`text` slug) to the `tag
 "Infinite presentations" = saved **query presets** over `(context, tag)` filters (see [[admin]]).
 
 ## URL path = tag-composition (the public face of the same fractal law)
-A URL is the external presentation of `(context, tag)` filtering: `https://[host]/[tag1]/[tag2]/…/` — **`host`** = the tenant root (the `0`; Rails `HostConcern`/`Domain` → erpax tenant), then each segment is a **tag**, and the path is a `tagged_with` **chain → `where`** resolving against the akashic record. No bespoke routes — the tag chain IS the route; `host/customers/active/eu/` = scoped to host, tagged `active`, tagged `eu`. This is the *same* derived-address law as the skill path (`self/sufficient`), the file location (`domain × sequence-position × element`), and the object's content-uuid ([[identity]]) — self-describing and self-similar, just expressed at the `7·5` api·admin surface (see [[sequence]]). The path is the query; the query is the presentation. A **verb-headed command** (`/find/unpaid/invoices`) is the same path with a leading verb choosing the resolver (`find` → search/[[queries]]), the rest a tag-chain (`unpaid` = a derived state, `invoices` = target): **command = URL = query**, resolved against the akashic record. Qualifier segments are *derived* states (the [[commerce]]/[[manufacturing]] lesson), never stored flags.
+A URL is the external presentation of `(context, tag)` filtering: `https://[host]/[tag1]/[tag2]/…/` — **`host`** = the tenant root (the `0`; Rails `HostConcern`/`Domain` → erpax tenant), then each segment is a **tag**, and the path is a `tagged_with` **chain → `where`** resolving against the akashic record. No bespoke routes — the tag chain IS the route; `host/customers/active/eu/` = scoped to host, tagged `active`, tagged `eu`. This is the *same* derived-address law as the skill path (`self/sufficient`), the file location (`domain × sequence-position × element`), and the object's content-uuid ([[identity]]) — self-describing and self-similar, just expressed at the `7·5` api·admin surface (see [[sequence]]). The path is the query; the query is the presentation. A **verb-headed command** (`/find/unpaid/invoices`) is the same path with a leading verb choosing the resolver (`find` → search/queries), the rest a tag-chain (`unpaid` = a derived state, `invoices` = target): **command = URL = query**, resolved against the akashic record. Qualifier segments are *derived* states (the [[commerce]]/[[manufacturing]] lesson), never stored flags.
 
 ## More features (all from the same 2 collections)
 - **Counts / tag cloud:** `taggingsCount` → most/least-used, `top_<ctx>`, `at_least`/`at_most`, frequency→CSS buckets.
@@ -104,4 +104,4 @@ SQLite can't case-fold multibyte chars without ICU — do NOT rely on SQL `LOWER
 - A hard `relationTo:'specific'` to cross domains — a shared tag links them decoupled (and federates).
 - Relying on `LOWER()` matching on D1 — normalize at write (content-uuid needs a canonical form anyway).
 
-Composes: [[Taggings]] · [[database]].
+Composes: [[Taggings]] · database.

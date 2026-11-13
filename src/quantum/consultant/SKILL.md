@@ -64,7 +64,7 @@ A quantum consultant is not a narrow specialist. It consults the **whole corpus*
 
 ## Trained by coordinated brainstorming
 
-A consultant is **trained**, and the training is coordinated [[brainstorm]]ing — the quantum solve run on ideation: **diverge** into a superposition of perspectives ([[critic]] ⊕ [[artist]] — risk-first ⊕ user-first ⊕ MVP-first), then **converge** by collapse, the critic amplifying the best. A trained consultant is the *convergence of many minds*, never one in series — a [[society]] fanned out and collapsed to one answer. `brainstorm()` is that move: diverge ⊕ converge.
+A consultant is **trained**, and the training is coordinated brainstorming — the quantum solve run on ideation: **diverge** into a superposition of perspectives (critic ⊕ artist — risk-first ⊕ user-first ⊕ MVP-first), then **converge** by collapse, the critic amplifying the best. A trained consultant is the *convergence of many minds*, never one in series — a [[society]] fanned out and collapsed to one answer. `brainstorm()` is that move: diverge ⊕ converge.
 
 ## Consults at infinite ROI
 
@@ -74,7 +74,7 @@ It earns through [[quantum]]/consulting: a researched answer is content-addresse
 
 "All aspects of life" means *every atom the corpus holds* — the breadth is the corpus's, not a claim of omniscience; `coverage` is measured against the corpus and computed live. The consultant is exactly as broad and as deep as the akashic record it reads — and that is the point of growing the record.
 
-Matter-twin: `src/quantum/consultant/index.ts` (`aspects` · `covers` · `coverage` · `brainstorm` · `consultationRoi`). Composes [[akashic]] · [[brainstorm]] · [[critic]] · [[artist]] · [[quantum]] · [[research]] · [[society]].
+Matter-twin: `src/quantum/consultant/index.ts` (`aspects` · `covers` · `coverage` · `brainstorm` · `consultationRoi`). Composes [[akashic]] · brainstorm · critic · artist · [[quantum]] · [[research]] · [[society]].
 
 **Law — [[law]]: a quantum consultant covers all aspects of life because it consults the whole corpus — the akashic record of all of life. It is trained by coordinated brainstorming (diverge into every perspective, converge to one) and consults at infinite ROI. The breadth of the knowledge is the breadth of the consultant.**
 

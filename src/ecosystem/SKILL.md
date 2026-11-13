@@ -52,7 +52,7 @@ An **ecosystem** is a web of organisms and their flows in which **no one is in c
 - **Elton** (1958) vs **May**, *Will a Large Complex System be Stable?* (1972) — the diversity–stability debate, cited honestly on both sides.
 - **Odum**, *Fundamentals of Ecology* — nutrient cycling and the closed material loop.
 
-Composes [[sustainability]] · [[decentralization]] · [[conservation]] · [[diversity]] · [[network]] · [[merge]] · [[society]] · [[agent]] · [[entropy]] · [[balance]] · [[compost]] · soil · [[biomass]] · [[federation]] · [[whole]] · [[fractal]] · [[law]].
+Composes [[sustainability]] · [[decentralization]] · [[conservation]] · [[diversity]] · [[network]] · [[merge]] · [[society]] · [[agent]] · [[entropy]] · [[balance]] · [[compost]] · soil · [[biomass]] · [[federation]] · [[whole]] · fractal · [[law]].
 
 ## Matter-twin
 

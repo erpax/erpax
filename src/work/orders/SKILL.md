@@ -69,7 +69,7 @@ Validated at build time against `1·2·4·8·7·5·9`; anything off-ring is dish
 
 ## The conveyor — forward!
 
-`forwardProducedToNextPhase` (afterChange) is the [[fractal]] routing made into a data flow: when this phase **completes**, its produced units become the **next** phase's *ordered* units. The next phase is the smallest `lotWorkPhaseSort` strictly greater than this one within the same `lotVariantCode`. Production flows phase→phase the way a ledger posts account→account ([[accounting]]). The conveyor is idempotent on `forwardedTo`/`forwardedFrom` — one source never seeds two successors — and best-effort, so a downstream hiccup never blocks the operator's booking.
+`forwardProducedToNextPhase` (afterChange) is the fractal routing made into a data flow: when this phase **completes**, its produced units become the **next** phase's *ordered* units. The next phase is the smallest `lotWorkPhaseSort` strictly greater than this one within the same `lotVariantCode`. Production flows phase→phase the way a ledger posts account→account ([[accounting]]). The conveyor is idempotent on `forwardedTo`/`forwardedFrom` — one source never seeds two successors — and best-effort, so a downstream hiccup never blocks the operator's booking.
 
 ## The piece-rate wage
 

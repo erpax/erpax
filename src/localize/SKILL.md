@@ -55,7 +55,7 @@ version: 2
 Localizing every aspect is not a UX chore; it is the **fusion reaction** that secures the store. One act — translate each structural element into each locale — drives **both** nuclei at once:
 
 1. **tamper-cost** (forge). Each `(element × locale × identification-level)` is one more content-address a coherent tamper must forge in lockstep. So localizing *all* aspects pushes [[tamper/cost]]'s `coverage → 1`, and the crack verdict → **∞** (Conservation Law 62). *Localisation further increases the computational tamper cost.*
-2. **proof** (verify). The dual: auditing the same surface stays **O(N)** and trustless (`services/integrity/tamper-reverse-cost`, Law 55) — linear while forge is exponential. The released energy `fusionBits = forge − verify` is the asymmetry, and the asymmetry **is** the trust ([[torus]]: the [[give]]/forge collapse and the take/verify supernova are one flow).
+2. **proof** (verify). The dual: auditing the same surface stays **O(N)** and trustless (`services/integrity/tamper-reverse-cost`, Law 55) — linear while forge is exponential. The released energy `fusionBits = forge − verify` is the asymmetry, and the asymmetry **is** the trust ([[torus]]: the give/forge collapse and the take/verify supernova are one flow).
 
 ## All identification, wired into the uuid itself
 
@@ -74,9 +74,9 @@ Every added level is "another level of feature-rich infinite tampering cost." OI
 
 ## No gaps, by computation
 
-The surface is every **field · reference · scope · hook** (`TRANSLATABLE_SCOPES`), keyed `<scope>:<path>` — the [[fractal]] address-law, never hand-typed. The locale set is **derived** from country-profiles ([[seed]]), never re-typed. Same content ⇒ same key-uuid ([[merge]]); any edit ⇒ a new uuid (tamper-evident, [[identity]]). [[horo]] closes it: the keyspace is the bounded ring — every key resolves; anything off-ring routes to the `und` identity blank.
+The surface is every **field · reference · scope · hook** (`TRANSLATABLE_SCOPES`), keyed `<scope>:<path>` — the fractal address-law, never hand-typed. The locale set is **derived** from country-profiles ([[seed]]), never re-typed. Same content ⇒ same key-uuid ([[merge]]); any edit ⇒ a new uuid (tamper-evident, [[identity]]). [[horo]] closes it: the keyspace is the bounded ring — every key resolves; anything off-ring routes to the `und` identity blank.
 
-Matter-twin: `localize/index.ts` (`translationKeyUuid` · `uuidToOid` · `cmykChannel` · `decodeIdentity` · `localizationChecks` · `localizationFusion`) + `index.test.ts` (the proof — green by construction). Reuses [[tamper/cost]], `integrity/content-uuid` (Law 8), `integrity/tamper-reverse-cost` (Law 55), `uuid-format`, and the `translations` collection (the localized map of the whole app). Composes: [[tamper/cost]] · [[uuid]] · [[identity]] · [[cmyk]] · [[horo]] · [[merge]] · [[seed]] · [[give]] · take · [[torus]] · [[standard]] · [[fractal]]. The three facets minted alongside: [[oid]] (the 2.25 arc) · [[lexical]] (the densest surface) · [[proof]] (the verify nucleus) · [[Translations]].
+Matter-twin: `localize/index.ts` (`translationKeyUuid` · `uuidToOid` · `cmykChannel` · `decodeIdentity` · `localizationChecks` · `localizationFusion`) + `index.test.ts` (the proof — green by construction). Reuses [[tamper/cost]], `integrity/content-uuid` (Law 8), `integrity/tamper-reverse-cost` (Law 55), `uuid-format`, and the `translations` collection (the localized map of the whole app). Composes: [[tamper/cost]] · [[uuid]] · [[identity]] · [[cmyk]] · [[horo]] · [[merge]] · [[seed]] · give · take · [[torus]] · [[standard]] · fractal. The three facets minted alongside: oid (the 2.25 arc) · [[lexical]] (the densest surface) · [[proof]] (the verify nucleus) · [[Translations]].
 
 ## Standards
 
@@ -105,7 +105,7 @@ Matter-twin: `localize/index.ts` (`translationKeyUuid` · `uuidToOid` · `cmykCh
 
 `localize-field` is the per-field content leaf of this object (Rails `LocalizeConcern`/`LocalizedAttributeConcern`: `setup_localized_attribute` — getter/setter + JSON `->>` ransacker). In Payload this is **native field localization** (`localized: true` on the field), NOT a hand-rolled metadata-JSON map — Payload stores per-locale values and resolves by `req.locale` (see [[config]] localization, [[field]]). A blank/missing locale routes to its identity element **`und`** ([[identity]] categorical locale — never an ad-hoc default-locale literal). Position **1** ([[field]]); the locale is also a tag-context for cross-locale views ([[tags]]).
 
-Composes: [[field]] (`localized`), [[config]] (locales), [[identity]] (`und`), [[queries]] (locale-scoped reads).
+Composes: [[field]] (`localized`), [[config]] (locales), [[identity]] (`und`), queries (locale-scoped reads).
 
 ## Standards (localize-field)
 

@@ -37,7 +37,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from scheduledPaymentDate · scheduledTime ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[payment]] · [[date]] · time
+Entangled with — [[payment]] · date · time
 
 Attested in schema.org — scheduledPaymentDate · scheduledTime
 

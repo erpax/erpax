@@ -60,4 +60,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 **Law — [[law]]: a requisition is the pre-PO approval gate — requisitioner ≠ approver (SOX §404 four-eyes / segregation-of-duties), and the PO→requisition→approval chain stays auditor-traceable.**
 
-Composes: [[accounting]] · [[transaction]] · [[identity]] · [[standard]] · [[proof]] · [[privilege]].
+Composes: [[accounting]] · [[transaction]] · [[identity]] · [[standard]] · [[proof]] · privilege.

@@ -48,7 +48,7 @@ version: 2
 
 A schema.org component word, collided out of schema.org compounds — fused from LinkRole · hasGS1DigitalLink · linkRelationship · merchantReturnLink · originalMediaLink · productReturnLink · relatedLink · shippingSettingsLink · significantLink ([[sti]] · [[collapse]] · [[merge]]).
 
-Entangled with — [[role]] · [[has]] · [[gs]] · [[digital]] · [[relationship]] · [[merchant]] · return · [[original]] · [[media]] · [[product]] · [[related]] · shipping · settings · significant
+Entangled with — [[role]] · has · gs · digital · relationship · merchant · return · original · [[media]] · [[product]] · related · shipping · settings · significant
 
 Attested in schema.org — LinkRole · hasGS1DigitalLink · linkRelationship · merchantReturnLink · originalMediaLink · productReturnLink · relatedLink · shippingSettingsLink · significantLink
 

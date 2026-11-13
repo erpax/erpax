@@ -70,6 +70,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27002 §8.24 use-of-cryptography
 - NIST SP-800-38D aes-gcm
 
-Composes: [[access]] · [[commerce]] · [[defence]] · [[proof]] · [[standard]] · [[identity]].
+Composes: [[access]] · [[commerce]] · defence · [[proof]] · [[standard]] · [[identity]].
 
 **Law — [[law]]: a payment-method is a tokenized billing-instrument vault — Stripe tokens and AES-GCM encryption minimize PCI-DSS scope so sensitive card/bank data is never stored raw.**
