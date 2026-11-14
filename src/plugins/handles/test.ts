@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import type { Config, Payload } from 'payload'
-import { handleField, handlesPlugin, isContentUuid, present, receiveEndpoint, receiveStream, resolve, resolveEndpoint, sendEndpoint, sendStream } from '@/plugins/handles'
+import { catalogueEndpointFor, handleField, handlesPlugin, isContentUuid, present, resolveEndpointFor, resolvePredefined, receiveEndpoint, receiveStream, resolve, resolveEndpoint, sendEndpoint, sendStream } from '@/plugins/handles'
+import { entry, indexOf } from '@/utilities/uuid/predefined'
 import type { Stream } from '@/utilities/uuid/stream'
 import { encodeStructured, SLOT_TAGS, CAPABILITIES } from '@/utilities/uuid/format'
 import { handleOf } from '@/utilities/uuid/handle'
@@ -88,7 +89,7 @@ describe('handles — the plugin', () => {
     const config = handlesPlugin()({ collections: [{ slug: 'a', fields: [] }, { slug: 'b', fields: [own] }], endpoints: [] } as unknown as Config) as Config
     expect(config.collections![0]!.fields[0]).toMatchObject({ name: 'handle', virtual: true })
     expect(config.collections![1]!.fields).toEqual([own])
-    expect(config.endpoints).toEqual([receiveEndpoint, sendEndpoint, resolveEndpoint])
+    expect(config.endpoints!.map((e) => `${e.method} ${e.path}`)).toEqual(['post /h/receive', 'get /h/:handle/send', 'get /h', 'get /h/:handle'])
   })
   it('the field computes the handle from the id on read', () => {
     const hook = (handleField('invoices') as unknown as { hooks: { afterRead: Array<(args: unknown) => unknown> } }).hooks.afterRead[0]!
@@ -158,5 +159,35 @@ describe('handles — send and receive, through Payload', () => {
     const get = sendEndpoint.handler as unknown as (req: unknown) => Promise<Response>
     expect((await get({ routeParams: { handle: 'nope' }, query: {}, payload: fake().payload })).status).toBe(400)
     expect((await get({ routeParams: { handle: handleOf(id, 'invoices') }, query: {}, payload: fake().payload })).status).toBe(200)
+  })
+})
+
+describe('handles — predefined things', () => {
+  const sales = entry('app', 'sales', { title: 'Sales' })
+  const google = entry('provider', 'google')
+  const index = indexOf([sales, google])
+  it('resolves a predefined handle by either uuid, with its program and definition, and no read', () => {
+    const byId = resolvePredefined(index, sales.handle)
+    expect(byId).toMatchObject({ kind: 'predefined', predefined: 'app', name: 'sales', id: sales.id, uuid: sales.uuid, definition: { title: 'Sales' } })
+    expect(byId!.program).toMatchObject({ slot: 'tenant', schemaVersion: 0, capabilities: [] })
+    expect(resolvePredefined(index, sales.uuid)).toMatchObject({ name: 'sales' })
+    expect(resolvePredefined(index, google.id)!.program!.slot).toBe('kvBinding')
+    expect(resolvePredefined(index, handleOf(id, 'invoices'))).toBe(undefined)
+  })
+  it('the plugin puts every collection in the catalogue, with the predefined things it is given', async () => {
+    const config = handlesPlugin({ predefined: { apps: [{ slug: 'sales', title: 'Sales', anchors: [] }], roles: ['admin'] } })({ collections: [{ slug: 'invoices', fields: [{ name: 'title', type: 'text' }], custom: { app: 'sales' } }], endpoints: [] } as unknown as Config) as Config
+    const list = config.endpoints!.find((e) => e.path === '/h')!.handler as unknown as (req: unknown) => Response
+    const body = (await list({ user: { id: 1 }, query: {} }).json()) as { docs: Array<{ kind: string; name: string }> }
+    expect(body.docs.map((d) => `${d.kind}:${d.name}`)).toEqual(['app:sales', 'collection:invoices', 'role:admin'])
+    expect(((await list({ user: { id: 1 }, query: { kind: 'role' } }).json()) as { totalDocs: number }).totalDocs).toBe(1)
+    expect(list({ user: null, query: {} }).status).toBe(404)
+  })
+  it('the endpoint answers a predefined handle for a signed-in user only', async () => {
+    const handler = resolveEndpointFor(index).handler as unknown as (req: unknown) => Promise<Response>
+    const signedIn = await handler({ routeParams: { handle: sales.handle }, query: {}, user: { id: 1 }, payload: fake().payload })
+    expect(signedIn.status).toBe(200)
+    expect(await signedIn.json()).toMatchObject({ kind: 'predefined', name: 'sales' })
+    expect((await handler({ routeParams: { handle: sales.handle }, query: {}, user: null, payload: fake().payload })).status).toBe(404)
+    expect(typeof catalogueEndpointFor([sales]).handler).toBe('function')
   })
 })

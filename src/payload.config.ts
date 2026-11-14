@@ -90,7 +90,9 @@ import {
   type SupportedLocale,
 } from '@/i18n'
 
-import { navigation, packages } from '@/packages'
+import { APPS, navigation, packages } from '@/packages'
+import { PROVIDERS } from '@/packages/admin/providers'
+import { ACCOUNT_ROLES } from '@/utilities/ability/roles'
 import { gateByApp } from '@/access/collections/shared/appAccess'
 import { foldCollectionLifecycle } from '@/utilities/factory/collection'
 import type { Config } from '@/utilities/types'
@@ -513,7 +515,7 @@ export default buildConfig({
     // last: the collections other plugins brought (orders, forms, …) take their app's name too
     navigation(gateByApp),
     // every document gets a handle, and /api/h/:handle resolves one (src/plugins/handles)
-    handlesPlugin(),
+    handlesPlugin({ predefined: { apps: APPS, providers: PROVIDERS, roles: ACCOUNT_ROLES, locales: supportedLocales } }),
   ],
   secret: payloadSecret || 'INSECURE_BUILD_ONLY_PLACEHOLDER',
   typescript: {

@@ -30,6 +30,11 @@
  * Every one of them reads and writes through Payload with the caller's own access: what a role
  * may not read it cannot send, and what it may not update it cannot receive into.
  *
+ * PREDEFINED THINGS. An app, a provider, a collection, a role and a locale are uuid programs too
+ * (src/utilities/uuid/predefined): the plugin builds their catalogue once, when the config is
+ * built, and the same endpoint resolves their handles — with no read at all, since nothing about
+ * them is stored. `GET /api/h` lists the catalogue. Both answer signed-in users only.
+ *
  * Put it last, so it sees every collection.
  *
  * @standard RFC-9562 uuid · RFC-4648 §5 base64url · RFC-9110 §15.5.5 404
@@ -39,6 +44,7 @@
 import type { CollectionConfig, Config, Endpoint, Field, Payload, PayloadRequest, Plugin } from 'payload'
 import { decodeStructured } from '@/utilities/uuid/format'
 import { candidates, handleOf, isUuid, parse } from '@/utilities/uuid/handle'
+import { catalogue, indexOf, type Entry, type Kind as PredefinedKind, type Sources } from '@/utilities/uuid/predefined'
 import { accepts, dataOf, isStream, send, type Stream } from '@/utilities/uuid/stream'
 
 export type Kind = 'document' | 'head' | 'snapshot'
@@ -60,6 +66,29 @@ export interface Resolved {
   /** The program bits a content uuid carries. */
   readonly program?: { readonly slot: string; readonly capabilities: readonly string[]; readonly schemaVersion: number }
   readonly doc: Record<string, unknown>
+}
+
+export interface ResolvedPredefined {
+  readonly handle: string
+  readonly kind: 'predefined'
+  readonly predefined: PredefinedKind
+  readonly name: string
+  /** From kind and name: stable. */
+  readonly id: string
+  /** From kind, name and definition: what it is defined as now. */
+  readonly uuid: string
+  readonly handles: { readonly document: string; readonly content: string }
+  readonly program?: Resolved['program']
+  readonly definition: unknown
+}
+
+/** Resolve a predefined thing's handle — by either of its uuids — against a catalogue. No read. */
+export const resolvePredefined = (index: ReadonlyMap<string, Entry>, handle: string): ResolvedPredefined | undefined => {
+  const parsed = parse(handle)
+  const found = parsed ? index.get(parsed.uuid) : undefined
+  if (!found) return undefined
+  const tail = `@${found.kind}`
+  return { handle, kind: 'predefined', predefined: found.kind, name: found.name, id: found.id, uuid: found.uuid, handles: { document: found.handle, content: handleOf(found.uuid, tail) }, program: programOf(found.uuid), definition: found.definition }
 }
 
 /** Is this a content address — a version-8 uuid — rather than a document id? */
@@ -158,20 +187,37 @@ export const handleField = (collection: string): Field => ({
   },
 })
 
-/** `GET /api/h/:handle` */
-export const resolveEndpoint: Endpoint = {
+/** `GET /api/h/:handle` — a predefined thing first (no read), then a document. */
+export const resolveEndpointFor = (index: ReadonlyMap<string, Entry>): Endpoint => ({
   path: '/h/:handle',
   method: 'get',
   handler: async (req) => {
     const handle = String(req.routeParams?.handle ?? '')
     if (!parse(handle)) return Response.json({ errors: [{ message: 'Not a handle.' }] }, { status: 400 })
+    const predefined = req.user ? resolvePredefined(index, handle) : undefined
+    if (predefined) return Response.json(predefined)
     const depth = Number(req.query?.depth)
     const collection = typeof req.query?.collection === 'string' ? req.query.collection : undefined
     const resolved = await resolve(req.payload, handle, { req, collection, ...(Number.isInteger(depth) && depth >= 0 ? { depth } : {}) })
     // not found and not allowed answer the same: a handle does not say whether a document exists
     return resolved ? Response.json(resolved) : Response.json({ errors: [{ message: 'Nothing here.' }] }, { status: 404 })
   },
-}
+})
+
+/** `GET /api/h/:handle` with no predefined catalogue. */
+export const resolveEndpoint: Endpoint = resolveEndpointFor(new Map())
+
+/** `GET /api/h` — the catalogue of predefined things: what each is called and its two uuids. */
+export const catalogueEndpointFor = (entries: readonly Entry[]): Endpoint => ({
+  path: '/h',
+  method: 'get',
+  handler: (req) => {
+    if (!req.user) return Response.json({ errors: [{ message: 'Nothing here.' }] }, { status: 404 })
+    const kind = typeof req.query?.kind === 'string' ? req.query.kind : undefined
+    const listed = entries.filter((item) => kind === undefined || item.kind === kind).map(({ kind: k, name, id, uuid, handle }) => ({ kind: k, name, id, uuid, handle }))
+    return Response.json({ docs: listed, totalDocs: listed.length })
+  },
+})
 
 /** The fields Payload computes on read — never part of a stream. */
 const virtualFields = (payload: Payload, collection: string): Set<string> => {
@@ -245,11 +291,19 @@ export const receiveEndpoint: Endpoint = {
 
 const named = (field: Field, name: string): boolean => 'name' in field && field.name === name
 
+export interface HandlesOptions {
+  /** The predefined things to give handles to. The config's own collections are always added. */
+  readonly predefined?: Omit<Sources, 'collections'>
+}
+
 export const handlesPlugin =
-  (): Plugin =>
-  (config: Config): Config => ({
+  (options: HandlesOptions = {}): Plugin =>
+  (config: Config): Config => {
+    const entries = catalogue({ ...options.predefined, collections: (config.collections ?? []).map((collection) => ({ slug: collection.slug, fields: collection.fields, custom: collection.custom })) })
+    return {
     ...config,
     collections: (config.collections ?? []).map((collection): CollectionConfig => (collection.fields.some((field) => named(field, 'handle')) ? collection : { ...collection, fields: [...collection.fields, handleField(collection.slug)] })),
     // `receive` before `:handle`, so the fixed path is not read as a handle
-    endpoints: [...(config.endpoints ?? []), receiveEndpoint, sendEndpoint, resolveEndpoint],
-  })
+    endpoints: [...(config.endpoints ?? []), receiveEndpoint, sendEndpoint, catalogueEndpointFor(entries), resolveEndpointFor(indexOf(entries))],
+    }
+  }
