@@ -1,9 +1,9 @@
 import { describe, it, expect } from 'vitest'
-import * as barrel from './index'
+import * as barrel from '@/globals/header/hook'
 
-describe('footer/hook — the canonical entry point', () => {
-  it('offers revalidateFooter, so an importer names the folder rather than a file inside it', () => {
-    expect(Object.hasOwn(barrel, 'revalidateFooter')).toBe(true)
+describe('header/hook — the canonical entry point', () => {
+  it('offers revalidateHeader, so an importer names the folder rather than a file inside it', () => {
+    expect(Object.hasOwn(barrel, 'revalidateHeader')).toBe(true)
   })
 
   it('every member it offers is real — a barrel that re-exports nothing is a dead address', () => {

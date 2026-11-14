@@ -8,8 +8,8 @@ vi.mock('next/headers', () => ({ draftMode: async () => ({ isEnabled: false }) }
 vi.mock('next/cache', () => ({ unstable_noStore: vi.fn() }))
 vi.mock('@/admin/bar', () => ({ AdminBar: () => null }))
 vi.mock('@/document/html/lang', () => ({ DocumentHtmlLang: () => null }))
-vi.mock('@/footer', () => ({ Footer: () => null }))
-vi.mock('@/header', () => ({ Header: () => null }))
+vi.mock('@/globals/footer', () => ({ Footer: () => null }))
+vi.mock('@/globals/header', () => ({ Header: () => null }))
 
 const { IntlChrome } = await import('./index')
 

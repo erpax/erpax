@@ -57,8 +57,8 @@ import { QueryPresetsColumnsCell as QueryPresetsColumnsCell_2b8867833a34864a02dd
 import { QueryPresetsColumnField as QueryPresetsColumnField_2b8867833a34864a02ddf429b0728a40 } from '@payloadcms/next/client'
 import { QueryPresetsGroupByCell as QueryPresetsGroupByCell_2b8867833a34864a02ddf429b0728a40 } from '@payloadcms/next/client'
 import { QueryPresetsGroupByField as QueryPresetsGroupByField_2b8867833a34864a02ddf429b0728a40 } from '@payloadcms/next/client'
-import { RowLabel as RowLabel_9a35bb380c4f6575d333b39db8a450cf } from '@/header/RowLabel'
-import { RowLabel as RowLabel_74c0513a7fdcd0b53c77d899ab1cb2c2 } from '@/footer/RowLabel'
+import { RowLabel as RowLabel_09a5d00d1c2981c8a330d05897133905 } from '@/globals/header/RowLabel'
+import { RowLabel as RowLabel_136e5b5eb095dc39b42ab4c2528bb385 } from '@/globals/footer/RowLabel'
 import { default as default_57122232237b9417f4a7d29c208d6a6c } from '@/before/dashboard'
 import { default as default_4ceb3074435d2b230315867f7bd7dc11 } from '@/before/login'
 import { TenantSelector as TenantSelector_d6d5f193a167989e2ee7d14202901e62 } from '@payloadcms/plugin-multi-tenant/rsc'
@@ -128,8 +128,8 @@ export const importMap = {
   "@payloadcms/next/client#QueryPresetsColumnField": QueryPresetsColumnField_2b8867833a34864a02ddf429b0728a40,
   "@payloadcms/next/client#QueryPresetsGroupByCell": QueryPresetsGroupByCell_2b8867833a34864a02ddf429b0728a40,
   "@payloadcms/next/client#QueryPresetsGroupByField": QueryPresetsGroupByField_2b8867833a34864a02ddf429b0728a40,
-  "@/header/RowLabel#RowLabel": RowLabel_9a35bb380c4f6575d333b39db8a450cf,
-  "@/footer/RowLabel#RowLabel": RowLabel_74c0513a7fdcd0b53c77d899ab1cb2c2,
+  "@/globals/header/RowLabel#RowLabel": RowLabel_09a5d00d1c2981c8a330d05897133905,
+  "@/globals/footer/RowLabel#RowLabel": RowLabel_136e5b5eb095dc39b42ab4c2528bb385,
   "@/before/dashboard#default": default_57122232237b9417f4a7d29c208d6a6c,
   "@/before/login#default": default_4ceb3074435d2b230315867f7bd7dc11,
   "@payloadcms/plugin-multi-tenant/rsc#TenantSelector": TenantSelector_d6d5f193a167989e2ee7d14202901e62,

@@ -1,4 +1,4 @@
-import { HeaderClient } from './Component.client'
+import { HeaderClient } from '@/globals/header/Component.client'
 import type { SupportedLocale } from '@/i18n/localization'
 
 import { getCachedGlobal } from '@/rfc/9110'

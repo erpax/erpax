@@ -12,7 +12,7 @@ vi.mock('@/link/component', () => ({ CMSLink: ({ label }: { label?: string }) =>
 vi.mock('@/locale/switcher', () => ({ FrontendLocaleSwitcher: () => <div /> }))
 vi.mock('lucide-react', () => ({ SearchIcon: () => <svg /> }))
 
-const { HeaderNav } = await import('./index')
+const { HeaderNav } = await import('@/globals/header/nav')
 
 const data = { navItems: [{ link: { label: 'Posts' } }] } as never
 

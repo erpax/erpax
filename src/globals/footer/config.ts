@@ -35,7 +35,7 @@ export const Footer: GlobalConfig = {
       admin: {
         initCollapsed: true,
         components: {
-          RowLabel: '@/footer/RowLabel#RowLabel',
+          RowLabel: '@/globals/footer/RowLabel#RowLabel',
         },
       },
     },
