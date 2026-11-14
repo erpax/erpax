@@ -89,6 +89,7 @@ import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
 import { HORO_DIGITS, isHoroStep, type HoroStep } from '@/utilities/horo'
+import { recomputeParentAggregates } from '@/utilities/factory'
 
 // ─── The option line (the collapse of the 36 fixed columns) ──────────
 //
@@ -160,6 +161,7 @@ interface WorkorderShape {
   closedAt?: string | null
   state?: string
   wage?: number
+  pieceWage?: number
   minutesRemaining?: number
 }
 
@@ -188,17 +190,37 @@ export const machinesPerWorker = (v: unknown): number => {
 }
 
 /**
- * The canonical piece-rate wage (verified €4,683,899.53 over 2.02M rows):
+ * The canonical piece-rate wage, UNROUNDED (verified €4,683,899.53 over 2.02M rows):
  *   unitsProduced × unitSeconds × payPerHour / 3600 / mpw
+ *
+ * This is the value the shift rolls up. etrima sums the unrounded order wages and rounds the
+ * SUM once (`work_order.rb` summary `SUM(…) as wage` → `work_shift.rb` `summary.wage.round(2)`).
+ * Summing per-order cents instead reproduced only 62.0% of 374,856 real shift wages exactly;
+ * summing this reproduces 98.4% (`pnpm test:etrima`).
  */
-export const pieceRateWage = (doc: WorkorderShape): number => {
+export const pieceWage = (doc: WorkorderShape): number => {
   const produced = toInt(doc.unitsProduced)
   const unitSeconds = toInt(doc.unitSeconds)
   const pay = Number(doc.payPerHour)
   if (!Number.isFinite(pay) || pay <= 0 || unitSeconds <= 0 || produced <= 0) return 0
-  const mpw = machinesPerWorker(doc.machinesPerWorker)
-  return exactRound(((produced * unitSeconds * pay) / 3600 / mpw) * 100) / 100
+  return (produced * unitSeconds * pay) / 3600 / machinesPerWorker(doc.machinesPerWorker)
 }
+
+/** The piece-rate wage as shown on ONE order: `pieceWage` rounded to cents. Never sum this — sum `pieceWage`. */
+export const pieceRateWage = (doc: WorkorderShape): number => exactRound(pieceWage(doc) * 100) / 100
+
+/**
+ * The shift's piece-rollup pole: `work-shifts.orderWage` = Σ `pieceWage` of its orders, recomputed
+ * whenever an order is written, deleted or moved between shifts. The shift's own
+ * `computeShiftAuthority` then settles `wage = round2(max(time pay, orderWage))` on that update.
+ * The children are read through afterRead, so `pieceWage` is the decorated unrounded value.
+ */
+export const shiftOrderWage = recomputeParentAggregates({
+  childSlug: 'work-orders',
+  parentSlug: 'work-shifts',
+  parentRelField: 'workShift',
+  aggregates: [{ target: 'orderWage', op: 'sum', source: 'pieceWage' }],
+})
 
 /** work-minutes remaining = (ordered − produced) × unitSeconds / mpw / 60 (etrima `work_minutes_remaining`). */
 export const minutesRemaining = (doc: WorkorderShape): number => {
@@ -324,6 +346,7 @@ export const forwardProducedToNextPhase: CollectionAfterChangeHook = async ({ do
 export const decorateDerived: CollectionAfterReadHook = ({ doc }) => {
   const d = doc as WorkorderShape
   d.state = deriveState(d)
+  d.pieceWage = pieceWage(d)
   d.wage = pieceRateWage(d)
   d.minutesRemaining = minutesRemaining(d)
   return doc
@@ -425,13 +448,13 @@ export const Workorders: CollectionConfig = {
   ],
   hooks: standardCollectionHooks('work-orders', {
     beforeChange: [assertTotalsBalance, inheritShiftEfficiency],
-    afterChange: [forwardProducedToNextPhase],
+    afterChange: [forwardProducedToNextPhase, shiftOrderWage.afterChange],
   }),
   timestamps: true,
 }
 
-// The derived decorator is registered separately so it never displaces the
+// The derived decorator and the shift rollup's delete arm are registered separately so it never displaces the
 // standard spine's afterChange audit hook (afterRead is its own lane).
-Workorders.hooks = { ...Workorders.hooks, afterRead: [decorateDerived] }
+Workorders.hooks = { ...Workorders.hooks, afterRead: [decorateDerived], afterDelete: [shiftOrderWage.afterDelete] }
 
 export default Workorders
