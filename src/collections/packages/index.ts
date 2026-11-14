@@ -64,7 +64,7 @@ const Packages: CollectionConfig = {
       label: 'Contents',
       admin: { description: 'Item/lot lines packed in this unit (etrima pack_items).' },
       fields: [
-        { name: 'item', type: 'relationship', relationTo: 'items', required: true },
+        { name: 'item', type: 'relationship', relationTo: 'products', required: true },
         { name: 'batch', type: 'relationship', relationTo: 'batches',
           admin: { description: 'Lot/batch of the packed quantity — keeps traceability through packing.' } },
         ...measureFields({ required: true }),

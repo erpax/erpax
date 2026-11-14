@@ -33,7 +33,6 @@ export { SubscriptionPlans } from '@/collections/subscription-plans'
 export { Subscriptions } from '@/collections/subscriptions'
 
 // Inventory Collections
-export { Items } from '@/collections/items'
 
 // ===== FLAT FINANCIAL & OPERATIONAL COLLECTIONS =====
 // All flattened from accounting/ domain silo. Organized by actual concern.

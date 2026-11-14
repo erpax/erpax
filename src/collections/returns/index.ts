@@ -60,7 +60,7 @@ const Returns: CollectionConfig = {
       required: true,
       minRows: 1,
       fields: [
-        { name: 'item', type: 'relationship', relationTo: 'items' },
+        { name: 'item', type: 'relationship', relationTo: 'products' },
         { name: 'quantityReturned', type: 'number', required: true, min: 0 },
         { name: 'restock', type: 'checkbox', defaultValue: true, admin: { description: 'Return to inventory or write off?' } },
       ],

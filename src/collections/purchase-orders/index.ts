@@ -123,7 +123,7 @@ const PurchaseOrders: CollectionConfig = {
       minRows: 1,
       fields: [
         { name: 'lineNumber', type: 'number', defaultValue: 1 },
-        { name: 'item', type: 'relationship', relationTo: 'items' },
+        { name: 'item', type: 'relationship', relationTo: 'products' },
         { name: 'description', type: 'text', localized: true, required: true },
         { name: 'quantity', type: 'number', required: true, min: 0 },
         { name: 'unitPrice', type: 'number', required: true, min: 0 },

@@ -57,7 +57,7 @@ const Shipments: CollectionConfig = {
       name: 'lines',
       type: 'array',
       fields: [
-        { name: 'item', type: 'relationship', relationTo: 'items' },
+        { name: 'item', type: 'relationship', relationTo: 'products' },
         { name: 'quantity', type: 'number', required: true, min: 0 },
       ],
     },

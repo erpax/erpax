@@ -155,7 +155,7 @@ export const orderFields = (): Field[] => [
     fields: [
       { name: 'lineNumber', type: 'number', required: true,
         admin: { description: 'Position within the order. Stable for cross-document trace.' } },
-      { name: 'item', type: 'relationship', relationTo: 'items',
+      { name: 'item', type: 'relationship', relationTo: 'products',
         admin: { description: 'Catalogue item (when ordering from the item master).' } },
       { name: 'description', type: 'text', localized: true, required: true },
       { name: 'quantity', type: 'number', required: true, min: 0 },

@@ -42,6 +42,7 @@ import { validateProductCheckout } from '@/components/ecommerce/product/validati
 import { localeRecord } from '@/i18n'
 import { DEFAULT_COUNTRY, DEFAULT_CURRENCY } from '@/utilities/config/regional/defaults'
 import { validateAddressHook } from '@/hooks/collections/users/validateAddressHook'
+import { variantsOverride } from '@/components/ecommerce/catalogue'
 import { ordersOverride } from '@/components/ecommerce/orders'
 import { transactionsOverride } from '@/components/ecommerce/transactions'
 
@@ -211,7 +212,7 @@ export function createEcommercePlugin(): Plugin {
       variants: {
         variantOptionsCollectionOverride: ecommerceGroupOverride,
         variantTypesCollectionOverride: ecommerceGroupOverride,
-        variantsCollectionOverride: ecommerceGroupOverride,
+        variantsCollectionOverride: variantsOverride,
       },
     },
     // The payment register is folded into the plugin's transaction here — see @/components/ecommerce/transactions.

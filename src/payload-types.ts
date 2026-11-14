@@ -178,7 +178,6 @@ export interface Config {
     'investment-properties': InvestmentProperty;
     'invoice-lines': InvoiceLine;
     invoices: Invoice;
-    items: Item;
     'job-positions': JobPosition;
     'journal-entries': JournalEntry;
     'kyc-checks': KycCheck;
@@ -412,7 +411,6 @@ export interface Config {
     'investment-properties': InvestmentPropertiesSelect<false> | InvestmentPropertiesSelect<true>;
     'invoice-lines': InvoiceLinesSelect<false> | InvoiceLinesSelect<true>;
     invoices: InvoicesSelect<false> | InvoicesSelect<true>;
-    items: ItemsSelect<false> | ItemsSelect<true>;
     'job-positions': JobPositionsSelect<false> | JobPositionsSelect<true>;
     'journal-entries': JournalEntriesSelect<false> | JournalEntriesSelect<true>;
     'kyc-checks': KycChecksSelect<false> | KycChecksSelect<true>;
@@ -2185,6 +2183,14 @@ export interface Variant {
   inventory?: number | null;
   priceInEUREnabled?: boolean | null;
   priceInEUR?: number | null;
+  /**
+   * SKU
+   */
+  sku?: string | null;
+  /**
+   * Barcode (GS1 GTIN)
+   */
+  barcode?: string | null;
   updatedAt: string;
   createdAt: string;
   deletedAt?: string | null;
@@ -2235,6 +2241,162 @@ export interface Product {
   };
   priceInEUREnabled?: boolean | null;
   priceInEUR?: number | null;
+  /**
+   * Item code — the ERP identifier documents quote. Empty on a storefront-only product.
+   */
+  code?: string | null;
+  /**
+   * SKU
+   */
+  sku?: string | null;
+  /**
+   * Barcode (GS1 GTIN)
+   */
+  barcode?: string | null;
+  /**
+   * Owner/seller
+   */
+  address?: (string | null) | Address;
+  pricing: {
+    /**
+     * Selling price
+     */
+    price?: number | null;
+    /**
+     * Cost price
+     */
+    cost?: number | null;
+    /**
+     * Compare at price
+     */
+    compareAtPrice?: number | null;
+    /**
+     * Vendor price
+     */
+    vendorPrice?: number | null;
+    /**
+     * Minimum price
+     */
+    minPrice?: number | null;
+    /**
+     * Currency
+     */
+    currencyCode: string;
+    /**
+     * Price includes tax
+     */
+    priceIncludesTax?: boolean | null;
+  };
+  taxation?: {
+    /**
+     * Is taxable
+     */
+    taxable?: boolean | null;
+    /**
+     * Tax rate %
+     */
+    taxRate?: number | null;
+    /**
+     * Tax debit account
+     */
+    taxDebitAccount?: (string | null) | GlAccount;
+    /**
+     * Tax credit account
+     */
+    taxCreditAccount?: (string | null) | GlAccount;
+  };
+  ledger?: {
+    /**
+     * Debit account
+     */
+    debitAccount?: (string | null) | GlAccount;
+    /**
+     * Credit account
+     */
+    creditAccount?: (string | null) | GlAccount;
+  };
+  stock: {
+    /**
+     * Current inventory
+     */
+    inventoryQuantity: number;
+    /**
+     * Inventory management
+     */
+    inventoryManagement?: ('shopify' | 'manual' | 'none') | null;
+    /**
+     * Out of stock policy
+     */
+    inventoryPolicy?: ('deny' | 'continue') | null;
+  };
+  physical?: {
+    /**
+     * Weight
+     */
+    weight?: number | null;
+    /**
+     * Weight unit (kg, lbs)
+     */
+    weightUnit?: string | null;
+    /**
+     * Weight in grams
+     */
+    grams?: number | null;
+    /**
+     * HS Code
+     */
+    hsCode?: string | null;
+    /**
+     * Material / fibre composition (e.g. "80% cotton, 20% polyester"). The garment-catalog field from the etrima products merge (93.7% populated) — feeds customs (the HS code) and fibre-content labelling.
+     */
+    contents?: string | null;
+    /**
+     * Requires shipping
+     */
+    requiresShipping?: boolean | null;
+  };
+  discounts?: {
+    /**
+     * Max discount %
+     */
+    maxDiscountRate?: number | null;
+    /**
+     * Min profit %
+     */
+    minProfitRate?: number | null;
+    /**
+     * Max profit %
+     */
+    maxProfitRate?: number | null;
+  };
+  fulfillment?: {
+    /**
+     * Fulfillment service
+     */
+    fulfillmentService?: string | null;
+    /**
+     * Billing period (if recurring)
+     */
+    period?: ('second' | 'minute' | 'hour' | 'day' | 'week' | 'month' | 'year') | null;
+  };
+  visibility?: {
+    /**
+     * Item visibility
+     */
+    visibility?: ('public' | 'private' | 'wholesale') | null;
+  };
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   relatedProducts?: (string | Product)[] | null;
   meta?: {
     title?: string | null;
@@ -2757,7 +2919,7 @@ export interface Order {
         /**
          * Catalogue item (when ordering from the item master).
          */
-        item?: (string | null) | Item;
+        item?: (string | null) | Product;
         description: string;
         quantity: number;
         /**
@@ -3904,188 +4066,6 @@ export interface PerformanceObligation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "items".
- */
-export interface Item {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Item code
-   */
-  code: string;
-  /**
-   * Display name — the catalog product name (the unique `code` is the identifier). From the etrima products merge.
-   */
-  name?: string | null;
-  /**
-   * SKU
-   */
-  sku?: string | null;
-  /**
-   * Barcode
-   */
-  barcode?: string | null;
-  /**
-   * The storefront product this item is sold as (e-commerce plugin).
-   */
-  product?: (string | null) | Product;
-  /**
-   * The storefront variant (option combination) this item is, when the product has variants.
-   */
-  variant?: (string | null) | Variant;
-  /**
-   * Owner/seller
-   */
-  address: string | Address;
-  pricing: {
-    /**
-     * Selling price
-     */
-    price?: number | null;
-    /**
-     * Cost price
-     */
-    cost?: number | null;
-    /**
-     * Compare at price
-     */
-    compareAtPrice?: number | null;
-    /**
-     * Vendor price
-     */
-    vendorPrice?: number | null;
-    /**
-     * Minimum price
-     */
-    minPrice?: number | null;
-    /**
-     * Currency
-     */
-    currencyCode: string;
-    /**
-     * Price includes tax
-     */
-    priceIncludesTax?: boolean | null;
-  };
-  taxation?: {
-    /**
-     * Is taxable
-     */
-    taxable?: boolean | null;
-    /**
-     * Tax rate %
-     */
-    taxRate?: number | null;
-    /**
-     * Tax debit account
-     */
-    taxDebitAccount?: (string | null) | GlAccount;
-    /**
-     * Tax credit account
-     */
-    taxCreditAccount?: (string | null) | GlAccount;
-  };
-  ledger?: {
-    /**
-     * Debit account
-     */
-    debitAccount?: (string | null) | GlAccount;
-    /**
-     * Credit account
-     */
-    creditAccount?: (string | null) | GlAccount;
-  };
-  inventory: {
-    /**
-     * Current inventory
-     */
-    inventoryQuantity: number;
-    /**
-     * Inventory management
-     */
-    inventoryManagement?: ('shopify' | 'manual' | 'none') | null;
-    /**
-     * Out of stock policy
-     */
-    inventoryPolicy?: ('deny' | 'continue') | null;
-  };
-  physical?: {
-    /**
-     * Weight
-     */
-    weight?: number | null;
-    /**
-     * Weight unit (kg, lbs)
-     */
-    weightUnit?: string | null;
-    /**
-     * Weight in grams
-     */
-    grams?: number | null;
-    /**
-     * HS Code
-     */
-    hsCode?: string | null;
-    /**
-     * Material / fibre composition (e.g. "80% cotton, 20% polyester"). The garment-catalog field from the etrima products merge (93.7% populated) — feeds customs (the HS code) and fibre-content labelling.
-     */
-    contents?: string | null;
-    /**
-     * Requires shipping
-     */
-    requiresShipping?: boolean | null;
-  };
-  discounts?: {
-    /**
-     * Max discount %
-     */
-    maxDiscountRate?: number | null;
-    /**
-     * Min profit %
-     */
-    minProfitRate?: number | null;
-    /**
-     * Max profit %
-     */
-    maxProfitRate?: number | null;
-  };
-  fulfillment?: {
-    /**
-     * Fulfillment service
-     */
-    fulfillmentService?: string | null;
-    /**
-     * Billing period (if recurring)
-     */
-    period?: ('second' | 'minute' | 'hour' | 'day' | 'week' | 'month' | 'year') | null;
-  };
-  visibility?: {
-    /**
-     * Item visibility
-     */
-    visibility?: ('public' | 'private' | 'wholesale') | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6853,7 +6833,7 @@ export interface Batch {
   /**
    * Item this lot is a quantity of.
    */
-  item: string | Item;
+  item: string | Product;
   /**
    * Original lot quantity in `unitOfMeasure`.
    */
@@ -7104,7 +7084,7 @@ export interface LotVariant {
   /**
    * The product variant produced (the catalog item).
    */
-  productVariant?: (string | null) | Item;
+  productVariant?: (string | null) | Product;
   /**
    * The current routing step this variant sits at (the coordinate cross to the chain).
    */
@@ -7248,7 +7228,7 @@ export interface Lot {
   /**
    * The product produced (the catalog item).
    */
-  product?: (string | null) | Item;
+  product?: (string | null) | Product;
   /**
    * Product/programme code (e.g. `SHIMA_07`, `CONF_21`). Open text — 20 yrs of real codes.
    */
@@ -8044,7 +8024,7 @@ export interface GoodsReceipt {
   purchaseOrder: string | PurchaseOrder;
   receivedDate: string;
   lines: {
-    item?: (string | null) | Item;
+    item?: (string | null) | Product;
     description?: string | null;
     quantityReceived: number;
     quantityDamaged?: number | null;
@@ -8093,7 +8073,7 @@ export interface PurchaseOrder {
   incotermsLocation?: string | null;
   lines: {
     lineNumber?: number | null;
-    item?: (string | null) | Item;
+    item?: (string | null) | Product;
     description: string;
     quantity: number;
     unitPrice: number;
@@ -8204,7 +8184,7 @@ export interface QualityInspection {
    */
   reference: string;
   inspectionType: 'incoming' | 'in_process' | 'final' | 'complaint' | 'calibration';
-  item: string | Item;
+  item: string | Product;
   inspectedQuantity: number;
   /**
    * For lot-acceptance sampling (ISO 2859) — how many of `inspectedQuantity` were tested.
@@ -8276,7 +8256,7 @@ export interface Shipment {
   shippingCost?: number | null;
   lines?:
     | {
-        item?: (string | null) | Item;
+        item?: (string | null) | Product;
         quantity: number;
         id?: string | null;
       }[]
@@ -8325,7 +8305,7 @@ export interface InventoryMovement {
     | 'adjustment'
     | 'write_off'
     | 'opening';
-  item: string | Item;
+  item: string | Product;
   /**
    * Lot / serial number for traceability.
    */
@@ -8493,7 +8473,7 @@ export interface BillsOfMaterial {
   /**
    * The finished-good item this BOM produces.
    */
-  finishedGood: string | Item;
+  finishedGood: string | Product;
   /**
    * Version label (e.g. `v3`, `2026-Q1`). Bumped per ECO.
    */
@@ -8517,7 +8497,7 @@ export interface BillsOfMaterial {
     /**
      * Component item (raw material / sub-assembly).
      */
-    item: string | Item;
+    item: string | Product;
     /**
      * Quantity consumed per BOM run.
      */
@@ -11077,7 +11057,7 @@ export interface CustomsDeclaration {
     /**
      * The internal item — denormalised hsCode flows into `hsCode` for the declaration.
      */
-    item?: (string | null) | Item;
+    item?: (string | null) | Product;
     /**
      * Goods description per WCO HS (must match commercial invoice).
      */
@@ -13267,15 +13247,15 @@ export interface InvoiceLine {
     /**
      * Buyer item reference
      */
-    buyerItem?: (string | null) | Item;
+    buyerItem?: (string | null) | Product;
     /**
      * Seller item reference
      */
-    sellerItem?: (string | null) | Item;
+    sellerItem?: (string | null) | Product;
     /**
      * Source item/inventory
      */
-    source?: (string | null) | Item;
+    source?: (string | null) | Product;
     /**
      * Destination
      */
@@ -14852,7 +14832,7 @@ export interface Package {
    */
   contents?:
     | {
-        item: string | Item;
+        item: string | Product;
         /**
          * Lot/batch of the packed quantity — keeps traceability through packing.
          */
@@ -15390,7 +15370,7 @@ export interface ProductionReceipt {
   /**
    * Denormalised from work-order for fast filter.
    */
-  finishedGood: string | Item;
+  finishedGood: string | Product;
   receivedQuantity: number;
   targetWarehouse: string | WarehouseLocation;
   /**
@@ -15600,7 +15580,7 @@ export interface PurchaseRequisition {
   businessJustification: string;
   lines: {
     description: string;
-    item?: (string | null) | Item;
+    item?: (string | null) | Product;
     quantity: number;
     uom?: string | null;
     /**
@@ -15690,7 +15670,7 @@ export interface VendorQuote {
   validUntil?: string | null;
   lines: {
     description: string;
-    item?: (string | null) | Item;
+    item?: (string | null) | Product;
     quantity: number;
     uom?: string | null;
     unitPrice: number;
@@ -16290,7 +16270,7 @@ export interface Return {
   customer?: (string | null) | Party;
   reason: 'defective' | 'wrong_item' | 'customer_changed_mind' | 'damaged' | 'late' | 'other';
   lines: {
-    item?: (string | null) | Item;
+    item?: (string | null) | Product;
     quantityReturned: number;
     /**
      * Return to inventory or write off?
@@ -22576,84 +22556,6 @@ export interface InvoicesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "items_select".
- */
-export interface ItemsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  code?: T;
-  name?: T;
-  sku?: T;
-  barcode?: T;
-  product?: T;
-  variant?: T;
-  address?: T;
-  pricing?:
-    | T
-    | {
-        price?: T;
-        cost?: T;
-        compareAtPrice?: T;
-        vendorPrice?: T;
-        minPrice?: T;
-        currencyCode?: T;
-        priceIncludesTax?: T;
-      };
-  taxation?:
-    | T
-    | {
-        taxable?: T;
-        taxRate?: T;
-        taxDebitAccount?: T;
-        taxCreditAccount?: T;
-      };
-  ledger?:
-    | T
-    | {
-        debitAccount?: T;
-        creditAccount?: T;
-      };
-  inventory?:
-    | T
-    | {
-        inventoryQuantity?: T;
-        inventoryManagement?: T;
-        inventoryPolicy?: T;
-      };
-  physical?:
-    | T
-    | {
-        weight?: T;
-        weightUnit?: T;
-        grams?: T;
-        hsCode?: T;
-        contents?: T;
-        requiresShipping?: T;
-      };
-  discounts?:
-    | T
-    | {
-        maxDiscountRate?: T;
-        minProfitRate?: T;
-        maxProfitRate?: T;
-      };
-  fulfillment?:
-    | T
-    | {
-        fulfillmentService?: T;
-        period?: T;
-      };
-  visibility?:
-    | T
-    | {
-        visibility?: T;
-      };
-  metadata?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "job-positions_select".
  */
 export interface JobPositionsSelect<T extends boolean = true> {
@@ -26799,6 +26701,8 @@ export interface VariantsSelect<T extends boolean = true> {
   inventory?: T;
   priceInEUREnabled?: T;
   priceInEUR?: T;
+  sku?: T;
+  barcode?: T;
   updatedAt?: T;
   createdAt?: T;
   deletedAt?: T;
@@ -26862,6 +26766,71 @@ export interface ProductsSelect<T extends boolean = true> {
   variants?: T;
   priceInEUREnabled?: T;
   priceInEUR?: T;
+  code?: T;
+  sku?: T;
+  barcode?: T;
+  address?: T;
+  pricing?:
+    | T
+    | {
+        price?: T;
+        cost?: T;
+        compareAtPrice?: T;
+        vendorPrice?: T;
+        minPrice?: T;
+        currencyCode?: T;
+        priceIncludesTax?: T;
+      };
+  taxation?:
+    | T
+    | {
+        taxable?: T;
+        taxRate?: T;
+        taxDebitAccount?: T;
+        taxCreditAccount?: T;
+      };
+  ledger?:
+    | T
+    | {
+        debitAccount?: T;
+        creditAccount?: T;
+      };
+  stock?:
+    | T
+    | {
+        inventoryQuantity?: T;
+        inventoryManagement?: T;
+        inventoryPolicy?: T;
+      };
+  physical?:
+    | T
+    | {
+        weight?: T;
+        weightUnit?: T;
+        grams?: T;
+        hsCode?: T;
+        contents?: T;
+        requiresShipping?: T;
+      };
+  discounts?:
+    | T
+    | {
+        maxDiscountRate?: T;
+        minProfitRate?: T;
+        maxProfitRate?: T;
+      };
+  fulfillment?:
+    | T
+    | {
+        fulfillmentService?: T;
+        period?: T;
+      };
+  visibility?:
+    | T
+    | {
+        visibility?: T;
+      };
+  metadata?: T;
   relatedProducts?: T;
   meta?:
     | T
@@ -27710,7 +27679,6 @@ export interface TaskCreateCollectionExport {
       | 'investment-properties'
       | 'invoice-lines'
       | 'invoices'
-      | 'items'
       | 'job-positions'
       | 'journal-entries'
       | 'kyc-checks'

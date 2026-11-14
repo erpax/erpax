@@ -72,7 +72,7 @@ const GoodsReceipts: CollectionConfig = {
       required: true,
       minRows: 1,
       fields: [
-        { name: 'item', type: 'relationship', relationTo: 'items' },
+        { name: 'item', type: 'relationship', relationTo: 'products' },
         { name: 'description', type: 'text', localized: true },
         { name: 'quantityReceived', type: 'number', required: true, min: 0 },
         { name: 'quantityDamaged', type: 'number', defaultValue: 0, min: 0 },

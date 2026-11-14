@@ -68,19 +68,20 @@ async function recomputeItem(
     const itemsOut = await sumQuantity(req, 'items.sellerItem', itemId, tenantId)
 
     const item = (await req.payload
-      .findByID({ collection: 'items', id: itemId, depth: 0, overrideAccess: true, req })
-      .catch((): null => null)) as { inventory?: Record<string, unknown> } | null
+      .findByID({ collection: 'products', id: itemId, depth: 0, overrideAccess: true, req })
+      .catch((): null => null)) as { stock?: Record<string, unknown> } | null
     if (!item) return
 
     await req.payload.update({
-      collection: 'items',
+      collection: 'products',
       id: itemId,
+      // `stock` is the item master's group; the plugin's own `inventory` number is the checkout's.
       data: {
-        inventory: {
-          ...(item.inventory ?? {}),
+        stock: {
+          ...(item.stock ?? {}),
           inventoryQuantity: itemsIn - itemsOut,
         },
-      },
+      } as never,
       depth: 0,
       overrideAccess: true,
       req,

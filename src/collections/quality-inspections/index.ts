@@ -51,7 +51,7 @@ const QualityInspections: CollectionConfig = {
         { label: 'Calibration Check (ISO 17025)', value: 'calibration' },
       ],
     },
-    { name: 'item', type: 'relationship', relationTo: 'items', required: true, index: true },
+    { name: 'item', type: 'relationship', relationTo: 'products', required: true, index: true },
     { name: 'inspectedQuantity', type: 'number', required: true, min: 0 },
     { name: 'sampleSize', type: 'number',
       admin: { description: 'For lot-acceptance sampling (ISO 2859) — how many of `inspectedQuantity` were tested.' } },

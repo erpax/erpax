@@ -139,7 +139,7 @@ const Lots: CollectionConfig = {
     {
       name: 'product',
       type: 'relationship',
-      relationTo: 'items',
+      relationTo: 'products',
       index: true,
       admin: { description: 'The product produced (the catalog item).' },
     },

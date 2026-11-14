@@ -95,7 +95,7 @@ const LotVariants: CollectionConfig = {
     {
       name: 'productVariant',
       type: 'relationship',
-      relationTo: 'items',
+      relationTo: 'products',
       index: true,
       admin: { description: 'The product variant produced (the catalog item).' },
     },
