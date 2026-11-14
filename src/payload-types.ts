@@ -18705,6 +18705,283 @@ export interface FormSubmission {
         id?: string | null;
       }[]
     | null;
+  /**
+   * The documents this submission refers to — one row per reference, each a real relationship.
+   */
+  references?:
+    | {
+        /**
+         * The form field this reference stands for (e.g. legalEntity).
+         */
+        field: string;
+        document:
+          | {
+              relationTo: 'addresses';
+              value: string | Address;
+            }
+          | {
+              relationTo: 'audit-committees';
+              value: string | AuditCommittee;
+            }
+          | {
+              relationTo: 'audit-evidence';
+              value: string | AuditEvidence;
+            }
+          | {
+              relationTo: 'audit-findings';
+              value: string | AuditFinding;
+            }
+          | {
+              relationTo: 'bank-accounts';
+              value: string | BankAccount;
+            }
+          | {
+              relationTo: 'bank-statements';
+              value: string | BankStatement;
+            }
+          | {
+              relationTo: 'bookable-resources';
+              value: string | BookableResource;
+            }
+          | {
+              relationTo: 'categories';
+              value: string | Category;
+            }
+          | {
+              relationTo: 'compliance-frameworks';
+              value: string | ComplianceFramework;
+            }
+          | {
+              relationTo: 'compliance-gaps';
+              value: string | ComplianceGap;
+            }
+          | {
+              relationTo: 'compliance-requirements';
+              value: string | ComplianceRequirement;
+            }
+          | {
+              relationTo: 'consent-records';
+              value: string | ConsentRecord;
+            }
+          | {
+              relationTo: 'consignment-arrangements';
+              value: string | ConsignmentArrangement;
+            }
+          | {
+              relationTo: 'consolidations';
+              value: string | Consolidation;
+            }
+          | {
+              relationTo: 'contracts';
+              value: string | Contract;
+            }
+          | {
+              relationTo: 'control-tests';
+              value: string | ControlTest;
+            }
+          | {
+              relationTo: 'cost-centers';
+              value: string | CostCenter;
+            }
+          | {
+              relationTo: 'employees';
+              value: string | Employee;
+            }
+          | {
+              relationTo: 'entity-types';
+              value: string | EntityType;
+            }
+          | {
+              relationTo: 'evidence-attestations';
+              value: string | EvidenceAttestation;
+            }
+          | {
+              relationTo: 'fair-value-measurements';
+              value: string | FairValueMeasurement;
+            }
+          | {
+              relationTo: 'fiscal-devices';
+              value: string | FiscalDevice;
+            }
+          | {
+              relationTo: 'fiscal-periods';
+              value: string | FiscalPeriod;
+            }
+          | {
+              relationTo: 'fixed-assets';
+              value: string | FixedAsset;
+            }
+          | {
+              relationTo: 'fx-transactions';
+              value: string | FxTransaction;
+            }
+          | {
+              relationTo: 'gl-accounts';
+              value: string | GlAccount;
+            }
+          | {
+              relationTo: 'goods-receipts';
+              value: string | GoodsReceipt;
+            }
+          | {
+              relationTo: 'government-grants';
+              value: string | GovernmentGrant;
+            }
+          | {
+              relationTo: 'internal-controls';
+              value: string | InternalControl;
+            }
+          | {
+              relationTo: 'inventory-movements';
+              value: string | InventoryMovement;
+            }
+          | {
+              relationTo: 'investment-properties';
+              value: string | InvestmentProperty;
+            }
+          | {
+              relationTo: 'invoices';
+              value: string | Invoice;
+            }
+          | {
+              relationTo: 'job-positions';
+              value: string | JobPosition;
+            }
+          | {
+              relationTo: 'journal-entries';
+              value: string | JournalEntry;
+            }
+          | {
+              relationTo: 'leads';
+              value: string | Lead;
+            }
+          | {
+              relationTo: 'leases';
+              value: string | Lease;
+            }
+          | {
+              relationTo: 'legal-entities';
+              value: string | LegalEntity;
+            }
+          | {
+              relationTo: 'lot-variants';
+              value: string | LotVariant;
+            }
+          | {
+              relationTo: 'lot-work-phases';
+              value: string | LotWorkPhase;
+            }
+          | {
+              relationTo: 'lots';
+              value: string | Lot;
+            }
+          | {
+              relationTo: 'media';
+              value: string | Media;
+            }
+          | {
+              relationTo: 'operators';
+              value: string | Operator;
+            }
+          | {
+              relationTo: 'opportunities';
+              value: string | Opportunity;
+            }
+          | {
+              relationTo: 'orders';
+              value: string | Order;
+            }
+          | {
+              relationTo: 'pages';
+              value: string | Page;
+            }
+          | {
+              relationTo: 'parties';
+              value: string | Party;
+            }
+          | {
+              relationTo: 'payroll-runs';
+              value: string | PayrollRun;
+            }
+          | {
+              relationTo: 'posts';
+              value: string | Post;
+            }
+          | {
+              relationTo: 'products';
+              value: string | Product;
+            }
+          | {
+              relationTo: 'projects';
+              value: string | Project;
+            }
+          | {
+              relationTo: 'properties';
+              value: string | Property;
+            }
+          | {
+              relationTo: 'provisions';
+              value: string | Provision;
+            }
+          | {
+              relationTo: 'quality-inspections';
+              value: string | QualityInspection;
+            }
+          | {
+              relationTo: 'receipts';
+              value: string | Receipt;
+            }
+          | {
+              relationTo: 'shipments';
+              value: string | Shipment;
+            }
+          | {
+              relationTo: 'spaces';
+              value: string | Space;
+            }
+          | {
+              relationTo: 'subscriptions';
+              value: string | Subscription;
+            }
+          | {
+              relationTo: 'tax-codes';
+              value: string | TaxCode;
+            }
+          | {
+              relationTo: 'tax-jurisdictions';
+              value: string | TaxJurisdiction;
+            }
+          | {
+              relationTo: 'tenants';
+              value: string | Tenant;
+            }
+          | {
+              relationTo: 'terminals';
+              value: string | Terminal;
+            }
+          | {
+              relationTo: 'transactions';
+              value: string | Transaction;
+            }
+          | {
+              relationTo: 'users';
+              value: string | User;
+            }
+          | {
+              relationTo: 'warehouse-locations';
+              value: string | WarehouseLocation;
+            }
+          | {
+              relationTo: 'work-centers';
+              value: string | WorkCenter;
+            }
+          | {
+              relationTo: 'work-orders';
+              value: string | WorkOrder;
+            };
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -27023,6 +27300,13 @@ export interface FormSubmissionsSelect<T extends boolean = true> {
     | {
         field?: T;
         value?: T;
+        id?: T;
+      };
+  references?:
+    | T
+    | {
+        field?: T;
+        document?: T;
         id?: T;
       };
   updatedAt?: T;

@@ -20,6 +20,7 @@ import * as migration_20261114_115945_fold_purchase_orders_into_orders from './2
 import * as migration_20261114_120836_fold_quotes_and_requisitions_into_orders from './20261114_120836_fold_quotes_and_requisitions_into_orders';
 import * as migration_20261114_122616_roles_on_orders from './20261114_122616_roles_on_orders';
 import * as migration_20261114_123452_payload_table_names from './20261114_123452_payload_table_names';
+import * as migration_20261114_125159_form_submission_references from './20261114_125159_form_submission_references';
 
 export const migrations = [
   {
@@ -130,6 +131,11 @@ export const migrations = [
   {
     up: migration_20261114_123452_payload_table_names.up,
     down: migration_20261114_123452_payload_table_names.down,
-    name: '20261114_123452_payload_table_names'
+    name: '20261114_123452_payload_table_names',
+  },
+  {
+    up: migration_20261114_125159_form_submission_references.up,
+    down: migration_20261114_125159_form_submission_references.down,
+    name: '20261114_125159_form_submission_references'
   },
 ];

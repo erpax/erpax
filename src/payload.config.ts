@@ -9,6 +9,7 @@ import { GetPlatformProxyOptions } from 'wrangler'
 import { multiTenantPlugin } from '@payloadcms/plugin-multi-tenant'
 import { mcpPlugin } from '@payloadcms/plugin-mcp'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
+import { referenceTargets, referencesField } from '@/seed/forms'
 import { searchPlugin } from '@payloadcms/plugin-search'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { seoPlugin } from '@payloadcms/plugin-seo'
@@ -328,7 +329,14 @@ export default buildConfig({
       collections: { media: true },
     }),
     createEcommercePlugin(),
-    formBuilderPlugin({}),
+    // A form's fields are data; what a submission REFERS to is a real relationship. `references[]` on
+    // form-submissions carries one polymorphic reference per row, over the shared collections —
+    // computed, never a hand list (see src/seed/forms).
+    formBuilderPlugin({
+      formSubmissionOverrides: {
+        fields: ({ defaultFields }) => [...defaultFields, referencesField(referenceTargets(Object.values(allCollections) as CollectionConfig[]))],
+      },
+    }),
     // The self-referential TREES get the canonical nested-docs plugin — COMPUTED, never a hand list:
     // a collection that declares `parent → its own slug` IS a tree, so a new one registers itself and a
     // deleted one deregisters. erpax hand-rolled this tree 9 times while the plugin sat installed.

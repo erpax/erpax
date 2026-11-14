@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import type { Field } from 'payload'
-import { formOf, survives } from '@/seed/forms'
+import { formOf, MAX_COLUMNS, referencesField, referenceTargets, survives } from '@/seed/forms'
 
 const of = (fields: Field[]) => formOf({ slug: 'risk-register', fields })
 
@@ -81,5 +81,57 @@ describe('formOf — it says what a form cannot carry', () => {
     expect(survives(of([{ name: 'title', type: 'text', required: true }]))).toBe(true)
     expect(survives(of([{ name: 'title', type: 'text', unique: true }]))).toBe(false)
     expect(survives(of([{ name: 'vendor', type: 'relationship', relationTo: 'parties' }]))).toBe(false)
+  })
+})
+
+const ref = (name: string, relationTo: string | string[], more: Record<string, unknown> = {}): Field => ({ name, type: 'relationship', relationTo, ...more }) as Field
+
+describe('referenceTargets — the collections a submission may reference, computed', () => {
+  const collections = [
+    { slug: 'invoices', fields: [ref('party', 'parties'), ref('entity', 'legal-entities'), ref('previous', 'invoices')] },
+    { slug: 'contracts', fields: [{ name: 'sides', type: 'array', fields: [ref('party', ['parties', 'users'])] } as Field, ref('entity', 'legal-entities')] },
+    { slug: 'notes', fields: [{ type: 'tabs', tabs: [{ label: 'a', fields: [ref('about', 'invoices'), ref('author', 'users')] }] } as Field] },
+  ]
+  it('keeps what at least two OTHER collections point at, however deeply the reference is nested', () => {
+    expect(referenceTargets(collections)).toEqual(['legal-entities', 'parties', 'users'])
+  })
+  it('does not count a collection pointing at itself', () => {
+    expect(referenceTargets(collections)).not.toContain('invoices') // only notes and invoices itself
+  })
+  it('raises the bar until the targets fit one relationship table', () => {
+    expect(referenceTargets(collections, 1)).toEqual(['invoices', 'legal-entities', 'parties', 'users'])
+    expect(referenceTargets(collections, 1, 3)).toEqual(['legal-entities', 'parties', 'users'])
+    expect(referenceTargets(collections, 1, 0)).toEqual([])
+  })
+  it('the list on a submission names the form field and holds one polymorphic relationship', () => {
+    const field = referencesField(['parties', 'users'])
+    expect(field.name).toBe('references')
+    expect(field.fields.map((f) => ('name' in f ? f.name : ''))).toEqual(['field', 'document'])
+    expect(field.fields[1]).toMatchObject({ type: 'relationship', relationTo: ['parties', 'users'], required: true })
+    expect(MAX_COLUMNS).toBe(100)
+  })
+})
+
+describe('formOf with references — a reference is carried by the submission', () => {
+  const references = new Set(['parties', 'users'])
+  const withRefs = (fields: Field[]) => formOf({ slug: 'risk-register', fields }, { references })
+  it('keeps a reference whose target a submission may point at, and adds no form field for it', () => {
+    const result = withRefs([ref('vendor', 'parties')])
+    expect(result.report).toEqual([{ path: 'vendor', type: 'relationship', fate: 'kept', missing: [], reference: ['parties'] }])
+    expect(result.form.fields).toEqual([])
+    expect(survives(result)).toBe(true)
+  })
+  it('keeps a has-many and a polymorphic reference — rows hold many, the relationship is polymorphic', () => {
+    expect(withRefs([ref('owners', 'users', { hasMany: true })]).kept).toBe(1)
+    expect(withRefs([ref('about', ['parties', 'users'])]).kept).toBe(1)
+  })
+  it('loses a reference when any target is outside the set, and every reference without the option', () => {
+    expect(withRefs([ref('lot', 'lots')]).lost).toBe(1)
+    expect(withRefs([ref('about', ['parties', 'lots'])]).lost).toBe(1)
+    expect(of([ref('vendor', 'parties')]).lost).toBe(1)
+  })
+  it('still says which rules a carried reference loses', () => {
+    const [report] = withRefs([ref('vendor', 'parties', { unique: true })]).report
+    expect(report).toMatchObject({ fate: 'degraded', missing: ['unique'], reference: ['parties'] })
   })
 })
