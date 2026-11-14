@@ -136,14 +136,15 @@ export const collectionsOf = <T extends Shape>(app: string, collections: readonl
   return collections.filter((collection) => placed.get(collection.slug) === app)
 }
 
-const inApp = <T extends CollectionConfig>(collection: T, title: string): T => ({ ...collection, admin: { ...collection.admin, group: title } })
+/** Under the app's name in the navigation, and carrying the app's slug (`custom.app`) for whoever asks which app a collection is in. */
+const inApp = <T extends CollectionConfig>(collection: T, app: App): T => ({ ...collection, admin: { ...collection.admin, group: app.title }, custom: { ...collection.custom, app: app.slug } })
 
 /** One app as a Payload plugin: it adds the app's collections, each under the app's name. */
 export const appPlugin =
   (app: App, collections: readonly CollectionConfig[], gate?: Gate): Plugin =>
   (config: Config): Config => {
     const present = new Set((config.collections ?? []).map((collection) => collection.slug))
-    const own = collections.filter((collection) => !present.has(collection.slug)).map((collection) => inApp(collection, app.title))
+    const own = collections.filter((collection) => !present.has(collection.slug)).map((collection) => inApp(collection, app))
     // a required app is never gated: it is on for everyone
     return { ...config, collections: [...(config.collections ?? []), ...(gate && app.required !== true ? own.map((collection) => gate(app, collection)) : own)] }
   }
@@ -169,7 +170,7 @@ export const appNavigation =
         const app = owner.get(collection.slug)
         // only what another plugin brought: an app's own collections were named and gated when added
         if (!app || ours.has(collection.slug)) return collection
-        const namedCollection = inApp(collection, app.title)
+        const namedCollection = inApp(collection, app)
         return gate && app.required !== true ? gate(app, namedCollection) : namedCollection
       }),
     }

@@ -1,6 +1,6 @@
 {
   "name": "@erpax/admin",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Admin — who is here and what they may do: tenants, users, roles. An erpax app, delivered as one Payload plugin. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",

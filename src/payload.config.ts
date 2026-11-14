@@ -21,6 +21,7 @@ import { uuidPlugin } from '@/utilities/uuid'
 import { taggablePlugin } from '@/plugins/taggable'
 import { longNamesPlugin } from '@/plugins/naming'
 import { indexesPlugin } from '@/plugins/indexes'
+import { handlesPlugin } from '@/plugins/handles'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
 import { mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
 import { versionsPlugin } from '@/plugins/versions'
@@ -511,6 +512,8 @@ export default buildConfig({
     // local/dev admin; the Worker ships lean. Re-add behind a dev-only guard if the admin viz is wanted.
     // last: the collections other plugins brought (orders, forms, …) take their app's name too
     navigation(gateByApp),
+    // every document gets a handle, and /api/h/:handle resolves one (src/plugins/handles)
+    handlesPlugin(),
   ],
   secret: payloadSecret || 'INSECURE_BUILD_ONLY_PLACEHOLDER',
   typescript: {

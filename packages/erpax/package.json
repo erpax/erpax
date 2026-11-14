@@ -1,6 +1,6 @@
 {
   "name": "@erpax/erpax",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Orientation face for erpax — resolve the canonical repo to its sealed skill entry and agent surfaces. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",

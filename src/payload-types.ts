@@ -795,6 +795,7 @@ export interface ConsolidationElimination {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1022,6 +1023,7 @@ export interface Tenant {
    * Optional MCP API key for tools/scripts scoped to this tenant (super-admin only). Prefer Admin → MCP keys when using Payload MCP.
    */
   mcpApiKey?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1079,6 +1081,7 @@ export interface JournalEntry {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1181,6 +1184,7 @@ export interface Project {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1404,6 +1408,7 @@ export interface Party {
     | number
     | boolean
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1534,6 +1539,7 @@ export interface Address {
     | number
     | boolean
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1714,6 +1720,7 @@ export interface User {
       | boolean
       | null;
   };
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -1759,6 +1766,7 @@ export interface Media {
     };
     [k: string]: unknown;
   } | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -1870,6 +1878,7 @@ export interface OrgUnit {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1942,6 +1951,7 @@ export interface Role {
    * The skills/logic this role attaches (e.g. accounting/journal-entry, commerce/order). The Role holds the role skills.
    */
   skillRoutes?: string[] | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -2028,6 +2038,7 @@ export interface Page {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -2099,6 +2110,7 @@ export interface Post {
    */
   generateSlug?: boolean | null;
   slug: string;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -2129,6 +2141,7 @@ export interface Category {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -2160,6 +2173,7 @@ export interface Variant {
    * Barcode (GS1 GTIN)
    */
   barcode?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
   deletedAt?: string | null;
@@ -2381,6 +2395,7 @@ export interface Product {
    */
   generateSlug?: boolean | null;
   slug: string;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
   deletedAt?: string | null;
@@ -2404,6 +2419,7 @@ export interface VariantOption {
    * should be defaulted or dynamic based on label
    */
   value: string;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
   deletedAt?: string | null;
@@ -2426,6 +2442,7 @@ export interface VariantType {
     hasNextPage?: boolean;
     totalDocs?: number;
   };
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
   deletedAt?: string | null;
@@ -2627,6 +2644,7 @@ export interface GlAccount {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -2865,6 +2883,7 @@ export interface Form {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3138,6 +3157,7 @@ export interface Order {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3279,6 +3299,7 @@ export interface Transaction {
     | number
     | boolean
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3307,6 +3328,7 @@ export interface Cart {
   status?: ('active' | 'purchased' | 'abandoned') | null;
   subtotal?: number | null;
   currency?: 'EUR' | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3724,6 +3746,7 @@ export interface Invoice {
     | number
     | boolean
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3764,6 +3787,7 @@ export interface Subscription {
   resumeAt?: string | null;
   lastStatusChange?: string | null;
   lastStatusChangeReason?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3818,6 +3842,7 @@ export interface SubscriptionPlan {
    * Display order in pricing pages (lower = first)
    */
   sortOrder?: number | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3871,6 +3896,7 @@ export interface FiscalDevice {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3895,6 +3921,7 @@ export interface Operator {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3929,6 +3956,7 @@ export interface Terminal {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4012,6 +4040,7 @@ export interface Receipt {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4079,6 +4108,7 @@ export interface Sale {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4173,6 +4203,7 @@ export interface Contract {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4248,6 +4279,7 @@ export interface PerformanceObligation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4348,6 +4380,7 @@ export interface TaxCode {
     | number
     | boolean
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4492,6 +4525,7 @@ export interface TaxJurisdiction {
     | number
     | boolean
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4525,6 +4559,7 @@ export interface ComplianceFramework {
   officialResourceUrl?: string | null;
   effectiveDate?: string | null;
   isActive?: boolean | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4557,6 +4592,7 @@ export interface GoodsReceipt {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4639,6 +4675,7 @@ export interface CostCenter {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4745,6 +4782,7 @@ export interface GovernmentGrant {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4883,6 +4921,7 @@ export interface LegalEntity {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5036,6 +5075,7 @@ export interface Provision {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5190,6 +5230,7 @@ export interface FiscalPeriod {
     | number
     | boolean
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5234,6 +5275,7 @@ export interface AuditFinding {
       }[]
     | null;
   isActive?: boolean | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5268,6 +5310,7 @@ export interface InternalControl {
   lastReviewDate?: string | null;
   nextReviewDate?: string | null;
   isActive?: boolean | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5299,6 +5342,7 @@ export interface ControlTest {
   conclusionOnEffectiveness?: string | null;
   reviewDate?: string | null;
   isActive?: boolean | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5409,6 +5453,7 @@ export interface FixedAsset {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5480,6 +5525,7 @@ export interface IntercompanyTransaction {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5544,6 +5590,7 @@ export interface Group {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5582,6 +5629,7 @@ export interface Activity {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5652,6 +5700,7 @@ export interface Lead {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5718,6 +5767,7 @@ export interface Opportunity {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5767,6 +5817,7 @@ export interface CustomerSegment {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5807,6 +5858,7 @@ export interface ConsentRecord {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5924,6 +5976,7 @@ export interface AiSuggestion {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5994,6 +6047,7 @@ export interface UsageRecord {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6094,6 +6148,7 @@ export interface Batch {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6261,6 +6316,7 @@ export interface WorkOrder {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6401,6 +6457,7 @@ export interface LotVariant {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6561,6 +6618,7 @@ export interface Lot {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6673,6 +6731,7 @@ export interface LotWorkPhase {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6738,6 +6797,7 @@ export interface WorkPhase {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6807,6 +6867,7 @@ export interface WorkCenter {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6922,6 +6983,7 @@ export interface WorkShift {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7124,6 +7186,7 @@ export interface Employee {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7172,6 +7235,7 @@ export interface WarehouseLocation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7238,6 +7302,7 @@ export interface QualityInspection {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7289,6 +7354,7 @@ export interface Shipment {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7354,6 +7420,7 @@ export interface InventoryMovement {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7394,6 +7461,7 @@ export interface BeneficialOwner {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7459,6 +7527,7 @@ export interface KycCheck {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7573,6 +7642,7 @@ export interface Booking {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7729,6 +7799,7 @@ export interface BookableResource {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7832,6 +7903,7 @@ export interface Space {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7969,6 +8041,7 @@ export interface Property {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8113,6 +8186,7 @@ export interface Lease {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8231,6 +8305,7 @@ export interface Case {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8316,6 +8391,7 @@ export interface ConsignmentArrangement {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8395,6 +8471,7 @@ export interface EvidenceAttestation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8478,6 +8555,7 @@ export interface ConsignmentSale {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8553,6 +8631,7 @@ export interface ConsignmentInventory {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8643,6 +8722,7 @@ export interface CreditMemo {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8759,6 +8839,7 @@ export interface CustomsDeclaration {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8840,6 +8921,7 @@ export interface DunningCycle {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9080,6 +9162,7 @@ export interface InvoiceLine {
     | number
     | boolean
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9142,6 +9225,7 @@ export interface PaymentAllocation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9263,6 +9347,7 @@ export interface PaymentRun {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9329,6 +9414,7 @@ export interface BankAccount {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9380,6 +9466,7 @@ export interface BankStatement {
   reconciliationDate?: string | null;
   reconciliedBy?: (string | null) | User;
   importSource: 'csv' | 'ofx' | 'manual' | 'bank_api';
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9439,6 +9526,7 @@ export interface ProjectMilestone {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9479,6 +9567,7 @@ export interface Return {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9545,6 +9634,7 @@ export interface SepaMandate {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9629,6 +9719,7 @@ export interface VendorScorecard {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9740,6 +9831,7 @@ export interface Commitment {
    * Approver comments on authorization
    */
   approvalComments?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9839,6 +9931,7 @@ export interface ContractPerformance {
    * Internal notes on milestone completion, issues, variance explanations
    */
   performanceNotes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9949,6 +10042,7 @@ export interface AccountReconciliation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10063,6 +10157,7 @@ export interface BankTransaction {
   matchedBy?: (string | null) | User;
   status?: ('imported' | 'reconciled' | 'adjusted' | 'voided') | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10263,6 +10358,7 @@ export interface AuditReport {
    * General notes on this audit report
    */
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10415,6 +10511,7 @@ export interface Consolidation {
    * General notes on this consolidation process
    */
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10488,6 +10585,7 @@ export interface BankReconciliation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10604,6 +10702,7 @@ export interface CarbonEmission {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10788,6 +10887,7 @@ export interface ClosingEntry {
    * General notes on this period close
    */
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10877,6 +10977,7 @@ export interface PeriodLock {
    * Additional notes for this period
    */
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10942,6 +11043,7 @@ export interface ComplianceDeadline {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10966,6 +11068,7 @@ export interface ComplianceRequirement {
   severity?: ('critical' | 'high' | 'medium' | 'low' | 'info') | null;
   resourceUrl?: string | null;
   isActive?: boolean | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11054,6 +11157,7 @@ export interface CsrdDisclosure {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11087,6 +11191,7 @@ export interface CurrencyRate {
   isActive?: boolean | null;
   usedInTransactions?: number | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11177,6 +11282,7 @@ export interface EarningsPerShare {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11238,6 +11344,7 @@ export interface EntityLegalStructure {
    */
   auditRequirement?: ('required' | 'optional' | 'threshold' | 'not-required') | null;
   isActive?: boolean | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11297,6 +11404,7 @@ export interface EntityType {
    */
   defaultComplianceFrameworks?: (string | ComplianceFramework)[] | null;
   isActive?: boolean | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11360,6 +11468,7 @@ export interface FinancialStatement {
     | null;
   generatedAt: string;
   generatedBy?: (string | null) | User;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11438,6 +11547,7 @@ export interface FiscalCalendar {
    * Notes on this calendar entry (e.g., holiday adjustments, special closure dates)
    */
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11512,6 +11622,7 @@ export interface FxTransaction {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11588,6 +11699,7 @@ export interface GlPosting {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11703,6 +11815,7 @@ export interface LeaseModification {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11735,6 +11848,7 @@ export interface PeriodEndAdjustment {
   journalEntry?: (string | null) | JournalEntry;
   status?: ('draft' | 'calculated' | 'approved' | 'posted' | 'reversed') | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11797,6 +11911,7 @@ export interface PostBalanceSheetEvent {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11933,6 +12048,7 @@ export interface PostCloseAnalyticsReport {
    * General notes on this analytics report
    */
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11994,6 +12110,7 @@ export interface PriorPeriodAdjustment {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12064,6 +12181,7 @@ export interface ReportingStandard {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12137,6 +12255,7 @@ export interface StatutoryReportTemplate {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12167,6 +12286,7 @@ export interface TaxCalculation {
   filingDeadline?: string | null;
   paymentDeadline?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12319,6 +12439,7 @@ export interface TaxPeriod {
    * General notes on this tax period process
    */
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12379,6 +12500,7 @@ export interface TaxReturn {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12475,6 +12597,7 @@ export interface TransferPricingAdjustment {
    * General notes on this transfer pricing adjustment
    */
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12593,6 +12716,7 @@ export interface TransferPricingFile {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12668,6 +12792,7 @@ export interface WipSnapshot {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12783,6 +12908,7 @@ export interface ExpenseReport {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12936,6 +13062,7 @@ export interface PayrollRun {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13050,6 +13177,7 @@ export interface JobPosition {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13137,6 +13265,7 @@ export interface LeaveRequest {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13330,6 +13459,7 @@ export interface MaintenanceWorkOrder {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13406,6 +13536,7 @@ export interface TimeEntry {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13499,6 +13630,7 @@ export interface PerformanceReview {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13598,6 +13730,7 @@ export interface RecruitingPipeline {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13676,6 +13809,7 @@ export interface SalesCommission {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13769,6 +13903,7 @@ export interface ShareBasedPayment {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13869,6 +14004,7 @@ export interface BillsOfMaterial {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13941,6 +14077,7 @@ export interface CostVariance {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14016,6 +14153,7 @@ export interface PackItem {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14119,6 +14257,7 @@ export interface Pack {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14191,6 +14330,7 @@ export interface Carrier {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14270,6 +14410,7 @@ export interface DeferredTaxItem {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14351,6 +14492,7 @@ export interface Package {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14434,6 +14576,7 @@ export interface ProductionReceipt {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14513,6 +14656,7 @@ export interface TrackingEvent {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14732,6 +14876,7 @@ export interface AuditCommitteeMinute {
    */
   minutesDocument?: (string | null) | Media;
   confidentiality?: ('confidential' | 'internal' | 'public') | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14773,6 +14918,7 @@ export interface AuditCommittee {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14816,6 +14962,7 @@ export interface BoardAction {
   };
   minutes?: (string | null) | Media;
   relatedControls?: (string | InternalControl)[] | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14852,6 +14999,7 @@ export interface ComplianceGap {
   actualClosureDate?: string | null;
   riskExposure?: ('none' | 'minimal' | 'moderate' | 'significant' | 'material') | null;
   isActive?: boolean | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14910,6 +15058,7 @@ export interface AuditEvidence {
       }[]
     | null;
   isActive?: boolean | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14960,6 +15109,7 @@ export interface AuditSample {
   testedDate?: string | null;
   notes?: string | null;
   isActive?: boolean | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15180,6 +15330,7 @@ export interface DebtSchedule {
    * Loan agreement, bond indenture, lease agreement (PDF).
    */
   debtAgreement?: (string | null) | Media;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15282,6 +15433,7 @@ export interface DisclosureChecklist {
    * Formal checklist workpaper (PDF).
    */
   checklistDocument?: (string | null) | Media;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15549,6 +15701,7 @@ export interface InternalAuditFunction {
    * Formal audit charter (PDF).
    */
   charterDocument?: (string | null) | Media;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15626,6 +15779,7 @@ export interface InternalPolicy {
     [k: string]: unknown;
   } | null;
   applicableControls?: (string | InternalControl)[] | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15848,6 +16002,7 @@ export interface ManagementAssessmentIcfr {
   relatedAuditFindings?: (string | AuditFinding)[] | null;
   relatedControlTests?: (string | ControlTest)[] | null;
   status: 'draft' | 'final' | 'auditor-reviewed' | 'certified' | 'filed';
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15892,6 +16047,7 @@ export interface ManagementCertification {
   relatedFindings?: (string | AuditFinding)[] | null;
   signedDocument?: (string | null) | Media;
   status?: ('current' | 'expired' | 'superseded') | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15917,6 +16073,7 @@ export interface PolicyAcknowledgment {
   acknowledgedBy?: string | null;
   signedDocument?: (string | null) | Media;
   status?: ('acknowledged' | 'pending' | 'overdue' | 'expired') | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15971,6 +16128,7 @@ export interface RegulatoryReport {
     [k: string]: unknown;
   } | null;
   findings?: (string | AuditFinding)[] | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16093,6 +16251,7 @@ export interface RelatedPartyTransaction {
    */
   relatedControls?: (string | InternalControl)[] | null;
   evidence?: (string | AuditEvidence)[] | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16142,6 +16301,7 @@ export interface RemediationPlan {
   approvedBy?: (string | null) | User;
   approvalDate?: string | null;
   isActive?: boolean | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16268,6 +16428,7 @@ export interface RiskRegister {
    * Heat map or formal risk register extract (PDF).
    */
   riskRegisterDocument?: (string | null) | Media;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16445,6 +16606,7 @@ export interface SegmentReporting {
    */
   segmentReportingDocument?: (string | null) | Media;
   reportingStatus: 'under-preparation' | 'pending-review' | 'reviewed' | 'reported';
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16515,6 +16677,7 @@ export interface BiologicalAsset {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16616,6 +16779,7 @@ export interface FairValueMeasurement {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16685,6 +16849,7 @@ export interface InvestmentProperty {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16797,6 +16962,7 @@ export interface BusinessCombination {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16837,6 +17003,7 @@ export interface DepreciationSchedule {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16912,6 +17079,7 @@ export interface HeldForSaleClassification {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16992,6 +17160,7 @@ export interface InsuranceContract {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17079,6 +17248,7 @@ export interface LeasePeriodPosting {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17125,6 +17295,7 @@ export interface BudgetPlanning {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17185,6 +17356,7 @@ export interface ProjectTask {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17276,6 +17448,7 @@ export interface RecurringJournal {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17368,6 +17541,7 @@ export interface WorkflowDefinition {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17448,6 +17622,7 @@ export interface WorkflowInstance {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17544,6 +17719,7 @@ export interface ContractAmendment {
    * Internal accounting notes on the amendment (not visible to customer)
    */
   internalNotes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17649,6 +17825,7 @@ export interface ContractSignature {
    * Internal comments on the signature (e.g., "director approval pending legal review")
    */
   approvalComments?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17701,6 +17878,7 @@ export interface Chat {
    * ISO-8601 emit time stamped when the envelope uuid was derived — used by team/comms to re-verify eventUuid at write time.
    */
   emittedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17754,6 +17932,7 @@ export interface Connection {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17805,6 +17984,7 @@ export interface Message {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17882,6 +18062,7 @@ export interface ApiAuditEvent {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18005,6 +18186,7 @@ export interface AuditEvent {
    * SHA-256 hex of canonical JSON over (eventId, tenant, timestamp, eventType, collectionSlug, documentId, user, previousHash). Computed at write time; verified at the integrity-check gate.
    */
   rowHash?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18042,6 +18224,7 @@ export interface AuditSubmission {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18116,6 +18299,7 @@ export interface DataProcessingActivity {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18172,6 +18356,7 @@ export interface DataSubjectRequest {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18291,6 +18476,7 @@ export interface Memory {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18354,6 +18540,7 @@ export interface MineralResourceAsset {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18401,6 +18588,7 @@ export interface RegulatoryDeferralAccount {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18454,6 +18642,7 @@ export interface RoundingAdjustment {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18541,6 +18730,7 @@ export interface Sector {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18597,6 +18787,7 @@ export interface Share {
    * UUID of the chain-linked revoke leaf (sealed iff the original grant was sealed).
    */
   revokeChainLeafUuid?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18726,6 +18917,7 @@ export interface Standard {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18765,6 +18957,7 @@ export interface Tagging {
    * The tagged record's collection slug (the polymorphic context).
    */
   taggableType?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18793,6 +18986,7 @@ export interface Tag {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18880,6 +19074,7 @@ export interface TransactionFailure {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18960,6 +19155,7 @@ export interface Translation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -19258,6 +19454,7 @@ export interface FormSubmission {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -19285,6 +19482,7 @@ export interface Redirect {
         } | null);
     url?: string | null;
   };
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -19324,6 +19522,7 @@ export interface Search {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -19391,6 +19590,7 @@ export interface Export {
     | number
     | boolean
     | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -19432,6 +19632,7 @@ export interface Import {
       | boolean
       | null;
   };
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -19805,6 +20006,7 @@ export interface ConsolidationEliminationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19837,6 +20039,7 @@ export interface GroupsSelect<T extends boolean = true> {
         role?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19865,6 +20068,7 @@ export interface IntercompanyTransactionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19889,6 +20093,7 @@ export interface OrgUnitsSelect<T extends boolean = true> {
         label?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19906,6 +20111,7 @@ export interface RolesSelect<T extends boolean = true> {
   system?: T;
   capability?: T;
   skillRoutes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19984,6 +20190,7 @@ export interface TenantsSelect<T extends boolean = true> {
   emailDefaultFromAddress?: T;
   emailDefaultFromName?: T;
   mcpApiKey?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20067,6 +20274,7 @@ export interface UsersSelect<T extends boolean = true> {
             };
         features?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
   email?: T;
@@ -20103,6 +20311,7 @@ export interface CategoriesSelect<T extends boolean = true> {
         url?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20115,6 +20324,7 @@ export interface MediaSelect<T extends boolean = true> {
   tenant?: T;
   alt?: T;
   caption?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -20260,6 +20470,7 @@ export interface PagesSelect<T extends boolean = true> {
         url?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
@@ -20382,6 +20593,7 @@ export interface PostsSelect<T extends boolean = true> {
       };
   generateSlug?: T;
   slug?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
@@ -20414,6 +20626,7 @@ export interface ActivitiesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20454,6 +20667,7 @@ export interface AiSuggestionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20496,6 +20710,7 @@ export interface BatchesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20523,6 +20738,7 @@ export interface BeneficialOwnersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20567,6 +20783,7 @@ export interface BookingsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20618,6 +20835,7 @@ export interface CasesSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20644,6 +20862,7 @@ export interface ConsentRecordsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20675,6 +20894,7 @@ export interface ConsignmentArrangementsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20707,6 +20927,7 @@ export interface ConsignmentSalesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20747,6 +20968,7 @@ export interface CreditMemosSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20772,6 +20994,7 @@ export interface CustomerSegmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20817,6 +21040,7 @@ export interface CustomsDeclarationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20859,6 +21083,7 @@ export interface DunningCyclesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20887,6 +21112,7 @@ export interface FiscalDevicesSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20917,6 +21143,7 @@ export interface GoodsReceiptsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21013,6 +21240,7 @@ export interface InvoiceLinesSelect<T extends boolean = true> {
         giftCard?: T;
       };
   metadata?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21152,6 +21380,7 @@ export interface InvoicesSelect<T extends boolean = true> {
       };
   test?: T;
   metadata?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21192,6 +21421,7 @@ export interface KycChecksSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21229,6 +21459,7 @@ export interface LeadsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21246,6 +21477,7 @@ export interface OperatorsSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21278,6 +21510,7 @@ export interface OpportunitiesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21366,6 +21599,7 @@ export interface PartiesSelect<T extends boolean = true> {
         note?: T;
       };
   metadata?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21392,6 +21626,7 @@ export interface PaymentAllocationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21440,6 +21675,7 @@ export interface PaymentRunsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21468,6 +21704,7 @@ export interface ProjectMilestonesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21514,6 +21751,7 @@ export interface ReceiptsSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21545,6 +21783,7 @@ export interface ReturnsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21592,6 +21831,7 @@ export interface SalesSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21622,6 +21862,7 @@ export interface SepaMandatesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21643,6 +21884,7 @@ export interface SubscriptionPlansSelect<T extends boolean = true> {
   isActive?: T;
   description?: T;
   sortOrder?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21667,6 +21909,7 @@ export interface SubscriptionsSelect<T extends boolean = true> {
   resumeAt?: T;
   lastStatusChange?: T;
   lastStatusChangeReason?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21685,6 +21928,7 @@ export interface TerminalsSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21713,6 +21957,7 @@ export interface UsageRecordsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21759,6 +22004,7 @@ export interface VendorScorecardsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21806,6 +22052,7 @@ export interface CommitmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   approvalComments?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21843,6 +22090,7 @@ export interface ContractPerformanceSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   performanceNotes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21900,6 +22148,7 @@ export interface AccountReconciliationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21959,6 +22208,7 @@ export interface AuditReportsSelect<T extends boolean = true> {
   chainLeafUuid?: T;
   auditTrail?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21987,6 +22237,7 @@ export interface BankAccountsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22021,6 +22272,7 @@ export interface BankReconciliationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22066,6 +22318,7 @@ export interface BankStatementsSelect<T extends boolean = true> {
   reconciliationDate?: T;
   reconciliedBy?: T;
   importSource?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22110,6 +22363,7 @@ export interface BankTransactionsSelect<T extends boolean = true> {
   matchedBy?: T;
   status?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22167,6 +22421,7 @@ export interface BookableResourcesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22222,6 +22477,7 @@ export interface CarbonEmissionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22270,6 +22526,7 @@ export interface ClosingEntriesSelect<T extends boolean = true> {
   multiCurrencyReconciliation?: T;
   auditTrail?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22308,6 +22565,7 @@ export interface ComplianceDeadlinesSelect<T extends boolean = true> {
         status?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22348,6 +22606,7 @@ export interface ConsolidationsSelect<T extends boolean = true> {
   chainLeafUuid?: T;
   auditTrail?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22392,6 +22651,7 @@ export interface CsrdDisclosuresSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22415,6 +22675,7 @@ export interface CurrencyRatesSelect<T extends boolean = true> {
   isActive?: T;
   usedInTransactions?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22459,6 +22720,7 @@ export interface EarningsPerShareSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22479,6 +22741,7 @@ export interface EntityLegalStructuresSelect<T extends boolean = true> {
   taxTreatment?: T;
   auditRequirement?: T;
   isActive?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22510,6 +22773,7 @@ export interface EvidenceAttestationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22550,6 +22814,7 @@ export interface FinancialStatementsSelect<T extends boolean = true> {
       };
   generatedAt?: T;
   generatedBy?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22576,6 +22841,7 @@ export interface FiscalCalendarsSelect<T extends boolean = true> {
   generatedFrom?: T;
   chainLeafUuid?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22638,6 +22904,7 @@ export interface FiscalPeriodsSelect<T extends boolean = true> {
         note?: T;
       };
   metadata?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22667,6 +22934,7 @@ export interface FxTransactionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22700,6 +22968,7 @@ export interface GlAccountsSelect<T extends boolean = true> {
         tag?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22747,6 +23016,7 @@ export interface GlPostingsSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22787,6 +23057,7 @@ export interface JournalEntriesSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22834,6 +23105,7 @@ export interface LeaseModificationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22888,6 +23160,7 @@ export interface LegalEntitiesSelect<T extends boolean = true> {
         label?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22908,6 +23181,7 @@ export interface PeriodEndAdjustmentsSelect<T extends boolean = true> {
   journalEntry?: T;
   status?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22933,6 +23207,7 @@ export interface PeriodLocksSelect<T extends boolean = true> {
   requiresAdminOverride?: T;
   relatedClosingEntries?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22960,6 +23235,7 @@ export interface PostBalanceSheetEventsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22987,6 +23263,7 @@ export interface PostCloseAnalyticsReportsSelect<T extends boolean = true> {
   chainLeafUuid?: T;
   analyticsTrail?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23012,6 +23289,7 @@ export interface PriorPeriodAdjustmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23071,6 +23349,7 @@ export interface ProvisionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23106,6 +23385,7 @@ export interface ReportingStandardsSelect<T extends boolean = true> {
         status?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23144,6 +23424,7 @@ export interface StatutoryReportTemplatesSelect<T extends boolean = true> {
         validationRules?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23170,6 +23451,7 @@ export interface TaxCalculationsSelect<T extends boolean = true> {
   filingDeadline?: T;
   paymentDeadline?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23217,6 +23499,7 @@ export interface TaxCodesSelect<T extends boolean = true> {
         defaultExpenseAccount?: T;
       };
   metadata?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23278,6 +23561,7 @@ export interface TaxJurisdictionsSelect<T extends boolean = true> {
         note?: T;
       };
   metadata?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23318,6 +23602,7 @@ export interface TaxPeriodsSelect<T extends boolean = true> {
   chainLeafUuid?: T;
   auditTrail?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23355,6 +23640,7 @@ export interface TaxReturnsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23382,6 +23668,7 @@ export interface TransferPricingAdjustmentsSelect<T extends boolean = true> {
   relatedDocuments?: T;
   auditTrail?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23446,6 +23733,7 @@ export interface TransferPricingFilesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23476,6 +23764,7 @@ export interface WipSnapshotsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23519,6 +23808,7 @@ export interface CostCentersSelect<T extends boolean = true> {
         label?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23606,6 +23896,7 @@ export interface EmployeesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23671,6 +23962,7 @@ export interface ExpenseReportsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23722,6 +24014,7 @@ export interface JobPositionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23763,6 +24056,7 @@ export interface LeaveRequestsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23849,6 +24143,7 @@ export interface MaintenanceWorkOrdersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23909,6 +24204,7 @@ export interface PayrollRunsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23985,6 +24281,7 @@ export interface PerformanceReviewsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24038,6 +24335,7 @@ export interface RecruitingPipelineSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24079,6 +24377,7 @@ export interface SalesCommissionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24129,6 +24428,7 @@ export interface ShareBasedPaymentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24158,6 +24458,7 @@ export interface TimeEntriesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24195,6 +24496,7 @@ export interface WorkShiftsSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24237,6 +24539,7 @@ export interface BillsOfMaterialsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24269,6 +24572,7 @@ export interface CostVariancesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24316,6 +24620,7 @@ export interface LotVariantsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24353,6 +24658,7 @@ export interface LotWorkPhasesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24402,6 +24708,7 @@ export interface LotsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24432,6 +24739,7 @@ export interface PackItemsSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24466,6 +24774,7 @@ export interface PacksSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24499,6 +24808,7 @@ export interface WorkCentersSelect<T extends boolean = true> {
         label?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24552,6 +24862,7 @@ export interface WorkOrdersSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24584,6 +24895,7 @@ export interface WorkPhasesSelect<T extends boolean = true> {
         label?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24617,6 +24929,7 @@ export interface CarriersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24647,6 +24960,7 @@ export interface ConsignmentInventorySelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24675,6 +24989,7 @@ export interface DeferredTaxItemsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24706,6 +25021,7 @@ export interface InventoryMovementsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24747,6 +25063,7 @@ export interface PackagesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24782,6 +25099,7 @@ export interface ProductionReceiptsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24812,6 +25130,7 @@ export interface QualityInspectionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24844,6 +25163,7 @@ export interface ShipmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24870,6 +25190,7 @@ export interface TrackingEventsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24899,6 +25220,7 @@ export interface WarehouseLocationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24965,6 +25287,7 @@ export interface AuditCommitteeMinutesSelect<T extends boolean = true> {
   approvalDate?: T;
   minutesDocument?: T;
   confidentiality?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24999,6 +25322,7 @@ export interface AuditCommitteesSelect<T extends boolean = true> {
         status?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25040,6 +25364,7 @@ export interface AuditEvidenceSelect<T extends boolean = true> {
         id?: T;
       };
   isActive?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25074,6 +25399,7 @@ export interface AuditFindingsSelect<T extends boolean = true> {
         id?: T;
       };
   isActive?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25098,6 +25424,7 @@ export interface AuditSamplesSelect<T extends boolean = true> {
   testedDate?: T;
   notes?: T;
   isActive?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25124,6 +25451,7 @@ export interface BoardActionsSelect<T extends boolean = true> {
       };
   minutes?: T;
   relatedControls?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25142,6 +25470,7 @@ export interface ComplianceFrameworksSelect<T extends boolean = true> {
   officialResourceUrl?: T;
   effectiveDate?: T;
   isActive?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25167,6 +25496,7 @@ export interface ComplianceGapsSelect<T extends boolean = true> {
   actualClosureDate?: T;
   riskExposure?: T;
   isActive?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25185,6 +25515,7 @@ export interface ComplianceRequirementsSelect<T extends boolean = true> {
   severity?: T;
   resourceUrl?: T;
   isActive?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25212,6 +25543,7 @@ export interface ControlTestsSelect<T extends boolean = true> {
   conclusionOnEffectiveness?: T;
   reviewDate?: T;
   isActive?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25270,6 +25602,7 @@ export interface DebtScheduleSelect<T extends boolean = true> {
   relatedControls?: T;
   debtStatus?: T;
   debtAgreement?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25306,6 +25639,7 @@ export interface DisclosureChecklistsSelect<T extends boolean = true> {
   reviewDate?: T;
   checklistStatus?: T;
   checklistDocument?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25330,6 +25664,7 @@ export interface EntityTypesSelect<T extends boolean = true> {
       };
   defaultComplianceFrameworks?: T;
   isActive?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25374,6 +25709,7 @@ export interface GovernmentGrantsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25434,6 +25770,7 @@ export interface InternalAuditFunctionSelect<T extends boolean = true> {
   riskBasedAuditing?: T;
   auditFunctionStatus?: T;
   charterDocument?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25456,6 +25793,7 @@ export interface InternalControlsSelect<T extends boolean = true> {
   lastReviewDate?: T;
   nextReviewDate?: T;
   isActive?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25481,6 +25819,7 @@ export interface InternalPoliciesSelect<T extends boolean = true> {
   releaseDate?: T;
   changes?: T;
   applicableControls?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25520,6 +25859,7 @@ export interface ManagementAssessmentIcfrSelect<T extends boolean = true> {
   relatedAuditFindings?: T;
   relatedControlTests?: T;
   status?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25546,6 +25886,7 @@ export interface ManagementCertificationsSelect<T extends boolean = true> {
   relatedFindings?: T;
   signedDocument?: T;
   status?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25564,6 +25905,7 @@ export interface PolicyAcknowledgmentsSelect<T extends boolean = true> {
   acknowledgedBy?: T;
   signedDocument?: T;
   status?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25588,6 +25930,7 @@ export interface RegulatoryReportsSelect<T extends boolean = true> {
   reportDocument?: T;
   regulatoryFeedback?: T;
   findings?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25617,6 +25960,7 @@ export interface RelatedPartyTransactionsSelect<T extends boolean = true> {
   disclosureReference?: T;
   relatedControls?: T;
   evidence?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25654,6 +25998,7 @@ export interface RemediationPlansSelect<T extends boolean = true> {
   approvedBy?: T;
   approvalDate?: T;
   isActive?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25689,6 +26034,7 @@ export interface RiskRegisterSelect<T extends boolean = true> {
   nextAssessmentDate?: T;
   riskStatus?: T;
   riskRegisterDocument?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25743,6 +26089,7 @@ export interface SegmentReportingSelect<T extends boolean = true> {
   relatedDisclosures?: T;
   segmentReportingDocument?: T;
   reportingStatus?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25771,6 +26118,7 @@ export interface BiologicalAssetsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25815,6 +26163,7 @@ export interface BusinessCombinationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25841,6 +26190,7 @@ export interface DepreciationSchedulesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25880,6 +26230,7 @@ export interface FairValueMeasurementsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25926,6 +26277,7 @@ export interface FixedAssetsSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25959,6 +26311,7 @@ export interface HeldForSaleClassificationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25991,6 +26344,7 @@ export interface InsuranceContractsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26020,6 +26374,7 @@ export interface InvestmentPropertiesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26056,6 +26411,7 @@ export interface LeasePeriodPostingsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26113,6 +26469,7 @@ export interface LeasesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26172,6 +26529,7 @@ export interface PropertiesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26214,6 +26572,7 @@ export interface SpacesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26247,6 +26606,7 @@ export interface BudgetPlanningSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26295,6 +26655,7 @@ export interface ContractsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26323,6 +26684,7 @@ export interface PerformanceObligationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26356,6 +26718,7 @@ export interface ProjectTasksSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26394,6 +26757,7 @@ export interface ProjectsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26435,6 +26799,7 @@ export interface RecurringJournalsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26479,6 +26844,7 @@ export interface WorkflowDefinitionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26521,6 +26887,7 @@ export interface WorkflowInstancesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26559,6 +26926,7 @@ export interface ContractAmendmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   internalNotes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26601,6 +26969,7 @@ export interface ContractSignaturesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   approvalComments?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26618,6 +26987,7 @@ export interface ChatSelect<T extends boolean = true> {
   payload?: T;
   depth?: T;
   emittedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26636,6 +27006,7 @@ export interface ConnectionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26657,6 +27028,7 @@ export interface MessagesSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26679,6 +27051,7 @@ export interface ApiAuditEventsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26713,6 +27086,7 @@ export interface AuditEventsSelect<T extends boolean = true> {
   severity?: T;
   previousHash?: T;
   rowHash?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26734,6 +27108,7 @@ export interface AuditSubmissionsSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26783,6 +27158,7 @@ export interface DataProcessingActivitiesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26808,6 +27184,7 @@ export interface DataSubjectRequestsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26845,6 +27222,7 @@ export interface MemoriesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26871,6 +27249,7 @@ export interface MineralResourceAssetsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26894,6 +27273,7 @@ export interface RegulatoryDeferralAccountsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26922,6 +27302,7 @@ export interface RoundingAdjustmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26955,6 +27336,7 @@ export interface SectorsSelect<T extends boolean = true> {
         label?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26975,6 +27357,7 @@ export interface SharesSelect<T extends boolean = true> {
   revoked?: T;
   revokedAt?: T;
   revokeChainLeafUuid?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27023,6 +27406,7 @@ export interface StandardsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27041,6 +27425,7 @@ export interface TaggingsSelect<T extends boolean = true> {
   approvedAt?: T;
   taggable?: T;
   taggableType?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27057,6 +27442,7 @@ export interface TagsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27086,6 +27472,7 @@ export interface TransactionFailuresSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27125,6 +27512,7 @@ export interface TranslationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27161,6 +27549,7 @@ export interface AddressesSelect<T extends boolean = true> {
   note?: T;
   isDefault?: T;
   metadata?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27179,6 +27568,7 @@ export interface VariantsSelect<T extends boolean = true> {
   priceInEUR?: T;
   sku?: T;
   barcode?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
   deletedAt?: T;
@@ -27194,6 +27584,7 @@ export interface VariantTypesSelect<T extends boolean = true> {
   label?: T;
   name?: T;
   options?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
   deletedAt?: T;
@@ -27209,6 +27600,7 @@ export interface VariantOptionsSelect<T extends boolean = true> {
   variantType?: T;
   label?: T;
   value?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
   deletedAt?: T;
@@ -27318,6 +27710,7 @@ export interface ProductsSelect<T extends boolean = true> {
   categories?: T;
   generateSlug?: T;
   slug?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
   deletedAt?: T;
@@ -27344,6 +27737,7 @@ export interface CartsSelect<T extends boolean = true> {
   status?: T;
   subtotal?: T;
   currency?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27467,6 +27861,7 @@ export interface OrdersSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27550,6 +27945,7 @@ export interface TransactionsSelect<T extends boolean = true> {
         note?: T;
       };
   metadata?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27684,6 +28080,7 @@ export interface FormsSelect<T extends boolean = true> {
         message?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27708,6 +28105,7 @@ export interface FormSubmissionsSelect<T extends boolean = true> {
         document?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27725,6 +28123,7 @@ export interface RedirectsSelect<T extends boolean = true> {
         reference?: T;
         url?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27759,6 +28158,7 @@ export interface SearchSelect<T extends boolean = true> {
         title?: T;
         id?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27780,6 +28180,7 @@ export interface ExportsSelect<T extends boolean = true> {
   fields?: T;
   collectionSlug?: T;
   where?: T;
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -27811,6 +28212,7 @@ export interface ImportsSelect<T extends boolean = true> {
         issues?: T;
         issueDetails?: T;
       };
+  handle?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
