@@ -18,7 +18,7 @@ import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs'
 import { r2Storage } from '@payloadcms/storage-r2'
 import { uuidPlugin } from '@/utilities/uuid'
 import { taggablePlugin } from '@/plugins/taggable'
-import { uuidNamesPlugin } from '@/plugins/naming'
+import { longNamesPlugin } from '@/plugins/naming'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
 import { mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
 import { versionsPlugin } from '@/plugins/versions'
@@ -492,11 +492,9 @@ export default buildConfig({
     // row carries the content-uuid (the version leaf), before naming so the `_v`
     // tables get derived names. See the `versions` skill + src/versions/cross.
     versionsPlugin(),
-    // Every internal table/enum name is a content-uuid of its path — fixed
-    // length, so it can never overflow SQLite's 63-char limit. Names are
-    // derived, never invented; references (collection slugs, field names)
-    // keep their words. Runs last to cover all assembled fields. See `database`.
-    uuidNamesPlugin(),
+    // Tables and enums keep Payload's own names. A `dbName` is set only where Payload's name would
+    // exceed its 63-character identifier limit. Runs last to cover all assembled fields.
+    longNamesPlugin(),
     // skillRouterPlugin() REMOVED from the deployed Worker: it statically imports the 84MB
     // `skill/router/skills.index` (the whole dev skills corpus) — which violates the corpus's own
     // lazy-load law (CLAUDE.md: never import skills.index) AND cannot ship in a Cloudflare Worker
