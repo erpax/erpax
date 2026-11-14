@@ -19,7 +19,7 @@ describe('catalogue — the item master folded into the e-commerce plugin produc
   it('adds the item master beside the plugin fields, which stay first and untouched', () => {
     const fields = withItemFields(pluginProductFields())
     expect(fields.slice(0, 3)).toEqual(pluginProductFields())
-    expect(itemFieldNames()).toEqual(['code', 'sku', 'barcode', 'address', 'pricing', 'taxation', 'ledger', 'stock', 'physical', 'discounts', 'fulfillment', 'visibility', 'metadata'])
+    expect(itemFieldNames()).toEqual(['apps', 'code', 'sku', 'barcode', 'address', 'pricing', 'taxation', 'ledger', 'stock', 'physical', 'discounts', 'fulfillment', 'visibility', 'metadata'])
   })
 
   it('the item stock is `stock`, never the plugin `inventory` number the checkout decrements', () => {

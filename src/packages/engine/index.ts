@@ -51,12 +51,32 @@ export const enabledApps = (tenant: { apps?: readonly string[] | null } | null |
   return apps.filter((app) => app.required === true || all || chosen!.includes(app.slug)).map((app) => app.slug)
 }
 
+/**
+ * Add apps to what a tenant has chosen. A tenant with nothing chosen has every app, so it stays
+ * with nothing chosen; a required app is never listed (it is always on); an unknown app is ignored.
+ */
+export const grant = (current: readonly string[] | null | undefined, add: readonly string[], apps: readonly App[]): string[] => {
+  if (current === undefined || current === null || current.length === 0) return []
+  const wanted = new Set([...current, ...add])
+  return apps.filter((app) => app.required !== true && wanted.has(app.slug)).map((app) => app.slug)
+}
+
 /** Is this app on for this tenant? */
 export const hasApp = (tenant: { apps?: readonly string[] | null } | null | undefined, app: string, apps: readonly App[]): boolean => enabledApps(tenant, apps).includes(app)
 
-/** One tenant row per app: the app as a tenant, owning the app's own content. */
-export const appTenants = (apps: readonly App[]): Array<{ name: string; slug: string; app: string; apps: string[] }> =>
-  apps.map((app) => ({ name: app.title, slug: app.slug, app: app.slug, apps: enabledApps({ apps: [app.slug] }, apps) }))
+/**
+ * One tenant row per app: the app as a tenant, owning the app's own content. With a base domain,
+ * each is served on its own subdomain — `<app>.<domain>` — so the host name alone says which app,
+ * and through it which use case, a request is for.
+ */
+export const appTenants = (apps: readonly App[], domain?: string): Array<{ name: string; slug: string; app: string; apps: string[]; domain?: string }> =>
+  apps.map((app) => ({ name: app.title, slug: app.slug, app: app.slug, apps: enabledApps({ apps: [app.slug] }, apps), ...(domain ? { domain: `${app.slug}.${domain}` } : {}) }))
+
+/** The app a host name is for: the first label of `<app>.<domain>`, when it names an app. */
+export const appOfHost = (host: string | null | undefined, apps: readonly App[]): App | undefined => {
+  const label = (host ?? '').toLowerCase().split(':')[0]!.split('.')[0]
+  return apps.find((app) => app.slug === label)
+}
 
 type Shape = Pick<CollectionConfig, 'slug' | 'fields'>
 

@@ -2225,6 +2225,10 @@ export interface Product {
   priceInEUREnabled?: boolean | null;
   priceInEUR?: number | null;
   /**
+   * The erpax apps this product switches on for the tenant that buys it. Leave empty for an ordinary product.
+   */
+  apps?: ('sites' | 'sales' | 'ledger' | 'people' | 'make' | 'stock' | 'comply' | 'assets' | 'work' | 'chat')[] | null;
+  /**
    * Item code — the ERP identifier documents quote. Empty on a storefront-only product.
    */
   code?: string | null;
@@ -27634,6 +27638,7 @@ export interface ProductsSelect<T extends boolean = true> {
   variants?: T;
   priceInEUREnabled?: T;
   priceInEUR?: T;
+  apps?: T;
   code?: T;
   sku?: T;
   barcode?: T;
