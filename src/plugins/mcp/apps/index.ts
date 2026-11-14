@@ -22,7 +22,7 @@
  */
 import type { CollectionSlug, Config, Endpoint, Plugin } from 'payload'
 import { mcpPlugin } from '@payloadcms/plugin-mcp'
-import { appOfHost, partition, type App } from '@/packages/engine'
+import { appOfHost, appSlugs, type App } from '@/packages/engine'
 import type { Iso27002ControlId } from '@/utilities/iso/27002'
 
 /**
@@ -31,15 +31,9 @@ import type { Iso27002ControlId } from '@/utilities/iso/27002'
  *   5.23 — Cloud services (per-app, per-tenant separation of the machine interface)
  *   8.3  — Information access restriction (the plugin's own gating runs under the key owner)
  */
-export const controlsApplied: ReadonlyArray<Iso27002ControlId> = ['5.15', '5.23', '8.3'] as const
+export { appSlugs }
 
-/** The collections of each app, by the same computation that places them in its plugin. */
-export const appSlugs = (collections: ReadonlyArray<{ readonly slug: string }>, apps: readonly App[]): Map<string, string[]> => {
-  const owner = partition(collections as Parameters<typeof partition>[0], apps)
-  const bySlug = new Map<string, string[]>(apps.map((app) => [app.slug, []]))
-  for (const { slug } of collections) bySlug.get(owner.get(slug) ?? '')?.push(slug)
-  return bySlug
-}
+export const controlsApplied: ReadonlyArray<Iso27002ControlId> = ['5.15', '5.23', '8.3'] as const
 
 /** The plugin's own `/mcp` endpoints for ONE app's collections, by method. */
 const handlersFor = (config: Config, slugs: readonly string[]): Map<string, Endpoint['handler']> => {

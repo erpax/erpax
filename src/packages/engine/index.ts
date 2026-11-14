@@ -107,6 +107,14 @@ export const parseRoleAddress = (address: string | null | undefined, apps: reado
 
 type Shape = Pick<CollectionConfig, 'slug' | 'fields'>
 
+/** The collections of each app, by the same computation that places them in its plugin. */
+export const appSlugs = (collections: ReadonlyArray<{ readonly slug: string }>, apps: readonly App[]): Map<string, string[]> => {
+  const owner = partition(collections as readonly Shape[], apps)
+  const bySlug = new Map<string, string[]>(apps.map((app) => [app.slug, []]))
+  for (const { slug } of collections) bySlug.get(owner.get(slug) ?? '')?.push(slug)
+  return bySlug
+}
+
 /** Every relationship target in a list of fields, however deeply nested. */
 const targetsIn = (fields: readonly Field[], out: string[] = []): string[] => {
   for (const raw of fields) {
