@@ -52,4 +52,4 @@ export {
   type RemedyCoverage,
 } from './industry'
 
-export * from './suggestions'
+export * from '@/collections/ai-suggestions'

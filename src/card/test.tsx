@@ -29,7 +29,7 @@ vi.mock('next/link', () => ({
     </a>
   ),
 }))
-vi.mock('@/media', () => ({ MediaComponent: () => <div data-testid="media" /> }))
+vi.mock('@/collections/media', () => ({ MediaComponent: () => <div data-testid="media" /> }))
 vi.mock('@/ui', () => ({ cn: (...c: unknown[]) => c.filter(Boolean).join(' ') }))
 vi.mock('@/use/clickable/card', () => ({
   default: () => ({ card: { ref: { current: null } }, link: { ref: { current: null } } }),

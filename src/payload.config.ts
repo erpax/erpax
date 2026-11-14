@@ -60,7 +60,7 @@ import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 // No domain silos: organizing by actual data type/concern, not business domain.
 // Collections are self-contained with clear boundaries for future plugin extraction.
 import * as allCollections from '@/collections'
-import { tenantCollectionsConfig, tenantScopedSlugs } from '@/tenants'
+import { tenantCollectionsConfig, tenantScopedSlugs } from '@/collections/tenants'
 import type { CollectionSlug, CollectionConfig } from 'payload'
 import { Footer } from './footer/config'
 import { Header } from './header/config'

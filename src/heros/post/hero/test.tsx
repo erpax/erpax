@@ -5,7 +5,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import { atomAddress } from '@/atom/address'
 
 vi.mock('next-intl/server', () => ({ getTranslations: async () => (k: string) => k }))
-vi.mock('@/media', () => ({ MediaComponent: () => <div data-testid="media" /> }))
+vi.mock('@/collections/media', () => ({ MediaComponent: () => <div data-testid="media" /> }))
 vi.mock('@/format/author', () => ({
   formatAuthors: (a: { name?: string }[]) => a.map((x) => x.name ?? '').filter(Boolean).join(', '),
 }))

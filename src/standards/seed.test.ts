@@ -15,7 +15,7 @@ import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
 import { STANDARDS_CATALOGUE, STANDARDS_COUNT } from './seed'
 import { STANDARDS_REGISTRY } from './registry'
-import collectionConfig from '@/standards'
+import collectionConfig from '@/collections/standards'
 import { uuid } from '@/integrity'
 import { uuidColor } from '@/uuid/projection'
 

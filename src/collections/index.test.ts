@@ -55,12 +55,12 @@ describe('collection nodes — one computed invariant for all (config-driven)', 
  * segments MUST be the slug's atoms, each its own segment. A fused leaf
  * (`@/workorders` for slug `work-orders`) glues two atoms into one phantom node
  * — a word with no model, an aura gap the link/balance gates never measured.
- * Splitting the path (`@/work/orders`) lands the type's atoms on real matrix
+ * Splitting the path (`@/collections/work-orders`) lands the type's atoms on real matrix
  * nodes whose singular models already exist ([[orders]]→order). This test FAILS
  * the instant any collection's path stops being its slug split into atoms.
  *
  * Plural-tolerant on each segment: a COLLECTION leaf is legitimately plural
- * (`@/budget/plannings` for slug `budget-planning`) — `plannings` and `planning`
+ * (`@/collections/budget-planning` for slug `budget-planning`) — `plannings` and `planning`
  * are the SAME atom (the model resolves), so that is harmony, not a gap. Only a
  * GLUED segment (fewer segments than atoms) breaks the law.
  *

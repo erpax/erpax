@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import type { Field } from 'payload'
-import GLPostings from '@/journal/entries/gl/postings'
+import GLPostings from '@/collections/gl-postings'
 import { enforcePostingImmutability } from '@/hooks/collections/gl-postings/enforcePostingImmutability'
 
 /**

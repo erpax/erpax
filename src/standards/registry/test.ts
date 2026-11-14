@@ -9,7 +9,7 @@
  */
 import { describe, it, expect } from 'vitest'
 import { STANDARDS_REGISTRY, normalizeFamily, STANDARD_FAMILIES } from './index'
-import collectionConfig from '@/standards'
+import collectionConfig from '@/collections/standards'
 
 // The allowed family set, DERIVED from the live collection config (not the
 // registry's own constant) — the schema is the source of truth the registry is

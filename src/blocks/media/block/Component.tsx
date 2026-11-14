@@ -6,7 +6,7 @@ import RichText from '@/rich/text'
 
 import type { MediaBlock as MediaBlockProps } from '@/types'
 
-import { MediaComponent as Media } from '@/media'
+import { MediaComponent as Media } from '@/collections/media'
 
 type Props = MediaBlockProps & {
   breakout?: boolean

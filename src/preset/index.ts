@@ -67,11 +67,11 @@ export async function loadPresets(
 /** Every saved list the merged collections declare. Imported on demand: those collections import this atom. */
 export async function declaredPresets(): Promise<Preset[]> {
   const [parties, orders, work, provisions, memos] = await Promise.all([
-    import('@/parties'),
-    import('@/customers/sales/orders'),
-    import('@/maintenance/work/orders'),
-    import('@/fiscal/periods/provisions'),
-    import('@/invoices/credit/memos'),
+    import('@/collections/parties'),
+    import('@/collections/sales-orders'),
+    import('@/collections/maintenance-work-orders'),
+    import('@/collections/provisions'),
+    import('@/collections/credit-memos'),
   ])
   return [...parties.partyPresets(), ...orders.orderPresets(), ...work.maintenancePresets(), ...provisions.provisionPresets(), ...memos.memoPresets()]
 }

@@ -3,7 +3,7 @@ import React from 'react'
 
 import type { Post } from '@/types'
 
-import { MediaComponent as Media } from '@/media'
+import { MediaComponent as Media } from '@/collections/media'
 import { formatAuthors } from '@/format/author'
 import { getTranslations } from 'next-intl/server'
 

@@ -7,7 +7,7 @@ import { atomAddress } from '@/atom/address'
 const setHeaderTheme = vi.fn()
 vi.mock('@/providers/header/theme', () => ({ useHeaderTheme: () => ({ setHeaderTheme }) }))
 vi.mock('@/link/component', () => ({ CMSLink: ({ label }: { label?: string }) => <a href="https://erpax.test/x">{label}</a> }))
-vi.mock('@/media', () => ({ MediaComponent: () => <div data-testid="media" /> }))
+vi.mock('@/collections/media', () => ({ MediaComponent: () => <div data-testid="media" /> }))
 vi.mock('@/rich/text', () => ({ default: () => <p>rich</p> }))
 
 const { HighImpactHero } = await import('./index')

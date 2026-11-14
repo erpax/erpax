@@ -5,7 +5,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import { atomAddress } from '@/atom/address'
 
 vi.mock('@/link/component', () => ({ CMSLink: ({ label }: { label?: string }) => <a href="https://erpax.test/x">{label}</a> }))
-vi.mock('@/media', () => ({ MediaComponent: () => <div data-testid="media" /> }))
+vi.mock('@/collections/media', () => ({ MediaComponent: () => <div data-testid="media" /> }))
 vi.mock('@/rich/text', () => ({ default: () => <p>rich</p> }))
 
 const { MediumImpactHero } = await import('./index')

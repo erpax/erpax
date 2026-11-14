@@ -18,7 +18,7 @@ import React, { Fragment } from 'react'
 
 import type { Post } from '@/types'
 
-import { MediaComponent as Media } from '@/media'
+import { MediaComponent as Media } from '@/collections/media'
 
 export type CardPostData = Pick<Post, 'slug' | 'categories' | 'meta' | 'title'>
 

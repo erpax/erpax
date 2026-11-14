@@ -19,4 +19,4 @@ export const saleStatusOptions = [
   { label: 'Reversed', value: 'reversed' },
 ] as const
 
-export * from './periods'
+export * from '@/collections/fiscal-periods'
