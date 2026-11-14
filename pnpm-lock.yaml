@@ -275,6 +275,9 @@ importers:
       '@payloadcms/eslint-plugin':
         specifier: ^3.28.0
         version: 3.28.0(@testing-library/dom@10.4.1)(@typescript-eslint/eslint-plugin@8.65.0(@typescript-eslint/parser@8.65.0(eslint@9.22.0(jiti@2.7.0))(typescript@5.9.3))(eslint@9.22.0(jiti@2.7.0))(typescript@5.9.3))(jiti@2.7.0)(ts-api-utils@2.5.0(typescript@5.9.3))
+      '@payloadcms/typescript-plugin':
+        specifier: 4.0.0-internal.38b7f1d
+        version: 4.0.0-internal.38b7f1d
       '@playwright/test':
         specifier: ^1.62.1
         version: 1.62.1
@@ -2095,6 +2098,10 @@ packages:
 
   '@payloadcms/translations@4.0.0-internal.38b7f1d':
     resolution: {integrity: sha512-dU93UqGHjySkjEFHv+Wx2Y8vMK+IXBW2ESQnOwqqcHYVL04whI86i61W7jbxeqZYscr0VL36k5ilR72I7JeiDQ==}
+
+  '@payloadcms/typescript-plugin@4.0.0-internal.38b7f1d':
+    resolution: {integrity: sha512-oKTHIUawV4wF/ErZdC5ATl3kW5EVf+0rBEKCiWUqdS+ZNG+x41etRxqLMIPA6wvaSMlMixZ91l+kgFQ1m13+7w==}
+    engines: {node: '>=24.15.0'}
 
   '@payloadcms/ui@4.0.0-internal.38b7f1d':
     resolution: {integrity: sha512-MghRSPXAua2UPdb0/QHPF4O9HtaOww+ojz1UaIHr7S8WR/wb4CFOeLnugH/Rr+SGhjU8M8P+r0uRSN4MJ/Zebg==}
@@ -10218,6 +10225,8 @@ snapshots:
   '@payloadcms/translations@4.0.0-internal.38b7f1d':
     dependencies:
       date-fns: 4.1.0
+
+  '@payloadcms/typescript-plugin@4.0.0-internal.38b7f1d': {}
 
   '@payloadcms/ui@4.0.0-internal.38b7f1d(@types/react@19.2.18)(monaco-editor@0.55.1)(next@16.3.4(@babel/core@7.29.7)(@playwright/test@1.62.1)(@types/node@24.13.3)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@17.0.2)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@5.9.3)':
     dependencies:

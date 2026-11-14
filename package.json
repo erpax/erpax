@@ -113,6 +113,7 @@
   "devDependencies": {
     "@cursor/sdk": "^1.0.26",
     "@payloadcms/eslint-plugin": "^3.28.0",
+    "@payloadcms/typescript-plugin": "4.0.0-internal.38b7f1d",
     "@playwright/test": "^1.62.1",
     "@tailwindcss/postcss": "^4.3.3",
     "@tailwindcss/typography": "^0.5.20",
