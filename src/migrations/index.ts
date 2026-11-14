@@ -19,6 +19,7 @@ import * as migration_20261114_112347_polymorphic_sources from './20261114_11234
 import * as migration_20261114_115945_fold_purchase_orders_into_orders from './20261114_115945_fold_purchase_orders_into_orders';
 import * as migration_20261114_120836_fold_quotes_and_requisitions_into_orders from './20261114_120836_fold_quotes_and_requisitions_into_orders';
 import * as migration_20261114_122616_roles_on_orders from './20261114_122616_roles_on_orders';
+import * as migration_20261114_123452_payload_table_names from './20261114_123452_payload_table_names';
 
 export const migrations = [
   {
@@ -124,6 +125,11 @@ export const migrations = [
   {
     up: migration_20261114_122616_roles_on_orders.up,
     down: migration_20261114_122616_roles_on_orders.down,
-    name: '20261114_122616_roles_on_orders'
+    name: '20261114_122616_roles_on_orders',
+  },
+  {
+    up: migration_20261114_123452_payload_table_names.up,
+    down: migration_20261114_123452_payload_table_names.down,
+    name: '20261114_123452_payload_table_names'
   },
 ];
