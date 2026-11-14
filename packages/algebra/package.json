@@ -45,5 +45,8 @@
   "scripts": {
     "build": "node ./build.mjs",
     "prepublishOnly": "node ./build.mjs"
+  },
+  "erpax": {
+    "entry": "utilities/algebra"
   }
 }

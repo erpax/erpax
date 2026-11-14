@@ -43,7 +43,7 @@ export type { MatrixNode, MatrixEdge }
  * emits the bind/cross/root, this recomputes them to verify. The index.test
  * pins the agreement against a known collide output (the `coordinate` node).
  *
- * NOT the same primitive as src/integrity/content/index.ts#nameUuid — that one
+ * NOT the same primitive as src/utilities/integrity/content/index.ts#nameUuid — that one
  * prefixes a namespace UUID into the hash (name-based v8); the matrix coil
  * hashes the bare bytes (no namespace), matching the collider exactly.
  *

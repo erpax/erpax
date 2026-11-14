@@ -6,7 +6,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 /**
  * Card — the accessibility claims, PROVEN rather than cited.
  *
- * `src/card/index.tsx` carries five banners (schema.org Article, W3C HTML5 article-element,
+ * `src/components/card/index.tsx` carries five banners (schema.org Article, W3C HTML5 article-element,
  * RFC 3986, WCAG 2.4.4 link-purpose-in-context, WCAG 2.5.5 target-size). The leftover engine's
  * derived proof asserts those strings are PRESENT in the source — refutable per claim, but it
  * proves the file still *claims* the standard, never that it *meets* it.

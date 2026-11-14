@@ -71,7 +71,7 @@ import { flagged } from '@/hooks/context'
  * @compliance SOX §404 internal-controls production-control TOM-PROD-01
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see src/lots/index.ts · src/lot/work/phases/index.ts (the lot funnel = the planning/header layer)
- * @see src/horo/index.ts (the seven-position state ring)
+ * @see src/utilities/horo/index.ts (the seven-position state ring)
  * @see src/allocation (the harmonic pay ladder this wage feeds)
  * @see ~/github/ceccec/etrima/app/models/work_order.rb (the source-of-truth formulas)
  */

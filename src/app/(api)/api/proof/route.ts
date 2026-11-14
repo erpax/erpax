@@ -17,7 +17,7 @@
  *
  * @rfc 9110 http-semantics
  * @audit ISO-19011:2018 audit-evidence the citation must lead to the evidence
- * @see src/verify/inventory/SKILL.md
+ * @see src/utilities/verify/inventory/SKILL.md
  */
 import { INVENTORY as inventory, proved, type ProofCensus } from '@/utilities/verify/inventory'
 
@@ -31,7 +31,7 @@ export function GET(): Response {
       '@type': 'Dataset',
       name: 'erpax — machine-checked proof inventory',
       description:
-        'Every theorem in src/verify/lean, the axioms the Lean kernel says it rests on, and whether any is a sorry stub. ' +
+        'Every theorem in src/utilities/verify/lean, the axioms the Lean kernel says it rests on, and whether any is a sorry stub. ' +
         'A record of a kernel run, not a live check: a Worker cannot run Lean.',
       sealedAt: inventory.sealedAt,
       lean: inventory.lean,

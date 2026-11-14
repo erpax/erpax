@@ -26,7 +26,7 @@ import { exactAbs } from '@/utilities/algebra'
  * @accounting IFRS IAS-7 statement-of-cash-flows
  * @audit ISO-19011:2018 audit-trail bank-statement-import
  * @compliance SOX §404 internal-controls cash-management
- * @see src/gl/posting/service/index.ts postBankStatementImported
+ * @see src/utilities/gl/posting/service/index.ts postBankStatementImported
  * @see docs/STANDARDS.md §4.1
  */
 

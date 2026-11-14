@@ -11,7 +11,7 @@
  * @accounting US-GAAP ASC-330 inventory cost-of-goods-sold
  * @audit ISO-19011:2018 audit-trail double-entry-posting
  * @compliance SOX §404 internal-controls
- * @see src/items/hooks/item.ts
+ * @see src/utilities/items/hooks/item.ts
  */
 
 import { itemAccountingHook } from '@/hooks/collections/items/itemAccountingHook'

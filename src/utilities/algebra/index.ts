@@ -50,7 +50,7 @@ export {
  * Composes [[horo]] · [[navigation]] · [[rosetta]] · [[theorem]] · [[law]].
  * Fold magma (merge-bound) lives at [[./fold]] — not on the npm free face.
  *
- * License — core math (`src/algebra/**`) free for all ([[./license]]); npm: `@erpax/algebra`.
+ * License — core math (`src/utilities/algebra/**`) free for all ([[./license]]); npm: `@erpax/algebra`.
  */
 
 // ── algebra audits anything, in any direction, free ──────────────────────────

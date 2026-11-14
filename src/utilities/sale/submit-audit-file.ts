@@ -8,7 +8,7 @@
  * @standard BG Наредба-Н-18 §Приложение-38 audit-file-submission
  * @standard OECD SAF-T 2.0 (universal base)
  * @audit ISO-19011:2018 §6.4 audit-evidence
- * @see src/sale/audit-file.ts · src/country/client/bg-nap-mtls.ts
+ * @see src/utilities/sale/audit-file.ts · src/utilities/country/client/bg-nap-mtls.ts
  */
 
 import type { Payload, PayloadRequest } from 'payload'

@@ -176,8 +176,8 @@ describe('prose → code, or purge → research', () => {
 
   it('proveProse with a REAL proof converts prose to code — the pair sealed', () => {
     const cwd = tmp()
-    const fate = proveProse('debits equal credits', 'src/double/entry/validator/test.ts', () => true, cwd)
-    expect(fate).toEqual({ prose: 'debits equal credits', state: 'proven', proof: 'src/double/entry/validator/test.ts' })
+    const fate = proveProse('debits equal credits', 'src/utilities/double/entry/validator/test.ts', () => true, cwd)
+    expect(fate).toEqual({ prose: 'debits equal credits', state: 'proven', proof: 'src/utilities/double/entry/validator/test.ts' })
     expect(proseFate('debits equal credits', cwd).state).toBe('proven')
     rmSync(cwd, { recursive: true, force: true })
   })

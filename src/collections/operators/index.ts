@@ -14,7 +14,7 @@ import { statusField } from '@/fields/select/statusField'
  * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature
  * @audit ISO-19011:2018 audit-trail
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @see src/naredba/n/18/unp/index.ts
+ * @see src/utilities/naredba/n/18/unp/index.ts
  */
 const Operators: CollectionConfig = {
   slug: 'operators',

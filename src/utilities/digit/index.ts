@@ -1,5 +1,5 @@
 /**
- * digit — the digit-space DUAL of word. `tsx src/digit/index.ts` prints the trace ledger.
+ * digit — the digit-space DUAL of word. `tsx src/utilities/digit/index.ts` prints the trace ledger.
  *
  * @see ./SKILL.md
  * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring

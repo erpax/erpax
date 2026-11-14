@@ -8,7 +8,7 @@
  * @standard ISO/IEC-29119:2022 software-testing
  * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
  * @audit ISO-19011:2018 audit-trail
- * @see src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts
+ * @see src/utilities/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts
  */
 
 import { describe, it, expect } from 'vitest'

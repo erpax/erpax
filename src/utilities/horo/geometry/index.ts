@@ -171,7 +171,7 @@ export function renderSequenceSection(): readonly string[] {
     '> **Boundary.** This is proven group theory over (ℤ/9ℤ) — the doubling cycle, the axis as its complement, ' +
       'and the order of the group they generate. It is used here as the corpus\'s **order of work** (build the ' +
       'axis before the branches; fold, do not climb). No claim is made that it explains anything outside ' +
-      'arithmetic. Run it: `tsx src/horo/index.ts`.',
+      'arithmetic. Run it: `tsx src/utilities/horo/index.ts`.',
     '',
   ]
 }

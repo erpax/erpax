@@ -68,7 +68,7 @@ export interface CountryContext {
    * Every commercial trading API in scope for the country (payment gateways,
    * marketplaces, carriers, Peppol/EDI, banking aggregators, FX) — the
    * commercial sibling of `apis`. GLOBAL + (for EU members) EU-wide providers
-   * are unioned in. See `src/trading/api/`.
+   * are unioned in. See `src/utilities/trading/api/`.
    */
   readonly tradingApis: ReadonlyArray<TradingApi>
   /** Bound helpers — branch on country without reaching into the registries. */

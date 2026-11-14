@@ -10,7 +10,7 @@
  *
  * @standard BG Наредба-Н-18 §Приложение-38 monthly-audit-file
  * @audit ISO-19011:2018 §6.4 audit-evidence
- * @see src/sale/submit-audit-file.ts
+ * @see src/utilities/sale/submit-audit-file.ts
  */
 
 import type { Payload } from 'payload'

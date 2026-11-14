@@ -15,7 +15,7 @@ import { exactFloor } from '@/utilities/algebra'
  * @standard BG Наредба-Н-18 §СУПТО sale-register · §чл.3-ал.1 card-payment-in-scope
  * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
  * @audit ISO-19011:2018 audit-trail event-driven
- * @see src/sale/fiscal/revenue/index.ts · src/sale/fiscal/context/index.ts
+ * @see src/utilities/sale/fiscal/revenue/index.ts · src/utilities/sale/fiscal/context/index.ts
  */
 
 import type { Payload, PayloadRequest } from 'payload'
@@ -23,7 +23,7 @@ import { eventEmitter, type EventEmitterService } from '@/utilities/event/emitte
 import { fiscalizeRevenue, type RevenueInput } from '@/utilities/sale/fiscal/revenue'
 import { resolveFiscalContext } from '@/utilities/sale/fiscal/context'
 
-/** `subscription:invoiced` payload (see `src/types/events/index.ts`). */
+/** `subscription:invoiced` payload (see `src/utilities/types/events/index.ts`). */
 export interface SubscriptionInvoicedPayload {
   subscriptionId: string
   invoiceId: string

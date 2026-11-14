@@ -14,7 +14,7 @@
  * **The token is derived, not stored.** `jobs.access.run` accepts a Bearer token that is
  * `deriveSecretFromPayloadSecret(cron)`. A Worker receives its secrets in `env`, never in
  * `process.env`, so this calls the explicit-master form — the SAME construction the endpoint checks,
- * not a second one that could drift (NIST SP 800-108, src/nist/sp/800/108/kdf.ts).
+ * not a second one that could drift (NIST SP 800-108, src/utilities/nist/sp/800/108/kdf.ts).
  *
  * @law a declared trigger must reach a handler. Cloudflare does not warn when it does not, so the
  *      absence is invisible until someone notices the job never ran.

@@ -28,8 +28,8 @@
  * @accounting US-GAAP ASC-606-10-25 contract-modifications
  * @audit ISO-19011:2018 audit-trail subscription-lifecycle
  * @compliance SOX §404 internal-controls revenue-recognition
- * @see src/types/events/index.ts SubscriptionActivatedEvent
- * @see src/gl/posting/service/index.ts
+ * @see src/utilities/types/events/index.ts SubscriptionActivatedEvent
+ * @see src/utilities/gl/posting/service/index.ts
  * @see docs/STANDARDS.md §4.2
  */
 

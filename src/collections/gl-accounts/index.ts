@@ -15,7 +15,7 @@
  * @compliance SOX §404 internal-controls
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see docs/STANDARDS.md §4.2
- * @see src/gl/account/resolver
+ * @see src/utilities/gl/account/resolver
  */
 
 import type { CollectionConfig } from 'payload'

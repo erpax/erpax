@@ -22,7 +22,7 @@
  * @audit ISO-19011:2018 §6.4.6 audit-evidence-collection
  * @compliance SOC-2 CC4.1 monitoring-and-evaluation
  * @compliance SOX §404 internal-controls evidence-preservation
- * @see src/iso/19011/types/index.ts
+ * @see src/utilities/iso/19011/types/index.ts
  * @see src/plugins/accounting/collections/AuditEvents.ts
  * @see docs/STANDARDS.md §4.4
  */

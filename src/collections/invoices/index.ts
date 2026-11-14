@@ -68,7 +68,7 @@ import { isIso4217 } from '@/utilities/iso/4217'
  * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
  * @compliance SOX §404 internal-controls
  * @audit ISO-19011:2018 audit-trail
- * @see src/en/16931/types/index.ts
+ * @see src/utilities/en/16931/types/index.ts
  */
 export const Invoices: CollectionConfig = {
   slug: 'invoices',
@@ -474,7 +474,7 @@ export const Invoices: CollectionConfig = {
       },
       fields: [
         {
-          // Canonical 9-code list lives in `src/un/cefact/5305/`.
+          // Canonical 9-code list lives in `src/utilities/un/cefact/5305/`.
           name: 'categoryCode',
           type: 'select',
           required: true,

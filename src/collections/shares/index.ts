@@ -34,7 +34,7 @@
  * @compliance SOX §404 access-controls audit-evidenced-via-chain
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @audit Conservation Law 59 uuid-based-sharing-with-rbac
- * @see src/uuid/share/index.ts grantShare/checkShare/revokeShare/listShares
+ * @see src/utilities/uuid/share/index.ts grantShare/checkShare/revokeShare/listShares
  * @see src/agents/mcp/tool/share.ts erpax.share.* MCP tools
  */
 

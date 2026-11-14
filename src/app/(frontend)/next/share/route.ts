@@ -10,7 +10,7 @@
  *
  * @standard OGP open-graph-protocol-1.0 og:image
  * @rfc 9110 §8.3 content-type · RFC 9111 §5.2 cache-control
- * @see src/image/share/index.ts · src/generate/meta/index.ts
+ * @see src/utilities/image/share/index.ts · src/utilities/generate/meta/index.ts
  */
 import { shareImage } from '@/utilities/image/share'
 

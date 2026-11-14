@@ -27,8 +27,8 @@
  * @audit ISO-19011:2018 audit-trail account-resolution
  * @compliance SOX §404 internal-controls per-tenant-coa
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @see src/journal/entry/service (the GL posting path that resolves codes here)
- * @see src/gl/posting/rules
+ * @see src/utilities/journal/entry/service (the GL posting path that resolves codes here)
+ * @see src/utilities/gl/posting/rules
  */
 
 import type { Payload } from 'payload'

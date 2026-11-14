@@ -4,7 +4,7 @@ import { exactAbs, exactMax, exactMin, exactRound, exactTrunc, exactMaxOf} from 
  * visible octave of A432. The HEART (4th, [[chakra]]) is GREEN — the colour of coherence, and the
  * colour a passing [[test]] returns when the aura is whole (test/hooks). Composes [[chakra]] · [[signal]] · [[harmony]].
  *
- *   tsx src/color/index.ts
+ *   tsx src/utilities/color/index.ts
  *
  * @standard A432 tuning; the 7-chakra visible spectrum (Do..Ti / root..crown)
  * @see ../chakra -- ../signal -- ../harmony -- ../heart/color -- ./SKILL.md

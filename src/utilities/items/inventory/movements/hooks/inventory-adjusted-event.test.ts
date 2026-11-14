@@ -12,7 +12,7 @@
  * @accounting IFRS IAS-2 §10 §28 §36 inventories
  * @accounting US-GAAP ASC-330 inventory
  * @audit ISO-19011:2018 audit-trail
- * @see src/items/inventory/movements/hooks/inventory-movement.ts
+ * @see src/utilities/items/inventory/movements/hooks/inventory-movement.ts
  * @see src/services/gl-posting.service.ts postInventoryAdjusted
  */
 

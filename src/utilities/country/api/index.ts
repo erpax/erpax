@@ -6,7 +6,7 @@
  * **What this is:** a structured catalogue of the public endpoints each
  * country's authorities expose, with auth model, format, documentation
  * URL, and a one-line description. Consumed by:
- * Lives at `src/country/api/` — the one-word diamond path for the authority
+ * Lives at `src/utilities/country/api/` — the one-word diamond path for the authority
  * catalogue (relocated from the hyphenated `config/country-apis` violation).
  *
  *   - the country-API client services (`@/utilities/country/api/client`)
@@ -26,7 +26,7 @@
  * @compliance EU 2014/55 b2g-e-invoicing portals
  * @compliance AMLD-5 ubo-registry-access
  * @see ./specifics.ts for the per-country regulatory context
- * @see src/country/api/client/ for the working client modules
+ * @see src/utilities/country/api/client/ for the working client modules
  */
 
 export type CountryApiKind =
@@ -64,7 +64,7 @@ export interface CountryApi {
   /** Brief one-line summary of what the API does. */
   readonly description: string
   /**
-   * Marks the registry entries for which `src/country/api/client/`
+   * Marks the registry entries for which `src/utilities/country/api/client/`
    * ships a working module. `false` = catalogue-only (still useful for the
    * admin UI / docs).
    */

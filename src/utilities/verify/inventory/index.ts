@@ -64,7 +64,7 @@ export const proved = (c: ProofCensus): number => c.axiomFree + c.standardAxioms
 export { default as INVENTORY } from '@/utilities/verify/lean/inventory.generated.json'
 
 /** Where the emitted record lives — committed, because a Worker cannot regenerate it. */
-export const INVENTORY_PATH = 'src/verify/lean/inventory.generated.json' as const
+export const INVENTORY_PATH = 'src/utilities/verify/lean/inventory.generated.json' as const
 
 export interface ProofInventory {
   readonly sealedAt: string
@@ -87,7 +87,7 @@ if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
   const { tmpdir } = await import('node:os')
 
   const LEAN = process.env.LEAN_BIN ?? '/opt/homebrew/bin/lean'
-  const dir = join(process.cwd(), 'src/verify/lean')
+  const dir = join(process.cwd(), 'src/utilities/verify/lean')
   const names = readdirSync(dir).filter((f) => f.endsWith('.lean')).map((f) => f.replace(/\.lean$/, '')).sort()
   const out = mkdtempSync(join(tmpdir(), 'erpax-lean-'))
   const hash = createHash('sha256')

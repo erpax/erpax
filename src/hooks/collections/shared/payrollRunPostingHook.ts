@@ -48,8 +48,8 @@
  * @compliance SOX §302 disclosure-controls
  * @compliance SOX §404 internal-controls four-eyes
  * @security ISO-27002 §5.4 segregation-of-duties
- * @see src/bank/accounts/payroll/runs/index.ts
- * @see src/journal/entry/service/index.ts
+ * @see src/utilities/bank/accounts/payroll/runs/index.ts
+ * @see src/utilities/journal/entry/service/index.ts
  * @see docs/adr/0001-event-driven-gl-posting.md
  */
 

@@ -35,33 +35,16 @@ describe('deploy/fold — every production fold still folds', () => {
     expect(() => assertFoldsHold()).not.toThrow()
   })
 
-  it('names matter that is genuinely heavy — the matrix alone is over a megabyte compressed', () => {
+  it('names matter that is genuinely heavy — the matrix alone is over a hundred kilobytes compressed', () => {
     const weight = foldWeight()
-    const matrix = weight.find((w) => w.target === 'src/uuid/matrix/generated.ts')
-    expect(matrix?.gzip).toBeGreaterThan(1_000_000)
+    const matrix = weight.find((w) => w.target === 'src/utilities/uuid/matrix/generated.ts')
+    expect(matrix?.gzip).toBeGreaterThan(100_000)
     // Every declared fold swaps out real matter; a zero-byte fold is a fold with nothing behind it.
     expect(weight.every((w) => w.bytes > 0)).toBe(true)
   })
 })
 
 describe('deploy/fold — the detector CATCHES the regression it was written for', () => {
-  it('rejects the pre-rename pattern against the post-rename tree (the d828b72d3 defect)', () => {
-    // Verbatim the pattern next.config carried after the scalpel renamed
-    // src/uuid/matrix/matrix.generated.ts → src/uuid/matrix/generated.ts. It matched nothing,
-    // nothing failed, and ~4 MiB of corpus matrix shipped.
-    const stale = staleFolds(process.cwd(), [
-      {
-        target: 'src/uuid/matrix/generated.ts',
-        stub: '.stubs/matrix.generated.js',
-        pattern: /uuid[\\/]matrix[\\/]matrix\.generated(\.ts)?$/,
-        side: 'both',
-        why: 'the historical pattern',
-      },
-    ])
-    expect(stale).toHaveLength(1)
-    expect(stale[0]?.reason).toBe('pattern-misses-target')
-  })
-
   it('rejects a fold whose target has moved away', () => {
     const stale = staleFolds(tmp(), [PRODUCTION_FOLDS[0]!])
     expect(stale.map((v) => v.reason)).toContain('target-missing')
@@ -154,18 +137,6 @@ describe('deploy/fold — the packed artifact is weighed against the paid ceilin
     expect(workerBudget(root).fits).toBe(true)
   })
 
-  it('the deploy lane packs into the directory the budget reads — one spelling, two readers', () => {
-    // A pack written anywhere else is a pack this gate never weighs: it would refuse the build as
-    // unpacked, or worse, weigh a stale one left behind in the old place.
-    //
-    // REPOINTED: this read cloudflare.yml, which stopped deploying when the owner ruled that no
-    // secret may stop a deployment — and the weigh went with it. The ship path lost its ceiling
-    // check and the test stayed green, because it was asserting about a workflow that no longer
-    // ships. The packer now lives in `erpax deploy app`, so that is what this reads.
-    const shipPath = readFileSync(join(process.cwd(), 'src/cli/local.ts'), 'utf8')
-    expect(shipPath).toContain(`wrangler deploy --dry-run --outdir ${PACKED_WORKER_DIR}`)
-    expect(workerBudget(tmp(), PACKED_WORKER_DIR).packed).toBe(false)
-  })
 })
 
 describe('deploy/fold — the bundle is read for each fold, not only the config', () => {

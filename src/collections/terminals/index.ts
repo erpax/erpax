@@ -15,7 +15,7 @@ import { currencyField } from '@/fields/text/currencyField'
  * @standard BG Наредба-Н-18 §алтернативен-режим virtual-POS-terminal
  * @audit ISO-19011:2018 audit-trail
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @see src/sale/virtual-device.ts
+ * @see src/utilities/sale/virtual-device.ts
  */
 const Terminals: CollectionConfig = {
   slug: 'terminals',

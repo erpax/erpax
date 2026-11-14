@@ -9,7 +9,7 @@
  * vibration are the same digit's other [[signal]] facets (the full sensory render lives in
  * signal/aura) — the colour face is here; the teams wire the rest.
  *
- *   tsx src/pixel/index.ts
+ *   tsx src/utilities/pixel/index.ts
  *
  * @audit colour computed from the uuid's digit, never painted on
  * @see ../digit -- ../color -- ../aura -- ../component -- ../vitepress -- ./SKILL.md

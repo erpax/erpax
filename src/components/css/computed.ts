@@ -38,7 +38,7 @@ export interface UiSurface {
   readonly kind?: UiSurfaceKind
 }
 
-/** shadcn CSS custom properties consumed by src/ui/* and globals.css @theme inline. */
+/** shadcn CSS custom properties consumed by src/components/ui/* and globals.css @theme inline. */
 export const SHADCN_TOKEN_KEYS = [
   'background',
   'foreground',

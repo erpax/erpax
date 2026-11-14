@@ -13,7 +13,7 @@ export { ERPAX_DOI, ERPAX_SPDX, LICENSE_CONTACT, SOURCE_URL, ERPAX_VERSION_DOI }
 /**
  * algebra/license — USER LAW (computable): ONE licence, no tier.
  *
- * The corpus was tiered — `src/algebra/**` MIT, everything else CC-BY-NC-ND-4.0 — and a
+ * The corpus was tiered — `src/utilities/algebra/**` MIT, everything else CC-BY-NC-ND-4.0 — and a
  * tier is a seam: two answers to "may I use this", decided by a path test, with a package
  * whose LICENSE file disagreed with the corpus around it. It is now one answer everywhere,
  * so `citation()` has nothing to branch on and no path can be read into the wrong tier.

@@ -42,7 +42,7 @@ export type InvoiceTypeCode =
 
 /**
  * VAT category code — BT-151. Canonical implementation lives in
- * `src/un/cefact/5305/index.ts` (Slice JJJJ taxonomy consolidation
+ * `src/utilities/un/cefact/5305/index.ts` (Slice JJJJ taxonomy consolidation
  * — same code list is referenced from tax-codes master, AI tax
  * classifier, SAF-T tax table, etc.). Re-exported here for source-compat.
  *

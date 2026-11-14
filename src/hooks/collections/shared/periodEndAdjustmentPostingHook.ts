@@ -31,8 +31,8 @@
  * @standard ISO-8601-1:2019 date-time posted-date
  * @audit ISO-19011:2018 audit-trail period-end-adjustment-evidence
  * @compliance SOX §404 internal-controls four-eyes
- * @see src/gl/accounts/period/end/adjustments/index.ts
- * @see src/journal/entry/service/index.ts
+ * @see src/utilities/gl/accounts/period/end/adjustments/index.ts
+ * @see src/utilities/journal/entry/service/index.ts
  * @see docs/adr/0001-event-driven-gl-posting.md
  */
 

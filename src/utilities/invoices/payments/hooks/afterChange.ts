@@ -17,7 +17,7 @@
  * statement. The statement is a GAP, and a gap is not a claim.
  * @audit ISO-19011:2018 audit-trail double-entry-posting
  * @compliance SOX §404 internal-controls
- * @see src/invoices/payments/hooks/payment.ts
+ * @see src/utilities/invoices/payments/hooks/payment.ts
  */
 
 import { paymentAccountingHook } from '@/hooks/collections/invoices-payments/paymentAccountingHook'

@@ -1,6 +1,6 @@
 /**
  * Country API Clients — working integrations with the public, no-auth and
- * api-key official APIs catalogued in `src/country/api/index.ts`.
+ * api-key official APIs catalogued in `src/utilities/country/api/index.ts`.
  *
  * One file per *auth pattern*, not per country: the catalogue is broad,
  * but the realised auth surface is narrow (no-auth JSON, key-in-query,

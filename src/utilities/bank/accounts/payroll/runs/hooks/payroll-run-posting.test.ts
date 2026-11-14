@@ -17,7 +17,7 @@
  * @accounting IFRS IAS-19 employee-benefits
  * @accounting US-GAAP ASC-710 compensation-general
  * @audit ISO-19011:2018 audit-trail
- * @see src/bank/accounts/payroll/runs/hooks/payroll-run.ts
+ * @see src/utilities/bank/accounts/payroll/runs/hooks/payroll-run.ts
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'

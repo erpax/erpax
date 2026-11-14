@@ -10,7 +10,7 @@ describe('uuid/format', () => {
   })
 })
 
-// THE LEAN TWIN. src/verify/lean/Uuid.lean proves the 128-bit layout is a PARTITION — the program band
+// THE LEAN TWIN. src/utilities/verify/lean/Uuid.lean proves the 128-bit layout is a PARTITION — the program band
 // (bits 66..81) never overlaps the version or variant bits the RFC owns — and that the sixteen program
 // bits round-trip in BOTH directions. Here the same claims are checked against the real encoder, and the
 // Lean file — the arbiter — is READ, so a theorem the twin relies on cannot quietly disappear.
@@ -61,7 +61,7 @@ describe('uuid/format — the layout is the Lean partition', () => {
   })
 
   it('the Lean file proves every claim the twin relies on', () => {
-    const lean = readFileSync(join(process.cwd(), 'src/verify/lean/Uuid.lean'), 'utf8')
+    const lean = readFileSync(join(process.cwd(), 'src/utilities/verify/lean/Uuid.lean'), 'utf8')
     for (const name of [
       'every_bit_has_exactly_one_band',
       'program_never_touches_the_fixed_bits',

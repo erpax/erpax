@@ -231,7 +231,7 @@ describe('merkaba — the star tetrahedron: two counter-rotating traversals, one
   })
 })
 
-// The merkaba made REAL: the descend spin, labelled, is the breadcrumb src/ui/breadcrumb.tsx renders — the
+// The merkaba made REAL: the descend spin, labelled, is the breadcrumb src/components/ui/breadcrumb.tsx renders — the
 // primitive components shipped with no source deciding which crumbs. This is the integration into real nav.
 describe('breadcrumbTrail — the descend spin rendered', () => {
   it('is root → leaf, each segment linked to its route, leaf marked current', () => {

@@ -96,7 +96,7 @@ export const BANK_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> = {
       documentation: 'https://www.bnb.bg/RegistersAndServices/index.htm',
       description: 'BNB register of authorised BG ASPSPs (PSD2 + e-money institutions).',
       // No client module ships for this rail — `clientImplemented` means
-      // "src/country/api/client/ ships a working module", and none fetches this
+      // "src/utilities/country/api/client/ ships a working module", and none fetches this
       // endpoint. It was `true`, which counted the rail as a promise erpax had
       // not made: catalogue-only is the honest state ([[outward]]/coverage).
       clientImplemented: false,

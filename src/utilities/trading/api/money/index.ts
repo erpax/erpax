@@ -70,7 +70,7 @@ export const MONEY_TRADING_APIS: ReadonlyArray<TradingApi> = [
     documentation: 'https://docs.stripe.com/api',
     description: 'Global card/wallet acquirer + Connect; tokenized card capture (minimal PCI scope).',
     clientImplemented: false,
-    notes: 'ALREADY WIRED via @payloadcms/plugin-ecommerce stripeAdapter (src/ecommerce/) with per-tenant secrets — this row is catalogue metadata only; do NOT build a parallel client. Single base; mode follows key prefix.',
+    notes: 'ALREADY WIRED via @payloadcms/plugin-ecommerce stripeAdapter (src/components/ecommerce/) with per-tenant secrets — this row is catalogue metadata only; do NOT build a parallel client. Single base; mode follows key prefix.',
   },
   {
     category: 'payment_gateway', provider: 'Adyen', name: 'Adyen Checkout API',

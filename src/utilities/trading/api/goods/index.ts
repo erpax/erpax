@@ -160,7 +160,7 @@ export const GOODS_TRADING_APIS: ReadonlyArray<TradingApi> = [
     documentation: 'https://ee.econt.com/services/',
     description: 'Dominant BG courier: nomenclatures, shipment/label creation, courier request, COD (наложен платеж).',
     clientImplemented: true,
-    notes: 'BG-critical. Per-service JSON POST; HTTP Basic (username+password). Client: trackEcont (src/trading/api/client).',
+    notes: 'BG-critical. Per-service JSON POST; HTTP Basic (username+password). Client: trackEcont (src/utilities/trading/api/client).',
   },
   {
     category: 'shipping_carrier', provider: 'Speedy', name: 'Speedy REST/JSON Web API',
@@ -169,7 +169,7 @@ export const GOODS_TRADING_APIS: ReadonlyArray<TradingApi> = [
     documentation: 'https://api.speedy.bg/web-api.html',
     description: 'Dominant BG courier: shipment, price calc, label/waybill (PDF+ZPL), pickup, tracking, COD.',
     clientImplemented: true,
-    notes: 'BG-critical (DPDgroup). userName+password per request. Client: trackSpeedy (src/trading/api/client).',
+    notes: 'BG-critical (DPDgroup). userName+password per request. Client: trackSpeedy (src/utilities/trading/api/client).',
   },
   {
     category: 'shipping_carrier', provider: 'Speedy', name: 'Speedy EPS SOAP Web Service (legacy)',

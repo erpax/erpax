@@ -106,7 +106,7 @@ export const EU_COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>
       format: 'xml',
       documentation: 'https://nra.bg/wps/portal/nra/uslugi-eus',
       description: 'VAT returns, VIES filings, intrastat — qualified e-signature mTLS.',
-      // Generic mTLS dispatcher in `src/country/client/bg-nap-mtls.ts`
+      // Generic mTLS dispatcher in `src/utilities/country/client/bg-nap-mtls.ts`
       // services every НАП endpoint (per-tenant qualified seal cert required).
       clientImplemented: true,
     },
@@ -119,14 +119,14 @@ export const EU_COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>
       format: 'xml',
       documentation: 'https://nra.bg/saf-t',
       description: 'OECD SAF-T 2.0 submission for BG (audit-file format BG-SAF-T).',
-      // `submitBgSaft()` in `src/country/client/bg-nap-mtls.ts`.
+      // `submitBgSaft()` in `src/utilities/country/client/bg-nap-mtls.ts`.
       clientImplemented: true,
     },
     {
       // `statistics` kind covers central-bank FX rate publishers per the
       // CountryApiKind comment ("sometimes used for FX"). BNB's daily
       // fixing is the BG anchor for IAS-21 revaluation + invoice fx.
-      // Client lives in `src/country/api/client/index.ts` (`lookupBnbExchangeRate`).
+      // Client lives in `src/utilities/country/api/client/index.ts` (`lookupBnbExchangeRate`).
       kind: 'statistics',
       name: 'БНБ — Daily Exchange Rates',
       authority: 'Българска народна банка',
@@ -195,7 +195,7 @@ export const EU_COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>
       documentation: 'https://xeinkauf.de/xrechnung/',
       description: 'Validate XRechnung XML against the federal CIUS schematron.',
       // No client module ships for this rail — `clientImplemented` means
-      // "src/country/api/client/ ships a working module", and none fetches this
+      // "src/utilities/country/api/client/ ships a working module", and none fetches this
       // endpoint. It was `true`, which counted the rail as a promise erpax had
       // not made: catalogue-only is the honest state ([[outward]]/coverage).
       clientImplemented: false,
@@ -305,7 +305,7 @@ export const EU_COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>
       documentation: 'https://api-krs.ms.gov.pl/api',
       description: 'Free open API of the National Court Register (KRS).',
       // No client module ships for this rail — `clientImplemented` means
-      // "src/country/api/client/ ships a working module", and none fetches this
+      // "src/utilities/country/api/client/ ships a working module", and none fetches this
       // endpoint. It was `true`, which counted the rail as a promise erpax had
       // not made: catalogue-only is the honest state ([[outward]]/coverage).
       clientImplemented: false,

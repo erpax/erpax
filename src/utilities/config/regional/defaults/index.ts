@@ -8,7 +8,7 @@
  * @standard ISO-3166-1:2020 country-codes alpha-2
  * @standard BCP-47 language-tag locale-identifier
  * @see docs/STANDARDS.md §4.1 §4.3
- * @see src/iso/4217/index.ts
+ * @see src/utilities/iso/4217/index.ts
  */
 
 // ─── 1. Canonical currency vocabulary ──────────────────────────────────────

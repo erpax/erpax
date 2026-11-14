@@ -2,7 +2,7 @@ declare global {
   namespace NodeJS {
     interface ProcessEnv {
       PAYLOAD_SECRET: string
-      /** Bootstrap key for sealed secrets at rest (hex or base64). See src/secret/SKILL.md. */
+      /** Bootstrap key for sealed secrets at rest (hex or base64). See src/utilities/secret/SKILL.md. */
       ERPAX_SEAL_KEY?: string
       /** Sealed PAYLOAD_SECRET blob (JSON) or path to sealed file. */
       PAYLOAD_SECRET_SEALED?: string

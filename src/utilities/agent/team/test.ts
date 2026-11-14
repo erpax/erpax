@@ -1,7 +1,7 @@
 /**
  * team — agents sharing skills, proved. Green by construction: competence is
  * the union, spawn fans out while every member holds the whole, identical
- * teams/members merge. @see ./team.ts, src/team/SKILL.md
+ * teams/members merge. @see ./team.ts, src/utilities/team/SKILL.md
  */
 import { describe, it, expect } from 'vitest'
 import {

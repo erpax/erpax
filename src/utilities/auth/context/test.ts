@@ -22,7 +22,7 @@ describe('auth/context — the identity readers, as a leaf', () => {
   it('imports nothing but types — a leaf no import loop can close through', async () => {
     const { readFileSync } = await import('node:fs')
     const { join } = await import('node:path')
-    const src = readFileSync(join(process.cwd(), 'src/auth/context/index.ts'), 'utf8')
+    const src = readFileSync(join(process.cwd(), 'src/utilities/auth/context/index.ts'), 'utf8')
     const runtimeImports = [...src.matchAll(/^import (?!type )[^\n]*from '([^']+)'/gm)].map((m) => m[1])
     expect(runtimeImports).toEqual([])
   })

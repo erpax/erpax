@@ -13,7 +13,7 @@
  * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
  * @audit ISO-19011:2018 audit-trail period-end-evidence
  * @compliance SOX §404 internal-controls four-eyes
- * @see src/gl/accounts/period/end/adjustments/hooks/period-end-adjustment.ts
+ * @see src/utilities/gl/accounts/period/end/adjustments/hooks/period-end-adjustment.ts
  */
 
 import { describe, it, expect, beforeAll } from 'vitest'

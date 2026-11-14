@@ -1,7 +1,7 @@
 /**
  * Commercial trading-API registry — the COMMERCIAL sibling of the official
- * per-country authority registry (`src/country/api/index.ts`). Lives at
- * `src/trading/api/` — the one-word diamond path for the commercial catalogue
+ * per-country authority registry (`src/utilities/country/api/index.ts`). Lives at
+ * `src/utilities/trading/api/` — the one-word diamond path for the commercial catalogue
  * (relocated from the hyphenated `config/trading-apis` violation).
  *
  * **What this is:** a structured catalogue of the third-party commercial
@@ -17,7 +17,7 @@
  * region scope, base/sandbox endpoint, the auth *model* (not a key), wire
  * format, documentation URL, a one-line description, and whether a working
  * client ships for it. Consumed by:
- *   - the country merge service (`src/country/context/index.ts`) which unions
+ *   - the country merge service (`src/utilities/country/context/index.ts`) which unions
  *     `getTradingApis(region)` into every country-aware decision;
  *   - the MCP gateway tool `erpax.trading.list` (agents discover what a region
  *     supports);
@@ -26,13 +26,13 @@
  * **What this is NOT:** credentials. API keys, OAuth client secrets, mTLS
  * certificates, per-merchant base-URL prefixes and equivalent secrets live in
  * the per-tenant config sandbox (`tenant.integrationSettings.tradingApis[provider]`,
- * resolved by `resolveTradingApiCredential` in `src/tenant/remote/secret/`) and
+ * resolved by `resolveTradingApiCredential` in `src/utilities/tenant/remote/secret/`) and
  * NEVER in this file. This is the same invariant the `country-apis` registry
  * states for the authority side.
  *
  * **Composition note (Stripe):** Stripe is already a working *payment-execution*
  * path via the official `@payloadcms/plugin-ecommerce` stripeAdapter
- * (`src/ecommerce/`), with per-tenant secrets. Its `payment_gateway` entry here
+ * (`src/components/ecommerce/`), with per-tenant secrets. Its `payment_gateway` entry here
  * is CATALOGUE metadata only — the registry never re-implements charge/capture
  * /refund/webhook plumbing for it.
  *
@@ -43,9 +43,9 @@
  * @compliance PSD2 EU-2015/2366 open-banking-aggregators (Berlin Group NextGenPSD2)
  * @compliance EN-16931 + Peppol-BIS-3 e-invoicing access-points
  * @reference GS1 GTIN/GLN product-data networks
- * @see src/country/api/index.ts        (the official-authority twin)
- * @see src/country/context/index.ts            (the consumer merge seam)
- * @see src/tenant/remote/secret/index.ts       (resolveTradingApiCredential — the credentials sandbox)
+ * @see src/utilities/country/api/index.ts        (the official-authority twin)
+ * @see src/utilities/country/context/index.ts            (the consumer merge seam)
+ * @see src/utilities/tenant/remote/secret/index.ts       (resolveTradingApiCredential — the credentials sandbox)
  */
 
 /** The commercial trading-API taxonomy — the generic data-type of each integration. */
@@ -98,7 +98,7 @@ export interface TradingApi {
   readonly description: string
   /**
    * Whether a working client module ships for this provider under
-   * `src/trading/api/client/`. CATALOGUE-FIRST: this registry currently ships
+   * `src/utilities/trading/api/client/`. CATALOGUE-FIRST: this registry currently ships
    * NO trading-API clients, so every entry is `false` today — exactly as
    * `country-apis` catalogues many authorities it has no client for (HMRC,
    * ELSTER, SDI). The `notes` flag which providers have a clean documented

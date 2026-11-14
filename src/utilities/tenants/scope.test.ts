@@ -63,7 +63,7 @@ describe('multi-tenant scoping is COMPUTED, not a hand-list', () => {
 
   it('drift guard — the BARREL_SLUGS fixture still matches the live barrel', () => {
     // Side-effect-free: count `export { X } from '...'` statements; never import.
-    const barrel = readFileSync(new URL('../collections/index.ts', import.meta.url), 'utf8')
+    const barrel = readFileSync(new URL('../../collections/index.ts', import.meta.url), 'utf8')
     const exportCount = (barrel.match(/export\s*\{[^}]*\}\s*from\s*'/g) ?? []).length
     expect(exportCount).toBe(BARREL_SLUGS.length)
   })

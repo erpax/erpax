@@ -7,7 +7,7 @@ import type { Field } from 'payload'
  * declarations, etc.).
  *
  * Validation against the canonical alpha-2 set lives in
- * `src/iso/3166/1/validate/index.ts`; collections SHOULD invoke it
+ * `src/utilities/iso/3166/1/validate/index.ts`; collections SHOULD invoke it
  * from a `validate` hook when strict checking is needed.
  *
  * @standard ISO 3166-1:2020 country-codes

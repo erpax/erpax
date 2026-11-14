@@ -7,7 +7,7 @@
  * Root vocabulary nests under hub parents (`medical/clinic`, `body/abdomen`);
  * `navPathsForGrouping` dedupes bare root leaves when a hub child exists.
  *
- *   tsx src/navigation/index.ts agents/mcp/tool
+ *   tsx src/utilities/navigation/index.ts agents/mcp/tool
  *
  * @audit nav · group · route computed from the path only — never assigned
  * @see ../corpus -- ../vitepress -- ../compass -- ./groups -- ./SKILL.md
@@ -258,7 +258,7 @@ export interface Crumb {
 }
 
 /**
- * The breadcrumb trail for an atom — the merkaba's descend spin, LABELLED for the UI (`src/ui/breadcrumb.tsx`,
+ * The breadcrumb trail for an atom — the merkaba's descend spin, LABELLED for the UI (`src/components/ui/breadcrumb.tsx`,
  * which ships the presentational crumbs but had no source deciding WHICH). Root→leaf, each segment linked to its
  * route; the leaf is the current page. This is where the two-spin geometry becomes a rendered nav element: the
  * same chain the breadcrumb reads root→leaf, an atom's fold-to-[[law]] reads leaf→root (`merkaba().ascend`).

@@ -136,7 +136,7 @@ if (
 ) {
   throw new Error(
     'PAYLOAD_SECRET is required and must not be empty. Set PAYLOAD_SECRET in .env, or seal it ' +
-      '(PAYLOAD_SECRET_SEALED + ERPAX_SEAL_KEY — see src/secret/SKILL.md). Generate: openssl rand -hex 32',
+      '(PAYLOAD_SECRET_SEALED + ERPAX_SEAL_KEY — see src/utilities/secret/SKILL.md). Generate: openssl rand -hex 32',
   )
 }
 
@@ -400,7 +400,7 @@ export default buildConfig({
     }),
     multiTenantPlugin<Config>({
       // COMPUTED, not a 201-slug hand-map: every collection is tenant-scoped
-      // except the small, explicit GLOBAL_SPINE — see src/tenants/scope.ts and
+      // except the small, explicit GLOBAL_SPINE — see src/utilities/tenants/scope.ts and
       // its proof test. A new collection auto-scopes; nothing drifts.
       collections: tenantCollectionsConfig(Object.values(allCollections) as Array<{ slug: string }>),
       tenantField: {

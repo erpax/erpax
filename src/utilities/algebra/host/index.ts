@@ -7,7 +7,7 @@
  * and self-computable proofs need algebraic exactness. Floating Math breaks determinism and
  * diamond/seal equality.
  *
- *   tsx src/algebra/host/index.ts
+ *   tsx src/utilities/algebra/host/index.ts
  *   pnpm test — runs vitest with Math ban gate
  *
  * @see ./index · ../qubit · ../pi · ../phi · ../e · ../rules
@@ -115,7 +115,7 @@ export function codeOf(text: string): string {
 
 /**
  * Scan first-party src .ts files for host Math.*. Fail-closed: every hit is a violation.
- * Sanctioned wrap face: `src/algebra/index.ts` may call Math for named algebra* / constants /
+ * Sanctioned wrap face: `src/utilities/algebra/index.ts` may call Math for named algebra* / constants /
  * seededRng — that is the carrier bridge, not a call-site violation.
  * host itself may mention the regex pattern in a string — stripped by codeOf.
  * Excludes: node_modules, .next, build artifacts, generated files.
@@ -129,8 +129,8 @@ export function hostMathViolations(cwd: string = process.cwd()): readonly HostMa
     const rel = relative(cwd, file).replace(/\\/g, '/')
     
     // gate definition + sanctioned IEEE bridge (algebra* / constants / seededRng)
-    if (rel === 'src/algebra/host/index.ts') continue
-    if (rel === 'src/algebra/index.ts') continue
+    if (rel === 'src/utilities/algebra/host/index.ts') continue
+    if (rel === 'src/utilities/algebra/index.ts') continue
     
     // skip generated files
     if (rel.endsWith('.d.ts') || rel.includes('payload-types') || rel.includes('translations.ts')) continue

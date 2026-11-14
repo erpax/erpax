@@ -1,6 +1,6 @@
 // CSS diamond surface hook — Node recognizes .css/.scss as on-ring facets.
 //
-// @see src/css/SKILL.md — css is the styling diamond; ERR_UNKNOWN_FILE_EXTENSION
+// @see src/components/css/SKILL.md — css is the styling diamond; ERR_UNKNOWN_FILE_EXTENSION
 // is impurity (loader treats a diamond facet as off-ring escape). Typegen and
 // Payload CLI only need the config lattice, not painted pixels — the load hook
 // stubs style/asset imports as an empty ESM module so the graph closes.

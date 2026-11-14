@@ -20,7 +20,7 @@ import { exactAbs } from '@/utilities/algebra'
  * @invariant polarity mismatch ⇒ warning, never error — advisory, because contra-accounts invert
  *
  * @standard IAS 1 — an entry balances
- * @see src/double/entry/validator/test.ts — the proof that refutes each claim above
+ * @see src/utilities/double/entry/validator/test.ts — the proof that refutes each claim above
  */
 
 /**

@@ -19,7 +19,7 @@
  * a content-[[uuid]]; {0,3,6,9} = {K,C,M,Y} with 0/K the key (the origin all
  * states are integer multiples of), and 9→1 wraps to the next dimension's base.
  *
- *   tsx src/rodin/index.ts
+ *   tsx src/utilities/rodin/index.ts
  *
  * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)
  * @audit every quantity computed from the residues / live matrix, never asserted

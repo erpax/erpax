@@ -11,7 +11,7 @@
  * @audit ISO-19011:2018 audit-trail visual-evidence
  * @compliance SOX §404 internal-controls process-walk-through
  * @see tests/helpers/evidence.ts
- * @see src/testing/test-seed-factory.ts (registerSeedCategory)
+ * @see src/utilities/testing/test-seed-factory.ts (registerSeedCategory)
  */
 
 import { test } from '@playwright/test'

@@ -7,7 +7,7 @@ import { algebraLog } from '@/utilities/algebra'
  * the distribution is. The duality is exact — they are the same Σpᵢ² seen
  * from opposite poles.
  *
- *   tsx src/diversity/index.ts
+ *   tsx src/utilities/diversity/index.ts
  *
  * @standard Shannon (1948) A Mathematical Theory of Communication — information entropy
  * @standard Simpson (1949) Measurement of Diversity — Nature 163:688

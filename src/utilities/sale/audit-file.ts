@@ -18,7 +18,7 @@
  * @standard OECD SAF-T 2.0 (universal base profile)
  * @audit ISO-19011:2018 §6.4 audit-evidence
  * @rfc 8259 json
- * @see src/saf/t/export/service/index.ts · .claude/skills/supto/SKILL.md
+ * @see src/utilities/saf/t/export/service/index.ts · .claude/skills/supto/SKILL.md
  */
 
 import { escapeXml } from '@/utilities/xml/escape'

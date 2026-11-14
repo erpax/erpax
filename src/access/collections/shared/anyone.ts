@@ -2,7 +2,7 @@
  * `anyone` access predicate — public/unauthenticated read.
  *
  * @security ISO-27002 §5.15 access-control intentional-public-read
- * @see src/iso/27002/types/index.ts
+ * @see src/utilities/iso/27002/types/index.ts
  * @see docs/STANDARDS.md §4.4
  */
 

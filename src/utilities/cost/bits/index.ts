@@ -159,17 +159,17 @@ export const invariantChecks = (checks: number, invariants: number): number =>
  * it rather than importing it, because the import would add an edge to the 225-file tangle ([[rules]]/cycle).
  *
  * **And the mirror drifted anyway.** It read 7 while the axes were 9 — `grounded` and `outside` were added
- * and nothing said so. The docstring claimed a pin in `src/cost/bits/test.ts`; that file had no such
+ * and nothing said so. The docstring claimed a pin in `src/utilities/cost/bits/test.ts`; that file had no such
  * assertion, so the claim of being pinned was itself the unrefuted statement. This is the exact shape it
  * names one line above — `ERPAX_DIGEST_BITS = 106` survived because nothing contradicted it — repeated by
  * the note warning about it.
  *
- * The pin is now REAL: `src/cost/bits/test.ts` imports both and asserts equality, so the next axis added
+ * The pin is now REAL: `src/utilities/cost/bits/test.ts` imports both and asserts equality, so the next axis added
  * fails the suite instead of silently re-pricing a forge. It has since done exactly that TWICE: 9 -> 11
  * when `mirror` and `forge` joined the axes. The number rising is the point — a forge must now evade
  * eleven independent gates, and pricing it at nine would understate the wall.
  *
- * @invariant CONFIRM_GATE_CHECKS === CONFIRM_CHECK_AXES.length — asserted in src/cost/bits/test.ts
+ * @invariant CONFIRM_GATE_CHECKS === CONFIRM_CHECK_AXES.length — asserted in src/utilities/cost/bits/test.ts
  */
 export const CONFIRM_GATE_CHECKS = 14
 

@@ -3,7 +3,7 @@
  *
  * @standard EN-16931:2017 BT-1 invoice-number
  * @standard ISO/IEC-29119:2022 software-testing
- * @see src/invoices/hooks/deriveNumber.ts
+ * @see src/utilities/invoices/hooks/deriveNumber.ts
  */
 
 import { describe, it, expect, vi } from 'vitest'

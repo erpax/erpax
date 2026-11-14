@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Build @erpax/algebra — free core math only.
- * Copies src/algebra/{index,license}.ts (strips host re-exports + CLI),
+ * Copies src/utilities/algebra/{index,license}.ts (strips host re-exports + CLI),
  * asserts isCoreMathPath, emits dist/ via tsc. Never packs fold (→ merge) or the app.
  */
 import { spawnSync } from 'node:child_process'
@@ -15,16 +15,16 @@ const srcAlgebra = join(root, 'src/algebra')
 const stage = join(pkgDir, '.build')
 const dist = join(pkgDir, 'dist')
 
-/** Mirror of src/algebra/license.ts — keep build free of TS import. */
+/** Mirror of src/utilities/algebra/license.ts — keep build free of TS import. */
 function isCoreMathPath(repoPath) {
   const n = repoPath.replace(/\\/g, '/').replace(/^\.\//, '')
-  return n === 'src/algebra' || n.startsWith('src/algebra/')
+  return n === 'src/algebra' || n.startsWith('src/utilities/algebra/')
 }
 
 /*
  * The free core math, as FILES — and the child atoms are part of it.
  *
- * This shipped `index.ts` and `license.ts` only, while `src/algebra/index.ts` imports
+ * This shipped `index.ts` and `license.ts` only, while `src/utilities/algebra/index.ts` imports
  * `./constants` and `./operations`. The published dist therefore threw on IMPORT:
  *
  *     ERR_MODULE_NOT_FOUND  …/@erpax/algebra/dist/constants
@@ -55,7 +55,7 @@ rmSync(dist, { recursive: true, force: true })
 mkdirSync(stage, { recursive: true })
 
 for (const f of FREE) {
-  const repoRel = `src/algebra/${f.from}`
+  const repoRel = `src/utilities/algebra/${f.from}`
   if (!isCoreMathPath(repoRel)) {
     console.error(`✖ not core math: ${repoRel}`)
     process.exit(1)

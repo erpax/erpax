@@ -29,7 +29,7 @@
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls preparer-authoriser-segregation
  * @security ISO-27002 §5.4 segregation-of-duties
- * @see src/iso/20022/types/index.ts
+ * @see src/utilities/iso/20022/types/index.ts
  * @see docs/STANDARDS.md §4.1
  */
 

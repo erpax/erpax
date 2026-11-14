@@ -7,7 +7,7 @@
  * @rfc 9110 http-semantics
  * @rfc 6265 http-state-management cookies-credentials-include
  * @security ISO-27002 §8.5 secure-authentication
- * @see src/rfc/3986/index.ts
+ * @see src/utilities/rfc/3986/index.ts
  */
 
 import { PayloadSDK } from '@payloadcms/sdk'

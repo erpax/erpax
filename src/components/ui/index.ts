@@ -1,5 +1,5 @@
 /**
- * shadcn/ui barrel — cn utility + full component catalog under src/ui/.
+ * shadcn/ui barrel — cn utility + full component catalog under src/components/ui/.
  */
 
 export { cn } from '@/components/ui/class'
