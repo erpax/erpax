@@ -92,7 +92,7 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { enforceSegregationOfDuties } from '@/enforce/segregation/of/duty'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
 import { currencyField, auditFields } from '@/base/accounting/field'
 

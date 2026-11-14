@@ -13,9 +13,9 @@ import type {
   CollectionConfig, CollectionBeforeChangeHook,
   CollectionAfterChangeHook, Field,
 } from 'payload'
-import { autoPopulateTenant } from '@/auto/populate/tenant'
-import { autoPopulateCreatedBy } from '@/auto/populate/created/by'
-import { auditTrailAfterChange } from '@/audit/trail/after/change'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { adminGroupOf } from '@/navigation'
 import {
   emitOnStatusTransition, emitOnCreate, type AggregateType,
@@ -32,7 +32,6 @@ import {
 import {
   horoStateField, validateHoroStates, horoStateBeforeChange, type HoroState,
 } from '@/horo'
-import { deriveCollectionDiamond, diamondUuid, verifyDiamond } from '@/diamond'
 
 /** Set when a collection already wired explicit structured emits — the spine fold skips it. */
 export const EMITS_WIRED_KEY = '__erpaxEmitsWired__' as const
@@ -213,25 +212,6 @@ export const createAccountingCollection = (
     }
   }
 
-  // Diamond seal (tamperProofUuid + horoStates) is a config-build AUDIT facet, NOT runtime-required
-  // (admin.group falls back to the slug; the only other consumers are dev-only admin dashboards). It is
-  // gated to non-production so the prod webpack build (NODE_ENV statically 'production') dead-code-
-  // eliminates this branch, tree-shaking `@/diamond` → `@/uuid/matrix` (the 4.2MB matrix.generated) OUT
-  // of the deployed Worker. Dev/test keep the full seal.
-  let collectionDiamond: ReturnType<typeof deriveCollectionDiamond> | undefined
-  let diamondId = ''
-  if (process.env.NODE_ENV !== 'production') {
-    collectionDiamond = deriveCollectionDiamond(opts)
-    diamondId = diamondUuid(collectionDiamond)
-    if (opts.validateDiamondModel) {
-      const { sealed, impurities } = verifyDiamond(collectionDiamond)
-      if (!sealed) {
-        throw new Error(
-          `[createAccountingCollection ${opts.slug}] diamond model incomplete: ${impurities.join('; ')}`,
-        )
-      }
-    }
-  }
 
   const fieldsThunk: (() => Field[]) | undefined = opts.fields ?? legacyFieldsThunk
   if (!fieldsThunk) {
@@ -329,14 +309,11 @@ export const createAccountingCollection = (
     ...(opts.afterChangeHooks ?? []),
   ]
 
-  const diamondNote = diamondId ? `diamond-uuid: ${diamondId}` : ''
   const description = opts.description
-    ? (diamondNote ? `${opts.description}\n\n— ${diamondNote}` : opts.description)
-    : diamondNote || undefined
   const atomPath = opts.atomPath ?? opts.slug
   const adminGroup = adminGroupOf(atomPath)
 
-  const config: CollectionConfig & { readonly [COLLECTION_DIAMOND_KEY]?: typeof collectionDiamond } = {
+  const config: CollectionConfig = {
     slug: opts.slug,
     labels: opts.labels,
     admin: {
@@ -360,7 +337,6 @@ export const createAccountingCollection = (
       afterChange,
     },
     timestamps: true,
-    [COLLECTION_DIAMOND_KEY]: collectionDiamond,
     ...(structuredEmits.length > 0 ? { [EMITS_WIRED_KEY]: true } : {}),
   }
   return config

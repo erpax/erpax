@@ -13,4 +13,4 @@ export { createChainContext, teardownChainContext, type ChainContext, type Chain
 // Slice BBBBBBBB (2026-05-11) — factory consumes this to auto-wire chain
 // emit producers from BUSINESS_CHAINS (single source of truth for which
 // `(collection, status) → event` pairs fire).
-export { wireChainProducersFor } from './wire-producers'
+export { wireChainProducersFor } from '@/hooks/wireChainProducersFor'

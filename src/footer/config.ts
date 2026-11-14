@@ -13,7 +13,7 @@ import type { GlobalConfig } from 'payload'
 
 import { link } from '@/link/field'
 import { localeRecord } from '@/i18n'
-import { revalidateFooter } from './hook/revalidateFooter'
+import { revalidateFooter } from '@/hooks/revalidateFooter'
 
 export const Footer: GlobalConfig = {
   slug: 'footer',

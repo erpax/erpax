@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/auto/populate/tenant'
-import { auditTrailAfterChange } from '@/audit/trail/after/change'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, neverDelete } from '@/auth'
 import { statusField, auditFields } from '@/field'
 

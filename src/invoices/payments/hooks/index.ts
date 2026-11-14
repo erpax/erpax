@@ -13,6 +13,6 @@ export * from './beforeChange'
 export * from './beforeValidate'
 export * from './recomputeInvoicePaid'
 // GL posting hook (dissolved from the former accounting/hooks slice).
-export * from './payment'
+export * from '@/hooks/paymentAccountingHook'
 
 /** @index-cross.foldback child=invoices/payments/hooks parent=invoices/payments — this cross folds back into its parent. */

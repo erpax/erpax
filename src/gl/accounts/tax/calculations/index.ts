@@ -1,10 +1,10 @@
 import type { CollectionConfig } from 'payload'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
 import { notesField } from '@/base/accounting/field'
-import { autoPopulateTenant } from '@/auto/populate/tenant';
-import { autoPopulateCreatedBy } from '@/auto/populate/created/by';
-import { autoSetTimestamp } from '@/auto/set/timestamp';
-import { auditTrailAfterChange } from '@/audit/trail/after/change';
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant';
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
 import { validateNotLocked } from '@/utility';
 
 /**

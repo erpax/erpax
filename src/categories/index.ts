@@ -5,7 +5,7 @@ import { tenantScopedCollectionReadAccess } from '@/tenant/scoped/read'
 import { slugField } from 'payload'
 import { localeRecord } from '@/i18n'
 
-import { ensureUniqueSlugWithinTenant } from '@/ensure/unique/slug/within/tenant'
+import { ensureUniqueSlugWithinTenant } from '@/hooks/ensureUniqueSlugWithinTenant'
 import { categoriesBeforeChange } from '@/categories/hooks'
 
 /**

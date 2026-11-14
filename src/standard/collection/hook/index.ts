@@ -20,9 +20,9 @@ import type {
   CollectionBeforeChangeHook,
   CollectionAfterChangeHook,
 } from 'payload'
-import { autoPopulateTenant } from '@/auto/populate/tenant'
-import { autoPopulateCreatedBy } from '@/auto/populate/created/by'
-import { auditTrailAfterChange } from '@/audit/trail/after/change'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 
 export const standardCollectionHooks = (
   slug: string,

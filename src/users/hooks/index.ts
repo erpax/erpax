@@ -8,8 +8,8 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from './ensureUniqueUsername'
-export * from './firstUserSuperAdmin'
-export * from './setCookieBasedOnDomain'
+export * from '@/hooks/ensureUniqueUsername'
+export * from '@/hooks/firstUserSuperAdmin'
+export * from '@/hooks/setCookieBasedOnDomain'
 
 /** @index-cross.foldback child=users/hooks parent=users — this cross folds back into its parent. */

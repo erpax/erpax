@@ -11,7 +11,7 @@ import {
 import {
   normalizeTenantSlugValue,
   normalizeTenantDomainValue,
-} from '@/tenants/hooks/normalizeRouting'
+} from '@/hooks/normalizeTenantSlug'
 import { Tenants } from '@/tenants'
 import {
   deriveInvoiceNumber,

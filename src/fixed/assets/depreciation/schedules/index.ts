@@ -15,14 +15,14 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/auto/populate/tenant'
-import { autoPopulateCreatedBy } from '@/auto/populate/created/by'
-import { autoSetTimestamp } from '@/auto/set/timestamp'
-import { auditTrailAfterChange } from '@/audit/trail/after/change'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
 import { currencyField, statusField, notesField, auditFields } from '@/base/accounting/field'
 import { validateNotLocked } from '@/utility'
-import { depreciationSchedulePostingHook } from './hooks/depreciation'
+import { depreciationSchedulePostingHook } from '@/hooks/depreciationSchedulePostingHook'
 
 const DepreciationSchedules: CollectionConfig = {
   slug: 'depreciation-schedules',

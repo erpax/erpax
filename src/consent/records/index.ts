@@ -16,7 +16,7 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { autoSetTimestamp } from '@/auto/set/timestamp'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
 import { roleScopedAccess, scopedAccess, adminOnly } from '@/auth'
 import { statusField, notesField, auditFields } from '@/base/accounting/field'
 

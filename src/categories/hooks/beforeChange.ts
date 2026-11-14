@@ -1,4 +1,4 @@
-import { enforceDocumentTenantForUser } from '@/enforce/document/tenant/for/user'
+import { enforceDocumentTenantForUser } from '@/hooks/enforceDocumentTenantForUser'
 
 /**
  * Multi-tenant plugin: attach/create categories within the active tenant.

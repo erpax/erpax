@@ -11,7 +11,7 @@
 import type { CollectionConfig } from 'payload'
 import { authenticated } from '@/authenticated'
 import { adminOnly } from '@/auth'
-import { auditTrailAfterChange } from '@/audit/trail/after/change'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 
 export const ControlTests: CollectionConfig = {
   slug: 'control-tests',

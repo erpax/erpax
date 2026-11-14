@@ -1,12 +1,12 @@
 import type { CollectionConfig } from 'payload'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
-import { autoPopulateTenant } from '@/auto/populate/tenant';
-import { autoPopulateCreatedBy } from '@/auto/populate/created/by';
-import { autoSetTimestamp } from '@/auto/set/timestamp';
-import { auditTrailAfterChange } from '@/audit/trail/after/change';
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant';
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
 import { currencyField } from '@/base/accounting/field';
 import { validateNotLocked } from '@/utility';
-import { bankStatementImportedHook } from './hooks/statement';
+import { bankStatementImportedHook } from '@/hooks/bankStatementImportedHook';
 
 /**
  * Bank Statements — imported / matched bank statements feeding reconciliation.

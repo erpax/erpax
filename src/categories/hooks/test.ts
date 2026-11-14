@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { categoriesBeforeChange } from '@/categories/hooks'
-import { enforceDocumentTenantForUser } from '@/enforce/document/tenant/for/user'
+import { enforceDocumentTenantForUser } from '@/hooks/enforceDocumentTenantForUser'
 
 // The Categories collection-module boundary (./index.ts barrel): the beforeChange
 // chain is one ordered barrel that tenant-pins every row at the write boundary.

@@ -18,9 +18,9 @@
 
 import { CollectionConfig } from 'payload'
 import { accountingCollectionAccess } from '@/auth'
-import { validateClosingPeriod } from '@/validate/closing/period'
-import { generateReversingEntries } from '@/generate/reversing/entry'
-import { validateMultiCurrencyClosing } from '@/validate/multi/currency/closing'
+import { validateClosingPeriod } from '@/hooks/validateClosingPeriod'
+import { generateReversingEntries } from '@/hooks/generateReversingEntries'
+import { validateMultiCurrencyClosing } from '@/hooks/validateMultiCurrencyClosing'
 
 export const ClosingEntries: CollectionConfig = {
   slug: 'closing-entries',

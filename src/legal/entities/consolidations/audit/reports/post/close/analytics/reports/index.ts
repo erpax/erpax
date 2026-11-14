@@ -16,7 +16,7 @@
 
 import { CollectionConfig } from 'payload'
 import { accountingCollectionAccess } from '@/auth'
-import { validatePostCloseAnalytics } from '@/validate/post/close/analytics'
+import { validatePostCloseAnalytics } from '@/hooks/validatePostCloseAnalytics'
 
 export const PostCloseAnalyticsReports: CollectionConfig = {
   slug: 'post-close-analytics-reports',

@@ -39,11 +39,11 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/auto/populate/tenant'
-import { autoPopulateCreatedBy } from '@/auto/populate/created/by'
-import { autoSetTimestamp } from '@/auto/set/timestamp'
-import { auditTrailAfterChange } from '@/audit/trail/after/change'
-import { enforceSegregationOfDuties } from '@/enforce/segregation/of/duty'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
 import { roleScopedAccess, tenantAdmin } from '@/auth'
 import {
   currencyField,
@@ -52,8 +52,8 @@ import {
   auditFields,
 } from '@/base/accounting/field'
 import { validateNotLocked } from '@/utility'
-import { payrollRunPostingHook } from './hooks/run'
-import { payrollDisbursementHook } from './hooks/disbursement'
+import { payrollRunPostingHook } from '@/hooks/payrollRunPostingHook'
+import { payrollDisbursementHook } from '@/hooks/payrollDisbursementHook'
 
 const PayrollRuns: CollectionConfig = {
   slug: 'payroll-runs',

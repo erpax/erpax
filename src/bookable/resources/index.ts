@@ -23,7 +23,6 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { MODALITIES } from '@/medical/device'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/auth'
 import { currencyField, statusField, notesField, auditFields } from '@/base/accounting/field'
@@ -68,11 +67,10 @@ const BookableResources: CollectionConfig = {
       name: 'medicalModality',
       type: 'select',
       admin: {
-        description: 'Clinical device modality — wired to medical/device registry (LOINC outputs).',
+        description: 'Clinical device modality.',
         condition: (data) => data?.kind === 'equipment' || data?.kind === 'bed',
-        components: { Field: '@/admin/ui/fields/MedicalModalityPickerField' },
       },
-      options: MODALITIES.map((m) => ({ label: m, value: m })),
+      options: ['bp', 'oximeter', 'thermometer', 'glucometer', 'ecg', 'holter', 'fetal', 'xray', 'ct', 'mri', 'ultrasound', 'pet', 'centrifuge', 'analyzer', 'cassette', 'infusion', 'ventilator', 'dialysis', 'pacemaker', 'defibrillator', 'cautery', 'laparoscope', 'anesthesia', 'cgm', 'watch', 'cpap', 'spirometer', 'audiometer', 'ophthalmoscope', 'otoscope', 'endoscope', 'monitor', 'bed', 'ivpump'],
     },
     { name: 'space', type: 'relationship', relationTo: 'spaces',
       admin: {

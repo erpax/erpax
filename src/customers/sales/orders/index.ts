@@ -43,8 +43,8 @@
 import type { CollectionBeforeValidateHook, CollectionConfig } from 'payload'
 import { createAccountingCollection } from '@/factory'
 import { referenceField, unitOfMeasureField } from '@/base/accounting/field'
-import { autoSetTimestamp } from '@/auto/set/timestamp'
-import { enforceSegregationOfDuties } from '@/enforce/segregation/of/duty'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
 import { preset, type Preset } from '@/preset'
 
 /** The stages in which the document is still a quote: offered, not yet an order. */

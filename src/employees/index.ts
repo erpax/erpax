@@ -30,7 +30,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { competencyLineField } from '@/competency'
-import { autoSetTimestamp } from '@/auto/set/timestamp'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
 import { roleScopedAccess, tenantAdmin } from '@/auth'
 import {
   currencyField,

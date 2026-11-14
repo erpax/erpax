@@ -11,6 +11,6 @@
 export * from './afterChange'
 export * from './beforeValidate'
 // GL posting hook (dissolved from the former accounting/hooks slice).
-export * from './item'
+export * from '@/hooks/itemAccountingHook'
 
 /** @index-cross.foldback child=items/hooks parent=items — this cross folds back into its parent. */

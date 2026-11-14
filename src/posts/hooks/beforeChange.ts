@@ -1,4 +1,4 @@
-import { enforceDocumentTenantForUser } from '@/enforce/document/tenant/for/user'
+import { enforceDocumentTenantForUser } from '@/hooks/enforceDocumentTenantForUser'
 import { importRemoteMediaPostsHook } from '@/remote/media/import'
 
 /**

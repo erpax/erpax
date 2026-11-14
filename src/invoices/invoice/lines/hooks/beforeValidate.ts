@@ -13,6 +13,6 @@
  * @see docs/STANDARDS.md §3
  */
 
-import { autoPopulateTenant } from '@/auto/populate/tenant'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 
 export const invoiceLinesBeforeValidate = [autoPopulateTenant]

@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { tenantMasterDataAccess } from '@/auth'
-import { autoPopulateTenant } from '@/auto/populate/tenant'
-import { auditTrailAfterChange } from '@/audit/trail/after/change'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { taxonomySelect } from '@/base/accounting/field'
 import { VAT_CATEGORY_OPTIONS } from '@/un/cefact/5305'
 

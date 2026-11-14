@@ -20,8 +20,6 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/auth'
-import { chatBroadcastAfterChange } from '@/agent/sync'
-import { teamCommsBeforeChange } from '@/team/comms'
 
 const Chat: CollectionConfig = {
   slug: 'chat',
@@ -89,12 +87,7 @@ const Chat: CollectionConfig = {
       },
     },
   ],
-  // beforeChange team-comms gate — tenant match, eventUuid integrity, depth cap
-  // (fail-closed). afterChange broadcast dispatches into the society runtime.
-  hooks: standardCollectionHooks('chat', {
-    beforeChange: [teamCommsBeforeChange()],
-    afterChange: [chatBroadcastAfterChange()],
-  }),
+  hooks: standardCollectionHooks('chat'),
   timestamps: true,
 }
 

@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
-import { autoPopulateCreatedBy } from '@/auto/populate/created/by';
-import { autoSetTimestamp } from '@/auto/set/timestamp';
-import { auditTrailAfterChange } from '@/audit/trail/after/change';
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
 import { createAccountingCollection, createGLAccountFields } from '@/factory';
 import { currencyField, statusField, notesField } from '@/field';
 // Slice PPP: depreciationHook removed — delegated to a `req.payload.services?.depreciation`

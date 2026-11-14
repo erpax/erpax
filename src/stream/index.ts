@@ -48,7 +48,15 @@
  * @audit ISO 19011:2018 §6.4.6 (every stream window audit-trailed)
  */
 
-import type { DomainEvent } from '@/agent'
+/** A domain event carried on the stream. */
+export interface DomainEvent {
+  readonly id: string
+  readonly tenantId: string
+  readonly payload: Record<string, unknown>
+  /** ISO-8601 timestamp. */
+  readonly emittedAt: string
+  readonly aggregateId?: string
+}
 import { computeContentUuid } from '@/integrity'
 import { NIL_UUID } from '@/uuid/format'
 

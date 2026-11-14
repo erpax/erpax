@@ -1,9 +1,9 @@
 import type { CollectionConfig } from 'payload'
 import { tenantAdminWriteAccess } from '@/auth'
-import { autoPopulateTenant } from '@/auto/populate/tenant'
-import { autoPopulateCreatedBy } from '@/auto/populate/created/by'
-import { autoSetTimestamp } from '@/auto/set/timestamp'
-import { auditTrailAfterChange } from '@/audit/trail/after/change'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { emitOnStatusTransition } from '@/chain/event/emitter'
 import {
   glAccountField,
@@ -12,14 +12,14 @@ import {
   auditFields,
 } from '@/base/accounting/field'
 import { validateNotLocked } from '@/utility'
-import { validateBalancedEntry } from '../../hooks/balanced'
+import { validateBalancedEntry } from '@/hooks/validateBalancedEntry'
 // Two SOX §404 controls that existed, were tested, and were installed on NOTHING. Each names this
 // collection in its own header — `enforcePostingImmutability` says "beforeChange hook for
 // GLPostings", `validateFiscalPeriodPosting` says "beforeValidate hook for GLPostings" — and
 // neither appeared in either array. They are distinct from `validateNotLocked`, which is the period
 // LOCK: this pair stops a POSTED row being modified, and resolves the fiscal period it belongs to.
-import { enforcePostingImmutability } from '@/enforce/posting/immutability'
-import { validateFiscalPeriodPosting } from '@/validate/fiscal/period/posting'
+import { enforcePostingImmutability } from '@/hooks/enforcePostingImmutability'
+import { validateFiscalPeriodPosting } from '@/hooks/validateFiscalPeriodPosting'
 
 /**
  * GL Postings — atomic debit/credit lines linked to a journal entry.

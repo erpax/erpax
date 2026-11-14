@@ -1,1 +1,1 @@
-export { revalidateHeader } from './revalidateHeader'
+export { revalidateHeader } from '@/hooks/revalidateHeader'

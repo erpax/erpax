@@ -16,7 +16,6 @@
  * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
  */
 
-import type { AgentId } from '@/agent'
 
 export type AuditCadence = 'daily' | 'weekly' | 'monthly' | 'quarterly' | 'annual'
 
@@ -46,7 +45,7 @@ export interface TenantRoleProfile {
   /** BUSINESS_CHAINS ids the role MUST run end-to-end. */
   readonly requiredChains: ReadonlyArray<string>
   /** AgentIds (core or third-party) that MUST be registered. */
-  readonly requiredAgents: ReadonlyArray<AgentId | string>
+  readonly requiredAgents: ReadonlyArray<string>
   /** MCP tool names auto-exposed when the role is active. */
   readonly mcpTools: ReadonlyArray<string>
   /** Name of the conservation invariant that asserts this role's posture. */

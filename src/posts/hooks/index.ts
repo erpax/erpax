@@ -9,7 +9,7 @@
  */
 
 export * from './beforeChange'
-export * from './populateAuthors'
-export * from './revalidatePost'
+export * from '@/hooks/populateAuthors'
+export * from '@/hooks/revalidatePost'
 
 /** @index-cross.foldback child=posts/hooks parent=posts — this cross folds back into its parent. */

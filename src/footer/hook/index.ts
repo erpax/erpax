@@ -1,1 +1,1 @@
-export { revalidateFooter } from './revalidateFooter'
+export { revalidateFooter } from '@/hooks/revalidateFooter'

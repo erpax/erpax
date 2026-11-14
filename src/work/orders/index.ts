@@ -1,4 +1,5 @@
 import { exactMax, exactRound, exactTrunc } from '@/algebra'
+import { flagged } from '@/hooks/context'
 /**
  * Workorders — the production EXECUTION leaf, evolved from 2.05M rows of the
  * etrima `work_orders` table (the 20-year manufacturing ledger).
@@ -262,6 +263,7 @@ export const inheritShiftEfficiency: CollectionBeforeChangeHook = async ({ data,
  * never creates two successors for one source).
  */
 export const forwardProducedToNextPhase: CollectionAfterChangeHook = async ({ doc, req }) => {
+  if (req.context.workOrderForwarded) return doc
   try {
     const d = doc as WorkorderShape & {
       id?: string
@@ -303,21 +305,9 @@ export const forwardProducedToNextPhase: CollectionAfterChangeHook = async ({ do
       produced: 0,
       backordered: 0,
     }))
-    await req.payload.update({
-      collection: 'work-orders',
-      id: successor.id,
-      depth: 0,
-      overrideAccess: true,
-      req,
-      data: { options: merged, forwardedFrom: d.id },
-    })
-    await req.payload.update({
-      collection: 'work-orders',
-      id: d.id as string,
-      depth: 0,
-      overrideAccess: true,
-      req,
-      data: { forwardedTo: successor.id },
+    await flagged(req, 'workOrderForwarded', async (context) => {
+      await req.payload.update({ collection: 'work-orders', id: successor.id, depth: 0, overrideAccess: true, req, context, data: { options: merged, forwardedFrom: d.id } })
+      await req.payload.update({ collection: 'work-orders', id: d.id as string, depth: 0, overrideAccess: true, req, context, data: { forwardedTo: successor.id } })
     })
   } catch {
     // Conveyor is best-effort; a downstream failure must not block the booking.

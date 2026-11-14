@@ -40,7 +40,7 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/auth'
 import { auditFields } from '@/base/accounting/field'
-import { taggingCounterAfterChange, taggingCounterAfterDelete } from './counter'
+import { taggingCounterAfterChange, taggingCounterAfterDelete } from '@/hooks/taggingCounterAfterChange'
 
 const Taggings: CollectionConfig = {
   slug: 'taggings',
