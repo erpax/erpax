@@ -48,7 +48,7 @@
   ],
   "dependencies": {
     "uuid": "latest",
-    "zod": "3.25.76"
+    "zod": "4.6.6"
   },
   "peerDependencies": {
     "payload": "4.0.0-internal.38b7f1d"
