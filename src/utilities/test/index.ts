@@ -9,7 +9,7 @@ export {
   type NamedField,
   type FieldWithValidate,
   type FieldValidator,
-} from '@/utilities/test/payload-field'
+} from './payload-field'
 
 /** Broad on purpose — err toward integration, so a real integration suite is never starved of its DB. */
 const NEEDS_PAYLOAD =
