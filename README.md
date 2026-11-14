@@ -92,7 +92,7 @@ Six positions divide the circle exactly, so each step is **60°**, and the polar
 
 ## [[millennium]] — the toolbox, pointed at the hardest available problems
 
-The core tools ([[coincidence]] · [[theorem]] · [[duel]] · [[seeing]]) **classify** a claimed solution; they never produce one. Pointed at the seven Clay Millennium Problems they return this, and `corpusSolves` is the literal type `false` — the code cannot assert a solution.
+The core tools ([[coincidence]] · [[theorem]] · [[duel]] · [[seeing]]) **classify** a claimed solution; they never produce one. Pointed at the seven Clay Millennium Problems they return this.
 
 | | |
 | --- | ---: |
@@ -101,7 +101,6 @@ The core tools ([[coincidence]] · [[theorem]] · [[duel]] · [[seeing]]) **clas
 | **open** — neither proved nor refuted | **6** |
 | **lensless** — the duel cannot start | **3** (Yang–Mills · Hodge · Birch–Swinnerton-Dyer) |
 | matrix cells (21 pairs + 7 diagonal) | **28** |
-| `corpusSolvesAny()` | **false** |
 
 | problem | statement (algebraic) | the named gap |
 | --- | --- | --- |
