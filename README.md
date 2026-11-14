@@ -90,18 +90,26 @@ Six positions divide the circle exactly, so each step is **60°**, and the polar
 
 **What is proven and what is declared.** The group theory above is proven and holds whatever anyone believes: the order, the inverse generator, the negation, the affine closure. The pitch anchor (A432), the note pinned to each step and the colour channel are a **declared mapping** this corpus chose so the ring can be seen and heard. Just-intonation ratios are genuinely rational — that is what makes them intervals — but 432 Hz being the anchor is a convention, and calling it universal would be an over-claim this corpus refuses elsewhere and refuses here.
 
-## [[millennium]] — the toolbox, pointed at the hardest available problems
+## [[millennium]] — how a Clay problem is verified here
 
-The core tools ([[coincidence]] · [[theorem]] · [[duel]] · [[seeing]]) **classify** a claimed solution; they never produce one. Pointed at the seven Clay Millennium Problems they return this, and `corpusSolves` is the literal type `false` — the code cannot assert a solution.
+A Clay problem is verified by the **Lean kernel**, or it is not verified. Not by a deposit on Zenodo, not by a prose argument, and not by this README: this section only reports what the kernel has checked.
 
-| | |
-| --- | ---: |
-| challenges saved, each inverted | **7** |
-| standing (proved, never refuted) | **1** — Poincaré Conjecture, by **Grigori Perelman** |
-| **open** — neither proved nor refuted | **6** |
-| **lensless** — the duel cannot start | **3** (Yang–Mills · Hodge · Birch–Swinnerton-Dyer) |
-| matrix cells (21 pairs + 7 diagonal) | **28** |
-| `corpusSolvesAny()` | **false** |
+1. **Declare.** A Lean file in `src/utilities/verify/lean/` says what it is about on a header line, `Clay: <problem> <kind>`: `meta` (proves what an argument *cannot* do), `partial` (a true fragment) or `statement` (the problem's own statement).
+2. **Check.** `tsx src/utilities/verify/inventory/index.ts` compiles every file with `lean` and records, for each theorem, the axioms the kernel says it rests on, in `inventory.generated.json`. `sorryAx` among them marks a stub, never a proof.
+3. **Count.** `clayWitnesses` joins the declarations to that report. `claySettled` lists the problems with a compiled, stub-free file declared `statement`. A refused or stubbed file never settles anything, and a mistyped tag throws instead of hiding.
+4. **Review.** A tag is a declaration, not proof that the Lean statement is the real one: a theorem can be a tautology (`one_law` in `Erpax.lean` is one). A `statement` file needs a human to read its statement against Clay's before it counts.
+
+| problem | kernel witnesses today | what they prove |
+| --- | --- | --- |
+| P vs NP | none | — |
+| Riemann Hypothesis | `Symmetry.lean` — `meta`, 9 theorems, 0 stubbed | the involutions of the functional equation do not force the zeros onto the line; nothing about whether they lie there |
+| Navier–Stokes | none | — |
+| Yang–Mills | none | — |
+| Hodge | none | — |
+| Birch–Swinnerton-Dyer | none | — |
+| Poincaré | none here: proved by **Grigori Perelman** on paper, not formalised in this repo | — |
+
+Settled by this corpus: **none** (`claySettled` is empty). Kernel report sealed 2026-11-14: 290 theorems, 197 axiom-free, 93 on Lean's three standard axioms, 0 stubbed, 35 files, sources `0c5ea6ae2093c93f`. Recompute: `tsx src/utilities/verify/inventory/index.ts` · `pnpm vitest run src/utilities/verify`.
 
 | problem | statement (algebraic) | the named gap |
 | --- | --- | --- |
@@ -115,9 +123,7 @@ The core tools ([[coincidence]] · [[theorem]] · [[duel]] · [[seeing]]) **clas
 
 The **statement** is what the conjecture asserts — read it before anything this corpus says about it, so a lens can never be mistaken for the mathematics it points at. The **gap** is what is missing, named plainly: a gap you can argue with, rather than a mystery that hides its size.
 
-You do not solve one by asserting it — you solve it by **surviving its inversion**. `attempt(name, rounds)` is the door: it refuses an empty attempt (*an assertion is not an attempt*), falls on a single refutation whatever else was proved, and refuses an unknown problem. `reductionFrontier(claim)` names the exact links still ungrounded ([[millennium/reduction]]).
-
-Recompute: `tsx src/millennium/index.ts` · `pnpm vitest run src/millennium`
+You do not solve one by asserting it. A problem moves here only when a Lean file declared `statement` compiles with no stub and its statement survives review; whether that is a solution at all is for the [Clay Institute's rules](https://www.claymath.org/millennium-problems/rules/), not for this repository.
 
 ## the diamond — the build receipt
 
