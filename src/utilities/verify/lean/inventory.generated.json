@@ -1,11 +1,11 @@
 {
-  "sealedAt": "2026-11-13",
+  "sealedAt": "2026-11-14",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "5723da34c2eeae48",
+  "sourcesHash": "0c5ea6ae2093c93f",
   "census": {
-    "theorems": 281,
+    "theorems": 290,
     "axiomFree": 197,
-    "standardAxioms": 84,
+    "standardAxioms": 93,
     "stubbed": 0
   },
   "files": [
@@ -2091,6 +2091,93 @@
           "theorem": "Stream.five_separators",
           "axioms": [],
           "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Symmetry.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Symmetry.sigma_is_an_involution",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Symmetry.conj_is_an_involution",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Symmetry.tau_is_an_involution",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Symmetry.the_critical_line_is_the_fixed_set",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Symmetry.off_line_is_invariant",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Symmetry.off_line_leaves_the_line",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Symmetry.symmetry_does_not_force_the_line",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Symmetry.on_line_the_orbit_collapses",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Symmetry.off_line_the_orbit_splits",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
           "stubbed": false
         }
       ]
