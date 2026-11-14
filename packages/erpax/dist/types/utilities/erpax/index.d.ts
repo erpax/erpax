@@ -14,6 +14,4 @@
  *
  * @see ./SKILL.md — ./api/surface — @/skill/wire
  */
-export { ERPAX_CANONICAL_REPO, ERPAX_SKILL_ENTRY, ERPAX_SKILL_ENTRY_ALT, ERPAX_SKILL_ENTRY_CONTENT_UUID, ERPAX_AGENT_SURFACES, wireFromRepoUrl, } from '../skill/wire';
-export type { WireFromRepoUrl, WireFromRepoUrlResult, WireFromRepoUrlError } from '../skill/wire';
 export { erpaxWikiParity, erpaxApiDiscoveryPayload } from './api/surface';
