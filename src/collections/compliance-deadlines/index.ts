@@ -47,7 +47,7 @@ export const ComplianceDeadlines: CollectionConfig = {
     {
       name: 'jurisdiction',
       type: 'relationship',
-      relationTo: 'taxing-jurisdictions',
+      relationTo: 'tax-jurisdictions',
     },
     {
       name: 'requirement',
@@ -88,6 +88,67 @@ export const ComplianceDeadlines: CollectionConfig = {
     {
       name: 'penalty',
       type: 'text',
+    },
+    {
+      name: 'notifications',
+      type: 'array',
+      admin: { description: 'The reminders scheduled for this deadline (formerly the compliance-notifications collection — a reminder has no life apart from its deadline).' },
+      fields: [
+        {
+          name: 'notificationTitle',
+          type: 'text',
+          required: true,
+        },
+        {
+          name: 'notificationContent',
+          type: 'richText',
+        },
+        {
+          name: 'notificationType',
+          type: 'select',
+          options: [
+            { label: 'Email', value: 'email' },
+            { label: 'In-App', value: 'in-app' },
+            { label: 'SMS', value: 'sms' },
+            { label: 'Calendar Event', value: 'calendar-event' },
+          ],
+          hasMany: true,
+        },
+        {
+          name: 'recipients',
+          type: 'array',
+          fields: [
+            {
+              name: 'recipientEmail',
+              type: 'email',
+            },
+            {
+              name: 'recipientRole',
+              type: 'text',
+            },
+          ],
+        },
+        {
+          name: 'daysBeforeDue',
+          type: 'number',
+          required: true,
+        },
+        {
+          name: 'sentDate',
+          type: 'date',
+        },
+        {
+          name: 'status',
+          type: 'select',
+          options: [
+            { label: 'Scheduled', value: 'scheduled' },
+            { label: 'Sent', value: 'sent' },
+            { label: 'Delivered', value: 'delivered' },
+            { label: 'Failed', value: 'failed' },
+          ],
+          defaultValue: 'scheduled',
+        },
+      ],
     },
   ],
 }

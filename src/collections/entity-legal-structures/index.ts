@@ -25,7 +25,7 @@ export const EntityLegalStructures: CollectionConfig = {
   },
   timestamps: true,
   fields: [
-    { name: 'jurisdiction', type: 'relationship', relationTo: 'taxing-jurisdictions', required: true, index: true, admin: { description: 'Jurisdiction' } },
+    { name: 'jurisdiction', type: 'relationship', relationTo: 'tax-jurisdictions', required: true, index: true, admin: { description: 'Jurisdiction' } },
     { name: 'entityType', type: 'relationship', relationTo: 'entity-types', required: true, admin: { description: 'Entity type' } },
     { name: 'localName', type: 'text', required: true, admin: { description: 'Local name of legal form' } },
     { name: 'abbreviation', type: 'text', admin: { description: 'Abbreviation' } },

@@ -29,7 +29,7 @@ export const StatutoryReportTemplates: CollectionConfig = {
     {
       name: 'jurisdiction',
       type: 'relationship',
-      relationTo: 'taxing-jurisdictions',
+      relationTo: 'tax-jurisdictions',
       required: true,
     },
     {
@@ -80,6 +80,56 @@ export const StatutoryReportTemplates: CollectionConfig = {
     {
       name: 'effectiveTo',
       type: 'date',
+    },
+    {
+      name: 'fieldMappings',
+      type: 'array',
+      admin: { description: 'Where each field of this template is sourced from (formerly the statutory-field-mappings collection — a mapping belongs to exactly one template).' },
+      fields: [
+        {
+          name: 'mappingName',
+          type: 'text',
+          required: true,
+        },
+        {
+          name: 'fieldName',
+          type: 'text',
+          required: true,
+        },
+        {
+          name: 'fieldType',
+          type: 'select',
+          options: [
+            { label: 'Text', value: 'text' },
+            { label: 'Number', value: 'number' },
+            { label: 'Date', value: 'date' },
+            { label: 'Currency', value: 'currency' },
+            { label: 'Percentage', value: 'percentage' },
+            { label: 'Boolean', value: 'boolean' },
+          ],
+        },
+        {
+          name: 'sourceCollection',
+          type: 'text',
+        },
+        {
+          name: 'sourceField',
+          type: 'text',
+        },
+        {
+          name: 'transformation',
+          type: 'richText',
+        },
+        {
+          name: 'mandatory',
+          type: 'checkbox',
+          defaultValue: true,
+        },
+        {
+          name: 'validationRules',
+          type: 'richText',
+        },
+      ],
     },
   ],
 }

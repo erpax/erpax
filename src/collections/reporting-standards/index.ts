@@ -46,7 +46,7 @@ export const ReportingStandards: CollectionConfig = {
     {
       name: 'jurisdiction',
       type: 'relationship',
-      relationTo: 'taxing-jurisdictions',
+      relationTo: 'tax-jurisdictions',
     },
     {
       name: 'description',
@@ -65,6 +65,63 @@ export const ReportingStandards: CollectionConfig = {
       name: 'referenceMaterial',
       type: 'upload',
       relationTo: 'media',
+    },
+    {
+      name: 'mappings',
+      type: 'array',
+      admin: { description: 'Mappings FROM this standard to another (formerly the reporting-mappings collection; `fromStandard` is now the containing document).' },
+      fields: [
+        {
+          name: 'mappingName',
+          type: 'text',
+          required: true,
+        },
+        {
+          name: 'toStandard',
+          type: 'relationship',
+          relationTo: 'reporting-standards',
+          required: true,
+        },
+        {
+          name: 'mappingType',
+          type: 'select',
+          options: [
+            { label: 'Account Mapping', value: 'account-mapping' },
+            { label: 'Line Item Mapping', value: 'line-item-mapping' },
+            { label: 'Disclosure Mapping', value: 'disclosure-mapping' },
+            { label: 'Metric Mapping', value: 'metric-mapping' },
+          ],
+          required: true,
+        },
+        {
+          name: 'mappingRules',
+          type: 'array',
+          fields: [
+            {
+              name: 'sourceElement',
+              type: 'text',
+            },
+            {
+              name: 'targetElement',
+              type: 'text',
+            },
+            {
+              name: 'transformation',
+              type: 'richText',
+            },
+          ],
+        },
+        {
+          name: 'status',
+          type: 'select',
+          options: [
+            { label: 'Active', value: 'active' },
+            { label: 'Inactive', value: 'inactive' },
+            { label: 'Pending Review', value: 'pending-review' },
+          ],
+          defaultValue: 'pending-review',
+        },
+      ],
     },
   ],
 }
