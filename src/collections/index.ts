@@ -19,7 +19,6 @@
 export { Tenants } from '@/collections/tenants'
 export { Users } from '@/collections/users'
 export { Roles } from '@/collections/roles'
-export { UserRoles } from '@/collections/user-roles'
 
 // Content Collections
 export { Pages } from '@/collections/pages'
@@ -31,7 +30,6 @@ export { Categories } from '@/collections/categories'
 export { Invoices } from '@/collections/invoices'
 export { InvoiceLines } from '@/collections/invoice-lines'
 export { PaymentMethods } from '@/collections/payment-methods'
-export { Payments } from '@/collections/payments'
 export { SubscriptionPlans } from '@/collections/subscription-plans'
 export { Subscriptions } from '@/collections/subscriptions'
 
@@ -75,7 +73,6 @@ export { default as CurrencyRates } from '@/collections/currency-rates'
 // Fiscal Period Management (Phase B1: Fiscal Period Flexibility)
 export { FiscalPeriods } from '@/collections/fiscal-periods'
 export { FiscalCalendars } from '@/collections/fiscal-calendars'
-export { FiscalPeriodSnapshots } from '@/collections/fiscal-period-snapshots'
 
 // Fixed Assets & Depreciation
 export { default as FixedAssets } from '@/collections/fixed-assets'
@@ -87,7 +84,6 @@ export { default as Parties } from '@/collections/parties'
 export { default as Leads } from '@/collections/leads'
 export { default as Opportunities } from '@/collections/opportunities'
 export { default as CustomerSegments } from '@/collections/customer-segments'
-export { default as SalesOrders } from '@/collections/sales-orders'
 export { default as SalesCommissions } from '@/collections/sales-commissions'
 
 // Order-to-Cash
@@ -174,9 +170,6 @@ export { default as WorkCenters } from '@/collections/work-centers'
 // AUTHORITY: wage = Σ(produced·unitSeconds·payPerHour/3600/mpw), verified €4.68M). Supersedes
 // the former idealized per-order stub; carries the canonical slug `work-shifts`.
 export { default as WorkShifts } from '@/collections/work-shifts'
-export { default as Operations } from '@/collections/operations'
-export { default as Routings } from '@/collections/routings'
-export { default as OperationRuns } from '@/collections/operation-runs'
 
 // Manufacturing — the lot funnel (production order → variant roll-up → routing chain → phase catalog)
 export { default as Lots } from '@/collections/lots'
@@ -222,7 +215,6 @@ export { default as Shares } from '@/collections/shares'
 
 // Phase 1: Compliance Foundation (7 collections)
 export { EntityTypes } from '@/collections/entity-types'
-export { TaxingJurisdictions } from '@/collections/taxing-jurisdictions'
 export { EntityLegalStructures } from '@/collections/entity-legal-structures'
 export { ComplianceFrameworks } from '@/collections/compliance-frameworks'
 export { ComplianceRequirements } from '@/collections/compliance-requirements'
@@ -246,13 +238,9 @@ export { RegulatoryReports } from '@/collections/regulatory-reports'
 // Phase 5: Compliance Policies & Calendars (9 collections)
 export { InternalPolicies } from '@/collections/internal-policies'
 export { StatutoryReportTemplates } from '@/collections/statutory-report-templates'
-export { StatutoryFieldMappings } from '@/collections/statutory-field-mappings'
-export { PolicyVersions } from '@/collections/policy-versions'
 export { PolicyAcknowledgments } from '@/collections/policy-acknowledgments'
 export { ComplianceDeadlines } from '@/collections/compliance-deadlines'
-export { ComplianceNotifications } from '@/collections/compliance-notifications'
 export { ReportingStandards } from '@/collections/reporting-standards'
-export { ReportingMappings } from '@/collections/reporting-mappings'
 
 // Phase 6: Risk, Disclosure & Audit Extension (8 collections)
 export { RelatedPartyTransactions } from '@/collections/related-party-transactions'

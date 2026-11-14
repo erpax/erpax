@@ -1,6 +1,16 @@
 import * as migration_20261113_153714_parties from './20261113_153714_parties';
 import * as migration_20261113_161539_lifecycle from './20261113_161539_lifecycle';
 import * as migration_20261113_164414_markdown from './20261113_164414_markdown';
+import * as migration_20261114_094735_fold_config_children from './20261114_094735_fold_config_children';
+import * as migration_20261114_100412_merge_operation_model from './20261114_100412_merge_operation_model';
+import * as migration_20261114_100911_work_order_lot_relationships from './20261114_100911_work_order_lot_relationships';
+import * as migration_20261114_102016_merge_jurisdictions from './20261114_102016_merge_jurisdictions';
+import * as migration_20261114_102532_item_storefront_links from './20261114_102532_item_storefront_links';
+import * as migration_20261114_103040_fold_sales_orders_into_orders from './20261114_103040_fold_sales_orders_into_orders';
+import * as migration_20261114_103541_fold_payments_into_transactions from './20261114_103541_fold_payments_into_transactions';
+import * as migration_20261114_104008_policy_versions_native from './20261114_104008_policy_versions_native';
+import * as migration_20261114_104240_fiscal_period_snapshots_native from './20261114_104240_fiscal_period_snapshots_native';
+import * as migration_20261114_104713_user_role_assignments from './20261114_104713_user_role_assignments';
 
 export const migrations = [
   {
@@ -16,6 +26,56 @@ export const migrations = [
   {
     up: migration_20261113_164414_markdown.up,
     down: migration_20261113_164414_markdown.down,
-    name: '20261113_164414_markdown'
+    name: '20261113_164414_markdown',
+  },
+  {
+    up: migration_20261114_094735_fold_config_children.up,
+    down: migration_20261114_094735_fold_config_children.down,
+    name: '20261114_094735_fold_config_children',
+  },
+  {
+    up: migration_20261114_100412_merge_operation_model.up,
+    down: migration_20261114_100412_merge_operation_model.down,
+    name: '20261114_100412_merge_operation_model',
+  },
+  {
+    up: migration_20261114_100911_work_order_lot_relationships.up,
+    down: migration_20261114_100911_work_order_lot_relationships.down,
+    name: '20261114_100911_work_order_lot_relationships',
+  },
+  {
+    up: migration_20261114_102016_merge_jurisdictions.up,
+    down: migration_20261114_102016_merge_jurisdictions.down,
+    name: '20261114_102016_merge_jurisdictions',
+  },
+  {
+    up: migration_20261114_102532_item_storefront_links.up,
+    down: migration_20261114_102532_item_storefront_links.down,
+    name: '20261114_102532_item_storefront_links',
+  },
+  {
+    up: migration_20261114_103040_fold_sales_orders_into_orders.up,
+    down: migration_20261114_103040_fold_sales_orders_into_orders.down,
+    name: '20261114_103040_fold_sales_orders_into_orders',
+  },
+  {
+    up: migration_20261114_103541_fold_payments_into_transactions.up,
+    down: migration_20261114_103541_fold_payments_into_transactions.down,
+    name: '20261114_103541_fold_payments_into_transactions',
+  },
+  {
+    up: migration_20261114_104008_policy_versions_native.up,
+    down: migration_20261114_104008_policy_versions_native.down,
+    name: '20261114_104008_policy_versions_native',
+  },
+  {
+    up: migration_20261114_104240_fiscal_period_snapshots_native.up,
+    down: migration_20261114_104240_fiscal_period_snapshots_native.down,
+    name: '20261114_104240_fiscal_period_snapshots_native',
+  },
+  {
+    up: migration_20261114_104713_user_role_assignments.up,
+    down: migration_20261114_104713_user_role_assignments.down,
+    name: '20261114_104713_user_role_assignments'
   },
 ];
