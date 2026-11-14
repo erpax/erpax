@@ -1,11 +1,11 @@
-import type { User } from '@/types'
+import type { User } from '@/utilities/types'
 import type { Access, Where } from 'payload'
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 
 import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
-import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
-import { isAccessingSelf } from '@/users/access/isAccessingSelf'
-import { getCollectionIDType } from '@/get/collection/id/type'
+import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
+import { isAccessingSelf } from '@/utilities/users/access/isAccessingSelf'
+import { getCollectionIDType } from '@/utilities/get/collection/id/type'
 
 /**
  * Users:read access predicate — self, super-admin, or admin of the user's tenant.

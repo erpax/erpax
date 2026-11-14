@@ -1,5 +1,5 @@
 import { Access } from 'payload'
-import type { UserRole } from '@/types/auth'
+import type { UserRole } from '@/utilities/types/auth'
 import { getUser } from '@/access/collections/shared/multiTenantRead'
 
 export interface RoleAccessConfig {

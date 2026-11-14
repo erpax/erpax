@@ -3,7 +3,7 @@ import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantR
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { taxonomySelect } from '@/fields/select/taxonomySelect'
-import { VAT_CATEGORY_OPTIONS } from '@/un/cefact/5305'
+import { VAT_CATEGORY_OPTIONS } from '@/utilities/un/cefact/5305'
 
 /**
  * Tax Codes — tax-rate master.

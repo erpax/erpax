@@ -27,7 +27,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
@@ -40,7 +40,7 @@ import {
   GHG_CATEGORY_OPTIONS,
   GHG_METHODOLOGY_OPTIONS,
   GWP_HORIZON_OPTIONS,
-} from '@/ghg/protocol'
+} from '@/utilities/ghg/protocol'
 
 const CarbonEmissions: CollectionConfig = {
   slug: 'carbon-emissions',

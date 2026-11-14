@@ -28,7 +28,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { currencyField } from '@/fields/text/currencyField'
@@ -37,7 +37,7 @@ import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
 import { unitOfMeasureField } from '@/fields/text/unitOfMeasureField'
-import { preset, type Preset } from '@/preset'
+import { preset, type Preset } from '@/utilities/preset'
 
 /** The stages in which the document is still a request: reported, not yet work someone has planned. */
 export const requestStages = (): string[] => ['new', 'triaged', 'on_hold', 'rejected', 'duplicate']

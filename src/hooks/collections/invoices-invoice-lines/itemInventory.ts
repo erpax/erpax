@@ -21,7 +21,7 @@
  * @see src/hooks/factories/recompute-parent-aggregates.ts (the single-relation sibling)
  */
 import type { CollectionAfterChangeHook, CollectionAfterDeleteHook, PayloadRequest, Where } from 'payload'
-import { relationIdString as relId } from '@/field/relation'
+import { relationIdString as relId } from '@/utilities/field/relation'
 
 const CTX_IN_PROGRESS = '_recomputeItemInventoryInProgress'
 

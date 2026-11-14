@@ -1,5 +1,5 @@
 import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
-import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
+import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
 import { Access } from 'payload'
 
 /**

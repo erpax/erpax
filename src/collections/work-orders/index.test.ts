@@ -17,7 +17,7 @@ import {
   inheritShiftEfficiency,
   WORKORDER_RING,
 } from '@/collections/work-orders'
-import { HORO_DIGITS } from '@/horo'
+import { HORO_DIGITS } from '@/utilities/horo'
 
 type HookArgs = Parameters<CollectionBeforeChangeHook>[0]
 const balance = (data: Record<string, unknown>) =>

@@ -9,7 +9,7 @@ import {
 } from '@payloadcms/richtext-lexical'
 import { localeRecord } from '@/i18n'
 
-import { mediaBeforeChange } from '@/media/hooks'
+import { mediaBeforeChange } from '@/components/media/hooks'
 
 /**
  * Media — uploaded files (images, video, documents) under R2 storage.
@@ -76,7 +76,7 @@ export const Media: CollectionConfig = {
 // `Media` (above) is the Payload collection — the matter/node identity.
 // The React render facet lives in ./Component (also exports a `Media` FC, so it
 // is surfaced here under an alias to avoid clobbering the collection symbol).
-// Canonical component import path stays `@/media/Component`.
-export { Media as MediaComponent } from '@/media/Component'
+// Canonical component import path stays `@/components/media/Component`.
+export { Media as MediaComponent } from '@/components/media/Component'
 
-export * from '@/media/types'
+export * from '@/components/media/types'

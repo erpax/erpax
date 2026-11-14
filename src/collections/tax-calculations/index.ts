@@ -5,7 +5,7 @@ import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenan
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
-import { validateNotLocked } from '@/utility';
+import { validateNotLocked } from '@/utilities/utility';
 
 /**
  * Tax Calculations — computed tax-liability snapshots per period.

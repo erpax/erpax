@@ -2,14 +2,14 @@
 
 import React from 'react'
 
-import type { Header as HeaderType } from '@/types'
+import type { Header as HeaderType } from '@/utilities/types'
 
-import { CMSLink } from '@/link/component'
+import { CMSLink } from '@/components/link/component'
 import Link from 'next/link'
 import { SearchIcon } from 'lucide-react'
 import { useLocale, useTranslations } from 'next-intl'
 
-import { FrontendLocaleSwitcher } from '@/locale/switcher'
+import { FrontendLocaleSwitcher } from '@/components/locale/switcher'
 
 export const HeaderNav: React.FC<{ data: HeaderType }> = ({ data }) => {
   const navItems = data?.navItems || []

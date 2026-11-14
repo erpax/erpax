@@ -21,16 +21,16 @@ import { getPayload, type TypedLocale } from 'payload'
 import React, { cache } from 'react'
 
 import { routing } from '@/i18n/routing'
-import type { Product } from '@/types'
-import { generateMeta } from '@/generate/meta'
-import { DEFAULT_CURRENCY, DEFAULT_LOCALE } from '@/config/regional/defaults'
-import { getProductPrice, formatProductPrice } from '@/product/price'
+import type { Product } from '@/utilities/types'
+import { generateMeta } from '@/utilities/generate/meta'
+import { DEFAULT_CURRENCY, DEFAULT_LOCALE } from '@/utilities/config/regional/defaults'
+import { getProductPrice, formatProductPrice } from '@/utilities/product/price'
 import {
   buildProductDetailWhere,
   buildPublishedProductsWhere,
-} from '@/site/tenant/where'
-import { resolvePublicSiteUrlFromHeaders as resolvePublicSiteUrl } from '@/rfc/3986'
-import { getTenantFromRequest } from '@/get/tenant/from/request'
+} from '@/utilities/site/tenant/where'
+import { resolvePublicSiteUrlFromHeaders as resolvePublicSiteUrl } from '@/utilities/rfc/3986'
+import { getTenantFromRequest } from '@/utilities/get/tenant/from/request'
 
 export async function generateStaticParams() {
   // During build/CI, the D1 database may not have tables yet.

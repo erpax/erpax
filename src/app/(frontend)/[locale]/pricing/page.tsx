@@ -2,7 +2,7 @@
  * Pricing — the marketing surface derived from live config, never hand-typed.
  *
  * Renders PricingTable (live `subscription-plans` rows, IFRS 15 / ASC 606 note) and
- * CountryShowcase (the per-country adapter map from `@/config/regional/defaults`).
+ * CountryShowcase (the per-country adapter map from `@/utilities/config/regional/defaults`).
  * Force-dynamic: PricingTable boots Payload per request, so the build never needs a DB.
  *
  * @standard schema.org Offer pricing
@@ -12,8 +12,8 @@
 
 import type { Metadata } from 'next'
 
-import PricingTable from '@/vocabulary/marketing/PricingTable'
-import CountryShowcase from '@/vocabulary/marketing/CountryShowcase'
+import PricingTable from '@/components/vocabulary/marketing/PricingTable'
+import CountryShowcase from '@/components/vocabulary/marketing/CountryShowcase'
 
 export const dynamic = 'force-dynamic'
 

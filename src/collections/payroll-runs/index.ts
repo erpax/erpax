@@ -49,7 +49,7 @@ import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { validateNotLocked } from '@/utility'
+import { validateNotLocked } from '@/utilities/utility'
 import { payrollRunPostingHook } from '@/hooks/collections/shared/payrollRunPostingHook'
 import { payrollDisbursementHook } from '@/hooks/collections/shared/payrollDisbursementHook'
 
@@ -378,4 +378,4 @@ const PayrollRuns: CollectionConfig = {
 
 export default PayrollRuns
 
-export * from '@/bank/accounts/payroll/runs/hooks'
+export * from '@/utilities/bank/accounts/payroll/runs/hooks'

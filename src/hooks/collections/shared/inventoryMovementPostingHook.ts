@@ -1,4 +1,4 @@
-import { exactAbs } from '@/algebra'
+import { exactAbs } from '@/utilities/algebra'
 /**
  * Inventory Movement Posting Hook — fires `inventory:adjusted` on
  * `InventoryMovements.status → 'posted'` for the movement kinds that
@@ -26,9 +26,9 @@ import { exactAbs } from '@/algebra'
 
 import { v4 as uuid } from 'uuid'
 import type { CollectionAfterChangeHook } from 'payload'
-import { eventEmitter } from '@/event/emitter/service'
-import type { InventoryAdjustedEvent } from '@/types/events'
-import { idOf } from '@/relation'
+import { eventEmitter } from '@/utilities/event/emitter/service'
+import type { InventoryAdjustedEvent } from '@/utilities/types/events'
+import { idOf } from '@/utilities/relation'
 
 type AdjustedKind = InventoryAdjustedEvent['payload']['kind']
 

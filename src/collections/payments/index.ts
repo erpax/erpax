@@ -1,12 +1,12 @@
 import { CollectionConfig } from 'payload'
 import { adminOnly, multiTenantRead } from '@/access/collections/shared/multiTenantRead'
-import { authenticated } from '@/authenticated'
+import { authenticated } from '@/utilities/authenticated'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
-import { paymentsBeforeValidate } from '@/invoices/payments/hooks'
-import { paymentsBeforeChange } from '@/invoices/payments/hooks'
-import { paymentsAfterChange } from '@/invoices/payments/hooks'
-import { invoicePaidTotals } from '@/invoices/payments/hooks'
+import { paymentsBeforeValidate } from '@/utilities/invoices/payments/hooks'
+import { paymentsBeforeChange } from '@/utilities/invoices/payments/hooks'
+import { paymentsAfterChange } from '@/utilities/invoices/payments/hooks'
+import { invoicePaidTotals } from '@/utilities/invoices/payments/hooks'
 
 /**
  * Payments — money-movement records with GL posting + period-lock guard.

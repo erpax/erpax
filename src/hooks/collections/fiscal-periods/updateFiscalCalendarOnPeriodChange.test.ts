@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { chainLeaf } from '@/merge'
+import { chainLeaf } from '@/utilities/merge'
 import { updateFiscalCalendarOnPeriodChange } from '@/hooks/collections/fiscal-periods/updateFiscalCalendarOnPeriodChange'
 
 type Doc = Record<string, unknown>

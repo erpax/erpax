@@ -1,9 +1,9 @@
 import type { Access } from 'payload'
 
-import type { Tenant, User } from '@/types'
+import type { Tenant, User } from '@/utilities/types'
 
 import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
-import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
+import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
 
 /**
  * Users:create access predicate — first-user bootstrap, super-admin, or

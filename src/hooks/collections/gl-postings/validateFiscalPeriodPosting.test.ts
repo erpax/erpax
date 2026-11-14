@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { chainLeaf } from '@/merge'
+import { chainLeaf } from '@/utilities/merge'
 import { validateFiscalPeriodPosting } from '@/hooks/collections/gl-postings/validateFiscalPeriodPosting'
 
 /**

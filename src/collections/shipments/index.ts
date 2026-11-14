@@ -8,9 +8,9 @@
  * @compliance SOX §404 internal-controls dispatch-controls
  */
 
-import { deriveMovements } from '@/items/inventory/movements/source'
+import { deriveMovements } from '@/utilities/items/inventory/movements/source'
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { statusField } from '@/fields/select/statusField'

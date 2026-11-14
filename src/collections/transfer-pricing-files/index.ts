@@ -26,7 +26,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
@@ -35,7 +35,7 @@ import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
 import { countryCodeField } from '@/fields/text/countryCodeField'
 import { taxonomySelect } from '@/fields/select/taxonomySelect'
-import { OECD_TP_METHOD_OPTIONS, BEPS_TP_FILE_TYPE_OPTIONS } from '@/oecd/tpg'
+import { OECD_TP_METHOD_OPTIONS, BEPS_TP_FILE_TYPE_OPTIONS } from '@/utilities/oecd/tpg'
 
 const TransferPricingFiles: CollectionConfig = {
   slug: 'transfer-pricing-files',

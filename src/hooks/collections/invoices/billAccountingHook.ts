@@ -25,16 +25,16 @@
  */
 
 import { v4 as uuid } from 'uuid'
-import { BILL_ACTIVE_STATUSES as ACTIVE, justActivated, justReversed } from '@/invoices/hooks/transition'
+import { BILL_ACTIVE_STATUSES as ACTIVE, justActivated, justReversed } from '@/utilities/invoices/hooks/transition'
 import type { CollectionAfterChangeHook } from 'payload'
-import { eventEmitter } from '@/event/emitter/service'
-import { emitDomainEvent } from '@/emit/domain/event'
+import { eventEmitter } from '@/utilities/event/emitter/service'
+import { emitDomainEvent } from '@/utilities/emit/domain/event'
 import type {
   BillActivatedEvent,
   BillReversedEvent,
   BillLineItem,
   InventoryPurchasedEvent,
-} from '@/types/events'
+} from '@/utilities/types/events'
 
 const toLineItem = (line: Record<string, unknown>): BillLineItem => ({
   id: String(line.id ?? uuid()),

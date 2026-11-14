@@ -26,13 +26,13 @@ import { countryCodeField } from '@/fields/text/countryCodeField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { partyRefField } from '@/fields/array/partyRefField'
 import { typeField } from '@/fields/select/typeField'
-import { standardCollectionHooks } from '@/standard/collection/hook'
-import { horoStateField } from '@/horo'
-import { CASE_RING } from '@/cases/lifecycle'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
+import { horoStateField } from '@/utilities/horo'
+import { CASE_RING } from '@/utilities/cases/lifecycle'
 import { requireJudgmentToSeal, neverDelete } from '@/hooks/collections/cases/requireJudgmentToSeal'
 
 // Re-export for convenience
-export { CASE_RING, type HoroState } from '@/cases/lifecycle'
+export { CASE_RING, type HoroState } from '@/utilities/cases/lifecycle'
 export { requireJudgmentToSeal, validateCaseTransition } from '@/hooks/collections/cases/requireJudgmentToSeal'
 
 export const Cases: CollectionConfig = {

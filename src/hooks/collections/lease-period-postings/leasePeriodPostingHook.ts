@@ -42,12 +42,12 @@ import { flagged } from '@/hooks/context'
 import {
   postingService,
   type JournalEntryLine,
-} from '@/journal/entry/service'
+} from '@/utilities/journal/entry/service'
 import {
   resolveGlAccount,
   type GlAccountRole,
-} from '@/gl/account/resolver'
-import { idOf } from '@/relation'
+} from '@/utilities/gl/account/resolver'
+import { idOf } from '@/utilities/relation'
 
 // Canonical roles this hook posts to — resolveGlAccount maps each to
 // the tenant's actual gl-accounts row id at run time (per the project's

@@ -3,7 +3,7 @@ import { superAdminOnly } from '@/access/collections/shared/superAdminOnly'
 import {
   encryptPaymentMethodData,
   decryptPaymentMethodData,
-} from '@/payment/methods/hooks'
+} from '@/utilities/payment/methods/hooks'
 
 /**
  * Payment Methods — tokenized card / bank-account references for billing.

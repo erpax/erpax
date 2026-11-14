@@ -17,7 +17,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { tenantAdminWriteAccess } from '@/access/collections/shared/multiTenantRead'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { deriveCountryFromIban } from '@/hooks/collections/shared/deriveCountryFromIban'
@@ -25,8 +25,8 @@ import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { isValidIban } from '@/iban'
-import { isSwiftBic } from '@/iso/9362'
+import { isValidIban } from '@/utilities/iban'
+import { isSwiftBic } from '@/utilities/iso/9362'
 
 const BankAccounts: CollectionConfig = {
   slug: 'bank-accounts',

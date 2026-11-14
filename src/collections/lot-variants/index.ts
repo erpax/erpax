@@ -31,7 +31,7 @@
  */
 
 import type { CollectionBeforeChangeHook, CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { notesField } from '@/fields/textarea/notesField'

@@ -1,4 +1,4 @@
-import { exactAbs } from '@/algebra'
+import { exactAbs } from '@/utilities/algebra'
 /**
  * validateMultiCurrencyClosing Hook
  *
@@ -27,8 +27,8 @@ import { exactAbs } from '@/algebra'
  */
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
-import { CurrencyReconciliation } from '@/currency/reconciliation'
-import type { CurrencyRate, LegalEntity } from '@/types'
+import { CurrencyReconciliation } from '@/utilities/currency/reconciliation'
+import type { CurrencyRate, LegalEntity } from '@/utilities/types'
 
 interface ClosingEntryWithCurrency {
   sequenceNumber?: number

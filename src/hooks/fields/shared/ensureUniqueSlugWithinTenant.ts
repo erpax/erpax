@@ -1,8 +1,8 @@
 import type { FieldHook, Where } from 'payload'
 
-import { ERR, throwRegistryValidation } from '@/error'
-import { extractID } from '@/extract/id'
-import { tenantLabelForDuplicateAudit } from '@/tenant/label/for/duplicate/audit'
+import { ERR, throwRegistryValidation } from '@/utilities/error'
+import { extractID } from '@/utilities/extract/id'
+import { tenantLabelForDuplicateAudit } from '@/utilities/tenant/label/for/duplicate/audit'
 
 /** Tenant-scoped collections whose slugs must be unique within `tenant`, not globally. */
 export type TenantScopedSlugCollection = 'pages' | 'posts' | 'categories'

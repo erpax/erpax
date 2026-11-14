@@ -11,8 +11,8 @@
  */
 
 import type { Access, FieldAccess } from 'payload'
-import type { Iso27002ControlId } from '@/iso/27002'
-import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
+import type { Iso27002ControlId } from '@/utilities/iso/27002'
+import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
 
 /**
  * Canonical ISO 27002 controls this predicate exercises:

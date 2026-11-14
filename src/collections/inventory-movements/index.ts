@@ -24,7 +24,7 @@ import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCr
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
-import { validateNotLocked } from '@/utility'
+import { validateNotLocked } from '@/utilities/utility'
 import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
@@ -141,4 +141,4 @@ const InventoryMovements: CollectionConfig = {
 
 export default InventoryMovements
 
-export * from '@/items/inventory/movements/hooks'
+export * from '@/utilities/items/inventory/movements/hooks'

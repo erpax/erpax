@@ -1,4 +1,4 @@
-import { exactAbs } from '@/algebra'
+import { exactAbs } from '@/utilities/algebra'
 /**
  * Bank Statement Import Hook — emits `bank:statement:imported` so
  * `glPostingService.postBankStatementImported` can book a JE for every
@@ -32,11 +32,11 @@ import { exactAbs } from '@/algebra'
 
 import { v4 as uuid } from 'uuid'
 import type { CollectionAfterChangeHook } from 'payload'
-import { emitDomainEvent } from '@/emit/domain/event'
+import { emitDomainEvent } from '@/utilities/emit/domain/event'
 import type {
   BankStatementImportedEvent,
   BankStatementTransaction,
-} from '@/types/events'
+} from '@/utilities/types/events'
 
 interface BankStatementDocLike {
   id: string | number

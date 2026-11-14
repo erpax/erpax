@@ -32,7 +32,7 @@ import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenan
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { classifyTaxId } from '@/hooks/collections/parties/classifyTaxId'
 import { deriveCountryFromIban } from '@/hooks/collections/shared/deriveCountryFromIban'
-import { loadPresets, preset, type Preset } from '@/preset'
+import { loadPresets, preset, type Preset } from '@/utilities/preset'
 
 /** The sides a party can be on. A party may hold both. */
 export type PartyRole = 'customer' | 'vendor'

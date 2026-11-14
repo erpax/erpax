@@ -10,7 +10,7 @@ import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { validateNotLocked } from '@/utility'
+import { validateNotLocked } from '@/utilities/utility'
 
 /**
  * Budget Planning — period-budgets by department / cost-center.

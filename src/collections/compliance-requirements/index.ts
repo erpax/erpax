@@ -6,7 +6,7 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  */
 import type { CollectionConfig } from 'payload'
-import { authenticated } from '@/authenticated'
+import { authenticated } from '@/utilities/authenticated'
 import { superAdminOnly } from '@/access/collections/shared/multiTenantRead'
 
 export const ComplianceRequirements: CollectionConfig = {

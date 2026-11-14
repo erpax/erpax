@@ -19,7 +19,7 @@
 
 import { test } from '@playwright/test'
 import { safeCaptureRoute } from '../../helpers/evidence'
-import { getSeedsByCategory } from '@/testing'
+import { getSeedsByCategory } from '@/utilities/testing'
 
 import '@/plugins/accounting/seeds'
 

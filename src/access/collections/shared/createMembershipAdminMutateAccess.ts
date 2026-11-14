@@ -1,10 +1,10 @@
 import type { Access } from 'payload'
-import type { Iso27002ControlId } from '@/iso/27002'
+import type { Iso27002ControlId } from '@/utilities/iso/27002'
 
 import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
-import type { Tenant } from '@/types'
-import { extractID } from '@/extract/id'
-import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
+import type { Tenant } from '@/utilities/types'
+import { extractID } from '@/utilities/extract/id'
+import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
 
 /**
  * Mutations (create / update / delete) for tenant-scoped CMS collections —

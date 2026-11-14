@@ -1,5 +1,5 @@
 import type { Field } from 'payload'
-import { DEFAULT_CURRENCY as CANON_DEFAULT_CURRENCY, isIso4217Currency } from '@/config/regional/defaults'
+import { DEFAULT_CURRENCY as CANON_DEFAULT_CURRENCY, isIso4217Currency } from '@/utilities/config/regional/defaults'
 
 /**
  * Currency select field. Pass a custom `name` for FX-pair fields like

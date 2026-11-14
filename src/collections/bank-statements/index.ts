@@ -5,7 +5,7 @@ import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCr
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
 import { currencyField } from '@/fields/text/currencyField'
-import { validateNotLocked } from '@/utility';
+import { validateNotLocked } from '@/utilities/utility';
 import { bankStatementImportedHook } from '@/hooks/collections/shared/bankStatementImportedHook';
 
 /**
@@ -131,4 +131,4 @@ const BankStatements: CollectionConfig = {
 
 export default BankStatements;
 
-export * from '@/gl/accounts/bank/statements/hooks'
+export * from '@/utilities/gl/accounts/bank/statements/hooks'

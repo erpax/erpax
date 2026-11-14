@@ -6,7 +6,7 @@ import { slugField } from 'payload'
 import { localeRecord } from '@/i18n'
 
 import { ensureUniqueSlugWithinTenant } from '@/hooks/fields/shared/ensureUniqueSlugWithinTenant'
-import { categoriesBeforeChange } from '@/categories/hooks'
+import { categoriesBeforeChange } from '@/utilities/categories/hooks'
 
 /**
  * Categories — taxonomy for posts/products with per-tenant slug uniqueness.

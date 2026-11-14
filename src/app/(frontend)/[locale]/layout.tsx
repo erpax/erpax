@@ -18,12 +18,12 @@ import { notFound } from 'next/navigation'
 import { headers } from 'next/headers'
 import React from 'react'
 
-import { EcommerceClientProvider } from '@/ecommerce/client/provider'
-import { IntlChrome } from '@/intl/chrome'
+import { EcommerceClientProvider } from '@/components/ecommerce/client/provider'
+import { IntlChrome } from '@/components/intl/chrome'
 import { routing } from '@/i18n/routing'
 import localization from '@/i18n/localization'
-import { resolvePublicSiteUrlFromHeaders as resolvePublicSiteUrl } from '@/rfc/3986'
-import { getTenantFromRequest } from '@/get/tenant/from/request'
+import { resolvePublicSiteUrlFromHeaders as resolvePublicSiteUrl } from '@/utilities/rfc/3986'
+import { getTenantFromRequest } from '@/utilities/get/tenant/from/request'
 
 type Args = {
   children: React.ReactNode

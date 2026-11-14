@@ -36,12 +36,12 @@
  */
 
 import type { CollectionBeforeChangeHook, CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { notesField } from '@/fields/textarea/notesField'
 import { currencyField } from '@/fields/text/currencyField'
-import { horoStateField, validateHoroStates, type HoroState } from '@/horo'
+import { horoStateField, validateHoroStates, type HoroState } from '@/utilities/horo'
 
 /**
  * The lot lifecycle, pinned to the seven-position horo ring `[1,2,4,8,7,5,9]`.

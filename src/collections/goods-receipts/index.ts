@@ -35,16 +35,16 @@
  * @see src/plugins/accounting/collections/PurchaseOrders.ts
  */
 
-import { deriveMovements } from '@/items/inventory/movements/source'
+import { deriveMovements } from '@/utilities/items/inventory/movements/source'
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { emitGrPosted } from '@/chain/event/emitter'
+import { emitGrPosted } from '@/utilities/chain/event/emitter'
 
 const GoodsReceipts: CollectionConfig = {
   slug: 'goods-receipts',

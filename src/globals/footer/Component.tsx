@@ -1,12 +1,12 @@
 import type { SupportedLocale } from '@/i18n/localization'
 
-import { getCachedGlobal } from '@/rfc/9110'
+import { getCachedGlobal } from '@/utilities/rfc/9110'
 import { Link } from '@/i18n/routing'
 import React from 'react'
 
-import { ThemeSelector } from '@/providers/theme/theme/selector'
-import { CMSLink } from '@/link/component'
-import { Logo } from '@/logo'
+import { ThemeSelector } from '@/components/providers/theme/theme/selector'
+import { CMSLink } from '@/components/link/component'
+import { Logo } from '@/components/logo'
 
 export async function Footer({ locale }: { locale: SupportedLocale }) {
   const footerData = await getCachedGlobal('footer', 1, locale)()

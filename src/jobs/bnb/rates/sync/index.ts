@@ -1,4 +1,4 @@
-import { exactMax } from '@/algebra'
+import { exactMax } from '@/utilities/algebra'
 /**
  * BNB rate sync — nightly (or on-demand) job that pulls the БНБ daily
  * fixing for every reporting-currency pair the BG-resident tenants need
@@ -25,8 +25,8 @@ import { exactMax } from '@/algebra'
  */
 
 import type { Payload } from 'payload'
-import { lookupEuFallbackRate } from '@/country/api/client'
-import { persistApiAuditEvent } from '@/persist/api/audit/event'
+import { lookupEuFallbackRate } from '@/utilities/country/api/client'
+import { persistApiAuditEvent } from '@/utilities/persist/api/audit/event'
 
 /**
  * Default currency set the job pulls when a tenant has no explicit

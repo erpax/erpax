@@ -2,7 +2,7 @@ import type { CollectionConfig } from 'payload'
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
-import { createAccountingCollection } from '@/factory';
+import { createAccountingCollection } from '@/utilities/factory';
 import { createGLAccountFields } from '@/fields/relationship/createGLAccountFields'
 import { notesField } from '@/fields/textarea/notesField'
 import { statusField } from '@/fields/select/statusField'
@@ -15,7 +15,7 @@ import {
   calculateDepreciableBase,
   calculateStraightLineDepreciation,
   calculateBookValue,
-} from '@/utility';
+} from '@/utilities/utility';
 
 /**
  * Fixed Assets — capitalized PP&E with depreciation and book-value tracking.

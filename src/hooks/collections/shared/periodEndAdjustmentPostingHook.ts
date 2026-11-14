@@ -38,8 +38,8 @@
 
 import type { CollectionAfterChangeHook } from 'payload'
 import { flagged } from '@/hooks/context'
-import { postingService, type JournalEntryLine } from '@/journal/entry/service'
-import { idOf } from '@/relation'
+import { postingService, type JournalEntryLine } from '@/utilities/journal/entry/service'
+import { idOf } from '@/utilities/relation'
 
 type AdjustmentDoc = Record<string, unknown> & {
   id: string | number

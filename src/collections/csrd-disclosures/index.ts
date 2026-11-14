@@ -28,7 +28,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
@@ -40,7 +40,7 @@ import {
   ESRS_TOPIC_OPTIONS,
   ESRS_MATERIALITY_OPTIONS,
   ESRS_ASSURANCE_OPTIONS,
-} from '@/eu/csrd/esr'
+} from '@/utilities/eu/csrd/esr'
 
 const CsrdDisclosures: CollectionConfig = {
   slug: 'csrd-disclosures',

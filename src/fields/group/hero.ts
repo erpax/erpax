@@ -1,6 +1,6 @@
 import type { Field } from 'payload'
 import { FixedToolbarFeature, HeadingFeature, InlineToolbarFeature, lexicalEditor } from '@payloadcms/richtext-lexical'
-import { linkGroup } from '@/link/group'
+import { linkGroup } from '@/components/link/group'
 import { localeRecord } from '@/i18n'
 
 export const hero: Field = {

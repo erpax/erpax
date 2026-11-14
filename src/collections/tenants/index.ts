@@ -1,12 +1,12 @@
 import type { CollectionConfig } from 'payload'
 
-import { authenticated } from '@/authenticated'
+import { authenticated } from '@/utilities/authenticated'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { superAdminOnly, fieldAccess } from '@/access/collections/shared/superAdminOnly'
 import { localeRecord } from '@/i18n'
-import { seedPresets } from '@/preset'
-import { updateAndDeleteAccess } from '@/tenants/access'
-import { normalizeTenantDomain, normalizeTenantSlug } from '@/tenants/hooks'
+import { seedPresets } from '@/utilities/preset'
+import { updateAndDeleteAccess } from '@/utilities/tenants/access'
+import { normalizeTenantDomain, normalizeTenantSlug } from '@/utilities/tenants/hooks'
 
 const superAdminSecretsAccess = {
   read: fieldAccess,
@@ -340,4 +340,4 @@ export {
   TENANT_PARTY_SCOPED,
   tenantCollectionsConfig,
   tenantScopedSlugs,
-} from '@/tenants/scope'
+} from '@/utilities/tenants/scope'

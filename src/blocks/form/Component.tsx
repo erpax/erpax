@@ -6,11 +6,11 @@ import { useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import React, { useCallback, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import RichText from '@/rich/text'
-import { Alert, AlertDescription, Button, Form } from '@/ui'
+import RichText from '@/components/rich/text'
+import { Alert, AlertDescription, Button, Form } from '@/components/ui'
 import type { DefaultTypedEditorState } from '@payloadcms/richtext-lexical'
 
-import { getPayloadSdk } from '@/payload/sdk'
+import { getPayloadSdk } from '@/components/payload/sdk'
 
 import { fields } from './fields'
 

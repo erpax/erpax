@@ -30,14 +30,14 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
-import { emitLeaseRemeasured } from '@/chain/event/emitter'
+import { emitLeaseRemeasured } from '@/utilities/chain/event/emitter'
 
 const LeaseModifications: CollectionConfig = {
   slug: 'lease-modifications',

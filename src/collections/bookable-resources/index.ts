@@ -23,7 +23,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
@@ -78,13 +78,13 @@ const BookableResources: CollectionConfig = {
     { name: 'space', type: 'relationship', relationTo: 'spaces',
       admin: {
         description: 'For room-like resources, the FM space this resource lives in.',
-        components: { Field: '@/admin/ui/fields/MatrixBondField' },
+        components: { Field: '@/components/admin/ui/fields/MatrixBondField' },
         custom: { atomPath: 'bookable/resources' },
       } },
     { name: 'fixedAsset', type: 'relationship', relationTo: 'fixed-assets',
       admin: {
         description: 'For tangible bookables (vehicle / equipment / machinery), the underlying IAS-16 asset row.',
-        components: { Field: '@/admin/ui/fields/MatrixBondField' },
+        components: { Field: '@/components/admin/ui/fields/MatrixBondField' },
         custom: { atomPath: 'bookable/resources' },
       } },
     { name: 'capacity', type: 'number', defaultValue: 1, min: 0,

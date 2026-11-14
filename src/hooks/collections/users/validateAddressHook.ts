@@ -1,7 +1,7 @@
 /**
  * Address-validation Payload hook factory — drop-in `beforeValidate` that
  * enforces the country-specific address format declared in
- * `@/config/address/formats`.
+ * `@/utilities/config/address/formats`.
  *
  * **International-first resolution order** (most-specific wins):
  *   1. `data.country` on the address document itself
@@ -30,9 +30,9 @@
  */
 
 import type { CollectionBeforeValidateHook } from 'payload'
-import { readNested } from '@/field/nested'
-import { type AddressLike, validateAddress } from '@/address/validation'
-import { getTenantDefaultsFromReq } from '@/tenant/context'
+import { readNested } from '@/utilities/field/nested'
+import { type AddressLike, validateAddress } from '@/utilities/address/validation'
+import { getTenantDefaultsFromReq } from '@/utilities/tenant/context'
 
 export interface ValidateAddressOptions {
   /**

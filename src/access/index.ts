@@ -27,10 +27,10 @@ import {
   capabilityOfRole,
   roleForOperation,
   type CrudOp,
-} from '@/cross'
-import { tenantMatchVerdict } from '@/team/comms'
-import { permits, type ToolGrant, type ToolAction } from '@/sandbox'
-import type { UserRole } from '@/types/auth'
+} from '@/utilities/cross'
+import { tenantMatchVerdict } from '@/utilities/team/comms'
+import { permits, type ToolGrant, type ToolAction } from '@/utilities/sandbox'
+import type { UserRole } from '@/utilities/types/auth'
 
 /** Access surface tier — maps to enforcement layer in the stack. */
 export type AccessLevel =
@@ -230,8 +230,8 @@ export const computedAccess = {
   docsReadVerdict,
 } as const
 
-export { tenantMatchVerdict } from '@/team/comms'
-export type { CrudOp } from '@/cross'
+export { tenantMatchVerdict } from '@/utilities/team/comms'
+export type { CrudOp } from '@/utilities/cross'
 
 /*
  * NOT re-exported here: this atom is a published package face, and a barrel that

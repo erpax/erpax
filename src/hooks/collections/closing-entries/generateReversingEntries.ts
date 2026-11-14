@@ -24,7 +24,7 @@
 
 import type { CollectionAfterChangeHook, RequiredDataFromCollectionSlug } from 'payload'
 import { flagged } from '@/hooks/context'
-import { ClosingPeriodChecker } from '@/closing/period/checker'
+import { ClosingPeriodChecker } from '@/utilities/closing/period/checker'
 
 interface ClosingEntryItem {
   journalEntryId?: string | { id: string }

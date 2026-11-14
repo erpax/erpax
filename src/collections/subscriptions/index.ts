@@ -3,8 +3,8 @@ import { superAdminOnly } from '@/access/collections/shared/superAdminOnly'
 import {
   encryptSubscriptionData,
   decryptSubscriptionData,
-} from '@/subscription/plans/subscriptions/hooks'
-import { emitSubscriptionLifecycleEvents } from '@/subscription/plans/subscriptions/hooks'
+} from '@/utilities/subscription/plans/subscriptions/hooks'
+import { emitSubscriptionLifecycleEvents } from '@/utilities/subscription/plans/subscriptions/hooks'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 
 /**

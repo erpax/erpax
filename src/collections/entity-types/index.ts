@@ -1,5 +1,5 @@
 import type { CollectionConfig } from 'payload'
-import { authenticated } from '@/authenticated'
+import { authenticated } from '@/utilities/authenticated'
 import { superAdminOnly } from '@/access/collections/shared/multiTenantRead'
 
 /**

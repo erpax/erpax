@@ -5,13 +5,13 @@ import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 import { competencyLineField } from '@/fields/array/competencyLineField'
 import { localeRecord } from '@/i18n'
 
-import { createAccess } from '@/users/access'
-import { readAccess } from '@/users/access'
-import { updateAndDeleteAccess } from '@/users/access'
-import { externalUsersLogin } from '@/users/endpoints'
-import { ensureUniqueUsername } from '@/users/hooks'
-import { firstUserSuperAdmin } from '@/users/hooks'
-import { setCookieBasedOnDomain } from '@/users/hooks'
+import { createAccess } from '@/utilities/users/access'
+import { readAccess } from '@/utilities/users/access'
+import { updateAndDeleteAccess } from '@/utilities/users/access'
+import { externalUsersLogin } from '@/utilities/users/endpoints'
+import { ensureUniqueUsername } from '@/utilities/users/hooks'
+import { firstUserSuperAdmin } from '@/utilities/users/hooks'
+import { setCookieBasedOnDomain } from '@/utilities/users/hooks'
 
 const defaultTenantArrayField = tenantsArrayField({
   tenantsArrayFieldName: 'tenants',

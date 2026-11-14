@@ -50,8 +50,8 @@ import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { validateNotLocked } from '@/utility'
-import { preset, type Preset } from '@/preset'
+import { validateNotLocked } from '@/utilities/utility'
+import { preset, type Preset } from '@/utilities/preset'
 
 /** One cash payment back to the customer against a memo. */
 export interface RefundLine {

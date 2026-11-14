@@ -6,7 +6,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest'
  * The emitter is mocked: this proves the TRIGGER and the identity, not the transport.
  */
 const emit = vi.fn()
-vi.mock('@/event/emitter/service', () => ({ eventEmitter: { emit: (e: unknown) => emit(e) } }))
+vi.mock('@/utilities/event/emitter/service', () => ({ eventEmitter: { emit: (e: unknown) => emit(e) } }))
 
 const { emitSaleClosedHook } = await import('@/hooks/collections/sale/emitSaleClosedHook')
 

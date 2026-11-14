@@ -8,7 +8,7 @@
 import { describe, it, expect } from 'vitest'
 import type { CollectionBeforeChangeHook } from 'payload'
 import { derivePackState, balanceWeight, PACK_RING } from '@/collections/packs'
-import { HORO_DIGITS } from '@/horo'
+import { HORO_DIGITS } from '@/utilities/horo'
 
 type HookArgs = Parameters<CollectionBeforeChangeHook>[0]
 const weigh = (data: Record<string, unknown>) => {

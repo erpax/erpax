@@ -25,14 +25,14 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { referenceField } from '@/fields/text/referenceField'
 import { statusField } from '@/fields/select/statusField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { notesField } from '@/fields/textarea/notesField'
 import { unitOfMeasureField } from '@/fields/text/unitOfMeasureField'
-import { emitOpRunCompleted } from '@/chain/event/emitter'
+import { emitOpRunCompleted } from '@/utilities/chain/event/emitter'
 
 const OperationRuns: CollectionConfig = {
   slug: 'operation-runs',

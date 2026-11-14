@@ -20,8 +20,8 @@
  */
 
 import type { CollectionBeforeChangeHook } from 'payload'
-import { formatUnp, isValidUnp } from '@/naredba/n/18'
-import { requiresFiscalization } from '@/naredba/n/18'
+import { formatUnp, isValidUnp } from '@/utilities/naredba/n/18'
+import { requiresFiscalization } from '@/utilities/naredba/n/18'
 
 interface SaleShape {
   unp?: unknown

@@ -1,6 +1,6 @@
 import type { CollectionAfterChangeHook, CollectionAfterDeleteHook } from 'payload'
 
-import type { Post } from '@/types'
+import type { Post } from '@/utilities/types'
 
 /**
  * Posts cache-revalidation hook — fires after publish/unpublish to bust ISR.

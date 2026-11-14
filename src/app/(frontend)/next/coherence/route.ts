@@ -33,7 +33,7 @@
  * @see src/coherence (the edge-safe analyzer) — src/app/README.md
  */
 
-import { extractPulse, type Pulse } from '@/coherence'
+import { extractPulse, type Pulse } from '@/utilities/coherence'
 
 export const POST = async (request: Request): Promise<Response> => {
   let body: { trace?: unknown; fps?: unknown }

@@ -12,7 +12,7 @@
 
 import type { GlobalConfig } from 'payload'
 
-import { link } from '@/link/field'
+import { link } from '@/components/link/field'
 import { localeRecord } from '@/i18n'
 import { revalidateHeader } from '@/hooks/globals/header/revalidateHeader'
 

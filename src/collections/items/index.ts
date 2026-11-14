@@ -1,10 +1,10 @@
 import { CollectionConfig } from 'payload'
 import { adminOnly, multiTenantRead } from '@/access/collections/shared/multiTenantRead'
-import { authenticated } from '@/authenticated'
+import { authenticated } from '@/utilities/authenticated'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
-import { itemsBeforeValidate } from '@/items/hooks'
-import { itemsAfterChange } from '@/items/hooks'
+import { itemsBeforeValidate } from '@/utilities/items/hooks'
+import { itemsAfterChange } from '@/utilities/items/hooks'
 
 /**
  * Items — sellable / purchasable inventory rows with GL posting. Also the unified

@@ -1,4 +1,4 @@
-import RichText from '@/rich/text'
+import RichText from '@/components/rich/text'
 import React from 'react'
 
 import { Width } from '@/blocks/form/width'

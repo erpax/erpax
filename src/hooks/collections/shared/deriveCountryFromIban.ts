@@ -12,8 +12,8 @@
  */
 
 import type { CollectionBeforeChangeHook } from 'payload'
-import { extractIbanCountry } from '@/iban'
-import { readNested, writeNested } from '@/field/nested'
+import { extractIbanCountry } from '@/utilities/iban'
+import { readNested, writeNested } from '@/utilities/field/nested'
 
 export function deriveCountryFromIban(opts?: {
   ibanField?: string

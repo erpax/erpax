@@ -40,7 +40,7 @@
 import { v4 as uuid } from 'uuid'
 import type { CollectionAfterChangeHook } from 'payload'
 import { flagged } from '@/hooks/context'
-import { idOf } from '@/relation'
+import { idOf } from '@/utilities/relation'
 
 interface PayrollLine {
   netPay?: number

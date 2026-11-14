@@ -29,7 +29,7 @@
 
 import type { CollectionAfterChangeHook } from 'payload'
 import { v4 as uuid } from 'uuid'
-import type { AuditEntry, AuditOperation } from '@/iso/19011'
+import type { AuditEntry, AuditOperation } from '@/utilities/iso/19011'
 
 /**
  * SHA-256 hex digest — Slice QQQQ Merkle chain.

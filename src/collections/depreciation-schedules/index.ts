@@ -24,7 +24,7 @@ import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { validateNotLocked } from '@/utility'
+import { validateNotLocked } from '@/utilities/utility'
 import { depreciationSchedulePostingHook } from '@/hooks/collections/shared/depreciationSchedulePostingHook'
 
 const DepreciationSchedules: CollectionConfig = {
@@ -89,4 +89,4 @@ const DepreciationSchedules: CollectionConfig = {
 
 export default DepreciationSchedules
 
-export * from '@/fixed/assets/depreciation/schedules/hooks'
+export * from '@/utilities/fixed/assets/depreciation/schedules/hooks'

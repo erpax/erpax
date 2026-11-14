@@ -58,8 +58,8 @@ import { flagged } from '@/hooks/context'
 import {
   postingService,
   type JournalEntryLine,
-} from '@/journal/entry/service'
-import { idOf } from '@/relation'
+} from '@/utilities/journal/entry/service'
+import { idOf } from '@/utilities/relation'
 
 // Canonical GL accounts for the payroll JE. Mirrors the gl-posting
 // service's GL_ACCOUNTS constants — kept inline here so this hook

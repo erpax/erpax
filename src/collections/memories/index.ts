@@ -35,7 +35,7 @@
  * @see ../../services/agents/mcp/dry-clean.ts strategyDecisions
  * @see ../factories/collection-factory.ts
  */
-import { createAccountingCollection } from '@/factory'
+import { createAccountingCollection } from '@/utilities/factory'
 import { referenceField } from '@/fields/text/referenceField'
 
 export default createAccountingCollection({

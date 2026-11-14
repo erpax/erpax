@@ -41,12 +41,12 @@
  */
 
 import type { CollectionBeforeValidateHook, CollectionConfig } from 'payload'
-import { createAccountingCollection } from '@/factory'
+import { createAccountingCollection } from '@/utilities/factory'
 import { referenceField } from '@/fields/text/referenceField'
 import { unitOfMeasureField } from '@/fields/text/unitOfMeasureField'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
-import { preset, type Preset } from '@/preset'
+import { preset, type Preset } from '@/utilities/preset'
 
 /** The stages in which the document is still a quote: offered, not yet an order. */
 export const quoteStages = (): string[] => ['pending_approval', 'sent', 'accepted', 'rejected', 'expired']

@@ -32,8 +32,8 @@
  */
 
 import { CollectionBeforeChangeHook } from 'payload'
-import { chainLeaf } from '@/merge'
-import { FiscalPeriodResolver, type FiscalPeriodConfig } from '@/fiscal/period/resolver'
+import { chainLeaf } from '@/utilities/merge'
+import { FiscalPeriodResolver, type FiscalPeriodConfig } from '@/utilities/fiscal/period/resolver'
 import { getUser } from '@/access/collections/shared/multiTenantRead'
 
 interface FiscalPeriodsData {

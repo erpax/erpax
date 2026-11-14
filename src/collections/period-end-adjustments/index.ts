@@ -6,7 +6,7 @@ import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCr
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties';
-import { validateNotLocked } from '@/utility';
+import { validateNotLocked } from '@/utilities/utility';
 import { periodEndAdjustmentPostingHook } from '@/hooks/collections/shared/periodEndAdjustmentPostingHook';
 
 /**
@@ -103,4 +103,4 @@ const PeriodEndAdjustments: CollectionConfig = {
 
 export default PeriodEndAdjustments;
 
-export * from '@/gl/accounts/period/end/adjustments/hooks'
+export * from '@/utilities/gl/accounts/period/end/adjustments/hooks'

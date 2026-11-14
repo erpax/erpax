@@ -16,14 +16,14 @@ import { documentMarkdown, summaryOf } from '@/seed/content'
 import { importExportPlugin } from '@payloadcms/plugin-import-export'
 import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs'
 import { r2Storage } from '@payloadcms/storage-r2'
-import { uuidPlugin } from '@/uuid'
+import { uuidPlugin } from '@/utilities/uuid'
 import { taggablePlugin } from '@/plugins/taggable'
 import { uuidNamesPlugin } from '@/plugins/naming'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
 import { mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
 import { versionsPlugin } from '@/plugins/versions'
-import { trelloClientFromEnv } from '@/trello'
-import { trelloPlugin, TRELLO_SYNC } from '@/trello/plugin'
+import { trelloClientFromEnv } from '@/utilities/trello'
+import { trelloPlugin, TRELLO_SYNC } from '@/utilities/trello/plugin'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
@@ -64,19 +64,19 @@ import { tenantCollectionsConfig, tenantScopedSlugs } from '@/collections/tenant
 import type { CollectionSlug, CollectionConfig } from 'payload'
 import { Footer } from '@/globals/footer/config'
 import { Header } from '@/globals/header/config'
-import { beforeSyncWithSearch } from '@/search'
+import { beforeSyncWithSearch } from '@/components/search'
 import { searchDocField } from '@/fields/group/searchDocField'
 import { searchFields } from '@/fields/textarea/searchFields'
-import { defaultLexical } from '@/default/lexical'
-import { createEcommercePlugin } from '@/ecommerce/plugin'
+import { defaultLexical } from '@/utilities/default/lexical'
+import { createEcommercePlugin } from '@/components/ecommerce/plugin'
 import {
   deriveSecretFromPayloadSecret,
   internalSecretPurpose,
-} from '@/nist/sp/800/108'
-import { resolvePayloadSecret } from '@/secret'
-import { getServerSideURL } from '@/rfc/3986'
-import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
-import { tenantAwareResendEmailAdapter } from '@/email/resend/adapter'
+} from '@/utilities/nist/sp/800/108'
+import { resolvePayloadSecret } from '@/utilities/secret'
+import { getServerSideURL } from '@/utilities/rfc/3986'
+import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
+import { tenantAwareResendEmailAdapter } from '@/utilities/email/resend/adapter'
 import localization from '@/i18n/localization'
 import {
   defaultLocale,
@@ -86,9 +86,9 @@ import {
   type SupportedLocale,
 } from '@/i18n'
 
-import { adminGroupOf } from '@/navigation'
-import { COLLECTION_DIAMOND_KEY, foldCollectionLifecycle } from '@/factory/collection'
-import type { Config } from '@/types'
+import { adminGroupOf } from '@/utilities/navigation'
+import { COLLECTION_DIAMOND_KEY, foldCollectionLifecycle } from '@/utilities/factory/collection'
+import type { Config } from '@/utilities/types'
 
 /** Payload admin.group — first path segment of the collection atom (computed, never hand-set). */
 function collectionAdminGroup(c: CollectionConfig): string {
@@ -219,8 +219,8 @@ export default buildConfig({
   email: tenantAwareResendEmailAdapter,
   admin: {
     components: {
-      beforeLogin: ['@/before/login'],
-      beforeDashboard: ['@/before/dashboard'],
+      beforeLogin: ['@/components/before/login'],
+      beforeDashboard: ['@/components/before/dashboard'],
     },
     importMap: {
       baseDir: path.resolve(dirname),
@@ -254,28 +254,28 @@ export default buildConfig({
     // Slice PPPP — declarative event → notification fan-out.
     // Idempotent; safe on hot reload.
     try {
-      const { wireNotificationSubscriber } = await import('@/notification/subscriber')
+      const { wireNotificationSubscriber } = await import('@/utilities/notification/subscriber')
       wireNotificationSubscriber(payload)
     } catch {
       // Never refuse boot on notification wiring failure.
     }
     // Issue the fiscal receipt (касов бон) on sale:closed (Наредба Н-18).
     try {
-      const { wireReceiptSubscriber } = await import('@/sale/receipt-subscriber')
+      const { wireReceiptSubscriber } = await import('@/utilities/sale/receipt-subscriber')
       wireReceiptSubscriber(payload)
     } catch {
       // Never refuse boot on receipt-subscriber wiring failure.
     }
     // Fiscalize a paid ecommerce order into a closed sale on order:activated.
     try {
-      const { wireOrderFiscalizationSubscriber } = await import('@/sale/order-fiscalization')
+      const { wireOrderFiscalizationSubscriber } = await import('@/utilities/sale/order-fiscalization')
       wireOrderFiscalizationSubscriber(payload)
     } catch {
       // Never refuse boot on order-fiscalization wiring failure.
     }
     // Fiscalize each card-charged subscription period into a касов бон.
     try {
-      const { wireSubscriptionFiscalizationSubscriber } = await import('@/sale/subscription-fiscalization')
+      const { wireSubscriptionFiscalizationSubscriber } = await import('@/utilities/sale/subscription-fiscalization')
       wireSubscriptionFiscalizationSubscriber(payload)
     } catch {
       // Never refuse boot on subscription-fiscalization wiring failure.
@@ -471,7 +471,7 @@ export default buildConfig({
     // external surface entered as an atom. INERT by default: TRELLO_SYNC is empty, so no field is
     // injected and no hook is wired. Adding a mapping is a schema change and needs a migration in
     // the same diff; without TRELLO_API_KEY + TRELLO_TOKEN there is no client, so the plugin stays
-    // field-only rather than half-wired. See `@/trello` and `@/trello/plugin`.
+    // field-only rather than half-wired. See `@/utilities/trello` and `@/utilities/trello/plugin`.
     trelloPlugin({
       collections: TRELLO_SYNC,
       client: trelloClientFromEnv(),

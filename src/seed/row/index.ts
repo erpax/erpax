@@ -28,7 +28,7 @@
  * @invariant a row's uuid folds its atom uuid, so re-parenting changes the address
  * @see ./SKILL.md -- ../index.ts -- ../../merge -- ../../constitution
  */
-import { canonical, merge, BOTTOM } from '@/merge'
+import { canonical, merge, BOTTOM } from '@/utilities/merge'
 
 /** One seed row: the content, its address, and the atom it was grown from. */
 export interface SeedRow<T = unknown> {

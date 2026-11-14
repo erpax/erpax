@@ -10,7 +10,7 @@
 import React from 'react'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 
-import { Button } from '@/ui'
+import { Button } from '@/components/ui'
 import { Link } from '@/i18n/routing'
 import { defaultLocale } from '@/i18n'
 

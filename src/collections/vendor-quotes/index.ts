@@ -19,7 +19,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
@@ -27,8 +27,8 @@ import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
 import { taxonomySelect } from '@/fields/select/taxonomySelect'
-import { INCOTERM_OPTIONS } from '@/incoterms/2020'
-import { emitRfqReceived, emitRfqAwarded } from '@/chain/event/emitter'
+import { INCOTERM_OPTIONS } from '@/utilities/incoterms/2020'
+import { emitRfqReceived, emitRfqAwarded } from '@/utilities/chain/event/emitter'
 
 const VendorQuotes: CollectionConfig = {
   slug: 'vendor-quotes',

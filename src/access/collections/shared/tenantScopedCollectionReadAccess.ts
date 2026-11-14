@@ -1,8 +1,8 @@
 import type { Access } from 'payload'
-import type { Iso27002ControlId } from '@/iso/27002'
+import type { Iso27002ControlId } from '@/utilities/iso/27002'
 
-import { getAllowPublicReadTenantIds } from '@/allow/public/read/tenant'
-import { wherePublishedAnd } from '@/scope'
+import { getAllowPublicReadTenantIds } from '@/utilities/allow/public/read/tenant'
+import { wherePublishedAnd } from '@/utilities/scope'
 
 /**
  * Tenant-scoped read access predicates — categories, media, etc.

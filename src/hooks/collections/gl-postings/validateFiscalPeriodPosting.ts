@@ -49,7 +49,7 @@
 
 import { CollectionBeforeValidateHook } from 'payload'
 import { getUserContext } from '@/access/collections/shared/multiTenantRead'
-import { chainLeaf } from '@/merge'
+import { chainLeaf } from '@/utilities/merge'
 
 /** The close state of a period — the SOX §404 control: whoever closed it decides what may still post. */
 interface PeriodLockDoc {

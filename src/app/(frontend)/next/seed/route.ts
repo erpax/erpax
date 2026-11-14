@@ -12,7 +12,7 @@
 import { createLocalReq, getPayload } from 'payload'
 import { seed } from '@/seed'
 import config from '@payload-config'
-import { apiErrorResponse, ERR } from '@/error'
+import { apiErrorResponse, ERR } from '@/utilities/error'
 import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 import { headers } from 'next/headers'
 

@@ -1,4 +1,4 @@
-import { exactMax, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactRound, exactTrunc } from '@/utilities/algebra'
 /**
  * Workshifts — the per-actor-day labour aggregate: the efficiency + wage AUTHORITY.
  *
@@ -47,7 +47,7 @@ import { createMembershipAdminMutateAccess } from '@/access/collections/shared/c
 import { tenantScopedCollectionReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
 import { referenceField } from '@/fields/text/referenceField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { horoStateField, validateHoroStates, type HoroState } from '@/horo'
+import { horoStateField, validateHoroStates, type HoroState } from '@/utilities/horo'
 
 /**
  * The shift lifecycle, pinned to the seven-position horo ring `[1,2,4,8,7,5,9]`.

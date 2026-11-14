@@ -5,20 +5,20 @@ import { CollectionConfig } from 'payload'
 // was never called by anything — a second dead pointer replacing the first.
 // Aging is generateARAgingReport / generateAPAgingReport in @/accounting/reports.
 // COGS remains unbuilt: it is a gap, not a delegation.
-import { deriveInvoiceNumber, invoiceAccountingHook } from '@/invoices/hooks'
-import { validateNotLocked } from '@/utility'
+import { deriveInvoiceNumber, invoiceAccountingHook } from '@/utilities/invoices/hooks'
+import { validateNotLocked } from '@/utilities/utility'
 import { adminOnly, multiTenantRead } from '@/access/collections/shared/multiTenantRead'
-import { authenticated } from '@/authenticated'
+import { authenticated } from '@/utilities/authenticated'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
-import { VAT_CATEGORY_OPTIONS } from '@/un/cefact/5305'
-import { saleStatusOptions } from '@/field'
+import { VAT_CATEGORY_OPTIONS } from '@/utilities/un/cefact/5305'
+import { saleStatusOptions } from '@/utilities/field'
 import { fiscalQrField } from '@/fields/text/fiscalQrField'
 import { operatorCodeField } from '@/fields/text/operatorCodeField'
 import { fiscalDeviceNumberField } from '@/fields/text/fiscalDeviceNumberField'
 import { unpField } from '@/fields/text/unpField'
 import { fieldVisibleForWrite } from '@/access/fields/shared/fieldAccessFromComputed'
-import { isIso4217 } from '@/iso/4217'
+import { isIso4217 } from '@/utilities/iso/4217'
 
 /**
  * Invoices — header for AR/AP billing with GL posting + period locking.
@@ -30,7 +30,7 @@ import { isIso4217 } from '@/iso/4217'
  * seed-vs-schema invariant. `typeStatus.invoiceType + .invoiceTypeCode +
  * .confirmed` remain inside the canonical group.
  *
- * The canonical types live in `@/en/16931`:
+ * The canonical types live in `@/utilities/en/16931`:
  *   InvoiceHeader (BG-1 subset)  — invoice envelope
  *   DocumentTotals (BG-22)       — BT-106..BT-115 totals chain
  *   VatBreakdown   (BG-23)       — per-category × rate VAT detail

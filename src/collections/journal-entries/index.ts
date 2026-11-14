@@ -10,7 +10,7 @@ import { auditFields } from '@/fields/relationship/auditFields'
 import { statusField } from '@/fields/select/statusField'
 import { currencyField } from '@/fields/text/currencyField'
 import { glAccountField } from '@/fields/relationship/glAccountField'
-import { validateNotLocked } from '@/utility'
+import { validateNotLocked } from '@/utilities/utility'
 import { validateBalancedEntry } from '@/hooks/collections/shared/validateBalancedEntry'
 
 /**
@@ -168,4 +168,4 @@ const JournalEntries: CollectionConfig = {
 
 export default JournalEntries
 
-export * from '@/journal/entries/hooks'
+export * from '@/utilities/journal/entries/hooks'

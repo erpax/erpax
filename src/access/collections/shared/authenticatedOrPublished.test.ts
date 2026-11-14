@@ -12,7 +12,7 @@ import type { Access } from 'payload'
 
 import { describe, it, expect } from 'vitest'
 
-import { wherePublished } from '@/scope'
+import { wherePublished } from '@/utilities/scope'
 
 import { authenticatedOrPublished, controlsApplied } from '@/access/collections/shared/authenticatedOrPublished'
 

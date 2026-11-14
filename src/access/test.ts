@@ -11,7 +11,7 @@ import {
   docsReadVerdict,
   computedAccess,
 } from '@/access'
-import type { ToolGrant } from '@/sandbox'
+import type { ToolGrant } from '@/utilities/sandbox'
 
 const grant: ToolGrant = {
   toolUuid: 'tool-uuid',

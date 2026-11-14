@@ -32,8 +32,8 @@
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { leasePeriodPostingHook } from '@/hooks/collections/lease-period-postings/leasePeriodPostingHook'
-import { journalEntryService } from '@/journal/entry/service'
-import * as glResolver from '@/gl/account/resolver'
+import { journalEntryService } from '@/utilities/journal/entry/service'
+import * as glResolver from '@/utilities/gl/account/resolver'
 
 /** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */
 type HookArgs = Parameters<typeof leasePeriodPostingHook>[0]

@@ -1,10 +1,10 @@
 import type { CollectionBeforeChangeHook } from 'payload'
 
 import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
-import type { Tenant } from '@/types'
-import { extractID } from '@/extract/id'
-import { apiErr, ERR } from '@/error'
-import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
+import type { Tenant } from '@/utilities/types'
+import { extractID } from '@/utilities/extract/id'
+import { apiErr, ERR } from '@/utilities/error'
+import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
 
 /**
  * Block document assignment to a tenant the user doesn't belong to.

@@ -1,12 +1,12 @@
 'use client'
-import { useHeaderTheme } from '@/providers/header/theme'
+import { useHeaderTheme } from '@/components/providers/header/theme'
 import { Link } from '@/i18n/routing'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
-import type { Header } from '@/types'
+import type { Header } from '@/utilities/types'
 
-import { Logo } from '@/logo'
+import { Logo } from '@/components/logo'
 import { HeaderNav } from '@/globals/header/nav'
 
 interface HeaderClientProps {

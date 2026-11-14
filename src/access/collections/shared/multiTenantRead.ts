@@ -14,15 +14,15 @@
  */
 
 import type { Access, PayloadRequest, Where } from 'payload'
-import type { UserContext, UserRole } from '@/types/auth'
-import { ACCOUNTING_WRITE_ROLES } from '@/roles/registry'
-import { getUserContext } from '@/auth/context'
+import type { UserContext, UserRole } from '@/utilities/types/auth'
+import { ACCOUNTING_WRITE_ROLES } from '@/utilities/roles/registry'
+import { getUserContext } from '@/utilities/auth/context'
 
 export { superAdminOnly } from '@/access/collections/shared/superAdminOnly'
 // The identity readers live in the leaf `auth/context` so the subscription gate can read WHO is
 // acting without importing the predicates — the two-file loop [[rules]]/cycle named. The face is
 // unchanged: both names are still offered here ([[rules]]/face).
-export { getUser, getUserContext } from '@/auth/context'
+export { getUser, getUserContext } from '@/utilities/auth/context'
 
 /**
  * The acting identity's id as a string, for ANY auth type (app `User`
@@ -264,7 +264,7 @@ export function accountingCollectionAccess(
   // Lazy-import `featureGuard` to avoid a cycle (subscriptionGates imports
   // from payload-types which transitively pulls collection schemas).
   const guard = (op: Access): Access => async (args) => {
-    const { featureGuard } = await import('@/subscription/gate')
+    const { featureGuard } = await import('@/utilities/subscription/gate')
     const guarded = featureGuard(options.feature!)
     const ok = await guarded(args)
     if (ok === false) return false

@@ -7,7 +7,7 @@
 import type { FieldAccess } from 'payload'
 
 import { accessVerdict, actorFromRequest, type AccessActor } from '@/access'
-import type { CrudOp } from '@/cross'
+import type { CrudOp } from '@/utilities/cross'
 
 /** Build a Payload field `access` fn from computed cross CRUD verdict. */
 export function fieldAccessFromComputed(op: CrudOp = 'read'): FieldAccess {

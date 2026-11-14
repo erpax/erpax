@@ -11,7 +11,7 @@
 
 import type { Metadata } from 'next'
 
-import { PayloadRedirects } from '@/payload/redirect'
+import { PayloadRedirects } from '@/components/payload/redirect'
 import configPromise from '@payload-config'
 import type { Where } from 'payload'
 import { getPayload, type RequiredDataFromCollectionSlug, type TypedLocale } from 'payload'
@@ -19,14 +19,14 @@ import { draftMode, headers } from 'next/headers'
 import React, { cache } from 'react'
 import { homeStatic } from '@/seed'
 
-import { RenderBlocks } from '@/block'
-import { RenderHero } from '@/hero/render'
-import { generateMeta } from '@/generate/meta'
+import { RenderBlocks } from '@/components/block'
+import { RenderHero } from '@/components/hero/render'
+import { generateMeta } from '@/utilities/generate/meta'
 import PageClient from './page.client'
-import { LivePreviewListener } from '@/live/preview/listener'
+import { LivePreviewListener } from '@/components/live/preview/listener'
 import { routing } from '@/i18n/routing'
-import { resolvePublicSiteUrlFromHeaders as resolvePublicSiteUrl } from '@/rfc/3986'
-import { getTenantFromRequest } from '@/get/tenant/from/request'
+import { resolvePublicSiteUrlFromHeaders as resolvePublicSiteUrl } from '@/utilities/rfc/3986'
+import { getTenantFromRequest } from '@/utilities/get/tenant/from/request'
 
 const siteTenantSlug = process.env.NEXT_PUBLIC_SITE_TENANT_SLUG
 

@@ -16,7 +16,7 @@
 import config from '@payload-config'
 import { createLocalReq, getPayload } from 'payload'
 import Stripe from 'stripe'
-import { tenantIdFromRelation } from '@/tenant/remote/secret'
+import { tenantIdFromRelation } from '@/utilities/tenant/remote/secret'
 
 export async function POST(request: Request) {
   try {

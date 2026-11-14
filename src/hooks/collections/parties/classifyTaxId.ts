@@ -15,8 +15,8 @@
  */
 
 import type { CollectionBeforeChangeHook } from 'payload'
-import { classifyTaxId as classify } from '@/config/country/specifics'
-import { readNested, writeNested } from '@/field/nested'
+import { classifyTaxId as classify } from '@/utilities/config/country/specifics'
+import { readNested, writeNested } from '@/utilities/field/nested'
 
 export function classifyTaxId(opts?: {
   taxIdField?: string

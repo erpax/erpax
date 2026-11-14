@@ -18,11 +18,11 @@ import {
   tenantScopedCollectionReadAccess,
   tenantScopedPostsReadAccess,
 } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
-import { wherePublished } from '@/scope'
+import { wherePublished } from '@/utilities/scope'
 
 const getAllowPublicReadTenantIds = vi.fn()
 
-vi.mock('@/allow/public/read/tenant', () => ({
+vi.mock('@/utilities/allow/public/read/tenant', () => ({
   getAllowPublicReadTenantIds: (...args: unknown[]) => getAllowPublicReadTenantIds(...args),
   clearAllowPublicReadTenantIdsCache: vi.fn(),
 }))

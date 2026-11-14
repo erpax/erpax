@@ -11,6 +11,6 @@
 
 import type { Access } from 'payload'
 
-import { commerceHasStaffRole } from '@/ecommerce/access/utilities'
+import { commerceHasStaffRole } from '@/components/ecommerce/access/utilities'
 
 export const isAdmin: Access = ({ req }) => commerceHasStaffRole(req.user)

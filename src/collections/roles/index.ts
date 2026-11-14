@@ -1,9 +1,9 @@
 import type { CollectionConfig } from 'payload'
 
 import { superAdminOnly } from '@/access/collections/shared/superAdminOnly'
-import { scopeResourceCollections } from '@/nist/incits/359'
+import { scopeResourceCollections } from '@/utilities/nist/incits/359'
 
-import { validateRoleDefinition } from '@/roles/hooks'
+import { validateRoleDefinition } from '@/utilities/roles/hooks'
 
 /**
  * Role **definitions** (`name` + binding). Assign users via {@link ../UserRoles `user_roles`}.
@@ -119,4 +119,4 @@ export const Roles: CollectionConfig = {
   },
 }
 
-export * from '@/roles/registry'
+export * from '@/utilities/roles/registry'

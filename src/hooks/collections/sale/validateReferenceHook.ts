@@ -16,7 +16,7 @@
  */
 
 import type { CollectionBeforeChangeHook, PayloadRequest } from 'payload'
-import { relationId as relId } from '@/field/relation'
+import { relationId as relId } from '@/utilities/field/relation'
 
 /** Resolve a relationship value to its id (string, number, or `{ id }` object). */
 

@@ -18,7 +18,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 
 const Chat: CollectionConfig = {
@@ -91,5 +91,5 @@ const Chat: CollectionConfig = {
   timestamps: true,
 }
 
-export { Chat as ChatComponent } from '@/chats/Component'
+export { Chat as ChatComponent } from '@/components/chats/Component'
 export default Chat

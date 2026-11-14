@@ -29,7 +29,7 @@ const eslintConfig = defineConfig([
       'src/plugins/**/*.{ts,tsx}',
       'src/hooks/**/*.{ts,tsx}',
       'src/endpoints/**/*.{ts,tsx}',
-      'src/ecommerce/**/*.{ts,tsx}',
+      'src/components/ecommerce/**/*.{ts,tsx}',
       'src/utilities/permissions/**/*.{ts,tsx}',
       'src/utilities/scopes/**/*.{ts,tsx}',
     ],
@@ -52,17 +52,17 @@ const eslintConfig = defineConfig([
   {
     files: [
       // dissolved out of src/components/ to top-level single-word folders
-      'src/providers/**/*.{ts,tsx}',
+      'src/components/providers/**/*.{ts,tsx}',
       'src/globals/**/*.{ts,tsx}',
       // Data-loading effects (fetch on mount/deps; setLoading/setData is the canonical pattern).
-      'src/admin/**/*.{ts,tsx}',
+      'src/components/admin/**/*.{ts,tsx}',
       'src/analytics/**/*.{ts,tsx}',
-      'src/page/**/*.{ts,tsx}',
+      'src/components/page/**/*.{ts,tsx}',
       'src/widget/**/*.{ts,tsx}',
       'src/dashboard/**/*.{ts,tsx}',
-      'src/css/**/*.{ts,tsx}',
+      'src/components/css/**/*.{ts,tsx}',
       'src/hooks/**/*.{ts,tsx}',
-      'src/ui/**/*.{ts,tsx}',
+      'src/components/ui/**/*.{ts,tsx}',
     ],
     rules: {
       // Payload website template theme / header sync (React 19 compiler hook noise)
@@ -159,7 +159,7 @@ const eslintConfig = defineConfig([
     // seed/router/analytics at build time. Lint rules don't apply to generated output, and the
     // 70MB skill-index OOMs eslint. (Removing them entirely is a rewire-refactor, tracked separately.)
     'src/skill/router/skills.index.ts',
-    'src/translations/catalogue.ts',
+    'src/utilities/translations/catalogue.ts',
     'src/standards/seed.ts',
     // Payload `migrate:create` output — generated, never hand-edited (same class as payload-types /
     // payload-generated-schema above). The per-file `no-unused-vars: off` at the migrations block is

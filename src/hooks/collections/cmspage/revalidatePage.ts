@@ -1,6 +1,6 @@
 import type { CollectionAfterChangeHook, CollectionAfterDeleteHook } from 'payload'
 
-import type { Page } from '@/types'
+import type { Page } from '@/utilities/types'
 
 /**
  * Pages cache-revalidation hook — fires after publish/unpublish to bust ISR.

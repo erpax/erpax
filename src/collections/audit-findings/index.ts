@@ -10,7 +10,7 @@
  * @audit ISO-19011:2018 audit-trail
  */
 import type { CollectionConfig } from 'payload'
-import { authenticated } from '@/authenticated'
+import { authenticated } from '@/utilities/authenticated'
 import { adminOnly } from '@/access/collections/shared/multiTenantRead'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 
@@ -42,4 +42,4 @@ export const AuditFindings: CollectionConfig = {
   ],
 }
 
-export * from '@/internal/controls/audit/findings/court-docket'
+export * from '@/utilities/internal/controls/audit/findings/court-docket'

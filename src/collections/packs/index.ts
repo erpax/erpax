@@ -1,4 +1,4 @@
-import { exactRound } from '@/algebra'
+import { exactRound } from '@/utilities/algebra'
 /**
  * Packs — the shipping carton, evolved from 118,716 rows of the etrima `packs`
  * table (the 20-year dispatch ledger). One pack = one packed unit of dispatch
@@ -46,9 +46,9 @@ import type {
 
 import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
 import { tenantScopedCollectionReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { HORO_DIGITS, isHoroStep, type HoroStep } from '@/horo'
+import { HORO_DIGITS, isHoroStep, type HoroStep } from '@/utilities/horo'
 
 const toNum = (v: unknown): number => {
   const n = Number(v)

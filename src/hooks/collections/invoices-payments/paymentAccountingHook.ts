@@ -42,14 +42,14 @@
 
 import { v4 as uuid } from 'uuid'
 import type { CollectionAfterChangeHook, PayloadRequest, Where } from 'payload'
-import { eventEmitter } from '@/event/emitter/service'
-import { emitDomainEvent } from '@/emit/domain/event'
+import { eventEmitter } from '@/utilities/event/emitter/service'
+import { emitDomainEvent } from '@/utilities/emit/domain/event'
 import type {
   PaymentReceivedEvent,
   PaymentSentEvent,
   InvoiceCompletedEvent,
   BillPaidEvent,
-} from '@/types/events'
+} from '@/utilities/types/events'
 
 const inferDirection = (
   doc: Record<string, unknown>,

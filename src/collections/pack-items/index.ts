@@ -1,4 +1,4 @@
-import { exactMax, exactTrunc } from '@/algebra'
+import { exactMax, exactTrunc } from '@/utilities/algebra'
 /**
  * Pack Items — the pack line, evolved from 200,993 rows of the etrima `pack_items`
  * table. One line = the units of one produced variant (`lot_variant`) packed into one
@@ -38,7 +38,7 @@ import type { CollectionConfig, CollectionBeforeChangeHook, Field } from 'payloa
 
 import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
 import { tenantScopedCollectionReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
-import { standardCollectionHooks } from '@/standard/collection/hook'
+import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
 

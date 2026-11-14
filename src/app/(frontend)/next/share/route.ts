@@ -12,7 +12,7 @@
  * @rfc 9110 §8.3 content-type · RFC 9111 §5.2 cache-control
  * @see src/image/share/index.ts · src/generate/meta/index.ts
  */
-import { shareImage } from '@/image/share'
+import { shareImage } from '@/utilities/image/share'
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
 

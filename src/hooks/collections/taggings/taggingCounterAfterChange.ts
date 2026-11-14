@@ -1,5 +1,5 @@
-import { exactMax } from '@/algebra'
-import { polymorphicId as relId } from '@/field/relation'
+import { exactMax } from '@/utilities/algebra'
+import { polymorphicId as relId } from '@/utilities/field/relation'
 /**
  * taggings/counter — the `taggings_count` counter cache (port of the gem's
  * `counter_cache: true` on `Tagging.belongs_to :tag`). One source of truth for

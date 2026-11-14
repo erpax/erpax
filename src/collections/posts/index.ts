@@ -12,14 +12,14 @@ import {
 
 import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
 import { tenantScopedPostsReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
-import { documentPreviewAdmin } from '@/shareds'
-import { defaultVersionedDrafts } from '@/shareds'
-import { codeLanguages, documentFeatures } from '@/default/lexical'
+import { documentPreviewAdmin } from '@/utilities/shareds'
+import { defaultVersionedDrafts } from '@/utilities/shareds'
+import { codeLanguages, documentFeatures } from '@/utilities/default/lexical'
 import { Banner, Code, MediaBlock } from '@/blocks/config'
 import { ensureUniqueSlugWithinTenant } from '@/hooks/fields/shared/ensureUniqueSlugWithinTenant'
-import { postsBeforeChange } from '@/posts/hooks'
-import { populateAuthors } from '@/posts/hooks'
-import { revalidateDelete, revalidatePost } from '@/posts/hooks'
+import { postsBeforeChange } from '@/utilities/posts/hooks'
+import { populateAuthors } from '@/utilities/posts/hooks'
+import { revalidateDelete, revalidatePost } from '@/utilities/posts/hooks'
 
 import {
   MetaDescriptionField,

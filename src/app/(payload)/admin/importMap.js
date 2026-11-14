@@ -10,7 +10,7 @@ import { BoldFeatureClient as BoldFeatureClient_e70f5e05f09f93e00b997edb1ef0c864
 import { ItalicFeatureClient as ItalicFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { UnderlineFeatureClient as UnderlineFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { ParagraphFeatureClient as ParagraphFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
-import { default as default_eb3064b4f493dfb182253088b21090e9 } from '@/admin/ui/fields/MatrixBondField'
+import { default as default_523046b24cdf176545bcd69f902dd2ae } from '@/components/admin/ui/fields/MatrixBondField'
 import { SlugField as SlugField_2b8867833a34864a02ddf429b0728a40 } from '@payloadcms/next/client'
 import { InlineToolbarFeatureClient as InlineToolbarFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { FixedToolbarFeatureClient as FixedToolbarFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
@@ -58,8 +58,8 @@ import { QueryPresetsGroupByCell as QueryPresetsGroupByCell_2b8867833a34864a02dd
 import { QueryPresetsGroupByField as QueryPresetsGroupByField_2b8867833a34864a02ddf429b0728a40 } from '@payloadcms/next/client'
 import { RowLabel as RowLabel_09a5d00d1c2981c8a330d05897133905 } from '@/globals/header/RowLabel'
 import { RowLabel as RowLabel_136e5b5eb095dc39b42ab4c2528bb385 } from '@/globals/footer/RowLabel'
-import { default as default_57122232237b9417f4a7d29c208d6a6c } from '@/before/dashboard'
-import { default as default_4ceb3074435d2b230315867f7bd7dc11 } from '@/before/login'
+import { default as default_4de8f03e889785c9fd19d1ffa49a34dd } from '@/components/before/dashboard'
+import { default as default_eec5a33c58193ec8f22a8359eba1a43e } from '@/components/before/login'
 import { TenantSelector as TenantSelector_d6d5f193a167989e2ee7d14202901e62 } from '@payloadcms/plugin-multi-tenant/rsc'
 import { R2ClientUploadHandler as R2ClientUploadHandler_85cc02ed84006fcc91d3aff39dda669d } from '@payloadcms/storage-r2/client'
 import { ImportExportProvider as ImportExportProvider_cdf7e044479f899a31f804427d568b36 } from '@payloadcms/plugin-import-export/rsc'
@@ -80,7 +80,7 @@ export const importMap = {
   "@payloadcms/richtext-lexical/client#ItalicFeatureClient": ItalicFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "@payloadcms/richtext-lexical/client#UnderlineFeatureClient": UnderlineFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "@payloadcms/richtext-lexical/client#ParagraphFeatureClient": ParagraphFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
-  "@/admin/ui/fields/MatrixBondField#default": default_eb3064b4f493dfb182253088b21090e9,
+  "@/components/admin/ui/fields/MatrixBondField#default": default_523046b24cdf176545bcd69f902dd2ae,
   "@payloadcms/next/client#SlugField": SlugField_2b8867833a34864a02ddf429b0728a40,
   "@payloadcms/richtext-lexical/client#InlineToolbarFeatureClient": InlineToolbarFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "@payloadcms/richtext-lexical/client#FixedToolbarFeatureClient": FixedToolbarFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
@@ -128,8 +128,8 @@ export const importMap = {
   "@payloadcms/next/client#QueryPresetsGroupByField": QueryPresetsGroupByField_2b8867833a34864a02ddf429b0728a40,
   "@/globals/header/RowLabel#RowLabel": RowLabel_09a5d00d1c2981c8a330d05897133905,
   "@/globals/footer/RowLabel#RowLabel": RowLabel_136e5b5eb095dc39b42ab4c2528bb385,
-  "@/before/dashboard#default": default_57122232237b9417f4a7d29c208d6a6c,
-  "@/before/login#default": default_4ceb3074435d2b230315867f7bd7dc11,
+  "@/components/before/dashboard#default": default_4de8f03e889785c9fd19d1ffa49a34dd,
+  "@/components/before/login#default": default_eec5a33c58193ec8f22a8359eba1a43e,
   "@payloadcms/plugin-multi-tenant/rsc#TenantSelector": TenantSelector_d6d5f193a167989e2ee7d14202901e62,
   "@payloadcms/storage-r2/client#R2ClientUploadHandler": R2ClientUploadHandler_85cc02ed84006fcc91d3aff39dda669d,
   "@payloadcms/plugin-import-export/rsc#ImportExportProvider": ImportExportProvider_cdf7e044479f899a31f804427d568b36,

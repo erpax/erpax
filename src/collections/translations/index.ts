@@ -42,7 +42,7 @@
  * @audit ISO 19011:2018 §6.4.6 (translation changes audit-trailed)
  * @see ../../services/agents/mcp/i18n.ts (runtime resolution order)
  */
-import { createAccountingCollection } from '@/factory'
+import { createAccountingCollection } from '@/utilities/factory'
 import { referenceField } from '@/fields/text/referenceField'
 
 export default createAccountingCollection({
@@ -183,6 +183,6 @@ export default createAccountingCollection({
  * `export *` evaluates the module, so every consumer of `@/collections/translations` paid for all of it —
  * including `collections/index`, hence the Payload config, hence the site bundle. The DATA has one
  * consumer outside this atom; the TYPE has five and is erased at runtime, so only it crosses here.
- * Reach the rows at `@/translations/catalogue`, deliberately, or not at all.
+ * Reach the rows at `@/utilities/translations/catalogue`, deliberately, or not at all.
  */
-export type { CatalogueEntry } from '@/translations/catalogue'
+export type { CatalogueEntry } from '@/utilities/translations/catalogue'

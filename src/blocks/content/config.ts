@@ -10,7 +10,7 @@
  * @see docs/STANDARDS.md §3
  */
 
-import { codeLanguages, documentFeatures } from '@/default/lexical'
+import { codeLanguages, documentFeatures } from '@/utilities/default/lexical'
 import type { Block, Field } from 'payload'
 
 import {
@@ -20,7 +20,7 @@ import {
   lexicalEditor,
 } from '@payloadcms/richtext-lexical'
 
-import { link } from '@/link/field'
+import { link } from '@/components/link/field'
 import { localeRecord } from '@/i18n'
 import { markdownField } from '@/seed/content'
 import { BlocksFeature, CodeBlock } from '@payloadcms/richtext-lexical'
