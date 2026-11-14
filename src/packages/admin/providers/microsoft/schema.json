@@ -1,0 +1,660 @@
+{
+ "source": "Microsoft Graph v1.0 $metadata (CSDL) — https://graph.microsoft.com/v1.0/$metadata",
+ "schemas": {
+  "user": {
+   "properties": {
+    "signInActivity": {
+     "type": "signInActivity"
+    },
+    "accountEnabled": {
+     "type": "Edm.Boolean"
+    },
+    "ageGroup": {
+     "type": "Edm.String"
+    },
+    "assignedLicenses": {
+     "type": "Collection(assignedLicense)"
+    },
+    "assignedPlans": {
+     "type": "Collection(assignedPlan)"
+    },
+    "authorizationInfo": {
+     "type": "authorizationInfo"
+    },
+    "businessPhones": {
+     "type": "Collection(Edm.String)"
+    },
+    "city": {
+     "type": "Edm.String"
+    },
+    "companyName": {
+     "type": "Edm.String"
+    },
+    "consentProvidedForMinor": {
+     "type": "Edm.String"
+    },
+    "country": {
+     "type": "Edm.String"
+    },
+    "createdDateTime": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "creationType": {
+     "type": "Edm.String"
+    },
+    "customSecurityAttributes": {
+     "type": "customSecurityAttributeValue"
+    },
+    "department": {
+     "type": "Edm.String"
+    },
+    "displayName": {
+     "type": "Edm.String"
+    },
+    "employeeHireDate": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "employeeId": {
+     "type": "Edm.String"
+    },
+    "employeeLeaveDateTime": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "employeeOrgData": {
+     "type": "employeeOrgData"
+    },
+    "employeeType": {
+     "type": "Edm.String"
+    },
+    "externalUserState": {
+     "type": "Edm.String"
+    },
+    "externalUserStateChangeDateTime": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "faxNumber": {
+     "type": "Edm.String"
+    },
+    "givenName": {
+     "type": "Edm.String"
+    },
+    "identities": {
+     "type": "Collection(objectIdentity)"
+    },
+    "identityParentId": {
+     "type": "Edm.String"
+    },
+    "imAddresses": {
+     "type": "Collection(Edm.String)"
+    },
+    "isManagementRestricted": {
+     "type": "Edm.Boolean"
+    },
+    "isResourceAccount": {
+     "type": "Edm.Boolean"
+    },
+    "jobTitle": {
+     "type": "Edm.String"
+    },
+    "lastPasswordChangeDateTime": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "legalAgeGroupClassification": {
+     "type": "Edm.String"
+    },
+    "licenseAssignmentStates": {
+     "type": "Collection(licenseAssignmentState)"
+    },
+    "mail": {
+     "type": "Edm.String"
+    },
+    "mailNickname": {
+     "type": "Edm.String"
+    },
+    "mobilePhone": {
+     "type": "Edm.String"
+    },
+    "officeLocation": {
+     "type": "Edm.String"
+    },
+    "onPremisesDistinguishedName": {
+     "type": "Edm.String"
+    },
+    "onPremisesDomainName": {
+     "type": "Edm.String"
+    },
+    "onPremisesExtensionAttributes": {
+     "type": "onPremisesExtensionAttributes"
+    },
+    "onPremisesImmutableId": {
+     "type": "Edm.String"
+    },
+    "onPremisesLastSyncDateTime": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "onPremisesProvisioningErrors": {
+     "type": "Collection(onPremisesProvisioningError)"
+    },
+    "onPremisesSamAccountName": {
+     "type": "Edm.String"
+    },
+    "onPremisesSecurityIdentifier": {
+     "type": "Edm.String"
+    },
+    "onPremisesSyncEnabled": {
+     "type": "Edm.Boolean"
+    },
+    "onPremisesUserPrincipalName": {
+     "type": "Edm.String"
+    },
+    "otherMails": {
+     "type": "Collection(Edm.String)"
+    },
+    "passwordPolicies": {
+     "type": "Edm.String"
+    },
+    "passwordProfile": {
+     "type": "passwordProfile"
+    },
+    "postalCode": {
+     "type": "Edm.String"
+    },
+    "preferredDataLocation": {
+     "type": "Edm.String"
+    },
+    "preferredLanguage": {
+     "type": "Edm.String"
+    },
+    "provisionedPlans": {
+     "type": "Collection(provisionedPlan)"
+    },
+    "proxyAddresses": {
+     "type": "Collection(Edm.String)"
+    },
+    "securityIdentifier": {
+     "type": "Edm.String"
+    },
+    "serviceProvisioningErrors": {
+     "type": "Collection(serviceProvisioningError)"
+    },
+    "showInAddressList": {
+     "type": "Edm.Boolean"
+    },
+    "signInSessionsValidFromDateTime": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "state": {
+     "type": "Edm.String"
+    },
+    "streetAddress": {
+     "type": "Edm.String"
+    },
+    "surname": {
+     "type": "Edm.String"
+    },
+    "usageLocation": {
+     "type": "Edm.String"
+    },
+    "userPrincipalName": {
+     "type": "Edm.String"
+    },
+    "userType": {
+     "type": "Edm.String"
+    },
+    "mailboxSettings": {
+     "type": "mailboxSettings"
+    },
+    "deviceEnrollmentLimit": {
+     "type": "Edm.Int32"
+    },
+    "print": {
+     "type": "userPrint"
+    },
+    "aboutMe": {
+     "type": "Edm.String"
+    },
+    "birthday": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "hireDate": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "interests": {
+     "type": "Collection(Edm.String)"
+    },
+    "mySite": {
+     "type": "Edm.String"
+    },
+    "pastProjects": {
+     "type": "Collection(Edm.String)"
+    },
+    "preferredName": {
+     "type": "Edm.String"
+    },
+    "responsibilities": {
+     "type": "Collection(Edm.String)"
+    },
+    "schools": {
+     "type": "Collection(Edm.String)"
+    },
+    "skills": {
+     "type": "Collection(Edm.String)"
+    },
+    "appRoleAssignments": {
+     "type": "Collection(appRoleAssignment)",
+     "navigation": true
+    },
+    "directReports": {
+     "type": "Collection(directoryObject)",
+     "navigation": true
+    },
+    "manager": {
+     "type": "directoryObject",
+     "navigation": true
+    },
+    "memberOf": {
+     "type": "Collection(directoryObject)",
+     "navigation": true
+    }
+   }
+  },
+  "group": {
+   "properties": {
+    "assignedLabels": {
+     "type": "Collection(assignedLabel)"
+    },
+    "assignedLicenses": {
+     "type": "Collection(assignedLicense)"
+    },
+    "classification": {
+     "type": "Edm.String"
+    },
+    "createdDateTime": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "description": {
+     "type": "Edm.String"
+    },
+    "displayName": {
+     "type": "Edm.String"
+    },
+    "expirationDateTime": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "groupTypes": {
+     "type": "Collection(Edm.String)"
+    },
+    "hasMembersWithLicenseErrors": {
+     "type": "Edm.Boolean"
+    },
+    "infoCatalogs": {
+     "type": "Collection(Edm.String)"
+    },
+    "isAssignableToRole": {
+     "type": "Edm.Boolean"
+    },
+    "isManagementRestricted": {
+     "type": "Edm.Boolean"
+    },
+    "licenseProcessingState": {
+     "type": "licenseProcessingState"
+    },
+    "mail": {
+     "type": "Edm.String"
+    },
+    "mailEnabled": {
+     "type": "Edm.Boolean"
+    },
+    "mailNickname": {
+     "type": "Edm.String"
+    },
+    "membershipRule": {
+     "type": "Edm.String"
+    },
+    "membershipRuleProcessingState": {
+     "type": "Edm.String"
+    },
+    "onPremisesDomainName": {
+     "type": "Edm.String"
+    },
+    "onPremisesExtensionAttributes": {
+     "type": "onPremisesExtensionAttributes"
+    },
+    "onPremisesLastSyncDateTime": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "onPremisesNetBiosName": {
+     "type": "Edm.String"
+    },
+    "onPremisesProvisioningErrors": {
+     "type": "Collection(onPremisesProvisioningError)"
+    },
+    "onPremisesSamAccountName": {
+     "type": "Edm.String"
+    },
+    "onPremisesSecurityIdentifier": {
+     "type": "Edm.String"
+    },
+    "onPremisesSyncEnabled": {
+     "type": "Edm.Boolean"
+    },
+    "organizationId": {
+     "type": "Edm.String"
+    },
+    "preferredDataLocation": {
+     "type": "Edm.String"
+    },
+    "preferredLanguage": {
+     "type": "Edm.String"
+    },
+    "proxyAddresses": {
+     "type": "Collection(Edm.String)"
+    },
+    "renewedDateTime": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "resourceBehaviorOptions": {
+     "type": "Collection(Edm.String)"
+    },
+    "resourceProvisioningOptions": {
+     "type": "Collection(Edm.String)"
+    },
+    "securityEnabled": {
+     "type": "Edm.Boolean"
+    },
+    "securityIdentifier": {
+     "type": "Edm.String"
+    },
+    "serviceProvisioningErrors": {
+     "type": "Collection(serviceProvisioningError)"
+    },
+    "theme": {
+     "type": "Edm.String"
+    },
+    "uniqueName": {
+     "type": "Edm.String"
+    },
+    "visibility": {
+     "type": "Edm.String"
+    },
+    "accessType": {
+     "type": "groupAccessType"
+    },
+    "allowExternalSenders": {
+     "type": "Edm.Boolean"
+    },
+    "autoSubscribeNewMembers": {
+     "type": "Edm.Boolean"
+    },
+    "hideFromAddressLists": {
+     "type": "Edm.Boolean"
+    },
+    "hideFromOutlookClients": {
+     "type": "Edm.Boolean"
+    },
+    "isFavorite": {
+     "type": "Edm.Boolean"
+    },
+    "isSubscribedByMail": {
+     "type": "Edm.Boolean"
+    },
+    "unseenConversationsCount": {
+     "type": "Edm.Int32"
+    },
+    "unseenCount": {
+     "type": "Edm.Int32"
+    },
+    "unseenMessagesCount": {
+     "type": "Edm.Int32"
+    },
+    "welcomeMessageEnabled": {
+     "type": "Edm.Boolean"
+    },
+    "isArchived": {
+     "type": "Edm.Boolean"
+    },
+    "appRoleAssignments": {
+     "type": "Collection(appRoleAssignment)",
+     "navigation": true
+    },
+    "memberOf": {
+     "type": "Collection(directoryObject)",
+     "navigation": true
+    },
+    "members": {
+     "type": "Collection(directoryObject)",
+     "navigation": true
+    },
+    "owners": {
+     "type": "Collection(directoryObject)",
+     "navigation": true
+    }
+   }
+  },
+  "administrativeUnit": {
+   "properties": {
+    "description": {
+     "type": "Edm.String"
+    },
+    "displayName": {
+     "type": "Edm.String"
+    },
+    "isMemberManagementRestricted": {
+     "type": "Edm.Boolean"
+    },
+    "membershipRule": {
+     "type": "Edm.String"
+    },
+    "membershipRuleProcessingState": {
+     "type": "Edm.String"
+    },
+    "membershipType": {
+     "type": "Edm.String"
+    },
+    "visibility": {
+     "type": "Edm.String"
+    },
+    "members": {
+     "type": "Collection(directoryObject)",
+     "navigation": true
+    },
+    "scopedRoleMembers": {
+     "type": "Collection(scopedRoleMembership)",
+     "navigation": true
+    }
+   }
+  },
+  "directoryRole": {
+   "properties": {
+    "description": {
+     "type": "Edm.String"
+    },
+    "displayName": {
+     "type": "Edm.String"
+    },
+    "roleTemplateId": {
+     "type": "Edm.String"
+    },
+    "members": {
+     "type": "Collection(directoryObject)",
+     "navigation": true
+    }
+   }
+  },
+  "unifiedRoleDefinition": {
+   "properties": {
+    "deletedDateTime": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "description": {
+     "type": "Edm.String"
+    },
+    "displayName": {
+     "type": "Edm.String"
+    },
+    "isBuiltIn": {
+     "type": "Edm.Boolean"
+    },
+    "isEnabled": {
+     "type": "Edm.Boolean"
+    },
+    "isPrivileged": {
+     "type": "Edm.Boolean"
+    },
+    "resourceScopes": {
+     "type": "Collection(Edm.String)"
+    },
+    "rolePermissions": {
+     "type": "Collection(unifiedRolePermission)"
+    },
+    "templateId": {
+     "type": "Edm.String"
+    },
+    "version": {
+     "type": "Edm.String"
+    }
+   }
+  },
+  "unifiedRoleAssignment": {
+   "properties": {
+    "appScopeId": {
+     "type": "Edm.String"
+    },
+    "condition": {
+     "type": "Edm.String"
+    },
+    "directoryScopeId": {
+     "type": "Edm.String"
+    },
+    "principalId": {
+     "type": "Edm.String"
+    },
+    "principalOrganizationId": {
+     "type": "Edm.String"
+    },
+    "roleDefinitionId": {
+     "type": "Edm.String"
+    }
+   }
+  },
+  "organization": {
+   "properties": {
+    "assignedPlans": {
+     "type": "Collection(assignedPlan)"
+    },
+    "businessPhones": {
+     "type": "Collection(Edm.String)"
+    },
+    "city": {
+     "type": "Edm.String"
+    },
+    "country": {
+     "type": "Edm.String"
+    },
+    "countryLetterCode": {
+     "type": "Edm.String"
+    },
+    "createdDateTime": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "defaultUsageLocation": {
+     "type": "Edm.String"
+    },
+    "displayName": {
+     "type": "Edm.String"
+    },
+    "marketingNotificationEmails": {
+     "type": "Collection(Edm.String)"
+    },
+    "onPremisesLastSyncDateTime": {
+     "type": "Edm.DateTimeOffset"
+    },
+    "onPremisesSyncEnabled": {
+     "type": "Edm.Boolean"
+    },
+    "partnerTenantType": {
+     "type": "partnerTenantType"
+    },
+    "postalCode": {
+     "type": "Edm.String"
+    },
+    "preferredLanguage": {
+     "type": "Edm.String"
+    },
+    "privacyProfile": {
+     "type": "privacyProfile"
+    },
+    "provisionedPlans": {
+     "type": "Collection(provisionedPlan)"
+    },
+    "securityComplianceNotificationMails": {
+     "type": "Collection(Edm.String)"
+    },
+    "securityComplianceNotificationPhones": {
+     "type": "Collection(Edm.String)"
+    },
+    "state": {
+     "type": "Edm.String"
+    },
+    "street": {
+     "type": "Edm.String"
+    },
+    "technicalNotificationMails": {
+     "type": "Collection(Edm.String)"
+    },
+    "tenantType": {
+     "type": "Edm.String"
+    },
+    "verifiedDomains": {
+     "type": "Collection(verifiedDomain)"
+    },
+    "mobileDeviceManagementAuthority": {
+     "type": "mdmAuthority"
+    }
+   }
+  },
+  "domain": {
+   "properties": {
+    "authenticationType": {
+     "type": "Edm.String"
+    },
+    "availabilityStatus": {
+     "type": "Edm.String"
+    },
+    "isAdminManaged": {
+     "type": "Edm.Boolean"
+    },
+    "isDefault": {
+     "type": "Edm.Boolean"
+    },
+    "isInitial": {
+     "type": "Edm.Boolean"
+    },
+    "isRoot": {
+     "type": "Edm.Boolean"
+    },
+    "isVerified": {
+     "type": "Edm.Boolean"
+    },
+    "manufacturer": {
+     "type": "Edm.String"
+    },
+    "model": {
+     "type": "Edm.String"
+    },
+    "passwordNotificationWindowInDays": {
+     "type": "Edm.Int32"
+    },
+    "passwordValidityPeriodInDays": {
+     "type": "Edm.Int32"
+    },
+    "state": {
+     "type": "domainState"
+    },
+    "supportedServices": {
+     "type": "Collection(Edm.String)"
+    }
+   }
+  }
+ }
+}

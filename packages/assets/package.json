@@ -1,6 +1,6 @@
 {
   "name": "@erpax/assets",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Assets — fixed assets, leases, properties. An erpax app, delivered as one Payload plugin. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",

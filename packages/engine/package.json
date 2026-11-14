@@ -1,6 +1,6 @@
 {
   "name": "@erpax/engine",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Engine — erpax split into Payload plugins, one per app, the way a workspace suite is split. Part of erpax. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",

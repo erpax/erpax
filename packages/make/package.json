@@ -1,6 +1,6 @@
 {
   "name": "@erpax/make",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Make — production: lots, work orders, bills of materials. An erpax app, delivered as one Payload plugin. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",

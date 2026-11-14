@@ -1,6 +1,6 @@
 {
   "name": "@erpax/plugin-taggable",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Payload plugin: tag any record in any collection by its content-uuid — one text column instead of a relationship table per collection. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",

@@ -19,6 +19,8 @@
 export { Tenants } from '@/collections/tenants'
 export { Users } from '@/collections/users'
 export { Roles } from '@/collections/roles'
+export { Groups } from '@/collections/groups'
+export { OrgUnits } from '@/collections/org-units'
 
 // Content Collections
 export { Pages } from '@/collections/pages'

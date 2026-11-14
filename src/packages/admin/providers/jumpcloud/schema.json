@@ -1,0 +1,305 @@
+{
+ "source": "JumpCloud API 1.0 / 2.0 (OpenAPI) — docs.jumpcloud.com",
+ "schemas": {
+  "systemuserreturn": {
+   "properties": {
+    "_id": {
+     "type": "string"
+    },
+    "account_locked": {
+     "type": "boolean"
+    },
+    "account_locked_date": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "activated": {
+     "type": "boolean"
+    },
+    "admin": {
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "addresses": {
+     "type": "array"
+    },
+    "allow_public_key": {
+     "type": "boolean"
+    },
+    "alternateEmail": {
+     "type": "string"
+    },
+    "attributes": {
+     "type": "array"
+    },
+    "badLoginAttempts": {
+     "type": "integer"
+    },
+    "company": {
+     "type": "string"
+    },
+    "costCenter": {
+     "type": "string"
+    },
+    "created": {
+     "type": "string"
+    },
+    "department": {
+     "type": "string"
+    },
+    "description": {
+     "type": "string"
+    },
+    "disableDeviceMaxLoginAttempts": {
+     "type": "boolean"
+    },
+    "displayname": {
+     "type": "string"
+    },
+    "email": {
+     "type": "string"
+    },
+    "employeeIdentifier": {
+     "type": "string"
+    },
+    "employeeType": {
+     "type": "string"
+    },
+    "enable_managed_uid": {
+     "type": "boolean"
+    },
+    "enable_user_portal_multifactor": {
+     "type": "boolean"
+    },
+    "external_dn": {
+     "type": "string"
+    },
+    "external_password_expiration_date": {
+     "type": "string"
+    },
+    "external_source_type": {
+     "type": "string"
+    },
+    "externally_managed": {
+     "type": "object"
+    },
+    "firstname": {
+     "type": "string"
+    },
+    "jobTitle": {
+     "type": "string"
+    },
+    "lastname": {
+     "type": "string"
+    },
+    "ldap_binding_user": {
+     "type": "boolean"
+    },
+    "location": {
+     "type": "string"
+    },
+    "manager": {
+     "type": "string"
+    },
+    "mfa": {
+     "type": "object"
+    },
+    "mfaEnrollment": {
+     "type": "object"
+    },
+    "middlename": {
+     "type": "string"
+    },
+    "organization": {
+     "type": "string"
+    },
+    "password_date": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "password_expiration_date": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "password_expired": {
+     "type": "boolean"
+    },
+    "password_never_expires": {
+     "type": "boolean"
+    },
+    "passwordless_sudo": {
+     "type": "boolean"
+    },
+    "phoneNumbers": {
+     "type": "array"
+    },
+    "public_key": {
+     "type": "string"
+    },
+    "recoveryEmail": {
+     "type": "object"
+    },
+    "relationships": {
+     "type": "array"
+    },
+    "samba_service_user": {
+     "type": "boolean"
+    },
+    "ssh_keys": {
+     "type": "array"
+    },
+    "state": {
+     "type": "string"
+    },
+    "sudo": {
+     "type": "boolean"
+    },
+    "suspended": {
+     "type": "boolean"
+    },
+    "tags": {
+     "type": "array"
+    },
+    "totp_enabled": {
+     "type": "boolean"
+    },
+    "unix_guid": {
+     "type": "integer"
+    },
+    "unix_uid": {
+     "type": "integer"
+    },
+    "username": {
+     "type": "string"
+    },
+    "managedAppleId": {
+     "type": "string"
+    },
+    "creationSource": {
+     "type": "string"
+    },
+    "delegatedAuthority": {
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "restrictedFields": {
+     "type": "array"
+    }
+   }
+  },
+  "organization": {
+   "properties": {
+    "_id": {
+     "type": "string"
+    },
+    "created": {
+     "type": "string"
+    },
+    "customEmailSettings": {
+     "type": "object"
+    },
+    "displayName": {
+     "type": "string"
+    },
+    "entitlement": {
+     "type": "object"
+    },
+    "hasStripeCustomerId": {
+     "type": "boolean"
+    },
+    "hasCreditCard": {
+     "type": "boolean"
+    },
+    "lastEstimateCalculationTimeStamp": {
+     "type": "string"
+    },
+    "lastSfdcSyncStatus": {
+     "type": "object"
+    },
+    "accountsReceivable": {
+     "type": "string"
+    },
+    "accessRestriction": {
+     "type": "string"
+    },
+    "accountType": {
+     "type": "string"
+    },
+    "logoUrl": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "provider": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "settings": {
+     "type": "object"
+    },
+    "totalBillingEstimate": {
+     "type": "integer"
+    }
+   }
+  },
+  "UserGroup": {
+   "properties": {
+    "attributes": {
+     "type": "object"
+    },
+    "email": {
+     "type": "string"
+    },
+    "description": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "memberQuery": {
+     "type": "object"
+    },
+    "memberQueryExemptions": {
+     "type": "array"
+    },
+    "memberSuggestionsNotify": {
+     "type": "boolean"
+    },
+    "memberQueryErrorFlags": {
+     "type": "object"
+    },
+    "membershipMethod": {
+     "type": "object"
+    },
+    "name": {
+     "type": "string"
+    },
+    "organizationObjectId": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "suggestionCounts": {
+     "type": "object"
+    },
+    "type": {
+     "type": "string"
+    }
+   }
+  }
+ }
+}

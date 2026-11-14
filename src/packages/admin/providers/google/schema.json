@@ -1,0 +1,2992 @@
+{
+ "source": "Google API Discovery Service — admin directory_v1, reports_v1, datatransfer_v1; licensing v1; groupssettings v1",
+ "revisions": {
+  "directory_v1": "20261111",
+  "reports_v1": "20261111",
+  "licensing_v1": "20261109",
+  "datatransfer_v1": "20261111",
+  "groupssettings_v1": "20220614"
+ },
+ "schemas": {
+  "User": {
+   "type": "object",
+   "description": "The Directory API allows you to create and manage your account's users, user aliases, and user Google profile photos.",
+   "properties": {
+    "isDelegatedAdmin": {
+     "type": "boolean",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "gender": {
+     "type": "any",
+     "description": "The user's gender."
+    },
+    "websites": {
+     "type": "any",
+     "description": "The user's websites."
+    },
+    "archived": {
+     "type": "boolean",
+     "description": "Indicates if user is archived."
+    },
+    "relations": {
+     "type": "any",
+     "description": "The list of the user's relationships to other users."
+    },
+    "ipWhitelisted": {
+     "type": "boolean",
+     "description": "If `true`, the user's IP address is subject to a deprecated IP address [`allowlist`](https://support.google.com/a/answer/60752) configuration."
+    },
+    "suspensionReason": {
+     "type": "string",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "sshPublicKeys": {
+     "type": "any",
+     "description": "A list of SSH public keys."
+    },
+    "phones": {
+     "type": "any",
+     "description": "The list of the user's phone numbers."
+    },
+    "agreedToTerms": {
+     "type": "boolean",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "kind": {
+     "type": "string",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "recoveryEmail": {
+     "type": "string",
+     "description": "Recovery email of the user."
+    },
+    "aliases": {
+     "type": "array",
+     "readOnly": true,
+     "description": "Output only.",
+     "items": {
+      "type": "string"
+     }
+    },
+    "etag": {
+     "type": "string",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "isGuestUser": {
+     "type": "boolean",
+     "description": "Immutable."
+    },
+    "primaryEmail": {
+     "type": "string",
+     "description": "The user's primary email address."
+    },
+    "guestAccountInfo": {
+     "$ref": "GuestAccountInfo",
+     "description": "Immutable."
+    },
+    "posixAccounts": {
+     "type": "any",
+     "description": "The list of [POSIX](https://www.opengroup.org/austin/papers/posix_faq.html) account information for the user."
+    },
+    "deletionTime": {
+     "type": "string",
+     "format": "date-time",
+     "readOnly": true
+    },
+    "notes": {
+     "type": "any",
+     "description": "Notes for the user."
+    },
+    "lastLoginTime": {
+     "type": "string",
+     "format": "date-time",
+     "readOnly": true,
+     "description": "User's last login time."
+    },
+    "isMailboxSetup": {
+     "type": "boolean",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "customSchemas": {
+     "type": "object",
+     "description": "Custom fields of the user.",
+     "additionalProperties": true
+    },
+    "suspensionTime": {
+     "type": "string",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "thumbnailPhotoEtag": {
+     "type": "string",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "orgUnitPath": {
+     "type": "string",
+     "description": "The full path of the parent organization associated with the user."
+    },
+    "id": {
+     "type": "string",
+     "description": "The unique ID for the user."
+    },
+    "locations": {
+     "type": "any",
+     "description": "The user's locations."
+    },
+    "isEnforcedIn2Sv": {
+     "type": "boolean",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "nonEditableAliases": {
+     "type": "array",
+     "readOnly": true,
+     "description": "Output only.",
+     "items": {
+      "type": "string"
+     }
+    },
+    "recoveryPhone": {
+     "type": "string",
+     "description": "Recovery phone of the user."
+    },
+    "isEnrolledIn2Sv": {
+     "type": "boolean",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "isAdmin": {
+     "type": "boolean",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "hashFunction": {
+     "type": "string",
+     "description": "Stores the hash format of the `password` property."
+    },
+    "suspended": {
+     "type": "boolean",
+     "description": "Indicates if user is suspended."
+    },
+    "thumbnailPhotoUrl": {
+     "type": "string",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "languages": {
+     "type": "any",
+     "description": "The user's languages."
+    },
+    "externalIds": {
+     "type": "any",
+     "description": "The list of external IDs for the user, such as an employee or network ID."
+    },
+    "creationTime": {
+     "type": "string",
+     "format": "date-time",
+     "readOnly": true,
+     "description": "User's G Suite account creation time."
+    },
+    "archivalTime": {
+     "type": "string",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "ims": {
+     "type": "any",
+     "description": "The list of the user's Instant Messenger (IM) accounts."
+    },
+    "customerId": {
+     "type": "string",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "changePasswordAtNextLogin": {
+     "type": "boolean",
+     "description": "Indicates if the user is forced to change their password at next login."
+    },
+    "includeInGlobalAddressList": {
+     "type": "boolean",
+     "description": "Indicates if the user's profile is visible in the Google Workspace global address list when the contact sharing feature is enabled for the domain."
+    },
+    "emails": {
+     "type": "any",
+     "description": "The list of the user's email addresses."
+    },
+    "addresses": {
+     "type": "any",
+     "description": "The list of the user's addresses."
+    },
+    "organizations": {
+     "type": "any",
+     "description": "The list of organizations the user belongs to."
+    },
+    "name": {
+     "$ref": "UserName",
+     "description": "Holds the given and family names of the user, and the read-only `fullName` value."
+    },
+    "password": {
+     "type": "string",
+     "description": "User's password"
+    },
+    "keywords": {
+     "type": "any",
+     "description": "The list of the user's keywords."
+    }
+   }
+  },
+  "UserName": {
+   "type": "object",
+   "properties": {
+    "familyName": {
+     "type": "string",
+     "description": "The user's last name."
+    },
+    "fullName": {
+     "type": "string",
+     "description": "The user's full name formed by concatenating the first and last name values."
+    },
+    "displayName": {
+     "type": "string",
+     "description": "The user's display name."
+    },
+    "givenName": {
+     "type": "string",
+     "description": "The user's first name."
+    }
+   }
+  },
+  "UserPhone": {
+   "type": "object",
+   "description": "JSON template for a phone entry.",
+   "properties": {
+    "value": {
+     "type": "string",
+     "description": "Phone number."
+    },
+    "primary": {
+     "type": "boolean",
+     "description": "If this is user's primary phone or not."
+    },
+    "customType": {
+     "type": "string",
+     "description": "Custom Type."
+    },
+    "type": {
+     "type": "string",
+     "description": "Each entry can have a type which indicates standard types of that entry."
+    }
+   }
+  },
+  "UserEmail": {
+   "type": "object",
+   "description": "JSON template for an email.",
+   "properties": {
+    "address": {
+     "type": "string",
+     "description": "Email id of the user."
+    },
+    "primary": {
+     "type": "boolean",
+     "description": "If this is user's primary email."
+    },
+    "type": {
+     "type": "string",
+     "description": "Each entry can have a type which indicates standard types of that entry."
+    },
+    "customType": {
+     "type": "string",
+     "description": "Custom Type."
+    },
+    "public_key_encryption_certificates": {
+     "type": "object",
+     "description": "Public Key Encryption Certificates.",
+     "properties": {
+      "state": {
+       "type": "string",
+       "description": "Denotes the certificate's state in its lifecycle."
+      },
+      "certificate": {
+       "type": "string",
+       "description": "X.509 encryption certificate in `PEM` format."
+      },
+      "is_default": {
+       "type": "boolean",
+       "description": "Whether this is the default certificate for the given email address."
+      }
+     }
+    }
+   }
+  },
+  "UserAddress": {
+   "type": "object",
+   "description": "JSON template for address.",
+   "properties": {
+    "customType": {
+     "type": "string",
+     "description": "Custom type."
+    },
+    "streetAddress": {
+     "type": "string",
+     "description": "Street."
+    },
+    "countryCode": {
+     "type": "string",
+     "description": "Country code."
+    },
+    "sourceIsStructured": {
+     "type": "boolean",
+     "description": "User supplied address was structured."
+    },
+    "formatted": {
+     "type": "string",
+     "description": "Formatted address."
+    },
+    "postalCode": {
+     "type": "string",
+     "description": "Postal code."
+    },
+    "type": {
+     "type": "string",
+     "description": "Each entry can have a type which indicates standard values of that entry."
+    },
+    "extendedAddress": {
+     "type": "string",
+     "description": "Extended Address."
+    },
+    "region": {
+     "type": "string",
+     "description": "Region."
+    },
+    "primary": {
+     "type": "boolean",
+     "description": "If this is user's primary address."
+    },
+    "locality": {
+     "type": "string",
+     "description": "Locality."
+    },
+    "poBox": {
+     "type": "string",
+     "description": "Other parts of address."
+    },
+    "country": {
+     "type": "string",
+     "description": "Country."
+    }
+   }
+  },
+  "UserOrganization": {
+   "type": "object",
+   "description": "JSON template for an organization entry.",
+   "properties": {
+    "fullTimeEquivalent": {
+     "type": "integer",
+     "format": "int32",
+     "description": "The full-time equivalent millipercent within the organization (100000 = 100%)."
+    },
+    "symbol": {
+     "type": "string",
+     "description": "Symbol of the organization."
+    },
+    "domain": {
+     "type": "string",
+     "description": "The domain to which the organization belongs to."
+    },
+    "costCenter": {
+     "type": "string",
+     "description": "The cost center of the users department."
+    },
+    "title": {
+     "type": "string",
+     "description": "Title (designation) of the user in the organization."
+    },
+    "customType": {
+     "type": "string",
+     "description": "Custom type."
+    },
+    "description": {
+     "type": "string",
+     "description": "Description of the organization."
+    },
+    "location": {
+     "type": "string",
+     "description": "Location of the organization."
+    },
+    "type": {
+     "type": "string",
+     "description": "Each entry can have a type which indicates standard types of that entry."
+    },
+    "primary": {
+     "type": "boolean",
+     "description": "If it user's primary organization."
+    },
+    "department": {
+     "type": "string",
+     "description": "Department within the organization."
+    },
+    "name": {
+     "type": "string",
+     "description": "Name of the organization"
+    }
+   }
+  },
+  "UserRelation": {
+   "type": "object",
+   "description": "JSON template for a relation entry.",
+   "properties": {
+    "customType": {
+     "type": "string",
+     "description": "Custom Type."
+    },
+    "type": {
+     "type": "string",
+     "description": "The relation of the user."
+    },
+    "value": {
+     "type": "string",
+     "description": "The name of the relation."
+    }
+   }
+  },
+  "UserExternalId": {
+   "type": "object",
+   "description": "JSON template for an externalId entry.",
+   "properties": {
+    "type": {
+     "type": "string",
+     "description": "The type of the Id."
+    },
+    "value": {
+     "type": "string",
+     "description": "The value of the id."
+    },
+    "customType": {
+     "type": "string",
+     "description": "Custom type."
+    }
+   }
+  },
+  "UserLanguage": {
+   "type": "object",
+   "description": "JSON template for a language entry.",
+   "properties": {
+    "preference": {
+     "type": "string",
+     "description": "Optional."
+    },
+    "languageCode": {
+     "type": "string",
+     "description": "ISO 639 string representation of a language."
+    },
+    "customLanguage": {
+     "type": "string",
+     "description": "Other language."
+    }
+   }
+  },
+  "UserLocation": {
+   "type": "object",
+   "description": "JSON template for a location entry.",
+   "properties": {
+    "buildingId": {
+     "type": "string",
+     "description": "Building Identifier."
+    },
+    "floorSection": {
+     "type": "string",
+     "description": "Floor section."
+    },
+    "customType": {
+     "type": "string",
+     "description": "Custom Type."
+    },
+    "floorName": {
+     "type": "string",
+     "description": "Floor name/number."
+    },
+    "type": {
+     "type": "string",
+     "description": "Each entry can have a type which indicates standard types of that entry."
+    },
+    "deskCode": {
+     "type": "string",
+     "description": "Most specific textual code of individual desk location."
+    },
+    "area": {
+     "type": "string",
+     "description": "Required."
+    }
+   }
+  },
+  "UserKeyword": {
+   "type": "object",
+   "description": "JSON template for a keyword entry.",
+   "properties": {
+    "customType": {
+     "type": "string",
+     "description": "Custom Type."
+    },
+    "value": {
+     "type": "string",
+     "description": "Keyword."
+    },
+    "type": {
+     "type": "string",
+     "description": "Each entry can have a type which indicates standard type of that entry."
+    }
+   }
+  },
+  "UserWebsite": {
+   "type": "object",
+   "description": "JSON template for a website entry.",
+   "properties": {
+    "customType": {
+     "type": "string",
+     "description": "Custom Type."
+    },
+    "value": {
+     "type": "string",
+     "description": "Website."
+    },
+    "primary": {
+     "type": "boolean",
+     "description": "If this is user's primary website or not."
+    },
+    "type": {
+     "type": "string",
+     "description": "Each entry can have a type which indicates standard types of that entry."
+    }
+   }
+  },
+  "UserIm": {
+   "type": "object",
+   "description": "JSON template for instant messenger of an user.",
+   "properties": {
+    "customType": {
+     "type": "string",
+     "description": "Custom type."
+    },
+    "protocol": {
+     "type": "string",
+     "description": "Protocol used in the instant messenger."
+    },
+    "customProtocol": {
+     "type": "string",
+     "description": "Custom protocol."
+    },
+    "primary": {
+     "type": "boolean",
+     "description": "If this is user's primary im."
+    },
+    "im": {
+     "type": "string",
+     "description": "Instant messenger id."
+    },
+    "type": {
+     "type": "string",
+     "description": "Each entry can have a type which indicates standard types of that entry."
+    }
+   }
+  },
+  "UserGender": {
+   "type": "object",
+   "properties": {
+    "customGender": {
+     "type": "string",
+     "description": "Custom gender."
+    },
+    "type": {
+     "type": "string",
+     "description": "Gender."
+    },
+    "addressMeAs": {
+     "type": "string",
+     "description": "AddressMeAs."
+    }
+   }
+  },
+  "UserAbout": {
+   "type": "object",
+   "description": "JSON template for About (notes) of a user in Directory API.",
+   "properties": {
+    "contentType": {
+     "type": "string",
+     "description": "About entry can have a type which indicates the content type."
+    },
+    "value": {
+     "type": "string",
+     "description": "Actual value of notes."
+    }
+   }
+  },
+  "UserPosixAccount": {
+   "type": "object",
+   "description": "JSON template for a POSIX account entry.",
+   "properties": {
+    "primary": {
+     "type": "boolean",
+     "description": "If this is user's primary account within the SystemId."
+    },
+    "accountId": {
+     "type": "string",
+     "description": "A POSIX account field identifier."
+    },
+    "operatingSystemType": {
+     "type": "string",
+     "description": "The operating system type for this account."
+    },
+    "systemId": {
+     "type": "string",
+     "description": "System identifier for which account Username or Uid apply to."
+    },
+    "gecos": {
+     "type": "string",
+     "description": "The GECOS (user information) for this account."
+    },
+    "shell": {
+     "type": "string",
+     "description": "The path to the login shell for this account."
+    },
+    "username": {
+     "type": "string",
+     "description": "The username of the account."
+    },
+    "homeDirectory": {
+     "type": "string",
+     "description": "The path to the home directory for this account."
+    },
+    "gid": {
+     "type": "string",
+     "format": "uint64",
+     "description": "The default group ID."
+    },
+    "uid": {
+     "type": "string",
+     "format": "uint64",
+     "description": "The POSIX compliant user ID."
+    }
+   }
+  },
+  "UserSshPublicKey": {
+   "type": "object",
+   "description": "JSON template for a POSIX account entry.",
+   "properties": {
+    "key": {
+     "type": "string",
+     "description": "An SSH public key."
+    },
+    "fingerprint": {
+     "type": "string",
+     "readOnly": true,
+     "description": "A SHA-256 fingerprint of the SSH public key."
+    },
+    "expirationTimeUsec": {
+     "type": "string",
+     "format": "int64",
+     "description": "An expiration time in microseconds since epoch."
+    }
+   }
+  },
+  "GuestAccountInfo": {
+   "type": "object",
+   "description": "Account info specific to Guest users.",
+   "properties": {
+    "primaryGuestEmail": {
+     "type": "string",
+     "description": "Immutable."
+    }
+   }
+  },
+  "Group": {
+   "type": "object",
+   "description": "Google Groups provide your users the ability to send messages to groups of people using the group's email address.",
+   "properties": {
+    "kind": {
+     "type": "string",
+     "description": "The type of the API resource."
+    },
+    "nonEditableAliases": {
+     "type": "array",
+     "description": "Read-only.",
+     "items": {
+      "type": "string"
+     }
+    },
+    "email": {
+     "type": "string",
+     "description": "The group's email address."
+    },
+    "name": {
+     "type": "string",
+     "description": "The group's display name."
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "adminCreated": {
+     "type": "boolean",
+     "description": "Read-only."
+    },
+    "directMembersCount": {
+     "type": "string",
+     "format": "int64",
+     "description": "The number of users that are direct members of the group."
+    },
+    "id": {
+     "type": "string",
+     "description": "Read-only."
+    },
+    "description": {
+     "type": "string",
+     "description": "An extended description to help users determine the purpose of a group."
+    },
+    "aliases": {
+     "type": "array",
+     "description": "Read-only.",
+     "items": {
+      "type": "string"
+     }
+    },
+    "externalIds": {
+     "type": "array",
+     "description": "Optional.",
+     "items": {
+      "$ref": "ExternalId"
+     }
+    }
+   }
+  },
+  "ExternalId": {
+   "type": "object",
+   "description": "External identifier used to link and identify this group across external directory systems.",
+   "properties": {
+    "namespace": {
+     "type": "string",
+     "description": "The system or identity provider managing this ID."
+    },
+    "id": {
+     "type": "string",
+     "description": "The unique identifier string assigned by the external provider."
+    }
+   }
+  },
+  "Member": {
+   "type": "object",
+   "description": "A Google Groups member can be a user or another group.",
+   "properties": {
+    "role": {
+     "type": "string",
+     "description": "The member's role in a group."
+    },
+    "id": {
+     "type": "string",
+     "description": "The unique ID of the group member."
+    },
+    "delivery_settings": {
+     "type": "string",
+     "description": "Defines mail delivery preferences of member."
+    },
+    "email": {
+     "type": "string",
+     "description": "The member's email address."
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of the API resource."
+    },
+    "type": {
+     "type": "string",
+     "description": "The type of group member."
+    },
+    "status": {
+     "type": "string",
+     "description": "Status of member (Immutable)"
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    }
+   }
+  },
+  "OrgUnit": {
+   "type": "object",
+   "description": "Managing your account's organizational units allows you to configure your users' access to services and custom settings.",
+   "properties": {
+    "orgUnitId": {
+     "type": "string",
+     "description": "The unique ID of the organizational unit."
+    },
+    "name": {
+     "type": "string",
+     "description": "The organizational unit's path name."
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "description": {
+     "type": "string",
+     "description": "Description of the organizational unit."
+    },
+    "parentOrgUnitPath": {
+     "type": "string",
+     "description": "The organizational unit's parent path."
+    },
+    "blockInheritance": {
+     "type": "boolean",
+     "description": "This field is deprecated and setting its value has no effect."
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of the API resource."
+    },
+    "orgUnitPath": {
+     "type": "string",
+     "description": "The full path to the organizational unit."
+    },
+    "parentOrgUnitId": {
+     "type": "string",
+     "description": "The unique ID of the parent organizational unit."
+    }
+   }
+  },
+  "Role": {
+   "type": "object",
+   "properties": {
+    "roleId": {
+     "type": "string",
+     "format": "int64",
+     "description": "ID of the role."
+    },
+    "roleName": {
+     "type": "string",
+     "description": "Name of the role."
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of the API resource."
+    },
+    "roleDescription": {
+     "type": "string",
+     "description": "A short description of the role."
+    },
+    "rolePrivileges": {
+     "type": "array",
+     "description": "The set of privileges that are granted to this role.",
+     "items": {
+      "type": "object",
+      "properties": {
+       "privilegeName": {
+        "type": "string",
+        "description": "The name of the privilege."
+       },
+       "serviceId": {
+        "type": "string",
+        "description": "The obfuscated ID of the service this privilege is for."
+       }
+      }
+     }
+    },
+    "isSuperAdminRole": {
+     "type": "boolean",
+     "description": "Returns `true` if the role is a super admin role."
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "isSystemRole": {
+     "type": "boolean",
+     "description": "Returns `true` if this is a pre-defined system role."
+    }
+   }
+  },
+  "RoleAssignment": {
+   "type": "object",
+   "description": "Defines an assignment of a role.",
+   "properties": {
+    "expirationDetails": {
+     "$ref": "ExpirationDetails",
+     "description": "Optional."
+    },
+    "roleId": {
+     "type": "string",
+     "format": "int64",
+     "description": "The ID of the role that is assigned."
+    },
+    "roleAssignmentId": {
+     "type": "string",
+     "format": "int64",
+     "description": "ID of this roleAssignment."
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of the API resource."
+    },
+    "assigneeType": {
+     "type": "string",
+     "readOnly": true,
+     "enum": [
+      "user",
+      "group"
+     ],
+     "description": "Output only."
+    },
+    "assignedTo": {
+     "type": "string",
+     "description": "The unique ID of the entity this role is assigned to—either the `user_id` of a user, the `group_id` of a group, or the `uniqueId` of a service account as defined in [Identity and Access Management (IA"
+    },
+    "scopeType": {
+     "type": "string",
+     "description": "The scope in which this role is assigned."
+    },
+    "condition": {
+     "type": "string",
+     "description": "Optional."
+    },
+    "orgUnitId": {
+     "type": "string",
+     "description": "If the role is restricted to an organization unit, this contains the ID for the organization unit the exercise of this role is restricted to."
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    }
+   }
+  },
+  "ExpirationDetails": {
+   "type": "object",
+   "description": "Details regarding the expiration of this role assignment.",
+   "properties": {
+    "expireTime": {
+     "type": "string",
+     "format": "google-datetime",
+     "description": "The specific timestamp when the role assignment expires."
+    }
+   }
+  },
+  "Privilege": {
+   "type": "object",
+   "properties": {
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "childPrivileges": {
+     "type": "array",
+     "description": "A list of child privileges.",
+     "items": {
+      "$ref": "Privilege"
+     }
+    },
+    "privilegeName": {
+     "type": "string",
+     "description": "The name of the privilege."
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of the API resource."
+    },
+    "isOuScopable": {
+     "type": "boolean",
+     "description": "If the privilege can be restricted to an organization unit."
+    },
+    "serviceName": {
+     "type": "string",
+     "description": "The name of the service this privilege is for."
+    },
+    "serviceId": {
+     "type": "string",
+     "description": "The obfuscated ID of the service this privilege is for."
+    }
+   }
+  },
+  "Customer": {
+   "type": "object",
+   "properties": {
+    "language": {
+     "type": "string",
+     "description": "The customer's ISO 639-2 language code."
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "id": {
+     "type": "string",
+     "description": "The unique ID for the customer's Google Workspace account."
+    },
+    "customerDomain": {
+     "type": "string",
+     "description": "The customer's primary domain name string."
+    },
+    "kind": {
+     "type": "string",
+     "description": "Identifies the resource as a customer."
+    },
+    "phoneNumber": {
+     "type": "string",
+     "description": "The customer's contact phone number in [E.164](https://en.wikipedia.org/wiki/E.164) format."
+    },
+    "customerCreationTime": {
+     "type": "string",
+     "format": "date-time",
+     "description": "The customer's creation time (Readonly)"
+    },
+    "postalAddress": {
+     "$ref": "CustomerPostalAddress",
+     "description": "The customer's postal address information."
+    },
+    "alternateEmail": {
+     "type": "string",
+     "description": "The customer's secondary contact email address."
+    }
+   }
+  },
+  "CustomerPostalAddress": {
+   "type": "object",
+   "properties": {
+    "locality": {
+     "type": "string",
+     "description": "Name of the locality."
+    },
+    "postalCode": {
+     "type": "string",
+     "description": "The postal code."
+    },
+    "countryCode": {
+     "type": "string",
+     "description": "This is a required property."
+    },
+    "organizationName": {
+     "type": "string",
+     "description": "The company or company division name."
+    },
+    "contactName": {
+     "type": "string",
+     "description": "The customer contact's name."
+    },
+    "region": {
+     "type": "string",
+     "description": "Name of the region."
+    },
+    "addressLine3": {
+     "type": "string",
+     "description": "Address line 3 of the address."
+    },
+    "addressLine1": {
+     "type": "string",
+     "description": "A customer's physical address."
+    },
+    "addressLine2": {
+     "type": "string",
+     "description": "Address line 2 of the address."
+    }
+   }
+  },
+  "Domains": {
+   "type": "object",
+   "properties": {
+    "creationTime": {
+     "type": "string",
+     "format": "int64",
+     "description": "Creation time of the domain."
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "domainAliases": {
+     "type": "array",
+     "description": "A list of domain alias objects.",
+     "items": {
+      "$ref": "DomainAlias"
+     }
+    },
+    "domainName": {
+     "type": "string",
+     "description": "The domain name of the customer."
+    },
+    "isPrimary": {
+     "type": "boolean",
+     "description": "Indicates if the domain is a primary domain (Read-only)."
+    },
+    "kind": {
+     "type": "string",
+     "description": "Kind of resource this is."
+    },
+    "verified": {
+     "type": "boolean",
+     "description": "Indicates the verification state of a domain."
+    }
+   }
+  },
+  "DomainAlias": {
+   "type": "object",
+   "properties": {
+    "kind": {
+     "type": "string",
+     "description": "Kind of resource this is."
+    },
+    "parentDomainName": {
+     "type": "string",
+     "description": "The parent domain name that the domain alias is associated with."
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "verified": {
+     "type": "boolean",
+     "description": "Indicates the verification state of a domain alias."
+    },
+    "creationTime": {
+     "type": "string",
+     "format": "int64",
+     "description": "The creation time of the domain alias."
+    },
+    "domainAliasName": {
+     "type": "string",
+     "description": "The domain alias name."
+    }
+   }
+  },
+  "Schema": {
+   "type": "object",
+   "description": "The type of API resource.",
+   "properties": {
+    "kind": {
+     "type": "string",
+     "description": "Kind of resource this is."
+    },
+    "displayName": {
+     "type": "string",
+     "description": "Display name for the schema."
+    },
+    "fields": {
+     "type": "array",
+     "description": "A list of fields in the schema.",
+     "items": {
+      "$ref": "SchemaFieldSpec"
+     }
+    },
+    "schemaId": {
+     "type": "string",
+     "description": "The unique identifier of the schema (Read-only)"
+    },
+    "etag": {
+     "type": "string",
+     "description": "The ETag of the resource."
+    },
+    "schemaName": {
+     "type": "string",
+     "description": "The schema's name."
+    }
+   }
+  },
+  "SchemaFieldSpec": {
+   "type": "object",
+   "description": "You can use schemas to add custom fields to user profiles.",
+   "properties": {
+    "fieldName": {
+     "type": "string",
+     "description": "The name of the field."
+    },
+    "etag": {
+     "type": "string",
+     "description": "The ETag of the field."
+    },
+    "numericIndexingSpec": {
+     "type": "object",
+     "description": "Indexing spec for a numeric field.",
+     "properties": {
+      "maxValue": {
+       "type": "number",
+       "format": "double",
+       "description": "Maximum value of this field."
+      },
+      "minValue": {
+       "type": "number",
+       "format": "double",
+       "description": "Minimum value of this field."
+      }
+     }
+    },
+    "multiValued": {
+     "type": "boolean",
+     "description": "A boolean specifying whether this is a multi-valued field or not."
+    },
+    "kind": {
+     "type": "string",
+     "description": "The kind of resource this is."
+    },
+    "fieldType": {
+     "type": "string",
+     "description": "The type of the field."
+    },
+    "fieldId": {
+     "type": "string",
+     "description": "The unique identifier of the field (Read-only)"
+    },
+    "indexed": {
+     "type": "boolean",
+     "description": "Boolean specifying whether the field is indexed or not."
+    },
+    "readAccessType": {
+     "type": "string",
+     "description": "Specifies who can view values of this field."
+    },
+    "displayName": {
+     "type": "string",
+     "description": "Display Name of the field."
+    }
+   }
+  },
+  "Token": {
+   "type": "object",
+   "description": "JSON template for token resource in Directory API.",
+   "properties": {
+    "clientId": {
+     "type": "string",
+     "description": "The Client ID of the application the token is issued to."
+    },
+    "scopes": {
+     "type": "array",
+     "description": "A list of authorization scopes the application is granted.",
+     "items": {
+      "type": "string"
+     }
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "userKey": {
+     "type": "string",
+     "description": "The unique ID of the user that issued the token."
+    },
+    "nativeApp": {
+     "type": "boolean",
+     "description": "Whether the token is issued to an installed application."
+    },
+    "displayText": {
+     "type": "string",
+     "description": "The displayable name of the application the token is issued to."
+    },
+    "anonymous": {
+     "type": "boolean",
+     "description": "Whether the application is registered with Google."
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of the API resource."
+    }
+   }
+  },
+  "Asp": {
+   "type": "object",
+   "description": "An application-specific password (ASP) is used with applications that do not accept a verification code when logging into the application on certain devices.",
+   "properties": {
+    "codeId": {
+     "type": "integer",
+     "format": "int32",
+     "description": "The unique ID of the ASP."
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of the API resource."
+    },
+    "lastTimeUsed": {
+     "type": "string",
+     "format": "int64",
+     "description": "The time when the ASP was last used."
+    },
+    "name": {
+     "type": "string",
+     "description": "The name of the application that the user, represented by their `userId`, entered when the ASP was created."
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the ASP."
+    },
+    "userKey": {
+     "type": "string",
+     "description": "The unique ID of the user who issued the ASP."
+    },
+    "creationTime": {
+     "type": "string",
+     "format": "int64",
+     "description": "The time when the ASP was created."
+    }
+   }
+  },
+  "VerificationCode": {
+   "type": "object",
+   "description": "The Directory API allows you to view, generate, and invalidate backup verification codes for a user.",
+   "properties": {
+    "userId": {
+     "type": "string",
+     "description": "The obfuscated unique ID of the user."
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of the resource."
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "verificationCode": {
+     "type": "string",
+     "description": "A current verification code for the user."
+    }
+   }
+  },
+  "MobileDevice": {
+   "type": "object",
+   "description": "Google Workspace Mobile Management includes Android, [Google Sync](https://support.google.com/a/answer/135937), and iOS devices.",
+   "properties": {
+    "unknownSourcesStatus": {
+     "type": "boolean",
+     "description": "Unknown sources enabled or disabled on device (Read-only)"
+    },
+    "adbStatus": {
+     "type": "boolean",
+     "description": "Adb (USB debugging) enabled or disabled on device (Read-only)"
+    },
+    "devicePasswordStatus": {
+     "type": "string",
+     "description": "DevicePasswordStatus (Read-only)"
+    },
+    "meid": {
+     "type": "string",
+     "description": "The device's MEID number."
+    },
+    "encryptionStatus": {
+     "type": "string",
+     "description": "Mobile Device Encryption Status (Read-only)"
+    },
+    "buildNumber": {
+     "type": "string",
+     "description": "The device's operating system build number."
+    },
+    "applications": {
+     "type": "array",
+     "description": "The list of applications installed on an Android mobile device.",
+     "items": {
+      "type": "object",
+      "properties": {
+       "permission": {
+        "type": "array",
+        "description": "The list of permissions of this application.",
+        "items": {
+         "type": "string"
+        }
+       },
+       "packageName": {
+        "type": "string",
+        "description": "The application's package name."
+       },
+       "versionCode": {
+        "type": "integer",
+        "format": "int32",
+        "description": "The application's version code."
+       },
+       "versionName": {
+        "type": "string",
+        "description": "The application's version name."
+       },
+       "displayName": {
+        "type": "string",
+        "description": "The application's display name."
+       }
+      }
+     }
+    },
+    "deviceId": {
+     "type": "string",
+     "description": "The serial number for a Google Sync mobile device."
+    },
+    "imei": {
+     "type": "string",
+     "description": "The device's IMEI number."
+    },
+    "lastSync": {
+     "type": "string",
+     "format": "date-time",
+     "description": "Date and time the device was last synchronized with the policy settings in the G Suite administrator control panel (Read-only)"
+    },
+    "releaseVersion": {
+     "type": "string",
+     "description": "Mobile Device release version version (Read-only)"
+    },
+    "status": {
+     "type": "string",
+     "description": "The device's status."
+    },
+    "supportsWorkProfile": {
+     "type": "boolean",
+     "description": "Work profile supported on device (Read-only)"
+    },
+    "otherAccountsInfo": {
+     "type": "array",
+     "description": "The list of accounts added on device (Read-only)",
+     "items": {
+      "type": "string"
+     }
+    },
+    "os": {
+     "type": "string",
+     "description": "The mobile device's operating system, for example IOS 4.3 or Android 2.3.5."
+    },
+    "developerOptionsStatus": {
+     "type": "boolean",
+     "description": "Developer options enabled or disabled on device (Read-only)"
+    },
+    "firstSync": {
+     "type": "string",
+     "format": "date-time",
+     "description": "Date and time the device was first synchronized with the policy settings in the G Suite administrator control panel (Read-only)"
+    },
+    "wifiMacAddress": {
+     "type": "string",
+     "description": "The device's MAC address on Wi-Fi networks."
+    },
+    "manufacturer": {
+     "type": "string",
+     "description": "Mobile Device manufacturer (Read-only)"
+    },
+    "networkOperator": {
+     "type": "string",
+     "description": "Mobile Device mobile or network operator (if available) (Read-only)"
+    },
+    "brand": {
+     "type": "string",
+     "description": "Mobile Device Brand (Read-only)"
+    },
+    "name": {
+     "type": "array",
+     "description": "The list of the owner's user names.",
+     "items": {
+      "type": "string"
+     }
+    },
+    "email": {
+     "type": "array",
+     "description": "The list of the owner's email addresses.",
+     "items": {
+      "type": "string"
+     }
+    },
+    "type": {
+     "type": "string",
+     "description": "The type of mobile device."
+    },
+    "deviceCompromisedStatus": {
+     "type": "string",
+     "description": "The compromised device status."
+    },
+    "managedAccountIsOnOwnerProfile": {
+     "type": "boolean",
+     "description": "Boolean indicating if this account is on owner/primary profile or not."
+    },
+    "securityPatchLevel": {
+     "type": "string",
+     "format": "int64",
+     "description": "Mobile Device Security patch level (Read-only)"
+    },
+    "serialNumber": {
+     "type": "string",
+     "description": "The device's serial number."
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "model": {
+     "type": "string",
+     "description": "The mobile device's model name, for example Nexus S."
+    },
+    "userAgent": {
+     "type": "string",
+     "description": "Gives information about the device such as `os` version."
+    },
+    "hardwareId": {
+     "type": "string",
+     "description": "The IMEI/MEID unique identifier for Android hardware."
+    },
+    "hardware": {
+     "type": "string",
+     "description": "Mobile Device Hardware (Read-only)"
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of the API resource."
+    },
+    "basebandVersion": {
+     "type": "string",
+     "description": "The device's baseband version."
+    },
+    "privilege": {
+     "type": "string",
+     "description": "DMAgentPermission (Read-only)"
+    },
+    "defaultLanguage": {
+     "type": "string",
+     "description": "The default locale used on the device."
+    },
+    "kernelVersion": {
+     "type": "string",
+     "description": "The device's kernel version."
+    },
+    "bootloaderVersion": {
+     "type": "string",
+     "description": "Mobile Device Bootloader version (Read-only)"
+    },
+    "resourceId": {
+     "type": "string",
+     "description": "The unique ID the API service uses to identify the mobile device."
+    }
+   }
+  },
+  "ChromeOsDevice": {
+   "type": "object",
+   "description": "Google Chrome devices run on the [Chrome OS](https://support.google.com/chromeos).",
+   "properties": {
+    "osVersionCompliance": {
+     "type": "string",
+     "readOnly": true,
+     "enum": [
+      "complianceUnspecified",
+      "compliant",
+      "pending",
+      "notCompliant"
+     ],
+     "description": "Output only."
+    },
+    "screenshotFiles": {
+     "type": "array",
+     "description": "A list of screenshot files to download.",
+     "items": {
+      "type": "object",
+      "properties": {
+       "createTime": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Date and time the file was created"
+       },
+       "type": {
+        "type": "string",
+        "description": "File type"
+       },
+       "downloadUrl": {
+        "type": "string",
+        "description": "File download URL"
+       },
+       "name": {
+        "type": "string",
+        "description": "File name"
+       }
+      }
+     }
+    },
+    "status": {
+     "type": "string",
+     "description": "The status of the device."
+    },
+    "cpuStatusReports": {
+     "type": "array",
+     "description": "Reports of CPU utilization and temperature (Read-only)",
+     "items": {
+      "type": "object",
+      "properties": {
+       "cpuTemperatureInfo": {
+        "type": "array",
+        "description": "A list of CPU temperature samples.",
+        "items": {
+         "type": "object",
+         "properties": {
+          "temperature": {
+           "type": "integer",
+           "format": "int32",
+           "description": "Temperature in Celsius degrees."
+          },
+          "label": {
+           "type": "string",
+           "description": "CPU label"
+          }
+         }
+        }
+       },
+       "cpuUtilizationPercentageInfo": {
+        "type": "array",
+        "items": {
+         "type": "integer",
+         "format": "int32"
+        }
+       },
+       "reportTime": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Date and time the report was received."
+       }
+      }
+     }
+    },
+    "fanInfo": {
+     "type": "array",
+     "readOnly": true,
+     "description": "Output only.",
+     "items": {
+      "$ref": "FanInfo"
+     }
+    },
+    "backlightInfo": {
+     "type": "array",
+     "readOnly": true,
+     "description": "Output only.",
+     "items": {
+      "$ref": "BacklightInfo"
+     }
+    },
+    "lastEnrollmentTime": {
+     "type": "string",
+     "format": "date-time",
+     "description": "Date and time the device was last enrolled (Read-only)"
+    },
+    "autoUpdateThrough": {
+     "type": "string",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "platformVersion": {
+     "type": "string",
+     "description": "The Chrome device's platform version."
+    },
+    "notes": {
+     "type": "string",
+     "description": "Notes about this device added by the administrator."
+    },
+    "orderNumber": {
+     "type": "string",
+     "description": "The device's order number."
+    },
+    "lastSync": {
+     "type": "string",
+     "format": "date-time",
+     "description": "Date and time the device was last synchronized with the policy settings in the G Suite administrator control panel (Read-only)"
+    },
+    "orgUnitId": {
+     "type": "string",
+     "description": "The unique ID of the organizational unit."
+    },
+    "dockMacAddress": {
+     "type": "string",
+     "description": "(Read-only) Built-in MAC address for the docking station that the device connected to."
+    },
+    "diskSpaceUsage": {
+     "$ref": "ByteUsage",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "osUpdateStatus": {
+     "$ref": "OsUpdateStatus",
+     "description": "The status of the OS updates for the device."
+    },
+    "systemRamFreeReports": {
+     "type": "array",
+     "description": "Reports of amounts of available RAM memory (Read-only)",
+     "items": {
+      "type": "object",
+      "properties": {
+       "reportTime": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Date and time the report was received."
+       },
+       "systemRamFreeInfo": {
+        "type": "array",
+        "items": {
+         "type": "string",
+         "format": "int64"
+        }
+       }
+      }
+     }
+    },
+    "diskVolumeReports": {
+     "type": "array",
+     "description": "Reports of disk space and other info about mounted/connected volumes.",
+     "items": {
+      "type": "object",
+      "properties": {
+       "volumeInfo": {
+        "type": "array",
+        "description": "Disk volumes",
+        "items": {
+         "type": "object",
+         "properties": {
+          "storageTotal": {
+           "type": "string",
+           "format": "int64",
+           "description": "Total disk space [in bytes]"
+          },
+          "storageFree": {
+           "type": "string",
+           "format": "int64",
+           "description": "Free disk space [in bytes]"
+          },
+          "volumeId": {
+           "type": "string",
+           "description": "Volume id"
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "manufactureDate": {
+     "type": "string",
+     "description": "(Read-only) The date the device was manufactured in yyyy-mm-dd format."
+    },
+    "firstEnrollmentTime": {
+     "type": "string",
+     "description": "Date and time for the first time the device was enrolled."
+    },
+    "annotatedUser": {
+     "type": "string",
+     "description": "The user of the device as noted by the administrator."
+    },
+    "lastDeprovisionTimestamp": {
+     "type": "string",
+     "description": "(Read-only) Date and time for the last deprovision of the device."
+    },
+    "ethernetMacAddress0": {
+     "type": "string",
+     "description": "(Read-only) MAC address used by the Chromebook’s internal ethernet port, and for onboard network (ethernet) interface."
+    },
+    "deviceFiles": {
+     "type": "array",
+     "description": "A list of device files to download (Read-only)",
+     "items": {
+      "type": "object",
+      "properties": {
+       "type": {
+        "type": "string",
+        "description": "File type"
+       },
+       "downloadUrl": {
+        "type": "string",
+        "description": "File download URL"
+       },
+       "name": {
+        "type": "string",
+        "description": "File name"
+       },
+       "createTime": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Date and time the file was created"
+       }
+      }
+     }
+    },
+    "ethernetMacAddress": {
+     "type": "string",
+     "description": "The device's MAC address on the ethernet network interface."
+    },
+    "extendedSupportEligible": {
+     "type": "boolean",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "systemRamTotal": {
+     "type": "string",
+     "format": "int64",
+     "description": "Total RAM on the device [in bytes] (Read-only)"
+    },
+    "tpmVersionInfo": {
+     "type": "object",
+     "description": "Trusted Platform Module (TPM) (Read-only)",
+     "properties": {
+      "firmwareVersion": {
+       "type": "string",
+       "description": "TPM firmware version."
+      },
+      "family": {
+       "type": "string",
+       "description": "TPM family."
+      },
+      "vendorSpecific": {
+       "type": "string",
+       "description": "Vendor-specific information such as Vendor ID."
+      },
+      "tpmModel": {
+       "type": "string",
+       "description": "TPM model number."
+      },
+      "specLevel": {
+       "type": "string",
+       "description": "TPM specification level."
+      },
+      "manufacturer": {
+       "type": "string",
+       "description": "TPM manufacturer code."
+      }
+     }
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of resource."
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "annotatedLocation": {
+     "type": "string",
+     "description": "The address or location of the device as noted by the administrator."
+    },
+    "recentUsers": {
+     "type": "array",
+     "description": "A list of recent device users, in descending order, by last login time.",
+     "items": {
+      "type": "object",
+      "description": "A list of recent device users, in descending order, by last login time.",
+      "properties": {
+       "email": {
+        "type": "string",
+        "description": "The user's email address."
+       },
+       "type": {
+        "type": "string",
+        "description": "The type of the user."
+       }
+      }
+     }
+    },
+    "activeTimeRanges": {
+     "type": "array",
+     "description": "A list of active time ranges (Read-only).",
+     "items": {
+      "type": "object",
+      "properties": {
+       "date": {
+        "type": "string",
+        "format": "date",
+        "description": "Date of usage"
+       },
+       "activeTime": {
+        "type": "integer",
+        "format": "int32",
+        "description": "Duration of usage in milliseconds."
+       }
+      }
+     }
+    },
+    "deviceLicenseType": {
+     "type": "string",
+     "readOnly": true,
+     "enum": [
+      "deviceLicenseTypeUnspecified",
+      "enterprise",
+      "enterpriseUpgrade",
+      "educationUpgrade",
+      "education",
+      "kioskUpgrade",
+      "enterpriseUpgradePerpetual",
+      "enterpriseUpgradeFixedTerm",
+      "educationUpgradePerpetual",
+      "educationUpgradeFixedTerm"
+     ],
+     "description": "Output only."
+    },
+    "model": {
+     "type": "string",
+     "description": "The device's model information."
+    },
+    "chromeOsType": {
+     "type": "string",
+     "readOnly": true,
+     "enum": [
+      "chromeOsTypeUnspecified",
+      "chromeOsFlex",
+      "chromeOs"
+     ],
+     "description": "Output only."
+    },
+    "bootMode": {
+     "type": "string",
+     "description": "The boot mode for the device."
+    },
+    "deprovisionReason": {
+     "type": "string",
+     "enum": [
+      "DEPROVISION_REASON_UNSPECIFIED",
+      "DEPROVISION_REASON_SAME_MODEL_REPLACEMENT",
+      "DEPROVISION_REASON_UPGRADE",
+      "DEPROVISION_REASON_DOMAIN_MOVE",
+      "DEPROVISION_REASON_SERVICE_EXPIRATION",
+      "DEPROVISION_REASON_OTHER",
+      "DEPROVISION_REASON_DIFFERENT_MODEL_REPLACEMENT",
+      "DEPROVISION_REASON_RETIRING_DEVICE",
+      "DEPROVISION_REASON_UPGRADE_TRANSFER",
+      "DEPROVISION_REASON_NOT_REQUIRED",
+      "DEPROVISION_REASON_REPAIR_CENTER"
+     ],
+     "description": "(Read-only) Deprovision reason."
+    },
+    "serialNumber": {
+     "type": "string",
+     "description": "The Chrome device serial number entered when the device was enabled."
+    },
+    "supportEndDate": {
+     "type": "string",
+     "format": "date-time",
+     "description": "Final date the device will be supported (Read-only)"
+    },
+    "extendedSupportEnabled": {
+     "type": "boolean",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "macAddress": {
+     "type": "string",
+     "description": "The device's wireless MAC address."
+    },
+    "deviceId": {
+     "type": "string",
+     "description": "The unique ID of the Chrome device."
+    },
+    "cpuInfo": {
+     "type": "array",
+     "description": "Information regarding CPU specs in the device.",
+     "items": {
+      "type": "object",
+      "description": "CPU specs for a CPU.",
+      "properties": {
+       "model": {
+        "type": "string",
+        "description": "The CPU model name."
+       },
+       "architecture": {
+        "type": "string",
+        "description": "The CPU architecture."
+       },
+       "maxClockSpeedKhz": {
+        "type": "integer",
+        "format": "int32",
+        "description": "The max CPU clock speed in kHz."
+       },
+       "logicalCpus": {
+        "type": "array",
+        "description": "Information for the Logical CPUs",
+        "items": {
+         "type": "object",
+         "description": "Status of a single logical CPU.",
+         "properties": {
+          "maxScalingFrequencyKhz": {
+           "type": "integer",
+           "format": "int32",
+           "description": "Maximum frequency the CPU is allowed to run at, by policy."
+          },
+          "cStates": {
+           "type": "array",
+           "description": "C-States indicate the power consumption state of the CPU.",
+           "items": {
+            "type": "object",
+            "description": "Status of a single C-state.",
+            "properties": {
+             "displayName": {
+              "type": "string",
+              "description": "Name of the state."
+             },
+             "sessionDuration": {
+              "type": "string",
+              "format": "google-duration",
+              "description": "Time spent in the state since the last reboot."
+             }
+            }
+           }
+          },
+          "currentScalingFrequencyKhz": {
+           "type": "integer",
+           "format": "int32",
+           "description": "Current frequency the CPU is running at."
+          },
+          "idleDuration": {
+           "type": "string",
+           "format": "google-duration",
+           "description": "Idle time since last boot."
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "willAutoRenew": {
+     "type": "boolean",
+     "description": "Determines if the device will auto renew its support after the support end date."
+    },
+    "osVersion": {
+     "type": "string",
+     "description": "The Chrome device's operating system version."
+    },
+    "firmwareVersion": {
+     "type": "string",
+     "description": "The Chrome device's firmware version."
+    },
+    "bluetoothAdapterInfo": {
+     "type": "array",
+     "readOnly": true,
+     "description": "Output only.",
+     "items": {
+      "$ref": "BluetoothAdapterInfo"
+     }
+    },
+    "orgUnitPath": {
+     "type": "string",
+     "description": "The full parent path with the organizational unit's name associated with the device."
+    },
+    "lastKnownNetwork": {
+     "type": "array",
+     "description": "Contains last known network (Read-only)",
+     "items": {
+      "type": "object",
+      "description": "Information for an ip address.",
+      "properties": {
+       "wanIpAddress": {
+        "type": "string",
+        "description": "The WAN IP address."
+       },
+       "ipAddress": {
+        "type": "string",
+        "description": "The IP address."
+       }
+      }
+     }
+    },
+    "meid": {
+     "type": "string",
+     "description": "The Mobile Equipment Identifier (MEID) or the International Mobile Equipment Identity (IMEI) for the 3G mobile card in a mobile device."
+    },
+    "annotatedAssetId": {
+     "type": "string",
+     "description": "The asset identifier as noted by an administrator or specified during enrollment."
+    },
+    "extendedSupportStart": {
+     "type": "string",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "autoUpdateExpiration": {
+     "type": "string",
+     "format": "int64",
+     "description": "(Read-only) The timestamp after which the device will stop receiving Chrome updates or support."
+    }
+   }
+  },
+  "Building": {
+   "type": "object",
+   "description": "Public API: Resources.buildings",
+   "properties": {
+    "etags": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "address": {
+     "$ref": "BuildingAddress",
+     "description": "The postal address of the building."
+    },
+    "description": {
+     "type": "string",
+     "description": "A brief description of the building."
+    },
+    "buildingId": {
+     "type": "string",
+     "description": "Unique identifier for the building."
+    },
+    "coordinates": {
+     "$ref": "BuildingCoordinates",
+     "description": "The geographic coordinates of the center of the building, expressed as latitude and longitude in decimal degrees."
+    },
+    "buildingName": {
+     "type": "string",
+     "description": "The building name as seen by users in Calendar."
+    },
+    "floorNames": {
+     "type": "array",
+     "description": "The display names for all floors in this building.",
+     "items": {
+      "type": "string"
+     }
+    },
+    "kind": {
+     "type": "string",
+     "description": "Kind of resource this is."
+    }
+   }
+  },
+  "BuildingAddress": {
+   "type": "object",
+   "description": "Public API: Resources.buildings",
+   "properties": {
+    "postalCode": {
+     "type": "string",
+     "description": "Optional."
+    },
+    "locality": {
+     "type": "string",
+     "description": "Optional."
+    },
+    "administrativeArea": {
+     "type": "string",
+     "description": "Optional."
+    },
+    "sublocality": {
+     "type": "string",
+     "description": "Optional."
+    },
+    "addressLines": {
+     "type": "array",
+     "description": "Unstructured address lines describing the lower levels of an address.",
+     "items": {
+      "type": "string"
+     }
+    },
+    "regionCode": {
+     "type": "string",
+     "description": "Required."
+    },
+    "languageCode": {
+     "type": "string",
+     "description": "Optional."
+    }
+   }
+  },
+  "BuildingCoordinates": {
+   "type": "object",
+   "description": "Public API: Resources.buildings",
+   "properties": {
+    "latitude": {
+     "type": "number",
+     "format": "double",
+     "description": "Latitude in decimal degrees."
+    },
+    "longitude": {
+     "type": "number",
+     "format": "double",
+     "description": "Longitude in decimal degrees."
+    }
+   }
+  },
+  "CalendarResource": {
+   "type": "object",
+   "description": "Public API: Resources.calendars",
+   "properties": {
+    "resourceType": {
+     "type": "string",
+     "description": "The type of the calendar resource, intended for non-room resources."
+    },
+    "resourceDescription": {
+     "type": "string",
+     "description": "Description of the resource, visible only to admins."
+    },
+    "generatedResourceName": {
+     "type": "string",
+     "description": "The read-only auto-generated name of the calendar resource which includes metadata about the resource such as building name, floor, capacity, etc."
+    },
+    "userVisibleDescription": {
+     "type": "string",
+     "description": "Description of the resource, visible to users and admins."
+    },
+    "resourceEmail": {
+     "type": "string",
+     "description": "The read-only email for the calendar resource."
+    },
+    "capacity": {
+     "type": "integer",
+     "format": "int32",
+     "description": "Capacity of a resource, number of seats in a room."
+    },
+    "etags": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "resourceCategory": {
+     "type": "string",
+     "description": "The category of the calendar resource."
+    },
+    "floorName": {
+     "type": "string",
+     "description": "Name of the floor a resource is located on."
+    },
+    "floorSection": {
+     "type": "string",
+     "description": "Name of the section within a floor a resource is located in."
+    },
+    "resourceId": {
+     "type": "string",
+     "description": "The unique ID for the calendar resource."
+    },
+    "buildingId": {
+     "type": "string",
+     "description": "Unique ID for the building a resource is located in."
+    },
+    "featureInstances": {
+     "type": "any",
+     "description": "Instances of features for the calendar resource."
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of the resource."
+    },
+    "resourceName": {
+     "type": "string",
+     "description": "The name of the calendar resource."
+    }
+   }
+  },
+  "Feature": {
+   "type": "object",
+   "description": "JSON template for Feature object in Directory API.",
+   "properties": {
+    "etags": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "kind": {
+     "type": "string",
+     "description": "Kind of resource this is."
+    },
+    "name": {
+     "type": "string",
+     "description": "The name of the feature."
+    }
+   }
+  },
+  "Activity": {
+   "type": "object",
+   "description": "JSON template for the activity resource.",
+   "properties": {
+    "id": {
+     "type": "object",
+     "description": "Unique identifier for each activity record.",
+     "properties": {
+      "customerId": {
+       "type": "string",
+       "description": "The unique identifier for a Google Workspace account."
+      },
+      "time": {
+       "type": "string",
+       "format": "date-time",
+       "description": "Time of occurrence of the activity."
+      },
+      "applicationName": {
+       "type": "string",
+       "description": "Application name to which the event belongs."
+      },
+      "uniqueQualifier": {
+       "type": "string",
+       "format": "int64",
+       "description": "Unique qualifier if multiple events have the same time."
+      }
+     }
+    },
+    "ownerDomain": {
+     "type": "string",
+     "description": "This is the domain that is affected by the report's event."
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the entry."
+    },
+    "isAgenticAction": {
+     "type": "boolean",
+     "description": "Whether the activity was performed by an agent."
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of API resource."
+    },
+    "events": {
+     "type": "array",
+     "description": "Activity events in the report.",
+     "items": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": "string",
+        "description": "Name of the event."
+       },
+       "type": {
+        "type": "string",
+        "description": "Type of event."
+       },
+       "status": {
+        "$ref": "ActivityEventsStatus",
+        "description": "Status of the event."
+       },
+       "sensitiveParameters": {
+        "type": "array",
+        "description": "Includes sensitive parameter value pairs for various applications.",
+        "items": {
+         "type": "object",
+         "properties": {
+          "multiIntValue": {
+           "type": "array",
+           "description": "Integer values of the parameter.",
+           "items": {
+            "type": "string",
+            "format": "int64"
+           }
+          },
+          "messageValue": {
+           "type": "object",
+           "description": "Nested parameter value pairs associated with this parameter.",
+           "properties": {
+            "parameter": {
+             "type": "array",
+             "description": "Parameter values",
+             "items": {
+              "$ref": "NestedParameter"
+             }
+            }
+           }
+          },
+          "value": {
+           "type": "string",
+           "description": "String value of the parameter."
+          },
+          "name": {
+           "type": "string",
+           "description": "The name of the parameter."
+          },
+          "multiMessageValue": {
+           "type": "array",
+           "description": "List of `messageValue` objects.",
+           "items": {
+            "type": "object",
+            "properties": {
+             "parameter": {
+              "type": "array",
+              "description": "Parameter values",
+              "items": {
+               "$ref": "NestedParameter"
+              }
+             }
+            }
+           }
+          },
+          "boolValue": {
+           "type": "boolean",
+           "description": "Boolean value of the parameter."
+          },
+          "intValue": {
+           "type": "string",
+           "format": "int64",
+           "description": "Integer value of the parameter."
+          },
+          "multiValue": {
+           "type": "array",
+           "description": "String values of the parameter.",
+           "items": {
+            "type": "string"
+           }
+          }
+         }
+        }
+       },
+       "resourceIds": {
+        "type": "array",
+        "description": "Resource ids associated with the event.",
+        "items": {
+         "type": "string"
+        }
+       },
+       "parameters": {
+        "type": "array",
+        "description": "Parameter value pairs for various applications.",
+        "items": {
+         "type": "object",
+         "properties": {
+          "messageValue": {
+           "type": "object",
+           "description": "Nested parameter value pairs associated with this parameter.",
+           "properties": {
+            "parameter": {
+             "type": "array",
+             "description": "Parameter values",
+             "items": {
+              "$ref": "NestedParameter"
+             }
+            }
+           }
+          },
+          "intValue": {
+           "type": "string",
+           "format": "int64",
+           "description": "Integer value of the parameter."
+          },
+          "multiMessageValue": {
+           "type": "array",
+           "description": "List of `messageValue` objects.",
+           "items": {
+            "type": "object",
+            "properties": {
+             "parameter": {
+              "type": "array",
+              "description": "Parameter values",
+              "items": {
+               "$ref": "NestedParameter"
+              }
+             }
+            }
+           }
+          },
+          "name": {
+           "type": "string",
+           "description": "The name of the parameter."
+          },
+          "multiIntValue": {
+           "type": "array",
+           "description": "Integer values of the parameter.",
+           "items": {
+            "type": "string",
+            "format": "int64"
+           }
+          },
+          "multiValue": {
+           "type": "array",
+           "description": "String values of the parameter.",
+           "items": {
+            "type": "string"
+           }
+          },
+          "boolValue": {
+           "type": "boolean",
+           "description": "Boolean value of the parameter."
+          },
+          "value": {
+           "type": "string",
+           "description": "String value of the parameter."
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "ipAddress": {
+     "type": "string",
+     "description": "IP address of the user doing the action."
+    },
+    "userDeviceInfo": {
+     "$ref": "ActivityUserDeviceInfo",
+     "description": "Device details of the user doing the action."
+    },
+    "actor": {
+     "type": "object",
+     "description": "User doing the action.",
+     "properties": {
+      "agentAttributionInfo": {
+       "$ref": "AgentAttributionInfo",
+       "description": "Details of the AI agent that was the actor for the activity."
+      },
+      "callerType": {
+       "type": "string",
+       "description": "The type of actor."
+      },
+      "applicationInfo": {
+       "type": "object",
+       "description": "Details of the application that was the actor for the activity.",
+       "properties": {
+        "oauthClientId": {
+         "type": "string",
+         "description": "OAuth client id of the third party application used to perform the action."
+        },
+        "applicationName": {
+         "type": "string",
+         "description": "Name of the application used to perform the action."
+        },
+        "impersonation": {
+         "type": "boolean",
+         "description": "Whether the application was impersonating a user."
+        }
+       }
+      },
+      "profileId": {
+       "type": "string",
+       "description": "The unique Google Workspace profile ID of the actor."
+      },
+      "key": {
+       "type": "string",
+       "description": "Only present when `callerType` is `KEY`."
+      },
+      "email": {
+       "type": "string",
+       "description": "The primary email address of the actor."
+      }
+     }
+    },
+    "resourceDetails": {
+     "type": "array",
+     "description": "Details of the resource on which the action was performed.",
+     "items": {
+      "$ref": "ResourceDetails"
+     }
+    },
+    "networkInfo": {
+     "$ref": "ActivityNetworkInfo",
+     "description": "Network information of the user doing the action."
+    }
+   }
+  },
+  "UsageReport": {
+   "type": "object",
+   "description": "JSON template for a usage report.",
+   "properties": {
+    "parameters": {
+     "type": "array",
+     "readOnly": true,
+     "description": "Output only.",
+     "items": {
+      "type": "object",
+      "properties": {
+       "datetimeValue": {
+        "type": "string",
+        "format": "date-time",
+        "readOnly": true,
+        "description": "The RFC 3339 formatted value of the parameter, for example 2010-10-28T10:26:35.000Z."
+       },
+       "msgValue": {
+        "type": "array",
+        "readOnly": true,
+        "description": "Output only.",
+        "items": {
+         "type": "object",
+         "additionalProperties": true
+        }
+       },
+       "name": {
+        "type": "string",
+        "description": "The name of the parameter."
+       },
+       "intValue": {
+        "type": "string",
+        "format": "int64",
+        "readOnly": true,
+        "description": "Output only."
+       },
+       "stringValue": {
+        "type": "string",
+        "readOnly": true,
+        "description": "Output only."
+       },
+       "boolValue": {
+        "type": "boolean",
+        "readOnly": true,
+        "description": "Output only."
+       }
+      }
+     }
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of API resource."
+    },
+    "date": {
+     "type": "string",
+     "readOnly": true,
+     "description": "Output only."
+    },
+    "entity": {
+     "type": "object",
+     "readOnly": true,
+     "description": "Output only.",
+     "properties": {
+      "customerId": {
+       "type": "string",
+       "readOnly": true,
+       "description": "Output only."
+      },
+      "userEmail": {
+       "type": "string",
+       "readOnly": true,
+       "description": "Output only."
+      },
+      "profileId": {
+       "type": "string",
+       "readOnly": true,
+       "description": "Output only."
+      },
+      "entityId": {
+       "type": "string",
+       "readOnly": true,
+       "description": "Output only."
+      },
+      "type": {
+       "type": "string",
+       "readOnly": true,
+       "description": "Output only."
+      }
+     }
+    }
+   }
+  },
+  "LicenseAssignment": {
+   "type": "object",
+   "description": "Representation of a license assignment.",
+   "properties": {
+    "kind": {
+     "type": "string",
+     "description": "Identifies the resource as a LicenseAssignment, which is `licensing#licenseAssignment`."
+    },
+    "skuId": {
+     "type": "string",
+     "description": "A product SKU's unique identifier."
+    },
+    "productName": {
+     "type": "string",
+     "description": "Display Name of the product."
+    },
+    "skuName": {
+     "type": "string",
+     "description": "Display Name of the sku of the product."
+    },
+    "etags": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "selfLink": {
+     "type": "string",
+     "description": "Link to this page."
+    },
+    "userId": {
+     "type": "string",
+     "description": "The user's current primary email address."
+    },
+    "productId": {
+     "type": "string",
+     "description": "A product's unique identifier."
+    }
+   }
+  },
+  "DataTransfer": {
+   "type": "object",
+   "description": "A Transfer resource represents the transfer of the ownership of user data between users.",
+   "properties": {
+    "overallTransferStatusCode": {
+     "type": "string",
+     "description": "Read-only."
+    },
+    "oldOwnerUserId": {
+     "type": "string",
+     "description": "ID of the user whose data is being transferred."
+    },
+    "kind": {
+     "type": "string",
+     "description": "Identifies the resource as a DataTransfer request."
+    },
+    "id": {
+     "type": "string",
+     "description": "Read-only."
+    },
+    "newOwnerUserId": {
+     "type": "string",
+     "description": "ID of the user to whom the data is being transferred."
+    },
+    "applicationDataTransfers": {
+     "type": "array",
+     "description": "The list of per-application data transfer resources.",
+     "items": {
+      "$ref": "ApplicationDataTransfer"
+     }
+    },
+    "etag": {
+     "type": "string",
+     "description": "ETag of the resource."
+    },
+    "requestTime": {
+     "type": "string",
+     "format": "date-time",
+     "description": "Read-only."
+    }
+   }
+  },
+  "GroupSettings": {
+   "type": "object",
+   "description": "JSON template for Group resource",
+   "properties": {
+    "allowWebPosting": {
+     "type": "string",
+     "description": "Allows posting from web."
+    },
+    "whoCanViewGroup": {
+     "type": "string",
+     "description": "Permissions to view group messages."
+    },
+    "replyTo": {
+     "type": "string",
+     "description": "Specifies who receives the default reply."
+    },
+    "whoCanModifyMembers": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "sendMessageDenyNotification": {
+     "type": "string",
+     "description": "Allows a member to be notified if the member's message to the group is denied by the group owner."
+    },
+    "archiveOnly": {
+     "type": "string",
+     "description": "Allows the group to be archived only."
+    },
+    "whoCanAssistContent": {
+     "type": "string",
+     "description": "Specifies who can moderate metadata."
+    },
+    "primaryLanguage": {
+     "type": "string",
+     "description": "The primary language for group."
+    },
+    "whoCanApproveMembers": {
+     "type": "string",
+     "description": "Specifies who can approve members who ask to join groups."
+    },
+    "customRolesEnabledForSettingsToBeMerged": {
+     "type": "string",
+     "description": "Specifies whether the group has a custom role that's included in one of the settings being merged."
+    },
+    "whoCanMarkFavoriteReplyOnAnyTopic": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "whoCanPostAnnouncements": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "whoCanDiscoverGroup": {
+     "type": "string",
+     "description": "Specifies the set of users for whom this group is discoverable."
+    },
+    "whoCanMoveTopicsIn": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "messageModerationLevel": {
+     "type": "string",
+     "description": "Moderation level of incoming messages."
+    },
+    "whoCanTakeTopics": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "maxMessageBytes": {
+     "type": "integer",
+     "format": "int32",
+     "description": "Deprecated."
+    },
+    "email": {
+     "type": "string",
+     "description": "The group's email address."
+    },
+    "whoCanJoin": {
+     "type": "string",
+     "description": "Permission to join group."
+    },
+    "whoCanPostMessage": {
+     "type": "string",
+     "description": "Permissions to post messages."
+    },
+    "whoCanMarkNoResponseNeeded": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "whoCanUnmarkFavoriteReplyOnAnyTopic": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "whoCanModerateContent": {
+     "type": "string",
+     "description": "Specifies who can moderate content."
+    },
+    "allowExternalMembers": {
+     "type": "string",
+     "description": "Identifies whether members external to your organization can join the group."
+    },
+    "spamModerationLevel": {
+     "type": "string",
+     "description": "Specifies moderation levels for messages detected as spam."
+    },
+    "whoCanAssignTopics": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "whoCanDeleteAnyPost": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "whoCanModifyTagsAndCategories": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "includeInGlobalAddressList": {
+     "type": "string",
+     "description": "Enables the group to be included in the Global Address List."
+    },
+    "defaultMessageDenyNotificationText": {
+     "type": "string",
+     "description": "When a message is rejected, this is text for the rejection notification sent to the message's author."
+    },
+    "whoCanApproveMessages": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "favoriteRepliesOnTop": {
+     "type": "string",
+     "description": "Indicates if favorite replies should be displayed above other replies."
+    },
+    "whoCanLeaveGroup": {
+     "type": "string",
+     "description": "Permission to leave the group."
+    },
+    "customFooterText": {
+     "type": "string",
+     "description": "Set the content of custom footer text."
+    },
+    "whoCanMarkFavoriteReplyOnOwnTopic": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "messageDisplayFont": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "kind": {
+     "type": "string",
+     "description": "The type of the resource."
+    },
+    "whoCanHideAbuse": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "whoCanEnterFreeFormTags": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "membersCanPostAsTheGroup": {
+     "type": "string",
+     "description": "Enables members to post messages as the group."
+    },
+    "whoCanMakeTopicsSticky": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "default_sender": {
+     "type": "string",
+     "description": "Default sender for members who can post messages as the group."
+    },
+    "whoCanViewMembership": {
+     "type": "string",
+     "description": "Permissions to view membership."
+    },
+    "whoCanDeleteTopics": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "description": {
+     "type": "string",
+     "description": "Description of the group."
+    },
+    "allowGoogleCommunication": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "whoCanLockTopics": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "showInGroupDirectory": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "whoCanInvite": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "isArchived": {
+     "type": "string",
+     "description": "Allows the Group contents to be archived."
+    },
+    "enableCollaborativeInbox": {
+     "type": "string",
+     "description": "Specifies whether a collaborative inbox will remain turned on for the group."
+    },
+    "whoCanUnassignTopic": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "name": {
+     "type": "string",
+     "description": "Name of the group, which has a maximum size of 75 characters."
+    },
+    "customReplyTo": {
+     "type": "string",
+     "description": "An email address used when replying to a message if the replyTo property is set to REPLY_TO_CUSTOM."
+    },
+    "whoCanBanUsers": {
+     "type": "string",
+     "description": "Specifies who can deny membership to users."
+    },
+    "whoCanMoveTopicsOut": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "whoCanAdd": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "whoCanModerateMembers": {
+     "type": "string",
+     "description": "Specifies who can manage members."
+    },
+    "whoCanAddExternalMembers": {
+     "type": "string",
+     "description": "Specifies who can add external members."
+    },
+    "whoCanMarkDuplicate": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "whoCanContactOwner": {
+     "type": "string",
+     "description": "Permission to contact owner of the group via web UI."
+    },
+    "whoCanAddReferences": {
+     "type": "string",
+     "description": "Deprecated."
+    },
+    "includeCustomFooter": {
+     "type": "string",
+     "description": "Whether to include custom footer."
+    }
+   }
+  }
+ }
+}
