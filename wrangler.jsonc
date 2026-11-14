@@ -3,6 +3,10 @@
   "main": "worker.ts",
   "name": "erpax",
   "account_id": "833ef8eaf4ae2d917549f76765477475",
+  // Declaring `routes` turns workers.dev OFF unless it is set here: erpax.ceci.workers.dev is how the erpax MCP
+  // connector (.mcp.json) and any pre-domain access reach the app, so it stays on. While a zone Redirect Rule
+  // still sends the routed hosts elsewhere (it runs before Workers), this is the only public path to the app.
+  "workers_dev": true,
   // The apex and each app's own host (<app>.erpax.com: its pages, and its MCP server at /mcp — see
   // src/plugins/mcp/apps). Named, not a *.erpax.com wildcard: a wildcard route would also capture any other
   // subdomain of the zone that points at a different origin. One host per app in src/packages/index.ts.
