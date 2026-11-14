@@ -50,6 +50,7 @@
     "@payloadcms/plugin-redirects": "4.0.0-internal.38b7f1d",
     "@payloadcms/plugin-search": "4.0.0-internal.38b7f1d",
     "@payloadcms/plugin-seo": "4.0.0-internal.38b7f1d",
+    "@payloadcms/plugin-stripe": "4.0.0-internal.38b7f1d",
     "@payloadcms/richtext-lexical": "4.0.0-internal.38b7f1d",
     "@payloadcms/sdk": "4.0.0-internal.38b7f1d",
     "@payloadcms/storage-r2": "4.0.0-internal.38b7f1d",

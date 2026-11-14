@@ -8,6 +8,7 @@ import type { CloudflareContext } from '@opennextjs/cloudflare'
 import { GetPlatformProxyOptions } from 'wrangler'
 import { multiTenantPlugin } from '@payloadcms/plugin-multi-tenant'
 import { mcpPlugin } from '@payloadcms/plugin-mcp'
+import { stripePlugin } from '@payloadcms/plugin-stripe'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { referenceTargets, referencesField } from '@/seed/forms'
 import { searchPlugin } from '@payloadcms/plugin-search'
@@ -22,6 +23,7 @@ import { taggablePlugin } from '@/plugins/taggable'
 import { longNamesPlugin } from '@/plugins/naming'
 import { indexesPlugin } from '@/plugins/indexes'
 import { handlesPlugin } from '@/plugins/handles'
+import { appMcp } from '@/plugins/mcp/apps'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
 import { mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
 import { versionsPlugin } from '@/plugins/versions'
@@ -479,6 +481,17 @@ export default buildConfig({
     // injected and no hook is wired. Adding a mapping is a schema change and needs a migration in
     // the same diff; without TRELLO_API_KEY + TRELLO_TOKEN there is no client, so the plugin stays
     // field-only rather than half-wired. See `@/utilities/trello` and `@/utilities/trello/plugin`.
+    // Stripe — the official plugin, INERT until a secret is set: with `sync: []` it adds one endpoint
+    // (`/api/stripe/webhooks`) and no field, so there is no schema change and nothing to migrate.
+    // Customer/product sync is a mapping added here with its migration; the ecommerce component keeps
+    // its own payment adapter. Secrets come from the environment (STRIPE_SECRET_KEY,
+    // STRIPE_WEBHOOKS_ENDPOINT_SECRET), never from code.
+    stripePlugin({
+      stripeSecretKey: process.env.STRIPE_SECRET_KEY ?? '',
+      stripeWebhooksEndpointSecret: process.env.STRIPE_WEBHOOKS_ENDPOINT_SECRET,
+      isTestKey: (process.env.STRIPE_SECRET_KEY ?? '').startsWith('sk_test_'),
+      sync: [],
+    }),
     trelloPlugin({
       collections: TRELLO_SYNC,
       client: trelloClientFromEnv(),
@@ -515,6 +528,8 @@ export default buildConfig({
     // last: the collections other plugins brought (orders, forms, …) take their app's name too
     navigation(gateByApp),
     // every document gets a handle, and /api/h/:handle resolves one (src/plugins/handles)
+    // <app>.<domain>/mcp serves that app's own collections, the gateway answers elsewhere (src/plugins/mcp/apps)
+    appMcp(APPS),
     handlesPlugin({ predefined: { apps: APPS, providers: PROVIDERS, roles: ACCOUNT_ROLES, locales: supportedLocales } }),
   ],
   secret: payloadSecret || 'INSECURE_BUILD_ONLY_PLACEHOLDER',

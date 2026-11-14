@@ -15,6 +15,9 @@ overrides:
   form-data: ^4.0.6
   ws: ^8.21.0
   js-yaml: ^4.3.2
+  # @payloadcms/plugin-stripe pins stripe ^10; two copies merge their ambient types and break the app's own
+  # Stripe routes (v22). The plugin only calls customers/products/webhooks, so it runs on the app's copy.
+  '@payloadcms/plugin-stripe>stripe': ^22.4.0
   # GHSA-8cw4-87c7-c6xx (Dependabot #91): prototype replacement via the columns path, patched
   # in 7.0.2. This file once refused it as crossing two majors; that refusal was written without
   # reading the changelog. Read: csv-parse 6.0.0's breaks are option renames (relax,
@@ -53,6 +56,7 @@ overrides:
 
 allowBuilds:
   '@parcel/watcher': true
+  '@sentry/cli': set this to true or false
   '@swc/core': true
   esbuild: true
   sharp: true

@@ -14,6 +14,7 @@ overrides:
   form-data: ^4.0.6
   ws: ^8.21.0
   js-yaml: ^4.3.2
+  '@payloadcms/plugin-stripe>stripe': ^22.4.0
   csv-parse@<7.0.2: ^7.0.2
   hono: ^4.13.5
   immutable: ^4.3.9
@@ -85,6 +86,9 @@ importers:
       '@payloadcms/plugin-seo':
         specifier: 4.0.0-internal.38b7f1d
         version: 4.0.0-internal.38b7f1d(@types/react@19.2.18)(monaco-editor@0.55.1)(next@16.3.4(@babel/core@7.29.7)(@playwright/test@1.62.1)(@types/node@24.13.3)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@17.0.2)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@5.9.3)
+      '@payloadcms/plugin-stripe':
+        specifier: 4.0.0-internal.38b7f1d
+        version: 4.0.0-internal.38b7f1d(@types/node@24.13.3)(@types/react@19.2.18)(monaco-editor@0.55.1)(next@16.3.4(@babel/core@7.29.7)(@playwright/test@1.62.1)(@types/node@24.13.3)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@17.0.2)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@5.9.3)
       '@payloadcms/richtext-lexical':
         specifier: 4.0.0-internal.38b7f1d
         version: 4.0.0-internal.38b7f1d(@faceless-ui/modal@3.0.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@faceless-ui/scroll-info@2.0.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@payloadcms/next@4.0.0-internal.38b7f1d(@types/react@19.2.18)(graphql@17.0.2)(monaco-editor@0.55.1)(next@16.3.4(@babel/core@7.29.7)(@playwright/test@1.62.1)(@types/node@24.13.3)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@17.0.2)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@5.9.3))(@types/react@19.2.18)(monaco-editor@0.55.1)(next@16.3.4(@babel/core@7.29.7)(@playwright/test@1.62.1)(@types/node@24.13.3)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@17.0.2)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@5.9.3)(yjs@13.6.30)
@@ -2318,6 +2322,11 @@ packages:
       payload: 4.0.0-internal.38b7f1d
       react: ^19.0.1 || ^19.1.2 || ^19.2.1
       react-dom: ^19.0.1 || ^19.1.2 || ^19.2.1
+
+  '@payloadcms/plugin-stripe@4.0.0-internal.38b7f1d':
+    resolution: {integrity: sha512-18nsc5sP7E0RShpEiixIKqW78u4TJVPSGNHf0effnYe7q9B0v23Y1jpCpy7qORMQraFuzjbim7CWRlN4+ztpqg==}
+    peerDependencies:
+      payload: 4.0.0-internal.38b7f1d
 
   '@payloadcms/richtext-lexical@4.0.0-internal.38b7f1d':
     resolution: {integrity: sha512-4HcIaNxWfq5EVdCCXKE3CYTOJY0snxzl3hPSkS4ecXPB1IApo02bRQ2K1ekfyJLVVxrhg/l64kO8J+qNfuUkPQ==}
@@ -6266,6 +6275,10 @@ packages:
   locate-path@6.0.0:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
+
+  lodash.get@4.4.2:
+    resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
@@ -10392,6 +10405,24 @@ snapshots:
       - '@types/react'
       - monaco-editor
       - next
+      - supports-color
+      - typescript
+
+  '@payloadcms/plugin-stripe@4.0.0-internal.38b7f1d(@types/node@24.13.3)(@types/react@19.2.18)(monaco-editor@0.55.1)(next@16.3.4(@babel/core@7.29.7)(@playwright/test@1.62.1)(@types/node@24.13.3)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@17.0.2)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@5.9.3)':
+    dependencies:
+      '@payloadcms/translations': 4.0.0-internal.38b7f1d
+      '@payloadcms/ui': 4.0.0-internal.38b7f1d(@types/react@19.2.18)(monaco-editor@0.55.1)(next@16.3.4(@babel/core@7.29.7)(@playwright/test@1.62.1)(@types/node@24.13.3)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@17.0.2)(typescript@5.9.3))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(typescript@5.9.3)
+      lodash.get: 4.4.2
+      payload: 4.0.0-internal.38b7f1d(graphql@17.0.2)(typescript@5.9.3)
+      stripe: 22.4.0(@types/node@24.13.3)
+      uuid: 14.0.3
+    transitivePeerDependencies:
+      - '@types/node'
+      - '@types/react'
+      - monaco-editor
+      - next
+      - react
+      - react-dom
       - supports-color
       - typescript
 
@@ -14593,6 +14624,8 @@ snapshots:
   locate-path@6.0.0:
     dependencies:
       p-locate: 5.0.0
+
+  lodash.get@4.4.2: {}
 
   lodash.merge@4.6.2: {}
 
