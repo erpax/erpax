@@ -1,0 +1,319 @@
+{
+ "source": "Okta Admin Management API 2026.44.0 (OpenAPI) — github.com/okta/okta-management-openapi-spec",
+ "schemas": {
+  "User": {
+   "properties": {
+    "activated": {
+     "type": "string",
+     "readOnly": true
+    },
+    "created": {
+     "type": "string",
+     "readOnly": true
+    },
+    "credentials": {
+     "type": "UserCredentials"
+    },
+    "id": {
+     "type": "string",
+     "readOnly": true
+    },
+    "lastLogin": {
+     "type": "string",
+     "readOnly": true
+    },
+    "lastUpdated": {
+     "type": "string",
+     "readOnly": true
+    },
+    "passwordChanged": {
+     "type": "string",
+     "readOnly": true
+    },
+    "profile": {
+     "type": "UserProfile"
+    },
+    "realmId": {
+     "type": "string",
+     "readOnly": true
+    },
+    "status": {
+     "type": "UserStatus"
+    },
+    "statusChanged": {
+     "type": "string",
+     "readOnly": true
+    },
+    "transitioningToStatus": {
+     "type": "string",
+     "readOnly": true
+    },
+    "type": {
+     "type": "object"
+    }
+   }
+  },
+  "UserProfile": {
+   "properties": {
+    "city": {
+     "type": "string"
+    },
+    "costCenter": {
+     "type": "string"
+    },
+    "countryCode": {
+     "type": "string"
+    },
+    "department": {
+     "type": "string"
+    },
+    "displayName": {
+     "type": "string"
+    },
+    "division": {
+     "type": "string"
+    },
+    "email": {
+     "type": "string"
+    },
+    "employeeNumber": {
+     "type": "string"
+    },
+    "firstName": {
+     "type": "string"
+    },
+    "honorificPrefix": {
+     "type": "string"
+    },
+    "honorificSuffix": {
+     "type": "string"
+    },
+    "lastName": {
+     "type": "string"
+    },
+    "locale": {
+     "type": "string"
+    },
+    "login": {
+     "type": "string"
+    },
+    "manager": {
+     "type": "string"
+    },
+    "managerId": {
+     "type": "string"
+    },
+    "middleName": {
+     "type": "string"
+    },
+    "mobilePhone": {
+     "type": "string"
+    },
+    "nickName": {
+     "type": "string"
+    },
+    "organization": {
+     "type": "string"
+    },
+    "postalAddress": {
+     "type": "string"
+    },
+    "preferredLanguage": {
+     "type": "string"
+    },
+    "primaryPhone": {
+     "type": "string"
+    },
+    "profileUrl": {
+     "type": "string"
+    },
+    "secondEmail": {
+     "type": "string"
+    },
+    "state": {
+     "type": "string"
+    },
+    "streetAddress": {
+     "type": "string"
+    },
+    "timezone": {
+     "type": "string"
+    },
+    "title": {
+     "type": "string"
+    },
+    "userType": {
+     "type": "string"
+    },
+    "zipCode": {
+     "type": "string"
+    }
+   }
+  },
+  "Group": {
+   "properties": {
+    "created": {
+     "type": "string",
+     "readOnly": true
+    },
+    "id": {
+     "type": "string",
+     "readOnly": true
+    },
+    "lastMembershipUpdated": {
+     "type": "string",
+     "readOnly": true
+    },
+    "lastUpdated": {
+     "type": "string",
+     "readOnly": true
+    },
+    "objectClass": {
+     "type": "array",
+     "readOnly": true
+    },
+    "profile": {
+     "type": "GroupProfile"
+    },
+    "type": {
+     "type": "GroupType"
+    }
+   }
+  },
+  "OktaUserGroupProfile": {
+   "properties": {
+    "description": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    }
+   }
+  },
+  "Role": {
+   "properties": {
+    "assignmentType": {
+     "type": "RoleAssignmentType"
+    },
+    "created": {
+     "type": "string",
+     "readOnly": true
+    },
+    "description": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string",
+     "readOnly": true
+    },
+    "label": {
+     "type": "string",
+     "readOnly": true
+    },
+    "lastUpdated": {
+     "type": "string",
+     "readOnly": true
+    },
+    "status": {
+     "type": "LifecycleStatus"
+    },
+    "type": {
+     "type": "RoleType"
+    }
+   }
+  },
+  "StandardRoleAssignmentSchema": {
+   "properties": {
+    "type": {
+     "type": "string"
+    }
+   }
+  },
+  "OrgSetting": {
+   "properties": {
+    "address1": {
+     "type": "string"
+    },
+    "address2": {
+     "type": "string"
+    },
+    "city": {
+     "type": "string"
+    },
+    "companyName": {
+     "type": "string"
+    },
+    "country": {
+     "type": "string"
+    },
+    "created": {
+     "type": "string",
+     "readOnly": true
+    },
+    "endUserSupportHelpURL": {
+     "type": "string"
+    },
+    "expiresAt": {
+     "type": "string",
+     "readOnly": true
+    },
+    "id": {
+     "type": "string",
+     "readOnly": true
+    },
+    "lastUpdated": {
+     "type": "string",
+     "readOnly": true
+    },
+    "phoneNumber": {
+     "type": "string"
+    },
+    "postalCode": {
+     "type": "string"
+    },
+    "state": {
+     "type": "string"
+    },
+    "status": {
+     "type": "string",
+     "readOnly": true
+    },
+    "subdomain": {
+     "type": "string",
+     "readOnly": true
+    },
+    "supportPhoneNumber": {
+     "type": "string"
+    },
+    "website": {
+     "type": "string"
+    }
+   }
+  },
+  "DomainResponse": {
+   "properties": {
+    "brandId": {
+     "type": "string"
+    },
+    "certificateSourceType": {
+     "type": "DomainCertificateSourceType"
+    },
+    "dnsRecords": {
+     "type": "array"
+    },
+    "domain": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "publicCertificate": {
+     "type": "DomainCertificateMetadata"
+    },
+    "validationStatus": {
+     "type": "DomainValidationStatus"
+    }
+   }
+  }
+ }
+}

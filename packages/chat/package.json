@@ -1,6 +1,6 @@
 {
   "name": "@erpax/chat",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Chat — rooms, messages, connections. An erpax app, delivered as one Payload plugin. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",

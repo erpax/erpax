@@ -7,6 +7,8 @@ import { localeRecord } from '@/i18n'
 import { seedPresets } from '@/utilities/preset'
 import { updateAndDeleteAccess } from '@/utilities/tenants/access'
 import { normalizeTenantDomain, normalizeTenantSlug } from '@/utilities/tenants/hooks'
+import { PROVIDERS } from '@/packages/admin/providers'
+import { tenantProviders } from '@/packages/admin/providers/settings'
 
 const superAdminSecretsAccess = {
   read: fieldAccess,
@@ -63,6 +65,25 @@ export const Tenants: CollectionConfig = {
       hooks: {
         beforeValidate: [normalizeTenantDomain],
       },
+    },
+    {
+      name: 'domains',
+      type: 'array',
+      admin: { description: 'Further domains this tenant owns. The one it is served on is `domain`.' },
+      fields: [
+        { name: 'name', type: 'text', required: true },
+        { name: 'verified', type: 'checkbox', defaultValue: false, admin: { description: 'Ownership of the domain has been proven.' } },
+      ],
+    },
+    tenantProviders(PROVIDERS, { create: fieldAccess, read: fieldAccess, update: fieldAccess }),
+    {
+      name: 'contact',
+      type: 'group',
+      admin: { description: 'Who to reach about this tenant.' },
+      fields: [
+        { name: 'email', type: 'email' },
+        { name: 'phone', type: 'text' },
+      ],
     },
     {
       name: 'slug',

@@ -86,6 +86,8 @@ export const Roles: CollectionConfig = {
     // so users inherit both through assignment ([[access]] cross + [[classroom]] skillRoute).
     // Access-bearing roles (admin, accountant…) set `capability`; pure party/type roles
     // (seller, buyer…) may leave it empty and carry only skillRoutes/logic.
+    { name: 'description', type: 'textarea', admin: { description: 'What the role is for.' } },
+    { name: 'system', type: 'checkbox', defaultValue: false, admin: { description: 'A role the installation ships with, as opposed to one a tenant defined.' } },
     {
       name: 'capability',
       type: 'select',

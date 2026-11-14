@@ -1,0 +1,11 @@
+{
+ "source": "RFC 7643 — System for Cross-domain Identity Management: Core Schema (User §4.1, Enterprise User §4.3, Group §4.2, common attributes §3.1)",
+ "schemas": {
+  "User": { "properties": { "id": {}, "externalId": {}, "meta": {}, "userName": {}, "name": {}, "displayName": {}, "nickName": {}, "profileUrl": {}, "title": {}, "userType": {}, "preferredLanguage": {}, "locale": {}, "timezone": {}, "active": {}, "password": {}, "emails": {}, "phoneNumbers": {}, "ims": {}, "photos": {}, "addresses": {}, "groups": {}, "entitlements": {}, "roles": {}, "x509Certificates": {} } },
+  "Name": { "properties": { "formatted": {}, "familyName": {}, "givenName": {}, "middleName": {}, "honorificPrefix": {}, "honorificSuffix": {} } },
+  "Address": { "properties": { "formatted": {}, "streetAddress": {}, "locality": {}, "region": {}, "postalCode": {}, "country": {}, "type": {}, "primary": {} } },
+  "EnterpriseUser": { "properties": { "employeeNumber": {}, "costCenter": {}, "organization": {}, "division": {}, "department": {}, "manager": {} } },
+  "Group": { "properties": { "id": {}, "externalId": {}, "meta": {}, "displayName": {}, "members": {} } },
+  "Member": { "properties": { "value": {}, "$ref": {}, "type": {}, "display": {} } }
+ }
+}

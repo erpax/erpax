@@ -105,7 +105,9 @@ export interface Config {
   blocks: {};
   collections: {
     'consolidation-eliminations': ConsolidationElimination;
+    groups: Group;
     'intercompany-transactions': IntercompanyTransaction;
+    'org-units': OrgUnit;
     roles: Role;
     tenants: Tenant;
     users: User;
@@ -312,6 +314,10 @@ export interface Config {
     'payload-query-presets': PayloadQueryPreset;
   };
   collectionsJoins: {
+    'org-units': {
+      children: 'org-units';
+      users: 'users';
+    };
     users: {
       orders: 'orders';
       cart: 'carts';
@@ -338,7 +344,9 @@ export interface Config {
   };
   collectionsSelect: {
     'consolidation-eliminations': ConsolidationEliminationsSelect<false> | ConsolidationEliminationsSelect<true>;
+    groups: GroupsSelect<false> | GroupsSelect<true>;
     'intercompany-transactions': IntercompanyTransactionsSelect<false> | IntercompanyTransactionsSelect<true>;
+    'org-units': OrgUnitsSelect<false> | OrgUnitsSelect<true>;
     roles: RolesSelect<false> | RolesSelect<true>;
     tenants: TenantsSelect<false> | TenantsSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
@@ -618,11 +626,13 @@ export interface Config {
   globals: {
     header: Header;
     footer: Footer;
+    providers: Provider;
     'payload-jobs-stats': PayloadJobsStat;
   };
   globalsSelect: {
     header: HeaderSelect<false> | HeaderSelect<true>;
     footer: FooterSelect<false> | FooterSelect<true>;
+    providers: ProvidersSelect<false> | ProvidersSelect<true>;
     'payload-jobs-stats': PayloadJobsStatsSelect<false> | PayloadJobsStatsSelect<true>;
   };
   locale:
@@ -803,6 +813,56 @@ export interface Tenant {
    * Used for domain-based tenant handling
    */
   domain?: string | null;
+  /**
+   * Further domains this tenant owns. The one it is served on is `domain`.
+   */
+  domains?:
+    | {
+        name: string;
+        /**
+         * Ownership of the domain has been proven.
+         */
+        verified?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * This tenant's connections to outside directories.
+   */
+  providers?:
+    | {
+        provider: 'google' | 'microsoft' | 'okta' | 'jumpcloud' | 'scim';
+        enabled?: boolean | null;
+        /**
+         * The tenant's id at the provider: a customer id, a directory id, an organisation URL.
+         */
+        account?: string | null;
+        /**
+         * The domain the tenant owns at the provider.
+         */
+        domain?: string | null;
+        /**
+         * Keep users, groups and org units in step with the provider.
+         */
+        directory?: boolean | null;
+        /**
+         * The app registration: its client id at the provider.
+         */
+        clientId?: string | null;
+        /**
+         * The app registration: its secret. Readable by super-admins only.
+         */
+        clientSecret?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Who to reach about this tenant.
+   */
+  contact?: {
+    email?: string | null;
+    phone?: string | null;
+  };
   /**
    * Used for url paths, example: /tenant-slug/page-slug
    */
@@ -1451,6 +1511,68 @@ export interface User {
   uuid?: string | null;
   password?: string | null;
   name?: string | null;
+  givenName?: string | null;
+  middleName?: string | null;
+  familyName?: string | null;
+  nickname?: string | null;
+  photo?: (string | null) | Media;
+  /**
+   * An IANA time zone, e.g. Europe/Sofia.
+   */
+  timezone?: string | null;
+  lastLogin?: string | null;
+  passwordChangedAt?: string | null;
+  orgUnitName?: string | null;
+  /**
+   * An inactive user cannot sign in.
+   */
+  active?: boolean | null;
+  /**
+   * Why the account was switched off.
+   */
+  inactiveReason?: string | null;
+  /**
+   * The org unit this user sits in.
+   */
+  orgUnit?: (string | null) | OrgUnit;
+  /**
+   * Other addresses that reach this user.
+   */
+  aliases?: string[] | null;
+  /**
+   * Further email addresses. The sign-in address is `email`.
+   */
+  emails?:
+    | {
+        value: string;
+        type?: ('work' | 'home' | 'other') | null;
+        primary?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  phoneNumbers?:
+    | {
+        value: string;
+        type?: ('work' | 'home' | 'mobile' | 'other') | null;
+        primary?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * This user in other systems: the provider or system, and the id it uses.
+   */
+  externalIds?:
+    | {
+        /**
+         * The system: google, an HR system, …
+         */
+        type: string;
+        value: string;
+        id?: string | null;
+      }[]
+    | null;
+  recoveryEmail?: string | null;
+  recoveryPhone?: string | null;
   /**
    * Competencies this actor holds (an agent loads these; a job requires them).
    */
@@ -1573,6 +1695,147 @@ export interface User {
   collection: 'users';
 }
 /**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "media".
+ */
+export interface Media {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  alt?: string | null;
+  caption?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
+  sizes?: {
+    thumbnail?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    square?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    small?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    medium?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    large?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    xlarge?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    og?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+  };
+}
+/**
+ * The tree a tenant sorts its users into. A user sits in one unit.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "org-units".
+ */
+export interface OrgUnit {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  name: string;
+  description?: string | null;
+  /**
+   * The unit this one sits under; empty for a top-level unit.
+   */
+  parent?: (string | null) | OrgUnit;
+  children?: {
+    docs?: (string | OrgUnit)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  users?: {
+    docs?: (string | User)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  /**
+   * When set, this unit does not take settings from the units above it.
+   */
+  blockInheritance?: boolean | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | OrgUnit;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * Role name plus optional scope: entire app (global), any row in a collection (class), or one referenced document.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -1625,6 +1888,14 @@ export interface Role {
         relationTo: 'orders';
         value: string | Order;
       } | null);
+  /**
+   * What the role is for.
+   */
+  description?: string | null;
+  /**
+   * A role the installation ships with, as opposed to one a tenant defined.
+   */
+  system?: boolean | null;
   /**
    * What the role can do on its scope — the rodin 3·6·9 governing axis (read<write<sign<admin; audit ⊥). The Role holds the capability; users inherit it by assignment.
    */
@@ -1793,103 +2064,6 @@ export interface Post {
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "media".
- */
-export interface Media {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  alt?: string | null;
-  caption?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-  url?: string | null;
-  thumbnailURL?: string | null;
-  filename?: string | null;
-  mimeType?: string | null;
-  filesize?: number | null;
-  width?: number | null;
-  height?: number | null;
-  focalX?: number | null;
-  focalY?: number | null;
-  sizes?: {
-    thumbnail?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    square?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    small?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    medium?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    large?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    xlarge?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    og?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-  };
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -5268,6 +5442,70 @@ export interface IntercompanyTransaction {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * A named set of users and groups. Members are listed on the group, each with a role.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "groups".
+ */
+export interface Group {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  name: string;
+  /**
+   * The group's address, when it has one.
+   */
+  email?: string | null;
+  description?: string | null;
+  /**
+   * Other addresses that reach this group.
+   */
+  aliases?: string[] | null;
+  kind?: ('team' | 'security' | 'distribution') | null;
+  /**
+   * This group in other systems: the provider or system, and the id it uses.
+   */
+  externalIds?:
+    | {
+        type: string;
+        value: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Created by an administrator rather than by a user.
+   */
+  adminCreated?: boolean | null;
+  memberCount?: number | null;
+  /**
+   * Who is in the group. A member is a user or another group; an outside address has only an email.
+   */
+  members?:
+    | {
+        member?:
+          | ({
+              relationTo: 'users';
+              value: string | User;
+            } | null)
+          | ({
+              relationTo: 'groups';
+              value: string | Group;
+            } | null);
+        /**
+         * For a member outside the directory.
+         */
+        email?: string | null;
+        role: 'owner' | 'manager' | 'member';
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -19534,6 +19772,38 @@ export interface ConsolidationEliminationsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "groups_select".
+ */
+export interface GroupsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  name?: T;
+  email?: T;
+  description?: T;
+  aliases?: T;
+  kind?: T;
+  externalIds?:
+    | T
+    | {
+        type?: T;
+        value?: T;
+        id?: T;
+      };
+  adminCreated?: T;
+  memberCount?: T;
+  members?:
+    | T
+    | {
+        member?: T;
+        email?: T;
+        role?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "intercompany-transactions_select".
  */
 export interface IntercompanyTransactionsSelect<T extends boolean = true> {
@@ -19562,6 +19832,30 @@ export interface IntercompanyTransactionsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "org-units_select".
+ */
+export interface OrgUnitsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  name?: T;
+  description?: T;
+  parent?: T;
+  children?: T;
+  users?: T;
+  blockInheritance?: T;
+  breadcrumbs?:
+    | T
+    | {
+        doc?: T;
+        url?: T;
+        label?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "roles_select".
  */
 export interface RolesSelect<T extends boolean = true> {
@@ -19570,6 +19864,8 @@ export interface RolesSelect<T extends boolean = true> {
   binding?: T;
   scopedCollection?: T;
   resource?: T;
+  description?: T;
+  system?: T;
   capability?: T;
   skillRoutes?: T;
   updatedAt?: T;
@@ -19583,6 +19879,31 @@ export interface TenantsSelect<T extends boolean = true> {
   uuid?: T;
   name?: T;
   domain?: T;
+  domains?:
+    | T
+    | {
+        name?: T;
+        verified?: T;
+        id?: T;
+      };
+  providers?:
+    | T
+    | {
+        provider?: T;
+        enabled?: T;
+        account?: T;
+        domain?: T;
+        directory?: T;
+        clientId?: T;
+        clientSecret?: T;
+        id?: T;
+      };
+  contact?:
+    | T
+    | {
+        email?: T;
+        phone?: T;
+      };
   slug?: T;
   locales?: T;
   config?:
@@ -19634,6 +19955,44 @@ export interface UsersSelect<T extends boolean = true> {
   uuid?: T;
   password?: T;
   name?: T;
+  givenName?: T;
+  middleName?: T;
+  familyName?: T;
+  nickname?: T;
+  photo?: T;
+  timezone?: T;
+  lastLogin?: T;
+  passwordChangedAt?: T;
+  orgUnitName?: T;
+  active?: T;
+  inactiveReason?: T;
+  orgUnit?: T;
+  aliases?: T;
+  emails?:
+    | T
+    | {
+        value?: T;
+        type?: T;
+        primary?: T;
+        id?: T;
+      };
+  phoneNumbers?:
+    | T
+    | {
+        value?: T;
+        type?: T;
+        primary?: T;
+        id?: T;
+      };
+  externalIds?:
+    | T
+    | {
+        type?: T;
+        value?: T;
+        id?: T;
+      };
+  recoveryEmail?: T;
+  recoveryPhone?: T;
   competencies?:
     | T
     | {
@@ -27608,6 +27967,33 @@ export interface Footer {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "providers".
+ */
+export interface Provider {
+  id: string;
+  /**
+   * The providers this installation offers. A tenant can switch on only what is listed and enabled here.
+   */
+  providers?:
+    | {
+        provider: 'google' | 'microsoft' | 'okta' | 'jumpcloud' | 'scim';
+        enabled?: boolean | null;
+        /**
+         * The app registration: its client id at the provider.
+         */
+        clientId?: string | null;
+        /**
+         * The app registration: its secret. Readable by super-admins only.
+         */
+        clientSecret?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-jobs-stats".
  */
 export interface PayloadJobsStat {
@@ -27672,6 +28058,24 @@ export interface FooterSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "providers_select".
+ */
+export interface ProvidersSelect<T extends boolean = true> {
+  providers?:
+    | T
+    | {
+        provider?: T;
+        enabled?: T;
+        clientId?: T;
+        clientSecret?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-jobs-stats_select".
  */
 export interface PayloadJobsStatsSelect<T extends boolean = true> {
@@ -27725,7 +28129,9 @@ export interface TaskCreateCollectionExport {
     batchSize?: number | null;
     collectionSlug:
       | 'consolidation-eliminations'
+      | 'groups'
       | 'intercompany-transactions'
+      | 'org-units'
       | 'roles'
       | 'tenants'
       | 'users'

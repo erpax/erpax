@@ -1,4 +1,6 @@
 import type { CollectionConfig } from 'payload'
+import { refuseInactive } from '@/hooks/collections/users/refuseInactive'
+import { stampLastLogin, stampPasswordChange } from '@/hooks/collections/users/stampAuth'
 import { tenantsArrayField } from '@payloadcms/plugin-multi-tenant/fields'
 
 import { fieldAccess as superAdminField, isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
@@ -106,6 +108,79 @@ export const Users: CollectionConfig = {
       name: 'name',
       type: 'text',
       label: localeRecord('users.name'),
+    },
+    // ── The directory record. Payload's own fields stay the standard (`email`, `name`,
+    // `password`); what Payload has no field for takes its name from SCIM (RFC 7643), which every
+    // directory provider maps onto. Providers are adapters: src/packages/admin/providers.
+    { name: 'givenName', type: 'text' },
+    { name: 'middleName', type: 'text' },
+    { name: 'familyName', type: 'text' },
+    { name: 'nickname', type: 'text' },
+    { name: 'photo', type: 'upload', relationTo: 'media' },
+    { name: 'timezone', type: 'text', admin: { description: 'An IANA time zone, e.g. Europe/Sofia.' } },
+    { name: 'lastLogin', type: 'date', admin: { readOnly: true, position: 'sidebar' } },
+    { name: 'passwordChangedAt', type: 'date', admin: { readOnly: true, position: 'sidebar' } },
+    // virtual: the unit's name beside its id, resolved through the relationship at read time
+    { name: 'orgUnitName', type: 'text', virtual: 'orgUnit.name', admin: { readOnly: true, hidden: true } },
+    {
+      name: 'active',
+      type: 'checkbox',
+      defaultValue: true,
+      admin: { position: 'sidebar', description: 'An inactive user cannot sign in.' },
+    },
+    {
+      name: 'inactiveReason',
+      type: 'text',
+      admin: { position: 'sidebar', condition: (data) => data?.active === false, description: 'Why the account was switched off.' },
+    },
+    {
+      name: 'orgUnit',
+      type: 'relationship',
+      relationTo: 'org-units',
+      admin: { position: 'sidebar', description: 'The org unit this user sits in.' },
+    },
+    {
+      type: 'collapsible',
+      label: 'Directory',
+      admin: { initCollapsed: true },
+      fields: [
+    { name: 'aliases', type: 'text', hasMany: true, admin: { description: 'Other addresses that reach this user.' } },
+    {
+      name: 'emails',
+      type: 'array',
+      admin: { description: 'Further email addresses. The sign-in address is `email`.' },
+      fields: [
+        { name: 'value', type: 'email', required: true },
+        { name: 'type', type: 'select', options: ['work', 'home', 'other'] },
+        { name: 'primary', type: 'checkbox', defaultValue: false },
+      ],
+    },
+    {
+      name: 'phoneNumbers',
+      type: 'array',
+      fields: [
+        { name: 'value', type: 'text', required: true },
+        { name: 'type', type: 'select', options: ['work', 'home', 'mobile', 'other'] },
+        { name: 'primary', type: 'checkbox', defaultValue: false },
+      ],
+    },
+    {
+      name: 'externalIds',
+      type: 'array',
+      admin: { description: 'This user in other systems: the provider or system, and the id it uses.' },
+      fields: [
+        { name: 'type', type: 'text', required: true, admin: { description: 'The system: google, an HR system, …' } },
+        { name: 'value', type: 'text', required: true },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'recoveryEmail', type: 'email' },
+        { name: 'recoveryPhone', type: 'text' },
+      ],
+    },
+      ],
     },
     // ── The user has NO type. One universal actor (the `all`/`one` identity
     // element); what it IS — employee, agent, customer, author, follower —
@@ -302,8 +377,9 @@ export const Users: CollectionConfig = {
   hooks: {
     // The genesis owner computes itself: the FIRST user (empty user set) becomes
     // super-admin by the identity element, never by hand-assignment.
-    beforeChange: [firstUserSuperAdmin],
-    afterLogin: [setCookieBasedOnDomain],
+    beforeChange: [firstUserSuperAdmin, stampPasswordChange],
+    beforeLogin: [refuseInactive],
+    afterLogin: [setCookieBasedOnDomain, stampLastLogin],
   },
   timestamps: true,
 }

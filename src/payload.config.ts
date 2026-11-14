@@ -65,6 +65,7 @@ import { tenantCollectionsConfig, tenantScopedSlugs } from '@/collections/tenant
 import type { CollectionSlug, CollectionConfig } from 'payload'
 import { Footer } from '@/globals/footer/config'
 import { Header } from '@/globals/header/config'
+import { Providers } from '@/globals/providers/config'
 import { beforeSyncWithSearch } from '@/components/search'
 import { searchDocField } from '@/fields/group/searchDocField'
 import { searchFields } from '@/fields/textarea/searchFields'
@@ -307,7 +308,7 @@ export default buildConfig({
   // computed from the relationship graph.
   collections: [],
   cors: [getServerSideURL()].filter(Boolean),
-  globals: [Header, Footer],
+  globals: [Header, Footer, Providers],
   plugins: [
     ...packages(
       (Object.values(allCollections) as CollectionConfig[]).map((c) => foldCollectionLifecycle({ ...c, lockDocuments: false as const })),
