@@ -11,6 +11,9 @@ import {
   BIT_WRITE,
   BIT_DELETE,
   scopeResourceCollections,
+  addRole,
+  removeRole,
+  assignedRoleIds,
 } from '@/utilities/nist/incits/359'
 import type { RoleDefinition } from '@/utilities/nist/incits/359'
 
@@ -152,5 +155,77 @@ describe('nist/incits/359 — Unix rwx permission vocabulary', () => {
     expect(scopeResourceCollections).toContain('posts')
     expect(scopeResourceCollections).toContain('tenants')
     expect(new Set(scopeResourceCollections).size).toBe(scopeResourceCollections.length)
+  })
+})
+
+// ── The assignments live on the user (`users.roleAssignments`) — the former `user-roles` join collection ──
+describe('nist/incits/359 — role assignment is a set on the user', () => {
+  type Call = { op: string; collection: string; id?: unknown; data?: Record<string, unknown> }
+  /** A payload over one user and a list of role definitions; records every write. */
+  const world = (held: unknown[], roles: Array<{ id: string; name: string; binding: string }>) => {
+    const calls: Call[] = []
+    const user: { id: string; roleAssignments: unknown[] } = { id: 'u1', roleAssignments: held }
+    const payload = {
+      find: async ({ collection }: { collection: string }) => {
+        calls.push({ op: 'find', collection })
+        return { docs: collection === 'roles' ? roles.filter((r) => r.binding === 'global') : [] }
+      },
+      findByID: async ({ collection, id }: { collection: string; id: unknown }) => {
+        calls.push({ op: 'findByID', collection, id })
+        return collection === 'users' ? user : null
+      },
+      create: async ({ collection, data }: { collection: string; data: Record<string, unknown> }) => {
+        calls.push({ op: 'create', collection, data })
+        return { id: 'r-new', ...data }
+      },
+      update: async ({ collection, id, data }: { collection: string; id: unknown; data: Record<string, unknown> }) => {
+        calls.push({ op: 'update', collection, id, data })
+        user.roleAssignments = data.roleAssignments as unknown[]
+        return user
+      },
+      delete: async ({ collection }: { collection: string }) => { calls.push({ op: 'delete', collection }); return {} },
+    }
+    const run = <T,>(fn: (p: never, r: never, a: { userId: string; roleName: string }) => Promise<T>, roleName: string) =>
+      fn(payload as never, {} as never, { userId: 'u1', roleName })
+    return { calls, user, run, writes: () => calls.filter((c) => c.op !== 'find' && c.op !== 'findByID') }
+  }
+  const auditor = { id: 'r1', name: 'auditor', binding: 'global' }
+
+  it('granting appends the role definition to the user — no separate assignment row', async () => {
+    const w = world(['r0'], [auditor])
+    await w.run(addRole, 'auditor')
+    expect(w.writes()).toEqual([{ op: 'update', collection: 'users', id: 'u1', data: { roleAssignments: ['r0', 'r1'] } }])
+  })
+  it('granting a role already held writes nothing (a set cannot hold a duplicate)', async () => {
+    const w = world(['r1'], [auditor])
+    await w.run(addRole, 'auditor')
+    expect(w.writes()).toEqual([])
+    // held as a populated document, not an id — still recognised
+    const populated = world([{ id: 'r1', name: 'auditor' }], [auditor])
+    await populated.run(addRole, 'auditor')
+    expect(populated.writes()).toEqual([])
+  })
+  it('granting an undefined role first creates its definition, then assigns it', async () => {
+    const w = world([], [])
+    await w.run(addRole, 'reviewer')
+    expect(w.writes().map((c) => `${c.op}:${c.collection}`)).toEqual(['create:roles', 'update:users'])
+    expect(w.user.roleAssignments).toEqual(['r-new'])
+  })
+  it('revoking removes only that role and never deletes a document', async () => {
+    const w = world(['r0', 'r1', 'r2'], [auditor])
+    await w.run(removeRole, 'auditor')
+    expect(w.writes()).toEqual([{ op: 'update', collection: 'users', id: 'u1', data: { roleAssignments: ['r0', 'r2'] } }])
+  })
+  it('revoking a role not held, or one with no definition, writes nothing', async () => {
+    const notHeld = world(['r0'], [auditor])
+    await notHeld.run(removeRole, 'auditor')
+    expect(notHeld.writes()).toEqual([])
+    const undefinedRole = world(['r0'], [])
+    await undefinedRole.run(removeRole, 'ghost')
+    expect(undefinedRole.writes()).toEqual([])
+  })
+  it('reads the held ids whether stored as ids or populated documents', async () => {
+    const w = world(['r0', { id: 'r1' }, 7], [])
+    expect(await assignedRoleIds({ findByID: async () => w.user } as never, {} as never, 'u1')).toEqual(['r0', 'r1', '7'])
   })
 })

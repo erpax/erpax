@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { tenantsArrayField } from '@payloadcms/plugin-multi-tenant/fields'
 
-import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
+import { fieldAccess as superAdminField, isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 import { competencyLineField } from '@/fields/array/competencyLineField'
 import { localeRecord } from '@/i18n'
 
@@ -176,6 +176,19 @@ export const Users: CollectionConfig = {
         ...(defaultTenantArrayField?.admin || {}),
         position: 'sidebar',
       },
+    },
+    {
+      // The user's role assignments (NIST INCITS-359 user-assignment): which role DEFINITIONS the
+      // user holds. This is the former `user-roles` join collection — a row per (user, role) —
+      // as the has-many relationship Payload has for it. A set by construction, so the duplicate
+      // an extra row could create cannot exist. Super-admin only, as the join collection was; the
+      // access engine reads it with overrideAccess.
+      name: 'roleAssignments',
+      type: 'relationship',
+      relationTo: 'roles',
+      hasMany: true,
+      access: { create: superAdminField, read: superAdminField, update: superAdminField },
+      admin: { position: 'sidebar', description: 'Role definitions assigned to this user (global, tenant-wide or per-document).' },
     },
     {
       name: 'orders',

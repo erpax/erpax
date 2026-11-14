@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { partyRoleAccess } from '@/access/collections/shared/multiTenantRead'
 import {
   getUser,
   getActorId,
@@ -162,5 +163,44 @@ describe('auth', () => {
     for (const key of ['read', 'create', 'update', 'delete'] as const) {
       expect(typeof bundle[key]).toBe('function')
     }
+  })
+})
+
+describe('partyRoleAccess — membership is read from the user\'s own role assignments', () => {
+  type Args = Parameters<ReturnType<typeof partyRoleAccess>>[0]
+  type Read = { collection?: string; id?: unknown; depth?: number; select?: unknown; overrideAccess?: boolean }
+  const reqFor = (roles: string[], held: unknown[], reads: Read[]) => ({
+    user: { id: 'u1', roles, tenants: [{ tenant: 't1' }] },
+    payload: { findByID: async (a: Read) => { reads.push(a); return { id: 'u1', roleAssignments: held } } },
+  })
+  const access = partyRoleAccess('cases', ['seller', 'buyer'])
+  const held = [
+    { name: 'seller', binding: 'document', scopedCollection: 'cases', resource: { value: 'c1' } },
+    { name: 'buyer', binding: 'document', scopedCollection: 'cases', resource: { value: { id: 'c2' } } },
+    { name: 'seller', binding: 'document', scopedCollection: 'invoices', resource: { value: 'i9' } }, // another collection
+    { name: 'witness', binding: 'document', scopedCollection: 'cases', resource: { value: 'c3' } }, // not a party role
+    { name: 'seller', binding: 'global' }, // not document-scoped
+    'r-unpopulated', // an id that did not populate grants nothing
+  ]
+
+  it('a party sees exactly the documents it holds a party role on, inside its tenant', async () => {
+    const reads: Read[] = []
+    expect(await access({ req: reqFor(['user'], held, reads) } as unknown as Args)).toEqual({
+      and: [{ tenant: { equals: 't1' } }, { id: { in: ['c1', 'c2'] } }],
+    })
+    // one read of the user, bounded to the assignments, past the super-admin-only field access
+    expect(reads).toHaveLength(1)
+    expect(reads[0]).toMatchObject({ collection: 'users', id: 'u1', depth: 1, select: { roleAssignments: true }, overrideAccess: true })
+  })
+  it('a user with no assignments sees nothing (an empty id set), never the whole tenant', async () => {
+    expect(await access({ req: reqFor(['user'], [], []) } as unknown as Args)).toEqual({ and: [{ tenant: { equals: 't1' } }, { id: { in: [] } }] })
+  })
+  it('an admin holds the tenant without any membership lookup', async () => {
+    const reads: Read[] = []
+    expect(await access({ req: reqFor(['admin'], held, reads) } as unknown as Args)).toEqual({ tenant: { equals: 't1' } })
+    expect(reads).toHaveLength(0)
+  })
+  it('no user, no access', async () => {
+    expect(await access({ req: { user: null } } as unknown as Args)).toBe(false)
   })
 })

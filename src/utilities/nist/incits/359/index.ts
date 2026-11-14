@@ -1,7 +1,7 @@
 /**
  * Public surface of the NIST INCITS 359 standards module.
  *
- * Permission helpers: role predicates + Payload `roles` / `user_roles` mutations.
+ * Permission helpers: role predicates + Payload `roles` / `users.roleAssignments` mutations.
  * For Unix **rwx** naming layered on Payload access, see `conventions.ts`
  * (`permissionTripletToString`).
  *
@@ -19,7 +19,7 @@
 
 export type { AddRoleResource, MutationArgs } from '@/utilities/nist/incits/359/payload'
 
-export { addRole, grant, removeRole, revoke } from '@/utilities/nist/incits/359/payload'
+export { addRole, assignedRoleIds, grant, removeRole, revoke } from '@/utilities/nist/incits/359/payload'
 
 export type {
   AnyScope,
