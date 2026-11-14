@@ -77,3 +77,31 @@ describe('verify/inventory — what the kernel has checked ABOUT the Clay proble
     expect(clayTags('no tag here')).toEqual([])
   })
 })
+
+describe('verify/inventory — the README states what the kernel says, or it goes red', () => {
+  const readme = readFileSync(join(import.meta.dirname, '..', '..', '..', '..', 'README.md'), 'utf8')
+  const dir = join(import.meta.dirname, '..', 'lean')
+  const sources = Object.fromEntries(readdirSync(dir).filter((f) => f.endsWith('.lean')).map((f) => [f, readFileSync(join(dir, f), 'utf8')]))
+  const witnesses = clayWitnesses(INVENTORY, sources)
+  const c = INVENTORY.census
+
+  it('quotes the sealed census, file count and sources hash', () => {
+    const line = `Kernel report sealed ${INVENTORY.sealedAt}: ${c.theorems} theorems, ${c.axiomFree} axiom-free, ${c.standardAxioms} on Lean's three standard axioms, ${c.stubbed} stubbed, ${INVENTORY.files.length} files, sources \`${INVENTORY.sourcesHash}\`.`
+    expect(readme, `README's Clay section is stale; it must contain:\n${line}`).toContain(line)
+  })
+
+  it('states each problem\'s witnesses as the code counts them', () => {
+    const riemann = witnesses.find((w) => w.problem === 'riemann')!
+    const row = `\`${riemann.file}\` — \`${riemann.kind}\`, ${riemann.theorems} theorems, ${riemann.stubbed} stubbed`
+    expect(readme, `README's Riemann row is stale; it must contain:\n${row}`).toContain(row)
+  })
+
+  it('says nothing is settled exactly when claySettled is empty', () => {
+    const settled = claySettled(witnesses)
+    expect(readme.includes('Settled by this corpus: **none**'), `claySettled = ${JSON.stringify(settled)}`).toBe(settled.length === 0)
+  })
+
+  it('no longer names the removed millennium code', () => {
+    for (const gone of ['corpusSolves', 'reductionFrontier', 'src/millennium']) expect(readme.includes(gone), gone).toBe(false)
+  })
+})
