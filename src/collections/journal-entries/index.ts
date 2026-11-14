@@ -32,7 +32,7 @@ import { validateBalancedEntry } from '@/hooks/collections/shared/validateBalanc
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.3 segregation-of-duties
  * @see docs/STANDARDS.md §4.2
  */
 

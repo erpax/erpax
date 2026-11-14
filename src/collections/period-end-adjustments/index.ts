@@ -22,7 +22,7 @@ import { periodEndAdjustmentPostingHook } from '@/hooks/collections/shared/perio
  * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
  * @compliance SOX §404 internal-controls
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @security ISO-27002 §5.4 segregation-of-duties approval-vs-creation
+ * @security ISO-27002 §5.3 segregation-of-duties approval-vs-creation
  * @audit ISO-19011:2018 audit-trail
  * @see docs/STANDARDS.md §4.2
  */
@@ -82,7 +82,7 @@ const PeriodEndAdjustments: CollectionConfig = {
       validateNotLocked,
       autoPopulateCreatedBy,
       // SOX §404 four-eyes: the user who created the adjustment cannot
-      // also approve it. ISO-27002 §5.4 segregation of duties.
+      // also approve it. ISO-27002 §5.3 segregation of duties.
       enforceSegregationOfDuties(),
       // ISO-8601 stamp on `postedAt` when status flips to 'posted'.
       autoSetTimestamp(

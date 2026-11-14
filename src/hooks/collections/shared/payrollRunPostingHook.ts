@@ -47,7 +47,7 @@
  * @audit ISO-19011:2018 audit-trail payroll-evidence
  * @compliance SOX §302 disclosure-controls
  * @compliance SOX §404 internal-controls four-eyes
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.3 segregation-of-duties
  * @see src/utilities/bank/accounts/payroll/runs/index.ts
  * @see src/utilities/journal/entry/service/index.ts
  * @see docs/adr/0001-event-driven-gl-posting.md

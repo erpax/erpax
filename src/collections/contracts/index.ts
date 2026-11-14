@@ -33,7 +33,7 @@
  * @standard ISO-8601-1:2019 date-time effective-from effective-to
  * @compliance SOX §404 internal-controls contract-approval
  * @compliance GDPR Art.6(1)(b) lawful-basis-contract
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.3 segregation-of-duties
  * @audit ISO-19011:2018 audit-trail contract-lifecycle
  * @feature "Contract management & revenue recognition"
  * @role "Finance Manager, Accountant, Contract Administrator"

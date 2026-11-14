@@ -34,7 +34,7 @@
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls credit-memo-approval
  * @compliance PCI-DSS-4.0 §3.2 tokenized-card-data via-stripe
- * @security ISO-27002 §5.4 segregation-of-duties issuer-vs-approver
+ * @security ISO-27002 §5.3 segregation-of-duties issuer-vs-approver
  * @see src/plugins/receivables/types.ts (legacy type definition)
  * @see docs/STANDARDS.md §4.2
  */
@@ -235,7 +235,7 @@ const CreditMemos: CollectionConfig = {
     beforeChange: [
       validateNotLocked,
       autoPopulateCreatedBy,
-      // SOX §404 / ISO 27002 §5.4: issuer ≠ approver.
+      // SOX §404 / ISO 27002 §5.3: issuer ≠ approver.
       enforceSegregationOfDuties(),
       autoSetTimestamp('issuedAt', (d) => (d as { status?: string }).status === 'issued'),
       autoSetTimestamp('appliedAt', (d) => (d as { status?: string }).status === 'applied'),

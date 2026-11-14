@@ -6,7 +6,7 @@
  * document's `createdBy` (either pre-existing or being set in this same
  * write). Configurable for collections that name the fields differently.
  *
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.3 segregation-of-duties
  * @compliance SOX §404 internal-controls four-eyes-principle
  * @compliance SOC-2 CC6.3 logical-access-controls
  * @audit ISO-19011:2018 audit-trail
@@ -27,7 +27,7 @@ export function enforceSegregationOfDuties(
     if (creator !== undefined && creator !== null && String(creator) === String(approver)) {
       throw new Error(
         errorMessage ||
-          `Segregation of duties violation: the creator (${creator}) cannot also approve this record. ISO 27002 §5.4 / SOX §404.`,
+          `Segregation of duties violation: the creator (${creator}) cannot also approve this record. ISO 27002 §5.3 / SOX §404.`,
       )
     }
     return data

@@ -31,7 +31,7 @@
  * @accounting IFRS IAS-7 statement-of-cash-flows payroll-disbursement
  * @audit ISO-19011:2018 audit-trail payroll-disbursement
  * @compliance SOX §404 internal-controls
- * @security ISO-27002 §5.4 segregation-of-duties treasury-preparer
+ * @security ISO-27002 §5.3 segregation-of-duties treasury-preparer
  * @see src/utilities/bank/accounts/payroll/runs/hooks/payroll-run.ts (status → posted)
  * @see src/plugins/accounting/collections/PaymentRuns.ts (pain.001 shell)
  * @see docs/adr/0001-event-driven-gl-posting.md

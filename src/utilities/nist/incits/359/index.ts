@@ -10,7 +10,7 @@
  * @security ISO-27001 A.5.18 access-rights
  * @security ISO-27002 §5.15 access-control
  * @security ISO-27002 §5.16 identity-management
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.3 segregation-of-duties
  * @compliance SOC-2 CC6.1 logical-access-controls
  * @compliance SOC-2 CC6.3 access-removal
  * @compliance SOX §404 internal-controls

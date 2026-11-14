@@ -26,7 +26,7 @@
  * @audit ISO-19011:2018 audit-trail receipt-evidence
  * @audit IFRS-15 §31 revenue-substantiation shipment-FOB-date
  * @compliance SOX §404 internal-controls three-way-match
- * @security ISO-27002 §5.4 segregation-of-duties receiver-vs-requester
+ * @security ISO-27002 §5.3 segregation-of-duties receiver-vs-requester
  * @feature goods-inspection quality-control three-way-match
  * @role goods-receiver "Receive goods, inspect, confirm GR"
  * @role quality-inspector "Inspect goods, assess condition per ISO-9001"

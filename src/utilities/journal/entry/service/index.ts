@@ -16,7 +16,7 @@
  * @accounting OECD SAF-T §3 journal-entries
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.3 segregation-of-duties
  * @see docs/STANDARDS.md §4.2 ; src/utilities/journal/entries (the enforcing hooks)
  */
 

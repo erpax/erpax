@@ -3,7 +3,7 @@
  *
  * Slice HHHH (2026-05-10): the prior approval pattern hard-coded chains
  * inside each collection (purchase-requisitions, expense-reports,
- * leases, etc.). To meet SOX §404 + ISO 27002 §5.4 segregation-of-duties
+ * leases, etc.). To meet SOX §404 + ISO 27002 §5.3 segregation-of-duties
  * across the full ERP, the rules must be data-driven — operators must
  * be able to author a workflow without a code change. This collection
  * is the template; `workflow-instances` is each running execution.
@@ -15,7 +15,7 @@
  * @standard ISO/IEC 19510:2013 BPMN-2.0
  * @standard ISO-8601-1:2019 date-time
  * @compliance SOX §404 internal-controls multi-step-approval
- * @compliance ISO-27002 §5.4 segregation-of-duties
+ * @compliance ISO-27002 §5.3 segregation-of-duties
  * @audit ISO-19011:2018 audit-trail workflow-evidence
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see ./WorkflowInstances.ts

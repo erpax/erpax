@@ -29,7 +29,7 @@ export type Iso27002Theme = 'organizational' | 'people' | 'physical' | 'technolo
  */
 export type Iso27002ControlId =
   // Organizational controls (clause 5)
-  | '5.4'   // Segregation of duties
+  | '5.3'   // Segregation of duties
   | '5.14'  // Information transfer
   | '5.15'  // Access control
   | '5.16'  // Identity management
@@ -50,7 +50,7 @@ export type Iso27002ControlId =
   | '8.30'  // Outsourced development
 
 const TITLES: Record<Iso27002ControlId, string> = {
-  '5.4': 'Segregation of duties',
+  '5.3': 'Segregation of duties',
   '5.14': 'Information transfer',
   '5.15': 'Access control',
   '5.16': 'Identity management',
@@ -71,7 +71,7 @@ const TITLES: Record<Iso27002ControlId, string> = {
 }
 
 const THEMES: Record<Iso27002ControlId, Iso27002Theme> = {
-  '5.4': 'organizational',
+  '5.3': 'organizational',
   '5.14': 'organizational',
   '5.15': 'organizational',
   '5.16': 'organizational',
