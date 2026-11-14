@@ -26,7 +26,7 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { accountingCollectionAccess } from '@/auth'
+import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { referenceField, statusField, auditFields, notesField, unitOfMeasureField } from '@/base/accounting/field'
 import { emitOpRunCompleted } from '@/chain/event/emitter'
 

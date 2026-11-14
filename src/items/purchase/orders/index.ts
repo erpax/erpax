@@ -58,7 +58,7 @@ import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCr
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { emitPoCreated } from '@/chain/event/emitter'
 import {
   currencyField,

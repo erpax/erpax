@@ -97,7 +97,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/auth'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { currencyField, auditFields } from '@/base/accounting/field'
 
 const AUTHORIZATION_LEVELS = [

@@ -27,7 +27,7 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { tenantAdminWriteAccess } from '@/auth'
+import { tenantAdminWriteAccess } from '@/access/collections/shared/multiTenantRead'
 import { currencyField, statusField, notesField, auditFields, referenceField } from '@/base/accounting/field'
 
 const BankReconciliations: CollectionConfig = {

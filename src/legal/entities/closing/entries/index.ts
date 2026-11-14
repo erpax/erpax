@@ -17,7 +17,7 @@
 */
 
 import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '@/auth'
+import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { validateClosingPeriod } from '@/hooks/collections/closing-entries/validateClosingPeriod'
 import { generateReversingEntries } from '@/hooks/collections/closing-entries/generateReversingEntries'
 import { validateMultiCurrencyClosing } from '@/hooks/collections/closing-entries/validateMultiCurrencyClosing'

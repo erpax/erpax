@@ -12,7 +12,7 @@
 */
 
 import { CollectionConfig } from 'payload'
-import { tenantAdmin } from '@/auth'
+import { tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 
 export const GLPostingRules: CollectionConfig = {
   slug: 'gl-posting-rules',

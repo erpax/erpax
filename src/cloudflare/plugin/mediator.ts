@@ -30,7 +30,7 @@
  */
 import type { PayloadRequest } from 'payload'
 import { makeMediator, type ErpaxCfEnv } from '@/cloudflare'
-import { getUserContext } from '@/auth'
+import { getUserContext } from '@/access/collections/shared/multiTenantRead'
 
 /**
  * Default authorizer — checks the user has a non-empty role. Plugin

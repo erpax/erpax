@@ -34,7 +34,7 @@
 
 import type { CollectionBeforeChangeHook, CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { accountingCollectionAccess } from '@/auth'
+import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { auditFields, notesField } from '@/base/accounting/field'
 
 /** A non-negative integer unit/minute counter — the double-entry numbers (see src/accounting). */

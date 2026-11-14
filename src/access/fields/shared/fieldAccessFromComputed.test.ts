@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { fieldVisibleForWrite } from './index'
+import { fieldVisibleForWrite } from '@/access/fields/shared/fieldAccessFromComputed'
 
 describe('admin/ui/visibility — computed access conditions', () => {
   it('internal context sees write fields', () => {

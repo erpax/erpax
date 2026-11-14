@@ -1,6 +1,6 @@
 import { CollectionConfig } from 'payload'
-import { anyone } from '@/anyone'
-import { superAdminOnly } from '@/is/super/admin'
+import { anyone } from '@/access/collections/shared/anyone'
+import { superAdminOnly } from '@/access/collections/shared/superAdminOnly'
 import { currencyField } from '@/base/accounting/field'
 
 /**

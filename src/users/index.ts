@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { tenantsArrayField } from '@payloadcms/plugin-multi-tenant/fields'
 
-import { isSuperAdmin } from '@/is/super/admin'
+import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 import { competencyLineField } from '@/competency'
 import { localeRecord } from '@/i18n'
 

@@ -1,5 +1,5 @@
 import { CollectionConfig } from 'payload'
-import { superAdminOnly } from '@/is/super/admin'
+import { superAdminOnly } from '@/access/collections/shared/superAdminOnly'
 import {
   encryptPaymentMethodData,
   decryptPaymentMethodData,

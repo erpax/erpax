@@ -30,7 +30,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
-import { accountingCollectionAccess } from '@/auth'
+import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { currencyField, statusField, notesField, auditFields, referenceField, unitOfMeasureField } from '@/base/accounting/field'
 import { preset, type Preset } from '@/preset'
 

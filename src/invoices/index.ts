@@ -7,7 +7,7 @@ import { CollectionConfig } from 'payload'
 // COGS remains unbuilt: it is a gap, not a delegation.
 import { deriveInvoiceNumber, invoiceAccountingHook } from '@/invoices/hooks'
 import { validateNotLocked } from '@/utility'
-import { adminOnly, multiTenantRead } from '@/auth'
+import { adminOnly, multiTenantRead } from '@/access/collections/shared/multiTenantRead'
 import { authenticated } from '@/authenticated'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'

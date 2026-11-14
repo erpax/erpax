@@ -15,7 +15,7 @@
 */
 
 import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '@/auth'
+import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { validatePostCloseAnalytics } from '@/hooks/collections/post-close-analytics-reports/validatePostCloseAnalytics'
 
 export const PostCloseAnalyticsReports: CollectionConfig = {

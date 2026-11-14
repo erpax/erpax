@@ -1,4 +1,4 @@
-import { createMembershipAdminMutateAccess } from '@/membership/admin/mutate/access'
+import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
 
 /**
  * Pages: only global super-admins or per-tenant membership **admin** can create / update / delete.

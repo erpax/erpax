@@ -14,7 +14,7 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/auth'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { statusField, notesField, auditFields } from '@/base/accounting/field'
 
 const KycChecks: CollectionConfig = {

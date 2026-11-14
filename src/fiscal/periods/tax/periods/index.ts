@@ -17,7 +17,7 @@
 */
 
 import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '@/auth'
+import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { validateTaxPeriodClosing } from '@/hooks/collections/tax-periods/validateTaxPeriodClosing'
 
 export const TaxPeriods: CollectionConfig = {

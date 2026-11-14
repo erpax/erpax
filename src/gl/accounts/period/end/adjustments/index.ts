@@ -1,5 +1,5 @@
 import type { CollectionConfig } from 'payload'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { notesField } from '@/base/accounting/field'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant';
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy';

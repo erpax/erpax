@@ -25,7 +25,7 @@
  */
 
 import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '@/auth'
+import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 
 export const FiscalCalendars: CollectionConfig = {
   slug: 'fiscal-calendars',

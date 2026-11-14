@@ -20,7 +20,7 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation party-scoped-read
  */
 import type { CollectionConfig } from 'payload'
-import { partyRoleAccess, scopedAccess } from '@/auth'
+import { partyRoleAccess, scopedAccess } from '@/access/collections/shared/multiTenantRead'
 import { auditFields, countryCodeField, referenceField } from '@/field'
 import { partyRefField, typeField } from '@/discriminator'
 import { standardCollectionHooks } from '@/standard/collection/hook'

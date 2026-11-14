@@ -39,7 +39,7 @@
 
 import type { CollectionBeforeChangeHook, CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { accountingCollectionAccess } from '@/auth'
+import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { currencyField, statusField, notesField, auditFields, referenceField, legalEntityField } from '@/base/accounting/field'
 import { preset, type Preset } from '@/preset'
 

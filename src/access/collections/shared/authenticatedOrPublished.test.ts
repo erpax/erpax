@@ -14,7 +14,7 @@ import { describe, it, expect } from 'vitest'
 
 import { wherePublished } from '@/scope'
 
-import { authenticatedOrPublished, controlsApplied } from '@/authenticated/or/published'
+import { authenticatedOrPublished, controlsApplied } from '@/access/collections/shared/authenticatedOrPublished'
 
 // Minimal `{ req: { user } }`-shaped arg — only the field the predicate reads.
 function args(user: unknown): Parameters<Access>[0] {

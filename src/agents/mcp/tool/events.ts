@@ -14,7 +14,7 @@ import type { Where } from 'payload'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
 import type { ErpaxMcpTool } from '../tool-defs'
 import { createAgentContext } from '@/agent'
-import { getActorId } from '@/auth'
+import { getActorId } from '@/access/collections/shared/multiTenantRead'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))

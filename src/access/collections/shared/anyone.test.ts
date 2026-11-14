@@ -10,7 +10,7 @@ import type { Access } from 'payload'
 
 import { describe, it, expect } from 'vitest'
 
-import { anyone, controlsApplied } from '@/anyone'
+import { anyone, controlsApplied } from '@/access/collections/shared/anyone'
 
 // Minimal `{ req: { user } }`-shaped arg — only the shape the predicate reads.
 function args(user: unknown): Parameters<Access>[0] {

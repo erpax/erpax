@@ -16,7 +16,7 @@
 */
 
 import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '@/auth'
+import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { validateConsolidationReadiness } from '@/hooks/collections/consolidations/validateConsolidationReadiness'
 
 export const Consolidations: CollectionConfig = {

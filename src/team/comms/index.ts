@@ -24,7 +24,7 @@ import { MAX_BROADCAST_DEPTH } from '@/agent/sync/depth'
 import type { Team } from '@/agent/team'
 import { teamUuid } from '@/agent/team'
 import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
-import { isSuperAdmin } from '@/is/super/admin'
+import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 
 /** Re-export — the runaway-loop guard shared with chat-broadcast. */
 export { MAX_BROADCAST_DEPTH as MAX_TEAM_COMMS_DEPTH }

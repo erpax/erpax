@@ -14,7 +14,7 @@
 
 import type { Access } from 'payload'
 
-import { commerceHasStaffRole } from './utilities'
+import { commerceHasStaffRole } from '@/ecommerce/access/utilities'
 
 export const isDocumentOwner: Access = ({ req }) => {
   if (req.user && commerceHasStaffRole(req.user)) {

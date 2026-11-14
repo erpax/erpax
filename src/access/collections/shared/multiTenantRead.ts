@@ -16,13 +16,13 @@
 import type { Access, PayloadRequest, Where } from 'payload'
 import type { UserContext, UserRole } from '@/types/auth'
 import { ACCOUNTING_WRITE_ROLES } from '@/roles/registry'
-import { getUserContext } from './context'
+import { getUserContext } from '@/auth/context'
 
-export { superAdminOnly } from '@/is/super/admin'
+export { superAdminOnly } from '@/access/collections/shared/superAdminOnly'
 // The identity readers live in the leaf `auth/context` so the subscription gate can read WHO is
 // acting without importing the predicates — the two-file loop [[rules]]/cycle named. The face is
 // unchanged: both names are still offered here ([[rules]]/face).
-export { getUser, getUserContext } from './context'
+export { getUser, getUserContext } from '@/auth/context'
 
 /**
  * The acting identity's id as a string, for ANY auth type (app `User`

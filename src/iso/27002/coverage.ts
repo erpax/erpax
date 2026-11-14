@@ -62,7 +62,7 @@ export const coverageByTheme = (
  *
  * @example
  *   import { controlsApplied as authChecks } from '@/authenticated'
- *   import { controlsApplied as adminChecks } from '@/is/super/admin'
+ *   import { controlsApplied as adminChecks } from '@/access/collections/shared/superAdminOnly'
  *   const all = aggregateCoverage([authChecks, adminChecks])
  */
 export const aggregateCoverage = (

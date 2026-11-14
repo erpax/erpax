@@ -13,11 +13,11 @@
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 
-import { authenticatedOrPublished } from '@/authenticated/or/published'
+import { authenticatedOrPublished } from '@/access/collections/shared/authenticatedOrPublished'
 import {
   tenantScopedCollectionReadAccess,
   tenantScopedPostsReadAccess,
-} from '@/tenant/scoped/read'
+} from '@/access/collections/shared/tenantScopedCollectionReadAccess'
 import { wherePublished } from '@/scope'
 
 const getAllowPublicReadTenantIds = vi.fn()

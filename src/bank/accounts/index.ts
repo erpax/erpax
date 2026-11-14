@@ -18,7 +18,7 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { tenantAdminWriteAccess } from '@/auth'
+import { tenantAdminWriteAccess } from '@/access/collections/shared/multiTenantRead'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { deriveCountryFromIban } from '@/hooks/collections/shared/deriveCountryFromIban'
 import { currencyField, statusField, notesField, auditFields } from '@/base/accounting/field'

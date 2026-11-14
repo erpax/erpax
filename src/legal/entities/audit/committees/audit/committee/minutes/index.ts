@@ -7,7 +7,7 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  */
 import { CollectionConfig } from 'payload'
-import { roleBasedAccess } from '@/role/based/access'
+import { roleBasedAccess } from '@/access/collections/shared/roleBasedAccess'
 
 export const AuditCommitteeMinutes: CollectionConfig = {
   slug: 'audit-committee-minutes',

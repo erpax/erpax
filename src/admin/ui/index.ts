@@ -21,7 +21,7 @@ export {
   fieldAccessFromComputed,
   fieldVisibleForUpdate,
   fieldVisibleForWrite,
-} from './visibility'
+} from '@/access/fields/shared/fieldAccessFromComputed'
 export {
   ViolationMonitorProvider,
   ViolationMonitorPanel,

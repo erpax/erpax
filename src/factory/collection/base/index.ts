@@ -21,7 +21,7 @@ import {
   emitOnStatusTransition, emitOnCreate, type AggregateType,
 } from '@/chain/event/emitter'
 import { wireChainProducersFor } from '@/business/chain'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/auth'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import type { UserRole } from '@/types/auth'
 import {
   statusField, notesField, auditFields,

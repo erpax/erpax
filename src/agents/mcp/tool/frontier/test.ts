@@ -19,7 +19,7 @@ describe('developManifest — the act leg, hermetic', () => {
 
   it('a two-file tangle becomes a leaf extraction: template without a word, planned scalpel ops with one', () => {
     const edges = [
-      { importer: 'src/gate/index.ts', exporter: 'src/auth/index.ts', names: ['getUserContext'], statement: "import { getUserContext } from '@/auth'", specifier: '@/auth' },
+      { importer: 'src/gate/index.ts', exporter: 'src/auth/index.ts', names: ['getUserContext'], statement: "import { getUserContext } from '@/access/collections/shared/multiTenantRead'", specifier: '@/auth' },
       { importer: 'src/auth/index.ts', exporter: 'src/gate/index.ts', names: ['a', 'b', 'c'], statement: "import { a, b, c } from '@/gate'", specifier: '@/gate' },
     ]
     const tangles = new Map([['subscription/gate', { members: ['src/auth/index.ts', 'src/gate/index.ts'], edges }]])
@@ -29,7 +29,7 @@ describe('developManifest — the act leg, hermetic', () => {
     expect(tpl!.steps.join('\n')).toContain('pass `word`')
     const [dev] = developManifest([theorem('law:cycle', 'subscription/gate')], { tangles, word: 'context' }, '/nowhere')
     expect(dev!.kind).toBe('ops')
-    expect(dev!.ops).toEqual([expect.objectContaining({ file: 'src/gate/index.ts', find: "import { getUserContext } from '@/auth'", replace: "import { getUserContext } from '@/auth/context'" })])
+    expect(dev!.ops).toEqual([expect.objectContaining({ file: 'src/gate/index.ts', find: "import { getUserContext } from '@/access/collections/shared/multiTenantRead'", replace: "import { getUserContext } from '@/auth/context'" })])
     expect(dev!.ops[0]!.reason.length).toBeGreaterThan(20)
     // the scalpel dry-ran it: the file is not under /nowhere, so the plan REFUSES rather than pretending
     expect(dev!.plan!.refused).toBe(1)
@@ -257,7 +257,7 @@ describe('developManifest — a dependent seat corroborates nothing', () => {
 
 describe('developManifest — a word the remote agent named', () => {
   it('a per-target word from ev.words turns the template into planned ops, and wins over the global word', () => {
-    const edges = [{ importer: 'src/gate/index.ts', exporter: 'src/auth/index.ts', names: ['getUserContext'], statement: "import { getUserContext } from '@/auth'", specifier: '@/auth' }]
+    const edges = [{ importer: 'src/gate/index.ts', exporter: 'src/auth/index.ts', names: ['getUserContext'], statement: "import { getUserContext } from '@/access/collections/shared/multiTenantRead'", specifier: '@/auth' }]
     const tangles = new Map([['subscription/gate', { members: ['src/auth/index.ts', 'src/gate/index.ts'], edges }]])
     const theorem = { ...lead('law:cycle', 'subscription/gate'), tag: 'theorem' as const, instrument: 'x', formula: '' }
     const [d] = developManifest([theorem], { tangles, word: 'global', words: new Map([['subscription/gate', 'context']]) }, '/nowhere')

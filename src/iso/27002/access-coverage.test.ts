@@ -26,12 +26,12 @@ import {
   type Iso27002ControlId,
 } from '@/iso/27002'
 
-import { controlsApplied as anyone } from '@/anyone'
+import { controlsApplied as anyone } from '@/access/collections/shared/anyone'
 import { controlsApplied as authenticated } from '@/authenticated'
-import { controlsApplied as authenticatedOrPublished } from '@/authenticated/or/published'
-import { controlsApplied as isSuperAdmin } from '@/is/super/admin'
-import { controlsApplied as tenantScopedRead } from '@/tenant/scoped/read'
-import { controlsApplied as membershipAdminMutateAccess } from '@/membership/admin/mutate/access'
+import { controlsApplied as authenticatedOrPublished } from '@/access/collections/shared/authenticatedOrPublished'
+import { controlsApplied as isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
+import { controlsApplied as tenantScopedRead } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
+import { controlsApplied as membershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
 import { controlsApplied as allowPublicReadTenants } from '@/allow/public/read/tenant'
 import { controlsApplied as subscriptionGates } from '@/subscription/gate'
 

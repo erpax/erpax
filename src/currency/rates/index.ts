@@ -1,5 +1,5 @@
 import type { CollectionConfig } from 'payload'
-import { tenantAdminWriteAccess } from '@/auth'
+import { tenantAdminWriteAccess } from '@/access/collections/shared/multiTenantRead'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { currencyField, notesField } from '@/base/accounting/field'

@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { superAdminOnly } from '@/is/super/admin'
+import { superAdminOnly } from '@/access/collections/shared/superAdminOnly'
 
 import { preventDuplicateAssignment } from '@/roles/user/roles/hooks'
 

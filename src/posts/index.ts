@@ -10,8 +10,8 @@ import {
   lexicalEditor,
 } from '@payloadcms/richtext-lexical'
 
-import { createMembershipAdminMutateAccess } from '@/membership/admin/mutate/access'
-import { tenantScopedPostsReadAccess } from '@/tenant/scoped/read'
+import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
+import { tenantScopedPostsReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
 import { documentPreviewAdmin } from '@/shareds'
 import { defaultVersionedDrafts } from '@/shareds'
 import { codeLanguages, documentFeatures } from '@/default/lexical'

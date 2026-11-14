@@ -44,8 +44,8 @@ import type {
   CollectionAfterReadHook,
 } from 'payload'
 
-import { createMembershipAdminMutateAccess } from '@/membership/admin/mutate/access'
-import { tenantScopedCollectionReadAccess } from '@/tenant/scoped/read'
+import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
+import { tenantScopedCollectionReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { auditFields } from '@/field'
 import { HORO_DIGITS, isHoroStep, type HoroStep } from '@/horo'

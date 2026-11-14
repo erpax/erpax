@@ -1,6 +1,6 @@
 import type { PayloadRequest } from 'payload'
 
-import { isSuperAdmin } from '@/is/super/admin'
+import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
 
 /**

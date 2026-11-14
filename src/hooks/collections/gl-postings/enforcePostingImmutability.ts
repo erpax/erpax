@@ -9,7 +9,7 @@
  */
 
 import { CollectionBeforeChangeHook } from 'payload'
-import { getUser } from '@/auth'
+import { getUser } from '@/access/collections/shared/multiTenantRead'
 
 export const enforcePostingImmutability: CollectionBeforeChangeHook = async ({
   req,

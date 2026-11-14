@@ -55,7 +55,7 @@ import { sl } from '@payloadcms/translations/languages/sl'
 import { sv } from '@payloadcms/translations/languages/sv'
 import { uk } from '@payloadcms/translations/languages/uk'
 
-import { isSuperAdmin } from '@/is/super/admin'
+import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 // All 145+ collections come from canonical src/collections/* locations (flat, agnostic organization).
 // No domain silos: organizing by actual data type/concern, not business domain.
 // Collections are self-contained with clear boundaries for future plugin extraction.

@@ -30,7 +30,7 @@ import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenan
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
-import { accountingCollectionAccess } from '@/auth'
+import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { currencyField, statusField, notesField, auditFields, referenceField } from '@/base/accounting/field'
 
 const Bookings: CollectionConfig = {

@@ -7,7 +7,7 @@
  */
 import type { CollectionConfig } from 'payload'
 import { authenticated } from '@/authenticated'
-import { superAdminOnly } from '@/auth'
+import { superAdminOnly } from '@/access/collections/shared/multiTenantRead'
 
 export const EntityLegalStructures: CollectionConfig = {
   slug: 'entity-legal-structures',

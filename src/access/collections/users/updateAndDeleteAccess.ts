@@ -1,8 +1,8 @@
 import type { Access } from 'payload'
 
 import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
-import { isSuperAdmin } from '@/is/super/admin'
-import { isAccessingSelf } from './isAccessingSelf'
+import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
+import { isAccessingSelf } from '@/users/access/isAccessingSelf'
 
 /**
  * Users:update + delete access predicate — self, super-admin, or

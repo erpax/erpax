@@ -20,7 +20,7 @@
  */
 
 import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '@/auth'
+import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 
 export const FiscalPeriodSnapshots: CollectionConfig = {
   slug: 'fiscal-period-snapshots',

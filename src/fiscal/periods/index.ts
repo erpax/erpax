@@ -1,5 +1,5 @@
 import type { CollectionConfig } from 'payload'
-import { tenantMasterDataAccess, getUser } from '@/auth'
+import { tenantMasterDataAccess, getUser } from '@/access/collections/shared/multiTenantRead'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'

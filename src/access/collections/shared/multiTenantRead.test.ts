@@ -10,7 +10,7 @@ import {
   accountingCollectionAccess,
   tenantMasterDataAccess,
   tenantAdminWriteAccess,
-} from '@/auth'
+} from '@/access/collections/shared/multiTenantRead'
 
 // Minimal req builder — no Payload boot required.
 function makeReq(user: unknown): { user: unknown } {

@@ -14,7 +14,7 @@ import type { CollectionBeforeChangeHook } from 'payload'
  * Re-exported rather than redefined: the policy has one address in `@/auth`, and this name stays
  * on the atom's face because callers hold it.
  */
-export { neverDelete } from '@/auth'
+export { neverDelete } from '@/access/collections/shared/multiTenantRead'
 
 /**
  * The balance law as a guard: a matter SEALS (step 9, unity) only once

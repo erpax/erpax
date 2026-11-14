@@ -19,7 +19,7 @@
  */
 
 import type { Payload, PayloadRequest } from 'payload'
-import { getActorId } from '@/auth'
+import { getActorId } from '@/access/collections/shared/multiTenantRead'
 
 export type BulkFormat =
   | 'csv'

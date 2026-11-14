@@ -1,5 +1,5 @@
 import type { CollectionConfig } from 'payload'
-import { tenantMasterDataAccess } from '@/auth'
+import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantRead'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { taxonomySelect } from '@/base/accounting/field'

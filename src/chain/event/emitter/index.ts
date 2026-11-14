@@ -18,7 +18,7 @@
 import type { CollectionAfterChangeHook } from 'payload'
 import { eventEmitter } from '@/event/emitter/service'
 import type { DomainEvent } from '@/types/events'
-import { getActorId } from '@/auth'
+import { getActorId } from '@/access/collections/shared/multiTenantRead'
 
 type StatusBearing = { status?: string; id: string; uuid?: string; tenant?: string | { id: string } }
 

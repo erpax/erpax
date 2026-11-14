@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { authenticatedOrPublished } from '@/authenticated/or/published'
+import { authenticatedOrPublished } from '@/access/collections/shared/authenticatedOrPublished'
 import { Archive, CallToAction, Content, FormBlock, MediaBlock } from '@/blocks/config'
 import { hero } from '@/hero'
 import { slugField } from 'payload'

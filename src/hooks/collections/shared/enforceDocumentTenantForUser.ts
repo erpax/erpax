@@ -1,6 +1,6 @@
 import type { CollectionBeforeChangeHook } from 'payload'
 
-import { isSuperAdmin } from '@/is/super/admin'
+import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 import type { Tenant } from '@/types'
 import { extractID } from '@/extract/id'
 import { apiErr, ERR } from '@/error'

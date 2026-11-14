@@ -2,7 +2,7 @@ import type { Access } from 'payload'
 
 import type { Tenant, User } from '@/types'
 
-import { isSuperAdmin } from '@/is/super/admin'
+import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
 
 /**

@@ -17,7 +17,7 @@
 */
 
 import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '@/auth'
+import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { validateAuditComplianceReporting } from '@/hooks/collections/audit-reports/validateAuditComplianceReporting'
 
 export const AuditReports: CollectionConfig = {

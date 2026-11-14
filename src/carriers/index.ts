@@ -20,7 +20,7 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { tenantMasterDataAccess } from '@/auth'
+import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantRead'
 import { statusField, notesField, auditFields, taxonomySelect } from '@/base/accounting/field'
 import { INCOTERM_OPTIONS } from '@/incoterms/2020'
 

@@ -19,7 +19,7 @@ import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenan
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { currencyField, statusField, notesField, auditFields } from '@/base/accounting/field'
 import { validateNotLocked } from '@/utility'
 import { depreciationSchedulePostingHook } from '@/hooks/collections/shared/depreciationSchedulePostingHook'

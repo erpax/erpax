@@ -8,6 +8,6 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from './updateAndDelete'
+export * from '@/access/collections/tenants/updateAndDeleteAccess'
 
 /** @index-cross.foldback child=tenants/access parent=tenants — this cross folds back into its parent. */

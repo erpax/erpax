@@ -31,7 +31,7 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { competencyLineField } from '@/competency'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
-import { roleScopedAccess, tenantAdmin } from '@/auth'
+import { roleScopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import {
   currencyField,
   statusField,

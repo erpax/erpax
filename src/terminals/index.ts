@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { currencyField, statusField, auditFields } from '@/field'
 
 /**

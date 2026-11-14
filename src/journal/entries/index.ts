@@ -5,7 +5,7 @@ import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCr
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
-import { adminOrAccountant, scopedAccess, tenantAdmin, hasRole, getUserContext } from '@/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin, hasRole, getUserContext } from '@/access/collections/shared/multiTenantRead'
 import {
   glAccountField,
   currencyField,

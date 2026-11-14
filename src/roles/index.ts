@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { superAdminOnly } from '@/is/super/admin'
+import { superAdminOnly } from '@/access/collections/shared/superAdminOnly'
 import { scopeResourceCollections } from '@/nist/incits/359'
 
 import { validateRoleDefinition } from '@/roles/hooks'

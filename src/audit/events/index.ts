@@ -56,7 +56,7 @@
 
 import type { CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
-import { scopedAccess, tenantAdmin, adminOnly } from '@/auth'
+import { scopedAccess, tenantAdmin, adminOnly } from '@/access/collections/shared/multiTenantRead'
 
 const AuditEvents: CollectionConfig = {
   slug: 'audit-events',

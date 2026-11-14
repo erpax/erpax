@@ -22,7 +22,7 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/auth'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { statusField, notesField, auditFields } from '@/base/accounting/field'
 
 const EvidenceAttestations: CollectionConfig = {

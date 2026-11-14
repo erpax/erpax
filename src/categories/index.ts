@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 
-import { createMembershipAdminMutateAccess } from '@/membership/admin/mutate/access'
-import { tenantScopedCollectionReadAccess } from '@/tenant/scoped/read'
+import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
+import { tenantScopedCollectionReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
 import { slugField } from 'payload'
 import { localeRecord } from '@/i18n'
 

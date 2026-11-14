@@ -89,7 +89,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { auditFields } from '@/base/accounting/field'
 
 const SIGNATORY_ROLES = [

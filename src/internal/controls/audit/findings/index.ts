@@ -11,7 +11,7 @@
  */
 import type { CollectionConfig } from 'payload'
 import { authenticated } from '@/authenticated'
-import { adminOnly } from '@/auth'
+import { adminOnly } from '@/access/collections/shared/multiTenantRead'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 
 export const AuditFindings: CollectionConfig = {

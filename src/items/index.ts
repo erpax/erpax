@@ -1,5 +1,5 @@
 import { CollectionConfig } from 'payload'
-import { adminOnly, multiTenantRead } from '@/auth'
+import { adminOnly, multiTenantRead } from '@/access/collections/shared/multiTenantRead'
 import { authenticated } from '@/authenticated'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'

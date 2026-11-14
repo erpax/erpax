@@ -19,7 +19,7 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { accountingCollectionAccess } from '@/auth'
+import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { currencyField, statusField, notesField, auditFields, referenceField } from '@/base/accounting/field'
 
 const RegulatoryDeferralAccounts: CollectionConfig = {

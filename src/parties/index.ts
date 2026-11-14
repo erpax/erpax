@@ -27,7 +27,7 @@
  * @see ./SKILL.md
  */
 import type { CollectionConfig, Condition, Payload } from 'payload'
-import { tenantMasterDataAccess } from '@/auth'
+import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantRead'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { classifyTaxId } from '@/hooks/collections/parties/classifyTaxId'

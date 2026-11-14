@@ -44,7 +44,7 @@ import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCr
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
-import { roleScopedAccess, tenantAdmin } from '@/auth'
+import { roleScopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import {
   currencyField,
   statusField,
