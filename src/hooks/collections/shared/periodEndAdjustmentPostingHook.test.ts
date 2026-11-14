@@ -84,6 +84,41 @@ beforeAll(async () => {
     { email: { equals: USER_EMAIL } },
     { email: USER_EMAIL, password: 'test-pass-1234', roles: ['admin'] },
   )
+  // The posting refuses a date it cannot place in a fiscal period (validateFiscalPeriodPosting): the
+  // calendar is READ, never guessed. The tenant has exactly one legal entity, so its postings
+  // resolve to that entity, and the calendar entry for the test's posting date is seeded for it.
+  const entity = await findOrCreate(
+    'legal-entities',
+    { and: [{ tenant: { equals: tenant } }, { registrationNumber: { equals: 'TEST-PEA-001' } }] },
+    { tenant, legalName: 'Period-End Test', legalForm: 'llc', countryCode: 'BG', registrationNumber: 'TEST-PEA-001', effectiveFrom: '2026-01-01T00:00:00.000Z' },
+  )
+  const period = await findOrCreate(
+    'fiscal-periods',
+    { label: { equals: 'PEA-TEST-2026-04' } },
+    {
+      tenant,
+      label: 'PEA-TEST-2026-04',
+      identity: { fiscalYear: 2026, periodNumber: 4, periodType: 'monthly' },
+      dates: { startDate: '2026-04-01T00:00:00.000Z', endDate: '2026-04-30T00:00:00.000Z' },
+      lifecycle: { status: 'open' },
+    },
+  )
+  await findOrCreate(
+    'fiscal-calendars',
+    { and: [{ entity: { equals: entity } }, { calendarDate: { equals: '2026-04-30T00:00:00.000Z' } }] },
+    {
+      tenant,
+      entity,
+      calendarDate: '2026-04-30T00:00:00.000Z',
+      fiscalYear: 2026,
+      fiscalPeriod: 4,
+      periodStartDate: '2026-04-01T00:00:00.000Z',
+      periodEndDate: '2026-04-30T00:00:00.000Z',
+      periodLabel: 'April 2026',
+      regulatoryCode: 'P04_2026',
+      generatedFrom: period,
+    },
+  )
   const accounts: ReadonlyArray<[string, 'asset' | 'liability' | 'expense', 'debit' | 'credit', string]> = [
     ['depreciation_expense', 'expense', 'debit', '6100'],
     ['accumulated_depreciation', 'asset', 'credit', '1590'],

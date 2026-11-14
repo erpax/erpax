@@ -126,7 +126,9 @@ export const validateFiscalPeriodPosting: CollectionBeforeValidateHook<GLPosting
     throw new Error('entity required to resolve fiscal period')
   }
 
-  const _tenantId = getUserContext(req)?.tenant || 'default'
+  // Locks are kept per tenant and period; the posting carries its tenant, the request is the fallback.
+  const tenantOf = (v: unknown): string | number | undefined => (typeof v === 'object' && v !== null ? (v as { id?: string | number }).id : (v as string | number | undefined))
+  const tenantId = tenantOf((data as { tenant?: unknown }).tenant) ?? getUserContext(req)?.tenant
 
   // The fiscal period is READ from the generated calendar — it is never derived here. FiscalCalendars is
   // the one place a tenant's fiscal shape exists (its year start, its periodType: monthly · quarterly ·
@@ -168,7 +170,8 @@ export const validateFiscalPeriodPosting: CollectionBeforeValidateHook<GLPosting
     limit: 1,
     where: {
       and: [
-        { entity: { equals: entityId } },
+        // `period-locks` has no entity field: a lock closes a period for the tenant
+        ...(tenantId === undefined ? [] : [{ tenant: { equals: tenantId } }]),
         { fiscalYear: { equals: data.fiscalYear } },
         { fiscalPeriod: { equals: data.fiscalPeriod } },
       ],

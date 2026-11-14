@@ -76,11 +76,18 @@ export const derivePosting: CollectionAfterChangeHook<JournalEntry> = async ({ d
   })
   if (existing.docs.length > 0) return doc
   const posting = postingFor(doc)
+  // The posting's period check resolves the fiscal calendar from the posting date and the legal
+  // entity; neither is stored on the posting. A journal entry does not name its legal entity, so a
+  // tenant with exactly one is posted to that one. With none or several the tenant id is passed
+  // and the period check refuses the posting — it is never guessed.
+  const entities =
+    posting.tenant === undefined
+      ? { docs: [] }
+      : await req.payload.find({ collection: 'legal-entities', where: { tenant: { equals: posting.tenant } }, depth: 0, limit: 2, req, select: {} })
+  const entity = entities.docs.length === 1 ? entities.docs[0]!.id : posting.tenant
   await req.payload.create({
     collection: 'gl-postings',
-    // The posting's period check resolves the calendar from the posting date and the entity; both
-    // are the entry's, and neither is stored on the posting.
-    data: { ...posting, postingDate: doc.entryDate, entity: posting.tenant } as typeof posting,
+    data: { ...posting, postingDate: doc.entryDate, entity } as typeof posting,
     depth: 0,
     req,
     context: { postingDerived: true },

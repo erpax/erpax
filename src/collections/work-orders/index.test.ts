@@ -12,6 +12,7 @@ import {
   deriveState,
   machinesPerWorker,
   pieceRateWage,
+  pieceWage,
   minutesRemaining,
   assertTotalsBalance,
   inheritShiftEfficiency,
@@ -86,6 +87,25 @@ describe('pieceRateWage — unitsProduced·unitSeconds·payPerHour / 3600 / mpw'
   it('rounds to two decimals', () => {
     expect(pieceRateWage({ unitsProduced: 1, unitSeconds: 1, payPerHour: 1 })).toBe(0)
     expect(pieceRateWage({ unitsProduced: 7, unitSeconds: 13, payPerHour: 9 })).toBe(0.23)
+  })
+})
+
+describe('pieceWage — the unrounded wage the shift rolls up (etrima rounds the SUM, not each order)', () => {
+  it('keeps the fraction pieceRateWage rounds away', () => {
+    // 7 · 13 · 9 / 3600 = 0.2275 → shown as 0.23 on the order, rolled up as 0.2275
+    expect(pieceWage({ unitsProduced: 7, unitSeconds: 13, payPerHour: 9 })).toBeCloseTo(0.2275, 10)
+    expect(pieceRateWage({ unitsProduced: 7, unitSeconds: 13, payPerHour: 9 })).toBe(0.23)
+  })
+  it('summing unrounded then rounding differs from summing cents', () => {
+    const order = { unitsProduced: 7, unitSeconds: 13, payPerHour: 9 }
+    const orders = [order, order, order, order]
+    const sum = (f: (o: typeof order) => number) => orders.reduce((a, o) => a + f(o), 0)
+    expect(Math.round(sum(pieceWage) * 100) / 100).toBe(0.91) // 4 · 0.2275 = 0.91
+    expect(Math.round(sum(pieceRateWage) * 100) / 100).toBe(0.92) // 4 · 0.23 — a cent the shift never paid
+  })
+  it('is zero on the same guards as the rounded wage', () => {
+    expect(pieceWage({ unitsProduced: 0, unitSeconds: 60, payPerHour: 12 })).toBe(0)
+    expect(pieceWage({ unitsProduced: 100, unitSeconds: 60, payPerHour: null })).toBe(0)
   })
 })
 

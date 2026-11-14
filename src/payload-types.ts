@@ -6814,7 +6814,7 @@ export interface WorkShift {
    */
   payPerHour?: number | null;
   /**
-   * Σ of the contributing work-order wages (the piece-rollup pole). `wage` is the MAX of this and time-pay.
+   * Σ of the contributing work-order wages, unrounded (the piece-rollup pole; rolled up by the work orders on every write). `wage` is the MAX of this and time-pay.
    */
   orderWage?: number | null;
   /**
