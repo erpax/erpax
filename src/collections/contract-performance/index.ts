@@ -87,7 +87,7 @@
  * @see src/ifrs/15/types/index.ts PerformanceObligation ControlTransfer
  * @see src/collections/accounting/Contracts.ts
  * @see src/collections/accounting/Invoices.ts
- * @see src/collections/accounting/SalesOrders.ts
+ * @see src/components/ecommerce/orders
  */
 
 import type { CollectionConfig } from 'payload'
@@ -243,7 +243,7 @@ const ContractPerformance: CollectionConfig = {
     {
       name: 'associatedSalesOrder',
       type: 'relationship',
-      relationTo: 'sales-orders',
+      relationTo: 'orders',
       admin: {
         description: 'Associated sales order (pre-contract commitment phase)',
       },

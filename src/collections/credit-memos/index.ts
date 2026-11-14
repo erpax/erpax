@@ -161,7 +161,7 @@ const CreditMemos: CollectionConfig = {
     {
       name: 'order',
       type: 'relationship',
-      relationTo: 'sales-orders',
+      relationTo: 'orders',
       admin: { description: 'Originating sales order, when the credit skips the invoice (ISO-20022 pacs.004 end-to-end trace).' },
     },
     { name: 'amount', type: 'number', required: true, min: 0, admin: { description: 'Credit amount in cents.' } },

@@ -19,7 +19,7 @@
 import { recomputeParentAggregates } from '@/utilities/factory'
 
 export const invoicePaidTotals = recomputeParentAggregates({
-  childSlug: 'payments',
+  childSlug: 'transactions',
   parentSlug: 'invoices',
   parentRelField: 'invoice',
   aggregates: [{ target: 'amounts.totalPaid', op: 'sum', source: 'amounts.amount' }],

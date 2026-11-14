@@ -2,10 +2,10 @@ import { describe, it, expect } from 'vitest'
 import { presetsSeededKey, declaredPresets, loadPresets, preset, seedPresets } from '@/utilities/preset'
 
 describe('preset — a saved list is a row', () => {
-  const p = preset('Quotes', 'sales-orders', { status: { in: ['sent'] } }, ['orderNumber', 'status'])
+  const p = preset('Quotes', 'orders', { status: { in: ['sent'] } }, ['orderNumber', 'status'])
 
   it('binds a title, a filter and columns to one collection, shared with everyone', () => {
-    expect(p).toMatchObject({ title: 'Quotes', relatedCollection: 'sales-orders', isShared: true, where: { status: { in: ['sent'] } } })
+    expect(p).toMatchObject({ title: 'Quotes', relatedCollection: 'orders', isShared: true, where: { status: { in: ['sent'] } } })
     expect(p.columns).toEqual([{ accessor: 'orderNumber', active: true }, { accessor: 'status', active: true }])
     expect(p.access.read.constraint).toBe('everyone')
   })
@@ -42,7 +42,7 @@ describe('preset — a deployment loads its own saved lists', () => {
     const all = await declaredPresets()
     const keys = all.map((p) => `${p.relatedCollection}:${p.title}`)
     expect(new Set(keys).size).toBe(keys.length)
-    for (const c of ['parties', 'sales-orders', 'maintenance-work-orders', 'provisions', 'credit-memos']) expect(all.some((p) => p.relatedCollection === c), c).toBe(true)
+    for (const c of ['parties', 'orders', 'maintenance-work-orders', 'provisions', 'credit-memos']) expect(all.some((p) => p.relatedCollection === c), c).toBe(true)
   })
 
   it('loads them when a tenant is created, inside that request, and marks the context', async () => {

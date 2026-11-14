@@ -199,7 +199,7 @@ export async function teardownChainContext(payload: Payload, ctx: ChainContext):
   // Best-effort: tests run in their own transaction scope in the
   // canonical pattern; this helper covers fixture-style tests.
   for (const collection of [
-    'usage-records', 'invoices', 'payments', 'gl-postings', 'journal-entries',
+    'usage-records', 'invoices', 'transactions', 'gl-postings', 'journal-entries',
     'goods-receipts', 'purchase-orders', 'vendor-quotes', 'purchase-requisitions',
     'inventory-movements', 'work-orders', 'bills-of-materials',
     'projects', 'project-tasks', 'project-milestones', 'wip-snapshots',

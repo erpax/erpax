@@ -46,7 +46,7 @@ const PaymentAllocations: CollectionConfig = {
   fields: [
     { name: 'reference', type: 'text', required: false, index: true,
       admin: { description: 'Optional human-readable reference; auto-populated from payment+invoice when omitted.' } },
-    { name: 'payment', type: 'relationship', relationTo: 'payments', required: true, index: true,
+    { name: 'payment', type: 'relationship', relationTo: 'transactions', required: true, index: true,
       admin: { description: 'The cash-side payment row this allocation draws from.' } },
     {
       name: 'targetType',

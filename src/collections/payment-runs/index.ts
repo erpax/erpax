@@ -199,7 +199,7 @@ const PaymentRuns: CollectionConfig = {
         {
           name: 'paymentRecord',
           type: 'relationship',
-          relationTo: 'payments',
+          relationTo: 'transactions',
           admin: {
             readOnly: true,
             description: 'Payment record created when this leg settles.',

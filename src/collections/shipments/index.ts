@@ -29,10 +29,10 @@ const Shipments: CollectionConfig = {
   },
   fields: [
     { name: 'shipmentNumber', type: 'text', required: true, unique: true, index: true },
-    // Slice XXXXXXXX-c (2026-05-11): retargeted from 'orders' → 'sales-orders'.
+    // The order is the e-commerce plugin's `orders`, which carries the sales-order register.
     // EN-16931 §BG-13 delivery-information ties the shipment to the
     // customer-side sales order it fulfils.
-    { name: 'order', type: 'relationship', relationTo: 'sales-orders', required: true },
+    { name: 'order', type: 'relationship', relationTo: 'orders', required: true },
     { name: 'shipFromAddress', type: 'relationship', relationTo: 'addresses' },
     { name: 'shipToAddress', type: 'relationship', relationTo: 'addresses', required: true },
     {

@@ -130,7 +130,7 @@ const ExpenseReports: CollectionConfig = {
     ]},
     { name: 'reimbursementDate', type: 'date' },
     { name: 'reimbursedViaPayrollRun', type: 'relationship', relationTo: 'payroll-runs' },
-    { name: 'reimbursedViaPayment', type: 'relationship', relationTo: 'payments' },
+    { name: 'reimbursedViaPayment', type: 'relationship', relationTo: 'transactions' },
     { name: 'journalEntry', type: 'relationship', relationTo: 'journal-entries',
       admin: { readOnly: true } },
     statusField(
