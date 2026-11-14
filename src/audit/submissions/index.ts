@@ -2,7 +2,8 @@ import type { CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, neverDelete } from '@/access/collections/shared/multiTenantRead'
-import { statusField, auditFields } from '@/field'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { statusField } from '@/fields/select/statusField'
 
 /**
  * Audit Submissions — the evidence log of each Наредба Н-18 Приложение-38

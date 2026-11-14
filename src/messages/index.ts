@@ -18,7 +18,8 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { statusField, auditFields } from '@/base/accounting/field'
+import { statusField } from '@/fields/select/statusField'
+import { auditFields } from '@/fields/relationship/auditFields'
 
 const Messages: CollectionConfig = {
   slug: 'messages',

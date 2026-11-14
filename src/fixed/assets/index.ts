@@ -2,8 +2,11 @@ import type { CollectionConfig } from 'payload'
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
-import { createAccountingCollection, createGLAccountFields } from '@/factory';
-import { currencyField, statusField, notesField } from '@/field';
+import { createAccountingCollection } from '@/factory';
+import { createGLAccountFields } from '@/fields/relationship/createGLAccountFields'
+import { notesField } from '@/fields/textarea/notesField'
+import { statusField } from '@/fields/select/statusField'
+import { currencyField } from '@/fields/text/currencyField'
 // Slice PPP: depreciationHook removed — delegated to a `req.payload.services?.depreciation`
 // service that doesn't exist in `src/services/` (silent no-op). Depreciation
 // will fold into a scheduled job (Slice ZZ pattern with `dunningJob`) when

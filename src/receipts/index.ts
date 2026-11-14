@@ -2,15 +2,13 @@ import type { CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, neverDelete } from '@/access/collections/shared/multiTenantRead'
-import {
-  currencyField,
-  statusField,
-  auditFields,
-  unpField,
-  fiscalDeviceNumberField,
-  operatorCodeField,
-  fiscalQrField,
-} from '@/field'
+import { fiscalQrField } from '@/fields/text/fiscalQrField'
+import { operatorCodeField } from '@/fields/text/operatorCodeField'
+import { fiscalDeviceNumberField } from '@/fields/text/fiscalDeviceNumberField'
+import { unpField } from '@/fields/text/unpField'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { statusField } from '@/fields/select/statusField'
+import { currencyField } from '@/fields/text/currencyField'
 
 /**
  * Receipts (касови бонове / electronic receipts) — the Наредба Н-18 fiscal

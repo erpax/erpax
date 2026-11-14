@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import { createCalculatedField, createGLAccountFields, createLineItemArray } from './index'
+import { createCalculatedField, createLineItemArray } from './index'
+import { createGLAccountFields } from '@/fields/relationship/createGLAccountFields'
 
 describe('factory/collection/field — a computed field is not a question', () => {
   it('a calculated field is hidden from the admin and carries its own calculator', () => {

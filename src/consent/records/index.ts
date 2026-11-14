@@ -18,7 +18,9 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { roleScopedAccess, scopedAccess, adminOnly } from '@/access/collections/shared/multiTenantRead'
-import { statusField, notesField, auditFields } from '@/base/accounting/field'
+import { statusField } from '@/fields/select/statusField'
+import { notesField } from '@/fields/textarea/notesField'
+import { auditFields } from '@/fields/relationship/auditFields'
 
 const ConsentRecords: CollectionConfig = {
   slug: 'consent-records',

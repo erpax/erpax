@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { isNamedField } from '@/test'
 import type { ArrayField } from 'payload'
-import { competencyLineField } from '@/competency'
+import { competencyLineField } from '@/fields/array/competencyLineField'
 
 // The actor-merge made literal: held vs required are the SAME shape around one
 // content-addressed competency word — never split by who holds it.

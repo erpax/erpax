@@ -19,7 +19,10 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { referenceField, statusField, auditFields, notesField } from '@/base/accounting/field'
+import { referenceField } from '@/fields/text/referenceField'
+import { statusField } from '@/fields/select/statusField'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { notesField } from '@/fields/textarea/notesField'
 
 const Operations: CollectionConfig = {
   slug: 'operations',

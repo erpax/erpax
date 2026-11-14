@@ -21,9 +21,10 @@ import {
   collectionSignature, shapeCatalogue, shapeRatchetVerdict, auditCorpus, ROSETTA_BASELINE,
   deriveLifecycleEmits, foldCollectionLifecycle,
 } from './index'
-import {
-  notesField, auditFields, statusField, currencyField,
-} from '@/field'
+import { currencyField } from '@/fields/text/currencyField'
+import { statusField } from '@/fields/select/statusField'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { notesField } from '@/fields/textarea/notesField'
 import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
 import type { HoroState } from '@/horo'
 

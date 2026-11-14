@@ -31,7 +31,11 @@ import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCr
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { currencyField, statusField, notesField, auditFields, referenceField } from '@/base/accounting/field'
+import { currencyField } from '@/fields/text/currencyField'
+import { statusField } from '@/fields/select/statusField'
+import { notesField } from '@/fields/textarea/notesField'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { referenceField } from '@/fields/text/referenceField'
 
 const Bookings: CollectionConfig = {
   slug: 'bookings',

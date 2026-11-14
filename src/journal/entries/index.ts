@@ -6,12 +6,10 @@ import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { adminOrAccountant, scopedAccess, tenantAdmin, hasRole, getUserContext } from '@/access/collections/shared/multiTenantRead'
-import {
-  glAccountField,
-  currencyField,
-  statusField,
-  auditFields,
-} from '@/field'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { statusField } from '@/fields/select/statusField'
+import { currencyField } from '@/fields/text/currencyField'
+import { glAccountField } from '@/fields/relationship/glAccountField'
 import { validateNotLocked } from '@/utility'
 import { validateBalancedEntry } from '@/hooks/collections/shared/validateBalancedEntry'
 

@@ -26,7 +26,12 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { currencyField, statusField, notesField, auditFields, referenceField, unitOfMeasureField } from '@/base/accounting/field'
+import { currencyField } from '@/fields/text/currencyField'
+import { statusField } from '@/fields/select/statusField'
+import { notesField } from '@/fields/textarea/notesField'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { referenceField } from '@/fields/text/referenceField'
+import { unitOfMeasureField } from '@/fields/text/unitOfMeasureField'
 
 const BiologicalAssets: CollectionConfig = {
   slug: 'biological-assets',

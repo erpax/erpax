@@ -43,7 +43,7 @@
  * @see ../../services/agents/mcp/i18n.ts (runtime resolution order)
  */
 import { createAccountingCollection } from '@/factory'
-import { referenceField } from '@/base/accounting/field'
+import { referenceField } from '@/fields/text/referenceField'
 
 export default createAccountingCollection({
   slug: 'translations',

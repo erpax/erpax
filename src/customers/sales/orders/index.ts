@@ -42,7 +42,8 @@
 
 import type { CollectionBeforeValidateHook, CollectionConfig } from 'payload'
 import { createAccountingCollection } from '@/factory'
-import { referenceField, unitOfMeasureField } from '@/base/accounting/field'
+import { referenceField } from '@/fields/text/referenceField'
+import { unitOfMeasureField } from '@/fields/text/unitOfMeasureField'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { preset, type Preset } from '@/preset'

@@ -5,12 +5,10 @@ import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCr
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { emitOnStatusTransition } from '@/chain/event/emitter'
-import {
-  glAccountField,
-  currencyField,
-  statusField,
-  auditFields,
-} from '@/base/accounting/field'
+import { glAccountField } from '@/fields/relationship/glAccountField'
+import { currencyField } from '@/fields/text/currencyField'
+import { statusField } from '@/fields/select/statusField'
+import { auditFields } from '@/fields/relationship/auditFields'
 import { validateNotLocked } from '@/utility'
 import { validateBalancedEntry } from '@/hooks/collections/shared/validateBalancedEntry'
 // Two SOX §404 controls that existed, were tested, and were installed on NOTHING. Each names this

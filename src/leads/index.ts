@@ -21,7 +21,10 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { statusField, notesField, auditFields, countryCodeField } from '@/base/accounting/field'
+import { statusField } from '@/fields/select/statusField'
+import { notesField } from '@/fields/textarea/notesField'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { countryCodeField } from '@/fields/text/countryCodeField'
 import { emitLeadQualified } from '@/chain/event/emitter'
 
 const Leads: CollectionConfig = {

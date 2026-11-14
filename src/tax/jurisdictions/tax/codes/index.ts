@@ -2,7 +2,7 @@ import type { CollectionConfig } from 'payload'
 import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantRead'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
-import { taxonomySelect } from '@/base/accounting/field'
+import { taxonomySelect } from '@/fields/select/taxonomySelect'
 import { VAT_CATEGORY_OPTIONS } from '@/un/cefact/5305'
 
 /**

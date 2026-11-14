@@ -29,7 +29,12 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { statusField, notesField, auditFields, referenceField, legalEntityField, taxonomySelect } from '@/base/accounting/field'
+import { statusField } from '@/fields/select/statusField'
+import { notesField } from '@/fields/textarea/notesField'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { referenceField } from '@/fields/text/referenceField'
+import { legalEntityField } from '@/fields/relationship/legalEntityField'
+import { taxonomySelect } from '@/fields/select/taxonomySelect'
 import {
   GHG_SCOPE_OPTIONS,
   GHG_CATEGORY_OPTIONS,

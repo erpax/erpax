@@ -45,7 +45,8 @@ import type { CollectionConfig, CollectionBeforeChangeHook } from 'payload'
 
 import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
 import { tenantScopedCollectionReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
-import { auditFields, referenceField } from '@/field'
+import { referenceField } from '@/fields/text/referenceField'
+import { auditFields } from '@/fields/relationship/auditFields'
 import { horoStateField, validateHoroStates, type HoroState } from '@/horo'
 
 /**

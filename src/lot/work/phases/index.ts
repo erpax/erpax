@@ -35,7 +35,8 @@
 import type { CollectionBeforeChangeHook, CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { auditFields, notesField } from '@/base/accounting/field'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { notesField } from '@/fields/textarea/notesField'
 
 /** A non-negative integer unit/minute counter — the double-entry numbers (see src/accounting). */
 const counter = (name: string, description: string): CollectionConfig['fields'][number] => ({

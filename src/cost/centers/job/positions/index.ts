@@ -17,8 +17,12 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { currencyField, statusField, notesField, auditFields, legalEntityField } from '@/base/accounting/field'
-import { competencyLineField } from '@/competency'
+import { currencyField } from '@/fields/text/currencyField'
+import { statusField } from '@/fields/select/statusField'
+import { notesField } from '@/fields/textarea/notesField'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { legalEntityField } from '@/fields/relationship/legalEntityField'
+import { competencyLineField } from '@/fields/array/competencyLineField'
 
 const JobPositions: CollectionConfig = {
   slug: 'job-positions',

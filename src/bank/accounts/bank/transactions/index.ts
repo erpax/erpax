@@ -52,7 +52,9 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
-import { currencyField, statusField, notesField } from '@/base/accounting/field'
+import { currencyField } from '@/fields/text/currencyField'
+import { statusField } from '@/fields/select/statusField'
+import { notesField } from '@/fields/textarea/notesField'
 
 const BankTransactions: CollectionConfig = {
   slug: 'bank-transactions',

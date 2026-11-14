@@ -22,7 +22,8 @@ import type { CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
-import { currencyField, statusField } from '@/field'
+import { statusField } from '@/fields/select/statusField'
+import { currencyField } from '@/fields/text/currencyField'
 
 const GLAccounts: CollectionConfig = {
   slug: 'gl-accounts',

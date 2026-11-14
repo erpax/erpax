@@ -41,7 +41,13 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { currencyField, statusField, notesField, auditFields, referenceField, countryCodeField, naceCodeField } from '@/base/accounting/field'
+import { currencyField } from '@/fields/text/currencyField'
+import { statusField } from '@/fields/select/statusField'
+import { notesField } from '@/fields/textarea/notesField'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { referenceField } from '@/fields/text/referenceField'
+import { countryCodeField } from '@/fields/text/countryCodeField'
+import { naceCodeField } from '@/fields/text/naceCodeField'
 
 const LegalEntities: CollectionConfig = {
   slug: 'legal-entities',

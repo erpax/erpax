@@ -31,7 +31,8 @@ import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenan
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { auditFields, notesField } from '@/base/accounting/field'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { notesField } from '@/fields/textarea/notesField'
 
 const Tags: CollectionConfig = {
   slug: 'tags',

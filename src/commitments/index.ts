@@ -98,7 +98,8 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
-import { currencyField, auditFields } from '@/base/accounting/field'
+import { currencyField } from '@/fields/text/currencyField'
+import { auditFields } from '@/fields/relationship/auditFields'
 
 const AUTHORIZATION_LEVELS = [
   { label: 'Team Lead', value: 'team_lead' },

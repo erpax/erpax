@@ -94,7 +94,8 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
-import { currencyField, auditFields } from '@/base/accounting/field'
+import { currencyField } from '@/fields/text/currencyField'
+import { auditFields } from '@/fields/relationship/auditFields'
 
 const CONTROL_TRANSFER_METHODS = [
   { label: 'Point-in-Time Control Transfer (IFRS-15 §38)', value: 'point_in_time' },

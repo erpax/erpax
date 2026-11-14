@@ -4,7 +4,7 @@ import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenan
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
-import { currencyField } from '@/base/accounting/field';
+import { currencyField } from '@/fields/text/currencyField'
 import { validateNotLocked } from '@/utility';
 import { bankStatementImportedHook } from '@/hooks/collections/shared/bankStatementImportedHook';
 

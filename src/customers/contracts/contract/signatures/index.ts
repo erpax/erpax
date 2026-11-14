@@ -90,7 +90,7 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
-import { auditFields } from '@/base/accounting/field'
+import { auditFields } from '@/fields/relationship/auditFields'
 
 const SIGNATORY_ROLES = [
   { label: 'Customer / Client', value: 'customer' },

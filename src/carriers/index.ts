@@ -21,7 +21,10 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantRead'
-import { statusField, notesField, auditFields, taxonomySelect } from '@/base/accounting/field'
+import { statusField } from '@/fields/select/statusField'
+import { notesField } from '@/fields/textarea/notesField'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { taxonomySelect } from '@/fields/select/taxonomySelect'
 import { INCOTERM_OPTIONS } from '@/incoterms/2020'
 
 const Carriers: CollectionConfig = {

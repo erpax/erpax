@@ -2,7 +2,7 @@ import type { CollectionConfig } from 'payload'
 import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantRead'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
-import { currencyField } from '@/base/accounting/field'
+import { currencyField } from '@/fields/text/currencyField'
 
 /**
  * Tax Jurisdictions — tax authority master.

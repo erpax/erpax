@@ -21,8 +21,11 @@
  */
 import type { CollectionConfig } from 'payload'
 import { partyRoleAccess, scopedAccess } from '@/access/collections/shared/multiTenantRead'
-import { auditFields, countryCodeField, referenceField } from '@/field'
-import { partyRefField, typeField } from '@/discriminator'
+import { referenceField } from '@/fields/text/referenceField'
+import { countryCodeField } from '@/fields/text/countryCodeField'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { partyRefField } from '@/fields/array/partyRefField'
+import { typeField } from '@/fields/select/typeField'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { horoStateField } from '@/horo'
 import { CASE_RING } from './lifecycle/index'

@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
-import { notesField } from '@/base/accounting/field'
+import { notesField } from '@/fields/textarea/notesField'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant';
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';

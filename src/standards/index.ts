@@ -34,7 +34,7 @@
  * @see ../factories/collection-factory.ts
  */
 import { createAccountingCollection } from '@/factory'
-import { referenceField } from '@/base/accounting/field'
+import { referenceField } from '@/fields/text/referenceField'
 
 export default createAccountingCollection({
   slug: 'standards',

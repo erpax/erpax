@@ -20,7 +20,7 @@ export type { StatusOption, EmitWiring, AccountingCollectionOptions } from './ba
 
 export { deriveLifecycleEmits, foldCollectionLifecycle } from './lifecycle'
 
-export { createCalculatedField, createGLAccountFields, createLineItemArray } from './field'
+export { createCalculatedField, createLineItemArray } from './field'
 
 export {
   SHAPE_AXES,

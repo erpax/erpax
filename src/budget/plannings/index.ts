@@ -5,13 +5,11 @@ import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
-import {
-  glAccountField,
-  currencyField,
-  statusField,
-  notesField,
-  auditFields,
-} from '@/base/accounting/field'
+import { glAccountField } from '@/fields/relationship/glAccountField'
+import { currencyField } from '@/fields/text/currencyField'
+import { statusField } from '@/fields/select/statusField'
+import { notesField } from '@/fields/textarea/notesField'
+import { auditFields } from '@/fields/relationship/auditFields'
 import { validateNotLocked } from '@/utility'
 
 /**

@@ -1,20 +1,18 @@
 import { describe, it, expect } from 'vitest'
 import type { Field } from 'payload'
-import {
-  glAccountField,
-  currencyField,
-  unitOfMeasureField,
-  measureFields,
-  statusField,
-  referenceField,
-  countryCodeField,
-  legalEntityField,
-  naceCodeField,
-  taxonomySelect,
-  auditFields,
-  timestampFields,
-  notesField,
-} from '@/base/accounting/field'
+import { glAccountField } from '@/fields/relationship/glAccountField'
+import { currencyField } from '@/fields/text/currencyField'
+import { unitOfMeasureField } from '@/fields/text/unitOfMeasureField'
+import { measureFields } from '@/fields/number/measureFields'
+import { statusField } from '@/fields/select/statusField'
+import { referenceField } from '@/fields/text/referenceField'
+import { countryCodeField } from '@/fields/text/countryCodeField'
+import { legalEntityField } from '@/fields/relationship/legalEntityField'
+import { naceCodeField } from '@/fields/text/naceCodeField'
+import { taxonomySelect } from '@/fields/select/taxonomySelect'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { timestampFields } from '@/fields/date/timestampFields'
+import { notesField } from '@/fields/textarea/notesField'
 
 // Matter (./index.ts): each export is a Payload Field-factory. Assert the
 // output field shape (name/type/required/options) the collections rely on.

@@ -23,9 +23,9 @@ import {
 import { wireChainProducersFor } from '@/business/chain'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import type { UserRole } from '@/types/auth'
-import {
-  statusField, notesField, auditFields,
-} from '@/field'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { notesField } from '@/fields/textarea/notesField'
+import { statusField } from '@/fields/select/statusField'
 import {
   tamperProofUuidField, tamperProofBeforeChangeHook,
 } from '@/integrity'

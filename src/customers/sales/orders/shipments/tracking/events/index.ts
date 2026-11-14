@@ -23,7 +23,8 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { notesField, auditFields } from '@/base/accounting/field'
+import { notesField } from '@/fields/textarea/notesField'
+import { auditFields } from '@/fields/relationship/auditFields'
 
 const TrackingEvents: CollectionConfig = {
   slug: 'tracking-events',

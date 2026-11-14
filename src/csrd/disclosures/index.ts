@@ -30,7 +30,11 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { statusField, notesField, auditFields, legalEntityField, taxonomySelect } from '@/base/accounting/field'
+import { statusField } from '@/fields/select/statusField'
+import { notesField } from '@/fields/textarea/notesField'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { legalEntityField } from '@/fields/relationship/legalEntityField'
+import { taxonomySelect } from '@/fields/select/taxonomySelect'
 import {
   ESRS_CATEGORY_OPTIONS,
   ESRS_TOPIC_OPTIONS,

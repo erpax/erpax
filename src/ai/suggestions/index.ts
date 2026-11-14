@@ -34,7 +34,10 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { statusField, notesField, auditFields, taxonomySelect } from '@/base/accounting/field'
+import { statusField } from '@/fields/select/statusField'
+import { notesField } from '@/fields/textarea/notesField'
+import { auditFields } from '@/fields/relationship/auditFields'
+import { taxonomySelect } from '@/fields/select/taxonomySelect'
 import { EU_AI_ACT_RISK_OPTIONS } from '@/eu/ai/act'
 
 const AiSuggestions: CollectionConfig = {
