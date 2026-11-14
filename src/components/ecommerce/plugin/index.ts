@@ -41,12 +41,24 @@ import { isDocumentOwner } from '@/access/collections/shared/isDocumentOwner'
 import { validateProductCheckout } from '@/components/ecommerce/product/validation'
 import { localeRecord } from '@/i18n'
 import { DEFAULT_COUNTRY, DEFAULT_CURRENCY } from '@/utilities/config/regional/defaults'
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { validateAddressHook } from '@/hooks/collections/users/validateAddressHook'
 import { variantsOverride } from '@/components/ecommerce/catalogue'
 import { ordersOverride } from '@/components/ecommerce/orders'
 import { transactionsOverride } from '@/components/ecommerce/transactions'
 
 /** Match Payload ecommerce template nav: variant helpers live under Ecommerce, not ungrouped (`group: false`). */
+/**
+ * Add the role abilities (product_manager, order_manager, …) to a plugin collection's own access. The
+ * plugin's collections have no folder here, so the ability is added where each is overridden.
+ */
+const withRoleAbility =
+  (subject: string, override: CollectionOverride): CollectionOverride =>
+  async (args) => {
+    const collection = await override(args)
+    return { ...collection, access: withAbility(collection.access, subject) }
+  }
+
 const ecommerceGroupOverride: CollectionOverride = ({ defaultCollection }) => ({
   ...defaultCollection,
   admin: {
@@ -201,18 +213,18 @@ export function createEcommercePlugin(): Plugin {
     inventory: true,
     orders: {
       // The sales-order register is folded into the plugin's order here — see @/components/ecommerce/orders.
-      ordersCollectionOverride: ordersOverride,
+      ordersCollectionOverride: withRoleAbility('orders', ordersOverride),
     },
     payments: {
       paymentMethods: [createTenantStripePaymentMethod()],
     },
     products: {
-      productsCollectionOverride: ProductsCollection,
+      productsCollectionOverride: withRoleAbility('products', ProductsCollection),
       validation: validateProductCheckout,
       variants: {
         variantOptionsCollectionOverride: ecommerceGroupOverride,
         variantTypesCollectionOverride: ecommerceGroupOverride,
-        variantsCollectionOverride: variantsOverride,
+        variantsCollectionOverride: withRoleAbility('variants', variantsOverride),
       },
     },
     // The payment register is folded into the plugin's transaction here — see @/components/ecommerce/transactions.

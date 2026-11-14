@@ -45,3 +45,36 @@ describe('seed/apps — every app as a tenant', () => {
     expect(appOfHost(null, APPS)).toBe(undefined)
   })
 })
+
+describe('seed/apps — every app and role as a group', () => {
+  it('one group per app and one per role in it, each at its own address', async () => {
+    const { appGroupRows, APP_ROLES } = await import('@/seed/apps')
+    const rows = appGroupRows('erpax.com')
+    expect(rows).toHaveLength(APPS.length * (1 + APP_ROLES.length))
+    expect(new Set(rows.map((row) => row.email)).size).toBe(rows.length)
+    expect(rows).toContainEqual({ tenant: 'sales', name: 'Sales', email: 'sales@erpax.com', kind: 'team' })
+    expect(rows).toContainEqual({ tenant: 'sales', name: 'Sales manager', email: 'manager@sales.erpax.com', kind: 'security' })
+  })
+  it('every role group address reads back as that role in that app', async () => {
+    const { appGroupRows } = await import('@/seed/apps')
+    const { parseRoleAddress } = await import('@/packages/engine')
+    for (const row of appGroupRows().filter((r) => r.kind === 'security')) expect(parseRoleAddress(row.email, APPS)?.app.slug, row.email).toBe(row.tenant)
+  })
+  it('loading creates what is missing and leaves what exists; with no tenant it skips', async () => {
+    const { appGroupRows, loadAppGroups } = await import('@/seed/apps')
+    const rows = appGroupRows().filter((row) => row.tenant === 'sales')
+    const created: unknown[] = []
+    const rest = (stored: string[]) => ({
+      find: async ({ collection, where }: { collection: string; where: Record<string, unknown> }) =>
+        collection === 'tenants' ? { docs: [{ id: 't1' }] } : { docs: stored.includes(JSON.stringify(where)) ? [{}] : [] },
+      create: async (args: Record<string, unknown>) => { created.push(args) },
+      update: async () => undefined,
+    })
+    const first = await loadAppGroups(rest([]), rows)
+    expect(first).toEqual({ created: rows.length, unchanged: 0, skipped: 0 })
+    const stored = rows.map((row) => JSON.stringify({ and: [{ tenant: { equals: 't1' } }, { email: { equals: row.email } }] }))
+    expect(await loadAppGroups(rest(stored), rows)).toEqual({ created: 0, unchanged: rows.length, skipped: 0 })
+    const none = { find: async () => ({ docs: [] }), create: async () => undefined, update: async () => undefined }
+    expect(await loadAppGroups(none, rows)).toEqual({ created: 0, unchanged: 0, skipped: rows.length })
+  })
+})

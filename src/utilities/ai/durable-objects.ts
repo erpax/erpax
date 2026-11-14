@@ -17,7 +17,7 @@ import { msFromMinutes } from '@/utilities/utility'
  *     run race-free.
  *
  * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation
- * @security ISO-27002 §5.4 segregation-of-duties race-free
+ * @security ISO-27002 §5.3 segregation-of-duties race-free
  * @compliance SOX §404 internal-controls atomic-state
  * @audit ISO-19011:2018 audit-trail coordination-evidence
  */

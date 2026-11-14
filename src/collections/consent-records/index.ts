@@ -9,7 +9,7 @@
  * @compliance GDPR Art.6(1)(a) lawful-basis-consent
  * @compliance GDPR Art.7 conditions-for-consent
  * @compliance GDPR Art.7(3) right-to-withdraw-consent
- * @compliance ISO-27701:2019 §6.3.1.4 record-of-consent
+ * @compliance ISO-27701:2025 record-of-consent
  * @audit ISO-19011:2018 audit-trail consent-evidence
  * @security ISO-27001 A.5.34 privacy-and-pii
  */

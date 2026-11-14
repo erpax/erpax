@@ -11,7 +11,7 @@ import { isAccessingSelf } from '@/utilities/users/access/isAccessingSelf'
  * @standard NIST INCITS-359-2012 role-based-access-control
  * @security ISO-27001 A.5.18 access-rights
  * @security ISO-27002 §5.15 access-control
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.3 segregation-of-duties
  * @compliance SOC-2 CC6.3 access-removal
  * @see docs/STANDARDS.md §4.4
  */

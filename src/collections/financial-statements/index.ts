@@ -26,7 +26,7 @@ import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSe
  * @compliance SOX §302 disclosure-controls
  * @compliance SOX §404 internal-controls
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @security ISO-27002 §5.4 segregation-of-duties certifier-vs-preparer
+ * @security ISO-27002 §5.3 segregation-of-duties certifier-vs-preparer
  * @audit ISO-19011:2018 audit-trail
  * @see docs/STANDARDS.md §4.2
  */

@@ -27,7 +27,7 @@ import { updateFiscalCalendarOnPeriodChange } from '@/hooks/collections/fiscal-p
  * @compliance SOX §404 period-close-integrity access-control-evidence
  * @compliance GDPR Art 5(1)(f) audit-trail-integrity
  * @compliance eIDAS Regulation 910/2014 qualified-electronic-signature on-amendments
- * @security ISO-27002 §5.4 segregation-of-duties closer-vs-creator locker-vs-creator
+ * @security ISO-27002 §5.3 segregation-of-duties closer-vs-creator locker-vs-creator
  * @audit ISO-19011:2018 audit-trail status-transition
  * @see docs/STANDARDS.md §4.2
  *
@@ -71,7 +71,7 @@ export const FiscalPeriods: CollectionConfig = {
       // header and was installed on nothing ([[rules]]/unreached). Distinct from the date-ordering
       // check below, which compares startDate and endDate and says nothing about the config.
       updateFiscalCalendarOnPeriodChange,
-      // ISO-27002 §5.4 / SOX §404 four-eyes: the user who created the
+      // ISO-27002 §5.3 / SOX §404 four-eyes: the user who created the
       // period cannot also be the user who closes it (`closedBy`) or
       // locks it (`lockedBy`). Two enforcers, one per approval field.
       enforceSegregationOfDuties('closedBy', 'createdBy'),

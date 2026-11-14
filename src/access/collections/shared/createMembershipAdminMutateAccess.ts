@@ -18,7 +18,7 @@ import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
  * @security ISO-27001 A.5.18 access-rights
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @security ISO-27002 §5.15 access-control
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.3 segregation-of-duties
  * @compliance SOC-2 CC6.1 logical-access-controls
  * @audit ISO-19011:2018 audit-trail
  * @see src/utilities/iso/27002/types/index.ts
@@ -27,13 +27,13 @@ import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
 
 /**
  * Canonical ISO 27002 controls this predicate exercises:
- *   5.4  — Segregation of duties (tenant-admin role gates mutations)
+ *   5.3  — Segregation of duties (tenant-admin role gates mutations)
  *   5.15 — Access control
  *   5.18 — Access rights
  *   5.23 — Cloud-service tenant isolation
  */
 export const controlsApplied: ReadonlyArray<Iso27002ControlId> = [
-  '5.4',
+  '5.3',
   '5.15',
   '5.18',
   '5.23',

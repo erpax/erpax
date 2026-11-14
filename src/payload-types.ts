@@ -5548,7 +5548,7 @@ export interface Group {
   tenant?: (string | null) | Tenant;
   name: string;
   /**
-   * The group's address, when it has one.
+   * The group's address. `<role>@<app>.<domain>` (e.g. manager@sales.erpax.com) makes it the role's group: its members hold that role in that app.
    */
   email?: string | null;
   description?: string | null;

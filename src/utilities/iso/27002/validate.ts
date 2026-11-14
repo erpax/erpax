@@ -12,7 +12,7 @@
 import type { Iso27002ControlId } from '@/utilities/iso/27002/types'
 
 const KNOWN_IDS = new Set<Iso27002ControlId>([
-  '5.4',
+  '5.3',
   '5.14',
   '5.15',
   '5.16',

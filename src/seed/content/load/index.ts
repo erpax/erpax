@@ -87,8 +87,9 @@ export async function loadCorpus(
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const { url, packs, tenant, seed, documents, redirects } = parseArgs(process.argv.slice(2))
   const apps = process.argv.includes('--apps')
-  if (!url || (!seed && !documents && !redirects && !apps)) {
-    console.error('usage: tsx src/seed/content/load/index.ts --url <origin> (--seed <file> | --documents <file> [--packs <a,b>]) [--redirects <file>] [--apps] [--tenant <id>]')
+  const standards = process.argv.includes('--standards')
+  if (!url || (!seed && !documents && !redirects && !apps && !standards)) {
+    console.error('usage: tsx src/seed/content/load/index.ts --url <origin> (--seed <file> | --documents <file> [--packs <a,b>]) [--redirects <file>] [--apps] [--standards] [--tenant <id>]')
     process.exit(2)
   }
   const authorization = process.env.ERPAX_AUTHORIZATION
@@ -108,6 +109,13 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     const domain = at >= 0 ? process.argv[at + 1] : undefined
     const seedApps = await import('@/seed/apps')
     console.log(JSON.stringify({ apps: await seedApps.loadAppTenants(sdk as unknown as Rest, seedApps.appTenantRows(domain)) }))
+    // the groups of each app and role (<app>@<domain>, <role>@<app>.<domain>) — roles are held by being in them
+    console.log(JSON.stringify({ groups: await seedApps.loadAppGroups(sdk as unknown as Rest, seedApps.appGroupRows(domain)) }))
+  }
+  // --standards: the editions of the standards erpax cites (src/seed/standards), into compliance-frameworks
+  if (standards) {
+    const seedStandards = await import('@/seed/standards')
+    console.log(JSON.stringify({ standards: await seedStandards.loadStandards(sdk as unknown as Rest, seedStandards.allStandards(), { tenant }) }))
   }
   if (redirects) {
     const rows = JSON.parse(readFileSync(redirects, 'utf8')) as RedirectRow[]

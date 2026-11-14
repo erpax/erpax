@@ -22,6 +22,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
@@ -38,7 +39,7 @@ const Packages: CollectionConfig = {
     description:
       'Logistic handling unit (GS1 SSCC). Self-referential nesting (pallet → carton → contents). The packing list is the set of packages on a shipment.',
   },
-  access: accountingCollectionAccess({ feature: 'logistics' }),
+  access: withAbility(accountingCollectionAccess({ feature: 'logistics' }), 'packages'),
   fields: [
     referenceField({ description: 'Package reference / handling-unit id.' }),
     { name: 'sscc', type: 'text', index: true,

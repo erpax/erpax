@@ -5,7 +5,7 @@
  * (receivables). Both walk the same graph; only the state set differs.
  *
  * @audit ISO-19011:2018 audit-trail state-transitions
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.3 segregation-of-duties
  * @compliance SOX §404 internal-controls
  * @see docs/STANDARDS.md §5
  */

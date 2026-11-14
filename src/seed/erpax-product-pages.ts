@@ -377,7 +377,7 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
       'Fiscal periods follow a strict lifecycle: open → closed → locked. The user who created a period cannot close it; the user who closed it cannot lock it. Every transition emits an audit-trail event for SOX §404 evidence.',
     standards: [
       'SOX §404 — period-close integrity',
-      'ISO 27002 §5.4 — segregation of duties',
+      'ISO 27002 §5.3 — segregation of duties',
       'IFRS IAS-8 — accounting policies, changes and errors',
       'US-GAAP ASC 250 — accounting changes',
       'ISO 19011 — audit-trail evidence preservation',
@@ -534,7 +534,7 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
       'EPC114-06 — SEPA Credit Transfer scheme rulebook',
       'EPC130-08 — SEPA Direct Debit scheme rulebook (mandate validity)',
       'IFRS IAS-7 — statement of cash flows',
-      'SOX §404 — preparer-authoriser segregation, ISO 27002 §5.4',
+      'SOX §404 — preparer-authoriser segregation, ISO 27002 §5.3',
     ],
     wired: [
       '`payment-runs` collection — batch shell with status lifecycle (draft → pending_review → approved → exported → submitted → settled)',

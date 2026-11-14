@@ -16,10 +16,53 @@ import type { Access, CollectionConfig, PayloadRequest } from 'payload'
 
 import { either } from '@/access/collections/shared/either'
 import { remembered } from '@/hooks/context'
-import { Ability, type Subject } from '@/utilities/ability'
+import { Ability, restrictSubjects, type Subject } from '@/utilities/ability'
 import { abilityForRoles } from '@/utilities/ability/roles'
+import type { Iso27002ControlId } from '@/utilities/iso/27002'
+import { APPS } from '@/packages'
+import { appSlugs } from '@/packages/engine'
+import { MAX_GROUP_DEPTH, grantsFromGroups, type GroupShape } from '@/utilities/roles/groups'
 import { rolesOf } from '@/utilities/nist/incits/359'
 import { whereAccessible } from '@/utilities/scope'
+
+/**
+ * Canonical ISO 27002:2022 controls this module exercises:
+ *   5.15 — Access control (role-based rules per collection)
+ *   5.18 — Access rights (the role engine assigns; the ability enforces)
+ *   8.3  — Information access restriction (read narrowed to what the ability allows)
+ */
+export const controlsApplied: ReadonlyArray<Iso27002ControlId> = ['5.15', '5.18', '8.3'] as const
+
+const idOf = (value: unknown): string | undefined =>
+  value !== null && typeof value === 'object' ? (value as { id?: string | number }).id !== undefined ? String((value as { id: string | number }).id) : undefined : value === undefined || value === null ? undefined : String(value)
+
+/**
+ * The groups the user is in, directly or through nesting, as the resolver reads them. One query per
+ * level of nesting (bounded by `MAX_GROUP_DEPTH`): the groups naming the user, then those naming those.
+ * A group's role comes from its address (`<role>@<app>`), and applies inside that app and that group's tenant only.
+ */
+const groupsAround = (req: PayloadRequest, userId: string): Promise<GroupShape[]> =>
+  remembered(req, 'groupsAround', async () => {
+    const seen = new Map<string, GroupShape>()
+    let frontier: Array<{ relationTo: 'users' | 'groups'; value: string }> = [{ relationTo: 'users', value: userId }]
+    for (let level = 0; level < MAX_GROUP_DEPTH && frontier.length > 0; level++) {
+      const found = await req.payload.find({ collection: 'groups', where: { or: frontier.map((member) => ({ 'members.member': { equals: member } })) }, depth: 1, limit: 200, pagination: false, overrideAccess: true, req })
+      const fresh = found.docs.filter((doc) => !seen.has(String(doc.id)))
+      for (const doc of fresh) {
+        const members = ((doc as { members?: Array<{ member?: { relationTo?: string; value?: unknown } | null }> }).members ?? []).flatMap((row) => (row.member ? [{ relationTo: row.member.relationTo, id: idOf(row.member.value) }] : []))
+        const { email, aliases } = doc as { email?: string | null; aliases?: string[] | null }
+        seen.set(String(doc.id), {
+          id: String(doc.id),
+          userIds: members.filter((m) => m.relationTo === 'users' && m.id).map((m) => m.id!),
+          groupIds: members.filter((m) => m.relationTo === 'groups' && m.id).map((m) => m.id!),
+          addresses: [...(email ? [email] : []), ...(aliases ?? [])],
+          tenant: idOf((doc as { tenant?: unknown }).tenant),
+        })
+      }
+      frontier = fresh.map((doc) => ({ relationTo: 'groups', value: String(doc.id) }))
+    }
+    return [...seen.values()]
+  })
 
 /** The current user's ability. */
 export type AbilityOf = (req: PayloadRequest) => Ability | Promise<Ability>
@@ -33,14 +76,26 @@ export const abilityOf: AbilityOf = (req) =>
     const userId = req.user?.id
     if (userId === undefined || userId === null) return new Ability()
     try {
-      const roles = (await rolesOf(req.payload, req, String(userId))).filter((role) => role.binding === 'global').map((role) => role.name)
+      const direct = (await rolesOf(req.payload, req, String(userId))).filter((role) => role.binding === 'global').map((role) => role.name)
+      // roles held through groups: `<role>@<app>` groups, each role kept inside its app
+      const grants = grantsFromGroups(String(userId), await groupsAround(req, String(userId)), APPS)
+      const roles = [...direct, ...grants.map((grant) => grant.role)]
       let employeeId: string | undefined
       if (roles.includes('work_manager') || roles.includes('work_supervisor')) {
         const found = await req.payload.find({ collection: 'employees', where: { user: { equals: userId } }, depth: 0, limit: 1, overrideAccess: true, req })
         const id = (found.docs[0] as { id?: string | number } | undefined)?.id
         employeeId = id === undefined ? undefined : String(id)
       }
-      return abilityForRoles({ roles, employeeId })
+      const ability = abilityForRoles({ roles: direct, employeeId })
+      if (grants.length > 0) {
+        const owned = appSlugs(req.payload.config.collections, APPS)
+        for (const scope of new Set(grants.map((grant) => `${grant.app}\u0000${grant.tenant}`))) {
+          const [app, tenant] = scope.split("\u0000") as [string, string]
+          const held = grants.filter((grant) => grant.app === app && grant.tenant === tenant).map((grant) => grant.role)
+          ability.rules.push(...restrictSubjects(abilityForRoles({ roles: held, employeeId }), owned.get(app) ?? [], { tenant }).rules)
+        }
+      }
+      return ability
     } catch {
       // the role engine is unreachable: grant nothing through this path (a collection's own access still applies)
       return new Ability()

@@ -2,6 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 import { authenticated } from '@/utilities/authenticated'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
+import { createRoleGroups } from '@/hooks/collections/tenants/createRoleGroups'
 import { superAdminOnly, fieldAccess } from '@/access/collections/shared/superAdminOnly'
 import { localeRecord } from '@/i18n'
 import { seedPresets } from '@/utilities/preset'
@@ -366,7 +367,7 @@ export const Tenants: CollectionConfig = {
     },
   ],
   hooks: {
-    afterChange: [seedPresets, auditTrailAfterChange('tenants')],
+    afterChange: [seedPresets, createRoleGroups, auditTrailAfterChange('tenants')],
   },
   timestamps: true,
 }

@@ -26,7 +26,7 @@
  * @audit ISO-19011:2018 audit-trail collections-evidence
  * @compliance SOX §404 internal-controls bad-debt-evidence
  * @compliance GDPR Art.6(1)(f) lawful-basis-legitimate-interest collections
- * @security ISO-27002 §5.4 segregation-of-duties write-off-approval
+ * @security ISO-27002 §5.3 segregation-of-duties write-off-approval
  * @see src/jobs/dunning/job/index.ts
  * @see docs/STANDARDS.md §4.2 §5
  */

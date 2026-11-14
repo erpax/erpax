@@ -8,7 +8,7 @@
  * @accounting US-GAAP ASC-330 inventory cost-flow
  * @audit ISO-19011:2018 audit-trail rma-evidence
  * @compliance SOX §404 internal-controls return-approval
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.3 segregation-of-duties
  */
 
 import { deriveMovements } from '@/utilities/items/inventory/movements/source'

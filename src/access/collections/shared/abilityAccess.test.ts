@@ -14,7 +14,7 @@ const requestWith = (roles: string[], employee?: string) => {
     context: {},
     payload: {
       findByID: async ({ collection }: { collection: string }) => { calls.push(`findByID:${collection}`); return { id: 'u1', roleAssignments: roles.map((name, i) => ({ id: `r${i}`, name, binding: 'global' })) } },
-      find: async ({ collection }: { collection: string }) => { calls.push(`find:${collection}`); return { docs: employee ? [{ id: employee }] : [] } },
+      find: async ({ collection }: { collection: string }) => { calls.push(`find:${collection}`); return { docs: employee && collection === 'employees' ? [{ id: employee }] : [] } },
     },
   } as unknown as PayloadRequest
   return { req, calls }
@@ -49,10 +49,10 @@ describe('abilityOf — the request\'s ability, from the role engine, once per r
   it('looks up the employee record only for the roles whose rules need it', async () => {
     const plain = requestWith(['production_manager'])
     await abilityOf(plain.req)
-    expect(plain.calls).toEqual(['findByID:users'])
+    expect(plain.calls).toEqual(['findByID:users', 'find:groups'])
     const directing = requestWith(['work_manager'], 'e1')
     const ability = await abilityOf(directing.req)
-    expect(directing.calls).toEqual(['findByID:users', 'find:employees'])
+    expect(directing.calls).toEqual(['findByID:users', 'find:groups', 'find:employees'])
     expect(ability.accessibleBy('delete', 'work-orders')).toEqual({ director: { equals: 'e1' } })
   })
   it('is computed once per request — a second access check reuses it', async () => {
@@ -60,7 +60,7 @@ describe('abilityOf — the request\'s ability, from the role engine, once per r
     const [a, b] = await Promise.all([abilityOf(req), abilityOf(req)])
     expect(a).toBe(b)
     await abilityOf(req)
-    expect(calls).toEqual(['findByID:users'])
+    expect(calls).toEqual(['findByID:users', 'find:groups'])
   })
   it('an unreachable role engine grants nothing instead of failing the request', async () => {
     const req = { user: { id: 'u1' }, context: {}, payload: { findByID: async () => { throw new Error('db down') } } } as unknown as PayloadRequest
@@ -90,5 +90,51 @@ describe('withAbility — the abilities are ADDED to a collection\'s own access'
     const access = withAbility({ read: () => true }, 'lots', nobody)
     expect(access.create).toBeUndefined()
     expect(access.update).toBeUndefined()
+  })
+})
+
+describe('abilityOf — roles held through <role>@<app> groups stay inside the app', () => {
+  const groupDoc = (id: string, email: string, members: Array<{ relationTo: string; value: string }>, tenant: string | null = 't1') => ({ id, email, aliases: [], tenant, members: members.map((member) => ({ member })) })
+  const requestInGroups = (docs: Array<ReturnType<typeof groupDoc>>) =>
+    ({
+      user: { id: 'u1' },
+      context: {},
+      payload: {
+        config: { collections: [{ slug: 'orders', fields: [] }, { slug: 'parties', fields: [] }, { slug: 'employees', fields: [] }] },
+        findByID: async () => ({ id: 'u1', roleAssignments: [] }),
+        find: async ({ collection }: { collection: string }) => ({ docs: collection === 'groups' ? docs : [] }),
+      },
+    }) as unknown as PayloadRequest
+
+  it('a member of manager@sales.erpax.com manages sales collections only', async () => {
+    const ability = await abilityOf(requestInGroups([groupDoc('g1', 'manager@sales.erpax.com', [{ relationTo: 'users', value: 'u1' }])]))
+    expect(ability.permits('update', 'orders')).toBe(true)
+    expect(ability.permits('delete', 'parties')).toBe(true)
+    expect(ability.permits('read', 'employees')).toBe(false)
+    // and only the documents of the group's own tenant
+    expect(ability.accessibleBy('update', 'orders')).toEqual({ tenant: { equals: 't1' } })
+  })
+  it('the same role through the groups of two tenants reaches both, and no other', async () => {
+    const ability = await abilityOf(
+      requestInGroups([groupDoc('g1', 'manager@sales.erpax.com', [{ relationTo: 'users', value: 'u1' }], 't1'), groupDoc('g2', 'manager@sales.erpax.com', [{ relationTo: 'users', value: 'u1' }], 't2')]),
+    )
+    expect(ability.accessibleBy('read', 'orders')).toEqual({ or: [{ tenant: { equals: 't1' } }, { tenant: { equals: 't2' } }] })
+  })
+  it('a role group that belongs to no tenant grants nothing', async () => {
+    const ability = await abilityOf(requestInGroups([groupDoc('g3', 'manager@sales.erpax.com', [{ relationTo: 'users', value: 'u1' }], null)]))
+    expect(ability.permits('read', 'orders')).toBe(false)
+  })
+  it('a group that is only a team (no role address) grants nothing', async () => {
+    const ability = await abilityOf(requestInGroups([groupDoc('g2', 'team@acme.com', [{ relationTo: 'users', value: 'u1' }])]))
+    expect(ability.permits('read', 'orders')).toBe(false)
+  })
+  it('a role held through a group inside another group is held too', async () => {
+    const ability = await abilityOf(
+      requestInGroups([
+        groupDoc('inner', 'manager@sales', [{ relationTo: 'groups', value: 'outer' }]),
+        groupDoc('outer', 'everyone@acme.com', [{ relationTo: 'users', value: 'u1' }]),
+      ]),
+    )
+    expect(ability.permits('update', 'orders')).toBe(true)
   })
 })

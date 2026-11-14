@@ -24,6 +24,15 @@ import { remembered } from '@/hooks/context'
 import { APPS } from '@/packages'
 import { enabledApps, type App, type Gate } from '@/packages/engine'
 import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
+import type { Iso27002ControlId } from '@/utilities/iso/27002'
+
+/**
+ * Canonical ISO 27002:2022 controls this module exercises:
+ *   5.15 — Access control (an app's collections only through a tenant that has the app)
+ *   5.23 — Cloud services (tenant separation: each tenant reaches only the apps it switched on)
+ *   8.3  — Information access restriction (operations narrowed to the tenant's enabled apps)
+ */
+export const controlsApplied: ReadonlyArray<Iso27002ControlId> = ['5.15', '5.23', '8.3'] as const
 
 type Scope = boolean | Where
 

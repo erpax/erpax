@@ -6,7 +6,7 @@
  * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
  * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
  * @compliance SOX §404 period-close-integrity
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.3 segregation-of-duties
  * @audit ISO-19011:2018 audit-trail
  * @see docs/STANDARDS.md §4.2
  */

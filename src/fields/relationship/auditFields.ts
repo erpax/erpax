@@ -9,7 +9,7 @@ import type { Field } from 'payload'
  * audit columns.
  *
  * @standard ISO-19011:2018 audit-trail
- * @security ISO-27002 §5.4 segregation-of-duties approver-visibility
+ * @security ISO-27002 §5.3 segregation-of-duties approver-visibility
  */
 export const auditFields = (
   options: {

@@ -24,7 +24,7 @@
  * @audit ISO-19011:2018 audit-trail period-end-evidence
  * @audit ISO-19011:2018 audit-evidence preparer-reviewer-segregation
  * @compliance SOX §404 internal-controls reconciliation-sign-off
- * @security ISO-27002 §5.4 segregation-of-duties preparer-vs-reviewer
+ * @security ISO-27002 §5.3 segregation-of-duties preparer-vs-reviewer
  * @see src/utilities/bank/reconciliation/service/index.ts
  * @see docs/STANDARDS.md §4.1
  */
@@ -241,7 +241,7 @@ const AccountReconciliations: CollectionConfig = {
       },
     },
 
-    // ── Sign-off chain (preparer ≠ reviewer per ISO-27002 §5.4) ──
+    // ── Sign-off chain (preparer ≠ reviewer per ISO-27002 §5.3) ──
     {
       name: 'preparedBy',
       type: 'relationship',

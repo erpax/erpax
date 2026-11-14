@@ -78,7 +78,63 @@ export const appOfHost = (host: string | null | undefined, apps: readonly App[])
   return apps.find((app) => app.slug === label)
 }
 
+/**
+ * An app's address: `<app>@<domain>`. The app is presented twice, as a server at `<app>.<domain>` and
+ * as a group at `<app>@<domain>` (Google's model: an address is a group, its members are the people
+ * who have the app). Same label, same domain, so the host and the address always name the same app.
+ */
+export const appAddress = (app: string, domain: string): string => `${app}@${domain}`.toLowerCase()
+
+/** The app an address is for: the local part of `<app>@<domain>`, when it names an app. */
+export const appOfAddress = (address: string | null | undefined, apps: readonly App[]): App | undefined => {
+  const local = (address ?? '').toLowerCase().split('@')
+  return local.length === 2 ? apps.find((app) => app.slug === local[0]) : undefined
+}
+
+/**
+ * A role's address inside an app: `<role>@<app>`, in full `<role>@<app>.<domain>` (`manager@sales.erpax.com`).
+ * The group at that address is the role: being in it is holding the role, in that app only.
+ */
+export const roleAddress = (role: string, app: string, domain?: string): string => `${role}@${app}${domain ? `.${domain}` : ''}`.toLowerCase()
+
+/** The role and app an address names — `manager@sales` and `manager@sales.erpax.com` alike — when the app is one of these. */
+export const parseRoleAddress = (address: string | null | undefined, apps: readonly App[]): { role: string; app: App } | undefined => {
+  const parts = (address ?? '').trim().toLowerCase().split('@')
+  if (parts.length !== 2 || !parts[0]) return undefined
+  const app = apps.find((candidate) => candidate.slug === parts[1]!.split('.')[0])
+  return app ? { role: parts[0], app } : undefined
+}
+
+/** The tenant roles every app has, each held by being in its group: `<role>@<app>.<domain>`. */
+export const APP_ROLES = ['admin', 'manager', 'user'] as const
+
+export interface AppGroupRow {
+  /** The tenant the group belongs to (a slug when seeded, an id when created by a hook). */
+  readonly tenant: string | number
+  readonly name: string
+  readonly email: string
+  readonly kind: 'team' | 'security'
+}
+
+/**
+ * The groups a tenant has for these apps, computed: each app's own group (`<app>@<domain>` — the people who
+ * have the app) and one security group per role (`<role>@<app>.<domain>` — the people who hold it there).
+ */
+export const groupRowsOf = (tenant: string | number, apps: readonly App[], domain: string): AppGroupRow[] =>
+  apps.flatMap((app) => [
+    { tenant, name: app.title, email: appAddress(app.slug, domain), kind: 'team' as const },
+    ...APP_ROLES.map((role) => ({ tenant, name: `${app.title} ${role}`, email: roleAddress(role, app.slug, domain), kind: 'security' as const })),
+  ])
+
 type Shape = Pick<CollectionConfig, 'slug' | 'fields'>
+
+/** The collections of each app, by the same computation that places them in its plugin. */
+export const appSlugs = (collections: ReadonlyArray<{ readonly slug: string }>, apps: readonly App[]): Map<string, string[]> => {
+  const owner = partition(collections as readonly Shape[], apps)
+  const bySlug = new Map<string, string[]>(apps.map((app) => [app.slug, []]))
+  for (const { slug } of collections) bySlug.get(owner.get(slug) ?? '')?.push(slug)
+  return bySlug
+}
 
 /** Every relationship target in a list of fields, however deeply nested. */
 const targetsIn = (fields: readonly Field[], out: string[] = []): string[] => {

@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { enforceSeparation } from '@/hooks/collections/users/enforceSeparation'
 import { refuseInactive } from '@/hooks/collections/users/refuseInactive'
 import { stampLastLogin, stampPasswordChange } from '@/hooks/collections/users/stampAuth'
 import { tenantsArrayField } from '@payloadcms/plugin-multi-tenant/fields'
@@ -377,7 +378,7 @@ export const Users: CollectionConfig = {
   hooks: {
     // The genesis owner computes itself: the FIRST user (empty user set) becomes
     // super-admin by the identity element, never by hand-assignment.
-    beforeChange: [firstUserSuperAdmin, stampPasswordChange],
+    beforeChange: [firstUserSuperAdmin, enforceSeparation, stampPasswordChange],
     beforeLogin: [refuseInactive],
     afterLogin: [setCookieBasedOnDomain, stampLastLogin],
   },

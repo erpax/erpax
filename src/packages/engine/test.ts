@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import type { CollectionConfig, Config, Field } from 'payload'
 import { APPS } from '@/packages'
-import { appNavigation, appPlugin, appPlugins, collectionsOf, hubsOf, partition, type App } from '@/packages/engine'
+import { appAddress, appNavigation, appOfAddress, appOfHost, appPlugin, appPlugins, collectionsOf, hubsOf, partition, type App } from '@/packages/engine'
 
 /** In a fixture this small a tenth of the collections is one; a hub here is what a third point at. */
 const SHARE = 0.3
@@ -98,5 +98,23 @@ describe('an app as a Payload plugin', () => {
     const out = appNavigation(apps)(brought) as Config
     expect(out.collections![0]!.admin).toMatchObject({ group: 'Sales' })
     expect(out.collections![1]!.admin).toMatchObject({ group: 'Tools' })
+  })
+})
+
+describe('an app is a host and an address — the same label on the same domain', () => {
+  it('the address of an app is <app>@<domain>, and the host of it is <app>.<domain>', () => {
+    for (const app of APPS) {
+      expect(appAddress(app.slug, 'erpax.com')).toBe(`${app.slug}@erpax.com`)
+      expect(appOfAddress(appAddress(app.slug, 'erpax.com'), APPS)).toBe(app)
+      expect(appOfHost(`${app.slug}.erpax.com`, APPS)).toBe(appOfAddress(`${app.slug}@erpax.com`, APPS))
+    }
+  })
+  it('an address that names no app, or is not an address, is no app', () => {
+    expect(appOfAddress('nobody@erpax.com', APPS)).toBeUndefined()
+    expect(appOfAddress('sales.erpax.com', APPS)).toBeUndefined()
+    expect(appOfAddress(undefined, APPS)).toBeUndefined()
+  })
+  it('case does not matter', () => {
+    expect(appOfAddress('Sales@ERPAX.com', APPS)?.slug).toBe('sales')
   })
 })

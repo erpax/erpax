@@ -1,3 +1,5 @@
+import { existsSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
 import { ACCOUNT_ROLES, abilityForRoles } from '@/utilities/ability/roles'
 
@@ -61,5 +63,27 @@ describe('role abilities — etrima\'s Ability on erpax collections', () => {
     expect(both.permits('update', 'work-centers')).toBe(true)
     expect(both.permits('delete', 'work-centers')).toBe(false)
     expect(both.permits('delete', 'packs')).toBe(true)
+  })
+})
+
+describe('role abilities are enforced — every subject a role names is wired', () => {
+  // employees is GDPR-classified and deliberately stricter than the broad tiers; `user` reads all, so wiring it would open it.
+  const EXEMPT = new Set(['employees'])
+  const root = join(import.meta.dirname, '..', '..', '..', 'collections')
+  const subjects = [...readFileSync(join(import.meta.dirname, 'index.ts'), 'utf8').matchAll(/'([a-z][a-z-]*)'/g)]
+    .map((match) => match[1]!)
+    .filter((name, index, all) => all.indexOf(name) === index && existsSync(join(root, name, 'index.ts')))
+  it('names collections', () => expect(subjects.length).toBeGreaterThan(10))
+  it.each(subjects.filter((name) => !EXEMPT.has(name)))('%s uses withAbility', (name) => {
+    expect(readFileSync(join(root, name, 'index.ts'), 'utf8')).toMatch(/withAbility\(|abilityAccess\(/)
+  })
+})
+
+describe('role abilities are enforced on the ecommerce plugin collections', () => {
+  // orders · products · variants come from @payloadcms/plugin-ecommerce, so there is no folder to check:
+  // each is wired where the plugin's collection is overridden.
+  const plugin = readFileSync(join(import.meta.dirname, '..', '..', '..', 'components', 'ecommerce', 'plugin', 'index.ts'), 'utf8')
+  it.each(['orders', 'products', 'variants'])('%s is wrapped with its role ability', (subject) => {
+    expect(plugin).toContain(`withRoleAbility('${subject}'`)
   })
 })

@@ -17,6 +17,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
@@ -33,7 +34,7 @@ const JobPositions: CollectionConfig = {
     description:
       'Job position (an org-chart slot). One position = at most one current employee. Drives recruiting + headcount budget.',
   },
-  access: accountingCollectionAccess(),
+  access: withAbility(accountingCollectionAccess(), 'job-positions'),
   fields: [
     { name: 'positionCode', type: 'text', required: true, unique: true, index: true },
     { name: 'positionTitle', type: 'text', required: true, index: true },

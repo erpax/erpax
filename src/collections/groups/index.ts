@@ -40,7 +40,11 @@ export const Groups: CollectionConfig = {
   indexes: [{ fields: ['tenant', 'email'], unique: true }],
   fields: [
     { name: 'name', type: 'text', required: true, index: true },
-    { name: 'email', type: 'email', admin: { description: "The group's address, when it has one." } },
+    {
+      name: 'email',
+      type: 'email',
+      admin: { description: "The group's address. `<role>@<app>.<domain>` (e.g. manager@sales.erpax.com) makes it the role's group: its members hold that role in that app." },
+    },
     { name: 'description', type: 'textarea' },
     { name: 'aliases', type: 'text', hasMany: true, admin: { description: 'Other addresses that reach this group.' } },
     {

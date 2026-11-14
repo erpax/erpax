@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "erpax-dev",
+      "runtimeExecutable": "env",
+      "runtimeArgs": ["PAYLOAD_DEV_PUSH=false", "pnpm", "dev"],
+      "port": 3000
+    }
+  ]
+}

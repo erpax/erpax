@@ -1,5 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
 import { tenantScopedCollectionReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
 import { slugField } from 'payload'
@@ -22,12 +23,15 @@ export const Categories: CollectionConfig = {
     singular: localeRecord('categories.singular'),
     plural: localeRecord('categories.plural'),
   },
-  access: {
-    create: createMembershipAdminMutateAccess('categories'),
-    delete: createMembershipAdminMutateAccess('categories'),
-    read: tenantScopedCollectionReadAccess,
-    update: createMembershipAdminMutateAccess('categories'),
-  },
+  access: withAbility(
+    {
+      create: createMembershipAdminMutateAccess('categories'),
+      delete: createMembershipAdminMutateAccess('categories'),
+      read: tenantScopedCollectionReadAccess,
+      update: createMembershipAdminMutateAccess('categories'),
+    },
+    'categories',
+  ),
   admin: {
     useAsTitle: 'title',
   },

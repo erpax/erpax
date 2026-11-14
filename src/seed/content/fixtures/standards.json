@@ -1,0 +1,306 @@
+[
+  {
+    "reference": "ISO 15489-1:2001",
+    "title": "Information and documentation — Records management — Part 1: General",
+    "category": "other",
+    "edition": 1,
+    "publicationDate": "2001-09-28",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO 15489-1:2016",
+    "title": "Information and documentation — Records management — Part 1: Concepts and principles",
+    "category": "other",
+    "edition": 2,
+    "publicationDate": "2016-04-07",
+    "status": "current"
+  },
+  {
+    "reference": "ISO 23081-1:2006",
+    "title": "Information and documentation — Records management processes — Metadata for records — Part 1: Principles",
+    "category": "other",
+    "edition": 1,
+    "publicationDate": "2006-01-31",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO 23081-1:2017",
+    "title": "Information and documentation — Records management processes — Metadata for records — Part 1: Principles",
+    "category": "other",
+    "edition": 2,
+    "publicationDate": "2017-10-31",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 10181-3:1996",
+    "title": "Information technology — Open Systems Interconnection — Security frameworks for open systems: Access control framework",
+    "category": "info-security",
+    "edition": 1,
+    "publicationDate": "1996-09-19",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 17789:2014",
+    "title": "Information technology — Cloud computing — Reference architecture",
+    "category": "other",
+    "edition": 1,
+    "publicationDate": "2014-10-10",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 22123-1:2021",
+    "title": "Information technology — Cloud computing — Part 1: Vocabulary",
+    "category": "other",
+    "edition": 1,
+    "publicationDate": "2021-02-16",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 22123-1:2023",
+    "title": "Information technology — Cloud computing — Part 1: Vocabulary",
+    "category": "other",
+    "edition": 2,
+    "publicationDate": "2023-02-10",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 22123-2:2023",
+    "title": "Information technology — Cloud computing — Part 2: Concepts",
+    "category": "other",
+    "edition": 1,
+    "publicationDate": "2023-09-22",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 22123-3:2023",
+    "title": "Information technology — Cloud computing — Part 3: Reference architecture",
+    "category": "other",
+    "edition": 1,
+    "publicationDate": "2023-09-22",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 24760-1:2011",
+    "title": "Information technology — Security techniques — A framework for identity management — Part 1: Terminology and concepts",
+    "category": "info-security",
+    "edition": 1,
+    "publicationDate": "2011-12-07",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 24760-1:2019",
+    "title": "IT Security and Privacy — A framework for identity management — Part 1: Terminology and concepts",
+    "category": "info-security",
+    "edition": 2,
+    "publicationDate": "2019-05-29",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 24760-1:2025",
+    "title": "Information security, cybersecurity and privacy protection — A framework for identity management — Part 1: Core concepts and terminology",
+    "category": "info-security",
+    "edition": 3,
+    "publicationDate": "2025-09-16",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 24760-2:2015",
+    "title": "Information technology — Security techniques — A framework for identity management — Part 2: Reference architecture and requirements",
+    "category": "info-security",
+    "edition": 1,
+    "publicationDate": "2015-06-03",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 24760-2:2025",
+    "title": "Information security, cybersecurity and privacy protection — A framework for identity management — Part 2: Reference architecture and requirements",
+    "category": "info-security",
+    "edition": 2,
+    "publicationDate": "2025-09-16",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 24760-3:2016",
+    "title": "Information technology — Security techniques — A framework for identity management — Part 3: Practice",
+    "category": "info-security",
+    "edition": 1,
+    "publicationDate": "2016-07-21",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 24760-3:2025",
+    "title": "Information security, cybersecurity and privacy protection — A framework for identity management — Part 3: Practice",
+    "category": "info-security",
+    "edition": 2,
+    "publicationDate": "2025-09-16",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 27001:2005",
+    "title": "Information technology — Security techniques — Information security management systems — Requirements",
+    "category": "info-security",
+    "edition": 1,
+    "publicationDate": "2005-10-14",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 27001:2013",
+    "title": "Information technology — Security techniques — Information security management systems — Requirements",
+    "category": "info-security",
+    "edition": 2,
+    "publicationDate": "2013-09-25",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 27001:2022",
+    "title": "Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
+    "category": "info-security",
+    "edition": 3,
+    "publicationDate": "2022-10-25",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 27002:2005",
+    "title": "Information technology — Security techniques — Code of practice for information security management",
+    "category": "info-security",
+    "edition": 1,
+    "publicationDate": "2005-06-15",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 27002:2013",
+    "title": "Information technology — Security techniques — Code of practice for information security controls",
+    "category": "info-security",
+    "edition": 2,
+    "publicationDate": "2013-09-25",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 27002:2022",
+    "title": "Information security, cybersecurity and privacy protection — Information security controls",
+    "category": "info-security",
+    "edition": 3,
+    "publicationDate": "2022-02-15",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 27017:2015",
+    "title": "Information technology — Security techniques — Code of practice for information security controls based on ISO/IEC 27002 for cloud services",
+    "category": "info-security",
+    "edition": 1,
+    "publicationDate": "2015-11-30",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 27017:2026",
+    "title": "Information security, cybersecurity and privacy protection — Information security controls based on ISO/IEC 27002 for cloud services",
+    "category": "info-security",
+    "edition": 2,
+    "publicationDate": "2026-07-27",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 27018:2014",
+    "title": "Information technology — Security techniques — Code of practice for protection of personally identifiable information (PII) in public clouds acting as PII processors",
+    "category": "data-protection",
+    "edition": 1,
+    "publicationDate": "2014-07-29",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 27018:2019",
+    "title": "Information technology — Security techniques — Code of practice for protection of personally identifiable information (PII) in public clouds acting as PII processors",
+    "category": "data-protection",
+    "edition": 2,
+    "publicationDate": "2019-01-15",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 27018:2025",
+    "title": "Information security, cybersecurity and privacy protection — Guidelines for protection of personally identifiable information (PII) in public clouds acting as PII processors",
+    "category": "data-protection",
+    "edition": 3,
+    "publicationDate": "2025-08-26",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 27036-4:2016",
+    "title": "Information technology — Security techniques — Information security for supplier relationships — Part 4: Guidelines for security of cloud services",
+    "category": "info-security",
+    "edition": 1,
+    "publicationDate": "2016-09-28",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 27701:2019",
+    "title": "Security techniques — Extension to ISO/IEC 27001 and ISO/IEC 27002 for privacy information management — Requirements and guidelines",
+    "category": "data-protection",
+    "edition": 1,
+    "publicationDate": "2019-08-05",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 27701:2025",
+    "title": "Information security, cybersecurity and privacy protection — Privacy information management systems — Requirements and guidance",
+    "category": "data-protection",
+    "edition": 2,
+    "publicationDate": "2025-10-14",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 29100:2011",
+    "title": "Information technology — Security techniques — Privacy framework",
+    "category": "data-protection",
+    "edition": 1,
+    "publicationDate": "2011-12-05",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 29100:2024",
+    "title": "Information technology — Security techniques — Privacy framework",
+    "category": "data-protection",
+    "edition": 2,
+    "publicationDate": "2024-02-16",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 29115:2013",
+    "title": "Information technology — Security techniques — Entity authentication assurance framework",
+    "category": "info-security",
+    "edition": 1,
+    "publicationDate": "2013-03-27",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 29134:2017",
+    "title": "Information technology — Security techniques — Guidelines for privacy impact assessment",
+    "category": "data-protection",
+    "edition": 1,
+    "publicationDate": "2017-06-28",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 29134:2023",
+    "title": "Information technology — Security techniques — Guidelines for privacy impact assessment",
+    "category": "data-protection",
+    "edition": 2,
+    "publicationDate": "2023-05-08",
+    "status": "current"
+  },
+  {
+    "reference": "ISO/IEC 29146:2016",
+    "title": "Information technology — Security techniques — A framework for access management",
+    "category": "info-security",
+    "edition": 1,
+    "publicationDate": "2016-06-01",
+    "status": "superseded"
+  },
+  {
+    "reference": "ISO/IEC 29146:2024",
+    "title": "Information technology — Security techniques — A framework for access management",
+    "category": "info-security",
+    "edition": 2,
+    "publicationDate": "2024-01-19",
+    "status": "current"
+  }
+]

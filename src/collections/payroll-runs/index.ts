@@ -30,7 +30,7 @@
  * @compliance GDPR Art.6(1)(b) lawful-basis-contract
  * @compliance GDPR Art.30 records-of-processing-activities
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.3 segregation-of-duties
  * @security ISO-27002 §5.34 privacy-and-protection-of-pii
  * @security ISO-27002 §8.11 data-masking
  * @see src/plugins/accounting/collections/Employees.ts

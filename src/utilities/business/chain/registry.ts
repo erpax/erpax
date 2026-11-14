@@ -25,7 +25,7 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
     name: 'Procure-to-Pay (3-way match)',
     description:
       'PR → RFQ → PO → GR → AP → Payment. Each step is gated by the prior; the SOX §404 ITGC P2P-01 control test walks PR → PO → GR → Bill matching quantities + price.',
-    standards: ['SOX §404 P2P-01', 'IAS-2 §10', 'IFRS-15 §38', 'ISO 27002 §5.4 segregation-of-duties'],
+    standards: ['SOX §404 P2P-01', 'IAS-2 §10', 'IFRS-15 §38', 'ISO 27002 §5.3 segregation-of-duties'],
     featureGate: undefined, // core
     steps: [
       { collection: 'orders', action: 'submit',   emits: 'pr:submitted',   requires: [], producer: { onStatus: 'submitted', aggregate: 'order' } },
@@ -185,7 +185,7 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
     name: 'Multi-step workflow approval',
     description:
       'Document submitted → matching workflow-definitions found → workflow-instance spawned → step decisions appended → final outcome approved/rejected → mutate target document accordingly.',
-    standards: ['ISO/IEC 19510:2013 BPMN-2.0', 'SOX §404', 'ISO 27002 §5.4', 'ISO 19011:2018'],
+    standards: ['ISO/IEC 19510:2013 BPMN-2.0', 'SOX §404', 'ISO 27002 §5.3', 'ISO 19011:2018'],
     featureGate: 'workflow_engine',
     steps: [
       { collection: 'workflow-definitions', action: 'match',          emits: null,                       requires: [] },

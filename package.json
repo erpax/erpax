@@ -1,6 +1,6 @@
 {
   "name": "erpax",
-  "version": "1.0.13",
+  "version": "1.0.16",
   "private": true,
   "description": "Source-available multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound",
   "author": {
@@ -32,6 +32,8 @@
     "deploy:database": "cross-env NODE_ENV=production PAYLOAD_SECRET=ignore NODE_OPTIONS=\"--no-deprecation --import=./src/components/css/load-hook.mjs\" payload migrate && wrangler d1 execute D1 --command 'PRAGMA optimize' --remote",
     "deploy:app": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "seed": "tsx src/seed/content/load/index.ts",
+    "standards:refresh": "node scripts/standards-refresh.mjs",
+    "standards:check": "node scripts/standards-refresh.mjs --check",
     "prepare": "husky"
   },
   "dependencies": {
@@ -50,6 +52,7 @@
     "@payloadcms/plugin-redirects": "4.0.0-internal.38b7f1d",
     "@payloadcms/plugin-search": "4.0.0-internal.38b7f1d",
     "@payloadcms/plugin-seo": "4.0.0-internal.38b7f1d",
+    "@payloadcms/plugin-stripe": "4.0.0-internal.38b7f1d",
     "@payloadcms/richtext-lexical": "4.0.0-internal.38b7f1d",
     "@payloadcms/sdk": "4.0.0-internal.38b7f1d",
     "@payloadcms/storage-r2": "4.0.0-internal.38b7f1d",

@@ -28,7 +28,7 @@
  * @accounting US-GAAP ASC-230 statement-of-cash-flows
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls preparer-authoriser-segregation
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.3 segregation-of-duties
  * @see src/utilities/iso/20022/types/index.ts
  * @see docs/STANDARDS.md §4.1
  */
