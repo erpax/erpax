@@ -47,6 +47,13 @@ export const FiscalPeriods: CollectionConfig = {
     group: 'Ledger',
   },
   access: tenantMasterDataAccess(),
+  // The state of the fiscal configuration at every change IS Payload's native versioning: each save
+  // is an immutable version row (who, when, the whole document, `changeReason`), and
+  // `restoreVersion` shows any of them. This replaces the `fiscal-period-snapshots` collection,
+  // which described exactly that and which no code ever wrote. Kept without limit (maxPerDoc: 0):
+  // the configuration in force at a past posting is audit evidence, so the plugin-wide cap of 50
+  // must not prune it. Declared here so the versions plugin leaves it alone.
+  versions: { maxPerDoc: 0 },
   hooks: {
     beforeValidate: [
       autoPopulateTenant,
@@ -118,6 +125,8 @@ export const FiscalPeriods: CollectionConfig = {
     // (Payload's useAsTitle does not traverse into groups).
     { name: 'label', type: 'text', unique: true, index: true,
       admin: { description: 'Auto-derived label (e.g., FY2026-P05). Editable.' } },
+    { name: 'changeReason', type: 'textarea',
+      admin: { description: 'Why this change was made (amendment, correction, regulatory request). Recorded with the version this save creates.' } },
     {
       type: 'group',
       name: 'identity',

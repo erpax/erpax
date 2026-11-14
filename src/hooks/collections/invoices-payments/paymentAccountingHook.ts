@@ -78,7 +78,7 @@ async function sumPaymentsAgainst(
   let total = 0
   let page = 1
   for (;;) {
-    const r = await req.payload.find({ collection: 'payments', limit: 1000, page, depth: 0, overrideAccess: true, where })
+    const r = await req.payload.find({ collection: 'transactions', limit: 1000, page, depth: 0, overrideAccess: true, where })
     for (const p of r.docs as Array<{ amounts?: { amount?: number } }>) total += Number(p.amounts?.amount ?? 0)
     if (!r.hasNextPage) return total
     page++

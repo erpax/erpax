@@ -82,7 +82,7 @@ const CustomsDeclarations: CollectionConfig = {
       labels: { singular: 'Line Item', plural: 'Line Items' },
       admin: { description: 'WCO data-model line items — one per HS code per declared item.' },
       fields: [
-        { name: 'item', type: 'relationship', relationTo: 'items',
+        { name: 'item', type: 'relationship', relationTo: 'products',
           admin: { description: 'The internal item — denormalised hsCode flows into `hsCode` for the declaration.' } },
         { name: 'description', type: 'text', required: true,
           admin: { description: 'Goods description per WCO HS (must match commercial invoice).' } },

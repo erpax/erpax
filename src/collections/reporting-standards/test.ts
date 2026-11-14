@@ -8,4 +8,11 @@ describe('reporting-standards collection node', () => {
     expect(Array.isArray(ReportingStandards.fields)).toBe(true)
     expect(ReportingStandards.fields.length).toBeGreaterThan(0)
   })
+  it('carries its reporting-mappings as the `mappings` array (the folded child collection)', () => {
+    const field = ReportingStandards.fields.find((x) => 'name' in x && x.name === 'mappings')
+    expect(field?.type).toBe('array')
+    const names = field?.type === 'array' ? field.fields.map((x) => ('name' in x ? x.name : '')) : []
+    expect(names).not.toContain('fromStandard') // the parent IS the containing document
+    expect(names.length).toBe(5)
+  })
 })

@@ -62,7 +62,7 @@ const InventoryMovements: CollectionConfig = {
         { label: 'Opening Balance', value: 'opening' },
       ],
     },
-    { name: 'item', type: 'relationship', relationTo: 'items', required: true, index: true },
+    { name: 'item', type: 'relationship', relationTo: 'products', required: true, index: true },
     { name: 'lotOrSerial', type: 'text', admin: { description: 'Lot / serial number for traceability.' } },
     { name: 'quantity', type: 'number', required: true, admin: { description: 'Positive = inbound to toLocation; negative = outbound from fromLocation.' } },
     { name: 'unitCost', type: 'number', defaultValue: 0, admin: { description: 'In cents — used for cost-flow & GL valuation.' } },

@@ -47,7 +47,7 @@ const BillsOfMaterials: CollectionConfig = {
   access: tenantAdminWriteAccess(), // Slice VVV: gated by feature 'manufacturing' (see featureGuard wiring TBA)
   fields: [
     referenceField({ description: 'BOM reference (e.g. `BOM-WIDGET-001-v3`).' }),
-    { name: 'finishedGood', type: 'relationship', relationTo: 'items', required: true, index: true,
+    { name: 'finishedGood', type: 'relationship', relationTo: 'products', required: true, index: true,
       admin: { description: 'The finished-good item this BOM produces.' } },
     { name: 'version', type: 'text', required: true,
       admin: { description: 'Version label (e.g. `v3`, `2026-Q1`). Bumped per ECO.' } },
@@ -64,7 +64,7 @@ const BillsOfMaterials: CollectionConfig = {
       labels: { singular: 'Component', plural: 'Components' },
       admin: { description: 'Per-component quantity required to produce `producedQuantity` of finished good.' },
       fields: [
-        { name: 'item', type: 'relationship', relationTo: 'items', required: true,
+        { name: 'item', type: 'relationship', relationTo: 'products', required: true,
           admin: { description: 'Component item (raw material / sub-assembly).' } },
         { name: 'quantity', type: 'number', required: true, min: 0,
           admin: { description: 'Quantity consumed per BOM run.' } },

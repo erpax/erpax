@@ -51,7 +51,7 @@ const Batches: CollectionConfig = {
   access: accountingCollectionAccess({ feature: 'manufacturing' }),
   fields: [
     referenceField({ description: 'Lot/batch number — GS1 AI(10). Tenant-unique human key.' }),
-    { name: 'item', type: 'relationship', relationTo: 'items', required: true, index: true,
+    { name: 'item', type: 'relationship', relationTo: 'products', required: true, index: true,
       admin: { description: 'Item this lot is a quantity of.' } },
     ...measureFields({ required: true, description: 'Original lot quantity in `unitOfMeasure`.' }),
     { name: 'remainingQuantity', type: 'number', defaultValue: 0,

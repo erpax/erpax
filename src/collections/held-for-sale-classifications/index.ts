@@ -37,7 +37,7 @@ const HeldForSaleClassifications: CollectionConfig = {
   labels: { singular: 'Held-for-Sale Classification', plural: 'Held-for-Sale Classifications' },
   admin: {
     useAsTitle: 'reference',
-    defaultColumns: ['reference', 'classificationKind', 'sourceCollection', 'classificationDate', 'fairValueLessCostsToSell', 'status'],
+    defaultColumns: ['reference', 'classificationKind', 'source', 'classificationDate', 'fairValueLessCostsToSell', 'status'],
     description:
       'IFRS 5 — non-current assets / disposal groups / discontinued operations classified as held-for-sale.',
   },
@@ -54,9 +54,11 @@ const HeldForSaleClassifications: CollectionConfig = {
         { label: 'Discontinued operation (separate major line)', value: 'discontinued_op' },
       ],
     },
-    { name: 'sourceCollection', type: 'text', required: true,
-      admin: { description: 'Slug of the asset (e.g. fixed-assets / investment-properties / business-combinations).' } },
-    { name: 'sourceId', type: 'text', required: true },
+    // One polymorphic relationship in place of a slug and an id kept as two text fields: the link is
+    // checked, populated and navigable. The target set is the one the old description named.
+    { name: 'source', type: 'relationship', required: true, index: true,
+      relationTo: ['fixed-assets', 'investment-properties', 'business-combinations'],
+      admin: { description: 'The asset or disposal group classified as held for sale.' } },
     { name: 'classificationDate', type: 'date', required: true,
       defaultValue: () => new Date().toISOString(), index: true },
     { name: 'expectedSaleDate', type: 'date',

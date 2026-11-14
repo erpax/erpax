@@ -158,7 +158,7 @@ export function roleScopedAccess(...allowedRoles: UserRole[]): Access {
  * document; each sees it because membership is a *set*, not a single FK.
  * Capability holders (default `admin`) bypass to full tenant scope.
  *
- * Roles live in the resource-scoped engine (`roles` + `user-roles`, the NIST
+ * Roles live in the resource-scoped engine (`roles` + `users.roleAssignments`, the NIST
  * INCITS-359 / Rolify port): a document-scoped row has `binding: 'document'`,
  * `scopedCollection: <slug>`, `resource.value: <id>`.
  *
@@ -182,19 +182,19 @@ export function partyRoleAccess(
     if (hasRole(user, 'admin', ...(options.capabilityRoles ?? []))) return tenantWhere
 
     // Membership side: collect the documents on which the user holds a party
-    // role (document-scoped binding). One query; role populated at depth 1.
-    const { docs } = await req.payload.find({
-      collection: 'user-roles',
-      where: { user: { equals: user.id } },
+    // role (document-scoped binding). One read of the user; its role definitions populated at depth 1.
+    const assignee = await req.payload.findByID({
+      collection: 'users',
+      id: user.id,
       depth: 1,
-      pagination: false,
+      select: { roleAssignments: true },
       overrideAccess: true,
       req,
     })
+    const held = (assignee as { roleAssignments?: unknown } | null)?.roleAssignments
 
     const memberOf: string[] = []
-    for (const ur of docs as Array<{ role?: unknown }>) {
-      const role = ur.role
+    for (const role of Array.isArray(held) ? (held as unknown[]) : []) {
       if (!role || typeof role !== 'object') continue
       const r = role as {
         name?: string

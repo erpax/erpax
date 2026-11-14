@@ -132,19 +132,19 @@ export const InvoiceLines: CollectionConfig = {
         {
           name: 'buyerItem',
           type: 'relationship',
-          relationTo: 'items',
+          relationTo: 'products',
           admin: { description: 'Buyer item reference' },
         },
         {
           name: 'sellerItem',
           type: 'relationship',
-          relationTo: 'items',
+          relationTo: 'products',
           admin: { description: 'Seller item reference' },
         },
         {
           name: 'source',
           type: 'relationship',
-          relationTo: 'items',
+          relationTo: 'products',
           admin: { description: 'Source item/inventory' },
         },
         {

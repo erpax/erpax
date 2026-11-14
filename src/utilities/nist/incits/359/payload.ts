@@ -1,5 +1,5 @@
 /**
- * Mutations for Payload `roles` + `user_roles` collections.
+ * Mutations for Payload `roles` definitions and the assignments on `users.roleAssignments`.
  *
  * @standard NIST INCITS-359-2012 §5.2 administrative-functions
  * @security ISO-27001 A.5.18 access-rights
@@ -157,7 +157,17 @@ export type MutationArgs = {
   overrideAccess?: boolean
 }
 
-/** Create user ↔ role assignment (duplicate rows prevented by `user_roles` hook). */
+/** The ids of the role definitions a user holds — `users.roleAssignments`, read past field access. */
+export async function assignedRoleIds(payload: Payload, req: PayloadRequest, userId: string): Promise<string[]> {
+  const user = await payload.findByID({ collection: 'users', id: userId, depth: 0, overrideAccess: true, req })
+  const held = (user as { roleAssignments?: unknown } | null)?.roleAssignments
+  return Array.isArray(held) ? held.map((role) => String(extractID(role as never))) : []
+}
+
+const writeAssignments = (payload: Payload, req: PayloadRequest, userId: string, ids: string[], overrideAccess: boolean) =>
+  payload.update({ collection: 'users', id: userId, data: { roleAssignments: ids } as never, depth: 0, overrideAccess, req })
+
+/** Assign a role definition to a user. The assignments are a set: granting a role already held writes nothing. */
 export async function addRole(payload: Payload, req: PayloadRequest, args: MutationArgs): Promise<void> {
   const overrideAccess = args.overrideAccess !== false
   const roleDoc = await findOrCreateRoleDefinition(
@@ -167,46 +177,24 @@ export async function addRole(payload: Payload, req: PayloadRequest, args: Mutat
     args.resource,
     overrideAccess,
   )
-
-  await payload.create({
-    collection: 'user-roles',
-    data: {
-      user: args.userId,
-      role: roleDoc.id,
-    },
-    overrideAccess,
-    req,
-  })
+  const role = String(roleDoc.id)
+  const held = await assignedRoleIds(payload, req, args.userId)
+  if (held.includes(role)) return
+  await writeAssignments(payload, req, args.userId, [...held, role], overrideAccess)
 }
 
 /** Alias for {@link addRole}. */
 export const grant = addRole
 
-/** Remove matching assignment for user + role definition. */
+/** Remove the matching role definition from the user's assignments. Revoking a role not held writes nothing. */
 export async function removeRole(payload: Payload, req: PayloadRequest, args: MutationArgs): Promise<void> {
   const overrideAccess = args.overrideAccess !== false
   const roleDoc = await findRoleDefinition(payload, req, args.roleName, args.resource ?? undefined, overrideAccess)
   if (!roleDoc) return
-
-  const rows = await payload.find({
-    collection: 'user-roles',
-    depth: 0,
-    limit: 50,
-    overrideAccess,
-    req,
-    where: {
-      and: [{ user: { equals: args.userId } }, { role: { equals: roleDoc.id } }],
-    },
-  })
-
-  for (const row of rows.docs) {
-    await payload.delete({
-      collection: 'user-roles',
-      id: extractID(row),
-      overrideAccess,
-      req,
-    })
-  }
+  const role = String(roleDoc.id)
+  const held = await assignedRoleIds(payload, req, args.userId)
+  if (!held.includes(role)) return
+  await writeAssignments(payload, req, args.userId, held.filter((id) => id !== role), overrideAccess)
 }
 
 /** Alias for {@link removeRole}. */

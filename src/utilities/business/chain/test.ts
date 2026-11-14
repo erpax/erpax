@@ -58,9 +58,9 @@ describe('business/chain — the registry is the single source of truth', () => 
 
   it('chainsForCollection returns exactly the chains touching that collection', () => {
     // P2P chain step writes the `payments` collection.
-    const result = chainsForCollection('payments')
+    const result = chainsForCollection('transactions')
     expect(result.length).toBeGreaterThan(0)
-    expect(result.every((c) => c.steps.some((s) => s.collection === 'payments'))).toBe(true)
+    expect(result.every((c) => c.steps.some((s) => s.collection === 'transactions'))).toBe(true)
     expect(result.some((c) => c.id === 'P2P_THREE_WAY_MATCH')).toBe(true)
     expect(chainsForCollection('__no_such_collection__')).toHaveLength(0)
   })

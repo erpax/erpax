@@ -8,4 +8,11 @@ describe('audit-committees collection node', () => {
     expect(Array.isArray(AuditCommittees.fields)).toBe(true)
     expect(AuditCommittees.fields.length).toBeGreaterThan(0)
   })
+  it('carries its roster as the `members` array (the folded audit-committee-members collection)', () => {
+    const field = AuditCommittees.fields.find((x) => 'name' in x && x.name === 'members')
+    expect(field?.type).toBe('array')
+    const names = field?.type === 'array' ? field.fields.map((x) => ('name' in x ? x.name : '')) : []
+    expect(names).not.toContain('committee') // the committee IS the containing document
+    expect(names).toEqual(['memberName', 'title', 'affiliation', 'appointedDate', 'termEndDate', 'role', 'expertise', 'status'])
+  })
 })

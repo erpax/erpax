@@ -33,10 +33,10 @@ const Returns: CollectionConfig = {
   },
   fields: [
     { name: 'rmaNumber', type: 'text', required: true, unique: true, index: true },
-    // Slice XXXXXXXX-c (2026-05-11): retargeted from 'orders' → 'sales-orders'.
+    // The order is the e-commerce plugin's `orders`, which carries the sales-order register.
     // IFRS-15 §B25 right-of-return links the return RMA back to the
     // originating customer-side sales order.
-    { name: 'order', type: 'relationship', relationTo: 'sales-orders', required: true },
+    { name: 'order', type: 'relationship', relationTo: 'orders', required: true },
     // Slice XXXXXXXX-b (2026-05-11): retargeted from 'addresses' → 'customers'.
     // Returns counterparty is the original buyer (IFRS-15 §B25 right-of-
     // return). Address can be resolved via customer.shippingAddress.
@@ -60,7 +60,7 @@ const Returns: CollectionConfig = {
       required: true,
       minRows: 1,
       fields: [
-        { name: 'item', type: 'relationship', relationTo: 'items' },
+        { name: 'item', type: 'relationship', relationTo: 'products' },
         { name: 'quantityReturned', type: 'number', required: true, min: 0 },
         { name: 'restock', type: 'checkbox', defaultValue: true, admin: { description: 'Return to inventory or write off?' } },
       ],

@@ -43,7 +43,7 @@ const ProductionReceipts: CollectionConfig = {
   fields: [
     referenceField({ description: 'Receipt reference (e.g. `PR-2026-04-0001`).' }),
     { name: 'workOrder', type: 'relationship', relationTo: 'work-orders', required: true, index: true },
-    { name: 'finishedGood', type: 'relationship', relationTo: 'items', required: true,
+    { name: 'finishedGood', type: 'relationship', relationTo: 'products', required: true,
       admin: { description: 'Denormalised from work-order for fast filter.' } },
     { name: 'receivedQuantity', type: 'number', required: true, min: 0 },
     { name: 'targetWarehouse', type: 'relationship', relationTo: 'warehouse-locations', required: true },

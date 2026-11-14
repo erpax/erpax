@@ -25,7 +25,6 @@ export const APP_COLLECTION_SLUGS = [
   'media',
   'categories',
   'roles',
-  'user-roles', // was `user_roles` — the collection's slug is hyphenated; the typo named nothing
   'users',
 ] as const
 

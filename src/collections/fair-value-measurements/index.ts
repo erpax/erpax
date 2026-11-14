@@ -5,7 +5,7 @@
  * IFRS 13 §72-§90 inputs hierarchy for any asset / liability measured at
  * fair value (financial instruments, investment property, biological
  * assets, share-based payments, business-combination PPA items).
- * Polymorphic source via `sourceCollection` + `sourceId`.
+ * Polymorphic source: one `source` relationship over the measurable collections.
  *
  * @standard IFRS IFRS-13 §9 fair-value-definition
  * @standard IFRS IFRS-13 §72 fair-value-hierarchy-three-levels
@@ -35,17 +35,18 @@ const FairValueMeasurements: CollectionConfig = {
   labels: { singular: 'Fair Value Measurement', plural: 'Fair Value Measurements' },
   admin: {
     useAsTitle: 'reference',
-    defaultColumns: ['reference', 'sourceCollection', 'level', 'fairValue', 'measurementDate', 'status'],
+    defaultColumns: ['reference', 'source', 'level', 'fairValue', 'measurementDate', 'status'],
     description:
       'IFRS 13 fair-value hierarchy register. One row per asset/liability per measurement event with Level 1/2/3 input classification.',
   },
   access: accountingCollectionAccess({ feature: 'fair_value_measurements' }),
   fields: [
     referenceField({ description: 'Sequential reference (e.g. FV-2026-Q1-001).' }),
-    { name: 'sourceCollection', type: 'text', required: true, index: true,
-      admin: { description: 'Slug of the measured asset/liability (e.g. fixed-assets / investment-properties / biological-assets / fx-transactions / share-based-payments).' } },
-    { name: 'sourceId', type: 'text', required: true, index: true,
-      admin: { description: 'ID of the source row.' } },
+    // One polymorphic relationship in place of a slug and an id kept as two text fields: the link is
+    // checked, populated and navigable. The target set is the one the old description named.
+    { name: 'source', type: 'relationship', required: true, index: true,
+      relationTo: ['fixed-assets', 'investment-properties', 'biological-assets', 'fx-transactions', 'share-based-payments'],
+      admin: { description: 'The measured asset or liability.' } },
     {
       name: 'level',
       type: 'select',

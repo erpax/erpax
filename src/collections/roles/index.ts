@@ -6,7 +6,7 @@ import { scopeResourceCollections } from '@/utilities/nist/incits/359'
 import { validateRoleDefinition } from '@/utilities/roles/hooks'
 
 /**
- * Role **definitions** (`name` + binding). Assign users via {@link ../UserRoles `user_roles`}.
+ * Role **definitions** (`name` + binding). Assigned to users through `users.roleAssignments`.
  *
  * @standard NIST INCITS-359-2012 role-based-access-control
  * @security ISO-27001 A.5.18 access-rights

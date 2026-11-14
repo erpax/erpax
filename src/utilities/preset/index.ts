@@ -68,7 +68,7 @@ export async function loadPresets(
 export async function declaredPresets(): Promise<Preset[]> {
   const [parties, orders, work, provisions, memos] = await Promise.all([
     import('@/collections/parties'),
-    import('@/collections/sales-orders'),
+    import('@/components/ecommerce/orders'),
     import('@/collections/maintenance-work-orders'),
     import('@/collections/provisions'),
     import('@/collections/credit-memos'),

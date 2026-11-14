@@ -13,6 +13,12 @@ export const InternalPolicies: CollectionConfig = {
   admin: {
     useAsTitle: 'policyName',
   },
+  // The policy's version history IS Payload's native versioning: every save is a version row
+  // carrying `versionNumber` / `versionName` / `changes` as they stood, and `restoreVersion`
+  // brings one back. This replaces the hand-kept `policy-versions` collection. Kept without limit
+  // (maxPerDoc: 0) — a superseded policy text is audit evidence, so the plugin-wide cap of 50 must
+  // not prune it. Declared here so the versions plugin leaves it alone ("the richer config wins").
+  versions: { maxPerDoc: 0 },
   access: roleBasedAccess({
     read: ['super-admin', 'admin', 'audit-staff', 'compliance-officer'],
     create: ['super-admin', 'admin'],
@@ -81,6 +87,26 @@ export const InternalPolicies: CollectionConfig = {
       name: 'policyDocument',
       type: 'upload',
       relationTo: 'media',
+    },
+    {
+      name: 'versionNumber',
+      type: 'text',
+      admin: { description: 'The current version of the policy text (e.g. 3.1). Earlier versions are in the document\'s version history.' },
+    },
+    {
+      name: 'versionName',
+      type: 'text',
+      admin: { description: 'Name of the current version (e.g. "2026 annual review").' },
+    },
+    {
+      name: 'releaseDate',
+      type: 'date',
+      admin: { description: 'When the current version was released.' },
+    },
+    {
+      name: 'changes',
+      type: 'richText',
+      admin: { description: 'What changed in the current version.' },
     },
     {
       name: 'applicableControls',

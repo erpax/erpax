@@ -44,7 +44,7 @@ export const RegulatoryReports: CollectionConfig = {
     {
       name: 'jurisdiction',
       type: 'relationship',
-      relationTo: 'taxing-jurisdictions',
+      relationTo: 'tax-jurisdictions',
       required: true,
     },
     {

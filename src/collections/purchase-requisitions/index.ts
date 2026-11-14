@@ -57,7 +57,7 @@ const PurchaseRequisitions: CollectionConfig = {
       dbName: 'pr_lines',
       fields: [
         { name: 'description', type: 'text', localized: true, required: true },
-        { name: 'item', type: 'relationship', relationTo: 'items' },
+        { name: 'item', type: 'relationship', relationTo: 'products' },
         { name: 'quantity', type: 'number', required: true, min: 0 },
         { name: 'uom', type: 'text', defaultValue: 'EA' },
         { name: 'estimatedUnitPrice', type: 'number', required: true,

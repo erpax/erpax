@@ -26,7 +26,7 @@ import type { CollectionSlug } from 'payload'
 /**
  * Cross-tenant BY DESIGN — these never carry a tenant field:
  * - `tenants`                     the root (a tenant cannot be scoped to itself)
- * - `users` · `roles` · `user-roles`  the identity / RBAC spine — users span
+ * - `users` · `roles`                the identity / RBAC spine — users span
  *                                  tenants (via the tenants array field); roles are global
  * - `subscription-plans`          the platform's plan catalogue (what is offered)
  * - `sectors`                     industry-sector reference taxonomy
@@ -37,7 +37,6 @@ export const TENANT_GLOBAL: readonly string[] = [
   'tenants',
   'users',
   'roles',
-  'user-roles',
   'subscription-plans',
   'sectors',
   'connections',

@@ -8,4 +8,13 @@ describe('held-for-sale-classifications collection node', () => {
     expect(Array.isArray(HeldForSaleClassifications.fields)).toBe(true)
     expect(HeldForSaleClassifications.fields.length).toBeGreaterThan(0)
   })
+  it('names its source by one polymorphic relationship, not a slug and an id as text', () => {
+    const names = HeldForSaleClassifications.fields.flatMap((x) => ('name' in x ? [x.name] : []))
+    expect(names).not.toContain('sourceCollection')
+    expect(names).not.toContain('sourceId')
+    const source = HeldForSaleClassifications.fields.find((x) => 'name' in x && x.name === 'source') as { type?: string; relationTo?: unknown; required?: boolean }
+    expect(source.type).toBe('relationship')
+    expect(source.relationTo).toEqual(["fixed-assets","investment-properties","business-combinations"])
+    expect(source.required).toBe(true)
+  })
 })

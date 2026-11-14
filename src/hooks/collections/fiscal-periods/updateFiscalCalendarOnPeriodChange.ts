@@ -131,7 +131,9 @@ export const updateFiscalCalendarOnPeriodChange: CollectionBeforeChangeHook<Fisc
     data.notes = existingNotes + amendment
   }
 
-  // NOT DONE HERE, and not done anywhere: the calendar is not regenerated and no snapshot is written. The
+  // The snapshot of each change is the native version row Payload writes on save (fiscal-periods keeps
+  // every version); there is no separate snapshot collection any more.
+  // NOT DONE HERE, and not done anywhere: the calendar is not regenerated. The
   // banner claimed both for as long as it existed. fiscal-calendars is written by a seed only, and
   // validate/fiscal/period/posting now READS it to stamp every posting — so amending a config after the
   // calendar was generated silently leaves postings on the old structure. See this atom's SKILL.

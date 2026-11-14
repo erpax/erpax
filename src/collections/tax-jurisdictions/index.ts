@@ -3,9 +3,21 @@ import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantR
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { currencyField } from '@/fields/text/currencyField'
+import { fieldAccess as superAdminField } from '@/access/collections/shared/superAdminOnly'
+
+/** The reference attributes of a jurisdiction are the same for every tenant: only a super-admin writes them. */
+const reference = { create: superAdminField, update: superAdminField }
 
 /**
- * Tax Jurisdictions — tax authority master.
+ * Tax Jurisdictions — the jurisdiction and the tenant's registration in it, one record.
+ *
+ * Two collections described a jurisdiction: this one (the tenant's registration with the tax
+ * authority) and the former `taxing-jurisdictions` (the jurisdiction's own reference attributes —
+ * ISO-3 code, languages, deadlines, frameworks), each re-typing code, name and level. They are
+ * merged here. The reference attributes keep their super-admin-only write rule at FIELD level
+ * (`reference` below); the registration and filing groups stay tenant master data.
+ * Dropped as duplicates: `type` (= `geography.level`), `iso2Code` (= `geography.country`),
+ * `primaryCurrency` (= `filing.currency`).
  *
  * Examples:
  *   { code: 'EU-DE',   country: 'DE', name: 'Germany VAT' }
@@ -14,6 +26,7 @@ import { currencyField } from '@/fields/text/currencyField'
  * @standard ISO-3166-1:2020 country-codes alpha-2
  * @standard ISO-3166-2:2020 subdivision-codes
  * @standard ISO-4217:2015 currency-codes
+ * @standard EU Directive 2006/112/EC VAT
  * @standard EN-16931:2017 §BG-23 vat-breakdown
  * @accounting OECD SAF-T jurisdiction-codes
  * @see docs/STANDARDS.md §4.1
@@ -47,6 +60,8 @@ export const TaxJurisdictions: CollectionConfig = {
       fields: [
         { name: 'country', type: 'text', required: true, index: true,
           admin: { description: 'ISO 3166-1 alpha-2 country code (e.g., US, DE, GB)' } },
+        { name: 'iso3Code', type: 'text', access: reference,
+          admin: { description: 'ISO 3166-1 alpha-3 country code (e.g., USA, DEU, GBR)' } },
         { name: 'region', type: 'text', index: true,
           admin: { description: 'ISO 3166-2 subdivision (e.g., CA, BY, NSW)' } },
         { name: 'level', type: 'select', required: true, defaultValue: 'national',
@@ -61,6 +76,19 @@ export const TaxJurisdictions: CollectionConfig = {
           admin: { description: 'Administrative level' } },
       ],
     },
+    { name: 'parentJurisdiction', type: 'relationship', relationTo: 'tax-jurisdictions', access: reference,
+      admin: { description: 'Parent jurisdiction (a state within its country, a country within the EU)' } },
+    { name: 'languages', type: 'array', access: reference,
+      fields: [ { name: 'languageCode', type: 'text', required: true }, { name: 'languageName', type: 'text' } ],
+      admin: { description: 'Languages used in the jurisdiction' } },
+    { name: 'regulatoryCharacteristics', type: 'json', access: reference, admin: { description: 'Regulatory characteristics' } },
+    { name: 'bankingRequirements', type: 'json', access: reference, admin: { description: 'Banking and financial institution requirements' } },
+    { name: 'filingDeadlines', type: 'array', access: reference,
+      fields: [ { name: 'filingType', type: 'text', required: true }, { name: 'deadline', type: 'text', required: true }, { name: 'frequency', type: 'text' } ],
+      admin: { description: 'Key statutory filing deadlines of the jurisdiction (the tenant\'s own cadence is in Filing)' } },
+    { name: 'complianceFrameworks', type: 'relationship', relationTo: 'compliance-frameworks', hasMany: true, access: reference,
+      admin: { description: 'Applicable compliance frameworks' } },
+    { name: 'isActive', type: 'checkbox', defaultValue: true, access: reference },
     {
       type: 'group',
       name: 'registration',

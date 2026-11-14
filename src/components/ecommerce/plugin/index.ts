@@ -42,8 +42,9 @@ import { validateProductCheckout } from '@/components/ecommerce/product/validati
 import { localeRecord } from '@/i18n'
 import { DEFAULT_COUNTRY, DEFAULT_CURRENCY } from '@/utilities/config/regional/defaults'
 import { validateAddressHook } from '@/hooks/collections/users/validateAddressHook'
-import { emitOrderLifecycleEvents } from '@/hooks/collections/users/emitOrderLifecycleEvents'
-import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
+import { variantsOverride } from '@/components/ecommerce/catalogue'
+import { ordersOverride } from '@/components/ecommerce/orders'
+import { transactionsOverride } from '@/components/ecommerce/transactions'
 
 /** Match Payload ecommerce template nav: variant helpers live under Ecommerce, not ungrouped (`group: false`). */
 const ecommerceGroupOverride: CollectionOverride = ({ defaultCollection }) => ({
@@ -199,44 +200,8 @@ export function createEcommercePlugin(): Plugin {
     },
     inventory: true,
     orders: {
-      ordersCollectionOverride: ({ defaultCollection }) => ({
-        ...defaultCollection,
-        fields: [
-          ...defaultCollection.fields,
-          {
-            name: 'accessToken',
-            type: 'text',
-            unique: true,
-            index: true,
-            admin: {
-              position: 'sidebar',
-              readOnly: true,
-            },
-            hooks: {
-              beforeValidate: [
-                ({ value, operation }) => {
-                  if (operation === 'create' || !value) {
-                    return crypto.randomUUID()
-                  }
-                  return value
-                },
-              ],
-            },
-          },
-        ],
-        // Slice ZZ-3: every Order status transition emits the matching
-        // domain event so `glPostingService` can post the IFRS 15 / ASC 606
-        // revenue-recognition + COGS entries. Closes the "data is money"
-        // gap between front-of-house ecommerce and the GL.
-        hooks: {
-          ...defaultCollection.hooks,
-          afterChange: [
-            ...(defaultCollection.hooks?.afterChange ?? []),
-            emitOrderLifecycleEvents,
-            auditTrailAfterChange('orders'),
-          ],
-        },
-      }),
+      // The sales-order register is folded into the plugin's order here — see @/components/ecommerce/orders.
+      ordersCollectionOverride: ordersOverride,
     },
     payments: {
       paymentMethods: [createTenantStripePaymentMethod()],
@@ -247,9 +212,10 @@ export function createEcommercePlugin(): Plugin {
       variants: {
         variantOptionsCollectionOverride: ecommerceGroupOverride,
         variantTypesCollectionOverride: ecommerceGroupOverride,
-        variantsCollectionOverride: ecommerceGroupOverride,
+        variantsCollectionOverride: variantsOverride,
       },
     },
-    transactions: true,
+    // The payment register is folded into the plugin's transaction here — see @/components/ecommerce/transactions.
+    transactions: { transactionsCollectionOverride: transactionsOverride },
   })
 }

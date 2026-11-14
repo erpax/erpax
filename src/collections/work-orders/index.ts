@@ -79,7 +79,6 @@ import type {
   CollectionConfig,
   CollectionBeforeChangeHook,
   CollectionAfterChangeHook,
-  CollectionAfterReadHook,
   Field,
 } from 'payload'
 
@@ -90,6 +89,7 @@ import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
 import { HORO_DIGITS, isHoroStep, type HoroStep } from '@/utilities/horo'
 import { recomputeParentAggregates } from '@/utilities/factory'
+import { relationIdString } from '@/utilities/field/relation'
 
 // ─── The option line (the collapse of the 36 fixed columns) ──────────
 //
@@ -213,7 +213,7 @@ export const pieceRateWage = (doc: WorkorderShape): number => exactRound(pieceWa
  * The shift's piece-rollup pole: `work-shifts.orderWage` = Σ `pieceWage` of its orders, recomputed
  * whenever an order is written, deleted or moved between shifts. The shift's own
  * `computeShiftAuthority` then settles `wage = round2(max(time pay, orderWage))` on that update.
- * The children are read through afterRead, so `pieceWage` is the decorated unrounded value.
+ * The children are read through the API, so `pieceWage` is the virtual field's unrounded value.
  */
 export const shiftOrderWage = recomputeParentAggregates({
   childSlug: 'work-orders',
@@ -275,6 +275,32 @@ export const inheritShiftEfficiency: CollectionBeforeChangeHook = async ({ data,
 }
 
 /**
+ * Inherit the routing position from the lot-work-phase. `lotWorkPhaseSort` is the step's `sort`,
+ * denormalised onto the order so the conveyor can find "the next phase" with one indexed query on
+ * work-orders. The step is the authority; the order only copies it. Best-effort, like the shift
+ * efficiency: an unreachable step leaves the prior value.
+ */
+export const inheritPhaseSort: CollectionBeforeChangeHook = async ({ data, req }) => {
+  const d = data as { lotWorkPhase?: unknown; lotWorkPhaseSort?: number }
+  const phase = d.lotWorkPhase
+  if (phase == null) return data
+  if (typeof phase === 'object' && typeof (phase as { sort?: unknown }).sort === 'number') {
+    d.lotWorkPhaseSort = (phase as { sort: number }).sort
+    return data
+  }
+  const id = relationIdString(phase)
+  if (id == null) return data
+  try {
+    const step = await req.payload.findByID({ collection: 'lot-work-phases', id, depth: 0, overrideAccess: true, req })
+    const sort = (step as { sort?: unknown })?.sort
+    if (typeof sort === 'number') d.lotWorkPhaseSort = sort
+  } catch {
+    // The routing step may be unreachable mid-transaction; keep the prior value (best-effort).
+  }
+  return data
+}
+
+/**
  * The forward! conveyor — when this phase completes, its produced units become
  * the NEXT phase's ordered units. Resolves the next lot-work-phase by sort order
  * within the same lot-variant and seeds (or tops up) its work order. Production
@@ -291,8 +317,7 @@ export const forwardProducedToNextPhase: CollectionAfterChangeHook = async ({ do
     const d = doc as WorkorderShape & {
       id?: string
       completedAt?: string | null
-      lotVariantCode?: string | null
-      lotWorkPhaseCode?: string | null
+      lotVariant?: unknown
       lotWorkPhaseSort?: number | null
       forwardedTo?: unknown
     }
@@ -300,7 +325,8 @@ export const forwardProducedToNextPhase: CollectionAfterChangeHook = async ({ do
     const produced = sumOptions(d.options, 'produced')
     if (produced <= 0) return doc
     if (d.forwardedTo) return doc // already conveyed (idempotent)
-    if (!d.lotVariantCode) return doc
+    const variant = relationIdString(d.lotVariant)
+    if (!variant) return doc
 
     // Next phase = the smallest sort strictly greater than this one, same variant.
     const next = (await req.payload.find({
@@ -312,7 +338,7 @@ export const forwardProducedToNextPhase: CollectionAfterChangeHook = async ({ do
       sort: 'lotWorkPhaseSort',
       where: {
         and: [
-          { lotVariantCode: { equals: d.lotVariantCode } },
+          { lotVariant: { equals: variant } },
           { lotWorkPhaseSort: { greater_than: toInt(d.lotWorkPhaseSort) } },
         ],
       },
@@ -339,25 +365,34 @@ export const forwardProducedToNextPhase: CollectionAfterChangeHook = async ({ do
 }
 
 /**
- * Decorate every read with the DERIVED fields — state, wage, minutesRemaining —
- * computed, never stored (DERIVE-FROM-FS-FIRST: the computed value is the truth,
- * the stored copy would only drift).
+ * The DERIVED fields — state, wage, pieceWage, minutesRemaining — as Payload virtual fields:
+ * declared (typed, visible in the admin, selectable through the API), computed on every read from
+ * the row's own stored values, and never given a database column. The computed value is the truth;
+ * a stored copy would only drift. They read `siblingData`, the row being returned.
  */
-export const decorateDerived: CollectionAfterReadHook = ({ doc }) => {
-  const d = doc as WorkorderShape
-  d.state = deriveState(d)
-  d.pieceWage = pieceWage(d)
-  d.wage = pieceRateWage(d)
-  d.minutesRemaining = minutesRemaining(d)
-  return doc
+const derived = <T,>(name: string, type: 'text' | 'number', description: string, compute: (doc: WorkorderShape) => T, hidden = false): Field => {
+  const common = {
+    name,
+    virtual: true as const,
+    admin: { readOnly: true, description, ...(hidden ? { hidden: true } : {}) },
+    hooks: { afterRead: [({ siblingData }: { siblingData?: unknown }) => compute((siblingData ?? {}) as WorkorderShape)] },
+  }
+  return type === 'text' ? { ...common, type: 'text' } : { ...common, type: 'number' }
 }
+
+export const derivedFields: Field[] = [
+  derived('state', 'text', 'Derived lifecycle position on the seven-step ring (open → … → closed). Computed, never stored.', deriveState),
+  derived('wage', 'number', 'Piece-rate wage for this order, rounded to cents. Computed, never stored.', pieceRateWage),
+  derived('pieceWage', 'number', 'Unrounded piece-rate wage — what the shift rolls up. Computed, never stored.', pieceWage, true),
+  derived('minutesRemaining', 'number', 'Work-minutes still to produce. Computed, never stored.', minutesRemaining),
+]
 
 export const Workorders: CollectionConfig = {
   slug: 'work-orders',
   labels: { singular: 'Work Order', plural: 'Work Orders' },
   admin: {
     useAsTitle: 'reference',
-    defaultColumns: ['reference', 'date', 'lotWorkPhaseCode', 'worker', 'unitsOrdered', 'unitsProduced'],
+    defaultColumns: ['reference', 'date', 'lotWorkPhase', 'worker', 'unitsOrdered', 'unitsProduced'],
     group: 'Manufacturing',
     description:
       'The production execution leaf (2.05M-row etrima twin) — one (lotphase × variant) assignment per worker/shift. Options array ⊕ derived header totals (double-entry), derived horo state, the forward! conveyor, and the piece-rate wage.',
@@ -391,6 +426,8 @@ export const Workorders: CollectionConfig = {
       admin: { readOnly: true, description: 'Σ options[].produced — derived (double-entry: header = Σ entries).' } },
     { name: 'unitsBackordered', type: 'number', min: 0, defaultValue: 0,
       admin: { readOnly: true, description: 'Σ options[].backordered — derived.' } },
+    { name: 'unitsScrap', type: 'number', min: 0, defaultValue: 0,
+      admin: { description: 'Scrapped (NCR) units — recorded, not derived. etrima kept no scrap counter; carried over from the former operation-runs.' } },
 
     // ── The piece-rate inputs ──
     { name: 'unitSeconds', type: 'number', min: 0,
@@ -411,14 +448,15 @@ export const Workorders: CollectionConfig = {
 
     // ── The resource cross — the three axes that meet at a work order ──
     //
-    // lot-phase / variant axis: content-addressed codes (the lot-routing collections
-    // are not yet minted; codes keep the leaf self-consistent and merge-safe).
-    { name: 'lotVariantCode', type: 'text', index: true,
-      admin: { description: 'Lot-variant code — the product variant in this lot (the lotvariant cross).' } },
-    { name: 'lotWorkPhaseCode', type: 'text', index: true,
-      admin: { description: 'Lot-work-phase code — the routing step (the lotworkphase cross).' } },
+    // lot-phase / variant axis: relationships, as in etrima (`lot_variant_id` · `lot_work_phase_id`,
+    // set on 99.7% of 2.05M orders, every one resolving — `pnpm test:etrima`). These were text
+    // codes while the lot-routing collections did not exist yet.
+    { name: 'lotVariant', type: 'relationship', relationTo: 'lot-variants', index: true,
+      admin: { description: 'The product variant of the lot this order produces.' } },
+    { name: 'lotWorkPhase', type: 'relationship', relationTo: 'lot-work-phases', index: true,
+      admin: { description: 'The routing step this order executes.' } },
     { name: 'lotWorkPhaseSort', type: 'number', index: true,
-      admin: { description: 'Phase order within the routing — drives the forward! conveyor (next = smallest sort greater than this).' } },
+      admin: { readOnly: true, description: 'The routing step\'s sort, copied from `lotWorkPhase` — drives the forward! conveyor (next = smallest sort greater than this).' } },
     { name: 'machineCode', type: 'text',
       admin: { description: 'Machine code (AUDIT: set on only ~0.26% of rows — optional by data).' } },
     { name: 'teamCode', type: 'text', index: true, admin: { description: 'Team code — the producing team.' } },
@@ -444,17 +482,19 @@ export const Workorders: CollectionConfig = {
 
     { name: 'note', type: 'textarea', admin: { description: 'Free-text note (AUDIT: present on ~0.9% of rows).' } },
 
+    ...derivedFields,
+
     ...auditFields({ readOnly: true }),
   ],
   hooks: standardCollectionHooks('work-orders', {
-    beforeChange: [assertTotalsBalance, inheritShiftEfficiency],
+    beforeChange: [assertTotalsBalance, inheritShiftEfficiency, inheritPhaseSort],
     afterChange: [forwardProducedToNextPhase, shiftOrderWage.afterChange],
   }),
   timestamps: true,
 }
 
-// The derived decorator and the shift rollup's delete arm are registered separately so it never displaces the
+// The shift rollup's delete arm is registered separately so it never displaces the
 // standard spine's afterChange audit hook (afterRead is its own lane).
-Workorders.hooks = { ...Workorders.hooks, afterRead: [decorateDerived], afterDelete: [shiftOrderWage.afterDelete] }
+Workorders.hooks = { ...Workorders.hooks, afterDelete: [shiftOrderWage.afterDelete] }
 
 export default Workorders

@@ -37,6 +37,12 @@ describe('work/phases — the reusable work-phase catalog', () => {
     expect((ws as { min?: number }).min).toBe(0)
   })
 
+  it('carries the default work-center (merged in from the former operations catalog)', () => {
+    const wc = byName.get('defaultWorkCenter')
+    expect(wc?.type).toBe('relationship')
+    expect((wc as { relationTo?: string }).relationTo).toBe('work-centers')
+  })
+
   it('name is the required title field', () => {
     const name = byName.get('name')
     expect(name?.type).toBe('text')

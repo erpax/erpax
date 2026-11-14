@@ -21,6 +21,8 @@ import type { DefaultDocumentIDType, Where } from 'payload'
 import { localeRecord } from '@/i18n'
 
 import { productsBeforeChange } from '@/components/media/products/hooks'
+import { withItemFields } from '@/components/ecommerce/catalogue'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { deriveVariants } from '@/components/ecommerce/variants'
 
 /**
@@ -163,7 +165,8 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
         },
         {
           fields: [
-            ...defaultCollection.fields,
+            // The item master (code, SKU, cost and tax, GL accounts, weight …) — see @/components/ecommerce/catalogue.
+            ...withItemFields(defaultCollection.fields),
             {
               name: 'relatedProducts',
               type: 'relationship',
@@ -231,7 +234,7 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
   hooks: {
     ...defaultCollection.hooks,
     // A product's variants are the cartesian product of its options — derived, not typed.
-    afterChange: [...(defaultCollection.hooks?.afterChange ?? []), deriveVariants],
+    afterChange: [...(defaultCollection.hooks?.afterChange ?? []), deriveVariants, auditTrailAfterChange('products')],
     beforeChange: productsBeforeChange(defaultCollection),
   },
 })

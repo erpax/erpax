@@ -7,7 +7,7 @@
  * @see src/work/orders/index.ts
  */
 import { describe, it, expect } from 'vitest'
-import type { CollectionBeforeChangeHook } from 'payload'
+import type { CollectionAfterChangeHook, CollectionBeforeChangeHook } from 'payload'
 import {
   deriveState,
   machinesPerWorker,
@@ -16,7 +16,11 @@ import {
   minutesRemaining,
   assertTotalsBalance,
   inheritShiftEfficiency,
+  inheritPhaseSort,
+  forwardProducedToNextPhase,
   WORKORDER_RING,
+  Workorders,
+  derivedFields,
 } from '@/collections/work-orders'
 import { HORO_DIGITS } from '@/utilities/horo'
 
@@ -109,6 +113,20 @@ describe('pieceWage — the unrounded wage the shift rolls up (etrima rounds the
   })
 })
 
+describe('unitsScrap — the scrap counter carried over from the former operation-runs', () => {
+  it('is a recorded (not derived) non-negative header counter', () => {
+    const field = Workorders.fields.find((f) => 'name' in f && f.name === 'unitsScrap') as { type?: string; min?: number; admin?: { readOnly?: boolean } }
+    expect(field?.type).toBe('number')
+    expect(field?.min).toBe(0)
+    expect(field?.admin?.readOnly).toBeUndefined()
+  })
+  it('is not touched by the Σ-options balance (options carry no scrap line)', () => {
+    const data = { options: [{ ordered: 5, produced: 4, backordered: 1 }], unitsScrap: 2 }
+    balance(data)
+    expect(data.unitsScrap).toBe(2)
+  })
+})
+
 describe('minutesRemaining — (ordered − produced)·unitSeconds / mpw / 60', () => {
   it('computes remaining work-minutes', () => {
     // (100 − 40) · 60s / 1 / 60 = 60 min
@@ -168,5 +186,96 @@ describe('inheritShiftEfficiency — the order reads efficiency back DOWN from t
     const data: Record<string, unknown> = { workShift: 'ws1', efficiencyPercent: 50 }
     await inherit(data, async () => { throw new Error('db down') })
     expect(data.efficiencyPercent).toBe(50)
+  })
+})
+
+describe('inheritPhaseSort — the order copies its routing position from the lot-work-phase', () => {
+  const never = async () => { throw new Error('findByID should not be called') }
+  const sortOf = (data: Record<string, unknown>, findByID: (a: { collection: string; id: unknown }) => Promise<unknown>) =>
+    inheritPhaseSort({ data, req: { payload: { findByID } }, collection: undefined, context: {}, operation: 'create' } as unknown as HookArgs)
+
+  it('reads sort off an already-populated lotWorkPhase (no fetch)', async () => {
+    const data: Record<string, unknown> = { lotWorkPhase: { id: 'p1', sort: 7 } }
+    await sortOf(data, never)
+    expect(data.lotWorkPhaseSort).toBe(7)
+  })
+  it('fetches the step from lot-work-phases by id', async () => {
+    const data: Record<string, unknown> = { lotWorkPhase: 'p1' }
+    await sortOf(data, async ({ collection, id }) => (collection === 'lot-work-phases' && id === 'p1' ? { id, sort: 13 } : null))
+    expect(data.lotWorkPhaseSort).toBe(13)
+  })
+  it('a sort of 0 is a real position, not "missing"', async () => {
+    const data: Record<string, unknown> = { lotWorkPhase: { id: 'p0', sort: 0 }, lotWorkPhaseSort: 5 }
+    await sortOf(data, never)
+    expect(data.lotWorkPhaseSort).toBe(0)
+  })
+  it('is untouched without a step, and best-effort when the step is unreachable', async () => {
+    const none: Record<string, unknown> = { lotWorkPhaseSort: 4 }
+    await sortOf(none, never)
+    expect(none.lotWorkPhaseSort).toBe(4)
+    const down: Record<string, unknown> = { lotWorkPhase: 'p1', lotWorkPhaseSort: 4 }
+    await sortOf(down, async () => { throw new Error('db down') })
+    expect(down.lotWorkPhaseSort).toBe(4)
+  })
+})
+
+describe('forwardProducedToNextPhase — the conveyor finds the next phase by the lotVariant relationship', () => {
+  type AfterArgs = Parameters<CollectionAfterChangeHook>[0]
+  const convey = async (doc: Record<string, unknown>, successor: Record<string, unknown> | null) => {
+    const finds: Array<{ where?: unknown; sort?: unknown }> = []
+    const updates: Array<{ id: unknown; data: Record<string, unknown> }> = []
+    const payload = {
+      find: async (args: { where?: unknown; sort?: unknown }) => { finds.push(args); return { docs: successor ? [successor] : [] } },
+      update: async (args: { id: unknown; data: Record<string, unknown> }) => { updates.push(args); return {} },
+    }
+    await forwardProducedToNextPhase({ doc, req: { payload, context: {} }, collection: undefined, context: {}, operation: 'update' } as unknown as AfterArgs)
+    return { finds, updates }
+  }
+  const done = { id: 'wo1', completedAt: '2026-01-01T00:00:00.000Z', lotWorkPhaseSort: 3, options: [{ label: 'M', ordered: 10, produced: 9, backordered: 1 }] }
+
+  it('queries work-orders of the same variant (by id, populated or not) with a greater sort', async () => {
+    for (const lotVariant of ['v1', { id: 'v1' }]) {
+      const { finds } = await convey({ ...done, lotVariant }, null)
+      expect(finds).toHaveLength(1)
+      expect(finds[0]?.sort).toBe('lotWorkPhaseSort')
+      expect(finds[0]?.where).toEqual({ and: [{ lotVariant: { equals: 'v1' } }, { lotWorkPhaseSort: { greater_than: 3 } }] })
+    }
+  })
+  it('feeds the successor the produced units as its ordered, and links both ways', async () => {
+    const { updates } = await convey({ ...done, lotVariant: 'v1' }, { id: 'wo2' })
+    expect(updates.map((u) => u.id)).toEqual(['wo2', 'wo1'])
+    expect(updates[0]?.data).toEqual({ options: [{ label: 'M', ordered: 10, produced: 0, backordered: 0 }], forwardedFrom: 'wo1' })
+    expect(updates[1]?.data).toEqual({ forwardedTo: 'wo2' })
+  })
+  it('does nothing without a variant, before completion, or once already forwarded', async () => {
+    expect((await convey({ ...done }, { id: 'wo2' })).finds).toHaveLength(0)
+    expect((await convey({ ...done, lotVariant: 'v1', completedAt: null }, { id: 'wo2' })).finds).toHaveLength(0)
+    expect((await convey({ ...done, lotVariant: 'v1', forwardedTo: 'wo9' }, { id: 'wo2' })).finds).toHaveLength(0)
+  })
+})
+
+describe('derived values are Payload virtual fields — declared, computed on read, never a column', () => {
+  type FieldHook = (args: { siblingData?: Record<string, unknown> }) => unknown
+  const read = (name: string, row: Record<string, unknown>) => {
+    const field = derivedFields.find((f) => 'name' in f && f.name === name) as { hooks?: { afterRead?: FieldHook[] } }
+    return field.hooks?.afterRead?.[0]?.({ siblingData: row })
+  }
+  const row = { unitsOrdered: 10, unitsProduced: 4, unitSeconds: 60, payPerHour: 12 }
+
+  it('declares state, wage, pieceWage and minutesRemaining as virtual and read-only', () => {
+    expect(derivedFields.map((f) => ('name' in f ? f.name : ''))).toEqual(['state', 'wage', 'pieceWage', 'minutesRemaining'])
+    for (const f of derivedFields) expect(f).toMatchObject({ virtual: true, admin: { readOnly: true } })
+    const declared = Workorders.fields.flatMap((f) => ('name' in f ? [f.name] : []))
+    for (const name of ['state', 'wage', 'pieceWage', 'minutesRemaining']) expect(declared.filter((n) => n === name), name).toHaveLength(1)
+  })
+  it('each computes from the row being returned, with the same functions as before', () => {
+    expect(read('state', row)).toBe('in-production')
+    expect(read('wage', row)).toBe(0.8) // 4 · 60 · 12 / 3600
+    expect(read('pieceWage', row)).toBeCloseTo(0.8, 10)
+    expect(read('minutesRemaining', row)).toBe(6) // (10 − 4) · 60 / 60
+    expect(read('state', {})).toBe('open') // an empty row is a real position, not an error
+  })
+  it('no collection-level afterRead decorator remains', () => {
+    expect(Workorders.hooks?.afterRead ?? []).toEqual([])
   })
 })

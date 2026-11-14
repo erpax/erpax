@@ -18,8 +18,8 @@
  *      136 (1.2%). `tech_confirmed_at` is 0/11 759 — a DEAD column, dropped.
  *  - Roll-up: `lots.units = Σ variant.units` holds 100% (11 636/11 636); likewise
  *    `units_produced`. The lot counters ARE the sum of their variants’ (balance).
- *  - The funnel is monotonic: ordered ≥ units ≥ produced ≥ packed ≥ shipped ≥
- *    delivered ≥ invoiced — kept as double-entry numbers (see src/accounting).
+ *  - The funnel TAIL is monotonic: packed ≥ shipped ≥ delivered ≥ invoiced (100%). The head is
+ *    not (see the @invariant below) — kept as double-entry numbers (see src/accounting).
  *  - `kind` is the free product/programme code (SHIMA_07/CONF_21/…); open text.
  *
  * @standard ISA-95:2013 / IEC-62264-1 §B.3 production-schedule production-order
@@ -31,7 +31,8 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @invariant derived-state — `status` is computed from watermarks, never stored (100% NULL in 20 yrs).
  * @invariant roll-up — `units = Σ variant.units` (100% in etrima); the lot is the sum of its parts.
- * @invariant funnel — `ordered ≥ units ≥ produced ≥ packed ≥ shipped ≥ delivered ≥ invoiced` (monotonic).
+ * @invariant funnel tail — `packed ≥ shipped ≥ delivered ≥ invoiced` (100% in etrima). The head is NOT
+ *   monotonic: ordered < units on 9 595 lots, produced < packed on 9 061 (`pnpm test:etrima`).
  * @see src/lot/variants (the option roll-up) · src/lot/work/phases (the routing chain) · src/work/phases (the catalog)
  */
 
@@ -131,14 +132,14 @@ const Lots: CollectionConfig = {
     {
       name: 'order',
       type: 'relationship',
-      relationTo: 'sales-orders',
+      relationTo: 'orders',
       index: true,
       admin: { description: 'The sales order this lot fulfils (the demand source).' },
     },
     {
       name: 'product',
       type: 'relationship',
-      relationTo: 'items',
+      relationTo: 'products',
       index: true,
       admin: { description: 'The product produced (the catalog item).' },
     },
@@ -174,7 +175,7 @@ const Lots: CollectionConfig = {
     { name: 'deliveredAt', type: 'date', admin: { description: 'Actual delivery date.' } },
 
     // The unit funnel — monotonic double-entry counters; the lot total = Σ variant totals.
-    counter('unitsOrdered', 'Units ordered (the funnel head; ≥ units).'),
+    counter('unitsOrdered', 'Units released to the floor (in etrima often below units — not a ceiling).'),
     counter('units', 'Lot total units — = Σ variant.units (the roll-up law, 100% in etrima).'),
     counter('unitsProduced', 'Units produced (≤ units; = Σ variant.unitsProduced).'),
     counter('unitsPacked', 'Units packed (≤ produced).'),
