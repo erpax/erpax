@@ -6,7 +6,7 @@
  * computed from the app list (`appTenants`); loading them is idempotent — a tenant is found by its
  * slug, created when missing, and updated only when it differs.
  *
- * Run: pnpm seed --url <origin> --apps
+ * Run: pnpm seed --url <origin> --apps [--domain erpax.com]   (with --domain: <app>.erpax.com each)
  *
  * @see src/packages/engine/index.ts (appTenants) · src/collections/tenants (app, apps)
  */
@@ -21,27 +21,27 @@ export interface TenantRest {
 
 export type AppTenantRow = ReturnType<typeof appTenants>[number]
 
-/** The tenant rows, one per app. */
-export const appTenantRows = (): AppTenantRow[] => appTenants(APPS)
+/** The tenant rows, one per app; with a base domain each is served at `<app>.<domain>`. */
+export const appTenantRows = (domain?: string): AppTenantRow[] => appTenants(APPS, domain)
 
 const same = (a: readonly string[] | null | undefined, b: readonly string[]): boolean => [...(a ?? [])].sort().join() === [...b].sort().join()
 
 /** Does a stored tenant already say what the row says? */
-export const upToDate = (stored: { name?: string | null; app?: string | null; apps?: string[] | null }, row: AppTenantRow): boolean =>
-  stored.name === row.name && stored.app === row.app && same(stored.apps, row.apps)
+export const upToDate = (stored: { name?: string | null; app?: string | null; apps?: string[] | null; domain?: string | null }, row: AppTenantRow): boolean =>
+  stored.name === row.name && stored.app === row.app && same(stored.apps, row.apps) && (row.domain === undefined || stored.domain === row.domain)
 
 /** Create or update the app tenants. */
 export const loadAppTenants = async (rest: TenantRest, rows: readonly AppTenantRow[] = appTenantRows()): Promise<{ created: number; updated: number; unchanged: number }> => {
   const result = { created: 0, updated: 0, unchanged: 0 }
   for (const row of rows) {
-    const found = (await rest.find({ collection: 'tenants', where: { slug: { equals: row.slug } }, limit: 1, depth: 0 })) as { docs?: Array<{ id: string | number; name?: string | null; app?: string | null; apps?: string[] | null }> }
+    const found = (await rest.find({ collection: 'tenants', where: { slug: { equals: row.slug } }, limit: 1, depth: 0 })) as { docs?: Array<{ id: string | number; name?: string | null; app?: string | null; apps?: string[] | null; domain?: string | null }> }
     const stored = found.docs?.[0]
     if (!stored) {
       await rest.create({ collection: 'tenants', data: row })
       result.created++
     } else if (upToDate(stored, row)) result.unchanged++
     else {
-      await rest.update({ collection: 'tenants', id: stored.id, data: { name: row.name, app: row.app, apps: row.apps } })
+      await rest.update({ collection: 'tenants', id: stored.id, data: { name: row.name, app: row.app, apps: row.apps, ...(row.domain ? { domain: row.domain } : {}) } })
       result.updated++
     }
   }

@@ -36,6 +36,7 @@ import type { Field } from 'payload'
 import type { CollectionOverride } from '@payloadcms/plugin-ecommerce/types'
 
 import { localeRecord } from '@/i18n'
+import { APPS } from '@/packages'
 
 /** The SKU-level identifiers — on the product (a product without variants IS the SKU) and on each variant. */
 export const skuFields = (): Field[] => [
@@ -45,6 +46,11 @@ export const skuFields = (): Field[] => [
 
 /** The item master's fields, as they sit on the plugin's product. */
 export const itemFields = (): Field[] => [
+  // An erpax app is sold through this catalogue: a product lists the apps it switches on for the
+  // tenant that buys it — one app, or several for a bundle built around a use case
+  // (src/hooks/collections/orders/grantApps).
+  { name: 'apps', type: 'select', hasMany: true, options: APPS.filter((app) => app.required !== true).map((app) => ({ label: app.title, value: app.slug })),
+    admin: { description: 'The erpax apps this product switches on for the tenant that buys it. Leave empty for an ordinary product.' } },
   { name: 'code', type: 'text', unique: true, index: true,
     admin: { description: 'Item code — the ERP identifier documents quote. Empty on a storefront-only product.' } },
   ...skuFields(),

@@ -82,6 +82,7 @@ import { unitOfMeasureField } from '@/fields/text/unitOfMeasureField'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
+import { grantApps } from '@/hooks/collections/orders/grantApps'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { emitOrderLifecycleEvents } from '@/hooks/collections/users/emitOrderLifecycleEvents'
 import { emitOnCreate, emitOnStatusTransition, emitPoCreated, emitPrApproved, emitPrSubmitted, emitRfqAwarded, emitRfqReceived } from '@/utilities/chain/event/emitter'
@@ -447,6 +448,8 @@ export const ordersOverride: CollectionOverride = ({ defaultCollection }) => {
         // IFRS 15 / ASC 606 revenue-recognition + COGS entries.
         // Sale side only: a purchase order must not post revenue, nor a sales reversal when cancelled.
         onSide('sale', emitOrderLifecycleEvents),
+        // A completed sale of an app to a tenant switches that app on for the buyer.
+        onSide('sale', grantApps),
         // The register's chain events (UN-EDIFACT ORDRSP lifecycle), each on its own side.
         onSide('sale', emitOnCreate('order:created', 'order')),
         onSide('sale', emitOnStatusTransition('accepted', 'quote:accepted', 'order')),

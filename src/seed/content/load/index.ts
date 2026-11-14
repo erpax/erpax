@@ -103,7 +103,12 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     : { created: 0, updated: 0, unchanged: 0, unresolved: [], rows: 0 }
   console.log(JSON.stringify({ ...result, unresolved: result.unresolved.length }))
   // --apps: one tenant per app (src/seed/apps) — the app as a tenant
-  if (apps) console.log(JSON.stringify({ apps: await (await import('@/seed/apps')).loadAppTenants(sdk as unknown as Rest) }))
+  if (apps) {
+    const at = process.argv.indexOf('--domain')
+    const domain = at >= 0 ? process.argv[at + 1] : undefined
+    const seedApps = await import('@/seed/apps')
+    console.log(JSON.stringify({ apps: await seedApps.loadAppTenants(sdk as unknown as Rest, seedApps.appTenantRows(domain)) }))
+  }
   if (redirects) {
     const rows = JSON.parse(readFileSync(redirects, 'utf8')) as RedirectRow[]
     console.log(JSON.stringify({ redirects: await loadRedirects(overSdk(sdk as unknown as Rest, config), rows, { tenant }) }))

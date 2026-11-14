@@ -23,6 +23,7 @@ import * as migration_20261114_123452_payload_table_names from './20261114_12345
 import * as migration_20261114_125159_form_submission_references from './20261114_125159_form_submission_references';
 import * as migration_20261114_134018_directory_providers_indexes from './20261114_134018_directory_providers_indexes';
 import * as migration_20261114_135040_tenant_apps from './20261114_135040_tenant_apps';
+import * as migration_20261114_142054_product_apps from './20261114_142054_product_apps';
 
 export const migrations = [
   {
@@ -148,6 +149,11 @@ export const migrations = [
   {
     up: migration_20261114_135040_tenant_apps.up,
     down: migration_20261114_135040_tenant_apps.down,
-    name: '20261114_135040_tenant_apps'
+    name: '20261114_135040_tenant_apps',
+  },
+  {
+    up: migration_20261114_142054_product_apps.up,
+    down: migration_20261114_142054_product_apps.down,
+    name: '20261114_142054_product_apps'
   },
 ];

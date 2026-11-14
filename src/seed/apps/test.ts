@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { APPS } from '@/packages'
+import { appOfHost } from '@/packages/engine'
 import { appTenantRows, loadAppTenants, upToDate, type TenantRest } from '@/seed/apps'
 
 describe('seed/apps — every app as a tenant', () => {
@@ -30,5 +31,17 @@ describe('seed/apps — every app as a tenant', () => {
     const row = appTenantRows().find((r) => r.slug === 'sales')!
     expect(upToDate({ name: 'Sales', app: 'sales', apps: ['platform', 'sales', 'admin'] }, row)).toBe(true)
     expect(upToDate({ name: 'Sales', app: 'sales', apps: ['sales'] }, row)).toBe(false)
+  })
+  it('with a base domain every app tenant is served on its own subdomain', () => {
+    const rows = appTenantRows('erpax.com')
+    expect(rows.find((row) => row.slug === 'ledger')!.domain).toBe('ledger.erpax.com')
+    expect(appTenantRows()[0]!.domain).toBe(undefined)
+    expect(upToDate({ name: 'Sales', app: 'sales', apps: ['admin', 'sales', 'platform'], domain: 'old.example' }, rows.find((r) => r.slug === 'sales')!)).toBe(false)
+  })
+  it('a host name says which app it is for', () => {
+    expect(appOfHost('ledger.erpax.com', APPS)!.slug).toBe('ledger')
+    expect(appOfHost('LEDGER.erpax.com:8443', APPS)!.slug).toBe('ledger')
+    expect(appOfHost('www.erpax.com', APPS)).toBe(undefined)
+    expect(appOfHost(null, APPS)).toBe(undefined)
   })
 })
