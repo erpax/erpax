@@ -160,6 +160,37 @@ const GLAccounts: CollectionConfig = {
       type: 'checkbox',
       defaultValue: false,
     },
+    // Posting characteristics of the account (formerly the gl-posting-rules collection, which also
+    // repeated `accountType` and `normalBalance` from here and listed the accounts it applied to).
+    {
+      name: 'requiresReconciliation',
+      type: 'checkbox',
+      defaultValue: false,
+      admin: { description: 'The account must be reconciled periodically (bank, AR, AP, inventory).' },
+    },
+    {
+      name: 'reconciliationFrequency',
+      type: 'select',
+      options: [
+        { label: 'Monthly', value: 'monthly' },
+        { label: 'Quarterly', value: 'quarterly' },
+        { label: 'Annual', value: 'annual' },
+        { label: 'Not Required', value: 'none' },
+      ],
+      admin: { description: 'How often the account must be reconciled.' },
+    },
+    {
+      name: 'isCashFlowRelevant',
+      type: 'checkbox',
+      defaultValue: false,
+      admin: { description: 'The account affects the cash flow statement.' },
+    },
+    {
+      name: 'closesAtPeriodEnd',
+      type: 'checkbox',
+      defaultValue: false,
+      admin: { description: 'The account closes to retained earnings at period end (P&L accounts only).' },
+    },
     {
       name: 'tags',
       type: 'array',

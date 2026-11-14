@@ -11,6 +11,8 @@ import * as migration_20261114_103541_fold_payments_into_transactions from './20
 import * as migration_20261114_104008_policy_versions_native from './20261114_104008_policy_versions_native';
 import * as migration_20261114_104240_fiscal_period_snapshots_native from './20261114_104240_fiscal_period_snapshots_native';
 import * as migration_20261114_104713_user_role_assignments from './20261114_104713_user_role_assignments';
+import * as migration_20261114_110442_fold_committee_members_and_posting_rules from './20261114_110442_fold_committee_members_and_posting_rules';
+import * as migration_20261114_110717_remove_payment_methods from './20261114_110717_remove_payment_methods';
 
 export const migrations = [
   {
@@ -76,6 +78,16 @@ export const migrations = [
   {
     up: migration_20261114_104713_user_role_assignments.up,
     down: migration_20261114_104713_user_role_assignments.down,
-    name: '20261114_104713_user_role_assignments'
+    name: '20261114_104713_user_role_assignments',
+  },
+  {
+    up: migration_20261114_110442_fold_committee_members_and_posting_rules.up,
+    down: migration_20261114_110442_fold_committee_members_and_posting_rules.down,
+    name: '20261114_110442_fold_committee_members_and_posting_rules',
+  },
+  {
+    up: migration_20261114_110717_remove_payment_methods.up,
+    down: migration_20261114_110717_remove_payment_methods.down,
+    name: '20261114_110717_remove_payment_methods'
   },
 ];

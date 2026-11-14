@@ -65,10 +65,72 @@ export const AuditCommittees: CollectionConfig = {
       defaultValue: 'active',
     },
     {
+      // The roster IS part of the committee: a member row had no life apart from its committee and the
+      // two were linked in both directions (committee.members ⇄ member.committee). One array now.
       name: 'members',
-      type: 'relationship',
-      relationTo: 'audit-committee-members',
-      hasMany: true,
+      type: 'array',
+      admin: { description: 'The committee roster (formerly the audit-committee-members collection).' },
+      fields: [
+        {
+          name: 'memberName',
+          type: 'text',
+          required: true,
+        },
+        {
+          name: 'title',
+          type: 'text',
+        },
+        {
+          name: 'affiliation',
+          type: 'select',
+          options: [
+            { label: 'Internal', value: 'internal' },
+            { label: 'External', value: 'external' },
+            { label: 'Independent', value: 'independent' },
+          ],
+          required: true,
+        },
+        {
+          name: 'appointedDate',
+          type: 'date',
+          required: true,
+          defaultValue: () => new Date().toISOString(),
+        },
+        {
+          name: 'termEndDate',
+          type: 'date',
+        },
+        {
+          name: 'role',
+          type: 'select',
+          options: [
+            { label: 'Chair', value: 'chair' },
+            { label: 'Vice Chair', value: 'vice-chair' },
+            { label: 'Member', value: 'member' },
+            { label: 'Financial Expert', value: 'financial-expert' },
+          ],
+        },
+        {
+          name: 'expertise',
+          type: 'array',
+          fields: [
+            {
+              name: 'area',
+              type: 'text',
+            },
+          ],
+        },
+        {
+          name: 'status',
+          type: 'select',
+          options: [
+            { label: 'Active', value: 'active' },
+            { label: 'Resigned', value: 'resigned' },
+            { label: 'Removed', value: 'removed' },
+          ],
+          defaultValue: 'active',
+        },
+      ],
     },
   ],
 }

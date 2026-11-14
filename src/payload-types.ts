@@ -97,7 +97,6 @@ export interface Config {
     activities: Activity;
     'ai-suggestions': AiSuggestion;
     'api-audit-events': ApiAuditEvent;
-    'audit-committee-members': AuditCommitteeMember;
     'audit-committee-minutes': AuditCommitteeMinute;
     'audit-committees': AuditCommittee;
     'audit-events': AuditEvent;
@@ -166,7 +165,6 @@ export interface Config {
     'fixed-assets': FixedAsset;
     'fx-transactions': FxTransaction;
     'gl-accounts': GlAccount;
-    'gl-posting-rules': GlPostingRule;
     'gl-postings': GlPosting;
     'goods-receipts': GoodsReceipt;
     'government-grants': GovernmentGrant;
@@ -208,7 +206,6 @@ export interface Config {
     pages: Page;
     parties: Party;
     'payment-allocations': PaymentAllocation;
-    'payment-methods': PaymentMethod;
     'payment-runs': PaymentRun;
     'payroll-runs': PayrollRun;
     'performance-obligations': PerformanceObligation;
@@ -334,7 +331,6 @@ export interface Config {
     activities: ActivitiesSelect<false> | ActivitiesSelect<true>;
     'ai-suggestions': AiSuggestionsSelect<false> | AiSuggestionsSelect<true>;
     'api-audit-events': ApiAuditEventsSelect<false> | ApiAuditEventsSelect<true>;
-    'audit-committee-members': AuditCommitteeMembersSelect<false> | AuditCommitteeMembersSelect<true>;
     'audit-committee-minutes': AuditCommitteeMinutesSelect<false> | AuditCommitteeMinutesSelect<true>;
     'audit-committees': AuditCommitteesSelect<false> | AuditCommitteesSelect<true>;
     'audit-events': AuditEventsSelect<false> | AuditEventsSelect<true>;
@@ -403,7 +399,6 @@ export interface Config {
     'fixed-assets': FixedAssetsSelect<false> | FixedAssetsSelect<true>;
     'fx-transactions': FxTransactionsSelect<false> | FxTransactionsSelect<true>;
     'gl-accounts': GlAccountsSelect<false> | GlAccountsSelect<true>;
-    'gl-posting-rules': GlPostingRulesSelect<false> | GlPostingRulesSelect<true>;
     'gl-postings': GlPostingsSelect<false> | GlPostingsSelect<true>;
     'goods-receipts': GoodsReceiptsSelect<false> | GoodsReceiptsSelect<true>;
     'government-grants': GovernmentGrantsSelect<false> | GovernmentGrantsSelect<true>;
@@ -445,7 +440,6 @@ export interface Config {
     pages: PagesSelect<false> | PagesSelect<true>;
     parties: PartiesSelect<false> | PartiesSelect<true>;
     'payment-allocations': PaymentAllocationsSelect<false> | PaymentAllocationsSelect<true>;
-    'payment-methods': PaymentMethodsSelect<false> | PaymentMethodsSelect<true>;
     'payment-runs': PaymentRunsSelect<false> | PaymentRunsSelect<true>;
     'payroll-runs': PayrollRunsSelect<false> | PayrollRunsSelect<true>;
     'performance-obligations': PerformanceObligationsSelect<false> | PerformanceObligationsSelect<true>;
@@ -1040,6 +1034,22 @@ export interface GlAccount {
   status?: ('active' | 'inactive' | 'locked') | null;
   description?: string | null;
   isTaxAccount?: boolean | null;
+  /**
+   * The account must be reconciled periodically (bank, AR, AP, inventory).
+   */
+  requiresReconciliation?: boolean | null;
+  /**
+   * How often the account must be reconciled.
+   */
+  reconciliationFrequency?: ('monthly' | 'quarterly' | 'annual' | 'none') | null;
+  /**
+   * The account affects the cash flow statement.
+   */
+  isCashFlowRelevant?: boolean | null;
+  /**
+   * The account closes to retained earnings at period end (P&L accounts only).
+   */
+  closesAtPeriodEnd?: boolean | null;
   tags?:
     | {
         tag?: string | null;
@@ -5769,55 +5779,6 @@ export interface ApiAuditEvent {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-committee-members".
- */
-export interface AuditCommitteeMember {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  committee: string | AuditCommittee;
-  memberName: string;
-  title?: string | null;
-  affiliation: 'internal' | 'external' | 'independent';
-  appointedDate: string;
-  termEndDate?: string | null;
-  role?: ('chair' | 'vice-chair' | 'member' | 'financial-expert') | null;
-  expertise?:
-    | {
-        area?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  status?: ('active' | 'resigned' | 'removed') | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-committees".
- */
-export interface AuditCommittee {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  name: string;
-  entity: string | LegalEntity;
-  charter?: (string | null) | Media;
-  establishedDate: string;
-  meetingFrequency: 'quarterly' | 'semi-annual' | 'annual' | 'as-needed';
-  status?: ('active' | 'inactive' | 'dissolved') | null;
-  members?: (string | AuditCommitteeMember)[] | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "audit-committee-minutes".
  */
 export interface AuditCommitteeMinute {
@@ -6032,6 +5993,47 @@ export interface AuditCommitteeMinute {
    */
   minutesDocument?: (string | null) | Media;
   confidentiality?: ('confidential' | 'internal' | 'public') | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-committees".
+ */
+export interface AuditCommittee {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  name: string;
+  entity: string | LegalEntity;
+  charter?: (string | null) | Media;
+  establishedDate: string;
+  meetingFrequency: 'quarterly' | 'semi-annual' | 'annual' | 'as-needed';
+  status?: ('active' | 'inactive' | 'dissolved') | null;
+  /**
+   * The committee roster (formerly the audit-committee-members collection).
+   */
+  members?:
+    | {
+        memberName: string;
+        title?: string | null;
+        affiliation: 'internal' | 'external' | 'independent';
+        appointedDate: string;
+        termEndDate?: string | null;
+        role?: ('chair' | 'vice-chair' | 'member' | 'financial-expert') | null;
+        expertise?:
+          | {
+              area?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        status?: ('active' | 'resigned' | 'removed') | null;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12595,90 +12597,6 @@ export interface FiscalCalendar {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "gl-posting-rules".
- */
-export interface GlPostingRule {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Account classification for validation & reporting
-   */
-  accountType:
-    | 'asset'
-    | 'current-asset'
-    | 'fixed-asset'
-    | 'accumulated-depreciation'
-    | 'liability'
-    | 'current-liability'
-    | 'long-term-liability'
-    | 'equity'
-    | 'retained-earnings'
-    | 'common-stock'
-    | 'revenue'
-    | 'operating-revenue'
-    | 'expense'
-    | 'operating-expense'
-    | 'cogs'
-    | 'administrative-expense'
-    | 'other-income'
-    | 'other-expense'
-    | 'gain'
-    | 'loss';
-  /**
-   * Debit-normal or credit-normal per double-entry rules
-   */
-  normalPolarity: 'debit' | 'credit';
-  /**
-   * Whether account appears on balance sheet or P&L
-   */
-  balanceSheetCategory: 'balance-sheet' | 'pl' | 'retained-earnings';
-  /**
-   * Check if account must be reconciled monthly (e.g., bank, AR, AP, inventory)
-   */
-  requiresReconciliation?: boolean | null;
-  /**
-   * How often account must be reconciled
-   */
-  reconciliationFrequency?: ('monthly' | 'quarterly' | 'annual' | 'none') | null;
-  /**
-   * Check if account affects cash flow statement
-   */
-  isCashFlowRelevant?: boolean | null;
-  /**
-   * Check if account closes to retained earnings at period-end (P&L accounts only)
-   */
-  closesAtPeriodEnd?: boolean | null;
-  /**
-   * Link to GL accounts using this rule set
-   */
-  relatedGLAccounts?: (string | GlAccount)[] | null;
-  /**
-   * Accounting guidance for this account type
-   */
-  notes?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "gl-postings".
  */
 export interface GlPosting {
@@ -15039,41 +14957,6 @@ export interface PaymentAllocation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "payment-methods".
- */
-export interface PaymentMethod {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  stripePaymentMethodId: string;
-  type: 'card' | 'bank_account';
-  /**
-   * Card brand (auto-populated from Stripe)
-   */
-  cardBrand?: ('visa' | 'mastercard' | 'amex' | 'discover') | null;
-  cardLast4?: string | null;
-  cardExpMonth?: number | null;
-  cardExpYear?: number | null;
-  bankName?: string | null;
-  bankLast4?: string | null;
-  isDefault?: boolean | null;
-  isActive?: boolean | null;
-  /**
-   * Whether this was populated from a Stripe webhook
-   */
-  createdViaStripe?: boolean | null;
-  /**
-   * When to next retry charging this payment method
-   */
-  nextRetryAt?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -19571,30 +19454,6 @@ export interface ApiAuditEventsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-committee-members_select".
- */
-export interface AuditCommitteeMembersSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  committee?: T;
-  memberName?: T;
-  title?: T;
-  affiliation?: T;
-  appointedDate?: T;
-  termEndDate?: T;
-  role?: T;
-  expertise?:
-    | T
-    | {
-        area?: T;
-        id?: T;
-      };
-  status?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "audit-committee-minutes_select".
  */
 export interface AuditCommitteeMinutesSelect<T extends boolean = true> {
@@ -19672,7 +19531,24 @@ export interface AuditCommitteesSelect<T extends boolean = true> {
   establishedDate?: T;
   meetingFrequency?: T;
   status?: T;
-  members?: T;
+  members?:
+    | T
+    | {
+        memberName?: T;
+        title?: T;
+        affiliation?: T;
+        appointedDate?: T;
+        termEndDate?: T;
+        role?: T;
+        expertise?:
+          | T
+          | {
+              area?: T;
+              id?: T;
+            };
+        status?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22068,31 +21944,16 @@ export interface GlAccountsSelect<T extends boolean = true> {
   status?: T;
   description?: T;
   isTaxAccount?: T;
+  requiresReconciliation?: T;
+  reconciliationFrequency?: T;
+  isCashFlowRelevant?: T;
+  closesAtPeriodEnd?: T;
   tags?:
     | T
     | {
         tag?: T;
         id?: T;
       };
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "gl-posting-rules_select".
- */
-export interface GlPostingRulesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  accountType?: T;
-  normalPolarity?: T;
-  balanceSheetCategory?: T;
-  requiresReconciliation?: T;
-  reconciliationFrequency?: T;
-  isCashFlowRelevant?: T;
-  closesAtPeriodEnd?: T;
-  relatedGLAccounts?: T;
-  notes?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24069,28 +23930,6 @@ export interface PaymentAllocationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "payment-methods_select".
- */
-export interface PaymentMethodsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  stripePaymentMethodId?: T;
-  type?: T;
-  cardBrand?: T;
-  cardLast4?: T;
-  cardExpMonth?: T;
-  cardExpYear?: T;
-  bankName?: T;
-  bankLast4?: T;
-  isDefault?: T;
-  isActive?: T;
-  createdViaStripe?: T;
-  nextRetryAt?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27790,7 +27629,6 @@ export interface TaskCreateCollectionExport {
       | 'activities'
       | 'ai-suggestions'
       | 'api-audit-events'
-      | 'audit-committee-members'
       | 'audit-committee-minutes'
       | 'audit-committees'
       | 'audit-events'
@@ -27859,7 +27697,6 @@ export interface TaskCreateCollectionExport {
       | 'fixed-assets'
       | 'fx-transactions'
       | 'gl-accounts'
-      | 'gl-posting-rules'
       | 'gl-postings'
       | 'goods-receipts'
       | 'government-grants'
@@ -27901,7 +27738,6 @@ export interface TaskCreateCollectionExport {
       | 'pages'
       | 'parties'
       | 'payment-allocations'
-      | 'payment-methods'
       | 'payment-runs'
       | 'payroll-runs'
       | 'performance-obligations'

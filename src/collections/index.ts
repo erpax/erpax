@@ -29,7 +29,6 @@ export { Categories } from '@/collections/categories'
 // Billing Collections
 export { Invoices } from '@/collections/invoices'
 export { InvoiceLines } from '@/collections/invoice-lines'
-export { PaymentMethods } from '@/collections/payment-methods'
 export { SubscriptionPlans } from '@/collections/subscription-plans'
 export { Subscriptions } from '@/collections/subscriptions'
 
@@ -41,7 +40,6 @@ export { Items } from '@/collections/items'
 
 // GL Core
 export { default as GLAccounts } from '@/collections/gl-accounts'
-export { GLPostingRules } from '@/collections/gl-posting-rules'
 export { default as JournalEntries } from '@/collections/journal-entries'
 export { default as GLPostings } from '@/collections/gl-postings'
 
@@ -230,7 +228,6 @@ export { RemediationPlans } from '@/collections/remediation-plans'
 
 // Phase 4: Audit Governance & Reporting (5 collections)
 export { AuditCommittees } from '@/collections/audit-committees'
-export { AuditCommitteeMembers } from '@/collections/audit-committee-members'
 export { BoardActions } from '@/collections/board-actions'
 export { ManagementCertifications } from '@/collections/management-certifications'
 export { RegulatoryReports } from '@/collections/regulatory-reports'
