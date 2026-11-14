@@ -38,7 +38,7 @@ export async function flagged<T>(req: PayloadRequest, flag: Flag, write: (contex
 }
 
 /** The request-scoped values `remembered` may hold. */
-type Remembered = 'ability' | 'tenantApps'
+type Remembered = 'ability' | 'tenantApps' | 'groupsAround'
 
 /**
  * Compute a value once per request and keep it on the hook context: every access function and

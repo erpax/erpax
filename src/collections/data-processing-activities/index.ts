@@ -9,7 +9,7 @@
  * @compliance GDPR Art.30(1) records-controller
  * @compliance GDPR Art.30(2) records-processor
  * @compliance GDPR Art.5(1)(e) storage-limitation
- * @compliance ISO-27701:2019 §6.3.1 records-of-processing
+ * @compliance ISO-27701:2025 records-of-processing
  * @audit ISO-19011:2018 audit-trail ropa-evidence
  * @security ISO-27001 A.5.34 privacy-and-pii
  */

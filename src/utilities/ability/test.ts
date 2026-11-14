@@ -138,3 +138,18 @@ describe('ability — scopes combine', () => {
     expect(or(a, b)).toEqual({ or: [a, b] })
   })
 })
+
+describe('restrictSubjects — a role held in one app stays in it', () => {
+  it('turns "all" into the app\'s collections and drops the rest', async () => {
+    const { defineAbility, restrictSubjects } = await import('@/utilities/ability')
+    const wide = defineAbility((can) => {
+      can('manage', 'all')
+      can('read', 'lots')
+    })
+    const sales = restrictSubjects(wide, ['orders', 'parties'])
+    expect(sales.permits('update', 'orders')).toBe(true)
+    expect(sales.permits('delete', 'parties')).toBe(true)
+    expect(sales.permits('update', 'lots')).toBe(false)
+    expect(sales.permits('read', 'employees')).toBe(false)
+  })
+})

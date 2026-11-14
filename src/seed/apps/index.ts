@@ -11,7 +11,7 @@
  * @see src/packages/engine/index.ts (appTenants) · src/collections/tenants (app, apps)
  */
 import { APPS } from '@/packages'
-import { appTenants } from '@/packages/engine'
+import { appAddress, appTenants, roleAddress } from '@/packages/engine'
 
 export interface TenantRest {
   find(args: Record<string, unknown>): Promise<unknown>
@@ -43,6 +43,52 @@ export const loadAppTenants = async (rest: TenantRest, rows: readonly AppTenantR
     else {
       await rest.update({ collection: 'tenants', id: stored.id, data: { name: row.name, app: row.app, apps: row.apps, ...(row.domain ? { domain: row.domain } : {}) } })
       result.updated++
+    }
+  }
+  return result
+}
+
+/** The tenant roles every app has, as groups: `<role>@<app>.<domain>` holds the role in that app. */
+export const APP_ROLES = ['admin', 'manager', 'user'] as const
+
+export interface AppGroupRow {
+  /** The app tenant the group belongs to (its slug). */
+  readonly tenant: string
+  readonly name: string
+  readonly email: string
+  readonly kind: 'team' | 'security'
+}
+
+/**
+ * The groups of every app, computed: the app's own group (`<app>@<domain>` — the people who have the
+ * app) and one security group per role (`<role>@<app>.<domain>` — the people who hold it there).
+ */
+export const appGroupRows = (domain = 'erpax.com'): AppGroupRow[] =>
+  APPS.flatMap((app) => [
+    { tenant: app.slug, name: app.title, email: appAddress(app.slug, domain), kind: 'team' as const },
+    ...APP_ROLES.map((role) => ({ tenant: app.slug, name: `${app.title} ${role}`, email: roleAddress(role, app.slug, domain), kind: 'security' as const })),
+  ])
+
+/** Create the app groups that are missing; a group is found by its tenant and address. */
+export const loadAppGroups = async (rest: TenantRest, rows: readonly AppGroupRow[] = appGroupRows()): Promise<{ created: number; unchanged: number; skipped: number }> => {
+  const result = { created: 0, unchanged: 0, skipped: 0 }
+  const tenants = new Map<string, string | number>()
+  for (const row of rows) {
+    if (!tenants.has(row.tenant)) {
+      const found = (await rest.find({ collection: 'tenants', where: { slug: { equals: row.tenant } }, limit: 1, depth: 0 })) as { docs?: Array<{ id: string | number }> }
+      const id = found.docs?.[0]?.id
+      if (id !== undefined) tenants.set(row.tenant, id)
+    }
+    const tenant = tenants.get(row.tenant)
+    if (tenant === undefined) {
+      result.skipped++ // the app tenant is not there: load the tenants first
+      continue
+    }
+    const exists = (await rest.find({ collection: 'groups', where: { and: [{ tenant: { equals: tenant } }, { email: { equals: row.email } }] }, limit: 1, depth: 0 })) as { docs?: unknown[] }
+    if (exists.docs?.length) result.unchanged++
+    else {
+      await rest.create({ collection: 'groups', data: { name: row.name, email: row.email, kind: row.kind, tenant } })
+      result.created++
     }
   }
   return result

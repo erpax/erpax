@@ -262,3 +262,19 @@ export const defineAbility = (define: (can: Ability['can'], cannot: Ability['can
   define(ability.can.bind(ability), ability.cannot.bind(ability), ability)
   return ability
 }
+
+/**
+ * The same ability, held only over these subjects: `all` becomes the list, any other rule keeps only
+ * the subjects in it, and a rule left with none is dropped. This is how a role held in one app
+ * (`manager@sales`) stays inside that app's collections.
+ */
+export const restrictSubjects = (ability: Ability, allowed: readonly Subject[]): Ability => {
+  const inside = new Set(allowed)
+  const restricted = new Ability()
+  for (const rule of ability.rules) {
+    const subjects = rule.subjects.flatMap((subject) => (subject === 'all' ? [...inside] : inside.has(subject) ? [subject] : []))
+    if (subjects.length === 0) continue
+    restricted.rules.push({ ...rule, subjects })
+  }
+  return restricted
+}

@@ -78,6 +78,33 @@ export const appOfHost = (host: string | null | undefined, apps: readonly App[])
   return apps.find((app) => app.slug === label)
 }
 
+/**
+ * An app's address: `<app>@<domain>`. The app is presented twice, as a server at `<app>.<domain>` and
+ * as a group at `<app>@<domain>` (Google's model: an address is a group, its members are the people
+ * who have the app). Same label, same domain, so the host and the address always name the same app.
+ */
+export const appAddress = (app: string, domain: string): string => `${app}@${domain}`.toLowerCase()
+
+/** The app an address is for: the local part of `<app>@<domain>`, when it names an app. */
+export const appOfAddress = (address: string | null | undefined, apps: readonly App[]): App | undefined => {
+  const local = (address ?? '').toLowerCase().split('@')
+  return local.length === 2 ? apps.find((app) => app.slug === local[0]) : undefined
+}
+
+/**
+ * A role's address inside an app: `<role>@<app>`, in full `<role>@<app>.<domain>` (`manager@sales.erpax.com`).
+ * The group at that address is the role: being in it is holding the role, in that app only.
+ */
+export const roleAddress = (role: string, app: string, domain?: string): string => `${role}@${app}${domain ? `.${domain}` : ''}`.toLowerCase()
+
+/** The role and app an address names — `manager@sales` and `manager@sales.erpax.com` alike — when the app is one of these. */
+export const parseRoleAddress = (address: string | null | undefined, apps: readonly App[]): { role: string; app: App } | undefined => {
+  const parts = (address ?? '').trim().toLowerCase().split('@')
+  if (parts.length !== 2 || !parts[0]) return undefined
+  const app = apps.find((candidate) => candidate.slug === parts[1]!.split('.')[0])
+  return app ? { role: parts[0], app } : undefined
+}
+
 type Shape = Pick<CollectionConfig, 'slug' | 'fields'>
 
 /** Every relationship target in a list of fields, however deeply nested. */

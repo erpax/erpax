@@ -28,6 +28,7 @@
  */
 import type { CollectionConfig, Condition, Payload } from 'payload'
 import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantRead'
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { classifyTaxId } from '@/hooks/collections/parties/classifyTaxId'
@@ -50,7 +51,7 @@ const Parties: CollectionConfig = {
     group: 'Billing',
   },
   enableQueryPresets: true,
-  access: tenantMasterDataAccess(),
+  access: withAbility(tenantMasterDataAccess(), 'parties'),
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [

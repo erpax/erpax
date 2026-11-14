@@ -108,6 +108,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     const domain = at >= 0 ? process.argv[at + 1] : undefined
     const seedApps = await import('@/seed/apps')
     console.log(JSON.stringify({ apps: await seedApps.loadAppTenants(sdk as unknown as Rest, seedApps.appTenantRows(domain)) }))
+    // the groups of each app and role (<app>@<domain>, <role>@<app>.<domain>) — roles are held by being in them
+    console.log(JSON.stringify({ groups: await seedApps.loadAppGroups(sdk as unknown as Rest, seedApps.appGroupRows(domain)) }))
   }
   if (redirects) {
     const rows = JSON.parse(readFileSync(redirects, 'utf8')) as RedirectRow[]

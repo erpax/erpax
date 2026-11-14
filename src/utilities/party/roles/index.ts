@@ -22,6 +22,7 @@ import type { Payload, PayloadRequest } from 'payload'
 
 import { addRole, removeRole, rolesOn, usersWithRole, type RoleCallbacks } from '@/utilities/nist/incits/359'
 import type { ScopeResourceCollection } from '@/utilities/nist/incits/359'
+import { conflictMessage, partyConflicts } from '@/utilities/roles/separation'
 
 /** The parties each document type has. A status is read per document type AND per party. */
 export const PARTY_ROLES = {
@@ -56,6 +57,10 @@ export async function assignParty(payload: Payload, req: PayloadRequest, args: {
   if (!(allowed as readonly string[]).includes(args.role)) {
     throw new Error(`party: "${args.role}" is not a party to a ${String(args.resource.documentType ?? 'order')} (its parties: ${allowed.join(', ')})`)
   }
+  // separation of duties: the same person may not be the requester and the approver of one document
+  const heldHere = (await partiesOf(payload, req, args.resource)).filter((party) => party.userIds.includes(args.userId)).map((party) => party.role)
+  const conflicts = partyConflicts([...heldHere, args.role])
+  if (conflicts.length > 0) throw new Error(conflictMessage(conflicts))
   await addRole(payload, req, { userId: args.userId, roleName: args.role, resource: { collection: args.resource.collection, id: args.resource.id }, callbacks: args.callbacks })
 }
 
