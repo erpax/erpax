@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "typescript": "5.9.3",
-    "zod": "3.25.76"
+    "zod": "4.6.6"
   },
   "keywords": [
     "uuid",
