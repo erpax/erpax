@@ -8,7 +8,7 @@
  *
  * @see ../atom -- ../uuid/matrix -- ../quantum/app -- ./SKILL.md
  */
-import { nodeOf, neighborsOf } from '@/uuid/matrix'
+import { nodeOf, neighborsOf } from '@/utilities/uuid/matrix'
 
 export interface App {
   readonly name: string

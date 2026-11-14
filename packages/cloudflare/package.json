@@ -37,7 +37,8 @@
   },
   "erpax": {
     "closureCeiling": 15,
-    "sizeCeilingKb": 101
+    "sizeCeilingKb": 101,
+    "entry": "utilities/cloudflare"
   },
   "dependencies": {
     "zod": "3.25.76"

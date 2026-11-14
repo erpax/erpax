@@ -13,23 +13,23 @@
 import type { Metadata } from 'next'
 
 import { RelatedPosts } from '@/blocks'
-import { PayloadRedirects } from '@/payload/redirect'
+import { PayloadRedirects } from '@/components/payload/redirect'
 import configPromise from '@payload-config'
 import { getPayload, type TypedLocale } from 'payload'
 import { draftMode, headers } from 'next/headers'
 import React, { cache } from 'react'
-import RichText from '@/rich/text'
+import RichText from '@/components/rich/text'
 
-import type { Post } from '@/types'
+import type { Post } from '@/utilities/types'
 
-import { PostHero } from '@/heros/post/hero'
-import { generateMeta } from '@/generate/meta'
+import { PostHero } from '@/components/heros/post/hero'
+import { generateMeta } from '@/utilities/generate/meta'
 import PageClient from './page.client'
-import { LivePreviewListener } from '@/live/preview/listener'
+import { LivePreviewListener } from '@/components/live/preview/listener'
 import { routing } from '@/i18n/routing'
 import type { SupportedLocale } from '@/i18n/localization'
-import { resolvePublicSiteUrlFromHeaders as resolvePublicSiteUrl } from '@/rfc/3986'
-import { getTenantFromRequest } from '@/get/tenant/from/request'
+import { resolvePublicSiteUrlFromHeaders as resolvePublicSiteUrl } from '@/utilities/rfc/3986'
+import { getTenantFromRequest } from '@/utilities/get/tenant/from/request'
 
 export async function generateStaticParams() {
   // During build/CI, the D1 database may not have tables yet.

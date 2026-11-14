@@ -13,18 +13,18 @@
 
 import type { Metadata } from 'next'
 
-import { cn } from '@/ui'
+import { cn } from '@/components/ui'
 import { GeistMono } from 'geist/font/mono'
 import { GeistSans } from 'geist/font/sans'
 import React from 'react'
 
-import { Providers } from '@/provider'
-import { InitTheme } from '@/providers/theme/init/theme'
-import { mergeOpenGraph } from '@/merge/open/graph'
+import { Providers } from '@/components/provider'
+import { InitTheme } from '@/components/providers/theme/init/theme'
+import { mergeOpenGraph } from '@/utilities/merge/open/graph'
 
 import './globals.css'
 import './css/app.scss'
-import { getServerSideURL } from '@/rfc/3986'
+import { getServerSideURL } from '@/utilities/rfc/3986'
 import { headers } from 'next/headers'
 
 export default async function FrontendRootLayout({ children }: { children: React.ReactNode }) {

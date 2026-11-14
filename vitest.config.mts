@@ -2,7 +2,7 @@ import { defineConfig, configDefaults } from 'vitest/config'
 import react from '@vitejs/plugin-react'
 import { readdirSync, statSync } from 'node:fs'
 import { join, relative, sep } from 'node:path'
-import { needsPayload } from './src/test/index'
+import { needsPayload } from './src/utilities/test'
 
 /**
  * Vitest Configuration — pure/payload PROJECT SPLIT.
@@ -46,7 +46,7 @@ const walk = (dir: string, acc: string[] = []): string[] => {
 // version manifest + build reproducibility). A suite outside the runner's globs is a check
 // that cannot fire ([[rules]]/unraised), so the release gate is discovered here too.
 const allSuites = [...walk(join(ROOT, 'src')), ...walk(join(ROOT, 'packages'))]
-// Which suites touch the Payload runtime is decided by `needsPayload` in src/test — the same answer
+// Which suites touch the Payload runtime is decided by `needsPayload` in src/utilities/test — the same answer
 // `erpax test waves` groups its batches by, so the routing here and the grouping there cannot drift.
 const integration: string[] = []
 const unit: string[] = []
@@ -70,7 +70,7 @@ const shared = {
   // CSS is a diamond facet (@/css/load-hook) — stub .css when Payload UI is pulled into unit suites.
   // Vitest 4: execArgv is top-level (poolOptions removed).
   pool: 'forks' as const,
-  execArgv: ['--import', './src/css/load-hook.mjs'],
+  execArgv: ['--import', './src/components/css/load-hook.mjs'],
   // next-intl is INLINED so Vite resolves its imports; `next` ships no `exports` map, so a
   // bare `import 'next/navigation'` is unresolvable under Node's ESM loader (no extension search)
   // and every suite that reaches a next-intl navigation helper died on ERR_MODULE_NOT_FOUND —

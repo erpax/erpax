@@ -1,9 +1,9 @@
 import { describe, it, expect } from 'vitest'
-import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { SanitizedConfig } from 'payload'
-import { loadCorpus, overSdk, parseArgs, skillReader, type Rest } from '@/seed/content/load'
+import { pageRows } from '@/seed/content'
+import { loadCorpus, overSdk, parseArgs, seededDocuments, type Rest } from '@/seed/content/load'
 
 /** An in-memory REST stand-in that records what crossed the wire. */
 function fakeSdk() {
@@ -28,18 +28,6 @@ describe('seed/content/load — the SDK seen as the Local API slice the loaders 
     expect(local.config).toBe(config)
   })
 
-  it('reads a SKILL document from a checkout, and nothing for an atom without one', () => {
-    const cwd = mkdtempSync(join(tmpdir(), 'load-'))
-    mkdirSync(join(cwd, 'src', 'law'), { recursive: true })
-    writeFileSync(join(cwd, 'src', 'law', 'SKILL.md'), '# law — one law')
-    const read = skillReader(cwd)
-    // no law sentence, no cited proof, no tests: nothing to show, so nothing is appended
-    expect(read('law')).toBe('# law — one law')
-    writeFileSync(join(cwd, 'src', 'law', 'test.ts'), "it('a', () => {})\nit('b', () => {})\n")
-    expect(read('law')).toMatch(/## Proof[\s\S]*No formal proof is cited[\s\S]*2 test case\(s\)/)
-    expect(read('ghost')).toBeUndefined()
-  })
-
   it('parses its flags, and treats a flag with no value as absent', () => {
     expect(parseArgs(['--url', 'https://h', '--packs', 'rules, law', '--tenant', 't1'])).toEqual({ url: 'https://h', packs: new Set(['rules', 'law']), tenant: 't1', seed: undefined, redirects: undefined })
     expect(parseArgs(['--url', '--packs', 'rules'])).toEqual({ url: undefined, packs: new Set(['rules']), tenant: undefined, seed: undefined, redirects: undefined })
@@ -58,5 +46,32 @@ describe('seed/content/load — a pack loaded over REST', () => {
     const { sdk, calls } = fakeSdk()
     await loadCorpus(sdk, config, nodes, read, { packs: new Set(['nothing']) })
     expect(calls.map((c) => c.op)).toEqual(['find'])
+  })
+})
+
+describe('seed/content/load — the committed document seed', () => {
+  const documents = JSON.parse(readFileSync(join(process.cwd(), 'src', 'seed', 'content', 'fixtures', 'documents.json'), 'utf8')) as Record<string, string>
+
+  it('is read as nodes and a reader, and an unknown path has no document', () => {
+    const { nodes, read } = seededDocuments({ a: '# a', 'a/b': '# b' })
+    expect(nodes).toEqual([{ path: 'a' }, { path: 'a/b' }])
+    expect(read('a/b')).toBe('# b')
+    expect(read('ghost')).toBeUndefined()
+  })
+
+  it('every seeded document becomes a page row with a body, a title and a unique slug', () => {
+    const { nodes, read } = seededDocuments(documents)
+    const rows = pageRows(nodes, read)
+    expect(rows.length).toBe(Object.keys(documents).length)
+    expect(rows.length).toBeGreaterThan(0)
+    expect(new Set(rows.map((r) => r.slug)).size).toBe(rows.length)
+    for (const r of rows) {
+      expect(r.markdown.length).toBeGreaterThan(0)
+      expect(r.title.length).toBeGreaterThan(0)
+    }
+  })
+
+  it('no seeded path is still a folder in the tree — a document has one home', () => {
+    for (const path of Object.keys(documents)) expect(existsSync(join(process.cwd(), 'src', path, 'SKILL.md'))).toBe(false)
   })
 })

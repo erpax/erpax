@@ -1,10 +1,10 @@
-import { cn } from '@/ui'
+import { cn } from '@/components/ui'
 import React from 'react'
-import RichText from '@/rich/text'
+import RichText from '@/components/rich/text'
 
-import type { ContentBlock as ContentBlockProps } from '@/types'
+import type { ContentBlock as ContentBlockProps } from '@/utilities/types'
 
-import { CMSLink } from '@/link/component'
+import { CMSLink } from '@/components/link/component'
 
 export const ContentBlock: React.FC<ContentBlockProps> = (props) => {
   const { columns } = props

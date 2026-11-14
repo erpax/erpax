@@ -37,7 +37,8 @@
   },
   "erpax": {
     "closureCeiling": 1,
-    "sizeCeilingKb": 3
+    "sizeCeilingKb": 3,
+    "entry": "utilities/commerce"
   },
   "keywords": [
     "commerce",

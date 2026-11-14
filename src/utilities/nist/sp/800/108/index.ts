@@ -1,0 +1,23 @@
+/**
+ * Public surface of the NIST SP 800-108 standards module.
+ *
+ * @standard NIST SP-800-108 key-derivation-function
+ */
+export {
+  deriveSecretFrom,
+  deriveSecretFromPayloadSecret,
+  internalSecretPurpose,
+  type InternalSecretPurpose,
+  horoPosition,
+  horoLabel,
+  advanceKey,
+  rotateKey,
+  foldDimensions,
+  opposite,
+  merkaba,
+  PYRAMID,
+  INVERTED_PYRAMID,
+  type HoroDirection,
+  type RotateMode,
+  type RotateSpec,
+} from '@/utilities/nist/sp/800/108/kdf'

@@ -8,14 +8,14 @@
  * @security ISO-27001 A.5.16 identity-management
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @compliance SOX §404 internal-controls process-walk-through
- * @see src/testing/test-seed-factory.ts (registerSeedCategory)
+ * @see src/utilities/testing/test-seed-factory.ts (registerSeedCategory)
  */
 
 import { test } from '@playwright/test'
 import { login } from '../../helpers/login'
 import { testUser } from '../../helpers/seedUser'
 import { safeCaptureRoute } from '../../helpers/evidence'
-import { getSeedsByCategory } from '@/testing'
+import { getSeedsByCategory } from '@/utilities/testing'
 
 import '@/plugins/accounting/seeds'
 

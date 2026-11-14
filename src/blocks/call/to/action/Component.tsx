@@ -1,9 +1,9 @@
 import React from 'react'
 
-import type { CallToActionBlock as CTABlockProps } from '@/types'
+import type { CallToActionBlock as CTABlockProps } from '@/utilities/types'
 
-import RichText from '@/rich/text'
-import { CMSLink } from '@/link/component'
+import RichText from '@/components/rich/text'
+import { CMSLink } from '@/components/link/component'
 
 export const CallToActionBlock: React.FC<CTABlockProps> = ({ links, richText }) => {
   return (

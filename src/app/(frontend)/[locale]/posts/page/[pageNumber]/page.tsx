@@ -10,9 +10,9 @@
 
 import type { Metadata } from 'next/types'
 
-import { CollectionArchive } from '@/collection/archive'
-import { PageRange } from '@/page/range'
-import { Pagination } from '@/pagination'
+import { CollectionArchive } from '@/components/collection/archive'
+import { PageRange } from '@/components/page/range'
+import { Pagination } from '@/components/pagination'
 import configPromise from '@payload-config'
 import { getTranslations } from 'next-intl/server'
 import { getPayload, type TypedLocale } from 'payload'

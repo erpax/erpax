@@ -20,8 +20,8 @@ import { redirect } from 'next/navigation'
 import { NextRequest } from 'next/server'
 
 import configPromise from '@payload-config'
-import { apiErrorResponse, ERR } from '@/error'
-import { getPreviewSecret } from '@/get/preview/secret'
+import { apiErrorResponse, ERR } from '@/utilities/error'
+import { getPreviewSecret } from '@/utilities/get/preview/secret'
 
 export type PreviewSearchParams = {
   path: string

@@ -12,7 +12,7 @@ import { PayloadSDK } from '@payloadcms/sdk'
  *
  * @standard ISO/IEC-29119:2022 software-testing system-test-level
  * @rfc 9110 http-semantics status-codes
- * @see src/payload/local/SKILL.md
+ * @see src/components/payload/local/SKILL.md
  */
 const origin = (process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:3000').replace(/\/$/, '')
 const headers = {

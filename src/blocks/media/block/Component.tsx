@@ -1,12 +1,12 @@
 import type { StaticImageData } from 'next/image'
 
-import { cn } from '@/ui'
+import { cn } from '@/components/ui'
 import React from 'react'
-import RichText from '@/rich/text'
+import RichText from '@/components/rich/text'
 
-import type { MediaBlock as MediaBlockProps } from '@/types'
+import type { MediaBlock as MediaBlockProps } from '@/utilities/types'
 
-import { MediaComponent as Media } from '@/media'
+import { MediaComponent as Media } from '@/collections/media'
 
 type Props = MediaBlockProps & {
   breakout?: boolean

@@ -7,7 +7,7 @@
 import type { FieldErrorsImpl } from 'react-hook-form'
 import type { ReactNode } from 'react'
 import React from 'react'
-import { FormItem, Label } from '@/ui'
+import { FormItem, Label } from '@/components/ui'
 import { useTranslations } from 'next-intl'
 import { Error } from '@/blocks/form/error'
 import { Width } from '@/blocks/form/width'

@@ -12,8 +12,8 @@
 import { createLocalReq, getPayload } from 'payload'
 import { seed } from '@/seed'
 import config from '@payload-config'
-import { apiErrorResponse, ERR } from '@/error'
-import { isSuperAdmin } from '@/is/super/admin'
+import { apiErrorResponse, ERR } from '@/utilities/error'
+import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 import { headers } from 'next/headers'
 
 export const maxDuration = 60 // This function can run for a maximum of 60 seconds

@@ -6,7 +6,7 @@ import { withPayload } from '@payloadcms/next/withPayload'
 import createNextIntlPlugin from 'next-intl/plugin'
 
 import { redirects } from './redirects'
-import { PRODUCTION_FOLDS } from './src/deploy/fold'
+import { PRODUCTION_FOLDS } from './src/utilities/deploy/fold'
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request/index.ts')
 
@@ -216,7 +216,7 @@ const nextConfig = {
       const stub = (rel: string) => path.resolve(projectRoot, rel)
       const swap = (pattern: RegExp, rel: string) =>
         webpackConfig.plugins.push(new webpack.NormalModuleReplacementPlugin(pattern, stub(rel)))
-      // Every src-path fold lives in src/deploy/fold, beside a test that re-derives each
+      // Every src-path fold lives in src/utilities/deploy/fold, beside a test that re-derives each
       // pattern against the tree. A pattern is a CLAIM about a path, and the path moves:
       // `matrix.generated.ts` became `matrix/generated.ts` in the 49-rename scalpel pass and
       // the pattern kept naming the old one — so the fold silently stopped folding and ~4 MiB

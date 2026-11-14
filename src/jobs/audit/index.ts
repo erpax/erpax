@@ -10,11 +10,11 @@
  *
  * @standard BG Наредба-Н-18 §Приложение-38 monthly-audit-file
  * @audit ISO-19011:2018 §6.4 audit-evidence
- * @see src/sale/submit-audit-file.ts
+ * @see src/utilities/sale/submit-audit-file.ts
  */
 
 import type { Payload } from 'payload'
-import { submitSalesAuditFile } from '@/sale'
+import { submitSalesAuditFile } from '@/utilities/sale'
 
 /** Prior calendar month as `[periodStart, periodEnd]` ISO strings (UTC). */
 export function priorMonthUtc(now: Date = new Date()): { periodStart: string; periodEnd: string } {

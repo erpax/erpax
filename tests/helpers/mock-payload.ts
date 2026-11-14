@@ -15,7 +15,7 @@
  *
  * @standard ISO/IEC-29119:2022 software-testing test-double
  * @audit ISO-19011:2018 audit-trail test-fixture
- * @see src/testing/test-seed-factory.ts
+ * @see src/utilities/testing/test-seed-factory.ts
  */
 
 import type { Config } from 'payload';

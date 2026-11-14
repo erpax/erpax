@@ -11,14 +11,14 @@
  * @audit ISO-19011:2018 audit-trail visual-evidence
  * @compliance SOX §404 internal-controls process-walk-through
  * @see tests/helpers/evidence.ts
- * @see src/testing/test-seed-factory.ts (registerSeedCategory)
+ * @see src/utilities/testing/test-seed-factory.ts (registerSeedCategory)
  */
 
 import { test } from '@playwright/test'
 import { login } from '../../helpers/login'
 import { testUser } from '../../helpers/seedUser'
 import { safeCaptureRoute } from '../../helpers/evidence'
-import { getSeedsByCategory } from '@/testing'
+import { getSeedsByCategory } from '@/utilities/testing'
 
 // Force registration side-effects to fire by importing the seed barrels.
 import '@/plugins/accounting/seeds'

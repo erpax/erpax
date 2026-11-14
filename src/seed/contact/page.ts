@@ -1,4 +1,4 @@
-import type { Form } from '@/types'
+import type { Form } from '@/utilities/types'
 import { RequiredDataFromCollectionSlug } from 'payload'
 
 type ContactArgs = {

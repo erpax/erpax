@@ -1,4 +1,4 @@
-import { daysBetween } from '@/utility'
+import { daysBetween } from '@/utilities/utility'
 import type { Payload } from 'payload'
 
 /**

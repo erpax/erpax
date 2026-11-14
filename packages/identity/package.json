@@ -37,7 +37,8 @@
   },
   "erpax": {
     "closureCeiling": 10,
-    "sizeCeilingKb": 25
+    "sizeCeilingKb": 25,
+    "entry": "utilities/identity"
   },
   "dependencies": {
     "typescript": "5.9.3",

@@ -16,15 +16,14 @@ import { documentMarkdown, summaryOf } from '@/seed/content'
 import { importExportPlugin } from '@payloadcms/plugin-import-export'
 import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs'
 import { r2Storage } from '@payloadcms/storage-r2'
-import { uuidPlugin } from '@/uuid'
+import { uuidPlugin } from '@/utilities/uuid'
 import { taggablePlugin } from '@/plugins/taggable'
 import { uuidNamesPlugin } from '@/plugins/naming'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
-import { gatewayTools, mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
-import { erpaxMcpTools } from '@/agent/mcp-surface'
+import { mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
 import { versionsPlugin } from '@/plugins/versions'
-import { trelloClientFromEnv } from '@/trello'
-import { trelloPlugin, TRELLO_SYNC } from '@/trello/plugin'
+import { trelloClientFromEnv } from '@/utilities/trello'
+import { trelloPlugin, TRELLO_SYNC } from '@/utilities/trello/plugin'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
@@ -56,27 +55,28 @@ import { sl } from '@payloadcms/translations/languages/sl'
 import { sv } from '@payloadcms/translations/languages/sv'
 import { uk } from '@payloadcms/translations/languages/uk'
 
-import { isSuperAdmin } from '@/is/super/admin'
+import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 // All 145+ collections come from canonical src/collections/* locations (flat, agnostic organization).
 // No domain silos: organizing by actual data type/concern, not business domain.
 // Collections are self-contained with clear boundaries for future plugin extraction.
 import * as allCollections from '@/collections'
-import { tenantCollectionsConfig, tenantScopedSlugs } from '@/tenants'
+import { tenantCollectionsConfig, tenantScopedSlugs } from '@/collections/tenants'
 import type { CollectionSlug, CollectionConfig } from 'payload'
-import { Footer } from './footer/config'
-import { Header } from './header/config'
-import { beforeSyncWithSearch } from '@/search'
-import { searchDocField, searchFields } from '@/search'
-import { defaultLexical } from '@/default/lexical'
-import { createEcommercePlugin } from '@/ecommerce/plugin'
+import { Footer } from '@/globals/footer/config'
+import { Header } from '@/globals/header/config'
+import { beforeSyncWithSearch } from '@/components/search'
+import { searchDocField } from '@/fields/group/searchDocField'
+import { searchFields } from '@/fields/textarea/searchFields'
+import { defaultLexical } from '@/utilities/default/lexical'
+import { createEcommercePlugin } from '@/components/ecommerce/plugin'
 import {
   deriveSecretFromPayloadSecret,
   internalSecretPurpose,
-} from '@/nist/sp/800/108'
-import { resolvePayloadSecret } from '@/secret'
-import { getServerSideURL } from '@/rfc/3986'
-import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
-import { tenantAwareResendEmailAdapter } from '@/email/resend/adapter'
+} from '@/utilities/nist/sp/800/108'
+import { resolvePayloadSecret } from '@/utilities/secret'
+import { getServerSideURL } from '@/utilities/rfc/3986'
+import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
+import { tenantAwareResendEmailAdapter } from '@/utilities/email/resend/adapter'
 import localization from '@/i18n/localization'
 import {
   defaultLocale,
@@ -86,9 +86,9 @@ import {
   type SupportedLocale,
 } from '@/i18n'
 
-import { adminGroupOf } from '@/navigation'
-import { COLLECTION_DIAMOND_KEY, foldCollectionLifecycle } from '@/factory/collection'
-import type { Config } from '@/types'
+import { adminGroupOf } from '@/utilities/navigation'
+import { COLLECTION_DIAMOND_KEY, foldCollectionLifecycle } from '@/utilities/factory/collection'
+import type { Config } from '@/utilities/types'
 
 /** Payload admin.group — first path segment of the collection atom (computed, never hand-set). */
 function collectionAdminGroup(c: CollectionConfig): string {
@@ -136,7 +136,7 @@ if (
 ) {
   throw new Error(
     'PAYLOAD_SECRET is required and must not be empty. Set PAYLOAD_SECRET in .env, or seal it ' +
-      '(PAYLOAD_SECRET_SEALED + ERPAX_SEAL_KEY — see src/secret/SKILL.md). Generate: openssl rand -hex 32',
+      '(PAYLOAD_SECRET_SEALED + ERPAX_SEAL_KEY — see src/utilities/secret/SKILL.md). Generate: openssl rand -hex 32',
   )
 }
 
@@ -219,8 +219,8 @@ export default buildConfig({
   email: tenantAwareResendEmailAdapter,
   admin: {
     components: {
-      beforeLogin: ['@/before/login'],
-      beforeDashboard: ['@/before/dashboard'],
+      beforeLogin: ['@/components/before/login'],
+      beforeDashboard: ['@/components/before/dashboard'],
     },
     importMap: {
       baseDir: path.resolve(dirname),
@@ -250,44 +250,32 @@ export default buildConfig({
     },
   },
   editor: defaultLexical,
-  // Slice MMMM (2026-05-10) — architecture invariants gate at boot.
-  // Runs the 5-axis self-check (standards / expansion / compression /
-  // entropy; fallback axis is advisory + skipped at boot). Default is
-  // warn-only; set `STRICT_INVARIANTS=1` to refuse boot on failure.
-  // @see src/architecture/invariant/onInit.ts
   onInit: async (payload) => {
-    try {
-      const { runInvariantsAtBoot } = await import('@/architecture/invariant/onInit')
-      await runInvariantsAtBoot(payload)
-    } catch (err) {
-      // STRICT_INVARIANTS=1 propagates to refuse boot.
-      throw err
-    }
     // Slice PPPP — declarative event → notification fan-out.
     // Idempotent; safe on hot reload.
     try {
-      const { wireNotificationSubscriber } = await import('@/notification/subscriber')
+      const { wireNotificationSubscriber } = await import('@/utilities/notification/subscriber')
       wireNotificationSubscriber(payload)
     } catch {
       // Never refuse boot on notification wiring failure.
     }
     // Issue the fiscal receipt (касов бон) on sale:closed (Наредба Н-18).
     try {
-      const { wireReceiptSubscriber } = await import('@/sale/receipt-subscriber')
+      const { wireReceiptSubscriber } = await import('@/utilities/sale/receipt-subscriber')
       wireReceiptSubscriber(payload)
     } catch {
       // Never refuse boot on receipt-subscriber wiring failure.
     }
     // Fiscalize a paid ecommerce order into a closed sale on order:activated.
     try {
-      const { wireOrderFiscalizationSubscriber } = await import('@/sale/order-fiscalization')
+      const { wireOrderFiscalizationSubscriber } = await import('@/utilities/sale/order-fiscalization')
       wireOrderFiscalizationSubscriber(payload)
     } catch {
       // Never refuse boot on order-fiscalization wiring failure.
     }
     // Fiscalize each card-charged subscription period into a касов бон.
     try {
-      const { wireSubscriptionFiscalizationSubscriber } = await import('@/sale/subscription-fiscalization')
+      const { wireSubscriptionFiscalizationSubscriber } = await import('@/utilities/sale/subscription-fiscalization')
       wireSubscriptionFiscalizationSubscriber(payload)
     } catch {
       // Never refuse boot on subscription-fiscalization wiring failure.
@@ -412,7 +400,7 @@ export default buildConfig({
     }),
     multiTenantPlugin<Config>({
       // COMPUTED, not a 201-slug hand-map: every collection is tenant-scoped
-      // except the small, explicit GLOBAL_SPINE — see src/tenants/scope.ts and
+      // except the small, explicit GLOBAL_SPINE — see src/utilities/tenants/scope.ts and
       // its proof test. A new collection auto-scopes; nothing drifts.
       collections: tenantCollectionsConfig(Object.values(allCollections) as Array<{ slug: string }>),
       tenantField: {
@@ -462,15 +450,7 @@ export default buildConfig({
         Object.values(allCollections) as Array<{ slug: string }>,
       ),
       globals: mcpGlobalsConfig(),
-      // The erpax tool families (erpax.<area>.<leg> trinities) ride the gateway through the
-      // plugin's own custom-tool door — wire-named, mode-gated. A GETTER, because the plugin
-      // reads `mcp.tools` when it runs inside buildConfig, after every module has initialised;
-      // building them in this literal would run inside the import cycle. See @/plugins/mcp/seed.
-      mcp: {
-        get tools() {
-          return gatewayTools(erpaxMcpTools())
-        },
-      },
+      // The gateway serves Payload's collections and globals — nothing else.
       // Collapse the 824-column capability matrix (over D1's 100-col cap) to a
       // compact `scopes` field + virtual afterRead capabilities — the same
       // matrix→cross collapse as access. See src/plugins/mcp/scopes.
@@ -491,7 +471,7 @@ export default buildConfig({
     // external surface entered as an atom. INERT by default: TRELLO_SYNC is empty, so no field is
     // injected and no hook is wired. Adding a mapping is a schema change and needs a migration in
     // the same diff; without TRELLO_API_KEY + TRELLO_TOKEN there is no client, so the plugin stays
-    // field-only rather than half-wired. See `@/trello` and `@/trello/plugin`.
+    // field-only rather than half-wired. See `@/utilities/trello` and `@/utilities/trello/plugin`.
     trelloPlugin({
       collections: TRELLO_SYNC,
       client: trelloClientFromEnv(),

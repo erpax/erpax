@@ -1,1 +1,0 @@
-export { revalidateFooter } from './revalidateFooter'

@@ -29,9 +29,9 @@
  * @see src/plugins/accounting/seeds/level-1
  */
 
-import type { Camt053Statement } from '@/iso/20022'
-import type { SafTAuditFile } from '@/saf/t'
-import type { EdifactInvoic } from '@/un/edifact'
+import type { Camt053Statement } from '@/utilities/iso/20022'
+import type { SafTAuditFile } from '@/utilities/saf/t'
+import type { EdifactInvoic } from '@/utilities/un/edifact'
 
 // ─── ISO-20022 camt.053 ─────────────────────────────────────────────────
 

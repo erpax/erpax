@@ -37,7 +37,8 @@
   },
   "erpax": {
     "closureCeiling": 9,
-    "sizeCeilingKb": 36
+    "sizeCeilingKb": 36,
+    "entry": "utilities/accounting"
   },
   "keywords": [
     "accounting",

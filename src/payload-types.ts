@@ -3539,8 +3539,6 @@ export interface ControlTest {
   createdAt: string;
 }
 /**
- * diamond-uuid: bb5230a4-d513-89bd-97bb-66b8cd32535e
- *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "fixed-assets".
  */
@@ -7495,8 +7493,6 @@ export interface Shipment {
 /**
  * Customer-side order register (O2C). Distinct from purchase-orders (P2P). UN-EDIFACT ORDERS d96a + UBL-2.1 Order + Peppol BIS-3.0 Order. IFRS-15 §10 contract-with-customer feed.
  *
- * — diamond-uuid: c4131d6d-7909-8973-8a22-d79e6218e5d2
- *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "sales-orders".
  */
@@ -8176,7 +8172,7 @@ export interface BookableResource {
    */
   category?: string | null;
   /**
-   * Clinical device modality — wired to medical/device registry (LOINC outputs).
+   * Clinical device modality.
    */
   medicalModality?:
     | (
@@ -13467,8 +13463,6 @@ export interface LeasePeriodPosting {
 /**
  * Vacation / sick / parental / unpaid leave register. Approved requests decrement entitlement balance + feed IAS-19 accrual.
  *
- * — diamond-uuid: 2b5d8003-f52b-89f4-9678-6e90e688fabd
- *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "leave-requests".
  */
@@ -14563,8 +14557,6 @@ export interface ManagementCertification {
 }
 /**
  * Generic persistence layer for MCP tools + DomainAgent in-memory state: fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps. Every row is content-uuid'd (Law 8) and can declare relatedTo edges (Law 10).
- *
- * — diamond-uuid: 50693d52-8ccc-813f-bd9f-ea2bc65b0ed0
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "memories".
@@ -17542,8 +17534,6 @@ export interface Share {
 /**
  * Live registry of every cited published standard (IFRS / ISO / W3C / RFC / Directive / etc.) + per-tenant citation graph. Backs the erpax.standards.* MCP family with persistent storage. Standards-as-vortices (Law 27) + supersession trail (Law 28).
  *
- * — diamond-uuid: 763ff0d7-ebdd-844d-8f10-28db7ff1f2a5
- *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "standards".
  */
@@ -18441,8 +18431,6 @@ export interface TransferPricingFile {
 }
 /**
  * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
- *
- * — diamond-uuid: 3143469c-94d2-848c-a4df-7d6fc2f40a6e
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "translations".

@@ -37,7 +37,8 @@
   },
   "erpax": {
     "closureCeiling": 4,
-    "sizeCeilingKb": 3
+    "sizeCeilingKb": 3,
+    "entry": "utilities/erpax"
   },
   "keywords": [
     "erpax",

@@ -1,0 +1,46 @@
+/**
+ * Footer global config — site-wide colophon + secondary navigation.
+ *
+ * @standard schema.org WPFooter
+ * @standard W3C HTML5 footer-element
+ * @standard WAI-ARIA 1.2 contentinfo-landmark-role
+ * @standard BCP-47 language-tag
+ * @see src/footer/config.ts
+ * @see docs/STANDARDS.md §3
+ */
+
+import type { GlobalConfig } from 'payload'
+
+import { link } from '@/components/link/field'
+import { localeRecord } from '@/i18n'
+import { revalidateFooter } from '@/hooks/globals/footer/revalidateFooter'
+
+export const Footer: GlobalConfig = {
+  slug: 'footer',
+  label: localeRecord('footer.global'),
+  access: {
+    read: () => true,
+  },
+  fields: [
+    {
+      name: 'navItems',
+      type: 'array',
+      label: localeRecord('footer.navItems'),
+      fields: [
+        link({
+          appearances: false,
+        }),
+      ],
+      maxRows: 6,
+      admin: {
+        initCollapsed: true,
+        components: {
+          RowLabel: '@/globals/footer/RowLabel#RowLabel',
+        },
+      },
+    },
+  ],
+  hooks: {
+    afterChange: [revalidateFooter],
+  },
+}

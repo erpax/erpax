@@ -1,7 +1,7 @@
 import type { Payload } from 'payload'
 import { describe, expect, it, vi } from 'vitest'
 
-vi.mock('@/country/api/client', () => ({
+vi.mock('@/utilities/country/api/client', () => ({
   lookupEuFallbackRate: vi.fn(async (_country: string, currency: string, date?: string) =>
     currency === 'USD'
       ? { ok: true, source: 'БНБ', data: { quotePerUnit: 0.92, units: 1, quote: 'EUR', date: date ?? '2026-10-03' } }
