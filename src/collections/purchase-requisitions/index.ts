@@ -113,7 +113,7 @@ const PurchaseRequisitions: CollectionConfig = {
         { name: 'comment', type: 'text', localized: true },
       ],
     },
-    { name: 'createdPurchaseOrder', type: 'relationship', relationTo: 'purchase-orders',
+    { name: 'createdPurchaseOrder', type: 'relationship', relationTo: 'orders',
       admin: { readOnly: true, description: 'PO created when requisition fully approved.' } },
     { name: 'awardedQuote', type: 'relationship', relationTo: 'vendor-quotes',
       admin: { description: 'Selected vendor quote that led to PO award.' } },

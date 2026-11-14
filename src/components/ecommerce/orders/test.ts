@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import type { CollectionBeforeValidateHook, CollectionConfig, Field } from 'payload'
-import { lineNetOf, orderFields, orderPresets, ordersOverride, orderStages, orderStatusOptions, quoteStages, totalsFromLines } from '@/components/ecommerce/orders'
+import type { CollectionAfterChangeHook, CollectionBeforeValidateHook, CollectionConfig, Field } from 'payload'
+import { incotermsPair, lineNetOf, onSide, orderFields, orderPresets, ordersOverride, orderStages, orderStatusOptions, purchaseStages, quoteStages, sideOf, totalsFromLines } from '@/components/ecommerce/orders'
 
 // The plugin's orders collection, reduced to what the override reads.
 const plugin = (): CollectionConfig => ({
@@ -59,7 +59,7 @@ describe('orders — the sales-order register folded into the e-commerce plugin 
   it('appends its hooks after the plugin\'s own', async () => {
     const before = plugin().hooks?.afterChange?.length ?? 0
     const folded = await ordersOverride({ defaultCollection: plugin() })
-    expect(folded.hooks?.afterChange?.length).toBe(before + 7)
+    expect(folded.hooks?.afterChange?.length).toBe(before + 8)
     expect(folded.hooks?.beforeValidate).toContain(totalsFromLines)
     expect(folded.enableQueryPresets).toBe(true)
   })
@@ -84,11 +84,69 @@ describe('orders — totals follow from the lines', () => {
   })
 })
 
-describe('orders — the two saved lists', () => {
-  it('Quotes and Orders are lists over `orders`, split by status', () => {
-    const [quotes, orders] = orderPresets()
-    expect(quotes).toMatchObject({ title: 'Quotes', relatedCollection: 'orders', where: { status: { in: quoteStages() } } })
-    expect(orders).toMatchObject({ title: 'Orders', relatedCollection: 'orders', where: { status: { in: orderStages() } } })
+describe('orders — the three saved lists', () => {
+  it('Quotes and Orders are the sale side split by status; Purchase orders are the other side', () => {
+    const [quotes, orders, purchases] = orderPresets()
+    const sale = { side: { not_equals: 'purchase' } }
+    expect(quotes).toMatchObject({ title: 'Quotes', relatedCollection: 'orders', where: { and: [sale, { status: { in: quoteStages() } }] } })
+    expect(orders).toMatchObject({ title: 'Orders', relatedCollection: 'orders', where: { and: [sale, { status: { in: orderStages() } }] } })
+    expect(purchases).toMatchObject({ title: 'Purchase orders', relatedCollection: 'orders', where: { side: { equals: 'purchase' } } })
     expect(quoteStages().some((s) => orderStages().includes(s))).toBe(false)
+  })
+  it('a purchase order "sent to vendor" is not listed as a sales quote', () => {
+    // `sent` is a quote stage on the sale side and a purchase stage on the other; only the side filter keeps them apart.
+    expect(quoteStages()).toContain('sent')
+    const [quotes] = orderPresets()
+    expect(JSON.stringify(quotes?.where)).toContain('"not_equals":"purchase"')
+  })
+})
+
+describe('orders — the purchase side (the folded purchase-orders collection)', () => {
+  type After = Parameters<CollectionAfterChangeHook>[0]
+  type Before = Parameters<CollectionBeforeValidateHook>[0]
+
+  it('an order is a sale unless it says purchase — a web checkout sets no side', () => {
+    expect(sideOf({})).toBe('sale')
+    expect(sideOf({ side: 'sale' })).toBe('sale')
+    expect(sideOf({ side: 'purchase' })).toBe('purchase')
+    expect(sideOf(null)).toBe('sale')
+    const side = named(orderFields()).get('side') as { defaultValue?: unknown }
+    expect(side.defaultValue).toBe('sale')
+  })
+
+  it('carries the vendor, delivery terms, the receipt join and the per-line GL account', () => {
+    const fields = named(orderFields())
+    expect(fields.get('vendor')).toMatchObject({ type: 'relationship', relationTo: 'addresses' })
+    expect(fields.get('receipts')).toMatchObject({ type: 'join', collection: 'goods-receipts', on: 'purchaseOrder' })
+    expect(fields.get('invoice')).toMatchObject({ type: 'relationship', relationTo: 'invoices' })
+    const lines = fields.get('lines')
+    const lineNames = lines?.type === 'array' ? lines.fields.map((f) => ('name' in f ? f.name : '')) : []
+    expect(lineNames).toEqual(expect.arrayContaining(['glAccount', 'quantityReceived']))
+  })
+
+  it('the purchase stages join the one status lifecycle', () => {
+    const values = orderStatusOptions([]).map((o) => (typeof o === 'string' ? o : o.value))
+    for (const stage of purchaseStages()) expect(values, stage).toContain(stage)
+  })
+
+  it('an event hook runs only for its own side', async () => {
+    let ran = 0
+    const hook: CollectionAfterChangeHook = ({ doc }) => { ran++; return doc }
+    const purchase = { id: 'po1', side: 'purchase', status: 'cancelled' }
+    // cancelling a purchase order must not run the sale side's hooks (they post revenue reversals)
+    expect(await onSide('sale', hook)({ doc: purchase } as unknown as After)).toBe(purchase)
+    expect(ran).toBe(0)
+    await onSide('purchase', hook)({ doc: purchase } as unknown as After)
+    expect(ran).toBe(1)
+    await onSide('sale', hook)({ doc: { id: 'web1', status: 'processing' } } as unknown as After) // no side ⇒ sale
+    expect(ran).toBe(2)
+  })
+
+  it('delivery terms and their named place go together', () => {
+    const check = (data: Record<string, unknown>) => incotermsPair({ data } as unknown as Before)
+    expect(() => check({ deliveryTerms: 'CIF' })).toThrow(/incotermsLocation is required/)
+    expect(() => check({ incotermsLocation: 'Burgas Port' })).toThrow(/deliveryTerms is required/)
+    expect(() => check({ deliveryTerms: 'CIF', incotermsLocation: 'CIF Burgas Port' })).not.toThrow()
+    expect(() => check({})).not.toThrow() // a sale, or a web checkout, has neither
   })
 })

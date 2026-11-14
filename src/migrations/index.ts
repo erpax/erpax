@@ -16,6 +16,7 @@ import * as migration_20261114_110717_remove_payment_methods from './20261114_11
 import * as migration_20261114_111618_fold_items_into_products from './20261114_111618_fold_items_into_products';
 import * as migration_20261114_112144_virtual_fields_and_period_lock_join from './20261114_112144_virtual_fields_and_period_lock_join';
 import * as migration_20261114_112347_polymorphic_sources from './20261114_112347_polymorphic_sources';
+import * as migration_20261114_115945_fold_purchase_orders_into_orders from './20261114_115945_fold_purchase_orders_into_orders';
 
 export const migrations = [
   {
@@ -106,6 +107,11 @@ export const migrations = [
   {
     up: migration_20261114_112347_polymorphic_sources.up,
     down: migration_20261114_112347_polymorphic_sources.down,
-    name: '20261114_112347_polymorphic_sources'
+    name: '20261114_112347_polymorphic_sources',
+  },
+  {
+    up: migration_20261114_115945_fold_purchase_orders_into_orders.up,
+    down: migration_20261114_115945_fold_purchase_orders_into_orders.down,
+    name: '20261114_115945_fold_purchase_orders_into_orders'
   },
 ];

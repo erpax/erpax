@@ -274,7 +274,7 @@ const Commitments: CollectionConfig = {
     {
       name: 'linkedPurchaseOrder',
       type: 'relationship',
-      relationTo: 'purchase-orders',
+      relationTo: 'orders',
       admin: {
         description: 'Purchase order created from this commitment',
       },

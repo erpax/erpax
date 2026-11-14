@@ -29,6 +29,9 @@ export type OrderStatus =
       | 'invoiced'
       | 'closed'
       | 'on_hold'
+      | 'approved'
+      | 'partial'
+      | 'received'
     )
   | null;
 /**
@@ -222,7 +225,6 @@ export interface Config {
     projects: Project;
     properties: Property;
     provisions: Provision;
-    'purchase-orders': PurchaseOrder;
     'purchase-requisitions': PurchaseRequisition;
     'quality-inspections': QualityInspection;
     receipts: Receipt;
@@ -313,9 +315,6 @@ export interface Config {
     'period-locks': {
       relatedClosingEntries: 'closing-entries';
     };
-    'purchase-orders': {
-      receipts: 'goods-receipts';
-    };
     users: {
       orders: 'orders';
       cart: 'carts';
@@ -326,6 +325,9 @@ export interface Config {
     };
     products: {
       variants: 'variants';
+    };
+    orders: {
+      receipts: 'goods-receipts';
     };
   };
   collectionsSelect: {
@@ -458,7 +460,6 @@ export interface Config {
     projects: ProjectsSelect<false> | ProjectsSelect<true>;
     properties: PropertiesSelect<false> | PropertiesSelect<true>;
     provisions: ProvisionsSelect<false> | ProvisionsSelect<true>;
-    'purchase-orders': PurchaseOrdersSelect<false> | PurchaseOrdersSelect<true>;
     'purchase-requisitions': PurchaseRequisitionsSelect<false> | PurchaseRequisitionsSelect<true>;
     'quality-inspections': QualityInspectionsSelect<false> | QualityInspectionsSelect<true>;
     receipts: ReceiptsSelect<false> | ReceiptsSelect<true>;
@@ -2854,6 +2855,10 @@ export interface Order {
   currency?: 'EUR' | null;
   accessToken?: string | null;
   /**
+   * Whether this is an order from a customer or an order to a vendor. A web checkout is a sale.
+   */
+  side?: ('sale' | 'purchase') | null;
+  /**
    * Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents. Empty on a web checkout.
    */
   orderNumber?: string | null;
@@ -2943,9 +2948,48 @@ export interface Order {
          * Per-line delivery date (when distinct from order-header date).
          */
         requestedDeliveryDate?: string | null;
+        /**
+         * Purchase side: expense / asset account to debit on receipt.
+         */
+        glAccount?: (string | null) | GlAccount;
+        /**
+         * Purchase side: cumulative quantity received via goods-receipts.
+         */
+        quantityReceived?: number | null;
         id?: string | null;
       }[]
     | null;
+  /**
+   * Purchase side: the vendor receiving the order.
+   */
+  vendor?: (string | null) | Address;
+  /**
+   * The project this belongs to. Costs book to the project; the project carries the award.
+   */
+  project?: (string | null) | Project;
+  /**
+   * Incoterms 2020 term determining freight responsibility, risk transfer, and GL posting timing per IFRS-15 §38-42.
+   */
+  deliveryTerms?: ('FOB' | 'CIF' | 'DDP' | 'EXW') | null;
+  /**
+   * Named place where the delivery term applies (e.g. "CIF Burgas Port"). Required with deliveryTerms.
+   */
+  incotermsLocation?: string | null;
+  submittedAt?: string | null;
+  closedAt?: string | null;
+  /**
+   * Partial / full goods-receipts against this purchase order.
+   */
+  receipts?: {
+    docs?: (string | GoodsReceipt)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  /**
+   * Matched vendor bill (three-way-match anchor).
+   */
+  invoice?: (string | null) | Invoice;
+  notes?: string | null;
   /**
    * Aggregate fulfilled quantity across all shipments. Maintained by hook.
    */
@@ -4346,6 +4390,38 @@ export interface ComplianceFramework {
   officialResourceUrl?: string | null;
   effectiveDate?: string | null;
   isActive?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "goods-receipts".
+ */
+export interface GoodsReceipt {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  receiptNumber: string;
+  purchaseOrder: string | Order;
+  receivedDate: string;
+  lines: {
+    item?: (string | null) | Product;
+    description?: string | null;
+    quantityReceived: number;
+    quantityDamaged?: number | null;
+    condition?: ('good' | 'damaged' | 'partial' | 'rejected') | null;
+    id?: string | null;
+  }[];
+  status?: ('pending' | 'accepted' | 'partial' | 'rejected') | null;
+  inspectedAt?: string | null;
+  inspectedBy?: (string | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8025,115 +8101,6 @@ export interface CostCenter {
         id?: string | null;
       }[]
     | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "goods-receipts".
- */
-export interface GoodsReceipt {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  receiptNumber: string;
-  purchaseOrder: string | PurchaseOrder;
-  receivedDate: string;
-  lines: {
-    item?: (string | null) | Product;
-    description?: string | null;
-    quantityReceived: number;
-    quantityDamaged?: number | null;
-    condition?: ('good' | 'damaged' | 'partial' | 'rejected') | null;
-    id?: string | null;
-  }[];
-  status?: ('pending' | 'accepted' | 'partial' | 'rejected') | null;
-  inspectedAt?: string | null;
-  inspectedBy?: (string | null) | User;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "purchase-orders".
- */
-export interface PurchaseOrder {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * The project this belongs to. Costs book to the project; the project carries the award.
-   */
-  project?: (string | null) | Project;
-  poNumber: string;
-  /**
-   * Vendor receiving the PO.
-   */
-  vendor: string | Address;
-  orderDate: string;
-  expectedDeliveryDate?: string | null;
-  /**
-   * Incoterms 2020 term determining freight responsibility, risk transfer, and GL posting timing per IFRS-15 §38-42.
-   */
-  deliveryTerms?: ('FOB' | 'CIF' | 'DDP' | 'EXW') | null;
-  /**
-   * Named location where FOB/CIF/DDP applies. Examples: "FOB Sofia Warehouse", "CIF Burgas Port", "DDP Buyer's Facility". Used with deliveryTerms to determine GL posting timing per IFRS-15 §38-42.
-   */
-  incotermsLocation?: string | null;
-  lines: {
-    lineNumber?: number | null;
-    item?: (string | null) | Product;
-    description: string;
-    quantity: number;
-    unitPrice: number;
-    lineTotal?: number | null;
-    /**
-     * Expense / asset account to debit on receipt.
-     */
-    glAccount?: (string | null) | GlAccount;
-    /**
-     * Cumulative quantity received via goods-receipts.
-     */
-    quantityReceived?: number | null;
-    id?: string | null;
-  }[];
-  subtotal?: number | null;
-  taxAmount?: number | null;
-  totalAmount?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  status?: ('draft' | 'submitted' | 'approved' | 'sent' | 'partial' | 'received' | 'closed' | 'cancelled') | null;
-  submittedAt?: string | null;
-  sentAt?: string | null;
-  closedAt?: string | null;
-  /**
-   * Partial / full goods-receipts against this PO.
-   */
-  receipts?: {
-    docs?: (string | GoodsReceipt)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
-  };
-  /**
-   * Matched vendor bill (three-way-match anchor).
-   */
-  invoice?: (string | null) | Invoice;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14695,10 +14662,6 @@ export interface Message {
     | ({
         relationTo: 'orders';
         value: string | Order;
-      } | null)
-    | ({
-        relationTo: 'purchase-orders';
-        value: string | PurchaseOrder;
       } | null);
   /**
    * ISO 8601 — when the message was first read.
@@ -15781,7 +15744,7 @@ export interface PurchaseRequisition {
   /**
    * PO created when requisition fully approved.
    */
-  createdPurchaseOrder?: (string | null) | PurchaseOrder;
+  createdPurchaseOrder?: (string | null) | Order;
   /**
    * Selected vendor quote that led to PO award.
    */
@@ -15867,7 +15830,7 @@ export interface VendorQuote {
   /**
    * PO created from the awarded quote.
    */
-  createdPurchaseOrder?: (string | null) | PurchaseOrder;
+  createdPurchaseOrder?: (string | null) | Order;
   qualityAssessment?: ('excellent' | 'good' | 'acceptable' | 'marginal' | 'unacceptable') | null;
   status?: ('requested' | 'received' | 'under_review' | 'awarded' | 'not_awarded' | 'expired' | 'withdrawn') | null;
   createdBy?: (string | null) | User;
@@ -18476,7 +18439,7 @@ export interface Commitment {
   /**
    * Purchase order created from this commitment
    */
-  linkedPurchaseOrder?: (string | null) | PurchaseOrder;
+  linkedPurchaseOrder?: (string | null) | Order;
   /**
    * Contract created from this commitment (formal commitment phase)
    */
@@ -24540,50 +24503,6 @@ export interface ProvisionsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "purchase-orders_select".
- */
-export interface PurchaseOrdersSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  project?: T;
-  poNumber?: T;
-  vendor?: T;
-  orderDate?: T;
-  expectedDeliveryDate?: T;
-  deliveryTerms?: T;
-  incotermsLocation?: T;
-  lines?:
-    | T
-    | {
-        lineNumber?: T;
-        item?: T;
-        description?: T;
-        quantity?: T;
-        unitPrice?: T;
-        lineTotal?: T;
-        glAccount?: T;
-        quantityReceived?: T;
-        id?: T;
-      };
-  subtotal?: T;
-  taxAmount?: T;
-  totalAmount?: T;
-  currency?: T;
-  status?: T;
-  submittedAt?: T;
-  sentAt?: T;
-  closedAt?: T;
-  receipts?: T;
-  invoice?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "purchase-requisitions_select".
  */
 export interface PurchaseRequisitionsSelect<T extends boolean = true> {
@@ -26972,6 +26891,7 @@ export interface OrdersSelect<T extends boolean = true> {
   amount?: T;
   currency?: T;
   accessToken?: T;
+  side?: T;
   orderNumber?: T;
   party?: T;
   customerOrderReference?: T;
@@ -27000,8 +26920,19 @@ export interface OrdersSelect<T extends boolean = true> {
         taxCategory?: T;
         discount?: T;
         requestedDeliveryDate?: T;
+        glAccount?: T;
+        quantityReceived?: T;
         id?: T;
       };
+  vendor?: T;
+  project?: T;
+  deliveryTerms?: T;
+  incotermsLocation?: T;
+  submittedAt?: T;
+  closedAt?: T;
+  receipts?: T;
+  invoice?: T;
+  notes?: T;
   fulfilledQuantity?: T;
   invoicedAmount?: T;
   cancellationDate?: T;
@@ -27787,7 +27718,6 @@ export interface TaskCreateCollectionExport {
       | 'projects'
       | 'properties'
       | 'provisions'
-      | 'purchase-orders'
       | 'purchase-requisitions'
       | 'quality-inspections'
       | 'receipts'

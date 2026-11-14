@@ -86,7 +86,7 @@ const VendorQuotes: CollectionConfig = {
     { name: 'awardedBy', type: 'relationship', relationTo: 'users' },
     { name: 'awardRationale', type: 'textarea',
       admin: { description: 'OECD BEPS Action 13 + SOX §404 — reason for selection (lowest price / best fit / certified vendor / etc.).' } },
-    { name: 'createdPurchaseOrder', type: 'relationship', relationTo: 'purchase-orders',
+    { name: 'createdPurchaseOrder', type: 'relationship', relationTo: 'orders',
       admin: { readOnly: true, description: 'PO created from the awarded quote.' } },
     { name: 'qualityAssessment', type: 'select', options: [
       { label: 'Excellent', value: 'excellent' },

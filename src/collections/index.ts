@@ -97,7 +97,6 @@ export { default as VendorQuotes } from '@/collections/vendor-quotes'
 export { default as VendorScorecards } from '@/collections/vendor-scorecards'
 
 // Procurement: Purchase-to-Pay
-export { default as PurchaseOrders } from '@/collections/purchase-orders'
 export { default as PurchaseRequisitions } from '@/collections/purchase-requisitions'
 export { default as GoodsReceipts } from '@/collections/goods-receipts'
 
