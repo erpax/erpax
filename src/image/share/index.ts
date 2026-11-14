@@ -21,7 +21,6 @@
 import { PI, algebraCos, algebraLog2, algebraSin, exactMin } from '@/algebra'
 import { colorOf } from '@/color'
 import { uuidAnimation } from '@/image'
-import { coil, coins, type Coil, type CoilLevel } from '@/quantum/coil'
 import { escapeXml } from '@/xml/escape'
 
 // OGP's recommended og:image frame. Module-private: an exported literal is seal-debt ([[matrix]]/crack).
@@ -88,59 +87,4 @@ export function shareImage(a: ShareArgs): string {
     `<text x="${SHARE_WIDTH - 40}" y="${SHARE_HEIGHT - 24}" font-size="14" fill="#999" text-anchor="end">${escapeXml(a.uuid)}</text>` +
     `</svg>`
   )
-}
-
-interface Placed {
-  readonly node: Coil<string>
-  readonly cx: number
-  readonly cy: number
-}
-
-const key = (labels: readonly string[]): string => labels.join('\u0000')
-
-/**
- * The coil drawn and turning. Each internal node is a <g> that rotates about its own centre — forward
- * at even depth, backward at odd — so a trinity inside a trinity turns against the turn that carries
- * it: the two rotations compose, which is the interaction of the cross animations. Coins are the laws,
- * coloured on the seven-colour spectrum by rosetta position; crosses are the measured edges of the
- * level they belong to.
- */
-export function coilImage(rosetta: readonly string[], levels: readonly CoilLevel[], size = 630): string {
-  const tree = coil(rosetta)
-  const position = new Map(rosetta.map((l, i) => [l, i + 1]))
-  const byChildren = new Map(levels.map((l) => [key(l.children.map((c) => c.join('|'))), l]))
-  let out = ''
-  const render = (node: Coil<string>, cx: number, cy: number, radius: number, depth: number): void => {
-    if (node.kind === 'coin') {
-      const r = radius * 0.42
-      out += `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${r.toFixed(1)}" fill="${colorOf(position.get(node.value) ?? 1)}" opacity="0.9"/>`
-      out += `<text x="${cx.toFixed(1)}" y="${(cy + r + 16).toFixed(1)}" font-size="${(radius * 0.22).toFixed(0)}" text-anchor="middle" fill="#333">${escapeXml(node.value)}</text>`
-      return
-    }
-    const k = node.children.length
-    const placed: Placed[] = node.children.map((c, i) => {
-      const ang = -PI / 2 + (2 * PI * i) / k
-      return { node: c, cx: cx + radius * algebraCos(ang), cy: cy + radius * algebraSin(ang) }
-    })
-    const level = byChildren.get(key(node.children.map((c) => coins(c).join('|'))))
-    let edges = ''
-    if (level) {
-      for (const x of level.forward) {
-        const a = placed.find((p) => coins(p.node).join('|') === x.a.join('|'))
-        const b = placed.find((p) => coins(p.node).join('|') === x.b.join('|'))
-        if (!a || !b) continue
-        const width = 1 + exactMin(8, algebraLog2(1 + x.shared))
-        edges += `<line x1="${a.cx.toFixed(1)}" y1="${a.cy.toFixed(1)}" x2="${b.cx.toFixed(1)}" y2="${b.cy.toFixed(1)}" stroke="#222" stroke-width="${width.toFixed(1)}" opacity="${(0.15 + 0.85 * x.forward).toFixed(2)}"${x.theorem ? ' stroke-dasharray="6 6"' : ''}/>`
-      }
-    }
-    const dur = 18 + depth * 8
-    const [from, to] = depth % 2 === 0 ? ['0', '360'] : ['360', '0']
-    out += `<g><animateTransform attributeName="transform" type="rotate" from="${from} ${cx.toFixed(1)} ${cy.toFixed(1)}" to="${to} ${cx.toFixed(1)} ${cy.toFixed(1)}" dur="${dur}s" repeatCount="indefinite"/>${edges}`
-    // coins first, then the turning sub-coils over them — so a nested group closes against its parent's
-    for (const p of placed.filter((q) => q.node.kind === 'coin')) render(p.node, p.cx, p.cy, radius * (k === 2 ? 0.5 : 0.38), depth + 1)
-    for (const p of placed.filter((q) => q.node.kind !== 'coin')) render(p.node, p.cx, p.cy, radius * (k === 2 ? 0.5 : 0.38), depth + 1)
-    out += '</g>'
-  }
-  render(tree, size / 2, size / 2, size * 0.34, 0)
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" font-family="system-ui, sans-serif"><rect width="100%" height="100%" fill="#fafaf7"/>${out}</svg>`
 }

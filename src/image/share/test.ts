@@ -1,6 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { coilCrosses } from '@/quantum/coil'
-import { coilImage, shareFrame, shareImage } from './index'
+import { shareFrame, shareImage } from './index'
 
 const { width: SHARE_WIDTH, height: SHARE_HEIGHT } = shareFrame()
 
@@ -30,32 +29,5 @@ describe('image/share — the Open Graph image, pure and animated', () => {
     const lines = svg.match(/font-size="60"/g) ?? []
     expect(lines.length).toBe(3)
     expect(svg).toContain('…')
-  })
-})
-
-describe('image/share — the coil drawn and turning', () => {
-  const sets = new Map<string, ReadonlySet<string>>([
-    ['copy', new Set(['x', 'y'])],
-    ['cycle', new Set(['y'])],
-    ['concentration', new Set(['q'])],
-    ['mirror', new Set(['x'])],
-  ])
-  const rosetta = ['copy', 'cycle', 'concentration', 'mirror']
-
-  it('every internal node rotates, nested — a trinity inside the root turns the other way', () => {
-    const svg = coilImage(rosetta, coilCrosses(sets, rosetta))
-    const spins = svg.match(/<animateTransform[^>]*>/g) ?? []
-    expect(spins.length).toBe(2) // root (coil + axis) and the one trinity inside it
-    expect(spins[0]).toContain('from="0')
-    expect(spins[1]).toContain('from="360') // odd depth turns backward
-    expect(svg.indexOf('</g></g>')).toBeGreaterThan(0) // the inner group closes inside the outer
-  })
-
-  it('draws every law as a coin and every forward cross as an edge, dashed where the cross holds at zero', () => {
-    const svg = coilImage(rosetta, coilCrosses(sets, rosetta))
-    for (const law of rosetta) expect(svg).toContain(`>${law}</text>`)
-    const lines = svg.match(/<line [^>]*>/g) ?? []
-    expect(lines.length).toBeGreaterThanOrEqual(3 + 2) // trinity: 3 forward edges · root: 2 (coil↔axis both ways)
-    expect(lines.some((l) => l.includes('stroke-dasharray'))).toBe(true) // concentration meets nothing: a theorem edge
   })
 })

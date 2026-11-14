@@ -42,13 +42,6 @@ export {
 } from './uuid-short'
 export type { ShortUuidKind, ShortLookupResult, DisplayUuid, UuidDisplayCompliance } from './uuid-short'
 
-export {
-  recordUuid, recordManyUuids, queryUuidStream, snapshotFromRegistries,
-  buildInfiniteFinitenessReport, checkInfiniteFiniteness, __resetUuidStreamForTests,
-} from './uuid-stream'
-export type {
-  UuidSource, UuidEntry, UuidStreamFilter, InfiniteFinitenessReport, BuildReportArgs, InfiniteFinitenessVerdict,
-} from './uuid-stream'
 
 export {
   computeTypeUuid, registerType, getType, getTypeByUuid, listTypes,

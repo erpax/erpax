@@ -17,7 +17,7 @@ import { fiscalQrField } from '@/fields/text/fiscalQrField'
 import { operatorCodeField } from '@/fields/text/operatorCodeField'
 import { fiscalDeviceNumberField } from '@/fields/text/fiscalDeviceNumberField'
 import { unpField } from '@/fields/text/unpField'
-import { fieldVisibleForWrite } from '@/admin/ui'
+import { fieldVisibleForWrite } from '@/access/fields/shared/fieldAccessFromComputed'
 import { isIso4217 } from '@/iso/4217'
 
 /**
@@ -217,7 +217,6 @@ export const Invoices: CollectionConfig = {
           index: true,
           admin: {
             description: 'Selling party',
-            components: { Field: '@/admin/ui/fields/EntanglementWarningField' },
           },
         },
         {
@@ -226,7 +225,6 @@ export const Invoices: CollectionConfig = {
           relationTo: 'addresses',
           admin: {
             description: 'Seller agent',
-            components: { Field: '@/admin/ui/fields/EntanglementWarningField' },
           },
         },
         {
@@ -237,9 +235,6 @@ export const Invoices: CollectionConfig = {
           index: true,
           admin: {
             description: 'Buying party',
-            components: {
-              Field: '@/admin/ui/fields/EntanglementWarningField',
-            },
           },
         },
         {
@@ -248,7 +243,6 @@ export const Invoices: CollectionConfig = {
           relationTo: 'addresses',
           admin: {
             description: 'Buyer agent',
-            components: { Field: '@/admin/ui/fields/EntanglementWarningField' },
           },
         },
         {
@@ -257,7 +251,6 @@ export const Invoices: CollectionConfig = {
           relationTo: 'addresses',
           admin: {
             description: 'Supplier',
-            components: { Field: '@/admin/ui/fields/EntanglementWarningField' },
           },
         },
         {
@@ -266,7 +259,6 @@ export const Invoices: CollectionConfig = {
           relationTo: 'addresses',
           admin: {
             description: 'Delivery recipient',
-            components: { Field: '@/admin/ui/fields/EntanglementWarningField' },
           },
         },
       ],

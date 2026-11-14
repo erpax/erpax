@@ -206,30 +206,3 @@ export default createAccountingCollection({
       admin: { description: 'Optional decentralised-identifier URI for the publisher entity (Slice DDDDDD).' } },
   ],
 })
-export { STANDARDS_CATALOGUE, STANDARDS_COUNT } from '@/standards/seed'
-export type { CatalogueEntry } from '@/standards/seed'
-export {
-  standardAddress,
-  standardsAddressIndex,
-  standardById,
-  standardsFtlGaps,
-  standardsChatImprove,
-  standardsImproveWaves,
-  standardsChatImproveFtl,
-  standardsFtlWaves,
-  proveStandardsLookupFtl,
-  STANDARDS_IMPROVE_BOOK,
-  STANDARDS_FTL_BOOK,
-  endlessStandardsImprove,
-} from '@/standards/improve'
-export type { StandardsFtlGap, StandardsFtlImprovement, StandardsFtlReport, StandardsFtlWave } from '@/standards/improve'
-// lookupStandard + standardsIndex live in ./projection (the catalogue seen three ways)
-export {
-  standardsIndex,
-  lookupStandard,
-  schemaCoverage,
-  standardsUiWaves,
-} from '@/standards/projection'
-export type { SchemaCoverage, StandardsUiWave } from '@/standards/projection'
-
-export * from '@/standards/ported'
