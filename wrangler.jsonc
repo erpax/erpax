@@ -3,6 +3,25 @@
   "main": "worker.ts",
   "name": "erpax",
   "account_id": "833ef8eaf4ae2d917549f76765477475",
+  // The apex and each app's own host (<app>.erpax.com: its pages, and its MCP server at /mcp — see
+  // src/plugins/mcp/apps). Named, not a *.erpax.com wildcard: a wildcard route would also capture any other
+  // subdomain of the zone that points at a different origin. One host per app in src/packages/index.ts.
+  // A zone Redirect Rule runs BEFORE Workers, so a rule that redirects these hosts elsewhere wins over a route.
+  "routes": [
+    { "pattern": "erpax.com/*", "zone_name": "erpax.com" },
+    { "pattern": "admin.erpax.com/*", "zone_name": "erpax.com" },
+    { "pattern": "sites.erpax.com/*", "zone_name": "erpax.com" },
+    { "pattern": "sales.erpax.com/*", "zone_name": "erpax.com" },
+    { "pattern": "ledger.erpax.com/*", "zone_name": "erpax.com" },
+    { "pattern": "people.erpax.com/*", "zone_name": "erpax.com" },
+    { "pattern": "make.erpax.com/*", "zone_name": "erpax.com" },
+    { "pattern": "stock.erpax.com/*", "zone_name": "erpax.com" },
+    { "pattern": "comply.erpax.com/*", "zone_name": "erpax.com" },
+    { "pattern": "assets.erpax.com/*", "zone_name": "erpax.com" },
+    { "pattern": "work.erpax.com/*", "zone_name": "erpax.com" },
+    { "pattern": "chat.erpax.com/*", "zone_name": "erpax.com" },
+    { "pattern": "platform.erpax.com/*", "zone_name": "erpax.com" },
+  ],
   "compatibility_date": "2025-08-15",
   "compatibility_flags": [
     // https://developers.cloudflare.com/workers/configuration/compatibility-flags/#nodejs-compatibility-flag
