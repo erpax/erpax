@@ -59,7 +59,7 @@ describe('orders — the sales-order register folded into the e-commerce plugin 
   it('appends its hooks after the plugin\'s own', async () => {
     const before = plugin().hooks?.afterChange?.length ?? 0
     const folded = await ordersOverride({ defaultCollection: plugin() })
-    expect(folded.hooks?.afterChange?.length).toBe(before + 13)
+    expect(folded.hooks?.afterChange?.length).toBe(before + 14) // 13 + grantApps (a completed app sale switches the app on)
     expect(folded.hooks?.beforeValidate).toContain(totalsFromLines)
     expect(folded.enableQueryPresets).toBe(true)
   })
