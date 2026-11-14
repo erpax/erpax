@@ -2,6 +2,7 @@ import { readdirSync, readFileSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 
+import { bannerPattern, supersededEditions } from '@/seed/standards'
 import { ISO_27002_CATALOG } from '@/utilities/iso/27002'
 
 const src = join(import.meta.dirname, '..', '..', '..')
@@ -40,11 +41,13 @@ describe('ISO 27002 claims are typed and checked', () => {
 })
 
 describe('banners do not cite a superseded edition', () => {
-  // Static fallback until the standards seed and its refresh job (ISO Open Data) own the editions:
-  // an edition listed here was replaced by a newer one. Add to it only from the ISO catalogue.
-  const SUPERSEDED = ['ISO-27017:2015', 'ISO-27018:2019', 'ISO-27701:2019', 'ISO-24760-1:2019', 'ISO-29146:2016']
-  it.each(SUPERSEDED)('%s is cited nowhere', (edition) => {
-    const cited = files.filter(({ path, text }) => path !== 'utilities/iso/27002/test.ts' && text.includes(edition)).map(({ path }) => path)
-    expect(cited).toEqual([])
+  // The editions come from ISO Open Data (src/seed/standards, written by scripts/standards-refresh.mjs):
+  // an edition ISO has withdrawn may not be cited by a banner tag. Prose that explains one is not a banner.
+  const tag = /^\s*\*\s*@(?:standard|security|compliance|audit)\b.*$/gm
+  const banners = files.flatMap(({ path, text }) => (path === 'utilities/iso/27002/test.ts' ? [] : [...text.matchAll(tag)].map((match) => ({ path, line: match[0] }))))
+  it('the scan sees the banners (it is not vacuous)', () => expect(banners.length).toBeGreaterThan(500))
+  it.each(supersededEditions().map((row) => row.reference))('%s is cited by no banner', (reference) => {
+    const pattern = bannerPattern(reference)
+    expect(banners.filter(({ line }) => pattern.test(line)).map(({ path }) => path)).toEqual([])
   })
 })
