@@ -65,3 +65,27 @@ describe('seed/standards — editions as data, from ISO Open Data', () => {
     expect(updated).toHaveLength(1)
   })
 })
+
+describe('seed/standards — the standards no open feed covers', () => {
+  it('every manual row is unverified, dated, and does not collide with a feed edition', async () => {
+    const { manualStandards, standardEditions, allStandards } = await import('@/seed/standards')
+    const manual = manualStandards()
+    expect(manual.map((row) => row.reference)).toEqual(expect.arrayContaining(['ANSI/INCITS 359-2012', 'ANSI/INCITS 494-2012']))
+    const feed = new Set(standardEditions().map((row) => row.reference))
+    for (const row of manual) {
+      expect(row.status, row.reference).toBe('unverified')
+      expect(row.reviewedOn, row.reference).toMatch(/^\d{4}-\d{2}-\d{2}$/)
+      expect(Number.isNaN(Date.parse(row.reviewedOn!)), row.reference).toBe(false)
+      expect(row.source, row.reference).toBeTruthy()
+      expect(feed.has(row.reference), row.reference).toBe(false)
+    }
+    expect(allStandards()).toHaveLength(standardEditions().length + manual.length)
+  })
+
+  it('an unverified standard is loaded active, and says it is unverified and when it was reviewed', async () => {
+    const { manualStandards, frameworkRow } = await import('@/seed/standards')
+    const row = frameworkRow(manualStandards()[0]!)
+    expect(row.isActive).toBe(true)
+    expect(String(row.description)).toMatch(/unverified — last reviewed 2026-11-14/)
+  })
+})

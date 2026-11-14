@@ -1,0 +1,20 @@
+[
+  {
+    "reference": "ANSI/INCITS 359-2012",
+    "title": "Information Technology — Role Based Access Control",
+    "category": "info-security",
+    "status": "unverified",
+    "reviewedOn": "2026-11-14",
+    "source": "NIST CSRC RBAC project page; ANSI Webstore listings, which disagree on whether it is reaffirmed (R2022) or historical",
+    "note": "Revised from INCITS 359-2004 on 29 May 2012. There is no open feed for ANSI/INCITS standards: confirm the catalogue status by hand."
+  },
+  {
+    "reference": "ANSI/INCITS 494-2012",
+    "title": "Information Technology — Role Based Access Control — Policy-Enhanced",
+    "category": "info-security",
+    "status": "unverified",
+    "reviewedOn": "2026-11-14",
+    "source": "ANSI Webstore listings, which disagree on its current status",
+    "note": "Extends INCITS 359-2012 with external policy for dynamic attributes. Not read; confirm the catalogue status by hand."
+  }
+]

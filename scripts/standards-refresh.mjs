@@ -93,9 +93,27 @@ try {
   /* no fixture yet */
 }
 
+/**
+ * The standards no open feed covers (ANSI/INCITS) are kept by hand in standards.manual.json, each with the
+ * day it was last reviewed. A review older than this many days fails the check: the status of a standard
+ * nobody is looking at is not a fact.
+ */
+const MAX_REVIEW_DAYS = 365
+const MANUAL = new URL('../src/seed/content/fixtures/standards.manual.json', import.meta.url)
+const overdue = () => {
+  const today = Date.now()
+  return JSON.parse(readFileSync(MANUAL, 'utf8')).filter((row) => !(today - Date.parse(row.reviewedOn) <= MAX_REVIEW_DAYS * 86_400_000))
+}
+
 if (check) {
+  for (const row of overdue()) console.log(`review overdue (${row.reviewedOn ?? 'never'}, limit ${MAX_REVIEW_DAYS} days) ${row.reference}`)
+  const late = overdue().length > 0
   if (stored === next) {
     console.log(`OK — ${rows.length} editions match ISO Open Data.`)
+    if (late) {
+      console.error('standards.manual.json has rows past their review date: confirm each status, then update reviewedOn.')
+      process.exit(1)
+    }
   } else {
     const have = new Map((stored ? JSON.parse(stored) : []).map((row) => [row.reference, JSON.stringify(row)]))
     const want = new Map(rows.map((row) => [row.reference, JSON.stringify(row)]))

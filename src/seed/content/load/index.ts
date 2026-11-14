@@ -115,7 +115,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   // --standards: the editions of the standards erpax cites (src/seed/standards), into compliance-frameworks
   if (standards) {
     const seedStandards = await import('@/seed/standards')
-    console.log(JSON.stringify({ standards: await seedStandards.loadStandards(sdk as unknown as Rest, seedStandards.standardEditions(), { tenant }) }))
+    console.log(JSON.stringify({ standards: await seedStandards.loadStandards(sdk as unknown as Rest, seedStandards.allStandards(), { tenant }) }))
   }
   if (redirects) {
     const rows = JSON.parse(readFileSync(redirects, 'utf8')) as RedirectRow[]

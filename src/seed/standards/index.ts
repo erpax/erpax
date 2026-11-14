@@ -20,7 +20,11 @@ export interface StandardEdition {
   readonly category: string
   readonly edition: number | null
   readonly publicationDate: string | null
-  readonly status: 'current' | 'superseded'
+  readonly status: 'current' | 'superseded' | 'unverified'
+  /** Manual rows only: the day someone last confirmed the status by hand, and from what. */
+  readonly reviewedOn?: string
+  readonly source?: string
+  readonly note?: string
 }
 
 export interface TenantRest {
@@ -32,6 +36,13 @@ export interface TenantRest {
 /** Every edition in the fixture. */
 export const standardEditions = (): StandardEdition[] =>
   JSON.parse(readFileSync(join(import.meta.dirname, '..', 'content', 'fixtures', 'standards.json'), 'utf8')) as StandardEdition[]
+
+/** The standards no open feed covers (ANSI/INCITS), kept by hand with the day each was last reviewed. */
+export const manualStandards = (): StandardEdition[] =>
+  JSON.parse(readFileSync(join(import.meta.dirname, '..', 'content', 'fixtures', 'standards.manual.json'), 'utf8')) as StandardEdition[]
+
+/** Every standard erpax cites: the editions ISO publishes, then the ones reviewed by hand. */
+export const allStandards = (): StandardEdition[] => [...standardEditions(), ...manualStandards()]
 
 /** The standard without its edition: `ISO/IEC 27002:2022` → `ISO/IEC 27002`. */
 export const baseOf = (reference: string): string => reference.replace(/:\d{4}$/, '')
@@ -55,13 +66,14 @@ export const frameworkRow = (edition: StandardEdition): Record<string, unknown> 
   category: edition.category,
   issuingBody: edition.reference.startsWith('ISO/IEC') ? 'ISO/IEC' : 'ISO',
   ...(edition.publicationDate ? { effectiveDate: edition.publicationDate } : {}),
-  isActive: edition.status === 'current',
+  isActive: edition.status !== 'superseded',
+  ...(edition.status === 'unverified' ? { description: `Status unverified — last reviewed ${edition.reviewedOn ?? 'never'}. ${edition.note ?? ''}`.trim() } : {}),
 })
 
 /** Create the missing frameworks and update the ones that differ; a framework is found by its code. */
 export const loadStandards = async (
   rest: TenantRest,
-  rows: readonly StandardEdition[] = standardEditions(),
+  rows: readonly StandardEdition[] = allStandards(),
   options: { tenant?: string | number } = {},
 ): Promise<{ created: number; updated: number; unchanged: number }> => {
   const result = { created: 0, updated: 0, unchanged: 0 }
