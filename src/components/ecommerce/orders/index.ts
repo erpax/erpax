@@ -10,9 +10,37 @@
  * THE PURCHASE SIDE. A purchase order is the same document seen from the buyer's chair — a number,
  * a counterparty, dates, lines, totals — so the custom `purchase-orders` collection is folded in
  * as well: `side` says which it is (sale by default, so a web checkout is a sale). The purchase
- * side adds the vendor, delivery terms, the GL account and received quantity per line, and the
+ * side adds delivery terms, the GL account and received quantity per line, and the
  * goods-receipt join. Events and the saved lists are split by side: a purchase order "sent to
  * vendor" is not a sales quote, and cancelling one must not post a sales reversal.
+ *
+ * THE DOCUMENT TYPE. The procurement documents that lead to a purchase order are the same family:
+ * a purchase REQUISITION (the internal request, with its approval chain) and a vendor QUOTE (the
+ * supplier's answer to an RFQ, with the award). `documentType` says which one a document is; it
+ * defaults to order. A status is read per document type and party: "received" on a vendor quote
+ * means the quote arrived, on a purchase order it means the goods did, and each fires its own
+ * event — `onDocument` guards every hook by the type and side it belongs to, so no status value
+ * had to be renamed.
+ *
+ * THE COUNTERPARTY is ONE polymorphic relationship, `party`: the other side of the document,
+ * whoever that is — a trading partner (`parties`), an address-book entry (`addresses`, which is
+ * what a purchase order's vendor was), or another tenant on this platform (`tenants`). The
+ * standards name two roles and the document's `side` says which one the party plays:
+ *
+ *   side      the tenant is                  `party` is
+ *   sale      Seller  (EN 16931 BG-4 · UBL SellerSupplierParty)   Buyer  (BG-7 · UBL BuyerCustomerParty)
+ *   purchase  Buyer   (EN 16931 BG-7 · UBL BuyerCustomerParty)    Seller (BG-4 · UBL SellerSupplierParty)
+ *
+ * So every standard field keeps its source: BT-27..BT-43 (seller) and BT-44..BT-58 (buyer) are
+ * read from the tenant or the party according to `side`; nothing a standard requires was dropped
+ * by the fold. Dates stay ISO 8601, currency ISO 4217, units UN/CEFACT Rec 20, delivery terms
+ * Incoterms 2020. (`customer` remains the plugin's own field: the user who checked out.)
+ *
+ * THE TENANT'S CHAIR. `side`, `documentType` and `status` are the OWNING tenant's reading of the
+ * document: what it means to that tenant's users. The same order is a purchase to the buyer and a
+ * sale to the seller, and "sent" for one is "received" for the other. A document belongs to one
+ * tenant here, so one reading is stored; nothing in this module assumes a status means the same
+ * thing to the counterparty.
  *
  * What the fold decided where the two shapes collided:
  *  - `status` is ONE lifecycle: the plugin's values (processing · completed · cancelled · refunded)
@@ -29,7 +57,10 @@
  * @standard UBL-2.1 Order (OASIS) §Order
  * @standard UN-EDIFACT ORDERS d96a purchase-order-message
  * @standard Peppol-BIS-3.0 Order ordering-process
+ * @standard EN-16931:2017 §BG-4 seller · §BG-7 buyer (the tenant and `party`, by `side`)
  * @standard EN-16931:2017 §BG-13 delivery-information (downstream of the order)
+ * @standard ISO-8601-1:2019 date-time · ISO-4217:2015 currency · ISO-3166-1:2020 country
+ * @standard UN/CEFACT Rec20 units-of-measure · ICC Incoterms-2020 delivery-terms
  * @accounting IFRS IFRS-15 §10 contract-with-customer (order = contract or modification)
  * @accounting IFRS IFRS-15 §31 transfer-of-control
  * @accounting US-GAAP ASC-606 revenue-from-contracts
@@ -49,7 +80,9 @@ import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCr
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { emitOrderLifecycleEvents } from '@/hooks/collections/users/emitOrderLifecycleEvents'
-import { emitOnCreate, emitOnStatusTransition, emitPoCreated } from '@/utilities/chain/event/emitter'
+import { emitOnCreate, emitOnStatusTransition, emitPoCreated, emitPrApproved, emitPrSubmitted, emitRfqAwarded, emitRfqReceived } from '@/utilities/chain/event/emitter'
+import { taxonomySelect } from '@/fields/select/taxonomySelect'
+import { INCOTERM_OPTIONS } from '@/utilities/incoterms/2020'
 import { preset, type Preset } from '@/utilities/preset'
 
 /** The stages in which the document is still a quote: offered, not yet an order. */
@@ -69,14 +102,31 @@ export type OrderSide = 'sale' | 'purchase'
 /** Which side an order is on. Absent means sale: the plugin creates a web order with no side. */
 export const sideOf = (doc: unknown): OrderSide => ((doc as { side?: unknown } | null | undefined)?.side === 'purchase' ? 'purchase' : 'sale')
 
-const saleSide = { side: { not_equals: 'purchase' } }
+export type DocumentType = 'order' | 'quote' | 'requisition'
 
-/** The three lists that stand where three collections stood. */
+/** Which document this is. Absent means order: the plugin creates a web order with no type. */
+export const typeOf = (doc: unknown): DocumentType => {
+  const type = (doc as { documentType?: unknown } | null | undefined)?.documentType
+  return type === 'quote' || type === 'requisition' ? type : 'order'
+}
+
+/** The stages of a vendor quote (it shares received · expired with other documents, meaning something else there). */
+export const vendorQuoteStages = (): string[] => ['requested', 'received', 'under_review', 'awarded', 'not_awarded', 'expired', 'withdrawn']
+
+/** The stages of a purchase requisition. */
+export const requisitionStages = (): string[] => ['draft', 'submitted', 'in_approval', 'approved', 'rejected', 'returned', 'po_created', 'cancelled']
+
+const saleSide = { side: { not_equals: 'purchase' } }
+const anOrder = { documentType: { not_in: ['quote', 'requisition'] } }
+
+/** The five lists that stand where five collections stood. */
 export function orderPresets(): Preset[] {
   return [
     preset('Quotes', 'orders', { and: [saleSide, { status: { in: quoteStages() } }] }, ['orderNumber', 'party', 'totalAmount', 'status', 'expiresAt']),
     preset('Orders', 'orders', { and: [saleSide, { status: { in: orderStages() } }] }, ['orderNumber', 'party', 'orderDate', 'totalAmount', 'currency', 'status']),
-    preset('Purchase orders', 'orders', { side: { equals: 'purchase' } }, ['orderNumber', 'vendor', 'orderDate', 'totalAmount', 'status']),
+    preset('Purchase orders', 'orders', { and: [{ side: { equals: 'purchase' } }, anOrder] }, ['orderNumber', 'party', 'orderDate', 'totalAmount', 'status']),
+    preset('Vendor quotes', 'orders', { documentType: { equals: 'quote' } }, ['orderNumber', 'party', 'requisition', 'totalAmount', 'expiresAt', 'isAwarded', 'status']),
+    preset('Purchase requisitions', 'orders', { documentType: { equals: 'requisition' } }, ['orderNumber', 'requisitioner', 'orderDate', 'totalAmount', 'priority', 'status']),
   ]
 }
 
@@ -89,9 +139,13 @@ export const incotermsPair: CollectionBeforeValidateHook = ({ data }) => {
   return data
 }
 
-/** Run an event hook only for orders on one side; the other side passes through untouched. */
+/** Run an event hook only for ORDERS on one side; the other side, and quotes and requisitions, pass through untouched. */
 export const onSide = (side: OrderSide, hook: CollectionAfterChangeHook): CollectionAfterChangeHook => (args) =>
-  sideOf(args.doc) === side ? hook(args) : args.doc
+  typeOf(args.doc) === 'order' && sideOf(args.doc) === side ? hook(args) : args.doc
+
+/** Run an event hook only for one document type — a status means what its document type says it means. */
+export const onDocument = (type: DocumentType, hook: CollectionAfterChangeHook): CollectionAfterChangeHook => (args) =>
+  typeOf(args.doc) === type ? hook(args) : args.doc
 
 /** One line's net: quantity × unit price, less its discount. */
 export const lineNetOf = (line: { quantity?: unknown; unitPrice?: unknown; discount?: unknown }): number =>
@@ -127,10 +181,20 @@ const REGISTER_STAGES: readonly { label: string; value: string }[] = [
   { label: 'Closed', value: 'closed' },
   { label: 'Cancelled', value: 'cancelled' },
   { label: 'On hold', value: 'on_hold' },
-  // The purchase side.
-  { label: 'Purchase — approved', value: 'approved' },
-  { label: 'Purchase — partially received', value: 'partial' },
-  { label: 'Purchase — received', value: 'received' },
+  // The purchase side. (On a vendor quote "received" means the quote arrived; on a requisition "approved" means ready for a PO.)
+  { label: 'Approved', value: 'approved' },
+  { label: 'Partially received', value: 'partial' },
+  { label: 'Received', value: 'received' },
+  // Vendor quotes.
+  { label: 'Quote — requested (RFQ sent)', value: 'requested' },
+  { label: 'Quote — under review', value: 'under_review' },
+  { label: 'Quote — awarded', value: 'awarded' },
+  { label: 'Quote — not awarded', value: 'not_awarded' },
+  { label: 'Quote — withdrawn', value: 'withdrawn' },
+  // Purchase requisitions.
+  { label: 'Requisition — in approval chain', value: 'in_approval' },
+  { label: 'Requisition — returned for clarification', value: 'returned' },
+  { label: 'Requisition — PO created', value: 'po_created' },
 ]
 
 const valueOf = (option: Option): string => (typeof option === 'string' ? option : option.value)
@@ -149,6 +213,13 @@ export const orderFields = (): Field[] => [
       { label: 'Purchase (procure-to-pay)', value: 'purchase' },
     ],
     admin: { description: 'Whether this is an order from a customer or an order to a vendor. A web checkout is a sale.' } },
+  { name: 'documentType', type: 'select', defaultValue: 'order', index: true,
+    options: [
+      { label: 'Order', value: 'order' },
+      { label: 'Vendor quote (RFQ response)', value: 'quote' },
+      { label: 'Purchase requisition', value: 'requisition' },
+    ],
+    admin: { description: 'Which document this is. Its status is read in the terms of this type.' } },
   // Not required: the plugin creates an order at checkout with no number. (`referenceField` is
   // required by default, which would have refused every web order.)
   referenceField({
@@ -156,8 +227,8 @@ export const orderFields = (): Field[] => [
     required: false,
     description: 'Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents. Empty on a web checkout.',
   }),
-  { name: 'party', type: 'relationship', relationTo: 'parties', index: true,
-    admin: { description: 'The trading partner the order is with and invoiced to. (`customer` is the user who checked out.)' } },
+  { name: 'party', type: 'relationship', relationTo: ['parties', 'addresses', 'tenants'], index: true,
+    admin: { description: 'The counterparty: the buyer on a sale, the seller (vendor) on a purchase — a trading partner, an address-book entry, or another tenant. (`customer` is the user who checked out.)' } },
   { name: 'customerOrderReference', type: 'text',
     admin: { description: 'Buyer-side PO number / reference. EN-16931 §BT-13 / Peppol cbc:BuyerReference.' } },
 
@@ -217,12 +288,13 @@ export const orderFields = (): Field[] => [
         admin: { description: 'Purchase side: expense / asset account to debit on receipt.' } },
       { name: 'quantityReceived', type: 'number', defaultValue: 0,
         admin: { readOnly: true, description: 'Purchase side: cumulative quantity received via goods-receipts.' } },
+      { name: 'leadTimeDays', type: 'number', admin: { description: 'Vendor quote: lead time offered for this line.' } },
+      { name: 'preferredVendor', type: 'relationship', relationTo: 'parties',
+        admin: { description: 'Requisition: the vendor the requester would prefer for this line.' } },
     ],
   },
 
-  // ── The purchase side (formerly the purchase-orders collection) ──
-  { name: 'vendor', type: 'relationship', relationTo: 'addresses', index: true,
-    admin: { description: 'Purchase side: the vendor receiving the order.' } },
+  // ── The purchase side (formerly the purchase-orders collection). The vendor is `party`. ──
   { name: 'project', type: 'relationship', relationTo: 'projects', index: true,
     admin: { description: 'The project this belongs to. Costs book to the project; the project carries the award.' } },
   { name: 'deliveryTerms', type: 'select',
@@ -241,6 +313,63 @@ export const orderFields = (): Field[] => [
     admin: { description: 'Partial / full goods-receipts against this purchase order.' } },
   { name: 'invoice', type: 'relationship', relationTo: 'invoices',
     admin: { description: 'Matched vendor bill (three-way-match anchor).' } },
+  // ── Vendor quote (formerly the vendor-quotes collection). The vendor is `party`; validity is `expiresAt`. ──
+  { name: 'requisition', type: 'relationship', relationTo: 'orders', index: true,
+    admin: { description: 'Vendor quote: the requisition it answers (one requisition may have many quotes).' } },
+  { name: 'rfqIssuedDate', type: 'date' },
+  { name: 'quoteReceivedDate', type: 'date' },
+  { name: 'shippingAmount', type: 'number' },
+  { name: 'discountAmount', type: 'number' },
+  { name: 'paymentTerms', type: 'text', admin: { description: 'e.g. "Net 30", "2/10 Net 30", "50% deposit, balance on delivery".' } },
+  taxonomySelect('incoterms', INCOTERM_OPTIONS, { description: 'INCOTERMS 2020 code (e.g. EXW / FCA / DAP / DDP) per ICC publication 723E.' }),
+  { name: 'isAwarded', type: 'checkbox', defaultValue: false, index: true, admin: { description: 'Vendor quote: set true when this is the winning quote.' } },
+  { name: 'awardedDate', type: 'date' },
+  { name: 'awardedBy', type: 'relationship', relationTo: 'users' },
+  { name: 'awardRationale', type: 'textarea',
+    admin: { description: 'OECD BEPS Action 13 + SOX §404 — reason for selection (lowest price / best fit / certified vendor / etc.).' } },
+  { name: 'qualityAssessment', type: 'select', options: [
+    { label: 'Excellent', value: 'excellent' },
+    { label: 'Good', value: 'good' },
+    { label: 'Acceptable', value: 'acceptable' },
+    { label: 'Marginal', value: 'marginal' },
+    { label: 'Unacceptable', value: 'unacceptable' },
+  ] },
+  { name: 'createdPurchaseOrder', type: 'relationship', relationTo: 'orders',
+    admin: { readOnly: true, description: 'The purchase order created from this awarded quote or approved requisition.' } },
+
+  // ── Purchase requisition (formerly the purchase-requisitions collection). Its dates are `orderDate` / `requestedDeliveryDate`. ──
+  { name: 'requisitioner', type: 'relationship', relationTo: 'users' },
+  { name: 'department', type: 'text' },
+  { name: 'costCenter', type: 'relationship', relationTo: 'cost-centers' },
+  { name: 'businessJustification', type: 'textarea',
+    admin: { description: 'Reason for the spend (drives approver decision + audit-trail evidence).' } },
+  { name: 'priority', type: 'select',
+    options: [
+      { label: 'Critical (urgent / production blocking)', value: 'critical' },
+      { label: 'High', value: 'high' },
+      { label: 'Normal', value: 'normal' },
+      { label: 'Low', value: 'low' },
+    ] },
+  { name: 'requiresQuotes', type: 'checkbox', defaultValue: false,
+    admin: { description: 'When true, must collect ≥ 3 vendor quotes before PO (typical for spend > €10k).' } },
+  { name: 'minimumQuotesRequired', type: 'number', defaultValue: 0 },
+  { name: 'approvalChain', type: 'array', labels: { singular: 'Approval Step', plural: 'Approval Steps' },
+    fields: [
+      { name: 'step', type: 'number', required: true },
+      { name: 'approver', type: 'relationship', relationTo: 'users', required: true },
+      { name: 'role', type: 'text', admin: { description: 'e.g. Department Head, CFO, CEO.' } },
+      { name: 'decision', type: 'select', defaultValue: 'pending',
+        options: [
+          { label: 'Pending', value: 'pending' },
+          { label: 'Approved', value: 'approved' },
+          { label: 'Rejected', value: 'rejected' },
+          { label: 'Returned for Clarification', value: 'returned' },
+        ] },
+      { name: 'decidedAt', type: 'date' },
+      { name: 'comment', type: 'text', localized: true },
+    ] },
+  { name: 'awardedQuote', type: 'relationship', relationTo: 'orders',
+    admin: { description: 'Requisition: the vendor quote that led to the award.' } },
   notesField(),
 
   // Fulfillment progress (read-mostly — updated by Shipments hook when status → shipped)
@@ -314,6 +443,11 @@ export const ordersOverride: CollectionOverride = ({ defaultCollection }) => {
         onSide('sale', emitOnStatusTransition('fulfilled', 'order:fulfilled', 'order')),
         onSide('sale', emitOnStatusTransition('cancelled', 'order:cancelled', 'order')),
         onSide('purchase', emitPoCreated),
+        // The same status word, read per document type: "received" / "awarded" on a vendor quote, "submitted" / "approved" on a requisition.
+        onDocument('quote', emitRfqReceived),
+        onDocument('quote', emitRfqAwarded),
+        onDocument('requisition', emitPrSubmitted),
+        onDocument('requisition', emitPrApproved),
         auditTrailAfterChange('orders'),
       ],
     },

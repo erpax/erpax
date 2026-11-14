@@ -32,6 +32,14 @@ export type OrderStatus =
       | 'approved'
       | 'partial'
       | 'received'
+      | 'requested'
+      | 'under_review'
+      | 'awarded'
+      | 'not_awarded'
+      | 'withdrawn'
+      | 'in_approval'
+      | 'returned'
+      | 'po_created'
     )
   | null;
 /**
@@ -225,7 +233,6 @@ export interface Config {
     projects: Project;
     properties: Property;
     provisions: Provision;
-    'purchase-requisitions': PurchaseRequisition;
     'quality-inspections': QualityInspection;
     receipts: Receipt;
     'recruiting-pipeline': RecruitingPipeline;
@@ -269,7 +276,6 @@ export interface Config {
     translations: Translation;
     'usage-records': UsageRecord;
     users: User;
-    'vendor-quotes': VendorQuote;
     'vendor-scorecards': VendorScorecard;
     'warehouse-locations': WarehouseLocation;
     'wip-snapshots': WipSnapshot;
@@ -460,7 +466,6 @@ export interface Config {
     projects: ProjectsSelect<false> | ProjectsSelect<true>;
     properties: PropertiesSelect<false> | PropertiesSelect<true>;
     provisions: ProvisionsSelect<false> | ProvisionsSelect<true>;
-    'purchase-requisitions': PurchaseRequisitionsSelect<false> | PurchaseRequisitionsSelect<true>;
     'quality-inspections': QualityInspectionsSelect<false> | QualityInspectionsSelect<true>;
     receipts: ReceiptsSelect<false> | ReceiptsSelect<true>;
     'recruiting-pipeline': RecruitingPipelineSelect<false> | RecruitingPipelineSelect<true>;
@@ -504,7 +509,6 @@ export interface Config {
     translations: TranslationsSelect<false> | TranslationsSelect<true>;
     'usage-records': UsageRecordsSelect<false> | UsageRecordsSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
-    'vendor-quotes': VendorQuotesSelect<false> | VendorQuotesSelect<true>;
     'vendor-scorecards': VendorScorecardsSelect<false> | VendorScorecardsSelect<true>;
     'warehouse-locations': WarehouseLocationsSelect<false> | WarehouseLocationsSelect<true>;
     'wip-snapshots': WipSnapshotsSelect<false> | WipSnapshotsSelect<true>;
@@ -2859,13 +2863,29 @@ export interface Order {
    */
   side?: ('sale' | 'purchase') | null;
   /**
+   * Which document this is. Its status is read in the terms of this type.
+   */
+  documentType?: ('order' | 'quote' | 'requisition') | null;
+  /**
    * Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents. Empty on a web checkout.
    */
   orderNumber?: string | null;
   /**
-   * The trading partner the order is with and invoiced to. (`customer` is the user who checked out.)
+   * The counterparty: the buyer on a sale, the seller (vendor) on a purchase — a trading partner, an address-book entry, or another tenant. (`customer` is the user who checked out.)
    */
-  party?: (string | null) | Party;
+  party?:
+    | ({
+        relationTo: 'parties';
+        value: string | Party;
+      } | null)
+    | ({
+        relationTo: 'addresses';
+        value: string | Address;
+      } | null)
+    | ({
+        relationTo: 'tenants';
+        value: string | Tenant;
+      } | null);
   /**
    * Buyer-side PO number / reference. EN-16931 §BT-13 / Peppol cbc:BuyerReference.
    */
@@ -2956,13 +2976,17 @@ export interface Order {
          * Purchase side: cumulative quantity received via goods-receipts.
          */
         quantityReceived?: number | null;
+        /**
+         * Vendor quote: lead time offered for this line.
+         */
+        leadTimeDays?: number | null;
+        /**
+         * Requisition: the vendor the requester would prefer for this line.
+         */
+        preferredVendor?: (string | null) | Party;
         id?: string | null;
       }[]
     | null;
-  /**
-   * Purchase side: the vendor receiving the order.
-   */
-  vendor?: (string | null) | Address;
   /**
    * The project this belongs to. Costs book to the project; the project carries the award.
    */
@@ -2989,6 +3013,68 @@ export interface Order {
    * Matched vendor bill (three-way-match anchor).
    */
   invoice?: (string | null) | Invoice;
+  /**
+   * Vendor quote: the requisition it answers (one requisition may have many quotes).
+   */
+  requisition?: (string | null) | Order;
+  rfqIssuedDate?: string | null;
+  quoteReceivedDate?: string | null;
+  shippingAmount?: number | null;
+  discountAmount?: number | null;
+  /**
+   * e.g. "Net 30", "2/10 Net 30", "50% deposit, balance on delivery".
+   */
+  paymentTerms?: string | null;
+  /**
+   * INCOTERMS 2020 code (e.g. EXW / FCA / DAP / DDP) per ICC publication 723E.
+   */
+  incoterms?: ('EXW' | 'FCA' | 'CPT' | 'CIP' | 'DAP' | 'DPU' | 'DDP' | 'FAS' | 'FOB' | 'CFR' | 'CIF') | null;
+  /**
+   * Vendor quote: set true when this is the winning quote.
+   */
+  isAwarded?: boolean | null;
+  awardedDate?: string | null;
+  awardedBy?: (string | null) | User;
+  /**
+   * OECD BEPS Action 13 + SOX §404 — reason for selection (lowest price / best fit / certified vendor / etc.).
+   */
+  awardRationale?: string | null;
+  qualityAssessment?: ('excellent' | 'good' | 'acceptable' | 'marginal' | 'unacceptable') | null;
+  /**
+   * The purchase order created from this awarded quote or approved requisition.
+   */
+  createdPurchaseOrder?: (string | null) | Order;
+  requisitioner?: (string | null) | User;
+  department?: string | null;
+  costCenter?: (string | null) | CostCenter;
+  /**
+   * Reason for the spend (drives approver decision + audit-trail evidence).
+   */
+  businessJustification?: string | null;
+  priority?: ('critical' | 'high' | 'normal' | 'low') | null;
+  /**
+   * When true, must collect ≥ 3 vendor quotes before PO (typical for spend > €10k).
+   */
+  requiresQuotes?: boolean | null;
+  minimumQuotesRequired?: number | null;
+  approvalChain?:
+    | {
+        step: number;
+        approver: string | User;
+        /**
+         * e.g. Department Head, CFO, CEO.
+         */
+        role?: string | null;
+        decision?: ('pending' | 'approved' | 'rejected' | 'returned') | null;
+        decidedAt?: string | null;
+        comment?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Requisition: the vendor quote that led to the award.
+   */
+  awardedQuote?: (string | null) | Order;
   notes?: string | null;
   /**
    * Aggregate fulfilled quantity across all shipments. Maintained by hook.
@@ -4422,6 +4508,88 @@ export interface GoodsReceipt {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Analytical dimension for segment reporting (IFRS 8 / ASC 280). JE lines reference these.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cost-centers".
+ */
+export interface CostCenter {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Short alphanumeric code (e.g. EU-DE-ENG-FE).
+   */
+  costCenterCode: string;
+  name: string;
+  /**
+   * Drives presentation: regions/countries roll up to consolidated; departments/teams roll up to their parent BU; profit centers carry both revenue and expense.
+   */
+  kind: 'region' | 'country' | 'business_unit' | 'department' | 'team' | 'project' | 'cost_pool' | 'profit_center';
+  /**
+   * Parent in the hierarchy. Null = root.
+   */
+  parent?: (string | null) | CostCenter;
+  /**
+   * ISO 3166-1 alpha-2 — populated for kind = country, optional otherwise. Used by IFRS 8 / ASC 280 geographic disclosure.
+   */
+  country?: string | null;
+  /**
+   * Cost-center owner / department head.
+   */
+  manager?: (string | null) | User;
+  /**
+   * IFRS 8 §13: meets the 10% revenue / asset / loss threshold for reportable segments.
+   */
+  reportableSegment?: boolean | null;
+  /**
+   * JE lines may post revenue accounts to this CC.
+   */
+  allowsRevenue?: boolean | null;
+  /**
+   * JE lines may post expense accounts to this CC.
+   */
+  allowsExpense?: boolean | null;
+  /**
+   * JE lines may post capex (FixedAssets) to this CC.
+   */
+  allowsCapex?: boolean | null;
+  /**
+   * When this is a cost pool (kind = cost_pool), describe the periodic allocation to consumer cost-centers (basis + percentages).
+   */
+  allocationRules?:
+    | {
+        targetCostCenter: string | CostCenter;
+        basis?: ('headcount' | 'floor_area' | 'revenue_pct' | 'manual_pct' | 'direct_costs_pct') | null;
+        percentage?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  effectiveFrom: string;
+  /**
+   * Null = open-ended; populate on retirement.
+   */
+  effectiveTo?: string | null;
+  status?: ('active' | 'inactive' | 'retired') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | CostCenter;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8019,88 +8187,6 @@ export interface Employee {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Analytical dimension for segment reporting (IFRS 8 / ASC 280). JE lines reference these.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "cost-centers".
- */
-export interface CostCenter {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Short alphanumeric code (e.g. EU-DE-ENG-FE).
-   */
-  costCenterCode: string;
-  name: string;
-  /**
-   * Drives presentation: regions/countries roll up to consolidated; departments/teams roll up to their parent BU; profit centers carry both revenue and expense.
-   */
-  kind: 'region' | 'country' | 'business_unit' | 'department' | 'team' | 'project' | 'cost_pool' | 'profit_center';
-  /**
-   * Parent in the hierarchy. Null = root.
-   */
-  parent?: (string | null) | CostCenter;
-  /**
-   * ISO 3166-1 alpha-2 — populated for kind = country, optional otherwise. Used by IFRS 8 / ASC 280 geographic disclosure.
-   */
-  country?: string | null;
-  /**
-   * Cost-center owner / department head.
-   */
-  manager?: (string | null) | User;
-  /**
-   * IFRS 8 §13: meets the 10% revenue / asset / loss threshold for reportable segments.
-   */
-  reportableSegment?: boolean | null;
-  /**
-   * JE lines may post revenue accounts to this CC.
-   */
-  allowsRevenue?: boolean | null;
-  /**
-   * JE lines may post expense accounts to this CC.
-   */
-  allowsExpense?: boolean | null;
-  /**
-   * JE lines may post capex (FixedAssets) to this CC.
-   */
-  allowsCapex?: boolean | null;
-  /**
-   * When this is a cost pool (kind = cost_pool), describe the periodic allocation to consumer cost-centers (basis + percentages).
-   */
-  allocationRules?:
-    | {
-        targetCostCenter: string | CostCenter;
-        basis?: ('headcount' | 'floor_area' | 'revenue_pct' | 'manual_pct' | 'direct_costs_pct') | null;
-        percentage?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  effectiveFrom: string;
-  /**
-   * Null = open-ended; populate on retirement.
-   */
-  effectiveTo?: string | null;
-  status?: ('active' | 'inactive' | 'retired') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  breadcrumbs?:
-    | {
-        doc?: (string | null) | CostCenter;
-        url?: string | null;
-        label?: string | null;
-        id?: string | null;
-      }[]
-    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15662,177 +15748,6 @@ export interface ProjectTask {
    */
   isBillable?: boolean | null;
   status?: ('not_started' | 'in_progress' | 'blocked' | 'in_review' | 'completed' | 'cancelled') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * SOX §404 pre-PO approval gate. Requisitioner ≠ approver; auditor walks PO → requisition → approval chain.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "purchase-requisitions".
- */
-export interface PurchaseRequisition {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  requisitionNumber: string;
-  requisitioner: string | User;
-  department?: string | null;
-  costCenter?: (string | null) | CostCenter;
-  project?: (string | null) | Project;
-  requestedDate: string;
-  /**
-   * When the goods/services are needed.
-   */
-  requiredByDate?: string | null;
-  /**
-   * Reason for the spend (drives approver decision + audit-trail evidence).
-   */
-  businessJustification: string;
-  lines: {
-    description: string;
-    item?: (string | null) | Product;
-    quantity: number;
-    uom?: string | null;
-    /**
-     * Estimated unit price (cents).
-     */
-    estimatedUnitPrice: number;
-    /**
-     * quantity × estimatedUnitPrice (cents).
-     */
-    estimatedAmount: number;
-    glAccount?: (string | null) | GlAccount;
-    preferredVendor?: (string | null) | Party;
-    id?: string | null;
-  }[];
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Σ lines.estimatedAmount (cents).
-   */
-  estimatedTotal: number;
-  priority?: ('critical' | 'high' | 'normal' | 'low') | null;
-  /**
-   * When true, must collect ≥ 3 vendor quotes before PO (typical for spend > €10k).
-   */
-  requiresQuotes?: boolean | null;
-  minimumQuotesRequired?: number | null;
-  approvalChain?:
-    | {
-        step: number;
-        approver: string | User;
-        /**
-         * e.g. Department Head, CFO, CEO.
-         */
-        role?: string | null;
-        decision?: ('pending' | 'approved' | 'rejected' | 'returned') | null;
-        decidedAt?: string | null;
-        comment?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * PO created when requisition fully approved.
-   */
-  createdPurchaseOrder?: (string | null) | Order;
-  /**
-   * Selected vendor quote that led to PO award.
-   */
-  awardedQuote?: (string | null) | VendorQuote;
-  status?:
-    ('draft' | 'submitted' | 'in_approval' | 'approved' | 'rejected' | 'returned' | 'po_created' | 'cancelled') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Per-vendor RFQ response. Award decision lives here with rationale; the awarded quote becomes the PO source.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendor-quotes".
- */
-export interface VendorQuote {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Tenant-unique vendor quote number (e.g. VQ-2026-0001).
-   */
-  quoteNumber: string;
-  vendor: string | Party;
-  /**
-   * Source requisition (one PR may have many vendor quotes).
-   */
-  requisition?: (string | null) | PurchaseRequisition;
-  rfqIssuedDate?: string | null;
-  quoteReceivedDate: string;
-  /**
-   * Quote expiry (after this date, vendor may not honour pricing).
-   */
-  validUntil?: string | null;
-  lines: {
-    description: string;
-    item?: (string | null) | Product;
-    quantity: number;
-    uom?: string | null;
-    unitPrice: number;
-    lineTotal: number;
-    leadTimeDays?: number | null;
-    id?: string | null;
-  }[];
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  subtotal?: number | null;
-  taxAmount?: number | null;
-  shippingAmount?: number | null;
-  discountAmount?: number | null;
-  /**
-   * Quote total (cents).
-   */
-  totalAmount: number;
-  /**
-   * e.g. "Net 30", "2/10 Net 30", "50% deposit, balance on delivery".
-   */
-  paymentTerms?: string | null;
-  /**
-   * INCOTERMS 2020 code (e.g. EXW / FCA / DAP / DDP) per ICC publication 723E.
-   */
-  incoterms?: ('EXW' | 'FCA' | 'CPT' | 'CIP' | 'DAP' | 'DPU' | 'DDP' | 'FAS' | 'FOB' | 'CFR' | 'CIF') | null;
-  deliveryDate?: string | null;
-  /**
-   * Set true when this is the winning quote.
-   */
-  isAwarded?: boolean | null;
-  awardedDate?: string | null;
-  awardedBy?: (string | null) | User;
-  /**
-   * OECD BEPS Action 13 + SOX §404 — reason for selection (lowest price / best fit / certified vendor / etc.).
-   */
-  awardRationale?: string | null;
-  /**
-   * PO created from the awarded quote.
-   */
-  createdPurchaseOrder?: (string | null) | Order;
-  qualityAssessment?: ('excellent' | 'good' | 'acceptable' | 'marginal' | 'unacceptable') | null;
-  status?: ('requested' | 'received' | 'under_review' | 'awarded' | 'not_awarded' | 'expired' | 'withdrawn') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -24503,60 +24418,6 @@ export interface ProvisionsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "purchase-requisitions_select".
- */
-export interface PurchaseRequisitionsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  requisitionNumber?: T;
-  requisitioner?: T;
-  department?: T;
-  costCenter?: T;
-  project?: T;
-  requestedDate?: T;
-  requiredByDate?: T;
-  businessJustification?: T;
-  lines?:
-    | T
-    | {
-        description?: T;
-        item?: T;
-        quantity?: T;
-        uom?: T;
-        estimatedUnitPrice?: T;
-        estimatedAmount?: T;
-        glAccount?: T;
-        preferredVendor?: T;
-        id?: T;
-      };
-  currency?: T;
-  estimatedTotal?: T;
-  priority?: T;
-  requiresQuotes?: T;
-  minimumQuotesRequired?: T;
-  approvalChain?:
-    | T
-    | {
-        step?: T;
-        approver?: T;
-        role?: T;
-        decision?: T;
-        decidedAt?: T;
-        comment?: T;
-        id?: T;
-      };
-  createdPurchaseOrder?: T;
-  awardedQuote?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "quality-inspections_select".
  */
 export interface QualityInspectionsSelect<T extends boolean = true> {
@@ -26079,54 +25940,6 @@ export interface UsersSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendor-quotes_select".
- */
-export interface VendorQuotesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  quoteNumber?: T;
-  vendor?: T;
-  requisition?: T;
-  rfqIssuedDate?: T;
-  quoteReceivedDate?: T;
-  validUntil?: T;
-  lines?:
-    | T
-    | {
-        description?: T;
-        item?: T;
-        quantity?: T;
-        uom?: T;
-        unitPrice?: T;
-        lineTotal?: T;
-        leadTimeDays?: T;
-        id?: T;
-      };
-  currency?: T;
-  subtotal?: T;
-  taxAmount?: T;
-  shippingAmount?: T;
-  discountAmount?: T;
-  totalAmount?: T;
-  paymentTerms?: T;
-  incoterms?: T;
-  deliveryDate?: T;
-  isAwarded?: T;
-  awardedDate?: T;
-  awardedBy?: T;
-  awardRationale?: T;
-  createdPurchaseOrder?: T;
-  qualityAssessment?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "vendor-scorecards_select".
  */
 export interface VendorScorecardsSelect<T extends boolean = true> {
@@ -26892,6 +26705,7 @@ export interface OrdersSelect<T extends boolean = true> {
   currency?: T;
   accessToken?: T;
   side?: T;
+  documentType?: T;
   orderNumber?: T;
   party?: T;
   customerOrderReference?: T;
@@ -26922,9 +26736,10 @@ export interface OrdersSelect<T extends boolean = true> {
         requestedDeliveryDate?: T;
         glAccount?: T;
         quantityReceived?: T;
+        leadTimeDays?: T;
+        preferredVendor?: T;
         id?: T;
       };
-  vendor?: T;
   project?: T;
   deliveryTerms?: T;
   incotermsLocation?: T;
@@ -26932,6 +26747,38 @@ export interface OrdersSelect<T extends boolean = true> {
   closedAt?: T;
   receipts?: T;
   invoice?: T;
+  requisition?: T;
+  rfqIssuedDate?: T;
+  quoteReceivedDate?: T;
+  shippingAmount?: T;
+  discountAmount?: T;
+  paymentTerms?: T;
+  incoterms?: T;
+  isAwarded?: T;
+  awardedDate?: T;
+  awardedBy?: T;
+  awardRationale?: T;
+  qualityAssessment?: T;
+  createdPurchaseOrder?: T;
+  requisitioner?: T;
+  department?: T;
+  costCenter?: T;
+  businessJustification?: T;
+  priority?: T;
+  requiresQuotes?: T;
+  minimumQuotesRequired?: T;
+  approvalChain?:
+    | T
+    | {
+        step?: T;
+        approver?: T;
+        role?: T;
+        decision?: T;
+        decidedAt?: T;
+        comment?: T;
+        id?: T;
+      };
+  awardedQuote?: T;
   notes?: T;
   fulfilledQuantity?: T;
   invoicedAmount?: T;
@@ -27718,7 +27565,6 @@ export interface TaskCreateCollectionExport {
       | 'projects'
       | 'properties'
       | 'provisions'
-      | 'purchase-requisitions'
       | 'quality-inspections'
       | 'receipts'
       | 'recruiting-pipeline'
@@ -27762,7 +27608,6 @@ export interface TaskCreateCollectionExport {
       | 'translations'
       | 'usage-records'
       | 'users'
-      | 'vendor-quotes'
       | 'vendor-scorecards'
       | 'warehouse-locations'
       | 'wip-snapshots'

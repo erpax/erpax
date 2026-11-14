@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import type { CollectionAfterChangeHook, CollectionBeforeValidateHook, CollectionConfig, Field } from 'payload'
-import { incotermsPair, lineNetOf, onSide, orderFields, orderPresets, ordersOverride, orderStages, orderStatusOptions, purchaseStages, quoteStages, sideOf, totalsFromLines } from '@/components/ecommerce/orders'
+import { incotermsPair, lineNetOf, onDocument, onSide, requisitionStages, typeOf, vendorQuoteStages, orderFields, orderPresets, ordersOverride, orderStages, orderStatusOptions, purchaseStages, quoteStages, sideOf, totalsFromLines } from '@/components/ecommerce/orders'
 
 // The plugin's orders collection, reduced to what the override reads.
 const plugin = (): CollectionConfig => ({
@@ -30,7 +30,7 @@ describe('orders — the sales-order register folded into the e-commerce plugin 
     const pluginNames = new Set(named(plugin().fields).keys())
     for (const name of named(orderFields()).keys()) expect(pluginNames.has(name), name).toBe(false)
     const fields = named((await ordersOverride({ defaultCollection: plugin() })).fields)
-    expect((fields.get('party') as { relationTo?: string }).relationTo).toBe('parties')
+    expect((fields.get('party') as { relationTo?: unknown }).relationTo).toEqual(['parties', 'addresses', 'tenants'])
     for (const name of ['orderNumber', 'lines', 'shipTo', 'billTo', 'totalAmount', 'accessToken', 'approvedBy']) expect(fields.has(name), name).toBe(true)
   })
 
@@ -59,7 +59,7 @@ describe('orders — the sales-order register folded into the e-commerce plugin 
   it('appends its hooks after the plugin\'s own', async () => {
     const before = plugin().hooks?.afterChange?.length ?? 0
     const folded = await ordersOverride({ defaultCollection: plugin() })
-    expect(folded.hooks?.afterChange?.length).toBe(before + 8)
+    expect(folded.hooks?.afterChange?.length).toBe(before + 12)
     expect(folded.hooks?.beforeValidate).toContain(totalsFromLines)
     expect(folded.enableQueryPresets).toBe(true)
   })
@@ -84,13 +84,17 @@ describe('orders — totals follow from the lines', () => {
   })
 })
 
-describe('orders — the three saved lists', () => {
-  it('Quotes and Orders are the sale side split by status; Purchase orders are the other side', () => {
-    const [quotes, orders, purchases] = orderPresets()
+describe('orders — the five saved lists', () => {
+  it('each former collection is a list over `orders`, by side and document type', () => {
+    const [quotes, orders, purchases, vendorQuotes, requisitions] = orderPresets()
     const sale = { side: { not_equals: 'purchase' } }
+    const anOrder = { documentType: { not_in: ['quote', 'requisition'] } }
     expect(quotes).toMatchObject({ title: 'Quotes', relatedCollection: 'orders', where: { and: [sale, { status: { in: quoteStages() } }] } })
     expect(orders).toMatchObject({ title: 'Orders', relatedCollection: 'orders', where: { and: [sale, { status: { in: orderStages() } }] } })
-    expect(purchases).toMatchObject({ title: 'Purchase orders', relatedCollection: 'orders', where: { side: { equals: 'purchase' } } })
+    expect(purchases).toMatchObject({ title: 'Purchase orders', relatedCollection: 'orders', where: { and: [{ side: { equals: 'purchase' } }, anOrder] } })
+    expect(vendorQuotes).toMatchObject({ title: 'Vendor quotes', relatedCollection: 'orders', where: { documentType: { equals: 'quote' } } })
+    expect(requisitions).toMatchObject({ title: 'Purchase requisitions', relatedCollection: 'orders', where: { documentType: { equals: 'requisition' } } })
+    expect(orderPresets()).toHaveLength(5)
     expect(quoteStages().some((s) => orderStages().includes(s))).toBe(false)
   })
   it('a purchase order "sent to vendor" is not listed as a sales quote', () => {
@@ -114,9 +118,17 @@ describe('orders — the purchase side (the folded purchase-orders collection)',
     expect(side.defaultValue).toBe('sale')
   })
 
-  it('carries the vendor, delivery terms, the receipt join and the per-line GL account', () => {
+  it('the counterparty is ONE polymorphic relationship — a partner, an address or another tenant', () => {
     const fields = named(orderFields())
-    expect(fields.get('vendor')).toMatchObject({ type: 'relationship', relationTo: 'addresses' })
+    expect(fields.get('party')).toMatchObject({ type: 'relationship', relationTo: ['parties', 'addresses', 'tenants'] })
+    expect(fields.has('vendor')).toBe(false) // a purchase order's vendor IS the party, on the purchase side
+    // exactly one counterparty field among everything the register adds
+    const counterparties = orderFields().filter((f) => f.type === 'relationship' && [f.relationTo].flat().some((t) => t === 'parties' || t === 'addresses'))
+    expect(counterparties.map((f) => ('name' in f ? f.name : '')).sort()).toEqual(['billTo', 'party', 'shipTo'])
+  })
+
+  it('carries delivery terms, the receipt join and the per-line GL account', () => {
+    const fields = named(orderFields())
     expect(fields.get('receipts')).toMatchObject({ type: 'join', collection: 'goods-receipts', on: 'purchaseOrder' })
     expect(fields.get('invoice')).toMatchObject({ type: 'relationship', relationTo: 'invoices' })
     const lines = fields.get('lines')
@@ -148,5 +160,47 @@ describe('orders — the purchase side (the folded purchase-orders collection)',
     expect(() => check({ incotermsLocation: 'Burgas Port' })).toThrow(/deliveryTerms is required/)
     expect(() => check({ deliveryTerms: 'CIF', incotermsLocation: 'CIF Burgas Port' })).not.toThrow()
     expect(() => check({})).not.toThrow() // a sale, or a web checkout, has neither
+  })
+})
+
+describe('orders — a status is read per document type (vendor quotes and requisitions folded in)', () => {
+  type After = Parameters<CollectionAfterChangeHook>[0]
+
+  it('a document is an order unless it says otherwise — a web checkout sets no type', () => {
+    expect(typeOf({})).toBe('order')
+    expect(typeOf({ documentType: 'quote' })).toBe('quote')
+    expect(typeOf({ documentType: 'requisition' })).toBe('requisition')
+    expect(typeOf({ documentType: 'nonsense' })).toBe('order')
+    expect((named(orderFields()).get('documentType') as { defaultValue?: unknown }).defaultValue).toBe('order')
+  })
+
+  it('the same status word belongs to more than one document type, and all of them are selectable', () => {
+    const values = orderStatusOptions([]).map((o) => (typeof o === 'string' ? o : o.value))
+    expect(new Set(values).size).toBe(values.length) // each word listed once
+    for (const stage of [...vendorQuoteStages(), ...requisitionStages()]) expect(values, stage).toContain(stage)
+    // "received" is a vendor-quote stage AND a purchase-order stage; "approved" a requisition stage AND a purchase stage
+    expect(vendorQuoteStages()).toContain('received')
+    expect(requisitionStages()).toContain('approved')
+  })
+
+  it('"received" on a vendor quote fires the quote hook and not the order hooks; on a purchase order the reverse', async () => {
+    const ran: string[] = []
+    const mark = (name: string): CollectionAfterChangeHook => ({ doc }) => { ran.push(name); return doc }
+    const hooks = [onDocument('quote', mark('quote')), onDocument('requisition', mark('requisition')), onSide('purchase', mark('purchase-order')), onSide('sale', mark('sale-order'))]
+    const fire = async (doc: Record<string, unknown>) => { ran.length = 0; for (const h of hooks) await h({ doc } as unknown as After); return [...ran] }
+
+    expect(await fire({ documentType: 'quote', side: 'purchase', status: 'received' })).toEqual(['quote'])
+    expect(await fire({ documentType: 'order', side: 'purchase', status: 'received' })).toEqual(['purchase-order'])
+    expect(await fire({ documentType: 'requisition', side: 'purchase', status: 'approved' })).toEqual(['requisition'])
+    expect(await fire({ status: 'processing' })).toEqual(['sale-order']) // a web checkout
+  })
+
+  it('a quote and a requisition link to the order family itself', () => {
+    const fields = named(orderFields())
+    for (const name of ['requisition', 'createdPurchaseOrder', 'awardedQuote']) expect(fields.get(name), name).toMatchObject({ type: 'relationship', relationTo: 'orders' })
+    expect(fields.get('approvalChain')?.type).toBe('array')
+    const lines = fields.get('lines')
+    const lineNames = lines?.type === 'array' ? lines.fields.map((f) => ('name' in f ? f.name : '')) : []
+    expect(lineNames).toEqual(expect.arrayContaining(['leadTimeDays', 'preferredVendor']))
   })
 })

@@ -93,11 +93,9 @@ export { default as PaymentAllocations } from '@/collections/payment-allocations
 export { default as DunningCycles } from '@/collections/dunning-cycles'
 
 // Master Data: Vendors & Procurement
-export { default as VendorQuotes } from '@/collections/vendor-quotes'
 export { default as VendorScorecards } from '@/collections/vendor-scorecards'
 
 // Procurement: Purchase-to-Pay
-export { default as PurchaseRequisitions } from '@/collections/purchase-requisitions'
 export { default as GoodsReceipts } from '@/collections/goods-receipts'
 
 // Inventory & Warehouse
