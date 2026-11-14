@@ -18,6 +18,7 @@ import * as migration_20261114_112144_virtual_fields_and_period_lock_join from '
 import * as migration_20261114_112347_polymorphic_sources from './20261114_112347_polymorphic_sources';
 import * as migration_20261114_115945_fold_purchase_orders_into_orders from './20261114_115945_fold_purchase_orders_into_orders';
 import * as migration_20261114_120836_fold_quotes_and_requisitions_into_orders from './20261114_120836_fold_quotes_and_requisitions_into_orders';
+import * as migration_20261114_122616_roles_on_orders from './20261114_122616_roles_on_orders';
 
 export const migrations = [
   {
@@ -118,6 +119,11 @@ export const migrations = [
   {
     up: migration_20261114_120836_fold_quotes_and_requisitions_into_orders.up,
     down: migration_20261114_120836_fold_quotes_and_requisitions_into_orders.down,
-    name: '20261114_120836_fold_quotes_and_requisitions_into_orders'
+    name: '20261114_120836_fold_quotes_and_requisitions_into_orders',
+  },
+  {
+    up: migration_20261114_122616_roles_on_orders.up,
+    down: migration_20261114_122616_roles_on_orders.down,
+    name: '20261114_122616_roles_on_orders'
   },
 ];

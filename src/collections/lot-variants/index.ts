@@ -36,6 +36,7 @@
 import type { CollectionBeforeChangeHook, CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { notesField } from '@/fields/textarea/notesField'
 
@@ -82,7 +83,8 @@ const LotVariants: CollectionConfig = {
     description:
       'A lot’s per-variant line with the size/colour option breakdown. The variant total is the sum of its options (100% data-verified); the funnel ordered→delivered is monotonic.',
   },
-  access: accountingCollectionAccess({ feature: 'manufacturing' }),
+  // The collection's own rule OR the user's role abilities (etrima's Ability — @/access/collections/shared/abilityAccess).
+  access: withAbility(accountingCollectionAccess({ feature: 'manufacturing' }), 'lot-variants'),
   fields: [
     {
       name: 'lot',

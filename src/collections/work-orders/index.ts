@@ -84,6 +84,7 @@ import type {
 
 import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
 import { tenantScopedCollectionReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
@@ -397,12 +398,13 @@ export const Workorders: CollectionConfig = {
     description:
       'The production execution leaf (2.05M-row etrima twin) — one (lotphase × variant) assignment per worker/shift. Options array ⊕ derived header totals (double-entry), derived horo state, the forward! conveyor, and the piece-rate wage.',
   },
-  access: {
+  // The collection's own rule OR the user's role abilities (etrima's Ability — @/access/collections/shared/abilityAccess).
+  access: withAbility({
     create: createMembershipAdminMutateAccess('work-orders'),
     read: tenantScopedCollectionReadAccess,
     update: createMembershipAdminMutateAccess('work-orders'),
     delete: createMembershipAdminMutateAccess('work-orders'),
-  },
+  }, 'work-orders'),
   fields: [
     referenceField({ description: 'Work-order reference (e.g. `WO-2026-04-000123`).' }),
     { name: 'date', type: 'date', index: true, admin: { description: 'ISO 8601 — the production date (the shift date in etrima).' } },

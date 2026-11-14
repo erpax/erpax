@@ -36,6 +36,10 @@
  * by the fold. Dates stay ISO 8601, currency ISO 4217, units UN/CEFACT Rec 20, delivery terms
  * Incoterms 2020. (`customer` remains the plugin's own field: the user who checked out.)
  *
+ * THE PARTIES ARE ROLES. Beyond the counterparty field, anyone can be made a party to an order by
+ * holding a role on it — seller, buyer, supplier, consignee, forwarder (`@/utilities/party/roles`) — and
+ * reads it because of that role. etrima's five party columns on `orders` are those five roles.
+ *
  * THE TENANT'S CHAIR. `side`, `documentType` and `status` are the OWNING tenant's reading of the
  * document: what it means to that tenant's users. The same order is a purchase to the buyer and a
  * sale to the seller, and "sent" for one is "received" for the other. A document belongs to one
@@ -83,6 +87,9 @@ import { emitOrderLifecycleEvents } from '@/hooks/collections/users/emitOrderLif
 import { emitOnCreate, emitOnStatusTransition, emitPoCreated, emitPrApproved, emitPrSubmitted, emitRfqAwarded, emitRfqReceived } from '@/utilities/chain/event/emitter'
 import { taxonomySelect } from '@/fields/select/taxonomySelect'
 import { INCOTERM_OPTIONS } from '@/utilities/incoterms/2020'
+import { either } from '@/access/collections/shared/either'
+import { partyAccess } from '@/access/collections/shared/partyAccess'
+import { assignBuyerParty } from '@/hooks/collections/orders/assignBuyerParty'
 import { preset, type Preset } from '@/utilities/preset'
 
 /** The stages in which the document is still a quote: offered, not yet an order. */
@@ -413,8 +420,12 @@ export const ordersOverride: CollectionOverride = ({ defaultCollection }) => {
   })
   if (!widened) throw new Error('orders: the e-commerce plugin no longer has a top-level `status` select to carry the order stages')
 
+  const pluginRead = defaultCollection.access?.read
   return {
     ...defaultCollection,
+    // The plugin's own rule OR a party role held on the document: a seller, buyer, consignee … reads
+    // the orders it is a party to (the role engine, @/utilities/party/roles). Only read is widened.
+    access: { ...defaultCollection.access, ...(pluginRead ? { read: either(pluginRead, partyAccess('orders')) } : {}) },
     enableQueryPresets: true,
     fields: [...fields, accessTokenField, ...orderFields()],
     hooks: {
@@ -448,6 +459,8 @@ export const ordersOverride: CollectionOverride = ({ defaultCollection }) => {
         onDocument('quote', emitRfqAwarded),
         onDocument('requisition', emitPrSubmitted),
         onDocument('requisition', emitPrApproved),
+        // The checkout customer becomes the buyer party on their order (parties are roles on the document).
+        assignBuyerParty,
         auditTrailAfterChange('orders'),
       ],
     },

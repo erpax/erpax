@@ -38,6 +38,7 @@ import type { CollectionConfig, CollectionBeforeChangeHook, Field } from 'payloa
 
 import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
 import { tenantScopedCollectionReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
@@ -97,12 +98,13 @@ export const PackItems: CollectionConfig = {
     description:
       'The pack line (200,993-row etrima twin) — units of one produced lot-variant packed into one carton. Header-primary with an optional option breakdown; the double-entry holds when options are supplied.',
   },
-  access: {
+  // The collection's own rule OR the user's role abilities (etrima's Ability — @/access/collections/shared/abilityAccess).
+  access: withAbility({
     create: createMembershipAdminMutateAccess('pack-items'),
     read: tenantScopedCollectionReadAccess,
     update: createMembershipAdminMutateAccess('pack-items'),
     delete: createMembershipAdminMutateAccess('pack-items'),
-  },
+  }, 'pack-items'),
   fields: [
     referenceField({ description: 'Pack-line reference.' }),
 

@@ -17,3 +17,4 @@ export {
 export { TENANT_FIELD, VERSION_STATUS_FIELD, VersionStatus, type VersionStatusValue } from '@/utilities/scope/constants'
 export { wherePublished, wherePublishedAnd } from '@/utilities/scope/filters'
 export type { CollectionScope } from '@/utilities/scope/types'
+export { whereAccessible, whereParty } from '@/utilities/scope/ability'

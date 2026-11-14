@@ -1847,7 +1847,7 @@ export interface Role {
   /**
    * When scope is collection-level, pick which Payload collection this role applies to.
    */
-  scopedCollection?: ('tenants' | 'pages' | 'posts' | 'media' | 'categories' | 'products') | null;
+  scopedCollection?: ('tenants' | 'pages' | 'posts' | 'media' | 'categories' | 'products' | 'orders') | null;
   /**
    * When scope is document-level, choose the exact record.
    */
@@ -1875,6 +1875,10 @@ export interface Role {
     | ({
         relationTo: 'products';
         value: string | Product;
+      } | null)
+    | ({
+        relationTo: 'orders';
+        value: string | Order;
       } | null);
   /**
    * What the role can do on its scope — the rodin 3·6·9 governing axis (read<write<sign<admin; audit ⊥). The Role holds the capability; users inherit it by assignment.

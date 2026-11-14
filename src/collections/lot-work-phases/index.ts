@@ -35,6 +35,7 @@
 import type { CollectionBeforeChangeHook, CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { notesField } from '@/fields/textarea/notesField'
 
@@ -72,7 +73,8 @@ const LotWorkPhases: CollectionConfig = {
     description:
       'The routing step — one sort-ordered position in a lot’s phase chain, crossing to the work-phases catalog. Carries per-step time + unit counters; state is derived from watermarks.',
   },
-  access: accountingCollectionAccess({ feature: 'manufacturing' }),
+  // The collection's own rule OR the user's role abilities (etrima's Ability — @/access/collections/shared/abilityAccess).
+  access: withAbility(accountingCollectionAccess({ feature: 'manufacturing' }), 'lot-work-phases'),
   fields: [
     {
       name: 'lot',

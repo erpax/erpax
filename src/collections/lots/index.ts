@@ -39,6 +39,7 @@
 import type { CollectionBeforeChangeHook, CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { notesField } from '@/fields/textarea/notesField'
 import { currencyField } from '@/fields/text/currencyField'
@@ -126,7 +127,8 @@ const Lots: CollectionConfig = {
     description:
       'The production order (funnel head). Fans into lot-variants and a lot-work-phases routing chain; its state is DERIVED from lifecycle watermarks on the horo ring (never stored).',
   },
-  access: accountingCollectionAccess({ feature: 'manufacturing' }),
+  // The collection's own rule OR the user's role abilities (etrima's Ability — @/access/collections/shared/abilityAccess).
+  access: withAbility(accountingCollectionAccess({ feature: 'manufacturing' }), 'lots'),
   fields: [
     { name: 'number', type: 'text', index: true, admin: { description: 'Lot number — the production-order reference.' } },
     {
