@@ -26,11 +26,15 @@ import type { CollectionConfig, Field } from 'payload'
 export type Row = Record<string, unknown>
 export type Doc = Record<string, unknown> & { id: string }
 
-/** A stable uuid (RFC 9562 version 5 layout) for one etrima row: same table and id, same uuid. */
+/**
+ * A stable uuid for one etrima row: same table and id, same uuid. RFC 9562 version 8 (custom) —
+ * the first 128 bits of SHA-256 over the row's address. It is an identifier, not a secret, but
+ * SHA-256 keeps a weak hash away from ids derived from personal records.
+ */
 export const oid = (table: string, id: unknown): string => {
-  const hex = createHash('sha1').update(`etrima:${table}:${String(id)}`).digest('hex')
+  const hex = createHash('sha256').update(`etrima:${table}:${String(id)}`).digest('hex')
   const variant = ((parseInt(hex.slice(16, 18), 16) & 0x3f) | 0x80).toString(16).padStart(2, '0')
-  return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-5${hex.slice(13, 16)}-${variant}${hex.slice(18, 20)}-${hex.slice(20, 32)}`
+  return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-8${hex.slice(13, 16)}-${variant}${hex.slice(18, 20)}-${hex.slice(20, 32)}`
 }
 
 /** A relationship to another etrima row, or undefined when the row has none. */

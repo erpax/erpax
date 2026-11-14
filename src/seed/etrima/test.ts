@@ -17,8 +17,8 @@ describe('etrima port — every row gets a stable id', () => {
     expect(oid('lots', 42)).not.toBe(oid('lots', 43))
     expect(oid('lots', 42)).not.toBe(oid('packs', 42))
   })
-  it('is laid out as a version-5 uuid', () => {
-    expect(oid('lots', 42)).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/)
+  it('is laid out as a version-8 uuid', () => {
+    expect(oid('lots', 42)).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/)
   })
 })
 
