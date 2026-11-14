@@ -1,0 +1,86 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm lint*)",
+      "Bash(pnpm typecheck*)",
+      "Bash(pnpm test*)",
+      "Bash(pnpm standards:check)",
+      "Bash(pnpm standards:refresh)",
+      "Bash(pnpm generate:types)",
+      "Bash(pnpm generate:importmap)",
+      "Bash(./node_modules/.bin/vitest *)",
+      "Bash(./node_modules/.bin/tsc *)",
+      "Bash(./node_modules/.bin/eslint *)",
+      "Bash(NODE_OPTIONS=* ./node_modules/.bin/tsc *)",
+      "Bash(node scripts/standards-refresh.mjs*)",
+      "Bash(bash scripts/standards-citation-index.sh*)",
+      "Bash(node packages/release.mjs*)",
+      "Bash(node packages/build.mjs *)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git show*)",
+      "Bash(git branch*)",
+      "Bash(git fetch*)",
+      "Bash(git ls-remote*)",
+      "Bash(git rev-parse*)",
+      "Bash(git rev-list*)",
+      "Bash(git add -- *)",
+      "Bash(git commit *)",
+      "Bash(git switch *)",
+      "Bash(gh pr view*)",
+      "Bash(gh pr checks*)",
+      "Bash(gh pr list*)",
+      "Bash(gh run list*)",
+      "Bash(gh run view*)",
+      "Bash(wrangler whoami)",
+      "Bash(wrangler deployments list*)"
+    ],
+    "deny": [
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git stash*)",
+      "Bash(git reset --hard*)",
+      "Bash(rm -rf *)",
+      "Bash(pnpm deploy*)",
+      "Bash(wrangler deploy*)",
+      "Bash(wrangler d1 execute*)",
+      "Bash(wrangler d1 migrations*)",
+      "Bash(wrangler secret*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_response.filePath // .tool_input.file_path' | { read -r f; case \"$f\" in */src/*.ts|*/src/*.tsx) cd \"${CLAUDE_PROJECT_DIR:-.}\" && out=$(./node_modules/.bin/eslint --quiet \"$f\" 2>&1) || jq -n --arg c \"eslint found errors in $f:\n$out\" '{hookSpecificOutput:{hookEventName:\"PostToolUse\",additionalContext:$c}}';; esac; } 2>/dev/null || true",
+            "timeout": 60,
+            "statusMessage": "Linting the edited file"
+          },
+          {
+            "type": "command",
+            "command": "jq -r '.tool_response.filePath // .tool_input.file_path' | { read -r f; case \"$f\" in */src/*.ts|*/src/*.tsx) cd \"${CLAUDE_PROJECT_DIR:-.}\" && out=$(bash scripts/standards-citation-index.sh --check 2>&1) || jq -n --arg c \"standards banner check failed after editing $f:\n$out\" '{hookSpecificOutput:{hookEventName:\"PostToolUse\",additionalContext:$c}}';; esac; } 2>/dev/null || true",
+            "timeout": 30,
+            "statusMessage": "Checking standards tags"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "if": "Bash(git commit *)",
+            "command": "cd \"${CLAUDE_PROJECT_DIR:-.}\" && staged=$(git diff --cached --name-only) && if echo \"$staged\" | grep -q '^src/' && ! echo \"$staged\" | grep -q '^packages/released.json$'; then jq -n '{hookSpecificOutput:{hookEventName:\"PreToolUse\",additionalContext:\"src changes are staged but packages/released.json is not: this repo records the package manifest with each src change. Run node packages/release.mjs --write (it rebuilds every package, a few minutes) and commit the manifest, unless this commit is docs or tests only.\"}}'; fi 2>/dev/null || true",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
