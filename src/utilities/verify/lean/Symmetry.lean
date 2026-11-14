@@ -1,6 +1,8 @@
 /-
   Symmetry — what an involution of the zeta zeros can and cannot say about the critical line.
 
+  Clay: riemann meta
+
   The functional equation of ζ relates ζ(s) to ζ(1 − s), and ζ(s̄) = conj ζ(s). So the zero set is
   carried to itself by two involutions of the strip:
 

@@ -54,6 +54,71 @@ export function proofCensus(entries: readonly ProofEntry[]): ProofCensus {
 /** A census is only as good as its provenance: a stubbed theorem is never counted as proved. */
 export const proved = (c: ProofCensus): number => c.axiomFree + c.standardAxioms
 
+// ─── The seven Clay problems, as the kernel sees them ─────────────
+// A Lean file says what it is ABOUT on a `Clay: <problem> <kind>` line of its header comment. This joins
+// that declaration to the kernel's own report, so what the corpus has checked about each problem is
+// counted, not described. Nothing here can make a problem solved: only a file declared `statement`, that
+// compiled, with no stub, moves a problem into `claySettled`, and a tag is a DECLARATION, not proof that
+// the Lean statement is the real one (a theorem can be a tautology: see Erpax.lean `one_law`). The fidelity
+// of a `statement` file is a human review, and the list below is empty until someone writes one.
+
+/** The Clay Millennium problems, by slug. */
+export const CLAY = ['pnp', 'riemann', 'navier-stokes', 'yang-mills', 'hodge', 'bsd', 'poincare'] as const
+export type ClayProblem = (typeof CLAY)[number]
+
+/**
+ * What a file is about, as it declares:
+ *   meta       proves what some argument CANNOT do (an obstruction); says nothing about the statement's truth
+ *   partial    proves a true fragment or reduction of the statement
+ *   statement  proves the problem's statement itself
+ */
+export const CLAY_KINDS = ['meta', 'partial', 'statement'] as const
+export type ClayKind = (typeof CLAY_KINDS)[number]
+
+export interface ClayWitness {
+  readonly problem: ClayProblem
+  readonly kind: ClayKind
+  readonly file: string
+  /** false = the kernel refused the file. */
+  readonly compiled: boolean
+  readonly theorems: number
+  readonly axiomFree: number
+  readonly standardAxioms: number
+  readonly stubbed: number
+}
+
+/** The raw `Clay: <problem> <kind>` lines of one Lean source. */
+export const clayTags = (source: string): Array<{ problem: string; kind: string }> =>
+  [...source.matchAll(/^\s*Clay:\s+(\S+)\s+(\S+)/gm)].map((m) => ({ problem: m[1] as string, kind: m[2] as string }))
+
+/** What the kernel has checked about each problem: one witness per declaration, with its axiom footprint. */
+export function clayWitnesses(inventory: Pick<ProofInventory, 'files'>, sources: Readonly<Record<string, string>>): ClayWitness[] {
+  const out: ClayWitness[] = []
+  for (const file of inventory.files) {
+    for (const tag of clayTags(sources[file.file] ?? '')) {
+      // a typo must not silently hide a declaration
+      if (!(CLAY as readonly string[]).includes(tag.problem)) throw new Error(`${file.file}: "${tag.problem}" is not a Clay problem (${CLAY.join(', ')})`)
+      if (!(CLAY_KINDS as readonly string[]).includes(tag.kind)) throw new Error(`${file.file}: "${tag.kind}" is not a kind (${CLAY_KINDS.join(', ')})`)
+      out.push({
+        problem: tag.problem as ClayProblem,
+        kind: tag.kind as ClayKind,
+        file: file.file,
+        compiled: file.compiled,
+        theorems: file.entries.length,
+        axiomFree: file.entries.filter((e) => e.axiomFree).length,
+        standardAxioms: file.entries.filter((e) => !e.axiomFree && !e.stubbed).length,
+        stubbed: file.entries.filter((e) => e.stubbed).length,
+      })
+    }
+  }
+  return out
+}
+
+/** Problems with a compiled, stub-free Lean file that DECLARES it proves the statement itself. Empty today. */
+export const claySettled = (witnesses: readonly ClayWitness[]): ClayProblem[] => [
+  ...new Set(witnesses.filter((w) => w.kind === 'statement' && w.compiled && w.stubbed === 0 && w.theorems > 0).map((w) => w.problem)),
+]
+
 // ─── The emitter ──────────────────────────────────────────────────────────────
 // Runs where Lean exists (a developer, CI) and writes what the kernel said. The Worker never
 // compiles anything; it serves this record. `sourcesHash` is the content address of the .lean
