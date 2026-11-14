@@ -1,7 +1,7 @@
 {
   "@erpax/access": {
-    "version": "0.1.13",
-    "contentUuid": "28422757-a531-8114-89ef-39d4681b2b02"
+    "version": "0.1.14",
+    "contentUuid": "26ff6a68-e2fd-80fa-8205-eecd01ec0c61"
   },
   "@erpax/accounting": {
     "version": "0.1.10",
