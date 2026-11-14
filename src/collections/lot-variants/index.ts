@@ -14,9 +14,12 @@
  *  - `units = Σ option_N_units` holds **100.00%** (67 865/67 865). Likewise
  *    `units_produced = Σ option_N_units_produced` = **100.00%**. The roll-up is
  *    EXACT — encoded as a beforeChange hook, not a hope.
- *  - The funnel is monotonic: `units_ordered ≥ units ≥ units_produced ≥
- *    units_packed ≥ units_shipped ≥ units_delivered`. produced≤units 100%,
- *    delivered≤shipped 100%, packed≥shipped 100% (where both present, 55 748/55 748).
+ *  - Only the dispatch TAIL of the funnel is monotonic: `units_packed ≥ units_shipped ≥
+ *    units_delivered` holds on every row. The head is not: `units_ordered < units` on 61 251
+ *    rows (ordered counts what was released to the floor, 0 on 8 471), `units_produced <
+ *    units_packed` on 50 168 (packing is booked without a produced posting) and `units <
+ *    units_produced` on 2 741 (over-run). Measured by `pnpm test:etrima`, which refuted the
+ *    earlier "whole funnel is monotonic" claim (4.9% of rows satisfy it).
  *  - `status` is 100% NULL — a DEAD column. State is the lot's derived state;
  *    a variant carries only its counters. Dropped.
  *
@@ -26,7 +29,7 @@
  * @audit ISO-19011:2018 audit-trail variant-counter-changes
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @invariant roll-up — `units = Σ options[].units` AND `unitsProduced = Σ options[].produced` (100% in etrima).
- * @invariant funnel — `ordered ≥ units ≥ produced ≥ packed ≥ shipped ≥ delivered` (monotonic).
+ * @invariant funnel tail — `packed ≥ shipped ≥ delivered` (100% in etrima; the head is NOT monotonic).
  * @see src/lots (the parent funnel head) · src/lot/work/phases (the routing step a variant rides)
  */
 
@@ -131,7 +134,7 @@ const LotVariants: CollectionConfig = {
 
     // The variant funnel — monotonic counters (double-entry numbers).
     // `units` / `unitsProduced` are DERIVED from options[] by the roll-up hook.
-    counter('unitsOrdered', 'Units ordered (the funnel head; ≥ units).'),
+    counter('unitsOrdered', 'Units released to the floor (in etrima often below units — not a ceiling).'),
     counter('units', 'Variant total units — DERIVED = Σ options[].units (the roll-up law).'),
     counter('unitsProduced', 'Units produced — DERIVED = Σ options[].produced (≤ units).'),
     counter('unitsPacked', 'Units packed (≤ unitsProduced).'),

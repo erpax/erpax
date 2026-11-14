@@ -10,7 +10,27 @@
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "OrderStatus".
  */
-export type OrderStatus = ('processing' | 'completed' | 'cancelled' | 'refunded') | null;
+export type OrderStatus =
+  | (
+      | 'processing'
+      | 'completed'
+      | 'cancelled'
+      | 'refunded'
+      | 'draft'
+      | 'pending_approval'
+      | 'sent'
+      | 'accepted'
+      | 'rejected'
+      | 'expired'
+      | 'submitted'
+      | 'confirmed'
+      | 'partially_fulfilled'
+      | 'fulfilled'
+      | 'invoiced'
+      | 'closed'
+      | 'on_hold'
+    )
+  | null;
 /**
  * Supported timezones in IANA format.
  *
@@ -108,7 +128,6 @@ export interface Config {
     'compliance-deadlines': ComplianceDeadline;
     'compliance-frameworks': ComplianceFramework;
     'compliance-gaps': ComplianceGap;
-    'compliance-notifications': ComplianceNotification;
     'compliance-requirements': ComplianceRequirement;
     connections: Connection;
     'consent-records': ConsentRecord;
@@ -143,7 +162,6 @@ export interface Config {
     'financial-statements': FinancialStatement;
     'fiscal-calendars': FiscalCalendar;
     'fiscal-devices': FiscalDevice;
-    'fiscal-period-snapshots': FiscalPeriodSnapshot;
     'fiscal-periods': FiscalPeriod;
     'fixed-assets': FixedAsset;
     'fx-transactions': FxTransaction;
@@ -182,8 +200,6 @@ export interface Config {
     memories: Memory;
     messages: Message;
     'mineral-resource-assets': MineralResourceAsset;
-    'operation-runs': OperationRun;
-    operations: Operation;
     operators: Operator;
     opportunities: Opportunity;
     'pack-items': PackItem;
@@ -194,14 +210,12 @@ export interface Config {
     'payment-allocations': PaymentAllocation;
     'payment-methods': PaymentMethod;
     'payment-runs': PaymentRun;
-    payments: Payment;
     'payroll-runs': PayrollRun;
     'performance-obligations': PerformanceObligation;
     'performance-reviews': PerformanceReview;
     'period-end-adjustments': PeriodEndAdjustment;
     'period-locks': PeriodLock;
     'policy-acknowledgments': PolicyAcknowledgment;
-    'policy-versions': PolicyVersion;
     'post-balance-sheet-events': PostBalanceSheetEvent;
     'post-close-analytics-reports': PostCloseAnalyticsReport;
     posts: Post;
@@ -222,16 +236,13 @@ export interface Config {
     'regulatory-reports': RegulatoryReport;
     'related-party-transactions': RelatedPartyTransaction;
     'remediation-plans': RemediationPlan;
-    'reporting-mappings': ReportingMapping;
     'reporting-standards': ReportingStandard;
     returns: Return;
     'risk-register': RiskRegister;
     roles: Role;
     'rounding-adjustments': RoundingAdjustment;
-    routings: Routing;
     sales: Sale;
     'sales-commissions': SalesCommission;
-    'sales-orders': SalesOrder;
     sectors: Sector;
     'segment-reporting': SegmentReporting;
     'sepa-mandates': SepaMandate;
@@ -240,7 +251,6 @@ export interface Config {
     shipments: Shipment;
     spaces: Space;
     standards: Standard;
-    'statutory-field-mappings': StatutoryFieldMapping;
     'statutory-report-templates': StatutoryReportTemplate;
     'subscription-plans': SubscriptionPlan;
     subscriptions: Subscription;
@@ -251,7 +261,6 @@ export interface Config {
     'tax-jurisdictions': TaxJurisdiction;
     'tax-periods': TaxPeriod;
     'tax-returns': TaxReturn;
-    'taxing-jurisdictions': TaxingJurisdiction;
     tenants: Tenant;
     terminals: Terminal;
     'time-entries': TimeEntry;
@@ -261,7 +270,6 @@ export interface Config {
     'transfer-pricing-files': TransferPricingFile;
     translations: Translation;
     'usage-records': UsageRecord;
-    'user-roles': UserRole;
     users: User;
     'vendor-quotes': VendorQuote;
     'vendor-scorecards': VendorScorecard;
@@ -357,7 +365,6 @@ export interface Config {
     'compliance-deadlines': ComplianceDeadlinesSelect<false> | ComplianceDeadlinesSelect<true>;
     'compliance-frameworks': ComplianceFrameworksSelect<false> | ComplianceFrameworksSelect<true>;
     'compliance-gaps': ComplianceGapsSelect<false> | ComplianceGapsSelect<true>;
-    'compliance-notifications': ComplianceNotificationsSelect<false> | ComplianceNotificationsSelect<true>;
     'compliance-requirements': ComplianceRequirementsSelect<false> | ComplianceRequirementsSelect<true>;
     connections: ConnectionsSelect<false> | ConnectionsSelect<true>;
     'consent-records': ConsentRecordsSelect<false> | ConsentRecordsSelect<true>;
@@ -392,7 +399,6 @@ export interface Config {
     'financial-statements': FinancialStatementsSelect<false> | FinancialStatementsSelect<true>;
     'fiscal-calendars': FiscalCalendarsSelect<false> | FiscalCalendarsSelect<true>;
     'fiscal-devices': FiscalDevicesSelect<false> | FiscalDevicesSelect<true>;
-    'fiscal-period-snapshots': FiscalPeriodSnapshotsSelect<false> | FiscalPeriodSnapshotsSelect<true>;
     'fiscal-periods': FiscalPeriodsSelect<false> | FiscalPeriodsSelect<true>;
     'fixed-assets': FixedAssetsSelect<false> | FixedAssetsSelect<true>;
     'fx-transactions': FxTransactionsSelect<false> | FxTransactionsSelect<true>;
@@ -431,8 +437,6 @@ export interface Config {
     memories: MemoriesSelect<false> | MemoriesSelect<true>;
     messages: MessagesSelect<false> | MessagesSelect<true>;
     'mineral-resource-assets': MineralResourceAssetsSelect<false> | MineralResourceAssetsSelect<true>;
-    'operation-runs': OperationRunsSelect<false> | OperationRunsSelect<true>;
-    operations: OperationsSelect<false> | OperationsSelect<true>;
     operators: OperatorsSelect<false> | OperatorsSelect<true>;
     opportunities: OpportunitiesSelect<false> | OpportunitiesSelect<true>;
     'pack-items': PackItemsSelect<false> | PackItemsSelect<true>;
@@ -443,14 +447,12 @@ export interface Config {
     'payment-allocations': PaymentAllocationsSelect<false> | PaymentAllocationsSelect<true>;
     'payment-methods': PaymentMethodsSelect<false> | PaymentMethodsSelect<true>;
     'payment-runs': PaymentRunsSelect<false> | PaymentRunsSelect<true>;
-    payments: PaymentsSelect<false> | PaymentsSelect<true>;
     'payroll-runs': PayrollRunsSelect<false> | PayrollRunsSelect<true>;
     'performance-obligations': PerformanceObligationsSelect<false> | PerformanceObligationsSelect<true>;
     'performance-reviews': PerformanceReviewsSelect<false> | PerformanceReviewsSelect<true>;
     'period-end-adjustments': PeriodEndAdjustmentsSelect<false> | PeriodEndAdjustmentsSelect<true>;
     'period-locks': PeriodLocksSelect<false> | PeriodLocksSelect<true>;
     'policy-acknowledgments': PolicyAcknowledgmentsSelect<false> | PolicyAcknowledgmentsSelect<true>;
-    'policy-versions': PolicyVersionsSelect<false> | PolicyVersionsSelect<true>;
     'post-balance-sheet-events': PostBalanceSheetEventsSelect<false> | PostBalanceSheetEventsSelect<true>;
     'post-close-analytics-reports': PostCloseAnalyticsReportsSelect<false> | PostCloseAnalyticsReportsSelect<true>;
     posts: PostsSelect<false> | PostsSelect<true>;
@@ -471,16 +473,13 @@ export interface Config {
     'regulatory-reports': RegulatoryReportsSelect<false> | RegulatoryReportsSelect<true>;
     'related-party-transactions': RelatedPartyTransactionsSelect<false> | RelatedPartyTransactionsSelect<true>;
     'remediation-plans': RemediationPlansSelect<false> | RemediationPlansSelect<true>;
-    'reporting-mappings': ReportingMappingsSelect<false> | ReportingMappingsSelect<true>;
     'reporting-standards': ReportingStandardsSelect<false> | ReportingStandardsSelect<true>;
     returns: ReturnsSelect<false> | ReturnsSelect<true>;
     'risk-register': RiskRegisterSelect<false> | RiskRegisterSelect<true>;
     roles: RolesSelect<false> | RolesSelect<true>;
     'rounding-adjustments': RoundingAdjustmentsSelect<false> | RoundingAdjustmentsSelect<true>;
-    routings: RoutingsSelect<false> | RoutingsSelect<true>;
     sales: SalesSelect<false> | SalesSelect<true>;
     'sales-commissions': SalesCommissionsSelect<false> | SalesCommissionsSelect<true>;
-    'sales-orders': SalesOrdersSelect<false> | SalesOrdersSelect<true>;
     sectors: SectorsSelect<false> | SectorsSelect<true>;
     'segment-reporting': SegmentReportingSelect<false> | SegmentReportingSelect<true>;
     'sepa-mandates': SepaMandatesSelect<false> | SepaMandatesSelect<true>;
@@ -489,7 +488,6 @@ export interface Config {
     shipments: ShipmentsSelect<false> | ShipmentsSelect<true>;
     spaces: SpacesSelect<false> | SpacesSelect<true>;
     standards: StandardsSelect<false> | StandardsSelect<true>;
-    'statutory-field-mappings': StatutoryFieldMappingsSelect<false> | StatutoryFieldMappingsSelect<true>;
     'statutory-report-templates': StatutoryReportTemplatesSelect<false> | StatutoryReportTemplatesSelect<true>;
     'subscription-plans': SubscriptionPlansSelect<false> | SubscriptionPlansSelect<true>;
     subscriptions: SubscriptionsSelect<false> | SubscriptionsSelect<true>;
@@ -500,7 +498,6 @@ export interface Config {
     'tax-jurisdictions': TaxJurisdictionsSelect<false> | TaxJurisdictionsSelect<true>;
     'tax-periods': TaxPeriodsSelect<false> | TaxPeriodsSelect<true>;
     'tax-returns': TaxReturnsSelect<false> | TaxReturnsSelect<true>;
-    'taxing-jurisdictions': TaxingJurisdictionsSelect<false> | TaxingJurisdictionsSelect<true>;
     tenants: TenantsSelect<false> | TenantsSelect<true>;
     terminals: TerminalsSelect<false> | TerminalsSelect<true>;
     'time-entries': TimeEntriesSelect<false> | TimeEntriesSelect<true>;
@@ -510,7 +507,6 @@ export interface Config {
     'transfer-pricing-files': TransferPricingFilesSelect<false> | TransferPricingFilesSelect<true>;
     translations: TranslationsSelect<false> | TranslationsSelect<true>;
     'usage-records': UsageRecordsSelect<false> | UsageRecordsSelect<true>;
-    'user-roles': UserRolesSelect<false> | UserRolesSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     'vendor-quotes': VendorQuotesSelect<false> | VendorQuotesSelect<true>;
     'vendor-scorecards': VendorScorecardsSelect<false> | VendorScorecardsSelect<true>;
@@ -1744,6 +1740,10 @@ export interface User {
         id?: string | null;
       }[]
     | null;
+  /**
+   * Role definitions assigned to this user (global, tenant-wide or per-document).
+   */
+  roleAssignments?: (string | Role)[] | null;
   orders?: {
     docs?: (string | Order)[];
     hasNextPage?: boolean;
@@ -1812,300 +1812,64 @@ export interface User {
   collection: 'users';
 }
 /**
+ * Role name plus optional scope: entire app (global), any row in a collection (class), or one referenced document.
+ *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "orders".
+ * via the `definition` "roles".
  */
-export interface Order {
+export interface Role {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  items?:
-    | {
-        product?: (string | null) | Product;
-        variant?: (string | null) | Variant;
-        quantity: number;
-        id?: string | null;
-      }[]
-    | null;
-  shippingAddress?: {
-    title?: string | null;
-    firstName?: string | null;
-    lastName?: string | null;
-    company?: string | null;
-    addressLine1?: string | null;
-    addressLine2?: string | null;
-    city?: string | null;
-    state?: string | null;
-    postalCode?: string | null;
-    country?: string | null;
-    phone?: string | null;
-  };
-  customer?: (string | null) | User;
-  customerEmail?: string | null;
-  transactions?: (string | Transaction)[] | null;
-  status?: OrderStatus;
-  amount?: number | null;
-  currency?: 'EUR' | null;
-  accessToken?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "products".
- */
-export interface Product {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  title: string;
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  gallery?:
-    | {
-        image: string | Media;
-        variantOption?: (string | null) | VariantOption;
-        id?: string | null;
-      }[]
-    | null;
-  layout?: (CallToActionBlock | ContentBlock | MediaBlock)[] | null;
-  inventory?: number | null;
-  enableVariants?: boolean | null;
-  variantTypes?: (string | VariantType)[] | null;
-  variants?: {
-    docs?: (string | Variant)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
-  };
-  priceInEUREnabled?: boolean | null;
-  priceInEUR?: number | null;
-  relatedProducts?: (string | Product)[] | null;
-  meta?: {
-    title?: string | null;
-    /**
-     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
-     */
-    image?: (string | null) | Media;
-    description?: string | null;
-  };
-  categories?: (string | Category)[] | null;
-  /**
-   * When enabled, the slug will auto-generate from the title field on save and autosave.
-   */
-  generateSlug?: boolean | null;
-  slug: string;
-  updatedAt: string;
-  createdAt: string;
-  deletedAt?: string | null;
-  _status?: ('draft' | 'published') | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "media".
- */
-export interface Media {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  alt?: string | null;
-  caption?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-  url?: string | null;
-  thumbnailURL?: string | null;
-  filename?: string | null;
-  mimeType?: string | null;
-  filesize?: number | null;
-  width?: number | null;
-  height?: number | null;
-  focalX?: number | null;
-  focalY?: number | null;
-  sizes?: {
-    thumbnail?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    square?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    small?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    medium?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    large?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    xlarge?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    og?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-  };
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "variantOptions".
- */
-export interface VariantOption {
-  id: string;
-  _variantOptions_options_order?: string | null;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  variantType: string | VariantType;
-  label: string;
-  /**
-   * should be defaulted or dynamic based on label
-   */
-  value: string;
-  updatedAt: string;
-  createdAt: string;
-  deletedAt?: string | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "variantTypes".
- */
-export interface VariantType {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  label: string;
   name: string;
-  options?: {
-    docs?: (string | VariantOption)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
-  };
+  /**
+   * Matches stored role rows: global → no resource; collection → slug only; document → polymorphic reference.
+   */
+  binding: 'global' | 'collection' | 'document';
+  /**
+   * When scope is collection-level, pick which Payload collection this role applies to.
+   */
+  scopedCollection?: ('tenants' | 'pages' | 'posts' | 'media' | 'categories' | 'products') | null;
+  /**
+   * When scope is document-level, choose the exact record.
+   */
+  resource?:
+    | ({
+        relationTo: 'tenants';
+        value: string | Tenant;
+      } | null)
+    | ({
+        relationTo: 'pages';
+        value: string | Page;
+      } | null)
+    | ({
+        relationTo: 'posts';
+        value: string | Post;
+      } | null)
+    | ({
+        relationTo: 'media';
+        value: string | Media;
+      } | null)
+    | ({
+        relationTo: 'categories';
+        value: string | Category;
+      } | null)
+    | ({
+        relationTo: 'products';
+        value: string | Product;
+      } | null);
+  /**
+   * What the role can do on its scope — the rodin 3·6·9 governing axis (read<write<sign<admin; audit ⊥). The Role holds the capability; users inherit it by assignment.
+   */
+  capability?: ('read' | 'write' | 'sign' | 'admin' | 'audit') | null;
+  /**
+   * The skills/logic this role attaches (e.g. accounting/journal-entry, commerce/order). The Role holds the role skills.
+   */
+  skillRoutes?: string[] | null;
   updatedAt: string;
   createdAt: string;
-  deletedAt?: string | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "CallToActionBlock".
- */
-export interface CallToActionBlock {
-  richText?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  links?:
-    | {
-        link: {
-          type?: ('reference' | 'custom') | null;
-          newTab?: boolean | null;
-          reference?:
-            | ({
-                relationTo: 'pages';
-                value: string | Page;
-              } | null)
-            | ({
-                relationTo: 'posts';
-                value: string | Post;
-              } | null);
-          url?: string | null;
-          label: string;
-          /**
-           * Choose how the link should be rendered.
-           */
-          appearance?: ('default' | 'outline') | null;
-        };
-        id?: string | null;
-      }[]
-    | null;
-  id?: string | null;
-  blockName?: string | null;
-  blockType: 'cta';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -2267,6 +2031,103 @@ export interface Post {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "media".
+ */
+export interface Media {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  alt?: string | null;
+  caption?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
+  sizes?: {
+    thumbnail?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    square?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    small?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    medium?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    large?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    xlarge?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    og?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+  };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "categories".
  */
 export interface Category {
@@ -2318,6 +2179,163 @@ export interface Variant {
   createdAt: string;
   deletedAt?: string | null;
   _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "products".
+ */
+export interface Product {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  title: string;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  gallery?:
+    | {
+        image: string | Media;
+        variantOption?: (string | null) | VariantOption;
+        id?: string | null;
+      }[]
+    | null;
+  layout?: (CallToActionBlock | ContentBlock | MediaBlock)[] | null;
+  inventory?: number | null;
+  enableVariants?: boolean | null;
+  variantTypes?: (string | VariantType)[] | null;
+  variants?: {
+    docs?: (string | Variant)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  priceInEUREnabled?: boolean | null;
+  priceInEUR?: number | null;
+  relatedProducts?: (string | Product)[] | null;
+  meta?: {
+    title?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    description?: string | null;
+  };
+  categories?: (string | Category)[] | null;
+  /**
+   * When enabled, the slug will auto-generate from the title field on save and autosave.
+   */
+  generateSlug?: boolean | null;
+  slug: string;
+  updatedAt: string;
+  createdAt: string;
+  deletedAt?: string | null;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "variantOptions".
+ */
+export interface VariantOption {
+  id: string;
+  _variantOptions_options_order?: string | null;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  variantType: string | VariantType;
+  label: string;
+  /**
+   * should be defaulted or dynamic based on label
+   */
+  value: string;
+  updatedAt: string;
+  createdAt: string;
+  deletedAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "variantTypes".
+ */
+export interface VariantType {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  label: string;
+  name: string;
+  options?: {
+    docs?: (string | VariantOption)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+  deletedAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CallToActionBlock".
+ */
+export interface CallToActionBlock {
+  richText?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  links?:
+    | {
+        link: {
+          type?: ('reference' | 'custom') | null;
+          newTab?: boolean | null;
+          reference?:
+            | ({
+                relationTo: 'pages';
+                value: string | Page;
+              } | null)
+            | ({
+                relationTo: 'posts';
+                value: string | Post;
+              } | null);
+          url?: string | null;
+          label: string;
+          /**
+           * Choose how the link should be rendered.
+           */
+          appearance?: ('default' | 'outline') | null;
+        };
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'cta';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -2623,6 +2641,154 @@ export interface Form {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "orders".
+ */
+export interface Order {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  items?:
+    | {
+        product?: (string | null) | Product;
+        variant?: (string | null) | Variant;
+        quantity: number;
+        id?: string | null;
+      }[]
+    | null;
+  shippingAddress?: {
+    title?: string | null;
+    firstName?: string | null;
+    lastName?: string | null;
+    company?: string | null;
+    addressLine1?: string | null;
+    addressLine2?: string | null;
+    city?: string | null;
+    state?: string | null;
+    postalCode?: string | null;
+    country?: string | null;
+    phone?: string | null;
+  };
+  customer?: (string | null) | User;
+  customerEmail?: string | null;
+  transactions?: (string | Transaction)[] | null;
+  status?: OrderStatus;
+  amount?: number | null;
+  currency?: 'EUR' | null;
+  accessToken?: string | null;
+  /**
+   * Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents.
+   */
+  orderNumber: string;
+  /**
+   * The trading partner the order is with and invoiced to. (`customer` is the user who checked out.)
+   */
+  party?: (string | null) | Party;
+  /**
+   * Buyer-side PO number / reference. EN-16931 §BT-13 / Peppol cbc:BuyerReference.
+   */
+  customerOrderReference?: string | null;
+  /**
+   * Parent contract (when the order draws from a master contract — IFRS-15 §17 combined contracts).
+   */
+  contract?: (string | null) | Contract;
+  /**
+   * When the quote was sent to the customer.
+   */
+  sentAt?: string | null;
+  /**
+   * Until when the quoted terms hold.
+   */
+  expiresAt?: string | null;
+  /**
+   * When the customer accepted — IFRS-15 §10 contract inception.
+   */
+  acceptedAt?: string | null;
+  /**
+   * Buyer submission / acceptance date. Drives revenue-period determination.
+   */
+  orderDate?: string | null;
+  /**
+   * Buyer-requested delivery date (single shipment) or first window. EN-16931 §BT-72.
+   */
+  requestedDeliveryDate?: string | null;
+  /**
+   * Confirmed delivery date after vendor commits. Bound by status=confirmed transition.
+   */
+  promisedDeliveryDate?: string | null;
+  /**
+   * Deliver-to address record — EN-16931 §BG-15 / UBL Delivery/DeliveryLocation.
+   */
+  shipTo?: (string | null) | Address;
+  /**
+   * Bill-to address record (when distinct from the buyer registered address). EN-16931 §BG-8.
+   */
+  billTo?: (string | null) | Address;
+  /**
+   * Net of tax. EN-16931 §BT-109.
+   */
+  subTotalAmount?: number | null;
+  /**
+   * Sum of tax-category lines. EN-16931 §BT-110.
+   */
+  taxAmount?: number | null;
+  /**
+   * subTotal + tax. EN-16931 §BT-112.
+   */
+  totalAmount?: number | null;
+  lines?:
+    | {
+        /**
+         * Position within the order. Stable for cross-document trace.
+         */
+        lineNumber: number;
+        /**
+         * Catalogue item (when ordering from the item master).
+         */
+        item?: (string | null) | Item;
+        description: string;
+        quantity: number;
+        /**
+         * UN/CEFACT Rec 20 unit code (C62, KGM, LTR, …). EN-16931 §BT-130.
+         */
+        unitOfMeasure?: string | null;
+        unitPrice: number;
+        /**
+         * quantity × unitPrice net of tax. EN-16931 §BT-131.
+         */
+        lineNet?: number | null;
+        taxCategory?: (string | null) | TaxCode;
+        /**
+         * Line-level discount amount (negative impact on lineNet).
+         */
+        discount?: number | null;
+        /**
+         * Per-line delivery date (when distinct from order-header date).
+         */
+        requestedDeliveryDate?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Aggregate fulfilled quantity across all shipments. Maintained by hook.
+   */
+  fulfilledQuantity?: number | null;
+  /**
+   * Aggregate invoiced amount across all invoices. Maintained by hook.
+   */
+  invoicedAmount?: number | null;
+  cancellationDate?: string | null;
+  cancellationReason?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "transactions".
  */
 export interface Transaction {
@@ -2658,13 +2824,107 @@ export interface Transaction {
     country?: string | null;
     phone?: string | null;
   };
-  status: 'pending' | 'succeeded' | 'failed' | 'cancelled' | 'expired' | 'refunded';
+  status:
+    | 'pending'
+    | 'succeeded'
+    | 'failed'
+    | 'cancelled'
+    | 'expired'
+    | 'refunded'
+    | 'recorded'
+    | 'authorised'
+    | 'sent'
+    | 'received'
+    | 'settled'
+    | 'reversed';
   customer?: (string | null) | User;
   customerEmail?: string | null;
   order?: (string | null) | Order;
   cart?: (string | null) | Cart;
   amount?: number | null;
   currency?: 'EUR' | null;
+  /**
+   * Transaction reference number
+   */
+  transactionNumber?: string | null;
+  /**
+   * Set on a register payment; it selects the AR-vs-AP GL posting. Empty on a checkout transaction, which posts nothing here. Defaults to Received when an invoice is given.
+   */
+  paymentKind?: ('received' | 'sent') | null;
+  /**
+   * The invoice this payment settles (register payments).
+   */
+  invoice?: (string | null) | Invoice;
+  parties?: {
+    /**
+     * Payment sender (payer)
+     */
+    sender?: (string | null) | Address;
+    /**
+     * Payment receiver (payee)
+     */
+    receiver?: (string | null) | Address;
+  };
+  amounts?: {
+    /**
+     * Payment amount applied to the invoice — what the invoice-paid rollup sums
+     */
+    amount?: number | null;
+    /**
+     * Invoice amount reference
+     */
+    invoiceAmount?: number | null;
+    /**
+     * Currency code
+     */
+    currencyCode?: string | null;
+    /**
+     * Exchange rate
+     */
+    exchangeRate?: number | null;
+  };
+  dates?: {
+    /**
+     * When payment was sent
+     */
+    sentAt?: string | null;
+    /**
+     * When payment was received
+     */
+    receivedAt?: string | null;
+    /**
+     * When payment was authorized
+     */
+    authorizedAt?: string | null;
+  };
+  authorization?: {
+    /**
+     * User who authorized payment
+     */
+    authorizedBy?: (string | null) | User;
+  };
+  payment?: {
+    /**
+     * Payment method (register payments: bank transfer, cash, cheque …)
+     */
+    paymentMethod?: string | null;
+    /**
+     * Payment notes
+     */
+    note?: string | null;
+  };
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -2693,6 +2953,1129 @@ export interface Cart {
   status?: ('active' | 'purchased' | 'abandoned') | null;
   subtotal?: number | null;
   currency?: 'EUR' | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "invoices".
+ */
+export interface Invoice {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  typeStatus: {
+    /**
+     * Internal document type. For EN-16931 export, see invoiceTypeCode (BT-3) — the canonical UN/CEFACT 1001 code (commercial invoice = 380, credit note = 381, etc.).
+     */
+    invoiceType:
+      | 'cart'
+      | 'request'
+      | 'quotation'
+      | 'purchase_order'
+      | 'proforma_invoice'
+      | 'invoice'
+      | 'bill'
+      | 'credit_note'
+      | 'debit_note'
+      | 'protocol'
+      | 'subscription'
+      | 'lease'
+      | 'transfer';
+    /**
+     * BT-3 — UN/CEFACT 1001 document name code. Required for EN-16931 / Peppol BIS export. Maps to canonical InvoiceHeader.typeCode.
+     */
+    invoiceTypeCode?: ('326' | '380' | '381' | '384' | '386' | '388' | '389' | '393' | '395' | '751') | null;
+    /**
+     * Confirmed by parties
+     */
+    confirmed?: boolean | null;
+  };
+  /**
+   * Current status (top-level for consumer access).
+   */
+  status?:
+    | (
+        | 'draft'
+        | 'issued'
+        | 'confirmed'
+        | 'open'
+        | 'active'
+        | 'past_due'
+        | 'grace_period'
+        | 'paid'
+        | 'cancelled'
+        | 'complete'
+      )
+    | null;
+  /**
+   * Document number
+   */
+  number?: string | null;
+  /**
+   * Protocol number
+   */
+  protocolNumber?: string | null;
+  /**
+   * PO reference
+   */
+  purchaseOrder?: string | null;
+  /**
+   * SO reference
+   */
+  salesOrder?: string | null;
+  parties: {
+    /**
+     * Selling party
+     */
+    seller: string | Address;
+    /**
+     * Seller agent
+     */
+    sellerAgent?: (string | null) | Address;
+    /**
+     * Buying party
+     */
+    buyer: string | Address;
+    /**
+     * Buyer agent
+     */
+    buyerAgent?: (string | null) | Address;
+    /**
+     * Supplier
+     */
+    supplier?: (string | null) | Address;
+    /**
+     * Delivery recipient
+     */
+    consignee?: (string | null) | Address;
+  };
+  dates?: {
+    /**
+     * Document date
+     */
+    date?: string | null;
+    /**
+     * Issue date
+     */
+    issuedAt?: string | null;
+    /**
+     * Order date
+     */
+    orderDate?: string | null;
+    /**
+     * Proforma date
+     */
+    proformaDate?: string | null;
+    /**
+     * Protocol date
+     */
+    protocolDate?: string | null;
+    /**
+     * Payment date
+     */
+    paymentDate?: string | null;
+    /**
+     * Full payment date
+     */
+    paidAt?: string | null;
+    /**
+     * Delivery date
+     */
+    deliveredAt?: string | null;
+    /**
+     * Cancellation date
+     */
+    cancelledAt?: string | null;
+    /**
+     * Due-by date used by the dunning cycle
+     */
+    dueAt?: string | null;
+    /**
+     * Set when the dunning cycle first marks the invoice past-due
+     */
+    pastDueSinceAt?: string | null;
+    /**
+     * Computed: pastDueSinceAt + grace window
+     */
+    gracePeriodEndsAt?: string | null;
+    /**
+     * Computed: when the related subscription is scheduled for suspension
+     */
+    suspensionScheduledFor?: string | null;
+  };
+  amounts: {
+    /**
+     * BT-106 — Sum of invoice line net amounts. Maps to canonical DocumentTotals.lineNetTotal.
+     */
+    itemTotal: number;
+    /**
+     * Total discounts applied. Includes line-level + document-level allowances; for the canonical breakdown see allowancesTotal (BT-107) below.
+     */
+    discountTotal?: number | null;
+    /**
+     * BT-107 — Sum of document-level allowances (BG-20). Maps to canonical DocumentTotals.allowancesTotal.
+     */
+    allowancesTotal?: number | null;
+    /**
+     * BT-108 — Sum of document-level charges (BG-21). Maps to canonical DocumentTotals.chargesTotal.
+     */
+    chargesTotal?: number | null;
+    /**
+     * BT-109 — Invoice total amount without VAT (= itemTotal − allowancesTotal + chargesTotal). Maps to canonical DocumentTotals.taxExclusiveTotal.
+     */
+    netTotal?: number | null;
+    /**
+     * BT-110 — Invoice total VAT amount (sum of BG-23 BT-117). Maps to canonical DocumentTotals.vatTotal.
+     */
+    taxTotal?: number | null;
+    /**
+     * BT-112 — Invoice total amount with VAT. Maps to canonical DocumentTotals.taxInclusiveTotal.
+     */
+    totalAmount: number;
+    /**
+     * BT-113 — Paid amount (prepayment). Maps to canonical DocumentTotals.prepaidAmount.
+     */
+    prepaidAmount?: number | null;
+    /**
+     * BT-114 — Rounding amount (small-amount rounding to legal-tender minimum). Can be negative. Maps to canonical DocumentTotals.roundingAmount.
+     */
+    roundingAmount?: number | null;
+    /**
+     * Amount paid (running ledger of receipts).
+     */
+    totalPaid?: number | null;
+    /**
+     * BT-115 — Amount due for payment (= taxInclusiveTotal − prepaidAmount + roundingAmount). Maps to canonical DocumentTotals.amountDue.
+     */
+    totalDue?: number | null;
+  };
+  /**
+   * EN 16931 §BG-23 — one row per VAT category × rate. Required for EN-16931 / Peppol BIS export. Maps to canonical VatBreakdown[].
+   */
+  vatBreakdown?:
+    | {
+        /**
+         * BT-118 — VAT category code (UN/CEFACT 5305).
+         */
+        categoryCode: 'S' | 'Z' | 'E' | 'AE' | 'K' | 'G' | 'O' | 'L' | 'M';
+        /**
+         * BT-119 — VAT category rate (percent).
+         */
+        rate?: number | null;
+        /**
+         * BT-116 — VAT category taxable amount (cents).
+         */
+        taxableAmount: number;
+        /**
+         * BT-117 — VAT category tax amount (cents).
+         */
+        taxAmount: number;
+        /**
+         * BT-121 — Exemption reason code (required when categoryCode is E / AE / K / G / O).
+         */
+        exemptionReasonCode?: string | null;
+        /**
+         * BT-120 — Exemption reason free text.
+         */
+        exemptionReason?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  billingTax: {
+    /**
+     * ISO 4217 currency
+     */
+    currencyCode: string;
+    /**
+     * Exchange rate
+     */
+    exchangeRate?: number | null;
+    /**
+     * Tax regime
+     */
+    taxType?: ('vat' | 'gst') | null;
+    /**
+     * Price includes tax
+     */
+    taxesIncluded?: boolean | null;
+    /**
+     * Tax notes
+     */
+    taxNote?: string | null;
+  };
+  recurring?: {
+    /**
+     * Billing frequency
+     */
+    billingPeriod?: ('second' | 'minute' | 'hour' | 'day' | 'week' | 'month' | 'year') | null;
+    /**
+     * Next billing date
+     */
+    nextBillingDate?: string | null;
+    /**
+     * Period start
+     */
+    periodStart?: string | null;
+    /**
+     * Period end
+     */
+    periodEnd?: string | null;
+    /**
+     * Owning subscription (used by dunning cycle)
+     */
+    subscription?: (string | null) | Subscription;
+    /**
+     * Stripe invoice id — links this invoice to the Stripe billing multiverse.
+     */
+    stripeInvoiceId?: string | null;
+    /**
+     * Stripe PaymentIntent id for the paying charge.
+     */
+    stripePaymentIntentId?: string | null;
+    /**
+     * Dunning: count of failed payment attempts.
+     */
+    attemptCount?: number | null;
+    /**
+     * Dunning: timestamp of the last payment attempt.
+     */
+    lastAttemptAt?: string | null;
+    /**
+     * Dunning: last payment-attempt error message.
+     */
+    lastAttemptError?: string | null;
+  };
+  ledger?: {
+    /**
+     * Debit account
+     */
+    debitAccount?: (string | null) | GlAccount;
+    /**
+     * Credit account
+     */
+    creditAccount?: (string | null) | GlAccount;
+  };
+  notes?: {
+    /**
+     * General notes
+     */
+    note?: string | null;
+    /**
+     * Invoice notes
+     */
+    invoiceNote?: string | null;
+    /**
+     * Delivery notes
+     */
+    deliveryNote?: string | null;
+    /**
+     * Delivery terms
+     */
+    deliveryTerms?: string | null;
+    /**
+     * Payment terms
+     */
+    paymentTerms?: string | null;
+    /**
+     * Accepted payment methods
+     */
+    paymentMethods?:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+  };
+  relationships?: {
+    /**
+     * Parent invoice
+     */
+    parent?: (string | null) | Invoice;
+    /**
+     * Related order
+     */
+    order?: (string | null) | Invoice;
+    /**
+     * Domain context
+     */
+    domain?: (string | null) | Tenant;
+  };
+  /**
+   * СУПТО фискализация — касов бон / УНП, издаден при плащане в обхват.
+   */
+  fiscal?: {
+    /**
+     * Unique sales number (УНП) — assigned + frozen on create.
+     */
+    unp?: string | null;
+    unpSequence?: number | null;
+    /**
+     * Фискално устройство (ФУ).
+     */
+    fiscalDevice?: (string | null) | FiscalDevice;
+    /**
+     * 8-digit ФУ individual number — first УНП segment.
+     */
+    fiscalDeviceNumber?: string | null;
+    operatorCode?: string | null;
+    /**
+     * Виртуален ПОС терминал (алтернативен режим).
+     */
+    terminal?: (string | null) | Terminal;
+    /**
+     * Касов бон номер.
+     */
+    receiptNumber?: string | null;
+    /**
+     * Издаден касов бон.
+     */
+    receipt?: (string | null) | Receipt;
+    /**
+     * НАП fiscal-QR payload (device*УНП*date*time*sum).
+     */
+    qrData?: string | null;
+    /**
+     * Фискален статус (open → closed → reversed). Closed сторно само (Наредба Н-18).
+     */
+    status?: ('open' | 'closed' | 'voided' | 'reversed') | null;
+    /**
+     * Сторно на (оригинална фактура).
+     */
+    reversalOf?: (string | null) | Invoice;
+    /**
+     * Сторнирана с (кредитно известие).
+     */
+    reversedBy?: (string | null) | Invoice;
+  };
+  /**
+   * Test invoice
+   */
+  test?: boolean | null;
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "subscriptions".
+ */
+export interface Subscription {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Current subscription plan
+   */
+  plan: string | SubscriptionPlan;
+  /**
+   * Current subscription state in billing cycle
+   */
+  status: 'trial' | 'active' | 'past_due' | 'grace_period' | 'suspended' | 'cancelled';
+  trialStartedAt?: string | null;
+  trialEndsAt?: string | null;
+  currentPeriodStart?: string | null;
+  currentPeriodEnd?: string | null;
+  /**
+   * Stripe subscription object ID
+   */
+  stripeSubscriptionId?: string | null;
+  /**
+   * Stripe customer ID
+   */
+  stripeCustomerId?: string | null;
+  cancelledAt?: string | null;
+  cancellationReason?: string | null;
+  pausedAt?: string | null;
+  resumeAt?: string | null;
+  lastStatusChange?: string | null;
+  lastStatusChangeReason?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "subscription-plans".
+ */
+export interface SubscriptionPlan {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  name: string;
+  slug: string;
+  /**
+   * Stripe Product ID for this plan
+   */
+  stripeProductId?: string | null;
+  /**
+   * Stripe Price ID (recurring) for this plan
+   */
+  stripePriceId?: string | null;
+  /**
+   * Monthly price in minor units (0 for free tier); currency carried by `currency`.
+   */
+  monthlyPrice: number;
+  /**
+   * Yearly price in minor units (optional, for annual billing); currency carried by `currency`.
+   */
+  yearlyPrice?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  billingCycle: 'monthly' | 'yearly';
+  /**
+   * Feature limits as JSON. null = unlimited
+   */
+  limits:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  isActive?: boolean | null;
+  description?: string | null;
+  /**
+   * Display order in pricing pages (lower = first)
+   */
+  sortOrder?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fiscal-devices".
+ */
+export interface FiscalDevice {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * 8-digit ФУ individual number assigned by the manufacturer — first УНП segment.
+   */
+  individualNumber: string;
+  model?: string | null;
+  manufacturer?: string | null;
+  /**
+   * ISO 4217 currency this ФУ issues receipts in — overrides the tenant/country default.
+   */
+  currency?: string | null;
+  /**
+   * Active fiscal tax groups (Приложение № 1) on this device — group letter → VAT rate. Empty ⇒ country VAT bands.
+   */
+  taxGroups?:
+    | {
+        /**
+         * Tax-group letter (А/Б/В/Г).
+         */
+        group?: string | null;
+        /**
+         * VAT rate (%) configured for this group on this device.
+         */
+        rate?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Operator whose code (ZZZZ) numbers automated sales on this device.
+   */
+  defaultOperator?: (string | null) | Operator;
+  /**
+   * Virtual-POS terminal printed on automated e-receipts from this device.
+   */
+  defaultTerminal?: (string | null) | Terminal;
+  status?: ('active' | 'decommissioned') | null;
+  registeredAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "operators".
+ */
+export interface Operator {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * 4-digit operator code — second УНП segment.
+   */
+  code: string;
+  name: string;
+  user?: (string | null) | User;
+  status?: ('active' | 'decommissioned') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "terminals".
+ */
+export interface Terminal {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Virtual POS terminal number (printed on the e-receipt).
+   */
+  terminalNumber: string;
+  /**
+   * Payment-service provider operating the virtual POS.
+   */
+  provider?: string | null;
+  /**
+   * Settlement account (IBAN) the terminal pays into.
+   */
+  accountNumber?: string | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  status?: ('active' | 'inactive') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "receipts".
+ */
+export interface Receipt {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Касов бон number (or УНП in the alternative regime).
+   */
+  receiptNumber?: string | null;
+  /**
+   * Unique sales number (УНП) — assigned + frozen on create.
+   */
+  unp?: string | null;
+  sale?: (string | null) | Sale;
+  /**
+   * 8-digit ФУ individual number — first УНП segment.
+   */
+  fiscalDeviceNumber?: string | null;
+  operatorCode?: string | null;
+  virtualPosTerminal?: (string | null) | Terminal;
+  /**
+   * НАП fiscal-QR payload (device*УНП*date*time*sum).
+   */
+  qrData?: string | null;
+  issuedAt?: string | null;
+  total?: number | null;
+  vatTotal?: number | null;
+  /**
+   * VAT subtotals per Наредба Н-18 tax group (А/Б/В/Г) — frozen at issuance.
+   */
+  vatBreakdown?:
+    | {
+        /**
+         * Tax-group letter (Приложение № 1).
+         */
+        group?: string | null;
+        /**
+         * VAT rate (%).
+         */
+        rate?: number | null;
+        /**
+         * Net amount (cents).
+         */
+        net?: number | null;
+        /**
+         * VAT amount (cents).
+         */
+        vat?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
+  /**
+   * Customer e-mail the e-receipt was sent to (alternative regime).
+   */
+  deliveredTo?: string | null;
+  status?: ('issued' | 'delivered' | 'void') | null;
+  lines?:
+    | {
+        description?: string | null;
+        quantity?: number | null;
+        unitPrice?: number | null;
+        vatRate?: number | null;
+        amount?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sales".
+ */
+export interface Sale {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Unique sales number (УНП) — assigned + frozen on create.
+   */
+  unp?: string | null;
+  unpSequence?: number | null;
+  /**
+   * 8-digit ФУ individual number — first УНП segment.
+   */
+  fiscalDeviceNumber: string;
+  fiscalDevice?: (string | null) | FiscalDevice;
+  operatorCode?: string | null;
+  saleDate: string;
+  status?: ('open' | 'closed' | 'voided' | 'reversed') | null;
+  items?:
+    | {
+        description?: string | null;
+        quantity?: number | null;
+        unitPrice?: number | null;
+        vatRate?: number | null;
+        amount?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  total?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
+  /**
+   * Касов бон number — carries the УНП.
+   */
+  fiscalReceiptNumber?: string | null;
+  operator?: (string | null) | Operator;
+  terminal?: (string | null) | Terminal;
+  receipt?: (string | null) | Receipt;
+  /**
+   * Origin of the sale (revenue source) — keys idempotency + сторно.
+   */
+  source?: {
+    type?: ('order' | 'subscription' | 'invoice' | 'pos') | null;
+    /**
+     * Source document id.
+     */
+    ref?: string | null;
+  };
+  reversalOf?: (string | null) | Sale;
+  reversedBy?: (string | null) | Sale;
+  reversalReason?: string | null;
+  closedAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contracts".
+ */
+export interface Contract {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  contractNumber: string;
+  customer: string | Party;
+  title: string;
+  effectiveFrom: string;
+  effectiveTo?: string | null;
+  /**
+   * Aggregate transaction price (cents). = transactionPriceFixed + transactionPriceVariable + financingComponent − considerationPayableToCustomer. Maps to canonical TransactionPrice.total.
+   */
+  totalValue?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Fixed consideration component (cents). IFRS 15 §47. Maps to canonical TransactionPrice.fixed.
+   */
+  transactionPriceFixed?: number | null;
+  /**
+   * Estimated variable consideration after constraint (cents). IFRS 15 §50-§59. Maps to canonical VariableConsideration.estimate − constraint.
+   */
+  transactionPriceVariable?: number | null;
+  /**
+   * IFRS 15 §53 — estimation method when variable consideration is non-zero.
+   */
+  variableConsiderationMethod?: ('expected_value' | 'most_likely_amount') | null;
+  /**
+   * Significant financing component (cents). IFRS 15 §60-§65. Positive when entity is financier; negative when customer is financed.
+   */
+  financingComponent?: number | null;
+  /**
+   * IFRS 15 §17 — other contracts this one is accounted for as part of (combined-contract group). Maps to canonical Contract.combinedWithContractIds.
+   */
+  combinedWithContracts?: (string | Contract)[] | null;
+  paymentTerms?: ('net0' | 'net15' | 'net30' | 'net60' | 'net90' | 'custom') | null;
+  /**
+   * IFRS 15 §22 distinct performance obligations.
+   */
+  performanceObligations?: {
+    docs?: (string | PerformanceObligation)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  /**
+   * IFRS 15 §B47 / ASC 606-10-25-13 contract modifications.
+   */
+  modifications?:
+    | {
+        modifiedAt: string;
+        description: string;
+        priceImpact?: number | null;
+        modifiedBy?: (string | null) | User;
+        id?: string | null;
+      }[]
+    | null;
+  status?:
+    ('draft' | 'pending_approval' | 'pending_signatures' | 'active' | 'suspended' | 'completed' | 'terminated') | null;
+  activatedAt?: string | null;
+  terminatedAt?: string | null;
+  /**
+   * Linked subscription (if SaaS).
+   */
+  subscription?: (string | null) | Subscription;
+  zkod?: {
+    /**
+     * Bulgaria ZKOD contract registry number (unique per ZKOD)
+     */
+    zkodContractNumber?: string | null;
+    /**
+     * Contract notarized per Bulgaria registry (required for contracts > 10k BGN)
+     */
+    zkodNotarized?: boolean | null;
+    /**
+     * Bulgaria Labor Code Art. 331: mandatory arbitration clause present (required for employment-related contracts)
+     */
+    mandatoryArbitrationClause?: boolean | null;
+  };
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "performance-obligations".
+ */
+export interface PerformanceObligation {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  contract: string | Contract;
+  description: string;
+  /**
+   * IFRS 15 §22(a): one distinct promise. §22(b): a series of substantially-the-same distinct goods/services with the same pattern of transfer (typical for SaaS subscriptions).
+   */
+  kind: 'distinct' | 'series';
+  /**
+   * When the customer obtains control. Most goods → point-in-time at delivery; services that meet §35 criteria → over-time.
+   */
+  recognitionTiming: 'point_in_time' | 'over_time';
+  /**
+   * Required when recognitionTiming = over_time. Output methods measure value transferred; input methods measure inputs consumed.
+   */
+  overTimeMeasurement?: ('output_method' | 'input_method') | null;
+  /**
+   * Specific measurement kind under the chosen output/input method.
+   */
+  measurementKind?:
+    | (
+        | 'units_delivered'
+        | 'units_produced'
+        | 'milestones'
+        | 'time_elapsed'
+        | 'survey_of_work'
+        | 'cost_to_cost'
+        | 'labor_hours'
+        | 'machine_hours'
+        | 'resources_consumed'
+        | 'time_passed'
+      )
+    | null;
+  /**
+   * DEPRECATED — superseded by recognitionTiming + overTimeMeasurement + measurementKind. Kept for back-compat.
+   */
+  recognitionMethod?: ('point_in_time' | 'over_time_input' | 'over_time_output') | null;
+  /**
+   * In cents. Maps to canonical PerformanceObligation.standaloneSellingPrice.
+   */
+  standaloneSellingPrice: number;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Portion of contract transaction price allocated to this PO (cents). Computed by IFRS 15 §73 relative-SSP. Maps to canonical PerformanceObligation.allocatedAmount.
+   */
+  allocatedAmount?: number | null;
+  /**
+   * Cumulative recognised revenue (cents). Maps to canonical PerformanceObligation.recognizedAmount (note spelling — collection preserves British spelling for back-compat with seed data).
+   */
+  recognisedToDate?: number | null;
+  /**
+   * For over-time methods: 0–100. Maps to canonical PerformanceObligation.progress × 100 (canonical type uses 0..1 fraction).
+   */
+  percentComplete?: number | null;
+  status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
+  satisfiedAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "items".
+ */
+export interface Item {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Item code
+   */
+  code: string;
+  /**
+   * Display name — the catalog product name (the unique `code` is the identifier). From the etrima products merge.
+   */
+  name?: string | null;
+  /**
+   * SKU
+   */
+  sku?: string | null;
+  /**
+   * Barcode
+   */
+  barcode?: string | null;
+  /**
+   * The storefront product this item is sold as (e-commerce plugin).
+   */
+  product?: (string | null) | Product;
+  /**
+   * The storefront variant (option combination) this item is, when the product has variants.
+   */
+  variant?: (string | null) | Variant;
+  /**
+   * Owner/seller
+   */
+  address: string | Address;
+  pricing: {
+    /**
+     * Selling price
+     */
+    price?: number | null;
+    /**
+     * Cost price
+     */
+    cost?: number | null;
+    /**
+     * Compare at price
+     */
+    compareAtPrice?: number | null;
+    /**
+     * Vendor price
+     */
+    vendorPrice?: number | null;
+    /**
+     * Minimum price
+     */
+    minPrice?: number | null;
+    /**
+     * Currency
+     */
+    currencyCode: string;
+    /**
+     * Price includes tax
+     */
+    priceIncludesTax?: boolean | null;
+  };
+  taxation?: {
+    /**
+     * Is taxable
+     */
+    taxable?: boolean | null;
+    /**
+     * Tax rate %
+     */
+    taxRate?: number | null;
+    /**
+     * Tax debit account
+     */
+    taxDebitAccount?: (string | null) | GlAccount;
+    /**
+     * Tax credit account
+     */
+    taxCreditAccount?: (string | null) | GlAccount;
+  };
+  ledger?: {
+    /**
+     * Debit account
+     */
+    debitAccount?: (string | null) | GlAccount;
+    /**
+     * Credit account
+     */
+    creditAccount?: (string | null) | GlAccount;
+  };
+  inventory: {
+    /**
+     * Current inventory
+     */
+    inventoryQuantity: number;
+    /**
+     * Inventory management
+     */
+    inventoryManagement?: ('shopify' | 'manual' | 'none') | null;
+    /**
+     * Out of stock policy
+     */
+    inventoryPolicy?: ('deny' | 'continue') | null;
+  };
+  physical?: {
+    /**
+     * Weight
+     */
+    weight?: number | null;
+    /**
+     * Weight unit (kg, lbs)
+     */
+    weightUnit?: string | null;
+    /**
+     * Weight in grams
+     */
+    grams?: number | null;
+    /**
+     * HS Code
+     */
+    hsCode?: string | null;
+    /**
+     * Material / fibre composition (e.g. "80% cotton, 20% polyester"). The garment-catalog field from the etrima products merge (93.7% populated) — feeds customs (the HS code) and fibre-content labelling.
+     */
+    contents?: string | null;
+    /**
+     * Requires shipping
+     */
+    requiresShipping?: boolean | null;
+  };
+  discounts?: {
+    /**
+     * Max discount %
+     */
+    maxDiscountRate?: number | null;
+    /**
+     * Min profit %
+     */
+    minProfitRate?: number | null;
+    /**
+     * Max profit %
+     */
+    maxProfitRate?: number | null;
+  };
+  fulfillment?: {
+    /**
+     * Fulfillment service
+     */
+    fulfillmentService?: string | null;
+    /**
+     * Billing period (if recurring)
+     */
+    period?: ('second' | 'minute' | 'hour' | 'day' | 'week' | 'month' | 'year') | null;
+  };
+  visibility?: {
+    /**
+     * Item visibility
+     */
+    visibility?: ('public' | 'private' | 'wholesale') | null;
+  };
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -2825,6 +4208,10 @@ export interface TaxJurisdiction {
      */
     country: string;
     /**
+     * ISO 3166-1 alpha-3 country code (e.g., USA, DEU, GBR)
+     */
+    iso3Code?: string | null;
+    /**
      * ISO 3166-2 subdivision (e.g., CA, BY, NSW)
      */
     region?: string | null;
@@ -2833,6 +4220,60 @@ export interface TaxJurisdiction {
      */
     level: 'national' | 'state' | 'county' | 'city' | 'special_district' | 'supranational';
   };
+  /**
+   * Parent jurisdiction (a state within its country, a country within the EU)
+   */
+  parentJurisdiction?: (string | null) | TaxJurisdiction;
+  /**
+   * Languages used in the jurisdiction
+   */
+  languages?:
+    | {
+        languageCode: string;
+        languageName?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Regulatory characteristics
+   */
+  regulatoryCharacteristics?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Banking and financial institution requirements
+   */
+  bankingRequirements?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Key statutory filing deadlines of the jurisdiction (the tenant's own cadence is in Filing)
+   */
+  filingDeadlines?:
+    | {
+        filingType: string;
+        deadline: string;
+        frequency?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Applicable compliance frameworks
+   */
+  complianceFrameworks?: (string | ComplianceFramework)[] | null;
+  isActive?: boolean | null;
   registration?: {
     /**
      * Tenant registration / VAT / sales-tax permit number
@@ -2879,6 +4320,39 @@ export interface TaxJurisdiction {
     | number
     | boolean
     | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Read-only reference data
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-frameworks".
+ */
+export interface ComplianceFramework {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  code: string;
+  name: string;
+  category:
+    | 'accounting'
+    | 'auditing'
+    | 'control-framework'
+    | 'data-protection'
+    | 'info-security'
+    | 'banking'
+    | 'tax'
+    | 'esg'
+    | 'other';
+  description?: string | null;
+  issuingBody?: string | null;
+  officialResourceUrl?: string | null;
+  effectiveDate?: string | null;
+  isActive?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3294,6 +4768,10 @@ export interface FiscalPeriod {
    * Auto-derived label (e.g., FY2026-P05). Editable.
    */
   label?: string | null;
+  /**
+   * Why this change was made (amendment, correction, regulatory request). Recorded with the version this save creates.
+   */
+  changeReason?: string | null;
   identity: {
     /**
      * Fiscal year (e.g., 2026)
@@ -3645,269 +5123,6 @@ export interface FixedAsset {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contracts".
- */
-export interface Contract {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  contractNumber: string;
-  customer: string | Party;
-  title: string;
-  effectiveFrom: string;
-  effectiveTo?: string | null;
-  /**
-   * Aggregate transaction price (cents). = transactionPriceFixed + transactionPriceVariable + financingComponent − considerationPayableToCustomer. Maps to canonical TransactionPrice.total.
-   */
-  totalValue?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Fixed consideration component (cents). IFRS 15 §47. Maps to canonical TransactionPrice.fixed.
-   */
-  transactionPriceFixed?: number | null;
-  /**
-   * Estimated variable consideration after constraint (cents). IFRS 15 §50-§59. Maps to canonical VariableConsideration.estimate − constraint.
-   */
-  transactionPriceVariable?: number | null;
-  /**
-   * IFRS 15 §53 — estimation method when variable consideration is non-zero.
-   */
-  variableConsiderationMethod?: ('expected_value' | 'most_likely_amount') | null;
-  /**
-   * Significant financing component (cents). IFRS 15 §60-§65. Positive when entity is financier; negative when customer is financed.
-   */
-  financingComponent?: number | null;
-  /**
-   * IFRS 15 §17 — other contracts this one is accounted for as part of (combined-contract group). Maps to canonical Contract.combinedWithContractIds.
-   */
-  combinedWithContracts?: (string | Contract)[] | null;
-  paymentTerms?: ('net0' | 'net15' | 'net30' | 'net60' | 'net90' | 'custom') | null;
-  /**
-   * IFRS 15 §22 distinct performance obligations.
-   */
-  performanceObligations?: {
-    docs?: (string | PerformanceObligation)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
-  };
-  /**
-   * IFRS 15 §B47 / ASC 606-10-25-13 contract modifications.
-   */
-  modifications?:
-    | {
-        modifiedAt: string;
-        description: string;
-        priceImpact?: number | null;
-        modifiedBy?: (string | null) | User;
-        id?: string | null;
-      }[]
-    | null;
-  status?:
-    ('draft' | 'pending_approval' | 'pending_signatures' | 'active' | 'suspended' | 'completed' | 'terminated') | null;
-  activatedAt?: string | null;
-  terminatedAt?: string | null;
-  /**
-   * Linked subscription (if SaaS).
-   */
-  subscription?: (string | null) | Subscription;
-  zkod?: {
-    /**
-     * Bulgaria ZKOD contract registry number (unique per ZKOD)
-     */
-    zkodContractNumber?: string | null;
-    /**
-     * Contract notarized per Bulgaria registry (required for contracts > 10k BGN)
-     */
-    zkodNotarized?: boolean | null;
-    /**
-     * Bulgaria Labor Code Art. 331: mandatory arbitration clause present (required for employment-related contracts)
-     */
-    mandatoryArbitrationClause?: boolean | null;
-  };
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "performance-obligations".
- */
-export interface PerformanceObligation {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  contract: string | Contract;
-  description: string;
-  /**
-   * IFRS 15 §22(a): one distinct promise. §22(b): a series of substantially-the-same distinct goods/services with the same pattern of transfer (typical for SaaS subscriptions).
-   */
-  kind: 'distinct' | 'series';
-  /**
-   * When the customer obtains control. Most goods → point-in-time at delivery; services that meet §35 criteria → over-time.
-   */
-  recognitionTiming: 'point_in_time' | 'over_time';
-  /**
-   * Required when recognitionTiming = over_time. Output methods measure value transferred; input methods measure inputs consumed.
-   */
-  overTimeMeasurement?: ('output_method' | 'input_method') | null;
-  /**
-   * Specific measurement kind under the chosen output/input method.
-   */
-  measurementKind?:
-    | (
-        | 'units_delivered'
-        | 'units_produced'
-        | 'milestones'
-        | 'time_elapsed'
-        | 'survey_of_work'
-        | 'cost_to_cost'
-        | 'labor_hours'
-        | 'machine_hours'
-        | 'resources_consumed'
-        | 'time_passed'
-      )
-    | null;
-  /**
-   * DEPRECATED — superseded by recognitionTiming + overTimeMeasurement + measurementKind. Kept for back-compat.
-   */
-  recognitionMethod?: ('point_in_time' | 'over_time_input' | 'over_time_output') | null;
-  /**
-   * In cents. Maps to canonical PerformanceObligation.standaloneSellingPrice.
-   */
-  standaloneSellingPrice: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Portion of contract transaction price allocated to this PO (cents). Computed by IFRS 15 §73 relative-SSP. Maps to canonical PerformanceObligation.allocatedAmount.
-   */
-  allocatedAmount?: number | null;
-  /**
-   * Cumulative recognised revenue (cents). Maps to canonical PerformanceObligation.recognizedAmount (note spelling — collection preserves British spelling for back-compat with seed data).
-   */
-  recognisedToDate?: number | null;
-  /**
-   * For over-time methods: 0–100. Maps to canonical PerformanceObligation.progress × 100 (canonical type uses 0..1 fraction).
-   */
-  percentComplete?: number | null;
-  status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
-  satisfiedAt?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "subscriptions".
- */
-export interface Subscription {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Current subscription plan
-   */
-  plan: string | SubscriptionPlan;
-  /**
-   * Current subscription state in billing cycle
-   */
-  status: 'trial' | 'active' | 'past_due' | 'grace_period' | 'suspended' | 'cancelled';
-  trialStartedAt?: string | null;
-  trialEndsAt?: string | null;
-  currentPeriodStart?: string | null;
-  currentPeriodEnd?: string | null;
-  /**
-   * Stripe subscription object ID
-   */
-  stripeSubscriptionId?: string | null;
-  /**
-   * Stripe customer ID
-   */
-  stripeCustomerId?: string | null;
-  cancelledAt?: string | null;
-  cancellationReason?: string | null;
-  pausedAt?: string | null;
-  resumeAt?: string | null;
-  lastStatusChange?: string | null;
-  lastStatusChangeReason?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "subscription-plans".
- */
-export interface SubscriptionPlan {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  name: string;
-  slug: string;
-  /**
-   * Stripe Product ID for this plan
-   */
-  stripeProductId?: string | null;
-  /**
-   * Stripe Price ID (recurring) for this plan
-   */
-  stripePriceId?: string | null;
-  /**
-   * Monthly price in minor units (0 for free tier); currency carried by `currency`.
-   */
-  monthlyPrice: number;
-  /**
-   * Yearly price in minor units (optional, for annual billing); currency carried by `currency`.
-   */
-  yearlyPrice?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  billingCycle: 'monthly' | 'yearly';
-  /**
-   * Feature limits as JSON. null = unlimited
-   */
-  limits:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  isActive?: boolean | null;
-  description?: string | null;
-  /**
-   * Display order in pricing pages (lower = first)
-   */
-  sortOrder?: number | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4476,684 +5691,6 @@ export interface UsageRecord {
   createdAt: string;
 }
 /**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "invoices".
- */
-export interface Invoice {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  typeStatus: {
-    /**
-     * Internal document type. For EN-16931 export, see invoiceTypeCode (BT-3) — the canonical UN/CEFACT 1001 code (commercial invoice = 380, credit note = 381, etc.).
-     */
-    invoiceType:
-      | 'cart'
-      | 'request'
-      | 'quotation'
-      | 'purchase_order'
-      | 'proforma_invoice'
-      | 'invoice'
-      | 'bill'
-      | 'credit_note'
-      | 'debit_note'
-      | 'protocol'
-      | 'subscription'
-      | 'lease'
-      | 'transfer';
-    /**
-     * BT-3 — UN/CEFACT 1001 document name code. Required for EN-16931 / Peppol BIS export. Maps to canonical InvoiceHeader.typeCode.
-     */
-    invoiceTypeCode?: ('326' | '380' | '381' | '384' | '386' | '388' | '389' | '393' | '395' | '751') | null;
-    /**
-     * Confirmed by parties
-     */
-    confirmed?: boolean | null;
-  };
-  /**
-   * Current status (top-level for consumer access).
-   */
-  status?:
-    | (
-        | 'draft'
-        | 'issued'
-        | 'confirmed'
-        | 'open'
-        | 'active'
-        | 'past_due'
-        | 'grace_period'
-        | 'paid'
-        | 'cancelled'
-        | 'complete'
-      )
-    | null;
-  /**
-   * Document number
-   */
-  number?: string | null;
-  /**
-   * Protocol number
-   */
-  protocolNumber?: string | null;
-  /**
-   * PO reference
-   */
-  purchaseOrder?: string | null;
-  /**
-   * SO reference
-   */
-  salesOrder?: string | null;
-  parties: {
-    /**
-     * Selling party
-     */
-    seller: string | Address;
-    /**
-     * Seller agent
-     */
-    sellerAgent?: (string | null) | Address;
-    /**
-     * Buying party
-     */
-    buyer: string | Address;
-    /**
-     * Buyer agent
-     */
-    buyerAgent?: (string | null) | Address;
-    /**
-     * Supplier
-     */
-    supplier?: (string | null) | Address;
-    /**
-     * Delivery recipient
-     */
-    consignee?: (string | null) | Address;
-  };
-  dates?: {
-    /**
-     * Document date
-     */
-    date?: string | null;
-    /**
-     * Issue date
-     */
-    issuedAt?: string | null;
-    /**
-     * Order date
-     */
-    orderDate?: string | null;
-    /**
-     * Proforma date
-     */
-    proformaDate?: string | null;
-    /**
-     * Protocol date
-     */
-    protocolDate?: string | null;
-    /**
-     * Payment date
-     */
-    paymentDate?: string | null;
-    /**
-     * Full payment date
-     */
-    paidAt?: string | null;
-    /**
-     * Delivery date
-     */
-    deliveredAt?: string | null;
-    /**
-     * Cancellation date
-     */
-    cancelledAt?: string | null;
-    /**
-     * Due-by date used by the dunning cycle
-     */
-    dueAt?: string | null;
-    /**
-     * Set when the dunning cycle first marks the invoice past-due
-     */
-    pastDueSinceAt?: string | null;
-    /**
-     * Computed: pastDueSinceAt + grace window
-     */
-    gracePeriodEndsAt?: string | null;
-    /**
-     * Computed: when the related subscription is scheduled for suspension
-     */
-    suspensionScheduledFor?: string | null;
-  };
-  amounts: {
-    /**
-     * BT-106 — Sum of invoice line net amounts. Maps to canonical DocumentTotals.lineNetTotal.
-     */
-    itemTotal: number;
-    /**
-     * Total discounts applied. Includes line-level + document-level allowances; for the canonical breakdown see allowancesTotal (BT-107) below.
-     */
-    discountTotal?: number | null;
-    /**
-     * BT-107 — Sum of document-level allowances (BG-20). Maps to canonical DocumentTotals.allowancesTotal.
-     */
-    allowancesTotal?: number | null;
-    /**
-     * BT-108 — Sum of document-level charges (BG-21). Maps to canonical DocumentTotals.chargesTotal.
-     */
-    chargesTotal?: number | null;
-    /**
-     * BT-109 — Invoice total amount without VAT (= itemTotal − allowancesTotal + chargesTotal). Maps to canonical DocumentTotals.taxExclusiveTotal.
-     */
-    netTotal?: number | null;
-    /**
-     * BT-110 — Invoice total VAT amount (sum of BG-23 BT-117). Maps to canonical DocumentTotals.vatTotal.
-     */
-    taxTotal?: number | null;
-    /**
-     * BT-112 — Invoice total amount with VAT. Maps to canonical DocumentTotals.taxInclusiveTotal.
-     */
-    totalAmount: number;
-    /**
-     * BT-113 — Paid amount (prepayment). Maps to canonical DocumentTotals.prepaidAmount.
-     */
-    prepaidAmount?: number | null;
-    /**
-     * BT-114 — Rounding amount (small-amount rounding to legal-tender minimum). Can be negative. Maps to canonical DocumentTotals.roundingAmount.
-     */
-    roundingAmount?: number | null;
-    /**
-     * Amount paid (running ledger of receipts).
-     */
-    totalPaid?: number | null;
-    /**
-     * BT-115 — Amount due for payment (= taxInclusiveTotal − prepaidAmount + roundingAmount). Maps to canonical DocumentTotals.amountDue.
-     */
-    totalDue?: number | null;
-  };
-  /**
-   * EN 16931 §BG-23 — one row per VAT category × rate. Required for EN-16931 / Peppol BIS export. Maps to canonical VatBreakdown[].
-   */
-  vatBreakdown?:
-    | {
-        /**
-         * BT-118 — VAT category code (UN/CEFACT 5305).
-         */
-        categoryCode: 'S' | 'Z' | 'E' | 'AE' | 'K' | 'G' | 'O' | 'L' | 'M';
-        /**
-         * BT-119 — VAT category rate (percent).
-         */
-        rate?: number | null;
-        /**
-         * BT-116 — VAT category taxable amount (cents).
-         */
-        taxableAmount: number;
-        /**
-         * BT-117 — VAT category tax amount (cents).
-         */
-        taxAmount: number;
-        /**
-         * BT-121 — Exemption reason code (required when categoryCode is E / AE / K / G / O).
-         */
-        exemptionReasonCode?: string | null;
-        /**
-         * BT-120 — Exemption reason free text.
-         */
-        exemptionReason?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  billingTax: {
-    /**
-     * ISO 4217 currency
-     */
-    currencyCode: string;
-    /**
-     * Exchange rate
-     */
-    exchangeRate?: number | null;
-    /**
-     * Tax regime
-     */
-    taxType?: ('vat' | 'gst') | null;
-    /**
-     * Price includes tax
-     */
-    taxesIncluded?: boolean | null;
-    /**
-     * Tax notes
-     */
-    taxNote?: string | null;
-  };
-  recurring?: {
-    /**
-     * Billing frequency
-     */
-    billingPeriod?: ('second' | 'minute' | 'hour' | 'day' | 'week' | 'month' | 'year') | null;
-    /**
-     * Next billing date
-     */
-    nextBillingDate?: string | null;
-    /**
-     * Period start
-     */
-    periodStart?: string | null;
-    /**
-     * Period end
-     */
-    periodEnd?: string | null;
-    /**
-     * Owning subscription (used by dunning cycle)
-     */
-    subscription?: (string | null) | Subscription;
-    /**
-     * Stripe invoice id — links this invoice to the Stripe billing multiverse.
-     */
-    stripeInvoiceId?: string | null;
-    /**
-     * Stripe PaymentIntent id for the paying charge.
-     */
-    stripePaymentIntentId?: string | null;
-    /**
-     * Dunning: count of failed payment attempts.
-     */
-    attemptCount?: number | null;
-    /**
-     * Dunning: timestamp of the last payment attempt.
-     */
-    lastAttemptAt?: string | null;
-    /**
-     * Dunning: last payment-attempt error message.
-     */
-    lastAttemptError?: string | null;
-  };
-  ledger?: {
-    /**
-     * Debit account
-     */
-    debitAccount?: (string | null) | GlAccount;
-    /**
-     * Credit account
-     */
-    creditAccount?: (string | null) | GlAccount;
-  };
-  notes?: {
-    /**
-     * General notes
-     */
-    note?: string | null;
-    /**
-     * Invoice notes
-     */
-    invoiceNote?: string | null;
-    /**
-     * Delivery notes
-     */
-    deliveryNote?: string | null;
-    /**
-     * Delivery terms
-     */
-    deliveryTerms?: string | null;
-    /**
-     * Payment terms
-     */
-    paymentTerms?: string | null;
-    /**
-     * Accepted payment methods
-     */
-    paymentMethods?:
-      | {
-          [k: string]: unknown;
-        }
-      | unknown[]
-      | string
-      | number
-      | boolean
-      | null;
-  };
-  relationships?: {
-    /**
-     * Parent invoice
-     */
-    parent?: (string | null) | Invoice;
-    /**
-     * Related order
-     */
-    order?: (string | null) | Invoice;
-    /**
-     * Domain context
-     */
-    domain?: (string | null) | Tenant;
-  };
-  /**
-   * СУПТО фискализация — касов бон / УНП, издаден при плащане в обхват.
-   */
-  fiscal?: {
-    /**
-     * Unique sales number (УНП) — assigned + frozen on create.
-     */
-    unp?: string | null;
-    unpSequence?: number | null;
-    /**
-     * Фискално устройство (ФУ).
-     */
-    fiscalDevice?: (string | null) | FiscalDevice;
-    /**
-     * 8-digit ФУ individual number — first УНП segment.
-     */
-    fiscalDeviceNumber?: string | null;
-    operatorCode?: string | null;
-    /**
-     * Виртуален ПОС терминал (алтернативен режим).
-     */
-    terminal?: (string | null) | Terminal;
-    /**
-     * Касов бон номер.
-     */
-    receiptNumber?: string | null;
-    /**
-     * Издаден касов бон.
-     */
-    receipt?: (string | null) | Receipt;
-    /**
-     * НАП fiscal-QR payload (device*УНП*date*time*sum).
-     */
-    qrData?: string | null;
-    /**
-     * Фискален статус (open → closed → reversed). Closed сторно само (Наредба Н-18).
-     */
-    status?: ('open' | 'closed' | 'voided' | 'reversed') | null;
-    /**
-     * Сторно на (оригинална фактура).
-     */
-    reversalOf?: (string | null) | Invoice;
-    /**
-     * Сторнирана с (кредитно известие).
-     */
-    reversedBy?: (string | null) | Invoice;
-  };
-  /**
-   * Test invoice
-   */
-  test?: boolean | null;
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fiscal-devices".
- */
-export interface FiscalDevice {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * 8-digit ФУ individual number assigned by the manufacturer — first УНП segment.
-   */
-  individualNumber: string;
-  model?: string | null;
-  manufacturer?: string | null;
-  /**
-   * ISO 4217 currency this ФУ issues receipts in — overrides the tenant/country default.
-   */
-  currency?: string | null;
-  /**
-   * Active fiscal tax groups (Приложение № 1) on this device — group letter → VAT rate. Empty ⇒ country VAT bands.
-   */
-  taxGroups?:
-    | {
-        /**
-         * Tax-group letter (А/Б/В/Г).
-         */
-        group?: string | null;
-        /**
-         * VAT rate (%) configured for this group on this device.
-         */
-        rate?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Operator whose code (ZZZZ) numbers automated sales on this device.
-   */
-  defaultOperator?: (string | null) | Operator;
-  /**
-   * Virtual-POS terminal printed on automated e-receipts from this device.
-   */
-  defaultTerminal?: (string | null) | Terminal;
-  status?: ('active' | 'decommissioned') | null;
-  registeredAt?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "operators".
- */
-export interface Operator {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * 4-digit operator code — second УНП segment.
-   */
-  code: string;
-  name: string;
-  user?: (string | null) | User;
-  status?: ('active' | 'decommissioned') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "terminals".
- */
-export interface Terminal {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Virtual POS terminal number (printed on the e-receipt).
-   */
-  terminalNumber: string;
-  /**
-   * Payment-service provider operating the virtual POS.
-   */
-  provider?: string | null;
-  /**
-   * Settlement account (IBAN) the terminal pays into.
-   */
-  accountNumber?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  status?: ('active' | 'inactive') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "receipts".
- */
-export interface Receipt {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Касов бон number (or УНП in the alternative regime).
-   */
-  receiptNumber?: string | null;
-  /**
-   * Unique sales number (УНП) — assigned + frozen on create.
-   */
-  unp?: string | null;
-  sale?: (string | null) | Sale;
-  /**
-   * 8-digit ФУ individual number — first УНП segment.
-   */
-  fiscalDeviceNumber?: string | null;
-  operatorCode?: string | null;
-  virtualPosTerminal?: (string | null) | Terminal;
-  /**
-   * НАП fiscal-QR payload (device*УНП*date*time*sum).
-   */
-  qrData?: string | null;
-  issuedAt?: string | null;
-  total?: number | null;
-  vatTotal?: number | null;
-  /**
-   * VAT subtotals per Наредба Н-18 tax group (А/Б/В/Г) — frozen at issuance.
-   */
-  vatBreakdown?:
-    | {
-        /**
-         * Tax-group letter (Приложение № 1).
-         */
-        group?: string | null;
-        /**
-         * VAT rate (%).
-         */
-        rate?: number | null;
-        /**
-         * Net amount (cents).
-         */
-        net?: number | null;
-        /**
-         * VAT amount (cents).
-         */
-        vat?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
-  /**
-   * Customer e-mail the e-receipt was sent to (alternative regime).
-   */
-  deliveredTo?: string | null;
-  status?: ('issued' | 'delivered' | 'void') | null;
-  lines?:
-    | {
-        description?: string | null;
-        quantity?: number | null;
-        unitPrice?: number | null;
-        vatRate?: number | null;
-        amount?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "sales".
- */
-export interface Sale {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Unique sales number (УНП) — assigned + frozen on create.
-   */
-  unp?: string | null;
-  unpSequence?: number | null;
-  /**
-   * 8-digit ФУ individual number — first УНП segment.
-   */
-  fiscalDeviceNumber: string;
-  fiscalDevice?: (string | null) | FiscalDevice;
-  operatorCode?: string | null;
-  saleDate: string;
-  status?: ('open' | 'closed' | 'voided' | 'reversed') | null;
-  items?:
-    | {
-        description?: string | null;
-        quantity?: number | null;
-        unitPrice?: number | null;
-        vatRate?: number | null;
-        amount?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  total?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
-  /**
-   * Касов бон number — carries the УНП.
-   */
-  fiscalReceiptNumber?: string | null;
-  operator?: (string | null) | Operator;
-  terminal?: (string | null) | Terminal;
-  receipt?: (string | null) | Receipt;
-  /**
-   * Origin of the sale (revenue source) — keys idempotency + сторно.
-   */
-  source?: {
-    type?: ('order' | 'subscription' | 'invoice' | 'pos') | null;
-    /**
-     * Source document id.
-     */
-    ref?: string | null;
-  };
-  reversalOf?: (string | null) | Sale;
-  reversedBy?: (string | null) | Sale;
-  reversalReason?: string | null;
-  closedAt?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * Every external-API call (FX / VAT / sanctions / e-invoicing / mTLS filing) — one row per call, source-attributed for SOX §404 traceability.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -5597,39 +6134,6 @@ export interface ComplianceRequirement {
   section?: string | null;
   severity?: ('critical' | 'high' | 'medium' | 'low' | 'info') | null;
   resourceUrl?: string | null;
-  isActive?: boolean | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Read-only reference data
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "compliance-frameworks".
- */
-export interface ComplianceFramework {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  code: string;
-  name: string;
-  category:
-    | 'accounting'
-    | 'auditing'
-    | 'control-framework'
-    | 'data-protection'
-    | 'info-security'
-    | 'banking'
-    | 'tax'
-    | 'esg'
-    | 'other';
-  description?: string | null;
-  issuingBody?: string | null;
-  officialResourceUrl?: string | null;
-  effectiveDate?: string | null;
   isActive?: boolean | null;
   updatedAt: string;
   createdAt: string;
@@ -6428,180 +6932,6 @@ export interface Batch {
   createdAt: string;
 }
 /**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "items".
- */
-export interface Item {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Item code
-   */
-  code: string;
-  /**
-   * Display name — the catalog product name (the unique `code` is the identifier). From the etrima products merge.
-   */
-  name?: string | null;
-  /**
-   * SKU
-   */
-  sku?: string | null;
-  /**
-   * Barcode
-   */
-  barcode?: string | null;
-  /**
-   * Owner/seller
-   */
-  address: string | Address;
-  pricing: {
-    /**
-     * Selling price
-     */
-    price?: number | null;
-    /**
-     * Cost price
-     */
-    cost?: number | null;
-    /**
-     * Compare at price
-     */
-    compareAtPrice?: number | null;
-    /**
-     * Vendor price
-     */
-    vendorPrice?: number | null;
-    /**
-     * Minimum price
-     */
-    minPrice?: number | null;
-    /**
-     * Currency
-     */
-    currencyCode: string;
-    /**
-     * Price includes tax
-     */
-    priceIncludesTax?: boolean | null;
-  };
-  taxation?: {
-    /**
-     * Is taxable
-     */
-    taxable?: boolean | null;
-    /**
-     * Tax rate %
-     */
-    taxRate?: number | null;
-    /**
-     * Tax debit account
-     */
-    taxDebitAccount?: (string | null) | GlAccount;
-    /**
-     * Tax credit account
-     */
-    taxCreditAccount?: (string | null) | GlAccount;
-  };
-  ledger?: {
-    /**
-     * Debit account
-     */
-    debitAccount?: (string | null) | GlAccount;
-    /**
-     * Credit account
-     */
-    creditAccount?: (string | null) | GlAccount;
-  };
-  inventory: {
-    /**
-     * Current inventory
-     */
-    inventoryQuantity: number;
-    /**
-     * Inventory management
-     */
-    inventoryManagement?: ('shopify' | 'manual' | 'none') | null;
-    /**
-     * Out of stock policy
-     */
-    inventoryPolicy?: ('deny' | 'continue') | null;
-  };
-  physical?: {
-    /**
-     * Weight
-     */
-    weight?: number | null;
-    /**
-     * Weight unit (kg, lbs)
-     */
-    weightUnit?: string | null;
-    /**
-     * Weight in grams
-     */
-    grams?: number | null;
-    /**
-     * HS Code
-     */
-    hsCode?: string | null;
-    /**
-     * Material / fibre composition (e.g. "80% cotton, 20% polyester"). The garment-catalog field from the etrima products merge (93.7% populated) — feeds customs (the HS code) and fibre-content labelling.
-     */
-    contents?: string | null;
-    /**
-     * Requires shipping
-     */
-    requiresShipping?: boolean | null;
-  };
-  discounts?: {
-    /**
-     * Max discount %
-     */
-    maxDiscountRate?: number | null;
-    /**
-     * Min profit %
-     */
-    minProfitRate?: number | null;
-    /**
-     * Max profit %
-     */
-    maxProfitRate?: number | null;
-  };
-  fulfillment?: {
-    /**
-     * Fulfillment service
-     */
-    fulfillmentService?: string | null;
-    /**
-     * Billing period (if recurring)
-     */
-    period?: ('second' | 'minute' | 'hour' | 'day' | 'week' | 'month' | 'year') | null;
-  };
-  visibility?: {
-    /**
-     * Item visibility
-     */
-    visibility?: ('public' | 'private' | 'wholesale') | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * The production execution leaf (2.05M-row etrima twin) — one (lotphase × variant) assignment per worker/shift. Options array ⊕ derived header totals (double-entry), derived horo state, the forward! conveyor, and the piece-rate wage.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -6659,6 +6989,10 @@ export interface WorkOrder {
    */
   unitsBackordered?: number | null;
   /**
+   * Scrapped (NCR) units — recorded, not derived. etrima kept no scrap counter; carried over from the former operation-runs.
+   */
+  unitsScrap?: number | null;
+  /**
    * Seconds of work per unit at this phase (the phase standard time).
    */
   unitSeconds?: number | null;
@@ -6695,15 +7029,15 @@ export interface WorkOrder {
    */
   estimatedAt?: string | null;
   /**
-   * Lot-variant code — the product variant in this lot (the lotvariant cross).
+   * The product variant of the lot this order produces.
    */
-  lotVariantCode?: string | null;
+  lotVariant?: (string | null) | LotVariant;
   /**
-   * Lot-work-phase code — the routing step (the lotworkphase cross).
+   * The routing step this order executes.
    */
-  lotWorkPhaseCode?: string | null;
+  lotWorkPhase?: (string | null) | LotWorkPhase;
   /**
-   * Phase order within the routing — drives the forward! conveyor (next = smallest sort greater than this).
+   * The routing step's sort, copied from `lotWorkPhase` — drives the forward! conveyor (next = smallest sort greater than this).
    */
   lotWorkPhaseSort?: number | null;
   /**
@@ -6745,6 +7079,552 @@ export interface WorkOrder {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * A lot’s per-variant line with the size/colour option breakdown. The variant total is the sum of its options (100% data-verified); the funnel ordered→delivered is monotonic.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "lot-variants".
+ */
+export interface LotVariant {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * The parent lot (the funnel head this variant rolls up into).
+   */
+  lot: string | Lot;
+  /**
+   * The product variant produced (the catalog item).
+   */
+  productVariant?: (string | null) | Item;
+  /**
+   * The current routing step this variant sits at (the coordinate cross to the chain).
+   */
+  workPhase?: (string | null) | LotWorkPhase;
+  /**
+   * Variant code.
+   */
+  code?: string | null;
+  /**
+   * Variant name.
+   */
+  name?: string | null;
+  /**
+   * Batch label (free-text grouping within the lot).
+   */
+  batch?: string | null;
+  /**
+   * Sub-variant ordinal.
+   */
+  subVariant?: number | null;
+  /**
+   * Size/colour option breakdown — the variant total is the SUM of these rows (units = Σ options[].units, 100% data-verified). Was 12 option_N_* column-families.
+   */
+  options?:
+    | {
+        /**
+         * Option units (a part of the variant total).
+         */
+        units?: number | null;
+        /**
+         * Option units produced.
+         */
+        produced?: number | null;
+        /**
+         * Option units packed.
+         */
+        packed?: number | null;
+        /**
+         * Option units shipped.
+         */
+        shipped?: number | null;
+        /**
+         * Option units delivered.
+         */
+        delivered?: number | null;
+        /**
+         * Option units ordered.
+         */
+        ordered?: number | null;
+        /**
+         * Per-unit weight for this option, in grams.
+         */
+        unitGrams?: number | null;
+        /**
+         * Option minutes ordered.
+         */
+        minutesOrdered?: number | null;
+        /**
+         * Option minutes produced.
+         */
+        minutesProduced?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Units released to the floor (in etrima often below units — not a ceiling).
+   */
+  unitsOrdered?: number | null;
+  /**
+   * Variant total units — DERIVED = Σ options[].units (the roll-up law).
+   */
+  units?: number | null;
+  /**
+   * Units produced — DERIVED = Σ options[].produced (≤ units).
+   */
+  unitsProduced?: number | null;
+  /**
+   * Units packed (≤ unitsProduced).
+   */
+  unitsPacked?: number | null;
+  /**
+   * Units shipped (≤ unitsPacked).
+   */
+  unitsShipped?: number | null;
+  /**
+   * Units delivered (≤ unitsShipped — the funnel tail).
+   */
+  unitsDelivered?: number | null;
+  /**
+   * Variant minutes ordered.
+   */
+  minutesOrdered?: number | null;
+  /**
+   * Variant minutes produced.
+   */
+  minutesProduced?: number | null;
+  /**
+   * Variant minutes remaining to produce.
+   */
+  minutesToProduce?: number | null;
+  /**
+   * Net weight (grams).
+   */
+  netWeight?: number | null;
+  /**
+   * Gross weight (grams).
+   */
+  grossWeight?: number | null;
+  /**
+   * Billable weight (grams) — the freight basis.
+   */
+  billableWeight?: number | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * The production order (funnel head). Fans into lot-variants and a lot-work-phases routing chain; its state is DERIVED from lifecycle watermarks on the horo ring (never stored).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "lots".
+ */
+export interface Lot {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Lot number — the production-order reference.
+   */
+  number?: string | null;
+  /**
+   * The sales order this lot fulfils (the demand source).
+   */
+  order?: (string | null) | Order;
+  /**
+   * The product produced (the catalog item).
+   */
+  product?: (string | null) | Item;
+  /**
+   * Product/programme code (e.g. `SHIMA_07`, `CONF_21`). Open text — 20 yrs of real codes.
+   */
+  kind?: string | null;
+  /**
+   * Lifecycle on the 1·2·4·8·7·5·9 ring: opened → confirmed → producing → finished → shipped → delivered → closed. DERIVED from watermarks (deriveLotState); off-ring = canceled.
+   */
+  status?: ('opened' | 'confirmed' | 'producing' | 'finished' | 'shipped' | 'delivered' | 'closed') | null;
+  /**
+   * Order accepted (band 2/share). 21.5% in etrima.
+   */
+  confirmedAt?: string | null;
+  /**
+   * Production began (band 4/weave).
+   */
+  startedAt?: string | null;
+  /**
+   * Production complete (band 8/crest).
+   */
+  finishedAt?: string | null;
+  /**
+   * Run sealed (band 9/unity). 89.3% in etrima — the dominant terminal.
+   */
+  closedAt?: string | null;
+  /**
+   * Canceled — the OFF-RING terminal (escape from the ring). 1.2% in etrima.
+   */
+  canceledAt?: string | null;
+  /**
+   * Why the run was canceled (paired with canceledAt).
+   */
+  cancelReason?: string | null;
+  /**
+   * Lot date.
+   */
+  date?: string | null;
+  /**
+   * Planned delivery date.
+   */
+  deliveryDate?: string | null;
+  /**
+   * Actual ship date.
+   */
+  shippedAt?: string | null;
+  /**
+   * Actual delivery date.
+   */
+  deliveredAt?: string | null;
+  /**
+   * Units released to the floor (in etrima often below units — not a ceiling).
+   */
+  unitsOrdered?: number | null;
+  /**
+   * Lot total units — = Σ variant.units (the roll-up law, 100% in etrima).
+   */
+  units?: number | null;
+  /**
+   * Units produced (≤ units; = Σ variant.unitsProduced).
+   */
+  unitsProduced?: number | null;
+  /**
+   * Units packed (≤ produced).
+   */
+  unitsPacked?: number | null;
+  /**
+   * Units shipped (≤ packed) — drives band 7/descent.
+   */
+  unitsShipped?: number | null;
+  /**
+   * Units delivered (≤ shipped) — drives band 5/round.
+   */
+  unitsDelivered?: number | null;
+  /**
+   * Units invoiced (≤ delivered) — the funnel tail.
+   */
+  unitsInvoiced?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Price per unit.
+   */
+  unitPrice?: number | null;
+  /**
+   * Cost per unit.
+   */
+  unitCost?: number | null;
+  /**
+   * Total amount invoiced.
+   */
+  amountInvoiced?: number | null;
+  /**
+   * Total amount paid.
+   */
+  amountPaid?: number | null;
+  /**
+   * Lot minutes ordered.
+   */
+  minutesOrdered?: number | null;
+  /**
+   * Lot minutes produced.
+   */
+  minutesProduced?: number | null;
+  /**
+   * Lot minutes remaining to produce.
+   */
+  minutesToProduce?: number | null;
+  /**
+   * Net weight (grams).
+   */
+  netWeight?: number | null;
+  /**
+   * Gross weight (grams).
+   */
+  grossWeight?: number | null;
+  /**
+   * Billable weight (grams).
+   */
+  billableWeight?: number | null;
+  /**
+   * Number of lot-variants in this lot.
+   */
+  lotVariantsCount?: number | null;
+  /**
+   * Number of routing steps in this lot’s phase chain.
+   */
+  lotWorkPhasesCount?: number | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * The routing step — one sort-ordered position in a lot’s phase chain, crossing to the work-phases catalog. Carries per-step time + unit counters; state is derived from watermarks.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "lot-work-phases".
+ */
+export interface LotWorkPhase {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * The containing lot (the coordinate axis — a lot HOLDS its routing chain).
+   */
+  lot: string | Lot;
+  /**
+   * The catalog phase this step runs (the routing cross — resolves 100% in etrima). What kind of step this is.
+   */
+  workPhase: string | WorkPhase;
+  /**
+   * Position on the lot’s phase chain (the sequence axis — prev/next). Range 0..127 in etrima; reading sort order IS the route.
+   */
+  sort?: number | null;
+  /**
+   * The team / work-center that runs this step (the resource).
+   */
+  team?: (string | null) | WorkCenter;
+  /**
+   * Machine type for this step (overrides the catalog default; ISA-95 §B.4).
+   */
+  machineType?: string | null;
+  /**
+   * Step code (denormalized from the phase for display).
+   */
+  code?: string | null;
+  /**
+   * Step name (denormalized from the phase for display).
+   */
+  name?: string | null;
+  /**
+   * Units routed into this step (the funnel head for the step).
+   */
+  unitsOrdered?: number | null;
+  /**
+   * Units produced at this step (≤ unitsOrdered — 99.93% in etrima).
+   */
+  unitsProduced?: number | null;
+  /**
+   * Standard seconds per unit at this step (the time anchor).
+   */
+  seconds?: number | null;
+  /**
+   * Total minutes routed (standard time × units).
+   */
+  minutes?: number | null;
+  /**
+   * Minutes of verified production at this step.
+   */
+  minutesProduced?: number | null;
+  /**
+   * Minutes still to produce (minutes − minutesProduced).
+   */
+  minutesRemaining?: number | null;
+  /**
+   * Minutes backordered (overdue against schedule).
+   */
+  minutesBackordered?: number | null;
+  /**
+   * Realized efficiency % (ISO-22400-2; produced-time ÷ standard-time). Catalog min/max band the target.
+   */
+  efficiencyPercent?: number | null;
+  /**
+   * Step completion % — derived high-water (minutesProduced ÷ minutes). 0..100.
+   */
+  percentCompleted?: number | null;
+  /**
+   * Pay rate per hour for this step (allocation ladder; ~80% populated in etrima).
+   */
+  payPerHour?: number | null;
+  /**
+   * Charge-out price per minute (the revenue anchor for the step).
+   */
+  pricePerMinute?: number | null;
+  /**
+   * Number of lot-variants touching this step.
+   */
+  variantsCount?: number | null;
+  /**
+   * Number of batches at this step.
+   */
+  batchesCount?: number | null;
+  /**
+   * When work began (derived-state watermark).
+   */
+  startedAt?: string | null;
+  /**
+   * When the step completed (derived-state watermark).
+   */
+  completedAt?: string | null;
+  /**
+   * When the step was confirmed (derived-state watermark).
+   */
+  confirmedAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing). A self-referential tree; lot-work-phases compose these.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "work-phases".
+ */
+export interface WorkPhase {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Work-phase code (e.g. `CONF_12`, `OCCHIELLI`).
+   */
+  code: string;
+  /**
+   * Work-phase name.
+   */
+  name: string;
+  /**
+   * Operation family — the shop-floor vocabulary (CONFEZIONE/sewing, TAGLIO/cutting, OCCHIELLI, RIFINITURA, RICAMO, TINTORIA, STIRO). Open text, not a closed enum (20 yrs of real names).
+   */
+  kind?: string | null;
+  /**
+   * Parent work-phase — the operation-type hierarchy (the coordinate axis). 20 329 roots ⊕ 21 525 children in etrima; acyclic.
+   */
+  parent?: (string | null) | WorkPhase;
+  /**
+   * Machine type the phase runs on (resource anchor; ISA-95 §B.4).
+   */
+  machineType?: string | null;
+  /**
+   * Default work-center this phase runs on (a lot-work-phase may override with its own).
+   */
+  defaultWorkCenter?: (string | null) | WorkCenter;
+  /**
+   * Work type (process classification within the family).
+   */
+  workType?: string | null;
+  /**
+   * Standard time per unit, in seconds (the rate anchor — pay = anchor × verified time; ISO-22400-2 standard-time).
+   */
+  workSeconds?: number | null;
+  /**
+   * Required skill level (allocation ladder input).
+   */
+  skillLevel?: number | null;
+  status?: ('active' | 'inactive') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | WorkPhase;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Capacity unit (machine/line/cell/vat/workstation/crew) production flows through. Self-referential hierarchy (ISA-95); rates feed IAS-2 cost-of-conversion.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "work-centers".
+ */
+export interface WorkCenter {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Work-center code (e.g. `WC-CUT-01`).
+   */
+  reference: string;
+  /**
+   * Human-readable work-center name.
+   */
+  name: string;
+  /**
+   * Capacity-unit kind — keeps the model industry-agnostic (discrete and process).
+   */
+  type: 'machine' | 'line' | 'cell' | 'vat' | 'workstation' | 'crew';
+  /**
+   * Parent work-center — the ISA-95 resource hierarchy (replaces code-prefix process buckets).
+   */
+  parent?: (string | null) | WorkCenter;
+  /**
+   * Throughput per hour, in `capacityUnitOfMeasure`.
+   */
+  capacityPerHour?: number | null;
+  /**
+   * UoM of capacity (pcs/kg/L/m…) — process + discrete.
+   */
+  capacityUnitOfMeasure?: string | null;
+  /**
+   * Units a single worker runs in parallel (machines-per-worker). Divides labor wage.
+   */
+  parallelism?: number | null;
+  /**
+   * Machine/overhead cost per minute (IAS-2 conversion cost).
+   */
+  costPerMinute?: number | null;
+  /**
+   * Direct-labor pay rate per hour (feeds work-shift wage roll-up).
+   */
+  payPerHour?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  rateCurrency?: string | null;
+  status?: ('active' | 'idle' | 'maintenance' | 'retired') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | WorkCenter;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7148,75 +8028,6 @@ export interface CostCenter {
   createdAt: string;
 }
 /**
- * Capacity unit (machine/line/cell/vat/workstation/crew) production flows through. Self-referential hierarchy (ISA-95); rates feed IAS-2 cost-of-conversion.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "work-centers".
- */
-export interface WorkCenter {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Work-center code (e.g. `WC-CUT-01`).
-   */
-  reference: string;
-  /**
-   * Human-readable work-center name.
-   */
-  name: string;
-  /**
-   * Capacity-unit kind — keeps the model industry-agnostic (discrete and process).
-   */
-  type: 'machine' | 'line' | 'cell' | 'vat' | 'workstation' | 'crew';
-  /**
-   * Parent work-center — the ISA-95 resource hierarchy (replaces code-prefix process buckets).
-   */
-  parent?: (string | null) | WorkCenter;
-  /**
-   * Throughput per hour, in `capacityUnitOfMeasure`.
-   */
-  capacityPerHour?: number | null;
-  /**
-   * UoM of capacity (pcs/kg/L/m…) — process + discrete.
-   */
-  capacityUnitOfMeasure?: string | null;
-  /**
-   * Units a single worker runs in parallel (machines-per-worker). Divides labor wage.
-   */
-  parallelism?: number | null;
-  /**
-   * Machine/overhead cost per minute (IAS-2 conversion cost).
-   */
-  costPerMinute?: number | null;
-  /**
-   * Direct-labor pay rate per hour (feeds work-shift wage roll-up).
-   */
-  payPerHour?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  rateCurrency?: string | null;
-  status?: ('active' | 'idle' | 'maintenance' | 'retired') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  breadcrumbs?:
-    | {
-        doc?: (string | null) | WorkCenter;
-        url?: string | null;
-        label?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "goods-receipts".
  */
@@ -7451,7 +8262,7 @@ export interface Shipment {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   shipmentNumber: string;
-  order: string | SalesOrder;
+  order: string | Order;
   shipFromAddress?: (string | null) | Address;
   shipToAddress: string | Address;
   carrier?: ('dhl' | 'fedex' | 'ups' | 'usps' | 'royal_mail' | 'speedy' | 'econt' | 'local' | 'pickup') | null;
@@ -7483,148 +8294,6 @@ export interface Shipment {
     | null;
   shippedAt?: string | null;
   deliveredAt?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Customer-side order register (O2C). Distinct from purchase-orders (P2P). UN-EDIFACT ORDERS d96a + UBL-2.1 Order + Peppol BIS-3.0 Order. IFRS-15 §10 contract-with-customer feed.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "sales-orders".
- */
-export interface SalesOrder {
-  id: string;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid: string;
-  /**
-   * Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents.
-   */
-  orderNumber: string;
-  customer: string | Party;
-  /**
-   * Buyer-side PO number / reference. EN-16931 §BT-13 / Peppol cbc:BuyerReference.
-   */
-  customerOrderReference?: string | null;
-  /**
-   * Parent contract (when the order draws from a master contract — IFRS-15 §17 combined contracts).
-   */
-  contract?: (string | null) | Contract;
-  /**
-   * When the quote was sent to the customer.
-   */
-  sentAt?: string | null;
-  /**
-   * Until when the quoted terms hold.
-   */
-  expiresAt?: string | null;
-  /**
-   * When the customer accepted — IFRS-15 §10 contract inception.
-   */
-  acceptedAt?: string | null;
-  /**
-   * Buyer submission / acceptance date. Drives revenue-period determination.
-   */
-  orderDate: string;
-  /**
-   * Buyer-requested delivery date (single shipment) or first window. EN-16931 §BT-72.
-   */
-  requestedDeliveryDate?: string | null;
-  /**
-   * Confirmed delivery date after vendor commits. Bound by status=confirmed transition.
-   */
-  promisedDeliveryDate?: string | null;
-  /**
-   * Deliver-to address — EN-16931 §BG-15 / UBL Delivery/DeliveryLocation.
-   */
-  shippingAddress?: (string | null) | Address;
-  /**
-   * Bill-to address (when distinct from buyer registered address). EN-16931 §BG-8.
-   */
-  billingAddress?: (string | null) | Address;
-  /**
-   * ISO 4217 alpha-3 code.
-   */
-  currency: string;
-  /**
-   * Net of tax. EN-16931 §BT-109.
-   */
-  subTotalAmount?: number | null;
-  /**
-   * Sum of tax-category lines. EN-16931 §BT-110.
-   */
-  taxAmount?: number | null;
-  /**
-   * subTotal + tax. EN-16931 §BT-112.
-   */
-  totalAmount?: number | null;
-  lines?:
-    | {
-        /**
-         * Position within the order. Stable for cross-document trace.
-         */
-        lineNumber: number;
-        /**
-         * Catalogue item (when ordering from the item master).
-         */
-        item?: (string | null) | Item;
-        description: string;
-        quantity: number;
-        /**
-         * UN/CEFACT Rec 20 unit code (C62, KGM, LTR, …). EN-16931 §BT-130.
-         */
-        unitOfMeasure?: string | null;
-        unitPrice: number;
-        /**
-         * quantity × unitPrice net of tax. EN-16931 §BT-131.
-         */
-        lineNet?: number | null;
-        taxCategory?: (string | null) | TaxCode;
-        /**
-         * Line-level discount amount (negative impact on lineNet).
-         */
-        discount?: number | null;
-        /**
-         * Per-line delivery date (when distinct from order-header date).
-         */
-        requestedDeliveryDate?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Aggregate fulfilled quantity across all shipments. Maintained by hook.
-   */
-  fulfilledQuantity?: number | null;
-  /**
-   * Aggregate invoiced amount across all invoices. Maintained by hook.
-   */
-  invoicedAmount?: number | null;
-  cancellationDate?: string | null;
-  cancellationReason?: string | null;
-  status?:
-    | (
-        | 'draft'
-        | 'pending_approval'
-        | 'sent'
-        | 'accepted'
-        | 'rejected'
-        | 'expired'
-        | 'submitted'
-        | 'confirmed'
-        | 'partially_fulfilled'
-        | 'fulfilled'
-        | 'invoiced'
-        | 'closed'
-        | 'cancelled'
-        | 'on_hold'
-      )
-    | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -9595,149 +10264,48 @@ export interface ComplianceDeadline {
     | 'reporting-deadline'
     | 'payment-deadline'
     | 'disclosure-deadline';
-  jurisdiction?: (string | null) | TaxingJurisdiction;
+  jurisdiction?: (string | null) | TaxJurisdiction;
   requirement?: (string | null) | ComplianceRequirement;
   dueDate: string;
   submissionDate?: string | null;
   status?: ('on-track' | 'at-risk' | 'overdue' | 'submitted' | 'completed') | null;
   priority?: ('critical' | 'high' | 'medium' | 'low') | null;
   penalty?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Read-only reference data for tax jurisdictions
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "taxing-jurisdictions".
- */
-export interface TaxingJurisdiction {
-  id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * The reminders scheduled for this deadline (formerly the compliance-notifications collection — a reminder has no life apart from its deadline).
    */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Jurisdiction code (e.g., "US", "DE", "BG")
-   */
-  code: string;
-  /**
-   * Jurisdiction name
-   */
-  name: string;
-  /**
-   * Type of jurisdiction
-   */
-  type: 'country' | 'region' | 'local' | 'supranational';
-  /**
-   * Parent jurisdiction
-   */
-  parentJurisdiction?: (string | null) | TaxingJurisdiction;
-  /**
-   * ISO 3166-1 alpha-2 code
-   */
-  iso2Code?: string | null;
-  /**
-   * ISO 3166-1 alpha-3 code
-   */
-  iso3Code?: string | null;
-  /**
-   * Primary currency code
-   */
-  primaryCurrency?: string | null;
-  /**
-   * Languages spoken in jurisdiction
-   */
-  languages?:
+  notifications?:
     | {
-        languageCode: string;
-        languageName?: string | null;
+        notificationTitle: string;
+        notificationContent?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        notificationType?: ('email' | 'in-app' | 'sms' | 'calendar-event')[] | null;
+        recipients?:
+          | {
+              recipientEmail?: string | null;
+              recipientRole?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        daysBeforeDue: number;
+        sentDate?: string | null;
+        status?: ('scheduled' | 'sent' | 'delivered' | 'failed') | null;
         id?: string | null;
       }[]
     | null;
-  /**
-   * Regulatory characteristics
-   */
-  regulatoryCharacteristics?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Banking and financial institution requirements
-   */
-  bankingRequirements?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Key filing deadlines
-   */
-  filingDeadlines?:
-    | {
-        filingType: string;
-        deadline: string;
-        frequency?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Applicable compliance frameworks
-   */
-  complianceFrameworks?: (string | ComplianceFramework)[] | null;
-  isActive?: boolean | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "compliance-notifications".
- */
-export interface ComplianceNotification {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  deadline: string | ComplianceDeadline;
-  notificationTitle: string;
-  notificationContent?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  notificationType?: ('email' | 'in-app' | 'sms' | 'calendar-event')[] | null;
-  recipients?:
-    | {
-        recipientEmail?: string | null;
-        recipientRole?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  daysBeforeDue: number;
-  sentDate?: string | null;
-  status?: ('scheduled' | 'sent' | 'delivered' | 'failed') | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10272,7 +10840,7 @@ export interface CreditMemo {
   /**
    * Originating sales order, when the credit skips the invoice (ISO-20022 pacs.004 end-to-end trace).
    */
-  order?: (string | null) | SalesOrder;
+  order?: (string | null) | Order;
   /**
    * Credit amount in cents.
    */
@@ -11391,7 +11959,7 @@ export interface EntityLegalStructure {
   /**
    * Jurisdiction
    */
-  jurisdiction: string | TaxingJurisdiction;
+  jurisdiction: string | TaxJurisdiction;
   /**
    * Entity type
    */
@@ -11599,7 +12167,7 @@ export interface ExpenseReport {
   reimbursementMethod?: ('payroll' | 'ap_payment' | 'corporate_card' | 'cash_advance') | null;
   reimbursementDate?: string | null;
   reimbursedViaPayrollRun?: (string | null) | PayrollRun;
-  reimbursedViaPayment?: (string | null) | Payment;
+  reimbursedViaPayment?: (string | null) | Transaction;
   journalEntry?: (string | null) | JournalEntry;
   status?:
     ('draft' | 'submitted' | 'in_approval' | 'approved' | 'reimbursed' | 'rejected' | 'returned' | 'cancelled') | null;
@@ -11838,7 +12406,7 @@ export interface PaymentRun {
         /**
          * Payment record created when this leg settles.
          */
-        paymentRecord?: (string | null) | Payment;
+        paymentRecord?: (string | null) | Transaction;
         id?: string | null;
       }[]
     | null;
@@ -11881,106 +12449,6 @@ export interface PaymentRun {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "payments".
- */
-export interface Payment {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Transaction reference number
-   */
-  transactionNumber?: string | null;
-  /**
-   * Slice YYYY: drives the AR-vs-AP GL handler dispatch in `payment.hook.ts`. Required because `parties.{sender,receiver}` alone cannot disambiguate (the tenant could be either side in intercompany).
-   */
-  paymentKind: 'received' | 'sent';
-  /**
-   * Lifecycle state. defaultColumns referenced this; YYYY restored the field.
-   */
-  status?: ('recorded' | 'authorised' | 'sent' | 'received' | 'settled' | 'reversed' | 'failed') | null;
-  /**
-   * Related invoice
-   */
-  invoice: string | Invoice;
-  parties: {
-    /**
-     * Payment sender (payer)
-     */
-    sender: string | Address;
-    /**
-     * Payment receiver (payee)
-     */
-    receiver: string | Address;
-  };
-  amounts: {
-    /**
-     * Payment amount (cents)
-     */
-    amount: number;
-    /**
-     * Invoice amount reference (cents)
-     */
-    invoiceAmount?: number | null;
-    /**
-     * Currency code
-     */
-    currencyCode: string;
-    /**
-     * Exchange rate
-     */
-    exchangeRate?: number | null;
-  };
-  dates?: {
-    /**
-     * When payment was sent
-     */
-    sentAt?: string | null;
-    /**
-     * When payment was received
-     */
-    receivedAt?: string | null;
-    /**
-     * When payment was authorized
-     */
-    authorizedAt?: string | null;
-  };
-  authorization?: {
-    /**
-     * User who authorized payment
-     */
-    authorizedBy?: (string | null) | User;
-  };
-  payment?: {
-    /**
-     * Payment method
-     */
-    paymentMethod?: string | null;
-    /**
-     * Payment notes
-     */
-    note?: string | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12120,98 +12588,6 @@ export interface FiscalCalendar {
   chainLeafUuid?: string | null;
   /**
    * Notes on this calendar entry (e.g., holiday adjustments, special closure dates)
-   */
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fiscal-period-snapshots".
- */
-export interface FiscalPeriodSnapshot {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * FiscalPeriods record for which this snapshot was created
-   */
-  fiscalPeriods: string | FiscalPeriod;
-  /**
-   * Human-readable label (e.g., "FY2026-Creation", "FY2026-Amendment-2026-05-12", "FY2026-YearEndClose-2026-12-31")
-   */
-  snapshotLabel: string;
-  /**
-   * Type of event that triggered this snapshot
-   */
-  eventType: 'creation' | 'amendment' | 'validation' | 'closing' | 'regulatory-audit' | 'status-change';
-  /**
-   * Full FiscalPeriods state at snapshot time (JSON copy). Immutable for audit trail reconstruction.
-   */
-  snapshotData:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Previous snapshot of this FiscalPeriods (null if creation). Creates immutable chain for diff analysis.
-   */
-  priorSnapshot?: (string | null) | FiscalPeriodSnapshot;
-  /**
-   * Only if eventType=amendment. JSON object of {field: {prior, new}} showing what changed. Null for other events.
-   */
-  changes?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * User who triggered this snapshot event
-   */
-  triggeredBy: string | User;
-  /**
-   * Timestamp of event
-   */
-  triggeredAt: string;
-  /**
-   * Why was this snapshot created? (e.g., "Annual fiscal policy review", "Regulatory compliance amendment", "Bug fix in period boundaries")
-   */
-  reason?: string | null;
-  /**
-   * Optional eIDAS QES signature on snapshotData (for amendments, regulatory audits). Base64-encoded SignedUuid envelope.
-   */
-  signedUuid?: string | null;
-  /**
-   * Immutable audit trail: who viewed/reviewed this snapshot, forensic notes. Append-only.
-   */
-  auditTrail?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  /**
-   * Snapshot-specific notes
    */
   notes?: string | null;
   updatedAt: string;
@@ -12831,6 +13207,36 @@ export interface InternalPolicy {
   nextReviewDate?: string | null;
   status?: ('active' | 'pending' | 'superseded' | 'archived') | null;
   policyDocument?: (string | null) | Media;
+  /**
+   * The current version of the policy text (e.g. 3.1). Earlier versions are in the document's version history.
+   */
+  versionNumber?: string | null;
+  /**
+   * Name of the current version (e.g. "2026 annual review").
+   */
+  versionName?: string | null;
+  /**
+   * When the current version was released.
+   */
+  releaseDate?: string | null;
+  /**
+   * What changed in the current version.
+   */
+  changes?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
   applicableControls?: (string | InternalControl)[] | null;
   updatedAt: string;
   createdAt: string;
@@ -13548,479 +13954,6 @@ export interface LeaveRequest {
   createdAt: string;
 }
 /**
- * A lot’s per-variant line with the size/colour option breakdown. The variant total is the sum of its options (100% data-verified); the funnel ordered→delivered is monotonic.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "lot-variants".
- */
-export interface LotVariant {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * The parent lot (the funnel head this variant rolls up into).
-   */
-  lot: string | Lot;
-  /**
-   * The product variant produced (the catalog item).
-   */
-  productVariant?: (string | null) | Item;
-  /**
-   * The current routing step this variant sits at (the coordinate cross to the chain).
-   */
-  workPhase?: (string | null) | LotWorkPhase;
-  /**
-   * Variant code.
-   */
-  code?: string | null;
-  /**
-   * Variant name.
-   */
-  name?: string | null;
-  /**
-   * Batch label (free-text grouping within the lot).
-   */
-  batch?: string | null;
-  /**
-   * Sub-variant ordinal.
-   */
-  subVariant?: number | null;
-  /**
-   * Size/colour option breakdown — the variant total is the SUM of these rows (units = Σ options[].units, 100% data-verified). Was 12 option_N_* column-families.
-   */
-  options?:
-    | {
-        /**
-         * Option units (a part of the variant total).
-         */
-        units?: number | null;
-        /**
-         * Option units produced.
-         */
-        produced?: number | null;
-        /**
-         * Option units packed.
-         */
-        packed?: number | null;
-        /**
-         * Option units shipped.
-         */
-        shipped?: number | null;
-        /**
-         * Option units delivered.
-         */
-        delivered?: number | null;
-        /**
-         * Option units ordered.
-         */
-        ordered?: number | null;
-        /**
-         * Per-unit weight for this option, in grams.
-         */
-        unitGrams?: number | null;
-        /**
-         * Option minutes ordered.
-         */
-        minutesOrdered?: number | null;
-        /**
-         * Option minutes produced.
-         */
-        minutesProduced?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Units ordered (the funnel head; ≥ units).
-   */
-  unitsOrdered?: number | null;
-  /**
-   * Variant total units — DERIVED = Σ options[].units (the roll-up law).
-   */
-  units?: number | null;
-  /**
-   * Units produced — DERIVED = Σ options[].produced (≤ units).
-   */
-  unitsProduced?: number | null;
-  /**
-   * Units packed (≤ unitsProduced).
-   */
-  unitsPacked?: number | null;
-  /**
-   * Units shipped (≤ unitsPacked).
-   */
-  unitsShipped?: number | null;
-  /**
-   * Units delivered (≤ unitsShipped — the funnel tail).
-   */
-  unitsDelivered?: number | null;
-  /**
-   * Variant minutes ordered.
-   */
-  minutesOrdered?: number | null;
-  /**
-   * Variant minutes produced.
-   */
-  minutesProduced?: number | null;
-  /**
-   * Variant minutes remaining to produce.
-   */
-  minutesToProduce?: number | null;
-  /**
-   * Net weight (grams).
-   */
-  netWeight?: number | null;
-  /**
-   * Gross weight (grams).
-   */
-  grossWeight?: number | null;
-  /**
-   * Billable weight (grams) — the freight basis.
-   */
-  billableWeight?: number | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * The production order (funnel head). Fans into lot-variants and a lot-work-phases routing chain; its state is DERIVED from lifecycle watermarks on the horo ring (never stored).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "lots".
- */
-export interface Lot {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Lot number — the production-order reference.
-   */
-  number?: string | null;
-  /**
-   * The sales order this lot fulfils (the demand source).
-   */
-  order?: (string | null) | SalesOrder;
-  /**
-   * The product produced (the catalog item).
-   */
-  product?: (string | null) | Item;
-  /**
-   * Product/programme code (e.g. `SHIMA_07`, `CONF_21`). Open text — 20 yrs of real codes.
-   */
-  kind?: string | null;
-  /**
-   * Lifecycle on the 1·2·4·8·7·5·9 ring: opened → confirmed → producing → finished → shipped → delivered → closed. DERIVED from watermarks (deriveLotState); off-ring = canceled.
-   */
-  status?: ('opened' | 'confirmed' | 'producing' | 'finished' | 'shipped' | 'delivered' | 'closed') | null;
-  /**
-   * Order accepted (band 2/share). 21.5% in etrima.
-   */
-  confirmedAt?: string | null;
-  /**
-   * Production began (band 4/weave).
-   */
-  startedAt?: string | null;
-  /**
-   * Production complete (band 8/crest).
-   */
-  finishedAt?: string | null;
-  /**
-   * Run sealed (band 9/unity). 89.3% in etrima — the dominant terminal.
-   */
-  closedAt?: string | null;
-  /**
-   * Canceled — the OFF-RING terminal (escape from the ring). 1.2% in etrima.
-   */
-  canceledAt?: string | null;
-  /**
-   * Why the run was canceled (paired with canceledAt).
-   */
-  cancelReason?: string | null;
-  /**
-   * Lot date.
-   */
-  date?: string | null;
-  /**
-   * Planned delivery date.
-   */
-  deliveryDate?: string | null;
-  /**
-   * Actual ship date.
-   */
-  shippedAt?: string | null;
-  /**
-   * Actual delivery date.
-   */
-  deliveredAt?: string | null;
-  /**
-   * Units ordered (the funnel head; ≥ units).
-   */
-  unitsOrdered?: number | null;
-  /**
-   * Lot total units — = Σ variant.units (the roll-up law, 100% in etrima).
-   */
-  units?: number | null;
-  /**
-   * Units produced (≤ units; = Σ variant.unitsProduced).
-   */
-  unitsProduced?: number | null;
-  /**
-   * Units packed (≤ produced).
-   */
-  unitsPacked?: number | null;
-  /**
-   * Units shipped (≤ packed) — drives band 7/descent.
-   */
-  unitsShipped?: number | null;
-  /**
-   * Units delivered (≤ shipped) — drives band 5/round.
-   */
-  unitsDelivered?: number | null;
-  /**
-   * Units invoiced (≤ delivered) — the funnel tail.
-   */
-  unitsInvoiced?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Price per unit.
-   */
-  unitPrice?: number | null;
-  /**
-   * Cost per unit.
-   */
-  unitCost?: number | null;
-  /**
-   * Total amount invoiced.
-   */
-  amountInvoiced?: number | null;
-  /**
-   * Total amount paid.
-   */
-  amountPaid?: number | null;
-  /**
-   * Lot minutes ordered.
-   */
-  minutesOrdered?: number | null;
-  /**
-   * Lot minutes produced.
-   */
-  minutesProduced?: number | null;
-  /**
-   * Lot minutes remaining to produce.
-   */
-  minutesToProduce?: number | null;
-  /**
-   * Net weight (grams).
-   */
-  netWeight?: number | null;
-  /**
-   * Gross weight (grams).
-   */
-  grossWeight?: number | null;
-  /**
-   * Billable weight (grams).
-   */
-  billableWeight?: number | null;
-  /**
-   * Number of lot-variants in this lot.
-   */
-  lotVariantsCount?: number | null;
-  /**
-   * Number of routing steps in this lot’s phase chain.
-   */
-  lotWorkPhasesCount?: number | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * The routing step — one sort-ordered position in a lot’s phase chain, crossing to the work-phases catalog. Carries per-step time + unit counters; state is derived from watermarks.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "lot-work-phases".
- */
-export interface LotWorkPhase {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * The containing lot (the coordinate axis — a lot HOLDS its routing chain).
-   */
-  lot: string | Lot;
-  /**
-   * The catalog phase this step runs (the routing cross — resolves 100% in etrima). What kind of step this is.
-   */
-  workPhase: string | WorkPhase;
-  /**
-   * Position on the lot’s phase chain (the sequence axis — prev/next). Range 0..127 in etrima; reading sort order IS the route.
-   */
-  sort?: number | null;
-  /**
-   * The team / work-center that runs this step (the resource).
-   */
-  team?: (string | null) | WorkCenter;
-  /**
-   * Machine type for this step (overrides the catalog default; ISA-95 §B.4).
-   */
-  machineType?: string | null;
-  /**
-   * Step code (denormalized from the phase for display).
-   */
-  code?: string | null;
-  /**
-   * Step name (denormalized from the phase for display).
-   */
-  name?: string | null;
-  /**
-   * Units routed into this step (the funnel head for the step).
-   */
-  unitsOrdered?: number | null;
-  /**
-   * Units produced at this step (≤ unitsOrdered — 99.93% in etrima).
-   */
-  unitsProduced?: number | null;
-  /**
-   * Standard seconds per unit at this step (the time anchor).
-   */
-  seconds?: number | null;
-  /**
-   * Total minutes routed (standard time × units).
-   */
-  minutes?: number | null;
-  /**
-   * Minutes of verified production at this step.
-   */
-  minutesProduced?: number | null;
-  /**
-   * Minutes still to produce (minutes − minutesProduced).
-   */
-  minutesRemaining?: number | null;
-  /**
-   * Minutes backordered (overdue against schedule).
-   */
-  minutesBackordered?: number | null;
-  /**
-   * Realized efficiency % (ISO-22400-2; produced-time ÷ standard-time). Catalog min/max band the target.
-   */
-  efficiencyPercent?: number | null;
-  /**
-   * Step completion % — derived high-water (minutesProduced ÷ minutes). 0..100.
-   */
-  percentCompleted?: number | null;
-  /**
-   * Pay rate per hour for this step (allocation ladder; ~80% populated in etrima).
-   */
-  payPerHour?: number | null;
-  /**
-   * Charge-out price per minute (the revenue anchor for the step).
-   */
-  pricePerMinute?: number | null;
-  /**
-   * Number of lot-variants touching this step.
-   */
-  variantsCount?: number | null;
-  /**
-   * Number of batches at this step.
-   */
-  batchesCount?: number | null;
-  /**
-   * When work began (derived-state watermark).
-   */
-  startedAt?: string | null;
-  /**
-   * When the step completed (derived-state watermark).
-   */
-  completedAt?: string | null;
-  /**
-   * When the step was confirmed (derived-state watermark).
-   */
-  confirmedAt?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing). A self-referential tree; lot-work-phases compose these.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "work-phases".
- */
-export interface WorkPhase {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Work-phase code (e.g. `CONF_12`, `OCCHIELLI`).
-   */
-  code: string;
-  /**
-   * Work-phase name.
-   */
-  name: string;
-  /**
-   * Operation family — the shop-floor vocabulary (CONFEZIONE/sewing, TAGLIO/cutting, OCCHIELLI, RIFINITURA, RICAMO, TINTORIA, STIRO). Open text, not a closed enum (20 yrs of real names).
-   */
-  kind?: string | null;
-  /**
-   * Parent work-phase — the operation-type hierarchy (the coordinate axis). 20 329 roots ⊕ 21 525 children in etrima; acyclic.
-   */
-  parent?: (string | null) | WorkPhase;
-  /**
-   * Machine type the phase runs on (resource anchor; ISA-95 §B.4).
-   */
-  machineType?: string | null;
-  /**
-   * Work type (process classification within the family).
-   */
-  workType?: string | null;
-  /**
-   * Standard time per unit, in seconds (the rate anchor — pay = anchor × verified time; ISO-22400-2 standard-time).
-   */
-  workSeconds?: number | null;
-  /**
-   * Required skill level (allocation ladder input).
-   */
-  skillLevel?: number | null;
-  status?: ('active' | 'inactive') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  breadcrumbs?:
-    | {
-        doc?: (string | null) | WorkPhase;
-        url?: string | null;
-        label?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * CMMS execution row per ISO 55000 work-management. Consumes parts (inventory-movements) + labour (time-entries) and posts cost as expense or capex.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -14711,8 +14644,8 @@ export interface Message {
         value: string | Party;
       } | null)
     | ({
-        relationTo: 'sales-orders';
-        value: string | SalesOrder;
+        relationTo: 'orders';
+        value: string | Order;
       } | null)
     | ({
         relationTo: 'purchase-orders';
@@ -14789,204 +14722,6 @@ export interface MineralResourceAsset {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Per-operation production record: produced/scrap/backorder at one operation × work-center. Unbounded `variants` replace option_1..12.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "operation-runs".
- */
-export interface OperationRun {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Operation-run reference.
-   */
-  reference: string;
-  /**
-   * Production order this run belongs to.
-   */
-  workOrder: string | WorkOrder;
-  /**
-   * Routing step executed (carries seq + run time).
-   */
-  routing?: (string | null) | Routing;
-  /**
-   * Operation type (denormalised from the routing for fast filter).
-   */
-  operation?: (string | null) | Operation;
-  /**
-   * Work-center the run was performed at.
-   */
-  workCenter?: (string | null) | WorkCenter;
-  /**
-   * Labor shift that performed the run (optional).
-   */
-  workShift?: (string | null) | WorkShift;
-  /**
-   * Quantity released to this run.
-   */
-  qtyOrdered?: number | null;
-  /**
-   * Good quantity produced.
-   */
-  qtyProduced?: number | null;
-  /**
-   * Scrapped (NCR) quantity.
-   */
-  qtyScrap?: number | null;
-  /**
-   * Quantity still owed (ordered − produced).
-   */
-  qtyBackordered?: number | null;
-  /**
-   * UoM of the quantities (C62/KGM/LTR/MTR…) — discrete and process.
-   */
-  unitOfMeasure?: string | null;
-  /**
-   * Generated variant rows — the unbounded replacement for the option_1..12 grid.
-   */
-  variants?:
-    | {
-        /**
-         * Open dimension map, e.g. { "size": "M", "colour": "red" }. A blank axis → its identity element.
-         */
-        attributes?:
-          | {
-              [k: string]: unknown;
-            }
-          | unknown[]
-          | string
-          | number
-          | boolean
-          | null;
-        qtyOrdered?: number | null;
-        qtyProduced?: number | null;
-        qtyBackordered?: number | null;
-        /**
-         * UN/CEFACT Rec 20 unit code (C62=one, KGM, MTR, LTR, HUR, H87=piece…). Blank ⇒ C62.
-         */
-        unitOfMeasure?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * ISO 8601 — run start (first production).
-   */
-  startedAt?: string | null;
-  /**
-   * ISO 8601 — run completion.
-   */
-  completedAt?: string | null;
-  status?: ('draft' | 'ordered' | 'in_progress' | 'completed' | 'backordered' | 'cancelled') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Ordered process step on a work-order: operation × work-center × time. With BOM, the second universal manufacturing primitive; drives IAS-2 cost-of-conversion.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "routings".
- */
-export interface Routing {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Routing-step reference (e.g. `WO-…/10`).
-   */
-  reference: string;
-  /**
-   * Production order this step belongs to.
-   */
-  workOrder: string | WorkOrder;
-  /**
-   * Operation type executed at this step.
-   */
-  operation: string | Operation;
-  /**
-   * Work-center performing the step (defaults from the operation).
-   */
-  workCenter?: (string | null) | WorkCenter;
-  /**
-   * Step order within the routing (ascending).
-   */
-  seq: number;
-  /**
-   * One-off setup time for the step (minutes).
-   */
-  setupTimeMinutes?: number | null;
-  /**
-   * Run time per unit (seconds) — drives minutes-required + IAS-2 conversion cost.
-   */
-  runTimeSecondsPerUnit?: number | null;
-  /**
-   * UoM the run time is per (C62/KGM/LTR/MTR…) — discrete and process.
-   */
-  unitOfMeasure?: string | null;
-  status?: ('draft' | 'released' | 'in_progress' | 'completed' | 'cancelled') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Reusable operation-type catalog (Cut/Sew/Mix/Assemble/Inspect/Pack). Industry-agnostic; routings compose these.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "operations".
- */
-export interface Operation {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Operation code (e.g. `OP-SEW`).
-   */
-  reference: string;
-  /**
-   * Operation name.
-   */
-  name: string;
-  /**
-   * Default work-center this operation runs on (a routing step may override).
-   */
-  defaultWorkCenter?: (string | null) | WorkCenter;
-  /**
-   * Parent operation — the operation-type hierarchy.
-   */
-  parent?: (string | null) | Operation;
-  status?: ('active' | 'inactive') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  breadcrumbs?:
-    | {
-        doc?: (string | null) | Operation;
-        url?: string | null;
-        label?: string | null;
-        id?: string | null;
-      }[]
-    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15265,7 +15000,7 @@ export interface PaymentAllocation {
   /**
    * The cash-side payment row this allocation draws from.
    */
-  payment: string | Payment;
+  payment: string | Transaction;
   /**
    * What the allocation lands against. Most common: customer invoices for AR, vendor bills for AP.
    */
@@ -15479,48 +15214,16 @@ export interface PolicyAcknowledgment {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   policy: string | InternalPolicy;
-  policyVersion?: (string | null) | PolicyVersion;
+  /**
+   * The version of the policy that was acknowledged (stamped from the policy when left empty).
+   */
+  policyVersionNumber?: string | null;
   employeeName: string;
   employeeId?: string | null;
   acknowledgedDate: string;
   acknowledgedBy?: string | null;
   signedDocument?: (string | null) | Media;
   status?: ('acknowledged' | 'pending' | 'overdue' | 'expired') | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "policy-versions".
- */
-export interface PolicyVersion {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  policy: string | InternalPolicy;
-  versionNumber: string;
-  versionName: string;
-  releaseDate: string;
-  changes?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  documentUrl?: (string | null) | Media;
-  status?: ('draft' | 'final' | 'superseded' | 'archived') | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16411,7 +16114,7 @@ export interface RegulatoryReport {
   entity: string | LegalEntity;
   reportName: string;
   reportingStandard?: (string | null) | ComplianceFramework;
-  jurisdiction: string | TaxingJurisdiction;
+  jurisdiction: string | TaxJurisdiction;
   reportType:
     | 'annual-filing'
     | 'quarterly-filing'
@@ -16620,47 +16323,6 @@ export interface RemediationPlan {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "reporting-mappings".
- */
-export interface ReportingMapping {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  mappingName: string;
-  fromStandard: string | ReportingStandard;
-  toStandard: string | ReportingStandard;
-  mappingType: 'account-mapping' | 'line-item-mapping' | 'disclosure-mapping' | 'metric-mapping';
-  mappingRules?:
-    | {
-        sourceElement?: string | null;
-        targetElement?: string | null;
-        transformation?: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
-        id?: string | null;
-      }[]
-    | null;
-  status?: ('active' | 'inactive' | 'pending-review') | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "reporting-standards".
  */
 export interface ReportingStandard {
@@ -16673,7 +16335,7 @@ export interface ReportingStandard {
   standardName: string;
   standardCode: string;
   standardType: 'gaap' | 'ifrs' | 'sox' | 'tax' | 'other';
-  jurisdiction?: (string | null) | TaxingJurisdiction;
+  jurisdiction?: (string | null) | TaxJurisdiction;
   description?: {
     root: {
       type: string;
@@ -16692,6 +16354,40 @@ export interface ReportingStandard {
   version?: string | null;
   effectiveDate: string;
   referenceMaterial?: (string | null) | Media;
+  /**
+   * Mappings FROM this standard to another (formerly the reporting-mappings collection; `fromStandard` is now the containing document).
+   */
+  mappings?:
+    | {
+        mappingName: string;
+        toStandard: string | ReportingStandard;
+        mappingType: 'account-mapping' | 'line-item-mapping' | 'disclosure-mapping' | 'metric-mapping';
+        mappingRules?:
+          | {
+              sourceElement?: string | null;
+              targetElement?: string | null;
+              transformation?: {
+                root: {
+                  type: string;
+                  children: {
+                    type: any;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              } | null;
+              id?: string | null;
+            }[]
+          | null;
+        status?: ('active' | 'inactive' | 'pending-review') | null;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16707,7 +16403,7 @@ export interface Return {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   rmaNumber: string;
-  order: string | SalesOrder;
+  order: string | Order;
   customer?: (string | null) | Party;
   reason: 'defective' | 'wrong_item' | 'customer_changed_mind' | 'damaged' | 'late' | 'other';
   lines: {
@@ -16858,66 +16554,6 @@ export interface RiskRegister {
    * Heat map or formal risk register extract (PDF).
    */
   riskRegisterDocument?: (string | null) | Media;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Role name plus optional scope: entire app (global), any row in a collection (class), or one referenced document.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "roles".
- */
-export interface Role {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  name: string;
-  /**
-   * Matches stored role rows: global → no resource; collection → slug only; document → polymorphic reference.
-   */
-  binding: 'global' | 'collection' | 'document';
-  /**
-   * When scope is collection-level, pick which Payload collection this role applies to.
-   */
-  scopedCollection?: ('tenants' | 'pages' | 'posts' | 'media' | 'categories' | 'products') | null;
-  /**
-   * When scope is document-level, choose the exact record.
-   */
-  resource?:
-    | ({
-        relationTo: 'tenants';
-        value: string | Tenant;
-      } | null)
-    | ({
-        relationTo: 'pages';
-        value: string | Page;
-      } | null)
-    | ({
-        relationTo: 'posts';
-        value: string | Post;
-      } | null)
-    | ({
-        relationTo: 'media';
-        value: string | Media;
-      } | null)
-    | ({
-        relationTo: 'categories';
-        value: string | Category;
-      } | null)
-    | ({
-        relationTo: 'products';
-        value: string | Product;
-      } | null);
-  /**
-   * What the role can do on its scope — the rodin 3·6·9 governing axis (read<write<sign<admin; audit ⊥). The Role holds the capability; users inherit it by assignment.
-   */
-  capability?: ('read' | 'write' | 'sign' | 'admin' | 'audit') | null;
-  /**
-   * The skills/logic this role attaches (e.g. accounting/journal-entry, commerce/order). The Role holds the role skills.
-   */
-  skillRoutes?: string[] | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17662,57 +17298,6 @@ export interface Standard {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "statutory-field-mappings".
- */
-export interface StatutoryFieldMapping {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  mappingName: string;
-  reportTemplate: string | StatutoryReportTemplate;
-  fieldName: string;
-  fieldType?: ('text' | 'number' | 'date' | 'currency' | 'percentage' | 'boolean') | null;
-  sourceCollection?: string | null;
-  sourceField?: string | null;
-  transformation?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  mandatory?: boolean | null;
-  validationRules?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "statutory-report-templates".
  */
 export interface StatutoryReportTemplate {
@@ -17723,7 +17308,7 @@ export interface StatutoryReportTemplate {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   templateName: string;
-  jurisdiction: string | TaxingJurisdiction;
+  jurisdiction: string | TaxJurisdiction;
   reportType: 'annual-report' | 'tax-return' | 'regulatory-filing' | 'financial-statements' | 'audit-report';
   entityType?: (string | null) | EntityType;
   sections?:
@@ -17737,6 +17322,50 @@ export interface StatutoryReportTemplate {
   templateDocument?: (string | null) | Media;
   effectiveFrom: string;
   effectiveTo?: string | null;
+  /**
+   * Where each field of this template is sourced from (formerly the statutory-field-mappings collection — a mapping belongs to exactly one template).
+   */
+  fieldMappings?:
+    | {
+        mappingName: string;
+        fieldName: string;
+        fieldType?: ('text' | 'number' | 'date' | 'currency' | 'percentage' | 'boolean') | null;
+        sourceCollection?: string | null;
+        sourceField?: string | null;
+        transformation?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        mandatory?: boolean | null;
+        validationRules?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18510,23 +18139,6 @@ export interface Translation {
   createdAt: string;
 }
 /**
- * Assigns users to role definitions.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "user-roles".
- */
-export interface UserRole {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  user: string | User;
-  role: string | Role;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * ISO 9001 §8.4 vendor performance scorecard. Periodic (typically quarterly). Drives renewal / probation / de-listing decision.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -19138,7 +18750,7 @@ export interface ContractPerformance {
   /**
    * Associated sales order (pre-contract commitment phase)
    */
-  associatedSalesOrder?: (string | null) | SalesOrder;
+  associatedSalesOrder?: (string | null) | Order;
   zkod?: {
     /**
      * Date of formal acceptance protocol (Bulgaria contract registry)
@@ -19799,7 +19411,7 @@ export interface PayloadQueryPreset {
     | null;
   groupBy?: string | null;
   relatedCollection:
-    'credit-memos' | 'maintenance-work-orders' | 'pages' | 'parties' | 'posts' | 'provisions' | 'sales-orders';
+    'credit-memos' | 'maintenance-work-orders' | 'pages' | 'parties' | 'posts' | 'provisions' | 'orders';
   /**
    * This is a temporary field used to determine if updating the preset would remove the user's access to it. When `true`, this record will be deleted after running the preset's `validate` function.
    */
@@ -21014,6 +20626,24 @@ export interface ComplianceDeadlinesSelect<T extends boolean = true> {
   status?: T;
   priority?: T;
   penalty?: T;
+  notifications?:
+    | T
+    | {
+        notificationTitle?: T;
+        notificationContent?: T;
+        notificationType?: T;
+        recipients?:
+          | T
+          | {
+              recipientEmail?: T;
+              recipientRole?: T;
+              id?: T;
+            };
+        daysBeforeDue?: T;
+        sentDate?: T;
+        status?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21057,30 +20687,6 @@ export interface ComplianceGapsSelect<T extends boolean = true> {
   actualClosureDate?: T;
   riskExposure?: T;
   isActive?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "compliance-notifications_select".
- */
-export interface ComplianceNotificationsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  deadline?: T;
-  notificationTitle?: T;
-  notificationContent?: T;
-  notificationType?: T;
-  recipients?:
-    | T
-    | {
-        recipientEmail?: T;
-        recipientRole?: T;
-        id?: T;
-      };
-  daysBeforeDue?: T;
-  sentDate?: T;
-  status?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22307,34 +21913,13 @@ export interface FiscalDevicesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fiscal-period-snapshots_select".
- */
-export interface FiscalPeriodSnapshotsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  fiscalPeriods?: T;
-  snapshotLabel?: T;
-  eventType?: T;
-  snapshotData?: T;
-  priorSnapshot?: T;
-  changes?: T;
-  triggeredBy?: T;
-  triggeredAt?: T;
-  reason?: T;
-  signedUuid?: T;
-  auditTrail?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "fiscal-periods_select".
  */
 export interface FiscalPeriodsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
   label?: T;
+  changeReason?: T;
   identity?:
     | T
     | {
@@ -22825,6 +22410,10 @@ export interface InternalPoliciesSelect<T extends boolean = true> {
   nextReviewDate?: T;
   status?: T;
   policyDocument?: T;
+  versionNumber?: T;
+  versionName?: T;
+  releaseDate?: T;
+  changes?: T;
   applicableControls?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -23135,6 +22724,8 @@ export interface ItemsSelect<T extends boolean = true> {
   name?: T;
   sku?: T;
   barcode?: T;
+  product?: T;
+  variant?: T;
   address?: T;
   pricing?:
     | T
@@ -24068,71 +23659,6 @@ export interface MineralResourceAssetsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "operation-runs_select".
- */
-export interface OperationRunsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  workOrder?: T;
-  routing?: T;
-  operation?: T;
-  workCenter?: T;
-  workShift?: T;
-  qtyOrdered?: T;
-  qtyProduced?: T;
-  qtyScrap?: T;
-  qtyBackordered?: T;
-  unitOfMeasure?: T;
-  variants?:
-    | T
-    | {
-        attributes?: T;
-        qtyOrdered?: T;
-        qtyProduced?: T;
-        qtyBackordered?: T;
-        unitOfMeasure?: T;
-        id?: T;
-      };
-  startedAt?: T;
-  completedAt?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "operations_select".
- */
-export interface OperationsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  name?: T;
-  defaultWorkCenter?: T;
-  parent?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  breadcrumbs?:
-    | T
-    | {
-        doc?: T;
-        url?: T;
-        label?: T;
-        id?: T;
-      };
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "operators_select".
  */
 export interface OperatorsSelect<T extends boolean = true> {
@@ -24618,53 +24144,6 @@ export interface PaymentRunsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "payments_select".
- */
-export interface PaymentsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  transactionNumber?: T;
-  paymentKind?: T;
-  status?: T;
-  invoice?: T;
-  parties?:
-    | T
-    | {
-        sender?: T;
-        receiver?: T;
-      };
-  amounts?:
-    | T
-    | {
-        amount?: T;
-        invoiceAmount?: T;
-        currencyCode?: T;
-        exchangeRate?: T;
-      };
-  dates?:
-    | T
-    | {
-        sentAt?: T;
-        receivedAt?: T;
-        authorizedAt?: T;
-      };
-  authorization?:
-    | T
-    | {
-        authorizedBy?: T;
-      };
-  payment?:
-    | T
-    | {
-        paymentMethod?: T;
-        note?: T;
-      };
-  metadata?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payroll-runs_select".
  */
 export interface PayrollRunsSelect<T extends boolean = true> {
@@ -24880,29 +24359,12 @@ export interface PolicyAcknowledgmentsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
   policy?: T;
-  policyVersion?: T;
+  policyVersionNumber?: T;
   employeeName?: T;
   employeeId?: T;
   acknowledgedDate?: T;
   acknowledgedBy?: T;
   signedDocument?: T;
-  status?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "policy-versions_select".
- */
-export interface PolicyVersionsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  policy?: T;
-  versionNumber?: T;
-  versionName?: T;
-  releaseDate?: T;
-  changes?: T;
-  documentUrl?: T;
   status?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -25658,29 +25120,6 @@ export interface RemediationPlansSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "reporting-mappings_select".
- */
-export interface ReportingMappingsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  mappingName?: T;
-  fromStandard?: T;
-  toStandard?: T;
-  mappingType?: T;
-  mappingRules?:
-    | T
-    | {
-        sourceElement?: T;
-        targetElement?: T;
-        transformation?: T;
-        id?: T;
-      };
-  status?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "reporting-standards_select".
  */
 export interface ReportingStandardsSelect<T extends boolean = true> {
@@ -25694,6 +25133,23 @@ export interface ReportingStandardsSelect<T extends boolean = true> {
   version?: T;
   effectiveDate?: T;
   referenceMaterial?: T;
+  mappings?:
+    | T
+    | {
+        mappingName?: T;
+        toStandard?: T;
+        mappingType?: T;
+        mappingRules?:
+          | T
+          | {
+              sourceElement?: T;
+              targetElement?: T;
+              transformation?: T;
+              id?: T;
+            };
+        status?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25808,29 +25264,6 @@ export interface RoundingAdjustmentsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "routings_select".
- */
-export interface RoutingsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  workOrder?: T;
-  operation?: T;
-  workCenter?: T;
-  seq?: T;
-  setupTimeMinutes?: T;
-  runTimeSecondsPerUnit?: T;
-  unitOfMeasure?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "sales_select".
  */
 export interface SalesSelect<T extends boolean = true> {
@@ -25909,56 +25342,6 @@ export interface SalesCommissionsSelect<T extends boolean = true> {
   paidViaPayrollRun?: T;
   clawbackProvision?: T;
   journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "sales-orders_select".
- */
-export interface SalesOrdersSelect<T extends boolean = true> {
-  tenant?: T;
-  uuid?: T;
-  orderNumber?: T;
-  customer?: T;
-  customerOrderReference?: T;
-  contract?: T;
-  sentAt?: T;
-  expiresAt?: T;
-  acceptedAt?: T;
-  orderDate?: T;
-  requestedDeliveryDate?: T;
-  promisedDeliveryDate?: T;
-  shippingAddress?: T;
-  billingAddress?: T;
-  currency?: T;
-  subTotalAmount?: T;
-  taxAmount?: T;
-  totalAmount?: T;
-  lines?:
-    | T
-    | {
-        lineNumber?: T;
-        item?: T;
-        description?: T;
-        quantity?: T;
-        unitOfMeasure?: T;
-        unitPrice?: T;
-        lineNet?: T;
-        taxCategory?: T;
-        discount?: T;
-        requestedDeliveryDate?: T;
-        id?: T;
-      };
-  fulfilledQuantity?: T;
-  invoicedAmount?: T;
-  cancellationDate?: T;
-  cancellationReason?: T;
   status?: T;
   createdBy?: T;
   approvedBy?: T;
@@ -26278,25 +25661,6 @@ export interface StandardsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "statutory-field-mappings_select".
- */
-export interface StatutoryFieldMappingsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  mappingName?: T;
-  reportTemplate?: T;
-  fieldName?: T;
-  fieldType?: T;
-  sourceCollection?: T;
-  sourceField?: T;
-  transformation?: T;
-  mandatory?: T;
-  validationRules?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "statutory-report-templates_select".
  */
 export interface StatutoryReportTemplatesSelect<T extends boolean = true> {
@@ -26317,6 +25681,19 @@ export interface StatutoryReportTemplatesSelect<T extends boolean = true> {
   templateDocument?: T;
   effectiveFrom?: T;
   effectiveTo?: T;
+  fieldMappings?:
+    | T
+    | {
+        mappingName?: T;
+        fieldName?: T;
+        fieldType?: T;
+        sourceCollection?: T;
+        sourceField?: T;
+        transformation?: T;
+        mandatory?: T;
+        validationRules?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26486,9 +25863,30 @@ export interface TaxJurisdictionsSelect<T extends boolean = true> {
     | T
     | {
         country?: T;
+        iso3Code?: T;
         region?: T;
         level?: T;
       };
+  parentJurisdiction?: T;
+  languages?:
+    | T
+    | {
+        languageCode?: T;
+        languageName?: T;
+        id?: T;
+      };
+  regulatoryCharacteristics?: T;
+  bankingRequirements?: T;
+  filingDeadlines?:
+    | T
+    | {
+        filingType?: T;
+        deadline?: T;
+        frequency?: T;
+        id?: T;
+      };
+  complianceFrameworks?: T;
+  isActive?: T;
   registration?:
     | T
     | {
@@ -26586,42 +25984,6 @@ export interface TaxReturnsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "taxing-jurisdictions_select".
- */
-export interface TaxingJurisdictionsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  code?: T;
-  name?: T;
-  type?: T;
-  parentJurisdiction?: T;
-  iso2Code?: T;
-  iso3Code?: T;
-  primaryCurrency?: T;
-  languages?:
-    | T
-    | {
-        languageCode?: T;
-        languageName?: T;
-        id?: T;
-      };
-  regulatoryCharacteristics?: T;
-  bankingRequirements?: T;
-  filingDeadlines?:
-    | T
-    | {
-        filingType?: T;
-        deadline?: T;
-        frequency?: T;
-        id?: T;
-      };
-  complianceFrameworks?: T;
-  isActive?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26938,17 +26300,6 @@ export interface UsageRecordsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "user-roles_select".
- */
-export interface UserRolesSelect<T extends boolean = true> {
-  uuid?: T;
-  user?: T;
-  role?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "users_select".
  */
 export interface UsersSelect<T extends boolean = true> {
@@ -26973,6 +26324,7 @@ export interface UsersSelect<T extends boolean = true> {
         roles?: T;
         id?: T;
       };
+  roleAssignments?: T;
   orders?: T;
   cart?: T;
   addresses?: T;
@@ -27212,6 +26564,7 @@ export interface WorkOrdersSelect<T extends boolean = true> {
   unitsOrdered?: T;
   unitsProduced?: T;
   unitsBackordered?: T;
+  unitsScrap?: T;
   unitSeconds?: T;
   machinesPerWorker?: T;
   payPerHour?: T;
@@ -27221,8 +26574,8 @@ export interface WorkOrdersSelect<T extends boolean = true> {
   deliveredAt?: T;
   closedAt?: T;
   estimatedAt?: T;
-  lotVariantCode?: T;
-  lotWorkPhaseCode?: T;
+  lotVariant?: T;
+  lotWorkPhase?: T;
   lotWorkPhaseSort?: T;
   machineCode?: T;
   teamCode?: T;
@@ -27251,6 +26604,7 @@ export interface WorkPhasesSelect<T extends boolean = true> {
   kind?: T;
   parent?: T;
   machineType?: T;
+  defaultWorkCenter?: T;
   workType?: T;
   workSeconds?: T;
   skillLevel?: T;
@@ -27746,6 +27100,43 @@ export interface OrdersSelect<T extends boolean = true> {
   amount?: T;
   currency?: T;
   accessToken?: T;
+  orderNumber?: T;
+  party?: T;
+  customerOrderReference?: T;
+  contract?: T;
+  sentAt?: T;
+  expiresAt?: T;
+  acceptedAt?: T;
+  orderDate?: T;
+  requestedDeliveryDate?: T;
+  promisedDeliveryDate?: T;
+  shipTo?: T;
+  billTo?: T;
+  subTotalAmount?: T;
+  taxAmount?: T;
+  totalAmount?: T;
+  lines?:
+    | T
+    | {
+        lineNumber?: T;
+        item?: T;
+        description?: T;
+        quantity?: T;
+        unitOfMeasure?: T;
+        unitPrice?: T;
+        lineNet?: T;
+        taxCategory?: T;
+        discount?: T;
+        requestedDeliveryDate?: T;
+        id?: T;
+      };
+  fulfilledQuantity?: T;
+  invoicedAmount?: T;
+  cancellationDate?: T;
+  cancellationReason?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27793,6 +27184,42 @@ export interface TransactionsSelect<T extends boolean = true> {
   cart?: T;
   amount?: T;
   currency?: T;
+  transactionNumber?: T;
+  paymentKind?: T;
+  invoice?: T;
+  parties?:
+    | T
+    | {
+        sender?: T;
+        receiver?: T;
+      };
+  amounts?:
+    | T
+    | {
+        amount?: T;
+        invoiceAmount?: T;
+        currencyCode?: T;
+        exchangeRate?: T;
+      };
+  dates?:
+    | T
+    | {
+        sentAt?: T;
+        receivedAt?: T;
+        authorizedAt?: T;
+      };
+  authorization?:
+    | T
+    | {
+        authorizedBy?: T;
+      };
+  payment?:
+    | T
+    | {
+        paymentMethod?: T;
+        note?: T;
+      };
+  metadata?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -28394,7 +27821,6 @@ export interface TaskCreateCollectionExport {
       | 'compliance-deadlines'
       | 'compliance-frameworks'
       | 'compliance-gaps'
-      | 'compliance-notifications'
       | 'compliance-requirements'
       | 'connections'
       | 'consent-records'
@@ -28429,7 +27855,6 @@ export interface TaskCreateCollectionExport {
       | 'financial-statements'
       | 'fiscal-calendars'
       | 'fiscal-devices'
-      | 'fiscal-period-snapshots'
       | 'fiscal-periods'
       | 'fixed-assets'
       | 'fx-transactions'
@@ -28468,8 +27893,6 @@ export interface TaskCreateCollectionExport {
       | 'memories'
       | 'messages'
       | 'mineral-resource-assets'
-      | 'operation-runs'
-      | 'operations'
       | 'operators'
       | 'opportunities'
       | 'pack-items'
@@ -28480,14 +27903,12 @@ export interface TaskCreateCollectionExport {
       | 'payment-allocations'
       | 'payment-methods'
       | 'payment-runs'
-      | 'payments'
       | 'payroll-runs'
       | 'performance-obligations'
       | 'performance-reviews'
       | 'period-end-adjustments'
       | 'period-locks'
       | 'policy-acknowledgments'
-      | 'policy-versions'
       | 'post-balance-sheet-events'
       | 'post-close-analytics-reports'
       | 'posts'
@@ -28508,16 +27929,13 @@ export interface TaskCreateCollectionExport {
       | 'regulatory-reports'
       | 'related-party-transactions'
       | 'remediation-plans'
-      | 'reporting-mappings'
       | 'reporting-standards'
       | 'returns'
       | 'risk-register'
       | 'roles'
       | 'rounding-adjustments'
-      | 'routings'
       | 'sales'
       | 'sales-commissions'
-      | 'sales-orders'
       | 'sectors'
       | 'segment-reporting'
       | 'sepa-mandates'
@@ -28526,7 +27944,6 @@ export interface TaskCreateCollectionExport {
       | 'shipments'
       | 'spaces'
       | 'standards'
-      | 'statutory-field-mappings'
       | 'statutory-report-templates'
       | 'subscription-plans'
       | 'subscriptions'
@@ -28537,7 +27954,6 @@ export interface TaskCreateCollectionExport {
       | 'tax-jurisdictions'
       | 'tax-periods'
       | 'tax-returns'
-      | 'taxing-jurisdictions'
       | 'tenants'
       | 'terminals'
       | 'time-entries'
@@ -28547,7 +27963,6 @@ export interface TaskCreateCollectionExport {
       | 'transfer-pricing-files'
       | 'translations'
       | 'usage-records'
-      | 'user-roles'
       | 'users'
       | 'vendor-quotes'
       | 'vendor-scorecards'

@@ -15,6 +15,12 @@ import { itemsAfterChange } from '@/utilities/items/hooks'
  * fields it genuinely added are `name` (display name) and `contents` (fibre
  * composition, 93.7% populated). `product_variants` extends `src/variant`.
  *
+ * THE STOREFRONT LINK: an item points at the e-commerce plugin's `products` / `variants` — the
+ * etrima chain item → product_variant → product (167,562 of 167,563 items carry a variant, every
+ * variant a product — `pnpm test:etrima`). Without it a web order's lines (products/variants) and
+ * a sales order's lines (items) could not be tied to each other. Both are optional: an item that
+ * is only purchased or consumed has no storefront product.
+ *
  * @standard UN-CEFACT UNSPSC product-classification
  * @standard GS1 GTIN global-trade-item-number
  * @standard ISO-4217:2015 currency-codes price-currency
@@ -77,6 +83,20 @@ export const Items: CollectionConfig = {
       unique: true,
       index: true,
       admin: { description: 'Barcode' },
+    },
+    {
+      name: 'product',
+      type: 'relationship',
+      relationTo: 'products',
+      index: true,
+      admin: { description: 'The storefront product this item is sold as (e-commerce plugin).' },
+    },
+    {
+      name: 'variant',
+      type: 'relationship',
+      relationTo: 'variants',
+      index: true,
+      admin: { description: 'The storefront variant (option combination) this item is, when the product has variants.' },
     },
     {
       name: 'address',

@@ -139,8 +139,6 @@ export const emitPoCreated       = emitOnCreate('po:created',          'order')
 export const emitGrPosted        = emitOnStatusTransition('posted',    'gr:posted',        'inventory_transfer')
 export const emitProdCompleted   = emitOnStatusTransition('posted',    'prod:completed',   'inventory_transfer')
 export const emitQcComplete      = emitOnStatusTransition('completed', 'qc:complete',      'inventory_transfer')
-export const emitRoutingCompleted = emitOnStatusTransition('completed', 'routing:completed', 'inventory_transfer')
-export const emitOpRunCompleted   = emitOnStatusTransition('completed', 'oprun:completed',  'inventory_transfer')
 
 // Project + IFRS-15 over-time
 export const emitMilestoneAchieved = emitOnStatusTransition('achieved', 'milestone:achieved', 'invoice')

@@ -47,7 +47,8 @@ const WorkPhases: CollectionConfig = {
     description:
       'Reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing). A self-referential tree; lot-work-phases compose these.',
   },
-  // Same access spine as the manufacturing catalog (Operations) — feature-gated.
+  // The manufacturing catalog — feature-gated. This IS the operation catalog: the former generic
+  // `operations` collection was the same concept with three fields, merged here.
   access: accountingCollectionAccess({ feature: 'manufacturing' }),
   fields: [
     referenceField({ name: 'code', description: 'Work-phase code (e.g. `CONF_12`, `OCCHIELLI`).' }),
@@ -75,6 +76,12 @@ const WorkPhases: CollectionConfig = {
       name: 'machineType',
       type: 'text',
       admin: { description: 'Machine type the phase runs on (resource anchor; ISA-95 §B.4).' },
+    },
+    {
+      name: 'defaultWorkCenter',
+      type: 'relationship',
+      relationTo: 'work-centers',
+      admin: { description: 'Default work-center this phase runs on (a lot-work-phase may override with its own).' },
     },
     {
       name: 'workType',
