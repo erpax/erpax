@@ -18,8 +18,12 @@
  *  4. When a round places nothing, what is left belongs to the last app (`platform`).
  * The result is total (every collection has exactly one app) and deterministic.
  *
- * What this module does NOT do yet: an app is not yet a tenant document, and a tenant cannot yet
- * switch an app on or off. Both need a field on `tenants` and are a schema change of their own.
+ * APPS AND TENANTS. A tenant has apps switched on (`tenants.apps`, see `enabledApps`): a tenant
+ * with nothing chosen has every app, and a REQUIRED app (admin, platform) cannot be switched off.
+ * The plugin takes an optional GATE — a function that wraps a collection's access for its app —
+ * so this module stays free of requests and databases; the gate lives in
+ * `@/access/collections/shared/appAccess`. And an app is itself a tenant: `appTenants` gives one
+ * tenant row per app (`tenants.app`), the tenant that owns the app's own pages and forms.
  *
  * @standard ISO/IEC-25010:2011 §4.2.7 modularity — a change to one app touches that app's plugin
  * @see https://payloadcms.com/docs/plugins/build-your-own
@@ -33,7 +37,26 @@ export interface App {
   readonly title: string
   /** The collections that define the app. Everything else is placed by the graph. */
   readonly anchors: readonly string[]
+  /** A required app is on for every tenant and cannot be switched off. */
+  readonly required?: boolean
 }
+
+/** Wraps one collection's access for the app it belongs to. */
+export type Gate = (app: App, collection: CollectionConfig) => CollectionConfig
+
+/** The apps a tenant has on: everything when nothing is chosen, and the required apps always. */
+export const enabledApps = (tenant: { apps?: readonly string[] | null } | null | undefined, apps: readonly App[]): string[] => {
+  const chosen = tenant?.apps
+  const all = chosen === undefined || chosen === null || chosen.length === 0
+  return apps.filter((app) => app.required === true || all || chosen!.includes(app.slug)).map((app) => app.slug)
+}
+
+/** Is this app on for this tenant? */
+export const hasApp = (tenant: { apps?: readonly string[] | null } | null | undefined, app: string, apps: readonly App[]): boolean => enabledApps(tenant, apps).includes(app)
+
+/** One tenant row per app: the app as a tenant, owning the app's own content. */
+export const appTenants = (apps: readonly App[]): Array<{ name: string; slug: string; app: string; apps: string[] }> =>
+  apps.map((app) => ({ name: app.title, slug: app.slug, app: app.slug, apps: enabledApps({ apps: [app.slug] }, apps) }))
 
 type Shape = Pick<CollectionConfig, 'slug' | 'fields'>
 
@@ -117,16 +140,18 @@ const inApp = <T extends CollectionConfig>(collection: T, title: string): T => (
 
 /** One app as a Payload plugin: it adds the app's collections, each under the app's name. */
 export const appPlugin =
-  (app: App, collections: readonly CollectionConfig[]): Plugin =>
+  (app: App, collections: readonly CollectionConfig[], gate?: Gate): Plugin =>
   (config: Config): Config => {
     const present = new Set((config.collections ?? []).map((collection) => collection.slug))
-    return { ...config, collections: [...(config.collections ?? []), ...collections.filter((collection) => !present.has(collection.slug)).map((collection) => inApp(collection, app.title))] }
+    const own = collections.filter((collection) => !present.has(collection.slug)).map((collection) => inApp(collection, app.title))
+    // a required app is never gated: it is on for everyone
+    return { ...config, collections: [...(config.collections ?? []), ...(gate && app.required !== true ? own.map((collection) => gate(app, collection)) : own)] }
   }
 
 /** Every app as its own plugin — put these first, so later plugins find the collections. */
-export const appPlugins = (collections: readonly CollectionConfig[], apps: readonly App[], share = HUB_SHARE): Plugin[] => {
+export const appPlugins = (collections: readonly CollectionConfig[], apps: readonly App[], share = HUB_SHARE, gate?: Gate): Plugin[] => {
   const placed = partition(collections, apps, share)
-  return apps.map((app) => appPlugin(app, collections.filter((collection) => placed.get(collection.slug) === app.slug)))
+  return apps.map((app) => appPlugin(app, collections.filter((collection) => placed.get(collection.slug) === app.slug), gate))
 }
 
 /**
@@ -134,8 +159,18 @@ export const appPlugins = (collections: readonly CollectionConfig[], apps: reado
  * A collection no app anchors keeps the group its plugin gave it.
  */
 export const appNavigation =
-  (apps: readonly App[]): Plugin =>
+  (apps: readonly App[], gate?: Gate): Plugin =>
   (config: Config): Config => {
-    const titles = new Map(apps.flatMap((app) => app.anchors.map((anchor) => [anchor, app.title] as const)))
-    return { ...config, collections: (config.collections ?? []).map((collection) => (titles.has(collection.slug) ? inApp(collection, titles.get(collection.slug)!) : collection)) }
+    const owner = new Map(apps.flatMap((app) => app.anchors.map((anchor) => [anchor, app] as const)))
+    const ours = new Set((config.collections ?? []).filter((collection) => apps.some((app) => collection.admin?.group === app.title)).map((collection) => collection.slug))
+    return {
+      ...config,
+      collections: (config.collections ?? []).map((collection) => {
+        const app = owner.get(collection.slug)
+        // only what another plugin brought: an app's own collections were named and gated when added
+        if (!app || ours.has(collection.slug)) return collection
+        const namedCollection = inApp(collection, app.title)
+        return gate && app.required !== true ? gate(app, namedCollection) : namedCollection
+      }),
+    }
   }

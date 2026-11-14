@@ -1,6 +1,6 @@
 {
   "name": "@erpax/ledger",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Ledger — the books: accounts, journals, periods, banks, tax. An erpax app, delivered as one Payload plugin. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",

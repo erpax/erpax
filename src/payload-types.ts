@@ -827,6 +827,44 @@ export interface Tenant {
       }[]
     | null;
   /**
+   * The apps this tenant has switched on. Leave empty for all of them. Admin and Platform are always on.
+   */
+  apps?:
+    | (
+        | 'admin'
+        | 'sites'
+        | 'sales'
+        | 'ledger'
+        | 'people'
+        | 'make'
+        | 'stock'
+        | 'comply'
+        | 'assets'
+        | 'work'
+        | 'chat'
+        | 'platform'
+      )[]
+    | null;
+  /**
+   * Set when this tenant IS an app — the tenant its own content lives in.
+   */
+  app?:
+    | (
+        | 'admin'
+        | 'sites'
+        | 'sales'
+        | 'ledger'
+        | 'people'
+        | 'make'
+        | 'stock'
+        | 'comply'
+        | 'assets'
+        | 'work'
+        | 'chat'
+        | 'platform'
+      )
+    | null;
+  /**
    * This tenant's connections to outside directories.
    */
   providers?:
@@ -19886,6 +19924,8 @@ export interface TenantsSelect<T extends boolean = true> {
         verified?: T;
         id?: T;
       };
+  apps?: T;
+  app?: T;
   providers?:
     | T
     | {

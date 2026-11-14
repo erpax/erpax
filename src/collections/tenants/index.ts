@@ -7,6 +7,7 @@ import { localeRecord } from '@/i18n'
 import { seedPresets } from '@/utilities/preset'
 import { updateAndDeleteAccess } from '@/utilities/tenants/access'
 import { normalizeTenantDomain, normalizeTenantSlug } from '@/utilities/tenants/hooks'
+import { APPS } from '@/packages'
 import { PROVIDERS } from '@/packages/admin/providers'
 import { tenantProviders } from '@/packages/admin/providers/settings'
 
@@ -74,6 +75,22 @@ export const Tenants: CollectionConfig = {
         { name: 'name', type: 'text', required: true },
         { name: 'verified', type: 'checkbox', defaultValue: false, admin: { description: 'Ownership of the domain has been proven.' } },
       ],
+    },
+    {
+      // The apps this tenant has. Nothing chosen means every app; a required app is always on.
+      name: 'apps',
+      type: 'select',
+      hasMany: true,
+      options: APPS.map((app) => ({ label: app.title, value: app.slug })),
+      admin: { description: 'The apps this tenant has switched on. Leave empty for all of them. Admin and Platform are always on.' },
+    },
+    {
+      // An app is itself a tenant: the tenant that owns the app's own pages and forms.
+      name: 'app',
+      type: 'select',
+      index: true,
+      options: APPS.map((app) => ({ label: app.title, value: app.slug })),
+      admin: { position: 'sidebar', description: 'Set when this tenant IS an app — the tenant its own content lives in.' },
     },
     tenantProviders(PROVIDERS, { create: fieldAccess, read: fieldAccess, update: fieldAccess }),
     {

@@ -5,7 +5,7 @@
  * @see src/packages/engine/index.ts (how a collection finds its app)
  */
 import type { CollectionConfig, Plugin } from 'payload'
-import { appNavigation, appPlugins, type App } from '@/packages/engine'
+import { appNavigation, appPlugins, type App, type Gate } from '@/packages/engine'
 import { admin } from '@/packages/admin'
 import { sites } from '@/packages/sites'
 import { sales } from '@/packages/sales'
@@ -23,7 +23,7 @@ import { platform } from '@/packages/platform'
 export const APPS: readonly App[] = [admin, sites, sales, ledger, people, make, stock, comply, assets, work, chat, platform]
 
 /** One plugin per app — put these first, so later plugins find the collections. */
-export const packages = (collections: readonly CollectionConfig[]): Plugin[] => appPlugins(collections, APPS)
+export const packages = (collections: readonly CollectionConfig[], gate?: Gate): Plugin[] => appPlugins(collections, APPS, undefined, gate)
 
 /** The collections other plugins brought, under their app's name — put this last. */
-export const navigation = (): Plugin => appNavigation(APPS)
+export const navigation = (gate?: Gate): Plugin => appNavigation(APPS, gate)

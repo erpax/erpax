@@ -11,5 +11,6 @@ import type { App } from '@/packages/engine'
 export const platform: App = {
   slug: 'platform',
   title: 'Platform',
+  required: true,
   anchors: [],
 }

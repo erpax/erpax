@@ -11,5 +11,6 @@ import type { App } from '@/packages/engine'
 export const admin: App = {
   slug: 'admin',
   title: 'Admin',
+  required: true,
   anchors: ['tenants', 'users', 'roles', 'groups', 'org-units'],
 }
