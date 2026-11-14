@@ -53,7 +53,7 @@ const eslintConfig = defineConfig([
     files: [
       // dissolved out of src/components/ to top-level single-word folders
       'src/providers/**/*.{ts,tsx}',
-      'src/header/**/*.{ts,tsx}',
+      'src/globals/**/*.{ts,tsx}',
       // Data-loading effects (fetch on mount/deps; setLoading/setData is the canonical pattern).
       'src/admin/**/*.{ts,tsx}',
       'src/analytics/**/*.{ts,tsx}',
