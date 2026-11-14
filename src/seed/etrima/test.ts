@@ -88,7 +88,7 @@ describe('etrima port — mappers are pure: one row in, one document out', () =>
   })
   it('an order carries its buyer as the party, and a lot points at its order', () => {
     expect(mapper('orders').map({ id: 6, number: 'SO-6', buyer_id: 9, date: new Date('2019-05-06T00:00:00Z'), total_price: '1200.50' })).toMatchObject({
-      id: oid('orders', 6), orderNumber: 'SO-6', party: oid('accounts', 9), orderDate: '2019-05-06T00:00:00.000Z', totalAmount: 1200.5,
+      id: oid('orders', 6), orderNumber: 'SO-6', party: { relationTo: 'parties', value: oid('accounts', 9) }, orderDate: '2019-05-06T00:00:00.000Z', totalAmount: 1200.5,
     })
     expect(mapper('orders').map({ id: 7 }).orderNumber).toBe('O-7')
     expect(mapper('lots').map({ id: 3, order_id: 6 })).toMatchObject({ order: oid('orders', 6) })

@@ -173,7 +173,8 @@ export const mappers: readonly Mapper[] = [
       compact({
         id: oid('orders', r.id),
         orderNumber: text(r.number) ?? `O-${String(r.id)}`,
-        party: ref('accounts', r.buyer_id),
+        // polymorphic counterparty: an etrima order's buyer is an account, which the port lands in `parties`
+        party: r.buyer_id === null || r.buyer_id === undefined ? undefined : { relationTo: 'parties', value: oid('accounts', r.buyer_id) },
         orderDate: iso(r.date),
         requestedDeliveryDate: iso(r.first_delivery_date),
         promisedDeliveryDate: iso(r.last_delivery_date),

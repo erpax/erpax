@@ -200,7 +200,7 @@ export async function teardownChainContext(payload: Payload, ctx: ChainContext):
   // canonical pattern; this helper covers fixture-style tests.
   for (const collection of [
     'usage-records', 'invoices', 'transactions', 'gl-postings', 'journal-entries',
-    'goods-receipts', 'orders', 'vendor-quotes', 'purchase-requisitions',
+    'goods-receipts', 'orders',
     'inventory-movements', 'work-orders', 'bills-of-materials',
     'projects', 'project-tasks', 'project-milestones', 'wip-snapshots',
     'recurring-journals', 'provisions', 'government-grants',
