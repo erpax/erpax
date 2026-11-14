@@ -7,6 +7,13 @@
  * `ordersCollectionOverride`: the plugin owns the collection, this module adds the register's
  * fields, stages and hooks. A web checkout and a negotiated order are now the same document.
  *
+ * THE PURCHASE SIDE. A purchase order is the same document seen from the buyer's chair — a number,
+ * a counterparty, dates, lines, totals — so the custom `purchase-orders` collection is folded in
+ * as well: `side` says which it is (sale by default, so a web checkout is a sale). The purchase
+ * side adds the vendor, delivery terms, the GL account and received quantity per line, and the
+ * goods-receipt join. Events and the saved lists are split by side: a purchase order "sent to
+ * vendor" is not a sales quote, and cancelling one must not post a sales reversal.
+ *
  * What the fold decided where the two shapes collided:
  *  - `status` is ONE lifecycle: the plugin's values (processing · completed · cancelled · refunded)
  *    and the register's stages (draft · the quote stages · submitted … on_hold) in one select.
@@ -30,18 +37,19 @@
  * @audit ISO-19011:2018 audit-trail
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  */
-import type { CollectionBeforeValidateHook, Field, Option } from 'payload'
+import type { CollectionAfterChangeHook, CollectionBeforeValidateHook, Field, Option } from 'payload'
 import type { CollectionOverride } from '@payloadcms/plugin-ecommerce/types'
 
 import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
+import { notesField } from '@/fields/textarea/notesField'
 import { unitOfMeasureField } from '@/fields/text/unitOfMeasureField'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { emitOrderLifecycleEvents } from '@/hooks/collections/users/emitOrderLifecycleEvents'
-import { emitOnCreate, emitOnStatusTransition } from '@/utilities/chain/event/emitter'
+import { emitOnCreate, emitOnStatusTransition, emitPoCreated } from '@/utilities/chain/event/emitter'
 import { preset, type Preset } from '@/utilities/preset'
 
 /** The stages in which the document is still a quote: offered, not yet an order. */
@@ -53,13 +61,37 @@ export const orderStages = (): string[] => [
   'processing', 'completed', 'refunded',
 ]
 
-/** The two lists that stand where two collections stood. */
+/** The purchase side's own stages (it shares draft · submitted · sent · closed · cancelled with the sale side). */
+export const purchaseStages = (): string[] => ['approved', 'partial', 'received']
+
+export type OrderSide = 'sale' | 'purchase'
+
+/** Which side an order is on. Absent means sale: the plugin creates a web order with no side. */
+export const sideOf = (doc: unknown): OrderSide => ((doc as { side?: unknown } | null | undefined)?.side === 'purchase' ? 'purchase' : 'sale')
+
+const saleSide = { side: { not_equals: 'purchase' } }
+
+/** The three lists that stand where three collections stood. */
 export function orderPresets(): Preset[] {
   return [
-    preset('Quotes', 'orders', { status: { in: quoteStages() } }, ['orderNumber', 'party', 'totalAmount', 'status', 'expiresAt']),
-    preset('Orders', 'orders', { status: { in: orderStages() } }, ['orderNumber', 'party', 'orderDate', 'totalAmount', 'currency', 'status']),
+    preset('Quotes', 'orders', { and: [saleSide, { status: { in: quoteStages() } }] }, ['orderNumber', 'party', 'totalAmount', 'status', 'expiresAt']),
+    preset('Orders', 'orders', { and: [saleSide, { status: { in: orderStages() } }] }, ['orderNumber', 'party', 'orderDate', 'totalAmount', 'currency', 'status']),
+    preset('Purchase orders', 'orders', { side: { equals: 'purchase' } }, ['orderNumber', 'vendor', 'orderDate', 'totalAmount', 'status']),
   ]
 }
+
+/** Delivery terms and their named place go together: one without the other says nothing about where risk passes. */
+export const incotermsPair: CollectionBeforeValidateHook = ({ data }) => {
+  const terms = data?.deliveryTerms as string | undefined
+  const place = data?.incotermsLocation as string | undefined
+  if (terms && !place) throw new Error('incotermsLocation is required when deliveryTerms is specified. Example: "CIF Burgas Central Warehouse".')
+  if (place && !terms) throw new Error('deliveryTerms is required when incotermsLocation is specified.')
+  return data
+}
+
+/** Run an event hook only for orders on one side; the other side passes through untouched. */
+export const onSide = (side: OrderSide, hook: CollectionAfterChangeHook): CollectionAfterChangeHook => (args) =>
+  sideOf(args.doc) === side ? hook(args) : args.doc
 
 /** One line's net: quantity × unit price, less its discount. */
 export const lineNetOf = (line: { quantity?: unknown; unitPrice?: unknown; discount?: unknown }): number =>
@@ -95,6 +127,10 @@ const REGISTER_STAGES: readonly { label: string; value: string }[] = [
   { label: 'Closed', value: 'closed' },
   { label: 'Cancelled', value: 'cancelled' },
   { label: 'On hold', value: 'on_hold' },
+  // The purchase side.
+  { label: 'Purchase — approved', value: 'approved' },
+  { label: 'Purchase — partially received', value: 'partial' },
+  { label: 'Purchase — received', value: 'received' },
 ]
 
 const valueOf = (option: Option): string => (typeof option === 'string' ? option : option.value)
@@ -107,9 +143,18 @@ export const orderStatusOptions = (pluginOptions: readonly Option[]): Option[] =
 
 /** The sales-order register's fields, as they sit on the plugin's order. */
 export const orderFields = (): Field[] => [
+  { name: 'side', type: 'select', defaultValue: 'sale', index: true,
+    options: [
+      { label: 'Sale (order-to-cash)', value: 'sale' },
+      { label: 'Purchase (procure-to-pay)', value: 'purchase' },
+    ],
+    admin: { description: 'Whether this is an order from a customer or an order to a vendor. A web checkout is a sale.' } },
+  // Not required: the plugin creates an order at checkout with no number. (`referenceField` is
+  // required by default, which would have refused every web order.)
   referenceField({
     name: 'orderNumber',
-    description: 'Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents.',
+    required: false,
+    description: 'Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents. Empty on a web checkout.',
   }),
   { name: 'party', type: 'relationship', relationTo: 'parties', index: true,
     admin: { description: 'The trading partner the order is with and invoiced to. (`customer` is the user who checked out.)' } },
@@ -168,8 +213,35 @@ export const orderFields = (): Field[] => [
         admin: { description: 'Line-level discount amount (negative impact on lineNet).' } },
       { name: 'requestedDeliveryDate', type: 'date',
         admin: { description: 'Per-line delivery date (when distinct from order-header date).' } },
+      { name: 'glAccount', type: 'relationship', relationTo: 'gl-accounts',
+        admin: { description: 'Purchase side: expense / asset account to debit on receipt.' } },
+      { name: 'quantityReceived', type: 'number', defaultValue: 0,
+        admin: { readOnly: true, description: 'Purchase side: cumulative quantity received via goods-receipts.' } },
     ],
   },
+
+  // ── The purchase side (formerly the purchase-orders collection) ──
+  { name: 'vendor', type: 'relationship', relationTo: 'addresses', index: true,
+    admin: { description: 'Purchase side: the vendor receiving the order.' } },
+  { name: 'project', type: 'relationship', relationTo: 'projects', index: true,
+    admin: { description: 'The project this belongs to. Costs book to the project; the project carries the award.' } },
+  { name: 'deliveryTerms', type: 'select',
+    options: [
+      { label: 'FOB (Free On Board)', value: 'FOB' },
+      { label: 'CIF (Cost, Insurance, Freight)', value: 'CIF' },
+      { label: 'DDP (Delivered Duty Paid)', value: 'DDP' },
+      { label: 'EXW (Ex Works)', value: 'EXW' },
+    ],
+    admin: { description: 'Incoterms 2020 term determining freight responsibility, risk transfer, and GL posting timing per IFRS-15 §38-42.' } },
+  { name: 'incotermsLocation', type: 'text',
+    admin: { description: 'Named place where the delivery term applies (e.g. "CIF Burgas Port"). Required with deliveryTerms.' } },
+  { name: 'submittedAt', type: 'date', admin: { readOnly: true } },
+  { name: 'closedAt', type: 'date', admin: { readOnly: true } },
+  { name: 'receipts', type: 'join', collection: 'goods-receipts', on: 'purchaseOrder',
+    admin: { description: 'Partial / full goods-receipts against this purchase order.' } },
+  { name: 'invoice', type: 'relationship', relationTo: 'invoices',
+    admin: { description: 'Matched vendor bill (three-way-match anchor).' } },
+  notesField(),
 
   // Fulfillment progress (read-mostly — updated by Shipments hook when status → shipped)
   { name: 'fulfilledQuantity', type: 'number', defaultValue: 0,
@@ -218,7 +290,7 @@ export const ordersOverride: CollectionOverride = ({ defaultCollection }) => {
     fields: [...fields, accessTokenField, ...orderFields()],
     hooks: {
       ...defaultCollection.hooks,
-      beforeValidate: [...(defaultCollection.hooks?.beforeValidate ?? []), totalsFromLines],
+      beforeValidate: [...(defaultCollection.hooks?.beforeValidate ?? []), totalsFromLines, incotermsPair],
       beforeChange: [
         ...(defaultCollection.hooks?.beforeChange ?? []),
         autoPopulateCreatedBy,
@@ -226,18 +298,22 @@ export const ordersOverride: CollectionOverride = ({ defaultCollection }) => {
         enforceSegregationOfDuties('approvedBy', 'createdBy'),
         autoSetTimestamp('sentAt', (d) => (d as { status?: string }).status === 'sent'),
         autoSetTimestamp('acceptedAt', (d) => (d as { status?: string }).status === 'accepted'),
+        autoSetTimestamp('submittedAt', (d) => (d as { status?: string }).status === 'submitted'),
+        autoSetTimestamp('closedAt', (d) => ['closed', 'cancelled'].includes(String((d as { status?: string }).status))),
       ],
       afterChange: [
         ...(defaultCollection.hooks?.afterChange ?? []),
         // Every status transition emits the matching domain event so the GL can post the
         // IFRS 15 / ASC 606 revenue-recognition + COGS entries.
-        emitOrderLifecycleEvents,
-        // The register's chain events (UN-EDIFACT ORDRSP lifecycle).
-        emitOnCreate('order:created', 'order'),
-        emitOnStatusTransition('accepted', 'quote:accepted', 'order'),
-        emitOnStatusTransition('confirmed', 'order:confirmed', 'order'),
-        emitOnStatusTransition('fulfilled', 'order:fulfilled', 'order'),
-        emitOnStatusTransition('cancelled', 'order:cancelled', 'order'),
+        // Sale side only: a purchase order must not post revenue, nor a sales reversal when cancelled.
+        onSide('sale', emitOrderLifecycleEvents),
+        // The register's chain events (UN-EDIFACT ORDRSP lifecycle), each on its own side.
+        onSide('sale', emitOnCreate('order:created', 'order')),
+        onSide('sale', emitOnStatusTransition('accepted', 'quote:accepted', 'order')),
+        onSide('sale', emitOnStatusTransition('confirmed', 'order:confirmed', 'order')),
+        onSide('sale', emitOnStatusTransition('fulfilled', 'order:fulfilled', 'order')),
+        onSide('sale', emitOnStatusTransition('cancelled', 'order:cancelled', 'order')),
+        onSide('purchase', emitPoCreated),
         auditTrailAfterChange('orders'),
       ],
     },

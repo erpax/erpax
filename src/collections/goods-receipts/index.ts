@@ -61,7 +61,7 @@ const GoodsReceipts: CollectionConfig = {
     {
       name: 'purchaseOrder',
       type: 'relationship',
-      relationTo: 'purchase-orders',
+      relationTo: 'orders',
       required: true,
       index: true,
     },

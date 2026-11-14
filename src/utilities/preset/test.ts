@@ -18,7 +18,7 @@ describe('preset — a saved list is a row', () => {
       }),
       create: async ({ data }: { data: Record<string, unknown> }) => { rows.push(data); return data },
     } as unknown as Parameters<typeof loadPresets>[0]
-    const other = preset('Quotes', 'purchase-orders', {}, [])
+    const other = preset('Quotes', 'parties', {}, [])
     expect(await loadPresets(payload, [p, other])).toEqual({ created: 2, unchanged: 0 })
     expect(await loadPresets(payload, [p, other])).toEqual({ created: 0, unchanged: 2 })
   })

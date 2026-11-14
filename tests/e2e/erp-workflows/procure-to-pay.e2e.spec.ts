@@ -46,7 +46,7 @@ test.describe('ERP workflow: Procure-to-Pay', () => {
 
     // Step 3 — Purchase Orders list.
     const posOk = await safeCaptureRoute(page, testInfo, WORKFLOW, '03-pos-list',
-      `${BASE}/admin/collections/purchase-orders`,
+      `${BASE}/admin/collections/orders`,
       'Purchase Orders list view')
     if (posOk && (await page.getByText('Receipt status').count()) === 0) {
       recordUxGap(testInfo, WORKFLOW, '03-pos-list', 'minor',

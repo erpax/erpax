@@ -74,9 +74,33 @@ describe('etrima port — mappers are pure: one row in, one document out', () =>
     expect(doc).toMatchObject({ employeeNumber: '0042', displayName: 'Ada Maria Lovelace', identity: { givenName: 'Ada', familyName: 'Maria Lovelace' }, hireDate: '2010-01-02T00:00:00.000Z' })
     expect(JSON.stringify(doc)).not.toMatch(/0000000000|555|somewhere/)
   })
+  it('an account becomes a party with a unique code, a customer by default', () => {
+    const a = mapper('parties').map({ id: 9, code: 'ACME', name: null, company: 'Acme Ltd', country_code: 'BG', currency_code: null, vat_registration: 'BG123' })
+    const b = mapper('parties').map({ id: 10, code: 'ACME', name: 'Acme again' })
+    expect(a).toMatchObject({ code: 'ACME-9', name: 'Acme Ltd', roles: ['customer'], country: 'BG', identity: { type: 'company', status: 'active' }, tax: { vatNumber: 'BG123' }, commercial: { defaultCurrency: 'EUR' } })
+    expect(b.code).toBe('ACME-10') // etrima codes repeat; erpax codes are unique
+    expect(mapper('parties').map({ id: 11 })).toMatchObject({ code: 'A-11', name: 'Account 11' })
+  })
+  it('a team becomes a crew work-center, and shifts and routing steps point at it', () => {
+    expect(mapper('work-centers').map({ id: 4, code: 'T4', name: null })).toMatchObject({ id: oid('teams', 4), reference: 'TEAM-T4', name: 'T4', type: 'crew' })
+    expect(mapper('work-shifts').map({ id: 1, team_id: 4, employee_id: 2 })).toMatchObject({ team: oid('teams', 4), actor: oid('employees', 2) })
+    expect(mapper('lot-work-phases').map({ id: 1, lot_id: 3, work_phase_id: 5, team_id: 4 })).toMatchObject({ team: oid('teams', 4) })
+  })
+  it('an order carries its buyer as the party, and a lot points at its order', () => {
+    expect(mapper('orders').map({ id: 6, number: 'SO-6', buyer_id: 9, date: new Date('2019-05-06T00:00:00Z'), total_price: '1200.50' })).toMatchObject({
+      id: oid('orders', 6), orderNumber: 'SO-6', party: oid('accounts', 9), orderDate: '2019-05-06T00:00:00.000Z', totalAmount: 1200.5,
+    })
+    expect(mapper('orders').map({ id: 7 }).orderNumber).toBe('O-7')
+    expect(mapper('lots').map({ id: 3, order_id: 6 })).toMatchObject({ order: oid('orders', 6) })
+  })
+  it('a work order\'s worker is the employee behind the contract etrima recorded', () => {
+    expect(mapper('work-orders').map({ id: 7, worker_id: 55, worker_employee_id: 2 })).toMatchObject({ worker: oid('employees', 2) })
+    expect(mapper('work-orders').map({ id: 8, worker_id: 55, worker_employee_id: null })).not.toHaveProperty('worker')
+  })
   it('lists a collection after everything it points at', () => {
     const order = mappers.map((m) => m.collection)
     const before = (a: string, b: string) => expect(order.indexOf(a), `${a} before ${b}`).toBeLessThan(order.indexOf(b))
+    before('parties', 'orders'); before('orders', 'lots'); before('work-centers', 'lot-work-phases'); before('work-centers', 'work-shifts'); before('employees', 'work-orders')
     before('products', 'lots'); before('lots', 'lot-work-phases'); before('lot-work-phases', 'lot-variants'); before('work-phases', 'lot-work-phases')
     before('employees', 'work-shifts'); before('work-shifts', 'work-orders'); before('lot-variants', 'work-orders'); before('packs', 'pack-items'); before('lot-variants', 'pack-items')
   })

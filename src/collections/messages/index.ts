@@ -47,7 +47,7 @@ const Messages: CollectionConfig = {
     {
       name: 'relatedDocument',
       type: 'relationship',
-      relationTo: ['invoices', 'parties', 'orders', 'purchase-orders'],
+      relationTo: ['invoices', 'parties', 'orders'],
       admin: { description: 'Optional business record this message concerns.' },
     },
     { name: 'readAt', type: 'date',
