@@ -53,6 +53,29 @@ describe('packages — the release manifest', () => {
   })
 })
 
+describe('packages — one version, and a package for every folder of src/packages', () => {
+  const versionOf = (pj: string): string => JSON.parse(readFileSync(pj, 'utf8')).version
+  it('every package carries the root version — the release is one tag', () => {
+    const shared = versionOf(join(root, 'package.json'))
+    for (const leaf of readdirSync(packagesDir)) {
+      const pj = join(packagesDir, leaf, 'package.json')
+      if (existsSync(pj)) expect(versionOf(pj), `packages/${leaf} is off the shared version`).toBe(shared)
+    }
+    for (const entry of Object.values(readManifest())) expect(entry.version).toBe(shared)
+  })
+  it('every folder of src/packages has its generated package here', () => {
+    const source = join(root, 'src', 'packages')
+    const folders = readdirSync(source).filter((n) => existsSync(join(source, n, 'index.ts')))
+    expect(folders.length).toBeGreaterThan(0)
+    for (const leaf of folders) {
+      const pkg = JSON.parse(readFileSync(join(packagesDir, leaf, 'package.json'), 'utf8'))
+      expect(pkg.name).toBe(`@erpax/${leaf}`)
+      expect(pkg.erpax?.generated).toBe(true)
+      expect(pkg.erpax?.entryFile).toMatch(new RegExp(`^packages/${leaf}/`))
+    }
+  })
+})
+
 describe('packages — the build is REPRODUCIBLE (what makes a version stable)', () => {
   it('a rebuild of unchanged source reports no release — the content-uuid holds', () => {
     // release.mjs --check rebuilds every package and compares the content-uuid to the
