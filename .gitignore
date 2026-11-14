@@ -123,3 +123,6 @@ RECURSION.md
 # Generated page seeds — derived from installed skills, regenerated on demand (tsx src/payload/local/index.ts)
 src/**/seed.generated.json
 src/**/redirects.generated.json
+
+# the generated entry of an app package (packages/build.mjs writes it on every build)
+src/packages/*/.package.ts

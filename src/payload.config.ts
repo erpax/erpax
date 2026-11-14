@@ -87,18 +87,9 @@ import {
   type SupportedLocale,
 } from '@/i18n'
 
-import { adminGroupOf } from '@/utilities/navigation'
-import { COLLECTION_DIAMOND_KEY, foldCollectionLifecycle } from '@/utilities/factory/collection'
+import { navigation, packages } from '@/packages'
+import { foldCollectionLifecycle } from '@/utilities/factory/collection'
 import type { Config } from '@/utilities/types'
-
-/** Payload admin.group — first path segment of the collection atom (computed, never hand-set). */
-function collectionAdminGroup(c: CollectionConfig): string {
-  const diamond = (c as Record<string, unknown>)[COLLECTION_DIAMOND_KEY] as
-    | { atomPath?: string }
-    | undefined
-  const atomPath = diamond?.atomPath ?? c.slug.replace(/-/g, '/')
-  return adminGroupOf(atomPath)
-}
 
 /** `buildConfig({ logger })` type — used so Workers can supply a non-pino logger without `any`. */
 type PayloadBuildConfigLogger = NonNullable<Parameters<typeof buildConfig>[0]['logger']>
@@ -311,19 +302,16 @@ export default buildConfig({
   // foldCollectionLifecycle — the spine fold: every collection with a status
   // select auto-emits `<slug>:created` + `<slug>:<status>` producers (the
   // mute-corpus fix: 208/215 collections were silent; one map unmutes all).
-  collections: (Object.values(allCollections) as CollectionConfig[]).map((c) =>
-    foldCollectionLifecycle({
-      ...c,
-      lockDocuments: false as const,
-      admin: {
-        ...c.admin,
-        group: collectionAdminGroup(c),
-      },
-    }),
-  ),
+  // The collections arrive through the APP plugins below (src/packages): one plugin per app,
+  // each adding its own collections under the app's name. Which app a collection belongs to is
+  // computed from the relationship graph.
+  collections: [],
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
   plugins: [
+    ...packages(
+      (Object.values(allCollections) as CollectionConfig[]).map((c) => foldCollectionLifecycle({ ...c, lockDocuments: false as const })),
+    ),
     r2Storage({
       bucket: (await getCloudflare()).env.R2,
       collections: { media: true },
@@ -513,6 +501,8 @@ export default buildConfig({
     // bundle — auditable dev tooling, NOT a standards-required ERP surface, so it does not belong in
     // production (the app is API-first). The plugin stays in the repo (src/plugins/admin/ui) for
     // local/dev admin; the Worker ships lean. Re-add behind a dev-only guard if the admin viz is wanted.
+    // last: the collections other plugins brought (orders, forms, …) take their app's name too
+    navigation(),
   ],
   secret: payloadSecret || 'INSECURE_BUILD_ONLY_PLACEHOLDER',
   typescript: {

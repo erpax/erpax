@@ -1,6 +1,6 @@
 {
   "name": "@erpax/algebra",
-  "version": "0.1.1",
+  "version": "1.0.8",
   "description": "Exact arithmetic and theorem algebras — exactRound / exactMaxOf and friends, with an audit that reports every law a system breaks. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",

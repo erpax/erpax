@@ -6,9 +6,13 @@
  * actually changed. Each build's dist is content-hashed to a v8 content-uuid (the
  * same primitive the corpus addresses everything with); that uuid is compared to
  * the last published one in packages/released.json. Unchanged uuid ⇒ no release
- * (nothing to ship). Changed uuid ⇒ patch bump, and the tag <pkg>-v<version> the
- * publish workflow fires on. No changeset files, no hand-bumped versions — the
+ * (nothing to ship). Changed uuid ⇒ patch bump of the one shared version. No changeset files, no hand-bumped versions — the
  * content IS the version signal ("derivable content is not stored").
+ *
+ * ONE VERSION. Every package carries the same version — the root package.json's — the way a
+ * monorepo releases its packages together. When ANY package's content changed, the root version
+ * takes one patch bump and every package (algebra included) is set to it; the release is one tag,
+ * `v<version>`. `--check` fails on a changed package and on a package off the shared version.
  *
  * Usage:
  *   node packages/release.mjs            # dry-run: print the release plan
@@ -98,42 +102,42 @@ const manifest = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8'
 // so it is released independently and excluded here — one package, one pipeline.
 execFileSync('node', [join(packagesDir, 'build.mjs'), 'all'], { cwd: root, stdio: 'inherit' })
 
+const ROOT_PJ = join(root, 'package.json')
+const rootVersion = JSON.parse(readFileSync(ROOT_PJ, 'utf8')).version
+const setVersion = (pj, version) => writeFileSync(pj, readFileSync(pj, 'utf8').replace(/("version":\s*")[^"]+(")/, `$1${version}$2`))
+/** Every package manifest that carries the shared version — algebra too, though it builds on its own lane. */
+const everyManifest = () => readdirSync(packagesDir).map((name) => join(packagesDir, name, 'package.json')).filter((pj) => existsSync(pj))
+
 const plan = []
 for (const { dir, pj, pkg } of publicPackages()) {
   const uuid = distUuid(dir)
   const prior = manifest[pkg.name]
-  const changed = !prior || prior.contentUuid !== uuid
-  const nextVersion = changed && prior ? bumpPatch(prior.version) : pkg.version
-  plan.push({ name: pkg.name, dir, pj, pkg, uuid, changed, prior, version: changed ? nextVersion : pkg.version })
+  plan.push({ name: pkg.name, dir, pj, pkg, uuid, changed: !prior || prior.contentUuid !== uuid })
 }
 
 const changed = plan.filter((p) => p.changed)
-console.log(`\n📦 release plan — ${changed.length}/${plan.length} package(s) changed:`)
+const offVersion = everyManifest().filter((pj) => JSON.parse(readFileSync(pj, 'utf8')).version !== rootVersion)
+const stale = plan.filter((p) => manifest[p.name]?.version !== rootVersion)
+const version = changed.length ? bumpPatch(rootVersion) : rootVersion
+console.log(`\n📦 release plan — ${changed.length}/${plan.length} package(s) changed · shared version ${rootVersion}${changed.length ? ` → ${version} (tag v${version})` : ''}:`)
 for (const p of plan) {
-  const tag = `${p.name.replace('@erpax/', '')}-v${p.version}`
-  console.log(
-    `  ${p.changed ? '●' : '○'} ${p.name.padEnd(20)} ${p.version.padEnd(8)} ${p.changed ? `→ tag ${tag}` : '(unchanged)'} · ${p.uuid.slice(0, 8)}`,
-  )
+  console.log(`  ${p.changed ? '●' : '○'} ${p.name.padEnd(20)} ${p.changed ? 'changed' : '(unchanged)'} · ${p.uuid.slice(0, 8)}`)
 }
 
 if (mode === 'check') {
-  if (changed.length) {
+  if (changed.length || offVersion.length || stale.length) {
     console.error(
-      `\n✖ ${changed.length} package(s) changed but the manifest is stale — run \`node packages/release.mjs --write\` and commit.`,
+      `\n✖ ${changed.length} package(s) changed, ${offVersion.length} manifest(s) off the shared version ${rootVersion} — run \`node packages/release.mjs --write\` and commit.`,
     )
     process.exit(1)
   }
   console.log('\n✓ released.json in sync with built content')
 } else if (mode === 'write') {
-  for (const p of changed) {
-    if (p.version !== p.pkg.version) {
-      const txt = readFileSync(p.pj, 'utf8').replace(/("version":\s*")[^"]+(")/, `$1${p.version}$2`)
-      writeFileSync(p.pj, txt)
-    }
-    manifest[p.name] = { version: p.version, contentUuid: p.uuid }
-  }
+  if (changed.length) setVersion(ROOT_PJ, version)
+  for (const pj of everyManifest()) if (JSON.parse(readFileSync(pj, 'utf8')).version !== version) setVersion(pj, version)
+  for (const p of plan) manifest[p.name] = { version, contentUuid: p.uuid }
   writeFileSync(MANIFEST, JSON.stringify(sortKeys(manifest), null, 2) + '\n')
-  console.log(`\n✓ bumped ${changed.length} package(s) + updated released.json — commit, then tag <pkg>-v<version> to publish.`)
+  console.log(`\n✓ ${changed.length} package(s) changed · every package at ${version} + released.json updated — commit, then tag v${version} to publish.`)
 } else {
   console.log('\n(dry-run) — `--write` to bump + record, `--check` for CI drift.')
 }

@@ -1,0 +1,52 @@
+{
+  "name": "@erpax/work",
+  "version": "1.0.8",
+  "description": "Work — projects, contracts, workflows. An erpax app, delivered as one Payload plugin. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
+  "license": "CC-BY-NC-ND-4.0",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/types/packages/work/.package.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/packages/work/.package.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erpax/erpax.git",
+    "directory": "packages/work"
+  },
+  "homepage": "https://github.com/erpax/erpax/tree/main/packages/work",
+  "engines": {
+    "node": ">=18.20.2"
+  },
+  "scripts": {
+    "build": "node ../build.mjs work",
+    "prepublishOnly": "node ../build.mjs work"
+  },
+  "erpax": {
+    "generated": true,
+    "entryFile": "packages/work/.package.ts",
+    "closureCeiling": 6
+  },
+  "keywords": [
+    "payload-cms",
+    "payload-plugin",
+    "erpax",
+    "work"
+  ],
+  "dependencies": {
+    "uuid": "latest"
+  }
+}

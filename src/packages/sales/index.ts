@@ -1,0 +1,15 @@
+/**
+ * Sales — selling: parties, orders, invoices, subscriptions.
+ *
+ * One erpax app, delivered as one Payload plugin. It names only its anchors; the collections it
+ * brings are computed from the relationship graph (see ../engine).
+ *
+ * @see src/packages/index.ts (the apps in order) · src/packages/engine/index.ts (the rule)
+ */
+import type { App } from '@/packages/engine'
+
+export const sales: App = {
+  slug: 'sales',
+  title: 'Sales',
+  anchors: ['invoices', 'parties', 'sales', 'subscriptions', 'leads', 'orders', 'products', 'variants', 'carts', 'addresses', 'transactions'],
+}

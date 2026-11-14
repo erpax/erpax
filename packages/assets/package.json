@@ -1,0 +1,56 @@
+{
+  "name": "@erpax/assets",
+  "version": "1.0.8",
+  "description": "Assets — fixed assets, leases, properties. An erpax app, delivered as one Payload plugin. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
+  "license": "CC-BY-NC-ND-4.0",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/types/packages/assets/.package.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/packages/assets/.package.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erpax/erpax.git",
+    "directory": "packages/assets"
+  },
+  "homepage": "https://github.com/erpax/erpax/tree/main/packages/assets",
+  "engines": {
+    "node": ">=18.20.2"
+  },
+  "scripts": {
+    "build": "node ../build.mjs assets",
+    "prepublishOnly": "node ../build.mjs assets"
+  },
+  "erpax": {
+    "generated": true,
+    "entryFile": "packages/assets/.package.ts",
+    "closureCeiling": 6
+  },
+  "keywords": [
+    "payload-cms",
+    "payload-plugin",
+    "erpax",
+    "assets"
+  ],
+  "dependencies": {
+    "uuid": "latest",
+    "zod": "3.25.76"
+  },
+  "peerDependencies": {
+    "payload": "4.0.0-internal.38b7f1d"
+  }
+}
