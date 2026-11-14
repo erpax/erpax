@@ -199,7 +199,7 @@ export const DebtSchedule: CollectionConfig = {
       admin: { description: 'FX hedging instruments if multi-currency.' },
     },
     {
-      name: 'lastCovenant ComplianceTest',
+      name: 'lastCovenantComplianceTest',
       type: 'date',
     },
     {

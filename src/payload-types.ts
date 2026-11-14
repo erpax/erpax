@@ -15116,7 +15116,7 @@ export interface DebtSchedule {
    * FX hedging instruments if multi-currency.
    */
   fxHedges?: (string | FxTransaction)[] | null;
-  'lastCovenant ComplianceTest'?: string | null;
+  lastCovenantComplianceTest?: string | null;
   nextCovenantTest?: string | null;
   /**
    * Refinance risk, interest rate risk, covenant risk assessment.
@@ -25224,7 +25224,7 @@ export interface DebtScheduleSelect<T extends boolean = true> {
   defaultProvisions?: T;
   guarantees?: T;
   fxHedges?: T;
-  'lastCovenant ComplianceTest'?: T;
+  lastCovenantComplianceTest?: T;
   nextCovenantTest?: T;
   riskAssessment?: T;
   relatedControls?: T;

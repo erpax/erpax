@@ -20,6 +20,7 @@ import { r2Storage } from '@payloadcms/storage-r2'
 import { uuidPlugin } from '@/utilities/uuid'
 import { taggablePlugin } from '@/plugins/taggable'
 import { longNamesPlugin } from '@/plugins/naming'
+import { indexesPlugin } from '@/plugins/indexes'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
 import { mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
 import { versionsPlugin } from '@/plugins/versions'
@@ -433,6 +434,9 @@ export default buildConfig({
       },
       userHasAccessToAllTenants: (user) => isSuperAdmin(user),
     }),
+    // Payload's index rules, for every collection at once (src/plugins/indexes): a unique field of a
+    // tenant-scoped collection is unique PER TENANT, and each collection's title field is indexed.
+    indexesPlugin({ tenantScoped: Object.keys(tenantCollectionsConfig(Object.values(allCollections) as Array<{ slug: string }>)) }),
     // plugin-import-export deferred from the deployed Worker to stay under Cloudflare's 10MB
     // script cap — the admin bulk CSV/JSON I/O surface is non-core and re-addable. Removed
     // rather than stubbed so migrate-time, runtime, and generated types stay consistent.
