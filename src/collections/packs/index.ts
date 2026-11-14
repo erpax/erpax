@@ -46,6 +46,7 @@ import type {
 
 import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
 import { tenantScopedCollectionReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { HORO_DIGITS, isHoroStep, type HoroStep } from '@/utilities/horo'
@@ -143,12 +144,13 @@ export const Packs: CollectionConfig = {
     description:
       'The shipping carton (118,716-row etrima twin) — units packed from a production lot, with mass balance (gross = net + tare), rollup counts, and a derived horo lifecycle.',
   },
-  access: {
+  // The collection's own rule OR the user's role abilities (etrima's Ability — @/access/collections/shared/abilityAccess).
+  access: withAbility({
     create: createMembershipAdminMutateAccess('packs'),
     read: tenantScopedCollectionReadAccess,
     update: createMembershipAdminMutateAccess('packs'),
     delete: createMembershipAdminMutateAccess('packs'),
-  },
+  }, 'packs'),
   fields: [
     { name: 'number', type: 'text', index: true, admin: { description: 'Carton number / SSCC (the dispatch identity).' } },
     { name: 'barcode', type: 'text', admin: { description: 'Scanned barcode (sparse in the data).' } },

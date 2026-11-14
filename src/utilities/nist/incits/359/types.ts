@@ -19,6 +19,8 @@ export const scopeResourceCollections = [
   'media',
   'categories',
   'products',
+  // Business documents whose PARTIES are roles on the document (seller, buyer, …).
+  'orders',
 ] as const
 
 export type ScopeResourceCollection = (typeof scopeResourceCollections)[number]
@@ -28,7 +30,7 @@ export type ScopeResourceCollection = (typeof scopeResourceCollections)[number]
  */
 export type ScopedResource =
   | ScopeResourceCollection
-  | { collection: ScopeResourceCollection; id: number }
+  | { collection: ScopeResourceCollection; id: number | string }
 
 /** Match `any` binding that carries the role name. */
 export type AnyScope = 'any'

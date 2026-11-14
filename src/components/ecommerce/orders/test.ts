@@ -59,7 +59,7 @@ describe('orders — the sales-order register folded into the e-commerce plugin 
   it('appends its hooks after the plugin\'s own', async () => {
     const before = plugin().hooks?.afterChange?.length ?? 0
     const folded = await ordersOverride({ defaultCollection: plugin() })
-    expect(folded.hooks?.afterChange?.length).toBe(before + 12)
+    expect(folded.hooks?.afterChange?.length).toBe(before + 13)
     expect(folded.hooks?.beforeValidate).toContain(totalsFromLines)
     expect(folded.enableQueryPresets).toBe(true)
   })

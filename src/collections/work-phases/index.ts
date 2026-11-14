@@ -32,6 +32,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { referenceField } from '@/fields/text/referenceField'
 import { statusField } from '@/fields/select/statusField'
 import { auditFields } from '@/fields/relationship/auditFields'
@@ -49,7 +50,8 @@ const WorkPhases: CollectionConfig = {
   },
   // The manufacturing catalog — feature-gated. This IS the operation catalog: the former generic
   // `operations` collection was the same concept with three fields, merged here.
-  access: accountingCollectionAccess({ feature: 'manufacturing' }),
+  // The collection's own rule OR the user's role abilities (etrima's Ability — @/access/collections/shared/abilityAccess).
+  access: withAbility(accountingCollectionAccess({ feature: 'manufacturing' }), 'work-phases'),
   fields: [
     referenceField({ name: 'code', description: 'Work-phase code (e.g. `CONF_12`, `OCCHIELLI`).' }),
     { name: 'name', type: 'text', required: true, admin: { description: 'Work-phase name.' } },

@@ -17,9 +17,25 @@
  * @see docs/STANDARDS.md §4.4
  */
 
-export type { AddRoleResource, MutationArgs } from '@/utilities/nist/incits/359/payload'
+export type { AddRoleResource, MutationArgs, RoleCallbacks } from '@/utilities/nist/incits/359/payload'
 
-export { addRole, assignedRoleIds, grant, removeRole, revoke } from '@/utilities/nist/incits/359/payload'
+export {
+  addRole,
+  appliedRoles,
+  assignedRoleIds,
+  findRoles,
+  grant,
+  removeRole,
+  resourcesWithRole,
+  revoke,
+  roleScope,
+  rolesOf,
+  rolesOn,
+  usersWithAllRoles,
+  usersWithAnyRole,
+  usersWithRole,
+  usersWithoutRole,
+} from '@/utilities/nist/incits/359/payload'
 
 export type {
   AnyScope,
@@ -31,7 +47,7 @@ export type {
 
 export { scopeResourceCollections } from '@/utilities/nist/incits/359/types'
 
-export { hasAllRoles, hasAnyRole, hasCachedRole, hasRole, hasStrictRole } from '@/utilities/nist/incits/359/predicates'
+export { hasAllRoles, hasAnyRole, hasCachedRole, hasRole, hasStrictRole, onlyHasRole, roleNames } from '@/utilities/nist/incits/359/predicates'
 
 export {
   BIT_DELETE,

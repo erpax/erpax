@@ -24,6 +24,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { referenceField } from '@/fields/text/referenceField'
 import { statusField } from '@/fields/select/statusField'
 import { auditFields } from '@/fields/relationship/auditFields'
@@ -39,7 +40,8 @@ const WorkCenters: CollectionConfig = {
     description:
       'Capacity unit (machine/line/cell/vat/workstation/crew) production flows through. Self-referential hierarchy (ISA-95); rates feed IAS-2 cost-of-conversion.',
   },
-  access: accountingCollectionAccess({ feature: 'manufacturing' }),
+  // The collection's own rule OR the user's role abilities (etrima's Ability — @/access/collections/shared/abilityAccess).
+  access: withAbility(accountingCollectionAccess({ feature: 'manufacturing' }), 'work-centers'),
   fields: [
     referenceField({ description: 'Work-center code (e.g. `WC-CUT-01`).' }),
     { name: 'name', type: 'text', required: true, admin: { description: 'Human-readable work-center name.' } },

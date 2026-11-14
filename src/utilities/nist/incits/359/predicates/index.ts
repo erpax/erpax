@@ -13,18 +13,23 @@ import type {
   ScopeResourceCollection,
 } from '@/utilities/nist/incits/359/types'
 
+/** A document id as it is compared: the id's text. `42` and `'42'` are one row; a uuid is itself. */
+const idText = (id: number | string): string => String(id).trim()
+
 function tupleFromDocument(resource: RoleDefinition['resource']): {
   collection: ScopeResourceCollection
-  id: number
+  id: string
 } | null {
   if (!resource || typeof resource !== 'object' || !('relationTo' in resource)) return null
   const r = resource as { relationTo: string; value: unknown }
-  // Payload polymorphic relationship value: a scalar id (number OR string, per the DB's id type) or
-  // a populated doc `{ id }`. Coerce a numeric string — D1/SQLite hand back string ids — so a document
-  // binding stored as `value: '42'` still matches a query for id 42.
+  // Payload polymorphic relationship value: a scalar id or a populated doc `{ id }`. This database
+  // uses uuid text ids (`idType: 'uuid'`), so an id is compared as text — the earlier numeric-only
+  // parse made every document-scoped role unmatchable. A numeric id and its text form still match
+  // each other; two different ids never do, so there is no over-grant.
   const raw = r.value && typeof r.value === 'object' && 'id' in r.value ? (r.value as { id: unknown }).id : r.value
-  const id = typeof raw === 'number' ? raw : typeof raw === 'string' && raw.trim() !== '' ? Number(raw) : null
-  if (id == null || !Number.isFinite(id)) return null
+  if (typeof raw !== 'number' && typeof raw !== 'string') return null
+  const id = idText(raw)
+  if (id === '') return null
   return { collection: r.relationTo as ScopeResourceCollection, id }
 }
 
@@ -46,14 +51,14 @@ export function hasRole(
   definition: RoleDefinition,
   roleName: string,
   collection: ScopeResourceCollection,
-  id: number,
+  id: number | string,
 ): boolean
 
 export function hasRole(
   definition: RoleDefinition,
   roleName: string,
   resourceOrAny?: ScopeResourceCollection | AnyScope,
-  maybeId?: number,
+  maybeId?: number | string,
 ): boolean {
   if (definition.name !== roleName) return false
 
@@ -87,7 +92,7 @@ export function hasRole(
     }
     if (definition.binding === 'document') {
       const t = tupleFromDocument(definition.resource)
-      return t?.collection === collection && t.id === id
+      return t?.collection === collection && t.id === idText(id)
     }
     return false
   }
@@ -111,14 +116,14 @@ export function hasStrictRole(
   definition: RoleDefinition,
   roleName: string,
   collection: ScopeResourceCollection,
-  id: number,
+  id: number | string,
 ): boolean
 
 export function hasStrictRole(
   definition: RoleDefinition,
   roleName: string,
   resourceOrAny?: ScopeResourceCollection | AnyScope,
-  maybeId?: number,
+  maybeId?: number | string,
 ): boolean {
   if (definition.name !== roleName) return false
 
@@ -142,7 +147,7 @@ export function hasStrictRole(
   if (collection !== undefined && id !== undefined) {
     if (definition.binding !== 'document') return false
     const t = tupleFromDocument(definition.resource)
-    return t?.collection === collection && t.id === id
+    return t?.collection === collection && t.id === idText(id)
   }
 
   return false
@@ -153,7 +158,7 @@ export function hasAnyRole(
   definitions: RoleDefinition[],
   roleNames: string[],
   collection?: ScopeResourceCollection,
-  id?: number,
+  id?: number | string,
 ): boolean {
   return roleNames.some((n) =>
     definitions.some((d) =>
@@ -187,6 +192,22 @@ export function hasAllRoles(definitions: RoleDefinition[], ...specs: RoleMatch[]
     return definitions.some((d) => hasRole(d, name, resource.collection, resource.id))
   })
 }
+
+/**
+ * Rolify `only_has_role?` — the role is held (for the same resource arguments) AND it is the only
+ * role definition the user has.
+ */
+export function onlyHasRole(
+  definitions: RoleDefinition[],
+  roleName: string,
+  collection?: ScopeResourceCollection,
+  id?: number | string,
+): boolean {
+  return definitions.length === 1 && hasAnyRole(definitions, [roleName], collection, id)
+}
+
+/** Rolify `roles_name` — the distinct role names among the definitions. */
+export const roleNames = (definitions: readonly Pick<RoleDefinition, 'name'>[]): string[] => [...new Set(definitions.map((d) => d.name))]
 
 /** Same as {@link hasRole}; use when definitions are already loaded. */
 export const hasCachedRole = hasRole

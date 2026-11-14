@@ -45,6 +45,7 @@ import type { CollectionConfig, CollectionBeforeChangeHook } from 'payload'
 
 import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
 import { tenantScopedCollectionReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
+import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { referenceField } from '@/fields/text/referenceField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { horoStateField, validateHoroStates, type HoroState } from '@/utilities/horo'
@@ -189,12 +190,13 @@ export const WorkShifts: CollectionConfig = {
     description:
       'The per-actor-day labour aggregate — the efficiency + wage authority. One row per (actor, day); work orders roll up into it and inherit its efficiency. efficiency = ⌊produced·100/presence⌋ (the 20-yr etrima truth).',
   },
-  access: {
+  // The collection's own rule OR the user's role abilities (etrima's Ability — @/access/collections/shared/abilityAccess).
+  access: withAbility({
     create: createMembershipAdminMutateAccess('work-shifts'),
     delete: createMembershipAdminMutateAccess('work-shifts'),
     read: tenantScopedCollectionReadAccess,
     update: createMembershipAdminMutateAccess('work-shifts'),
-  },
+  }, 'work-shifts'),
   fields: [
     referenceField({ description: 'Labour-day reference (e.g. `WS-2026-06-0042`).' }),
 
