@@ -8,4 +8,8 @@ describe('period-locks collection node', () => {
     expect(Array.isArray(PeriodLocks.fields)).toBe(true)
     expect(PeriodLocks.fields.length).toBeGreaterThan(0)
   })
+  it('reads its closing entries through a join on their periodLock — one link, not two stored lists', () => {
+    const field = PeriodLocks.fields.find((f) => 'name' in f && f.name === 'relatedClosingEntries')
+    expect(field).toMatchObject({ type: 'join', collection: 'closing-entries', on: 'periodLock' })
+  })
 })

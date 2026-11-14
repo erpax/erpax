@@ -310,6 +310,9 @@ export interface Config {
     contracts: {
       performanceObligations: 'performance-obligations';
     };
+    'period-locks': {
+      relatedClosingEntries: 'closing-entries';
+    };
     'purchase-orders': {
       receipts: 'goods-receipts';
     };
@@ -7058,6 +7061,22 @@ export interface WorkOrder {
    * Free-text note (AUDIT: present on ~0.9% of rows).
    */
   note?: string | null;
+  /**
+   * Derived lifecycle position on the seven-step ring (open → … → closed). Computed, never stored.
+   */
+  state?: string | null;
+  /**
+   * Piece-rate wage for this order, rounded to cents. Computed, never stored.
+   */
+  wage?: number | null;
+  /**
+   * Unrounded piece-rate wage — what the shift rolls up. Computed, never stored.
+   */
+  pieceWage?: number | null;
+  /**
+   * Work-minutes still to produce. Computed, never stored.
+   */
+  minutesRemaining?: number | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -8641,13 +8660,29 @@ export interface FairValueMeasurement {
    */
   reference: string;
   /**
-   * Slug of the measured asset/liability (e.g. fixed-assets / investment-properties / biological-assets / fx-transactions / share-based-payments).
+   * The measured asset or liability.
    */
-  sourceCollection: string;
-  /**
-   * ID of the source row.
-   */
-  sourceId: string;
+  source:
+    | {
+        relationTo: 'fixed-assets';
+        value: string | FixedAsset;
+      }
+    | {
+        relationTo: 'investment-properties';
+        value: string | InvestmentProperty;
+      }
+    | {
+        relationTo: 'biological-assets';
+        value: string | BiologicalAsset;
+      }
+    | {
+        relationTo: 'fx-transactions';
+        value: string | FxTransaction;
+      }
+    | {
+        relationTo: 'share-based-payments';
+        value: string | ShareBasedPayment;
+      };
   level: 'level_1' | 'level_2' | 'level_3';
   valuationTechnique: 'market' | 'income' | 'cost' | 'multiple';
   measurementDate: string;
@@ -8701,6 +8736,556 @@ export interface FairValueMeasurement {
   valuationReport?: (string | null) | EvidenceAttestation;
   journalEntry?: (string | null) | JournalEntry;
   status?: ('draft' | 'validated' | 'posted' | 'superseded') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IAS 40 — property held to earn rentals or capital appreciation (not own-use, not held-for-sale).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "investment-properties".
+ */
+export interface InvestmentProperty {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Sequential reference (e.g. IP-2026-001).
+   */
+  reference: string;
+  property: string | Property;
+  acquisitionDate: string;
+  /**
+   * IAS 40 §20-§29 — purchase price + directly attributable costs (cents).
+   */
+  acquisitionCost: number;
+  /**
+   * IAS 40 §30 election — applied uniformly to all investment property.
+   */
+  measurementModel: 'fair_value' | 'cost';
+  /**
+   * IFRS 13 fair value at reporting date (cents). Required when measurementModel = fair_value; disclosed only when = cost.
+   */
+  currentFairValue?: number | null;
+  /**
+   * IAS 40 §35 — gain/loss on remeasurement (P&L) under fair-value model.
+   */
+  fairValueChangeYtd?: number | null;
+  /**
+   * IAS 17/IFRS 16 lease income recognised YTD (cents).
+   */
+  rentalIncomeYtd?: number | null;
+  /**
+   * IAS 40 §75(f) — operating expenses disclosure split.
+   */
+  directOperatingExpensesYtd?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * IAS 40 §57-§65 — change-in-use trigger.
+   */
+  transferReason?:
+    ('transfer_to_ppe' | 'transfer_from_ppe' | 'transfer_to_inventory' | 'transfer_from_inventory') | null;
+  /**
+   * When the IP is leased OUT to a tenant (lessor side).
+   */
+  lease?: (string | null) | Lease;
+  /**
+   * IFRS 13 hierarchy classification (Level 1/2/3).
+   */
+  fairValueMeasurement?: (string | null) | FairValueMeasurement;
+  journalEntry?: (string | null) | JournalEntry;
+  status?: ('active' | 'construction' | 'vacant' | 'transferred_out' | 'disposed') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IWMS property master per ISO 41001 §3.1.7 facility. Owned/leased/managed real estate. Pairs with spaces (sub-units) + maintenance-work-orders.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "properties".
+ */
+export interface Property {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Short code (e.g. `HQ-SOF`, `WHS-BER-01`).
+   */
+  code: string;
+  name: string;
+  description?: string | null;
+  kind:
+    | 'office'
+    | 'warehouse'
+    | 'plant'
+    | 'retail'
+    | 'hospitality'
+    | 'healthcare'
+    | 'education'
+    | 'mixed'
+    | 'land'
+    | 'data_centre'
+    | 'other';
+  /**
+   * Drives IAS-16 vs IFRS-16 vs management-revenue accounting.
+   */
+  tenure: 'owned' | 'leased' | 'managed' | 'sublet';
+  address: string | Address;
+  /**
+   * ISO 3166-1 alpha-2.
+   */
+  country: string;
+  /**
+   * ISO 3166-2 subdivision code.
+   */
+  region?: string | null;
+  /**
+   * International Property Measurement Standard areas (sqm).
+   */
+  measurements?: {
+    /**
+     * IPMS 1 — total internal area (m²).
+     */
+    grossInternalArea?: number | null;
+    /**
+     * IPMS 3 — usable / lettable area (m²).
+     */
+    netInternalArea?: number | null;
+    /**
+     * Land parcel area (m²).
+     */
+    siteArea?: number | null;
+    numberOfFloors?: number | null;
+    /**
+     * For multi-let: number of distinct units.
+     */
+    numberOfUnits?: number | null;
+  };
+  occupancy?: {
+    /**
+     * Designed person capacity (per fire / building code).
+     */
+    designedCapacity?: number | null;
+    /**
+     * Current occupants (drives space-utilisation KPIs).
+     */
+    currentHeadcount?: number | null;
+    /**
+     * NACE Rev.2 economic activity of primary occupant.
+     */
+    naceCode?: string | null;
+  };
+  lifecycle?: {
+    /**
+     * Date acquired (purchase / lease commence).
+     */
+    acquiredAt?: string | null;
+    /**
+     * Date placed in service.
+     */
+    commissionedAt?: string | null;
+    /**
+     * Planned end-of-use / sale.
+     */
+    plannedDisposalAt?: string | null;
+    /**
+     * Actual disposal date.
+     */
+    disposedAt?: string | null;
+  };
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Carrying amount (cents) — for owned: cost − accumulated depreciation; for leased: ROU asset.
+   */
+  bookValue?: number | null;
+  /**
+   * For owned property: the IAS-16 row that capitalises this property.
+   */
+  fixedAsset?: (string | null) | FixedAsset;
+  /**
+   * For leased property: the IFRS-16 lease record.
+   */
+  lease?: (string | null) | Lease;
+  energyCertificate?: {
+    /**
+     * EU EPBD energy-performance certificate band.
+     */
+    epcRating?: ('A+' | 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G') | null;
+    epcExpiresAt?: string | null;
+    /**
+     * Primary energy intensity (kWh/m²·yr) — feeds ESRS-E1 disclosures.
+     */
+    kwhPerSqmYear?: number | null;
+  };
+  /**
+   * ISO 19650 BIM model identifier (URL / CDE reference).
+   */
+  bimReference?: string | null;
+  status?: ('active' | 'construction' | 'vacant' | 'decommissioned' | 'disposed') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IFRS 16 / ASC 842 lessee leases. ROU asset + lease liability with period-end carrying amounts.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "leases".
+ */
+export interface Lease {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  leaseNumber: string;
+  /**
+   * Underlying asset description (e.g. "Office space — Sofia HQ Floor 3").
+   */
+  description?: string | null;
+  /**
+   * Counterparty / lessor.
+   */
+  lessor?: (string | null) | Address;
+  /**
+   * IFRS 16: lessee uses single model — "finance" maps to ROU+Liability. ASC 842 retains operating/finance distinction. Short-term and low-value are IFRS 16 exemptions (off-balance-sheet).
+   */
+  classification: 'finance' | 'operating' | 'short_term' | 'low_value';
+  underlyingAssetCategory?: ('real_estate' | 'vehicles' | 'equipment' | 'it_hardware' | 'software' | 'other') | null;
+  /**
+   * Date the lessor makes the underlying asset available — IFRS 16 §22.
+   */
+  commencementDate: string;
+  /**
+   * Lease end date including any reasonably certain extensions.
+   */
+  endDate: string;
+  /**
+   * Computed lease term in months (commencement → end including extension options reasonably certain — IFRS 16 §B37).
+   */
+  leaseTermMonths?: number | null;
+  /**
+   * Fixed periodic payment, integer cents. Per `paymentFrequency` cycle.
+   */
+  fixedPayment: number;
+  paymentFrequency?: ('monthly' | 'quarterly' | 'semi_annually' | 'annually') | null;
+  paymentTiming?: ('in_advance' | 'in_arrears') | null;
+  /**
+   * Variable lease payments (e.g. CPI-linked, performance-based). Per IFRS 16 §27, only those linked to an index/rate are included in the liability — capture the rules here for next-remeasurement.
+   */
+  variablePaymentNotes?: string | null;
+  /**
+   * Residual value guaranteed to lessor — included in liability per IFRS 16 §27.
+   */
+  residualValueGuarantee?: number | null;
+  /**
+   * Penalty for terminating, included in liability if termination is reasonably certain (IFRS 16 §27).
+   */
+  terminationPenalty?: number | null;
+  /**
+   * IFRS 16 §26 — use rate implicit in the lease if readily determinable; otherwise IBR.
+   */
+  discountRateBasis?: ('rate_implicit' | 'incremental_borrowing') | null;
+  /**
+   * Annual discount rate (percent, e.g. 4.5 for 4.5%).
+   */
+  discountRatePercent: number;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * PV of unpaid lease payments at commencement, discounted at the rate above. Computed by leaseService.calculateInitialMeasurement.
+   */
+  initialLeaseLiability?: number | null;
+  /**
+   * Initial direct costs incurred by the lessee — IFRS 16 §24(c).
+   */
+  initialDirectCosts?: number | null;
+  /**
+   * Lease incentives received from the lessor — IFRS 16 §24(b).
+   */
+  leaseIncentivesReceived?: number | null;
+  /**
+   * Lease payments made at or before commencement — IFRS 16 §24(b).
+   */
+  prepaidRent?: number | null;
+  /**
+   * = initialLeaseLiability + initialDirectCosts + prepaidRent − leaseIncentivesReceived. IFRS 16 §24.
+   */
+  initialRouAsset?: number | null;
+  /**
+   * ROU asset carrying amount as of last posting (after amortisation).
+   */
+  rouAssetCarrying?: number | null;
+  /**
+   * Lease liability carrying amount as of last posting (after interest + payment).
+   */
+  liabilityCarrying?: number | null;
+  lastPostingDate?: string | null;
+  /**
+   * Lease modifications (scope, payments, term). IFRS 16 §44-§46 / ASC 842-10-25-8 trigger remeasurement.
+   */
+  modifications?:
+    | {
+        effectiveDate: string;
+        kind:
+          | 'scope_increase_separate'
+          | 'scope_increase_combined'
+          | 'term_extension'
+          | 'term_reduction'
+          | 'payment_change'
+          | 'discount_rate_reset';
+        newDiscountRatePercent?: number | null;
+        newFixedPayment?: number | null;
+        newEndDate?: string | null;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * IAS 36 impairment reserve on the ROU asset.
+   */
+  impairmentReserve?: number | null;
+  status?: ('draft' | 'active' | 'modified' | 'terminated' | 'expired') | null;
+  /**
+   * Date the lease was terminated early (if applicable).
+   */
+  terminationDate?: string | null;
+  /**
+   * Right-of-use asset GL account.
+   */
+  rouAssetAccount?: (string | null) | GlAccount;
+  /**
+   * Lease liability GL account.
+   */
+  leaseLiabilityAccount?: (string | null) | GlAccount;
+  rouAmortizationAccount?: (string | null) | GlAccount;
+  interestExpenseAccount?: (string | null) | GlAccount;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IAS-21 §28-29 monetary-item re-translation events. Each row is one FX conversion / revaluation that hits the FX gain/loss P&L line.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fx-transactions".
+ */
+export interface FxTransaction {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Optional reference (e.g. `FX-2026-04-001`); auto-populated when missing.
+   */
+  reference?: string | null;
+  /**
+   * ISO 8601 — date the FX rate applied (transaction date OR period-end revaluation date).
+   */
+  transactionDate: string;
+  transactionKind: 'spot_conversion' | 'period_end_revaluation' | 'hedge_settlement' | 'translation_adjustment';
+  /**
+   * ISO 4217 source currency (3-letter code).
+   */
+  fromCurrency: string;
+  /**
+   * ISO 4217 target currency (3-letter code).
+   */
+  toCurrency: string;
+  /**
+   * Source amount in cents (in fromCurrency).
+   */
+  fromAmount: number;
+  /**
+   * Rate applied (toAmount / fromAmount). Per IAS-21 §22, transaction-date rate; per §23, closing rate at period-end.
+   */
+  exchangeRate: number;
+  /**
+   * Target amount in cents (in toCurrency). Must equal fromAmount × exchangeRate within rounding.
+   */
+  toAmount: number;
+  /**
+   * IAS-21 §28-29 FX gain/loss recognised (cents, signed). Hits the P&L FX line.
+   */
+  fxGainLoss?: number | null;
+  /**
+   * The rate-table row that was the source of `exchangeRate` (audit traceability).
+   */
+  currencyRate?: (string | null) | CurrencyRate;
+  /**
+   * JE that booked the FX gain/loss + the converted amount.
+   */
+  journalEntry?: (string | null) | JournalEntry;
+  /**
+   * Slug of the source document this conversion serves (e.g. `invoices`, `payments`).
+   */
+  sourceCollection?: string | null;
+  /**
+   * ID of the source document.
+   */
+  sourceId?: string | null;
+  /**
+   * Free-text context for the conversion.
+   */
+  description?: string | null;
+  status?: ('recorded' | 'posted' | 'reversed') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "currency-rates".
+ */
+export interface CurrencyRate {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  rateId: string;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  fromCurrency: string;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  toCurrency: string;
+  rate: number;
+  rateDate: string;
+  source: 'manual' | 'bank_api' | 'ecb' | 'fed' | 'xe' | 'other';
+  inverse?: number | null;
+  midMarketRate?: number | null;
+  bidRate?: number | null;
+  askRate?: number | null;
+  isActive?: boolean | null;
+  usedInTransactions?: number | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IFRS 2 share-based-payment register. One row per grant (options / RSUs / PSUs / ESPP / SARs).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "share-based-payments".
+ */
+export interface ShareBasedPayment {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Sequential grant reference (e.g. EQ-2026-001).
+   */
+  reference: string;
+  employee: string | Employee;
+  awardType: 'stock_option' | 'rsu' | 'rsa' | 'psu' | 'espp' | 'sar' | 'phantom';
+  settlementType: 'equity' | 'cash';
+  grantDate: string;
+  /**
+   * Total units / shares granted.
+   */
+  numberOfUnits: number;
+  /**
+   * Exercise price (cents). Zero for full-value awards (RSU/RSA/PSU).
+   */
+  strikePrice?: number | null;
+  /**
+   * IFRS 2 §11 — Black-Scholes / Monte-Carlo / market price at grant (cents per unit).
+   */
+  fairValueAtGrant: number;
+  /**
+   * numberOfUnits × fairValueAtGrant (cents).
+   */
+  totalGrantValue?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * IFRS 2 §15 vesting period(s) — graded or cliff. Expense recognised straight-line over each tranche.
+   */
+  vestingSchedule?:
+    | {
+        tranche: number;
+        vestDate: string;
+        unitsVesting: number;
+        isCliff?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * IFRS 2 §19 — service / performance / market conditions affect grant-date fair-value differently.
+   */
+  vestingConditions?: {
+    serviceConditionMonths?: number | null;
+    hasPerformanceCondition?: boolean | null;
+    /**
+     * e.g. revenue ≥ €X / EPS ≥ Y
+     */
+    performanceMetric?: string | null;
+    hasMarketCondition?: boolean | null;
+    /**
+     * e.g. share price ≥ €X for 60 trading days
+     */
+    marketCondition?: string | null;
+  };
+  /**
+   * For options: contractual term end (typically 7-10 yr from grant).
+   */
+  expirationDate?: string | null;
+  /**
+   * IFRS 2 §IG-12 expected forfeiture % per period (drives expense true-up).
+   */
+  forfeitureRateAssumption?: number | null;
+  /**
+   * Running total of expense booked to date (cents).
+   */
+  cumulativeExpenseRecognised?: number | null;
+  unitsExercised?: number | null;
+  unitsForfeited?: number | null;
+  unitsCancelled?: number | null;
+  journalEntry?: (string | null) | JournalEntry;
+  status?: ('granted' | 'vesting' | 'vested' | 'exercised' | 'forfeited' | 'cancelled' | 'expired') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -9039,287 +9624,6 @@ export interface Space {
    */
   costCenter?: (string | null) | CostCenter;
   status?: ('active' | 'renovation' | 'vacant' | 'restricted' | 'decommissioned') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IWMS property master per ISO 41001 §3.1.7 facility. Owned/leased/managed real estate. Pairs with spaces (sub-units) + maintenance-work-orders.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "properties".
- */
-export interface Property {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Short code (e.g. `HQ-SOF`, `WHS-BER-01`).
-   */
-  code: string;
-  name: string;
-  description?: string | null;
-  kind:
-    | 'office'
-    | 'warehouse'
-    | 'plant'
-    | 'retail'
-    | 'hospitality'
-    | 'healthcare'
-    | 'education'
-    | 'mixed'
-    | 'land'
-    | 'data_centre'
-    | 'other';
-  /**
-   * Drives IAS-16 vs IFRS-16 vs management-revenue accounting.
-   */
-  tenure: 'owned' | 'leased' | 'managed' | 'sublet';
-  address: string | Address;
-  /**
-   * ISO 3166-1 alpha-2.
-   */
-  country: string;
-  /**
-   * ISO 3166-2 subdivision code.
-   */
-  region?: string | null;
-  /**
-   * International Property Measurement Standard areas (sqm).
-   */
-  measurements?: {
-    /**
-     * IPMS 1 — total internal area (m²).
-     */
-    grossInternalArea?: number | null;
-    /**
-     * IPMS 3 — usable / lettable area (m²).
-     */
-    netInternalArea?: number | null;
-    /**
-     * Land parcel area (m²).
-     */
-    siteArea?: number | null;
-    numberOfFloors?: number | null;
-    /**
-     * For multi-let: number of distinct units.
-     */
-    numberOfUnits?: number | null;
-  };
-  occupancy?: {
-    /**
-     * Designed person capacity (per fire / building code).
-     */
-    designedCapacity?: number | null;
-    /**
-     * Current occupants (drives space-utilisation KPIs).
-     */
-    currentHeadcount?: number | null;
-    /**
-     * NACE Rev.2 economic activity of primary occupant.
-     */
-    naceCode?: string | null;
-  };
-  lifecycle?: {
-    /**
-     * Date acquired (purchase / lease commence).
-     */
-    acquiredAt?: string | null;
-    /**
-     * Date placed in service.
-     */
-    commissionedAt?: string | null;
-    /**
-     * Planned end-of-use / sale.
-     */
-    plannedDisposalAt?: string | null;
-    /**
-     * Actual disposal date.
-     */
-    disposedAt?: string | null;
-  };
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Carrying amount (cents) — for owned: cost − accumulated depreciation; for leased: ROU asset.
-   */
-  bookValue?: number | null;
-  /**
-   * For owned property: the IAS-16 row that capitalises this property.
-   */
-  fixedAsset?: (string | null) | FixedAsset;
-  /**
-   * For leased property: the IFRS-16 lease record.
-   */
-  lease?: (string | null) | Lease;
-  energyCertificate?: {
-    /**
-     * EU EPBD energy-performance certificate band.
-     */
-    epcRating?: ('A+' | 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G') | null;
-    epcExpiresAt?: string | null;
-    /**
-     * Primary energy intensity (kWh/m²·yr) — feeds ESRS-E1 disclosures.
-     */
-    kwhPerSqmYear?: number | null;
-  };
-  /**
-   * ISO 19650 BIM model identifier (URL / CDE reference).
-   */
-  bimReference?: string | null;
-  status?: ('active' | 'construction' | 'vacant' | 'decommissioned' | 'disposed') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS 16 / ASC 842 lessee leases. ROU asset + lease liability with period-end carrying amounts.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "leases".
- */
-export interface Lease {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  leaseNumber: string;
-  /**
-   * Underlying asset description (e.g. "Office space — Sofia HQ Floor 3").
-   */
-  description?: string | null;
-  /**
-   * Counterparty / lessor.
-   */
-  lessor?: (string | null) | Address;
-  /**
-   * IFRS 16: lessee uses single model — "finance" maps to ROU+Liability. ASC 842 retains operating/finance distinction. Short-term and low-value are IFRS 16 exemptions (off-balance-sheet).
-   */
-  classification: 'finance' | 'operating' | 'short_term' | 'low_value';
-  underlyingAssetCategory?: ('real_estate' | 'vehicles' | 'equipment' | 'it_hardware' | 'software' | 'other') | null;
-  /**
-   * Date the lessor makes the underlying asset available — IFRS 16 §22.
-   */
-  commencementDate: string;
-  /**
-   * Lease end date including any reasonably certain extensions.
-   */
-  endDate: string;
-  /**
-   * Computed lease term in months (commencement → end including extension options reasonably certain — IFRS 16 §B37).
-   */
-  leaseTermMonths?: number | null;
-  /**
-   * Fixed periodic payment, integer cents. Per `paymentFrequency` cycle.
-   */
-  fixedPayment: number;
-  paymentFrequency?: ('monthly' | 'quarterly' | 'semi_annually' | 'annually') | null;
-  paymentTiming?: ('in_advance' | 'in_arrears') | null;
-  /**
-   * Variable lease payments (e.g. CPI-linked, performance-based). Per IFRS 16 §27, only those linked to an index/rate are included in the liability — capture the rules here for next-remeasurement.
-   */
-  variablePaymentNotes?: string | null;
-  /**
-   * Residual value guaranteed to lessor — included in liability per IFRS 16 §27.
-   */
-  residualValueGuarantee?: number | null;
-  /**
-   * Penalty for terminating, included in liability if termination is reasonably certain (IFRS 16 §27).
-   */
-  terminationPenalty?: number | null;
-  /**
-   * IFRS 16 §26 — use rate implicit in the lease if readily determinable; otherwise IBR.
-   */
-  discountRateBasis?: ('rate_implicit' | 'incremental_borrowing') | null;
-  /**
-   * Annual discount rate (percent, e.g. 4.5 for 4.5%).
-   */
-  discountRatePercent: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * PV of unpaid lease payments at commencement, discounted at the rate above. Computed by leaseService.calculateInitialMeasurement.
-   */
-  initialLeaseLiability?: number | null;
-  /**
-   * Initial direct costs incurred by the lessee — IFRS 16 §24(c).
-   */
-  initialDirectCosts?: number | null;
-  /**
-   * Lease incentives received from the lessor — IFRS 16 §24(b).
-   */
-  leaseIncentivesReceived?: number | null;
-  /**
-   * Lease payments made at or before commencement — IFRS 16 §24(b).
-   */
-  prepaidRent?: number | null;
-  /**
-   * = initialLeaseLiability + initialDirectCosts + prepaidRent − leaseIncentivesReceived. IFRS 16 §24.
-   */
-  initialRouAsset?: number | null;
-  /**
-   * ROU asset carrying amount as of last posting (after amortisation).
-   */
-  rouAssetCarrying?: number | null;
-  /**
-   * Lease liability carrying amount as of last posting (after interest + payment).
-   */
-  liabilityCarrying?: number | null;
-  lastPostingDate?: string | null;
-  /**
-   * Lease modifications (scope, payments, term). IFRS 16 §44-§46 / ASC 842-10-25-8 trigger remeasurement.
-   */
-  modifications?:
-    | {
-        effectiveDate: string;
-        kind:
-          | 'scope_increase_separate'
-          | 'scope_increase_combined'
-          | 'term_extension'
-          | 'term_reduction'
-          | 'payment_change'
-          | 'discount_rate_reset';
-        newDiscountRatePercent?: number | null;
-        newFixedPayment?: number | null;
-        newEndDate?: string | null;
-        notes?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * IAS 36 impairment reserve on the ROU asset.
-   */
-  impairmentReserve?: number | null;
-  status?: ('draft' | 'active' | 'modified' | 'terminated' | 'expired') | null;
-  /**
-   * Date the lease was terminated early (if applicable).
-   */
-  terminationDate?: string | null;
-  /**
-   * Right-of-use asset GL account.
-   */
-  rouAssetAccount?: (string | null) | GlAccount;
-  /**
-   * Lease liability GL account.
-   */
-  leaseLiabilityAccount?: (string | null) | GlAccount;
-  rouAmortizationAccount?: (string | null) | GlAccount;
-  interestExpenseAccount?: (string | null) | GlAccount;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -10218,7 +10522,11 @@ export interface PeriodLock {
   /**
    * Closing entries generated for this period
    */
-  relatedClosingEntries?: (string | ClosingEntry)[] | null;
+  relatedClosingEntries?: {
+    docs?: (string | ClosingEntry)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   /**
    * Additional notes for this period
    */
@@ -10969,39 +11277,6 @@ export interface CsrdDisclosure {
   createdAt: string;
 }
 /**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "currency-rates".
- */
-export interface CurrencyRate {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  rateId: string;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  fromCurrency: string;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  toCurrency: string;
-  rate: number;
-  rateDate: string;
-  source: 'manual' | 'bank_api' | 'ecb' | 'fed' | 'xe' | 'other';
-  inverse?: number | null;
-  midMarketRate?: number | null;
-  bidRate?: number | null;
-  askRate?: number | null;
-  isActive?: boolean | null;
-  usedInTransactions?: number | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * WCO HS-coded customs declaration per cross-border shipment. EU UCC export (ECS) / import (ICS) submission source.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -11468,80 +11743,6 @@ export interface DebtSchedule {
   createdAt: string;
 }
 /**
- * IAS-21 §28-29 monetary-item re-translation events. Each row is one FX conversion / revaluation that hits the FX gain/loss P&L line.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fx-transactions".
- */
-export interface FxTransaction {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Optional reference (e.g. `FX-2026-04-001`); auto-populated when missing.
-   */
-  reference?: string | null;
-  /**
-   * ISO 8601 — date the FX rate applied (transaction date OR period-end revaluation date).
-   */
-  transactionDate: string;
-  transactionKind: 'spot_conversion' | 'period_end_revaluation' | 'hedge_settlement' | 'translation_adjustment';
-  /**
-   * ISO 4217 source currency (3-letter code).
-   */
-  fromCurrency: string;
-  /**
-   * ISO 4217 target currency (3-letter code).
-   */
-  toCurrency: string;
-  /**
-   * Source amount in cents (in fromCurrency).
-   */
-  fromAmount: number;
-  /**
-   * Rate applied (toAmount / fromAmount). Per IAS-21 §22, transaction-date rate; per §23, closing rate at period-end.
-   */
-  exchangeRate: number;
-  /**
-   * Target amount in cents (in toCurrency). Must equal fromAmount × exchangeRate within rounding.
-   */
-  toAmount: number;
-  /**
-   * IAS-21 §28-29 FX gain/loss recognised (cents, signed). Hits the P&L FX line.
-   */
-  fxGainLoss?: number | null;
-  /**
-   * The rate-table row that was the source of `exchangeRate` (audit traceability).
-   */
-  currencyRate?: (string | null) | CurrencyRate;
-  /**
-   * JE that booked the FX gain/loss + the converted amount.
-   */
-  journalEntry?: (string | null) | JournalEntry;
-  /**
-   * Slug of the source document this conversion serves (e.g. `invoices`, `payments`).
-   */
-  sourceCollection?: string | null;
-  /**
-   * ID of the source document.
-   */
-  sourceId?: string | null;
-  /**
-   * Free-text context for the conversion.
-   */
-  description?: string | null;
-  status?: ('recorded' | 'posted' | 'reversed') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * IAS-12 deferred-tax register. One row per origination or reversal of a temporary difference between tax base and carrying amount.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -11564,13 +11765,21 @@ export interface DeferredTaxItem {
   kind: 'deductible' | 'taxable' | 'tax_loss_carryforward' | 'tax_credit_carryforward';
   classification: 'current' | 'non_current';
   /**
-   * Slug of the origin (e.g. fixed-assets / inventory-movements / provisions).
+   * The document the temporary difference arises from.
    */
-  sourceCollection?: string | null;
-  /**
-   * ID of the origin row.
-   */
-  sourceId?: string | null;
+  source?:
+    | ({
+        relationTo: 'fixed-assets';
+        value: string | FixedAsset;
+      } | null)
+    | ({
+        relationTo: 'inventory-movements';
+        value: string | InventoryMovement;
+      } | null)
+    | ({
+        relationTo: 'provisions';
+        value: string | Provision;
+      } | null);
   /**
    * Tax jurisdiction whose rate applies.
    */
@@ -12670,10 +12879,21 @@ export interface HeldForSaleClassification {
   reference: string;
   classificationKind: 'single_asset' | 'disposal_group' | 'discontinued_op';
   /**
-   * Slug of the asset (e.g. fixed-assets / investment-properties / business-combinations).
+   * The asset or disposal group classified as held for sale.
    */
-  sourceCollection: string;
-  sourceId: string;
+  source:
+    | {
+        relationTo: 'fixed-assets';
+        value: string | FixedAsset;
+      }
+    | {
+        relationTo: 'investment-properties';
+        value: string | InvestmentProperty;
+      }
+    | {
+        relationTo: 'business-combinations';
+        value: string | BusinessCombination;
+      };
   classificationDate: string;
   /**
    * IFRS 5 §8 — sale highly probable within 12 months from classification.
@@ -13136,75 +13356,6 @@ export interface InternalPolicy {
     [k: string]: unknown;
   } | null;
   applicableControls?: (string | InternalControl)[] | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IAS 40 — property held to earn rentals or capital appreciation (not own-use, not held-for-sale).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "investment-properties".
- */
-export interface InvestmentProperty {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Sequential reference (e.g. IP-2026-001).
-   */
-  reference: string;
-  property: string | Property;
-  acquisitionDate: string;
-  /**
-   * IAS 40 §20-§29 — purchase price + directly attributable costs (cents).
-   */
-  acquisitionCost: number;
-  /**
-   * IAS 40 §30 election — applied uniformly to all investment property.
-   */
-  measurementModel: 'fair_value' | 'cost';
-  /**
-   * IFRS 13 fair value at reporting date (cents). Required when measurementModel = fair_value; disclosed only when = cost.
-   */
-  currentFairValue?: number | null;
-  /**
-   * IAS 40 §35 — gain/loss on remeasurement (P&L) under fair-value model.
-   */
-  fairValueChangeYtd?: number | null;
-  /**
-   * IAS 17/IFRS 16 lease income recognised YTD (cents).
-   */
-  rentalIncomeYtd?: number | null;
-  /**
-   * IAS 40 §75(f) — operating expenses disclosure split.
-   */
-  directOperatingExpensesYtd?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * IAS 40 §57-§65 — change-in-use trigger.
-   */
-  transferReason?:
-    ('transfer_to_ppe' | 'transfer_from_ppe' | 'transfer_to_inventory' | 'transfer_from_inventory') | null;
-  /**
-   * When the IP is leased OUT to a tenant (lessor side).
-   */
-  lease?: (string | null) | Lease;
-  /**
-   * IFRS 13 hierarchy classification (Level 1/2/3).
-   */
-  fairValueMeasurement?: (string | null) | FairValueMeasurement;
-  journalEntry?: (string | null) | JournalEntry;
-  status?: ('active' | 'construction' | 'vacant' | 'transferred_out' | 'disposed') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14791,6 +14942,10 @@ export interface Pack {
    * Free-text note.
    */
   note?: string | null;
+  /**
+   * Derived packing lifecycle position (open → … → closed). Computed, never stored.
+   */
+  state?: string | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -16874,99 +17029,6 @@ export interface SepaMandate {
   revokedAt?: string | null;
   revocationReason?: string | null;
   status?: ('active' | 'suspended' | 'revoked' | 'cancelled' | 'expired') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS 2 share-based-payment register. One row per grant (options / RSUs / PSUs / ESPP / SARs).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "share-based-payments".
- */
-export interface ShareBasedPayment {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Sequential grant reference (e.g. EQ-2026-001).
-   */
-  reference: string;
-  employee: string | Employee;
-  awardType: 'stock_option' | 'rsu' | 'rsa' | 'psu' | 'espp' | 'sar' | 'phantom';
-  settlementType: 'equity' | 'cash';
-  grantDate: string;
-  /**
-   * Total units / shares granted.
-   */
-  numberOfUnits: number;
-  /**
-   * Exercise price (cents). Zero for full-value awards (RSU/RSA/PSU).
-   */
-  strikePrice?: number | null;
-  /**
-   * IFRS 2 §11 — Black-Scholes / Monte-Carlo / market price at grant (cents per unit).
-   */
-  fairValueAtGrant: number;
-  /**
-   * numberOfUnits × fairValueAtGrant (cents).
-   */
-  totalGrantValue?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * IFRS 2 §15 vesting period(s) — graded or cliff. Expense recognised straight-line over each tranche.
-   */
-  vestingSchedule?:
-    | {
-        tranche: number;
-        vestDate: string;
-        unitsVesting: number;
-        isCliff?: boolean | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * IFRS 2 §19 — service / performance / market conditions affect grant-date fair-value differently.
-   */
-  vestingConditions?: {
-    serviceConditionMonths?: number | null;
-    hasPerformanceCondition?: boolean | null;
-    /**
-     * e.g. revenue ≥ €X / EPS ≥ Y
-     */
-    performanceMetric?: string | null;
-    hasMarketCondition?: boolean | null;
-    /**
-     * e.g. share price ≥ €X for 60 trading days
-     */
-    marketCondition?: string | null;
-  };
-  /**
-   * For options: contractual term end (typically 7-10 yr from grant).
-   */
-  expirationDate?: string | null;
-  /**
-   * IFRS 2 §IG-12 expected forfeiture % per period (drives expense true-up).
-   */
-  forfeitureRateAssumption?: number | null;
-  /**
-   * Running total of expense booked to date (cents).
-   */
-  cumulativeExpenseRecognised?: number | null;
-  unitsExercised?: number | null;
-  unitsForfeited?: number | null;
-  unitsCancelled?: number | null;
-  journalEntry?: (string | null) | JournalEntry;
-  status?: ('granted' | 'vesting' | 'vested' | 'exercised' | 'forfeited' | 'cancelled' | 'expired') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -21239,8 +21301,7 @@ export interface DeferredTaxItemsSelect<T extends boolean = true> {
   reference?: T;
   kind?: T;
   classification?: T;
-  sourceCollection?: T;
-  sourceId?: T;
+  source?: T;
   jurisdiction?: T;
   temporaryDifference?: T;
   taxRate?: T;
@@ -21641,8 +21702,7 @@ export interface FairValueMeasurementsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
   reference?: T;
-  sourceCollection?: T;
-  sourceId?: T;
+  source?: T;
   level?: T;
   valuationTechnique?: T;
   measurementDate?: T;
@@ -22067,8 +22127,7 @@ export interface HeldForSaleClassificationsSelect<T extends boolean = true> {
   tenant?: T;
   reference?: T;
   classificationKind?: T;
-  sourceCollection?: T;
-  sourceId?: T;
+  source?: T;
   classificationDate?: T;
   expectedSaleDate?: T;
   carryingAmountAtClassification?: T;
@@ -23567,6 +23626,7 @@ export interface PacksSelect<T extends boolean = true> {
   packingListCode?: T;
   clientCode?: T;
   note?: T;
+  state?: T;
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
@@ -26327,6 +26387,10 @@ export interface WorkOrdersSelect<T extends boolean = true> {
   forwardedFrom?: T;
   forwardedTo?: T;
   note?: T;
+  state?: T;
+  wage?: T;
+  pieceWage?: T;
+  minutesRemaining?: T;
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;

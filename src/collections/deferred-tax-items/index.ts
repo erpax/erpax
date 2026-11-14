@@ -64,8 +64,10 @@ const DeferredTaxItems: CollectionConfig = {
         { label: 'Non-current (> 12 months reversal)', value: 'non_current' },
       ],
     },
-    { name: 'sourceCollection', type: 'text', admin: { description: 'Slug of the origin (e.g. fixed-assets / inventory-movements / provisions).' } },
-    { name: 'sourceId', type: 'text', admin: { description: 'ID of the origin row.' } },
+    // One polymorphic relationship in place of a slug and an id kept as two text fields: the link is
+    // checked, populated and navigable. The target set is the one the old description named.
+    { name: 'source', type: 'relationship', relationTo: ['fixed-assets', 'inventory-movements', 'provisions'],
+      admin: { description: 'The document the temporary difference arises from.' } },
     { name: 'jurisdiction', type: 'relationship', relationTo: 'tax-jurisdictions', required: true, index: true,
       admin: { description: 'Tax jurisdiction whose rate applies.' } },
     { name: 'temporaryDifference', type: 'number', required: true,

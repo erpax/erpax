@@ -7,7 +7,7 @@
  */
 import { describe, it, expect } from 'vitest'
 import type { CollectionBeforeChangeHook } from 'payload'
-import { derivePackState, balanceWeight, PACK_RING } from '@/collections/packs'
+import { derivePackState, balanceWeight, PACK_RING, Packs, stateField } from '@/collections/packs'
 import { HORO_DIGITS } from '@/utilities/horo'
 
 type HookArgs = Parameters<CollectionBeforeChangeHook>[0]
@@ -52,5 +52,21 @@ describe('balanceWeight — grossWeight = netWeight + tareWeight (mass balance)'
   })
   it('rounds to the gram (3 dp kg)', () => {
     expect(weigh({ netWeight: 1.0005, tareWeight: 0.0009 }).grossWeight).toBe(1.001)
+  })
+})
+
+describe('pack state is a Payload virtual field — declared, computed on read, never a column', () => {
+  type FieldHook = (args: { siblingData?: Record<string, unknown> }) => unknown
+  const read = (row: Record<string, unknown>) => (stateField as { hooks?: { afterRead?: FieldHook[] } }).hooks?.afterRead?.[0]?.({ siblingData: row })
+  it('is declared once, virtual and read-only', () => {
+    expect(stateField).toMatchObject({ name: 'state', virtual: true, admin: { readOnly: true } })
+    expect(Packs.fields.filter((f) => 'name' in f && f.name === 'state')).toHaveLength(1)
+    expect(Packs.hooks?.afterRead ?? []).toEqual([])
+  })
+  it('computes from the row being returned', () => {
+    expect(read({})).toBe('open')
+    expect(read({ unitsPacked: 3 })).toBe('packing')
+    expect(read({ unitsOrdered: 3, unitsPacked: 3, grossWeight: 1200 })).toBe('weighed')
+    expect(read({ unitsPacked: 3, shippedAt: '2026-01-01' })).toBe('shipped')
   })
 })

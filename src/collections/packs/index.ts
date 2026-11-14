@@ -41,7 +41,7 @@ import { exactRound } from '@/utilities/algebra'
 import type {
   CollectionConfig,
   CollectionBeforeChangeHook,
-  CollectionAfterReadHook,
+  Field,
 } from 'payload'
 
 import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
@@ -124,11 +124,13 @@ export const balanceWeight: CollectionBeforeChangeHook = ({ data }) => {
   return data
 }
 
-/** Decorate every read with the derived state (computed, never stored). */
-export const decoratePackState: CollectionAfterReadHook = ({ doc }) => {
-  const d = doc as PackShape
-  d.state = derivePackState(d)
-  return doc
+/** The derived state as a Payload virtual field: declared and typed, computed on read, never a column. */
+export const stateField: Field = {
+  name: 'state',
+  type: 'text',
+  virtual: true,
+  admin: { readOnly: true, description: 'Derived packing lifecycle position (open → … → closed). Computed, never stored.' },
+  hooks: { afterRead: [({ siblingData }) => derivePackState((siblingData ?? {}) as PackShape)] },
 }
 
 export const Packs: CollectionConfig = {
@@ -186,6 +188,7 @@ export const Packs: CollectionConfig = {
 
     { name: 'note', type: 'textarea', admin: { description: 'Free-text note.' } },
 
+    stateField,
     ...auditFields({ readOnly: true }),
   ],
   hooks: standardCollectionHooks('packs', {
@@ -193,8 +196,5 @@ export const Packs: CollectionConfig = {
   }),
   timestamps: true,
 }
-
-// The derived decorator rides afterRead (its own lane; never displaces the spine).
-Packs.hooks = { ...Packs.hooks, afterRead: [decoratePackState] }
 
 export default Packs

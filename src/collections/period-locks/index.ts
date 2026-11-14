@@ -123,10 +123,12 @@ export const PeriodLocks: CollectionConfig = {
       },
     },
     {
+      // A join, not a stored list: each closing entry already names its period lock, so this is the
+      // same link read from the other side. A second stored list could disagree with it.
       name: 'relatedClosingEntries',
-      type: 'relationship',
-      relationTo: 'closing-entries',
-      hasMany: true,
+      type: 'join',
+      collection: 'closing-entries',
+      on: 'periodLock',
       admin: { description: 'Closing entries generated for this period' },
     },
     {

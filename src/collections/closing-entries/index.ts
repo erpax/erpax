@@ -52,6 +52,7 @@ export const ClosingEntries: CollectionConfig = {
       type: 'relationship',
       relationTo: 'period-locks',
       required: true,
+      index: true,
       admin: { description: 'Period lock record for this closing' },
     },
     {

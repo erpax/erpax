@@ -14,6 +14,8 @@ import * as migration_20261114_104713_user_role_assignments from './20261114_104
 import * as migration_20261114_110442_fold_committee_members_and_posting_rules from './20261114_110442_fold_committee_members_and_posting_rules';
 import * as migration_20261114_110717_remove_payment_methods from './20261114_110717_remove_payment_methods';
 import * as migration_20261114_111618_fold_items_into_products from './20261114_111618_fold_items_into_products';
+import * as migration_20261114_112144_virtual_fields_and_period_lock_join from './20261114_112144_virtual_fields_and_period_lock_join';
+import * as migration_20261114_112347_polymorphic_sources from './20261114_112347_polymorphic_sources';
 
 export const migrations = [
   {
@@ -94,6 +96,16 @@ export const migrations = [
   {
     up: migration_20261114_111618_fold_items_into_products.up,
     down: migration_20261114_111618_fold_items_into_products.down,
-    name: '20261114_111618_fold_items_into_products'
+    name: '20261114_111618_fold_items_into_products',
+  },
+  {
+    up: migration_20261114_112144_virtual_fields_and_period_lock_join.up,
+    down: migration_20261114_112144_virtual_fields_and_period_lock_join.down,
+    name: '20261114_112144_virtual_fields_and_period_lock_join',
+  },
+  {
+    up: migration_20261114_112347_polymorphic_sources.up,
+    down: migration_20261114_112347_polymorphic_sources.down,
+    name: '20261114_112347_polymorphic_sources'
   },
 ];

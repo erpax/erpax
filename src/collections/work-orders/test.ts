@@ -20,6 +20,7 @@ import {
   forwardProducedToNextPhase,
   WORKORDER_RING,
   Workorders,
+  derivedFields,
 } from '@/collections/work-orders'
 import { HORO_DIGITS } from '@/utilities/horo'
 
@@ -250,5 +251,31 @@ describe('forwardProducedToNextPhase — the conveyor finds the next phase by th
     expect((await convey({ ...done }, { id: 'wo2' })).finds).toHaveLength(0)
     expect((await convey({ ...done, lotVariant: 'v1', completedAt: null }, { id: 'wo2' })).finds).toHaveLength(0)
     expect((await convey({ ...done, lotVariant: 'v1', forwardedTo: 'wo9' }, { id: 'wo2' })).finds).toHaveLength(0)
+  })
+})
+
+describe('derived values are Payload virtual fields — declared, computed on read, never a column', () => {
+  type FieldHook = (args: { siblingData?: Record<string, unknown> }) => unknown
+  const read = (name: string, row: Record<string, unknown>) => {
+    const field = derivedFields.find((f) => 'name' in f && f.name === name) as { hooks?: { afterRead?: FieldHook[] } }
+    return field.hooks?.afterRead?.[0]?.({ siblingData: row })
+  }
+  const row = { unitsOrdered: 10, unitsProduced: 4, unitSeconds: 60, payPerHour: 12 }
+
+  it('declares state, wage, pieceWage and minutesRemaining as virtual and read-only', () => {
+    expect(derivedFields.map((f) => ('name' in f ? f.name : ''))).toEqual(['state', 'wage', 'pieceWage', 'minutesRemaining'])
+    for (const f of derivedFields) expect(f).toMatchObject({ virtual: true, admin: { readOnly: true } })
+    const declared = Workorders.fields.flatMap((f) => ('name' in f ? [f.name] : []))
+    for (const name of ['state', 'wage', 'pieceWage', 'minutesRemaining']) expect(declared.filter((n) => n === name), name).toHaveLength(1)
+  })
+  it('each computes from the row being returned, with the same functions as before', () => {
+    expect(read('state', row)).toBe('in-production')
+    expect(read('wage', row)).toBe(0.8) // 4 · 60 · 12 / 3600
+    expect(read('pieceWage', row)).toBeCloseTo(0.8, 10)
+    expect(read('minutesRemaining', row)).toBe(6) // (10 − 4) · 60 / 60
+    expect(read('state', {})).toBe('open') // an empty row is a real position, not an error
+  })
+  it('no collection-level afterRead decorator remains', () => {
+    expect(Workorders.hooks?.afterRead ?? []).toEqual([])
   })
 })

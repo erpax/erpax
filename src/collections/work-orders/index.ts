@@ -79,7 +79,6 @@ import type {
   CollectionConfig,
   CollectionBeforeChangeHook,
   CollectionAfterChangeHook,
-  CollectionAfterReadHook,
   Field,
 } from 'payload'
 
@@ -214,7 +213,7 @@ export const pieceRateWage = (doc: WorkorderShape): number => exactRound(pieceWa
  * The shift's piece-rollup pole: `work-shifts.orderWage` = Σ `pieceWage` of its orders, recomputed
  * whenever an order is written, deleted or moved between shifts. The shift's own
  * `computeShiftAuthority` then settles `wage = round2(max(time pay, orderWage))` on that update.
- * The children are read through afterRead, so `pieceWage` is the decorated unrounded value.
+ * The children are read through the API, so `pieceWage` is the virtual field's unrounded value.
  */
 export const shiftOrderWage = recomputeParentAggregates({
   childSlug: 'work-orders',
@@ -366,18 +365,27 @@ export const forwardProducedToNextPhase: CollectionAfterChangeHook = async ({ do
 }
 
 /**
- * Decorate every read with the DERIVED fields — state, wage, minutesRemaining —
- * computed, never stored (DERIVE-FROM-FS-FIRST: the computed value is the truth,
- * the stored copy would only drift).
+ * The DERIVED fields — state, wage, pieceWage, minutesRemaining — as Payload virtual fields:
+ * declared (typed, visible in the admin, selectable through the API), computed on every read from
+ * the row's own stored values, and never given a database column. The computed value is the truth;
+ * a stored copy would only drift. They read `siblingData`, the row being returned.
  */
-export const decorateDerived: CollectionAfterReadHook = ({ doc }) => {
-  const d = doc as WorkorderShape
-  d.state = deriveState(d)
-  d.pieceWage = pieceWage(d)
-  d.wage = pieceRateWage(d)
-  d.minutesRemaining = minutesRemaining(d)
-  return doc
+const derived = <T,>(name: string, type: 'text' | 'number', description: string, compute: (doc: WorkorderShape) => T, hidden = false): Field => {
+  const common = {
+    name,
+    virtual: true as const,
+    admin: { readOnly: true, description, ...(hidden ? { hidden: true } : {}) },
+    hooks: { afterRead: [({ siblingData }: { siblingData?: unknown }) => compute((siblingData ?? {}) as WorkorderShape)] },
+  }
+  return type === 'text' ? { ...common, type: 'text' } : { ...common, type: 'number' }
 }
+
+export const derivedFields: Field[] = [
+  derived('state', 'text', 'Derived lifecycle position on the seven-step ring (open → … → closed). Computed, never stored.', deriveState),
+  derived('wage', 'number', 'Piece-rate wage for this order, rounded to cents. Computed, never stored.', pieceRateWage),
+  derived('pieceWage', 'number', 'Unrounded piece-rate wage — what the shift rolls up. Computed, never stored.', pieceWage, true),
+  derived('minutesRemaining', 'number', 'Work-minutes still to produce. Computed, never stored.', minutesRemaining),
+]
 
 export const Workorders: CollectionConfig = {
   slug: 'work-orders',
@@ -474,6 +482,8 @@ export const Workorders: CollectionConfig = {
 
     { name: 'note', type: 'textarea', admin: { description: 'Free-text note (AUDIT: present on ~0.9% of rows).' } },
 
+    ...derivedFields,
+
     ...auditFields({ readOnly: true }),
   ],
   hooks: standardCollectionHooks('work-orders', {
@@ -483,8 +493,8 @@ export const Workorders: CollectionConfig = {
   timestamps: true,
 }
 
-// The derived decorator and the shift rollup's delete arm are registered separately so it never displaces the
+// The shift rollup's delete arm is registered separately so it never displaces the
 // standard spine's afterChange audit hook (afterRead is its own lane).
-Workorders.hooks = { ...Workorders.hooks, afterRead: [decorateDerived], afterDelete: [shiftOrderWage.afterDelete] }
+Workorders.hooks = { ...Workorders.hooks, afterDelete: [shiftOrderWage.afterDelete] }
 
 export default Workorders
