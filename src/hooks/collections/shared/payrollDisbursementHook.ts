@@ -80,7 +80,7 @@ const resolveEmployee = async (
   raw: PayrollLine['employee'],
 ): Promise<ResolvedEmployee | null> => {
   if (!raw) return null
-  if (typeof raw === 'object' && raw !== null && 'id' in raw) {
+  if (typeof raw === 'object' && 'id' in raw) {
     const obj = raw as Record<string, unknown>
     const bank =
       (obj.payrollBankAccount as Record<string, unknown> | undefined) ?? undefined
