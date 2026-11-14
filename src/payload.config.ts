@@ -90,6 +90,7 @@ import {
 } from '@/i18n'
 
 import { navigation, packages } from '@/packages'
+import { gateByApp } from '@/access/collections/shared/appAccess'
 import { foldCollectionLifecycle } from '@/utilities/factory/collection'
 import type { Config } from '@/utilities/types'
 
@@ -313,6 +314,8 @@ export default buildConfig({
   plugins: [
     ...packages(
       (Object.values(allCollections) as CollectionConfig[]).map((c) => foldCollectionLifecycle({ ...c, lockDocuments: false as const })),
+      // a collection is reachable only through a tenant that has its app switched on
+      gateByApp,
     ),
     r2Storage({
       bucket: (await getCloudflare()).env.R2,
@@ -507,7 +510,7 @@ export default buildConfig({
     // production (the app is API-first). The plugin stays in the repo (src/plugins/admin/ui) for
     // local/dev admin; the Worker ships lean. Re-add behind a dev-only guard if the admin viz is wanted.
     // last: the collections other plugins brought (orders, forms, …) take their app's name too
-    navigation(),
+    navigation(gateByApp),
   ],
   secret: payloadSecret || 'INSECURE_BUILD_ONLY_PLACEHOLDER',
   typescript: {

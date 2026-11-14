@@ -86,8 +86,9 @@ export async function loadCorpus(
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const { url, packs, tenant, seed, documents, redirects } = parseArgs(process.argv.slice(2))
-  if (!url || (!seed && !documents && !redirects)) {
-    console.error('usage: tsx src/seed/content/load/index.ts --url <origin> (--seed <file> | --documents <file> [--packs <a,b>]) [--redirects <file>] [--tenant <id>]')
+  const apps = process.argv.includes('--apps')
+  if (!url || (!seed && !documents && !redirects && !apps)) {
+    console.error('usage: tsx src/seed/content/load/index.ts --url <origin> (--seed <file> | --documents <file> [--packs <a,b>]) [--redirects <file>] [--apps] [--tenant <id>]')
     process.exit(2)
   }
   const authorization = process.env.ERPAX_AUTHORIZATION
@@ -101,6 +102,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     ? await loadSeed(sdk as unknown as Rest, config, JSON.parse(readFileSync(seed, 'utf8')) as PageRow[], { tenant })
     : { created: 0, updated: 0, unchanged: 0, unresolved: [], rows: 0 }
   console.log(JSON.stringify({ ...result, unresolved: result.unresolved.length }))
+  // --apps: one tenant per app (src/seed/apps) — the app as a tenant
+  if (apps) console.log(JSON.stringify({ apps: await (await import('@/seed/apps')).loadAppTenants(sdk as unknown as Rest) }))
   if (redirects) {
     const rows = JSON.parse(readFileSync(redirects, 'utf8')) as RedirectRow[]
     console.log(JSON.stringify({ redirects: await loadRedirects(overSdk(sdk as unknown as Rest, config), rows, { tenant }) }))

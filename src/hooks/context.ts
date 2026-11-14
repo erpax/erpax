@@ -20,6 +20,8 @@ declare module 'payload' {
     workOrderForwarded?: boolean
     /** the signed-in user's ability (their roles, as rules), computed once per request */
     ability?: unknown
+    /** the signed-in user's tenants with the apps each has on, read once per request */
+    tenantApps?: unknown
   }
 }
 
@@ -36,7 +38,7 @@ export async function flagged<T>(req: PayloadRequest, flag: Flag, write: (contex
 }
 
 /** The request-scoped values `remembered` may hold. */
-type Remembered = 'ability'
+type Remembered = 'ability' | 'tenantApps'
 
 /**
  * Compute a value once per request and keep it on the hook context: every access function and
