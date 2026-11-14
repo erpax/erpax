@@ -12,7 +12,7 @@
 import type { CollectionConfig } from 'payload'
 import { authenticated } from '@/authenticated'
 import { adminOnly } from '@/auth'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 
 export const AuditFindings: CollectionConfig = {
   slug: 'audit-findings',

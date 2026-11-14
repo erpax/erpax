@@ -39,11 +39,11 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
-import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
+import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { roleScopedAccess, tenantAdmin } from '@/auth'
 import {
   currencyField,
@@ -52,8 +52,8 @@ import {
   auditFields,
 } from '@/base/accounting/field'
 import { validateNotLocked } from '@/utility'
-import { payrollRunPostingHook } from '@/hooks/payrollRunPostingHook'
-import { payrollDisbursementHook } from '@/hooks/payrollDisbursementHook'
+import { payrollRunPostingHook } from '@/hooks/collections/shared/payrollRunPostingHook'
+import { payrollDisbursementHook } from '@/hooks/collections/shared/payrollDisbursementHook'
 
 const PayrollRuns: CollectionConfig = {
   slug: 'payroll-runs',

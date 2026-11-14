@@ -11,7 +11,7 @@ import {
 import {
   normalizeTenantSlugValue,
   normalizeTenantDomainValue,
-} from '@/hooks/normalizeTenantSlug'
+} from '@/hooks/fields/tenants/normalizeTenantSlug'
 import { Tenants } from '@/tenants'
 import {
   deriveInvoiceNumber,

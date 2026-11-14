@@ -11,8 +11,8 @@
 export * from './deriveNumber'
 // GL posting hooks (dissolved from the former accounting/hooks slice —
 // invoices carry the `bill` kind, so bill.hook co-locates here too).
-export * from '@/hooks/invoiceAccountingHook'
-export * from '@/hooks/billAccountingHook'
+export * from '@/hooks/collections/invoices/invoiceAccountingHook'
+export * from '@/hooks/collections/invoices/billAccountingHook'
 
 /** @index-cross.foldback child=invoices/hooks parent=invoices — this cross folds back into its parent. */
 export * from './transition'

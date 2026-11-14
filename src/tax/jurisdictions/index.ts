@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { tenantMasterDataAccess } from '@/auth'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { currencyField } from '@/base/accounting/field'
 
 /**

@@ -39,7 +39,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { scopedAccess, adminOrAccountant, tenantAdmin } from '@/auth'
 
 const Shares: CollectionConfig = {

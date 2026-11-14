@@ -33,7 +33,7 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
 import { currencyField, statusField, notesField, auditFields } from '@/base/accounting/field'
 

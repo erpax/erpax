@@ -1,13 +1,13 @@
 import type { CollectionConfig } from 'payload'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
 import { notesField } from '@/base/accounting/field'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant';
-import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
-import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
-import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties';
+import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant';
+import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy';
+import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
+import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties';
 import { validateNotLocked } from '@/utility';
-import { periodEndAdjustmentPostingHook } from '@/hooks/periodEndAdjustmentPostingHook';
+import { periodEndAdjustmentPostingHook } from '@/hooks/collections/shared/periodEndAdjustmentPostingHook';
 
 /**
  * Period-End Adjustments — accruals, deferrals, depreciation, allocation entries.

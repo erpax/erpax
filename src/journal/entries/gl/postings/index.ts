@@ -1,9 +1,9 @@
 import type { CollectionConfig } from 'payload'
 import { tenantAdminWriteAccess } from '@/auth'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
-import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { emitOnStatusTransition } from '@/chain/event/emitter'
 import {
   glAccountField,
@@ -12,14 +12,14 @@ import {
   auditFields,
 } from '@/base/accounting/field'
 import { validateNotLocked } from '@/utility'
-import { validateBalancedEntry } from '@/hooks/validateBalancedEntry'
+import { validateBalancedEntry } from '@/hooks/collections/shared/validateBalancedEntry'
 // Two SOX §404 controls that existed, were tested, and were installed on NOTHING. Each names this
 // collection in its own header — `enforcePostingImmutability` says "beforeChange hook for
 // GLPostings", `validateFiscalPeriodPosting` says "beforeValidate hook for GLPostings" — and
 // neither appeared in either array. They are distinct from `validateNotLocked`, which is the period
 // LOCK: this pair stops a POSTED row being modified, and resolves the fiscal period it belongs to.
-import { enforcePostingImmutability } from '@/hooks/enforcePostingImmutability'
-import { validateFiscalPeriodPosting } from '@/hooks/validateFiscalPeriodPosting'
+import { enforcePostingImmutability } from '@/hooks/collections/gl-postings/enforcePostingImmutability'
+import { validateFiscalPeriodPosting } from '@/hooks/collections/gl-postings/validateFiscalPeriodPosting'
 
 /**
  * GL Postings — atomic debit/credit lines linked to a journal entry.

@@ -1,9 +1,9 @@
 import type { CollectionConfig } from 'payload'
 import { tenantMasterDataAccess, getUser } from '@/auth'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { updateFiscalCalendarOnPeriodChange } from '@/hooks/updateFiscalCalendarOnPeriodChange'
+import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
+import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
+import { updateFiscalCalendarOnPeriodChange } from '@/hooks/collections/fiscal-periods/updateFiscalCalendarOnPeriodChange'
 
 /**
  * Fiscal Periods — accounting calendar with period locking.

@@ -55,7 +55,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { scopedAccess, tenantAdmin, adminOnly } from '@/auth'
 
 const AuditEvents: CollectionConfig = {

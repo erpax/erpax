@@ -101,8 +101,8 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
-import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
+import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
 import { currencyField, statusField, notesField, auditFields } from '@/base/accounting/field'
 

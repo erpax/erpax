@@ -20,7 +20,7 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/auth'
 import {
   statusField,

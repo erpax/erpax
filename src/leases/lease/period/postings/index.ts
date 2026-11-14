@@ -31,10 +31,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
-import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
 import {
   currencyField,
@@ -43,7 +43,7 @@ import {
   auditFields,
 } from '@/base/accounting/field'
 import { validateNotLocked } from '@/utility'
-import { leasePeriodPostingHook } from '@/hooks/leasePeriodPostingHook'
+import { leasePeriodPostingHook } from '@/hooks/collections/lease-period-postings/leasePeriodPostingHook'
 
 const LeasePeriodPostings: CollectionConfig = {
   slug: 'lease-period-postings',

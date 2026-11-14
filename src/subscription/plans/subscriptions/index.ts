@@ -5,7 +5,7 @@ import {
   decryptSubscriptionData,
 } from '@/subscription/plans/subscriptions/hooks'
 import { emitSubscriptionLifecycleEvents } from '@/subscription/plans/subscriptions/hooks'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 
 /**
  * Subscriptions — tenant-to-plan binding with period state and Stripe sync.

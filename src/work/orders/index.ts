@@ -263,7 +263,7 @@ export const inheritShiftEfficiency: CollectionBeforeChangeHook = async ({ data,
  * never creates two successors for one source).
  */
 export const forwardProducedToNextPhase: CollectionAfterChangeHook = async ({ doc, req }) => {
-  if (req.context.workOrderForwarded) return doc
+  if (req.context?.workOrderForwarded) return doc
   try {
     const d = doc as WorkorderShape & {
       id?: string

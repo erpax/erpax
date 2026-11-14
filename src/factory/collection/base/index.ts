@@ -13,9 +13,9 @@ import type {
   CollectionConfig, CollectionBeforeChangeHook,
   CollectionAfterChangeHook, Field,
 } from 'payload'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminGroupOf } from '@/navigation'
 import {
   emitOnStatusTransition, emitOnCreate, type AggregateType,

@@ -8,6 +8,6 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from '@/hooks/encryptPaymentMethodData'
+export * from '@/hooks/collections/payment-methods/encryptPaymentMethodData'
 
 /** @index-cross.foldback child=payment/methods/hooks parent=payment/methods — this cross folds back into its parent. */

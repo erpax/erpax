@@ -12,6 +12,6 @@
  * @see docs/STANDARDS.md §3
  */
 
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 
 export const itemsBeforeValidate = [autoPopulateTenant]

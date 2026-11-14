@@ -17,7 +17,7 @@
 
 import { CollectionConfig } from 'payload'
 import { accountingCollectionAccess } from '@/auth'
-import { validateConsolidationReadiness } from '@/hooks/validateConsolidationReadiness'
+import { validateConsolidationReadiness } from '@/hooks/collections/consolidations/validateConsolidationReadiness'
 
 export const Consolidations: CollectionConfig = {
   slug: 'consolidations',

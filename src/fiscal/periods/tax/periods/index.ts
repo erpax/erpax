@@ -18,7 +18,7 @@
 
 import { CollectionConfig } from 'payload'
 import { accountingCollectionAccess } from '@/auth'
-import { validateTaxPeriodClosing } from '@/hooks/validateTaxPeriodClosing'
+import { validateTaxPeriodClosing } from '@/hooks/collections/tax-periods/validateTaxPeriodClosing'
 
 export const TaxPeriods: CollectionConfig = {
   slug: 'tax-periods',

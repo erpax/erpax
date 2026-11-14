@@ -41,9 +41,9 @@ import { isDocumentOwner } from '../access/isDocumentOwner'
 import { validateProductCheckout } from '@/ecommerce/product/validation'
 import { localeRecord } from '@/i18n'
 import { DEFAULT_COUNTRY, DEFAULT_CURRENCY } from '@/config/regional/defaults'
-import { validateAddressHook } from '@/hooks/validateAddressHook'
-import { emitOrderLifecycleEvents } from '@/hooks/emitOrderLifecycleEvents'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { validateAddressHook } from '@/hooks/collections/users/validateAddressHook'
+import { emitOrderLifecycleEvents } from '@/hooks/collections/users/emitOrderLifecycleEvents'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 
 /** Match Payload ecommerce template nav: variant helpers live under Ecommerce, not ungrouped (`group: false`). */
 const ecommerceGroupOverride: CollectionOverride = ({ defaultCollection }) => ({

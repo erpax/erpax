@@ -8,7 +8,7 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from '@/hooks/emitSubscriptionLifecycleEvents'
-export * from '@/hooks/encryptSubscriptionData'
+export * from '@/hooks/collections/subscription-plans-subscriptions/emitSubscriptionLifecycleEvents'
+export * from '@/hooks/collections/subscription-plans-subscriptions/encryptSubscriptionData'
 
 /** @index-cross.foldback child=subscription/plans/subscriptions/hooks parent=subscription/plans/subscriptions — this cross folds back into its parent. */

@@ -1,5 +1,5 @@
-import { enforceDocumentTenantForUser } from '@/hooks/enforceDocumentTenantForUser'
-import { populatePublishedAt } from '@/hooks/populatePublishedAt'
+import { enforceDocumentTenantForUser } from '@/hooks/collections/shared/enforceDocumentTenantForUser'
+import { populatePublishedAt } from '@/hooks/collections/cmspage/populatePublishedAt'
 import { importRemoteMediaPagesHook } from '@/remote/media/import'
 
 /**

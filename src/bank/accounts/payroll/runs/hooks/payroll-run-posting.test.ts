@@ -21,7 +21,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { payrollRunPostingHook } from '@/hooks/payrollRunPostingHook'
+import { payrollRunPostingHook } from '@/hooks/collections/shared/payrollRunPostingHook'
 import { journalEntryService } from '@/journal/entry/service'
 
 /** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */

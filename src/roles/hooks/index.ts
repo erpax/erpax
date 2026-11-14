@@ -8,6 +8,6 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from '@/hooks/validateRoleDefinition'
+export * from '@/hooks/collections/roles/validateRoleDefinition'
 
 /** @index-cross.foldback child=roles/hooks parent=roles — this cross folds back into its parent. */

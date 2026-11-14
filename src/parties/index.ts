@@ -28,10 +28,10 @@
  */
 import type { CollectionConfig, Condition, Payload } from 'payload'
 import { tenantMasterDataAccess } from '@/auth'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { classifyTaxId } from '@/hooks/classifyTaxId'
-import { deriveCountryFromIban } from '@/hooks/deriveCountryFromIban'
+import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
+import { classifyTaxId } from '@/hooks/collections/parties/classifyTaxId'
+import { deriveCountryFromIban } from '@/hooks/collections/shared/deriveCountryFromIban'
 import { loadPresets, preset, type Preset } from '@/preset'
 
 /** The sides a party can be on. A party may hold both. */

@@ -14,7 +14,7 @@ describe('hooks/context — a flag lasts as long as the write it guards', () => 
     const req = request({ kept: 1 })
     await flagged(req, 'paymentRunLinked', async (context) => {
       req.context = { ...req.context, ...context } // what createLocalReq does with a passed req
-      expect(req.context.paymentRunLinked).toBe(true)
+      expect(req.context?.paymentRunLinked).toBe(true)
     })
     expect(req.context).toEqual({ kept: 1 })
   })

@@ -8,6 +8,6 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from '@/hooks/normalizeTenantSlug'
+export * from '@/hooks/fields/tenants/normalizeTenantSlug'
 
 /** @index-cross.foldback child=tenants/hooks parent=tenants — this cross folds back into its parent. */

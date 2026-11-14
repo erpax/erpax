@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 
 import { authenticated } from '@/authenticated'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { superAdminOnly, fieldAccess } from '@/is/super/admin'
 import { localeRecord } from '@/i18n'
 import { seedPresets } from '@/preset'

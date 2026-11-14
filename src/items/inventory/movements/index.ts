@@ -19,14 +19,14 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
-import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
 import { validateNotLocked } from '@/utility'
 import { currencyField, statusField, notesField, auditFields } from '@/base/accounting/field'
-import { inventoryMovementPostingHook } from '@/hooks/inventoryMovementPostingHook'
+import { inventoryMovementPostingHook } from '@/hooks/collections/shared/inventoryMovementPostingHook'
 
 const InventoryMovements: CollectionConfig = {
   slug: 'inventory-movements',

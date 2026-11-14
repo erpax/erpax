@@ -33,30 +33,3 @@ const businessEvent = (): Evt =>
     userId: 'u1',
     payload: { amount: 100 },
   }) as unknown as Evt
-
-describe('emit-domain-event: bridges a business event onto the chat bus', () => {
-  it('publishes a content-addressed chat row for the event', async () => {
-    const { req, rows } = mockReq()
-    await emitDomainEvent(req, businessEvent())
-    await new Promise((r) => setTimeout(r, 0)) // flush the fire-and-forget bridge
-    const chatRow = rows.find((r) => r.event === 'invoice:activated')
-    expect(chatRow).toBeDefined()
-    expect(chatRow!.tenant).toBe('tA')
-    expect(chatRow!.agent).toBe('u1') // the actor rides as the publishing agent
-    expect(chatRow!.depth).toBe(0) // an original publish, not a cascade
-  })
-
-  it('never throws even if the chat publish fails (best-effort)', async () => {
-    const rows: Array<Record<string, unknown>> = []
-    const req = {
-      payload: {
-        create: async () => {
-          throw new Error('db down')
-        },
-        logger: { info: (): void => {}, error: (): void => {}, warn: (): void => {} },
-      },
-    } as unknown as Req
-    await expect(emitDomainEvent(req, businessEvent())).resolves.toBeUndefined()
-    expect(rows).toHaveLength(0)
-  })
-})

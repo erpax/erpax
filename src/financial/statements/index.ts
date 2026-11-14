@@ -2,8 +2,8 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { tenantAdminWriteAccess } from '@/auth'
 import { currencyField, notesField } from '@/base/accounting/field'
-import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
-import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties';
+import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
+import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties';
 
 /**
  * Financial Statements — generated statement records (TB, BS, IS, CF, etc.).

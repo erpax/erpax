@@ -1,10 +1,10 @@
 import type { Access, CollectionAfterChangeHook, CollectionBeforeChangeHook, CollectionConfig } from 'payload'
-import { derivePosting } from '@/hooks/derivePosting'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
-import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { derivePosting } from '@/hooks/collections/journal-entries/derivePosting'
+import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
+import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { adminOrAccountant, scopedAccess, tenantAdmin, hasRole, getUserContext } from '@/auth'
 import {
   glAccountField,
@@ -13,7 +13,7 @@ import {
   auditFields,
 } from '@/field'
 import { validateNotLocked } from '@/utility'
-import { validateBalancedEntry } from '@/hooks/validateBalancedEntry'
+import { validateBalancedEntry } from '@/hooks/collections/shared/validateBalancedEntry'
 
 /**
  * Journal Entries — double-entry-bookkeeping write target.

@@ -26,11 +26,11 @@ import { partyRefField, typeField } from '@/discriminator'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { horoStateField } from '@/horo'
 import { CASE_RING } from './lifecycle/index'
-import { requireJudgmentToSeal, neverDelete } from '@/hooks/requireJudgmentToSeal'
+import { requireJudgmentToSeal, neverDelete } from '@/hooks/collections/cases/requireJudgmentToSeal'
 
 // Re-export for convenience
 export { CASE_RING, type HoroState } from './lifecycle/index'
-export { requireJudgmentToSeal, validateCaseTransition } from '@/hooks/requireJudgmentToSeal'
+export { requireJudgmentToSeal, validateCaseTransition } from '@/hooks/collections/cases/requireJudgmentToSeal'
 
 export const Cases: CollectionConfig = {
   slug: 'cases',

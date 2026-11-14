@@ -1,4 +1,4 @@
-import { enforceDocumentTenantForUser } from '@/hooks/enforceDocumentTenantForUser'
+import { enforceDocumentTenantForUser } from '@/hooks/collections/shared/enforceDocumentTenantForUser'
 
 /**
  * Multi-tenant plugin: uploads scoped to the active tenant.

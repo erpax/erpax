@@ -8,4 +8,4 @@
 
 export * from './calculations';
 export * from './span';
-export * from '@/hooks/validateNotLocked';
+export * from '@/hooks/collections/utility/validateNotLocked';

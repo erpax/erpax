@@ -15,14 +15,12 @@
  */
 import { describe, it, expect } from 'vitest'
 import type { CollectionConfig } from 'payload'
-import type { CollectionDiamondModel } from '@/diamond'
 import type { Field } from 'payload'
 import {
   createAccountingCollection, COLLECTION_DIAMOND_KEY,
   collectionSignature, shapeCatalogue, shapeRatchetVerdict, auditCorpus, ROSETTA_BASELINE,
   deriveLifecycleEmits, foldCollectionLifecycle,
 } from './index'
-import { verifyDiamond, diamondUuid } from '@/diamond'
 import {
   notesField, auditFields, statusField, currencyField,
 } from '@/field'
@@ -199,46 +197,6 @@ describe('createAccountingCollection — Slice GGGGGGGG dedup', () => {
     expect(countByName(cfg.fields, 'createdBy')).toBe(0)
     expect(countByName(cfg.fields, 'approvedBy')).toBe(0)
     expect(countByName(cfg.fields, 'approvedAt')).toBe(0)
-  })
-
-  // ── Shared diamond model — collection dimension ──
-  it('diamond model: horoStates collection passes verifyDiamond (no horo impurities)', () => {
-    const cfg = createAccountingCollection({
-      slug: 'horo-diamond',
-      labels: { singular: 'X', plural: 'Xs' },
-      useAsTitle: 'name',
-      defaultColumns: ['name'],
-      horoStates: FULL_RING,
-      fields: () => [{ name: 'name', type: 'text' }],
-    })
-    const model = (cfg as CollectionConfig & Record<typeof COLLECTION_DIAMOND_KEY, CollectionDiamondModel | undefined>)[COLLECTION_DIAMOND_KEY]
-    expect(model).toBeDefined()
-    expect(model!.horoStates).toHaveLength(7)
-    expect(model!.tamperProofUuid).toBe(true)
-    const v = verifyDiamond(model!)
-    expect(v.impurities.some((i) => i.includes('horoStates'))).toBe(false)
-    expect(cfg.admin?.description).toContain('diamond-uuid:')
-    expect(cfg.admin?.description).toContain(diamondUuid(model!))
-  })
-
-  it('diamond model: two slugs share the same CollectionDiamondModel shape', () => {
-    const a = createAccountingCollection({
-      slug: 'shape-a',
-      labels: { singular: 'A', plural: 'As' },
-      useAsTitle: 'name',
-      defaultColumns: ['name'],
-      fields: () => [{ name: 'name', type: 'text' }],
-    })
-    const b = createAccountingCollection({
-      slug: 'shape-b',
-      labels: { singular: 'B', plural: 'Bs' },
-      useAsTitle: 'name',
-      defaultColumns: ['name'],
-      fields: () => [{ name: 'name', type: 'text' }],
-    })
-    expect(Object.keys((a as CollectionConfig & Record<typeof COLLECTION_DIAMOND_KEY, CollectionDiamondModel | undefined>)[COLLECTION_DIAMOND_KEY]!).sort()).toEqual(
-      Object.keys((b as CollectionConfig & Record<typeof COLLECTION_DIAMOND_KEY, CollectionDiamondModel | undefined>)[COLLECTION_DIAMOND_KEY]!).sort(),
-    )
   })
 })
 

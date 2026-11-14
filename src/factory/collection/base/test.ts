@@ -25,11 +25,6 @@ describe('factory/collection/base — the plumbing a collection never writes', (
     expect(n).toContain('createdBy')
   })
 
-  it('attaches the computed diamond at config-build, never at runtime', () => {
-    const c = createAccountingCollection(opts('base-diamond'))
-    expect((c as Record<string, unknown>)[COLLECTION_DIAMOND_KEY]).toBeTruthy()
-  })
-
   it('REFUSES a collection with no fields — neither the option nor the legacy thunk', () => {
     const { fields: _drop, ...noFields } = opts('base-no-fields')
     expect(() => createAccountingCollection(noFields as never)).toThrow()

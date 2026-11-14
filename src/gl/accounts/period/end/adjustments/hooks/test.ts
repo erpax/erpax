@@ -7,7 +7,7 @@ import { describe, expect, it, vi } from 'vitest'
 
 import { PostingOverrideNested, type PostingService, withPostingService } from '@/journal/entry/service'
 
-import { periodEndAdjustmentPostingHook } from '@/hooks/periodEndAdjustmentPostingHook'
+import { periodEndAdjustmentPostingHook } from '@/hooks/collections/shared/periodEndAdjustmentPostingHook'
 
 /**
  * The rethrow these hooks carry — "DO NOT SWALLOW: the ledger and the record silently disagreeing" —
