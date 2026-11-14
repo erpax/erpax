@@ -242,7 +242,7 @@
   "triggers": {
     "crons": [
       // Default Payload jobs sweep (dunning-cycle + ad-hoc tasks). The scheduled()
-      // handler is in worker.ts (logic in src/run/cron) and POSTs to
+      // handler is in worker.ts (logic in src/utilities/run/cron) and POSTs to
       // /api/payload-jobs/run with the cron-bearer derived from PAYLOAD_SECRET.
       // It was NOT in .open-next/worker.js as this comment previously claimed —
       // that artifact contains no scheduled at all, so these triggers fired into
