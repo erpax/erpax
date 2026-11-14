@@ -105,6 +105,27 @@ export const parseRoleAddress = (address: string | null | undefined, apps: reado
   return app ? { role: parts[0], app } : undefined
 }
 
+/** The tenant roles every app has, each held by being in its group: `<role>@<app>.<domain>`. */
+export const APP_ROLES = ['admin', 'manager', 'user'] as const
+
+export interface AppGroupRow {
+  /** The tenant the group belongs to (a slug when seeded, an id when created by a hook). */
+  readonly tenant: string | number
+  readonly name: string
+  readonly email: string
+  readonly kind: 'team' | 'security'
+}
+
+/**
+ * The groups a tenant has for these apps, computed: each app's own group (`<app>@<domain>` — the people who
+ * have the app) and one security group per role (`<role>@<app>.<domain>` — the people who hold it there).
+ */
+export const groupRowsOf = (tenant: string | number, apps: readonly App[], domain: string): AppGroupRow[] =>
+  apps.flatMap((app) => [
+    { tenant, name: app.title, email: appAddress(app.slug, domain), kind: 'team' as const },
+    ...APP_ROLES.map((role) => ({ tenant, name: `${app.title} ${role}`, email: roleAddress(role, app.slug, domain), kind: 'security' as const })),
+  ])
+
 type Shape = Pick<CollectionConfig, 'slug' | 'fields'>
 
 /** The collections of each app, by the same computation that places them in its plugin. */

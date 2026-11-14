@@ -11,7 +11,7 @@
  * @see src/packages/engine/index.ts (appTenants) · src/collections/tenants (app, apps)
  */
 import { APPS } from '@/packages'
-import { appAddress, appTenants, roleAddress } from '@/packages/engine'
+import { APP_ROLES, appTenants, groupRowsOf, type AppGroupRow as AppGroupRowOf } from '@/packages/engine'
 
 export interface TenantRest {
   find(args: Record<string, unknown>): Promise<unknown>
@@ -48,26 +48,13 @@ export const loadAppTenants = async (rest: TenantRest, rows: readonly AppTenantR
   return result
 }
 
-/** The tenant roles every app has, as groups: `<role>@<app>.<domain>` holds the role in that app. */
-export const APP_ROLES = ['admin', 'manager', 'user'] as const
+export { APP_ROLES }
 
-export interface AppGroupRow {
-  /** The app tenant the group belongs to (its slug). */
-  readonly tenant: string
-  readonly name: string
-  readonly email: string
-  readonly kind: 'team' | 'security'
-}
+/** A group row of an app tenant: the tenant is its slug, which the loader resolves to an id. */
+export type AppGroupRow = AppGroupRowOf & { readonly tenant: string }
 
-/**
- * The groups of every app, computed: the app's own group (`<app>@<domain>` — the people who have the
- * app) and one security group per role (`<role>@<app>.<domain>` — the people who hold it there).
- */
-export const appGroupRows = (domain = 'erpax.com'): AppGroupRow[] =>
-  APPS.flatMap((app) => [
-    { tenant: app.slug, name: app.title, email: appAddress(app.slug, domain), kind: 'team' as const },
-    ...APP_ROLES.map((role) => ({ tenant: app.slug, name: `${app.title} ${role}`, email: roleAddress(role, app.slug, domain), kind: 'security' as const })),
-  ])
+/** The groups of every app tenant, computed by the engine: the app's own group and one per role. */
+export const appGroupRows = (domain = 'erpax.com'): AppGroupRow[] => APPS.flatMap((app) => groupRowsOf(app.slug, [app], domain)) as AppGroupRow[]
 
 /** Create the app groups that are missing; a group is found by its tenant and address. */
 export const loadAppGroups = async (rest: TenantRest, rows: readonly AppGroupRow[] = appGroupRows()): Promise<{ created: number; unchanged: number; skipped: number }> => {
