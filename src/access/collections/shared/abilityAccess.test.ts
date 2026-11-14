@@ -94,7 +94,7 @@ describe('withAbility — the abilities are ADDED to a collection\'s own access'
 })
 
 describe('abilityOf — roles held through <role>@<app> groups stay inside the app', () => {
-  const groupDoc = (id: string, email: string, members: Array<{ relationTo: string; value: string }>) => ({ id, email, aliases: [], members: members.map((member) => ({ member })) })
+  const groupDoc = (id: string, email: string, members: Array<{ relationTo: string; value: string }>, tenant: string | null = 't1') => ({ id, email, aliases: [], tenant, members: members.map((member) => ({ member })) })
   const requestInGroups = (docs: Array<ReturnType<typeof groupDoc>>) =>
     ({
       user: { id: 'u1' },
@@ -111,6 +111,18 @@ describe('abilityOf — roles held through <role>@<app> groups stay inside the a
     expect(ability.permits('update', 'orders')).toBe(true)
     expect(ability.permits('delete', 'parties')).toBe(true)
     expect(ability.permits('read', 'employees')).toBe(false)
+    // and only the documents of the group's own tenant
+    expect(ability.accessibleBy('update', 'orders')).toEqual({ tenant: { equals: 't1' } })
+  })
+  it('the same role through the groups of two tenants reaches both, and no other', async () => {
+    const ability = await abilityOf(
+      requestInGroups([groupDoc('g1', 'manager@sales.erpax.com', [{ relationTo: 'users', value: 'u1' }], 't1'), groupDoc('g2', 'manager@sales.erpax.com', [{ relationTo: 'users', value: 'u1' }], 't2')]),
+    )
+    expect(ability.accessibleBy('read', 'orders')).toEqual({ or: [{ tenant: { equals: 't1' } }, { tenant: { equals: 't2' } }] })
+  })
+  it('a role group that belongs to no tenant grants nothing', async () => {
+    const ability = await abilityOf(requestInGroups([groupDoc('g3', 'manager@sales.erpax.com', [{ relationTo: 'users', value: 'u1' }], null)]))
+    expect(ability.permits('read', 'orders')).toBe(false)
   })
   it('a group that is only a team (no role address) grants nothing', async () => {
     const ability = await abilityOf(requestInGroups([groupDoc('g2', 'team@acme.com', [{ relationTo: 'users', value: 'u1' }])]))

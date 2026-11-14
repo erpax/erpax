@@ -39,7 +39,7 @@ const idOf = (value: unknown): string | undefined =>
 /**
  * The groups the user is in, directly or through nesting, as the resolver reads them. One query per
  * level of nesting (bounded by `MAX_GROUP_DEPTH`): the groups naming the user, then those naming those.
- * A group's role comes from its address (`<role>@<app>`), and applies inside that app only.
+ * A group's role comes from its address (`<role>@<app>`), and applies inside that app and that group's tenant only.
  */
 const groupsAround = (req: PayloadRequest, userId: string): Promise<GroupShape[]> =>
   remembered(req, 'groupsAround', async () => {
@@ -56,6 +56,7 @@ const groupsAround = (req: PayloadRequest, userId: string): Promise<GroupShape[]
           userIds: members.filter((m) => m.relationTo === 'users' && m.id).map((m) => m.id!),
           groupIds: members.filter((m) => m.relationTo === 'groups' && m.id).map((m) => m.id!),
           addresses: [...(email ? [email] : []), ...(aliases ?? [])],
+          tenant: idOf((doc as { tenant?: unknown }).tenant),
         })
       }
       frontier = fresh.map((doc) => ({ relationTo: 'groups', value: String(doc.id) }))
@@ -88,9 +89,10 @@ export const abilityOf: AbilityOf = (req) =>
       const ability = abilityForRoles({ roles: direct, employeeId })
       if (grants.length > 0) {
         const owned = appSlugs(req.payload.config.collections, APPS)
-        for (const app of new Set(grants.map((grant) => grant.app))) {
-          const held = grants.filter((grant) => grant.app === app).map((grant) => grant.role)
-          ability.rules.push(...restrictSubjects(abilityForRoles({ roles: held, employeeId }), owned.get(app) ?? []).rules)
+        for (const scope of new Set(grants.map((grant) => `${grant.app}\u0000${grant.tenant}`))) {
+          const [app, tenant] = scope.split("\u0000") as [string, string]
+          const held = grants.filter((grant) => grant.app === app && grant.tenant === tenant).map((grant) => grant.role)
+          ability.rules.push(...restrictSubjects(abilityForRoles({ roles: held, employeeId }), owned.get(app) ?? [], { tenant }).rules)
         }
       }
       return ability

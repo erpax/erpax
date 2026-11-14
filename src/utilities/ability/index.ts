@@ -266,15 +266,16 @@ export const defineAbility = (define: (can: Ability['can'], cannot: Ability['can
 /**
  * The same ability, held only over these subjects: `all` becomes the list, any other rule keeps only
  * the subjects in it, and a rule left with none is dropped. This is how a role held in one app
- * (`manager@sales`) stays inside that app's collections.
+ * (`manager@sales`) stays inside that app's collections. With `conditions`, every rule is also narrowed to the
+ * documents matching them — a role held through a tenant's group stays inside that tenant (`{ tenant: id }`).
  */
-export const restrictSubjects = (ability: Ability, allowed: readonly Subject[]): Ability => {
+export const restrictSubjects = (ability: Ability, allowed: readonly Subject[], conditions?: Conditions): Ability => {
   const inside = new Set(allowed)
   const restricted = new Ability()
   for (const rule of ability.rules) {
     const subjects = rule.subjects.flatMap((subject) => (subject === 'all' ? [...inside] : inside.has(subject) ? [subject] : []))
     if (subjects.length === 0) continue
-    restricted.rules.push({ ...rule, subjects })
+    restricted.rules.push({ ...rule, subjects, ...(conditions ? { conditions: { ...(rule.conditions ?? {}), ...conditions } } : {}) })
   }
   return restricted
 }

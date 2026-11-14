@@ -4,7 +4,7 @@ import { APPS } from '@/packages'
 import { parseRoleAddress, roleAddress } from '@/packages/engine'
 import { MAX_GROUP_DEPTH, grantsFromGroups, groupsOfUser, type GroupShape } from '@/utilities/roles/groups'
 
-const group = (id: string, userIds: string[], groupIds: string[], addresses: string[]): GroupShape => ({ id, userIds, groupIds, addresses })
+const group = (id: string, userIds: string[], groupIds: string[], addresses: string[], tenant: string | null = 't1'): GroupShape => ({ id, userIds, groupIds, addresses, ...(tenant === null ? {} : { tenant }) })
 
 describe('role addresses', () => {
   it('<role>@<app> and <role>@<app>.<domain> name the same role in the same app', () => {
@@ -28,20 +28,28 @@ describe('roles from groups', () => {
 
   it('a user holds the role of every group they are in, in that group\'s app', () => {
     expect(grantsFromGroups('ann', [managers, staff, stockAdmins], APPS)).toEqual(
-      expect.arrayContaining([{ role: 'manager', app: 'sales' }, { role: 'user', app: 'sales' }, { role: 'admin', app: 'stock' }]),
+      expect.arrayContaining([{ role: 'manager', app: 'sales', tenant: 't1' }, { role: 'user', app: 'sales', tenant: 't1' }, { role: 'admin', app: 'stock', tenant: 't1' }]),
     )
   })
   it('a member of an inner group does not get the roles of the groups inside it', () => {
-    expect(grantsFromGroups('bob', [managers, staff], APPS)).toEqual([{ role: 'user', app: 'sales' }])
+    expect(grantsFromGroups('bob', [managers, staff], APPS)).toEqual([{ role: 'user', app: 'sales', tenant: 't1' }])
   })
   it('a group with no role address (an ordinary team) grants nothing', () => {
     expect(grantsFromGroups('ann', [group('team', ['ann'], [], ['team@acme.com'])], APPS)).toEqual([])
   })
   it('an alias that is a role address grants that role too', () => {
-    expect(grantsFromGroups('ann', [group('g', ['ann'], [], ['team@acme.com', 'manager@people'])], APPS)).toEqual([{ role: 'manager', app: 'people' }])
+    expect(grantsFromGroups('ann', [group('g', ['ann'], [], ['team@acme.com', 'manager@people'])], APPS)).toEqual([{ role: 'manager', app: 'people', tenant: 't1' }])
   })
   it('the same grant through two groups is one grant', () => {
-    expect(grantsFromGroups('ann', [managers, group('copy', ['ann'], [], ['manager@sales'])], APPS)).toEqual([{ role: 'manager', app: 'sales' }])
+    expect(grantsFromGroups('ann', [managers, group('copy', ['ann'], [], ['manager@sales'])], APPS)).toEqual([{ role: 'manager', app: 'sales', tenant: 't1' }])
+  })
+  it('the same role through the groups of two tenants is held in each tenant, separately', () => {
+    const a = group('a', ['ann'], [], ['manager@sales'], 't1')
+    const b = group('b', ['ann'], [], ['manager@sales'], 't2')
+    expect(grantsFromGroups('ann', [a, b], APPS)).toEqual([{ role: 'manager', app: 'sales', tenant: 't1' }, { role: 'manager', app: 'sales', tenant: 't2' }])
+  })
+  it('a group that belongs to no tenant grants nothing', () => {
+    expect(grantsFromGroups('ann', [group('g', ['ann'], [], ['manager@sales'], null)], APPS)).toEqual([])
   })
   it('a group that contains itself ends the walk', () => {
     const a = group('a', ['ann'], ['b'], ['user@sales'])

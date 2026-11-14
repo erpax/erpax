@@ -152,4 +152,11 @@ describe('restrictSubjects — a role held in one app stays in it', () => {
     expect(sales.permits('update', 'lots')).toBe(false)
     expect(sales.permits('read', 'employees')).toBe(false)
   })
+  it('with conditions, every rule is narrowed to them (a role held in one tenant stays in it)', async () => {
+    const { defineAbility, restrictSubjects } = await import('@/utilities/ability')
+    const scoped = restrictSubjects(defineAbility((can) => can('manage', 'all')), ['orders'], { tenant: 't1' })
+    expect(scoped.accessibleBy('update', 'orders')).toEqual({ tenant: { equals: 't1' } })
+    expect(scoped.permits('update', 'orders', { tenant: 't1' })).toBe(true)
+    expect(scoped.permits('update', 'orders', { tenant: 't2' })).toBe(false)
+  })
 })

@@ -28,12 +28,15 @@ export interface GroupShape {
   readonly groupIds: readonly string[]
   /** The group's address and its aliases. */
   readonly addresses: readonly string[]
+  /** The tenant the group belongs to; a group with none grants nothing. */
+  readonly tenant?: string
 }
 
-/** A role held in one app. */
+/** A role held in one app, in one tenant — the tenant of the group it comes through. */
 export interface Grant {
   readonly role: string
   readonly app: string
+  readonly tenant: string
 }
 
 /** Nesting deeper than this is ignored: a directory this deep is a mistake, and the walk must end. */
@@ -51,11 +54,16 @@ export const groupsOfUser = (userId: string, groups: readonly GroupShape[], dept
   return [...reached.values()]
 }
 
-/** The roles a user holds through groups, each with the app it is held in. A group whose address names no app grants nothing. */
+/**
+ * The roles a user holds through groups, each with the app and the tenant it is held in (the group's own).
+ * A group whose address names no app, or that belongs to no tenant, grants nothing.
+ */
 export const grantsFromGroups = (userId: string, groups: readonly GroupShape[], apps: readonly App[], depth?: number): Grant[] => {
   const seen = new Set<string>()
   return groupsOfUser(userId, groups, depth)
-    .flatMap((group) => group.addresses.flatMap((address) => parseRoleAddress(address, apps) ?? []))
-    .map(({ role, app }): Grant => ({ role, app: app.slug }))
-    .filter((grant) => (seen.has(`${grant.role}@${grant.app}`) ? false : (seen.add(`${grant.role}@${grant.app}`), true)))
+    .flatMap((group) => (group.tenant === undefined ? [] : group.addresses.flatMap((address) => parseRoleAddress(address, apps) ?? []).map(({ role, app }): Grant => ({ role, app: app.slug, tenant: group.tenant! }))))
+    .filter((grant) => {
+      const key = `${grant.role}@${grant.app}#${grant.tenant}`
+      return seen.has(key) ? false : (seen.add(key), true)
+    })
 }
