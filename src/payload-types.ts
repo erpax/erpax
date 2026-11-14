@@ -2854,9 +2854,9 @@ export interface Order {
   currency?: 'EUR' | null;
   accessToken?: string | null;
   /**
-   * Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents.
+   * Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents. Empty on a web checkout.
    */
-  orderNumber: string;
+  orderNumber?: string | null;
   /**
    * The trading partner the order is with and invoiced to. (`customer` is the user who checked out.)
    */

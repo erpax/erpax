@@ -89,6 +89,37 @@ export interface Mapper {
  */
 export const mappers: readonly Mapper[] = [
   {
+    collection: 'parties',
+    sql: 'select t.* from accounts t where true',
+    map: (r) => {
+      const name = text(r.name) ?? text(r.company) ?? text(r.code) ?? `Account ${String(r.id)}`
+      return compact({
+        id: oid('accounts', r.id),
+        // etrima account codes repeat (300 distinct over 588 rows) and erpax codes are unique, so the row id is part of it.
+        code: `${text(r.code) ?? 'A'}-${String(r.id)}`,
+        name,
+        // etrima never filled `accounts.type`; an account is known here as the buyer on an order.
+        roles: ['customer'],
+        country: text(r.country_code),
+        identity: compact({ legalName: text(r.company) ?? name, type: 'company', status: 'active' }),
+        tax: compact({ vatNumber: text(r.vat_registration) ?? text(r.tax_number) }),
+        commercial: compact({ defaultCurrency: text(r.currency_code) ?? 'EUR' }),
+      })
+    },
+  },
+  {
+    collection: 'work-centers',
+    sql: 'select t.* from teams t where true',
+    map: (r) =>
+      compact({
+        id: oid('teams', r.id),
+        reference: `TEAM-${text(r.code) ?? String(r.id)}`,
+        name: text(r.name) ?? text(r.code) ?? `Team ${String(r.id)}`,
+        type: 'crew',
+        notes: text(r.description),
+      }),
+  },
+  {
     collection: 'work-phases',
     sql: `select t.*, nullif(split_part(t.ancestry, '/', -1), '') as parent_id from work_phases t where true`,
     map: (r) =>
@@ -136,12 +167,29 @@ export const mappers: readonly Mapper[] = [
     },
   },
   {
+    collection: 'orders',
+    sql: 'select t.* from orders t where true',
+    map: (r) =>
+      compact({
+        id: oid('orders', r.id),
+        orderNumber: text(r.number) ?? `O-${String(r.id)}`,
+        party: ref('accounts', r.buyer_id),
+        orderDate: iso(r.date),
+        requestedDeliveryDate: iso(r.first_delivery_date),
+        promisedDeliveryDate: iso(r.last_delivery_date),
+        totalAmount: num(r.total_price),
+        invoicedAmount: num(r.amount_invoiced),
+        fulfilledQuantity: num(r.units_delivered),
+      }),
+  },
+  {
     collection: 'lots',
     sql: 'select t.* from lots t where true',
     map: (r) =>
       compact({
         id: oid('lots', r.id),
         number: text(r.number),
+        order: ref('orders', r.order_id),
         product: ref('products', r.product_id),
         kind: text(r.kind),
         confirmedAt: iso(r.confirmed_at),
@@ -186,6 +234,7 @@ export const mappers: readonly Mapper[] = [
         lot: ref('lots', r.lot_id),
         workPhase: ref('work_phases', r.work_phase_id),
         sort: num(r.sort),
+        team: ref('teams', r.team_id),
         code: text(r.code),
         name: text(r.name),
         unitsOrdered: num(r.units_ordered),
@@ -255,6 +304,7 @@ export const mappers: readonly Mapper[] = [
         reference: `WS-${String(r.id)}`,
         actor: ref('employees', r.employee_id),
         date: iso(r.date),
+        team: ref('teams', r.team_id),
         status: shiftStatus(r),
         startedAt: iso(r.started_at),
         finishedAt: iso(r.finished_at),
@@ -275,7 +325,10 @@ export const mappers: readonly Mapper[] = [
   },
   {
     collection: 'work-orders',
-    sql: `select t.*, p.sort as phase_sort from work_orders t left join lot_work_phases p on p.id = t.lot_work_phase_id where true`,
+    // `worker_id` names an employee CONTRACT in etrima (all 2,050,516 resolve to one); the worker is that contract's employee.
+    sql: `select t.*, p.sort as phase_sort, c.employee_id as worker_employee_id from work_orders t
+            left join lot_work_phases p on p.id = t.lot_work_phase_id
+            left join employee_contracts c on c.id = t.worker_id where true`,
     map: (r) =>
       compact({
         id: oid('work_orders', r.id),
@@ -293,6 +346,7 @@ export const mappers: readonly Mapper[] = [
         lotWorkPhase: ref('lot_work_phases', r.lot_work_phase_id),
         lotWorkPhaseSort: num(r.phase_sort),
         workShift: ref('work_shifts', r.work_shift_id),
+        worker: ref('employees', r.worker_employee_id),
         note: text(r.note),
       }),
   },

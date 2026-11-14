@@ -34,6 +34,14 @@ describe('orders — the sales-order register folded into the e-commerce plugin 
     for (const name of ['orderNumber', 'lines', 'shipTo', 'billTo', 'totalAmount', 'accessToken', 'approvedBy']) expect(fields.has(name), name).toBe(true)
   })
 
+  it('the order number is not required — the plugin creates a web order without one', () => {
+    const number = named(orderFields()).get('orderNumber') as { required?: boolean; unique?: boolean }
+    expect(number.required).toBe(false)
+    expect(number.unique).toBe(true)
+    // nothing the register adds may be required: every one of them is absent at checkout
+    for (const f of orderFields()) expect('required' in f && f.required === true, 'name' in f ? f.name : '').toBe(false)
+  })
+
   it('status is ONE lifecycle — the plugin values first, then every register stage it lacks', () => {
     const options = orderStatusOptions(plugin().fields.flatMap((f) => ('name' in f && f.name === 'status' && f.type === 'select' ? f.options : [])))
     const values = options.map((o) => (typeof o === 'string' ? o : o.value))

@@ -107,9 +107,12 @@ export const orderStatusOptions = (pluginOptions: readonly Option[]): Option[] =
 
 /** The sales-order register's fields, as they sit on the plugin's order. */
 export const orderFields = (): Field[] => [
+  // Not required: the plugin creates an order at checkout with no number. (`referenceField` is
+  // required by default, which would have refused every web order.)
   referenceField({
     name: 'orderNumber',
-    description: 'Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents.',
+    required: false,
+    description: 'Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents. Empty on a web checkout.',
   }),
   { name: 'party', type: 'relationship', relationTo: 'parties', index: true,
     admin: { description: 'The trading partner the order is with and invoiced to. (`customer` is the user who checked out.)' } },

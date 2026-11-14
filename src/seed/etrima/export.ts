@@ -26,11 +26,17 @@ import { Packs } from '@/collections/packs'
 import { Workorders } from '@/collections/work-orders'
 import WorkPhases from '@/collections/work-phases'
 import { WorkShifts } from '@/collections/work-shifts'
+import Parties from '@/collections/parties'
+import WorkCenters from '@/collections/work-centers'
 import { itemFields } from '@/components/ecommerce/catalogue'
+import { orderFields } from '@/components/ecommerce/orders'
 import { conform, mappers, type Doc, type Row } from '@/seed/etrima'
 
-/** The collections the documents are measured against. `products` is the plugin's, so only the fields erpax adds plus its title are known here. */
+/** The collections the documents are measured against. `products` and `orders` are the plugin's, so only the fields erpax adds (plus the product title) are known here. */
 const configs: Record<string, Pick<CollectionConfig, 'fields'>> = {
+  parties: Parties,
+  'work-centers': WorkCenters,
+  orders: { fields: orderFields() },
   'work-phases': WorkPhases,
   products: { fields: [{ name: 'title', type: 'text', required: true }, ...itemFields()] },
   employees: Employees,
