@@ -62,6 +62,8 @@ export type ContentUuid<T> = string & { readonly __contentUuidOf: T }
 /** Fields excluded from the content hash (storage-managed, not content). */
 export const NON_CONTENT_FIELDS: ReadonlySet<string> = new Set([
   'uuid', 'id', 'createdAt', 'updatedAt',
+  // the virtual handle is computed from the id; a client echoing it back must not change the content address
+  'handle',
   // Payload's revision/version metadata if used:
   '_status', '_version', 'autosave',
 ])

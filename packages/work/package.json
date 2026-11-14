@@ -1,6 +1,6 @@
 {
   "name": "@erpax/work",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Work — projects, contracts, workflows. An erpax app, delivered as one Payload plugin. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
