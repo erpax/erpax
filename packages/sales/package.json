@@ -49,6 +49,6 @@
   "dependencies": {
     "typescript": "5.9.3",
     "uuid": "latest",
-    "zod": "3.25.76"
+    "zod": "4.6.6"
   }
 }
