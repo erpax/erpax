@@ -21,6 +21,7 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
 
 | Command | Does |
 | --- | --- |
+| `pnpm erpax login` · `whoami` · `logout` | Sign in to an erpax through its own OAuth (`--local`, or an origin; production by default) |
 | `pnpm dev` | Next dev server (`PAYLOAD_DEV_PUSH=false pnpm dev` to skip schema push) |
 | `pnpm generate:types` · `pnpm generate:importmap` | Payload's generated files |
 | `pnpm lint` · `pnpm typecheck` · `pnpm test` · `pnpm test:e2e` | Checks (CI runs the same) |
@@ -45,16 +46,19 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
 
 ## Agents work through Payload
 
-- An agent is a user. It reaches erpax through the MCP gateway with that user's API key, and
+- An agent is a user. It reaches erpax through the MCP gateway signed in as that user, and
   Payload's access control decides what it may read and write (roles held through `<role>@<app>`
   groups, per tenant). The gateway (`@payloadcms/plugin-mcp`, `src/payload.config.ts`) serves every
   collection through its generic tools (`getConfigInfo`, `getCollectionSchema`, `findDocuments`,
   `createDocuments`, `updateDocument`, `deleteDocuments`); which ones an agent can use is the user's
-  roles, never a list in code or an environment flag. Enable the API key on the agent's user in the
-  admin (`Authorization: users API-Key <key>`) and put it in `.env` as
-  `ERPAX_API_KEY` (gitignored); the `erpax` connector reads it at connect time (`.mcp.json`
-  `headersHelper` → `scripts/mcp-headers.sh`). `ERPAX_MCP_URL=http://localhost:3000/api/mcp` targets a
-  local dev server.
+  roles, never a list in code or an environment flag. Sign in with `pnpm erpax login`, as `wrangler login`
+  does: the browser opens that erpax's own sign-in and Allow page (Payload is the OAuth server,
+  `@payloadcms/plugin-mcp`'s built-in), and the token is kept per origin in `~/.config/erpax/credentials.json`.
+  Development and production are the same command: production by default, `--local` for
+  `http://localhost:3000`, or any origin; `ERPAX_MCP_URL` sets the default. The `erpax` connector takes its
+  header from `scripts/erpax.mjs headers` at connect time: the sign-in for its origin, else a machine
+  agent's API key (`ERPAX_API_KEY` in the environment or the gitignored `.env`; enable it on the user in
+  the admin). `pnpm erpax whoami` shows who the gateway serves you as.
 - Agent memory is documents in `memories`: `kind` is `feedback`, `fact` or `reference`,
   `ownerType`/`ownerId` name the agent or tenant, and reusing a `key` supersedes the earlier
   memory. Agents talk in the per-tenant `chat` room; `messages` is mail between users. Guidance for
