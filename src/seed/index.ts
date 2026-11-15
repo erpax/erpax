@@ -11,7 +11,7 @@
  * @see docs/STANDARDS.md §3
  */
 
-import type { Payload, PayloadRequest, File } from 'payload'
+import type { CollectionSlug, Payload, PayloadRequest, File } from 'payload'
 
 import { codedFromRegistry, ERR } from '@/utilities/error'
 import { contactForm as contactFormData } from './contact/form'
@@ -45,6 +45,15 @@ export const seed = async ({
 }): Promise<void> => {
   payload.logger.info('Seeding database...')
 
+  // erpax is multi-tenant: the demo content belongs to one tenant, found or created here, and every
+  // tenant-scoped document the seed writes is placed in it. Clearing touches that tenant only.
+  const tenant = await demoTenant(payload, req)
+  const scoped = (collection: CollectionSlug): boolean =>
+    payload.collections[collection].config.fields.some((field) => 'name' in field && field.name === 'tenant')
+  /** payload.create, with the demo tenant on every tenant-scoped document. */
+  const create = ((args: { collection: CollectionSlug; data?: Record<string, unknown> }) =>
+    payload.create({ ...args, data: scoped(args.collection) ? { ...args.data, tenant: tenant.id } : args.data } as never)) as typeof payload.create
+
   // we need to clear the media directory before seeding
   // as well as the collections and globals
   // this is because while `yarn seed` drops the database
@@ -68,28 +77,19 @@ export const seed = async ({
     ),
   )
 
+  // the demo tenant's documents only: another tenant's content, and the shared search index, are untouched
   await Promise.all(
-    collections.map((collection) => payload.db.deleteMany({ collection, req, where: {} })),
+    collections.filter(scoped).map((collection) => payload.db.deleteMany({ collection, req, where: { tenant: { equals: tenant.id } } })),
   )
 
   await Promise.all(
     collections
-      .filter((collection) => Boolean(payload.collections[collection].config.versions))
-      .map((collection) => payload.db.deleteVersions({ collection, req, where: {} })),
+      .filter((collection) => scoped(collection) && Boolean(payload.collections[collection].config.versions))
+      .map((collection) => payload.db.deleteVersions({ collection, req, where: { 'version.tenant': { equals: tenant.id } } })),
   )
 
-  payload.logger.info(`— Seeding demo author and user...`)
-
-  await payload.delete({
-    collection: 'users',
-    depth: 0,
-    where: {
-      email: {
-        equals: 'demo-author@example.com',
-      },
-    },
-    overrideAccess: true,
-  })
+  // the posts are credited to the super-admin running the seed: no demo account, no known password
+  const author = req.user as never
 
   payload.logger.info(`— Seeding media...`)
 
@@ -108,42 +108,33 @@ export const seed = async ({
     ),
   ])
 
-  const [demoAuthor, image1Doc, image2Doc, image3Doc, imageHomeDoc] = await Promise.all([
-    payload.create({
-      collection: 'users',
-      data: {
-        name: 'Demo Author',
-        email: 'demo-author@example.com',
-        password: 'password',
-      },
-      overrideAccess: true,
-    }),
-    payload.create({
+  const [image1Doc, image2Doc, image3Doc, imageHomeDoc] = await Promise.all([
+    create({
       collection: 'media',
       data: image1,
       file: image1Buffer,
       overrideAccess: true,
     }),
-    payload.create({
+    create({
       collection: 'media',
       data: image2,
       file: image2Buffer,
       overrideAccess: true,
     }),
-    payload.create({
+    create({
       collection: 'media',
       data: image2,
       file: image3Buffer,
       overrideAccess: true,
     }),
-    payload.create({
+    create({
       collection: 'media',
       data: imageHero1,
       file: hero1Buffer,
       overrideAccess: true,
     }),
-    categories.map((category) =>
-      payload.create({
+    ...categories.map((category) =>
+      create({
         collection: 'categories',
         data: {
           title: category,
@@ -158,33 +149,33 @@ export const seed = async ({
 
   // Do not create posts with `Promise.all` because we want the posts to be created in order
   // This way we can sort them by `createdAt` or `publishedAt` and they will be in the expected order
-  const post1Doc = await payload.create({
+  const post1Doc = await create({
     collection: 'posts',
     depth: 0,
     context: {
       disableRevalidate: true,
     },
-    data: post1({ heroImage: image1Doc, blockImage: image2Doc, author: demoAuthor }),
+    data: post1({ heroImage: image1Doc, blockImage: image2Doc, author }),
     overrideAccess: true,
   })
 
-  const post2Doc = await payload.create({
+  const post2Doc = await create({
     collection: 'posts',
     depth: 0,
     context: {
       disableRevalidate: true,
     },
-    data: post2({ heroImage: image2Doc, blockImage: image3Doc, author: demoAuthor }),
+    data: post2({ heroImage: image2Doc, blockImage: image3Doc, author }),
     overrideAccess: true,
   })
 
-  const post3Doc = await payload.create({
+  const post3Doc = await create({
     collection: 'posts',
     depth: 0,
     context: {
       disableRevalidate: true,
     },
-    data: post3({ heroImage: image3Doc, blockImage: image1Doc, author: demoAuthor }),
+    data: post3({ heroImage: image3Doc, blockImage: image1Doc, author }),
     overrideAccess: true,
   })
 
@@ -216,7 +207,7 @@ export const seed = async ({
 
   payload.logger.info(`— Seeding contact form...`)
 
-  const contactForm = await payload.create({
+  const contactForm = await create({
     collection: 'forms',
     depth: 0,
     data: contactFormData,
@@ -226,13 +217,13 @@ export const seed = async ({
   payload.logger.info(`— Seeding pages...`)
 
   const [_, contactPage] = await Promise.all([
-    payload.create({
+    create({
       collection: 'pages',
       depth: 0,
       data: home({ heroImage: imageHomeDoc, metaImage: image2Doc }),
       overrideAccess: true,
     }),
-    payload.create({
+    create({
       collection: 'pages',
       depth: 0,
       data: contactPageData({ contactForm: contactForm }),
@@ -302,6 +293,13 @@ export const seed = async ({
   ])
 
   payload.logger.info('Seeded database successfully!')
+}
+
+/** The demo tenant: found by its slug, or created. */
+async function demoTenant(payload: Payload, req: PayloadRequest): Promise<{ id: string | number }> {
+  const found = await payload.find({ collection: 'tenants', where: { slug: { equals: 'demo' } }, limit: 1, depth: 0, overrideAccess: true, req })
+  if (found.docs[0]) return found.docs[0] as { id: string | number }
+  return (await payload.create({ collection: 'tenants', data: { name: 'Demo', slug: 'demo' } as never, overrideAccess: true, req })) as { id: string | number }
 }
 
 async function fetchFileByURL(url: string): Promise<File> {

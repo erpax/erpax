@@ -401,7 +401,6 @@ export interface Config {
     'internal-controls': InternalControl;
     'internal-policies': InternalPolicy;
     'management-assessment-icfr': ManagementAssessmentIcfr;
-    'management-certifications': ManagementCertification;
     'regulatory-reports': RegulatoryReport;
     'related-party-transactions': RelatedPartyTransaction;
     'risk-register': RiskRegister;
@@ -630,7 +629,6 @@ export interface Config {
     'internal-controls': InternalControlsSelect<false> | InternalControlsSelect<true>;
     'internal-policies': InternalPoliciesSelect<false> | InternalPoliciesSelect<true>;
     'management-assessment-icfr': ManagementAssessmentIcfrSelect<false> | ManagementAssessmentIcfrSelect<true>;
-    'management-certifications': ManagementCertificationsSelect<false> | ManagementCertificationsSelect<true>;
     'regulatory-reports': RegulatoryReportsSelect<false> | RegulatoryReportsSelect<true>;
     'related-party-transactions': RelatedPartyTransactionsSelect<false> | RelatedPartyTransactionsSelect<true>;
     'risk-register': RiskRegisterSelect<false> | RiskRegisterSelect<true>;
@@ -1635,7 +1633,7 @@ export interface Page {
   /**
    * A governed document is never public; its type names who reads and writes it. Empty for a website page.
    */
-  documentType?: 'reporting-standard' | null;
+  documentType?: ('reporting-standard' | 'management-certification') | null;
   /**
    * What every governed document has. The title is its name and the content its text.
    */
@@ -1652,6 +1650,10 @@ export interface Page {
      * Reference material and evidence.
      */
     attachments?: (string | Media)[] | null;
+    /**
+     * What the standard of this type needs beyond the fields above: one block, matching the type.
+     */
+    details?: ManagementCertificationBlock[] | null;
     /**
      * Links FROM this document to another — a standard mapped to another, a template to its source — with the element rules.
      */
@@ -2775,6 +2777,441 @@ export interface ComplianceFramework {
   officialResourceUrl?: string | null;
   effectiveDate?: string | null;
   isActive?: boolean | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ManagementCertificationBlock".
+ */
+export interface ManagementCertificationBlock {
+  certificationType: 'sox-302' | 'sox-906' | 'section-13-15d' | 'internal-controls' | 'financial-statement' | 'other';
+  certifyingOfficer: string;
+  entity: string | LegalEntity;
+  assertions?:
+    | {
+        assertion: string;
+        certificationLevel: 'fully-certified' | 'with-reservations' | 'qualified' | 'adverse';
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * The findings behind a qualified or adverse assertion.
+   */
+  relatedFindings?: (string | AuditFinding)[] | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'management-certification';
+}
+/**
+ * Per IFRS-10 §B86 reporting entity (subsidiary / associate / joint-venture / head). Distinct from `tenants` (DB partition). Drives consolidation-eliminations + intercompany pairing.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "legal-entities".
+ */
+export interface LegalEntity {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Full legal name as registered in the home jurisdiction (IAS-1 §138(a)).
+   */
+  legalName: string;
+  /**
+   * Trading / brand name when different from the legal name.
+   */
+  tradeName?: string | null;
+  /**
+   * Statutory legal form per the home jurisdiction commerce code.
+   */
+  legalForm?:
+    | (
+        | 'sole_proprietor'
+        | 'llc'
+        | 'jsc'
+        | 'partnership'
+        | 'limited_partnership'
+        | 'cooperative'
+        | 'branch'
+        | 'rep_office'
+        | 'non_profit'
+        | 'other'
+      )
+    | null;
+  /**
+   * ISO 3166-1 alpha-2 — country of registration (BG / DE / RO / etc.).
+   */
+  countryCode: string;
+  /**
+   * Statutory company / commercial-register number (BG EIK, DE HRB, RO J-number, etc.).
+   */
+  registrationNumber: string;
+  /**
+   * EU VAT identifier (BG123456789 / DE123456789 / etc.) — VIES-validatable.
+   */
+  vatNumber?: string | null;
+  /**
+   * ISO 17442-1:2020 Legal Entity Identifier (20-char) — required for derivatives + securities reporting.
+   */
+  lei?: string | null;
+  /**
+   * IFRS-10 §B86 / IAS-28 §16 / IFRS-11 §20 consolidation method for this entity in the group accounts.
+   */
+  consolidationMethod?: ('full' | 'equity' | 'proportionate' | 'cost' | 'not_consolidated') | null;
+  consolidationStatus?:
+    ('head' | 'subsidiary' | 'associate' | 'joint_venture' | 'joint_operation' | 'investment') | null;
+  /**
+   * Mark the reporting parent — exactly one head per consolidation group; used by `consolidation-eliminations` to anchor eliminations.
+   */
+  isHeadEntity?: boolean | null;
+  /**
+   * Direct parent in the group structure (null for the head entity).
+   */
+  parent?: (string | null) | LegalEntity;
+  /**
+   * Direct ownership of this entity by `parent` (0-100%). For NCI calculation per IFRS-10 §22.
+   */
+  ownershipPercent?: number | null;
+  /**
+   * Direct voting rights — may differ from ownership when dual-class shares exist (IFRS-10 §B36).
+   */
+  votingPercent?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  functionalCurrency?: string | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  presentationCurrency?: string | null;
+  /**
+   * Standalone (statutory) reporting framework. Group consolidation may translate up to a different parent framework.
+   */
+  reportingFramework?: ('ifrs' | 'ifrs_sme' | 'us_gaap' | 'local_gaap') | null;
+  /**
+   * IFRS 1 first-time-adoption transition date.
+   */
+  ifrsAdoptionDate?: string | null;
+  /**
+   * MM-DD format (e.g. `12-31`, `06-30`). Drives the entity's fiscal-period calendar.
+   */
+  statutoryYearEnd?: string | null;
+  /**
+   * Statutory registered office (IAS-1 §138(a)).
+   */
+  registeredAddress?: {
+    street?: string | null;
+    city?: string | null;
+    postalCode?: string | null;
+    region?: string | null;
+    countryCode?: string | null;
+  };
+  /**
+   * US Standard Industrial Classification code (US SIC).
+   */
+  sicCode?: string | null;
+  /**
+   * NACE Rev.2 economic activity code (e.g. `62.01`). Used by EU CSRD ESRS 2 §80(b) sector classification.
+   */
+  naceCode?: string | null;
+  /**
+   * Date entity was incorporated / acquired into the group.
+   */
+  effectiveFrom: string;
+  /**
+   * Date entity was deconsolidated / sold / dissolved (null = active).
+   */
+  effectiveTo?: string | null;
+  status?: ('active' | 'dormant' | 'in_liquidation' | 'dissolved' | 'acquired') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | LegalEntity;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-findings".
+ */
+export interface AuditFinding {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  title: string;
+  description: string;
+  findingType:
+    | 'control-deficiency'
+    | 'significant-deficiency'
+    | 'material-weakness'
+    | 'misstatement'
+    | 'exception'
+    | 'observation';
+  severity: 'critical' | 'high' | 'medium' | 'low';
+  relatedControl?: (string | null) | InternalControl;
+  relatedControlTest?: (string | null) | ControlTest;
+  frequencyOfOccurrence?: ('isolated' | 'sporadic' | 'recurring' | 'pervasive') | null;
+  potentialImpact?: ('none' | 'minimal' | 'moderate' | 'significant' | 'material' | 'unknown') | null;
+  identifiedDate: string;
+  identifiedBy: string | User;
+  rootCause?: string | null;
+  riskCategory?: ('financial-reporting' | 'compliance' | 'operational' | 'security') | null;
+  status: 'open' | 'in-remediation' | 'remediated-pending' | 'remediated-confirmed' | 'closed';
+  /**
+   * COSO-2013 deficiency remediation: the plan, its steps and its completion.
+   */
+  remediation?: {
+    /**
+     * A plan exists once it has a title.
+     */
+    title?: string | null;
+    description?: string | null;
+    remediationType?:
+      | (
+          | 'design-change'
+          | 'process-change'
+          | 'system-implementation'
+          | 'training'
+          | 'documentation'
+          | 'resource-addition'
+          | 'policy-update'
+          | 'organizational-change'
+        )
+      | null;
+    priority?: ('critical' | 'high' | 'medium' | 'low') | null;
+    status?: ('planned' | 'in-progress' | 'completed' | 'delayed' | 'on-hold' | 'superseded') | null;
+    /**
+     * The internal policy a policy-update plan improves.
+     */
+    policy?: (string | null) | InternalPolicy;
+    /**
+     * The policy version that carries the fix: stamped at completion, never changed.
+     */
+    policyVersion?: string | null;
+    owner?: (string | null) | User;
+    targetDate?: string | null;
+    /**
+     * Set by the server when the plan is completed.
+     */
+    completionDate?: string | null;
+    actionSteps?:
+      | {
+          sequence: number;
+          description: string;
+          status?: ('not-started' | 'in-progress' | 'completed' | 'on-hold') | null;
+          owner?: string | null;
+          targetDate?: string | null;
+          completedDate?: string | null;
+          id?: string | null;
+        }[]
+      | null;
+    requiredResources?: string | null;
+    budget?: number | null;
+    riskOfDelay?: string | null;
+    approvedBy?: (string | null) | User;
+    approvalDate?: string | null;
+  };
+  managementResponse?: string | null;
+  managementResponseDate?: string | null;
+  priorYearReference?: string | null;
+  communicatedTo?:
+    | {
+        recipient: string;
+        communicationDate?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  isActive?: boolean | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "internal-controls".
+ */
+export interface InternalControl {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  title: string;
+  description: string;
+  controlType: 'preventive' | 'detective' | 'corrective' | 'compensating';
+  controlCategory:
+    | 'authorization'
+    | 'segregation'
+    | 'reconciliation'
+    | 'access-security'
+    | 'accuracy'
+    | 'exception'
+    | 'documentation'
+    | 'change-management';
+  cosoComponent?: ('environment' | 'risk-assessment' | 'control-activities' | 'information' | 'monitoring') | null;
+  frequency?: ('continuous' | 'daily' | 'weekly' | 'monthly' | 'quarterly' | 'annual' | 'as-needed') | null;
+  owner?: (string | null) | User;
+  riskMitigated?: string | null;
+  isManualControl?: boolean | null;
+  lastReviewDate?: string | null;
+  nextReviewDate?: string | null;
+  isActive?: boolean | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "control-tests".
+ */
+export interface ControlTest {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  title: string;
+  testDesign: string;
+  control: string | InternalControl;
+  samplingMethodology?: ('statistical-random' | 'stratified' | 'judgmental' | 'census' | 'heuristic') | null;
+  plannedSampleSize?: number | null;
+  actualSampleSize?: number | null;
+  toleranceLevel?: number | null;
+  assertion?: ('existence' | 'completeness' | 'accuracy' | 'authorization' | 'segregation' | 'cutoff') | null;
+  testStatus: 'planned' | 'in-progress' | 'completed' | 'suspended';
+  testedDate?: string | null;
+  result?: ('effective' | 'deviations' | 'not-operating' | 'unable-determine') | null;
+  deviationCount?: number | null;
+  deviationRate?: number | null;
+  deviationsSummary?: string | null;
+  conclusionOnEffectiveness?: string | null;
+  reviewDate?: string | null;
+  isActive?: boolean | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "internal-policies".
+ */
+export interface InternalPolicy {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  policyName: string;
+  policyNumber: string;
+  description?: LexicalRichText<LexicalNodes_AD327369> | null;
+  policyType:
+    | 'accounting'
+    | 'internal-control'
+    | 'compliance'
+    | 'financial-reporting'
+    | 'risk-management'
+    | 'data-protection'
+    | 'conflict-of-interest'
+    | 'code-of-conduct';
+  owner?: string | null;
+  effectiveDate: string;
+  lastReviewDate?: string | null;
+  nextReviewDate?: string | null;
+  status?: ('active' | 'pending' | 'superseded' | 'archived') | null;
+  policyDocument?: (string | null) | Media;
+  /**
+   * The current version of the policy text (e.g. 3.1). Earlier versions are in the document's version history.
+   */
+  versionNumber?: string | null;
+  /**
+   * Name of the current version (e.g. "2026 annual review").
+   */
+  versionName?: string | null;
+  /**
+   * When the current version was released.
+   */
+  releaseDate?: string | null;
+  /**
+   * What changed in the current version.
+   */
+  changes?: LexicalRichText<LexicalNodes_AD327369> | null;
+  applicableControls?: (string | InternalControl)[] | null;
+  /**
+   * Who acknowledged which version of this policy, and when.
+   */
+  acknowledgments?:
+    | {
+        employeeName: string;
+        employeeId?: string | null;
+        status?: ('acknowledged' | 'pending' | 'overdue' | 'expired') | null;
+        /**
+         * The version acknowledged: stamped from the policy, never changed.
+         */
+        policyVersion?: string | null;
+        /**
+         * Set by the server when the row is acknowledged.
+         */
+        acknowledgedAt?: string | null;
+        acknowledgedBy?: string | null;
+        signedDocument?: (string | null) | Media;
+        id?: string | null;
+      }[]
+    | null;
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -4842,149 +5279,6 @@ export interface GovernmentGrant {
   createdAt: string;
 }
 /**
- * Per IFRS-10 §B86 reporting entity (subsidiary / associate / joint-venture / head). Distinct from `tenants` (DB partition). Drives consolidation-eliminations + intercompany pairing.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "legal-entities".
- */
-export interface LegalEntity {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Full legal name as registered in the home jurisdiction (IAS-1 §138(a)).
-   */
-  legalName: string;
-  /**
-   * Trading / brand name when different from the legal name.
-   */
-  tradeName?: string | null;
-  /**
-   * Statutory legal form per the home jurisdiction commerce code.
-   */
-  legalForm?:
-    | (
-        | 'sole_proprietor'
-        | 'llc'
-        | 'jsc'
-        | 'partnership'
-        | 'limited_partnership'
-        | 'cooperative'
-        | 'branch'
-        | 'rep_office'
-        | 'non_profit'
-        | 'other'
-      )
-    | null;
-  /**
-   * ISO 3166-1 alpha-2 — country of registration (BG / DE / RO / etc.).
-   */
-  countryCode: string;
-  /**
-   * Statutory company / commercial-register number (BG EIK, DE HRB, RO J-number, etc.).
-   */
-  registrationNumber: string;
-  /**
-   * EU VAT identifier (BG123456789 / DE123456789 / etc.) — VIES-validatable.
-   */
-  vatNumber?: string | null;
-  /**
-   * ISO 17442-1:2020 Legal Entity Identifier (20-char) — required for derivatives + securities reporting.
-   */
-  lei?: string | null;
-  /**
-   * IFRS-10 §B86 / IAS-28 §16 / IFRS-11 §20 consolidation method for this entity in the group accounts.
-   */
-  consolidationMethod?: ('full' | 'equity' | 'proportionate' | 'cost' | 'not_consolidated') | null;
-  consolidationStatus?:
-    ('head' | 'subsidiary' | 'associate' | 'joint_venture' | 'joint_operation' | 'investment') | null;
-  /**
-   * Mark the reporting parent — exactly one head per consolidation group; used by `consolidation-eliminations` to anchor eliminations.
-   */
-  isHeadEntity?: boolean | null;
-  /**
-   * Direct parent in the group structure (null for the head entity).
-   */
-  parent?: (string | null) | LegalEntity;
-  /**
-   * Direct ownership of this entity by `parent` (0-100%). For NCI calculation per IFRS-10 §22.
-   */
-  ownershipPercent?: number | null;
-  /**
-   * Direct voting rights — may differ from ownership when dual-class shares exist (IFRS-10 §B36).
-   */
-  votingPercent?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  functionalCurrency?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  presentationCurrency?: string | null;
-  /**
-   * Standalone (statutory) reporting framework. Group consolidation may translate up to a different parent framework.
-   */
-  reportingFramework?: ('ifrs' | 'ifrs_sme' | 'us_gaap' | 'local_gaap') | null;
-  /**
-   * IFRS 1 first-time-adoption transition date.
-   */
-  ifrsAdoptionDate?: string | null;
-  /**
-   * MM-DD format (e.g. `12-31`, `06-30`). Drives the entity's fiscal-period calendar.
-   */
-  statutoryYearEnd?: string | null;
-  /**
-   * Statutory registered office (IAS-1 §138(a)).
-   */
-  registeredAddress?: {
-    street?: string | null;
-    city?: string | null;
-    postalCode?: string | null;
-    region?: string | null;
-    countryCode?: string | null;
-  };
-  /**
-   * US Standard Industrial Classification code (US SIC).
-   */
-  sicCode?: string | null;
-  /**
-   * NACE Rev.2 economic activity code (e.g. `62.01`). Used by EU CSRD ESRS 2 §80(b) sector classification.
-   */
-  naceCode?: string | null;
-  /**
-   * Date entity was incorporated / acquired into the group.
-   */
-  effectiveFrom: string;
-  /**
-   * Date entity was deconsolidated / sold / dissolved (null = active).
-   */
-  effectiveTo?: string | null;
-  status?: ('active' | 'dormant' | 'in_liquidation' | 'dissolved' | 'acquired') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  breadcrumbs?:
-    | {
-        doc?: (string | null) | LegalEntity;
-        url?: string | null;
-        label?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  handle?: string | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * IAS-37 §14 register of recognised provisions (warranty / restructuring / onerous / environmental / litigation / decommissioning). Each row is a recognised liability whose timing / amount is uncertain.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -5338,275 +5632,6 @@ export interface FiscalPeriod {
     | string
     | number
     | boolean
-    | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-findings".
- */
-export interface AuditFinding {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  title: string;
-  description: string;
-  findingType:
-    | 'control-deficiency'
-    | 'significant-deficiency'
-    | 'material-weakness'
-    | 'misstatement'
-    | 'exception'
-    | 'observation';
-  severity: 'critical' | 'high' | 'medium' | 'low';
-  relatedControl?: (string | null) | InternalControl;
-  relatedControlTest?: (string | null) | ControlTest;
-  frequencyOfOccurrence?: ('isolated' | 'sporadic' | 'recurring' | 'pervasive') | null;
-  potentialImpact?: ('none' | 'minimal' | 'moderate' | 'significant' | 'material' | 'unknown') | null;
-  identifiedDate: string;
-  identifiedBy: string | User;
-  rootCause?: string | null;
-  riskCategory?: ('financial-reporting' | 'compliance' | 'operational' | 'security') | null;
-  status: 'open' | 'in-remediation' | 'remediated-pending' | 'remediated-confirmed' | 'closed';
-  /**
-   * COSO-2013 deficiency remediation: the plan, its steps and its completion.
-   */
-  remediation?: {
-    /**
-     * A plan exists once it has a title.
-     */
-    title?: string | null;
-    description?: string | null;
-    remediationType?:
-      | (
-          | 'design-change'
-          | 'process-change'
-          | 'system-implementation'
-          | 'training'
-          | 'documentation'
-          | 'resource-addition'
-          | 'policy-update'
-          | 'organizational-change'
-        )
-      | null;
-    priority?: ('critical' | 'high' | 'medium' | 'low') | null;
-    status?: ('planned' | 'in-progress' | 'completed' | 'delayed' | 'on-hold' | 'superseded') | null;
-    /**
-     * The internal policy a policy-update plan improves.
-     */
-    policy?: (string | null) | InternalPolicy;
-    /**
-     * The policy version that carries the fix: stamped at completion, never changed.
-     */
-    policyVersion?: string | null;
-    owner?: (string | null) | User;
-    targetDate?: string | null;
-    /**
-     * Set by the server when the plan is completed.
-     */
-    completionDate?: string | null;
-    actionSteps?:
-      | {
-          sequence: number;
-          description: string;
-          status?: ('not-started' | 'in-progress' | 'completed' | 'on-hold') | null;
-          owner?: string | null;
-          targetDate?: string | null;
-          completedDate?: string | null;
-          id?: string | null;
-        }[]
-      | null;
-    requiredResources?: string | null;
-    budget?: number | null;
-    riskOfDelay?: string | null;
-    approvedBy?: (string | null) | User;
-    approvalDate?: string | null;
-  };
-  managementResponse?: string | null;
-  managementResponseDate?: string | null;
-  priorYearReference?: string | null;
-  communicatedTo?:
-    | {
-        recipient: string;
-        communicationDate?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  isActive?: boolean | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "internal-controls".
- */
-export interface InternalControl {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  title: string;
-  description: string;
-  controlType: 'preventive' | 'detective' | 'corrective' | 'compensating';
-  controlCategory:
-    | 'authorization'
-    | 'segregation'
-    | 'reconciliation'
-    | 'access-security'
-    | 'accuracy'
-    | 'exception'
-    | 'documentation'
-    | 'change-management';
-  cosoComponent?: ('environment' | 'risk-assessment' | 'control-activities' | 'information' | 'monitoring') | null;
-  frequency?: ('continuous' | 'daily' | 'weekly' | 'monthly' | 'quarterly' | 'annual' | 'as-needed') | null;
-  owner?: (string | null) | User;
-  riskMitigated?: string | null;
-  isManualControl?: boolean | null;
-  lastReviewDate?: string | null;
-  nextReviewDate?: string | null;
-  isActive?: boolean | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "control-tests".
- */
-export interface ControlTest {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  title: string;
-  testDesign: string;
-  control: string | InternalControl;
-  samplingMethodology?: ('statistical-random' | 'stratified' | 'judgmental' | 'census' | 'heuristic') | null;
-  plannedSampleSize?: number | null;
-  actualSampleSize?: number | null;
-  toleranceLevel?: number | null;
-  assertion?: ('existence' | 'completeness' | 'accuracy' | 'authorization' | 'segregation' | 'cutoff') | null;
-  testStatus: 'planned' | 'in-progress' | 'completed' | 'suspended';
-  testedDate?: string | null;
-  result?: ('effective' | 'deviations' | 'not-operating' | 'unable-determine') | null;
-  deviationCount?: number | null;
-  deviationRate?: number | null;
-  deviationsSummary?: string | null;
-  conclusionOnEffectiveness?: string | null;
-  reviewDate?: string | null;
-  isActive?: boolean | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "internal-policies".
- */
-export interface InternalPolicy {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  policyName: string;
-  policyNumber: string;
-  description?: LexicalRichText<LexicalNodes_AD327369> | null;
-  policyType:
-    | 'accounting'
-    | 'internal-control'
-    | 'compliance'
-    | 'financial-reporting'
-    | 'risk-management'
-    | 'data-protection'
-    | 'conflict-of-interest'
-    | 'code-of-conduct';
-  owner?: string | null;
-  effectiveDate: string;
-  lastReviewDate?: string | null;
-  nextReviewDate?: string | null;
-  status?: ('active' | 'pending' | 'superseded' | 'archived') | null;
-  policyDocument?: (string | null) | Media;
-  /**
-   * The current version of the policy text (e.g. 3.1). Earlier versions are in the document's version history.
-   */
-  versionNumber?: string | null;
-  /**
-   * Name of the current version (e.g. "2026 annual review").
-   */
-  versionName?: string | null;
-  /**
-   * When the current version was released.
-   */
-  releaseDate?: string | null;
-  /**
-   * What changed in the current version.
-   */
-  changes?: LexicalRichText<LexicalNodes_AD327369> | null;
-  applicableControls?: (string | InternalControl)[] | null;
-  /**
-   * Who acknowledged which version of this policy, and when.
-   */
-  acknowledgments?:
-    | {
-        employeeName: string;
-        employeeId?: string | null;
-        status?: ('acknowledged' | 'pending' | 'overdue' | 'expired') | null;
-        /**
-         * The version acknowledged: stamped from the policy, never changed.
-         */
-        policyVersion?: string | null;
-        /**
-         * Set by the server when the row is acknowledged.
-         */
-        acknowledgedAt?: string | null;
-        acknowledgedBy?: string | null;
-        signedDocument?: (string | null) | Media;
-        id?: string | null;
-      }[]
     | null;
   handle?: string | null;
   createdBy?: {
@@ -16094,45 +16119,6 @@ export interface ManagementAssessmentIcfr {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "management-certifications".
- */
-export interface ManagementCertification {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  entity: string | LegalEntity;
-  certificationName: string;
-  certifyingOfficer: string;
-  certificationDate: string;
-  certificationType: 'sox-302' | 'sox-906' | 'section-13-15d' | 'internal-controls' | 'financial-statement' | 'other';
-  scope?: LexicalRichText<LexicalNodes_AD327369> | null;
-  assertions?:
-    | {
-        assertion?: string | null;
-        certificationLevel?: ('fully-certified' | 'with-reservations' | 'qualified' | 'adverse') | null;
-        id?: string | null;
-      }[]
-    | null;
-  relatedFindings?: (string | AuditFinding)[] | null;
-  signedDocument?: (string | null) | Media;
-  status?: ('current' | 'expired' | 'superseded') | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "regulatory-reports".
  */
 export interface RegulatoryReport {
@@ -19964,7 +19950,6 @@ export interface PayloadQueryPreset {
     | 'internal-controls'
     | 'internal-policies'
     | 'management-assessment-icfr'
-    | 'management-certifications'
     | 'regulatory-reports'
     | 'related-party-transactions'
     | 'risk-register'
@@ -20500,6 +20485,11 @@ export interface PagesSelect<T extends boolean = true> {
         classification?: T;
         jurisdiction?: T;
         attachments?: T;
+        details?:
+          | T
+          | {
+              'management-certification'?: T | ManagementCertificationBlockSelect<T>;
+            };
         links?:
           | T
           | {
@@ -20607,6 +20597,25 @@ export interface FormBlockSelect<T extends boolean = true> {
   form?: T;
   enableIntro?: T;
   introContent?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ManagementCertificationBlock_select".
+ */
+export interface ManagementCertificationBlockSelect<T extends boolean = true> {
+  certificationType?: T;
+  certifyingOfficer?: T;
+  entity?: T;
+  assertions?:
+    | T
+    | {
+        assertion?: T;
+        certificationLevel?: T;
+        id?: T;
+      };
+  relatedFindings?: T;
   id?: T;
   blockName?: T;
 }
@@ -26077,35 +26086,6 @@ export interface ManagementAssessmentIcfrSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "management-certifications_select".
- */
-export interface ManagementCertificationsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  entity?: T;
-  certificationName?: T;
-  certifyingOfficer?: T;
-  certificationDate?: T;
-  certificationType?: T;
-  scope?: T;
-  assertions?:
-    | T
-    | {
-        assertion?: T;
-        certificationLevel?: T;
-        id?: T;
-      };
-  relatedFindings?: T;
-  signedDocument?: T;
-  status?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "regulatory-reports_select".
  */
 export interface RegulatoryReportsSelect<T extends boolean = true> {
@@ -28905,7 +28885,6 @@ export interface CollectionQueryWidget {
       | 'internal-controls'
       | 'internal-policies'
       | 'management-assessment-icfr'
-      | 'management-certifications'
       | 'regulatory-reports'
       | 'related-party-transactions'
       | 'risk-register'
@@ -29119,7 +29098,6 @@ export interface ActivityWidget {
           | 'internal-controls'
           | 'internal-policies'
           | 'management-assessment-icfr'
-          | 'management-certifications'
           | 'regulatory-reports'
           | 'related-party-transactions'
           | 'risk-register'
@@ -29371,7 +29349,6 @@ export interface TaskCreateCollectionExport {
       | 'internal-controls'
       | 'internal-policies'
       | 'management-assessment-icfr'
-      | 'management-certifications'
       | 'regulatory-reports'
       | 'related-party-transactions'
       | 'risk-register'
