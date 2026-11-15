@@ -13,6 +13,8 @@ import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
  *     admin clearing its own `tenants`.
  *   · A membership row (a tenant and the roles in it) may be added, removed or changed only by an
  *     admin of that tenant — not by the member itself, and not into a tenant the caller does not run.
+ *   · A user created by anyone but a super-admin belongs to a tenant its creator runs, so no one
+ *     creates an account outside every tenant, which no tenant admin could manage afterwards.
  *
  * The genesis user is exempt: the first user is super-admin by definition (firstUserSuperAdmin marks
  * it). So is trusted server code: the local API with no user (seeds, jobs). Every request from
@@ -40,7 +42,17 @@ export const changedTenants = (before: unknown, after: unknown): string[] => {
 }
 
 /** Why the actor may not turn `before` into `after`, or undefined when it may. */
-export const privilegeError = ({ actor, before, after }: { actor: unknown; before?: unknown; after: unknown }): string | undefined => {
+export const privilegeError = ({
+  actor,
+  before,
+  after,
+  creating = false,
+}: {
+  actor: unknown
+  before?: unknown
+  after: unknown
+  creating?: boolean
+}): string | undefined => {
   if (isSuperAdmin(actor)) return undefined
   if (isSuperAdmin(after)) return 'Only a super-admin can make a super-admin (the admin role with no tenant).'
   const runs = new Set(getUserTenantIDs(actor, 'admin').map(String))
@@ -48,10 +60,13 @@ export const privilegeError = ({ actor, before, after }: { actor: unknown; befor
     (tenant) => !runs.has(tenant),
   )
   if (outside.length) return 'A tenant membership can only be changed by an admin of that tenant.'
+  if (creating && ![...membership((after as { tenants?: unknown })?.tenants).keys()].some((tenant) => runs.has(tenant))) {
+    return 'A user is created inside a tenant its creator runs.'
+  }
   return undefined
 }
 
-export const guardPrivilege: CollectionBeforeChangeHook = ({ data, originalDoc, req }) => {
+export const guardPrivilege: CollectionBeforeChangeHook = ({ data, operation, originalDoc, req }) => {
   const trusted = !req.user && req.payloadAPI === 'local'
   // An anonymous caller from outside (only the genesis request gets this far) sends credentials only.
   if (!req.user && !trusted && data) {
@@ -60,7 +75,7 @@ export const guardPrivilege: CollectionBeforeChangeHook = ({ data, originalDoc, 
   }
   if (req.context?.genesis || trusted) return data
   const after = { ...(originalDoc ?? {}), ...(data ?? {}) }
-  const error = privilegeError({ actor: req.user, before: originalDoc, after })
+  const error = privilegeError({ actor: req.user, before: originalDoc, after, creating: operation === 'create' })
   if (error) throw new APIError(error, 403)
   return data
 }
