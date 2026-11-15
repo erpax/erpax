@@ -24,6 +24,7 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
 | `pnpm erpax login` · `whoami` · `logout` | Sign in to an erpax through its own OAuth (`--local`, or an origin; production by default) |
 | `pnpm dev` | Next dev server (`PAYLOAD_DEV_PUSH=false pnpm dev` to skip schema push) |
 | `pnpm generate:types` · `pnpm generate:importmap` | Payload's generated files |
+| `pnpm generate:repo` | The plugin manifests and `.github/SPONSORS.md`, from package.json, FUNDING.yml, the types, the migrations and the proof record (`pnpm lint` checks them) |
 | `pnpm lint` · `pnpm typecheck` · `pnpm test` · `pnpm test:e2e` | Checks (CI runs the same) |
 | `pnpm build` | Types, import map, production build |
 | `pnpm deploy` | Migrate production D1, then build and upload the Worker |
@@ -98,7 +99,7 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
 
 | Where | Runs |
 | --- | --- |
-| pre-commit (`.husky`) | Payload types + import map when `src/**/*.ts` is staged; the proof record and its README lines when a `.lean` file is staged (with `lean` on PATH); the lockfile when `package.json` or `pnpm-workspace.yaml` is staged |
+| pre-commit (`.husky`) | Payload types + import map when `src/**/*.ts` is staged; the proof record and its README lines when a `.lean` file is staged (with `lean` on PATH); the plugin manifests and the sponsor page on every commit (`scripts/generate-repo.mjs`); the lockfile when `package.json` or `pnpm-workspace.yaml` is staged |
 | pre-push | `pnpm lint` · `pnpm typecheck` |
 | CI (`.github/workflows/ci.yml`) | standards banner · lint · typecheck · tests ×4 · Playwright smoke · Lean proofs · migrations (from empty, no drift) · Worker (OpenNext build served by `wrangler dev --local`; `scripts/smoke.mjs` is a thin MCP client of it: first user, API key, tools/list, a read, a failed call recorded as a gap) · lean build |
 | Cloudflare Workers Builds (dashboard) | on `main`: build, `payload migrate` on production D1, deploy. Its check on a PR branch fails at once and is not required |

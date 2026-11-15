@@ -8,6 +8,22 @@
     "url": "https://orcid.org/0009-0000-7312-9778"
   },
   "license": "CC-BY-NC-ND-4.0",
+  "homepage": "https://github.com/erpax/erpax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erpax/erpax.git"
+  },
+  "keywords": [
+    "erp",
+    "accounting",
+    "double-entry",
+    "multi-tenant",
+    "payload",
+    "cloudflare",
+    "content-addressed",
+    "tamper-evident",
+    "mcp"
+  ],
   "type": "module",
   "packageManager": "pnpm@11.0.8",
   "scripts": {
@@ -22,8 +38,9 @@
     "payload": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=tsx/esm --import=./src/components/css/load-hook.mjs\" payload",
     "generate:types": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=tsx/esm --import=./src/components/css/load-hook.mjs\" payload generate:types",
     "generate:importmap": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=tsx/esm --import=./src/components/css/load-hook.mjs\" payload generate:importmap",
+    "generate:repo": "node scripts/generate-repo.mjs",
     "payload:migrate:create": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/components/css/load-hook.mjs\" payload migrate:create",
-    "lint": "eslint src",
+    "lint": "eslint src && node scripts/generate-repo.mjs --check",
     "typecheck": "cross-env NODE_OPTIONS=--max-old-space-size=8000 tsc --noEmit -p .",
     "test": "vitest run",
     "test:etrima": "tsx tests/replay/etrima.ts",
