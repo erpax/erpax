@@ -9,7 +9,9 @@
  * @see src/components/README.md
  */
 
-import { MediaBlock } from '@/blocks'
+// Each block from its own component file: the @/blocks barrel also carries server-only blocks
+// (archive reads the Payload config), and this component renders in the browser too.
+import { MediaBlock } from '@/blocks/media/block/Component'
 import {
   DefaultNodeTypes,
   SerializedBlockNode,
@@ -22,7 +24,7 @@ import {
   RichText as ConvertRichText,
 } from '@payloadcms/richtext-lexical/react'
 
-import { CodeBlock, CodeBlockProps } from '@/blocks'
+import { CodeBlock, type CodeBlockProps } from '@/blocks/code/Component'
 
 import type {
   AffectBlock as AffectBlockProps,
@@ -30,9 +32,11 @@ import type {
   CallToActionBlock as CTABlockProps,
   MediaBlock as MediaBlockProps,
 } from '@/utilities/types'
-import { AffectBlock, BannerBlock } from '@/blocks'
-import { CallToActionBlock } from '@/blocks'
-import { codedFromRegistry, ERR } from '@/utilities/error'
+import { AffectBlock } from '@/blocks/affect/Component'
+import { BannerBlock } from '@/blocks/banner/Component'
+import { CallToActionBlock } from '@/blocks/call/to/action/Component'
+import { codedFromRegistry } from '@/utilities/error/codedRegistry'
+import { ERR } from '@/utilities/error/errorCodes'
 import { cn } from '@/components/ui'
 
 type NodeTypes =

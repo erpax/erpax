@@ -1,7 +1,6 @@
-@import '@payloadcms/ui/scss';
-
-.admin-bar {
-  @include small-break {
+// Hidden below Payload's small breakpoint (--breakpoint-s-width in @payloadcms/ui/css/tokens).
+@media (max-width: 768px) {
+  .admin-bar {
     display: none;
   }
 }
