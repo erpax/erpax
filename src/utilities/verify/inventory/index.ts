@@ -364,7 +364,7 @@ export interface ProofInventory {
 // added it to more import closures and every tsx entry that reached it died on the transform.
 if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
   const { execFileSync } = await import('node:child_process')
-  const { createHash } = await import('node:crypto')
+  const { sha256 } = await import('@/utilities/crypto')
   const { mkdtempSync, readdirSync, readFileSync, writeFileSync } = await import('node:fs')
   const { join } = await import('node:path')
   const { tmpdir } = await import('node:os')
@@ -374,8 +374,7 @@ if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
   const dir = join(process.cwd(), 'src/utilities/verify/lean')
   const names = readdirSync(dir).filter((f) => f.endsWith('.lean')).map((f) => f.replace(/\.lean$/, '')).sort()
   const out = mkdtempSync(join(tmpdir(), 'erpax-lean-'))
-  const hash = createHash('sha256')
-  for (const n of names) hash.update(readFileSync(join(dir, `${n}.lean`)))
+  const sourcesDigest = sha256(...names.map((n) => readFileSync(join(dir, `${n}.lean`))))
 
   // DEPENDENCY ORDER, read from the files themselves. The first version compiled alphabetically
   // with Main special-cased, and Cross.lean — which imports Ftl, Release and Uuid — sorted BEFORE
@@ -418,7 +417,7 @@ if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
   const inventory: ProofInventory = {
     sealedAt: new Date().toISOString().slice(0, 10),
     lean: version,
-    sourcesHash: hash.digest('hex').slice(0, 16),
+    sourcesHash: sourcesDigest.toString('hex').slice(0, 16),
     census: proofCensus(entries),
     files,
   }

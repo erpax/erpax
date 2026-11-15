@@ -15,6 +15,7 @@
  * @compliance SOX §404 internal-controls process-evidence
  */
 
+import { randomUuid } from '@/utilities/crypto'
 import type { CollectionAfterChangeHook } from 'payload'
 import { eventEmitter } from '@/utilities/event/emitter/service'
 import type { DomainEvent } from '@/utilities/types/events'
@@ -79,7 +80,7 @@ export function emitOnStatusTransition(
     await emitDomainEventPayloadNative(
       req,
       {
-        eventId: crypto.randomUUID(),
+        eventId: randomUuid(),
         eventType: eventType as never, // typed via DomainEvent contract
         tenantId,
         aggregateId: next.uuid ?? next.id,
@@ -113,7 +114,7 @@ export function emitOnCreate(
     await emitDomainEventPayloadNative(
       req,
       {
-        eventId: crypto.randomUUID(),
+        eventId: randomUuid(),
         eventType: eventType as never,
         tenantId,
         aggregateId: next.uuid ?? next.id,

@@ -16,6 +16,7 @@
  * word inserted anywhere changes nothing; and the gap program `feel think emote aware` halts at `feel`
  * on a successful call and records and broadcasts a failed one.
  */
+import { randomUuid } from '@/utilities/crypto'
 import type { PayloadRequest, RequiredDataFromCollectionSlug } from 'payload'
 
 import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
@@ -73,7 +74,7 @@ export const gapOf = (
   const tenant = req.user ? getUserTenantIDs(req.user)[0] : undefined
   const recordedAt = new Date().toISOString()
   return {
-    memoryRef: `MEM-${recordedAt.slice(0, 10)}-${crypto.randomUUID().slice(0, 8)}`,
+    memoryRef: `MEM-${recordedAt.slice(0, 10)}-${randomUuid().slice(0, 8)}`,
     recordedAt,
     ownerType: 'agent',
     ownerId: String(req.user?.id ?? 'anonymous'),
@@ -89,7 +90,7 @@ export const gapOf = (
  */
 export const broadcastOf = (memoryId: string | number, gap: MemoryData): RequiredDataFromCollectionSlug<'chat'> => ({
   event: 'gap:recorded',
-  eventUuid: crypto.randomUUID(),
+  eventUuid: randomUuid(),
   aggregateId: String(memoryId),
   agent: gap.ownerId,
   payload: gap.payload,

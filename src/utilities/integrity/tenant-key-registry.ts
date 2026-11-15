@@ -40,6 +40,7 @@
  * @see ../cloudflare/index.ts (Mediator integration)
  */
 
+import { randomBytes } from '@/utilities/crypto'
 import { requireSafetyMode } from '@/utilities/safety/mode'
 
 /** Purpose namespace for a key. */
@@ -208,7 +209,7 @@ export async function provisionTestKek(args: {
 }): Promise<{ kid: string; kek: CryptoKey }> {
   // Slice RRRRRRRRR-cut1 — guarded; production rejects.
   requireSafetyMode(['test', 'dev'], 'provisionTestKek')
-  const raw = globalThis.crypto.getRandomValues(new Uint8Array(32))
+  const raw = new Uint8Array(randomBytes(32))
   const kek = await globalThis.crypto.subtle.importKey(
     'raw', raw, { name: 'HKDF' }, false, ['deriveKey'],
   )

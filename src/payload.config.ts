@@ -198,13 +198,13 @@ const adminTranslations = Object.fromEntries(
 )
 
 export default buildConfig({
-  // Password hashing that Cloudflare Workers can run, at the least CPU. Payload 4 hashes with PBKDF2-SHA256
-  // at 600,000 iterations by default, and the Workers runtime refuses more than 100,000: every new password
-  // (the first user's included) failed in production with "Something went wrong", while local wrangler dev,
-  // which does not enforce the cap, passed. 100,000 is the platform's ceiling, a sixth of the CPU, with
-  // the same 32-byte (256-bit) SHA-256 output, which is hash-based and keeps its strength against quantum search.
-  // A hash stored at another count is rehashed at the next successful login.
-  auth: { passwordHashIterations: 100000 },
+  // Password hashing at OWASP's 600,000 PBKDF2-SHA256 iterations, on a runtime that refuses more than
+  // 100,000 per call: Payload's hashing is patched (patches/payload@4.0.0-beta.9.patch) to reach the count
+  // in chained rounds of at most 100,000, each salted with the uuid cross of the stored salt and the round,
+  // the construction @/utilities/crypto `stretch` defines. The output is 32 bytes of SHA-256, hash-based,
+  // so it keeps its strength against quantum search. A hash stored at 100,000 (before this) is rehashed at
+  // the next successful login.
+  auth: { passwordHashIterations: 600000 },
   // Mail goes out through Cloudflare Email Service (the Worker's `EMAIL` send_email binding), read when sent
   email: cloudflareEmailAdapter(async () => ((await getCloudflare()).env as { EMAIL?: SendEmailBinding }).EMAIL),
   admin: {

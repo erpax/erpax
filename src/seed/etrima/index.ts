@@ -19,7 +19,7 @@
  * @compliance GDPR Art.5(1)(c) data-minimisation — an employee is exported as number, name and hire date only
  * @see tests/replay/etrima.ts (the same rows, replayed through the hooks)
  */
-import { createHash } from 'node:crypto'
+import { sha256Hex } from '@/utilities/crypto'
 
 import type { CollectionConfig, Field } from 'payload'
 
@@ -32,7 +32,7 @@ export type Doc = Record<string, unknown> & { id: string }
  * SHA-256 keeps a weak hash away from ids derived from personal records.
  */
 export const oid = (table: string, id: unknown): string => {
-  const hex = createHash('sha256').update(`etrima:${table}:${String(id)}`).digest('hex')
+  const hex = sha256Hex(`etrima:${table}:${String(id)}`)
   const variant = ((parseInt(hex.slice(16, 18), 16) & 0x3f) | 0x80).toString(16).padStart(2, '0')
   return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-8${hex.slice(13, 16)}-${variant}${hex.slice(18, 20)}-${hex.slice(20, 32)}`
 }

@@ -22,6 +22,7 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  */
 
+import { randomUuid } from '@/utilities/crypto'
 import type { Payload, PayloadRequest } from 'payload'
 
 export type NotificationChannel = 'email' | 'in_app' | 'webhook' | 'slack'
@@ -83,7 +84,7 @@ export async function sendNotification(
   input: NotificationInput,
   req?: PayloadRequest,
 ): Promise<NotificationResult> {
-  const notificationId = input.notificationId ?? crypto.randomUUID()
+  const notificationId = input.notificationId ?? randomUuid()
   const channels = input.channels ?? (await deriveChannelsFromUserPrefs(payload, input.toUserId, req))
 
   const deliveries: NotificationResult['deliveries'] = []
