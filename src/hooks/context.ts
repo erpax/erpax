@@ -22,6 +22,8 @@ declare module 'payload' {
     ability?: unknown
     /** the signed-in user's tenants with the apps each has on, read once per request */
     tenantApps?: unknown
+    /** the subscription of the user's tenant, read once per request (every plan-feature gate asks for it) */
+    subscription?: unknown
   }
 }
 
@@ -38,7 +40,7 @@ export async function flagged<T>(req: PayloadRequest, flag: Flag, write: (contex
 }
 
 /** The request-scoped values `remembered` may hold. */
-type Remembered = 'ability' | 'tenantApps' | 'groupsAround'
+type Remembered = 'ability' | 'tenantApps' | 'groupsAround' | 'subscription'
 
 /**
  * Compute a value once per request and keep it on the hook context: every access function and
