@@ -1,10 +1,10 @@
 {
   "sealedAt": "2026-11-15",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "54e9d0887d305500",
+  "sourcesHash": "8ad7e04c66de2941",
   "census": {
-    "theorems": 326,
-    "axiomFree": 230,
+    "theorems": 335,
+    "axiomFree": 239,
     "standardAxioms": 96,
     "stubbed": 0
   },
@@ -1969,6 +1969,66 @@
         },
         {
           "theorem": "Planck.energy_is_built_from_the_three",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Prompt.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Prompt.run_nil",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Prompt.unknown_skips",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Prompt.go_continues",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Prompt.halt_stops",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Prompt.run_append",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Prompt.unknown_anywhere",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Prompt.gap_pleasant_writes_nothing",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Prompt.gap_unpleasant_records_and_broadcasts",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Prompt.gap_unknown_word_changes_nothing",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
