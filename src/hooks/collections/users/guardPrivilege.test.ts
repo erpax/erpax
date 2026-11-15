@@ -28,6 +28,13 @@ describe('guardPrivilege — who may make what of a user', () => {
     expect(privilegeError({ actor: tenantAdmin, before: viewer, after: { ...viewer, tenants: [{ tenant: 't2', roles: ['viewer'] }] } })).toMatch(/admin of that tenant/)
   })
 
+  it('a new user is created inside a tenant its creator runs — no orphans, no creating by viewers', () => {
+    expect(privilegeError({ actor: tenantAdmin, after: { roles: ['user'], tenants: [] }, creating: true })).toMatch(/inside a tenant its creator runs/)
+    expect(privilegeError({ actor: viewer, after: { roles: ['user'], tenants: [] }, creating: true })).toMatch(/inside a tenant its creator runs/)
+    expect(privilegeError({ actor: tenantAdmin, after: { roles: ['user'], tenants: [{ tenant: 't1', roles: ['viewer'] }] }, creating: true })).toBeUndefined()
+    expect(privilegeError({ actor: superAdmin, after: { roles: ['user'], tenants: [] }, creating: true })).toBeUndefined()
+  })
+
   it('a super-admin may do all of it; an unchanged membership is not a change', () => {
     expect(privilegeError({ actor: superAdmin, after: { roles: ['admin'], tenants: [] } })).toBeUndefined()
     expect(changedTenants([{ tenant: { id: 't1' }, roles: ['b', 'a'] }], [{ tenant: 't1', roles: ['a', 'b'] }])).toEqual([])
