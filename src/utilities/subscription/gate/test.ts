@@ -424,6 +424,13 @@ describe('subscriptionGates', () => {
       expect(find).toHaveBeenCalledWith(expect.objectContaining({ collection: 'subscriptions', where: { tenant: { equals: 'tenant-123' } }, sort: '-createdAt', limit: 1 }))
     })
 
+    it('reads it once per request, however many gates ask', async () => {
+      const find = stored(createMockSubscription())
+      const req = { ...createMockRequest({ payload: { find } }), context: {} } as PayloadRequest
+      await Promise.all([featureGuard('apiAccess')({ req } as never), featureGuard('storageGB')({ req } as never), getFeatureLimit(req, 'storageGB')])
+      expect(find).toHaveBeenCalledTimes(1)
+    })
+
     it("another tenant's subscription is not this tenant's", async () => {
       const req = createMockRequest({ payload: { find: stored(createMockSubscription({ tenant: 'tenant-999' })) } })
       expect(await getSubscriptionStatus(req)).toBeNull()

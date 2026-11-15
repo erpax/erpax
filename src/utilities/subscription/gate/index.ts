@@ -22,6 +22,7 @@ import type { Iso27002ControlId } from '@/utilities/iso/27002'
 // From the LEAF, not from `@/auth`: the predicates lazily import this gate for the feature guard, so
 // importing them back closed a two-file loop. Identity is all the gate needs.
 import { getUserContext } from '@/utilities/auth/context'
+import { remembered } from '@/hooks/context'
 import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 
 /**
@@ -43,7 +44,12 @@ async function getSubscriptionForRequest(
 
   // A subscription belongs to its tenant through the multi-tenant `tenant` field; its id is its own.
   // (Looking it up by the tenant's id found nothing, so every gate refused every tenant.) The newest
-  // one is the tenant's current subscription.
+  // one is the tenant's current subscription. A request evaluates access on every gated collection
+  // (the MCP gateway and the admin ask for all of them), so it is read once per request.
+  return remembered(req, 'subscription', () => subscriptionOf(req, tenant))
+}
+
+async function subscriptionOf(req: PayloadRequest, tenant: string): Promise<{ subscription: Subscription; tenant: string } | null> {
   try {
     const { docs } = await req.payload.find({
       collection: 'subscriptions',
