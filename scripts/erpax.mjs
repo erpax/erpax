@@ -219,9 +219,11 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
       if (!token) throw new Error(`not signed in to ${originOf(arg)}: run pnpm erpax login${arg ? ` ${arg}` : ''}`)
       console.log(token)
     } else if (command === 'headers') {
-      // Claude Code's headersHelper: with nothing to send it prints {}, and Claude Code offers its own OAuth sign-in.
-      const authorization = await authorizationFor(originOf(arg)).catch(() => undefined)
-      console.log(JSON.stringify(authorization ? { Authorization: authorization } : {}))
+      // Claude Code's headersHelper: the sign-in's short-lived token, never a stored API key (a key a
+      // machine holds is read where it is used, not echoed). Signed out, it prints {} and Claude Code
+      // offers its own OAuth sign-in to the same server.
+      const token = await tokenFor(originOf(arg)).catch(() => undefined)
+      console.log(JSON.stringify(token ? { Authorization: `Bearer ${token}` } : {}))
     } else {
       console.error('usage: pnpm erpax login|whoami|token|logout [--local | <origin>] [--no-browser] · pnpm erpax headers')
       process.exit(2)

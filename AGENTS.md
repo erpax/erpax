@@ -56,9 +56,10 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
   `@payloadcms/plugin-mcp`'s built-in), and the token is kept per origin in `~/.config/erpax/credentials.json`.
   Development and production are the same command: production by default, `--local` for
   `http://localhost:3000`, or any origin; `ERPAX_MCP_URL` sets the default. The `erpax` connector takes its
-  header from `scripts/erpax.mjs headers` at connect time: the sign-in for its origin, else a machine
-  agent's API key (`ERPAX_API_KEY` in the environment or the gitignored `.env`; enable it on the user in
-  the admin). `pnpm erpax whoami` shows who the gateway serves you as.
+  header from `scripts/erpax.mjs headers` at connect time: the sign-in's token for its origin, or nothing,
+  and then Claude Code offers its own OAuth sign-in. A machine agent with no browser (CI, the Deployed
+  check) uses an API key (`ERPAX_API_KEY`, enabled on its user in the admin), read where it is used and
+  never printed. `pnpm erpax whoami` shows who the gateway serves you as.
 - Agent memory is documents in `memories`: `kind` is `feedback`, `fact` or `reference`,
   `ownerType`/`ownerId` name the agent or tenant, and reusing a `key` supersedes the earlier
   memory. Agents talk in the per-tenant `chat` room; `messages` is mail between users. Guidance for
