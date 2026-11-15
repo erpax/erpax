@@ -20,9 +20,9 @@ describe('versionsPlugin — universal native Payload versioning', () => {
     expect(out.collections?.[0]?.versions).toBe(drafts) // same reference — not replaced
   })
 
-  it('skips excluded append-only logs (versioning immutable history is waste)', () => {
+  it('turns versions off for excluded append-only logs (Payload 4 would version them by default)', () => {
     const out = run([{ slug: 'audit-events', fields: [] }])
-    expect(out.collections?.[0]?.versions).toBeUndefined()
+    expect(out.collections?.[0]?.versions).toBe(false)
     expect(VERSIONS_EXCLUDE.has('audit-events')).toBe(true)
   })
 
@@ -34,7 +34,7 @@ describe('versionsPlugin — universal native Payload versioning', () => {
       ],
       { exclude: ['ledger'], maxPerDoc: 10 },
     )
-    expect(out.collections?.[0]?.versions).toBeUndefined() // excluded
+    expect(out.collections?.[0]?.versions).toBe(false) // excluded
     expect(out.collections?.[1]?.versions).toEqual({ maxPerDoc: 10 })
   })
 

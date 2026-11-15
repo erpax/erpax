@@ -286,6 +286,7 @@ describe('stripeWebhookHandlers', () => {
 
       expect(result).toEqual(mockSubscription)
       expect(mockPayload.find).toHaveBeenCalledWith({
+        overrideAccess: true,
         collection: 'subscriptions',
         where: { stripeSubscriptionId: { equals: 'sub_123' } },
         limit: 1,
@@ -309,6 +310,7 @@ describe('stripeWebhookHandlers', () => {
       await updateSubscriptionStatus(p(mockPayload), 'sub-123', 'active', 'Test reason')
 
       expect(mockPayload.update).toHaveBeenCalledWith({
+        overrideAccess: true,
         collection: 'subscriptions',
         id: 'sub-123',
         data: {
@@ -337,6 +339,7 @@ describe('stripeWebhookHandlers', () => {
       )
 
       expect(mockPayload.create).toHaveBeenCalledWith({
+        overrideAccess: true,
         collection: 'subscriptions',
         data: expect.objectContaining({
           tenant: 'tenant-123',
@@ -363,6 +366,7 @@ describe('stripeWebhookHandlers', () => {
       )
 
       expect(mockPayload.update).toHaveBeenCalledWith({
+        overrideAccess: true,
         collection: 'subscriptions',
         id: 'existing-sub-id',
         data: expect.objectContaining({
@@ -405,6 +409,7 @@ describe('stripeWebhookHandlers', () => {
       await handleInvoiceSync({ event: {} as unknown as Stripe.Event, payload: p(mockPayload) }, stripeInvoice)
 
       expect(mockPayload.update).toHaveBeenCalledWith({
+        overrideAccess: true,
         collection: 'invoices',
         id: 'existing-invoice-id',
         data: expect.objectContaining({
@@ -430,6 +435,7 @@ describe('stripeWebhookHandlers', () => {
 
       // Should update invoice status to paid
       expect(mockPayload.update).toHaveBeenCalledWith({
+        overrideAccess: true,
         collection: 'invoices',
         id: 'invoice-123',
         data: expect.objectContaining({
@@ -440,6 +446,7 @@ describe('stripeWebhookHandlers', () => {
 
       // Should update subscription to active
       expect(mockPayload.update).toHaveBeenCalledWith({
+        overrideAccess: true,
         collection: 'subscriptions',
         id: 'sub-123',
         data: expect.objectContaining({
@@ -466,6 +473,7 @@ describe('stripeWebhookHandlers', () => {
       )
 
       expect(mockPayload.update).toHaveBeenCalledWith({
+        overrideAccess: true,
         collection: 'invoices',
         id: 'invoice-123',
         data: expect.objectContaining({
@@ -477,6 +485,7 @@ describe('stripeWebhookHandlers', () => {
       })
 
       expect(mockPayload.update).toHaveBeenCalledWith({
+        overrideAccess: true,
         collection: 'subscriptions',
         id: 'sub-123',
         data: expect.objectContaining({
