@@ -39,7 +39,7 @@ export const COLLISIONS: readonly Collision[] = [
   { standard: 'ISO/IEC 27002', requirement: 'role definitions are validated on write', primitive: 'hook', control: '5.3', evidence: 'src/utilities/roles/hooks' },
   { standard: 'ISO/IEC 27002', requirement: 'events are logged to an audit trail', primitive: 'hook', control: '8.15', evidence: 'src/utilities/audit/trail' },
   { standard: 'ISO/IEC 27017', requirement: 'cloud customers are separated from one another', primitive: 'plugin', control: '5.23', evidence: 'src/access/collections/shared/appAccess.ts' },
-  { standard: 'ISO/IEC 27017', requirement: 'each app is reached through its own machine interface', primitive: 'endpoint', control: '5.23', evidence: 'src/plugins/mcp/apps/index.ts' },
+  { standard: 'ISO/IEC 27017', requirement: 'each app is reached through the MCP gateway, filtered by the caller\'s access', primitive: 'endpoint', control: '5.23', evidence: 'src/middleware.ts' },
   { standard: 'ISO/IEC 27018', requirement: 'processing of personal data is recorded', primitive: 'collection', control: '5.34', evidence: 'src/collections/data-processing-activities/index.ts' },
   { standard: 'ISO/IEC 27701', requirement: 'consent of the data subject is recorded', primitive: 'collection', control: '5.34', evidence: 'src/collections/consent-records/index.ts' },
   { standard: 'ISO/IEC 29146', requirement: 'access management enforces policy decisions', primitive: 'access', evidence: 'src/utilities/ability/roles/index.ts' },
@@ -48,7 +48,7 @@ export const COLLISIONS: readonly Collision[] = [
   { standard: 'ISO/IEC 15489', requirement: 'records are versioned with who changed them', primitive: 'plugin', evidence: 'src/plugins/versions' },
   { standard: 'ISO/IEC 15489', requirement: 'every document is addressable by a stable handle', primitive: 'endpoint', evidence: 'src/plugins/handles' },
   { standard: 'ANSI/INCITS 359', requirement: 'core RBAC: users, roles, permissions', primitive: 'access', control: '5.18', evidence: 'src/utilities/ability/roles/index.ts' },
-  { standard: 'ANSI/INCITS 359', requirement: 'API keys carry compact per-key scopes', primitive: 'auth', control: '5.17', evidence: 'src/plugins/mcp/scopes/index.ts' },
+  { standard: 'ANSI/INCITS 359', requirement: 'an API key acts as its user, so the user\'s roles decide', primitive: 'auth', control: '5.17', evidence: 'src/collections/users/index.ts' },
 ]
 
 /** The standards the table covers. */

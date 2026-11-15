@@ -76,6 +76,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
         where: {
           id: { equals: fiscalId },
         },
+        overrideAccess: true,
       })
 
       if (fiscalQuery.docs.length > 0) {
@@ -110,6 +111,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
             } },
         ],
       },
+      overrideAccess: true,
     })
 
     for (const doc of tpQuery.docs) {

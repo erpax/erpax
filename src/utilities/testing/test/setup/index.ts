@@ -79,6 +79,7 @@ export class IsolatedTestEnvironment {
       where: {
         id: { in: ids },
       },
+      overrideAccess: true,
     });
 
     return results.docs as T[];

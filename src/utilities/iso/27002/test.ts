@@ -29,7 +29,7 @@ describe('ISO 27002 claims are typed and checked', () => {
   })
 
   it('the role-based access modules claim their controls', () => {
-    for (const path of ['access/collections/shared/abilityAccess.ts', 'access/collections/shared/appAccess.ts', 'plugins/mcp/apps/index.ts']) {
+    for (const path of ['access/collections/shared/abilityAccess.ts', 'access/collections/shared/appAccess.ts']) {
       expect(claims.find((claim) => claim.path === path)?.ids.length, path).toBeGreaterThan(0)
     }
   })

@@ -102,6 +102,7 @@ export async function resolveGlAccount(
       },
       limit: 1,
       depth: 0,
+      overrideAccess: true,
     })
     const doc = result?.docs?.[0]
     if (doc?.id !== undefined) {

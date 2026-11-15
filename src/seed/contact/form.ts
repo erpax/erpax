@@ -6,7 +6,7 @@ export const contactForm: RequiredDataFromCollectionSlug<'forms'> = {
       type: 'root',
       children: [
         {
-          type: 'heading',
+          type: 'paragraph',
           children: [
             {
               type: 'text',
@@ -21,7 +21,8 @@ export const contactForm: RequiredDataFromCollectionSlug<'forms'> = {
           direction: 'ltr',
           format: '',
           indent: 0,
-          tag: 'h2',
+          textFormat: 0,
+          textStyle: '',
           version: 1,
         },
       ],
@@ -58,6 +59,7 @@ export const contactForm: RequiredDataFromCollectionSlug<'forms'> = {
               format: '',
               indent: 0,
               textFormat: 0,
+              textStyle: '',
               version: 1,
             },
           ],

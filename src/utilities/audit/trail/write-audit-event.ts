@@ -206,6 +206,7 @@ export async function writeAuditEvent(
       signatureRequired: input.signatureRequired === true,
       sealedAt: chainLinkStatus === 'sealed' ? occurredAt : null,
     } as never,
+    overrideAccess: true,
   }) as { id: string }
 
   return {

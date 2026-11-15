@@ -73,11 +73,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`ALTER TABLE \`_gl_accounts_v\` ADD \`version_reconciliation_frequency\` text;`)
   await db.run(sql`ALTER TABLE \`_gl_accounts_v\` ADD \`version_is_cash_flow_relevant\` integer DEFAULT false;`)
   await db.run(sql`ALTER TABLE \`_gl_accounts_v\` ADD \`version_closes_at_period_end\` integer DEFAULT false;`)
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'orders', entity: 'collection', fieldPath: 'lines.description', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'orders', entity: 'collection', fieldPath: 'cancellationReason', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'operations', entity: 'collection', fieldPath: 'breadcrumbs', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'sales-orders', entity: 'collection', fieldPath: 'lines.description', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'sales-orders', entity: 'collection', fieldPath: 'cancellationReason', defaultLocale: 'en', req })
 }
 
 export async function down({ db, payload, req }: MigrateDownArgs): Promise<void> {
@@ -272,9 +267,4 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`ALTER TABLE \`_gl_accounts_v\` DROP COLUMN \`version_reconciliation_frequency\`;`)
   await db.run(sql`ALTER TABLE \`_gl_accounts_v\` DROP COLUMN \`version_is_cash_flow_relevant\`;`)
   await db.run(sql`ALTER TABLE \`_gl_accounts_v\` DROP COLUMN \`version_closes_at_period_end\`;`)
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'orders', entity: 'collection', fieldPath: 'lines.description', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'orders', entity: 'collection', fieldPath: 'cancellationReason', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'operations', entity: 'collection', fieldPath: 'breadcrumbs', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'sales-orders', entity: 'collection', fieldPath: 'lines.description', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'sales-orders', entity: 'collection', fieldPath: 'cancellationReason', defaultLocale: 'en', req })
 }

@@ -61,6 +61,7 @@ export function tenantStripeWebhookEndpoint(props?: WebhookProps) {
       collection: 'tenants',
       limit: 500,
       depth: 0,
+      overrideAccess: true,
     })
 
     let verified: { event: Stripe.Event; stripe: Stripe } | null = null

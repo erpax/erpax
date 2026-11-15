@@ -5,11 +5,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`roles_rels_orders_id_idx\` ON \`roles_rels\` (\`orders_id\`);`)
   await db.run(sql`ALTER TABLE \`_roles_v_rels\` ADD \`orders_id\` text(36) REFERENCES orders(id);`)
   await db.run(sql`CREATE INDEX \`_roles_v_rels_orders_id_idx\` ON \`_roles_v_rels\` (\`orders_id\`);`)
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'orders', entity: 'collection', fieldPath: 'approvalChain.comment', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'purchase-orders', entity: 'collection', fieldPath: 'lines.description', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'purchase-requisitions', entity: 'collection', fieldPath: 'lines.description', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'purchase-requisitions', entity: 'collection', fieldPath: 'approvalChain.comment', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'vendor-quotes', entity: 'collection', fieldPath: 'lines.description', defaultLocale: 'en', req })
 }
 
 export async function down({ db, payload, req }: MigrateDownArgs): Promise<void> {
@@ -79,9 +74,4 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`CREATE INDEX \`_roles_v_rels_media_id_idx\` ON \`_roles_v_rels\` (\`media_id\`);`)
   await db.run(sql`CREATE INDEX \`_roles_v_rels_categories_id_idx\` ON \`_roles_v_rels\` (\`categories_id\`);`)
   await db.run(sql`CREATE INDEX \`_roles_v_rels_products_id_idx\` ON \`_roles_v_rels\` (\`products_id\`);`)
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'orders', entity: 'collection', fieldPath: 'approvalChain.comment', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'purchase-orders', entity: 'collection', fieldPath: 'lines.description', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'purchase-requisitions', entity: 'collection', fieldPath: 'lines.description', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'purchase-requisitions', entity: 'collection', fieldPath: 'approvalChain.comment', defaultLocale: 'en', req })
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'vendor-quotes', entity: 'collection', fieldPath: 'lines.description', defaultLocale: 'en', req })
 }

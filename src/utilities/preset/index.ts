@@ -53,12 +53,13 @@ export async function loadPresets(
       depth: 0,
       limit: 1,
       req,
+      overrideAccess: true,
     })
     if (found.docs.length > 0) {
       unchanged++
       continue
     }
-    await payload.create({ collection: 'payload-query-presets', data: p as never, depth: 0, req })
+    await payload.create({ collection: 'payload-query-presets', data: p as never, depth: 0, req, overrideAccess: true })
     created++
   }
   return { created, unchanged }

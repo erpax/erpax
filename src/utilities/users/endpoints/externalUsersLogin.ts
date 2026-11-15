@@ -83,6 +83,7 @@ export const externalUsersLogin: Endpoint = {
                 equals: tenantSlug,
               },
             },
+        overrideAccess: true,
       })
     ).docs[0]
 
@@ -129,6 +130,7 @@ export const externalUsersLogin: Endpoint = {
           },
         ],
       },
+      overrideAccess: true,
     })
 
     if (foundUser.totalDocs > 0) {
@@ -140,6 +142,7 @@ export const externalUsersLogin: Endpoint = {
             password,
           },
           req,
+          overrideAccess: true,
         })
 
         if (loginAttempt?.token) {

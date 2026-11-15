@@ -8,6 +8,83 @@
 
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "UploadTransforms".
+ */
+export type UploadTransforms = {
+  /**
+   * Time range on the original, in milliseconds. Start inclusive, end exclusive.
+   */
+  clip?: {
+    endMs: number;
+    startMs: number;
+  };
+  /**
+   * Rectangle in original-file pixels, applied before resize and encoding.
+   */
+  crop?: {
+    height: number;
+    width: number;
+    x: number;
+    y: number;
+  };
+  /**
+   * Encoding settings for the output format. Does not select the format.
+   */
+  encoding?: {
+    [k: string]: unknown;
+  };
+  /**
+   * Mirror the image on one or both axes.
+   */
+  flip?: {
+    horizontal?: boolean;
+    vertical?: boolean;
+  };
+  /**
+   * Preferred point as percentages of the original, from 0 to 100.
+   */
+  focalPoint?: {
+    x: number;
+    y: number;
+  };
+  /**
+   * Keep or remove metadata embedded in the output file.
+   */
+  metadataPolicy?: {
+    mode: 'preserve' | 'strip';
+  };
+  /**
+   * One-based, inclusive page range on the original document.
+   */
+  pageRange?: {
+    endPage: number;
+    startPage: number;
+  };
+  /**
+   * Video frame to use as the poster, in milliseconds on the original.
+   */
+  posterFrame?: {
+    timestampMs: number;
+  };
+  /**
+   * Target size for visual media.
+   */
+  resize?: {
+    fit?: 'contain' | 'cover' | 'fill' | 'inside' | 'outside';
+    height?: number;
+    width?: number;
+    withoutEnlargement?: boolean;
+  };
+  /**
+   * Clockwise rotation in degrees.
+   */
+  rotate?: {
+    angle: number;
+  };
+  [k: string]: unknown;
+} | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "OrderStatus".
  */
 export type OrderStatus =
@@ -96,11 +173,97 @@ export type SupportedTimezones =
   | 'Pacific/Noumea'
   | 'Pacific/Auckland'
   | 'Pacific/Fiji';
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LexicalNodes_AD327369".
+ */
+export type LexicalNodes_AD327369 =
+  | SerializedTextNode
+  | SerializedTabNode
+  | SerializedLineBreakNode
+  | SerializedParagraphNode<LexicalNodes_AD327369>
+  | SerializedAutoLinkNode<LexicalNodes_AD327369, LexicalLinkFields>
+  | SerializedLinkNode<LexicalNodes_AD327369, LexicalLinkFields>;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LexicalNodes_17BFECDB".
+ */
+export type LexicalNodes_17BFECDB =
+  | SerializedTextNode
+  | SerializedTabNode
+  | SerializedLineBreakNode
+  | SerializedParagraphNode<LexicalNodes_17BFECDB>
+  | SerializedHeadingNode<LexicalNodes_17BFECDB, 'h1' | 'h2' | 'h3' | 'h4'>
+  | SerializedAutoLinkNode<LexicalNodes_17BFECDB, LexicalLinkFields>
+  | SerializedLinkNode<LexicalNodes_17BFECDB, LexicalLinkFields>;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LexicalNodes_EA2944C2".
+ */
+export type LexicalNodes_EA2944C2 =
+  | SerializedTextNode
+  | SerializedTabNode
+  | SerializedLineBreakNode
+  | SerializedParagraphNode<LexicalNodes_EA2944C2>
+  | SerializedBlockNode<Code>
+  | SerializedTableNode<LexicalNodes_EA2944C2>
+  | SerializedTableCellNode<LexicalNodes_EA2944C2>
+  | SerializedTableRowNode<LexicalNodes_EA2944C2>
+  | SerializedQuoteNode<LexicalNodes_EA2944C2>
+  | SerializedListNode<LexicalNodes_EA2944C2>
+  | SerializedListItemNode<LexicalNodes_EA2944C2>
+  | SerializedHeadingNode<LexicalNodes_EA2944C2, 'h2' | 'h3' | 'h4'>
+  | SerializedAutoLinkNode<LexicalNodes_EA2944C2, LexicalLinkFields>
+  | SerializedLinkNode<LexicalNodes_EA2944C2, LexicalLinkFields>;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LexicalNodes_2CF183CE".
+ */
+export type LexicalNodes_2CF183CE =
+  | SerializedTextNode
+  | SerializedTabNode
+  | SerializedLineBreakNode
+  | SerializedParagraphNode<LexicalNodes_2CF183CE>
+  | SerializedHorizontalRuleNode
+  | SerializedBlockNode<BannerBlock | CodeBlock | MediaBlock_7426DDFC | Fence>
+  | SerializedTableNode<LexicalNodes_2CF183CE>
+  | SerializedTableCellNode<LexicalNodes_2CF183CE>
+  | SerializedTableRowNode<LexicalNodes_2CF183CE>
+  | SerializedQuoteNode<LexicalNodes_2CF183CE>
+  | SerializedListNode<LexicalNodes_2CF183CE>
+  | SerializedListItemNode<LexicalNodes_2CF183CE>
+  | SerializedHeadingNode<LexicalNodes_2CF183CE, 'h1' | 'h2' | 'h3' | 'h4'>
+  | SerializedAutoLinkNode<LexicalNodes_2CF183CE, LexicalLinkFields>
+  | SerializedLinkNode<LexicalNodes_2CF183CE, LexicalLinkFields>;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LexicalNodes_FF0D232D".
+ */
+export type LexicalNodes_FF0D232D =
+  | SerializedTextNode
+  | SerializedTabNode
+  | SerializedLineBreakNode
+  | SerializedParagraphNode<LexicalNodes_FF0D232D>
+  | SerializedHorizontalRuleNode
+  | SerializedHeadingNode<LexicalNodes_FF0D232D, 'h1' | 'h2' | 'h3' | 'h4'>
+  | SerializedAutoLinkNode<LexicalNodes_FF0D232D, LexicalLinkFields>
+  | SerializedLinkNode<LexicalNodes_FF0D232D, LexicalLinkFields>;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LexicalNodes_3DE324E4".
+ */
+export type LexicalNodes_3DE324E4 =
+  | SerializedTextNode
+  | SerializedTabNode
+  | SerializedLineBreakNode
+  | SerializedParagraphNode<LexicalNodes_3DE324E4>
+  | SerializedListNode<LexicalNodes_3DE324E4>
+  | SerializedListItemNode<LexicalNodes_3DE324E4>
+  | SerializedHeadingNode<LexicalNodes_3DE324E4, 'h2' | 'h3' | 'h4'>;
 
 export interface Config {
   auth: {
     users: UserAuthOperations;
-    'payload-mcp-api-keys': PayloadMcpApiKeyAuthOperations;
   };
   blocks: {};
   collections: {
@@ -274,7 +437,7 @@ export interface Config {
     'contract-signatures': ContractSignature;
     chat: Chat;
     connections: Connection;
-    messages: Message;
+    messages: Message1;
     'api-audit-events': ApiAuditEvent;
     'audit-events': AuditEvent;
     'audit-submissions': AuditSubmission;
@@ -305,13 +468,13 @@ export interface Config {
     search: Search;
     exports: Export;
     imports: Import;
-    'payload-mcp-api-keys': PayloadMcpApiKey;
     'payload-kv': PayloadKv;
     'payload-jobs': PayloadJob;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
     'payload-query-presets': PayloadQueryPreset;
+    'payload-llm-instructions': PayloadLlmInstruction;
   };
   collectionsJoins: {
     'org-units': {
@@ -544,13 +707,13 @@ export interface Config {
     search: SearchSelect<false> | SearchSelect<true>;
     exports: ExportsSelect<false> | ExportsSelect<true>;
     imports: ImportsSelect<false> | ImportsSelect<true>;
-    'payload-mcp-api-keys': PayloadMcpApiKeysSelect<false> | PayloadMcpApiKeysSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-jobs': PayloadJobsSelect<false> | PayloadJobsSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
     'payload-query-presets': PayloadQueryPresetsSelect<false> | PayloadQueryPresetsSelect<true>;
+    'payload-llm-instructions': PayloadLlmInstructionsSelect<false> | PayloadLlmInstructionsSelect<true>;
   };
   db: {
     defaultIDType: string;
@@ -667,9 +830,13 @@ export interface Config {
     | 'uk'
     | 'ar';
   widgets: {
+    welcome: WelcomeWidget;
     collections: CollectionsWidget;
+    'collection-query': CollectionQueryWidget;
+    activity: ActivityWidget;
+    'upload-dropzone': UploadDropzoneWidget;
   };
-  user: User | PayloadMcpApiKey;
+  user: User;
   jobs: {
     tasks: {
       'dunning-cycle': TaskDunningCycle;
@@ -703,24 +870,6 @@ export interface Config {
   };
 }
 export interface UserAuthOperations {
-  forgotPassword: {
-    email: string;
-    password: string;
-  };
-  login: {
-    email: string;
-    password: string;
-  };
-  registerFirstUser: {
-    email: string;
-    password: string;
-  };
-  unlock: {
-    email: string;
-    password: string;
-  };
-}
-export interface PayloadMcpApiKeyAuthOperations {
   forgotPassword: {
     email: string;
     password: string;
@@ -796,6 +945,10 @@ export interface ConsolidationElimination {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1024,522 +1177,14 @@ export interface Tenant {
    */
   mcpApiKey?: string | null;
   handle?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "journal-entries".
- */
-export interface JournalEntry {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * The project this belongs to. Costs book to the project; the project carries the award.
-   */
-  project?: (string | null) | Project;
-  entryNumber: string;
-  entryDate: string;
-  postedDate?: string | null;
-  description: string;
-  status?: ('draft' | 'pending_approval' | 'posted' | 'reversed' | 'void') | null;
-  lines: {
-    lineNumber?: number | null;
-    glAccount: string | GlAccount;
-    accountNumber?: string | null;
-    accountName?: string | null;
-    description?: string | null;
-    debit?: number | null;
-    credit?: number | null;
-    /**
-     * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-     */
-    currency?: string | null;
-    exchangeRate?: number | null;
-    costCenterId?: string | null;
-    id?: string | null;
-  }[];
-  debitTotal?: number | null;
-  creditTotal?: number | null;
-  isBalanced?: boolean | null;
-  sourceType:
-    | 'manual'
-    | 'invoice'
-    | 'bill'
-    | 'payment'
-    | 'bank_reconciliation'
-    | 'period_end_adjustment'
-    | 'tax_calculation'
-    | 'currency_adjustment'
-    | 'lease_period';
-  sourceId?: string | null;
-  sourceEvent?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  handle?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS-15 §35 over-time-recognition anchor. WIP accumulates per project; revenue recognises per chosen progress measurement (cost-to-cost / milestone / output-method).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "projects".
- */
-export interface Project {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Tenant-unique project code (e.g. PRJ-2026-001).
-   */
-  projectCode: string;
-  /**
-   * Customer-facing project name.
-   */
-  name: string;
-  description?: string | null;
-  customer?: (string | null) | Party;
-  /**
-   * The award funding this project. Costs book to the project; the project carries the award.
-   */
-  grant?: (string | null) | GovernmentGrant;
-  /**
-   * Master contract this project executes against (one contract may have many projects).
-   */
-  contract?: (string | null) | Contract;
-  /**
-   * Reporting legal entity that books this project's revenue + costs.
-   */
-  legalEntity?: (string | null) | LegalEntity;
-  /**
-   * Internal project owner (responsible for delivery + status).
-   */
-  projectManager?: (string | null) | User;
-  projectType?: ('fixed_price' | 'time_and_materials' | 'cost_plus' | 'milestone' | 'internal') | null;
-  /**
-   * Progress measurement method per IFRS-15. Drives the WIP / revenue posting cadence.
-   */
-  recognitionMethod?:
-    | (
-        | 'point_in_time'
-        | 'cost_to_cost'
-        | 'output_units'
-        | 'output_time'
-        | 'output_survey'
-        | 'milestone'
-        | 'right_to_invoice'
-      )
-    | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Total transaction price for this project (cents). For T&M projects use the not-to-exceed cap.
-   */
-  contractedAmount?: number | null;
-  /**
-   * Estimated total cost at completion (EAC) — denominator in cost-to-cost % complete.
-   */
-  budgetedCost?: number | null;
-  /**
-   * Estimated total labour hours (used by output-time method).
-   */
-  budgetedHours?: number | null;
-  /**
-   * contractedAmount − budgetedCost (auto-derived).
-   */
-  budgetedMargin?: number | null;
-  /**
-   * Cumulative posted cost (auto-summed from time-entries + materials + overhead allocation).
-   */
-  actualCostToDate?: number | null;
-  /**
-   * Cumulative recognised revenue (auto-summed from period postings).
-   */
-  recognisedRevenueToDate?: number | null;
-  /**
-   * Snapshot of latest period progress measurement.
-   */
-  percentComplete?: number | null;
-  plannedStartDate?: string | null;
-  plannedEndDate?: string | null;
-  actualStartDate?: string | null;
-  actualEndDate?: string | null;
-  /**
-   * IAS-37 §66 onerous-contract flag — when EAC > contracted, provision the full expected loss now.
-   */
-  isOnerous?: boolean | null;
-  status?: ('draft' | 'approved' | 'in_progress' | 'on_hold' | 'completed' | 'cancelled') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "parties".
- */
-export interface Party {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Unique party code (e.g., CUST-0001, VEND-0001)
-   */
-  code: string;
-  /**
-   * Display name
-   */
-  name: string;
-  /**
-   * The sides this party is on. One party may be both.
-   */
-  roles: ('customer' | 'vendor')[];
-  /**
-   * ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, e-invoicing).
-   */
-  country?: string | null;
-  identity: {
-    /**
-     * Registered legal name (EN 16931 BT-27)
-     */
-    legalName?: string | null;
-    /**
-     * Party legal form
-     */
-    type: 'individual' | 'company' | 'government' | 'non_profit';
-    /**
-     * Lifecycle status
-     */
-    status: 'active' | 'on_hold' | 'inactive' | 'archived';
-  };
-  contact?: {
-    /**
-     * Primary email
-     */
-    email?: string | null;
-    /**
-     * Primary phone
-     */
-    phone?: string | null;
-    /**
-     * Web site
-     */
-    website?: string | null;
-  };
-  addresses?: {
-    /**
-     * All known addresses for this party
-     */
-    addresses?: (string | Address)[] | null;
-    /**
-     * Default billing address
-     */
-    billingAddress?: (string | null) | Address;
-    /**
-     * Default shipping address
-     */
-    shippingAddress?: (string | null) | Address;
-    /**
-     * Default remit-to address for payments
-     */
-    remitToAddress?: (string | null) | Address;
-  };
-  tax?: {
-    /**
-     * VAT / Tax ID (EN 16931 BT-31). Auto-classified against the per-country regex registry on save.
-     */
-    vatNumber?: string | null;
-    /**
-     * Auto-stamped — e.g. "VAT (BG)", "EIN", "GSTIN", "EIK / Bulstat".
-     */
-    vatNumberType?: string | null;
-    /**
-     * Tax-exempt party (e.g., resale certificate)
-     */
-    taxExempt?: boolean | null;
-    /**
-     * Exemption certificate number
-     */
-    taxExemptionCertificate?: string | null;
-    /**
-     * Default tax code applied on invoices and bills
-     */
-    defaultTaxCode?: (string | null) | TaxCode;
-    /**
-     * US: subject to IRS Form 1099 reporting
-     */
-    vendor1099Eligible?: boolean | null;
-    /**
-     * IRS 1099 form variant
-     */
-    tax1099FormType?: ('1099_nec' | '1099_misc' | '1099_k' | '1099_int' | '1099_div') | null;
-    /**
-     * Tax ID format
-     */
-    taxIdType?: ('ein' | 'ssn' | 'itin' | 'vat' | 'other') | null;
-    /**
-     * Backup withholding / WHT rate %
-     */
-    withholdingRate?: number | null;
-  };
-  commercial: {
-    /**
-     * Default payment terms
-     */
-    paymentTerms?:
-      ('due_on_receipt' | 'net_7' | 'net_14' | 'net_30' | 'net_45' | 'net_60' | 'net_90' | 'custom') | null;
-    /**
-     * Custom net days (used when paymentTerms = custom)
-     */
-    paymentTermsDays?: number | null;
-    /**
-     * Credit limit (cents)
-     */
-    creditLimit?: number | null;
-    /**
-     * ISO 4217 currency for credit limit
-     */
-    creditCurrency?: string | null;
-    /**
-     * Preferred disbursement method
-     */
-    preferredPaymentMethod?: ('ach' | 'wire' | 'check' | 'credit_card' | 'sepa' | 'cash' | 'other') | null;
-    /**
-     * ISO 4217 default trading currency
-     */
-    defaultCurrency: string;
-    /**
-     * BCP 47 locale (e.g. en, en-US, de-DE)
-     */
-    defaultLocale?: string | null;
-    /**
-     * Price list / tier identifier
-     */
-    priceList?: string | null;
-  };
-  bank?: {
-    /**
-     * Account holder name
-     */
-    bankAccountName?: string | null;
-    /**
-     * Bank name
-     */
-    bankName?: string | null;
-    /**
-     * ABA routing (US) / sort code (UK)
-     */
-    bankRoutingNumber?: string | null;
-    /**
-     * Account number (last 4 visible recommended)
-     */
-    bankAccountNumber?: string | null;
-    /**
-     * IBAN (ISO 13616)
-     */
-    bankIban?: string | null;
-    /**
-     * SWIFT/BIC (ISO 9362)
-     */
-    bankSwiftBic?: string | null;
-    /**
-     * ISO 3166-1 alpha-2 country of bank
-     */
-    bankCountryCode?: string | null;
-  };
-  ledger?: {
-    /**
-     * Default AR control account (asset)
-     */
-    defaultReceivableAccount?: (string | null) | GlAccount;
-    /**
-     * Default revenue account on invoices
-     */
-    defaultRevenueAccount?: (string | null) | GlAccount;
-    /**
-     * Default sales-discount contra-revenue account
-     */
-    defaultDiscountAccount?: (string | null) | GlAccount;
-    /**
-     * Default AP control account (liability)
-     */
-    defaultPayableAccount?: (string | null) | GlAccount;
-    /**
-     * Default expense account on bills
-     */
-    defaultExpenseAccount?: (string | null) | GlAccount;
-    /**
-     * Default withholding-tax payable account
-     */
-    defaultWithholdingAccount?: (string | null) | GlAccount;
-  };
-  notes?: {
-    /**
-     * Internal notes
-     */
-    note?: string | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  handle?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "addresses".
- */
-export interface Address {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  customer?: (string | null) | User;
-  title?: string | null;
-  firstName?: string | null;
-  lastName?: string | null;
-  company?: string | null;
-  addressLine1?: string | null;
-  addressLine2?: string | null;
-  city?: string | null;
-  state?: string | null;
-  postalCode?: string | null;
-  country:
-    | 'US'
-    | 'GB'
-    | 'CA'
-    | 'AU'
-    | 'AT'
-    | 'BE'
-    | 'BR'
-    | 'BG'
-    | 'CY'
-    | 'CZ'
-    | 'DK'
-    | 'EE'
-    | 'FI'
-    | 'FR'
-    | 'DE'
-    | 'GR'
-    | 'HK'
-    | 'HU'
-    | 'IN'
-    | 'IE'
-    | 'IT'
-    | 'JP'
-    | 'LV'
-    | 'LT'
-    | 'LU'
-    | 'MY'
-    | 'MT'
-    | 'MX'
-    | 'NL'
-    | 'NZ'
-    | 'NO'
-    | 'PL'
-    | 'PT'
-    | 'RO'
-    | 'SG'
-    | 'SK'
-    | 'SI'
-    | 'ES'
-    | 'SE'
-    | 'CH';
-  phone?: string | null;
-  /**
-   * Unique address code (e.g., ACME-NYC)
-   */
-  code?: string | null;
-  /**
-   * Contact person name
-   */
-  name?: string | null;
-  /**
-   * Email address
-   */
-  email?: string | null;
-  /**
-   * Tax regime (VAT/GST/None)
-   */
-  taxType?: ('vat' | 'gst' | 'none') | null;
-  /**
-   * Tax ID / VAT number
-   */
-  taxCode?: string | null;
-  /**
-   * Default tax rate (%)
-   */
-  taxRate?: number | null;
-  /**
-   * National ID number
-   */
-  ninCode?: string | null;
-  /**
-   * ISO 4217 currency code — defaults to the canonical DEFAULT_CURRENCY (derived from DEFAULT_COUNTRY).
-   */
-  currencyCode?: string | null;
-  /**
-   * Default debit account for transactions
-   */
-  debitAccount?: (string | null) | GlAccount;
-  /**
-   * Default credit account for transactions
-   */
-  creditAccount?: (string | null) | GlAccount;
-  /**
-   * Cash/bank account for payments
-   */
-  cashAccount?: (string | null) | GlAccount;
-  /**
-   * Internal notes
-   */
-  note?: string | null;
-  /**
-   * Use as default address
-   */
-  isDefault?: boolean | null;
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1721,13 +1366,25 @@ export interface User {
       | null;
   };
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
+  apiKey?: string | null;
+  apiKeyLast4?: string | null;
+  apiKeyIndex?: string | null;
   email: string;
   resetPasswordToken?: string | null;
   resetPasswordExpiration?: string | null;
   salt?: string | null;
   hash?: string | null;
+  resetPasswordRequestedAt?: string | null;
   loginAttempts?: number | null;
   lockUntil?: string | null;
   sessions?:
@@ -1735,6 +1392,19 @@ export interface User {
         id: string;
         createdAt?: string | null;
         expiresAt: string;
+        refreshCount?: number | null;
+        refreshedAt?: string | null;
+        label?: string | null;
+        type?: string | null;
+        metadata?:
+          | {
+              [k: string]: unknown;
+            }
+          | unknown[]
+          | string
+          | number
+          | boolean
+          | null;
       }[]
     | null;
   collection: 'users';
@@ -1751,22 +1421,18 @@ export interface Media {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   alt?: string | null;
-  caption?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  caption?: LexicalRichText<LexicalNodes_AD327369> | null;
   handle?: string | null;
+  prefix?: string | null;
+  _objectKey?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -1776,65 +1442,18 @@ export interface Media {
   filesize?: number | null;
   width?: number | null;
   height?: number | null;
-  focalX?: number | null;
-  focalY?: number | null;
-  sizes?: {
-    thumbnail?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    square?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    small?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    medium?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    large?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    xlarge?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    og?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
+  _stored?: boolean | null;
+  _transforms?: UploadTransforms;
+  original?: {
+    filename?: string | null;
+    url?: string | null;
+    mimeType?: string | null;
+    filesize?: number | null;
+    width?: number | null;
+    height?: number | null;
+    prefix?: string | null;
+    _objectKey?: string | null;
+    _stored?: boolean | null;
   };
 }
 /**
@@ -1879,6 +1498,14 @@ export interface OrgUnit {
       }[]
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1952,6 +1579,14 @@ export interface Role {
    */
   skillRoutes?: string[] | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1969,21 +1604,7 @@ export interface Page {
   title: string;
   hero: {
     type: 'none' | 'highImpact' | 'mediumImpact' | 'lowImpact';
-    richText?: {
-      root: {
-        type: string;
-        children: {
-          type: any;
-          version: number;
-          [k: string]: unknown;
-        }[];
-        direction: ('ltr' | 'rtl') | null;
-        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-        indent: number;
-        version: number;
-      };
-      [k: string]: unknown;
-    } | null;
+    richText?: LexicalRichText<LexicalNodes_17BFECDB> | null;
     links?:
       | {
           link: {
@@ -2024,10 +1645,6 @@ export interface Page {
    */
   seed?: string | null;
   publishedAt?: string | null;
-  /**
-   * When enabled, the slug will auto-generate from the title field on save and autosave.
-   */
-  generateSlug?: boolean | null;
   slug: string;
   parent?: (string | null) | Page;
   breadcrumbs?:
@@ -2039,6 +1656,14 @@ export interface Page {
       }[]
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -2056,21 +1681,7 @@ export interface Post {
   tenant?: (string | null) | Tenant;
   title: string;
   heroImage?: (string | null) | Media;
-  content: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  content: LexicalRichText<LexicalNodes_2CF183CE>;
   /**
    * The content field as markdown — computed on read, never stored.
    */
@@ -2105,12 +1716,16 @@ export interface Post {
         name?: string | null;
       }[]
     | null;
-  /**
-   * When enabled, the slug will auto-generate from the title field on save and autosave.
-   */
-  generateSlug?: boolean | null;
   slug: string;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -2127,10 +1742,6 @@ export interface Category {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   title: string;
-  /**
-   * When enabled, the slug will auto-generate from the title field on save and autosave.
-   */
-  generateSlug?: boolean | null;
   slug: string;
   parent?: (string | null) | Category;
   breadcrumbs?:
@@ -2142,6 +1753,14 @@ export interface Category {
       }[]
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -2191,21 +1810,7 @@ export interface Product {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   title: string;
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  description?: LexicalRichText<LexicalNodes_FF0D232D> | null;
   gallery?:
     | {
         image: string | Media;
@@ -2394,10 +1999,6 @@ export interface Product {
     description?: string | null;
   };
   categories?: (string | Category)[] | null;
-  /**
-   * When enabled, the slug will auto-generate from the title field on save and autosave.
-   */
-  generateSlug?: boolean | null;
   slug: string;
   handle?: string | null;
   updatedAt: string;
@@ -2456,21 +2057,7 @@ export interface VariantType {
  * via the `definition` "CallToActionBlock".
  */
 export interface CallToActionBlock {
-  richText?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  richText?: LexicalRichText<LexicalNodes_17BFECDB> | null;
   links?:
     | {
         link: {
@@ -2507,21 +2094,7 @@ export interface ContentBlock {
   columns?:
     | {
         size?: ('oneThird' | 'half' | 'twoThirds' | 'full') | null;
-        richText?: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
+        richText?: LexicalRichText<LexicalNodes_EA2944C2> | null;
         /**
          * The richText field as markdown — computed on read, never stored.
          */
@@ -2562,6 +2135,137 @@ export interface MediaBlock {
   id?: string | null;
   blockName?: string | null;
   blockType: 'mediaBlock';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "addresses".
+ */
+export interface Address {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  customer?: (string | null) | User;
+  title?: string | null;
+  firstName?: string | null;
+  lastName?: string | null;
+  company?: string | null;
+  addressLine1?: string | null;
+  addressLine2?: string | null;
+  city?: string | null;
+  state?: string | null;
+  postalCode?: string | null;
+  country:
+    | 'US'
+    | 'GB'
+    | 'CA'
+    | 'AU'
+    | 'AT'
+    | 'BE'
+    | 'BR'
+    | 'BG'
+    | 'CY'
+    | 'CZ'
+    | 'DK'
+    | 'EE'
+    | 'FI'
+    | 'FR'
+    | 'DE'
+    | 'GR'
+    | 'HK'
+    | 'HU'
+    | 'IN'
+    | 'IE'
+    | 'IT'
+    | 'JP'
+    | 'LV'
+    | 'LT'
+    | 'LU'
+    | 'MY'
+    | 'MT'
+    | 'MX'
+    | 'NL'
+    | 'NZ'
+    | 'NO'
+    | 'PL'
+    | 'PT'
+    | 'RO'
+    | 'SG'
+    | 'SK'
+    | 'SI'
+    | 'ES'
+    | 'SE'
+    | 'CH';
+  phone?: string | null;
+  /**
+   * Unique address code (e.g., ACME-NYC)
+   */
+  code?: string | null;
+  /**
+   * Contact person name
+   */
+  name?: string | null;
+  /**
+   * Email address
+   */
+  email?: string | null;
+  /**
+   * Tax regime (VAT/GST/None)
+   */
+  taxType?: ('vat' | 'gst' | 'none') | null;
+  /**
+   * Tax ID / VAT number
+   */
+  taxCode?: string | null;
+  /**
+   * Default tax rate (%)
+   */
+  taxRate?: number | null;
+  /**
+   * National ID number
+   */
+  ninCode?: string | null;
+  /**
+   * ISO 4217 currency code — defaults to the canonical DEFAULT_CURRENCY (derived from DEFAULT_COUNTRY).
+   */
+  currencyCode?: string | null;
+  /**
+   * Default debit account for transactions
+   */
+  debitAccount?: (string | null) | GlAccount;
+  /**
+   * Default credit account for transactions
+   */
+  creditAccount?: (string | null) | GlAccount;
+  /**
+   * Cash/bank account for payments
+   */
+  cashAccount?: (string | null) | GlAccount;
+  /**
+   * Internal notes
+   */
+  note?: string | null;
+  /**
+   * Use as default address
+   */
+  isDefault?: boolean | null;
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  handle?: string | null;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -2649,6 +2353,14 @@ export interface GlAccount {
       }[]
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -2657,21 +2369,7 @@ export interface GlAccount {
  * via the `definition` "ArchiveBlock".
  */
 export interface ArchiveBlock {
-  introContent?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  introContent?: LexicalRichText<LexicalNodes_17BFECDB> | null;
   populateBy?: ('collection' | 'selection') | null;
   relationTo?: 'posts' | null;
   categories?: (string | Category)[] | null;
@@ -2693,21 +2391,7 @@ export interface ArchiveBlock {
 export interface FormBlock {
   form: string | Form;
   enableIntro?: boolean | null;
-  introContent?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  introContent?: LexicalRichText<LexicalNodes_17BFECDB> | null;
   id?: string | null;
   blockName?: string | null;
   blockType: 'formBlock';
@@ -2723,141 +2407,13 @@ export interface Form {
    */
   uuid?: string | null;
   title: string;
-  fields?:
-    | (
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            required?: boolean | null;
-            defaultValue?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'checkbox';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'country';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'email';
-          }
-        | {
-            message?: {
-              root: {
-                type: string;
-                children: {
-                  type: any;
-                  version: number;
-                  [k: string]: unknown;
-                }[];
-                direction: ('ltr' | 'rtl') | null;
-                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-                indent: number;
-                version: number;
-              };
-              [k: string]: unknown;
-            } | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'message';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            defaultValue?: number | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'number';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            defaultValue?: string | null;
-            placeholder?: string | null;
-            options?:
-              | {
-                  label: string;
-                  value: string;
-                  id?: string | null;
-                }[]
-              | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'select';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'state';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            defaultValue?: string | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'text';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            defaultValue?: string | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'textarea';
-          }
-      )[]
-    | null;
+  fields?: (Checkbox | Country | Email | Message | Number | Select | State | Text | Textarea)[] | null;
   submitButtonLabel?: string | null;
-  /**
-   * Choose whether to display an on-page message or redirect to a different page after they submit the form.
-   */
   confirmationType?: ('message' | 'redirect') | null;
-  confirmationMessage?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  confirmationMessage?: LexicalRichText<LexicalNodes_AD327369>;
   redirect?: {
     url: string;
   };
-  /**
-   * Send custom emails when the form submits. Use comma separated lists to send the same email to multiple recipients. To reference a value from this form, wrap that field's name with double curly brackets, i.e. {{firstName}}. You can use a wildcard {{*}} to output all data and {{*:table}} to format it as an HTML table in the email.
-   */
   emails?:
     | {
         emailTo?: string | null;
@@ -2866,30 +2422,148 @@ export interface Form {
         replyTo?: string | null;
         emailFrom?: string | null;
         subject: string;
-        /**
-         * Enter the message that should be sent in this email.
-         */
-        message?: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
+        message?: LexicalRichText<LexicalNodes_AD327369> | null;
         id?: string | null;
       }[]
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Checkbox".
+ */
+export interface Checkbox {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  required?: boolean | null;
+  defaultValue?: boolean | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'checkbox';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Country".
+ */
+export interface Country {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  required?: boolean | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'country';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Email".
+ */
+export interface Email {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  required?: boolean | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'email';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Message".
+ */
+export interface Message {
+  message?: LexicalRichText<LexicalNodes_AD327369> | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'message';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Number".
+ */
+export interface Number {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  defaultValue?: number | null;
+  required?: boolean | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'number';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Select".
+ */
+export interface Select {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  defaultValue?: string | null;
+  placeholder?: string | null;
+  options?:
+    | {
+        label: string;
+        value: string;
+        id?: string | null;
+      }[]
+    | null;
+  required?: boolean | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'select';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "State".
+ */
+export interface State {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  required?: boolean | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'state';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Text".
+ */
+export interface Text {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  defaultValue?: string | null;
+  required?: boolean | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'text';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Textarea".
+ */
+export interface Textarea {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  defaultValue?: string | null;
+  required?: boolean | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'textarea';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -3204,6 +2878,7 @@ export interface Transaction {
   };
   status:
     | 'pending'
+    | 'processing'
     | 'succeeded'
     | 'failed'
     | 'cancelled'
@@ -3751,6 +3426,14 @@ export interface Invoice {
     | boolean
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3792,6 +3475,14 @@ export interface Subscription {
   lastStatusChange?: string | null;
   lastStatusChangeReason?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3847,6 +3538,14 @@ export interface SubscriptionPlan {
    */
   sortOrder?: number | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3901,6 +3600,10 @@ export interface FiscalDevice {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3926,6 +3629,10 @@ export interface Operator {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3961,6 +3668,10 @@ export interface Terminal {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4045,6 +3756,10 @@ export interface Receipt {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4113,177 +3828,242 @@ export interface Sale {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contracts".
+ * via the `definition` "parties".
  */
-export interface Contract {
+export interface Party {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
-  contractNumber: string;
-  customer: string | Party;
-  title: string;
-  effectiveFrom: string;
-  effectiveTo?: string | null;
   /**
-   * Aggregate transaction price (cents). = transactionPriceFixed + transactionPriceVariable + financingComponent − considerationPayableToCustomer. Maps to canonical TransactionPrice.total.
+   * Unique party code (e.g., CUST-0001, VEND-0001)
    */
-  totalValue?: number | null;
+  code: string;
   /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   * Display name
    */
-  currency?: string | null;
+  name: string;
   /**
-   * Fixed consideration component (cents). IFRS 15 §47. Maps to canonical TransactionPrice.fixed.
+   * The sides this party is on. One party may be both.
    */
-  transactionPriceFixed?: number | null;
+  roles: ('customer' | 'vendor')[];
   /**
-   * Estimated variable consideration after constraint (cents). IFRS 15 §50-§59. Maps to canonical VariableConsideration.estimate − constraint.
+   * ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, e-invoicing).
    */
-  transactionPriceVariable?: number | null;
-  /**
-   * IFRS 15 §53 — estimation method when variable consideration is non-zero.
-   */
-  variableConsiderationMethod?: ('expected_value' | 'most_likely_amount') | null;
-  /**
-   * Significant financing component (cents). IFRS 15 §60-§65. Positive when entity is financier; negative when customer is financed.
-   */
-  financingComponent?: number | null;
-  /**
-   * IFRS 15 §17 — other contracts this one is accounted for as part of (combined-contract group). Maps to canonical Contract.combinedWithContractIds.
-   */
-  combinedWithContracts?: (string | Contract)[] | null;
-  paymentTerms?: ('net0' | 'net15' | 'net30' | 'net60' | 'net90' | 'custom') | null;
-  /**
-   * IFRS 15 §22 distinct performance obligations.
-   */
-  performanceObligations?: {
-    docs?: (string | PerformanceObligation)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
+  country?: string | null;
+  identity: {
+    /**
+     * Registered legal name (EN 16931 BT-27)
+     */
+    legalName?: string | null;
+    /**
+     * Party legal form
+     */
+    type: 'individual' | 'company' | 'government' | 'non_profit';
+    /**
+     * Lifecycle status
+     */
+    status: 'active' | 'on_hold' | 'inactive' | 'archived';
+  };
+  contact?: {
+    /**
+     * Primary email
+     */
+    email?: string | null;
+    /**
+     * Primary phone
+     */
+    phone?: string | null;
+    /**
+     * Web site
+     */
+    website?: string | null;
+  };
+  addresses?: {
+    /**
+     * All known addresses for this party
+     */
+    addresses?: (string | Address)[] | null;
+    /**
+     * Default billing address
+     */
+    billingAddress?: (string | null) | Address;
+    /**
+     * Default shipping address
+     */
+    shippingAddress?: (string | null) | Address;
+    /**
+     * Default remit-to address for payments
+     */
+    remitToAddress?: (string | null) | Address;
+  };
+  tax?: {
+    /**
+     * VAT / Tax ID (EN 16931 BT-31). Auto-classified against the per-country regex registry on save.
+     */
+    vatNumber?: string | null;
+    /**
+     * Auto-stamped — e.g. "VAT (BG)", "EIN", "GSTIN", "EIK / Bulstat".
+     */
+    vatNumberType?: string | null;
+    /**
+     * Tax-exempt party (e.g., resale certificate)
+     */
+    taxExempt?: boolean | null;
+    /**
+     * Exemption certificate number
+     */
+    taxExemptionCertificate?: string | null;
+    /**
+     * Default tax code applied on invoices and bills
+     */
+    defaultTaxCode?: (string | null) | TaxCode;
+    /**
+     * US: subject to IRS Form 1099 reporting
+     */
+    vendor1099Eligible?: boolean | null;
+    /**
+     * IRS 1099 form variant
+     */
+    tax1099FormType?: ('1099_nec' | '1099_misc' | '1099_k' | '1099_int' | '1099_div') | null;
+    /**
+     * Tax ID format
+     */
+    taxIdType?: ('ein' | 'ssn' | 'itin' | 'vat' | 'other') | null;
+    /**
+     * Backup withholding / WHT rate %
+     */
+    withholdingRate?: number | null;
+  };
+  commercial: {
+    /**
+     * Default payment terms
+     */
+    paymentTerms?:
+      ('due_on_receipt' | 'net_7' | 'net_14' | 'net_30' | 'net_45' | 'net_60' | 'net_90' | 'custom') | null;
+    /**
+     * Custom net days (used when paymentTerms = custom)
+     */
+    paymentTermsDays?: number | null;
+    /**
+     * Credit limit (cents)
+     */
+    creditLimit?: number | null;
+    /**
+     * ISO 4217 currency for credit limit
+     */
+    creditCurrency?: string | null;
+    /**
+     * Preferred disbursement method
+     */
+    preferredPaymentMethod?: ('ach' | 'wire' | 'check' | 'credit_card' | 'sepa' | 'cash' | 'other') | null;
+    /**
+     * ISO 4217 default trading currency
+     */
+    defaultCurrency: string;
+    /**
+     * BCP 47 locale (e.g. en, en-US, de-DE)
+     */
+    defaultLocale?: string | null;
+    /**
+     * Price list / tier identifier
+     */
+    priceList?: string | null;
+  };
+  bank?: {
+    /**
+     * Account holder name
+     */
+    bankAccountName?: string | null;
+    /**
+     * Bank name
+     */
+    bankName?: string | null;
+    /**
+     * ABA routing (US) / sort code (UK)
+     */
+    bankRoutingNumber?: string | null;
+    /**
+     * Account number (last 4 visible recommended)
+     */
+    bankAccountNumber?: string | null;
+    /**
+     * IBAN (ISO 13616)
+     */
+    bankIban?: string | null;
+    /**
+     * SWIFT/BIC (ISO 9362)
+     */
+    bankSwiftBic?: string | null;
+    /**
+     * ISO 3166-1 alpha-2 country of bank
+     */
+    bankCountryCode?: string | null;
+  };
+  ledger?: {
+    /**
+     * Default AR control account (asset)
+     */
+    defaultReceivableAccount?: (string | null) | GlAccount;
+    /**
+     * Default revenue account on invoices
+     */
+    defaultRevenueAccount?: (string | null) | GlAccount;
+    /**
+     * Default sales-discount contra-revenue account
+     */
+    defaultDiscountAccount?: (string | null) | GlAccount;
+    /**
+     * Default AP control account (liability)
+     */
+    defaultPayableAccount?: (string | null) | GlAccount;
+    /**
+     * Default expense account on bills
+     */
+    defaultExpenseAccount?: (string | null) | GlAccount;
+    /**
+     * Default withholding-tax payable account
+     */
+    defaultWithholdingAccount?: (string | null) | GlAccount;
+  };
+  notes?: {
+    /**
+     * Internal notes
+     */
+    note?: string | null;
   };
   /**
-   * IFRS 15 §B47 / ASC 606-10-25-13 contract modifications.
+   * Additional metadata
    */
-  modifications?:
+  metadata?:
     | {
-        modifiedAt: string;
-        description: string;
-        priceImpact?: number | null;
-        modifiedBy?: (string | null) | User;
-        id?: string | null;
-      }[]
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
     | null;
-  status?:
-    ('draft' | 'pending_approval' | 'pending_signatures' | 'active' | 'suspended' | 'completed' | 'terminated') | null;
-  activatedAt?: string | null;
-  terminatedAt?: string | null;
-  /**
-   * Linked subscription (if SaaS).
-   */
-  subscription?: (string | null) | Subscription;
-  zkod?: {
-    /**
-     * Bulgaria ZKOD contract registry number (unique per ZKOD)
-     */
-    zkodContractNumber?: string | null;
-    /**
-     * Contract notarized per Bulgaria registry (required for contracts > 10k BGN)
-     */
-    zkodNotarized?: boolean | null;
-    /**
-     * Bulgaria Labor Code Art. 331: mandatory arbitration clause present (required for employment-related contracts)
-     */
-    mandatoryArbitrationClause?: boolean | null;
-  };
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
   handle?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "performance-obligations".
- */
-export interface PerformanceObligation {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  contract: string | Contract;
-  description: string;
-  /**
-   * IFRS 15 §22(a): one distinct promise. §22(b): a series of substantially-the-same distinct goods/services with the same pattern of transfer (typical for SaaS subscriptions).
-   */
-  kind: 'distinct' | 'series';
-  /**
-   * When the customer obtains control. Most goods → point-in-time at delivery; services that meet §35 criteria → over-time.
-   */
-  recognitionTiming: 'point_in_time' | 'over_time';
-  /**
-   * Required when recognitionTiming = over_time. Output methods measure value transferred; input methods measure inputs consumed.
-   */
-  overTimeMeasurement?: ('output_method' | 'input_method') | null;
-  /**
-   * Specific measurement kind under the chosen output/input method.
-   */
-  measurementKind?:
-    | (
-        | 'units_delivered'
-        | 'units_produced'
-        | 'milestones'
-        | 'time_elapsed'
-        | 'survey_of_work'
-        | 'cost_to_cost'
-        | 'labor_hours'
-        | 'machine_hours'
-        | 'resources_consumed'
-        | 'time_passed'
-      )
-    | null;
-  /**
-   * DEPRECATED — superseded by recognitionTiming + overTimeMeasurement + measurementKind. Kept for back-compat.
-   */
-  recognitionMethod?: ('point_in_time' | 'over_time_input' | 'over_time_output') | null;
-  /**
-   * In cents. Maps to canonical PerformanceObligation.standaloneSellingPrice.
-   */
-  standaloneSellingPrice: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Portion of contract transaction price allocated to this PO (cents). Computed by IFRS 15 §73 relative-SSP. Maps to canonical PerformanceObligation.allocatedAmount.
-   */
-  allocatedAmount?: number | null;
-  /**
-   * Cumulative recognised revenue (cents). Maps to canonical PerformanceObligation.recognizedAmount (note spelling — collection preserves British spelling for back-compat with seed data).
-   */
-  recognisedToDate?: number | null;
-  /**
-   * For over-time methods: 0–100. Maps to canonical PerformanceObligation.progress × 100 (canonical type uses 0..1 fraction).
-   */
-  percentComplete?: number | null;
-  status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
-  satisfiedAt?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4385,6 +4165,14 @@ export interface TaxCode {
     | boolean
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4530,6 +4318,14 @@ export interface TaxJurisdiction {
     | boolean
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4564,49 +4360,203 @@ export interface ComplianceFramework {
   effectiveDate?: string | null;
   isActive?: boolean | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "goods-receipts".
+ * via the `definition` "contracts".
  */
-export interface GoodsReceipt {
+export interface Contract {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
-  receiptNumber: string;
-  purchaseOrder: string | Order;
-  receivedDate: string;
-  lines: {
-    item?: (string | null) | Product;
-    description?: string | null;
-    quantityReceived: number;
-    quantityDamaged?: number | null;
-    condition?: ('good' | 'damaged' | 'partial' | 'rejected') | null;
-    id?: string | null;
-  }[];
-  status?: ('pending' | 'accepted' | 'partial' | 'rejected') | null;
-  inspectedAt?: string | null;
-  inspectedBy?: (string | null) | User;
+  contractNumber: string;
+  customer: string | Party;
+  title: string;
+  effectiveFrom: string;
+  effectiveTo?: string | null;
+  /**
+   * Aggregate transaction price (cents). = transactionPriceFixed + transactionPriceVariable + financingComponent − considerationPayableToCustomer. Maps to canonical TransactionPrice.total.
+   */
+  totalValue?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Fixed consideration component (cents). IFRS 15 §47. Maps to canonical TransactionPrice.fixed.
+   */
+  transactionPriceFixed?: number | null;
+  /**
+   * Estimated variable consideration after constraint (cents). IFRS 15 §50-§59. Maps to canonical VariableConsideration.estimate − constraint.
+   */
+  transactionPriceVariable?: number | null;
+  /**
+   * IFRS 15 §53 — estimation method when variable consideration is non-zero.
+   */
+  variableConsiderationMethod?: ('expected_value' | 'most_likely_amount') | null;
+  /**
+   * Significant financing component (cents). IFRS 15 §60-§65. Positive when entity is financier; negative when customer is financed.
+   */
+  financingComponent?: number | null;
+  /**
+   * IFRS 15 §17 — other contracts this one is accounted for as part of (combined-contract group). Maps to canonical Contract.combinedWithContractIds.
+   */
+  combinedWithContracts?: (string | Contract)[] | null;
+  paymentTerms?: ('net0' | 'net15' | 'net30' | 'net60' | 'net90' | 'custom') | null;
+  /**
+   * IFRS 15 §22 distinct performance obligations.
+   */
+  performanceObligations?: {
+    docs?: (string | PerformanceObligation)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  /**
+   * IFRS 15 §B47 / ASC 606-10-25-13 contract modifications.
+   */
+  modifications?:
+    | {
+        modifiedAt: string;
+        description: string;
+        priceImpact?: number | null;
+        modifiedBy?: (string | null) | User;
+        id?: string | null;
+      }[]
+    | null;
+  status?:
+    ('draft' | 'pending_approval' | 'pending_signatures' | 'active' | 'suspended' | 'completed' | 'terminated') | null;
+  activatedAt?: string | null;
+  terminatedAt?: string | null;
+  /**
+   * Linked subscription (if SaaS).
+   */
+  subscription?: (string | null) | Subscription;
+  zkod?: {
+    /**
+     * Bulgaria ZKOD contract registry number (unique per ZKOD)
+     */
+    zkodContractNumber?: string | null;
+    /**
+     * Contract notarized per Bulgaria registry (required for contracts > 10k BGN)
+     */
+    zkodNotarized?: boolean | null;
+    /**
+     * Bulgaria Labor Code Art. 331: mandatory arbitration clause present (required for employment-related contracts)
+     */
+    mandatoryArbitrationClause?: boolean | null;
+  };
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
- * Analytical dimension for segment reporting (IFRS 8 / ASC 280). JE lines reference these.
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "performance-obligations".
+ */
+export interface PerformanceObligation {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  contract: string | Contract;
+  description: string;
+  /**
+   * IFRS 15 §22(a): one distinct promise. §22(b): a series of substantially-the-same distinct goods/services with the same pattern of transfer (typical for SaaS subscriptions).
+   */
+  kind: 'distinct' | 'series';
+  /**
+   * When the customer obtains control. Most goods → point-in-time at delivery; services that meet §35 criteria → over-time.
+   */
+  recognitionTiming: 'point_in_time' | 'over_time';
+  /**
+   * Required when recognitionTiming = over_time. Output methods measure value transferred; input methods measure inputs consumed.
+   */
+  overTimeMeasurement?: ('output_method' | 'input_method') | null;
+  /**
+   * Specific measurement kind under the chosen output/input method.
+   */
+  measurementKind?:
+    | (
+        | 'units_delivered'
+        | 'units_produced'
+        | 'milestones'
+        | 'time_elapsed'
+        | 'survey_of_work'
+        | 'cost_to_cost'
+        | 'labor_hours'
+        | 'machine_hours'
+        | 'resources_consumed'
+        | 'time_passed'
+      )
+    | null;
+  /**
+   * DEPRECATED — superseded by recognitionTiming + overTimeMeasurement + measurementKind. Kept for back-compat.
+   */
+  recognitionMethod?: ('point_in_time' | 'over_time_input' | 'over_time_output') | null;
+  /**
+   * In cents. Maps to canonical PerformanceObligation.standaloneSellingPrice.
+   */
+  standaloneSellingPrice: number;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Portion of contract transaction price allocated to this PO (cents). Computed by IFRS 15 §73 relative-SSP. Maps to canonical PerformanceObligation.allocatedAmount.
+   */
+  allocatedAmount?: number | null;
+  /**
+   * Cumulative recognised revenue (cents). Maps to canonical PerformanceObligation.recognizedAmount (note spelling — collection preserves British spelling for back-compat with seed data).
+   */
+  recognisedToDate?: number | null;
+  /**
+   * For over-time methods: 0–100. Maps to canonical PerformanceObligation.progress × 100 (canonical type uses 0..1 fraction).
+   */
+  percentComplete?: number | null;
+  status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
+  satisfiedAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IFRS-15 §35 over-time-recognition anchor. WIP accumulates per project; revenue recognises per chosen progress measurement (cost-to-cost / milestone / output-method).
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "cost-centers".
+ * via the `definition` "projects".
  */
-export interface CostCenter {
+export interface Project {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
@@ -4614,72 +4564,96 @@ export interface CostCenter {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   /**
-   * Short alphanumeric code (e.g. EU-DE-ENG-FE).
+   * Tenant-unique project code (e.g. PRJ-2026-001).
    */
-  costCenterCode: string;
+  projectCode: string;
+  /**
+   * Customer-facing project name.
+   */
   name: string;
+  description?: string | null;
+  customer?: (string | null) | Party;
   /**
-   * Drives presentation: regions/countries roll up to consolidated; departments/teams roll up to their parent BU; profit centers carry both revenue and expense.
+   * The award funding this project. Costs book to the project; the project carries the award.
    */
-  kind: 'region' | 'country' | 'business_unit' | 'department' | 'team' | 'project' | 'cost_pool' | 'profit_center';
+  grant?: (string | null) | GovernmentGrant;
   /**
-   * Parent in the hierarchy. Null = root.
+   * Master contract this project executes against (one contract may have many projects).
    */
-  parent?: (string | null) | CostCenter;
+  contract?: (string | null) | Contract;
   /**
-   * ISO 3166-1 alpha-2 — populated for kind = country, optional otherwise. Used by IFRS 8 / ASC 280 geographic disclosure.
+   * Reporting legal entity that books this project's revenue + costs.
    */
-  country?: string | null;
+  legalEntity?: (string | null) | LegalEntity;
   /**
-   * Cost-center owner / department head.
+   * Internal project owner (responsible for delivery + status).
    */
-  manager?: (string | null) | User;
+  projectManager?: (string | null) | User;
+  projectType?: ('fixed_price' | 'time_and_materials' | 'cost_plus' | 'milestone' | 'internal') | null;
   /**
-   * IFRS 8 §13: meets the 10% revenue / asset / loss threshold for reportable segments.
+   * Progress measurement method per IFRS-15. Drives the WIP / revenue posting cadence.
    */
-  reportableSegment?: boolean | null;
-  /**
-   * JE lines may post revenue accounts to this CC.
-   */
-  allowsRevenue?: boolean | null;
-  /**
-   * JE lines may post expense accounts to this CC.
-   */
-  allowsExpense?: boolean | null;
-  /**
-   * JE lines may post capex (FixedAssets) to this CC.
-   */
-  allowsCapex?: boolean | null;
-  /**
-   * When this is a cost pool (kind = cost_pool), describe the periodic allocation to consumer cost-centers (basis + percentages).
-   */
-  allocationRules?:
-    | {
-        targetCostCenter: string | CostCenter;
-        basis?: ('headcount' | 'floor_area' | 'revenue_pct' | 'manual_pct' | 'direct_costs_pct') | null;
-        percentage?: number | null;
-        id?: string | null;
-      }[]
+  recognitionMethod?:
+    | (
+        | 'point_in_time'
+        | 'cost_to_cost'
+        | 'output_units'
+        | 'output_time'
+        | 'output_survey'
+        | 'milestone'
+        | 'right_to_invoice'
+      )
     | null;
-  effectiveFrom: string;
   /**
-   * Null = open-ended; populate on retirement.
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
    */
-  effectiveTo?: string | null;
-  status?: ('active' | 'inactive' | 'retired') | null;
+  currency?: string | null;
+  /**
+   * Total transaction price for this project (cents). For T&M projects use the not-to-exceed cap.
+   */
+  contractedAmount?: number | null;
+  /**
+   * Estimated total cost at completion (EAC) — denominator in cost-to-cost % complete.
+   */
+  budgetedCost?: number | null;
+  /**
+   * Estimated total labour hours (used by output-time method).
+   */
+  budgetedHours?: number | null;
+  /**
+   * contractedAmount − budgetedCost (auto-derived).
+   */
+  budgetedMargin?: number | null;
+  /**
+   * Cumulative posted cost (auto-summed from time-entries + materials + overhead allocation).
+   */
+  actualCostToDate?: number | null;
+  /**
+   * Cumulative recognised revenue (auto-summed from period postings).
+   */
+  recognisedRevenueToDate?: number | null;
+  /**
+   * Snapshot of latest period progress measurement.
+   */
+  percentComplete?: number | null;
+  plannedStartDate?: string | null;
+  plannedEndDate?: string | null;
+  actualStartDate?: string | null;
+  actualEndDate?: string | null;
+  /**
+   * IAS-37 §66 onerous-contract flag — when EAC > contracted, provision the full expected loss now.
+   */
+  isOnerous?: boolean | null;
+  status?: ('draft' | 'approved' | 'in_progress' | 'on_hold' | 'completed' | 'cancelled') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
-  breadcrumbs?:
-    | {
-        doc?: (string | null) | CostCenter;
-        url?: string | null;
-        label?: string | null;
-        id?: string | null;
-      }[]
-    | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4787,6 +4761,10 @@ export interface GovernmentGrant {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -4926,6 +4904,10 @@ export interface LegalEntity {
       }[]
     | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5080,6 +5062,10 @@ export interface Provision {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5235,6 +5221,76 @@ export interface FiscalPeriod {
     | boolean
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "journal-entries".
+ */
+export interface JournalEntry {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * The project this belongs to. Costs book to the project; the project carries the award.
+   */
+  project?: (string | null) | Project;
+  entryNumber: string;
+  entryDate: string;
+  postedDate?: string | null;
+  description: string;
+  status?: ('draft' | 'pending_approval' | 'posted' | 'reversed' | 'void') | null;
+  lines: {
+    lineNumber?: number | null;
+    glAccount: string | GlAccount;
+    accountNumber?: string | null;
+    accountName?: string | null;
+    description?: string | null;
+    debit?: number | null;
+    credit?: number | null;
+    /**
+     * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+     */
+    currency?: string | null;
+    exchangeRate?: number | null;
+    costCenterId?: string | null;
+    id?: string | null;
+  }[];
+  debitTotal?: number | null;
+  creditTotal?: number | null;
+  isBalanced?: boolean | null;
+  sourceType:
+    | 'manual'
+    | 'invoice'
+    | 'bill'
+    | 'payment'
+    | 'bank_reconciliation'
+    | 'period_end_adjustment'
+    | 'tax_calculation'
+    | 'currency_adjustment'
+    | 'lease_period';
+  sourceId?: string | null;
+  sourceEvent?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5280,6 +5336,14 @@ export interface AuditFinding {
     | null;
   isActive?: boolean | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5315,6 +5379,14 @@ export interface InternalControl {
   nextReviewDate?: string | null;
   isActive?: boolean | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5347,6 +5419,14 @@ export interface ControlTest {
   reviewDate?: string | null;
   isActive?: boolean | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5458,6 +5538,134 @@ export interface FixedAsset {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "goods-receipts".
+ */
+export interface GoodsReceipt {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  receiptNumber: string;
+  purchaseOrder: string | Order;
+  receivedDate: string;
+  lines: {
+    item?: (string | null) | Product;
+    description?: string | null;
+    quantityReceived: number;
+    quantityDamaged?: number | null;
+    condition?: ('good' | 'damaged' | 'partial' | 'rejected') | null;
+    id?: string | null;
+  }[];
+  status?: ('pending' | 'accepted' | 'partial' | 'rejected') | null;
+  inspectedAt?: string | null;
+  inspectedBy?: (string | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Analytical dimension for segment reporting (IFRS 8 / ASC 280). JE lines reference these.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cost-centers".
+ */
+export interface CostCenter {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Short alphanumeric code (e.g. EU-DE-ENG-FE).
+   */
+  costCenterCode: string;
+  name: string;
+  /**
+   * Drives presentation: regions/countries roll up to consolidated; departments/teams roll up to their parent BU; profit centers carry both revenue and expense.
+   */
+  kind: 'region' | 'country' | 'business_unit' | 'department' | 'team' | 'project' | 'cost_pool' | 'profit_center';
+  /**
+   * Parent in the hierarchy. Null = root.
+   */
+  parent?: (string | null) | CostCenter;
+  /**
+   * ISO 3166-1 alpha-2 — populated for kind = country, optional otherwise. Used by IFRS 8 / ASC 280 geographic disclosure.
+   */
+  country?: string | null;
+  /**
+   * Cost-center owner / department head.
+   */
+  manager?: (string | null) | User;
+  /**
+   * IFRS 8 §13: meets the 10% revenue / asset / loss threshold for reportable segments.
+   */
+  reportableSegment?: boolean | null;
+  /**
+   * JE lines may post revenue accounts to this CC.
+   */
+  allowsRevenue?: boolean | null;
+  /**
+   * JE lines may post expense accounts to this CC.
+   */
+  allowsExpense?: boolean | null;
+  /**
+   * JE lines may post capex (FixedAssets) to this CC.
+   */
+  allowsCapex?: boolean | null;
+  /**
+   * When this is a cost pool (kind = cost_pool), describe the periodic allocation to consumer cost-centers (basis + percentages).
+   */
+  allocationRules?:
+    | {
+        targetCostCenter: string | CostCenter;
+        basis?: ('headcount' | 'floor_area' | 'revenue_pct' | 'manual_pct' | 'direct_costs_pct') | null;
+        percentage?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  effectiveFrom: string;
+  /**
+   * Null = open-ended; populate on retirement.
+   */
+  effectiveTo?: string | null;
+  status?: ('active' | 'inactive' | 'retired') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | CostCenter;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5530,6 +5738,10 @@ export interface IntercompanyTransaction {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5595,6 +5807,14 @@ export interface Group {
       }[]
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5634,6 +5854,10 @@ export interface Activity {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5705,6 +5929,10 @@ export interface Lead {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5772,6 +6000,10 @@ export interface Opportunity {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5822,6 +6054,10 @@ export interface CustomerSegment {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5863,6 +6099,10 @@ export interface ConsentRecord {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -5981,6 +6221,10 @@ export interface AiSuggestion {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6052,6 +6296,10 @@ export interface UsageRecord {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6153,6 +6401,10 @@ export interface Batch {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6321,6 +6573,10 @@ export interface WorkOrder {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6462,6 +6718,10 @@ export interface LotVariant {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6623,6 +6883,10 @@ export interface Lot {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6736,6 +7000,10 @@ export interface LotWorkPhase {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6802,6 +7070,10 @@ export interface WorkPhase {
       }[]
     | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6872,6 +7144,10 @@ export interface WorkCenter {
       }[]
     | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6988,6 +7264,10 @@ export interface WorkShift {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7191,6 +7471,10 @@ export interface Employee {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7240,6 +7524,10 @@ export interface WarehouseLocation {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7307,6 +7595,10 @@ export interface QualityInspection {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7359,6 +7651,10 @@ export interface Shipment {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7425,6 +7721,10 @@ export interface InventoryMovement {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7466,6 +7766,10 @@ export interface BeneficialOwner {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7532,6 +7836,10 @@ export interface KycCheck {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7647,6 +7955,10 @@ export interface Booking {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7804,6 +8116,10 @@ export interface BookableResource {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7908,6 +8224,10 @@ export interface Space {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8046,6 +8366,10 @@ export interface Property {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8191,6 +8515,10 @@ export interface Lease {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8310,6 +8638,10 @@ export interface Case {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8396,6 +8728,10 @@ export interface ConsignmentArrangement {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8476,6 +8812,10 @@ export interface EvidenceAttestation {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8560,6 +8900,10 @@ export interface ConsignmentSale {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8636,6 +8980,10 @@ export interface ConsignmentInventory {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8727,6 +9075,10 @@ export interface CreditMemo {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8844,6 +9196,10 @@ export interface CustomsDeclaration {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8926,6 +9282,10 @@ export interface DunningCycle {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9167,6 +9527,14 @@ export interface InvoiceLine {
     | boolean
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9230,6 +9598,10 @@ export interface PaymentAllocation {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9352,6 +9724,10 @@ export interface PaymentRun {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9419,6 +9795,10 @@ export interface BankAccount {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9471,6 +9851,14 @@ export interface BankStatement {
   reconciliedBy?: (string | null) | User;
   importSource: 'csv' | 'ofx' | 'manual' | 'bank_api';
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9531,6 +9919,10 @@ export interface ProjectMilestone {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9572,6 +9964,10 @@ export interface Return {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9639,6 +10035,10 @@ export interface SepaMandate {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9724,6 +10124,10 @@ export interface VendorScorecard {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9836,6 +10240,10 @@ export interface Commitment {
    */
   approvalComments?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -9936,6 +10344,10 @@ export interface ContractPerformance {
    */
   performanceNotes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10047,6 +10459,10 @@ export interface AccountReconciliation {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10162,6 +10578,14 @@ export interface BankTransaction {
   status?: ('imported' | 'reconciled' | 'adjusted' | 'voided') | null;
   notes?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10343,26 +10767,20 @@ export interface AuditReport {
   /**
    * Immutable audit trail of report generation, submission, and approval milestones. Append-only.
    */
-  auditTrail?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  auditTrail?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * General notes on this audit report
    */
   notes?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10496,26 +10914,20 @@ export interface Consolidation {
   /**
    * Immutable audit trail of consolidation activities (readiness assessment, elimination posting, consolidation completion). Append-only.
    */
-  auditTrail?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  auditTrail?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * General notes on this consolidation process
    */
   notes?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10590,6 +11002,10 @@ export interface BankReconciliation {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10707,6 +11123,10 @@ export interface CarbonEmission {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10872,26 +11292,20 @@ export interface ClosingEntry {
   /**
    * Immutable audit trail of closing activities (who did what, when). Append-only.
    */
-  auditTrail?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  auditTrail?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * General notes on this period close
    */
   notes?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10942,21 +11356,7 @@ export interface PeriodLock {
   /**
    * Notes on why period was closed (e.g., "Q1 close, audited and filed")
    */
-  closeReason?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  closeReason?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * If locked, check to allow reversal entries (standard for closed periods)
    */
@@ -10982,6 +11382,14 @@ export interface PeriodLock {
    */
   notes?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11018,21 +11426,7 @@ export interface ComplianceDeadline {
   notifications?:
     | {
         notificationTitle: string;
-        notificationContent?: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
+        notificationContent?: LexicalRichText<LexicalNodes_AD327369> | null;
         notificationType?: ('email' | 'in-app' | 'sms' | 'calendar-event')[] | null;
         recipients?:
           | {
@@ -11048,6 +11442,14 @@ export interface ComplianceDeadline {
       }[]
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11073,6 +11475,14 @@ export interface ComplianceRequirement {
   resourceUrl?: string | null;
   isActive?: boolean | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11162,6 +11572,10 @@ export interface CsrdDisclosure {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11196,6 +11610,14 @@ export interface CurrencyRate {
   usedInTransactions?: number | null;
   notes?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11287,6 +11709,10 @@ export interface EarningsPerShare {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11349,6 +11775,14 @@ export interface EntityLegalStructure {
   auditRequirement?: ('required' | 'optional' | 'threshold' | 'not-required') | null;
   isActive?: boolean | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11409,6 +11843,14 @@ export interface EntityType {
   defaultComplianceFrameworks?: (string | ComplianceFramework)[] | null;
   isActive?: boolean | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11473,6 +11915,14 @@ export interface FinancialStatement {
   generatedAt: string;
   generatedBy?: (string | null) | User;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11552,6 +12002,14 @@ export interface FiscalCalendar {
    */
   notes?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11627,6 +12085,10 @@ export interface FxTransaction {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11704,6 +12166,10 @@ export interface GlPosting {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11820,6 +12286,10 @@ export interface LeaseModification {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11853,6 +12323,14 @@ export interface PeriodEndAdjustment {
   status?: ('draft' | 'calculated' | 'approved' | 'posted' | 'reversed') | null;
   notes?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11916,6 +12394,10 @@ export interface PostBalanceSheetEvent {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12033,26 +12515,20 @@ export interface PostCloseAnalyticsReport {
   /**
    * Immutable analytics trail of report generation, review, and approval milestones. Append-only.
    */
-  analyticsTrail?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  analyticsTrail?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * General notes on this analytics report
    */
   notes?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12115,6 +12591,10 @@ export interface PriorPeriodAdjustment {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12133,21 +12613,7 @@ export interface ReportingStandard {
   standardCode: string;
   standardType: 'gaap' | 'ifrs' | 'sox' | 'tax' | 'other';
   jurisdiction?: (string | null) | TaxJurisdiction;
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  description?: LexicalRichText<LexicalNodes_AD327369> | null;
   version?: string | null;
   effectiveDate: string;
   referenceMaterial?: (string | null) | Media;
@@ -12163,21 +12629,7 @@ export interface ReportingStandard {
           | {
               sourceElement?: string | null;
               targetElement?: string | null;
-              transformation?: {
-                root: {
-                  type: string;
-                  children: {
-                    type: any;
-                    version: number;
-                    [k: string]: unknown;
-                  }[];
-                  direction: ('ltr' | 'rtl') | null;
-                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-                  indent: number;
-                  version: number;
-                };
-                [k: string]: unknown;
-              } | null;
+              transformation?: LexicalRichText<LexicalNodes_AD327369> | null;
               id?: string | null;
             }[]
           | null;
@@ -12186,6 +12638,14 @@ export interface ReportingStandard {
       }[]
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12225,41 +12685,21 @@ export interface StatutoryReportTemplate {
         fieldType?: ('text' | 'number' | 'date' | 'currency' | 'percentage' | 'boolean') | null;
         sourceCollection?: string | null;
         sourceField?: string | null;
-        transformation?: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
+        transformation?: LexicalRichText<LexicalNodes_AD327369> | null;
         mandatory?: boolean | null;
-        validationRules?: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
+        validationRules?: LexicalRichText<LexicalNodes_AD327369> | null;
         id?: string | null;
       }[]
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12291,6 +12731,14 @@ export interface TaxCalculation {
   paymentDeadline?: string | null;
   notes?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12424,26 +12872,20 @@ export interface TaxPeriod {
   /**
    * Immutable audit trail of tax period activities (readiness assessment, TP documentation, adjustment posting, closure). Append-only.
    */
-  auditTrail?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  auditTrail?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * General notes on this tax period process
    */
   notes?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12505,6 +12947,10 @@ export interface TaxReturn {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12582,26 +13028,20 @@ export interface TransferPricingAdjustment {
   /**
    * Immutable audit trail: documentation review, challenges, approvals. Append-only.
    */
-  auditTrail?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  auditTrail?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * General notes on this transfer pricing adjustment
    */
   notes?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12721,6 +13161,10 @@ export interface TransferPricingFile {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12797,6 +13241,10 @@ export interface WipSnapshot {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12913,6 +13361,10 @@ export interface ExpenseReport {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13067,6 +13519,10 @@ export interface PayrollRun {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13182,6 +13638,10 @@ export interface JobPosition {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13270,6 +13730,10 @@ export interface LeaveRequest {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13464,6 +13928,10 @@ export interface MaintenanceWorkOrder {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13541,6 +14009,10 @@ export interface TimeEntry {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13635,6 +14107,10 @@ export interface PerformanceReview {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13735,6 +14211,10 @@ export interface RecruitingPipeline {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13814,6 +14294,10 @@ export interface SalesCommission {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -13908,6 +14392,10 @@ export interface ShareBasedPayment {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14009,6 +14497,10 @@ export interface BillsOfMaterial {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14082,6 +14574,10 @@ export interface CostVariance {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14158,6 +14654,10 @@ export interface PackItem {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14262,6 +14762,10 @@ export interface Pack {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14335,6 +14839,10 @@ export interface Carrier {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14415,6 +14923,10 @@ export interface DeferredTaxItem {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14497,6 +15009,10 @@ export interface Package {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14581,6 +15097,10 @@ export interface ProductionReceipt {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14661,6 +15181,10 @@ export interface TrackingEvent {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14715,148 +15239,36 @@ export interface AuditCommitteeMinute {
   /**
    * Comprehensive summary of discussions, issues raised, concerns.
    */
-  discussionSummary: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  discussionSummary: LexicalRichText<LexicalNodes_AD327369>;
   keyDecisions?:
     | {
-        decision: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        };
-        rationale?: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
+        decision: LexicalRichText<LexicalNodes_AD327369>;
+        rationale?: LexicalRichText<LexicalNodes_AD327369> | null;
         id?: string | null;
       }[]
     | null;
   actionItems: {
     sequence: number;
-    actionDescription: {
-      root: {
-        type: string;
-        children: {
-          type: any;
-          version: number;
-          [k: string]: unknown;
-        }[];
-        direction: ('ltr' | 'rtl') | null;
-        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-        indent: number;
-        version: number;
-      };
-      [k: string]: unknown;
-    };
+    actionDescription: LexicalRichText<LexicalNodes_AD327369>;
     assignedTo: string;
     dueDate: string;
     status?: ('open' | 'in-progress' | 'completed') | null;
     completionDate?: string | null;
-    completionNotes?: {
-      root: {
-        type: string;
-        children: {
-          type: any;
-          version: number;
-          [k: string]: unknown;
-        }[];
-        direction: ('ltr' | 'rtl') | null;
-        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-        indent: number;
-        version: number;
-      };
-      [k: string]: unknown;
-    } | null;
+    completionNotes?: LexicalRichText<LexicalNodes_AD327369> | null;
     id?: string | null;
   }[];
   /**
    * Risks, concerns, or matters brought to committee attention.
    */
-  risksIdentified?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  risksIdentified?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Observations from internal or external auditors.
    */
-  auditorObservations?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  auditorObservations?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Compliance, regulatory, or legal matters discussed.
    */
-  complianceMatters?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  complianceMatters?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Resolutions or actions resulting from this meeting.
    */
@@ -14881,6 +15293,14 @@ export interface AuditCommitteeMinute {
   minutesDocument?: (string | null) | Media;
   confidentiality?: ('confidential' | 'internal' | 'public') | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14923,6 +15343,14 @@ export interface AuditCommittee {
       }[]
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14939,21 +15367,7 @@ export interface BoardAction {
   tenant?: (string | null) | Tenant;
   entity: string | LegalEntity;
   actionTitle: string;
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  description?: LexicalRichText<LexicalNodes_AD327369> | null;
   actionType:
     'resolution' | 'policy-approval' | 'risk-assessment' | 'control-enhancement' | 'committee-report' | 'attestation';
   meetingDate: string;
@@ -14967,6 +15381,14 @@ export interface BoardAction {
   minutes?: (string | null) | Media;
   relatedControls?: (string | InternalControl)[] | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15004,6 +15426,14 @@ export interface ComplianceGap {
   riskExposure?: ('none' | 'minimal' | 'moderate' | 'significant' | 'material') | null;
   isActive?: boolean | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15063,6 +15493,14 @@ export interface AuditEvidence {
     | null;
   isActive?: boolean | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15114,6 +15552,14 @@ export interface AuditSample {
   notes?: string | null;
   isActive?: boolean | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15188,39 +15634,11 @@ export interface DebtSchedule {
   /**
    * Collateral, guarantees, cross-default provisions.
    */
-  securityDetails?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  securityDetails?: LexicalRichText<LexicalNodes_AD327369> | null;
   financialCovenants?:
     | {
         covenantName: string;
-        covenantDefinition?: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
+        covenantDefinition?: LexicalRichText<LexicalNodes_AD327369> | null;
         testedFrequency?: ('quarterly' | 'semi-annual' | 'annual') | null;
         threshold: string;
         currentPerformance?: string | null;
@@ -15231,75 +15649,19 @@ export interface DebtSchedule {
   /**
    * Non-financial covenants (reporting, insurance, etc.).
    */
-  operationalCovenants?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  operationalCovenants?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Restrictions (dividends, capex, asset sales, additional debt).
    */
-  restrictiveCovenants?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  restrictiveCovenants?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Prepayment penalties, lockup periods, make-whole provisions.
    */
-  prepaymentTerms?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  prepaymentTerms?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Events of default, acceleration clauses, remedies.
    */
-  defaultProvisions?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  defaultProvisions?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Subsidiaries or parent guaranteeing this debt.
    */
@@ -15313,21 +15675,7 @@ export interface DebtSchedule {
   /**
    * Refinance risk, interest rate risk, covenant risk assessment.
    */
-  riskAssessment?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  riskAssessment?: LexicalRichText<LexicalNodes_AD327369> | null;
   relatedControls?: (string | InternalControl)[] | null;
   debtStatus: 'active' | 'performing' | 'breach-cure' | 'breach-waived' | 'repaid' | 'refinanced';
   /**
@@ -15335,6 +15683,14 @@ export interface DebtSchedule {
    */
   debtAgreement?: (string | null) | Media;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15372,21 +15728,7 @@ export interface DisclosureChecklist {
     /**
      * Text of the requirement from the standard.
      */
-    disclosureRequirement: {
-      root: {
-        type: string;
-        children: {
-          type: any;
-          version: number;
-          [k: string]: unknown;
-        }[];
-        direction: ('ltr' | 'rtl') | null;
-        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-        indent: number;
-        version: number;
-      };
-      [k: string]: unknown;
-    };
+    disclosureRequirement: LexicalRichText<LexicalNodes_AD327369>;
     applicability: 'always' | 'conditional' | 'not-applicable';
     /**
      * Condition for applicability (e.g., "if entity has segments").
@@ -15402,21 +15744,7 @@ export interface DisclosureChecklist {
     /**
      * Progress notes, challenges, workarounds.
      */
-    notes?: {
-      root: {
-        type: string;
-        children: {
-          type: any;
-          version: number;
-          [k: string]: unknown;
-        }[];
-        direction: ('ltr' | 'rtl') | null;
-        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-        indent: number;
-        version: number;
-      };
-      [k: string]: unknown;
-    } | null;
+    notes?: LexicalRichText<LexicalNodes_AD327369> | null;
     /**
      * Supporting documentation (note reference, GL printout, etc.).
      */
@@ -15438,6 +15766,14 @@ export interface DisclosureChecklist {
    */
   checklistDocument?: (string | null) | Media;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15460,21 +15796,7 @@ export interface InternalAuditFunction {
   /**
    * Internal audit charter per IIA Standards (IPPF, COSO).
    */
-  auditCharter: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  auditCharter: LexicalRichText<LexicalNodes_AD327369>;
   /**
    * Charter version/date identifier.
    */
@@ -15504,21 +15826,7 @@ export interface InternalAuditFunction {
   /**
    * Annual audit plan (risks, scope, staff allocation).
    */
-  auditPlan?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  auditPlan?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Fiscal year of the plan.
    */
@@ -15532,21 +15840,7 @@ export interface InternalAuditFunction {
     | {
         engagementName: string;
         engagementType: 'financial' | 'operational' | 'compliance' | 'it' | 'fraud' | 'special-review';
-        objectiveScope?: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
+        objectiveScope?: LexicalRichText<LexicalNodes_AD327369> | null;
         startDate: string;
         completionDate?: string | null;
         status?: ('planned' | 'in-progress' | 'fieldwork-complete' | 'report-issued' | 'cancelled') | null;
@@ -15565,78 +15859,22 @@ export interface InternalAuditFunction {
   followUpTracking?:
     | {
         findingReference: string;
-        managementAction: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        };
+        managementAction: LexicalRichText<LexicalNodes_AD327369>;
         targetImplementationDate: string;
         implementationDate?: string | null;
         followUpStatus?: ('not-started' | 'in-progress' | 'completed' | 'not-implemented') | null;
-        notes?: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
+        notes?: LexicalRichText<LexicalNodes_AD327369> | null;
         id?: string | null;
       }[]
     | null;
   /**
    * KPIs: audit hours, engagements completed, findings, etc.
    */
-  performanceMetrics?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  performanceMetrics?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Internal and external quality assurance reviews (IIA IPPF).
    */
-  qualityAssurance?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  qualityAssurance?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Date of last external QA review (required every 5 years).
    */
@@ -15645,57 +15883,15 @@ export interface InternalAuditFunction {
   /**
    * Adherence to IIA International Standards, code of ethics.
    */
-  professionalStandards?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  professionalStandards?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Assessment of adequacy of internal audit resources.
    */
-  resourceAdequacy?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  resourceAdequacy?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Statement of independence and objectivity per IIA 1100 series.
    */
-  independenceAndObjectivity?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  independenceAndObjectivity?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Uses risk-based approach aligned with entity risk register.
    */
@@ -15706,6 +15902,14 @@ export interface InternalAuditFunction {
    */
   charterDocument?: (string | null) | Media;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15722,21 +15926,7 @@ export interface InternalPolicy {
   tenant?: (string | null) | Tenant;
   policyName: string;
   policyNumber: string;
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  description?: LexicalRichText<LexicalNodes_AD327369> | null;
   policyType:
     | 'accounting'
     | 'internal-control'
@@ -15767,23 +15957,17 @@ export interface InternalPolicy {
   /**
    * What changed in the current version.
    */
-  changes?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  changes?: LexicalRichText<LexicalNodes_AD327369> | null;
   applicableControls?: (string | InternalControl)[] | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -15810,186 +15994,46 @@ export interface ManagementAssessmentIcfr {
   /**
    * Description of scope: processes, locations, systems covered.
    */
-  scope: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  scope: LexicalRichText<LexicalNodes_AD327369>;
   controlFramework: 'coso-2013' | 'coso-1992' | 'coso-erm' | 'other';
   /**
    * Assessment of control environment (tone at top, integrity, values, competence).
    */
-  controlEnvironmentAssessment: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  controlEnvironmentAssessment: LexicalRichText<LexicalNodes_AD327369>;
   /**
    * Assessment of risk identification and assessment processes.
    */
-  riskAssessmentAssessment: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  riskAssessmentAssessment: LexicalRichText<LexicalNodes_AD327369>;
   /**
    * Assessment of preventive/detective control activities.
    */
-  controlActivitiesAssessment: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  controlActivitiesAssessment: LexicalRichText<LexicalNodes_AD327369>;
   /**
    * Assessment of information systems and communication.
    */
-  informationCommunicationAssessment: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  informationCommunicationAssessment: LexicalRichText<LexicalNodes_AD327369>;
   /**
    * Assessment of ongoing and separate monitoring activities.
    */
-  monitoringAssessment: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  monitoringAssessment: LexicalRichText<LexicalNodes_AD327369>;
   significantDeficienciesIdentified?: boolean | null;
   materialWeaknessesIdentified?: boolean | null;
   /**
    * Description of any significant deficiencies or material weaknesses.
    */
-  deficiencyDetails?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  deficiencyDetails?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Remediation actions planned or in progress.
    */
-  remediationActions?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  remediationActions?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Conclusion: "...effective" or "...not effective" per SOX 302/906.
    */
-  conclusionStatement: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  conclusionStatement: LexicalRichText<LexicalNodes_AD327369>;
   /**
    * Management certification statement acknowledging responsibility for ICFR.
    */
-  managementAcknowledgment: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  managementAcknowledgment: LexicalRichText<LexicalNodes_AD327369>;
   certifyingOfficers?:
     | {
         title: string;
@@ -16007,6 +16051,14 @@ export interface ManagementAssessmentIcfr {
   relatedControlTests?: (string | ControlTest)[] | null;
   status: 'draft' | 'final' | 'auditor-reviewed' | 'certified' | 'filed';
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16026,21 +16078,7 @@ export interface ManagementCertification {
   certifyingOfficer: string;
   certificationDate: string;
   certificationType: 'sox-302' | 'sox-906' | 'section-13-15d' | 'internal-controls' | 'financial-statement' | 'other';
-  scope?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  scope?: LexicalRichText<LexicalNodes_AD327369> | null;
   assertions?:
     | {
         assertion?: string | null;
@@ -16052,6 +16090,14 @@ export interface ManagementCertification {
   signedDocument?: (string | null) | Media;
   status?: ('current' | 'expired' | 'superseded') | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16078,6 +16124,14 @@ export interface PolicyAcknowledgment {
   signedDocument?: (string | null) | Media;
   status?: ('acknowledged' | 'pending' | 'overdue' | 'expired') | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16116,23 +16170,17 @@ export interface RegulatoryReport {
   submissionDate?: string | null;
   status: 'draft' | 'in-review' | 'submitted' | 'accepted' | 'rejected' | 'overdue';
   reportDocument?: (string | null) | Media;
-  regulatoryFeedback?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  regulatoryFeedback?: LexicalRichText<LexicalNodes_AD327369> | null;
   findings?: (string | AuditFinding)[] | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16163,21 +16211,7 @@ export interface RelatedPartyTransaction {
   /**
    * Nature of the relationship and basis for identification as related party.
    */
-  relationship: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  relationship: LexicalRichText<LexicalNodes_AD327369>;
   transactionDate: string;
   transactionDescription: string;
   transactionType:
@@ -16202,39 +16236,11 @@ export interface RelatedPartyTransaction {
   /**
    * Payment terms, pricing basis, conditions, and any special terms.
    */
-  terms?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  terms?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Evidence that transaction was at arm's length (IFRS 24 §21, IAS 24 §9).
    */
-  armLengthBasis?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  armLengthBasis?: LexicalRichText<LexicalNodes_AD327369> | null;
   approvalStatus?: ('pre-approved' | 'approved' | 'pending' | 'rejected') | null;
   /**
    * Board member or audit committee member who approved.
@@ -16256,6 +16262,14 @@ export interface RelatedPartyTransaction {
   relatedControls?: (string | InternalControl)[] | null;
   evidence?: (string | AuditEvidence)[] | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16306,6 +16320,14 @@ export interface RemediationPlan {
   approvalDate?: string | null;
   isActive?: boolean | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16329,21 +16351,7 @@ export interface RiskRegister {
   /**
    * Detailed description of the risk and its potential impact.
    */
-  riskDescription: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  riskDescription: LexicalRichText<LexicalNodes_AD327369>;
   riskCategory:
     | 'financial-reporting'
     | 'operational'
@@ -16389,40 +16397,12 @@ export interface RiskRegister {
   /**
    * Is residual risk acceptable? Justification.
    */
-  acceptabilityAssessment: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  acceptabilityAssessment: LexicalRichText<LexicalNodes_AD327369>;
   furtherMitigationRequired?: boolean | null;
   /**
    * If risk not acceptable, planned mitigation actions.
    */
-  additionalMitigationPlan?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  additionalMitigationPlan?: LexicalRichText<LexicalNodes_AD327369> | null;
   relatedComplianceRequirements?: (string | ComplianceRequirement)[] | null;
   relatedAuditFindings?: (string | AuditFinding)[] | null;
   lastAssessmentDate: string;
@@ -16433,6 +16413,14 @@ export interface RiskRegister {
    */
   riskRegisterDocument?: (string | null) | Media;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16458,21 +16446,7 @@ export interface SegmentReporting {
   /**
    * Products/services, geographic area, or customer base defining segment.
    */
-  segmentDescription?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  segmentDescription?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * CODM responsible for resource allocation to segment (IFRS 8 §5).
    */
@@ -16535,21 +16509,7 @@ export interface SegmentReporting {
   /**
    * Pricing basis for intersegment transactions (at cost, market price, etc.).
    */
-  transferPricingPolicies?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  transferPricingPolicies?: LexicalRichText<LexicalNodes_AD327369> | null;
   identifiableAssets?:
     | {
         assetCategory: string;
@@ -16568,39 +16528,11 @@ export interface SegmentReporting {
   /**
    * Quantitative thresholds used to identify segments (IFRS 8 §13-19).
    */
-  quantitativeMeasurements?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  quantitativeMeasurements?: LexicalRichText<LexicalNodes_AD327369> | null;
   /**
    * Reconciliation of segment totals to consolidated totals (IFRS 8 §30).
    */
-  reconciliationToConsolidated: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  reconciliationToConsolidated: LexicalRichText<LexicalNodes_AD327369>;
   /**
    * Links to IFRS 8 disclosure checklists for this segment.
    */
@@ -16611,6 +16543,14 @@ export interface SegmentReporting {
   segmentReportingDocument?: (string | null) | Media;
   reportingStatus: 'under-preparation' | 'pending-review' | 'reviewed' | 'reported';
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16682,6 +16622,10 @@ export interface BiologicalAsset {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16784,6 +16728,10 @@ export interface FairValueMeasurement {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16854,6 +16802,10 @@ export interface InvestmentProperty {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -16967,6 +16919,10 @@ export interface BusinessCombination {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17008,6 +16964,10 @@ export interface DepreciationSchedule {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17084,6 +17044,10 @@ export interface HeldForSaleClassification {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17165,6 +17129,10 @@ export interface InsuranceContract {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17253,6 +17221,10 @@ export interface LeasePeriodPosting {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17300,6 +17272,10 @@ export interface BudgetPlanning {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17361,6 +17337,10 @@ export interface ProjectTask {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17453,6 +17433,10 @@ export interface RecurringJournal {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17546,6 +17530,10 @@ export interface WorkflowDefinition {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17627,6 +17615,10 @@ export interface WorkflowInstance {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17724,6 +17716,10 @@ export interface ContractAmendment {
    */
   internalNotes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17830,6 +17826,10 @@ export interface ContractSignature {
    */
   approvalComments?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17883,6 +17883,14 @@ export interface Chat {
    */
   emittedAt?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17937,6 +17945,10 @@ export interface Connection {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17946,7 +17958,7 @@ export interface Connection {
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "messages".
  */
-export interface Message {
+export interface Message1 {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
@@ -17963,7 +17975,7 @@ export interface Message {
   /**
    * Message this one replies to — thread root chain (replaces Rails ancestry).
    */
-  parentMessage?: (string | null) | Message;
+  parentMessage?: (string | null) | Message1;
   /**
    * Optional business record this message concerns.
    */
@@ -17989,6 +18001,10 @@ export interface Message {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18067,6 +18083,10 @@ export interface ApiAuditEvent {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18191,6 +18211,14 @@ export interface AuditEvent {
    */
   rowHash?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18229,6 +18257,10 @@ export interface AuditSubmission {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18304,6 +18336,10 @@ export interface DataProcessingActivity {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18361,6 +18397,10 @@ export interface DataSubjectRequest {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18388,21 +18428,7 @@ export interface Memory {
   /**
    * The memory/session as a rich document; reference everything inline (Lexical internal links).
    */
-  body?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  body?: LexicalRichText<LexicalNodes_AD327369> | null;
   ownerType: 'agent' | 'tool' | 'tenant' | 'platform' | 'cycle';
   /**
    * Stable id of the owner — agent.id, tool name, tenant id, cycleUuid, etc.
@@ -18481,6 +18507,10 @@ export interface Memory {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18545,6 +18575,10 @@ export interface MineralResourceAsset {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18593,6 +18627,10 @@ export interface RegulatoryDeferralAccount {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18647,6 +18685,10 @@ export interface RoundingAdjustment {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18735,6 +18777,10 @@ export interface Sector {
       }[]
     | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18792,6 +18838,14 @@ export interface Share {
    */
   revokeChainLeafUuid?: string | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18922,6 +18976,10 @@ export interface Standard {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18962,6 +19020,10 @@ export interface Tagging {
    */
   taggableType?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -18991,6 +19053,10 @@ export interface Tag {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -19079,6 +19145,10 @@ export interface TransactionFailure {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -19160,6 +19230,10 @@ export interface Translation {
   approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -19459,6 +19533,14 @@ export interface FormSubmission {
       }[]
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -19487,6 +19569,14 @@ export interface Redirect {
     url?: string | null;
   };
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -19595,6 +19685,14 @@ export interface Export {
     | boolean
     | null;
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -19604,6 +19702,19 @@ export interface Export {
   filesize?: number | null;
   width?: number | null;
   height?: number | null;
+  _stored?: boolean | null;
+  _transforms?: UploadTransforms;
+  original?: {
+    filename?: string | null;
+    url?: string | null;
+    mimeType?: string | null;
+    filesize?: number | null;
+    width?: number | null;
+    height?: number | null;
+    prefix?: string | null;
+    _objectKey?: string | null;
+    _stored?: boolean | null;
+  };
   focalX?: number | null;
   focalY?: number | null;
 }
@@ -19637,6 +19748,14 @@ export interface Import {
       | null;
   };
   handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -19646,47 +19765,21 @@ export interface Import {
   filesize?: number | null;
   width?: number | null;
   height?: number | null;
+  _stored?: boolean | null;
+  _transforms?: UploadTransforms;
+  original?: {
+    filename?: string | null;
+    url?: string | null;
+    mimeType?: string | null;
+    filesize?: number | null;
+    width?: number | null;
+    height?: number | null;
+    prefix?: string | null;
+    _objectKey?: string | null;
+    _stored?: boolean | null;
+  };
   focalX?: number | null;
   focalY?: number | null;
-}
-/**
- * API keys control which collections, resources, tools, and prompts MCP clients can access
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "payload-mcp-api-keys".
- */
-export interface PayloadMcpApiKey {
-  id: string;
-  /**
-   * The user that the API key is associated with.
-   */
-  user: string | User;
-  /**
-   * A useful label for the API key.
-   */
-  label?: string | null;
-  /**
-   * The purpose of the API key.
-   */
-  description?: string | null;
-  /**
-   * Optional per-key narrowing: { "deny": ["invoices", "orders:delete"] } disables those capabilities; absent ⇒ all the owner can reach. The full collection×operation matrix is computed on read (never stored — D1 100-col cap).
-   */
-  scopes?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  updatedAt: string;
-  createdAt: string;
-  enableAPIKey?: boolean | null;
-  apiKey?: string | null;
-  apiKeyIndex?: string | null;
-  collection: 'payload-mcp-api-keys';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -19732,6 +19825,15 @@ export interface PayloadJob {
     | number
     | boolean
     | null;
+  meta?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   completedAt?: string | null;
   totalTried?: number | null;
   /**
@@ -19766,7 +19868,7 @@ export interface PayloadJob {
           | 'createCollectionImport'
           | 'schedulePublish';
         taskID: string;
-        input?:
+        input:
           | {
               [k: string]: unknown;
             }
@@ -19794,6 +19896,20 @@ export interface PayloadJob {
           | number
           | boolean
           | null;
+        parent?: {
+          taskSlug?:
+            | (
+                | 'inline'
+                | 'dunning-cycle'
+                | 'bg-bnb-rates-sync'
+                | 'sales-audit-file'
+                | 'createCollectionExport'
+                | 'createCollectionImport'
+                | 'schedulePublish'
+              )
+            | null;
+          taskID?: string | null;
+        };
         id?: string | null;
       }[]
     | null;
@@ -19810,16 +19926,12 @@ export interface PayloadJob {
     | null;
   queue?: string | null;
   waitUntil?: string | null;
-  processing?: boolean | null;
-  meta?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
+  processingUntil?: string | null;
+  processingToken?: string | null;
+  /**
+   * Used for concurrency control. Jobs with the same key are subject to exclusive/supersedes rules.
+   */
+  concurrencyKey?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -19877,21 +19989,12 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'search';
         value: string | Search;
-      } | null)
-    | ({
-        relationTo: 'payload-mcp-api-keys';
-        value: string | PayloadMcpApiKey;
       } | null);
   globalSlug?: string | null;
-  user:
-    | {
-        relationTo: 'users';
-        value: string | User;
-      }
-    | {
-        relationTo: 'payload-mcp-api-keys';
-        value: string | PayloadMcpApiKey;
-      };
+  user: {
+    relationTo: 'users';
+    value: string | User;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -19901,15 +20004,10 @@ export interface PayloadLockedDocument {
  */
 export interface PayloadPreference {
   id: string;
-  user:
-    | {
-        relationTo: 'users';
-        value: string | User;
-      }
-    | {
-        relationTo: 'payload-mcp-api-keys';
-        value: string | PayloadMcpApiKey;
-      };
+  user: {
+    relationTo: 'users';
+    value: string | User;
+  };
   key?: string | null;
   value?:
     | {
@@ -19941,6 +20039,25 @@ export interface PayloadMigration {
 export interface PayloadQueryPreset {
   id: string;
   title: string;
+  groupBy?: string | null;
+  columns?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  where?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   isShared?: boolean | null;
   access?: {
     read?: {
@@ -19956,31 +20073,34 @@ export interface PayloadQueryPreset {
       users?: (string | User)[] | null;
     };
   };
-  where?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  columns?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  groupBy?: string | null;
   relatedCollection:
     'pages' | 'posts' | 'credit-memos' | 'parties' | 'provisions' | 'maintenance-work-orders' | 'orders';
   /**
    * This is a temporary field used to determine if updating the preset would remove the user's access to it. When `true`, this record will be deleted after running the preset's `validate` function.
    */
   isTemp?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-llm-instructions".
+ */
+export interface PayloadLlmInstruction {
+  id: string;
+  entitySlug: string;
+  title?: string | null;
+  entityType: 'collection' | 'global';
+  additionalInstructions?: LexicalRichText<LexicalNodes_3DE324E4> | null;
+  systemInstructions?: LexicalRichText<LexicalNodes_3DE324E4> | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -20011,6 +20131,7 @@ export interface ConsolidationEliminationsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20044,6 +20165,8 @@ export interface GroupsSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20073,6 +20196,7 @@ export interface IntercompanyTransactionsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20098,6 +20222,8 @@ export interface OrgUnitsSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20116,6 +20242,8 @@ export interface RolesSelect<T extends boolean = true> {
   capability?: T;
   skillRoutes?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20195,6 +20323,8 @@ export interface TenantsSelect<T extends boolean = true> {
   emailDefaultFromName?: T;
   mcpApiKey?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20279,13 +20409,19 @@ export interface UsersSelect<T extends boolean = true> {
         features?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
+  apiKey?: T;
+  apiKeyLast4?: T;
+  apiKeyIndex?: T;
   email?: T;
   resetPasswordToken?: T;
   resetPasswordExpiration?: T;
   salt?: T;
   hash?: T;
+  resetPasswordRequestedAt?: T;
   loginAttempts?: T;
   lockUntil?: T;
   sessions?:
@@ -20294,6 +20430,11 @@ export interface UsersSelect<T extends boolean = true> {
         id?: T;
         createdAt?: T;
         expiresAt?: T;
+        refreshCount?: T;
+        refreshedAt?: T;
+        label?: T;
+        type?: T;
+        metadata?: T;
       };
 }
 /**
@@ -20304,7 +20445,6 @@ export interface CategoriesSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
   title?: T;
-  generateSlug?: T;
   slug?: T;
   parent?: T;
   breadcrumbs?:
@@ -20316,6 +20456,8 @@ export interface CategoriesSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20329,6 +20471,10 @@ export interface MediaSelect<T extends boolean = true> {
   alt?: T;
   caption?: T;
   handle?: T;
+  prefix?: T;
+  _objectKey?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -20338,81 +20484,20 @@ export interface MediaSelect<T extends boolean = true> {
   filesize?: T;
   width?: T;
   height?: T;
-  focalX?: T;
-  focalY?: T;
-  sizes?:
+  _stored?: T;
+  _transforms?: T;
+  original?:
     | T
     | {
-        thumbnail?:
-          | T
-          | {
-              url?: T;
-              width?: T;
-              height?: T;
-              mimeType?: T;
-              filesize?: T;
-              filename?: T;
-            };
-        square?:
-          | T
-          | {
-              url?: T;
-              width?: T;
-              height?: T;
-              mimeType?: T;
-              filesize?: T;
-              filename?: T;
-            };
-        small?:
-          | T
-          | {
-              url?: T;
-              width?: T;
-              height?: T;
-              mimeType?: T;
-              filesize?: T;
-              filename?: T;
-            };
-        medium?:
-          | T
-          | {
-              url?: T;
-              width?: T;
-              height?: T;
-              mimeType?: T;
-              filesize?: T;
-              filename?: T;
-            };
-        large?:
-          | T
-          | {
-              url?: T;
-              width?: T;
-              height?: T;
-              mimeType?: T;
-              filesize?: T;
-              filename?: T;
-            };
-        xlarge?:
-          | T
-          | {
-              url?: T;
-              width?: T;
-              height?: T;
-              mimeType?: T;
-              filesize?: T;
-              filename?: T;
-            };
-        og?:
-          | T
-          | {
-              url?: T;
-              width?: T;
-              height?: T;
-              mimeType?: T;
-              filesize?: T;
-              filename?: T;
-            };
+        filename?: T;
+        url?: T;
+        mimeType?: T;
+        filesize?: T;
+        width?: T;
+        height?: T;
+        prefix?: T;
+        _objectKey?: T;
+        _stored?: T;
       };
 }
 /**
@@ -20463,7 +20548,6 @@ export interface PagesSelect<T extends boolean = true> {
       };
   seed?: T;
   publishedAt?: T;
-  generateSlug?: T;
   slug?: T;
   parent?: T;
   breadcrumbs?:
@@ -20475,6 +20559,8 @@ export interface PagesSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
@@ -20595,9 +20681,10 @@ export interface PostsSelect<T extends boolean = true> {
         id?: T;
         name?: T;
       };
-  generateSlug?: T;
   slug?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
@@ -20631,6 +20718,7 @@ export interface ActivitiesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20672,6 +20760,7 @@ export interface AiSuggestionsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20715,6 +20804,7 @@ export interface BatchesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20743,6 +20833,7 @@ export interface BeneficialOwnersSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20788,6 +20879,7 @@ export interface BookingsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20840,6 +20932,7 @@ export interface CasesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20867,6 +20960,7 @@ export interface ConsentRecordsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20899,6 +20993,7 @@ export interface ConsignmentArrangementsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20932,6 +21027,7 @@ export interface ConsignmentSalesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20973,6 +21069,7 @@ export interface CreditMemosSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20999,6 +21096,7 @@ export interface CustomerSegmentsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21045,6 +21143,7 @@ export interface CustomsDeclarationsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21088,6 +21187,7 @@ export interface DunningCyclesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21117,6 +21217,7 @@ export interface FiscalDevicesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21148,6 +21249,7 @@ export interface GoodsReceiptsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21245,6 +21347,8 @@ export interface InvoiceLinesSelect<T extends boolean = true> {
       };
   metadata?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21385,6 +21489,8 @@ export interface InvoicesSelect<T extends boolean = true> {
   test?: T;
   metadata?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21426,6 +21532,7 @@ export interface KycChecksSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21464,6 +21571,7 @@ export interface LeadsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21482,6 +21590,7 @@ export interface OperatorsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21515,6 +21624,7 @@ export interface OpportunitiesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21604,6 +21714,8 @@ export interface PartiesSelect<T extends boolean = true> {
       };
   metadata?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21631,6 +21743,7 @@ export interface PaymentAllocationsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21680,6 +21793,7 @@ export interface PaymentRunsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21709,6 +21823,7 @@ export interface ProjectMilestonesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21756,6 +21871,7 @@ export interface ReceiptsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21788,6 +21904,7 @@ export interface ReturnsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21836,6 +21953,7 @@ export interface SalesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21867,6 +21985,7 @@ export interface SepaMandatesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21889,6 +22008,8 @@ export interface SubscriptionPlansSelect<T extends boolean = true> {
   description?: T;
   sortOrder?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21914,6 +22035,8 @@ export interface SubscriptionsSelect<T extends boolean = true> {
   lastStatusChange?: T;
   lastStatusChangeReason?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21933,6 +22056,7 @@ export interface TerminalsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21962,6 +22086,7 @@ export interface UsageRecordsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22009,6 +22134,7 @@ export interface VendorScorecardsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22057,6 +22183,7 @@ export interface CommitmentsSelect<T extends boolean = true> {
   approvedAt?: T;
   approvalComments?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22095,6 +22222,7 @@ export interface ContractPerformanceSelect<T extends boolean = true> {
   approvedAt?: T;
   performanceNotes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22153,6 +22281,7 @@ export interface AccountReconciliationsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22213,6 +22342,8 @@ export interface AuditReportsSelect<T extends boolean = true> {
   auditTrail?: T;
   notes?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22242,6 +22373,7 @@ export interface BankAccountsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22277,6 +22409,7 @@ export interface BankReconciliationsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22323,6 +22456,8 @@ export interface BankStatementsSelect<T extends boolean = true> {
   reconciliedBy?: T;
   importSource?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22368,6 +22503,8 @@ export interface BankTransactionsSelect<T extends boolean = true> {
   status?: T;
   notes?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22426,6 +22563,7 @@ export interface BookableResourcesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22482,6 +22620,7 @@ export interface CarbonEmissionsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22531,6 +22670,8 @@ export interface ClosingEntriesSelect<T extends boolean = true> {
   auditTrail?: T;
   notes?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22570,6 +22711,8 @@ export interface ComplianceDeadlinesSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22611,6 +22754,8 @@ export interface ConsolidationsSelect<T extends boolean = true> {
   auditTrail?: T;
   notes?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22656,6 +22801,7 @@ export interface CsrdDisclosuresSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22680,6 +22826,8 @@ export interface CurrencyRatesSelect<T extends boolean = true> {
   usedInTransactions?: T;
   notes?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22725,6 +22873,7 @@ export interface EarningsPerShareSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22746,6 +22895,8 @@ export interface EntityLegalStructuresSelect<T extends boolean = true> {
   auditRequirement?: T;
   isActive?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22778,6 +22929,7 @@ export interface EvidenceAttestationsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22819,6 +22971,8 @@ export interface FinancialStatementsSelect<T extends boolean = true> {
   generatedAt?: T;
   generatedBy?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22846,6 +23000,8 @@ export interface FiscalCalendarsSelect<T extends boolean = true> {
   chainLeafUuid?: T;
   notes?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22909,6 +23065,8 @@ export interface FiscalPeriodsSelect<T extends boolean = true> {
       };
   metadata?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22939,6 +23097,7 @@ export interface FxTransactionsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22973,6 +23132,8 @@ export interface GlAccountsSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23021,6 +23182,7 @@ export interface GlPostingsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23062,6 +23224,7 @@ export interface JournalEntriesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23110,6 +23273,7 @@ export interface LeaseModificationsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23165,6 +23329,7 @@ export interface LegalEntitiesSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23186,6 +23351,8 @@ export interface PeriodEndAdjustmentsSelect<T extends boolean = true> {
   status?: T;
   notes?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23212,6 +23379,8 @@ export interface PeriodLocksSelect<T extends boolean = true> {
   relatedClosingEntries?: T;
   notes?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23240,6 +23409,7 @@ export interface PostBalanceSheetEventsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23268,6 +23438,8 @@ export interface PostCloseAnalyticsReportsSelect<T extends boolean = true> {
   analyticsTrail?: T;
   notes?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23294,6 +23466,7 @@ export interface PriorPeriodAdjustmentsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23354,6 +23527,7 @@ export interface ProvisionsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23390,6 +23564,8 @@ export interface ReportingStandardsSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23429,6 +23605,8 @@ export interface StatutoryReportTemplatesSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23456,6 +23634,8 @@ export interface TaxCalculationsSelect<T extends boolean = true> {
   paymentDeadline?: T;
   notes?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23504,6 +23684,8 @@ export interface TaxCodesSelect<T extends boolean = true> {
       };
   metadata?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23566,6 +23748,8 @@ export interface TaxJurisdictionsSelect<T extends boolean = true> {
       };
   metadata?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23607,6 +23791,8 @@ export interface TaxPeriodsSelect<T extends boolean = true> {
   auditTrail?: T;
   notes?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23645,6 +23831,7 @@ export interface TaxReturnsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23673,6 +23860,8 @@ export interface TransferPricingAdjustmentsSelect<T extends boolean = true> {
   auditTrail?: T;
   notes?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23738,6 +23927,7 @@ export interface TransferPricingFilesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23769,6 +23959,7 @@ export interface WipSnapshotsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23813,6 +24004,7 @@ export interface CostCentersSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23901,6 +24093,7 @@ export interface EmployeesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23967,6 +24160,7 @@ export interface ExpenseReportsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24019,6 +24213,7 @@ export interface JobPositionsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24061,6 +24256,7 @@ export interface LeaveRequestsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24148,6 +24344,7 @@ export interface MaintenanceWorkOrdersSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24209,6 +24406,7 @@ export interface PayrollRunsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24286,6 +24484,7 @@ export interface PerformanceReviewsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24340,6 +24539,7 @@ export interface RecruitingPipelineSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24382,6 +24582,7 @@ export interface SalesCommissionsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24433,6 +24634,7 @@ export interface ShareBasedPaymentsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24463,6 +24665,7 @@ export interface TimeEntriesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24501,6 +24704,7 @@ export interface WorkShiftsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24544,6 +24748,7 @@ export interface BillsOfMaterialsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24577,6 +24782,7 @@ export interface CostVariancesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24625,6 +24831,7 @@ export interface LotVariantsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24663,6 +24870,7 @@ export interface LotWorkPhasesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24713,6 +24921,7 @@ export interface LotsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24744,6 +24953,7 @@ export interface PackItemsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24779,6 +24989,7 @@ export interface PacksSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24813,6 +25024,7 @@ export interface WorkCentersSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24867,6 +25079,7 @@ export interface WorkOrdersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24900,6 +25113,7 @@ export interface WorkPhasesSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24934,6 +25148,7 @@ export interface CarriersSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24965,6 +25180,7 @@ export interface ConsignmentInventorySelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24994,6 +25210,7 @@ export interface DeferredTaxItemsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25026,6 +25243,7 @@ export interface InventoryMovementsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25068,6 +25286,7 @@ export interface PackagesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25104,6 +25323,7 @@ export interface ProductionReceiptsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25135,6 +25355,7 @@ export interface QualityInspectionsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25168,6 +25389,7 @@ export interface ShipmentsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25195,6 +25417,7 @@ export interface TrackingEventsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25225,6 +25448,7 @@ export interface WarehouseLocationsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25292,6 +25516,8 @@ export interface AuditCommitteeMinutesSelect<T extends boolean = true> {
   minutesDocument?: T;
   confidentiality?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25327,6 +25553,8 @@ export interface AuditCommitteesSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25369,6 +25597,8 @@ export interface AuditEvidenceSelect<T extends boolean = true> {
       };
   isActive?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25404,6 +25634,8 @@ export interface AuditFindingsSelect<T extends boolean = true> {
       };
   isActive?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25429,6 +25661,8 @@ export interface AuditSamplesSelect<T extends boolean = true> {
   notes?: T;
   isActive?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25456,6 +25690,8 @@ export interface BoardActionsSelect<T extends boolean = true> {
   minutes?: T;
   relatedControls?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25475,6 +25711,8 @@ export interface ComplianceFrameworksSelect<T extends boolean = true> {
   effectiveDate?: T;
   isActive?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25501,6 +25739,8 @@ export interface ComplianceGapsSelect<T extends boolean = true> {
   riskExposure?: T;
   isActive?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25520,6 +25760,8 @@ export interface ComplianceRequirementsSelect<T extends boolean = true> {
   resourceUrl?: T;
   isActive?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25548,6 +25790,8 @@ export interface ControlTestsSelect<T extends boolean = true> {
   reviewDate?: T;
   isActive?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25607,6 +25851,8 @@ export interface DebtScheduleSelect<T extends boolean = true> {
   debtStatus?: T;
   debtAgreement?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25644,6 +25890,8 @@ export interface DisclosureChecklistsSelect<T extends boolean = true> {
   checklistStatus?: T;
   checklistDocument?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25669,6 +25917,8 @@ export interface EntityTypesSelect<T extends boolean = true> {
   defaultComplianceFrameworks?: T;
   isActive?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25714,6 +25964,7 @@ export interface GovernmentGrantsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25775,6 +26026,8 @@ export interface InternalAuditFunctionSelect<T extends boolean = true> {
   auditFunctionStatus?: T;
   charterDocument?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25798,6 +26051,8 @@ export interface InternalControlsSelect<T extends boolean = true> {
   nextReviewDate?: T;
   isActive?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25824,6 +26079,8 @@ export interface InternalPoliciesSelect<T extends boolean = true> {
   changes?: T;
   applicableControls?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25864,6 +26121,8 @@ export interface ManagementAssessmentIcfrSelect<T extends boolean = true> {
   relatedControlTests?: T;
   status?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25891,6 +26150,8 @@ export interface ManagementCertificationsSelect<T extends boolean = true> {
   signedDocument?: T;
   status?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25910,6 +26171,8 @@ export interface PolicyAcknowledgmentsSelect<T extends boolean = true> {
   signedDocument?: T;
   status?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25935,6 +26198,8 @@ export interface RegulatoryReportsSelect<T extends boolean = true> {
   regulatoryFeedback?: T;
   findings?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25965,6 +26230,8 @@ export interface RelatedPartyTransactionsSelect<T extends boolean = true> {
   relatedControls?: T;
   evidence?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26003,6 +26270,8 @@ export interface RemediationPlansSelect<T extends boolean = true> {
   approvalDate?: T;
   isActive?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26039,6 +26308,8 @@ export interface RiskRegisterSelect<T extends boolean = true> {
   riskStatus?: T;
   riskRegisterDocument?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26094,6 +26365,8 @@ export interface SegmentReportingSelect<T extends boolean = true> {
   segmentReportingDocument?: T;
   reportingStatus?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26123,6 +26396,7 @@ export interface BiologicalAssetsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26168,6 +26442,7 @@ export interface BusinessCombinationsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26195,6 +26470,7 @@ export interface DepreciationSchedulesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26235,6 +26511,7 @@ export interface FairValueMeasurementsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26282,6 +26559,7 @@ export interface FixedAssetsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26316,6 +26594,7 @@ export interface HeldForSaleClassificationsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26349,6 +26628,7 @@ export interface InsuranceContractsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26379,6 +26659,7 @@ export interface InvestmentPropertiesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26416,6 +26697,7 @@ export interface LeasePeriodPostingsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26474,6 +26756,7 @@ export interface LeasesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26534,6 +26817,7 @@ export interface PropertiesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26577,6 +26861,7 @@ export interface SpacesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26611,6 +26896,7 @@ export interface BudgetPlanningSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26660,6 +26946,7 @@ export interface ContractsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26689,6 +26976,7 @@ export interface PerformanceObligationsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26723,6 +27011,7 @@ export interface ProjectTasksSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26762,6 +27051,7 @@ export interface ProjectsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26804,6 +27094,7 @@ export interface RecurringJournalsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26849,6 +27140,7 @@ export interface WorkflowDefinitionsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26892,6 +27184,7 @@ export interface WorkflowInstancesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26931,6 +27224,7 @@ export interface ContractAmendmentsSelect<T extends boolean = true> {
   approvedAt?: T;
   internalNotes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26974,6 +27268,7 @@ export interface ContractSignaturesSelect<T extends boolean = true> {
   approvedAt?: T;
   approvalComments?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26992,6 +27287,8 @@ export interface ChatSelect<T extends boolean = true> {
   depth?: T;
   emittedAt?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27011,6 +27308,7 @@ export interface ConnectionsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27033,6 +27331,7 @@ export interface MessagesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27056,6 +27355,7 @@ export interface ApiAuditEventsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27091,6 +27391,8 @@ export interface AuditEventsSelect<T extends boolean = true> {
   previousHash?: T;
   rowHash?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27113,6 +27415,7 @@ export interface AuditSubmissionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27163,6 +27466,7 @@ export interface DataProcessingActivitiesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27189,6 +27493,7 @@ export interface DataSubjectRequestsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27227,6 +27532,7 @@ export interface MemoriesSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27254,6 +27560,7 @@ export interface MineralResourceAssetsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27278,6 +27585,7 @@ export interface RegulatoryDeferralAccountsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27307,6 +27615,7 @@ export interface RoundingAdjustmentsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27341,6 +27650,7 @@ export interface SectorsSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27362,6 +27672,8 @@ export interface SharesSelect<T extends boolean = true> {
   revokedAt?: T;
   revokeChainLeafUuid?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27411,6 +27723,7 @@ export interface StandardsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27430,6 +27743,7 @@ export interface TaggingsSelect<T extends boolean = true> {
   taggable?: T;
   taggableType?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27447,6 +27761,7 @@ export interface TagsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27477,6 +27792,7 @@ export interface TransactionFailuresSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27517,6 +27833,7 @@ export interface TranslationsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27713,7 +28030,6 @@ export interface ProductsSelect<T extends boolean = true> {
         description?: T;
       };
   categories?: T;
-  generateSlug?: T;
   slug?: T;
   handle?: T;
   updatedAt?: T;
@@ -28086,6 +28402,8 @@ export interface FormsSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -28111,6 +28429,8 @@ export interface FormSubmissionsSelect<T extends boolean = true> {
         id?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -28129,6 +28449,8 @@ export interface RedirectsSelect<T extends boolean = true> {
         url?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -28186,6 +28508,8 @@ export interface ExportsSelect<T extends boolean = true> {
   collectionSlug?: T;
   where?: T;
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -28195,6 +28519,21 @@ export interface ExportsSelect<T extends boolean = true> {
   filesize?: T;
   width?: T;
   height?: T;
+  _stored?: T;
+  _transforms?: T;
+  original?:
+    | T
+    | {
+        filename?: T;
+        url?: T;
+        mimeType?: T;
+        filesize?: T;
+        width?: T;
+        height?: T;
+        prefix?: T;
+        _objectKey?: T;
+        _stored?: T;
+      };
   focalX?: T;
   focalY?: T;
 }
@@ -28218,6 +28557,8 @@ export interface ImportsSelect<T extends boolean = true> {
         issueDetails?: T;
       };
   handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -28227,23 +28568,23 @@ export interface ImportsSelect<T extends boolean = true> {
   filesize?: T;
   width?: T;
   height?: T;
+  _stored?: T;
+  _transforms?: T;
+  original?:
+    | T
+    | {
+        filename?: T;
+        url?: T;
+        mimeType?: T;
+        filesize?: T;
+        width?: T;
+        height?: T;
+        prefix?: T;
+        _objectKey?: T;
+        _stored?: T;
+      };
   focalX?: T;
   focalY?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "payload-mcp-api-keys_select".
- */
-export interface PayloadMcpApiKeysSelect<T extends boolean = true> {
-  user?: T;
-  label?: T;
-  description?: T;
-  scopes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-  enableAPIKey?: T;
-  apiKey?: T;
-  apiKeyIndex?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -28260,6 +28601,7 @@ export interface PayloadKvSelect<T extends boolean = true> {
 export interface PayloadJobsSelect<T extends boolean = true> {
   input?: T;
   taskStatus?: T;
+  meta?: T;
   completedAt?: T;
   totalTried?: T;
   hasError?: T;
@@ -28275,13 +28617,20 @@ export interface PayloadJobsSelect<T extends boolean = true> {
         output?: T;
         state?: T;
         error?: T;
+        parent?:
+          | T
+          | {
+              taskSlug?: T;
+              taskID?: T;
+            };
         id?: T;
       };
   taskSlug?: T;
   queue?: T;
   waitUntil?: T;
-  processing?: T;
-  meta?: T;
+  processingUntil?: T;
+  processingToken?: T;
+  concurrencyKey?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -28323,6 +28672,9 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
  */
 export interface PayloadQueryPresetsSelect<T extends boolean = true> {
   title?: T;
+  groupBy?: T;
+  columns?: T;
+  where?: T;
   isShared?: T;
   access?:
     | T
@@ -28346,11 +28698,24 @@ export interface PayloadQueryPresetsSelect<T extends boolean = true> {
               users?: T;
             };
       };
-  where?: T;
-  columns?: T;
-  groupBy?: T;
   relatedCollection?: T;
   isTemp?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-llm-instructions_select".
+ */
+export interface PayloadLlmInstructionsSelect<T extends boolean = true> {
+  id?: T;
+  entitySlug?: T;
+  title?: T;
+  entityType?: T;
+  additionalInstructions?: T;
+  systemInstructions?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -28380,6 +28745,14 @@ export interface Header {
         id?: string | null;
       }[]
     | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -28409,6 +28782,14 @@ export interface Footer {
         id?: string | null;
       }[]
     | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -28436,6 +28817,14 @@ export interface Provider {
         id?: string | null;
       }[]
     | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -28476,6 +28865,8 @@ export interface HeaderSelect<T extends boolean = true> {
             };
         id?: T;
       };
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
@@ -28499,6 +28890,8 @@ export interface FooterSelect<T extends boolean = true> {
             };
         id?: T;
       };
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
@@ -28517,6 +28910,8 @@ export interface ProvidersSelect<T extends boolean = true> {
         clientSecret?: T;
         id?: T;
       };
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
@@ -28533,6 +28928,16 @@ export interface PayloadJobsStatsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "welcome_widget".
+ */
+export interface WelcomeWidget {
+  data?: {
+    [k: string]: unknown;
+  };
+  width: 'full';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "collections_widget".
  */
 export interface CollectionsWidget {
@@ -28540,6 +28945,454 @@ export interface CollectionsWidget {
     [k: string]: unknown;
   };
   width: 'full';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "collection-query_widget".
+ */
+export interface CollectionQueryWidget {
+  data?: {
+    title?: string | null;
+    relatedCollection:
+      | 'consolidation-eliminations'
+      | 'groups'
+      | 'intercompany-transactions'
+      | 'org-units'
+      | 'roles'
+      | 'tenants'
+      | 'users'
+      | 'categories'
+      | 'media'
+      | 'pages'
+      | 'posts'
+      | 'activities'
+      | 'ai-suggestions'
+      | 'batches'
+      | 'beneficial-owners'
+      | 'bookings'
+      | 'cases'
+      | 'consent-records'
+      | 'consignment-arrangements'
+      | 'consignment-sales'
+      | 'credit-memos'
+      | 'customer-segments'
+      | 'customs-declarations'
+      | 'dunning-cycles'
+      | 'fiscal-devices'
+      | 'goods-receipts'
+      | 'invoice-lines'
+      | 'invoices'
+      | 'kyc-checks'
+      | 'leads'
+      | 'operators'
+      | 'opportunities'
+      | 'parties'
+      | 'payment-allocations'
+      | 'payment-runs'
+      | 'project-milestones'
+      | 'receipts'
+      | 'returns'
+      | 'sales'
+      | 'sepa-mandates'
+      | 'subscription-plans'
+      | 'subscriptions'
+      | 'terminals'
+      | 'usage-records'
+      | 'vendor-scorecards'
+      | 'commitments'
+      | 'contract-performance'
+      | 'account-reconciliations'
+      | 'audit-reports'
+      | 'bank-accounts'
+      | 'bank-reconciliations'
+      | 'bank-statements'
+      | 'bank-transactions'
+      | 'bookable-resources'
+      | 'carbon-emissions'
+      | 'closing-entries'
+      | 'compliance-deadlines'
+      | 'consolidations'
+      | 'csrd-disclosures'
+      | 'currency-rates'
+      | 'earnings-per-share'
+      | 'entity-legal-structures'
+      | 'evidence-attestations'
+      | 'financial-statements'
+      | 'fiscal-calendars'
+      | 'fiscal-periods'
+      | 'fx-transactions'
+      | 'gl-accounts'
+      | 'gl-postings'
+      | 'journal-entries'
+      | 'lease-modifications'
+      | 'legal-entities'
+      | 'period-end-adjustments'
+      | 'period-locks'
+      | 'post-balance-sheet-events'
+      | 'post-close-analytics-reports'
+      | 'prior-period-adjustments'
+      | 'provisions'
+      | 'reporting-standards'
+      | 'statutory-report-templates'
+      | 'tax-calculations'
+      | 'tax-codes'
+      | 'tax-jurisdictions'
+      | 'tax-periods'
+      | 'tax-returns'
+      | 'transfer-pricing-adjustments'
+      | 'transfer-pricing-files'
+      | 'wip-snapshots'
+      | 'cost-centers'
+      | 'employees'
+      | 'expense-reports'
+      | 'job-positions'
+      | 'leave-requests'
+      | 'maintenance-work-orders'
+      | 'payroll-runs'
+      | 'performance-reviews'
+      | 'recruiting-pipeline'
+      | 'sales-commissions'
+      | 'share-based-payments'
+      | 'time-entries'
+      | 'work-shifts'
+      | 'bills-of-materials'
+      | 'cost-variances'
+      | 'lot-variants'
+      | 'lot-work-phases'
+      | 'lots'
+      | 'pack-items'
+      | 'packs'
+      | 'work-centers'
+      | 'work-orders'
+      | 'work-phases'
+      | 'carriers'
+      | 'consignment-inventory'
+      | 'deferred-tax-items'
+      | 'inventory-movements'
+      | 'packages'
+      | 'production-receipts'
+      | 'quality-inspections'
+      | 'shipments'
+      | 'tracking-events'
+      | 'warehouse-locations'
+      | 'audit-committee-minutes'
+      | 'audit-committees'
+      | 'audit-evidence'
+      | 'audit-findings'
+      | 'audit-samples'
+      | 'board-actions'
+      | 'compliance-frameworks'
+      | 'compliance-gaps'
+      | 'compliance-requirements'
+      | 'control-tests'
+      | 'debt-schedule'
+      | 'disclosure-checklists'
+      | 'entity-types'
+      | 'government-grants'
+      | 'internal-audit-function'
+      | 'internal-controls'
+      | 'internal-policies'
+      | 'management-assessment-icfr'
+      | 'management-certifications'
+      | 'policy-acknowledgments'
+      | 'regulatory-reports'
+      | 'related-party-transactions'
+      | 'remediation-plans'
+      | 'risk-register'
+      | 'segment-reporting'
+      | 'biological-assets'
+      | 'business-combinations'
+      | 'depreciation-schedules'
+      | 'fair-value-measurements'
+      | 'fixed-assets'
+      | 'held-for-sale-classifications'
+      | 'insurance-contracts'
+      | 'investment-properties'
+      | 'lease-period-postings'
+      | 'leases'
+      | 'properties'
+      | 'spaces'
+      | 'budget-planning'
+      | 'contracts'
+      | 'performance-obligations'
+      | 'project-tasks'
+      | 'projects'
+      | 'recurring-journals'
+      | 'workflow-definitions'
+      | 'workflow-instances'
+      | 'contract-amendments'
+      | 'contract-signatures'
+      | 'chat'
+      | 'connections'
+      | 'messages'
+      | 'api-audit-events'
+      | 'audit-events'
+      | 'audit-submissions'
+      | 'data-processing-activities'
+      | 'data-subject-requests'
+      | 'memories'
+      | 'mineral-resource-assets'
+      | 'regulatory-deferral-accounts'
+      | 'rounding-adjustments'
+      | 'sectors'
+      | 'shares'
+      | 'standards'
+      | 'taggings'
+      | 'tags'
+      | 'transaction-failures'
+      | 'translations'
+      | 'addresses'
+      | 'variants'
+      | 'variantTypes'
+      | 'variantOptions'
+      | 'products'
+      | 'carts'
+      | 'orders'
+      | 'transactions'
+      | 'forms'
+      | 'form-submissions'
+      | 'redirects'
+      | 'search'
+      | 'exports'
+      | 'imports';
+    where?:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+    sortField?: string | null;
+    sortDirection?: ('asc' | 'desc') | null;
+    limit?: number | null;
+  };
+  width: 'x-small' | 'small' | 'medium' | 'large' | 'x-large' | 'full';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "activity_widget".
+ */
+export interface ActivityWidget {
+  data?: {
+    excludedCollections?:
+      | (
+          | 'consolidation-eliminations'
+          | 'groups'
+          | 'intercompany-transactions'
+          | 'org-units'
+          | 'roles'
+          | 'tenants'
+          | 'users'
+          | 'categories'
+          | 'media'
+          | 'pages'
+          | 'posts'
+          | 'activities'
+          | 'ai-suggestions'
+          | 'batches'
+          | 'beneficial-owners'
+          | 'bookings'
+          | 'cases'
+          | 'consent-records'
+          | 'consignment-arrangements'
+          | 'consignment-sales'
+          | 'credit-memos'
+          | 'customer-segments'
+          | 'customs-declarations'
+          | 'dunning-cycles'
+          | 'fiscal-devices'
+          | 'goods-receipts'
+          | 'invoice-lines'
+          | 'invoices'
+          | 'kyc-checks'
+          | 'leads'
+          | 'operators'
+          | 'opportunities'
+          | 'parties'
+          | 'payment-allocations'
+          | 'payment-runs'
+          | 'project-milestones'
+          | 'receipts'
+          | 'returns'
+          | 'sales'
+          | 'sepa-mandates'
+          | 'subscription-plans'
+          | 'subscriptions'
+          | 'terminals'
+          | 'usage-records'
+          | 'vendor-scorecards'
+          | 'commitments'
+          | 'contract-performance'
+          | 'account-reconciliations'
+          | 'audit-reports'
+          | 'bank-accounts'
+          | 'bank-reconciliations'
+          | 'bank-statements'
+          | 'bank-transactions'
+          | 'bookable-resources'
+          | 'carbon-emissions'
+          | 'closing-entries'
+          | 'compliance-deadlines'
+          | 'consolidations'
+          | 'csrd-disclosures'
+          | 'currency-rates'
+          | 'earnings-per-share'
+          | 'entity-legal-structures'
+          | 'evidence-attestations'
+          | 'financial-statements'
+          | 'fiscal-calendars'
+          | 'fiscal-periods'
+          | 'fx-transactions'
+          | 'gl-accounts'
+          | 'gl-postings'
+          | 'journal-entries'
+          | 'lease-modifications'
+          | 'legal-entities'
+          | 'period-end-adjustments'
+          | 'period-locks'
+          | 'post-balance-sheet-events'
+          | 'post-close-analytics-reports'
+          | 'prior-period-adjustments'
+          | 'provisions'
+          | 'reporting-standards'
+          | 'statutory-report-templates'
+          | 'tax-calculations'
+          | 'tax-codes'
+          | 'tax-jurisdictions'
+          | 'tax-periods'
+          | 'tax-returns'
+          | 'transfer-pricing-adjustments'
+          | 'transfer-pricing-files'
+          | 'wip-snapshots'
+          | 'cost-centers'
+          | 'employees'
+          | 'expense-reports'
+          | 'job-positions'
+          | 'leave-requests'
+          | 'maintenance-work-orders'
+          | 'payroll-runs'
+          | 'performance-reviews'
+          | 'recruiting-pipeline'
+          | 'sales-commissions'
+          | 'share-based-payments'
+          | 'time-entries'
+          | 'work-shifts'
+          | 'bills-of-materials'
+          | 'cost-variances'
+          | 'lot-variants'
+          | 'lot-work-phases'
+          | 'lots'
+          | 'pack-items'
+          | 'packs'
+          | 'work-centers'
+          | 'work-orders'
+          | 'work-phases'
+          | 'carriers'
+          | 'consignment-inventory'
+          | 'deferred-tax-items'
+          | 'inventory-movements'
+          | 'packages'
+          | 'production-receipts'
+          | 'quality-inspections'
+          | 'shipments'
+          | 'tracking-events'
+          | 'warehouse-locations'
+          | 'audit-committee-minutes'
+          | 'audit-committees'
+          | 'audit-evidence'
+          | 'audit-findings'
+          | 'audit-samples'
+          | 'board-actions'
+          | 'compliance-frameworks'
+          | 'compliance-gaps'
+          | 'compliance-requirements'
+          | 'control-tests'
+          | 'debt-schedule'
+          | 'disclosure-checklists'
+          | 'entity-types'
+          | 'government-grants'
+          | 'internal-audit-function'
+          | 'internal-controls'
+          | 'internal-policies'
+          | 'management-assessment-icfr'
+          | 'management-certifications'
+          | 'policy-acknowledgments'
+          | 'regulatory-reports'
+          | 'related-party-transactions'
+          | 'remediation-plans'
+          | 'risk-register'
+          | 'segment-reporting'
+          | 'biological-assets'
+          | 'business-combinations'
+          | 'depreciation-schedules'
+          | 'fair-value-measurements'
+          | 'fixed-assets'
+          | 'held-for-sale-classifications'
+          | 'insurance-contracts'
+          | 'investment-properties'
+          | 'lease-period-postings'
+          | 'leases'
+          | 'properties'
+          | 'spaces'
+          | 'budget-planning'
+          | 'contracts'
+          | 'performance-obligations'
+          | 'project-tasks'
+          | 'projects'
+          | 'recurring-journals'
+          | 'workflow-definitions'
+          | 'workflow-instances'
+          | 'contract-amendments'
+          | 'contract-signatures'
+          | 'chat'
+          | 'connections'
+          | 'messages'
+          | 'api-audit-events'
+          | 'audit-events'
+          | 'audit-submissions'
+          | 'data-processing-activities'
+          | 'data-subject-requests'
+          | 'memories'
+          | 'mineral-resource-assets'
+          | 'regulatory-deferral-accounts'
+          | 'rounding-adjustments'
+          | 'sectors'
+          | 'shares'
+          | 'standards'
+          | 'taggings'
+          | 'tags'
+          | 'transaction-failures'
+          | 'translations'
+          | 'addresses'
+          | 'variants'
+          | 'variantTypes'
+          | 'variantOptions'
+          | 'products'
+          | 'carts'
+          | 'orders'
+          | 'transactions'
+          | 'forms'
+          | 'form-submissions'
+          | 'redirects'
+          | 'search'
+          | 'exports'
+          | 'imports'
+        )[]
+      | null;
+  };
+  width: 'small' | 'medium' | 'large' | 'x-large' | 'full';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "upload-dropzone_widget".
+ */
+export interface UploadDropzoneWidget {
+  data?: {
+    excludedCollections?: ('media' | 'exports' | 'imports')[] | null;
+  };
+  width: 'x-small' | 'small' | 'medium' | 'large' | 'x-large' | 'full';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -28834,45 +29687,148 @@ export interface TaskSchedulePublish {
           value: string | Post;
         } | null);
     global?: string | null;
-    user?: (string | null) | User;
+    user?: {
+      relationTo: 'users';
+      value: string | User;
+    } | null;
   };
   output?: unknown;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Code".
+ */
+export interface Code {
+  id: string;
+  blockType: 'Code';
+  language?:
+    | (
+        | 'plaintext'
+        | 'txt'
+        | 'ts'
+        | 'tsx'
+        | 'js'
+        | 'jsx'
+        | 'typescript'
+        | 'javascript'
+        | 'json'
+        | 'jsonc'
+        | 'bash'
+        | 'sh'
+        | 'shell'
+        | 'zsh'
+        | 'sql'
+        | 'graphql'
+        | 'yaml'
+        | 'yml'
+        | 'toml'
+        | 'css'
+        | 'scss'
+        | 'html'
+        | 'xml'
+        | 'md'
+        | 'markdown'
+        | 'mdx'
+        | 'diff'
+        | 'lean'
+        | 'latex'
+        | 'tex'
+        | 'python'
+        | 'ruby'
+        | 'rust'
+        | 'go'
+        | 'dockerfile'
+        | 'ini'
+        | 'text'
+      )
+    | null;
+  code?: string | null;
+  blockName?: string | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "BannerBlock".
  */
 export interface BannerBlock {
-  style: 'info' | 'warning' | 'error' | 'success';
-  content: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
-  id?: string | null;
-  blockName?: string | null;
+  id: string;
   blockType: 'banner';
+  style: 'info' | 'warning' | 'error' | 'success';
+  content: LexicalRichText<LexicalNodes_AD327369>;
+  blockName?: string | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "CodeBlock".
  */
 export interface CodeBlock {
+  id: string;
+  blockType: 'code';
   language?: ('typescript' | 'javascript' | 'css') | null;
   code: string;
-  id?: string | null;
   blockName?: string | null;
-  blockType: 'code';
+}
+/**
+ * Multiple blocks resolve to the `MediaBlock` interface with different fields, so a content hash is appended to keep the generated types stable and unambiguous. Set a unique `interfaceName` on the block to choose the name yourself. See https://payloadcms.com/docs/typescript/generating-types#block-interface-name-collisions
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "MediaBlock_7426DDFC".
+ */
+export interface MediaBlock_7426DDFC {
+  id: string;
+  blockType: 'mediaBlock';
+  media: string | Media;
+  blockName?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Fence".
+ */
+export interface Fence {
+  id: string;
+  blockType: 'Fence';
+  language?:
+    | (
+        | 'plaintext'
+        | 'txt'
+        | 'ts'
+        | 'tsx'
+        | 'js'
+        | 'jsx'
+        | 'typescript'
+        | 'javascript'
+        | 'json'
+        | 'jsonc'
+        | 'bash'
+        | 'sh'
+        | 'shell'
+        | 'zsh'
+        | 'sql'
+        | 'graphql'
+        | 'yaml'
+        | 'yml'
+        | 'toml'
+        | 'css'
+        | 'scss'
+        | 'html'
+        | 'xml'
+        | 'md'
+        | 'markdown'
+        | 'mdx'
+        | 'diff'
+        | 'lean'
+        | 'latex'
+        | 'tex'
+        | 'python'
+        | 'ruby'
+        | 'rust'
+        | 'go'
+        | 'dockerfile'
+        | 'ini'
+        | 'text'
+      )
+    | null;
+  code?: string | null;
+  blockName?: string | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -28880,6 +29836,157 @@ export interface CodeBlock {
  */
 export interface Auth {
   [k: string]: unknown;
+}
+
+/** @internal Core Lexical types — see @payloadcms/richtext-lexical. */
+export type LexicalElementFormat = 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+export type LexicalElementDirection = ('ltr' | 'rtl') | null;
+
+export interface SerializedLexicalElementBase<TChildren> {
+  children: TChildren[];
+  direction: LexicalElementDirection;
+  format: LexicalElementFormat;
+  indent: number;
+  textFormat?: number;
+  textStyle?: string;
+  /** @deprecated Ignored when loading. Typed as required only to match Lexical's types: rich text sent through the API, CLI or MCP may not contain it. */
+  version: number;
+}
+
+export type LexicalTextMode = 'normal' | 'token' | 'segmented';
+
+export interface SerializedTextNode {
+  type: 'text';
+  detail: number;
+  format: number;
+  mode: LexicalTextMode;
+  style: string;
+  text: string;
+  /** @deprecated Ignored when loading. Typed as required only to match Lexical's types: rich text sent through the API, CLI or MCP may not contain it. */
+  version: number;
+}
+
+export interface SerializedTabNode {
+  type: 'tab';
+  detail: number;
+  format: number;
+  mode: LexicalTextMode;
+  style: string;
+  text: string;
+  /** @deprecated Ignored when loading. Typed as required only to match Lexical's types: rich text sent through the API, CLI or MCP may not contain it. */
+  version: number;
+}
+
+export interface SerializedLineBreakNode {
+  type: 'linebreak';
+  /** @deprecated Ignored when loading. Typed as required only to match Lexical's types: rich text sent through the API, CLI or MCP may not contain it. */
+  version: number;
+}
+
+export interface SerializedParagraphNode<TChildren> extends SerializedLexicalElementBase<TChildren> {
+  type: 'paragraph';
+  textFormat: number;
+  textStyle: string;
+}
+
+export interface LexicalLinkFields {
+  [k: string]: unknown;
+  doc?: {
+    relationTo: string;
+    value: Config['db']['defaultIDType'] | { [k: string]: unknown; id: Config['db']['defaultIDType'] };
+  } | null;
+  linkType: 'custom' | 'internal';
+  newTab: boolean;
+  url?: string;
+}
+export interface SerializedLinkNode<TChildren, TFields = LexicalLinkFields> extends SerializedLexicalElementBase<TChildren> {
+  type: 'link';
+  fields: TFields;
+  id?: string;
+}
+export interface SerializedAutoLinkNode<TChildren, TFields = LexicalLinkFields> extends SerializedLexicalElementBase<TChildren> {
+  type: 'autolink';
+  fields: TFields;
+}
+
+/** Shape of a Lexical `richText` field. */
+export interface LexicalRichText<TNode> {
+  root: {
+    children: TNode[];
+    direction: LexicalElementDirection;
+    format: LexicalElementFormat;
+    indent: number;
+    type: 'root';
+    /** @deprecated Ignored when loading. Typed as required only to match Lexical's types: rich text sent through the API, CLI or MCP may not contain it. */
+    version: number;
+  };
+}
+
+export interface SerializedHeadingNode<
+  TChildren,
+  TTag extends 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
+> extends SerializedLexicalElementBase<TChildren> {
+  type: 'heading';
+  tag: TTag;
+}
+
+export type SerializedBlockNode<TFields extends { blockType: string }> = TFields extends unknown ? {
+  type: 'block';
+  format: LexicalElementFormat;
+  /** @deprecated Ignored when loading. Typed as required only to match Lexical's types: rich text sent through the API, CLI or MCP may not contain it. */
+  version: number;
+  fields: { id: string; blockName?: string | null } & Omit<TFields, 'id' | 'blockName'>;
+} : never;
+export type SerializedInlineBlockNode<TFields extends { blockType: string }> = TFields extends unknown ? {
+  type: 'inlineBlock';
+  /** @deprecated Ignored when loading. Typed as required only to match Lexical's types: rich text sent through the API, CLI or MCP may not contain it. */
+  version: number;
+  fields: { id: string } & Omit<TFields, 'id'>;
+} : never;
+
+export interface SerializedTableNode<TChildren> extends SerializedLexicalElementBase<TChildren> {
+  type: 'table';
+  colWidths?: number[];
+  frozenColumnCount?: number;
+  frozenRowCount?: number;
+  rowStriping?: boolean;
+}
+export interface SerializedTableRowNode<TChildren> extends SerializedLexicalElementBase<TChildren> {
+  type: 'tablerow';
+  height?: number;
+}
+export interface SerializedTableCellNode<TChildren> extends SerializedLexicalElementBase<TChildren> {
+  type: 'tablecell';
+  backgroundColor?: string | null;
+  colSpan?: number;
+  headerState: number;
+  rowSpan?: number;
+  verticalAlign?: string;
+  width?: number;
+}
+
+export interface SerializedQuoteNode<TChildren> extends SerializedLexicalElementBase<TChildren> {
+  type: 'quote';
+}
+
+export interface SerializedListNode<TChildren> extends SerializedLexicalElementBase<TChildren> {
+  type: 'list';
+  checked?: boolean;
+  listType: 'number' | 'bullet' | 'check';
+  start: number;
+  tag: 'ul' | 'ol';
+}
+
+export interface SerializedListItemNode<TChildren> extends SerializedLexicalElementBase<TChildren> {
+  type: 'listitem';
+  checked?: boolean;
+  value: number;
+}
+
+export interface SerializedHorizontalRuleNode {
+  type: 'horizontalrule';
+  /** @deprecated Ignored when loading. Typed as required only to match Lexical's types: rich text sent through the API, CLI or MCP may not contain it. */
+  version: number;
 }
 
 

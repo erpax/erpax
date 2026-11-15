@@ -3,11 +3,9 @@ import type { CollectionConfig } from 'payload'
 import { authenticatedOrPublished } from '@/access/collections/shared/authenticatedOrPublished'
 import { Archive, CallToAction, Content, FormBlock, MediaBlock } from '@/blocks/config'
 import { hero } from '@/components/hero'
-import { slugField } from 'payload'
 import { documentPreviewAdmin } from '@/utilities/shareds'
 import { defaultVersionedDrafts } from '@/utilities/shareds'
 import { superAdminOrTenantAdminAccess } from '@/utilities/cmspage/access'
-import { ensureUniqueSlugWithinTenant } from '@/hooks/fields/shared/ensureUniqueSlugWithinTenant'
 import { pagesBeforeChange } from '@/utilities/cmspage/hooks'
 import { revalidateDelete, revalidatePage } from '@/utilities/cmspage/hooks'
 import { localeRecord } from '@/i18n'
@@ -35,6 +33,8 @@ import {
  */
 export const Pages: CollectionConfig = {
   slug: 'pages',
+  llmInstructions:
+    'Pages are the nested documents of a tenant. Set `parent` to a page id to nest one under another (the nested-docs plugin fills `breadcrumbs`). A page needs a `tenant`, a `title`, a `slug`, a hero and a layout of content blocks.',
   labels: {
     singular: localeRecord('pages.singular'),
     plural: localeRecord('pages.plural'),
@@ -138,22 +138,8 @@ export const Pages: CollectionConfig = {
         position: 'sidebar',
       },
     },
-    slugField({
-      disableUnique: true,
-      overrides: (field) => {
-        const slugText = field.fields?.[1]
-        if (slugText && slugText.type === 'text') {
-          slugText.hooks = {
-            ...slugText.hooks,
-            beforeValidate: [
-              ...(slugText.hooks?.beforeValidate || []),
-              ensureUniqueSlugWithinTenant('pages'),
-            ],
-          }
-        }
-        return field
-      },
-    }),
+    // Payload's native slug field; `unique` becomes (tenant, slug) through the indexes plugin.
+    { name: 'slug', type: 'slug', useAsSlug: 'title', unique: true },
     {
       name: 'parent',
       type: 'relationship',

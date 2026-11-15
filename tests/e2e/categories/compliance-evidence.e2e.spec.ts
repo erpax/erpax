@@ -13,7 +13,6 @@
  * @compliance SOX §404 internal-controls process-walk-through
  * @accounting IFRS IAS-1 presentation-of-financial-statements
  * @accounting US-GAAP ASC-810 consolidation
- * @see src/plugins/accounting/seeds/level-3/e2e-accounting-seeds.ts
  */
 
 import { test } from '@playwright/test'
@@ -22,7 +21,6 @@ import { testUser } from '../../helpers/seedUser'
 import { safeCaptureRoute } from '../../helpers/evidence'
 import { getSeedsByCategory } from '@/utilities/testing'
 
-import '@/plugins/accounting/seeds'
 
 const CATEGORY = 'compliance-evidence' as const
 const BASE = 'http://localhost:3000'

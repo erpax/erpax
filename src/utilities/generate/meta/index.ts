@@ -41,8 +41,7 @@ const getImageURL = (
 ) => {
   const serverUrl = siteOrigin ?? getServerSideURL()
   if (image && typeof image === 'object' && 'url' in image) {
-    const ogUrl = image.sizes?.og?.url
-    return ogUrl ? serverUrl + ogUrl : serverUrl + image.url
+    return serverUrl + image.url
   }
   // The editor uploaded nothing: the image is computed from what the page already stores.
   return fallback

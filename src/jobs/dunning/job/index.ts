@@ -115,6 +115,7 @@ async function transitionSubscriptionStatus(
       lastStatusChange: new Date().toISOString(),
       lastStatusChangeReason: reason,
     },
+    overrideAccess: true,
   })
 }
 
@@ -144,6 +145,7 @@ async function processInvoiceDunning(
           suspensionScheduledFor: sevenDaysOut,
         },
       } as Record<string, unknown>,
+      overrideAccess: true,
     })
 
     await transitionSubscriptionStatus(
@@ -208,6 +210,7 @@ export async function processDunningCycle(payload: Payload): Promise<void> {
       },
       limit: 1000,
       depth: 2,
+      overrideAccess: true,
     })
 
     payload.logger.info(
@@ -228,6 +231,7 @@ export async function processDunningCycle(payload: Payload): Promise<void> {
             ? ((await payload.findByID({
                 collection: 'subscriptions',
                 id: sub as DocId,
+              overrideAccess: true,
               })) as unknown as SubscriptionForDunning | null)
             : null
 

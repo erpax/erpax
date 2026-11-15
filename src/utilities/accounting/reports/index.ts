@@ -156,7 +156,7 @@ async function findAll(
   const docs: unknown[] = []
   let page = 1
   for (;;) {
-    const r = await payload.find({ collection: collection as never, where: where as never, limit: pageSize, page, depth: 0 })
+    const r = await payload.find({ collection: collection as never, where: where as never, limit: pageSize, page, depth: 0, overrideAccess: true })
     docs.push(...r.docs)
     if (!r.hasNextPage) return { docs }
     page++

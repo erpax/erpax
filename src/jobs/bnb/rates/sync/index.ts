@@ -73,6 +73,7 @@ export async function processBnbRatesSync(payload: Payload): Promise<BnbRatesSyn
     where: { 'config.identity.country': { equals: 'BG' } },
     limit: 1000,
     pagination: false,
+    overrideAccess: true,
   })) as { docs: BgTenantRow[] }
 
   const today = new Date().toISOString().slice(0, 10)
@@ -145,6 +146,7 @@ export async function processBnbRatesSync(payload: Payload): Promise<BnbRatesSyn
             ],
           },
           limit: 1,
+          overrideAccess: true,
         })) as { docs: Array<{ id: string | number }> }
 
         if (existing.docs?.[0]) {
@@ -152,6 +154,7 @@ export async function processBnbRatesSync(payload: Payload): Promise<BnbRatesSyn
             collection: 'currency-rates',
             id: existing.docs[0].id,
             data: { rate: ratePerUnit, isActive: true },
+            overrideAccess: true,
           })
         } else {
           await payload.create({
@@ -168,6 +171,7 @@ export async function processBnbRatesSync(payload: Payload): Promise<BnbRatesSyn
               source: lookup.source === 'ECB' ? 'ecb' : 'bank_api',
               isActive: true,
             },
+            overrideAccess: true,
           })
         }
         ratesUpserted += 1

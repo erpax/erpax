@@ -85,6 +85,7 @@ export const validateClosingPeriod: CollectionBeforeValidateHook<ClosingEntryDat
           ],
         },
         limit: 100,
+        overrideAccess: true,
       })
 
       existingClosings = closingRecords.docs.map(

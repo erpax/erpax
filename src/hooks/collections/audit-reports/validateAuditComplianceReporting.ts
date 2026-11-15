@@ -114,6 +114,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
         where: {
           id: { equals: consolidationRef },
         },
+        overrideAccess: true,
       })
 
       if (consolidationQuery.docs.length > 0) {
@@ -144,6 +145,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
       where: {
         fiscalYear: { equals: data.auditYear },
       },
+      overrideAccess: true,
     })
 
     for (const tp of taxPeriodsQuery.docs) {
@@ -172,6 +174,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
       where: {
         documentationStatus: { equals: 'documented' },
       },
+      overrideAccess: true,
     })
 
     for (const tp of tpQuery.docs) {
@@ -206,7 +209,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
       const first = principal?.tenants?.[0]?.tenant
       const tenantId = typeof first === 'string' ? first : first?.id
       const tenant = tenantId
-        ? await payload.findByID({ collection: 'tenants', id: tenantId, depth: 0 }).catch(() => null)
+        ? await payload.findByID({ collection: 'tenants', id: tenantId, depth: 0, overrideAccess: true }).catch(() => null)
         : null
       const identity = (tenant as { config?: { identity?: Record<string, string> } } | null)?.config
         ?.identity

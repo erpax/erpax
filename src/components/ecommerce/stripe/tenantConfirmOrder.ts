@@ -74,6 +74,7 @@ export function tenantConfirmOrder(props?: {
         },
       },
       limit: 1,
+      overrideAccess: true,
     })
 
     const transaction = transactionsResults.docs[0] as Transaction | undefined
@@ -148,6 +149,7 @@ export function tenantConfirmOrder(props?: {
           ...(tenantField != null ? { tenant: tenantField } : {}),
         },
         req,
+        overrideAccess: true,
       })) as unknown as Order
 
       const timestamp = new Date().toISOString()
@@ -158,6 +160,7 @@ export function tenantConfirmOrder(props?: {
           purchasedAt: timestamp,
         },
         req,
+        overrideAccess: true,
       })
       await payload.update({
         id: transaction.id,
@@ -167,6 +170,7 @@ export function tenantConfirmOrder(props?: {
           status: 'succeeded',
         },
         req,
+        overrideAccess: true,
       })
       return {
         message: 'Payment initiated successfully',

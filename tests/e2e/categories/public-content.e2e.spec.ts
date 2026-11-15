@@ -13,15 +13,12 @@
  * @compliance WCAG-2.1 §1.3.1 info-and-relationships
  * @compliance SOX §404 internal-controls process-walk-through
  * @see src/collections/Pages/index.ts
- * @see src/plugins/accounting/seeds/level-1/minimal-accounting-seeds.ts (MinimalPagesSeed)
- * @see src/plugins/accounting/seeds/level-2/documentation-pages.ts
  */
 
 import { test } from '@playwright/test'
 import { safeCaptureRoute } from '../../helpers/evidence'
 import { getSeedsByCategory } from '@/utilities/testing'
 
-import '@/plugins/accounting/seeds'
 
 const CATEGORY = 'public-content' as const
 const BASE = 'http://localhost:3000'

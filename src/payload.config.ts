@@ -8,6 +8,7 @@ import type { CloudflareContext } from '@opennextjs/cloudflare'
 import { GetPlatformProxyOptions } from 'wrangler'
 import { multiTenantPlugin } from '@payloadcms/plugin-multi-tenant'
 import { mcpPlugin } from '@payloadcms/plugin-mcp'
+import { recordGap } from '@/plugins/mcp/gap'
 import { stripePlugin } from '@payloadcms/plugin-stripe'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { referenceTargets, referencesField } from '@/seed/forms'
@@ -23,9 +24,6 @@ import { taggablePlugin } from '@/plugins/taggable'
 import { longNamesPlugin } from '@/plugins/naming'
 import { indexesPlugin } from '@/plugins/indexes'
 import { handlesPlugin } from '@/plugins/handles'
-import { appMcp } from '@/plugins/mcp/apps'
-import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
-import { mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
 import { versionsPlugin } from '@/plugins/versions'
 import { trelloClientFromEnv } from '@/utilities/trello'
 import { trelloPlugin, TRELLO_SYNC } from '@/utilities/trello/plugin'
@@ -179,15 +177,6 @@ async function getCloudflare(): Promise<CloudflareContext> {
   return _cloudflare
 }
 
-let sharp: typeof import('sharp') | undefined
-if (process.env.PAYLOAD_DISABLE_SHARP !== 'true') {
-  try {
-    sharp = (await import('sharp')).default
-  } catch {
-    sharp = undefined
-  }
-}
-
 // Merge plugin translations with the project's own nested messages so the
 // Payload admin UI has a single, complete translation map per locale.
 function pluginTranslationsForLocale(
@@ -215,7 +204,6 @@ const adminTranslations = Object.fromEntries(
 )
 
 export default buildConfig({
-  ...(sharp ? { sharp } : {}),
   email: tenantAwareResendEmailAdapter,
   admin: {
     components: {
@@ -322,10 +310,6 @@ export default buildConfig({
       // a collection is reachable only through a tenant that has its app switched on
       gateByApp,
     ),
-    r2Storage({
-      bucket: (await getCloudflare()).env.R2,
-      collections: { media: true },
-    }),
     createEcommercePlugin(),
     // A form's fields are data; what a submission REFERS to is a real relationship. `references[]` on
     // form-submissions carries one polymorphic reference per row, over the shared collections —
@@ -372,7 +356,10 @@ export default buildConfig({
     }),
     redirectsPlugin({
       collections: ['pages', 'posts'],
-      overrides: { fields: ({ defaultFields }) => defaultFields },
+      overrides: {
+        llmInstructions: 'Redirects map one path to another document or URL.',
+        fields: ({ defaultFields }) => defaultFields,
+      },
     }),
     searchPlugin({
       // Every collection is searchable — derived from the barrel, not hand-listed
@@ -386,6 +373,8 @@ export default buildConfig({
       // `search_rels` at 208 cols, over D1's 100-col cap) to the content-uuid cross-reference
       // (`searchDocField`: a flat group, no `_rels` table). See fieldOverrides.ts for the why.
       searchOverrides: {
+        llmInstructions:
+          'Search holds one flat row per document (title, slug, markdown body). Use it to find a page or post by slug before reading it in full.',
         fields: ({ defaultFields }) => [
           ...defaultFields.map((field) => ('name' in field && field.name === 'doc' ? searchDocField : field)),
           ...searchFields,
@@ -409,7 +398,7 @@ export default buildConfig({
         (slug) => ({ slug: slug as CollectionSlug }),
       ),
     }),
-    multiTenantPlugin<Config>({
+    multiTenantPlugin({
       // COMPUTED, not a 201-slug hand-map: every collection is tenant-scoped
       // except the small, explicit GLOBAL_SPINE — see src/utilities/tenants/scope.ts and
       // its proof test. A new collection auto-scopes; nothing drifts.
@@ -453,33 +442,12 @@ export default buildConfig({
     // plugin-import-export deferred from the deployed Worker to stay under Cloudflare's 10MB
     // script cap — the admin bulk CSV/JSON I/O surface is non-core and re-addable. Removed
     // rather than stubbed so migrate-time, runtime, and generated types stay consistent.
+    // Payload's MCP gateway: every collection and global through the plugin's generic tools, and
+    // Payload access control (the caller's roles, per tenant) decides what each agent sees. Keys are
+    // the users' own API keys, and guidance for models is each collection's `llmInstructions`.
+    // A failed call is recorded as an `emerging_gap` memory (src/plugins/mcp/gap).
     mcpPlugin({
-      // Users and agents are ONE (actor-merge): access still gates every call.
-      // Production/Worker defaults to gateway auth atoms only (users/tenants/
-      // roles/payload-mcp-api-keys) — enabling all ~206 collections crashes
-      // the isolate on `/api/mcp` (CF 1101/1102) after Bearer auth.
-      // CMS fixtures: `ERPAX_MCP_INCLUDE_CMS=1`. Full barrel: `ERPAX_MCP_SEED=0`.
-      // Extra slugs: `ERPAX_MCP_EXTRA=a,b`. See `@/plugins/mcp/seed`.
-      collections: mcpCollectionsConfig(
-        Object.values(allCollections) as Array<{ slug: string }>,
-      ),
-      globals: mcpGlobalsConfig(),
-      // The gateway serves Payload's collections and globals — nothing else.
-      // Collapse the 824-column capability matrix (over D1's 100-col cap) to a
-      // compact `scopes` field + virtual afterRead capabilities — the same
-      // matrix→cross collapse as access. See src/plugins/mcp/scopes.
-      overrideApiKeyCollection: (collection) =>
-        collapseApiKeyScopes({
-          ...collection,
-          admin: {
-            ...collection.admin,
-            group: localeRecord('plugins.mcpGroup'),
-          },
-          labels: {
-            plural: localeRecord('payload-mcp-api-keys.plural'),
-            singular: localeRecord('payload-mcp-api-keys.singular'),
-          },
-        }),
+      hooks: { afterToolCall: [recordGap] },
     }),
     // Trello entanglement — beside the MCP gateway because it is the same kind of thing: an
     // external surface entered as an atom. INERT by default: TRELLO_SYNC is empty, so no field is
@@ -533,8 +501,6 @@ export default buildConfig({
     // last: the collections other plugins brought (orders, forms, …) take their app's name too
     navigation(gateByApp),
     // every document gets a handle, and /api/h/:handle resolves one (src/plugins/handles)
-    // <app>.<domain>/mcp serves that app's own collections, the gateway answers elsewhere (src/plugins/mcp/apps)
-    appMcp(APPS),
     handlesPlugin({ predefined: { apps: APPS, providers: PROVIDERS, roles: ACCOUNT_ROLES, locales: supportedLocales } }),
   ],
   secret: payloadSecret || 'INSECURE_BUILD_ONLY_PLACEHOLDER',
@@ -664,6 +630,10 @@ export default buildConfig({
         }
       : {}),
   },
+  storage: [r2Storage({
+        bucket: (await getCloudflare()).env.R2,
+        collections: { media: true },
+    })],
 })
 
 function getCloudflareContextFromWrangler(): Promise<CloudflareContext> {

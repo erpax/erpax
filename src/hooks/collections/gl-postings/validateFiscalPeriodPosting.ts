@@ -139,6 +139,7 @@ export const validateFiscalPeriodPosting: CollectionBeforeValidateHook<GLPosting
     depth: 0,
     limit: 1,
     where: { and: [{ entity: { equals: entityId } }, { calendarDate: { equals: postingDate } }] },
+    overrideAccess: true,
   })
 
   const entry = found.docs[0] as CalendarEntryDoc | undefined
@@ -176,6 +177,7 @@ export const validateFiscalPeriodPosting: CollectionBeforeValidateHook<GLPosting
         { fiscalPeriod: { equals: data.fiscalPeriod } },
       ],
     },
+    overrideAccess: true,
   })
 
   const lock = locks.docs[0] as PeriodLockDoc | undefined

@@ -39,17 +39,17 @@ describe('tenantScopedRead access', () => {
 
   describe('tenantScopedCollectionReadAccess', () => {
     it('allows any authenticated user', async () => {
-      await expect(tenantScopedCollectionReadAccess({ req: authReq })).resolves.toBe(true)
+      await expect(tenantScopedCollectionReadAccess({ req: authReq, slug: 'pages' })).resolves.toBe(true)
     })
 
     it('matches nothing for anonymous when no public-read tenants — an empty list, not a refusal', async () => {
       getAllowPublicReadTenantIds.mockResolvedValueOnce([])
-      await expect(tenantScopedCollectionReadAccess({ req: anonReq })).resolves.toEqual({ tenant: { in: [] } })
+      await expect(tenantScopedCollectionReadAccess({ req: anonReq, slug: 'pages' })).resolves.toEqual({ tenant: { in: [] } })
     })
 
     it('scopes anonymous reads to public tenants', async () => {
       getAllowPublicReadTenantIds.mockResolvedValueOnce([10, 20])
-      await expect(tenantScopedCollectionReadAccess({ req: anonReq })).resolves.toEqual({
+      await expect(tenantScopedCollectionReadAccess({ req: anonReq, slug: 'pages' })).resolves.toEqual({
         tenant: { in: [10, 20] },
       })
     })
@@ -57,19 +57,19 @@ describe('tenantScopedRead access', () => {
 
   describe('tenantScopedPostsReadAccess', () => {
     it('allows any authenticated user', async () => {
-      await expect(tenantScopedPostsReadAccess({ req: authReq })).resolves.toBe(true)
+      await expect(tenantScopedPostsReadAccess({ req: authReq, slug: 'posts' })).resolves.toBe(true)
     })
 
     it('matches nothing for anonymous when no public-read tenants — an empty list, not a refusal', async () => {
       getAllowPublicReadTenantIds.mockResolvedValueOnce([])
-      await expect(tenantScopedPostsReadAccess({ req: anonReq })).resolves.toEqual({
+      await expect(tenantScopedPostsReadAccess({ req: anonReq, slug: 'posts' })).resolves.toEqual({
         and: [wherePublished, { tenant: { in: [] } }],
       })
     })
 
     it('requires published + tenant for anonymous', async () => {
       getAllowPublicReadTenantIds.mockResolvedValueOnce([7])
-      await expect(tenantScopedPostsReadAccess({ req: anonReq })).resolves.toEqual({
+      await expect(tenantScopedPostsReadAccess({ req: anonReq, slug: 'posts' })).resolves.toEqual({
         and: [wherePublished, { tenant: { in: [7] } }],
       })
     })

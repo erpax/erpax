@@ -636,7 +636,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`ALTER TABLE \`_e801d0467ac3d8adb9473d14e41225f76_v\` ADD \`gl_account_id\` text REFERENCES gl_accounts(id);`)
   await db.run(sql`ALTER TABLE \`_e801d0467ac3d8adb9473d14e41225f76_v\` ADD \`quantity_received\` numeric DEFAULT 0;`)
   await db.run(sql`CREATE INDEX \`_e801d0467ac3d8adb9473d14e41225f76_v_gl_account_idx\` ON \`_e801d0467ac3d8adb9473d14e41225f76_v\` (\`gl_account_id\`);`)
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'purchase-orders', entity: 'collection', fieldPath: 'lines.description', defaultLocale: 'en', req })
 }
 
 export async function down({ db, payload, req }: MigrateDownArgs): Promise<void> {
@@ -1412,5 +1411,4 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`CREATE INDEX \`_orders_v_updated_at_idx\` ON \`_orders_v\` (\`updated_at\`);`)
   await db.run(sql`ALTER TABLE \`messages_rels\` ADD \`purchase_orders_id\` text(36) REFERENCES purchase_orders(id);`)
   await db.run(sql`CREATE INDEX \`messages_rels_purchase_orders_id_idx\` ON \`messages_rels\` (\`purchase_orders_id\`);`)
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'purchase-orders', entity: 'collection', fieldPath: 'lines.description', defaultLocale: 'en', req })
 }

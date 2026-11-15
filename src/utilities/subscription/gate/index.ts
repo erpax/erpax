@@ -45,6 +45,7 @@ async function getSubscriptionForRequest(
       collection: 'subscriptions',
       id: tenant,
       depth: 1,
+      overrideAccess: true,
     })
 
     return subscription ? { subscription, tenant } : null

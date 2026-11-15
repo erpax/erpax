@@ -63,6 +63,7 @@ export const ensureUniqueUsername: FieldHook = async ({ originalDoc, req, value 
     where: {
       and: constraints,
     },
+    overrideAccess: true,
   })
 
   if (findDuplicateUsers.docs.length > 0 && req.user) {

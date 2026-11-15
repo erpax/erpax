@@ -9,7 +9,7 @@
  * @see src/app/README.md
  */
 
-import { createLocalReq, getPayload } from 'payload'
+import { createPayloadRequest, getPayload } from 'payload'
 import { seed } from '@/seed'
 import config from '@payload-config'
 import { apiErrorResponse, ERR } from '@/utilities/error'
@@ -33,7 +33,7 @@ export async function POST(): Promise<Response> {
   try {
     // Create a Payload request object to pass to the Local API for transactions
     // At this point you should pass in a user, locale, and any other context you need for the Local API
-    const payloadReq = await createLocalReq({ user }, payload)
+    const payloadReq = await createPayloadRequest({ payload, user })
 
     await seed({ payload, req: payloadReq })
 

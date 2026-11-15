@@ -53,19 +53,9 @@ export const Media: CollectionConfig = {
     },
   ],
   upload: {
-    // R2 via `r2Storage` in payload.config — no local staticDir (Cloudflare Workers has no sharp)
-    adminThumbnail: 'thumbnail',
+    // R2 via `r2Storage` in payload.config. No image variants: the Worker cannot run Sharp, so the original file is served.
     focalPoint: false,
     skipSafeFetch: true,
-    imageSizes: [
-      { name: 'thumbnail', width: 300 },
-      { name: 'square', width: 500, height: 500 },
-      { name: 'small', width: 600 },
-      { name: 'medium', width: 900 },
-      { name: 'large', width: 1400 },
-      { name: 'xlarge', width: 1920 },
-      { name: 'og', width: 1200, height: 630 },
-    ],
   },
   hooks: {
     beforeChange: mediaBeforeChange,

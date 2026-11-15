@@ -54,6 +54,7 @@ export async function findPayloadSubscriptionByStripeId(
     where: { stripeSubscriptionId: { equals: stripeSubscriptionId } },
     limit: 1,
     depth: 2,
+    overrideAccess: true,
   })
 
   return result.docs[0] ?? null
@@ -96,6 +97,7 @@ export async function updateSubscriptionStatus(
       lastStatusChange: new Date().toISOString(),
       lastStatusChangeReason: reason,
     },
+    overrideAccess: true,
   })
 
   payload.logger.info(`Subscription ${subscriptionId} status → ${newStatus}: ${reason}`)
@@ -122,6 +124,7 @@ export async function handleSubscriptionSync(
     collection: 'tenants',
     where: { stripeCustomerId: { equals: stripeCustomerId } },
     limit: 1,
+    overrideAccess: true,
   })
 
   const tenantId = customer.docs[0]?.id
@@ -162,6 +165,7 @@ export async function handleSubscriptionSync(
       collection: 'subscription-plans',
       where: { stripePriceId: { equals: stripeSubscription.items.data[0]?.price.id } },
       limit: 1,
+      overrideAccess: true,
     })
 
     if (!plan.docs.length) {
@@ -186,6 +190,7 @@ export async function handleSubscriptionSync(
           ? new Date(stripeSubscription.trial_end * 1000).toISOString()
           : undefined,
       },
+      overrideAccess: true,
     })
 
     payload.logger.info(
@@ -208,6 +213,7 @@ export async function handleSubscriptionSync(
         currentPeriodStart: periodStart,
         currentPeriodEnd: periodEnd,
       },
+      overrideAccess: true,
     })
   }
 }
@@ -241,6 +247,7 @@ export async function handleInvoiceSync(
     collection: 'invoices',
     where: { 'recurring.stripeInvoiceId': { equals: stripeInvoice.id } },
     limit: 1,
+    overrideAccess: true,
   })
 
   // Webhooks SYNC billing state onto the canonical EN-16931 Invoice; they
@@ -261,7 +268,7 @@ export async function handleInvoiceSync(
   }
 
   if (existing.docs.length > 0) {
-    await payload.update({ collection: 'invoices', id: existing.docs[0].id, data: billingSync })
+    await payload.update({ collection: 'invoices', id: existing.docs[0].id, data: billingSync, overrideAccess: true })
     payload.logger.info(`Synced billing state onto invoice for Stripe invoice ${stripeInvoice.id}`)
   } else {
     payload.logger.warn(
@@ -284,6 +291,7 @@ export async function handleInvoicePaid(
     where: { 'recurring.stripeInvoiceId': { equals: stripeInvoice.id } },
     limit: 1,
     depth: 1,
+    overrideAccess: true,
   })
 
   if (!existing.docs.length) {
@@ -301,6 +309,7 @@ export async function handleInvoicePaid(
       status: 'paid',
       dates: { paidAt: new Date().toISOString() },
     },
+    overrideAccess: true,
   })
 
   // Update subscription to active
@@ -309,7 +318,7 @@ export async function handleInvoicePaid(
     ? null
     : typeof subRef === 'object'
       ? subRef
-      : await payload.findByID({ collection: 'subscriptions', id: subRef })
+      : await payload.findByID({ collection: 'subscriptions', id: subRef, overrideAccess: true })
 
   if (subscription) {
     await updateSubscriptionStatus(
@@ -370,6 +379,7 @@ export async function handleInvoicePaymentFailed(
     where: { 'recurring.stripeInvoiceId': { equals: stripeInvoice.id } },
     limit: 1,
     depth: 1,
+    overrideAccess: true,
   })
 
   if (!existing.docs.length) {
@@ -389,6 +399,7 @@ export async function handleInvoicePaymentFailed(
         lastAttemptError: 'Payment attempt failed',
       },
     },
+    overrideAccess: true,
   })
 
   const subRef = invoice.recurring?.subscription
@@ -396,7 +407,7 @@ export async function handleInvoicePaymentFailed(
     ? null
     : typeof subRef === 'object'
       ? subRef
-      : await payload.findByID({ collection: 'subscriptions', id: subRef })
+      : await payload.findByID({ collection: 'subscriptions', id: subRef, overrideAccess: true })
 
   if (subscription && subscription.status !== 'past_due') {
     await updateSubscriptionStatus(
@@ -460,6 +471,7 @@ export async function handleChargeRefunded(
     where: { 'recurring.stripePaymentIntentId': { equals: paymentIntentId } },
     limit: 1,
     depth: 1,
+    overrideAccess: true,
   })
   if (!matchingInvoices.docs.length) {
     payload.logger.warn(
@@ -473,7 +485,7 @@ export async function handleChargeRefunded(
     ? null
     : typeof subRefC === 'object'
       ? subRefC
-      : await payload.findByID({ collection: 'subscriptions', id: subRefC })
+      : await payload.findByID({ collection: 'subscriptions', id: subRefC, overrideAccess: true })
 
   if (!subscription) {
     payload.logger.info(

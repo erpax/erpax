@@ -3,10 +3,8 @@ import type { CollectionConfig } from 'payload'
 import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { createMembershipAdminMutateAccess } from '@/access/collections/shared/createMembershipAdminMutateAccess'
 import { tenantScopedCollectionReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
-import { slugField } from 'payload'
 import { localeRecord } from '@/i18n'
 
-import { ensureUniqueSlugWithinTenant } from '@/hooks/fields/shared/ensureUniqueSlugWithinTenant'
 import { categoriesBeforeChange } from '@/utilities/categories/hooks'
 
 /**
@@ -19,6 +17,7 @@ import { categoriesBeforeChange } from '@/utilities/categories/hooks'
  */
 export const Categories: CollectionConfig = {
   slug: 'categories',
+  llmInstructions: 'Categories group posts; a category may be nested under a parent category.',
   labels: {
     singular: localeRecord('categories.singular'),
     plural: localeRecord('categories.plural'),
@@ -42,23 +41,8 @@ export const Categories: CollectionConfig = {
       label: localeRecord('categories.title'),
       required: true,
     },
-    slugField({
-      position: undefined,
-      disableUnique: true,
-      overrides: (field) => {
-        const slugText = field.fields?.[1]
-        if (slugText && slugText.type === 'text') {
-          slugText.hooks = {
-            ...slugText.hooks,
-            beforeValidate: [
-              ...(slugText.hooks?.beforeValidate || []),
-              ensureUniqueSlugWithinTenant('categories'),
-            ],
-          }
-        }
-        return field
-      },
-    }),
+    // Payload's native slug field; `unique` becomes (tenant, slug) through the indexes plugin.
+    { name: 'slug', type: 'slug', useAsSlug: 'title', unique: true },
     {
       name: 'parent',
       type: 'relationship',

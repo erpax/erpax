@@ -17,7 +17,6 @@ import { testUser } from '../../helpers/seedUser'
 import { safeCaptureRoute } from '../../helpers/evidence'
 import { getSeedsByCategory } from '@/utilities/testing'
 
-import '@/plugins/accounting/seeds'
 
 const CATEGORY = 'cross-cutting' as const
 const BASE = 'http://localhost:3000'
