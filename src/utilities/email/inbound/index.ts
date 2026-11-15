@@ -112,10 +112,11 @@ export const receiveInbound = async (req: PayloadRequest): Promise<Response> => 
   }
   const parentMessage = mail.inReplyTo ? await messageWith(req.payload, mail.inReplyTo, req) : undefined
   const tenant = tenantOf(user)
+  // a Local API call of its own (no `req`): the system files the mail, not the endpoint's anonymous
+  // caller, so the multi-tenant plugin accepts the recipient's tenant
   const doc = await req.payload.create({
     collection: 'messages',
     overrideAccess: true,
-    req,
     data: {
       ...(tenant ? { tenant } : {}),
       subject: mail.subject,
