@@ -123,6 +123,11 @@ Gaps found on 2026-11-15:
   (`src/seed/home.ts`, `post/*`, `image-*`, `contact/form.ts`), not fixtures loaded as data.
 - Session worktrees fail here while the app's worktree location is inside the repo: `.claude` is a
   symlink to `src`. Set Settings → Claude Code → Worktree location to a folder outside the repo.
+- `@payloadcms/plugin-sentry` cannot run here: its admin error boundary imports `@sentry/nextjs`, whose
+  server SDK needs `require-in-the-middle`, and the OpenNext build cannot bundle that for Workers
+  (`Could not resolve "require-in-the-middle"`). It waits for an upstream fix. Every other official plugin
+  is registered and derives its collections from the schema; Stripe sync stays off until a key is set,
+  because the plugin's hooks fail saves and deletes without one.
 - `@payloadcms/plugin-mcp` answers a call for a slug that is unknown or not enabled before any
   handler runs, so `afterToolCall` never sees it and no `emerging_gap` is recorded for it. Only calls
   that reach a handler (a failed query, a refused write) become gaps.
