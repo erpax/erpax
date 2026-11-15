@@ -13,7 +13,6 @@
 src/access/collections/shared/abilityAccess.ts:12: * @standard NIST INCITS-359-2012 §6.1 permission-assignment · §6.2 review-functions
 src/access/collections/shared/anyone.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/access/collections/shared/appAccess.ts:17: * @standard NIST INCITS-359-2012 §6.1 permission-assignment
-src/access/collections/shared/authenticatedOrPublished.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/access/collections/shared/createMembershipAdminMutateAccess.ts:17: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/collections/shared/isAdmin.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/collections/shared/isDocumentOwner.ts:7: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -913,9 +912,6 @@ src/utilities/ai/durable-objects.ts:186: * @standard FIPS 180-4 sha-256 (leaf ha
 src/utilities/ai/durable-objects.ts:187: * @standard RFC 8785 JSON canonicalization
 src/utilities/ai/durable-objects.ts:20: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation
 src/utilities/allow/public/read/tenant/test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
-src/utilities/api/integration/index.ts:26: * @standard RFC 9110 §9 http-semantics (methods, status classes, safe/idempotent)
-src/utilities/api/integration/index.ts:27: * @standard RFC 6749 §1.4 bearer-credential — the token is the whole authority, env-only
-src/utilities/api/integration/index.ts:28: * @standard ISO/IEC 25010:2023 §5.7.2 fault-tolerance — a rate-limited burst queues; it does not drop
 src/utilities/audit/compliance/reporting/index.ts:13: * @standard SAF-T:3.0.2 Standard Audit File (Tax)
 src/utilities/audit/compliance/reporting/index.ts:14: * @standard OECD Transfer Pricing Guidelines:2022 Documentation
 src/utilities/audit/compliance/reporting/index.ts:15: * @standard IAS-1:2023 Presentation of Financial Statements
@@ -1343,7 +1339,6 @@ src/utilities/iso/9362/bic/index.ts:4: * @standard ISO-9362:2022 bic
 src/utilities/iso/9362/bic/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/utilities/iso/9362/bic/test.ts:5: * @standard ISO-9362:2022 bic
 src/utilities/iso/9362/index.ts:4: * @standard ISO-9362:2022 bic
-src/utilities/iso/primitives/index.ts:13: * @standard ISO-27002 information-security-controls
 src/utilities/items/inventory/movements/hooks/inventory-adjusted-event.test.ts:11: * @standard ISO/IEC-29119:2022 software-testing
 src/utilities/journal/entry/service/index.ts:12: * @standard ISO-8601-1:2019 date-time entry-date posted-date
 src/utilities/journal/entry/service/index.ts:13: * @standard ISO-4217:2015 currency-codes
@@ -1534,27 +1529,6 @@ src/utilities/sale/virtual-device.ts:15: * @standard BG Наредба-Н-18 §�
 src/utilities/sale/virtual-device.ts:16: * @standard BG Наредба-Н-18 §Приложение-38 (monthly reporting — the audit file)
 src/utilities/sandbox/index.ts:7: * @standard NIST SP-800-162 ABAC (capability-scoped authorization)
 src/utilities/sandbox/index.ts:8: * @standard OWASP-ASVS V5 untrusted-input / least-privilege
-src/utilities/security/header/headers/index.ts:10: * @standard W3C CSP-3 content-security-policy
-src/utilities/security/header/headers/index.ts:11: * @standard W3C Referrer-Policy
-src/utilities/security/header/headers/index.ts:12: * @standard W3C Permissions-Policy
-src/utilities/security/header/headers/index.ts:13: * @standard OWASP-ASVS V14 configuration
-src/utilities/security/header/headers/index.ts:14: * @standard OWASP Secure-Headers-Project
-src/utilities/security/header/headers/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
-src/utilities/security/header/headers/test.ts:6: * @standard W3C CSP-3 content-security-policy
-src/utilities/security/header/headers/test.ts:7: * @standard W3C Referrer-Policy
-src/utilities/security/header/headers/test.ts:8: * @standard W3C Permissions-Policy
-src/utilities/security/header/headers/test.ts:9: * @standard OWASP-ASVS V14 configuration
-src/utilities/security/header/index.ts:5: * @standard W3C CSP-3
-src/utilities/security/header/index.ts:6: * @standard W3C Permissions-Policy
-src/utilities/seeds/template/bg-nss.ts:17: * @standard ISO-3166-1:2020 BG country-code
-src/utilities/seeds/template/bg-nss.ts:18: * @standard BG-NSS national-statutory-chart-of-accounts
-src/utilities/seeds/template/compliance.ts:6: * @standard ISO-3166-1:2020 country-codes alpha-2
-src/utilities/seeds/template/compliance.ts:7: * @standard ISO-4217:2015 currency-codes
-src/utilities/seeds/template/compliance.ts:8: * @standard EN-16931:2017 e-invoicing
-src/utilities/seeds/template/templates/index.ts:10: * @standard ISO-3166-1:2020 country-codes alpha-2
-src/utilities/seeds/template/templates/index.ts:11: * @standard ISO-4217:2015 currency-codes
-src/utilities/seeds/template/types.ts:10: * @standard ISO-3166-1:2020 country-codes alpha-2
-src/utilities/seeds/template/types.ts:11: * @standard ISO-4217:2015 currency-codes
 src/utilities/semantic/index.ts:19: * @standard RFC 9110 §15.5.1 400-bad-request
 src/utilities/semantic/index.ts:20: * @standard RFC 6585 §4 429-too-many-requests
 src/utilities/shareds/documentPreviewAdmin.ts:15: * @standard BCP-47 language-tag locale
@@ -1753,7 +1727,6 @@ tests/e2e/standards/en-16931/e-invoice-walkthrough.e2e.spec.ts:20: * @standard E
 tests/e2e/standards/en-16931/e-invoice-walkthrough.e2e.spec.ts:21: * @standard Peppol-BIS-3.0 billing
 tests/e2e/standards/en-16931/e-invoice-walkthrough.e2e.spec.ts:22: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
 tests/e2e/standards/ifrs/ifrs-16-leases.e2e.spec.ts:11: * @standard ISO/IEC-29119:2022 software-testing system-test-level
-tests/e2e/standards/ifrs/industry-template-pick.e2e.spec.ts:11: * @standard ISO/IEC-29119:2022 software-testing system-test-level
 tests/e2e/standards/iso-3166-1/bg-bank-accounts.e2e.spec.ts:16: * @standard ISO/IEC-29119:2022 software-testing system-test-level
 tests/e2e/standards/iso-3166-1/bg-bank-accounts.e2e.spec.ts:17: * @standard ISO-3166-1:2020 BG country-code
 tests/e2e/standards/iso-3166-1/bg-bank-accounts.e2e.spec.ts:18: * @standard ISO-13616-1:2020 iban BG-22
@@ -2009,10 +1982,6 @@ src/utilities/rfc/9110/get/redirects/test.ts:6: * @rfc 9110 §15.4.2 301-moved-p
 src/utilities/rfc/9110/get/redirects/test.ts:7: * @rfc 9110 §15.4.3 302-found
 src/utilities/rfc/9110/index.ts:4: * @rfc 9110 §13 caching
 src/utilities/sale/audit-file.ts:20: * @rfc 8259 json
-src/utilities/security/header/headers/index.ts:8: * @rfc 6797 hsts http-strict-transport-security
-src/utilities/security/header/headers/index.ts:9: * @rfc 9110 http-semantics
-src/utilities/security/header/headers/test.ts:5: * @rfc 6797 hsts http-strict-transport-security
-src/utilities/security/header/index.ts:4: * @rfc 6797 hsts
 src/utilities/shareds/documentPreviewAdmin.ts:14: * @rfc 3986 uri preview-url-construction
 src/utilities/testing/config-discovery-advanced.test.ts:6: * @rfc 8259 json
 src/utilities/testing/config-discovery.test.ts:6: * @rfc 8259 json
@@ -2477,9 +2446,6 @@ src/utilities/remote/media/import/index.ts:10: * @compliance GDPR Art.5(1)(c) da
 src/utilities/rfc/6585/rate-limit.ts:16: * @compliance SOC-2 CC6.1 logical-access-controls
 src/utilities/saf/t/types/index.ts:19: * @compliance SOX §404 internal-controls
 src/utilities/scope/index.ts:9: * @compliance SOC-2 CC6.1 logical-access-controls
-src/utilities/security/header/headers/index.ts:17: * @compliance SOC-2 CC6.6 boundary-protection
-src/utilities/seeds/template/bg-nss.ts:20: * @compliance EU 2014/55 b2g-e-invoicing-mandate
-src/utilities/seeds/template/compliance.ts:9: * @compliance EU 2014/55 b2g-e-invoicing-mandate-resolution
 src/utilities/shareds/versionedDrafts.ts:10: * @compliance SOX §404 internal-controls record-retention
 src/utilities/shareds/versionedDrafts.ts:11: * @compliance GDPR Art.5(1)(e) storage-limitation maxPerDoc-cap
 src/utilities/standard/collection/hook/index.ts:15: * @compliance SOX §404 internal-controls provenance
@@ -2524,7 +2490,6 @@ tests/e2e/standards/compliance/sox-404-evidence-trail.e2e.spec.ts:20: * @complia
 tests/e2e/standards/en-16931/e-invoice-walkthrough.e2e.spec.ts:24: * @compliance EU 2014/55 b2g-e-invoicing-mandate
 tests/e2e/standards/en-16931/e-invoice-walkthrough.e2e.spec.ts:25: * @compliance SOX §404 internal-controls process-walk-through
 tests/e2e/standards/ifrs/ifrs-16-leases.e2e.spec.ts:17: * @compliance SOX §404 internal-controls process-walk-through
-tests/e2e/standards/ifrs/industry-template-pick.e2e.spec.ts:16: * @compliance SOX §404 internal-controls process-walk-through
 tests/e2e/standards/iso-3166-1/bg-bank-accounts.e2e.spec.ts:23: * @compliance SOX §404 internal-controls process-walk-through
 tests/e2e/standards/iso-3166-1/bg-bank-accounts.e2e.spec.ts:24: * @compliance EU 2015/2366 strong-customer-authentication
 tests/e2e/standards/iso-3166-1/default-country-bg.e2e.spec.ts:19: * @compliance SOX §404 internal-controls process-walk-through
@@ -2949,10 +2914,6 @@ src/utilities/saf/t/types/index.ts:17: * @accounting US-GAAP ASC-205 presentatio
 src/utilities/sale/fiscal/revenue/index.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/utilities/sale/order-fiscalization.ts:12: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/utilities/sale/subscription-fiscalization.ts:16: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
-src/utilities/seeds/template/bg-nss.ts:19: * @accounting IFRS IAS-1 §54 minimum-line-items
-src/utilities/seeds/template/templates/index.ts:12: * @accounting IFRS IAS-1 §54 minimum-line-items
-src/utilities/seeds/template/templates/index.ts:13: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/utilities/seeds/template/types.ts:12: * @accounting IFRS IAS-1 §54 minimum-line-items
 src/utilities/subscription/gate/index.ts:10: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/utilities/subscription/gate/index.ts:11: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
 src/utilities/subscription/gate/index.ts:9: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
@@ -3004,9 +2965,6 @@ tests/e2e/standards/ifrs/ifrs-16-leases.e2e.spec.ts:12: * @accounting IFRS IFRS-
 tests/e2e/standards/ifrs/ifrs-16-leases.e2e.spec.ts:13: * @accounting IFRS IFRS-16 §22 rou-asset-initial-measurement
 tests/e2e/standards/ifrs/ifrs-16-leases.e2e.spec.ts:14: * @accounting IFRS IFRS-16 §26 liability-initial-measurement
 tests/e2e/standards/ifrs/ifrs-16-leases.e2e.spec.ts:15: * @accounting US-GAAP ASC-842-20 lessee-accounting
-tests/e2e/standards/ifrs/industry-template-pick.e2e.spec.ts:12: * @accounting IFRS IAS-1 §54 minimum-line-items
-tests/e2e/standards/ifrs/industry-template-pick.e2e.spec.ts:13: * @accounting IFRS IAS-2 §10 inventories-cost-formula
-tests/e2e/standards/ifrs/industry-template-pick.e2e.spec.ts:14: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 ```
 
 ## @security
@@ -3019,11 +2977,6 @@ src/access/collections/shared/adminOrPublishedStatus.ts:14: * @security ISO-2700
 src/access/collections/shared/anyone.test.ts:5: * @security ISO-27002 §5.15 access-control intentional-public-read
 src/access/collections/shared/anyone.ts:4: * @security ISO-27002 §5.15 access-control intentional-public-read
 src/access/collections/shared/appAccess.ts:18: * @security ISO-27001 A.5.15 access-control · A.8.3 information-access-restriction
-src/access/collections/shared/authenticatedOrPublished.test.ts:6: * @security ISO-27002 §5.15 access-control
-src/access/collections/shared/authenticatedOrPublished.test.ts:7: * @security ISO-27002 §8.3 information-access-restriction
-src/access/collections/shared/authenticatedOrPublished.ts:5: * @security ISO-27001 A.5.18 access-rights
-src/access/collections/shared/authenticatedOrPublished.ts:6: * @security ISO-27002 §5.15 access-control
-src/access/collections/shared/authenticatedOrPublished.ts:7: * @security ISO-27002 §8.3 information-access-restriction
 src/access/collections/shared/createMembershipAdminMutateAccess.ts:18: * @security ISO-27001 A.5.18 access-rights
 src/access/collections/shared/createMembershipAdminMutateAccess.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/access/collections/shared/createMembershipAdminMutateAccess.ts:20: * @security ISO-27002 §5.15 access-control
@@ -3388,8 +3341,6 @@ src/utilities/scope/index.ts:7: * @security ISO-27002 §5.15 access-control
 src/utilities/scope/index.ts:8: * @security ISO-27002 §8.3 information-access-restriction
 src/utilities/scope/types.ts:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/utilities/scope/types.ts:6: * @security ISO-27002 §5.15 access-control
-src/utilities/security/header/headers/index.ts:15: * @security ISO-27001 A.8.20 networks-security
-src/utilities/security/header/headers/index.ts:16: * @security ISO-27002 §8.20 networks-security
 src/utilities/site/tenant/where/index.ts:5: * @security ISO-27001 A.5.23 information-security-for-cloud-services
 src/utilities/site/tenant/where/index.ts:6: * @security ISO-27002 §8.3 information-access-restriction
 src/utilities/standard/collection/hook/index.ts:14: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation tenant-field
@@ -3427,7 +3378,6 @@ tests/helpers/seedUser.ts:6: * @security ISO-27001 A.5.16 identity-management
 ## @audit
 
 ```text
-src/access/collections/shared/authenticatedOrPublished.ts:8: * @audit ISO-19011:2018 audit-trail draft-vs-published
 src/access/collections/shared/createMembershipAdminMutateAccess.ts:23: * @audit ISO-19011:2018 audit-trail
 src/app/(api)/api/proof/route.ts:19: * @audit ISO-19011:2018 audit-evidence the citation must lead to the evidence
 src/app/(api)/api/subscriptions/create/route.ts:12: * @audit ISO-19011:2018 audit-trail
@@ -3761,8 +3711,6 @@ src/utilities/sale/virtual-device.ts:17: * @audit ISO-19011:2018 audit-trail
 src/utilities/scope/collectionScopes.ts:8: * @audit ISO-19011:2018 audit-trail
 src/utilities/scope/constants.ts:7: * @audit ISO-19011:2018 audit-trail draft-vs-published
 src/utilities/scope/filters.ts:7: * @audit ISO-19011:2018 audit-trail draft-vs-published
-src/utilities/seeds/template/compliance.ts:10: * @audit ISO-19011:2018 audit-trail country-decision-evidence
-src/utilities/seeds/template/templates/index.ts:14: * @audit ISO-19011:2018 audit-trail seed-evidence
 src/utilities/shareds/versionedDrafts.ts:9: * @audit ISO-19011:2018 audit-trail content-versioning
 src/utilities/standard/collection/hook/index.ts:13: * @audit ISO-19011:2018 audit-trail
 src/utilities/subscription/plans/subscriptions/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
@@ -3828,7 +3776,6 @@ tests/e2e/standards/compliance/gdpr-data-subject-request.e2e.spec.ts:11: * @audi
 tests/e2e/standards/compliance/sox-404-evidence-trail.e2e.spec.ts:18: * @audit ISO-19011:2018 audit-trail visual-evidence sox-evidence-pack
 tests/e2e/standards/en-16931/e-invoice-walkthrough.e2e.spec.ts:23: * @audit ISO-19011:2018 audit-trail visual-evidence
 tests/e2e/standards/ifrs/ifrs-16-leases.e2e.spec.ts:16: * @audit ISO-19011:2018 audit-trail visual-evidence
-tests/e2e/standards/ifrs/industry-template-pick.e2e.spec.ts:15: * @audit ISO-19011:2018 audit-trail visual-evidence
 tests/e2e/standards/iso-3166-1/bg-bank-accounts.e2e.spec.ts:22: * @audit ISO-19011:2018 audit-trail visual-evidence
 tests/e2e/standards/iso-3166-1/default-country-bg.e2e.spec.ts:18: * @audit ISO-19011:2018 audit-trail country-decision-evidence
 tests/helpers/evidence.ts:167: * @audit ISO-19011:2018 audit-trail visual-evidence

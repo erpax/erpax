@@ -13,7 +13,6 @@
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 
-import { authenticatedOrPublished } from '@/access/collections/shared/authenticatedOrPublished'
 import {
   tenantScopedCollectionReadAccess,
   tenantScopedPostsReadAccess,
@@ -73,21 +72,5 @@ describe('tenantScopedRead access', () => {
         and: [wherePublished, { tenant: { in: [7] } }],
       })
     })
-  })
-})
-
-describe('authenticatedOrPublished', () => {
-  it('allows authenticated users without status filter', () => {
-    const result = authenticatedOrPublished({
-      req: { user: { id: 1 } } as never,
-    } as never)
-    expect(result).toBe(true)
-  })
-
-  it('restricts guests to published documents', () => {
-    const result = authenticatedOrPublished({
-      req: { user: null } as never,
-    } as never)
-    expect(result).toEqual(wherePublished)
   })
 })
