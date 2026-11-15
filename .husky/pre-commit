@@ -17,7 +17,7 @@ fi
 # release check never meets a stale one. A failed rebuild stops the commit.
 if echo "$staged" | grep -qE '^src/'; then
   node packages/release.mjs --write >/dev/null || exit 1
-  git add packages/released.json packages/*/package.json 2>/dev/null || true
+  git add package.json packages/released.json packages/*/package.json 2>/dev/null || true
 fi
 # Every @erpax/* package names its dependencies at the root's range: a root bump reaches every
 # package manifest, and the lockfile follows the manifests.
