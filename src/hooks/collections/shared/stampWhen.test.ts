@@ -20,3 +20,18 @@ describe('stampWhen — a row stamps the moment it reaches a status', () => {
     expect(run({ siblingData: { status: 'rejected' }, previousSiblingDoc: { status: 'signed' }, previousValue: '2026-02-01T00:00:00.000Z' })).toBeNull()
   })
 })
+
+describe('stampWhen — any of several statuses', () => {
+  const ended = (args: object) => (stampWhen(['resolved', 'written_off']) as unknown as (a: object) => unknown)(args)
+
+  it('stamps on the first of them and keeps the stamp moving between them', () => {
+    expect(typeof ended({ siblingData: { status: 'resolved' }, previousSiblingDoc: { status: 'active' }, previousValue: null })).toBe('string')
+    expect(ended({ siblingData: { status: 'written_off' }, previousSiblingDoc: { status: 'resolved' }, previousValue: '2026-03-01T00:00:00.000Z' })).toBe(
+      '2026-03-01T00:00:00.000Z',
+    )
+  })
+
+  it('clears when the row leaves all of them', () => {
+    expect(ended({ siblingData: { status: 'active' }, previousSiblingDoc: { status: 'written_off' }, previousValue: '2026-03-01T00:00:00.000Z' })).toBeNull()
+  })
+})

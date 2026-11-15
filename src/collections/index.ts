@@ -92,7 +92,6 @@ export { default as Shipments } from '@/collections/shipments'
 export { default as PaymentAllocations } from '@/collections/payment-allocations'
 
 // Dunning & Collections
-export { default as DunningCycles } from '@/collections/dunning-cycles'
 
 // Master Data: Vendors & Procurement
 export { default as VendorScorecards } from '@/collections/vendor-scorecards'

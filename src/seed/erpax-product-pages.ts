@@ -566,12 +566,10 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
       'SOX §404 — bad-debt write-off requires controller approval (segregation of duties)',
     ],
     wired: [
-      '`dunning-cycles` collection — one row per overdue invoice with stage history (append-only)',
-      'Scheduled job (`dunningJob`, every 15 minutes) advances stages on configured day thresholds',
-      'Pause flags — disputed / payment-plan / legal-hold / bankruptcy / manual review',
-      'ECL provision linked to each cycle — feeds AllowanceForDoubtfulAccounts',
-      'Write-off JE auto-created (Dr Bad Debt Expense / Cr AR or Allowance) and linked to the cycle',
-      'DunningCyclesPanel widget — stage breakdown + overdue total',
+      '`dunning` on every invoice — stage, next action and status, with an append-only stage history: each stage change adds its entry, stamped by the server',
+      'Pause flags — disputed / payment-plan / legal-hold / bankruptcy / manual review; a pause names its reason',
+      'ECL provision recorded per invoice (IFRS 9 §5.5 evidence)',
+      'Write-off journal entry link — written by the ledger, never by hand',
     ],
     cta: { label: 'See dunning in action', url: '/contact' },
     metaDescription:

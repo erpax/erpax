@@ -290,7 +290,6 @@ export interface Config {
     'credit-memos': CreditMemo;
     'customer-segments': CustomerSegment;
     'customs-declarations': CustomsDeclaration;
-    'dunning-cycles': DunningCycle;
     'fiscal-devices': FiscalDevice;
     'goods-receipts': GoodsReceipt;
     'invoice-lines': InvoiceLine;
@@ -524,7 +523,6 @@ export interface Config {
     'credit-memos': CreditMemosSelect<false> | CreditMemosSelect<true>;
     'customer-segments': CustomerSegmentsSelect<false> | CustomerSegmentsSelect<true>;
     'customs-declarations': CustomsDeclarationsSelect<false> | CustomsDeclarationsSelect<true>;
-    'dunning-cycles': DunningCyclesSelect<false> | DunningCyclesSelect<true>;
     'fiscal-devices': FiscalDevicesSelect<false> | FiscalDevicesSelect<true>;
     'goods-receipts': GoodsReceiptsSelect<false> | GoodsReceiptsSelect<true>;
     'invoice-lines': InvoiceLinesSelect<false> | InvoiceLinesSelect<true>;
@@ -3415,6 +3413,45 @@ export interface Invoice {
     | number
     | boolean
     | null;
+  /**
+   * The collection process of this invoice once overdue (IFRS-9 §5.5 evidence).
+   */
+  dunning?: {
+    stage?: ('reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off') | null;
+    /**
+     * Set by the server when the stage changes.
+     */
+    stageEnteredAt?: string | null;
+    nextActionDate?: string | null;
+    status?: ('active' | 'paused' | 'resolved' | 'written_off' | 'closed') | null;
+    resolvedAt?: string | null;
+    /**
+     * Pause the progression (dispute, payment plan, legal hold).
+     */
+    paused?: boolean | null;
+    pauseReason?: ('disputed' | 'payment_plan' | 'legal_hold' | 'bankruptcy' | 'manual_review') | null;
+    paymentPlanRef?: string | null;
+    /**
+     * Allowance for doubtful accounts attributable to this invoice.
+     */
+    eclProvision?: number | null;
+    writeOffJournalEntry?: (string | null) | JournalEntry;
+    /**
+     * Append-only: each stage change adds its entry; stored entries cannot be removed or changed.
+     */
+    history?:
+      | {
+          stage:
+            'reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off' | 'paused' | 'resolved';
+          enteredAt: string;
+          amountOverdueAtEntry?: number | null;
+          communicationSent?: ('none' | 'email' | 'sms' | 'letter' | 'phone' | 'legal_letter') | null;
+          communicationReference?: string | null;
+          notes?: string | null;
+          id?: string | null;
+        }[]
+      | null;
+  };
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -3817,6 +3854,175 @@ export interface Sale {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "journal-entries".
+ */
+export interface JournalEntry {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * The project this belongs to. Costs book to the project; the project carries the award.
+   */
+  project?: (string | null) | Project;
+  entryNumber: string;
+  entryDate: string;
+  postedDate?: string | null;
+  description: string;
+  status?: ('draft' | 'pending_approval' | 'posted' | 'reversed' | 'void') | null;
+  lines: {
+    lineNumber?: number | null;
+    glAccount: string | GlAccount;
+    accountNumber?: string | null;
+    accountName?: string | null;
+    description?: string | null;
+    debit?: number | null;
+    credit?: number | null;
+    /**
+     * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+     */
+    currency?: string | null;
+    exchangeRate?: number | null;
+    costCenterId?: string | null;
+    id?: string | null;
+  }[];
+  debitTotal?: number | null;
+  creditTotal?: number | null;
+  isBalanced?: boolean | null;
+  sourceType:
+    | 'manual'
+    | 'invoice'
+    | 'bill'
+    | 'payment'
+    | 'bank_reconciliation'
+    | 'period_end_adjustment'
+    | 'tax_calculation'
+    | 'currency_adjustment'
+    | 'lease_period';
+  sourceId?: string | null;
+  sourceEvent?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IFRS-15 §35 over-time-recognition anchor. WIP accumulates per project; revenue recognises per chosen progress measurement (cost-to-cost / milestone / output-method).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "projects".
+ */
+export interface Project {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Tenant-unique project code (e.g. PRJ-2026-001).
+   */
+  projectCode: string;
+  /**
+   * Customer-facing project name.
+   */
+  name: string;
+  description?: string | null;
+  customer?: (string | null) | Party;
+  /**
+   * The award funding this project. Costs book to the project; the project carries the award.
+   */
+  grant?: (string | null) | GovernmentGrant;
+  /**
+   * Master contract this project executes against (one contract may have many projects).
+   */
+  contract?: (string | null) | Contract;
+  /**
+   * Reporting legal entity that books this project's revenue + costs.
+   */
+  legalEntity?: (string | null) | LegalEntity;
+  /**
+   * Internal project owner (responsible for delivery + status).
+   */
+  projectManager?: (string | null) | User;
+  projectType?: ('fixed_price' | 'time_and_materials' | 'cost_plus' | 'milestone' | 'internal') | null;
+  /**
+   * Progress measurement method per IFRS-15. Drives the WIP / revenue posting cadence.
+   */
+  recognitionMethod?:
+    | (
+        | 'point_in_time'
+        | 'cost_to_cost'
+        | 'output_units'
+        | 'output_time'
+        | 'output_survey'
+        | 'milestone'
+        | 'right_to_invoice'
+      )
+    | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Total transaction price for this project (cents). For T&M projects use the not-to-exceed cap.
+   */
+  contractedAmount?: number | null;
+  /**
+   * Estimated total cost at completion (EAC) — denominator in cost-to-cost % complete.
+   */
+  budgetedCost?: number | null;
+  /**
+   * Estimated total labour hours (used by output-time method).
+   */
+  budgetedHours?: number | null;
+  /**
+   * contractedAmount − budgetedCost (auto-derived).
+   */
+  budgetedMargin?: number | null;
+  /**
+   * Cumulative posted cost (auto-summed from time-entries + materials + overhead allocation).
+   */
+  actualCostToDate?: number | null;
+  /**
+   * Cumulative recognised revenue (auto-summed from period postings).
+   */
+  recognisedRevenueToDate?: number | null;
+  /**
+   * Snapshot of latest period progress measurement.
+   */
+  percentComplete?: number | null;
+  plannedStartDate?: string | null;
+  plannedEndDate?: string | null;
+  actualStartDate?: string | null;
+  actualEndDate?: string | null;
+  /**
+   * IAS-37 §66 onerous-contract flag — when EAC > contracted, provision the full expected loss now.
+   */
+  isOnerous?: boolean | null;
+  status?: ('draft' | 'approved' | 'in_progress' | 'on_hold' | 'completed' | 'cancelled') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
   handle?: string | null;
   updatedBy?: {
     relationTo: 'users';
@@ -4354,425 +4560,6 @@ export interface ComplianceFramework {
     relationTo: 'users';
     value: string | User;
   } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contracts".
- */
-export interface Contract {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  contractNumber: string;
-  customer: string | Party;
-  title: string;
-  effectiveFrom: string;
-  effectiveTo?: string | null;
-  /**
-   * Aggregate transaction price (cents). = transactionPriceFixed + transactionPriceVariable + financingComponent − considerationPayableToCustomer. Maps to canonical TransactionPrice.total.
-   */
-  totalValue?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Fixed consideration component (cents). IFRS 15 §47. Maps to canonical TransactionPrice.fixed.
-   */
-  transactionPriceFixed?: number | null;
-  /**
-   * Estimated variable consideration after constraint (cents). IFRS 15 §50-§59. Maps to canonical VariableConsideration.estimate − constraint.
-   */
-  transactionPriceVariable?: number | null;
-  /**
-   * IFRS 15 §53 — estimation method when variable consideration is non-zero.
-   */
-  variableConsiderationMethod?: ('expected_value' | 'most_likely_amount') | null;
-  /**
-   * Significant financing component (cents). IFRS 15 §60-§65. Positive when entity is financier; negative when customer is financed.
-   */
-  financingComponent?: number | null;
-  /**
-   * IFRS 15 §17 — other contracts this one is accounted for as part of (combined-contract group). Maps to canonical Contract.combinedWithContractIds.
-   */
-  combinedWithContracts?: (string | Contract)[] | null;
-  paymentTerms?: ('net0' | 'net15' | 'net30' | 'net60' | 'net90' | 'custom') | null;
-  /**
-   * IFRS 15 §22 distinct performance obligations.
-   */
-  performanceObligations?: {
-    docs?: (string | PerformanceObligation)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
-  };
-  /**
-   * IFRS 15 §20 / §B47 / ASC 606-10-25-13 contract modifications (amendments).
-   */
-  modifications?:
-    | {
-        /**
-         * When the amendment takes effect (not before effectiveFrom).
-         */
-        modifiedAt: string;
-        /**
-         * What the amendment does (e.g. "Price increase to 6k BGN/month").
-         */
-        description: string;
-        reason?:
-          | (
-              | 'scope_increase'
-              | 'scope_decrease'
-              | 'pricing_change'
-              | 'payment_term_change'
-              | 'warranty_modification'
-              | 'liability_cap_adjustment'
-              | 'other'
-            )
-          | null;
-        /**
-         * IFRS-15 §20: a separate obligation, or integrated into this contract.
-         */
-        classification?:
-          ('separate_obligation' | 'modification_integrated' | 'standalone_performance_obligation') | null;
-        /**
-         * Signed change in consideration (cents), in the contract currency.
-         */
-        priceImpact?: number | null;
-        /**
-         * The terms before the amendment.
-         */
-        originalTerms?: string | null;
-        /**
-         * The terms after it.
-         */
-        newTerms?: string | null;
-        /**
-         * Completion as planned before the amendment.
-         */
-        plannedCompletionDate?: string | null;
-        /**
-         * Completion as revised by it.
-         */
-        revisedCompletionDate?: string | null;
-        approvalStatus?: ('draft' | 'pending_approval' | 'approved' | 'rejected') | null;
-        approvedBy?: (string | null) | User;
-        modifiedBy?: (string | null) | User;
-        /**
-         * Bulgaria ZKOD: notarized (amendments over 10k BGN).
-         */
-        notarized?: boolean | null;
-        /**
-         * Notarization certificate number.
-         */
-        notaryReference?: string | null;
-        /**
-         * Labor Code Art. 331 clause present.
-         */
-        mandatoryArbitration?: boolean | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Signing steps, in order. The contract becomes active once every step is signed (IFRS-15 §10).
-   */
-  signatures?:
-    | {
-        /**
-         * Step 1…N.
-         */
-        sequence: number;
-        role: 'customer' | 'vendor' | 'company_rep' | 'legal_review' | 'finance_review' | 'director_signature';
-        status: 'draft' | 'awaiting_signature' | 'signed' | 'rejected' | 'expired';
-        name: string;
-        email?: string | null;
-        title?: string | null;
-        provider?: ('docusign' | 'adobe_sign' | 'hellosign' | 'manual' | 'bulgaria_eid' | 'other') | null;
-        /**
-         * Set by the server when the step is signed.
-         */
-        signedAt?: string | null;
-        verificationUrl?: string | null;
-        certificateVerified?: boolean | null;
-        documentLink?: string | null;
-        /**
-         * Bulgaria eID verified.
-         */
-        eidVerified?: boolean | null;
-        /**
-         * Bulgaria ZKOD: notarized.
-         */
-        notarized?: boolean | null;
-        notaryReference?: string | null;
-        /**
-         * Labor Code Art. 331 attested.
-         */
-        arbitrationAttested?: boolean | null;
-        rejectionReason?: string | null;
-        rejectedAt?: string | null;
-        comments?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  status?:
-    ('draft' | 'pending_approval' | 'pending_signatures' | 'active' | 'suspended' | 'completed' | 'terminated') | null;
-  activatedAt?: string | null;
-  terminatedAt?: string | null;
-  /**
-   * Linked subscription (if SaaS).
-   */
-  subscription?: (string | null) | Subscription;
-  zkod?: {
-    /**
-     * Bulgaria ZKOD contract registry number (unique per ZKOD)
-     */
-    zkodContractNumber?: string | null;
-    /**
-     * Contract notarized per Bulgaria registry (required for contracts > 10k BGN)
-     */
-    zkodNotarized?: boolean | null;
-    /**
-     * Bulgaria Labor Code Art. 331: mandatory arbitration clause present (required for employment-related contracts)
-     */
-    mandatoryArbitrationClause?: boolean | null;
-  };
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "performance-obligations".
- */
-export interface PerformanceObligation {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  contract: string | Contract;
-  description: string;
-  /**
-   * IFRS 15 §22(a): one distinct promise. §22(b): a series of substantially-the-same distinct goods/services with the same pattern of transfer (typical for SaaS subscriptions).
-   */
-  kind: 'distinct' | 'series';
-  /**
-   * When the customer obtains control. Most goods → point-in-time at delivery; services that meet §35 criteria → over-time.
-   */
-  recognitionTiming: 'point_in_time' | 'over_time';
-  /**
-   * Required when recognitionTiming = over_time. Output methods measure value transferred; input methods measure inputs consumed.
-   */
-  overTimeMeasurement?: ('output_method' | 'input_method') | null;
-  /**
-   * Specific measurement kind under the chosen output/input method.
-   */
-  measurementKind?:
-    | (
-        | 'units_delivered'
-        | 'units_produced'
-        | 'milestones'
-        | 'time_elapsed'
-        | 'survey_of_work'
-        | 'cost_to_cost'
-        | 'labor_hours'
-        | 'machine_hours'
-        | 'resources_consumed'
-        | 'time_passed'
-      )
-    | null;
-  /**
-   * DEPRECATED — superseded by recognitionTiming + overTimeMeasurement + measurementKind. Kept for back-compat.
-   */
-  recognitionMethod?: ('point_in_time' | 'over_time_input' | 'over_time_output') | null;
-  /**
-   * In cents. Maps to canonical PerformanceObligation.standaloneSellingPrice.
-   */
-  standaloneSellingPrice: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Portion of contract transaction price allocated to this PO (cents). Computed by IFRS 15 §73 relative-SSP. Maps to canonical PerformanceObligation.allocatedAmount.
-   */
-  allocatedAmount?: number | null;
-  /**
-   * Cumulative recognised revenue (cents). Maps to canonical PerformanceObligation.recognizedAmount (note spelling — collection preserves British spelling for back-compat with seed data).
-   */
-  recognisedToDate?: number | null;
-  /**
-   * For over-time methods: 0–100. Maps to canonical PerformanceObligation.progress × 100 (canonical type uses 0..1 fraction).
-   */
-  percentComplete?: number | null;
-  status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
-  /**
-   * IFRS-15 §31-38: the steps that transfer control, each with its acceptance evidence.
-   */
-  milestones?:
-    | {
-        sequence: number;
-        title: string;
-        status: 'not_started' | 'in_progress' | 'complete' | 'on_hold' | 'failed';
-        /**
-         * The objective evidence that control transferred.
-         */
-        acceptanceCriteria: string;
-        plannedCompletionDate: string;
-        actualCompletionDate?: string | null;
-        /**
-         * Computed: actual minus planned.
-         */
-        varianceDays?: number | null;
-        /**
-         * Set by the server when the milestone completes.
-         */
-        controlTransferredAt?: string | null;
-        /**
-         * Revenue recognized on this milestone (cents).
-         */
-        revenueRecognized?: number | null;
-        invoice?: (string | null) | Invoice;
-        order?: (string | null) | Order;
-        /**
-         * Bulgaria ZKOD acceptance protocol.
-         */
-        acceptanceProtocolDate?: string | null;
-        acceptanceProtocolNumber?: string | null;
-        notes?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  satisfiedAt?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS-15 §35 over-time-recognition anchor. WIP accumulates per project; revenue recognises per chosen progress measurement (cost-to-cost / milestone / output-method).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "projects".
- */
-export interface Project {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Tenant-unique project code (e.g. PRJ-2026-001).
-   */
-  projectCode: string;
-  /**
-   * Customer-facing project name.
-   */
-  name: string;
-  description?: string | null;
-  customer?: (string | null) | Party;
-  /**
-   * The award funding this project. Costs book to the project; the project carries the award.
-   */
-  grant?: (string | null) | GovernmentGrant;
-  /**
-   * Master contract this project executes against (one contract may have many projects).
-   */
-  contract?: (string | null) | Contract;
-  /**
-   * Reporting legal entity that books this project's revenue + costs.
-   */
-  legalEntity?: (string | null) | LegalEntity;
-  /**
-   * Internal project owner (responsible for delivery + status).
-   */
-  projectManager?: (string | null) | User;
-  projectType?: ('fixed_price' | 'time_and_materials' | 'cost_plus' | 'milestone' | 'internal') | null;
-  /**
-   * Progress measurement method per IFRS-15. Drives the WIP / revenue posting cadence.
-   */
-  recognitionMethod?:
-    | (
-        | 'point_in_time'
-        | 'cost_to_cost'
-        | 'output_units'
-        | 'output_time'
-        | 'output_survey'
-        | 'milestone'
-        | 'right_to_invoice'
-      )
-    | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Total transaction price for this project (cents). For T&M projects use the not-to-exceed cap.
-   */
-  contractedAmount?: number | null;
-  /**
-   * Estimated total cost at completion (EAC) — denominator in cost-to-cost % complete.
-   */
-  budgetedCost?: number | null;
-  /**
-   * Estimated total labour hours (used by output-time method).
-   */
-  budgetedHours?: number | null;
-  /**
-   * contractedAmount − budgetedCost (auto-derived).
-   */
-  budgetedMargin?: number | null;
-  /**
-   * Cumulative posted cost (auto-summed from time-entries + materials + overhead allocation).
-   */
-  actualCostToDate?: number | null;
-  /**
-   * Cumulative recognised revenue (auto-summed from period postings).
-   */
-  recognisedRevenueToDate?: number | null;
-  /**
-   * Snapshot of latest period progress measurement.
-   */
-  percentComplete?: number | null;
-  plannedStartDate?: string | null;
-  plannedEndDate?: string | null;
-  actualStartDate?: string | null;
-  actualEndDate?: string | null;
-  /**
-   * IAS-37 §66 onerous-contract flag — when EAC > contracted, provision the full expected loss now.
-   */
-  isOnerous?: boolean | null;
-  status?: ('draft' | 'approved' | 'in_progress' | 'on_hold' | 'completed' | 'cancelled') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
   updatedBy?: {
     relationTo: 'users';
     value: string | User;
@@ -5357,68 +5144,6 @@ export interface FiscalPeriod {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "journal-entries".
- */
-export interface JournalEntry {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * The project this belongs to. Costs book to the project; the project carries the award.
-   */
-  project?: (string | null) | Project;
-  entryNumber: string;
-  entryDate: string;
-  postedDate?: string | null;
-  description: string;
-  status?: ('draft' | 'pending_approval' | 'posted' | 'reversed' | 'void') | null;
-  lines: {
-    lineNumber?: number | null;
-    glAccount: string | GlAccount;
-    accountNumber?: string | null;
-    accountName?: string | null;
-    description?: string | null;
-    debit?: number | null;
-    credit?: number | null;
-    /**
-     * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-     */
-    currency?: string | null;
-    exchangeRate?: number | null;
-    costCenterId?: string | null;
-    id?: string | null;
-  }[];
-  debitTotal?: number | null;
-  creditTotal?: number | null;
-  isBalanced?: boolean | null;
-  sourceType:
-    | 'manual'
-    | 'invoice'
-    | 'bill'
-    | 'payment'
-    | 'bank_reconciliation'
-    | 'period_end_adjustment'
-    | 'tax_calculation'
-    | 'currency_adjustment'
-    | 'lease_period';
-  sourceId?: string | null;
-  sourceEvent?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  handle?: string | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "audit-findings".
  */
 export interface AuditFinding {
@@ -5793,6 +5518,318 @@ export interface FixedAsset {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contracts".
+ */
+export interface Contract {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  contractNumber: string;
+  customer: string | Party;
+  title: string;
+  effectiveFrom: string;
+  effectiveTo?: string | null;
+  /**
+   * Aggregate transaction price (cents). = transactionPriceFixed + transactionPriceVariable + financingComponent − considerationPayableToCustomer. Maps to canonical TransactionPrice.total.
+   */
+  totalValue?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Fixed consideration component (cents). IFRS 15 §47. Maps to canonical TransactionPrice.fixed.
+   */
+  transactionPriceFixed?: number | null;
+  /**
+   * Estimated variable consideration after constraint (cents). IFRS 15 §50-§59. Maps to canonical VariableConsideration.estimate − constraint.
+   */
+  transactionPriceVariable?: number | null;
+  /**
+   * IFRS 15 §53 — estimation method when variable consideration is non-zero.
+   */
+  variableConsiderationMethod?: ('expected_value' | 'most_likely_amount') | null;
+  /**
+   * Significant financing component (cents). IFRS 15 §60-§65. Positive when entity is financier; negative when customer is financed.
+   */
+  financingComponent?: number | null;
+  /**
+   * IFRS 15 §17 — other contracts this one is accounted for as part of (combined-contract group). Maps to canonical Contract.combinedWithContractIds.
+   */
+  combinedWithContracts?: (string | Contract)[] | null;
+  paymentTerms?: ('net0' | 'net15' | 'net30' | 'net60' | 'net90' | 'custom') | null;
+  /**
+   * IFRS 15 §22 distinct performance obligations.
+   */
+  performanceObligations?: {
+    docs?: (string | PerformanceObligation)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  /**
+   * IFRS 15 §20 / §B47 / ASC 606-10-25-13 contract modifications (amendments).
+   */
+  modifications?:
+    | {
+        /**
+         * When the amendment takes effect (not before effectiveFrom).
+         */
+        modifiedAt: string;
+        /**
+         * What the amendment does (e.g. "Price increase to 6k BGN/month").
+         */
+        description: string;
+        reason?:
+          | (
+              | 'scope_increase'
+              | 'scope_decrease'
+              | 'pricing_change'
+              | 'payment_term_change'
+              | 'warranty_modification'
+              | 'liability_cap_adjustment'
+              | 'other'
+            )
+          | null;
+        /**
+         * IFRS-15 §20: a separate obligation, or integrated into this contract.
+         */
+        classification?:
+          ('separate_obligation' | 'modification_integrated' | 'standalone_performance_obligation') | null;
+        /**
+         * Signed change in consideration (cents), in the contract currency.
+         */
+        priceImpact?: number | null;
+        /**
+         * The terms before the amendment.
+         */
+        originalTerms?: string | null;
+        /**
+         * The terms after it.
+         */
+        newTerms?: string | null;
+        /**
+         * Completion as planned before the amendment.
+         */
+        plannedCompletionDate?: string | null;
+        /**
+         * Completion as revised by it.
+         */
+        revisedCompletionDate?: string | null;
+        approvalStatus?: ('draft' | 'pending_approval' | 'approved' | 'rejected') | null;
+        approvedBy?: (string | null) | User;
+        modifiedBy?: (string | null) | User;
+        /**
+         * Bulgaria ZKOD: notarized (amendments over 10k BGN).
+         */
+        notarized?: boolean | null;
+        /**
+         * Notarization certificate number.
+         */
+        notaryReference?: string | null;
+        /**
+         * Labor Code Art. 331 clause present.
+         */
+        mandatoryArbitration?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Signing steps, in order. The contract becomes active once every step is signed (IFRS-15 §10).
+   */
+  signatures?:
+    | {
+        /**
+         * Step 1…N.
+         */
+        sequence: number;
+        role: 'customer' | 'vendor' | 'company_rep' | 'legal_review' | 'finance_review' | 'director_signature';
+        status: 'draft' | 'awaiting_signature' | 'signed' | 'rejected' | 'expired';
+        name: string;
+        email?: string | null;
+        title?: string | null;
+        provider?: ('docusign' | 'adobe_sign' | 'hellosign' | 'manual' | 'bulgaria_eid' | 'other') | null;
+        /**
+         * Set by the server when the step is signed.
+         */
+        signedAt?: string | null;
+        verificationUrl?: string | null;
+        certificateVerified?: boolean | null;
+        documentLink?: string | null;
+        /**
+         * Bulgaria eID verified.
+         */
+        eidVerified?: boolean | null;
+        /**
+         * Bulgaria ZKOD: notarized.
+         */
+        notarized?: boolean | null;
+        notaryReference?: string | null;
+        /**
+         * Labor Code Art. 331 attested.
+         */
+        arbitrationAttested?: boolean | null;
+        rejectionReason?: string | null;
+        rejectedAt?: string | null;
+        comments?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  status?:
+    ('draft' | 'pending_approval' | 'pending_signatures' | 'active' | 'suspended' | 'completed' | 'terminated') | null;
+  activatedAt?: string | null;
+  terminatedAt?: string | null;
+  /**
+   * Linked subscription (if SaaS).
+   */
+  subscription?: (string | null) | Subscription;
+  zkod?: {
+    /**
+     * Bulgaria ZKOD contract registry number (unique per ZKOD)
+     */
+    zkodContractNumber?: string | null;
+    /**
+     * Contract notarized per Bulgaria registry (required for contracts > 10k BGN)
+     */
+    zkodNotarized?: boolean | null;
+    /**
+     * Bulgaria Labor Code Art. 331: mandatory arbitration clause present (required for employment-related contracts)
+     */
+    mandatoryArbitrationClause?: boolean | null;
+  };
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  handle?: string | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "performance-obligations".
+ */
+export interface PerformanceObligation {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  contract: string | Contract;
+  description: string;
+  /**
+   * IFRS 15 §22(a): one distinct promise. §22(b): a series of substantially-the-same distinct goods/services with the same pattern of transfer (typical for SaaS subscriptions).
+   */
+  kind: 'distinct' | 'series';
+  /**
+   * When the customer obtains control. Most goods → point-in-time at delivery; services that meet §35 criteria → over-time.
+   */
+  recognitionTiming: 'point_in_time' | 'over_time';
+  /**
+   * Required when recognitionTiming = over_time. Output methods measure value transferred; input methods measure inputs consumed.
+   */
+  overTimeMeasurement?: ('output_method' | 'input_method') | null;
+  /**
+   * Specific measurement kind under the chosen output/input method.
+   */
+  measurementKind?:
+    | (
+        | 'units_delivered'
+        | 'units_produced'
+        | 'milestones'
+        | 'time_elapsed'
+        | 'survey_of_work'
+        | 'cost_to_cost'
+        | 'labor_hours'
+        | 'machine_hours'
+        | 'resources_consumed'
+        | 'time_passed'
+      )
+    | null;
+  /**
+   * DEPRECATED — superseded by recognitionTiming + overTimeMeasurement + measurementKind. Kept for back-compat.
+   */
+  recognitionMethod?: ('point_in_time' | 'over_time_input' | 'over_time_output') | null;
+  /**
+   * In cents. Maps to canonical PerformanceObligation.standaloneSellingPrice.
+   */
+  standaloneSellingPrice: number;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Portion of contract transaction price allocated to this PO (cents). Computed by IFRS 15 §73 relative-SSP. Maps to canonical PerformanceObligation.allocatedAmount.
+   */
+  allocatedAmount?: number | null;
+  /**
+   * Cumulative recognised revenue (cents). Maps to canonical PerformanceObligation.recognizedAmount (note spelling — collection preserves British spelling for back-compat with seed data).
+   */
+  recognisedToDate?: number | null;
+  /**
+   * For over-time methods: 0–100. Maps to canonical PerformanceObligation.progress × 100 (canonical type uses 0..1 fraction).
+   */
+  percentComplete?: number | null;
+  status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
+  /**
+   * IFRS-15 §31-38: the steps that transfer control, each with its acceptance evidence.
+   */
+  milestones?:
+    | {
+        sequence: number;
+        title: string;
+        status: 'not_started' | 'in_progress' | 'complete' | 'on_hold' | 'failed';
+        /**
+         * The objective evidence that control transferred.
+         */
+        acceptanceCriteria: string;
+        plannedCompletionDate: string;
+        actualCompletionDate?: string | null;
+        /**
+         * Computed: actual minus planned.
+         */
+        varianceDays?: number | null;
+        /**
+         * Set by the server when the milestone completes.
+         */
+        controlTransferredAt?: string | null;
+        /**
+         * Revenue recognized on this milestone (cents).
+         */
+        revenueRecognized?: number | null;
+        invoice?: (string | null) | Invoice;
+        order?: (string | null) | Order;
+        /**
+         * Bulgaria ZKOD acceptance protocol.
+         */
+        acceptanceProtocolDate?: string | null;
+        acceptanceProtocolNumber?: string | null;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  satisfiedAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
   handle?: string | null;
   updatedBy?: {
     relationTo: 'users';
@@ -9447,92 +9484,6 @@ export interface CustomsDeclaration {
    */
   releasedAt?: string | null;
   status?: ('draft' | 'submitted' | 'accepted' | 'held' | 'released' | 'rejected') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Collection-process trail per overdue invoice. IFRS 9 / CECL evidence layer.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "dunning-cycles".
- */
-export interface DunningCycle {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  cycleId: string;
-  invoice: string | Invoice;
-  /**
-   * Customer (denormalized from invoice for reporting).
-   */
-  customer?: (string | null) | Address;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Outstanding balance at cycle entry, integer cents. Recomputed on each job tick.
-   */
-  amountOverdue: number;
-  /**
-   * Original invoice due date (BT-9).
-   */
-  invoiceDueDate: string;
-  /**
-   * Days between invoiceDueDate and the most recent job tick.
-   */
-  daysPastDue?: number | null;
-  currentStage: 'reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off';
-  currentStageEnteredAt?: string | null;
-  /**
-   * Computed by the job — when the next stage transition is due.
-   */
-  nextActionDate?: string | null;
-  /**
-   * Append-only stage entries. Auditor queries this for ECL evidence — DO NOT delete prior entries.
-   */
-  history?:
-    | {
-        stage: 'reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off' | 'paused' | 'resolved';
-        enteredAt: string;
-        amountOverdueAtEntry?: number | null;
-        communicationSent?: ('none' | 'email' | 'sms' | 'letter' | 'phone' | 'legal_letter') | null;
-        communicationReference?: string | null;
-        notes?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Pause the auto-progression (e.g. customer disputed; finance held). Job skips paused cycles.
-   */
-  paused?: boolean | null;
-  pauseReason?: ('disputed' | 'payment_plan' | 'legal_hold' | 'bankruptcy' | 'manual_review') | null;
-  /**
-   * Reference to payment plan / agreement document.
-   */
-  paymentPlanRef?: string | null;
-  /**
-   * Allowance for doubtful accounts attributable to this invoice — feeds AllowanceForDoubtfulAccounts. Computed via IFRS 9 PD × LGD × EAD or simplified-approach lifetime ECL.
-   */
-  eclProvision?: number | null;
-  /**
-   * JE id when stage advances to written_off (Dr Bad Debt Expense / Cr AR or Allowance).
-   */
-  writeOffJournalEntry?: (string | null) | JournalEntry;
-  status?: ('active' | 'paused' | 'resolved' | 'written_off' | 'closed') | null;
-  resolvedAt?: string | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -20994,50 +20945,6 @@ export interface CustomsDeclarationsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "dunning-cycles_select".
- */
-export interface DunningCyclesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  cycleId?: T;
-  invoice?: T;
-  customer?: T;
-  currency?: T;
-  amountOverdue?: T;
-  invoiceDueDate?: T;
-  daysPastDue?: T;
-  currentStage?: T;
-  currentStageEnteredAt?: T;
-  nextActionDate?: T;
-  history?:
-    | T
-    | {
-        stage?: T;
-        enteredAt?: T;
-        amountOverdueAtEntry?: T;
-        communicationSent?: T;
-        communicationReference?: T;
-        notes?: T;
-        id?: T;
-      };
-  paused?: T;
-  pauseReason?: T;
-  paymentPlanRef?: T;
-  eclProvision?: T;
-  writeOffJournalEntry?: T;
-  status?: T;
-  resolvedAt?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  handle?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "fiscal-devices_select".
  */
 export interface FiscalDevicesSelect<T extends boolean = true> {
@@ -21333,6 +21240,31 @@ export interface InvoicesSelect<T extends boolean = true> {
       };
   test?: T;
   metadata?: T;
+  dunning?:
+    | T
+    | {
+        stage?: T;
+        stageEnteredAt?: T;
+        nextActionDate?: T;
+        status?: T;
+        resolvedAt?: T;
+        paused?: T;
+        pauseReason?: T;
+        paymentPlanRef?: T;
+        eclProvision?: T;
+        writeOffJournalEntry?: T;
+        history?:
+          | T
+          | {
+              stage?: T;
+              enteredAt?: T;
+              amountOverdueAtEntry?: T;
+              communicationSent?: T;
+              communicationReference?: T;
+              notes?: T;
+              id?: T;
+            };
+      };
   handle?: T;
   createdBy?: T;
   updatedBy?: T;
@@ -28763,7 +28695,6 @@ export interface CollectionQueryWidget {
       | 'credit-memos'
       | 'customer-segments'
       | 'customs-declarations'
-      | 'dunning-cycles'
       | 'fiscal-devices'
       | 'goods-receipts'
       | 'invoice-lines'
@@ -28982,7 +28913,6 @@ export interface ActivityWidget {
           | 'credit-memos'
           | 'customer-segments'
           | 'customs-declarations'
-          | 'dunning-cycles'
           | 'fiscal-devices'
           | 'goods-receipts'
           | 'invoice-lines'
@@ -29227,7 +29157,6 @@ export interface TaskCreateCollectionExport {
       | 'credit-memos'
       | 'customer-segments'
       | 'customs-declarations'
-      | 'dunning-cycles'
       | 'fiscal-devices'
       | 'goods-receipts'
       | 'invoice-lines'
