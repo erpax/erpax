@@ -20,6 +20,7 @@ import {
   checkFeatureAccess,
   getFeatureLimit,
   getSubscriptionStatus,
+  featureGuard,
 } from '@/utilities/subscription/gate'
 
 /** Partial-shape overrides used by createMockRequest. */
@@ -35,6 +36,16 @@ interface MockRequestOverrides {
 //     `User | PayloadMcpApiKey` auth union to `User`.
 //   - tenant is derived from `user.tenants[0].tenant` (the multi-tenant
 //     plugin convention), NOT a flat `user.tenant`.
+/**
+ * The subscriptions a tenant holds, as Payload answers them: `find` returns the stored subscription only
+ * when the query asks for `subscriptions` of that subscription's tenant. A gate that looks it up any
+ * other way (by the tenant's id as the subscription id, say) finds nothing.
+ */
+const stored = (subscription: { tenant?: unknown } | null) =>
+  vi.fn(async ({ collection, where }: { collection: string; where?: { tenant?: { equals?: unknown } } }) => ({
+    docs: subscription && collection === 'subscriptions' && where?.tenant?.equals === subscription.tenant ? [subscription] : [],
+  }))
+
 const createMockRequest = (overrides: MockRequestOverrides = {}): PayloadRequest => ({
   user: {
     id: 'user-123',
@@ -43,7 +54,7 @@ const createMockRequest = (overrides: MockRequestOverrides = {}): PayloadRequest
     ...overrides.user,
   },
   payload: {
-    findByID: vi.fn(),
+    find: stored(null),
     ...overrides.payload,
   },
   ...overrides,
@@ -73,7 +84,7 @@ describe('subscriptionGates', () => {
     it('should allow active subscription with required plan', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(createMockSubscription()),
+          find: stored(createMockSubscription()),
         },
       })
 
@@ -86,7 +97,7 @@ describe('subscriptionGates', () => {
     it('should deny subscription with non-matching plan', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(
+          find: stored(
             createMockSubscription({
               plan: { id: 'free-plan', slug: 'free', limits: {} },
             }),
@@ -103,7 +114,7 @@ describe('subscriptionGates', () => {
     it('should allow trial status', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(
+          find: stored(
             createMockSubscription({
               status: 'trial',
               plan: { id: 'pro', slug: 'pro', limits: {} },
@@ -121,7 +132,7 @@ describe('subscriptionGates', () => {
     it('should deny suspended subscription', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(
+          find: stored(
             createMockSubscription({ status: 'suspended' }),
           ),
         },
@@ -134,7 +145,7 @@ describe('subscriptionGates', () => {
     })
 
     it('should deny when no tenant', async () => {
-      const req = createMockRequest({ user: { tenant: null } })
+      const req = createMockRequest({ user: { tenants: [] } })
       const gate = requireSubscriptionPlan(['pro'])
       const result = await gate({ req, slug: 'invoices' })
 
@@ -146,7 +157,7 @@ describe('subscriptionGates', () => {
     it('should allow writes on active subscription', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(createMockSubscription()),
+          find: stored(createMockSubscription()),
         },
       })
 
@@ -159,7 +170,7 @@ describe('subscriptionGates', () => {
     it('should deny writes on suspended subscription', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(
+          find: stored(
             createMockSubscription({ status: 'suspended' }),
           ),
         },
@@ -174,7 +185,7 @@ describe('subscriptionGates', () => {
     it('should deny writes on cancelled subscription', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(
+          find: stored(
             createMockSubscription({ status: 'cancelled' }),
           ),
         },
@@ -190,9 +201,7 @@ describe('subscriptionGates', () => {
       for (const status of ['past_due', 'grace_period']) {
         const req = createMockRequest({
           payload: {
-            findByID: vi
-              .fn()
-              .mockResolvedValue(createMockSubscription({ status })),
+            find: stored(createMockSubscription({ status })),
           },
         })
 
@@ -214,7 +223,7 @@ describe('subscriptionGates', () => {
     it('returns false on past_due — caller wires this onto write ops only', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(
+          find: stored(
             createMockSubscription({ status: 'past_due' }),
           ),
         },
@@ -229,7 +238,7 @@ describe('subscriptionGates', () => {
     it('should deny creates on past_due subscription', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(
+          find: stored(
             createMockSubscription({ status: 'past_due' }),
           ),
         },
@@ -244,7 +253,7 @@ describe('subscriptionGates', () => {
     it('should deny updates on grace_period', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(
+          find: stored(
             createMockSubscription({ status: 'grace_period' }),
           ),
         },
@@ -259,7 +268,7 @@ describe('subscriptionGates', () => {
     it('should allow writes on active subscription', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(
+          find: stored(
             createMockSubscription({ status: 'active' }),
           ),
         },
@@ -276,7 +285,7 @@ describe('subscriptionGates', () => {
     it('should allow enabled feature', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(createMockSubscription()),
+          find: stored(createMockSubscription()),
         },
       })
 
@@ -289,7 +298,7 @@ describe('subscriptionGates', () => {
     it('should deny feature not in plan', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(
+          find: stored(
             createMockSubscription({
               plan: {
                 id: 'free',
@@ -310,7 +319,7 @@ describe('subscriptionGates', () => {
     it('should deny feature on non-active subscription', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(
+          find: stored(
             createMockSubscription({ status: 'suspended' }),
           ),
         },
@@ -325,7 +334,7 @@ describe('subscriptionGates', () => {
     it('should return reason when no subscription', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(null),
+          find: stored(null),
         },
       })
 
@@ -340,7 +349,7 @@ describe('subscriptionGates', () => {
     it('should return feature limit value', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(createMockSubscription()),
+          find: stored(createMockSubscription()),
         },
       })
 
@@ -352,7 +361,7 @@ describe('subscriptionGates', () => {
     it('should return null for unlimited feature', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(createMockSubscription()),
+          find: stored(createMockSubscription()),
         },
       })
 
@@ -364,7 +373,7 @@ describe('subscriptionGates', () => {
     it('should return undefined when no subscription', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(null),
+          find: stored(null),
         },
       })
 
@@ -379,7 +388,7 @@ describe('subscriptionGates', () => {
       const subscription = createMockSubscription()
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(subscription),
+          find: stored(subscription),
         },
       })
 
@@ -391,7 +400,7 @@ describe('subscriptionGates', () => {
     it('should return null when no subscription', async () => {
       const req = createMockRequest({
         payload: {
-          findByID: vi.fn().mockResolvedValue(null),
+          find: stored(null),
         },
       })
 
@@ -405,6 +414,34 @@ describe('subscriptionGates', () => {
       const result = await getSubscriptionStatus(req)
 
       expect(result).toBeNull()
+    })
+  })
+
+  describe('the subscription is found through its tenant', () => {
+    it("asks for the subscriptions of the user's tenant, newest first", async () => {
+      const find = stored(createMockSubscription())
+      await getSubscriptionStatus(createMockRequest({ payload: { find } }))
+      expect(find).toHaveBeenCalledWith(expect.objectContaining({ collection: 'subscriptions', where: { tenant: { equals: 'tenant-123' } }, sort: '-createdAt', limit: 1 }))
+    })
+
+    it("another tenant's subscription is not this tenant's", async () => {
+      const req = createMockRequest({ payload: { find: stored(createMockSubscription({ tenant: 'tenant-999' })) } })
+      expect(await getSubscriptionStatus(req)).toBeNull()
+      expect((await checkFeatureAccess(req, 'apiAccess')).allowed).toBe(false)
+    })
+  })
+
+  describe('featureGuard', () => {
+    it('lets a tenant through when its plan includes the feature, and refuses one without a subscription', async () => {
+      const entitled = createMockRequest({ user: { id: 'user-123', roles: ['user'], tenants: [{ tenant: 'tenant-123' }] }, payload: { find: stored(createMockSubscription()) } })
+      const unsubscribed = createMockRequest({ user: { id: 'user-123', roles: ['user'], tenants: [{ tenant: 'tenant-123' }] }, payload: { find: stored(null) } })
+      expect(await featureGuard('apiAccess')({ req: entitled } as never)).toBe(true)
+      expect(await featureGuard('apiAccess')({ req: unsubscribed } as never)).toBe(false)
+    })
+
+    it('lets the platform admin through: it serves every tenant and holds no plan', async () => {
+      const superAdmin = createMockRequest({ user: { roles: ['admin'], tenants: [] }, payload: { find: stored(null) } })
+      expect(await featureGuard('consolidation')({ req: superAdmin } as never)).toBe(true)
     })
   })
 })

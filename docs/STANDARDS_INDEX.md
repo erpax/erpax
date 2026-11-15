@@ -1557,7 +1557,7 @@ src/utilities/shareds/documentPreviewAdmin.ts:15: * @standard BCP-47 language-ta
 src/utilities/signal/index.ts:17: * @standard ISO-16:1975 a432-tuning-reference (pitch); value from position.
 src/utilities/site/tenant/where/index.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control tenant-isolation
 src/utilities/subscription/gate/index.ts:12: * @standard NIST INCITS-359-2012 role-based-access-control
-src/utilities/subscription/gate/index.ts:217: * @standard NIST INCITS-359-2012 role-based-access-control
+src/utilities/subscription/gate/index.ts:224: * @standard NIST INCITS-359-2012 role-based-access-control
 src/utilities/subscription/gate/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/utilities/subscription/gate/test.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control
 src/utilities/tamper/cost/index.ts:49: * @standard NIST SP 800-107r1 §5.1 (hash security strengths: 2nd-preimage ≈ L bits, collision ≈ L/2)
@@ -2480,7 +2480,7 @@ src/utilities/shareds/versionedDrafts.ts:10: * @compliance SOX §404 internal-co
 src/utilities/shareds/versionedDrafts.ts:11: * @compliance GDPR Art.5(1)(e) storage-limitation maxPerDoc-cap
 src/utilities/standard/collection/hook/index.ts:15: * @compliance SOX §404 internal-controls provenance
 src/utilities/subscription/gate/index.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
-src/utilities/subscription/gate/index.ts:219: * @compliance SOC-2 CC6.1 logical-access-controls
+src/utilities/subscription/gate/index.ts:226: * @compliance SOC-2 CC6.1 logical-access-controls
 src/utilities/subscription/gate/test.ts:10: * @compliance SOC-2 CC6.1 logical-access-controls
 src/utilities/tenant/context/index.ts:44: * @compliance GDPR Art.12 transparent-information user-language-of-choice
 src/utilities/tenant/remote/secret/index.ts:10: * @compliance PCI-DSS-4.0 §3.2 tokenized-payment-method
@@ -3391,7 +3391,7 @@ src/utilities/site/tenant/where/index.ts:5: * @security ISO-27001 A.5.23 informa
 src/utilities/site/tenant/where/index.ts:6: * @security ISO-27002 §8.3 information-access-restriction
 src/utilities/standard/collection/hook/index.ts:14: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation tenant-field
 src/utilities/subscription/gate/index.ts:13: * @security ISO-27002 §5.15 access-control
-src/utilities/subscription/gate/index.ts:218: * @security ISO-27002 §5.15 access-control feature-entitlement
+src/utilities/subscription/gate/index.ts:225: * @security ISO-27002 §5.15 access-control feature-entitlement
 src/utilities/subscription/gate/test.ts:9: * @security ISO-27002 §5.15 access-control
 src/utilities/tenant/context/index.ts:43: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation per-tenant-config
 src/utilities/tenant/remote/secret/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation per-tenant-keys

@@ -22,6 +22,7 @@ import type { Iso27002ControlId } from '@/utilities/iso/27002'
 // From the LEAF, not from `@/auth`: the predicates lazily import this gate for the feature guard, so
 // importing them back closed a two-file loop. Identity is all the gate needs.
 import { getUserContext } from '@/utilities/auth/context'
+import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 
 /**
  * Canonical ISO 27002 controls these gates exercise:
@@ -40,14 +41,20 @@ async function getSubscriptionForRequest(
     return null
   }
 
+  // A subscription belongs to its tenant through the multi-tenant `tenant` field; its id is its own.
+  // (Looking it up by the tenant's id found nothing, so every gate refused every tenant.) The newest
+  // one is the tenant's current subscription.
   try {
-    const subscription = await req.payload.findByID({
+    const { docs } = await req.payload.find({
       collection: 'subscriptions',
-      id: tenant,
+      where: { tenant: { equals: tenant } },
+      sort: '-createdAt',
+      limit: 1,
       depth: 1,
       overrideAccess: true,
+      req,
     })
-
+    const subscription = docs[0]
     return subscription ? { subscription, tenant } : null
   } catch {
     return null
@@ -221,6 +228,8 @@ export async function getSubscriptionStatus(req: PayloadRequest): Promise<Subscr
  */
 export const featureGuard = (featureId: string): Access => {
   return async ({ req }) => {
+    // The platform admin serves every tenant and holds no plan of its own.
+    if (isSuperAdmin(req.user)) return true
     const result = await checkFeatureAccess(req, featureId)
     return result.allowed
   }
