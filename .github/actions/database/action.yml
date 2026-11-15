@@ -1,0 +1,31 @@
+name: Database from the migrations
+description: >-
+  The local D1 that src/migrations builds from empty, keyed by its content. A run whose migrations,
+  lockfile and D1 binding a run already built restores that database instead of migrating again; a
+  new key builds it once (payload migrate) and saves it for every later job and run.
+
+runs:
+  using: composite
+  steps:
+    - id: restore
+      uses: actions/cache/restore@v4
+      with:
+        path: .wrangler/state/v3/d1
+        key: d1-${{ runner.os }}-${{ hashFiles('src/migrations/**', 'pnpm-lock.yaml', 'wrangler.jsonc', '.github/actions/database/action.yml') }}
+
+    # The job's own env carries PAYLOAD_SECRET. Push stays off: this database is the migrations', not a
+    # schema pushed from the config (the Migrations job proves the two agree).
+    - name: Build it from the migrations
+      if: steps.restore.outputs.cache-hit != 'true'
+      shell: bash
+      env:
+        PAYLOAD_DEV_PUSH: 'false'
+      run: pnpm -s payload migrate --force-accept-warning
+
+    # Saved at once, not at the end of the job: the database is right whatever the job goes on to find.
+    # Parallel jobs that missed together race to save; the first wins and the rest only warn.
+    - if: steps.restore.outputs.cache-hit != 'true'
+      uses: actions/cache/save@v4
+      with:
+        path: .wrangler/state/v3/d1
+        key: ${{ steps.restore.outputs.cache-primary-key }}

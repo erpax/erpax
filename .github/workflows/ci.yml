@@ -51,11 +51,14 @@ jobs:
         shard: [1, 2, 3, 4]
     env:
       PAYLOAD_SECRET: test-secret-not-for-production-32-characters
+      # The database is the one the migrations build (./.github/actions/database), restored by content
+      # key: no shard pushes a schema from the config (94s each), and vitest.setup.ts does not migrate again.
       PAYLOAD_TEST_SKIP_MIGRATE: '1'
-      PAYLOAD_DEV_PUSH: 'true'
+      PAYLOAD_DEV_PUSH: 'false'
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
+      - uses: ./.github/actions/database
       - run: pnpm test --shard ${{ matrix.shard }}/4
 
   test-e2e:
@@ -65,11 +68,13 @@ jobs:
     timeout-minutes: 45
     env:
       PAYLOAD_SECRET: test-secret-not-for-production-32-characters
-      PAYLOAD_DEV_PUSH: 'true'
+      # the dev server runs on the migrations' database (restored below) instead of pushing a schema
+      PAYLOAD_DEV_PUSH: 'false'
       CI: 'true'
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
+      - uses: ./.github/actions/database
       - run: pnpm exec playwright install chromium --with-deps
       - run: pnpm test:e2e tests/e2e/smoke.e2e.spec.ts
       - name: Upload Playwright report
@@ -86,18 +91,34 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup
+      # A verdict is reused, not recomputed: when the proofs, the toolchain and the checker are ones a
+      # run already accepted, the kernel answers the same. The key is their content.
+      - id: verdict
+        uses: actions/cache/restore@v4
+        with:
+          path: .verdict/lean
+          key: lean-${{ hashFiles('src/utilities/verify/lean/**', 'lean-toolchain', 'src/utilities/verify/inventory/index.ts') }}
+      - if: steps.verdict.outputs.cache-hit != 'true'
+        uses: ./.github/actions/setup
       - name: Install Lean (the version in lean-toolchain)
+        if: steps.verdict.outputs.cache-hit != 'true'
         run: |
           curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain "$(cat lean-toolchain)"
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       # The kernel must accept every file in src/utilities/verify/lean with no sorry, the committed
       # inventory must be what it reports, and no theorem may rest on an axiom it did not rest on in
       # main's record (new theorems are axiom-free; existing axiom debt may only shrink).
-      - run: |
+      - if: steps.verdict.outputs.cache-hit != 'true'
+        run: |
           git fetch --depth=1 origin main
           git show origin/main:src/utilities/verify/lean/inventory.generated.json > "$RUNNER_TEMP/base-inventory.json"
           ./node_modules/.bin/tsx src/utilities/verify/inventory/index.ts --check --base "$RUNNER_TEMP/base-inventory.json"
+          mkdir -p .verdict && echo "accepted at ${{ github.sha }}" > .verdict/lean
+      - if: steps.verdict.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .verdict/lean
+          key: ${{ steps.verdict.outputs.cache-primary-key }}
 
   migrations:
     name: Migrations
@@ -109,9 +130,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-      # The history builds a database from empty (a local D1), and the schema has no change it does
-      # not migrate: migrate:create --skip-empty must write nothing.
-      - run: pnpm -s payload migrate --force-accept-warning
+      # The history builds a database from empty (a local D1): the database action does it once per
+      # content of src/migrations and reuses that build after. The schema has no change it does not
+      # migrate: migrate:create --skip-empty must write nothing, checked on every run.
+      - uses: ./.github/actions/database
       - run: |
           pnpm -s payload:migrate:create drift --skip-empty
           if [ -n "$(git status --porcelain src/migrations)" ]; then
@@ -138,7 +160,14 @@ jobs:
       # a failed call whose gap the afterToolCall hook must record. `next build` alone passed a Worker
       # that threw on every request; a 401 for a caller without a key passed a gateway that failed every
       # caller with one.
-      - run: pnpm -s payload migrate --force-accept-warning
+      - uses: ./.github/actions/database
+      # Next's own build cache (OpenNext builds with webpack), keyed by the sources: an unchanged tree
+      # rebuilds from it, a changed one starts from the latest cache and recompiles what moved.
+      - uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: next-webpack-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-${{ hashFiles('src/**', 'next.config.ts') }}
+          restore-keys: next-webpack-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-
       - run: ./node_modules/.bin/opennextjs-cloudflare build
       - name: Serve the built Worker and smoke it
         run: |
@@ -157,4 +186,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
+      - uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: next-turbopack-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-${{ hashFiles('src/**', 'next.config.ts') }}
+          restore-keys: next-turbopack-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-
       - run: pnpm build
