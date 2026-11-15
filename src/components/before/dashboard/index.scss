@@ -1,7 +1,6 @@
-@import '@payloadcms/ui/scss';
-
+// Spacing in Payload's 20px base unit (1.25rem).
 .dashboard .before-dashboard {
-  margin-bottom: base(1.5);
+  margin-bottom: 1.875rem;
 
   &__banner {
     & h4 {
@@ -11,7 +10,7 @@
 
   &__instructions {
     list-style: decimal;
-    margin-bottom: base(0.5);
+    margin-bottom: 0.625rem;
 
     & li {
       width: 100%;
