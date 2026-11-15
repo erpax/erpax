@@ -1,5 +1,6 @@
 import type { EmailAdapter, SendEmailOptions } from 'payload'
 
+import { textOf } from '@/utilities/email/inbound'
 import { resolveEmailDefaultsForMessage } from '@/utilities/tenant/remote/secret'
 
 /**
@@ -95,7 +96,8 @@ export const toCloudflareEmail = (
     ...(replyTo ? { replyTo } : {}),
     subject: String(message.subject ?? ''),
     ...(bodyOf(message.html) ? { html: bodyOf(message.html) } : {}),
-    ...(bodyOf(message.text) ? { text: bodyOf(message.text) } : {}),
+    // a plain-text part always: Payload's own mail (the password reset) is HTML only, and a text part helps delivery
+    ...(bodyOf(message.text) || bodyOf(message.html) ? { text: bodyOf(message.text) ?? textOf(undefined, bodyOf(message.html)) } : {}),
     ...(attachments.length ? { attachments } : {}),
   }
 }

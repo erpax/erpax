@@ -16,7 +16,7 @@ describe('cloudflare email — Payload mail over the send_email binding', () => 
 
   it('a password reset stamped with the platform From goes out from the tenant address', () => {
     const mail = toCloudflareEmail({ from: '"erpax" <noreply@platform.example>', to: 'user@x.example', subject: 'Reset your password', html: '<a href="/reset">reset</a>' }, defaults, 'noreply@platform.example')
-    expect(mail).toEqual({ from: { email: 'noreply@tenant.example', name: 'Tenant' }, to: [{ email: 'user@x.example' }], subject: 'Reset your password', html: '<a href="/reset">reset</a>' })
+    expect(mail).toEqual({ from: { email: 'noreply@tenant.example', name: 'Tenant' }, to: [{ email: 'user@x.example' }], subject: 'Reset your password', html: '<a href="/reset">reset</a>', text: 'reset' })
   })
 
   it('keeps an explicit From, and maps cc, bcc, reply-to and attachments', () => {
