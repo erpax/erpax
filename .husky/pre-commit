@@ -7,6 +7,12 @@ if echo "$staged" | grep -qE '^src/.*\.(ts|tsx)$'; then
   pnpm -s generate:types >/dev/null && pnpm -s generate:importmap >/dev/null
   git add src/payload-types.ts 'src/app/(payload)/admin/importMap.js' 2>/dev/null || true
 fi
+# The proof record and the README lines that quote it, when a Lean file changes. The kernel's
+# report is what CI's Lean job compares with; without `lean` on PATH the commit goes on and CI judges.
+if echo "$staged" | grep -qE '^src/utilities/verify/lean/.*\.lean$' && command -v "${LEAN_BIN:-lean}" >/dev/null 2>&1; then
+  ./node_modules/.bin/tsx src/utilities/verify/inventory/index.ts </dev/null >/dev/null || exit 1
+  git add src/utilities/verify/lean/inventory.generated.json README.md
+fi
 # The release manifest records each package's built content: rebuilt with every src change, so CI's
 # release check never meets a stale one. A failed rebuild stops the commit.
 if echo "$staged" | grep -qE '^src/'; then

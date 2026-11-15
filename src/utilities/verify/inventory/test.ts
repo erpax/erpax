@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { CLAY, FOUNDATION, axiomViolations, clayDeclarationErrors, readmeClayErrors, witnessCell, INVENTORY, KERNEL, STANDARD_AXIOMS, UNBACKED, journalOf, trialBalance, claySettled, clayTags, clayWitnesses, linkOf, parseAxiomReport, onForeignAxiom, proofCensus, proved } from '@/utilities/verify/inventory'
+import { CLAY, FOUNDATION, axiomViolations, censusLine, clayDeclarationErrors, readmeClayErrors, readmeOfRecord, witnessCell, INVENTORY, KERNEL, STANDARD_AXIOMS, UNBACKED, journalOf, trialBalance, claySettled, clayTags, clayWitnesses, linkOf, parseAxiomReport, onForeignAxiom, proofCensus, proved } from '@/utilities/verify/inventory'
 
 describe('verify/inventory — the kernel is quoted, never paraphrased', () => {
   const out = [
@@ -93,6 +93,11 @@ describe('verify/inventory — what the kernel has checked ABOUT the Clay proble
     expect(witnessCell(witnesses, 'riemann')).toContain('](src/utilities/verify/lean/Symmetry.lean)')
     const drifted = readme.replace('[`Harmonic.lean`](src/utilities/verify/lean/Harmonic.lean) — `meta`, 12 theorems, 0 stubbed · ', '')
     expect(readmeClayErrors(drifted, witnesses, INVENTORY).length).toBeGreaterThan(0)
+    // the writer repairs the drift and leaves a current README as it is
+    expect(readmeOfRecord(drifted, witnesses, INVENTORY)).toBe(readme)
+    expect(readmeOfRecord(readme, witnesses, INVENTORY)).toBe(readme)
+    const stale = readme.replace(censusLine(INVENTORY), censusLine({ ...INVENTORY, sealedAt: '2000-01-01' }))
+    expect(readmeOfRecord(stale, witnesses, INVENTORY)).toBe(readme)
   })
 
   it('every Lean file declares what it says about the Clay problems, with no unknown problem or kind', () => {

@@ -255,6 +255,34 @@ export const readmeClayErrors = (readme: string, witnesses: readonly ClayWitness
   return errors
 }
 
+/** A witness cell as `witnessCell` writes it: `none`, or linked files joined by ` · `. */
+const WITNESS_PREFIX = /^(none|\[`[^`]+`\]\([^)]+\) — `[^`]+`, \d+ theorems, \d+ stubbed(?: · \[`[^`]+`\]\([^)]+\) — `[^`]+`, \d+ theorems, \d+ stubbed)*)/
+
+/**
+ * The README rewritten from the record: each Clay row's witness cell, the settled sentence and the
+ * census line, leaving every other word as written. `readmeClayErrors` of the result is empty.
+ */
+export const readmeOfRecord = (readme: string, witnesses: readonly ClayWitness[], inventory: Parameters<typeof censusLine>[0]): string => {
+  const settled = claySettled(witnesses)
+  const settledText = settled.length ? settled.map((p) => CLAY_LABEL[p]).join(', ') : '**none**'
+  // The witness table is the first row per problem, as `readmeClayErrors` reads it; later tables that
+  // name the problems (the statements) are prose.
+  const done = new Set<ClayProblem>()
+  const rows = readme.split('\n').map((line) => {
+    const problem = CLAY.find((p) => new RegExp(`^\\| (\\*\\*)?${CLAY_LABEL[p]}(\\*\\*)? \\|`).test(line))
+    if (!problem || done.has(problem) || line.split('|').length < 4 || line.includes('⟹')) return line
+    done.add(problem)
+    const cells = line.split('|')
+    const cell = (cells[2] ?? '').trim()
+    cells[2] = ` ${cell.replace(WITNESS_PREFIX, '') === cell ? witnessCell(witnesses, problem) : cell.replace(WITNESS_PREFIX, witnessCell(witnesses, problem))} `
+    return cells.join('|')
+  })
+  return rows
+    .join('\n')
+    .replace(/Settled by this corpus: .*?\(`claySettled`[^)]*\)/, `Settled by this corpus: ${settledText} (\`claySettled\` ${settled.length ? `lists ${settled.length}` : 'is empty'})`)
+    .replace(/Kernel report sealed \d{4}-\d{2}-\d{2}: .*?sources `[0-9a-f]+`\./, censusLine(inventory))
+}
+
 /** What the kernel has checked about each problem: one witness per declaration, with its axiom footprint. */
 export function clayWitnesses(inventory: Pick<ProofInventory, 'files'>, sources: Readonly<Record<string, string>>): ClayWitness[] {
   const out: ClayWitness[] = []
@@ -368,6 +396,8 @@ if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
     census: proofCensus(entries),
     files,
   }
+  const sources = Object.fromEntries(names.map((n) => [`${n}.lean`, readFileSync(join(dir, `${n}.lean`), 'utf8')]))
+  const README = join(process.cwd(), 'README.md')
   // `--check` (CI): the kernel must accept every file with no stub, and the committed record must be
   // what this run produced. The date and the Lean build string are left out of the comparison.
   if (process.argv.includes('--check')) {
@@ -386,14 +416,13 @@ if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
     for (const e of foreign) console.error(`  ${e.theorem}: rests on ${e.axioms.filter((a) => !STANDARD_AXIOMS.has(a)).join(', ')}, outside Lean's foundation`)
     if (stale) console.error(`  ${INVENTORY_PATH} is not what the kernel reports now`)
     // `--base <record>` (CI passes main's): no theorem may take on an axiom it did not rest on there.
-    const sources = Object.fromEntries(names.map((n) => [`${n}.lean`, readFileSync(join(dir, `${n}.lean`), 'utf8')]))
-    const clayErrors = [...clayDeclarationErrors(sources), ...readmeClayErrors(readFileSync(join(process.cwd(), 'README.md'), 'utf8'), clayWitnesses(inventory, sources), committed)]
+    const clayErrors = [...clayDeclarationErrors(sources), ...readmeClayErrors(readFileSync(README, 'utf8'), clayWitnesses(inventory, sources), committed)]
     for (const e of clayErrors) console.error(`  ${e}`)
     const baseAt = process.argv.indexOf('--base')
     const violations = baseAt > 0 ? axiomViolations(JSON.parse(readFileSync(process.argv[baseAt + 1] as string, 'utf8')) as ProofInventory, inventory) : []
     for (const v of violations) console.error(`  ${v.theorem}: rests on ${v.axioms.join(', ')} — prove it with the kernel's rules (cases, rfl, decide)`)
     if (refused.length || inventory.census.stubbed > 0 || foreign.length || uncertified.length || violations.length || clayErrors.length || stale) {
-      console.error('\n✖ run `tsx src/utilities/verify/inventory/index.ts` and commit the record')
+      console.error('\n✖ run `tsx src/utilities/verify/inventory/index.ts` (it rewrites the record and the README) and commit both')
       process.exit(1)
     }
     const tb = trialBalance(entries)
@@ -402,5 +431,7 @@ if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
     return
   }
   writeFileSync(join(process.cwd(), INVENTORY_PATH), `${JSON.stringify(inventory, null, 2)}\n`)
+  // The README quotes the record, so the same run rewrites it from the record: they cannot disagree.
+  writeFileSync(README, readmeOfRecord(readFileSync(README, 'utf8'), clayWitnesses(inventory, sources), inventory))
   console.log(`verify/inventory — ${inventory.census.theorems} theorem(s) · ${inventory.census.axiomFree} axiom-free · ${inventory.census.stubbed} stubbed · sources ${inventory.sourcesHash}`)
 })()
