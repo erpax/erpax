@@ -252,6 +252,14 @@
   //   "AI_GATEWAY_URL": "https://gateway.ai.cloudflare.com/v1/<account>/erpax",
   //   "AI_GATEWAY_ID":  "erpax",
   // },
+  // The platform From address of every mail erpax sends (the password reset included). Email Sending is
+  // enabled for erpax.com: DKIM selector cf-bounce, return path cf-bounce.erpax.com; the apex MX stays
+  // with Google Workspace. Kept here, not in the dashboard: without keep_vars, every deploy replaces
+  // the dashboard variables with these. A tenant may send from its own address (emailDefaultFromAddress).
+  "vars": {
+    "EMAIL_DEFAULT_FROM_ADDRESS": "noreply@erpax.com",
+    "EMAIL_DEFAULT_FROM_NAME": "erpax",
+  },
   // Scheduled triggers for Payload v3 jobs queue.
   // The Worker entrypoint (.open-next/worker.js) needs a `scheduled()` handler
   // that POSTs to `/api/payload-jobs/run` with the Bearer token derived from
