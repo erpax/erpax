@@ -1,14 +1,116 @@
 {
-  "sealedAt": "2026-11-14",
+  "sealedAt": "2026-11-15",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "0c5ea6ae2093c93f",
+  "sourcesHash": "f089fd0bfec40817",
   "census": {
-    "theorems": 290,
-    "axiomFree": 197,
-    "standardAxioms": 93,
+    "theorems": 316,
+    "axiomFree": 218,
+    "standardAxioms": 98,
     "stubbed": 0
   },
   "files": [
+    {
+      "file": "Affect.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Affect.turn_three",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.turn_moves",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.turn_two_moves",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.flip_two",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.flip_moves",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.flip_turn_commute",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.cycle_six",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.cycle_two_moves",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.cycle_three_moves",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.flipped_turn_not_involution",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.mirror_two",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.mirror_reverses",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.mirror_turn_not_commute",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.mirror_turn_involution",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.mirror_turn_two_involution",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.flip_mirror_commute",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
     {
       "file": "Gate.lean",
       "compiled": true,
@@ -1071,6 +1173,36 @@
       ]
     },
     {
+      "file": "Foundation.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Foundation.propext_meaning",
+          "axioms": [
+            "propext"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Foundation.quot_sound_meaning",
+          "axioms": [
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Foundation.choice_meaning",
+          "axioms": [
+            "Classical.choice"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        }
+      ]
+    },
+    {
       "file": "Harmonic.lean",
       "compiled": true,
       "entries": [
@@ -1505,6 +1637,62 @@
         },
         {
           "theorem": "Duality.Mirror.control_parity",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Observer.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Observer.centre_fixed",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Observer.fixed_iff_centre",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Observer.rotate_three",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Observer.rotate_fixed_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "axiomFree": false,
+          "stubbed": false
+        },
+        {
+          "theorem": "Observer.negation_no_fixed_point",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Observer.diagonal_missed",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Observer.no_complete_self_model",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false

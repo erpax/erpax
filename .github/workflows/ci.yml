@@ -1,4 +1,4 @@
-# Lint · typecheck · tests · Playwright UI · production build — a Payload app's checks, nothing else.
+# Lint · typecheck · tests · Playwright UI · Lean proofs · production build — a Payload app's checks, and the kernel's.
 name: CI
 
 on:
@@ -79,6 +79,21 @@ jobs:
           name: playwright-report
           path: playwright-report
           retention-days: 7
+
+  lean:
+    name: Lean proofs
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - name: Install Lean (the version in lean-toolchain)
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain "$(cat lean-toolchain)"
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      # The kernel must accept every file in src/utilities/verify/lean with no sorry, and the committed
+      # inventory must be what it reports.
+      - run: ./node_modules/.bin/tsx src/utilities/verify/inventory/index.ts --check
 
   build:
     name: Production build (lean)

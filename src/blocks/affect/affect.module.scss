@@ -1,0 +1,123 @@
+// The trinity wheel. The ring turns 120° at a time and holds at each corner; the words counter-turn so
+// they stay upright; the centre does not move (the observer is the fixed point, Observer.lean).
+// `data-direction="backward"` runs the loop in reverse, `data-valence="unpleasant"` flips the tone.
+
+.wheel {
+  --size: min(18rem, 80vw);
+  --period: 9s;
+  --pleasant: var(--color-success, oklch(0.72 0.15 150));
+  --unpleasant: var(--color-error, oklch(0.62 0.18 25));
+  --tone: var(--pleasant);
+
+  position: relative;
+  inline-size: var(--size);
+  margin: 2rem auto;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.wheel[data-valence='unpleasant'] {
+  --tone: var(--unpleasant);
+}
+
+.ring {
+  position: relative;
+  inline-size: 100%;
+  aspect-ratio: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 2px solid var(--tone);
+  border-radius: 50%;
+  animation: turn var(--period) ease-in-out infinite;
+}
+
+.corner {
+  position: absolute;
+  inset: 0;
+  rotate: var(--angle);
+}
+
+.word {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 50%;
+  translate: -50% -50%;
+  padding: 0.25rem 0.75rem;
+  border: 2px solid var(--tone);
+  border-radius: 999px;
+  background: var(--background, canvas);
+  color: currentcolor;
+  font-weight: 600;
+  white-space: nowrap;
+  // Undo the corner's own angle, then the ring's turn, so the word reads upright all the way round.
+  rotate: calc(-1 * var(--angle));
+  animation: counter var(--period) ease-in-out infinite;
+}
+
+.wheel[data-direction='backward'] .ring,
+.wheel[data-direction='backward'] .word {
+  animation-direction: reverse;
+}
+
+.centre {
+  position: absolute;
+  inset-block-start: calc(var(--size) / 2);
+  inset-inline-start: 50%;
+  inline-size: 0.75rem;
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: var(--tone);
+}
+
+.caption {
+  font-size: 0.875rem;
+  opacity: 0.8;
+  text-align: center;
+}
+
+// Hold at each corner, then turn one third: three turns come back (ρ³ = id).
+@keyframes turn {
+  0%,
+  22% {
+    rotate: 0deg;
+  }
+  33%,
+  55% {
+    rotate: 120deg;
+  }
+  66%,
+  88% {
+    rotate: 240deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes counter {
+  0%,
+  22% {
+    rotate: calc(-1 * var(--angle));
+  }
+  33%,
+  55% {
+    rotate: calc(-1 * var(--angle) - 120deg);
+  }
+  66%,
+  88% {
+    rotate: calc(-1 * var(--angle) - 240deg);
+  }
+  100% {
+    rotate: calc(-1 * var(--angle) - 360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ring,
+  .word {
+    animation: none;
+  }
+}

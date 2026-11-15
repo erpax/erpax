@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { CLAY, INVENTORY, claySettled, clayTags, clayWitnesses, parseAxiomReport, proofCensus, proved } from '@/utilities/verify/inventory'
+import { CLAY, FOUNDATION, INVENTORY, KERNEL, STANDARD_AXIOMS, UNBACKED, journalOf, trialBalance, claySettled, clayTags, clayWitnesses, linkOf, parseAxiomReport, onForeignAxiom, proofCensus, proved } from '@/utilities/verify/inventory'
 
 describe('verify/inventory — the kernel is quoted, never paraphrased', () => {
   const out = [
@@ -29,6 +29,39 @@ describe('verify/inventory — the kernel is quoted, never paraphrased', () => {
     const c = proofCensus(e)
     expect(c).toEqual({ theorems: 3, axiomFree: 1, standardAxioms: 1, stubbed: 1 })
     expect(proved(c)).toBe(2)
+  })
+
+  it('links each theorem to its axioms: the kernel alone, or the kernel with named, meaningful axioms', () => {
+    const [free, withPropext] = parseAxiomReport(out)
+    expect(linkOf(free!)).toEqual({ theorem: free!.theorem, kernel: 'alone', axioms: [] })
+    expect(linkOf(withPropext!).axioms).toEqual([{ axiom: 'propext', ...FOUNDATION.propext }])
+  })
+
+  it('in the sealed record every axiom has a meaning, and each meaning rests on exactly its axiom', () => {
+    const entries = INVENTORY.files.flatMap((file) => file.entries)
+    for (const e of entries) expect(e.axioms.every((a) => STANDARD_AXIOMS.has(a) || a === 'sorryAx'), e.theorem).toBe(true)
+    for (const [axiom, { witness }] of Object.entries(FOUNDATION)) {
+      expect(entries.find((e) => e.theorem === witness)?.axioms, witness).toEqual([axiom])
+    }
+  })
+
+  it('debits each theorem and credits what backs it: every entry balances, and so does the record', () => {
+    for (const e of parseAxiomReport(out)) {
+      const lines = journalOf(e)
+      expect(lines.reduce((n, l) => n + l.debit, 0)).toBe(lines.reduce((n, l) => n + l.credit, 0))
+    }
+    const entries = INVENTORY.files.flatMap((file) => file.entries)
+    const tb = trialBalance(entries)
+    expect(tb.balanced).toBe(true)
+    expect(tb.credits[KERNEL]).toBe(INVENTORY.census.axiomFree)
+    expect(tb.credits[UNBACKED]).toBeUndefined()
+  })
+
+  it("an axiom outside Lean's foundation is never counted as proved", () => {
+    const e = parseAxiomReport("'X.t' depends on axioms: [propext, X.myAxiom]")
+    expect(onForeignAxiom(e[0]!)).toBe(true)
+    expect(proofCensus(e)).toEqual({ theorems: 1, axiomFree: 0, standardAxioms: 0, stubbed: 0 })
+    expect(proved(proofCensus(e))).toBe(0)
   })
 })
 

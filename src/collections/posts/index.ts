@@ -15,7 +15,7 @@ import { tenantScopedPostsReadAccess } from '@/access/collections/shared/tenantS
 import { documentPreviewAdmin } from '@/utilities/shareds'
 import { defaultVersionedDrafts } from '@/utilities/shareds'
 import { codeLanguages, documentFeatures } from '@/utilities/default/lexical'
-import { Banner, Code, MediaBlock } from '@/blocks/config'
+import { Affect, Banner, Code, MediaBlock } from '@/blocks/config'
 import { postsBeforeChange } from '@/utilities/posts/hooks'
 import { populateAuthors } from '@/utilities/posts/hooks'
 import { revalidateDelete, revalidatePost } from '@/utilities/posts/hooks'
@@ -103,7 +103,7 @@ export const Posts: CollectionConfig = {
                     ...rootFeatures,
                     HeadingFeature({ enabledHeadingSizes: ['h1', 'h2', 'h3', 'h4'] }),
                     ...documentFeatures(),
-                    BlocksFeature({ blocks: [Banner, Code, MediaBlock, CodeBlock({ slug: 'Fence', languages: codeLanguages(), defaultLanguage: 'plaintext' })] }),
+                    BlocksFeature({ blocks: [Affect, Banner, Code, MediaBlock, CodeBlock({ slug: 'Fence', languages: codeLanguages(), defaultLanguage: 'plaintext' })] }),
                     FixedToolbarFeature(),
                     InlineToolbarFeature(),
                     HorizontalRuleFeature(),
