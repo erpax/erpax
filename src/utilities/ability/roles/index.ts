@@ -86,9 +86,11 @@ export const abilityForRoles = ({ roles, employeeId }: AbilityContext): Ability 
     // Governed document types are read and written by the roles each names (src/utilities/governed),
     // never by the broad rules above: `user` reads all and `admin` manages all would hand every
     // user every audit document. A later rule wins, so narrow first, then grant what the type names.
+    // Each type is a condition on `pages` (the documents are pages), so a role held through an app's
+    // group — kept to the app's collections and its tenant — reaches it too.
     for (const type of GOVERNED_TYPES) {
-      cannot('manage', type.value)
-      if (type.read.some(has)) can('read', type.value)
-      if (type.write.some(has)) can('manage', type.value)
+      cannot('manage', 'pages', { documentType: type.value })
+      if (type.read.some(has)) can('read', 'pages', { documentType: type.value })
+      if (type.write.some(has)) can('manage', 'pages', { documentType: type.value })
     }
   })
