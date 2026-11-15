@@ -1,5 +1,7 @@
 /-
   Cross — the corpus's claims, composed. A theorem that holds only inside its own file proves a
+
+  Clay: none
   fragment; what a reader needs is that the fragments CHAIN.
 
   Four files decide things that feed each other, and until now each was proved alone:

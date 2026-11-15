@@ -1,6 +1,8 @@
 /-
   Uuid — the v8 layout is a partition, and the sixteen program bits round-trip in both directions.
 
+  Clay: none
+
   The twin is encodeStructured / decodeStructured in src/uuid/format. A uuid there is not a handle
   to a record: its 128 bits ARE the record, read back with no side-table.
 

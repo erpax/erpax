@@ -4,7 +4,7 @@ import type { PayloadRequest } from 'payload'
 import { errorText, gapOf, recordGap } from '@/plugins/mcp/gap'
 
 const requestFor = (user: unknown) => {
-  const create = vi.fn(async () => ({}))
+  const create = vi.fn(async () => ({ id: 'mem-1' }))
   const warn = vi.fn()
   const req = { user, payload: { create, logger: { warn } } } as unknown as PayloadRequest
   return { req, create, warn }
@@ -29,6 +29,13 @@ describe('gap — a failed MCP call becomes an emerging_gap memory', () => {
         collection: 'memories',
         overrideAccess: true,
         data: expect.objectContaining({ kind: 'emerging_gap', ownerType: 'agent', ownerId: 'agent-1', key: 'findDocuments', tenant: 'tenant-1' }),
+      }),
+    )
+    // awareness: the gap is broadcast to the tenant's chat room
+    expect(create).toHaveBeenCalledWith(
+      expect.objectContaining({
+        collection: 'chat',
+        data: expect.objectContaining({ event: 'gap:recorded', aggregateId: 'mem-1', agent: 'agent-1', tenant: 'tenant-1' }),
       }),
     )
   })

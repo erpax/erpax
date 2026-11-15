@@ -1,6 +1,8 @@
 /-
   Coil — coins in trinities; one rotation each way covers every cross.
 
+  Clay: none
+
   The twin is src/quantum/coil. A COIN is a two-faced thing — a law and its dual, a claim and its
   involution. A COIL is coins arranged in a ring and rotated: one step forward crosses each coin
   with its successor, one step backward with its predecessor. The question the twin computes is

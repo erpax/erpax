@@ -1,6 +1,8 @@
 /-
   Stream — the payloadless wire shape, and the one property a reader may rely on.
 
+  Clay: none
+
       <handle>-<hex>-<hex>-<hex>-<hex>-<message>
 
   The four hex groups plus the handle ARE a uuid (8-4-4-4-12), so the address is not a pointer

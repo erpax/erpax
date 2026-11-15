@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { CLAY, FOUNDATION, INVENTORY, KERNEL, STANDARD_AXIOMS, UNBACKED, journalOf, trialBalance, claySettled, clayTags, clayWitnesses, linkOf, parseAxiomReport, onForeignAxiom, proofCensus, proved } from '@/utilities/verify/inventory'
+import { CLAY, FOUNDATION, axiomViolations, clayDeclarationErrors, readmeClayErrors, witnessCell, INVENTORY, KERNEL, STANDARD_AXIOMS, UNBACKED, journalOf, trialBalance, claySettled, clayTags, clayWitnesses, linkOf, parseAxiomReport, onForeignAxiom, proofCensus, proved } from '@/utilities/verify/inventory'
 
 describe('verify/inventory — the kernel is quoted, never paraphrased', () => {
   const out = [
@@ -57,6 +57,16 @@ describe('verify/inventory — the kernel is quoted, never paraphrased', () => {
     expect(tb.credits[UNBACKED]).toBeUndefined()
   })
 
+  it('gates axioms: a new theorem on any axiom, or an old one on more, fails; debt may shrink; witnesses pass', () => {
+    const rec = (entries: Array<[string, string[]]>) => ({ files: [{ file: 'X.lean', compiled: true, entries: entries.map(([theorem, axioms]) => ({ theorem, axioms, axiomFree: axioms.length === 0, stubbed: false })) }] })
+    const base = rec([['X.old', ['propext']], ['X.free', []]])
+    expect(axiomViolations(base, rec([['X.old', ['propext']], ['X.free', []]]))).toEqual([])
+    expect(axiomViolations(base, rec([['X.old', []]]))).toEqual([])
+    expect(axiomViolations(base, rec([['X.new', ['propext']]]))).toEqual([{ theorem: 'X.new', axioms: ['propext'] }])
+    expect(axiomViolations(base, rec([['X.free', ['Quot.sound']]]))).toEqual([{ theorem: 'X.free', axioms: ['Quot.sound'] }])
+    expect(axiomViolations(base, rec([[FOUNDATION.propext.witness, ['propext']]]))).toEqual([])
+  })
+
   it("an axiom outside Lean's foundation is never counted as proved", () => {
     const e = parseAxiomReport("'X.t' depends on axioms: [propext, X.myAxiom]")
     expect(onForeignAxiom(e[0]!)).toBe(true)
@@ -70,11 +80,26 @@ describe('verify/inventory — what the kernel has checked ABOUT the Clay proble
   const sources = Object.fromEntries(readdirSync(dir).filter((f) => f.endsWith('.lean')).map((f) => [f, readFileSync(join(dir, f), 'utf8')]))
   const witnesses = clayWitnesses(INVENTORY, sources)
 
-  it('Riemann has one declared witness: an obstruction, from Symmetry.lean, compiled, no stub', () => {
+  it('Riemann has two declared witnesses, both obstructions: Symmetry.lean on the strip, Harmonic.lean on finite carriers', () => {
     const riemann = witnesses.filter((w) => w.problem === 'riemann')
-    expect(riemann).toHaveLength(1)
-    expect(riemann[0]).toMatchObject({ kind: 'meta', file: 'Symmetry.lean', compiled: true, stubbed: 0 })
-    expect(riemann[0]!.theorems).toBeGreaterThanOrEqual(9)
+    expect(riemann.map((w) => w.file).sort()).toEqual(['Harmonic.lean', 'Symmetry.lean'])
+    for (const w of riemann) expect(w).toMatchObject({ kind: 'meta', compiled: true, stubbed: 0 })
+    expect(riemann.find((w) => w.file === 'Symmetry.lean')!.theorems).toBeGreaterThanOrEqual(9)
+  })
+
+  it('the README states and links what the kernel checked — and goes red when it drifts', () => {
+    const readme = readFileSync(join(import.meta.dirname, '..', '..', '..', '..', 'README.md'), 'utf8')
+    expect(readmeClayErrors(readme, witnesses, INVENTORY)).toEqual([])
+    expect(witnessCell(witnesses, 'riemann')).toContain('](src/utilities/verify/lean/Symmetry.lean)')
+    const drifted = readme.replace('[`Harmonic.lean`](src/utilities/verify/lean/Harmonic.lean) — `meta`, 12 theorems, 0 stubbed · ', '')
+    expect(readmeClayErrors(drifted, witnesses, INVENTORY).length).toBeGreaterThan(0)
+  })
+
+  it('every Lean file declares what it says about the Clay problems, with no unknown problem or kind', () => {
+    expect(clayDeclarationErrors(sources)).toEqual([])
+    expect(clayDeclarationErrors({ 'X.lean': '/- nothing declared -/' })).toHaveLength(1)
+    expect(clayDeclarationErrors({ 'X.lean': '  Clay: none\n  Clay: riemann meta' })).toHaveLength(1)
+    expect(clayDeclarationErrors({ 'X.lean': '  Clay: fermat meta' })).toHaveLength(1)
   })
 
   it('the other six problems have no Lean witness at all', () => {
@@ -118,20 +143,8 @@ describe('verify/inventory — the README states what the kernel says, or it goe
   const witnesses = clayWitnesses(INVENTORY, sources)
   const c = INVENTORY.census
 
-  it('quotes the sealed census, file count and sources hash', () => {
-    const line = `Kernel report sealed ${INVENTORY.sealedAt}: ${c.theorems} theorems, ${c.axiomFree} axiom-free, ${c.standardAxioms} on Lean's three standard axioms, ${c.stubbed} stubbed, ${INVENTORY.files.length} files, sources \`${INVENTORY.sourcesHash}\`.`
-    expect(readme, `README's Clay section is stale; it must contain:\n${line}`).toContain(line)
-  })
-
-  it('states each problem\'s witnesses as the code counts them', () => {
-    const riemann = witnesses.find((w) => w.problem === 'riemann')!
-    const row = `\`${riemann.file}\` — \`${riemann.kind}\`, ${riemann.theorems} theorems, ${riemann.stubbed} stubbed`
-    expect(readme, `README's Riemann row is stale; it must contain:\n${row}`).toContain(row)
-  })
-
-  it('says nothing is settled exactly when claySettled is empty', () => {
-    const settled = claySettled(witnesses)
-    expect(readme.includes('Settled by this corpus: **none**'), `claySettled = ${JSON.stringify(settled)}`).toBe(settled.length === 0)
+  it('quotes the sealed census, links each witness and states the settled list, as the gate computes them', () => {
+    expect(readmeClayErrors(readme, witnesses, INVENTORY)).toEqual([])
   })
 
   it('no longer names the removed millennium code', () => {

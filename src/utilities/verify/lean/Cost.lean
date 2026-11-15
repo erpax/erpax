@@ -1,6 +1,8 @@
 /-
   Cost — the tamper margin, stated against NIST's ladder instead of a folk rule.
 
+  Clay: none
+
   The claim is economic: VERIFYING a record is one hash, FORGING one is a search. This file fixes
   the exponents so the gap can be argued with by an auditor rather than admired.
 

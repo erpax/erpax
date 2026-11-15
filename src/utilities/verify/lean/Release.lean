@@ -1,6 +1,8 @@
 /-
   Release — a green landing is released exactly when four facts hold, and at most once a day.
 
+  Clay: none
+
   The twin is releaseDecision in src/arrival, the decision the landing lane runs before it tags a
   version. It is not a judgement typed into code: it is this conjunction, and every refusal it
   makes is a theorem below.

@@ -49,9 +49,24 @@ export const gapOf = (args: {
 }
 
 /**
+ * Awareness (Observer.lean, the global-workspace model): the recorded gap enters the tenant's workspace,
+ * its `chat` room, so every agent in the tenant holds it — the `chat` row each agent reads.
+ */
+export const broadcastOf = (memoryId: string | number, gap: ReturnType<typeof gapOf>): RequiredDataFromCollectionSlug<'chat'> => ({
+  event: 'gap:recorded',
+  eventUuid: crypto.randomUUID(),
+  aggregateId: String(memoryId),
+  agent: gap.ownerId,
+  payload: gap.payload,
+  emittedAt: gap.recordedAt,
+  ...(gap.tenant ? { tenant: gap.tenant } : {}),
+})
+
+/**
  * `hooks.afterToolCall`, as the affect loop: the response is FELT (pleasant when it succeeded), its
- * error text is the THOUGHT that reads it, and the EMOTION — the episode with a push — records the gap.
- * A pleasant feeling has nothing to push, so the response passes on unchanged.
+ * error text is the THOUGHT that reads it, the EMOTION — the episode with a push — records the gap, and
+ * AWARENESS broadcasts it to the tenant's chat room. A pleasant feeling has nothing to push, so the
+ * response passes on unchanged.
  */
 export const recordGap = async <R extends ToolResponse>(args: {
   input: unknown
@@ -62,7 +77,9 @@ export const recordGap = async <R extends ToolResponse>(args: {
   const felt = feel(!args.response.isError)
   if (felt.pleasant) return args.response
   try {
-    await args.req.payload.create({ collection: 'memories', data: gapOf(args) as RequiredDataFromCollectionSlug<'memories'>, overrideAccess: true, req: args.req })
+    const gap = gapOf(args)
+    const memory = await args.req.payload.create({ collection: 'memories', data: gap as RequiredDataFromCollectionSlug<'memories'>, overrideAccess: true, req: args.req })
+    await args.req.payload.create({ collection: 'chat', data: broadcastOf(memory.id, gap), overrideAccess: true, req: args.req })
   } catch (error) {
     args.req.payload.logger.warn({ err: error, msg: `[mcp] could not record the gap for ${args.toolName}` })
   }

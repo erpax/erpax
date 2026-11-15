@@ -1,11 +1,11 @@
 {
   "sealedAt": "2026-11-15",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "0a12f1301e503a4e",
+  "sourcesHash": "54e9d0887d305500",
   "census": {
-    "theorems": 321,
-    "axiomFree": 223,
-    "standardAxioms": 98,
+    "theorems": 326,
+    "axiomFree": 230,
+    "standardAxioms": 96,
     "stubbed": 0
   },
   "files": [
@@ -1691,22 +1691,20 @@
         },
         {
           "theorem": "Observer.rotate_three",
-          "axioms": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Observer.triple_eq_zero",
+          "axioms": [],
+          "axiomFree": true,
           "stubbed": false
         },
         {
           "theorem": "Observer.rotate_fixed_iff",
-          "axioms": [
-            "propext",
-            "Classical.choice",
-            "Quot.sound"
-          ],
-          "axiomFree": false,
+          "axioms": [],
+          "axiomFree": true,
           "stubbed": false
         },
         {
@@ -1723,6 +1721,30 @@
         },
         {
           "theorem": "Observer.no_complete_self_model",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Observer.aware_available",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Observer.broadcast_idempotent",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Observer.broadcast_keeps_awareness",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Observer.aware_of_feeling",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false

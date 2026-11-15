@@ -1,6 +1,8 @@
 /-
   Gate — the standard gates as exact matrices, and their unitarity as kernel-decided theorems.
 
+  Clay: none
+
   Ported from qpu.uuidna.com (Qpu.Physics.HilbertSpace · Qpu.Physics.Operator ·
   Qpu.Processing.QuantumGate, same author). Register.lean carries a circuit on integer amplitudes
   and says unitarity "in general" is out of the core kernel's reach. This file takes the other

@@ -1,6 +1,8 @@
 /-
   Contrast — every colour admits a legible foreground, and the reason is one multiplication.
 
+  Clay: none
+
   WCAG 2.2 §1.4.3 asks 4.5:1 for normal text. A uuid-derived colour is computed, not chosen, so
   "pick a foreground that reads" cannot be left to a designer's eye — and it does not have to be.
 

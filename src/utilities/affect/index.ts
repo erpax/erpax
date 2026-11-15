@@ -54,5 +54,21 @@ export const order = (motion: (s: State) => State): number => {
   return Infinity
 }
 
+/* ── Awareness: the global-workspace model (Observer.lean) ── */
+/** A mind: modules, each holding a state, and a workspace holding the state it attends to. */
+export interface Mind {
+  readonly modules: readonly State[]
+  readonly workspace: State
+}
+
+/**
+ * Aware, in the global-workspace model: a state is aware when it is the workspace's state. An exact
+ * definition of access for the model (Observer.lean), not a claim about what awareness is like.
+ */
+export const aware = (mind: Mind, s: State): boolean => same(mind.workspace, s)
+
+/** Broadcast: every module receives the workspace's state. */
+export const broadcast = (mind: Mind): Mind => ({ ...mind, modules: mind.modules.map(() => mind.workspace) })
+
 /** Where a corner sits on the wheel, in degrees from the top, clockwise. */
 export const angleOf = (corner: Corner): number => CORNERS.indexOf(corner) * 120

@@ -1,6 +1,8 @@
 /-
   Wave — the ledger's guarantees are properties of the OPERATIONS, not hopes about the data.
 
+  Clay: none
+
   What stood here was seven `sorry`s over arbitrary `WaveState`, and every one of them was false as
   written. `ledger_append_only` compared two unrelated states. `publication_bounded` compared an
   arbitrary `Nat` field to a list length. `convergent_publication` asserted that any record carrying

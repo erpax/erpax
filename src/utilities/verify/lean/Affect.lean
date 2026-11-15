@@ -1,6 +1,8 @@
 /-
   Affect — feeling, thought and emotion as a trinity, and the two groups it can mean.
 
+  Clay: none
+
   The twin is src/utilities/affect.
 
   The model (a lens, not a law of mind): three corners run in a loop.

@@ -91,9 +91,13 @@ jobs:
         run: |
           curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain "$(cat lean-toolchain)"
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
-      # The kernel must accept every file in src/utilities/verify/lean with no sorry, and the committed
-      # inventory must be what it reports.
-      - run: ./node_modules/.bin/tsx src/utilities/verify/inventory/index.ts --check
+      # The kernel must accept every file in src/utilities/verify/lean with no sorry, the committed
+      # inventory must be what it reports, and no theorem may rest on an axiom it did not rest on in
+      # main's record (new theorems are axiom-free; existing axiom debt may only shrink).
+      - run: |
+          git fetch --depth=1 origin main
+          git show origin/main:src/utilities/verify/lean/inventory.generated.json > "$RUNNER_TEMP/base-inventory.json"
+          ./node_modules/.bin/tsx src/utilities/verify/inventory/index.ts --check --base "$RUNNER_TEMP/base-inventory.json"
 
   migrations:
     name: Migrations

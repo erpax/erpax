@@ -1,6 +1,8 @@
 /-
   Hexbit — the two cross formulas that replace the hexit loops, and the bounds that make them exact.
 
+  Clay: none
+
   The twin is src/quantum/hexbit. A hexit digit-sum used to walk 32 nibbles; the cross formula folds
   neighbouring nibbles into bytes and multiplies once by 0x01010101, which sums the four bytes into
   the top byte. That multiply is exact only while nothing carries out of a byte — two bounds, decided

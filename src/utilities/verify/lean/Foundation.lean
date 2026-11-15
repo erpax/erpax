@@ -1,6 +1,8 @@
 /-
   Foundation — what each of Lean's three axioms means, certified by the kernel.
 
+  Clay: none
+
   The twin is src/utilities/verify/inventory (FOUNDATION, linkOf).
 
   Every theorem in the record is checked by the kernel. A theorem is AXIOM-FREE when the kernel's own

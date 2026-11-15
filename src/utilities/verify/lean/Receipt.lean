@@ -1,6 +1,8 @@
 /-
   Receipt — WHEN a sealed verdict is cheaper than the answer, and when it is not.
 
+  Clay: none
+
   This corpus states "VERIFY BEATS RECOMPUTE" unconditionally: a verdict is a function of its
   inputs, so seal it against a content address and reuse it while the address stands. The discipline
   is right and the slogan is not: reusing a verdict costs an ADDRESS on every run, and an address

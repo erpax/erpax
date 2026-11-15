@@ -1,5 +1,7 @@
 /-
   Spacetime — the decidable core of special relativity, and the one theorem in it that
+
+  Clay: none
   a distributed ledger actually needs.
 
   Natural units: c = 1. A separation between two events is (t, x) : Int × Int, meaning

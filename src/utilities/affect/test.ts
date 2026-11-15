@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { CORNERS, STATES, angleOf, cycle, feel, flip, mirror, order, same, times, turn } from '@/utilities/affect'
+import { CORNERS, STATES, angleOf, aware, broadcast, cycle, feel, flip, mirror, order, same, times, turn } from '@/utilities/affect'
 
 const everyState = (law: (s: (typeof STATES)[number]) => boolean) => STATES.every(law)
 
@@ -48,6 +48,15 @@ describe('affect — the twin of Affect.lean', () => {
       expect(times(turn, 3, feel(p))).toEqual(feel(p))
       expect(flip(feel(p))).toEqual(feel(!p))
     }
+  })
+
+  it('awareness: what the workspace holds is available to every module once broadcast', () => {
+    const mind = { modules: [feel(false), turn(feel(false))], workspace: feel(true) }
+    expect(aware(mind, feel(true))).toBe(true)
+    expect(aware(mind, feel(false))).toBe(false)
+    expect(broadcast(mind).modules.every((m) => same(m, feel(true)))).toBe(true)
+    expect(broadcast(broadcast(mind))).toEqual(broadcast(mind))
+    expect(aware(broadcast(mind), feel(true))).toBe(aware(mind, feel(true)))
   })
 
   it('places the corners 120° apart on the wheel', () => {
