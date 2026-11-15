@@ -1,4 +1,4 @@
-# Lint · typecheck · tests · Playwright UI · production build — a Payload app's checks, nothing else.
+# Lint · typecheck · tests · Playwright UI · migrations · production build — a Payload app's checks, nothing else.
 name: CI
 
 on:
@@ -79,6 +79,27 @@ jobs:
           name: playwright-report
           path: playwright-report
           retention-days: 7
+
+  migrations:
+    name: Migrations
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PAYLOAD_SECRET: test-secret-not-for-production-32-characters
+      PAYLOAD_DEV_PUSH: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      # The history builds a database from empty (a local D1), and the schema has no change it does
+      # not migrate: migrate:create --skip-empty must write nothing.
+      - run: pnpm -s payload migrate --force-accept-warning
+      - run: |
+          pnpm -s payload:migrate:create drift --skip-empty
+          if [ -n "$(git status --porcelain src/migrations)" ]; then
+            git status --porcelain src/migrations
+            echo "::error::the schema has a change no migration covers — run pnpm payload:migrate:create"
+            exit 1
+          fi
 
   build:
     name: Production build (lean)

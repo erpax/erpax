@@ -44,8 +44,8 @@
   "d1_databases": [
     {
       "binding": "D1",
-      "database_id": "2971cdd6-8126-4d7f-b753-16a55d5f7968",
-      "database_name": "erpax",
+      "database_id": "47fe48fd-1b6c-4978-95b0-f0c0a9ca6834",
+      "database_name": "erpax-v4",
       "remote": true,
     },
   ],
