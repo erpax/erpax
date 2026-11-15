@@ -72,6 +72,7 @@
  * @audit ISO-19011:2018 audit-trail
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  */
+import { randomUuid } from '@/utilities/crypto'
 import type { CollectionAfterChangeHook, CollectionBeforeValidateHook, Field, Option } from 'payload'
 import type { CollectionOverride } from '@payloadcms/plugin-ecommerce/types'
 
@@ -401,7 +402,7 @@ const accessTokenField: Field = {
   index: true,
   admin: { position: 'sidebar', readOnly: true },
   hooks: {
-    beforeValidate: [({ value, operation }) => (operation === 'create' || !value ? crypto.randomUUID() : value)],
+    beforeValidate: [({ value, operation }) => (operation === 'create' || !value ? randomUuid() : value)],
   },
 }
 

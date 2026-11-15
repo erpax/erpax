@@ -30,6 +30,7 @@
  * @see ./bg-nap-mtls.ts (shares the qualified-seal cert)
  */
 
+import { sha256Hex } from '@/utilities/crypto'
 import {
   buildPadesSignatureDictionary,
   type PadesSignatureDictionary,
@@ -170,8 +171,7 @@ export async function signBgPadesPdf(
 
   // Slice OOO: build the audit envelope the EvidenceAttestations row needs
   // so the eIDAS Art.28 evidence stays retrievable from a single DB query.
-  const cryptoModule = await import('node:crypto')
-  const digest = cryptoModule.createHash('sha256').update(bytesToSign).digest('hex')
+  const digest = sha256Hex(bytesToSign)
   const signedBy = extractCertSubject(config.certPem)
 
   return ok('BG PAdES signer', {

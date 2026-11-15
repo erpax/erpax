@@ -89,7 +89,7 @@ export interface AuditTrailContext {
  * @audit ISO-19011:2018 §6.4.6 audit-evidence
  */
 export interface AuditEntry {
-  /** Stable unique id (UUID v4). Use `crypto.randomUUID()` or `uuid()`. */
+  /** Stable unique id (UUID v4). Use `randomUuid()` from `@/utilities/crypto`. */
   id: string
   /**
    * ISO 8601 timestamp the event occurred. Stored as ISO string for

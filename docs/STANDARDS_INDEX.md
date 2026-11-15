@@ -812,7 +812,7 @@ src/hooks/collections/sale/validateReferenceHook.test.ts:5: * @standard ISO/IEC-
 src/hooks/collections/sale/validateReferenceHook.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature
 src/hooks/collections/sale/validateReferenceHook.ts:13: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature
 src/hooks/collections/shared/auditTrailAfterChange.ts:21: * @standard rfc-9562 uuid event-id
-src/hooks/collections/shared/auditTrailAfterChange.ts:39: * @standard NIST FIPS-180-4 sha-256
+src/hooks/collections/shared/auditTrailAfterChange.ts:40: * @standard NIST FIPS-180-4 sha-256
 src/hooks/collections/shared/autoSetTimestamp.ts:7: * @standard ISO-8601-1:2019 date-time utc-canonical
 src/hooks/collections/shared/bankStatementImportedHook.ts:21: * @standard ISO-20022 camt.053 bank-to-customer-statement
 src/hooks/collections/shared/bankStatementImportedHook.ts:22: * @standard ISO-13616-1:2020 iban
@@ -1042,8 +1042,8 @@ src/utilities/country/client/bg-pades-signer.ts:21: * @standard ETSI-EN-319-142-
 src/utilities/country/client/bg-pades-signer.ts:22: * @standard ISO-32000-1:2008 §12.8 pdf-signature-dictionary
 src/utilities/country/client/bg-pades-signer.ts:23: * @standard rfc-5652 cms-detached-signature
 src/utilities/country/client/bg-pades-signer.ts:24: * @standard ISO-3166-1:2020 BG country-code
-src/utilities/country/client/bg-pades-signer.ts:92: * @standard rfc-5652 cms-detached-signature
-src/utilities/country/client/bg-pades-signer.ts:93: * @standard NIST FIPS-180-4 sha-256 message-digest
+src/utilities/country/client/bg-pades-signer.ts:93: * @standard rfc-5652 cms-detached-signature
+src/utilities/country/client/bg-pades-signer.ts:94: * @standard NIST FIPS-180-4 sha-256 message-digest
 src/utilities/country/client/bg-vat.ts:14: * @standard ISO-3166-1:2020 BG country-code
 src/utilities/country/client/bg-vat.ts:15: * @standard ISO-4217:2015 currency-codes
 src/utilities/country/client/bg-vat.ts:16: * @standard EN-16931:2017 §BG-23 invoice-line-tax-category
@@ -1056,6 +1056,8 @@ src/utilities/country/client/sign-cms-node.ts:19: * @standard ETSI-EN-319-142-1 
 src/utilities/country/context/index.ts:28: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
 src/utilities/cross/index.ts:16: * @standard NIST INCITS-359 role-based-access-control
 src/utilities/cross/index.ts:17: * @standard ISO 27002 §5.15 access-control + §5.3 segregation-of-duties
+src/utilities/crypto/index.ts:10: * @standard FIPS 198-1 HMAC
+src/utilities/crypto/index.ts:9: * @standard FIPS 180-4 SHA-256
 src/utilities/currency/reconciliation/index.ts:15: * @standard ISO-4217:2023 (currency codes, decimal places)
 src/utilities/currency/reconciliation/index.ts:16: * @standard IFRS-21:2023 (translation of foreign operations)
 src/utilities/currency/reconciliation/index.ts:17: * @standard IFRS-9:2023 (foreign exchange gains/losses)
@@ -1391,8 +1393,8 @@ src/utilities/nist/sp/800/38/aes-gcm.test.ts:6: * @standard NIST FIPS-197 aes-25
 src/utilities/nist/sp/800/38/aes-gcm.ts:10: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/utilities/nist/sp/800/38/aes-gcm.ts:11: * @standard NIST FIPS-197 aes-256
 src/utilities/nist/sp/800/38/aes-gcm.ts:12: * @standard NIST FIPS-180-4 sha-256
-src/utilities/nist/sp/800/38/aes-gcm.ts:54: * @standard NIST SP-800-38D §6 ghash + §7.1 encrypt
-src/utilities/nist/sp/800/38/aes-gcm.ts:88: * @standard NIST SP-800-38D §7.2 decrypt-and-verify
+src/utilities/nist/sp/800/38/aes-gcm.ts:55: * @standard NIST SP-800-38D §6 ghash + §7.1 encrypt
+src/utilities/nist/sp/800/38/aes-gcm.ts:89: * @standard NIST SP-800-38D §7.2 decrypt-and-verify
 src/utilities/nist/sp/800/38/index.ts:4: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/utilities/notification/index.ts:17: * @standard rfc-5321 simple-mail-transfer-protocol
 src/utilities/notification/index.ts:18: * @standard rfc-5322 internet-message-format
@@ -1918,6 +1920,8 @@ src/utilities/billing/test.ts:7: * @rfc 8615 well-known-uri webhook-discovery
 src/utilities/cmspage/hooks/beforeChange.ts:10: * @rfc 3986 uri remote-media-source
 src/utilities/country/client/berlin-group-psd2.ts:16: * @rfc 6749 oauth-2.0
 src/utilities/country/client/berlin-group-psd2.ts:17: * @rfc 7519 jwt
+src/utilities/crypto/index.ts:11: * @rfc 9562 §5.8 uuidv8 content-uuid · §4.1 variant
+src/utilities/crypto/index.ts:12: * @rfc 8018 §5.2 PBKDF2
 src/utilities/default/lexical/index.ts:6: * @rfc 3986 uniform-resource-identifier link-fields
 src/utilities/email/cloudflare/index.ts:15: * @rfc 5321 smtp envelope
 src/utilities/email/cloudflare/index.ts:16: * @rfc 5322 internet-message-format
@@ -2418,7 +2422,7 @@ src/utilities/country/client/bg-nap-mtls.ts:123: * @compliance EU 2014/55 b2g-e-
 src/utilities/country/client/bg-nap-mtls.ts:18: * @compliance EU 910/2014 eidas qualified-electronic-seal
 src/utilities/country/client/bg-nap-mtls.ts:19: * @compliance SOX §404 internal-controls process-walk-through
 src/utilities/country/client/bg-pades-signer.ts:26: * @compliance EU 910/2014 eidas qualified-electronic-signature
-src/utilities/country/client/bg-pades-signer.ts:94: * @compliance EU 910/2014 eidas Art.28 qualified-seal evidence
+src/utilities/country/client/bg-pades-signer.ts:95: * @compliance EU 910/2014 eidas Art.28 qualified-seal evidence
 src/utilities/country/client/bg-vat.ts:18: * @compliance EU 2006/112/EC vat-system-directive
 src/utilities/country/client/sign-cms-node.ts:23: * @compliance EU 910/2014 eidas qualified-electronic-signature
 src/utilities/country/context/index.ts:30: * @compliance EU 2014/55 b2g-e-invoicing-mandate-resolution
@@ -3324,6 +3328,7 @@ src/utilities/country/client/bg-pades-signer.ts:27: * @security ISO-27001 A.5.16
 src/utilities/country/client/bg-pades-signer.ts:28: * @security ISO-27001 A.8.24 use-of-cryptography
 src/utilities/country/client/sign-cms-node.ts:21: * @security ISO-27001 A.5.16 identity-management
 src/utilities/country/client/sign-cms-node.ts:22: * @security ISO-27001 A.8.24 use-of-cryptography
+src/utilities/crypto/index.ts:13: * @security NIST SP-800-132 password-based-key-derivation
 src/utilities/fetch/remote/file/index.ts:13: * @security ISO-27002 §8.23 web-filtering
 src/utilities/get/preview/secret/index.ts:7: * @security ISO-27002 §5.17 authentication-information secret-management
 src/utilities/get/tenant/from/request/index.ts:7: * @security ISO-27001 A.5.18 access-rights

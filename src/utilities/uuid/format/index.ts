@@ -71,7 +71,7 @@
  * @see ../uuid-chain/index.ts (ChainLink — leaves can be structured)
  */
 
-import { createHash } from 'node:crypto'
+import { sha256 } from '@/utilities/crypto'
 
 /**
  * RFC 9562 §5.9 **Nil UUID** — the all-zeroes identity element. The
@@ -219,7 +219,7 @@ export function encodeStructured(args: {
     schemaVersion,
     content,
   })
-  const digest = new Uint8Array(createHash('sha256').update(json).digest())
+  const digest = new Uint8Array(sha256(json))
 
   // Build the 16-byte uuid.
   const b = new Uint8Array(16)

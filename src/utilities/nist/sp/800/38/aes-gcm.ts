@@ -18,6 +18,7 @@
  * @see docs/STANDARDS.md §4.4
  */
 
+import { randomBytes } from '@/utilities/crypto'
 import crypto from 'crypto'
 
 import { deriveSecretFromPayloadSecret, internalSecretPurpose } from '@/utilities/nist/sp/800/108'
@@ -63,7 +64,7 @@ export function encryptField(plaintext: string | null | undefined): string | nul
 
   try {
     const key = getEncryptionKey()
-    const iv = crypto.randomBytes(IV_LENGTH)
+    const iv = randomBytes(IV_LENGTH)
     const cipher = crypto.createCipheriv(ALGORITHM, key, iv)
 
     let encrypted = cipher.update(plaintext, 'utf8', ENCODING)
@@ -191,5 +192,5 @@ export function decryptFields<T extends Record<string, unknown>>(
  * Generate an encryption key (run once, store in `.env`).
  */
 export function generateEncryptionKey(): string {
-  return crypto.randomBytes(32).toString('base64')
+  return randomBytes(32).toString('base64')
 }

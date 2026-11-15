@@ -18,7 +18,7 @@
  * @see docs/STANDARDS.md §4.4
  */
 
-import { createHmac } from 'node:crypto'
+import { hmacSha256 } from '@/utilities/crypto'
 import { orbit } from '@/utilities/rodin'
 import { exactMax, exactTrunc } from '@/utilities/algebra'
 
@@ -58,7 +58,7 @@ export function deriveSecretFromPayloadSecret(purpose: string): string {
  */
 export function deriveSecretFrom(master: string | undefined, purpose: string): string {
   if (!master) return ''
-  return createHmac('sha256', master).update(DERIVED_V1 + purpose).digest('hex')
+  return hmacSha256(master, DERIVED_V1 + purpose).toString('hex')
 }
 
 // ─── horo-dance key rotation ─────────────────────────────────────────────────

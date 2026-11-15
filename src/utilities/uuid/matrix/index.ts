@@ -15,7 +15,7 @@
  *
  * @see ./matrix.generated.ts (the data) · ./collide.mjs (the collider) · ./gate.ts (the 4-seal lane)
  */
-import { createHash } from 'node:crypto'
+import { cross, uuidBytes } from '@/utilities/crypto'
 import { existsSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 // `norm` is a trivial pure normaliser; importing it from `@/utilities/corpus` dragged the fs-based dev corpus
@@ -49,14 +49,8 @@ export type { MatrixNode, MatrixEdge }
  *
  * @standard RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant
  */
-export const toUuid = (buf: Buffer): string => {
-  const b = Buffer.from(createHash('sha256').update(buf).digest().subarray(0, 16))
-  b[6] = (b[6]! & 0x0f) | 0x80 // version 8
-  b[8] = (b[8]! & 0x3f) | 0x80 // variant 10x
-  const x = b.toString('hex')
-  return `${x.slice(0, 8)}-${x.slice(8, 12)}-${x.slice(12, 16)}-${x.slice(16, 20)}-${x.slice(20)}`
-}
-const ubytes = (u: string): Buffer => Buffer.from(u.replace(/-/g, ''), 'hex')
+export const toUuid = (buf: Buffer): string => cross(buf)
+const ubytes = uuidBytes
 /** Collision: two uuids → a third (concat their 16 bytes, content-hash). */
 export const merge = (a: string, b: string): string => toUuid(Buffer.concat([ubytes(a), ubytes(b)]))
 

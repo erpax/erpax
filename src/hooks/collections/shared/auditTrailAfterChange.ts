@@ -27,6 +27,7 @@
  * @see docs/STANDARDS.md §4.4
  */
 
+import { sha256Hex } from '@/utilities/crypto'
 import type { CollectionAfterChangeHook } from 'payload'
 import { v4 as uuid } from 'uuid'
 import type { AuditEntry, AuditOperation } from '@/utilities/iso/19011'
@@ -38,13 +39,6 @@ import type { AuditEntry, AuditOperation } from '@/utilities/iso/19011'
  *
  * @standard NIST FIPS-180-4 sha-256
  */
-async function sha256Hex(input: string): Promise<string> {
-  const enc = new TextEncoder().encode(input)
-  const digest = await crypto.subtle.digest('SHA-256', enc)
-  return Array.from(new Uint8Array(digest))
-    .map((b) => b.toString(16).padStart(2, '0'))
-    .join('')
-}
 
 const tenantOf = (doc: unknown): string | number | null => {
   if (!doc || typeof doc !== 'object') return null
@@ -126,7 +120,7 @@ export function auditTrailAfterChange(
           user: entry.userId === null ? null : String(entry.userId),
           previousHash,
         })
-        const rowHash = await sha256Hex(canonical)
+        const rowHash = sha256Hex(canonical)
         await req.payload.create({
           collection: 'audit-events',
           overrideAccess: true,

@@ -47,7 +47,7 @@
  * @compliance SOX §404 internal-controls (Byzantine tamper detection)
  */
 
-import { createHash } from 'node:crypto'
+import { sha256, uuidV8 } from '@/utilities/crypto'
 import { encodeStructured, SLOT_TAGS, CAPABILITIES } from '@/utilities/uuid/format'
 
 /**
@@ -112,22 +112,6 @@ export function stripNonContentFields<T extends Record<string, unknown>>(obj: T)
 }
 
 /**
- * Format 16 raw bytes as a canonical UUID string (8-4-4-4-12).
- * Caller is responsible for setting the version + variant bits
- * (RFC 9562 §4.1 variant, §5.8 version).
- */
-function bytesToUuidString(bytes: Buffer): string {
-  const hex = bytes.toString('hex')
-  return [
-    hex.slice(0, 8),
-    hex.slice(8, 12),
-    hex.slice(12, 16),
-    hex.slice(16, 20),
-    hex.slice(20, 32),
-  ].join('-')
-}
-
-/**
  * The raw SHA-256 (FIPS 180-4) over (namespace ∥ name) — the shared root of
  * both projections. `nameUuid` truncates its first 16 bytes to a 128-bit uuid
  * (≈106 binding bits after the version/variant stamp); `nameDigest` keeps all
@@ -137,7 +121,7 @@ function nameHashBytes(namespaceUuid: string, name: string): Buffer {
   // Strip dashes from namespace to recover 16 bytes
   const nsBytes = Buffer.from(namespaceUuid.replace(/-/g, ''), 'hex')
   if (nsBytes.length !== 16) throw new Error(`invalid namespace UUID: ${namespaceUuid}`)
-  return createHash('sha256').update(nsBytes).update(Buffer.from(name, 'utf8')).digest()
+  return sha256(nsBytes, name)
 }
 
 /**
@@ -149,12 +133,7 @@ function nameHashBytes(namespaceUuid: string, name: string): Buffer {
  * nibble is 8, never 5.
  */
 export function nameUuid(namespaceUuid: string, name: string): string {
-  const bytes = Buffer.from(nameHashBytes(namespaceUuid, name).subarray(0, 16))
-  // Set version (8) in the high nibble of byte 6 (RFC 9562 §5.8)
-  bytes[6] = (bytes[6]! & 0x0f) | 0x80
-  // Set variant (10xxxxxx, RFC 9562 §4.1) in the high two bits of byte 8
-  bytes[8] = (bytes[8]! & 0x3f) | 0x80
-  return bytesToUuidString(bytes)
+  return uuidV8(nameHashBytes(namespaceUuid, name))
 }
 
 /**

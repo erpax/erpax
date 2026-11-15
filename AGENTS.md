@@ -40,6 +40,11 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
   [payloadcms/skills](https://github.com/payloadcms/skills) (`skills/payload/reference/`).
 - Payload is `4.0.0-beta.9` on every `payload` and `@payloadcms/*` package, with TypeScript 6 and zod 4 (Payload's
   floors), Next `>=16.4.1` and Node `^24.22.3 || >=26.13.1`. `.node-version` sets Node for CI and Cloudflare Workers Builds.
+- `patches/` holds two pnpm patches (`patchedDependencies`), re-checked at every Payload bump: `@payloadcms/drizzle`
+  (D1's 100-parameter upsert, upstream payloadcms/payload#18239) and `payload` (password hashing in chained rounds
+  of at most 100,000 PBKDF2 iterations, the Workers cap, as `src/utilities/crypto` `stretch` defines and
+  `src/collections/users/hashing.test.ts` proves). Every hash, MAC, content uuid, random value and password stretch
+  in erpax goes through `src/utilities/crypto`.
 - Majors held back on purpose: `eslint` 9, `recharts` 2, `@types/node` 24. A Dependabot PR that crosses one of these fails CI.
   Land its other bumps by hand.
 

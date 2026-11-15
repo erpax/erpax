@@ -59,7 +59,7 @@ export interface PersistApiAuditEventInput<T = unknown> {
   readonly payloadIn?: Record<string, unknown>
   /** Response data from `ApiResult.data`. */
   readonly payloadOut?: T
-  /** Optional explicit eventId — defaults to `crypto.randomUUID()`. */
+  /** Optional explicit eventId — defaults to `randomUuid()` (`@/utilities/crypto`). */
   readonly eventId?: string
 }
 

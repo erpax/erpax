@@ -43,7 +43,7 @@
  * @audit Conservation Law 9 storage-redundancy (linkable across stores)
  * @audit ISO 19011:2018 §6.4.6 tamper-evident audit evidence
  */
-import { createHash } from 'node:crypto'
+import { sha256Hex } from '@/utilities/crypto'
 
 export interface UuidLinkedLeaf {
   readonly leafUuid: string       // sha256 of (prev || payload || ts)
@@ -68,7 +68,7 @@ export function canonicalJson(value: unknown): string {
 
 /** Compute the content uuid of a payload (sha256 of canonical JSON). */
 export function payloadContentUuid(payload: unknown): string {
-  return createHash('sha256').update(canonicalJson(payload)).digest('hex')
+  return sha256Hex(canonicalJson(payload))
 }
 
 /** Compute the leaf uuid given the prev/payload/timestamp triple. */
@@ -77,9 +77,7 @@ export function computeLeafUuid(args: {
   payloadUuid: string
   timestampIso: string
 }): string {
-  return createHash('sha256')
-    .update(`${args.prevLeafUuid}|${args.payloadUuid}|${args.timestampIso}`)
-    .digest('hex')
+  return sha256Hex(`${args.prevLeafUuid}|${args.payloadUuid}|${args.timestampIso}`)
 }
 
 /** Build the next leaf in the chain from a head + payload. */
@@ -167,7 +165,7 @@ export async function verifyUuidLinkedChain(args: {
       // produce the payload for every leaf. A missing payload (undefined/null —
       // e.g. retrieval failed or the decisions array is short of the chain) must
       // be an explicit verification FAILURE, never a thrown exception. Without
-      // this guard, payloadContentUuid(undefined) calls createHash().update(undefined)
+      // this guard, payloadContentUuid(undefined) hashes undefined
       // which THROWS (ERR_INVALID_ARG_TYPE): a thrown verifier is a DoS hazard and
       // can flip fail-open if a caller try/catches the throw and treats it as trust.
       if (payload === undefined || payload === null) {

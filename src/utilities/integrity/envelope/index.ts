@@ -59,6 +59,7 @@
  * @see ./content-uuid.ts (computeContentUuid — provides the salt)
  * @see ./signatures.ts (SignedUuid — sister type for in-transit authenticity)
  */
+import { randomBytes } from '@/utilities/crypto'
 import type { ContentUuid } from '@/utilities/integrity/content'
 import { b64urlDecode, b64urlEncode } from '@/utilities/integrity/base64url'
 
@@ -158,7 +159,7 @@ export async function encryptEnvelope<T>(args: {
 }): Promise<CipherEnvelope<T>> {
   const alg = args.alg ?? 'AES-GCM-256'
   const dek = await deriveDek({ kek: args.kek, uuid: args.uuid, bits: ALG_BITS[alg] })
-  const iv = globalThis.crypto.getRandomValues(new Uint8Array(12))
+  const iv = new Uint8Array(randomBytes(12))
   const plaintextBytes = new TextEncoder().encode(JSON.stringify(args.plaintext))
   const result = new Uint8Array(
     await globalThis.crypto.subtle.encrypt(
@@ -238,7 +239,7 @@ export async function encryptBytesEnvelope(args: {
 }): Promise<CipherEnvelope<Uint8Array>> {
   const alg = args.alg ?? 'AES-GCM-256'
   const dek = await deriveDek({ kek: args.kek, uuid: args.uuid, bits: ALG_BITS[alg] })
-  const iv = globalThis.crypto.getRandomValues(new Uint8Array(12))
+  const iv = new Uint8Array(randomBytes(12))
   const result = new Uint8Array(
     await globalThis.crypto.subtle.encrypt(
       { name: 'AES-GCM', iv, tagLength: 128 },
