@@ -353,6 +353,11 @@ export default buildConfig({
           ),
         )
         .map((c) => c.slug as CollectionSlug),
+      // The documented options (payloadcms.com/docs/plugins/nested-docs): without them a breadcrumb has no
+      // label and no url. The label is the document's title; the url is its own slug, because the frontend
+      // routes a page by ONE segment (`[locale]/[slug]`), so a nested `/a/b` url would not resolve.
+      generateLabel: (_, doc) => String((doc as { title?: unknown }).title ?? ''),
+      generateURL: (_, doc) => `/${String((doc as { slug?: unknown }).slug ?? '')}`,
     }),
     // Official content-surface plugins (see the `redirects` + `search` skills).
     // Registering them is what makes `'redirects'`/`'search'` real CollectionSlugs.

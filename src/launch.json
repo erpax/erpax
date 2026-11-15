@@ -4,7 +4,19 @@
     {
       "name": "erpax-dev",
       "runtimeExecutable": "env",
-      "runtimeArgs": ["PAYLOAD_DEV_PUSH=false", "pnpm", "dev"],
+      "runtimeArgs": [
+        "PAYLOAD_DEV_PUSH=false",
+        "pnpm",
+        "dev"
+      ],
+      "port": 3000
+    },
+    {
+      "name": "erpax-dev-push",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "dev"
+      ],
       "port": 3000
     }
   ]

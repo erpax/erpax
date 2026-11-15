@@ -97,13 +97,26 @@ export function mcpSeedGlobalSlugs(): readonly GlobalSlug[] {
 }
 
 /**
+ * The plugin's documented per-collection `description` (payloadcms.com/docs/plugins/mcp): it tells an MCP
+ * client when to use the collection. Written for the document collections, where the nesting rule matters.
+ */
+const DESCRIPTIONS: Readonly<Record<string, string>> = {
+  pages:
+    'Pages are the nested documents of a tenant. Set `parent` to a page id to nest one under another (the nested-docs plugin fills `breadcrumbs`). A page needs a `tenant`, a `title`, a `slug`, a hero and a layout of content blocks.',
+  posts: 'Posts are the publications based on pages. Find by slug; select only the fields you need.',
+  search: 'Search holds one flat row per document (title, slug, markdown body). Use it to find a page or post by slug before reading it in full.',
+  categories: 'Categories group posts; a category may be nested under a parent category.',
+  redirects: 'Redirects map one path to another document or URL.',
+}
+
+/**
  * Build the plugin-mcp `collections` map from the live barrel ∩ seed (or full).
  * Unknown extras are dropped — never invent a slug the config does not register.
  */
 export function mcpCollectionsConfig(
   registered: ReadonlyArray<{ readonly slug: string }>,
   env: McpEnv = process.env,
-): Partial<Record<CollectionSlug, { enabled: true }>> {
+): Partial<Record<CollectionSlug, { enabled: true; description?: string }>> {
   const registeredSet = new Set(registered.map((c) => c.slug))
   const mode = mcpSeedMode(env)
   const slugs =
@@ -111,8 +124,8 @@ export function mcpCollectionsConfig(
       ? registered.map((c) => c.slug)
       : mcpSeedCollectionSlugs(env).filter((s) => registeredSet.has(s))
   return Object.fromEntries(
-    slugs.map((slug) => [slug, { enabled: true } as const]),
-  ) as Partial<Record<CollectionSlug, { enabled: true }>>
+    slugs.map((slug) => [slug, { enabled: true, ...(DESCRIPTIONS[slug] ? { description: DESCRIPTIONS[slug] } : {}) } as const]),
+  ) as Partial<Record<CollectionSlug, { enabled: true; description?: string }>>
 }
 
 export function mcpGlobalsConfig(
