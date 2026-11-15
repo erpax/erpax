@@ -1,6 +1,8 @@
 /-
   Correct — error correction as syndrome arithmetic: each single error names itself.
 
+  Clay: none
+
   Ported from qpu.uuidna.com (Qpu.Processing.QuantumErrorCorrection, same author). A code corrects
   an error when the checks it trips identify it. That is a statement about which checks read which
   positions — finite, classical arithmetic — and it is the part of quantum error correction a

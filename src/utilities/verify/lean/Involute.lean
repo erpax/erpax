@@ -1,6 +1,8 @@
 /-
   Involute — a lead is tagged by its involution, and the codomain is exactly three.
 
+  Clay: none
+
   The twin is `tagOf` in src/self/involute, the decision the frontier runs over every lead it
   generates. A lead is a claim one instrument makes about the corpus ("nothing reaches this atom",
   "this gate is red"). Its INVOLUTION is the same question asked from the other seat — who names

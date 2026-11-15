@@ -1,6 +1,8 @@
 /-
   Route — a gate between uncoupled qubits, routed through SWAPs, computes the same function.
 
+  Clay: none
+
   Ported from qpu.uuidna.com (Qpu.Processing.QuantumCircuit, same author), on Gate.lean. On a
   device, a two-qubit gate can only act on a coupled pair. A CNOT between qubits 0 and 2 of a line
   0–1–2 has no coupler, so it is compiled as SWAP(0,1) · CNOT(1,2) · SWAP(0,1). This file proves the

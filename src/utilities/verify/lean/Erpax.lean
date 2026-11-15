@@ -1,6 +1,8 @@
 /-
   Erpax.lean — the session's laws, stated so the kernel can refuse them.
 
+  Clay: none
+
   Every theorem closes by `decide` over a stated finite domain. No Mathlib, no `native_decide`.
   What cannot be proved is declared as an AXIOM below, in the open, with the reason — because an
   assumption that hides inside a proof is the defect this corpus spent the day measuring.

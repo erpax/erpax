@@ -1,6 +1,8 @@
 /-
   Main — the system claim, reduced to what the three models actually guarantee.
 
+  Clay: none
+
   What stood here claimed a whole quantum system correct: for EVERY list of problems there EXISTS a
   wave whose ledger answers each of them. Two `sorry`s held it up, and no proof was ever going to
   arrive, because the statement is not a theorem about software — it says that running the system

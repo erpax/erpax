@@ -1,6 +1,8 @@
 /-
   Landauer — the heat a computation must shed is the bits it erases, times k·T·ln 2.
 
+  Clay: none
+
   The twin is src/temperature (landauerJ · erasedBits · reversible · amortisedBits). What is decided
   here is the arithmetic the twin rests on, in naturals: a core at 300 K against a fridge at 15 mK is a
   factor of 20,000 per erased bit; a step whose output is at least as wide as its input erases nothing

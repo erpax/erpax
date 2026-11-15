@@ -1,6 +1,8 @@
 /-
   Entangle — the Bell and GHZ states from their circuits, and the CHSH bound they break.
 
+  Clay: none
+
   Ported from qpu.uuidna.com (Qpu.Physics.QuantumEntanglement, same author), on the exact matrices
   of Gate.lean. Register.lean already shows the Bell state is entangled by its determinant. This
   file adds the statement that makes entanglement an OBSERVABLE difference rather than a property

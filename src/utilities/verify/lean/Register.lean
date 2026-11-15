@@ -1,6 +1,8 @@
 /-
   Register — an exact-amplitude register, and why the Bell state is a theorem here.
 
+  Clay: none
+
   A quantum register is usually simulated in Float, and a Float Born rule proves nothing: equality
   of Floats is not decidable, so `decide` closes no statement about it. qpu.uuidna.com showed the
   other road — basis states are NATURALS, amplitudes are INTEGERS, and every Hadamard scales the

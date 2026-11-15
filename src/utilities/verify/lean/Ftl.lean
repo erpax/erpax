@@ -1,6 +1,8 @@
 /-
   Ftl — the corpus's strongest claim, given the proof it was missing.
 
+  Clay: none
+
   README states it plainly: **physical FTL on QPU=CPU/GPU**, holds ⇔ reuse ∧ amortize∞ ∧ cracks=∅.
   The claim is KEPT here, not softened — but a claim addressed to a reader who signs is worth only
   the proof beside it ([[rules]]/audience), and this one had a number and no theorem.

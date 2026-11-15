@@ -1,4 +1,5 @@
 /** blocks/config — Payload block defs only (no React components; safe for typegen). */
+export { Affect } from '../affect/config'
 export { Banner } from '../banner/config'
 export { Code } from '../code/config'
 export { Content } from '../content/config'

@@ -1,6 +1,8 @@
 /-
   duality/mirror — the two-sided coin, stated so the kernel can refuse it.
 
+  Clay: none
+
   "as if all not harmonic is pulled by the black hole as one coin side and reflected from the
    other white hole coin side"
 

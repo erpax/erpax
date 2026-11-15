@@ -27,10 +27,12 @@ import {
 import { CodeBlock, type CodeBlockProps } from '@/blocks/code/Component'
 
 import type {
+  AffectBlock as AffectBlockProps,
   BannerBlock as BannerBlockProps,
   CallToActionBlock as CTABlockProps,
   MediaBlock as MediaBlockProps,
 } from '@/utilities/types'
+import { AffectBlock } from '@/blocks/affect/Component'
 import { BannerBlock } from '@/blocks/banner/Component'
 import { CallToActionBlock } from '@/blocks/call/to/action/Component'
 import { codedFromRegistry } from '@/utilities/error/codedRegistry'
@@ -39,7 +41,7 @@ import { cn } from '@/components/ui'
 
 type NodeTypes =
   | DefaultNodeTypes
-  | SerializedBlockNode<CTABlockProps | MediaBlockProps | BannerBlockProps | CodeBlockProps>
+  | SerializedBlockNode<AffectBlockProps | CTABlockProps | MediaBlockProps | BannerBlockProps | CodeBlockProps>
 
 /**
  * The href for a link an editor made to another document.
@@ -61,6 +63,7 @@ const jsxConverters: JSXConvertersFunction<NodeTypes> = ({ defaultConverters }) 
   ...defaultConverters,
   ...LinkJSXConverter({ internalDocToHref }),
   blocks: {
+    affect: ({ node }) => <AffectBlock className="col-start-2" {...node.fields} />,
     banner: ({ node }) => <BannerBlock className="col-start-2 mb-4" {...node.fields} />,
     mediaBlock: ({ node }) => (
       <MediaBlock
