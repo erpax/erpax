@@ -2,6 +2,7 @@ import type { CollectionConfig } from 'payload'
 import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantRead'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { deriveLabel, periodLifecycle } from '@/hooks/collections/fiscal-periods/lifecycle'
+import { subsequentEventRules, subsequentEventsField } from '@/fields/array/subsequentEventsField'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { updateFiscalCalendarOnPeriodChange } from '@/hooks/collections/fiscal-periods/updateFiscalCalendarOnPeriodChange'
 
@@ -63,6 +64,8 @@ export const FiscalPeriods: CollectionConfig = {
       // date order, only-admins-lock, four eyes, and the server-stamped close/lock/reopen times —
       // each read where the field is (lifecycle, dates); see src/hooks/collections/fiscal-periods/lifecycle
       periodLifecycle,
+      // events after the reporting period (formerly post-balance-sheet-events), each against this period's end date
+      subsequentEventRules,
     ],
     // SOX §404 period-close-integrity: every fiscal-period status change
     // (open → closed → locked → reopened) emits a structured audit event.
@@ -173,6 +176,8 @@ export const FiscalPeriods: CollectionConfig = {
           admin: { description: 'ISO 8601 — when this period definition takes effect.' } },
       ],
     },
+    // IAS 10 events after the reporting period (formerly the post-balance-sheet-events collection)
+    subsequentEventsField(),
     {
       type: 'group',
       name: 'notes',
