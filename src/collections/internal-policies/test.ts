@@ -16,12 +16,12 @@ describe('internal-policies collection node', () => {
 })
 
 describe('internal-policies — acknowledgments (the folded policy-acknowledgments collection)', () => {
-  it('records the version acknowledged once, never overwritten by a later revision', async () => {
-    const { stampVersion } = await import('@/collections/internal-policies')
-    const run = (args: object) => (stampVersion as unknown as (a: object) => unknown)(args)
-    expect(run({ value: undefined, previousValue: undefined, data: { versionNumber: '3.1' } })).toBe('3.1')
-    expect(run({ value: '3.1', previousValue: '3.1', data: { versionNumber: '4.0' } })).toBe('3.1')
-    expect(run({ value: undefined, previousValue: undefined, data: {} })).toBeNull()
+  it('records the version acknowledged: stored rows keep theirs, new rows take the current one, a caller cannot claim another', async () => {
+    const { acknowledgedVersions } = await import('@/collections/internal-policies')
+    const stored = [{ id: 'r1', employeeId: 'E1', policyVersion: '3.1' }]
+    const rows = [{ id: 'r1', employeeId: 'E1', policyVersion: '9.9' }, { employeeId: 'E2', policyVersion: '9.9' }]
+    expect(acknowledgedVersions(rows, stored, '4.0').map((r) => r.policyVersion)).toEqual(['3.1', '4.0'])
+    expect(acknowledgedVersions([{ employeeId: 'E3' }], [], undefined)[0]?.policyVersion).toBeNull()
   })
 
   it('a person acknowledges a given version once', async () => {

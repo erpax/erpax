@@ -5,7 +5,7 @@
  * @standard ISO-37301:2021 compliance-policy
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  */
-import type { CollectionConfig, FieldHook } from 'payload'
+import type { CollectionBeforeValidateHook, CollectionConfig } from 'payload'
 import { validations } from 'payload/shared'
 import { roleBasedAccess } from '@/access/collections/shared/roleBasedAccess'
 import { stampWhen } from '@/hooks/collections/shared/stampWhen'
@@ -14,17 +14,33 @@ import { stampWhen } from '@/hooks/collections/shared/stampWhen'
 // An acknowledgment is a person accepting this policy as it stood, so it is a row here (ISO-27001
 // A.5.1, SOX §404 attestation), under the policy's own access and version history.
 
-/**
- * The version acknowledged: the policy's current `versionNumber` when the row is added, never
- * overwritten afterwards, so a later revision of the policy does not change what was acknowledged.
- */
-export const stampVersion: FieldHook = ({ value, previousValue, data }) =>
-  previousValue || value || (data as { versionNumber?: string | null } | undefined)?.versionNumber || null
-
 interface Acknowledgment {
+  id?: string | null
   employeeId?: string | null
   employeeName?: string | null
   policyVersion?: string | null
+}
+
+/**
+ * The version each row acknowledged: a row already stored keeps its version (matched by row id), and a
+ * new row takes the policy's current `versionNumber`, whatever a caller sent. So a later revision of the
+ * policy never changes what was acknowledged, and no caller can claim another version.
+ */
+export const acknowledgedVersions = (rows: readonly Acknowledgment[], stored: readonly Acknowledgment[], current: string | null | undefined): Acknowledgment[] => {
+  const kept = new Map(stored.filter((row) => row.id).map((row) => [row.id, row.policyVersion]))
+  return rows.map((row) => ({ ...row, policyVersion: (row.id && kept.get(row.id)) || current || null }))
+}
+
+/**
+ * Computed before validation (Payload validates before field hooks run), so the one-per-version rule
+ * below sees the versions that will be stored.
+ */
+const stampAcknowledgedVersions: CollectionBeforeValidateHook = ({ data, originalDoc }) => {
+  const rows = (data as { acknowledgments?: Acknowledgment[] } | undefined)?.acknowledgments
+  if (!data || !Array.isArray(rows)) return data
+  const current = (data as { versionNumber?: string | null }).versionNumber ?? (originalDoc as { versionNumber?: string | null } | undefined)?.versionNumber
+  const stored = ((originalDoc as { acknowledgments?: Acknowledgment[] } | undefined)?.acknowledgments ?? []) as Acknowledgment[]
+  return { ...data, acknowledgments: acknowledgedVersions(rows, stored, current) }
 }
 
 /** A person acknowledges a given version once. */
@@ -48,6 +64,7 @@ export const InternalPolicies: CollectionConfig = {
   // (maxPerDoc: 0) — a superseded policy text is audit evidence, so the plugin-wide cap of 50 must
   // not prune it. Declared here so the versions plugin leaves it alone ("the richer config wins").
   versions: { maxPerDoc: 0 },
+  hooks: { beforeValidate: [stampAcknowledgedVersions] },
   access: roleBasedAccess({
     read: ['super-admin', 'admin', 'audit-staff', 'compliance-officer'],
     create: ['super-admin', 'admin'],
@@ -179,7 +196,6 @@ export const InternalPolicies: CollectionConfig = {
               type: 'text',
               index: true,
               admin: { readOnly: true, description: 'The version acknowledged: stamped from the policy, never changed.' },
-              hooks: { beforeChange: [stampVersion] },
             },
             {
               name: 'acknowledgedAt',
