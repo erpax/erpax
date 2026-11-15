@@ -72,15 +72,17 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
 
 | Where | Runs |
 | --- | --- |
-| pre-commit (`.husky`) | Payload types + import map when `src/**/*.ts` is staged; package ranges + lockfile when `package.json` or `pnpm-workspace.yaml` is staged |
+| pre-commit (`.husky`) | Payload types + import map when `src/**/*.ts` is staged; the release manifest when `src/` is staged; package ranges + lockfile when `package.json` or `pnpm-workspace.yaml` is staged |
 | pre-push | `pnpm lint` · `pnpm typecheck` |
-| CI (`.github/workflows/ci.yml`) | standards banner · lint · typecheck · tests ×4 (shard 2 runs `release.mjs --check`) · Playwright smoke · migrations (from empty, no drift) · lean build |
+| CI (`.github/workflows/ci.yml`) | standards banner · lint · typecheck · tests ×4 (shard 2 runs `release.mjs --check`) · Playwright smoke · migrations (from empty, no drift) · Worker (OpenNext build served by `wrangler dev --local`, then `scripts/smoke.mjs`) · lean build |
 | Cloudflare Workers Builds (dashboard) | on `main`: build, `payload migrate` on production D1, deploy. Its check on a PR branch fails at once and is not required |
+| Deployed (`.github/workflows/deployed.yml`) | on `main`: waits for Cloudflare's build of the same commit, then `scripts/smoke.mjs --production`; a deploy that answers 5xx turns main red |
 
 Gaps found on 2026-11-15:
 
 - The CI build regenerates `src/payload-types.ts` and the import map but never compares them with the commit.
-- Deploy is configured in the Cloudflare dashboard: there is no rollback step and no post-deploy smoke check.
+- Deploy is configured in the Cloudflare dashboard and has no rollback step; the Deployed workflow reports a
+  broken deploy but does not undo it. A big migration should be applied from a workstation before the merge.
 - No publish workflow: `packages/released.json` is at 1.0.16, and the last tag is `v1.0.6`.
 - No `.github/dependabot.yml`, so held majors arrive inside security PRs.
 - CI runs only `tests/e2e/smoke.e2e.spec.ts` of the Playwright specs, and `pnpm standards:check` is not scheduled.

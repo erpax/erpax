@@ -7,6 +7,12 @@ if echo "$staged" | grep -qE '^src/.*\.(ts|tsx)$'; then
   pnpm -s generate:types >/dev/null && pnpm -s generate:importmap >/dev/null
   git add src/payload-types.ts 'src/app/(payload)/admin/importMap.js' 2>/dev/null || true
 fi
+# The release manifest records each package's built content: rebuilt with every src change, so CI's
+# release check never meets a stale one. A failed rebuild stops the commit.
+if echo "$staged" | grep -qE '^src/'; then
+  node packages/release.mjs --write >/dev/null || exit 1
+  git add packages/released.json packages/*/package.json 2>/dev/null || true
+fi
 # Every @erpax/* package names its dependencies at the root's range: a root bump reaches every
 # package manifest, and the lockfile follows the manifests.
 if echo "$staged" | grep -qE '^(package\.json|pnpm-workspace\.yaml)$'; then
