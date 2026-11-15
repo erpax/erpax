@@ -27,6 +27,7 @@ import openNextHandler from './.open-next/worker.js'
 import { runScheduledJobs, type CronEnv } from './src/utilities/run/cron'
 import { consumeQueueBatch, type QueueBatchLike } from './src/utilities/run/queue'
 import { deliverInboundEmail, type EmailEnv, type InboundEmailLike } from './src/utilities/run/email'
+import { meter, refuse, type EdgeEnv } from './src/utilities/edge'
 
 // OpenNext's own Durable Objects (queue / sharded-tag-cache / bucket-cache).
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -61,8 +62,21 @@ export {
  */
 // Spread OpenNext's handler so `fetch` (and anything else it exports) is untouched, and ADD the
 // scheduled entry point beside it.
+const nextHandler = openNextHandler as { fetch(request: Request, env: unknown, ctx: unknown): Promise<Response> }
+
 const erpaxWorker = {
   ...(openNextHandler as Record<string, unknown>),
+  /**
+   * THE EDGE: before OpenNext and Payload start, a sign-in, write or agent request past its client's
+   * budget is refused (RATE_LIMITER_API), and every request is counted (ANALYTICS_API). Which requests
+   * are limited is decided by src/utilities/edge, the twin of Edge.lean.
+   */
+  async fetch(request: Request, env: EdgeEnv, ctx: unknown): Promise<Response> {
+    const { cls, response: refused } = await refuse(request, env)
+    const response = refused ?? (await nextHandler.fetch(request, env, ctx))
+    meter(env, cls, request.method, response.status)
+    return response
+  },
   async scheduled(_controller: unknown, env: CronEnv, ctx: { waitUntil(p: Promise<unknown>): void }): Promise<void> {
     ctx.waitUntil(runScheduledJobs(env))
   },

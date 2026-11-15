@@ -1073,6 +1073,8 @@ src/utilities/diversity/index.ts:12: * @standard Shannon (1948) A Mathematical T
 src/utilities/diversity/index.ts:13: * @standard Simpson (1949) Measurement of Diversity — Nature 163:688
 src/utilities/diversity/index.ts:14: * @standard Pielou (1966) The Measurement of Diversity in Different Types of Biological Collections
 src/utilities/double/entry/validator/index.ts:22: * @standard IAS 1 — an entry balances
+src/utilities/edge/index.ts:13: * @standard RFC 6585 §4 429-too-many-requests
+src/utilities/edge/index.ts:14: * @standard RFC 9110 §10.2.3 retry-after
 src/utilities/emit/domain/event/index.ts:15: * @standard ISO-8601-1:2019 date-time event-timestamp
 src/utilities/en/16931/collection-alignment.test.ts:10: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
 src/utilities/en/16931/collection-alignment.test.ts:9: * @standard ISO/IEC-29119:2022 software-testing
