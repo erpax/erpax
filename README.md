@@ -9,7 +9,7 @@
 
 ## Orient to erpax
 
-**[`https://github.com/erpax/erpax`](https://github.com/erpax/erpax)** → [`.claude/skills/SKILL.md`](.claude/skills/SKILL.md). Then `pnpm install` · `pnpm erpax doctor`.
+**[`https://github.com/erpax/erpax`](https://github.com/erpax/erpax)** → [`AGENTS.md`](AGENTS.md). Then `pnpm install` · `pnpm dev`; an agent signs in with `pnpm erpax login`.
 
 No separate agent setup — the URL and the repo are the same orientation.
 
