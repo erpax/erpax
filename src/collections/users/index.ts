@@ -26,10 +26,32 @@ const serverOnly = { create: () => false, update: () => false }
 const switchedByAnAdmin: FieldAccess = ({ req, id }) =>
   Boolean(req.user) && !isAccessingSelf({ user: req.user, id }) && (isSuperAdmin(req.user) || getUserTenantIDs(req.user, 'admin').length > 0)
 
-/** Every field but the credentials appears once someone is signed in (the first-user form stays email and password). */
+/** Whether a field holds a required field, itself or anywhere beneath it. */
+const requiredBelow = (field: Field): boolean => {
+  const f = field as { required?: boolean; fields?: Field[]; tabs?: { fields: Field[] }[]; blocks?: { fields: Field[] }[] }
+  return Boolean(f.required) || [...(f.fields ?? []), ...(f.tabs ?? []).flatMap((t) => t.fields), ...(f.blocks ?? []).flatMap((b) => b.fields)].some(requiredBelow)
+}
+
+/** Payload's components, rendered for a signed-in user only (src/components/admin/ui/fields/SignedInField). */
+const SIGNED_IN_COMPONENT: Partial<Record<Field['type'], string>> = {
+  array: '@/components/admin/ui/fields/SignedInField#SignedInArrayField',
+  collapsible: '@/components/admin/ui/fields/SignedInField#SignedInCollapsibleField',
+}
+
+/**
+ * Every field but the credentials appears once someone is signed in (the first-user form stays email
+ * and password). A field is hidden by `admin.condition`, except one holding a required field: Payload's
+ * database adapter drops NOT NULL beneath any condition, so those get a signed-in component instead.
+ */
 const signedInOnly = (fields: Field[]): Field[] =>
   fields.map((field) => {
     if ('name' in field && field.name === 'password') return field
+    if (requiredBelow(field)) {
+      const Field = SIGNED_IN_COMPONENT[field.type]
+      const admin = (field as { admin?: { components?: { Field?: unknown } } }).admin
+      if (!Field || admin?.components?.Field) return field
+      return { ...field, admin: { ...admin, components: { ...admin?.components, Field } } } as Field
+    }
     const shown = field.admin?.condition
     return {
       ...field,
