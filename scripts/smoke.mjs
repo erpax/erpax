@@ -12,11 +12,13 @@
  *                                         (Payload's first-register), enables its API key, and talks MCP —
  *                                         including the failed call whose gap the afterToolCall hook records.
  *   node scripts/smoke.mjs --production   After a deploy: the pages answer and the gateway is closed to a caller
- *                                         without a key. With ERPAX_API_KEY set, the read-only conversation too
- *                                         (production writes nothing).
+ *                                         without a key. Signed in (pnpm erpax login) or with ERPAX_API_KEY, the
+ *                                         read-only conversation too (production writes nothing).
  */
 import { randomUUID } from 'node:crypto'
 import { readFileSync } from 'node:fs'
+
+import { authorizationFor } from './erpax.mjs'
 
 /** The production origin, read from the connector's default URL so it is written down once. */
 const productionOrigin = () => {
@@ -74,13 +76,22 @@ const anonymous = await answer(
 )
 check(anonymous === 401, `POST /api/mcp without a key → ${anonymous || 'no answer'}`, anonymous === 401 ? '' : 'expected 401')
 
+// Sign-in (pnpm erpax login, or any MCP client's OAuth) starts at the 401's metadata, which must name this
+// origin: a Worker that sees another host sends every client to sign in somewhere else.
+const metadata = await fetch(`${origin}/api/mcp/oauth-protected-resource`, { signal: AbortSignal.timeout(30_000) })
+  .then((r) => r.json())
+  .catch(() => ({}))
+check(metadata.resource === `${origin}/api/mcp`, 'OAuth metadata names this origin', metadata.resource ?? 'no metadata')
+
 /**
- * The key the client talks with. On CI's empty database it becomes the first user — Payload's own
- * first-register, then the API key Payload's `useAPIKey` auth adds to `users` — so no seed, script or
- * SQL stands between CI and the app. After a deploy it is ERPAX_API_KEY, or none.
+ * How the client signs in. A sign-in kept by `pnpm erpax login` for this origin, else an agent's
+ * ERPAX_API_KEY (scripts/erpax.mjs). On CI's empty database there is neither, so it becomes the first
+ * user — Payload's own first-register, then the API key Payload's `useAPIKey` auth adds to `users` — and no
+ * seed, script or SQL stands between CI and the app.
  */
 const keyOf = async () => {
-  if (process.env.ERPAX_API_KEY) return { apiKey: process.env.ERPAX_API_KEY }
+  const authorization = await authorizationFor(origin)
+  if (authorization) return { authorization }
   if (production) return undefined
   const json = { 'content-type': 'application/json' }
   const registered = await fetch(`${origin}/api/users/first-register`, {
@@ -96,18 +107,18 @@ const keyOf = async () => {
     headers: { ...json, authorization: `JWT ${token}` },
     body: JSON.stringify({ enableAPIKey: true, apiKey }),
   })
-  return check(enabled.ok, `API key enabled → ${enabled.status}`) ? { apiKey, registered: user.id } : undefined
+  return check(enabled.ok, `API key enabled → ${enabled.status}`) ? { authorization: `users API-Key ${apiKey}`, registered: user.id } : undefined
 }
 
-const { apiKey, registered } =
+const { authorization, registered } =
   (await keyOf().catch((error) => {
     check(false, 'the client takes a key', error instanceof Error ? error.message : String(error))
   })) ?? {}
-if (apiKey) {
+if (authorization) {
   const { Client, StreamableHTTPClientTransport } = await import('@modelcontextprotocol/client')
   const client = new Client({ name: 'erpax-ci', version: '1.0.0' })
   const transport = new StreamableHTTPClientTransport(new URL(`${origin}/api/mcp`), {
-    requestInit: { headers: { authorization: `users API-Key ${apiKey}` } },
+    requestInit: { headers: { authorization } },
   })
   /** A tool's text answer, its structured result, and whether the server flagged it as an error. */
   const call = async (name, args = {}) => {
@@ -122,7 +133,7 @@ if (apiKey) {
   const count = async (slug, where) => Number(/contains (\d+) matching/.exec((await call('countDocuments', { slug, where })).text)?.[1] ?? -1)
   try {
     await client.connect(transport)
-    check(true, 'MCP initialize with the key', client.getServerVersion()?.name ?? '')
+    check(true, 'MCP initialize, signed in', client.getServerVersion()?.name ?? '')
     const { tools } = await client.listTools()
     const names = new Set(tools.map((t) => t.name))
     const missing = GENERIC_TOOLS.filter((t) => !names.has(t))
@@ -154,7 +165,7 @@ if (apiKey) {
     await client.close().catch(() => {})
   }
 } else {
-  console.log('· no key: the MCP conversation is skipped (set ERPAX_API_KEY to run it against production)')
+  console.log('· not signed in: the MCP conversation is skipped (pnpm erpax login, or ERPAX_API_KEY)')
 }
 
 if (failures.length) {
