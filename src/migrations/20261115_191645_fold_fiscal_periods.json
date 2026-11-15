@@ -73984,6 +73984,228 @@
       "uniqueConstraints": {},
       "checkConstraints": {}
     },
+    "fiscal_periods_subsequent_events": {
+      "name": "fiscal_periods_subsequent_events",
+      "columns": {
+        "_order": {
+          "name": "_order",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "_parent_id": {
+          "name": "_parent_id",
+          "type": "text(36)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "event_date": {
+          "name": "event_date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "classification": {
+          "name": "classification",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "event_kind": {
+          "name": "event_kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "estimated_impact": {
+          "name": "estimated_impact",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": 0
+        },
+        "currency": {
+          "name": "currency",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": "'EUR'"
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": "'identified'"
+        },
+        "journal_entry_id": {
+          "name": "journal_entry_id",
+          "type": "text(36)",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "disclosed_in_f_s": {
+          "name": "disclosed_in_f_s",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": false
+        },
+        "source_collection": {
+          "name": "source_collection",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "source_id": {
+          "name": "source_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "notes": {
+          "name": "notes",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "fiscal_periods_subsequent_events_order_idx": {
+          "name": "fiscal_periods_subsequent_events_order_idx",
+          "columns": [
+            "_order"
+          ],
+          "isUnique": false
+        },
+        "fiscal_periods_subsequent_events_parent_id_idx": {
+          "name": "fiscal_periods_subsequent_events_parent_id_idx",
+          "columns": [
+            "_parent_id"
+          ],
+          "isUnique": false
+        },
+        "fiscal_periods_subsequent_events_journal_entry_idx": {
+          "name": "fiscal_periods_subsequent_events_journal_entry_idx",
+          "columns": [
+            "journal_entry_id"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "fiscal_periods_subsequent_events_journal_entry_id_journal_entries_id_fk": {
+          "name": "fiscal_periods_subsequent_events_journal_entry_id_journal_entries_id_fk",
+          "tableFrom": "fiscal_periods_subsequent_events",
+          "tableTo": "journal_entries",
+          "columnsFrom": [
+            "journal_entry_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "set null",
+          "onUpdate": "no action"
+        },
+        "fiscal_periods_subsequent_events_parent_id_fk": {
+          "name": "fiscal_periods_subsequent_events_parent_id_fk",
+          "tableFrom": "fiscal_periods_subsequent_events",
+          "tableTo": "fiscal_periods",
+          "columnsFrom": [
+            "_parent_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "fiscal_periods_subsequent_events_locales": {
+      "name": "fiscal_periods_subsequent_events_locales",
+      "columns": {
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "_locale": {
+          "name": "_locale",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "_parent_id": {
+          "name": "_parent_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "fiscal_periods_subsequent_events_locales_parent_id_locale_un": {
+          "name": "fiscal_periods_subsequent_events_locales_parent_id_locale_un",
+          "columns": [
+            "_parent_id",
+            "_locale"
+          ],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "fiscal_periods_subsequent_events_locales_parent_id_fk": {
+          "name": "fiscal_periods_subsequent_events_locales_parent_id_fk",
+          "tableFrom": "fiscal_periods_subsequent_events_locales",
+          "tableTo": "fiscal_periods_subsequent_events",
+          "columnsFrom": [
+            "_parent_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
     "fiscal_periods": {
       "name": "fiscal_periods",
       "columns": {
@@ -74513,6 +74735,235 @@
           "tableTo": "users",
           "columnsFrom": [
             "users_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "_fiscal_periods_v_version_subsequent_events": {
+      "name": "_fiscal_periods_v_version_subsequent_events",
+      "columns": {
+        "_order": {
+          "name": "_order",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "_parent_id": {
+          "name": "_parent_id",
+          "type": "text(36)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text(36)",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "event_date": {
+          "name": "event_date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "classification": {
+          "name": "classification",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "event_kind": {
+          "name": "event_kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "estimated_impact": {
+          "name": "estimated_impact",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": 0
+        },
+        "currency": {
+          "name": "currency",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": "'EUR'"
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": "'identified'"
+        },
+        "journal_entry_id": {
+          "name": "journal_entry_id",
+          "type": "text(36)",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "disclosed_in_f_s": {
+          "name": "disclosed_in_f_s",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": false
+        },
+        "source_collection": {
+          "name": "source_collection",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "source_id": {
+          "name": "source_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "notes": {
+          "name": "notes",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "_uuid": {
+          "name": "_uuid",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "_fiscal_periods_v_version_subsequent_events_order_idx": {
+          "name": "_fiscal_periods_v_version_subsequent_events_order_idx",
+          "columns": [
+            "_order"
+          ],
+          "isUnique": false
+        },
+        "_fiscal_periods_v_version_subsequent_events_parent_id_idx": {
+          "name": "_fiscal_periods_v_version_subsequent_events_parent_id_idx",
+          "columns": [
+            "_parent_id"
+          ],
+          "isUnique": false
+        },
+        "_fiscal_periods_v_version_subsequent_events_journal_entr_idx": {
+          "name": "_fiscal_periods_v_version_subsequent_events_journal_entr_idx",
+          "columns": [
+            "journal_entry_id"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "_fiscal_periods_v_version_subsequent_events_journal_entry_id_journal_entries_id_fk": {
+          "name": "_fiscal_periods_v_version_subsequent_events_journal_entry_id_journal_entries_id_fk",
+          "tableFrom": "_fiscal_periods_v_version_subsequent_events",
+          "tableTo": "journal_entries",
+          "columnsFrom": [
+            "journal_entry_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "set null",
+          "onUpdate": "no action"
+        },
+        "_fiscal_periods_v_version_subsequent_events_parent_id_fk": {
+          "name": "_fiscal_periods_v_version_subsequent_events_parent_id_fk",
+          "tableFrom": "_fiscal_periods_v_version_subsequent_events",
+          "tableTo": "_fiscal_periods_v",
+          "columnsFrom": [
+            "_parent_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "_fiscal_periods_v_version_subsequent_events_locales": {
+      "name": "_fiscal_periods_v_version_subsequent_events_locales",
+      "columns": {
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "_locale": {
+          "name": "_locale",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "_parent_id": {
+          "name": "_parent_id",
+          "type": "text(36)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "_fiscal_periods_v_version_subsequent_events_locales_parent_i": {
+          "name": "_fiscal_periods_v_version_subsequent_events_locales_parent_i",
+          "columns": [
+            "_parent_id",
+            "_locale"
+          ],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "_fiscal_periods_v_version_subsequent_events_locales_paren_fk": {
+          "name": "_fiscal_periods_v_version_subsequent_events_locales_paren_fk",
+          "tableFrom": "_fiscal_periods_v_version_subsequent_events_locales",
+          "tableTo": "_fiscal_periods_v_version_subsequent_events",
+          "columnsFrom": [
+            "_parent_id"
           ],
           "columnsTo": [
             "id"
@@ -83564,987 +84015,6 @@
       "uniqueConstraints": {},
       "checkConstraints": {}
     },
-    "post_balance_sheet_events": {
-      "name": "post_balance_sheet_events",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "text(36)",
-          "primaryKey": true,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "uuid": {
-          "name": "uuid",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "tenant_id": {
-          "name": "tenant_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "reference": {
-          "name": "reference",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "period_id": {
-          "name": "period_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "event_date": {
-          "name": "event_date",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "classification": {
-          "name": "classification",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "event_kind": {
-          "name": "event_kind",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "estimated_impact": {
-          "name": "estimated_impact",
-          "type": "numeric",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false,
-          "default": 0
-        },
-        "currency": {
-          "name": "currency",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false,
-          "default": "'EUR'"
-        },
-        "source_collection": {
-          "name": "source_collection",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "source_id": {
-          "name": "source_id",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "journal_entry_id": {
-          "name": "journal_entry_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "disclosed_in_f_s": {
-          "name": "disclosed_in_f_s",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false,
-          "default": false
-        },
-        "status": {
-          "name": "status",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false,
-          "default": "'identified'"
-        },
-        "created_by_id": {
-          "name": "created_by_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "approved_by_id": {
-          "name": "approved_by_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "approved_at": {
-          "name": "approved_at",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "notes": {
-          "name": "notes",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "updated_at": {
-          "name": "updated_at",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false,
-          "default": "(strftime('%Y-%m-%dT%H:%M:%fZ', 'now'))"
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false,
-          "default": "(strftime('%Y-%m-%dT%H:%M:%fZ', 'now'))"
-        }
-      },
-      "indexes": {
-        "post_balance_sheet_events_uuid_idx": {
-          "name": "post_balance_sheet_events_uuid_idx",
-          "columns": [
-            "uuid"
-          ],
-          "isUnique": true
-        },
-        "post_balance_sheet_events_tenant_idx": {
-          "name": "post_balance_sheet_events_tenant_idx",
-          "columns": [
-            "tenant_id"
-          ],
-          "isUnique": false
-        },
-        "post_balance_sheet_events_period_idx": {
-          "name": "post_balance_sheet_events_period_idx",
-          "columns": [
-            "period_id"
-          ],
-          "isUnique": false
-        },
-        "post_balance_sheet_events_event_date_idx": {
-          "name": "post_balance_sheet_events_event_date_idx",
-          "columns": [
-            "event_date"
-          ],
-          "isUnique": false
-        },
-        "post_balance_sheet_events_journal_entry_idx": {
-          "name": "post_balance_sheet_events_journal_entry_idx",
-          "columns": [
-            "journal_entry_id"
-          ],
-          "isUnique": false
-        },
-        "post_balance_sheet_events_created_by_idx": {
-          "name": "post_balance_sheet_events_created_by_idx",
-          "columns": [
-            "created_by_id"
-          ],
-          "isUnique": false
-        },
-        "post_balance_sheet_events_approved_by_idx": {
-          "name": "post_balance_sheet_events_approved_by_idx",
-          "columns": [
-            "approved_by_id"
-          ],
-          "isUnique": false
-        },
-        "post_balance_sheet_events_updated_at_idx": {
-          "name": "post_balance_sheet_events_updated_at_idx",
-          "columns": [
-            "updated_at"
-          ],
-          "isUnique": false
-        },
-        "post_balance_sheet_events_created_at_idx": {
-          "name": "post_balance_sheet_events_created_at_idx",
-          "columns": [
-            "created_at"
-          ],
-          "isUnique": false
-        },
-        "tenant_reference_10_idx": {
-          "name": "tenant_reference_10_idx",
-          "columns": [
-            "tenant_id",
-            "reference"
-          ],
-          "isUnique": true
-        }
-      },
-      "foreignKeys": {
-        "post_balance_sheet_events_tenant_id_tenants_id_fk": {
-          "name": "post_balance_sheet_events_tenant_id_tenants_id_fk",
-          "tableFrom": "post_balance_sheet_events",
-          "tableTo": "tenants",
-          "columnsFrom": [
-            "tenant_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        },
-        "post_balance_sheet_events_period_id_fiscal_periods_id_fk": {
-          "name": "post_balance_sheet_events_period_id_fiscal_periods_id_fk",
-          "tableFrom": "post_balance_sheet_events",
-          "tableTo": "fiscal_periods",
-          "columnsFrom": [
-            "period_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        },
-        "post_balance_sheet_events_journal_entry_id_journal_entries_id_fk": {
-          "name": "post_balance_sheet_events_journal_entry_id_journal_entries_id_fk",
-          "tableFrom": "post_balance_sheet_events",
-          "tableTo": "journal_entries",
-          "columnsFrom": [
-            "journal_entry_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        },
-        "post_balance_sheet_events_created_by_id_users_id_fk": {
-          "name": "post_balance_sheet_events_created_by_id_users_id_fk",
-          "tableFrom": "post_balance_sheet_events",
-          "tableTo": "users",
-          "columnsFrom": [
-            "created_by_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        },
-        "post_balance_sheet_events_approved_by_id_users_id_fk": {
-          "name": "post_balance_sheet_events_approved_by_id_users_id_fk",
-          "tableFrom": "post_balance_sheet_events",
-          "tableTo": "users",
-          "columnsFrom": [
-            "approved_by_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "checkConstraints": {}
-    },
-    "post_balance_sheet_events_locales": {
-      "name": "post_balance_sheet_events_locales",
-      "columns": {
-        "description": {
-          "name": "description",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "id": {
-          "name": "id",
-          "type": "integer",
-          "primaryKey": true,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "_locale": {
-          "name": "_locale",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "_parent_id": {
-          "name": "_parent_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        }
-      },
-      "indexes": {
-        "post_balance_sheet_events_locales_parent_id_locale_unique": {
-          "name": "post_balance_sheet_events_locales_parent_id_locale_unique",
-          "columns": [
-            "_parent_id",
-            "_locale"
-          ],
-          "isUnique": true
-        }
-      },
-      "foreignKeys": {
-        "post_balance_sheet_events_locales_parent_id_fk": {
-          "name": "post_balance_sheet_events_locales_parent_id_fk",
-          "tableFrom": "post_balance_sheet_events_locales",
-          "tableTo": "post_balance_sheet_events",
-          "columnsFrom": [
-            "_parent_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "cascade",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "checkConstraints": {}
-    },
-    "post_balance_sheet_events_rels": {
-      "name": "post_balance_sheet_events_rels",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "integer",
-          "primaryKey": true,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "order": {
-          "name": "order",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "parent_id": {
-          "name": "parent_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "path": {
-          "name": "path",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "users_id": {
-          "name": "users_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        }
-      },
-      "indexes": {
-        "post_balance_sheet_events_rels_order_idx": {
-          "name": "post_balance_sheet_events_rels_order_idx",
-          "columns": [
-            "order"
-          ],
-          "isUnique": false
-        },
-        "post_balance_sheet_events_rels_parent_idx": {
-          "name": "post_balance_sheet_events_rels_parent_idx",
-          "columns": [
-            "parent_id"
-          ],
-          "isUnique": false
-        },
-        "post_balance_sheet_events_rels_path_idx": {
-          "name": "post_balance_sheet_events_rels_path_idx",
-          "columns": [
-            "path"
-          ],
-          "isUnique": false
-        },
-        "post_balance_sheet_events_rels_users_id_idx": {
-          "name": "post_balance_sheet_events_rels_users_id_idx",
-          "columns": [
-            "users_id"
-          ],
-          "isUnique": false
-        }
-      },
-      "foreignKeys": {
-        "post_balance_sheet_events_rels_parent_fk": {
-          "name": "post_balance_sheet_events_rels_parent_fk",
-          "tableFrom": "post_balance_sheet_events_rels",
-          "tableTo": "post_balance_sheet_events",
-          "columnsFrom": [
-            "parent_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "cascade",
-          "onUpdate": "no action"
-        },
-        "post_balance_sheet_events_rels_users_fk": {
-          "name": "post_balance_sheet_events_rels_users_fk",
-          "tableFrom": "post_balance_sheet_events_rels",
-          "tableTo": "users",
-          "columnsFrom": [
-            "users_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "cascade",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "checkConstraints": {}
-    },
-    "_post_balance_sheet_events_v": {
-      "name": "_post_balance_sheet_events_v",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "text(36)",
-          "primaryKey": true,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "parent_id": {
-          "name": "parent_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "version_uuid": {
-          "name": "version_uuid",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "version_tenant_id": {
-          "name": "version_tenant_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "version_reference": {
-          "name": "version_reference",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "version_period_id": {
-          "name": "version_period_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "version_event_date": {
-          "name": "version_event_date",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "version_classification": {
-          "name": "version_classification",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "version_event_kind": {
-          "name": "version_event_kind",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "version_estimated_impact": {
-          "name": "version_estimated_impact",
-          "type": "numeric",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false,
-          "default": 0
-        },
-        "version_currency": {
-          "name": "version_currency",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false,
-          "default": "'EUR'"
-        },
-        "version_source_collection": {
-          "name": "version_source_collection",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "version_source_id": {
-          "name": "version_source_id",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "version_journal_entry_id": {
-          "name": "version_journal_entry_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "version_disclosed_in_f_s": {
-          "name": "version_disclosed_in_f_s",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false,
-          "default": false
-        },
-        "version_status": {
-          "name": "version_status",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false,
-          "default": "'identified'"
-        },
-        "version_created_by_id": {
-          "name": "version_created_by_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "version_approved_by_id": {
-          "name": "version_approved_by_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "version_approved_at": {
-          "name": "version_approved_at",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "version_notes": {
-          "name": "version_notes",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "version_updated_at": {
-          "name": "version_updated_at",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "version_created_at": {
-          "name": "version_created_at",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false,
-          "default": "(strftime('%Y-%m-%dT%H:%M:%fZ', 'now'))"
-        },
-        "updated_at": {
-          "name": "updated_at",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false,
-          "default": "(strftime('%Y-%m-%dT%H:%M:%fZ', 'now'))"
-        }
-      },
-      "indexes": {
-        "_post_balance_sheet_events_v_parent_idx": {
-          "name": "_post_balance_sheet_events_v_parent_idx",
-          "columns": [
-            "parent_id"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_version_version_uuid_idx": {
-          "name": "_post_balance_sheet_events_v_version_version_uuid_idx",
-          "columns": [
-            "version_uuid"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_version_version_tenant_idx": {
-          "name": "_post_balance_sheet_events_v_version_version_tenant_idx",
-          "columns": [
-            "version_tenant_id"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_version_version_period_idx": {
-          "name": "_post_balance_sheet_events_v_version_version_period_idx",
-          "columns": [
-            "version_period_id"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_version_version_event_date_idx": {
-          "name": "_post_balance_sheet_events_v_version_version_event_date_idx",
-          "columns": [
-            "version_event_date"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_version_version_journal_ent_idx": {
-          "name": "_post_balance_sheet_events_v_version_version_journal_ent_idx",
-          "columns": [
-            "version_journal_entry_id"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_version_version_created_by_idx": {
-          "name": "_post_balance_sheet_events_v_version_version_created_by_idx",
-          "columns": [
-            "version_created_by_id"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_version_version_approved_by_idx": {
-          "name": "_post_balance_sheet_events_v_version_version_approved_by_idx",
-          "columns": [
-            "version_approved_by_id"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_version_version_updated_at_idx": {
-          "name": "_post_balance_sheet_events_v_version_version_updated_at_idx",
-          "columns": [
-            "version_updated_at"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_version_version_created_at_idx": {
-          "name": "_post_balance_sheet_events_v_version_version_created_at_idx",
-          "columns": [
-            "version_created_at"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_created_at_idx": {
-          "name": "_post_balance_sheet_events_v_created_at_idx",
-          "columns": [
-            "created_at"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_updated_at_idx": {
-          "name": "_post_balance_sheet_events_v_updated_at_idx",
-          "columns": [
-            "updated_at"
-          ],
-          "isUnique": false
-        },
-        "version_tenant_version_reference_10_idx": {
-          "name": "version_tenant_version_reference_10_idx",
-          "columns": [
-            "version_tenant_id",
-            "version_reference"
-          ],
-          "isUnique": false
-        }
-      },
-      "foreignKeys": {
-        "_post_balance_sheet_events_v_parent_id_post_balance_sheet_events_id_fk": {
-          "name": "_post_balance_sheet_events_v_parent_id_post_balance_sheet_events_id_fk",
-          "tableFrom": "_post_balance_sheet_events_v",
-          "tableTo": "post_balance_sheet_events",
-          "columnsFrom": [
-            "parent_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        },
-        "_post_balance_sheet_events_v_version_tenant_id_tenants_id_fk": {
-          "name": "_post_balance_sheet_events_v_version_tenant_id_tenants_id_fk",
-          "tableFrom": "_post_balance_sheet_events_v",
-          "tableTo": "tenants",
-          "columnsFrom": [
-            "version_tenant_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        },
-        "_post_balance_sheet_events_v_version_period_id_fiscal_periods_id_fk": {
-          "name": "_post_balance_sheet_events_v_version_period_id_fiscal_periods_id_fk",
-          "tableFrom": "_post_balance_sheet_events_v",
-          "tableTo": "fiscal_periods",
-          "columnsFrom": [
-            "version_period_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        },
-        "_post_balance_sheet_events_v_version_journal_entry_id_journal_entries_id_fk": {
-          "name": "_post_balance_sheet_events_v_version_journal_entry_id_journal_entries_id_fk",
-          "tableFrom": "_post_balance_sheet_events_v",
-          "tableTo": "journal_entries",
-          "columnsFrom": [
-            "version_journal_entry_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        },
-        "_post_balance_sheet_events_v_version_created_by_id_users_id_fk": {
-          "name": "_post_balance_sheet_events_v_version_created_by_id_users_id_fk",
-          "tableFrom": "_post_balance_sheet_events_v",
-          "tableTo": "users",
-          "columnsFrom": [
-            "version_created_by_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        },
-        "_post_balance_sheet_events_v_version_approved_by_id_users_id_fk": {
-          "name": "_post_balance_sheet_events_v_version_approved_by_id_users_id_fk",
-          "tableFrom": "_post_balance_sheet_events_v",
-          "tableTo": "users",
-          "columnsFrom": [
-            "version_approved_by_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "checkConstraints": {}
-    },
-    "_post_balance_sheet_events_v_locales": {
-      "name": "_post_balance_sheet_events_v_locales",
-      "columns": {
-        "version_description": {
-          "name": "version_description",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "id": {
-          "name": "id",
-          "type": "integer",
-          "primaryKey": true,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "_locale": {
-          "name": "_locale",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "_parent_id": {
-          "name": "_parent_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        }
-      },
-      "indexes": {
-        "_post_balance_sheet_events_v_locales_parent_id_locale_unique": {
-          "name": "_post_balance_sheet_events_v_locales_parent_id_locale_unique",
-          "columns": [
-            "_parent_id",
-            "_locale"
-          ],
-          "isUnique": true
-        }
-      },
-      "foreignKeys": {
-        "_post_balance_sheet_events_v_locales_parent_id_fk": {
-          "name": "_post_balance_sheet_events_v_locales_parent_id_fk",
-          "tableFrom": "_post_balance_sheet_events_v_locales",
-          "tableTo": "_post_balance_sheet_events_v",
-          "columnsFrom": [
-            "_parent_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "cascade",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "checkConstraints": {}
-    },
-    "_post_balance_sheet_events_v_rels": {
-      "name": "_post_balance_sheet_events_v_rels",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "integer",
-          "primaryKey": true,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "order": {
-          "name": "order",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "parent_id": {
-          "name": "parent_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "path": {
-          "name": "path",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "users_id": {
-          "name": "users_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        }
-      },
-      "indexes": {
-        "_post_balance_sheet_events_v_rels_order_idx": {
-          "name": "_post_balance_sheet_events_v_rels_order_idx",
-          "columns": [
-            "order"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_rels_parent_idx": {
-          "name": "_post_balance_sheet_events_v_rels_parent_idx",
-          "columns": [
-            "parent_id"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_rels_path_idx": {
-          "name": "_post_balance_sheet_events_v_rels_path_idx",
-          "columns": [
-            "path"
-          ],
-          "isUnique": false
-        },
-        "_post_balance_sheet_events_v_rels_users_id_idx": {
-          "name": "_post_balance_sheet_events_v_rels_users_id_idx",
-          "columns": [
-            "users_id"
-          ],
-          "isUnique": false
-        }
-      },
-      "foreignKeys": {
-        "_post_balance_sheet_events_v_rels_parent_fk": {
-          "name": "_post_balance_sheet_events_v_rels_parent_fk",
-          "tableFrom": "_post_balance_sheet_events_v_rels",
-          "tableTo": "_post_balance_sheet_events_v",
-          "columnsFrom": [
-            "parent_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "cascade",
-          "onUpdate": "no action"
-        },
-        "_post_balance_sheet_events_v_rels_users_fk": {
-          "name": "_post_balance_sheet_events_v_rels_users_fk",
-          "tableFrom": "_post_balance_sheet_events_v_rels",
-          "tableTo": "users",
-          "columnsFrom": [
-            "users_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "cascade",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "checkConstraints": {}
-    },
     "post_close_analytics_reports": {
       "name": "post_close_analytics_reports",
       "columns": {
@@ -85580,8 +85050,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_11_idx": {
-          "name": "tenant_reference_11_idx",
+        "tenant_reference_10_idx": {
+          "name": "tenant_reference_10_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -86023,8 +85493,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_11_idx": {
-          "name": "version_tenant_version_reference_11_idx",
+        "version_tenant_version_reference_10_idx": {
+          "name": "version_tenant_version_reference_10_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -86710,8 +86180,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_12_idx": {
-          "name": "tenant_reference_12_idx",
+        "tenant_reference_11_idx": {
+          "name": "tenant_reference_11_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -87446,8 +86916,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_12_idx": {
-          "name": "version_tenant_version_reference_12_idx",
+        "version_tenant_version_reference_11_idx": {
+          "name": "version_tenant_version_reference_11_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -96209,8 +95679,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_13_idx": {
-          "name": "tenant_reference_13_idx",
+        "tenant_reference_12_idx": {
+          "name": "tenant_reference_12_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -96940,8 +96410,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_13_idx": {
-          "name": "version_tenant_version_reference_13_idx",
+        "version_tenant_version_reference_12_idx": {
+          "name": "version_tenant_version_reference_12_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -104671,8 +104141,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_14_idx": {
-          "name": "tenant_reference_14_idx",
+        "tenant_reference_13_idx": {
+          "name": "tenant_reference_13_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -105258,8 +104728,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_14_idx": {
-          "name": "version_tenant_version_reference_14_idx",
+        "version_tenant_version_reference_13_idx": {
+          "name": "version_tenant_version_reference_13_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -106444,8 +105914,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_15_idx": {
-          "name": "tenant_reference_15_idx",
+        "tenant_reference_14_idx": {
+          "name": "tenant_reference_14_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -107771,8 +107241,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_15_idx": {
-          "name": "version_tenant_version_reference_15_idx",
+        "version_tenant_version_reference_14_idx": {
+          "name": "version_tenant_version_reference_14_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -110406,8 +109876,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_16_idx": {
-          "name": "tenant_reference_16_idx",
+        "tenant_reference_15_idx": {
+          "name": "tenant_reference_15_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -111251,8 +110721,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_16_idx": {
-          "name": "version_tenant_version_reference_16_idx",
+        "version_tenant_version_reference_15_idx": {
+          "name": "version_tenant_version_reference_15_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -113187,8 +112657,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_17_idx": {
-          "name": "tenant_reference_17_idx",
+        "tenant_reference_16_idx": {
+          "name": "tenant_reference_16_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -113823,8 +113293,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_17_idx": {
-          "name": "version_tenant_version_reference_17_idx",
+        "version_tenant_version_reference_16_idx": {
+          "name": "version_tenant_version_reference_16_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -114489,8 +113959,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_18_idx": {
-          "name": "tenant_reference_18_idx",
+        "tenant_reference_17_idx": {
+          "name": "tenant_reference_17_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -115113,8 +114583,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_18_idx": {
-          "name": "version_tenant_version_reference_18_idx",
+        "version_tenant_version_reference_17_idx": {
+          "name": "version_tenant_version_reference_17_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -116587,8 +116057,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_19_idx": {
-          "name": "tenant_reference_19_idx",
+        "tenant_reference_18_idx": {
+          "name": "tenant_reference_18_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -117177,8 +116647,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_19_idx": {
-          "name": "version_tenant_version_reference_19_idx",
+        "version_tenant_version_reference_18_idx": {
+          "name": "version_tenant_version_reference_18_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -117863,8 +117333,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_20_idx": {
-          "name": "tenant_reference_20_idx",
+        "tenant_reference_19_idx": {
+          "name": "tenant_reference_19_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -118553,8 +118023,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_20_idx": {
-          "name": "version_tenant_version_reference_20_idx",
+        "version_tenant_version_reference_19_idx": {
+          "name": "version_tenant_version_reference_19_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -118975,8 +118445,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_21_idx": {
-          "name": "tenant_reference_21_idx",
+        "tenant_reference_20_idx": {
+          "name": "tenant_reference_20_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -119439,8 +118909,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_21_idx": {
-          "name": "version_tenant_version_reference_21_idx",
+        "version_tenant_version_reference_20_idx": {
+          "name": "version_tenant_version_reference_20_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -123372,8 +122842,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_22_idx": {
-          "name": "tenant_reference_22_idx",
+        "tenant_reference_21_idx": {
+          "name": "tenant_reference_21_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -123869,8 +123339,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_22_idx": {
-          "name": "version_tenant_version_reference_22_idx",
+        "version_tenant_version_reference_21_idx": {
+          "name": "version_tenant_version_reference_21_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -125304,8 +124774,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_23_idx": {
-          "name": "tenant_reference_23_idx",
+        "tenant_reference_22_idx": {
+          "name": "tenant_reference_22_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -125837,8 +125307,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_23_idx": {
-          "name": "version_tenant_version_reference_23_idx",
+        "version_tenant_version_reference_22_idx": {
+          "name": "version_tenant_version_reference_22_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -126484,8 +125954,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_24_idx": {
-          "name": "tenant_reference_24_idx",
+        "tenant_reference_23_idx": {
+          "name": "tenant_reference_23_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -127258,8 +126728,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_24_idx": {
-          "name": "version_tenant_version_reference_24_idx",
+        "version_tenant_version_reference_23_idx": {
+          "name": "version_tenant_version_reference_23_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -130848,8 +130318,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_25_idx": {
-          "name": "tenant_reference_25_idx",
+        "tenant_reference_24_idx": {
+          "name": "tenant_reference_24_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -131379,8 +130849,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_25_idx": {
-          "name": "version_tenant_version_reference_25_idx",
+        "version_tenant_version_reference_24_idx": {
+          "name": "version_tenant_version_reference_24_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -133036,8 +132506,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_26_idx": {
-          "name": "tenant_reference_26_idx",
+        "tenant_reference_25_idx": {
+          "name": "tenant_reference_25_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -133650,8 +133120,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_26_idx": {
-          "name": "version_tenant_version_reference_26_idx",
+        "version_tenant_version_reference_25_idx": {
+          "name": "version_tenant_version_reference_25_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -134137,8 +133607,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_27_idx": {
-          "name": "tenant_reference_27_idx",
+        "tenant_reference_26_idx": {
+          "name": "tenant_reference_26_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -134679,8 +134149,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_27_idx": {
-          "name": "version_tenant_version_reference_27_idx",
+        "version_tenant_version_reference_26_idx": {
+          "name": "version_tenant_version_reference_26_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -135188,8 +134658,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_28_idx": {
-          "name": "tenant_reference_28_idx",
+        "tenant_reference_27_idx": {
+          "name": "tenant_reference_27_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -135739,8 +135209,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_28_idx": {
-          "name": "version_tenant_version_reference_28_idx",
+        "version_tenant_version_reference_27_idx": {
+          "name": "version_tenant_version_reference_27_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -152905,8 +152375,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_29_idx": {
-          "name": "tenant_reference_29_idx",
+        "tenant_reference_28_idx": {
+          "name": "tenant_reference_28_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -153525,8 +152995,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_29_idx": {
-          "name": "version_tenant_version_reference_29_idx",
+        "version_tenant_version_reference_28_idx": {
+          "name": "version_tenant_version_reference_28_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -163217,8 +162687,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_30_idx": {
-          "name": "tenant_reference_30_idx",
+        "tenant_reference_29_idx": {
+          "name": "tenant_reference_29_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -163667,8 +163137,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_30_idx": {
-          "name": "version_tenant_version_reference_30_idx",
+        "version_tenant_version_reference_29_idx": {
+          "name": "version_tenant_version_reference_29_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -164299,8 +163769,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_31_idx": {
-          "name": "tenant_reference_31_idx",
+        "tenant_reference_30_idx": {
+          "name": "tenant_reference_30_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -164980,8 +164450,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_31_idx": {
-          "name": "version_tenant_version_reference_31_idx",
+        "version_tenant_version_reference_30_idx": {
+          "name": "version_tenant_version_reference_30_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -166371,8 +165841,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_32_idx": {
-          "name": "tenant_reference_32_idx",
+        "tenant_reference_31_idx": {
+          "name": "tenant_reference_31_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -167065,8 +166535,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_32_idx": {
-          "name": "version_tenant_version_reference_32_idx",
+        "version_tenant_version_reference_31_idx": {
+          "name": "version_tenant_version_reference_31_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -169010,8 +168480,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_33_idx": {
-          "name": "tenant_reference_33_idx",
+        "tenant_reference_32_idx": {
+          "name": "tenant_reference_32_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -169577,8 +169047,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_33_idx": {
-          "name": "version_tenant_version_reference_33_idx",
+        "version_tenant_version_reference_32_idx": {
+          "name": "version_tenant_version_reference_32_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -170123,8 +169593,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_34_idx": {
-          "name": "tenant_reference_34_idx",
+        "tenant_reference_33_idx": {
+          "name": "tenant_reference_33_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -170630,8 +170100,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_34_idx": {
-          "name": "version_tenant_version_reference_34_idx",
+        "version_tenant_version_reference_33_idx": {
+          "name": "version_tenant_version_reference_33_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -171088,8 +170558,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_35_idx": {
-          "name": "tenant_reference_35_idx",
+        "tenant_reference_34_idx": {
+          "name": "tenant_reference_34_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -171588,8 +171058,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_35_idx": {
-          "name": "version_tenant_version_reference_35_idx",
+        "version_tenant_version_reference_34_idx": {
+          "name": "version_tenant_version_reference_34_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -194026,8 +193496,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_36_idx": {
-          "name": "tenant_reference_36_idx",
+        "tenant_reference_35_idx": {
+          "name": "tenant_reference_35_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -194423,8 +193893,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_36_idx": {
-          "name": "version_tenant_version_reference_36_idx",
+        "version_tenant_version_reference_35_idx": {
+          "name": "version_tenant_version_reference_35_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -194769,8 +194239,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_37_idx": {
-          "name": "tenant_reference_37_idx",
+        "tenant_reference_36_idx": {
+          "name": "tenant_reference_36_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -195144,8 +194614,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_37_idx": {
-          "name": "version_tenant_version_reference_37_idx",
+        "version_tenant_version_reference_36_idx": {
+          "name": "version_tenant_version_reference_36_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -195511,8 +194981,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_38_idx": {
-          "name": "tenant_reference_38_idx",
+        "tenant_reference_37_idx": {
+          "name": "tenant_reference_37_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -195920,8 +195390,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_38_idx": {
-          "name": "version_tenant_version_reference_38_idx",
+        "version_tenant_version_reference_37_idx": {
+          "name": "version_tenant_version_reference_37_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -200819,8 +200289,8 @@
           ],
           "isUnique": false
         },
-        "tenant_reference_39_idx": {
-          "name": "tenant_reference_39_idx",
+        "tenant_reference_38_idx": {
+          "name": "tenant_reference_38_idx",
           "columns": [
             "tenant_id",
             "reference"
@@ -201263,8 +200733,8 @@
           ],
           "isUnique": false
         },
-        "version_tenant_version_reference_39_idx": {
-          "name": "version_tenant_version_reference_39_idx",
+        "version_tenant_version_reference_38_idx": {
+          "name": "version_tenant_version_reference_38_idx",
           "columns": [
             "version_tenant_id",
             "version_reference"
@@ -221995,13 +221465,6 @@
           "notNull": false,
           "autoincrement": false
         },
-        "products_id": {
-          "name": "products_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
         "users_id": {
           "name": "users_id",
           "type": "text(36)",
@@ -222046,13 +221509,6 @@
           ],
           "isUnique": false
         },
-        "redirects_rels_products_id_idx": {
-          "name": "redirects_rels_products_id_idx",
-          "columns": [
-            "products_id"
-          ],
-          "isUnique": false
-        },
         "redirects_rels_users_id_idx": {
           "name": "redirects_rels_users_id_idx",
           "columns": [
@@ -222094,19 +221550,6 @@
           "tableTo": "posts",
           "columnsFrom": [
             "posts_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "cascade",
-          "onUpdate": "no action"
-        },
-        "redirects_rels_products_fk": {
-          "name": "redirects_rels_products_fk",
-          "tableFrom": "redirects_rels",
-          "tableTo": "products",
-          "columnsFrom": [
-            "products_id"
           ],
           "columnsTo": [
             "id"
@@ -222324,13 +221767,6 @@
           "notNull": false,
           "autoincrement": false
         },
-        "products_id": {
-          "name": "products_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
         "users_id": {
           "name": "users_id",
           "type": "text(36)",
@@ -222375,13 +221811,6 @@
           ],
           "isUnique": false
         },
-        "_redirects_v_rels_products_id_idx": {
-          "name": "_redirects_v_rels_products_id_idx",
-          "columns": [
-            "products_id"
-          ],
-          "isUnique": false
-        },
         "_redirects_v_rels_users_id_idx": {
           "name": "_redirects_v_rels_users_id_idx",
           "columns": [
@@ -222423,19 +221852,6 @@
           "tableTo": "posts",
           "columnsFrom": [
             "posts_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "cascade",
-          "onUpdate": "no action"
-        },
-        "_redirects_v_rels_products_fk": {
-          "name": "_redirects_v_rels_products_fk",
-          "tableFrom": "_redirects_v_rels",
-          "tableTo": "products",
-          "columnsFrom": [
-            "products_id"
           ],
           "columnsTo": [
             "id"
@@ -227754,6 +227170,6 @@
   "internal": {
     "indexes": {}
   },
-  "id": "10f57a96-eccd-4056-86ed-024075f8bef1",
+  "id": "2ca20aab-f033-4d37-9b57-5a0ce5b97be9",
   "prevId": "00000000-0000-0000-0000-000000000000"
 }

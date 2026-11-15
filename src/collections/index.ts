@@ -280,7 +280,6 @@ export { default as FairValueMeasurements } from '@/collections/fair-value-measu
 export { default as EarningsPerShare } from '@/collections/earnings-per-share'
 export { default as InsuranceContracts } from '@/collections/insurance-contracts'
 export { default as RegulatoryDeferralAccounts } from '@/collections/regulatory-deferral-accounts'
-export { default as PostBalanceSheetEvents } from '@/collections/post-balance-sheet-events'
 export { default as TransactionFailures } from '@/collections/transaction-failures'
 
 // Transfer Pricing

@@ -1,7 +1,7 @@
 {
   "upload_type": "software",
   "title": "erpax: Source-available multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound",
-  "description": "<p>Source-available multi-tenant ERP &amp; double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound. Counted from the repository when this record was generated: 193 collections in Payload's generated configuration, 7 database migrations, and 335 theorems in 39 Lean files accepted by the Lean kernel, 239 of them axiom-free, 96 on Lean's standard axioms and 0 resting on sorry (sealed 2026-11-15). A theorem proves the decision it states, never the facts it is fed.</p>",
+  "description": "<p>Source-available multi-tenant ERP &amp; double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound. Counted from the repository when this record was generated: 192 collections in Payload's generated configuration, 7 database migrations, and 335 theorems in 39 Lean files accepted by the Lean kernel, 239 of them axiom-free, 96 on Lean's standard axioms and 0 resting on sorry (sealed 2026-11-15). A theorem proves the decision it states, never the facts it is fed.</p>",
   "version": "1.0.26",
   "creators": [
     {

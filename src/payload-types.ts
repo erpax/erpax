@@ -338,7 +338,6 @@ export interface Config {
     'legal-entities': LegalEntity;
     'period-end-adjustments': PeriodEndAdjustment;
     'period-locks': PeriodLock;
-    'post-balance-sheet-events': PostBalanceSheetEvent;
     'post-close-analytics-reports': PostCloseAnalyticsReport;
     'prior-period-adjustments': PriorPeriodAdjustment;
     provisions: Provision;
@@ -569,7 +568,6 @@ export interface Config {
     'legal-entities': LegalEntitiesSelect<false> | LegalEntitiesSelect<true>;
     'period-end-adjustments': PeriodEndAdjustmentsSelect<false> | PeriodEndAdjustmentsSelect<true>;
     'period-locks': PeriodLocksSelect<false> | PeriodLocksSelect<true>;
-    'post-balance-sheet-events': PostBalanceSheetEventsSelect<false> | PostBalanceSheetEventsSelect<true>;
     'post-close-analytics-reports': PostCloseAnalyticsReportsSelect<false> | PostCloseAnalyticsReportsSelect<true>;
     'prior-period-adjustments': PriorPeriodAdjustmentsSelect<false> | PriorPeriodAdjustmentsSelect<true>;
     provisions: ProvisionsSelect<false> | ProvisionsSelect<true>;
@@ -5228,6 +5226,52 @@ export interface FiscalPeriod {
      */
     effectiveDate?: string | null;
   };
+  /**
+   * IAS 10 — what happened after this period ended and before its statements were authorised. Adjusting events are booked; the others are disclosed.
+   */
+  subsequentEvents?:
+    | {
+        eventDate: string;
+        classification: 'adjusting' | 'non_adjusting' | 'going_concern';
+        eventKind:
+          | 'litigation'
+          | 'impairment_evidence'
+          | 'customer_bankruptcy'
+          | 'sale'
+          | 'acquisition'
+          | 'restructuring'
+          | 'fx_change'
+          | 'casualty'
+          | 'capital_event'
+          | 'dividend'
+          | 'other';
+        description: string;
+        /**
+         * Approximate financial impact (cents).
+         */
+        estimatedImpact?: number | null;
+        /**
+         * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+         */
+        currency?: string | null;
+        status?: ('identified' | 'assessed' | 'adjusted' | 'disclosed' | 'not_material') | null;
+        /**
+         * The entry that books an adjusting event (required to mark it adjusted).
+         */
+        journalEntry?: (string | null) | JournalEntry;
+        /**
+         * IAS 10 §21 — in the financial-statement notes.
+         */
+        disclosedInFS?: boolean | null;
+        /**
+         * Slug of the related document, if known.
+         */
+        sourceCollection?: string | null;
+        sourceId?: string | null;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   notes?: {
     /**
      * Close memo / lock justification
@@ -12386,73 +12430,6 @@ export interface PeriodEndAdjustment {
     relationTo: 'users';
     value: string | User;
   } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IAS 10 — events occurring between reporting date and FS-authorisation date. Adjusting events book; non-adjusting events disclose.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "post-balance-sheet-events".
- */
-export interface PostBalanceSheetEvent {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Sequential reference (e.g. PBE-2026-Q1-001).
-   */
-  reference: string;
-  period: string | FiscalPeriod;
-  eventDate: string;
-  description: string;
-  classification: 'adjusting' | 'non_adjusting' | 'going_concern';
-  eventKind:
-    | 'litigation'
-    | 'impairment_evidence'
-    | 'customer_bankruptcy'
-    | 'sale'
-    | 'acquisition'
-    | 'restructuring'
-    | 'fx_change'
-    | 'casualty'
-    | 'capital_event'
-    | 'dividend'
-    | 'other';
-  /**
-   * Approximate financial impact (cents).
-   */
-  estimatedImpact?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Slug of the related document if known.
-   */
-  sourceCollection?: string | null;
-  sourceId?: string | null;
-  /**
-   * JE booked when classification = adjusting.
-   */
-  journalEntry?: (string | null) | JournalEntry;
-  /**
-   * IAS 10 §21 — disclosed in financial-statement notes when material.
-   */
-  disclosedInFS?: boolean | null;
-  status?: ('identified' | 'assessed' | 'adjusted' | 'disclosed' | 'not_material') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
   updatedBy?: {
     relationTo: 'users';
     value: string | User;
@@ -22981,6 +22958,23 @@ export interface FiscalPeriodsSelect<T extends boolean = true> {
         supercedes?: T;
         effectiveDate?: T;
       };
+  subsequentEvents?:
+    | T
+    | {
+        eventDate?: T;
+        classification?: T;
+        eventKind?: T;
+        description?: T;
+        estimatedImpact?: T;
+        currency?: T;
+        status?: T;
+        journalEntry?: T;
+        disclosedInFS?: T;
+        sourceCollection?: T;
+        sourceId?: T;
+        notes?: T;
+        id?: T;
+      };
   notes?:
     | T
     | {
@@ -23303,35 +23297,6 @@ export interface PeriodLocksSelect<T extends boolean = true> {
   notes?: T;
   handle?: T;
   createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "post-balance-sheet-events_select".
- */
-export interface PostBalanceSheetEventsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  period?: T;
-  eventDate?: T;
-  description?: T;
-  classification?: T;
-  eventKind?: T;
-  estimatedImpact?: T;
-  currency?: T;
-  sourceCollection?: T;
-  sourceId?: T;
-  journalEntry?: T;
-  disclosedInFS?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  handle?: T;
   updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -28888,7 +28853,6 @@ export interface CollectionQueryWidget {
       | 'legal-entities'
       | 'period-end-adjustments'
       | 'period-locks'
-      | 'post-balance-sheet-events'
       | 'post-close-analytics-reports'
       | 'prior-period-adjustments'
       | 'provisions'
@@ -29104,7 +29068,6 @@ export interface ActivityWidget {
           | 'legal-entities'
           | 'period-end-adjustments'
           | 'period-locks'
-          | 'post-balance-sheet-events'
           | 'post-close-analytics-reports'
           | 'prior-period-adjustments'
           | 'provisions'
@@ -29346,7 +29309,6 @@ export interface TaskCreateCollectionExport {
       | 'legal-entities'
       | 'period-end-adjustments'
       | 'period-locks'
-      | 'post-balance-sheet-events'
       | 'post-close-analytics-reports'
       | 'prior-period-adjustments'
       | 'provisions'
