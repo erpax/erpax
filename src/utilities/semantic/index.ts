@@ -112,16 +112,25 @@ const meter = (env: SemanticEnv, purpose: string, scope: string, computed: boole
   env.ANALYTICS_AI?.writeDataPoint({ blobs: [purpose, MODEL, scope], doubles: [computed ? 1 : 0], indexes: [purpose] })
 }
 
-/** afterChange on search: queue the embed task when the text's content key changed, and wake the sweep. */
+/**
+ * afterChange on search: queue the embed task when the text's content key changed, and wake the sweep.
+ * The index is housekeeping, not the caller's own action, so the job is queued as the system
+ * (overrideAccess): a save by someone who may not queue jobs (first-register, a seed, a cron) still
+ * indexes. And indexing never fails the save: a failure is logged and the document stands.
+ */
 export const enqueueEmbedding =
   (getEnv: EnvGetter): CollectionAfterChangeHook =>
   async ({ doc, previousDoc, req }) => {
     const text = textOf(doc as { title?: string; markdown?: string })
     const before = previousDoc && 'id' in (previousDoc as object) ? cacheKey(textOf(previousDoc as { title?: string; markdown?: string })) : null
     if (!text || !stale(before, cacheKey(text))) return doc
-    await req.payload.jobs.queue({ task: TASK as never, input: { id: String((doc as { id: unknown }).id) } as never, req })
-    const env = await getEnv().catch(() => ({}) as SemanticEnv)
-    await env.QUEUE_AI_BATCH?.send({ kind: 'sweep', task: TASK }).catch(() => undefined)
+    try {
+      await req.payload.jobs.queue({ task: TASK as never, input: { id: String((doc as { id: unknown }).id) } as never, req, overrideAccess: true })
+      const env = await getEnv().catch(() => ({}) as SemanticEnv)
+      await env.QUEUE_AI_BATCH?.send({ kind: 'sweep', task: TASK })
+    } catch (err) {
+      req.payload.logger.warn({ err, msg: `semantic: could not queue the embedding of search document ${String((doc as { id: unknown }).id)}` })
+    }
     return doc
   }
 
