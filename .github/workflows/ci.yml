@@ -120,6 +120,8 @@ jobs:
       - run: ./node_modules/.bin/opennextjs-cloudflare build
       - name: Serve the built Worker and smoke it
         run: |
+          # wrangler hands a Worker its secrets from .dev.vars, not from the job's environment
+          printf 'PAYLOAD_SECRET=%s\n' "$PAYLOAD_SECRET" > .dev.vars
           ./node_modules/.bin/wrangler dev --local --port 8787 > "$RUNNER_TEMP/wrangler.log" 2>&1 &
           for i in $(seq 1 60); do curl -s -o /dev/null http://127.0.0.1:8787/ && break; sleep 2; done
           node scripts/smoke.mjs http://127.0.0.1:8787 || { tail -80 "$RUNNER_TEMP/wrangler.log"; exit 1; }
