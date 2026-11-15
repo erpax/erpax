@@ -82,8 +82,6 @@ export function tamperProofUuidField(collectionSlug: string): Field[] {
     required: true,
     admin: {
       readOnly: true,
-      // computed, so nothing to show a caller who is not signed in (the first-user form)
-      condition: (_data, _siblingData, context) => Boolean(context?.user),
       description:
         'Content-addressable UUID — auto-computed from the row\'s content (RFC 9562 §5.8 + RFC 8785). ' +
         'Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (' +
