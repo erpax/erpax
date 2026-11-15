@@ -38,7 +38,7 @@
  * @compliance SOX §404 (Byzantine tamper detection at the row level)
  */
 
-import type { Field, CollectionBeforeChangeHook } from 'payload'
+import { APIError, type Field, type CollectionBeforeChangeHook } from 'payload'
 import { computeContentUuid, stripNonContentFields } from '@/utilities/integrity/content'
 // Slice ZZZZZZZZZ-cut1 (2026-05-11) — collection rows now carry
 // structured uuidv8 (Law 61) with slot=collectionRow + TAMPER_PROOF
@@ -140,9 +140,10 @@ export function tamperProofBeforeChangeHook(collectionSlug: string): CollectionB
       typeof incomingUuid === 'string' &&
       incomingUuid !== previousUuid
     ) {
-      throw new Error(
+      throw new APIError(
         `Conservation Law 8 violation: tamper-proof collection '${collectionSlug}' rejects ` +
         `manual uuid changes. Stored: ${String(previousUuid)} → attempted: ${incomingUuid}.`,
+        400,
       )
     }
 
@@ -168,6 +169,23 @@ export function tamperProofBeforeChangeHook(collectionSlug: string): CollectionB
       content,
       tenantId,
     })
+
+    // Identical content is one document: the uuid is unique, and a second insert of the same content
+    // failed on the index as a 500. Say so, and name the document that already has it.
+    if (uuid !== previousUuid && req?.payload) {
+      const self = (originalDoc as { id?: string | number } | undefined)?.id
+      const { docs } = await req.payload.find({
+        collection: collectionSlug as never,
+        where: { and: [{ uuid: { equals: uuid } }, ...(self !== undefined ? [{ id: { not_equals: self } }] : [])] },
+        depth: 0,
+        limit: 1,
+        overrideAccess: true,
+        req,
+      })
+      const twin = (docs[0] as { id?: string | number } | undefined)?.id
+      if (twin !== undefined)
+        throw new APIError(`An identical ${collectionSlug} document already exists (${twin}): its content gives the same uuid. Change what differs, or use the existing one.`, 409)
+    }
 
     return { ...(data as Record<string, unknown>), uuid }
   }
