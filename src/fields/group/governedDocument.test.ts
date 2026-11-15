@@ -40,12 +40,12 @@ describe('governed documents on pages — never public, read and written by the 
     expect(group.permits('read', 'pages', { documentType: STD, tenant: 't2' })).toBe(false)
   })
 
-  it('a reporting standard is written by a super-admin only; a website page by the site rule', async () => {
+  it('a reporting standard is written by a super-admin only; a website page by the site rule, beside the types the role writes', async () => {
     expect(await mayWrite(req(tenantAdmin), STD, 't1', none)).toBe(false)
     expect(await mayWrite(req(superAdmin), STD, 't1', none)).toBe(true)
     const write = pageWrite(() => ({ tenant: { equals: 't1' } }), none)
     await expect(write({ req: req(tenantAdmin), data: { documentType: STD, tenant: 't1' } } as never)).resolves.toBe(false)
-    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] })
+    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification'] } }] })
   })
 
   it('a type names what it requires', async () => {
@@ -54,5 +54,26 @@ describe('governed documents on pages — never public, read and written by the 
     expect(await run({ documentType: STD, document: { code: 'IFRS 15', effectiveDate: '2018-01-01', classification: 'ifrs' } }, superAdmin)).toBeDefined()
     await expect(run({ documentType: STD, tenant: 't1' }, tenantAdmin, { documentType: null, tenant: 't1' })).rejects.toThrow()
     expect(documentError(null, {})).toBe(true)
+  })
+
+  it('a management certification carries its own details block; a qualified or adverse assertion names its findings', () => {
+    const MC = 'management-certification'
+    const block = (assertions: object[], relatedFindings: string[] = []) => ({ blockType: MC, certificationType: 'sox-302', certifyingOfficer: 'CFO', entity: 'e1', assertions, relatedFindings })
+    expect(documentError(MC, { effectiveDate: '2026-03-31' })).toMatch(/carries its details/)
+    expect(documentError(MC, { effectiveDate: '2026-03-31', details: [{ blockType: 'other' }] })).toMatch(/its own details, not other/)
+    expect(documentError(MC, { details: [block([])] })).toMatch(/names its effectiveDate/)
+    expect(documentError(MC, { effectiveDate: '2026-03-31', details: [block([{ assertion: 'ICFR effective', certificationLevel: 'fully-certified' }])] })).toBe(true)
+    expect(documentError(MC, { effectiveDate: '2026-03-31', details: [block([{ assertion: 'ICFR effective', certificationLevel: 'adverse' }])] })).toMatch(/names the findings/)
+    expect(documentError(MC, { effectiveDate: '2026-03-31', details: [block([{ assertion: 'ICFR effective', certificationLevel: 'qualified' }], ['f1'])] })).toBe(true)
+    expect(documentError(STD, { code: 'IFRS 15', effectiveDate: '2018-01-01', classification: 'ifrs', details: [block([])] })).toMatch(/its own details, not management-certification/)
+  })
+
+  it('a management certification is read by audit and compliance staff and written by admins', async () => {
+    const MC = 'management-certification'
+    expect(abilityForRoles({ roles: ['user', 'audit-staff'] }).permits('read', 'pages', { documentType: MC })).toBe(true)
+    expect(abilityForRoles({ roles: ['user', 'finance'] }).permits('read', 'pages', { documentType: MC })).toBe(false)
+    expect(abilityForRoles({ roles: ['admin'] }).permits('update', 'pages', { documentType: MC })).toBe(true)
+    expect(await mayWrite(req(tenantAdmin), MC, 't1', none)).toBe(true)
+    expect(await mayWrite(req(finance), MC, 't1', none)).toBe(false)
   })
 })

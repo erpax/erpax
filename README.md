@@ -26,8 +26,8 @@ Each figure is computed from the source beside it whenever this file is generate
 | Payload | 4.0.0-beta.9 | `package.json` |
 | Next.js | ^16.4.1 | `package.json` |
 | Node | ^24.22.3 \|\| >=26.13.1 | `package.json` |
-| Collections | 191 | `src/payload-types.ts`, Payload's generated `Config`, without Payload's own `payload-*` |
-| Migrations | 9, the latest `20261115_201759_fold_governed_pages` | `src/migrations` |
+| Collections | 190 | `src/payload-types.ts`, Payload's generated `Config`, without Payload's own `payload-*` |
+| Migrations | 10, the latest `20261115_220659_fold_management_certifications` | `src/migrations` |
 | Kernel-checked theorems | 363 in 47 files: 267 axiom-free, 96 on Lean's standard axioms, 0 stubbed (sealed 2026-11-15) | `src/utilities/verify/lean/inventory.generated.json` |
 | License | CC-BY-NC-ND-4.0 | `package.json` |
 
