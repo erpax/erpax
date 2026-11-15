@@ -673,8 +673,6 @@
   "tenants.plural": "Huurders",
   "tenants.publicSiteUrl": "Openbare website-URL",
   "tenants.publicSiteUrlHelp": "Optionele canonieke website-URL voor deze huurder (vervangen aanvraaghost indien ingesteld). Laat leeg om de inkomende aanvraaghost te gebruiken.",
-  "tenants.resendApiKey": "Sleutel voor API opnieuw verzenden",
-  "tenants.resendApiKeyHelp": "Sleutel voor Resend-API voor transactionele e-mail voor deze huurder (alleen super-admin). Ontwikkeling kan terugvallen op RESEND_API_KEY.",
   "tenants.singular": "Huurder",
   "tenants.slug": "Slak",
   "tenants.slugHelp": "Gebruikt voor URL-paden, voorbeeld: /tenant-slug/page-slug",

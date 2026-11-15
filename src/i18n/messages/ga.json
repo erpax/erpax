@@ -673,8 +673,6 @@
   "tenants.plural": "Tionóntaí",
   "tenants.publicSiteUrl": "URL an tsuímh phoiblí",
   "tenants.publicSiteUrlHelp": "URL canónach roghnach an tsuímh don tionónta seo (sáraíonn an Host iarratais nuair atá sé socraithe). Fág folamh chun an Host atá ag teacht isteach a úsáid.",
-  "tenants.resendApiKey": "Eochair API Resend",
-  "tenants.resendApiKeyHelp": "Eochair API Resend le haghaidh ríomhphoist idirbheartaíochta an tionónta seo (superadmin amháin). Sa bhforbairt is féidir leis titim ar ais ar RESEND_API_KEY.",
   "tenants.singular": "Tionónta",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Úsáidte le haghaidh conairí URL, sampla: /tenant-slug/page-slug",

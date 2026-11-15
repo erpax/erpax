@@ -80,7 +80,7 @@ import {
 import { resolvePayloadSecret } from '@/utilities/secret'
 import { getServerSideURL } from '@/utilities/rfc/3986'
 import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
-import { tenantAwareResendEmailAdapter } from '@/utilities/email/resend/adapter'
+import { cloudflareEmailAdapter, type SendEmailBinding } from '@/utilities/email/cloudflare'
 import localization from '@/i18n/localization'
 import {
   defaultLocale,
@@ -200,7 +200,8 @@ const adminTranslations = Object.fromEntries(
 )
 
 export default buildConfig({
-  email: tenantAwareResendEmailAdapter,
+  // Mail goes out through Cloudflare Email Service (the Worker's `EMAIL` send_email binding), read when sent
+  email: cloudflareEmailAdapter(async () => ((await getCloudflare()).env as { EMAIL?: SendEmailBinding }).EMAIL),
   admin: {
     components: {
       beforeLogin: ['@/components/before/login'],

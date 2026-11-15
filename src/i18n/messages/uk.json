@@ -673,8 +673,6 @@
   "tenants.plural": "Орендарі",
   "tenants.publicSiteUrl": "URL публічного сайту",
   "tenants.publicSiteUrlHelp": "Необов'язковий канонічний URL сайту для цього орендаря (перевизначає Host запиту, коли встановлено). Залиште порожнім, щоб використовувати вхідний Host.",
-  "tenants.resendApiKey": "API-ключ Resend",
-  "tenants.resendApiKeyHelp": "API-ключ Resend для транзакційної електронної пошти цього орендаря (тільки суперадмін). У розробці може використовуватися RESEND_API_KEY.",
   "tenants.singular": "Орендар",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Використовується для шляхів URL, наприклад: /tenant-slug/page-slug",

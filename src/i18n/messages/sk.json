@@ -673,8 +673,6 @@
   "tenants.plural": "Nájomcovia",
   "tenants.publicSiteUrl": "URL verejnej stránky",
   "tenants.publicSiteUrlHelp": "Voliteľná kanonická URL stránky pre tohto nájomcu (preváži Host požiadavky, keď je nastavená). Nechajte prázdne na použitie prichádzajúceho Host.",
-  "tenants.resendApiKey": "API kľúč Resend",
-  "tenants.resendApiKeyHelp": "API kľúč Resend pre transakčné e-maily tohto nájomcu (iba superadmin). Vývoj môže použiť RESEND_API_KEY.",
   "tenants.singular": "Nájomca",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Používa sa pre cesty URL, napr.: /tenant-slug/page-slug",

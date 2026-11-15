@@ -1,6 +1,6 @@
 /**
  * Per-tenant remote-secret resolution — Stripe API keys, webhook secrets,
- * Resend API keys, etc. pulled from the tenant row at request time.
+ * the tenant's email From address, etc. pulled from the tenant row at request time.
  *
  * @standard NIST SP-800-108 key-derivation-function (sibling: `getPreviewSecret`)
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation per-tenant-keys
@@ -19,15 +19,6 @@ import type { Cart, Tenant, User } from '@/utilities/types'
 export function devStripeSecretFallback(): string {
   if (process.env.NODE_ENV === 'production') return ''
   return process.env.STRIPE_SECRET_KEY?.trim() || ''
-}
-
-/**
- * Resend API key when no tenant-specific key applies (e.g. first admin user before any tenant
- * exists, or verification email before `Users.tenants` is populated). Uses `RESEND_API_KEY`
- * in **all** environments — unlike Stripe/tenant secrets we intentionally allow a platform key.
- */
-export function globalResendApiKeyFallback(): string {
-  return process.env.RESEND_API_KEY?.trim() || ''
 }
 
 export function devStripeWebhookFallback(): string {
@@ -135,36 +126,11 @@ function normalizeToEmails(to: unknown): string[] {
 }
 
 /**
- * Resolve Resend API key: first tenant (via Users.tenants) matching `to` addresses that has `resendApiKey`,
- * else development `RESEND_API_KEY`.
+ * The From address for a message: the first tenant of a recipient that sets `emailDefaultFromAddress`,
+ * else the platform's `EMAIL_DEFAULT_FROM_ADDRESS`. Either must be on a domain onboarded to Cloudflare
+ * Email Sending.
  */
-export async function resolveResendApiKeyForMessage(
-  payload: Payload,
-  message: { to?: unknown },
-): Promise<string> {
-  const emails = normalizeToEmails(message.to)
-  for (const email of emails) {
-    const users = await payload.find({
-      collection: 'users',
-      where: { email: { equals: email } },
-      depth: 1,
-      limit: 1,
-      overrideAccess: true,
-    })
-    const user = users.docs[0] as User | undefined
-    const tenantLinks = user?.tenants
-    if (!tenantLinks?.length) continue
-    for (const row of tenantLinks) {
-      const tid = tenantIdFromRelation(row.tenant)
-      const tenant = await getTenantById(payload, tid)
-      const key = tenant?.resendApiKey?.trim()
-      if (key) return key
-    }
-  }
-  return globalResendApiKeyFallback()
-}
-
-export async function resolveResendDefaultsForMessage(
+export async function resolveEmailDefaultsForMessage(
   payload: Payload,
   message: { to?: unknown },
 ): Promise<{ address: string; name: string }> {
@@ -186,13 +152,13 @@ export async function resolveResendDefaultsForMessage(
       if (tenant?.emailDefaultFromAddress?.trim()) {
         return {
           address: tenant.emailDefaultFromAddress.trim(),
-          name: tenant.emailDefaultFromName?.trim() || 'site',
+          name: tenant.emailDefaultFromName?.trim() || 'erpax',
         }
       }
     }
   }
   return {
-    address: process.env.EMAIL_DEFAULT_FROM_ADDRESS || 'onboarding@resend.dev',
-    name: process.env.EMAIL_DEFAULT_FROM_NAME || 'site',
+    address: process.env.EMAIL_DEFAULT_FROM_ADDRESS?.trim() || '',
+    name: process.env.EMAIL_DEFAULT_FROM_NAME?.trim() || 'erpax',
   }
 }

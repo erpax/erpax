@@ -673,8 +673,6 @@
   "tenants.plural": "Najemcy",
   "tenants.publicSiteUrl": "Adres URL witryny publicznej",
   "tenants.publicSiteUrlHelp": "Opcjonalny kanoniczny adres URL witryny dla tego najemcy (zastępuje hosta żądania po ustawieniu). Pozostaw puste, aby użyć przychodzącego hosta żądania.",
-  "tenants.resendApiKey": "Klucz API Resend",
-  "tenants.resendApiKeyHelp": "Klucz API Resend dla transakcyjnej poczty e-mail dla tego najemcy (tylko superadministrator). Rozwój może wrócić do RESEND_API_KEY.",
   "tenants.singular": "Najemca",
   "tenants.slug": "Ślimak",
   "tenants.slugHelp": "Używane dla ścieżek URL, przykład: /tenant-slug/page-slug",

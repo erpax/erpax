@@ -673,8 +673,6 @@
   "tenants.plural": "Bérlők",
   "tenants.publicSiteUrl": "Nyilvános webhely URL-je",
   "tenants.publicSiteUrlHelp": "Opcionális kanonikus webhely URL ehhez a bérlőhöz (felülírja a kérés Hostját, ha be van állítva). Hagyja üresen a bejövő Host használatához.",
-  "tenants.resendApiKey": "Resend API-kulcs",
-  "tenants.resendApiKeyHelp": "Resend API-kulcs a bérlő tranzakciós e-mailjeihez (csak superadmin). Fejlesztés alatt a RESEND_API_KEY-re eshet vissza.",
   "tenants.singular": "Bérlő",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "URL-útvonalakhoz használt, példa: /tenant-slug/page-slug",

@@ -673,8 +673,6 @@
   "tenants.plural": "テナント",
   "tenants.publicSiteUrl": "公開サイトのURL",
   "tenants.publicSiteUrlHelp": "このテナントのオプションの正規サイトURL（設定時はリクエストのHostを上書きします）。空のままにすると着信Hostを使用します。",
-  "tenants.resendApiKey": "Resend APIキー",
-  "tenants.resendApiKeyHelp": "このテナントのトランザクションメール用Resend APIキー（スーパー管理者のみ）。開発時はRESEND_API_KEYにフォールバックすることがあります。",
   "tenants.singular": "テナント",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "URLパスに使用されます。例: /tenant-slug/page-slug",

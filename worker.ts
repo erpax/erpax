@@ -26,6 +26,7 @@
 import openNextHandler from './.open-next/worker.js'
 import { runScheduledJobs, type CronEnv } from './src/utilities/run/cron'
 import { consumeQueueBatch, type QueueBatchLike } from './src/utilities/run/queue'
+import { deliverInboundEmail, type EmailEnv, type InboundEmailLike } from './src/utilities/run/email'
 
 // OpenNext's own Durable Objects (queue / sharded-tag-cache / bucket-cache).
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -69,6 +70,11 @@ const erpaxWorker = {
   // ("Queue handler is missing [code: 11001]"). Logic + proofs live in src/run/queue.
   async queue(batch: QueueBatchLike, env: CronEnv): Promise<void> {
     await consumeQueueBatch(batch, env)
+  },
+  // Cloudflare Email Routing: a routing rule (or the catch-all) sends a message here, and it becomes a
+  // `messages` document for the user it is addressed to. Logic in src/utilities/run/email.
+  async email(message: InboundEmailLike, env: EmailEnv): Promise<void> {
+    await deliverInboundEmail(message, env)
   },
 }
 

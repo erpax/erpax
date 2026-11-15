@@ -673,8 +673,6 @@
   "tenants.plural": "Наематели",
   "tenants.publicSiteUrl": "URL на публичния сайт",
   "tenants.publicSiteUrlHelp": "Незадължителен канонично URL на сайта за този наемател (замести заявката на хост, когато е зададен). Оставете празно, за да използвате входящия хост на заявката.",
-  "tenants.resendApiKey": "API ключ на Resend",
-  "tenants.resendApiKeyHelp": "API ключ на Resend за транзакционна поща за този наемател (само суперадминистратор). Развитието може да се върне към RESEND_API_KEY.",
   "tenants.singular": "Наемател",
   "tenants.slug": "Мушкарец",
   "tenants.slugHelp": "Използвано за пътеки на URL, пример: /tenant-slug/page-slug",

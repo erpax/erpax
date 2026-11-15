@@ -50,9 +50,6 @@ importers:
       '@payloadcms/db-d1-sqlite':
         specifier: 4.0.0-beta.9
         version: 4.0.0-beta.9(@types/pg@8.20.2)(payload@4.0.0-beta.9(graphql@17.0.2)(typescript@6.0.3))(pg@8.22.0)
-      '@payloadcms/email-resend':
-        specifier: 4.0.0-beta.9
-        version: 4.0.0-beta.9(payload@4.0.0-beta.9(graphql@17.0.2)(typescript@6.0.3))
       '@payloadcms/live-preview-react':
         specifier: 4.0.0-beta.9
         version: 4.0.0-beta.9(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -227,6 +224,9 @@ importers:
       payload:
         specifier: 4.0.0-beta.9
         version: 4.0.0-beta.9(graphql@17.0.2)(typescript@6.0.3)
+      postal-mime:
+        specifier: ^4.2.1
+        version: 4.2.1
       prism-react-renderer:
         specifier: ^2.4.1
         version: 2.4.1(react@19.2.8)
@@ -1967,12 +1967,6 @@ packages:
 
   '@payloadcms/drizzle@4.0.0-beta.9':
     resolution: {integrity: sha512-djEa9hHghKjly82ZSuuuoDfs3AZptAoMIMKPYcIZ8O4ZgdfSYHCdJCyKBB40o/IFsJpzm3ev7Cryh4P6s2aTFw==}
-    peerDependencies:
-      payload: 4.0.0-beta.9
-
-  '@payloadcms/email-resend@4.0.0-beta.9':
-    resolution: {integrity: sha512-JxvG0r/zsSiwcHVN2AODIXVfq94TK01VZA4JQCMZ29bzZTvS/zQQHKHw4myWuihdxBE3ERHWwDAWYeupasp28A==}
-    engines: {node: ^24.22.3 || >=26.13.1}
     peerDependencies:
       payload: 4.0.0-beta.9
 
@@ -6133,6 +6127,10 @@ packages:
     resolution: {integrity: sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==}
     engines: {node: '>= 0.4'}
 
+  postal-mime@4.2.1:
+    resolution: {integrity: sha512-uFQnu6TPJe5IGzj3ZIjzAYCk7qnVYM3KFvo0JpRFftJKtxJcUSMgTaWsIXDakTKfN71fUULhjNNVbNonim5f0Q==}
+    engines: {node: '>=20'}
+
   postcss-selector-parser@6.0.10:
     resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
     engines: {node: '>=4'}
@@ -9330,10 +9328,6 @@ snapshots:
       - prisma
       - sql.js
       - sqlite3
-
-  '@payloadcms/email-resend@4.0.0-beta.9(payload@4.0.0-beta.9(graphql@17.0.2)(typescript@6.0.3))':
-    dependencies:
-      payload: 4.0.0-beta.9(graphql@17.0.2)(typescript@6.0.3)
 
   '@payloadcms/eslint-plugin@3.28.0(@testing-library/dom@10.4.1)(@typescript-eslint/eslint-plugin@8.65.0(@typescript-eslint/parser@8.65.0(eslint@9.22.0(jiti@2.7.0))(typescript@6.0.3))(eslint@9.22.0(jiti@2.7.0))(typescript@6.0.3))(jiti@2.7.0)(ts-api-utils@2.5.0(typescript@6.0.3))':
     dependencies:
@@ -14071,6 +14065,8 @@ snapshots:
   po-parser@2.1.1: {}
 
   possible-typed-array-names@1.1.0: {}
+
+  postal-mime@4.2.1: {}
 
   postcss-selector-parser@6.0.10:
     dependencies:

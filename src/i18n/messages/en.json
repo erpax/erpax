@@ -673,8 +673,6 @@
   "tenants.plural": "Tenants",
   "tenants.publicSiteUrl": "Public Site URL",
   "tenants.publicSiteUrlHelp": "Optional canonical site URL for this tenant (overrides request Host when set). Leave empty to use the incoming request host.",
-  "tenants.resendApiKey": "Resend API Key",
-  "tenants.resendApiKeyHelp": "Resend API key for transactional email for this tenant (super-admin only). Development may fall back to RESEND_API_KEY.",
   "tenants.singular": "Tenant",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Used for url paths, example: /tenant-slug/page-slug",

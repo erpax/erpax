@@ -673,8 +673,6 @@
   "tenants.plural": "Nuomininkai",
   "tenants.publicSiteUrl": "Viešos svetainės URL",
   "tenants.publicSiteUrlHelp": "Pasirinktinis kanoninės svetainės URL šiam nuomininkui (nustačius pakeičia užklausos Host). Palikite tuščią, kad būtų naudojamas įeinantis Host.",
-  "tenants.resendApiKey": "Resend API raktas",
-  "tenants.resendApiKeyHelp": "Resend API raktas šio nuomininko transakciniams el. laiškams (tik superadmin). Plėtotėje gali naudoti RESEND_API_KEY.",
   "tenants.singular": "Nuomininkas",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Naudojama URL keliams, pavyzdys: /tenant-slug/page-slug",

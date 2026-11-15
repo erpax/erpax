@@ -673,8 +673,6 @@
   "tenants.plural": "Арендаторы",
   "tenants.publicSiteUrl": "URL публичного сайта",
   "tenants.publicSiteUrlHelp": "Необязательный канонический URL сайта для этого арендатора (переопределяет Host запроса при установке). Оставьте пустым, чтобы использовать входящий Host.",
-  "tenants.resendApiKey": "API-ключ Resend",
-  "tenants.resendApiKeyHelp": "API-ключ Resend для транзакционной электронной почты этого арендатора (только суперадмин). В разработке может использоваться RESEND_API_KEY.",
   "tenants.singular": "Арендатор",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Используется для путей URL, например: /tenant-slug/page-slug",
