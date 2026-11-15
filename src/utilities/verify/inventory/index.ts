@@ -235,52 +235,78 @@ export const witnessCell = (witnesses: readonly ClayWitness[], problem: ClayProb
 export const censusLine = (inventory: Pick<ProofInventory, 'sealedAt' | 'census' | 'files' | 'sourcesHash'>): string =>
   `Kernel report sealed ${inventory.sealedAt}: ${inventory.census.theorems} theorems, ${inventory.census.axiomFree} axiom-free, ${inventory.census.standardAxioms} on Lean's three standard axioms, ${inventory.census.stubbed} stubbed, ${inventory.files.length} files, sources \`${inventory.sourcesHash}\`.`
 
-/**
- * Where the README disagrees with the kernel. Each problem's row must begin its witness cell with
- * exactly what was checked (linked), the settled list must be the computed one, and the census line
- * must be the sealed record's.
- */
-export const readmeClayErrors = (readme: string, witnesses: readonly ClayWitness[], inventory: Parameters<typeof censusLine>[0]): string[] => {
-  const errors: string[] = []
-  for (const problem of CLAY) {
-    const row = readme.split('\n').find((l) => new RegExp(`^\\| (\\*\\*)?${CLAY_LABEL[problem]}(\\*\\*)? \\|`).test(l) && l.split('|').length >= 4 && !l.includes('⟹'))
-    const cell = row?.split('|')[2]?.trim()
-    if (!cell) errors.push(`README: no Clay table row for ${CLAY_LABEL[problem]}`)
-    else if (!cell.startsWith(witnessCell(witnesses, problem))) errors.push(`README: ${CLAY_LABEL[problem]} must list ${witnessCell(witnesses, problem)}`)
-  }
-  const settled = claySettled(witnesses)
-  const settledText = settled.length ? settled.map((p) => CLAY_LABEL[p]).join(', ') : '**none**'
-  if (!readme.includes(`Settled by this corpus: ${settledText}`)) errors.push(`README: settled must read ${settledText}`)
-  if (!readme.includes(censusLine(inventory))) errors.push(`README: census must read ${censusLine(inventory)}`)
-  return errors
+/** What each problem asserts (its full name and statement), and what this corpus is missing toward it, named plainly. */
+export const CLAY_STATEMENT: Readonly<Record<ClayProblem, { readonly name: string; readonly statement: string; readonly gap: string }>> = {
+  pnp: {
+    name: 'P vs NP',
+    statement: 'Is P = NP? Whether every decision problem whose solution is VERIFIABLE in polynomial time is also SOLVABLE in polynomial time — i.e. whether the classes P and NP coincide.',
+    gap: 'no separation is derived. The verify/derive asymmetry the fold exhibits is ONE instance of easy-to-check / hard-to-produce; a lower bound separating the classes is what is missing, and nothing here supplies one.',
+  },
+  riemann: {
+    name: 'Riemann Hypothesis',
+    statement: 'All non-trivial zeros of the Riemann zeta function lie on the critical line: ζ(s) = 0 with 0 < Re(s) < 1 ⟹ Re(s) = ½.',
+    gap: 'the corpus touches the primes↔π link through ζ (ζ(2) = π²/6, the Euler product) but derives nothing about the location of the zeros. What is missing is any argument constraining Re(s) — the whole conjecture.',
+  },
+  'navier-stokes': {
+    name: 'Navier–Stokes existence & smoothness',
+    statement: 'For the 3D incompressible Navier–Stokes equations ∂u/∂t + (u·∇)u = −∇p + νΔu, ∇·u = 0, with smooth initial data: do smooth solutions exist for all time, or can they blow up in finite time?',
+    gap: 'global regularity is a hard-analysis question about a PDE. The confinement analogy (handle the field, not each particle) is physical intuition, not an estimate; no a-priori bound is derived here.',
+  },
+  'yang-mills': {
+    name: 'Yang–Mills existence & mass gap',
+    statement: 'For a compact simple gauge group G, does a non-trivial quantum Yang–Mills theory exist on ℝ⁴ with a mass gap Δ > 0 — i.e. the lightest particle has strictly positive mass?',
+    gap: 'no lens at all. Constructive QFT existence plus a positive spectral gap is outside anything this corpus computes; the "mass gap" wordplay to the void/axis is overlay, not physics.',
+  },
+  hodge: {
+    name: 'Hodge Conjecture',
+    statement: 'On a projective non-singular complex algebraic variety, every Hodge class (a rational cohomology class of type (p,p)) is a rational linear combination of the classes of algebraic cycles.',
+    gap: 'no lens at all. Algebraic cycles and Hodge theory are outside the corpus; nothing here bears on the rationality of Hodge classes.',
+  },
+  bsd: {
+    name: 'Birch–Swinnerton-Dyer',
+    statement: 'For an elliptic curve E over ℚ, the order of vanishing of its L-function at s = 1 equals the rank of its Mordell–Weil group: ord₍ₛ₌₁₎ L(E, s) = rank E(ℚ).',
+    gap: 'no lens at all. Elliptic curves and L-functions are outside the corpus; the rank↔order-of-vanishing identity is untouched by anything computed here.',
+  },
+  poincare: {
+    name: 'Poincaré Conjecture',
+    statement: 'Every simply-connected closed 3-manifold is homeomorphic to the 3-sphere: π₁(M) = 0 with M a closed 3-manifold ⟹ M ≅ S³.',
+    gap: '_no open gap — proved externally (Grigori Perelman); this corpus records the status, it does not re-solve it_',
+  },
 }
 
-/** A witness cell as `witnessCell` writes it: `none`, or linked files joined by ` · `. */
-const WITNESS_PREFIX = /^(none|\[`[^`]+`\]\([^)]+\) — `[^`]+`, \d+ theorems, \d+ stubbed(?: · \[`[^`]+`\]\([^)]+\) — `[^`]+`, \d+ theorems, \d+ stubbed)*)/
-
 /**
- * The README rewritten from the record: each Clay row's witness cell, the settled sentence and the
- * census line, leaving every other word as written. `readmeClayErrors` of the result is empty.
+ * The README's Clay section, rendered from the record: the witness table, the settled list and the
+ * census are computed, and each statement is the problem's own. `scripts/generate-repo.ts` writes it
+ * into README.md, so the README cannot say anything about the kernel that the record does not.
  */
-export const readmeOfRecord = (readme: string, witnesses: readonly ClayWitness[], inventory: Parameters<typeof censusLine>[0]): string => {
+export const claySection = (witnesses: readonly ClayWitness[], inventory: Parameters<typeof censusLine>[0]): string => {
   const settled = claySettled(witnesses)
   const settledText = settled.length ? settled.map((p) => CLAY_LABEL[p]).join(', ') : '**none**'
-  // The witness table is the first row per problem, as `readmeClayErrors` reads it; later tables that
-  // name the problems (the statements) are prose.
-  const done = new Set<ClayProblem>()
-  const rows = readme.split('\n').map((line) => {
-    const problem = CLAY.find((p) => new RegExp(`^\\| (\\*\\*)?${CLAY_LABEL[p]}(\\*\\*)? \\|`).test(line))
-    if (!problem || done.has(problem) || line.split('|').length < 4 || line.includes('⟹')) return line
-    done.add(problem)
-    const cells = line.split('|')
-    const cell = (cells[2] ?? '').trim()
-    cells[2] = ` ${cell.replace(WITNESS_PREFIX, '') === cell ? witnessCell(witnesses, problem) : cell.replace(WITNESS_PREFIX, witnessCell(witnesses, problem))} `
-    return cells.join('|')
-  })
-  return rows
-    .join('\n')
-    .replace(/Settled by this corpus: .*?\(`claySettled`[^)]*\)/, `Settled by this corpus: ${settledText} (\`claySettled\` ${settled.length ? `lists ${settled.length}` : 'is empty'})`)
-    .replace(/Kernel report sealed \d{4}-\d{2}-\d{2}: .*?sources `[0-9a-f]+`\./, censusLine(inventory))
+  return [
+    '## How a Clay problem is verified here',
+    '',
+    'A Clay problem is verified by the **Lean kernel**, or it is not verified. Not by a deposit on Zenodo, not by a prose argument, and not by this README: this section only reports what the kernel has checked.',
+    '',
+    "1. **Declare.** Every Lean file in `src/utilities/verify/lean/` says what its theorems bear on, on a header line: `Clay: <problem> <kind>` — `meta` (proves what an argument *cannot* do), `partial` (a true fragment) or `statement` (the problem's own statement) — or `Clay: none`. CI refuses a file that declares nothing, so each theorem is placed against the Clay cases; a declaration is wrong when it overclaims and when it underclaims.",
+    '2. **Check.** `tsx src/utilities/verify/inventory/index.ts` compiles every file with `lean` and records, for each theorem, the axioms the kernel says it rests on, in `inventory.generated.json`. `sorryAx` among them marks a stub, never a proof.',
+    '3. **Count.** `clayWitnesses` joins the declarations to that report. `claySettled` lists the problems with a compiled, stub-free file declared `statement`. A refused or stubbed file never settles anything, and a mistyped tag throws instead of hiding.',
+    "4. **Review.** A tag is a declaration, not proof that the Lean statement is the real one: a theorem can be a tautology. A `statement` file needs a human to read its statement against Clay's before it counts.",
+    '',
+    '| problem | kernel witnesses today |',
+    '| --- | --- |',
+    ...CLAY.map((p) => `| ${CLAY_LABEL[p]} | ${witnessCell(witnesses, p)} |`),
+    '',
+    `Settled by this corpus: ${settledText} (\`claySettled\` ${settled.length ? `lists ${settled.length}` : 'is empty'}). ${censusLine(inventory)} Recompute: \`tsx src/utilities/verify/inventory/index.ts\` · \`pnpm vitest run src/utilities/verify\`.`,
+    '',
+    '| problem | statement (algebraic) | the named gap |',
+    '| --- | --- | --- |',
+    ...CLAY.map((p) => `| **${CLAY_STATEMENT[p].name}** | ${CLAY_STATEMENT[p].statement} | ${CLAY_STATEMENT[p].gap} |`),
+    '',
+    'The **statement** is what the conjecture asserts — read it before anything this corpus says about it, so a lens can never be mistaken for the mathematics it points at. The **gap** is what is missing, named plainly: a gap you can argue with, rather than a mystery that hides its size.',
+    '',
+    "You do not solve one by asserting it. A problem moves here only when a Lean file declared `statement` compiles with no stub and its statement survives review; whether that is a solution at all is for the [Clay Institute's rules](https://www.claymath.org/millennium-problems/rules/), not for this repository.",
+    '',
+  ].join('\n')
 }
 
 /** What the kernel has checked about each problem: one witness per declaration, with its axiom footprint. */
@@ -397,7 +423,6 @@ if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
     files,
   }
   const sources = Object.fromEntries(names.map((n) => [`${n}.lean`, readFileSync(join(dir, `${n}.lean`), 'utf8')]))
-  const README = join(process.cwd(), 'README.md')
   // `--check` (CI): the kernel must accept every file with no stub, and the committed record must be
   // what this run produced. The date and the Lean build string are left out of the comparison.
   if (process.argv.includes('--check')) {
@@ -416,13 +441,13 @@ if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
     for (const e of foreign) console.error(`  ${e.theorem}: rests on ${e.axioms.filter((a) => !STANDARD_AXIOMS.has(a)).join(', ')}, outside Lean's foundation`)
     if (stale) console.error(`  ${INVENTORY_PATH} is not what the kernel reports now`)
     // `--base <record>` (CI passes main's): no theorem may take on an axiom it did not rest on there.
-    const clayErrors = [...clayDeclarationErrors(sources), ...readmeClayErrors(readFileSync(README, 'utf8'), clayWitnesses(inventory, sources), committed)]
+    const clayErrors = clayDeclarationErrors(sources)
     for (const e of clayErrors) console.error(`  ${e}`)
     const baseAt = process.argv.indexOf('--base')
     const violations = baseAt > 0 ? axiomViolations(JSON.parse(readFileSync(process.argv[baseAt + 1] as string, 'utf8')) as ProofInventory, inventory) : []
     for (const v of violations) console.error(`  ${v.theorem}: rests on ${v.axioms.join(', ')} — prove it with the kernel's rules (cases, rfl, decide)`)
     if (refused.length || inventory.census.stubbed > 0 || foreign.length || uncertified.length || violations.length || clayErrors.length || stale) {
-      console.error('\n✖ run `tsx src/utilities/verify/inventory/index.ts` (it rewrites the record and the README) and commit both')
+      console.error('\n✖ run `tsx src/utilities/verify/inventory/index.ts` and commit the record (the pre-commit hook regenerates the README from it)')
       process.exit(1)
     }
     const tb = trialBalance(entries)
@@ -431,7 +456,5 @@ if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
     return
   }
   writeFileSync(join(process.cwd(), INVENTORY_PATH), `${JSON.stringify(inventory, null, 2)}\n`)
-  // The README quotes the record, so the same run rewrites it from the record: they cannot disagree.
-  writeFileSync(README, readmeOfRecord(readFileSync(README, 'utf8'), clayWitnesses(inventory, sources), inventory))
   console.log(`verify/inventory — ${inventory.census.theorems} theorem(s) · ${inventory.census.axiomFree} axiom-free · ${inventory.census.stubbed} stubbed · sources ${inventory.sourcesHash}`)
 })()

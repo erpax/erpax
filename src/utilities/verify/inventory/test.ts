@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { CLAY, FOUNDATION, axiomViolations, censusLine, clayDeclarationErrors, readmeClayErrors, readmeOfRecord, witnessCell, INVENTORY, KERNEL, STANDARD_AXIOMS, UNBACKED, journalOf, trialBalance, claySettled, clayTags, clayWitnesses, linkOf, parseAxiomReport, onForeignAxiom, proofCensus, proved } from '@/utilities/verify/inventory'
+import { CLAY, FOUNDATION, axiomViolations, censusLine, clayDeclarationErrors, claySection, witnessCell, INVENTORY, KERNEL, STANDARD_AXIOMS, UNBACKED, journalOf, trialBalance, claySettled, clayTags, clayWitnesses, linkOf, parseAxiomReport, onForeignAxiom, proofCensus, proved } from '@/utilities/verify/inventory'
 
 describe('verify/inventory — the kernel is quoted, never paraphrased', () => {
   const out = [
@@ -87,17 +87,14 @@ describe('verify/inventory — what the kernel has checked ABOUT the Clay proble
     expect(riemann.find((w) => w.file === 'Symmetry.lean')!.theorems).toBeGreaterThanOrEqual(9)
   })
 
-  it('the README states and links what the kernel checked — and goes red when it drifts', () => {
+  it('the README carries the Clay section the record renders, and a planted statement changes it', () => {
     const readme = readFileSync(join(import.meta.dirname, '..', '..', '..', '..', 'README.md'), 'utf8')
-    expect(readmeClayErrors(readme, witnesses, INVENTORY)).toEqual([])
+    expect(readme).toContain(claySection(witnesses, INVENTORY))
     expect(witnessCell(witnesses, 'riemann')).toContain('](src/utilities/verify/lean/Symmetry.lean)')
-    const drifted = readme.replace('[`Harmonic.lean`](src/utilities/verify/lean/Harmonic.lean) — `meta`, 12 theorems, 0 stubbed · ', '')
-    expect(readmeClayErrors(drifted, witnesses, INVENTORY).length).toBeGreaterThan(0)
-    // the writer repairs the drift and leaves a current README as it is
-    expect(readmeOfRecord(drifted, witnesses, INVENTORY)).toBe(readme)
-    expect(readmeOfRecord(readme, witnesses, INVENTORY)).toBe(readme)
-    const stale = readme.replace(censusLine(INVENTORY), censusLine({ ...INVENTORY, sealedAt: '2000-01-01' }))
-    expect(readmeOfRecord(stale, witnesses, INVENTORY)).toBe(readme)
+    const planted = { ...sources, 'Symmetry.lean': `${sources['Symmetry.lean']}\n  Clay: riemann statement\n` }
+    const section = claySection(clayWitnesses(INVENTORY, planted), INVENTORY)
+    expect(section).toContain('Settled by this corpus: Riemann Hypothesis (`claySettled` lists 1)')
+    expect(readme).not.toContain(section)
   })
 
   it('every Lean file declares what it says about the Clay problems, with no unknown problem or kind', () => {
@@ -148,8 +145,11 @@ describe('verify/inventory — the README states what the kernel says, or it goe
   const witnesses = clayWitnesses(INVENTORY, sources)
   const c = INVENTORY.census
 
-  it('quotes the sealed census, links each witness and states the settled list, as the gate computes them', () => {
-    expect(readmeClayErrors(readme, witnesses, INVENTORY)).toEqual([])
+  it('quotes the sealed census, links each witness and states the settled list, as the record computes them', () => {
+    expect(readme).toContain(claySection(witnesses, INVENTORY))
+    expect(readme).toContain(censusLine(INVENTORY))
+    expect(readme).toContain(`Settled by this corpus: **none** (\`claySettled\` is empty)`)
+    expect(c.stubbed).toBe(0)
   })
 
   it('no longer names the removed millennium code', () => {
