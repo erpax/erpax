@@ -38,6 +38,7 @@ describe('invoices on D1 — one row fits one statement', () => {
       payload.create({ overrideAccess: true, collection: 'addresses', data: { tenant: tenant.id, company, addressLine1: '1 Main St', city: 'Sofia', postalCode: '1000', country: 'BG' } as never })
     const [seller, buyer] = [await address('Seller'), await address('Buyer')]
     const invoice = await payload.create({
+      overrideAccess: true,
       collection: 'invoices',
       data: {
         tenant: tenant.id,
