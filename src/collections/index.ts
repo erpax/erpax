@@ -300,9 +300,6 @@ export { default as Translations } from '@/collections/translations'
 
 // Contract Extensions
 export { default as commitments } from '@/collections/commitments'
-export { default as contractAmendments } from '@/collections/contract-amendments'
-export { default as contractPerformance } from '@/collections/contract-performance'
-export { default as contractSignatures } from '@/collections/contract-signatures'
 
 // Miscellaneous
 export { default as LegalEntities } from '@/collections/legal-entities'
