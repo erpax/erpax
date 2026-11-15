@@ -27,8 +27,8 @@ export const createAccess: Access<User> = async ({ req }) => {
       // If no users exist, allow creation of first user
       return totalDocs === 0
     } catch {
-      // If error checking users, allow creation (likely first user scenario)
-      return true
+      // Fail closed: when the user count cannot be read, nobody is let in as the first user.
+      return false
     }
   }
 

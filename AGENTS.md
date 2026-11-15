@@ -55,6 +55,13 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
   `ERPAX_API_KEY` (gitignored); the `erpax` connector reads it at connect time (`.mcp.json`
   `headersHelper` → `scripts/mcp-headers.sh`). `ERPAX_MCP_URL=http://localhost:3000/api/mcp` targets a
   local dev server.
+- The first user is super-admin by definition (`firstUserSuperAdmin`) and brings credentials only: Payload's
+  first-register creates with `overrideAccess: true`, so `firstUserCredentials` (a `beforeOperation` hook) keeps
+  email and password and drops everything else, and the first-user form shows only those two fields. Set
+  `ERPAX_OWNER_EMAIL` (a Worker variable, the Cloudflare account's address) and only that address can be the
+  first user. After that, `guardPrivilege` holds every request from outside to two rules: only a super-admin
+  makes a super-admin (the `admin` role with no tenant), and a tenant membership changes only by an admin of
+  that tenant. `lastLogin` and `passwordChangedAt` are written by the server only.
 - Agent memory is documents in `memories`: `kind` is `feedback`, `fact` or `reference`,
   `ownerType`/`ownerId` name the agent or tenant, and reusing a `key` supersedes the earlier
   memory. Agents talk in the per-tenant `chat` room; `messages` is mail between users. Guidance for
