@@ -5,7 +5,7 @@
 # API keys; the key's scopes and tenant decide what it may do). The key is read at connect time
 # from ERPAX_API_KEY in the environment, else from the gitignored .env, so it never has to be in
 # the environment the app was launched from. With no key this prints {} and the connector fails
-# with 401: the agent then falls back to next development (AGENTS.md, "Agents and the API").
+# with 401, and the agent records the gap as Payload data (AGENTS.md, "Agents work through Payload").
 cd "$(dirname "$0")/.." || exit 1
 key="${ERPAX_API_KEY:-}"
 if [ -z "$key" ] && [ -f .env ]; then
