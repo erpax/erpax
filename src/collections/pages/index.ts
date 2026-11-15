@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { authenticatedOrPublished } from '@/access/collections/shared/authenticatedOrPublished'
+import { governedDocument, governedDocumentFields, pageRead, pageWrite } from '@/fields/group/governedDocument'
 import { Archive, CallToAction, Content, FormBlock, MediaBlock } from '@/blocks/config'
 import { hero } from '@/components/hero'
 import { documentPreviewAdmin } from '@/utilities/shareds'
@@ -39,11 +39,13 @@ export const Pages: CollectionConfig = {
     singular: localeRecord('pages.singular'),
     plural: localeRecord('pages.plural'),
   },
+  // A website page: published → public, written by its tenant's admins. A governed page (a document
+  // type, src/fields/group/governedDocument): never public, read and written by the roles its type names.
   access: {
-    create: superAdminOrTenantAdminAccess,
-    delete: superAdminOrTenantAdminAccess,
-    read: authenticatedOrPublished,
-    update: superAdminOrTenantAdminAccess,
+    create: pageWrite(superAdminOrTenantAdminAccess),
+    delete: pageWrite(superAdminOrTenantAdminAccess),
+    read: pageRead,
+    update: pageWrite(superAdminOrTenantAdminAccess),
   },
   // This config controls what's populated by default when a page is referenced
   // https://payloadcms.com/docs/queries/select#defaultpopulate-collection-config-property
@@ -172,11 +174,13 @@ export const Pages: CollectionConfig = {
         },
       ],
     },
+    // the governed document this page is, if any (formerly separate collections: reporting-standards, …)
+    ...governedDocumentFields(),
   ],
   hooks: {
     afterChange: [revalidatePage],
     beforeValidate: [fillSeo, checkLeadPage],
-    beforeChange: pagesBeforeChange,
+    beforeChange: [...pagesBeforeChange, governedDocument],
     afterDelete: [revalidateDelete],
   },
   versions: defaultVersionedDrafts,

@@ -230,7 +230,6 @@ export { RegulatoryReports } from '@/collections/regulatory-reports'
 export { InternalPolicies } from '@/collections/internal-policies'
 export { StatutoryReportTemplates } from '@/collections/statutory-report-templates'
 export { ComplianceDeadlines } from '@/collections/compliance-deadlines'
-export { ReportingStandards } from '@/collections/reporting-standards'
 
 // Phase 6: Risk, Disclosure & Audit Extension (8 collections)
 export { RelatedPartyTransactions } from '@/collections/related-party-transactions'
