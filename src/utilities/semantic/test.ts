@@ -87,6 +87,19 @@ describe('semantic — indexing and asking', () => {
     expect(same.queued).toHaveLength(0)
   })
 
+  it('queues as the system, and a failure to queue never fails the save', async () => {
+    const { env } = fakeEnv()
+    const jobs: { overrideAccess?: boolean }[] = []
+    const warned: unknown[] = []
+    const ok = req({ payload: { jobs: { queue: async (job: { overrideAccess?: boolean }) => void jobs.push(job) }, logger: { warn: (w: unknown) => void warned.push(w) } } })
+    await enqueueEmbedding(async () => env)({ doc: { id: 's1', title: 'A' }, previousDoc: {}, req: ok.req } as never)
+    expect(jobs[0]?.overrideAccess).toBe(true)
+    const refused = req({ payload: { jobs: { queue: async () => Promise.reject(new Error('Forbidden')) }, logger: { warn: (w: unknown) => void warned.push(w) } } })
+    const kept = await enqueueEmbedding(async () => env)({ doc: { id: 's2', title: 'B' }, previousDoc: {}, req: refused.req } as never)
+    expect(kept).toEqual({ id: 's2', title: 'B' })
+    expect(warned).toHaveLength(1)
+  })
+
   it('answers by meaning, best first, through Payload with the caller access; 400 without a question', async () => {
     const { env } = fakeEnv()
     const endpoint = semanticEndpoint(async () => env)
