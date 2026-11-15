@@ -19900,7 +19900,6 @@ export interface PayloadQueryPreset {
     | 'legal-entities'
     | 'period-end-adjustments'
     | 'period-locks'
-    | 'post-balance-sheet-events'
     | 'post-close-analytics-reports'
     | 'prior-period-adjustments'
     | 'provisions'
