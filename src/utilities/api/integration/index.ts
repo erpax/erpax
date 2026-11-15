@@ -5,11 +5,9 @@
  * twice ([[perspective]]): [[api]] already holds Local/REST/GraphQL — the three ways the world calls
  * erpax — and this is the fourth face, the one way erpax calls the world. Same law, opposite arrow.
  *
- * [[trello]] proved the pattern against a system erpax did not design. This dissolves the vendor out
- * of it: what was `TrelloRateLimiter · TrelloError · TrelloConfig · createTrelloClient` is here as
- * `RateLimiter · IntegrationError · IntegrationConfig · createIntegrationClient`, and a vendor
- * becomes a **spec** — base URL, auth strategy, published limits, endpoints. Trello is then ~40
- * lines of data rather than 200 of machinery, and the next vendor costs the same.
+ * A vendor is a **spec** — base URL, auth strategy, published limits, endpoints — run by
+ * `RateLimiter · IntegrationError · IntegrationConfig · createIntegrationClient`, so each vendor is a
+ * few lines of data rather than its own machinery.
  *
  * The four things every keyed HTTP API needs, and the ones that are not negotiable:
  *
@@ -30,7 +28,7 @@
  * @standard ISO/IEC 25010:2023 §5.7.2 fault-tolerance — a rate-limited burst queues; it does not drop
  * @invariant reserve() returns 0 while a bucket has a token and a positive wait once it is spent.
  * @invariant a non-2xx ALWAYS throws — this module contains no catch.
- * @see ./SKILL.md -- ../../trello -- ../../convention/sealed -- ../../constitution
+ * @see ./SKILL.md -- ../../convention/sealed -- ../../constitution
  */
 import { algebraLog2, exactCeil, exactMax, exactMaxOf, exactMin } from '@/utilities/algebra'
 
@@ -52,7 +50,7 @@ export interface IntegrationSpec {
   /** REST root; every path is appended to it */
   readonly baseUrl: string
   readonly auth: AuthStyle
-  /** env var names the credential is read from, in wire order (e.g. ['TRELLO_API_KEY','TRELLO_TOKEN']) */
+  /** env var names the credential is read from, in wire order (e.g. ['VENDOR_API_KEY','VENDOR_TOKEN']) */
   readonly credentials: readonly string[]
   /** for `query`: the param names, positionally matched to `credentials`; for `header`: the header names */
   readonly authNames?: readonly string[]

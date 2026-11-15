@@ -17,6 +17,9 @@ fi
 # describe. Runs after the steps above, which may have changed the types and the proof record it quotes.
 ./node_modules/.bin/tsx scripts/generate-repo.ts </dev/null || exit 1
 git add README.md .github/SPONSORS.md .claude-plugin/plugin.json .claude-plugin/marketplace.json CITATION.cff .zenodo.json
+# The standards citation index, from the banners in src/ and tests/ (deterministic, 0.3s).
+bash scripts/standards-citation-index.sh --write-index >/dev/null || exit 1
+git add -u docs/STANDARDS_INDEX.md
 # The lockfile follows the manifest: CI installs --frozen-lockfile and stops on any mismatch.
 if echo "$staged" | grep -qE '^(package\.json|pnpm-workspace\.yaml)$'; then
   pnpm -s install --lockfile-only >/dev/null || exit 1

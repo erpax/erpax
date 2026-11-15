@@ -8,11 +8,7 @@
  * had been generated, while surviving regeneration.
  *
  * These are SECRETS, not vars: they never belong in `wrangler.jsonc`. Set them per environment with
- *   wrangler secret put TRELLO_API_KEY
- *   wrangler secret put TRELLO_TOKEN
- * and locally in `.env.local` (see `.env.example`). The Trello token grants full account access.
- *
- * @see src/trello/SKILL.md
+ * `wrangler secret put <NAME>`, and locally in `.env.local` (see `.env.example`).
  */
 interface CloudflareEnv {
   /**
@@ -21,14 +17,6 @@ interface CloudflareEnv {
    * For spoken content, put the `.vtt`/`.srt` on disk and read it with `@/transcript`.
    */
   YOUTUBE_API_KEY?: string
-  /** Trello API key — trello.com/power-ups/admin → API Key tab. */
-  TRELLO_API_KEY?: string
-  /** Trello token — full account access; environment/secret only, never committed. */
-  TRELLO_TOKEN?: string
-  /** Optional: the board whose lists the client reads. */
-  TRELLO_BOARD_ID?: string
-  /** Optional: '1' | 'true' opts into the flag-gated Trello MCP server in `.mcp.json`. */
-  TRELLO_MCP_ENABLED?: string
 
   // ── PQC library bindings ──────────────────────────────────────────────────────────────────────
   // Which library actually seals each surface, named per surface rather than globally, because
