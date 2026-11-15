@@ -1,6 +1,8 @@
 /-
   Direction — the six ways to move inside an address, and the one constraint that governs all of them.
 
+  Clay: none
+
   The corpus moves through its addresses in pairs: forward/reverse, left/right, up/down, and the two
   reflections — inverse (beyond) and the hexbit flip (within). Each pair must undo itself, or a
   "round trip" silently lands somewhere else.

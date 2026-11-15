@@ -20,6 +20,7 @@ import {
   lexicalEditor,
 } from '@payloadcms/richtext-lexical'
 
+import { Affect } from '@/blocks/affect/config'
 import { link } from '@/components/link/field'
 import { localeRecord } from '@/i18n'
 import { markdownField } from '@/seed/content'
@@ -58,7 +59,7 @@ const columnFields: Field[] = [
           ...rootFeatures,
           HeadingFeature({ enabledHeadingSizes: ['h2', 'h3', 'h4'] }),
           ...documentFeatures(),
-          BlocksFeature({ blocks: [CodeBlock({ languages: codeLanguages(), defaultLanguage: 'plaintext' })] }),
+          BlocksFeature({ blocks: [Affect, CodeBlock({ languages: codeLanguages(), defaultLanguage: 'plaintext' })] }),
           FixedToolbarFeature(),
           InlineToolbarFeature(),
         ]

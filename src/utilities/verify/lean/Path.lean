@@ -1,5 +1,7 @@
 /-
   Path — the corpus says "the path IS the message". This file proves the three properties that
+
+  Clay: none
   claim actually rests on, and refuses the one it does not.
 
   A path is a list of segments. A segment is a word; `0` is reserved for the one thing a segment

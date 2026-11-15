@@ -1,4 +1,5 @@
 /** blocks — Payload block components + configs barrel. */
+export { Affect, AffectBlock } from './affect'
 export { Banner, BannerBlock } from './banner'
 export { Code, CodeBlock, CodeClient, CopyButton, type CodeBlockProps } from './code'
 export { Content, ContentBlock } from './content'

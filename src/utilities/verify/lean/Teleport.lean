@@ -1,6 +1,8 @@
 /-
   Teleport — one shared Bell pair exchanges a qubit for two classical bits, both ways.
 
+  Clay: none
+
   Ported from qpu.uuidna.com (Qpu.Communication.QuantumCommunication, same author), on Gate.lean
   and Entangle.lean. Two protocols over the same resource, each the other read backwards.
 

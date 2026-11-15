@@ -1,6 +1,8 @@
 /-
   Clifford — H, S and CNOT act on Pauli strings exactly as the tableau rules say.
 
+  Clay: none
+
   Ported from qpu.uuidna.com (Qpu.Processing.CircuitBasedQuantumComputing, same author), on
   Gate.lean. This is the fact behind the Gottesman–Knill theorem: a circuit of H, S and CNOT can be
   followed on Pauli strings — a few bits per qubit — instead of on the 2ⁿ amplitudes, because each

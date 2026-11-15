@@ -1,6 +1,8 @@
 /-
   Orchestrate — decomposition and convergence, stated about the functions that produce them.
 
+  Clay: none
+
   What stood here was four `sorry`s over arbitrary data, and the danger was not that they were
   unproved. Two of them were provable by FABRICATION: `decomposition_complete` asks only that SOME
   list of tasks be long enough, and `convergence_requires_all_convergent` asks only that SOME list

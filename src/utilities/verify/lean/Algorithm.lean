@@ -1,6 +1,8 @@
 /-
   Algorithm — four textbook algorithms at the size where the kernel can check every amplitude.
 
+  Clay: none
+
   Ported from qpu.uuidna.com (Qpu.Processing.QuantumAlgorithm, same author), on Gate.lean. Each is
   the smallest instance in which the algorithm's whole claim is visible and finite.
 

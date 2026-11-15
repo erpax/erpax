@@ -198,43 +198,43 @@ export type LexicalNodes_17BFECDB =
   | SerializedLinkNode<LexicalNodes_17BFECDB, LexicalLinkFields>;
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "LexicalNodes_EA2944C2".
+ * via the `definition` "LexicalNodes_DBFBAC45".
  */
-export type LexicalNodes_EA2944C2 =
+export type LexicalNodes_DBFBAC45 =
   | SerializedTextNode
   | SerializedTabNode
   | SerializedLineBreakNode
-  | SerializedParagraphNode<LexicalNodes_EA2944C2>
-  | SerializedBlockNode<Code>
-  | SerializedTableNode<LexicalNodes_EA2944C2>
-  | SerializedTableCellNode<LexicalNodes_EA2944C2>
-  | SerializedTableRowNode<LexicalNodes_EA2944C2>
-  | SerializedQuoteNode<LexicalNodes_EA2944C2>
-  | SerializedListNode<LexicalNodes_EA2944C2>
-  | SerializedListItemNode<LexicalNodes_EA2944C2>
-  | SerializedHeadingNode<LexicalNodes_EA2944C2, 'h2' | 'h3' | 'h4'>
-  | SerializedAutoLinkNode<LexicalNodes_EA2944C2, LexicalLinkFields>
-  | SerializedLinkNode<LexicalNodes_EA2944C2, LexicalLinkFields>;
+  | SerializedParagraphNode<LexicalNodes_DBFBAC45>
+  | SerializedBlockNode<AffectBlock | Code>
+  | SerializedTableNode<LexicalNodes_DBFBAC45>
+  | SerializedTableCellNode<LexicalNodes_DBFBAC45>
+  | SerializedTableRowNode<LexicalNodes_DBFBAC45>
+  | SerializedQuoteNode<LexicalNodes_DBFBAC45>
+  | SerializedListNode<LexicalNodes_DBFBAC45>
+  | SerializedListItemNode<LexicalNodes_DBFBAC45>
+  | SerializedHeadingNode<LexicalNodes_DBFBAC45, 'h2' | 'h3' | 'h4'>
+  | SerializedAutoLinkNode<LexicalNodes_DBFBAC45, LexicalLinkFields>
+  | SerializedLinkNode<LexicalNodes_DBFBAC45, LexicalLinkFields>;
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "LexicalNodes_2CF183CE".
+ * via the `definition` "LexicalNodes_13EAA0E2".
  */
-export type LexicalNodes_2CF183CE =
+export type LexicalNodes_13EAA0E2 =
   | SerializedTextNode
   | SerializedTabNode
   | SerializedLineBreakNode
-  | SerializedParagraphNode<LexicalNodes_2CF183CE>
+  | SerializedParagraphNode<LexicalNodes_13EAA0E2>
   | SerializedHorizontalRuleNode
-  | SerializedBlockNode<BannerBlock | CodeBlock | MediaBlock_7426DDFC | Fence>
-  | SerializedTableNode<LexicalNodes_2CF183CE>
-  | SerializedTableCellNode<LexicalNodes_2CF183CE>
-  | SerializedTableRowNode<LexicalNodes_2CF183CE>
-  | SerializedQuoteNode<LexicalNodes_2CF183CE>
-  | SerializedListNode<LexicalNodes_2CF183CE>
-  | SerializedListItemNode<LexicalNodes_2CF183CE>
-  | SerializedHeadingNode<LexicalNodes_2CF183CE, 'h1' | 'h2' | 'h3' | 'h4'>
-  | SerializedAutoLinkNode<LexicalNodes_2CF183CE, LexicalLinkFields>
-  | SerializedLinkNode<LexicalNodes_2CF183CE, LexicalLinkFields>;
+  | SerializedBlockNode<AffectBlock | BannerBlock | CodeBlock | MediaBlock_7426DDFC | Fence>
+  | SerializedTableNode<LexicalNodes_13EAA0E2>
+  | SerializedTableCellNode<LexicalNodes_13EAA0E2>
+  | SerializedTableRowNode<LexicalNodes_13EAA0E2>
+  | SerializedQuoteNode<LexicalNodes_13EAA0E2>
+  | SerializedListNode<LexicalNodes_13EAA0E2>
+  | SerializedListItemNode<LexicalNodes_13EAA0E2>
+  | SerializedHeadingNode<LexicalNodes_13EAA0E2, 'h1' | 'h2' | 'h3' | 'h4'>
+  | SerializedAutoLinkNode<LexicalNodes_13EAA0E2, LexicalLinkFields>
+  | SerializedLinkNode<LexicalNodes_13EAA0E2, LexicalLinkFields>;
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "LexicalNodes_FF0D232D".
@@ -1681,7 +1681,7 @@ export interface Post {
   tenant?: (string | null) | Tenant;
   title: string;
   heroImage?: (string | null) | Media;
-  content: LexicalRichText<LexicalNodes_2CF183CE>;
+  content: LexicalRichText<LexicalNodes_13EAA0E2>;
   /**
    * The content field as markdown — computed on read, never stored.
    */
@@ -2094,7 +2094,7 @@ export interface ContentBlock {
   columns?:
     | {
         size?: ('oneThird' | 'half' | 'twoThirds' | 'full') | null;
-        richText?: LexicalRichText<LexicalNodes_EA2944C2> | null;
+        richText?: LexicalRichText<LexicalNodes_DBFBAC45> | null;
         /**
          * The richText field as markdown — computed on read, never stored.
          */
@@ -29693,6 +29693,20 @@ export interface TaskSchedulePublish {
     } | null;
   };
   output?: unknown;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "AffectBlock".
+ */
+export interface AffectBlock {
+  id: string;
+  blockType: 'affect';
+  feeling: string;
+  thought: string;
+  emotion: string;
+  direction: 'forward' | 'backward';
+  valence: 'pleasant' | 'unpleasant';
+  blockName?: string | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

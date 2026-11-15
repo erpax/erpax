@@ -68,13 +68,23 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
   and an agent records a need no tool covers the same way. It never works around the gap with
   `wrangler d1 execute`, direct SQL or throwaway scripts.
 
+## Proofs
+
+- Lean files live in `src/utilities/verify/lean`, each with a TypeScript twin, and `lean-toolchain` pins the
+  version. CI's Lean job compiles every file and fails on a refused file, a `sorry`, an axiom outside
+  Lean's foundation (`propext`, `Classical.choice`, `Quot.sound`) or a stale `inventory.generated.json`
+  (`tsx src/utilities/verify/inventory/index.ts` rewrites it, `--check` verifies).
+- Every theorem in the record is checked by the kernel. "Axiom-free" means it uses only the kernel's own
+  rules; the others also use the foundation axioms, usually through `simp` or `omega`. A proof by
+  `cases`, `rfl` and `decide` stays axiom-free.
+
 ## Pipelines
 
 | Where | Runs |
 | --- | --- |
 | pre-commit (`.husky`) | Payload types + import map when `src/**/*.ts` is staged; package ranges + lockfile when `package.json` or `pnpm-workspace.yaml` is staged |
 | pre-push | `pnpm lint` · `pnpm typecheck` |
-| CI (`.github/workflows/ci.yml`) | standards banner · lint · typecheck · tests ×4 (shard 2 runs `release.mjs --check`) · Playwright smoke · migrations (from empty, no drift) · lean build |
+| CI (`.github/workflows/ci.yml`) | standards banner · lint · typecheck · tests ×4 (shard 2 runs `release.mjs --check`) · Playwright smoke · Lean proofs · migrations (from empty, no drift) · lean build |
 | Cloudflare Workers Builds (dashboard) | on `main`: build, `payload migrate` on production D1, deploy. Its check on a PR branch fails at once and is not required |
 
 Gaps found on 2026-11-15:

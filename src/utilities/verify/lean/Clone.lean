@@ -1,6 +1,8 @@
 /-
   Clone — quantum information cannot be copied: no linear map clones both |0⟩, |1⟩ and |+⟩.
 
+  Clay: none
+
   Ported from qpu.uuidna.com (Qpu.Information.QuantumInformation, same author), on the matrices of
   Gate.lean. Every other theorem in this family is a finite check of one circuit. This one is
   different in kind: it quantifies over EVERY 4 × 4 matrix `u` with Gaussian-integer entries, so

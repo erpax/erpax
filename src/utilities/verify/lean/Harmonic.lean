@@ -1,6 +1,13 @@
 /-
   Harmonic.lean — when does an involution leave a harmonic element?
 
+  Clay: riemann meta
+
+  Why riemann meta, not none: the inference refuted below — an involution always leaves a fixed
+  point — is the one a proof of the Riemann Hypothesis from the functional equation's symmetry would
+  need (zeros fixed by the reflection lie on the critical line). This file is the generic obstruction on
+  finite carriers; Symmetry.lean is the version on the strip. Neither says anything about RH's truth.
+
   The claim under test: "an involution always provides a harmonic result", where HARMONIC means a
   fixed point — an element that is its own reflection and survives the pass.
 

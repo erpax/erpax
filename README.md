@@ -94,7 +94,7 @@ Six positions divide the circle exactly, so each step is **60°**, and the polar
 
 A Clay problem is verified by the **Lean kernel**, or it is not verified. Not by a deposit on Zenodo, not by a prose argument, and not by this README: this section only reports what the kernel has checked.
 
-1. **Declare.** A Lean file in `src/utilities/verify/lean/` says what it is about on a header line, `Clay: <problem> <kind>`: `meta` (proves what an argument *cannot* do), `partial` (a true fragment) or `statement` (the problem's own statement).
+1. **Declare.** Every Lean file in `src/utilities/verify/lean/` says what its theorems bear on, on a header line: `Clay: <problem> <kind>` — `meta` (proves what an argument *cannot* do), `partial` (a true fragment) or `statement` (the problem's own statement) — or `Clay: none`. CI refuses a file that declares nothing, so each theorem is placed against the Clay cases; a declaration is wrong when it overclaims and when it underclaims.
 2. **Check.** `tsx src/utilities/verify/inventory/index.ts` compiles every file with `lean` and records, for each theorem, the axioms the kernel says it rests on, in `inventory.generated.json`. `sorryAx` among them marks a stub, never a proof.
 3. **Count.** `clayWitnesses` joins the declarations to that report. `claySettled` lists the problems with a compiled, stub-free file declared `statement`. A refused or stubbed file never settles anything, and a mistyped tag throws instead of hiding.
 4. **Review.** A tag is a declaration, not proof that the Lean statement is the real one: a theorem can be a tautology (`one_law` in `Erpax.lean` is one). A `statement` file needs a human to read its statement against Clay's before it counts.
@@ -102,14 +102,14 @@ A Clay problem is verified by the **Lean kernel**, or it is not verified. Not by
 | problem | kernel witnesses today | what they prove |
 | --- | --- | --- |
 | P vs NP | none | — |
-| Riemann Hypothesis | `Symmetry.lean` — `meta`, 9 theorems, 0 stubbed | the involutions of the functional equation do not force the zeros onto the line; nothing about whether they lie there |
+| Riemann Hypothesis | [`Harmonic.lean`](src/utilities/verify/lean/Harmonic.lean) — `meta`, 12 theorems, 0 stubbed · [`Symmetry.lean`](src/utilities/verify/lean/Symmetry.lean) — `meta`, 9 theorems, 0 stubbed | the involutions of the functional equation do not force the zeros onto the line (Symmetry); an involution need not leave a fixed point at all, and leaves one exactly on an odd carrier or a perfect square (Harmonic); nothing about whether the zeros lie there |
 | Navier–Stokes | none | — |
 | Yang–Mills | none | — |
 | Hodge | none | — |
 | Birch–Swinnerton-Dyer | none | — |
 | Poincaré | none here: proved by **Grigori Perelman** on paper, not formalised in this repo | — |
 
-Settled by this corpus: **none** (`claySettled` is empty). Kernel report sealed 2026-11-14: 290 theorems, 197 axiom-free, 93 on Lean's three standard axioms, 0 stubbed, 35 files, sources `0c5ea6ae2093c93f`. Recompute: `tsx src/utilities/verify/inventory/index.ts` · `pnpm vitest run src/utilities/verify`.
+Settled by this corpus: **none** (`claySettled` is empty). Kernel report sealed 2026-11-15: 326 theorems, 230 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 38 files, sources `54e9d0887d305500`. Recompute: `tsx src/utilities/verify/inventory/index.ts` · `pnpm vitest run src/utilities/verify`.
 
 | problem | statement (algebraic) | the named gap |
 | --- | --- | --- |

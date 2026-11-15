@@ -42,11 +42,112 @@ export interface ProofCensus {
   readonly stubbed: number
 }
 
+/**
+ * Lean's foundation: the only axioms a verified theorem may rest on, each with what it means and the
+ * theorem in Foundation.lean that the kernel reports as resting on exactly that axiom (which certifies
+ * the meaning is the axiom). Anything else, a file's own `axiom` included, is an assumption with no
+ * meaning here, and the census never counts it as proved.
+ */
+export const FOUNDATION = {
+  propext: { meaning: 'two propositions that imply each other are equal', witness: 'Foundation.propext_meaning' },
+  'Quot.sound': {
+    meaning: 'related elements have the same class in a quotient; function extensionality follows',
+    witness: 'Foundation.quot_sound_meaning',
+  },
+  'Classical.choice': {
+    meaning: 'from a proof that a type is inhabited, an element of it; with the others, the excluded middle',
+    witness: 'Foundation.choice_meaning',
+  },
+} as const satisfies Record<string, { meaning: string; witness: string }>
+
+/** The axioms that have a meaning: the foundation, and nothing else. */
+export const STANDARD_AXIOMS: ReadonlySet<string> = new Set(Object.keys(FOUNDATION))
+
+/**
+ * A theorem as an equation: what the kernel's own rules prove, plus each foundation axiom it rests on with
+ * that axiom's meaning. An axiom-free theorem has nothing on the second side.
+ */
+export interface TheoremLink {
+  readonly theorem: string
+  readonly kernel: 'alone' | 'with axioms'
+  readonly axioms: readonly { readonly axiom: string; readonly meaning: string; readonly witness: string }[]
+}
+
+/** Link a theorem to its axioms and their meanings; an axiom with no meaning has none to link. */
+export const linkOf = (e: ProofEntry): TheoremLink => ({
+  theorem: e.theorem,
+  kernel: e.axiomFree ? 'alone' : 'with axioms',
+  axioms: e.axioms
+    .filter((a): a is keyof typeof FOUNDATION => a in FOUNDATION)
+    .map((a) => ({ axiom: a, meaning: FOUNDATION[a].meaning, witness: FOUNDATION[a].witness })),
+})
+
+/** One line of a proof's journal entry. */
+export interface Posting {
+  readonly account: string
+  readonly debit: number
+  readonly credit: number
+}
+
+/** What backs a theorem when no axiom does: the kernel's own rules. */
+export const KERNEL = 'kernel' as const
+/** Credits no check accepts: a stub, or an axiom with no meaning in FOUNDATION. */
+export const UNBACKED = 'unbacked' as const
+
+/**
+ * A theorem as a double-entry journal entry: debit the theorem, credit what backs it — the kernel alone
+ * when it is axiom-free, otherwise each axiom it rests on (a stub or a foreign axiom credits UNBACKED).
+ * Debits equal credits in every entry.
+ */
+export const journalOf = (e: ProofEntry): Posting[] => {
+  const backing = e.axiomFree ? [KERNEL] : e.axioms.map((a) => (a in FOUNDATION ? a : UNBACKED))
+  return [{ account: e.theorem, debit: backing.length, credit: 0 }, ...backing.map((account) => ({ account, debit: 0, credit: 1 }))]
+}
+
+/** The trial balance of a record: each backing account's credits, and the totals, which must agree. */
+export const trialBalance = (entries: readonly ProofEntry[]) => {
+  const credits: Record<string, number> = {}
+  let debit = 0
+  let credit = 0
+  for (const line of entries.flatMap(journalOf)) {
+    debit += line.debit
+    credit += line.credit
+    if (line.credit) credits[line.account] = (credits[line.account] ?? 0) + line.credit
+  }
+  return { credits, debit, credit, balanced: debit === credit }
+}
+
+/**
+ * The axiom gate. A theorem may rest on an axiom only where it already did in the base record — recorded
+ * debt, which may only shrink — or where it is a FOUNDATION witness, whose job is to rest on its axiom.
+ * A new theorem resting on any axiom, or an old one resting on more than before, is a violation.
+ */
+export const axiomViolations = (
+  base: Pick<ProofInventory, 'files'>,
+  now: Pick<ProofInventory, 'files'>,
+): { readonly theorem: string; readonly axioms: readonly string[] }[] => {
+  const before = new Map(base.files.flatMap((f) => f.entries).map((e) => [e.theorem, new Set(e.axioms)]))
+  const witnesses = new Set<string>(Object.values(FOUNDATION).map((f) => f.witness))
+  return now.files
+    .flatMap((f) => f.entries)
+    .filter((e) => !witnesses.has(e.theorem))
+    .flatMap((e) => {
+      const added = e.axioms.filter((a) => !(before.get(e.theorem) ?? new Set()).has(a))
+      return added.length ? [{ theorem: e.theorem, axioms: added }] : []
+    })
+}
+
+/** Rests only on Lean's foundation axioms (and is not a stub). */
+export const onFoundation = (e: ProofEntry): boolean => !e.axiomFree && !e.stubbed && e.axioms.every((a) => STANDARD_AXIOMS.has(a))
+
+/** Rests on an axiom outside the foundation: an unchecked assumption. */
+export const onForeignAxiom = (e: ProofEntry): boolean => !e.axiomFree && !e.stubbed && !onFoundation(e)
+
 export function proofCensus(entries: readonly ProofEntry[]): ProofCensus {
   return {
     theorems: entries.length,
     axiomFree: entries.filter((e) => e.axiomFree).length,
-    standardAxioms: entries.filter((e) => !e.axiomFree && !e.stubbed).length,
+    standardAxioms: entries.filter(onFoundation).length,
     stubbed: entries.filter((e) => e.stubbed).length,
   }
 }
@@ -89,7 +190,70 @@ export interface ClayWitness {
 
 /** The raw `Clay: <problem> <kind>` lines of one Lean source. */
 export const clayTags = (source: string): Array<{ problem: string; kind: string }> =>
-  [...source.matchAll(/^\s*Clay:\s+(\S+)\s+(\S+)/gm)].map((m) => ({ problem: m[1] as string, kind: m[2] as string }))
+  [...source.matchAll(/^[ \t]*Clay:[ \t]+(\S+)[ \t]+(\S+)/gm)].map((m) => ({ problem: m[1] as string, kind: m[2] as string }))
+
+/**
+ * Every Lean file states what its theorems say about the seven Clay problems: one or more
+ * `Clay: <problem> <kind>` lines, or `Clay: none` when they bear on none. A file that says nothing,
+ * names an unknown problem or kind, or mixes `none` with a problem is an error the gate refuses —
+ * so each theorem is verified against the Clay cases by the file that holds it.
+ */
+export const clayDeclarationErrors = (sources: Readonly<Record<string, string>>): string[] => {
+  const errors: string[] = []
+  for (const [file, source] of Object.entries(sources)) {
+    const none = /^[ \t]*Clay:[ \t]+none[ \t]*$/m.test(source)
+    const tags = clayTags(source)
+    if (!none && tags.length === 0) errors.push(`${file}: no Clay declaration (Clay: <problem> <kind>, or Clay: none)`)
+    if (none && tags.length > 0) errors.push(`${file}: declares Clay: none and a problem`)
+    for (const t of tags) {
+      if (!(CLAY as readonly string[]).includes(t.problem)) errors.push(`${file}: unknown Clay problem ${t.problem}`)
+      if (!(CLAY_KINDS as readonly string[]).includes(t.kind)) errors.push(`${file}: unknown Clay kind ${t.kind}`)
+    }
+  }
+  return errors
+}
+
+/** How the README names each problem in its Clay table. */
+export const CLAY_LABEL: Readonly<Record<ClayProblem, string>> = {
+  pnp: 'P vs NP',
+  riemann: 'Riemann Hypothesis',
+  'navier-stokes': 'Navier–Stokes',
+  'yang-mills': 'Yang–Mills',
+  hodge: 'Hodge',
+  bsd: 'Birch–Swinnerton-Dyer',
+  poincare: 'Poincaré',
+}
+
+/** The README cell for a problem's kernel witnesses: each file linked, with its kind and counts, or none. */
+export const witnessCell = (witnesses: readonly ClayWitness[], problem: ClayProblem): string => {
+  const mine = witnesses.filter((w) => w.problem === problem).sort((a, b) => a.file.localeCompare(b.file))
+  if (mine.length === 0) return 'none'
+  return mine.map((w) => `[\`${w.file}\`](src/utilities/verify/lean/${w.file}) — \`${w.kind}\`, ${w.theorems} theorems, ${w.stubbed} stubbed`).join(' · ')
+}
+
+/** The README sentence that quotes the sealed census. */
+export const censusLine = (inventory: Pick<ProofInventory, 'sealedAt' | 'census' | 'files' | 'sourcesHash'>): string =>
+  `Kernel report sealed ${inventory.sealedAt}: ${inventory.census.theorems} theorems, ${inventory.census.axiomFree} axiom-free, ${inventory.census.standardAxioms} on Lean's three standard axioms, ${inventory.census.stubbed} stubbed, ${inventory.files.length} files, sources \`${inventory.sourcesHash}\`.`
+
+/**
+ * Where the README disagrees with the kernel. Each problem's row must begin its witness cell with
+ * exactly what was checked (linked), the settled list must be the computed one, and the census line
+ * must be the sealed record's.
+ */
+export const readmeClayErrors = (readme: string, witnesses: readonly ClayWitness[], inventory: Parameters<typeof censusLine>[0]): string[] => {
+  const errors: string[] = []
+  for (const problem of CLAY) {
+    const row = readme.split('\n').find((l) => new RegExp(`^\\| (\\*\\*)?${CLAY_LABEL[problem]}(\\*\\*)? \\|`).test(l) && l.split('|').length >= 4 && !l.includes('⟹'))
+    const cell = row?.split('|')[2]?.trim()
+    if (!cell) errors.push(`README: no Clay table row for ${CLAY_LABEL[problem]}`)
+    else if (!cell.startsWith(witnessCell(witnesses, problem))) errors.push(`README: ${CLAY_LABEL[problem]} must list ${witnessCell(witnesses, problem)}`)
+  }
+  const settled = claySettled(witnesses)
+  const settledText = settled.length ? settled.map((p) => CLAY_LABEL[p]).join(', ') : '**none**'
+  if (!readme.includes(`Settled by this corpus: ${settledText}`)) errors.push(`README: settled must read ${settledText}`)
+  if (!readme.includes(censusLine(inventory))) errors.push(`README: census must read ${censusLine(inventory)}`)
+  return errors
+}
 
 /** What the kernel has checked about each problem: one witness per declaration, with its axiom footprint. */
 export function clayWitnesses(inventory: Pick<ProofInventory, 'files'>, sources: Readonly<Record<string, string>>): ClayWitness[] {
@@ -106,7 +270,7 @@ export function clayWitnesses(inventory: Pick<ProofInventory, 'files'>, sources:
         compiled: file.compiled,
         theorems: file.entries.length,
         axiomFree: file.entries.filter((e) => e.axiomFree).length,
-        standardAxioms: file.entries.filter((e) => !e.axiomFree && !e.stubbed).length,
+        standardAxioms: file.entries.filter(onFoundation).length,
         stubbed: file.entries.filter((e) => e.stubbed).length,
       })
     }
@@ -151,7 +315,8 @@ if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
   const { join } = await import('node:path')
   const { tmpdir } = await import('node:os')
 
-  const LEAN = process.env.LEAN_BIN ?? '/opt/homebrew/bin/lean'
+  // `lean` on PATH: elan installs the version in /lean-toolchain, here and in CI.
+  const LEAN = process.env.LEAN_BIN ?? 'lean'
   const dir = join(process.cwd(), 'src/utilities/verify/lean')
   const names = readdirSync(dir).filter((f) => f.endsWith('.lean')).map((f) => f.replace(/\.lean$/, '')).sort()
   const out = mkdtempSync(join(tmpdir(), 'erpax-lean-'))
@@ -202,6 +367,39 @@ if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
     sourcesHash: hash.digest('hex').slice(0, 16),
     census: proofCensus(entries),
     files,
+  }
+  // `--check` (CI): the kernel must accept every file with no stub, and the committed record must be
+  // what this run produced. The date and the Lean build string are left out of the comparison.
+  if (process.argv.includes('--check')) {
+    const refused = files.filter((f) => !f.compiled).map((f) => f.file)
+    const committed = JSON.parse(readFileSync(join(process.cwd(), INVENTORY_PATH), 'utf8')) as ProofInventory
+    const verdict = (i: ProofInventory) => JSON.stringify({ sourcesHash: i.sourcesHash, census: i.census, files: i.files })
+    const stale = verdict(committed) !== verdict(inventory)
+    for (const file of refused) console.error(`  ${file}: the kernel refused it`)
+    if (inventory.census.stubbed > 0) console.error(`  ${inventory.census.stubbed} theorem(s) rest on sorry`)
+    const foreign = entries.filter(onForeignAxiom)
+    const uncertified = Object.entries(FOUNDATION).filter(([axiom, { witness }]) => {
+      const e = entries.find((x) => x.theorem === witness)
+      return !e || e.axioms.length !== 1 || e.axioms[0] !== axiom
+    })
+    for (const [axiom, { witness }] of uncertified) console.error(`  ${witness} does not rest on exactly ${axiom}: the meaning is not certified`)
+    for (const e of foreign) console.error(`  ${e.theorem}: rests on ${e.axioms.filter((a) => !STANDARD_AXIOMS.has(a)).join(', ')}, outside Lean's foundation`)
+    if (stale) console.error(`  ${INVENTORY_PATH} is not what the kernel reports now`)
+    // `--base <record>` (CI passes main's): no theorem may take on an axiom it did not rest on there.
+    const sources = Object.fromEntries(names.map((n) => [`${n}.lean`, readFileSync(join(dir, `${n}.lean`), 'utf8')]))
+    const clayErrors = [...clayDeclarationErrors(sources), ...readmeClayErrors(readFileSync(join(process.cwd(), 'README.md'), 'utf8'), clayWitnesses(inventory, sources), committed)]
+    for (const e of clayErrors) console.error(`  ${e}`)
+    const baseAt = process.argv.indexOf('--base')
+    const violations = baseAt > 0 ? axiomViolations(JSON.parse(readFileSync(process.argv[baseAt + 1] as string, 'utf8')) as ProofInventory, inventory) : []
+    for (const v of violations) console.error(`  ${v.theorem}: rests on ${v.axioms.join(', ')} — prove it with the kernel's rules (cases, rfl, decide)`)
+    if (refused.length || inventory.census.stubbed > 0 || foreign.length || uncertified.length || violations.length || clayErrors.length || stale) {
+      console.error('\n✖ run `tsx src/utilities/verify/inventory/index.ts` and commit the record')
+      process.exit(1)
+    }
+    const tb = trialBalance(entries)
+    console.log(`✓ verify/inventory — ${inventory.census.theorems} theorem(s), every file accepted, record current`)
+    console.log(`  debit ${tb.debit} = credit ${tb.credit}: ${Object.entries(tb.credits).map(([a, n]) => `${a} ${n}`).join(' · ')}`)
+    return
   }
   writeFileSync(join(process.cwd(), INVENTORY_PATH), `${JSON.stringify(inventory, null, 2)}\n`)
   console.log(`verify/inventory — ${inventory.census.theorems} theorem(s) · ${inventory.census.axiomFree} axiom-free · ${inventory.census.stubbed} stubbed · sources ${inventory.sourcesHash}`)

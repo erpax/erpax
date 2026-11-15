@@ -1,6 +1,8 @@
 /-
   Planck — the three combinations, and what each one is made of.
 
+  Clay: none
+
   A Planck quantity is a product of powers of hbar, G and c. Every exponent is a half-integer, so
   this file carries them DOUBLED and every statement becomes integer arithmetic a kernel can decide:
 

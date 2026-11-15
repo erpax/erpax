@@ -1,6 +1,8 @@
 /-
   Automate — a refinement loop's guarantees hold BY CONSTRUCTION, or they do not hold.
 
+  Clay: none
+
   What stood here was a wish list: five theorems about arbitrary `List LoopState`, four of them
   `sorry`, and at least two FALSE as stated. `confidence_monotonic` claimed every list of states
   rises; nothing stopped a list from falling. `loop_termination` claimed any list longer than
