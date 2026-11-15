@@ -1,8 +1,15 @@
 #!/usr/bin/env sh
-# Regenerate Payload's generated files when a collection, field or the config changes.
+# Regenerate what is generated, so a commit never carries a stale copy.
 cd "$(dirname "$0")/.." || exit 1
 staged=$(git diff --cached --name-only --diff-filter=ACMR)
+# Payload's generated files, when a collection, field or the config changes.
 if echo "$staged" | grep -qE '^src/.*\.(ts|tsx)$'; then
   pnpm -s generate:types >/dev/null && pnpm -s generate:importmap >/dev/null
   git add src/payload-types.ts 'src/app/(payload)/admin/importMap.js' 2>/dev/null || true
+fi
+# Every @erpax/* package names its dependencies at the root's range: a root bump reaches every
+# package manifest, and the lockfile follows the manifests.
+if echo "$staged" | grep -qE '^(package\.json|pnpm-workspace\.yaml)$'; then
+  node packages/release.mjs --ranges --write >/dev/null && pnpm -s install --lockfile-only >/dev/null
+  git add packages/*/package.json pnpm-lock.yaml 2>/dev/null || true
 fi

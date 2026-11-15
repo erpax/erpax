@@ -18,6 +18,8 @@
  *   node packages/release.mjs            # dry-run: print the release plan
  *   node packages/release.mjs --write    # bump changed package.json + update the manifest
  *   node packages/release.mjs --check    # CI: assert the manifest is in sync (fail on drift)
+ *   node packages/release.mjs --ranges   # every package at the root's dependency ranges? (no build)
+ *   node packages/release.mjs --ranges --write   # rewrite the drifted ranges (pre-commit hook)
  *
  * "Fully comply" is the WORKFLOW's gate: it runs `pnpm check` (rules ratchet · folder
  * law · tests) BEFORE calling this, so only a green tree can produce a release plan.
@@ -26,8 +28,9 @@
 import { execFileSync } from 'node:child_process'
 import { createHash } from 'node:crypto'
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs'
-import { dirname, join } from 'node:path'
+import { dirname, join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { rangeDrift } from './range.mjs'
 
 const packagesDir = dirname(fileURLToPath(import.meta.url))
 const root = join(packagesDir, '..')
@@ -96,17 +99,40 @@ const bumpPatch = (v) => {
 
 const mode = process.argv.includes('--write') ? 'write' : process.argv.includes('--check') ? 'check' : 'plan'
 const manifest = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : {}
+/** Every package manifest that carries the shared version — algebra too, though it builds on its own lane. */
+const everyManifest = () => readdirSync(packagesDir).map((name) => join(packagesDir, name, 'package.json')).filter((pj) => existsSync(pj))
+
+// Ranges first, before anything is built: every manifest names each dependency at the root
+// package.json's range (packages/range.mjs). `--ranges` stops here (pnpm lint); `--ranges --write`
+// rewrites the drifted manifests (the pre-commit hook); `--check` fails here in milliseconds
+// instead of after the build.
+const rangesOnly = process.argv.includes('--ranges')
+if (rangesOnly || mode === 'check') {
+  const rewrite = rangesOnly && mode === 'write'
+  const drift = rangeDrift({ write: rewrite })
+  for (const d of drift) console.log(`  ${d.manifest}: ${d.name} ${d.from ?? '(absent)'} → ${d.to}`)
+  if (drift.length && !rewrite) {
+    console.error(`\n✖ ${drift.length} dependency range(s) differ from the root package.json — run \`node packages/release.mjs --ranges --write\` and commit.`)
+    process.exit(1)
+  }
+  if (rangesOnly) {
+    console.log(drift.length ? `\n✓ ${drift.length} range(s) rewritten to the root package.json's` : '✓ every package names its dependencies at the root package.json range')
+    process.exit(0)
+  }
+}
 
 // Build every split package so the dist reflects current source (content-addressed).
 // algebra (MIT tier) keeps its own hand-audited build + publish-algebra.yml workflow,
 // so it is released independently and excluded here — one package, one pipeline.
+// The build rewrites each manifest, so the committed text is kept to compare against.
+const committed = new Map(everyManifest().map((pj) => [pj, readFileSync(pj, 'utf8')]))
 execFileSync('node', [join(packagesDir, 'build.mjs'), 'all'], { cwd: root, stdio: 'inherit' })
+/** Manifests the build wrote differently from the commit (or created): generated, so committed as generated. */
+const regenerated = everyManifest().filter((pj) => committed.get(pj) !== readFileSync(pj, 'utf8')).map((pj) => relative(root, pj))
 
 const ROOT_PJ = join(root, 'package.json')
 const rootVersion = JSON.parse(readFileSync(ROOT_PJ, 'utf8')).version
 const setVersion = (pj, version) => writeFileSync(pj, readFileSync(pj, 'utf8').replace(/("version":\s*")[^"]+(")/, `$1${version}$2`))
-/** Every package manifest that carries the shared version — algebra too, though it builds on its own lane. */
-const everyManifest = () => readdirSync(packagesDir).map((name) => join(packagesDir, name, 'package.json')).filter((pj) => existsSync(pj))
 
 const plan = []
 for (const { dir, pj, pkg } of publicPackages()) {
@@ -125,9 +151,10 @@ for (const p of plan) {
 }
 
 if (mode === 'check') {
-  if (changed.length || offVersion.length || stale.length) {
+  if (changed.length || offVersion.length || stale.length || regenerated.length) {
+    for (const pj of regenerated) console.error(`  ${pj}: the build writes it differently from the commit`)
     console.error(
-      `\n✖ ${changed.length} package(s) changed, ${offVersion.length} manifest(s) off the shared version ${rootVersion} — run \`node packages/release.mjs --write\` and commit.`,
+      `\n✖ ${changed.length} package(s) changed, ${offVersion.length} manifest(s) off the shared version ${rootVersion}, ${regenerated.length} manifest(s) not as generated — run \`node packages/release.mjs --write\` and commit.`,
     )
     process.exit(1)
   }

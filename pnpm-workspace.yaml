@@ -31,13 +31,13 @@ overrides:
   hono: ^4.13.5
   immutable: ^4.3.9
   fast-uri: ^3.1.6
-  sharp: ^0.35.4
+  sharp: ^0.35.5
   body-parser: ^2.3.0
   brace-expansion@1: ^1.1.17
   brace-expansion@2: ^2.1.3
   brace-expansion@5: ^5.0.8
   undici@7: ^7.28.0
-  vite@8: ^8.0.16
+  vite@8: ^8.2.4
   # Dependabot 2026-08: remaining three vulnerable transitive instances, keys
   # range-scoped to the vulnerable major so no direct dependency moves.
   #   undici@5   (@cursor/sdk → @connectrpc/connect-node) — 8 advisories, patched >=6.27
