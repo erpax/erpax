@@ -1,4 +1,4 @@
-import type { CollectionConfig } from 'payload'
+import type { CollectionConfig, Field, FieldAccess } from 'payload'
 import { enforceSeparation } from '@/hooks/collections/users/enforceSeparation'
 import { refuseInactive } from '@/hooks/collections/users/refuseInactive'
 import { stampLastLogin, stampPasswordChange } from '@/hooks/collections/users/stampAuth'
@@ -13,8 +13,32 @@ import { readAccess } from '@/utilities/users/access'
 import { updateAndDeleteAccess } from '@/utilities/users/access'
 import { externalUsersLogin } from '@/utilities/users/endpoints'
 import { ensureUniqueUsername } from '@/utilities/users/hooks'
-import { firstUserSuperAdmin } from '@/utilities/users/hooks'
+import { firstUserCredentials, firstUserSuperAdmin } from '@/utilities/users/hooks'
+import { guardPrivilege } from '@/hooks/collections/users/guardPrivilege'
+import { isAccessingSelf } from '@/utilities/users/access/isAccessingSelf'
+import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
 import { setCookieBasedOnDomain } from '@/utilities/users/hooks'
+
+/** A field only the server writes (its own hooks, or the database directly): no caller may set it. */
+const serverOnly = { create: () => false, update: () => false }
+
+/** `active` and its reason: switched by a super-admin or a tenant admin, never by the account itself. */
+const switchedByAnAdmin: FieldAccess = ({ req, id }) =>
+  Boolean(req.user) && !isAccessingSelf({ user: req.user, id }) && (isSuperAdmin(req.user) || getUserTenantIDs(req.user, 'admin').length > 0)
+
+/** Every field but the credentials appears once someone is signed in (the first-user form stays email and password). */
+const signedInOnly = (fields: Field[]): Field[] =>
+  fields.map((field) => {
+    if ('name' in field && field.name === 'password') return field
+    const shown = field.admin?.condition
+    return {
+      ...field,
+      admin: {
+        ...field.admin,
+        condition: (data, siblingData, context) => Boolean(context?.user) && (shown ? shown(data, siblingData, context) : true),
+      },
+    } as Field
+  })
 
 const defaultTenantArrayField = tenantsArrayField({
   tenantsArrayFieldName: 'tenants',
@@ -92,7 +116,9 @@ export const Users: CollectionConfig = {
     verify: Boolean(process.env.RESEND_API_KEY?.trim()),
   },
   endpoints: [externalUsersLogin],
-  fields: [
+  // The first user is super-admin by definition: its form asks for credentials only, and every other
+  // field appears once someone is signed in (Payload's first-user view shows all fields otherwise).
+  fields: signedInOnly([
     {
       type: 'text',
       name: 'password',
@@ -121,19 +147,22 @@ export const Users: CollectionConfig = {
     { name: 'nickname', type: 'text' },
     { name: 'photo', type: 'upload', relationTo: 'media' },
     { name: 'timezone', type: 'text', admin: { description: 'An IANA time zone, e.g. Europe/Sofia.' } },
-    { name: 'lastLogin', type: 'date', admin: { readOnly: true, position: 'sidebar' } },
-    { name: 'passwordChangedAt', type: 'date', admin: { readOnly: true, position: 'sidebar' } },
+    // written by the server only (stampLastLogin, stampPasswordChange): readOnly in the admin did not stop the API
+    { name: 'lastLogin', type: 'date', access: serverOnly, admin: { readOnly: true, position: 'sidebar' } },
+    { name: 'passwordChangedAt', type: 'date', access: serverOnly, admin: { readOnly: true, position: 'sidebar' } },
     // virtual: the unit's name beside its id, resolved through the relationship at read time
     { name: 'orgUnitName', type: 'text', virtual: 'orgUnit.name', admin: { readOnly: true, hidden: true } },
     {
       name: 'active',
       type: 'checkbox',
       defaultValue: true,
+      access: { update: switchedByAnAdmin },
       admin: { position: 'sidebar', description: 'An inactive user cannot sign in.' },
     },
     {
       name: 'inactiveReason',
       type: 'text',
+      access: { update: switchedByAnAdmin },
       admin: { position: 'sidebar', condition: (data) => data?.active === false, description: 'Why the account was switched off.' },
     },
     {
@@ -235,6 +264,7 @@ export const Users: CollectionConfig = {
         { label: 'Viewer', value: 'viewer' },
       ],
       access: {
+        create: ({ req }) => isSuperAdmin(req.user),
         update: ({ req }) => isSuperAdmin(req.user),
       },
     },
@@ -376,11 +406,12 @@ export const Users: CollectionConfig = {
         },
       ],
     },
-  ],
+  ]),
   hooks: {
     // The genesis owner computes itself: the FIRST user (empty user set) becomes
     // super-admin by the identity element, never by hand-assignment.
-    beforeChange: [firstUserSuperAdmin, enforceSeparation, stampPasswordChange],
+    beforeOperation: [firstUserCredentials],
+    beforeChange: [firstUserSuperAdmin, guardPrivilege, enforceSeparation, stampPasswordChange],
     beforeLogin: [refuseInactive],
     afterLogin: [setCookieBasedOnDomain, stampLastLogin],
   },

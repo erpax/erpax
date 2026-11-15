@@ -5440,7 +5440,7 @@ export interface FixedAsset {
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
-  uuid: string;
+  uuid?: string | null;
   assetNumber: string;
   description: string;
   assetCategory:
@@ -13657,7 +13657,7 @@ export interface LeaveRequest {
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
-  uuid: string;
+  uuid?: string | null;
   reference: string;
   employee: string | Employee;
   leaveType:
@@ -18416,7 +18416,7 @@ export interface Memory {
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
-  uuid: string;
+  uuid?: string | null;
   /**
    * Stable tenant-unique memory id (e.g. MEM-2026-05-001). Cross-cycle navigation key.
    */
@@ -18861,7 +18861,7 @@ export interface Standard {
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
-  uuid: string;
+  uuid?: string | null;
   /**
    * Canonical standard id — e.g. "IFRS-15", "ISO-19011:2018", "RFC-8259", "EU-Directive-2014/95/EU". Stable across versions; supersession captures version transitions.
    */
@@ -19164,7 +19164,7 @@ export interface Translation {
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
-  uuid: string;
+  uuid?: string | null;
   /**
    * Composite key: `<scope>:<key>` — e.g. `mcp-tool:erpax.consistency.scan.description`, `ui-surface:dashboard.welcome.heading`, `event-label:invoice.activated`.
    */

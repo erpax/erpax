@@ -1,78 +1,78 @@
 {
   "@erpax/access": {
-    "version": "1.0.19",
-    "contentUuid": "313225b1-9aeb-86e7-b256-65f0dca15b2a"
+    "version": "1.0.20",
+    "contentUuid": "a76f3fc0-4ec7-82e2-9a9f-6218d562d365"
   },
   "@erpax/accounting": {
-    "version": "1.0.19",
+    "version": "1.0.20",
     "contentUuid": "8ff58332-8f60-890c-bf34-73ae1c75f3fd"
   },
   "@erpax/admin": {
-    "version": "1.0.19",
-    "contentUuid": "19583551-fcc2-88dd-b80b-0739b85c5709"
+    "version": "1.0.20",
+    "contentUuid": "2015a169-494a-8031-983d-35edc50a88d4"
   },
   "@erpax/assets": {
-    "version": "1.0.19",
-    "contentUuid": "bf3cdfaf-5061-8c8d-b225-484875cb9aea"
+    "version": "1.0.20",
+    "contentUuid": "eaca9ec4-ba38-881b-8dcb-156d9e562b02"
   },
   "@erpax/chat": {
-    "version": "1.0.19",
-    "contentUuid": "858b2bd4-65b1-8c3a-a539-8c4b4c95bdcc"
+    "version": "1.0.20",
+    "contentUuid": "b73ef81b-cc0b-8274-92b2-460f6fb2a4e4"
   },
   "@erpax/commerce": {
-    "version": "1.0.19",
+    "version": "1.0.20",
     "contentUuid": "ec2aef5a-53e8-8e1f-814c-c3035c5f972f"
   },
   "@erpax/comply": {
-    "version": "1.0.19",
-    "contentUuid": "23de1b74-723f-883b-8b07-3caccd80ffd9"
+    "version": "1.0.20",
+    "contentUuid": "e6eac315-3269-80d8-83f1-0e51587eed11"
   },
   "@erpax/engine": {
-    "version": "1.0.19",
+    "version": "1.0.20",
     "contentUuid": "8b6b2781-7ecc-85d8-a3a3-3eec5179e12b"
   },
   "@erpax/erpax": {
-    "version": "1.0.19",
+    "version": "1.0.20",
     "contentUuid": "1a07e438-e853-8fa2-9744-daab32bb5ded"
   },
   "@erpax/identity": {
-    "version": "1.0.19",
-    "contentUuid": "e3a00f70-9c2a-8902-ae38-81766f6d1f19"
+    "version": "1.0.20",
+    "contentUuid": "99c7d427-b2f1-815d-8c7c-c85a2cd9a9a2"
   },
   "@erpax/ledger": {
-    "version": "1.0.19",
-    "contentUuid": "b813613b-ed20-8720-ac94-513f917c1ea7"
+    "version": "1.0.20",
+    "contentUuid": "e81d8be7-466d-8774-b869-987d232d870a"
   },
   "@erpax/make": {
-    "version": "1.0.19",
-    "contentUuid": "d6389637-03af-8207-afa2-50907c556101"
+    "version": "1.0.20",
+    "contentUuid": "483d3e73-b8b8-87dd-bf2e-51b3090ac2db"
   },
   "@erpax/people": {
-    "version": "1.0.19",
-    "contentUuid": "57a0f8ef-35d8-8845-8986-e9a5455f514c"
+    "version": "1.0.20",
+    "contentUuid": "c6032df3-abde-8467-b183-a0a8f08a2505"
   },
   "@erpax/platform": {
-    "version": "1.0.19",
-    "contentUuid": "748b950e-5b57-8e8b-8b98-0ede9d4ba94f"
+    "version": "1.0.20",
+    "contentUuid": "909d9d66-8c1d-82a0-a7a5-8a40ac90eadd"
   },
   "@erpax/plugin-taggable": {
-    "version": "1.0.19",
+    "version": "1.0.20",
     "contentUuid": "be362ac4-7496-8c88-a0bd-262c38db2270"
   },
   "@erpax/sales": {
-    "version": "1.0.19",
-    "contentUuid": "5a5a1f0f-5201-8056-a7c1-696fbb2a1c8c"
+    "version": "1.0.20",
+    "contentUuid": "89be9d16-6001-8537-8499-8cce0852ed07"
   },
   "@erpax/sites": {
-    "version": "1.0.19",
-    "contentUuid": "fa13c129-970a-819d-92d2-480ebf765c94"
+    "version": "1.0.20",
+    "contentUuid": "0e5ddadf-e88b-8f27-b5af-6d1f30dd2f44"
   },
   "@erpax/stock": {
-    "version": "1.0.19",
-    "contentUuid": "90ebea5f-6652-8885-8415-fe89650a19a7"
+    "version": "1.0.20",
+    "contentUuid": "5155fcb3-2088-87f6-8e96-5164389a65e2"
   },
   "@erpax/work": {
-    "version": "1.0.19",
-    "contentUuid": "ae002551-95d8-88c3-83bc-1f5e810a207f"
+    "version": "1.0.20",
+    "contentUuid": "15ae9d63-5fc1-8f98-b494-c1778222b9cf"
   }
 }
