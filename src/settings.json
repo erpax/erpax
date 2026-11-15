@@ -14,8 +14,6 @@
       "Bash(NODE_OPTIONS=* ./node_modules/.bin/tsc *)",
       "Bash(node scripts/standards-refresh.mjs*)",
       "Bash(bash scripts/standards-citation-index.sh*)",
-      "Bash(node packages/release.mjs*)",
-      "Bash(node packages/build.mjs *)",
       "Bash(git status*)",
       "Bash(git diff*)",
       "Bash(git log*)",

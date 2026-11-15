@@ -23,7 +23,7 @@
     "generate:types": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=tsx/esm --import=./src/components/css/load-hook.mjs\" payload generate:types",
     "generate:importmap": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=tsx/esm --import=./src/components/css/load-hook.mjs\" payload generate:importmap",
     "payload:migrate:create": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/components/css/load-hook.mjs\" payload migrate:create",
-    "lint": "eslint src && node packages/release.mjs --ranges",
+    "lint": "eslint src",
     "typecheck": "cross-env NODE_OPTIONS=--max-old-space-size=8000 tsc --noEmit -p .",
     "test": "vitest run",
     "test:etrima": "tsx tests/replay/etrima.ts",

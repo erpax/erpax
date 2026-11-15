@@ -1,5 +1,5 @@
 /**
- * @erpax/auth/access — reusable access-control predicates (multi-tenant + RBAC).
+ * access — reusable access-control predicates (multi-tenant + RBAC).
  *
  * @standard NIST INCITS-359-2012 role-based-access-control
  * @standard NIST SP-800-162 attribute-based-access-control
