@@ -109,7 +109,7 @@ A Clay problem is verified by the **Lean kernel**, or it is not verified. Not by
 | Birch–Swinnerton-Dyer | none | — |
 | Poincaré | none here: proved by **Grigori Perelman** on paper, not formalised in this repo | — |
 
-Settled by this corpus: **none** (`claySettled` is empty). Kernel report sealed 2026-11-15: 326 theorems, 230 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 38 files, sources `54e9d0887d305500`. Recompute: `tsx src/utilities/verify/inventory/index.ts` · `pnpm vitest run src/utilities/verify`.
+Settled by this corpus: **none** (`claySettled` is empty). Kernel report sealed 2026-11-15: 335 theorems, 239 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 39 files, sources `8ad7e04c66de2941`. Recompute: `tsx src/utilities/verify/inventory/index.ts` · `pnpm vitest run src/utilities/verify`.
 
 | problem | statement (algebraic) | the named gap |
 | --- | --- | --- |

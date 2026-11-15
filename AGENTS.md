@@ -67,6 +67,12 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
   `kind: emerging_gap`: the MCP `afterToolCall` hook records every failed call (`src/plugins/mcp/gap`),
   and an agent records a need no tool covers the same way. It never works around the gap with
   `wrangler d1 execute`, direct SQL or throwaway scripts.
+- A prompt is a program (`src/utilities/prompt`, proved in `Prompt.lean`): `run(prompt, lexicon, req, memory)`
+  steps each known word over the memory, which hooks reached by the same request read as
+  `req.context.prompt`; a word returning `false` halts. An unknown word is researched, never refused:
+  the program `search think emote aware` asks Payload's `search`, records an `emerging_gap` memory keyed
+  `word:<word>` linked (`relatedTo`) to the documents found, broadcasts it to `chat`, and the prompt
+  goes on. The gap hook is the prompt `feel think emote aware`.
 
 ## Proofs
 
