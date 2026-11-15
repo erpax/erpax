@@ -41,9 +41,19 @@ export const dmarcPassed = (headers: readonly { key: string; value: string }[]):
   return /^\s*mx\.cloudflare\.net\s*;/i.test(first) && /\bdmarc=pass\b/i.test(first)
 }
 
-/** A text body: the plain part, else the HTML with its tags dropped. */
+/**
+ * A text body: the plain part, else the HTML reduced to text — style and script content dropped (end tags
+ * matched with any whitespace), tags dropped, then every remaining angle bracket removed, so what is
+ * left is text and can never be read as markup.
+ */
 export const textOf = (text: string | undefined, html: string | undefined): string =>
-  text?.trim() || (html ?? '').replace(/<style[\s\S]*?<\/style>|<script[\s\S]*?<\/script>/gi, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()
+  text?.trim() ||
+  (html ?? '')
+    .replace(/<(style|script)\b[\s\S]*?<\/\1\s*>/gi, ' ')
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/[<>]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
 
 /** Parse a raw RFC 5322 message, addressed by its SMTP envelope. */
 export const parseInbound = async (raw: string | ArrayBuffer, envelope: Envelope): Promise<InboundMail> => {

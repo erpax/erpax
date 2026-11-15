@@ -38,6 +38,8 @@ describe('inbound mail — Email Routing into messages', () => {
   it('a body is the text part, else the HTML without its tags', () => {
     expect(textOf(' plain ', '<p>html</p>')).toBe('plain')
     expect(textOf(undefined, '<style>p{}</style><p>Hello <b>you</b></p>')).toBe('Hello you')
+    expect(textOf(undefined, '<script>x()</script ><p>ok</p>')).toBe('ok')
+    expect(textOf(undefined, '<scr<script>ipt>alert(1)</p>')).not.toMatch(/[<>]/)
   })
 
   it('a mailbox is the address and its local part, sub-address dropped', () => {
