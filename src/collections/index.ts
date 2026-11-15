@@ -223,7 +223,6 @@ export { AuditFindings } from '@/collections/audit-findings'
 // Phase 4: Audit Governance & Reporting (5 collections)
 export { AuditCommittees } from '@/collections/audit-committees'
 export { BoardActions } from '@/collections/board-actions'
-export { ManagementCertifications } from '@/collections/management-certifications'
 export { RegulatoryReports } from '@/collections/regulatory-reports'
 
 // Phase 5: Compliance Policies & Calendars (9 collections)

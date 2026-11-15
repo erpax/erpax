@@ -79,7 +79,11 @@ export const documentError = (type: string | null | undefined, document: Record<
   const spec = GOVERNED_TYPES.find((t) => t.value === type)
   if (!spec) return true
   const missing = spec.requires.filter((f) => !document?.[f])
-  return missing.length ? `A ${spec.label.toLowerCase()} names its ${missing.join(', ')}.` : true
+  if (missing.length) return `A ${spec.label.toLowerCase()} names its ${missing.join(', ')}.`
+  const details = (document?.details as { blockType?: string }[] | undefined)?.[0]
+  if (details && details.blockType !== spec.value) return `A ${spec.label.toLowerCase()} carries its own details, not ${details.blockType}.`
+  if (spec.block && !details) return `A ${spec.label.toLowerCase()} carries its details.`
+  return details && spec.check ? spec.check(details as Record<string, unknown>) : true
 }
 
 /** Refuses a change into or out of a type the writer may not write, and a governed page missing what its type requires. */
@@ -132,6 +136,13 @@ export const governedDocumentFields = (): Field[] => [
       },
       { name: 'jurisdiction', type: 'relationship', relationTo: 'tax-jurisdictions' },
       { name: 'attachments', type: 'upload', relationTo: 'media', hasMany: true, admin: { description: 'Reference material and evidence.' } },
+      {
+        name: 'details',
+        type: 'blocks',
+        maxRows: 1,
+        blocks: GOVERNED_TYPES.flatMap((t) => (t.block ? [t.block] : [])),
+        admin: { description: 'What the standard of this type needs beyond the fields above: one block, matching the type.' },
+      },
       {
         name: 'links',
         type: 'array',
