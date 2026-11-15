@@ -56,9 +56,9 @@ async function subscriptionOf(req: PayloadRequest, tenant: string): Promise<{ su
       where: { tenant: { equals: tenant } },
       sort: '-createdAt',
       limit: 1,
+      pagination: false,
       depth: 1,
       overrideAccess: true,
-      req,
     })
     const subscription = docs[0]
     return subscription ? { subscription, tenant } : null
