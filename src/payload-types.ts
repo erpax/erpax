@@ -407,10 +407,8 @@ export interface Config {
     'internal-policies': InternalPolicy;
     'management-assessment-icfr': ManagementAssessmentIcfr;
     'management-certifications': ManagementCertification;
-    'policy-acknowledgments': PolicyAcknowledgment;
     'regulatory-reports': RegulatoryReport;
     'related-party-transactions': RelatedPartyTransaction;
-    'remediation-plans': RemediationPlan;
     'risk-register': RiskRegister;
     'segment-reporting': SegmentReporting;
     'biological-assets': BiologicalAsset;
@@ -643,10 +641,8 @@ export interface Config {
     'internal-policies': InternalPoliciesSelect<false> | InternalPoliciesSelect<true>;
     'management-assessment-icfr': ManagementAssessmentIcfrSelect<false> | ManagementAssessmentIcfrSelect<true>;
     'management-certifications': ManagementCertificationsSelect<false> | ManagementCertificationsSelect<true>;
-    'policy-acknowledgments': PolicyAcknowledgmentsSelect<false> | PolicyAcknowledgmentsSelect<true>;
     'regulatory-reports': RegulatoryReportsSelect<false> | RegulatoryReportsSelect<true>;
     'related-party-transactions': RelatedPartyTransactionsSelect<false> | RelatedPartyTransactionsSelect<true>;
-    'remediation-plans': RemediationPlansSelect<false> | RemediationPlansSelect<true>;
     'risk-register': RiskRegisterSelect<false> | RiskRegisterSelect<true>;
     'segment-reporting': SegmentReportingSelect<false> | SegmentReportingSelect<true>;
     'biological-assets': BiologicalAssetsSelect<false> | BiologicalAssetsSelect<true>;
@@ -5451,6 +5447,60 @@ export interface AuditFinding {
   rootCause?: string | null;
   riskCategory?: ('financial-reporting' | 'compliance' | 'operational' | 'security') | null;
   status: 'open' | 'in-remediation' | 'remediated-pending' | 'remediated-confirmed' | 'closed';
+  /**
+   * COSO-2013 deficiency remediation: the plan, its steps and its completion.
+   */
+  remediation?: {
+    /**
+     * A plan exists once it has a title.
+     */
+    title?: string | null;
+    description?: string | null;
+    remediationType?:
+      | (
+          | 'design-change'
+          | 'process-change'
+          | 'system-implementation'
+          | 'training'
+          | 'documentation'
+          | 'resource-addition'
+          | 'policy-update'
+          | 'organizational-change'
+        )
+      | null;
+    priority?: ('critical' | 'high' | 'medium' | 'low') | null;
+    status?: ('planned' | 'in-progress' | 'completed' | 'delayed' | 'on-hold' | 'superseded') | null;
+    /**
+     * The internal policy a policy-update plan improves.
+     */
+    policy?: (string | null) | InternalPolicy;
+    /**
+     * The policy version that carries the fix: stamped at completion, never changed.
+     */
+    policyVersion?: string | null;
+    owner?: (string | null) | User;
+    targetDate?: string | null;
+    /**
+     * Set by the server when the plan is completed.
+     */
+    completionDate?: string | null;
+    actionSteps?:
+      | {
+          sequence: number;
+          description: string;
+          status?: ('not-started' | 'in-progress' | 'completed' | 'on-hold') | null;
+          owner?: string | null;
+          targetDate?: string | null;
+          completedDate?: string | null;
+          id?: string | null;
+        }[]
+      | null;
+    requiredResources?: string | null;
+    budget?: number | null;
+    riskOfDelay?: string | null;
+    approvedBy?: (string | null) | User;
+    approvalDate?: string | null;
+  };
   managementResponse?: string | null;
   managementResponseDate?: string | null;
   priorYearReference?: string | null;
@@ -5545,6 +5595,85 @@ export interface ControlTest {
   conclusionOnEffectiveness?: string | null;
   reviewDate?: string | null;
   isActive?: boolean | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "internal-policies".
+ */
+export interface InternalPolicy {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  policyName: string;
+  policyNumber: string;
+  description?: LexicalRichText<LexicalNodes_AD327369> | null;
+  policyType:
+    | 'accounting'
+    | 'internal-control'
+    | 'compliance'
+    | 'financial-reporting'
+    | 'risk-management'
+    | 'data-protection'
+    | 'conflict-of-interest'
+    | 'code-of-conduct';
+  owner?: string | null;
+  effectiveDate: string;
+  lastReviewDate?: string | null;
+  nextReviewDate?: string | null;
+  status?: ('active' | 'pending' | 'superseded' | 'archived') | null;
+  policyDocument?: (string | null) | Media;
+  /**
+   * The current version of the policy text (e.g. 3.1). Earlier versions are in the document's version history.
+   */
+  versionNumber?: string | null;
+  /**
+   * Name of the current version (e.g. "2026 annual review").
+   */
+  versionName?: string | null;
+  /**
+   * When the current version was released.
+   */
+  releaseDate?: string | null;
+  /**
+   * What changed in the current version.
+   */
+  changes?: LexicalRichText<LexicalNodes_AD327369> | null;
+  applicableControls?: (string | InternalControl)[] | null;
+  /**
+   * Who acknowledged which version of this policy, and when.
+   */
+  acknowledgments?:
+    | {
+        employeeName: string;
+        employeeId?: string | null;
+        status?: ('acknowledged' | 'pending' | 'overdue' | 'expired') | null;
+        /**
+         * The version acknowledged: stamped from the policy, never changed.
+         */
+        policyVersion?: string | null;
+        /**
+         * Set by the server when the row is acknowledged.
+         */
+        acknowledgedAt?: string | null;
+        acknowledgedBy?: string | null;
+        signedDocument?: (string | null) | Media;
+        id?: string | null;
+      }[]
+    | null;
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -15439,6 +15568,60 @@ export interface ComplianceGap {
     | 'process-gap';
   severity: 'critical' | 'high' | 'medium' | 'low';
   status: 'identified' | 'under-review' | 'remediation-planned' | 'in-remediation' | 'closed';
+  /**
+   * COSO-2013 deficiency remediation: the plan, its steps and its completion.
+   */
+  remediation?: {
+    /**
+     * A plan exists once it has a title.
+     */
+    title?: string | null;
+    description?: string | null;
+    remediationType?:
+      | (
+          | 'design-change'
+          | 'process-change'
+          | 'system-implementation'
+          | 'training'
+          | 'documentation'
+          | 'resource-addition'
+          | 'policy-update'
+          | 'organizational-change'
+        )
+      | null;
+    priority?: ('critical' | 'high' | 'medium' | 'low') | null;
+    status?: ('planned' | 'in-progress' | 'completed' | 'delayed' | 'on-hold' | 'superseded') | null;
+    /**
+     * The internal policy a policy-update plan improves.
+     */
+    policy?: (string | null) | InternalPolicy;
+    /**
+     * The policy version that carries the fix: stamped at completion, never changed.
+     */
+    policyVersion?: string | null;
+    owner?: (string | null) | User;
+    targetDate?: string | null;
+    /**
+     * Set by the server when the plan is completed.
+     */
+    completionDate?: string | null;
+    actionSteps?:
+      | {
+          sequence: number;
+          description: string;
+          status?: ('not-started' | 'in-progress' | 'completed' | 'on-hold') | null;
+          owner?: string | null;
+          targetDate?: string | null;
+          completedDate?: string | null;
+          id?: string | null;
+        }[]
+      | null;
+    requiredResources?: string | null;
+    budget?: number | null;
+    riskOfDelay?: string | null;
+    approvedBy?: (string | null) | User;
+    approvalDate?: string | null;
+  };
   currentState?: string | null;
   requiredState?: string | null;
   rootCause?: string | null;
@@ -15938,64 +16121,6 @@ export interface InternalAuditFunction {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "internal-policies".
- */
-export interface InternalPolicy {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  policyName: string;
-  policyNumber: string;
-  description?: LexicalRichText<LexicalNodes_AD327369> | null;
-  policyType:
-    | 'accounting'
-    | 'internal-control'
-    | 'compliance'
-    | 'financial-reporting'
-    | 'risk-management'
-    | 'data-protection'
-    | 'conflict-of-interest'
-    | 'code-of-conduct';
-  owner?: string | null;
-  effectiveDate: string;
-  lastReviewDate?: string | null;
-  nextReviewDate?: string | null;
-  status?: ('active' | 'pending' | 'superseded' | 'archived') | null;
-  policyDocument?: (string | null) | Media;
-  /**
-   * The current version of the policy text (e.g. 3.1). Earlier versions are in the document's version history.
-   */
-  versionNumber?: string | null;
-  /**
-   * Name of the current version (e.g. "2026 annual review").
-   */
-  versionName?: string | null;
-  /**
-   * When the current version was released.
-   */
-  releaseDate?: string | null;
-  /**
-   * What changed in the current version.
-   */
-  changes?: LexicalRichText<LexicalNodes_AD327369> | null;
-  applicableControls?: (string | InternalControl)[] | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "management-assessment-icfr".
  */
 export interface ManagementAssessmentIcfr {
@@ -16112,40 +16237,6 @@ export interface ManagementCertification {
   relatedFindings?: (string | AuditFinding)[] | null;
   signedDocument?: (string | null) | Media;
   status?: ('current' | 'expired' | 'superseded') | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "policy-acknowledgments".
- */
-export interface PolicyAcknowledgment {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  policy: string | InternalPolicy;
-  /**
-   * The version of the policy that was acknowledged (stamped from the policy when left empty).
-   */
-  policyVersionNumber?: string | null;
-  employeeName: string;
-  employeeId?: string | null;
-  acknowledgedDate: string;
-  acknowledgedBy?: string | null;
-  signedDocument?: (string | null) | Media;
-  status?: ('acknowledged' | 'pending' | 'overdue' | 'expired') | null;
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -16284,64 +16375,6 @@ export interface RelatedPartyTransaction {
    */
   relatedControls?: (string | InternalControl)[] | null;
   evidence?: (string | AuditEvidence)[] | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "remediation-plans".
- */
-export interface RemediationPlan {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  title: string;
-  description: string;
-  relatedFinding?: (string | null) | AuditFinding;
-  relatedGap?: (string | null) | ComplianceGap;
-  remediationType:
-    | 'design-change'
-    | 'process-change'
-    | 'system-implementation'
-    | 'training'
-    | 'documentation'
-    | 'resource-addition'
-    | 'policy-update'
-    | 'organizational-change';
-  priority: 'critical' | 'high' | 'medium' | 'low';
-  owner: string | User;
-  actionSteps?:
-    | {
-        sequence: number;
-        description: string;
-        owner?: string | null;
-        targetDate?: string | null;
-        status?: ('not-started' | 'in-progress' | 'completed' | 'on-hold') | null;
-        completedDate?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  targetDate: string;
-  completionDate?: string | null;
-  status: 'planned' | 'in-progress' | 'completed' | 'delayed' | 'on-hold' | 'superseded';
-  requiredResources?: string | null;
-  budget?: number | null;
-  riskOfDelay?: string | null;
-  approvedBy?: (string | null) | User;
-  approvalDate?: string | null;
-  isActive?: boolean | null;
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -19114,10 +19147,6 @@ export interface FormSubmission {
               value: string | ComplianceFramework;
             }
           | {
-              relationTo: 'compliance-gaps';
-              value: string | ComplianceGap;
-            }
-          | {
               relationTo: 'compliance-requirements';
               value: string | ComplianceRequirement;
             }
@@ -19192,6 +19221,10 @@ export interface FormSubmission {
           | {
               relationTo: 'internal-controls';
               value: string | InternalControl;
+            }
+          | {
+              relationTo: 'internal-policies';
+              value: string | InternalPolicy;
             }
           | {
               relationTo: 'inventory-movements';
@@ -25444,6 +25477,36 @@ export interface AuditFindingsSelect<T extends boolean = true> {
   rootCause?: T;
   riskCategory?: T;
   status?: T;
+  remediation?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        remediationType?: T;
+        priority?: T;
+        status?: T;
+        policy?: T;
+        policyVersion?: T;
+        owner?: T;
+        targetDate?: T;
+        completionDate?: T;
+        actionSteps?:
+          | T
+          | {
+              sequence?: T;
+              description?: T;
+              status?: T;
+              owner?: T;
+              targetDate?: T;
+              completedDate?: T;
+              id?: T;
+            };
+        requiredResources?: T;
+        budget?: T;
+        riskOfDelay?: T;
+        approvedBy?: T;
+        approvalDate?: T;
+      };
   managementResponse?: T;
   managementResponseDate?: T;
   priorYearReference?: T;
@@ -25551,6 +25614,36 @@ export interface ComplianceGapsSelect<T extends boolean = true> {
   gapType?: T;
   severity?: T;
   status?: T;
+  remediation?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        remediationType?: T;
+        priority?: T;
+        status?: T;
+        policy?: T;
+        policyVersion?: T;
+        owner?: T;
+        targetDate?: T;
+        completionDate?: T;
+        actionSteps?:
+          | T
+          | {
+              sequence?: T;
+              description?: T;
+              status?: T;
+              owner?: T;
+              targetDate?: T;
+              completedDate?: T;
+              id?: T;
+            };
+        requiredResources?: T;
+        budget?: T;
+        riskOfDelay?: T;
+        approvedBy?: T;
+        approvalDate?: T;
+      };
   currentState?: T;
   requiredState?: T;
   rootCause?: T;
@@ -25900,6 +25993,18 @@ export interface InternalPoliciesSelect<T extends boolean = true> {
   releaseDate?: T;
   changes?: T;
   applicableControls?: T;
+  acknowledgments?:
+    | T
+    | {
+        employeeName?: T;
+        employeeId?: T;
+        status?: T;
+        policyVersion?: T;
+        acknowledgedAt?: T;
+        acknowledgedBy?: T;
+        signedDocument?: T;
+        id?: T;
+      };
   handle?: T;
   createdBy?: T;
   updatedBy?: T;
@@ -25979,27 +26084,6 @@ export interface ManagementCertificationsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "policy-acknowledgments_select".
- */
-export interface PolicyAcknowledgmentsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  policy?: T;
-  policyVersionNumber?: T;
-  employeeName?: T;
-  employeeId?: T;
-  acknowledgedDate?: T;
-  acknowledgedBy?: T;
-  signedDocument?: T;
-  status?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "regulatory-reports_select".
  */
 export interface RegulatoryReportsSelect<T extends boolean = true> {
@@ -26051,46 +26135,6 @@ export interface RelatedPartyTransactionsSelect<T extends boolean = true> {
   disclosureReference?: T;
   relatedControls?: T;
   evidence?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "remediation-plans_select".
- */
-export interface RemediationPlansSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  title?: T;
-  description?: T;
-  relatedFinding?: T;
-  relatedGap?: T;
-  remediationType?: T;
-  priority?: T;
-  owner?: T;
-  actionSteps?:
-    | T
-    | {
-        sequence?: T;
-        description?: T;
-        owner?: T;
-        targetDate?: T;
-        status?: T;
-        completedDate?: T;
-        id?: T;
-      };
-  targetDate?: T;
-  completionDate?: T;
-  status?: T;
-  requiredResources?: T;
-  budget?: T;
-  riskOfDelay?: T;
-  approvedBy?: T;
-  approvalDate?: T;
-  isActive?: T;
   handle?: T;
   createdBy?: T;
   updatedBy?: T;
@@ -28836,10 +28880,8 @@ export interface CollectionQueryWidget {
       | 'internal-policies'
       | 'management-assessment-icfr'
       | 'management-certifications'
-      | 'policy-acknowledgments'
       | 'regulatory-reports'
       | 'related-party-transactions'
-      | 'remediation-plans'
       | 'risk-register'
       | 'segment-reporting'
       | 'biological-assets'
@@ -29057,10 +29099,8 @@ export interface ActivityWidget {
           | 'internal-policies'
           | 'management-assessment-icfr'
           | 'management-certifications'
-          | 'policy-acknowledgments'
           | 'regulatory-reports'
           | 'related-party-transactions'
-          | 'remediation-plans'
           | 'risk-register'
           | 'segment-reporting'
           | 'biological-assets'
@@ -29304,10 +29344,8 @@ export interface TaskCreateCollectionExport {
       | 'internal-policies'
       | 'management-assessment-icfr'
       | 'management-certifications'
-      | 'policy-acknowledgments'
       | 'regulatory-reports'
       | 'related-party-transactions'
-      | 'remediation-plans'
       | 'risk-register'
       | 'segment-reporting'
       | 'biological-assets'

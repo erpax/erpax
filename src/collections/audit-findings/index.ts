@@ -13,6 +13,7 @@ import type { CollectionConfig } from 'payload'
 import { authenticated } from '@/utilities/authenticated'
 import { adminOnly } from '@/access/collections/shared/multiTenantRead'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
+import { remediationField, statusHeldToPlan } from '@/fields/group/remediationField'
 
 export const AuditFindings: CollectionConfig = {
   slug: 'audit-findings',
@@ -33,7 +34,17 @@ export const AuditFindings: CollectionConfig = {
     { name: 'identifiedBy', type: 'relationship', relationTo: 'users', required: true },
     { name: 'rootCause', type: 'textarea' },
     { name: 'riskCategory', type: 'select', options: [{ label: 'Financial Reporting', value: 'financial-reporting' }, { label: 'Compliance', value: 'compliance' }, { label: 'Operational', value: 'operational' }, { label: 'Security', value: 'security' }] },
-    { name: 'status', type: 'select', options: [{ label: 'Open', value: 'open' }, { label: 'In Remediation', value: 'in-remediation' }, { label: 'Pending Retest', value: 'remediated-pending' }, { label: 'Confirmed', value: 'remediated-confirmed' }, { label: 'Closed', value: 'closed' }], required: true, defaultValue: 'open' },
+    {
+      name: 'status',
+      type: 'select',
+      options: [{ label: 'Open', value: 'open' }, { label: 'In Remediation', value: 'in-remediation' }, { label: 'Pending Retest', value: 'remediated-pending' }, { label: 'Confirmed', value: 'remediated-confirmed' }, { label: 'Closed', value: 'closed' }],
+      required: true,
+      defaultValue: 'open',
+      // a deficiency in remediation has a plan, and is retested only once the plan is completed
+      validate: statusHeldToPlan({ needsPlan: ['in-remediation'], needsCompletion: ['remediated-pending', 'remediated-confirmed'] }) as never,
+    },
+    // the remediation plan (formerly the remediation-plans collection)
+    remediationField(),
     { name: 'managementResponse', type: 'textarea' },
     { name: 'managementResponseDate', type: 'date' },
     { name: 'priorYearReference', type: 'text' },
