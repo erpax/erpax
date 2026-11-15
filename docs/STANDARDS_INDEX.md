@@ -2228,8 +2228,6 @@ src/collections/lot-work-phases/index.ts:28: * @compliance SOX §404 internal-co
 src/collections/lots/index.ts:30: * @compliance SOX §404 internal-controls production-control
 src/collections/maintenance-work-orders/index.ts:22: * @compliance SOX §404 internal-controls capex-vs-opex-classification
 src/collections/management-assessment-icfr/index.ts:4: * @compliance SOX §404(a) management-assessment-ICFR
-src/collections/management-certifications/index.ts:4: * @compliance SOX §302 corporate-responsibility
-src/collections/management-certifications/index.ts:5: * @compliance SOX §906 criminal-certification
 src/collections/media/index.ts:22: * @compliance GDPR Art.5(1)(c) data-minimization no-pii-in-filenames
 src/collections/media/index.ts:23: * @compliance GDPR Art.32 security-of-processing
 src/collections/messages/index.ts:14: * @compliance GDPR Art 5(1)(e) storage-limitation retention
@@ -2446,6 +2444,8 @@ src/utilities/event/emitter/service/index.ts:12: * @compliance SOX §404 interna
 src/utilities/factory/recompute-parent-aggregates.ts:28: * @compliance SOX §404 internal-controls total-completeness
 src/utilities/get/user/tenant/i/ds/index.ts:8: * @compliance SOX §404 internal-controls
 src/utilities/gl/account/resolver/index.ts:28: * @compliance SOX §404 internal-controls per-tenant-coa
+src/utilities/governed/index.ts:29: * @compliance SOX §302 corporate-responsibility
+src/utilities/governed/index.ts:30: * @compliance SOX §906 criminal-certification
 src/utilities/integrity/content/index.ts:47: * @compliance SOX §404 internal-controls (Byzantine tamper detection)
 src/utilities/integrity/tamper-proof-uuid-field.ts:38: * @compliance SOX §404 (Byzantine tamper detection at the row level)
 src/utilities/integrity/uuid-ref.ts:29: * @compliance SOX §404 (referential integrity without cascade rules)
@@ -3180,7 +3180,6 @@ src/collections/lot-work-phases/index.ts:29: * @security ISO-27001 A.5.23 cloud-
 src/collections/lots/index.ts:31: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/maintenance-work-orders/index.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/management-assessment-icfr/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/management-certifications/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/mineral-resource-assets/index.ts:20: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/operators/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/opportunities/index.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
