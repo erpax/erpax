@@ -13,10 +13,10 @@ if echo "$staged" | grep -qE '^src/utilities/verify/lean/.*\.lean$' && command -
   ./node_modules/.bin/tsx src/utilities/verify/inventory/index.ts </dev/null >/dev/null || exit 1
   git add src/utilities/verify/lean/inventory.generated.json
 fi
-# The files that describe erpax to others (the README, the sponsor page, the plugin manifests), from what they
+# The files that describe erpax to others (the README, the sponsor page, the plugin manifests, the citation records), from what they
 # describe. Runs after the steps above, which may have changed the types and the proof record it quotes.
 ./node_modules/.bin/tsx scripts/generate-repo.ts </dev/null || exit 1
-git add README.md .github/SPONSORS.md .claude-plugin/plugin.json .claude-plugin/marketplace.json
+git add README.md .github/SPONSORS.md .claude-plugin/plugin.json .claude-plugin/marketplace.json CITATION.cff .zenodo.json
 # The lockfile follows the manifest: CI installs --frozen-lockfile and stops on any mismatch.
 if echo "$staged" | grep -qE '^(package\.json|pnpm-workspace\.yaml)$'; then
   pnpm -s install --lockfile-only >/dev/null || exit 1
