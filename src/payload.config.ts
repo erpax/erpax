@@ -25,8 +25,6 @@ import { longNamesPlugin } from '@/plugins/naming'
 import { indexesPlugin } from '@/plugins/indexes'
 import { handlesPlugin } from '@/plugins/handles'
 import { versionsPlugin } from '@/plugins/versions'
-import { trelloClientFromEnv } from '@/utilities/trello'
-import { trelloPlugin, TRELLO_SYNC } from '@/utilities/trello/plugin'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
@@ -447,11 +445,6 @@ export default buildConfig({
     mcpPlugin({
       hooks: { afterToolCall: [recordGap] },
     }),
-    // Trello entanglement — beside the MCP gateway because it is the same kind of thing: an
-    // external surface entered as an atom. INERT by default: TRELLO_SYNC is empty, so no field is
-    // injected and no hook is wired. Adding a mapping is a schema change and needs a migration in
-    // the same diff; without TRELLO_API_KEY + TRELLO_TOKEN there is no client, so the plugin stays
-    // field-only rather than half-wired. See `@/utilities/trello` and `@/utilities/trello/plugin`.
     // Stripe — the official plugin, INERT until a secret is set: with `sync: []` it adds one endpoint
     // (`/api/stripe/webhooks`) and no field, so there is no schema change and nothing to migrate.
     // Customer/product sync is a mapping added here with its migration; the ecommerce component keeps
@@ -462,11 +455,6 @@ export default buildConfig({
       stripeWebhooksEndpointSecret: process.env.STRIPE_WEBHOOKS_ENDPOINT_SECRET,
       isTestKey: (process.env.STRIPE_SECRET_KEY ?? '').startsWith('sk_test_'),
       sync: [],
-    }),
-    trelloPlugin({
-      collections: TRELLO_SYNC,
-      client: trelloClientFromEnv(),
-      enabled: TRELLO_SYNC.length > 0,
     }),
     // Make every collection taggable — one polymorphic `taggings` join +
     // a reverse `tags` join injected everywhere. Before uuidPlugin

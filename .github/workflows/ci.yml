@@ -22,6 +22,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify every standards tag has a value
         run: bash scripts/standards-citation-index.sh --check
+      # The index is generated from the banners (0.3s); a committed copy that differs is refused.
+      - name: The standards index is what the banners say
+        run: bash scripts/standards-citation-index.sh --verify-index
 
   lint:
     name: Lint
