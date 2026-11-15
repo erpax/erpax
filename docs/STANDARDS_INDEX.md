@@ -881,10 +881,10 @@ src/packages/admin/providers/index.ts:24: * @standard ISO/IEC-25010:2011 §4.2.3
 src/packages/admin/providers/scim/index.ts:9: * @standard RFC-7643 §3.1 common attributes · §4.1 User · §4.2 Group · §4.3 Enterprise User
 src/packages/admin/providers/settings.ts:13: * @standard RFC-6749 OAuth 2.0 client registration (client id and secret)
 src/packages/engine/index.ts:28: * @standard ISO/IEC-25010:2011 §4.2.7 modularity — a change to one app touches that app's plugin
-src/payload.config.ts:565:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:583:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:584:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:606:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:583:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:601:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:602:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:624:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/plugins/handles/index.ts:40: * @standard RFC-9562 uuid · RFC-4648 §5 base64url · RFC-9110 §15.5.5 404
 src/plugins/naming/index.ts:20: * @standard RFC 9562 §5.8 name-based UUID (the digest source)
 src/plugins/taggable/index.ts:21: * @standard RFC-4122 §4.3 uuid
@@ -909,9 +909,9 @@ src/utilities/address/validation/index.ts:17: * @standard UPU-S42 international-
 src/utilities/address/validation/index.ts:18: * @standard ISO-3166-1:2020 country-codes alpha-2
 src/utilities/agent/service/index.ts:20: * @standard RFC 9562 §5.8 name-based UUIDv8 (tenant-scoped content-addressed agent identity)
 src/utilities/agent/team/index.ts:18: * @standard RFC 9562 §5.8 content-addressed identity (agent + team uuid)
-src/utilities/ai/durable-objects.ts:176: * @standard FIPS 180-4 sha-256 (leaf hashing)
-src/utilities/ai/durable-objects.ts:177: * @standard RFC 8785 JSON canonicalization
-src/utilities/ai/durable-objects.ts:19: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation
+src/utilities/ai/durable-objects.ts:186: * @standard FIPS 180-4 sha-256 (leaf hashing)
+src/utilities/ai/durable-objects.ts:187: * @standard RFC 8785 JSON canonicalization
+src/utilities/ai/durable-objects.ts:20: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation
 src/utilities/allow/public/read/tenant/test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
 src/utilities/api/integration/index.ts:26: * @standard RFC 9110 §9 http-semantics (methods, status classes, safe/idempotent)
 src/utilities/api/integration/index.ts:27: * @standard RFC 6749 §1.4 bearer-credential — the token is the whole authority, env-only
@@ -1555,6 +1555,8 @@ src/utilities/seeds/template/templates/index.ts:10: * @standard ISO-3166-1:2020 
 src/utilities/seeds/template/templates/index.ts:11: * @standard ISO-4217:2015 currency-codes
 src/utilities/seeds/template/types.ts:10: * @standard ISO-3166-1:2020 country-codes alpha-2
 src/utilities/seeds/template/types.ts:11: * @standard ISO-4217:2015 currency-codes
+src/utilities/semantic/index.ts:19: * @standard RFC 9110 §15.5.1 400-bad-request
+src/utilities/semantic/index.ts:20: * @standard RFC 6585 §4 429-too-many-requests
 src/utilities/shareds/documentPreviewAdmin.ts:15: * @standard BCP-47 language-tag locale
 src/utilities/signal/index.ts:17: * @standard ISO-16:1975 a432-tuning-reference (pitch); value from position.
 src/utilities/site/tenant/where/index.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control tenant-isolation
@@ -2395,7 +2397,7 @@ src/seed/etrima/index.ts:19: * @compliance GDPR Art.5(1)(c) data-minimisation �
 src/utilities/accounting/debit/index.ts:15: * @compliance SOX §404 internal-controls
 src/utilities/accounting/reports/index.ts:27: * @compliance SOX §302 disclosure-controls
 src/utilities/address/validation/index.ts:19: * @compliance GDPR Art.5(1)(c) data-minimisation collect-only-fields-the-format-requires
-src/utilities/ai/durable-objects.ts:21: * @compliance SOX §404 internal-controls atomic-state
+src/utilities/ai/durable-objects.ts:22: * @compliance SOX §404 internal-controls atomic-state
 src/utilities/allow/public/read/tenant/index.ts:9: * @compliance GDPR Art.5(1)(c) data-minimization
 src/utilities/authenticated/index.ts:7: * @compliance SOC-2 CC6.1 logical-access-controls
 src/utilities/billing/stripeWebhookHandlers.test.ts:11: * @compliance PCI-DSS-4.0 §3.5 protect-stored-cardholder-data tokenized
@@ -2864,9 +2866,9 @@ src/jobs/dunning/job/index.ts:11: * @accounting IFRS IFRS-9 expected-credit-loss
 src/jobs/dunning/job/index.ts:12: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunning/job/index.ts:13: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunning/job/index.ts:14: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:563:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:564:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:585:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:581:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:582:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:603:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/utilities/accounting/analysis/index.ts:4: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/utilities/accounting/analysis/index.ts:5: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/utilities/accounting/analysis/index.ts:6: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
@@ -3301,7 +3303,7 @@ src/plugins/handles/index.ts:41: * @security ISO-27001 A.8.3 information-access-
 src/utilities/ability/index.ts:34: * @security ISO-27001 A.5.15 access-control · A.8.3 information-access-restriction
 src/utilities/ability/index.ts:35: * @security ISO-27002 §5.18 access-rights
 src/utilities/ability/roles/index.ts:20: * @security ISO-27001 A.5.15 access-control · ISO-27002 §5.3 segregation-of-duties
-src/utilities/ai/durable-objects.ts:20: * @security ISO-27002 §5.3 segregation-of-duties race-free
+src/utilities/ai/durable-objects.ts:21: * @security ISO-27002 §5.3 segregation-of-duties race-free
 src/utilities/allow/public/read/tenant/index.ts:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/utilities/allow/public/read/tenant/index.ts:6: * @security ISO-27002 §5.15 access-control
 src/utilities/allow/public/read/tenant/index.ts:7: * @security ISO-27002 §8.3 information-access-restriction
@@ -3627,9 +3629,9 @@ src/hooks/fields/tenants/normalizeTenantSlug.ts:5: * @audit ISO-19011:2018 audit
 src/jobs/audit/index.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/jobs/bnb/rates/sync/index.ts:20: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/jobs/dunning/job/index.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:566:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:586:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:607:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:584:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:604:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:625:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/plugins/naming/index.ts:21: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/seed/erpax-product-pages.ts:35: * @audit ISO-19011:2018 audit-trail seed-provenance
 src/seed/index.ts:10: * @audit ISO-19011:2018 audit-trail seed-runs
@@ -3639,9 +3641,9 @@ src/utilities/accounting/index.ts:13: * @audit re-exports only; the truth lives 
 src/utilities/accounting/reports/index.ts:26: * @audit ISO-19011:2018 audit-trail read-only-queries
 src/utilities/address/validation/index.ts:20: * @audit ISO-19011:2018 audit-trail address-validation
 src/utilities/agent/team/index.ts:19: * @audit Conservation Law 8 content-uuid · merge set-union (no coordination)
-src/utilities/ai/durable-objects.ts:178: * @audit Conservation Law 8 content-uuid (per-leaf)
-src/utilities/ai/durable-objects.ts:179: * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail
-src/utilities/ai/durable-objects.ts:22: * @audit ISO-19011:2018 audit-trail coordination-evidence
+src/utilities/ai/durable-objects.ts:188: * @audit Conservation Law 8 content-uuid (per-leaf)
+src/utilities/ai/durable-objects.ts:189: * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail
+src/utilities/ai/durable-objects.ts:23: * @audit ISO-19011:2018 audit-trail coordination-evidence
 src/utilities/audit/trail/write-audit-event.test.ts:17: * @audit Conservation Law 8 content-addressable integrity (chainLeafUuid)
 src/utilities/audit/trail/write-audit-event.test.ts:18: * @audit Conservation Law 53 self-referential-closure (pending reconciliation)
 src/utilities/audit/trail/write-audit-event.ts:50: * @audit Conservation Law 8 content-addressable integrity
