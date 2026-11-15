@@ -28,7 +28,7 @@ Each figure is computed from the source beside it whenever this file is generate
 | Node | ^24.22.3 \|\| >=26.13.1 | `package.json` |
 | Collections | 191 | `src/payload-types.ts`, Payload's generated `Config`, without Payload's own `payload-*` |
 | Migrations | 9, the latest `20261115_201759_fold_governed_pages` | `src/migrations` |
-| Kernel-checked theorems | 335 in 39 files: 239 axiom-free, 96 on Lean's standard axioms, 0 stubbed (sealed 2026-11-15) | `src/utilities/verify/lean/inventory.generated.json` |
+| Kernel-checked theorems | 351 in 45 files: 255 axiom-free, 96 on Lean's standard axioms, 0 stubbed (sealed 2026-11-15) | `src/utilities/verify/lean/inventory.generated.json` |
 | License | CC-BY-NC-ND-4.0 | `package.json` |
 
 ## How a Clay problem is verified here
@@ -42,15 +42,15 @@ A Clay problem is verified by the **Lean kernel**, or it is not verified. Not by
 
 | problem | kernel witnesses today |
 | --- | --- |
-| P vs NP | none |
+| P vs NP | [`Search.lean`](src/utilities/verify/lean/Search.lean) — `meta`, 3 theorems, 0 stubbed |
 | Riemann Hypothesis | [`Harmonic.lean`](src/utilities/verify/lean/Harmonic.lean) — `meta`, 12 theorems, 0 stubbed · [`Symmetry.lean`](src/utilities/verify/lean/Symmetry.lean) — `meta`, 9 theorems, 0 stubbed |
-| Navier–Stokes | none |
-| Yang–Mills | none |
-| Hodge | none |
-| Birch–Swinnerton-Dyer | none |
-| Poincaré | none |
+| Navier–Stokes | [`Energy.lean`](src/utilities/verify/lean/Energy.lean) — `meta`, 2 theorems, 0 stubbed |
+| Yang–Mills | [`Gap.lean`](src/utilities/verify/lean/Gap.lean) — `meta`, 3 theorems, 0 stubbed |
+| Hodge | [`Lattice.lean`](src/utilities/verify/lean/Lattice.lean) — `meta`, 3 theorems, 0 stubbed |
+| Birch–Swinnerton-Dyer | [`Prefix.lean`](src/utilities/verify/lean/Prefix.lean) — `meta`, 2 theorems, 0 stubbed |
+| Poincaré | [`Perfect.lean`](src/utilities/verify/lean/Perfect.lean) — `meta`, 3 theorems, 0 stubbed |
 
-Settled by this corpus: **none** (`claySettled` is empty). Kernel report sealed 2026-11-15: 335 theorems, 239 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 39 files, sources `8ad7e04c66de2941`. Recompute: `tsx src/utilities/verify/inventory/index.ts` · `pnpm vitest run src/utilities/verify`.
+Settled by this corpus: **none** (`claySettled` is empty). Kernel report sealed 2026-11-15: 351 theorems, 255 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 45 files, sources `05ae3f7fdcc9e415`. Recompute: `tsx src/utilities/verify/inventory/index.ts` · `pnpm vitest run src/utilities/verify`.
 
 | problem | statement (algebraic) | the named gap |
 | --- | --- | --- |

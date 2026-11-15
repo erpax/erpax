@@ -1,10 +1,10 @@
 {
   "sealedAt": "2026-11-15",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "8ad7e04c66de2941",
+  "sourcesHash": "05ae3f7fdcc9e415",
   "census": {
-    "theorems": 335,
-    "axiomFree": 239,
+    "theorems": 351,
+    "axiomFree": 255,
     "standardAxioms": 96,
     "stubbed": 0
   },
@@ -1091,6 +1091,24 @@
       ]
     },
     {
+      "file": "Energy.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Energy.same_energy_larger_peak",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Energy.spread_peak_is_one",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
       "file": "Entangle.lean",
       "compiled": true,
       "entries": [
@@ -1228,6 +1246,30 @@
             "Classical.choice"
           ],
           "axiomFree": false,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Gap.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Gap.invariant_at_every_scale",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gap.gap_is_one_unit_of_one_over_k",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Gap.gap_shrinks_with_scale",
+          "axioms": [],
+          "axiomFree": true,
           "stubbed": false
         }
       ]
@@ -1436,6 +1478,30 @@
         },
         {
           "theorem": "Landauer.and_fold_erases_half",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Lattice.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Lattice.W_is_an_involution_here",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Lattice.type_pp_does_not_imply_rational",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Lattice.a_rational_type_pp_class_exists",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
@@ -1870,6 +1936,30 @@
       ]
     },
     {
+      "file": "Perfect.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Perfect.every_row_is_a_commutator",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Perfect.every_entry_lies_in_A5",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Perfect.sixty_distinct_commutators",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
       "file": "Planck.lean",
       "compiled": true,
       "entries": [
@@ -1969,6 +2059,24 @@
         },
         {
           "theorem": "Planck.energy_is_built_from_the_three",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Prefix.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Prefix.agree_on_the_first_N_terms",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Prefix.differ_in_a_later_sum",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false
@@ -2201,6 +2309,30 @@
             "Quot.sound"
           ],
           "axiomFree": false,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Search.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Search.polynomial_hides_in_exponential_up_to_58",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Search.exponential_overtakes_at_59",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Search.window_starts_at_2",
+          "axioms": [],
+          "axiomFree": true,
           "stubbed": false
         }
       ]
