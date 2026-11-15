@@ -1,0 +1,43 @@
+# After a merge, Cloudflare's Workers Build migrates production D1 and deploys the Worker. This waits for
+# that build of the same commit, then runs the smoke script CI ran against the built Worker — so a
+# deploy that "succeeds" but answers 5xx turns main red instead of going unnoticed.
+name: Deployed
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  checks: read
+
+concurrency:
+  group: deployed-${{ github.sha }}
+
+jobs:
+  production:
+    name: Production answers
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Wait for Cloudflare's build of this commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 80); do
+            state=$(gh api "repos/${{ github.repository }}/commits/${{ github.sha }}/check-runs" \
+              --jq '[.check_runs[] | select(.name | startswith("Workers Builds"))][0] | "\(.status) \(.conclusion)"')
+            echo "$i: ${state:-not started}"
+            case "$state" in
+              "completed success") exit 0 ;;
+              "completed "*) echo "::error::Cloudflare's build of ${{ github.sha }} did not succeed ($state)"; exit 1 ;;
+            esac
+            sleep 30
+          done
+          echo "::error::Cloudflare's build of ${{ github.sha }} did not finish in 40 minutes"
+          exit 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+      - run: node scripts/smoke.mjs --production

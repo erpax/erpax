@@ -1,4 +1,4 @@
-# Lint · typecheck · tests · Playwright UI · Lean proofs · migrations · production build — a Payload app's checks, and the kernel's.
+# Lint · typecheck · tests · Playwright UI · Lean proofs · migrations · Worker · production build — a Payload app's checks, and the kernel's.
 name: CI
 
 on:
@@ -119,6 +119,31 @@ jobs:
             echo "::error::the schema has a change no migration covers — run pnpm payload:migrate:create"
             exit 1
           fi
+
+  worker:
+    name: Worker
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PAYLOAD_SECRET: test-secret-not-for-production-32-characters
+      PAYLOAD_DEV_PUSH: 'false'
+      WRANGLER_SEND_METRICS: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      # The Worker Cloudflare would deploy, built and served here: OpenNext builds it, wrangler serves it
+      # on a local D1 migrated from the baseline (--local: no remote binding, no credentials), and the
+      # same smoke script the Deployed workflow runs against production checks it. `next build` alone
+      # passed a Worker that threw on every request.
+      - run: pnpm -s payload migrate --force-accept-warning
+      - run: ./node_modules/.bin/opennextjs-cloudflare build
+      - name: Serve the built Worker and smoke it
+        run: |
+          # wrangler hands a Worker its secrets from .dev.vars, not from the job's environment
+          printf 'PAYLOAD_SECRET=%s\n' "$PAYLOAD_SECRET" > .dev.vars
+          ./node_modules/.bin/wrangler dev --local --port 8787 > "$RUNNER_TEMP/wrangler.log" 2>&1 &
+          for i in $(seq 1 60); do curl -s -o /dev/null http://127.0.0.1:8787/ && break; sleep 2; done
+          node scripts/smoke.mjs http://127.0.0.1:8787 || { tail -80 "$RUNNER_TEMP/wrangler.log"; exit 1; }
 
   build:
     name: Production build (lean)

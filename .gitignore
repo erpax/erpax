@@ -126,3 +126,6 @@ src/**/redirects.generated.json
 
 # the generated entry of an app package (packages/build.mjs writes it on every build)
 src/packages/*/.package.ts
+
+# wrangler dev secrets
+.dev.vars
