@@ -881,10 +881,10 @@ src/packages/admin/providers/index.ts:24: * @standard ISO/IEC-25010:2011 §4.2.3
 src/packages/admin/providers/scim/index.ts:9: * @standard RFC-7643 §3.1 common attributes · §4.1 User · §4.2 Group · §4.3 Enterprise User
 src/packages/admin/providers/settings.ts:13: * @standard RFC-6749 OAuth 2.0 client registration (client id and secret)
 src/packages/engine/index.ts:28: * @standard ISO/IEC-25010:2011 §4.2.7 modularity — a change to one app touches that app's plugin
-src/payload.config.ts:558:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:576:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:577:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:599:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:565:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:583:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:584:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:606:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/plugins/handles/index.ts:40: * @standard RFC-9562 uuid · RFC-4648 §5 base64url · RFC-9110 §15.5.5 404
 src/plugins/naming/index.ts:20: * @standard RFC 9562 §5.8 name-based UUID (the digest source)
 src/plugins/taggable/index.ts:21: * @standard RFC-4122 §4.3 uuid
@@ -2858,9 +2858,9 @@ src/jobs/dunning/job/index.ts:11: * @accounting IFRS IFRS-9 expected-credit-loss
 src/jobs/dunning/job/index.ts:12: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunning/job/index.ts:13: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunning/job/index.ts:14: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:556:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:557:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:578:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:563:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:564:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:585:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/utilities/accounting/analysis/index.ts:4: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/utilities/accounting/analysis/index.ts:5: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/utilities/accounting/analysis/index.ts:6: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
@@ -3620,9 +3620,9 @@ src/hooks/fields/tenants/normalizeTenantSlug.ts:5: * @audit ISO-19011:2018 audit
 src/jobs/audit/index.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/jobs/bnb/rates/sync/index.ts:20: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/jobs/dunning/job/index.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:559:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:579:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:600:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:566:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:586:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:607:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/plugins/naming/index.ts:21: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/seed/erpax-product-pages.ts:35: * @audit ISO-19011:2018 audit-trail seed-provenance
 src/seed/index.ts:10: * @audit ISO-19011:2018 audit-trail seed-runs
