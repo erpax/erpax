@@ -120,3 +120,16 @@ describe('error', () => {
     expect(formatPayloadSdkUserMessage(err, 'fallback')).toBe('fallback')
   })
 })
+
+describe('plainError — an Error as JSON, for the Worker logger', () => {
+  it('spells out what JSON.stringify drops, with the cause, and passes other values through', async () => {
+    const { plainError } = await import('@/utilities/error')
+    const error = new TypeError('boom', { cause: new Error('root') })
+    expect(JSON.stringify({ err: error })).toBe('{"err":{}}')
+    const plain = plainError(error) as { name: string; message: string; stack?: string; cause: { message: string } }
+    expect(plain).toMatchObject({ name: 'TypeError', message: 'boom', cause: { name: 'Error', message: 'root' } })
+    expect(plain.stack).toContain('boom')
+    expect(plainError('text')).toBe('text')
+    expect(plainError({ a: 1 })).toEqual({ a: 1 })
+  })
+})

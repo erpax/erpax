@@ -145,7 +145,11 @@ const nextConfig = {
   // `typescript` is NOT listed here — listing it as external would leave
   // `require('typescript')` for OpenNext/esbuild to re-resolve into the real
   // 8.6 MiB package. The webpack fold below swaps it for .stubs/typescript.js.
-  serverExternalPackages: ['jose', 'pg-cloudflare', 'sharp', 'sass'],
+  // `@modelcontextprotocol/server` (the MCP gateway's SDK) picks its JSON Schema validator by export
+  // condition: Ajv for `node`, which compiles with `new Function` and is refused in a Worker, and a plain-JS
+  // one for `workerd`. Bundled by Next it resolves `node`, and every authenticated MCP call answered 500;
+  // external, OpenNext's esbuild resolves `workerd` (the guide linked above).
+  serverExternalPackages: ['jose', 'pg-cloudflare', 'sharp', 'sass', '@modelcontextprotocol/server'],
   // …and externalising is only HALF the job, which the artifact proved. `serverExternalPackages`
   // stops webpack INLINING a package into a chunk; it does not stop Next's file tracing from
   // COPYING it into the server function's node_modules. Measured on the built Worker:

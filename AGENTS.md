@@ -90,9 +90,9 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
 | --- | --- |
 | pre-commit (`.husky`) | Payload types + import map when `src/**/*.ts` is staged; the proof record and its README lines when a `.lean` file is staged (with `lean` on PATH); the release manifest when `src/` is staged; package ranges + lockfile when `package.json` or `pnpm-workspace.yaml` is staged |
 | pre-push | `pnpm lint` · `pnpm typecheck` |
-| CI (`.github/workflows/ci.yml`) | standards banner · lint · typecheck · tests ×4 (shard 2 runs `release.mjs --check`) · Playwright smoke · Lean proofs · migrations (from empty, no drift) · Worker (OpenNext build served by `wrangler dev --local`, then `scripts/smoke.mjs`) · lean build |
+| CI (`.github/workflows/ci.yml`) | standards banner · lint · typecheck · tests ×4 (shard 2 runs `release.mjs --check`) · Playwright smoke · Lean proofs · migrations (from empty, no drift) · Worker (OpenNext build served by `wrangler dev --local`; `scripts/smoke.mjs` is a thin MCP client of it: first user, API key, tools/list, a read, a failed call recorded as a gap) · lean build |
 | Cloudflare Workers Builds (dashboard) | on `main`: build, `payload migrate` on production D1, deploy. Its check on a PR branch fails at once and is not required |
-| Deployed (`.github/workflows/deployed.yml`) | on `main`: waits for Cloudflare's build of the same commit, then `scripts/smoke.mjs --production`; a deploy that answers 5xx turns main red |
+| Deployed (`.github/workflows/deployed.yml`) | on `main`: waits for Cloudflare's build of the same commit, then `scripts/smoke.mjs --production`: pages answer, the gateway refuses a caller without a key, and with the `ERPAX_API_KEY` repository secret the read-only MCP conversation; a failure turns main red |
 
 Gaps found on 2026-11-15:
 
@@ -114,6 +114,9 @@ Gaps found on 2026-11-15:
   (`src/seed/home.ts`, `post/*`, `image-*`, `contact/form.ts`), not fixtures loaded as data.
 - Session worktrees fail here while the app's worktree location is inside the repo: `.claude` is a
   symlink to `src`. Set Settings → Claude Code → Worktree location to a folder outside the repo.
+- `@payloadcms/plugin-mcp` answers a call for a slug that is unknown or not enabled before any
+  handler runs, so `afterToolCall` never sees it and no `emerging_gap` is recorded for it. Only calls
+  that reach a handler (a failed query, a refused write) become gaps.
 
 # This is NOT the Next.js you know
 

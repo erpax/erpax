@@ -19,6 +19,10 @@ jobs:
     name: Production answers
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    env:
+      # An agent user's key on production (repository secret). Without it the client checks the pages and
+      # that the gateway refuses a caller without a key; with it, the read-only MCP conversation too.
+      ERPAX_API_KEY: ${{ secrets.ERPAX_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - name: Wait for Cloudflare's build of this commit
@@ -40,4 +44,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
+      # The MCP client library is loaded only when there is a key to talk with.
+      - if: env.ERPAX_API_KEY != ''
+        uses: ./.github/actions/setup
       - run: node scripts/smoke.mjs --production
