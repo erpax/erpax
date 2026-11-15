@@ -74,8 +74,10 @@ describe('role abilities are enforced — every subject a role names is wired', 
     .map((match) => match[1]!)
     .filter((name, index, all) => all.indexOf(name) === index && existsSync(join(root, name, 'index.ts')))
   it('names collections', () => expect(subjects.length).toBeGreaterThan(10))
+  // pages is decided by the governed-document access (pageRead / pageWrite, built on abilityOf): a governed
+  // type is a condition on pages, and website pages keep their own rule
   it.each(subjects.filter((name) => !EXEMPT.has(name)))('%s uses withAbility', (name) => {
-    expect(readFileSync(join(root, name, 'index.ts'), 'utf8')).toMatch(/withAbility\(|abilityAccess\(/)
+    expect(readFileSync(join(root, name, 'index.ts'), 'utf8')).toMatch(/withAbility\(|abilityAccess\(|pageRead\(/)
   })
 })
 

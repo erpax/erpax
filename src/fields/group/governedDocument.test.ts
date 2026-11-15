@@ -1,50 +1,58 @@
 import { describe, expect, it } from 'vitest'
 
-import { Ability } from '@/utilities/ability'
+import { Ability, restrictSubjects } from '@/utilities/ability'
 import { abilityForRoles } from '@/utilities/ability/roles'
-import { documentError, governedDocument, pageRead, pageWrite, typesFor } from '@/fields/group/governedDocument'
+import { documentError, governedDocument, mayWrite, pageRead, pageWrite } from '@/fields/group/governedDocument'
 
-// a request whose role engine is unreachable: abilityOf grants nothing, so only the user's own roles count
-const reqFor = (user: unknown) => ({ user, context: {}, payload: { findByID: async () => { throw new Error('offline') }, find: async () => { throw new Error('offline') } } })
-
+const STD = 'reporting-standard'
 const superAdmin = { id: 's', roles: ['admin'], tenants: [] }
 const finance = { id: 'f', roles: ['user', 'finance'], tenants: [{ tenant: 't1' }] }
 const tenantAdmin = { id: 'a', roles: ['user', 'admin'], tenants: [{ tenant: 't1', roles: ['admin'] }] }
-const read = (user: unknown) => (pageRead as unknown as (a: object) => Promise<unknown>)({ req: reqFor(user) })
+const plain = { id: 'p', roles: ['user'], tenants: [{ tenant: 't1' }] }
+const none = async () => new Ability()
+const reqOf = (user: unknown) => ({ user, context: {} })
+const req = (user: unknown) => reqOf(user) as never
 
-describe('governed documents on pages — never public, read and written by their type', () => {
-  it('anonymous reads see published pages that are not governed', async () => {
-    expect(JSON.stringify(await read(null))).toContain('"documentType":{"exists":false}')
-    expect(JSON.stringify(await read(null))).toContain('published')
+describe('governed documents on pages — never public, read and written by the roles their type names', () => {
+  it('anonymous reads see published pages that are not governed; a super-admin reads all', async () => {
+    const anon = JSON.stringify(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(null) }))
+    expect(anon).toContain('"documentType":{"exists":false}')
+    expect(anon).toContain('published')
+    expect(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(superAdmin) })).toBe(true)
   })
 
-  it('a signed-in reader sees website pages and the types their roles read', async () => {
-    expect(await read(superAdmin)).toBe(true)
-    expect(JSON.stringify(await read(finance))).toContain('"documentType":{"in":["reporting-standard"]}')
-    expect(await read({ id: 'v', roles: ['user'] })).toEqual({ documentType: { exists: false } })
+  it('a role held on the user record reads its types', async () => {
+    expect(JSON.stringify(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(finance) }))).toContain(`"documentType":{"in":["${STD}"]}`)
+    expect(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(plain) })).toEqual({ documentType: { exists: false } })
   })
 
-  it('a role held through the role engine counts too (RBAC via the request context), and the broad rules do not widen it', async () => {
-    const plain = { id: 'p', roles: ['user'] }
-    expect(await typesFor(reqFor(plain) as never, 'read', async () => abilityForRoles({ roles: ['user', 'finance'] }))).toEqual(['reporting-standard'])
-    expect(await typesFor(reqFor(plain) as never, 'read', async () => abilityForRoles({ roles: ['user'] }))).toEqual([])
-    expect(await typesFor(reqFor(plain) as never, 'write', async () => abilityForRoles({ roles: ['admin'] }))).toEqual([])
-    expect(await typesFor(reqFor(plain) as never, 'read', async () => new Ability())).toEqual([])
+  it('the role rules: a type is a condition on pages; user-reads-all and admin-manages-all do not widen it', () => {
+    expect(abilityForRoles({ roles: ['user'] }).permits('read', 'pages', { documentType: STD })).toBe(false)
+    expect(abilityForRoles({ roles: ['user'] }).permits('read', 'pages', { title: 'About' })).toBe(true)
+    expect(abilityForRoles({ roles: ['user', 'finance'] }).permits('read', 'pages', { documentType: STD })).toBe(true)
+    expect(abilityForRoles({ roles: ['admin'] }).permits('read', 'pages', { documentType: STD })).toBe(true)
+    expect(abilityForRoles({ roles: ['admin'] }).permits('update', 'pages', { documentType: STD })).toBe(false)
   })
 
-  it('a reporting standard is written by a super-admin only, a website page by the site rule', async () => {
-    expect(await typesFor(reqFor(tenantAdmin) as never, 'write')).toEqual([])
-    expect(await typesFor(reqFor(superAdmin) as never, 'write')).toEqual(['reporting-standard'])
-    const write = pageWrite(() => ({ tenant: { equals: 't1' } }))
-    await expect(write({ req: reqFor(tenantAdmin), data: { documentType: 'reporting-standard' } } as never)).resolves.toBe(false)
-    await expect(write({ req: reqFor(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] })
+  it('a role held through an app group reaches the type, inside that tenant only', () => {
+    const group = restrictSubjects(abilityForRoles({ roles: ['finance'] }), ['pages', 'posts'], { tenant: 't1' })
+    expect(group.permits('read', 'pages', { documentType: STD, tenant: 't1' })).toBe(true)
+    expect(group.permits('read', 'pages', { documentType: STD, tenant: 't2' })).toBe(false)
   })
 
-  it('nobody turns a page into a type they may not write, and a type names what it requires', async () => {
-    const run = (data: object, user: unknown, originalDoc?: object) => (governedDocument as unknown as (a: object) => Promise<unknown>)({ data, originalDoc, req: reqFor(user) })
-    await expect(run({ documentType: 'reporting-standard' }, tenantAdmin, { documentType: null })).rejects.toThrow()
-    await expect(run({ documentType: 'reporting-standard', document: { code: 'IFRS 15' } }, superAdmin)).rejects.toThrow(/names its effectiveDate, classification/)
-    expect(await run({ documentType: 'reporting-standard', document: { code: 'IFRS 15', effectiveDate: '2018-01-01', classification: 'ifrs' } }, superAdmin)).toBeDefined()
+  it('a reporting standard is written by a super-admin only; a website page by the site rule', async () => {
+    expect(await mayWrite(req(tenantAdmin), STD, 't1', none)).toBe(false)
+    expect(await mayWrite(req(superAdmin), STD, 't1', none)).toBe(true)
+    const write = pageWrite(() => ({ tenant: { equals: 't1' } }), none)
+    await expect(write({ req: req(tenantAdmin), data: { documentType: STD, tenant: 't1' } } as never)).resolves.toBe(false)
+    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] })
+  })
+
+  it('a type names what it requires', async () => {
+    const run = (data: object, user: unknown, originalDoc?: object) => (governedDocument as unknown as (a: object) => Promise<unknown>)({ data, originalDoc, req: { ...reqOf(user), payload: { findByID: async () => { throw new Error('offline') }, find: async () => { throw new Error('offline') } } } })
+    await expect(run({ documentType: STD, document: { code: 'IFRS 15' } }, superAdmin)).rejects.toThrow(/names its effectiveDate, classification/)
+    expect(await run({ documentType: STD, document: { code: 'IFRS 15', effectiveDate: '2018-01-01', classification: 'ifrs' } }, superAdmin)).toBeDefined()
+    await expect(run({ documentType: STD, tenant: 't1' }, tenantAdmin, { documentType: null, tenant: 't1' })).rejects.toThrow()
     expect(documentError(null, {})).toBe(true)
   })
 })

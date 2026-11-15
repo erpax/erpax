@@ -19,43 +19,59 @@ import { wherePublished } from '@/utilities/scope/filters'
  * or out of one.
  */
 
-/**
- * The governed types the request may read or write: a role the type names, held as the user's own
- * role, through a role assignment, or through a `<role>@<app>` group — the last two from the request's
- * ability, computed once and kept on its context (`abilityOf`). A super-admin holds every type.
- */
-export const typesFor = async (req: PayloadRequest, mode: 'read' | 'write', of: AbilityOf = abilityOf): Promise<string[]> => {
-  if (isSuperAdmin(req.user)) return GOVERNED_TYPES.map((t) => t.value)
-  if (!req.user) return []
-  const own = ((req.user as { roles?: unknown }).roles as string[] | undefined) ?? []
-  const ability = await of(req)
-  return GOVERNED_TYPES.filter((t) => t[mode].some((r) => own.includes(r)) || ability.permits(mode === 'read' ? 'read' : 'update', t.value)).map((t) => t.value)
+/** The types a user's own roles (the users `roles` select) read or write. */
+const ownTypes = (user: unknown, mode: 'read' | 'write'): string[] => {
+  const own = ((user as { roles?: unknown } | null)?.roles as string[] | undefined) ?? []
+  return GOVERNED_TYPES.filter((t) => t[mode].some((r) => own.includes(r))).map((t) => t.value)
 }
 
 const typeOf = (data: unknown): string | null | undefined => (data as { documentType?: string | null } | null)?.documentType
 const notGoverned: Where = { documentType: { exists: false } }
+const governed: Where = { documentType: { exists: true } }
 const governedIn = (types: string[]): Where => ({ documentType: { in: types } })
 
-/** Read: anonymous → published and not governed; signed in → website pages and the readable types. */
-export const pageRead: Access = async ({ req }) => {
-  if (!req.user) return { and: [wherePublished, notGoverned] }
-  if (isSuperAdmin(req.user)) return true
-  const types = await typesFor(req, 'read')
-  return types.length ? { or: [notGoverned, governedIn(types)] } : notGoverned
+/**
+ * The governed pages the request's ability allows — its roles from the role engine and from
+ * `<role>@<app>` groups (kept to the app's collections and tenant), computed once and kept on the
+ * request's context (`abilityOf`). Each governed type is a condition on `pages` in the role rules.
+ */
+const byAbility = async (req: PayloadRequest, action: 'read' | 'update' | 'delete', of: AbilityOf): Promise<Where | null> => {
+  const where = (await of(req)).accessibleBy(action, 'pages')
+  if (where === false) return null
+  return where === true ? governed : { and: [governed, where] }
 }
+
+/** Whether the request may write a page of `type` in `tenant` — own roles or the ability, on the document itself. */
+export const mayWrite = async (req: PayloadRequest, type: string, tenant: unknown, of: AbilityOf = abilityOf): Promise<boolean> =>
+  isSuperAdmin(req.user) || ownTypes(req.user, 'write').includes(type) || (await of(req)).permits('update', 'pages', { documentType: type, tenant })
+
+const any = (branches: (Where | null)[]): Where | false => {
+  const kept = branches.filter((b): b is Where => b !== null)
+  return kept.length === 0 ? false : kept.length === 1 ? kept[0]! : { or: kept }
+}
+
+/** Read: anonymous → published and not governed; signed in → website pages and the governed pages their roles read. */
+export const pageRead =
+  (of: AbilityOf = abilityOf): Access =>
+  async ({ req }) => {
+    if (!req.user) return { and: [wherePublished, notGoverned] }
+    if (isSuperAdmin(req.user)) return true
+    const own = ownTypes(req.user, 'read')
+    return any([notGoverned, own.length ? governedIn(own) : null, await byAbility(req, 'read', of)])
+  }
 
 /** Create / update / delete: a website page by `site` (the tenant-admin rule), a governed page by its type's writers. */
 export const pageWrite =
-  (site: Access): Access =>
+  (site: Access, of: AbilityOf = abilityOf): Access =>
   async (args) => {
-    if (isSuperAdmin(args.req.user)) return true
-    const writable = await typesFor(args.req, 'write')
-    const declared = typeOf(args.data)
-    if (declared) return writable.includes(declared)
+    const { req, data } = args
+    if (isSuperAdmin(req.user)) return true
+    const declared = typeOf(data)
+    if (declared) return mayWrite(req, declared, (data as { tenant?: unknown }).tenant, of)
     const siteAccess = await site(args)
     const siteBranch: Where | null = siteAccess === true ? notGoverned : siteAccess ? { and: [notGoverned, siteAccess] } : null
-    const branches = [...(siteBranch ? [siteBranch] : []), ...(writable.length ? [governedIn(writable)] : [])]
-    return branches.length === 0 ? false : branches.length === 1 ? branches[0]! : { or: branches }
+    const own = ownTypes(req.user, 'write')
+    return any([siteBranch, own.length ? governedIn(own) : null, await byAbility(req, 'update', of)])
   }
 
 /** Why a governed page is incomplete for its type, or true. */
@@ -73,8 +89,8 @@ export const governedDocument: CollectionBeforeChangeHook = async ({ data, origi
   const next = typeOf(data) === undefined ? (stored?.documentType ?? null) : (typeOf(data) ?? null)
   const prev = stored?.documentType ?? null
   if (next !== prev && !isSuperAdmin(req.user)) {
-    const writable = await typesFor(req, 'write')
-    if ((next && !writable.includes(next)) || (prev && !writable.includes(prev))) throw new Forbidden()
+    const tenant = (data as { tenant?: unknown }).tenant ?? (originalDoc as { tenant?: unknown } | undefined)?.tenant
+    if ((next && !(await mayWrite(req, next, tenant))) || (prev && !(await mayWrite(req, prev, tenant)))) throw new Forbidden()
   }
   const error = documentError(next, { ...stored?.document, ...(data as { document?: Record<string, unknown> }).document })
   if (error !== true) throw new APIError(error, 400)

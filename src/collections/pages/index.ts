@@ -44,7 +44,7 @@ export const Pages: CollectionConfig = {
   access: {
     create: pageWrite(superAdminOrTenantAdminAccess),
     delete: pageWrite(superAdminOrTenantAdminAccess),
-    read: pageRead,
+    read: pageRead(),
     update: pageWrite(superAdminOrTenantAdminAccess),
   },
   // This config controls what's populated by default when a page is referenced
