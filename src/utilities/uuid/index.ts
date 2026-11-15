@@ -20,11 +20,14 @@
  *   - Collections already declaring a top-level `uuid` field are left
  *     untouched (no DuplicateFieldName).
  */
-import type { Config, Field, Plugin } from 'payload'
+import type { Condition, Config, Field, Plugin } from 'payload'
 import {
   tamperProofUuidField,
   tamperProofBeforeChangeHook,
 } from '@/utilities/integrity'
+
+/** A field shown only to someone signed in. */
+export const signedIn: Condition = (_data, _siblingData, context) => Boolean(context?.user)
 
 const isNamed = (f: Field): f is Field & { name: string } =>
   'name' in f && typeof (f as { name?: unknown }).name === 'string'
@@ -39,7 +42,9 @@ export const uuidPlugin =
       }
       // Side-effect: registers the slug in the Law-8 tamper-proof registry.
       const [uuidField] = tamperProofUuidField(collection.slug)
-      const uuid: Field = { ...uuidField }
+      // computed by the server (the hook below), so only someone signed in sees it: the anonymous
+      // first-user form stays email and password
+      const uuid: Field = { ...uuidField, admin: { ...uuidField.admin, condition: signedIn } } as Field
       delete (uuid as Record<string, unknown>).required
       return {
         ...collection,
