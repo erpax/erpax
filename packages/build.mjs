@@ -37,13 +37,11 @@ import {
 import { builtinModules } from 'node:module'
 import { dirname, join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { placeOf, rootRanges } from './range.mjs'
 
 const packagesDir = dirname(fileURLToPath(import.meta.url))
 const root = join(packagesDir, '..')
 const rootPkg = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'))
-
-/** payload/next/react are host-provided — peers, never bundled deps. */
-const PEERS = new Set(['payload', 'next', 'react', 'react-dom'])
 
 /** The one version every package carries — the root package.json's. */
 const sharedVersion = rootPkg.version
@@ -219,22 +217,19 @@ async function buildOne(atom) {
     )
   }
 
-  const allRootDeps = { ...rootPkg.devDependencies, ...rootPkg.dependencies }
-  const deps = {}
-  const peers = {}
+  const ranges = rootRanges()
+  const placed = { dependencies: {}, peerDependencies: {} }
   for (const e of [...externals].sort()) {
     if (e.startsWith('node:')) continue
     const name = e.startsWith('@') ? e.split('/').slice(0, 2).join('/') : e.split('/')[0]
     // a Node builtin written without `node:` is not a dependency; a scope with no name
     // (`@payload-config`) is the HOST's path alias, not an npm package — neither can be installed
     if (builtinModules.includes(name) || (name.startsWith('@') && !name.includes('/'))) continue
-    const version = allRootDeps[name]
-    if (PEERS.has(name)) peers[name] = version ?? '*'
-    else if (version) deps[name] = version
-    else peers[name] = '*'
+    const [section, range] = placeOf(name, ranges)
+    placed[section][name] = range
   }
-  pkg.dependencies = Object.keys(deps).length ? deps : undefined
-  pkg.peerDependencies = Object.keys(peers).length ? peers : undefined
+  pkg.dependencies = Object.keys(placed.dependencies).length ? placed.dependencies : undefined
+  pkg.peerDependencies = Object.keys(placed.peerDependencies).length ? placed.peerDependencies : undefined
   writeFileSync(pkgJsonPath, `${JSON.stringify(pkg, null, 2)}\n`)
 
   const typesDir = join(dist, 'types')

@@ -3,10 +3,8 @@
     "erpax": {
       "type": "http",
       "url": "${ERPAX_MCP_URL:-https://erpax.ceci.workers.dev/api/mcp}",
-      "headers": {
-        "Authorization": "Bearer ${ERPAX_API_KEY}"
-      },
-      "comment": "The site is the connector: /api/mcp is @payloadcms/plugin-mcp, a gateway onto the same collections the REST API serves. Set ERPAX_MCP_URL=http://localhost:3000/api/mcp to use a local server. The key decides access and tenant scope."
+      "headersHelper": "sh scripts/mcp-headers.sh",
+      "comment": "The site is the connector: /api/mcp is @payloadcms/plugin-mcp, a gateway onto the same collections the REST API serves. The API key (Payload admin → API keys) comes from ERPAX_API_KEY in the environment or in the gitignored .env, read at connect time by scripts/mcp-headers.sh; the key decides access and tenant scope. Set ERPAX_MCP_URL=http://localhost:3000/api/mcp to use a local server. When the API cannot do a job, the fallback is next development (AGENTS.md, Agents and the API)."
     },
     "trello": {
       "comment": "OFF by default (disabled: true). Scaffolded for an AGENT holding a conversation about a board — NOT for the sync path, which goes through the typed REST client in src/trello so write ordering, the rate-limit budget and typed errors stay observable. Enable by setting TRELLO_MCP_ENABLED=1 and flipping disabled to false. The token grants full Trello account access.",
