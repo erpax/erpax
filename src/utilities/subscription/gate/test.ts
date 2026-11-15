@@ -446,9 +446,5 @@ describe('subscriptionGates', () => {
       expect(await featureGuard('apiAccess')({ req: unsubscribed } as never)).toBe(false)
     })
 
-    it('lets the platform admin through: it serves every tenant and holds no plan', async () => {
-      const superAdmin = createMockRequest({ user: { roles: ['admin'], tenants: [] }, payload: { find: stored(null) } })
-      expect(await featureGuard('consolidation')({ req: superAdmin } as never)).toBe(true)
-    })
   })
 })

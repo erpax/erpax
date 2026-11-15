@@ -23,7 +23,6 @@ import type { Iso27002ControlId } from '@/utilities/iso/27002'
 // importing them back closed a two-file loop. Identity is all the gate needs.
 import { getUserContext } from '@/utilities/auth/context'
 import { remembered } from '@/hooks/context'
-import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 
 /**
  * Canonical ISO 27002 controls these gates exercise:
@@ -234,8 +233,6 @@ export async function getSubscriptionStatus(req: PayloadRequest): Promise<Subscr
  */
 export const featureGuard = (featureId: string): Access => {
   return async ({ req }) => {
-    // The platform admin serves every tenant and holds no plan of its own.
-    if (isSuperAdmin(req.user)) return true
     const result = await checkFeatureAccess(req, featureId)
     return result.allowed
   }
