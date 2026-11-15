@@ -40,7 +40,7 @@ import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { validateNotLocked } from '@/utilities/utility'
+import { periodLock } from '@/utilities/utility'
 import { leasePeriodPostingHook } from '@/hooks/collections/lease-period-postings/leasePeriodPostingHook'
 
 const LeasePeriodPostings: CollectionConfig = {
@@ -248,7 +248,7 @@ const LeasePeriodPostings: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [
-      validateNotLocked,
+      periodLock('periodEnd'),
       autoPopulateCreatedBy,
       autoSetTimestamp(
         'postedAt',

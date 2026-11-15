@@ -39,7 +39,7 @@ import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { validateNotLocked } from '@/utilities/utility';
+import { periodLock } from '@/utilities/utility';
 
 const AccountReconciliations: CollectionConfig = {
   slug: 'account-reconciliations',
@@ -288,7 +288,7 @@ const AccountReconciliations: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [
-      validateNotLocked,
+      periodLock('asOfDate'),
       autoPopulateCreatedBy,
       autoSetTimestamp(
         'preparedAt',

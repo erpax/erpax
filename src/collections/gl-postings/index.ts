@@ -9,12 +9,12 @@ import { glAccountField } from '@/fields/relationship/glAccountField'
 import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { validateNotLocked } from '@/utilities/utility'
+import { periodLock } from '@/utilities/utility'
 import { validateBalancedEntry } from '@/hooks/collections/shared/validateBalancedEntry'
 // Two SOX §404 controls that existed, were tested, and were installed on NOTHING. Each names this
 // collection in its own header — `enforcePostingImmutability` says "beforeChange hook for
 // GLPostings", `validateFiscalPeriodPosting` says "beforeValidate hook for GLPostings" — and
-// neither appeared in either array. They are distinct from `validateNotLocked`, which is the period
+// neither appeared in either array. They are distinct from `periodLock`, which is the period
 // LOCK: this pair stops a POSTED row being modified, and resolves the fiscal period it belongs to.
 import { enforcePostingImmutability } from '@/hooks/collections/gl-postings/enforcePostingImmutability'
 import { validateFiscalPeriodPosting } from '@/hooks/collections/gl-postings/validateFiscalPeriodPosting'
@@ -137,7 +137,7 @@ const GLPostings: CollectionConfig = {
     beforeChange: [
       // FIRST: a posted row may not be modified at all, so refuse before anything else mutates data.
       enforcePostingImmutability,
-      validateNotLocked,
+      periodLock('sourceDate'),
       autoPopulateCreatedBy,
       autoSetTimestamp('postedDate', (data) => (data as { status?: string }).status === 'posted'),
     ],

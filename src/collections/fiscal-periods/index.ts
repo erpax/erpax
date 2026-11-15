@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
-import { tenantMasterDataAccess, getUser } from '@/access/collections/shared/multiTenantRead'
+import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantRead'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
-import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
+import { deriveLabel, periodLifecycle } from '@/hooks/collections/fiscal-periods/lifecycle'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { updateFiscalCalendarOnPeriodChange } from '@/hooks/collections/fiscal-periods/updateFiscalCalendarOnPeriodChange'
 
@@ -35,9 +35,9 @@ import { updateFiscalCalendarOnPeriodChange } from '@/hooks/collections/fiscal-p
  *   When status === 'locked', no GL-posting collection (Invoices, Payments,
  *   JournalEntries, GLPostings, BankStatements, PeriodEndAdjustments, …) may
  *   write a record whose posting date falls inside [startDate, endDate].
- *   Enforced by `validateNotLocked` from
- *   `@/utility/period/lock`. Only role 'admin' may
- *   transition status to / from 'locked'.
+ *   Enforced by `periodLock(<posting date>)` (src/hooks/collections/utility/periodLock),
+ *   which each posting collection installs with the field that dates its postings. Only
+ *   role 'admin' may transition status to / from 'locked' (src/hooks/collections/fiscal-periods/lifecycle).
  */
 export const FiscalPeriods: CollectionConfig = {
   slug: 'fiscal-periods',
@@ -55,66 +55,14 @@ export const FiscalPeriods: CollectionConfig = {
   // must not prune it. Declared here so the versions plugin leaves it alone.
   versions: { maxPerDoc: 0 },
   hooks: {
-    beforeValidate: [
-      autoPopulateTenant,
-      async ({ data }) => {
-        if (data && !data.label && data.fiscalYear && data.periodNumber !== undefined) {
-          const padded = String(data.periodNumber).padStart(2, '0')
-          data.label = `FY${data.fiscalYear}-P${padded}`
-        }
-        return data
-      },
-    ],
+    beforeValidate: [autoPopulateTenant, deriveLabel],
     beforeChange: [
       // Validates the fiscal CONFIGURATION this collection carries — fiscalYearStartMonth,
-      // periodType, regulatoryFramework, leapYearAdjustment. It names this collection in its own
-      // header and was installed on nothing ([[rules]]/unreached). Distinct from the date-ordering
-      // check below, which compares startDate and endDate and says nothing about the config.
+      // periodType, regulatoryFramework, leapYearAdjustment. Distinct from the lifecycle below.
       updateFiscalCalendarOnPeriodChange,
-      // ISO-27002 §5.3 / SOX §404 four-eyes: the user who created the
-      // period cannot also be the user who closes it (`closedBy`) or
-      // locks it (`lockedBy`). Two enforcers, one per approval field.
-      enforceSegregationOfDuties('closedBy', 'createdBy'),
-      enforceSegregationOfDuties('lockedBy', 'createdBy'),
-      async ({ data }) => {
-        if (data.startDate && data.endDate) {
-          const from = new Date(data.startDate).getTime()
-          const to = new Date(data.endDate).getTime()
-          if (to < from) {
-            throw new Error('endDate must be on or after startDate')
-          }
-        }
-        return data
-      },
-      async ({ data, originalDoc, req }) => {
-        if (!originalDoc) return data
-        const prev = originalDoc.status as string | undefined
-        const next = data.status as string | undefined
-
-        const movingIntoLocked = next === 'locked' && prev !== 'locked'
-        const movingOutOfLocked = prev === 'locked' && next !== 'locked'
-
-        if (movingIntoLocked || movingOutOfLocked) {
-          const isAdmin = getUser(req)?.roles?.includes('admin')
-          if (!isAdmin) {
-            throw new Error('Only admins may lock or unlock a fiscal period')
-          }
-        }
-
-        if (next === 'closed' && prev !== 'closed') {
-          data.closedAt = data.closedAt ?? new Date().toISOString()
-          data.closedBy = data.closedBy ?? req.user?.id
-        }
-        if (movingIntoLocked) {
-          data.lockedAt = data.lockedAt ?? new Date().toISOString()
-          data.lockedBy = data.lockedBy ?? req.user?.id
-        }
-        if (movingOutOfLocked) {
-          data.reopenedAt = new Date().toISOString()
-          data.reopenedBy = req.user?.id
-        }
-        return data
-      },
+      // date order, only-admins-lock, four eyes, and the server-stamped close/lock/reopen times —
+      // each read where the field is (lifecycle, dates); see src/hooks/collections/fiscal-periods/lifecycle
+      periodLifecycle,
     ],
     // SOX §404 period-close-integrity: every fiscal-period status change
     // (open → closed → locked → reopened) emits a structured audit event.

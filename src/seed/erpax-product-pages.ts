@@ -389,7 +389,7 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
       'enforceSegregationOfDuties on closedBy ≠ createdBy',
       'enforceSegregationOfDuties on lockedBy ≠ createdBy',
       'Auto-stamp closedAt / lockedAt / reopenedAt',
-      'validateNotLocked rejects back-dated edits inside locked periods',
+      'periodLock rejects back-dated edits inside locked periods',
       'auditTrailAfterChange on every status change',
       '`account-reconciliations` collection — IAS 7 evidence: bank / GL-to-subledger / intercompany with preparer→reviewer signoff and zero-difference enforcement',
       'AccountReconciliationsPanel widget — open / approved / rejected counts + unbalanced-approved alert',

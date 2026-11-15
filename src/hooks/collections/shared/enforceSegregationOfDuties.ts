@@ -15,16 +15,28 @@
 
 import type { CollectionBeforeChangeHook } from 'payload'
 
+/**
+ * The id behind a reference: a plain id, a populated doc (`{ id }`), or Payload 4's built-in authorship
+ * (`{ relationTo, value }`). Comparing the raw values made `[object Object]` of the last, so the rule
+ * never matched a creator kept by Payload.
+ */
+export const idOf = (ref: unknown): string | undefined => {
+  if (ref === undefined || ref === null || ref === '') return undefined
+  if (typeof ref !== 'object') return String(ref)
+  const r = ref as { id?: unknown; value?: unknown }
+  return r.value !== undefined ? idOf(r.value) : r.id !== undefined ? idOf(r.id) : undefined
+}
+
 export function enforceSegregationOfDuties(
   approverField: string = 'approvedBy',
   creatorField: string = 'createdBy',
   errorMessage?: string,
 ): CollectionBeforeChangeHook {
   return async ({ data, originalDoc }) => {
-    const approver = data?.[approverField]
-    if (approver === undefined || approver === null) return data
-    const creator = data?.[creatorField] ?? originalDoc?.[creatorField]
-    if (creator !== undefined && creator !== null && String(creator) === String(approver)) {
+    const approver = idOf(data?.[approverField])
+    if (approver === undefined) return data
+    const creator = idOf(data?.[creatorField] ?? originalDoc?.[creatorField])
+    if (creator !== undefined && creator === approver) {
       throw new Error(
         errorMessage ||
           `Segregation of duties violation: the creator (${creator}) cannot also approve this record. ISO 27002 §5.3 / SOX §404.`,

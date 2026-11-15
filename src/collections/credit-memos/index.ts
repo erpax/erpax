@@ -50,7 +50,7 @@ import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { validateNotLocked } from '@/utilities/utility'
+import { periodLock } from '@/utilities/utility'
 import { preset, type Preset } from '@/utilities/preset'
 
 /** One cash payment back to the customer against a memo. */
@@ -233,7 +233,7 @@ const CreditMemos: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [
-      validateNotLocked,
+      periodLock('issuedAt'),
       autoPopulateCreatedBy,
       // SOX §404 / ISO 27002 §5.3: issuer ≠ approver.
       enforceSegregationOfDuties(),

@@ -24,7 +24,7 @@ import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { validateNotLocked } from '@/utilities/utility'
+import { periodLock } from '@/utilities/utility'
 import { depreciationSchedulePostingHook } from '@/hooks/collections/shared/depreciationSchedulePostingHook'
 
 const DepreciationSchedules: CollectionConfig = {
@@ -73,7 +73,7 @@ const DepreciationSchedules: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [
-      validateNotLocked,
+      periodLock('periodEnd'),
       autoPopulateCreatedBy,
       autoSetTimestamp('postedAt', (d) => (d as { status?: string }).status === 'posted'),
     ],

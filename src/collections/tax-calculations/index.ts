@@ -5,13 +5,13 @@ import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenan
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
-import { validateNotLocked } from '@/utilities/utility';
+import { periodLock } from '@/utilities/utility';
 
 /**
  * Tax Calculations — computed tax-liability snapshots per period.
  *
  * Slice ZZ: full canonical hook chain wired (autoPopulateTenant +
- * autoPopulateCreatedBy + validateNotLocked + ISO-8601 postedAt /
+ * autoPopulateCreatedBy + periodLock + ISO-8601 postedAt /
  * filedAt / paidAt timestamps + audit-trail emission per write).
  *
  * @standard ISO-3166-1:2020 country-codes jurisdiction
@@ -99,7 +99,7 @@ const TaxCalculations: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [
-      validateNotLocked,
+      periodLock('period'),
       autoPopulateCreatedBy,
       // ISO-8601 status-transition timestamps.
       autoSetTimestamp(

@@ -57,7 +57,7 @@ describe('enforce/posting/immutability — the hook and the collection must agre
     expect(isWired()).toBe(true)
     // the period lock is a DIFFERENT control: it stops postings INTO a locked period, never edits TO a
     // posted row. Both are required; neither substitutes for the other.
-    expect(hookNames()).toContain('validateNotLocked')
+    expect(hookNames()).toContain('periodLock')
   })
 
   it('runs BEFORE the period lock — a posted row is refused before anything else mutates data', () => {

@@ -43,7 +43,7 @@ import type { CollectionOverride } from '@payloadcms/plugin-ecommerce/types'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { paymentAccountingHook } from '@/hooks/collections/invoices-payments/paymentAccountingHook'
 import { invoicePaidTotals } from '@/utilities/invoices/payments/hooks/recomputeInvoicePaid'
-import { validateNotLocked } from '@/utilities/utility'
+import { periodLock } from '@/utilities/utility'
 
 /** A transaction is a register payment when it names its kind (AR collection or AP disbursement). */
 export const isRegisterPayment = (doc: unknown): boolean => {
@@ -182,7 +182,7 @@ export const transactionsOverride: CollectionOverride = ({ defaultCollection }) 
     hooks: {
       ...defaultCollection.hooks,
       beforeValidate: [...(defaultCollection.hooks?.beforeValidate ?? []), kindFromInvoice],
-      beforeChange: [...(defaultCollection.hooks?.beforeChange ?? []), onRegisterPayment.beforeChange(validateNotLocked)],
+      beforeChange: [...(defaultCollection.hooks?.beforeChange ?? []), onRegisterPayment.beforeChange(periodLock('dates.receivedAt'))],
       afterChange: [
         ...(defaultCollection.hooks?.afterChange ?? []),
         onRegisterPayment.afterChange(paymentAccountingHook),

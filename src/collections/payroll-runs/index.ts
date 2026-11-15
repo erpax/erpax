@@ -49,7 +49,7 @@ import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { validateNotLocked } from '@/utilities/utility'
+import { periodLock } from '@/utilities/utility'
 import { payrollRunPostingHook } from '@/hooks/collections/shared/payrollRunPostingHook'
 import { payrollDisbursementHook } from '@/hooks/collections/shared/payrollDisbursementHook'
 
@@ -347,7 +347,7 @@ const PayrollRuns: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [
-      validateNotLocked,
+      periodLock('paymentDate'),
       autoPopulateCreatedBy,
       // SOX §404 four-eyes: preparer ≠ authoriser.
       enforceSegregationOfDuties(),
