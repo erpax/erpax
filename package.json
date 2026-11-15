@@ -22,6 +22,11 @@
     "cloudflare",
     "content-addressed",
     "tamper-evident",
+    "provenance",
+    "compliance-as-code",
+    "formal-verification",
+    "lean-4",
+    "theorem-proving",
     "mcp"
   ],
   "type": "module",
