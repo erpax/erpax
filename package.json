@@ -37,6 +37,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
     "@opennextjs/cloudflare": "^1.20.17",
     "@payloadcms/admin-bar": "4.0.0-beta.9",
     "@payloadcms/db-d1-sqlite": "4.0.0-beta.9",
@@ -117,6 +118,7 @@
   },
   "devDependencies": {
     "@cursor/sdk": "^1.0.26",
+    "@modelcontextprotocol/client": "2.4.0",
     "@payloadcms/eslint-plugin": "^3.28.0",
     "@payloadcms/typescript-plugin": "4.0.0-beta.9",
     "@playwright/test": "^1.62.1",

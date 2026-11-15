@@ -132,9 +132,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
       # The Worker Cloudflare would deploy, built and served here: OpenNext builds it, wrangler serves it
-      # on a local D1 migrated from the baseline (--local: no remote binding, no credentials), and the
-      # same smoke script the Deployed workflow runs against production checks it. `next build` alone
-      # passed a Worker that threw on every request.
+      # on a local D1 migrated from the baseline (--local: no remote binding, no credentials). Then CI
+      # is a thin MCP client of it (scripts/smoke.mjs): it becomes the first user through Payload's
+      # REST auth, enables its API key, and talks to /api/mcp as an agent does — tools/list, a read, and
+      # a failed call whose gap the afterToolCall hook must record. `next build` alone passed a Worker
+      # that threw on every request; a 401 for a caller without a key passed a gateway that failed every
+      # caller with one.
       - run: pnpm -s payload migrate --force-accept-warning
       - run: ./node_modules/.bin/opennextjs-cloudflare build
       - name: Serve the built Worker and smoke it

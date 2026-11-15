@@ -15,6 +15,7 @@
  */
 
 export { CodedError } from '@/utilities/error/codedError'
+export { plainError } from '@/utilities/error/plainError'
 export { codedFromRegistry } from '@/utilities/error/codedRegistry'
 export { createAppApiError, createAppApiError as apiErr, type AppApiErrorPayload } from '@/utilities/error/createAppApiError'
 export { throwRegistryValidation } from '@/utilities/error/validationRegistry'

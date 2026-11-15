@@ -95,7 +95,7 @@ import { PROVIDERS } from '@/packages/admin/providers'
 import { ACCOUNT_ROLES } from '@/utilities/ability/roles'
 import { gateByApp } from '@/access/collections/shared/appAccess'
 import { foldCollectionLifecycle } from '@/utilities/factory/collection'
-import type { Config } from '@/utilities/types'
+import { workerLogger } from '@/utilities/log'
 
 /** `buildConfig({ logger })` type — used so Workers can supply a non-pino logger without `any`. */
 type PayloadBuildConfigLogger = NonNullable<Parameters<typeof buildConfig>[0]['logger']>
@@ -138,25 +138,9 @@ if (
   )
 }
 
-const createLog =
-  (level: string, fn: typeof console.log) => (objOrMsg: object | string, msg?: string) => {
-    if (typeof objOrMsg === 'string') {
-      fn(JSON.stringify({ level, msg: objOrMsg }))
-    } else {
-      fn(JSON.stringify({ level, ...objOrMsg, msg: msg ?? (objOrMsg as { msg?: string }).msg }))
-    }
-  }
-
-const cloudflareLogger = {
-  level: process.env.PAYLOAD_LOG_LEVEL || 'info',
-  trace: createLog('trace', console.debug),
-  debug: createLog('debug', console.debug),
-  info: createLog('info', console.log),
-  warn: createLog('warn', console.warn),
-  error: createLog('error', console.error),
-  fatal: createLog('fatal', console.error),
-  silent: () => {},
-} as unknown as PayloadBuildConfigLogger
+// pino does not run in a Worker: Payload logs through a pino-shaped console logger there (src/utilities/log),
+// with the `child` plugins call and errors spelled out.
+const cloudflareLogger = workerLogger(process.env.PAYLOAD_LOG_LEVEL || 'info') as unknown as PayloadBuildConfigLogger
 
 let _cloudflare: CloudflareContext | undefined
 let _cloudflareInit = false
