@@ -141,8 +141,6 @@ const eslintConfig = defineConfig([
     '.open-next/**',
     '.claude/**',
     '.claude.bak/**',
-    '.vitepress/dist/**',
-    '.vitepress/cache/**',
     'out/**',
     'build/**',
     'next-env.d.ts',
