@@ -303,7 +303,7 @@ export default buildConfig({
   globals: [Header, Footer, Providers],
   plugins: [
     ...packages(
-      (Object.values(allCollections) as CollectionConfig[]).map((c) => foldCollectionLifecycle({ ...c, lockDocuments: false as const })),
+      (Object.values(allCollections) as CollectionConfig[]).map((c) => foldCollectionLifecycle({ ...c, lockDocuments: false as const, enableQueryPresets: true })),
       // a collection is reachable only through a tenant that has its app switched on
       gateByApp,
     ),
@@ -351,8 +351,9 @@ export default buildConfig({
       generateTitle: ({ doc }) => String((doc as { title?: unknown })?.title ?? ''),
       generateDescription: ({ doc }) => summaryOf(documentMarkdown((doc ?? {}) as Record<string, unknown>)),
     }),
+    // The collections the frontend routes by slug: [locale]/[slug] (pages), /posts/[slug], /products/[slug].
     redirectsPlugin({
-      collections: ['pages', 'posts'],
+      collections: ['pages', 'posts', 'products'],
       overrides: {
         llmInstructions: 'Redirects map one path to another document or URL.',
         fields: ({ defaultFields }) => defaultFields,

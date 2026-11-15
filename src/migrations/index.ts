@@ -5,6 +5,7 @@ import * as migration_20261115_153312_fold_dunning from './20261115_153312_fold_
 import * as migration_20261115_165406_fold_parties from './20261115_165406_fold_parties';
 import * as migration_20261115_180058_cloudflare_email from './20261115_180058_cloudflare_email';
 import * as migration_20261115_191645_fold_fiscal_periods from './20261115_191645_fold_fiscal_periods';
+import * as migration_20261115_194748_plugins_real_schema from './20261115_194748_plugins_real_schema';
 
 export const migrations = [
   {
@@ -40,6 +41,11 @@ export const migrations = [
   {
     up: migration_20261115_191645_fold_fiscal_periods.up,
     down: migration_20261115_191645_fold_fiscal_periods.down,
-    name: '20261115_191645_fold_fiscal_periods'
+    name: '20261115_191645_fold_fiscal_periods',
+  },
+  {
+    up: migration_20261115_194748_plugins_real_schema.up,
+    down: migration_20261115_194748_plugins_real_schema.down,
+    name: '20261115_194748_plugins_real_schema',
   },
 ];

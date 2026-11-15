@@ -53,7 +53,8 @@ overrides:
 
 allowBuilds:
   '@parcel/watcher': true
-  '@sentry/cli': set this to true or false
+  # sentry-cli uploads source maps; erpax uploads none, so its binary is never downloaded
+  '@sentry/cli': false
   '@swc/core': true
   esbuild: true
   sharp: true
