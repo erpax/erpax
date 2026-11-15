@@ -94,7 +94,6 @@ export { default as PaymentAllocations } from '@/collections/payment-allocations
 // Dunning & Collections
 
 // Master Data: Vendors & Procurement
-export { default as VendorScorecards } from '@/collections/vendor-scorecards'
 
 // Procurement: Purchase-to-Pay
 export { default as GoodsReceipts } from '@/collections/goods-receipts'
@@ -126,7 +125,6 @@ export { default as LeasePeriodPostings } from '@/collections/lease-period-posti
 
 // Payments & Settlements
 export { default as PaymentRuns } from '@/collections/payment-runs'
-export { default as SepaMandates } from '@/collections/sepa-mandates'
 
 // Payroll
 export { default as PayrollRuns } from '@/collections/payroll-runs'

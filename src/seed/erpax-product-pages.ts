@@ -540,7 +540,7 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
     ],
     wired: [
       '`payment-runs` collection — batch shell with status lifecycle (draft → pending_review → approved → exported → submitted → settled)',
-      '`sepa-mandates` collection — mandate register with sequence-state (FRST/RCUR/FNAL) and 36-month obsolescence',
+      'SEPA mandates on each customer party — the 36-month expiry (EPC130-08) and the sequence state computed by the server; a pain.008 run collects only against an active, unexpired mandate',
       'pain.001 / pain.008 XML generators (next slice) — the export step produces the wire file',
       'pacs.002 ack / pacs.004 return ingest — auto-flips run status + opens Refunds entries',
       'Bank-statement reconciliation auto-matches `payment-runs.transactions[].endToEndId` to camt.053 entries',
