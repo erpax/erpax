@@ -470,6 +470,9 @@ importers:
 
   packages/sales:
     dependencies:
+      payload:
+        specifier: 4.0.0-beta.9
+        version: 4.0.0-beta.9(graphql@17.0.2)(typescript@6.0.3)
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -634,6 +637,9 @@ importers:
 
   packages/work:
     dependencies:
+      payload:
+        specifier: 4.0.0-beta.9
+        version: 4.0.0-beta.9(graphql@17.0.2)(typescript@6.0.3)
       uuid:
         specifier: latest
         version: 14.0.3

@@ -31,14 +31,43 @@
  * @see src/ifrs/15/types/index.ts PerformanceObligation
  */
 
-import type { CollectionConfig } from 'payload'
+import type { CollectionConfig, FieldHook } from 'payload'
+import { validations } from 'payload/shared'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
+import { stampWhen } from '@/hooks/collections/shared/stampWhen'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
+
+// ── Milestones: how this obligation is satisfied (formerly the contract-performance collection) ──
+// A milestone is a step in satisfying one performance obligation (IFRS-15 §31-38), so it is a row here.
+// Its control-transfer method was a copy of this obligation's recognitionTiming; as a row it inherits it.
+
+const DAY = 86_400_000
+
+/** Days between the planned and the actual completion (positive = late), or null until both exist. */
+export const varianceDays = (planned: unknown, actual: unknown): number | null =>
+  planned && actual ? Math.round((new Date(actual as string).getTime() - new Date(planned as string).getTime()) / DAY) : null
+
+/** A completed milestone says when it completed. */
+export const completionError = (actual: unknown, status: unknown): string | true =>
+  status !== 'complete' || Boolean(actual) ? true : 'A completed milestone needs its actual completion date.'
+
+const computeVariance: FieldHook = ({ siblingData }) => {
+  const row = siblingData as { plannedCompletionDate?: unknown; actualCompletionDate?: unknown } | undefined
+  return varianceDays(row?.plannedCompletionDate, row?.actualCompletionDate)
+}
+
+const COMPLETION_STATUSES = [
+  { label: 'Not Started', value: 'not_started' },
+  { label: 'In Progress', value: 'in_progress' },
+  { label: 'Complete', value: 'complete' },
+  { label: 'On Hold', value: 'on_hold' },
+  { label: 'Failed', value: 'failed' },
+]
 
 const PerformanceObligations: CollectionConfig = {
   slug: 'performance-obligations',
@@ -179,6 +208,60 @@ const PerformanceObligations: CollectionConfig = {
       ],
       'pending',
     ),
+    {
+      name: 'milestones',
+      type: 'array',
+      admin: { description: 'IFRS-15 §31-38: the steps that transfer control, each with its acceptance evidence.' },
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'sequence', type: 'number', required: true, min: 1 },
+            { name: 'title', type: 'text', required: true },
+            { name: 'status', type: 'select', required: true, defaultValue: 'not_started', options: COMPLETION_STATUSES },
+          ],
+        },
+        { name: 'acceptanceCriteria', type: 'textarea', required: true, admin: { description: 'The objective evidence that control transferred.' } },
+        {
+          type: 'row',
+          fields: [
+            { name: 'plannedCompletionDate', type: 'date', required: true },
+            {
+              name: 'actualCompletionDate',
+              type: 'date',
+              // Payload's own date check first: a bare validate would drop it
+              validate: (async (value: unknown, args: never) => {
+                const first = await validations.date(value as never, args)
+                return first === true ? completionError(value, (args as { siblingData?: { status?: unknown } }).siblingData?.status) : first
+              }) as never,
+            },
+            { name: 'varianceDays', type: 'number', admin: { readOnly: true, description: 'Computed: actual minus planned.' }, hooks: { beforeChange: [computeVariance] } },
+          ],
+        },
+        {
+          name: 'controlTransferredAt',
+          type: 'date',
+          admin: { readOnly: true, description: 'Set by the server when the milestone completes.' },
+          hooks: { beforeChange: [stampWhen('complete')] },
+        },
+        {
+          type: 'row',
+          fields: [
+            { name: 'revenueRecognized', type: 'number', defaultValue: 0, admin: { description: 'Revenue recognized on this milestone (cents).' } },
+            { name: 'invoice', type: 'relationship', relationTo: 'invoices' },
+            { name: 'order', type: 'relationship', relationTo: 'orders' },
+          ],
+        },
+        {
+          type: 'row',
+          fields: [
+            { name: 'acceptanceProtocolDate', type: 'date', admin: { description: 'Bulgaria ZKOD acceptance protocol.' } },
+            { name: 'acceptanceProtocolNumber', type: 'text' },
+          ],
+        },
+        { name: 'notes', type: 'textarea' },
+      ],
+    },
     { name: 'satisfiedAt', type: 'date', admin: { readOnly: true } },
     ...auditFields(),
     notesField(),

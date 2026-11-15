@@ -15,8 +15,8 @@
  * `canonical.currency → doc.currency`, `canonical.status → doc.status`,
  * `canonical.combinedWithContractIds → doc.combinedWithContracts`.
  * Transaction price decomposed per IFRS-15 §47 (fixed + variable + financing
- * component). Contract modifications tracked as immutable amendment records
- * (contract-amendments collection) per IFRS-15 §20; not edited in-place.
+ * component). Amendments (IFRS-15 §20) are `modifications` rows and signatures are `signatures` rows on
+ * the contract itself; milestones are rows on its performance obligations.
  *
  * **Standards & Compliance:**
  * @standard IFRS IFRS-15 §10 contract-with-customer
@@ -40,7 +40,7 @@
  * @example "Bulgarian SaaS contract: C-2026-001 (customer: TechCorp BG, totalValue: 600,000 BGN, currency: BGN, effectiveFrom: 2026-01-15, effectiveTo: 2029-01-14, transactionPriceFixed: 480,000, transactionPriceVariable: 120,000, variableConsiderationMethod: expected_value, status: pending_signatures, paymentTerms: net30, zkodContractNumber: ZKOD-2026-1847, zkodNotarized: true, mandatoryArbitrationClause: true, controlTransferMethod: over_time per IFRS-15 §35 monthly service delivery)"
  * @useCase "Recording contract signing, tracking amendments, recognizing revenue per IFRS-15, reporting to Bulgaria ZKOD registry"
  * @invariant "All contracts must have explicit Incoterms, payment terms, and control-transfer method per IFRS-15 §31-35; status sequence enforced: draft→pending_signatures→pending_approval→active→suspended→completed→terminated"
- * @chain "Contracts (master) → Sales Orders → Invoices → GL Posting (revenue recognition gated by contract-fully-executed event); amendments tracked in contract-amendments collection (IFRS-15 §20)"
+ * @chain "Contracts (master) → Sales Orders → Invoices → GL Posting (revenue recognition gated by contract-fully-executed event); amendments are this contract's modifications rows (IFRS-15 §20)"
  *
  * **Multi-Tenancy & Isolation:**
  * Every contract is tenant-isolated via `multiTenancyField()`. The `customer`
@@ -82,7 +82,7 @@
  * IFRS-15 §31-35: revenue recognized when control transfers, per timing
  * determined by `performanceObligations[].controlTransferMethod` (point-in-time
  * §38 or over-time §35). GL posting rules: upon revenue event, debit AR/bank,
- * credit revenue. Modification events (tracked in contract-amendments) may adjust
+ * credit revenue. Modification events (the modifications rows) may adjust
  * revenue via separate gl-postings. Subscription integration: every SaaS contract
  * may link to one subscription (1:1 optional relationship).
  *
@@ -94,20 +94,117 @@
  * Tax reporting: contract status changes are reported on VAT/tax returns.
  *
  * @see src/ifrs/15/types/index.ts Contract TransactionPrice PerformanceObligation
- * @see src/collections/accounting/contract-amendments.ts
- * @see src/collections/accounting/contract-performance.ts
- * @see src/collections/accounting/contract-signatures.ts
+ * @see src/collections/performance-obligations (milestones)
  */
 
-import type { CollectionConfig } from 'payload'
+import type { CollectionConfig, Field } from 'payload'
+import { validations } from 'payload/shared'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
+import { stampWhen } from '@/hooks/collections/shared/stampWhen'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
+
+// ── The contract's own record of amendments and signatures ──────────────────────────────────────
+// These were two satellite collections (contract-amendments, contract-signatures) pointing at a
+// contract. An amendment is a modification of this contract (IFRS-15 §20) and a signature is a step
+// of its execution, so both live on the contract as rows: one document, one tenant, one audit trail,
+// one version history. The invariants their headers described, and no hook enforced, are rules here.
+
+type Check = (value: unknown, args: never) => string | true | Promise<string | true>
+
+/** The field's own validation, then a rule: a bare `validate` would drop Payload's required and option checks. */
+const andThen =
+  (base: unknown, rule: (value: unknown, args: { data?: unknown; siblingData?: unknown }) => string | true) =>
+  async (value: unknown, args: never): Promise<string | true> => {
+    const first = await (base as Check)(value, args)
+    return first === true ? rule(value, args as { data?: unknown; siblingData?: unknown }) : first
+  }
+
+const time = (value: unknown): number => (value ? new Date(value as string).getTime() : Number.NaN)
+
+/** IFRS-15 §20: an amendment takes effect on or after the contract does. */
+export const amendmentDateError = (modifiedAt: unknown, effectiveFrom: unknown): string | true =>
+  !modifiedAt || !effectiveFrom || time(modifiedAt) >= time(effectiveFrom) ? true : 'An amendment cannot take effect before the contract (effectiveFrom).'
+
+/** IFRS-15 §20: an amendment accounted for as a separate obligation changes the consideration. */
+export const separateObligationError = (priceImpact: unknown, classification: unknown): string | true =>
+  classification !== 'separate_obligation' || Number(priceImpact ?? 0) !== 0 ? true : 'A separate performance obligation changes the price: priceImpact cannot be 0.'
+
+interface SignatureRow {
+  sequence?: number | null
+  status?: string | null
+  signedAt?: string | null
+  rejectedAt?: string | null
+}
+
+/** Signatures are collected in order, 1…N, with no step skipped or repeated. */
+export const signatureSequenceError = (rows: unknown): string | true => {
+  const sequences = (Array.isArray(rows) ? (rows as SignatureRow[]) : []).map((row) => Number(row?.sequence)).sort((a, b) => a - b)
+  return sequences.every((n, i) => n === i + 1) ? true : 'Signature steps run 1…N with no gap or repeat.'
+}
+
+/** IFRS-15 §10: a contract is enforceable, and so active, once every signature is collected. */
+export const activationError = (status: unknown, signatures: unknown): string | true =>
+  status !== 'active' || (Array.isArray(signatures) ? (signatures as SignatureRow[]) : []).every((row) => row?.status === 'signed')
+    ? true
+    : 'A contract becomes active once every signature is collected.'
+
+/** Written only by the e-signature integration, never by a caller. */
+const integrationOnly = { create: () => false, update: () => false }
+
+const SIGNATORY_ROLES = [
+  { label: 'Customer / Client', value: 'customer' },
+  { label: 'Vendor / Supplier', value: 'vendor' },
+  { label: 'Company Authorized Representative', value: 'company_rep' },
+  { label: 'Legal Review', value: 'legal_review' },
+  { label: 'Finance Review', value: 'finance_review' },
+  { label: 'Director / CFO Signature', value: 'director_signature' },
+]
+
+const SIGNATURE_STATUSES = [
+  { label: 'Draft', value: 'draft' },
+  { label: 'Awaiting Signature', value: 'awaiting_signature' },
+  { label: 'Signed', value: 'signed' },
+  { label: 'Rejected', value: 'rejected' },
+  { label: 'Expired', value: 'expired' },
+]
+
+const SIGNATURE_PROVIDERS = [
+  { label: 'DocuSign', value: 'docusign' },
+  { label: 'Adobe Sign', value: 'adobe_sign' },
+  { label: 'HelloSign', value: 'hellosign' },
+  { label: 'Manual / Wet Signature', value: 'manual' },
+  { label: 'Bulgaria EID', value: 'bulgaria_eid' },
+  { label: 'Other', value: 'other' },
+]
+
+const MODIFICATION_REASONS = [
+  { label: 'Scope Increase', value: 'scope_increase' },
+  { label: 'Scope Decrease', value: 'scope_decrease' },
+  { label: 'Pricing Change', value: 'pricing_change' },
+  { label: 'Payment Term Change', value: 'payment_term_change' },
+  { label: 'Warranty Modification', value: 'warranty_modification' },
+  { label: 'Liability Cap Adjustment', value: 'liability_cap_adjustment' },
+  { label: 'Other', value: 'other' },
+]
+
+const IMPACT_CLASSIFICATIONS = [
+  { label: 'Separate Performance Obligation (IFRS-15 §20)', value: 'separate_obligation' },
+  { label: 'Modification Integrated (IFRS-15 §20)', value: 'modification_integrated' },
+  { label: 'Standalone Performance Obligation', value: 'standalone_performance_obligation' },
+]
+
+const APPROVAL_STATUSES = [
+  { label: 'Draft', value: 'draft' },
+  { label: 'Pending Approval', value: 'pending_approval' },
+  { label: 'Approved', value: 'approved' },
+  { label: 'Rejected', value: 'rejected' },
+]
 
 const Contracts: CollectionConfig = {
   slug: 'contracts',
@@ -208,28 +305,114 @@ const Contracts: CollectionConfig = {
       admin: { description: 'IFRS 15 §22 distinct performance obligations.' },
     },
     {
+      // The amendments (formerly the contract-amendments collection): each row is one modification.
       name: 'modifications',
       type: 'array',
-      admin: { description: 'IFRS 15 §B47 / ASC 606-10-25-13 contract modifications.' },
+      admin: { description: 'IFRS 15 §20 / §B47 / ASC 606-10-25-13 contract modifications (amendments).' },
       fields: [
-        { name: 'modifiedAt', type: 'date', required: true },
-        { name: 'description', type: 'textarea', localized: true, required: true },
-        { name: 'priceImpact', type: 'number' },
+        {
+          name: 'modifiedAt',
+          type: 'date',
+          required: true,
+          admin: { description: 'When the amendment takes effect (not before effectiveFrom).' },
+          validate: andThen(validations.date, (value, { data }) => amendmentDateError(value, (data as { effectiveFrom?: unknown })?.effectiveFrom)) as never,
+        },
+        { name: 'description', type: 'textarea', localized: true, required: true, admin: { description: 'What the amendment does (e.g. "Price increase to 6k BGN/month").' } },
+        { name: 'reason', type: 'select', options: MODIFICATION_REASONS },
+        {
+          name: 'classification',
+          type: 'select',
+          options: IMPACT_CLASSIFICATIONS,
+          admin: { description: 'IFRS-15 §20: a separate obligation, or integrated into this contract.' },
+        },
+        {
+          name: 'priceImpact',
+          type: 'number',
+          admin: { description: 'Signed change in consideration (cents), in the contract currency.' },
+          validate: andThen(validations.number, (value, { siblingData }) =>
+            separateObligationError(value, (siblingData as { classification?: unknown })?.classification),
+          ) as never,
+        },
+        { name: 'originalTerms', type: 'textarea', admin: { description: 'The terms before the amendment.' } },
+        { name: 'newTerms', type: 'textarea', admin: { description: 'The terms after it.' } },
+        {
+          type: 'row',
+          fields: [
+            { name: 'plannedCompletionDate', type: 'date', admin: { description: 'Completion as planned before the amendment.' } },
+            { name: 'revisedCompletionDate', type: 'date', admin: { description: 'Completion as revised by it.' } },
+          ],
+        },
+        { name: 'approvalStatus', type: 'select', options: APPROVAL_STATUSES, defaultValue: 'draft' },
+        { name: 'approvedBy', type: 'relationship', relationTo: 'users' },
         { name: 'modifiedBy', type: 'relationship', relationTo: 'users' },
+        {
+          type: 'row',
+          fields: [
+            { name: 'notarized', type: 'checkbox', defaultValue: false, admin: { description: 'Bulgaria ZKOD: notarized (amendments over 10k BGN).' } },
+            { name: 'notaryReference', type: 'text', admin: { description: 'Notarization certificate number.' } },
+            { name: 'mandatoryArbitration', type: 'checkbox', defaultValue: false, admin: { description: 'Labor Code Art. 331 clause present.' } },
+          ],
+        },
       ],
     },
-    statusField(
-      [
-        { label: 'Draft', value: 'draft' },
-        { label: 'Pending Approval', value: 'pending_approval' },
-        { label: 'Pending Signatures', value: 'pending_signatures' },
-        { label: 'Active', value: 'active' },
-        { label: 'Suspended', value: 'suspended' },
-        { label: 'Completed', value: 'completed' },
-        { label: 'Terminated', value: 'terminated' },
+    {
+      // The execution record (formerly the contract-signatures collection): one row per signing step.
+      name: 'signatures',
+      type: 'array',
+      admin: { description: 'Signing steps, in order. The contract becomes active once every step is signed (IFRS-15 §10).' },
+      validate: andThen(validations.array, (value) => signatureSequenceError(value)) as never,
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'sequence', type: 'number', required: true, min: 1, admin: { description: 'Step 1…N.' } },
+            { name: 'role', type: 'select', required: true, options: SIGNATORY_ROLES },
+            { name: 'status', type: 'select', required: true, defaultValue: 'draft', options: SIGNATURE_STATUSES },
+          ],
+        },
+        {
+          type: 'row',
+          fields: [
+            { name: 'name', type: 'text', required: true },
+            { name: 'email', type: 'email' },
+            { name: 'title', type: 'text' },
+          ],
+        },
+        { name: 'provider', type: 'select', options: SIGNATURE_PROVIDERS },
+        { name: 'signedAt', type: 'date', admin: { readOnly: true, description: 'Set by the server when the step is signed.' }, hooks: { beforeChange: [stampWhen('signed')] } },
+        // evidence the e-signature integration writes; a caller cannot claim it
+        { name: 'verificationUrl', type: 'text', access: integrationOnly, admin: { readOnly: true } },
+        { name: 'certificateVerified', type: 'checkbox', access: integrationOnly, admin: { readOnly: true } },
+        { name: 'documentLink', type: 'text', access: integrationOnly, admin: { readOnly: true } },
+        { name: 'eidVerified', type: 'checkbox', access: integrationOnly, admin: { readOnly: true, description: 'Bulgaria eID verified.' } },
+        {
+          type: 'row',
+          fields: [
+            { name: 'notarized', type: 'checkbox', defaultValue: false, admin: { description: 'Bulgaria ZKOD: notarized.' } },
+            { name: 'notaryReference', type: 'text' },
+            { name: 'arbitrationAttested', type: 'checkbox', defaultValue: false, admin: { description: 'Labor Code Art. 331 attested.' } },
+          ],
+        },
+        { name: 'rejectionReason', type: 'textarea', admin: { condition: (_data, sibling) => sibling?.status === 'rejected' } },
+        { name: 'rejectedAt', type: 'date', admin: { readOnly: true }, hooks: { beforeChange: [stampWhen('rejected')] } },
+        { name: 'comments', type: 'textarea' },
       ],
-      'draft',
-    ),
+    },
+    {
+      ...statusField(
+        [
+          { label: 'Draft', value: 'draft' },
+          { label: 'Pending Approval', value: 'pending_approval' },
+          { label: 'Pending Signatures', value: 'pending_signatures' },
+          { label: 'Active', value: 'active' },
+          { label: 'Suspended', value: 'suspended' },
+          { label: 'Completed', value: 'completed' },
+          { label: 'Terminated', value: 'terminated' },
+        ],
+        'draft',
+      ),
+      validate: andThen(validations.select, (value, { data }) => activationError(value, (data as { signatures?: unknown })?.signatures)) as never,
+    } as Field,
     { name: 'activatedAt', type: 'date', admin: { readOnly: true } },
     { name: 'terminatedAt', type: 'date', admin: { readOnly: true } },
     { name: 'subscription', type: 'relationship', relationTo: 'subscriptions', admin: { description: 'Linked subscription (if SaaS).' } },

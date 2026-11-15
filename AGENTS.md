@@ -100,7 +100,7 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
 
 | Where | Runs |
 | --- | --- |
-| pre-commit (`.husky`) | Payload types + import map when `src/**/*.ts` is staged; the proof record and its README lines when a `.lean` file is staged (with `lean` on PATH); the release manifest when `src/` is staged; package ranges + lockfile when `package.json` or `pnpm-workspace.yaml` is staged |
+| pre-commit (`.husky`) | Payload types + import map when `src/**/*.ts` is staged; the proof record and its README lines when a `.lean` file is staged (with `lean` on PATH); the release manifest when `src/` is staged, and the lockfile after it (a package that imports something new gains a dependency); package ranges + lockfile when `package.json` or `pnpm-workspace.yaml` is staged |
 | pre-push | `pnpm lint` · `pnpm typecheck` |
 | CI (`.github/workflows/ci.yml`) | standards banner · lint · typecheck · tests ×4 (shard 2 runs `release.mjs --check`) · Playwright smoke · Lean proofs · migrations (from empty, no drift) · Worker (OpenNext build served by `wrangler dev --local`; `scripts/smoke.mjs` is a thin MCP client of it: first user, API key, tools/list, a read, a failed call recorded as a gap) · lean build |
 | Cloudflare Workers Builds (dashboard) | on `main`: build, `payload migrate` on production D1, deploy. Its check on a PR branch fails at once and is not required |

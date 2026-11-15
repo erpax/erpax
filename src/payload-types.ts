@@ -302,6 +302,7 @@ export interface Config {
     parties: Party;
     'payment-allocations': PaymentAllocation;
     'payment-runs': PaymentRun;
+    'performance-obligations': PerformanceObligation;
     'project-milestones': ProjectMilestone;
     receipts: Receipt;
     returns: Return;
@@ -313,7 +314,6 @@ export interface Config {
     'usage-records': UsageRecord;
     'vendor-scorecards': VendorScorecard;
     commitments: Commitment;
-    'contract-performance': ContractPerformance;
     'account-reconciliations': AccountReconciliation;
     'audit-reports': AuditReport;
     'bank-accounts': BankAccount;
@@ -427,14 +427,11 @@ export interface Config {
     spaces: Space;
     'budget-planning': BudgetPlanning;
     contracts: Contract;
-    'performance-obligations': PerformanceObligation;
     'project-tasks': ProjectTask;
     projects: Project;
     'recurring-journals': RecurringJournal;
     'workflow-definitions': WorkflowDefinition;
     'workflow-instances': WorkflowInstance;
-    'contract-amendments': ContractAmendment;
-    'contract-signatures': ContractSignature;
     chat: Chat;
     connections: Connection;
     messages: Message1;
@@ -541,6 +538,7 @@ export interface Config {
     parties: PartiesSelect<false> | PartiesSelect<true>;
     'payment-allocations': PaymentAllocationsSelect<false> | PaymentAllocationsSelect<true>;
     'payment-runs': PaymentRunsSelect<false> | PaymentRunsSelect<true>;
+    'performance-obligations': PerformanceObligationsSelect<false> | PerformanceObligationsSelect<true>;
     'project-milestones': ProjectMilestonesSelect<false> | ProjectMilestonesSelect<true>;
     receipts: ReceiptsSelect<false> | ReceiptsSelect<true>;
     returns: ReturnsSelect<false> | ReturnsSelect<true>;
@@ -552,7 +550,6 @@ export interface Config {
     'usage-records': UsageRecordsSelect<false> | UsageRecordsSelect<true>;
     'vendor-scorecards': VendorScorecardsSelect<false> | VendorScorecardsSelect<true>;
     commitments: CommitmentsSelect<false> | CommitmentsSelect<true>;
-    'contract-performance': ContractPerformanceSelect<false> | ContractPerformanceSelect<true>;
     'account-reconciliations': AccountReconciliationsSelect<false> | AccountReconciliationsSelect<true>;
     'audit-reports': AuditReportsSelect<false> | AuditReportsSelect<true>;
     'bank-accounts': BankAccountsSelect<false> | BankAccountsSelect<true>;
@@ -666,14 +663,11 @@ export interface Config {
     spaces: SpacesSelect<false> | SpacesSelect<true>;
     'budget-planning': BudgetPlanningSelect<false> | BudgetPlanningSelect<true>;
     contracts: ContractsSelect<false> | ContractsSelect<true>;
-    'performance-obligations': PerformanceObligationsSelect<false> | PerformanceObligationsSelect<true>;
     'project-tasks': ProjectTasksSelect<false> | ProjectTasksSelect<true>;
     projects: ProjectsSelect<false> | ProjectsSelect<true>;
     'recurring-journals': RecurringJournalsSelect<false> | RecurringJournalsSelect<true>;
     'workflow-definitions': WorkflowDefinitionsSelect<false> | WorkflowDefinitionsSelect<true>;
     'workflow-instances': WorkflowInstancesSelect<false> | WorkflowInstancesSelect<true>;
-    'contract-amendments': ContractAmendmentsSelect<false> | ContractAmendmentsSelect<true>;
-    'contract-signatures': ContractSignaturesSelect<false> | ContractSignaturesSelect<true>;
     chat: ChatSelect<false> | ChatSelect<true>;
     connections: ConnectionsSelect<false> | ConnectionsSelect<true>;
     messages: MessagesSelect<false> | MessagesSelect<true>;
@@ -4425,14 +4419,110 @@ export interface Contract {
     totalDocs?: number;
   };
   /**
-   * IFRS 15 §B47 / ASC 606-10-25-13 contract modifications.
+   * IFRS 15 §20 / §B47 / ASC 606-10-25-13 contract modifications (amendments).
    */
   modifications?:
     | {
+        /**
+         * When the amendment takes effect (not before effectiveFrom).
+         */
         modifiedAt: string;
+        /**
+         * What the amendment does (e.g. "Price increase to 6k BGN/month").
+         */
         description: string;
+        reason?:
+          | (
+              | 'scope_increase'
+              | 'scope_decrease'
+              | 'pricing_change'
+              | 'payment_term_change'
+              | 'warranty_modification'
+              | 'liability_cap_adjustment'
+              | 'other'
+            )
+          | null;
+        /**
+         * IFRS-15 §20: a separate obligation, or integrated into this contract.
+         */
+        classification?:
+          ('separate_obligation' | 'modification_integrated' | 'standalone_performance_obligation') | null;
+        /**
+         * Signed change in consideration (cents), in the contract currency.
+         */
         priceImpact?: number | null;
+        /**
+         * The terms before the amendment.
+         */
+        originalTerms?: string | null;
+        /**
+         * The terms after it.
+         */
+        newTerms?: string | null;
+        /**
+         * Completion as planned before the amendment.
+         */
+        plannedCompletionDate?: string | null;
+        /**
+         * Completion as revised by it.
+         */
+        revisedCompletionDate?: string | null;
+        approvalStatus?: ('draft' | 'pending_approval' | 'approved' | 'rejected') | null;
+        approvedBy?: (string | null) | User;
         modifiedBy?: (string | null) | User;
+        /**
+         * Bulgaria ZKOD: notarized (amendments over 10k BGN).
+         */
+        notarized?: boolean | null;
+        /**
+         * Notarization certificate number.
+         */
+        notaryReference?: string | null;
+        /**
+         * Labor Code Art. 331 clause present.
+         */
+        mandatoryArbitration?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Signing steps, in order. The contract becomes active once every step is signed (IFRS-15 §10).
+   */
+  signatures?:
+    | {
+        /**
+         * Step 1…N.
+         */
+        sequence: number;
+        role: 'customer' | 'vendor' | 'company_rep' | 'legal_review' | 'finance_review' | 'director_signature';
+        status: 'draft' | 'awaiting_signature' | 'signed' | 'rejected' | 'expired';
+        name: string;
+        email?: string | null;
+        title?: string | null;
+        provider?: ('docusign' | 'adobe_sign' | 'hellosign' | 'manual' | 'bulgaria_eid' | 'other') | null;
+        /**
+         * Set by the server when the step is signed.
+         */
+        signedAt?: string | null;
+        verificationUrl?: string | null;
+        certificateVerified?: boolean | null;
+        documentLink?: string | null;
+        /**
+         * Bulgaria eID verified.
+         */
+        eidVerified?: boolean | null;
+        /**
+         * Bulgaria ZKOD: notarized.
+         */
+        notarized?: boolean | null;
+        notaryReference?: string | null;
+        /**
+         * Labor Code Art. 331 attested.
+         */
+        arbitrationAttested?: boolean | null;
+        rejectionReason?: string | null;
+        rejectedAt?: string | null;
+        comments?: string | null;
         id?: string | null;
       }[]
     | null;
@@ -4537,6 +4627,43 @@ export interface PerformanceObligation {
    */
   percentComplete?: number | null;
   status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
+  /**
+   * IFRS-15 §31-38: the steps that transfer control, each with its acceptance evidence.
+   */
+  milestones?:
+    | {
+        sequence: number;
+        title: string;
+        status: 'not_started' | 'in_progress' | 'complete' | 'on_hold' | 'failed';
+        /**
+         * The objective evidence that control transferred.
+         */
+        acceptanceCriteria: string;
+        plannedCompletionDate: string;
+        actualCompletionDate?: string | null;
+        /**
+         * Computed: actual minus planned.
+         */
+        varianceDays?: number | null;
+        /**
+         * Set by the server when the milestone completes.
+         */
+        controlTransferredAt?: string | null;
+        /**
+         * Revenue recognized on this milestone (cents).
+         */
+        revenueRecognized?: number | null;
+        invoice?: (string | null) | Invoice;
+        order?: (string | null) | Order;
+        /**
+         * Bulgaria ZKOD acceptance protocol.
+         */
+        acceptanceProtocolDate?: string | null;
+        acceptanceProtocolNumber?: string | null;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   satisfiedAt?: string | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
@@ -10239,110 +10366,6 @@ export interface Commitment {
    * Approver comments on authorization
    */
   approvalComments?: string | null;
-  handle?: string | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contract-performance".
- */
-export interface ContractPerformance {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Parent contract (IFRS-15 §10)
-   */
-  contract: string | Contract;
-  /**
-   * Index into contract.performanceObligations array (IFRS-15 §22)
-   */
-  performanceObligationIndex?: number | null;
-  /**
-   * Display name (e.g., "SaaS setup", "monthly service delivery", "training completion")
-   */
-  milestoneTitle: string;
-  /**
-   * Ordinal position in contract fulfillment sequence
-   */
-  milestoneSequence: number;
-  /**
-   * Objective evidence of control transfer per IFRS-15 §31 (e.g., "customer signed acceptance", "service live in production", "all deliverables shipped")
-   */
-  acceptanceCriteria: string;
-  /**
-   * IFRS-15 §31-35: point-in-time (§38) or over-time (§35) revenue recognition
-   */
-  controlTransferMethod: 'point_in_time' | 'over_time';
-  /**
-   * Originally scheduled completion date
-   */
-  plannedCompletionDate: string;
-  /**
-   * Actual date milestone was completed (must be >= plannedCompletionDate)
-   */
-  actualCompletionDate?: string | null;
-  /**
-   * Days variance (positive = late, negative = early, auto-calculated)
-   */
-  completionDateVarianceDays?: number | null;
-  /**
-   * Fulfillment lifecycle status
-   */
-  completionStatus: 'not_started' | 'in_progress' | 'complete' | 'on_hold' | 'failed';
-  /**
-   * Timestamp when control transferred to customer (IFRS-15 §31 event)
-   */
-  controlTransferredAt?: string | null;
-  /**
-   * Invoice created upon revenue recognition (null until revenue recognized)
-   */
-  associatedInvoice?: (string | null) | Invoice;
-  /**
-   * Amount of revenue recognized in cents (IFRS-15 recognition)
-   */
-  revenueRecognizedAmount?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Timestamp when revenue was formally recognized (per IFRS-15 §31/35)
-   */
-  revenueRecognizedAt?: string | null;
-  /**
-   * Associated sales order (pre-contract commitment phase)
-   */
-  associatedSalesOrder?: (string | null) | Order;
-  zkod?: {
-    /**
-     * Date of formal acceptance protocol (Bulgaria contract registry)
-     */
-    zkodAcceptanceProtocolDate?: string | null;
-    /**
-     * Notarized acceptance protocol number (Bulgaria ZKOD reference)
-     */
-    zkodAcceptanceProtocolNumber?: string | null;
-    /**
-     * Mandatory arbitration clause per Bulgaria Labor Code Art. 331 (for performance milestones involving employees)
-     */
-    mandatoryArbitration?: boolean | null;
-  };
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  /**
-   * Internal notes on milestone completion, issues, variance explanations
-   */
-  performanceNotes?: string | null;
   handle?: string | null;
   updatedBy?: {
     relationTo: 'users';
@@ -17623,217 +17646,6 @@ export interface WorkflowInstance {
   createdAt: string;
 }
 /**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contract-amendments".
- */
-export interface ContractAmendment {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Display title for this amendment (e.g., "Price increase to 6k BGN/month")
-   */
-  amendmentTitle: string;
-  /**
-   * Parent contract being amended (IFRS-15 §10)
-   */
-  contract: string | Contract;
-  /**
-   * Effective date of the amendment (must be >= contract.effectiveFrom)
-   */
-  amendmentDate: string;
-  /**
-   * Classification of the modification type
-   */
-  modificationReason:
-    | 'scope_increase'
-    | 'scope_decrease'
-    | 'pricing_change'
-    | 'payment_term_change'
-    | 'warranty_modification'
-    | 'liability_cap_adjustment'
-    | 'other';
-  /**
-   * Snapshot of original contract terms (scope, pricing, payment terms, key clauses)
-   */
-  originalTermsSummary: string;
-  /**
-   * Description of new terms after amendment (changes to scope, pricing, payment, etc.)
-   */
-  newEffectiveTerms: string;
-  /**
-   * Signed amount in cents. Positive = revenue increase; negative = revenue decrease. IFRS-15 §20 consideration adjustment.
-   */
-  revenueImpactAmount: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * IFRS-15 §20 classification: determines whether amendment is a separate PO or integrated into the original contract.
-   */
-  impactClassification: 'separate_obligation' | 'modification_integrated' | 'standalone_performance_obligation';
-  varianceAnalysis?: {
-    /**
-     * Originally planned completion date (pre-amendment)
-     */
-    plannedCompletionDate?: string | null;
-    /**
-     * Revised completion date post-amendment
-     */
-    revisedCompletionDate?: string | null;
-    /**
-     * Days of variance (positive = extension, negative = acceleration)
-     */
-    completionDateVarianceDays?: number | null;
-  };
-  /**
-   * Amendment lifecycle status
-   */
-  approvalStatus: 'draft' | 'pending_approval' | 'approved' | 'rejected';
-  zkod?: {
-    /**
-     * Amendment notarized per Bulgaria contract registry requirements. Mandatory for amendments > 10k BGN.
-     */
-    zkodNotarized?: boolean | null;
-    /**
-     * Notarization certificate number (Bulgaria notary archive reference)
-     */
-    zkodNotaryReference?: string | null;
-    /**
-     * Bulgaria Labor Code Art. 331: mandatory arbitration clause present in amendment. Required for employment-related amendments.
-     */
-    mandatoryArbitration?: boolean | null;
-  };
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  /**
-   * Internal accounting notes on the amendment (not visible to customer)
-   */
-  internalNotes?: string | null;
-  handle?: string | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contract-signatures".
- */
-export interface ContractSignature {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Display title (auto-generated from contract + signatory)
-   */
-  signatureTitle: string;
-  /**
-   * Parent contract being signed (IFRS-15 §10 execution)
-   */
-  contract: string | Contract;
-  /**
-   * Position in approval chain (1-N, must be sequential)
-   */
-  signatureSequence: number;
-  /**
-   * Signatory type in the approval chain
-   */
-  signatoryRole: 'customer' | 'vendor' | 'company_rep' | 'legal_review' | 'finance_review' | 'director_signature';
-  /**
-   * Full legal name of the signer
-   */
-  signatoryName: string;
-  /**
-   * Email address for e-signature provider invitation
-   */
-  signatoryEmail?: string | null;
-  /**
-   * Job title or authorization level (e.g., "Director", "General Counsel")
-   */
-  signatoryTitle?: string | null;
-  /**
-   * Signature lifecycle status
-   */
-  signatureStatus: 'draft' | 'awaiting_signature' | 'signed' | 'rejected' | 'expired';
-  /**
-   * When signature was actually collected (SOX §302 audit trail)
-   */
-  signatureTimestamp?: string | null;
-  /**
-   * E-signature platform or manual signature method
-   */
-  signatureProvider?: ('docusign' | 'adobe_sign' | 'hellosign' | 'manual' | 'bulgaria_eid' | 'other') | null;
-  /**
-   * Link to e-signature provider for verification (e.g., DocuSign envelope link)
-   */
-  signatureVerificationUrl?: string | null;
-  /**
-   * Digital signature cryptographically verified by provider
-   */
-  digitalCertificateVerified?: boolean | null;
-  /**
-   * R2 path to signed PDF copy (audit evidence)
-   */
-  pdfStorageLink?: string | null;
-  rejectionInfo?: {
-    /**
-     * Reason for rejection (if applicable)
-     */
-    rejectionReason?: string | null;
-    /**
-     * User who rejected (if applicable)
-     */
-    rejectedBy?: (string | null) | User;
-    /**
-     * Rejection timestamp
-     */
-    rejectedAt?: string | null;
-  };
-  zkod?: {
-    /**
-     * Signature notarized per Bulgaria ZKOD requirements (required for contracts > 10k BGN)
-     */
-    zkodNotarized?: boolean | null;
-    /**
-     * Notary certificate or registration number (Bulgaria)
-     */
-    zkodNotaryReference?: string | null;
-    /**
-     * Signer attested to mandatory arbitration clause per Bulgaria Labor Code Art. 331
-     */
-    mandatoryArbitrationAttested?: boolean | null;
-    /**
-     * Signature verified against Bulgaria EID or EIDAS certificate
-     */
-    bulgariaEidVerified?: boolean | null;
-  };
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  /**
-   * Internal comments on the signature (e.g., "director approval pending legal review")
-   */
-  approvalComments?: string | null;
-  handle?: string | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * The agent-society room, native to Payload — each row is a content-addressed agent event (ErpaxEvent envelope), scoped per-tenant (the room). The akashic chat history; replaces the external chat.erpax.com Durable Object. Distinct from `messages` (user mail).
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -21799,6 +21611,55 @@ export interface PaymentRunsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "performance-obligations_select".
+ */
+export interface PerformanceObligationsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  contract?: T;
+  description?: T;
+  kind?: T;
+  recognitionTiming?: T;
+  overTimeMeasurement?: T;
+  measurementKind?: T;
+  recognitionMethod?: T;
+  standaloneSellingPrice?: T;
+  currency?: T;
+  allocatedAmount?: T;
+  recognisedToDate?: T;
+  percentComplete?: T;
+  status?: T;
+  milestones?:
+    | T
+    | {
+        sequence?: T;
+        title?: T;
+        status?: T;
+        acceptanceCriteria?: T;
+        plannedCompletionDate?: T;
+        actualCompletionDate?: T;
+        varianceDays?: T;
+        controlTransferredAt?: T;
+        revenueRecognized?: T;
+        invoice?: T;
+        order?: T;
+        acceptanceProtocolDate?: T;
+        acceptanceProtocolNumber?: T;
+        notes?: T;
+        id?: T;
+      };
+  satisfiedAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  handle?: T;
+  updatedBy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "project-milestones_select".
  */
 export interface ProjectMilestonesSelect<T extends boolean = true> {
@@ -22182,45 +22043,6 @@ export interface CommitmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   approvalComments?: T;
-  handle?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contract-performance_select".
- */
-export interface ContractPerformanceSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  contract?: T;
-  performanceObligationIndex?: T;
-  milestoneTitle?: T;
-  milestoneSequence?: T;
-  acceptanceCriteria?: T;
-  controlTransferMethod?: T;
-  plannedCompletionDate?: T;
-  actualCompletionDate?: T;
-  completionDateVarianceDays?: T;
-  completionStatus?: T;
-  controlTransferredAt?: T;
-  associatedInvoice?: T;
-  revenueRecognizedAmount?: T;
-  currency?: T;
-  revenueRecognizedAt?: T;
-  associatedSalesOrder?: T;
-  zkod?:
-    | T
-    | {
-        zkodAcceptanceProtocolDate?: T;
-        zkodAcceptanceProtocolNumber?: T;
-        mandatoryArbitration?: T;
-      };
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  performanceNotes?: T;
   handle?: T;
   updatedBy?: T;
   updatedAt?: T;
@@ -26926,8 +26748,42 @@ export interface ContractsSelect<T extends boolean = true> {
     | {
         modifiedAt?: T;
         description?: T;
+        reason?: T;
+        classification?: T;
         priceImpact?: T;
+        originalTerms?: T;
+        newTerms?: T;
+        plannedCompletionDate?: T;
+        revisedCompletionDate?: T;
+        approvalStatus?: T;
+        approvedBy?: T;
         modifiedBy?: T;
+        notarized?: T;
+        notaryReference?: T;
+        mandatoryArbitration?: T;
+        id?: T;
+      };
+  signatures?:
+    | T
+    | {
+        sequence?: T;
+        role?: T;
+        status?: T;
+        name?: T;
+        email?: T;
+        title?: T;
+        provider?: T;
+        signedAt?: T;
+        verificationUrl?: T;
+        certificateVerified?: T;
+        documentLink?: T;
+        eidVerified?: T;
+        notarized?: T;
+        notaryReference?: T;
+        arbitrationAttested?: T;
+        rejectionReason?: T;
+        rejectedAt?: T;
+        comments?: T;
         id?: T;
       };
   status?: T;
@@ -26941,36 +26797,6 @@ export interface ContractsSelect<T extends boolean = true> {
         zkodNotarized?: T;
         mandatoryArbitrationClause?: T;
       };
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  handle?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "performance-obligations_select".
- */
-export interface PerformanceObligationsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  contract?: T;
-  description?: T;
-  kind?: T;
-  recognitionTiming?: T;
-  overTimeMeasurement?: T;
-  measurementKind?: T;
-  recognitionMethod?: T;
-  standaloneSellingPrice?: T;
-  currency?: T;
-  allocatedAmount?: T;
-  recognisedToDate?: T;
-  percentComplete?: T;
-  status?: T;
-  satisfiedAt?: T;
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
@@ -27183,90 +27009,6 @@ export interface WorkflowInstancesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
-  handle?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contract-amendments_select".
- */
-export interface ContractAmendmentsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  amendmentTitle?: T;
-  contract?: T;
-  amendmentDate?: T;
-  modificationReason?: T;
-  originalTermsSummary?: T;
-  newEffectiveTerms?: T;
-  revenueImpactAmount?: T;
-  currency?: T;
-  impactClassification?: T;
-  varianceAnalysis?:
-    | T
-    | {
-        plannedCompletionDate?: T;
-        revisedCompletionDate?: T;
-        completionDateVarianceDays?: T;
-      };
-  approvalStatus?: T;
-  zkod?:
-    | T
-    | {
-        zkodNotarized?: T;
-        zkodNotaryReference?: T;
-        mandatoryArbitration?: T;
-      };
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  internalNotes?: T;
-  handle?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contract-signatures_select".
- */
-export interface ContractSignaturesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  signatureTitle?: T;
-  contract?: T;
-  signatureSequence?: T;
-  signatoryRole?: T;
-  signatoryName?: T;
-  signatoryEmail?: T;
-  signatoryTitle?: T;
-  signatureStatus?: T;
-  signatureTimestamp?: T;
-  signatureProvider?: T;
-  signatureVerificationUrl?: T;
-  digitalCertificateVerified?: T;
-  pdfStorageLink?: T;
-  rejectionInfo?:
-    | T
-    | {
-        rejectionReason?: T;
-        rejectedBy?: T;
-        rejectedAt?: T;
-      };
-  zkod?:
-    | T
-    | {
-        zkodNotarized?: T;
-        zkodNotaryReference?: T;
-        mandatoryArbitrationAttested?: T;
-        bulgariaEidVerified?: T;
-      };
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  approvalComments?: T;
   handle?: T;
   updatedBy?: T;
   updatedAt?: T;
@@ -28989,6 +28731,7 @@ export interface CollectionQueryWidget {
       | 'parties'
       | 'payment-allocations'
       | 'payment-runs'
+      | 'performance-obligations'
       | 'project-milestones'
       | 'receipts'
       | 'returns'
@@ -29000,7 +28743,6 @@ export interface CollectionQueryWidget {
       | 'usage-records'
       | 'vendor-scorecards'
       | 'commitments'
-      | 'contract-performance'
       | 'account-reconciliations'
       | 'audit-reports'
       | 'bank-accounts'
@@ -29114,14 +28856,11 @@ export interface CollectionQueryWidget {
       | 'spaces'
       | 'budget-planning'
       | 'contracts'
-      | 'performance-obligations'
       | 'project-tasks'
       | 'projects'
       | 'recurring-journals'
       | 'workflow-definitions'
       | 'workflow-instances'
-      | 'contract-amendments'
-      | 'contract-signatures'
       | 'chat'
       | 'connections'
       | 'messages'
@@ -29213,6 +28952,7 @@ export interface ActivityWidget {
           | 'parties'
           | 'payment-allocations'
           | 'payment-runs'
+          | 'performance-obligations'
           | 'project-milestones'
           | 'receipts'
           | 'returns'
@@ -29224,7 +28964,6 @@ export interface ActivityWidget {
           | 'usage-records'
           | 'vendor-scorecards'
           | 'commitments'
-          | 'contract-performance'
           | 'account-reconciliations'
           | 'audit-reports'
           | 'bank-accounts'
@@ -29338,14 +29077,11 @@ export interface ActivityWidget {
           | 'spaces'
           | 'budget-planning'
           | 'contracts'
-          | 'performance-obligations'
           | 'project-tasks'
           | 'projects'
           | 'recurring-journals'
           | 'workflow-definitions'
           | 'workflow-instances'
-          | 'contract-amendments'
-          | 'contract-signatures'
           | 'chat'
           | 'connections'
           | 'messages'
@@ -29463,6 +29199,7 @@ export interface TaskCreateCollectionExport {
       | 'parties'
       | 'payment-allocations'
       | 'payment-runs'
+      | 'performance-obligations'
       | 'project-milestones'
       | 'receipts'
       | 'returns'
@@ -29474,7 +29211,6 @@ export interface TaskCreateCollectionExport {
       | 'usage-records'
       | 'vendor-scorecards'
       | 'commitments'
-      | 'contract-performance'
       | 'account-reconciliations'
       | 'audit-reports'
       | 'bank-accounts'
@@ -29588,14 +29324,11 @@ export interface TaskCreateCollectionExport {
       | 'spaces'
       | 'budget-planning'
       | 'contracts'
-      | 'performance-obligations'
       | 'project-tasks'
       | 'projects'
       | 'recurring-journals'
       | 'workflow-definitions'
       | 'workflow-instances'
-      | 'contract-amendments'
-      | 'contract-signatures'
       | 'chat'
       | 'connections'
       | 'messages'
