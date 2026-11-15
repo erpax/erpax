@@ -1,0 +1,46 @@
+diff --git a/dist/sqlite/insert.js b/dist/sqlite/insert.js
+index 8a0a81cf95e5a78d0ad73e224ca53318a941f326..1422eea0917c68885ce955b1d6a19dd6f6bdd6d6 100644
+--- a/dist/sqlite/insert.js
++++ b/dist/sqlite/insert.js
+@@ -1,6 +1,39 @@
+-import { getTableColumns } from 'drizzle-orm';
+-export const insert = async function({ db, onConflictDoUpdate, tableName, values }) {
++import { getTableColumns, SQL, sql } from 'drizzle-orm';
++/**
++ * Patched by erpax with payloadcms/payload#18239 (the fix for #14766) until it is released.
++ * Adapters with `limitedBoundParameters` (D1) allow at most 100 bound parameters per statement.
++ * `INSERT ... ON CONFLICT ... DO UPDATE SET` binds every column twice, once in VALUES and once in
++ * SET, so a single-row upsert overflows the limit on any table wider than 50 columns. Setting each
++ * column from SQLite's `excluded` row binds it once and keeps the upsert identical.
++ */ const withExcludedSet = (onConflictDoUpdate, table, values)=>{
++    if (!onConflictDoUpdate.set) {
++        return onConflictDoUpdate;
++    }
++    const rows = Array.isArray(values) ? values : [
++        values
++    ];
++    const set = Object.fromEntries(Object.entries(onConflictDoUpdate.set).map(([key, value])=>{
++        const column = table[key];
++        // Values that are already SQL, and columns absent from the inserted row(s), stay bound as-is.
++        if (value instanceof SQL || !column || !rows.every((row)=>row && key in row)) {
++            return [
++                key,
++                value
++            ];
++        }
++        return [
++            key,
++            sql.raw(`excluded."${column.name.replaceAll('"', '""')}"`)
++        ];
++    }));
++    return {
++        ...onConflictDoUpdate,
++        set
++    };
++};
++export const insert = async function({ db, onConflictDoUpdate: requested, tableName, values }) {
+     const table = this.tables[tableName];
++    const onConflictDoUpdate = this.limitedBoundParameters ? requested && withExcludedSet(requested, table, values) || requested : requested;
+     // Batch insert if limitedBoundParameters: true
+     if (this.limitedBoundParameters && Array.isArray(values)) {
+         const results = [];
