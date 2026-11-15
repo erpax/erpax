@@ -76,4 +76,11 @@ describe('uuid', () => {
     expect(b.fields!).toHaveLength(1) // untouched
     expect((c.fields![0] as { name: string }).name).toBe('uuid')
   })
+
+  it('shows the computed uuid only to someone signed in (the anonymous first-user form stays email and password)', () => {
+    const result = apply({ collections: [{ slug: 'things', fields: [] }] })
+    const uuid = result.collections?.[0]?.fields.find((f) => 'name' in f && f.name === 'uuid') as { admin?: { condition?: (...args: unknown[]) => boolean } }
+    expect(uuid.admin?.condition?.({}, {}, { user: null })).toBe(false)
+    expect(uuid.admin?.condition?.({}, {}, { user: { id: 'u1' } })).toBe(true)
+  })
 })

@@ -133,14 +133,21 @@ export const Users: CollectionConfig = {
     // independent of the per-worker in-memory endpoint throttle.
     maxLoginAttempts: 5,
     lockTime: 900000, // 15 minutes
-    // With no outbound email configured, avoid verification (and the send on create/first-user).
-    // Set `RESEND_API_KEY` to enable verify + verification emails.
-    verify: Boolean(process.env.RESEND_API_KEY?.trim()),
+    // No email verification. It was on wherever RESEND_API_KEY was set, and `verify` adds columns
+    // (`_verified`, `_verificationToken`): the schema then depended on an environment variable, the
+    // migrations were generated without the key, and production (with it) could create no user at all
+    // (`no column named _verified`). Users are created by an admin or are the owner, so there is no
+    // sign-up to verify; forgot-password still mails through Resend.
+    verify: false,
   },
   endpoints: [externalUsersLogin],
   // The first user is super-admin by definition: its form asks for credentials only, and every other
   // field appears once someone is signed in (Payload's first-user view shows all fields otherwise).
   fields: signedInOnly([
+    // Payload's own API-key fields, declared so they merge with Payload's and, like every field here,
+    // stay off the first-user form: the first user brings an email and a password, nothing else.
+    { name: 'apiKey', type: 'text' },
+    { name: 'apiKeyLast4', type: 'text' },
     {
       type: 'text',
       name: 'password',
