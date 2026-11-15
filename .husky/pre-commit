@@ -7,16 +7,16 @@ if echo "$staged" | grep -qE '^src/.*\.(ts|tsx)$'; then
   pnpm -s generate:types >/dev/null && pnpm -s generate:importmap >/dev/null
   git add src/payload-types.ts 'src/app/(payload)/admin/importMap.js' 2>/dev/null || true
 fi
-# The proof record and the README lines that quote it, when a Lean file changes. The kernel's
+# The proof record, when a Lean file changes. The kernel's
 # report is what CI's Lean job compares with; without `lean` on PATH the commit goes on and CI judges.
 if echo "$staged" | grep -qE '^src/utilities/verify/lean/.*\.lean$' && command -v "${LEAN_BIN:-lean}" >/dev/null 2>&1; then
   ./node_modules/.bin/tsx src/utilities/verify/inventory/index.ts </dev/null >/dev/null || exit 1
-  git add src/utilities/verify/lean/inventory.generated.json README.md
+  git add src/utilities/verify/lean/inventory.generated.json
 fi
-# The files that describe erpax to others (the plugin manifests, the sponsor page), from what they
+# The files that describe erpax to others (the README, the sponsor page, the plugin manifests), from what they
 # describe. Runs after the steps above, which may have changed the types and the proof record it quotes.
-node scripts/generate-repo.mjs || exit 1
-git add .claude-plugin/plugin.json .claude-plugin/marketplace.json .github/SPONSORS.md
+./node_modules/.bin/tsx scripts/generate-repo.ts </dev/null || exit 1
+git add README.md .github/SPONSORS.md .claude-plugin/plugin.json .claude-plugin/marketplace.json
 # The lockfile follows the manifest: CI installs --frozen-lockfile and stops on any mismatch.
 if echo "$staged" | grep -qE '^(package\.json|pnpm-workspace\.yaml)$'; then
   pnpm -s install --lockfile-only >/dev/null || exit 1
