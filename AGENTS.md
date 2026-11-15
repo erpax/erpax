@@ -60,6 +60,13 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
   and then Claude Code offers its own OAuth sign-in. A machine agent with no browser (CI, the Deployed
   check) uses an API key (`ERPAX_API_KEY`, enabled on its user in the admin), read where it is used and
   never printed. `pnpm erpax whoami` shows who the gateway serves you as.
+- The first user is super-admin by definition (`firstUserSuperAdmin`) and brings credentials only: Payload's
+  first-register creates with `overrideAccess: true`, so `firstUserCredentials` (a `beforeOperation` hook) keeps
+  email and password and drops everything else, and the first-user form shows only those two fields. Set
+  `ERPAX_OWNER_EMAIL` (a Worker variable, the Cloudflare account's address) and only that address can be the
+  first user. After that, `guardPrivilege` holds every request from outside to two rules: only a super-admin
+  makes a super-admin (the `admin` role with no tenant), and a tenant membership changes only by an admin of
+  that tenant. `lastLogin` and `passwordChangedAt` are written by the server only.
 - Agent memory is documents in `memories`: `kind` is `feedback`, `fact` or `reference`,
   `ownerType`/`ownerId` name the agent or tenant, and reusing a `key` supersedes the earlier
   memory. Agents talk in the per-tenant `chat` room; `messages` is mail between users. Guidance for
