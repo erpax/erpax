@@ -78,6 +78,7 @@ import {
 import { resolvePayloadSecret } from '@/utilities/secret'
 import { getServerSideURL } from '@/utilities/rfc/3986'
 import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
+import { embedSearchDocument, enqueueEmbedding, semanticEndpoint, TASK as EMBED_TASK, type SemanticEnv } from '@/utilities/semantic'
 import { cloudflareEmailAdapter, type SendEmailBinding } from '@/utilities/email/cloudflare'
 import localization from '@/i18n/localization'
 import {
@@ -158,6 +159,9 @@ async function getCloudflare(): Promise<CloudflareContext> {
   _cloudflareInit = true
   return _cloudflare
 }
+
+/** The Worker's bindings, for code the config wires (semantic search). */
+const cloudflareEnv = async (): Promise<SemanticEnv> => (await getCloudflare()).env as unknown as SemanticEnv
 
 /**
  * Close the local Cloudflare proxy (a workerd process holding the local D1 file) that this process
@@ -376,6 +380,10 @@ export default buildConfig({
       // `search_rels` at 208 cols, over D1's 100-col cap) to the content-uuid cross-reference
       // (`searchDocField`: a flat group, no `_rels` table). See fieldOverrides.ts for the why.
       searchOverrides: {
+        // Semantic search on Cloudflare's bindings (src/utilities/semantic): a changed text queues its
+        // embedding, and GET /api/search/semantic?q= answers by meaning, with the caller's own access.
+        hooks: { afterChange: [enqueueEmbedding(cloudflareEnv)] },
+        endpoints: [semanticEndpoint(cloudflareEnv)],
         llmInstructions:
           'Search holds one flat row per document (title, slug, markdown body). Use it to find a page or post by slug before reading it in full.',
         fields: ({ defaultFields }) => [
@@ -549,6 +557,16 @@ export default buildConfig({
       },
     },
     tasks: [
+      // One search document's vector into Vectorize (src/utilities/semantic). Queued by the search
+      // collection when a text changes; a QUEUE_AI_BATCH message wakes the sweep that runs it.
+      {
+        slug: EMBED_TASK,
+        inputSchema: [{ name: 'id', type: 'text', required: true }],
+        outputSchema: [{ name: 'result', type: 'text' }],
+        handler: async ({ input, req }: { input: { id: string }; req: PayloadRequest }) => ({
+          output: { result: await embedSearchDocument(cloudflareEnv, input.id, req) },
+        }),
+      },
       /**
        * Dunning cycle — past-due → suspend → cancel cascade for subscriptions.
        * Implementation at `src/jobs/dunning/job`. Wired here per Slice ZZ
