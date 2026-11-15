@@ -1,10 +1,10 @@
 {
   "sealedAt": "2026-11-15",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "05ae3f7fdcc9e415",
+  "sourcesHash": "65eab71cc6c8edbc",
   "census": {
-    "theorems": 351,
-    "axiomFree": 255,
+    "theorems": 363,
+    "axiomFree": 267,
     "standardAxioms": 96,
     "stubbed": 0
   },
@@ -1084,6 +1084,90 @@
         },
         {
           "theorem": "Direction.unspin_round_trips",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Edge.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Edge.every_shape_counted",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Edge.sign_in_is_auth_whatever_the_method",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Edge.pages_and_reads_are_never_limited",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Edge.auth_agent_write_are_limited",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Edge.api_writes_are_limited",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Edge.class_keys_never_mix",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        }
+      ]
+    },
+    {
+      "file": "Embed.lean",
+      "compiled": true,
+      "entries": [
+        {
+          "theorem": "Embed.unchanged_text_is_not_stale",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Embed.changed_or_missing_is_stale",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Embed.admitted_never_passes_the_quota",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Embed.refused_leaves_the_count",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Embed.more_quota_never_refuses_more",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Embed.nothing_is_admitted_within_quota",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false

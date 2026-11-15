@@ -18,7 +18,7 @@ Each figure is computed from the source beside it whenever this page is generate
 | Node | ^24.22.3 \|\| >=26.13.1 | `package.json` |
 | Collections | 191 | `src/payload-types.ts`, Payload's generated `Config`, without Payload's own `payload-*` |
 | Migrations | 9, the latest `20261115_201759_fold_governed_pages` | `src/migrations` |
-| Kernel-checked theorems | 351 in 45 files: 255 axiom-free, 96 on Lean's standard axioms, 0 stubbed (sealed 2026-11-15) | `src/utilities/verify/lean/inventory.generated.json` |
+| Kernel-checked theorems | 363 in 47 files: 267 axiom-free, 96 on Lean's standard axioms, 0 stubbed (sealed 2026-11-15) | `src/utilities/verify/lean/inventory.generated.json` |
 | License | CC-BY-NC-ND-4.0 | `package.json` |
 
 Source: [github.com/erpax/erpax](https://github.com/erpax/erpax)

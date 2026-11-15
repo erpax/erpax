@@ -1,5 +1,6 @@
 import { exactCeil, exactFloor, exactMax, exactMin } from '@/utilities/algebra'
 import { msFromMinutes } from '@/utilities/utility'
+import { admit, charge } from '@/utilities/embed'
 /**
  * Durable Object stubs for Slice YYY deep-AI coordination.
  *
@@ -53,6 +54,15 @@ export class TenantQuotaCounter {
     if (action === 'reset') {
       await this.state.storage.put('count', 0)
       return Response.json({ count: 0 })
+    }
+    // The Embed.lean decision, run where the count lives, so admitting and counting are one step.
+    if (action === 'admit') {
+      const cost = Number(url.searchParams.get('cost') ?? '1')
+      const quota = Number(url.searchParams.get('quota') ?? '0')
+      const used = (await this.state.storage.get<number>('count')) ?? 0
+      const count = charge(used, cost, quota)
+      if (count !== used) await this.state.storage.put('count', count)
+      return Response.json({ admitted: admit(used, cost, quota), count })
     }
     return new Response('not_found', { status: 404 })
   }

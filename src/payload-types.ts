@@ -819,6 +819,7 @@ export interface Config {
   user: User;
   jobs: {
     tasks: {
+      'embed-search-document': TaskEmbedSearchDocument;
       'dunning-cycle': TaskDunningCycle;
       'bg-bnb-rates-sync': TaskBgBnbRatesSync;
       'sales-audit-file': TaskSalesAuditFile;
@@ -19613,6 +19614,7 @@ export interface PayloadJob {
         completedAt: string;
         taskSlug:
           | 'inline'
+          | 'embed-search-document'
           | 'dunning-cycle'
           | 'bg-bnb-rates-sync'
           | 'sales-audit-file'
@@ -19652,6 +19654,7 @@ export interface PayloadJob {
           taskSlug?:
             | (
                 | 'inline'
+                | 'embed-search-document'
                 | 'dunning-cycle'
                 | 'bg-bnb-rates-sync'
                 | 'sales-audit-file'
@@ -19668,6 +19671,7 @@ export interface PayloadJob {
   taskSlug?:
     | (
         | 'inline'
+        | 'embed-search-document'
         | 'dunning-cycle'
         | 'bg-bnb-rates-sync'
         | 'sales-audit-file'
@@ -29186,6 +29190,18 @@ export interface UploadDropzoneWidget {
     excludedCollections?: ('media' | 'exports' | 'imports')[] | null;
   };
   width: 'x-small' | 'small' | 'medium' | 'large' | 'x-large' | 'full';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TaskEmbed-search-document".
+ */
+export interface TaskEmbedSearchDocument {
+  input: {
+    id: string;
+  };
+  output: {
+    result?: string | null;
+  };
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
