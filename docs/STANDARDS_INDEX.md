@@ -131,7 +131,7 @@ src/collections/audit-findings/index.ts:7: * @standard ISO-19011:2018 audit-find
 src/collections/audit-findings/index.ts:8: * @standard ISO/IEC-27007:2020 ISMS-auditing
 src/collections/audit-reports/index.ts:14:  * @standard ISA-700 auditor-report
 src/collections/audit-samples/index.ts:4: * @standard ISA-530 audit-sampling
-src/collections/audit-submissions/index.ts:15: * @standard BG Наредба-Н-18 §Приложение-38 audit-file-submission-log
+src/collections/audit-submissions/index.ts:14: * @standard BG Наредба-Н-18 §Приложение-38 audit-file-submission-log
 src/collections/bank-accounts/index.ts:10: * @standard ISO-20022 financial-messaging account-identification
 src/collections/bank-accounts/index.ts:11: * @standard ISO-4217:2015 currency-codes
 src/collections/bank-accounts/index.ts:8: * @standard ISO-13616-1:2020 iban
@@ -139,11 +139,11 @@ src/collections/bank-accounts/index.ts:9: * @standard ISO-9362:2022 bic
 src/collections/bank-reconciliations/index.ts:14: * @standard ISO-4217:2015 currency-codes
 src/collections/bank-reconciliations/index.ts:15: * @standard ISO-8601-1:2019 date-time reconciliation-date
 src/collections/bank-reconciliations/index.ts:16: * @standard ISO-20022 camt.053 bank-to-customer-statement (input)
-src/collections/bank-statements/index.ts:18: * @standard ISO-20022 camt.053 bank-to-customer-statement
-src/collections/bank-statements/index.ts:19: * @standard ISO-13616-1:2020 iban
-src/collections/bank-statements/index.ts:20: * @standard ISO-9362:2022 bic
-src/collections/bank-statements/index.ts:21: * @standard ISO-4217:2015 currency-codes
-src/collections/bank-statements/index.ts:22: * @standard ISO-8601-1:2019 date-time statement-date period-start reconciled-at
+src/collections/bank-statements/index.ts:16: * @standard ISO-20022 camt.053 bank-to-customer-statement
+src/collections/bank-statements/index.ts:17: * @standard ISO-13616-1:2020 iban
+src/collections/bank-statements/index.ts:18: * @standard ISO-9362:2022 bic
+src/collections/bank-statements/index.ts:19: * @standard ISO-4217:2015 currency-codes
+src/collections/bank-statements/index.ts:20: * @standard ISO-8601-1:2019 date-time statement-date period-start reconciled-at
 src/collections/bank-transactions/index.ts:31: * @standard ISO-20022 camt.053 bank-to-customer-statement
 src/collections/bank-transactions/index.ts:32: * @standard ISO-20022 ExternalBankTransactionDomain1Code
 src/collections/bank-transactions/index.ts:33: * @standard ISO-20022 ExternalBankTransactionFamily1Code
@@ -190,8 +190,8 @@ src/collections/bookings/index.ts:13: * @standard ISO-4217:2015 currency-codes p
 src/collections/bookings/index.ts:14: * @standard rfc-5545 icalendar-rrule recurring-bookings
 src/collections/bookings/index.ts:15: * @standard HTNG-2017 hotel-technology-next-generation
 src/collections/bookings/index.ts:16: * @standard OpenTravel Alliance reservation-message
-src/collections/budget-planning/index.ts:24: * @standard ISO-4217:2015 currency-codes
-src/collections/budget-planning/index.ts:25: * @standard ISO-8601-1:2019 date-time fiscal-year period
+src/collections/budget-planning/index.ts:23: * @standard ISO-4217:2015 currency-codes
+src/collections/budget-planning/index.ts:24: * @standard ISO-8601-1:2019 date-time fiscal-year period
 src/collections/business-combinations/index.ts:11: * @standard IFRS IFRS-3 §10-§13 identifying-the-acquirer
 src/collections/business-combinations/index.ts:12: * @standard IFRS IFRS-3 §18-§31 recognition-and-measurement-of-net-assets-acquired
 src/collections/business-combinations/index.ts:13: * @standard IFRS IFRS-3 §32 goodwill-or-bargain-purchase-gain
@@ -274,8 +274,8 @@ src/collections/csrd-disclosures/index.ts:16: * @standard EU ESRS 1 General Requ
 src/collections/csrd-disclosures/index.ts:17: * @standard EU ESRS 2 General Disclosures
 src/collections/csrd-disclosures/index.ts:18: * @standard ISO 14064-1:2018 ghg-quantification (basis for ESRS E1)
 src/collections/csrd-disclosures/index.ts:19: * @standard EU EFRAG ESRS-XBRL taxonomy
-src/collections/currency-rates/index.ts:15: * @standard ISO-4217:2015 currency-codes from-currency to-currency
-src/collections/currency-rates/index.ts:16: * @standard ISO-8601-1:2019 date-time rate-date
+src/collections/currency-rates/index.ts:14: * @standard ISO-4217:2015 currency-codes from-currency to-currency
+src/collections/currency-rates/index.ts:15: * @standard ISO-8601-1:2019 date-time rate-date
 src/collections/customer-segments/index.ts:9: * @standard ISO-8601-1:2019 date-time
 src/collections/customs-declarations/index.ts:11: * @standard ISO-8601-1:2019 date-time declaration-date
 src/collections/customs-declarations/index.ts:12: * @standard ISO-3166-1:2020 country-codes country-of-origin
@@ -337,18 +337,18 @@ src/collections/fiscal-calendars/index.ts:14: * @standard SAF-T:3.0.2 (regulator
 src/collections/fiscal-calendars/index.ts:15: * @standard XBRL (period context for financial statement generation)
 src/collections/fiscal-calendars/index.ts:16: * @standard GDPR:2016/679 (immutable after generation; generatedFrom traces lineage)
 src/collections/fiscal-calendars/index.ts:17: * @standard SOX:2402 (audit-trail via chainLeafUuid)
-src/collections/fiscal-devices/index.ts:17: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register
-src/collections/fiscal-periods/index.ts:21: * @standard ISO-8601-1:2019 date-time start-date end-date closed-at locked-at reopened-at week-numbering
-src/collections/fiscal-periods/index.ts:22: * @standard IAS-34:2023 interim-financial-reporting period-structure quarterly-alignment
-src/collections/fiscal-periods/index.ts:23: * @standard ISO-4217:2015 currency-code per-fiscal-configuration
-src/collections/fiscal-periods/index.ts:24: * @standard SAF-T 3.0.2 regulatory-period-coding audit-file-structure
-src/collections/fiscal-periods/index.ts:25: * @standard XBRL-GL fiscal-context general-ledger-reporting
+src/collections/fiscal-devices/index.ts:16: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register
+src/collections/fiscal-periods/index.ts:20: * @standard ISO-8601-1:2019 date-time start-date end-date closed-at locked-at reopened-at week-numbering
+src/collections/fiscal-periods/index.ts:21: * @standard IAS-34:2023 interim-financial-reporting period-structure quarterly-alignment
+src/collections/fiscal-periods/index.ts:22: * @standard ISO-4217:2015 currency-code per-fiscal-configuration
+src/collections/fiscal-periods/index.ts:23: * @standard SAF-T 3.0.2 regulatory-period-coding audit-file-structure
+src/collections/fiscal-periods/index.ts:24: * @standard XBRL-GL fiscal-context general-ledger-reporting
 src/collections/fixed-assets/index.ts:27: * @standard ISO-4217:2015 currency-codes
 src/collections/fixed-assets/index.ts:28: * @standard ISO-8601-1:2019 date-time acquisition-date in-service-date disposal-date
 src/collections/fx-transactions/index.ts:11: * @standard ISO-4217:2015 currency-codes from-to-currency-pair
 src/collections/fx-transactions/index.ts:12: * @standard ISO-8601-1:2019 date-time transaction-date
 src/collections/gl-accounts/index.ts:10: * @standard ISO-4217:2015 currency-codes account-currency
-src/collections/gl-postings/index.ts:31: * @standard ISO-8601-1:2019 date-time posted-date
+src/collections/gl-postings/index.ts:30: * @standard ISO-8601-1:2019 date-time posted-date
 src/collections/goods-receipts/index.ts:21: * @standard ISO-8601-1:2019 date-time received-at
 src/collections/goods-receipts/index.ts:22: * @standard EN-16931:2017 §BG-13 delivery-information
 src/collections/government-grants/index.ts:11: * @standard ISO-8601-1:2019 date-time
@@ -391,32 +391,32 @@ src/collections/investment-properties/index.ts:17: * @standard IFRS IFRS-13 fair
 src/collections/investment-properties/index.ts:18: * @standard US-GAAP ASC-360 long-lived-assets (no separate IP standard)
 src/collections/investment-properties/index.ts:19: * @standard ISO-4217:2015 currency-codes
 src/collections/investment-properties/index.ts:20: * @standard ISO-8601-1:2019 date-time
-src/collections/invoice-lines/index.ts:35: * @standard EN-16931:2017 §BG-25 invoice-line
-src/collections/invoice-lines/index.ts:36: * @standard EN-16931:2017 §BG-29 price-details
-src/collections/invoice-lines/index.ts:37: * @standard EN-16931:2017 §BG-30 line-vat-information
-src/collections/invoice-lines/index.ts:38: * @standard EN-16931:2017 §BG-27 invoice-line-allowances
-src/collections/invoice-lines/index.ts:39: * @standard EN-16931:2017 §BG-28 invoice-line-charges
-src/collections/invoice-lines/index.ts:40: * @standard EN-16931:2017 BT-126 invoice-line-identifier
-src/collections/invoice-lines/index.ts:41: * @standard EN-16931:2017 BT-131 invoice-line-net-amount
-src/collections/invoice-lines/index.ts:42: * @standard EN-16931:2017 BT-151 vat-category-code
-src/collections/invoice-lines/index.ts:43: * @standard Peppol-BIS-3.0 billing line-detail
-src/collections/invoice-lines/index.ts:44: * @standard UN-EDIFACT INVOIC §LIN line-segment
-src/collections/invoice-lines/index.ts:45: * @standard ISO-4217:2015 currency-codes
-src/collections/invoice-lines/index.ts:46: * @standard UN-CEFACT-5305 tax-category-codes
-src/collections/invoices/index.ts:56: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
-src/collections/invoices/index.ts:57: * @standard EN-16931:2017 §BG-22 document-totals
-src/collections/invoices/index.ts:58: * @standard EN-16931:2017 §BG-23 vat-breakdown
-src/collections/invoices/index.ts:59: * @standard EN-16931:2017 BT-3 invoice-type-code
-src/collections/invoices/index.ts:60: * @standard EN-16931:2017 BT-5 invoice-currency-code
-src/collections/invoices/index.ts:61: * @standard Peppol-BIS-3.0 billing electronic-invoicing
-src/collections/invoices/index.ts:62: * @standard UN-EDIFACT INVOIC d96a
-src/collections/invoices/index.ts:63: * @standard UN-CEFACT 1001 document-name-code
-src/collections/invoices/index.ts:64: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
-src/collections/invoices/index.ts:65: * @standard UBL-2.1 universal-business-language
-src/collections/invoices/index.ts:66: * @standard ISO-4217:2015 currency-codes
-src/collections/invoices/index.ts:67: * @standard ISO-8601-1:2019 date-time invoice-date due-date
+src/collections/invoice-lines/index.ts:33: * @standard EN-16931:2017 §BG-25 invoice-line
+src/collections/invoice-lines/index.ts:34: * @standard EN-16931:2017 §BG-29 price-details
+src/collections/invoice-lines/index.ts:35: * @standard EN-16931:2017 §BG-30 line-vat-information
+src/collections/invoice-lines/index.ts:36: * @standard EN-16931:2017 §BG-27 invoice-line-allowances
+src/collections/invoice-lines/index.ts:37: * @standard EN-16931:2017 §BG-28 invoice-line-charges
+src/collections/invoice-lines/index.ts:38: * @standard EN-16931:2017 BT-126 invoice-line-identifier
+src/collections/invoice-lines/index.ts:39: * @standard EN-16931:2017 BT-131 invoice-line-net-amount
+src/collections/invoice-lines/index.ts:40: * @standard EN-16931:2017 BT-151 vat-category-code
+src/collections/invoice-lines/index.ts:41: * @standard Peppol-BIS-3.0 billing line-detail
+src/collections/invoice-lines/index.ts:42: * @standard UN-EDIFACT INVOIC §LIN line-segment
+src/collections/invoice-lines/index.ts:43: * @standard ISO-4217:2015 currency-codes
+src/collections/invoice-lines/index.ts:44: * @standard UN-CEFACT-5305 tax-category-codes
+src/collections/invoices/index.ts:55: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
+src/collections/invoices/index.ts:56: * @standard EN-16931:2017 §BG-22 document-totals
+src/collections/invoices/index.ts:57: * @standard EN-16931:2017 §BG-23 vat-breakdown
+src/collections/invoices/index.ts:58: * @standard EN-16931:2017 BT-3 invoice-type-code
+src/collections/invoices/index.ts:59: * @standard EN-16931:2017 BT-5 invoice-currency-code
+src/collections/invoices/index.ts:60: * @standard Peppol-BIS-3.0 billing electronic-invoicing
+src/collections/invoices/index.ts:61: * @standard UN-EDIFACT INVOIC d96a
+src/collections/invoices/index.ts:62: * @standard UN-CEFACT 1001 document-name-code
+src/collections/invoices/index.ts:63: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
+src/collections/invoices/index.ts:64: * @standard UBL-2.1 universal-business-language
+src/collections/invoices/index.ts:65: * @standard ISO-4217:2015 currency-codes
+src/collections/invoices/index.ts:66: * @standard ISO-8601-1:2019 date-time invoice-date due-date
 src/collections/job-positions/index.ts:9: * @standard ISO-8601-1:2019 date-time
-src/collections/journal-entries/index.ts:28: * @standard ISO-8601-1:2019 date-time entry-date posted-date approval-date
+src/collections/journal-entries/index.ts:27: * @standard ISO-8601-1:2019 date-time entry-date posted-date approval-date
 src/collections/kyc-checks/index.ts:4: * @standard ISO/IEC-19794 biometric-data-interchange-formats
 src/collections/kyc-checks/index.ts:5: * @standard FATF-Recommendation-10 customer-due-diligence
 src/collections/leads/index.ts:11: * @standard ISO-8601-1:2019 date-time
@@ -460,7 +460,7 @@ src/collections/mineral-resource-assets/index.ts:14: * @standard IFRS IFRS-6 §1
 src/collections/mineral-resource-assets/index.ts:15: * @standard IFRS IFRS-6 §23-§25 disclosure
 src/collections/mineral-resource-assets/index.ts:16: * @standard ISO-4217:2015 currency-codes
 src/collections/mineral-resource-assets/index.ts:17: * @standard ISO-8601-1:2019 date-time
-src/collections/operators/index.ts:14: * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature
+src/collections/operators/index.ts:13: * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature
 src/collections/opportunities/index.ts:10: * @standard ISO-4217:2015 currency-codes
 src/collections/opportunities/index.ts:9: * @standard ISO-8601-1:2019 date-time
 src/collections/org-units/index.ts:10: * @standard NIST INCITS-359-2012 §5.1 users
@@ -508,7 +508,7 @@ src/collections/payroll-runs/index.ts:21: * @standard ISO-8601-1:2019 date-time 
 src/collections/performance-obligations/index.ts:20: * @standard ISO-4217:2015 currency-codes
 src/collections/performance-obligations/index.ts:21: * @standard ISO-8601-1:2019 date-time satisfaction-date
 src/collections/performance-reviews/index.ts:8: * @standard ISO-8601-1:2019 date-time
-src/collections/period-end-adjustments/index.ts:19: * @standard ISO-8601-1:2019 date-time period posted-at
+src/collections/period-end-adjustments/index.ts:17: * @standard ISO-8601-1:2019 date-time period posted-at
 src/collections/period-locks/index.ts:14: * @standard ISO-8601-1:2019 locked-at
 src/collections/posts/index.ts:37: * @standard schema.org Article
 src/collections/posts/index.ts:38: * @standard schema.org BlogPosting
@@ -539,7 +539,7 @@ src/collections/quality-inspections/index.ts:10: * @standard ISO-8601-1:2019 dat
 src/collections/quality-inspections/index.ts:11: * @standard ISO 9001:2015 §8.7 control-of-nonconforming-outputs
 src/collections/quality-inspections/index.ts:12: * @standard ISO 9001:2015 §9.1.3 analysis-and-evaluation
 src/collections/quality-inspections/index.ts:13: * @standard ISO 17025:2017 testing-and-calibration-laboratories
-src/collections/receipts/index.ts:20: * @standard BG Наредба-Н-18 §СУПТО касов-бон · §алтернативен-режим e-receipt
+src/collections/receipts/index.ts:19: * @standard BG Наредба-Н-18 §СУПТО касов-бон · §алтернативен-режим e-receipt
 src/collections/recruiting-pipeline/index.ts:9: * @standard ISO-8601-1:2019 date-time
 src/collections/recurring-journals/index.ts:15: * @standard ISO-8601-1:2019 date-time recurrence
 src/collections/recurring-journals/index.ts:16: * @standard rfc-5545 icalendar-rrule recurrence-rule
@@ -558,7 +558,7 @@ src/collections/rounding-adjustments/index.ts:10: * @standard ISO-4217:2015 curr
 src/collections/rounding-adjustments/index.ts:11: * @standard ISO-8601-1:2019 date-time adjustment-date
 src/collections/sales-commissions/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/collections/sales-commissions/index.ts:12: * @standard ISO-4217:2015 currency-codes
-src/collections/sales/index.ts:29: * @standard BG Наредба-Н-18 §СУПТО sale-register · УНП · no-delete · сторно
+src/collections/sales/index.ts:28: * @standard BG Наредба-Н-18 §СУПТО sale-register · УНП · no-delete · сторно
 src/collections/sectors/index.ts:14: * @standard UN SNA-2008 institutional-sectors (S.11/S.12 corporations · S.13 government · S.14 households · S.15 NPISH)
 src/collections/sectors/index.ts:15: * @standard UN ISIC Rev.4 international-standard-industrial-classification (economic activity)
 src/collections/sectors/index.ts:16: * @standard EU NACE Rev.2 economic-activities
@@ -599,20 +599,20 @@ src/collections/taggings/index.ts:30: * @standard ISO-25964-1:2011 thesauri asso
 src/collections/taggings/index.ts:31: * @standard RFC-4122 §4.3 uuid content-addressed-dedup
 src/collections/tags/index.ts:21: * @standard ISO-25964-1:2011 thesauri-and-interoperability controlled-vocabulary
 src/collections/tags/index.ts:22: * @standard RFC-4122 §4.3 uuid content-addressed-id
-src/collections/tax-calculations/index.ts:17: * @standard ISO-3166-1:2020 country-codes jurisdiction
-src/collections/tax-calculations/index.ts:18: * @standard ISO-3166-2:2020 subdivision-codes jurisdiction
-src/collections/tax-calculations/index.ts:19: * @standard ISO-4217:2015 currency-codes
-src/collections/tax-calculations/index.ts:20: * @standard ISO-8601-1:2019 date-time period posted-at filed-at paid-at
-src/collections/tax-calculations/index.ts:21: * @standard EN-16931:2017 §BG-23 vat-breakdown
-src/collections/tax-codes/index.ts:15: * @standard EN-16931:2017 §BG-23 vat-breakdown
-src/collections/tax-codes/index.ts:16: * @standard UN-CEFACT-5305 tax-category-codes
-src/collections/tax-codes/index.ts:17: * @standard ISO-4217:2015 currency-codes
-src/collections/tax-codes/index.ts:18: * @standard ISO-8601-1:2019 date-time
-src/collections/tax-jurisdictions/index.ts:26: * @standard ISO-3166-1:2020 country-codes alpha-2
-src/collections/tax-jurisdictions/index.ts:27: * @standard ISO-3166-2:2020 subdivision-codes
-src/collections/tax-jurisdictions/index.ts:28: * @standard ISO-4217:2015 currency-codes
-src/collections/tax-jurisdictions/index.ts:29: * @standard EU Directive 2006/112/EC VAT
-src/collections/tax-jurisdictions/index.ts:30: * @standard EN-16931:2017 §BG-23 vat-breakdown
+src/collections/tax-calculations/index.ts:15: * @standard ISO-3166-1:2020 country-codes jurisdiction
+src/collections/tax-calculations/index.ts:16: * @standard ISO-3166-2:2020 subdivision-codes jurisdiction
+src/collections/tax-calculations/index.ts:17: * @standard ISO-4217:2015 currency-codes
+src/collections/tax-calculations/index.ts:18: * @standard ISO-8601-1:2019 date-time period posted-at filed-at paid-at
+src/collections/tax-calculations/index.ts:19: * @standard EN-16931:2017 §BG-23 vat-breakdown
+src/collections/tax-codes/index.ts:14: * @standard EN-16931:2017 §BG-23 vat-breakdown
+src/collections/tax-codes/index.ts:15: * @standard UN-CEFACT-5305 tax-category-codes
+src/collections/tax-codes/index.ts:16: * @standard ISO-4217:2015 currency-codes
+src/collections/tax-codes/index.ts:17: * @standard ISO-8601-1:2019 date-time
+src/collections/tax-jurisdictions/index.ts:25: * @standard ISO-3166-1:2020 country-codes alpha-2
+src/collections/tax-jurisdictions/index.ts:26: * @standard ISO-3166-2:2020 subdivision-codes
+src/collections/tax-jurisdictions/index.ts:27: * @standard ISO-4217:2015 currency-codes
+src/collections/tax-jurisdictions/index.ts:28: * @standard EU Directive 2006/112/EC VAT
+src/collections/tax-jurisdictions/index.ts:29: * @standard EN-16931:2017 §BG-23 vat-breakdown
 src/collections/tax-periods/index.ts:14:  * @standard OECD tax-period-coding
 src/collections/tax-periods/index.ts:15: * @standard SAF-T OECD reporting-period
 src/collections/tax-periods/index.ts:16: * @standard ISO-8601-1:2019 period-dates
@@ -627,7 +627,7 @@ src/collections/tenants/index.ts:25: * @standard ISO-17442-1:2020 lei legal-enti
 src/collections/tenants/index.ts:26: * @standard ISO-3166-1:2020 country-codes alpha-2
 src/collections/tenants/index.ts:27: * @standard ISO-4217:2015 currency-codes default-currency
 src/collections/tenants/index.ts:28: * @standard BCP-47 language-tag default-locale
-src/collections/terminals/index.ts:15: * @standard BG Наредба-Н-18 §алтернативен-режим virtual-POS-terminal
+src/collections/terminals/index.ts:14: * @standard BG Наредба-Н-18 §алтернативен-режим virtual-POS-terminal
 src/collections/test.ts:10: * @standard ISO/IEC-29119:2022 software-testing (one computed invariant, full coverage)
 src/collections/time-entries/index.ts:8: * @standard ISO-8601-1:2019 date-time work-date
 src/collections/time-entries/index.ts:9: * @standard ISO-4217:2015 currency-codes hourly-rate
@@ -880,10 +880,10 @@ src/packages/admin/providers/index.ts:24: * @standard ISO/IEC-25010:2011 §4.2.3
 src/packages/admin/providers/scim/index.ts:9: * @standard RFC-7643 §3.1 common attributes · §4.1 User · §4.2 Group · §4.3 Enterprise User
 src/packages/admin/providers/settings.ts:13: * @standard RFC-6749 OAuth 2.0 client registration (client id and secret)
 src/packages/engine/index.ts:28: * @standard ISO/IEC-25010:2011 §4.2.7 modularity — a change to one app touches that app's plugin
-src/payload.config.ts:583:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:601:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:602:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:624:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:565:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:583:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:584:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:606:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/plugins/handles/index.ts:40: * @standard RFC-9562 uuid · RFC-4648 §5 base64url · RFC-9110 §15.5.5 404
 src/plugins/naming/index.ts:20: * @standard RFC 9562 §5.8 name-based UUID (the digest source)
 src/plugins/taggable/index.ts:21: * @standard RFC-4122 §4.3 uuid
@@ -1228,7 +1228,6 @@ src/utilities/invoices/hooks/deriveNumber.test.ts:5: * @standard ISO/IEC-29119:2
 src/utilities/invoices/hooks/deriveNumber.ts:8: * @standard EN-16931:2017 BT-1 invoice-number
 src/utilities/invoices/hooks/gl-hooks-emit-events.test.ts:13: * @standard ISO/IEC-29119:2022 software-testing
 src/utilities/invoices/hooks/transition/index.ts:5: * @standard IFRS IAS-1 presentation (a reversal is a transition, never an edit)
-src/utilities/invoices/invoice/lines/hooks/beforeValidate.ts:10: * @standard EN-16931:2017 §BG-25 invoice-line
 src/utilities/invoices/invoice/lines/hooks/recomputeInvoiceTotals.ts:17: * @standard EN-16931:2017 BT-106/109/110/112/115 document-totals
 src/utilities/invoices/payments/hooks/recomputeInvoicePaid.ts:14: * @standard EN-16931:2017 BT-113/115 paid-amount amount-due-for-payment
 src/utilities/iso/13616/iban-bg.ts:20: * @standard ISO-13616-1:2020 BG-22 iban-bulgaria
@@ -1556,6 +1555,7 @@ src/utilities/tenant/context/index.ts:38: * @standard ISO-4217:2015 currency-cod
 src/utilities/tenant/context/index.ts:39: * @standard BCP-47 language-tag locale-cascade
 src/utilities/tenant/context/index.ts:40: * @standard ECMA-402 internationalization-api
 src/utilities/tenant/remote/secret/index.ts:5: * @standard NIST SP-800-108 key-derivation-function (sibling: `getPreviewSecret`)
+src/utilities/tenants/default/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/utilities/testing/config-discovery-advanced.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/utilities/testing/config-discovery-advanced.test.ts:5: * @standard JSON-Schema 2020-12 schema-validation
 src/utilities/testing/config-discovery.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
@@ -2087,10 +2087,10 @@ src/collections/audit-events/index.ts:47: * @compliance SOX §404 internal-contr
 src/collections/audit-events/index.ts:48: * @compliance GDPR Art.30 records-of-processing-activities
 src/collections/audit-findings/index.ts:9: * @compliance SOX §404 internal-controls deficiency-tracking
 src/collections/audit-reports/index.ts:16: * @compliance SOX §404 internal-controls
-src/collections/audit-submissions/index.ts:17: * @compliance SOX §404 internal-controls
+src/collections/audit-submissions/index.ts:16: * @compliance SOX §404 internal-controls
 src/collections/bank-accounts/index.ts:14: * @compliance SOX §404 internal-controls cash-management
 src/collections/bank-reconciliations/index.ts:20: * @compliance SOX §404 internal-controls TOM-CSH-01 cash-balance-proof
-src/collections/bank-statements/index.ts:25: * @compliance SOX §404 internal-controls reconciliation-evidence
+src/collections/bank-statements/index.ts:23: * @compliance SOX §404 internal-controls reconciliation-evidence
 src/collections/bank-transactions/index.ts:46: * @compliance SOX §404 internal-controls bank-reconciliation
 src/collections/batches/index.ts:24: * @compliance SOX §404 internal-controls traceability-control TOM-TRACE-01
 src/collections/beneficial-owners/index.ts:5: * @compliance EU-AMLD-5 Directive-2018/843 ubo-register
@@ -2102,7 +2102,7 @@ src/collections/board-actions/index.ts:5: * @compliance SOX §404 governance
 src/collections/bookable-resources/index.ts:18: * @compliance SOX §404 internal-controls revenue-completeness
 src/collections/bookings/index.ts:22: * @compliance SOX §404 internal-controls revenue-completeness TOM-RES-01
 src/collections/bookings/index.ts:23: * @compliance GDPR Art.6(1)(b) lawful-basis-contract guest-data
-src/collections/budget-planning/index.ts:30: * @compliance SOX §404 internal-controls budget-approval-workflow
+src/collections/budget-planning/index.ts:29: * @compliance SOX §404 internal-controls budget-approval-workflow
 src/collections/business-combinations/index.ts:20: * @compliance SOX §404 internal-controls TOM-MA-01 PPA-process
 src/collections/carbon-emissions/index.ts:22: * @compliance EU SFDR PAI 1 ghg-emissions
 src/collections/carbon-emissions/index.ts:23: * @compliance EU CBAM Carbon Border Adjustment Mechanism (when applicable)
@@ -2159,13 +2159,13 @@ src/collections/expense-reports/index.ts:14: * @compliance SOX §404 internal-co
 src/collections/fair-value-measurements/index.ts:20: * @compliance SOX §404 internal-controls TOM-FV-01 valuation-process
 src/collections/financial-statements/index.ts:26: * @compliance SOX §302 disclosure-controls
 src/collections/financial-statements/index.ts:27: * @compliance SOX §404 internal-controls
-src/collections/fiscal-periods/index.ts:28: * @compliance SOX §404 period-close-integrity access-control-evidence
-src/collections/fiscal-periods/index.ts:29: * @compliance GDPR Art 5(1)(f) audit-trail-integrity
-src/collections/fiscal-periods/index.ts:30: * @compliance eIDAS Regulation 910/2014 qualified-electronic-signature on-amendments
+src/collections/fiscal-periods/index.ts:27: * @compliance SOX §404 period-close-integrity access-control-evidence
+src/collections/fiscal-periods/index.ts:28: * @compliance GDPR Art 5(1)(f) audit-trail-integrity
+src/collections/fiscal-periods/index.ts:29: * @compliance eIDAS Regulation 910/2014 qualified-electronic-signature on-amendments
 src/collections/fixed-assets/index.ts:33: * @compliance SOX §404 internal-controls capital-asset-register
 src/collections/fx-transactions/index.ts:20: * @compliance SOX §404 internal-controls fx-control TOM-FX-01
 src/collections/gl-accounts/index.ts:15: * @compliance SOX §404 internal-controls
-src/collections/gl-postings/index.ts:35: * @compliance SOX §404 internal-controls
+src/collections/gl-postings/index.ts:34: * @compliance SOX §404 internal-controls
 src/collections/goods-receipts/index.ts:28: * @compliance SOX §404 internal-controls three-way-match
 src/collections/government-grants/index.ts:20: * @compliance EU CSRD ESRS 2 sbm-3 material-impacts (EU funds traceability)
 src/collections/government-grants/index.ts:21: * @compliance OECD BEPS Action 13 country-by-country (when grants ≥ threshold)
@@ -2178,8 +2178,8 @@ src/collections/internal-audit-function/index.ts:6: * @compliance SOX §404 inte
 src/collections/internal-controls/index.ts:5: * @compliance SOX §404 internal-controls
 src/collections/inventory-movements/index.ts:17: * @compliance SOX §404 internal-controls inventory-cycle-count
 src/collections/investment-properties/index.ts:22: * @compliance SOX §404 internal-controls
-src/collections/invoices/index.ts:70: * @compliance SOX §404 internal-controls
-src/collections/journal-entries/index.ts:33: * @compliance SOX §404 internal-controls
+src/collections/invoices/index.ts:69: * @compliance SOX §404 internal-controls
+src/collections/journal-entries/index.ts:32: * @compliance SOX §404 internal-controls
 src/collections/kyc-checks/index.ts:6: * @compliance EU-AMLD-6 Directive-2018/1673 anti-money-laundering
 src/collections/kyc-checks/index.ts:7: * @compliance USA-PATRIOT-Act §326 customer-identification-program
 src/collections/kyc-checks/index.ts:8: * @compliance EU-Regulation-2015/847 wire-transfers
@@ -2213,7 +2213,7 @@ src/collections/payroll-runs/index.ts:31: * @compliance GDPR Art.30 records-of-p
 src/collections/performance-obligations/index.ts:30: * @compliance SOX §404 internal-controls revenue-recognition
 src/collections/performance-reviews/index.ts:10: * @compliance EU Equal Treatment Directive 2000/78
 src/collections/performance-reviews/index.ts:9: * @compliance GDPR Art.5 PII processing
-src/collections/period-end-adjustments/index.ts:23: * @compliance SOX §404 internal-controls
+src/collections/period-end-adjustments/index.ts:21: * @compliance SOX §404 internal-controls
 src/collections/period-locks/index.ts:12:  * @compliance SOX §404 period-close-integrity
 src/collections/post-close-analytics-reports/index.ts:14: * @compliance SOX §404 close-monitoring
 src/collections/posts/index.ts:42: * @compliance WCAG-2.1 level-AA accessibility
@@ -2237,7 +2237,7 @@ src/collections/roles/index.ts:15: * @compliance SOC-2 CC6.1 logical-access-cont
 src/collections/roles/index.ts:16: * @compliance SOX §404 internal-controls
 src/collections/rounding-adjustments/index.ts:16: * @compliance SOX §404 internal-controls rounding-control TOM-RND-01
 src/collections/sales-commissions/index.ts:17: * @compliance SOX §404 internal-controls commission-completeness
-src/collections/sales/index.ts:33: * @compliance SOX §404 internal-controls
+src/collections/sales/index.ts:32: * @compliance SOX §404 internal-controls
 src/collections/share-based-payments/index.ts:18: * @compliance SOX §404 internal-controls TOM-EQU-01
 src/collections/shares/index.ts:33: * @compliance GDPR Article 32(1)(b) ongoing-confidentiality
 src/collections/shares/index.ts:34: * @compliance SOX §404 access-controls audit-evidenced-via-chain
@@ -2248,7 +2248,7 @@ src/collections/subscriptions/index.ts:18: * @compliance GDPR Art.6(1)(b) lawful
 src/collections/subscriptions/index.ts:19: * @compliance SOX §404 internal-controls
 src/collections/taggings/index.ts:33: * @compliance SOX §404 internal-controls
 src/collections/tags/index.ts:24: * @compliance SOX §404 internal-controls
-src/collections/tax-calculations/index.ts:24: * @compliance SOX §404 internal-controls tax-position
+src/collections/tax-calculations/index.ts:22: * @compliance SOX §404 internal-controls tax-position
 src/collections/tax-returns/index.ts:10: * @compliance SOX §404 internal-controls tax-position
 src/collections/tenants/index.ts:29: * @compliance GDPR Art.4(7) data-controller
 src/collections/tenants/index.ts:30: * @compliance GDPR Art.30 records-of-processing-activities
@@ -2334,7 +2334,6 @@ src/hooks/collections/shared/auditTrailAfterChange.ts:23: * @compliance SOC-2 CC
 src/hooks/collections/shared/auditTrailAfterChange.ts:24: * @compliance SOX §404 internal-controls evidence-preservation
 src/hooks/collections/shared/autoPopulateCreatedBy.ts:8: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/hooks/collections/shared/autoPopulateCreatedBy.ts:9: * @compliance SOX §404 internal-controls
-src/hooks/collections/shared/autoPopulateTenant.ts:12: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/hooks/collections/shared/autoSetTimestamp.ts:9: * @compliance SOX §404 internal-controls verifiable-event-time
 src/hooks/collections/shared/bankStatementImportedHook.ts:28: * @compliance SOX §404 internal-controls cash-management
 src/hooks/collections/shared/depreciationSchedulePostingHook.ts:25: * @compliance SOX §404 internal-controls capital-asset-register
@@ -2448,7 +2447,7 @@ src/utilities/saf/t/types/index.ts:19: * @compliance SOX §404 internal-controls
 src/utilities/scope/index.ts:9: * @compliance SOC-2 CC6.1 logical-access-controls
 src/utilities/shareds/versionedDrafts.ts:10: * @compliance SOX §404 internal-controls record-retention
 src/utilities/shareds/versionedDrafts.ts:11: * @compliance GDPR Art.5(1)(e) storage-limitation maxPerDoc-cap
-src/utilities/standard/collection/hook/index.ts:15: * @compliance SOX §404 internal-controls provenance
+src/utilities/standard/collection/hook/index.ts:14: * @compliance SOX §404 internal-controls provenance
 src/utilities/subscription/gate/index.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
 src/utilities/subscription/gate/index.ts:231: * @compliance SOC-2 CC6.1 logical-access-controls
 src/utilities/subscription/gate/test.ts:10: * @compliance SOC-2 CC6.1 logical-access-controls
@@ -2510,7 +2509,7 @@ src/collections/account-reconciliations/index.ts:23: * @accounting IFRS IAS-7 st
 src/collections/bank-accounts/index.ts:12: * @accounting IFRS IAS-7 statement-of-cash-flows cash-and-equivalents
 src/collections/bank-reconciliations/index.ts:17: * @accounting IFRS IAS-7 §6 §44 cash-flow-reconciliation
 src/collections/bank-reconciliations/index.ts:18: * @accounting US-GAAP ASC-230 statement-of-cash-flows
-src/collections/bank-statements/index.ts:23: * @accounting IFRS IAS-7 statement-of-cash-flows
+src/collections/bank-statements/index.ts:21: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/collections/bank-transactions/index.ts:43: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/collections/bank-transactions/index.ts:44: * @accounting US-GAAP ASC-230 cash-flows
 src/collections/batches/index.ts:22: * @accounting IFRS IAS-2 §23-§27 cost-formula-specific-identification
@@ -2521,9 +2520,9 @@ src/collections/bookings/index.ts:17: * @accounting IFRS IFRS-15 §35 over-time-
 src/collections/bookings/index.ts:18: * @accounting IFRS IFRS-15 §38 point-in-time-recognition (single-use)
 src/collections/bookings/index.ts:19: * @accounting IFRS IFRS-15 §B20-B27 right-of-return cancellation-policy
 src/collections/bookings/index.ts:20: * @accounting US-GAAP ASC-606-10-25-27 over-time-criteria
-src/collections/budget-planning/index.ts:26: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/collections/budget-planning/index.ts:27: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
-src/collections/budget-planning/index.ts:28: * @accounting US-GAAP ASC-270 interim-reporting
+src/collections/budget-planning/index.ts:25: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/collections/budget-planning/index.ts:26: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
+src/collections/budget-planning/index.ts:27: * @accounting US-GAAP ASC-270 interim-reporting
 src/collections/carbon-emissions/index.ts:20: * @accounting IFRS S2 §29-32 climate-related-metrics
 src/collections/closing-entries/index.ts:14:  * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/collections/closing-entries/index.ts:15: * @accounting US-GAAP ASC-205 presentation
@@ -2559,8 +2558,8 @@ src/collections/credit-memos/index.ts:32: * @accounting IFRS IFRS-15 §B47 contr
 src/collections/credit-memos/index.ts:33: * @accounting US-GAAP ASC-606-10-32-10 variable-consideration
 src/collections/csrd-disclosures/index.ts:20: * @accounting IFRS S1 general-sustainability-disclosure
 src/collections/csrd-disclosures/index.ts:21: * @accounting IFRS S2 climate-disclosures
-src/collections/currency-rates/index.ts:17: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
-src/collections/currency-rates/index.ts:18: * @accounting US-GAAP ASC-830 foreign-currency-matters
+src/collections/currency-rates/index.ts:16: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/collections/currency-rates/index.ts:17: * @accounting US-GAAP ASC-830 foreign-currency-matters
 src/collections/customer-segments/index.ts:10: * @accounting IFRS IFRS-15 §4 portfolio-practical-expedient
 src/collections/customer-segments/index.ts:11: * @accounting IFRS IFRS-8 §22 disclosure-of-segment-information
 src/collections/debt-schedule/index.ts:4: * @accounting IFRS-9 financial-instruments
@@ -2582,8 +2581,8 @@ src/collections/financial-statements/index.ts:22: * @accounting IFRS IFRS-18 §9
 src/collections/financial-statements/index.ts:23: * @accounting IFRS IFRS-7 §31-§42 financial-instruments-disclosures (statement notes consume IFRS-7 risk-management disclosures)
 src/collections/financial-statements/index.ts:24: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/collections/financial-statements/index.ts:25: * @accounting US-GAAP ASC-270 interim-reporting
-src/collections/fiscal-periods/index.ts:26: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/collections/fiscal-periods/index.ts:27: * @accounting US-GAAP ASC-210 balance-sheet
+src/collections/fiscal-periods/index.ts:25: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/collections/fiscal-periods/index.ts:26: * @accounting US-GAAP ASC-210 balance-sheet
 src/collections/fixed-assets/index.ts:29: * @accounting IFRS IAS-16 property-plant-and-equipment
 src/collections/fixed-assets/index.ts:30: * @accounting IFRS IAS-36 impairment-of-assets
 src/collections/fixed-assets/index.ts:31: * @accounting US-GAAP ASC-360 property-plant-and-equipment
@@ -2596,8 +2595,8 @@ src/collections/fx-transactions/index.ts:18: * @accounting US-GAAP ASC-830-20 fo
 src/collections/gl-accounts/index.ts:11: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/collections/gl-accounts/index.ts:12: * @accounting US-GAAP ASC-210 balance-sheet
 src/collections/gl-accounts/index.ts:13: * @accounting OECD SAF-T §2 general-ledger-accounts
-src/collections/gl-postings/index.ts:32: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/collections/gl-postings/index.ts:33: * @accounting OECD SAF-T §3 transactions
+src/collections/gl-postings/index.ts:31: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/collections/gl-postings/index.ts:32: * @accounting OECD SAF-T §3 transactions
 src/collections/goods-receipts/index.ts:23: * @accounting IFRS IAS-2 inventories goods-in-transit
 src/collections/goods-receipts/index.ts:24: * @accounting IFRS-15 §38-42 revenue-recognition FOB-point-timing
 src/collections/goods-receipts/index.ts:25: * @accounting US-GAAP ASC-330 inventory at-cost
@@ -2614,14 +2613,14 @@ src/collections/intercompany-transactions/index.ts:17: * @accounting US-GAAP ASC
 src/collections/inventory-movements/index.ts:13: * @accounting IFRS IAS-2 §10 §36 inventories cost-formulas
 src/collections/inventory-movements/index.ts:14: * @accounting US-GAAP ASC-330 inventory cost-flow
 src/collections/inventory-movements/index.ts:15: * @accounting US-GAAP ASC-606 cogs-recognition
-src/collections/invoice-lines/index.ts:47: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/collections/invoice-lines/index.ts:48: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/collections/invoices/index.ts:68: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/collections/invoices/index.ts:69: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/collections/invoice-lines/index.ts:45: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/invoice-lines/index.ts:46: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/collections/invoices/index.ts:67: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/invoices/index.ts:68: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/job-positions/index.ts:10: * @accounting IFRS IAS-19 employee-benefits (planned-headcount accruals)
-src/collections/journal-entries/index.ts:29: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/collections/journal-entries/index.ts:30: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
-src/collections/journal-entries/index.ts:31: * @accounting OECD SAF-T §3 journal-entries
+src/collections/journal-entries/index.ts:28: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/collections/journal-entries/index.ts:29: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
+src/collections/journal-entries/index.ts:30: * @accounting OECD SAF-T §3 journal-entries
 src/collections/lease-modifications/index.ts:19: * @accounting IFRS IFRS-16 §44 separate-lease-criterion
 src/collections/lease-modifications/index.ts:20: * @accounting IFRS IFRS-16 §45 not-separate-lease-modification
 src/collections/lease-modifications/index.ts:21: * @accounting IFRS IFRS-16 §46 partial-or-full-termination
@@ -2676,9 +2675,9 @@ src/collections/performance-obligations/index.ts:25: * @accounting IFRS IFRS-15 
 src/collections/performance-obligations/index.ts:26: * @accounting IFRS IFRS-15 §41-§43 progress-measurement
 src/collections/performance-obligations/index.ts:27: * @accounting US-GAAP ASC-606-10-25-14 distinct-goods-services
 src/collections/performance-obligations/index.ts:28: * @accounting US-GAAP ASC-606-10-25-31 progress-measurement
-src/collections/period-end-adjustments/index.ts:20: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/collections/period-end-adjustments/index.ts:21: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
-src/collections/period-end-adjustments/index.ts:22: * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
+src/collections/period-end-adjustments/index.ts:18: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/collections/period-end-adjustments/index.ts:19: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
+src/collections/period-end-adjustments/index.ts:20: * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
 src/collections/period-locks/index.ts:13: * @accounting IFRS IAS-1 reporting-period
 src/collections/post-close-analytics-reports/index.ts:13:  * @accounting IFRS IAS-1 financial-statement-analysis
 src/collections/prior-period-adjustments/index.ts:13: * @accounting IFRS IAS-8 §42-49 errors-of-prior-periods
@@ -2727,8 +2726,8 @@ src/collections/rounding-adjustments/index.ts:14: * @accounting US-GAAP ASC-205-
 src/collections/sales-commissions/index.ts:13: * @accounting IFRS IFRS-15 §91 §92 §93 §94 incremental-costs-of-obtaining
 src/collections/sales-commissions/index.ts:14: * @accounting IFRS IFRS-15 §99 §103 §104 §105 §106 amortisation
 src/collections/sales-commissions/index.ts:15: * @accounting US-GAAP ASC-340-40-25-1 incremental-costs
-src/collections/sales/index.ts:30: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/collections/sales/index.ts:31: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/collections/sales/index.ts:29: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/sales/index.ts:30: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/segment-reporting/index.ts:4: * @accounting IFRS-8 operating-segments
 src/collections/segment-reporting/index.ts:5: * @accounting US-GAAP ASC-280 segment-reporting
 src/collections/subscription-plans/index.ts:10: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
@@ -2736,9 +2735,9 @@ src/collections/subscription-plans/index.ts:11: * @accounting US-GAAP ASC-606 re
 src/collections/subscriptions/index.ts:15: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/collections/subscriptions/index.ts:16: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/subscriptions/index.ts:17: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
-src/collections/tax-calculations/index.ts:22: * @accounting OECD SAF-T tax-table
-src/collections/tax-codes/index.ts:19: * @accounting OECD SAF-T tax-table
-src/collections/tax-jurisdictions/index.ts:31: * @accounting OECD SAF-T jurisdiction-codes
+src/collections/tax-calculations/index.ts:20: * @accounting OECD SAF-T tax-table
+src/collections/tax-codes/index.ts:18: * @accounting OECD SAF-T tax-table
+src/collections/tax-jurisdictions/index.ts:30: * @accounting OECD SAF-T jurisdiction-codes
 src/collections/tax-returns/index.ts:7: * @accounting OECD SAF-T 2.0 standard-audit-file-tax
 src/collections/tax-returns/index.ts:8: * @accounting US-GAAP ASC-740 income-taxes
 src/collections/tenants/index.ts:158:     * @accounting IFRS IAS-1 presentation-of-financial-statements per-tenant-framework
@@ -2831,9 +2830,9 @@ src/jobs/dunning/job/index.ts:11: * @accounting IFRS IFRS-9 expected-credit-loss
 src/jobs/dunning/job/index.ts:12: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunning/job/index.ts:13: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunning/job/index.ts:14: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:581:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:582:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:603:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:563:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:564:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:585:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/utilities/accounting/analysis/index.ts:4: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/utilities/accounting/analysis/index.ts:5: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/utilities/accounting/analysis/index.ts:6: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
@@ -3048,11 +3047,11 @@ src/collections/audit-events/index.ts:49: * @security ISO-27001 A.5.23 cloud-ser
 src/collections/audit-events/index.ts:50: * @security ISO-27002 §8.15 logging
 src/collections/audit-evidence/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/audit-samples/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/audit-submissions/index.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/audit-submissions/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/bank-accounts/index.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/bank-accounts/index.ts:16: * @security ISO-27002 §8.24 use-of-cryptography iban-bic-encryption
 src/collections/bank-reconciliations/index.ts:21: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/bank-statements/index.ts:26: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/bank-statements/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/bank-transactions/index.ts:47: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/batches/index.ts:25: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/beneficial-owners/index.ts:9: * @security ISO-27001 A.5.34 privacy-and-pii
@@ -3061,8 +3060,8 @@ src/collections/biological-assets/index.ts:23: * @security ISO 27001 A.5.23 clou
 src/collections/board-actions/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/bookable-resources/index.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/bookings/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/budget-planning/index.ts:31: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/budget-planning/index.ts:32: * @security ISO-27002 §5.3 segregation-of-duties approval-vs-creation
+src/collections/budget-planning/index.ts:30: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/budget-planning/index.ts:31: * @security ISO-27002 §5.3 segregation-of-duties approval-vs-creation
 src/collections/business-combinations/index.ts:21: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/carbon-emissions/index.ts:25: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/carriers/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -3083,7 +3082,7 @@ src/collections/cost-centers/index.ts:21: * @security ISO-27001 A.5.23 cloud-ser
 src/collections/cost-variances/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/credit-memos/index.ts:37: * @security ISO-27002 §5.3 segregation-of-duties issuer-vs-approver
 src/collections/csrd-disclosures/index.ts:26: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/currency-rates/index.ts:20: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/currency-rates/index.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/customer-segments/index.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/customs-declarations/index.ts:20: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/data-processing-activities/index.ts:14: * @security ISO-27001 A.5.34 privacy-and-pii
@@ -3100,12 +3099,12 @@ src/collections/expense-reports/index.ts:16: * @security ISO-27001 A.5.23 cloud-
 src/collections/fair-value-measurements/index.ts:21: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/financial-statements/index.ts:28: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/financial-statements/index.ts:29: * @security ISO-27002 §5.3 segregation-of-duties certifier-vs-preparer
-src/collections/fiscal-devices/index.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/fiscal-periods/index.ts:31: * @security ISO-27002 §5.3 segregation-of-duties closer-vs-creator locker-vs-creator
+src/collections/fiscal-devices/index.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/fiscal-periods/index.ts:30: * @security ISO-27002 §5.3 segregation-of-duties closer-vs-creator locker-vs-creator
 src/collections/fixed-assets/index.ts:34: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/fx-transactions/index.ts:21: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/gl-accounts/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/gl-postings/index.ts:36: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/gl-postings/index.ts:35: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/goods-receipts/index.ts:29: * @security ISO-27002 §5.3 segregation-of-duties receiver-vs-requester
 src/collections/government-grants/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/groups/index.ts:14: * @security ISO-27001 A.5.15 access-control · A.5.18 access-rights
@@ -3119,8 +3118,8 @@ src/collections/internal-policies/index.ts:6: * @security ISO-27001 A.5.23 cloud
 src/collections/inventory-movements/index.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/investment-properties/index.ts:23: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/job-positions/index.ts:12: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/journal-entries/index.ts:34: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/journal-entries/index.ts:35: * @security ISO-27002 §5.3 segregation-of-duties
+src/collections/journal-entries/index.ts:33: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/journal-entries/index.ts:34: * @security ISO-27002 §5.3 segregation-of-duties
 src/collections/kyc-checks/index.ts:10: * @security ISO-27001 A.5.34 privacy-and-pii
 src/collections/leads/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/lease-modifications/index.ts:27: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -3134,7 +3133,7 @@ src/collections/lots/index.ts:31: * @security ISO-27001 A.5.23 cloud-service-ten
 src/collections/maintenance-work-orders/index.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/management-assessment-icfr/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/mineral-resource-assets/index.ts:20: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
-src/collections/operators/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/operators/index.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/opportunities/index.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/org-units/index.ts:11: * @security ISO-27001 A.5.15 access-control
 src/collections/pack-items/index.ts:33: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -3147,8 +3146,8 @@ src/collections/payroll-runs/index.ts:33: * @security ISO-27002 §5.3 segregatio
 src/collections/payroll-runs/index.ts:34: * @security ISO-27002 §5.34 privacy-and-protection-of-pii
 src/collections/payroll-runs/index.ts:35: * @security ISO-27002 §8.11 data-masking
 src/collections/performance-reviews/index.ts:12: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/period-end-adjustments/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/period-end-adjustments/index.ts:25: * @security ISO-27002 §5.3 segregation-of-duties approval-vs-creation
+src/collections/period-end-adjustments/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/period-end-adjustments/index.ts:23: * @security ISO-27002 §5.3 segregation-of-duties approval-vs-creation
 src/collections/prior-period-adjustments/index.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/production-receipts/index.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/project-milestones/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -3157,7 +3156,7 @@ src/collections/projects/index.ts:28: * @security ISO-27001 A.5.23 cloud-service
 src/collections/properties/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/provisions/index.ts:36: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/quality-inspections/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/receipts/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/receipts/index.ts:21: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/recruiting-pipeline/index.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/recurring-journals/index.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/regulatory-deferral-accounts/index.ts:17: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
@@ -3170,7 +3169,7 @@ src/collections/roles/index.ts:13: * @security ISO-27002 §5.15 access-control
 src/collections/roles/index.ts:14: * @security ISO-27002 §5.16 identity-management
 src/collections/rounding-adjustments/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/sales-commissions/index.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/sales/index.ts:34: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/sales/index.ts:33: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/sectors/index.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/segment-reporting/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/share-based-payments/index.ts:19: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
@@ -3180,11 +3179,11 @@ src/collections/statutory-report-templates/index.ts:7: * @security ISO-27001 A.5
 src/collections/subscriptions/index.ts:20: * @security ISO-27002 §8.24 use-of-cryptography
 src/collections/taggings/index.ts:34: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/tags/index.ts:25: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/tax-calculations/index.ts:25: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/tax-calculations/index.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/tenants/index.ts:159:     * @security ISO-27001 A.5.23 cloud-service-tenant-isolation per-tenant-sandbox-config
 src/collections/tenants/index.ts:31: * @security ISO-27001 A.5.23 information-security-for-cloud-services
 src/collections/tenants/index.ts:32: * @security ISO-27002 §5.15 access-control
-src/collections/terminals/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/terminals/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/time-entries/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/tracking-events/index.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/transaction-failures/index.ts:18: * @security ISO-27001 A.5.24 incident-management-planning
@@ -3228,8 +3227,6 @@ src/hooks/collections/posts/populateAuthors.ts:16: * @security ISO-27002 §8.11 
 src/hooks/collections/roles/validateRoleDefinition.ts:10: * @security ISO-27001 A.5.18 access-rights
 src/hooks/collections/roles/validateRoleDefinition.ts:11: * @security ISO-27002 §5.15 access-control
 src/hooks/collections/shared/autoPopulateCreatedBy.ts:10: * @security ISO-27002 §5.15 access-control
-src/hooks/collections/shared/autoPopulateTenant.ts:10: * @security ISO-27002 §5.15 access-control
-src/hooks/collections/shared/autoPopulateTenant.ts:9: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation auto-populate-tenant
 src/hooks/collections/shared/enforceDocumentTenantForUser.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/hooks/collections/shared/enforceDocumentTenantForUser.ts:16: * @security ISO-27002 §5.15 access-control
 src/hooks/collections/shared/enforceDocumentTenantForUser.ts:17: * @security ISO-27002 §8.3 information-access-restriction
@@ -3292,7 +3289,6 @@ src/utilities/get/tenant/from/request/index.ts:8: * @security ISO-27002 §5.15 a
 src/utilities/get/user/tenant/i/ds/index.ts:6: * @security ISO-27001 A.5.18 access-rights
 src/utilities/get/user/tenant/i/ds/index.ts:7: * @security ISO-27002 §5.15 access-control
 src/utilities/gl/account/resolver/index.ts:29: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/utilities/invoices/invoice/lines/hooks/beforeValidate.ts:11: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/utilities/iso/19011/types/index.ts:25: * @security ISO-27002 §8.15 logging
 src/utilities/journal/entry/service/index.ts:19: * @security ISO-27002 §5.3 segregation-of-duties
 src/utilities/nist/incits/359/conventions/index.ts:23: * @security ISO-27002 §5.15 access-control
@@ -3343,7 +3339,7 @@ src/utilities/scope/types.ts:5: * @security ISO-27001 A.5.23 cloud-service-tenan
 src/utilities/scope/types.ts:6: * @security ISO-27002 §5.15 access-control
 src/utilities/site/tenant/where/index.ts:5: * @security ISO-27001 A.5.23 information-security-for-cloud-services
 src/utilities/site/tenant/where/index.ts:6: * @security ISO-27002 §8.3 information-access-restriction
-src/utilities/standard/collection/hook/index.ts:14: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation tenant-field
+src/utilities/standard/collection/hook/index.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation tenant-field
 src/utilities/subscription/gate/index.ts:13: * @security ISO-27002 §5.15 access-control
 src/utilities/subscription/gate/index.ts:230: * @security ISO-27002 §5.15 access-control feature-entitlement
 src/utilities/subscription/gate/test.ts:9: * @security ISO-27002 §5.15 access-control
@@ -3352,6 +3348,8 @@ src/utilities/tenant/remote/secret/index.ts:6: * @security ISO-27001 A.5.23 clou
 src/utilities/tenant/remote/secret/index.ts:7: * @security ISO-27001 A.5.17 authentication-information secret-management
 src/utilities/tenant/remote/secret/index.ts:8: * @security ISO-27002 §5.17 secret-management
 src/utilities/tenant/remote/secret/index.ts:9: * @security ISO-27002 §8.24 use-of-cryptography
+src/utilities/tenants/default/index.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/utilities/tenants/default/test.ts:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/utilities/types/auth/index.ts:5: * @security ISO-27001 A.5.16 identity-management
 src/utilities/types/auth/index.ts:6: * @security ISO-27001 A.5.18 access-rights
 src/utilities/types/auth/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -3396,10 +3394,10 @@ src/collections/audit-evidence/index.ts:6: * @audit ISO-19011:2018 evidence
 src/collections/audit-findings/index.ts:10: * @audit ISO-19011:2018 audit-trail
 src/collections/audit-reports/index.ts:15: * @audit ISO-19011:2018 reporting
 src/collections/audit-samples/index.ts:5: * @audit ISO-19011:2018 sampling-methodology
-src/collections/audit-submissions/index.ts:16: * @audit ISO-19011:2018 §6.4 audit-evidence
+src/collections/audit-submissions/index.ts:15: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/collections/bank-accounts/index.ts:13: * @audit ISO-19011:2018 audit-trail bank-account-master
 src/collections/bank-reconciliations/index.ts:19: * @audit ISO-19011:2018 §6.4.6 audit-evidence-bank-reconciliation
-src/collections/bank-statements/index.ts:24: * @audit ISO-19011:2018 audit-trail
+src/collections/bank-statements/index.ts:22: * @audit ISO-19011:2018 audit-trail
 src/collections/bank-transactions/index.ts:45: * @audit ISO-19011:2018 audit-trail reconciliation-line-evidence
 src/collections/batches/index.ts:23: * @audit ISO-19011:2018 audit-trail lot-genealogy-evidence
 src/collections/beneficial-owners/index.ts:8: * @audit ISO-19011:2018 audit-trail ubo-evidence
@@ -3407,7 +3405,7 @@ src/collections/bills-of-materials/index.ts:22: * @audit ISO-19011:2018 audit-tr
 src/collections/biological-assets/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-biological-assets
 src/collections/bookable-resources/index.ts:17: * @audit ISO-19011:2018 audit-trail resource-master-changes
 src/collections/bookings/index.ts:21: * @audit ISO-19011:2018 audit-trail booking-lifecycle
-src/collections/budget-planning/index.ts:29: * @audit ISO-19011:2018 audit-trail
+src/collections/budget-planning/index.ts:28: * @audit ISO-19011:2018 audit-trail
 src/collections/business-combinations/index.ts:19: * @audit ISO 19011:2018 §6.4.6 audit-evidence-business-combination
 src/collections/carbon-emissions/index.ts:21: * @audit ISAE 3410 greenhouse-gas-statements
 src/collections/carriers/index.ts:15: * @audit ISO-19011:2018 audit-trail carrier-master
@@ -3426,7 +3424,7 @@ src/collections/cost-centers/index.ts:19: * @audit ISO-19011:2018 audit-trail
 src/collections/cost-variances/index.ts:14: * @audit ISO-19011:2018 audit-trail variance-evidence
 src/collections/credit-memos/index.ts:34: * @audit ISO-19011:2018 audit-trail
 src/collections/csrd-disclosures/index.ts:22: * @audit ISAE 3000 limited-assurance (rises to reasonable-assurance under CSRD by 2028)
-src/collections/currency-rates/index.ts:19: * @audit ISO-19011:2018 audit-trail rate-update
+src/collections/currency-rates/index.ts:18: * @audit ISO-19011:2018 audit-trail rate-update
 src/collections/customer-segments/index.ts:12: * @audit ISO-19011:2018 audit-trail crm-segmentation
 src/collections/customs-declarations/index.ts:17: * @audit ISO-19011:2018 audit-trail customs-evidence
 src/collections/data-processing-activities/index.ts:13: * @audit ISO-19011:2018 audit-trail ropa-evidence
@@ -3440,12 +3438,12 @@ src/collections/evidence-attestations/index.ts:17: * @audit ISO-19011:2018 audit
 src/collections/expense-reports/index.ts:15: * @audit ISO-19011:2018 audit-trail expense-evidence
 src/collections/fair-value-measurements/index.ts:19: * @audit ISO 19011:2018 §6.4.6 audit-evidence-fair-value
 src/collections/financial-statements/index.ts:30: * @audit ISO-19011:2018 audit-trail
-src/collections/fiscal-devices/index.ts:18: * @audit ISO-19011:2018 audit-trail
-src/collections/fiscal-periods/index.ts:32: * @audit ISO-19011:2018 audit-trail status-transition
+src/collections/fiscal-devices/index.ts:17: * @audit ISO-19011:2018 audit-trail
+src/collections/fiscal-periods/index.ts:31: * @audit ISO-19011:2018 audit-trail status-transition
 src/collections/fixed-assets/index.ts:32: * @audit ISO-19011:2018 audit-trail
 src/collections/fx-transactions/index.ts:19: * @audit ISO-19011:2018 audit-trail fx-revaluation-evidence
 src/collections/gl-accounts/index.ts:14: * @audit ISO-19011:2018 audit-trail chart-of-accounts-change
-src/collections/gl-postings/index.ts:34: * @audit ISO-19011:2018 audit-trail
+src/collections/gl-postings/index.ts:33: * @audit ISO-19011:2018 audit-trail
 src/collections/goods-receipts/index.ts:26: * @audit ISO-19011:2018 audit-trail receipt-evidence
 src/collections/goods-receipts/index.ts:27: * @audit IFRS-15 §31 revenue-substantiation shipment-FOB-date
 src/collections/government-grants/index.ts:19: * @audit ISO-19011:2018 audit-trail grant-evidence
@@ -3455,9 +3453,9 @@ src/collections/intercompany-transactions/index.ts:18: * @audit ISO-19011:2018 a
 src/collections/internal-audit-function/index.ts:5: * @audit ISO-19011:2018 audit-programme
 src/collections/inventory-movements/index.ts:16: * @audit ISO-19011:2018 audit-trail stock-ledger
 src/collections/investment-properties/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-investment-property
-src/collections/invoices/index.ts:71: * @audit ISO-19011:2018 audit-trail
+src/collections/invoices/index.ts:70: * @audit ISO-19011:2018 audit-trail
 src/collections/job-positions/index.ts:11: * @audit ISO-19011:2018 audit-trail headcount-evidence
-src/collections/journal-entries/index.ts:32: * @audit ISO-19011:2018 audit-trail
+src/collections/journal-entries/index.ts:31: * @audit ISO-19011:2018 audit-trail
 src/collections/kyc-checks/index.ts:9: * @audit ISO-19011:2018 audit-trail kyc-evidence
 src/collections/leads/index.ts:15: * @audit ISO-19011:2018 audit-trail crm-pipeline
 src/collections/lease-modifications/index.ts:25: * @audit ISO-19011:2018 audit-trail lease-modification-evidence
@@ -3473,7 +3471,7 @@ src/collections/memories/index.ts:32: * @audit Conservation Law 8 content-uuid (
 src/collections/memories/index.ts:33: * @audit Conservation Law 10 referential-harmony (relatedTo graph)
 src/collections/messages/index.ts:13: * @audit ISO-19011:2018 audit-trail message-provenance
 src/collections/mineral-resource-assets/index.ts:18: * @audit ISO 19011:2018 §6.4.6 audit-evidence-EE-assets
-src/collections/operators/index.ts:15: * @audit ISO-19011:2018 audit-trail
+src/collections/operators/index.ts:14: * @audit ISO-19011:2018 audit-trail
 src/collections/opportunities/index.ts:12: * @audit ISO-19011:2018 audit-trail crm-pipeline
 src/collections/pack-items/index.ts:32: * @audit ISO-19011:2018 audit-trail dispatch line
 src/collections/packages/index.ts:16: * @audit ISO-19011:2018 audit-trail packing-evidence
@@ -3483,7 +3481,7 @@ src/collections/payment-runs/index.ts:29: * @audit ISO-19011:2018 audit-trail
 src/collections/payroll-runs/index.ts:27: * @audit ISO-19011:2018 audit-trail payroll-evidence
 src/collections/performance-obligations/index.ts:29: * @audit ISO-19011:2018 audit-trail po-satisfaction
 src/collections/performance-reviews/index.ts:11: * @audit ISO-19011:2018 audit-trail performance-evidence
-src/collections/period-end-adjustments/index.ts:26: * @audit ISO-19011:2018 audit-trail
+src/collections/period-end-adjustments/index.ts:24: * @audit ISO-19011:2018 audit-trail
 src/collections/prior-period-adjustments/index.ts:16: * @audit ISO-19011:2018 audit-trail prior-period-restatement
 src/collections/production-receipts/index.ts:16: * @audit ISO-19011:2018 audit-trail production-receipt-evidence
 src/collections/project-milestones/index.ts:15: * @audit ISO-19011:2018 audit-trail milestone-evidence
@@ -3492,14 +3490,14 @@ src/collections/projects/index.ts:26: * @audit ISO-19011:2018 audit-trail wip-ev
 src/collections/properties/index.ts:22: * @audit ISO-19011:2018 audit-trail property-master-changes
 src/collections/provisions/index.ts:34: * @audit ISO-19011:2018 audit-trail provision-evidence
 src/collections/quality-inspections/index.ts:14: * @audit ISO-19011:2018 audit-trail inspection-evidence
-src/collections/receipts/index.ts:21: * @audit ISO-19011:2018 audit-trail
+src/collections/receipts/index.ts:20: * @audit ISO-19011:2018 audit-trail
 src/collections/recruiting-pipeline/index.ts:14: * @audit ISO-19011:2018 audit-trail recruiting-evidence
 src/collections/recurring-journals/index.ts:21: * @audit ISO-19011:2018 audit-trail recurring-evidence
 src/collections/regulatory-deferral-accounts/index.ts:15: * @audit ISO 19011:2018 §6.4.6 audit-evidence-regulatory-deferral
 src/collections/returns/index.ts:9: * @audit ISO-19011:2018 audit-trail rma-evidence
 src/collections/rounding-adjustments/index.ts:15: * @audit ISO-19011:2018 audit-trail rounding-evidence
 src/collections/sales-commissions/index.ts:16: * @audit ISO-19011:2018 audit-trail commission-evidence
-src/collections/sales/index.ts:32: * @audit ISO-19011:2018 audit-trail
+src/collections/sales/index.ts:31: * @audit ISO-19011:2018 audit-trail
 src/collections/sectors/index.ts:22: * @audit ISO-19011:2018 audit-trail transparent-societal-ledger
 src/collections/share-based-payments/index.ts:17: * @audit ISO 19011:2018 §6.4.6 audit-evidence-equity-grants
 src/collections/shares/index.ts:36: * @audit Conservation Law 59 uuid-based-sharing-with-rbac
@@ -3510,10 +3508,10 @@ src/collections/standards/index.ts:30: * @audit Conservation Law 28 standards-su
 src/collections/standards/index.ts:31: * @audit Conservation Law 38 mcp-tool-standardization
 src/collections/taggings/index.ts:32: * @audit ISO-19011:2018 audit-trail tagging-provenance
 src/collections/tags/index.ts:23: * @audit ISO-19011:2018 audit-trail label-changes
-src/collections/tax-calculations/index.ts:23: * @audit ISO-19011:2018 audit-trail
+src/collections/tax-calculations/index.ts:21: * @audit ISO-19011:2018 audit-trail
 src/collections/tax-returns/index.ts:9: * @audit ISO-19011:2018 audit-trail tax-filing-evidence
 src/collections/tenants/index.ts:160:     * @audit ISO-19011:2018 audit-trail config-change
-src/collections/terminals/index.ts:16: * @audit ISO-19011:2018 audit-trail
+src/collections/terminals/index.ts:15: * @audit ISO-19011:2018 audit-trail
 src/collections/test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every registered collection node verified)
 src/collections/time-entries/index.ts:13: * @audit ISO-19011:2018 audit-trail time-tracking-evidence
 src/collections/tracking-events/index.ts:15: * @audit ISO-19011:2018 audit-trail shipment-tracking
@@ -3555,7 +3553,6 @@ src/hooks/collections/sale/enforceSaleImmutability.ts:14: * @audit ISO-19011:201
 src/hooks/collections/sale/validateReferenceHook.ts:14: * @audit ISO-19011:2018 audit-trail
 src/hooks/collections/shared/auditTrailAfterChange.ts:22: * @audit ISO-19011:2018 §6.4.6 audit-evidence-collection
 src/hooks/collections/shared/autoPopulateCreatedBy.ts:7: * @audit ISO-19011:2018 audit-trail authorship-attribution
-src/hooks/collections/shared/autoPopulateTenant.ts:11: * @audit ISO-19011:2018 audit-trail before-validate-hooks
 src/hooks/collections/shared/autoSetTimestamp.ts:8: * @audit ISO-19011:2018 audit-trail status-transition-timestamp
 src/hooks/collections/shared/bankStatementImportedHook.ts:27: * @audit ISO-19011:2018 audit-trail bank-statement-import
 src/hooks/collections/shared/depreciationSchedulePostingHook.ts:24: * @audit ISO-19011:2018 audit-trail period-expense
@@ -3578,9 +3575,9 @@ src/hooks/fields/tenants/normalizeTenantSlug.ts:5: * @audit ISO-19011:2018 audit
 src/jobs/audit/index.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/jobs/bnb/rates/sync/index.ts:20: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/jobs/dunning/job/index.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:584:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:604:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:625:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:566:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:586:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:607:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/plugins/naming/index.ts:21: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/seed/erpax-product-pages.ts:35: * @audit ISO-19011:2018 audit-trail seed-provenance
 src/seed/index.ts:10: * @audit ISO-19011:2018 audit-trail seed-runs
@@ -3636,7 +3633,7 @@ src/utilities/etsi/en/319/142/profile.ts:25: * @audit ISO-19011:2018 audit-trail
 src/utilities/etsi/en/319/142/signature-dictionary.test.ts:8: * @audit ISO-19011:2018 audit-trail signature-evidence
 src/utilities/etsi/en/319/142/signature-dictionary.ts:23: * @audit ISO-19011:2018 audit-trail signature-evidence
 src/utilities/event/emitter/service/index.ts:10: * @audit ISO-19011:2018 audit-trail
-src/utilities/factory/collection/base/index.ts:189: * @audit ISO 19011:2018 §6.4.6 — backwards-compat path for collections
+src/utilities/factory/collection/base/index.ts:188: * @audit ISO 19011:2018 §6.4.6 — backwards-compat path for collections
 src/utilities/factory/collection/test.ts:14: * @audit ISO 19011:2018 §6.4.6 — regression-guard for shared-field collision
 src/utilities/factory/recompute-parent-aggregates.ts:27: * @audit ISO-19011:2018 audit-trail derived-total-provenance
 src/utilities/field/index.ts:7: * @audit Flat namespace to eliminate circular imports and duplicate definitions.
@@ -3663,7 +3660,6 @@ src/utilities/internal/controls/audit/findings/court-docket.ts:12: * @audit ISO-
 src/utilities/invoices/hooks/deriveNumber.ts:9: * @audit ISO-19011:2018 audit-trail document-identity
 src/utilities/invoices/hooks/gl-hooks-emit-events.test.ts:18: * @audit ISO-19011:2018 audit-trail event-driven-posting
 src/utilities/invoices/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
-src/utilities/invoices/invoice/lines/hooks/beforeValidate.ts:12: * @audit ISO-19011:2018 audit-trail
 src/utilities/invoices/invoice/lines/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/utilities/invoices/payments/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/utilities/iso/13616/iban-bg.ts:24: * @audit ISO-19011:2018 audit-trail bank-account-evidence
@@ -3712,7 +3708,7 @@ src/utilities/scope/collectionScopes.ts:8: * @audit ISO-19011:2018 audit-trail
 src/utilities/scope/constants.ts:7: * @audit ISO-19011:2018 audit-trail draft-vs-published
 src/utilities/scope/filters.ts:7: * @audit ISO-19011:2018 audit-trail draft-vs-published
 src/utilities/shareds/versionedDrafts.ts:9: * @audit ISO-19011:2018 audit-trail content-versioning
-src/utilities/standard/collection/hook/index.ts:13: * @audit ISO-19011:2018 audit-trail
+src/utilities/standard/collection/hook/index.ts:12: * @audit ISO-19011:2018 audit-trail
 src/utilities/subscription/plans/subscriptions/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/utilities/tamper/cost/index.ts:54: * @audit Conservation Law 55/60 (tamper cost cascades through the uuid-chain)
 src/utilities/tamper/cost/index.ts:55: * @audit Conservation Law 62 (coverage) enlarged by the invariant (semantic) + replica axes

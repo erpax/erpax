@@ -1,5 +1,4 @@
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, neverDelete } from '@/access/collections/shared/multiTenantRead'
@@ -115,7 +114,6 @@ const Sales: CollectionConfig = {
     ...auditFields(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       validateReferenceHook(),
       deriveSaleOperatorCodeHook('operators'),

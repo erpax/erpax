@@ -55,7 +55,6 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { scopedAccess, tenantAdmin, adminOnly } from '@/access/collections/shared/multiTenantRead'
 
 const AuditEvents: CollectionConfig = {
@@ -263,7 +262,6 @@ const AuditEvents: CollectionConfig = {
       admin: { readOnly: true, description: 'SHA-256 hex of canonical JSON over (eventId, tenant, timestamp, eventType, collectionSlug, documentId, user, previousHash). Computed at write time; verified at the integrity-check gate.' } },
   ],
   hooks: {
-    beforeValidate: [autoPopulateTenant],
     // Append-only: no afterChange (avoids recursion since this IS the audit log).
   },
   timestamps: true,
