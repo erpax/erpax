@@ -9,7 +9,12 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
   folders it imports. Prefer Payload's defaults and official plugins over custom code.
 - Data that is not code is a seed. Documents live in `src/seed/content/fixtures/documents.json` and
   load as nested pages: `pnpm seed --url <origin> --documents src/seed/content/fixtures/documents.json`.
-- Schema changes go through Payload migrations (`pnpm payload:migrate:create`), never hand-run SQL.
+- Schema changes go through Payload migrations (`pnpm payload:migrate:create`), never hand-run SQL. The history
+  starts at one baseline (`20261115_091414_baseline`, 2026-11-15, applied to
+  a new D1 database, `erpax-v4`); CI's Migrations job builds a database from it and fails on an unmigrated
+  change. `payload migrate:fresh` cannot reset D1 in beta.9 (its drop step calls `adapter.client.execute`),
+  so a reset is a new database plus `payload migrate`. The pre-reset database `erpax` is kept unbound as a
+  backup (2 users, 1 job).
 - The MCP gateway at `/api/mcp` is the official `@payloadcms/plugin-mcp` over the collections.
 
 ## Commands
@@ -79,16 +84,11 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
 | --- | --- |
 | pre-commit (`.husky`) | Payload types + import map when `src/**/*.ts` is staged; package ranges + lockfile when `package.json` or `pnpm-workspace.yaml` is staged |
 | pre-push | `pnpm lint` · `pnpm typecheck` |
-| CI (`.github/workflows/ci.yml`) | standards banner · lint · typecheck · tests ×4 (shard 2 runs `release.mjs --check`) · Playwright smoke · Lean proofs · lean build |
+| CI (`.github/workflows/ci.yml`) | standards banner · lint · typecheck · tests ×4 (shard 2 runs `release.mjs --check`) · Playwright smoke · Lean proofs · migrations (from empty, no drift) · lean build |
 | Cloudflare Workers Builds (dashboard) | on `main`: build, `payload migrate` on production D1, deploy. Its check on a PR branch fails at once and is not required |
 
 Gaps found on 2026-11-15:
 
-- Migrations never run in CI (tests set `PAYLOAD_DEV_PUSH=true` and `PAYLOAD_TEST_SKIP_MIGRATE=1`), and
-  nothing checks that the schema has a migration (`pnpm payload migrate:create --skip-empty`, then
-  `git diff --exit-code src/migrations`). Production D1 is the first place a migration runs. The history
-  also cannot build a database from empty: no migration creates `payload_migrations`, because the
-  schema began as a push (`20261113_153714_parties` applies on a fresh D1, the next insert fails).
 - The CI build regenerates `src/payload-types.ts` and the import map but never compares them with the commit.
 - Deploy is configured in the Cloudflare dashboard: there is no rollback step and no post-deploy smoke check.
 - No publish workflow: `packages/released.json` is at 1.0.16, and the last tag is `v1.0.6`.
