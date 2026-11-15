@@ -11,6 +11,7 @@ import { adminOnly, multiTenantRead } from '@/access/collections/shared/multiTen
 import { authenticated } from '@/utilities/authenticated'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
+import { dunningField, dunningHistory } from '@/fields/group/dunningField'
 import { VAT_CATEGORY_OPTIONS } from '@/utilities/un/cefact/5305'
 import { saleStatusOptions } from '@/utilities/field'
 import { fiscalQrField } from '@/fields/text/fiscalQrField'
@@ -90,7 +91,8 @@ export const Invoices: CollectionConfig = {
   },
   hooks: {
     beforeValidate: [autoPopulateTenant, deriveInvoiceNumber],
-    beforeChange: [validateNotLocked],
+    // the dunning record (formerly the dunning-cycles collection): append-only history, one entry per stage change
+    beforeChange: [validateNotLocked, dunningHistory],
     // AAAAA-cont (2026-05-11): wired the canonical audit-trail emission
     // alongside the GL-posting hook. The auditTrailAfterChange call
     // makes every invoice mutation queryable from the auditor's console
@@ -754,5 +756,7 @@ export const Invoices: CollectionConfig = {
       type: 'json',
       admin: { description: 'Additional metadata' },
     },
+    // the collection process once overdue (formerly the dunning-cycles collection)
+    dunningField(),
   ],
 }
