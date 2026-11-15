@@ -33,7 +33,8 @@
  * @see docs/STANDARDS.md §4.1
  */
 
-import type { CollectionConfig } from 'payload'
+import type { CollectionConfig, PayloadRequest } from 'payload'
+import { mandateError, mandateOf } from '@/fields/array/mandatesField'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
@@ -185,10 +186,16 @@ const PaymentRuns: CollectionConfig = {
           name: 'mandateId',
           type: 'text',
           admin: {
-            description: 'pain.008 only — the SEPA SDD mandate id.',
-            condition: (_data, sibling) =>
-              (sibling as Record<string, unknown> | undefined)?.messageType === 'pain_008',
+            description: 'pain.008 only — the SEPA SDD mandate id: an active, unexpired mandate on one of this tenant\'s customers.',
+            // messageType is the run's, not the transaction's: reading it from the row kept this field hidden and unchecked
+            condition: (data) => (data as Record<string, unknown> | undefined)?.messageType === 'pain_008',
           },
+          // a direct debit collects only against an active, unexpired mandate of the tenant (EPC130-08)
+          validate: (async (value: unknown, { data, req }: { data?: Record<string, unknown>; req: PayloadRequest }) => {
+            if (data?.messageType !== 'pain_008') return true
+            const on = String(data.requestedExecutionDate ?? new Date().toISOString())
+            return mandateError(value, value ? await mandateOf(String(value), req) : undefined, on)
+          }) as never,
         },
         {
           name: 'sourceBill',

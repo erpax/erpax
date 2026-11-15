@@ -33,6 +33,9 @@ import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenan
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { classifyTaxId } from '@/hooks/collections/parties/classifyTaxId'
 import { deriveCountryFromIban } from '@/hooks/collections/shared/deriveCountryFromIban'
+import { partyRows } from '@/hooks/collections/parties/partyRows'
+import { mandatesField } from '@/fields/array/mandatesField'
+import { scorecardsField } from '@/fields/array/scorecardsField'
 import { loadPresets, preset, type Preset } from '@/utilities/preset'
 
 /** The sides a party can be on. A party may hold both. */
@@ -60,6 +63,8 @@ const Parties: CollectionConfig = {
       classifyTaxId({ taxIdField: 'tax.vatNumber', countryField: 'country', labelField: 'tax.vatNumberType' }),
       // Bank-side jurisdiction comes from the IBAN if `bank.bankCountryCode` is blank.
       deriveCountryFromIban({ ibanField: 'bank.bankIban', countryField: 'bank.bankCountryCode' }),
+      // mandates and scorecards (formerly two collections) are kept, and each belongs to its side of the party
+      partyRows,
     ],
     afterChange: [auditTrailAfterChange('parties')],
   },
@@ -246,6 +251,9 @@ const Parties: CollectionConfig = {
           admin: { description: 'Default withholding-tax payable account', condition: vendor } },
       ],
     },
+    // a customer's SEPA mandates and a vendor's scorecards (formerly the sepa-mandates and vendor-scorecards collections)
+    mandatesField(),
+    scorecardsField(),
     {
       type: 'group',
       name: 'notes',

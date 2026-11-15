@@ -306,12 +306,10 @@ export interface Config {
     receipts: Receipt;
     returns: Return;
     sales: Sale;
-    'sepa-mandates': SepaMandate;
     'subscription-plans': SubscriptionPlan;
     subscriptions: Subscription;
     terminals: Terminal;
     'usage-records': UsageRecord;
-    'vendor-scorecards': VendorScorecard;
     commitments: Commitment;
     'account-reconciliations': AccountReconciliation;
     'audit-reports': AuditReport;
@@ -539,12 +537,10 @@ export interface Config {
     receipts: ReceiptsSelect<false> | ReceiptsSelect<true>;
     returns: ReturnsSelect<false> | ReturnsSelect<true>;
     sales: SalesSelect<false> | SalesSelect<true>;
-    'sepa-mandates': SepaMandatesSelect<false> | SepaMandatesSelect<true>;
     'subscription-plans': SubscriptionPlansSelect<false> | SubscriptionPlansSelect<true>;
     subscriptions: SubscriptionsSelect<false> | SubscriptionsSelect<true>;
     terminals: TerminalsSelect<false> | TerminalsSelect<true>;
     'usage-records': UsageRecordsSelect<false> | UsageRecordsSelect<true>;
-    'vendor-scorecards': VendorScorecardsSelect<false> | VendorScorecardsSelect<true>;
     commitments: CommitmentsSelect<false> | CommitmentsSelect<true>;
     'account-reconciliations': AccountReconciliationsSelect<false> | AccountReconciliationsSelect<true>;
     'audit-reports': AuditReportsSelect<false> | AuditReportsSelect<true>;
@@ -4233,6 +4229,130 @@ export interface Party {
      */
     defaultWithholdingAccount?: (string | null) | GlAccount;
   };
+  /**
+   * SEPA Direct Debit mandates this customer signed (pain.008). Revoke or cancel a mandate; it is never removed.
+   */
+  mandates?:
+    | {
+        /**
+         * Unique mandate identifier carried in pain.008 MndtId.
+         */
+        mandateId: string;
+        localInstrument: 'CORE' | 'B2B';
+        status?: ('active' | 'suspended' | 'revoked' | 'cancelled' | 'expired') | null;
+        /**
+         * ISO 13616 IBAN of the debtor.
+         */
+        debtorIban: string;
+        /**
+         * ISO 9362 BIC.
+         */
+        debtorBic?: string | null;
+        /**
+         * Creditor identifier (CI) assigned by the regulator.
+         */
+        creditorIdentifier: string;
+        /**
+         * Date the debtor signed the mandate.
+         */
+        signatureDate: string;
+        signatureMethod?: ('wet_ink' | 'qualified_electronic' | 'advanced_electronic' | 'click_accept') | null;
+        /**
+         * The signed mandate (PDF) or the recorded consent.
+         */
+        mandateDocument?: (string | null) | Media;
+        /**
+         * Most recent collection under this mandate — restarts the 36 months.
+         */
+        lastCollectionAt?: string | null;
+        /**
+         * Computed: 36 months after the last collection, or after signature if never collected (EPC130-08).
+         */
+        expiryDate?: string | null;
+        /**
+         * Follows the dates: pending until the first collection, then recurring, expired after 36 months unused. Set "final" when the last collection is submitted.
+         */
+        sequenceState?: ('pending_first' | 'active_recurring' | 'final_submitted' | 'expired') | null;
+        /**
+         * Set by the server when the mandate is revoked.
+         */
+        revokedAt?: string | null;
+        revocationReason?: string | null;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Periodic evaluation of this vendor (ISO 9001 §8.4.1). A scorecard is kept, never removed.
+   */
+  scorecards?:
+    | {
+        /**
+         * e.g. 2026-Q1, 2026-FY.
+         */
+        periodLabel: string;
+        periodStartDate: string;
+        periodEndDate: string;
+        /**
+         * Procurement or quality manager who completed the scorecard.
+         */
+        evaluator: string | User;
+        metrics?: {
+          /**
+           * On-time delivery across the period.
+           */
+          onTimeDeliveryPercent?: number | null;
+          /**
+           * Receipts accepted without nonconformance.
+           */
+          qualityAcceptanceRate?: number | null;
+          /**
+           * Invoices matching the PO price.
+           */
+          priceAccuracyPercent?: number | null;
+          /**
+           * Average response time to RFQs and queries (hours).
+           */
+          responseTimeAvgHours?: number | null;
+          returnRatePercent?: number | null;
+          /**
+           * Optional ESG / supplier-sustainability score.
+           */
+          sustainabilityScore?: number | null;
+          /**
+           * ISO 27001 A.5.19 supplier information-security score.
+           */
+          cybersecurityScore?: number | null;
+        };
+        volumes?: {
+          /**
+           * Vendor invoices in the period (cents).
+           */
+          totalSpend?: number | null;
+          numberOfPurchaseOrders?: number | null;
+          numberOfReceipts?: number | null;
+          numberOfNonconformances?: number | null;
+          numberOfReturns?: number | null;
+        };
+        /**
+         * Composite score (0–100) the evaluator records.
+         */
+        overallScore?: number | null;
+        recommendation: 'preferred' | 'approved' | 'conditional' | 'probation' | 'delist';
+        status?: ('draft' | 'reviewed' | 'shared' | 'acknowledged' | 'closed') | null;
+        /**
+         * What the vendor must do — required for a conditional or probation recommendation.
+         */
+        improvementPlan?: string | null;
+        /**
+         * Discussed with the vendor in a business review.
+         */
+        reviewedWithVendor?: boolean | null;
+        reviewMeetingDate?: string | null;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   notes?: {
     /**
      * Internal notes
@@ -9877,7 +9997,7 @@ export interface PaymentRun {
          */
         remittanceReference?: string | null;
         /**
-         * pain.008 only — the SEPA SDD mandate id.
+         * pain.008 only — the SEPA SDD mandate id: an active, unexpired mandate on one of this tenant's customers.
          */
         mandateId?: string | null;
         /**
@@ -10166,166 +10286,6 @@ export interface Return {
    * Credit memo issued for the return.
    */
   creditMemo?: (string | null) | CreditMemo;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * SEPA Direct Debit mandate register. PaymentRuns of pain.008 reference these mandate ids.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "sepa-mandates".
- */
-export interface SepaMandate {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Unique mandate identifier carried in pain.008 MndtId.
-   */
-  mandateId: string;
-  localInstrument: 'CORE' | 'B2B';
-  debtorName: string;
-  /**
-   * ISO 13616 IBAN of the debtor.
-   */
-  debtorIban: string;
-  /**
-   * ISO 9362 BIC.
-   */
-  debtorBic?: string | null;
-  /**
-   * Optional link to the addresses register.
-   */
-  debtor?: (string | null) | Address;
-  /**
-   * Creditor identifier (CI) — country-specific format assigned by the regulator.
-   */
-  creditorIdentifier: string;
-  /**
-   * Date the debtor signed the mandate.
-   */
-  signatureDate: string;
-  /**
-   * Signed mandate file (PDF). Required evidence.
-   */
-  mandateDocument?: (string | null) | Media;
-  signatureMethod?: ('wet_ink' | 'qualified_electronic' | 'advanced_electronic' | 'click_accept') | null;
-  /**
-   * EPC130-08: a mandate becomes obsolete 36 months after the most recent collection. The auto-state-machine driven by lastCollectionAt.
-   */
-  sequenceState?: ('pending_first' | 'active_recurring' | 'final_submitted' | 'expired') | null;
-  /**
-   * Most recent direct-debit collection date — drives the 36-month rule.
-   */
-  lastCollectionAt?: string | null;
-  /**
-   * Computed: lastCollectionAt + 36 months (or signatureDate + 36 months if never collected).
-   */
-  expiryDate?: string | null;
-  revokedAt?: string | null;
-  revocationReason?: string | null;
-  status?: ('active' | 'suspended' | 'revoked' | 'cancelled' | 'expired') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * ISO 9001 §8.4 vendor performance scorecard. Periodic (typically quarterly). Drives renewal / probation / de-listing decision.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendor-scorecards".
- */
-export interface VendorScorecard {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  reference: string;
-  vendor: string | Party;
-  /**
-   * e.g. 2026-Q1, 2026-FY.
-   */
-  periodLabel: string;
-  periodStartDate: string;
-  periodEndDate: string;
-  /**
-   * Procurement / quality manager who completed the scorecard.
-   */
-  evaluator: string | User;
-  metrics?: {
-    /**
-     * OTD % across the period.
-     */
-    onTimeDeliveryPercent?: number | null;
-    /**
-     * % of receipts accepted without nonconformance.
-     */
-    qualityAcceptanceRate?: number | null;
-    /**
-     * % of invoices matching PO price.
-     */
-    priceAccuracyPercent?: number | null;
-    /**
-     * Average vendor response time to RFQs / queries (hours).
-     */
-    responseTimeAvgHours?: number | null;
-    returnRatePercent?: number | null;
-    /**
-     * Optional ESG / supplier-sustainability score.
-     */
-    sustainabilityScore?: number | null;
-    /**
-     * ISO 27001 A.5.19 supplier-information-security score.
-     */
-    cybersecurityScore?: number | null;
-  };
-  volumes?: {
-    /**
-     * Σ vendor invoices in period (cents).
-     */
-    totalSpend?: number | null;
-    numberOfPurchaseOrders?: number | null;
-    numberOfReceipts?: number | null;
-    numberOfNonconformances?: number | null;
-    numberOfReturns?: number | null;
-  };
-  /**
-   * Weighted composite score (0-100). Drives the recommendation.
-   */
-  overallScore?: number | null;
-  recommendation: 'preferred' | 'approved' | 'conditional' | 'probation' | 'delist';
-  /**
-   * Required when recommendation = conditional / probation — what the vendor must do.
-   */
-  improvementPlan?: string | null;
-  /**
-   * Was the scorecard discussed with the vendor in a QBR?
-   */
-  reviewedWithVendor?: boolean | null;
-  reviewMeetingDate?: string | null;
-  status?: ('draft' | 'reviewed' | 'shared' | 'acknowledged' | 'closed') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -21484,6 +21444,62 @@ export interface PartiesSelect<T extends boolean = true> {
         defaultExpenseAccount?: T;
         defaultWithholdingAccount?: T;
       };
+  mandates?:
+    | T
+    | {
+        mandateId?: T;
+        localInstrument?: T;
+        status?: T;
+        debtorIban?: T;
+        debtorBic?: T;
+        creditorIdentifier?: T;
+        signatureDate?: T;
+        signatureMethod?: T;
+        mandateDocument?: T;
+        lastCollectionAt?: T;
+        expiryDate?: T;
+        sequenceState?: T;
+        revokedAt?: T;
+        revocationReason?: T;
+        notes?: T;
+        id?: T;
+      };
+  scorecards?:
+    | T
+    | {
+        periodLabel?: T;
+        periodStartDate?: T;
+        periodEndDate?: T;
+        evaluator?: T;
+        metrics?:
+          | T
+          | {
+              onTimeDeliveryPercent?: T;
+              qualityAcceptanceRate?: T;
+              priceAccuracyPercent?: T;
+              responseTimeAvgHours?: T;
+              returnRatePercent?: T;
+              sustainabilityScore?: T;
+              cybersecurityScore?: T;
+            };
+        volumes?:
+          | T
+          | {
+              totalSpend?: T;
+              numberOfPurchaseOrders?: T;
+              numberOfReceipts?: T;
+              numberOfNonconformances?: T;
+              numberOfReturns?: T;
+            };
+        overallScore?: T;
+        recommendation?: T;
+        status?: T;
+        improvementPlan?: T;
+        reviewedWithVendor?: T;
+        reviewMeetingDate?: T;
+        notes?: T;
+        id?: T;
+      };
   notes?:
     | T
     | {
@@ -21785,38 +21801,6 @@ export interface SalesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "sepa-mandates_select".
- */
-export interface SepaMandatesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  mandateId?: T;
-  localInstrument?: T;
-  debtorName?: T;
-  debtorIban?: T;
-  debtorBic?: T;
-  debtor?: T;
-  creditorIdentifier?: T;
-  signatureDate?: T;
-  mandateDocument?: T;
-  signatureMethod?: T;
-  sequenceState?: T;
-  lastCollectionAt?: T;
-  expiryDate?: T;
-  revokedAt?: T;
-  revocationReason?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  handle?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "subscription-plans_select".
  */
 export interface SubscriptionPlansSelect<T extends boolean = true> {
@@ -21906,54 +21890,6 @@ export interface UsageRecordsSelect<T extends boolean = true> {
   currency?: T;
   amount?: T;
   invoice?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  handle?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendor-scorecards_select".
- */
-export interface VendorScorecardsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  vendor?: T;
-  periodLabel?: T;
-  periodStartDate?: T;
-  periodEndDate?: T;
-  evaluator?: T;
-  metrics?:
-    | T
-    | {
-        onTimeDeliveryPercent?: T;
-        qualityAcceptanceRate?: T;
-        priceAccuracyPercent?: T;
-        responseTimeAvgHours?: T;
-        returnRatePercent?: T;
-        sustainabilityScore?: T;
-        cybersecurityScore?: T;
-      };
-  volumes?:
-    | T
-    | {
-        totalSpend?: T;
-        numberOfPurchaseOrders?: T;
-        numberOfReceipts?: T;
-        numberOfNonconformances?: T;
-        numberOfReturns?: T;
-      };
-  overallScore?: T;
-  recommendation?: T;
-  improvementPlan?: T;
-  reviewedWithVendor?: T;
-  reviewMeetingDate?: T;
   status?: T;
   createdBy?: T;
   approvedBy?: T;
@@ -28711,12 +28647,10 @@ export interface CollectionQueryWidget {
       | 'receipts'
       | 'returns'
       | 'sales'
-      | 'sepa-mandates'
       | 'subscription-plans'
       | 'subscriptions'
       | 'terminals'
       | 'usage-records'
-      | 'vendor-scorecards'
       | 'commitments'
       | 'account-reconciliations'
       | 'audit-reports'
@@ -28929,12 +28863,10 @@ export interface ActivityWidget {
           | 'receipts'
           | 'returns'
           | 'sales'
-          | 'sepa-mandates'
           | 'subscription-plans'
           | 'subscriptions'
           | 'terminals'
           | 'usage-records'
-          | 'vendor-scorecards'
           | 'commitments'
           | 'account-reconciliations'
           | 'audit-reports'
@@ -29173,12 +29105,10 @@ export interface TaskCreateCollectionExport {
       | 'receipts'
       | 'returns'
       | 'sales'
-      | 'sepa-mandates'
       | 'subscription-plans'
       | 'subscriptions'
       | 'terminals'
       | 'usage-records'
-      | 'vendor-scorecards'
       | 'commitments'
       | 'account-reconciliations'
       | 'audit-reports'

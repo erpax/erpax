@@ -13,8 +13,8 @@ Each figure is computed from the source beside it whenever this page is generate
 | Figure | Value | Computed from |
 | --- | --- | --- |
 | Version | 1.0.26 | `package.json` |
-| Collections | 195 | `src/payload-types.ts`, Payload's generated `Config`, without Payload's own `payload-*` |
-| Migrations | 4, the latest `20261115_153312_fold_dunning` | `src/migrations` |
+| Collections | 193 | `src/payload-types.ts`, Payload's generated `Config`, without Payload's own `payload-*` |
+| Migrations | 5, the latest `20261115_165406_fold_parties` | `src/migrations` |
 | Kernel-checked theorems | 335 in 39 files: 239 axiom-free, 96 on Lean's standard axioms, 0 stubbed (sealed 2026-11-15) | `src/utilities/verify/lean/inventory.generated.json` |
 | License | CC-BY-NC-ND-4.0 | `package.json` |
 
