@@ -2,13 +2,13 @@ import { describe, expect, it } from 'vitest'
 import { generateMeta, shareImageURL } from '@/utilities/generate/meta'
 
 describe('generate/meta — og:image comes from what the page already stores', () => {
-  it('an uploaded SEO image wins, at its og size when the upload carries one', async () => {
+  it('an uploaded SEO image wins, as the original file (the Worker generates no image sizes)', async () => {
     const m = await generateMeta({
       doc: { slug: 'ledger', meta: { title: 'Ledger', description: 'd', image: { id: 1, url: '/media/x.png', sizes: { og: { url: '/media/x-og.png' } } } as never } },
       siteOrigin: 'https://erpax.test',
     })
     const images = (m.openGraph as { images: Array<{ url: string }> }).images
-    expect(images[0]!.url).toBe('https://erpax.test/media/x-og.png')
+    expect(images[0]!.url).toBe('https://erpax.test/media/x.png')
   })
 
   it('no upload: the image is the computed share image — SEO title and description over the slug\'s content-uuid, no Media row', async () => {

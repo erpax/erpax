@@ -1,4 +1,4 @@
-import { builtinModules, createRequire } from 'node:module'
+import { builtinModules } from 'node:module'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -11,20 +11,6 @@ import { PRODUCTION_FOLDS } from './src/utilities/deploy/fold'
 const withNextIntl = createNextIntlPlugin('./src/i18n/request/index.ts')
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url))
-
-/**
- * The real browser core of `file-type`, resolved THROUGH the package that depends on it.
- *
- * `file-type` is transitive, so there is no root `node_modules/file-type` to name and no
- * absolute path worth committing (pnpm's directory carries a version hash). Resolving it at
- * config load keeps the answer computed rather than declared — and the shim imports it under
- * `@erpax-shim/file-type-core` so the browser alias on `file-type` cannot swallow it.
- */
-const fileTypeCoreAbs = createRequire(
-  createRequire(import.meta.url).resolve('payload'),
-).resolve('file-type/core')
-/** Turbopack resolves an alias value relative to the project root; webpack takes the absolute. */
-const fileTypeCore = './' + path.relative(projectRoot, fileTypeCoreAbs)
 
 /**
  * Every Node built-in, stubbed `false` for the client bundle. The browser admin reaches the server
@@ -125,19 +111,6 @@ const nextConfig = {
       // esbuild stops on it. Stubbed, it is neither.
       'drizzle-kit/api': './.stubs/empty.cjs',
       'drizzle-kit': './.stubs/empty.cjs',
-      /*
-       * The shim adds ONE export the browser build of file-type omits (`fileTypeFromFile`, an
-       * fs path payload names and the browser never runs) and re-exports the rest of the real
-       * core. That re-export is the whole difficulty: Turbopack matches an alias by PREFIX, so
-       * aliasing `file-type` also captures `file-type/core` and the shim resolves to itself.
-       * webpack's `$` exact-match suffix does not apply here.
-       *
-       * So the shim imports the core under a name of its own, resolved at config load: file-type
-       * is a TRANSITIVE dependency (no `node_modules/file-type` at the root), so the path is
-       * found through the package that depends on it rather than written down.
-       */
-      '@erpax-shim/file-type-core': fileTypeCore,
-      'file-type': { browser: './file-type.browser-shim.mjs' },
     },
   },
   images: {
@@ -244,8 +217,7 @@ const nextConfig = {
     // Payload admin client components transitively import the server `payload` package (via
     // @payloadcms/ui's `shared` export → VersionPillLabel), dragging server-only leaves into the
     // browser bundle: node:-scheme built-ins (os/console/buffer/module/worker_threads/readline…) +
-    // undici (logger/pino-pretty, migration prompts) and file-type's fs-based `fileTypeFromFile`
-    // (upload paths). The client never executes those server paths, so strip the node: scheme and
+    // undici (logger/pino-pretty, migration prompts). The client never executes those server paths, so strip the node: scheme and
     // stub each server-only leaf out of the client bundle.
     if (!isServer) {
       webpackConfig.plugins.push(
@@ -256,14 +228,6 @@ const nextConfig = {
       webpackConfig.resolve.alias = {
         ...(webpackConfig.resolve.alias ?? {}),
         undici: false,
-        // file-type@21's browser entry (core.js) omits the fs-based `fileTypeFromFile`; redirect to
-        // a shim that keeps the browser-safe core and stubs that one server-only export. `$` = exact
-        // match so the shim's own `file-type/core` import still resolves to the real package.
-        'file-type$': path.join(projectRoot, 'file-type.browser-shim.mjs'),
-        // The shim imports the real core under this name so the TURBOPACK alias on `file-type`
-        // (prefix-matched) cannot swallow it. webpack reaches the same shim, so it needs the
-        // same name — one shim, both compilers.
-        '@erpax-shim/file-type-core': fileTypeCoreAbs,
       }
       webpackConfig.resolve.fallback = {
         ...(webpackConfig.resolve.fallback ?? {}),
