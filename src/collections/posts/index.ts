@@ -16,7 +16,6 @@ import { documentPreviewAdmin } from '@/utilities/shareds'
 import { defaultVersionedDrafts } from '@/utilities/shareds'
 import { codeLanguages, documentFeatures } from '@/utilities/default/lexical'
 import { Banner, Code, MediaBlock } from '@/blocks/config'
-import { ensureUniqueSlugWithinTenant } from '@/hooks/fields/shared/ensureUniqueSlugWithinTenant'
 import { postsBeforeChange } from '@/utilities/posts/hooks'
 import { populateAuthors } from '@/utilities/posts/hooks'
 import { revalidateDelete, revalidatePost } from '@/utilities/posts/hooks'
@@ -28,7 +27,6 @@ import {
   OverviewField,
   PreviewField,
 } from '@payloadcms/plugin-seo/fields'
-import { slugField } from 'payload'
 import { localeRecord } from '@/i18n'
 import { fillSeo, markdownField, publishedStates } from '@/seed/content'
 
@@ -46,6 +44,7 @@ import { fillSeo, markdownField, publishedStates } from '@/seed/content'
  */
 export const Posts: CollectionConfig = {
   slug: 'posts',
+  llmInstructions: 'Posts are the publications based on pages. Find by slug; select only the fields you need.',
   labels: {
     singular: localeRecord('posts.singular'),
     plural: localeRecord('posts.plural'),
@@ -269,22 +268,8 @@ export const Posts: CollectionConfig = {
         },
       ],
     },
-    slugField({
-      disableUnique: true,
-      overrides: (field) => {
-        const slugText = field.fields?.[1]
-        if (slugText && slugText.type === 'text') {
-          slugText.hooks = {
-            ...slugText.hooks,
-            beforeValidate: [
-              ...(slugText.hooks?.beforeValidate || []),
-              ensureUniqueSlugWithinTenant('posts'),
-            ],
-          }
-        }
-        return field
-      },
-    }),
+    // Payload's native slug field; `unique` becomes (tenant, slug) through the indexes plugin.
+    { name: 'slug', type: 'slug', useAsSlug: 'title', unique: true },
   ],
   hooks: {
     beforeValidate: [fillSeo],

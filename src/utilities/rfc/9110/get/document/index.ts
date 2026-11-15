@@ -6,7 +6,7 @@
  * @see ./cache.ts
  */
 
-import type { Config } from 'src/payload-types'
+import type { Config } from '@/payload-types'
 import { getCachedPayloadDocument } from '@/utilities/rfc/9110/cache'
 
 type Collection = keyof Config['collections']

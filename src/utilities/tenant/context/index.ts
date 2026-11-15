@@ -209,6 +209,7 @@ export async function resolveRequestConfig(
           collection: 'tenants',
           id: firstTenantRef as string | number,
           depth: 0,
+          overrideAccess: true,
         })) as TenantDocLike | null
       } catch {
         tenantDoc = null

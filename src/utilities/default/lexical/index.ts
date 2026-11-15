@@ -13,7 +13,7 @@
 import type { TextFieldSingleValidation } from 'payload'
 import {
   BlockquoteFeature,
-  EXPERIMENTAL_TableFeature,
+  TableFeature,
   InlineCodeFeature,
   OrderedListFeature,
   UnorderedListFeature,
@@ -50,7 +50,7 @@ export const documentFeatures = () => [
   OrderedListFeature(),
   InlineCodeFeature(),
   BlockquoteFeature(),
-  EXPERIMENTAL_TableFeature(),
+  TableFeature(),
 ]
 
 export const defaultLexical = lexicalEditor({

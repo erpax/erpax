@@ -45,7 +45,7 @@ export type { ShortUuidKind, ShortLookupResult, DisplayUuid, UuidDisplayComplian
 
 export {
   computeTypeUuid, registerType, getType, getTypeByUuid, listTypes,
-  descriptorFromZod, registerTypeFromZod, verifyType, checkTypeUuidCoverage, ensureBaselineTypesRegistered,
+  verifyType, checkTypeUuidCoverage, ensureBaselineTypesRegistered,
 } from '@/utilities/integrity/type-uuid'
 export type { TypeDescriptor, RegisteredType, TypeVerification, TypeUuidCoverageResult } from '@/utilities/integrity/type-uuid'
 

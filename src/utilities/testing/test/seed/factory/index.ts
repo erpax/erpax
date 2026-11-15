@@ -324,7 +324,7 @@ export const SEED_VALIDATION_REGISTRY: Readonly<Record<string, SeedValidationCon
       {
         field: 'slug',
         // Lowercase URL slug — letters, digits, single-hyphen separators.
-        // Pinned by Pages.slugField + ensureUniqueSlugWithinTenant convention.
+        // Pinned by the native slug field, unique per tenant through the indexes plugin.
         check: (v) => typeof v === 'string' && /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(v),
         message: 'Page: slug must be lowercase letters/digits with single-hyphen separators',
       },
@@ -788,6 +788,7 @@ export abstract class TestSeedFactory {
     const result = await this.payload.create({
       collection: collection as CollectionSlug,
       data: data as RequiredDataFromCollectionSlug<CollectionSlug>,
+      overrideAccess: true,
     });
 
     this.trackCreatedId(collection, result.id);
@@ -818,6 +819,7 @@ export abstract class TestSeedFactory {
     return await this.payload.find({
       collection: collection as CollectionSlug,
       where: query,
+      overrideAccess: true,
     });
   }
 
@@ -856,6 +858,7 @@ export abstract class TestSeedFactory {
           await this.payload.delete({
             collection: collection as CollectionSlug,
             id,
+            overrideAccess: true,
           });
           itemsDeleted++;
         } catch (error) {

@@ -126,6 +126,7 @@ export const generateReversingEntries: CollectionAfterChangeHook<ClosingEntryDat
         ],
       },
       limit: 1,
+      overrideAccess: true,
     })
 
     if (nextPeriodLockQuery.docs.length > 0) {
@@ -234,6 +235,7 @@ export const generateReversingEntries: CollectionAfterChangeHook<ClosingEntryDat
           reversingEntryId: reversalJournalEntryIds[index] || entry.reversingEntryId,
         })),
       },
+      overrideAccess: true,
     }))
 
     console.log(

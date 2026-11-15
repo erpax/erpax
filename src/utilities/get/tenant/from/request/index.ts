@@ -28,6 +28,7 @@ export async function getTenantFromRequest(headers: Headers): Promise<Tenant | n
       collection: 'tenants',
       id: tenantId,
       depth: 0,
+      overrideAccess: true,
     })
     return tenant
   } catch {

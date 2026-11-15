@@ -1,5 +1,4 @@
 import { CallToAction, Content, MediaBlock } from '@/blocks/config'
-import { slugField } from 'payload'
 import type { PayloadRequest } from 'payload'
 import { generatePreviewPath } from '@/utilities/rfc/3986'
 import type { CollectionOverride } from '@payloadcms/plugin-ecommerce/types'
@@ -229,7 +228,11 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
       hasMany: true,
       relationTo: 'categories',
     },
-    slugField(),
+    {
+      name: 'slug',
+      type: 'slug',
+      useAsSlug: 'title',
+    },
   ],
   hooks: {
     ...defaultCollection.hooks,

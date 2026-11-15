@@ -1,6 +1,6 @@
 {
   "name": "@erpax/admin",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Admin — who is here and what they may do: tenants, users, roles. An erpax app, delivered as one Payload plugin. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
@@ -47,10 +47,10 @@
     "admin"
   ],
   "dependencies": {
-    "@payloadcms/plugin-multi-tenant": "4.0.0-internal.38b7f1d",
+    "@payloadcms/plugin-multi-tenant": "4.0.0-beta.9",
     "uuid": "latest"
   },
   "peerDependencies": {
-    "payload": "4.0.0-internal.38b7f1d"
+    "payload": "4.0.0-beta.9"
   }
 }

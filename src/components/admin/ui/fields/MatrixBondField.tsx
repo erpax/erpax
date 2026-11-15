@@ -2,12 +2,12 @@
 
 import { bidirectionalCrossOf } from '@/utilities/uuid/matrix'
 import { Collapsible, RelationshipField } from '@payloadcms/ui'
-import type { RelationshipFieldClientComponent } from 'payload'
+import type { RelationshipFieldClientProps } from 'payload'
 import React, { useMemo } from 'react'
 
 const baseClass = 'erpax-matrix-bond'
 
-const MatrixBondField: RelationshipFieldClientComponent = ({ field, path }) => {
+const MatrixBondField: React.FC<RelationshipFieldClientProps> = ({ field, path }) => {
   const atomPath =
     typeof field.admin?.custom === 'object' &&
     field.admin?.custom !== null &&

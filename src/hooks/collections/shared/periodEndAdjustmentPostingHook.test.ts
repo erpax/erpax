@@ -61,16 +61,16 @@ beforeAll(async () => {
     /** Fields a REUSED row must carry for this run (a warm database may hold older values). */
     reconcile?: Record<string, unknown>,
   ): Promise<string> => {
-    const found = await payload.find({ collection: collection as never, where: where as never, limit: 1, depth: 0 })
+    const found = await payload.find({ collection: collection as never, where: where as never, limit: 1, depth: 0, overrideAccess: true })
     const hit = (found as { docs?: Record<string, unknown>[] }).docs?.[0]
     if (hit?.id !== undefined) {
       const id = String(hit.id)
       if (reconcile && Object.entries(reconcile).some(([k, v]) => String(hit[k] ?? '') !== String(v))) {
-        await payload.update({ collection: collection as never, id, data: reconcile as never })
+        await payload.update({ collection: collection as never, id, data: reconcile as never, overrideAccess: true })
       }
       return id
     }
-    const made = await payload.create({ collection: collection as never, data: data as never })
+    const made = await payload.create({ collection: collection as never, data: data as never, overrideAccess: true })
     return String((made as { id: unknown }).id)
   }
 

@@ -23,6 +23,7 @@
  */
 import type { CollectionBeforeValidateHook, Field, Payload, PayloadRequest, RichTextField, TextareaField } from 'payload'
 import { convertLexicalToMarkdown, convertMarkdownToLexical, editorConfigFactory } from '@payloadcms/richtext-lexical'
+import type { Page, Post } from '@/payload-types'
 import { contentAddress } from '@/seed/row'
 
 /** A document's slug: its path with the separators folded — unique where a leaf word is not. */
@@ -252,16 +253,23 @@ export const publishedStates = (element: string) => (value: unknown, { data }: {
   data?._status !== 'published' || (typeof value === 'string' && value.trim() !== '') || `A published document states its ${element} (ISO 15836-1).`
 
 /** Markdown as the stored state of one collection's rich-text field, using that field's own editor. */
-export function toLexical(payload: Pick<Payload, 'config'>, collection: 'pages' | 'posts', field: string, markdown: string) {
+/** The stored state of the rich-text field each collection's markdown body lands in. */
+type Body = {
+  pages: NonNullable<NonNullable<Extract<Page['layout'][number], { blockType: 'content' }>['columns']>[number]['richText']>
+  posts: Post['content']
+}
+
+export function toLexical<C extends 'pages' | 'posts'>(payload: Pick<Payload, 'config'>, collection: C, field: string, markdown: string): Body[C] {
   const all = payload.config.collections.find((c) => c.slug === collection)?.fields ?? []
   const block = BODY_BLOCK[collection]
   const fields = block ? (blockFields(all, block) ?? []) : all
   const target = richTextField(fields, field)
   if (!target) throw new Error(`seed/content: ${collection} has no rich-text field named ${field}`)
+  // The field's own editor config converts the markdown, so the state is that field's rich-text type.
   return convertMarkdownToLexical({
     editorConfig: editorConfigFactory.fromField({ field: target }),
     markdown: wikiToLinks(markdown),
-  })
+  }) as unknown as Body[C]
 }
 
 /**
@@ -302,7 +310,7 @@ export function documentMarkdown(doc: Record<string, unknown>): string {
 }
 
 /** Markdown → the stored state of a collection's rich-text field. `toLexical` is the real one. */
-export type Convert = (payload: Pick<Payload, 'config'>, collection: 'pages' | 'posts', field: string, markdown: string) => ReturnType<typeof convertMarkdownToLexical>
+export type Convert = typeof toLexical
 
 export interface LoadOptions {
   readonly req?: PayloadRequest
@@ -364,7 +372,6 @@ export async function loadPages(payload: Local, rows: readonly PageRow[], opts: 
     const data = {
       title: row.title,
       slug: row.slug,
-      generateSlug: false,
       seed: row.content,
       parent: row.parent === null ? null : (idOf.get(row.parent) ?? null),
       meta: { title: row.title, ...(row.description ? { description: row.description } : {}) },
@@ -376,11 +383,11 @@ export async function loadPages(payload: Local, rows: readonly PageRow[], opts: 
       ...(tenant === undefined ? {} : { tenant }),
     }
     if (id === undefined) {
-      const doc = await payload.create({ collection: 'pages', data: { ...data, publishedAt: new Date().toISOString() }, depth: 0, req, context: quiet() })
+      const doc = await payload.create({ collection: 'pages', data: { ...data, publishedAt: new Date().toISOString() }, depth: 0, req, context: quiet(), overrideAccess: true })
       idOf.set(row.slug, doc.id)
       created++
     } else {
-      await payload.update({ collection: 'pages', id, data, depth: 0, req, context: quiet() })
+      await payload.update({ collection: 'pages', id, data, depth: 0, req, context: quiet(), overrideAccess: true })
       updated++
     }
   }
@@ -399,10 +406,10 @@ export async function loadPosts(
 ): Promise<LoadResult> {
   const { req, tenant, category, convert = toLexical } = opts
   const scope = tenant === undefined ? {} : { tenant }
-  const categories = await payload.find({ collection: 'categories', where: { slug: { equals: slugOf(category.toLowerCase()) } }, depth: 0, limit: 1, req })
+  const categories = await payload.find({ collection: 'categories', where: { slug: { equals: slugOf(category.toLowerCase()) } }, depth: 0, limit: 1, req, overrideAccess: true })
   const categoryId =
     categories.docs[0]?.id ??
-    (await payload.create({ collection: 'categories', data: { title: category, slug: slugOf(category.toLowerCase()), ...scope }, depth: 0, req, context: quiet() })).id
+    (await payload.create({ collection: 'categories', data: { title: category, slug: slugOf(category.toLowerCase()), ...scope }, depth: 0, req, context: quiet(), overrideAccess: true })).id
   const pages = await existingBySlug(payload, 'pages', opts)
   const { idOf, seedOf } = await existingBySlug(payload, 'posts', opts)
 
@@ -426,7 +433,6 @@ export async function loadPosts(
     const data = {
       title: row.title,
       slug: row.slug,
-      generateSlug: false,
       seed: row.content,
       content: convert(payload, 'posts', 'content', row.markdown),
       categories: [categoryId],
@@ -436,11 +442,11 @@ export async function loadPosts(
       ...scope,
     }
     if (id === undefined) {
-      const doc = await payload.create({ collection: 'posts', data: { ...data, publishedAt: new Date().toISOString() }, depth: 0, req, context: quiet() })
+      const doc = await payload.create({ collection: 'posts', data: { ...data, publishedAt: new Date().toISOString() }, depth: 0, req, context: quiet(), overrideAccess: true })
       idOf.set(row.slug, doc.id)
       created++
     } else {
-      await payload.update({ collection: 'posts', id, data, depth: 0, req, context: quiet() })
+      await payload.update({ collection: 'posts', id, data, depth: 0, req, context: quiet(), overrideAccess: true })
       updated++
     }
     touched.push(row)
@@ -449,7 +455,7 @@ export async function loadPosts(
     const related = row.related.map((s) => idOf.get(s)).filter((x): x is string => x !== undefined)
     for (const s of row.related) if (!idOf.has(s)) unresolved.add(s)
     if (related.length) {
-      await payload.update({ collection: 'posts', id: idOf.get(row.slug)!, data: { relatedPosts: related }, depth: 0, req, context: quiet() })
+      await payload.update({ collection: 'posts', id: idOf.get(row.slug)!, data: { relatedPosts: related }, depth: 0, req, context: quiet(), overrideAccess: true })
     }
   }
   return { created, updated, unchanged, unresolved: [...unresolved].sort() }
@@ -470,7 +476,7 @@ export interface RedirectRow {
 export async function loadRedirects(payload: Local, rows: readonly RedirectRow[], opts: LoadOptions = {}): Promise<LoadResult> {
   const { req } = opts
   const pages = await existingBySlug(payload, 'pages', opts)
-  const found = await payload.find({ collection: 'redirects', depth: 0, pagination: false, req, select: { from: true } })
+  const found = await payload.find({ collection: 'redirects', depth: 0, pagination: false, req, select: { from: true }, overrideAccess: true })
   const present = new Set(found.docs.map((d) => d.from))
   let created = 0
   let unchanged = 0
@@ -485,9 +491,9 @@ export async function loadRedirects(payload: Local, rows: readonly RedirectRow[]
       unresolved.push(row.page)
       continue
     }
-    await payload.create({ collection: 'redirects', data: { from: row.from, to: { type: 'reference', reference: { relationTo: 'pages', value: target } } }, depth: 0, req })
+    await payload.create({ collection: 'redirects', data: { from: row.from, to: { type: 'reference', reference: { relationTo: 'pages', value: target } } }, depth: 0, req, overrideAccess: true })
     const retired = pages.idOf.get(row.from.replace(/^\//, ''))
-    if (retired !== undefined) await payload.update({ collection: 'pages', id: retired, data: { _status: 'draft' }, depth: 0, req, context: quiet() })
+    if (retired !== undefined) await payload.update({ collection: 'pages', id: retired, data: { _status: 'draft' }, depth: 0, req, context: quiet(), overrideAccess: true })
     created++
   }
   return { created, updated: 0, unchanged, unresolved: [...new Set(unresolved)].sort() }

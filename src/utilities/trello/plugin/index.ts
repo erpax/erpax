@@ -135,6 +135,7 @@ export function trelloAfterChange(mapping: CardMapping, client: TrelloClient): C
         data: { [cardFieldOf(mapping)]: cardId },
         context: { [SYNC_CONTEXT_KEY]: true },
         req,
+        overrideAccess: true,
       })
     }
     return doc

@@ -17,7 +17,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`_work_orders_v_version_version_lot_work_phase_idx\` ON \`_work_orders_v\` (\`version_lot_work_phase_id\`);`)
   await db.run(sql`ALTER TABLE \`_work_orders_v\` DROP COLUMN \`version_lot_variant_code\`;`)
   await db.run(sql`ALTER TABLE \`_work_orders_v\` DROP COLUMN \`version_lot_work_phase_code\`;`)
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'operations', entity: 'collection', fieldPath: 'breadcrumbs', defaultLocale: 'en', req })
 }
 
 export async function down({ db, payload, req }: MigrateDownArgs): Promise<void> {
@@ -166,5 +165,4 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`CREATE INDEX \`_work_orders_v_version_version_created_at_idx\` ON \`_work_orders_v\` (\`version_created_at\`);`)
   await db.run(sql`CREATE INDEX \`_work_orders_v_created_at_idx\` ON \`_work_orders_v\` (\`created_at\`);`)
   await db.run(sql`CREATE INDEX \`_work_orders_v_updated_at_idx\` ON \`_work_orders_v\` (\`updated_at\`);`)
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'operations', entity: 'collection', fieldPath: 'breadcrumbs', defaultLocale: 'en', req })
 }

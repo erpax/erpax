@@ -450,7 +450,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`ALTER TABLE \`_tax_jurisdictions_v\` ADD \`version_banking_requirements\` text;`)
   await db.run(sql`ALTER TABLE \`_tax_jurisdictions_v\` ADD \`version_is_active\` integer DEFAULT true;`)
   await db.run(sql`CREATE INDEX \`_tax_jurisdictions_v_version_version_parent_jurisdiction_idx\` ON \`_tax_jurisdictions_v\` (\`version_parent_jurisdiction_id\`);`)
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'operations', entity: 'collection', fieldPath: 'breadcrumbs', defaultLocale: 'en', req })
 }
 
 export async function down({ db, payload, req }: MigrateDownArgs): Promise<void> {
@@ -1027,5 +1026,4 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`CREATE INDEX \`_tax_jurisdictions_v_version_version_created_at_idx\` ON \`_tax_jurisdictions_v\` (\`version_created_at\`);`)
   await db.run(sql`CREATE INDEX \`_tax_jurisdictions_v_created_at_idx\` ON \`_tax_jurisdictions_v\` (\`created_at\`);`)
   await db.run(sql`CREATE INDEX \`_tax_jurisdictions_v_updated_at_idx\` ON \`_tax_jurisdictions_v\` (\`updated_at\`);`)
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'operations', entity: 'collection', fieldPath: 'breadcrumbs', defaultLocale: 'en', req })
 }

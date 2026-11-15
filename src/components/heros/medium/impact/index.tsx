@@ -3,7 +3,7 @@ import React from 'react'
 import type { Page } from '@/utilities/types'
 
 import { CMSLink } from '@/components/link/component'
-import { MediaComponent as Media } from '@/collections/media'
+import { Media } from '@/components/media/Component'
 import RichText from '@/components/rich/text'
 
 export const MediumImpactHero: React.FC<Page['hero']> = ({ links, media, richText }) => {

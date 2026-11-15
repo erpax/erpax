@@ -186,6 +186,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
         where: {
           id: { equals: auditReportRef },
         },
+        overrideAccess: true,
       })
 
       if (auditQuery.docs.length > 0) {
@@ -222,6 +223,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
         where: {
           id: { equals: consolidationRef },
         },
+        overrideAccess: true,
       })
 
       if (consolidationQuery.docs.length > 0) {
@@ -252,6 +254,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
       where: {
         fiscalYear: { equals: data.fiscalYear },
       },
+      overrideAccess: true,
     })
 
     if (fiscalPeriodsQuery.docs.length > 0) {

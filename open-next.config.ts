@@ -48,5 +48,5 @@ export default {
   // 2026-09-11: the Turbopack deploy build packed to 23.4 MB gz against Cloudflare's 10 MiB ceiling,
   // with the matrix bundled three times. The live 09-02 Worker was a webpack build.
   buildCommand:
-    'node scripts/ensure-mcp-patch.mjs && node scripts/ensure-image-size-patch.mjs && pnpm build:next:webpack && node scripts/stub-bundle-leaves.mjs',
+    'pnpm build:next:webpack && node scripts/stub-bundle-leaves.mjs',
 }

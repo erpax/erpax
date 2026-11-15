@@ -55,7 +55,6 @@
  * @audit ISO 19011:2018 §6.4.6 (type evolution audit-trailed)
  */
 
-import { z, type ZodTypeAny } from 'zod'
 import { computeContentUuid, jcsCanonicalize } from '@/utilities/integrity/content'
 
 const TYPE_REGISTRY_NS = 'erpax-type-registry'
@@ -147,68 +146,17 @@ export function getType(name: string): RegisteredType | undefined { return TYPE_
 export function getTypeByUuid(uuid: string): RegisteredType | undefined { return TYPE_REGISTRY_BY_UUID.get(uuid) }
 export function listTypes(): ReadonlyArray<RegisteredType> { return [...TYPE_REGISTRY.values()] }
 
-// ─── Zod ↔ TypeDescriptor adapter ──────────────────────────────────
+// ─── Descriptor builder ──────────────────────────────────────────────
 
-/**
- * Walk a Zod schema and emit a TypeDescriptor. Used by every place
- * that already declares Zod (MCP tool params, voting kinds, etc.)
- * so a single source-of-truth produces both runtime validation AND
- * the type-uuid.
- */
-export function descriptorFromZod(schema: ZodTypeAny): TypeDescriptor {
-  const def = (schema as { _def?: { typeName?: string } })._def
-  const tn = def?.typeName
-  switch (tn) {
-    case 'ZodString':  return { kind: 'string' }
-    case 'ZodNumber':  return { kind: 'number' }
-    case 'ZodBoolean': return { kind: 'boolean' }
-    case 'ZodNull':    return { kind: 'null' }
-    case 'ZodLiteral': {
-      const value = (schema as unknown as { _def: { value: unknown } })._def.value
-      return { kind: 'literal', literal: value as string | number | boolean | null }
-    }
-    case 'ZodEnum': {
-      const values = (schema as unknown as { _def: { values: ReadonlyArray<string> } })._def.values
-      return { kind: 'enum', enumValues: [...values] }
-    }
-    case 'ZodArray': {
-      const inner = (schema as unknown as { _def: { type: ZodTypeAny } })._def.type
-      return { kind: 'array', items: descriptorFromZod(inner) }
-    }
-    case 'ZodTuple': {
-      const items = (schema as unknown as { _def: { items: ReadonlyArray<ZodTypeAny> } })._def.items
-      return { kind: 'tuple', itemsTuple: items.map(descriptorFromZod) }
-    }
-    case 'ZodObject': {
-      const shape = (schema as unknown as { _def: { shape: () => Record<string, ZodTypeAny> } })._def.shape()
-      const properties: Record<string, TypeDescriptor> = {}
-      const required: string[] = []
-      for (const [k, v] of Object.entries(shape)) {
-        properties[k] = descriptorFromZod(v)
-        const inner = (v as { _def?: { typeName?: string } })._def
-        if (inner?.typeName !== 'ZodOptional') required.push(k)
-      }
-      return { kind: 'object', properties, required: required.sort() }
-    }
-    case 'ZodOptional': {
-      const inner = (schema as unknown as { _def: { innerType: ZodTypeAny } })._def.innerType
-      return descriptorFromZod(inner)
-    }
-    case 'ZodUnion': {
-      const opts = (schema as unknown as { _def: { options: ReadonlyArray<ZodTypeAny> } })._def.options
-      return { kind: 'union', unionMembers: opts.map(descriptorFromZod) }
-    }
-    case 'ZodRecord': {
-      const valueType = (schema as unknown as { _def: { valueType: ZodTypeAny } })._def.valueType
-      return { kind: 'record', recordValueType: descriptorFromZod(valueType) }
-    }
-    default: return { kind: 'unknown' }
-  }
-}
-
-/** Convenience — register a type from a Zod schema. */
-export function registerTypeFromZod(args: { name: string; schema: ZodTypeAny; version?: string }): RegisteredType {
-  return registerType({ name: args.name, descriptor: descriptorFromZod(args.schema), version: args.version })
+/** Build descriptors directly: every key of an object is required, sorted for determinism. */
+const t = {
+  string: { kind: 'string' } as TypeDescriptor,
+  unknown: { kind: 'unknown' } as TypeDescriptor,
+  literal: (literal: string | number | boolean | null): TypeDescriptor => ({ kind: 'literal', literal }),
+  enumOf: (...enumValues: string[]): TypeDescriptor => ({ kind: 'enum', enumValues }),
+  record: (recordValueType: TypeDescriptor): TypeDescriptor => ({ kind: 'record', recordValueType }),
+  union: (...unionMembers: TypeDescriptor[]): TypeDescriptor => ({ kind: 'union', unionMembers }),
+  object: (properties: Record<string, TypeDescriptor>): TypeDescriptor => ({ kind: 'object', properties, required: Object.keys(properties).sort() }),
 }
 
 // ─── Verification ──────────────────────────────────────────────────
@@ -281,7 +229,7 @@ export function checkTypeUuidCoverage(): TypeUuidCoverageResult {
 /**
  * Eagerly register the baseline types so the boot suite passes Law 47
  * without requiring every domain to register at module-load. Production
- * domains call `registerTypeFromZod` for their own types; this function
+ * domains call `registerType` for their own types; this function
  * just primes the registry with the platform-mandated minimum.
  */
 let baselineRegistered = false
@@ -292,63 +240,61 @@ export function ensureBaselineTypesRegistered(): void {
   // AgentEffect — discriminated union (slice DDDDD).
   registerType({
     name: 'AgentEffect',
-    descriptor: descriptorFromZod(z.union([
-      z.object({ kind: z.literal('create'), collection: z.string(), data: z.unknown() }),
-      z.object({ kind: z.literal('update'), collection: z.string(), id: z.string(), patch: z.unknown() }),
-      z.object({ kind: z.literal('notify'), channel: z.string(), templateKey: z.string(), vars: z.record(z.unknown()) }),
-      z.object({ kind: z.literal('audit'), leaf: z.record(z.unknown()) }),
-      z.object({ kind: z.literal('escalate'), severity: z.string(), templateKey: z.string(), vars: z.record(z.unknown()) }),
-      z.object({ kind: z.literal('emit'), event: z.record(z.unknown()) }),
-      z.object({ kind: z.literal('capture'), frame: z.record(z.unknown()) }),
-    ])),
+    descriptor: t.union(
+      t.object({ kind: t.literal('create'), collection: t.string, data: t.unknown }),
+      t.object({ kind: t.literal('update'), collection: t.string, id: t.string, patch: t.unknown }),
+      t.object({ kind: t.literal('notify'), channel: t.string, templateKey: t.string, vars: t.record(t.unknown) }),
+      t.object({ kind: t.literal('audit'), leaf: t.record(t.unknown) }),
+      t.object({ kind: t.literal('escalate'), severity: t.string, templateKey: t.string, vars: t.record(t.unknown) }),
+      t.object({ kind: t.literal('emit'), event: t.record(t.unknown) }),
+      t.object({ kind: t.literal('capture'), frame: t.record(t.unknown) }),
+    ),
   })
 
   registerType({
     name: 'DomainEvent',
-    descriptor: descriptorFromZod(z.object({
-      id: z.string(), tenantId: z.string(),
-      payload: z.record(z.unknown()), emittedAt: z.string(),
-    })),
+    descriptor: t.object({
+      id: t.string, tenantId: t.string,
+      payload: t.record(t.unknown), emittedAt: t.string,
+    }),
   })
 
   registerType({
     name: 'AuditLeaf',
-    descriptor: descriptorFromZod(z.object({
-      tenantId: z.string(), subjectCollection: z.string(),
-      subjectId: z.string(), action: z.string(),
-    })),
+    descriptor: t.object({
+      tenantId: t.string, subjectCollection: t.string,
+      subjectId: t.string, action: t.string,
+    }),
   })
 
   registerType({
     name: 'BallotKind',
-    descriptor: descriptorFromZod(z.enum([
-      'binary', 'choice-one', 'rank', 'rating-1to5', 'rating-1to10', 'sentiment-pos-neg',
-    ])),
+    descriptor: t.enumOf('binary', 'choice-one', 'rank', 'rating-1to5', 'rating-1to10', 'sentiment-pos-neg'),
   })
 
   registerType({
     name: 'PageSeed',
-    descriptor: descriptorFromZod(z.object({
-      slug: z.string(), title: z.string(), locale: z.string(),
-      heroSection: z.string(), bodyHtml: z.string(),
-      seedSource: z.enum(['e2e-multimedia', 'spec-corpus', 'federation']),
-    })),
+    descriptor: t.object({
+      slug: t.string, title: t.string, locale: t.string,
+      heroSection: t.string, bodyHtml: t.string,
+      seedSource: t.enumOf('e2e-multimedia', 'spec-corpus', 'federation'),
+    }),
   })
 
   registerType({
     name: 'SeoVortexFace',
-    descriptor: descriptorFromZod(z.object({
-      url: z.string(), title: z.string(), description: z.string(),
-      schemaType: z.string(), ogType: z.string(),
-      contentUuid: z.string(),
-    })),
+    descriptor: t.object({
+      url: t.string, title: t.string, description: t.string,
+      schemaType: t.string, ogType: t.string,
+      contentUuid: t.string,
+    }),
   })
 
   registerType({
     name: 'CollectionSpec',
-    descriptor: descriptorFromZod(z.object({
-      slug: z.string(), filePath: z.string(),
-      title: z.string(), description: z.string(),
-    })),
+    descriptor: t.object({
+      slug: t.string, filePath: t.string,
+      title: t.string, description: t.string,
+    }),
   })
 }

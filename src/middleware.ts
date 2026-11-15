@@ -20,9 +20,8 @@ const supportedLocaleSet = new Set<string>(supportedLocales)
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  // `<app>.<domain>/mcp` is the app's MCP server; the endpoint picks the app by host (src/plugins/mcp/apps).
-  const host = (request.headers.get('x-forwarded-host') ?? request.headers.get('host') ?? '').split(':')[0]!
-  if (pathname === '/mcp' && host.split('.').length >= 3) {
+  // `/mcp` is the MCP gateway on every host, `<app>.<domain>/mcp` included: Payload access decides what a caller sees.
+  if (pathname === '/mcp') {
     const url = request.nextUrl.clone()
     url.pathname = '/api/mcp'
     return NextResponse.rewrite(url)

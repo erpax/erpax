@@ -78,6 +78,7 @@ export function getCachedPayloadDocument<T extends Collection>(
             equals: slug,
           },
         },
+        overrideAccess: true,
       })
       return result.docs[0]
     },
@@ -107,6 +108,7 @@ export function getCachedPayloadGlobal<T extends Global>(
         slug,
         depth,
         locale: localeKey as TypedLocale,
+        overrideAccess: true,
       })
     },
   )
@@ -164,6 +166,7 @@ export function getCachedPayloadCollectionAll<T extends Collection>(
         depth,
         limit: 0,
         pagination: false,
+        overrideAccess: true,
       })
     },
   )
@@ -190,6 +193,7 @@ export function getCachedPayloadById<T extends Collection>(
         collection,
         id,
         depth,
+        overrideAccess: true,
       })
     },
   )
@@ -230,6 +234,7 @@ export function getCachedPayloadLocalizedDocument<T extends Collection>(
             equals: slug,
           },
         },
+        overrideAccess: true,
       })
       return result.docs[0]
     },

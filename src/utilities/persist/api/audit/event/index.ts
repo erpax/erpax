@@ -92,6 +92,7 @@ export async function persistApiAuditEvent<T>(
     collection: 'api-audit-events',
     where: { eventId: { equals: eventId } },
     limit: 1,
+    overrideAccess: true,
   })) as unknown as { docs: Array<{ id: string }> }
 
   // Audit rows carry dynamic external-API json (payloadIn/payloadOut), so the
@@ -103,10 +104,11 @@ export async function persistApiAuditEvent<T>(
       collection: 'api-audit-events',
       id: existing.docs[0].id,
       data,
+      overrideAccess: true,
     })
     return { id: String(updated.id) }
   }
-  const created = await payload.create({ collection: 'api-audit-events', data })
+  const created = await payload.create({ collection: 'api-audit-events', data, overrideAccess: true })
   return { id: String(created.id) }
 }
 

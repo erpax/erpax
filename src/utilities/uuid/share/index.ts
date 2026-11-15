@@ -228,6 +228,7 @@ export async function grantShare<G, T>(
       ],
     },
     limit: 1,
+    overrideAccess: true,
   }) as unknown as { docs: Array<Record<string, unknown>> }
   if (existing.docs && existing.docs.length > 0) {
     const row = existing.docs[0]!
@@ -282,6 +283,7 @@ export async function grantShare<G, T>(
       sealed,
       revoked: false,
     },
+    overrideAccess: true,
   }) as { id: string }
 
   return {
@@ -343,6 +345,7 @@ export async function checkShare<G, T>(
       ],
     },
     limit: 50,
+    overrideAccess: true,
   }) as unknown as { docs: Array<{ id: string; accessRole: AccessRole }> }
 
   if (!res.docs || res.docs.length === 0) {
@@ -408,6 +411,7 @@ export async function revokeShare(
       ],
     },
     limit: 1,
+    overrideAccess: true,
   }) as unknown as { docs: Array<{ id: string; accessRole: AccessRole; sealed: boolean }> }
 
   if (!res.docs || res.docs.length === 0) {
@@ -439,6 +443,7 @@ export async function revokeShare(
       revokedAt: new Date().toISOString(),
       revokeChainLeafUuid: audit.chainLeafUuid,
     },
+    overrideAccess: true,
   })
 
   return {
@@ -482,6 +487,7 @@ export async function listShares(
     collection: 'shares',
     where,
     limit: params.limit ?? 100,
+    overrideAccess: true,
   }) as unknown as { docs: Array<Record<string, unknown>> }
 
   return res.docs.map((row) => ({

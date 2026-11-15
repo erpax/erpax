@@ -1,6 +1,6 @@
 {
   "name": "@erpax/sales",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Sales — selling: parties, orders, invoices, subscriptions. An erpax app, delivered as one Payload plugin. CC-BY-NC-ND-4.0, or commercial via license@erpax.com.",
   "license": "CC-BY-NC-ND-4.0",
   "type": "module",
@@ -47,8 +47,7 @@
     "sales"
   ],
   "dependencies": {
-    "typescript": "5.9.3",
-    "uuid": "latest",
-    "zod": "3.25.76"
+    "typescript": "6.0.3",
+    "uuid": "latest"
   }
 }

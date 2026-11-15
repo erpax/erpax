@@ -43,6 +43,7 @@ export const setCookieBasedOnDomain: CollectionAfterLoginHook = async ({ req, us
           ...(hostNoPort !== hostHeader ? [{ domain: { equals: hostNoPort } }] : []),
         ],
       },
+      overrideAccess: true,
     })
 
     if (relatedOrg?.docs?.length) {

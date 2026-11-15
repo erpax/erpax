@@ -114,6 +114,7 @@ export async function resolveByUuid<T extends Record<string, unknown>>(args: {
     where: { uuid: { equals: uuid }, tenant: { equals: tenantId } },
     limit: 1,
     pagination: false,
+    overrideAccess: true,
   })
   const doc = result.docs[0] as (Record<string, unknown> & { uuid?: string }) | undefined
   if (!doc) return null
@@ -165,6 +166,7 @@ export async function findDanglingRefs(args: {
         where: { tenant: { equals: tenantId } },
         limit,
         pagination: false,
+        overrideAccess: true,
       })
     } catch {
       continue

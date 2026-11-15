@@ -7,7 +7,7 @@
  * @see ./cache.ts
  */
 
-import type { Config } from 'src/payload-types'
+import type { Config } from '@/payload-types'
 import type { SupportedLocale } from '@/i18n/localization'
 import { defaultLocale } from '@/i18n/localization'
 import { getCachedPayloadGlobal } from '@/utilities/rfc/9110/cache'

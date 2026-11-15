@@ -69,7 +69,8 @@ export const versionsPlugin =
       collections: (config.collections ?? []).map((collection) => {
         // The richer config wins; never override an explicit versions setting.
         if (collection.versions !== undefined) return collection
-        if (exclude.has(collection.slug)) return collection
+        // Payload 4 versions every collection by default, so an excluded one says so explicitly.
+        if (exclude.has(collection.slug)) return { ...collection, versions: false }
         // History-only (no drafts) — every change is a bounded version row, with
         // public read behavior unchanged.
         return { ...collection, versions: { maxPerDoc } }

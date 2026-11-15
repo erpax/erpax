@@ -78,7 +78,7 @@ describe('subscriptionGates', () => {
       })
 
       const gate = requireSubscriptionPlan(['pro', 'enterprise'])
-      const result = await gate({ req })
+      const result = await gate({ req, slug: 'invoices' })
 
       expect(result).toBe(true)
     })
@@ -95,7 +95,7 @@ describe('subscriptionGates', () => {
       })
 
       const gate = requireSubscriptionPlan(['pro', 'enterprise'])
-      const result = await gate({ req })
+      const result = await gate({ req, slug: 'invoices' })
 
       expect(result).toBe(false)
     })
@@ -113,7 +113,7 @@ describe('subscriptionGates', () => {
       })
 
       const gate = requireSubscriptionPlan(['pro'])
-      const result = await gate({ req })
+      const result = await gate({ req, slug: 'invoices' })
 
       expect(result).toBe(true)
     })
@@ -128,7 +128,7 @@ describe('subscriptionGates', () => {
       })
 
       const gate = requireSubscriptionPlan(['pro'])
-      const result = await gate({ req })
+      const result = await gate({ req, slug: 'invoices' })
 
       expect(result).toBe(false)
     })
@@ -136,7 +136,7 @@ describe('subscriptionGates', () => {
     it('should deny when no tenant', async () => {
       const req = createMockRequest({ user: { tenant: null } })
       const gate = requireSubscriptionPlan(['pro'])
-      const result = await gate({ req })
+      const result = await gate({ req, slug: 'invoices' })
 
       expect(result).toBe(false)
     })
@@ -151,7 +151,7 @@ describe('subscriptionGates', () => {
       })
 
       const gate = blockWriteIfSuspended()
-      const result = await gate({ req })
+      const result = await gate({ req, slug: 'invoices' })
 
       expect(result).toBe(true)
     })
@@ -166,7 +166,7 @@ describe('subscriptionGates', () => {
       })
 
       const gate = blockWriteIfSuspended()
-      const result = await gate({ req })
+      const result = await gate({ req, slug: 'invoices' })
 
       expect(result).toBe(false)
     })
@@ -181,7 +181,7 @@ describe('subscriptionGates', () => {
       })
 
       const gate = blockWriteIfSuspended()
-      const result = await gate({ req })
+      const result = await gate({ req, slug: 'invoices' })
 
       expect(result).toBe(false)
     })
@@ -197,7 +197,7 @@ describe('subscriptionGates', () => {
         })
 
         const gate = blockWriteIfSuspended()
-        const result = await gate({ req })
+        const result = await gate({ req, slug: 'invoices' })
 
         expect(result).toBe(true)
       }
@@ -221,7 +221,7 @@ describe('subscriptionGates', () => {
       })
 
       const gate = allowReadDenyWriteIfPastDue()
-      const result = await gate({ req })
+      const result = await gate({ req, slug: 'invoices' })
 
       expect(result).toBe(false)
     })
@@ -236,7 +236,7 @@ describe('subscriptionGates', () => {
       })
 
       const gate = allowReadDenyWriteIfPastDue()
-      const result = await gate({ req })
+      const result = await gate({ req, slug: 'invoices' })
 
       expect(result).toBe(false)
     })
@@ -251,7 +251,7 @@ describe('subscriptionGates', () => {
       })
 
       const gate = allowReadDenyWriteIfPastDue()
-      const result = await gate({ req })
+      const result = await gate({ req, slug: 'invoices' })
 
       expect(result).toBe(false)
     })
@@ -266,7 +266,7 @@ describe('subscriptionGates', () => {
       })
 
       const gate = allowReadDenyWriteIfPastDue()
-      const result = await gate({ req })
+      const result = await gate({ req, slug: 'invoices' })
 
       expect(result).toBe(true)
     })

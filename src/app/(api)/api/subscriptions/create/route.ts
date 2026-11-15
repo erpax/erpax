@@ -14,7 +14,7 @@
  */
 
 import config from '@payload-config'
-import { createLocalReq, getPayload } from 'payload'
+import { createPayloadRequest, getPayload } from 'payload'
 import Stripe from 'stripe'
 import { tenantIdFromRelation } from '@/utilities/tenant/remote/secret'
 
@@ -38,7 +38,7 @@ export async function POST(request: Request) {
     // (req.user) context; overrideAccess is intentional and required (the endpoint must
     // read the tenant's own super-admin-gated Stripe secret), and tenant scoping is
     // applied explicitly via the where-clauses below.
-    const req = await createLocalReq({ user }, payload)
+    const req = await createPayloadRequest({ payload, user })
 
     const body = await request.json()
     const { planSlug, paymentMethodId } = body as { planSlug?: string; paymentMethodId?: string }

@@ -90,6 +90,7 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
         },
         sort: '-closingDate',
         limit: 1,
+        overrideAccess: true,
       })
 
       if (closingQuery.docs.length > 0) {
@@ -140,6 +141,7 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
               { transactionDate: { less_than_equal: data.periodClosingDate } },
             ],
           },
+          overrideAccess: true,
         })
 
         // Query receivables to ← from (same as payables from → to)
@@ -152,6 +154,7 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
               { transactionDate: { less_than_equal: data.periodClosingDate } },
             ],
           },
+          overrideAccess: true,
         })
 
         // Aggregate by currency

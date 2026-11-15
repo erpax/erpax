@@ -21,7 +21,6 @@ import { safeCaptureRoute } from '../../helpers/evidence'
 import { getSeedsByCategory } from '@/utilities/testing'
 
 // Force registration side-effects to fire by importing the seed barrels.
-import '@/plugins/accounting/seeds'
 
 const CATEGORY = 'admin-data' as const
 const BASE = 'http://localhost:3000'

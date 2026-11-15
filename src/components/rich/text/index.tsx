@@ -9,29 +9,32 @@
  * @see src/components/README.md
  */
 
-import { MediaBlock } from '@/blocks'
+// Each block from its own component file: the @/blocks barrel also carries server-only blocks
+// (archive reads the Payload config), and this component renders in the browser too.
+import { MediaBlock } from '@/blocks/media/block/Component'
 import {
   DefaultNodeTypes,
   SerializedBlockNode,
   SerializedLinkNode,
-  type DefaultTypedEditorState,
 } from '@payloadcms/richtext-lexical'
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
 import {
   JSXConvertersFunction,
   LinkJSXConverter,
   RichText as ConvertRichText,
 } from '@payloadcms/richtext-lexical/react'
 
-import { CodeBlock, CodeBlockProps } from '@/blocks'
+import { CodeBlock, type CodeBlockProps } from '@/blocks/code/Component'
 
 import type {
   BannerBlock as BannerBlockProps,
   CallToActionBlock as CTABlockProps,
   MediaBlock as MediaBlockProps,
 } from '@/utilities/types'
-import { BannerBlock } from '@/blocks'
-import { CallToActionBlock } from '@/blocks'
-import { codedFromRegistry, ERR } from '@/utilities/error'
+import { BannerBlock } from '@/blocks/banner/Component'
+import { CallToActionBlock } from '@/blocks/call/to/action/Component'
+import { codedFromRegistry } from '@/utilities/error/codedRegistry'
+import { ERR } from '@/utilities/error/errorCodes'
 import { cn } from '@/components/ui'
 
 type NodeTypes =
@@ -75,7 +78,7 @@ const jsxConverters: JSXConvertersFunction<NodeTypes> = ({ defaultConverters }) 
 })
 
 type Props = {
-  data: DefaultTypedEditorState
+  data: SerializedEditorState
   enableGutter?: boolean
   enableProse?: boolean
 } & React.HTMLAttributes<HTMLDivElement>

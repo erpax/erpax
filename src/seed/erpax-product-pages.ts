@@ -50,6 +50,7 @@ interface LexNode {
   format?: number | string
   mode?: string
   style?: string
+  textStyle?: string
   direction?: string
   indent?: number
   textFormat?: number
@@ -83,6 +84,7 @@ const paragraph = (children: LexNode[]): LexNode => ({
   format: '',
   indent: 0,
   textFormat: 0,
+  textStyle: '',
   version: 1,
 })
 
@@ -708,6 +710,7 @@ export async function seedErpaxProductPages(
       ],
     },
     limit: 1,
+    overrideAccess: true,
   })
   if (existingIndex.docs.length > 0 && skipExisting) {
     parentId = existingIndex.docs[0].id
@@ -716,6 +719,7 @@ export async function seedErpaxProductPages(
     const indexDoc = await payload.create({
       collection: 'pages',
       data: buildPage(indexSpec, undefined, tenantId),
+      overrideAccess: true,
     })
     parentId = indexDoc.id
     created.push(parentSlug)
@@ -732,6 +736,7 @@ export async function seedErpaxProductPages(
         ],
       },
       limit: 1,
+      overrideAccess: true,
     })
     if (existing.docs.length > 0 && skipExisting) {
       skipped.push(spec.slug)
@@ -740,6 +745,7 @@ export async function seedErpaxProductPages(
     await payload.create({
       collection: 'pages',
       data: buildPage(spec, parentId, tenantId),
+      overrideAccess: true,
     })
     created.push(spec.slug)
   }

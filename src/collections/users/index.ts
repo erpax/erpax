@@ -81,6 +81,8 @@ export const Users: CollectionConfig = {
     useAsTitle: 'name',
   },
   auth: {
+    // An agent is a user: it reaches the MCP gateway with its own API key (`Authorization: users API-Key <key>`).
+    useAPIKey: true,
     // Account lockout (Payload built-in) — topology-independent brute-force defense,
     // independent of the per-worker in-memory endpoint throttle.
     maxLoginAttempts: 5,

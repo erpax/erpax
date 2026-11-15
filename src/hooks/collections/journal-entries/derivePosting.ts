@@ -73,6 +73,7 @@ export const derivePosting: CollectionAfterChangeHook<JournalEntry> = async ({ d
     limit: 1,
     req,
     select: { postingId: true },
+    overrideAccess: true,
   })
   if (existing.docs.length > 0) return doc
   const posting = postingFor(doc)
@@ -83,7 +84,7 @@ export const derivePosting: CollectionAfterChangeHook<JournalEntry> = async ({ d
   const entities =
     posting.tenant === undefined
       ? { docs: [] }
-      : await req.payload.find({ collection: 'legal-entities', where: { tenant: { equals: posting.tenant } }, depth: 0, limit: 2, req, select: {} })
+      : await req.payload.find({ collection: 'legal-entities', where: { tenant: { equals: posting.tenant } }, depth: 0, limit: 2, req, select: {}, overrideAccess: true })
   const entity = entities.docs.length === 1 ? entities.docs[0]!.id : posting.tenant
   await req.payload.create({
     collection: 'gl-postings',
@@ -91,6 +92,7 @@ export const derivePosting: CollectionAfterChangeHook<JournalEntry> = async ({ d
     depth: 0,
     req,
     context: { postingDerived: true },
+    overrideAccess: true,
   })
   return doc
 }

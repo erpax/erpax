@@ -106,6 +106,7 @@ export const depreciationSchedulePostingHook: CollectionAfterChangeHook = async 
       const populated = await req.payload.findByID({
         collection: 'fixed-assets',
         id: assetRel as string,
+        overrideAccess: true,
       });
       asset = populated ? (populated as unknown as Record<string, unknown>) : null;
     }

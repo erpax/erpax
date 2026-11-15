@@ -58,6 +58,7 @@ export const deriveVariants: CollectionAfterChangeHook = async ({ doc, req, cont
     pagination: false,
     req,
     select: { variantType: true, label: true },
+    overrideAccess: true,
   })
   const groups = types.map((t) => options.docs.filter((o) => idOf(o.variantType) === t))
   const existing = await req.payload.find({
@@ -68,6 +69,7 @@ export const deriveVariants: CollectionAfterChangeHook = async ({ doc, req, cont
     pagination: false,
     req,
     select: { options: true },
+    overrideAccess: true,
   })
   const todo = missing(
     combinations(groups.map((g) => g.map((o) => o.id))),
@@ -89,6 +91,7 @@ export const deriveVariants: CollectionAfterChangeHook = async ({ doc, req, cont
       draft: true,
       req,
       context: { variantsDerived: true },
+      overrideAccess: true,
     })
   }
   return doc

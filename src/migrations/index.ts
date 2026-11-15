@@ -24,6 +24,7 @@ import * as migration_20261114_125159_form_submission_references from './2026111
 import * as migration_20261114_134018_directory_providers_indexes from './20261114_134018_directory_providers_indexes';
 import * as migration_20261114_135040_tenant_apps from './20261114_135040_tenant_apps';
 import * as migration_20261114_142054_product_apps from './20261114_142054_product_apps';
+import * as migration_20261115_075722_payload_4 from './20261115_075722_payload_4';
 
 export const migrations = [
   {
@@ -154,6 +155,11 @@ export const migrations = [
   {
     up: migration_20261114_142054_product_apps.up,
     down: migration_20261114_142054_product_apps.down,
-    name: '20261114_142054_product_apps'
+    name: '20261114_142054_product_apps',
+  },
+  {
+    up: migration_20261115_075722_payload_4.up,
+    down: migration_20261115_075722_payload_4.down,
+    name: '20261115_075722_payload_4'
   },
 ];

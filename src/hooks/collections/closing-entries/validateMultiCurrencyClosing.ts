@@ -110,6 +110,7 @@ export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingE
       const entity = await payload.findByID({
         collection: 'legal-entities',
         id: entityId,
+        overrideAccess: true,
       })
       reportingCurrency = (entity as LegalEntity).functionalCurrency || 'DEFAULT'
     }
@@ -139,6 +140,7 @@ export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingE
         },
         sort: '-rateDate',
         limit: 1,
+        overrideAccess: true,
       })
 
       if (rateQuery.docs.length > 0) {

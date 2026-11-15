@@ -181,7 +181,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`credit_memos_order_idx\` ON \`credit_memos\` (\`order_id\`);`)
   await db.run(sql`ALTER TABLE \`_credit_memos_v\` ADD \`version_order_id\` text(36) REFERENCES sales_orders(id);`)
   await db.run(sql`CREATE INDEX \`_credit_memos_v_version_version_order_idx\` ON \`_credit_memos_v\` (\`version_order_id\`);`)
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'commitments-and-contingencies', entity: 'collection', fieldPath: 'description', defaultLocale: 'en', req })
 }
 
 export async function down({ db, payload, req }: MigrateDownArgs): Promise<void> {
@@ -593,5 +592,4 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`CREATE INDEX \`_provisions_v_version_version_created_at_idx\` ON \`_provisions_v\` (\`version_created_at\`);`)
   await db.run(sql`CREATE INDEX \`_provisions_v_created_at_idx\` ON \`_provisions_v\` (\`created_at\`);`)
   await db.run(sql`CREATE INDEX \`_provisions_v_updated_at_idx\` ON \`_provisions_v\` (\`updated_at\`);`)
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'commitments-and-contingencies', entity: 'collection', fieldPath: 'description', defaultLocale: 'en', req })
 }

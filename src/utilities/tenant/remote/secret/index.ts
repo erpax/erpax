@@ -43,7 +43,7 @@ export async function getTenantById(
 ): Promise<Tenant | null> {
   if (id == null) return null
   try {
-    return await payload.findByID({ collection: 'tenants', id, depth: 0 })
+    return await payload.findByID({ collection: 'tenants', id, depth: 0, overrideAccess: true })
   } catch {
     return null
   }
@@ -149,6 +149,7 @@ export async function resolveResendApiKeyForMessage(
       where: { email: { equals: email } },
       depth: 1,
       limit: 1,
+      overrideAccess: true,
     })
     const user = users.docs[0] as User | undefined
     const tenantLinks = user?.tenants
@@ -174,6 +175,7 @@ export async function resolveResendDefaultsForMessage(
       where: { email: { equals: email } },
       depth: 1,
       limit: 1,
+      overrideAccess: true,
     })
     const user = users.docs[0] as User | undefined
     const tenantLinks = user?.tenants

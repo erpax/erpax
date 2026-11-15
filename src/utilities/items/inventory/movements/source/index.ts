@@ -113,12 +113,13 @@ export const deriveMovements = (source: MovementSource): CollectionAfterChangeHo
     pagination: false,
     req,
     select: { movementId: true },
+    overrideAccess: true,
   })
   const have = new Set(existing.docs.map((m) => m.movementId))
   for (const movement of wanted) {
     if (have.has(movement.movementId)) continue
     // `valuationMethod` is left to the collection's own default — the document does not choose it.
-    await req.payload.create({ collection: 'inventory-movements', data: movement as never, depth: 0, req, context: { movementsDerived: true } })
+    await req.payload.create({ collection: 'inventory-movements', data: movement as never, depth: 0, req, context: { movementsDerived: true }, overrideAccess: true })
   }
   return doc
 }

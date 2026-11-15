@@ -19,6 +19,7 @@ export async function tenantLabelForDuplicateAudit(
   const doc = await req.payload.findByID({
     id: tenantId,
     collection: 'tenants',
+    overrideAccess: true,
   })
   return typeof doc.name === 'string' ? doc.name : undefined
 }

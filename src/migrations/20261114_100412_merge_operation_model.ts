@@ -17,7 +17,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`work_phases_default_work_center_idx\` ON \`work_phases\` (\`default_work_center_id\`);`)
   await db.run(sql`ALTER TABLE \`_work_phases_v\` ADD \`version_default_work_center_id\` text(36) REFERENCES work_centers(id);`)
   await db.run(sql`CREATE INDEX \`_work_phases_v_version_version_default_work_center_idx\` ON \`_work_phases_v\` (\`version_default_work_center_id\`);`)
-    if (payload.db.migrateFieldDelocalized) await payload.db.migrateFieldDelocalized({ slug: 'operations', entity: 'collection', fieldPath: 'breadcrumbs', defaultLocale: 'en', req })
 }
 
 export async function down({ db, payload, req }: MigrateDownArgs): Promise<void> {
@@ -419,5 +418,4 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`CREATE INDEX \`_work_phases_v_updated_at_idx\` ON \`_work_phases_v\` (\`updated_at\`);`)
   await db.run(sql`ALTER TABLE \`work_orders\` DROP COLUMN \`units_scrap\`;`)
   await db.run(sql`ALTER TABLE \`_work_orders_v\` DROP COLUMN \`version_units_scrap\`;`)
-    if (payload.db.migrateFieldLocalized) await payload.db.migrateFieldLocalized({ slug: 'operations', entity: 'collection', fieldPath: 'breadcrumbs', defaultLocale: 'en', req })
 }
