@@ -673,8 +673,6 @@
   "tenants.plural": "Leigjendur",
   "tenants.publicSiteUrl": "Slóð opinbers vefs",
   "tenants.publicSiteUrlHelp": "Valfrjáls kanónísk vefslóð fyrir þennan leigjanda (yfirskrifar Host beiðnar þegar sett). Skildu eftir autt til að nota innkomandi Host.",
-  "tenants.resendApiKey": "Resend API-lykill",
-  "tenants.resendApiKeyHelp": "Resend API-lykill fyrir tölvupósta þessa leigjanda (aðeins ofuradmin). Þróun getur fallið aftur í RESEND_API_KEY.",
   "tenants.singular": "Leigjandi",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Notað fyrir vefslóðir, dæmi: /tenant-slug/page-slug",

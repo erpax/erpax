@@ -1145,10 +1145,6 @@ export interface Tenant {
     | boolean
     | null;
   /**
-   * Resend API key for transactional email for this tenant (super-admin only). Development may fall back to RESEND_API_KEY.
-   */
-  resendApiKey?: string | null;
-  /**
    * Default From email address for Resend (this tenant). Falls back to onboarding@resend.dev when empty.
    */
   emailDefaultFromAddress?: string | null;
@@ -17752,6 +17748,28 @@ export interface Message1 {
    * ISO 8601 — when the message was first read.
    */
   readAt?: string | null;
+  /**
+   * Set when the message arrived by email (Cloudflare Email Routing).
+   */
+  email?: {
+    /**
+     * The sender (SMTP envelope).
+     */
+    from?: string | null;
+    /**
+     * The address it was sent to.
+     */
+    to?: string | null;
+    /**
+     * RFC 5322 Message-ID — a message is filed once.
+     */
+    messageId?: string | null;
+    inReplyTo?: string | null;
+    /**
+     * DMARC passed at the Cloudflare mail server.
+     */
+    authenticated?: boolean | null;
+  };
   status?: ('unread' | 'read' | 'archived') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
@@ -20074,7 +20092,6 @@ export interface TenantsSelect<T extends boolean = true> {
   stripeSecretKey?: T;
   stripeWebhookSecret?: T;
   integrationSettings?: T;
-  resendApiKey?: T;
   emailDefaultFromAddress?: T;
   emailDefaultFromName?: T;
   mcpApiKey?: T;
@@ -26980,6 +26997,15 @@ export interface MessagesSelect<T extends boolean = true> {
   parentMessage?: T;
   relatedDocument?: T;
   readAt?: T;
+  email?:
+    | T
+    | {
+        from?: T;
+        to?: T;
+        messageId?: T;
+        inReplyTo?: T;
+        authenticated?: T;
+      };
   status?: T;
   createdBy?: T;
   approvedBy?: T;

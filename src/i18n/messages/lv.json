@@ -673,8 +673,6 @@
   "tenants.plural": "Īrnieki",
   "tenants.publicSiteUrl": "Publiskā vietnes URL",
   "tenants.publicSiteUrlHelp": "Izvēles kanoniska vietnes URL šim īrniekam (pārraksta pieprasījuma Host, ja iestatīts). Atstājiet tukšu, lai izmantotu ienākošo Host.",
-  "tenants.resendApiKey": "Resend API atslēga",
-  "tenants.resendApiKeyHelp": "Resend API atslēga šī īrnieka transakciju e-pastiem (tikai superadministrators). Izstrādes laikā var izmantot RESEND_API_KEY.",
   "tenants.singular": "Īrnieks",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Tiek izmantota URL ceļiem, piemērs: /tenant-slug/page-slug",

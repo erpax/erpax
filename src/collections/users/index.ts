@@ -137,7 +137,7 @@ export const Users: CollectionConfig = {
     // (`_verified`, `_verificationToken`): the schema then depended on an environment variable, the
     // migrations were generated without the key, and production (with it) could create no user at all
     // (`no column named _verified`). Users are created by an admin or are the owner, so there is no
-    // sign-up to verify; forgot-password still mails through Resend.
+    // sign-up to verify; forgot-password mails through Cloudflare Email Service.
     verify: false,
   },
   endpoints: [externalUsersLogin],

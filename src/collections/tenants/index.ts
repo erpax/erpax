@@ -328,16 +328,6 @@ export const Tenants: CollectionConfig = {
       access: superAdminSecretsAccess,
     },
     {
-      name: 'resendApiKey',
-      type: 'text',
-      label: localeRecord('tenants.resendApiKey'),
-      admin: {
-        description: localeRecord('tenants.resendApiKeyHelp'),
-        position: 'sidebar',
-      },
-      access: superAdminSecretsAccess,
-    },
-    {
       name: 'emailDefaultFromAddress',
       type: 'text',
       label: localeRecord('tenants.emailDefaultFromAddress'),

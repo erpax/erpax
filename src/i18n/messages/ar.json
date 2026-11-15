@@ -673,8 +673,6 @@
   "tenants.plural": "المستأجرين",
   "tenants.publicSiteUrl": "عنوان URL للموقع العام",
   "tenants.publicSiteUrlHelp": "عنوان URL الموقع الأساسي الاختياري لهذا المستأجر (يتجاوز طلب المضيف عند التعيين). اتركها فارغة لاستخدام مضيف الطلب الوارد.",
-  "tenants.resendApiKey": "مفتاح API Resend",
-  "tenants.resendApiKeyHelp": "مفتاح API Resend للبريد الإلكتروني المعاملات لهذا المستأجر (للمشرف الفائق فقط). قد يعود التطوير إلى RESEND_API_KEY.",
   "tenants.singular": "مستأجر",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "المستخدم لمسارات URL، مثال: /tenant-slug/page-slug",

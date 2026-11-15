@@ -673,8 +673,6 @@
   "tenants.plural": "Inquilinos",
   "tenants.publicSiteUrl": "URL del sitio público",
   "tenants.publicSiteUrlHelp": "URL de sitio canónica opcional para este inquilino (anula Host de solicitud cuando se establece). Dejar vacío para usar el host de solicitud entrante.",
-  "tenants.resendApiKey": "Clave API de Resend",
-  "tenants.resendApiKeyHelp": "Clave API de Resend para correo electrónico transaccional para este inquilino (solo superadministrador). El desarrollo puede volver a RESEND_API_KEY.",
   "tenants.singular": "Inquilino",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Utilizado para rutas de URL, ejemplo: /tenant-slug/page-slug",

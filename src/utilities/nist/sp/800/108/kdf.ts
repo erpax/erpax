@@ -4,7 +4,7 @@
  * Single env-var custodianship: only `PAYLOAD_SECRET` must be rotated/secured;
  * every internal subsystem secret (preview tokens, cron auth, field
  * encryption KEK) is derived deterministically. Third-party keys (Stripe,
- * Resend, …) stay as their own env vars.
+ * …) stay as their own env vars.
  *
  * @standard NIST SP-800-108 key-derivation-function
  * @standard NIST FIPS-198-1 hmac
@@ -28,13 +28,14 @@ const DERIVED_V1 = 'erpax:derived:v1:'
 /**
  * Named purposes for app-internal secrets (preview URLs, job runners, etc.).
  * All are deterministic HMAC-SHA256 keys — do **not** add separate env vars for these.
- * Third-party keys (Stripe, Resend, …) stay as their own env vars.
+ * Third-party keys (Stripe, …) stay as their own env vars.
  */
 export const internalSecretPurpose = {
   preview: 'preview',
   cron: 'cron',
   fieldEncryption: 'field-encryption',
   cloudflareConfig: 'cloudflare-config',
+  inboundEmail: 'inbound-email',
 } as const
 
 export type InternalSecretPurpose = (typeof internalSecretPurpose)[keyof typeof internalSecretPurpose]

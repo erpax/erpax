@@ -673,8 +673,6 @@
   "tenants.plural": "Inkwilini",
   "tenants.publicSiteUrl": "URL tas-sit pubbliku",
   "tenants.publicSiteUrlHelp": "URL kanoniku opzjonali tas-sit għal dan l-inkwilin (jissupera l-Host tal-mistoqsija meta jkun stabbilit). Ħalli vojt biex tuża l-Host li jasal.",
-  "tenants.resendApiKey": "Ċavetta API ta' Resend",
-  "tenants.resendApiKeyHelp": "Ċavetta API ta' Resend għall-emails tranżazzjonali ta' dan l-inkwilin (superadmin biss). L-iżvilupp jista' jaqa' lura għal RESEND_API_KEY.",
   "tenants.singular": "Inkwilin",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Tintuża għall-paths tal-URL, eżempju: /tenant-slug/page-slug",

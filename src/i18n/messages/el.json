@@ -673,8 +673,6 @@
   "tenants.plural": "Ενοικιαστές",
   "tenants.publicSiteUrl": "URL δημόσιου ιστότοπου",
   "tenants.publicSiteUrlHelp": "Προαιρετικό κανονικό URL ιστότοπου για αυτόν τον ενοικιαστή (παρακάμπτει το Host του αιτήματος όταν οριστεί). Αφήστε κενό για χρήση του εισερχόμενου Host.",
-  "tenants.resendApiKey": "Κλειδί API Resend",
-  "tenants.resendApiKeyHelp": "Κλειδί API Resend για συναλλακτικά email αυτού του ενοικιαστή (μόνο superadmin). Στην ανάπτυξη μπορεί να χρησιμοποιηθεί RESEND_API_KEY.",
   "tenants.singular": "Ενοικιαστής",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Χρησιμοποιείται για διαδρομές URL, παράδειγμα: /tenant-slug/page-slug",

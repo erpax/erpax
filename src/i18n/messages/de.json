@@ -673,8 +673,6 @@
   "tenants.plural": "Mieter",
   "tenants.publicSiteUrl": "URL der öffentlichen Website",
   "tenants.publicSiteUrlHelp": "Optionale kanonische Website-URL für diesen Mieter (überschreibt den Request Host, wenn gesetzt). Leer lassen, um den eingehenden Request Host zu verwenden.",
-  "tenants.resendApiKey": "Resend-API-Schlüssel",
-  "tenants.resendApiKeyHelp": "Resend-API-Schlüssel für transaktionale E-Mails für diesen Mieter (nur Super-Admin). Die Entwicklung kann auf RESEND_API_KEY zurückgreifen.",
   "tenants.singular": "Mieter",
   "tenants.slug": "Schnecke",
   "tenants.slugHelp": "Verwendet für URL-Pfade, Beispiel: /tenant-slug/page-slug",

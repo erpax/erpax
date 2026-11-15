@@ -18,8 +18,7 @@ declare global {
       PAYLOAD_JOB_AUTORUN?: string
       /** Skip loading native sharp (e.g. Edge / Workers local tooling). */
       PAYLOAD_DISABLE_SHARP?: string
-      /** Dev fallback — production uses Tenant `resendApiKey` + defaults */
-      RESEND_API_KEY?: string
+      /** The platform From address (Cloudflare Email Sending); a tenant may set its own. */
       EMAIL_DEFAULT_FROM_ADDRESS?: string
       EMAIL_DEFAULT_FROM_NAME?: string
       /** Dev fallback — production uses Tenant `stripeSecretKey` */

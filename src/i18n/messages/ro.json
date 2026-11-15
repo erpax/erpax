@@ -673,8 +673,6 @@
   "tenants.plural": "Chiriași",
   "tenants.publicSiteUrl": "URL site public",
   "tenants.publicSiteUrlHelp": "URL canonic opțional al site-ului pentru acest chiriaș (suprascrie Host-ul cererii când este setat). Lăsați gol pentru a folosi Host-ul primit.",
-  "tenants.resendApiKey": "Cheie API Resend",
-  "tenants.resendApiKeyHelp": "Cheia API Resend pentru e-mailuri tranzacționale ale acestui chiriaș (doar superadmin). În dezvoltare poate folosi RESEND_API_KEY.",
   "tenants.singular": "Chiriaș",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Folosit pentru căi URL, exemplu: /tenant-slug/page-slug",

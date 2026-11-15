@@ -673,8 +673,6 @@
   "tenants.plural": "Vuokralaiset",
   "tenants.publicSiteUrl": "Julkisen sivuston URL",
   "tenants.publicSiteUrlHelp": "Valinnainen kanoninen sivuston URL tälle vuokralaiselle (ohittaa pyynnön Hostin, kun asetettu). Jätä tyhjäksi käyttääksesi saapuvaa Hostia.",
-  "tenants.resendApiKey": "Resend API -avain",
-  "tenants.resendApiKeyHelp": "Resend API -avain tämän vuokralaisen tapahtumasähköposteille (vain superadmin). Kehityksessä voi käyttää RESEND_API_KEY:tä.",
   "tenants.singular": "Vuokralainen",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Käytetään URL-poluissa, esim. /vuokralainen-slug/sivu-slug",

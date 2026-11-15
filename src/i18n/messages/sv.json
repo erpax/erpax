@@ -673,8 +673,6 @@
   "tenants.plural": "Klienter",
   "tenants.publicSiteUrl": "Publik webbplats-URL",
   "tenants.publicSiteUrlHelp": "Valfri kanonisk webbplats-URL för denna klient (åsidosätter Host i förfrågan när satt). Lämna tomt för att använda inkommande Host.",
-  "tenants.resendApiKey": "Resend API-nyckel",
-  "tenants.resendApiKeyHelp": "Resend API-nyckel för transaktionell e-post för denna klient (endast superadmin). Utveckling kan falla tillbaka på RESEND_API_KEY.",
   "tenants.singular": "Klient",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Används för URL-sökvägar, exempel: /klient-slug/sid-slug",

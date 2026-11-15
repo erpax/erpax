@@ -673,8 +673,6 @@
   "tenants.plural": "Inquilini",
   "tenants.publicSiteUrl": "URL del sito pubblico",
   "tenants.publicSiteUrlHelp": "URL del sito canonico facoltativo per questo tenant (esegue l'override del host della richiesta quando impostato). Lasciare vuoto per utilizzare l'host della richiesta in arrivo.",
-  "tenants.resendApiKey": "Chiave API Resend",
-  "tenants.resendApiKeyHelp": "Chiave API Resend per email transazionale per questo tenant (solo super amministratore). Lo sviluppo potrebbe tornare a RESEND_API_KEY.",
   "tenants.singular": "Affittuario",
   "tenants.slug": "Lumaca",
   "tenants.slugHelp": "Utilizzato per i percorsi URL, esempio: /tenant-slug/page-slug",

@@ -673,8 +673,6 @@
   "tenants.plural": "Locataires",
   "tenants.publicSiteUrl": "URL du site public",
   "tenants.publicSiteUrlHelp": "URL de site canonique facultative pour ce locataire (remplace l'hôte de la demande lorsqu'elle est définie). Laisser vide pour utiliser l'hôte de la demande entrante.",
-  "tenants.resendApiKey": "Clé API Resend",
-  "tenants.resendApiKeyHelp": "Clé API Resend pour le courrier électronique transactionnel pour ce locataire (super-administrateur uniquement). Le développement peut revenir à RESEND_API_KEY.",
   "tenants.singular": "Locataire",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Utilisé pour les chemins d'URL, exemple: /tenant-slug/page-slug",

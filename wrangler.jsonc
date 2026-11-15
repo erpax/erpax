@@ -203,16 +203,16 @@
     { "binding": "ANALYTICS_API",       "dataset": "erpax_api_calls" },
     { "binding": "ANALYTICS_JOBS",      "dataset": "erpax_jobs" },
   ],
-  // Cloudflare Email Workers — outbound transactional email (dunning
-  // notices, payment receipts, audit notifications, KYC confirmations).
-  // Routes through the tenant's verified domain when present;
-  // fallback to the platform domain otherwise.
+  // Cloudflare Email Service — every mail Payload sends (the password reset, notifications) goes out
+  // through this binding (src/utilities/email/cloudflare). Unrestricted, so it can reach any recipient;
+  // the From address must be on a domain onboarded to Email Sending (Workers Paid). Incoming mail
+  // arrives through Email Routing at worker.ts `email()`.
   //
   // @rfc 5321 simple-mail-transfer-protocol
   // @rfc 5322 internet-message-format
   // @compliance GDPR Art.7 transactional-email-consent
   "send_email": [
-    { "name": "EMAIL_SENDER", "destination_address": "noreply@erpax.com" },
+    { "name": "EMAIL" },
   ],
   // Built-in Rate Limiting API — declarative per-route rate-limit
   // (separate from the per-tenant Durable Object above; this is the

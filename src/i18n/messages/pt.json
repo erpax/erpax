@@ -673,8 +673,6 @@
   "tenants.plural": "Inquilinos",
   "tenants.publicSiteUrl": "URL do site público",
   "tenants.publicSiteUrlHelp": "URL de site canônico opcional para este inquilino (substitui o host de solicitação quando definido). Deixe em branco para usar o host de solicitação recebido.",
-  "tenants.resendApiKey": "Chave de API Resend",
-  "tenants.resendApiKeyHelp": "Chave de API Resend para email transacional para este inquilino (apenas superadministrador). O desenvolvimento pode voltar para RESEND_API_KEY.",
   "tenants.singular": "Inquilino",
   "tenants.slug": "Lesma",
   "tenants.slugHelp": "Usado para caminhos de URL, exemplo: /tenant-slug/page-slug",

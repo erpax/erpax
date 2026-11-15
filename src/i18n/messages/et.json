@@ -673,8 +673,6 @@
   "tenants.plural": "Üürnikud",
   "tenants.publicSiteUrl": "Avaliku saidi URL",
   "tenants.publicSiteUrlHelp": "Selle üürniku valikuline kanooniline saidi URL (alistab päringu Hosti, kui on määratud). Jätke tühjaks, et kasutada saabuvat Hosti.",
-  "tenants.resendApiKey": "Resend API võti",
-  "tenants.resendApiKeyHelp": "Resend API võti selle üürniku tehingumeilide jaoks (ainult superadmin). Arenduses võib kasutada RESEND_API_KEY-d.",
   "tenants.singular": "Üürnik",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Kasutatakse URL-i jaoks, näide: /tenant-slug/page-slug",

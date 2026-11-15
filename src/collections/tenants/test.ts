@@ -57,7 +57,6 @@ describe('tenants — the access-scope boundary collection', () => {
       'stripeSecretKey',
       'stripeWebhookSecret',
       'integrationSettings',
-      'resendApiKey',
       'mcpApiKey',
     ]
     for (const n of secretNames) {

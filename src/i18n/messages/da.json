@@ -673,8 +673,6 @@
   "tenants.plural": "Lejere",
   "tenants.publicSiteUrl": "URL til offentligt websted",
   "tenants.publicSiteUrlHelp": "Valgfri kanonisk websted-URL for denne lejer (tilsidesætter anmodnings-vært når sat). Lad være tomt for at bruge indgående anmodnings-vært.",
-  "tenants.resendApiKey": "Resend API-nøgle",
-  "tenants.resendApiKeyHelp": "Resend API-nøgle til transaktional mail for denne lejer (kun super-admin). Udvikling kan vende tilbage til RESEND_API_KEY.",
   "tenants.singular": "Lejer",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Brugt til URL-stier, eksempel: /tenant-slug/page-slug",

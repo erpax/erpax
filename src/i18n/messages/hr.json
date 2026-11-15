@@ -673,8 +673,6 @@
   "tenants.plural": "Najmoprimci",
   "tenants.publicSiteUrl": "URL javne stranice",
   "tenants.publicSiteUrlHelp": "Neobavezna kanonska URL adresa stranice za ovog najmoprimca (preglašava Host iz zahtjeva kada je postavljena). Ostavite prazno za korištenje dolaznog Host.",
-  "tenants.resendApiKey": "API ključ Resend",
-  "tenants.resendApiKeyHelp": "API ključ Resend za transakcijsku e-poštu ovog najmoprimca (samo superadmin). Razvoj može koristiti RESEND_API_KEY.",
   "tenants.singular": "Najmoprimac",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Koristi se za URL putanje, primjer: /tenant-slug/page-slug",

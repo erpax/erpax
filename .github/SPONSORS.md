@@ -17,7 +17,7 @@ Each figure is computed from the source beside it whenever this page is generate
 | Next.js | ^16.4.1 | `package.json` |
 | Node | ^24.22.3 \|\| >=26.13.1 | `package.json` |
 | Collections | 193 | `src/payload-types.ts`, Payload's generated `Config`, without Payload's own `payload-*` |
-| Migrations | 5, the latest `20261115_165406_fold_parties` | `src/migrations` |
+| Migrations | 6, the latest `20261115_180058_cloudflare_email` | `src/migrations` |
 | Kernel-checked theorems | 335 in 39 files: 239 axiom-free, 96 on Lean's standard axioms, 0 stubbed (sealed 2026-11-15) | `src/utilities/verify/lean/inventory.generated.json` |
 | License | CC-BY-NC-ND-4.0 | `package.json` |
 

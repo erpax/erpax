@@ -673,8 +673,6 @@
   "tenants.plural": "Klienter",
   "tenants.publicSiteUrl": "Offentlig nettsted-URL",
   "tenants.publicSiteUrlHelp": "Valgfri kanonisk nettsted-URL for denne klienten (overstyrer Host i forespørselen når satt). La stå tom for å bruke innkommende Host.",
-  "tenants.resendApiKey": "Resend API-nøkkel",
-  "tenants.resendApiKeyHelp": "Resend API-nøkkel for transaksjons-e-post for denne klienten (kun superadmin). Utvikling kan falle tilbake til RESEND_API_KEY.",
   "tenants.singular": "Klient",
   "tenants.slug": "Slug",
   "tenants.slugHelp": "Brukes til URL-stier, eksempel: /klient-slug/side-slug",
