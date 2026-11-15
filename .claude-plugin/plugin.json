@@ -1,10 +1,10 @@
 {
   "name": "erpax",
-  "version": "1.0.0",
-  "description": "Open-source multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound",
+  "version": "1.0.26",
+  "description": "Source-available multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound",
   "author": {
-    "name": "erpax",
-    "url": "https://github.com/erpax/erpax"
+    "name": "Tsvetan Rouschev",
+    "url": "https://orcid.org/0009-0000-7312-9778"
   },
   "homepage": "https://github.com/erpax/erpax",
   "repository": "https://github.com/erpax/erpax",
@@ -18,9 +18,6 @@
     "cloudflare",
     "content-addressed",
     "tamper-evident",
-    "skills",
-    "akashic",
     "mcp"
-  ],
-  "skills": "./src"
+  ]
 }
