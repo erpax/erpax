@@ -36,6 +36,9 @@ export const flip = (s: State): State => ({ ...s, pleasant: !s.pleasant })
 /** μ: fix feeling, swap thought and emotion — the loop run backward. */
 export const mirror = (s: State): State => ({ ...s, corner: at(s.corner, -2 * CORNERS.indexOf(s.corner)) })
 
+/** Feel: where the loop begins — a raw signal at the feeling corner, pleasant or not, before any reading. */
+export const feel = (pleasant: boolean): State => ({ corner: 'feeling', pleasant })
+
 /** ρσ, the generator of C₆. */
 export const cycle = (s: State): State => flip(turn(s))
 

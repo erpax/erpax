@@ -9,6 +9,7 @@
  */
 import type { PayloadRequest, RequiredDataFromCollectionSlug } from 'payload'
 
+import { feel } from '@/utilities/affect'
 import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
 
 /** The part of an MCP tool response this hook reads. */
@@ -47,14 +48,19 @@ export const gapOf = (args: {
   }
 }
 
-/** `hooks.afterToolCall`: record a failed call, then hand the response on unchanged. */
+/**
+ * `hooks.afterToolCall`, as the affect loop: the response is FELT (pleasant when it succeeded), its
+ * error text is the THOUGHT that reads it, and the EMOTION — the episode with a push — records the gap.
+ * A pleasant feeling has nothing to push, so the response passes on unchanged.
+ */
 export const recordGap = async <R extends ToolResponse>(args: {
   input: unknown
   req: PayloadRequest
   response: R
   toolName: string
 }): Promise<R> => {
-  if (!args.response.isError) return args.response
+  const felt = feel(!args.response.isError)
+  if (felt.pleasant) return args.response
   try {
     await args.req.payload.create({ collection: 'memories', data: gapOf(args) as RequiredDataFromCollectionSlug<'memories'>, overrideAccess: true, req: args.req })
   } catch (error) {

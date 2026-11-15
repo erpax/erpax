@@ -8,7 +8,8 @@
     · thought   the reading of that signal (appraisal)
     · emotion   the whole episode, signal and reading fused into something with a push
   Feeling feeds thought, thought shapes emotion, emotion changes the body, which is new feeling.
-  A state is a corner with a valence (pleasant or unpleasant).
+  A state is a corner with a valence (pleasant or unpleasant). `feel` is where the loop begins: a raw
+  signal at the feeling corner, pleasant or not, before any reading of it.
 
   Two symmetries act on it:
     · turn  ρ : the loop advances one corner; three turns come back, ρ³ = id, and no corner stays put
@@ -50,6 +51,24 @@ def turn (s : State) : State := { s with corner := next s.corner }
 
 /-- The flip σ: reverse the valence, keep the corner. -/
 def flip (s : State) : State := { s with pleasant := !s.pleasant }
+
+/-- Feel: where the loop begins. A raw signal, pleasant or not, before any reading of what it means. -/
+def feel (pleasant : Bool) : State := ⟨.feeling, pleasant⟩
+
+/-- A feeling is read next: one turn from a feeling is a thought. -/
+theorem feel_then_thought (p : Bool) : (turn (feel p)).corner = .thought := rfl
+
+/-- Then the episode: two turns from a feeling is an emotion. -/
+theorem feel_then_emotion (p : Bool) : (turn (turn (feel p))).corner = .emotion := rfl
+
+/-- The emotion carries the feeling's valence: reading a signal does not change how it felt. -/
+theorem emotion_keeps_feeling (p : Bool) : (turn (turn (feel p))).pleasant = p := rfl
+
+/-- The emotion changes the body, which is a new feeling: three turns come back to it. -/
+theorem feel_returns (p : Bool) : turn (turn (turn (feel p))) = feel p := rfl
+
+/-- Flipping a feeling is feeling the opposite. -/
+theorem flip_feel (p : Bool) : flip (feel p) = feel (!p) := rfl
 
 /-- The mirror μ: fix feeling, swap thought and emotion — the loop run backward. -/
 def mirrorCorner : Corner → Corner

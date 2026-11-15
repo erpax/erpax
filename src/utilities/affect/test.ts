@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { CORNERS, STATES, angleOf, cycle, flip, mirror, order, same, times, turn } from '@/utilities/affect'
+import { CORNERS, STATES, angleOf, cycle, feel, flip, mirror, order, same, times, turn } from '@/utilities/affect'
 
 const everyState = (law: (s: (typeof STATES)[number]) => boolean) => STATES.every(law)
 
@@ -39,6 +39,15 @@ describe('affect — the twin of Affect.lean', () => {
     expect(order(mirror)).toBe(2)
     expect(order((s) => mirror(turn(s)))).toBe(2)
     expect(order((s) => mirror(times(turn, 2, s)))).toBe(2)
+  })
+
+  it('feel begins the loop: a thought, then an emotion that keeps the valence, then a new feeling', () => {
+    for (const p of [true, false]) {
+      expect(turn(feel(p)).corner).toBe('thought')
+      expect(times(turn, 2, feel(p))).toEqual({ corner: 'emotion', pleasant: p })
+      expect(times(turn, 3, feel(p))).toEqual(feel(p))
+      expect(flip(feel(p))).toEqual(feel(!p))
+    }
   })
 
   it('places the corners 120° apart on the wheel', () => {

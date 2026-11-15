@@ -1,10 +1,10 @@
 {
   "sealedAt": "2026-11-15",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "f089fd0bfec40817",
+  "sourcesHash": "0a12f1301e503a4e",
   "census": {
-    "theorems": 316,
-    "axiomFree": 218,
+    "theorems": 321,
+    "axiomFree": 223,
     "standardAxioms": 98,
     "stubbed": 0
   },
@@ -13,6 +13,36 @@
       "file": "Affect.lean",
       "compiled": true,
       "entries": [
+        {
+          "theorem": "Affect.feel_then_thought",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.feel_then_emotion",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.emotion_keeps_feeling",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.feel_returns",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Affect.flip_feel",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
         {
           "theorem": "Affect.turn_three",
           "axioms": [],
