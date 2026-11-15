@@ -31,6 +31,9 @@ overrides:
   nanoid@3: ^3.3.18
   qs@6: ^6.16.0
 
+patchedDependencies:
+  '@payloadcms/drizzle@4.0.0-beta.9': 49686a6709774e9c23ddef7a466a9e693b16a11e173c7858af38f1d93d7f1756
+
 importers:
 
   .:
@@ -9248,7 +9251,7 @@ snapshots:
 
   '@payloadcms/db-d1-sqlite@4.0.0-beta.9(@types/pg@8.20.2)(payload@4.0.0-beta.9(graphql@17.0.2)(typescript@6.0.3))(pg@8.22.0)':
     dependencies:
-      '@payloadcms/drizzle': 4.0.0-beta.9(@types/pg@8.20.2)(payload@4.0.0-beta.9(graphql@17.0.2)(typescript@6.0.3))(pg@8.22.0)
+      '@payloadcms/drizzle': 4.0.0-beta.9(patch_hash=49686a6709774e9c23ddef7a466a9e693b16a11e173c7858af38f1d93d7f1756)(@types/pg@8.20.2)(payload@4.0.0-beta.9(graphql@17.0.2)(typescript@6.0.3))(pg@8.22.0)
       console-table-printer: 2.15.0
       drizzle-kit: 0.31.7
       drizzle-orm: 0.45.2(@types/pg@8.20.2)(pg@8.22.0)
@@ -9288,7 +9291,7 @@ snapshots:
       - sqlite3
       - supports-color
 
-  '@payloadcms/drizzle@4.0.0-beta.9(@types/pg@8.20.2)(payload@4.0.0-beta.9(graphql@17.0.2)(typescript@6.0.3))(pg@8.22.0)':
+  '@payloadcms/drizzle@4.0.0-beta.9(patch_hash=49686a6709774e9c23ddef7a466a9e693b16a11e173c7858af38f1d93d7f1756)(@types/pg@8.20.2)(payload@4.0.0-beta.9(graphql@17.0.2)(typescript@6.0.3))(pg@8.22.0)':
     dependencies:
       console-table-printer: 2.15.0
       dequal: 2.0.3
