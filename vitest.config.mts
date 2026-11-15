@@ -42,10 +42,7 @@ const walk = (dir: string, acc: string[] = []): string[] => {
   }
   return acc
 }
-// `packages` carries the release-pipeline suite (packages/test.ts — the content-addressed
-// version manifest + build reproducibility). A suite outside the runner's globs is a check
-// that cannot fire ([[rules]]/unraised), so the release gate is discovered here too.
-const allSuites = [...walk(join(ROOT, 'src')), ...walk(join(ROOT, 'packages'))]
+const allSuites = walk(join(ROOT, 'src'))
 // Which suites touch the Payload runtime is decided by `needsPayload` in src/utilities/test — the same answer
 // `erpax test waves` groups its batches by, so the routing here and the grouping there cannot drift.
 const integration: string[] = []

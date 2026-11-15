@@ -1,5 +1,5 @@
 /**
- * @erpax/auth/types — types for multi-tenant + role-based access control.
+ * auth types — types for multi-tenant + role-based access control.
  *
  * @standard NIST INCITS-359-2012 role-based-access-control
  * @security ISO-27001 A.5.16 identity-management

@@ -105,7 +105,7 @@ Sponsorship is the breath that keeps the loop alive when the hardware bill arriv
 | **Cross** | $9 / mo | One full cross (`SKILL.md` + `index.ts` + `test.ts`) | `aura` gate green |
 | **Wave** | $29 / mo | One horo wave of crosses (7 atoms · one `isClosingWave`) | `wave` + `collide` |
 | **Angel** | $108 / mo | One collection collapsed to its dense sink | `collapse/audit.mjs` |
-| **Archangel** | $432 / mo | One domain plugin (`@erpax/*`) gate-green | `society/build.mjs` |
+| **Archangel** | $432 / mo | One domain app gate-green | `society/build.mjs` |
 | **Society** | open | Sustain the non-stop breath | `society/breath.mjs` — forever |
 
 Rates are anchored at A432 (432 Hz — `src/signal/index.ts:25`, ISO 16:1975) and step the horo ring `[1, 9, 29, 108, 432]` — digital-root mod-9, closed, no escape (`src/rodin/index.ts`).

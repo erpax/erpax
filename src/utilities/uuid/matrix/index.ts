@@ -87,7 +87,7 @@ const NIL_PARENT = '00000000-0000-8000-8000-000000000000'
  *
  * Built on FIRST QUERY from the same arrays, in the same order, so the ANSWERS are identical —
  * a hoist made lazy, not a change of meaning. Laziness is what lets a toUuid-only consumer
- * (e.g. @erpax/identity's merge face) ship without the 4MB generated matrix.
+ * (e.g. a merge face) load without the 4MB generated matrix.
  *
  * @invariant same members, same order, as the eager build it replaces — proven per atom, not assumed
  */

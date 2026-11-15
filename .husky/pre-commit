@@ -13,18 +13,8 @@ if echo "$staged" | grep -qE '^src/utilities/verify/lean/.*\.lean$' && command -
   ./node_modules/.bin/tsx src/utilities/verify/inventory/index.ts </dev/null >/dev/null || exit 1
   git add src/utilities/verify/lean/inventory.generated.json README.md
 fi
-# The release manifest records each package's built content: rebuilt with every src change, so CI's
-# release check never meets a stale one. A failed rebuild stops the commit.
-if echo "$staged" | grep -qE '^src/'; then
-  node packages/release.mjs --write >/dev/null || exit 1
-  # A package whose code now imports something new names it as a dependency, so the lockfile follows
-  # the rewritten manifests (CI installs --frozen-lockfile and stops on any mismatch).
-  pnpm -s install --lockfile-only >/dev/null || exit 1
-  git add package.json packages/released.json packages/*/package.json pnpm-lock.yaml 2>/dev/null || true
-fi
-# Every @erpax/* package names its dependencies at the root's range: a root bump reaches every
-# package manifest, and the lockfile follows the manifests.
+# The lockfile follows the manifest: CI installs --frozen-lockfile and stops on any mismatch.
 if echo "$staged" | grep -qE '^(package\.json|pnpm-workspace\.yaml)$'; then
-  node packages/release.mjs --ranges --write >/dev/null && pnpm -s install --lockfile-only >/dev/null
-  git add packages/*/package.json pnpm-lock.yaml 2>/dev/null || true
+  pnpm -s install --lockfile-only >/dev/null || exit 1
+  git add pnpm-lock.yaml 2>/dev/null || true
 fi
