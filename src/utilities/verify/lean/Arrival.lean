@@ -1,8 +1,8 @@
 /-
   Arrival — a push has landed exactly when something judged it, nothing failed, and nothing of
+  this push is still running.
 
   Clay: none
-  this push is still running.
 
   The twin is pushVerdict in src/arrival, the verdict the landing lane asks the forge for. It is
   not a judgement typed into code: it is this conjunction, and every refusal it makes is a

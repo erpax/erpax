@@ -6,19 +6,17 @@ Source-available multi-tenant ERP & double-entry accounting on Payload CMS v4 + 
 
 Sponsor through [GitHub Sponsors (@erpax)](https://github.com/sponsors/erpax) or [fund.erpax.com](https://fund.erpax.com).
 
-## What it is today
-
-Each figure is computed from the source beside it whenever this page is generated.
-
-| Figure | Value | Computed from |
+| figure | value | source |
 | --- | --- | --- |
-| Version | 1.0.26 | `package.json` |
-| Payload | 4.0.0-beta.9 | `package.json` |
-| Next.js | ^16.4.1 | `package.json` |
-| Node | ^24.22.3 \|\| >=26.13.1 | `package.json` |
-| Collections | 191 | `src/payload-types.ts`, Payload's generated `Config`, without Payload's own `payload-*` |
-| Migrations | 9, the latest `20261115_201759_fold_governed_pages` | `src/migrations` |
-| Kernel-checked theorems | 363 in 47 files: 267 axiom-free, 96 on Lean's standard axioms, 0 stubbed (sealed 2026-11-15) | `src/utilities/verify/lean/inventory.generated.json` |
-| License | CC-BY-NC-ND-4.0 | `package.json` |
+| version | 1.0.26 | `package.json` |
+| payload | 4.0.0-beta.9 | `package.json` |
+| next | ^16.4.1 | `package.json` |
+| node | ^24.22.3 \|\| >=26.13.1 | `package.json` |
+| collections | 191 | `src/payload-types.ts` |
+| migrations | 9 | `src/migrations` |
+| Lean files | 47 | `src/utilities/verify/lean` |
+| theorems | 363 | `src/utilities/verify/lean/inventory.generated.json` |
+| axiom-free | 267 | `src/utilities/verify/lean/inventory.generated.json` |
+| license | CC-BY-NC-ND-4.0 | `package.json` |
 
 Source: [github.com/erpax/erpax](https://github.com/erpax/erpax)
