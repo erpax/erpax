@@ -86,8 +86,9 @@ export interface Figures {
   inventory: ProofInventory
 }
 
-/** A table cell: a pipe inside a value (a version range such as `^24 || >=26`) would end the cell. */
-const cell = (value: string): string => value.replace(/\|/g, '\\|')
+/** A table cell: a pipe inside a value (a version range such as `^24 || >=26`) would end the cell, so pipes are
+ * escaped, and backslashes first, or a value ending in one would undo the escape. */
+const cell = (value: string): string => value.replace(/\\/g, '\\\\').replace(/\|/g, '\\|')
 
 /** The figures table the README and the sponsor page both show, each value beside its source. */
 export const figureRows = ({ pkg, collections, migrations, inventory }: Figures): string[] => {
