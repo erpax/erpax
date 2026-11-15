@@ -6,14 +6,14 @@ import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCr
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties';
-import { validateNotLocked } from '@/utilities/utility';
+import { periodLock } from '@/utilities/utility';
 import { periodEndAdjustmentPostingHook } from '@/hooks/collections/shared/periodEndAdjustmentPostingHook';
 
 /**
  * Period-End Adjustments — accruals, deferrals, depreciation, allocation entries.
  *
  * Slice ZZ: full canonical hook chain wired (autoPopulateTenant +
- * autoPopulateCreatedBy + validateNotLocked + segregation of duties on
+ * autoPopulateCreatedBy + periodLock + segregation of duties on
  * approval + ISO-8601 postedAt timestamp + audit-trail emission).
  *
  * @standard ISO-8601-1:2019 date-time period posted-at
@@ -79,7 +79,7 @@ const PeriodEndAdjustments: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [
-      validateNotLocked,
+      periodLock('period'),
       autoPopulateCreatedBy,
       // SOX §404 four-eyes: the user who created the adjustment cannot
       // also approve it. ISO-27002 §5.3 segregation of duties.

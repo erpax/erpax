@@ -5,14 +5,14 @@ import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCr
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
 import { currencyField } from '@/fields/text/currencyField'
-import { validateNotLocked } from '@/utilities/utility';
+import { periodLock } from '@/utilities/utility';
 import { bankStatementImportedHook } from '@/hooks/collections/shared/bankStatementImportedHook';
 
 /**
  * Bank Statements — imported / matched bank statements feeding reconciliation.
  *
  * Slice ZZ: full canonical hook chain wired (autoPopulateTenant +
- * autoPopulateCreatedBy + validateNotLocked + ISO-8601 reconciledAt
+ * autoPopulateCreatedBy + periodLock + ISO-8601 reconciledAt
  * timestamp + audit-trail emission per write).
  *
  * @standard ISO-20022 camt.053 bank-to-customer-statement
@@ -113,7 +113,7 @@ const BankStatements: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [
-      validateNotLocked,
+      periodLock('statementDate'),
       autoPopulateCreatedBy,
       // ISO-8601 reconciliation timestamp on status → 'reconciled' transition.
       autoSetTimestamp(

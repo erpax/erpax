@@ -24,7 +24,7 @@ import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCr
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
-import { validateNotLocked } from '@/utilities/utility'
+import { periodLock } from '@/utilities/utility'
 import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
@@ -123,7 +123,7 @@ const InventoryMovements: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [
-      validateNotLocked,
+      periodLock('movementAt'),
       autoPopulateCreatedBy,
       autoSetTimestamp('postedAt', (d) => (d as { status?: string }).status === 'posted'),
     ],

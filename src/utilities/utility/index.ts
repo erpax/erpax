@@ -8,4 +8,4 @@
 
 export * from '@/utilities/utility/calculations';
 export * from '@/utilities/utility/span';
-export * from '@/hooks/collections/utility/validateNotLocked';
+export * from '@/hooks/collections/utility/periodLock';

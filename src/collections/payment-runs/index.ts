@@ -44,7 +44,7 @@ import { currencyField } from '@/fields/text/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { validateNotLocked } from '@/utilities/utility'
+import { periodLock } from '@/utilities/utility'
 
 const PaymentRuns: CollectionConfig = {
   slug: 'payment-runs',
@@ -323,7 +323,7 @@ const PaymentRuns: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [
-      validateNotLocked,
+      periodLock('requestedExecutionDate'),
       autoPopulateCreatedBy,
       autoSetTimestamp(
         'preparedAt',

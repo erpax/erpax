@@ -3,7 +3,7 @@
  *
  * A thin Local-API wrapper over the `journal-entries` collection: the collection's
  * own hooks are the source of truth for the standards — `validateBalancedEntry`
- * (Σdebit=Σcredit), `validateNotLocked` (period lock), `enforceSegregationOfDuties`,
+ * (Σdebit=Σcredit), `periodLock` (period lock), `enforceSegregationOfDuties`,
  * `autoSetTimestamp('postedDate')`, and `auditTrailAfterChange`. This service maps
  * the caller-facing interface (`accountId`) onto the collection schema (`glAccount`)
  * and reads `normalBalance`/`accountType` from `gl-accounts` for the trial balance.
@@ -255,7 +255,7 @@ class JournalEntryService {
   }
 
   /**
-   * Post a journal entry. The collection's `validateNotLocked` beforeChange hook
+   * Post a journal entry. The collection's `periodLock` beforeChange hook
    * rejects posting into a locked fiscal period (SOX §404); `autoSetTimestamp`
    * stamps `postedDate`.
    */

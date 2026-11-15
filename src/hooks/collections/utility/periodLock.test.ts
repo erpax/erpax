@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest'
-import { validateNotLocked } from '@/hooks/collections/utility/validateNotLocked'
+import { periodLock } from '@/hooks/collections/utility/periodLock'
+
+const validateNotLocked = periodLock('postingDate')
 
 const run = (data: Record<string, unknown>) =>
   (validateNotLocked as unknown as (a: unknown) => Promise<unknown>)({
@@ -46,5 +48,35 @@ describe('utility/period/lock — the control that is actually wired', () => {
       operation: 'create',
     })
     await expect(noUser).resolves.toBeDefined()
+  })
+})
+
+describe('periodLock — asks the period where its fields are, and checks the stored date too', () => {
+  const locked = { id: 'p1', label: 'FY2026-P03' }
+  const req = (found: unknown[], wheres: unknown[] = []) => ({
+    user: { id: 'u1', tenants: [{ tenant: 't1' }] },
+    payload: { find: async (args: { where: unknown }) => (wheres.push(args.where), { docs: found }) },
+  })
+  const run = (hook: ReturnType<typeof periodLock>, data: object, r: object, originalDoc?: object) =>
+    (hook as unknown as (a: unknown) => Promise<unknown>)({ data, originalDoc, req: r, operation: originalDoc ? 'update' : 'create' })
+
+  it('queries lifecycle.status and dates.* — the paths fiscal periods have', async () => {
+    const wheres: unknown[] = []
+    await run(periodLock('entryDate'), { tenant: 't1', entryDate: '2026-03-15' }, req([], wheres))
+    expect(JSON.stringify(wheres[0])).toContain('"lifecycle.status":{"equals":"locked"}')
+    expect(JSON.stringify(wheres[0])).toContain('"dates.startDate"')
+    expect(JSON.stringify(wheres[0])).toContain('"dates.endDate"')
+  })
+
+  it('refuses a posting dated in a locked period, read at a nested path', async () => {
+    await expect(run(periodLock('dates.date'), { tenant: 't1', dates: { date: '2026-03-15' } }, req([locked]))).rejects.toThrow(/FY2026-P03 is locked/)
+  })
+
+  it('refuses an edit that leaves the date out, by the date already stored', async () => {
+    await expect(run(periodLock('entryDate'), { description: 'changed' }, req([locked]), { tenant: 't1', entryDate: '2026-03-15' })).rejects.toThrow(/is locked/)
+  })
+
+  it('passes when no period covering the dates is locked', async () => {
+    await expect(run(periodLock('entryDate'), { tenant: 't1', entryDate: '2026-03-15' }, req([]))).resolves.toBeDefined()
   })
 })

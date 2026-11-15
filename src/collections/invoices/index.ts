@@ -6,7 +6,7 @@ import { CollectionConfig } from 'payload'
 // Aging is generateARAgingReport / generateAPAgingReport in @/accounting/reports.
 // COGS remains unbuilt: it is a gap, not a delegation.
 import { deriveInvoiceNumber, invoiceAccountingHook } from '@/utilities/invoices/hooks'
-import { validateNotLocked } from '@/utilities/utility'
+import { periodLock } from '@/utilities/utility'
 import { adminOnly, multiTenantRead } from '@/access/collections/shared/multiTenantRead'
 import { authenticated } from '@/utilities/authenticated'
 import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
@@ -92,7 +92,7 @@ export const Invoices: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant, deriveInvoiceNumber],
     // the dunning record (formerly the dunning-cycles collection): append-only history, one entry per stage change
-    beforeChange: [validateNotLocked, dunningHistory],
+    beforeChange: [periodLock('dates.date'), dunningHistory],
     // AAAAA-cont (2026-05-11): wired the canonical audit-trail emission
     // alongside the GL-posting hook. The auditTrailAfterChange call
     // makes every invoice mutation queryable from the auditor's console

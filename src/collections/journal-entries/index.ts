@@ -10,7 +10,7 @@ import { auditFields } from '@/fields/relationship/auditFields'
 import { statusField } from '@/fields/select/statusField'
 import { currencyField } from '@/fields/text/currencyField'
 import { glAccountField } from '@/fields/relationship/glAccountField'
-import { validateNotLocked } from '@/utilities/utility'
+import { periodLock } from '@/utilities/utility'
 import { validateBalancedEntry } from '@/hooks/collections/shared/validateBalancedEntry'
 
 /**
@@ -153,7 +153,7 @@ const JournalEntries: CollectionConfig = {
       }),
     ],
     beforeChange: [
-      validateNotLocked,
+      periodLock('entryDate'),
       enforcePostedImmutable,
       autoPopulateCreatedBy,
       enforceSegregationOfDuties(),
