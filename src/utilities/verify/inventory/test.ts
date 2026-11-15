@@ -104,8 +104,12 @@ describe('verify/inventory — what the kernel has checked ABOUT the Clay proble
     expect(clayDeclarationErrors({ 'X.lean': '  Clay: fermat meta' })).toHaveLength(1)
   })
 
-  it('the other six problems have no Lean witness at all', () => {
-    for (const problem of CLAY.filter((p) => p !== 'riemann')) expect(witnesses.filter((w) => w.problem === problem), problem).toEqual([])
+  it('every problem has a kernel-checked witness, and every witness is an obstruction (meta), compiled and unstubbed', () => {
+    for (const problem of CLAY) {
+      const mine = witnesses.filter((w) => w.problem === problem)
+      expect(mine.length, problem).toBeGreaterThan(0)
+      for (const w of mine) expect(w, `${problem} ${w.file}`).toMatchObject({ kind: 'meta', compiled: true, stubbed: 0 })
+    }
   })
 
   it('no Lean file here proves a Clay statement, so nothing is settled', () => {
