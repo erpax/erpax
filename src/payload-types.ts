@@ -341,7 +341,6 @@ export interface Config {
     'post-close-analytics-reports': PostCloseAnalyticsReport;
     'prior-period-adjustments': PriorPeriodAdjustment;
     provisions: Provision;
-    'reporting-standards': ReportingStandard;
     'statutory-report-templates': StatutoryReportTemplate;
     'tax-calculations': TaxCalculation;
     'tax-codes': TaxCode;
@@ -571,7 +570,6 @@ export interface Config {
     'post-close-analytics-reports': PostCloseAnalyticsReportsSelect<false> | PostCloseAnalyticsReportsSelect<true>;
     'prior-period-adjustments': PriorPeriodAdjustmentsSelect<false> | PriorPeriodAdjustmentsSelect<true>;
     provisions: ProvisionsSelect<false> | ProvisionsSelect<true>;
-    'reporting-standards': ReportingStandardsSelect<false> | ReportingStandardsSelect<true>;
     'statutory-report-templates': StatutoryReportTemplatesSelect<false> | StatutoryReportTemplatesSelect<true>;
     'tax-calculations': TaxCalculationsSelect<false> | TaxCalculationsSelect<true>;
     'tax-codes': TaxCodesSelect<false> | TaxCodesSelect<true>;
@@ -1633,6 +1631,56 @@ export interface Page {
         id?: string | null;
       }[]
     | null;
+  /**
+   * A governed document is never public; its type names who reads and writes it. Empty for a website page.
+   */
+  documentType?: 'reporting-standard' | null;
+  /**
+   * What every governed document has. The title is its name and the content its text.
+   */
+  document?: {
+    /**
+     * e.g. IFRS 15, ASC 606.
+     */
+    code?: string | null;
+    version?: string | null;
+    effectiveDate?: string | null;
+    classification?: ('gaap' | 'ifrs' | 'sox' | 'tax' | 'other') | null;
+    jurisdiction?: (string | null) | TaxJurisdiction;
+    /**
+     * Reference material and evidence.
+     */
+    attachments?: (string | Media)[] | null;
+    /**
+     * Links FROM this document to another — a standard mapped to another, a template to its source — with the element rules.
+     */
+    links?:
+      | {
+          name: string;
+          /**
+           * The document linked to.
+           */
+          page: string | Page;
+          kind:
+            | 'account-mapping'
+            | 'line-item-mapping'
+            | 'disclosure-mapping'
+            | 'metric-mapping'
+            | 'supersedes'
+            | 'references';
+          status?: ('active' | 'inactive' | 'pending-review') | null;
+          rules?:
+            | {
+                sourceElement?: string | null;
+                targetElement?: string | null;
+                transformation?: LexicalRichText<LexicalNodes_AD327369> | null;
+                id?: string | null;
+              }[]
+            | null;
+          id?: string | null;
+        }[]
+      | null;
+  };
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -2542,6 +2590,201 @@ export interface Textarea {
   id?: string | null;
   blockName?: string | null;
   blockType: 'textarea';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-jurisdictions".
+ */
+export interface TaxJurisdiction {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Jurisdiction code (e.g., EU-DE, US-CA, US-FED) — should align with ISO 3166-2 where applicable
+   */
+  code: string;
+  /**
+   * Human-readable name (e.g., "Germany VAT")
+   */
+  name: string;
+  /**
+   * Tax authority name (e.g., "Bundeszentralamt für Steuern")
+   */
+  authorityName?: string | null;
+  geography: {
+    /**
+     * ISO 3166-1 alpha-2 country code (e.g., US, DE, GB)
+     */
+    country: string;
+    /**
+     * ISO 3166-1 alpha-3 country code (e.g., USA, DEU, GBR)
+     */
+    iso3Code?: string | null;
+    /**
+     * ISO 3166-2 subdivision (e.g., CA, BY, NSW)
+     */
+    region?: string | null;
+    /**
+     * Administrative level
+     */
+    level: 'national' | 'state' | 'county' | 'city' | 'special_district' | 'supranational';
+  };
+  /**
+   * Parent jurisdiction (a state within its country, a country within the EU)
+   */
+  parentJurisdiction?: (string | null) | TaxJurisdiction;
+  /**
+   * Languages used in the jurisdiction
+   */
+  languages?:
+    | {
+        languageCode: string;
+        languageName?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Regulatory characteristics
+   */
+  regulatoryCharacteristics?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Banking and financial institution requirements
+   */
+  bankingRequirements?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Key statutory filing deadlines of the jurisdiction (the tenant's own cadence is in Filing)
+   */
+  filingDeadlines?:
+    | {
+        filingType: string;
+        deadline: string;
+        frequency?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Applicable compliance frameworks
+   */
+  complianceFrameworks?: (string | ComplianceFramework)[] | null;
+  isActive?: boolean | null;
+  registration?: {
+    /**
+     * Tenant registration / VAT / sales-tax permit number
+     */
+    registrationNumber?: string | null;
+    /**
+     * Date of registration with the authority
+     */
+    registrationDate?: string | null;
+    /**
+     * Date of deregistration (if any)
+     */
+    deregistrationDate?: string | null;
+  };
+  filing: {
+    /**
+     * How often returns are filed
+     */
+    filingFrequency?: ('monthly' | 'bimonthly' | 'quarterly' | 'semiannual' | 'annual' | 'on_demand') | null;
+    /**
+     * Day of month return is due (e.g. 20)
+     */
+    filingDueDayOfMonth?: number | null;
+    /**
+     * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+     */
+    currency: string;
+  };
+  notes?: {
+    /**
+     * Internal notes
+     */
+    note?: string | null;
+  };
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Read-only reference data
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-frameworks".
+ */
+export interface ComplianceFramework {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  code: string;
+  name: string;
+  category:
+    | 'accounting'
+    | 'auditing'
+    | 'control-framework'
+    | 'data-protection'
+    | 'info-security'
+    | 'banking'
+    | 'tax'
+    | 'esg'
+    | 'other';
+  description?: string | null;
+  issuingBody?: string | null;
+  officialResourceUrl?: string | null;
+  effectiveDate?: string | null;
+  isActive?: boolean | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -4474,201 +4717,6 @@ export interface TaxCode {
     | number
     | boolean
     | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tax-jurisdictions".
- */
-export interface TaxJurisdiction {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Jurisdiction code (e.g., EU-DE, US-CA, US-FED) — should align with ISO 3166-2 where applicable
-   */
-  code: string;
-  /**
-   * Human-readable name (e.g., "Germany VAT")
-   */
-  name: string;
-  /**
-   * Tax authority name (e.g., "Bundeszentralamt für Steuern")
-   */
-  authorityName?: string | null;
-  geography: {
-    /**
-     * ISO 3166-1 alpha-2 country code (e.g., US, DE, GB)
-     */
-    country: string;
-    /**
-     * ISO 3166-1 alpha-3 country code (e.g., USA, DEU, GBR)
-     */
-    iso3Code?: string | null;
-    /**
-     * ISO 3166-2 subdivision (e.g., CA, BY, NSW)
-     */
-    region?: string | null;
-    /**
-     * Administrative level
-     */
-    level: 'national' | 'state' | 'county' | 'city' | 'special_district' | 'supranational';
-  };
-  /**
-   * Parent jurisdiction (a state within its country, a country within the EU)
-   */
-  parentJurisdiction?: (string | null) | TaxJurisdiction;
-  /**
-   * Languages used in the jurisdiction
-   */
-  languages?:
-    | {
-        languageCode: string;
-        languageName?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Regulatory characteristics
-   */
-  regulatoryCharacteristics?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Banking and financial institution requirements
-   */
-  bankingRequirements?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Key statutory filing deadlines of the jurisdiction (the tenant's own cadence is in Filing)
-   */
-  filingDeadlines?:
-    | {
-        filingType: string;
-        deadline: string;
-        frequency?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Applicable compliance frameworks
-   */
-  complianceFrameworks?: (string | ComplianceFramework)[] | null;
-  isActive?: boolean | null;
-  registration?: {
-    /**
-     * Tenant registration / VAT / sales-tax permit number
-     */
-    registrationNumber?: string | null;
-    /**
-     * Date of registration with the authority
-     */
-    registrationDate?: string | null;
-    /**
-     * Date of deregistration (if any)
-     */
-    deregistrationDate?: string | null;
-  };
-  filing: {
-    /**
-     * How often returns are filed
-     */
-    filingFrequency?: ('monthly' | 'bimonthly' | 'quarterly' | 'semiannual' | 'annual' | 'on_demand') | null;
-    /**
-     * Day of month return is due (e.g. 20)
-     */
-    filingDueDayOfMonth?: number | null;
-    /**
-     * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-     */
-    currency: string;
-  };
-  notes?: {
-    /**
-     * Internal notes
-     */
-    note?: string | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Read-only reference data
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "compliance-frameworks".
- */
-export interface ComplianceFramework {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  code: string;
-  name: string;
-  category:
-    | 'accounting'
-    | 'auditing'
-    | 'control-framework'
-    | 'data-protection'
-    | 'info-security'
-    | 'banking'
-    | 'tax'
-    | 'esg'
-    | 'other';
-  description?: string | null;
-  issuingBody?: string | null;
-  officialResourceUrl?: string | null;
-  effectiveDate?: string | null;
-  isActive?: boolean | null;
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -12636,57 +12684,6 @@ export interface PriorPeriodAdjustment {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "reporting-standards".
- */
-export interface ReportingStandard {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  standardName: string;
-  standardCode: string;
-  standardType: 'gaap' | 'ifrs' | 'sox' | 'tax' | 'other';
-  jurisdiction?: (string | null) | TaxJurisdiction;
-  description?: LexicalRichText<LexicalNodes_AD327369> | null;
-  version?: string | null;
-  effectiveDate: string;
-  referenceMaterial?: (string | null) | Media;
-  /**
-   * Mappings FROM this standard to another (formerly the reporting-mappings collection; `fromStandard` is now the containing document).
-   */
-  mappings?:
-    | {
-        mappingName: string;
-        toStandard: string | ReportingStandard;
-        mappingType: 'account-mapping' | 'line-item-mapping' | 'disclosure-mapping' | 'metric-mapping';
-        mappingRules?:
-          | {
-              sourceElement?: string | null;
-              targetElement?: string | null;
-              transformation?: LexicalRichText<LexicalNodes_AD327369> | null;
-              id?: string | null;
-            }[]
-          | null;
-        status?: ('active' | 'inactive' | 'pending-review') | null;
-        id?: string | null;
-      }[]
-    | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "statutory-report-templates".
  */
 export interface StatutoryReportTemplate {
@@ -19903,7 +19900,6 @@ export interface PayloadQueryPreset {
     | 'post-close-analytics-reports'
     | 'prior-period-adjustments'
     | 'provisions'
-    | 'reporting-standards'
     | 'statutory-report-templates'
     | 'tax-calculations'
     | 'tax-codes'
@@ -20489,6 +20485,34 @@ export interface PagesSelect<T extends boolean = true> {
         title?: T;
         url?: T;
         id?: T;
+      };
+  documentType?: T;
+  document?:
+    | T
+    | {
+        code?: T;
+        version?: T;
+        effectiveDate?: T;
+        classification?: T;
+        jurisdiction?: T;
+        attachments?: T;
+        links?:
+          | T
+          | {
+              name?: T;
+              page?: T;
+              kind?: T;
+              status?: T;
+              rules?:
+                | T
+                | {
+                    sourceElement?: T;
+                    targetElement?: T;
+                    transformation?: T;
+                    id?: T;
+                  };
+              id?: T;
+            };
       };
   handle?: T;
   createdBy?: T;
@@ -23414,44 +23438,6 @@ export interface ProvisionsSelect<T extends boolean = true> {
   approvedAt?: T;
   notes?: T;
   handle?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "reporting-standards_select".
- */
-export interface ReportingStandardsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  standardName?: T;
-  standardCode?: T;
-  standardType?: T;
-  jurisdiction?: T;
-  description?: T;
-  version?: T;
-  effectiveDate?: T;
-  referenceMaterial?: T;
-  mappings?:
-    | T
-    | {
-        mappingName?: T;
-        toStandard?: T;
-        mappingType?: T;
-        mappingRules?:
-          | T
-          | {
-              sourceElement?: T;
-              targetElement?: T;
-              transformation?: T;
-              id?: T;
-            };
-        status?: T;
-        id?: T;
-      };
-  handle?: T;
-  createdBy?: T;
   updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -28855,7 +28841,6 @@ export interface CollectionQueryWidget {
       | 'post-close-analytics-reports'
       | 'prior-period-adjustments'
       | 'provisions'
-      | 'reporting-standards'
       | 'statutory-report-templates'
       | 'tax-calculations'
       | 'tax-codes'
@@ -29070,7 +29055,6 @@ export interface ActivityWidget {
           | 'post-close-analytics-reports'
           | 'prior-period-adjustments'
           | 'provisions'
-          | 'reporting-standards'
           | 'statutory-report-templates'
           | 'tax-calculations'
           | 'tax-codes'
@@ -29311,7 +29295,6 @@ export interface TaskCreateCollectionExport {
       | 'post-close-analytics-reports'
       | 'prior-period-adjustments'
       | 'provisions'
-      | 'reporting-standards'
       | 'statutory-report-templates'
       | 'tax-calculations'
       | 'tax-codes'
