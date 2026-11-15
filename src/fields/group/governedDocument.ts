@@ -1,4 +1,7 @@
-import { APIError, Forbidden, type Access, type CollectionBeforeChangeHook, type Field, type Where } from 'payload'
+import { APIError, Forbidden, type Access, type CollectionBeforeChangeHook, type Field, type PayloadRequest, type Where } from 'payload'
+
+import { abilityOf, type AbilityOf } from '@/access/collections/shared/abilityAccess'
+import { GOVERNED_TYPES } from '@/utilities/governed'
 
 import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 import { wherePublished } from '@/utilities/scope/filters'
@@ -16,37 +19,17 @@ import { wherePublished } from '@/utilities/scope/filters'
  * or out of one.
  */
 
-type Role = string
-
-export interface GovernedType {
-  readonly value: string
-  readonly label: string
-  /** Roles that read this type (a super-admin reads every type). */
-  readonly read: readonly Role[]
-  /** Roles that write this type (a super-admin writes every type). */
-  readonly write: readonly Role[]
-  /** `document` fields this type requires. */
-  readonly requires: readonly ('code' | 'effectiveDate' | 'classification')[]
-}
-
-/** Every governed type, with who reads and writes it — each kept from the collection it was. */
-export const GOVERNED_TYPES: readonly GovernedType[] = [
-  // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
-  {
-    value: 'reporting-standard',
-    label: 'Reporting standard',
-    read: ['admin', 'audit-staff', 'compliance-officer', 'finance'],
-    write: [],
-    requires: ['code', 'effectiveDate', 'classification'],
-  },
-]
-
-const rolesOf = (user: unknown): Role[] => ((user as { roles?: unknown } | null)?.roles as Role[] | undefined) ?? []
-
-/** The governed types `user` may read or write. */
-export const typesFor = (user: unknown, mode: 'read' | 'write'): string[] => {
-  const roles = rolesOf(user)
-  return GOVERNED_TYPES.filter((t) => isSuperAdmin(user) || t[mode].some((r) => roles.includes(r))).map((t) => t.value)
+/**
+ * The governed types the request may read or write: a role the type names, held as the user's own
+ * role, through a role assignment, or through a `<role>@<app>` group — the last two from the request's
+ * ability, computed once and kept on its context (`abilityOf`). A super-admin holds every type.
+ */
+export const typesFor = async (req: PayloadRequest, mode: 'read' | 'write', of: AbilityOf = abilityOf): Promise<string[]> => {
+  if (isSuperAdmin(req.user)) return GOVERNED_TYPES.map((t) => t.value)
+  if (!req.user) return []
+  const own = ((req.user as { roles?: unknown }).roles as string[] | undefined) ?? []
+  const ability = await of(req)
+  return GOVERNED_TYPES.filter((t) => t[mode].some((r) => own.includes(r)) || ability.permits(mode === 'read' ? 'read' : 'update', t.value)).map((t) => t.value)
 }
 
 const typeOf = (data: unknown): string | null | undefined => (data as { documentType?: string | null } | null)?.documentType
@@ -54,10 +37,10 @@ const notGoverned: Where = { documentType: { exists: false } }
 const governedIn = (types: string[]): Where => ({ documentType: { in: types } })
 
 /** Read: anonymous → published and not governed; signed in → website pages and the readable types. */
-export const pageRead: Access = ({ req }) => {
+export const pageRead: Access = async ({ req }) => {
   if (!req.user) return { and: [wherePublished, notGoverned] }
   if (isSuperAdmin(req.user)) return true
-  const types = typesFor(req.user, 'read')
+  const types = await typesFor(req, 'read')
   return types.length ? { or: [notGoverned, governedIn(types)] } : notGoverned
 }
 
@@ -66,7 +49,7 @@ export const pageWrite =
   (site: Access): Access =>
   async (args) => {
     if (isSuperAdmin(args.req.user)) return true
-    const writable = typesFor(args.req.user, 'write')
+    const writable = await typesFor(args.req, 'write')
     const declared = typeOf(args.data)
     if (declared) return writable.includes(declared)
     const siteAccess = await site(args)
@@ -84,13 +67,13 @@ export const documentError = (type: string | null | undefined, document: Record<
 }
 
 /** Refuses a change into or out of a type the writer may not write, and a governed page missing what its type requires. */
-export const governedDocument: CollectionBeforeChangeHook = ({ data, originalDoc, req }) => {
+export const governedDocument: CollectionBeforeChangeHook = async ({ data, originalDoc, req }) => {
   if (!data) return data
   const stored = originalDoc as { documentType?: string | null; document?: Record<string, unknown> } | undefined
   const next = typeOf(data) === undefined ? (stored?.documentType ?? null) : (typeOf(data) ?? null)
   const prev = stored?.documentType ?? null
   if (next !== prev && !isSuperAdmin(req.user)) {
-    const writable = typesFor(req.user, 'write')
+    const writable = await typesFor(req, 'write')
     if ((next && !writable.includes(next)) || (prev && !writable.includes(prev))) throw new Forbidden()
   }
   const error = documentError(next, { ...stored?.document, ...(data as { document?: Record<string, unknown> }).document })
