@@ -37,3 +37,13 @@ describe('mandatesField — a customer carries its own SEPA mandates (EPC130-08)
     expect(mandateError('M-1', active, on)).toBe(true)
   })
 })
+
+describe('mandatesField — a mandate id is used once', () => {
+  it('refuses an id repeated on the party or held by another party', async () => {
+    const { mandateIdError } = await import('@/fields/array/mandatesField')
+    expect(mandateIdError('M-1', 1, 0)).toBe(true)
+    expect(mandateIdError('M-1', 2, 0)).toMatch(/already in use/)
+    expect(mandateIdError('M-1', 1, 1)).toMatch(/already in use/)
+    expect(mandateIdError(undefined, 0, 0)).toBe(true)
+  })
+})

@@ -1,4 +1,5 @@
 import type { Field, PayloadRequest } from 'payload'
+import { validations } from 'payload/shared'
 
 import { stampWhen } from '@/hooks/collections/shared/stampWhen'
 
@@ -80,6 +81,32 @@ export const mandateOf = async (mandateId: string, req: PayloadRequest): Promise
   return mandates.find((m) => m.mandateId === mandateId)
 }
 
+/**
+ * A mandate id is used once: not twice on this party, and on no other party. The unique index enforces
+ * it too, but Payload does not turn an array row's index violation into a validation error (it answers 500).
+ */
+export const mandateIdError = (mandateId: unknown, onThisParty: number, otherHolders: number): string | true =>
+  !mandateId || (onThisParty <= 1 && otherHolders === 0) ? true : `Mandate id ${String(mandateId)} is already in use.`
+
+type Check = (value: unknown, args: never) => string | true | Promise<string | true>
+type ValidateArgs = { id?: number | string; data?: { mandates?: Mandate[] }; req: PayloadRequest }
+
+const validateMandateId = (async (value: unknown, args: never) => {
+  const first = await (validations.text as unknown as Check)(value, args)
+  if (first !== true || !value) return first
+  const { id, data, req } = args as ValidateArgs
+  const onThisParty = (data?.mandates ?? []).filter((m) => m.mandateId === value).length
+  const { docs } = await req.payload.find({
+    collection: 'parties',
+    where: { and: [{ 'mandates.mandateId': { equals: value } }, ...(id ? [{ id: { not_equals: id } }] : [])] },
+    depth: 0,
+    limit: 1,
+    overrideAccess: true,
+    req,
+  })
+  return mandateIdError(value, onThisParty, docs.length)
+}) as never
+
 export const mandatesField = (): Field => ({
   name: 'mandates',
   type: 'array',
@@ -89,7 +116,14 @@ export const mandatesField = (): Field => ({
     {
       type: 'row',
       fields: [
-        { name: 'mandateId', type: 'text', required: true, unique: true, admin: { description: 'Unique mandate identifier carried in pain.008 MndtId.' } },
+        {
+          name: 'mandateId',
+          type: 'text',
+          required: true,
+          unique: true,
+          validate: validateMandateId,
+          admin: { description: 'Unique mandate identifier carried in pain.008 MndtId.' },
+        },
         {
           name: 'localInstrument',
           type: 'select',
