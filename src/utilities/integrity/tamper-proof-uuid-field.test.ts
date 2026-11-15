@@ -163,3 +163,27 @@ describe('tamperProofBeforeChangeHook — update', () => {
     expect(verifyContentUuid(result, 't1').ok).toBe(true) // the restored row is Law-8 consistent
   })
 })
+
+describe('tamperProofBeforeChangeHook — identical content is one document', () => {
+  const hookFor = async () => (await import('@/utilities/integrity/tamper-proof-uuid-field')).tamperProofBeforeChangeHook('things')
+  const reqWith = (docs: unknown[], calls: unknown[] = []) => ({ context: {}, payload: { find: async (args: unknown) => (calls.push(args), { docs }) } })
+
+  it('refuses a second document with the same content (409), naming the first', async () => {
+    const hook = (await hookFor()) as unknown as (a: object) => Promise<unknown>
+    await expect(hook({ data: { tenant: 't1', title: 'same' }, operation: 'create', req: reqWith([{ id: 'twin-1' }]) })).rejects.toMatchObject({ status: 409, message: expect.stringContaining('twin-1') })
+  })
+
+  it('stamps the uuid when no other document has it', async () => {
+    const hook = (await hookFor()) as unknown as (a: object) => Promise<{ uuid?: string }>
+    const out = await hook({ data: { tenant: 't1', title: 'unique' }, operation: 'create', req: reqWith([]) })
+    expect(typeof out.uuid).toBe('string')
+  })
+
+  it('an update that leaves the content unchanged does not look for twins', async () => {
+    const hook = (await hookFor()) as unknown as (a: object) => Promise<{ uuid?: string }>
+    const first = await hook({ data: { tenant: 't1', title: 'kept' }, operation: 'create', req: reqWith([]) })
+    const calls: unknown[] = []
+    await hook({ data: {}, originalDoc: { id: 'd1', tenant: 't1', title: 'kept', uuid: first.uuid }, operation: 'update', req: reqWith([], calls) })
+    expect(calls).toHaveLength(0)
+  })
+})

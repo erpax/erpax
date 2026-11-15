@@ -133,8 +133,8 @@ if (
   process.env.NEXT_PHASE !== PHASE_PRODUCTION_BUILD
 ) {
   throw new Error(
-    'PAYLOAD_SECRET is required and must not be empty. Set PAYLOAD_SECRET in .env, or seal it ' +
-      '(PAYLOAD_SECRET_SEALED + ERPAX_SEAL_KEY — see src/utilities/secret/SKILL.md). Generate: openssl rand -hex 32',
+    'PAYLOAD_SECRET is required and must not be empty: set it as a Worker secret, or in .env locally. ' +
+      'Every internal key derives from it. Generate: openssl rand -hex 32',
   )
 }
 
