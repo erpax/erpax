@@ -21,6 +21,7 @@
  * @see ~/github/ceccec/etrima/app/models/ability.rb
  */
 import { defineAbility, type Ability } from '@/utilities/ability'
+import { GOVERNED_TYPES } from '@/utilities/governed'
 
 /** etrima's role names, as they are assigned by the role engine. */
 export const ACCOUNT_ROLES = [
@@ -39,7 +40,7 @@ const each = (subjects: readonly string[], grant: (subject: string) => void): vo
 
 /** What a user holding these account roles may do. Unknown roles grant nothing. */
 export const abilityForRoles = ({ roles, employeeId }: AbilityContext): Ability =>
-  defineAbility((can) => {
+  defineAbility((can, cannot) => {
     const has = (role: string): boolean => roles.includes(role)
 
     if (has('user')) can('read', 'all')
@@ -81,4 +82,13 @@ export const abilityForRoles = ({ roles, employeeId }: AbilityContext): Ability 
     // etrima left this as "TODO Client should see only their orders": that is the party role on the
     // order (`@/utilities/party/roles`), not an account-wide read, so a client gets the production view only.
     if (has('client')) each(['lots', 'lot-variants', 'lot-work-phases', 'packs', 'pack-items'], (subject) => can('read', subject))
+
+    // Governed document types are read and written by the roles each names (src/utilities/governed),
+    // never by the broad rules above: `user` reads all and `admin` manages all would hand every
+    // user every audit document. A later rule wins, so narrow first, then grant what the type names.
+    for (const type of GOVERNED_TYPES) {
+      cannot('manage', type.value)
+      if (type.read.some(has)) can('read', type.value)
+      if (type.write.some(has)) can('manage', type.value)
+    }
   })
