@@ -222,7 +222,6 @@ export { AuditSamples } from '@/collections/audit-samples'
 export { ComplianceGaps } from '@/collections/compliance-gaps'
 export { AuditEvidence } from '@/collections/audit-evidence'
 export { AuditFindings } from '@/collections/audit-findings'
-export { RemediationPlans } from '@/collections/remediation-plans'
 
 // Phase 4: Audit Governance & Reporting (5 collections)
 export { AuditCommittees } from '@/collections/audit-committees'
@@ -233,7 +232,6 @@ export { RegulatoryReports } from '@/collections/regulatory-reports'
 // Phase 5: Compliance Policies & Calendars (9 collections)
 export { InternalPolicies } from '@/collections/internal-policies'
 export { StatutoryReportTemplates } from '@/collections/statutory-report-templates'
-export { PolicyAcknowledgments } from '@/collections/policy-acknowledgments'
 export { ComplianceDeadlines } from '@/collections/compliance-deadlines'
 export { ReportingStandards } from '@/collections/reporting-standards'
 

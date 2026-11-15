@@ -10,6 +10,7 @@ import type { CollectionConfig } from 'payload'
 import { authenticated } from '@/utilities/authenticated'
 import { adminOnly } from '@/access/collections/shared/multiTenantRead'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
+import { remediationField, statusHeldToPlan } from '@/fields/group/remediationField'
 
 export const ComplianceGaps: CollectionConfig = {
   slug: 'compliance-gaps',
@@ -23,7 +24,17 @@ export const ComplianceGaps: CollectionConfig = {
     { name: 'requirement', type: 'relationship', relationTo: 'compliance-requirements', required: true },
     { name: 'gapType', type: 'select', options: [{ label: 'Missing Control', value: 'missing-control' }, { label: 'Design Deficiency', value: 'design-deficiency' }, { label: 'Operating Deficiency', value: 'operating-deficiency' }, { label: 'Documentation Gap', value: 'documentation-gap' }, { label: 'Resource Gap', value: 'resource-gap' }, { label: 'System Gap', value: 'system-gap' }, { label: 'Process Gap', value: 'process-gap' }], required: true },
     { name: 'severity', type: 'select', options: [{ label: 'Critical', value: 'critical' }, { label: 'High', value: 'high' }, { label: 'Medium', value: 'medium' }, { label: 'Low', value: 'low' }], required: true },
-    { name: 'status', type: 'select', options: [{ label: 'Identified', value: 'identified' }, { label: 'Under Review', value: 'under-review' }, { label: 'Remediation Planned', value: 'remediation-planned' }, { label: 'In Remediation', value: 'in-remediation' }, { label: 'Closed', value: 'closed' }], required: true, defaultValue: 'identified' },
+    {
+      name: 'status',
+      type: 'select',
+      options: [{ label: 'Identified', value: 'identified' }, { label: 'Under Review', value: 'under-review' }, { label: 'Remediation Planned', value: 'remediation-planned' }, { label: 'In Remediation', value: 'in-remediation' }, { label: 'Closed', value: 'closed' }],
+      required: true,
+      defaultValue: 'identified',
+      // a gap planned or in remediation has its plan (a gap may close by acceptance, without one)
+      validate: statusHeldToPlan({ needsPlan: ['remediation-planned', 'in-remediation'] }) as never,
+    },
+    // the remediation plan (formerly the remediation-plans collection)
+    remediationField(),
     { name: 'currentState', type: 'textarea' },
     { name: 'requiredState', type: 'textarea' },
     { name: 'rootCause', type: 'textarea' },

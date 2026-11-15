@@ -5,8 +5,37 @@
  * @standard ISO-37301:2021 compliance-policy
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  */
-import { CollectionConfig } from 'payload'
+import type { CollectionConfig, FieldHook } from 'payload'
+import { validations } from 'payload/shared'
 import { roleBasedAccess } from '@/access/collections/shared/roleBasedAccess'
+import { stampWhen } from '@/hooks/collections/shared/stampWhen'
+
+// ── Acknowledgments (formerly the policy-acknowledgments collection) ─────────────────────────────
+// An acknowledgment is a person accepting this policy as it stood, so it is a row here (ISO-27001
+// A.5.1, SOX §404 attestation), under the policy's own access and version history.
+
+/**
+ * The version acknowledged: the policy's current `versionNumber` when the row is added, never
+ * overwritten afterwards, so a later revision of the policy does not change what was acknowledged.
+ */
+export const stampVersion: FieldHook = ({ value, previousValue, data }) =>
+  previousValue || value || (data as { versionNumber?: string | null } | undefined)?.versionNumber || null
+
+interface Acknowledgment {
+  employeeId?: string | null
+  employeeName?: string | null
+  policyVersion?: string | null
+}
+
+/** A person acknowledges a given version once. */
+export const duplicateAcknowledgmentError = (rows: unknown): string | true => {
+  const keys = (Array.isArray(rows) ? (rows as Acknowledgment[]) : []).map(
+    (row) => `${(row.employeeId || row.employeeName || '').trim().toLowerCase()}@${row.policyVersion ?? ''}`,
+  )
+  return new Set(keys).size === keys.length ? true : 'A person acknowledges a policy version once.'
+}
+
+type Check = (value: unknown, args: never) => string | true | Promise<string | true>
 
 export const InternalPolicies: CollectionConfig = {
   slug: 'internal-policies',
@@ -113,6 +142,56 @@ export const InternalPolicies: CollectionConfig = {
       type: 'relationship',
       relationTo: 'internal-controls',
       hasMany: true,
+    },
+    {
+      name: 'acknowledgments',
+      type: 'array',
+      admin: { description: 'Who acknowledged which version of this policy, and when.' },
+      // Payload's own array check first: a bare validate would drop it
+      validate: (async (value: unknown, args: never) => {
+        const first = await (validations.array as unknown as Check)(value, args)
+        return first === true ? duplicateAcknowledgmentError(value) : first
+      }) as never,
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'employeeName', type: 'text', required: true },
+            { name: 'employeeId', type: 'text' },
+            {
+              name: 'status',
+              type: 'select',
+              defaultValue: 'pending',
+              options: [
+                { label: 'Acknowledged', value: 'acknowledged' },
+                { label: 'Pending', value: 'pending' },
+                { label: 'Overdue', value: 'overdue' },
+                { label: 'Expired', value: 'expired' },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'row',
+          fields: [
+            {
+              name: 'policyVersion',
+              type: 'text',
+              index: true,
+              admin: { readOnly: true, description: 'The version acknowledged: stamped from the policy, never changed.' },
+              hooks: { beforeChange: [stampVersion] },
+            },
+            {
+              name: 'acknowledgedAt',
+              type: 'date',
+              admin: { readOnly: true, description: 'Set by the server when the row is acknowledged.' },
+              hooks: { beforeChange: [stampWhen('acknowledged')] },
+            },
+            { name: 'acknowledgedBy', type: 'text' },
+          ],
+        },
+        { name: 'signedDocument', type: 'upload', relationTo: 'media' },
+      ],
     },
   ],
 }
