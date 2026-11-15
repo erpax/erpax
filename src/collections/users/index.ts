@@ -445,4 +445,7 @@ export const Users: CollectionConfig = {
     afterLogin: [setCookieBasedOnDomain, stampLastLogin],
   },
   timestamps: true,
+  // A version is the whole stored row: on users that copies the password hash and salt, the reset
+  // token and the API key into _users_v, where no field access reaches. Users keep no history.
+  versions: false,
 }
