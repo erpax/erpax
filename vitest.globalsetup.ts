@@ -15,7 +15,7 @@ export async function setup(): Promise<void> {
   // fresh run ⇒ no sentinel: the config sees push:true for THIS boot only.
   if (existsSync(SENTINEL)) rmSync(SENTINEL)
   const { getPayload } = await import('payload')
-  const config = (await import('./src/payload.config')).default
+  const { default: config, disposeCloudflare } = await import('./src/payload.config')
   // Booting with push:true (see payload.config.ts) creates every table on connect — the one-time cost.
   const payload = await getPayload({ config })
   // drop the sentinel so every worker fork boots with push OFF, reusing this warm schema (no 58s diff).
@@ -23,4 +23,8 @@ export async function setup(): Promise<void> {
   writeFileSync(SENTINEL, new Date().toISOString())
   // eslint-disable-next-line no-console
   console.log(`[globalSetup] greenfield schema pushed once from config — ${payload.config.collections.length} collections; workers reuse it`)
+  // Hand the D1 over: this process's workerd still holds the SQLite file, and the first worker to boot
+  // opens its own on the same file. Two at once collide (SQLITE_BUSY), so this one closes first.
+  await payload.destroy()
+  await disposeCloudflare()
 }

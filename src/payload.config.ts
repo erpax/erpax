@@ -161,6 +161,18 @@ async function getCloudflare(): Promise<CloudflareContext> {
   return _cloudflare
 }
 
+/**
+ * Close the local Cloudflare proxy (a workerd process holding the local D1 file) that this process
+ * opened. vitest's globalSetup pushes the schema, then the test workers each open the same D1: left
+ * open, the setup's workerd and the first worker's share one SQLite file and collide (SQLITE_BUSY).
+ */
+export const disposeCloudflare = async (): Promise<void> => {
+  const proxy = _cloudflare as { dispose?: () => Promise<void> } | undefined
+  _cloudflare = undefined
+  _cloudflareInit = false
+  await proxy?.dispose?.()
+}
+
 // Merge plugin translations with the project's own nested messages so the
 // Payload admin UI has a single, complete translation map per locale.
 function pluginTranslationsForLocale(
