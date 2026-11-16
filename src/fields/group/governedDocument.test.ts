@@ -45,7 +45,7 @@ describe('governed documents on pages — never public, read and written by the 
     expect(await mayWrite(req(superAdmin), STD, 't1', none)).toBe(true)
     const write = pageWrite(() => ({ tenant: { equals: 't1' } }), none)
     await expect(write({ req: req(tenantAdmin), data: { documentType: STD, tenant: 't1' } } as never)).resolves.toBe(false)
-    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline', 'processing-activity'] } }] })
+    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline', 'processing-activity', 'internal-audit-function'] } }] })
   })
 
   it('a type names what it requires', async () => {
@@ -136,5 +136,28 @@ describe('governed documents on pages — never public, read and written by the 
     expect(JSON.stringify(finds[0])).toContain('{"documentType":{"equals":"processing-activity"}},{"title":{"equals":"Payroll"}},{"tenant":{"equals":"t1"}}')
     await run([], { title: 'Payroll' }, { id: 'p1', tenant: { id: 't1' }, documentType: PA, document: { details } })
     expect(JSON.stringify(finds.at(-1))).toContain('{"id":{"not_equals":"p1"}}')
+  })
+
+  it('an internal audit function is approved on its effective date; its quality review recurs within five years; an engagement completes after it starts', () => {
+    const IA = 'internal-audit-function'
+    const block = (extra: object = {}) => ({ blockType: IA, entity: 'e1', reportingLine: 'audit-committee', auditFunctionStatus: 'established', chiefAuditExecutive: 'M. Petrova', ...extra })
+    expect(documentError(IA, { details: [block()] })).toMatch(/names its effectiveDate/)
+    expect(documentError(IA, { effectiveDate: '2026-01-15', details: [block()] })).toBe(true)
+    expect(documentError(IA, { effectiveDate: '2026-01-15', details: [block({ lastQualityReview: '2022-06-01', nextQualityReview: '2027-06-01' })] })).toBe(true)
+    expect(documentError(IA, { effectiveDate: '2026-01-15', details: [block({ lastQualityReview: '2022-06-01', nextQualityReview: '2027-06-02' })] })).toMatch(/within five years/)
+    expect(documentError(IA, { effectiveDate: '2026-01-15', details: [block({ auditEngagements: [{ engagementName: 'Payroll', engagementType: 'compliance', startDate: '2026-03-01', completionDate: '2026-02-01' }] })] })).toMatch(/completes after it starts \(Payroll\)/)
+  })
+
+  it('an internal audit function is read by audit and compliance staff, written by admins, and its charter id is unique in its tenant', async () => {
+    const IA = 'internal-audit-function'
+    expect(abilityForRoles({ roles: ['user', 'audit-staff'] }).permits('read', 'pages', { documentType: IA })).toBe(true)
+    expect(abilityForRoles({ roles: ['user', 'finance'] }).permits('read', 'pages', { documentType: IA })).toBe(false)
+    expect(await mayWrite(req(tenantAdmin), IA, 't1', none)).toBe(true)
+    const document = { code: 'IAC-2026-01', effectiveDate: '2026-01-15', details: [{ blockType: IA, entity: 'e1', reportingLine: 'audit-committee', auditFunctionStatus: 'established', chiefAuditExecutive: 'M. Petrova' }] }
+    const finds: unknown[] = []
+    const run = (twins: object[]) => (governedDocument as unknown as (a: object) => Promise<unknown>)({ data: { title: 'Internal Audit', tenant: 't1', documentType: IA, document }, req: { ...reqOf(superAdmin), payload: { find: async (args: unknown) => { finds.push(args); return { docs: twins } }, findByID: async () => ({}) } } })
+    await expect(run([{ id: 'p9' }])).rejects.toThrow(/with code "IAC-2026-01" already exists/)
+    expect(JSON.stringify(finds[0])).toContain('{"document.code":{"equals":"IAC-2026-01"}}')
+    expect(await run([])).toBeDefined()
   })
 })

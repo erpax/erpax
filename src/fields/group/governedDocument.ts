@@ -75,15 +75,18 @@ export const pageWrite =
     return any([siteBranch, own.length ? governedIn(own) : null, await byAbility(req, 'update', of)])
   }
 
+/** "A reporting standard", "An internal audit function": the type as the subject of a message. */
+const aDocument = (label: string): string => `${/^[aeiou]/i.test(label) ? 'An' : 'A'} ${label.toLowerCase()}`
+
 /** Why a governed page is incomplete for its type, or true. */
 export const documentError = (type: string | null | undefined, document: Record<string, unknown> | null | undefined): string | true => {
   const spec = GOVERNED_TYPES.find((t) => t.value === type)
   if (!spec) return true
   const missing = spec.requires.filter((f) => !document?.[f])
-  if (missing.length) return `A ${spec.label.toLowerCase()} names its ${missing.join(', ')}.`
+  if (missing.length) return `${aDocument(spec.label)} names its ${missing.join(', ')}.`
   const details = (document?.details as { blockType?: string }[] | undefined)?.[0]
-  if (details && details.blockType !== spec.value) return `A ${spec.label.toLowerCase()} carries its own details, not ${details.blockType}.`
-  if (spec.block && !details) return `A ${spec.label.toLowerCase()} carries its details.`
+  if (details && details.blockType !== spec.value) return `${aDocument(spec.label)} carries its own details, not ${details.blockType}.`
+  if (spec.block && !details) return `${aDocument(spec.label)} carries its details.`
   return details && spec.check ? spec.check(details as Record<string, unknown>, document ?? {}) : true
 }
 
@@ -100,20 +103,22 @@ export const governedDocument: CollectionBeforeChangeHook = async ({ data, origi
   const error = documentError(next, { ...stored?.document, ...(data as { document?: Record<string, unknown> }).document })
   if (error !== true) throw new APIError(error, 400)
   const spec = GOVERNED_TYPES.find((t) => t.value === next)
-  if (spec?.uniqueTitle) {
-    const title = (data as { title?: unknown }).title ?? (originalDoc as { title?: unknown } | undefined)?.title
+  const merged = { ...stored?.document, ...(data as { document?: Record<string, unknown> }).document }
+  for (const key of spec?.unique ?? []) {
+    const value = key === 'title' ? ((data as { title?: unknown }).title ?? (originalDoc as { title?: unknown } | undefined)?.title) : merged.code
+    if (value === undefined || value === null || value === '') continue
     const tenant = idOf((data as { tenant?: unknown }).tenant ?? (originalDoc as { tenant?: unknown } | undefined)?.tenant)
     const self = (originalDoc as { id?: unknown } | undefined)?.id
     const twins = await req.payload.find({
       collection: 'pages',
-      where: { and: [{ documentType: { equals: next } }, { title: { equals: title } }, ...(tenant ? [{ tenant: { equals: tenant } }] : []), ...(self ? [{ id: { not_equals: self } }] : [])] },
+      where: { and: [{ documentType: { equals: next } }, { [key === 'title' ? 'title' : 'document.code']: { equals: value } }, ...(tenant ? [{ tenant: { equals: tenant } }] : []), ...(self ? [{ id: { not_equals: self } }] : [])] },
       limit: 1,
       pagination: false,
       depth: 0,
       overrideAccess: true,
       req,
     })
-    if (twins.docs.length) throw new APIError(`A ${spec.label.toLowerCase()} named "${String(title)}" already exists here.`, 409)
+    if (twins.docs.length) throw new APIError(`${aDocument(spec!.label)} ${key === 'title' ? 'named' : 'with code'} "${String(value)}" already exists here.`, 409)
   }
   return data
 }

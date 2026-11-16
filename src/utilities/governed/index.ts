@@ -19,8 +19,8 @@ export interface GovernedType {
   readonly requires: readonly ('code' | 'effectiveDate' | 'classification' | 'jurisdiction')[]
   /** The fields this type's standard needs beyond the shared concern: `document.details`, one block. */
   readonly block?: Block
-  /** No two documents of this type in one tenant share a title (the name is the identity, as a GDPR record's is). */
-  readonly uniqueTitle?: boolean
+  /** What no two documents of this type in one tenant share: the title (a GDPR record is known by its name), the code (a charter by its id). */
+  readonly unique?: readonly ('title' | 'code')[]
   /** A rule of this type over its details block (and the shared concern it sits in), or true. */
   readonly check?: (details: Record<string, unknown>, document: Record<string, unknown>) => string | true
 }
@@ -427,6 +427,176 @@ export const processingError = (details: Record<string, unknown>): string | true
   return bare.length ? `A transfer to a third country names its safeguard (${bare.join(', ')}).` : true
 }
 
+/**
+ * The internal audit function under its charter: who leads it and whom it reports to, its plan, its
+ * engagements and the follow-up of their findings, and its quality reviews (IIA IPPF).
+ *
+ * @standard IIA IPPF international-professional-practices-framework
+ * @audit ISO-19011:2018 audit-programme
+ * @compliance SOX §404 internal-controls
+ */
+export const InternalAuditFunction: Block = {
+  slug: 'internal-audit-function',
+  interfaceName: 'InternalAuditFunctionBlock',
+  labels: { singular: 'Internal audit function', plural: 'Internal audit functions' },
+  fields: [
+    {
+      type: 'row',
+      fields: [
+        { name: 'entity', type: 'relationship', relationTo: 'legal-entities', required: true },
+        {
+          name: 'reportingLine',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'Reports to Audit Committee', value: 'audit-committee' },
+            { label: 'Reports to CFO', value: 'cfo' },
+            { label: 'Reports to CEO', value: 'ceo' },
+            { label: 'Dotted Line to Board', value: 'board-dotted' },
+          ],
+        },
+        {
+          name: 'auditFunctionStatus',
+          type: 'select',
+          required: true,
+          defaultValue: 'established',
+          options: [
+            { label: 'Established & Operating', value: 'established' },
+            { label: 'Establishing', value: 'establishing' },
+            { label: 'Under Review', value: 'under-review' },
+            { label: 'Dormant', value: 'dormant' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'chiefAuditExecutive', type: 'text', required: true, admin: { description: 'Chief Audit Executive (CAE) / Head of Internal Audit.' } },
+        { name: 'chiefAuditExecutiveContact', type: 'text', admin: { description: 'Email/phone.' } },
+        { name: 'auditCommittee', type: 'relationship', relationTo: 'audit-committees', admin: { description: 'Primary audit committee for governance oversight.' } },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'auditStaffCount', type: 'number', admin: { description: 'Number of internal audit staff.' } },
+        { name: 'auditBudget', type: 'number', admin: { description: 'Annual internal audit budget.' } },
+        { name: 'riskBasedAuditing', type: 'checkbox', defaultValue: true, admin: { description: 'Uses risk-based approach aligned with entity risk register.' } },
+      ],
+    },
+    { name: 'auditPlan', type: 'richText', admin: { description: 'Annual audit plan (risks, scope, staff allocation).' } },
+    {
+      type: 'row',
+      fields: [
+        { name: 'auditPlanYear', type: 'text', admin: { description: 'Fiscal year of the plan.' } },
+        { name: 'auditPlanApprovedDate', type: 'date' },
+        { name: 'auditPlanDocument', type: 'upload', relationTo: 'media', admin: { description: 'Annual audit plan (PDF).' } },
+      ],
+    },
+    {
+      name: 'auditEngagements',
+      type: 'array',
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'engagementName', type: 'text', required: true },
+            {
+              name: 'engagementType',
+              type: 'select',
+              required: true,
+              options: [
+                { label: 'Financial Audit', value: 'financial' },
+                { label: 'Operational Audit', value: 'operational' },
+                { label: 'Compliance Audit', value: 'compliance' },
+                { label: 'IT Audit', value: 'it' },
+                { label: 'Fraud Investigation', value: 'fraud' },
+                { label: 'Special Review', value: 'special-review' },
+              ],
+            },
+            {
+              name: 'status',
+              type: 'select',
+              defaultValue: 'planned',
+              options: [
+                { label: 'Planned', value: 'planned' },
+                { label: 'In Progress', value: 'in-progress' },
+                { label: 'Field Work Complete', value: 'fieldwork-complete' },
+                { label: 'Report Issued', value: 'report-issued' },
+                { label: 'Cancelled', value: 'cancelled' },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'row',
+          fields: [
+            { name: 'startDate', type: 'date', required: true },
+            { name: 'completionDate', type: 'date' },
+            { name: 'reportIssued', type: 'checkbox', defaultValue: false },
+          ],
+        },
+        { name: 'objectiveScope', type: 'richText' },
+      ],
+    },
+    { name: 'auditReports', type: 'relationship', relationTo: 'audit-committee-minutes', hasMany: true, admin: { description: 'Links to minutes where audit reports were presented.' } },
+    { name: 'auditFindings', type: 'relationship', relationTo: 'audit-findings', hasMany: true, admin: { description: 'Findings from internal audit engagements.' } },
+    {
+      name: 'followUpTracking',
+      type: 'array',
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'findingReference', type: 'text', required: true },
+            { name: 'targetImplementationDate', type: 'date', required: true },
+            { name: 'implementationDate', type: 'date' },
+            {
+              name: 'followUpStatus',
+              type: 'select',
+              defaultValue: 'not-started',
+              options: [
+                { label: 'Not Started', value: 'not-started' },
+                { label: 'In Progress', value: 'in-progress' },
+                { label: 'Completed', value: 'completed' },
+                { label: 'Not Implemented', value: 'not-implemented' },
+              ],
+            },
+          ],
+        },
+        { name: 'managementAction', type: 'richText', required: true },
+        { name: 'notes', type: 'richText' },
+      ],
+    },
+    { name: 'performanceMetrics', type: 'richText', admin: { description: 'KPIs: audit hours, engagements completed, findings, etc.' } },
+    { name: 'qualityAssurance', type: 'richText', admin: { description: 'Internal and external quality assurance reviews (IIA IPPF).' } },
+    {
+      type: 'row',
+      fields: [
+        { name: 'lastQualityReview', type: 'date', admin: { description: 'Date of last external QA review (required every 5 years).' } },
+        { name: 'nextQualityReview', type: 'date' },
+      ],
+    },
+    { name: 'professionalStandards', type: 'richText', admin: { description: 'Adherence to IIA International Standards, code of ethics.' } },
+    { name: 'resourceAdequacy', type: 'richText', admin: { description: 'Assessment of adequacy of internal audit resources.' } },
+    { name: 'independenceAndObjectivity', type: 'richText', admin: { description: 'Statement of independence and objectivity per IIA 1100 series.' } },
+  ],
+}
+
+const FIVE_YEARS = (date: number): number => { const d = new Date(date); d.setUTCFullYear(d.getUTCFullYear() + 5); return d.getTime() }
+const dateOf = (value: unknown): number => (value ? Date.parse(String(value)) : Number.NaN)
+
+/** An external quality review recurs within five years (IIA IPPF); an engagement completes after it starts. */
+export const auditFunctionError = (details: Record<string, unknown>): string | true => {
+  const last = dateOf(details.lastQualityReview)
+  const next = dateOf(details.nextQualityReview)
+  if (Number.isFinite(last) && Number.isFinite(next) && next > FIVE_YEARS(last)) return 'The next external quality review falls within five years of the last.'
+  const engagements = (details.auditEngagements as { engagementName?: string; startDate?: unknown; completionDate?: unknown }[] | undefined) ?? []
+  const backwards = engagements.filter((e) => Number.isFinite(dateOf(e.completionDate)) && dateOf(e.completionDate) < dateOf(e.startDate)).map((e) => e.engagementName)
+  return backwards.length ? `An engagement completes after it starts (${backwards.join(', ')}).` : true
+}
+
 export const GOVERNED_TYPES: readonly GovernedType[] = [
   // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
   {
@@ -477,8 +647,21 @@ export const GOVERNED_TYPES: readonly GovernedType[] = [
     read: ['user'],
     write: ['admin'],
     requires: [],
-    uniqueTitle: true,
+    unique: ['title'],
     block: ProcessingActivity,
     check: processingError,
+  },
+  // was internal-audit-function: read by admin, audit staff and compliance; written by admins. The function's
+  // name is the page title, its charter the content, the charter id the code (unique in its tenant), the
+  // approval date the effective date, the charter PDF an attachment.
+  {
+    value: 'internal-audit-function',
+    label: 'Internal audit function',
+    read: ['admin', 'audit-staff', 'compliance-officer'],
+    write: ['admin'],
+    requires: ['effectiveDate'],
+    unique: ['code'],
+    block: InternalAuditFunction,
+    check: auditFunctionError,
   },
 ]

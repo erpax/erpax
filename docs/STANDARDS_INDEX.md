@@ -372,7 +372,6 @@ src/collections/insurance-contracts/index.ts:19: * @standard ISO-4217:2015 curre
 src/collections/insurance-contracts/index.ts:20: * @standard ISO-8601-1:2019 date-time
 src/collections/intercompany-transactions/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/collections/intercompany-transactions/index.ts:13: * @standard ISO-8601-1:2019 date-time transaction-date
-src/collections/internal-audit-function/index.ts:4: * @standard IIA IPPF international-professional-practices-framework
 src/collections/internal-controls/index.ts:4: * @standard COSO-2013 internal-control-integrated-framework
 src/collections/internal-controls/index.ts:6: * @standard PCAOB AS 2201 ICFR-audit
 src/collections/internal-policies/index.ts:5: * @standard ISO-37301:2021 compliance-policy
@@ -1162,6 +1161,7 @@ src/utilities/governed/index.ts:102: * @standard IFRS-Taxonomy
 src/utilities/governed/index.ts:191: * @standard ISO-37301:2021 compliance-management-systems
 src/utilities/governed/index.ts:192: * @standard ISO-8601-1:2019 due-date
 src/utilities/governed/index.ts:313: * @standard ISO-8601-1:2019 date-time review-due-at
+src/utilities/governed/index.ts:434: * @standard IIA IPPF international-professional-practices-framework
 src/utilities/horo/index.ts:23: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
 src/utilities/iban/index.ts:10: * @standard ISO-7064:2003 mod-97-10 check-digits
 src/utilities/iban/index.ts:9: * @standard ISO-13616-1:2020 iban
@@ -2162,7 +2162,6 @@ src/collections/insurance-contracts/index.ts:22: * @compliance Solvency II / IAI
 src/collections/insurance-contracts/index.ts:23: * @compliance SOX §404 internal-controls TOM-INS-01
 src/collections/intercompany-transactions/index.ts:19: * @compliance SOX §404 internal-controls intercompany-control TOM-IC-01
 src/collections/intercompany-transactions/index.ts:20: * @compliance OECD BEPS Action 13 transfer-pricing-documentation
-src/collections/internal-audit-function/index.ts:6: * @compliance SOX §404 internal-controls
 src/collections/internal-controls/index.ts:5: * @compliance SOX §404 internal-controls
 src/collections/inventory-movements/index.ts:17: * @compliance SOX §404 internal-controls inventory-cycle-count
 src/collections/investment-properties/index.ts:22: * @compliance SOX §404 internal-controls
@@ -2400,6 +2399,7 @@ src/utilities/governed/index.ts:316: * @compliance GDPR Art.5(1)(e) storage-limi
 src/utilities/governed/index.ts:317: * @compliance ISO-27701:2025 records-of-processing
 src/utilities/governed/index.ts:31: * @compliance SOX §302 corporate-responsibility
 src/utilities/governed/index.ts:32: * @compliance SOX §906 criminal-certification
+src/utilities/governed/index.ts:436: * @compliance SOX §404 internal-controls
 src/utilities/integrity/content/index.ts:47: * @compliance SOX §404 internal-controls (Byzantine tamper detection)
 src/utilities/integrity/tamper-proof-uuid-field.ts:38: * @compliance SOX §404 (Byzantine tamper detection at the row level)
 src/utilities/integrity/uuid-ref.ts:29: * @compliance SOX §404 (referential integrity without cascade rules)
@@ -3094,7 +3094,6 @@ src/collections/groups/index.ts:14: * @security ISO-27001 A.5.15 access-control 
 src/collections/held-for-sale-classifications/index.ts:23: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/insurance-contracts/index.ts:24: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/intercompany-transactions/index.ts:21: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/internal-audit-function/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/internal-controls/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/internal-policies/index.ts:4: * @security ISO-27001 A.5.1 policies-for-information-security
 src/collections/internal-policies/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -3421,7 +3420,6 @@ src/collections/government-grants/index.ts:19: * @audit ISO-19011:2018 audit-tra
 src/collections/held-for-sale-classifications/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-disposal-classification
 src/collections/insurance-contracts/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-insurance-contracts
 src/collections/intercompany-transactions/index.ts:18: * @audit ISO-19011:2018 audit-trail intercompany-evidence
-src/collections/internal-audit-function/index.ts:5: * @audit ISO-19011:2018 audit-programme
 src/collections/inventory-movements/index.ts:16: * @audit ISO-19011:2018 audit-trail stock-ledger
 src/collections/investment-properties/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-investment-property
 src/collections/invoices/index.ts:70: * @audit ISO-19011:2018 audit-trail
@@ -3605,6 +3603,7 @@ src/utilities/factory/recompute-parent-aggregates.ts:27: * @audit ISO-19011:2018
 src/utilities/field/index.ts:7: * @audit Flat namespace to eliminate circular imports and duplicate definitions.
 src/utilities/gl/account/resolver/index.ts:27: * @audit ISO-19011:2018 audit-trail account-resolution
 src/utilities/governed/index.ts:318: * @audit ISO-19011:2018 audit-trail ropa-evidence
+src/utilities/governed/index.ts:435: * @audit ISO-19011:2018 audit-programme
 src/utilities/integrity/content/index.ts:46: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/utilities/integrity/resource-bound.ts:33: * @audit Conservation Law 55 (tamper-reversibility-cost) — physical bound
 src/utilities/integrity/tamper-proof-uuid-field.ts:37: * @audit ISO 19011:2018 §6.4.6
