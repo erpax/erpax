@@ -29,6 +29,9 @@ const collections = [
   col('files', { name: 'file', type: 'upload', relationTo: 'invoices' } as Field), // an attachment is not a reference
   col('pointed', { name: 'title', type: 'text' }),
   col('pointer', { name: 'rows', type: 'array', fields: [ref('at', 'pointed')] } as Field),
+  // a document of sales refers, in its marked concern, to a collection nothing else points at
+  col('documents', ref('invoice', 'invoices'), { name: 'document', type: 'group', custom: { places: false }, fields: [ref('about', 'documented')] } as Field),
+  col('documented', { name: 'title', type: 'text' }),
 ]
 
 describe('partition — which app a collection belongs to, computed', () => {
@@ -57,6 +60,12 @@ describe('partition — which app a collection belongs to, computed', () => {
   })
   it('an upload is an attachment, not a reference', () => {
     expect(placed.get('files')).toBe('platform')
+  })
+  it('what a document refers to in a field marked places: false stays where it was', () => {
+    expect(placed.get('documents')).toBe('sales')
+    expect(placed.get('documented')).toBe('platform')
+    const unmarked = collections.map((c) => (c.slug === 'documents' ? col('documents', ref('invoice', 'invoices'), ref('about', 'documented')) : c))
+    expect(partition(unmarked, apps, SHARE).get('documented')).toBe('sales')
   })
   it('collections tied only to each other, far from any anchor, fall to the last app', () => {
     expect(placed.get('pointer')).toBe('platform')

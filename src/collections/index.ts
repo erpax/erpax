@@ -227,7 +227,6 @@ export { RegulatoryReports } from '@/collections/regulatory-reports'
 
 // Phase 5: Compliance Policies & Calendars (9 collections)
 export { InternalPolicies } from '@/collections/internal-policies'
-export { StatutoryReportTemplates } from '@/collections/statutory-report-templates'
 export { ComplianceDeadlines } from '@/collections/compliance-deadlines'
 
 // Phase 6: Risk, Disclosure & Audit Extension (8 collections)
