@@ -1,0 +1,63 @@
+# Each deployed version is released once. When CI and Deployed have both succeeded on the same commit of
+# main, and package.json's version has no tag yet, that commit is tagged v<version> and a GitHub Release is
+# created; Zenodo's webhook on releases turns it into a DOI. The version is bumped in a pull request (CI's
+# lint keeps CITATION.cff and .zenodo.json in step with it); a deploy that keeps the version releases nothing.
+# The file is publish.yml, the workflow name npm trusted publishing is configured against, so a package
+# published from here later carries provenance without renaming the workflow.
+name: Publish
+
+on:
+  workflow_run:
+    workflows: [CI, Deployed]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: write
+  actions: read
+
+# CI and Deployed finish minutes apart and each wakes this workflow: one decision at a time, and the later
+# of the two releases.
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Release the deployed version
+    if: github.event.workflow_run.event == 'push' && github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SHA: ${{ github.event.workflow_run.head_sha }}
+    steps:
+      # Nothing from the commit is checked out or run: its package.json and citation files are read through
+      # the API at that commit, so the write token never meets the commit's code.
+      - name: Release once CI and Deployed both passed on this commit
+        run: |
+          passed() {
+            gh api "repos/$GITHUB_REPOSITORY/actions/workflows/$1/runs?head_sha=$SHA&event=push&per_page=1" \
+              --jq '.workflow_runs[0].conclusion // "none"'
+          }
+          ci=$(passed ci.yml)
+          deployed=$(passed deployed.yml)
+          echo "$SHA: CI $ci · Deployed $deployed"
+          if [ "$ci" != success ] || [ "$deployed" != success ]; then
+            echo "Not both green yet: the later of the two releases."
+            exit 0
+          fi
+          file() { gh api "repos/$GITHUB_REPOSITORY/contents/$1?ref=$SHA" -H 'Accept: application/vnd.github.raw' > "$RUNNER_TEMP/$1"; }
+          file package.json
+          file CITATION.cff
+          file .zenodo.json
+          # GitHub renames an asset that starts with a dot (default.zenodo.json); upload it as zenodo.json
+          mv "$RUNNER_TEMP/.zenodo.json" "$RUNNER_TEMP/zenodo.json"
+          tag="v$(jq -r .version "$RUNNER_TEMP/package.json")"
+          if gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$tag" > /dev/null 2>&1; then
+            echo "$tag is already released."
+            exit 0
+          fi
+          gh release create "$tag" --repo "$GITHUB_REPOSITORY" --target "$SHA" --title "$tag" --generate-notes \
+            "$RUNNER_TEMP/CITATION.cff" "$RUNNER_TEMP/zenodo.json"
+          echo "Released $tag at $SHA."
