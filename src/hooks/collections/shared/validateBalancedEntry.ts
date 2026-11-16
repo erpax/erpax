@@ -30,6 +30,7 @@
  */
 
 import type { CollectionBeforeValidateHook } from 'payload'
+import { APIError } from 'payload'
 import { DebitCreditLogic, type AccountType, type JournalEntryLine } from '@/utilities/accounting'
 
 export interface BalancedEntryOptions {
@@ -85,9 +86,8 @@ export function validateBalancedEntry(
       ;(data as Record<string, unknown>)[balancedField] = result.balanced
     }
     if (!result.balanced) {
-      throw new Error(
-        `Journal entry must balance: debits ${result.totalDebits} ≠ credits ${result.totalCredits} (variance ${result.variance})`,
-      )
+      throw new APIError(
+        `Journal entry must balance: debits ${result.totalDebits} ≠ credits ${result.totalCredits} (variance ${result.variance})`, 400)
     }
     return data
   }

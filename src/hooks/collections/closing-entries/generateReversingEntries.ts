@@ -23,6 +23,7 @@
  */
 
 import type { CollectionAfterChangeHook, RequiredDataFromCollectionSlug } from 'payload'
+import { APIError } from 'payload'
 import { flagged } from '@/hooks/context'
 import { ClosingPeriodChecker } from '@/utilities/closing/period/checker'
 
@@ -148,9 +149,8 @@ export const generateReversingEntries: CollectionAfterChangeHook<ClosingEntryDat
     // THROWS is not an open period, it is an unverified one. The old branch warned and continued —
     // the empty-try period-lock class this corpus named as its own catastrophe shape. An absent
     // lock DOC above stays open-by-design (no lock exists); a failed QUERY refuses the post.
-    throw new Error(
-      `[generateReversingEntries] period-lock check failed for FY${nextFiscalYear}-P${nextPeriodNumber} — refusing to generate reversals into an unverifiable period: ${String(err)}`,
-    )
+    throw new APIError(
+      `[generateReversingEntries] period-lock check failed for FY${nextFiscalYear}-P${nextPeriodNumber} — refusing to generate reversals into an unverifiable period: ${String(err)}`, 403)
   }
 
   // Generate reversal entries from closing entries

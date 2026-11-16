@@ -16,6 +16,7 @@
  */
 
 import type { CollectionBeforeChangeHook, PayloadRequest } from 'payload'
+import { APIError } from 'payload'
 import { relationId as relId } from '@/utilities/field/relation'
 
 /** Resolve a relationship value to its id (string, number, or `{ id }` object). */
@@ -31,7 +32,7 @@ async function assertNotDecommissioned(
   const doc = await req.payload.findByID({ collection: collection as never, id, overrideAccess: true, req })
   const status = (doc as { status?: unknown } | null)?.status
   if (status === 'decommissioned') {
-    throw new Error(`Наредба Н-18: cannot issue a sale on a decommissioned ${label}.`)
+    throw new APIError(`Наредба Н-18: cannot issue a sale on a decommissioned ${label}.`, 400)
   }
 }
 

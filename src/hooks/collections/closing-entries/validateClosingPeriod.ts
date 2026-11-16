@@ -19,6 +19,7 @@
  */
 
 import { CollectionBeforeValidateHook } from 'payload'
+import { APIError } from 'payload'
 import { ClosingPeriodChecker } from '@/utilities/closing/period/checker'
 
 interface ClosingEntryData {
@@ -51,9 +52,8 @@ export const validateClosingPeriod: CollectionBeforeValidateHook<ClosingEntryDat
 
   // Validate basic requirements
   if (!fiscalYear || !fiscalPeriodNumber) {
-    throw new Error(
-      `Missing required closing fields: fiscalYear=${fiscalYear}, fiscalPeriodNumber=${fiscalPeriodNumber}`,
-    )
+    throw new APIError(
+      `Missing required closing fields: fiscalYear=${fiscalYear}, fiscalPeriodNumber=${fiscalPeriodNumber}`, 400)
   }
 
   // Map closingType to periodType (for ClosingPeriodChecker compatibility)
@@ -106,9 +106,8 @@ export const validateClosingPeriod: CollectionBeforeValidateHook<ClosingEntryDat
   )
 
   if (!validation.isEligible) {
-    throw new Error(
-      `Closing period ineligible: ${validation.errors.join('; ')}`,
-    )
+    throw new APIError(
+      `Closing period ineligible: ${validation.errors.join('; ')}`, 400)
   }
 
   // If warnings exist, log them for audit trail

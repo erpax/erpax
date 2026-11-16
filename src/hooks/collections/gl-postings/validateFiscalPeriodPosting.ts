@@ -48,6 +48,7 @@
  */
 
 import { CollectionBeforeValidateHook } from 'payload'
+import { APIError } from 'payload'
 import { getUserContext } from '@/access/collections/shared/multiTenantRead'
 import { chainLeaf } from '@/utilities/merge'
 
@@ -113,7 +114,7 @@ export const validateFiscalPeriodPosting: CollectionBeforeValidateHook<GLPosting
   const postingDate = data.postingDate
 
   if (!postingDate) {
-    throw new Error('postingDate or journalEntry.entryDate required to resolve fiscal period')
+    throw new APIError('postingDate or journalEntry.entryDate required to resolve fiscal period', 400)
   }
 
   // Extract entity ID
@@ -123,7 +124,7 @@ export const validateFiscalPeriodPosting: CollectionBeforeValidateHook<GLPosting
       : data.entity?.id || getUserContext(req)?.tenant
 
   if (!entityId) {
-    throw new Error('entity required to resolve fiscal period')
+    throw new APIError('entity required to resolve fiscal period', 400)
   }
 
   // Locks are kept per tenant and period; the posting carries its tenant, the request is the fallback.
@@ -147,10 +148,9 @@ export const validateFiscalPeriodPosting: CollectionBeforeValidateHook<GLPosting
   // period — it is an entry that does not know which financial statements it belongs to. Failing here is
   // loud and fixable (generate the calendar); guessing is silent and lands in the statements.
   if (!entry) {
-    throw new Error(
+    throw new APIError(
       `fiscal period unresolved: no fiscal-calendars entry for entity ${entityId} on ${postingDate}. ` +
-        `Generate the fiscal calendar for this period before posting.`,
-    )
+        `Generate the fiscal calendar for this period before posting.`, 400)
   }
 
   data.fiscalYear = entry.fiscalYear
@@ -184,7 +184,7 @@ export const validateFiscalPeriodPosting: CollectionBeforeValidateHook<GLPosting
   // No lock row means the period was never closed — open by default, which is the collection's own
   // defaultValue. Absence is not permission to guess at anything else.
   if (lock?.lockStatus === 'archived') {
-    throw new Error(`period ${data.periodLabel} is archived and cannot accept new postings`)
+    throw new APIError(`period ${data.periodLabel} is archived and cannot accept new postings`, 403)
   }
   if (lock?.lockStatus === 'locked') {
     // A locked period still admits the entries a close is FOR — a reversal, or a prior-period adjustment —
@@ -194,9 +194,8 @@ export const validateFiscalPeriodPosting: CollectionBeforeValidateHook<GLPosting
       (data.isReversal === true && lock.allowReversals === true) ||
       (data.isPriorPeriodAdjustment === true && lock.allowPriorPeriodAdjustments === true)
     if (!allowed) {
-      throw new Error(
-        `period ${data.periodLabel} is locked — only reversals or prior-period adjustments the lock permits may post`,
-      )
+      throw new APIError(
+        `period ${data.periodLabel} is locked — only reversals or prior-period adjustments the lock permits may post`, 403)
     }
   }
 

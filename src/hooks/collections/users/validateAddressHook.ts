@@ -30,6 +30,7 @@
  */
 
 import type { CollectionBeforeValidateHook } from 'payload'
+import { APIError } from 'payload'
 import { readNested } from '@/utilities/field/nested'
 import { type AddressLike, validateAddress } from '@/utilities/address/validation'
 import { getTenantDefaultsFromReq } from '@/utilities/tenant/context'
@@ -82,7 +83,7 @@ export function validateAddressHook(
 
     const result = validateAddress(targetAddr, fallback)
     if (!result.valid) {
-      throw new Error(result.errors.join(' '))
+      throw new APIError(result.errors.join(' '), 400)
     }
     return data
   }

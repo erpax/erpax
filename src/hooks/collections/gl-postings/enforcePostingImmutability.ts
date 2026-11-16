@@ -9,6 +9,7 @@
  */
 
 import { CollectionBeforeChangeHook } from 'payload'
+import { APIError } from 'payload'
 import { getUser } from '@/access/collections/shared/multiTenantRead'
 
 export const enforcePostingImmutability: CollectionBeforeChangeHook = async ({
@@ -36,21 +37,19 @@ export const enforcePostingImmutability: CollectionBeforeChangeHook = async ({
 
   // If not admin, throw immutability error
   if (!isSuperAdminOrAdmin) {
-    throw new Error(
-      'Cannot modify posted GL posting. Contact admin if modification is required.'
-    )
+    throw new APIError(
+      'Cannot modify posted GL posting. Contact admin if modification is required.', 403)
   }
 
   // If admin is modifying, require override documentation
   if (isSuperAdminOrAdmin && data.adminOverride !== true) {
-    throw new Error(
-      'Admin modifications to posted postings require adminOverride checkbox to be enabled and reason to be provided.'
-    )
+    throw new APIError(
+      'Admin modifications to posted postings require adminOverride checkbox to be enabled and reason to be provided.', 400)
   }
 
   // If admin override is enabled, validate reason
   if (data.adminOverride === true && (!data.adminOverrideHistory || data.adminOverrideHistory.length === 0)) {
-    throw new Error('Admin override reason is required in adminOverrideHistory array.')
+    throw new APIError('Admin override reason is required in adminOverrideHistory array.', 400)
   }
 
   // Create audit trail entry for admin override
