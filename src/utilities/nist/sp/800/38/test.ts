@@ -34,7 +34,9 @@ describe('nist/sp/800/38 — field encryption at rest', () => {
     const token = encryptField('cus_123', 'stripeCustomerId') as string
     expect(() => decryptField(token, 'stripeSubscriptionId')).toThrow()
     const [iv, body, tag] = token.split('.') as [string, string, string]
-    const flipped = `${iv}.${body.slice(0, -1)}${body.endsWith('A') ? 'B' : 'A'}.${tag}`
+    // the first base64 character carries six data bits, so changing it always changes the ciphertext; the last
+    // carries only some (the rest is padding), and flipping it left the value intact about one time in four
+    const flipped = `${iv}.${body.startsWith('A') ? 'B' : 'A'}${body.slice(1)}.${tag}`
     expect(() => decryptField(flipped, 'stripeCustomerId')).toThrow()
   })
 
