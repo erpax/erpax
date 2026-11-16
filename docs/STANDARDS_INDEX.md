@@ -589,9 +589,6 @@ src/collections/standards/index.ts:26: * @standard ISO/IEC 25010:2023 §5.1 func
 src/collections/standards/index.ts:27: * @standard ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)
 src/collections/standards/index.ts:28: * @standard W3C JSON-LD 1.1 (citation as live linked-data)
 src/collections/standards/test.ts:2: * @standard ISO/IEC-29119:2022 software-testing
-src/collections/statutory-report-templates/index.ts:4: * @standard SAF-T OECD audit-file
-src/collections/statutory-report-templates/index.ts:5: * @standard XBRL business-reporting
-src/collections/statutory-report-templates/index.ts:6: * @standard IFRS-Taxonomy
 src/collections/subscription-plans/index.ts:9: * @standard ISO-4217:2015 currency-codes
 src/collections/subscriptions/index.ts:13: * @standard ISO-4217:2015 currency-codes
 src/collections/subscriptions/index.ts:14: * @standard ISO-8601-1:2019 date-time period-start period-end
@@ -880,7 +877,7 @@ src/packages/admin/providers/index.ts:23: * @standard RFC-7643 SCIM core schema 
 src/packages/admin/providers/index.ts:24: * @standard ISO/IEC-25010:2011 §4.2.3 interoperability
 src/packages/admin/providers/scim/index.ts:9: * @standard RFC-7643 §3.1 common attributes · §4.1 User · §4.2 Group · §4.3 Enterprise User
 src/packages/admin/providers/settings.ts:13: * @standard RFC-6749 OAuth 2.0 client registration (client id and secret)
-src/packages/engine/index.ts:28: * @standard ISO/IEC-25010:2011 §4.2.7 modularity — a change to one app touches that app's plugin
+src/packages/engine/index.ts:30: * @standard ISO/IEC-25010:2011 §4.2.7 modularity — a change to one app touches that app's plugin
 src/payload.config.ts:533:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
 src/payload.config.ts:551:       * @standard ISO-3166-1:2020 BG country-code
 src/payload.config.ts:552:       * @standard ISO-4217:2015 currency-codes
@@ -1161,6 +1158,9 @@ src/utilities/ghg/protocol/index.ts:13: * @standard EU ESRS E1 §44-50 ghg-emiss
 src/utilities/ghg/protocol/index.ts:14: * @standard IFRS S2 §29-32 climate-related-metrics (companion)
 src/utilities/ghg/protocol/index.ts:9: * @standard GHG Protocol Corporate Standard (revised 2015)
 src/utilities/gl/account/resolver/index.ts:24: * @standard ISO-4217:2015 currency-codes
+src/utilities/governed/index.ts:100: * @standard IFRS-Taxonomy
+src/utilities/governed/index.ts:98: * @standard SAF-T OECD audit-file
+src/utilities/governed/index.ts:99: * @standard XBRL business-reporting
 src/utilities/horo/index.ts:23: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
 src/utilities/iban/index.ts:10: * @standard ISO-7064:2003 mod-97-10 check-digits
 src/utilities/iban/index.ts:9: * @standard ISO-13616-1:2020 iban
@@ -3158,7 +3158,6 @@ src/collections/segment-reporting/index.ts:6: * @security ISO-27001 A.5.23 cloud
 src/collections/share-based-payments/index.ts:19: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/shares/index.ts:35: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/spaces/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/statutory-report-templates/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/subscriptions/index.ts:20: * @security ISO-27002 §8.24 use-of-cryptography
 src/collections/taggings/index.ts:34: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/tags/index.ts:25: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation

@@ -14,8 +14,8 @@
 | payload | 4.0.0-beta.9 | `package.json` |
 | next | ^16.4.1 | `package.json` |
 | node | ^24.22.3 \|\| >=26.13.1 | `package.json` |
-| collections | 190 | `src/payload-types.ts` |
-| migrations | 12 | `src/migrations` |
+| collections | 189 | `src/payload-types.ts` |
+| migrations | 13 | `src/migrations` |
 | Lean files | 47 | `src/utilities/verify/lean` |
 | theorems | 366 | `src/utilities/verify/lean/inventory.generated.json` |
 | axiom-free | 270 | `src/utilities/verify/lean/inventory.generated.json` |

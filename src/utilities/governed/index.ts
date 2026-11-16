@@ -16,11 +16,11 @@ export interface GovernedType {
   /** Roles that write this type (a super-admin writes every type). */
   readonly write: readonly string[]
   /** `document` fields this type requires. */
-  readonly requires: readonly ('code' | 'effectiveDate' | 'classification')[]
+  readonly requires: readonly ('code' | 'effectiveDate' | 'classification' | 'jurisdiction')[]
   /** The fields this type's standard needs beyond the shared concern: `document.details`, one block. */
   readonly block?: Block
-  /** A rule of this type over its details block, or true. */
-  readonly check?: (details: Record<string, unknown>) => string | true
+  /** A rule of this type over its details block (and the shared concern it sits in), or true. */
+  readonly check?: (details: Record<string, unknown>, document: Record<string, unknown>) => string | true
 }
 
 /**
@@ -92,6 +92,97 @@ export const certificationError = (details: Record<string, unknown>): string | t
 }
 
 /** Every governed type — each kept from the collection it was. */
+/**
+ * A statutory report: its sections, and where each of its fields is sourced from.
+ *
+ * @standard SAF-T OECD audit-file
+ * @standard XBRL business-reporting
+ * @standard IFRS-Taxonomy
+ */
+export const StatutoryReportTemplate: Block = {
+  slug: 'statutory-report-template',
+  interfaceName: 'StatutoryReportTemplateBlock',
+  labels: { singular: 'Statutory report template', plural: 'Statutory report templates' },
+  fields: [
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'reportType',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'Annual Report', value: 'annual-report' },
+            { label: 'Tax Return', value: 'tax-return' },
+            { label: 'Regulatory Filing', value: 'regulatory-filing' },
+            { label: 'Financial Statements', value: 'financial-statements' },
+            { label: 'Audit Report', value: 'audit-report' },
+          ],
+        },
+        { name: 'entityType', type: 'relationship', relationTo: 'entity-types' },
+        { name: 'effectiveTo', type: 'date', admin: { description: 'The last day the template applies; it takes effect on the effective date.' } },
+      ],
+    },
+    {
+      name: 'sections',
+      type: 'array',
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'sectionName', type: 'text' },
+            { name: 'sequence', type: 'number' },
+            { name: 'mandatory', type: 'checkbox' },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'fieldMappings',
+      type: 'array',
+      admin: { description: 'Where each field of the report is sourced from.' },
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'mappingName', type: 'text', required: true },
+            { name: 'fieldName', type: 'text', required: true },
+            {
+              name: 'fieldType',
+              type: 'select',
+              options: [
+                { label: 'Text', value: 'text' },
+                { label: 'Number', value: 'number' },
+                { label: 'Date', value: 'date' },
+                { label: 'Currency', value: 'currency' },
+                { label: 'Percentage', value: 'percentage' },
+                { label: 'Boolean', value: 'boolean' },
+              ],
+            },
+            { name: 'mandatory', type: 'checkbox', defaultValue: true },
+          ],
+        },
+        {
+          type: 'row',
+          fields: [
+            { name: 'sourceCollection', type: 'text' },
+            { name: 'sourceField', type: 'text' },
+          ],
+        },
+        { name: 'transformation', type: 'richText' },
+        { name: 'validationRules', type: 'richText' },
+      ],
+    },
+  ],
+}
+
+/** A template ends after it takes effect. */
+export const templateError = (details: Record<string, unknown>, document: Record<string, unknown>): string | true => {
+  const from = document.effectiveDate ? Date.parse(String(document.effectiveDate)) : Number.NaN
+  const to = details.effectiveTo ? Date.parse(String(details.effectiveTo)) : Number.NaN
+  return Number.isFinite(from) && Number.isFinite(to) && to <= from ? 'A statutory report template ends after it takes effect.' : true
+}
+
 export const GOVERNED_TYPES: readonly GovernedType[] = [
   // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
   {
@@ -111,5 +202,16 @@ export const GOVERNED_TYPES: readonly GovernedType[] = [
     requires: ['effectiveDate'],
     block: ManagementCertification,
     check: certificationError,
+  },
+  // was statutory-report-templates: read by admin, audit staff and compliance; written by a super-admin.
+  // The name is the page title, the effective-from date its effective date, the template document an attachment.
+  {
+    value: 'statutory-report-template',
+    label: 'Statutory report template',
+    read: ['admin', 'audit-staff', 'compliance-officer'],
+    write: [],
+    requires: ['effectiveDate', 'jurisdiction'],
+    block: StatutoryReportTemplate,
+    check: templateError,
   },
 ]
