@@ -394,7 +394,6 @@ export interface Config {
     'internal-policies': InternalPolicy;
     'management-assessment-icfr': ManagementAssessmentIcfr;
     'regulatory-reports': RegulatoryReport;
-    'related-party-transactions': RelatedPartyTransaction;
     'risk-register': RiskRegister;
     'segment-reporting': SegmentReporting;
     'biological-assets': BiologicalAsset;
@@ -613,7 +612,6 @@ export interface Config {
     'internal-policies': InternalPoliciesSelect<false> | InternalPoliciesSelect<true>;
     'management-assessment-icfr': ManagementAssessmentIcfrSelect<false> | ManagementAssessmentIcfrSelect<true>;
     'regulatory-reports': RegulatoryReportsSelect<false> | RegulatoryReportsSelect<true>;
-    'related-party-transactions': RelatedPartyTransactionsSelect<false> | RelatedPartyTransactionsSelect<true>;
     'risk-register': RiskRegisterSelect<false> | RiskRegisterSelect<true>;
     'segment-reporting': SegmentReportingSelect<false> | SegmentReportingSelect<true>;
     'biological-assets': BiologicalAssetsSelect<false> | BiologicalAssetsSelect<true>;
@@ -1631,6 +1629,7 @@ export interface Page {
         | 'debt-instrument'
         | 'regulatory-deferral-account'
         | 'held-for-sale'
+        | 'related-party-transaction'
       )
     | null;
   /**
@@ -1664,6 +1663,7 @@ export interface Page {
           | DebtInstrumentBlock
           | RegulatoryDeferralAccountBlock
           | HeldForSaleBlock
+          | RelatedPartyTransactionBlock
         )[]
       | null;
     /**
@@ -8444,6 +8444,201 @@ export interface BusinessCombination {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "RelatedPartyTransactionBlock".
+ */
+export interface RelatedPartyTransactionBlock {
+  entity: string | LegalEntity;
+  relatedPartyName: string;
+  relatedPartyType:
+    | 'key-management'
+    | 'director'
+    | 'officer'
+    | 'shareholder'
+    | 'family'
+    | 'other-entity-controlled'
+    | 'other-entity-associate'
+    | 'other-entity-jv'
+    | 'benefit-plan'
+    | 'government';
+  transactionType:
+    | 'sale'
+    | 'purchase'
+    | 'loan-provided'
+    | 'loan-received'
+    | 'lease-operating'
+    | 'lease-finance'
+    | 'dividend'
+    | 'management-fee'
+    | 'royalty'
+    | 'equity-investment'
+    | 'guarantee'
+    | 'asset-transaction'
+    | 'other';
+  amount: number;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency: string;
+  /**
+   * Payment terms, pricing basis, conditions, and any special terms.
+   */
+  terms?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Evidence that transaction was at arm's length (IAS 24 §23).
+   */
+  armLengthBasis?: LexicalRichText<LexicalNodes_AD327369> | null;
+  approvalStatus?: ('pre-approved' | 'approved' | 'pending' | 'rejected') | null;
+  /**
+   * Board member or audit committee member who approved.
+   */
+  approverName?: string | null;
+  approvalDate?: string | null;
+  /**
+   * Must be disclosed per IAS 24.
+   */
+  disclosureRequired?: boolean | null;
+  disclosedInFinancialStatements?: boolean | null;
+  /**
+   * Note reference in financial statements (e.g., Note 32).
+   */
+  disclosureReference?: string | null;
+  /**
+   * Controls designed to prevent unauthorized related party transactions.
+   */
+  relatedControls?: (string | InternalControl)[] | null;
+  evidence?: (string | AuditEvidence)[] | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'related-party-transaction';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-evidence".
+ */
+export interface AuditEvidence {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * The award this evidence defends, where the evidence exists for a funder rather than an internal control.
+   */
+  grant?: (string | null) | GovernmentGrant;
+  title: string;
+  description?: string | null;
+  documentType:
+    | 'pdf'
+    | 'screenshot'
+    | 'signed-approval'
+    | 'bank-statement'
+    | 'gl-printout'
+    | 'reconciliation'
+    | 'workpaper'
+    | 'audit-log'
+    | 'policy'
+    | 'other';
+  documentFile: string | Media;
+  sourceSystem?: string | null;
+  documentDate?: string | null;
+  uploadedDate: string;
+  uploadedBy: string | User;
+  relatedControl?: (string | null) | InternalControl;
+  relatedControlTest?: (string | null) | ControlTest;
+  relatedAuditSample?: (string | null) | AuditSample;
+  relatedFinding?: (string | null) | AuditFinding;
+  evidenceChain?:
+    | {
+        actor: string;
+        action: 'created' | 'collected' | 'reviewed' | 'approved' | 'secured';
+        actionDate?: string | null;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  confidentiality?: ('public' | 'internal' | 'confidential' | 'restricted') | null;
+  retentionPeriod?: ('3-years' | '5-years' | '7-years' | '10-years' | 'indefinite') | null;
+  tags?:
+    | {
+        tag: string;
+        id?: string | null;
+      }[]
+    | null;
+  isActive?: boolean | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-samples".
+ */
+export interface AuditSample {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  sampleId: string;
+  controlTest: string | ControlTest;
+  samplingSequence?: number | null;
+  sampleItemType:
+    | 'invoice'
+    | 'invoice-line'
+    | 'journal-entry'
+    | 'payment'
+    | 'vendor'
+    | 'customer'
+    | 'employee'
+    | 'gl-account'
+    | 'bank-reconciliation'
+    | 'purchase-order'
+    | 'other';
+  sampleItemId: string;
+  sampleItemDate?: string | null;
+  sampleItemAmount?: number | null;
+  testResult?: ('pass' | 'fail' | 'not-tested' | 'unable-test') | null;
+  exceptionDescription?: string | null;
+  exceptionCategory?:
+    | (
+        | 'missing-approval'
+        | 'unauthorized-approval'
+        | 'amount-mismatch'
+        | 'incorrect-classification'
+        | 'late-posting'
+        | 'duplicate'
+        | 'unsupported'
+        | 'other'
+      )
+    | null;
+  testedBy?: (string | null) | User;
+  testedDate?: string | null;
+  notes?: string | null;
+  isActive?: boolean | null;
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -16371,132 +16566,6 @@ export interface TrackingEvent {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-evidence".
- */
-export interface AuditEvidence {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * The award this evidence defends, where the evidence exists for a funder rather than an internal control.
-   */
-  grant?: (string | null) | GovernmentGrant;
-  title: string;
-  description?: string | null;
-  documentType:
-    | 'pdf'
-    | 'screenshot'
-    | 'signed-approval'
-    | 'bank-statement'
-    | 'gl-printout'
-    | 'reconciliation'
-    | 'workpaper'
-    | 'audit-log'
-    | 'policy'
-    | 'other';
-  documentFile: string | Media;
-  sourceSystem?: string | null;
-  documentDate?: string | null;
-  uploadedDate: string;
-  uploadedBy: string | User;
-  relatedControl?: (string | null) | InternalControl;
-  relatedControlTest?: (string | null) | ControlTest;
-  relatedAuditSample?: (string | null) | AuditSample;
-  relatedFinding?: (string | null) | AuditFinding;
-  evidenceChain?:
-    | {
-        actor: string;
-        action: 'created' | 'collected' | 'reviewed' | 'approved' | 'secured';
-        actionDate?: string | null;
-        notes?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  confidentiality?: ('public' | 'internal' | 'confidential' | 'restricted') | null;
-  retentionPeriod?: ('3-years' | '5-years' | '7-years' | '10-years' | 'indefinite') | null;
-  tags?:
-    | {
-        tag: string;
-        id?: string | null;
-      }[]
-    | null;
-  isActive?: boolean | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-samples".
- */
-export interface AuditSample {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  sampleId: string;
-  controlTest: string | ControlTest;
-  samplingSequence?: number | null;
-  sampleItemType:
-    | 'invoice'
-    | 'invoice-line'
-    | 'journal-entry'
-    | 'payment'
-    | 'vendor'
-    | 'customer'
-    | 'employee'
-    | 'gl-account'
-    | 'bank-reconciliation'
-    | 'purchase-order'
-    | 'other';
-  sampleItemId: string;
-  sampleItemDate?: string | null;
-  sampleItemAmount?: number | null;
-  testResult?: ('pass' | 'fail' | 'not-tested' | 'unable-test') | null;
-  exceptionDescription?: string | null;
-  exceptionCategory?:
-    | (
-        | 'missing-approval'
-        | 'unauthorized-approval'
-        | 'amount-mismatch'
-        | 'incorrect-classification'
-        | 'late-posting'
-        | 'duplicate'
-        | 'unsupported'
-        | 'other'
-      )
-    | null;
-  testedBy?: (string | null) | User;
-  testedDate?: string | null;
-  notes?: string | null;
-  isActive?: boolean | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "disclosure-checklists".
  */
 export interface DisclosureChecklist {
@@ -16706,95 +16775,6 @@ export interface RegulatoryReport {
   reportDocument?: (string | null) | Media;
   regulatoryFeedback?: LexicalRichText<LexicalNodes_AD327369> | null;
   findings?: (string | AuditFinding)[] | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "related-party-transactions".
- */
-export interface RelatedPartyTransaction {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  entity: string | LegalEntity;
-  relatedPartyName: string;
-  relatedPartyType:
-    | 'key-management'
-    | 'director'
-    | 'officer'
-    | 'shareholder'
-    | 'family'
-    | 'other-entity-controlled'
-    | 'other-entity-associate'
-    | 'other-entity-jv'
-    | 'benefit-plan'
-    | 'government';
-  /**
-   * Nature of the relationship and basis for identification as related party.
-   */
-  relationship: LexicalRichText<LexicalNodes_AD327369>;
-  transactionDate: string;
-  transactionDescription: string;
-  transactionType:
-    | 'sale'
-    | 'purchase'
-    | 'loan-provided'
-    | 'loan-received'
-    | 'lease-operating'
-    | 'lease-finance'
-    | 'dividend'
-    | 'management-fee'
-    | 'royalty'
-    | 'equity-investment'
-    | 'guarantee'
-    | 'asset-transaction'
-    | 'other';
-  amount: number;
-  /**
-   * ISO 4217 currency code (USD, EUR, BGN, etc.).
-   */
-  currency: string;
-  /**
-   * Payment terms, pricing basis, conditions, and any special terms.
-   */
-  terms?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Evidence that transaction was at arm's length (IFRS 24 §21, IAS 24 §9).
-   */
-  armLengthBasis?: LexicalRichText<LexicalNodes_AD327369> | null;
-  approvalStatus?: ('pre-approved' | 'approved' | 'pending' | 'rejected') | null;
-  /**
-   * Board member or audit committee member who approved.
-   */
-  approverName?: string | null;
-  approvalDate?: string | null;
-  /**
-   * Must be disclosed per IFRS 24 / IAS 24.
-   */
-  disclosureRequired?: boolean | null;
-  disclosedInFinancialStatements?: boolean | null;
-  /**
-   * Note reference in financial statements (e.g., Note 32).
-   */
-  disclosureReference?: string | null;
-  /**
-   * Controls designed to prevent unauthorized related party transactions.
-   */
-  relatedControls?: (string | InternalControl)[] | null;
-  evidence?: (string | AuditEvidence)[] | null;
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -20112,7 +20092,6 @@ export interface PayloadQueryPreset {
     | 'internal-policies'
     | 'management-assessment-icfr'
     | 'regulatory-reports'
-    | 'related-party-transactions'
     | 'risk-register'
     | 'segment-reporting'
     | 'biological-assets'
@@ -20658,6 +20637,7 @@ export interface PagesSelect<T extends boolean = true> {
               'debt-instrument'?: T | DebtInstrumentBlockSelect<T>;
               'regulatory-deferral-account'?: T | RegulatoryDeferralAccountBlockSelect<T>;
               'held-for-sale'?: T | HeldForSaleBlockSelect<T>;
+              'related-party-transaction'?: T | RelatedPartyTransactionBlockSelect<T>;
             };
         links?:
           | T
@@ -21104,6 +21084,30 @@ export interface HeldForSaleBlockSelect<T extends boolean = true> {
   fairValueMeasurement?: T;
   journalEntry?: T;
   notes?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "RelatedPartyTransactionBlock_select".
+ */
+export interface RelatedPartyTransactionBlockSelect<T extends boolean = true> {
+  entity?: T;
+  relatedPartyName?: T;
+  relatedPartyType?: T;
+  transactionType?: T;
+  amount?: T;
+  currency?: T;
+  terms?: T;
+  armLengthBasis?: T;
+  approvalStatus?: T;
+  approverName?: T;
+  approvalDate?: T;
+  disclosureRequired?: T;
+  disclosedInFinancialStatements?: T;
+  disclosureReference?: T;
+  relatedControls?: T;
+  evidence?: T;
   id?: T;
   blockName?: T;
 }
@@ -26204,38 +26208,6 @@ export interface RegulatoryReportsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "related-party-transactions_select".
- */
-export interface RelatedPartyTransactionsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  entity?: T;
-  relatedPartyName?: T;
-  relatedPartyType?: T;
-  relationship?: T;
-  transactionDate?: T;
-  transactionDescription?: T;
-  transactionType?: T;
-  amount?: T;
-  currency?: T;
-  terms?: T;
-  armLengthBasis?: T;
-  approvalStatus?: T;
-  approverName?: T;
-  approvalDate?: T;
-  disclosureRequired?: T;
-  disclosedInFinancialStatements?: T;
-  disclosureReference?: T;
-  relatedControls?: T;
-  evidence?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "risk-register_select".
  */
 export interface RiskRegisterSelect<T extends boolean = true> {
@@ -28969,7 +28941,6 @@ export interface CollectionQueryWidget {
       | 'internal-policies'
       | 'management-assessment-icfr'
       | 'regulatory-reports'
-      | 'related-party-transactions'
       | 'risk-register'
       | 'segment-reporting'
       | 'biological-assets'
@@ -29173,7 +29144,6 @@ export interface ActivityWidget {
           | 'internal-policies'
           | 'management-assessment-icfr'
           | 'regulatory-reports'
-          | 'related-party-transactions'
           | 'risk-register'
           | 'segment-reporting'
           | 'biological-assets'
@@ -29415,7 +29385,6 @@ export interface TaskCreateCollectionExport {
       | 'internal-policies'
       | 'management-assessment-icfr'
       | 'regulatory-reports'
-      | 'related-party-transactions'
       | 'risk-register'
       | 'segment-reporting'
       | 'biological-assets'

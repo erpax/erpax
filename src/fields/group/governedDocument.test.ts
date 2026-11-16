@@ -46,7 +46,7 @@ describe('governed documents on pages — never public, read and written by the 
     expect(await mayWrite(req(superAdmin), STD, 't1', none)).toBe(true)
     const write = pageWrite(() => ({ tenant: { equals: 't1' } }), none)
     await expect(write({ req: req(tenantAdmin), data: { documentType: STD, tenant: 't1' } } as never)).resolves.toBe(false)
-    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline', 'processing-activity', 'internal-audit-function', 'debt-instrument'] } }] })
+    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline', 'processing-activity', 'internal-audit-function', 'debt-instrument', 'related-party-transaction'] } }] })
   })
 
   it('a type names what it requires', async () => {
@@ -234,5 +234,15 @@ describe('governed documents on pages — never public, read and written by the 
     expect(documentError(HFS, { effectiveDate: '2026-03-31', details: [block({ expectedSaleDate: '2027-03-31' })] })).toBe(true)
     expect(documentError(HFS, { effectiveDate: '2026-03-31', details: [block({ expectedSaleDate: '2027-04-01' })] })).toMatch(/within twelve months/)
     expect(documentError(HFS, { effectiveDate: '2026-03-31', details: [block({ status: 'sold' })] })).toMatch(/names its sale date and proceeds/)
+  })
+
+  it('a related party transaction names its approver when approved and its note when disclosed', () => {
+    const RP = 'related-party-transaction'
+    const block = (extra: object = {}) => ({ blockType: RP, entity: 'e1', relatedPartyName: 'I. Ivanov', relatedPartyType: 'director', transactionType: 'lease-operating', amount: 1, currency: 'EUR', ...extra })
+    expect(documentError(RP, { details: [block()] })).toMatch(/names its effectiveDate/)
+    expect(documentError(RP, { effectiveDate: '2026-02-01', details: [block()] })).toBe(true)
+    expect(documentError(RP, { effectiveDate: '2026-02-01', details: [block({ approvalStatus: 'approved' })] })).toMatch(/names its approver and approval date/)
+    expect(documentError(RP, { effectiveDate: '2026-02-01', details: [block({ approvalStatus: 'approved', approverName: 'Audit committee', approvalDate: '2026-01-20', disclosedInFinancialStatements: true })] })).toMatch(/names its note/)
+    expect(documentError(RP, { effectiveDate: '2026-02-01', details: [block({ approvalStatus: 'approved', approverName: 'Audit committee', approvalDate: '2026-01-20', disclosedInFinancialStatements: true, disclosureReference: 'Note 32' })] })).toBe(true)
   })
 })

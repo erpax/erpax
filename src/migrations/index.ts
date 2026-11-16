@@ -20,6 +20,7 @@ import * as migration_20261116_105734_fold_insurance_contracts from './20261116_
 import * as migration_20261116_110916_fold_debt_schedule from './20261116_110916_fold_debt_schedule';
 import * as migration_20261116_112548_fold_regulatory_deferral_accounts from './20261116_112548_fold_regulatory_deferral_accounts';
 import * as migration_20261116_114436_fold_held_for_sale_classifications from './20261116_114436_fold_held_for_sale_classifications';
+import * as migration_20261116_120156_fold_related_party_transactions from './20261116_120156_fold_related_party_transactions';
 
 export const migrations = [
   {
@@ -130,6 +131,11 @@ export const migrations = [
   {
     up: migration_20261116_114436_fold_held_for_sale_classifications.up,
     down: migration_20261116_114436_fold_held_for_sale_classifications.down,
-    name: '20261116_114436_fold_held_for_sale_classifications'
+    name: '20261116_114436_fold_held_for_sale_classifications',
+  },
+  {
+    up: migration_20261116_120156_fold_related_party_transactions.up,
+    down: migration_20261116_120156_fold_related_party_transactions.down,
+    name: '20261116_120156_fold_related_party_transactions'
   },
 ];

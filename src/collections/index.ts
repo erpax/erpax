@@ -229,7 +229,6 @@ export { RegulatoryReports } from '@/collections/regulatory-reports'
 export { InternalPolicies } from '@/collections/internal-policies'
 
 // Phase 6: Risk, Disclosure & Audit Extension (8 collections)
-export { RelatedPartyTransactions } from '@/collections/related-party-transactions'
 export { ManagementAssessmentICFR } from '@/collections/management-assessment-icfr'
 export { DisclosureChecklists } from '@/collections/disclosure-checklists'
 export { AuditCommitteeMinutes } from '@/collections/audit-committee-minutes'

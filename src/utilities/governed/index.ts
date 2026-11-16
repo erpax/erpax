@@ -1227,6 +1227,109 @@ export const heldForSaleError = (details: Record<string, unknown>, document: Rec
   return true
 }
 
+/**
+ * One transaction with a related party (IAS 24): who the party is and why it is related, what passed and
+ * on what terms, its approval, and its disclosure.
+ *
+ * @accounting IAS-24 related-party-disclosures
+ * @accounting US-GAAP ASC-850 related-party-disclosures
+ */
+export const RelatedPartyTransaction: Block = {
+  slug: 'related-party-transaction',
+  interfaceName: 'RelatedPartyTransactionBlock',
+  labels: { singular: 'Related party transaction', plural: 'Related party transactions' },
+  fields: [
+    {
+      type: 'row',
+      fields: [
+        { name: 'entity', type: 'relationship', relationTo: 'legal-entities', required: true },
+        { name: 'relatedPartyName', type: 'text', required: true },
+        {
+          name: 'relatedPartyType',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'Key Management Personnel', value: 'key-management' },
+            { label: 'Director', value: 'director' },
+            { label: 'Officer', value: 'officer' },
+            { label: 'Shareholder (>5%)', value: 'shareholder' },
+            { label: 'Family Member', value: 'family' },
+            { label: 'Other Entity (Controlled)', value: 'other-entity-controlled' },
+            { label: 'Other Entity (Associate)', value: 'other-entity-associate' },
+            { label: 'Other Entity (Joint Venture)', value: 'other-entity-jv' },
+            { label: 'Post-employment Benefit Plan', value: 'benefit-plan' },
+            { label: 'Government Entity', value: 'government' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'transactionType',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'Sale of Goods/Services', value: 'sale' },
+            { label: 'Purchase of Goods/Services', value: 'purchase' },
+            { label: 'Loan (Provided)', value: 'loan-provided' },
+            { label: 'Loan (Received)', value: 'loan-received' },
+            { label: 'Lease (Operating)', value: 'lease-operating' },
+            { label: 'Lease (Finance)', value: 'lease-finance' },
+            { label: 'Dividend Payment', value: 'dividend' },
+            { label: 'Management Fee', value: 'management-fee' },
+            { label: 'Royalty', value: 'royalty' },
+            { label: 'Equity Investment', value: 'equity-investment' },
+            { label: 'Guarantee', value: 'guarantee' },
+            { label: 'Asset Purchase/Sale', value: 'asset-transaction' },
+            { label: 'Other', value: 'other' },
+          ],
+        },
+        { name: 'amount', type: 'number', required: true },
+        currencyField({ required: true }),
+      ],
+    },
+    { name: 'terms', type: 'richText', admin: { description: 'Payment terms, pricing basis, conditions, and any special terms.' } },
+    { name: 'armLengthBasis', type: 'richText', admin: { description: "Evidence that transaction was at arm's length (IAS 24 §23)." } },
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'approvalStatus',
+          type: 'select',
+          defaultValue: 'pending',
+          options: [
+            { label: 'Pre-Approved', value: 'pre-approved' },
+            { label: 'Approved', value: 'approved' },
+            { label: 'Pending Approval', value: 'pending' },
+            { label: 'Rejected', value: 'rejected' },
+          ],
+        },
+        { name: 'approverName', type: 'text', admin: { description: 'Board member or audit committee member who approved.' } },
+        { name: 'approvalDate', type: 'date' },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'disclosureRequired', type: 'checkbox', defaultValue: true, admin: { description: 'Must be disclosed per IAS 24.' } },
+        { name: 'disclosedInFinancialStatements', type: 'checkbox', defaultValue: false },
+        { name: 'disclosureReference', type: 'text', admin: { description: 'Note reference in financial statements (e.g., Note 32).' } },
+      ],
+    },
+    { name: 'relatedControls', type: 'relationship', relationTo: 'internal-controls', hasMany: true, admin: { description: 'Controls designed to prevent unauthorized related party transactions.' } },
+    { name: 'evidence', type: 'relationship', relationTo: 'audit-evidence', hasMany: true },
+  ],
+}
+
+/** An approved transaction names who approved it and when; a disclosed one names its note. */
+export const relatedPartyError = (details: Record<string, unknown>): string | true => {
+  if ((details.approvalStatus === 'approved' || details.approvalStatus === 'pre-approved') && (!details.approverName || !details.approvalDate)) return 'An approved related party transaction names its approver and approval date.'
+  if (details.disclosedInFinancialStatements === true && !details.disclosureReference) return 'A disclosed related party transaction names its note in the financial statements.'
+  return true
+}
+
 export const GOVERNED_TYPES: readonly GovernedType[] = [
   // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
   {
@@ -1357,5 +1460,16 @@ export const GOVERNED_TYPES: readonly GovernedType[] = [
     feature: 'held_for_sale',
     block: HeldForSale,
     check: heldForSaleError,
+  },
+  // was related-party-transactions: read by admin, audit staff and compliance; written by admins. The description
+  // is the page title, the nature of the relationship its content, the transaction date the effective date.
+  {
+    value: 'related-party-transaction',
+    label: 'Related party transaction',
+    read: ['admin', 'audit-staff', 'compliance-officer'],
+    write: ['admin'],
+    requires: ['effectiveDate'],
+    block: RelatedPartyTransaction,
+    check: relatedPartyError,
   },
 ]
