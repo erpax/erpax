@@ -359,6 +359,9 @@ export const Tenants: CollectionConfig = {
   hooks: {
     afterChange: [seedPresets, createRoleGroups, auditTrailAfterChange('tenants')],
   },
+  // A version is the whole stored row: on tenants that copies the Stripe secret key and the MCP API
+  // key into _tenants_v. The audit chain above records each change instead.
+  versions: false,
 }
 
 export {
