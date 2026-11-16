@@ -1,5 +1,4 @@
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { auditFields } from '@/fields/relationship/auditFields'
@@ -91,7 +90,6 @@ const FiscalDevices: CollectionConfig = {
     ...auditFields(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateTenant],
     afterChange: [auditTrailAfterChange('fiscal-devices')],
   },
   timestamps: true,

@@ -20,12 +20,11 @@ import { join } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { parse, parseDocument, Scalar } from 'yaml'
 
-import { claySection, clayWitnesses, INVENTORY_PATH, type ProofInventory } from '@/utilities/verify/inventory'
+import { cell, claySection, clayWitnesses, INVENTORY_PATH, LEAN_DIR, proofIndex, type ProofInventory } from '@/utilities/verify/inventory'
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url))
 const read = (path: string): string => readFileSync(join(ROOT, path), 'utf8')
 const json = (value: unknown): string => `${JSON.stringify(value, null, 2)}\n`
-const LEAN_DIR = 'src/utilities/verify/lean'
 
 export interface Pkg {
   name: string
@@ -90,67 +89,54 @@ export interface Figures {
   inventory: ProofInventory
 }
 
-/** A table cell: a pipe inside a value (a version range such as `^24 || >=26`) would end the cell, so pipes are
- * escaped, and backslashes first, or a value ending in one would undo the escape. */
-const cell = (value: string): string => value.replace(/\\/g, '\\\\').replace(/\|/g, '\\|')
-
-/** The figures table the README and the sponsor page both show, each value beside its source. */
+/** The figures table the README and the sponsor page both show, each value beside the file it is read from. */
 export const figureRows = ({ pkg, collections, migrations, inventory }: Figures): string[] => {
   const dep = (name: string): string => cell(required(pkg.dependencies?.[name] ?? pkg.devDependencies?.[name], `package.json dependency "${name}"`))
-  const { census, files, sealedAt } = inventory
+  const { census, files } = inventory
   return [
-    '| Figure | Value | Computed from |',
+    '| figure | value | source |',
     '| --- | --- | --- |',
-    `| Version | ${cell(pkg.version)} | \`package.json\` |`,
-    `| Payload | ${dep('payload')} | \`package.json\` |`,
-    `| Next.js | ${dep('next')} | \`package.json\` |`,
-    `| Node | ${cell(required(pkg.engines?.node, 'package.json engines.node'))} | \`package.json\` |`,
-    `| Collections | ${collections.length} | \`src/payload-types.ts\`, Payload's generated \`Config\`, without Payload's own \`payload-*\` |`,
-    `| Migrations | ${migrations.length}, the latest \`${required(migrations.at(-1), 'a migration')}\` | \`src/migrations\` |`,
-    `| Kernel-checked theorems | ${census.theorems} in ${files.length} files: ${census.axiomFree} axiom-free, ${census.standardAxioms} on Lean's standard axioms, ${census.stubbed} stubbed (sealed ${sealedAt}) | \`${INVENTORY_PATH}\` |`,
-    `| License | ${cell(pkg.license)} | \`package.json\` |`,
+    `| version | ${cell(pkg.version)} | \`package.json\` |`,
+    `| payload | ${dep('payload')} | \`package.json\` |`,
+    `| next | ${dep('next')} | \`package.json\` |`,
+    `| node | ${cell(required(pkg.engines?.node, 'package.json engines.node'))} | \`package.json\` |`,
+    `| collections | ${collections.length} | \`src/payload-types.ts\` |`,
+    `| migrations | ${migrations.length} | \`src/migrations\` |`,
+    `| Lean files | ${files.length} | \`${LEAN_DIR}\` |`,
+    `| theorems | ${census.theorems} | \`${INVENTORY_PATH}\` |`,
+    `| axiom-free | ${census.axiomFree} | \`${INVENTORY_PATH}\` |`,
+    `| license | ${cell(pkg.license)} | \`package.json\` |`,
   ]
 }
 
-export const readmeOf = (f: Figures & { doi: string; contact?: string; clay: string }): string => {
+/** The README: the package's own words, the figures, and every proof indexed and linked from the Lean files' own words. */
+export const readmeOf = (f: Figures & { doi: string; contact?: string; authors: readonly CffAuthor[]; references: readonly string[]; proofs: string; clay: string }): string => {
   const { pkg } = f
   const repo = repositoryOf(pkg)
-  // what the page tells a reader to run or open must exist
-  for (const script of ['dev', 'erpax']) required(pkg.scripts[script], `package.json script "${script}" (the README tells readers to run it)`)
-  for (const file of ['AGENTS.md', 'LICENSE']) if (!existsSync(join(ROOT, file))) throw new Error(`generate-repo: the README links ${file}, which does not exist.`)
+  if (!existsSync(join(ROOT, 'LICENSE'))) throw new Error('generate-repo: the README links LICENSE, which does not exist.')
   return [
-    note('package.json, CITATION.cff, src/payload-types.ts, src/migrations and the Lean proof record'),
+    note('package.json, CITATION.cff, src/payload-types.ts, src/migrations and the Lean files with their proof record'),
     '',
     `# ${pkg.name}`,
     '',
     `> ${pkg.description}`,
     '',
+    f.authors.map((a) => (a.orcid ? `[${nameOf(a)}](${a.orcid})` : nameOf(a))).join(' · '),
+    '',
     `[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=${encodeURIComponent(repo)}) [![DOI](https://zenodo.org/badge/DOI/${f.doi}.svg)](https://doi.org/${f.doi})`,
-    '',
-    '## Start',
-    '',
-    '```bash',
-    'pnpm install',
-    'pnpm dev                  # http://localhost:3000/admin: the first user you create is the super-admin',
-    'pnpm erpax login --local  # sign an agent in to the MCP gateway at /api/mcp',
-    '```',
-    '',
-    '[AGENTS.md](AGENTS.md) is the guide for people and agents working in this repository.',
-    '',
-    '## What it is today',
-    '',
-    'Each figure is computed from the source beside it whenever this file is generated.',
     '',
     ...figureRows(f),
     '',
+    f.proofs,
     f.clay,
     '## Commands',
     '',
-    `${Object.keys(pkg.scripts).map((s) => `\`pnpm ${s}\``).join(' · ')}. \`package.json\` holds what each runs, and [AGENTS.md](AGENTS.md) says when to use them.`,
+    Object.keys(pkg.scripts).map((s) => `\`pnpm ${s}\``).join(' · '),
     '',
+    ...f.references,
     '## License',
     '',
-    `[${pkg.license}](LICENSE)${f.contact ? `. Commercial terms: ${f.contact}` : ''}.`,
+    `[${pkg.license}](LICENSE)${f.contact ? ` · ${f.contact}` : ''}`,
     '',
   ].join('\n')
 }
@@ -165,10 +151,6 @@ export const sponsorsOf = (f: Figures & { links: readonly { label: string; url: 
     '',
     `Sponsor through ${required(f.links.length ? f.links : undefined, 'a funding link in .github/FUNDING.yml').map((l) => `[${l.label}](${l.url})`).join(' or ')}.`,
     '',
-    '## What it is today',
-    '',
-    'Each figure is computed from the source beside it whenever this page is generated.',
-    '',
     ...figureRows(f),
     '',
     `Source: [${repositoryOf(f.pkg).replace(/^https:\/\//, '')}](${repositoryOf(f.pkg)})`,
@@ -181,7 +163,7 @@ export const sponsorsOf = (f: Figures & { links: readonly { label: string; url: 
 // document so comments survive; .zenodo.json is generated whole from both.
 
 interface CffAuthor { 'family-names'?: string; 'given-names'?: string; name?: string; orcid?: string }
-interface CffReference { title: string; authors?: CffAuthor[]; year?: number; doi?: string; url?: string }
+interface CffReference { title: string; authors?: CffAuthor[]; year?: number; 'date-published'?: string; doi?: string; url?: string; recipients?: CffAuthor[] }
 export interface Cff { type?: string; doi?: string; authors?: CffAuthor[]; contact?: { email?: string }[]; references?: CffReference[] }
 
 /** A Creative Commons SPDX id as its deed URL. Another licence stops the run until it is taught here. */
@@ -233,12 +215,34 @@ export const citationOf = (text: string, f: Figures): string => {
 
 const escapeHtml = (s: string): string => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
-/** A reference as Zenodo lists it: authors (year). Title. Where to read it. */
+/** A person or body as a citation names them: `Family, Given`, or the body's name. */
+const nameOf = (a: CffAuthor): string => a.name ?? [a['family-names'], a['given-names']].filter(Boolean).join(', ')
+/** Where a reference is read: its DOI, else its URL. */
+const whereOf = (r: CffReference): string | undefined => (r.doi ? `https://doi.org/${r.doi}` : r.url)
+/** When: the publication date when the record has one, else the year. */
+const whenOf = (r: CffReference): string => r['date-published'] ?? (r.year ? String(r.year) : '')
+
+/** A reference as Zenodo lists it: authors with their ORCID (date). Title. To whom. Where to read it. */
 const referenceOf = (r: CffReference): string => {
-  const who = (r.authors ?? []).map((a) => a.name ?? [a['family-names'], a['given-names']].filter(Boolean).join(', ')).join('; ')
-  const where = r.doi ? `https://doi.org/${r.doi}` : r.url
-  return `${who}${r.year ? ` (${r.year})` : ''}. ${r.title}.${where ? ` ${where}` : ''}`
+  const who = (r.authors ?? []).map((a) => `${nameOf(a)}${a.orcid ? ` (${a.orcid})` : ''}`).join('; ')
+  const to = r.recipients?.length ? ` To ${r.recipients.map(nameOf).join('; ')}.` : ''
+  const where = whereOf(r)
+  return `${who}${whenOf(r) ? ` (${whenOf(r)})` : ''}. ${r.title}.${to}${where ? ` ${where}` : ''}`
 }
+
+/** The README's references: every work CITATION.cff cites, each author linked to their ORCID when it is known. */
+export const referencesOf = (cff: Cff): string[] => [
+  '## References',
+  '',
+  '| date | authors | title | to |',
+  '| --- | --- | --- | --- |',
+  ...(cff.references ?? []).map((r) => {
+    const who = (r.authors ?? []).map((a) => (a.orcid ? `[${cell(nameOf(a))}](${a.orcid})` : cell(nameOf(a)))).join('; ')
+    const where = whereOf(r)
+    return `| ${whenOf(r)} | ${who} | ${where ? `[${cell(r.title)}](${where})` : cell(r.title)} | ${cell((r.recipients ?? []).map(nameOf).join('; '))} |`
+  }),
+  '',
+]
 
 export const zenodoOf = (cff: Cff, f: Figures) => ({
   upload_type: required(cff.type === 'software' ? 'software' : undefined, `a Zenodo upload type for CITATION.cff type "${cff.type}"`),
@@ -252,7 +256,10 @@ export const zenodoOf = (cff: Cff, f: Figures) => ({
   license: f.pkg.license.toLowerCase(),
   access_right: 'open',
   keywords: f.pkg.keywords ?? [],
-  related_identifiers: [{ identifier: repositoryOf(f.pkg), relation: 'isSupplementTo', scheme: 'url' }],
+  related_identifiers: [
+    { identifier: repositoryOf(f.pkg), relation: 'isSupplementTo', scheme: 'url' },
+    ...(cff.references ?? []).flatMap((r) => (r.doi ? [{ identifier: r.doi, relation: 'references', scheme: 'doi' }] : r.url ? [{ identifier: r.url, relation: 'references', scheme: 'url' }] : [])),
+  ],
   references: (cff.references ?? []).map(referenceOf),
 })
 
@@ -299,7 +306,10 @@ export const generate = (): Record<string, string> => {
       ...figures,
       doi: required(citation.doi, 'CITATION.cff "doi"'),
       contact: citation.contact?.[0]?.email,
-      clay: claySection(clayWitnesses(inventory, sources), inventory),
+      authors: required(citation.authors, 'CITATION.cff "authors"'),
+      references: referencesOf(citation),
+      proofs: proofIndex(inventory, sources),
+      clay: claySection(clayWitnesses(inventory, sources), inventory, sources),
     }),
     '.github/SPONSORS.md': sponsorsOf({ ...figures, links: fundingLinksOf(parse(read('.github/FUNDING.yml')) as Record<string, unknown> | null) }),
     '.claude-plugin/plugin.json': json(pluginOf(pkg, { hasSkills })),

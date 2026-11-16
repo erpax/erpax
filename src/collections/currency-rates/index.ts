@@ -1,6 +1,5 @@
 import type { CollectionConfig } from 'payload'
 import { tenantAdminWriteAccess } from '@/access/collections/shared/multiTenantRead'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { currencyField } from '@/fields/text/currencyField'
 import { notesField } from '@/fields/textarea/notesField'
@@ -9,7 +8,7 @@ import { notesField } from '@/fields/textarea/notesField'
  * Currency Rates — FX rate master for multi-currency translation.
  *
  * Slice WW-cleanup: switched to canonical access predicates +
- * field factories + autoPopulateTenant. Removed dead `if (!data.tenant
+ * field factories. Removed dead `if (!data.tenant
  * && undefined)` code. Inverse-rate calc preserved.
  *
  * @standard ISO-4217:2015 currency-codes from-currency to-currency
@@ -56,7 +55,6 @@ const CurrencyRates: CollectionConfig = {
     notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       async ({ data }) => {
         // Preserve the inline inverse-rate auto-calc — domain-specific to FX.

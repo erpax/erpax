@@ -13,7 +13,6 @@ import type {
   CollectionConfig, CollectionBeforeChangeHook,
   CollectionAfterChangeHook, Field,
 } from 'payload'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminGroupOf } from '@/utilities/navigation'
@@ -278,8 +277,7 @@ export const createAccountingCollection = (
     fields.push(notesField())
   }
 
-  // ── Assemble hooks: tenant + createdBy + audit-trail by default ──
-  const beforeValidate = [autoPopulateTenant]
+  // ── Assemble hooks: createdBy + audit-trail by default (the multi-tenant plugin fills the tenant) ──
   const beforeChange = [
     ...(injectCreatedBy ? [autoPopulateCreatedBy] : []),
     ...(opts.beforeChangeHooks ?? []),
@@ -332,7 +330,6 @@ export const createAccountingCollection = (
     },
     fields,
     hooks: {
-      beforeValidate,
       beforeChange,
       afterChange,
     },

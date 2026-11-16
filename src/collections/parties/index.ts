@@ -29,7 +29,6 @@
 import type { CollectionConfig, Condition, Payload } from 'payload'
 import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantRead'
 import { withAbility } from '@/access/collections/shared/abilityAccess'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { classifyTaxId } from '@/hooks/collections/parties/classifyTaxId'
 import { deriveCountryFromIban } from '@/hooks/collections/shared/deriveCountryFromIban'
@@ -56,7 +55,6 @@ const Parties: CollectionConfig = {
   enableQueryPresets: true,
   access: withAbility(tenantMasterDataAccess(), 'parties'),
   hooks: {
-    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       // Country-context: classify the VAT/Tax-ID against the per-country regex registry so
       // downstream code (e-invoice routing, VIES gating, sanctions screening) branches off a label.

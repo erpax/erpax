@@ -1,6 +1,5 @@
 import type { CollectionConfig } from 'payload'
 import { tenantAdminWriteAccess } from '@/access/collections/shared/multiTenantRead'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
@@ -118,7 +117,6 @@ const GLPostings: CollectionConfig = {
   ],
   hooks: {
     beforeValidate: [
-      autoPopulateTenant,
       // after the tenant, because it resolves the calendar for (tenant, entity, postingDate)
       validateFiscalPeriodPosting,
       // Single source of truth for the balance check, with field-name overrides

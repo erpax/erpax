@@ -1,7 +1,7 @@
 {
-  "sealedAt": "2026-11-15",
+  "sealedAt": "2026-11-16",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "65eab71cc6c8edbc",
+  "sourcesHash": "50647f42d2cd57ae",
   "census": {
     "theorems": 363,
     "axiomFree": 267,

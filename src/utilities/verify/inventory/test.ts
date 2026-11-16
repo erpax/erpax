@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { CLAY, FOUNDATION, axiomViolations, censusLine, clayDeclarationErrors, claySection, witnessCell, INVENTORY, KERNEL, STANDARD_AXIOMS, UNBACKED, journalOf, trialBalance, claySettled, clayTags, clayWitnesses, linkOf, parseAxiomReport, onForeignAxiom, proofCensus, proved } from '@/utilities/verify/inventory'
+import { CLAY, FOUNDATION, axiomViolations, censusLine, clayDeclarationErrors, claySection, leanTitle, proofIndex, theoremLines, INVENTORY, KERNEL, STANDARD_AXIOMS, UNBACKED, journalOf, trialBalance, claySettled, clayTags, clayWitnesses, linkOf, parseAxiomReport, onForeignAxiom, proofCensus, proved } from '@/utilities/verify/inventory'
 
 describe('verify/inventory — the kernel is quoted, never paraphrased', () => {
   const out = [
@@ -89,11 +89,11 @@ describe('verify/inventory — what the kernel has checked ABOUT the Clay proble
 
   it('the README carries the Clay section the record renders, and a planted statement changes it', () => {
     const readme = readFileSync(join(import.meta.dirname, '..', '..', '..', '..', 'README.md'), 'utf8')
-    expect(readme).toContain(claySection(witnesses, INVENTORY))
-    expect(witnessCell(witnesses, 'riemann')).toContain('](src/utilities/verify/lean/Symmetry.lean)')
+    expect(readme).toContain(claySection(witnesses, INVENTORY, sources))
+    expect(claySection(witnesses, INVENTORY, sources)).toContain('[`Symmetry.lean`](src/utilities/verify/lean/Symmetry.lean)')
     const planted = { ...sources, 'Symmetry.lean': `${sources['Symmetry.lean']}\n  Clay: riemann statement\n` }
-    const section = claySection(clayWitnesses(INVENTORY, planted), INVENTORY)
-    expect(section).toContain('Settled by this corpus: Riemann Hypothesis (`claySettled` lists 1)')
+    const section = claySection(clayWitnesses(INVENTORY, planted), INVENTORY, planted)
+    expect(section).toContain('settled: Riemann Hypothesis (`claySettled`)')
     expect(readme).not.toContain(section)
   })
 
@@ -150,10 +150,24 @@ describe('verify/inventory — the README states what the kernel says, or it goe
   const c = INVENTORY.census
 
   it('quotes the sealed census, links each witness and states the settled list, as the record computes them', () => {
-    expect(readme).toContain(claySection(witnesses, INVENTORY))
+    expect(readme).toContain(claySection(witnesses, INVENTORY, sources))
     expect(readme).toContain(censusLine(INVENTORY))
-    expect(readme).toContain(`Settled by this corpus: **none** (\`claySettled\` is empty)`)
+    expect(readme).toContain('settled: **none** (`claySettled`)')
     expect(c.stubbed).toBe(0)
+  })
+
+  it('indexes every proof: each file by its own first sentence, each theorem linked to the line that states it', () => {
+    expect(readme).toContain(proofIndex(INVENTORY, sources))
+    for (const file of INVENTORY.files) {
+      expect(leanTitle(sources[file.file] ?? ''), file.file).toMatch(/ — /)
+      const lines = theoremLines(sources[file.file] ?? '')
+      for (const e of file.entries) {
+        const line = lines.get(e.theorem.split('.').pop() as string)
+        expect(line, e.theorem).toBeGreaterThan(0)
+        expect(readme).toContain(`](src/utilities/verify/lean/${file.file}#L${line})`)
+      }
+    }
+    expect(leanTitle('/-\n  X — one\n  line.\n\n  Clay: none\n-/')).toBe('X — one line.')
   })
 
   it('no longer names the removed millennium code', () => {
