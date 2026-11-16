@@ -228,7 +228,6 @@ export { BoardActions } from '@/collections/board-actions'
 export { InternalPolicies } from '@/collections/internal-policies'
 
 // Phase 6: Risk, Disclosure & Audit Extension (8 collections)
-export { ManagementAssessmentICFR } from '@/collections/management-assessment-icfr'
 export { DisclosureChecklists } from '@/collections/disclosure-checklists'
 export { AuditCommitteeMinutes } from '@/collections/audit-committee-minutes'
 export { RiskRegister } from '@/collections/risk-register'

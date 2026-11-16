@@ -12,8 +12,8 @@ Sponsor through [GitHub Sponsors (@erpax)](https://github.com/sponsors/erpax) or
 | payload | 4.0.0-beta.9 | `package.json` |
 | next | ^16.4.1 | `package.json` |
 | node | ^24.22.3 \|\| >=26.13.1 | `package.json` |
-| collections | 179 | `src/payload-types.ts` |
-| migrations | 24 | `src/migrations` |
+| collections | 178 | `src/payload-types.ts` |
+| migrations | 25 | `src/migrations` |
 | Lean files | 47 | `src/utilities/verify/lean` |
 | theorems | 366 | `src/utilities/verify/lean/inventory.generated.json` |
 | axiom-free | 270 | `src/utilities/verify/lean/inventory.generated.json` |

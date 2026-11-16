@@ -22,6 +22,7 @@ import * as migration_20261116_112548_fold_regulatory_deferral_accounts from './
 import * as migration_20261116_114436_fold_held_for_sale_classifications from './20261116_114436_fold_held_for_sale_classifications';
 import * as migration_20261116_120156_fold_related_party_transactions from './20261116_120156_fold_related_party_transactions';
 import * as migration_20261116_121244_fold_regulatory_reports from './20261116_121244_fold_regulatory_reports';
+import * as migration_20261116_122658_fold_management_assessment_icfr from './20261116_122658_fold_management_assessment_icfr';
 
 export const migrations = [
   {
@@ -142,6 +143,11 @@ export const migrations = [
   {
     up: migration_20261116_121244_fold_regulatory_reports.up,
     down: migration_20261116_121244_fold_regulatory_reports.down,
-    name: '20261116_121244_fold_regulatory_reports'
+    name: '20261116_121244_fold_regulatory_reports',
+  },
+  {
+    up: migration_20261116_122658_fold_management_assessment_icfr.up,
+    down: migration_20261116_122658_fold_management_assessment_icfr.down,
+    name: '20261116_122658_fold_management_assessment_icfr'
   },
 ];
