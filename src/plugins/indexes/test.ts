@@ -15,8 +15,14 @@ describe('withIndexes — unique is per tenant, the title is indexed', () => {
   const out = withIndexes(invoices, options)
   it('turns a unique field of a tenant-scoped collection into a compound unique index with the tenant', () => {
     expect(out.indexes).toEqual([{ fields: ['tenant', 'number'], unique: true }])
-    expect(field(out, 'number').unique).toBe(undefined)
+    expect(field(out, 'number').unique).toBe(false)
     expect(field(out, 'number').index).toBe(undefined)
+  })
+  it('says unique: false outright, so a slug field (which Payload makes unique when it is not told) stays per tenant', () => {
+    const pages: CollectionConfig = { slug: 'pages', fields: [tenant, { name: 'slug', type: 'slug', useAsSlug: 'title', unique: true } as unknown as Field] }
+    const scoped = withIndexes(pages, { tenantScoped: ['pages'] })
+    expect(scoped.indexes).toEqual([{ fields: ['tenant', 'slug'], unique: true }])
+    expect(field(scoped, 'slug').unique).toBe(false)
   })
   it('leaves the content address collection-wide', () => {
     expect(field(out, 'uuid').unique).toBe(true)
@@ -34,7 +40,7 @@ describe('withIndexes — unique is per tenant, the title is indexed', () => {
   it('adds to the indexes a collection already has and does not repeat one', () => {
     const had = withIndexes({ ...invoices, indexes: [{ fields: ['tenant', 'number'], unique: true }, { fields: ['title', 'note'] }] }, options)
     expect(had.indexes).toEqual([{ fields: ['tenant', 'number'], unique: true }, { fields: ['title', 'note'] }])
-    expect(field(had, 'number').unique).toBe(undefined)
+    expect(field(had, 'number').unique).toBe(false)
   })
   it('a title that is already unique or virtual is left alone', () => {
     const unique = withIndexes({ slug: 'a', admin: { useAsTitle: 'code' }, fields: [{ name: 'code', type: 'text', unique: true }] }, { tenantScoped: [] })

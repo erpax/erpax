@@ -13,6 +13,7 @@ import * as migration_20261116_002432_authorship_created_by from './20261116_002
 import * as migration_20261116_020503_fold_statutory_report_templates from './20261116_020503_fold_statutory_report_templates';
 import * as migration_20261116_034237_fold_compliance_deadlines from './20261116_034237_fold_compliance_deadlines';
 import * as migration_20261116_043403_fold_processing_activities from './20261116_043403_fold_processing_activities';
+import * as migration_20261116_045940_slug_per_tenant from './20261116_045940_slug_per_tenant';
 
 export const migrations = [
   {
@@ -88,6 +89,11 @@ export const migrations = [
   {
     up: migration_20261116_043403_fold_processing_activities.up,
     down: migration_20261116_043403_fold_processing_activities.down,
-    name: '20261116_043403_fold_processing_activities'
+    name: '20261116_043403_fold_processing_activities',
+  },
+  {
+    up: migration_20261116_045940_slug_per_tenant.up,
+    down: migration_20261116_045940_slug_per_tenant.down,
+    name: '20261116_045940_slug_per_tenant'
   },
 ];
