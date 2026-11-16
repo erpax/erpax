@@ -23,7 +23,7 @@
 
 ## Proofs
 
-Kernel report sealed 2026-11-15: 363 theorems, 267 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `50647f42d2cd57ae`.
+Kernel report sealed 2026-11-16: 363 theorems, 267 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `50647f42d2cd57ae`.
 
 | file | the file says | Clay | theorems | axiom-free | kernel |
 | --- | --- | --- | ---: | ---: | --- |
@@ -642,7 +642,7 @@ Kernel report sealed 2026-11-15: 363 theorems, 267 axiom-free, 96 on Lean's thre
 
 settled: **none** (`claySettled`)
 
-Kernel report sealed 2026-11-15: 363 theorems, 267 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `50647f42d2cd57ae`.
+Kernel report sealed 2026-11-16: 363 theorems, 267 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `50647f42d2cd57ae`.
 
 ## Commands
 

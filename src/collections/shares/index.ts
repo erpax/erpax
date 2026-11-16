@@ -39,7 +39,6 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { scopedAccess, adminOrAccountant, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 
 const Shares: CollectionConfig = {
@@ -140,7 +139,6 @@ const Shares: CollectionConfig = {
     },
   ],
   hooks: {
-    beforeValidate: [autoPopulateTenant],
   },
   timestamps: true,
 }

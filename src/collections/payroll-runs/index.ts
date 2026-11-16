@@ -39,7 +39,6 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
@@ -345,7 +344,6 @@ const PayrollRuns: CollectionConfig = {
     notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       periodLock('paymentDate'),
       autoPopulateCreatedBy,

@@ -10,7 +10,7 @@ abstract: >-
   R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound. Counted from the
   repository when this record was generated: 190 collections in Payload's generated configuration,
   11 database migrations, and 363 theorems in 47 Lean files accepted by the Lean kernel, 267 of them
-  axiom-free, 96 on Lean's standard axioms and 0 resting on sorry (sealed 2026-11-15). A theorem
+  axiom-free, 96 on Lean's standard axioms and 0 resting on sorry (sealed 2026-11-16). A theorem
   proves the decision it states, never the facts it is fed.
 type: software
 authors:

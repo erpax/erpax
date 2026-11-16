@@ -1,10 +1,8 @@
 import { CollectionConfig } from 'payload'
 import { adminOnly, multiTenantRead } from '@/access/collections/shared/multiTenantRead'
 import { authenticated } from '@/utilities/authenticated'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { VAT_CATEGORY_OPTIONS } from '@/utilities/un/cefact/5305'
-import { invoiceLinesBeforeValidate } from '@/utilities/invoices/invoice/lines/hooks'
 import { invoiceLineTotals } from '@/utilities/invoices/invoice/lines/hooks'
 import { itemInventory } from '@/utilities/invoices/invoice/lines/hooks'
 
@@ -66,8 +64,7 @@ export const InvoiceLines: CollectionConfig = {
     delete: adminOnly,
   },
   hooks: {
-    beforeValidate: [autoPopulateTenant, ...invoiceLinesBeforeValidate],
-    afterChange: [
+        afterChange: [
       auditTrailAfterChange('invoiceLines'),
       invoiceLineTotals.afterChange,
       itemInventory.afterChange,
