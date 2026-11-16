@@ -46,12 +46,17 @@ type Remembered = 'ability' | 'tenantApps' | 'groupsAround' | 'subscription'
  * Compute a value once per request and keep it on the hook context: every access function and
  * hook in the same request then reads the same one. (The value is stored as the promise, so two
  * access checks that start together still compute it once.)
+ *
+ * The promise is stored BEFORE the computation starts. A Local API call made with `req` replaces
+ * `req.context` with a copy, synchronously, before its first await (Payload's createPayloadRequest).
+ * Stored after, the key went into the replaced object and the copy never had it, so every access
+ * check of the request computed the value again (about 1,700 tenant reads per MCP call).
  */
 export function remembered<T>(req: PayloadRequest, key: Remembered, compute: () => Promise<T>): Promise<T> {
   const context = (req.context ??= {}) as RequestContext
   const held = context[key] as Promise<T> | undefined
   if (held !== undefined) return held
-  const value = compute()
+  const value = Promise.resolve().then(compute)
   context[key] = value
   return value
 }
