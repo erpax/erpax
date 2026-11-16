@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest'
 import { Ability, restrictSubjects } from '@/utilities/ability'
 import { abilityForRoles } from '@/utilities/ability/roles'
 import { documentError, governedDocument, mayWrite, pageRead, pageWrite } from '@/fields/group/governedDocument'
+import { EarningsPerShare } from '@/utilities/governed'
 
 const STD = 'reporting-standard'
 const superAdmin = { id: 's', roles: ['admin'], tenants: [] }
@@ -159,5 +160,33 @@ describe('governed documents on pages — never public, read and written by the 
     await expect(run([{ id: 'p9' }])).rejects.toThrow(/with code "IAC-2026-01" already exists/)
     expect(JSON.stringify(finds[0])).toContain('{"document.code":{"equals":"IAC-2026-01"}}')
     expect(await run([])).toBeDefined()
+  })
+
+  it("an EPS computation is read and written only where the tenant's plan includes earnings_per_share", async () => {
+    const EPS = 'earnings-per-share'
+    const member = { id: 'm', roles: ['user'], tenants: [{ tenant: 't1' }] }
+    const planned = (user: unknown, limits: object | null) => ({ user, context: {}, payload: { find: async () => ({ docs: limits ? [{ tenant: 't1', status: 'active', plan: { limits } }] : [] }) } }) as never
+    const read = (r: never) => (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: r })
+    expect(JSON.stringify(await read(planned(member, null)))).not.toContain(EPS)
+    expect(JSON.stringify(await read(planned(member, { earnings_per_share: false })))).not.toContain(EPS)
+    expect(JSON.stringify(await read(planned(member, { earnings_per_share: true })))).toContain(EPS)
+    expect(await mayWrite(planned(tenantAdmin, null), EPS, 't1', none)).toBe(false)
+    expect(await mayWrite(planned(tenantAdmin, { earnings_per_share: true }), EPS, 't1', none)).toBe(true)
+    expect(await mayWrite(planned(superAdmin, null), EPS, 't1', none)).toBe(true)
+  })
+
+  it('an EPS computation computes its numerator and its basic and diluted figures; a loss is not diluted', () => {
+    const flat = (fields: readonly unknown[]): Array<{ name?: string; hooks?: { beforeChange?: Array<(a: object) => unknown> } }> =>
+      (fields as Array<{ name?: string; fields?: unknown[] }>).flatMap((f) => (f.name ? [f as never] : f.fields ? flat(f.fields) : []))
+    const hookOf = (name: string) => flat(EarningsPerShare.fields).find((f) => f.name === name)!.hooks!.beforeChange![0]!
+    const row = { netProfitAttributableToOrdinary: 1_250_000_00, preferredDividends: 50_000_00, weightedAverageOrdinaryShares: 1_000_000, dilutivePotentialShares: 200_000 }
+    expect(hookOf('basicEpsNumerator')({ siblingData: row })).toBe(1_200_000_00)
+    expect(hookOf('basicEps')({ siblingData: row })).toBe(1.2)
+    expect(hookOf('dilutedEps')({ siblingData: row })).toBe(1)
+    const loss = { ...row, netProfitAttributableToOrdinary: -300_000_00, preferredDividends: 0 }
+    expect(hookOf('basicEps')({ siblingData: loss })).toBe(-0.3)
+    expect(hookOf('dilutedEps')({ siblingData: loss })).toBe(-0.3)
+    expect(documentError('earnings-per-share', { details: [{ blockType: 'earnings-per-share', weightedAverageOrdinaryShares: 0 }] })).toMatch(/positive weighted average/)
+    expect(documentError('earnings-per-share', { details: [{ blockType: 'earnings-per-share', weightedAverageOrdinaryShares: 1_000_000 }] })).toBe(true)
   })
 })

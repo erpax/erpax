@@ -323,7 +323,6 @@ export interface Config {
     consolidations: Consolidation;
     'csrd-disclosures': CsrdDisclosure;
     'currency-rates': CurrencyRate;
-    'earnings-per-share': EarningsPerShare;
     'entity-legal-structures': EntityLegalStructure;
     'evidence-attestations': EvidenceAttestation;
     'financial-statements': FinancialStatement;
@@ -547,7 +546,6 @@ export interface Config {
     consolidations: ConsolidationsSelect<false> | ConsolidationsSelect<true>;
     'csrd-disclosures': CsrdDisclosuresSelect<false> | CsrdDisclosuresSelect<true>;
     'currency-rates': CurrencyRatesSelect<false> | CurrencyRatesSelect<true>;
-    'earnings-per-share': EarningsPerShareSelect<false> | EarningsPerShareSelect<true>;
     'entity-legal-structures': EntityLegalStructuresSelect<false> | EntityLegalStructuresSelect<true>;
     'evidence-attestations': EvidenceAttestationsSelect<false> | EvidenceAttestationsSelect<true>;
     'financial-statements': FinancialStatementsSelect<false> | FinancialStatementsSelect<true>;
@@ -1636,6 +1634,7 @@ export interface Page {
         | 'compliance-deadline'
         | 'processing-activity'
         | 'internal-audit-function'
+        | 'earnings-per-share'
       )
     | null;
   /**
@@ -1664,6 +1663,7 @@ export interface Page {
           | ComplianceDeadlineBlock
           | ProcessingActivityBlock
           | InternalAuditFunctionBlock
+          | EarningsPerShareBlock
         )[]
       | null;
     /**
@@ -3897,781 +3897,190 @@ export interface ComplianceGap {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "orders".
+ * via the `definition` "EarningsPerShareBlock".
  */
-export interface Order {
-  id: string;
+export interface EarningsPerShareBlock {
+  period: string | FiscalPeriod;
+  periodEnd: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
    */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  items?:
-    | {
-        product?: (string | null) | Product;
-        variant?: (string | null) | Variant;
-        quantity: number;
-        id?: string | null;
-      }[]
-    | null;
-  shippingAddress?: {
-    title?: string | null;
-    firstName?: string | null;
-    lastName?: string | null;
-    company?: string | null;
-    addressLine1?: string | null;
-    addressLine2?: string | null;
-    city?: string | null;
-    state?: string | null;
-    postalCode?: string | null;
-    country?: string | null;
-    phone?: string | null;
-  };
-  customer?: (string | null) | User;
-  customerEmail?: string | null;
-  transactions?: (string | Transaction)[] | null;
-  status?: OrderStatus;
-  amount?: number | null;
-  currency?: 'EUR' | null;
-  accessToken?: string | null;
+  currency?: string | null;
+  status?: ('draft' | 'computed' | 'published' | 'restated') | null;
   /**
-   * Whether this is an order from a customer or an order to a vendor. A web checkout is a sale.
+   * IAS 33 §12 — net profit/loss attributable to ordinary equity holders (cents).
    */
-  side?: ('sale' | 'purchase') | null;
+  netProfitAttributableToOrdinary: number;
   /**
-   * Which document this is. Its status is read in the terms of this type.
+   * IAS 33 §14 — deducted from net profit when computing basic-EPS numerator.
    */
-  documentType?: ('order' | 'quote' | 'requisition') | null;
+  preferredDividends?: number | null;
   /**
-   * Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents. Empty on a web checkout.
+   * netProfit − preferredDividends (cents), computed.
    */
-  orderNumber?: string | null;
+  basicEpsNumerator?: number | null;
   /**
-   * The counterparty: the buyer on a sale, the seller (vendor) on a purchase — a trading partner, an address-book entry, or another tenant. (`customer` is the user who checked out.)
+   * IAS 33 §19 — time-weighted shares outstanding during the period.
    */
-  party?:
-    | ({
-        relationTo: 'parties';
-        value: string | Party;
-      } | null)
-    | ({
-        relationTo: 'addresses';
-        value: string | Address;
-      } | null)
-    | ({
-        relationTo: 'tenants';
-        value: string | Tenant;
-      } | null);
+  weightedAverageOrdinaryShares: number;
   /**
-   * Buyer-side PO number / reference. EN-16931 §BT-13 / Peppol cbc:BuyerReference.
+   * IAS 33 §31 — weighted-average dilutive potential ordinary shares (options + convertibles + IFRS 2 grants).
    */
-  customerOrderReference?: string | null;
+  dilutivePotentialShares?: number | null;
   /**
-   * Parent contract (when the order draws from a master contract — IFRS-15 §17 combined contracts).
+   * IAS 33 §41 — anti-dilutive shares EXCLUDED from diluted calculation (out-of-money options, etc.).
    */
-  contract?: (string | null) | Contract;
+  antiDilutiveShares?: number | null;
   /**
-   * When the quote was sent to the customer.
+   * basicEpsNumerator / weightedAverageOrdinaryShares (per share, in currency units), computed.
    */
-  sentAt?: string | null;
+  basicEps?: number | null;
   /**
-   * Until when the quoted terms hold.
+   * basicEpsNumerator / (weightedAverageOrdinaryShares + dilutivePotentialShares), computed; a loss is not diluted (IAS 33 §41).
    */
-  expiresAt?: string | null;
+  dilutedEps?: number | null;
   /**
-   * When the customer accepted — IFRS-15 §10 contract inception.
+   * IAS 33 §66 — separate EPS for continuing vs discontinued operations.
    */
-  acceptedAt?: string | null;
-  /**
-   * Buyer submission / acceptance date. Drives revenue-period determination.
-   */
-  orderDate?: string | null;
-  /**
-   * Buyer-requested delivery date (single shipment) or first window. EN-16931 §BT-72.
-   */
-  requestedDeliveryDate?: string | null;
-  /**
-   * Confirmed delivery date after vendor commits. Bound by status=confirmed transition.
-   */
-  promisedDeliveryDate?: string | null;
-  /**
-   * Deliver-to address record — EN-16931 §BG-15 / UBL Delivery/DeliveryLocation.
-   */
-  shipTo?: (string | null) | Address;
-  /**
-   * Bill-to address record (when distinct from the buyer registered address). EN-16931 §BG-8.
-   */
-  billTo?: (string | null) | Address;
-  /**
-   * Net of tax. EN-16931 §BT-109.
-   */
-  subTotalAmount?: number | null;
-  /**
-   * Sum of tax-category lines. EN-16931 §BT-110.
-   */
-  taxAmount?: number | null;
-  /**
-   * subTotal + tax. EN-16931 §BT-112.
-   */
-  totalAmount?: number | null;
-  lines?:
-    | {
-        /**
-         * Position within the order. Stable for cross-document trace.
-         */
-        lineNumber: number;
-        /**
-         * Catalogue item (when ordering from the item master).
-         */
-        item?: (string | null) | Product;
-        description: string;
-        quantity: number;
-        /**
-         * UN/CEFACT Rec 20 unit code (C62, KGM, LTR, …). EN-16931 §BT-130.
-         */
-        unitOfMeasure?: string | null;
-        unitPrice: number;
-        /**
-         * quantity × unitPrice net of tax. EN-16931 §BT-131.
-         */
-        lineNet?: number | null;
-        taxCategory?: (string | null) | TaxCode;
-        /**
-         * Line-level discount amount (negative impact on lineNet).
-         */
-        discount?: number | null;
-        /**
-         * Per-line delivery date (when distinct from order-header date).
-         */
-        requestedDeliveryDate?: string | null;
-        /**
-         * Purchase side: expense / asset account to debit on receipt.
-         */
-        glAccount?: (string | null) | GlAccount;
-        /**
-         * Purchase side: cumulative quantity received via goods-receipts.
-         */
-        quantityReceived?: number | null;
-        /**
-         * Vendor quote: lead time offered for this line.
-         */
-        leadTimeDays?: number | null;
-        /**
-         * Requisition: the vendor the requester would prefer for this line.
-         */
-        preferredVendor?: (string | null) | Party;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * The project this belongs to. Costs book to the project; the project carries the award.
-   */
-  project?: (string | null) | Project;
-  /**
-   * Incoterms 2020 term determining freight responsibility, risk transfer, and GL posting timing per IFRS-15 §38-42.
-   */
-  deliveryTerms?: ('FOB' | 'CIF' | 'DDP' | 'EXW') | null;
-  /**
-   * Named place where the delivery term applies (e.g. "CIF Burgas Port"). Required with deliveryTerms.
-   */
-  incotermsLocation?: string | null;
-  submittedAt?: string | null;
-  closedAt?: string | null;
-  /**
-   * Partial / full goods-receipts against this purchase order.
-   */
-  receipts?: {
-    docs?: (string | GoodsReceipt)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
+  continuingVsDiscontinued?: {
+    continuingEpsBasic?: number | null;
+    continuingEpsDiluted?: number | null;
+    discontinuedEpsBasic?: number | null;
+    discontinuedEpsDiluted?: number | null;
   };
   /**
-   * Matched vendor bill (three-way-match anchor).
+   * Issuances / buy-backs / splits / bonus issues during the period — drive the weighted-average computation.
    */
-  invoice?: (string | null) | Invoice;
-  /**
-   * Vendor quote: the requisition it answers (one requisition may have many quotes).
-   */
-  requisition?: (string | null) | Order;
-  rfqIssuedDate?: string | null;
-  quoteReceivedDate?: string | null;
-  shippingAmount?: number | null;
-  discountAmount?: number | null;
-  /**
-   * e.g. "Net 30", "2/10 Net 30", "50% deposit, balance on delivery".
-   */
-  paymentTerms?: string | null;
-  /**
-   * INCOTERMS 2020 code (e.g. EXW / FCA / DAP / DDP) per ICC publication 723E.
-   */
-  incoterms?: ('EXW' | 'FCA' | 'CPT' | 'CIP' | 'DAP' | 'DPU' | 'DDP' | 'FAS' | 'FOB' | 'CFR' | 'CIF') | null;
-  /**
-   * Vendor quote: set true when this is the winning quote.
-   */
-  isAwarded?: boolean | null;
-  awardedDate?: string | null;
-  awardedBy?: (string | null) | User;
-  /**
-   * OECD BEPS Action 13 + SOX §404 — reason for selection (lowest price / best fit / certified vendor / etc.).
-   */
-  awardRationale?: string | null;
-  qualityAssessment?: ('excellent' | 'good' | 'acceptable' | 'marginal' | 'unacceptable') | null;
-  /**
-   * The purchase order created from this awarded quote or approved requisition.
-   */
-  createdPurchaseOrder?: (string | null) | Order;
-  requisitioner?: (string | null) | User;
-  department?: string | null;
-  costCenter?: (string | null) | CostCenter;
-  /**
-   * Reason for the spend (drives approver decision + audit-trail evidence).
-   */
-  businessJustification?: string | null;
-  priority?: ('critical' | 'high' | 'normal' | 'low') | null;
-  /**
-   * When true, must collect ≥ 3 vendor quotes before PO (typical for spend > €10k).
-   */
-  requiresQuotes?: boolean | null;
-  minimumQuotesRequired?: number | null;
-  approvalChain?:
+  shareEvents?:
     | {
-        step: number;
-        approver: string | User;
+        eventDate: string;
+        eventKind: 'issuance' | 'buyback' | 'split' | 'reverse_split' | 'bonus' | 'conversion';
         /**
-         * e.g. Department Head, CFO, CEO.
+         * Change in shares outstanding (positive or negative).
          */
-        role?: string | null;
-        decision?: ('pending' | 'approved' | 'rejected' | 'returned') | null;
-        decidedAt?: string | null;
-        comment?: string | null;
+        sharesDelta: number;
+        /**
+         * For splits: e.g. "2-for-1" or "1-for-3" (reverse).
+         */
+        splitRatio?: string | null;
         id?: string | null;
       }[]
     | null;
-  /**
-   * Requisition: the vendor quote that led to the award.
-   */
-  awardedQuote?: (string | null) | Order;
   notes?: string | null;
-  /**
-   * Aggregate fulfilled quantity across all shipments. Maintained by hook.
-   */
-  fulfilledQuantity?: number | null;
-  /**
-   * Aggregate invoiced amount across all invoices. Maintained by hook.
-   */
-  invoicedAmount?: number | null;
-  cancellationDate?: string | null;
-  cancellationReason?: string | null;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'earnings-per-share';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "transactions".
+ * via the `definition` "fiscal-periods".
  */
-export interface Transaction {
+export interface FiscalPeriod {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
-  items?:
-    | {
-        product?: (string | null) | Product;
-        variant?: (string | null) | Variant;
-        quantity: number;
-        id?: string | null;
-      }[]
-    | null;
-  paymentMethod?: 'stripe' | null;
-  stripe?: {
-    customerID?: string | null;
-    paymentIntentID?: string | null;
-  };
-  billingAddress?: {
-    title?: string | null;
-    firstName?: string | null;
-    lastName?: string | null;
-    company?: string | null;
-    addressLine1?: string | null;
-    addressLine2?: string | null;
-    city?: string | null;
-    state?: string | null;
-    postalCode?: string | null;
-    country?: string | null;
-    phone?: string | null;
-  };
-  status:
-    | 'pending'
-    | 'processing'
-    | 'succeeded'
-    | 'failed'
-    | 'cancelled'
-    | 'expired'
-    | 'refunded'
-    | 'recorded'
-    | 'authorised'
-    | 'sent'
-    | 'received'
-    | 'settled'
-    | 'reversed';
-  customer?: (string | null) | User;
-  customerEmail?: string | null;
-  order?: (string | null) | Order;
-  cart?: (string | null) | Cart;
-  amount?: number | null;
-  currency?: 'EUR' | null;
   /**
-   * Transaction reference number
+   * Auto-derived label (e.g., FY2026-P05). Editable.
    */
-  transactionNumber?: string | null;
+  label?: string | null;
   /**
-   * Set on a register payment; it selects the AR-vs-AP GL posting. Empty on a checkout transaction, which posts nothing here. Defaults to Received when an invoice is given.
+   * Why this change was made (amendment, correction, regulatory request). Recorded with the version this save creates.
    */
-  paymentKind?: ('received' | 'sent') | null;
-  /**
-   * The invoice this payment settles (register payments).
-   */
-  invoice?: (string | null) | Invoice;
-  parties?: {
+  changeReason?: string | null;
+  identity: {
     /**
-     * Payment sender (payer)
+     * Fiscal year (e.g., 2026)
      */
-    sender?: (string | null) | Address;
+    fiscalYear: number;
     /**
-     * Payment receiver (payee)
+     * Period within the fiscal year (1-12 monthly, up to 53 weekly)
      */
-    receiver?: (string | null) | Address;
+    periodNumber: number;
+    /**
+     * Calendar shape
+     */
+    periodType: 'monthly' | 'weekly_445' | 'quarterly' | 'annual' | 'custom';
   };
-  amounts?: {
+  dates: {
     /**
-     * Payment amount applied to the invoice — what the invoice-paid rollup sums
+     * ISO 8601 first day of period (inclusive)
      */
-    amount?: number | null;
+    startDate: string;
     /**
-     * Invoice amount reference
+     * ISO 8601 last day of period (inclusive)
      */
-    invoiceAmount?: number | null;
+    endDate: string;
+  };
+  lifecycle: {
     /**
-     * Currency code
+     * open = postable. closed = soft close (adjustments still allowed). locked = no GL writes for any date in this period.
+     */
+    status: 'open' | 'closed' | 'locked';
+    /**
+     * When period was soft-closed
+     */
+    closedAt?: string | null;
+    /**
+     * Actor who closed
+     */
+    closedBy?: (string | null) | User;
+    /**
+     * When period was hard-locked
+     */
+    lockedAt?: string | null;
+    /**
+     * Admin who locked
+     */
+    lockedBy?: (string | null) | User;
+    /**
+     * Last unlock timestamp
+     */
+    reopenedAt?: string | null;
+    /**
+     * Admin who reopened
+     */
+    reopenedBy?: (string | null) | User;
+  };
+  configuration?: {
+    /**
+     * Month the fiscal year starts (1-12).
+     */
+    fiscalYearStartMonth?: number | null;
+    /**
+     * Day-of-month the fiscal year starts.
+     */
+    fiscalYearStartDay?: number | null;
+    /**
+     * ISO 3166-1 alpha-2 — drives statutory period coding (SAF-T).
+     */
+    countryCode?: string | null;
+    /**
+     * ISO 4217 reporting currency for this fiscal configuration.
      */
     currencyCode?: string | null;
     /**
-     * Exchange rate
+     * BCP-47 locale for period labelling.
      */
-    exchangeRate?: number | null;
-  };
-  dates?: {
+    localeCode?: string | null;
     /**
-     * When payment was sent
+     * Regulatory framework the period coding follows (e.g. SAF-T, XBRL-GL).
      */
-    sentAt?: string | null;
+    regulatoryFramework?: string | null;
     /**
-     * When payment was received
+     * Whether the calendar may use a non-Gregorian basis.
      */
-    receivedAt?: string | null;
+    allowsNonGregorian?: boolean | null;
     /**
-     * When payment was authorized
+     * Apply leap-year boundary adjustment.
      */
-    authorizedAt?: string | null;
-  };
-  authorization?: {
+    leapYearAdjustment?: boolean | null;
     /**
-     * User who authorized payment
+     * Explicit period boundaries for custom calendars.
      */
-    authorizedBy?: (string | null) | User;
-  };
-  payment?: {
-    /**
-     * Payment method (register payments: bank transfer, cash, cheque …)
-     */
-    paymentMethod?: string | null;
-    /**
-     * Payment notes
-     */
-    note?: string | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  handle?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "carts".
- */
-export interface Cart {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  items?:
-    | {
-        product?: (string | null) | Product;
-        variant?: (string | null) | Variant;
-        quantity: number;
-        id?: string | null;
-      }[]
-    | null;
-  secret?: string | null;
-  customer?: (string | null) | User;
-  purchasedAt?: string | null;
-  status?: ('active' | 'purchased' | 'abandoned') | null;
-  subtotal?: number | null;
-  currency?: 'EUR' | null;
-  handle?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "invoices".
- */
-export interface Invoice {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  typeStatus: {
-    /**
-     * Internal document type. For EN-16931 export, see invoiceTypeCode (BT-3) — the canonical UN/CEFACT 1001 code (commercial invoice = 380, credit note = 381, etc.).
-     */
-    invoiceType:
-      | 'cart'
-      | 'request'
-      | 'quotation'
-      | 'purchase_order'
-      | 'proforma_invoice'
-      | 'invoice'
-      | 'bill'
-      | 'credit_note'
-      | 'debit_note'
-      | 'protocol'
-      | 'subscription'
-      | 'lease'
-      | 'transfer';
-    /**
-     * BT-3 — UN/CEFACT 1001 document name code. Required for EN-16931 / Peppol BIS export. Maps to canonical InvoiceHeader.typeCode.
-     */
-    invoiceTypeCode?: ('326' | '380' | '381' | '384' | '386' | '388' | '389' | '393' | '395' | '751') | null;
-    /**
-     * Confirmed by parties
-     */
-    confirmed?: boolean | null;
-  };
-  /**
-   * Current status (top-level for consumer access).
-   */
-  status?:
-    | (
-        | 'draft'
-        | 'issued'
-        | 'confirmed'
-        | 'open'
-        | 'active'
-        | 'past_due'
-        | 'grace_period'
-        | 'paid'
-        | 'cancelled'
-        | 'complete'
-      )
-    | null;
-  /**
-   * Document number
-   */
-  number?: string | null;
-  /**
-   * Protocol number
-   */
-  protocolNumber?: string | null;
-  /**
-   * PO reference
-   */
-  purchaseOrder?: string | null;
-  /**
-   * SO reference
-   */
-  salesOrder?: string | null;
-  parties: {
-    /**
-     * Selling party
-     */
-    seller: string | Address;
-    /**
-     * Seller agent
-     */
-    sellerAgent?: (string | null) | Address;
-    /**
-     * Buying party
-     */
-    buyer: string | Address;
-    /**
-     * Buyer agent
-     */
-    buyerAgent?: (string | null) | Address;
-    /**
-     * Supplier
-     */
-    supplier?: (string | null) | Address;
-    /**
-     * Delivery recipient
-     */
-    consignee?: (string | null) | Address;
-  };
-  dates?: {
-    /**
-     * Document date
-     */
-    date?: string | null;
-    /**
-     * Issue date
-     */
-    issuedAt?: string | null;
-    /**
-     * Order date
-     */
-    orderDate?: string | null;
-    /**
-     * Proforma date
-     */
-    proformaDate?: string | null;
-    /**
-     * Protocol date
-     */
-    protocolDate?: string | null;
-    /**
-     * Payment date
-     */
-    paymentDate?: string | null;
-    /**
-     * Full payment date
-     */
-    paidAt?: string | null;
-    /**
-     * Delivery date
-     */
-    deliveredAt?: string | null;
-    /**
-     * Cancellation date
-     */
-    cancelledAt?: string | null;
-    /**
-     * Due-by date used by the dunning cycle
-     */
-    dueAt?: string | null;
-    /**
-     * Set when the dunning cycle first marks the invoice past-due
-     */
-    pastDueSinceAt?: string | null;
-    /**
-     * Computed: pastDueSinceAt + grace window
-     */
-    gracePeriodEndsAt?: string | null;
-    /**
-     * Computed: when the related subscription is scheduled for suspension
-     */
-    suspensionScheduledFor?: string | null;
-  };
-  amounts: {
-    /**
-     * BT-106 — Sum of invoice line net amounts. Maps to canonical DocumentTotals.lineNetTotal.
-     */
-    itemTotal: number;
-    /**
-     * Total discounts applied. Includes line-level + document-level allowances; for the canonical breakdown see allowancesTotal (BT-107) below.
-     */
-    discountTotal?: number | null;
-    /**
-     * BT-107 — Sum of document-level allowances (BG-20). Maps to canonical DocumentTotals.allowancesTotal.
-     */
-    allowancesTotal?: number | null;
-    /**
-     * BT-108 — Sum of document-level charges (BG-21). Maps to canonical DocumentTotals.chargesTotal.
-     */
-    chargesTotal?: number | null;
-    /**
-     * BT-109 — Invoice total amount without VAT (= itemTotal − allowancesTotal + chargesTotal). Maps to canonical DocumentTotals.taxExclusiveTotal.
-     */
-    netTotal?: number | null;
-    /**
-     * BT-110 — Invoice total VAT amount (sum of BG-23 BT-117). Maps to canonical DocumentTotals.vatTotal.
-     */
-    taxTotal?: number | null;
-    /**
-     * BT-112 — Invoice total amount with VAT. Maps to canonical DocumentTotals.taxInclusiveTotal.
-     */
-    totalAmount: number;
-    /**
-     * BT-113 — Paid amount (prepayment). Maps to canonical DocumentTotals.prepaidAmount.
-     */
-    prepaidAmount?: number | null;
-    /**
-     * BT-114 — Rounding amount (small-amount rounding to legal-tender minimum). Can be negative. Maps to canonical DocumentTotals.roundingAmount.
-     */
-    roundingAmount?: number | null;
-    /**
-     * Amount paid (running ledger of receipts).
-     */
-    totalPaid?: number | null;
-    /**
-     * BT-115 — Amount due for payment (= taxInclusiveTotal − prepaidAmount + roundingAmount). Maps to canonical DocumentTotals.amountDue.
-     */
-    totalDue?: number | null;
-  };
-  /**
-   * EN 16931 §BG-23 — one row per VAT category × rate. Required for EN-16931 / Peppol BIS export. Maps to canonical VatBreakdown[].
-   */
-  vatBreakdown?:
-    | {
-        /**
-         * BT-118 — VAT category code (UN/CEFACT 5305).
-         */
-        categoryCode: 'S' | 'Z' | 'E' | 'AE' | 'K' | 'G' | 'O' | 'L' | 'M';
-        /**
-         * BT-119 — VAT category rate (percent).
-         */
-        rate?: number | null;
-        /**
-         * BT-116 — VAT category taxable amount (cents).
-         */
-        taxableAmount: number;
-        /**
-         * BT-117 — VAT category tax amount (cents).
-         */
-        taxAmount: number;
-        /**
-         * BT-121 — Exemption reason code (required when categoryCode is E / AE / K / G / O).
-         */
-        exemptionReasonCode?: string | null;
-        /**
-         * BT-120 — Exemption reason free text.
-         */
-        exemptionReason?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  billingTax: {
-    /**
-     * ISO 4217 currency
-     */
-    currencyCode: string;
-    /**
-     * Exchange rate
-     */
-    exchangeRate?: number | null;
-    /**
-     * Tax regime
-     */
-    taxType?: ('vat' | 'gst') | null;
-    /**
-     * Price includes tax
-     */
-    taxesIncluded?: boolean | null;
-    /**
-     * Tax notes
-     */
-    taxNote?: string | null;
-  };
-  recurring?: {
-    /**
-     * Billing frequency
-     */
-    billingPeriod?: ('second' | 'minute' | 'hour' | 'day' | 'week' | 'month' | 'year') | null;
-    /**
-     * Next billing date
-     */
-    nextBillingDate?: string | null;
-    /**
-     * Period start
-     */
-    periodStart?: string | null;
-    /**
-     * Period end
-     */
-    periodEnd?: string | null;
-    /**
-     * Owning subscription (used by dunning cycle)
-     */
-    subscription?: (string | null) | Subscription;
-    /**
-     * Stripe invoice id — links this invoice to the Stripe billing multiverse.
-     */
-    stripeInvoiceId?: string | null;
-    /**
-     * Stripe PaymentIntent id for the paying charge.
-     */
-    stripePaymentIntentId?: string | null;
-    /**
-     * Dunning: count of failed payment attempts.
-     */
-    attemptCount?: number | null;
-    /**
-     * Dunning: timestamp of the last payment attempt.
-     */
-    lastAttemptAt?: string | null;
-    /**
-     * Dunning: last payment-attempt error message.
-     */
-    lastAttemptError?: string | null;
-  };
-  ledger?: {
-    /**
-     * Debit account
-     */
-    debitAccount?: (string | null) | GlAccount;
-    /**
-     * Credit account
-     */
-    creditAccount?: (string | null) | GlAccount;
-  };
-  notes?: {
-    /**
-     * General notes
-     */
-    note?: string | null;
-    /**
-     * Invoice notes
-     */
-    invoiceNote?: string | null;
-    /**
-     * Delivery notes
-     */
-    deliveryNote?: string | null;
-    /**
-     * Delivery terms
-     */
-    deliveryTerms?: string | null;
-    /**
-     * Payment terms
-     */
-    paymentTerms?: string | null;
-    /**
-     * Accepted payment methods
-     */
-    paymentMethods?:
+    customPeriodBoundaries?:
       | {
           [k: string]: unknown;
         }
@@ -4681,71 +4090,72 @@ export interface Invoice {
       | boolean
       | null;
   };
-  relationships?: {
+  governance?: {
     /**
-     * Parent invoice
+     * Reporting legal entity this fiscal period belongs to.
      */
-    parent?: (string | null) | Invoice;
+    entity?: (string | null) | LegalEntity;
     /**
-     * Related order
+     * Prior fiscal-period version this one supersedes (amendment chain).
      */
-    order?: (string | null) | Invoice;
+    supercedes?: (string | null) | FiscalPeriod;
     /**
-     * Domain context
+     * ISO 8601 — when this period definition takes effect.
      */
-    domain?: (string | null) | Tenant;
+    effectiveDate?: string | null;
   };
   /**
-   * СУПТО фискализация — касов бон / УНП, издаден при плащане в обхват.
+   * IAS 10 — what happened after this period ended and before its statements were authorised. Adjusting events are booked; the others are disclosed.
    */
-  fiscal?: {
+  subsequentEvents?:
+    | {
+        eventDate: string;
+        classification: 'adjusting' | 'non_adjusting' | 'going_concern';
+        eventKind:
+          | 'litigation'
+          | 'impairment_evidence'
+          | 'customer_bankruptcy'
+          | 'sale'
+          | 'acquisition'
+          | 'restructuring'
+          | 'fx_change'
+          | 'casualty'
+          | 'capital_event'
+          | 'dividend'
+          | 'other';
+        description: string;
+        /**
+         * Approximate financial impact (cents).
+         */
+        estimatedImpact?: number | null;
+        /**
+         * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+         */
+        currency?: string | null;
+        status?: ('identified' | 'assessed' | 'adjusted' | 'disclosed' | 'not_material') | null;
+        /**
+         * The entry that books an adjusting event (required to mark it adjusted).
+         */
+        journalEntry?: (string | null) | JournalEntry;
+        /**
+         * IAS 10 §21 — in the financial-statement notes.
+         */
+        disclosedInFS?: boolean | null;
+        /**
+         * Slug of the related document, if known.
+         */
+        sourceCollection?: string | null;
+        sourceId?: string | null;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  notes?: {
     /**
-     * Unique sales number (УНП) — assigned + frozen on create.
+     * Close memo / lock justification
      */
-    unp?: string | null;
-    unpSequence?: number | null;
-    /**
-     * Фискално устройство (ФУ).
-     */
-    fiscalDevice?: (string | null) | FiscalDevice;
-    /**
-     * 8-digit ФУ individual number — first УНП segment.
-     */
-    fiscalDeviceNumber?: string | null;
-    operatorCode?: string | null;
-    /**
-     * Виртуален ПОС терминал (алтернативен режим).
-     */
-    terminal?: (string | null) | Terminal;
-    /**
-     * Касов бон номер.
-     */
-    receiptNumber?: string | null;
-    /**
-     * Издаден касов бон.
-     */
-    receipt?: (string | null) | Receipt;
-    /**
-     * НАП fiscal-QR payload (device*УНП*date*time*sum).
-     */
-    qrData?: string | null;
-    /**
-     * Фискален статус (open → closed → reversed). Closed сторно само (Наредба Н-18).
-     */
-    status?: ('open' | 'closed' | 'voided' | 'reversed') | null;
-    /**
-     * Сторно на (оригинална фактура).
-     */
-    reversalOf?: (string | null) | Invoice;
-    /**
-     * Сторнирана с (кредитно известие).
-     */
-    reversedBy?: (string | null) | Invoice;
+    note?: string | null;
   };
-  /**
-   * Test invoice
-   */
-  test?: boolean | null;
   /**
    * Additional metadata
    */
@@ -4758,458 +4168,6 @@ export interface Invoice {
     | number
     | boolean
     | null;
-  /**
-   * The collection process of this invoice once overdue (IFRS-9 §5.5 evidence).
-   */
-  dunning?: {
-    stage?: ('reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off') | null;
-    /**
-     * Set by the server when the stage changes.
-     */
-    stageEnteredAt?: string | null;
-    nextActionDate?: string | null;
-    status?: ('active' | 'paused' | 'resolved' | 'written_off' | 'closed') | null;
-    resolvedAt?: string | null;
-    /**
-     * Pause the progression (dispute, payment plan, legal hold).
-     */
-    paused?: boolean | null;
-    pauseReason?: ('disputed' | 'payment_plan' | 'legal_hold' | 'bankruptcy' | 'manual_review') | null;
-    paymentPlanRef?: string | null;
-    /**
-     * Allowance for doubtful accounts attributable to this invoice.
-     */
-    eclProvision?: number | null;
-    writeOffJournalEntry?: (string | null) | JournalEntry;
-    /**
-     * Append-only: each stage change adds its entry; stored entries cannot be removed or changed.
-     */
-    history?:
-      | {
-          stage:
-            'reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off' | 'paused' | 'resolved';
-          enteredAt: string;
-          amountOverdueAtEntry?: number | null;
-          communicationSent?: ('none' | 'email' | 'sms' | 'letter' | 'phone' | 'legal_letter') | null;
-          communicationReference?: string | null;
-          notes?: string | null;
-          id?: string | null;
-        }[]
-      | null;
-  };
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "subscriptions".
- */
-export interface Subscription {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Current subscription plan
-   */
-  plan: string | SubscriptionPlan;
-  /**
-   * Current subscription state in billing cycle
-   */
-  status: 'trial' | 'active' | 'past_due' | 'grace_period' | 'suspended' | 'cancelled';
-  trialStartedAt?: string | null;
-  trialEndsAt?: string | null;
-  currentPeriodStart?: string | null;
-  currentPeriodEnd?: string | null;
-  /**
-   * Stripe subscription object ID
-   */
-  stripeSubscriptionId?: string | null;
-  /**
-   * Stripe customer ID
-   */
-  stripeCustomerId?: string | null;
-  cancelledAt?: string | null;
-  cancellationReason?: string | null;
-  pausedAt?: string | null;
-  resumeAt?: string | null;
-  lastStatusChange?: string | null;
-  lastStatusChangeReason?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "subscription-plans".
- */
-export interface SubscriptionPlan {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  name: string;
-  slug: string;
-  /**
-   * Stripe Product ID for this plan
-   */
-  stripeProductId?: string | null;
-  /**
-   * Stripe Price ID (recurring) for this plan
-   */
-  stripePriceId?: string | null;
-  /**
-   * Monthly price in minor units (0 for free tier); currency carried by `currency`.
-   */
-  monthlyPrice: number;
-  /**
-   * Yearly price in minor units (optional, for annual billing); currency carried by `currency`.
-   */
-  yearlyPrice?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  billingCycle: 'monthly' | 'yearly';
-  /**
-   * Feature limits as JSON. null = unlimited
-   */
-  limits:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  isActive?: boolean | null;
-  description?: string | null;
-  /**
-   * Display order in pricing pages (lower = first)
-   */
-  sortOrder?: number | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fiscal-devices".
- */
-export interface FiscalDevice {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * 8-digit ФУ individual number assigned by the manufacturer — first УНП segment.
-   */
-  individualNumber: string;
-  model?: string | null;
-  manufacturer?: string | null;
-  /**
-   * ISO 4217 currency this ФУ issues receipts in — overrides the tenant/country default.
-   */
-  currency?: string | null;
-  /**
-   * Active fiscal tax groups (Приложение № 1) on this device — group letter → VAT rate. Empty ⇒ country VAT bands.
-   */
-  taxGroups?:
-    | {
-        /**
-         * Tax-group letter (А/Б/В/Г).
-         */
-        group?: string | null;
-        /**
-         * VAT rate (%) configured for this group on this device.
-         */
-        rate?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Operator whose code (ZZZZ) numbers automated sales on this device.
-   */
-  defaultOperator?: (string | null) | Operator;
-  /**
-   * Virtual-POS terminal printed on automated e-receipts from this device.
-   */
-  defaultTerminal?: (string | null) | Terminal;
-  status?: ('active' | 'decommissioned') | null;
-  registeredAt?: string | null;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "operators".
- */
-export interface Operator {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * 4-digit operator code — second УНП segment.
-   */
-  code: string;
-  name: string;
-  user?: (string | null) | User;
-  status?: ('active' | 'decommissioned') | null;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "terminals".
- */
-export interface Terminal {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Virtual POS terminal number (printed on the e-receipt).
-   */
-  terminalNumber: string;
-  /**
-   * Payment-service provider operating the virtual POS.
-   */
-  provider?: string | null;
-  /**
-   * Settlement account (IBAN) the terminal pays into.
-   */
-  accountNumber?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  status?: ('active' | 'inactive') | null;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "receipts".
- */
-export interface Receipt {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Касов бон number (or УНП in the alternative regime).
-   */
-  receiptNumber?: string | null;
-  /**
-   * Unique sales number (УНП) — assigned + frozen on create.
-   */
-  unp?: string | null;
-  sale?: (string | null) | Sale;
-  /**
-   * 8-digit ФУ individual number — first УНП segment.
-   */
-  fiscalDeviceNumber?: string | null;
-  operatorCode?: string | null;
-  virtualPosTerminal?: (string | null) | Terminal;
-  /**
-   * НАП fiscal-QR payload (device*УНП*date*time*sum).
-   */
-  qrData?: string | null;
-  issuedAt?: string | null;
-  total?: number | null;
-  vatTotal?: number | null;
-  /**
-   * VAT subtotals per Наредба Н-18 tax group (А/Б/В/Г) — frozen at issuance.
-   */
-  vatBreakdown?:
-    | {
-        /**
-         * Tax-group letter (Приложение № 1).
-         */
-        group?: string | null;
-        /**
-         * VAT rate (%).
-         */
-        rate?: number | null;
-        /**
-         * Net amount (cents).
-         */
-        net?: number | null;
-        /**
-         * VAT amount (cents).
-         */
-        vat?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
-  /**
-   * Customer e-mail the e-receipt was sent to (alternative regime).
-   */
-  deliveredTo?: string | null;
-  status?: ('issued' | 'delivered' | 'void') | null;
-  lines?:
-    | {
-        description?: string | null;
-        quantity?: number | null;
-        unitPrice?: number | null;
-        vatRate?: number | null;
-        amount?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "sales".
- */
-export interface Sale {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Unique sales number (УНП) — assigned + frozen on create.
-   */
-  unp?: string | null;
-  unpSequence?: number | null;
-  /**
-   * 8-digit ФУ individual number — first УНП segment.
-   */
-  fiscalDeviceNumber: string;
-  fiscalDevice?: (string | null) | FiscalDevice;
-  operatorCode?: string | null;
-  saleDate: string;
-  status?: ('open' | 'closed' | 'voided' | 'reversed') | null;
-  items?:
-    | {
-        description?: string | null;
-        quantity?: number | null;
-        unitPrice?: number | null;
-        vatRate?: number | null;
-        amount?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  total?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
-  /**
-   * Касов бон number — carries the УНП.
-   */
-  fiscalReceiptNumber?: string | null;
-  operator?: (string | null) | Operator;
-  terminal?: (string | null) | Terminal;
-  receipt?: (string | null) | Receipt;
-  /**
-   * Origin of the sale (revenue source) — keys idempotency + сторно.
-   */
-  source?: {
-    type?: ('order' | 'subscription' | 'invoice' | 'pos') | null;
-    /**
-     * Source document id.
-     */
-    ref?: string | null;
-  };
-  reversalOf?: (string | null) | Sale;
-  reversedBy?: (string | null) | Sale;
-  reversalReason?: string | null;
-  closedAt?: string | null;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -6139,215 +5097,6 @@ export interface Provision {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fiscal-periods".
- */
-export interface FiscalPeriod {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Auto-derived label (e.g., FY2026-P05). Editable.
-   */
-  label?: string | null;
-  /**
-   * Why this change was made (amendment, correction, regulatory request). Recorded with the version this save creates.
-   */
-  changeReason?: string | null;
-  identity: {
-    /**
-     * Fiscal year (e.g., 2026)
-     */
-    fiscalYear: number;
-    /**
-     * Period within the fiscal year (1-12 monthly, up to 53 weekly)
-     */
-    periodNumber: number;
-    /**
-     * Calendar shape
-     */
-    periodType: 'monthly' | 'weekly_445' | 'quarterly' | 'annual' | 'custom';
-  };
-  dates: {
-    /**
-     * ISO 8601 first day of period (inclusive)
-     */
-    startDate: string;
-    /**
-     * ISO 8601 last day of period (inclusive)
-     */
-    endDate: string;
-  };
-  lifecycle: {
-    /**
-     * open = postable. closed = soft close (adjustments still allowed). locked = no GL writes for any date in this period.
-     */
-    status: 'open' | 'closed' | 'locked';
-    /**
-     * When period was soft-closed
-     */
-    closedAt?: string | null;
-    /**
-     * Actor who closed
-     */
-    closedBy?: (string | null) | User;
-    /**
-     * When period was hard-locked
-     */
-    lockedAt?: string | null;
-    /**
-     * Admin who locked
-     */
-    lockedBy?: (string | null) | User;
-    /**
-     * Last unlock timestamp
-     */
-    reopenedAt?: string | null;
-    /**
-     * Admin who reopened
-     */
-    reopenedBy?: (string | null) | User;
-  };
-  configuration?: {
-    /**
-     * Month the fiscal year starts (1-12).
-     */
-    fiscalYearStartMonth?: number | null;
-    /**
-     * Day-of-month the fiscal year starts.
-     */
-    fiscalYearStartDay?: number | null;
-    /**
-     * ISO 3166-1 alpha-2 — drives statutory period coding (SAF-T).
-     */
-    countryCode?: string | null;
-    /**
-     * ISO 4217 reporting currency for this fiscal configuration.
-     */
-    currencyCode?: string | null;
-    /**
-     * BCP-47 locale for period labelling.
-     */
-    localeCode?: string | null;
-    /**
-     * Regulatory framework the period coding follows (e.g. SAF-T, XBRL-GL).
-     */
-    regulatoryFramework?: string | null;
-    /**
-     * Whether the calendar may use a non-Gregorian basis.
-     */
-    allowsNonGregorian?: boolean | null;
-    /**
-     * Apply leap-year boundary adjustment.
-     */
-    leapYearAdjustment?: boolean | null;
-    /**
-     * Explicit period boundaries for custom calendars.
-     */
-    customPeriodBoundaries?:
-      | {
-          [k: string]: unknown;
-        }
-      | unknown[]
-      | string
-      | number
-      | boolean
-      | null;
-  };
-  governance?: {
-    /**
-     * Reporting legal entity this fiscal period belongs to.
-     */
-    entity?: (string | null) | LegalEntity;
-    /**
-     * Prior fiscal-period version this one supersedes (amendment chain).
-     */
-    supercedes?: (string | null) | FiscalPeriod;
-    /**
-     * ISO 8601 — when this period definition takes effect.
-     */
-    effectiveDate?: string | null;
-  };
-  /**
-   * IAS 10 — what happened after this period ended and before its statements were authorised. Adjusting events are booked; the others are disclosed.
-   */
-  subsequentEvents?:
-    | {
-        eventDate: string;
-        classification: 'adjusting' | 'non_adjusting' | 'going_concern';
-        eventKind:
-          | 'litigation'
-          | 'impairment_evidence'
-          | 'customer_bankruptcy'
-          | 'sale'
-          | 'acquisition'
-          | 'restructuring'
-          | 'fx_change'
-          | 'casualty'
-          | 'capital_event'
-          | 'dividend'
-          | 'other';
-        description: string;
-        /**
-         * Approximate financial impact (cents).
-         */
-        estimatedImpact?: number | null;
-        /**
-         * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-         */
-        currency?: string | null;
-        status?: ('identified' | 'assessed' | 'adjusted' | 'disclosed' | 'not_material') | null;
-        /**
-         * The entry that books an adjusting event (required to mark it adjusted).
-         */
-        journalEntry?: (string | null) | JournalEntry;
-        /**
-         * IAS 10 §21 — in the financial-statement notes.
-         */
-        disclosedInFS?: boolean | null;
-        /**
-         * Slug of the related document, if known.
-         */
-        sourceCollection?: string | null;
-        sourceId?: string | null;
-        notes?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  notes?: {
-    /**
-     * Close memo / lock justification
-     */
-    note?: string | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "fixed-assets".
  */
 export interface FixedAsset {
@@ -6779,6 +5528,1333 @@ export interface PerformanceObligation {
     relationTo: 'users';
     value: string | User;
   } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "invoices".
+ */
+export interface Invoice {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  typeStatus: {
+    /**
+     * Internal document type. For EN-16931 export, see invoiceTypeCode (BT-3) — the canonical UN/CEFACT 1001 code (commercial invoice = 380, credit note = 381, etc.).
+     */
+    invoiceType:
+      | 'cart'
+      | 'request'
+      | 'quotation'
+      | 'purchase_order'
+      | 'proforma_invoice'
+      | 'invoice'
+      | 'bill'
+      | 'credit_note'
+      | 'debit_note'
+      | 'protocol'
+      | 'subscription'
+      | 'lease'
+      | 'transfer';
+    /**
+     * BT-3 — UN/CEFACT 1001 document name code. Required for EN-16931 / Peppol BIS export. Maps to canonical InvoiceHeader.typeCode.
+     */
+    invoiceTypeCode?: ('326' | '380' | '381' | '384' | '386' | '388' | '389' | '393' | '395' | '751') | null;
+    /**
+     * Confirmed by parties
+     */
+    confirmed?: boolean | null;
+  };
+  /**
+   * Current status (top-level for consumer access).
+   */
+  status?:
+    | (
+        | 'draft'
+        | 'issued'
+        | 'confirmed'
+        | 'open'
+        | 'active'
+        | 'past_due'
+        | 'grace_period'
+        | 'paid'
+        | 'cancelled'
+        | 'complete'
+      )
+    | null;
+  /**
+   * Document number
+   */
+  number?: string | null;
+  /**
+   * Protocol number
+   */
+  protocolNumber?: string | null;
+  /**
+   * PO reference
+   */
+  purchaseOrder?: string | null;
+  /**
+   * SO reference
+   */
+  salesOrder?: string | null;
+  parties: {
+    /**
+     * Selling party
+     */
+    seller: string | Address;
+    /**
+     * Seller agent
+     */
+    sellerAgent?: (string | null) | Address;
+    /**
+     * Buying party
+     */
+    buyer: string | Address;
+    /**
+     * Buyer agent
+     */
+    buyerAgent?: (string | null) | Address;
+    /**
+     * Supplier
+     */
+    supplier?: (string | null) | Address;
+    /**
+     * Delivery recipient
+     */
+    consignee?: (string | null) | Address;
+  };
+  dates?: {
+    /**
+     * Document date
+     */
+    date?: string | null;
+    /**
+     * Issue date
+     */
+    issuedAt?: string | null;
+    /**
+     * Order date
+     */
+    orderDate?: string | null;
+    /**
+     * Proforma date
+     */
+    proformaDate?: string | null;
+    /**
+     * Protocol date
+     */
+    protocolDate?: string | null;
+    /**
+     * Payment date
+     */
+    paymentDate?: string | null;
+    /**
+     * Full payment date
+     */
+    paidAt?: string | null;
+    /**
+     * Delivery date
+     */
+    deliveredAt?: string | null;
+    /**
+     * Cancellation date
+     */
+    cancelledAt?: string | null;
+    /**
+     * Due-by date used by the dunning cycle
+     */
+    dueAt?: string | null;
+    /**
+     * Set when the dunning cycle first marks the invoice past-due
+     */
+    pastDueSinceAt?: string | null;
+    /**
+     * Computed: pastDueSinceAt + grace window
+     */
+    gracePeriodEndsAt?: string | null;
+    /**
+     * Computed: when the related subscription is scheduled for suspension
+     */
+    suspensionScheduledFor?: string | null;
+  };
+  amounts: {
+    /**
+     * BT-106 — Sum of invoice line net amounts. Maps to canonical DocumentTotals.lineNetTotal.
+     */
+    itemTotal: number;
+    /**
+     * Total discounts applied. Includes line-level + document-level allowances; for the canonical breakdown see allowancesTotal (BT-107) below.
+     */
+    discountTotal?: number | null;
+    /**
+     * BT-107 — Sum of document-level allowances (BG-20). Maps to canonical DocumentTotals.allowancesTotal.
+     */
+    allowancesTotal?: number | null;
+    /**
+     * BT-108 — Sum of document-level charges (BG-21). Maps to canonical DocumentTotals.chargesTotal.
+     */
+    chargesTotal?: number | null;
+    /**
+     * BT-109 — Invoice total amount without VAT (= itemTotal − allowancesTotal + chargesTotal). Maps to canonical DocumentTotals.taxExclusiveTotal.
+     */
+    netTotal?: number | null;
+    /**
+     * BT-110 — Invoice total VAT amount (sum of BG-23 BT-117). Maps to canonical DocumentTotals.vatTotal.
+     */
+    taxTotal?: number | null;
+    /**
+     * BT-112 — Invoice total amount with VAT. Maps to canonical DocumentTotals.taxInclusiveTotal.
+     */
+    totalAmount: number;
+    /**
+     * BT-113 — Paid amount (prepayment). Maps to canonical DocumentTotals.prepaidAmount.
+     */
+    prepaidAmount?: number | null;
+    /**
+     * BT-114 — Rounding amount (small-amount rounding to legal-tender minimum). Can be negative. Maps to canonical DocumentTotals.roundingAmount.
+     */
+    roundingAmount?: number | null;
+    /**
+     * Amount paid (running ledger of receipts).
+     */
+    totalPaid?: number | null;
+    /**
+     * BT-115 — Amount due for payment (= taxInclusiveTotal − prepaidAmount + roundingAmount). Maps to canonical DocumentTotals.amountDue.
+     */
+    totalDue?: number | null;
+  };
+  /**
+   * EN 16931 §BG-23 — one row per VAT category × rate. Required for EN-16931 / Peppol BIS export. Maps to canonical VatBreakdown[].
+   */
+  vatBreakdown?:
+    | {
+        /**
+         * BT-118 — VAT category code (UN/CEFACT 5305).
+         */
+        categoryCode: 'S' | 'Z' | 'E' | 'AE' | 'K' | 'G' | 'O' | 'L' | 'M';
+        /**
+         * BT-119 — VAT category rate (percent).
+         */
+        rate?: number | null;
+        /**
+         * BT-116 — VAT category taxable amount (cents).
+         */
+        taxableAmount: number;
+        /**
+         * BT-117 — VAT category tax amount (cents).
+         */
+        taxAmount: number;
+        /**
+         * BT-121 — Exemption reason code (required when categoryCode is E / AE / K / G / O).
+         */
+        exemptionReasonCode?: string | null;
+        /**
+         * BT-120 — Exemption reason free text.
+         */
+        exemptionReason?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  billingTax: {
+    /**
+     * ISO 4217 currency
+     */
+    currencyCode: string;
+    /**
+     * Exchange rate
+     */
+    exchangeRate?: number | null;
+    /**
+     * Tax regime
+     */
+    taxType?: ('vat' | 'gst') | null;
+    /**
+     * Price includes tax
+     */
+    taxesIncluded?: boolean | null;
+    /**
+     * Tax notes
+     */
+    taxNote?: string | null;
+  };
+  recurring?: {
+    /**
+     * Billing frequency
+     */
+    billingPeriod?: ('second' | 'minute' | 'hour' | 'day' | 'week' | 'month' | 'year') | null;
+    /**
+     * Next billing date
+     */
+    nextBillingDate?: string | null;
+    /**
+     * Period start
+     */
+    periodStart?: string | null;
+    /**
+     * Period end
+     */
+    periodEnd?: string | null;
+    /**
+     * Owning subscription (used by dunning cycle)
+     */
+    subscription?: (string | null) | Subscription;
+    /**
+     * Stripe invoice id — links this invoice to the Stripe billing multiverse.
+     */
+    stripeInvoiceId?: string | null;
+    /**
+     * Stripe PaymentIntent id for the paying charge.
+     */
+    stripePaymentIntentId?: string | null;
+    /**
+     * Dunning: count of failed payment attempts.
+     */
+    attemptCount?: number | null;
+    /**
+     * Dunning: timestamp of the last payment attempt.
+     */
+    lastAttemptAt?: string | null;
+    /**
+     * Dunning: last payment-attempt error message.
+     */
+    lastAttemptError?: string | null;
+  };
+  ledger?: {
+    /**
+     * Debit account
+     */
+    debitAccount?: (string | null) | GlAccount;
+    /**
+     * Credit account
+     */
+    creditAccount?: (string | null) | GlAccount;
+  };
+  notes?: {
+    /**
+     * General notes
+     */
+    note?: string | null;
+    /**
+     * Invoice notes
+     */
+    invoiceNote?: string | null;
+    /**
+     * Delivery notes
+     */
+    deliveryNote?: string | null;
+    /**
+     * Delivery terms
+     */
+    deliveryTerms?: string | null;
+    /**
+     * Payment terms
+     */
+    paymentTerms?: string | null;
+    /**
+     * Accepted payment methods
+     */
+    paymentMethods?:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+  };
+  relationships?: {
+    /**
+     * Parent invoice
+     */
+    parent?: (string | null) | Invoice;
+    /**
+     * Related order
+     */
+    order?: (string | null) | Invoice;
+    /**
+     * Domain context
+     */
+    domain?: (string | null) | Tenant;
+  };
+  /**
+   * СУПТО фискализация — касов бон / УНП, издаден при плащане в обхват.
+   */
+  fiscal?: {
+    /**
+     * Unique sales number (УНП) — assigned + frozen on create.
+     */
+    unp?: string | null;
+    unpSequence?: number | null;
+    /**
+     * Фискално устройство (ФУ).
+     */
+    fiscalDevice?: (string | null) | FiscalDevice;
+    /**
+     * 8-digit ФУ individual number — first УНП segment.
+     */
+    fiscalDeviceNumber?: string | null;
+    operatorCode?: string | null;
+    /**
+     * Виртуален ПОС терминал (алтернативен режим).
+     */
+    terminal?: (string | null) | Terminal;
+    /**
+     * Касов бон номер.
+     */
+    receiptNumber?: string | null;
+    /**
+     * Издаден касов бон.
+     */
+    receipt?: (string | null) | Receipt;
+    /**
+     * НАП fiscal-QR payload (device*УНП*date*time*sum).
+     */
+    qrData?: string | null;
+    /**
+     * Фискален статус (open → closed → reversed). Closed сторно само (Наредба Н-18).
+     */
+    status?: ('open' | 'closed' | 'voided' | 'reversed') | null;
+    /**
+     * Сторно на (оригинална фактура).
+     */
+    reversalOf?: (string | null) | Invoice;
+    /**
+     * Сторнирана с (кредитно известие).
+     */
+    reversedBy?: (string | null) | Invoice;
+  };
+  /**
+   * Test invoice
+   */
+  test?: boolean | null;
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * The collection process of this invoice once overdue (IFRS-9 §5.5 evidence).
+   */
+  dunning?: {
+    stage?: ('reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off') | null;
+    /**
+     * Set by the server when the stage changes.
+     */
+    stageEnteredAt?: string | null;
+    nextActionDate?: string | null;
+    status?: ('active' | 'paused' | 'resolved' | 'written_off' | 'closed') | null;
+    resolvedAt?: string | null;
+    /**
+     * Pause the progression (dispute, payment plan, legal hold).
+     */
+    paused?: boolean | null;
+    pauseReason?: ('disputed' | 'payment_plan' | 'legal_hold' | 'bankruptcy' | 'manual_review') | null;
+    paymentPlanRef?: string | null;
+    /**
+     * Allowance for doubtful accounts attributable to this invoice.
+     */
+    eclProvision?: number | null;
+    writeOffJournalEntry?: (string | null) | JournalEntry;
+    /**
+     * Append-only: each stage change adds its entry; stored entries cannot be removed or changed.
+     */
+    history?:
+      | {
+          stage:
+            'reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off' | 'paused' | 'resolved';
+          enteredAt: string;
+          amountOverdueAtEntry?: number | null;
+          communicationSent?: ('none' | 'email' | 'sms' | 'letter' | 'phone' | 'legal_letter') | null;
+          communicationReference?: string | null;
+          notes?: string | null;
+          id?: string | null;
+        }[]
+      | null;
+  };
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "subscriptions".
+ */
+export interface Subscription {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Current subscription plan
+   */
+  plan: string | SubscriptionPlan;
+  /**
+   * Current subscription state in billing cycle
+   */
+  status: 'trial' | 'active' | 'past_due' | 'grace_period' | 'suspended' | 'cancelled';
+  trialStartedAt?: string | null;
+  trialEndsAt?: string | null;
+  currentPeriodStart?: string | null;
+  currentPeriodEnd?: string | null;
+  /**
+   * Stripe subscription object ID
+   */
+  stripeSubscriptionId?: string | null;
+  /**
+   * Stripe customer ID
+   */
+  stripeCustomerId?: string | null;
+  cancelledAt?: string | null;
+  cancellationReason?: string | null;
+  pausedAt?: string | null;
+  resumeAt?: string | null;
+  lastStatusChange?: string | null;
+  lastStatusChangeReason?: string | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "subscription-plans".
+ */
+export interface SubscriptionPlan {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  name: string;
+  slug: string;
+  /**
+   * Stripe Product ID for this plan
+   */
+  stripeProductId?: string | null;
+  /**
+   * Stripe Price ID (recurring) for this plan
+   */
+  stripePriceId?: string | null;
+  /**
+   * Monthly price in minor units (0 for free tier); currency carried by `currency`.
+   */
+  monthlyPrice: number;
+  /**
+   * Yearly price in minor units (optional, for annual billing); currency carried by `currency`.
+   */
+  yearlyPrice?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  billingCycle: 'monthly' | 'yearly';
+  /**
+   * Feature limits as JSON. null = unlimited
+   */
+  limits:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  isActive?: boolean | null;
+  description?: string | null;
+  /**
+   * Display order in pricing pages (lower = first)
+   */
+  sortOrder?: number | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fiscal-devices".
+ */
+export interface FiscalDevice {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * 8-digit ФУ individual number assigned by the manufacturer — first УНП segment.
+   */
+  individualNumber: string;
+  model?: string | null;
+  manufacturer?: string | null;
+  /**
+   * ISO 4217 currency this ФУ issues receipts in — overrides the tenant/country default.
+   */
+  currency?: string | null;
+  /**
+   * Active fiscal tax groups (Приложение № 1) on this device — group letter → VAT rate. Empty ⇒ country VAT bands.
+   */
+  taxGroups?:
+    | {
+        /**
+         * Tax-group letter (А/Б/В/Г).
+         */
+        group?: string | null;
+        /**
+         * VAT rate (%) configured for this group on this device.
+         */
+        rate?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Operator whose code (ZZZZ) numbers automated sales on this device.
+   */
+  defaultOperator?: (string | null) | Operator;
+  /**
+   * Virtual-POS terminal printed on automated e-receipts from this device.
+   */
+  defaultTerminal?: (string | null) | Terminal;
+  status?: ('active' | 'decommissioned') | null;
+  registeredAt?: string | null;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "operators".
+ */
+export interface Operator {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * 4-digit operator code — second УНП segment.
+   */
+  code: string;
+  name: string;
+  user?: (string | null) | User;
+  status?: ('active' | 'decommissioned') | null;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "terminals".
+ */
+export interface Terminal {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Virtual POS terminal number (printed on the e-receipt).
+   */
+  terminalNumber: string;
+  /**
+   * Payment-service provider operating the virtual POS.
+   */
+  provider?: string | null;
+  /**
+   * Settlement account (IBAN) the terminal pays into.
+   */
+  accountNumber?: string | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  status?: ('active' | 'inactive') | null;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "receipts".
+ */
+export interface Receipt {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Касов бон number (or УНП in the alternative regime).
+   */
+  receiptNumber?: string | null;
+  /**
+   * Unique sales number (УНП) — assigned + frozen on create.
+   */
+  unp?: string | null;
+  sale?: (string | null) | Sale;
+  /**
+   * 8-digit ФУ individual number — first УНП segment.
+   */
+  fiscalDeviceNumber?: string | null;
+  operatorCode?: string | null;
+  virtualPosTerminal?: (string | null) | Terminal;
+  /**
+   * НАП fiscal-QR payload (device*УНП*date*time*sum).
+   */
+  qrData?: string | null;
+  issuedAt?: string | null;
+  total?: number | null;
+  vatTotal?: number | null;
+  /**
+   * VAT subtotals per Наредба Н-18 tax group (А/Б/В/Г) — frozen at issuance.
+   */
+  vatBreakdown?:
+    | {
+        /**
+         * Tax-group letter (Приложение № 1).
+         */
+        group?: string | null;
+        /**
+         * VAT rate (%).
+         */
+        rate?: number | null;
+        /**
+         * Net amount (cents).
+         */
+        net?: number | null;
+        /**
+         * VAT amount (cents).
+         */
+        vat?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
+  /**
+   * Customer e-mail the e-receipt was sent to (alternative regime).
+   */
+  deliveredTo?: string | null;
+  status?: ('issued' | 'delivered' | 'void') | null;
+  lines?:
+    | {
+        description?: string | null;
+        quantity?: number | null;
+        unitPrice?: number | null;
+        vatRate?: number | null;
+        amount?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sales".
+ */
+export interface Sale {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Unique sales number (УНП) — assigned + frozen on create.
+   */
+  unp?: string | null;
+  unpSequence?: number | null;
+  /**
+   * 8-digit ФУ individual number — first УНП segment.
+   */
+  fiscalDeviceNumber: string;
+  fiscalDevice?: (string | null) | FiscalDevice;
+  operatorCode?: string | null;
+  saleDate: string;
+  status?: ('open' | 'closed' | 'voided' | 'reversed') | null;
+  items?:
+    | {
+        description?: string | null;
+        quantity?: number | null;
+        unitPrice?: number | null;
+        vatRate?: number | null;
+        amount?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  total?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
+  /**
+   * Касов бон number — carries the УНП.
+   */
+  fiscalReceiptNumber?: string | null;
+  operator?: (string | null) | Operator;
+  terminal?: (string | null) | Terminal;
+  receipt?: (string | null) | Receipt;
+  /**
+   * Origin of the sale (revenue source) — keys idempotency + сторно.
+   */
+  source?: {
+    type?: ('order' | 'subscription' | 'invoice' | 'pos') | null;
+    /**
+     * Source document id.
+     */
+    ref?: string | null;
+  };
+  reversalOf?: (string | null) | Sale;
+  reversedBy?: (string | null) | Sale;
+  reversalReason?: string | null;
+  closedAt?: string | null;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "orders".
+ */
+export interface Order {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  items?:
+    | {
+        product?: (string | null) | Product;
+        variant?: (string | null) | Variant;
+        quantity: number;
+        id?: string | null;
+      }[]
+    | null;
+  shippingAddress?: {
+    title?: string | null;
+    firstName?: string | null;
+    lastName?: string | null;
+    company?: string | null;
+    addressLine1?: string | null;
+    addressLine2?: string | null;
+    city?: string | null;
+    state?: string | null;
+    postalCode?: string | null;
+    country?: string | null;
+    phone?: string | null;
+  };
+  customer?: (string | null) | User;
+  customerEmail?: string | null;
+  transactions?: (string | Transaction)[] | null;
+  status?: OrderStatus;
+  amount?: number | null;
+  currency?: 'EUR' | null;
+  accessToken?: string | null;
+  /**
+   * Whether this is an order from a customer or an order to a vendor. A web checkout is a sale.
+   */
+  side?: ('sale' | 'purchase') | null;
+  /**
+   * Which document this is. Its status is read in the terms of this type.
+   */
+  documentType?: ('order' | 'quote' | 'requisition') | null;
+  /**
+   * Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents. Empty on a web checkout.
+   */
+  orderNumber?: string | null;
+  /**
+   * The counterparty: the buyer on a sale, the seller (vendor) on a purchase — a trading partner, an address-book entry, or another tenant. (`customer` is the user who checked out.)
+   */
+  party?:
+    | ({
+        relationTo: 'parties';
+        value: string | Party;
+      } | null)
+    | ({
+        relationTo: 'addresses';
+        value: string | Address;
+      } | null)
+    | ({
+        relationTo: 'tenants';
+        value: string | Tenant;
+      } | null);
+  /**
+   * Buyer-side PO number / reference. EN-16931 §BT-13 / Peppol cbc:BuyerReference.
+   */
+  customerOrderReference?: string | null;
+  /**
+   * Parent contract (when the order draws from a master contract — IFRS-15 §17 combined contracts).
+   */
+  contract?: (string | null) | Contract;
+  /**
+   * When the quote was sent to the customer.
+   */
+  sentAt?: string | null;
+  /**
+   * Until when the quoted terms hold.
+   */
+  expiresAt?: string | null;
+  /**
+   * When the customer accepted — IFRS-15 §10 contract inception.
+   */
+  acceptedAt?: string | null;
+  /**
+   * Buyer submission / acceptance date. Drives revenue-period determination.
+   */
+  orderDate?: string | null;
+  /**
+   * Buyer-requested delivery date (single shipment) or first window. EN-16931 §BT-72.
+   */
+  requestedDeliveryDate?: string | null;
+  /**
+   * Confirmed delivery date after vendor commits. Bound by status=confirmed transition.
+   */
+  promisedDeliveryDate?: string | null;
+  /**
+   * Deliver-to address record — EN-16931 §BG-15 / UBL Delivery/DeliveryLocation.
+   */
+  shipTo?: (string | null) | Address;
+  /**
+   * Bill-to address record (when distinct from the buyer registered address). EN-16931 §BG-8.
+   */
+  billTo?: (string | null) | Address;
+  /**
+   * Net of tax. EN-16931 §BT-109.
+   */
+  subTotalAmount?: number | null;
+  /**
+   * Sum of tax-category lines. EN-16931 §BT-110.
+   */
+  taxAmount?: number | null;
+  /**
+   * subTotal + tax. EN-16931 §BT-112.
+   */
+  totalAmount?: number | null;
+  lines?:
+    | {
+        /**
+         * Position within the order. Stable for cross-document trace.
+         */
+        lineNumber: number;
+        /**
+         * Catalogue item (when ordering from the item master).
+         */
+        item?: (string | null) | Product;
+        description: string;
+        quantity: number;
+        /**
+         * UN/CEFACT Rec 20 unit code (C62, KGM, LTR, …). EN-16931 §BT-130.
+         */
+        unitOfMeasure?: string | null;
+        unitPrice: number;
+        /**
+         * quantity × unitPrice net of tax. EN-16931 §BT-131.
+         */
+        lineNet?: number | null;
+        taxCategory?: (string | null) | TaxCode;
+        /**
+         * Line-level discount amount (negative impact on lineNet).
+         */
+        discount?: number | null;
+        /**
+         * Per-line delivery date (when distinct from order-header date).
+         */
+        requestedDeliveryDate?: string | null;
+        /**
+         * Purchase side: expense / asset account to debit on receipt.
+         */
+        glAccount?: (string | null) | GlAccount;
+        /**
+         * Purchase side: cumulative quantity received via goods-receipts.
+         */
+        quantityReceived?: number | null;
+        /**
+         * Vendor quote: lead time offered for this line.
+         */
+        leadTimeDays?: number | null;
+        /**
+         * Requisition: the vendor the requester would prefer for this line.
+         */
+        preferredVendor?: (string | null) | Party;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * The project this belongs to. Costs book to the project; the project carries the award.
+   */
+  project?: (string | null) | Project;
+  /**
+   * Incoterms 2020 term determining freight responsibility, risk transfer, and GL posting timing per IFRS-15 §38-42.
+   */
+  deliveryTerms?: ('FOB' | 'CIF' | 'DDP' | 'EXW') | null;
+  /**
+   * Named place where the delivery term applies (e.g. "CIF Burgas Port"). Required with deliveryTerms.
+   */
+  incotermsLocation?: string | null;
+  submittedAt?: string | null;
+  closedAt?: string | null;
+  /**
+   * Partial / full goods-receipts against this purchase order.
+   */
+  receipts?: {
+    docs?: (string | GoodsReceipt)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  /**
+   * Matched vendor bill (three-way-match anchor).
+   */
+  invoice?: (string | null) | Invoice;
+  /**
+   * Vendor quote: the requisition it answers (one requisition may have many quotes).
+   */
+  requisition?: (string | null) | Order;
+  rfqIssuedDate?: string | null;
+  quoteReceivedDate?: string | null;
+  shippingAmount?: number | null;
+  discountAmount?: number | null;
+  /**
+   * e.g. "Net 30", "2/10 Net 30", "50% deposit, balance on delivery".
+   */
+  paymentTerms?: string | null;
+  /**
+   * INCOTERMS 2020 code (e.g. EXW / FCA / DAP / DDP) per ICC publication 723E.
+   */
+  incoterms?: ('EXW' | 'FCA' | 'CPT' | 'CIP' | 'DAP' | 'DPU' | 'DDP' | 'FAS' | 'FOB' | 'CFR' | 'CIF') | null;
+  /**
+   * Vendor quote: set true when this is the winning quote.
+   */
+  isAwarded?: boolean | null;
+  awardedDate?: string | null;
+  awardedBy?: (string | null) | User;
+  /**
+   * OECD BEPS Action 13 + SOX §404 — reason for selection (lowest price / best fit / certified vendor / etc.).
+   */
+  awardRationale?: string | null;
+  qualityAssessment?: ('excellent' | 'good' | 'acceptable' | 'marginal' | 'unacceptable') | null;
+  /**
+   * The purchase order created from this awarded quote or approved requisition.
+   */
+  createdPurchaseOrder?: (string | null) | Order;
+  requisitioner?: (string | null) | User;
+  department?: string | null;
+  costCenter?: (string | null) | CostCenter;
+  /**
+   * Reason for the spend (drives approver decision + audit-trail evidence).
+   */
+  businessJustification?: string | null;
+  priority?: ('critical' | 'high' | 'normal' | 'low') | null;
+  /**
+   * When true, must collect ≥ 3 vendor quotes before PO (typical for spend > €10k).
+   */
+  requiresQuotes?: boolean | null;
+  minimumQuotesRequired?: number | null;
+  approvalChain?:
+    | {
+        step: number;
+        approver: string | User;
+        /**
+         * e.g. Department Head, CFO, CEO.
+         */
+        role?: string | null;
+        decision?: ('pending' | 'approved' | 'rejected' | 'returned') | null;
+        decidedAt?: string | null;
+        comment?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Requisition: the vendor quote that led to the award.
+   */
+  awardedQuote?: (string | null) | Order;
+  notes?: string | null;
+  /**
+   * Aggregate fulfilled quantity across all shipments. Maintained by hook.
+   */
+  fulfilledQuantity?: number | null;
+  /**
+   * Aggregate invoiced amount across all invoices. Maintained by hook.
+   */
+  invoicedAmount?: number | null;
+  cancellationDate?: string | null;
+  cancellationReason?: string | null;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "transactions".
+ */
+export interface Transaction {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  items?:
+    | {
+        product?: (string | null) | Product;
+        variant?: (string | null) | Variant;
+        quantity: number;
+        id?: string | null;
+      }[]
+    | null;
+  paymentMethod?: 'stripe' | null;
+  stripe?: {
+    customerID?: string | null;
+    paymentIntentID?: string | null;
+  };
+  billingAddress?: {
+    title?: string | null;
+    firstName?: string | null;
+    lastName?: string | null;
+    company?: string | null;
+    addressLine1?: string | null;
+    addressLine2?: string | null;
+    city?: string | null;
+    state?: string | null;
+    postalCode?: string | null;
+    country?: string | null;
+    phone?: string | null;
+  };
+  status:
+    | 'pending'
+    | 'processing'
+    | 'succeeded'
+    | 'failed'
+    | 'cancelled'
+    | 'expired'
+    | 'refunded'
+    | 'recorded'
+    | 'authorised'
+    | 'sent'
+    | 'received'
+    | 'settled'
+    | 'reversed';
+  customer?: (string | null) | User;
+  customerEmail?: string | null;
+  order?: (string | null) | Order;
+  cart?: (string | null) | Cart;
+  amount?: number | null;
+  currency?: 'EUR' | null;
+  /**
+   * Transaction reference number
+   */
+  transactionNumber?: string | null;
+  /**
+   * Set on a register payment; it selects the AR-vs-AP GL posting. Empty on a checkout transaction, which posts nothing here. Defaults to Received when an invoice is given.
+   */
+  paymentKind?: ('received' | 'sent') | null;
+  /**
+   * The invoice this payment settles (register payments).
+   */
+  invoice?: (string | null) | Invoice;
+  parties?: {
+    /**
+     * Payment sender (payer)
+     */
+    sender?: (string | null) | Address;
+    /**
+     * Payment receiver (payee)
+     */
+    receiver?: (string | null) | Address;
+  };
+  amounts?: {
+    /**
+     * Payment amount applied to the invoice — what the invoice-paid rollup sums
+     */
+    amount?: number | null;
+    /**
+     * Invoice amount reference
+     */
+    invoiceAmount?: number | null;
+    /**
+     * Currency code
+     */
+    currencyCode?: string | null;
+    /**
+     * Exchange rate
+     */
+    exchangeRate?: number | null;
+  };
+  dates?: {
+    /**
+     * When payment was sent
+     */
+    sentAt?: string | null;
+    /**
+     * When payment was received
+     */
+    receivedAt?: string | null;
+    /**
+     * When payment was authorized
+     */
+    authorizedAt?: string | null;
+  };
+  authorization?: {
+    /**
+     * User who authorized payment
+     */
+    authorizedBy?: (string | null) | User;
+  };
+  payment?: {
+    /**
+     * Payment method (register payments: bank transfer, cash, cheque …)
+     */
+    paymentMethod?: string | null;
+    /**
+     * Payment notes
+     */
+    note?: string | null;
+  };
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  handle?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "carts".
+ */
+export interface Cart {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  items?:
+    | {
+        product?: (string | null) | Product;
+        variant?: (string | null) | Variant;
+        quantity: number;
+        id?: string | null;
+      }[]
+    | null;
+  secret?: string | null;
+  customer?: (string | null) | User;
+  purchasedAt?: string | null;
+  status?: ('active' | 'purchased' | 'abandoned') | null;
+  subtotal?: number | null;
+  currency?: 'EUR' | null;
+  handle?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12543,104 +12619,6 @@ export interface CurrencyRate {
   askRate?: number | null;
   isActive?: boolean | null;
   usedInTransactions?: number | null;
-  notes?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IAS 33 — basic + diluted EPS per period.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "earnings-per-share".
- */
-export interface EarningsPerShare {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Sequential reference (e.g. EPS-2026-Q1).
-   */
-  reference: string;
-  period: string | FiscalPeriod;
-  periodEnd: string;
-  /**
-   * IAS 33 §12 — net profit/loss attributable to ordinary equity holders (cents).
-   */
-  netProfitAttributableToOrdinary: number;
-  /**
-   * IAS 33 §14 — deducted from net profit when computing basic-EPS numerator.
-   */
-  preferredDividends?: number | null;
-  /**
-   * netProfit − preferredDividends (cents).
-   */
-  basicEpsNumerator?: number | null;
-  /**
-   * IAS 33 §19 — time-weighted shares outstanding during the period.
-   */
-  weightedAverageOrdinaryShares: number;
-  /**
-   * basicEpsNumerator / weightedAverageOrdinaryShares (per share, in currency units).
-   */
-  basicEps?: number | null;
-  /**
-   * IAS 33 §31 — weighted-average dilutive potential ordinary shares (options + convertibles + IFRS 2 grants).
-   */
-  dilutivePotentialShares?: number | null;
-  /**
-   * IAS 33 §41 — anti-dilutive shares EXCLUDED from diluted calculation (out-of-money options, etc.).
-   */
-  antiDilutiveShares?: number | null;
-  /**
-   * basicEpsNumerator / (weightedAverageOrdinaryShares + dilutivePotentialShares).
-   */
-  dilutedEps?: number | null;
-  /**
-   * IAS 33 §66 — separate EPS for continuing vs discontinued operations.
-   */
-  continuingVsDiscontinued?: {
-    continuingEpsBasic?: number | null;
-    continuingEpsDiluted?: number | null;
-    discontinuedEpsBasic?: number | null;
-    discontinuedEpsDiluted?: number | null;
-  };
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Issuances / buy-backs / splits / bonus issues during the period — drive the weighted-average computation.
-   */
-  shareEvents?:
-    | {
-        eventDate: string;
-        eventKind: 'issuance' | 'buyback' | 'split' | 'reverse_split' | 'bonus' | 'conversion';
-        /**
-         * Change in shares outstanding (positive or negative).
-         */
-        sharesDelta: number;
-        /**
-         * For splits: e.g. "2-for-1" or "1-for-3" (reverse).
-         */
-        splitRatio?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  status?: ('draft' | 'computed' | 'published' | 'restated') | null;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
   createdBy?: {
@@ -20155,7 +20133,6 @@ export interface PayloadQueryPreset {
     | 'consolidations'
     | 'csrd-disclosures'
     | 'currency-rates'
-    | 'earnings-per-share'
     | 'entity-legal-structures'
     | 'evidence-attestations'
     | 'financial-statements'
@@ -20772,6 +20749,7 @@ export interface PagesSelect<T extends boolean = true> {
               'compliance-deadline'?: T | ComplianceDeadlineBlockSelect<T>;
               'processing-activity'?: T | ProcessingActivityBlockSelect<T>;
               'internal-audit-function'?: T | InternalAuditFunctionBlockSelect<T>;
+              'earnings-per-share'?: T | EarningsPerShareBlockSelect<T>;
             };
         links?:
           | T
@@ -21060,6 +21038,44 @@ export interface InternalAuditFunctionBlockSelect<T extends boolean = true> {
   professionalStandards?: T;
   resourceAdequacy?: T;
   independenceAndObjectivity?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "EarningsPerShareBlock_select".
+ */
+export interface EarningsPerShareBlockSelect<T extends boolean = true> {
+  period?: T;
+  periodEnd?: T;
+  currency?: T;
+  status?: T;
+  netProfitAttributableToOrdinary?: T;
+  preferredDividends?: T;
+  basicEpsNumerator?: T;
+  weightedAverageOrdinaryShares?: T;
+  dilutivePotentialShares?: T;
+  antiDilutiveShares?: T;
+  basicEps?: T;
+  dilutedEps?: T;
+  continuingVsDiscontinued?:
+    | T
+    | {
+        continuingEpsBasic?: T;
+        continuingEpsDiluted?: T;
+        discontinuedEpsBasic?: T;
+        discontinuedEpsDiluted?: T;
+      };
+  shareEvents?:
+    | T
+    | {
+        eventDate?: T;
+        eventKind?: T;
+        sharesDelta?: T;
+        splitRatio?: T;
+        id?: T;
+      };
+  notes?: T;
   id?: T;
   blockName?: T;
 }
@@ -23163,52 +23179,6 @@ export interface CurrencyRatesSelect<T extends boolean = true> {
   askRate?: T;
   isActive?: T;
   usedInTransactions?: T;
-  notes?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "earnings-per-share_select".
- */
-export interface EarningsPerShareSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  period?: T;
-  periodEnd?: T;
-  netProfitAttributableToOrdinary?: T;
-  preferredDividends?: T;
-  basicEpsNumerator?: T;
-  weightedAverageOrdinaryShares?: T;
-  basicEps?: T;
-  dilutivePotentialShares?: T;
-  antiDilutiveShares?: T;
-  dilutedEps?: T;
-  continuingVsDiscontinued?:
-    | T
-    | {
-        continuingEpsBasic?: T;
-        continuingEpsDiluted?: T;
-        discontinuedEpsBasic?: T;
-        discontinuedEpsDiluted?: T;
-      };
-  currency?: T;
-  shareEvents?:
-    | T
-    | {
-        eventDate?: T;
-        eventKind?: T;
-        sharesDelta?: T;
-        splitRatio?: T;
-        id?: T;
-      };
-  status?: T;
-  approvedBy?: T;
-  approvedAt?: T;
   notes?: T;
   handle?: T;
   createdBy?: T;
@@ -29055,7 +29025,6 @@ export interface CollectionQueryWidget {
       | 'consolidations'
       | 'csrd-disclosures'
       | 'currency-rates'
-      | 'earnings-per-share'
       | 'entity-legal-structures'
       | 'evidence-attestations'
       | 'financial-statements'
@@ -29264,7 +29233,6 @@ export interface ActivityWidget {
           | 'consolidations'
           | 'csrd-disclosures'
           | 'currency-rates'
-          | 'earnings-per-share'
           | 'entity-legal-structures'
           | 'evidence-attestations'
           | 'financial-statements'
@@ -29511,7 +29479,6 @@ export interface TaskCreateCollectionExport {
       | 'consolidations'
       | 'csrd-disclosures'
       | 'currency-rates'
-      | 'earnings-per-share'
       | 'entity-legal-structures'
       | 'evidence-attestations'
       | 'financial-statements'
