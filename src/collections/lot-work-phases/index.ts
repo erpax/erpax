@@ -167,7 +167,6 @@ const LotWorkPhases: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('lot-work-phases', { beforeChange: [warnLotWorkPhaseFunnel] }),
-  timestamps: true,
 }
 
 export default LotWorkPhases

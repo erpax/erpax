@@ -240,7 +240,6 @@ const MaintenanceWorkOrders: CollectionConfig = {
         const s = (d as { status?: string }).status
         return s === 'rejected' || s === 'duplicate' || s === 'closed'
       })] }),
-  timestamps: true,
 }
 
 export default MaintenanceWorkOrders

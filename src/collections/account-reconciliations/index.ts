@@ -305,7 +305,6 @@ const AccountReconciliations: CollectionConfig = {
     ],
     afterChange: [auditTrailAfterChange('account-reconciliations')],
   },
-  timestamps: true,
 };
 
 export default AccountReconciliations;

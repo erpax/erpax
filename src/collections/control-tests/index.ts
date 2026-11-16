@@ -18,7 +18,6 @@ export const ControlTests: CollectionConfig = {
   admin: { useAsTitle: 'title', defaultColumns: ['tenant', 'control', 'testStatus', 'result', 'isActive'], group: 'Compliance Foundation' },
   access: { read: authenticated, create: authenticated, update: authenticated, delete: adminOnly },
   hooks: { afterChange: [auditTrailAfterChange('controlTests')] },
-  timestamps: true,
   fields: [
     { name: 'title', type: 'text', required: true, index: true },
     { name: 'testDesign', type: 'textarea', required: true },

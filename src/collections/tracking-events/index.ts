@@ -90,7 +90,6 @@ const TrackingEvents: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('tracking-events'),
-  timestamps: true,
 }
 
 export default TrackingEvents

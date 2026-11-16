@@ -492,7 +492,6 @@ export const Workorders: CollectionConfig = {
     beforeChange: [assertTotalsBalance, inheritShiftEfficiency, inheritPhaseSort],
     afterChange: [forwardProducedToNextPhase, shiftOrderWage.afterChange],
   }),
-  timestamps: true,
 }
 
 // The shift rollup's delete arm is registered separately so it never displaces the

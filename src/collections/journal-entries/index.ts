@@ -161,7 +161,6 @@ const JournalEntries: CollectionConfig = {
     // The ledger posting restates the entry, so the entry writes it — see ./posting.
     afterChange: [auditTrailAfterChange('journal-entries'), derivePosting as CollectionAfterChangeHook],
   },
-  timestamps: true,
 }
 
 export default JournalEntries

@@ -71,7 +71,6 @@ export const InvoiceLines: CollectionConfig = {
     ],
     afterDelete: [invoiceLineTotals.afterDelete, itemInventory.afterDelete],
   },
-  timestamps: true,
   fields: [
     {
       name: 'invoice',

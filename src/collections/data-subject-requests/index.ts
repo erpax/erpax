@@ -75,7 +75,6 @@ const DataSubjectRequests: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('data-subject-requests', { beforeChange: [autoSetTimestamp('completedAt', (d) => (d as { status?: string }).status === 'completed')] }),
-  timestamps: true,
 }
 
 export default DataSubjectRequests

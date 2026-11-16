@@ -52,7 +52,6 @@ const AuditSubmissions: CollectionConfig = {
   hooks: {
     afterChange: [auditTrailAfterChange('audit-submissions')],
   },
-  timestamps: true,
 }
 
 export default AuditSubmissions

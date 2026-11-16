@@ -41,7 +41,6 @@ export const TaxCodes: CollectionConfig = {
     ],
     afterChange: [auditTrailAfterChange('tax-codes')],
   },
-  timestamps: true,
   fields: [
     // Identity — `code` and `label` kept at top level so `useAsTitle` and
     // `defaultColumns` can resolve them (Payload's useAsTitle does not

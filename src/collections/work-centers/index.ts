@@ -85,7 +85,6 @@ const WorkCenters: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('work-centers'),
-  timestamps: true,
 }
 
 export default WorkCenters

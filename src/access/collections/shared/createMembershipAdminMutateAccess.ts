@@ -3,7 +3,7 @@ import type { Iso27002ControlId } from '@/utilities/iso/27002'
 
 import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 import type { Tenant } from '@/utilities/types'
-import { extractID } from '@/utilities/extract/id'
+import { extractID } from 'payload/shared'
 import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
 
 /**

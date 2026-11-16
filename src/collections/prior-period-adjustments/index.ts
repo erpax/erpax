@@ -84,7 +84,6 @@ const PriorPeriodAdjustments: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('prior-period-adjustments'),
-  timestamps: true,
 }
 
 export default PriorPeriodAdjustments

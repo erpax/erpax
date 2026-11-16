@@ -141,7 +141,6 @@ const GLPostings: CollectionConfig = {
     ],
     afterChange: [auditTrailAfterChange('gl-postings'), emitOnStatusTransition('posted', 'gl:posted', 'gl_posting')],
   },
-  timestamps: true,
 }
 
 export default GLPostings

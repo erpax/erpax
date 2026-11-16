@@ -13,7 +13,6 @@ export const ComplianceRequirements: CollectionConfig = {
   slug: 'compliance-requirements',
   admin: { useAsTitle: 'title', defaultColumns: ['code', 'framework', 'severity', 'isActive'], group: 'Compliance Foundation', description: 'Read-only reference data' },
   access: { read: authenticated, create: superAdminOnly, update: superAdminOnly, delete: superAdminOnly },
-  timestamps: true,
   fields: [
     { name: 'code', type: 'text', required: true, unique: true, index: true },
     { name: 'title', type: 'text', required: true },

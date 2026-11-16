@@ -172,7 +172,6 @@ const LegalEntities: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('legal-entities'),
-  timestamps: true,
 }
 
 export default LegalEntities

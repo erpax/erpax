@@ -93,7 +93,6 @@ const Receipts: CollectionConfig = {
   hooks: {
     afterChange: [auditTrailAfterChange('receipts')],
   },
-  timestamps: true,
 }
 
 export default Receipts

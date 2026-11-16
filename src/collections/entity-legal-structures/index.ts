@@ -23,7 +23,6 @@ export const EntityLegalStructures: CollectionConfig = {
     update: superAdminOnly,
     delete: superAdminOnly,
   },
-  timestamps: true,
   fields: [
     { name: 'jurisdiction', type: 'relationship', relationTo: 'tax-jurisdictions', required: true, index: true, admin: { description: 'Jurisdiction' } },
     { name: 'entityType', type: 'relationship', relationTo: 'entity-types', required: true, admin: { description: 'Entity type' } },

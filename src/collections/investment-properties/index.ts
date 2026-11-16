@@ -98,7 +98,6 @@ const InvestmentProperties: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('investment-properties'),
-  timestamps: true,
 }
 
 export default InvestmentProperties

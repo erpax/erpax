@@ -264,7 +264,8 @@ const AuditEvents: CollectionConfig = {
   hooks: {
     // Append-only: no afterChange (avoids recursion since this IS the audit log).
   },
-  timestamps: true,
+  // Payload 4 versions every collection by default; append-only: each row is already a hash-chained record.
+  versions: false,
 }
 
 export default AuditEvents

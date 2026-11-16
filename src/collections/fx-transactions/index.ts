@@ -91,7 +91,6 @@ const FxTransactions: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('fx-transactions'),
-  timestamps: true,
 }
 
 export default FxTransactions

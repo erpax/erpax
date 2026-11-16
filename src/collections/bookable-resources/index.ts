@@ -163,7 +163,6 @@ const BookableResources: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('bookable-resources'),
-  timestamps: true,
 }
 
 export default BookableResources

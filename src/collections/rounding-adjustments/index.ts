@@ -103,7 +103,6 @@ const RoundingAdjustments: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('rounding-adjustments'),
-  timestamps: true,
 }
 
 export default RoundingAdjustments

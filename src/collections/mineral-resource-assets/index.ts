@@ -84,7 +84,6 @@ const MineralResourceAssets: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('mineral-resource-assets'),
-  timestamps: true,
 }
 
 export default MineralResourceAssets

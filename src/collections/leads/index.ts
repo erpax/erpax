@@ -105,7 +105,6 @@ const Leads: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('leads', { afterChange: [emitLeadQualified] }),
-  timestamps: true,
 }
 
 export default Leads

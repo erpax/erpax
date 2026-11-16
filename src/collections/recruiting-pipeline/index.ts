@@ -144,7 +144,6 @@ const RecruitingPipeline: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('recruiting-pipeline'),
-  timestamps: true,
 }
 
 export default RecruitingPipeline

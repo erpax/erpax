@@ -96,7 +96,6 @@ const Connections: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('connections'),
-  timestamps: true,
 }
 
 export default Connections

@@ -132,7 +132,6 @@ const CarbonEmissions: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('carbon-emissions'),
-  timestamps: true,
 }
 
 export default CarbonEmissions

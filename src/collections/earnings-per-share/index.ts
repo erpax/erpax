@@ -106,7 +106,6 @@ const EarningsPerShare: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('earnings-per-share'),
-  timestamps: true,
 }
 
 export default EarningsPerShare

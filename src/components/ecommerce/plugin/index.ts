@@ -34,7 +34,6 @@ import { createTenantStripePaymentMethod } from '@/components/ecommerce/stripe/p
 import { ProductsCollection } from '@/components/media/products'
 import { adminOnlyFieldAccess } from '@/access/fields/shared/adminOnlyFieldAccess'
 import { adminOrPublishedStatus } from '@/access/collections/shared/adminOrPublishedStatus'
-import { customerOnlyFieldAccess } from '@/access/fields/shared/customerOnlyFieldAccess'
 import { isCustomer } from '@/access/fields/shared/isCustomer'
 import { isAdmin } from '@/access/collections/shared/isAdmin'
 import { isDocumentOwner } from '@/access/collections/shared/isDocumentOwner'
@@ -72,7 +71,6 @@ export function createEcommercePlugin(): Plugin {
     access: {
       adminOnlyFieldAccess,
       adminOrPublishedStatus,
-      customerOnlyFieldAccess,
       isCustomer,
       isAdmin,
       isDocumentOwner,
@@ -88,6 +86,7 @@ export function createEcommercePlugin(): Plugin {
       defaultCurrency: 'EUR',
       supportedCurrencies: [EUR],
     },
+    // Required by the plugin type, though it equals the default.
     customers: {
       slug: 'users',
     },
@@ -207,10 +206,6 @@ export function createEcommercePlugin(): Plugin {
         },
       }),
     },
-    carts: {
-      allowGuestCarts: true,
-    },
-    inventory: true,
     orders: {
       // The sales-order register is folded into the plugin's order here — see @/components/ecommerce/orders.
       ordersCollectionOverride: withRoleAbility('orders', ordersOverride),

@@ -452,7 +452,6 @@ const Contracts: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('contracts', { beforeChange: [enforceSegregationOfDuties(), autoSetTimestamp('activatedAt', (d) => (d as { status?: string }).status === 'active'), autoSetTimestamp('terminatedAt', (d) => (d as { status?: string }).status === 'terminated')] }),
-  timestamps: true,
 }
 
 export default Contracts

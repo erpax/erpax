@@ -81,7 +81,6 @@ const Shipments: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('shipments', { afterChange: [deriveMovements('shipments')], beforeChange: [autoSetTimestamp('shippedAt', (d) => (d as { status?: string }).status === 'shipped'), autoSetTimestamp('deliveredAt', (d) => (d as { status?: string }).status === 'delivered')] }),
-  timestamps: true,
 }
 
 export default Shipments

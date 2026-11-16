@@ -94,7 +94,6 @@ const GoodsReceipts: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('goods-receipts', { beforeChange: [enforceSegregationOfDuties('inspectedBy', 'createdBy'), autoSetTimestamp('inspectedAt', (d) => Boolean((d as { inspectedBy?: unknown }).inspectedBy))], afterChange: [emitGrPosted, deriveMovements('goods-receipts')] }),
-  timestamps: true,
 }
 
 export default GoodsReceipts

@@ -99,7 +99,6 @@ const BiologicalAssets: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('biological-assets'),
-  timestamps: true,
 }
 
 export default BiologicalAssets

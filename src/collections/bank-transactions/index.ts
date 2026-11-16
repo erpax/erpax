@@ -249,7 +249,6 @@ const BankTransactions: CollectionConfig = {
         const s = (d as { matchStatus?: string }).matchStatus
         return s === 'auto_matched' || s === 'manual_matched'
       })] }),
-  timestamps: true,
 }
 
 export default BankTransactions

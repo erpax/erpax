@@ -161,7 +161,6 @@ export const Cases: CollectionConfig = {
     ...auditFields({ readOnly: true }),
   ],
   hooks: standardCollectionHooks('cases', { beforeChange: [requireJudgmentToSeal] }),
-  timestamps: true,
 }
 
 export default Cases

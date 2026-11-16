@@ -95,7 +95,6 @@ const PeriodEndAdjustments: CollectionConfig = {
       auditTrailAfterChange('period-end-adjustments'),
     ],
   },
-  timestamps: true,
 };
 
 export default PeriodEndAdjustments;

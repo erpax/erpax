@@ -16,7 +16,7 @@ describe('sectors — the root societal coordinate collection', () => {
     expect(Sectors.slug).toBe('sectors')
     expect(Sectors.admin?.group).toBe('Society')
     expect(Sectors.admin?.useAsTitle).toBe('name')
-    expect(Sectors.timestamps).toBe(true)
+    expect(Sectors.timestamps).not.toBe(false) // Payload's default: on unless turned off
   })
 
   it('is self-referential — `parent` relates back to sectors (the fractal hierarchy)', () => {

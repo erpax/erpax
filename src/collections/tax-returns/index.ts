@@ -86,7 +86,6 @@ const TaxReturns: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('tax-returns', { beforeChange: [enforceSegregationOfDuties('filedBy', 'createdBy'), autoSetTimestamp('filedAt', (d) => (d as { status?: string }).status === 'filed'), autoSetTimestamp('paidAt', (d) => (d as { status?: string }).status === 'accepted')] }),
-  timestamps: true,
 }
 
 export default TaxReturns

@@ -9,7 +9,7 @@ describe('connections — the one directed social/commercial/civic edge', () => 
   it('is a single `connections` collection (all platforms merge onto one graph)', () => {
     expect(Connections.slug).toBe('connections')
     expect(Connections.admin?.useAsTitle).toBe('context')
-    expect(Connections.timestamps).toBe(true)
+    expect(Connections.timestamps).not.toBe(false) // Payload's default: on unless turned off
   })
 
   const fieldByName = (name: string) =>

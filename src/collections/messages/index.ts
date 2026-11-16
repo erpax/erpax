@@ -86,7 +86,8 @@ const Messages: CollectionConfig = {
     ...auditFields({ readOnly: true }),
   ],
   hooks: standardCollectionHooks('messages'),
-  timestamps: true,
+  // Payload 4 versions every collection by default; mail is sent, not edited.
+  versions: false,
 }
 
 export default Messages

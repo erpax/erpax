@@ -118,7 +118,6 @@ const CsrdDisclosures: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('csrd-disclosures'),
-  timestamps: true,
 }
 
 export default CsrdDisclosures

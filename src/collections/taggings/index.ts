@@ -90,7 +90,6 @@ const Taggings: CollectionConfig = {
     ...standardCollectionHooks('taggings', { afterChange: [taggingCounterAfterChange] }),
     afterDelete: [taggingCounterAfterDelete],
   },
-  timestamps: true,
 }
 
 export default Taggings

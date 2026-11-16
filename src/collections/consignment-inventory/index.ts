@@ -96,7 +96,6 @@ const ConsignmentInventory: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('consignment-inventory'),
-  timestamps: true,
 }
 
 export default ConsignmentInventory

@@ -93,7 +93,6 @@ const HeldForSaleClassifications: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('held-for-sale-classifications'),
-  timestamps: true,
 }
 
 export default HeldForSaleClassifications

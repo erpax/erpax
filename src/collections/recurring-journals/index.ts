@@ -138,7 +138,6 @@ const RecurringJournals: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('recurring-journals'),
-  timestamps: true,
 }
 
 export default RecurringJournals

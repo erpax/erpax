@@ -9,7 +9,6 @@ import {
 } from '@payloadcms/richtext-lexical'
 import { localeRecord } from '@/i18n'
 
-import { mediaBeforeChange } from '@/components/media/hooks'
 
 /**
  * Media — uploaded files (images, video, documents) under R2 storage.
@@ -56,9 +55,6 @@ export const Media: CollectionConfig = {
     // R2 via `r2Storage` in payload.config. No image variants: the Worker cannot run Sharp, so the original file is served.
     focalPoint: false,
     skipSafeFetch: true,
-  },
-  hooks: {
-    beforeChange: mediaBeforeChange,
   },
 }
 

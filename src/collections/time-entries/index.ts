@@ -194,7 +194,6 @@ const TimeEntries: CollectionConfig = {
           (d as { status?: string }).status === 'approved' ||
           (d as { status?: string }).status === 'rejected',
       )] }),
-  timestamps: true,
 }
 
 export default TimeEntries

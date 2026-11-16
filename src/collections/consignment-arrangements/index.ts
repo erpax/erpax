@@ -126,7 +126,6 @@ const ConsignmentArrangements: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('consignment-arrangements'),
-  timestamps: true,
 }
 
 export default ConsignmentArrangements
