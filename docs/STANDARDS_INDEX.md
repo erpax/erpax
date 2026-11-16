@@ -345,15 +345,6 @@ src/collections/government-grants/index.ts:11: * @standard ISO-8601-1:2019 date-
 src/collections/government-grants/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/collections/groups/index.ts:12: * @standard RFC-7643 §4.2 SCIM group resource — displayName, members
 src/collections/groups/index.ts:13: * @standard NIST INCITS-359-2012 §5.1 users and groups
-src/collections/held-for-sale-classifications/index.ts:12: * @standard IFRS IFRS-5 §6-§9 classification-criteria
-src/collections/held-for-sale-classifications/index.ts:13: * @standard IFRS IFRS-5 §15 measurement-lower-of-cv-and-fv-less-cts
-src/collections/held-for-sale-classifications/index.ts:14: * @standard IFRS IFRS-5 §25 depreciation-suspended
-src/collections/held-for-sale-classifications/index.ts:15: * @standard IFRS IFRS-5 §31-§40 discontinued-operations-presentation
-src/collections/held-for-sale-classifications/index.ts:16: * @standard IFRS IFRS-13 fair-value-input-hierarchy
-src/collections/held-for-sale-classifications/index.ts:17: * @standard US-GAAP ASC-205-20 discontinued-operations
-src/collections/held-for-sale-classifications/index.ts:18: * @standard US-GAAP ASC-360-10 long-lived-assets-held-for-sale
-src/collections/held-for-sale-classifications/index.ts:19: * @standard ISO-4217:2015 currency-codes
-src/collections/held-for-sale-classifications/index.ts:20: * @standard ISO-8601-1:2019 date-time classification-date
 src/collections/intercompany-transactions/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/collections/intercompany-transactions/index.ts:13: * @standard ISO-8601-1:2019 date-time transaction-date
 src/collections/internal-controls/index.ts:4: * @standard COSO-2013 internal-control-integrated-framework
@@ -1142,6 +1133,15 @@ src/utilities/governed/index.ts:1055: * @standard IFRS IFRS-14 §27 disclosure-r
 src/utilities/governed/index.ts:1056: * @standard ISO-4217:2015 currency-codes
 src/utilities/governed/index.ts:1057: * @standard ISO-8601-1:2019 date-time
 src/utilities/governed/index.ts:105: * @standard IFRS-Taxonomy
+src/utilities/governed/index.ts:1125: * @standard IFRS IFRS-5 §6-§9 classification-criteria
+src/utilities/governed/index.ts:1126: * @standard IFRS IFRS-5 §15 measurement-lower-of-cv-and-fv-less-cts
+src/utilities/governed/index.ts:1127: * @standard IFRS IFRS-5 §25 depreciation-suspended
+src/utilities/governed/index.ts:1128: * @standard IFRS IFRS-5 §31-§40 discontinued-operations-presentation
+src/utilities/governed/index.ts:1129: * @standard IFRS IFRS-13 fair-value-input-hierarchy
+src/utilities/governed/index.ts:1130: * @standard US-GAAP ASC-205-20 discontinued-operations
+src/utilities/governed/index.ts:1131: * @standard US-GAAP ASC-360-10 long-lived-assets-held-for-sale
+src/utilities/governed/index.ts:1132: * @standard ISO-4217:2015 currency-codes
+src/utilities/governed/index.ts:1133: * @standard ISO-8601-1:2019 date-time classification-date
 src/utilities/governed/index.ts:194: * @standard ISO-37301:2021 compliance-management-systems
 src/utilities/governed/index.ts:195: * @standard ISO-8601-1:2019 due-date
 src/utilities/governed/index.ts:316: * @standard ISO-8601-1:2019 date-time review-due-at
@@ -2156,7 +2156,6 @@ src/collections/gl-postings/index.ts:33: * @compliance SOX §404 internal-contro
 src/collections/goods-receipts/index.ts:28: * @compliance SOX §404 internal-controls three-way-match
 src/collections/government-grants/index.ts:20: * @compliance EU CSRD ESRS 2 sbm-3 material-impacts (EU funds traceability)
 src/collections/government-grants/index.ts:21: * @compliance OECD BEPS Action 13 country-by-country (when grants ≥ threshold)
-src/collections/held-for-sale-classifications/index.ts:22: * @compliance SOX §404 internal-controls
 src/collections/intercompany-transactions/index.ts:19: * @compliance SOX §404 internal-controls intercompany-control TOM-IC-01
 src/collections/intercompany-transactions/index.ts:20: * @compliance OECD BEPS Action 13 transfer-pricing-documentation
 src/collections/internal-controls/index.ts:5: * @compliance SOX §404 internal-controls
@@ -2390,6 +2389,7 @@ src/utilities/factory/recompute-parent-aggregates.ts:28: * @compliance SOX §404
 src/utilities/get/user/tenant/i/ds/index.ts:8: * @compliance SOX §404 internal-controls
 src/utilities/gl/account/resolver/index.ts:28: * @compliance SOX §404 internal-controls per-tenant-coa
 src/utilities/governed/index.ts:1059: * @compliance SOX §404 internal-controls
+src/utilities/governed/index.ts:1135: * @compliance SOX §404 internal-controls
 src/utilities/governed/index.ts:317: * @compliance GDPR Art.30(1) records-controller
 src/utilities/governed/index.ts:318: * @compliance GDPR Art.30(2) records-processor
 src/utilities/governed/index.ts:319: * @compliance GDPR Art.5(1)(e) storage-limitation
@@ -3089,7 +3089,6 @@ src/collections/gl-postings/index.ts:34: * @security ISO-27001 A.5.23 cloud-serv
 src/collections/goods-receipts/index.ts:29: * @security ISO-27002 §5.3 segregation-of-duties receiver-vs-requester
 src/collections/government-grants/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/groups/index.ts:14: * @security ISO-27001 A.5.15 access-control · A.5.18 access-rights
-src/collections/held-for-sale-classifications/index.ts:23: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/intercompany-transactions/index.ts:21: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/internal-controls/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/internal-policies/index.ts:4: * @security ISO-27001 A.5.1 policies-for-information-security
@@ -3412,7 +3411,6 @@ src/collections/gl-postings/index.ts:32: * @audit ISO-19011:2018 audit-trail
 src/collections/goods-receipts/index.ts:26: * @audit ISO-19011:2018 audit-trail receipt-evidence
 src/collections/goods-receipts/index.ts:27: * @audit IFRS-15 §31 revenue-substantiation shipment-FOB-date
 src/collections/government-grants/index.ts:19: * @audit ISO-19011:2018 audit-trail grant-evidence
-src/collections/held-for-sale-classifications/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-disposal-classification
 src/collections/intercompany-transactions/index.ts:18: * @audit ISO-19011:2018 audit-trail intercompany-evidence
 src/collections/inventory-movements/index.ts:16: * @audit ISO-19011:2018 audit-trail stock-ledger
 src/collections/investment-properties/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-investment-property
@@ -3596,6 +3594,7 @@ src/utilities/factory/recompute-parent-aggregates.ts:27: * @audit ISO-19011:2018
 src/utilities/field/index.ts:7: * @audit Flat namespace to eliminate circular imports and duplicate definitions.
 src/utilities/gl/account/resolver/index.ts:27: * @audit ISO-19011:2018 audit-trail account-resolution
 src/utilities/governed/index.ts:1058: * @audit ISO 19011:2018 §6.4.6 audit-evidence-regulatory-deferral
+src/utilities/governed/index.ts:1134: * @audit ISO 19011:2018 §6.4.6 audit-evidence-disposal-classification
 src/utilities/governed/index.ts:321: * @audit ISO-19011:2018 audit-trail ropa-evidence
 src/utilities/governed/index.ts:438: * @audit ISO-19011:2018 audit-programme
 src/utilities/governed/index.ts:620: * @audit ISO 19011:2018 §6.4.6 audit-evidence-eps-computation

@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest'
 import { Ability, restrictSubjects } from '@/utilities/ability'
 import { abilityForRoles } from '@/utilities/ability/roles'
 import { documentError, governedDocument, mayWrite, pageRead, pageWrite } from '@/fields/group/governedDocument'
-import { EarningsPerShare } from '@/utilities/governed'
+import { EarningsPerShare, HeldForSale } from '@/utilities/governed'
 
 const STD = 'reporting-standard'
 const superAdmin = { id: 's', roles: ['admin'], tenants: [] }
@@ -217,5 +217,22 @@ describe('governed documents on pages — never public, read and written by the 
     expect(documentError(RD, { details: [block('recovering', 125_000)] })).toBe(true)
     expect(documentError(RD, { details: [block('recovered', 125_000)] })).toMatch(/recovered regulatory deferral balance is zero/)
     expect(documentError(RD, { details: [block('recovered', 0)] })).toBe(true)
+  })
+
+  it('a held-for-sale classification computes FVLCTS, impairment and the disposal result, and keeps IFRS 5 §8', () => {
+    const flat = (fields: readonly unknown[]): Array<{ name?: string; hooks?: { beforeChange?: Array<(a: object) => unknown> } }> =>
+      (fields as Array<{ name?: string; fields?: unknown[] }>).flatMap((f) => (f.name ? [f as never] : f.fields ? flat(f.fields) : []))
+    const hookOf = (name: string) => flat(HeldForSale.fields).find((f) => f.name === name)!.hooks!.beforeChange![0]!
+    const row = { carryingAmountAtClassification: 1_000_000, fairValue: 900_000, costsToSell: 50_000 }
+    expect(hookOf('fairValueLessCostsToSell')({ siblingData: row })).toBe(850_000)
+    expect(hookOf('impairmentLoss')({ siblingData: row })).toBe(150_000)
+    expect(hookOf('impairmentLoss')({ siblingData: { ...row, fairValue: 2_000_000 } })).toBe(0)
+    expect(hookOf('gainLossOnDisposal')({ siblingData: row })).toBe(null)
+    expect(hookOf('gainLossOnDisposal')({ siblingData: { ...row, actualSaleProceeds: 880_000 } })).toBe(30_000)
+    const HFS = 'held-for-sale'
+    const block = (extra: object = {}) => ({ blockType: HFS, classificationKind: 'single_asset', ...row, ...extra })
+    expect(documentError(HFS, { effectiveDate: '2026-03-31', details: [block({ expectedSaleDate: '2027-03-31' })] })).toBe(true)
+    expect(documentError(HFS, { effectiveDate: '2026-03-31', details: [block({ expectedSaleDate: '2027-04-01' })] })).toMatch(/within twelve months/)
+    expect(documentError(HFS, { effectiveDate: '2026-03-31', details: [block({ status: 'sold' })] })).toMatch(/names its sale date and proceeds/)
   })
 })

@@ -8,8 +8,8 @@ title: "erpax: Source-available multi-tenant ERP & double-entry accounting on Pa
 abstract: >-
   Source-available multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 +
   R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound. Counted from the
-  repository when this record was generated: 182 collections in Payload's generated configuration,
-  21 database migrations, and 366 theorems in 47 Lean files accepted by the Lean kernel, 270 of them
+  repository when this record was generated: 181 collections in Payload's generated configuration,
+  22 database migrations, and 366 theorems in 47 Lean files accepted by the Lean kernel, 270 of them
   axiom-free, 96 on Lean's standard axioms and 0 resting on sorry (sealed 2026-11-16). A theorem
   proves the decision it states, never the facts it is fed.
 type: software
