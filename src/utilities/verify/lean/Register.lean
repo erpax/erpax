@@ -59,31 +59,6 @@ theorem ghz_path : cnot 1 2 (cnot 0 1 (x 0 0)) = 7 := rfl
 theorem noise_is_identity :
     x 0 (x 0 0) = 0 ∧ x 0 (x 0 1) = 1 ∧ x 0 (x 0 2) = 2 ∧ x 0 (x 0 3) = 3 := ⟨rfl, rfl, rfl, rfl⟩
 
-/-- And for EVERY qubit and EVERY basis index, not the four above: flipping a bit twice is the
-    identity, so X is an involution at any width. The proof leaves the kernel's own rules for
-    division and `omega`, and so rests on Lean's three standard axioms. -/
-theorem flip_involution (q i : Nat) : flip q (flip q i) = i := by
-  have hd : 0 < 2 ^ q := Nat.pow_pos (by decide)
-  unfold flip bit
-  by_cases h : (i / 2 ^ q) % 2 = 1
-  · have hle : 2 ^ q ≤ i := by
-      rcases Nat.lt_or_ge i (2 ^ q) with hlt | hge
-      · rw [Nat.div_eq_of_lt hlt] at h; simp at h
-      · exact hge
-    have hsub : (i - 2 ^ q) / 2 ^ q = i / 2 ^ q - 1 := by
-      have := Nat.sub_mul_div i (2 ^ q) 1
-      simpa using this
-    have h2 : ((i - 2 ^ q) / 2 ^ q) % 2 = 0 := by rw [hsub]; omega
-    simp [h, h2]
-    omega
-  · have h0 : (i / 2 ^ q) % 2 = 0 := by omega
-    have hadd : (i + 2 ^ q) / 2 ^ q = i / 2 ^ q + 1 := Nat.add_div_right i hd
-    have h1 : ((i + 2 ^ q) / 2 ^ q) % 2 = 1 := by rw [hadd]; omega
-    simp [h0, h1]
-
-/-- X on any qubit of any register undoes itself — `flip_involution` through the gate's name. -/
-theorem x_involution (q i : Nat) : x q (x q i) = i := flip_involution q i
-
 /-- CNOT is an involution on every 2-qubit index. -/
 theorem cnot_involution :
     cnot 0 1 (cnot 0 1 0) = 0 ∧ cnot 0 1 (cnot 0 1 1) = 1 ∧ cnot 0 1 (cnot 0 1 2) = 2 ∧

@@ -15,15 +15,15 @@
 | next | ^16.4.1 | `package.json` |
 | node | ^24.22.3 \|\| >=26.13.1 | `package.json` |
 | collections | 187 | `src/payload-types.ts` |
-| migrations | 15 | `src/migrations` |
+| migrations | 16 | `src/migrations` |
 | Lean files | 47 | `src/utilities/verify/lean` |
-| theorems | 368 | `src/utilities/verify/lean/inventory.generated.json` |
+| theorems | 366 | `src/utilities/verify/lean/inventory.generated.json` |
 | axiom-free | 270 | `src/utilities/verify/lean/inventory.generated.json` |
 | license | CC-BY-NC-ND-4.0 | `package.json` |
 
 ## Proofs
 
-Kernel report sealed 2026-11-16: 368 theorems, 270 axiom-free, 98 on Lean's three standard axioms, 0 stubbed, 47 files, sources `409984060439c71d`.
+Kernel report sealed 2026-11-16: 366 theorems, 270 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `f4450a8284eeea5a`.
 
 | file | the file says | Clay | theorems | axiom-free | kernel |
 | --- | --- | --- | ---: | ---: | --- |
@@ -64,7 +64,7 @@ Kernel report sealed 2026-11-16: 368 theorems, 270 axiom-free, 98 on Lean's thre
 | [`Prefix.lean`](src/utilities/verify/lean/Prefix.lean) | Prefix — why finitely many coefficients cannot fix the order of vanishing. | bsd meta | 2 | 2 | accepted |
 | [`Prompt.lean`](src/utilities/verify/lean/Prompt.lean) | Prompt — a prompt is a program: each word a step, the prompt its words run in order. | none | 9 | 9 | accepted |
 | [`Receipt.lean`](src/utilities/verify/lean/Receipt.lean) | Receipt — WHEN a sealed verdict is cheaper than the answer, and when it is not. | none | 8 | 3 | accepted |
-| [`Register.lean`](src/utilities/verify/lean/Register.lean) | Register — an exact-amplitude register, and why the Bell state is a theorem here. | none | 13 | 11 | accepted |
+| [`Register.lean`](src/utilities/verify/lean/Register.lean) | Register — an exact-amplitude register, and why the Bell state is a theorem here. | none | 11 | 11 | accepted |
 | [`Release.lean`](src/utilities/verify/lean/Release.lean) | Release — a green landing is released exactly when four facts hold, and at most once a day. | none | 6 | 6 | accepted |
 | [`Route.lean`](src/utilities/verify/lean/Route.lean) | Route — a gate between uncoupled qubits, routed through SWAPs, computes the same function. | none | 3 | 0 | accepted |
 | [`Search.lean`](src/utilities/verify/lean/Search.lean) | Search — why measuring small instances cannot separate polynomial from exponential cost. | pnp meta | 3 | 3 | accepted |
@@ -516,21 +516,19 @@ Kernel report sealed 2026-11-16: 368 theorems, 270 axiom-free, 98 on Lean's thre
 - [`Receipt.pays_stays_paying`](src/utilities/verify/lean/Receipt.lean#L91) · propext, Quot.sound
 
 </details>
-<details><summary>Register.lean · 13 theorems</summary>
+<details><summary>Register.lean · 11 theorems</summary>
 
 - [`Register.bell_path`](src/utilities/verify/lean/Register.lean#L52) · axiom-free
 - [`Register.ghz_path`](src/utilities/verify/lean/Register.lean#L55) · axiom-free
 - [`Register.noise_is_identity`](src/utilities/verify/lean/Register.lean#L59) · axiom-free
-- [`Register.flip_involution`](src/utilities/verify/lean/Register.lean#L65) · propext, Classical.choice, Quot.sound
-- [`Register.x_involution`](src/utilities/verify/lean/Register.lean#L85) · propext, Classical.choice, Quot.sound
-- [`Register.cnot_involution`](src/utilities/verify/lean/Register.lean#L88) · axiom-free
-- [`Register.bell_amplitudes`](src/utilities/verify/lean/Register.lean#L122) · axiom-free
-- [`Register.bell_normalised`](src/utilities/verify/lean/Register.lean#L125) · axiom-free
-- [`Register.bell_entangled`](src/utilities/verify/lean/Register.lean#L128) · axiom-free
-- [`Register.plus_is_product`](src/utilities/verify/lean/Register.lean#L131) · axiom-free
-- [`Register.interfere`](src/utilities/verify/lean/Register.lean#L134) · axiom-free
-- [`Register.hadamard_doubles_weight`](src/utilities/verify/lean/Register.lean#L137) · axiom-free
-- [`Register.cnot_preserves_weight`](src/utilities/verify/lean/Register.lean#L142) · axiom-free
+- [`Register.cnot_involution`](src/utilities/verify/lean/Register.lean#L63) · axiom-free
+- [`Register.bell_amplitudes`](src/utilities/verify/lean/Register.lean#L97) · axiom-free
+- [`Register.bell_normalised`](src/utilities/verify/lean/Register.lean#L100) · axiom-free
+- [`Register.bell_entangled`](src/utilities/verify/lean/Register.lean#L103) · axiom-free
+- [`Register.plus_is_product`](src/utilities/verify/lean/Register.lean#L106) · axiom-free
+- [`Register.interfere`](src/utilities/verify/lean/Register.lean#L109) · axiom-free
+- [`Register.hadamard_doubles_weight`](src/utilities/verify/lean/Register.lean#L112) · axiom-free
+- [`Register.cnot_preserves_weight`](src/utilities/verify/lean/Register.lean#L117) · axiom-free
 
 </details>
 <details><summary>Release.lean · 6 theorems</summary>
@@ -647,7 +645,7 @@ Kernel report sealed 2026-11-16: 368 theorems, 270 axiom-free, 98 on Lean's thre
 
 settled: **none** (`claySettled`)
 
-Kernel report sealed 2026-11-16: 368 theorems, 270 axiom-free, 98 on Lean's three standard axioms, 0 stubbed, 47 files, sources `409984060439c71d`.
+Kernel report sealed 2026-11-16: 366 theorems, 270 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `f4450a8284eeea5a`.
 
 ## Commands
 

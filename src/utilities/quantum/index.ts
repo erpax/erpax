@@ -13,8 +13,7 @@
  * The gates are H, X, Z, CNOT and CCX (Toffoli). {H, Toffoli} is universal for quantum computation
  * over real amplitudes (Shi 2003; Aharonov 2003), so any circuit with real amplitudes compiles to them.
  *
- * Twin: Register.lean (the same gates on the basis path and on two-qubit amplitudes, by `decide`,
- * and `flip_involution` for every qubit and every index).
+ * Twin: Register.lean (the same gates on the basis path and on two-qubit amplitudes, by `decide`).
  *
  * WHAT THIS IS NOT: a quantum device. It computes on the host's CPU, and its memory and time grow with
  * the support, which is what every classical simulation pays. No speed-up over classical

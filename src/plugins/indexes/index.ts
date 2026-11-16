@@ -49,7 +49,9 @@ export const withIndexes = (collection: CollectionConfig, options: IndexesOption
     if (scoped && field.unique === true && !keep.has(field.name) && !localized) {
       if (!already.has(`${tenantField}+${field.name}`)) compound.push({ fields: [tenantField, field.name], unique: true })
       const { unique: _unique, index: _index, ...rest } = field
-      return rest as Field
+      // `false`, not absent: Payload gives a `slug` field `unique: true` when it has none, which put the
+      // collection-wide index back beside the per-tenant one (two tenants could not share a page slug)
+      return { ...rest, unique: false } as Field
     }
     if (field.name === title && field.unique !== true && field.index !== true && !('virtual' in field && field.virtual)) return { ...field, index: true } as Field
     return field

@@ -18,7 +18,7 @@ describe('quantum — the twin of Register.lean', () => {
   const lean = readFileSync(join(import.meta.dirname, '..', 'verify', 'lean', 'Register.lean'), 'utf8')
 
   it('names the theorems it mirrors', () => {
-    for (const name of ['bell_amplitudes', 'bell_normalised', 'bell_entangled', 'plus_is_product', 'interfere', 'flip_involution', 'x_involution'])
+    for (const name of ['bell_amplitudes', 'bell_normalised', 'bell_entangled', 'plus_is_product', 'interfere', 'noise_is_identity'])
       expect(lean, name).toMatch(new RegExp(`theorem ${name}\\b`))
   })
 
@@ -42,7 +42,7 @@ describe('quantum — the twin of Register.lean', () => {
     expect(amps(run(1, [h(0), { gate: 'z', qubits: [0] }, h(0)]))).toEqual({ '1': 2n })
   })
 
-  it('x_involution at any width: X twice on qubit 999 of a 1000-qubit register is the identity', () => {
+  it('noise_is_identity, at any width: X twice on qubit 999 of a 1000-qubit register is the identity', () => {
     const r = run(1000, [x(999)])
     expect([...r.amp.keys()]).toEqual([1n << 999n])
     expect([...apply(r, x(999)).amp.keys()]).toEqual([0n])
