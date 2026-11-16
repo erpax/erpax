@@ -41,6 +41,15 @@ describe('remembered — a value computed once per request', () => {
     const compute = async () => { computed++; await Promise.resolve(); return computed }
     expect(await Promise.all([remembered(req, 'ability', compute), remembered(req, 'ability', compute)])).toEqual([1, 1])
   })
+  it('holds when the computation calls the Local API with req, which replaces req.context with a copy', async () => {
+    const req = { context: { mcp: true } } as unknown as Parameters<typeof remembered>[0]
+    let computed = 0
+    // what `payload.find({ req })` does first, synchronously: createPayloadRequest sets req.context = { ...req.context }
+    const compute = async () => { computed++; req.context = { ...req.context }; await Promise.resolve(); return computed }
+    expect(await Promise.all([remembered(req, 'tenantApps', compute), remembered(req, 'tenantApps', compute), remembered(req, 'tenantApps', compute)])).toEqual([1, 1, 1])
+    expect(await remembered(req, 'tenantApps', compute)).toBe(1)
+    expect(computed).toBe(1)
+  })
   it('is per request: another request computes its own', async () => {
     let computed = 0
     const compute = async () => ++computed
