@@ -45,6 +45,7 @@ import { validateAddressHook } from '@/hooks/collections/users/validateAddressHo
 import { variantsOverride } from '@/components/ecommerce/catalogue'
 import { ordersOverride } from '@/components/ecommerce/orders'
 import { transactionsOverride } from '@/components/ecommerce/transactions'
+import { iso4217Select } from '@/fields/select/currencyField'
 
 /** Match Payload ecommerce template nav: variant helpers live under Ecommerce, not ungrouped (`group: false`). */
 /**
@@ -154,7 +155,7 @@ export function createEcommercePlugin(): Plugin {
           },
           {
             name: 'currencyCode',
-            type: 'text',
+            ...iso4217Select,
             defaultValue: DEFAULT_CURRENCY,
             admin: { description: 'ISO 4217 currency code — defaults to the canonical DEFAULT_CURRENCY (derived from DEFAULT_COUNTRY).' },
           },

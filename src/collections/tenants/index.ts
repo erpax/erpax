@@ -11,6 +11,8 @@ import { normalizeTenantDomain, normalizeTenantSlug } from '@/utilities/tenants/
 import { APPS } from '@/packages'
 import { PROVIDERS } from '@/packages/admin/providers'
 import { tenantProviders } from '@/packages/admin/providers/settings'
+import { iso4217Select } from '@/fields/select/currencyField'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const superAdminSecretsAccess = {
   read: fieldAccess,
@@ -174,7 +176,7 @@ export const Tenants: CollectionConfig = {
           fields: [
             {
               name: 'country',
-              type: 'text',
+              ...iso3166Select,
               admin: {
                 description:
                   'ISO 3166-1 alpha-2 country code (e.g. BG, US, DE, JP, NO, SA). Any code accepted; drives derived currency / locale / accounting standard when those nested overrides are absent.',
@@ -222,7 +224,7 @@ export const Tenants: CollectionConfig = {
           fields: [
             {
               name: 'reportingCurrency',
-              type: 'text',
+              ...iso4217Select,
               admin: {
                 description:
                   'ISO 4217 §5 alphabetic code used as this tenant\'s reporting / functional currency (e.g. EUR, USD, NOK, KRW). Any ISO 4217 code accepted.',

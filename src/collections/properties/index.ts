@@ -35,6 +35,7 @@ import { currencyField } from '@/fields/select/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const Properties: CollectionConfig = {
   slug: 'properties',
@@ -84,7 +85,7 @@ const Properties: CollectionConfig = {
       admin: { description: 'Drives IAS-16 vs IFRS-16 vs management-revenue accounting.' },
     },
     { name: 'address', type: 'relationship', relationTo: 'addresses', required: true, index: true },
-    { name: 'country', type: 'text', required: true,
+    { name: 'country', ...iso3166Select, required: true,
       admin: { description: 'ISO 3166-1 alpha-2.' } },
     { name: 'region', type: 'text',
       admin: { description: 'ISO 3166-2 subdivision code.' } },

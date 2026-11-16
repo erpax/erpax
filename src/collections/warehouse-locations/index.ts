@@ -23,6 +23,7 @@ import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collectio
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const WarehouseLocations: CollectionConfig = {
   slug: 'warehouse-locations',
@@ -58,7 +59,7 @@ const WarehouseLocations: CollectionConfig = {
       ],
     },
     { name: 'address', type: 'relationship', relationTo: 'addresses' },
-    { name: 'country', type: 'text', admin: { description: 'ISO 3166-1 alpha-2.' } },
+    { name: 'country', ...iso3166Select, admin: { description: 'ISO 3166-1 alpha-2.' } },
     { name: 'region', type: 'text', admin: { description: 'ISO 3166-2 subdivision code.' } },
     { name: 'glAccount', type: 'relationship', relationTo: 'gl-accounts', admin: { description: 'Default inventory GL account for stock at this location.' } },
     {

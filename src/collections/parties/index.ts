@@ -36,6 +36,8 @@ import { partyRows } from '@/hooks/collections/parties/partyRows'
 import { mandatesField } from '@/fields/array/mandatesField'
 import { scorecardsField } from '@/fields/array/scorecardsField'
 import { loadPresets, preset, type Preset } from '@/utilities/preset'
+import { iso4217Select } from '@/fields/select/currencyField'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 /** The sides a party can be on. A party may hold both. */
 export type PartyRole = 'customer' | 'vendor'
@@ -78,7 +80,7 @@ const Parties: CollectionConfig = {
         { label: 'Vendor', value: 'vendor' },
       ],
       admin: { description: 'The sides this party is on. One party may be both.' } },
-    { name: 'country', type: 'text', index: true,
+    { name: 'country', ...iso3166Select, index: true,
       admin: { description: 'ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, e-invoicing).' } },
     {
       type: 'group',
@@ -190,7 +192,7 @@ const Parties: CollectionConfig = {
           admin: { description: 'Custom net days (used when paymentTerms = custom)' } },
         { name: 'creditLimit', type: 'number', defaultValue: 0, min: 0,
           admin: { description: 'Credit limit (cents)', step: 0.01, condition: customer } },
-        { name: 'creditCurrency', type: 'text', defaultValue: 'EUR',
+        { name: 'creditCurrency', ...iso4217Select, defaultValue: 'EUR',
           admin: { description: 'ISO 4217 currency for credit limit', condition: customer } },
         { name: 'preferredPaymentMethod', type: 'select', defaultValue: 'ach',
           options: [
@@ -203,7 +205,7 @@ const Parties: CollectionConfig = {
             { label: 'Other', value: 'other' },
           ],
           admin: { description: 'Preferred disbursement method', condition: vendor } },
-        { name: 'defaultCurrency', type: 'text', required: true, defaultValue: 'EUR',
+        { name: 'defaultCurrency', ...iso4217Select, required: true, defaultValue: 'EUR',
           admin: { description: 'ISO 4217 default trading currency' } },
         { name: 'defaultLocale', type: 'text', defaultValue: 'en',
           admin: { description: 'BCP 47 locale (e.g. en, en-US, de-DE)' } },

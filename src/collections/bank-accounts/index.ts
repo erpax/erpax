@@ -27,6 +27,7 @@ import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { isValidIban } from '@/utilities/iban'
 import { isSwiftBic } from '@/utilities/iso/9362'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const BankAccounts: CollectionConfig = {
   slug: 'bank-accounts',
@@ -54,7 +55,7 @@ const BankAccounts: CollectionConfig = {
     { name: 'institution', type: 'text', admin: { description: 'Bank name.' } },
     {
       name: 'country',
-      type: 'text',
+      ...iso3166Select,
       index: true,
       admin: {
         description:

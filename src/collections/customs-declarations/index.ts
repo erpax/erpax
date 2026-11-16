@@ -31,6 +31,7 @@ import { auditFields } from '@/fields/relationship/auditFields'
 import { taxonomySelect } from '@/fields/select/taxonomySelect'
 import { unitOfMeasureField } from '@/fields/text/unitOfMeasureField'
 import { INCOTERM_OPTIONS } from '@/utilities/incoterms/2020'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const CustomsDeclarations: CollectionConfig = {
   slug: 'customs-declarations',
@@ -62,11 +63,11 @@ const CustomsDeclarations: CollectionConfig = {
     { name: 'shipment', type: 'relationship', relationTo: 'shipments', required: true, index: true },
     { name: 'declarationDate', type: 'date', required: true,
       defaultValue: () => new Date().toISOString(), index: true },
-    { name: 'countryOfDispatch', type: 'text',
+    { name: 'countryOfDispatch', ...iso3166Select,
       admin: { description: 'ISO 3166-1 alpha-2 — country goods leave from.' } },
-    { name: 'countryOfDestination', type: 'text', required: true,
+    { name: 'countryOfDestination', ...iso3166Select, required: true,
       admin: { description: 'ISO 3166-1 alpha-2 — final destination country.' } },
-    { name: 'countryOfOrigin', type: 'text',
+    { name: 'countryOfOrigin', ...iso3166Select,
       admin: { description: 'ISO 3166-1 alpha-2 — country where the goods were manufactured (drives preferential treatment).' } },
     currencyField(),
     { name: 'totalValue', type: 'number', required: true,

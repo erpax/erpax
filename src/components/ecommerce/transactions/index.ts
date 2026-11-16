@@ -44,6 +44,7 @@ import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfte
 import { paymentAccountingHook } from '@/hooks/collections/invoices-payments/paymentAccountingHook'
 import { invoicePaidTotals } from '@/utilities/invoices/payments/hooks/recomputeInvoicePaid'
 import { periodLock } from '@/utilities/utility'
+import { iso4217Select } from '@/fields/select/currencyField'
 
 /** A transaction is a register payment when it names its kind (AR collection or AP disbursement). */
 export const isRegisterPayment = (doc: unknown): boolean => {
@@ -120,7 +121,7 @@ export const paymentFields = (): Field[] => [
       { name: 'amount', type: 'number', defaultValue: 0, min: 0,
         admin: { description: 'Payment amount applied to the invoice — what the invoice-paid rollup sums', step: 0.01 } },
       { name: 'invoiceAmount', type: 'number', admin: { description: 'Invoice amount reference', step: 0.01 } },
-      { name: 'currencyCode', type: 'text', defaultValue: 'EUR', admin: { description: 'Currency code' } },
+      { name: 'currencyCode', ...iso4217Select, defaultValue: 'EUR', admin: { description: 'Currency code' } },
       { name: 'exchangeRate', type: 'number', admin: { description: 'Exchange rate', step: 0.00001 } },
     ],
   },

@@ -18,6 +18,7 @@ import { guardPrivilege } from '@/hooks/collections/users/guardPrivilege'
 import { isAccessingSelf } from '@/utilities/users/access/isAccessingSelf'
 import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
 import { setCookieBasedOnDomain } from '@/utilities/users/hooks'
+import { iso4217Select } from '@/fields/select/currencyField'
 
 /** A field only the server writes (its own hooks, or the database directly): no caller may set it. */
 const serverOnly = { create: () => false, update: () => false }
@@ -405,7 +406,7 @@ export const Users: CollectionConfig = {
             },
             {
               name: 'displayCurrency',
-              type: 'text',
+              ...iso4217Select,
               admin: {
                 description:
                   'ISO 4217 §5 currency code the user prefers to SEE amounts in. Independent from the tenant\'s reporting currency — viewing-only conversion via FX.',

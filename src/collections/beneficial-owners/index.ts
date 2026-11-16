@@ -15,6 +15,7 @@ import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/collection
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const BeneficialOwners: CollectionConfig = {
   slug: 'beneficial-owners',
@@ -36,7 +37,7 @@ const BeneficialOwners: CollectionConfig = {
     { name: 'fullName', type: 'text', required: true },
     { name: 'dateOfBirth', type: 'date' },
     { name: 'nationality', type: 'text', admin: { description: 'ISO 3166-1 alpha-2 country code.' } },
-    { name: 'residenceCountry', type: 'text' },
+    { name: 'residenceCountry', ...iso3166Select },
     { name: 'residenceAddress', type: 'relationship', relationTo: 'addresses' },
     { name: 'ownershipPercent', type: 'number', min: 0, max: 100, admin: { description: 'AMLD threshold typically 25%.' } },
     {

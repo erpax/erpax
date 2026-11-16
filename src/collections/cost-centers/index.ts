@@ -28,6 +28,7 @@ import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collectio
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const CostCenters: CollectionConfig = {
   slug: 'cost-centers',
@@ -88,7 +89,7 @@ const CostCenters: CollectionConfig = {
     },
     {
       name: 'country',
-      type: 'text',
+      ...iso3166Select,
       admin: {
         description:
           'ISO 3166-1 alpha-2 — populated for kind = country, optional otherwise. Used by IFRS 8 / ASC 280 geographic disclosure.',

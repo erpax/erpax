@@ -36,6 +36,7 @@ import { currencyField } from '@/fields/select/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const Employees: CollectionConfig = {
   slug: 'employees',
@@ -106,7 +107,7 @@ const Employees: CollectionConfig = {
         },
         {
           name: 'citizenshipCountry',
-          type: 'text',
+          ...iso3166Select,
           admin: { description: 'ISO 3166-1 alpha-2.' },
         },
       ],
@@ -183,7 +184,7 @@ const Employees: CollectionConfig = {
     competencyLineField({ mode: 'held', description: 'Competencies held in this employment (skill-gap vs the job-position requirements).' }),
     {
       name: 'workCountry',
-      type: 'text',
+      ...iso3166Select,
       admin: {
         description:
           'ISO 3166-1 alpha-2. Drives the country-context cascade (tax codes, social-security regime, payroll calendar).',
@@ -385,7 +386,7 @@ const Employees: CollectionConfig = {
         },
         {
           name: 'taxResidenceCountry',
-          type: 'text',
+          ...iso3166Select,
           admin: {
             description:
               'ISO 3166-1 alpha-2. May differ from workCountry for cross-border employees.',

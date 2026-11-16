@@ -46,7 +46,7 @@ import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
-import { countryCodeField } from '@/fields/select/countryCodeField'
+import { countryCodeField, iso3166Select } from '@/fields/select/countryCodeField'
 import { naceCodeField } from '@/fields/text/naceCodeField'
 
 const LegalEntities: CollectionConfig = {
@@ -147,7 +147,7 @@ const LegalEntities: CollectionConfig = {
         { name: 'city', type: 'text' },
         { name: 'postalCode', type: 'text' },
         { name: 'region', type: 'text' },
-        { name: 'countryCode', type: 'text' },
+        { name: 'countryCode', ...iso3166Select },
       ],
       admin: { description: 'Statutory registered office (IAS-1 §138(a)).' },
     },

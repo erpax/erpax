@@ -32,6 +32,7 @@ import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
 import { naceCodeField } from '@/fields/text/naceCodeField'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const Sectors: CollectionConfig = {
   slug: 'sectors',
@@ -87,7 +88,7 @@ const Sectors: CollectionConfig = {
     // ── Outcome alignment (UN SDG) ──
     { name: 'sdgGoal', type: 'number', min: 1, max: 17,
       admin: { description: 'UN Sustainable Development Goal (1-17) this sector primarily advances.' } },
-    { name: 'countryCode', type: 'text', index: true,
+    { name: 'countryCode', ...iso3166Select, index: true,
       admin: { description: 'ISO 3166-1 alpha-2 — geographic scope (blank = supranational/global).' } },
     statusField(
       [

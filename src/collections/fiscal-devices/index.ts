@@ -3,6 +3,7 @@ import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfte
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { statusField } from '@/fields/select/statusField'
+import { iso4217Select } from '@/fields/select/currencyField'
 
 /**
  * Fiscal Devices (ФУ) — the registry of fiscal units a СУПТО tenant operates.
@@ -51,7 +52,7 @@ const FiscalDevices: CollectionConfig = {
     // absent the resolver falls back to the tenant/country values.
     {
       name: 'currency',
-      type: 'text',
+      ...iso4217Select,
       admin: { description: 'ISO 4217 currency this ФУ issues receipts in — overrides the tenant/country default.' },
     },
     {

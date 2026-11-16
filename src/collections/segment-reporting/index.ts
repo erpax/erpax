@@ -7,6 +7,7 @@
  */
 import { CollectionConfig } from 'payload'
 import { roleBasedAccess } from '@/access/collections/shared/roleBasedAccess'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 export const SegmentReporting: CollectionConfig = {
   slug: 'segment-reporting',
@@ -164,7 +165,7 @@ export const SegmentReporting: CollectionConfig = {
       name: 'segmentGeography',
       type: 'array',
       fields: [
-        { name: 'countryCode', type: 'text', required: true },
+        { name: 'countryCode', ...iso3166Select, required: true },
         { name: 'revenue', type: 'number', required: true },
         { name: 'assets', type: 'number' },
       ],

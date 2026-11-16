@@ -18,6 +18,7 @@
 import { CollectionConfig } from 'payload'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { validateConsolidationReadiness } from '@/hooks/collections/consolidations/validateConsolidationReadiness'
+import { iso4217Select } from '@/fields/select/currencyField'
 
 export const Consolidations: CollectionConfig = {
   slug: 'consolidations',
@@ -72,7 +73,7 @@ export const Consolidations: CollectionConfig = {
     },
     {
       name: 'consolidationCurrency',
-      type: 'text',
+      ...iso4217Select,
       admin: { description: 'Reporting/consolidation currency (ISO 4217 code, e.g., USD)' },
     },
     {
