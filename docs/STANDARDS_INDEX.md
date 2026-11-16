@@ -354,15 +354,6 @@ src/collections/held-for-sale-classifications/index.ts:17: * @standard US-GAAP A
 src/collections/held-for-sale-classifications/index.ts:18: * @standard US-GAAP ASC-360-10 long-lived-assets-held-for-sale
 src/collections/held-for-sale-classifications/index.ts:19: * @standard ISO-4217:2015 currency-codes
 src/collections/held-for-sale-classifications/index.ts:20: * @standard ISO-8601-1:2019 date-time classification-date
-src/collections/insurance-contracts/index.ts:12: * @standard IFRS IFRS-17 §3 scope
-src/collections/insurance-contracts/index.ts:13: * @standard IFRS IFRS-17 §32 general-measurement-model-building-blocks
-src/collections/insurance-contracts/index.ts:14: * @standard IFRS IFRS-17 §38 contractual-service-margin
-src/collections/insurance-contracts/index.ts:15: * @standard IFRS IFRS-17 §53 premium-allocation-approach-simplified
-src/collections/insurance-contracts/index.ts:16: * @standard IFRS IFRS-17 §B100 variable-fee-approach
-src/collections/insurance-contracts/index.ts:17: * @standard IFRS IFRS-17 §93 disclosure-requirements
-src/collections/insurance-contracts/index.ts:18: * @standard IFRS IFRS-13 fair-value-input-hierarchy
-src/collections/insurance-contracts/index.ts:19: * @standard ISO-4217:2015 currency-codes
-src/collections/insurance-contracts/index.ts:20: * @standard ISO-8601-1:2019 date-time
 src/collections/intercompany-transactions/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/collections/intercompany-transactions/index.ts:13: * @standard ISO-8601-1:2019 date-time transaction-date
 src/collections/internal-controls/index.ts:4: * @standard COSO-2013 internal-control-integrated-framework
@@ -1162,6 +1153,15 @@ src/utilities/governed/index.ts:616: * @standard IFRS IAS-33 §66-§70 disclosur
 src/utilities/governed/index.ts:617: * @standard US-GAAP ASC-260 earnings-per-share
 src/utilities/governed/index.ts:618: * @standard ISO-4217:2015 currency-codes
 src/utilities/governed/index.ts:619: * @standard ISO-8601-1:2019 date-time period-end
+src/utilities/governed/index.ts:745: * @standard IFRS IFRS-17 §3 scope
+src/utilities/governed/index.ts:746: * @standard IFRS IFRS-17 §32 general-measurement-model-building-blocks
+src/utilities/governed/index.ts:747: * @standard IFRS IFRS-17 §38 contractual-service-margin
+src/utilities/governed/index.ts:748: * @standard IFRS IFRS-17 §53 premium-allocation-approach-simplified
+src/utilities/governed/index.ts:749: * @standard IFRS IFRS-17 §B100 variable-fee-approach
+src/utilities/governed/index.ts:750: * @standard IFRS IFRS-17 §93 disclosure-requirements
+src/utilities/governed/index.ts:751: * @standard IFRS IFRS-13 fair-value-input-hierarchy
+src/utilities/governed/index.ts:752: * @standard ISO-4217:2015 currency-codes
+src/utilities/governed/index.ts:753: * @standard ISO-8601-1:2019 date-time
 src/utilities/horo/index.ts:23: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
 src/utilities/iban/index.ts:10: * @standard ISO-7064:2003 mod-97-10 check-digits
 src/utilities/iban/index.ts:9: * @standard ISO-13616-1:2020 iban
@@ -2157,8 +2157,6 @@ src/collections/goods-receipts/index.ts:28: * @compliance SOX §404 internal-con
 src/collections/government-grants/index.ts:20: * @compliance EU CSRD ESRS 2 sbm-3 material-impacts (EU funds traceability)
 src/collections/government-grants/index.ts:21: * @compliance OECD BEPS Action 13 country-by-country (when grants ≥ threshold)
 src/collections/held-for-sale-classifications/index.ts:22: * @compliance SOX §404 internal-controls
-src/collections/insurance-contracts/index.ts:22: * @compliance Solvency II / IAIS ICS — actuarial reserving link
-src/collections/insurance-contracts/index.ts:23: * @compliance SOX §404 internal-controls TOM-INS-01
 src/collections/intercompany-transactions/index.ts:19: * @compliance SOX §404 internal-controls intercompany-control TOM-IC-01
 src/collections/intercompany-transactions/index.ts:20: * @compliance OECD BEPS Action 13 transfer-pricing-documentation
 src/collections/internal-controls/index.ts:5: * @compliance SOX §404 internal-controls
@@ -2400,6 +2398,8 @@ src/utilities/governed/index.ts:34: * @compliance SOX §302 corporate-responsibi
 src/utilities/governed/index.ts:35: * @compliance SOX §906 criminal-certification
 src/utilities/governed/index.ts:439: * @compliance SOX §404 internal-controls
 src/utilities/governed/index.ts:621: * @compliance SOX §404 internal-controls
+src/utilities/governed/index.ts:755: * @compliance Solvency II / IAIS ICS — actuarial reserving link
+src/utilities/governed/index.ts:756: * @compliance SOX §404 internal-controls TOM-INS-01
 src/utilities/integrity/content/index.ts:47: * @compliance SOX §404 internal-controls (Byzantine tamper detection)
 src/utilities/integrity/tamper-proof-uuid-field.ts:38: * @compliance SOX §404 (Byzantine tamper detection at the row level)
 src/utilities/integrity/uuid-ref.ts:29: * @compliance SOX §404 (referential integrity without cascade rules)
@@ -3091,7 +3091,6 @@ src/collections/goods-receipts/index.ts:29: * @security ISO-27002 §5.3 segregat
 src/collections/government-grants/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/groups/index.ts:14: * @security ISO-27001 A.5.15 access-control · A.5.18 access-rights
 src/collections/held-for-sale-classifications/index.ts:23: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
-src/collections/insurance-contracts/index.ts:24: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/intercompany-transactions/index.ts:21: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/internal-controls/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/internal-policies/index.ts:4: * @security ISO-27001 A.5.1 policies-for-information-security
@@ -3416,7 +3415,6 @@ src/collections/goods-receipts/index.ts:26: * @audit ISO-19011:2018 audit-trail 
 src/collections/goods-receipts/index.ts:27: * @audit IFRS-15 §31 revenue-substantiation shipment-FOB-date
 src/collections/government-grants/index.ts:19: * @audit ISO-19011:2018 audit-trail grant-evidence
 src/collections/held-for-sale-classifications/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-disposal-classification
-src/collections/insurance-contracts/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-insurance-contracts
 src/collections/intercompany-transactions/index.ts:18: * @audit ISO-19011:2018 audit-trail intercompany-evidence
 src/collections/inventory-movements/index.ts:16: * @audit ISO-19011:2018 audit-trail stock-ledger
 src/collections/investment-properties/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-investment-property
@@ -3603,6 +3601,7 @@ src/utilities/gl/account/resolver/index.ts:27: * @audit ISO-19011:2018 audit-tra
 src/utilities/governed/index.ts:321: * @audit ISO-19011:2018 audit-trail ropa-evidence
 src/utilities/governed/index.ts:438: * @audit ISO-19011:2018 audit-programme
 src/utilities/governed/index.ts:620: * @audit ISO 19011:2018 §6.4.6 audit-evidence-eps-computation
+src/utilities/governed/index.ts:754: * @audit ISO 19011:2018 §6.4.6 audit-evidence-insurance-contracts
 src/utilities/integrity/content/index.ts:46: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/utilities/integrity/resource-bound.ts:33: * @audit Conservation Law 55 (tamper-reversibility-cost) — physical bound
 src/utilities/integrity/tamper-proof-uuid-field.ts:37: * @audit ISO 19011:2018 §6.4.6
