@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload'
 import { anyone } from '@/access/collections/shared/anyone'
 import { superAdminOnly } from '@/access/collections/shared/superAdminOnly'
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 
 /**
  * Subscription Plans — pricing-plan catalog (super-admin maintained).

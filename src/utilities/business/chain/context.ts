@@ -19,6 +19,7 @@
  * @standard ISO-4217:2015 currency-codes
  */
 
+import type { CountryCode } from '@/utilities/iso/3166/1'
 import type { Payload } from 'payload'
 
 export interface ChainContext {
@@ -40,7 +41,7 @@ export interface ChainContextOptions {
   /** Slug for the seeded tenant. Defaults to `chain-test-<random>`. */
   readonly tenantSlug?: string
   /** Country for the legal-entity (ISO 3166-1 alpha-2). Defaults to `BG`. */
-  readonly countryCode?: string
+  readonly countryCode?: CountryCode
   /** Functional currency. Defaults to `EUR`. */
   readonly currency?: string
   /** Fiscal period label. Defaults to `2026-04`. */

@@ -21,7 +21,7 @@ import {
   collectionSignature, shapeCatalogue, shapeRatchetVerdict, auditCorpus, ROSETTA_BASELINE,
   deriveLifecycleEmits, foldCollectionLifecycle,
 } from '@/utilities/factory/collection'
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { notesField } from '@/fields/textarea/notesField'

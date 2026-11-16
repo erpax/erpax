@@ -32,7 +32,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'

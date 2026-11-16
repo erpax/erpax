@@ -8,7 +8,7 @@
  */
 import { APIError, type Block, type FieldHook } from 'payload'
 import { idOf } from '@/hooks/collections/shared/enforceSegregationOfDuties'
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 
 export interface GovernedType {
   readonly value: string

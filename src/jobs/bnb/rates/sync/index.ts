@@ -24,6 +24,7 @@ import { exactMax } from '@/utilities/algebra'
  * @see ../country/api.ts (БНБ rates entry, clientImplemented: true)
  */
 
+import { isCurrencyCode } from '@/utilities/iso/4217'
 import type { Payload } from 'payload'
 import { lookupEuFallbackRate } from '@/utilities/country/api/client'
 import { persistApiAuditEvent } from '@/utilities/persist/api/audit/event'
@@ -131,6 +132,11 @@ export async function processBnbRatesSync(payload: Payload): Promise<BnbRatesSyn
       // stopped quoting the lev when Bulgaria adopted the euro, so a hardcoded
       // 'BGN' here would label euro-denominated fixings as lev.
       const quoteCurrency = lookup.data.quote
+      // A rate is stored only between two ISO 4217 codes the currency fields accept.
+      if (!isCurrencyCode(fromCurrency) || !isCurrencyCode(quoteCurrency)) {
+        payload.logger.warn(`bnb rates: skipping ${fromCurrency}/${quoteCurrency}, not an ISO 4217 code`)
+        continue
+      }
 
       // currency-rates row shape mirrors `SEED_VALIDATION_REGISTRY['currency-rates']`.
       try {

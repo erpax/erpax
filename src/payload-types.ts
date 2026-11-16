@@ -84,6 +84,431 @@ export type UploadTransforms = {
   [k: string]: unknown;
 } | null;
 /**
+ * ISO 4217 currency.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Iso4217Currency".
+ */
+export type Iso4217Currency =
+  | (
+      | 'AED'
+      | 'AFN'
+      | 'ALL'
+      | 'AMD'
+      | 'ANG'
+      | 'AOA'
+      | 'ARS'
+      | 'AUD'
+      | 'AWG'
+      | 'AZN'
+      | 'BAM'
+      | 'BBD'
+      | 'BDT'
+      | 'BGN'
+      | 'BHD'
+      | 'BIF'
+      | 'BMD'
+      | 'BND'
+      | 'BOB'
+      | 'BRL'
+      | 'BSD'
+      | 'BTN'
+      | 'BWP'
+      | 'BYN'
+      | 'BZD'
+      | 'CAD'
+      | 'CDF'
+      | 'CHF'
+      | 'CLP'
+      | 'CNY'
+      | 'COP'
+      | 'CRC'
+      | 'CUC'
+      | 'CUP'
+      | 'CVE'
+      | 'CZK'
+      | 'DJF'
+      | 'DKK'
+      | 'DOP'
+      | 'DZD'
+      | 'EGP'
+      | 'ERN'
+      | 'ETB'
+      | 'EUR'
+      | 'FJD'
+      | 'FKP'
+      | 'GBP'
+      | 'GEL'
+      | 'GHS'
+      | 'GIP'
+      | 'GMD'
+      | 'GNF'
+      | 'GTQ'
+      | 'GYD'
+      | 'HKD'
+      | 'HNL'
+      | 'HRK'
+      | 'HTG'
+      | 'HUF'
+      | 'IDR'
+      | 'ILS'
+      | 'INR'
+      | 'IQD'
+      | 'IRR'
+      | 'ISK'
+      | 'JMD'
+      | 'JOD'
+      | 'JPY'
+      | 'KES'
+      | 'KGS'
+      | 'KHR'
+      | 'KMF'
+      | 'KPW'
+      | 'KRW'
+      | 'KWD'
+      | 'KYD'
+      | 'KZT'
+      | 'LAK'
+      | 'LBP'
+      | 'LKR'
+      | 'LRD'
+      | 'LSL'
+      | 'LYD'
+      | 'MAD'
+      | 'MDL'
+      | 'MGA'
+      | 'MKD'
+      | 'MMK'
+      | 'MNT'
+      | 'MOP'
+      | 'MRU'
+      | 'MUR'
+      | 'MVR'
+      | 'MWK'
+      | 'MXN'
+      | 'MYR'
+      | 'MZN'
+      | 'NAD'
+      | 'NGN'
+      | 'NIO'
+      | 'NOK'
+      | 'NPR'
+      | 'NZD'
+      | 'OMR'
+      | 'PAB'
+      | 'PEN'
+      | 'PGK'
+      | 'PHP'
+      | 'PKR'
+      | 'PLN'
+      | 'PYG'
+      | 'QAR'
+      | 'RON'
+      | 'RSD'
+      | 'RUB'
+      | 'RWF'
+      | 'SAR'
+      | 'SBD'
+      | 'SCR'
+      | 'SDG'
+      | 'SEK'
+      | 'SGD'
+      | 'SHP'
+      | 'SLE'
+      | 'SLL'
+      | 'SOS'
+      | 'SRD'
+      | 'SSP'
+      | 'STN'
+      | 'SVC'
+      | 'SYP'
+      | 'SZL'
+      | 'THB'
+      | 'TJS'
+      | 'TMT'
+      | 'TND'
+      | 'TOP'
+      | 'TRY'
+      | 'TTD'
+      | 'TWD'
+      | 'TZS'
+      | 'UAH'
+      | 'UGX'
+      | 'USD'
+      | 'UYU'
+      | 'UZS'
+      | 'VES'
+      | 'VND'
+      | 'VUV'
+      | 'WST'
+      | 'XAF'
+      | 'XCD'
+      | 'XCG'
+      | 'XDR'
+      | 'XOF'
+      | 'XPF'
+      | 'XSU'
+      | 'XXX'
+      | 'YER'
+      | 'ZAR'
+      | 'ZMW'
+      | 'ZWG'
+      | 'ZWL'
+    )
+  | null;
+/**
+ * ISO 3166-1 alpha-2 country.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Iso3166Country".
+ */
+export type Iso3166Country =
+  | 'AF'
+  | 'AX'
+  | 'AL'
+  | 'DZ'
+  | 'AS'
+  | 'AD'
+  | 'AO'
+  | 'AI'
+  | 'AQ'
+  | 'AG'
+  | 'AR'
+  | 'AM'
+  | 'AW'
+  | 'AU'
+  | 'AT'
+  | 'AZ'
+  | 'BS'
+  | 'BH'
+  | 'BD'
+  | 'BB'
+  | 'BY'
+  | 'BE'
+  | 'BZ'
+  | 'BJ'
+  | 'BM'
+  | 'BT'
+  | 'BO'
+  | 'BA'
+  | 'BW'
+  | 'BV'
+  | 'BR'
+  | 'IO'
+  | 'BN'
+  | 'BG'
+  | 'BF'
+  | 'BI'
+  | 'KH'
+  | 'CM'
+  | 'CA'
+  | 'CV'
+  | 'KY'
+  | 'CF'
+  | 'TD'
+  | 'CL'
+  | 'CN'
+  | 'CX'
+  | 'CC'
+  | 'CO'
+  | 'KM'
+  | 'CG'
+  | 'CD'
+  | 'CK'
+  | 'CR'
+  | 'CI'
+  | 'HR'
+  | 'CU'
+  | 'CY'
+  | 'CZ'
+  | 'DK'
+  | 'DJ'
+  | 'DM'
+  | 'DO'
+  | 'EC'
+  | 'EG'
+  | 'SV'
+  | 'GQ'
+  | 'ER'
+  | 'EE'
+  | 'ET'
+  | 'FK'
+  | 'FO'
+  | 'FJ'
+  | 'FI'
+  | 'FR'
+  | 'GF'
+  | 'PF'
+  | 'TF'
+  | 'GA'
+  | 'GM'
+  | 'GE'
+  | 'DE'
+  | 'GH'
+  | 'GI'
+  | 'GR'
+  | 'GL'
+  | 'GD'
+  | 'GP'
+  | 'GU'
+  | 'GT'
+  | 'GG'
+  | 'GN'
+  | 'GW'
+  | 'GY'
+  | 'HT'
+  | 'HM'
+  | 'VA'
+  | 'HN'
+  | 'HK'
+  | 'HU'
+  | 'IS'
+  | 'IN'
+  | 'ID'
+  | 'IR'
+  | 'IQ'
+  | 'IE'
+  | 'IM'
+  | 'IL'
+  | 'IT'
+  | 'JM'
+  | 'JP'
+  | 'JE'
+  | 'JO'
+  | 'KZ'
+  | 'KE'
+  | 'KI'
+  | 'KP'
+  | 'KR'
+  | 'XK'
+  | 'KW'
+  | 'KG'
+  | 'LA'
+  | 'LV'
+  | 'LB'
+  | 'LS'
+  | 'LR'
+  | 'LY'
+  | 'LI'
+  | 'LT'
+  | 'LU'
+  | 'MO'
+  | 'MK'
+  | 'MG'
+  | 'MW'
+  | 'MY'
+  | 'MV'
+  | 'ML'
+  | 'MT'
+  | 'MH'
+  | 'MQ'
+  | 'MR'
+  | 'MU'
+  | 'YT'
+  | 'MX'
+  | 'FM'
+  | 'MD'
+  | 'MC'
+  | 'MN'
+  | 'ME'
+  | 'MS'
+  | 'MA'
+  | 'MZ'
+  | 'MM'
+  | 'NA'
+  | 'NR'
+  | 'NP'
+  | 'NL'
+  | 'AN'
+  | 'NC'
+  | 'NZ'
+  | 'NI'
+  | 'NE'
+  | 'NG'
+  | 'NU'
+  | 'NF'
+  | 'MP'
+  | 'NO'
+  | 'OM'
+  | 'PK'
+  | 'PW'
+  | 'PS'
+  | 'PA'
+  | 'PG'
+  | 'PY'
+  | 'PE'
+  | 'PH'
+  | 'PN'
+  | 'PL'
+  | 'PT'
+  | 'PR'
+  | 'QA'
+  | 'RE'
+  | 'RO'
+  | 'RU'
+  | 'RW'
+  | 'SH'
+  | 'KN'
+  | 'LC'
+  | 'PM'
+  | 'VC'
+  | 'WS'
+  | 'SM'
+  | 'ST'
+  | 'SA'
+  | 'SN'
+  | 'RS'
+  | 'SC'
+  | 'SL'
+  | 'SG'
+  | 'SK'
+  | 'SI'
+  | 'SB'
+  | 'SO'
+  | 'ZA'
+  | 'GS'
+  | 'ES'
+  | 'LK'
+  | 'SD'
+  | 'SR'
+  | 'SJ'
+  | 'SZ'
+  | 'SE'
+  | 'CH'
+  | 'SY'
+  | 'TW'
+  | 'TJ'
+  | 'TZ'
+  | 'TH'
+  | 'TL'
+  | 'TG'
+  | 'TK'
+  | 'TO'
+  | 'TT'
+  | 'TN'
+  | 'TR'
+  | 'TM'
+  | 'TC'
+  | 'TV'
+  | 'UG'
+  | 'UA'
+  | 'AE'
+  | 'GB'
+  | 'US'
+  | 'UM'
+  | 'UY'
+  | 'UZ'
+  | 'VU'
+  | 'VE'
+  | 'VN'
+  | 'VG'
+  | 'VI'
+  | 'WF'
+  | 'EH'
+  | 'YE'
+  | 'ZM'
+  | 'ZW';
+/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "OrderStatus".
  */
@@ -863,10 +1288,7 @@ export interface ConsolidationElimination {
   consolidationDate: string;
   eliminationType:
     'investment' | 'ic_balance' | 'ic_pl' | 'unrealised_profit' | 'ic_loan' | 'ic_dividend' | 'fctr' | 'other';
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Debit leg of the elimination JE (cents). Must equal creditAmount.
    */
@@ -2364,10 +2786,7 @@ export interface GlAccount {
    * Balance in base currency
    */
   balanceInBaseCurrency?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   status?: ('active' | 'inactive' | 'locked') | null;
   description?: string | null;
   isTaxAccount?: boolean | null;
@@ -2724,10 +3143,7 @@ export interface TaxJurisdiction {
      * Day of month return is due (e.g. 20)
      */
     filingDueDayOfMonth?: number | null;
-    /**
-     * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-     */
-    currency: string;
+    currency: Iso4217Currency;
   };
   notes?: {
     /**
@@ -2862,10 +3278,7 @@ export interface LegalEntity {
         | 'other'
       )
     | null;
-  /**
-   * ISO 3166-1 alpha-2 — country of registration (BG / DE / RO / etc.).
-   */
-  countryCode: string;
+  countryCode: Iso3166Country;
   /**
    * Statutory company / commercial-register number (BG EIK, DE HRB, RO J-number, etc.).
    */
@@ -2900,14 +3313,8 @@ export interface LegalEntity {
    * Direct voting rights — may differ from ownership when dual-class shares exist (IFRS-10 §B36).
    */
   votingPercent?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  functionalCurrency?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  presentationCurrency?: string | null;
+  functionalCurrency?: Iso4217Currency;
+  presentationCurrency?: Iso4217Currency;
   /**
    * Standalone (statutory) reporting framework. Group consolidation may translate up to a different parent framework.
    */
@@ -3902,10 +4309,7 @@ export interface ComplianceGap {
 export interface EarningsPerShareBlock {
   period: string | FiscalPeriod;
   periodEnd: string;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   status?: ('draft' | 'computed' | 'published' | 'restated') | null;
   /**
    * IAS 33 §12 — net profit/loss attributable to ordinary equity holders (cents).
@@ -4128,10 +4532,7 @@ export interface FiscalPeriod {
          * Approximate financial impact (cents).
          */
         estimatedImpact?: number | null;
-        /**
-         * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-         */
-        currency?: string | null;
+        currency?: Iso4217Currency;
         status?: ('identified' | 'assessed' | 'adjusted' | 'disclosed' | 'not_material') | null;
         /**
          * The entry that books an adjusting event (required to mark it adjusted).
@@ -4208,10 +4609,7 @@ export interface JournalEntry {
     description?: string | null;
     debit?: number | null;
     credit?: number | null;
-    /**
-     * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-     */
-    currency?: string | null;
+    currency?: Iso4217Currency;
     exchangeRate?: number | null;
     costCenterId?: string | null;
     id?: string | null;
@@ -4299,10 +4697,7 @@ export interface Project {
         | 'right_to_invoice'
       )
     | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Total transaction price for this project (cents). For T&M projects use the not-to-exceed cap.
    */
@@ -4870,10 +5265,7 @@ export interface GovernmentGrant {
   awardDate: string;
   effectiveStartDate?: string | null;
   effectiveEndDate?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Maximum award amount (cents).
    */
@@ -5025,10 +5417,7 @@ export interface Provision {
    */
   recognitionDate?: string | null;
   period?: (string | null) | FiscalPeriod;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * IAS-37 §36 best-estimate of expenditure required to settle (cents).
    */
@@ -5121,10 +5510,7 @@ export interface FixedAsset {
     | 'other';
   acquisitionDate: string;
   assetCost: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Asset supplier/vendor (IAS-16 §16(a) — directly attributable cost source).
    */
@@ -5233,10 +5619,7 @@ export interface Contract {
    * Aggregate transaction price (cents). = transactionPriceFixed + transactionPriceVariable + financingComponent − considerationPayableToCustomer. Maps to canonical TransactionPrice.total.
    */
   totalValue?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Fixed consideration component (cents). IFRS 15 §47. Maps to canonical TransactionPrice.fixed.
    */
@@ -5461,10 +5844,7 @@ export interface PerformanceObligation {
    * In cents. Maps to canonical PerformanceObligation.standaloneSellingPrice.
    */
   standaloneSellingPrice: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Portion of contract transaction price allocated to this PO (cents). Computed by IFRS 15 §73 relative-SSP. Maps to canonical PerformanceObligation.allocatedAmount.
    */
@@ -6073,10 +6453,7 @@ export interface SubscriptionPlan {
    * Yearly price in minor units (optional, for annual billing); currency carried by `currency`.
    */
   yearlyPrice?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   billingCycle: 'monthly' | 'yearly';
   /**
    * Feature limits as JSON. null = unlimited
@@ -6224,10 +6601,7 @@ export interface Terminal {
    * Settlement account (IBAN) the terminal pays into.
    */
   accountNumber?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   status?: ('active' | 'inactive') | null;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -6300,10 +6674,7 @@ export interface Receipt {
         id?: string | null;
       }[]
     | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
   /**
    * Customer e-mail the e-receipt was sent to (alternative regime).
@@ -6369,10 +6740,7 @@ export interface Sale {
       }[]
     | null;
   total?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
   /**
    * Касов бон number — carries the УНП.
@@ -7026,10 +7394,7 @@ export interface InsuranceContractBlock {
    * IFRS 17 §36 — current rate reflecting time value + financial risk (% p.a.).
    */
   discountRate: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * IFRS 17 §37 — non-financial risk premium (cents).
    */
@@ -7110,10 +7475,7 @@ export interface FairValueMeasurement {
    */
   fairValueChange?: number | null;
   recognitionRoute: 'p_and_l' | 'oci' | 'equity';
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * IFRS 13 §93(d) — required disclosure for Level-3 measurements: significant unobservable inputs + range + sensitivity.
    */
@@ -7205,10 +7567,7 @@ export interface InvestmentProperty {
    * IAS 40 §75(f) — operating expenses disclosure split.
    */
   directOperatingExpensesYtd?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * IAS 40 §57-§65 — change-in-use trigger.
    */
@@ -7337,10 +7696,7 @@ export interface Property {
      */
     disposedAt?: string | null;
   };
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Carrying amount (cents) — for owned: cost − accumulated depreciation; for leased: ROU asset.
    */
@@ -7449,10 +7805,7 @@ export interface Lease {
    * Annual discount rate (percent, e.g. 4.5 for 4.5%).
    */
   discountRatePercent: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * PV of unpaid lease payments at commencement, discounted at the rate above. Computed by leaseService.calculateInitialMeasurement.
    */
@@ -7591,10 +7944,7 @@ export interface BiologicalAsset {
    * IAS 41 §51 — change due to price (separately disclosable).
    */
   priceChangeGainLoss?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   maturityStage?: ('immature' | 'mature' | 'old') | null;
   fairValueMeasurement?: (string | null) | FairValueMeasurement;
   journalEntry?: (string | null) | JournalEntry;
@@ -7708,14 +8058,8 @@ export interface CurrencyRate {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   rateId: string;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  fromCurrency: string;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  toCurrency: string;
+  fromCurrency: Iso4217Currency;
+  toCurrency: Iso4217Currency;
   rate: number;
   rateDate: string;
   source: 'manual' | 'bank_api' | 'ecb' | 'fed' | 'xe' | 'other';
@@ -7775,10 +8119,7 @@ export interface ShareBasedPayment {
    * numberOfUnits × fairValueAtGrant (cents).
    */
   totalGrantValue?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * IFRS 2 §15 vesting period(s) — graded or cliff. Expense recognised straight-line over each tranche.
    */
@@ -7965,10 +8306,7 @@ export interface Employee {
         | 'other'
       )
     | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   compensation?: {
     /**
      * Gross annual base salary (cents). Pro-rated by the employmentType FTE.
@@ -8169,10 +8507,7 @@ export interface DebtInstrumentBlock {
    * Current principal outstanding as of balance sheet date.
    */
   outstandingBalance: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency: string;
+  currency: Iso4217Currency;
   maturityDate: string;
   /**
    * E.g., "3.5% fixed" or "EURIBOR+2.0% floating".
@@ -8259,10 +8594,7 @@ export interface RegulatoryDeferralAccountBlock {
    * Net change in balance during the period (cents).
    */
   movementInPeriod?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   discountRate?: number | null;
   /**
    * IFRS 14 §32 — period over which the balance is expected to be recovered/refunded.
@@ -8303,10 +8635,7 @@ export interface HeldForSaleBlock {
   carryingAmountAtClassification: number;
   fairValue: number;
   costsToSell?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * fairValue − costsToSell (cents), computed.
    */
@@ -8397,10 +8726,7 @@ export interface BusinessCombination {
    * True when goodwill is negative; IFRS 3 §34 — recognise gain in P&L.
    */
   isBargainPurchase?: boolean | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Purchase price allocation by identifiable asset / liability category.
    */
@@ -8489,10 +8815,7 @@ export interface RelatedPartyTransactionBlock {
     | 'asset-transaction'
     | 'other';
   amount: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency: string;
+  currency: Iso4217Currency;
   /**
    * Payment terms, pricing basis, conditions, and any special terms.
    */
@@ -8774,10 +9097,7 @@ export interface BudgetBlock {
    * The sum of the line items, computed.
    */
   totalBudget?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   status?: ('draft' | 'submitted' | 'approved' | 'active' | 'archived') | null;
   approvedBy?: (string | null) | User;
   /**
@@ -8828,10 +9148,7 @@ export interface IntercompanyTransaction {
   transactionDate: string;
   pairKind?:
     ('transfer' | 'service_charge' | 'goods_transfer' | 'loan' | 'capital' | 'cost_allocation' | 'other') | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Debit leg amount, in cents (booked on fromTenant).
    */
@@ -9010,10 +9327,7 @@ export interface Lead {
   website?: string | null;
   industry?: string | null;
   companySize?: ('1_10' | '11_50' | '51_200' | '201_1000' | '1000_plus') | null;
-  /**
-   * ISO 3166-1 alpha-2 country code (e.g. BG, DE, RO).
-   */
-  countryCode?: string | null;
+  countryCode?: Iso3166Country;
   preferredLanguage?: string | null;
   leadSource?:
     | (
@@ -9099,10 +9413,7 @@ export interface Opportunity {
    * Snapshot probability (0-100%). Defaults map to stage but operator can override.
    */
   probability?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Annual contract value (ARR for SaaS) or one-time TCV (cents).
    */
@@ -9419,10 +9730,7 @@ export interface UsageRecord {
    * Per-unit price snapshot (cents) at time of event. Rate-card change won't retroactively affect billed quantities.
    */
   rate?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * rate × quantity (cents) — what hits the upcoming invoice line.
    */
@@ -9493,10 +9801,7 @@ export interface Batch {
    * ISO 8601 — when the lot entered this tenant (receipt or production completion).
    */
   receivedDate?: string | null;
-  /**
-   * ISO 3166-1 alpha-2 country of origin (customs + food labelling).
-   */
-  countryOfOrigin?: string | null;
+  countryOfOrigin?: Iso3166Country;
   origin?: ('produced' | 'purchased' | 'opening' | 'repackaged') | null;
   /**
    * Producing work-order (when origin = produced).
@@ -9526,10 +9831,7 @@ export interface Batch {
    * QC inspection that released or rejected this lot.
    */
   qualityInspection?: (string | null) | QualityInspection;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Per-unit carrying cost (IAS-2 §23 specific identification). In cents.
    */
@@ -9979,10 +10281,7 @@ export interface Lot {
    * Units invoiced (≤ delivered) — the funnel tail.
    */
   unitsInvoiced?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Price per unit.
    */
@@ -10288,10 +10587,7 @@ export interface WorkCenter {
    * Direct-labor pay rate per hour (feeds work-shift wage roll-up).
    */
   payPerHour?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  rateCurrency?: string | null;
+  rateCurrency?: Iso4217Currency;
   status?: ('active' | 'idle' | 'maintenance' | 'retired') | null;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -10671,10 +10967,7 @@ export interface InventoryMovement {
    * IAS-2 §25 / ASC 330-10-30 cost formula election. Drives how the GL handler picks unitCost when the source-doc cost basis differs from the on-hand average.
    */
   valuationMethod: 'fifo' | 'weighted_average' | 'specific_identification';
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   fromLocation?: (string | null) | WarehouseLocation;
   toLocation?: (string | null) | WarehouseLocation;
   movementAt: string;
@@ -10906,10 +11199,7 @@ export interface Booking {
    * Pre-payment / hold (cents).
    */
   depositAmount?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * IFRS-15 §B40 — drives revenue / breakage recognition on no-show / cancel.
    */
@@ -11039,10 +11329,7 @@ export interface BookableResource {
   rateBasis?:
     | ('per_night' | 'per_day' | 'per_hour' | 'per_half_day' | 'per_week' | 'per_month' | 'per_use' | 'per_distance')
     | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Standard rate per `rateBasis` unit (cents).
    */
@@ -11248,10 +11535,7 @@ export interface Case {
    * The court / tribunal / arbitrator (COFOG 03.3 law-courts).
    */
   forum?: string | null;
-  /**
-   * Jurisdiction — ISO 3166-1 alpha-2 (the governing-law seat).
-   */
-  countryCode?: string | null;
+  countryCode?: Iso3166Country;
   /**
    * The charge / claim / offence asserted — one pole of the matter.
    */
@@ -11398,10 +11682,7 @@ export interface ConsignmentArrangement {
    * Days the consignee can return unsold inventory; required when returnRights = `window`.
    */
   returnWindowDays?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Maximum on-hand value the consignee is approved to hold (cents). Used to gate ship-to-consignee.
    */
@@ -11501,10 +11782,7 @@ export interface ConsignmentSale {
    * IAS-2 §34 cost-of-sales — quantitySold × consignment-inventory.unitCost (cents).
    */
   cogsAmount?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Invoice the consignor raises against the consignee for the sale.
    */
@@ -11572,10 +11850,7 @@ export interface ConsignmentInventory {
    * quantityOnHand × unitCost (cents). Computed on each movement.
    */
   valueOnHand?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * When this row was last reconciled / counted.
    */
@@ -11649,10 +11924,7 @@ export interface CreditMemo {
    * Credit amount in cents.
    */
   amount: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   status?: ('draft' | 'pending_approval' | 'issued' | 'applied' | 'settled' | 'voided') | null;
   /**
    * When the credit memo was issued.
@@ -11743,10 +12015,7 @@ export interface CustomsDeclaration {
    * ISO 3166-1 alpha-2 — country where the goods were manufactured (drives preferential treatment).
    */
   countryOfOrigin?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Σ(line items × declared value), in cents. Drives import VAT + duty calculation.
    */
@@ -12186,10 +12455,7 @@ export interface PaymentRun {
    * Debtor account for pain.001; creditor account for pain.008.
    */
   sourceBankAccount: string | BankAccount;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Bank-requested execution / collection date. Maps to PmtInf/ReqdExctnDt or ReqdColltnDt.
    */
@@ -12321,10 +12587,7 @@ export interface BankAccount {
    * ISO 3166-1 alpha-2 of the bank, auto-derived from the IBAN if blank. Drives country-context API routing (open-banking, tax authority, sanctions screening).
    */
   country?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * GL cash account this bank account posts to.
    */
@@ -12371,10 +12634,7 @@ export interface BankStatement {
   bankAccount: string | GlAccount;
   statementDate: string;
   statementPeriodStart: string;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   openingBalance: number;
   closingBalance: number;
   transactions: {
@@ -12437,10 +12697,7 @@ export interface ProjectMilestone {
   name: string;
   description?: string | null;
   milestoneType?: ('billing' | 'acceptance' | 'payment' | 'internal') | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Milestone billing / revenue amount in cents. Σ(milestones.amount) ≤ project.contractedAmount.
    */
@@ -12550,10 +12807,7 @@ export interface Commitment {
    * Authorized spending limit in cents. SOX §404 controls.
    */
   commitmentAmount: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Purpose of commitment (e.g., "3-year SaaS vendor contract", "consulting engagement")
    */
@@ -12683,10 +12937,7 @@ export interface AccountReconciliation {
   asOfDate: string;
   periodStart?: string | null;
   periodEnd?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Bank statement closing balance / subledger total / counterparty balance. The "external" side.
    */
@@ -12816,10 +13067,7 @@ export interface BankTransaction {
    * ISO 20022 EntryStatus2Code. Most reconcilable items are BOOK. Maps to canonical Camt053Transaction.status.
    */
   bookingStatus?: ('BOOK' | 'PDNG' | 'INFO' | 'FUTR') | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Free-text narrative. Maps to canonical RemittanceInformation.unstructured.
    */
@@ -13267,10 +13515,7 @@ export interface BankReconciliation {
    * The camt.053 statement this reconciliation proves out against.
    */
   bankStatement?: (string | null) | BankStatement;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Closing balance per bank statement (camt.053 CLBD), in cents.
    */
@@ -13787,10 +14032,7 @@ export interface FinancialStatement {
   language?: ('en' | 'es' | 'fr' | 'de' | 'it' | 'pt' | 'ru' | 'ja' | 'zh' | 'ar') | null;
   fiscalPeriodStart: string;
   fiscalPeriodEnd: string;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   statementContent:
     | {
         [k: string]: unknown;
@@ -13980,10 +14222,7 @@ export interface GlPosting {
         accountName?: string | null;
         debitAmount?: number | null;
         creditAmount?: number | null;
-        /**
-         * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-         */
-        currency?: string | null;
+        currency?: Iso4217Currency;
         id?: string | null;
       }[]
     | null;
@@ -14061,10 +14300,7 @@ export interface LeaseModification {
     | 'not_separate_other'
     | 'termination_full'
     | 'termination_partial';
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Snapshot of lease state immediately prior to modification.
    */
@@ -14346,10 +14582,7 @@ export interface PriorPeriodAdjustment {
    * IAS-8 §41 categorisation — drives §49 disclosure depth.
    */
   errorCategory?: ('mathematical' | 'policy_misapplication' | 'oversight' | 'fraud') | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Net adjustment amount in cents (signed: + restates equity up, − restates equity down).
    */
@@ -14595,10 +14828,7 @@ export interface TaxReturn {
   outputTax?: number | null;
   inputTax?: number | null;
   netLiability?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Source TaxCalculation snapshots aggregated into this return.
    */
@@ -14750,10 +14980,7 @@ export interface WipSnapshot {
    * Snapshot of the project's recognitionMethod at period-close.
    */
   recognitionMethod?: ('cost_to_cost' | 'output_units' | 'output_time' | 'output_survey' | 'milestone') | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Total transaction price (cents).
    */
@@ -14850,10 +15077,7 @@ export interface ExpenseReport {
       | 'other';
     description: string;
     merchant?: string | null;
-    /**
-     * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-     */
-    currency?: string | null;
+    currency?: Iso4217Currency;
     /**
      * Amount in expense currency (cents).
      */
@@ -14883,10 +15107,7 @@ export interface ExpenseReport {
     policyExceptionReason?: string | null;
     id?: string | null;
   }[];
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  reimbursementCurrency?: string | null;
+  reimbursementCurrency?: Iso4217Currency;
   /**
    * Σ lines.reimbursementAmount (cents).
    */
@@ -14953,10 +15174,7 @@ export interface PayrollRun {
    * Date the bank releases the funds. Used as pain.001 ReqdExctnDt.
    */
   paymentDate: string;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Tenant bank account funding the disbursement.
    */
@@ -15167,10 +15385,7 @@ export interface JobPosition {
     | null;
   workLocation?: string | null;
   workArrangement?: ('on_site' | 'hybrid' | 'remote') | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   salaryRange?: {
     /**
      * Minimum annual salary (cents).
@@ -15449,10 +15664,7 @@ export interface MaintenanceWorkOrder {
    * partsCost + labourCost + externalCost (cents).
    */
   totalCost?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   safety?: {
     requiresPermitToWork?: boolean | null;
     permitReference?: string | null;
@@ -15648,10 +15860,7 @@ export interface PerformanceReview {
     recommendsPromotion?: boolean | null;
     newJobPosition?: (string | null) | JobPosition;
     recommendsMeritIncrease?: boolean | null;
-    /**
-     * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-     */
-    currency?: string | null;
+    currency?: Iso4217Currency;
     meritIncreasePercent?: number | null;
     /**
      * Annualised increase (cents).
@@ -15747,10 +15956,7 @@ export interface RecruitingPipeline {
       }[]
     | null;
   offerDetails?: {
-    /**
-     * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-     */
-    currency?: string | null;
+    currency?: Iso4217Currency;
     /**
      * Annual base salary (cents).
      */
@@ -15826,10 +16032,7 @@ export interface SalesCommission {
   contract?: (string | null) | Contract;
   customer?: (string | null) | Party;
   closedWonDate: string;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   commissionRule?: {
     planName?: string | null;
     /**
@@ -16016,10 +16219,7 @@ export interface CostVariance {
    * ISO 8601 — date the variance was computed (typically WO close).
    */
   varianceDate: string;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   variances?: {
     /**
      * Σ((actual price − standard price) × actual qty). + = unfavourable. In cents.
@@ -16402,10 +16602,7 @@ export interface DeferredTaxItem {
    * temporaryDifference × taxRate / 100 (cents). Signed.
    */
   deferredTaxAmount: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   recognitionDate: string;
   /**
    * IAS-12 §52 — when the difference is expected to reverse.
@@ -16565,10 +16762,7 @@ export interface ProductionReceipt {
     | boolean
     | null;
   receiptDate: string;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   cost?: {
     /**
      * Σ(component issues × actual cost) for this receipt. In cents.
@@ -17128,10 +17322,7 @@ export interface DepreciationSchedule {
    * Book value after this entry (cents).
    */
   bookValueAfter?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   method?:
     ('straight_line' | 'declining_balance' | 'double_declining' | 'units_of_activity' | 'sum_of_years_digits') | null;
   status?: ('calculated' | 'posted' | 'reversed') | null;
@@ -17178,10 +17369,7 @@ export interface LeasePeriodPosting {
    * Inclusive end of the period.
    */
   periodEnd: string;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Lease liability carrying at start of period (cents). Source of the §36 effective-interest accretion.
    */
@@ -17263,10 +17451,7 @@ export interface TransferPricingFile {
   reference: string;
   reportingYear: number;
   fileType: 'master_file' | 'local_file' | 'cbcr' | 'benchmark' | 'apa' | 'tp_adjustment';
-  /**
-   * ISO 3166-1 alpha-2 — filing jurisdiction (e.g. BG / DE / RO / NL).
-   */
-  jurisdictionCode: string;
+  jurisdictionCode: Iso3166Country;
   /**
    * Entity whose Local File this is (only set when fileType = local_file).
    */
@@ -17298,10 +17483,7 @@ export interface TransferPricingFile {
    */
   cbcrAggregates?:
     | {
-        /**
-         * ISO 3166-1 alpha-2 country code (e.g. BG, DE, RO).
-         */
-        jurisdictionCode: string;
+        jurisdictionCode: Iso3166Country;
         unrelatedRevenue?: number | null;
         relatedRevenue?: number | null;
         totalRevenue?: number | null;
@@ -17319,10 +17501,7 @@ export interface TransferPricingFile {
    * OECD TPG Chapter II — selected method.
    */
   tpMethod?: ('cup' | 'resale_price' | 'cost_plus' | 'tnmm' | 'profit_split' | 'other') | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  reportingCurrency?: string | null;
+  reportingCurrency?: Iso4217Currency;
   /**
    * Group consolidated revenue — drives CbCR threshold (€750M / national equivalents).
    */
@@ -17496,10 +17675,7 @@ export interface RecurringJournal {
    * Optional cap on total runs (e.g. 12 for a 12-month amortisation schedule).
    */
   remainingRuns?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * JE total in cents. For variable amounts, leave 0 and use `amountFormula`.
    */
@@ -18421,10 +18597,7 @@ export interface MineralResourceAsset {
    * IFRS 6 §18 — recognised impairment (cents).
    */
   impairmentLoss?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   status?: ('exploring' | 'evaluating' | 'reclassified' | 'impaired' | 'abandoned') | null;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;

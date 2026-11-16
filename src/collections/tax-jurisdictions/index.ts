@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantRead'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 import { fieldAccess as superAdminField } from '@/access/collections/shared/superAdminOnly'
 
 /** The reference attributes of a jurisdiction are the same for every tenant: only a super-admin writes them. */
