@@ -1,4 +1,5 @@
-import { APIError, Forbidden, type Access, type CollectionBeforeChangeHook, type Field, type PayloadRequest, type Where } from 'payload'
+import { APIError, Forbidden, type Access, type CollectionAfterChangeHook, type CollectionBeforeChangeHook, type Field, type PayloadRequest, type Where } from 'payload'
+import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 
 import { abilityOf, type AbilityOf } from '@/access/collections/shared/abilityAccess'
 import { GOVERNED_TYPES } from '@/utilities/governed'
@@ -98,8 +99,30 @@ export const governedDocument: CollectionBeforeChangeHook = async ({ data, origi
   }
   const error = documentError(next, { ...stored?.document, ...(data as { document?: Record<string, unknown> }).document })
   if (error !== true) throw new APIError(error, 400)
+  const spec = GOVERNED_TYPES.find((t) => t.value === next)
+  if (spec?.uniqueTitle) {
+    const title = (data as { title?: unknown }).title ?? (originalDoc as { title?: unknown } | undefined)?.title
+    const tenant = idOf((data as { tenant?: unknown }).tenant ?? (originalDoc as { tenant?: unknown } | undefined)?.tenant)
+    const self = (originalDoc as { id?: unknown } | undefined)?.id
+    const twins = await req.payload.find({
+      collection: 'pages',
+      where: { and: [{ documentType: { equals: next } }, { title: { equals: title } }, ...(tenant ? [{ tenant: { equals: tenant } }] : []), ...(self ? [{ id: { not_equals: self } }] : [])] },
+      limit: 1,
+      pagination: false,
+      depth: 0,
+      overrideAccess: true,
+      req,
+    })
+    if (twins.docs.length) throw new APIError(`A ${spec.label.toLowerCase()} named "${String(title)}" already exists here.`, 409)
+  }
   return data
 }
+
+const idOf = (value: unknown): unknown => (value && typeof value === 'object' && 'id' in value ? (value as { id: unknown }).id : value)
+
+const auditTrail = auditTrailAfterChange('pages')
+/** Every change to a governed document leaves an audit-trail entry (ISO 19011); a website page needs none. */
+export const governedAuditTrail: CollectionAfterChangeHook = (args) => ((args.doc as { documentType?: unknown } | undefined)?.documentType ? auditTrail(args) : args.doc)
 
 /** The page's governed-document type and the concern the types share. */
 export const governedDocumentFields = (): Field[] => [

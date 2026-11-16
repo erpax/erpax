@@ -428,7 +428,6 @@ export interface Config {
     'api-audit-events': ApiAuditEvent;
     'audit-events': AuditEvent;
     'audit-submissions': AuditSubmission;
-    'data-processing-activities': DataProcessingActivity;
     'data-subject-requests': DataSubjectRequest;
     memories: Memory;
     'mineral-resource-assets': MineralResourceAsset;
@@ -654,7 +653,6 @@ export interface Config {
     'api-audit-events': ApiAuditEventsSelect<false> | ApiAuditEventsSelect<true>;
     'audit-events': AuditEventsSelect<false> | AuditEventsSelect<true>;
     'audit-submissions': AuditSubmissionsSelect<false> | AuditSubmissionsSelect<true>;
-    'data-processing-activities': DataProcessingActivitiesSelect<false> | DataProcessingActivitiesSelect<true>;
     'data-subject-requests': DataSubjectRequestsSelect<false> | DataSubjectRequestsSelect<true>;
     memories: MemoriesSelect<false> | MemoriesSelect<true>;
     'mineral-resource-assets': MineralResourceAssetsSelect<false> | MineralResourceAssetsSelect<true>;
@@ -1633,7 +1631,14 @@ export interface Page {
    * A governed document is never public; its type names who reads and writes it. Empty for a website page.
    */
   documentType?:
-    ('reporting-standard' | 'management-certification' | 'statutory-report-template' | 'compliance-deadline') | null;
+    | (
+        | 'reporting-standard'
+        | 'management-certification'
+        | 'statutory-report-template'
+        | 'compliance-deadline'
+        | 'processing-activity'
+      )
+    | null;
   /**
    * What every governed document has. The title is its name and the content its text.
    */
@@ -1653,7 +1658,14 @@ export interface Page {
     /**
      * What the standard of this type needs beyond the fields above: one block, matching the type.
      */
-    details?: (ManagementCertificationBlock | StatutoryReportTemplateBlock | ComplianceDeadlineBlock)[] | null;
+    details?:
+      | (
+          | ManagementCertificationBlock
+          | StatutoryReportTemplateBlock
+          | ComplianceDeadlineBlock
+          | ProcessingActivityBlock
+        )[]
+      | null;
     /**
      * Links FROM this document to another — a standard mapped to another, a template to its source — with the element rules.
      */
@@ -3410,6 +3422,70 @@ export interface ComplianceRequirement {
   } | null;
   updatedAt: string;
   createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ProcessingActivityBlock".
+ */
+export interface ProcessingActivityBlock {
+  controllerOrProcessor: 'controller' | 'processor' | 'joint_controller';
+  lawfulBasis: 'consent' | 'contract' | 'legal_obligation' | 'vital_interests' | 'public_task' | 'legitimate_interests';
+  status?: ('active' | 'suspended' | 'retired') | null;
+  dataCategories?:
+    | {
+        category: string;
+        /**
+         * Art.9 special category data?
+         */
+        special?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  dataSubjectCategories?:
+    | {
+        /**
+         * e.g. customers, employees, prospects.
+         */
+        category: string;
+        id?: string | null;
+      }[]
+    | null;
+  recipientCategories?:
+    | {
+        recipient: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Art.44 transfers — list each destination + safeguard.
+   */
+  thirdCountryTransfers?:
+    | {
+        country: string;
+        safeguard?: ('adequacy_decision' | 'sccs' | 'bcrs' | 'derogation') | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * How long we keep this data + basis.
+   */
+  retentionPeriod: string;
+  /**
+   * Schedule a review at least annually.
+   */
+  reviewDueAt: string;
+  /**
+   * Data Protection Officer responsible for this activity.
+   */
+  dpo?: (string | null) | User;
+  /**
+   * Technical + organisational measures (Art.32).
+   */
+  securityMeasures?: string | null;
+  notes?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'processing-activity';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -18285,88 +18361,6 @@ export interface AuditSubmission {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "data-processing-activities".
- */
-export interface DataProcessingActivity {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  activityName: string;
-  purpose: string;
-  controllerOrProcessor: 'controller' | 'processor' | 'joint_controller';
-  lawfulBasis: 'consent' | 'contract' | 'legal_obligation' | 'vital_interests' | 'public_task' | 'legitimate_interests';
-  dataCategories?:
-    | {
-        category: string;
-        /**
-         * Art.9 special category data?
-         */
-        special?: boolean | null;
-        id?: string | null;
-      }[]
-    | null;
-  dataSubjectCategories?:
-    | {
-        /**
-         * e.g. customers, employees, prospects.
-         */
-        category: string;
-        id?: string | null;
-      }[]
-    | null;
-  recipientCategories?:
-    | {
-        recipient: string;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Art.44 transfers — list each destination + safeguard.
-   */
-  thirdCountryTransfers?:
-    | {
-        country: string;
-        safeguard?: ('adequacy_decision' | 'sccs' | 'bcrs' | 'derogation') | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * How long we keep this data + basis.
-   */
-  retentionPeriod: string;
-  /**
-   * Technical + organisational measures (Art.32).
-   */
-  securityMeasures?: string | null;
-  status?: ('active' | 'suspended' | 'retired') | null;
-  /**
-   * Schedule a review at least annually.
-   */
-  reviewDueAt: string;
-  /**
-   * Data Protection Officer responsible for this activity.
-   */
-  dpo?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "data-subject-requests".
  */
 export interface DataSubjectRequest {
@@ -20297,7 +20291,6 @@ export interface PayloadQueryPreset {
     | 'api-audit-events'
     | 'audit-events'
     | 'audit-submissions'
-    | 'data-processing-activities'
     | 'data-subject-requests'
     | 'memories'
     | 'mineral-resource-assets'
@@ -20809,6 +20802,7 @@ export interface PagesSelect<T extends boolean = true> {
               'management-certification'?: T | ManagementCertificationBlockSelect<T>;
               'statutory-report-template'?: T | StatutoryReportTemplateBlockSelect<T>;
               'compliance-deadline'?: T | ComplianceDeadlineBlockSelect<T>;
+              'processing-activity'?: T | ProcessingActivityBlockSelect<T>;
             };
         links?:
           | T
@@ -21002,6 +20996,48 @@ export interface ComplianceDeadlineBlockSelect<T extends boolean = true> {
             };
         id?: T;
       };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ProcessingActivityBlock_select".
+ */
+export interface ProcessingActivityBlockSelect<T extends boolean = true> {
+  controllerOrProcessor?: T;
+  lawfulBasis?: T;
+  status?: T;
+  dataCategories?:
+    | T
+    | {
+        category?: T;
+        special?: T;
+        id?: T;
+      };
+  dataSubjectCategories?:
+    | T
+    | {
+        category?: T;
+        id?: T;
+      };
+  recipientCategories?:
+    | T
+    | {
+        recipient?: T;
+        id?: T;
+      };
+  thirdCountryTransfers?:
+    | T
+    | {
+        country?: T;
+        safeguard?: T;
+        id?: T;
+      };
+  retentionPeriod?: T;
+  reviewDueAt?: T;
+  dpo?: T;
+  securityMeasures?: T;
+  notes?: T;
   id?: T;
   blockName?: T;
 }
@@ -27522,57 +27558,6 @@ export interface AuditSubmissionsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "data-processing-activities_select".
- */
-export interface DataProcessingActivitiesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  activityName?: T;
-  purpose?: T;
-  controllerOrProcessor?: T;
-  lawfulBasis?: T;
-  dataCategories?:
-    | T
-    | {
-        category?: T;
-        special?: T;
-        id?: T;
-      };
-  dataSubjectCategories?:
-    | T
-    | {
-        category?: T;
-        id?: T;
-      };
-  recipientCategories?:
-    | T
-    | {
-        recipient?: T;
-        id?: T;
-      };
-  thirdCountryTransfers?:
-    | T
-    | {
-        country?: T;
-        safeguard?: T;
-        id?: T;
-      };
-  retentionPeriod?: T;
-  securityMeasures?: T;
-  status?: T;
-  reviewDueAt?: T;
-  dpo?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "data-subject-requests_select".
  */
 export interface DataSubjectRequestsSelect<T extends boolean = true> {
@@ -29216,7 +29201,6 @@ export interface CollectionQueryWidget {
       | 'api-audit-events'
       | 'audit-events'
       | 'audit-submissions'
-      | 'data-processing-activities'
       | 'data-subject-requests'
       | 'memories'
       | 'mineral-resource-assets'
@@ -29427,7 +29411,6 @@ export interface ActivityWidget {
           | 'api-audit-events'
           | 'audit-events'
           | 'audit-submissions'
-          | 'data-processing-activities'
           | 'data-subject-requests'
           | 'memories'
           | 'mineral-resource-assets'
@@ -29676,7 +29659,6 @@ export interface TaskCreateCollectionExport {
       | 'api-audit-events'
       | 'audit-events'
       | 'audit-submissions'
-      | 'data-processing-activities'
       | 'data-subject-requests'
       | 'memories'
       | 'mineral-resource-assets'

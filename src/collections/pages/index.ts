@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { governedDocument, governedDocumentFields, pageRead, pageWrite } from '@/fields/group/governedDocument'
+import { governedAuditTrail, governedDocument, governedDocumentFields, pageRead, pageWrite } from '@/fields/group/governedDocument'
 import { Archive, CallToAction, Content, FormBlock, MediaBlock } from '@/blocks/config'
 import { hero } from '@/components/hero'
 import { documentPreviewAdmin } from '@/utilities/shareds'
@@ -178,7 +178,7 @@ export const Pages: CollectionConfig = {
     ...governedDocumentFields(),
   ],
   hooks: {
-    afterChange: [revalidatePage],
+    afterChange: [revalidatePage, governedAuditTrail],
     beforeValidate: [fillSeo, checkLeadPage],
     beforeChange: [...pagesBeforeChange, governedDocument],
     afterDelete: [revalidateDelete],

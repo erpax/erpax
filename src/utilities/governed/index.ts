@@ -19,6 +19,8 @@ export interface GovernedType {
   readonly requires: readonly ('code' | 'effectiveDate' | 'classification' | 'jurisdiction')[]
   /** The fields this type's standard needs beyond the shared concern: `document.details`, one block. */
   readonly block?: Block
+  /** No two documents of this type in one tenant share a title (the name is the identity, as a GDPR record's is). */
+  readonly uniqueTitle?: boolean
   /** A rule of this type over its details block (and the shared concern it sits in), or true. */
   readonly check?: (details: Record<string, unknown>, document: Record<string, unknown>) => string | true
 }
@@ -304,6 +306,127 @@ export const deadlineError = (details: Record<string, unknown>): string | true =
     ? 'A submitted or completed deadline names its submission date.'
     : true
 
+/**
+ * One entry of the record of processing activities (GDPR Art. 30): who processes what, on which basis,
+ * for whom, where it goes, and how long it is kept.
+ *
+ * @standard ISO-8601-1:2019 date-time review-due-at
+ * @compliance GDPR Art.30(1) records-controller
+ * @compliance GDPR Art.30(2) records-processor
+ * @compliance GDPR Art.5(1)(e) storage-limitation
+ * @compliance ISO-27701:2025 records-of-processing
+ * @audit ISO-19011:2018 audit-trail ropa-evidence
+ * @security ISO-27001 A.5.34 privacy-and-pii
+ */
+export const ProcessingActivity: Block = {
+  slug: 'processing-activity',
+  interfaceName: 'ProcessingActivityBlock',
+  labels: { singular: 'Processing activity', plural: 'Processing activities' },
+  fields: [
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'controllerOrProcessor',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'Controller (Art.30(1))', value: 'controller' },
+            { label: 'Processor (Art.30(2))', value: 'processor' },
+            { label: 'Joint controller (Art.26)', value: 'joint_controller' },
+          ],
+        },
+        {
+          name: 'lawfulBasis',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'Consent (Art.6(1)(a))', value: 'consent' },
+            { label: 'Contract (Art.6(1)(b))', value: 'contract' },
+            { label: 'Legal obligation (Art.6(1)(c))', value: 'legal_obligation' },
+            { label: 'Vital interests (Art.6(1)(d))', value: 'vital_interests' },
+            { label: 'Public task (Art.6(1)(e))', value: 'public_task' },
+            { label: 'Legitimate interests (Art.6(1)(f))', value: 'legitimate_interests' },
+          ],
+        },
+        {
+          name: 'status',
+          type: 'select',
+          defaultValue: 'active',
+          options: [
+            { label: 'Active', value: 'active' },
+            { label: 'Suspended', value: 'suspended' },
+            { label: 'Retired', value: 'retired' },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'dataCategories',
+      type: 'array',
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'category', type: 'text', required: true },
+            { name: 'special', type: 'checkbox', defaultValue: false, admin: { description: 'Art.9 special category data?' } },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'dataSubjectCategories',
+      type: 'array',
+      fields: [{ name: 'category', type: 'text', required: true, admin: { description: 'e.g. customers, employees, prospects.' } }],
+    },
+    {
+      name: 'recipientCategories',
+      type: 'array',
+      fields: [{ name: 'recipient', type: 'text', localized: true, required: true }],
+    },
+    {
+      name: 'thirdCountryTransfers',
+      type: 'array',
+      admin: { description: 'Art.44 transfers — list each destination + safeguard.' },
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'country', type: 'text', required: true },
+            {
+              name: 'safeguard',
+              type: 'select',
+              options: [
+                { label: 'Adequacy decision', value: 'adequacy_decision' },
+                { label: 'Standard contractual clauses', value: 'sccs' },
+                { label: 'Binding corporate rules', value: 'bcrs' },
+                { label: 'Derogation', value: 'derogation' },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'retentionPeriod', type: 'text', required: true, admin: { description: 'How long we keep this data + basis.' } },
+        { name: 'reviewDueAt', type: 'date', required: true, admin: { description: 'Schedule a review at least annually.' } },
+        { name: 'dpo', type: 'relationship', relationTo: 'users', admin: { description: 'Data Protection Officer responsible for this activity.' } },
+      ],
+    },
+    { name: 'securityMeasures', type: 'textarea', admin: { description: 'Technical + organisational measures (Art.32).' } },
+    { name: 'notes', type: 'textarea' },
+  ],
+}
+
+/** A transfer to a third country names the safeguard it rests on (GDPR Art. 44–46). */
+export const processingError = (details: Record<string, unknown>): string | true => {
+  const transfers = (details.thirdCountryTransfers as { country?: string; safeguard?: string | null }[] | undefined) ?? []
+  const bare = transfers.filter((t) => !t.safeguard).map((t) => t.country)
+  return bare.length ? `A transfer to a third country names its safeguard (${bare.join(', ')}).` : true
+}
+
 export const GOVERNED_TYPES: readonly GovernedType[] = [
   // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
   {
@@ -345,5 +468,17 @@ export const GOVERNED_TYPES: readonly GovernedType[] = [
     requires: [],
     block: ComplianceDeadline,
     check: deadlineError,
+  },
+  // was data-processing-activities: read by every member of the tenant; written by admins. The activity's
+  // name is the page title (unique in its tenant), its purpose the page's content.
+  {
+    value: 'processing-activity',
+    label: 'Processing activity',
+    read: ['user'],
+    write: ['admin'],
+    requires: [],
+    uniqueTitle: true,
+    block: ProcessingActivity,
+    check: processingError,
   },
 ]
