@@ -9,6 +9,7 @@ import { GetPlatformProxyOptions } from 'wrangler'
 import { multiTenantPlugin } from '@payloadcms/plugin-multi-tenant'
 import { mcpPlugin } from '@payloadcms/plugin-mcp'
 import { recordGap } from '@/plugins/mcp/gap'
+import { quantumTool } from '@/plugins/mcp/quantum'
 import { stripePlugin } from '@payloadcms/plugin-stripe'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { referenceTargets, referencesField } from '@/seed/forms'
@@ -415,6 +416,7 @@ export default buildConfig({
     // A failed call is recorded as an `emerging_gap` memory (src/plugins/mcp/gap).
     mcpPlugin({
       hooks: { afterToolCall: [recordGap] },
+      tools: { quantum: quantumTool },
     }),
     // Stripe — the official plugin, INERT until a secret is set: with `sync: []` it adds one endpoint
     // (`/api/stripe/webhooks`) and no field, so there is no schema change and nothing to migrate.

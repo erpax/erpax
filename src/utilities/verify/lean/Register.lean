@@ -12,7 +12,7 @@
 
   which is integer arithmetic a kernel decides.
 
-  Two carriers of the same circuit live here, as they do in the matter twin (src/quantum/register):
+  Two carriers of the same circuit live here, as they do in the matter twin (src/utilities/quantum):
 
     basis path    cnot 0 1 (x 0 0) = 3        — |00⟩ → X → |01⟩ → CNOT → |11⟩, on the index alone
     amplitudes    cnot01 (h0 zero) = ⟨1,0,0,1⟩ — the Bell state, support {0, 3}, one halving
