@@ -25,6 +25,7 @@
  */
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
+import { APIError } from 'payload'
 import { PostCloseAnalytics } from '@/utilities/post/close/analytics'
 import type { AuditReport, Consolidation } from '@/utilities/types'
 
@@ -195,12 +196,12 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
 
         // Verify audit report is complete
         if (auditReport.auditStatus !== 'approved') {
-          throw new Error(
-            `Audit report must be completed (status: approved) before analytics generation. Current status: ${auditReport.auditStatus}`,
-          )
+          throw new APIError(
+            `Audit report must be completed (status: approved) before analytics generation. Current status: ${auditReport.auditStatus}`, 400)
         }
       }
     } catch (err) {
+      if (err instanceof APIError) throw err // a refusal above stays a refusal, not a failed query
       console.warn('[validatePostCloseAnalytics] Failed to query audit report:', err)
       throw new Error(
         `Failed to query audit report: ${err instanceof Error ? err.message : String(err)}`,
@@ -232,12 +233,12 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
 
         // Verify consolidation is complete
         if (consolidation.consolidationStatus !== 'consolidated') {
-          throw new Error(
-            `Consolidation must be completed (status: consolidated) before analytics generation. Current status: ${consolidation.consolidationStatus}`,
-          )
+          throw new APIError(
+            `Consolidation must be completed (status: consolidated) before analytics generation. Current status: ${consolidation.consolidationStatus}`, 400)
         }
       }
     } catch (err) {
+      if (err instanceof APIError) throw err // a refusal above stays a refusal, not a failed query
       console.warn('[validatePostCloseAnalytics] Failed to query consolidation:', err)
       throw new Error(
         `Failed to query consolidation: ${err instanceof Error ? err.message : String(err)}`,

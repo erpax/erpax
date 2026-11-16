@@ -26,6 +26,7 @@
  */
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
+import { APIError } from 'payload'
 import { TaxPeriodReconciliation } from '@/utilities/tax/period/reconciliation'
 import type { FiscalPeriod } from '@/utilities/types'
 
@@ -94,7 +95,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
   }
 
   if (!fiscalPeriodEndDate) {
-    throw new Error('Tax period must be linked to a fiscal period or have explicit period-end date')
+    throw new APIError('Tax period must be linked to a fiscal period or have explicit period-end date', 400)
   }
 
   // Query transfer pricing adjustments for this tax period + jurisdiction
@@ -164,7 +165,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
     !readiness.allTransferPricingDocumented ||
     !readiness.taxAuthorityCompliance
   ) {
-    throw new Error(`Tax period prerequisites not met: ${readiness.complianceErrors.join('; ')}`)
+    throw new APIError(`Tax period prerequisites not met: ${readiness.complianceErrors.join('; ')}`, 400)
   }
 
   // Store readiness assessment

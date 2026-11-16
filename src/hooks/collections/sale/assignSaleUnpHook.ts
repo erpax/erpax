@@ -20,6 +20,7 @@
  */
 
 import type { CollectionBeforeChangeHook } from 'payload'
+import { APIError } from 'payload'
 import { formatUnp, isValidUnp } from '@/utilities/naredba/n/18'
 import { requiresFiscalization } from '@/utilities/naredba/n/18'
 
@@ -102,13 +103,13 @@ export const assignSaleUnpHook =
       // Frozen on creation — reject any later attempt to change the УНП.
       const prev = str(orig?.unp)
       if (prev && typeof d.unp === 'string' && d.unp !== prev) {
-        throw new Error(`Наредба Н-18: УНП is frozen at creation; '${prev}' cannot become '${String(d.unp)}'.`)
+        throw new APIError(`Наредба Н-18: УНП is frozen at creation; '${prev}' cannot become '${String(d.unp)}'.`, 403)
       }
       // No bypass: closing an as-yet-unnumbered in-scope sale must number it now.
       if (effectiveClosed && !alreadyNumbered) {
         const device = str(d.fiscalDeviceNumber) ?? str(orig?.fiscalDeviceNumber)
         if (device) await assignNextUnp(collectionSlug, d, device, req)
-        else if (inScope) throw new Error(NO_BYPASS)
+        else if (inScope) throw new APIError(NO_BYPASS, 403)
         // exempt + no device → lawfully closes without a УНП (out of scope)
       }
       return data
@@ -121,7 +122,7 @@ export const assignSaleUnpHook =
     if (!device) {
       // No device: allowed for an open draft, or a closed *exempt* sale.
       // A closed in-scope (cash/card/voucher) sale without a device is a bypass.
-      if (effectiveClosed && inScope) throw new Error(NO_BYPASS)
+      if (effectiveClosed && inScope) throw new APIError(NO_BYPASS, 403)
       return data
     }
     await assignNextUnp(collectionSlug, d, device, req)

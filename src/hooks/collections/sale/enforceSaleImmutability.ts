@@ -17,6 +17,7 @@
  */
 
 import type { CollectionBeforeChangeHook } from 'payload'
+import { APIError } from 'payload'
 
 /** A completed sale is one of these — its content is frozen. */
 const COMPLETED = new Set(['closed', 'voided', 'reversed'])
@@ -45,19 +46,17 @@ export const enforceSaleImmutability: CollectionBeforeChangeHook = ({ data, oper
 
   for (const field of FROZEN_FIELDS) {
     if (field in d && JSON.stringify(d[field]) !== JSON.stringify(o[field])) {
-      throw new Error(
+      throw new APIError(
         `Наредба Н-18: a completed sale is immutable — '${field}' cannot change on УНП ${String(o.unp)}. ` +
-          `Issue a reversal (сторно) instead.`,
-      )
+          `Issue a reversal (сторно) instead.`, 403)
     }
   }
 
   // Status may only advance completed → reversed (the сторно seal); no other transition.
   const nextStatus = d.status
   if (typeof nextStatus === 'string' && nextStatus !== prevStatus && nextStatus !== 'reversed') {
-    throw new Error(
-      `Наредба Н-18: a ${prevStatus} sale (УНП ${String(o.unp)}) may only transition to 'reversed', not '${nextStatus}'.`,
-    )
+    throw new APIError(
+      `Наредба Н-18: a ${prevStatus} sale (УНП ${String(o.unp)}) may only transition to 'reversed', not '${nextStatus}'.`, 403)
   }
 
   return data

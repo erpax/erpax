@@ -21,6 +21,7 @@
  */
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
+import { APIError } from 'payload'
 import { IntercompanyReconciliation } from '@/utilities/intercompany/reconciliation'
 
 interface ConsolidationData {
@@ -65,9 +66,8 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
   }
 
   if (entityIds.size === 0) {
-    throw new Error(
-      'Consolidation group must include at least parent entity and subsidiaries',
-    )
+    throw new APIError(
+      'Consolidation group must include at least parent entity and subsidiaries', 400)
   }
 
   // Query closing status for all entities
@@ -207,9 +207,8 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
 
   // Check readiness; throw if not ready for consolidation
   if (!readiness.allEntitiesClosed || !readiness.allIntercompanyReconciled) {
-    throw new Error(
-      `Consolidation prerequisites not met: ${readiness.errors.join('; ')}`,
-    )
+    throw new APIError(
+      `Consolidation prerequisites not met: ${readiness.errors.join('; ')}`, 400)
   }
 
   // Store readiness assessment

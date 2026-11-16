@@ -27,3 +27,14 @@ describe('enforceSegregationOfDuties — the creator Payload keeps', () => {
     await expect(hook({ operation: 'update', data: { approvedBy: 'u1', createdBy: 'someone-else' }, originalDoc, req: { user: { id: 'u3' } } })).rejects.toThrow(/Segregation of duties/)
   })
 })
+
+describe('enforceSegregationOfDuties — the refusal reaches the caller', () => {
+  it('is a public 403, not a 500 the client sees as "Something went wrong"', async () => {
+    const hook = enforceSegregationOfDuties('approvedBy', 'createdBy') as unknown as (a: object) => Promise<unknown>
+    await expect(hook({ operation: 'update', data: { approvedBy: 'u1' }, originalDoc: { createdBy: 'u1' } })).rejects.toMatchObject({
+      status: 403,
+      isPublic: true,
+      message: expect.stringMatching(/Segregation of duties/),
+    })
+  })
+})

@@ -14,6 +14,7 @@
  */
 
 import type { CollectionBeforeChangeHook } from 'payload'
+import { APIError } from 'payload'
 
 /**
  * The id behind a reference: a plain id, a populated doc (`{ id }`), or Payload 4's built-in authorship
@@ -39,10 +40,9 @@ export function enforceSegregationOfDuties(
     // after collection hooks, so the creator is the request's user unless a trusted caller supplied one.
     const creator = idOf(originalDoc?.[creatorField] ?? data?.[creatorField] ?? (operation === 'create' ? req?.user?.id : undefined))
     if (creator !== undefined && creator === approver) {
-      throw new Error(
+      throw new APIError(
         errorMessage ||
-          `Segregation of duties violation: the creator (${creator}) cannot also approve this record. ISO 27002 §5.3 / SOX §404.`,
-      )
+          `Segregation of duties violation: the creator (${creator}) cannot also approve this record. ISO 27002 §5.3 / SOX §404.`, 403)
     }
     return data
   }

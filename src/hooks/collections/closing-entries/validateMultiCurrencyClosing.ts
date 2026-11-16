@@ -27,6 +27,7 @@ import { exactAbs } from '@/utilities/algebra'
  */
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
+import { APIError } from 'payload'
 import { CurrencyReconciliation } from '@/utilities/currency/reconciliation'
 import type { CurrencyRate, LegalEntity } from '@/utilities/types'
 
@@ -178,9 +179,8 @@ export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingE
 
   // Check for errors
   if (reconciliation.errors.length > 0) {
-    throw new Error(
-      `Multi-currency closing validation failed: ${reconciliation.errors.join('; ')}`,
-    )
+    throw new APIError(
+      `Multi-currency closing validation failed: ${reconciliation.errors.join('; ')}`, 400)
   }
 
   // Store reconciliation data for reporting

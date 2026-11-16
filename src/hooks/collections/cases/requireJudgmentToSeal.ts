@@ -7,6 +7,7 @@
  * @see ../index.ts (parent collection config)
  */
 import type { CollectionBeforeChangeHook } from 'payload'
+import { APIError } from 'payload'
 
 /**
  * A matter is sealed, never deleted (the append-only / no-erasure law).
@@ -26,9 +27,8 @@ export const requireJudgmentToSeal: CollectionBeforeChangeHook = ({ data }) => {
   const status = (data as { status?: unknown })?.status
   const judgment = String((data as { judgment?: unknown })?.judgment ?? '').trim()
   if (status === 'sealed' && !judgment) {
-    throw new Error(
-      'cases: a matter seals only when charge↔defence balance into a judgment — set `judgment` before sealing (justice balances like a ledger).',
-    )
+    throw new APIError(
+      'cases: a matter seals only when charge↔defence balance into a judgment — set `judgment` before sealing (justice balances like a ledger).', 400)
   }
   return data
 }

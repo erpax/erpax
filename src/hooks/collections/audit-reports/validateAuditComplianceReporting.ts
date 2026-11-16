@@ -26,6 +26,7 @@
  */
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
+import { APIError } from 'payload'
 import { AuditComplianceReporting } from '@/utilities/audit/compliance/reporting'
 import type { Consolidation } from '@/utilities/types'
 
@@ -123,12 +124,12 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
 
         // Verify consolidation is complete
         if (consolidation.consolidationStatus !== 'consolidated') {
-          throw new Error(
-            `Consolidation must be completed (status: consolidated) before audit report generation. Current status: ${consolidation.consolidationStatus}`,
-          )
+          throw new APIError(
+            `Consolidation must be completed (status: consolidated) before audit report generation. Current status: ${consolidation.consolidationStatus}`, 400)
         }
       }
     } catch (err) {
+      if (err instanceof APIError) throw err // a refusal above stays a refusal, not a failed query
       console.warn('[validateAuditComplianceReporting] Failed to query consolidation:', err)
       throw new Error(
         `Failed to query consolidation: ${err instanceof Error ? err.message : String(err)}`,
@@ -152,13 +153,13 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
       const doc = tp as unknown as TaxPeriod
       // Verify tax period is closed or posted
       if (doc.taxStatus !== 'tax-closed' && doc.taxStatus !== 'adjustment-posted') {
-        throw new Error(
-          `Tax period ${doc.taxPeriodName} must be closed (status: tax-closed or adjustment-posted) before audit report generation. Current status: ${doc.taxStatus}`,
-        )
+        throw new APIError(
+          `Tax period ${doc.taxPeriodName} must be closed (status: tax-closed or adjustment-posted) before audit report generation. Current status: ${doc.taxStatus}`, 400)
       }
       taxPeriods.push(doc)
     }
   } catch (err) {
+    if (err instanceof APIError) throw err // a refusal above stays a refusal, not a failed query
     console.warn('[validateAuditComplianceReporting] Failed to query tax periods:', err)
     throw new Error(
       `Failed to query tax periods: ${err instanceof Error ? err.message : String(err)}`,
