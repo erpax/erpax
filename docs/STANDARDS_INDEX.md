@@ -10,6 +10,7 @@
 ## @standard
 
 ```text
+src/access/collections/connections/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/access/collections/search/readAccess.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/access/collections/shared/abilityAccess.ts:12: * @standard NIST INCITS-359-2012 §6.1 permission-assignment · §6.2 review-functions
 src/access/collections/shared/anyone.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
@@ -18,7 +19,7 @@ src/access/collections/shared/createMembershipAdminMutateAccess.ts:17: * @standa
 src/access/collections/shared/isAdmin.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/collections/shared/isDocumentOwner.ts:7: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/collections/shared/multiTenantRead.ts:11: * @standard OWASP-ASVS V4 access-control
-src/access/collections/shared/multiTenantRead.ts:178: * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
+src/access/collections/shared/multiTenantRead.ts:179: * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
 src/access/collections/shared/multiTenantRead.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/collections/shared/multiTenantRead.ts:5: * @standard NIST SP-800-162 attribute-based-access-control
 src/access/collections/shared/partyAccess.ts:10: * @standard NIST INCITS-359-2012 §6.1 object-scoped role assignment
@@ -2007,6 +2008,7 @@ tests/helpers/seedUser.ts:5: * @rfc 5322 internet-message-format email-fixture
 ## @compliance
 
 ```text
+src/access/collections/connections/index.ts:10: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 src/access/collections/search/readAccess.ts:14: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 src/access/collections/shared/adminOrPublishedStatus.ts:15: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 src/access/collections/shared/createMembershipAdminMutateAccess.ts:22: * @compliance SOC-2 CC6.1 logical-access-controls
@@ -2953,6 +2955,8 @@ tests/e2e/standards/ifrs/ifrs-16-leases.e2e.spec.ts:15: * @accounting US-GAAP AS
 ## @security
 
 ```text
+src/access/collections/connections/index.ts:9: * @security ISO-27001 A.5.15 access-control
+src/access/collections/connections/test.ts:5: * @security ISO-27001 A.5.15 access-control
 src/access/collections/search/readAccess.test.ts:5: * @security ISO-27001 A.5.15 access-control
 src/access/collections/search/readAccess.ts:13: * @security ISO-27001 A.5.15 access-control
 src/access/collections/shared/abilityAccess.ts:13: * @security ISO-27001 A.5.15 access-control · A.8.3 information-access-restriction
@@ -2972,7 +2976,7 @@ src/access/collections/shared/isAdmin.ts:8: * @security ISO-27002 §5.15 access-
 src/access/collections/shared/isDocumentOwner.ts:8: * @security ISO-27001 A.5.18 access-rights
 src/access/collections/shared/isDocumentOwner.ts:9: * @security ISO-27002 §5.15 access-control
 src/access/collections/shared/multiTenantRead.ts:10: * @security ISO-27002 §5.3 segregation-of-duties
-src/access/collections/shared/multiTenantRead.ts:179: * @security ISO-27001 A.5.15 access-control
+src/access/collections/shared/multiTenantRead.ts:180: * @security ISO-27001 A.5.15 access-control
 src/access/collections/shared/multiTenantRead.ts:6: * @security ISO-27001 A.5.15 access-control
 src/access/collections/shared/multiTenantRead.ts:7: * @security ISO-27001 A.5.18 access-rights
 src/access/collections/shared/multiTenantRead.ts:8: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation

@@ -27,9 +27,9 @@
  * @see docs/STANDARDS.md §4.4
  */
 
-import { sha256Hex } from '@/utilities/crypto'
 import type { CollectionAfterChangeHook } from 'payload'
-import { v4 as uuid } from 'uuid'
+import { appendAuditRow } from '@/utilities/audit/trail'
+import { randomUuid } from '@/utilities/crypto'
 import type { AuditEntry, AuditOperation } from '@/utilities/iso/19011'
 
 /**
@@ -62,7 +62,7 @@ export function auditTrailAfterChange(
   collectionSlug: string,
 ): CollectionAfterChangeHook {
   return async ({ doc, previousDoc, operation, req }) => {
-    const eventId = uuid()
+    const eventId = randomUuid()
     const entry: AuditEntry = {
       id: eventId,
       timestamp: new Date().toISOString(),
@@ -89,56 +89,17 @@ export function auditTrailAfterChange(
     // create access to audit-events directly.
     if (entry.tenantId !== null && entry.documentId !== null) {
       try {
-        // Slice QQQQ — Merkle chain. Look up most-recent prior row's
-        // rowHash for this tenant; new row's previousHash points to it
-        // and rowHash hashes (eventId, tenant, timestamp, eventType,
-        // collectionSlug, documentId, user, previousHash). Any insert /
-        // delete / mutation in the historical log breaks the chain at
-        // the integrity-check gate.
-        let previousHash = ''
-        try {
-          const prior = await req.payload.find({
-            collection: 'audit-events',
-            where: { tenant: { equals: entry.tenantId } },
-            sort: '-timestamp',
-            limit: 1,
-            overrideAccess: true,
-            depth: 0,
-          })
-          const top = (prior.docs[0] as unknown as { rowHash?: string } | undefined)
-          previousHash = top?.rowHash ?? ''
-        } catch {
-          previousHash = ''
-        }
-        const canonical = JSON.stringify({
-          eventId,
+        // The tenant's hash chain, appended through the one writer of audit-events rows.
+        await appendAuditRow(req.payload, {
           tenant: String(entry.tenantId),
-          timestamp: entry.timestamp,
           eventType: `${entry.collection}:${entry.operation}`,
           collectionSlug: entry.collection,
+          operation: entry.operation,
           documentId: String(entry.documentId),
-          user: entry.userId === null ? null : String(entry.userId),
-          previousHash,
-        })
-        const rowHash = sha256Hex(canonical)
-        await req.payload.create({
-          collection: 'audit-events',
-          overrideAccess: true,
-          data: {
-            tenant: String(entry.tenantId),
-            eventId,
-            timestamp: entry.timestamp,
-            eventType: `${entry.collection}:${entry.operation}`,
-            collectionSlug: entry.collection,
-            operation: entry.operation,
-            documentId: String(entry.documentId),
-            user: entry.userId == null ? undefined : String(entry.userId),
-            previousStatus: entry.previousStatus ?? undefined,
-            nextStatus: entry.nextStatus ?? undefined,
-            severity: 'info',
-            previousHash,
-            rowHash,
-          },
+          user: entry.userId == null ? undefined : String(entry.userId),
+          previousStatus: entry.previousStatus ?? undefined,
+          nextStatus: entry.nextStatus ?? undefined,
+          timestamp: entry.timestamp,
         })
       } catch (error) {
         // Don't let an audit-row write failure block the source write —

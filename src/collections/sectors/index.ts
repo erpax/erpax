@@ -25,7 +25,8 @@
  */
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
-import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
+import { authenticated } from '@/utilities/authenticated'
+import { superAdminOnly } from '@/access/collections/shared/superAdminOnly'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
@@ -42,7 +43,9 @@ const Sectors: CollectionConfig = {
       'The taxonomy of every part of society — named and encoded by SNA / ISIC / COFOG / ICNPO / SDG. Parties, connections, transactions and tenants reference their sector.',
     group: 'Society',
   },
-  access: accountingCollectionAccess(),
+  // A taxonomy shared by every tenant (GLOBAL_SPINE): it has no tenant field, so a tenant filter would
+  // name a path that does not exist. Every signed-in user reads it; the platform keeps it.
+  access: { read: authenticated, create: superAdminOnly, update: superAdminOnly, delete: superAdminOnly },
   fields: [
     referenceField({ description: 'Sector code (the human key; content-uuid is the machine key).' }),
     { name: 'name', type: 'text', required: true, index: true },

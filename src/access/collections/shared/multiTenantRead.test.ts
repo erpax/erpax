@@ -191,12 +191,12 @@ describe('partyRoleAccess — membership is read from the user\'s own role assig
     user: { id: 'u1', roles, tenants: [{ tenant: 't1' }] },
     payload: { findByID: async (a: Read) => { reads.push(a); return { id: 'u1', roleAssignments: held } } },
   })
-  const access = partyRoleAccess('cases', ['seller', 'buyer'])
+  const access = partyRoleAccess('contracts', ['seller', 'buyer'])
   const held = [
-    { name: 'seller', binding: 'document', scopedCollection: 'cases', resource: { value: 'c1' } },
-    { name: 'buyer', binding: 'document', scopedCollection: 'cases', resource: { value: { id: 'c2' } } },
+    { name: 'seller', binding: 'document', scopedCollection: 'contracts', resource: { value: 'c1' } },
+    { name: 'buyer', binding: 'document', scopedCollection: 'contracts', resource: { value: { id: 'c2' } } },
     { name: 'seller', binding: 'document', scopedCollection: 'invoices', resource: { value: 'i9' } }, // another collection
-    { name: 'witness', binding: 'document', scopedCollection: 'cases', resource: { value: 'c3' } }, // not a party role
+    { name: 'witness', binding: 'document', scopedCollection: 'contracts', resource: { value: 'c3' } }, // not a party role
     { name: 'seller', binding: 'global' }, // not document-scoped
     'r-unpopulated', // an id that did not populate grants nothing
   ]
@@ -220,5 +220,11 @@ describe('partyRoleAccess — membership is read from the user\'s own role assig
   })
   it('no user, no access', async () => {
     expect(await access({ req: { user: null } } as unknown as Args)).toBe(false)
+  })
+  it('a collection outside the tenant spine (cases) is scoped by party roles alone: it has no tenant field', async () => {
+    const cases = partyRoleAccess('cases', ['complainant'])
+    const onCase = [{ name: 'complainant', binding: 'document', scopedCollection: 'cases', resource: { value: 'k1' } }]
+    expect(await cases({ req: reqFor(['user'], onCase, []) } as unknown as Args)).toEqual({ id: { in: ['k1'] } })
+    expect(await cases({ req: reqFor(['admin'], onCase, []) } as unknown as Args)).toBe(true)
   })
 })

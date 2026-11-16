@@ -66,8 +66,12 @@ describe('sectors — the root societal coordinate collection', () => {
     expect((name as { required?: boolean } | undefined)?.required).toBe(true)
   })
 
-  it('access control is configured (tenant isolation per ISO 27001 A.5.23)', () => {
-    expect(Sectors.access).toBeDefined()
+  it('is a shared taxonomy: every signed-in user reads it, the platform keeps it, and no tenant filter applies', () => {
+    const args = (user: unknown) => ({ req: { user } }) as never
+    expect(Sectors.access?.read?.(args({ id: 'u', roles: ['user'], tenants: [{ tenant: 't' }] }))).toBe(true)
+    expect(Sectors.access?.read?.(args(null))).toBe(false)
+    expect(Sectors.access?.create?.(args({ id: 'u', roles: ['admin'], tenants: [{ tenant: 't' }] }))).toBe(false)
+    expect(Sectors.access?.create?.(args({ id: 's', roles: ['admin'], tenants: [] }))).toBe(true)
     expect(Array.isArray(Sectors.hooks)).toBe(false)
     expect(Sectors.hooks).toBeDefined()
   })

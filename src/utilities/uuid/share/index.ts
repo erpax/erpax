@@ -254,6 +254,7 @@ export async function grantShare<G, T>(
     subjectCollection: 'shares',
     subjectId: shareUuid,
     action: `grant:${params.accessRole}`,
+    operation: 'create',
     userId: params.grantedByUserId,
     signatureRequired: requiresSeal,
     payload: {
@@ -430,6 +431,7 @@ export async function revokeShare(
     subjectCollection: 'shares',
     subjectId: params.shareUuid,
     action: `revoke:${row.accessRole}`,
+    operation: 'update',
     userId: params.revokedByUserId,
     signatureRequired: requiresSeal,
     payload: { reason: params.reason, originalAccessRole: row.accessRole },

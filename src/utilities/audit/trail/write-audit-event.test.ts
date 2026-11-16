@@ -26,6 +26,8 @@ function fakePayload(opts: {
 }) {
   return {
     create: vi.fn(opts.createImpl ?? (async () => ({ id: 'row-1' }))),
+    // the tenant's latest row, for the hash chain: none yet
+    find: vi.fn(async () => ({ docs: [] })),
   }
 }
 
@@ -43,6 +45,7 @@ const INPUT = {
   subjectCollection: 'invoices',
   subjectId: 'inv-7',
   action: 'status-transition',
+  operation: 'update' as const,
 }
 
 describe('writeAuditEvent — chain-linked write path', () => {
@@ -61,8 +64,8 @@ describe('writeAuditEvent — chain-linked write path', () => {
     expect(chainCallOrder).toBeLessThan(rowCallOrder)
     // The persisted row carries the leaf uuid.
     const persisted = payload.create.mock.calls[0]![0] as { data: Record<string, unknown> }
-    expect(persisted.data.chainLeafUuid).toBe(FAKE_LEAF.leafUuid)
-    expect(persisted.data.chainLinkStatus).toBe('linked')
+    expect((persisted.data.changeSummary as Record<string, unknown>).chainLeafUuid).toBe(FAKE_LEAF.leafUuid)
+    expect((persisted.data.changeSummary as Record<string, unknown>).chainLinkStatus).toBe('linked')
   })
 
   it('without a mediator, writes the row with chainLinkStatus=unbound', async () => {
@@ -71,7 +74,7 @@ describe('writeAuditEvent — chain-linked write path', () => {
     expect(out.chainLinkStatus).toBe('unbound')
     expect(out.chainLeafUuid).toBeNull()
     const persisted = payload.create.mock.calls[0]![0] as { data: Record<string, unknown> }
-    expect(persisted.data.chainLinkStatus).toBe('unbound')
+    expect((persisted.data.changeSummary as Record<string, unknown>).chainLinkStatus).toBe('unbound')
   })
 
   it('chain-append failure does NOT block the row write; status=pending for reconciliation', async () => {
@@ -84,7 +87,7 @@ describe('writeAuditEvent — chain-linked write path', () => {
     expect(out.chainLeafUuid).toBeNull()
     expect(out.id).toBe('row-1')   // row write still succeeded
     const persisted = payload.create.mock.calls[0]![0] as { data: Record<string, unknown> }
-    expect(persisted.data.chainLinkStatus).toBe('pending')
+    expect((persisted.data.changeSummary as Record<string, unknown>).chainLinkStatus).toBe('pending')
   })
 
   it('Payload row write failure RE-THROWS (Finding 4 fix — no silent audit swallowing)', async () => {
@@ -116,9 +119,9 @@ describe('writeAuditEvent — chain-linked write path', () => {
     expect(out.signedUuid).toEqual(signed)
     expect(mediator.signUuid).toHaveBeenCalledWith(FAKE_LEAF.leafUuid)
     const persisted = payload.create.mock.calls[0]![0] as { data: Record<string, unknown> }
-    expect(persisted.data.chainLinkStatus).toBe('sealed')
-    expect(persisted.data.signatureRequired).toBe(true)
-    expect(persisted.data.sealedAt).toBeDefined()
+    expect((persisted.data.changeSummary as Record<string, unknown>).chainLinkStatus).toBe('sealed')
+    expect((persisted.data.changeSummary as Record<string, unknown>).signatureRequired).toBe(true)
+    expect((persisted.data.changeSummary as Record<string, unknown>).sealedAt).toBeDefined()
   })
 
   it('signatureRequired:true + signUuid throws → status=pending-signature', async () => {
@@ -135,7 +138,7 @@ describe('writeAuditEvent — chain-linked write path', () => {
     expect(out.signedUuid).toBeUndefined()
     expect(out.chainLeafUuid).toBe(FAKE_LEAF.leafUuid)   // chain still linked
     const persisted = payload.create.mock.calls[0]![0] as { data: Record<string, unknown> }
-    expect(persisted.data.sealedAt).toBeNull()
+    expect((persisted.data.changeSummary as Record<string, unknown>).sealedAt).toBeNull()
   })
 
   it('signatureRequired:true + no signUuid wrapper → status=pending-signature (mediator partial)', async () => {
@@ -162,8 +165,8 @@ describe('writeAuditEvent — chain-linked write path', () => {
     expect(out.signedUuid).toBeUndefined()
     expect(mediator.signUuid).not.toHaveBeenCalled()    // not invoked when not required
     const persisted = payload.create.mock.calls[0]![0] as { data: Record<string, unknown> }
-    expect(persisted.data.signatureRequired).toBe(false)
-    expect(persisted.data.sealedAt).toBeNull()
+    expect((persisted.data.changeSummary as Record<string, unknown>).signatureRequired).toBe(false)
+    expect((persisted.data.changeSummary as Record<string, unknown>).sealedAt).toBeNull()
   })
 
   it('preserves occurredAt timestamp consistency between chain and row', async () => {
@@ -171,7 +174,7 @@ describe('writeAuditEvent — chain-linked write path', () => {
     let recordedAtRow: string | undefined
     const payload = fakePayload({
       createImpl: async (args) => {
-        recordedAtRow = (args.data as { occurredAt?: string }).occurredAt
+        recordedAtRow = (args.data as { timestamp?: string }).timestamp
         return { id: 'row-1' }
       },
     })
@@ -184,5 +187,27 @@ describe('writeAuditEvent — chain-linked write path', () => {
     await writeAuditEvent({ payload: payload as never, mediator }, INPUT)
     expect(recordedAtChain).toBeDefined()
     expect(recordedAtRow).toBe(recordedAtChain)   // same instant on both sides
+  })
+})
+
+describe('writeAuditEvent — the row the audit-events schema accepts', () => {
+  it('writes every required field, chained to the tenant\'s latest row', async () => {
+    const payload = fakePayload({})
+    payload.find.mockResolvedValueOnce({ docs: [{ rowHash: 'a'.repeat(64) }] } as never)
+    await writeAuditEvent({ payload: payload as never }, { ...INPUT, userId: 'u1' })
+    const { collection, data } = payload.create.mock.calls[0]![0] as { collection: string; data: Record<string, unknown> }
+    expect(collection).toBe('audit-events')
+    expect(data).toMatchObject({
+      tenant: 'tenant-1',
+      eventType: 'invoice:activated',
+      collectionSlug: 'invoices',
+      operation: 'update',
+      documentId: 'inv-7',
+      user: 'u1',
+      previousHash: 'a'.repeat(64),
+    })
+    expect(data.eventId).toMatch(/^[0-9a-f-]{36}$/)
+    expect(data.rowHash).toMatch(/^[0-9a-f]{64}$/)
+    for (const gone of ['eventName', 'subjectCollection', 'subjectId', 'action', 'occurredAt']) expect(data, gone).not.toHaveProperty(gone)
   })
 })
