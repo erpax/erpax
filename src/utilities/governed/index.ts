@@ -1330,6 +1330,86 @@ export const relatedPartyError = (details: Record<string, unknown>): string | tr
   return true
 }
 
+/**
+ * One report filed with a regulator or a funder: the entity, the standard it follows, the period it
+ * covers, when it is due and was submitted, its status, the regulator's feedback and the findings.
+ *
+ * @standard SAF-T OECD standard-audit-file-tax
+ * @standard XBRL business-reporting
+ * @compliance local-regulatory-filing
+ */
+export const RegulatoryReport: Block = {
+  slug: 'regulatory-report',
+  interfaceName: 'RegulatoryReportBlock',
+  labels: { singular: 'Regulatory report', plural: 'Regulatory reports' },
+  fields: [
+    {
+      type: 'row',
+      fields: [
+        { name: 'entity', type: 'relationship', relationTo: 'legal-entities', required: true },
+        {
+          name: 'reportType',
+          type: 'select',
+          required: true,
+          options: [
+            { label: '10-K/20-F', value: 'annual-filing' },
+            { label: '10-Q', value: 'quarterly-filing' },
+            { label: 'Form 10-Q', value: 'form-10q' },
+            { label: 'SOX Attestation', value: 'sox-attestation' },
+            { label: 'Annual Report', value: 'annual-report' },
+            { label: 'Compliance Report', value: 'compliance-report' },
+            { label: 'Audit Report', value: 'audit-report' },
+            { label: 'Grant Report (funder)', value: 'grant-report' },
+            { label: 'Other', value: 'other' },
+          ],
+        },
+        {
+          name: 'status',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'Draft', value: 'draft' },
+            { label: 'In Review', value: 'in-review' },
+            { label: 'Submitted', value: 'submitted' },
+            { label: 'Accepted', value: 'accepted' },
+            { label: 'Rejected', value: 'rejected' },
+            { label: 'Overdue', value: 'overdue' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'reportingStandard', type: 'relationship', relationTo: 'compliance-frameworks' },
+        // the award a funder's report accounts for: without it the report cannot name the grant it reports on
+        { name: 'grant', type: 'relationship', relationTo: 'government-grants', admin: { description: 'The award this report accounts for (grant-report type).' } },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'fiscalPeriodStart', type: 'date', required: true },
+        { name: 'fiscalPeriodEnd', type: 'date', required: true },
+        { name: 'dueDate', type: 'date', required: true },
+        { name: 'submissionDate', type: 'date' },
+      ],
+    },
+    { name: 'regulatoryFeedback', type: 'richText' },
+    { name: 'findings', type: 'relationship', relationTo: 'audit-findings', hasMany: true },
+  ],
+}
+
+/** The period ends after it starts; a submitted, accepted or rejected report names when it was submitted; a grant report names its grant. */
+export const regulatoryReportError = (details: Record<string, unknown>): string | true => {
+  const start = details.fiscalPeriodStart ? Date.parse(String(details.fiscalPeriodStart)) : Number.NaN
+  const end = details.fiscalPeriodEnd ? Date.parse(String(details.fiscalPeriodEnd)) : Number.NaN
+  if (Number.isFinite(start) && Number.isFinite(end) && end <= start) return 'A reporting period ends after it starts.'
+  if (['submitted', 'accepted', 'rejected'].includes(String(details.status)) && !details.submissionDate) return 'A submitted report names its submission date.'
+  if (details.reportType === 'grant-report' && !details.grant) return 'A grant report names the grant it accounts for.'
+  return true
+}
+
 export const GOVERNED_TYPES: readonly GovernedType[] = [
   // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
   {
@@ -1471,5 +1551,16 @@ export const GOVERNED_TYPES: readonly GovernedType[] = [
     requires: ['effectiveDate'],
     block: RelatedPartyTransaction,
     check: relatedPartyError,
+  },
+  // was regulatory-reports: read by admin, audit staff and compliance; written by admins. The report's name is the
+  // page title, its jurisdiction the page's (required), the filed document an attachment.
+  {
+    value: 'regulatory-report',
+    label: 'Regulatory report',
+    read: ['admin', 'audit-staff', 'compliance-officer'],
+    write: ['admin'],
+    requires: ['jurisdiction'],
+    block: RegulatoryReport,
+    check: regulatoryReportError,
   },
 ]
