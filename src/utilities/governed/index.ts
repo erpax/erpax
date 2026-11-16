@@ -1111,6 +1111,122 @@ export const RegulatoryDeferralAccount: Block = {
 export const deferralError = (details: Record<string, unknown>): string | true =>
   details.status === 'recovered' && Number(details.balance ?? 0) !== 0 ? 'A recovered regulatory deferral balance is zero.' : true
 
+const num = (row: Record<string, unknown>, name: string): number => Number(row[name] ?? 0)
+/** IFRS 5 — fair value less costs to sell (cents). */
+const fvlcts = (row: Record<string, unknown>): number => num(row, 'fairValue') - num(row, 'costsToSell')
+/** IFRS 5 §15 — the write-down to the lower of carrying amount and fair value less costs to sell (cents). */
+const impairmentOf = (row: Record<string, unknown>): number => Math.max(0, num(row, 'carryingAmountAtClassification') - fvlcts(row))
+
+/**
+ * One non-current asset, disposal group or discontinued operation classified as held for sale (IFRS 5):
+ * what is classified, when, its carrying amount and fair value less costs to sell, the impairment that
+ * follows, and the sale.
+ *
+ * @standard IFRS IFRS-5 §6-§9 classification-criteria
+ * @standard IFRS IFRS-5 §15 measurement-lower-of-cv-and-fv-less-cts
+ * @standard IFRS IFRS-5 §25 depreciation-suspended
+ * @standard IFRS IFRS-5 §31-§40 discontinued-operations-presentation
+ * @standard IFRS IFRS-13 fair-value-input-hierarchy
+ * @standard US-GAAP ASC-205-20 discontinued-operations
+ * @standard US-GAAP ASC-360-10 long-lived-assets-held-for-sale
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-8601-1:2019 date-time classification-date
+ * @audit ISO 19011:2018 §6.4.6 audit-evidence-disposal-classification
+ * @compliance SOX §404 internal-controls
+ */
+export const HeldForSale: Block = {
+  slug: 'held-for-sale',
+  interfaceName: 'HeldForSaleBlock',
+  labels: { singular: 'Held-for-sale classification', plural: 'Held-for-sale classifications' },
+  fields: [
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'classificationKind',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'Single non-current asset', value: 'single_asset' },
+            { label: 'Disposal group (multiple assets + liabs)', value: 'disposal_group' },
+            { label: 'Discontinued operation (separate major line)', value: 'discontinued_op' },
+          ],
+        },
+        {
+          name: 'status',
+          type: 'select',
+          defaultValue: 'classified',
+          options: [
+            { label: 'Classified', value: 'classified' },
+            { label: 'Re-measured', value: 'remeasured' },
+            { label: 'Sale Pending', value: 'sale_pending' },
+            { label: 'Sold', value: 'sold' },
+            { label: 'Reclassified Back (criteria failed)', value: 'reclassified' },
+          ],
+        },
+        { name: 'expectedSaleDate', type: 'date', admin: { description: 'IFRS 5 §8 — sale highly probable within 12 months from classification.' } },
+      ],
+    },
+    // one polymorphic relationship: the asset or disposal group, checked, populated and navigable
+    { name: 'source', type: 'relationship', required: true, relationTo: ['fixed-assets', 'investment-properties', 'business-combinations'], admin: { description: 'The asset or disposal group classified as held for sale.' } },
+    {
+      type: 'row',
+      fields: [
+        { name: 'carryingAmountAtClassification', type: 'number', required: true },
+        { name: 'fairValue', type: 'number', required: true },
+        { name: 'costsToSell', type: 'number', defaultValue: 0 },
+        currencyField(),
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'fairValueLessCostsToSell', type: 'number', admin: { readOnly: true, description: 'fairValue − costsToSell (cents), computed.' }, hooks: { beforeChange: computed(fvlcts) } },
+        { name: 'impairmentLoss', type: 'number', admin: { readOnly: true, description: 'IFRS 5 §15 — Max(0, carrying − FVLCTS) (cents), computed.' }, hooks: { beforeChange: computed(impairmentOf) } },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'isDiscontinuedOperation', type: 'checkbox', defaultValue: false, admin: { description: 'IFRS 5 §32 — separate major line of business or geographical area.' } },
+        { name: 'segment', type: 'text', admin: { description: 'IFRS 8 segment this disposal belongs to.' } },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'actualSaleDate', type: 'date' },
+        { name: 'actualSaleProceeds', type: 'number' },
+        {
+          name: 'gainLossOnDisposal',
+          type: 'number',
+          admin: { readOnly: true, description: 'Proceeds − (carrying amount − impairment) (cents), computed once sold.' },
+          hooks: { beforeChange: computed((row) => (row.actualSaleProceeds === undefined || row.actualSaleProceeds === null ? null : num(row, 'actualSaleProceeds') - (num(row, 'carryingAmountAtClassification') - impairmentOf(row)))) },
+        },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'fairValueMeasurement', type: 'relationship', relationTo: 'fair-value-measurements' },
+        { name: 'journalEntry', type: 'relationship', relationTo: 'journal-entries', admin: { readOnly: true } },
+      ],
+    },
+    { name: 'notes', type: 'textarea' },
+  ],
+}
+
+const TWELVE_MONTHS = (date: number): number => { const d = new Date(date); d.setUTCFullYear(d.getUTCFullYear() + 1); return d.getTime() }
+
+/** IFRS 5 §8: the sale is expected within twelve months of classification; a sold classification names its sale date and proceeds. */
+export const heldForSaleError = (details: Record<string, unknown>, document: Record<string, unknown>): string | true => {
+  const classified = document.effectiveDate ? Date.parse(String(document.effectiveDate)) : Number.NaN
+  const expected = details.expectedSaleDate ? Date.parse(String(details.expectedSaleDate)) : Number.NaN
+  if (Number.isFinite(classified) && Number.isFinite(expected) && expected > TWELVE_MONTHS(classified)) return 'The sale is expected within twelve months of classification (IFRS 5 §8).'
+  if (details.status === 'sold' && (!details.actualSaleDate || details.actualSaleProceeds === undefined || details.actualSaleProceeds === null)) return 'A sold classification names its sale date and proceeds.'
+  return true
+}
+
 export const GOVERNED_TYPES: readonly GovernedType[] = [
   // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
   {
@@ -1228,5 +1344,18 @@ export const GOVERNED_TYPES: readonly GovernedType[] = [
     feature: 'rate_regulated_activities',
     block: RegulatoryDeferralAccount,
     check: deferralError,
+  },
+  // was held-for-sale-classifications: read by every member, written by admins and accountants, where the plan
+  // includes held_for_sale. The reference (HFS-2026-Q1-001) is the page title, the classification date the effective date.
+  {
+    value: 'held-for-sale',
+    label: 'Held-for-sale classification',
+    read: ['user'],
+    write: ['admin', 'accountant'],
+    requires: ['effectiveDate'],
+    unique: ['title'],
+    feature: 'held_for_sale',
+    block: HeldForSale,
+    check: heldForSaleError,
   },
 ]

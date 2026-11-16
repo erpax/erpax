@@ -321,10 +321,8 @@ export interface Config {
     'carbon-emissions': CarbonEmission;
     'closing-entries': ClosingEntry;
     consolidations: Consolidation;
-    'csrd-disclosures': CsrdDisclosure;
     'currency-rates': CurrencyRate;
     'entity-legal-structures': EntityLegalStructure;
-    'evidence-attestations': EvidenceAttestation;
     'financial-statements': FinancialStatement;
     'fiscal-calendars': FiscalCalendar;
     'fiscal-periods': FiscalPeriod;
@@ -345,7 +343,6 @@ export interface Config {
     'tax-periods': TaxPeriod;
     'tax-returns': TaxReturn;
     'transfer-pricing-adjustments': TransferPricingAdjustment;
-    'transfer-pricing-files': TransferPricingFile;
     'wip-snapshots': WipSnapshot;
     'cost-centers': CostCenter;
     employees: Employee;
@@ -402,15 +399,17 @@ export interface Config {
     'segment-reporting': SegmentReporting;
     'biological-assets': BiologicalAsset;
     'business-combinations': BusinessCombination;
+    'csrd-disclosures': CsrdDisclosure;
     'depreciation-schedules': DepreciationSchedule;
+    'evidence-attestations': EvidenceAttestation;
     'fair-value-measurements': FairValueMeasurement;
     'fixed-assets': FixedAsset;
-    'held-for-sale-classifications': HeldForSaleClassification;
     'investment-properties': InvestmentProperty;
     'lease-period-postings': LeasePeriodPosting;
     leases: Lease;
     properties: Property;
     spaces: Space;
+    'transfer-pricing-files': TransferPricingFile;
     'budget-planning': BudgetPlanning;
     contracts: Contract;
     'project-tasks': ProjectTask;
@@ -541,10 +540,8 @@ export interface Config {
     'carbon-emissions': CarbonEmissionsSelect<false> | CarbonEmissionsSelect<true>;
     'closing-entries': ClosingEntriesSelect<false> | ClosingEntriesSelect<true>;
     consolidations: ConsolidationsSelect<false> | ConsolidationsSelect<true>;
-    'csrd-disclosures': CsrdDisclosuresSelect<false> | CsrdDisclosuresSelect<true>;
     'currency-rates': CurrencyRatesSelect<false> | CurrencyRatesSelect<true>;
     'entity-legal-structures': EntityLegalStructuresSelect<false> | EntityLegalStructuresSelect<true>;
-    'evidence-attestations': EvidenceAttestationsSelect<false> | EvidenceAttestationsSelect<true>;
     'financial-statements': FinancialStatementsSelect<false> | FinancialStatementsSelect<true>;
     'fiscal-calendars': FiscalCalendarsSelect<false> | FiscalCalendarsSelect<true>;
     'fiscal-periods': FiscalPeriodsSelect<false> | FiscalPeriodsSelect<true>;
@@ -565,7 +562,6 @@ export interface Config {
     'tax-periods': TaxPeriodsSelect<false> | TaxPeriodsSelect<true>;
     'tax-returns': TaxReturnsSelect<false> | TaxReturnsSelect<true>;
     'transfer-pricing-adjustments': TransferPricingAdjustmentsSelect<false> | TransferPricingAdjustmentsSelect<true>;
-    'transfer-pricing-files': TransferPricingFilesSelect<false> | TransferPricingFilesSelect<true>;
     'wip-snapshots': WipSnapshotsSelect<false> | WipSnapshotsSelect<true>;
     'cost-centers': CostCentersSelect<false> | CostCentersSelect<true>;
     employees: EmployeesSelect<false> | EmployeesSelect<true>;
@@ -622,15 +618,17 @@ export interface Config {
     'segment-reporting': SegmentReportingSelect<false> | SegmentReportingSelect<true>;
     'biological-assets': BiologicalAssetsSelect<false> | BiologicalAssetsSelect<true>;
     'business-combinations': BusinessCombinationsSelect<false> | BusinessCombinationsSelect<true>;
+    'csrd-disclosures': CsrdDisclosuresSelect<false> | CsrdDisclosuresSelect<true>;
     'depreciation-schedules': DepreciationSchedulesSelect<false> | DepreciationSchedulesSelect<true>;
+    'evidence-attestations': EvidenceAttestationsSelect<false> | EvidenceAttestationsSelect<true>;
     'fair-value-measurements': FairValueMeasurementsSelect<false> | FairValueMeasurementsSelect<true>;
     'fixed-assets': FixedAssetsSelect<false> | FixedAssetsSelect<true>;
-    'held-for-sale-classifications': HeldForSaleClassificationsSelect<false> | HeldForSaleClassificationsSelect<true>;
     'investment-properties': InvestmentPropertiesSelect<false> | InvestmentPropertiesSelect<true>;
     'lease-period-postings': LeasePeriodPostingsSelect<false> | LeasePeriodPostingsSelect<true>;
     leases: LeasesSelect<false> | LeasesSelect<true>;
     properties: PropertiesSelect<false> | PropertiesSelect<true>;
     spaces: SpacesSelect<false> | SpacesSelect<true>;
+    'transfer-pricing-files': TransferPricingFilesSelect<false> | TransferPricingFilesSelect<true>;
     'budget-planning': BudgetPlanningSelect<false> | BudgetPlanningSelect<true>;
     contracts: ContractsSelect<false> | ContractsSelect<true>;
     'project-tasks': ProjectTasksSelect<false> | ProjectTasksSelect<true>;
@@ -1632,6 +1630,7 @@ export interface Page {
         | 'insurance-contract'
         | 'debt-instrument'
         | 'regulatory-deferral-account'
+        | 'held-for-sale'
       )
     | null;
   /**
@@ -1664,6 +1663,7 @@ export interface Page {
           | InsuranceContractBlock
           | DebtInstrumentBlock
           | RegulatoryDeferralAccountBlock
+          | HeldForSaleBlock
         )[]
       | null;
     /**
@@ -8274,6 +8274,189 @@ export interface RegulatoryDeferralAccountBlock {
   blockType: 'regulatory-deferral-account';
 }
 /**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "HeldForSaleBlock".
+ */
+export interface HeldForSaleBlock {
+  classificationKind: 'single_asset' | 'disposal_group' | 'discontinued_op';
+  status?: ('classified' | 'remeasured' | 'sale_pending' | 'sold' | 'reclassified') | null;
+  /**
+   * IFRS 5 §8 — sale highly probable within 12 months from classification.
+   */
+  expectedSaleDate?: string | null;
+  /**
+   * The asset or disposal group classified as held for sale.
+   */
+  source:
+    | {
+        relationTo: 'fixed-assets';
+        value: string | FixedAsset;
+      }
+    | {
+        relationTo: 'investment-properties';
+        value: string | InvestmentProperty;
+      }
+    | {
+        relationTo: 'business-combinations';
+        value: string | BusinessCombination;
+      };
+  carryingAmountAtClassification: number;
+  fairValue: number;
+  costsToSell?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * fairValue − costsToSell (cents), computed.
+   */
+  fairValueLessCostsToSell?: number | null;
+  /**
+   * IFRS 5 §15 — Max(0, carrying − FVLCTS) (cents), computed.
+   */
+  impairmentLoss?: number | null;
+  /**
+   * IFRS 5 §32 — separate major line of business or geographical area.
+   */
+  isDiscontinuedOperation?: boolean | null;
+  /**
+   * IFRS 8 segment this disposal belongs to.
+   */
+  segment?: string | null;
+  actualSaleDate?: string | null;
+  actualSaleProceeds?: number | null;
+  /**
+   * Proceeds − (carrying amount − impairment) (cents), computed once sold.
+   */
+  gainLossOnDisposal?: number | null;
+  fairValueMeasurement?: (string | null) | FairValueMeasurement;
+  journalEntry?: (string | null) | JournalEntry;
+  notes?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'held-for-sale';
+}
+/**
+ * IFRS 3 acquirer-side M&A register. Captures the §32 goodwill computation + PPA allocation.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "business-combinations".
+ */
+export interface BusinessCombination {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Sequential deal reference (e.g. MA-2026-001).
+   */
+  reference: string;
+  acquireeName: string;
+  /**
+   * Acquired entity once registered in legal-entities (post-close).
+   */
+  acquireeLegalEntity?: (string | null) | LegalEntity;
+  dealType: 'asset_deal' | 'share_deal' | 'reverse' | 'step' | 'common_control';
+  /**
+   * IFRS 3 §8 — date control is obtained.
+   */
+  acquisitionDate: string;
+  /**
+   * Percentage of equity / voting rights obtained (%).
+   */
+  percentageAcquired: number;
+  /**
+   * IFRS 3 §37 — fair value of cash + equity + contingent consideration (cents).
+   */
+  considerationTransferred: number;
+  cashConsideration?: number | null;
+  equityConsideration?: number | null;
+  /**
+   * IFRS 3 §39 — fair value of earn-outs / contingent payments at acquisition date.
+   */
+  contingentConsideration?: number | null;
+  /**
+   * IFRS 3 §19 — non-controlling interest at fair value (full) or proportionate share (partial).
+   */
+  nciFairValue?: number | null;
+  /**
+   * IFRS 3 §42 — for step acquisitions: re-measured prior interest at acquisition-date fair value.
+   */
+  previouslyHeldInterestFairValue?: number | null;
+  /**
+   * IFRS 3 §18 — sum of recognised identifiable assets acquired & liabilities assumed (cents).
+   */
+  fairValueIdentifiableNetAssets: number;
+  /**
+   * IFRS 3 §32: consideration + NCI + prior-interest − net-assets. Positive ⇒ goodwill (asset); negative ⇒ bargain-purchase gain (P&L).
+   */
+  goodwill?: number | null;
+  /**
+   * True when goodwill is negative; IFRS 3 §34 — recognise gain in P&L.
+   */
+  isBargainPurchase?: boolean | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Purchase price allocation by identifiable asset / liability category.
+   */
+  ppaAllocations?:
+    | {
+        category:
+          | 'ppe'
+          | 'int_customer'
+          | 'int_brand'
+          | 'int_technology'
+          | 'int_backlog'
+          | 'int_noncompete'
+          | 'inventory_stepup'
+          | 'deferred_tax'
+          | 'pension'
+          | 'provision'
+          | 'other';
+        fairValue: number;
+        description?: string | null;
+        /**
+         * For amortisable intangibles.
+         */
+        usefulLifeYears?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * IFRS 3 §45 — up to 12 months from acquisition for fair-value adjustments.
+   */
+  measurementPeriodEndDate?: string | null;
+  /**
+   * IFRS 3 §53 — expensed (NOT capitalised into goodwill).
+   */
+  transactionCosts?: number | null;
+  journalEntry?: (string | null) | JournalEntry;
+  /**
+   * Signed PPA report (eIDAS PAdES) — auditor walk-through anchor.
+   */
+  evidenceAttestation?: (string | null) | EvidenceAttestation;
+  status?: ('signed' | 'closed' | 'ppa_provisional' | 'ppa_final' | 'measurement_closed') | null;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * Paired source documents between two group tenants. Each row pairs with a mirror row on the counterparty tenant — must net to zero on consolidation per IFRS 10 §B86 / ASC 810-10-45-1.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -13186,102 +13369,6 @@ export interface PeriodLock {
   createdAt: string;
 }
 /**
- * EU CSRD / ESRS structured disclosure register. One row per ESRS datapoint per reporting year — narrative + KPIs + assurance evidence.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "csrd-disclosures".
- */
-export interface CsrdDisclosure {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Reporting legal entity (CSRD applies at consolidated + subsidiary level under different conditions).
-   */
-  legalEntity?: (string | null) | LegalEntity;
-  /**
-   * EFRAG ESRS datapoint identifier (e.g. ESRS-E1-6-1, ESRS-S1-9-2).
-   */
-  datapointId: string;
-  /**
-   * Reporting fiscal year (YYYY).
-   */
-  reportingYear: number;
-  esrsCategory: 'cross_cutting' | 'environmental' | 'social' | 'governance';
-  esrsTopic:
-    | 'esrs_1'
-    | 'esrs_2'
-    | 'esrs_e1'
-    | 'esrs_e2'
-    | 'esrs_e3'
-    | 'esrs_e4'
-    | 'esrs_e5'
-    | 'esrs_s1'
-    | 'esrs_s2'
-    | 'esrs_s3'
-    | 'esrs_s4'
-    | 'esrs_g1';
-  /**
-   * ESRS 1 §3 double-materiality assessment outcome.
-   */
-  materiality?: ('double_material' | 'impact_material' | 'financial_material' | 'not_material') | null;
-  /**
-   * Disclosure narrative (machine-extractable for XBRL filing).
-   */
-  narrative?: string | null;
-  quantitativeKpi?: {
-    value?: number | null;
-    /**
-     * e.g. tCO2e, m³, %, €, FTE.
-     */
-    unit?: string | null;
-    methodology?: string | null;
-    priorYearComparison?: number | null;
-    targetValue?: number | null;
-    targetYear?: number | null;
-  };
-  /**
-   * ESRS 2 IRO (Impacts, Risks, Opportunities) classification.
-   */
-  iro?: {
-    kind?: ('impact' | 'risk' | 'opportunity') | null;
-    timeHorizon?: ('short' | 'medium' | 'long') | null;
-    valueChainStage?: ('upstream' | 'own_ops' | 'downstream') | null;
-  };
-  /**
-   * CSRD requires limited assurance from FY2024, scaling to reasonable assurance by 2028.
-   */
-  assuranceStatus?: ('not_assured' | 'limited_assurance' | 'reasonable_assurance' | 'self_declared') | null;
-  assuranceProvider?: string | null;
-  /**
-   * Signed PDF evidence pack for the disclosure (audit walk-through anchor).
-   */
-  evidenceAttestation?: (string | null) | EvidenceAttestation;
-  /**
-   * EU Taxonomy 2020/852 eligibility flag (for E1-E2 environmental KPIs).
-   */
-  isEUTaxonomyEligible?: boolean | null;
-  isEUTaxonomyAligned?: boolean | null;
-  status?: ('draft' | 'under_review' | 'approved' | 'filed' | 'restated') | null;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * Reference data mapping entity types to legal forms
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -14290,132 +14377,6 @@ export interface TransferPricingAdjustment {
   /**
    * General notes on this transfer pricing adjustment
    */
-  notes?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * OECD BEPS Action 13 structured TP documentation register. Master File / Local File / CbCR per fiscal year per jurisdiction.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "transfer-pricing-files".
- */
-export interface TransferPricingFile {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  reference: string;
-  reportingYear: number;
-  fileType: 'master_file' | 'local_file' | 'cbcr' | 'benchmark' | 'apa' | 'tp_adjustment';
-  /**
-   * ISO 3166-1 alpha-2 — filing jurisdiction (e.g. BG / DE / RO / NL).
-   */
-  jurisdictionCode: string;
-  /**
-   * Entity whose Local File this is (only set when fileType = local_file).
-   */
-  localFileEntity?: (string | null) | LegalEntity;
-  /**
-   * Ultimate parent / surrogate parent for Master File + CbCR.
-   */
-  consolidatedHeadEntity?: (string | null) | LegalEntity;
-  /**
-   * OECD TPG Annex I to Chapter V — Master File sections.
-   */
-  masterFileSections?: {
-    orgStructure?: string | null;
-    businessDescription?: string | null;
-    intangibles?: string | null;
-    intercompanyFinancialActivities?: string | null;
-    financialAndTaxPositions?: string | null;
-  };
-  /**
-   * OECD TPG Annex II to Chapter V — Local File sections.
-   */
-  localFileSections?: {
-    localEntityDescription?: string | null;
-    controlledTransactions?: string | null;
-    financialInformation?: string | null;
-  };
-  /**
-   * OECD CbCR Table 1 — per-jurisdiction aggregates. One row per jurisdiction.
-   */
-  cbcrAggregates?:
-    | {
-        /**
-         * ISO 3166-1 alpha-2 country code (e.g. BG, DE, RO).
-         */
-        jurisdictionCode: string;
-        unrelatedRevenue?: number | null;
-        relatedRevenue?: number | null;
-        totalRevenue?: number | null;
-        profitBeforeTax?: number | null;
-        incomeTaxPaidCash?: number | null;
-        incomeTaxAccrued?: number | null;
-        statedCapital?: number | null;
-        accumulatedEarnings?: number | null;
-        numberOfEmployees?: number | null;
-        tangibleAssets?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * OECD TPG Chapter II — selected method.
-   */
-  tpMethod?: ('cup' | 'resale_price' | 'cost_plus' | 'tnmm' | 'profit_split' | 'other') | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  reportingCurrency?: string | null;
-  /**
-   * Group consolidated revenue — drives CbCR threshold (€750M / national equivalents).
-   */
-  consolidatedRevenue?: number | null;
-  /**
-   * CbCR filing required when consolidated revenue ≥ €750M (or local equivalent).
-   */
-  cbcrFilingThresholdMet?: boolean | null;
-  /**
-   * OECD Pillar Two GloBE 15% minimum tax applicability — when consolidated revenue ≥ €750M for ≥ 2 of last 4 years.
-   */
-  pillarTwoApplicable?: boolean | null;
-  preparationDate?: string | null;
-  /**
-   * Statutory filing deadline (varies by jurisdiction).
-   */
-  filingDeadline?: string | null;
-  filingDate?: string | null;
-  filingStatus?:
-    | (
-        | 'in_preparation'
-        | 'filed_timely'
-        | 'filed_late'
-        | 'not_required'
-        | 'under_review'
-        | 'no_adjustment'
-        | 'adjustment'
-      )
-    | null;
-  evidenceAttestation?: (string | null) | EvidenceAttestation;
-  /**
-   * Advance Pricing Agreement reference (when applicable).
-   */
-  apaReference?: string | null;
-  status?: ('draft' | 'approved' | 'filed' | 'closed' | 'restated') | null;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
   notes?: string | null;
   handle?: string | null;
   createdBy?: {
@@ -17070,12 +17031,12 @@ export interface SegmentReporting {
   createdAt: string;
 }
 /**
- * IFRS 3 acquirer-side M&A register. Captures the §32 goodwill computation + PPA allocation.
+ * EU CSRD / ESRS structured disclosure register. One row per ESRS datapoint per reporting year — narrative + KPIs + assurance evidence.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "business-combinations".
+ * via the `definition` "csrd-disclosures".
  */
-export interface BusinessCombination {
+export interface CsrdDisclosure {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
@@ -17083,97 +17044,73 @@ export interface BusinessCombination {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   /**
-   * Sequential deal reference (e.g. MA-2026-001).
+   * Reporting legal entity (CSRD applies at consolidated + subsidiary level under different conditions).
    */
-  reference: string;
-  acquireeName: string;
+  legalEntity?: (string | null) | LegalEntity;
   /**
-   * Acquired entity once registered in legal-entities (post-close).
+   * EFRAG ESRS datapoint identifier (e.g. ESRS-E1-6-1, ESRS-S1-9-2).
    */
-  acquireeLegalEntity?: (string | null) | LegalEntity;
-  dealType: 'asset_deal' | 'share_deal' | 'reverse' | 'step' | 'common_control';
+  datapointId: string;
   /**
-   * IFRS 3 §8 — date control is obtained.
+   * Reporting fiscal year (YYYY).
    */
-  acquisitionDate: string;
+  reportingYear: number;
+  esrsCategory: 'cross_cutting' | 'environmental' | 'social' | 'governance';
+  esrsTopic:
+    | 'esrs_1'
+    | 'esrs_2'
+    | 'esrs_e1'
+    | 'esrs_e2'
+    | 'esrs_e3'
+    | 'esrs_e4'
+    | 'esrs_e5'
+    | 'esrs_s1'
+    | 'esrs_s2'
+    | 'esrs_s3'
+    | 'esrs_s4'
+    | 'esrs_g1';
   /**
-   * Percentage of equity / voting rights obtained (%).
+   * ESRS 1 §3 double-materiality assessment outcome.
    */
-  percentageAcquired: number;
+  materiality?: ('double_material' | 'impact_material' | 'financial_material' | 'not_material') | null;
   /**
-   * IFRS 3 §37 — fair value of cash + equity + contingent consideration (cents).
+   * Disclosure narrative (machine-extractable for XBRL filing).
    */
-  considerationTransferred: number;
-  cashConsideration?: number | null;
-  equityConsideration?: number | null;
+  narrative?: string | null;
+  quantitativeKpi?: {
+    value?: number | null;
+    /**
+     * e.g. tCO2e, m³, %, €, FTE.
+     */
+    unit?: string | null;
+    methodology?: string | null;
+    priorYearComparison?: number | null;
+    targetValue?: number | null;
+    targetYear?: number | null;
+  };
   /**
-   * IFRS 3 §39 — fair value of earn-outs / contingent payments at acquisition date.
+   * ESRS 2 IRO (Impacts, Risks, Opportunities) classification.
    */
-  contingentConsideration?: number | null;
+  iro?: {
+    kind?: ('impact' | 'risk' | 'opportunity') | null;
+    timeHorizon?: ('short' | 'medium' | 'long') | null;
+    valueChainStage?: ('upstream' | 'own_ops' | 'downstream') | null;
+  };
   /**
-   * IFRS 3 §19 — non-controlling interest at fair value (full) or proportionate share (partial).
+   * CSRD requires limited assurance from FY2024, scaling to reasonable assurance by 2028.
    */
-  nciFairValue?: number | null;
+  assuranceStatus?: ('not_assured' | 'limited_assurance' | 'reasonable_assurance' | 'self_declared') | null;
+  assuranceProvider?: string | null;
   /**
-   * IFRS 3 §42 — for step acquisitions: re-measured prior interest at acquisition-date fair value.
-   */
-  previouslyHeldInterestFairValue?: number | null;
-  /**
-   * IFRS 3 §18 — sum of recognised identifiable assets acquired & liabilities assumed (cents).
-   */
-  fairValueIdentifiableNetAssets: number;
-  /**
-   * IFRS 3 §32: consideration + NCI + prior-interest − net-assets. Positive ⇒ goodwill (asset); negative ⇒ bargain-purchase gain (P&L).
-   */
-  goodwill?: number | null;
-  /**
-   * True when goodwill is negative; IFRS 3 §34 — recognise gain in P&L.
-   */
-  isBargainPurchase?: boolean | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Purchase price allocation by identifiable asset / liability category.
-   */
-  ppaAllocations?:
-    | {
-        category:
-          | 'ppe'
-          | 'int_customer'
-          | 'int_brand'
-          | 'int_technology'
-          | 'int_backlog'
-          | 'int_noncompete'
-          | 'inventory_stepup'
-          | 'deferred_tax'
-          | 'pension'
-          | 'provision'
-          | 'other';
-        fairValue: number;
-        description?: string | null;
-        /**
-         * For amortisable intangibles.
-         */
-        usefulLifeYears?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * IFRS 3 §45 — up to 12 months from acquisition for fair-value adjustments.
-   */
-  measurementPeriodEndDate?: string | null;
-  /**
-   * IFRS 3 §53 — expensed (NOT capitalised into goodwill).
-   */
-  transactionCosts?: number | null;
-  journalEntry?: (string | null) | JournalEntry;
-  /**
-   * Signed PPA report (eIDAS PAdES) — auditor walk-through anchor.
+   * Signed PDF evidence pack for the disclosure (audit walk-through anchor).
    */
   evidenceAttestation?: (string | null) | EvidenceAttestation;
-  status?: ('signed' | 'closed' | 'ppa_provisional' | 'ppa_final' | 'measurement_closed') | null;
+  /**
+   * EU Taxonomy 2020/852 eligibility flag (for E1-E2 environmental KPIs).
+   */
+  isEUTaxonomyEligible?: boolean | null;
+  isEUTaxonomyAligned?: boolean | null;
+  status?: ('draft' | 'under_review' | 'approved' | 'filed' | 'restated') | null;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
@@ -17222,89 +17159,6 @@ export interface DepreciationSchedule {
   status?: ('calculated' | 'posted' | 'reversed') | null;
   postedAt?: string | null;
   journalEntry?: (string | null) | JournalEntry;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS 5 — non-current assets / disposal groups / discontinued operations classified as held-for-sale.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "held-for-sale-classifications".
- */
-export interface HeldForSaleClassification {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Sequential reference (e.g. HFS-2026-Q1-001).
-   */
-  reference: string;
-  classificationKind: 'single_asset' | 'disposal_group' | 'discontinued_op';
-  /**
-   * The asset or disposal group classified as held for sale.
-   */
-  source:
-    | {
-        relationTo: 'fixed-assets';
-        value: string | FixedAsset;
-      }
-    | {
-        relationTo: 'investment-properties';
-        value: string | InvestmentProperty;
-      }
-    | {
-        relationTo: 'business-combinations';
-        value: string | BusinessCombination;
-      };
-  classificationDate: string;
-  /**
-   * IFRS 5 §8 — sale highly probable within 12 months from classification.
-   */
-  expectedSaleDate?: string | null;
-  carryingAmountAtClassification: number;
-  fairValue: number;
-  costsToSell?: number | null;
-  /**
-   * fairValue − costsToSell (cents).
-   */
-  fairValueLessCostsToSell?: number | null;
-  /**
-   * IFRS 5 §15 — Max(0, carrying − FVLCTS) (cents).
-   */
-  impairmentLoss?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * IFRS 5 §32 — separate major line of business or geographical area.
-   */
-  isDiscontinuedOperation?: boolean | null;
-  /**
-   * IFRS 8 segment this disposal belongs to.
-   */
-  segment?: string | null;
-  actualSaleDate?: string | null;
-  actualSaleProceeds?: number | null;
-  gainLossOnDisposal?: number | null;
-  fairValueMeasurement?: (string | null) | FairValueMeasurement;
-  journalEntry?: (string | null) | JournalEntry;
-  status?: ('classified' | 'remeasured' | 'sale_pending' | 'sold' | 'reclassified') | null;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
@@ -17400,6 +17254,132 @@ export interface LeasePeriodPosting {
   status?: ('calculated' | 'posted' | 'reversed') | null;
   postedAt?: string | null;
   journalEntry?: (string | null) | JournalEntry;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * OECD BEPS Action 13 structured TP documentation register. Master File / Local File / CbCR per fiscal year per jurisdiction.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "transfer-pricing-files".
+ */
+export interface TransferPricingFile {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  reference: string;
+  reportingYear: number;
+  fileType: 'master_file' | 'local_file' | 'cbcr' | 'benchmark' | 'apa' | 'tp_adjustment';
+  /**
+   * ISO 3166-1 alpha-2 — filing jurisdiction (e.g. BG / DE / RO / NL).
+   */
+  jurisdictionCode: string;
+  /**
+   * Entity whose Local File this is (only set when fileType = local_file).
+   */
+  localFileEntity?: (string | null) | LegalEntity;
+  /**
+   * Ultimate parent / surrogate parent for Master File + CbCR.
+   */
+  consolidatedHeadEntity?: (string | null) | LegalEntity;
+  /**
+   * OECD TPG Annex I to Chapter V — Master File sections.
+   */
+  masterFileSections?: {
+    orgStructure?: string | null;
+    businessDescription?: string | null;
+    intangibles?: string | null;
+    intercompanyFinancialActivities?: string | null;
+    financialAndTaxPositions?: string | null;
+  };
+  /**
+   * OECD TPG Annex II to Chapter V — Local File sections.
+   */
+  localFileSections?: {
+    localEntityDescription?: string | null;
+    controlledTransactions?: string | null;
+    financialInformation?: string | null;
+  };
+  /**
+   * OECD CbCR Table 1 — per-jurisdiction aggregates. One row per jurisdiction.
+   */
+  cbcrAggregates?:
+    | {
+        /**
+         * ISO 3166-1 alpha-2 country code (e.g. BG, DE, RO).
+         */
+        jurisdictionCode: string;
+        unrelatedRevenue?: number | null;
+        relatedRevenue?: number | null;
+        totalRevenue?: number | null;
+        profitBeforeTax?: number | null;
+        incomeTaxPaidCash?: number | null;
+        incomeTaxAccrued?: number | null;
+        statedCapital?: number | null;
+        accumulatedEarnings?: number | null;
+        numberOfEmployees?: number | null;
+        tangibleAssets?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * OECD TPG Chapter II — selected method.
+   */
+  tpMethod?: ('cup' | 'resale_price' | 'cost_plus' | 'tnmm' | 'profit_split' | 'other') | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  reportingCurrency?: string | null;
+  /**
+   * Group consolidated revenue — drives CbCR threshold (€750M / national equivalents).
+   */
+  consolidatedRevenue?: number | null;
+  /**
+   * CbCR filing required when consolidated revenue ≥ €750M (or local equivalent).
+   */
+  cbcrFilingThresholdMet?: boolean | null;
+  /**
+   * OECD Pillar Two GloBE 15% minimum tax applicability — when consolidated revenue ≥ €750M for ≥ 2 of last 4 years.
+   */
+  pillarTwoApplicable?: boolean | null;
+  preparationDate?: string | null;
+  /**
+   * Statutory filing deadline (varies by jurisdiction).
+   */
+  filingDeadline?: string | null;
+  filingDate?: string | null;
+  filingStatus?:
+    | (
+        | 'in_preparation'
+        | 'filed_timely'
+        | 'filed_late'
+        | 'not_required'
+        | 'under_review'
+        | 'no_adjustment'
+        | 'adjustment'
+      )
+    | null;
+  evidenceAttestation?: (string | null) | EvidenceAttestation;
+  /**
+   * Advance Pricing Agreement reference (when applicable).
+   */
+  apaReference?: string | null;
+  status?: ('draft' | 'approved' | 'filed' | 'closed' | 'restated') | null;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
@@ -20059,10 +20039,8 @@ export interface PayloadQueryPreset {
     | 'carbon-emissions'
     | 'closing-entries'
     | 'consolidations'
-    | 'csrd-disclosures'
     | 'currency-rates'
     | 'entity-legal-structures'
-    | 'evidence-attestations'
     | 'financial-statements'
     | 'fiscal-calendars'
     | 'fiscal-periods'
@@ -20083,7 +20061,6 @@ export interface PayloadQueryPreset {
     | 'tax-periods'
     | 'tax-returns'
     | 'transfer-pricing-adjustments'
-    | 'transfer-pricing-files'
     | 'wip-snapshots'
     | 'cost-centers'
     | 'employees'
@@ -20140,15 +20117,17 @@ export interface PayloadQueryPreset {
     | 'segment-reporting'
     | 'biological-assets'
     | 'business-combinations'
+    | 'csrd-disclosures'
     | 'depreciation-schedules'
+    | 'evidence-attestations'
     | 'fair-value-measurements'
     | 'fixed-assets'
-    | 'held-for-sale-classifications'
     | 'investment-properties'
     | 'lease-period-postings'
     | 'leases'
     | 'properties'
     | 'spaces'
+    | 'transfer-pricing-files'
     | 'budget-planning'
     | 'contracts'
     | 'project-tasks'
@@ -20678,6 +20657,7 @@ export interface PagesSelect<T extends boolean = true> {
               'insurance-contract'?: T | InsuranceContractBlockSelect<T>;
               'debt-instrument'?: T | DebtInstrumentBlockSelect<T>;
               'regulatory-deferral-account'?: T | RegulatoryDeferralAccountBlockSelect<T>;
+              'held-for-sale'?: T | HeldForSaleBlockSelect<T>;
             };
         links?:
           | T
@@ -21097,6 +21077,32 @@ export interface RegulatoryDeferralAccountBlockSelect<T extends boolean = true> 
   currency?: T;
   discountRate?: T;
   recoveryPeriodEnd?: T;
+  notes?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "HeldForSaleBlock_select".
+ */
+export interface HeldForSaleBlockSelect<T extends boolean = true> {
+  classificationKind?: T;
+  status?: T;
+  expectedSaleDate?: T;
+  source?: T;
+  carryingAmountAtClassification?: T;
+  fairValue?: T;
+  costsToSell?: T;
+  currency?: T;
+  fairValueLessCostsToSell?: T;
+  impairmentLoss?: T;
+  isDiscontinuedOperation?: T;
+  segment?: T;
+  actualSaleDate?: T;
+  actualSaleProceeds?: T;
+  gainLossOnDisposal?: T;
+  fairValueMeasurement?: T;
+  journalEntry?: T;
   notes?: T;
   id?: T;
   blockName?: T;
@@ -23138,52 +23144,6 @@ export interface ConsolidationsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "csrd-disclosures_select".
- */
-export interface CsrdDisclosuresSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  legalEntity?: T;
-  datapointId?: T;
-  reportingYear?: T;
-  esrsCategory?: T;
-  esrsTopic?: T;
-  materiality?: T;
-  narrative?: T;
-  quantitativeKpi?:
-    | T
-    | {
-        value?: T;
-        unit?: T;
-        methodology?: T;
-        priorYearComparison?: T;
-        targetValue?: T;
-        targetYear?: T;
-      };
-  iro?:
-    | T
-    | {
-        kind?: T;
-        timeHorizon?: T;
-        valueChainStage?: T;
-      };
-  assuranceStatus?: T;
-  assuranceProvider?: T;
-  evidenceAttestation?: T;
-  isEUTaxonomyEligible?: T;
-  isEUTaxonomyAligned?: T;
-  status?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "currency-rates_select".
  */
 export interface CurrencyRatesSelect<T extends boolean = true> {
@@ -23225,39 +23185,6 @@ export interface EntityLegalStructuresSelect<T extends boolean = true> {
   taxTreatment?: T;
   auditRequirement?: T;
   isActive?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "evidence-attestations_select".
- */
-export interface EvidenceAttestationsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  attestationId?: T;
-  workflow?: T;
-  country?: T;
-  capturedAt?: T;
-  pdfA?: T;
-  pdfUa?: T;
-  signed?: T;
-  padesLevel?: T;
-  pdfFile?: T;
-  signatureValue?: T;
-  signedAt?: T;
-  signingCertificate?: T;
-  signedBy?: T;
-  signatureDigest?: T;
-  stepsCount?: T;
-  gapsCount?: T;
-  status?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
   handle?: T;
   createdBy?: T;
   updatedBy?: T;
@@ -24098,72 +24025,6 @@ export interface TransferPricingAdjustmentsSelect<T extends boolean = true> {
   adjustmentDate?: T;
   relatedDocuments?: T;
   auditTrail?: T;
-  notes?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "transfer-pricing-files_select".
- */
-export interface TransferPricingFilesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  reportingYear?: T;
-  fileType?: T;
-  jurisdictionCode?: T;
-  localFileEntity?: T;
-  consolidatedHeadEntity?: T;
-  masterFileSections?:
-    | T
-    | {
-        orgStructure?: T;
-        businessDescription?: T;
-        intangibles?: T;
-        intercompanyFinancialActivities?: T;
-        financialAndTaxPositions?: T;
-      };
-  localFileSections?:
-    | T
-    | {
-        localEntityDescription?: T;
-        controlledTransactions?: T;
-        financialInformation?: T;
-      };
-  cbcrAggregates?:
-    | T
-    | {
-        jurisdictionCode?: T;
-        unrelatedRevenue?: T;
-        relatedRevenue?: T;
-        totalRevenue?: T;
-        profitBeforeTax?: T;
-        incomeTaxPaidCash?: T;
-        incomeTaxAccrued?: T;
-        statedCapital?: T;
-        accumulatedEarnings?: T;
-        numberOfEmployees?: T;
-        tangibleAssets?: T;
-        id?: T;
-      };
-  tpMethod?: T;
-  reportingCurrency?: T;
-  consolidatedRevenue?: T;
-  cbcrFilingThresholdMet?: T;
-  pillarTwoApplicable?: T;
-  preparationDate?: T;
-  filingDeadline?: T;
-  filingDate?: T;
-  filingStatus?: T;
-  evidenceAttestation?: T;
-  apaReference?: T;
-  status?: T;
-  approvedBy?: T;
-  approvedAt?: T;
   notes?: T;
   handle?: T;
   createdBy?: T;
@@ -26546,6 +26407,52 @@ export interface BusinessCombinationsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "csrd-disclosures_select".
+ */
+export interface CsrdDisclosuresSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  legalEntity?: T;
+  datapointId?: T;
+  reportingYear?: T;
+  esrsCategory?: T;
+  esrsTopic?: T;
+  materiality?: T;
+  narrative?: T;
+  quantitativeKpi?:
+    | T
+    | {
+        value?: T;
+        unit?: T;
+        methodology?: T;
+        priorYearComparison?: T;
+        targetValue?: T;
+        targetYear?: T;
+      };
+  iro?:
+    | T
+    | {
+        kind?: T;
+        timeHorizon?: T;
+        valueChainStage?: T;
+      };
+  assuranceStatus?: T;
+  assuranceProvider?: T;
+  evidenceAttestation?: T;
+  isEUTaxonomyEligible?: T;
+  isEUTaxonomyAligned?: T;
+  status?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "depreciation-schedules_select".
  */
 export interface DepreciationSchedulesSelect<T extends boolean = true> {
@@ -26563,6 +26470,39 @@ export interface DepreciationSchedulesSelect<T extends boolean = true> {
   status?: T;
   postedAt?: T;
   journalEntry?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "evidence-attestations_select".
+ */
+export interface EvidenceAttestationsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  attestationId?: T;
+  workflow?: T;
+  country?: T;
+  capturedAt?: T;
+  pdfA?: T;
+  pdfUa?: T;
+  signed?: T;
+  padesLevel?: T;
+  pdfFile?: T;
+  signatureValue?: T;
+  signedAt?: T;
+  signingCertificate?: T;
+  signedBy?: T;
+  signatureDigest?: T;
+  stepsCount?: T;
+  gapsCount?: T;
+  status?: T;
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
@@ -26655,41 +26595,6 @@ export interface FixedAssetsSelect<T extends boolean = true> {
   notes?: T;
   approvedBy?: T;
   approvedAt?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "held-for-sale-classifications_select".
- */
-export interface HeldForSaleClassificationsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  classificationKind?: T;
-  source?: T;
-  classificationDate?: T;
-  expectedSaleDate?: T;
-  carryingAmountAtClassification?: T;
-  fairValue?: T;
-  costsToSell?: T;
-  fairValueLessCostsToSell?: T;
-  impairmentLoss?: T;
-  currency?: T;
-  isDiscontinuedOperation?: T;
-  segment?: T;
-  actualSaleDate?: T;
-  actualSaleProceeds?: T;
-  gainLossOnDisposal?: T;
-  fairValueMeasurement?: T;
-  journalEntry?: T;
-  status?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
   handle?: T;
   createdBy?: T;
   updatedBy?: T;
@@ -26919,6 +26824,72 @@ export interface SpacesSelect<T extends boolean = true> {
   bimElementId?: T;
   glAccount?: T;
   costCenter?: T;
+  status?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  handle?: T;
+  createdBy?: T;
+  updatedBy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "transfer-pricing-files_select".
+ */
+export interface TransferPricingFilesSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  reference?: T;
+  reportingYear?: T;
+  fileType?: T;
+  jurisdictionCode?: T;
+  localFileEntity?: T;
+  consolidatedHeadEntity?: T;
+  masterFileSections?:
+    | T
+    | {
+        orgStructure?: T;
+        businessDescription?: T;
+        intangibles?: T;
+        intercompanyFinancialActivities?: T;
+        financialAndTaxPositions?: T;
+      };
+  localFileSections?:
+    | T
+    | {
+        localEntityDescription?: T;
+        controlledTransactions?: T;
+        financialInformation?: T;
+      };
+  cbcrAggregates?:
+    | T
+    | {
+        jurisdictionCode?: T;
+        unrelatedRevenue?: T;
+        relatedRevenue?: T;
+        totalRevenue?: T;
+        profitBeforeTax?: T;
+        incomeTaxPaidCash?: T;
+        incomeTaxAccrued?: T;
+        statedCapital?: T;
+        accumulatedEarnings?: T;
+        numberOfEmployees?: T;
+        tangibleAssets?: T;
+        id?: T;
+      };
+  tpMethod?: T;
+  reportingCurrency?: T;
+  consolidatedRevenue?: T;
+  cbcrFilingThresholdMet?: T;
+  pillarTwoApplicable?: T;
+  preparationDate?: T;
+  filingDeadline?: T;
+  filingDate?: T;
+  filingStatus?: T;
+  evidenceAttestation?: T;
+  apaReference?: T;
   status?: T;
   approvedBy?: T;
   approvedAt?: T;
@@ -28925,10 +28896,8 @@ export interface CollectionQueryWidget {
       | 'carbon-emissions'
       | 'closing-entries'
       | 'consolidations'
-      | 'csrd-disclosures'
       | 'currency-rates'
       | 'entity-legal-structures'
-      | 'evidence-attestations'
       | 'financial-statements'
       | 'fiscal-calendars'
       | 'fiscal-periods'
@@ -28949,7 +28918,6 @@ export interface CollectionQueryWidget {
       | 'tax-periods'
       | 'tax-returns'
       | 'transfer-pricing-adjustments'
-      | 'transfer-pricing-files'
       | 'wip-snapshots'
       | 'cost-centers'
       | 'employees'
@@ -29006,15 +28974,17 @@ export interface CollectionQueryWidget {
       | 'segment-reporting'
       | 'biological-assets'
       | 'business-combinations'
+      | 'csrd-disclosures'
       | 'depreciation-schedules'
+      | 'evidence-attestations'
       | 'fair-value-measurements'
       | 'fixed-assets'
-      | 'held-for-sale-classifications'
       | 'investment-properties'
       | 'lease-period-postings'
       | 'leases'
       | 'properties'
       | 'spaces'
+      | 'transfer-pricing-files'
       | 'budget-planning'
       | 'contracts'
       | 'project-tasks'
@@ -29130,10 +29100,8 @@ export interface ActivityWidget {
           | 'carbon-emissions'
           | 'closing-entries'
           | 'consolidations'
-          | 'csrd-disclosures'
           | 'currency-rates'
           | 'entity-legal-structures'
-          | 'evidence-attestations'
           | 'financial-statements'
           | 'fiscal-calendars'
           | 'fiscal-periods'
@@ -29154,7 +29122,6 @@ export interface ActivityWidget {
           | 'tax-periods'
           | 'tax-returns'
           | 'transfer-pricing-adjustments'
-          | 'transfer-pricing-files'
           | 'wip-snapshots'
           | 'cost-centers'
           | 'employees'
@@ -29211,15 +29178,17 @@ export interface ActivityWidget {
           | 'segment-reporting'
           | 'biological-assets'
           | 'business-combinations'
+          | 'csrd-disclosures'
           | 'depreciation-schedules'
+          | 'evidence-attestations'
           | 'fair-value-measurements'
           | 'fixed-assets'
-          | 'held-for-sale-classifications'
           | 'investment-properties'
           | 'lease-period-postings'
           | 'leases'
           | 'properties'
           | 'spaces'
+          | 'transfer-pricing-files'
           | 'budget-planning'
           | 'contracts'
           | 'project-tasks'
@@ -29373,10 +29342,8 @@ export interface TaskCreateCollectionExport {
       | 'carbon-emissions'
       | 'closing-entries'
       | 'consolidations'
-      | 'csrd-disclosures'
       | 'currency-rates'
       | 'entity-legal-structures'
-      | 'evidence-attestations'
       | 'financial-statements'
       | 'fiscal-calendars'
       | 'fiscal-periods'
@@ -29397,7 +29364,6 @@ export interface TaskCreateCollectionExport {
       | 'tax-periods'
       | 'tax-returns'
       | 'transfer-pricing-adjustments'
-      | 'transfer-pricing-files'
       | 'wip-snapshots'
       | 'cost-centers'
       | 'employees'
@@ -29454,15 +29420,17 @@ export interface TaskCreateCollectionExport {
       | 'segment-reporting'
       | 'biological-assets'
       | 'business-combinations'
+      | 'csrd-disclosures'
       | 'depreciation-schedules'
+      | 'evidence-attestations'
       | 'fair-value-measurements'
       | 'fixed-assets'
-      | 'held-for-sale-classifications'
       | 'investment-properties'
       | 'lease-period-postings'
       | 'leases'
       | 'properties'
       | 'spaces'
+      | 'transfer-pricing-files'
       | 'budget-planning'
       | 'contracts'
       | 'project-tasks'

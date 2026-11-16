@@ -268,7 +268,6 @@ export { default as GovernmentGrants } from '@/collections/government-grants'
 export { default as DeferredTaxItems } from '@/collections/deferred-tax-items'
 export { default as ShareBasedPayments } from '@/collections/share-based-payments'
 export { default as BusinessCombinations } from '@/collections/business-combinations'
-export { default as HeldForSaleClassifications } from '@/collections/held-for-sale-classifications'
 export { default as FairValueMeasurements } from '@/collections/fair-value-measurements'
 export { default as TransactionFailures } from '@/collections/transaction-failures'
 
