@@ -737,6 +737,133 @@ export const EarningsPerShare: Block = {
 export const epsError = (details: Record<string, unknown>): string | true =>
   Number(details.weightedAverageOrdinaryShares) > 0 ? true : 'An EPS computation names a positive weighted average of ordinary shares.'
 
+/**
+ * One group of insurance contracts measured under IFRS 17: its model, portfolio and cohort, the building
+ * blocks of the measurement (fulfilment cash flows, discount rate, risk adjustment, contractual service
+ * margin) and its loss component.
+ *
+ * @standard IFRS IFRS-17 §3 scope
+ * @standard IFRS IFRS-17 §32 general-measurement-model-building-blocks
+ * @standard IFRS IFRS-17 §38 contractual-service-margin
+ * @standard IFRS IFRS-17 §53 premium-allocation-approach-simplified
+ * @standard IFRS IFRS-17 §B100 variable-fee-approach
+ * @standard IFRS IFRS-17 §93 disclosure-requirements
+ * @standard IFRS IFRS-13 fair-value-input-hierarchy
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-8601-1:2019 date-time
+ * @audit ISO 19011:2018 §6.4.6 audit-evidence-insurance-contracts
+ * @compliance Solvency II / IAIS ICS — actuarial reserving link
+ * @compliance SOX §404 internal-controls TOM-INS-01
+ */
+export const InsuranceContract: Block = {
+  slug: 'insurance-contract',
+  interfaceName: 'InsuranceContractBlock',
+  labels: { singular: 'Insurance contract', plural: 'Insurance contracts' },
+  fields: [
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'measurementModel',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'GMM — General Measurement Model (default)', value: 'gmm' },
+            { label: 'PAA — Premium Allocation Approach (≤1yr coverage)', value: 'paa' },
+            { label: 'VFA — Variable Fee Approach (direct participation)', value: 'vfa' },
+          ],
+        },
+        {
+          name: 'lineOfBusiness',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'Life (term)', value: 'life_term' },
+            { label: 'Life (whole life)', value: 'life_whole' },
+            { label: 'Annuity', value: 'annuity' },
+            { label: 'Health', value: 'health' },
+            { label: 'Property & Casualty', value: 'p_and_c' },
+            { label: 'Auto', value: 'auto' },
+            { label: 'Marine / Aviation', value: 'marine_aviation' },
+            { label: 'Reinsurance assumed', value: 'reinsurance_assumed' },
+            { label: 'Reinsurance ceded', value: 'reinsurance_ceded' },
+          ],
+        },
+        {
+          name: 'status',
+          type: 'select',
+          defaultValue: 'recognised',
+          options: [
+            { label: 'Recognised', value: 'recognised' },
+            { label: 'In Coverage', value: 'in_coverage' },
+            { label: 'Run-off (claims only)', value: 'runoff' },
+            { label: 'Derecognised', value: 'derecognised' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'portfolioId', type: 'text', required: true, admin: { description: 'IFRS 17 §14 — portfolio = subject to similar risks AND managed together.' } },
+        { name: 'cohortYear', type: 'number', required: true, admin: { description: 'IFRS 17 §22 — annual cohort grouping (no contracts ≥1yr apart in same group).' } },
+        {
+          name: 'profitabilityGroup',
+          type: 'select',
+          required: true,
+          admin: { description: 'IFRS 17 §16 three groups per cohort.' },
+          options: [
+            { label: 'Profitable', value: 'profitable' },
+            { label: 'No Significant Possibility of Loss', value: 'no_loss_possibility' },
+            { label: 'Onerous (loss-recognition required)', value: 'onerous' },
+          ],
+        },
+        { name: 'coverageEndDate', type: 'date' },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'futureCashflowsEstimate', type: 'number', required: true, admin: { description: 'IFRS 17 §33 — probability-weighted estimate of fulfilment cash flows (cents).' } },
+        { name: 'discountRate', type: 'number', required: true, min: 0, max: 100, admin: { description: 'IFRS 17 §36 — current rate reflecting time value + financial risk (% p.a.).', step: 0.001 } },
+        currencyField(),
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'riskAdjustment', type: 'number', defaultValue: 0, admin: { description: 'IFRS 17 §37 — non-financial risk premium (cents).' } },
+        { name: 'csm', type: 'number', defaultValue: 0, admin: { description: 'Contractual Service Margin — IFRS 17 §38 unearned profit (cents). Recognised as revenue over coverage units.' } },
+        { name: 'lossComponent', type: 'number', defaultValue: 0, admin: { description: 'IFRS 17 §47 — loss recognised immediately for onerous groups.' } },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'reinsuranceContract',
+          type: 'relationship',
+          relationTo: 'pages',
+          filterOptions: { documentType: { equals: 'insurance-contract' } },
+          admin: { description: 'For reinsurance-held: link to the underlying gross contract.' },
+        },
+        { name: 'fairValueMeasurement', type: 'relationship', relationTo: 'fair-value-measurements' },
+        { name: 'journalEntry', type: 'relationship', relationTo: 'journal-entries', admin: { readOnly: true } },
+      ],
+    },
+    { name: 'notes', type: 'textarea' },
+  ],
+}
+
+/** IFRS 17: the CSM is never negative (§38 — a shortfall is a loss component); an onerous group recognises its loss (§47); coverage ends after inception. */
+export const insuranceError = (details: Record<string, unknown>, document: Record<string, unknown>): string | true => {
+  if (Number(details.csm ?? 0) < 0) return 'A contractual service margin is never negative; a shortfall is a loss component (IFRS 17 §38).'
+  if (details.profitabilityGroup === 'onerous' && !(Number(details.lossComponent ?? 0) > 0)) return 'An onerous group recognises its loss component (IFRS 17 §47).'
+  const from = document.effectiveDate ? Date.parse(String(document.effectiveDate)) : Number.NaN
+  const to = details.coverageEndDate ? Date.parse(String(details.coverageEndDate)) : Number.NaN
+  return Number.isFinite(from) && Number.isFinite(to) && to <= from ? 'Coverage ends after the contracts take effect.' : true
+}
+
 export const GOVERNED_TYPES: readonly GovernedType[] = [
   // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
   {
@@ -816,5 +943,18 @@ export const GOVERNED_TYPES: readonly GovernedType[] = [
     feature: 'earnings_per_share',
     block: EarningsPerShare,
     check: epsError,
+  },
+  // was insurance-contracts: read by every member, written by admins and accountants, where the plan includes
+  // insurance_contracts. The reference (INS-2026-001) is the page title, the inception date the effective date.
+  {
+    value: 'insurance-contract',
+    label: 'Insurance contract',
+    read: ['user'],
+    write: ['admin', 'accountant'],
+    requires: ['effectiveDate'],
+    unique: ['title'],
+    feature: 'insurance_contracts',
+    block: InsuranceContract,
+    check: insuranceError,
   },
 ]

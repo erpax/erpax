@@ -189,4 +189,15 @@ describe('governed documents on pages — never public, read and written by the 
     expect(documentError('earnings-per-share', { details: [{ blockType: 'earnings-per-share', weightedAverageOrdinaryShares: 0 }] })).toMatch(/positive weighted average/)
     expect(documentError('earnings-per-share', { details: [{ blockType: 'earnings-per-share', weightedAverageOrdinaryShares: 1_000_000 }] })).toBe(true)
   })
+
+  it('an insurance contract group keeps IFRS 17: no negative CSM, an onerous group recognises its loss, coverage ends after inception', () => {
+    const IC = 'insurance-contract'
+    const block = (extra: object = {}) => ({ blockType: IC, measurementModel: 'gmm', lineOfBusiness: 'life_term', portfolioId: 'P1', cohortYear: 2026, profitabilityGroup: 'profitable', futureCashflowsEstimate: 1, discountRate: 3, csm: 500, ...extra })
+    expect(documentError(IC, { details: [block()] })).toMatch(/names its effectiveDate/)
+    expect(documentError(IC, { effectiveDate: '2026-01-01', details: [block()] })).toBe(true)
+    expect(documentError(IC, { effectiveDate: '2026-01-01', details: [block({ csm: -1 })] })).toMatch(/never negative/)
+    expect(documentError(IC, { effectiveDate: '2026-01-01', details: [block({ profitabilityGroup: 'onerous', csm: 0 })] })).toMatch(/onerous group recognises its loss/)
+    expect(documentError(IC, { effectiveDate: '2026-01-01', details: [block({ profitabilityGroup: 'onerous', csm: 0, lossComponent: 1200 })] })).toBe(true)
+    expect(documentError(IC, { effectiveDate: '2026-01-01', details: [block({ coverageEndDate: '2025-12-31' })] })).toMatch(/Coverage ends after/)
+  })
 })

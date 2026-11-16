@@ -16,6 +16,7 @@ import * as migration_20261116_043403_fold_processing_activities from './2026111
 import * as migration_20261116_045940_slug_per_tenant from './20261116_045940_slug_per_tenant';
 import * as migration_20261116_060023_fold_internal_audit_function from './20261116_060023_fold_internal_audit_function';
 import * as migration_20261116_102149_fold_earnings_per_share from './20261116_102149_fold_earnings_per_share';
+import * as migration_20261116_105734_fold_insurance_contracts from './20261116_105734_fold_insurance_contracts';
 
 export const migrations = [
   {
@@ -106,6 +107,11 @@ export const migrations = [
   {
     up: migration_20261116_102149_fold_earnings_per_share.up,
     down: migration_20261116_102149_fold_earnings_per_share.down,
-    name: '20261116_102149_fold_earnings_per_share'
+    name: '20261116_102149_fold_earnings_per_share',
+  },
+  {
+    up: migration_20261116_105734_fold_insurance_contracts.up,
+    down: migration_20261116_105734_fold_insurance_contracts.down,
+    name: '20261116_105734_fold_insurance_contracts'
   },
 ];
