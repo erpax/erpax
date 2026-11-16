@@ -2695,8 +2695,6 @@ src/collections/recurring-journals/index.ts:17: * @accounting IFRS IAS-1 §27 ac
 src/collections/recurring-journals/index.ts:18: * @accounting IFRS IAS-1 §29 §30 separate-presentation
 src/collections/recurring-journals/index.ts:19: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 src/collections/recurring-journals/index.ts:20: * @accounting US-GAAP ASC-720 other-expenses
-src/collections/related-party-transactions/index.ts:4: * @accounting IAS-24 related-party-disclosures
-src/collections/related-party-transactions/index.ts:5: * @accounting US-GAAP ASC-850 related-party-disclosures
 src/collections/returns/index.ts:5: * @accounting IFRS IFRS-15 §B22 right-of-return-revenue-reversal
 src/collections/returns/index.ts:6: * @accounting IFRS IAS-2 inventories return-to-stock
 src/collections/returns/index.ts:7: * @accounting US-GAAP ASC-606-10-32-10 variable-consideration
@@ -2856,6 +2854,8 @@ src/utilities/en/16931/types/index.ts:17: * @accounting US-GAAP ASC-606 revenue-
 src/utilities/fiscal/period/resolver/span/index.ts:10: * @accounting IAS-1 §36 reporting period
 src/utilities/gl/account/resolver/index.ts:25: * @accounting IFRS IAS-1 chart-of-accounts
 src/utilities/gl/account/resolver/index.ts:26: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
+src/utilities/governed/index.ts:1234: * @accounting IAS-24 related-party-disclosures
+src/utilities/governed/index.ts:1235: * @accounting US-GAAP ASC-850 related-party-disclosures
 src/utilities/governed/index.ts:871: * @accounting IFRS-9 financial-instruments
 src/utilities/governed/index.ts:872: * @accounting IAS-1 current-non-current-classification
 src/utilities/governed/index.ts:873: * @accounting US-GAAP ASC-470 debt
@@ -3138,7 +3138,6 @@ src/collections/receipts/index.ts:21: * @security ISO-27001 A.5.23 cloud-service
 src/collections/recruiting-pipeline/index.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/recurring-journals/index.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/regulatory-reports/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/related-party-transactions/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/returns/index.ts:11: * @security ISO-27002 §5.3 segregation-of-duties
 src/collections/risk-register/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/roles/index.ts:12: * @security ISO-27001 A.5.18 access-rights
