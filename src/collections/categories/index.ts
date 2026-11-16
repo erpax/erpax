@@ -51,28 +51,6 @@ export const Categories: CollectionConfig = {
         position: 'sidebar',
       },
     },
-    {
-      name: 'breadcrumbs',
-      type: 'array',
-      admin: {
-        hidden: true,
-        readOnly: true,
-      },
-      fields: [
-        {
-          name: 'doc',
-          type: 'relationship',
-          relationTo: 'categories',
-        },
-        {
-          name: 'title',
-          type: 'text',
-        },
-        {
-          name: 'url',
-          type: 'text',
-        },
-      ],
-    },
+    // breadcrumbs: added by the nested-docs plugin (doc, url, label), which this `parent` opts into.
   ],
 }
