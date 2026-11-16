@@ -9,6 +9,7 @@ import * as migration_20261115_194748_plugins_real_schema from './20261115_19474
 import * as migration_20261115_201759_fold_governed_pages from './20261115_201759_fold_governed_pages';
 import * as migration_20261115_220659_fold_management_certifications from './20261115_220659_fold_management_certifications';
 import * as migration_20261115_235153_unversion_users_tenants from './20261115_235153_unversion_users_tenants';
+import * as migration_20261116_002432_authorship_created_by from './20261116_002432_authorship_created_by';
 
 export const migrations = [
   {
@@ -64,6 +65,11 @@ export const migrations = [
   {
     up: migration_20261115_235153_unversion_users_tenants.up,
     down: migration_20261115_235153_unversion_users_tenants.down,
-    name: '20261115_235153_unversion_users_tenants'
+    name: '20261115_235153_unversion_users_tenants',
+  },
+  {
+    up: migration_20261116_002432_authorship_created_by.up,
+    down: migration_20261116_002432_authorship_created_by.down,
+    name: '20261116_002432_authorship_created_by'
   },
 ];

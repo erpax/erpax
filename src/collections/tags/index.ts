@@ -27,7 +27,6 @@
  * @see ../plugins/taggable.ts
  */
 import type { CollectionConfig } from 'payload'
-import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { auditFields } from '@/fields/relationship/auditFields'
@@ -72,7 +71,6 @@ const Tags: CollectionConfig = {
     notesField(),
   ],
   hooks: {
-    beforeChange: [autoPopulateCreatedBy],
     afterChange: [auditTrailAfterChange('tags')],
   },
 }

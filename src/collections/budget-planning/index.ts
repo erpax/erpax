@@ -1,5 +1,4 @@
 import type { CollectionConfig } from 'payload'
-import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
@@ -91,7 +90,6 @@ const BudgetPlanning: CollectionConfig = {
   ],
   hooks: {
     beforeChange: [
-      autoPopulateCreatedBy,
       enforceSegregationOfDuties(),
       autoSetTimestamp('approvedAt', (data) => Boolean((data as { approvedBy?: unknown }).approvedBy)),
       async ({ data }) => {

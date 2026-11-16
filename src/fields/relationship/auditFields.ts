@@ -1,12 +1,12 @@
 import type { Field } from 'payload'
 
 /**
- * Audit trail fields (who did what and when).
+ * Approval fields: who approved the document, and when.
  *
- * Pass `{ readOnly: true }` for collections that expose the approval lifecycle
- * to the admin UI (the approver should *see* who/when, just not edit it).
- * Default keeps the historical hidden/disabled admin UI for fully-system-managed
- * audit columns.
+ * The creator is Payload 4's own authorship (`createdBy`), added to every collection when the config
+ * is sanitized: stamped from the request's user on the first write, closed to client writes, cleared
+ * on duplicate. Pass `{ readOnly: true }` for collections that show the approval to the admin UI (the
+ * approver should *see* who/when, just not edit it).
  *
  * @standard ISO-19011:2018 audit-trail
  * @security ISO-27002 §5.3 segregation-of-duties approver-visibility
@@ -17,12 +17,6 @@ export const auditFields = (
     readOnly?: boolean;
   } = {},
 ): Field[] => [
-  {
-    name: 'createdBy',
-    type: 'relationship',
-    relationTo: 'users',
-    admin: { disabled: true },
-  },
   {
     name: 'approvedBy',
     type: 'relationship',

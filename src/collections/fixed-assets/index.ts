@@ -1,5 +1,4 @@
 import type { CollectionConfig } from 'payload'
-import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
 import { createAccountingCollection } from '@/utilities/factory';
@@ -20,8 +19,7 @@ import {
 /**
  * Fixed Assets — capitalized PP&E with depreciation and book-value tracking.
  *
- * Slice ZZ: autoPopulateCreatedBy threaded into the factory's beforeChange
- * chain; ISO-8601 disposalDate auto-stamped on status → 'disposed';
+ * Slice ZZ: ISO-8601 disposalDate auto-stamped on status → 'disposed';
  * audit-trail emission wired at the post-factory composition point.
  *
  * @standard ISO-4217:2015 currency-codes
@@ -41,7 +39,6 @@ const _baseFixedAssets = createAccountingCollection(
       useAsTitle: 'assetNumber',
       defaultColumns: ['assetNumber', 'description', 'assetCategory', 'acquisitionDate', 'assetCost', 'status'],
       beforeChangeHooks: [
-        autoPopulateCreatedBy,
         // ISO-8601 disposalDate stamp on status → 'disposed' transition.
         autoSetTimestamp(
           'disposalDate',

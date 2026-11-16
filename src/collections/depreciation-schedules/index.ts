@@ -15,7 +15,6 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
@@ -72,7 +71,6 @@ const DepreciationSchedules: CollectionConfig = {
   hooks: {
     beforeChange: [
       periodLock('periodEnd'),
-      autoPopulateCreatedBy,
       autoSetTimestamp('postedAt', (d) => (d as { status?: string }).status === 'posted'),
     ],
     afterChange: [

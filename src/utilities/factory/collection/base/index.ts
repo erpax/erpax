@@ -13,7 +13,6 @@ import type {
   CollectionConfig, CollectionBeforeChangeHook,
   CollectionAfterChangeHook, Field,
 } from 'payload'
-import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminGroupOf } from '@/utilities/navigation'
 import {
@@ -158,7 +157,6 @@ export interface AccountingCollectionOptions {
 
   // ─── Hook injection toggles ────────────────────
   readonly injectAuditTrail?: boolean      // default true
-  readonly injectCreatedBy?: boolean       // default true
   readonly beforeChangeHooks?: CollectionBeforeChangeHook[]
   readonly afterChangeHooks?: CollectionAfterChangeHook[]
 
@@ -197,7 +195,6 @@ export const createAccountingCollection = (
   const injectNotesField = opts.injectNotesField !== false
   const injectStatusField = opts.injectStatusField === true
   const injectAuditTrail = opts.injectAuditTrail !== false
-  const injectCreatedBy = opts.injectCreatedBy !== false
   const injectTamperProofUuid = opts.injectTamperProofUuid !== false
 
   const hasHoroStates = !!(opts.horoStates && opts.horoStates.length > 0)
@@ -279,7 +276,6 @@ export const createAccountingCollection = (
 
   // ── Assemble hooks: createdBy + audit-trail by default (the multi-tenant plugin fills the tenant) ──
   const beforeChange = [
-    ...(injectCreatedBy ? [autoPopulateCreatedBy] : []),
     ...(opts.beforeChangeHooks ?? []),
     ...(hasHoroStates
       ? [horoStateBeforeChange(horoStateName, opts.horoStates as ReadonlyArray<HoroState>)]
