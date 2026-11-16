@@ -235,7 +235,6 @@ export { DisclosureChecklists } from '@/collections/disclosure-checklists'
 export { AuditCommitteeMinutes } from '@/collections/audit-committee-minutes'
 export { RiskRegister } from '@/collections/risk-register'
 export { DebtSchedule } from '@/collections/debt-schedule'
-export { InternalAuditFunction } from '@/collections/internal-audit-function'
 export { SegmentReporting } from '@/collections/segment-reporting'
 
 // GDPR & Data Privacy

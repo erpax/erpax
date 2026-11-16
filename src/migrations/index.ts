@@ -14,6 +14,7 @@ import * as migration_20261116_020503_fold_statutory_report_templates from './20
 import * as migration_20261116_034237_fold_compliance_deadlines from './20261116_034237_fold_compliance_deadlines';
 import * as migration_20261116_043403_fold_processing_activities from './20261116_043403_fold_processing_activities';
 import * as migration_20261116_045940_slug_per_tenant from './20261116_045940_slug_per_tenant';
+import * as migration_20261116_060023_fold_internal_audit_function from './20261116_060023_fold_internal_audit_function';
 
 export const migrations = [
   {
@@ -94,6 +95,11 @@ export const migrations = [
   {
     up: migration_20261116_045940_slug_per_tenant.up,
     down: migration_20261116_045940_slug_per_tenant.down,
-    name: '20261116_045940_slug_per_tenant'
+    name: '20261116_045940_slug_per_tenant',
+  },
+  {
+    up: migration_20261116_060023_fold_internal_audit_function.up,
+    down: migration_20261116_060023_fold_internal_audit_function.down,
+    name: '20261116_060023_fold_internal_audit_function'
   },
 ];

@@ -395,7 +395,6 @@ export interface Config {
     'disclosure-checklists': DisclosureChecklist;
     'entity-types': EntityType;
     'government-grants': GovernmentGrant;
-    'internal-audit-function': InternalAuditFunction;
     'internal-controls': InternalControl;
     'internal-policies': InternalPolicy;
     'management-assessment-icfr': ManagementAssessmentIcfr;
@@ -620,7 +619,6 @@ export interface Config {
     'disclosure-checklists': DisclosureChecklistsSelect<false> | DisclosureChecklistsSelect<true>;
     'entity-types': EntityTypesSelect<false> | EntityTypesSelect<true>;
     'government-grants': GovernmentGrantsSelect<false> | GovernmentGrantsSelect<true>;
-    'internal-audit-function': InternalAuditFunctionSelect<false> | InternalAuditFunctionSelect<true>;
     'internal-controls': InternalControlsSelect<false> | InternalControlsSelect<true>;
     'internal-policies': InternalPoliciesSelect<false> | InternalPoliciesSelect<true>;
     'management-assessment-icfr': ManagementAssessmentIcfrSelect<false> | ManagementAssessmentIcfrSelect<true>;
@@ -1637,6 +1635,7 @@ export interface Page {
         | 'statutory-report-template'
         | 'compliance-deadline'
         | 'processing-activity'
+        | 'internal-audit-function'
       )
     | null;
   /**
@@ -1664,6 +1663,7 @@ export interface Page {
           | StatutoryReportTemplateBlock
           | ComplianceDeadlineBlock
           | ProcessingActivityBlock
+          | InternalAuditFunctionBlock
         )[]
       | null;
     /**
@@ -3486,6 +3486,414 @@ export interface ProcessingActivityBlock {
   id?: string | null;
   blockName?: string | null;
   blockType: 'processing-activity';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "InternalAuditFunctionBlock".
+ */
+export interface InternalAuditFunctionBlock {
+  entity: string | LegalEntity;
+  reportingLine: 'audit-committee' | 'cfo' | 'ceo' | 'board-dotted';
+  auditFunctionStatus: 'established' | 'establishing' | 'under-review' | 'dormant';
+  /**
+   * Chief Audit Executive (CAE) / Head of Internal Audit.
+   */
+  chiefAuditExecutive: string;
+  /**
+   * Email/phone.
+   */
+  chiefAuditExecutiveContact?: string | null;
+  /**
+   * Primary audit committee for governance oversight.
+   */
+  auditCommittee?: (string | null) | AuditCommittee;
+  /**
+   * Number of internal audit staff.
+   */
+  auditStaffCount?: number | null;
+  /**
+   * Annual internal audit budget.
+   */
+  auditBudget?: number | null;
+  /**
+   * Uses risk-based approach aligned with entity risk register.
+   */
+  riskBasedAuditing?: boolean | null;
+  /**
+   * Annual audit plan (risks, scope, staff allocation).
+   */
+  auditPlan?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Fiscal year of the plan.
+   */
+  auditPlanYear?: string | null;
+  auditPlanApprovedDate?: string | null;
+  /**
+   * Annual audit plan (PDF).
+   */
+  auditPlanDocument?: (string | null) | Media;
+  auditEngagements?:
+    | {
+        engagementName: string;
+        engagementType: 'financial' | 'operational' | 'compliance' | 'it' | 'fraud' | 'special-review';
+        status?: ('planned' | 'in-progress' | 'fieldwork-complete' | 'report-issued' | 'cancelled') | null;
+        startDate: string;
+        completionDate?: string | null;
+        reportIssued?: boolean | null;
+        objectiveScope?: LexicalRichText<LexicalNodes_AD327369> | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Links to minutes where audit reports were presented.
+   */
+  auditReports?: (string | AuditCommitteeMinute)[] | null;
+  /**
+   * Findings from internal audit engagements.
+   */
+  auditFindings?: (string | AuditFinding)[] | null;
+  followUpTracking?:
+    | {
+        findingReference: string;
+        targetImplementationDate: string;
+        implementationDate?: string | null;
+        followUpStatus?: ('not-started' | 'in-progress' | 'completed' | 'not-implemented') | null;
+        managementAction: LexicalRichText<LexicalNodes_AD327369>;
+        notes?: LexicalRichText<LexicalNodes_AD327369> | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * KPIs: audit hours, engagements completed, findings, etc.
+   */
+  performanceMetrics?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Internal and external quality assurance reviews (IIA IPPF).
+   */
+  qualityAssurance?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Date of last external QA review (required every 5 years).
+   */
+  lastQualityReview?: string | null;
+  nextQualityReview?: string | null;
+  /**
+   * Adherence to IIA International Standards, code of ethics.
+   */
+  professionalStandards?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Assessment of adequacy of internal audit resources.
+   */
+  resourceAdequacy?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Statement of independence and objectivity per IIA 1100 series.
+   */
+  independenceAndObjectivity?: LexicalRichText<LexicalNodes_AD327369> | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'internal-audit-function';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-committees".
+ */
+export interface AuditCommittee {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  name: string;
+  entity: string | LegalEntity;
+  charter?: (string | null) | Media;
+  establishedDate: string;
+  meetingFrequency: 'quarterly' | 'semi-annual' | 'annual' | 'as-needed';
+  status?: ('active' | 'inactive' | 'dissolved') | null;
+  /**
+   * The committee roster (formerly the audit-committee-members collection).
+   */
+  members?:
+    | {
+        memberName: string;
+        title?: string | null;
+        affiliation: 'internal' | 'external' | 'independent';
+        appointedDate: string;
+        termEndDate?: string | null;
+        role?: ('chair' | 'vice-chair' | 'member' | 'financial-expert') | null;
+        expertise?:
+          | {
+              area?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        status?: ('active' | 'resigned' | 'removed') | null;
+        id?: string | null;
+      }[]
+    | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-committee-minutes".
+ */
+export interface AuditCommitteeMinute {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  auditCommittee: string | AuditCommittee;
+  entity: string | LegalEntity;
+  /**
+   * E.g., "Audit Committee Meeting - Q4 2026".
+   */
+  meetingTitle: string;
+  meetingDate: string;
+  /**
+   * Meeting time and duration (e.g., "14:00-16:30 CET").
+   */
+  meetingTime?: string | null;
+  /**
+   * Physical or virtual location.
+   */
+  meetingLocation?: string | null;
+  /**
+   * Committee chair.
+   */
+  chairPerson?: string | null;
+  attendees?:
+    | {
+        name: string;
+        title?: string | null;
+        affiliation?: string | null;
+        status?: ('present' | 'absent' | 'excused') | null;
+        id?: string | null;
+      }[]
+    | null;
+  agenda?:
+    | {
+        sequence: number;
+        topic: string;
+        presenter?: string | null;
+        timeAllocated?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Comprehensive summary of discussions, issues raised, concerns.
+   */
+  discussionSummary: LexicalRichText<LexicalNodes_AD327369>;
+  keyDecisions?:
+    | {
+        decision: LexicalRichText<LexicalNodes_AD327369>;
+        rationale?: LexicalRichText<LexicalNodes_AD327369> | null;
+        id?: string | null;
+      }[]
+    | null;
+  actionItems: {
+    sequence: number;
+    actionDescription: LexicalRichText<LexicalNodes_AD327369>;
+    assignedTo: string;
+    dueDate: string;
+    status?: ('open' | 'in-progress' | 'completed') | null;
+    completionDate?: string | null;
+    completionNotes?: LexicalRichText<LexicalNodes_AD327369> | null;
+    id?: string | null;
+  }[];
+  /**
+   * Risks, concerns, or matters brought to committee attention.
+   */
+  risksIdentified?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Observations from internal or external auditors.
+   */
+  auditorObservations?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Compliance, regulatory, or legal matters discussed.
+   */
+  complianceMatters?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Resolutions or actions resulting from this meeting.
+   */
+  relatedBoardActions?: (string | BoardAction)[] | null;
+  /**
+   * Audit findings discussed.
+   */
+  relatedAuditFindings?: (string | AuditFinding)[] | null;
+  /**
+   * Compliance gaps discussed.
+   */
+  relatedComplianceGaps?: (string | ComplianceGap)[] | null;
+  minutesStatus: 'draft' | 'pending-approval' | 'approved' | 'filed';
+  /**
+   * Chair or designated approver.
+   */
+  approvedBy?: string | null;
+  approvalDate?: string | null;
+  /**
+   * Formal minutes document (PDF).
+   */
+  minutesDocument?: (string | null) | Media;
+  confidentiality?: ('confidential' | 'internal' | 'public') | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "board-actions".
+ */
+export interface BoardAction {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  entity: string | LegalEntity;
+  actionTitle: string;
+  description?: LexicalRichText<LexicalNodes_AD327369> | null;
+  actionType:
+    'resolution' | 'policy-approval' | 'risk-assessment' | 'control-enhancement' | 'committee-report' | 'attestation';
+  meetingDate: string;
+  actionDate?: string | null;
+  status: 'approved' | 'rejected' | 'tabled' | 'withdrawn';
+  voteTally?: {
+    votesFor?: number | null;
+    votesAgainst?: number | null;
+    abstentions?: number | null;
+  };
+  minutes?: (string | null) | Media;
+  relatedControls?: (string | InternalControl)[] | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-gaps".
+ */
+export interface ComplianceGap {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  title: string;
+  description: string;
+  requirement: string | ComplianceRequirement;
+  gapType:
+    | 'missing-control'
+    | 'design-deficiency'
+    | 'operating-deficiency'
+    | 'documentation-gap'
+    | 'resource-gap'
+    | 'system-gap'
+    | 'process-gap';
+  severity: 'critical' | 'high' | 'medium' | 'low';
+  status: 'identified' | 'under-review' | 'remediation-planned' | 'in-remediation' | 'closed';
+  /**
+   * COSO-2013 deficiency remediation: the plan, its steps and its completion.
+   */
+  remediation?: {
+    /**
+     * A plan exists once it has a title.
+     */
+    title?: string | null;
+    description?: string | null;
+    remediationType?:
+      | (
+          | 'design-change'
+          | 'process-change'
+          | 'system-implementation'
+          | 'training'
+          | 'documentation'
+          | 'resource-addition'
+          | 'policy-update'
+          | 'organizational-change'
+        )
+      | null;
+    priority?: ('critical' | 'high' | 'medium' | 'low') | null;
+    status?: ('planned' | 'in-progress' | 'completed' | 'delayed' | 'on-hold' | 'superseded') | null;
+    /**
+     * The internal policy a policy-update plan improves.
+     */
+    policy?: (string | null) | InternalPolicy;
+    /**
+     * The policy version that carries the fix: stamped at completion, never changed.
+     */
+    policyVersion?: string | null;
+    owner?: (string | null) | User;
+    targetDate?: string | null;
+    /**
+     * Set by the server when the plan is completed.
+     */
+    completionDate?: string | null;
+    actionSteps?:
+      | {
+          sequence: number;
+          description: string;
+          status?: ('not-started' | 'in-progress' | 'completed' | 'on-hold') | null;
+          owner?: string | null;
+          targetDate?: string | null;
+          completedDate?: string | null;
+          id?: string | null;
+        }[]
+      | null;
+    requiredResources?: string | null;
+    budget?: number | null;
+    riskOfDelay?: string | null;
+    approvedBy?: (string | null) | User;
+    approvalDate?: string | null;
+  };
+  currentState?: string | null;
+  requiredState?: string | null;
+  rootCause?: string | null;
+  identifiedDate: string;
+  identifiedBy: string | User;
+  targetClosureDate?: string | null;
+  actualClosureDate?: string | null;
+  riskExposure?: ('none' | 'minimal' | 'moderate' | 'significant' | 'material') | null;
+  isActive?: boolean | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -15558,309 +15966,6 @@ export interface TrackingEvent {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-committee-minutes".
- */
-export interface AuditCommitteeMinute {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  auditCommittee: string | AuditCommittee;
-  entity: string | LegalEntity;
-  /**
-   * E.g., "Audit Committee Meeting - Q4 2026".
-   */
-  meetingTitle: string;
-  meetingDate: string;
-  /**
-   * Meeting time and duration (e.g., "14:00-16:30 CET").
-   */
-  meetingTime?: string | null;
-  /**
-   * Physical or virtual location.
-   */
-  meetingLocation?: string | null;
-  /**
-   * Committee chair.
-   */
-  chairPerson?: string | null;
-  attendees?:
-    | {
-        name: string;
-        title?: string | null;
-        affiliation?: string | null;
-        status?: ('present' | 'absent' | 'excused') | null;
-        id?: string | null;
-      }[]
-    | null;
-  agenda?:
-    | {
-        sequence: number;
-        topic: string;
-        presenter?: string | null;
-        timeAllocated?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Comprehensive summary of discussions, issues raised, concerns.
-   */
-  discussionSummary: LexicalRichText<LexicalNodes_AD327369>;
-  keyDecisions?:
-    | {
-        decision: LexicalRichText<LexicalNodes_AD327369>;
-        rationale?: LexicalRichText<LexicalNodes_AD327369> | null;
-        id?: string | null;
-      }[]
-    | null;
-  actionItems: {
-    sequence: number;
-    actionDescription: LexicalRichText<LexicalNodes_AD327369>;
-    assignedTo: string;
-    dueDate: string;
-    status?: ('open' | 'in-progress' | 'completed') | null;
-    completionDate?: string | null;
-    completionNotes?: LexicalRichText<LexicalNodes_AD327369> | null;
-    id?: string | null;
-  }[];
-  /**
-   * Risks, concerns, or matters brought to committee attention.
-   */
-  risksIdentified?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Observations from internal or external auditors.
-   */
-  auditorObservations?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Compliance, regulatory, or legal matters discussed.
-   */
-  complianceMatters?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Resolutions or actions resulting from this meeting.
-   */
-  relatedBoardActions?: (string | BoardAction)[] | null;
-  /**
-   * Audit findings discussed.
-   */
-  relatedAuditFindings?: (string | AuditFinding)[] | null;
-  /**
-   * Compliance gaps discussed.
-   */
-  relatedComplianceGaps?: (string | ComplianceGap)[] | null;
-  minutesStatus: 'draft' | 'pending-approval' | 'approved' | 'filed';
-  /**
-   * Chair or designated approver.
-   */
-  approvedBy?: string | null;
-  approvalDate?: string | null;
-  /**
-   * Formal minutes document (PDF).
-   */
-  minutesDocument?: (string | null) | Media;
-  confidentiality?: ('confidential' | 'internal' | 'public') | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-committees".
- */
-export interface AuditCommittee {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  name: string;
-  entity: string | LegalEntity;
-  charter?: (string | null) | Media;
-  establishedDate: string;
-  meetingFrequency: 'quarterly' | 'semi-annual' | 'annual' | 'as-needed';
-  status?: ('active' | 'inactive' | 'dissolved') | null;
-  /**
-   * The committee roster (formerly the audit-committee-members collection).
-   */
-  members?:
-    | {
-        memberName: string;
-        title?: string | null;
-        affiliation: 'internal' | 'external' | 'independent';
-        appointedDate: string;
-        termEndDate?: string | null;
-        role?: ('chair' | 'vice-chair' | 'member' | 'financial-expert') | null;
-        expertise?:
-          | {
-              area?: string | null;
-              id?: string | null;
-            }[]
-          | null;
-        status?: ('active' | 'resigned' | 'removed') | null;
-        id?: string | null;
-      }[]
-    | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "board-actions".
- */
-export interface BoardAction {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  entity: string | LegalEntity;
-  actionTitle: string;
-  description?: LexicalRichText<LexicalNodes_AD327369> | null;
-  actionType:
-    'resolution' | 'policy-approval' | 'risk-assessment' | 'control-enhancement' | 'committee-report' | 'attestation';
-  meetingDate: string;
-  actionDate?: string | null;
-  status: 'approved' | 'rejected' | 'tabled' | 'withdrawn';
-  voteTally?: {
-    votesFor?: number | null;
-    votesAgainst?: number | null;
-    abstentions?: number | null;
-  };
-  minutes?: (string | null) | Media;
-  relatedControls?: (string | InternalControl)[] | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "compliance-gaps".
- */
-export interface ComplianceGap {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  title: string;
-  description: string;
-  requirement: string | ComplianceRequirement;
-  gapType:
-    | 'missing-control'
-    | 'design-deficiency'
-    | 'operating-deficiency'
-    | 'documentation-gap'
-    | 'resource-gap'
-    | 'system-gap'
-    | 'process-gap';
-  severity: 'critical' | 'high' | 'medium' | 'low';
-  status: 'identified' | 'under-review' | 'remediation-planned' | 'in-remediation' | 'closed';
-  /**
-   * COSO-2013 deficiency remediation: the plan, its steps and its completion.
-   */
-  remediation?: {
-    /**
-     * A plan exists once it has a title.
-     */
-    title?: string | null;
-    description?: string | null;
-    remediationType?:
-      | (
-          | 'design-change'
-          | 'process-change'
-          | 'system-implementation'
-          | 'training'
-          | 'documentation'
-          | 'resource-addition'
-          | 'policy-update'
-          | 'organizational-change'
-        )
-      | null;
-    priority?: ('critical' | 'high' | 'medium' | 'low') | null;
-    status?: ('planned' | 'in-progress' | 'completed' | 'delayed' | 'on-hold' | 'superseded') | null;
-    /**
-     * The internal policy a policy-update plan improves.
-     */
-    policy?: (string | null) | InternalPolicy;
-    /**
-     * The policy version that carries the fix: stamped at completion, never changed.
-     */
-    policyVersion?: string | null;
-    owner?: (string | null) | User;
-    targetDate?: string | null;
-    /**
-     * Set by the server when the plan is completed.
-     */
-    completionDate?: string | null;
-    actionSteps?:
-      | {
-          sequence: number;
-          description: string;
-          status?: ('not-started' | 'in-progress' | 'completed' | 'on-hold') | null;
-          owner?: string | null;
-          targetDate?: string | null;
-          completedDate?: string | null;
-          id?: string | null;
-        }[]
-      | null;
-    requiredResources?: string | null;
-    budget?: number | null;
-    riskOfDelay?: string | null;
-    approvedBy?: (string | null) | User;
-    approvalDate?: string | null;
-  };
-  currentState?: string | null;
-  requiredState?: string | null;
-  rootCause?: string | null;
-  identifiedDate: string;
-  identifiedBy: string | User;
-  targetClosureDate?: string | null;
-  actualClosureDate?: string | null;
-  riskExposure?: ('none' | 'minimal' | 'moderate' | 'significant' | 'material') | null;
-  isActive?: boolean | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "audit-evidence".
  */
 export interface AuditEvidence {
@@ -16187,142 +16292,6 @@ export interface DisclosureChecklist {
    * Formal checklist workpaper (PDF).
    */
   checklistDocument?: (string | null) | Media;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "internal-audit-function".
- */
-export interface InternalAuditFunction {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  entity: string | LegalEntity;
-  /**
-   * E.g., "Internal Audit Department".
-   */
-  functionName: string;
-  /**
-   * Internal audit charter per IIA Standards (IPPF, COSO).
-   */
-  auditCharter: LexicalRichText<LexicalNodes_AD327369>;
-  /**
-   * Charter version/date identifier.
-   */
-  charterId?: string | null;
-  charterApprovedDate: string;
-  reportingLine: 'audit-committee' | 'cfo' | 'ceo' | 'board-dotted';
-  /**
-   * Chief Audit Executive (CAE) / Head of Internal Audit.
-   */
-  chiefAuditExecutive: string;
-  /**
-   * Email/phone.
-   */
-  chiefAuditExecutiveContact?: string | null;
-  /**
-   * Primary audit committee for governance oversight.
-   */
-  auditCommittee?: (string | null) | AuditCommittee;
-  /**
-   * Number of internal audit staff.
-   */
-  auditStaffCount?: number | null;
-  /**
-   * Annual internal audit budget.
-   */
-  auditBudget?: number | null;
-  /**
-   * Annual audit plan (risks, scope, staff allocation).
-   */
-  auditPlan?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Fiscal year of the plan.
-   */
-  auditPlanYear?: string | null;
-  auditPlanApprovedDate?: string | null;
-  /**
-   * Annual audit plan (PDF).
-   */
-  auditPlanDocument?: (string | null) | Media;
-  auditEngagements?:
-    | {
-        engagementName: string;
-        engagementType: 'financial' | 'operational' | 'compliance' | 'it' | 'fraud' | 'special-review';
-        objectiveScope?: LexicalRichText<LexicalNodes_AD327369> | null;
-        startDate: string;
-        completionDate?: string | null;
-        status?: ('planned' | 'in-progress' | 'fieldwork-complete' | 'report-issued' | 'cancelled') | null;
-        reportIssued?: boolean | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Links to minutes where audit reports were presented.
-   */
-  auditReports?: (string | AuditCommitteeMinute)[] | null;
-  /**
-   * Findings from internal audit engagements.
-   */
-  auditFindings?: (string | AuditFinding)[] | null;
-  followUpTracking?:
-    | {
-        findingReference: string;
-        managementAction: LexicalRichText<LexicalNodes_AD327369>;
-        targetImplementationDate: string;
-        implementationDate?: string | null;
-        followUpStatus?: ('not-started' | 'in-progress' | 'completed' | 'not-implemented') | null;
-        notes?: LexicalRichText<LexicalNodes_AD327369> | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * KPIs: audit hours, engagements completed, findings, etc.
-   */
-  performanceMetrics?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Internal and external quality assurance reviews (IIA IPPF).
-   */
-  qualityAssurance?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Date of last external QA review (required every 5 years).
-   */
-  lastQualityReview?: string | null;
-  nextQualityReview?: string | null;
-  /**
-   * Adherence to IIA International Standards, code of ethics.
-   */
-  professionalStandards?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Assessment of adequacy of internal audit resources.
-   */
-  resourceAdequacy?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Statement of independence and objectivity per IIA 1100 series.
-   */
-  independenceAndObjectivity?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Uses risk-based approach aligned with entity risk register.
-   */
-  riskBasedAuditing?: boolean | null;
-  auditFunctionStatus: 'established' | 'establishing' | 'under-review' | 'dormant';
-  /**
-   * Formal audit charter (PDF).
-   */
-  charterDocument?: (string | null) | Media;
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -20258,7 +20227,6 @@ export interface PayloadQueryPreset {
     | 'disclosure-checklists'
     | 'entity-types'
     | 'government-grants'
-    | 'internal-audit-function'
     | 'internal-controls'
     | 'internal-policies'
     | 'management-assessment-icfr'
@@ -20803,6 +20771,7 @@ export interface PagesSelect<T extends boolean = true> {
               'statutory-report-template'?: T | StatutoryReportTemplateBlockSelect<T>;
               'compliance-deadline'?: T | ComplianceDeadlineBlockSelect<T>;
               'processing-activity'?: T | ProcessingActivityBlockSelect<T>;
+              'internal-audit-function'?: T | InternalAuditFunctionBlockSelect<T>;
             };
         links?:
           | T
@@ -21038,6 +21007,59 @@ export interface ProcessingActivityBlockSelect<T extends boolean = true> {
   dpo?: T;
   securityMeasures?: T;
   notes?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "InternalAuditFunctionBlock_select".
+ */
+export interface InternalAuditFunctionBlockSelect<T extends boolean = true> {
+  entity?: T;
+  reportingLine?: T;
+  auditFunctionStatus?: T;
+  chiefAuditExecutive?: T;
+  chiefAuditExecutiveContact?: T;
+  auditCommittee?: T;
+  auditStaffCount?: T;
+  auditBudget?: T;
+  riskBasedAuditing?: T;
+  auditPlan?: T;
+  auditPlanYear?: T;
+  auditPlanApprovedDate?: T;
+  auditPlanDocument?: T;
+  auditEngagements?:
+    | T
+    | {
+        engagementName?: T;
+        engagementType?: T;
+        status?: T;
+        startDate?: T;
+        completionDate?: T;
+        reportIssued?: T;
+        objectiveScope?: T;
+        id?: T;
+      };
+  auditReports?: T;
+  auditFindings?: T;
+  followUpTracking?:
+    | T
+    | {
+        findingReference?: T;
+        targetImplementationDate?: T;
+        implementationDate?: T;
+        followUpStatus?: T;
+        managementAction?: T;
+        notes?: T;
+        id?: T;
+      };
+  performanceMetrics?: T;
+  qualityAssurance?: T;
+  lastQualityReview?: T;
+  nextQualityReview?: T;
+  professionalStandards?: T;
+  resourceAdequacy?: T;
+  independenceAndObjectivity?: T;
   id?: T;
   blockName?: T;
 }
@@ -26256,69 +26278,6 @@ export interface GovernmentGrantsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "internal-audit-function_select".
- */
-export interface InternalAuditFunctionSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  entity?: T;
-  functionName?: T;
-  auditCharter?: T;
-  charterId?: T;
-  charterApprovedDate?: T;
-  reportingLine?: T;
-  chiefAuditExecutive?: T;
-  chiefAuditExecutiveContact?: T;
-  auditCommittee?: T;
-  auditStaffCount?: T;
-  auditBudget?: T;
-  auditPlan?: T;
-  auditPlanYear?: T;
-  auditPlanApprovedDate?: T;
-  auditPlanDocument?: T;
-  auditEngagements?:
-    | T
-    | {
-        engagementName?: T;
-        engagementType?: T;
-        objectiveScope?: T;
-        startDate?: T;
-        completionDate?: T;
-        status?: T;
-        reportIssued?: T;
-        id?: T;
-      };
-  auditReports?: T;
-  auditFindings?: T;
-  followUpTracking?:
-    | T
-    | {
-        findingReference?: T;
-        managementAction?: T;
-        targetImplementationDate?: T;
-        implementationDate?: T;
-        followUpStatus?: T;
-        notes?: T;
-        id?: T;
-      };
-  performanceMetrics?: T;
-  qualityAssurance?: T;
-  lastQualityReview?: T;
-  nextQualityReview?: T;
-  professionalStandards?: T;
-  resourceAdequacy?: T;
-  independenceAndObjectivity?: T;
-  riskBasedAuditing?: T;
-  auditFunctionStatus?: T;
-  charterDocument?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "internal-controls_select".
  */
 export interface InternalControlsSelect<T extends boolean = true> {
@@ -29168,7 +29127,6 @@ export interface CollectionQueryWidget {
       | 'disclosure-checklists'
       | 'entity-types'
       | 'government-grants'
-      | 'internal-audit-function'
       | 'internal-controls'
       | 'internal-policies'
       | 'management-assessment-icfr'
@@ -29378,7 +29336,6 @@ export interface ActivityWidget {
           | 'disclosure-checklists'
           | 'entity-types'
           | 'government-grants'
-          | 'internal-audit-function'
           | 'internal-controls'
           | 'internal-policies'
           | 'management-assessment-icfr'
@@ -29626,7 +29583,6 @@ export interface TaskCreateCollectionExport {
       | 'disclosure-checklists'
       | 'entity-types'
       | 'government-grants'
-      | 'internal-audit-function'
       | 'internal-controls'
       | 'internal-policies'
       | 'management-assessment-icfr'
