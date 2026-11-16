@@ -40,7 +40,7 @@
  * @see ../cloudflare/index.ts (Mediator integration)
  */
 
-import { randomBytes } from '@/utilities/crypto'
+import { randomBytes, signingKeys } from '@/utilities/crypto'
 import { requireSafetyMode } from '@/utilities/safety/mode'
 
 /** Purpose namespace for a key. */
@@ -61,7 +61,7 @@ export interface TenantKeyResolver {
   getSigningPublicKey(tenantId: string, kid: string): Promise<CryptoKey>
 
   /** Get an HKDF-usable KEK for envelope encryption. */
-  getKek(tenantId: string, kid: string): Promise<CryptoKey>
+  getKek(tenantId: string, kid: string): Promise<Uint8Array>
 
   /**
    * Return the active key id for a (tenant, purpose). Used when the
@@ -80,7 +80,7 @@ interface InMemoryEntry {
   readonly issuedAt: string
   readonly signingPrivateKey?: CryptoKey
   readonly signingPublicKey?: CryptoKey
-  readonly kek?: CryptoKey
+  readonly kek?: Uint8Array
 }
 
 /**
@@ -126,7 +126,7 @@ export class InMemoryKeyResolver implements TenantKeyResolver {
     }
     return e.signingPublicKey
   }
-  async getKek(tenantId: string, kid: string): Promise<CryptoKey> {
+  async getKek(tenantId: string, kid: string): Promise<Uint8Array> {
     const e = this.requireEntry(tenantId, kid, 'kek')
     if (!e.kek) {
       throw new Error(`InMemoryKeyResolver: no KEK for kid=${kid}`)
@@ -176,7 +176,7 @@ export function setDefaultKeyResolver(r: TenantKeyResolver): void {
 }
 
 /**
- * Convenience: generate + register a fresh Ed25519 keypair for a
+ * Convenience: generate + register a fresh ML-DSA key pair (the crypto door's `SIGNATURE`) for a
  * (tenant, kid) under the default in-memory resolver. Test-only.
  */
 export async function provisionTestSigningKey(args: {
@@ -185,9 +185,7 @@ export async function provisionTestSigningKey(args: {
 }): Promise<{ kid: string; publicKey: CryptoKey; privateKey: CryptoKey }> {
   // Slice RRRRRRRRR-cut1 — guarded; production rejects.
   requireSafetyMode(['test', 'dev'], 'provisionTestSigningKey')
-  const pair = await globalThis.crypto.subtle.generateKey(
-    { name: 'Ed25519' }, true, ['sign', 'verify'],
-  ) as CryptoKeyPair
+  const pair = await signingKeys(true)
   const resolver = _defaultResolver
   if (resolver instanceof InMemoryKeyResolver) {
     resolver.register({
@@ -202,17 +200,14 @@ export async function provisionTestSigningKey(args: {
   return { kid: args.kid, publicKey: pair.publicKey, privateKey: pair.privateKey }
 }
 
-/** Test-only KEK provisioning. Same pattern as above for envelope encryption. */
+/** Test-only KEK provisioning: 32 random bytes, the input key material envelope encryption derives data keys from. */
 export async function provisionTestKek(args: {
   tenantId: string
   kid: string
-}): Promise<{ kid: string; kek: CryptoKey }> {
+}): Promise<{ kid: string; kek: Uint8Array }> {
   // Slice RRRRRRRRR-cut1 — guarded; production rejects.
   requireSafetyMode(['test', 'dev'], 'provisionTestKek')
-  const raw = new Uint8Array(randomBytes(32))
-  const kek = await globalThis.crypto.subtle.importKey(
-    'raw', raw, { name: 'HKDF' }, false, ['deriveKey'],
-  )
+  const kek = new Uint8Array(randomBytes(32))
   const resolver = _defaultResolver
   if (resolver instanceof InMemoryKeyResolver) {
     resolver.register({

@@ -15,8 +15,8 @@ Sponsor through [GitHub Sponsors (@erpax)](https://github.com/sponsors/erpax) or
 | collections | 190 | `src/payload-types.ts` |
 | migrations | 12 | `src/migrations` |
 | Lean files | 47 | `src/utilities/verify/lean` |
-| theorems | 363 | `src/utilities/verify/lean/inventory.generated.json` |
-| axiom-free | 267 | `src/utilities/verify/lean/inventory.generated.json` |
+| theorems | 366 | `src/utilities/verify/lean/inventory.generated.json` |
+| axiom-free | 270 | `src/utilities/verify/lean/inventory.generated.json` |
 | license | CC-BY-NC-ND-4.0 | `package.json` |
 
 Source: [github.com/erpax/erpax](https://github.com/erpax/erpax)

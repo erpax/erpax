@@ -1,10 +1,10 @@
 {
   "sealedAt": "2026-11-16",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
-  "sourcesHash": "50647f42d2cd57ae",
+  "sourcesHash": "c0f573bb81619f37",
   "census": {
-    "theorems": 363,
-    "axiomFree": 267,
+    "theorems": 366,
+    "axiomFree": 270,
     "standardAxioms": 96,
     "stubbed": 0
   },
@@ -691,6 +691,24 @@
         },
         {
           "theorem": "Cost.the_anchored_chain_holds",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cost.the_signature_is_ml_dsa_44",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cost.a_larger_set_outruns_the_digest",
+          "axioms": [],
+          "axiomFree": true,
+          "stubbed": false
+        },
+        {
+          "theorem": "Cost.ml_dsa_44_meets_the_digest_floor",
           "axioms": [],
           "axiomFree": true,
           "stubbed": false

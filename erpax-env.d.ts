@@ -17,22 +17,4 @@ interface CloudflareEnv {
    * For spoken content, put the `.vtt`/`.srt` on disk and read it with `@/transcript`.
    */
   YOUTUBE_API_KEY?: string
-
-  // ── PQC library bindings ──────────────────────────────────────────────────────────────────────
-  // Which library actually seals each surface, named per surface rather than globally, because
-  // anchor/surface's whole point is that a surface is sealed BY something specific: a root sealed by
-  // FIPS 205 and a channel keyed by FIPS 203 are different bindings and different failures. Absent
-  // ⇒ the surface is `open` and must name its owner — the guard reads these, so an unset binding
-  // makes the manifest say so instead of a `sealed` status resting on a string.
-
-  /** Library sealing ROOT-SIGNING — must implement FIPS 205 SLH-DSA or FIPS 204 ML-DSA. */
-  PQC_ROOT_PROVIDER?: string
-  /** Library sealing CHANNEL-KEYING and RE-EXCHANGE — must implement FIPS 203 ML-KEM. */
-  PQC_KEM_PROVIDER?: string
-  /** Library sealing STORAGE-AT-REST (e.g. AES-256-GCM via NIST SP 800-38D). */
-  PQC_STORAGE_PROVIDER?: string
-  /** Key identifier for the root signature — the credential, never the key material. */
-  PQC_ROOT_KEY_ID?: string
-  /** Key identifier for the KEM — the credential, never the key material. */
-  PQC_KEM_KEY_ID?: string
 }

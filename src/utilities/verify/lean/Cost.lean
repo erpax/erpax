@@ -92,4 +92,23 @@ theorem truncation_halves_the_collision_margin (bits : Nat) :
 /-- The control: the anchored chain really does clear category 2, so the refusals are not vacuous. -/
 theorem the_anchored_chain_holds : category2 ≤ chained (collision 256) 1 := by decide
 
+/-- FIPS 204 ML-DSA parameter sets, cheapest first, each with the NIST category it is held to
+    (FIPS 204 Table 1: ML-DSA-44 category 2, ML-DSA-65 category 3, ML-DSA-87 category 5). -/
+def mlDsa : List (Nat × Nat) := [(44, category2), (65, category3), (87, category5)]
+
+/-- The cheapest set whose category meets the floor; 0 when none does. -/
+def cheapest (floor : Nat) : List (Nat × Nat) → Nat
+  | [] => 0
+  | (set, strength) :: rest => if floor ≤ strength then set else cheapest floor rest
+
+/-- A signature binds the digest it signs, so it is worth no more than that digest's collision
+    strength: the floor is SHA-256's, and ML-DSA-44 is the cheapest set that meets it. -/
+theorem the_signature_is_ml_dsa_44 : cheapest (collision 256) mlDsa = 44 := by decide
+
+/-- The next set up buys strength the digest cannot carry. -/
+theorem a_larger_set_outruns_the_digest : collision 256 < category3 := by decide
+
+/-- And no set is chosen below the floor: the cheapest set still meets it. -/
+theorem ml_dsa_44_meets_the_digest_floor : collision 256 ≤ category2 := by decide
+
 end Cost
