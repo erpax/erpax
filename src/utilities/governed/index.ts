@@ -1046,6 +1046,71 @@ export const debtError = (details: Record<string, unknown>, document: Record<str
   return breached.length && !inBreach ? `A covenant in breach puts the instrument in breach (${breached.map((c) => c.covenantName).join(', ')}; IAS 1 §74).` : true
 }
 
+/**
+ * One regulatory deferral balance a first-time IFRS adopter carries forward from its previous GAAP
+ * (IFRS 14): asset or liability, the regulator, the balance and its movement, and its recovery period.
+ *
+ * @standard IFRS IFRS-14 §3 scope-first-time-adopter
+ * @standard IFRS IFRS-14 §16 continuation-of-previous-GAAP
+ * @standard IFRS IFRS-14 §27 disclosure-requirements
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-8601-1:2019 date-time
+ * @audit ISO 19011:2018 §6.4.6 audit-evidence-regulatory-deferral
+ * @compliance SOX §404 internal-controls
+ */
+export const RegulatoryDeferralAccount: Block = {
+  slug: 'regulatory-deferral-account',
+  interfaceName: 'RegulatoryDeferralAccountBlock',
+  labels: { singular: 'Regulatory deferral account', plural: 'Regulatory deferral accounts' },
+  fields: [
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'kind',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'Regulatory deferral asset (under-recovery)', value: 'asset' },
+            { label: 'Regulatory deferral liability (over-recovery)', value: 'liability' },
+          ],
+        },
+        { name: 'regulator', type: 'text', required: true, admin: { description: 'Regulator name (e.g. Ofgem / FERC / EWRC-BG).' } },
+        {
+          name: 'status',
+          type: 'select',
+          defaultValue: 'active',
+          options: [
+            { label: 'Active', value: 'active' },
+            { label: 'Recovering', value: 'recovering' },
+            { label: 'Recovered (zero)', value: 'recovered' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'balance', type: 'number', required: true, admin: { description: 'Carrying balance at reporting date (cents).' } },
+        { name: 'movementInPeriod', type: 'number', defaultValue: 0, admin: { description: 'Net change in balance during the period (cents).' } },
+        currencyField(),
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'discountRate', type: 'number', min: 0, max: 100, admin: { step: 0.01 } },
+        { name: 'recoveryPeriodEnd', type: 'date', admin: { description: 'IFRS 14 §32 — period over which the balance is expected to be recovered/refunded.' } },
+      ],
+    },
+    { name: 'notes', type: 'textarea' },
+  ],
+}
+
+/** A balance marked recovered is zero, as its status says ("Recovered (zero)"). */
+export const deferralError = (details: Record<string, unknown>): string | true =>
+  details.status === 'recovered' && Number(details.balance ?? 0) !== 0 ? 'A recovered regulatory deferral balance is zero.' : true
+
 export const GOVERNED_TYPES: readonly GovernedType[] = [
   // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
   {
@@ -1150,5 +1215,18 @@ export const GOVERNED_TYPES: readonly GovernedType[] = [
     unique: ['code'],
     block: DebtInstrument,
     check: debtError,
+  },
+  // was regulatory-deferral-accounts: read by every member, written by admins and accountants, where the plan
+  // includes rate_regulated_activities. The reference (RDA-2026-001) is the page title.
+  {
+    value: 'regulatory-deferral-account',
+    label: 'Regulatory deferral account',
+    read: ['user'],
+    write: ['admin', 'accountant'],
+    requires: [],
+    unique: ['title'],
+    feature: 'rate_regulated_activities',
+    block: RegulatoryDeferralAccount,
+    check: deferralError,
   },
 ]
