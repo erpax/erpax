@@ -121,10 +121,6 @@ Gaps found on 2026-11-15:
 - Two mechanisms inject the content-uuid: collections built by `createAccountingCollection` get a
   required `uuid` (`src/utilities/integrity/tamper-proof-uuid-field.ts`), the rest get an optional one from
   the uuid plugin. Folding them into one rebuilds the column on every factory table.
-- `auditFields` (`src/fields/relationship/auditFields.ts`) defines its own `createdBy` on 119 collections,
-  so Payload 4's built-in authorship adds only `updatedBy` there. Moving to Payload's field is a data migration.
-- `versionsPlugin` (`src/plugins/versions`) overlaps Payload 4, which enables versions by default; it now
-  only bounds history to 50 and excludes four append-only collections.
 - The demo content behind `/next/seed` and the fallback home page is Lexical JSON written as code
   (`src/seed/home.ts`, `post/*`, `image-*`, `contact/form.ts`), not fixtures loaded as data.
 - Session worktrees fail here while the app's worktree location is inside the repo: `.claude` is a

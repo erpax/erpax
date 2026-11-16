@@ -81,7 +81,6 @@ import { referenceField } from '@/fields/text/referenceField'
 import { notesField } from '@/fields/textarea/notesField'
 import { unitOfMeasureField } from '@/fields/text/unitOfMeasureField'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
-import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { grantApps } from '@/hooks/collections/orders/grantApps'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
@@ -425,6 +424,9 @@ export const ordersOverride: CollectionOverride = ({ defaultCollection }) => {
   const pluginRead = defaultCollection.access?.read
   return {
     ...defaultCollection,
+    // The plugin turns authorship off for orders; the four-eyes rule below reads the creator, so Payload
+    // keeps it (createdBy only).
+    authorship: { createdBy: true, updatedBy: false },
     // The plugin's own rule OR a party role held on the document: a seller, buyer, consignee … reads
     // the orders it is a party to (the role engine, @/utilities/party/roles). Only read is widened.
     access: { ...defaultCollection.access, ...(pluginRead ? { read: either(pluginRead, partyAccess('orders')) } : {}) },
@@ -435,7 +437,6 @@ export const ordersOverride: CollectionOverride = ({ defaultCollection }) => {
       beforeValidate: [...(defaultCollection.hooks?.beforeValidate ?? []), totalsFromLines, incotermsPair],
       beforeChange: [
         ...(defaultCollection.hooks?.beforeChange ?? []),
-        autoPopulateCreatedBy,
         // The quote's control: whoever drafts an offer does not also approve it.
         enforceSegregationOfDuties('approvedBy', 'createdBy'),
         autoSetTimestamp('sentAt', (d) => (d as { status?: string }).status === 'sent'),

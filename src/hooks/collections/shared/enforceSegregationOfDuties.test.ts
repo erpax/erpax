@@ -13,3 +13,17 @@ describe('idOf — the id behind any reference shape', () => {
     await expect(hook({ data: { approvedBy: 'u1' }, originalDoc: { createdBy: { relationTo: 'users', value: 'u1' } } })).rejects.toThrow(/Segregation of duties/)
   })
 })
+
+describe('enforceSegregationOfDuties — the creator Payload keeps', () => {
+  const hook = enforceSegregationOfDuties('approvedBy', 'createdBy') as unknown as (a: object) => Promise<unknown>
+
+  it('on create the creator is the request user, since authorship stamps it after collection hooks', async () => {
+    await expect(hook({ operation: 'create', data: { approvedBy: 'u1' }, req: { user: { id: 'u1' } } })).rejects.toThrow(/Segregation of duties/)
+    await expect(hook({ operation: 'create', data: { approvedBy: 'u2' }, req: { user: { id: 'u1' } } })).resolves.toEqual({ approvedBy: 'u2' })
+  })
+
+  it('on update the stored creator wins over anything in the incoming data', async () => {
+    const originalDoc = { createdBy: { relationTo: 'users', value: 'u1' } }
+    await expect(hook({ operation: 'update', data: { approvedBy: 'u1', createdBy: 'someone-else' }, originalDoc, req: { user: { id: 'u3' } } })).rejects.toThrow(/Segregation of duties/)
+  })
+})

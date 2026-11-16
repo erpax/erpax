@@ -40,7 +40,6 @@
  */
 
 import type { CollectionBeforeChangeHook, CollectionConfig } from 'payload'
-import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
@@ -232,7 +231,6 @@ const CreditMemos: CollectionConfig = {
   hooks: {
     beforeChange: [
       periodLock('issuedAt'),
-      autoPopulateCreatedBy,
       // SOX §404 / ISO 27002 §5.3: issuer ≠ approver.
       enforceSegregationOfDuties(),
       autoSetTimestamp('issuedAt', (d) => (d as { status?: string }).status === 'issued'),

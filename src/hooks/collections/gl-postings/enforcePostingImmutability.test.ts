@@ -23,7 +23,8 @@ describe('enforce/posting/immutability — the hook and the collection must agre
     // Written also asserting the auto-set hook's source names the field. It cannot: autoSetTimestamp is a
     // CLOSURE, so 'postedDate' lives in a captured variable and never appears in the function text. The
     // field's existence is the observable fact; how it gets stamped is that hook's own business.
-    expect(hookNames()).toHaveLength(4)
+    // The creator is stamped by Payload's own authorship field, not by a collection hook.
+    expect(hookNames()).toHaveLength(3)
   })
 
   /**

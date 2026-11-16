@@ -1,6 +1,5 @@
 import type { Access, CollectionAfterChangeHook, CollectionBeforeChangeHook, CollectionConfig } from 'payload'
 import { derivePosting } from '@/hooks/collections/journal-entries/derivePosting'
-import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties'
@@ -153,7 +152,6 @@ const JournalEntries: CollectionConfig = {
     beforeChange: [
       periodLock('entryDate'),
       enforcePostedImmutable,
-      autoPopulateCreatedBy,
       enforceSegregationOfDuties(),
       autoSetTimestamp('postedDate', (data) => (data as { status?: string }).status === 'posted'),
       autoSetTimestamp('approvedAt', (data) => Boolean((data as { approvedBy?: unknown }).approvedBy)),

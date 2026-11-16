@@ -35,7 +35,6 @@
 
 import type { CollectionConfig, PayloadRequest } from 'payload'
 import { mandateError, mandateOf } from '@/fields/array/mandatesField'
-import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
@@ -322,7 +321,6 @@ const PaymentRuns: CollectionConfig = {
   hooks: {
     beforeChange: [
       periodLock('requestedExecutionDate'),
-      autoPopulateCreatedBy,
       autoSetTimestamp(
         'preparedAt',
         (d) => (d as { status?: string }).status === 'pending_review',

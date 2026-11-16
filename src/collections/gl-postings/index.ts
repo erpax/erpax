@@ -1,6 +1,5 @@
 import type { CollectionConfig } from 'payload'
 import { tenantAdminWriteAccess } from '@/access/collections/shared/multiTenantRead'
-import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { emitOnStatusTransition } from '@/utilities/chain/event/emitter'
@@ -136,7 +135,6 @@ const GLPostings: CollectionConfig = {
       // FIRST: a posted row may not be modified at all, so refuse before anything else mutates data.
       enforcePostingImmutability,
       periodLock('sourceDate'),
-      autoPopulateCreatedBy,
       autoSetTimestamp('postedDate', (data) => (data as { status?: string }).status === 'posted'),
     ],
     afterChange: [auditTrailAfterChange('gl-postings'), emitOnStatusTransition('posted', 'gl:posted', 'gl_posting')],

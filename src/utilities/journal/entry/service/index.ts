@@ -20,6 +20,7 @@
  * @see docs/STANDARDS.md §4.2 ; src/utilities/journal/entries (the enforcing hooks)
  */
 
+import { idOf as referenceId } from '@/hooks/collections/shared/enforceSegregationOfDuties';
 import type { Payload, RequiredDataFromCollectionSlug } from 'payload';
 import { getPayload } from 'payload';
 import { resolveGlAccount } from '@/utilities/gl/account/resolver';
@@ -97,13 +98,12 @@ interface EntryDoc {
   sourceId?: string;
   sourceEvent?: string;
   createdAt?: string;
-  createdBy?: string | { id: string };
+  createdBy?: string | { id: string } | { relationTo: string; value: string | { id: string } };
   postedDate?: string;
   postedBy?: string | { id: string };
 }
 
-const idOf = (v: unknown): string =>
-  v && typeof v === 'object' && 'id' in v ? String((v as { id: unknown }).id) : String(v ?? '');
+const idOf = (v: unknown): string => referenceId(v) ?? '';
 
 /**
  * The line's shape WITHOUT glAccount — its only caller resolves that field.
@@ -249,7 +249,8 @@ class JournalEntryService {
         sourceType: request.sourceType,
         sourceId: request.sourceId,
         sourceEvent: request.sourceEvent,
-        createdBy: request.userId,
+        // A trusted caller may name the creator, in Payload's { relationTo, value }; 'system' is no user.
+        ...(request.userId && request.userId !== 'system' ? { createdBy: { relationTo: 'users', value: request.userId } } : {}),
       } as unknown as RequiredDataFromCollectionSlug<'journal-entries'>,
     })) as unknown as EntryDoc;
   }

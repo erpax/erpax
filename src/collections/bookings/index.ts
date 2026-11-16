@@ -26,7 +26,6 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
@@ -154,7 +153,6 @@ const Bookings: CollectionConfig = {
       },
     ],
     beforeChange: [
-      autoPopulateCreatedBy,
       autoSetTimestamp('confirmedAt', (d) => (d as { status?: string }).status === 'confirmed'),
       autoSetTimestamp('checkedInAt', (d) => (d as { status?: string }).status === 'checked_in'),
       autoSetTimestamp('checkedOutAt', (d) => (d as { status?: string }).status === 'checked_out'),

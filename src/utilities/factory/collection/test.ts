@@ -104,15 +104,16 @@ describe('createAccountingCollection — Slice GGGGGGGG dedup', () => {
         { name: 'name', type: 'text', required: true },
       ],
     })
-    // Factory injects audit fields + notes (tenant is owned by plugin-multi-tenant).
+    // Factory injects the approval fields + notes; plugin-multi-tenant owns the tenant and Payload's
+    // authorship the creator.
     expect(countByName(cfg.fields, 'tenant')).toBe(0)
-    expect(countByName(cfg.fields, 'createdBy')).toBe(1)
+    expect(countByName(cfg.fields, 'createdBy')).toBe(0)
     expect(countByName(cfg.fields, 'approvedBy')).toBe(1)
     expect(countByName(cfg.fields, 'approvedAt')).toBe(1)
     expect(countByName(cfg.fields, 'notes')).toBe(1)
   })
 
-  it('per-entry auditFields dedup: user inlines only approvedAt; factory injects createdBy + approvedBy', () => {
+  it('per-entry auditFields dedup: user inlines only approvedAt; factory injects approvedBy', () => {
     const cfg = createAccountingCollection({
       slug: 'dedup-partial-audit',
       labels: { singular: 'X', plural: 'Xs' },
@@ -121,12 +122,12 @@ describe('createAccountingCollection — Slice GGGGGGGG dedup', () => {
       fields: () => [
         { name: 'name', type: 'text' },
         // User pre-declares approvedAt with a custom shape; factory must
-        // skip its own approvedAt but still inject createdBy + approvedBy.
+        // skip its own approvedAt but still inject approvedBy.
         { name: 'approvedAt', type: 'date', admin: { readOnly: true, description: 'CUSTOM' } },
       ],
     })
     expect(countByName(cfg.fields, 'approvedAt')).toBe(1)
-    expect(countByName(cfg.fields, 'createdBy')).toBe(1)
+    expect(countByName(cfg.fields, 'createdBy')).toBe(0)
     expect(countByName(cfg.fields, 'approvedBy')).toBe(1)
   })
 

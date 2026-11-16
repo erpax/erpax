@@ -32,10 +32,12 @@ export function enforceSegregationOfDuties(
   creatorField: string = 'createdBy',
   errorMessage?: string,
 ): CollectionBeforeChangeHook {
-  return async ({ data, originalDoc }) => {
+  return async ({ data, originalDoc, operation, req }) => {
     const approver = idOf(data?.[approverField])
     if (approver === undefined) return data
-    const creator = idOf(data?.[creatorField] ?? originalDoc?.[creatorField])
+    // The stored creator wins. On create, Payload's authorship stamps createdBy in a field hook that runs
+    // after collection hooks, so the creator is the request's user unless a trusted caller supplied one.
+    const creator = idOf(originalDoc?.[creatorField] ?? data?.[creatorField] ?? (operation === 'create' ? req?.user?.id : undefined))
     if (creator !== undefined && creator === approver) {
       throw new Error(
         errorMessage ||

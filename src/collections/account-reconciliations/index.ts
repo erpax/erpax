@@ -31,7 +31,6 @@
 
 import type { CollectionConfig } from 'payload';
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead';
-import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
 import { currencyField } from '@/fields/text/currencyField'
@@ -287,7 +286,6 @@ const AccountReconciliations: CollectionConfig = {
   hooks: {
     beforeChange: [
       periodLock('asOfDate'),
-      autoPopulateCreatedBy,
       autoSetTimestamp(
         'preparedAt',
         (d) => (d as { status?: string }).status === 'pending_review',

@@ -22,7 +22,8 @@ describe('factory/collection/base — the plumbing a collection never writes', (
     expect(n).toContain('amount')
     // the tamper-proof content-uuid is injected by default — Law 8, never opt-in
     expect(n).toContain('uuid')
-    expect(n).toContain('createdBy')
+    // the creator is Payload's own authorship, added when the config is sanitized
+    expect(n).not.toContain('createdBy')
   })
 
   it('REFUSES a collection with no fields — neither the option nor the legacy thunk', () => {
