@@ -427,7 +427,6 @@ export interface Config {
     'data-subject-requests': DataSubjectRequest;
     memories: Memory;
     'mineral-resource-assets': MineralResourceAsset;
-    'regulatory-deferral-accounts': RegulatoryDeferralAccount;
     'rounding-adjustments': RoundingAdjustment;
     sectors: Sector;
     shares: Share;
@@ -648,7 +647,6 @@ export interface Config {
     'data-subject-requests': DataSubjectRequestsSelect<false> | DataSubjectRequestsSelect<true>;
     memories: MemoriesSelect<false> | MemoriesSelect<true>;
     'mineral-resource-assets': MineralResourceAssetsSelect<false> | MineralResourceAssetsSelect<true>;
-    'regulatory-deferral-accounts': RegulatoryDeferralAccountsSelect<false> | RegulatoryDeferralAccountsSelect<true>;
     'rounding-adjustments': RoundingAdjustmentsSelect<false> | RoundingAdjustmentsSelect<true>;
     sectors: SectorsSelect<false> | SectorsSelect<true>;
     shares: SharesSelect<false> | SharesSelect<true>;
@@ -1633,6 +1631,7 @@ export interface Page {
         | 'earnings-per-share'
         | 'insurance-contract'
         | 'debt-instrument'
+        | 'regulatory-deferral-account'
       )
     | null;
   /**
@@ -1664,6 +1663,7 @@ export interface Page {
           | EarningsPerShareBlock
           | InsuranceContractBlock
           | DebtInstrumentBlock
+          | RegulatoryDeferralAccountBlock
         )[]
       | null;
     /**
@@ -8239,6 +8239,39 @@ export interface DebtInstrumentBlock {
   id?: string | null;
   blockName?: string | null;
   blockType: 'debt-instrument';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "RegulatoryDeferralAccountBlock".
+ */
+export interface RegulatoryDeferralAccountBlock {
+  kind: 'asset' | 'liability';
+  /**
+   * Regulator name (e.g. Ofgem / FERC / EWRC-BG).
+   */
+  regulator: string;
+  status?: ('active' | 'recovering' | 'recovered') | null;
+  /**
+   * Carrying balance at reporting date (cents).
+   */
+  balance: number;
+  /**
+   * Net change in balance during the period (cents).
+   */
+  movementInPeriod?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  discountRate?: number | null;
+  /**
+   * IFRS 14 §32 — period over which the balance is expected to be recovered/refunded.
+   */
+  recoveryPeriodEnd?: string | null;
+  notes?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'regulatory-deferral-account';
 }
 /**
  * Paired source documents between two group tenants. Each row pairs with a mirror row on the counterparty tenant — must net to zero on consolidation per IFRS 10 §B86 / ASC 810-10-45-1.
@@ -18505,61 +18538,6 @@ export interface MineralResourceAsset {
   createdAt: string;
 }
 /**
- * IFRS 14 — rate-regulated balances carried forward by first-time IFRS adopters (utilities, telcos under price-cap regimes).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "regulatory-deferral-accounts".
- */
-export interface RegulatoryDeferralAccount {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Sequential reference (e.g. RDA-2026-001).
-   */
-  reference: string;
-  kind: 'asset' | 'liability';
-  /**
-   * Regulator name (e.g. Ofgem / FERC / EWRC-BG).
-   */
-  regulator: string;
-  /**
-   * Carrying balance at reporting date (cents).
-   */
-  balance: number;
-  discountRate?: number | null;
-  /**
-   * IFRS 14 §32 — period over which the balance is expected to be recovered/refunded.
-   */
-  recoveryPeriodEnd?: string | null;
-  /**
-   * Net change in balance during the period (cents).
-   */
-  movementInPeriod?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  status?: ('active' | 'recovering' | 'recovered') | null;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * IAS-1 §51(e) presentation rounding plugs + IAS-21 §39 FX-translation rounding fragments. The small ±0.01 entries that keep statement totals tied.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -20187,7 +20165,6 @@ export interface PayloadQueryPreset {
     | 'data-subject-requests'
     | 'memories'
     | 'mineral-resource-assets'
-    | 'regulatory-deferral-accounts'
     | 'rounding-adjustments'
     | 'sectors'
     | 'shares'
@@ -20700,6 +20677,7 @@ export interface PagesSelect<T extends boolean = true> {
               'earnings-per-share'?: T | EarningsPerShareBlockSelect<T>;
               'insurance-contract'?: T | InsuranceContractBlockSelect<T>;
               'debt-instrument'?: T | DebtInstrumentBlockSelect<T>;
+              'regulatory-deferral-account'?: T | RegulatoryDeferralAccountBlockSelect<T>;
             };
         links?:
           | T
@@ -21103,6 +21081,23 @@ export interface DebtInstrumentBlockSelect<T extends boolean = true> {
   guarantees?: T;
   fxHedges?: T;
   relatedControls?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "RegulatoryDeferralAccountBlock_select".
+ */
+export interface RegulatoryDeferralAccountBlockSelect<T extends boolean = true> {
+  kind?: T;
+  regulator?: T;
+  status?: T;
+  balance?: T;
+  movementInPeriod?: T;
+  currency?: T;
+  discountRate?: T;
+  recoveryPeriodEnd?: T;
+  notes?: T;
   id?: T;
   blockName?: T;
 }
@@ -27513,31 +27508,6 @@ export interface MineralResourceAssetsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "regulatory-deferral-accounts_select".
- */
-export interface RegulatoryDeferralAccountsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  kind?: T;
-  regulator?: T;
-  balance?: T;
-  discountRate?: T;
-  recoveryPeriodEnd?: T;
-  movementInPeriod?: T;
-  currency?: T;
-  status?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "rounding-adjustments_select".
  */
 export interface RoundingAdjustmentsSelect<T extends boolean = true> {
@@ -29061,7 +29031,6 @@ export interface CollectionQueryWidget {
       | 'data-subject-requests'
       | 'memories'
       | 'mineral-resource-assets'
-      | 'regulatory-deferral-accounts'
       | 'rounding-adjustments'
       | 'sectors'
       | 'shares'
@@ -29267,7 +29236,6 @@ export interface ActivityWidget {
           | 'data-subject-requests'
           | 'memories'
           | 'mineral-resource-assets'
-          | 'regulatory-deferral-accounts'
           | 'rounding-adjustments'
           | 'sectors'
           | 'shares'
@@ -29511,7 +29479,6 @@ export interface TaskCreateCollectionExport {
       | 'data-subject-requests'
       | 'memories'
       | 'mineral-resource-assets'
-      | 'regulatory-deferral-accounts'
       | 'rounding-adjustments'
       | 'sectors'
       | 'shares'

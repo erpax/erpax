@@ -210,4 +210,12 @@ describe('governed documents on pages — never public, read and written by the 
     expect(documentError(DI, { code: 'TL-2026-01', effectiveDate: '2026-06-30', details: [block({ financialCovenants: [{ covenantName: 'Net debt / EBITDA', threshold: '≤ 3.0x', complianceStatus: 'breach' }] })] })).toMatch(/puts the instrument in breach \(Net debt \/ EBITDA/)
     expect(documentError(DI, { code: 'TL-2026-01', effectiveDate: '2026-06-30', details: [block({ debtStatus: 'breach-cure', financialCovenants: [{ covenantName: 'Net debt / EBITDA', threshold: '≤ 3.0x', complianceStatus: 'breach' }] })] })).toBe(true)
   })
+
+  it('a regulatory deferral balance marked recovered is zero', () => {
+    const RD = 'regulatory-deferral-account'
+    const block = (status: string, balance: number) => ({ blockType: RD, kind: 'asset', regulator: 'EWRC-BG', status, balance })
+    expect(documentError(RD, { details: [block('recovering', 125_000)] })).toBe(true)
+    expect(documentError(RD, { details: [block('recovered', 125_000)] })).toMatch(/recovered regulatory deferral balance is zero/)
+    expect(documentError(RD, { details: [block('recovered', 0)] })).toBe(true)
+  })
 })
