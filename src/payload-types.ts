@@ -390,7 +390,6 @@ export interface Config {
     'compliance-gaps': ComplianceGap;
     'compliance-requirements': ComplianceRequirement;
     'control-tests': ControlTest;
-    'debt-schedule': DebtSchedule;
     'disclosure-checklists': DisclosureChecklist;
     'entity-types': EntityType;
     'government-grants': GovernmentGrant;
@@ -612,7 +611,6 @@ export interface Config {
     'compliance-gaps': ComplianceGapsSelect<false> | ComplianceGapsSelect<true>;
     'compliance-requirements': ComplianceRequirementsSelect<false> | ComplianceRequirementsSelect<true>;
     'control-tests': ControlTestsSelect<false> | ControlTestsSelect<true>;
-    'debt-schedule': DebtScheduleSelect<false> | DebtScheduleSelect<true>;
     'disclosure-checklists': DisclosureChecklistsSelect<false> | DisclosureChecklistsSelect<true>;
     'entity-types': EntityTypesSelect<false> | EntityTypesSelect<true>;
     'government-grants': GovernmentGrantsSelect<false> | GovernmentGrantsSelect<true>;
@@ -1634,6 +1632,7 @@ export interface Page {
         | 'internal-audit-function'
         | 'earnings-per-share'
         | 'insurance-contract'
+        | 'debt-instrument'
       )
     | null;
   /**
@@ -1664,6 +1663,7 @@ export interface Page {
           | InternalAuditFunctionBlock
           | EarningsPerShareBlock
           | InsuranceContractBlock
+          | DebtInstrumentBlock
         )[]
       | null;
     /**
@@ -8135,6 +8135,110 @@ export interface EvidenceAttestation {
   } | null;
   updatedAt: string;
   createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "DebtInstrumentBlock".
+ */
+export interface DebtInstrumentBlock {
+  entity: string | LegalEntity;
+  debtType:
+    | 'bank-term-loan'
+    | 'bank-revolving'
+    | 'bank-accordion'
+    | 'bonds-fixed'
+    | 'bonds-floating'
+    | 'convertible-bonds'
+    | 'finance-lease'
+    | 'operating-lease'
+    | 'securitization'
+    | 'government-grant'
+    | 'vendor-financing'
+    | 'other';
+  debtStatus: 'active' | 'performing' | 'breach-cure' | 'breach-waived' | 'repaid' | 'refinanced';
+  /**
+   * Bank, bondholder base, lessor name.
+   */
+  lenderName: string;
+  /**
+   * Contact for covenant reporting, etc.
+   */
+  lenderContact?: string | null;
+  principalAmount: number;
+  /**
+   * Current principal outstanding as of balance sheet date.
+   */
+  outstandingBalance: number;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency: string;
+  maturityDate: string;
+  /**
+   * E.g., "3.5% fixed" or "EURIBOR+2.0% floating".
+   */
+  interestRate?: string | null;
+  interestPaymentFrequency?: ('monthly' | 'quarterly' | 'semi-annual' | 'annual') | null;
+  securityType?: ('unsecured' | 'secured-assets' | 'secured-guarantees' | 'secured-cross-default') | null;
+  repaymentSchedule?:
+    | {
+        paymentDate: string;
+        principalPayment: number;
+        interestPayment?: number | null;
+        totalPayment?: number | null;
+        paymentStatus?: ('scheduled' | 'paid' | 'deferred') | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Collateral, guarantees, cross-default provisions.
+   */
+  securityDetails?: LexicalRichText<LexicalNodes_AD327369> | null;
+  financialCovenants?:
+    | {
+        covenantName: string;
+        threshold: string;
+        currentPerformance?: string | null;
+        testedFrequency?: ('quarterly' | 'semi-annual' | 'annual') | null;
+        complianceStatus?: ('compliant' | 'breach' | 'waived') | null;
+        covenantDefinition?: LexicalRichText<LexicalNodes_AD327369> | null;
+        id?: string | null;
+      }[]
+    | null;
+  lastCovenantComplianceTest?: string | null;
+  nextCovenantTest?: string | null;
+  /**
+   * Non-financial covenants (reporting, insurance, etc.).
+   */
+  operationalCovenants?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Restrictions (dividends, capex, asset sales, additional debt).
+   */
+  restrictiveCovenants?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Prepayment penalties, lockup periods, make-whole provisions.
+   */
+  prepaymentTerms?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Events of default, acceleration clauses, remedies.
+   */
+  defaultProvisions?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Refinance risk, interest rate risk, covenant risk assessment.
+   */
+  riskAssessment?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Subsidiaries or parent guaranteeing this debt.
+   */
+  guarantees?: (string | LegalEntity)[] | null;
+  /**
+   * FX hedging instruments if multi-currency.
+   */
+  fxHedges?: (string | FxTransaction)[] | null;
+  relatedControls?: (string | InternalControl)[] | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'debt-instrument';
 }
 /**
  * Paired source documents between two group tenants. Each row pairs with a mirror row on the counterparty tenant — must net to zero on consolidation per IFRS 10 §B86 / ASC 810-10-45-1.
@@ -16399,137 +16503,6 @@ export interface AuditSample {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "debt-schedule".
- */
-export interface DebtSchedule {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  entity: string | LegalEntity;
-  /**
-   * E.g., "Senior Term Loan Facility", "10-Year Bonds 2030".
-   */
-  debtInstrumentName: string;
-  /**
-   * Internal identifier or ISIN/CUSIP.
-   */
-  debtInstrumentId: string;
-  debtType:
-    | 'bank-term-loan'
-    | 'bank-revolving'
-    | 'bank-accordion'
-    | 'bonds-fixed'
-    | 'bonds-floating'
-    | 'convertible-bonds'
-    | 'finance-lease'
-    | 'operating-lease'
-    | 'securitization'
-    | 'government-grant'
-    | 'vendor-financing'
-    | 'other';
-  /**
-   * Bank, bondholder base, lessor name.
-   */
-  lenderName: string;
-  /**
-   * Contact for covenant reporting, etc.
-   */
-  lenderContact?: string | null;
-  principalAmount: number;
-  /**
-   * ISO 4217 (USD, EUR, BGN, etc.).
-   */
-  currency: string;
-  issuanceDate: string;
-  maturityDate: string;
-  /**
-   * E.g., "3.5% fixed" or "EURIBOR+2.0% floating".
-   */
-  interestRate?: string | null;
-  interestPaymentFrequency?: ('monthly' | 'quarterly' | 'semi-annual' | 'annual') | null;
-  repaymentSchedule?:
-    | {
-        paymentDate: string;
-        principalPayment: number;
-        interestPayment?: number | null;
-        totalPayment?: number | null;
-        paymentStatus?: ('scheduled' | 'paid' | 'deferred') | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Current principal outstanding as of balance sheet date.
-   */
-  outstandingBalance: number;
-  securityType?: ('unsecured' | 'secured-assets' | 'secured-guarantees' | 'secured-cross-default') | null;
-  /**
-   * Collateral, guarantees, cross-default provisions.
-   */
-  securityDetails?: LexicalRichText<LexicalNodes_AD327369> | null;
-  financialCovenants?:
-    | {
-        covenantName: string;
-        covenantDefinition?: LexicalRichText<LexicalNodes_AD327369> | null;
-        testedFrequency?: ('quarterly' | 'semi-annual' | 'annual') | null;
-        threshold: string;
-        currentPerformance?: string | null;
-        complianceStatus?: ('compliant' | 'breach' | 'waived') | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Non-financial covenants (reporting, insurance, etc.).
-   */
-  operationalCovenants?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Restrictions (dividends, capex, asset sales, additional debt).
-   */
-  restrictiveCovenants?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Prepayment penalties, lockup periods, make-whole provisions.
-   */
-  prepaymentTerms?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Events of default, acceleration clauses, remedies.
-   */
-  defaultProvisions?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Subsidiaries or parent guaranteeing this debt.
-   */
-  guarantees?: (string | LegalEntity)[] | null;
-  /**
-   * FX hedging instruments if multi-currency.
-   */
-  fxHedges?: (string | FxTransaction)[] | null;
-  lastCovenantComplianceTest?: string | null;
-  nextCovenantTest?: string | null;
-  /**
-   * Refinance risk, interest rate risk, covenant risk assessment.
-   */
-  riskAssessment?: LexicalRichText<LexicalNodes_AD327369> | null;
-  relatedControls?: (string | InternalControl)[] | null;
-  debtStatus: 'active' | 'performing' | 'breach-cure' | 'breach-waived' | 'repaid' | 'refinanced';
-  /**
-   * Loan agreement, bond indenture, lease agreement (PDF).
-   */
-  debtAgreement?: (string | null) | Media;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "disclosure-checklists".
  */
 export interface DisclosureChecklist {
@@ -20177,7 +20150,6 @@ export interface PayloadQueryPreset {
     | 'compliance-gaps'
     | 'compliance-requirements'
     | 'control-tests'
-    | 'debt-schedule'
     | 'disclosure-checklists'
     | 'entity-types'
     | 'government-grants'
@@ -20727,6 +20699,7 @@ export interface PagesSelect<T extends boolean = true> {
               'internal-audit-function'?: T | InternalAuditFunctionBlockSelect<T>;
               'earnings-per-share'?: T | EarningsPerShareBlockSelect<T>;
               'insurance-contract'?: T | InsuranceContractBlockSelect<T>;
+              'debt-instrument'?: T | DebtInstrumentBlockSelect<T>;
             };
         links?:
           | T
@@ -21078,6 +21051,58 @@ export interface InsuranceContractBlockSelect<T extends boolean = true> {
   fairValueMeasurement?: T;
   journalEntry?: T;
   notes?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "DebtInstrumentBlock_select".
+ */
+export interface DebtInstrumentBlockSelect<T extends boolean = true> {
+  entity?: T;
+  debtType?: T;
+  debtStatus?: T;
+  lenderName?: T;
+  lenderContact?: T;
+  principalAmount?: T;
+  outstandingBalance?: T;
+  currency?: T;
+  maturityDate?: T;
+  interestRate?: T;
+  interestPaymentFrequency?: T;
+  securityType?: T;
+  repaymentSchedule?:
+    | T
+    | {
+        paymentDate?: T;
+        principalPayment?: T;
+        interestPayment?: T;
+        totalPayment?: T;
+        paymentStatus?: T;
+        id?: T;
+      };
+  securityDetails?: T;
+  financialCovenants?:
+    | T
+    | {
+        covenantName?: T;
+        threshold?: T;
+        currentPerformance?: T;
+        testedFrequency?: T;
+        complianceStatus?: T;
+        covenantDefinition?: T;
+        id?: T;
+      };
+  lastCovenantComplianceTest?: T;
+  nextCovenantTest?: T;
+  operationalCovenants?: T;
+  restrictiveCovenants?: T;
+  prepaymentTerms?: T;
+  defaultProvisions?: T;
+  riskAssessment?: T;
+  guarantees?: T;
+  fxHedges?: T;
+  relatedControls?: T;
   id?: T;
   blockName?: T;
 }
@@ -26077,67 +26102,6 @@ export interface ControlTestsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "debt-schedule_select".
- */
-export interface DebtScheduleSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  entity?: T;
-  debtInstrumentName?: T;
-  debtInstrumentId?: T;
-  debtType?: T;
-  lenderName?: T;
-  lenderContact?: T;
-  principalAmount?: T;
-  currency?: T;
-  issuanceDate?: T;
-  maturityDate?: T;
-  interestRate?: T;
-  interestPaymentFrequency?: T;
-  repaymentSchedule?:
-    | T
-    | {
-        paymentDate?: T;
-        principalPayment?: T;
-        interestPayment?: T;
-        totalPayment?: T;
-        paymentStatus?: T;
-        id?: T;
-      };
-  outstandingBalance?: T;
-  securityType?: T;
-  securityDetails?: T;
-  financialCovenants?:
-    | T
-    | {
-        covenantName?: T;
-        covenantDefinition?: T;
-        testedFrequency?: T;
-        threshold?: T;
-        currentPerformance?: T;
-        complianceStatus?: T;
-        id?: T;
-      };
-  operationalCovenants?: T;
-  restrictiveCovenants?: T;
-  prepaymentTerms?: T;
-  defaultProvisions?: T;
-  guarantees?: T;
-  fxHedges?: T;
-  lastCovenantComplianceTest?: T;
-  nextCovenantTest?: T;
-  riskAssessment?: T;
-  relatedControls?: T;
-  debtStatus?: T;
-  debtAgreement?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "disclosure-checklists_select".
  */
 export interface DisclosureChecklistsSelect<T extends boolean = true> {
@@ -29060,7 +29024,6 @@ export interface CollectionQueryWidget {
       | 'compliance-gaps'
       | 'compliance-requirements'
       | 'control-tests'
-      | 'debt-schedule'
       | 'disclosure-checklists'
       | 'entity-types'
       | 'government-grants'
@@ -29267,7 +29230,6 @@ export interface ActivityWidget {
           | 'compliance-gaps'
           | 'compliance-requirements'
           | 'control-tests'
-          | 'debt-schedule'
           | 'disclosure-checklists'
           | 'entity-types'
           | 'government-grants'
@@ -29512,7 +29474,6 @@ export interface TaskCreateCollectionExport {
       | 'compliance-gaps'
       | 'compliance-requirements'
       | 'control-tests'
-      | 'debt-schedule'
       | 'disclosure-checklists'
       | 'entity-types'
       | 'government-grants'

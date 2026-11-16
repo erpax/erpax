@@ -864,6 +864,188 @@ export const insuranceError = (details: Record<string, unknown>, document: Recor
   return Number.isFinite(from) && Number.isFinite(to) && to <= from ? 'Coverage ends after the contracts take effect.' : true
 }
 
+/**
+ * One debt instrument: lender, principal and terms, the repayment schedule, the covenants it is tested
+ * against, and what secures and hedges it (IFRS 9, IAS 1, ASC 470).
+ *
+ * @accounting IFRS-9 financial-instruments
+ * @accounting IAS-1 current-non-current-classification
+ * @accounting US-GAAP ASC-470 debt
+ */
+export const DebtInstrument: Block = {
+  slug: 'debt-instrument',
+  interfaceName: 'DebtInstrumentBlock',
+  labels: { singular: 'Debt instrument', plural: 'Debt instruments' },
+  fields: [
+    {
+      type: 'row',
+      fields: [
+        { name: 'entity', type: 'relationship', relationTo: 'legal-entities', required: true },
+        {
+          name: 'debtType',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'Bank Loan - Term', value: 'bank-term-loan' },
+            { label: 'Bank Loan - Revolving', value: 'bank-revolving' },
+            { label: 'Bank Loan - Accordion', value: 'bank-accordion' },
+            { label: 'Bonds - Fixed Rate', value: 'bonds-fixed' },
+            { label: 'Bonds - Floating Rate', value: 'bonds-floating' },
+            { label: 'Convertible Bonds', value: 'convertible-bonds' },
+            { label: 'Finance Lease', value: 'finance-lease' },
+            { label: 'Operating Lease', value: 'operating-lease' },
+            { label: 'Securitization', value: 'securitization' },
+            { label: 'Government Grants/Subsidies (repayable)', value: 'government-grant' },
+            { label: 'Vendor Financing', value: 'vendor-financing' },
+            { label: 'Other', value: 'other' },
+          ],
+        },
+        {
+          name: 'debtStatus',
+          type: 'select',
+          required: true,
+          defaultValue: 'active',
+          options: [
+            { label: 'Active', value: 'active' },
+            { label: 'Performing', value: 'performing' },
+            { label: 'Breach - Cure Period', value: 'breach-cure' },
+            { label: 'Breach - Waived', value: 'breach-waived' },
+            { label: 'Repaid', value: 'repaid' },
+            { label: 'Refinanced', value: 'refinanced' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'lenderName', type: 'text', required: true, admin: { description: 'Bank, bondholder base, lessor name.' } },
+        { name: 'lenderContact', type: 'text', admin: { description: 'Contact for covenant reporting, etc.' } },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'principalAmount', type: 'number', required: true },
+        { name: 'outstandingBalance', type: 'number', required: true, admin: { description: 'Current principal outstanding as of balance sheet date.' } },
+        currencyField({ required: true }),
+        { name: 'maturityDate', type: 'date', required: true },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'interestRate', type: 'text', admin: { description: 'E.g., "3.5% fixed" or "EURIBOR+2.0% floating".' } },
+        {
+          name: 'interestPaymentFrequency',
+          type: 'select',
+          options: [
+            { label: 'Monthly', value: 'monthly' },
+            { label: 'Quarterly', value: 'quarterly' },
+            { label: 'Semi-Annual', value: 'semi-annual' },
+            { label: 'Annual', value: 'annual' },
+          ],
+        },
+        {
+          name: 'securityType',
+          type: 'select',
+          options: [
+            { label: 'Unsecured', value: 'unsecured' },
+            { label: 'Secured - Assets', value: 'secured-assets' },
+            { label: 'Secured - Guarantees', value: 'secured-guarantees' },
+            { label: 'Secured - Cross-Default', value: 'secured-cross-default' },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'repaymentSchedule',
+      type: 'array',
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'paymentDate', type: 'date', required: true },
+            { name: 'principalPayment', type: 'number', required: true },
+            { name: 'interestPayment', type: 'number' },
+            { name: 'totalPayment', type: 'number' },
+            {
+              name: 'paymentStatus',
+              type: 'select',
+              defaultValue: 'scheduled',
+              options: [
+                { label: 'Scheduled', value: 'scheduled' },
+                { label: 'Paid', value: 'paid' },
+                { label: 'Deferred', value: 'deferred' },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    { name: 'securityDetails', type: 'richText', admin: { description: 'Collateral, guarantees, cross-default provisions.' } },
+    {
+      name: 'financialCovenants',
+      type: 'array',
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'covenantName', type: 'text', required: true },
+            { name: 'threshold', type: 'text', required: true },
+            { name: 'currentPerformance', type: 'text' },
+            {
+              name: 'testedFrequency',
+              type: 'select',
+              options: [
+                { label: 'Quarterly', value: 'quarterly' },
+                { label: 'Semi-Annual', value: 'semi-annual' },
+                { label: 'Annual', value: 'annual' },
+              ],
+            },
+            {
+              name: 'complianceStatus',
+              type: 'select',
+              defaultValue: 'compliant',
+              options: [
+                { label: 'In Compliance', value: 'compliant' },
+                { label: 'Breach Notice', value: 'breach' },
+                { label: 'Waived', value: 'waived' },
+              ],
+            },
+          ],
+        },
+        { name: 'covenantDefinition', type: 'richText' },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'lastCovenantComplianceTest', type: 'date' },
+        { name: 'nextCovenantTest', type: 'date' },
+      ],
+    },
+    { name: 'operationalCovenants', type: 'richText', admin: { description: 'Non-financial covenants (reporting, insurance, etc.).' } },
+    { name: 'restrictiveCovenants', type: 'richText', admin: { description: 'Restrictions (dividends, capex, asset sales, additional debt).' } },
+    { name: 'prepaymentTerms', type: 'richText', admin: { description: 'Prepayment penalties, lockup periods, make-whole provisions.' } },
+    { name: 'defaultProvisions', type: 'richText', admin: { description: 'Events of default, acceleration clauses, remedies.' } },
+    { name: 'riskAssessment', type: 'richText', admin: { description: 'Refinance risk, interest rate risk, covenant risk assessment.' } },
+    { name: 'guarantees', type: 'relationship', relationTo: 'legal-entities', hasMany: true, admin: { description: 'Subsidiaries or parent guaranteeing this debt.' } },
+    { name: 'fxHedges', type: 'relationship', relationTo: 'fx-transactions', hasMany: true, admin: { description: 'FX hedging instruments if multi-currency.' } },
+    { name: 'relatedControls', type: 'relationship', relationTo: 'internal-controls', hasMany: true },
+  ],
+}
+
+/** A debt instrument matures after it is issued; a covenant in breach puts the instrument in breach (IAS 1 §74). */
+export const debtError = (details: Record<string, unknown>, document: Record<string, unknown>): string | true => {
+  const issued = document.effectiveDate ? Date.parse(String(document.effectiveDate)) : Number.NaN
+  const matures = details.maturityDate ? Date.parse(String(details.maturityDate)) : Number.NaN
+  if (Number.isFinite(issued) && Number.isFinite(matures) && matures <= issued) return 'A debt instrument matures after it is issued.'
+  const breached = ((details.financialCovenants as { covenantName?: string; complianceStatus?: string }[] | undefined) ?? []).filter((c) => c.complianceStatus === 'breach')
+  const inBreach = details.debtStatus === 'breach-cure' || details.debtStatus === 'breach-waived'
+  return breached.length && !inBreach ? `A covenant in breach puts the instrument in breach (${breached.map((c) => c.covenantName).join(', ')}; IAS 1 §74).` : true
+}
+
 export const GOVERNED_TYPES: readonly GovernedType[] = [
   // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
   {
@@ -956,5 +1138,17 @@ export const GOVERNED_TYPES: readonly GovernedType[] = [
     feature: 'insurance_contracts',
     block: InsuranceContract,
     check: insuranceError,
+  },
+  // was debt-schedule: read by admin, audit staff and compliance; written by admins. The instrument's name is
+  // the page title, its id (ISIN/CUSIP) the code, its issuance date the effective date, the agreement an attachment.
+  {
+    value: 'debt-instrument',
+    label: 'Debt instrument',
+    read: ['admin', 'audit-staff', 'compliance-officer'],
+    write: ['admin'],
+    requires: ['code', 'effectiveDate'],
+    unique: ['code'],
+    block: DebtInstrument,
+    check: debtError,
   },
 ]
