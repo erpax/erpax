@@ -151,29 +151,7 @@ export const Pages: CollectionConfig = {
         position: 'sidebar',
       },
     },
-    {
-      name: 'breadcrumbs',
-      type: 'array',
-      admin: {
-        hidden: true,
-        readOnly: true,
-      },
-      fields: [
-        {
-          name: 'doc',
-          type: 'relationship',
-          relationTo: 'pages',
-        },
-        {
-          name: 'title',
-          type: 'text',
-        },
-        {
-          name: 'url',
-          type: 'text',
-        },
-      ],
-    },
+    // breadcrumbs: added by the nested-docs plugin (doc, url, label), which this `parent` opts into.
     // the governed document this page is, if any (formerly separate collections: reporting-standards, …)
     ...governedDocumentFields(),
   ],

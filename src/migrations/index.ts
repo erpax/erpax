@@ -24,6 +24,7 @@ import * as migration_20261116_120156_fold_related_party_transactions from './20
 import * as migration_20261116_121244_fold_regulatory_reports from './20261116_121244_fold_regulatory_reports';
 import * as migration_20261116_122658_fold_management_assessment_icfr from './20261116_122658_fold_management_assessment_icfr';
 import * as migration_20261116_124352_fold_budget_planning from './20261116_124352_fold_budget_planning';
+import * as migration_20261116_205222_breadcrumbs_from_plugin from './20261116_205222_breadcrumbs_from_plugin';
 
 export const migrations = [
   {
@@ -154,6 +155,11 @@ export const migrations = [
   {
     up: migration_20261116_124352_fold_budget_planning.up,
     down: migration_20261116_124352_fold_budget_planning.down,
-    name: '20261116_124352_fold_budget_planning'
+    name: '20261116_124352_fold_budget_planning',
+  },
+  {
+    up: migration_20261116_205222_breadcrumbs_from_plugin.up,
+    down: migration_20261116_205222_breadcrumbs_from_plugin.down,
+    name: '20261116_205222_breadcrumbs_from_plugin'
   },
 ];

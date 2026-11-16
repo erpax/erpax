@@ -2015,14 +2015,6 @@ export interface Page {
   publishedAt?: string | null;
   slug: string;
   parent?: (string | null) | Page;
-  breadcrumbs?:
-    | {
-        doc?: (string | null) | Page;
-        title?: string | null;
-        url?: string | null;
-        id?: string | null;
-      }[]
-    | null;
   /**
    * A governed document is never public; its type names who reads and writes it. Empty for a website page.
    */
@@ -2112,6 +2104,14 @@ export interface Page {
         }[]
       | null;
   };
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | Page;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -2204,8 +2204,8 @@ export interface Category {
   breadcrumbs?:
     | {
         doc?: (string | null) | Category;
-        title?: string | null;
         url?: string | null;
+        label?: string | null;
         id?: string | null;
       }[]
     | null;
@@ -20504,8 +20504,8 @@ export interface CategoriesSelect<T extends boolean = true> {
     | T
     | {
         doc?: T;
-        title?: T;
         url?: T;
+        label?: T;
         id?: T;
       };
   handle?: T;
@@ -20603,14 +20603,6 @@ export interface PagesSelect<T extends boolean = true> {
   publishedAt?: T;
   slug?: T;
   parent?: T;
-  breadcrumbs?:
-    | T
-    | {
-        doc?: T;
-        title?: T;
-        url?: T;
-        id?: T;
-      };
   documentType?: T;
   document?:
     | T
@@ -20656,6 +20648,14 @@ export interface PagesSelect<T extends boolean = true> {
                   };
               id?: T;
             };
+      };
+  breadcrumbs?:
+    | T
+    | {
+        doc?: T;
+        url?: T;
+        label?: T;
+        id?: T;
       };
   handle?: T;
   createdBy?: T;
