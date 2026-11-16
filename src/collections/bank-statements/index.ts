@@ -1,6 +1,5 @@
 import type { CollectionConfig } from 'payload'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant';
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
@@ -11,8 +10,7 @@ import { bankStatementImportedHook } from '@/hooks/collections/shared/bankStatem
 /**
  * Bank Statements — imported / matched bank statements feeding reconciliation.
  *
- * Slice ZZ: full canonical hook chain wired (autoPopulateTenant +
- * autoPopulateCreatedBy + periodLock + ISO-8601 reconciledAt
+ * Slice ZZ: full canonical hook chain wired (autoPopulateCreatedBy + periodLock + ISO-8601 reconciledAt
  * timestamp + audit-trail emission per write).
  *
  * @standard ISO-20022 camt.053 bank-to-customer-statement
@@ -111,7 +109,6 @@ const BankStatements: CollectionConfig = {
     },
   ],
   hooks: {
-    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       periodLock('statementDate'),
       autoPopulateCreatedBy,

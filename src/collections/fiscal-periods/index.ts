@@ -1,6 +1,5 @@
 import type { CollectionConfig } from 'payload'
 import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantRead'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { deriveLabel, periodLifecycle } from '@/hooks/collections/fiscal-periods/lifecycle'
 import { subsequentEventRules, subsequentEventsField } from '@/fields/array/subsequentEventsField'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
@@ -56,7 +55,7 @@ export const FiscalPeriods: CollectionConfig = {
   // must not prune it. Declared here so the versions plugin leaves it alone.
   versions: { maxPerDoc: 0 },
   hooks: {
-    beforeValidate: [autoPopulateTenant, deriveLabel],
+    beforeValidate: [deriveLabel],
     beforeChange: [
       // Validates the fiscal CONFIGURATION this collection carries — fiscalYearStartMonth,
       // periodType, regulatoryFramework, leapYearAdjustment. Distinct from the lifecycle below.

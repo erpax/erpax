@@ -26,7 +26,6 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
@@ -145,7 +144,6 @@ const Bookings: CollectionConfig = {
   ],
   hooks: {
     beforeValidate: [
-      autoPopulateTenant,
       async ({ data }) => {
         if (data?.startAt && data?.endAt) {
           const from = new Date(data.startAt as string).getTime()

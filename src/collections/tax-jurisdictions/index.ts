@@ -1,6 +1,5 @@
 import type { CollectionConfig } from 'payload'
 import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantRead'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { currencyField } from '@/fields/text/currencyField'
 import { fieldAccess as superAdminField } from '@/access/collections/shared/superAdminOnly'
@@ -40,7 +39,6 @@ export const TaxJurisdictions: CollectionConfig = {
   },
   access: tenantMasterDataAccess(),
   hooks: {
-    beforeValidate: [autoPopulateTenant],
     afterChange: [auditTrailAfterChange('tax-jurisdictions')],
   },
   fields: [

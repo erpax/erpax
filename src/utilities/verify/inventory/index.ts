@@ -224,89 +224,80 @@ export const CLAY_LABEL: Readonly<Record<ClayProblem, string>> = {
   poincare: 'Poincaré',
 }
 
-/** The README cell for a problem's kernel witnesses: each file linked, with its kind and counts, or none. */
-export const witnessCell = (witnesses: readonly ClayWitness[], problem: ClayProblem): string => {
-  const mine = witnesses.filter((w) => w.problem === problem).sort((a, b) => a.file.localeCompare(b.file))
-  if (mine.length === 0) return 'none'
-  return mine.map((w) => `[\`${w.file}\`](src/utilities/verify/lean/${w.file}) — \`${w.kind}\`, ${w.theorems} theorems, ${w.stubbed} stubbed`).join(' · ')
-}
-
 /** The README sentence that quotes the sealed census. */
 export const censusLine = (inventory: Pick<ProofInventory, 'sealedAt' | 'census' | 'files' | 'sourcesHash'>): string =>
   `Kernel report sealed ${inventory.sealedAt}: ${inventory.census.theorems} theorems, ${inventory.census.axiomFree} axiom-free, ${inventory.census.standardAxioms} on Lean's three standard axioms, ${inventory.census.stubbed} stubbed, ${inventory.files.length} files, sources \`${inventory.sourcesHash}\`.`
 
-/** What each problem asserts (its full name and statement), and what this corpus is missing toward it, named plainly. */
-export const CLAY_STATEMENT: Readonly<Record<ClayProblem, { readonly name: string; readonly statement: string; readonly gap: string }>> = {
-  pnp: {
-    name: 'P vs NP',
-    statement: 'Is P = NP? Whether every decision problem whose solution is VERIFIABLE in polynomial time is also SOLVABLE in polynomial time — i.e. whether the classes P and NP coincide.',
-    gap: 'no separation is derived. The verify/derive asymmetry the fold exhibits is ONE instance of easy-to-check / hard-to-produce; a lower bound separating the classes is what is missing, and nothing here supplies one.',
-  },
-  riemann: {
-    name: 'Riemann Hypothesis',
-    statement: 'All non-trivial zeros of the Riemann zeta function lie on the critical line: ζ(s) = 0 with 0 < Re(s) < 1 ⟹ Re(s) = ½.',
-    gap: 'the corpus touches the primes↔π link through ζ (ζ(2) = π²/6, the Euler product) but derives nothing about the location of the zeros. What is missing is any argument constraining Re(s) — the whole conjecture.',
-  },
-  'navier-stokes': {
-    name: 'Navier–Stokes existence & smoothness',
-    statement: 'For the 3D incompressible Navier–Stokes equations ∂u/∂t + (u·∇)u = −∇p + νΔu, ∇·u = 0, with smooth initial data: do smooth solutions exist for all time, or can they blow up in finite time?',
-    gap: 'global regularity is a hard-analysis question about a PDE. The confinement analogy (handle the field, not each particle) is physical intuition, not an estimate; no a-priori bound is derived here.',
-  },
-  'yang-mills': {
-    name: 'Yang–Mills existence & mass gap',
-    statement: 'For a compact simple gauge group G, does a non-trivial quantum Yang–Mills theory exist on ℝ⁴ with a mass gap Δ > 0 — i.e. the lightest particle has strictly positive mass?',
-    gap: 'no lens at all. Constructive QFT existence plus a positive spectral gap is outside anything this corpus computes; the "mass gap" wordplay to the void/axis is overlay, not physics.',
-  },
-  hodge: {
-    name: 'Hodge Conjecture',
-    statement: 'On a projective non-singular complex algebraic variety, every Hodge class (a rational cohomology class of type (p,p)) is a rational linear combination of the classes of algebraic cycles.',
-    gap: 'no lens at all. Algebraic cycles and Hodge theory are outside the corpus; nothing here bears on the rationality of Hodge classes.',
-  },
-  bsd: {
-    name: 'Birch–Swinnerton-Dyer',
-    statement: 'For an elliptic curve E over ℚ, the order of vanishing of its L-function at s = 1 equals the rank of its Mordell–Weil group: ord₍ₛ₌₁₎ L(E, s) = rank E(ℚ).',
-    gap: 'no lens at all. Elliptic curves and L-functions are outside the corpus; the rank↔order-of-vanishing identity is untouched by anything computed here.',
-  },
-  poincare: {
-    name: 'Poincaré Conjecture',
-    statement: 'Every simply-connected closed 3-manifold is homeomorphic to the 3-sphere: π₁(M) = 0 with M a closed 3-manifold ⟹ M ≅ S³.',
-    gap: '_no open gap — proved externally (Grigori Perelman); this corpus records the status, it does not re-solve it_',
-  },
+/** A Markdown table cell: a pipe in the text (`|0⟩`, `^24 || >=26`) would end the cell, so pipes are escaped, and
+ * backslashes first, or a value ending in one would undo the escape. */
+export const cell = (text: string): string => text.replace(/\\/g, '\\\\').replace(/\|/g, '\\|')
+
+export const LEAN_DIR = 'src/utilities/verify/lean'
+const leanLink = (file: string, line?: number): string => `${LEAN_DIR}/${file}${line ? `#L${line}` : ''}`
+
+/** A Lean file's own statement: the first paragraph of its header comment (`Name — what it proves.`). */
+export const leanTitle = (source: string): string => {
+  const header = /^\/-\s*\n([\s\S]*?)-\//.exec(source)?.[1] ?? ''
+  return (header.split(/\n\s*\n/)[0] ?? '').split('\n').map((line) => line.trim()).join(' ').trim()
+}
+
+/** Each theorem's 1-based line in its source. */
+export const theoremLines = (source: string): Map<string, number> => {
+  const lines = new Map<string, number>()
+  source.split('\n').forEach((line, i) => {
+    const m = /^theorem\s+(\S+)/.exec(line)
+    if (m) lines.set(m[1] as string, i + 1)
+  })
+  return lines
 }
 
 /**
- * The README's Clay section, rendered from the record: the witness table, the settled list and the
- * census are computed, and each statement is the problem's own. `scripts/generate-repo.ts` writes it
- * into README.md, so the README cannot say anything about the kernel that the record does not.
+ * The README's Clay section, from the record and the Lean files' own words: each problem's witnesses,
+ * linked, each described by its file's first sentence; the settled list; the census. Nothing in it is
+ * written by hand.
  */
-export const claySection = (witnesses: readonly ClayWitness[], inventory: Parameters<typeof censusLine>[0]): string => {
+export const claySection = (witnesses: readonly ClayWitness[], inventory: Parameters<typeof censusLine>[0], sources: Readonly<Record<string, string>>): string => {
   const settled = claySettled(witnesses)
-  const settledText = settled.length ? settled.map((p) => CLAY_LABEL[p]).join(', ') : '**none**'
   return [
-    '## How a Clay problem is verified here',
+    '## Clay',
     '',
-    'A Clay problem is verified by the **Lean kernel**, or it is not verified. Not by a deposit on Zenodo, not by a prose argument, and not by this README: this section only reports what the kernel has checked.',
+    '| problem | witness | kind | theorems | stubbed | the file says |',
+    '| --- | --- | --- | ---: | ---: | --- |',
+    ...CLAY.flatMap((p) => {
+      const mine = witnesses.filter((w) => w.problem === p).sort((a, b) => a.file.localeCompare(b.file))
+      if (mine.length === 0) return [`| ${CLAY_LABEL[p]} | none | | | | |`]
+      return mine.map((w) => `| ${CLAY_LABEL[p]} | [\`${w.file}\`](${leanLink(w.file)}) | \`${w.kind}\` | ${w.theorems} | ${w.stubbed} | ${cell(leanTitle(sources[w.file] ?? ''))} |`)
+    }),
     '',
-    "1. **Declare.** Every Lean file in `src/utilities/verify/lean/` says what its theorems bear on, on a header line: `Clay: <problem> <kind>` — `meta` (proves what an argument *cannot* do), `partial` (a true fragment) or `statement` (the problem's own statement) — or `Clay: none`. CI refuses a file that declares nothing, so each theorem is placed against the Clay cases; a declaration is wrong when it overclaims and when it underclaims.",
-    '2. **Check.** `tsx src/utilities/verify/inventory/index.ts` compiles every file with `lean` and records, for each theorem, the axioms the kernel says it rests on, in `inventory.generated.json`. `sorryAx` among them marks a stub, never a proof.',
-    '3. **Count.** `clayWitnesses` joins the declarations to that report. `claySettled` lists the problems with a compiled, stub-free file declared `statement`. A refused or stubbed file never settles anything, and a mistyped tag throws instead of hiding.',
-    "4. **Review.** A tag is a declaration, not proof that the Lean statement is the real one: a theorem can be a tautology. A `statement` file needs a human to read its statement against Clay's before it counts.",
+    `settled: ${settled.length ? settled.map((p) => CLAY_LABEL[p]).join(', ') : '**none**'} (\`claySettled\`)`,
     '',
-    '| problem | kernel witnesses today |',
-    '| --- | --- |',
-    ...CLAY.map((p) => `| ${CLAY_LABEL[p]} | ${witnessCell(witnesses, p)} |`),
-    '',
-    `Settled by this corpus: ${settledText} (\`claySettled\` ${settled.length ? `lists ${settled.length}` : 'is empty'}). ${censusLine(inventory)} Recompute: \`tsx src/utilities/verify/inventory/index.ts\` · \`pnpm vitest run src/utilities/verify\`.`,
-    '',
-    '| problem | statement (algebraic) | the named gap |',
-    '| --- | --- | --- |',
-    ...CLAY.map((p) => `| **${CLAY_STATEMENT[p].name}** | ${CLAY_STATEMENT[p].statement} | ${CLAY_STATEMENT[p].gap} |`),
-    '',
-    'The **statement** is what the conjecture asserts — read it before anything this corpus says about it, so a lens can never be mistaken for the mathematics it points at. The **gap** is what is missing, named plainly: a gap you can argue with, rather than a mystery that hides its size.',
-    '',
-    "You do not solve one by asserting it. A problem moves here only when a Lean file declared `statement` compiles with no stub and its statement survives review; whether that is a solution at all is for the [Clay Institute's rules](https://www.claymath.org/millennium-problems/rules/), not for this repository.",
+    censusLine(inventory),
     '',
   ].join('\n')
+}
+
+/**
+ * The README's proof index: every Lean file, linked, with its own first sentence, its Clay declaration
+ * and its counts; and under each, every theorem linked to its line with the axioms the kernel reported.
+ */
+export const proofIndex = (inventory: Pick<ProofInventory, 'files' | 'sealedAt' | 'census' | 'sourcesHash'>, sources: Readonly<Record<string, string>>): string => {
+  const files = [...inventory.files].sort((a, b) => a.file.localeCompare(b.file))
+  const rows = files.map((f) => {
+    const source = sources[f.file] ?? ''
+    const clay = clayTags(source).map((tag) => `${tag.problem} ${tag.kind}`).join(', ') || 'none'
+    const free = f.entries.filter((e) => e.axiomFree).length
+    return `| [\`${f.file}\`](${leanLink(f.file)}) | ${cell(leanTitle(source))} | ${clay} | ${f.entries.length} | ${free} | ${f.compiled ? 'accepted' : 'refused'} |`
+  })
+  const details = files.map((f) => {
+    const lines = theoremLines(sources[f.file] ?? '')
+    const items = f.entries.map((e) => {
+      const name = e.theorem.split('.').pop() as string
+      const axioms = e.stubbed ? 'stubbed' : e.axiomFree ? 'axiom-free' : e.axioms.join(', ')
+      return `- [\`${e.theorem}\`](${leanLink(f.file, lines.get(name))}) · ${axioms}`
+    })
+    return [`<details><summary>${f.file} · ${f.entries.length} theorems</summary>`, '', ...items, '', '</details>'].join('\n')
+  })
+  return ['## Proofs', '', censusLine(inventory), '', '| file | the file says | Clay | theorems | axiom-free | kernel |', '| --- | --- | --- | ---: | ---: | --- |', ...rows, '', ...details, ''].join('\n')
 }
 
 /** What the kernel has checked about each problem: one witness per declaration, with its axiom footprint. */
@@ -371,7 +362,7 @@ if (import.meta.url === `file://${process.argv[1]}`) void (async () => {
 
   // `lean` on PATH: elan installs the version in /lean-toolchain, here and in CI.
   const LEAN = process.env.LEAN_BIN ?? 'lean'
-  const dir = join(process.cwd(), 'src/utilities/verify/lean')
+  const dir = join(process.cwd(), LEAN_DIR)
   const names = readdirSync(dir).filter((f) => f.endsWith('.lean')).map((f) => f.replace(/\.lean$/, '')).sort()
   const out = mkdtempSync(join(tmpdir(), 'erpax-lean-'))
   const sourcesDigest = sha256(...names.map((n) => readFileSync(join(dir, `${n}.lean`))))

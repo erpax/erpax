@@ -65,11 +65,11 @@ describe('shares — uuid-based RBAC share collection (Law 59)', () => {
     expect(fieldByName('sealed').type).toBe('checkbox')
   })
 
-  it('access is tenant-scoped read with writes gated and a beforeValidate tenant hook', () => {
+  it('access is tenant-scoped read with writes gated; the multi-tenant plugin fills the tenant, no hook does', () => {
     expect(typeof Shares.access?.read).toBe('function')
     expect(typeof Shares.access?.create).toBe('function')
     expect(typeof Shares.access?.update).toBe('function')
     expect(typeof Shares.access?.delete).toBe('function')
-    expect(Shares.hooks?.beforeValidate).toHaveLength(1)
+    expect(Shares.hooks?.beforeValidate ?? []).toHaveLength(0)
   })
 })

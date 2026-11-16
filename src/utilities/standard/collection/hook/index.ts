@@ -3,7 +3,6 @@
  * collection lifecycle triple, so it is never re-declared per collection.
  *
  * Every accountable collection shares the same spine:
- *   beforeValidate → autoPopulateTenant   (tenant isolation, before validation)
  *   beforeChange   → autoPopulateCreatedBy (provenance)
  *   afterChange    → … , auditTrailAfterChange(slug)  (audit chain, LAST)
  *
@@ -20,7 +19,6 @@ import type {
   CollectionBeforeChangeHook,
   CollectionAfterChangeHook,
 } from 'payload'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 
@@ -32,7 +30,7 @@ export const standardCollectionHooks = (
     afterChange?: CollectionAfterChangeHook[]
   } = {},
 ): NonNullable<CollectionConfig['hooks']> => ({
-  beforeValidate: [autoPopulateTenant, ...(opts.beforeValidate ?? [])],
+  beforeValidate: [...(opts.beforeValidate ?? [])],
   beforeChange: [autoPopulateCreatedBy, ...(opts.beforeChange ?? [])],
   afterChange: [...(opts.afterChange ?? []), auditTrailAfterChange(slug)],
 })

@@ -2,7 +2,7 @@
  * GL Accounts — Chart of Accounts.
  *
  * Slice WW-cleanup (this turn): switched to canonical access predicates +
- * field factories + autoPopulateTenant beforeValidate. Removed dead
+ * field factories. Removed dead
  * `if (!data.tenant && undefined)` code (always-false condition).
  * Added `role` field so the new `gl-account-resolver` can map canonical
  * roles (cash / ar / revenue / etc.) to this tenant's actual accounts.
@@ -19,7 +19,6 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { statusField } from '@/fields/select/statusField'
@@ -203,7 +202,6 @@ const GLAccounts: CollectionConfig = {
     },
   ],
   hooks: {
-    beforeValidate: [autoPopulateTenant],
     afterChange: [auditTrailAfterChange('gl-accounts')],
   },
 }

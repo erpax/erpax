@@ -26,7 +26,6 @@ import { indexesPlugin } from '@/plugins/indexes'
 import { handlesPlugin } from '@/plugins/handles'
 import { PUBLIC_COLLECTIONS, searchReadAccess } from '@/access/collections/search/readAccess'
 // Accounting plugin removed: all collections now flat in src/collections/
-import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { ar } from '@payloadcms/translations/languages/ar'
 import { bg } from '@payloadcms/translations/languages/bg'
 import { cs } from '@payloadcms/translations/languages/cs'
@@ -76,6 +75,7 @@ import {
 import { resolvePayloadSecret } from '@/utilities/secret'
 import { getServerSideURL } from '@/utilities/rfc/3986'
 import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
+import { tenantDefault } from '@/utilities/tenants/default'
 import { embedSearchDocument, enqueueEmbedding, semanticEndpoint, TASK as EMBED_TASK, type SemanticEnv } from '@/utilities/semantic'
 import { cloudflareEmailAdapter, type SendEmailBinding } from '@/utilities/email/cloudflare'
 import localization from '@/i18n/localization'
@@ -389,25 +389,7 @@ export default buildConfig({
       // its proof test. A new collection auto-scopes; nothing drifts.
       collections: tenantCollectionsConfig(Object.values(allCollections) as Array<{ slug: string }>),
       tenantField: {
-        defaultValue: async ({ req }) => {
-          const idType = req.payload.collections.tenants?.customIDType ?? req.payload.db.defaultIDType
-          const tenantFromCookie = getTenantFromCookie(req.headers, idType === 'number' ? 'number' : 'text')
-          if (!tenantFromCookie) return null
-
-          const { totalDocs } = await req.payload.count({
-            collection: 'tenants',
-            overrideAccess: false,
-            req,
-            user: req.user,
-            where: {
-              id: {
-                in: [tenantFromCookie],
-              },
-            },
-          })
-
-          return totalDocs > 0 ? tenantFromCookie : null
-        },
+        defaultValue: tenantDefault,
         access: {
           read: () => true,
           update: ({ req }) => {

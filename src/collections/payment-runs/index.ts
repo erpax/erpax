@@ -35,7 +35,6 @@
 
 import type { CollectionConfig, PayloadRequest } from 'payload'
 import { mandateError, mandateOf } from '@/fields/array/mandatesField'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
@@ -321,7 +320,6 @@ const PaymentRuns: CollectionConfig = {
     notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       periodLock('requestedExecutionDate'),
       autoPopulateCreatedBy,

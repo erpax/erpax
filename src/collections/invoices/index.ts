@@ -9,7 +9,6 @@ import { deriveInvoiceNumber, invoiceAccountingHook } from '@/utilities/invoices
 import { periodLock } from '@/utilities/utility'
 import { adminOnly, multiTenantRead } from '@/access/collections/shared/multiTenantRead'
 import { authenticated } from '@/utilities/authenticated'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { dunningField, dunningHistory } from '@/fields/group/dunningField'
 import { VAT_CATEGORY_OPTIONS } from '@/utilities/un/cefact/5305'
@@ -90,7 +89,7 @@ export const Invoices: CollectionConfig = {
     delete: adminOnly,
   },
   hooks: {
-    beforeValidate: [autoPopulateTenant, deriveInvoiceNumber],
+    beforeValidate: [deriveInvoiceNumber],
     // the dunning record (formerly the dunning-cycles collection): append-only history, one entry per stage change
     beforeChange: [periodLock('dates.date'), dunningHistory],
     // AAAAA-cont (2026-05-11): wired the canonical audit-trail emission

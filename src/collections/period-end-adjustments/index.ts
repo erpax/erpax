@@ -1,7 +1,6 @@
 import type { CollectionConfig } from 'payload'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { notesField } from '@/fields/textarea/notesField'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant';
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
@@ -12,8 +11,7 @@ import { periodEndAdjustmentPostingHook } from '@/hooks/collections/shared/perio
 /**
  * Period-End Adjustments — accruals, deferrals, depreciation, allocation entries.
  *
- * Slice ZZ: full canonical hook chain wired (autoPopulateTenant +
- * autoPopulateCreatedBy + periodLock + segregation of duties on
+ * Slice ZZ: full canonical hook chain wired (autoPopulateCreatedBy + periodLock + segregation of duties on
  * approval + ISO-8601 postedAt timestamp + audit-trail emission).
  *
  * @standard ISO-8601-1:2019 date-time period posted-at
@@ -77,7 +75,6 @@ const PeriodEndAdjustments: CollectionConfig = {
     notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       periodLock('period'),
       autoPopulateCreatedBy,

@@ -1,7 +1,6 @@
 import type { CollectionConfig } from 'payload'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { notesField } from '@/fields/textarea/notesField'
-import { autoPopulateTenant } from '@/hooks/collections/shared/autoPopulateTenant';
 import { autoPopulateCreatedBy } from '@/hooks/collections/shared/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange';
@@ -10,8 +9,7 @@ import { periodLock } from '@/utilities/utility';
 /**
  * Tax Calculations — computed tax-liability snapshots per period.
  *
- * Slice ZZ: full canonical hook chain wired (autoPopulateTenant +
- * autoPopulateCreatedBy + periodLock + ISO-8601 postedAt /
+ * Slice ZZ: full canonical hook chain wired (autoPopulateCreatedBy + periodLock + ISO-8601 postedAt /
  * filedAt / paidAt timestamps + audit-trail emission per write).
  *
  * @standard ISO-3166-1:2020 country-codes jurisdiction
@@ -97,7 +95,6 @@ const TaxCalculations: CollectionConfig = {
   // Slice ZZ: full canonical hook chain wired per banner declarations.
   // Was: empty hooks (banner promised audit-trail, no implementation).
   hooks: {
-    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       periodLock('period'),
       autoPopulateCreatedBy,
