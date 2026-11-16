@@ -97,7 +97,6 @@ const WipSnapshots: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('wip-snapshots', { afterChange: [emitWipSnapshotPosted] }),
-  timestamps: true,
 }
 
 export default WipSnapshots

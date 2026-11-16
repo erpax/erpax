@@ -41,7 +41,6 @@ export const TaxJurisdictions: CollectionConfig = {
   hooks: {
     afterChange: [auditTrailAfterChange('tax-jurisdictions')],
   },
-  timestamps: true,
   fields: [
     // Identity — kept at top level so `useAsTitle` and `defaultColumns`
     // can resolve them (Payload's useAsTitle does not traverse into groups).

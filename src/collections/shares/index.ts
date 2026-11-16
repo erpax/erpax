@@ -140,7 +140,6 @@ const Shares: CollectionConfig = {
   ],
   hooks: {
   },
-  timestamps: true,
 }
 
 export default Shares

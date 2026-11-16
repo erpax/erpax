@@ -155,7 +155,6 @@ const LotVariants: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('lot-variants', { beforeChange: [rollUpLotVariantOptions] }),
-  timestamps: true,
 }
 
 export default LotVariants

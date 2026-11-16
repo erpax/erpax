@@ -123,7 +123,6 @@ const BankStatements: CollectionConfig = {
     // JE for every transaction line (closes the IAS-7 cash-flow GL gap).
     afterChange: [bankStatementImportedHook, auditTrailAfterChange('bank-statements')],
   },
-  timestamps: true,
 };
 
 export default BankStatements;

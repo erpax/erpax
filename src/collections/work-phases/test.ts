@@ -55,6 +55,6 @@ describe('work/phases — the reusable work-phase catalog', () => {
   })
 
   it('has timestamps for the audit trail', () => {
-    expect(WorkPhases.timestamps).toBe(true)
+    expect(WorkPhases.timestamps).not.toBe(false) // Payload's default: on unless turned off
   })
 })

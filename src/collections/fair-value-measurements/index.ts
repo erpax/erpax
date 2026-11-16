@@ -127,7 +127,6 @@ const FairValueMeasurements: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('fair-value-measurements'),
-  timestamps: true,
 }
 
 export default FairValueMeasurements

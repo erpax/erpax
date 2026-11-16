@@ -51,7 +51,6 @@ const Operators: CollectionConfig = {
   hooks: {
     afterChange: [auditTrailAfterChange('operators')],
   },
-  timestamps: true,
 }
 
 export default Operators

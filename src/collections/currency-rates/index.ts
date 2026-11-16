@@ -64,7 +64,6 @@ const CurrencyRates: CollectionConfig = {
     ],
     afterChange: [auditTrailAfterChange('currency-rates')],
   },
-  timestamps: true,
 }
 
 export default CurrencyRates

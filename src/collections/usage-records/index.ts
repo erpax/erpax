@@ -93,7 +93,6 @@ const UsageRecords: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('usage-records', { afterChange: [emitUsageRecorded] }),
-  timestamps: true,
 }
 
 export default UsageRecords

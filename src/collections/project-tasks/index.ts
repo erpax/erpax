@@ -86,7 +86,6 @@ const ProjectTasks: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('project-tasks'),
-  timestamps: true,
 }
 
 export default ProjectTasks

@@ -16,7 +16,6 @@ export const InternalControls: CollectionConfig = {
   admin: { useAsTitle: 'title', defaultColumns: ['tenant', 'controlType', 'owner', 'isActive'], group: 'Compliance Foundation' },
   access: { read: authenticated, create: authenticated, update: authenticated, delete: adminOnly },
   hooks: { afterChange: [auditTrailAfterChange('internalControls')] },
-  timestamps: true,
   fields: [
     { name: 'title', type: 'text', required: true, index: true },
     { name: 'description', type: 'textarea', required: true },

@@ -328,7 +328,6 @@ const Commitments: CollectionConfig = {
     },
   ],
   hooks: standardCollectionHooks('commitments', { beforeChange: [enforceSegregationOfDuties()] }),
-  timestamps: true,
 }
 
 export default Commitments

@@ -103,7 +103,6 @@ const Packages: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('packages'),
-  timestamps: true,
 }
 
 export default Packages

@@ -154,7 +154,6 @@ const GovernmentGrants: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('government-grants'),
-  timestamps: true,
 }
 
 export default GovernmentGrants

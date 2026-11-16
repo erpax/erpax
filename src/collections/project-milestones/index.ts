@@ -83,7 +83,6 @@ const ProjectMilestones: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('project-milestones', { afterChange: [emitMilestoneAchieved] }),
-  timestamps: true,
 }
 
 export default ProjectMilestones

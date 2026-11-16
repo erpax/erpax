@@ -20,7 +20,6 @@ export const AuditFindings: CollectionConfig = {
   admin: { useAsTitle: 'title', defaultColumns: ['tenant', 'findingType', 'severity', 'status', 'isActive'], group: 'Evidence & Findings' },
   access: { read: authenticated, create: authenticated, update: authenticated, delete: adminOnly },
   hooks: { afterChange: [auditTrailAfterChange('auditFindings')] },
-  timestamps: true,
   fields: [
     { name: 'title', type: 'text', required: true, index: true },
     { name: 'description', type: 'textarea', required: true },

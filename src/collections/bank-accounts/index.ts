@@ -102,7 +102,6 @@ const BankAccounts: CollectionConfig = {
   hooks: standardCollectionHooks('bank-accounts', { beforeChange: [// Country comes from the IBAN if not explicitly set — single source of
       // truth for downstream country-context API routing.
       deriveCountryFromIban(), enforceSegregationOfDuties()] }),
-  timestamps: true,
 }
 
 export default BankAccounts

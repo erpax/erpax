@@ -196,7 +196,6 @@ export const Packs: CollectionConfig = {
   hooks: standardCollectionHooks('packs', {
     beforeChange: [balanceWeight],
   }),
-  timestamps: true,
 }
 
 export default Packs

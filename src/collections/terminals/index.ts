@@ -43,7 +43,6 @@ const Terminals: CollectionConfig = {
   hooks: {
     afterChange: [auditTrailAfterChange('terminals')],
   },
-  timestamps: true,
 }
 
 export default Terminals

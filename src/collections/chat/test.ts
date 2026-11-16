@@ -12,7 +12,7 @@ describe('chats', () => {
   })
 
   it('enables timestamps', () => {
-    expect(Chat.timestamps).toBe(true)
+    expect(Chat.timestamps).not.toBe(false) // Payload's default: on unless turned off
   })
 
   it('uses event as admin title field', () => {

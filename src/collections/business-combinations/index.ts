@@ -125,7 +125,6 @@ const BusinessCombinations: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('business-combinations'),
-  timestamps: true,
 }
 
 export default BusinessCombinations

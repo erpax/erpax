@@ -103,7 +103,6 @@ const DeferredTaxItems: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('deferred-tax-items'),
-  timestamps: true,
 }
 
 export default DeferredTaxItems

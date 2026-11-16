@@ -130,7 +130,6 @@ const ApiAuditEvents: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('api-audit-events'),
-  timestamps: true,
 }
 
 export default ApiAuditEvents

@@ -92,7 +92,6 @@ const FiscalDevices: CollectionConfig = {
   hooks: {
     afterChange: [auditTrailAfterChange('fiscal-devices')],
   },
-  timestamps: true,
 }
 
 export default FiscalDevices

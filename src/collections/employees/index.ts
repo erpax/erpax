@@ -410,7 +410,6 @@ const Employees: CollectionConfig = {
         'terminationDate',
         (d) => (d as { status?: string }).status === 'terminated',
       )] }),
-  timestamps: true,
 }
 
 export default Employees

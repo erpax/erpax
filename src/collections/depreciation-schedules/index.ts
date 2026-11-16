@@ -82,7 +82,6 @@ const DepreciationSchedules: CollectionConfig = {
       auditTrailAfterChange('depreciation-schedules'),
     ],
   },
-  timestamps: true,
 }
 
 export default DepreciationSchedules

@@ -204,7 +204,6 @@ const GLAccounts: CollectionConfig = {
   hooks: {
     afterChange: [auditTrailAfterChange('gl-accounts')],
   },
-  timestamps: true,
 }
 
 export default GLAccounts

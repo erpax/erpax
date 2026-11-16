@@ -76,7 +76,6 @@ const ConsentRecords: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('consent-records', { beforeChange: [autoSetTimestamp('givenAt', (d) => (d as { status?: string }).status === 'given'), autoSetTimestamp('withdrawnAt', (d) => (d as { status?: string }).status === 'withdrawn')] }),
-  timestamps: true,
 }
 
 export default ConsentRecords

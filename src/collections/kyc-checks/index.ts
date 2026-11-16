@@ -122,7 +122,6 @@ const KycChecks: CollectionConfig = {
       autoSetTimestamp('completedAt', (d) => ['approved', 'rejected'].includes(String((d as { status?: string }).status))),
     ],
   }),
-  timestamps: true,
 }
 
 export default KycChecks

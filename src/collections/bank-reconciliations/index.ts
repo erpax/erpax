@@ -95,7 +95,6 @@ const BankReconciliations: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('bank-reconciliations'),
-  timestamps: true,
 }
 
 export default BankReconciliations

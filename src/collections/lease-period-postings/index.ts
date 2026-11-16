@@ -260,7 +260,6 @@ const LeasePeriodPostings: CollectionConfig = {
       auditTrailAfterChange('lease-period-postings'),
     ],
   },
-  timestamps: true,
 }
 
 export default LeasePeriodPostings

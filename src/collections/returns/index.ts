@@ -86,7 +86,6 @@ const Returns: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('returns', { afterChange: [deriveMovements('returns')], beforeChange: [enforceSegregationOfDuties('approvedBy', 'createdBy'), autoSetTimestamp('authorisedAt', (d) => (d as { status?: string }).status === 'authorised'), autoSetTimestamp('receivedAt', (d) => (d as { status?: string }).status === 'received'), autoSetTimestamp('restockedAt', (d) => (d as { status?: string }).status === 'restocked')] }),
-  timestamps: true,
 }
 
 export default Returns

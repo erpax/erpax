@@ -149,7 +149,6 @@ const WorkflowDefinitions: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('workflow-definitions'),
-  timestamps: true,
 }
 
 export default WorkflowDefinitions

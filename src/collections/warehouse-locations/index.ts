@@ -82,7 +82,6 @@ const WarehouseLocations: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('warehouse-locations'),
-  timestamps: true,
 }
 
 export default WarehouseLocations

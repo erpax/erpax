@@ -88,7 +88,6 @@ const Chat: CollectionConfig = {
     },
   ],
   hooks: standardCollectionHooks('chat'),
-  timestamps: true,
 }
 
 export { Chat as ChatComponent } from '@/components/chats/Component'

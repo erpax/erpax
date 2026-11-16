@@ -158,7 +158,6 @@ const PerformanceReviews: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('performance-reviews'),
-  timestamps: true,
 }
 
 export default PerformanceReviews
