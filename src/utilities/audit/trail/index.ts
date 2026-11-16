@@ -5,4 +5,5 @@ export type {
   ChainLinkStatus,
   WriteAuditEventResult,
 } from '@/utilities/audit/trail/write-audit-event'
-export { writeAuditEvent } from '@/utilities/audit/trail/write-audit-event'
+export { appendAuditRow, writeAuditEvent } from '@/utilities/audit/trail/write-audit-event'
+export type { AuditRow, AuditRowOperation } from '@/utilities/audit/trail/write-audit-event'

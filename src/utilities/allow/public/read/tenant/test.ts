@@ -1,7 +1,7 @@
 /**
  * Public-read tenant id cache tests — resolves the tenant ids flagged
- * `allowPublicRead = true`, caches them for the TTL window, and normalizes
- * row ids to finite numbers. Deterministic: a stub `payload.find`, no DB.
+ * `allowPublicRead = true`, caches them for the TTL window, and keeps each id
+ * as the uuid string it is. Deterministic: a stub `payload.find`, no DB.
  *
  * @standard ISO/IEC-29119:2022 software-testing
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -34,8 +34,8 @@ describe('allow/public/read/tenant', () => {
   })
 
   it('returns the ids of public-read tenants', async () => {
-    const { payload } = stubPayload({ docs: [{ id: 1 }, { id: 2 }, { id: 3 }] })
-    await expect(getAllowPublicReadTenantIds(payload)).resolves.toEqual([1, 2, 3])
+    const { payload } = stubPayload({ docs: [{ id: '0f8e9d4a-6b1c-4e2f-9a3b-4c5d6e7f8091' }, { id: '1f8e9d4a-6b1c-4e2f-9a3b-4c5d6e7f8091' }] })
+    await expect(getAllowPublicReadTenantIds(payload)).resolves.toEqual(['0f8e9d4a-6b1c-4e2f-9a3b-4c5d6e7f8091', '1f8e9d4a-6b1c-4e2f-9a3b-4c5d6e7f8091'])
   })
 
   it('queries tenants filtered by allowPublicRead equals true', async () => {
@@ -49,17 +49,17 @@ describe('allow/public/read/tenant', () => {
     expect(arg.where).toEqual({ allowPublicRead: { equals: true } })
   })
 
-  it('normalizes string ids to numbers and drops non-finite ones', async () => {
-    const { payload } = stubPayload({ docs: [{ id: '4' }, { id: 5 }, { id: 'nope' }] })
-    await expect(getAllowPublicReadTenantIds(payload)).resolves.toEqual([4, 5])
+  it('keeps uuid ids as strings (a number cast made every one NaN), and drops a row with no id', async () => {
+    const { payload } = stubPayload({ docs: [{ id: 'a-uuid' }, { id: 5 }, { id: null }] })
+    await expect(getAllowPublicReadTenantIds(payload)).resolves.toEqual(['a-uuid', '5'])
   })
 
   it('caches within the TTL — second call does not re-query', async () => {
-    const { payload, find } = stubPayload({ docs: [{ id: 9 }] })
+    const { payload, find } = stubPayload({ docs: [{ id: 't9' }] })
     const first = await getAllowPublicReadTenantIds(payload)
     const second = await getAllowPublicReadTenantIds(payload)
-    expect(first).toEqual([9])
-    expect(second).toEqual([9])
+    expect(first).toEqual(['t9'])
+    expect(second).toEqual(['t9'])
     expect(find).toHaveBeenCalledTimes(1)
   })
 

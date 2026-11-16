@@ -55,6 +55,7 @@
  */
 
 import type { Payload } from 'payload'
+import { randomUuid, sha256Hex } from '@/utilities/crypto'
 import type { UuidLinkedLeaf } from '@/utilities/integrity'
 
 /**
@@ -68,6 +69,8 @@ export interface AuditEventInput {
   readonly subjectCollection: string
   readonly subjectId: string
   readonly action: string
+  /** The row's operation (the collection's select): a grant is a create, a revoke an update. */
+  readonly operation: AuditRowOperation
   readonly userId?: string
   readonly payload?: Record<string, unknown>
   /** Optional pre-existing correlation id (e.g. chain step id). */
@@ -129,6 +132,72 @@ export interface WriteAuditEventResult {
  * `correlationId` and check whether a row with that correlationId
  * already exists before calling — this helper does NOT dedupe.
  */
+/** The operations an audit-events row records (its `operation` select). */
+export type AuditRowOperation = 'create' | 'update' | 'delete' | 'login' | 'logout' | 'export' | 'import'
+
+/** One audit-events row, as the collection's schema names its fields. */
+export interface AuditRow {
+  readonly tenant: string
+  readonly eventType: string
+  readonly collectionSlug: string
+  readonly operation: AuditRowOperation
+  readonly documentId: string
+  readonly user?: string
+  readonly previousStatus?: string
+  readonly nextStatus?: string
+  readonly changeSummary?: Record<string, unknown>
+  readonly timestamp?: string
+}
+
+/**
+ * Append a row to the tenant's hash chain: `previousHash` is the tenant's latest `rowHash`, and the
+ * row's own hash covers (eventId, tenant, timestamp, eventType, collectionSlug, documentId, user,
+ * previousHash), so an insert, delete or edit anywhere in the log breaks the chain. The one writer
+ * of audit-events rows: the collection hook and `writeAuditEvent` both append through it. Throws
+ * when the row cannot be written.
+ */
+export async function appendAuditRow(payload: Payload, row: AuditRow): Promise<{ id: string; eventId: string; rowHash: string }> {
+  const eventId = randomUuid()
+  const timestamp = row.timestamp ?? new Date().toISOString()
+  const prior = await payload
+    .find({ collection: 'audit-events', where: { tenant: { equals: row.tenant } }, sort: '-timestamp', limit: 1, overrideAccess: true, depth: 0 })
+    .catch(() => ({ docs: [] as unknown[] }))
+  const previousHash = (prior.docs[0] as { rowHash?: string } | undefined)?.rowHash ?? ''
+  const rowHash = sha256Hex(
+    JSON.stringify({
+      eventId,
+      tenant: row.tenant,
+      timestamp,
+      eventType: row.eventType,
+      collectionSlug: row.collectionSlug,
+      documentId: row.documentId,
+      user: row.user ?? null,
+      previousHash,
+    }),
+  )
+  const created = (await payload.create({
+    collection: 'audit-events',
+    overrideAccess: true,
+    data: {
+      tenant: row.tenant,
+      eventId,
+      timestamp,
+      eventType: row.eventType,
+      collectionSlug: row.collectionSlug,
+      operation: row.operation,
+      documentId: row.documentId,
+      user: row.user,
+      previousStatus: row.previousStatus,
+      nextStatus: row.nextStatus,
+      changeSummary: row.changeSummary,
+      severity: 'info',
+      previousHash,
+      rowHash,
+    },
+  })) as { id: string }
+  return { id: created.id, eventId, rowHash }
+}
+
 export async function writeAuditEvent(
   ctx: AuditEventCtx,
   input: AuditEventInput,
@@ -184,30 +253,25 @@ export async function writeAuditEvent(
   // This MUST succeed — auditing tamper-sensitive operations is not
   // optional. Re-throw on failure so the caller's transaction policy
   // can revert the originating operation.
-  const row = await ctx.payload.create({
-    collection: 'audit-events' as never,
-    data: {
-      tenant: input.tenantId,
-      eventName: input.eventName,
-      subjectCollection: input.subjectCollection,
-      subjectId: input.subjectId,
+  const row = await appendAuditRow(ctx.payload, {
+    tenant: input.tenantId,
+    eventType: input.eventName,
+    collectionSlug: input.subjectCollection,
+    operation: input.operation,
+    documentId: input.subjectId,
+    user: input.userId,
+    timestamp: occurredAt,
+    changeSummary: {
       action: input.action,
-      userId: input.userId,
       correlationId: input.correlationId,
       payload: input.payload,
-      occurredAt,
-      // Slice PPPPPPPPP-cut1 — DO-chain backreference. Verifiable
-      // post-hoc by recomputing the per-tenant chain and confirming
-      // a leaf at `chainLeafUuid` exists with byte-equal payload.
+      // The Durable Object chain's backreference and the signature state at this pause point.
       chainLeafUuid: chainLeaf?.leafUuid ?? null,
       chainLinkStatus,
-      // Slice PPPPPPPPP-cont — signature payload at the stream
-      // pause point. Present when chainLinkStatus === 'sealed'.
       signatureRequired: input.signatureRequired === true,
       sealedAt: chainLinkStatus === 'sealed' ? occurredAt : null,
-    } as never,
-    overrideAccess: true,
-  }) as { id: string }
+    },
+  })
 
   return {
     id: row.id,

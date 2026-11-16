@@ -18,6 +18,7 @@ import type { UserContext, UserRole } from '@/utilities/types/auth'
 import { ACCOUNTING_WRITE_ROLES } from '@/utilities/roles/registry'
 import { getUser, getUserContext } from '@/utilities/auth/context'
 import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
+import { GLOBAL_SPINE } from '@/utilities/tenants/scope'
 import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
 
 export { superAdminOnly } from '@/access/collections/shared/superAdminOnly'
@@ -188,7 +189,8 @@ export function partyRoleAccess(
     const user = getUserContext(req)
     if (!user) return false
 
-    const tenantWhere = tenantScopeOf(req)
+    // A collection outside the tenant spine (cases) has no tenant field: its scope is the party roles alone.
+    const tenantWhere = GLOBAL_SPINE.has(collectionSlug) ? true : tenantScopeOf(req)
 
     // Capability side: an admin (or configured capability role) holds blanket
     // access — no per-document membership lookup needed.

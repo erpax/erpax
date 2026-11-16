@@ -26,24 +26,22 @@ export const controlsApplied: ReadonlyArray<Iso27002ControlId> = [
   '8.3',
 ] as const
 
-type Cached = { ids: number[]; expiresAt: number }
+type Cached = { ids: string[]; expiresAt: number }
 
 let cached: Cached | null = null
 
 /** Longer TTL ⇒ fewer D1 reads on anonymous traffic (D1 bills by rows read). */
 const TTL_MS = 300_000
 
-function normalizeTenantIds(rows: { id: unknown }[]): number[] {
-  return rows
-    .map((r) => (typeof r.id === 'number' ? r.id : Number(r.id)))
-    .filter((id) => Number.isFinite(id))
-}
+/** Tenant ids are uuids (`idType: 'uuid'`); a number cast turned every one into NaN. */
+const normalizeTenantIds = (rows: { id: unknown }[]): string[] =>
+  rows.filter((r) => typeof r.id === 'string' || typeof r.id === 'number').map((r) => String(r.id))
 
 /**
  * Tenant ids whose storefront/API may expose published content to anonymous callers.
  * Cached briefly — invalidate automatically via TTL when tenants toggle {@link Tenant.allowPublicRead}.
  */
-export async function getAllowPublicReadTenantIds(payload: Payload): Promise<number[]> {
+export async function getAllowPublicReadTenantIds(payload: Payload): Promise<string[]> {
   const now = Date.now()
   if (cached && cached.expiresAt > now) {
     return cached.ids

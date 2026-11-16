@@ -30,7 +30,7 @@
  */
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
-import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
+import { connectionAccess } from '@/access/collections/connections'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
@@ -45,7 +45,9 @@ const Connections: CollectionConfig = {
       'Directed social edge between two typeless users. The edge carries the relation (follow/friend/block…); all platforms merge onto one graph, federating in sync via ActivityPub-style events.',
     group: 'Social',
   },
-  access: accountingCollectionAccess(),
+  // An edge between two users (GLOBAL_SPINE), not a tenant record: its actors read it, its author
+  // changes it, a super-admin sees every edge.
+  access: connectionAccess,
   fields: [
     { name: 'from', type: 'relationship', relationTo: 'users', required: true, index: true,
       admin: { description: 'Actor initiating the edge (ActivityStreams `actor`).' } },
