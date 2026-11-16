@@ -701,6 +701,9 @@ src/fields/relationship/auditFields.test.ts:4: * @standard ISO/IEC-29119:2022 so
 src/fields/relationship/auditFields.ts:11: * @standard ISO-19011:2018 audit-trail
 src/fields/select/countryCodeField.ts:12: * @standard ISO-3166-1:2020 country-codes alpha-2
 src/fields/select/currencyField.ts:16: * @standard ISO-4217:2015 currency-codes
+src/fields/select/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/fields/select/test.ts:5: * @standard ISO-4217:2015 currency-codes
+src/fields/select/test.ts:6: * @standard ISO-3166-1:2020 country-codes alpha-2
 src/fields/text/naceCodeField.ts:7: * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
 src/fields/text/unitOfMeasureField.ts:13: * @standard UN/CEFACT Recommendation 20 unit-of-measure-codes
 src/fields/text/unitOfMeasureField.ts:14: * @standard EN-16931 §BT-130 invoiced-quantity-unit-of-measure
