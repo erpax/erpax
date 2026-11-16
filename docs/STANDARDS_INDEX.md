@@ -2546,9 +2546,6 @@ src/collections/currency-rates/index.ts:16: * @accounting IFRS IAS-21 effects-of
 src/collections/currency-rates/index.ts:17: * @accounting US-GAAP ASC-830 foreign-currency-matters
 src/collections/customer-segments/index.ts:10: * @accounting IFRS IFRS-15 §4 portfolio-practical-expedient
 src/collections/customer-segments/index.ts:11: * @accounting IFRS IFRS-8 §22 disclosure-of-segment-information
-src/collections/debt-schedule/index.ts:4: * @accounting IFRS-9 financial-instruments
-src/collections/debt-schedule/index.ts:5: * @accounting IAS-1 current-non-current-classification
-src/collections/debt-schedule/index.ts:6: * @accounting US-GAAP ASC-470 debt
 src/collections/depreciation-schedules/index.ts:10: * @accounting IFRS IAS-16 property-plant-and-equipment depreciation
 src/collections/depreciation-schedules/index.ts:11: * @accounting IFRS IAS-36 impairment-of-assets
 src/collections/depreciation-schedules/index.ts:12: * @accounting US-GAAP ASC-360 property-plant-and-equipment
@@ -2859,6 +2856,9 @@ src/utilities/en/16931/types/index.ts:17: * @accounting US-GAAP ASC-606 revenue-
 src/utilities/fiscal/period/resolver/span/index.ts:10: * @accounting IAS-1 §36 reporting period
 src/utilities/gl/account/resolver/index.ts:25: * @accounting IFRS IAS-1 chart-of-accounts
 src/utilities/gl/account/resolver/index.ts:26: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
+src/utilities/governed/index.ts:871: * @accounting IFRS-9 financial-instruments
+src/utilities/governed/index.ts:872: * @accounting IAS-1 current-non-current-classification
+src/utilities/governed/index.ts:873: * @accounting US-GAAP ASC-470 debt
 src/utilities/invoices/hooks/gl-hooks-emit-events.test.ts:14: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/utilities/invoices/hooks/gl-hooks-emit-events.test.ts:15: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/utilities/invoices/hooks/gl-hooks-emit-events.test.ts:16: * @accounting IFRS IAS-7 statement-of-cash-flows
@@ -3070,7 +3070,6 @@ src/collections/currency-rates/index.ts:19: * @security ISO-27001 A.5.23 cloud-s
 src/collections/customer-segments/index.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/customs-declarations/index.ts:20: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/data-subject-requests/index.ts:17: * @security ISO-27001 A.5.34 privacy-and-pii
-src/collections/debt-schedule/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/deferred-tax-items/index.ts:21: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/disclosure-checklists/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/employees/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation

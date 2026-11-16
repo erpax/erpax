@@ -46,7 +46,7 @@ describe('governed documents on pages — never public, read and written by the 
     expect(await mayWrite(req(superAdmin), STD, 't1', none)).toBe(true)
     const write = pageWrite(() => ({ tenant: { equals: 't1' } }), none)
     await expect(write({ req: req(tenantAdmin), data: { documentType: STD, tenant: 't1' } } as never)).resolves.toBe(false)
-    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline', 'processing-activity', 'internal-audit-function'] } }] })
+    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline', 'processing-activity', 'internal-audit-function', 'debt-instrument'] } }] })
   })
 
   it('a type names what it requires', async () => {
@@ -199,5 +199,15 @@ describe('governed documents on pages — never public, read and written by the 
     expect(documentError(IC, { effectiveDate: '2026-01-01', details: [block({ profitabilityGroup: 'onerous', csm: 0 })] })).toMatch(/onerous group recognises its loss/)
     expect(documentError(IC, { effectiveDate: '2026-01-01', details: [block({ profitabilityGroup: 'onerous', csm: 0, lossComponent: 1200 })] })).toBe(true)
     expect(documentError(IC, { effectiveDate: '2026-01-01', details: [block({ coverageEndDate: '2025-12-31' })] })).toMatch(/Coverage ends after/)
+  })
+
+  it('a debt instrument names its id and issuance date, matures after it is issued, and is in breach when a covenant is', () => {
+    const DI = 'debt-instrument'
+    const block = (extra: object = {}) => ({ blockType: DI, entity: 'e1', debtType: 'bank-term-loan', debtStatus: 'performing', lenderName: 'UniCredit', principalAmount: 1, outstandingBalance: 1, currency: 'EUR', maturityDate: '2031-06-30', ...extra })
+    expect(documentError(DI, { details: [block()] })).toMatch(/names its code, effectiveDate/)
+    expect(documentError(DI, { code: 'TL-2026-01', effectiveDate: '2026-06-30', details: [block()] })).toBe(true)
+    expect(documentError(DI, { code: 'TL-2026-01', effectiveDate: '2026-06-30', details: [block({ maturityDate: '2026-06-30' })] })).toMatch(/matures after it is issued/)
+    expect(documentError(DI, { code: 'TL-2026-01', effectiveDate: '2026-06-30', details: [block({ financialCovenants: [{ covenantName: 'Net debt / EBITDA', threshold: '≤ 3.0x', complianceStatus: 'breach' }] })] })).toMatch(/puts the instrument in breach \(Net debt \/ EBITDA/)
+    expect(documentError(DI, { code: 'TL-2026-01', effectiveDate: '2026-06-30', details: [block({ debtStatus: 'breach-cure', financialCovenants: [{ covenantName: 'Net debt / EBITDA', threshold: '≤ 3.0x', complianceStatus: 'breach' }] })] })).toBe(true)
   })
 })
