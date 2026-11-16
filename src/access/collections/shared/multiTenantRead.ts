@@ -16,7 +16,9 @@
 import type { Access, PayloadRequest, Where } from 'payload'
 import type { UserContext, UserRole } from '@/utilities/types/auth'
 import { ACCOUNTING_WRITE_ROLES } from '@/utilities/roles/registry'
-import { getUserContext } from '@/utilities/auth/context'
+import { getUser, getUserContext } from '@/utilities/auth/context'
+import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
+import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
 
 export { superAdminOnly } from '@/access/collections/shared/superAdminOnly'
 // The identity readers live in the leaf `auth/context` so the subscription gate can read WHO is
@@ -46,11 +48,27 @@ export function hasRole(user: UserContext | null, ...requiredRoles: UserRole[]):
  * Multi-tenant read access (everyone can read their tenant's data)
  * PATTERN: Applied to all collections for read access
  */
+/**
+ * The tenants a request reaches, by the multi-tenant plugin's own rule (`userHasAccessToAllTenants` in
+ * src/payload.config.ts): a super-admin every tenant, anyone else every tenant they belong to.
+ *
+ * It was `tenant equals user.tenant`, the user's FIRST tenant: a super-admin (who has no tenant) could
+ * not read what it had just created, and a member of two tenants saw only one.
+ */
+export const tenantScopeOf = (req: PayloadRequest): Where | true => {
+  const user = getUser(req)
+  if (isSuperAdmin(user)) return true
+  return { tenant: { in: getUserTenantIDs(user) } }
+}
+
+/** A constraint within the request's tenants. */
+const within = (scope: Where | true, where: Where): Where => (scope === true ? where : { and: [scope, where] })
+
 export const multiTenantRead: Access = async ({ req }) => {
   const user = getUserContext(req)
   if (!user) return false
 
-  return { tenant: { equals: user.tenant } }
+  return tenantScopeOf(req)
 }
 
 /**
@@ -73,7 +91,7 @@ export const adminOrAccountant: Access = async ({ req }) => {
   if (!user) return false
   if (!hasRole(user, ...ACCOUNTING_WRITE_ROLES)) return false
 
-  return { tenant: { equals: user.tenant } }
+  return tenantScopeOf(req)
 }
 
 /**
@@ -94,7 +112,7 @@ export const tenantAdmin: Access = async ({ req }) => {
   if (!user) return false
   if (!hasRole(user, 'admin')) return false
 
-  return { tenant: { equals: user.tenant } }
+  return tenantScopeOf(req)
 }
 
 /**
@@ -120,13 +138,8 @@ export function scopedAccess(additionalWhere?: Where): Access {
     const user = getUserContext(req)
     if (!user) return false
 
-    const query: Where = { tenant: { equals: user.tenant } }
-
-    if (additionalWhere) {
-      return { and: [query, additionalWhere] }
-    }
-
-    return query
+    const query = tenantScopeOf(req)
+    return additionalWhere ? within(query, additionalWhere) : query
   }
 }
 
@@ -140,7 +153,7 @@ export function roleScopedAccess(...allowedRoles: UserRole[]): Access {
     if (!user) return false
     if (!hasRole(user, ...allowedRoles)) return false
 
-    return { tenant: { equals: user.tenant } }
+    return tenantScopeOf(req)
   }
 }
 
@@ -175,7 +188,7 @@ export function partyRoleAccess(
     const user = getUserContext(req)
     if (!user) return false
 
-    const tenantWhere: Where = { tenant: { equals: user.tenant } }
+    const tenantWhere = tenantScopeOf(req)
 
     // Capability side: an admin (or configured capability role) holds blanket
     // access — no per-document membership lookup needed.
@@ -209,7 +222,7 @@ export function partyRoleAccess(
       if (id != null) memberOf.push(String(id))
     }
 
-    return { and: [tenantWhere, { id: { in: memberOf } }] }
+    return within(tenantWhere, { id: { in: memberOf } })
   }
 }
 

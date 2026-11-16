@@ -11,6 +11,8 @@ import {
   accountingCollectionAccess,
   tenantMasterDataAccess,
   tenantAdminWriteAccess,
+  tenantScopeOf,
+  multiTenantRead,
 } from '@/access/collections/shared/multiTenantRead'
 
 // Minimal req builder — no Payload boot required.
@@ -110,7 +112,23 @@ describe('auth', () => {
     const user = makeUser({ id: '3', tenants: [{ tenant: 'corp' }] })
     const fn = scopedAccess()
     const result = await fn({ req: makeReq(user) } as never)
-    expect(result).toEqual({ tenant: { equals: 'corp' } })
+    expect(result).toEqual({ tenant: { in: ['corp'] } })
+  })
+
+  // The multi-tenant plugin's rule (userHasAccessToAllTenants): a super-admin reaches every tenant, a member all of theirs.
+  it('scopedAccess reaches every tenant a member belongs to, not only the first', async () => {
+    const user = makeUser({ tenants: [{ tenant: 't1' }, { tenant: 't2' }] })
+    expect(await scopedAccess()({ req: makeReq(user) } as never)).toEqual({ tenant: { in: ['t1', 't2'] } })
+    expect(await tenantScopeOf(makeReq(user) as never)).toEqual({ tenant: { in: ['t1', 't2'] } })
+  })
+
+  it('a super-admin (admin with no tenant) reaches every tenant; a user with no tenant reaches none', async () => {
+    const superAdmin = makeUser({ roles: ['admin'], tenants: [] })
+    expect(await scopedAccess()({ req: makeReq(superAdmin) } as never)).toBe(true)
+    expect(await scopedAccess({ status: { equals: 'active' } })({ req: makeReq(superAdmin) } as never)).toEqual({ status: { equals: 'active' } })
+    expect(await roleScopedAccess('admin' as never)({ req: makeReq(superAdmin) } as never)).toBe(true)
+    expect(await multiTenantRead({ req: makeReq(superAdmin) } as never)).toBe(true)
+    expect(await scopedAccess()({ req: makeReq(makeUser({ tenants: [] })) } as never)).toEqual({ tenant: { in: [] } })
   })
 
   it('scopedAccess returns false for unauthenticated request', async () => {
@@ -123,7 +141,7 @@ describe('auth', () => {
     const fn = scopedAccess({ status: { equals: 'active' } })
     const result = await fn({ req: makeReq(user) } as never)
     expect(result).toEqual({
-      and: [{ tenant: { equals: 'co' } }, { status: { equals: 'active' } }],
+      and: [{ tenant: { in: ['co'] } }, { status: { equals: 'active' } }],
     })
   })
 
@@ -186,18 +204,18 @@ describe('partyRoleAccess — membership is read from the user\'s own role assig
   it('a party sees exactly the documents it holds a party role on, inside its tenant', async () => {
     const reads: Read[] = []
     expect(await access({ req: reqFor(['user'], held, reads) } as unknown as Args)).toEqual({
-      and: [{ tenant: { equals: 't1' } }, { id: { in: ['c1', 'c2'] } }],
+      and: [{ tenant: { in: ['t1'] } }, { id: { in: ['c1', 'c2'] } }],
     })
     // one read of the user, bounded to the assignments, past the super-admin-only field access
     expect(reads).toHaveLength(1)
     expect(reads[0]).toMatchObject({ collection: 'users', id: 'u1', depth: 1, select: { roleAssignments: true }, overrideAccess: true })
   })
   it('a user with no assignments sees nothing (an empty id set), never the whole tenant', async () => {
-    expect(await access({ req: reqFor(['user'], [], []) } as unknown as Args)).toEqual({ and: [{ tenant: { equals: 't1' } }, { id: { in: [] } }] })
+    expect(await access({ req: reqFor(['user'], [], []) } as unknown as Args)).toEqual({ and: [{ tenant: { in: ['t1'] } }, { id: { in: [] } }] })
   })
   it('an admin holds the tenant without any membership lookup', async () => {
     const reads: Read[] = []
-    expect(await access({ req: reqFor(['admin'], held, reads) } as unknown as Args)).toEqual({ tenant: { equals: 't1' } })
+    expect(await access({ req: reqFor(['admin'], held, reads) } as unknown as Args)).toEqual({ tenant: { in: ['t1'] } })
     expect(reads).toHaveLength(0)
   })
   it('no user, no access', async () => {

@@ -18,7 +18,7 @@ src/access/collections/shared/createMembershipAdminMutateAccess.ts:17: * @standa
 src/access/collections/shared/isAdmin.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/collections/shared/isDocumentOwner.ts:7: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/collections/shared/multiTenantRead.ts:11: * @standard OWASP-ASVS V4 access-control
-src/access/collections/shared/multiTenantRead.ts:165: * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
+src/access/collections/shared/multiTenantRead.ts:178: * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
 src/access/collections/shared/multiTenantRead.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/collections/shared/multiTenantRead.ts:5: * @standard NIST SP-800-162 attribute-based-access-control
 src/access/collections/shared/partyAccess.ts:10: * @standard NIST INCITS-359-2012 §6.1 object-scoped role assignment
@@ -2970,7 +2970,7 @@ src/access/collections/shared/isAdmin.ts:8: * @security ISO-27002 §5.15 access-
 src/access/collections/shared/isDocumentOwner.ts:8: * @security ISO-27001 A.5.18 access-rights
 src/access/collections/shared/isDocumentOwner.ts:9: * @security ISO-27002 §5.15 access-control
 src/access/collections/shared/multiTenantRead.ts:10: * @security ISO-27002 §5.3 segregation-of-duties
-src/access/collections/shared/multiTenantRead.ts:166: * @security ISO-27001 A.5.15 access-control
+src/access/collections/shared/multiTenantRead.ts:179: * @security ISO-27001 A.5.15 access-control
 src/access/collections/shared/multiTenantRead.ts:6: * @security ISO-27001 A.5.15 access-control
 src/access/collections/shared/multiTenantRead.ts:7: * @security ISO-27001 A.5.18 access-rights
 src/access/collections/shared/multiTenantRead.ts:8: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
