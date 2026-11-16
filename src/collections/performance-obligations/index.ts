@@ -267,7 +267,6 @@ const PerformanceObligations: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('performance-obligations', { beforeChange: [autoSetTimestamp('satisfiedAt', (d) => (d as { status?: string }).status === 'satisfied')] }),
-  timestamps: true,
 }
 
 export default PerformanceObligations

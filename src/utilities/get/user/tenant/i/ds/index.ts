@@ -10,7 +10,7 @@
  */
 
 import type { Tenant, User } from '@/utilities/types'
-import { extractID } from '@/utilities/extract/id'
+import { extractID } from 'payload/shared'
 
 /**
  * Returns array of all tenant IDs assigned to a user.

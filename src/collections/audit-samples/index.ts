@@ -15,7 +15,6 @@ export const AuditSamples: CollectionConfig = {
   admin: { useAsTitle: 'sampleId', defaultColumns: ['tenant', 'controlTest', 'sampleItemType', 'testResult', 'isActive'], group: 'Control & Testing' },
   access: { read: authenticated, create: authenticated, update: authenticated, delete: adminOnly },
   hooks: { afterChange: [auditTrailAfterChange('auditSamples')] },
-  timestamps: true,
   fields: [
     { name: 'sampleId', type: 'text', required: true, unique: true, index: true },
     { name: 'controlTest', type: 'relationship', relationTo: 'control-tests', required: true, index: true },

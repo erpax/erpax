@@ -130,7 +130,6 @@ const JobPositions: CollectionConfig = {
   // afterChange arms the auto-train loop: an incumbent's gap vs this role is
   // priced on the decompression curve and broadcast as a training plan ([[train]]).
   hooks: standardCollectionHooks('job-positions'),
-  timestamps: true,
 }
 
 export default JobPositions

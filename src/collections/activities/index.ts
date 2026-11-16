@@ -104,7 +104,6 @@ const Activities: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('activities'),
-  timestamps: true,
 }
 
 export default Activities

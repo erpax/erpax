@@ -93,7 +93,6 @@ const ConsignmentSales: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('consignment-sales'),
-  timestamps: true,
 }
 
 export default ConsignmentSales

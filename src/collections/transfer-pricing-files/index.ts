@@ -150,7 +150,6 @@ const TransferPricingFiles: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('transfer-pricing-files'),
-  timestamps: true,
 }
 
 export default TransferPricingFiles

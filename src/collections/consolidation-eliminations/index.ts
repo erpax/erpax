@@ -93,7 +93,6 @@ const ConsolidationEliminations: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('consolidation-eliminations'),
-  timestamps: true,
 }
 
 export default ConsolidationEliminations

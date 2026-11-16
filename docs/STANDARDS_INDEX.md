@@ -29,7 +29,6 @@ src/access/collections/users/createAccess.ts:12: * @standard NIST INCITS-359-201
 src/access/collections/users/readAccess.ts:16: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/collections/users/updateAndDeleteAccess.ts:11: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/fields/shared/adminOnlyFieldAccess.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
-src/access/fields/shared/customerOnlyFieldAccess.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/fields/shared/isCustomer.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/index.ts:19: * @standard NIST SP 800-162 ABAC
 src/access/index.ts:20: * @standard ISO 27001 A.5.10 access-control-policy
@@ -214,8 +213,8 @@ src/collections/carriers/index.ts:13: * @standard IMDG-Code maritime-dangerous-g
 src/collections/carriers/index.ts:14: * @standard UPU-S10 universal-postal-union shipment-identifier
 src/collections/cases/index.ts:17: * @standard UN-COFOG-03 public-order-and-safety law-courts
 src/collections/cases/index.ts:18: * @standard ISO-19011:2018 ISA-500 evidence chain-of-custody append-only
-src/collections/categories/index.ts:14: * @standard schema.org Category
-src/collections/categories/index.ts:15: * @standard schema.org DefinedTerm taxonomic-term
+src/collections/categories/index.ts:13: * @standard schema.org Category
+src/collections/categories/index.ts:14: * @standard schema.org DefinedTerm taxonomic-term
 src/collections/chat/index.ts:15: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
 src/collections/chat/index.ts:16: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 src/collections/chat/index.ts:17: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
@@ -445,10 +444,10 @@ src/collections/maintenance-work-orders/index.ts:16: * @standard EN-13306:2017 m
 src/collections/maintenance-work-orders/index.ts:17: * @standard ISO-8601-1:2019 date-time scheduled-actual
 src/collections/management-assessment-icfr/index.ts:5: * @standard COSO-2013 internal-control-integrated-framework
 src/collections/management-assessment-icfr/index.ts:6: * @standard PCAOB AS 2201 ICFR
-src/collections/media/index.ts:18: * @standard ISO/IEC-23008 high-efficiency-coding
-src/collections/media/index.ts:19: * @standard ISO/IEC-10918 jpeg
-src/collections/media/index.ts:20: * @standard W3C PNG image
-src/collections/media/index.ts:21: * @standard W3C SVG
+src/collections/media/index.ts:17: * @standard ISO/IEC-23008 high-efficiency-coding
+src/collections/media/index.ts:18: * @standard ISO/IEC-10918 jpeg
+src/collections/media/index.ts:19: * @standard W3C PNG image
+src/collections/media/index.ts:20: * @standard W3C SVG
 src/collections/memories/index.ts:30: * @standard ISO/IEC 25010:2023 §5.7 modifiability — persistent memory layer
 src/collections/memories/index.ts:31: * @standard ISO 19011:2018 §6.4.6 audit-evidence (memory history audit-trailed)
 src/collections/messages/index.ts:11: * @standard ISO-8601-1:2019 date-time sent-read-timestamps
@@ -880,14 +879,13 @@ src/packages/admin/providers/index.ts:24: * @standard ISO/IEC-25010:2011 §4.2.3
 src/packages/admin/providers/scim/index.ts:9: * @standard RFC-7643 §3.1 common attributes · §4.1 User · §4.2 Group · §4.3 Enterprise User
 src/packages/admin/providers/settings.ts:13: * @standard RFC-6749 OAuth 2.0 client registration (client id and secret)
 src/packages/engine/index.ts:28: * @standard ISO/IEC-25010:2011 §4.2.7 modularity — a change to one app touches that app's plugin
-src/payload.config.ts:583:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:601:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:602:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:624:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:548:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:566:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:567:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:589:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/plugins/handles/index.ts:40: * @standard RFC-9562 uuid · RFC-4648 §5 base64url · RFC-9110 §15.5.5 404
 src/plugins/naming/index.ts:20: * @standard RFC 9562 §5.8 name-based UUID (the digest source)
 src/plugins/taggable/index.ts:21: * @standard RFC-4122 §4.3 uuid
-src/plugins/versions/index.ts:29: * @standard ISO 19011:2018 §6.4.6 audit-evidence (version history is the trail)
 src/seed/content/index.ts:21: * @standard ISO-15836-1:2017 dublin-core title description
 src/seed/erpax-product-pages.ts:31: * @standard schema.org Product
 src/seed/erpax-product-pages.ts:32: * @standard schema.org WebSite breadcrumb
@@ -958,7 +956,7 @@ src/utilities/business/chain/types.ts:20: * @standard ISO/IEC 25010:2023 functio
 src/utilities/closing/period/checker/index.ts:15: * @standard IAS-34:2023 (period structure, interim closing requirements)
 src/utilities/closing/period/checker/index.ts:16: * @standard SAF-T:3.0.2 (period coding, regulatory audit trail)
 src/utilities/cmspage/access/superAdminOrTenantAdmin.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control
-src/utilities/cmspage/hooks/beforeChange.ts:8: * @standard ISO-8601-1:2019 date-time published-at
+src/utilities/cmspage/hooks/beforeChange.ts:7: * @standard ISO-8601-1:2019 date-time published-at
 src/utilities/coherence/index.ts:19: * @standard DSP magnitude-spectrum (DFT) + the 0.7..4 Hz human-pulse band
 src/utilities/color/index.ts:9: * @standard A432 tuning; the 7-chakra visible spectrum (Do..Ti / root..crown)
 src/utilities/config/address/formats/index.ts:23: * @standard ISO-19160-4:2017 addressing components-and-conceptual-model
@@ -1823,8 +1821,8 @@ src/blocks/form/refactored-utilities.test.ts:6: * @rfc 3986 uniform-resource-ide
 src/blocks/form/refactored-utilities.test.ts:7: * @rfc 9110 http-semantics
 src/blocks/media/block/config.ts:7: * @rfc 6838 mime-type
 src/collections/audit-events/index.ts:44: * @rfc 5424 §6.2.1 syslog-severity-levels
-src/collections/categories/index.ts:13: * @rfc 3986 uri slug-to-url
-src/collections/media/index.ts:17: * @rfc 6838 mime-type media-type
+src/collections/categories/index.ts:12: * @rfc 3986 uri slug-to-url
+src/collections/media/index.ts:16: * @rfc 6838 mime-type media-type
 src/collections/pages/index.ts:26: * @rfc 3986 uri slug-to-url
 src/collections/posts/index.ts:36: * @rfc 3986 uri slug-to-url
 src/collections/transaction-failures/index.ts:13: * @rfc 7807 problem-details-for-http-apis status-code
@@ -1844,7 +1842,6 @@ src/components/link/group/index.ts:4: * @rfc 3986 uniform-resource-identifier
 src/components/live/preview/listener/index.tsx:6: * @rfc 6455 the-websocket-protocol
 src/components/live/preview/listener/index.tsx:7: * @rfc 9110 http-semantics
 src/components/media/Component.tsx:6: * @rfc 6838 mime-type
-src/components/media/hooks/beforeChange.ts:6: * @rfc 6838 mime-type media-type
 src/components/media/products/hooks/beforeChange.ts:10: * @rfc 6838 mime-type media-type
 src/components/media/products/hooks/beforeChange.ts:9: * @rfc 3986 uri remote-media-source
 src/components/media/products/index.ts:35: * @rfc 3986 uri slug-to-url
@@ -1894,7 +1891,7 @@ src/utilities/billing/stripeWebhookHandlers.ts:17: * @rfc 2104 hmac signature-ve
 src/utilities/billing/stripeWebhookHandlers.ts:37: * @rfc 9110 http-semantics
 src/utilities/billing/test.ts:6: * @rfc 9110 http-semantics webhook-delivery
 src/utilities/billing/test.ts:7: * @rfc 8615 well-known-uri webhook-discovery
-src/utilities/cmspage/hooks/beforeChange.ts:10: * @rfc 3986 uri remote-media-source
+src/utilities/cmspage/hooks/beforeChange.ts:8: * @rfc 3986 uri remote-media-source
 src/utilities/country/client/berlin-group-psd2.ts:16: * @rfc 6749 oauth-2.0
 src/utilities/country/client/berlin-group-psd2.ts:17: * @rfc 7519 jwt
 src/utilities/crypto/index.ts:11: * @rfc 9562 §5.8 uuidv8 content-uuid · §4.1 variant
@@ -1939,7 +1936,7 @@ src/utilities/nist/sp/800/108/kdf.ts:12: * @rfc 2104 hmac
 src/utilities/nist/sp/800/108/kdf.ts:13: * @rfc 5869 hkdf hmac-based-key-derivation
 src/utilities/nist/sp/800/38/aes-gcm.test.ts:7: * @rfc 5116 authenticated-encryption-with-associated-data
 src/utilities/nist/sp/800/38/aes-gcm.ts:13: * @rfc 5116 authenticated-encryption-with-associated-data
-src/utilities/posts/hooks/beforeChange.ts:8: * @rfc 3986 uri remote-media-source
+src/utilities/posts/hooks/beforeChange.ts:6: * @rfc 3986 uri remote-media-source
 src/utilities/remote/media/import/index.ts:5: * @rfc 3986 uniform-resource-identifier remote-source
 src/utilities/remote/media/import/index.ts:6: * @rfc 6838 mime-type media-type
 src/utilities/remote/media/import/index.ts:7: * @rfc 9110 http-semantics fetch
@@ -2031,7 +2028,6 @@ src/access/collections/users/createAccess.ts:16: * @compliance SOC-2 CC6.2 acces
 src/access/collections/users/readAccess.ts:20: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 src/access/collections/users/readAccess.ts:21: * @compliance SOC-2 CC6.1 logical-access-controls
 src/access/collections/users/updateAndDeleteAccess.ts:15: * @compliance SOC-2 CC6.3 access-removal
-src/access/fields/shared/customerOnlyFieldAccess.ts:6: * @compliance GDPR Art.5(1)(c) data-minimization
 src/app/(api)/api/subscriptions/create/route.ts:10: * @compliance PSD2 EU-2015/2366 strong-customer-authentication
 src/app/(api)/api/subscriptions/create/route.ts:9: * @compliance PCI-DSS-4.0 §3.2 tokenized-card-data
 src/app/(api)/api/webhooks/stripe/route.ts:8: * @compliance PCI-DSS-4.0 §3.6 strong-cryptography
@@ -2197,8 +2193,8 @@ src/collections/lot-work-phases/index.ts:28: * @compliance SOX §404 internal-co
 src/collections/lots/index.ts:30: * @compliance SOX §404 internal-controls production-control
 src/collections/maintenance-work-orders/index.ts:22: * @compliance SOX §404 internal-controls capex-vs-opex-classification
 src/collections/management-assessment-icfr/index.ts:4: * @compliance SOX §404(a) management-assessment-ICFR
-src/collections/media/index.ts:22: * @compliance GDPR Art.5(1)(c) data-minimization no-pii-in-filenames
-src/collections/media/index.ts:23: * @compliance GDPR Art.32 security-of-processing
+src/collections/media/index.ts:21: * @compliance GDPR Art.5(1)(c) data-minimization no-pii-in-filenames
+src/collections/media/index.ts:22: * @compliance GDPR Art.32 security-of-processing
 src/collections/messages/index.ts:14: * @compliance GDPR Art 5(1)(e) storage-limitation retention
 src/collections/mineral-resource-assets/index.ts:19: * @compliance SOX §404 internal-controls
 src/collections/pages/index.ts:31: * @compliance WCAG-2.1 level-AA accessibility
@@ -2311,7 +2307,6 @@ src/components/link/cms.tsx:9: * @compliance WCAG-2.1 §2.4.9 link-purpose-link-
 src/components/link/field/index.ts:8: * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
 src/components/link/group/index.ts:6: * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
 src/components/media/Component.tsx:9: * @compliance WCAG-2.1 §1.1.1 non-text-content alt-text
-src/components/media/hooks/beforeChange.ts:8: * @compliance GDPR Art.5(1)(c) data-minimization
 src/components/media/products/index.ts:36: * @compliance WCAG-2.1 level-AA accessibility
 src/components/page/range/index.tsx:8: * @compliance WCAG-2.1 §1.3.1 info-and-relationships
 src/components/pagination/index.tsx:9: * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
@@ -2338,8 +2333,6 @@ src/hooks/collections/shared/autoPopulateTenant.ts:12: * @compliance SOC-2 CC4.1
 src/hooks/collections/shared/autoSetTimestamp.ts:9: * @compliance SOX §404 internal-controls verifiable-event-time
 src/hooks/collections/shared/bankStatementImportedHook.ts:28: * @compliance SOX §404 internal-controls cash-management
 src/hooks/collections/shared/depreciationSchedulePostingHook.ts:25: * @compliance SOX §404 internal-controls capital-asset-register
-src/hooks/collections/shared/enforceDocumentTenantForUser.ts:18: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
-src/hooks/collections/shared/enforceDocumentTenantForUser.ts:19: * @compliance SOC-2 CC6.1 logical-access-controls
 src/hooks/collections/shared/enforceSegregationOfDuties.ts:10: * @compliance SOX §404 internal-controls four-eyes-principle
 src/hooks/collections/shared/enforceSegregationOfDuties.ts:11: * @compliance SOC-2 CC6.3 logical-access-controls
 src/hooks/collections/shared/inventoryMovementPostingHook.ts:22: * @compliance SOX §404 internal-controls cycle-count
@@ -2358,7 +2351,6 @@ src/hooks/collections/utility/periodLock.ts:8: * @compliance SOX §404 period-cl
 src/jobs/bnb/rates/sync/index.ts:22: * @compliance SOX §404 internal-controls fx-revaluation-evidence
 src/jobs/dunning/job/index.ts:18: * @compliance SOX §404 internal-controls
 src/jobs/dunning/job/index.ts:19: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
-src/plugins/versions/index.ts:30: * @compliance SOX §404 internal-controls record-retention
 src/seed/erpax-product-pages.ts:34: * @compliance WCAG-2.1 level-AA accessible-marketing-pages
 src/seed/etrima/index.ts:19: * @compliance GDPR Art.5(1)(c) data-minimisation — an employee is exported as number, name and hire date only
 src/utilities/accounting/debit/index.ts:15: * @compliance SOX §404 internal-controls
@@ -2831,9 +2823,9 @@ src/jobs/dunning/job/index.ts:11: * @accounting IFRS IFRS-9 expected-credit-loss
 src/jobs/dunning/job/index.ts:12: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunning/job/index.ts:13: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunning/job/index.ts:14: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:581:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:582:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:603:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:546:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:547:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:568:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/utilities/accounting/analysis/index.ts:4: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/utilities/accounting/analysis/index.ts:5: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/utilities/accounting/analysis/index.ts:6: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
@@ -3015,7 +3007,6 @@ src/access/collections/users/updateAndDeleteAccess.ts:13: * @security ISO-27002 
 src/access/collections/users/updateAndDeleteAccess.ts:14: * @security ISO-27002 §5.3 segregation-of-duties
 src/access/fields/shared/adminOnlyFieldAccess.ts:5: * @security ISO-27001 A.5.18 access-rights
 src/access/fields/shared/adminOnlyFieldAccess.ts:6: * @security ISO-27002 §5.15 access-control
-src/access/fields/shared/customerOnlyFieldAccess.ts:5: * @security ISO-27002 §5.15 access-control
 src/access/fields/shared/isCustomer.ts:7: * @security ISO-27002 §5.15 access-control
 src/app/(api)/api/subscriptions/create/route.ts:11: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/app/(api)/api/webhooks/stripe/route.ts:10: * @security ISO-27001 A.5.17 authentication-information webhook-secret
@@ -3219,7 +3210,6 @@ src/components/ecommerce/stripe/tenantStripeWebhook.ts:10: * @security ISO-27001
 src/components/ecommerce/stripe/tenantStripeWebhook.ts:11: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/components/ecommerce/stripe/tenantStripeWebhook.ts:12: * @security ISO-27002 §8.24 use-of-cryptography
 src/components/ecommerce/transactions/index.ts:32: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/components/media/hooks/beforeChange.ts:7: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
 src/components/payload/sdk/index.ts:9: * @security ISO-27002 §8.5 secure-authentication
 src/fields/relationship/auditFields.ts:12: * @security ISO-27002 §5.3 segregation-of-duties approver-visibility
 src/globals/providers/config.ts:5: * @security ISO-27001 A.5.17 authentication-information · A.5.15 access-control
@@ -3230,9 +3220,6 @@ src/hooks/collections/roles/validateRoleDefinition.ts:11: * @security ISO-27002 
 src/hooks/collections/shared/autoPopulateCreatedBy.ts:10: * @security ISO-27002 §5.15 access-control
 src/hooks/collections/shared/autoPopulateTenant.ts:10: * @security ISO-27002 §5.15 access-control
 src/hooks/collections/shared/autoPopulateTenant.ts:9: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation auto-populate-tenant
-src/hooks/collections/shared/enforceDocumentTenantForUser.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/hooks/collections/shared/enforceDocumentTenantForUser.ts:16: * @security ISO-27002 §5.15 access-control
-src/hooks/collections/shared/enforceDocumentTenantForUser.ts:17: * @security ISO-27002 §8.3 information-access-restriction
 src/hooks/collections/shared/enforceSegregationOfDuties.ts:9: * @security ISO-27002 §5.3 segregation-of-duties
 src/hooks/collections/shared/payrollDisbursementHook.ts:34: * @security ISO-27002 §5.3 segregation-of-duties treasury-preparer
 src/hooks/collections/shared/payrollRunPostingHook.ts:50: * @security ISO-27002 §5.3 segregation-of-duties
@@ -3272,10 +3259,8 @@ src/utilities/billing/stripeWebhookHandlers.test.ts:12: * @security ISO-27001 A.
 src/utilities/billing/stripeWebhookHandlers.ts:24: * @security ISO-27001 A.5.14 information-transfer
 src/utilities/billing/stripeWebhookHandlers.ts:25: * @security ISO-27002 §8.16 monitoring-activities
 src/utilities/billing/test.ts:12: * @security ISO-27001 A.5.17 authentication-information webhook-signing-secret
-src/utilities/categories/hooks/beforeChange.ts:6: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
 src/utilities/cmspage/access/superAdminOrTenantAdmin.ts:7: * @security ISO-27001 A.5.18 access-rights
 src/utilities/cmspage/access/superAdminOrTenantAdmin.ts:8: * @security ISO-27002 §5.15 access-control
-src/utilities/cmspage/hooks/beforeChange.ts:9: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
 src/utilities/country/client/berlin-group-psd2.ts:19: * @security ISO-27001 A.5.16 identity-management
 src/utilities/country/client/berlin-group-psd2.ts:20: * @security ISO-27001 A.5.17 authentication-information
 src/utilities/country/client/bg-nap-mtls.ts:16: * @security ISO-27001 A.5.16 identity-management
@@ -3319,7 +3304,6 @@ src/utilities/nist/sp/800/38/aes-gcm.ts:15: * @security ISO-27002 §8.24 use-of-
 src/utilities/notification/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/utilities/party/roles/index.ts:15: * @security ISO-27001 A.5.15 access-control · A.5.18 access-rights
 src/utilities/party/workflow.service.ts:8: * @security ISO-27002 §5.3 segregation-of-duties
-src/utilities/posts/hooks/beforeChange.ts:7: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
 src/utilities/remote/media/import/index.ts:11: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/utilities/rfc/3986/generate-preview-path.test.ts:8: * @security ISO-27002 §5.15 access-control preview-secret
 src/utilities/rfc/3986/generate-preview-path.ts:7: * @security ISO-27002 §5.15 access-control preview-secret
@@ -3537,7 +3521,6 @@ src/components/ecommerce/product/validation/index.ts:8: * @audit ISO-19011:2018 
 src/components/ecommerce/stripe/tenantConfirmOrder.ts:14: * @audit ISO-19011:2018 audit-trail
 src/components/ecommerce/stripe/tenantStripeWebhook.ts:13: * @audit ISO-19011:2018 audit-trail
 src/components/ecommerce/transactions/index.ts:31: * @audit ISO-19011:2018 audit-trail
-src/components/media/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/components/media/products/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/hooks/collections/business-chain/wireChainProducersFor.ts:20: * @audit ISO 19011:2018 §6.4.6 producer→event traceability via BUSINESS_CHAINS
 src/hooks/collections/cmspage/populatePublishedAt.ts:5: * @audit ISO-19011:2018 audit-trail publication-timestamp
@@ -3559,7 +3542,6 @@ src/hooks/collections/shared/autoPopulateTenant.ts:11: * @audit ISO-19011:2018 a
 src/hooks/collections/shared/autoSetTimestamp.ts:8: * @audit ISO-19011:2018 audit-trail status-transition-timestamp
 src/hooks/collections/shared/bankStatementImportedHook.ts:27: * @audit ISO-19011:2018 audit-trail bank-statement-import
 src/hooks/collections/shared/depreciationSchedulePostingHook.ts:24: * @audit ISO-19011:2018 audit-trail period-expense
-src/hooks/collections/shared/enforceDocumentTenantForUser.ts:20: * @audit ISO-19011:2018 audit-trail
 src/hooks/collections/shared/enforceSegregationOfDuties.ts:12: * @audit ISO-19011:2018 audit-trail
 src/hooks/collections/shared/inventoryMovementPostingHook.ts:21: * @audit ISO-19011:2018 audit-trail stock-ledger-evidence
 src/hooks/collections/shared/payrollDisbursementHook.test.ts:10: * @audit ISO-19011:2018 audit-trail
@@ -3578,9 +3560,9 @@ src/hooks/fields/tenants/normalizeTenantSlug.ts:5: * @audit ISO-19011:2018 audit
 src/jobs/audit/index.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/jobs/bnb/rates/sync/index.ts:20: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/jobs/dunning/job/index.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:584:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:604:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:625:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:549:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:569:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:590:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/plugins/naming/index.ts:21: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/seed/erpax-product-pages.ts:35: * @audit ISO-19011:2018 audit-trail seed-provenance
 src/seed/index.ts:10: * @audit ISO-19011:2018 audit-trail seed-runs
@@ -3602,7 +3584,6 @@ src/utilities/billing/stripeWebhookHandlers.ts:444: * @audit ISO-19011:2018 audi
 src/utilities/business/chain/context.ts:17: * @audit ISO-19011:2018 audit-trail seed-evidence
 src/utilities/business/chain/run.ts:11: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/utilities/business/chain/types.ts:21: * @audit ISO-19011:2018 §6.4.6 audit-evidence-process
-src/utilities/categories/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/utilities/chain/event/emitter/index.ts:14: * @audit ISO-19011:2018 audit-trail event-emit
 src/utilities/cmspage/access/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/utilities/cmspage/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary

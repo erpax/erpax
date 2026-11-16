@@ -107,7 +107,6 @@ const BillsOfMaterials: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('bills-of-materials'),
-  timestamps: true,
 }
 
 export default BillsOfMaterials

@@ -17,7 +17,6 @@ export const ComplianceGaps: CollectionConfig = {
   admin: { useAsTitle: 'title', defaultColumns: ['tenant', 'requirement', 'severity', 'status', 'isActive'], group: 'Control & Testing' },
   access: { read: authenticated, create: authenticated, update: authenticated, delete: adminOnly },
   hooks: { afterChange: [auditTrailAfterChange('complianceGaps')] },
-  timestamps: true,
   fields: [
     { name: 'title', type: 'text', required: true, index: true },
     { name: 'description', type: 'textarea', required: true },

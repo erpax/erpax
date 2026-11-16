@@ -68,7 +68,6 @@ const Parties: CollectionConfig = {
     ],
     afterChange: [auditTrailAfterChange('parties')],
   },
-  timestamps: true,
   fields: [
     // `name` and `code` stay at top level: useAsTitle and defaultColumns do not traverse groups.
     { name: 'code', type: 'text', required: true, unique: true, index: true,

@@ -359,7 +359,6 @@ export const Tenants: CollectionConfig = {
   hooks: {
     afterChange: [seedPresets, createRoleGroups, auditTrailAfterChange('tenants')],
   },
-  timestamps: true,
 }
 
 export {

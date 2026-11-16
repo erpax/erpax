@@ -114,7 +114,6 @@ const SalesCommissions: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('sales-commissions'),
-  timestamps: true,
 }
 
 export default SalesCommissions

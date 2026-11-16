@@ -118,7 +118,6 @@ const Batches: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('batches'),
-  timestamps: true,
 }
 
 export default Batches

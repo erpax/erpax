@@ -77,7 +77,6 @@ const Tags: CollectionConfig = {
     beforeChange: [autoPopulateCreatedBy],
     afterChange: [auditTrailAfterChange('tags')],
   },
-  timestamps: true,
 }
 
 export default Tags

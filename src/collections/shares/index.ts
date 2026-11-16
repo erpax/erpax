@@ -142,7 +142,6 @@ const Shares: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
   },
-  timestamps: true,
 }
 
 export default Shares

@@ -141,7 +141,6 @@ export const PackItems: CollectionConfig = {
   hooks: standardCollectionHooks('pack-items', {
     beforeChange: [rollUpOptions],
   }),
-  timestamps: true,
 }
 
 export default PackItems

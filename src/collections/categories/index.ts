@@ -5,7 +5,6 @@ import { createMembershipAdminMutateAccess } from '@/access/collections/shared/c
 import { tenantScopedCollectionReadAccess } from '@/access/collections/shared/tenantScopedCollectionReadAccess'
 import { localeRecord } from '@/i18n'
 
-import { categoriesBeforeChange } from '@/utilities/categories/hooks'
 
 /**
  * Categories — taxonomy for posts/products with per-tenant slug uniqueness.
@@ -76,7 +75,4 @@ export const Categories: CollectionConfig = {
       ],
     },
   ],
-  hooks: {
-    beforeChange: categoriesBeforeChange,
-  },
 }

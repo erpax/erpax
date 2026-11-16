@@ -69,7 +69,6 @@ const RegulatoryDeferralAccounts: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('regulatory-deferral-accounts'),
-  timestamps: true,
 }
 
 export default RegulatoryDeferralAccounts

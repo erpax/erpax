@@ -134,7 +134,6 @@ const Projects: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('projects'),
-  timestamps: true,
 }
 
 export default Projects

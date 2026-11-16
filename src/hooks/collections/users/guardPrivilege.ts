@@ -1,7 +1,7 @@
 import { APIError, type CollectionBeforeChangeHook } from 'payload'
 
 import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
-import { extractID } from '@/utilities/extract/id'
+import { extractID } from 'payload/shared'
 import { getUserTenantIDs } from '@/utilities/get/user/tenant/i/ds'
 
 /**

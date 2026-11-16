@@ -102,7 +102,6 @@ const DataProcessingActivities: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('data-processing-activities'),
-  timestamps: true,
 }
 
 export default DataProcessingActivities

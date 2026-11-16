@@ -177,7 +177,6 @@ const Properties: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('properties'),
-  timestamps: true,
 }
 
 export default Properties

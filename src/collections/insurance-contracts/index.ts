@@ -117,7 +117,6 @@ const InsuranceContracts: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('insurance-contracts'),
-  timestamps: true,
 }
 
 export default InsuranceContracts

@@ -117,7 +117,6 @@ const TaxCalculations: CollectionConfig = {
     ],
     afterChange: [auditTrailAfterChange('tax-calculations')],
   },
-  timestamps: true,
 };
 
 export default TaxCalculations;

@@ -125,7 +125,6 @@ const Sales: CollectionConfig = {
     ],
     afterChange: [emitSaleClosedHook, auditTrailAfterChange('sales')],
   },
-  timestamps: true,
 }
 
 export default Sales

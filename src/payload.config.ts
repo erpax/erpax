@@ -24,11 +24,8 @@ import { taggablePlugin } from '@/plugins/taggable'
 import { longNamesPlugin } from '@/plugins/naming'
 import { indexesPlugin } from '@/plugins/indexes'
 import { handlesPlugin } from '@/plugins/handles'
-import { versionsPlugin } from '@/plugins/versions'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
-import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
-import { translations as ecommerceTranslations } from '@payloadcms/plugin-ecommerce/translations/languages/all'
 import { ar } from '@payloadcms/translations/languages/ar'
 import { bg } from '@payloadcms/translations/languages/bg'
 import { cs } from '@payloadcms/translations/languages/cs'
@@ -175,31 +172,8 @@ export const disposeCloudflare = async (): Promise<void> => {
   await proxy?.dispose?.()
 }
 
-// Merge plugin translations with the project's own nested messages so the
-// Payload admin UI has a single, complete translation map per locale.
-function pluginTranslationsForLocale(
-  pack: Record<string, Record<string, unknown>> | undefined,
-  locale: SupportedLocale,
-): Record<string, unknown> {
-  return (pack?.[locale] as Record<string, unknown> | undefined) ?? {}
-}
-
-const adminTranslations = Object.fromEntries(
-  supportedLocales.map((locale) => [
-    locale,
-    {
-      ...pluginTranslationsForLocale(
-        multiTenantTranslations as Record<string, Record<string, unknown>>,
-        locale,
-      ),
-      ...pluginTranslationsForLocale(
-        ecommerceTranslations as Record<string, Record<string, unknown>>,
-        locale,
-      ),
-      ...nestedMessages[locale],
-    },
-  ]),
-)
+// The project's own messages per locale; each plugin merges its own translations.
+const adminTranslations = Object.fromEntries(supportedLocales.map((locale) => [locale, nestedMessages[locale]]))
 
 export default buildConfig({
   // Password hashing at OWASP's 600,000 PBKDF2-SHA256 iterations, on a runtime that refuses more than
@@ -343,10 +317,8 @@ export default buildConfig({
           ),
         )
         .map((c) => c.slug as CollectionSlug),
-      // The documented options (payloadcms.com/docs/plugins/nested-docs): without them a breadcrumb has no
-      // label and no url. The label is the document's title; the url is its own slug, because the frontend
-      // routes a page by ONE segment (`[locale]/[slug]`), so a nested `/a/b` url would not resolve.
-      generateLabel: (_, doc) => String((doc as { title?: unknown }).title ?? ''),
+      // The label is the plugin's default, each collection's admin.useAsTitle. The url is the document's
+      // own slug, because the frontend routes a page by ONE segment (`[locale]/[slug]`).
       generateURL: (_, doc) => `/${String((doc as { slug?: unknown }).slug ?? '')}`,
     }),
     // Official content-surface plugins (see the `redirects` + `search` skills).
@@ -365,7 +337,6 @@ export default buildConfig({
       collections: ['pages', 'posts', 'products'],
       overrides: {
         llmInstructions: 'Redirects map one path to another document or URL.',
-        fields: ({ defaultFields }) => defaultFields,
       },
     }),
     searchPlugin({
@@ -480,12 +451,6 @@ export default buildConfig({
     // every collection. Runs LAST so it covers collections added by the
     // plugins above. See the `identity` + `bindings` skills.
     uuidPlugin(),
-    // All is versioned: enable NATIVE Payload versioning (history-only, bounded)
-    // on every collection — the native `_versions` chain is the persistent store,
-    // and restoreVersion works everywhere. Runs after uuid so each version
-    // row carries the content-uuid (the version leaf), before naming so the `_v`
-    // tables get derived names. See the `versions` skill + src/versions/cross.
-    versionsPlugin(),
     // Tables and enums keep Payload's own names. A `dbName` is set only where Payload's name would
     // exceed its 63-character identifier limit. Runs last to cover all assembled fields.
     longNamesPlugin(),

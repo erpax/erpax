@@ -244,7 +244,6 @@ const CreditMemos: CollectionConfig = {
     ],
     afterChange: [auditTrailAfterChange('credit-memos')],
   },
-  timestamps: true,
 }
 
 export default CreditMemos

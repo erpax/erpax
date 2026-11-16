@@ -140,7 +140,6 @@ const FinancialStatements: CollectionConfig = {
         'approvedAt',
         (data) => Boolean((data as { approvedBy?: unknown }).approvedBy),
       )] }),
-  timestamps: true,
 };
 
 export default FinancialStatements;

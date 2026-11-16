@@ -348,7 +348,6 @@ const PaymentRuns: CollectionConfig = {
     ],
     afterChange: [auditTrailAfterChange('payment-runs')],
   },
-  timestamps: true,
 }
 
 export default PaymentRuns

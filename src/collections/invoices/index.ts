@@ -100,7 +100,6 @@ export const Invoices: CollectionConfig = {
     // banner declaring `@audit ISO-19011:2018 audit-trail`.
     afterChange: [invoiceAccountingHook, auditTrailAfterChange('invoices')],
   },
-  timestamps: true,
   fields: [
     {
       type: 'group',

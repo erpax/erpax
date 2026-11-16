@@ -100,7 +100,6 @@ const PaymentAllocations: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('payment-allocations'),
-  timestamps: true,
 }
 
 export default PaymentAllocations

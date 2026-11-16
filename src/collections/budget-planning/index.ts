@@ -109,7 +109,6 @@ const BudgetPlanning: CollectionConfig = {
     ],
     afterChange: [auditTrailAfterChange('budget-planning')],
   },
-  timestamps: true,
 }
 
 export default BudgetPlanning

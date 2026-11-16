@@ -45,7 +45,6 @@ const Terminals: CollectionConfig = {
     beforeValidate: [autoPopulateTenant],
     afterChange: [auditTrailAfterChange('terminals')],
   },
-  timestamps: true,
 }
 
 export default Terminals

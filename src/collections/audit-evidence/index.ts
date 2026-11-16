@@ -16,7 +16,6 @@ export const AuditEvidence: CollectionConfig = {
   admin: { useAsTitle: 'title', defaultColumns: ['tenant', 'documentType', 'uploadedDate', 'confidentiality', 'isActive'], group: 'Evidence & Findings' },
   access: { read: authenticated, create: authenticated, update: authenticated, delete: adminOnly },
   hooks: { afterChange: [auditTrailAfterChange('auditEvidence')] },
-  timestamps: true,
   fields: [
     // Claw-back defence. A grant's `conditions[].evidenceRef` is a STRING, and a string is not a
     // join — nothing can walk from the award to the evidence that satisfies its conditions, or back.

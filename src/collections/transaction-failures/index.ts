@@ -92,7 +92,6 @@ const TransactionFailures: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('transaction-failures'),
-  timestamps: true,
 }
 
 export default TransactionFailures

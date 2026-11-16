@@ -95,7 +95,6 @@ const Carriers: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('carriers'),
-  timestamps: true,
 }
 
 export default Carriers

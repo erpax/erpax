@@ -336,7 +336,6 @@ export const createAccountingCollection = (
       beforeChange,
       afterChange,
     },
-    timestamps: true,
     ...(structuredEmits.length > 0 ? { [EMITS_WIRED_KEY]: true } : {}),
   }
   return config

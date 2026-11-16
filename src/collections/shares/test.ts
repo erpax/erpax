@@ -18,7 +18,7 @@ describe('shares — uuid-based RBAC share collection (Law 59)', () => {
   it('is the `shares` collection with shareUuid as its title', () => {
     expect(Shares.slug).toBe('shares')
     expect(Shares.admin?.useAsTitle).toBe('shareUuid')
-    expect(Shares.timestamps).toBe(true)
+    expect(Shares.timestamps).not.toBe(false) // Payload's default: on unless turned off
   })
 
   it('carries the full grant binding the uuid-share service reads/writes', () => {

@@ -124,7 +124,6 @@ const CustomsDeclarations: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('customs-declarations'),
-  timestamps: true,
 }
 
 export default CustomsDeclarations

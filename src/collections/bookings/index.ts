@@ -164,7 +164,6 @@ const Bookings: CollectionConfig = {
     ],
     afterChange: [auditTrailAfterChange('bookings')],
   },
-  timestamps: true,
 }
 
 export default Bookings

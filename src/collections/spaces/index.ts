@@ -132,7 +132,6 @@ const Spaces: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('spaces'),
-  timestamps: true,
 }
 
 export default Spaces

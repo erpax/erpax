@@ -91,7 +91,6 @@ const CostVariances: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('cost-variances'),
-  timestamps: true,
 }
 
 export default CostVariances

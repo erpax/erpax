@@ -87,7 +87,6 @@ const ProductionReceipts: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('production-receipts', { afterChange: [emitProdCompleted] }),
-  timestamps: true,
 }
 
 export default ProductionReceipts

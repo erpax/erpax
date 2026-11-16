@@ -188,7 +188,6 @@ const CostCenters: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('cost-centers'),
-  timestamps: true,
 }
 
 export default CostCenters

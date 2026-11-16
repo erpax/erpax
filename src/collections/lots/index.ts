@@ -208,7 +208,6 @@ const Lots: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('lots', { beforeChange: [deriveLotState] }),
-  timestamps: true,
 }
 
 export default Lots

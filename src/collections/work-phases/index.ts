@@ -116,7 +116,6 @@ const WorkPhases: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('work-phases'),
-  timestamps: true,
 }
 
 export default WorkPhases

@@ -150,7 +150,6 @@ const ExpenseReports: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('expense-reports'),
-  timestamps: true,
 }
 
 export default ExpenseReports

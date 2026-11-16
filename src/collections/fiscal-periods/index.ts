@@ -188,7 +188,6 @@ export const FiscalPeriods: CollectionConfig = {
     },
     { name: 'metadata', type: 'json', admin: { description: 'Additional metadata' } },
   ],
-  timestamps: true,
 }
 
 /** @index-cross.foldback child=fiscal/periods parent=fiscal — this cross folds back into its parent. */

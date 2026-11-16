@@ -83,7 +83,6 @@ const CustomerSegments: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('customer-segments'),
-  timestamps: true,
 }
 
 export default CustomerSegments

@@ -30,7 +30,6 @@ function mockPayload(): DiscoveryPayload {
         { name: 'role', type: 'select', required: false },
         { name: 'status', type: 'text', required: true },
       ],
-      timestamps: true,
     },
     {
       slug: 'posts',
@@ -41,7 +40,6 @@ function mockPayload(): DiscoveryPayload {
         { name: 'published', type: 'checkbox', required: false },
         { name: 'views', type: 'number', required: false },
       ],
-      timestamps: true,
       access: { read: () => true },
     },
     {

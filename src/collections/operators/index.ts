@@ -53,7 +53,6 @@ const Operators: CollectionConfig = {
     beforeValidate: [autoPopulateTenant],
     afterChange: [auditTrailAfterChange('operators')],
   },
-  timestamps: true,
 }
 
 export default Operators

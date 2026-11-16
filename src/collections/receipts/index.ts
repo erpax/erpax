@@ -95,7 +95,6 @@ const Receipts: CollectionConfig = {
     beforeValidate: [autoPopulateTenant],
     afterChange: [auditTrailAfterChange('receipts')],
   },
-  timestamps: true,
 }
 
 export default Receipts

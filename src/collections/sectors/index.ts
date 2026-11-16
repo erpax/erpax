@@ -98,7 +98,6 @@ const Sectors: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('sectors'),
-  timestamps: true,
 }
 
 export default Sectors

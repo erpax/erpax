@@ -206,7 +206,6 @@ const GLAccounts: CollectionConfig = {
     beforeValidate: [autoPopulateTenant],
     afterChange: [auditTrailAfterChange('gl-accounts')],
   },
-  timestamps: true,
 }
 
 export default GLAccounts

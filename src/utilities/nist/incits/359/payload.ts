@@ -10,7 +10,7 @@
 import type { Payload, PayloadRequest, Where } from 'payload'
 
 import type { Role } from '@/utilities/types'
-import { extractID } from '@/utilities/extract/id'
+import { extractID } from 'payload/shared'
 
 import type { ScopeResourceCollection } from '@/utilities/nist/incits/359/types'
 

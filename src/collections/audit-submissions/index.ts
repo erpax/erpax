@@ -54,7 +54,6 @@ const AuditSubmissions: CollectionConfig = {
     beforeValidate: [autoPopulateTenant],
     afterChange: [auditTrailAfterChange('audit-submissions')],
   },
-  timestamps: true,
 }
 
 export default AuditSubmissions

@@ -127,7 +127,6 @@ const ShareBasedPayments: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('share-based-payments'),
-  timestamps: true,
 }
 
 export default ShareBasedPayments

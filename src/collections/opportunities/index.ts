@@ -101,7 +101,6 @@ const Opportunities: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('opportunities', { afterChange: [emitOpportunityWon] }),
-  timestamps: true,
 }
 
 export default Opportunities

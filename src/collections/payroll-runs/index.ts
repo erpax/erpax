@@ -373,7 +373,6 @@ const PayrollRuns: CollectionConfig = {
       auditTrailAfterChange('payroll-runs'),
     ],
   },
-  timestamps: true,
 }
 
 export default PayrollRuns

@@ -99,7 +99,6 @@ const QualityInspections: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('quality-inspections', { afterChange: [emitQcComplete] }),
-  timestamps: true,
 }
 
 export default QualityInspections

@@ -258,7 +258,6 @@ const Provisions: CollectionConfig = {
     notesField(),
   ],
   hooks: ((base) => ({ ...base, beforeChange: [...(base.beforeChange ?? []), dateRecognition] }))(standardCollectionHooks('provisions')),
-  timestamps: true,
 }
 
 export default Provisions

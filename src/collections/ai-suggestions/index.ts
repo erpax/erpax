@@ -139,7 +139,6 @@ const AiSuggestions: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('ai-suggestions'),
-  timestamps: true,
 }
 
 export default AiSuggestions

@@ -444,5 +444,4 @@ export const Users: CollectionConfig = {
     beforeLogin: [refuseInactive],
     afterLogin: [setCookieBasedOnDomain, stampLastLogin],
   },
-  timestamps: true,
 }

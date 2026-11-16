@@ -93,7 +93,6 @@ const IntercompanyTransactions: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('intercompany-transactions'),
-  timestamps: true,
 }
 
 export default IntercompanyTransactions

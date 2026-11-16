@@ -204,7 +204,6 @@ const EvidenceAttestations: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('evidence-attestations'),
-  timestamps: true,
 }
 
 export default EvidenceAttestations

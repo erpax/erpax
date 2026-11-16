@@ -158,7 +158,6 @@ const LeaseModifications: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('lease-modifications', { afterChange: [emitLeaseRemeasured] }),
-  timestamps: true,
 }
 
 export default LeaseModifications

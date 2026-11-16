@@ -94,7 +94,6 @@ const FiscalDevices: CollectionConfig = {
     beforeValidate: [autoPopulateTenant],
     afterChange: [auditTrailAfterChange('fiscal-devices')],
   },
-  timestamps: true,
 }
 
 export default FiscalDevices

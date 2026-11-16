@@ -409,7 +409,6 @@ const Leases: CollectionConfig = {
     ],
     afterChange: [auditTrailAfterChange('leases')],
   },
-  timestamps: true,
 }
 
 export default Leases

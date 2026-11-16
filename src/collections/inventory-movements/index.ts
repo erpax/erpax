@@ -136,7 +136,6 @@ const InventoryMovements: CollectionConfig = {
       auditTrailAfterChange('inventory-movements'),
     ],
   },
-  timestamps: true,
 }
 
 export default InventoryMovements

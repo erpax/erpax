@@ -26,7 +26,6 @@ export const EntityTypes: CollectionConfig = {
     update: superAdminOnly,
     delete: superAdminOnly,
   },
-  timestamps: true,
   fields: [
     {
       name: 'code',

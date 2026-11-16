@@ -341,7 +341,6 @@ export const WorkShifts: CollectionConfig = {
   hooks: {
     beforeChange: [computeShiftAuthority, requireWageToClose],
   },
-  timestamps: true,
 }
 
 export default WorkShifts

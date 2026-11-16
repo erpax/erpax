@@ -71,7 +71,6 @@ const BeneficialOwners: CollectionConfig = {
     notesField(),
   ],
   hooks: standardCollectionHooks('beneficial-owners'),
-  timestamps: true,
 }
 
 export default BeneficialOwners
