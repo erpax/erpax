@@ -190,8 +190,6 @@ src/collections/bookings/index.ts:13: * @standard ISO-4217:2015 currency-codes p
 src/collections/bookings/index.ts:14: * @standard rfc-5545 icalendar-rrule recurring-bookings
 src/collections/bookings/index.ts:15: * @standard HTNG-2017 hotel-technology-next-generation
 src/collections/bookings/index.ts:16: * @standard OpenTravel Alliance reservation-message
-src/collections/budget-planning/index.ts:22: * @standard ISO-4217:2015 currency-codes
-src/collections/budget-planning/index.ts:23: * @standard ISO-8601-1:2019 date-time fiscal-year period
 src/collections/business-combinations/index.ts:11: * @standard IFRS IFRS-3 §10-§13 identifying-the-acquirer
 src/collections/business-combinations/index.ts:12: * @standard IFRS IFRS-3 §18-§31 recognition-and-measurement-of-net-assets-acquired
 src/collections/business-combinations/index.ts:13: * @standard IFRS IFRS-3 §32 goodwill-or-bargain-purchase-gain
@@ -1121,47 +1119,49 @@ src/utilities/ghg/protocol/index.ts:13: * @standard EU ESRS E1 §44-50 ghg-emiss
 src/utilities/ghg/protocol/index.ts:14: * @standard IFRS S2 §29-32 climate-related-metrics (companion)
 src/utilities/ghg/protocol/index.ts:9: * @standard GHG Protocol Corporate Standard (revised 2015)
 src/utilities/gl/account/resolver/index.ts:24: * @standard ISO-4217:2015 currency-codes
-src/utilities/governed/index.ts:103: * @standard SAF-T OECD audit-file
-src/utilities/governed/index.ts:104: * @standard XBRL business-reporting
-src/utilities/governed/index.ts:1053: * @standard IFRS IFRS-14 §3 scope-first-time-adopter
-src/utilities/governed/index.ts:1054: * @standard IFRS IFRS-14 §16 continuation-of-previous-GAAP
-src/utilities/governed/index.ts:1055: * @standard IFRS IFRS-14 §27 disclosure-requirements
-src/utilities/governed/index.ts:1056: * @standard ISO-4217:2015 currency-codes
-src/utilities/governed/index.ts:1057: * @standard ISO-8601-1:2019 date-time
-src/utilities/governed/index.ts:105: * @standard IFRS-Taxonomy
-src/utilities/governed/index.ts:1125: * @standard IFRS IFRS-5 §6-§9 classification-criteria
-src/utilities/governed/index.ts:1126: * @standard IFRS IFRS-5 §15 measurement-lower-of-cv-and-fv-less-cts
-src/utilities/governed/index.ts:1127: * @standard IFRS IFRS-5 §25 depreciation-suspended
-src/utilities/governed/index.ts:1128: * @standard IFRS IFRS-5 §31-§40 discontinued-operations-presentation
-src/utilities/governed/index.ts:1129: * @standard IFRS IFRS-13 fair-value-input-hierarchy
-src/utilities/governed/index.ts:1130: * @standard US-GAAP ASC-205-20 discontinued-operations
-src/utilities/governed/index.ts:1131: * @standard US-GAAP ASC-360-10 long-lived-assets-held-for-sale
-src/utilities/governed/index.ts:1132: * @standard ISO-4217:2015 currency-codes
-src/utilities/governed/index.ts:1133: * @standard ISO-8601-1:2019 date-time classification-date
-src/utilities/governed/index.ts:1337: * @standard SAF-T OECD standard-audit-file-tax
-src/utilities/governed/index.ts:1338: * @standard XBRL business-reporting
-src/utilities/governed/index.ts:1419: * @standard COSO-2013 internal-control-integrated-framework
-src/utilities/governed/index.ts:1420: * @standard PCAOB AS 2201 ICFR
-src/utilities/governed/index.ts:194: * @standard ISO-37301:2021 compliance-management-systems
-src/utilities/governed/index.ts:195: * @standard ISO-8601-1:2019 due-date
-src/utilities/governed/index.ts:316: * @standard ISO-8601-1:2019 date-time review-due-at
-src/utilities/governed/index.ts:437: * @standard IIA IPPF international-professional-practices-framework
-src/utilities/governed/index.ts:613: * @standard IFRS IAS-33 §10 basic-eps
-src/utilities/governed/index.ts:614: * @standard IAS-33 §11-§19 weighted-average-number-of-ordinary-shares
-src/utilities/governed/index.ts:615: * @standard IFRS IAS-33 §30-§63 diluted-eps
-src/utilities/governed/index.ts:616: * @standard IFRS IAS-33 §66-§70 disclosure
-src/utilities/governed/index.ts:617: * @standard US-GAAP ASC-260 earnings-per-share
-src/utilities/governed/index.ts:618: * @standard ISO-4217:2015 currency-codes
-src/utilities/governed/index.ts:619: * @standard ISO-8601-1:2019 date-time period-end
-src/utilities/governed/index.ts:745: * @standard IFRS IFRS-17 §3 scope
-src/utilities/governed/index.ts:746: * @standard IFRS IFRS-17 §32 general-measurement-model-building-blocks
-src/utilities/governed/index.ts:747: * @standard IFRS IFRS-17 §38 contractual-service-margin
-src/utilities/governed/index.ts:748: * @standard IFRS IFRS-17 §53 premium-allocation-approach-simplified
-src/utilities/governed/index.ts:749: * @standard IFRS IFRS-17 §B100 variable-fee-approach
-src/utilities/governed/index.ts:750: * @standard IFRS IFRS-17 §93 disclosure-requirements
-src/utilities/governed/index.ts:751: * @standard IFRS IFRS-13 fair-value-input-hierarchy
-src/utilities/governed/index.ts:752: * @standard ISO-4217:2015 currency-codes
-src/utilities/governed/index.ts:753: * @standard ISO-8601-1:2019 date-time
+src/utilities/governed/index.ts:104: * @standard SAF-T OECD audit-file
+src/utilities/governed/index.ts:1054: * @standard IFRS IFRS-14 §3 scope-first-time-adopter
+src/utilities/governed/index.ts:1055: * @standard IFRS IFRS-14 §16 continuation-of-previous-GAAP
+src/utilities/governed/index.ts:1056: * @standard IFRS IFRS-14 §27 disclosure-requirements
+src/utilities/governed/index.ts:1057: * @standard ISO-4217:2015 currency-codes
+src/utilities/governed/index.ts:1058: * @standard ISO-8601-1:2019 date-time
+src/utilities/governed/index.ts:105: * @standard XBRL business-reporting
+src/utilities/governed/index.ts:106: * @standard IFRS-Taxonomy
+src/utilities/governed/index.ts:1126: * @standard IFRS IFRS-5 §6-§9 classification-criteria
+src/utilities/governed/index.ts:1127: * @standard IFRS IFRS-5 §15 measurement-lower-of-cv-and-fv-less-cts
+src/utilities/governed/index.ts:1128: * @standard IFRS IFRS-5 §25 depreciation-suspended
+src/utilities/governed/index.ts:1129: * @standard IFRS IFRS-5 §31-§40 discontinued-operations-presentation
+src/utilities/governed/index.ts:1130: * @standard IFRS IFRS-13 fair-value-input-hierarchy
+src/utilities/governed/index.ts:1131: * @standard US-GAAP ASC-205-20 discontinued-operations
+src/utilities/governed/index.ts:1132: * @standard US-GAAP ASC-360-10 long-lived-assets-held-for-sale
+src/utilities/governed/index.ts:1133: * @standard ISO-4217:2015 currency-codes
+src/utilities/governed/index.ts:1134: * @standard ISO-8601-1:2019 date-time classification-date
+src/utilities/governed/index.ts:1338: * @standard SAF-T OECD standard-audit-file-tax
+src/utilities/governed/index.ts:1339: * @standard XBRL business-reporting
+src/utilities/governed/index.ts:1420: * @standard COSO-2013 internal-control-integrated-framework
+src/utilities/governed/index.ts:1421: * @standard PCAOB AS 2201 ICFR
+src/utilities/governed/index.ts:1516: * @standard ISO-4217:2015 currency-codes
+src/utilities/governed/index.ts:1517: * @standard ISO-8601-1:2019 date-time fiscal-year period
+src/utilities/governed/index.ts:195: * @standard ISO-37301:2021 compliance-management-systems
+src/utilities/governed/index.ts:196: * @standard ISO-8601-1:2019 due-date
+src/utilities/governed/index.ts:317: * @standard ISO-8601-1:2019 date-time review-due-at
+src/utilities/governed/index.ts:438: * @standard IIA IPPF international-professional-practices-framework
+src/utilities/governed/index.ts:614: * @standard IFRS IAS-33 §10 basic-eps
+src/utilities/governed/index.ts:615: * @standard IAS-33 §11-§19 weighted-average-number-of-ordinary-shares
+src/utilities/governed/index.ts:616: * @standard IFRS IAS-33 §30-§63 diluted-eps
+src/utilities/governed/index.ts:617: * @standard IFRS IAS-33 §66-§70 disclosure
+src/utilities/governed/index.ts:618: * @standard US-GAAP ASC-260 earnings-per-share
+src/utilities/governed/index.ts:619: * @standard ISO-4217:2015 currency-codes
+src/utilities/governed/index.ts:620: * @standard ISO-8601-1:2019 date-time period-end
+src/utilities/governed/index.ts:746: * @standard IFRS IFRS-17 §3 scope
+src/utilities/governed/index.ts:747: * @standard IFRS IFRS-17 §32 general-measurement-model-building-blocks
+src/utilities/governed/index.ts:748: * @standard IFRS IFRS-17 §38 contractual-service-margin
+src/utilities/governed/index.ts:749: * @standard IFRS IFRS-17 §53 premium-allocation-approach-simplified
+src/utilities/governed/index.ts:750: * @standard IFRS IFRS-17 §B100 variable-fee-approach
+src/utilities/governed/index.ts:751: * @standard IFRS IFRS-17 §93 disclosure-requirements
+src/utilities/governed/index.ts:752: * @standard IFRS IFRS-13 fair-value-input-hierarchy
+src/utilities/governed/index.ts:753: * @standard ISO-4217:2015 currency-codes
+src/utilities/governed/index.ts:754: * @standard ISO-8601-1:2019 date-time
 src/utilities/horo/index.ts:23: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
 src/utilities/iban/index.ts:10: * @standard ISO-7064:2003 mod-97-10 check-digits
 src/utilities/iban/index.ts:9: * @standard ISO-13616-1:2020 iban
@@ -2094,7 +2094,6 @@ src/collections/board-actions/index.ts:5: * @compliance SOX §404 governance
 src/collections/bookable-resources/index.ts:18: * @compliance SOX §404 internal-controls revenue-completeness
 src/collections/bookings/index.ts:22: * @compliance SOX §404 internal-controls revenue-completeness TOM-RES-01
 src/collections/bookings/index.ts:23: * @compliance GDPR Art.6(1)(b) lawful-basis-contract guest-data
-src/collections/budget-planning/index.ts:28: * @compliance SOX §404 internal-controls budget-approval-workflow
 src/collections/business-combinations/index.ts:20: * @compliance SOX §404 internal-controls TOM-MA-01 PPA-process
 src/collections/carbon-emissions/index.ts:22: * @compliance EU SFDR PAI 1 ghg-emissions
 src/collections/carbon-emissions/index.ts:23: * @compliance EU CBAM Carbon Border Adjustment Mechanism (when applicable)
@@ -2386,20 +2385,21 @@ src/utilities/event/emitter/service/index.ts:12: * @compliance SOX §404 interna
 src/utilities/factory/recompute-parent-aggregates.ts:28: * @compliance SOX §404 internal-controls total-completeness
 src/utilities/get/user/tenant/i/ds/index.ts:8: * @compliance SOX §404 internal-controls
 src/utilities/gl/account/resolver/index.ts:28: * @compliance SOX §404 internal-controls per-tenant-coa
-src/utilities/governed/index.ts:1059: * @compliance SOX §404 internal-controls
-src/utilities/governed/index.ts:1135: * @compliance SOX §404 internal-controls
-src/utilities/governed/index.ts:1339: * @compliance local-regulatory-filing
-src/utilities/governed/index.ts:1418: * @compliance SOX §404(a) management-assessment-ICFR
-src/utilities/governed/index.ts:317: * @compliance GDPR Art.30(1) records-controller
-src/utilities/governed/index.ts:318: * @compliance GDPR Art.30(2) records-processor
-src/utilities/governed/index.ts:319: * @compliance GDPR Art.5(1)(e) storage-limitation
-src/utilities/governed/index.ts:320: * @compliance ISO-27701:2025 records-of-processing
-src/utilities/governed/index.ts:34: * @compliance SOX §302 corporate-responsibility
-src/utilities/governed/index.ts:35: * @compliance SOX §906 criminal-certification
-src/utilities/governed/index.ts:439: * @compliance SOX §404 internal-controls
-src/utilities/governed/index.ts:621: * @compliance SOX §404 internal-controls
-src/utilities/governed/index.ts:755: * @compliance Solvency II / IAIS ICS — actuarial reserving link
-src/utilities/governed/index.ts:756: * @compliance SOX §404 internal-controls TOM-INS-01
+src/utilities/governed/index.ts:1060: * @compliance SOX §404 internal-controls
+src/utilities/governed/index.ts:1136: * @compliance SOX §404 internal-controls
+src/utilities/governed/index.ts:1340: * @compliance local-regulatory-filing
+src/utilities/governed/index.ts:1419: * @compliance SOX §404(a) management-assessment-ICFR
+src/utilities/governed/index.ts:1522: * @compliance SOX §404 internal-controls budget-approval-workflow
+src/utilities/governed/index.ts:318: * @compliance GDPR Art.30(1) records-controller
+src/utilities/governed/index.ts:319: * @compliance GDPR Art.30(2) records-processor
+src/utilities/governed/index.ts:320: * @compliance GDPR Art.5(1)(e) storage-limitation
+src/utilities/governed/index.ts:321: * @compliance ISO-27701:2025 records-of-processing
+src/utilities/governed/index.ts:35: * @compliance SOX §302 corporate-responsibility
+src/utilities/governed/index.ts:36: * @compliance SOX §906 criminal-certification
+src/utilities/governed/index.ts:440: * @compliance SOX §404 internal-controls
+src/utilities/governed/index.ts:622: * @compliance SOX §404 internal-controls
+src/utilities/governed/index.ts:756: * @compliance Solvency II / IAIS ICS — actuarial reserving link
+src/utilities/governed/index.ts:757: * @compliance SOX §404 internal-controls TOM-INS-01
 src/utilities/integrity/content/index.ts:47: * @compliance SOX §404 internal-controls (Byzantine tamper detection)
 src/utilities/integrity/tamper-proof-uuid-field.ts:38: * @compliance SOX §404 (Byzantine tamper detection at the row level)
 src/utilities/integrity/uuid-ref.ts:29: * @compliance SOX §404 (referential integrity without cascade rules)
@@ -2504,9 +2504,6 @@ src/collections/bookings/index.ts:17: * @accounting IFRS IFRS-15 §35 over-time-
 src/collections/bookings/index.ts:18: * @accounting IFRS IFRS-15 §38 point-in-time-recognition (single-use)
 src/collections/bookings/index.ts:19: * @accounting IFRS IFRS-15 §B20-B27 right-of-return cancellation-policy
 src/collections/bookings/index.ts:20: * @accounting US-GAAP ASC-606-10-25-27 over-time-criteria
-src/collections/budget-planning/index.ts:24: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/collections/budget-planning/index.ts:25: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
-src/collections/budget-planning/index.ts:26: * @accounting US-GAAP ASC-270 interim-reporting
 src/collections/carbon-emissions/index.ts:20: * @accounting IFRS S2 §29-32 climate-related-metrics
 src/collections/closing-entries/index.ts:14:  * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/collections/closing-entries/index.ts:15: * @accounting US-GAAP ASC-205 presentation
@@ -2854,11 +2851,14 @@ src/utilities/en/16931/types/index.ts:17: * @accounting US-GAAP ASC-606 revenue-
 src/utilities/fiscal/period/resolver/span/index.ts:10: * @accounting IAS-1 §36 reporting period
 src/utilities/gl/account/resolver/index.ts:25: * @accounting IFRS IAS-1 chart-of-accounts
 src/utilities/gl/account/resolver/index.ts:26: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
-src/utilities/governed/index.ts:1234: * @accounting IAS-24 related-party-disclosures
-src/utilities/governed/index.ts:1235: * @accounting US-GAAP ASC-850 related-party-disclosures
-src/utilities/governed/index.ts:871: * @accounting IFRS-9 financial-instruments
-src/utilities/governed/index.ts:872: * @accounting IAS-1 current-non-current-classification
-src/utilities/governed/index.ts:873: * @accounting US-GAAP ASC-470 debt
+src/utilities/governed/index.ts:1235: * @accounting IAS-24 related-party-disclosures
+src/utilities/governed/index.ts:1236: * @accounting US-GAAP ASC-850 related-party-disclosures
+src/utilities/governed/index.ts:1518: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/utilities/governed/index.ts:1519: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
+src/utilities/governed/index.ts:1520: * @accounting US-GAAP ASC-270 interim-reporting
+src/utilities/governed/index.ts:872: * @accounting IFRS-9 financial-instruments
+src/utilities/governed/index.ts:873: * @accounting IAS-1 current-non-current-classification
+src/utilities/governed/index.ts:874: * @accounting US-GAAP ASC-470 debt
 src/utilities/invoices/hooks/gl-hooks-emit-events.test.ts:14: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/utilities/invoices/hooks/gl-hooks-emit-events.test.ts:15: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/utilities/invoices/hooks/gl-hooks-emit-events.test.ts:16: * @accounting IFRS IAS-7 statement-of-cash-flows
@@ -3045,8 +3045,6 @@ src/collections/biological-assets/index.ts:23: * @security ISO 27001 A.5.23 clou
 src/collections/board-actions/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/bookable-resources/index.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/bookings/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/budget-planning/index.ts:29: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/budget-planning/index.ts:30: * @security ISO-27002 §5.3 segregation-of-duties approval-vs-creation
 src/collections/business-combinations/index.ts:21: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/carbon-emissions/index.ts:25: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/carriers/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -3255,7 +3253,8 @@ src/utilities/get/tenant/from/request/index.ts:8: * @security ISO-27002 §5.15 a
 src/utilities/get/user/tenant/i/ds/index.ts:6: * @security ISO-27001 A.5.18 access-rights
 src/utilities/get/user/tenant/i/ds/index.ts:7: * @security ISO-27002 §5.15 access-control
 src/utilities/gl/account/resolver/index.ts:29: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/utilities/governed/index.ts:322: * @security ISO-27001 A.5.34 privacy-and-pii
+src/utilities/governed/index.ts:1523: * @security ISO-27002 §5.3 segregation-of-duties approval-vs-creation
+src/utilities/governed/index.ts:323: * @security ISO-27001 A.5.34 privacy-and-pii
 src/utilities/iso/19011/types/index.ts:25: * @security ISO-27002 §8.15 logging
 src/utilities/journal/entry/service/index.ts:19: * @security ISO-27002 §5.3 segregation-of-duties
 src/utilities/nist/incits/359/conventions/index.ts:23: * @security ISO-27002 §5.15 access-control
@@ -3368,7 +3367,6 @@ src/collections/bills-of-materials/index.ts:22: * @audit ISO-19011:2018 audit-tr
 src/collections/biological-assets/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-biological-assets
 src/collections/bookable-resources/index.ts:17: * @audit ISO-19011:2018 audit-trail resource-master-changes
 src/collections/bookings/index.ts:21: * @audit ISO-19011:2018 audit-trail booking-lifecycle
-src/collections/budget-planning/index.ts:27: * @audit ISO-19011:2018 audit-trail
 src/collections/business-combinations/index.ts:19: * @audit ISO 19011:2018 §6.4.6 audit-evidence-business-combination
 src/collections/carbon-emissions/index.ts:21: * @audit ISAE 3410 greenhouse-gas-statements
 src/collections/carriers/index.ts:15: * @audit ISO-19011:2018 audit-trail carrier-master
@@ -3590,12 +3588,13 @@ src/utilities/factory/collection/test.ts:14: * @audit ISO 19011:2018 §6.4.6 —
 src/utilities/factory/recompute-parent-aggregates.ts:27: * @audit ISO-19011:2018 audit-trail derived-total-provenance
 src/utilities/field/index.ts:7: * @audit Flat namespace to eliminate circular imports and duplicate definitions.
 src/utilities/gl/account/resolver/index.ts:27: * @audit ISO-19011:2018 audit-trail account-resolution
-src/utilities/governed/index.ts:1058: * @audit ISO 19011:2018 §6.4.6 audit-evidence-regulatory-deferral
-src/utilities/governed/index.ts:1134: * @audit ISO 19011:2018 §6.4.6 audit-evidence-disposal-classification
-src/utilities/governed/index.ts:321: * @audit ISO-19011:2018 audit-trail ropa-evidence
-src/utilities/governed/index.ts:438: * @audit ISO-19011:2018 audit-programme
-src/utilities/governed/index.ts:620: * @audit ISO 19011:2018 §6.4.6 audit-evidence-eps-computation
-src/utilities/governed/index.ts:754: * @audit ISO 19011:2018 §6.4.6 audit-evidence-insurance-contracts
+src/utilities/governed/index.ts:1059: * @audit ISO 19011:2018 §6.4.6 audit-evidence-regulatory-deferral
+src/utilities/governed/index.ts:1135: * @audit ISO 19011:2018 §6.4.6 audit-evidence-disposal-classification
+src/utilities/governed/index.ts:1521: * @audit ISO-19011:2018 audit-trail
+src/utilities/governed/index.ts:322: * @audit ISO-19011:2018 audit-trail ropa-evidence
+src/utilities/governed/index.ts:439: * @audit ISO-19011:2018 audit-programme
+src/utilities/governed/index.ts:621: * @audit ISO 19011:2018 §6.4.6 audit-evidence-eps-computation
+src/utilities/governed/index.ts:755: * @audit ISO 19011:2018 §6.4.6 audit-evidence-insurance-contracts
 src/utilities/integrity/content/index.ts:46: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/utilities/integrity/resource-bound.ts:33: * @audit Conservation Law 55 (tamper-reversibility-cost) — physical bound
 src/utilities/integrity/tamper-proof-uuid-field.ts:37: * @audit ISO 19011:2018 §6.4.6
