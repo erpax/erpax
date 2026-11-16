@@ -70,7 +70,9 @@ describe('gateByApp — the gate on a collection', () => {
   })
   const member = (tenants: Array<{ id: string; apps?: string[] }>) => {
     let reads = 0
-    const req = { user: { id: 7, tenants: tenants.map((t) => ({ tenant: t.id, roles: ['tenant-viewer'] })) }, context: {}, payload: { find: async () => (reads++, { docs: tenants }) } }
+    // `find` behaves as Payload's does with `req`: it replaces req.context with a copy, synchronously, before its first await
+    const req: { user: unknown; context: Record<string, unknown>; payload: unknown } = { user: { id: 7, tenants: tenants.map((t) => ({ tenant: t.id, roles: ['tenant-viewer'] })) }, context: { mcp: true }, payload: null }
+    req.payload = { find: (args: { req?: typeof req }) => { if (args.req) args.req.context = { ...args.req.context }; reads++; return Promise.resolve({ docs: tenants }) } }
     const run = (op: 'read' | 'create' | 'update' | 'delete') => (gated.access![op] as (args: unknown) => Promise<unknown>)({ req })
     return { run, reads: () => reads }
   }
@@ -84,6 +86,12 @@ describe('gateByApp — the gate on a collection', () => {
     expect(await run('create')).toBe(true)
     expect(await run('update')).toEqual({ tenant: { in: ['a'] } })
     expect(reads()).toBe(1) // the tenants are read once per request
+  })
+  it('every operation of every gated collection, checked together as getAccessResults does, reads the tenants once', async () => {
+    const { run, reads } = member([{ id: 'a', apps: ['sales'] }, { id: 'b', apps: ['ledger'] }])
+    const answers = await Promise.all(Array.from({ length: 40 }, () => [run('read'), run('create'), run('update'), run('delete')]).flat())
+    expect(answers.filter((a) => a === false)).toHaveLength(0)
+    expect(reads()).toBe(1)
   })
   it('a member whose tenants all have the app is not narrowed', async () => {
     const { run } = member([{ id: 'a' }, { id: 'c', apps: ['sales', 'ledger'] }])
