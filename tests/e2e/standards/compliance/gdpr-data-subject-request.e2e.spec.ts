@@ -2,7 +2,7 @@
  * GDPR — data-subject-request walk-through. Captures the admin surfaces a
  * data protection officer (DPO) would use to:
  *
- *   - Maintain Records of Processing Activities (Art.30)         — `data-processing-activities`
+ *   - Maintain Records of Processing Activities (Art.30)         — `pages` of type `processing-activity`
  *   - Track consent records (Art.6(1)(a) / Art.7)                — `consent-records`
  *   - Process data subject requests (Art.15-22)                  — `data-subject-requests`
  *   - Identify beneficial owners for AML/KYC                     — `beneficial-owners`
@@ -15,7 +15,7 @@
  * @compliance GDPR Art.32 security-of-processing
  * @compliance ISO-27701:2019 §6.3.1 records-of-processing
  * @security ISO-27001 A.5.34 privacy-and-pii
- * @see src/plugins/accounting/collections/DataProcessingActivities.ts
+ * @see src/utilities/governed/index.ts (ProcessingActivity)
  * @see src/plugins/accounting/collections/DataSubjectRequests.ts
  */
 
@@ -34,7 +34,7 @@ test.describe('Standard: GDPR — DPO walk-through', () => {
     await login({ page, user: testUser })
 
     await safeCaptureRoute(page, testInfo, STANDARD, '01-data-processing-activities',
-      `${BASE}/admin/collections/data-processing-activities`,
+      `${BASE}/admin/collections/pages?where[documentType][equals]=processing-activity`,
       'Records of Processing Activities (Art.30)')
 
     await safeCaptureRoute(page, testInfo, STANDARD, '02-consent-records',

@@ -241,7 +241,6 @@ export { SegmentReporting } from '@/collections/segment-reporting'
 // GDPR & Data Privacy
 export { default as ConsentRecords } from '@/collections/consent-records'
 export { default as DataSubjectRequests } from '@/collections/data-subject-requests'
-export { default as DataProcessingActivities } from '@/collections/data-processing-activities'
 
 // AML / KYC
 export { default as KycChecks } from '@/collections/kyc-checks'
