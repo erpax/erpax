@@ -19,8 +19,8 @@ export { uuidRef, registerUuidRef, UUID_REF_REGISTRY, resolveByUuid, findDanglin
 export type { SignedUuid, SignatureAlg } from '@/utilities/integrity/signatures'
 export { signContentUuid, verifyContentUuidSignature, toJws, fromJws } from '@/utilities/integrity/signatures'
 
-export type { CipherEnvelope, EnvelopeAlg } from '@/utilities/integrity/envelope'
-export { encryptEnvelope, decryptEnvelope, encryptBytesEnvelope, decryptBytesEnvelope } from '@/utilities/integrity/envelope'
+export type { CipherEnvelope } from '@/utilities/integrity/envelope'
+export { encryptEnvelope, decryptEnvelope } from '@/utilities/integrity/envelope'
 
 export type { TenantKeyResolver, KeyPurpose } from '@/utilities/integrity/tenant-key-registry'
 export {

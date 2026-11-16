@@ -17,13 +17,13 @@
 | collections | 190 | `src/payload-types.ts` |
 | migrations | 12 | `src/migrations` |
 | Lean files | 47 | `src/utilities/verify/lean` |
-| theorems | 363 | `src/utilities/verify/lean/inventory.generated.json` |
-| axiom-free | 267 | `src/utilities/verify/lean/inventory.generated.json` |
+| theorems | 366 | `src/utilities/verify/lean/inventory.generated.json` |
+| axiom-free | 270 | `src/utilities/verify/lean/inventory.generated.json` |
 | license | CC-BY-NC-ND-4.0 | `package.json` |
 
 ## Proofs
 
-Kernel report sealed 2026-11-16: 363 theorems, 267 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `50647f42d2cd57ae`.
+Kernel report sealed 2026-11-16: 366 theorems, 270 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `c0f573bb81619f37`.
 
 | file | the file says | Clay | theorems | axiom-free | kernel |
 | --- | --- | --- | ---: | ---: | --- |
@@ -36,7 +36,7 @@ Kernel report sealed 2026-11-16: 363 theorems, 267 axiom-free, 96 on Lean's thre
 | [`Coil.lean`](src/utilities/verify/lean/Coil.lean) | Coil — coins in trinities; one rotation each way covers every cross. | none | 8 | 8 | accepted |
 | [`Contrast.lean`](src/utilities/verify/lean/Contrast.lean) | Contrast — every colour admits a legible foreground, and the reason is one multiplication. | none | 7 | 3 | accepted |
 | [`Correct.lean`](src/utilities/verify/lean/Correct.lean) | Correct — error correction as syndrome arithmetic: each single error names itself. | none | 6 | 3 | accepted |
-| [`Cost.lean`](src/utilities/verify/lean/Cost.lean) | Cost — the tamper margin, stated against NIST's ladder instead of a folk rule. | none | 10 | 8 | accepted |
+| [`Cost.lean`](src/utilities/verify/lean/Cost.lean) | Cost — the tamper margin, stated against NIST's ladder instead of a folk rule. | none | 13 | 11 | accepted |
 | [`Cross.lean`](src/utilities/verify/lean/Cross.lean) | Cross — the corpus's claims, composed. A theorem that holds only inside its own file proves a fragment; what a reader needs is that the fragments CHAIN. | none | 8 | 7 | accepted |
 | [`Direction.lean`](src/utilities/verify/lean/Direction.lean) | Direction — the six ways to move inside an address, and the one constraint that governs all of them. | none | 17 | 13 | accepted |
 | [`Edge.lean`](src/utilities/verify/lean/Edge.lean) | Edge — which request the Worker stops before the app runs, and which it only counts. | none | 6 | 6 | accepted |
@@ -181,7 +181,7 @@ Kernel report sealed 2026-11-16: 363 theorems, 267 axiom-free, 96 on Lean's thre
 - [`Correct.distance_corrects`](src/utilities/verify/lean/Correct.lean#L84) · propext, Quot.sound
 
 </details>
-<details><summary>Cost.lean · 10 theorems</summary>
+<details><summary>Cost.lean · 13 theorems</summary>
 
 - [`Cost.forging_costs_more_than_verifying`](src/utilities/verify/lean/Cost.lean#L55) · axiom-free
 - [`Cost.seams_add_in_the_exponent`](src/utilities/verify/lean/Cost.lean#L61) · propext
@@ -193,6 +193,9 @@ Kernel report sealed 2026-11-16: 363 theorems, 267 axiom-free, 96 on Lean's thre
 - [`Cost.sha224_collision_is_below_category_one`](src/utilities/verify/lean/Cost.lean#L84) · axiom-free
 - [`Cost.truncation_halves_the_collision_margin`](src/utilities/verify/lean/Cost.lean#L87) · propext
 - [`Cost.the_anchored_chain_holds`](src/utilities/verify/lean/Cost.lean#L93) · axiom-free
+- [`Cost.the_signature_is_ml_dsa_44`](src/utilities/verify/lean/Cost.lean#L106) · axiom-free
+- [`Cost.a_larger_set_outruns_the_digest`](src/utilities/verify/lean/Cost.lean#L109) · axiom-free
+- [`Cost.ml_dsa_44_meets_the_digest_floor`](src/utilities/verify/lean/Cost.lean#L112) · axiom-free
 
 </details>
 <details><summary>Cross.lean · 8 theorems</summary>
@@ -642,7 +645,7 @@ Kernel report sealed 2026-11-16: 363 theorems, 267 axiom-free, 96 on Lean's thre
 
 settled: **none** (`claySettled`)
 
-Kernel report sealed 2026-11-16: 363 theorems, 267 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `50647f42d2cd57ae`.
+Kernel report sealed 2026-11-16: 366 theorems, 270 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `c0f573bb81619f37`.
 
 ## Commands
 

@@ -33,6 +33,9 @@
     // Outbound fetch only to “public” destinations (recommended with Payload uploads + skipSafeFetch)
     // https://developers.cloudflare.com/workers/configuration/compatibility-flags/#global-fetch-strictly-public
     "global_fetch_strictly_public",
+    // ML-DSA and ML-KEM in Web Crypto: the crypto door signs with ML-DSA (FIPS 204)
+    // https://developers.cloudflare.com/workers/runtime-apis/web-crypto/#modern-algorithms
+    "webcrypto_modern_algorithms",
   ],
   "assets": {
     "directory": ".open-next/assets",

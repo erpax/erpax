@@ -1046,14 +1046,16 @@ src/utilities/country/client/bg-vat.ts:16: * @standard EN-16931:2017 §BG-23 inv
 src/utilities/country/client/bg-vat.ts:17: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
 src/utilities/country/client/pdf-text-extractor-default.ts:18: * @standard ISO-32000-2:2020 pdf source-document
 src/utilities/country/client/pdf-text-extractor-default.ts:19: * @standard W3C HTML5 (extracted text consumed downstream)
-src/utilities/country/client/sign-cms-node.ts:17: * @standard rfc-5652 cms-detached-signature
-src/utilities/country/client/sign-cms-node.ts:18: * @standard rfc-3447 pkcs1 rsa-signature
-src/utilities/country/client/sign-cms-node.ts:19: * @standard ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile
+src/utilities/country/client/sign-cms-node.ts:10: * @standard rfc-8017 pkcs1 rsa-signature
+src/utilities/country/client/sign-cms-node.ts:11: * @standard ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile
+src/utilities/country/client/sign-cms-node.ts:9: * @standard rfc-5652 cms-detached-signature
 src/utilities/country/context/index.ts:28: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
 src/utilities/cross/index.ts:16: * @standard NIST INCITS-359 role-based-access-control
 src/utilities/cross/index.ts:17: * @standard ISO 27002 §5.15 access-control + §5.3 segregation-of-duties
-src/utilities/crypto/index.ts:10: * @standard FIPS 198-1 HMAC
-src/utilities/crypto/index.ts:9: * @standard FIPS 180-4 SHA-256
+src/utilities/crypto/index.ts:11: * @standard FIPS 180-4 SHA-256
+src/utilities/crypto/index.ts:12: * @standard FIPS 198-1 HMAC
+src/utilities/crypto/index.ts:13: * @standard FIPS 204 ML-DSA
+src/utilities/crypto/index.ts:14: * @standard NIST SP-800-38D AES-GCM
 src/utilities/currency/reconciliation/index.ts:15: * @standard ISO-4217:2023 (currency codes, decimal places)
 src/utilities/currency/reconciliation/index.ts:16: * @standard IFRS-21:2023 (translation of foreign operations)
 src/utilities/currency/reconciliation/index.ts:17: * @standard IFRS-9:2023 (foreign exchange gains/losses)
@@ -1173,28 +1175,22 @@ src/utilities/integrity/content/index.ts:43: * @standard RFC 8785 JSON Canonical
 src/utilities/integrity/content/index.ts:44: * @standard ISO/IEC 10118 hash functions
 src/utilities/integrity/content/index.ts:45: * @standard NIST FIPS 180-4 SHA-256
 src/utilities/integrity/content/test.ts:4: * @standard RFC 9562 §5.8 + RFC 8785 + FIPS 180-4
-src/utilities/integrity/envelope/index.ts:48: * @standard NIST SP 800-38D AES-GCM
-src/utilities/integrity/envelope/index.ts:49: * @standard NIST SP 800-57 §5.6 key-management lifecycles
-src/utilities/integrity/envelope/index.ts:50: * @standard RFC 5116 AEAD
-src/utilities/integrity/envelope/index.ts:51: * @standard RFC 5869 HKDF
-src/utilities/integrity/envelope/index.ts:52: * @standard ISO/IEC 27040 §6.7 storage security
-src/utilities/integrity/envelope/index.ts:53: * @standard ISO/IEC 27001 Annex A.10.1.1 cryptographic-controls policy
-src/utilities/integrity/envelope/index.ts:54: * @standard GDPR Article 32(1)(a) encryption of personal data
-src/utilities/integrity/envelope/index.ts:55: * @standard HIPAA §164.312(a)(2)(iv) encryption of ePHI
-src/utilities/integrity/envelope/index.ts:56: * @standard PCI DSS 4.0 §3.5 strong cryptography
-src/utilities/integrity/envelope/test.ts:17: * @standard NIST SP 800-38D AES-GCM (AEAD authentication failure case)
-src/utilities/integrity/envelope/test.ts:18: * @standard RFC 5869 HKDF (the key derivation step)
+src/utilities/integrity/envelope/index.ts:10: * @standard RFC 5869 HKDF
+src/utilities/integrity/envelope/index.ts:11: * @standard ISO/IEC 27040 §6.7 storage security
+src/utilities/integrity/envelope/index.ts:12: * @standard GDPR Article 32(1)(a) encryption of personal data
+src/utilities/integrity/envelope/index.ts:13: * @standard PCI DSS 4.0 §3.5 strong cryptography
+src/utilities/integrity/envelope/index.ts:7: * @standard NIST SP 800-38D AES-GCM
+src/utilities/integrity/envelope/index.ts:8: * @standard NIST SP 800-57 §5.6 key-management lifecycles
+src/utilities/integrity/envelope/index.ts:9: * @standard RFC 5116 AEAD
+src/utilities/integrity/envelope/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/utilities/integrity/envelope/test.ts:5: * @standard RFC 5869 HKDF
 src/utilities/integrity/resource-bound.ts:31: * @standard NIST FIPS 180-4 sha-256 (the content-uuid digest) — second-preimage 2^256, collision 2^128
 src/utilities/integrity/resource-bound.ts:32: * @standard Landauer 1961 / Bennett 1982 — kT·ln2 minimum per irreversible bit op
-src/utilities/integrity/signatures/index.ts:43: * @standard RFC 8032 EdDSA (Ed25519)
-src/utilities/integrity/signatures/index.ts:44: * @standard RFC 7515 JSON Web Signature (alg names)
-src/utilities/integrity/signatures/index.ts:45: * @standard ETSI EN 319 132-1 XAdES
-src/utilities/integrity/signatures/index.ts:46: * @standard ETSI EN 319 142-1 PAdES
-src/utilities/integrity/signatures/index.ts:47: * @standard eIDAS Regulation (EU) 910/2014 §3.12 qualified electronic signature
-src/utilities/integrity/signatures/index.ts:48: * @standard ISO/IEC 27001 Annex A.10 cryptographic controls
-src/utilities/integrity/signatures/index.ts:49: * @standard NIST SP 800-57 §5.6 key-management lifecycles
-src/utilities/integrity/signatures/test.ts:15: * @standard RFC 8032 EdDSA / Ed25519
-src/utilities/integrity/signatures/test.ts:16: * @standard RFC 7515 JWS compact serialization
+src/utilities/integrity/signatures/index.ts:7: * @standard FIPS 204 ML-DSA
+src/utilities/integrity/signatures/index.ts:8: * @standard RFC 7515 JSON Web Signature compact serialization
+src/utilities/integrity/signatures/index.ts:9: * @standard eIDAS (EU) 910/2014 advanced electronic signature
+src/utilities/integrity/signatures/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/utilities/integrity/signatures/test.ts:5: * @standard FIPS 204 ML-DSA
 src/utilities/integrity/tamper-proof-uuid-field.ts:36: * @standard RFC 9562 §5.8 + RFC 8785 + NIST FIPS 180-4
 src/utilities/integrity/tamper-reverse-cost.ts:43: * @standard RFC 4634 / NIST FIPS 180-4 (sha-256 collision resistance)
 src/utilities/integrity/tamper-reverse-cost.ts:44: * @standard RFC 8032 Ed25519 SUF-CMA security parameter
@@ -1383,15 +1379,10 @@ src/utilities/nist/sp/800/108/index.ts:4: * @standard NIST SP-800-108 key-deriva
 src/utilities/nist/sp/800/108/kdf.ts:10: * @standard NIST FIPS-198-1 hmac
 src/utilities/nist/sp/800/108/kdf.ts:11: * @standard NIST FIPS-180-4 sha-256
 src/utilities/nist/sp/800/108/kdf.ts:9: * @standard NIST SP-800-108 key-derivation-function
-src/utilities/nist/sp/800/38/aes-gcm.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
-src/utilities/nist/sp/800/38/aes-gcm.test.ts:5: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
-src/utilities/nist/sp/800/38/aes-gcm.test.ts:6: * @standard NIST FIPS-197 aes-256
-src/utilities/nist/sp/800/38/aes-gcm.ts:10: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
-src/utilities/nist/sp/800/38/aes-gcm.ts:11: * @standard NIST FIPS-197 aes-256
-src/utilities/nist/sp/800/38/aes-gcm.ts:12: * @standard NIST FIPS-180-4 sha-256
-src/utilities/nist/sp/800/38/aes-gcm.ts:55: * @standard NIST SP-800-38D §6 ghash + §7.1 encrypt
-src/utilities/nist/sp/800/38/aes-gcm.ts:89: * @standard NIST SP-800-38D §7.2 decrypt-and-verify
-src/utilities/nist/sp/800/38/index.ts:4: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
+src/utilities/nist/sp/800/38/index.ts:7: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
+src/utilities/nist/sp/800/38/index.ts:8: * @standard NIST FIPS-197 aes-256
+src/utilities/nist/sp/800/38/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/utilities/nist/sp/800/38/test.ts:5: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/utilities/notification/index.ts:17: * @standard rfc-5321 simple-mail-transfer-protocol
 src/utilities/notification/index.ts:18: * @standard rfc-5322 internet-message-format
 src/utilities/notification/index.ts:19: * @standard rfc-2616 §14.10 https-keep-alive
@@ -1896,8 +1887,9 @@ src/utilities/billing/test.ts:7: * @rfc 8615 well-known-uri webhook-discovery
 src/utilities/cmspage/hooks/beforeChange.ts:8: * @rfc 3986 uri remote-media-source
 src/utilities/country/client/berlin-group-psd2.ts:16: * @rfc 6749 oauth-2.0
 src/utilities/country/client/berlin-group-psd2.ts:17: * @rfc 7519 jwt
-src/utilities/crypto/index.ts:11: * @rfc 9562 §5.8 uuidv8 content-uuid · §4.1 variant
-src/utilities/crypto/index.ts:12: * @rfc 8018 §5.2 PBKDF2
+src/utilities/crypto/index.ts:15: * @rfc 5869 HKDF
+src/utilities/crypto/index.ts:16: * @rfc 9562 §5.8 uuidv8 content-uuid · §4.1 variant
+src/utilities/crypto/index.ts:17: * @rfc 8018 §5.2 PBKDF2
 src/utilities/default/lexical/index.ts:6: * @rfc 3986 uniform-resource-identifier link-fields
 src/utilities/email/cloudflare/index.ts:15: * @rfc 5321 smtp envelope
 src/utilities/email/cloudflare/index.ts:16: * @rfc 5322 internet-message-format
@@ -1936,8 +1928,7 @@ src/utilities/nist/sp/800/108/derive-secret.test.ts:8: * @rfc 2104 hmac
 src/utilities/nist/sp/800/108/derive-secret.test.ts:9: * @rfc 5869 hkdf
 src/utilities/nist/sp/800/108/kdf.ts:12: * @rfc 2104 hmac
 src/utilities/nist/sp/800/108/kdf.ts:13: * @rfc 5869 hkdf hmac-based-key-derivation
-src/utilities/nist/sp/800/38/aes-gcm.test.ts:7: * @rfc 5116 authenticated-encryption-with-associated-data
-src/utilities/nist/sp/800/38/aes-gcm.ts:13: * @rfc 5116 authenticated-encryption-with-associated-data
+src/utilities/nist/sp/800/38/index.ts:9: * @rfc 5116 authenticated-encryption-with-associated-data
 src/utilities/posts/hooks/beforeChange.ts:6: * @rfc 3986 uri remote-media-source
 src/utilities/remote/media/import/index.ts:5: * @rfc 3986 uniform-resource-identifier remote-source
 src/utilities/remote/media/import/index.ts:6: * @rfc 6838 mime-type media-type
@@ -2387,7 +2378,7 @@ src/utilities/country/client/bg-nap-mtls.ts:19: * @compliance SOX §404 internal
 src/utilities/country/client/bg-pades-signer.ts:26: * @compliance EU 910/2014 eidas qualified-electronic-signature
 src/utilities/country/client/bg-pades-signer.ts:95: * @compliance EU 910/2014 eidas Art.28 qualified-seal evidence
 src/utilities/country/client/bg-vat.ts:18: * @compliance EU 2006/112/EC vat-system-directive
-src/utilities/country/client/sign-cms-node.ts:23: * @compliance EU 910/2014 eidas qualified-electronic-signature
+src/utilities/country/client/sign-cms-node.ts:13: * @compliance EU 910/2014 eidas qualified-electronic-signature
 src/utilities/country/context/index.ts:30: * @compliance EU 2014/55 b2g-e-invoicing-mandate-resolution
 src/utilities/default/lexical/index.ts:8: * @compliance WCAG-2.1 level-AA accessibility
 src/utilities/depreciation/service/index.ts:29: * @compliance SOX §404 internal-controls capital-asset-register
@@ -2424,10 +2415,8 @@ src/utilities/nist/incits/359/index.ts:14: * @compliance SOC-2 CC6.1 logical-acc
 src/utilities/nist/incits/359/index.ts:15: * @compliance SOC-2 CC6.3 access-removal
 src/utilities/nist/incits/359/index.ts:16: * @compliance SOX §404 internal-controls
 src/utilities/nist/sp/800/108/kdf.ts:17: * @compliance PCI-DSS-4.0 §3.6 strong-cryptography
-src/utilities/nist/sp/800/38/aes-gcm.test.ts:10: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
-src/utilities/nist/sp/800/38/aes-gcm.test.ts:11: * @compliance PCI-DSS-4.0 §3.6 strong-cryptography
-src/utilities/nist/sp/800/38/aes-gcm.ts:16: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
-src/utilities/nist/sp/800/38/aes-gcm.ts:17: * @compliance PCI-DSS-4.0 §3.6 strong-cryptography
+src/utilities/nist/sp/800/38/index.ts:11: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
+src/utilities/nist/sp/800/38/index.ts:12: * @compliance PCI-DSS-4.0 §3.6 strong-cryptography
 src/utilities/notification/index.ts:20: * @compliance GDPR Art.7 transactional-email-consent
 src/utilities/notification/subscriber.ts:15: * @compliance GDPR Art.7 transactional-consent
 src/utilities/party/workflow.service.ts:9: * @compliance SOX §404 internal-controls
@@ -3267,9 +3256,8 @@ src/utilities/country/client/bg-nap-mtls.ts:16: * @security ISO-27001 A.5.16 ide
 src/utilities/country/client/bg-nap-mtls.ts:17: * @security ISO-27001 A.8.24 use-of-cryptography
 src/utilities/country/client/bg-pades-signer.ts:27: * @security ISO-27001 A.5.16 identity-management
 src/utilities/country/client/bg-pades-signer.ts:28: * @security ISO-27001 A.8.24 use-of-cryptography
-src/utilities/country/client/sign-cms-node.ts:21: * @security ISO-27001 A.5.16 identity-management
-src/utilities/country/client/sign-cms-node.ts:22: * @security ISO-27001 A.8.24 use-of-cryptography
-src/utilities/crypto/index.ts:13: * @security NIST SP-800-132 password-based-key-derivation
+src/utilities/country/client/sign-cms-node.ts:12: * @security ISO-27001 A.8.24 use-of-cryptography
+src/utilities/crypto/index.ts:18: * @security NIST SP-800-132 password-based-key-derivation
 src/utilities/fetch/remote/file/index.ts:13: * @security ISO-27002 §8.23 web-filtering
 src/utilities/get/preview/secret/index.ts:7: * @security ISO-27002 §5.17 authentication-information secret-management
 src/utilities/get/tenant/from/request/index.ts:7: * @security ISO-27001 A.5.18 access-rights
@@ -3296,10 +3284,7 @@ src/utilities/nist/incits/359/types.ts:6: * @security ISO-27002 §5.15 access-co
 src/utilities/nist/sp/800/108/kdf.ts:14: * @security ISO-27001 A.8.24 use-of-cryptography
 src/utilities/nist/sp/800/108/kdf.ts:15: * @security ISO-27002 §8.24 use-of-cryptography
 src/utilities/nist/sp/800/108/kdf.ts:16: * @security ISO-27002 §5.17 authentication-information secret-management
-src/utilities/nist/sp/800/38/aes-gcm.test.ts:8: * @security ISO-27001 A.8.24 use-of-cryptography
-src/utilities/nist/sp/800/38/aes-gcm.test.ts:9: * @security ISO-27002 §8.24 use-of-cryptography
-src/utilities/nist/sp/800/38/aes-gcm.ts:14: * @security ISO-27001 A.8.24 use-of-cryptography
-src/utilities/nist/sp/800/38/aes-gcm.ts:15: * @security ISO-27002 §8.24 use-of-cryptography
+src/utilities/nist/sp/800/38/index.ts:10: * @security ISO-27001 A.8.24 use-of-cryptography
 src/utilities/notification/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/utilities/party/roles/index.ts:15: * @security ISO-27001 A.5.15 access-control · A.5.18 access-rights
 src/utilities/party/workflow.service.ts:8: * @security ISO-27002 §5.3 segregation-of-duties
@@ -3602,7 +3587,6 @@ src/utilities/country/client/bg-nap-mtls.ts:15: * @audit ISO-19011:2018 audit-tr
 src/utilities/country/client/bg-pades-signer.ts:25: * @audit ISO-19011:2018 audit-trail signature-evidence
 src/utilities/country/client/bg-vat.ts:20: * @audit ISO-19011:2018 audit-trail vat-calculation-evidence
 src/utilities/country/client/pdf-text-extractor-default.ts:20: * @audit ISO-19011:2018 audit-trail document-extraction-evidence
-src/utilities/country/client/sign-cms-node.ts:20: * @audit ISO-19011:2018 audit-trail signature-evidence
 src/utilities/country/context/index.ts:29: * @audit ISO-19011:2018 audit-trail country-decision-evidence
 src/utilities/depreciation/service/index.ts:28: * @audit ISO-19011:2018 audit-trail depreciation-evidence
 src/utilities/digit/index.ts:6: * @audit the digit address is computed from the live matrix, never hand-maintained
@@ -3622,9 +3606,7 @@ src/utilities/factory/recompute-parent-aggregates.ts:27: * @audit ISO-19011:2018
 src/utilities/field/index.ts:7: * @audit Flat namespace to eliminate circular imports and duplicate definitions.
 src/utilities/gl/account/resolver/index.ts:27: * @audit ISO-19011:2018 audit-trail account-resolution
 src/utilities/integrity/content/index.ts:46: * @audit ISO 19011:2018 §6.4.6 audit-evidence
-src/utilities/integrity/envelope/index.ts:57: * @audit ISO 19011:2018 §6.4.6 (every encrypt/decrypt produces an audit-events row)
 src/utilities/integrity/resource-bound.ts:33: * @audit Conservation Law 55 (tamper-reversibility-cost) — physical bound
-src/utilities/integrity/signatures/index.ts:50: * @audit ISO 19011:2018 §6.4.6 (every verification produces an audit-events row)
 src/utilities/integrity/tamper-proof-uuid-field.ts:37: * @audit ISO 19011:2018 §6.4.6
 src/utilities/integrity/tamper-reverse-cost.test.ts:15: * @audit Conservation Law 55 tamper-reversibility-cost
 src/utilities/integrity/tamper-reverse-cost.ts:49: * @audit Conservation Law 8 + Slice TTTTTTTT (uuid-linked chain)

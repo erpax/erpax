@@ -172,7 +172,7 @@
     "typescript": "6.0.3",
     "vite": "^8.2.4",
     "vitest": "^4.1.11",
-    "wrangler": "^4.141.0",
+    "wrangler": "^4.156.1",
     "yaml": "^2.9.0"
   },
   "engines": {

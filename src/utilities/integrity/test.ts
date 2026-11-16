@@ -67,7 +67,7 @@ describe('integrity — signed-uuid JWS round-trip (RFC 7515)', () => {
   it('toJws → fromJws recovers (uuid, alg, kid, sig, signedAt)', () => {
     const signed = {
       uuid: computeContentUuid({ amount: 1 }, 't') as never,
-      alg: 'EdDSA' as const,
+      alg: 'ML-DSA-44' as const,
       kid: 'tenant-1/signing/2026-05-11',
       sig: 'AAAA',
       signedAt: '2026-05-11T08:00:00.000Z',

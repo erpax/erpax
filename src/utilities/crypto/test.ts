@@ -1,7 +1,9 @@
-import { pbkdf2Sync } from 'node:crypto'
+import { createVerify, generateKeyPairSync, pbkdf2Sync } from 'node:crypto'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 
-import { cross, formatUuid, hmacSha256, PBKDF2_ROUND_CAP, roundSalt, sha256, sha256Hex, stretch, uuidBytes, uuidV8 } from '@/utilities/crypto'
+import { cross, formatUuid, hkdf, hmacSha256, isSealed, open, PBKDF2_ROUND_CAP, roundSalt, rsaSha256Sign, seal, sha256, sha256Hex, SIGNATURE, sign, signingKeys, stretch, uuidBytes, uuidV8, verify } from '@/utilities/crypto'
 
 // Golden values computed by the implementations this module replaced (integrity/content nameUuid and
 // nameDigest, uuid/matrix toUuid and merge, nist/sp/800/108 deriveSecretFrom), before they were routed
@@ -50,5 +52,48 @@ describe('crypto — stretch: PBKDF2 past the Workers cap, in capped rounds', ()
     const a = await stretch({ iterations: PBKDF2_ROUND_CAP + 1, keyLength: 32, password: 'pw', salt })
     const b = await stretch({ iterations: PBKDF2_ROUND_CAP + 1, keyLength: 32, password: 'pw', salt: 'cd'.repeat(32) })
     expect(a.equals(b)).toBe(false)
+  })
+})
+
+describe('crypto — key derivation, sealing and signatures', () => {
+  it('derives HKDF-SHA256 as RFC 5869 test case 1 says', () => {
+    const okm = hkdf({
+      key: Buffer.from('0b'.repeat(22), 'hex'),
+      salt: Buffer.from('000102030405060708090a0b0c', 'hex'),
+      info: Buffer.from('f0f1f2f3f4f5f6f7f8f9', 'hex'),
+      length: 42,
+    })
+    expect(okm.toString('hex')).toBe('3cb25f25faacd57a90434f64d0362f2a2d2d0a90cf1a5a4c5db02d56ecc4c5bf34007208d5b887185865')
+  })
+
+  it('seals with AES-256-GCM under a 32-byte key, bound to its additional data', () => {
+    const key = hkdf({ key: 'k', salt: 's', info: 'test' })
+    const token = seal(key, 'a value', 'field')
+    expect(isSealed(token)).toBe(true)
+    expect(open(key, token, 'field').toString()).toBe('a value')
+    expect(seal(key, 'a value', 'field')).not.toBe(token)
+    expect(() => open(key, token, 'another field')).toThrow()
+    expect(() => open(hkdf({ key: 'other', salt: 's', info: 'test' }), token, 'field')).toThrow()
+    expect(() => seal(Buffer.alloc(16), 'x')).toThrow(/32 bytes/)
+    expect(() => open(key, 'not a token')).toThrow()
+  })
+
+  it('signs with ML-DSA, the set Cost.lean decides, and verifies under the matching key only', async () => {
+    const lean = readFileSync(join(import.meta.dirname, '..', 'verify', 'lean', 'Cost.lean'), 'utf8')
+    expect(lean).toContain('theorem the_signature_is_ml_dsa_44 : cheapest (collision 256) mlDsa = 44')
+    expect(SIGNATURE).toBe('ML-DSA-44')
+    const mine = await signingKeys()
+    const theirs = await signingKeys()
+    const signature = await sign(mine.privateKey, 'part one', ' part two')
+    expect(await verify(mine.publicKey, signature, 'part one part two')).toBe(true)
+    expect(await verify(theirs.publicKey, signature, 'part one part two')).toBe(false)
+    expect(await verify(mine.publicKey, signature, 'part one, altered')).toBe(false)
+    expect(await verify(mine.publicKey, Buffer.from('short'), 'part one part two')).toBe(false)
+  })
+
+  it('signs RSA-SHA256 for a PKI that requires it, verifiable by any standard verifier', () => {
+    const { privateKey, publicKey } = generateKeyPairSync('rsa', { modulusLength: 2048, privateKeyEncoding: { type: 'pkcs8', format: 'pem' }, publicKeyEncoding: { type: 'spki', format: 'pem' } })
+    const signature = rsaSha256Sign(privateKey, 'pdf bytes')
+    expect(createVerify('RSA-SHA256').update('pdf bytes').verify(publicKey, signature)).toBe(true)
   })
 })
