@@ -76,9 +76,10 @@ function makeFakePayload(store: FakeStore) {
       }
       if (args.collection === 'audit-events') {
         store.audits.push({
-          event: String(args.data.eventName),
-          signatureRequired: (args.data.signatureRequired as boolean) ?? false,
-          chainLinkStatus: (args.data.chainLinkStatus as string) ?? 'unbound',
+          // the audit-events schema: eventType, and the chain state in changeSummary
+          event: String(args.data.eventType),
+          signatureRequired: ((args.data.changeSummary as Record<string, unknown> | undefined)?.signatureRequired as boolean) ?? false,
+          chainLinkStatus: ((args.data.changeSummary as Record<string, unknown> | undefined)?.chainLinkStatus as string) ?? 'unbound',
         })
         return { id: `ae-${store.audits.length}` }
       }
