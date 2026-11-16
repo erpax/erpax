@@ -11,7 +11,9 @@
  *  1. An anchor belongs to its app.
  *  2. A HUB — a collection so widely referenced that it says nothing about an app (`hubsOf`: a
  *     tenth of all collections point at it) — is ignored as a neighbour, anchor or not. An upload
- *     is an attachment and is not counted as a reference at all.
+ *     is an attachment and is not counted as a reference at all, and neither is anything inside a
+ *     field marked `custom: { places: false }`: a governed document (the `document` concern on
+ *     pages) refers to things of every app, which says nothing about the app they belong to.
  *  3. Each round, every unplaced collection counts its references to already-placed neighbours per
  *     app and takes the app with the most; a tie goes to the app listed first. Rounds
  *     are synchronous: a round reads only the previous round's placements.
@@ -139,7 +141,9 @@ export const appSlugs = (collections: ReadonlyArray<{ readonly slug: string }>, 
 /** Every relationship target in a list of fields, however deeply nested. */
 const targetsIn = (fields: readonly Field[], out: string[] = []): string[] => {
   for (const raw of fields) {
-    const field = raw as unknown as { type: string; relationTo?: string | string[]; fields?: Field[]; tabs?: Array<{ fields: Field[] }>; blocks?: Array<{ fields: Field[] }> }
+    const field = raw as unknown as { type: string; relationTo?: string | string[]; fields?: Field[]; tabs?: Array<{ fields: Field[] }>; blocks?: Array<{ fields: Field[] }>; custom?: { places?: boolean } }
+    // a document about things of every app says nothing about which app they belong to
+    if (field.custom?.places === false) continue
     // an upload is an attachment: it says nothing about which app a collection belongs to
     if (field.type === 'relationship' && field.relationTo !== undefined) out.push(...[field.relationTo].flat())
     if (field.fields) targetsIn(field.fields, out)

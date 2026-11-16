@@ -76,4 +76,23 @@ describe('governed documents on pages — never public, read and written by the 
     expect(await mayWrite(req(tenantAdmin), MC, 't1', none)).toBe(true)
     expect(await mayWrite(req(finance), MC, 't1', none)).toBe(false)
   })
+
+  it('a statutory report template names its jurisdiction, carries its sections and mappings, and ends after it takes effect', () => {
+    const SRT = 'statutory-report-template'
+    const block = (effectiveTo?: string) => ({ blockType: SRT, reportType: 'annual-report', effectiveTo, sections: [{ sectionName: 'Balance sheet', sequence: 1, mandatory: true }], fieldMappings: [{ mappingName: 'Revenue', fieldName: 'revenue', sourceCollection: 'gl-accounts', sourceField: 'balance' }] })
+    expect(documentError(SRT, { effectiveDate: '2026-01-01', details: [block()] })).toMatch(/names its jurisdiction/)
+    expect(documentError(SRT, { effectiveDate: '2026-01-01', jurisdiction: 'bg' })).toMatch(/carries its details/)
+    expect(documentError(SRT, { effectiveDate: '2026-01-01', jurisdiction: 'bg', details: [block()] })).toBe(true)
+    expect(documentError(SRT, { effectiveDate: '2026-01-01', jurisdiction: 'bg', details: [block('2026-12-31')] })).toBe(true)
+    expect(documentError(SRT, { effectiveDate: '2026-01-01', jurisdiction: 'bg', details: [block('2025-12-31')] })).toMatch(/ends after it takes effect/)
+  })
+
+  it('a statutory report template is read by audit and compliance staff and written by a super-admin only', async () => {
+    const SRT = 'statutory-report-template'
+    expect(abilityForRoles({ roles: ['user', 'compliance-officer'] }).permits('read', 'pages', { documentType: SRT })).toBe(true)
+    expect(abilityForRoles({ roles: ['user', 'finance'] }).permits('read', 'pages', { documentType: SRT })).toBe(false)
+    expect(abilityForRoles({ roles: ['admin'] }).permits('update', 'pages', { documentType: SRT })).toBe(false)
+    expect(await mayWrite(req(tenantAdmin), SRT, 't1', none)).toBe(false)
+    expect(await mayWrite(req(superAdmin), SRT, 't1', none)).toBe(true)
+  })
 })

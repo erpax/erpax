@@ -83,7 +83,7 @@ export const documentError = (type: string | null | undefined, document: Record<
   const details = (document?.details as { blockType?: string }[] | undefined)?.[0]
   if (details && details.blockType !== spec.value) return `A ${spec.label.toLowerCase()} carries its own details, not ${details.blockType}.`
   if (spec.block && !details) return `A ${spec.label.toLowerCase()} carries its details.`
-  return details && spec.check ? spec.check(details as Record<string, unknown>) : true
+  return details && spec.check ? spec.check(details as Record<string, unknown>, document ?? {}) : true
 }
 
 /** Refuses a change into or out of a type the writer may not write, and a governed page missing what its type requires. */
@@ -113,6 +113,9 @@ export const governedDocumentFields = (): Field[] => [
   {
     name: 'document',
     type: 'group',
+    // A governed document refers to things of every app (an entity type, a jurisdiction, findings); that says
+    // nothing about which app they belong to, so these references do not move them (src/packages/engine).
+    custom: { places: false },
     admin: { description: 'What every governed document has. The title is its name and the content its text.' },
     fields: [
       {

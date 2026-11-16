@@ -341,7 +341,6 @@ export interface Config {
     'post-close-analytics-reports': PostCloseAnalyticsReport;
     'prior-period-adjustments': PriorPeriodAdjustment;
     provisions: Provision;
-    'statutory-report-templates': StatutoryReportTemplate;
     'tax-calculations': TaxCalculation;
     'tax-codes': TaxCode;
     'tax-jurisdictions': TaxJurisdiction;
@@ -569,7 +568,6 @@ export interface Config {
     'post-close-analytics-reports': PostCloseAnalyticsReportsSelect<false> | PostCloseAnalyticsReportsSelect<true>;
     'prior-period-adjustments': PriorPeriodAdjustmentsSelect<false> | PriorPeriodAdjustmentsSelect<true>;
     provisions: ProvisionsSelect<false> | ProvisionsSelect<true>;
-    'statutory-report-templates': StatutoryReportTemplatesSelect<false> | StatutoryReportTemplatesSelect<true>;
     'tax-calculations': TaxCalculationsSelect<false> | TaxCalculationsSelect<true>;
     'tax-codes': TaxCodesSelect<false> | TaxCodesSelect<true>;
     'tax-jurisdictions': TaxJurisdictionsSelect<false> | TaxJurisdictionsSelect<true>;
@@ -1636,7 +1634,7 @@ export interface Page {
   /**
    * A governed document is never public; its type names who reads and writes it. Empty for a website page.
    */
-  documentType?: ('reporting-standard' | 'management-certification') | null;
+  documentType?: ('reporting-standard' | 'management-certification' | 'statutory-report-template') | null;
   /**
    * What every governed document has. The title is its name and the content its text.
    */
@@ -1656,7 +1654,7 @@ export interface Page {
     /**
      * What the standard of this type needs beyond the fields above: one block, matching the type.
      */
-    details?: ManagementCertificationBlock[] | null;
+    details?: (ManagementCertificationBlock | StatutoryReportTemplateBlock)[] | null;
     /**
      * Links FROM this document to another — a standard mapped to another, a template to its source — with the element rules.
      */
@@ -3218,6 +3216,113 @@ export interface InternalPolicy {
         id?: string | null;
       }[]
     | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "StatutoryReportTemplateBlock".
+ */
+export interface StatutoryReportTemplateBlock {
+  reportType: 'annual-report' | 'tax-return' | 'regulatory-filing' | 'financial-statements' | 'audit-report';
+  entityType?: (string | null) | EntityType;
+  /**
+   * The last day the template applies; it takes effect on the effective date.
+   */
+  effectiveTo?: string | null;
+  sections?:
+    | {
+        sectionName?: string | null;
+        sequence?: number | null;
+        mandatory?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Where each field of the report is sourced from.
+   */
+  fieldMappings?:
+    | {
+        mappingName: string;
+        fieldName: string;
+        fieldType?: ('text' | 'number' | 'date' | 'currency' | 'percentage' | 'boolean') | null;
+        mandatory?: boolean | null;
+        sourceCollection?: string | null;
+        sourceField?: string | null;
+        transformation?: LexicalRichText<LexicalNodes_AD327369> | null;
+        validationRules?: LexicalRichText<LexicalNodes_AD327369> | null;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'statutory-report-template';
+}
+/**
+ * Read-only reference data for entity type classifications
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "entity-types".
+ */
+export interface EntityType {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Entity type code (e.g., "CORP", "LLC", "PART")
+   */
+  code: string;
+  /**
+   * Entity type label (e.g., "Corporation")
+   */
+  label: string;
+  /**
+   * Category of entity type
+   */
+  category: 'for-profit-corp' | 'llc' | 'partnership' | 'nonprofit' | 'trust' | 'government' | 'individual';
+  /**
+   * Detailed description
+   */
+  description?: string | null;
+  /**
+   * Key characteristics (ownership, governance, taxation)
+   */
+  characteristics?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Which jurisdictions recognize this entity type
+   */
+  jurisdictionApplicability?:
+    | {
+        jurisdiction: string;
+        applicableInJurisdiction?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Default compliance frameworks for this entity type
+   */
+  defaultComplianceFrameworks?: (string | ComplianceFramework)[] | null;
+  isActive?: boolean | null;
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -12153,74 +12258,6 @@ export interface EntityLegalStructure {
   createdAt: string;
 }
 /**
- * Read-only reference data for entity type classifications
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "entity-types".
- */
-export interface EntityType {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Entity type code (e.g., "CORP", "LLC", "PART")
-   */
-  code: string;
-  /**
-   * Entity type label (e.g., "Corporation")
-   */
-  label: string;
-  /**
-   * Category of entity type
-   */
-  category: 'for-profit-corp' | 'llc' | 'partnership' | 'nonprofit' | 'trust' | 'government' | 'individual';
-  /**
-   * Detailed description
-   */
-  description?: string | null;
-  /**
-   * Key characteristics (ownership, governance, taxation)
-   */
-  characteristics?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Which jurisdictions recognize this entity type
-   */
-  jurisdictionApplicability?:
-    | {
-        jurisdiction: string;
-        applicableInJurisdiction?: boolean | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Default compliance frameworks for this entity type
-   */
-  defaultComplianceFrameworks?: (string | ComplianceFramework)[] | null;
-  isActive?: boolean | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "financial-statements".
  */
@@ -12897,60 +12934,6 @@ export interface PriorPeriodAdjustment {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "statutory-report-templates".
- */
-export interface StatutoryReportTemplate {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  templateName: string;
-  jurisdiction: string | TaxJurisdiction;
-  reportType: 'annual-report' | 'tax-return' | 'regulatory-filing' | 'financial-statements' | 'audit-report';
-  entityType?: (string | null) | EntityType;
-  sections?:
-    | {
-        sectionName?: string | null;
-        sequence?: number | null;
-        mandatory?: boolean | null;
-        id?: string | null;
-      }[]
-    | null;
-  templateDocument?: (string | null) | Media;
-  effectiveFrom: string;
-  effectiveTo?: string | null;
-  /**
-   * Where each field of this template is sourced from (formerly the statutory-field-mappings collection — a mapping belongs to exactly one template).
-   */
-  fieldMappings?:
-    | {
-        mappingName: string;
-        fieldName: string;
-        fieldType?: ('text' | 'number' | 'date' | 'currency' | 'percentage' | 'boolean') | null;
-        sourceCollection?: string | null;
-        sourceField?: string | null;
-        transformation?: LexicalRichText<LexicalNodes_AD327369> | null;
-        mandatory?: boolean | null;
-        validationRules?: LexicalRichText<LexicalNodes_AD327369> | null;
-        id?: string | null;
-      }[]
-    | null;
   handle?: string | null;
   createdBy?: {
     relationTo: 'users';
@@ -20244,7 +20227,6 @@ export interface PayloadQueryPreset {
     | 'post-close-analytics-reports'
     | 'prior-period-adjustments'
     | 'provisions'
-    | 'statutory-report-templates'
     | 'tax-calculations'
     | 'tax-codes'
     | 'tax-jurisdictions'
@@ -20843,6 +20825,7 @@ export interface PagesSelect<T extends boolean = true> {
           | T
           | {
               'management-certification'?: T | ManagementCertificationBlockSelect<T>;
+              'statutory-report-template'?: T | StatutoryReportTemplateBlockSelect<T>;
             };
         links?:
           | T
@@ -20970,6 +20953,38 @@ export interface ManagementCertificationBlockSelect<T extends boolean = true> {
         id?: T;
       };
   relatedFindings?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "StatutoryReportTemplateBlock_select".
+ */
+export interface StatutoryReportTemplateBlockSelect<T extends boolean = true> {
+  reportType?: T;
+  entityType?: T;
+  effectiveTo?: T;
+  sections?:
+    | T
+    | {
+        sectionName?: T;
+        sequence?: T;
+        mandatory?: T;
+        id?: T;
+      };
+  fieldMappings?:
+    | T
+    | {
+        mappingName?: T;
+        fieldName?: T;
+        fieldType?: T;
+        mandatory?: T;
+        sourceCollection?: T;
+        sourceField?: T;
+        transformation?: T;
+        validationRules?: T;
+        id?: T;
+      };
   id?: T;
   blockName?: T;
 }
@@ -23803,47 +23818,6 @@ export interface ProvisionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "statutory-report-templates_select".
- */
-export interface StatutoryReportTemplatesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  templateName?: T;
-  jurisdiction?: T;
-  reportType?: T;
-  entityType?: T;
-  sections?:
-    | T
-    | {
-        sectionName?: T;
-        sequence?: T;
-        mandatory?: T;
-        id?: T;
-      };
-  templateDocument?: T;
-  effectiveFrom?: T;
-  effectiveTo?: T;
-  fieldMappings?:
-    | T
-    | {
-        mappingName?: T;
-        fieldName?: T;
-        fieldType?: T;
-        sourceCollection?: T;
-        sourceField?: T;
-        transformation?: T;
-        mandatory?: T;
-        validationRules?: T;
-        id?: T;
-      };
   handle?: T;
   createdBy?: T;
   updatedBy?: T;
@@ -29179,7 +29153,6 @@ export interface CollectionQueryWidget {
       | 'post-close-analytics-reports'
       | 'prior-period-adjustments'
       | 'provisions'
-      | 'statutory-report-templates'
       | 'tax-calculations'
       | 'tax-codes'
       | 'tax-jurisdictions'
@@ -29392,7 +29365,6 @@ export interface ActivityWidget {
           | 'post-close-analytics-reports'
           | 'prior-period-adjustments'
           | 'provisions'
-          | 'statutory-report-templates'
           | 'tax-calculations'
           | 'tax-codes'
           | 'tax-jurisdictions'
@@ -29643,7 +29615,6 @@ export interface TaskCreateCollectionExport {
       | 'post-close-analytics-reports'
       | 'prior-period-adjustments'
       | 'provisions'
-      | 'statutory-report-templates'
       | 'tax-calculations'
       | 'tax-codes'
       | 'tax-jurisdictions'
