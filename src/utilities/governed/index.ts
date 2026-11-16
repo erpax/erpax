@@ -1410,6 +1410,94 @@ export const regulatoryReportError = (details: Record<string, unknown>): string 
   return true
 }
 
+/**
+ * Management's assessment of internal control over financial reporting for a period (SOX §404(a)): the
+ * framework, the five COSO components assessed, the deficiencies and weaknesses found and their
+ * remediation, the conclusion, and the officers who certify it.
+ *
+ * @compliance SOX §404(a) management-assessment-ICFR
+ * @standard COSO-2013 internal-control-integrated-framework
+ * @standard PCAOB AS 2201 ICFR
+ */
+export const IcfrAssessment: Block = {
+  slug: 'icfr-assessment',
+  interfaceName: 'IcfrAssessmentBlock',
+  labels: { singular: 'ICFR assessment', plural: 'ICFR assessments' },
+  fields: [
+    {
+      type: 'row',
+      fields: [
+        { name: 'entity', type: 'relationship', relationTo: 'legal-entities', required: true },
+        {
+          name: 'controlFramework',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'COSO 2013', value: 'coso-2013' },
+            { label: 'COSO 1992', value: 'coso-1992' },
+            { label: 'COSO Guidance (Enterprise Risk Management)', value: 'coso-erm' },
+            { label: 'Other', value: 'other' },
+          ],
+        },
+        {
+          name: 'status',
+          type: 'select',
+          required: true,
+          defaultValue: 'draft',
+          options: [
+            { label: 'Draft', value: 'draft' },
+            { label: 'Final', value: 'final' },
+            { label: 'Auditor-Reviewed', value: 'auditor-reviewed' },
+            { label: 'Certified', value: 'certified' },
+            { label: 'Filed', value: 'filed' },
+          ],
+        },
+      ],
+    },
+    { name: 'controlEnvironmentAssessment', type: 'richText', required: true, admin: { description: 'Assessment of control environment (tone at top, integrity, values, competence).' } },
+    { name: 'riskAssessmentAssessment', type: 'richText', required: true, admin: { description: 'Assessment of risk identification and assessment processes.' } },
+    { name: 'controlActivitiesAssessment', type: 'richText', required: true, admin: { description: 'Assessment of preventive/detective control activities.' } },
+    { name: 'informationCommunicationAssessment', type: 'richText', required: true, admin: { description: 'Assessment of information systems and communication.' } },
+    { name: 'monitoringAssessment', type: 'richText', required: true, admin: { description: 'Assessment of ongoing and separate monitoring activities.' } },
+    {
+      type: 'row',
+      fields: [
+        { name: 'significantDeficienciesIdentified', type: 'checkbox', defaultValue: false },
+        { name: 'materialWeaknessesIdentified', type: 'checkbox', defaultValue: false },
+      ],
+    },
+    { name: 'deficiencyDetails', type: 'richText', admin: { description: 'Description of any significant deficiencies or material weaknesses.' } },
+    { name: 'remediationActions', type: 'richText', admin: { description: 'Remediation actions planned or in progress.' } },
+    { name: 'conclusionStatement', type: 'richText', required: true, admin: { description: 'Conclusion: "...effective" or "...not effective" per SOX 302/906.' } },
+    { name: 'managementAcknowledgment', type: 'richText', required: true, admin: { description: 'Management certification statement acknowledging responsibility for ICFR.' } },
+    {
+      name: 'certifyingOfficers',
+      type: 'array',
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'title', type: 'text', required: true },
+            { name: 'name', type: 'text', required: true },
+            { name: 'signatureDate', type: 'date', required: true },
+            { name: 'signatureDocument', type: 'upload', relationTo: 'media' },
+          ],
+        },
+      ],
+    },
+    { name: 'relatedAuditFindings', type: 'relationship', relationTo: 'audit-findings', hasMany: true },
+    { name: 'relatedControlTests', type: 'relationship', relationTo: 'control-tests', hasMany: true },
+  ],
+}
+
+/** A deficiency or weakness found is described; a certified or filed assessment names the officers who certify it. */
+export const icfrError = (details: Record<string, unknown>): string | true => {
+  if ((details.significantDeficienciesIdentified === true || details.materialWeaknessesIdentified === true) && !details.deficiencyDetails) return 'An assessment that finds a significant deficiency or material weakness describes it.'
+  const officers = (details.certifyingOfficers as unknown[] | undefined) ?? []
+  if ((details.status === 'certified' || details.status === 'filed') && officers.length === 0) return 'A certified assessment names the officers who certify it.'
+  return true
+}
+
 export const GOVERNED_TYPES: readonly GovernedType[] = [
   // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
   {
@@ -1562,5 +1650,16 @@ export const GOVERNED_TYPES: readonly GovernedType[] = [
     requires: ['jurisdiction'],
     block: RegulatoryReport,
     check: regulatoryReportError,
+  },
+  // was management-assessment-icfr: read by admin, audit staff and compliance; written by admins. The period is the
+  // page title, the scope its content, the assessment date the effective date, the auditor's attestation an attachment.
+  {
+    value: 'icfr-assessment',
+    label: 'ICFR assessment',
+    read: ['admin', 'audit-staff', 'compliance-officer'],
+    write: ['admin'],
+    requires: ['effectiveDate'],
+    block: IcfrAssessment,
+    check: icfrError,
   },
 ]

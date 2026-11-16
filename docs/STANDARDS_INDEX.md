@@ -414,8 +414,6 @@ src/collections/maintenance-work-orders/index.ts:14: * @standard ISO-55001:2014 
 src/collections/maintenance-work-orders/index.ts:15: * @standard ISO-14224:2016 reliability-and-maintenance-data
 src/collections/maintenance-work-orders/index.ts:16: * @standard EN-13306:2017 maintenance-terminology
 src/collections/maintenance-work-orders/index.ts:17: * @standard ISO-8601-1:2019 date-time scheduled-actual
-src/collections/management-assessment-icfr/index.ts:5: * @standard COSO-2013 internal-control-integrated-framework
-src/collections/management-assessment-icfr/index.ts:6: * @standard PCAOB AS 2201 ICFR
 src/collections/media/index.ts:17: * @standard ISO/IEC-23008 high-efficiency-coding
 src/collections/media/index.ts:18: * @standard ISO/IEC-10918 jpeg
 src/collections/media/index.ts:19: * @standard W3C PNG image
@@ -1142,6 +1140,8 @@ src/utilities/governed/index.ts:1132: * @standard ISO-4217:2015 currency-codes
 src/utilities/governed/index.ts:1133: * @standard ISO-8601-1:2019 date-time classification-date
 src/utilities/governed/index.ts:1337: * @standard SAF-T OECD standard-audit-file-tax
 src/utilities/governed/index.ts:1338: * @standard XBRL business-reporting
+src/utilities/governed/index.ts:1419: * @standard COSO-2013 internal-control-integrated-framework
+src/utilities/governed/index.ts:1420: * @standard PCAOB AS 2201 ICFR
 src/utilities/governed/index.ts:194: * @standard ISO-37301:2021 compliance-management-systems
 src/utilities/governed/index.ts:195: * @standard ISO-8601-1:2019 due-date
 src/utilities/governed/index.ts:316: * @standard ISO-8601-1:2019 date-time review-due-at
@@ -2179,7 +2179,6 @@ src/collections/legal-entities/index.ts:34: * @compliance EU DAC-6 reportable-cr
 src/collections/lot-work-phases/index.ts:28: * @compliance SOX §404 internal-controls production-control
 src/collections/lots/index.ts:30: * @compliance SOX §404 internal-controls production-control
 src/collections/maintenance-work-orders/index.ts:22: * @compliance SOX §404 internal-controls capex-vs-opex-classification
-src/collections/management-assessment-icfr/index.ts:4: * @compliance SOX §404(a) management-assessment-ICFR
 src/collections/media/index.ts:21: * @compliance GDPR Art.5(1)(c) data-minimization no-pii-in-filenames
 src/collections/media/index.ts:22: * @compliance GDPR Art.32 security-of-processing
 src/collections/messages/index.ts:14: * @compliance GDPR Art 5(1)(e) storage-limitation retention
@@ -2390,6 +2389,7 @@ src/utilities/gl/account/resolver/index.ts:28: * @compliance SOX §404 internal-
 src/utilities/governed/index.ts:1059: * @compliance SOX §404 internal-controls
 src/utilities/governed/index.ts:1135: * @compliance SOX §404 internal-controls
 src/utilities/governed/index.ts:1339: * @compliance local-regulatory-filing
+src/utilities/governed/index.ts:1418: * @compliance SOX §404(a) management-assessment-ICFR
 src/utilities/governed/index.ts:317: * @compliance GDPR Art.30(1) records-controller
 src/utilities/governed/index.ts:318: * @compliance GDPR Art.30(2) records-processor
 src/utilities/governed/index.ts:319: * @compliance GDPR Art.5(1)(e) storage-limitation
@@ -3109,7 +3109,6 @@ src/collections/lot-variants/index.ts:30: * @security ISO-27001 A.5.23 cloud-ser
 src/collections/lot-work-phases/index.ts:29: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/lots/index.ts:31: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/maintenance-work-orders/index.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/management-assessment-icfr/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/mineral-resource-assets/index.ts:20: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/operators/index.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/opportunities/index.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation

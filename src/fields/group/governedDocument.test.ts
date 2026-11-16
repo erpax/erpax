@@ -46,7 +46,7 @@ describe('governed documents on pages — never public, read and written by the 
     expect(await mayWrite(req(superAdmin), STD, 't1', none)).toBe(true)
     const write = pageWrite(() => ({ tenant: { equals: 't1' } }), none)
     await expect(write({ req: req(tenantAdmin), data: { documentType: STD, tenant: 't1' } } as never)).resolves.toBe(false)
-    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline', 'processing-activity', 'internal-audit-function', 'debt-instrument', 'related-party-transaction', 'regulatory-report'] } }] })
+    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline', 'processing-activity', 'internal-audit-function', 'debt-instrument', 'related-party-transaction', 'regulatory-report', 'icfr-assessment'] } }] })
   })
 
   it('a type names what it requires', async () => {
@@ -254,5 +254,15 @@ describe('governed documents on pages — never public, read and written by the 
     expect(documentError(RR, { jurisdiction: 'bg', details: [block({ fiscalPeriodEnd: '2024-12-31' })] })).toMatch(/ends after it starts/)
     expect(documentError(RR, { jurisdiction: 'bg', details: [block({ status: 'accepted' })] })).toMatch(/names its submission date/)
     expect(documentError(RR, { jurisdiction: 'bg', details: [block({ reportType: 'grant-report' })] })).toMatch(/names the grant/)
+  })
+
+  it('an ICFR assessment describes the deficiencies it finds and names its certifying officers when certified', () => {
+    const IC = 'icfr-assessment'
+    const block = (extra: object = {}) => ({ blockType: IC, entity: 'e1', controlFramework: 'coso-2013', status: 'final', ...extra })
+    expect(documentError(IC, { details: [block()] })).toMatch(/names its effectiveDate/)
+    expect(documentError(IC, { effectiveDate: '2026-02-28', details: [block()] })).toBe(true)
+    expect(documentError(IC, { effectiveDate: '2026-02-28', details: [block({ materialWeaknessesIdentified: true })] })).toMatch(/describes it/)
+    expect(documentError(IC, { effectiveDate: '2026-02-28', details: [block({ status: 'certified' })] })).toMatch(/names the officers/)
+    expect(documentError(IC, { effectiveDate: '2026-02-28', details: [block({ status: 'certified', certifyingOfficers: [{ title: 'CEO', name: 'A. Georgiev', signatureDate: '2026-02-28' }] })] })).toBe(true)
   })
 })

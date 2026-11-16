@@ -392,7 +392,6 @@ export interface Config {
     'government-grants': GovernmentGrant;
     'internal-controls': InternalControl;
     'internal-policies': InternalPolicy;
-    'management-assessment-icfr': ManagementAssessmentIcfr;
     'risk-register': RiskRegister;
     'segment-reporting': SegmentReporting;
     'biological-assets': BiologicalAsset;
@@ -609,7 +608,6 @@ export interface Config {
     'government-grants': GovernmentGrantsSelect<false> | GovernmentGrantsSelect<true>;
     'internal-controls': InternalControlsSelect<false> | InternalControlsSelect<true>;
     'internal-policies': InternalPoliciesSelect<false> | InternalPoliciesSelect<true>;
-    'management-assessment-icfr': ManagementAssessmentIcfrSelect<false> | ManagementAssessmentIcfrSelect<true>;
     'risk-register': RiskRegisterSelect<false> | RiskRegisterSelect<true>;
     'segment-reporting': SegmentReportingSelect<false> | SegmentReportingSelect<true>;
     'biological-assets': BiologicalAssetsSelect<false> | BiologicalAssetsSelect<true>;
@@ -1629,6 +1627,7 @@ export interface Page {
         | 'held-for-sale'
         | 'related-party-transaction'
         | 'regulatory-report'
+        | 'icfr-assessment'
       )
     | null;
   /**
@@ -1664,6 +1663,7 @@ export interface Page {
           | HeldForSaleBlock
           | RelatedPartyTransactionBlock
           | RegulatoryReportBlock
+          | IcfrAssessmentBlock
         )[]
       | null;
     /**
@@ -8682,6 +8682,67 @@ export interface RegulatoryReportBlock {
   id?: string | null;
   blockName?: string | null;
   blockType: 'regulatory-report';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IcfrAssessmentBlock".
+ */
+export interface IcfrAssessmentBlock {
+  entity: string | LegalEntity;
+  controlFramework: 'coso-2013' | 'coso-1992' | 'coso-erm' | 'other';
+  status: 'draft' | 'final' | 'auditor-reviewed' | 'certified' | 'filed';
+  /**
+   * Assessment of control environment (tone at top, integrity, values, competence).
+   */
+  controlEnvironmentAssessment: LexicalRichText<LexicalNodes_AD327369>;
+  /**
+   * Assessment of risk identification and assessment processes.
+   */
+  riskAssessmentAssessment: LexicalRichText<LexicalNodes_AD327369>;
+  /**
+   * Assessment of preventive/detective control activities.
+   */
+  controlActivitiesAssessment: LexicalRichText<LexicalNodes_AD327369>;
+  /**
+   * Assessment of information systems and communication.
+   */
+  informationCommunicationAssessment: LexicalRichText<LexicalNodes_AD327369>;
+  /**
+   * Assessment of ongoing and separate monitoring activities.
+   */
+  monitoringAssessment: LexicalRichText<LexicalNodes_AD327369>;
+  significantDeficienciesIdentified?: boolean | null;
+  materialWeaknessesIdentified?: boolean | null;
+  /**
+   * Description of any significant deficiencies or material weaknesses.
+   */
+  deficiencyDetails?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Remediation actions planned or in progress.
+   */
+  remediationActions?: LexicalRichText<LexicalNodes_AD327369> | null;
+  /**
+   * Conclusion: "...effective" or "...not effective" per SOX 302/906.
+   */
+  conclusionStatement: LexicalRichText<LexicalNodes_AD327369>;
+  /**
+   * Management certification statement acknowledging responsibility for ICFR.
+   */
+  managementAcknowledgment: LexicalRichText<LexicalNodes_AD327369>;
+  certifyingOfficers?:
+    | {
+        title: string;
+        name: string;
+        signatureDate: string;
+        signatureDocument?: (string | null) | Media;
+        id?: string | null;
+      }[]
+    | null;
+  relatedAuditFindings?: (string | AuditFinding)[] | null;
+  relatedControlTests?: (string | ControlTest)[] | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'icfr-assessment';
 }
 /**
  * Paired source documents between two group tenants. Each row pairs with a mirror row on the counterparty tenant — must net to zero on consolidation per IFRS 10 §B86 / ASC 810-10-45-1.
@@ -16681,97 +16742,6 @@ export interface DisclosureChecklist {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "management-assessment-icfr".
- */
-export interface ManagementAssessmentIcfr {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  entity: string | LegalEntity;
-  /**
-   * Fiscal period (e.g., "FY 2026", "Q4 2026").
-   */
-  assessmentPeriod: string;
-  /**
-   * Date of management assessment conclusion (SOX 302/906 certification date).
-   */
-  assessmentDate: string;
-  /**
-   * Description of scope: processes, locations, systems covered.
-   */
-  scope: LexicalRichText<LexicalNodes_AD327369>;
-  controlFramework: 'coso-2013' | 'coso-1992' | 'coso-erm' | 'other';
-  /**
-   * Assessment of control environment (tone at top, integrity, values, competence).
-   */
-  controlEnvironmentAssessment: LexicalRichText<LexicalNodes_AD327369>;
-  /**
-   * Assessment of risk identification and assessment processes.
-   */
-  riskAssessmentAssessment: LexicalRichText<LexicalNodes_AD327369>;
-  /**
-   * Assessment of preventive/detective control activities.
-   */
-  controlActivitiesAssessment: LexicalRichText<LexicalNodes_AD327369>;
-  /**
-   * Assessment of information systems and communication.
-   */
-  informationCommunicationAssessment: LexicalRichText<LexicalNodes_AD327369>;
-  /**
-   * Assessment of ongoing and separate monitoring activities.
-   */
-  monitoringAssessment: LexicalRichText<LexicalNodes_AD327369>;
-  significantDeficienciesIdentified?: boolean | null;
-  materialWeaknessesIdentified?: boolean | null;
-  /**
-   * Description of any significant deficiencies or material weaknesses.
-   */
-  deficiencyDetails?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Remediation actions planned or in progress.
-   */
-  remediationActions?: LexicalRichText<LexicalNodes_AD327369> | null;
-  /**
-   * Conclusion: "...effective" or "...not effective" per SOX 302/906.
-   */
-  conclusionStatement: LexicalRichText<LexicalNodes_AD327369>;
-  /**
-   * Management certification statement acknowledging responsibility for ICFR.
-   */
-  managementAcknowledgment: LexicalRichText<LexicalNodes_AD327369>;
-  certifyingOfficers?:
-    | {
-        title: string;
-        name: string;
-        signatureDate: string;
-        signatureDocument?: (string | null) | Media;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Auditor attestation report (SOX 404(b) for accelerated filers).
-   */
-  attestationDocument?: (string | null) | Media;
-  relatedAuditFindings?: (string | AuditFinding)[] | null;
-  relatedControlTests?: (string | ControlTest)[] | null;
-  status: 'draft' | 'final' | 'auditor-reviewed' | 'certified' | 'filed';
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "risk-register".
  */
 export interface RiskRegister {
@@ -20073,7 +20043,6 @@ export interface PayloadQueryPreset {
     | 'government-grants'
     | 'internal-controls'
     | 'internal-policies'
-    | 'management-assessment-icfr'
     | 'risk-register'
     | 'segment-reporting'
     | 'biological-assets'
@@ -20621,6 +20590,7 @@ export interface PagesSelect<T extends boolean = true> {
               'held-for-sale'?: T | HeldForSaleBlockSelect<T>;
               'related-party-transaction'?: T | RelatedPartyTransactionBlockSelect<T>;
               'regulatory-report'?: T | RegulatoryReportBlockSelect<T>;
+              'icfr-assessment'?: T | IcfrAssessmentBlockSelect<T>;
             };
         links?:
           | T
@@ -21110,6 +21080,39 @@ export interface RegulatoryReportBlockSelect<T extends boolean = true> {
   submissionDate?: T;
   regulatoryFeedback?: T;
   findings?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IcfrAssessmentBlock_select".
+ */
+export interface IcfrAssessmentBlockSelect<T extends boolean = true> {
+  entity?: T;
+  controlFramework?: T;
+  status?: T;
+  controlEnvironmentAssessment?: T;
+  riskAssessmentAssessment?: T;
+  controlActivitiesAssessment?: T;
+  informationCommunicationAssessment?: T;
+  monitoringAssessment?: T;
+  significantDeficienciesIdentified?: T;
+  materialWeaknessesIdentified?: T;
+  deficiencyDetails?: T;
+  remediationActions?: T;
+  conclusionStatement?: T;
+  managementAcknowledgment?: T;
+  certifyingOfficers?:
+    | T
+    | {
+        title?: T;
+        name?: T;
+        signatureDate?: T;
+        signatureDocument?: T;
+        id?: T;
+      };
+  relatedAuditFindings?: T;
+  relatedControlTests?: T;
   id?: T;
   blockName?: T;
 }
@@ -26141,48 +26144,6 @@ export interface InternalPoliciesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "management-assessment-icfr_select".
- */
-export interface ManagementAssessmentIcfrSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  entity?: T;
-  assessmentPeriod?: T;
-  assessmentDate?: T;
-  scope?: T;
-  controlFramework?: T;
-  controlEnvironmentAssessment?: T;
-  riskAssessmentAssessment?: T;
-  controlActivitiesAssessment?: T;
-  informationCommunicationAssessment?: T;
-  monitoringAssessment?: T;
-  significantDeficienciesIdentified?: T;
-  materialWeaknessesIdentified?: T;
-  deficiencyDetails?: T;
-  remediationActions?: T;
-  conclusionStatement?: T;
-  managementAcknowledgment?: T;
-  certifyingOfficers?:
-    | T
-    | {
-        title?: T;
-        name?: T;
-        signatureDate?: T;
-        signatureDocument?: T;
-        id?: T;
-      };
-  attestationDocument?: T;
-  relatedAuditFindings?: T;
-  relatedControlTests?: T;
-  status?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "risk-register_select".
  */
 export interface RiskRegisterSelect<T extends boolean = true> {
@@ -28914,7 +28875,6 @@ export interface CollectionQueryWidget {
       | 'government-grants'
       | 'internal-controls'
       | 'internal-policies'
-      | 'management-assessment-icfr'
       | 'risk-register'
       | 'segment-reporting'
       | 'biological-assets'
@@ -29116,7 +29076,6 @@ export interface ActivityWidget {
           | 'government-grants'
           | 'internal-controls'
           | 'internal-policies'
-          | 'management-assessment-icfr'
           | 'risk-register'
           | 'segment-reporting'
           | 'biological-assets'
@@ -29356,7 +29315,6 @@ export interface TaskCreateCollectionExport {
       | 'government-grants'
       | 'internal-controls'
       | 'internal-policies'
-      | 'management-assessment-icfr'
       | 'risk-register'
       | 'segment-reporting'
       | 'biological-assets'
