@@ -22,7 +22,7 @@ describe('governed documents on pages — never public, read and written by the 
   })
 
   it('a role held on the user record reads its types', async () => {
-    expect(JSON.stringify(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(finance) }))).toContain(`"documentType":{"in":["${STD}"]}`)
+    expect(JSON.stringify(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(finance) }))).toContain(`"documentType":{"in":["${STD}","compliance-deadline"]}`)
     expect(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(plain) })).toEqual({ documentType: { exists: false } })
   })
 
@@ -45,7 +45,7 @@ describe('governed documents on pages — never public, read and written by the 
     expect(await mayWrite(req(superAdmin), STD, 't1', none)).toBe(true)
     const write = pageWrite(() => ({ tenant: { equals: 't1' } }), none)
     await expect(write({ req: req(tenantAdmin), data: { documentType: STD, tenant: 't1' } } as never)).resolves.toBe(false)
-    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification'] } }] })
+    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline'] } }] })
   })
 
   it('a type names what it requires', async () => {
@@ -94,5 +94,23 @@ describe('governed documents on pages — never public, read and written by the 
     expect(abilityForRoles({ roles: ['admin'] }).permits('update', 'pages', { documentType: SRT })).toBe(false)
     expect(await mayWrite(req(tenantAdmin), SRT, 't1', none)).toBe(false)
     expect(await mayWrite(req(superAdmin), SRT, 't1', none)).toBe(true)
+  })
+
+  it('a compliance deadline carries its block; a submitted or completed one names its submission date', () => {
+    const CD = 'compliance-deadline'
+    const block = (status: string, submissionDate?: string) => ({ blockType: CD, deadlineType: 'filing-deadline', entity: 'e1', dueDate: '2026-03-31', status, submissionDate, notifications: [{ notificationTitle: 'Two weeks left', daysBeforeDue: 14, notificationType: ['email'] }] })
+    expect(documentError(CD, {})).toMatch(/carries its details/)
+    expect(documentError(CD, { details: [block('on-track')] })).toBe(true)
+    expect(documentError(CD, { details: [block('submitted')] })).toMatch(/names its submission date/)
+    expect(documentError(CD, { details: [block('completed', '2026-03-30')] })).toBe(true)
+  })
+
+  it('a compliance deadline is read by finance, audit and compliance staff and written by admins', async () => {
+    const CD = 'compliance-deadline'
+    expect(abilityForRoles({ roles: ['user', 'finance'] }).permits('read', 'pages', { documentType: CD })).toBe(true)
+    expect(abilityForRoles({ roles: ['user'] }).permits('read', 'pages', { documentType: CD })).toBe(false)
+    expect(abilityForRoles({ roles: ['admin'] }).permits('update', 'pages', { documentType: CD })).toBe(true)
+    expect(await mayWrite(req(finance), CD, 't1', none)).toBe(false)
+    expect(await mayWrite(req(tenantAdmin), CD, 't1', none)).toBe(true)
   })
 })

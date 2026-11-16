@@ -320,7 +320,6 @@ export interface Config {
     'bookable-resources': BookableResource;
     'carbon-emissions': CarbonEmission;
     'closing-entries': ClosingEntry;
-    'compliance-deadlines': ComplianceDeadline;
     consolidations: Consolidation;
     'csrd-disclosures': CsrdDisclosure;
     'currency-rates': CurrencyRate;
@@ -547,7 +546,6 @@ export interface Config {
     'bookable-resources': BookableResourcesSelect<false> | BookableResourcesSelect<true>;
     'carbon-emissions': CarbonEmissionsSelect<false> | CarbonEmissionsSelect<true>;
     'closing-entries': ClosingEntriesSelect<false> | ClosingEntriesSelect<true>;
-    'compliance-deadlines': ComplianceDeadlinesSelect<false> | ComplianceDeadlinesSelect<true>;
     consolidations: ConsolidationsSelect<false> | ConsolidationsSelect<true>;
     'csrd-disclosures': CsrdDisclosuresSelect<false> | CsrdDisclosuresSelect<true>;
     'currency-rates': CurrencyRatesSelect<false> | CurrencyRatesSelect<true>;
@@ -1634,7 +1632,8 @@ export interface Page {
   /**
    * A governed document is never public; its type names who reads and writes it. Empty for a website page.
    */
-  documentType?: ('reporting-standard' | 'management-certification' | 'statutory-report-template') | null;
+  documentType?:
+    ('reporting-standard' | 'management-certification' | 'statutory-report-template' | 'compliance-deadline') | null;
   /**
    * What every governed document has. The title is its name and the content its text.
    */
@@ -1654,7 +1653,7 @@ export interface Page {
     /**
      * What the standard of this type needs beyond the fields above: one block, matching the type.
      */
-    details?: (ManagementCertificationBlock | StatutoryReportTemplateBlock)[] | null;
+    details?: (ManagementCertificationBlock | StatutoryReportTemplateBlock | ComplianceDeadlineBlock)[] | null;
     /**
      * Links FROM this document to another — a standard mapped to another, a template to its source — with the element rules.
      */
@@ -3322,6 +3321,83 @@ export interface EntityType {
    * Default compliance frameworks for this entity type
    */
   defaultComplianceFrameworks?: (string | ComplianceFramework)[] | null;
+  isActive?: boolean | null;
+  handle?: string | null;
+  createdBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedBy?: {
+    relationTo: 'users';
+    value: string | User;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ComplianceDeadlineBlock".
+ */
+export interface ComplianceDeadlineBlock {
+  deadlineType:
+    | 'filing-deadline'
+    | 'audit-deadline'
+    | 'certification-deadline'
+    | 'reporting-deadline'
+    | 'payment-deadline'
+    | 'disclosure-deadline';
+  entity: string | LegalEntity;
+  requirement?: (string | null) | ComplianceRequirement;
+  dueDate: string;
+  submissionDate?: string | null;
+  status?: ('on-track' | 'at-risk' | 'overdue' | 'submitted' | 'completed') | null;
+  priority?: ('critical' | 'high' | 'medium' | 'low') | null;
+  penalty?: string | null;
+  /**
+   * The reminders scheduled for this deadline.
+   */
+  notifications?:
+    | {
+        notificationTitle: string;
+        daysBeforeDue: number;
+        sentDate?: string | null;
+        status?: ('scheduled' | 'sent' | 'delivered' | 'failed') | null;
+        notificationType?: ('email' | 'in-app' | 'sms' | 'calendar-event')[] | null;
+        notificationContent?: LexicalRichText<LexicalNodes_AD327369> | null;
+        recipients?:
+          | {
+              recipientEmail?: string | null;
+              recipientRole?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'compliance-deadline';
+}
+/**
+ * Read-only reference data
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-requirements".
+ */
+export interface ComplianceRequirement {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  code: string;
+  title: string;
+  description: string;
+  framework: string | ComplianceFramework;
+  section?: string | null;
+  severity?: ('critical' | 'high' | 'medium' | 'low' | 'info') | null;
+  resourceUrl?: string | null;
   isActive?: boolean | null;
   handle?: string | null;
   createdBy?: {
@@ -11859,99 +11935,6 @@ export interface PeriodLock {
   createdAt: string;
 }
 /**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "compliance-deadlines".
- */
-export interface ComplianceDeadline {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  entity: string | LegalEntity;
-  deadlineName: string;
-  deadlineType:
-    | 'filing-deadline'
-    | 'audit-deadline'
-    | 'certification-deadline'
-    | 'reporting-deadline'
-    | 'payment-deadline'
-    | 'disclosure-deadline';
-  jurisdiction?: (string | null) | TaxJurisdiction;
-  requirement?: (string | null) | ComplianceRequirement;
-  dueDate: string;
-  submissionDate?: string | null;
-  status?: ('on-track' | 'at-risk' | 'overdue' | 'submitted' | 'completed') | null;
-  priority?: ('critical' | 'high' | 'medium' | 'low') | null;
-  penalty?: string | null;
-  /**
-   * The reminders scheduled for this deadline (formerly the compliance-notifications collection — a reminder has no life apart from its deadline).
-   */
-  notifications?:
-    | {
-        notificationTitle: string;
-        notificationContent?: LexicalRichText<LexicalNodes_AD327369> | null;
-        notificationType?: ('email' | 'in-app' | 'sms' | 'calendar-event')[] | null;
-        recipients?:
-          | {
-              recipientEmail?: string | null;
-              recipientRole?: string | null;
-              id?: string | null;
-            }[]
-          | null;
-        daysBeforeDue: number;
-        sentDate?: string | null;
-        status?: ('scheduled' | 'sent' | 'delivered' | 'failed') | null;
-        id?: string | null;
-      }[]
-    | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Read-only reference data
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "compliance-requirements".
- */
-export interface ComplianceRequirement {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  code: string;
-  title: string;
-  description: string;
-  framework: string | ComplianceFramework;
-  section?: string | null;
-  severity?: ('critical' | 'high' | 'medium' | 'low' | 'info') | null;
-  resourceUrl?: string | null;
-  isActive?: boolean | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * EU CSRD / ESRS structured disclosure register. One row per ESRS datapoint per reporting year — narrative + KPIs + assurance evidence.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -20206,7 +20189,6 @@ export interface PayloadQueryPreset {
     | 'bookable-resources'
     | 'carbon-emissions'
     | 'closing-entries'
-    | 'compliance-deadlines'
     | 'consolidations'
     | 'csrd-disclosures'
     | 'currency-rates'
@@ -20826,6 +20808,7 @@ export interface PagesSelect<T extends boolean = true> {
           | {
               'management-certification'?: T | ManagementCertificationBlockSelect<T>;
               'statutory-report-template'?: T | StatutoryReportTemplateBlockSelect<T>;
+              'compliance-deadline'?: T | ComplianceDeadlineBlockSelect<T>;
             };
         links?:
           | T
@@ -20983,6 +20966,40 @@ export interface StatutoryReportTemplateBlockSelect<T extends boolean = true> {
         sourceField?: T;
         transformation?: T;
         validationRules?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ComplianceDeadlineBlock_select".
+ */
+export interface ComplianceDeadlineBlockSelect<T extends boolean = true> {
+  deadlineType?: T;
+  entity?: T;
+  requirement?: T;
+  dueDate?: T;
+  submissionDate?: T;
+  status?: T;
+  priority?: T;
+  penalty?: T;
+  notifications?:
+    | T
+    | {
+        notificationTitle?: T;
+        daysBeforeDue?: T;
+        sentDate?: T;
+        status?: T;
+        notificationType?: T;
+        notificationContent?: T;
+        recipients?:
+          | T
+          | {
+              recipientEmail?: T;
+              recipientRole?: T;
+              id?: T;
+            };
         id?: T;
       };
   id?: T;
@@ -22974,47 +22991,6 @@ export interface ClosingEntriesSelect<T extends boolean = true> {
   multiCurrencyReconciliation?: T;
   auditTrail?: T;
   notes?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "compliance-deadlines_select".
- */
-export interface ComplianceDeadlinesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  entity?: T;
-  deadlineName?: T;
-  deadlineType?: T;
-  jurisdiction?: T;
-  requirement?: T;
-  dueDate?: T;
-  submissionDate?: T;
-  status?: T;
-  priority?: T;
-  penalty?: T;
-  notifications?:
-    | T
-    | {
-        notificationTitle?: T;
-        notificationContent?: T;
-        notificationType?: T;
-        recipients?:
-          | T
-          | {
-              recipientEmail?: T;
-              recipientRole?: T;
-              id?: T;
-            };
-        daysBeforeDue?: T;
-        sentDate?: T;
-        status?: T;
-        id?: T;
-      };
   handle?: T;
   createdBy?: T;
   updatedBy?: T;
@@ -29132,7 +29108,6 @@ export interface CollectionQueryWidget {
       | 'bookable-resources'
       | 'carbon-emissions'
       | 'closing-entries'
-      | 'compliance-deadlines'
       | 'consolidations'
       | 'csrd-disclosures'
       | 'currency-rates'
@@ -29344,7 +29319,6 @@ export interface ActivityWidget {
           | 'bookable-resources'
           | 'carbon-emissions'
           | 'closing-entries'
-          | 'compliance-deadlines'
           | 'consolidations'
           | 'csrd-disclosures'
           | 'currency-rates'
@@ -29594,7 +29568,6 @@ export interface TaskCreateCollectionExport {
       | 'bookable-resources'
       | 'carbon-emissions'
       | 'closing-entries'
-      | 'compliance-deadlines'
       | 'consolidations'
       | 'csrd-disclosures'
       | 'currency-rates'
