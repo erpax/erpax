@@ -514,8 +514,6 @@ src/collections/receipts/index.ts:19: * @standard BG Наредба-Н-18 §СУ
 src/collections/recruiting-pipeline/index.ts:9: * @standard ISO-8601-1:2019 date-time
 src/collections/recurring-journals/index.ts:15: * @standard ISO-8601-1:2019 date-time recurrence
 src/collections/recurring-journals/index.ts:16: * @standard rfc-5545 icalendar-rrule recurrence-rule
-src/collections/regulatory-reports/index.ts:4: * @standard SAF-T OECD standard-audit-file-tax
-src/collections/regulatory-reports/index.ts:5: * @standard XBRL business-reporting
 src/collections/returns/index.ts:4: * @standard ISO-8601-1:2019 date-time
 src/collections/risk-register/index.ts:4: * @standard COSO ERM-2017 enterprise-risk-management
 src/collections/risk-register/index.ts:5: * @standard ISO-31000:2018 risk-management
@@ -1142,6 +1140,8 @@ src/utilities/governed/index.ts:1130: * @standard US-GAAP ASC-205-20 discontinue
 src/utilities/governed/index.ts:1131: * @standard US-GAAP ASC-360-10 long-lived-assets-held-for-sale
 src/utilities/governed/index.ts:1132: * @standard ISO-4217:2015 currency-codes
 src/utilities/governed/index.ts:1133: * @standard ISO-8601-1:2019 date-time classification-date
+src/utilities/governed/index.ts:1337: * @standard SAF-T OECD standard-audit-file-tax
+src/utilities/governed/index.ts:1338: * @standard XBRL business-reporting
 src/utilities/governed/index.ts:194: * @standard ISO-37301:2021 compliance-management-systems
 src/utilities/governed/index.ts:195: * @standard ISO-8601-1:2019 due-date
 src/utilities/governed/index.ts:316: * @standard ISO-8601-1:2019 date-time review-due-at
@@ -2213,7 +2213,6 @@ src/collections/recruiting-pipeline/index.ts:11: * @compliance GDPR Art.5(1)(e) 
 src/collections/recruiting-pipeline/index.ts:12: * @compliance EU Equal Treatment Directive 2000/78
 src/collections/recruiting-pipeline/index.ts:13: * @compliance ADA / EEOC US-equal-opportunity
 src/collections/recurring-journals/index.ts:22: * @compliance SOX §404 internal-controls automated-controls
-src/collections/regulatory-reports/index.ts:6: * @compliance local-regulatory-filing
 src/collections/returns/index.ts:10: * @compliance SOX §404 internal-controls return-approval
 src/collections/roles/index.ts:15: * @compliance SOC-2 CC6.1 logical-access-controls
 src/collections/roles/index.ts:16: * @compliance SOX §404 internal-controls
@@ -2390,6 +2389,7 @@ src/utilities/get/user/tenant/i/ds/index.ts:8: * @compliance SOX §404 internal-
 src/utilities/gl/account/resolver/index.ts:28: * @compliance SOX §404 internal-controls per-tenant-coa
 src/utilities/governed/index.ts:1059: * @compliance SOX §404 internal-controls
 src/utilities/governed/index.ts:1135: * @compliance SOX §404 internal-controls
+src/utilities/governed/index.ts:1339: * @compliance local-regulatory-filing
 src/utilities/governed/index.ts:317: * @compliance GDPR Art.30(1) records-controller
 src/utilities/governed/index.ts:318: * @compliance GDPR Art.30(2) records-processor
 src/utilities/governed/index.ts:319: * @compliance GDPR Art.5(1)(e) storage-limitation
@@ -3137,7 +3137,6 @@ src/collections/quality-inspections/index.ts:17: * @security ISO-27001 A.5.23 cl
 src/collections/receipts/index.ts:21: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/recruiting-pipeline/index.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/recurring-journals/index.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/regulatory-reports/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/returns/index.ts:11: * @security ISO-27002 §5.3 segregation-of-duties
 src/collections/risk-register/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/roles/index.ts:12: * @security ISO-27001 A.5.18 access-rights

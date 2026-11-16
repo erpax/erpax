@@ -393,7 +393,6 @@ export interface Config {
     'internal-controls': InternalControl;
     'internal-policies': InternalPolicy;
     'management-assessment-icfr': ManagementAssessmentIcfr;
-    'regulatory-reports': RegulatoryReport;
     'risk-register': RiskRegister;
     'segment-reporting': SegmentReporting;
     'biological-assets': BiologicalAsset;
@@ -611,7 +610,6 @@ export interface Config {
     'internal-controls': InternalControlsSelect<false> | InternalControlsSelect<true>;
     'internal-policies': InternalPoliciesSelect<false> | InternalPoliciesSelect<true>;
     'management-assessment-icfr': ManagementAssessmentIcfrSelect<false> | ManagementAssessmentIcfrSelect<true>;
-    'regulatory-reports': RegulatoryReportsSelect<false> | RegulatoryReportsSelect<true>;
     'risk-register': RiskRegisterSelect<false> | RiskRegisterSelect<true>;
     'segment-reporting': SegmentReportingSelect<false> | SegmentReportingSelect<true>;
     'biological-assets': BiologicalAssetsSelect<false> | BiologicalAssetsSelect<true>;
@@ -1630,6 +1628,7 @@ export interface Page {
         | 'regulatory-deferral-account'
         | 'held-for-sale'
         | 'related-party-transaction'
+        | 'regulatory-report'
       )
     | null;
   /**
@@ -1664,6 +1663,7 @@ export interface Page {
           | RegulatoryDeferralAccountBlock
           | HeldForSaleBlock
           | RelatedPartyTransactionBlock
+          | RegulatoryReportBlock
         )[]
       | null;
     /**
@@ -8650,6 +8650,38 @@ export interface AuditSample {
   } | null;
   updatedAt: string;
   createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "RegulatoryReportBlock".
+ */
+export interface RegulatoryReportBlock {
+  entity: string | LegalEntity;
+  reportType:
+    | 'annual-filing'
+    | 'quarterly-filing'
+    | 'form-10q'
+    | 'sox-attestation'
+    | 'annual-report'
+    | 'compliance-report'
+    | 'audit-report'
+    | 'grant-report'
+    | 'other';
+  status: 'draft' | 'in-review' | 'submitted' | 'accepted' | 'rejected' | 'overdue';
+  reportingStandard?: (string | null) | ComplianceFramework;
+  /**
+   * The award this report accounts for (grant-report type).
+   */
+  grant?: (string | null) | GovernmentGrant;
+  fiscalPeriodStart: string;
+  fiscalPeriodEnd: string;
+  dueDate: string;
+  submissionDate?: string | null;
+  regulatoryFeedback?: LexicalRichText<LexicalNodes_AD327369> | null;
+  findings?: (string | AuditFinding)[] | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'regulatory-report';
 }
 /**
  * Paired source documents between two group tenants. Each row pairs with a mirror row on the counterparty tenant — must net to zero on consolidation per IFRS 10 §B86 / ASC 810-10-45-1.
@@ -16740,55 +16772,6 @@ export interface ManagementAssessmentIcfr {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "regulatory-reports".
- */
-export interface RegulatoryReport {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * The award this report accounts for (grant-report type).
-   */
-  grant?: (string | null) | GovernmentGrant;
-  entity: string | LegalEntity;
-  reportName: string;
-  reportingStandard?: (string | null) | ComplianceFramework;
-  jurisdiction: string | TaxJurisdiction;
-  reportType:
-    | 'annual-filing'
-    | 'quarterly-filing'
-    | 'form-10q'
-    | 'sox-attestation'
-    | 'annual-report'
-    | 'compliance-report'
-    | 'audit-report'
-    | 'grant-report'
-    | 'other';
-  fiscalPeriodStart: string;
-  fiscalPeriodEnd: string;
-  dueDate: string;
-  submissionDate?: string | null;
-  status: 'draft' | 'in-review' | 'submitted' | 'accepted' | 'rejected' | 'overdue';
-  reportDocument?: (string | null) | Media;
-  regulatoryFeedback?: LexicalRichText<LexicalNodes_AD327369> | null;
-  findings?: (string | AuditFinding)[] | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "risk-register".
  */
 export interface RiskRegister {
@@ -20091,7 +20074,6 @@ export interface PayloadQueryPreset {
     | 'internal-controls'
     | 'internal-policies'
     | 'management-assessment-icfr'
-    | 'regulatory-reports'
     | 'risk-register'
     | 'segment-reporting'
     | 'biological-assets'
@@ -20638,6 +20620,7 @@ export interface PagesSelect<T extends boolean = true> {
               'regulatory-deferral-account'?: T | RegulatoryDeferralAccountBlockSelect<T>;
               'held-for-sale'?: T | HeldForSaleBlockSelect<T>;
               'related-party-transaction'?: T | RelatedPartyTransactionBlockSelect<T>;
+              'regulatory-report'?: T | RegulatoryReportBlockSelect<T>;
             };
         links?:
           | T
@@ -21108,6 +21091,25 @@ export interface RelatedPartyTransactionBlockSelect<T extends boolean = true> {
   disclosureReference?: T;
   relatedControls?: T;
   evidence?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "RegulatoryReportBlock_select".
+ */
+export interface RegulatoryReportBlockSelect<T extends boolean = true> {
+  entity?: T;
+  reportType?: T;
+  status?: T;
+  reportingStandard?: T;
+  grant?: T;
+  fiscalPeriodStart?: T;
+  fiscalPeriodEnd?: T;
+  dueDate?: T;
+  submissionDate?: T;
+  regulatoryFeedback?: T;
+  findings?: T;
   id?: T;
   blockName?: T;
 }
@@ -26181,33 +26183,6 @@ export interface ManagementAssessmentIcfrSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "regulatory-reports_select".
- */
-export interface RegulatoryReportsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  grant?: T;
-  entity?: T;
-  reportName?: T;
-  reportingStandard?: T;
-  jurisdiction?: T;
-  reportType?: T;
-  fiscalPeriodStart?: T;
-  fiscalPeriodEnd?: T;
-  dueDate?: T;
-  submissionDate?: T;
-  status?: T;
-  reportDocument?: T;
-  regulatoryFeedback?: T;
-  findings?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "risk-register_select".
  */
 export interface RiskRegisterSelect<T extends boolean = true> {
@@ -28940,7 +28915,6 @@ export interface CollectionQueryWidget {
       | 'internal-controls'
       | 'internal-policies'
       | 'management-assessment-icfr'
-      | 'regulatory-reports'
       | 'risk-register'
       | 'segment-reporting'
       | 'biological-assets'
@@ -29143,7 +29117,6 @@ export interface ActivityWidget {
           | 'internal-controls'
           | 'internal-policies'
           | 'management-assessment-icfr'
-          | 'regulatory-reports'
           | 'risk-register'
           | 'segment-reporting'
           | 'biological-assets'
@@ -29384,7 +29357,6 @@ export interface TaskCreateCollectionExport {
       | 'internal-controls'
       | 'internal-policies'
       | 'management-assessment-icfr'
-      | 'regulatory-reports'
       | 'risk-register'
       | 'segment-reporting'
       | 'biological-assets'

@@ -46,7 +46,7 @@ describe('governed documents on pages — never public, read and written by the 
     expect(await mayWrite(req(superAdmin), STD, 't1', none)).toBe(true)
     const write = pageWrite(() => ({ tenant: { equals: 't1' } }), none)
     await expect(write({ req: req(tenantAdmin), data: { documentType: STD, tenant: 't1' } } as never)).resolves.toBe(false)
-    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline', 'processing-activity', 'internal-audit-function', 'debt-instrument', 'related-party-transaction'] } }] })
+    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline', 'processing-activity', 'internal-audit-function', 'debt-instrument', 'related-party-transaction', 'regulatory-report'] } }] })
   })
 
   it('a type names what it requires', async () => {
@@ -244,5 +244,15 @@ describe('governed documents on pages — never public, read and written by the 
     expect(documentError(RP, { effectiveDate: '2026-02-01', details: [block({ approvalStatus: 'approved' })] })).toMatch(/names its approver and approval date/)
     expect(documentError(RP, { effectiveDate: '2026-02-01', details: [block({ approvalStatus: 'approved', approverName: 'Audit committee', approvalDate: '2026-01-20', disclosedInFinancialStatements: true })] })).toMatch(/names its note/)
     expect(documentError(RP, { effectiveDate: '2026-02-01', details: [block({ approvalStatus: 'approved', approverName: 'Audit committee', approvalDate: '2026-01-20', disclosedInFinancialStatements: true, disclosureReference: 'Note 32' })] })).toBe(true)
+  })
+
+  it('a regulatory report names its jurisdiction; its period runs forward; a submitted one is dated; a grant report names its grant', () => {
+    const RR = 'regulatory-report'
+    const block = (extra: object = {}) => ({ blockType: RR, entity: 'e1', reportType: 'annual-report', status: 'draft', fiscalPeriodStart: '2025-01-01', fiscalPeriodEnd: '2025-12-31', dueDate: '2026-06-30', ...extra })
+    expect(documentError(RR, { details: [block()] })).toMatch(/names its jurisdiction/)
+    expect(documentError(RR, { jurisdiction: 'bg', details: [block()] })).toBe(true)
+    expect(documentError(RR, { jurisdiction: 'bg', details: [block({ fiscalPeriodEnd: '2024-12-31' })] })).toMatch(/ends after it starts/)
+    expect(documentError(RR, { jurisdiction: 'bg', details: [block({ status: 'accepted' })] })).toMatch(/names its submission date/)
+    expect(documentError(RR, { jurisdiction: 'bg', details: [block({ reportType: 'grant-report' })] })).toMatch(/names the grant/)
   })
 })
