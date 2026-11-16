@@ -6,7 +6,8 @@
  * What the types share is the page's `document` concern. A type whose standard needs fields of its own
  * declares a `block` (its own table, so the page never nears D1's width) and may add a `check`.
  */
-import type { Block } from 'payload'
+import type { Block, FieldHook } from 'payload'
+import { currencyField } from '@/fields/text/currencyField'
 
 export interface GovernedType {
   readonly value: string
@@ -21,6 +22,8 @@ export interface GovernedType {
   readonly block?: Block
   /** What no two documents of this type in one tenant share: the title (a GDPR record is known by its name), the code (a charter by its id). */
   readonly unique?: readonly ('title' | 'code')[]
+  /** The plan feature a tenant's subscription must include for this type (as `accountingCollectionAccess({ feature })`). */
+  readonly feature?: string
   /** A rule of this type over its details block (and the shared concern it sits in), or true. */
   readonly check?: (details: Record<string, unknown>, document: Record<string, unknown>) => string | true
 }
@@ -597,6 +600,143 @@ export const auditFunctionError = (details: Record<string, unknown>): string | t
   return backwards.length ? `An engagement completes after it starts (${backwards.join(', ')}).` : true
 }
 
+/** IAS 33 §12 — profit attributable to ordinary equity holders, less preference dividends (cents). */
+const numeratorOf = (row: Record<string, unknown>): number => Number(row.netProfitAttributableToOrdinary ?? 0) - Number(row.preferredDividends ?? 0)
+/** Cents over shares, as currency units per share to four places; nothing when there are no shares. */
+const perShare = (cents: number, shares: number): number | null => (shares > 0 ? Math.round((cents / 100 / shares) * 10_000) / 10_000 : null)
+const computed = (compute: (row: Record<string, unknown>) => number | null): FieldHook[] => [({ siblingData }) => compute((siblingData ?? {}) as Record<string, unknown>)]
+
+/**
+ * One period's earnings per share: the numerator and the weighted average of ordinary shares, the
+ * share events that move it, and the basic and diluted figures, computed (IAS 33).
+ *
+ * @standard IFRS IAS-33 §10 basic-eps
+ * @standard IAS-33 §11-§19 weighted-average-number-of-ordinary-shares
+ * @standard IFRS IAS-33 §30-§63 diluted-eps
+ * @standard IFRS IAS-33 §66-§70 disclosure
+ * @standard US-GAAP ASC-260 earnings-per-share
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-8601-1:2019 date-time period-end
+ * @audit ISO 19011:2018 §6.4.6 audit-evidence-eps-computation
+ * @compliance SOX §404 internal-controls
+ */
+export const EarningsPerShare: Block = {
+  slug: 'earnings-per-share',
+  interfaceName: 'EarningsPerShareBlock',
+  labels: { singular: 'Earnings per share', plural: 'Earnings per share' },
+  fields: [
+    {
+      type: 'row',
+      fields: [
+        { name: 'period', type: 'relationship', relationTo: 'fiscal-periods', required: true },
+        { name: 'periodEnd', type: 'date', required: true },
+        currencyField(),
+        {
+          name: 'status',
+          type: 'select',
+          defaultValue: 'draft',
+          options: [
+            { label: 'Draft', value: 'draft' },
+            { label: 'Computed', value: 'computed' },
+            { label: 'Published', value: 'published' },
+            { label: 'Restated', value: 'restated' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'netProfitAttributableToOrdinary', type: 'number', required: true, admin: { description: 'IAS 33 §12 — net profit/loss attributable to ordinary equity holders (cents).' } },
+        { name: 'preferredDividends', type: 'number', defaultValue: 0, admin: { description: 'IAS 33 §14 — deducted from net profit when computing basic-EPS numerator.' } },
+        { name: 'basicEpsNumerator', type: 'number', admin: { readOnly: true, description: 'netProfit − preferredDividends (cents), computed.' }, hooks: { beforeChange: computed(numeratorOf) } },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'weightedAverageOrdinaryShares', type: 'number', required: true, admin: { description: 'IAS 33 §19 — time-weighted shares outstanding during the period.' } },
+        { name: 'dilutivePotentialShares', type: 'number', defaultValue: 0, admin: { description: 'IAS 33 §31 — weighted-average dilutive potential ordinary shares (options + convertibles + IFRS 2 grants).' } },
+        { name: 'antiDilutiveShares', type: 'number', defaultValue: 0, admin: { description: 'IAS 33 §41 — anti-dilutive shares EXCLUDED from diluted calculation (out-of-money options, etc.).' } },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'basicEps',
+          type: 'number',
+          admin: { readOnly: true, description: 'basicEpsNumerator / weightedAverageOrdinaryShares (per share, in currency units), computed.' },
+          hooks: { beforeChange: computed((row) => perShare(numeratorOf(row), Number(row.weightedAverageOrdinaryShares ?? 0))) },
+        },
+        {
+          name: 'dilutedEps',
+          type: 'number',
+          admin: { readOnly: true, description: 'basicEpsNumerator / (weightedAverageOrdinaryShares + dilutivePotentialShares), computed; a loss is not diluted (IAS 33 §41).' },
+          hooks: {
+            beforeChange: computed((row) => {
+              const numerator = numeratorOf(row)
+              const shares = Number(row.weightedAverageOrdinaryShares ?? 0)
+              // potential shares that would reduce a loss per share are anti-dilutive and ignored
+              return numerator <= 0 ? perShare(numerator, shares) : perShare(numerator, shares + Number(row.dilutivePotentialShares ?? 0))
+            }),
+          },
+        },
+      ],
+    },
+    {
+      name: 'continuingVsDiscontinued',
+      type: 'group',
+      admin: { description: 'IAS 33 §66 — separate EPS for continuing vs discontinued operations.' },
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'continuingEpsBasic', type: 'number' },
+            { name: 'continuingEpsDiluted', type: 'number' },
+            { name: 'discontinuedEpsBasic', type: 'number' },
+            { name: 'discontinuedEpsDiluted', type: 'number' },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'shareEvents',
+      type: 'array',
+      labels: { singular: 'Share Event', plural: 'Share Events' },
+      admin: { description: 'Issuances / buy-backs / splits / bonus issues during the period — drive the weighted-average computation.' },
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'eventDate', type: 'date', required: true },
+            {
+              name: 'eventKind',
+              type: 'select',
+              required: true,
+              options: [
+                { label: 'Issuance', value: 'issuance' },
+                { label: 'Buy-back', value: 'buyback' },
+                { label: 'Stock Split', value: 'split' },
+                { label: 'Reverse Split', value: 'reverse_split' },
+                { label: 'Bonus Issue', value: 'bonus' },
+                { label: 'Conversion (debt → equity)', value: 'conversion' },
+              ],
+            },
+            { name: 'sharesDelta', type: 'number', required: true, admin: { description: 'Change in shares outstanding (positive or negative).' } },
+            { name: 'splitRatio', type: 'text', admin: { description: 'For splits: e.g. "2-for-1" or "1-for-3" (reverse).' } },
+          ],
+        },
+      ],
+    },
+    { name: 'notes', type: 'textarea' },
+  ],
+}
+
+/** The weighted average of ordinary shares divides the numerator, so it is positive (IAS 33 §19). */
+export const epsError = (details: Record<string, unknown>): string | true =>
+  Number(details.weightedAverageOrdinaryShares) > 0 ? true : 'An EPS computation names a positive weighted average of ordinary shares.'
+
 export const GOVERNED_TYPES: readonly GovernedType[] = [
   // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
   {
@@ -663,5 +803,18 @@ export const GOVERNED_TYPES: readonly GovernedType[] = [
     unique: ['code'],
     block: InternalAuditFunction,
     check: auditFunctionError,
+  },
+  // was earnings-per-share: read by every member of the tenant, written by admins and accountants, only
+  // where the plan includes earnings_per_share. The reference (EPS-2026-Q1) is the page title.
+  {
+    value: 'earnings-per-share',
+    label: 'EPS computation',
+    read: ['user'],
+    write: ['admin', 'accountant'],
+    requires: [],
+    unique: ['title'],
+    feature: 'earnings_per_share',
+    block: EarningsPerShare,
+    check: epsError,
   },
 ]

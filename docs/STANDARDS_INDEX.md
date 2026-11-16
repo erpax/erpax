@@ -293,13 +293,6 @@ src/collections/deferred-tax-items/index.ts:18: * @standard ISO-8601-1:2019 date
 src/collections/depreciation-schedules/index.ts:8: * @standard ISO-8601-1:2019 date-time period-end
 src/collections/depreciation-schedules/index.ts:9: * @standard ISO-4217:2015 currency-codes
 src/collections/disclosure-checklists/index.ts:5: * @standard SEC Regulation S-K disclosure
-src/collections/earnings-per-share/index.ts:11: * @standard IFRS IAS-33 §10 basic-eps
-src/collections/earnings-per-share/index.ts:12: * @standard IAS-33 §11-§19 weighted-average-number-of-ordinary-shares
-src/collections/earnings-per-share/index.ts:13: * @standard IFRS IAS-33 §30-§63 diluted-eps
-src/collections/earnings-per-share/index.ts:14: * @standard IFRS IAS-33 §66-§70 disclosure
-src/collections/earnings-per-share/index.ts:15: * @standard US-GAAP ASC-260 earnings-per-share
-src/collections/earnings-per-share/index.ts:16: * @standard ISO-4217:2015 currency-codes
-src/collections/earnings-per-share/index.ts:17: * @standard ISO-8601-1:2019 date-time period-end
 src/collections/employees/index.ts:10: * @standard ISO-3166-2:2020 subdivision-codes
 src/collections/employees/index.ts:11: * @standard ISO-13616-1:2020 iban payroll-bank-account
 src/collections/employees/index.ts:12: * @standard ISO-9362:2022 bic payroll-bank-account
@@ -1155,13 +1148,20 @@ src/utilities/ghg/protocol/index.ts:13: * @standard EU ESRS E1 §44-50 ghg-emiss
 src/utilities/ghg/protocol/index.ts:14: * @standard IFRS S2 §29-32 climate-related-metrics (companion)
 src/utilities/ghg/protocol/index.ts:9: * @standard GHG Protocol Corporate Standard (revised 2015)
 src/utilities/gl/account/resolver/index.ts:24: * @standard ISO-4217:2015 currency-codes
-src/utilities/governed/index.ts:100: * @standard SAF-T OECD audit-file
-src/utilities/governed/index.ts:101: * @standard XBRL business-reporting
-src/utilities/governed/index.ts:102: * @standard IFRS-Taxonomy
-src/utilities/governed/index.ts:191: * @standard ISO-37301:2021 compliance-management-systems
-src/utilities/governed/index.ts:192: * @standard ISO-8601-1:2019 due-date
-src/utilities/governed/index.ts:313: * @standard ISO-8601-1:2019 date-time review-due-at
-src/utilities/governed/index.ts:434: * @standard IIA IPPF international-professional-practices-framework
+src/utilities/governed/index.ts:103: * @standard SAF-T OECD audit-file
+src/utilities/governed/index.ts:104: * @standard XBRL business-reporting
+src/utilities/governed/index.ts:105: * @standard IFRS-Taxonomy
+src/utilities/governed/index.ts:194: * @standard ISO-37301:2021 compliance-management-systems
+src/utilities/governed/index.ts:195: * @standard ISO-8601-1:2019 due-date
+src/utilities/governed/index.ts:316: * @standard ISO-8601-1:2019 date-time review-due-at
+src/utilities/governed/index.ts:437: * @standard IIA IPPF international-professional-practices-framework
+src/utilities/governed/index.ts:613: * @standard IFRS IAS-33 §10 basic-eps
+src/utilities/governed/index.ts:614: * @standard IAS-33 §11-§19 weighted-average-number-of-ordinary-shares
+src/utilities/governed/index.ts:615: * @standard IFRS IAS-33 §30-§63 diluted-eps
+src/utilities/governed/index.ts:616: * @standard IFRS IAS-33 §66-§70 disclosure
+src/utilities/governed/index.ts:617: * @standard US-GAAP ASC-260 earnings-per-share
+src/utilities/governed/index.ts:618: * @standard ISO-4217:2015 currency-codes
+src/utilities/governed/index.ts:619: * @standard ISO-8601-1:2019 date-time period-end
 src/utilities/horo/index.ts:23: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
 src/utilities/iban/index.ts:10: * @standard ISO-7064:2003 mod-97-10 check-digits
 src/utilities/iban/index.ts:9: * @standard ISO-13616-1:2020 iban
@@ -2134,7 +2134,6 @@ src/collections/data-subject-requests/index.ts:15: * @compliance GDPR Art.12(3) 
 src/collections/data-subject-requests/index.ts:9: * @compliance GDPR Art.15 right-of-access
 src/collections/deferred-tax-items/index.ts:20: * @compliance SOX §404 internal-controls TOM-TAX-02
 src/collections/depreciation-schedules/index.ts:14: * @compliance SOX §404 internal-controls
-src/collections/earnings-per-share/index.ts:19: * @compliance SOX §404 internal-controls
 src/collections/employees/index.ts:20: * @compliance SOX §404 internal-controls payroll-master
 src/collections/employees/index.ts:21: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 src/collections/employees/index.ts:22: * @compliance GDPR Art.9 special-categories-of-personal-data
@@ -2393,13 +2392,14 @@ src/utilities/event/emitter/service/index.ts:12: * @compliance SOX §404 interna
 src/utilities/factory/recompute-parent-aggregates.ts:28: * @compliance SOX §404 internal-controls total-completeness
 src/utilities/get/user/tenant/i/ds/index.ts:8: * @compliance SOX §404 internal-controls
 src/utilities/gl/account/resolver/index.ts:28: * @compliance SOX §404 internal-controls per-tenant-coa
-src/utilities/governed/index.ts:314: * @compliance GDPR Art.30(1) records-controller
-src/utilities/governed/index.ts:315: * @compliance GDPR Art.30(2) records-processor
-src/utilities/governed/index.ts:316: * @compliance GDPR Art.5(1)(e) storage-limitation
-src/utilities/governed/index.ts:317: * @compliance ISO-27701:2025 records-of-processing
-src/utilities/governed/index.ts:31: * @compliance SOX §302 corporate-responsibility
-src/utilities/governed/index.ts:32: * @compliance SOX §906 criminal-certification
-src/utilities/governed/index.ts:436: * @compliance SOX §404 internal-controls
+src/utilities/governed/index.ts:317: * @compliance GDPR Art.30(1) records-controller
+src/utilities/governed/index.ts:318: * @compliance GDPR Art.30(2) records-processor
+src/utilities/governed/index.ts:319: * @compliance GDPR Art.5(1)(e) storage-limitation
+src/utilities/governed/index.ts:320: * @compliance ISO-27701:2025 records-of-processing
+src/utilities/governed/index.ts:34: * @compliance SOX §302 corporate-responsibility
+src/utilities/governed/index.ts:35: * @compliance SOX §906 criminal-certification
+src/utilities/governed/index.ts:439: * @compliance SOX §404 internal-controls
+src/utilities/governed/index.ts:621: * @compliance SOX §404 internal-controls
 src/utilities/integrity/content/index.ts:47: * @compliance SOX §404 internal-controls (Byzantine tamper detection)
 src/utilities/integrity/tamper-proof-uuid-field.ts:38: * @compliance SOX §404 (Byzantine tamper detection at the row level)
 src/utilities/integrity/uuid-ref.ts:29: * @compliance SOX §404 (referential integrity without cascade rules)
@@ -3073,7 +3073,6 @@ src/collections/data-subject-requests/index.ts:17: * @security ISO-27001 A.5.34 
 src/collections/debt-schedule/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/deferred-tax-items/index.ts:21: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/disclosure-checklists/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/earnings-per-share/index.ts:20: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/employees/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/employees/index.ts:25: * @security ISO-27002 §5.34 privacy-and-protection-of-pii
 src/collections/employees/index.ts:26: * @security ISO-27002 §8.11 data-masking
@@ -3263,7 +3262,7 @@ src/utilities/get/tenant/from/request/index.ts:8: * @security ISO-27002 §5.15 a
 src/utilities/get/user/tenant/i/ds/index.ts:6: * @security ISO-27001 A.5.18 access-rights
 src/utilities/get/user/tenant/i/ds/index.ts:7: * @security ISO-27002 §5.15 access-control
 src/utilities/gl/account/resolver/index.ts:29: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/utilities/governed/index.ts:319: * @security ISO-27001 A.5.34 privacy-and-pii
+src/utilities/governed/index.ts:322: * @security ISO-27001 A.5.34 privacy-and-pii
 src/utilities/iso/19011/types/index.ts:25: * @security ISO-27002 §8.15 logging
 src/utilities/journal/entry/service/index.ts:19: * @security ISO-27002 §5.3 segregation-of-duties
 src/utilities/nist/incits/359/conventions/index.ts:23: * @security ISO-27002 §5.15 access-control
@@ -3402,7 +3401,6 @@ src/collections/data-subject-requests/index.ts:16: * @audit ISO-19011:2018 audit
 src/collections/deferred-tax-items/index.ts:19: * @audit ISO 19011:2018 §6.4.6 audit-evidence-deferred-tax
 src/collections/depreciation-schedules/index.ts:13: * @audit ISO-19011:2018 audit-trail depreciation-evidence
 src/collections/disclosure-checklists/index.ts:6: * @audit ISO-19011:2018 completeness
-src/collections/earnings-per-share/index.ts:18: * @audit ISO 19011:2018 §6.4.6 audit-evidence-eps-computation
 src/collections/employees/index.ts:19: * @audit ISO-19011:2018 audit-trail employee-master
 src/collections/evidence-attestations/index.ts:17: * @audit ISO-19011:2018 audit-trail attestation-evidence
 src/collections/expense-reports/index.ts:15: * @audit ISO-19011:2018 audit-trail expense-evidence
@@ -3602,8 +3600,9 @@ src/utilities/factory/collection/test.ts:14: * @audit ISO 19011:2018 §6.4.6 —
 src/utilities/factory/recompute-parent-aggregates.ts:27: * @audit ISO-19011:2018 audit-trail derived-total-provenance
 src/utilities/field/index.ts:7: * @audit Flat namespace to eliminate circular imports and duplicate definitions.
 src/utilities/gl/account/resolver/index.ts:27: * @audit ISO-19011:2018 audit-trail account-resolution
-src/utilities/governed/index.ts:318: * @audit ISO-19011:2018 audit-trail ropa-evidence
-src/utilities/governed/index.ts:435: * @audit ISO-19011:2018 audit-programme
+src/utilities/governed/index.ts:321: * @audit ISO-19011:2018 audit-trail ropa-evidence
+src/utilities/governed/index.ts:438: * @audit ISO-19011:2018 audit-programme
+src/utilities/governed/index.ts:620: * @audit ISO 19011:2018 §6.4.6 audit-evidence-eps-computation
 src/utilities/integrity/content/index.ts:46: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/utilities/integrity/resource-bound.ts:33: * @audit Conservation Law 55 (tamper-reversibility-cost) — physical bound
 src/utilities/integrity/tamper-proof-uuid-field.ts:37: * @audit ISO 19011:2018 §6.4.6

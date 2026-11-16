@@ -271,7 +271,6 @@ export { default as ShareBasedPayments } from '@/collections/share-based-payment
 export { default as BusinessCombinations } from '@/collections/business-combinations'
 export { default as HeldForSaleClassifications } from '@/collections/held-for-sale-classifications'
 export { default as FairValueMeasurements } from '@/collections/fair-value-measurements'
-export { default as EarningsPerShare } from '@/collections/earnings-per-share'
 export { default as InsuranceContracts } from '@/collections/insurance-contracts'
 export { default as RegulatoryDeferralAccounts } from '@/collections/regulatory-deferral-accounts'
 export { default as TransactionFailures } from '@/collections/transaction-failures'

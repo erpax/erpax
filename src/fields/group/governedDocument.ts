@@ -6,6 +6,7 @@ import { GOVERNED_TYPES } from '@/utilities/governed'
 
 import { isSuperAdmin } from '@/access/collections/shared/superAdminOnly'
 import { wherePublished } from '@/utilities/scope/filters'
+import { checkFeatureAccess } from '@/utilities/subscription/gate'
 
 /**
  * Governed documents — every narrative or governed document is a page in one tree ([[project-fold-map]]),
@@ -43,8 +44,22 @@ const byAbility = async (req: PayloadRequest, action: 'read' | 'update' | 'delet
 }
 
 /** Whether the request may write a page of `type` in `tenant` — own roles or the ability, on the document itself. */
-export const mayWrite = async (req: PayloadRequest, type: string, tenant: unknown, of: AbilityOf = abilityOf): Promise<boolean> =>
-  isSuperAdmin(req.user) || ownTypes(req.user, 'write').includes(type) || (await of(req)).permits('update', 'pages', { documentType: type, tenant })
+export const mayWrite = async (req: PayloadRequest, type: string, tenant: unknown, of: AbilityOf = abilityOf): Promise<boolean> => {
+  if (isSuperAdmin(req.user)) return true
+  if ((await unplanned(req)).includes(type)) return false
+  return ownTypes(req.user, 'write').includes(type) || (await of(req)).permits('update', 'pages', { documentType: type, tenant })
+}
+
+/**
+ * The types the request's tenant holds no plan for (a type's `feature`, as `accountingCollectionAccess({ feature })`
+ * gated a collection): nobody but a super-admin reads or writes them. The subscription is read once per request.
+ */
+const unplanned = async (req: PayloadRequest): Promise<string[]> => {
+  const gated = GOVERNED_TYPES.filter((t) => t.feature)
+  const allowed = await Promise.all(gated.map(async (t) => (await checkFeatureAccess(req, t.feature!)).allowed))
+  return gated.filter((_, i) => !allowed[i]).map((t) => t.value)
+}
+const planned = (where: Where | null, blocked: string[]): Where | null => (!where || blocked.length === 0 ? where : { and: [where, { documentType: { not_in: blocked } }] })
 
 const any = (branches: (Where | null)[]): Where | false => {
   const kept = branches.filter((b): b is Where => b !== null)
@@ -57,8 +72,9 @@ export const pageRead =
   async ({ req }) => {
     if (!req.user) return { and: [wherePublished, notGoverned] }
     if (isSuperAdmin(req.user)) return true
-    const own = ownTypes(req.user, 'read')
-    return any([notGoverned, own.length ? governedIn(own) : null, await byAbility(req, 'read', of)])
+    const blocked = await unplanned(req)
+    const own = ownTypes(req.user, 'read').filter((type) => !blocked.includes(type))
+    return any([notGoverned, own.length ? governedIn(own) : null, planned(await byAbility(req, 'read', of), blocked)])
   }
 
 /** Create / update / delete: a website page by `site` (the tenant-admin rule), a governed page by its type's writers. */
@@ -71,12 +87,17 @@ export const pageWrite =
     if (declared) return mayWrite(req, declared, (data as { tenant?: unknown }).tenant, of)
     const siteAccess = await site(args)
     const siteBranch: Where | null = siteAccess === true ? notGoverned : siteAccess ? { and: [notGoverned, siteAccess] } : null
-    const own = ownTypes(req.user, 'write')
-    return any([siteBranch, own.length ? governedIn(own) : null, await byAbility(req, 'update', of)])
+    const blocked = await unplanned(req)
+    const own = ownTypes(req.user, 'write').filter((type) => !blocked.includes(type))
+    return any([siteBranch, own.length ? governedIn(own) : null, planned(await byAbility(req, 'update', of), blocked)])
   }
 
 /** "A reporting standard", "An internal audit function": the type as the subject of a message. */
-const aDocument = (label: string): string => `${/^[aeiou]/i.test(label) ? 'An' : 'A'} ${label.toLowerCase()}`
+const aDocument = (label: string): string => {
+  // an acronym keeps its capitals ("An EPS computation"); any other first word starts the phrase in lower case
+  const phrase = label.replace(/^\S+/, (word) => (word === word.toUpperCase() ? word : word.toLowerCase()))
+  return `${/^[aeiou]/i.test(label) ? 'An' : 'A'} ${phrase}`
+}
 
 /** Why a governed page is incomplete for its type, or true. */
 export const documentError = (type: string | null | undefined, document: Record<string, unknown> | null | undefined): string | true => {
