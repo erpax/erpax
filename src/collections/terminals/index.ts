@@ -3,7 +3,7 @@ import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfte
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { statusField } from '@/fields/select/statusField'
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 
 /**
  * Terminals — virtual POS terminals for the Наредба Н-18 alternative regime.

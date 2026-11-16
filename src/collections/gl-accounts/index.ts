@@ -22,7 +22,7 @@ import type { CollectionConfig } from 'payload'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { statusField } from '@/fields/select/statusField'
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 
 const GLAccounts: CollectionConfig = {
   slug: 'gl-accounts',

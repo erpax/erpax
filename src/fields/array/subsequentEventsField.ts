@@ -1,6 +1,6 @@
 import { APIError, type CollectionBeforeChangeHook, type Field } from 'payload'
 
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 
 /**
  * Events after the reporting period (IAS 10; ISA 560 "subsequent events") — what happened between the

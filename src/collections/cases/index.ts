@@ -22,7 +22,7 @@
 import type { CollectionConfig } from 'payload'
 import { partyRoleAccess, scopedAccess } from '@/access/collections/shared/multiTenantRead'
 import { referenceField } from '@/fields/text/referenceField'
-import { countryCodeField } from '@/fields/text/countryCodeField'
+import { countryCodeField } from '@/fields/select/countryCodeField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { partyRefField } from '@/fields/array/partyRefField'
 import { typeField } from '@/fields/select/typeField'

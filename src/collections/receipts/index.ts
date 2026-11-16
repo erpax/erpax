@@ -7,7 +7,7 @@ import { fiscalDeviceNumberField } from '@/fields/text/fiscalDeviceNumberField'
 import { unpField } from '@/fields/text/unpField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { statusField } from '@/fields/select/statusField'
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 
 /**
  * Receipts (касови бонове / electronic receipts) — the Наредба Н-18 fiscal

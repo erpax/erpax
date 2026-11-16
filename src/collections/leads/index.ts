@@ -24,7 +24,7 @@ import { accountingCollectionAccess } from '@/access/collections/shared/multiTen
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
-import { countryCodeField } from '@/fields/text/countryCodeField'
+import { countryCodeField } from '@/fields/select/countryCodeField'
 import { emitLeadQualified } from '@/utilities/chain/event/emitter'
 
 const Leads: CollectionConfig = {

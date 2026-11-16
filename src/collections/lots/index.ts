@@ -42,7 +42,7 @@ import { accountingCollectionAccess } from '@/access/collections/shared/multiTen
 import { withAbility } from '@/access/collections/shared/abilityAccess'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { notesField } from '@/fields/textarea/notesField'
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 import { horoStateField, validateHoroStates, type HoroState } from '@/utilities/horo'
 
 /**

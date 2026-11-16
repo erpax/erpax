@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { tenantAdminWriteAccess } from '@/access/collections/shared/multiTenantRead'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 import { notesField } from '@/fields/textarea/notesField'
 
 /**

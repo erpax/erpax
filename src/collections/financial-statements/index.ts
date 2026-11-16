@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { tenantAdminWriteAccess } from '@/access/collections/shared/multiTenantRead'
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 import { notesField } from '@/fields/textarea/notesField'
 import { autoSetTimestamp } from '@/hooks/collections/shared/autoSetTimestamp';
 import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSegregationOfDuties';

@@ -6,7 +6,7 @@ import { enforceSegregationOfDuties } from '@/hooks/collections/shared/enforceSe
 import { adminOrAccountant, scopedAccess, tenantAdmin, hasRole, getUserContext } from '@/access/collections/shared/multiTenantRead'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { statusField } from '@/fields/select/statusField'
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 import { glAccountField } from '@/fields/relationship/glAccountField'
 import { periodLock } from '@/utilities/utility'
 import { validateBalancedEntry } from '@/hooks/collections/shared/validateBalancedEntry'

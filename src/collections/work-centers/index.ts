@@ -29,7 +29,7 @@ import { referenceField } from '@/fields/text/referenceField'
 import { statusField } from '@/fields/select/statusField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { notesField } from '@/fields/textarea/notesField'
-import { currencyField } from '@/fields/text/currencyField'
+import { currencyField } from '@/fields/select/currencyField'
 
 const WorkCenters: CollectionConfig = {
   slug: 'work-centers',
