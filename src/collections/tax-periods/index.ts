@@ -19,6 +19,7 @@
 import { CollectionConfig } from 'payload'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { validateTaxPeriodClosing } from '@/hooks/collections/tax-periods/validateTaxPeriodClosing'
+import { iso4217Select } from '@/fields/select/currencyField'
 
 export const TaxPeriods: CollectionConfig = {
   slug: 'tax-periods',
@@ -84,7 +85,7 @@ export const TaxPeriods: CollectionConfig = {
     },
     {
       name: 'taxCurrency',
-      type: 'text',
+      ...iso4217Select,
       admin: {
         description:
           'Tax reporting currency for this jurisdiction (ISO 4217 code, e.g., BGN for Bulgaria)',

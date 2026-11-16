@@ -18,6 +18,7 @@ import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/collection
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const KycChecks: CollectionConfig = {
   slug: 'kyc-checks',
@@ -66,7 +67,7 @@ const KycChecks: CollectionConfig = {
       fields: [
         { name: 'docType', type: 'select', options: ['passport', 'national_id', 'driving_licence', 'utility_bill', 'bank_statement', 'other'].map(v => ({ label: v, value: v })) },
         { name: 'docNumber', type: 'text', admin: { description: 'Encrypted at rest.' } },
-        { name: 'issuingCountry', type: 'text', admin: { description: 'ISO 3166-1 alpha-2.' } },
+        { name: 'issuingCountry', ...iso3166Select, admin: { description: 'ISO 3166-1 alpha-2.' } },
         { name: 'expiresAt', type: 'date' },
       ],
     },

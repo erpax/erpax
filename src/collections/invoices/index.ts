@@ -18,7 +18,7 @@ import { operatorCodeField } from '@/fields/text/operatorCodeField'
 import { fiscalDeviceNumberField } from '@/fields/text/fiscalDeviceNumberField'
 import { unpField } from '@/fields/text/unpField'
 import { fieldVisibleForWrite } from '@/access/fields/shared/fieldAccessFromComputed'
-import { isIso4217 } from '@/utilities/iso/4217'
+import { iso4217Select } from '@/fields/select/currencyField'
 
 /**
  * Invoices — header for AR/AP billing with GL posting + period locking.
@@ -524,10 +524,9 @@ export const Invoices: CollectionConfig = {
       fields: [
         {
           name: 'currencyCode',
-          type: 'text',
+          ...iso4217Select,
           required: true,
           defaultValue: 'EUR',
-          validate: (v: unknown) => (typeof v === 'string' ? isIso4217(v) || 'Invalid ISO-4217 currency code' : true),
           admin: { description: 'ISO 4217 currency' },
         },
         {

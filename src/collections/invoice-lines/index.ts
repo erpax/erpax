@@ -5,6 +5,7 @@ import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfte
 import { VAT_CATEGORY_OPTIONS } from '@/utilities/un/cefact/5305'
 import { invoiceLineTotals } from '@/utilities/invoices/invoice/lines/hooks'
 import { itemInventory } from '@/utilities/invoices/invoice/lines/hooks'
+import { iso4217Select } from '@/fields/select/currencyField'
 
 /**
  * Invoice Lines — line items (BG-25) for an invoice header.
@@ -416,7 +417,7 @@ export const InvoiceLines: CollectionConfig = {
       fields: [
         {
           name: 'currencyCode',
-          type: 'text',
+          ...iso4217Select,
           admin: { description: 'Currency' },
         },
         {

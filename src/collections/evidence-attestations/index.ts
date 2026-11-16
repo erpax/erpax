@@ -26,6 +26,7 @@ import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/collection
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const EvidenceAttestations: CollectionConfig = {
   slug: 'evidence-attestations',
@@ -62,7 +63,7 @@ const EvidenceAttestations: CollectionConfig = {
     },
     {
       name: 'country',
-      type: 'text',
+      ...iso3166Select,
       required: true,
       admin: { description: 'ISO-3166-1 alpha-2 the walk-through ran against.' },
     },

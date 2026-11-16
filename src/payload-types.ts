@@ -7,84 +7,262 @@
  */
 
 /**
+ * ISO 3166-1 alpha-2 — geographic scope (blank = supranational/global).
+ *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "UploadTransforms".
+ * via the `definition` "Iso3166Country".
  */
-export type UploadTransforms = {
-  /**
-   * Time range on the original, in milliseconds. Start inclusive, end exclusive.
-   */
-  clip?: {
-    endMs: number;
-    startMs: number;
-  };
-  /**
-   * Rectangle in original-file pixels, applied before resize and encoding.
-   */
-  crop?: {
-    height: number;
-    width: number;
-    x: number;
-    y: number;
-  };
-  /**
-   * Encoding settings for the output format. Does not select the format.
-   */
-  encoding?: {
-    [k: string]: unknown;
-  };
-  /**
-   * Mirror the image on one or both axes.
-   */
-  flip?: {
-    horizontal?: boolean;
-    vertical?: boolean;
-  };
-  /**
-   * Preferred point as percentages of the original, from 0 to 100.
-   */
-  focalPoint?: {
-    x: number;
-    y: number;
-  };
-  /**
-   * Keep or remove metadata embedded in the output file.
-   */
-  metadataPolicy?: {
-    mode: 'preserve' | 'strip';
-  };
-  /**
-   * One-based, inclusive page range on the original document.
-   */
-  pageRange?: {
-    endPage: number;
-    startPage: number;
-  };
-  /**
-   * Video frame to use as the poster, in milliseconds on the original.
-   */
-  posterFrame?: {
-    timestampMs: number;
-  };
-  /**
-   * Target size for visual media.
-   */
-  resize?: {
-    fit?: 'contain' | 'cover' | 'fill' | 'inside' | 'outside';
-    height?: number;
-    width?: number;
-    withoutEnlargement?: boolean;
-  };
-  /**
-   * Clockwise rotation in degrees.
-   */
-  rotate?: {
-    angle: number;
-  };
-  [k: string]: unknown;
-} | null;
+export type Iso3166Country =
+  | (
+      | 'AF'
+      | 'AX'
+      | 'AL'
+      | 'DZ'
+      | 'AS'
+      | 'AD'
+      | 'AO'
+      | 'AI'
+      | 'AQ'
+      | 'AG'
+      | 'AR'
+      | 'AM'
+      | 'AW'
+      | 'AU'
+      | 'AT'
+      | 'AZ'
+      | 'BS'
+      | 'BH'
+      | 'BD'
+      | 'BB'
+      | 'BY'
+      | 'BE'
+      | 'BZ'
+      | 'BJ'
+      | 'BM'
+      | 'BT'
+      | 'BO'
+      | 'BA'
+      | 'BW'
+      | 'BV'
+      | 'BR'
+      | 'IO'
+      | 'BN'
+      | 'BG'
+      | 'BF'
+      | 'BI'
+      | 'KH'
+      | 'CM'
+      | 'CA'
+      | 'CV'
+      | 'KY'
+      | 'CF'
+      | 'TD'
+      | 'CL'
+      | 'CN'
+      | 'CX'
+      | 'CC'
+      | 'CO'
+      | 'KM'
+      | 'CG'
+      | 'CD'
+      | 'CK'
+      | 'CR'
+      | 'CI'
+      | 'HR'
+      | 'CU'
+      | 'CY'
+      | 'CZ'
+      | 'DK'
+      | 'DJ'
+      | 'DM'
+      | 'DO'
+      | 'EC'
+      | 'EG'
+      | 'SV'
+      | 'GQ'
+      | 'ER'
+      | 'EE'
+      | 'ET'
+      | 'FK'
+      | 'FO'
+      | 'FJ'
+      | 'FI'
+      | 'FR'
+      | 'GF'
+      | 'PF'
+      | 'TF'
+      | 'GA'
+      | 'GM'
+      | 'GE'
+      | 'DE'
+      | 'GH'
+      | 'GI'
+      | 'GR'
+      | 'GL'
+      | 'GD'
+      | 'GP'
+      | 'GU'
+      | 'GT'
+      | 'GG'
+      | 'GN'
+      | 'GW'
+      | 'GY'
+      | 'HT'
+      | 'HM'
+      | 'VA'
+      | 'HN'
+      | 'HK'
+      | 'HU'
+      | 'IS'
+      | 'IN'
+      | 'ID'
+      | 'IR'
+      | 'IQ'
+      | 'IE'
+      | 'IM'
+      | 'IL'
+      | 'IT'
+      | 'JM'
+      | 'JP'
+      | 'JE'
+      | 'JO'
+      | 'KZ'
+      | 'KE'
+      | 'KI'
+      | 'KP'
+      | 'KR'
+      | 'XK'
+      | 'KW'
+      | 'KG'
+      | 'LA'
+      | 'LV'
+      | 'LB'
+      | 'LS'
+      | 'LR'
+      | 'LY'
+      | 'LI'
+      | 'LT'
+      | 'LU'
+      | 'MO'
+      | 'MK'
+      | 'MG'
+      | 'MW'
+      | 'MY'
+      | 'MV'
+      | 'ML'
+      | 'MT'
+      | 'MH'
+      | 'MQ'
+      | 'MR'
+      | 'MU'
+      | 'YT'
+      | 'MX'
+      | 'FM'
+      | 'MD'
+      | 'MC'
+      | 'MN'
+      | 'ME'
+      | 'MS'
+      | 'MA'
+      | 'MZ'
+      | 'MM'
+      | 'NA'
+      | 'NR'
+      | 'NP'
+      | 'NL'
+      | 'AN'
+      | 'NC'
+      | 'NZ'
+      | 'NI'
+      | 'NE'
+      | 'NG'
+      | 'NU'
+      | 'NF'
+      | 'MP'
+      | 'NO'
+      | 'OM'
+      | 'PK'
+      | 'PW'
+      | 'PS'
+      | 'PA'
+      | 'PG'
+      | 'PY'
+      | 'PE'
+      | 'PH'
+      | 'PN'
+      | 'PL'
+      | 'PT'
+      | 'PR'
+      | 'QA'
+      | 'RE'
+      | 'RO'
+      | 'RU'
+      | 'RW'
+      | 'SH'
+      | 'KN'
+      | 'LC'
+      | 'PM'
+      | 'VC'
+      | 'WS'
+      | 'SM'
+      | 'ST'
+      | 'SA'
+      | 'SN'
+      | 'RS'
+      | 'SC'
+      | 'SL'
+      | 'SG'
+      | 'SK'
+      | 'SI'
+      | 'SB'
+      | 'SO'
+      | 'ZA'
+      | 'GS'
+      | 'ES'
+      | 'LK'
+      | 'SD'
+      | 'SR'
+      | 'SJ'
+      | 'SZ'
+      | 'SE'
+      | 'CH'
+      | 'SY'
+      | 'TW'
+      | 'TJ'
+      | 'TZ'
+      | 'TH'
+      | 'TL'
+      | 'TG'
+      | 'TK'
+      | 'TO'
+      | 'TT'
+      | 'TN'
+      | 'TR'
+      | 'TM'
+      | 'TC'
+      | 'TV'
+      | 'UG'
+      | 'UA'
+      | 'AE'
+      | 'GB'
+      | 'US'
+      | 'UM'
+      | 'UY'
+      | 'UZ'
+      | 'VU'
+      | 'VE'
+      | 'VN'
+      | 'VG'
+      | 'VI'
+      | 'WF'
+      | 'EH'
+      | 'YE'
+      | 'ZM'
+      | 'ZW'
+    )
+  | null;
 /**
- * ISO 4217 currency.
+ * Currency code
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "Iso4217Currency".
@@ -257,257 +435,82 @@ export type Iso4217Currency =
     )
   | null;
 /**
- * ISO 3166-1 alpha-2 country.
- *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "Iso3166Country".
+ * via the `definition` "UploadTransforms".
  */
-export type Iso3166Country =
-  | 'AF'
-  | 'AX'
-  | 'AL'
-  | 'DZ'
-  | 'AS'
-  | 'AD'
-  | 'AO'
-  | 'AI'
-  | 'AQ'
-  | 'AG'
-  | 'AR'
-  | 'AM'
-  | 'AW'
-  | 'AU'
-  | 'AT'
-  | 'AZ'
-  | 'BS'
-  | 'BH'
-  | 'BD'
-  | 'BB'
-  | 'BY'
-  | 'BE'
-  | 'BZ'
-  | 'BJ'
-  | 'BM'
-  | 'BT'
-  | 'BO'
-  | 'BA'
-  | 'BW'
-  | 'BV'
-  | 'BR'
-  | 'IO'
-  | 'BN'
-  | 'BG'
-  | 'BF'
-  | 'BI'
-  | 'KH'
-  | 'CM'
-  | 'CA'
-  | 'CV'
-  | 'KY'
-  | 'CF'
-  | 'TD'
-  | 'CL'
-  | 'CN'
-  | 'CX'
-  | 'CC'
-  | 'CO'
-  | 'KM'
-  | 'CG'
-  | 'CD'
-  | 'CK'
-  | 'CR'
-  | 'CI'
-  | 'HR'
-  | 'CU'
-  | 'CY'
-  | 'CZ'
-  | 'DK'
-  | 'DJ'
-  | 'DM'
-  | 'DO'
-  | 'EC'
-  | 'EG'
-  | 'SV'
-  | 'GQ'
-  | 'ER'
-  | 'EE'
-  | 'ET'
-  | 'FK'
-  | 'FO'
-  | 'FJ'
-  | 'FI'
-  | 'FR'
-  | 'GF'
-  | 'PF'
-  | 'TF'
-  | 'GA'
-  | 'GM'
-  | 'GE'
-  | 'DE'
-  | 'GH'
-  | 'GI'
-  | 'GR'
-  | 'GL'
-  | 'GD'
-  | 'GP'
-  | 'GU'
-  | 'GT'
-  | 'GG'
-  | 'GN'
-  | 'GW'
-  | 'GY'
-  | 'HT'
-  | 'HM'
-  | 'VA'
-  | 'HN'
-  | 'HK'
-  | 'HU'
-  | 'IS'
-  | 'IN'
-  | 'ID'
-  | 'IR'
-  | 'IQ'
-  | 'IE'
-  | 'IM'
-  | 'IL'
-  | 'IT'
-  | 'JM'
-  | 'JP'
-  | 'JE'
-  | 'JO'
-  | 'KZ'
-  | 'KE'
-  | 'KI'
-  | 'KP'
-  | 'KR'
-  | 'XK'
-  | 'KW'
-  | 'KG'
-  | 'LA'
-  | 'LV'
-  | 'LB'
-  | 'LS'
-  | 'LR'
-  | 'LY'
-  | 'LI'
-  | 'LT'
-  | 'LU'
-  | 'MO'
-  | 'MK'
-  | 'MG'
-  | 'MW'
-  | 'MY'
-  | 'MV'
-  | 'ML'
-  | 'MT'
-  | 'MH'
-  | 'MQ'
-  | 'MR'
-  | 'MU'
-  | 'YT'
-  | 'MX'
-  | 'FM'
-  | 'MD'
-  | 'MC'
-  | 'MN'
-  | 'ME'
-  | 'MS'
-  | 'MA'
-  | 'MZ'
-  | 'MM'
-  | 'NA'
-  | 'NR'
-  | 'NP'
-  | 'NL'
-  | 'AN'
-  | 'NC'
-  | 'NZ'
-  | 'NI'
-  | 'NE'
-  | 'NG'
-  | 'NU'
-  | 'NF'
-  | 'MP'
-  | 'NO'
-  | 'OM'
-  | 'PK'
-  | 'PW'
-  | 'PS'
-  | 'PA'
-  | 'PG'
-  | 'PY'
-  | 'PE'
-  | 'PH'
-  | 'PN'
-  | 'PL'
-  | 'PT'
-  | 'PR'
-  | 'QA'
-  | 'RE'
-  | 'RO'
-  | 'RU'
-  | 'RW'
-  | 'SH'
-  | 'KN'
-  | 'LC'
-  | 'PM'
-  | 'VC'
-  | 'WS'
-  | 'SM'
-  | 'ST'
-  | 'SA'
-  | 'SN'
-  | 'RS'
-  | 'SC'
-  | 'SL'
-  | 'SG'
-  | 'SK'
-  | 'SI'
-  | 'SB'
-  | 'SO'
-  | 'ZA'
-  | 'GS'
-  | 'ES'
-  | 'LK'
-  | 'SD'
-  | 'SR'
-  | 'SJ'
-  | 'SZ'
-  | 'SE'
-  | 'CH'
-  | 'SY'
-  | 'TW'
-  | 'TJ'
-  | 'TZ'
-  | 'TH'
-  | 'TL'
-  | 'TG'
-  | 'TK'
-  | 'TO'
-  | 'TT'
-  | 'TN'
-  | 'TR'
-  | 'TM'
-  | 'TC'
-  | 'TV'
-  | 'UG'
-  | 'UA'
-  | 'AE'
-  | 'GB'
-  | 'US'
-  | 'UM'
-  | 'UY'
-  | 'UZ'
-  | 'VU'
-  | 'VE'
-  | 'VN'
-  | 'VG'
-  | 'VI'
-  | 'WF'
-  | 'EH'
-  | 'YE'
-  | 'ZM'
-  | 'ZW';
+export type UploadTransforms = {
+  /**
+   * Time range on the original, in milliseconds. Start inclusive, end exclusive.
+   */
+  clip?: {
+    endMs: number;
+    startMs: number;
+  };
+  /**
+   * Rectangle in original-file pixels, applied before resize and encoding.
+   */
+  crop?: {
+    height: number;
+    width: number;
+    x: number;
+    y: number;
+  };
+  /**
+   * Encoding settings for the output format. Does not select the format.
+   */
+  encoding?: {
+    [k: string]: unknown;
+  };
+  /**
+   * Mirror the image on one or both axes.
+   */
+  flip?: {
+    horizontal?: boolean;
+    vertical?: boolean;
+  };
+  /**
+   * Preferred point as percentages of the original, from 0 to 100.
+   */
+  focalPoint?: {
+    x: number;
+    y: number;
+  };
+  /**
+   * Keep or remove metadata embedded in the output file.
+   */
+  metadataPolicy?: {
+    mode: 'preserve' | 'strip';
+  };
+  /**
+   * One-based, inclusive page range on the original document.
+   */
+  pageRange?: {
+    endPage: number;
+    startPage: number;
+  };
+  /**
+   * Video frame to use as the poster, in milliseconds on the original.
+   */
+  posterFrame?: {
+    timestampMs: number;
+  };
+  /**
+   * Target size for visual media.
+   */
+  resize?: {
+    fit?: 'contain' | 'cover' | 'fill' | 'inside' | 'outside';
+    height?: number;
+    width?: number;
+    withoutEnlargement?: boolean;
+  };
+  /**
+   * Clockwise rotation in degrees.
+   */
+  rotate?: {
+    angle: number;
+  };
+  [k: string]: unknown;
+} | null;
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "OrderStatus".
@@ -1457,10 +1460,7 @@ export interface Tenant {
      * Legal-entity identity for this tenant.
      */
     identity?: {
-      /**
-       * ISO 3166-1 alpha-2 country code (e.g. BG, US, DE, JP, NO, SA). Any code accepted; drives derived currency / locale / accounting standard when those nested overrides are absent.
-       */
-      country?: string | null;
+      country?: Iso3166Country;
       /**
        * Registered legal name (may differ from the customer-facing brand name).
        */
@@ -1487,10 +1487,7 @@ export interface Tenant {
      * Functional / reporting currency configuration.
      */
     currency?: {
-      /**
-       * ISO 4217 §5 alphabetic code used as this tenant's reporting / functional currency (e.g. EUR, USD, NOK, KRW). Any ISO 4217 code accepted.
-       */
-      reportingCurrency?: string | null;
+      reportingCurrency?: Iso4217Currency;
     };
     /**
      * Accounting framework + fiscal calendar.
@@ -1717,10 +1714,7 @@ export interface User {
        * BCP 47 locale tag (e.g. bg-BG, en-US, de-DE). Drives admin UI language for this user.
        */
       defaultLocale?: string | null;
-      /**
-       * ISO 4217 §5 currency code the user prefers to SEE amounts in. Independent from the tenant's reporting currency — viewing-only conversion via FX.
-       */
-      displayCurrency?: string | null;
+      displayCurrency?: Iso4217Currency;
       /**
        * Personal date-format preference. Defaults to the BCP 47 locale's standard.
        */
@@ -2333,10 +2327,7 @@ export interface Product {
      * Minimum price
      */
     minPrice?: number | null;
-    /**
-     * Currency
-     */
-    currencyCode: string;
+    currencyCode: Iso4217Currency;
     /**
      * Price includes tax
      */
@@ -2690,10 +2681,7 @@ export interface Address {
    * National ID number
    */
   ninCode?: string | null;
-  /**
-   * ISO 4217 currency code — defaults to the canonical DEFAULT_CURRENCY (derived from DEFAULT_COUNTRY).
-   */
-  currencyCode?: string | null;
+  currencyCode?: Iso4217Currency;
   /**
    * Default debit account for transactions
    */
@@ -3049,10 +3037,7 @@ export interface TaxJurisdiction {
    */
   authorityName?: string | null;
   geography: {
-    /**
-     * ISO 3166-1 alpha-2 country code (e.g., US, DE, GB)
-     */
-    country: string;
+    country: Iso3166Country;
     /**
      * ISO 3166-1 alpha-3 country code (e.g., USA, DEU, GBR)
      */
@@ -3335,7 +3320,7 @@ export interface LegalEntity {
     city?: string | null;
     postalCode?: string | null;
     region?: string | null;
-    countryCode?: string | null;
+    countryCode?: Iso3166Country;
   };
   /**
    * US Standard Industrial Classification code (US SIC).
@@ -4457,14 +4442,8 @@ export interface FiscalPeriod {
      * Day-of-month the fiscal year starts.
      */
     fiscalYearStartDay?: number | null;
-    /**
-     * ISO 3166-1 alpha-2 — drives statutory period coding (SAF-T).
-     */
-    countryCode?: string | null;
-    /**
-     * ISO 4217 reporting currency for this fiscal configuration.
-     */
-    currencyCode?: string | null;
+    countryCode?: Iso3166Country;
+    currencyCode?: Iso4217Currency;
     /**
      * BCP-47 locale for period labelling.
      */
@@ -4773,10 +4752,7 @@ export interface Party {
    * The sides this party is on. One party may be both.
    */
   roles: ('customer' | 'vendor')[];
-  /**
-   * ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, e-invoicing).
-   */
-  country?: string | null;
+  country?: Iso3166Country;
   identity: {
     /**
      * Registered legal name (EN 16931 BT-27)
@@ -4875,18 +4851,12 @@ export interface Party {
      * Credit limit (cents)
      */
     creditLimit?: number | null;
-    /**
-     * ISO 4217 currency for credit limit
-     */
-    creditCurrency?: string | null;
+    creditCurrency?: Iso4217Currency;
     /**
      * Preferred disbursement method
      */
     preferredPaymentMethod?: ('ach' | 'wire' | 'check' | 'credit_card' | 'sepa' | 'cash' | 'other') | null;
-    /**
-     * ISO 4217 default trading currency
-     */
-    defaultCurrency: string;
+    defaultCurrency: Iso4217Currency;
     /**
      * BCP 47 locale (e.g. en, en-US, de-DE)
      */
@@ -4921,10 +4891,7 @@ export interface Party {
      * SWIFT/BIC (ISO 9362)
      */
     bankSwiftBic?: string | null;
-    /**
-     * ISO 3166-1 alpha-2 country of bank
-     */
-    bankCountryCode?: string | null;
+    bankCountryCode?: Iso3166Country;
   };
   ledger?: {
     /**
@@ -5234,10 +5201,7 @@ export interface GovernmentGrant {
    * Granting authority (e.g. EU Horizon Europe, BG Innovation Fund, US SBA).
    */
   grantorName: string;
-  /**
-   * ISO 3166-1 alpha-2 — country of the granting authority.
-   */
-  grantorCountryCode?: string | null;
+  grantorCountryCode?: Iso3166Country;
   /**
    * Recipient legal entity.
    */
@@ -6141,10 +6105,7 @@ export interface Invoice {
       }[]
     | null;
   billingTax: {
-    /**
-     * ISO 4217 currency
-     */
-    currencyCode: string;
+    currencyCode: Iso4217Currency;
     /**
      * Exchange rate
      */
@@ -6502,10 +6463,7 @@ export interface FiscalDevice {
   individualNumber: string;
   model?: string | null;
   manufacturer?: string | null;
-  /**
-   * ISO 4217 currency this ФУ issues receipts in — overrides the tenant/country default.
-   */
-  currency?: string | null;
+  currency?: Iso4217Currency;
   /**
    * Active fiscal tax groups (Приложение № 1) on this device — group letter → VAT rate. Empty ⇒ country VAT bands.
    */
@@ -7142,10 +7100,7 @@ export interface Transaction {
      * Invoice amount reference
      */
     invoiceAmount?: number | null;
-    /**
-     * Currency code
-     */
-    currencyCode?: string | null;
+    currencyCode?: Iso4217Currency;
     /**
      * Exchange rate
      */
@@ -7292,10 +7247,7 @@ export interface CostCenter {
    * Parent in the hierarchy. Null = root.
    */
   parent?: (string | null) | CostCenter;
-  /**
-   * ISO 3166-1 alpha-2 — populated for kind = country, optional otherwise. Used by IFRS 8 / ASC 280 geographic disclosure.
-   */
-  country?: string | null;
+  country?: Iso3166Country;
   /**
    * Cost-center owner / department head.
    */
@@ -7634,10 +7586,7 @@ export interface Property {
    */
   tenure: 'owned' | 'leased' | 'managed' | 'sublet';
   address: string | Address;
-  /**
-   * ISO 3166-1 alpha-2.
-   */
-  country: string;
+  country: Iso3166Country;
   /**
    * ISO 3166-2 subdivision code.
    */
@@ -7986,14 +7935,8 @@ export interface FxTransaction {
    */
   transactionDate: string;
   transactionKind: 'spot_conversion' | 'period_end_revaluation' | 'hedge_settlement' | 'translation_adjustment';
-  /**
-   * ISO 4217 source currency (3-letter code).
-   */
-  fromCurrency: string;
-  /**
-   * ISO 4217 target currency (3-letter code).
-   */
-  toCurrency: string;
+  fromCurrency: Iso4217Currency;
+  toCurrency: Iso4217Currency;
   /**
    * Source amount in cents (in fromCurrency).
    */
@@ -8215,10 +8158,7 @@ export interface Employee {
      * Reference to a tokenised id stored elsewhere (do NOT store the raw national id here). ISO 27002 §8.11 data masking.
      */
     nationalIdRef?: string | null;
-    /**
-     * ISO 3166-1 alpha-2.
-     */
-    citizenshipCountry?: string | null;
+    citizenshipCountry?: Iso3166Country;
   };
   contact?: {
     /**
@@ -8277,10 +8217,7 @@ export interface Employee {
         id?: string | null;
       }[]
     | null;
-  /**
-   * ISO 3166-1 alpha-2. Drives the country-context cascade (tax codes, social-security regime, payroll calendar).
-   */
-  workCountry?: string | null;
+  workCountry?: Iso3166Country;
   hireDate: string;
   /**
    * Probation typically 3 / 6 months per local labour law.
@@ -8366,10 +8303,7 @@ export interface Employee {
      * Reference to a tokenised SSN / NI number / equivalent. Do NOT store raw.
      */
     socialSecurityIdRef?: string | null;
-    /**
-     * ISO 3166-1 alpha-2. May differ from workCountry for cross-border employees.
-     */
-    taxResidenceCountry?: string | null;
+    taxResidenceCountry?: Iso3166Country;
   };
   status?: ('pre_hire' | 'active' | 'on_leave' | 'suspended' | 'terminated') | null;
   approvedBy?: (string | null) | User;
@@ -8408,10 +8342,7 @@ export interface EvidenceAttestation {
    * Workflow slug (`order-to-cash`, `procure-to-pay`, `record-to-report`).
    */
   workflow: string;
-  /**
-   * ISO-3166-1 alpha-2 the walk-through ran against.
-   */
-  country: string;
+  country: Iso3166Country;
   /**
    * ISO-8601 timestamp the walk-through completed.
    */
@@ -10753,10 +10684,7 @@ export interface WarehouseLocation {
   name: string;
   type: 'warehouse' | '3pl' | 'retail' | 'consignment' | 'transit' | 'quarantine' | 'returns' | 'bonded' | 'virtual';
   address?: (string | null) | Address;
-  /**
-   * ISO 3166-1 alpha-2.
-   */
-  country?: string | null;
+  country?: Iso3166Country;
   /**
    * ISO 3166-2 subdivision code.
    */
@@ -11015,7 +10943,7 @@ export interface BeneficialOwner {
    * ISO 3166-1 alpha-2 country code.
    */
   nationality?: string | null;
-  residenceCountry?: string | null;
+  residenceCountry?: Iso3166Country;
   residenceAddress?: (string | null) | Address;
   /**
    * AMLD threshold typically 25%.
@@ -11064,10 +10992,7 @@ export interface KycCheck {
          * Encrypted at rest.
          */
         docNumber?: string | null;
-        /**
-         * ISO 3166-1 alpha-2.
-         */
-        issuingCountry?: string | null;
+        issuingCountry?: Iso3166Country;
         expiresAt?: string | null;
         id?: string | null;
       }[]
@@ -11375,10 +11300,7 @@ export interface BookableResource {
    * Default VAT / sales-tax code for bookings.
    */
   taxCode?: (string | null) | TaxCode;
-  /**
-   * ISO 3166-1 alpha-2 — drives tax + holiday calendar.
-   */
-  country?: string | null;
+  country?: Iso3166Country;
   status?: ('active' | 'out_of_service' | 'maintenance' | 'retired') | null;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -12003,18 +11925,9 @@ export interface CustomsDeclaration {
     'export' | 'import' | 'reexport' | 'transit' | 'temporary_admission' | 'inward_processing' | 'outward_processing';
   shipment: string | Shipment;
   declarationDate: string;
-  /**
-   * ISO 3166-1 alpha-2 — country goods leave from.
-   */
-  countryOfDispatch?: string | null;
-  /**
-   * ISO 3166-1 alpha-2 — final destination country.
-   */
-  countryOfDestination: string;
-  /**
-   * ISO 3166-1 alpha-2 — country where the goods were manufactured (drives preferential treatment).
-   */
-  countryOfOrigin?: string | null;
+  countryOfDispatch?: Iso3166Country;
+  countryOfDestination: Iso3166Country;
+  countryOfOrigin?: Iso3166Country;
   currency?: Iso4217Currency;
   /**
    * Σ(line items × declared value), in cents. Drives import VAT + duty calculation.
@@ -12287,10 +12200,7 @@ export interface InvoiceLine {
     returnedAt?: string | null;
   };
   details?: {
-    /**
-     * Currency
-     */
-    currencyCode?: string | null;
+    currencyCode?: Iso4217Currency;
     /**
      * SKU
      */
@@ -12583,10 +12493,7 @@ export interface BankAccount {
    * Bank name.
    */
   institution?: string | null;
-  /**
-   * ISO 3166-1 alpha-2 of the bank, auto-derived from the IBAN if blank. Drives country-context API routing (open-banking, tax authority, sanctions screening).
-   */
-  country?: string | null;
+  country?: Iso3166Country;
   currency?: Iso4217Currency;
   /**
    * GL cash account this bank account posts to.
@@ -13271,10 +13178,7 @@ export interface AuditReport {
          * Estimated annual tax savings
          */
         estimatedTaxSavings?: number | null;
-        /**
-         * Currency of estimated savings (ISO 4217 code)
-         */
-        savingsCurrency?: string | null;
+        savingsCurrency?: Iso4217Currency;
         /**
          * Compliance risk assessment
          */
@@ -13369,10 +13273,7 @@ export interface Consolidation {
    * Period-end date for all entities in consolidation
    */
   periodClosingDate: string;
-  /**
-   * Reporting/consolidation currency (ISO 4217 code, e.g., USD)
-   */
-  consolidationCurrency?: string | null;
+  consolidationCurrency?: Iso4217Currency;
   /**
    * Type of consolidation accounting
    */
@@ -14685,10 +14586,7 @@ export interface TaxPeriod {
    * Tax authority filing deadline for this jurisdiction
    */
   filingDeadline: string;
-  /**
-   * Tax reporting currency for this jurisdiction (ISO 4217 code, e.g., BGN for Bulgaria)
-   */
-  taxCurrency?: string | null;
+  taxCurrency?: Iso4217Currency;
   /**
    * Tax officer or preparer who initiated tax period process
    */
@@ -16852,10 +16750,7 @@ export interface TrackingEvent {
    * Free-text city/hub (e.g. `Sofia BG-1000`, `Frankfurt DE-60001`).
    */
   location?: string | null;
-  /**
-   * ISO 3166-1 alpha-2 country at the event time.
-   */
-  locationCountry?: string | null;
+  locationCountry?: Iso3166Country;
   /**
    * Carrier-supplied free-text event description.
    */
@@ -17167,7 +17062,7 @@ export interface SegmentReporting {
     | null;
   segmentGeography?:
     | {
-        countryCode: string;
+        countryCode: Iso3166Country;
         revenue: number;
         assets?: number | null;
         id?: string | null;
@@ -18137,10 +18032,7 @@ export interface ApiAuditEvent {
     | 'payroll'
     | 'statistics'
     | 'other';
-  /**
-   * ISO-3166-1 alpha-2 the call was made for.
-   */
-  country: string;
+  country: Iso3166Country;
   /**
    * Authority label from the resolver result (`БНБ`, `ECB`, `VIES`, `EU CFSP`, `Peppol Directory`, `НАП`, …).
    */
@@ -18635,14 +18527,8 @@ export interface RoundingAdjustment {
    * ISO 8601 — the date the rounding plug applies to.
    */
   adjustmentDate: string;
-  /**
-   * ISO 4217 source currency (functional / underlying ledger currency). Required by IAS-21 §39 when rounding crosses currency.
-   */
-  fromCurrency: string;
-  /**
-   * ISO 4217 target currency (presentation currency). Equals fromCurrency for pure presentation-rounding plugs (IAS-1 §51(e)).
-   */
-  toCurrency: string;
+  fromCurrency: Iso4217Currency;
+  toCurrency: Iso4217Currency;
   /**
    * Signed rounding amount in cents (typically ±1 to ±100 cents). Hits a designated Rounding GL account.
    */
@@ -18742,10 +18628,7 @@ export interface Sector {
    * UN Sustainable Development Goal (1-17) this sector primarily advances.
    */
   sdgGoal?: number | null;
-  /**
-   * ISO 3166-1 alpha-2 — geographic scope (blank = supranational/global).
-   */
-  countryCode?: string | null;
+  countryCode?: Iso3166Country;
   status?: ('active' | 'merged' | 'retired') | null;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;

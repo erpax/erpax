@@ -25,6 +25,7 @@ import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const TrackingEvents: CollectionConfig = {
   slug: 'tracking-events',
@@ -65,7 +66,7 @@ const TrackingEvents: CollectionConfig = {
       admin: { description: 'ISO 8601 — carrier-reported event timestamp (UTC).' } },
     { name: 'location', type: 'text',
       admin: { description: 'Free-text city/hub (e.g. `Sofia BG-1000`, `Frankfurt DE-60001`).' } },
-    { name: 'locationCountry', type: 'text',
+    { name: 'locationCountry', ...iso3166Select,
       admin: { description: 'ISO 3166-1 alpha-2 country at the event time.' } },
     { name: 'description', type: 'text',
       admin: { description: 'Carrier-supplied free-text event description.' } },

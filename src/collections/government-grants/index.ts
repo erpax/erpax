@@ -32,6 +32,7 @@ import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
 import { legalEntityField } from '@/fields/relationship/legalEntityField'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const GovernmentGrants: CollectionConfig = {
   slug: 'government-grants',
@@ -48,7 +49,7 @@ const GovernmentGrants: CollectionConfig = {
     { name: 'grantName', type: 'text', required: true },
     { name: 'grantorName', type: 'text', required: true,
       admin: { description: 'Granting authority (e.g. EU Horizon Europe, BG Innovation Fund, US SBA).' } },
-    { name: 'grantorCountryCode', type: 'text',
+    { name: 'grantorCountryCode', ...iso3166Select,
       admin: { description: 'ISO 3166-1 alpha-2 — country of the granting authority.' } },
     legalEntityField({ description: 'Recipient legal entity.' }),
     {

@@ -24,6 +24,7 @@ import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
 import { referenceField } from '@/fields/text/referenceField'
+import { iso4217Select } from '@/fields/select/currencyField'
 
 const RoundingAdjustments: CollectionConfig = {
   slug: 'rounding-adjustments',
@@ -42,7 +43,7 @@ const RoundingAdjustments: CollectionConfig = {
       admin: { description: 'ISO 8601 — the date the rounding plug applies to.' } },
     {
       name: 'fromCurrency',
-      type: 'text',
+      ...iso4217Select,
       required: true,
       admin: {
         description: 'ISO 4217 source currency (functional / underlying ledger currency). Required by IAS-21 §39 when rounding crosses currency.',
@@ -50,7 +51,7 @@ const RoundingAdjustments: CollectionConfig = {
     },
     {
       name: 'toCurrency',
-      type: 'text',
+      ...iso4217Select,
       required: true,
       admin: {
         description: 'ISO 4217 target currency (presentation currency). Equals fromCurrency for pure presentation-rounding plugs (IAS-1 §51(e)).',

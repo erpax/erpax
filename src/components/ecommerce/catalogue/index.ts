@@ -37,6 +37,7 @@ import type { CollectionOverride } from '@payloadcms/plugin-ecommerce/types'
 
 import { localeRecord } from '@/i18n'
 import { APPS } from '@/packages'
+import { iso4217Select } from '@/fields/select/currencyField'
 
 /** The SKU-level identifiers — on the product (a product without variants IS the SKU) and on each variant. */
 export const skuFields = (): Field[] => [
@@ -94,7 +95,7 @@ export const itemFields = (): Field[] => [
       },
       {
         name: 'currencyCode',
-        type: 'text',
+        ...iso4217Select,
         required: true,
         defaultValue: 'EUR',
         admin: { description: 'Currency' },

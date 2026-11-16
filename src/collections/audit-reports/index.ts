@@ -19,6 +19,7 @@
 import { CollectionConfig } from 'payload'
 import { accountingCollectionAccess } from '@/access/collections/shared/multiTenantRead'
 import { validateAuditComplianceReporting } from '@/hooks/collections/audit-reports/validateAuditComplianceReporting'
+import { iso4217Select } from '@/fields/select/currencyField'
 
 export const AuditReports: CollectionConfig = {
   slug: 'audit-reports',
@@ -199,7 +200,7 @@ export const AuditReports: CollectionConfig = {
         },
         {
           name: 'savingsCurrency',
-          type: 'text',
+          ...iso4217Select,
           admin: { description: 'Currency of estimated savings (ISO 4217 code)' },
         },
         {

@@ -3,6 +3,7 @@ import { tenantMasterDataAccess } from '@/access/collections/shared/multiTenantR
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { currencyField } from '@/fields/select/currencyField'
 import { fieldAccess as superAdminField } from '@/access/collections/shared/superAdminOnly'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 /** The reference attributes of a jurisdiction are the same for every tenant: only a super-admin writes them. */
 const reference = { create: superAdminField, update: superAdminField }
@@ -55,7 +56,7 @@ export const TaxJurisdictions: CollectionConfig = {
       name: 'geography',
       label: 'Geography',
       fields: [
-        { name: 'country', type: 'text', required: true, index: true,
+        { name: 'country', ...iso3166Select, required: true, index: true,
           admin: { description: 'ISO 3166-1 alpha-2 country code (e.g., US, DE, GB)' } },
         { name: 'iso3Code', type: 'text', access: reference,
           admin: { description: 'ISO 3166-1 alpha-3 country code (e.g., USA, DEU, GBR)' } },

@@ -28,6 +28,7 @@ import { accountingCollectionAccess } from '@/access/collections/shared/multiTen
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
+import { iso4217Select } from '@/fields/select/currencyField'
 
 const FxTransactions: CollectionConfig = {
   slug: 'fx-transactions',
@@ -57,9 +58,9 @@ const FxTransactions: CollectionConfig = {
         { label: 'Translation Adjustment (consolidation)', value: 'translation_adjustment' },
       ],
     },
-    { name: 'fromCurrency', type: 'text', required: true,
+    { name: 'fromCurrency', ...iso4217Select, required: true,
       admin: { description: 'ISO 4217 source currency (3-letter code).' } },
-    { name: 'toCurrency', type: 'text', required: true,
+    { name: 'toCurrency', ...iso4217Select, required: true,
       admin: { description: 'ISO 4217 target currency (3-letter code).' } },
     { name: 'fromAmount', type: 'number', required: true,
       admin: { description: 'Source amount in cents (in fromCurrency).' } },

@@ -32,6 +32,7 @@ import { standardCollectionHooks } from '@/utilities/standard/collection/hook'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/collections/shared/multiTenantRead'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const ApiAuditEvents: CollectionConfig = {
   slug: 'api-audit-events',
@@ -81,7 +82,7 @@ const ApiAuditEvents: CollectionConfig = {
     },
     {
       name: 'country',
-      type: 'text',
+      ...iso3166Select,
       required: true,
       index: true,
       admin: { description: 'ISO-3166-1 alpha-2 the call was made for.' },

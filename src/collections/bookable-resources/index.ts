@@ -29,6 +29,7 @@ import { currencyField } from '@/fields/select/currencyField'
 import { statusField } from '@/fields/select/statusField'
 import { notesField } from '@/fields/textarea/notesField'
 import { auditFields } from '@/fields/relationship/auditFields'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 const BookableResources: CollectionConfig = {
   slug: 'bookable-resources',
@@ -149,7 +150,7 @@ const BookableResources: CollectionConfig = {
       admin: { description: 'Default revenue GL account for bookings of this resource.' } },
     { name: 'taxCode', type: 'relationship', relationTo: 'tax-codes',
       admin: { description: 'Default VAT / sales-tax code for bookings.' } },
-    { name: 'country', type: 'text', admin: { description: 'ISO 3166-1 alpha-2 — drives tax + holiday calendar.' } },
+    { name: 'country', ...iso3166Select, admin: { description: 'ISO 3166-1 alpha-2 — drives tax + holiday calendar.' } },
     statusField(
       [
         { label: 'Active', value: 'active' },

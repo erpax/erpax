@@ -4,6 +4,8 @@ import { deriveLabel, periodLifecycle } from '@/hooks/collections/fiscal-periods
 import { subsequentEventRules, subsequentEventsField } from '@/fields/array/subsequentEventsField'
 import { auditTrailAfterChange } from '@/hooks/collections/shared/auditTrailAfterChange'
 import { updateFiscalCalendarOnPeriodChange } from '@/hooks/collections/fiscal-periods/updateFiscalCalendarOnPeriodChange'
+import { iso4217Select } from '@/fields/select/currencyField'
+import { iso3166Select } from '@/fields/select/countryCodeField'
 
 /**
  * Fiscal Periods — accounting calendar with period locking.
@@ -146,9 +148,9 @@ export const FiscalPeriods: CollectionConfig = {
           admin: { description: 'Month the fiscal year starts (1-12).' } },
         { name: 'fiscalYearStartDay', type: 'number', min: 1, max: 31,
           admin: { description: 'Day-of-month the fiscal year starts.' } },
-        { name: 'countryCode', type: 'text', index: true,
+        { name: 'countryCode', ...iso3166Select, index: true,
           admin: { description: 'ISO 3166-1 alpha-2 — drives statutory period coding (SAF-T).' } },
-        { name: 'currencyCode', type: 'text',
+        { name: 'currencyCode', ...iso4217Select,
           admin: { description: 'ISO 4217 reporting currency for this fiscal configuration.' } },
         { name: 'localeCode', type: 'text',
           admin: { description: 'BCP-47 locale for period labelling.' } },
