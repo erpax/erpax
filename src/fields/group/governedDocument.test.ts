@@ -22,8 +22,8 @@ describe('governed documents on pages — never public, read and written by the 
   })
 
   it('a role held on the user record reads its types', async () => {
-    expect(JSON.stringify(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(finance) }))).toContain(`"documentType":{"in":["${STD}","compliance-deadline"]}`)
-    expect(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(plain) })).toEqual({ documentType: { exists: false } })
+    expect(JSON.stringify(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(finance) }))).toContain(`"documentType":{"in":["${STD}","compliance-deadline","processing-activity"]}`)
+    expect(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(plain) })).toEqual({ or: [{ documentType: { exists: false } }, { documentType: { in: ['processing-activity'] } }] })
   })
 
   it('the role rules: a type is a condition on pages; user-reads-all and admin-manages-all do not widen it', () => {
@@ -45,7 +45,7 @@ describe('governed documents on pages — never public, read and written by the 
     expect(await mayWrite(req(superAdmin), STD, 't1', none)).toBe(true)
     const write = pageWrite(() => ({ tenant: { equals: 't1' } }), none)
     await expect(write({ req: req(tenantAdmin), data: { documentType: STD, tenant: 't1' } } as never)).resolves.toBe(false)
-    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline'] } }] })
+    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline', 'processing-activity'] } }] })
   })
 
   it('a type names what it requires', async () => {
@@ -112,5 +112,29 @@ describe('governed documents on pages — never public, read and written by the 
     expect(abilityForRoles({ roles: ['admin'] }).permits('update', 'pages', { documentType: CD })).toBe(true)
     expect(await mayWrite(req(finance), CD, 't1', none)).toBe(false)
     expect(await mayWrite(req(tenantAdmin), CD, 't1', none)).toBe(true)
+  })
+
+  it('a processing activity carries its block; every transfer to a third country names its safeguard', () => {
+    const PA = 'processing-activity'
+    const block = (transfers: object[]) => ({ blockType: PA, controllerOrProcessor: 'controller', lawfulBasis: 'contract', retentionPeriod: '10 years (Accountancy Act)', reviewDueAt: '2027-01-31', thirdCountryTransfers: transfers })
+    expect(documentError(PA, {})).toMatch(/carries its details/)
+    expect(documentError(PA, { details: [block([])] })).toBe(true)
+    expect(documentError(PA, { details: [block([{ country: 'US', safeguard: 'sccs' }])] })).toBe(true)
+    expect(documentError(PA, { details: [block([{ country: 'US', safeguard: 'sccs' }, { country: 'IN' }])] })).toMatch(/names its safeguard \(IN\)/)
+  })
+
+  it('a processing activity is read by every member and written by admins; its name is unique in its tenant', async () => {
+    const PA = 'processing-activity'
+    expect(abilityForRoles({ roles: ['user'] }).permits('read', 'pages', { documentType: PA })).toBe(true)
+    expect(abilityForRoles({ roles: ['user'] }).permits('update', 'pages', { documentType: PA })).toBe(false)
+    expect(await mayWrite(req(tenantAdmin), PA, 't1', none)).toBe(true)
+    const details = [{ blockType: PA, controllerOrProcessor: 'controller', lawfulBasis: 'contract', retentionPeriod: '10 years', reviewDueAt: '2027-01-31' }]
+    const finds: unknown[] = []
+    const run = (twins: object[], data: object, originalDoc?: object) => (governedDocument as unknown as (a: object) => Promise<unknown>)({ data, originalDoc, req: { ...reqOf(superAdmin), payload: { find: async (args: unknown) => { finds.push(args); return { docs: twins } }, findByID: async () => ({}) } } })
+    await expect(run([{ id: 'p2' }], { title: 'Payroll', tenant: 't1', documentType: PA, document: { details } })).rejects.toThrow(/named "Payroll" already exists/)
+    expect(await run([], { title: 'Payroll', tenant: 't1', documentType: PA, document: { details } })).toBeDefined()
+    expect(JSON.stringify(finds[0])).toContain('{"documentType":{"equals":"processing-activity"}},{"title":{"equals":"Payroll"}},{"tenant":{"equals":"t1"}}')
+    await run([], { title: 'Payroll' }, { id: 'p1', tenant: { id: 't1' }, documentType: PA, document: { details } })
+    expect(JSON.stringify(finds.at(-1))).toContain('{"id":{"not_equals":"p1"}}')
   })
 })
