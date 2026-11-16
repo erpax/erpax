@@ -36,6 +36,7 @@ export default async function Page({
 
   const posts = await payload.find({
     collection: 'search',
+    overrideAccess: false,
     depth: 1,
     limit: 12,
     locale,

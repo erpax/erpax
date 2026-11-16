@@ -25,6 +25,7 @@ import { longNamesPlugin } from '@/plugins/naming'
 import { indexesPlugin } from '@/plugins/indexes'
 import { handlesPlugin } from '@/plugins/handles'
 import { versionsPlugin } from '@/plugins/versions'
+import { PUBLIC_COLLECTIONS, searchReadAccess } from '@/access/collections/search/readAccess'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
 import { translations as ecommerceTranslations } from '@payloadcms/plugin-ecommerce/translations/languages/all'
@@ -362,7 +363,7 @@ export default buildConfig({
     }),
     // The collections the frontend routes by slug: [locale]/[slug] (pages), /posts/[slug], /products/[slug].
     redirectsPlugin({
-      collections: ['pages', 'posts', 'products'],
+      collections: [...PUBLIC_COLLECTIONS],
       overrides: {
         llmInstructions: 'Redirects map one path to another document or URL.',
         fields: ({ defaultFields }) => defaultFields,
@@ -384,6 +385,8 @@ export default buildConfig({
         // embedding, and GET /api/search/semantic?q= answers by meaning, with the caller's own access.
         hooks: { afterChange: [enqueueEmbedding(cloudflareEnv)] },
         endpoints: [semanticEndpoint(cloudflareEnv)],
+        // The plugin's default lets anyone read every row, and every collection is indexed here.
+        access: { read: searchReadAccess },
         llmInstructions:
           'Search holds one flat row per document (title, slug, markdown body). Use it to find a page or post by slug before reading it in full.',
         fields: ({ defaultFields }) => [

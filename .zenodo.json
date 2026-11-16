@@ -1,7 +1,7 @@
 {
   "upload_type": "software",
   "title": "erpax: Source-available multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound",
-  "description": "<p>Source-available multi-tenant ERP &amp; double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound. Counted from the repository when this record was generated: 190 collections in Payload's generated configuration, 10 database migrations, and 363 theorems in 47 Lean files accepted by the Lean kernel, 267 of them axiom-free, 96 on Lean's standard axioms and 0 resting on sorry (sealed 2026-11-15). A theorem proves the decision it states, never the facts it is fed.</p>",
+  "description": "<p>Source-available multi-tenant ERP &amp; double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound. Counted from the repository when this record was generated: 190 collections in Payload's generated configuration, 11 database migrations, and 363 theorems in 47 Lean files accepted by the Lean kernel, 267 of them axiom-free, 96 on Lean's standard axioms and 0 resting on sorry (sealed 2026-11-16). A theorem proves the decision it states, never the facts it is fed.</p>",
   "version": "1.0.26",
   "creators": [
     {
@@ -32,9 +32,67 @@
       "identifier": "https://github.com/erpax/erpax",
       "relation": "isSupplementTo",
       "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.21781603",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.21787144",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://zenodo.org/records/21787144/files/PAPER.md",
+      "relation": "references",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1007/3-540-48184-2_32",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/BF00196791",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.17487/RFC6962",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.17487/RFC9562",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.17487/RFC8785",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://www.iso.org/standard/78176.html",
+      "relation": "references",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.iso.org/standard/70017.html",
+      "relation": "references",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://lex.bg/laws/ldoc/2135540645",
+      "relation": "references",
+      "scheme": "url"
     }
   ],
   "references": [
+    "Rouschev, Tsvetan (https://orcid.org/0009-0000-7312-9778) (2026-08-04). All Seven Clay Millennium Problems Sealed via Universal σ-Involution. https://doi.org/10.5281/zenodo.21781603",
+    "Rouschev, Tsvetan (https://orcid.org/0009-0000-7312-9778) (2026-08-04). Quantum Proofs of the Clay Millennium Problems v1.0. https://doi.org/10.5281/zenodo.21787144",
+    "Rouschev, Tsvetan (https://orcid.org/0009-0000-7312-9778) (2026-08-04). Quantum Proofs of the Clay Millennium Problems. To Clay Mathematics Institute. https://zenodo.org/records/21787144/files/PAPER.md",
     "Merkle, Ralph C. (1988). A Digital Signature Based on a Conventional Encryption Function. https://doi.org/10.1007/3-540-48184-2_32",
     "Haber, Stuart; Stornetta, W. Scott (1991). How to time-stamp a digital document. https://doi.org/10.1007/BF00196791",
     "Internet Engineering Task Force (2013). RFC 6962 — Certificate Transparency. https://doi.org/10.17487/RFC6962",
