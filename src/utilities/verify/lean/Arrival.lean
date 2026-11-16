@@ -4,9 +4,9 @@
 
   Clay: none
 
-  The twin is pushVerdict in src/arrival, the verdict the landing lane asks the forge for. It is
-  not a judgement typed into code: it is this conjunction, and every refusal it makes is a
-  theorem below.
+  The twin is src/utilities/land, the decision `pnpm land` (scripts/land.ts) asks before it
+  merges a PR. It is not a judgement typed into code: it is this conjunction, and every refusal it
+  makes is a theorem below.
 
     judged   at least one check on the sha reached a verdict FOR THIS PUSH
     failed   at least one of those judged checks failed

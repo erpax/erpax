@@ -1346,6 +1346,7 @@ src/utilities/iso/9362/index.ts:4: * @standard ISO-9362:2022 bic
 src/utilities/items/inventory/movements/hooks/inventory-adjusted-event.test.ts:11: * @standard ISO/IEC-29119:2022 software-testing
 src/utilities/journal/entry/service/index.ts:12: * @standard ISO-8601-1:2019 date-time entry-date posted-date
 src/utilities/journal/entry/service/index.ts:13: * @standard ISO-4217:2015 currency-codes
+src/utilities/land/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/utilities/localize/index.ts:39: * @standard RFC 9562 §5.8 (uuidv8 structured, name-based)
 src/utilities/localize/index.ts:40: * @standard ITU-T X.667 / ISO-IEC 9834-8 (UUID ↔ OID 2.25 arc)
 src/utilities/localize/index.ts:41: * @standard RFC 3061 (urn:oid: namespace) · RFC 4122 §3 (urn:uuid:)

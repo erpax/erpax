@@ -28,6 +28,7 @@ from `src/payload.config.ts`, the app routes in `src/app`, or the middleware.
 | `pnpm lint` · `pnpm typecheck` · `pnpm test` · `pnpm test:e2e` | Checks (CI runs the same) |
 | `pnpm build` | Types, import map, production build |
 | `pnpm deploy` | Migrate production D1, then build and upload the Worker |
+| `pnpm land [pr]` | Land a committed branch or an open PR. It pushes the branch, opens the PR from the last commit, and waits on the required checks (`src/utilities/land`, the twin of Arrival.lean). It updates a branch behind main and regenerates conflicts confined to generated files. Then it squash-merges and waits for Deployed, re-running it once when production answers. It stops on any failure or hand conflict. |
 
 `main` accepts pull requests only (squash), with six required checks.
 
