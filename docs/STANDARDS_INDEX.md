@@ -226,8 +226,6 @@ src/collections/commitments/index.ts:26: * @standard IFRS IFRS-15 §10 contract-
 src/collections/commitments/index.ts:27: * @standard IFRS IAS-1 presentation-of-financial-statements
 src/collections/commitments/index.ts:28: * @standard ISO-4217:2015 currency-codes
 src/collections/commitments/index.ts:29: * @standard ISO-8601-1:2019 date-time authorization-date
-src/collections/compliance-deadlines/index.ts:4: * @standard ISO-37301:2021 compliance-management-systems
-src/collections/compliance-deadlines/index.ts:5: * @standard ISO-8601-1:2019 due-date
 src/collections/compliance-frameworks/index.ts:4: * @standard ISO-37301:2021 compliance-management-systems
 src/collections/compliance-frameworks/index.ts:5: * @standard COSO-2013 internal-control-integrated-framework
 src/collections/compliance-gaps/index.ts:4: * @standard ISO-37301:2021 compliance-management
@@ -1159,6 +1157,8 @@ src/utilities/ghg/protocol/index.ts:14: * @standard IFRS S2 §29-32 climate-rela
 src/utilities/ghg/protocol/index.ts:9: * @standard GHG Protocol Corporate Standard (revised 2015)
 src/utilities/gl/account/resolver/index.ts:24: * @standard ISO-4217:2015 currency-codes
 src/utilities/governed/index.ts:100: * @standard IFRS-Taxonomy
+src/utilities/governed/index.ts:189: * @standard ISO-37301:2021 compliance-management-systems
+src/utilities/governed/index.ts:190: * @standard ISO-8601-1:2019 due-date
 src/utilities/governed/index.ts:98: * @standard SAF-T OECD audit-file
 src/utilities/governed/index.ts:99: * @standard XBRL business-reporting
 src/utilities/horo/index.ts:23: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
@@ -3050,7 +3050,6 @@ src/collections/carbon-emissions/index.ts:25: * @security ISO-27001 A.5.23 cloud
 src/collections/carriers/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/carriers/index.ts:18: * @security ISO-27002 §8.24 use-of-cryptography api-credentials-encryption
 src/collections/cases/index.ts:20: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation party-scoped-read
-src/collections/compliance-deadlines/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/compliance-frameworks/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/compliance-gaps/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/compliance-requirements/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation

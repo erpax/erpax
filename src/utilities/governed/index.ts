@@ -183,6 +183,127 @@ export const templateError = (details: Record<string, unknown>, document: Record
   return Number.isFinite(from) && Number.isFinite(to) && to <= from ? 'A statutory report template ends after it takes effect.' : true
 }
 
+/**
+ * A date by which something is owed (a filing, an audit, a payment), and the reminders scheduled for it.
+ *
+ * @standard ISO-37301:2021 compliance-management-systems
+ * @standard ISO-8601-1:2019 due-date
+ */
+export const ComplianceDeadline: Block = {
+  slug: 'compliance-deadline',
+  interfaceName: 'ComplianceDeadlineBlock',
+  labels: { singular: 'Compliance deadline', plural: 'Compliance deadlines' },
+  fields: [
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'deadlineType',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'Filing Deadline', value: 'filing-deadline' },
+            { label: 'Audit Deadline', value: 'audit-deadline' },
+            { label: 'Certification Deadline', value: 'certification-deadline' },
+            { label: 'Reporting Deadline', value: 'reporting-deadline' },
+            { label: 'Payment Deadline', value: 'payment-deadline' },
+            { label: 'Disclosure Deadline', value: 'disclosure-deadline' },
+          ],
+        },
+        { name: 'entity', type: 'relationship', relationTo: 'legal-entities', required: true },
+        { name: 'requirement', type: 'relationship', relationTo: 'compliance-requirements' },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'dueDate', type: 'date', required: true },
+        { name: 'submissionDate', type: 'date' },
+        {
+          name: 'status',
+          type: 'select',
+          defaultValue: 'on-track',
+          options: [
+            { label: 'On Track', value: 'on-track' },
+            { label: 'At Risk', value: 'at-risk' },
+            { label: 'Overdue', value: 'overdue' },
+            { label: 'Submitted', value: 'submitted' },
+            { label: 'Completed', value: 'completed' },
+          ],
+        },
+        {
+          name: 'priority',
+          type: 'select',
+          options: [
+            { label: 'Critical', value: 'critical' },
+            { label: 'High', value: 'high' },
+            { label: 'Medium', value: 'medium' },
+            { label: 'Low', value: 'low' },
+          ],
+        },
+      ],
+    },
+    { name: 'penalty', type: 'text' },
+    {
+      name: 'notifications',
+      type: 'array',
+      admin: { description: 'The reminders scheduled for this deadline.' },
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'notificationTitle', type: 'text', required: true },
+            { name: 'daysBeforeDue', type: 'number', required: true },
+            { name: 'sentDate', type: 'date' },
+            {
+              name: 'status',
+              type: 'select',
+              defaultValue: 'scheduled',
+              options: [
+                { label: 'Scheduled', value: 'scheduled' },
+                { label: 'Sent', value: 'sent' },
+                { label: 'Delivered', value: 'delivered' },
+                { label: 'Failed', value: 'failed' },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'notificationType',
+          type: 'select',
+          hasMany: true,
+          options: [
+            { label: 'Email', value: 'email' },
+            { label: 'In-App', value: 'in-app' },
+            { label: 'SMS', value: 'sms' },
+            { label: 'Calendar Event', value: 'calendar-event' },
+          ],
+        },
+        { name: 'notificationContent', type: 'richText' },
+        {
+          name: 'recipients',
+          type: 'array',
+          fields: [
+            {
+              type: 'row',
+              fields: [
+                { name: 'recipientEmail', type: 'email' },
+                { name: 'recipientRole', type: 'text' },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+}
+
+/** A submitted or completed deadline names when it was submitted. */
+export const deadlineError = (details: Record<string, unknown>): string | true =>
+  (details.status === 'submitted' || details.status === 'completed') && !details.submissionDate
+    ? 'A submitted or completed deadline names its submission date.'
+    : true
+
 export const GOVERNED_TYPES: readonly GovernedType[] = [
   // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
   {
@@ -213,5 +334,16 @@ export const GOVERNED_TYPES: readonly GovernedType[] = [
     requires: ['effectiveDate', 'jurisdiction'],
     block: StatutoryReportTemplate,
     check: templateError,
+  },
+  // was compliance-deadlines: read by admin, audit staff, compliance and finance; written by admins.
+  // The name is the page title, the jurisdiction the page's; the due date stays in the block (it is owed, not in effect).
+  {
+    value: 'compliance-deadline',
+    label: 'Compliance deadline',
+    read: ['admin', 'audit-staff', 'compliance-officer', 'finance'],
+    write: ['admin'],
+    requires: [],
+    block: ComplianceDeadline,
+    check: deadlineError,
   },
 ]

@@ -11,6 +11,7 @@ import * as migration_20261115_220659_fold_management_certifications from './202
 import * as migration_20261115_235153_unversion_users_tenants from './20261115_235153_unversion_users_tenants';
 import * as migration_20261116_002432_authorship_created_by from './20261116_002432_authorship_created_by';
 import * as migration_20261116_020503_fold_statutory_report_templates from './20261116_020503_fold_statutory_report_templates';
+import * as migration_20261116_034237_fold_compliance_deadlines from './20261116_034237_fold_compliance_deadlines';
 
 export const migrations = [
   {
@@ -76,6 +77,11 @@ export const migrations = [
   {
     up: migration_20261116_020503_fold_statutory_report_templates.up,
     down: migration_20261116_020503_fold_statutory_report_templates.down,
-    name: '20261116_020503_fold_statutory_report_templates'
+    name: '20261116_020503_fold_statutory_report_templates',
+  },
+  {
+    up: migration_20261116_034237_fold_compliance_deadlines.up,
+    down: migration_20261116_034237_fold_compliance_deadlines.down,
+    name: '20261116_034237_fold_compliance_deadlines'
   },
 ];
