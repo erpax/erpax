@@ -6,7 +6,8 @@
  * What the types share is the page's `document` concern. A type whose standard needs fields of its own
  * declares a `block` (its own table, so the page never nears D1's width) and may add a `check`.
  */
-import type { Block, FieldHook } from 'payload'
+import { APIError, type Block, type FieldHook } from 'payload'
+import { idOf } from '@/hooks/collections/shared/enforceSegregationOfDuties'
 import { currencyField } from '@/fields/text/currencyField'
 
 export interface GovernedType {
@@ -1498,6 +1499,116 @@ export const icfrError = (details: Record<string, unknown>): string | true => {
   return true
 }
 
+/** ISO 27002 §5.3 / SOX §404 — whoever wrote a budget does not approve it. The page's author is Payload's
+ *  `createdBy`, or on create the requesting user, as `enforceSegregationOfDuties` decides it. */
+const approvedByAnother: FieldHook = ({ value, originalDoc, operation, req }) => {
+  const approver = idOf(value)
+  if (approver === undefined) return value
+  const author = idOf((originalDoc as { createdBy?: unknown } | undefined)?.createdBy ?? (operation === 'create' ? req?.user?.id : undefined))
+  if (author !== undefined && author === approver) throw new APIError('Segregation of duties: the author of a budget does not approve it (ISO 27002 §5.3, SOX §404).', 400)
+  return value
+}
+
+/**
+ * A period budget for a department or cost center: its line items by GL account, the total they make,
+ * the project it books to, and its approval by someone other than its author.
+ *
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-8601-1:2019 date-time fiscal-year period
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
+ * @accounting US-GAAP ASC-270 interim-reporting
+ * @audit ISO-19011:2018 audit-trail
+ * @compliance SOX §404 internal-controls budget-approval-workflow
+ * @security ISO-27002 §5.3 segregation-of-duties approval-vs-creation
+ */
+export const Budget: Block = {
+  slug: 'budget',
+  interfaceName: 'BudgetBlock',
+  labels: { singular: 'Budget plan', plural: 'Budget plans' },
+  fields: [
+    {
+      type: 'row',
+      fields: [
+        // costs on a funded project book to the project, and the project carries the award
+        { name: 'project', type: 'relationship', relationTo: 'projects', admin: { description: 'The project this belongs to. Costs book to the project; the project carries the award.' } },
+        { name: 'fiscalYear', type: 'number', required: true, min: 2000, max: 2100 },
+        { name: 'department', type: 'text', required: true, admin: { description: 'Department or cost center' } },
+        {
+          name: 'budgetPeriod',
+          type: 'select',
+          defaultValue: 'monthly',
+          options: [
+            { label: 'Monthly', value: 'monthly' },
+            { label: 'Quarterly', value: 'quarterly' },
+            { label: 'Annual', value: 'annual' },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'budgetLineItems',
+      type: 'array',
+      minRows: 1,
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'glAccount', type: 'relationship', relationTo: 'gl-accounts', required: true },
+            { name: 'accountNumber', type: 'text', admin: { disabled: true } },
+            { name: 'accountName', type: 'text', admin: { disabled: true } },
+            { name: 'accountType', type: 'text', admin: { disabled: true } },
+            { name: 'budgetAmount', type: 'number', required: true, min: 0 },
+          ],
+        },
+        { name: 'notes', type: 'textarea', localized: true },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'totalBudget',
+          type: 'number',
+          defaultValue: 0,
+          admin: { readOnly: true, description: 'The sum of the line items, computed.' },
+          hooks: { beforeChange: computed((row) => ((row.budgetLineItems as { budgetAmount?: number }[] | undefined) ?? []).reduce((sum, item) => sum + Number(item.budgetAmount ?? 0), 0)) },
+        },
+        currencyField(),
+        {
+          name: 'status',
+          type: 'select',
+          defaultValue: 'draft',
+          options: [
+            { label: 'Draft', value: 'draft' },
+            { label: 'Submitted', value: 'submitted' },
+            { label: 'Approved', value: 'approved' },
+            { label: 'Active', value: 'active' },
+            { label: 'Archived', value: 'archived' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        { name: 'approvedBy', type: 'relationship', relationTo: 'users', hooks: { beforeChange: [approvedByAnother] } },
+        {
+          name: 'approvedAt',
+          type: 'date',
+          admin: { readOnly: true, description: 'Stamped when the approver lands.' },
+          hooks: { beforeChange: [({ value, siblingData }) => (siblingData?.approvedBy && !value ? new Date().toISOString() : value)] },
+        },
+      ],
+    },
+    { name: 'notes', type: 'textarea' },
+  ],
+}
+
+/** An approved or active budget names who approved it. */
+export const budgetError = (details: Record<string, unknown>): string | true =>
+  (details.status === 'approved' || details.status === 'active') && !details.approvedBy ? 'An approved budget names its approver.' : true
+
 export const GOVERNED_TYPES: readonly GovernedType[] = [
   // was reporting-standards: read by admin, audit staff, compliance and finance; written by a super-admin
   {
@@ -1661,5 +1772,17 @@ export const GOVERNED_TYPES: readonly GovernedType[] = [
     requires: ['effectiveDate'],
     block: IcfrAssessment,
     check: icfrError,
+  },
+  // was budget-planning: read by every member of the tenant; written by admins and accountants. The budget id is
+  // the page title (unique in its tenant).
+  {
+    value: 'budget',
+    label: 'Budget plan',
+    read: ['user'],
+    write: ['admin', 'accountant'],
+    requires: [],
+    unique: ['title'],
+    block: Budget,
+    check: budgetError,
   },
 ]

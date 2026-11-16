@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest'
 import { Ability, restrictSubjects } from '@/utilities/ability'
 import { abilityForRoles } from '@/utilities/ability/roles'
 import { documentError, governedDocument, mayWrite, pageRead, pageWrite } from '@/fields/group/governedDocument'
-import { EarningsPerShare, HeldForSale } from '@/utilities/governed'
+import { Budget, EarningsPerShare, HeldForSale } from '@/utilities/governed'
 
 const STD = 'reporting-standard'
 const superAdmin = { id: 's', roles: ['admin'], tenants: [] }
@@ -23,8 +23,8 @@ describe('governed documents on pages — never public, read and written by the 
   })
 
   it('a role held on the user record reads its types', async () => {
-    expect(JSON.stringify(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(finance) }))).toContain(`"documentType":{"in":["${STD}","compliance-deadline","processing-activity"]}`)
-    expect(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(plain) })).toEqual({ or: [{ documentType: { exists: false } }, { documentType: { in: ['processing-activity'] } }] })
+    expect(JSON.stringify(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(finance) }))).toContain(`"documentType":{"in":["${STD}","compliance-deadline","processing-activity","budget"]}`)
+    expect(await (pageRead(none) as unknown as (a: object) => Promise<unknown>)({ req: req(plain) })).toEqual({ or: [{ documentType: { exists: false } }, { documentType: { in: ['processing-activity', 'budget'] } }] })
   })
 
   it('the role rules: a type is a condition on pages; user-reads-all and admin-manages-all do not widen it', () => {
@@ -46,7 +46,7 @@ describe('governed documents on pages — never public, read and written by the 
     expect(await mayWrite(req(superAdmin), STD, 't1', none)).toBe(true)
     const write = pageWrite(() => ({ tenant: { equals: 't1' } }), none)
     await expect(write({ req: req(tenantAdmin), data: { documentType: STD, tenant: 't1' } } as never)).resolves.toBe(false)
-    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline', 'processing-activity', 'internal-audit-function', 'debt-instrument', 'related-party-transaction', 'regulatory-report', 'icfr-assessment'] } }] })
+    await expect(write({ req: req(tenantAdmin), data: { title: 'About' } } as never)).resolves.toEqual({ or: [{ and: [{ documentType: { exists: false } }, { tenant: { equals: 't1' } }] }, { documentType: { in: ['management-certification', 'compliance-deadline', 'processing-activity', 'internal-audit-function', 'debt-instrument', 'related-party-transaction', 'regulatory-report', 'icfr-assessment', 'budget'] } }] })
   })
 
   it('a type names what it requires', async () => {
@@ -264,5 +264,19 @@ describe('governed documents on pages — never public, read and written by the 
     expect(documentError(IC, { effectiveDate: '2026-02-28', details: [block({ materialWeaknessesIdentified: true })] })).toMatch(/describes it/)
     expect(documentError(IC, { effectiveDate: '2026-02-28', details: [block({ status: 'certified' })] })).toMatch(/names the officers/)
     expect(documentError(IC, { effectiveDate: '2026-02-28', details: [block({ status: 'certified', certifyingOfficers: [{ title: 'CEO', name: 'A. Georgiev', signatureDate: '2026-02-28' }] })] })).toBe(true)
+  })
+
+  it('a budget sums its line items, stamps its approval, is approved by someone other than its author, and names its approver when approved', () => {
+    const flat = (fields: readonly unknown[]): Array<{ name?: string; hooks?: { beforeChange?: Array<(a: object) => unknown> } }> =>
+      (fields as Array<{ name?: string; fields?: unknown[] }>).flatMap((f) => (f.name ? [f as never] : f.fields ? flat(f.fields) : []))
+    const hookOf = (name: string) => flat(Budget.fields).find((f) => f.name === name)!.hooks!.beforeChange![0]!
+    expect(hookOf('totalBudget')({ siblingData: { budgetLineItems: [{ budgetAmount: 1200 }, { budgetAmount: 800 }] } })).toBe(2000)
+    expect(typeof hookOf('approvedAt')({ value: undefined, siblingData: { approvedBy: 'u2' } })).toBe('string')
+    expect(hookOf('approvedAt')({ value: '2026-01-02', siblingData: { approvedBy: 'u2' } })).toBe('2026-01-02')
+    expect(() => hookOf('approvedBy')({ value: 'u1', operation: 'create', req: { user: { id: 'u1' } } })).toThrow(/Segregation of duties/)
+    expect(() => hookOf('approvedBy')({ value: 'u1', operation: 'update', originalDoc: { createdBy: { relationTo: 'users', value: 'u1' } }, req: { user: { id: 'u2' } } })).toThrow(/Segregation of duties/)
+    expect(hookOf('approvedBy')({ value: 'u2', operation: 'update', originalDoc: { createdBy: { relationTo: 'users', value: 'u1' } }, req: { user: { id: 'u2' } } })).toBe('u2')
+    expect(documentError('budget', { details: [{ blockType: 'budget', status: 'approved' }] })).toMatch(/names its approver/)
+    expect(documentError('budget', { details: [{ blockType: 'budget', status: 'draft' }] })).toBe(true)
   })
 })

@@ -104,7 +104,6 @@ export { default as WarehouseLocations } from '@/collections/warehouse-locations
 
 // Cost & Budget
 export { default as CostCenters } from '@/collections/cost-centers'
-export { default as BudgetPlanning } from '@/collections/budget-planning'
 export { default as CostVariances } from '@/collections/cost-variances'
 
 // Intercompany & Consolidation

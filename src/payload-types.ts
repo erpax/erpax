@@ -407,7 +407,6 @@ export interface Config {
     properties: Property;
     spaces: Space;
     'transfer-pricing-files': TransferPricingFile;
-    'budget-planning': BudgetPlanning;
     contracts: Contract;
     'project-tasks': ProjectTask;
     projects: Project;
@@ -623,7 +622,6 @@ export interface Config {
     properties: PropertiesSelect<false> | PropertiesSelect<true>;
     spaces: SpacesSelect<false> | SpacesSelect<true>;
     'transfer-pricing-files': TransferPricingFilesSelect<false> | TransferPricingFilesSelect<true>;
-    'budget-planning': BudgetPlanningSelect<false> | BudgetPlanningSelect<true>;
     contracts: ContractsSelect<false> | ContractsSelect<true>;
     'project-tasks': ProjectTasksSelect<false> | ProjectTasksSelect<true>;
     projects: ProjectsSelect<false> | ProjectsSelect<true>;
@@ -1628,6 +1626,7 @@ export interface Page {
         | 'related-party-transaction'
         | 'regulatory-report'
         | 'icfr-assessment'
+        | 'budget'
       )
     | null;
   /**
@@ -1664,6 +1663,7 @@ export interface Page {
           | RelatedPartyTransactionBlock
           | RegulatoryReportBlock
           | IcfrAssessmentBlock
+          | BudgetBlock
         )[]
       | null;
     /**
@@ -8743,6 +8743,51 @@ export interface IcfrAssessmentBlock {
   id?: string | null;
   blockName?: string | null;
   blockType: 'icfr-assessment';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "BudgetBlock".
+ */
+export interface BudgetBlock {
+  /**
+   * The project this belongs to. Costs book to the project; the project carries the award.
+   */
+  project?: (string | null) | Project;
+  fiscalYear: number;
+  /**
+   * Department or cost center
+   */
+  department: string;
+  budgetPeriod?: ('monthly' | 'quarterly' | 'annual') | null;
+  budgetLineItems?:
+    | {
+        glAccount: string | GlAccount;
+        accountNumber?: string | null;
+        accountName?: string | null;
+        accountType?: string | null;
+        budgetAmount: number;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * The sum of the line items, computed.
+   */
+  totalBudget?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  status?: ('draft' | 'submitted' | 'approved' | 'active' | 'archived') | null;
+  approvedBy?: (string | null) | User;
+  /**
+   * Stamped when the approver lands.
+   */
+  approvedAt?: string | null;
+  notes?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'budget';
 }
 /**
  * Paired source documents between two group tenants. Each row pairs with a mirror row on the counterparty tenant — must net to zero on consolidation per IFRS 10 §B86 / ASC 810-10-45-1.
@@ -17329,60 +17374,6 @@ export interface TransferPricingFile {
   createdAt: string;
 }
 /**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "budget-planning".
- */
-export interface BudgetPlanning {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * The project this belongs to. Costs book to the project; the project carries the award.
-   */
-  project?: (string | null) | Project;
-  budgetId: string;
-  fiscalYear: number;
-  /**
-   * Department or cost center
-   */
-  department: string;
-  budgetPeriod?: ('monthly' | 'quarterly' | 'annual') | null;
-  budgetLineItems?:
-    | {
-        glAccount: string | GlAccount;
-        accountNumber?: string | null;
-        accountName?: string | null;
-        accountType?: string | null;
-        budgetAmount: number;
-        notes?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  totalBudget?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  status?: ('draft' | 'submitted' | 'approved' | 'active' | 'archived') | null;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  handle?: string | null;
-  createdBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedBy?: {
-    relationTo: 'users';
-    value: string | User;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * WBS element under a project. Time-entries + materials post against a task; cost-to-cost progress measurement rolls up.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -20058,7 +20049,6 @@ export interface PayloadQueryPreset {
     | 'properties'
     | 'spaces'
     | 'transfer-pricing-files'
-    | 'budget-planning'
     | 'contracts'
     | 'project-tasks'
     | 'projects'
@@ -20591,6 +20581,7 @@ export interface PagesSelect<T extends boolean = true> {
               'related-party-transaction'?: T | RelatedPartyTransactionBlockSelect<T>;
               'regulatory-report'?: T | RegulatoryReportBlockSelect<T>;
               'icfr-assessment'?: T | IcfrAssessmentBlockSelect<T>;
+              budget?: T | BudgetBlockSelect<T>;
             };
         links?:
           | T
@@ -21113,6 +21104,35 @@ export interface IcfrAssessmentBlockSelect<T extends boolean = true> {
       };
   relatedAuditFindings?: T;
   relatedControlTests?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "BudgetBlock_select".
+ */
+export interface BudgetBlockSelect<T extends boolean = true> {
+  project?: T;
+  fiscalYear?: T;
+  department?: T;
+  budgetPeriod?: T;
+  budgetLineItems?:
+    | T
+    | {
+        glAccount?: T;
+        accountNumber?: T;
+        accountName?: T;
+        accountType?: T;
+        budgetAmount?: T;
+        notes?: T;
+        id?: T;
+      };
+  totalBudget?: T;
+  currency?: T;
+  status?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
   id?: T;
   blockName?: T;
 }
@@ -26810,41 +26830,6 @@ export interface TransferPricingFilesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "budget-planning_select".
- */
-export interface BudgetPlanningSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  project?: T;
-  budgetId?: T;
-  fiscalYear?: T;
-  department?: T;
-  budgetPeriod?: T;
-  budgetLineItems?:
-    | T
-    | {
-        glAccount?: T;
-        accountNumber?: T;
-        accountName?: T;
-        accountType?: T;
-        budgetAmount?: T;
-        notes?: T;
-        id?: T;
-      };
-  totalBudget?: T;
-  currency?: T;
-  status?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  handle?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "contracts_select".
  */
 export interface ContractsSelect<T extends boolean = true> {
@@ -28890,7 +28875,6 @@ export interface CollectionQueryWidget {
       | 'properties'
       | 'spaces'
       | 'transfer-pricing-files'
-      | 'budget-planning'
       | 'contracts'
       | 'project-tasks'
       | 'projects'
@@ -29091,7 +29075,6 @@ export interface ActivityWidget {
           | 'properties'
           | 'spaces'
           | 'transfer-pricing-files'
-          | 'budget-planning'
           | 'contracts'
           | 'project-tasks'
           | 'projects'
@@ -29330,7 +29313,6 @@ export interface TaskCreateCollectionExport {
       | 'properties'
       | 'spaces'
       | 'transfer-pricing-files'
-      | 'budget-planning'
       | 'contracts'
       | 'project-tasks'
       | 'projects'
