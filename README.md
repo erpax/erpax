@@ -23,7 +23,7 @@
 
 ## Proofs
 
-Kernel report sealed 2026-11-16: 366 theorems, 270 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `f4450a8284eeea5a`.
+Kernel report sealed 2026-11-16: 366 theorems, 270 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `ced48693c9258cdb`.
 
 | file | the file says | Clay | theorems | axiom-free | kernel |
 | --- | --- | --- | ---: | ---: | --- |
@@ -645,11 +645,11 @@ Kernel report sealed 2026-11-16: 366 theorems, 270 axiom-free, 96 on Lean's thre
 
 settled: **none** (`claySettled`)
 
-Kernel report sealed 2026-11-16: 366 theorems, 270 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `f4450a8284eeea5a`.
+Kernel report sealed 2026-11-16: 366 theorems, 270 axiom-free, 96 on Lean's three standard axioms, 0 stubbed, 47 files, sources `ced48693c9258cdb`.
 
 ## Commands
 
-`pnpm erpax` · `pnpm dev` · `pnpm devsafe` · `pnpm build` · `pnpm build:next` · `pnpm build:next:webpack` · `pnpm postbuild` · `pnpm preview` · `pnpm payload` · `pnpm generate:types` · `pnpm generate:importmap` · `pnpm generate:repo` · `pnpm payload:migrate:create` · `pnpm lint` · `pnpm typecheck` · `pnpm test` · `pnpm test:etrima` · `pnpm seed:etrima` · `pnpm test:e2e` · `pnpm deploy` · `pnpm deploy:database` · `pnpm deploy:app` · `pnpm seed` · `pnpm standards:refresh` · `pnpm standards:check` · `pnpm prepare`
+`pnpm erpax` · `pnpm dev` · `pnpm devsafe` · `pnpm build` · `pnpm build:next` · `pnpm build:next:webpack` · `pnpm postbuild` · `pnpm preview` · `pnpm payload` · `pnpm generate:types` · `pnpm generate:importmap` · `pnpm generate:repo` · `pnpm payload:migrate:create` · `pnpm lint` · `pnpm typecheck` · `pnpm test` · `pnpm test:etrima` · `pnpm seed:etrima` · `pnpm test:e2e` · `pnpm deploy` · `pnpm land` · `pnpm deploy:database` · `pnpm deploy:app` · `pnpm seed` · `pnpm standards:refresh` · `pnpm standards:check` · `pnpm prepare`
 
 ## References
 
