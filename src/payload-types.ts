@@ -4891,10 +4891,7 @@ export interface Party {
      * SWIFT/BIC (ISO 9362)
      */
     bankSwiftBic?: string | null;
-    /**
-     * ISO 3166-1 alpha-2 country of bank
-     */
-    bankCountryCode?: string | null;
+    bankCountryCode?: Iso3166Country;
   };
   ledger?: {
     /**
@@ -5204,10 +5201,7 @@ export interface GovernmentGrant {
    * Granting authority (e.g. EU Horizon Europe, BG Innovation Fund, US SBA).
    */
   grantorName: string;
-  /**
-   * ISO 3166-1 alpha-2 — country of the granting authority.
-   */
-  grantorCountryCode?: string | null;
+  grantorCountryCode?: Iso3166Country;
   /**
    * Recipient legal entity.
    */
@@ -8348,10 +8342,7 @@ export interface EvidenceAttestation {
    * Workflow slug (`order-to-cash`, `procure-to-pay`, `record-to-report`).
    */
   workflow: string;
-  /**
-   * ISO-3166-1 alpha-2 the walk-through ran against.
-   */
-  country: string;
+  country: Iso3166Country;
   /**
    * ISO-8601 timestamp the walk-through completed.
    */

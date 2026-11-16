@@ -227,7 +227,7 @@ const Parties: CollectionConfig = {
           admin: { description: 'Account number (last 4 visible recommended)' } },
         { name: 'bankIban', type: 'text', admin: { description: 'IBAN (ISO 13616)' } },
         { name: 'bankSwiftBic', type: 'text', admin: { description: 'SWIFT/BIC (ISO 9362)' } },
-        { name: 'bankCountryCode', type: 'text',
+        { name: 'bankCountryCode', ...iso3166Select,
           admin: { description: 'ISO 3166-1 alpha-2 country of bank' } },
       ],
     },
